@@ -1,0 +1,93 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "195576A8980AF9901972EEC18FE911AE226639F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D00E006DC36F76D9D270821E31BD2BB97846394B" : 9223372036854775807,
+    "D0B64D6BD5AC765AF48D3077E6FA9D5A73B10D44" : 9223372036854775807,
+    "DD9893DA5CBE76ACDED0D2EF48C6CD6B5E8C479E" : 9223372036854775807,
+    "9432CB28FA17878BB0552438E772E02FBB29A6F4" : 9223372036854775807,
+    "195576A8980AF9901972EEC18FE911AE226639F1" : 9223372036854775807,
+    "8690B558D7440E358F24C12E84412F3340F12A01" : 9223372036854775807,
+    "DEC06C61558C65BB1EA69C2D12838F32C44F9C91" : 9223372036854775807,
+    "E25D75EA6EE47E01E4682A92B618AE7135E7FC64" : 9223372036854775807,
+    "26AAB5E247948F2BB1D5E194F377742C3CF89F91" : 9223372036854775807,
+    "AFC41B6FF79C26150912B231C5EE08CD007510A5" : 9223372036854775807,
+    "2468C718017D14C6811431837D02F604987BBA5A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AF56A5B1-480A-4AFD-BC51-6E75E0813FD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D00E006DC36F76D9D270821E31BD2BB97846394B" : "EfunLogin\/",
+    "D0B64D6BD5AC765AF48D3077E6FA9D5A73B10D44" : "EfunThirdPlatform\/",
+    "DD9893DA5CBE76ACDED0D2EF48C6CD6B5E8C479E" : "EfunAD\/",
+    "9432CB28FA17878BB0552438E772E02FBB29A6F4" : "EfunBaseSDK\/",
+    "195576A8980AF9901972EEC18FE911AE226639F1" : "EfunSDK_iOS_KR\/",
+    "8690B558D7440E358F24C12E84412F3340F12A01" : "EfunFacebook\/",
+    "DEC06C61558C65BB1EA69C2D12838F32C44F9C91" : "EfunFreeLogin\/",
+    "E25D75EA6EE47E01E4682A92B618AE7135E7FC64" : "EfunCDNDownload\/",
+    "26AAB5E247948F2BB1D5E194F377742C3CF89F91" : "EfunCoreFunc\/",
+    "AFC41B6FF79C26150912B231C5EE08CD007510A5" : "EfunIAP\/",
+    "2468C718017D14C6811431837D02F604987BBA5A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SPSDK_iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SPSDK_iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunSDK_iOS_KR.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "195576A8980AF9901972EEC18FE911AE226639F1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/Efun_iOS_Workspace.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2468C718017D14C6811431837D02F604987BBA5A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunCoreFunc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26AAB5E247948F2BB1D5E194F377742C3CF89F91"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunFacebook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8690B558D7440E358F24C12E84412F3340F12A01"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunBaseSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9432CB28FA17878BB0552438E772E02FBB29A6F4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunIAP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AFC41B6FF79C26150912B231C5EE08CD007510A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunLogin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D00E006DC36F76D9D270821E31BD2BB97846394B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunThirdPlatform.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0B64D6BD5AC765AF48D3077E6FA9D5A73B10D44"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunAD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD9893DA5CBE76ACDED0D2EF48C6CD6B5E8C479E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunFreeLogin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEC06C61558C65BB1EA69C2D12838F32C44F9C91"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.5.203\/EfunMobile_iOS\/EfunCDNDownload.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E25D75EA6EE47E01E4682A92B618AE7135E7FC64"
+    }
+  ]
+}

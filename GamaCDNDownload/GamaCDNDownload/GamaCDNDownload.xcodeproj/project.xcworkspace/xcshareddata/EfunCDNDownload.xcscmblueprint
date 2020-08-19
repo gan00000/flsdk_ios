@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f0f45766-db32-c54a-b6f0-50c3d466d729++2323",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f0f45766-db32-c54a-b6f0-50c3d466d729++2323" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f0f45766-db32-c54a-b6f0-50c3d466d729++2323" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "31C0818A-1B33-4198-B30B-A4BF308BC7D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f0f45766-db32-c54a-b6f0-50c3d466d729++2323" : "Efun_iOS_Workspace"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EfunCDNDownload",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EfunCDNDownload\/EfunCDNDownload\/EfunCDNDownload.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/172.16.1.46:8443\/svn\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f0f45766-db32-c54a-b6f0-50c3d466d729++2323"
+    }
+  ]
+}
