@@ -76,6 +76,14 @@
 		2673203F1ACCE63C003B3DDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		267320611ACCEE3C003B3DDD /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		267320681ACCEF63003B3DDD /* libGamaGamecenter_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaGamecenter_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BE142524FB7A08000BDFBE /* GamaSDK_Login_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_Login_.a; path = ../../GamaResources/_LibGroup/GamaAccountLogin_DotA/GamaSDK_Login_.a; sourceTree = "<group>"; };
+		32BE142724FB7A0F000BDFBE /* GamaSDK_AD_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_AD_.a; path = ../../GamaResources/_LibGroup/GamaAD_DotA/GamaSDK_AD_.a; sourceTree = "<group>"; };
+		32BE142924FB7A14000BDFBE /* GamaSDK_CDNDownload_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_CDNDownload_.a; path = ../../GamaResources/_LibGroup/GamaCDNDownload_DotA/GamaSDK_CDNDownload_.a; sourceTree = "<group>"; };
+		32BE142B24FB7A19000BDFBE /* GamaSDK_CORE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_CORE.a; path = ../../GamaResources/_LibGroup/GamaCoreFunc_DotA/GamaSDK_CORE.a; sourceTree = "<group>"; };
+		32BE142D24FB7A1E000BDFBE /* GamaSDK_Facebook_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_Facebook_.a; path = ../../GamaResources/_LibGroup/GamaFacebook_DotA/GamaSDK_Facebook_.a; sourceTree = "<group>"; };
+		32BE142F24FB7A23000BDFBE /* GamaSDK_Gamecenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_Gamecenter.a; path = ../../GamaResources/_LibGroup/GamaGamecenter_DotA/GamaSDK_Gamecenter.a; sourceTree = "<group>"; };
+		32BE143124FB7A29000BDFBE /* GamaSDK_IAP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_IAP.a; path = ../../GamaResources/_LibGroup/GamaIAP_DotA/GamaSDK_IAP.a; sourceTree = "<group>"; };
+		32BE143324FB7A2D000BDFBE /* GamaSDK_ThirdPlatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_ThirdPlatform.a; path = ../../GamaResources/_LibGroup/GamaThirdPlatform_DotA/GamaSDK_ThirdPlatform.a; sourceTree = "<group>"; };
 		32CD1D7624DC48810021CC46 /* GamaCommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
 		CE74860A1ADB58010041C727 /* GamaGamecenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaGamecenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA7E59B1E0BD06200AA8EAB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -173,6 +181,14 @@
 		DEA7E59A1E0BD06200AA8EAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32BE143324FB7A2D000BDFBE /* GamaSDK_ThirdPlatform.a */,
+				32BE143124FB7A29000BDFBE /* GamaSDK_IAP.a */,
+				32BE142F24FB7A23000BDFBE /* GamaSDK_Gamecenter.a */,
+				32BE142D24FB7A1E000BDFBE /* GamaSDK_Facebook_.a */,
+				32BE142B24FB7A19000BDFBE /* GamaSDK_CORE.a */,
+				32BE142924FB7A14000BDFBE /* GamaSDK_CDNDownload_.a */,
+				32BE142724FB7A0F000BDFBE /* GamaSDK_AD_.a */,
+				32BE142524FB7A08000BDFBE /* GamaSDK_Login_.a */,
 				2673203F1ACCE63C003B3DDD /* SystemConfiguration.framework */,
 				2673203D1ACCE62F003B3DDD /* AdSupport.framework */,
 				DEA7E59B1E0BD06200AA8EAB /* JavaScriptCore.framework */,
