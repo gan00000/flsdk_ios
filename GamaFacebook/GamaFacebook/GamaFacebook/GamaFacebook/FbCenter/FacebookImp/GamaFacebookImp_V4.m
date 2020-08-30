@@ -235,10 +235,10 @@
     }
     
     //TEST
-    if (isForceInappLogin) {
-        //FBSDKLoginBehaviorWeb = 3
-        [ws.loginManager setLoginBehavior:FBSDKLoginBehaviorBrowser];
-    }
+//    if (isForceInappLogin) {
+//        //FBSDKLoginBehaviorWeb = 3
+//        [ws.loginManager setLoginBehavior:FBSDKLoginBehaviorBrowser];
+//    }
     //    NSString *lastPermissionsStr = nil;
     //    NSString *readPermissionsStr = SDKConReaderGetString(GAMA_FB_READ_PERMISSIONS);
     //    NSString *basePermissionsStr = @"public_profile";
