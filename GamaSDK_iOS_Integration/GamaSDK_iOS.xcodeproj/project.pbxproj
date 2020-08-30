@@ -22,8 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00087B6A21AA5D1300236DEA /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
-		003CE8C521B69E1900A6A3C8 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
 		00AACEE421B7B2DF002AC879 /* GamaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126920874A170018E1A6 /* GamaLabel.m */; };
 		00AACEE521B7B319002AC879 /* AutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126720874A170018E1A6 /* AutoLoginView.m */; };
 		00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
@@ -40,147 +38,49 @@
 		24A4B6691DD5BA7A003AF6F0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		24B144401D10FCB900256411 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
 		24D2C7CB1E20D41500E85015 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D2C7CA1E20D41500E85015 /* WebKit.framework */; };
-		3218406324CB20C7004553C0 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218406224CB20C7004553C0 /* LoginData.m */; };
 		3218406424CB20C7004553C0 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218406224CB20C7004553C0 /* LoginData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC4E24C589A5000D6B20 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* UIUtil.m */; };
-		322CBC5424C589A5000D6B20 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5524C589A5000D6B20 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE724C589A5000D6B20 /* YYClassInfo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5624C589A5000D6B20 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEE24C589A5000D6B20 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5724C589A5000D6B20 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEF24C589A5000D6B20 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5824C589A5000D6B20 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF124C589A5000D6B20 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5924C589A5000D6B20 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF224C589A5000D6B20 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5A24C589A5000D6B20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF424C589A5000D6B20 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5B24C589A5000D6B20 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF524C589A5000D6B20 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5C24C589A5000D6B20 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5D24C589A5000D6B20 /* BJServiceConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* BJServiceConfigurator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5E24C589A5000D6B20 /* BJHTTPServiceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* BJHTTPServiceEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC5F24C589A5000D6B20 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6024C589A5000D6B20 /* BJBaseHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6124C589A5000D6B20 /* CCSDKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* CCSDKResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6224C589A5000D6B20 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6324C589A5000D6B20 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6424C589A5000D6B20 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6524C589A5000D6B20 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* LoginButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6724C589A5000D6B20 /* SDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6924C589A5000D6B20 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1C24C589A5000D6B20 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6A24C589A5000D6B20 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6B24C589A5000D6B20 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6C24C589A5000D6B20 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6D24C589A5000D6B20 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6E24C589A5000D6B20 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC6F24C589A5000D6B20 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7124C589A5000D6B20 /* SelectLoginTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7324C589A5000D6B20 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7524C589A5000D6B20 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7624C589A5000D6B20 /* AccountLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3624C589A5000D6B20 /* AccountLoginView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7924C59186000D6B20 /* SdkAutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7D24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		322CBC7F24C5A579000D6B20 /* libGamaAccountLogin_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC7E24C5A579000D6B20 /* libGamaAccountLogin_DotA.a */; };
-		322CBC8124C5A579000D6B20 /* libGamaCDNDownload_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8024C5A579000D6B20 /* libGamaCDNDownload_DotA.a */; };
-		322CBC8324C5A579000D6B20 /* libGamaCoreFunc_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8224C5A579000D6B20 /* libGamaCoreFunc_DotA.a */; };
-		322CBC8524C5A579000D6B20 /* libGamaFacebook_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8424C5A579000D6B20 /* libGamaFacebook_DotA.a */; };
-		322CBC8724C5A579000D6B20 /* libGamaGamecenter_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8624C5A579000D6B20 /* libGamaGamecenter_DotA.a */; };
-		322CBC8B24C5A579000D6B20 /* libGamaIAP_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8A24C5A579000D6B20 /* libGamaIAP_DotA.a */; };
-		322CBC8D24C5A579000D6B20 /* libGamaThirdPlatform_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CBC8C24C5A579000D6B20 /* libGamaThirdPlatform_DotA.a */; };
-		32340F8324DE5EA900584802 /* GamaSDK_Login_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8224DE5EA900584802 /* GamaSDK_Login_.a */; };
-		32340F8524DE5EAC00584802 /* GamaSDK_AD_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8424DE5EAC00584802 /* GamaSDK_AD_.a */; };
-		32340F8724DE5EAE00584802 /* GamaSDK_CDNDownload_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8624DE5EAE00584802 /* GamaSDK_CDNDownload_.a */; };
-		32340F8924DE5EB200584802 /* GamaSDK_CORE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8824DE5EB200584802 /* GamaSDK_CORE.a */; };
-		32340F8B24DE5EB600584802 /* GamaSDK_Facebook_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8A24DE5EB600584802 /* GamaSDK_Facebook_.a */; };
-		32340F8D24DE5EB800584802 /* GamaSDK_Gamecenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8C24DE5EB800584802 /* GamaSDK_Gamecenter.a */; };
-		32340F8F24DE5EBC00584802 /* GamaSDK_IAP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F8E24DE5EBC00584802 /* GamaSDK_IAP.a */; };
-		32340F9124DE5EBF00584802 /* GamaSDK_ThirdPlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32340F9024DE5EBE00584802 /* GamaSDK_ThirdPlatform.a */; };
 		32506C7424F920F900010D7B /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C1B24F920F900010D7B /* AdjustSdk.framework */; };
-		32506C7524F920F900010D7B /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C1B24F920F900010D7B /* AdjustSdk.framework */; };
-		32506C7C24F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C2324F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C7D24F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C2324F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C7E24F920F900010D7B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C2C24F920F900010D7B /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C7F24F920F900010D7B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C2C24F920F900010D7B /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8024F920F900010D7B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3024F920F900010D7B /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8124F920F900010D7B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3024F920F900010D7B /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8224F920F900010D7B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3124F920F900010D7B /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8324F920F900010D7B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3124F920F900010D7B /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8424F920F900010D7B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3224F920F900010D7B /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8524F920F900010D7B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3224F920F900010D7B /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8624F920F900010D7B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3324F920F900010D7B /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8724F920F900010D7B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3324F920F900010D7B /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8824F920F900010D7B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3424F920F900010D7B /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8924F920F900010D7B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3424F920F900010D7B /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8A24F920F900010D7B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3724F920F900010D7B /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8B24F920F900010D7B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3724F920F900010D7B /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8C24F920F900010D7B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3924F920F900010D7B /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8D24F920F900010D7B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3924F920F900010D7B /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506C8E24F920F900010D7B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3A24F920F900010D7B /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3A24F920F900010D7B /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C9024F920F900010D7B /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C3D24F920F900010D7B /* GTMSessionFetcher.framework */; };
-		32506C9124F920F900010D7B /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C3D24F920F900010D7B /* GTMSessionFetcher.framework */; };
 		32506C9224F920F900010D7B /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C3E24F920F900010D7B /* FirebaseAuth.framework */; };
-		32506C9324F920F900010D7B /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C3E24F920F900010D7B /* FirebaseAuth.framework */; };
 		32506C9424F920F900010D7B /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4124F920F900010D7B /* Protobuf.framework */; };
-		32506C9524F920F900010D7B /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4124F920F900010D7B /* Protobuf.framework */; };
 		32506C9624F920F900010D7B /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4224F920F900010D7B /* FirebaseMessaging.framework */; };
-		32506C9724F920F900010D7B /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4224F920F900010D7B /* FirebaseMessaging.framework */; };
 		32506C9824F920F900010D7B /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4424F920F900010D7B /* GoogleAppMeasurement.framework */; };
-		32506C9924F920F900010D7B /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4424F920F900010D7B /* GoogleAppMeasurement.framework */; };
 		32506C9A24F920F900010D7B /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4524F920F900010D7B /* FirebaseCore.framework */; };
-		32506C9B24F920F900010D7B /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4524F920F900010D7B /* FirebaseCore.framework */; };
 		32506C9C24F920F900010D7B /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4624F920F900010D7B /* FirebaseAnalytics.framework */; };
-		32506C9D24F920F900010D7B /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4624F920F900010D7B /* FirebaseAnalytics.framework */; };
 		32506C9E24F920F900010D7B /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4724F920F900010D7B /* GoogleUtilities.framework */; };
-		32506C9F24F920F900010D7B /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4724F920F900010D7B /* GoogleUtilities.framework */; };
 		32506CA024F920F900010D7B /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4824F920F900010D7B /* nanopb.framework */; };
-		32506CA124F920F900010D7B /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4824F920F900010D7B /* nanopb.framework */; };
 		32506CA224F920F900010D7B /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4924F920F900010D7B /* FIRAnalyticsConnector.framework */; };
-		32506CA324F920F900010D7B /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4924F920F900010D7B /* FIRAnalyticsConnector.framework */; };
 		32506CA424F920F900010D7B /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4A24F920F900010D7B /* FirebaseInstanceID.framework */; };
-		32506CA524F920F900010D7B /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4A24F920F900010D7B /* FirebaseInstanceID.framework */; };
 		32506CA624F920F900010D7B /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4B24F920F900010D7B /* FirebaseCoreDiagnostics.framework */; };
-		32506CA724F920F900010D7B /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4B24F920F900010D7B /* FirebaseCoreDiagnostics.framework */; };
 		32506CA824F920FA00010D7B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4E24F920F900010D7B /* FBSDKLoginKit.framework */; };
 		32506CAA24F920FA00010D7B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4F24F920F900010D7B /* FBSDKShareKit.framework */; };
-		32506CAB24F920FA00010D7B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4F24F920F900010D7B /* FBSDKShareKit.framework */; };
 		32506CAC24F920FA00010D7B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5024F920F900010D7B /* FBSDKCoreKit.framework */; };
-		32506CAD24F920FA00010D7B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5024F920F900010D7B /* FBSDKCoreKit.framework */; };
 		32506CAE24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5324F920F900010D7B /* libAppsFlyerLib.a */; };
-		32506CAF24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5324F920F900010D7B /* libAppsFlyerLib.a */; };
-		32506CB024F920FA00010D7B /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5524F920F900010D7B /* UIImage+WebP.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB124F920FA00010D7B /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5524F920F900010D7B /* UIImage+WebP.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CB224F920FA00010D7B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5824F920F900010D7B /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB324F920FA00010D7B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5824F920F900010D7B /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CB424F920FA00010D7B /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5924F920F900010D7B /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB524F920FA00010D7B /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5924F920F900010D7B /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CB624F920FA00010D7B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5B24F920F900010D7B /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB724F920FA00010D7B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5B24F920F900010D7B /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CB824F920FA00010D7B /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5D24F920F900010D7B /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB924F920FA00010D7B /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5D24F920F900010D7B /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CBA24F920FA00010D7B /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5E24F920F900010D7B /* UIImage+GIF.m */; };
 		32506CBB24F920FA00010D7B /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5E24F920F900010D7B /* UIImage+GIF.m */; };
-		32506CBC24F920FA00010D7B /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6024F920F900010D7B /* UIImage+MultiFormat.m */; };
 		32506CBD24F920FA00010D7B /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6024F920F900010D7B /* UIImage+MultiFormat.m */; };
-		32506CBE24F920FA00010D7B /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6124F920F900010D7B /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CBF24F920FA00010D7B /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6124F920F900010D7B /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CC024F920FA00010D7B /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6224F920F900010D7B /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CC124F920FA00010D7B /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6224F920F900010D7B /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CC224F920FA00010D7B /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6524F920F900010D7B /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CC324F920FA00010D7B /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6524F920F900010D7B /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CC424F920FA00010D7B /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6724F920F900010D7B /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CC524F920FA00010D7B /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6724F920F900010D7B /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CC624F920FA00010D7B /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6A24F920F900010D7B /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CC724F920FA00010D7B /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6A24F920F900010D7B /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CC824F920FA00010D7B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6B24F920F900010D7B /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CC924F920FA00010D7B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6B24F920F900010D7B /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CCA24F920FA00010D7B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6E24F920F900010D7B /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CCB24F920FA00010D7B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C6E24F920F900010D7B /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CCC24F920FA00010D7B /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C7224F920F900010D7B /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CCD24F920FA00010D7B /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C7224F920F900010D7B /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506D0B24F924EE00010D7B /* GamaSDK_Login_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CD424F924EE00010D7B /* GamaSDK_Login_.a */; };
-		32506D0D24F924EE00010D7B /* GamaSDK_CDNDownload_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CD624F924EE00010D7B /* GamaSDK_CDNDownload_.a */; };
-		32506D0F24F924EE00010D7B /* GamaSDK_ThirdPlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CDF24F924EE00010D7B /* GamaSDK_ThirdPlatform.a */; };
-		32506D1124F924EE00010D7B /* GamaSDK_Facebook_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CE524F924EE00010D7B /* GamaSDK_Facebook_.a */; };
-		32506D1324F924EE00010D7B /* GamaSDK_AD_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CEA24F924EE00010D7B /* GamaSDK_AD_.a */; };
-		32506D1524F924EE00010D7B /* GamaSDK_CORE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506CED24F924EE00010D7B /* GamaSDK_CORE.a */; };
-		32506D1724F924EE00010D7B /* GamaSDK_Gamecenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506D0324F924EE00010D7B /* GamaSDK_Gamecenter.a */; };
-		32506D1924F924EE00010D7B /* GamaSDK_IAP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506D0524F924EE00010D7B /* GamaSDK_IAP.a */; };
 		3295E2E424DAEDDE00B85976 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2E524DAEDDE00B85976 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2E624DAEDDE00B85976 /* BJHTTPServiceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* BJHTTPServiceEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -218,16 +118,20 @@
 		3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E32A24DAF13200B85976 /* FLSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* FLSDK.h */; };
 		3295E38124DAF66400B85976 /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3218406124CB20C7004553C0 /* LoginData.h */; };
-		32BE13DA24FB5E1F000BDFBE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4E24F920F900010D7B /* FBSDKLoginKit.framework */; };
 		32BE13DD24FB6154000BDFBE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
-		32BE13DF24FB650C000BDFBE /* libGamaAD_DotA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B43512355D39100D45BF9 /* libGamaAD_DotA.a */; };
-		32C9BC5524C5EA0800B3D704 /* SDKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* SDKRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		32BE13E024FB686E000BDFBE /* libFLSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DF6AB11EAD9A4C0003610E /* libFLSDK.a */; };
+		32BE143524FB7B1A000BDFBE /* GamaSDK_ThirdPlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE13FA24FB6BA7000BDFBE /* GamaSDK_ThirdPlatform.a */; };
+		32BE143624FB7B1E000BDFBE /* GamaSDK_IAP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE142024FB6BA7000BDFBE /* GamaSDK_IAP.a */; };
+		32BE143724FB7B21000BDFBE /* GamaSDK_Gamecenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE141E24FB6BA7000BDFBE /* GamaSDK_Gamecenter.a */; };
+		32BE143824FB7B25000BDFBE /* GamaSDK_Facebook_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE140024FB6BA7000BDFBE /* GamaSDK_Facebook_.a */; };
+		32BE143924FB7B2A000BDFBE /* GamaSDK_CORE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE140824FB6BA7000BDFBE /* GamaSDK_CORE.a */; };
+		32BE143A24FB7B2D000BDFBE /* GamaSDK_CDNDownload_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE13F124FB6BA7000BDFBE /* GamaSDK_CDNDownload_.a */; };
+		32BE143B24FB7B30000BDFBE /* GamaSDK_AD_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE140524FB6BA7000BDFBE /* GamaSDK_AD_.a */; };
+		32BE143C24FB7B34000BDFBE /* GamaSDK_Login_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE13EF24FB6BA7000BDFBE /* GamaSDK_Login_.a */; };
 		32CD1D7224DC3C2B0021CC46 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* Info.plist */; };
 		32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
-		32D790E924D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; };
 		32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32D790ED24D55D69006A2F69 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; };
 		32D790EE24D55D69006A2F69 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		CE4F11641A6792A400780524 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9581A149924009E77FF /* libsqlite3.0.dylib */; };
 		CE4F11691A6796E400780524 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93E1A1498BA009E77FF /* Social.framework */; };
@@ -257,14 +161,9 @@
 		E91E696F248119A200ABE49C /* GamaAnnouncement.m in Sources */ = {isa = PBXBuildFile; fileRef = E98C027624751A7B00219DC7 /* GamaAnnouncement.m */; };
 		E92C7CF121193CFC00C65C81 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92C7CF021193CFB00C65C81 /* iAd.framework */; };
 		E92D51CA23668CE70071A0E3 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */; };
-		E92F318421B12462004A6695 /* ProvisionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92F318321B12462004A6695 /* ProvisionsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E92F318521B126CA004A6695 /* ProvisionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92F318321B12462004A6695 /* ProvisionsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2412477D13400C9A6DC /* CoreFoundation.framework */; };
 		E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
-		E947D326221D73CF00490C35 /* GamaLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D31E221D73CD00490C35 /* GamaLoginViewModel.m */; };
-		E947D327221D73CF00490C35 /* GamaInterfaceSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D320221D73CD00490C35 /* GamaInterfaceSDK.m */; };
-		E947D328221D73CF00490C35 /* GamaAdInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* GamaAdInterface.m */; };
-		E947D329221D73CF00490C35 /* GamaBaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D325221D73CF00490C35 /* GamaBaseSDK.m */; };
 		E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* GamaAdInterface.m */; };
 		E947D352221ED76200490C35 /* GamaInterfaceSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D320221D73CD00490C35 /* GamaInterfaceSDK.m */; };
 		E947D353221ED7EF00490C35 /* GamaLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D31E221D73CD00490C35 /* GamaLoginViewModel.m */; };
@@ -272,10 +171,8 @@
 		E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
 		E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		E95BCED5237D4A2A004A08B1 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E95BCEDD237EBC39004A08B1 /* GamaAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */; };
-		E95BCEDE237EBC39004A08B1 /* GamaAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E974128720874A170018E1A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97411BF20874A170018E1A6 /* Default-568h@2x.png */; };
 		E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97411C020874A170018E1A6 /* Default-iOS11-812h@3x.png */; };
 		E974128B20874A170018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
@@ -283,23 +180,7 @@
 		E974128E20874A170018E1A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97411CA20874A170018E1A6 /* Images.xcassets */; };
 		E974128F20874A170018E1A6 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
 		E974129020874A170018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
-		E974129120874A170018E1A6 /* GamaSDK+GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */; };
-		E974129220874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */; };
-		E974129320874A170018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
 		E974129520874A170018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		E97412D620874A170018E1A6 /* AutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126720874A170018E1A6 /* AutoLoginView.m */; };
-		E97412D720874A170018E1A6 /* GamaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126920874A170018E1A6 /* GamaLabel.m */; };
-		E97412D820874A170018E1A6 /* FLSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* FLSDK.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E97412D920874A170018E1A6 /* GamaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* GamaUtils.m */; };
-		E97412DA20874A170018E1A6 /* HelloLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127020874A170018E1A6 /* HelloLoginView.m */; };
-		E97412DB20874A170018E1A6 /* HelloMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127220874A170018E1A6 /* HelloMain.m */; };
-		E97412DC20874A170018E1A6 /* HelloProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127420874A170018E1A6 /* HelloProtocolViewController.m */; };
-		E97412DD20874A170018E1A6 /* HelloRigisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127620874A170018E1A6 /* HelloRigisterView.m */; };
-		E97412DE20874A170018E1A6 /* HelloSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127820874A170018E1A6 /* HelloSDK.m */; };
-		E97412DF20874A170018E1A6 /* HelloTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127A20874A170018E1A6 /* HelloTextField.m */; };
-		E97412E020874A170018E1A6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127D20874A170018E1A6 /* MainView.m */; };
-		E97412E120874A170018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
-		E97412E220874A170018E1A6 /* ViewCalculationCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = E974128120874A170018E1A6 /* ViewCalculationCriteria.m */; };
 		E97412F02088580A0018E1A6 /* GamaSDK+GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */; };
 		E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */; };
 		E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
@@ -313,18 +194,12 @@
 		E9741301208858260018E1A6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127D20874A170018E1A6 /* MainView.m */; };
 		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
 		E9741303208858260018E1A6 /* ViewCalculationCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = E974128120874A170018E1A6 /* ViewCalculationCriteria.m */; };
-		E98131A8218319E900819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E98131A921831A0200819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E98131AA2183258200819215 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */; };
 		E98131AB2183258800819215 /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF121180EA200B0C591 /* UIImage+Gradient.m */; };
-		E98C027724751A7B00219DC7 /* GamaAnnouncement.m in Sources */ = {isa = PBXBuildFile; fileRef = E98C027624751A7B00219DC7 /* GamaAnnouncement.m */; };
 		E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
-		E99EB28721BE4E9E004FF8B5 /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E99EB28A21BE5633004FF8B5 /* UIScreen+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E9DF1BF521180EA300B0C591 /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF121180EA200B0C591 /* UIImage+Gradient.m */; };
-		E9DF1BF621180EA300B0C591 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */; };
 		E9F4D965244EFFD900937AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4D964244EFFD900937AD5 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -546,40 +421,6 @@
 		32506C7124F920F900010D7B /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		32506C7224F920F900010D7B /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		32506C7324F920F900010D7B /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		32506CD224F924EE00010D7B /* GamaLoginFuncionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginFuncionPort.h; sourceTree = "<group>"; };
-		32506CD324F924EE00010D7B /* GamaLoginFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginFunction.h; sourceTree = "<group>"; };
-		32506CD424F924EE00010D7B /* GamaSDK_Login_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Login_.a; sourceTree = "<group>"; };
-		32506CD624F924EE00010D7B /* GamaSDK_CDNDownload_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CDNDownload_.a; sourceTree = "<group>"; };
-		32506CD924F924EE00010D7B /* GamaCDNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCDNConfig.h; sourceTree = "<group>"; };
-		32506CDD24F924EE00010D7B /* GamaThirdFunctionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunctionPort.h; sourceTree = "<group>"; };
-		32506CDE24F924EE00010D7B /* GamaThirdFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunction.h; sourceTree = "<group>"; };
-		32506CDF24F924EE00010D7B /* GamaSDK_ThirdPlatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_ThirdPlatform.a; sourceTree = "<group>"; };
-		32506CE324F924EE00010D7B /* GamaFacebookCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFacebookCenter.h; sourceTree = "<group>"; };
-		32506CE424F924EE00010D7B /* GamaFacebookPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFacebookPort.h; sourceTree = "<group>"; };
-		32506CE524F924EE00010D7B /* GamaSDK_Facebook_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Facebook_.a; sourceTree = "<group>"; };
-		32506CE924F924EE00010D7B /* GamaAdPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAdPort.h; sourceTree = "<group>"; };
-		32506CEA24F924EE00010D7B /* GamaSDK_AD_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_AD_.a; sourceTree = "<group>"; };
-		32506CED24F924EE00010D7B /* GamaSDK_CORE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE.a; sourceTree = "<group>"; };
-		32506CF024F924EE00010D7B /* GamaRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaRequestor.h; sourceTree = "<group>"; };
-		32506CF124F924EE00010D7B /* SdkUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
-		32506CF224F924EE00010D7B /* GamaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
-		32506CF324F924EE00010D7B /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
-		32506CF424F924EE00010D7B /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
-		32506CF524F924EE00010D7B /* GamaCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCfUUID.h; sourceTree = "<group>"; };
-		32506CF624F924EE00010D7B /* GamaFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFunction.h; sourceTree = "<group>"; };
-		32506CF724F924EE00010D7B /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
-		32506CF824F924EE00010D7B /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
-		32506CF924F924EE00010D7B /* GamaAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertViewDelegate.h; sourceTree = "<group>"; };
-		32506CFA24F924EE00010D7B /* GamaURLConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaURLConnect.h; sourceTree = "<group>"; };
-		32506CFB24F924EE00010D7B /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
-		32506CFC24F924EE00010D7B /* GamaPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
-		32506CFD24F924EE00010D7B /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
-		32506CFE24F924EE00010D7B /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
-		32506D0224F924EE00010D7B /* GamaGamecenterPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaGamecenterPort.h; sourceTree = "<group>"; };
-		32506D0324F924EE00010D7B /* GamaSDK_Gamecenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Gamecenter.a; sourceTree = "<group>"; };
-		32506D0524F924EE00010D7B /* GamaSDK_IAP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_IAP.a; sourceTree = "<group>"; };
-		32506D0824F924EE00010D7B /* GamaIapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaIapData.h; sourceTree = "<group>"; };
-		32506D0924F924EE00010D7B /* GamaIapFunctionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaIapFunctionPort.h; sourceTree = "<group>"; };
 		3295E31A24DAF0F300B85976 /* GamaSDK_Login_20200805_212906.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_Login_20200805_212906.a; path = ../GamaResources/_LibGroup/GamaAccountLogin_DotA/GamaSDK_Login_20200805_212906.a; sourceTree = "<group>"; };
 		3295E31C24DAF0F600B85976 /* GamaSDK_AD_20200805_213220.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_AD_20200805_213220.a; path = ../GamaResources/_LibGroup/GamaAD_DotA/GamaSDK_AD_20200805_213220.a; sourceTree = "<group>"; };
 		3295E31E24DAF0F900B85976 /* GamaSDK_CDNDownload_20200805_212658.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_CDNDownload_20200805_212658.a; path = ../GamaResources/_LibGroup/GamaCDNDownload_DotA/GamaSDK_CDNDownload_20200805_212658.a; sourceTree = "<group>"; };
@@ -593,6 +434,40 @@
 		32AFDC8124DB270D0018CC64 /* GamaSDK_CORE_20200806_014136.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_CORE_20200806_014136.a; path = ../GamaResources/_LibGroup/GamaCoreFunc_DotA/GamaSDK_CORE_20200806_014136.a; sourceTree = "<group>"; };
 		32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK_TEST-Bridging-Header.h"; sourceTree = "<group>"; };
 		32BE13DC24FB6154000BDFBE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = Demo/File.swift; sourceTree = "<group>"; };
+		32BE13ED24FB6BA7000BDFBE /* GamaLoginFuncionPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaLoginFuncionPort.h; sourceTree = "<group>"; };
+		32BE13EE24FB6BA7000BDFBE /* GamaLoginFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaLoginFunction.h; sourceTree = "<group>"; };
+		32BE13EF24FB6BA7000BDFBE /* GamaSDK_Login_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Login_.a; sourceTree = "<group>"; };
+		32BE13F124FB6BA7000BDFBE /* GamaSDK_CDNDownload_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CDNDownload_.a; sourceTree = "<group>"; };
+		32BE13F424FB6BA7000BDFBE /* GamaCDNConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaCDNConfig.h; sourceTree = "<group>"; };
+		32BE13F824FB6BA7000BDFBE /* GamaThirdFunctionPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunctionPort.h; sourceTree = "<group>"; };
+		32BE13F924FB6BA7000BDFBE /* GamaThirdFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunction.h; sourceTree = "<group>"; };
+		32BE13FA24FB6BA7000BDFBE /* GamaSDK_ThirdPlatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_ThirdPlatform.a; sourceTree = "<group>"; };
+		32BE13FE24FB6BA7000BDFBE /* GamaFacebookCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaFacebookCenter.h; sourceTree = "<group>"; };
+		32BE13FF24FB6BA7000BDFBE /* GamaFacebookPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaFacebookPort.h; sourceTree = "<group>"; };
+		32BE140024FB6BA7000BDFBE /* GamaSDK_Facebook_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Facebook_.a; sourceTree = "<group>"; };
+		32BE140424FB6BA7000BDFBE /* GamaAdPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaAdPort.h; sourceTree = "<group>"; };
+		32BE140524FB6BA7000BDFBE /* GamaSDK_AD_.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_AD_.a; sourceTree = "<group>"; };
+		32BE140824FB6BA7000BDFBE /* GamaSDK_CORE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE.a; sourceTree = "<group>"; };
+		32BE140B24FB6BA7000BDFBE /* GamaRequestor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaRequestor.h; sourceTree = "<group>"; };
+		32BE140C24FB6BA7000BDFBE /* SdkUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
+		32BE140D24FB6BA7000BDFBE /* GamaAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
+		32BE140E24FB6BA7000BDFBE /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
+		32BE140F24FB6BA7000BDFBE /* GamaCentreInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
+		32BE141024FB6BA7000BDFBE /* GamaCfUUID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaCfUUID.h; sourceTree = "<group>"; };
+		32BE141124FB6BA7000BDFBE /* GamaFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaFunction.h; sourceTree = "<group>"; };
+		32BE141224FB6BA7000BDFBE /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
+		32BE141324FB6BA7000BDFBE /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
+		32BE141424FB6BA7000BDFBE /* GamaAlertViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaAlertViewDelegate.h; sourceTree = "<group>"; };
+		32BE141524FB6BA7000BDFBE /* GamaURLConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaURLConnect.h; sourceTree = "<group>"; };
+		32BE141624FB6BA7000BDFBE /* GamaSecurityFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
+		32BE141724FB6BA7000BDFBE /* GamaPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
+		32BE141824FB6BA7000BDFBE /* GamaSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
+		32BE141924FB6BA7000BDFBE /* GamaCoreConfReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
+		32BE141D24FB6BA7000BDFBE /* GamaGamecenterPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaGamecenterPort.h; sourceTree = "<group>"; };
+		32BE141E24FB6BA7000BDFBE /* GamaSDK_Gamecenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Gamecenter.a; sourceTree = "<group>"; };
+		32BE142024FB6BA7000BDFBE /* GamaSDK_IAP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_IAP.a; sourceTree = "<group>"; };
+		32BE142324FB6BA7000BDFBE /* GamaIapData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaIapData.h; sourceTree = "<group>"; };
+		32BE142424FB6BA7000BDFBE /* GamaIapFunctionPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaIapFunctionPort.h; sourceTree = "<group>"; };
 		32C9BC5324C5EA0800B3D704 /* SDKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKRequest.h; sourceTree = "<group>"; };
 		32C9BC5424C5EA0800B3D704 /* SDKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKRequest.m; sourceTree = "<group>"; };
 		32CD1D7124DC3C2B0021CC46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -745,39 +620,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32340F8924DE5EB200584802 /* GamaSDK_CORE.a in Frameworks */,
-				32506CA724F920F900010D7B /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				32506CA124F920F900010D7B /* nanopb.framework in Frameworks */,
-				32506C9D24F920F900010D7B /* FirebaseAnalytics.framework in Frameworks */,
-				32506CA324F920F900010D7B /* FIRAnalyticsConnector.framework in Frameworks */,
-				32340F8F24DE5EBC00584802 /* GamaSDK_IAP.a in Frameworks */,
-				32340F8324DE5EA900584802 /* GamaSDK_Login_.a in Frameworks */,
-				32506D0D24F924EE00010D7B /* GamaSDK_CDNDownload_.a in Frameworks */,
-				32506D1124F924EE00010D7B /* GamaSDK_Facebook_.a in Frameworks */,
-				32506D0F24F924EE00010D7B /* GamaSDK_ThirdPlatform.a in Frameworks */,
-				32506D1724F924EE00010D7B /* GamaSDK_Gamecenter.a in Frameworks */,
-				32506C9F24F920F900010D7B /* GoogleUtilities.framework in Frameworks */,
-				32506C9124F920F900010D7B /* GTMSessionFetcher.framework in Frameworks */,
-				32340F9124DE5EBF00584802 /* GamaSDK_ThirdPlatform.a in Frameworks */,
-				32506C9724F920F900010D7B /* FirebaseMessaging.framework in Frameworks */,
-				32506CAF24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */,
-				32506CAB24F920FA00010D7B /* FBSDKShareKit.framework in Frameworks */,
-				32506D0B24F924EE00010D7B /* GamaSDK_Login_.a in Frameworks */,
-				32340F8B24DE5EB600584802 /* GamaSDK_Facebook_.a in Frameworks */,
-				32506C9324F920F900010D7B /* FirebaseAuth.framework in Frameworks */,
-				32506D1524F924EE00010D7B /* GamaSDK_CORE.a in Frameworks */,
-				32506D1924F924EE00010D7B /* GamaSDK_IAP.a in Frameworks */,
-				32506C9B24F920F900010D7B /* FirebaseCore.framework in Frameworks */,
-				32506D1324F924EE00010D7B /* GamaSDK_AD_.a in Frameworks */,
-				32506CA524F920F900010D7B /* FirebaseInstanceID.framework in Frameworks */,
-				32506C9524F920F900010D7B /* Protobuf.framework in Frameworks */,
-				32340F8D24DE5EB800584802 /* GamaSDK_Gamecenter.a in Frameworks */,
-				32506CAD24F920FA00010D7B /* FBSDKCoreKit.framework in Frameworks */,
-				32340F8524DE5EAC00584802 /* GamaSDK_AD_.a in Frameworks */,
-				32506C7524F920F900010D7B /* AdjustSdk.framework in Frameworks */,
-				32BE13DA24FB5E1F000BDFBE /* FBSDKLoginKit.framework in Frameworks */,
-				32506C9924F920F900010D7B /* GoogleAppMeasurement.framework in Frameworks */,
-				32340F8724DE5EAE00584802 /* GamaSDK_CDNDownload_.a in Frameworks */,
+				32BE143624FB7B1E000BDFBE /* GamaSDK_IAP.a in Frameworks */,
+				32BE143524FB7B1A000BDFBE /* GamaSDK_ThirdPlatform.a in Frameworks */,
+				32BE143724FB7B21000BDFBE /* GamaSDK_Gamecenter.a in Frameworks */,
+				32BE143C24FB7B34000BDFBE /* GamaSDK_Login_.a in Frameworks */,
+				32BE143B24FB7B30000BDFBE /* GamaSDK_AD_.a in Frameworks */,
+				32BE143824FB7B25000BDFBE /* GamaSDK_Facebook_.a in Frameworks */,
+				32BE143A24FB7B2D000BDFBE /* GamaSDK_CDNDownload_.a in Frameworks */,
+				32BE143924FB7B2A000BDFBE /* GamaSDK_CORE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,18 +635,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BE13DF24FB650C000BDFBE /* libGamaAD_DotA.a in Frameworks */,
+				32BE13E024FB686E000BDFBE /* libFLSDK.a in Frameworks */,
 				32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */,
-				322CBC7F24C5A579000D6B20 /* libGamaAccountLogin_DotA.a in Frameworks */,
-				322CBC8124C5A579000D6B20 /* libGamaCDNDownload_DotA.a in Frameworks */,
 				32506CAE24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */,
-				322CBC8324C5A579000D6B20 /* libGamaCoreFunc_DotA.a in Frameworks */,
-				322CBC8524C5A579000D6B20 /* libGamaFacebook_DotA.a in Frameworks */,
 				32506C7424F920F900010D7B /* AdjustSdk.framework in Frameworks */,
-				322CBC8724C5A579000D6B20 /* libGamaGamecenter_DotA.a in Frameworks */,
-				322CBC8B24C5A579000D6B20 /* libGamaIAP_DotA.a in Frameworks */,
 				32506C9424F920F900010D7B /* Protobuf.framework in Frameworks */,
-				322CBC8D24C5A579000D6B20 /* libGamaThirdPlatform_DotA.a in Frameworks */,
 				E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */,
 				E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */,
 				E9F4D965244EFFD900937AD5 /* Foundation.framework in Frameworks */,
@@ -933,7 +776,7 @@
 		22EE09011F0B9DCE002A12B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				32506CCE24F924EE00010D7B /* _LibGroup */,
+				32BE13E924FB6BA7000BDFBE /* _LibGroup */,
 				E97411B62087456F0018E1A6 /* GamaCommonHeader.h */,
 			);
 			name = Resources;
@@ -1279,244 +1122,244 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		32506CCE24F924EE00010D7B /* _LibGroup */ = {
+		32BE13E924FB6BA7000BDFBE /* _LibGroup */ = {
 			isa = PBXGroup;
 			children = (
-				32506CCF24F924EE00010D7B /* GamaAccountLogin_DotA */,
-				32506CD524F924EE00010D7B /* GamaCDNDownload_DotA */,
-				32506CDA24F924EE00010D7B /* GamaThirdPlatform_DotA */,
-				32506CE024F924EE00010D7B /* GamaFacebook_DotA */,
-				32506CE624F924EE00010D7B /* GamaAD_DotA */,
-				32506CEB24F924EE00010D7B /* GamaGuestLogin_DotA */,
-				32506CEC24F924EE00010D7B /* GamaCoreFunc_DotA */,
-				32506CFF24F924EE00010D7B /* GamaGamecenter_DotA */,
-				32506D0424F924EE00010D7B /* GamaIAP_DotA */,
+				32BE13EA24FB6BA7000BDFBE /* GamaAccountLogin_DotA */,
+				32BE13F024FB6BA7000BDFBE /* GamaCDNDownload_DotA */,
+				32BE13F524FB6BA7000BDFBE /* GamaThirdPlatform_DotA */,
+				32BE13FB24FB6BA7000BDFBE /* GamaFacebook_DotA */,
+				32BE140124FB6BA7000BDFBE /* GamaAD_DotA */,
+				32BE140624FB6BA7000BDFBE /* GamaGuestLogin_DotA */,
+				32BE140724FB6BA7000BDFBE /* GamaCoreFunc_DotA */,
+				32BE141A24FB6BA7000BDFBE /* GamaGamecenter_DotA */,
+				32BE141F24FB6BA7000BDFBE /* GamaIAP_DotA */,
 			);
 			name = _LibGroup;
 			path = ../../../GamaResources/_LibGroup;
 			sourceTree = "<group>";
 		};
-		32506CCF24F924EE00010D7B /* GamaAccountLogin_DotA */ = {
+		32BE13EA24FB6BA7000BDFBE /* GamaAccountLogin_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD024F924EE00010D7B /* include */,
-				32506CD424F924EE00010D7B /* GamaSDK_Login_.a */,
+				32BE13EB24FB6BA7000BDFBE /* include */,
+				32BE13EF24FB6BA7000BDFBE /* GamaSDK_Login_.a */,
 			);
 			path = GamaAccountLogin_DotA;
 			sourceTree = "<group>";
 		};
-		32506CD024F924EE00010D7B /* include */ = {
+		32BE13EB24FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD124F924EE00010D7B /* GamaAccountLogin_DotA */,
+				32BE13EC24FB6BA7000BDFBE /* GamaAccountLogin_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CD124F924EE00010D7B /* GamaAccountLogin_DotA */ = {
+		32BE13EC24FB6BA7000BDFBE /* GamaAccountLogin_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD224F924EE00010D7B /* GamaLoginFuncionPort.h */,
-				32506CD324F924EE00010D7B /* GamaLoginFunction.h */,
+				32BE13ED24FB6BA7000BDFBE /* GamaLoginFuncionPort.h */,
+				32BE13EE24FB6BA7000BDFBE /* GamaLoginFunction.h */,
 			);
 			path = GamaAccountLogin_DotA;
 			sourceTree = "<group>";
 		};
-		32506CD524F924EE00010D7B /* GamaCDNDownload_DotA */ = {
+		32BE13F024FB6BA7000BDFBE /* GamaCDNDownload_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD624F924EE00010D7B /* GamaSDK_CDNDownload_.a */,
-				32506CD724F924EE00010D7B /* include */,
+				32BE13F124FB6BA7000BDFBE /* GamaSDK_CDNDownload_.a */,
+				32BE13F224FB6BA7000BDFBE /* include */,
 			);
 			path = GamaCDNDownload_DotA;
 			sourceTree = "<group>";
 		};
-		32506CD724F924EE00010D7B /* include */ = {
+		32BE13F224FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD824F924EE00010D7B /* GamaCDNDownload_DotA */,
+				32BE13F324FB6BA7000BDFBE /* GamaCDNDownload_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CD824F924EE00010D7B /* GamaCDNDownload_DotA */ = {
+		32BE13F324FB6BA7000BDFBE /* GamaCDNDownload_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CD924F924EE00010D7B /* GamaCDNConfig.h */,
+				32BE13F424FB6BA7000BDFBE /* GamaCDNConfig.h */,
 			);
 			path = GamaCDNDownload_DotA;
 			sourceTree = "<group>";
 		};
-		32506CDA24F924EE00010D7B /* GamaThirdPlatform_DotA */ = {
+		32BE13F524FB6BA7000BDFBE /* GamaThirdPlatform_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CDB24F924EE00010D7B /* include */,
-				32506CDF24F924EE00010D7B /* GamaSDK_ThirdPlatform.a */,
+				32BE13F624FB6BA7000BDFBE /* include */,
+				32BE13FA24FB6BA7000BDFBE /* GamaSDK_ThirdPlatform.a */,
 			);
 			path = GamaThirdPlatform_DotA;
 			sourceTree = "<group>";
 		};
-		32506CDB24F924EE00010D7B /* include */ = {
+		32BE13F624FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CDC24F924EE00010D7B /* GamaThirdPlatform_DotA */,
+				32BE13F724FB6BA7000BDFBE /* GamaThirdPlatform_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CDC24F924EE00010D7B /* GamaThirdPlatform_DotA */ = {
+		32BE13F724FB6BA7000BDFBE /* GamaThirdPlatform_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CDD24F924EE00010D7B /* GamaThirdFunctionPort.h */,
-				32506CDE24F924EE00010D7B /* GamaThirdFunction.h */,
+				32BE13F824FB6BA7000BDFBE /* GamaThirdFunctionPort.h */,
+				32BE13F924FB6BA7000BDFBE /* GamaThirdFunction.h */,
 			);
 			path = GamaThirdPlatform_DotA;
 			sourceTree = "<group>";
 		};
-		32506CE024F924EE00010D7B /* GamaFacebook_DotA */ = {
+		32BE13FB24FB6BA7000BDFBE /* GamaFacebook_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE124F924EE00010D7B /* include */,
-				32506CE524F924EE00010D7B /* GamaSDK_Facebook_.a */,
+				32BE13FC24FB6BA7000BDFBE /* include */,
+				32BE140024FB6BA7000BDFBE /* GamaSDK_Facebook_.a */,
 			);
 			path = GamaFacebook_DotA;
 			sourceTree = "<group>";
 		};
-		32506CE124F924EE00010D7B /* include */ = {
+		32BE13FC24FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE224F924EE00010D7B /* GamaFacebook_DotA */,
+				32BE13FD24FB6BA7000BDFBE /* GamaFacebook_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CE224F924EE00010D7B /* GamaFacebook_DotA */ = {
+		32BE13FD24FB6BA7000BDFBE /* GamaFacebook_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE324F924EE00010D7B /* GamaFacebookCenter.h */,
-				32506CE424F924EE00010D7B /* GamaFacebookPort.h */,
+				32BE13FE24FB6BA7000BDFBE /* GamaFacebookCenter.h */,
+				32BE13FF24FB6BA7000BDFBE /* GamaFacebookPort.h */,
 			);
 			path = GamaFacebook_DotA;
 			sourceTree = "<group>";
 		};
-		32506CE624F924EE00010D7B /* GamaAD_DotA */ = {
+		32BE140124FB6BA7000BDFBE /* GamaAD_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE724F924EE00010D7B /* include */,
-				32506CEA24F924EE00010D7B /* GamaSDK_AD_.a */,
+				32BE140224FB6BA7000BDFBE /* include */,
+				32BE140524FB6BA7000BDFBE /* GamaSDK_AD_.a */,
 			);
 			path = GamaAD_DotA;
 			sourceTree = "<group>";
 		};
-		32506CE724F924EE00010D7B /* include */ = {
+		32BE140224FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE824F924EE00010D7B /* GamaAD_DotA */,
+				32BE140324FB6BA7000BDFBE /* GamaAD_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CE824F924EE00010D7B /* GamaAD_DotA */ = {
+		32BE140324FB6BA7000BDFBE /* GamaAD_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CE924F924EE00010D7B /* GamaAdPort.h */,
+				32BE140424FB6BA7000BDFBE /* GamaAdPort.h */,
 			);
 			path = GamaAD_DotA;
 			sourceTree = "<group>";
 		};
-		32506CEB24F924EE00010D7B /* GamaGuestLogin_DotA */ = {
+		32BE140624FB6BA7000BDFBE /* GamaGuestLogin_DotA */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = GamaGuestLogin_DotA;
 			sourceTree = "<group>";
 		};
-		32506CEC24F924EE00010D7B /* GamaCoreFunc_DotA */ = {
+		32BE140724FB6BA7000BDFBE /* GamaCoreFunc_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CED24F924EE00010D7B /* GamaSDK_CORE.a */,
-				32506CEE24F924EE00010D7B /* include */,
+				32BE140824FB6BA7000BDFBE /* GamaSDK_CORE.a */,
+				32BE140924FB6BA7000BDFBE /* include */,
 			);
 			path = GamaCoreFunc_DotA;
 			sourceTree = "<group>";
 		};
-		32506CEE24F924EE00010D7B /* include */ = {
+		32BE140924FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506CEF24F924EE00010D7B /* GamaCoreFunc_DotA */,
+				32BE140A24FB6BA7000BDFBE /* GamaCoreFunc_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506CEF24F924EE00010D7B /* GamaCoreFunc_DotA */ = {
+		32BE140A24FB6BA7000BDFBE /* GamaCoreFunc_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506CF024F924EE00010D7B /* GamaRequestor.h */,
-				32506CF124F924EE00010D7B /* SdkUserInfoModel.h */,
-				32506CF224F924EE00010D7B /* GamaAlertView.h */,
-				32506CF324F924EE00010D7B /* NSString+GamaSStringAddition.h */,
-				32506CF424F924EE00010D7B /* GamaCentreInfo.h */,
-				32506CF524F924EE00010D7B /* GamaCfUUID.h */,
-				32506CF624F924EE00010D7B /* GamaFunction.h */,
-				32506CF724F924EE00010D7B /* UIImage+GamaBundleImage.h */,
-				32506CF824F924EE00010D7B /* NSString+GamaURLEncoding.h */,
-				32506CF924F924EE00010D7B /* GamaAlertViewDelegate.h */,
-				32506CFA24F924EE00010D7B /* GamaURLConnect.h */,
-				32506CFB24F924EE00010D7B /* GamaSecurityFunction.h */,
-				32506CFC24F924EE00010D7B /* GamaPrivateKeychainCfUUID.h */,
-				32506CFD24F924EE00010D7B /* GamaSecurity.h */,
-				32506CFE24F924EE00010D7B /* GamaCoreConfReader.h */,
+				32BE140B24FB6BA7000BDFBE /* GamaRequestor.h */,
+				32BE140C24FB6BA7000BDFBE /* SdkUserInfoModel.h */,
+				32BE140D24FB6BA7000BDFBE /* GamaAlertView.h */,
+				32BE140E24FB6BA7000BDFBE /* NSString+GamaSStringAddition.h */,
+				32BE140F24FB6BA7000BDFBE /* GamaCentreInfo.h */,
+				32BE141024FB6BA7000BDFBE /* GamaCfUUID.h */,
+				32BE141124FB6BA7000BDFBE /* GamaFunction.h */,
+				32BE141224FB6BA7000BDFBE /* UIImage+GamaBundleImage.h */,
+				32BE141324FB6BA7000BDFBE /* NSString+GamaURLEncoding.h */,
+				32BE141424FB6BA7000BDFBE /* GamaAlertViewDelegate.h */,
+				32BE141524FB6BA7000BDFBE /* GamaURLConnect.h */,
+				32BE141624FB6BA7000BDFBE /* GamaSecurityFunction.h */,
+				32BE141724FB6BA7000BDFBE /* GamaPrivateKeychainCfUUID.h */,
+				32BE141824FB6BA7000BDFBE /* GamaSecurity.h */,
+				32BE141924FB6BA7000BDFBE /* GamaCoreConfReader.h */,
 			);
 			path = GamaCoreFunc_DotA;
 			sourceTree = "<group>";
 		};
-		32506CFF24F924EE00010D7B /* GamaGamecenter_DotA */ = {
+		32BE141A24FB6BA7000BDFBE /* GamaGamecenter_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0024F924EE00010D7B /* include */,
-				32506D0324F924EE00010D7B /* GamaSDK_Gamecenter.a */,
+				32BE141B24FB6BA7000BDFBE /* include */,
+				32BE141E24FB6BA7000BDFBE /* GamaSDK_Gamecenter.a */,
 			);
 			path = GamaGamecenter_DotA;
 			sourceTree = "<group>";
 		};
-		32506D0024F924EE00010D7B /* include */ = {
+		32BE141B24FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0124F924EE00010D7B /* GamaGamecenter_DotA */,
+				32BE141C24FB6BA7000BDFBE /* GamaGamecenter_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506D0124F924EE00010D7B /* GamaGamecenter_DotA */ = {
+		32BE141C24FB6BA7000BDFBE /* GamaGamecenter_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0224F924EE00010D7B /* GamaGamecenterPort.h */,
+				32BE141D24FB6BA7000BDFBE /* GamaGamecenterPort.h */,
 			);
 			path = GamaGamecenter_DotA;
 			sourceTree = "<group>";
 		};
-		32506D0424F924EE00010D7B /* GamaIAP_DotA */ = {
+		32BE141F24FB6BA7000BDFBE /* GamaIAP_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0524F924EE00010D7B /* GamaSDK_IAP.a */,
-				32506D0624F924EE00010D7B /* include */,
+				32BE142024FB6BA7000BDFBE /* GamaSDK_IAP.a */,
+				32BE142124FB6BA7000BDFBE /* include */,
 			);
 			path = GamaIAP_DotA;
 			sourceTree = "<group>";
 		};
-		32506D0624F924EE00010D7B /* include */ = {
+		32BE142124FB6BA7000BDFBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0724F924EE00010D7B /* GamaIAP_DotA */,
+				32BE142224FB6BA7000BDFBE /* GamaIAP_DotA */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		32506D0724F924EE00010D7B /* GamaIAP_DotA */ = {
+		32BE142224FB6BA7000BDFBE /* GamaIAP_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				32506D0824F924EE00010D7B /* GamaIapData.h */,
-				32506D0924F924EE00010D7B /* GamaIapFunctionPort.h */,
+				32BE142324FB6BA7000BDFBE /* GamaIapData.h */,
+				32BE142424FB6BA7000BDFBE /* GamaIapFunctionPort.h */,
 			);
 			path = GamaIAP_DotA;
 			sourceTree = "<group>";
@@ -1983,106 +1826,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				322CBC6124C589A5000D6B20 /* CCSDKResponse.m in Sources */,
-				322CBC5C24C589A5000D6B20 /* BJError.m in Sources */,
-				E97412D820874A170018E1A6 /* FLSDK.m in Sources */,
-				322CBC7124C589A5000D6B20 /* SelectLoginTypeView.m in Sources */,
-				322CBC7D24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m in Sources */,
-				322CBC5724C589A5000D6B20 /* AFHTTPSessionManager.m in Sources */,
-				322CBC5A24C589A5000D6B20 /* AFNetworkReachabilityManager.m in Sources */,
 				E974128B20874A170018E1A6 /* AppDelegate.m in Sources */,
-				32506C8824F920F900010D7B /* View+MASAdditions.m in Sources */,
-				32506CB224F920FA00010D7B /* SDWebImageManager.m in Sources */,
-				E97412DD20874A170018E1A6 /* HelloRigisterView.m in Sources */,
-				E947D328221D73CF00490C35 /* GamaAdInterface.m in Sources */,
-				32506C7E24F920F900010D7B /* ViewController+MASAdditions.m in Sources */,
-				E98131A8218319E900819215 /* GamaTimer.m in Sources */,
-				32506C8624F920F900010D7B /* NSArray+MASAdditions.m in Sources */,
-				322CBC6224C589A5000D6B20 /* CCSDKDATA.m in Sources */,
-				E974129220874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */,
-				322CBC6724C589A5000D6B20 /* SDKLoginViewController.m in Sources */,
-				32506CBA24F920FA00010D7B /* UIImage+GIF.m in Sources */,
-				322CBC5E24C589A5000D6B20 /* BJHTTPServiceEngine.m in Sources */,
-				3218406324CB20C7004553C0 /* LoginData.m in Sources */,
-				E97412D720874A170018E1A6 /* GamaLabel.m in Sources */,
-				E97412DB20874A170018E1A6 /* HelloMain.m in Sources */,
-				32506CB424F920FA00010D7B /* SDWebImageDecoder.m in Sources */,
-				32506CC024F920FA00010D7B /* SDWebImagePrefetcher.m in Sources */,
 				32BE13DD24FB6154000BDFBE /* File.swift in Sources */,
-				32506CCC24F920FA00010D7B /* UIButton+WebCache.m in Sources */,
-				E99EB28721BE4E9E004FF8B5 /* GamaWebViewController.m in Sources */,
-				E97412D620874A170018E1A6 /* AutoLoginView.m in Sources */,
-				E97412E220874A170018E1A6 /* ViewCalculationCriteria.m in Sources */,
-				32506C8A24F920F900010D7B /* MASConstraint.m in Sources */,
-				322CBC5824C589A5000D6B20 /* AFURLSessionManager.m in Sources */,
-				E98C027724751A7B00219DC7 /* GamaAnnouncement.m in Sources */,
-				322CBC7924C59186000D6B20 /* SdkAutoLoginView.m in Sources */,
-				32506CB824F920FA00010D7B /* SDWebImageDownloader.m in Sources */,
-				E92F318421B12462004A6695 /* ProvisionsView.m in Sources */,
-				32506C8E24F920F900010D7B /* MASViewAttribute.m in Sources */,
-				322CBC5624C589A5000D6B20 /* AFURLResponseSerialization.m in Sources */,
-				322CBC5424C589A5000D6B20 /* NSObject+YYModel.m in Sources */,
-				E97412DA20874A170018E1A6 /* HelloLoginView.m in Sources */,
-				E97412DE20874A170018E1A6 /* HelloSDK.m in Sources */,
-				E99EB28A21BE5633004FF8B5 /* UIScreen+Gama.m in Sources */,
-				322CBC7624C589A5000D6B20 /* AccountLoginView.m in Sources */,
-				32506CC424F920FA00010D7B /* SDWebImageDownloaderOperation.m in Sources */,
 				00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */,
-				322CBC4E24C589A5000D6B20 /* UIUtil.m in Sources */,
-				322CBC5924C589A5000D6B20 /* AFURLRequestSerialization.m in Sources */,
-				E9DF1BF621180EA300B0C591 /* UIButton+Gradient.m in Sources */,
-				32506CC224F920FA00010D7B /* SDImageCache.m in Sources */,
 				E974128F20874A170018E1A6 /* UserModel.m in Sources */,
-				322CBC6E24C589A5000D6B20 /* PhoneView.m in Sources */,
-				32506CB024F920FA00010D7B /* UIImage+WebP.m in Sources */,
-				32506C8024F920F900010D7B /* MASCompositeConstraint.m in Sources */,
-				E97412E120874A170018E1A6 /* UIColor+HexColor.m in Sources */,
-				32506C8424F920F900010D7B /* MASLayoutConstraint.m in Sources */,
 				E974129020874A170018E1A6 /* ViewController.m in Sources */,
 				E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */,
-				32506CBC24F920FA00010D7B /* UIImage+MultiFormat.m in Sources */,
-				32506CB624F920FA00010D7B /* UIImageView+HighlightedWebCache.m in Sources */,
-				E97412DC20874A170018E1A6 /* HelloProtocolViewController.m in Sources */,
-				32506CC624F920FA00010D7B /* NSData+ImageContentType.m in Sources */,
-				32D790E924D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
-				E947D327221D73CF00490C35 /* GamaInterfaceSDK.m in Sources */,
-				322CBC6A24C589A5000D6B20 /* SelectBindTypeView.m in Sources */,
-				E97412DF20874A170018E1A6 /* HelloTextField.m in Sources */,
-				32506C8224F920F900010D7B /* MASConstraintMaker.m in Sources */,
-				322CBC6324C589A5000D6B20 /* AccountModel.m in Sources */,
-				322CBC5B24C589A5000D6B20 /* AFSecurityPolicy.m in Sources */,
-				322CBC6524C589A5000D6B20 /* LoginButton.m in Sources */,
-				32C9BC5524C5EA0800B3D704 /* SDKRequest.m in Sources */,
-				322CBC6B24C589A5000D6B20 /* ChangePasswordView.m in Sources */,
-				32506CBE24F920FA00010D7B /* SDWebImageCompat.m in Sources */,
-				E97412D920874A170018E1A6 /* GamaUtils.m in Sources */,
 				E974129520874A170018E1A6 /* main.m in Sources */,
-				E95BCED5237D4A2A004A08B1 /* GamaPhoneModel.m in Sources */,
-				E974129120874A170018E1A6 /* GamaSDK+GameCenter.m in Sources */,
-				322CBC5524C589A5000D6B20 /* YYClassInfo.m in Sources */,
-				00087B6A21AA5D1300236DEA /* GamaSDK+Social.m in Sources */,
-				32506CC824F920FA00010D7B /* UIImageView+WebCache.m in Sources */,
-				322CBC6F24C589A5000D6B20 /* AccountListViewCell.m in Sources */,
-				E974129320874A170018E1A6 /* GamaNetEngine.m in Sources */,
-				322CBC6C24C589A5000D6B20 /* LoginTitleView.m in Sources */,
-				E947D326221D73CF00490C35 /* GamaLoginViewModel.m in Sources */,
-				322CBC7524C589A5000D6B20 /* RegisterAccountView.m in Sources */,
-				322CBC6924C589A5000D6B20 /* SDKBaseView.m in Sources */,
-				32506C8C24F920F900010D7B /* MASViewConstraint.m in Sources */,
-				322CBC6024C589A5000D6B20 /* BJBaseHTTPEngine.m in Sources */,
-				E9DF1BF521180EA300B0C591 /* UIImage+Gradient.m in Sources */,
-				003CE8C521B69E1900A6A3C8 /* GamaThirdSocial.m in Sources */,
-				E95BCEDE237EBC39004A08B1 /* GamaAppleLogin.m in Sources */,
-				322CBC6D24C589A5000D6B20 /* SDKTextFiledView.m in Sources */,
-				32D790ED24D55D69006A2F69 /* TermsView.m in Sources */,
-				32506C7C24F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				322CBC6424C589A5000D6B20 /* ConfigCoreUtil.m in Sources */,
-				E947D329221D73CF00490C35 /* GamaBaseSDK.m in Sources */,
-				322CBC5F24C589A5000D6B20 /* BJBaseResponceModel.m in Sources */,
-				32506CCA24F920FA00010D7B /* UIView+WebCacheOperation.m in Sources */,
-				E97412E020874A170018E1A6 /* MainView.m in Sources */,
-				322CBC7324C589A5000D6B20 /* FindPasswordView.m in Sources */,
-				322CBC5D24C589A5000D6B20 /* BJServiceConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
