@@ -37,26 +37,6 @@ typedef NS_OPTIONS(NSUInteger, SDK_PAY_TYPE)
     SDK_PAY_TYPE_WEB,
 };
 
-
-// 通知回调类常量
-//extern NSString *const GAMA_LOGIN_SUCCUESS;
-//
-//extern NSString *const GAMA_PAY_SUCCUESS;
-//extern NSString *const GAMA_PAY_PUCHESSING;
-//extern NSString *const GAMA_PAY_FAIL;
-//extern NSString *const GAMA_SHARE_RESULT;
-//extern NSString *const GAMA_NOTICE_CLOSE;
-//
-//
-//extern NSString *const GAMA_WEB_MODE_CP;                // web 类型 CP的链接
-//extern NSString *const GAMA_WEB_MODE_SDK;                // web 类型 SDK的链接
-//
-//extern NSString *const GAMA_PRM_SHARE_CONTENT_URL;       // 分享参数
-//extern NSString *const GAMA_PRM_SHARE_CONTENT_IMAGE;     //分享本地图片
-//extern NSString *const GAMA_PRM_OPEN_WEB_URL;            //打开链接参数
-//extern NSString *const GAMA_PRM_WEB_SERVICE;             //打开客服系统
-//extern NSString *const GAMA_PRM_WEB_NOTICE;              //打开系统公告
-
 /**
  */
 typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){

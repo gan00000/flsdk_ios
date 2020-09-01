@@ -75,9 +75,6 @@
 
 // 通知类型
 NSString *const GAMA_LOGIN_SUCCUESS    = @"CONST_GAMA_LOGIN_SUCCUESS";
-//NSString *const GAMA_LOGIN_FAIL        = @"CONST_GAMA_LOGIN_FAIL";//保留
-//NSString *const GAMA_PAY_SUCCUESS      = @"CONST_GAMA_PAY_SUCCUESS";
-//NSString *const GAMA_PAY_FAIL          = @"CONST_GAMA_PAY_FAIL";
 
 NSString *const GAMA_PAY_SUCCUESS      = @"GAMAPHCHASESUCCESSFUL";
 NSString *const GAMA_PAY_FAIL          = @"GAMAPHCHASEFAIL";
@@ -196,10 +193,18 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 //                                                 selector:@selector(_gamaNoteListener:)
 //                                                     name:@"GAMA_BIND_PHONE_RESULT"//GAMA_NOTIFICATION_SHARE_RESULT
 //                                                   object:nil];
-
+        
+        // 监听登录成功通知，调用数据统计等接口
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_gamaNoteListener:) name:GAMA_NOTIFICATION_SUCCESS_LOGIN object:nil];
+        
     }
     
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)sdkLoginWithHandler:(SDKLoginCompletionHandler)cmopleteHandler
@@ -515,17 +520,18 @@ completionHandler:(PayCompletionHandler) handler
     
     if ([noteName isEqualToString:GAMA_NOTIFICATION_SUCCESS_LOGIN]) {
         // 对外界发送登录成功的通知
-        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_LOGIN_SUCCUESS
-                                                             object:nil
-                                                           userInfo:note.userInfo];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_LOGIN_SUCCUESS
+//                                                             object:nil
+//                                                           userInfo:note.userInfo];
         
         //增加登入成功时间戳
 //        NSString *loginUid = [[NSUserDefaults standardUserDefaults] objectForKey:@"saveLoginUid"];
 //        if ([loginUid isEqual:note.userInfo[@"userId"]]) {
 //
 //        }else{//首次登入
-        [GamaTimer setStartTimeStamp];
-        [GamaTimer shareInstance].loginState = YES;
+//        [GamaTimer setStartTimeStamp];
+//        [GamaTimer shareInstance].loginState = YES;
+//        [GamaBaseSDK _gamaLoginSuccess:note];
 //        }
 //        [[NSUserDefaults standardUserDefaults] setObject:note.userInfo[@"userId"] forKey:@"saveLoginUid"];
 //        [[NSUserDefaults standardUserDefaults] synchronize];
@@ -544,7 +550,7 @@ completionHandler:(PayCompletionHandler) handler
 //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_SUCCUESS
 //                                                            object:nil
 //                                                          userInfo:resultDic];
-        
+        [GamaBaseSDK _in_app_purchases:note];
         if (self.payHandler) {
             self.payHandler(SDK_PAY_STATUS_SUCCESS, resultDic);
         }

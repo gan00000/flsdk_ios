@@ -56,4 +56,7 @@ extern NSString *const GAMA_NOTIFICATION_SHARE_RESULT;            // 分享结�
 cpOrderId:(NSString *)cpOrderId
           extra:(NSString *)extra;
 
++ (void)_gamaLoginSuccess:(BOOL) isRegister;
++ (void)_in_app_purchases:(NSNotification *)note;
+
 @end

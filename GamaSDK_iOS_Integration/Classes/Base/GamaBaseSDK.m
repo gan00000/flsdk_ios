@@ -42,9 +42,6 @@
     [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_OPEN parameters:nil];
     
     [NSClassFromString(@"KRTwitterLogin") twitterFinishLaunching];
-    // 监听登录成功通知，调用数据统计等接口
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_gamaLoginSuccess:) name:GAMA_NOTIFICATION_SUCCESS_LOGIN object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_in_app_purchases:) name:@"GAMAPHCHASESUCCESSFUL" object:nil];
 }
 
 #pragma mark DB : AD Purchases
@@ -141,10 +138,10 @@
     //接著繼承...
 }
 
-+ (void)_gamaLoginSuccess:(NSNotification *)note
++ (void)_gamaLoginSuccess:(BOOL) isRegister
 {
-    NSString *loginState = note.userInfo[@"loginState"];
-    if (loginState && [loginState isEqualToString:@"register"]) {
+    
+    if (isRegister) {
         // 注册时广告跟踪
         [GamaAdPort startWhenRegister];
     }

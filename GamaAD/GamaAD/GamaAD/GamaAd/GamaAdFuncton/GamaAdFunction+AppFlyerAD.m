@@ -19,7 +19,8 @@
     GamaParameterType parameterType = [self isEmptyStrings:appFlyerDevKey,appFlyerAppId,appFlyerCurrencyCode, [NSNull null]];
     Class GamaAppsFlyerTracker = NSClassFromString(@"AppsFlyerTracker");
     if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker == nil) {
-        [GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
+        //[GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
+        NSLog(@"Please import AppFlyer Library.");
     } else if (parameterType == GamaParameterTypeBroken) {
         [GamaAlertView showAlertWithMessage:@"The config is not complete, Please check it."];
     } else if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker != nil) {
@@ -59,7 +60,8 @@
     GamaParameterType parameterType = [self isEmptyStrings:appFlyerDevKey,appFlyerAppId,appFlyerCurrencyCode, [NSNull null]];
     Class GamaAppsFlyerTracker = NSClassFromString(@"AppsFlyerTracker");
     if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker == nil) {
-        [GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
+//        [GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
+        NSLog(@"Please import AppFlyer Library.");
     } else if (parameterType == GamaParameterTypeBroken) {
         [GamaAlertView showAlertWithMessage:@"The config is not complete, Please check it."];
     } else if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker != nil) {
