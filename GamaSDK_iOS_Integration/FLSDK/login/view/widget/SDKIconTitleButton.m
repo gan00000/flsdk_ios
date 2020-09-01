@@ -114,6 +114,7 @@
           
           [mButton mas_makeConstraints:^(MASConstraintMaker *make) {
               make.size.mas_equalTo(self);
+              make.center.mas_equalTo(self);
           }];
         
         

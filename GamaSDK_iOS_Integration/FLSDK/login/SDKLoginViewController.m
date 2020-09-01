@@ -146,15 +146,15 @@
 -(UIView *) sdkContentView
 {
     if (!sdkContentView) {
-         sdkContentView = [[UIView alloc]init];
-           sdkContentView.backgroundColor = [UIColor clearColor];
-           [self.view addSubview:sdkContentView];
-           [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-               make.centerX.equalTo(@(0));
-               make.centerY.equalTo(@(0));
-               make.width.equalTo(@(kBgWidth));
-               make.height.equalTo(@(kBgHeight));
-           }];
+        sdkContentView = [[UIView alloc]init];
+        sdkContentView.backgroundColor = [UIColor clearColor];
+        [self.view addSubview:sdkContentView];
+        [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(@(0));
+            make.centerY.equalTo(@(0));
+            make.width.equalTo(@(kBgWidth));
+            make.height.equalTo(@(kBgHeight));
+        }];
     }
     return sdkContentView;
 }
@@ -257,7 +257,8 @@
     [[self sdkContentView] addSubview:mSDKBaseView];
 
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(sdkContentView);
+        make.size.mas_equalTo([self sdkContentView]);
+        make.center.mas_equalTo([self sdkContentView]);
     }];
 }
 
