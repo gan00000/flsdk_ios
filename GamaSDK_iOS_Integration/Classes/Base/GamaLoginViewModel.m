@@ -14,7 +14,6 @@
 #import "GamaCommonHeader.h"
 #import "SDImageCache.h"
 #import "HelloHeader.h"
-#import "GamaAnnouncement.h"
 
 static NSString *loginEvent        =   GAMESWORD_EVENT_LOGIN;
 static NSString *registerEvent     =   GAMESWORD_EVENT_REGISTER;
@@ -201,17 +200,17 @@ static NSString *registerEvent     =   GAMESWORD_EVENT_REGISTER;
 //        }
         
         
-        GamaAnnouncement *annoucement = [[GamaAnnouncement alloc] initWithCompleter:^{
-            [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_NOTIFICATION_SUCCESS_LOGIN
-                                                                object:nil
-                                                              userInfo:userLoginSuccessInfo];
-            if ([appTopViewController.view viewWithTag:10000213]) {
-                [[appTopViewController.view viewWithTag:10000213] removeFromSuperview];
-            }
-        }];
-        annoucement.frame = appTopViewController.view.frame;
-        annoucement.tag = 10000213;
-        [appTopViewController.view addSubview:annoucement];
+//        GamaAnnouncement *annoucement = [[GamaAnnouncement alloc] initWithCompleter:^{
+//            [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_NOTIFICATION_SUCCESS_LOGIN
+//                                                                object:nil
+//                                                              userInfo:userLoginSuccessInfo];
+//            if ([appTopViewController.view viewWithTag:10000213]) {
+//                [[appTopViewController.view viewWithTag:10000213] removeFromSuperview];
+//            }
+//        }];
+//        annoucement.frame = appTopViewController.view.frame;
+//        annoucement.tag = 10000213;
+//        [appTopViewController.view addSubview:annoucement];
 //        [userLoginSuccessInfo release];
 
     } else {

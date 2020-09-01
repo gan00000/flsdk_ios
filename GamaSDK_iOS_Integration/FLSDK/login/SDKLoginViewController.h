@@ -12,7 +12,6 @@
 #import "SdkHeader.h"
 #import "LoginViewDelegate.h"
 #import "FLSDK.h"
-#import "ProvisionsView.h"
 
 typedef NS_OPTIONS(NSUInteger, SDKPage)
 {

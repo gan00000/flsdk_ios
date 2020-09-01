@@ -15,12 +15,6 @@
 //#import "KRAgeSystemView.h"
 #pragma end
 #import <AdSupport/AdSupport.h>
-#import "HelloRigisterView.h"
-
-
-#pragma testPro
-#import "GamaAnnouncement.h"
-#pragma end
 
 #import "Firebase.h"
 
