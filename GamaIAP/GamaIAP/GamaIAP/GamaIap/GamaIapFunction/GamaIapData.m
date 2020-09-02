@@ -224,6 +224,7 @@
             };break;
                 
             case SKPaymentTransactionStateFailed:{
+                GAMA_IAP_LOG(@"SKPaymentTransactionStateFailed...")
                 [self dismissPurchasingView];
                 [GamaIapFunction failedTransaction:transaction];//自定义方法
             };break;

@@ -172,6 +172,9 @@
     while (topController.presentedViewController) {
         topController = topController.presentedViewController;
     }
+    if (!topController) {
+        GAMA_FUNCTION_LOG(@"topController nil,Unable to obtain topController")
+    }
     return topController;
 }
 

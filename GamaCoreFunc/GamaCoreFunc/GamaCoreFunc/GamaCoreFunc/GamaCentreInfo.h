@@ -17,7 +17,7 @@
 
 
 /*控制运行时详细日志打印*/
-#define GAMA_FUNCTION_LOG(log)      if(SDKConReader.ISPRINT){NSLog(@"func:%@",log);}
+#define GAMA_FUNCTION_LOG(log)      if(SDKConReader.ISPRINT){NSLog(@"FL_SDK:%@",log);}
 #define GAMA_SHOW_CURRENT_FUNC_NAME if(SDKConReader.ISPRINT){NSLog(@"selector:%s",__FUNCTION__);}
 #define GAMA_COMBIN(note,content)   ([NSString stringWithFormat:@"-%@-:%@",note,content])
 #define GAMA_CLASS_COMBIN(content)  ([NSString stringWithFormat:@"-%s-:%@",object_getClassName(self),content])

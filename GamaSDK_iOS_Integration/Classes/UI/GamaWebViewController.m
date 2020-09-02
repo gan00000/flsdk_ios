@@ -32,14 +32,14 @@
     if(device_is_iPhoneX){
         SDK_LOG(@"device_is_iPhoneX");
         SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
-        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
+//        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
         [containerVC presentViewController:safariVC animated:animation completion:handler];
         return nil;
     }
     SDK_LOG(@"not device_is_iPhoneX");
     GamaWebViewController *webVC = [[GamaWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
     webVC.modalTransitionStyle = animationStyle;
-    webVC.modalPresentationStyle = UIModalPresentationFullScreen;
+//    webVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [webVC webLoadURLRequest:request];
     [containerVC presentViewController:webVC animated:animation completion:nil];
     return webVC;
