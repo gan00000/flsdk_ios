@@ -22,6 +22,7 @@
 @property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic) BOOL animation;
+@property (nonatomic, strong)NSURLRequest *webRequest;
 @end
 
 @implementation GamaWebViewController
@@ -40,7 +41,8 @@
     GamaWebViewController *webVC = [[GamaWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
     webVC.modalTransitionStyle = animationStyle;
 //    webVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    [webVC webLoadURLRequest:request];
+    webVC.webRequest = request;
+    //[webVC webLoadURLRequest:request];
     [containerVC presentViewController:webVC animated:animation completion:nil];
     return webVC;
 }
@@ -131,6 +133,7 @@
             make.height.equalTo(@(3));
         }];
     }
+    [self webLoadURLRequest:self.webRequest];
 }
 
 #pragma mark - WebView Operator
