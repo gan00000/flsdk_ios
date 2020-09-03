@@ -40,7 +40,7 @@
     SDK_LOG(@"not device_is_iPhoneX");
     GamaWebViewController *webVC = [[GamaWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
     webVC.modalTransitionStyle = animationStyle;
-//    webVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
     webVC.webRequest = request;
     //[webVC webLoadURLRequest:request];
     [containerVC presentViewController:webVC animated:animation completion:nil];
