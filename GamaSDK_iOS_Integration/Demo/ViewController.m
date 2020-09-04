@@ -184,7 +184,7 @@
         case 1:
         {
             
-            [[FLSDK share] setRoleInfo:@"22006992996306" roleName:@"roleName" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"999"];
+            [[FLSDK share] setRoleInfo:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"999"];
         }
             break;
             

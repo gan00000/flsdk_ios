@@ -55,11 +55,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>為了給您提供更好的客戶服務，元氣戰姬需要獲取您相機的訪問權限</string>
+	<string>為了給您提供更好的客戶服務，App需要獲取您相機的訪問權限</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>為了添加直接玩帳號信息的圖片到您的手機，App需要獲取您照片的訪問權限。</string>
+	<string>為了給您提供更好的客戶服務，App需要獲取您照片的訪問權限</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>為了給您提供更好的客戶服務，元氣戰姬需要獲取您相冊的訪問權限</string>
+	<string>為了給您提供更好的客戶服務，App需要獲取您相冊的訪問權限</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
