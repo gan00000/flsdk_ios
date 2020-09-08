@@ -262,7 +262,16 @@
     }
     
     [GAMA_IAP_LOG insertOneDescription:GAMA_COMBIN(@"获取到requestData", parameterStr)];
-    NSDictionary * parameterDic = [self getParameterFromStr:parameterStr];
+    
+    NSDictionary * parameterDic;
+    @try {
+        parameterDic = [self getParameterFromStr:parameterStr];
+    } @catch (NSException *exception) {
+        parameterDic = nil;
+    } @finally {
+        
+    }
+   // NSDictionary * parameterDic = [self getParameterFromStr:parameterStr];
     
     if(![parameterDic.allKeys containsObject:@"uid"] ||
        ![parameterDic.allKeys containsObject:@"serverCode"] ||
