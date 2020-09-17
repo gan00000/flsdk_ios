@@ -211,8 +211,8 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 {
         self.loginCompletionHandler = cmopleteHandler;
         SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
-        controller.definesPresentationContext = YES;
-        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+//        controller.definesPresentationContext = YES;
+//        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
         [[GamaFunction getCurrentViewController] presentViewController: controller animated:NO completion:^{
     
         }];
