@@ -231,7 +231,7 @@ serverCode:(NSString *)serverCode
 serverName:(NSString *)serverName
 {
     
-    SDK_LOG(@"角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
+    SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
                              roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     // 对必要参数进行检查
@@ -293,14 +293,14 @@ serverName:(NSString *)serverName
 //                       isLandscape:GAMA_IS_INTERFACE_THWARTWISE];
 
     ///用户登入信息上报
-    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
-                                                                                        @"role_name":roleName,
-                                                                                        @"level":roleLevel,
-                                                                                        @"vip_level":roleVipLevel,
-                                                                                        @"server_code":serverCode,
-                                                                                        @"server_name":serverName,
-                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
-                                                                                        }];
+//    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
+//                                                                                        @"role_name":roleName,
+//                                                                                        @"level":roleLevel,
+//                                                                                        @"vip_level":roleVipLevel,
+//                                                                                        @"server_code":serverCode,
+//                                                                                        @"server_name":serverName,
+//                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
+//                                                                                        }];
     /**
     NSDateFormatter *sysTemFormatter = [[NSDateFormatter alloc]init];
     NSDate *date = [NSDate date]; // 获得时间对象 UTC 比北京时间少8个小时
@@ -392,8 +392,23 @@ completionHandler:(PayCompletionHandler) handler
 //           [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
 //           [resultURL appendFormat:@"from=%@",@"gamePage"];
 //           NSLog(@"openWebUrl:%@",resultURL);
+    SDK_LOG(@"openCs..");
     NSString *resultURL = [[ConfigCoreUtil share] createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
            [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+}
+
+- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
+                              roleName:(NSString *)roleName{
+    SDK_LOG(@"trackCreateRoleEventWithRoleId roleID = %@，roleName = %@",roleId,roleName);
+    
+    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
+                                                                                        @"role_name":roleName,
+//                                                                                        @"level":roleLevel,
+//                                                                                        @"vip_level":roleVipLevel,
+//                                                                                        @"server_code":serverCode,
+//                                                                                        @"server_name":serverName,
+                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
+                                                                                        }];
 }
 
 - (void)openWebPage:(NSDictionary *)webParams {

@@ -131,6 +131,8 @@ completionHandler:(PayCompletionHandler) handler;
  */
 - (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas;
 
+- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
+                              roleName:(NSString *)roleName;
 
 @end
 

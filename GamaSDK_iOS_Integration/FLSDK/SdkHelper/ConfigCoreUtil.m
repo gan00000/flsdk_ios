@@ -179,7 +179,7 @@ static dispatch_once_t onceToken;
     }
     
     [resultURL appendFormat:@"from=%@",@"gamePage"];
-    NSLog(@"createSdkUrl:%@",resultURL);
+    SDK_LOG(@"createSdkUrl:%@",resultURL);
     return resultURL;
 }
 
