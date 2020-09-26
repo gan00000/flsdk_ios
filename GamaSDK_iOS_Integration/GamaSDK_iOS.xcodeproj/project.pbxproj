@@ -167,7 +167,6 @@
 		E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
 		E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* GamaAdInterface.m */; };
 		E947D352221ED76200490C35 /* GamaInterfaceSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D320221D73CD00490C35 /* GamaInterfaceSDK.m */; };
-		E947D353221ED7EF00490C35 /* GamaLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D31E221D73CD00490C35 /* GamaLoginViewModel.m */; };
 		E947D354221ED7F300490C35 /* GamaBaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D325221D73CF00490C35 /* GamaBaseSDK.m */; };
 		E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
@@ -522,8 +521,6 @@
 		E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		E940F2412477D13400C9A6DC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E940F2432477D14700C9A6DC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		E947D31E221D73CD00490C35 /* GamaLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamaLoginViewModel.m; path = Classes/Base/GamaLoginViewModel.m; sourceTree = SOURCE_ROOT; };
-		E947D31F221D73CD00490C35 /* GamaLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaLoginViewModel.h; path = Classes/Base/GamaLoginViewModel.h; sourceTree = SOURCE_ROOT; };
 		E947D320221D73CD00490C35 /* GamaInterfaceSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamaInterfaceSDK.m; path = Classes/Base/GamaInterfaceSDK.m; sourceTree = SOURCE_ROOT; };
 		E947D321221D73CE00490C35 /* GamaAdInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamaAdInterface.m; path = Classes/Base/GamaAdInterface.m; sourceTree = SOURCE_ROOT; };
 		E947D322221D73CE00490C35 /* GamaAdInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaAdInterface.h; path = Classes/Base/GamaAdInterface.h; sourceTree = SOURCE_ROOT; };
@@ -1456,8 +1453,6 @@
 				E947D325221D73CF00490C35 /* GamaBaseSDK.m */,
 				E947D323221D73CE00490C35 /* GamaInterfaceSDK.h */,
 				E947D320221D73CD00490C35 /* GamaInterfaceSDK.m */,
-				E947D31F221D73CD00490C35 /* GamaLoginViewModel.h */,
-				E947D31E221D73CD00490C35 /* GamaLoginViewModel.m */,
 			);
 			name = Base;
 			path = ../../../GamaAccountLogin/GamaAccountLogin/Base;
@@ -1780,7 +1775,6 @@
 				E947D354221ED7F300490C35 /* GamaBaseSDK.m in Sources */,
 				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* GamaAppleLogin.m in Sources */,
-				E947D353221ED7EF00490C35 /* GamaLoginViewModel.m in Sources */,
 				32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
