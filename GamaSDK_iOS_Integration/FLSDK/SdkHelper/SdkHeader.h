@@ -59,6 +59,9 @@
 #define Guest_Login_Tipe_OK  @"Guest_Login_Tipe_OK" //游客登录成功通知
 #define SDK_AUTO_LOGIN_FAIL @"SDK_AUTO_LOGIN_FAIL"  //自动登录失败通知
 
+#define VH(h)  [UIUtil getViewHeight:h]
+#define VW(s,h)  [UIUtil getViewWidthScale:s height:h]
+
 
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 {

@@ -60,7 +60,6 @@
 //#import "NSString+GamaURLEncoding.h"
 //#import "KRAgeSystemView.h"
 #import "GamaAdPort.h"
-#import "GamaLoginViewModel.h"
 #import "SDKLoginViewController.h"
 #import "GamaFunction.h"
 
@@ -167,7 +166,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 {
     if (self = [super init]) {
         
-        NSLog(@"SDK Version : %@", FL_SDK_VERSION);
+        SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
         
 //        [[NSNotificationCenter defaultCenter] addObserver:self
 //                                                 selector:@selector(_gamaNoteListener:)
@@ -232,7 +231,7 @@ serverCode:(NSString *)serverCode
 serverName:(NSString *)serverName
 {
     
-    NSLog(@"角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
+    SDK_LOG(@"角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
                              roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     // 对必要参数进行检查
@@ -294,12 +293,12 @@ serverName:(NSString *)serverName
 //                       isLandscape:GAMA_IS_INTERFACE_THWARTWISE];
 
     ///用户登入信息上报
-    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"gama_role_id":roleId,
-                                                                                        @"gama_role_name":roleName,
-                                                                                        @"gama_level":roleLevel,
-                                                                                        @"gama_vip_level":roleVipLevel,
-                                                                                        @"gama_server_code":serverCode,
-                                                                                        @"gama_server_name":serverName,
+    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
+                                                                                        @"role_name":roleName,
+                                                                                        @"level":roleLevel,
+                                                                                        @"vip_level":roleVipLevel,
+                                                                                        @"server_code":serverCode,
+                                                                                        @"server_name":serverName,
                                                                                         @"userId":[SdkUserInfoModel shareInfoModel].userId,
                                                                                         }];
     /**

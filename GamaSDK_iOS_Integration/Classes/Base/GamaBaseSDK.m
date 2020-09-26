@@ -4,7 +4,6 @@
 #import "GamaBaseSDK.h"
 #import "FLSDK.h"
 #import "GamaIapFunctionPort.h"
-#import "GamaLoginViewModel.h"
 #import "GamaFacebookPort.h"
 #import "GamaCentreInfo.h"
 #import "GamaFunction.h"
@@ -30,7 +29,7 @@
     [GamaIapFunctionPort startSDK];
     
     // LoginViewModel初始化
-    [GamaLoginViewModel model];
+//    [GamaLoginViewModel model];
     
     // 获取手机区号
     [GamaPhoneModel requestPhoneNumberAreaCodes];

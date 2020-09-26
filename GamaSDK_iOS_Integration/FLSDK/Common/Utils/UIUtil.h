@@ -49,6 +49,8 @@ selector:(SEL)selector
 +(NSInteger)getItemHeight;//根据高度计算每一行的高度
 +(NSInteger)getItemWidthMargin;
 
++(NSInteger)getViewHeight:(float)height;
++(NSInteger)getViewWidthScale:(float)scale height:(float)xHeight;
 
 @end
 

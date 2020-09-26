@@ -192,5 +192,19 @@
 }
 
 
++(NSInteger)getViewHeight:(float)height
+{
+    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+        float ss = height / 720.0 * SCREEN_HEIGHT;
+        return ss;
+    }
+    float ss = height / 1280 * SCREEN_HEIGHT;
+    return ss;
+}
+
++(NSInteger)getViewWidthScale:(float)scale height:(float)xHeight
+{
+    return scale * xHeight;
+}
 
 @end

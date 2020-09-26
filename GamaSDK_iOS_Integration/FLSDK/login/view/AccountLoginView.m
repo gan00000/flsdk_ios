@@ -69,6 +69,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.width.mas_equalTo(self).mas_offset(-30);
             make.height.mas_equalTo(kPageTitleHeight * 1.2);
         }];
+        logoImageView.hidden = YES;
         
         backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
         backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -87,7 +88,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self);
-            make.top.equalTo(logoImageView.mas_bottom).mas_offset(16);
+            make.top.equalTo(logoImageView.mas_bottom).mas_offset(1);
             make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
             make.height.mas_equalTo(kInputTextFiledHeight * 1.2);
         }];

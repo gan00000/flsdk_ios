@@ -68,26 +68,30 @@
     
     
     //登入頁logo
-           UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_logo"]];
-           logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-           [self addSubview:logoImageView];
-           [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-               make.top.mas_equalTo(self.mas_top).mas_offset(12);
-               make.centerX.mas_equalTo(self);
-               make.width.mas_equalTo(self).mas_offset(-30);
-               make.height.mas_equalTo(kPageTitleHeight * 1.2);
-           }];
+    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_logo"]];
+    logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:logoImageView];
+    [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.mas_top).mas_offset(12);
+        make.centerX.mas_equalTo(self);
+        make.width.mas_equalTo(self).mas_offset(-30);
+        make.height.mas_equalTo(kPageTitleHeight * 1.2);
+    }];
+    
+    logoImageView.hidden = YES;
     
     int leftOffset = -30;
-    int topOffset = kInputTextFiledTopMargin * 1.8;
+    int topOffset = kInputTextFiledTopMargin * 4;
+//    int topOffset = VH(16);//kInputTextFiledTopMargin * 1.8;
     
+//    int swidth = VW(418.0/66.0, VH(66));
     
     bgView = [[UIView alloc] init];
     //    contentView.backgroundColor = [UIColor redColor];
     [self addSubview:bgView];
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(logoImageView.mas_bottom).mas_offset(16);
+        make.top.mas_equalTo(logoImageView.mas_bottom).mas_offset(-20);
         make.left.bottom.right.mas_equalTo(self);
         
     }];
