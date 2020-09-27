@@ -30,13 +30,13 @@ FILES=`ls $DOTA_FLODER_DIR | grep $FUNCTION_NAME`
 
 # Working dir will be deleted after the framework creation.
 WRK_DIR=build
-DEVICE_DIR=${WRK_DIR}/Debug-iphoneos
-SIMULATOR_DIR=${WRK_DIR}/Debug-iphonesimulator
+DEVICE_DIR=${WRK_DIR}/Release-iphoneos
+SIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator
 
 # -configuration ${CONFIGURATION}
 # Clean and Building both architectures.
-xcodebuild -configuration "Debug" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphoneos clean build
-xcodebuild -configuration "Debug" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphonesimulator build
+xcodebuild -configuration "Release" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphoneos clean build
+xcodebuild -configuration "Release" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphonesimulator build
 
 # Cleaning the oldest.
 #if [ -d "${DOTA_FLODER_DIR}" ]
@@ -52,7 +52,7 @@ mkdir -p "${DOTA_FLODER_DIR}"
 lipo -create "${DEVICE_DIR}/lib${DOTA_BUILD_FLODER_NAME}.a" "${SIMULATOR_DIR}/lib${DOTA_BUILD_FLODER_NAME}.a" -output "${DOTA_FLODER_DIR}/${OUTPUT_NAME}"
 
 rm -r "${DOTA_FLODER_DIR}/include"
-cp -R "${WRK_DIR}/Debug-iphoneos/include" "${DOTA_FLODER_DIR}"
+cp -R "${WRK_DIR}/Release-iphoneos/include" "${DOTA_FLODER_DIR}"
 
 rm -r "${WRK_DIR}"
 

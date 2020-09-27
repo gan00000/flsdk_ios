@@ -67,6 +67,7 @@
 		221260BF1E82701F00258FD4 /* libEfunFacebook_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunFacebook_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunFacebook_DotA.a"; sourceTree = "<group>"; };
 		225C13131E694A510000E81B /* libEfunFacebook_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunFacebook_DotA.a; path = "../../EfunFacebook/EfunFacebook/build/Debug-iphoneos/libEfunFacebook_DotA.a"; sourceTree = "<group>"; };
 		226E4CFA1E8102B400D53EBB /* libEfunCoreFunc_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunCoreFunc_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunCoreFunc_DotA.a"; sourceTree = "<group>"; };
+		32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaThirdPlatform_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaThirdPlatform_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		35A67F8A1A07884E007D5176 /* GamaThirdPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaThirdPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +149,7 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
+				32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */,
 				E9740FA92086EAA30018E1A6 /* GamaCoreFunc_DotA */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				E9740F962086EA970018E1A6 /* GamaThirdPlatform */,
@@ -386,6 +388,7 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -403,19 +406,20 @@
 					"$(SRCROOT)/WorkProjResources/SPCommonHeader.h",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaThirdPlatform_DotA;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/WorkProjResources/SPCommonHeader.h";
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -429,14 +433,14 @@
 					"$(SRCROOT)/WorkProjResources/SPCommonHeader.h",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaThirdPlatform_DotA;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/WorkProjResources/SPCommonHeader.h";
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
@@ -447,7 +451,7 @@
 				ENABLE_BITCODE = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = GamaThirdPlatform_Builder;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -458,7 +462,7 @@
 				ENABLE_BITCODE = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = GamaThirdPlatform_Builder;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
@@ -503,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -547,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

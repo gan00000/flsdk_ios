@@ -41,6 +41,7 @@
 		007534EC208635A200D30F30 /* GamaSDK_GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 007534CA2086353100D30F30 /* GamaSDK_GTMBase64.m */; };
 		007534ED208635A700D30F30 /* GamaCDNDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 007534CF2086353100D30F30 /* GamaCDNDownloader.m */; };
 		007534EE208639A200D30F30 /* GamaCDNConfig.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 007534C72086353100D30F30 /* GamaCDNConfig.h */; };
+		32C19D8F2520730400E5417D /* xcode12-solution.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 32C19D8E2520730400E5417D /* xcode12-solution.xcconfig */; };
 		350F195C1A08AE2B00C2FF3B /* BuildScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 350F195B1A08AE2B00C2FF3B /* BuildScript.sh */; };
 		35A680021A0790C5007D5176 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A680011A0790C5007D5176 /* Security.framework */; };
 		35A680041A0790C9007D5176 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A680031A0790C9007D5176 /* SystemConfiguration.framework */; };
@@ -104,6 +105,7 @@
 		007534DA2086353100D30F30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		007534DB2086353100D30F30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		007534DC2086353100D30F30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32C19D8E2520730400E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaCDNDownload_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaCDNDownload_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		35A67F8A1A07884E007D5176 /* GamaCDNDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaCDNDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +229,7 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
+				32C19D8E2520730400E5417D /* xcode12-solution.xcconfig */,
 				007534AF208634B000D30F30 /* GamaCoreFunc_DotA */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				007534C32086353100D30F30 /* GamaCDNDownload */,
@@ -351,6 +354,7 @@
 				003AB53520863E580014B5BD /* Main.storyboard in Resources */,
 				007534E62086353100D30F30 /* Images.xcassets in Resources */,
 				007534E82086353100D30F30 /* Info.plist in Resources */,
+				32C19D8F2520730400E5417D /* xcode12-solution.xcconfig in Resources */,
 				350F195C1A08AE2B00C2FF3B /* BuildScript.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +424,7 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D8E2520730400E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -429,28 +434,29 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaCDNDownload_DotA;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D8E2520730400E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaCDNDownload_DotA;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
@@ -460,10 +466,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = GamaCDNDownload_Builder;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -473,10 +479,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = GamaCDNDownload_Builder;
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
@@ -521,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

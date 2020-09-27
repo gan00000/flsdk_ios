@@ -449,6 +449,7 @@
 		32BE142024FB6BA7000BDFBE /* GamaSDK_IAP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_IAP.a; sourceTree = "<group>"; };
 		32BE142324FB6BA7000BDFBE /* GamaIapData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaIapData.h; sourceTree = "<group>"; };
 		32BE142424FB6BA7000BDFBE /* GamaIapFunctionPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaIapFunctionPort.h; sourceTree = "<group>"; };
+		32C19D84252067E000E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		32C9BC5324C5EA0800B3D704 /* SDKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKRequest.h; sourceTree = "<group>"; };
 		32C9BC5424C5EA0800B3D704 /* SDKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKRequest.m; sourceTree = "<group>"; };
 		32CD1D7124DC3C2B0021CC46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1371,6 +1372,7 @@
 		CEE6B3681A148B1E009E77FF = {
 			isa = PBXGroup;
 			children = (
+				32C19D84252067E000E5417D /* xcode12-solution.xcconfig */,
 				32BE13DC24FB6154000BDFBE /* File.swift */,
 				E97411C320874A170018E1A6 /* Demo */,
 				322CBB9C24C589A5000D6B20 /* FLSDK */,
@@ -1806,6 +1808,7 @@
 /* Begin XCBuildConfiguration section */
 		22DF6AB81EAD9A4D0003610E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D84252067E000E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1825,7 +1828,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
@@ -1833,11 +1836,13 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
 		22DF6AB91EAD9A4D0003610E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D84252067E000E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1858,7 +1863,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
@@ -1866,28 +1871,33 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
 		24C7583F1D65B3520088A176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D84252067E000E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
 		24C758401D65B3520088A176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C19D84252067E000E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;
 		};
@@ -1928,7 +1938,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1967,7 +1977,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2003,7 +2013,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Classes/GamaSDK-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2064,7 +2074,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Classes/GamaSDK-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

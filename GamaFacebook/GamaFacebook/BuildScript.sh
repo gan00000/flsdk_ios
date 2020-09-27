@@ -44,8 +44,8 @@ SIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator
 #xcodebuild -target "${DOTA_BUILD_FLODER_NAME}" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR="${BUILD_DIR}" BUILD_ROOT="${BUILD_ROOT}" clean build
 #xcodebuild -target "${DOTA_BUILD_FLODER_NAME}" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR="${BUILD_DIR}" BUILD_ROOT="${BUILD_ROOT}" clean build
 
-xcodebuild -configuration "Releacse" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphoneos clean build
-xcodebuild -configuration "Releacse" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphonesimulator build
+xcodebuild -configuration "Release" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphoneos clean build
+xcodebuild -configuration "Release" -target "${DOTA_BUILD_FLODER_NAME}" -sdk iphonesimulator build
 
 # Cleaning the oldest.
 #if [ -d "${DOTA_FLODER_DIR}" ]
