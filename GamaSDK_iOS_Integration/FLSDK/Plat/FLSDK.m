@@ -211,6 +211,17 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
         self.loginCompletionHandler = cmopleteHandler;
         SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
 //        controller.definesPresentationContext = YES;
+    #ifdef __IPHONE_8_0
+            if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
+                SDK_LOG(@"[UIDevice currentDevice] systemVersion].intValue < 8");
+            }
+            else {
+                SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
+                [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以
+            }
+    #else
+        SDK_LOG(@"not def __IPHONE_8_0");
+    #endif
 //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
         [[GamaFunction getCurrentViewController] presentViewController: controller animated:NO completion:^{
     
