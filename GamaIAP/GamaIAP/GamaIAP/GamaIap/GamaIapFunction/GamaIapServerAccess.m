@@ -367,6 +367,10 @@ static GamaIapServerAccess *_instance;
                               if (!error && ![orderID isEqualToString:@""] && orderID)
                               {
                                   NSString *payasId = [NSString stringWithFormat:@"%@",dic[@"payasId"]];
+                                  NSString *usdPrice = [NSString stringWithFormat:@"%@",dic[@"usdPrice"]];
+                                  
+                                  [GamaIapData defaultData].currentLocalPrice = usdPrice;
+                                  [GamaIapData defaultData].usdPrice = usdPrice;
                                   
                                   // 1 获取订单号
                                   NSString * orderIDStr = orderID;

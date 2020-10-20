@@ -451,8 +451,10 @@
     }
     else
     {
-        [GamaIapAlertView showAlertWithMessage:[NSString stringWithFormat:@"%ld",
-                                                (long)[GamaIapData defaultData].APPLE_PAY_FAIL_CODE
+        NSString *errorMsg = [transaction.error.userInfo objectForKey:@"NSLocalizedDescription"];
+        [GamaIapAlertView showAlertWithMessage:[NSString stringWithFormat:@"%ld %@",
+                                                (long)[GamaIapData defaultData].APPLE_PAY_FAIL_CODE,
+                                                errorMsg
                                                 ]
                                  andCompletion:nil
                                        andType:GAMA_IAP_AppStorePayFail];

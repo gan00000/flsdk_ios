@@ -76,6 +76,8 @@
 @property (atomic,strong) NSString * currentLocalPrice;
 //@property (atomic,strong) NSArray  * iapProductArr;
 
+@property (atomic,strong) NSString * usdPrice;
+
 /*获取单例*/
 +(GamaIapData *)defaultData;
 

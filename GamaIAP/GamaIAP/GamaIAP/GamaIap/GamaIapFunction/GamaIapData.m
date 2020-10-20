@@ -88,6 +88,7 @@
         self.currencyCode      = GAMA_CURRENCY_CODE_DEFAULT_VALUE;
         self.currentLocalPrice = GAMA_CURRENCY_CODE_DEFAULT_VALUE;
 //        self.iapProductArr         = nil;
+        self.usdPrice = @"";
     }
     return self;
 }
@@ -125,6 +126,7 @@
     
     self.currencyCode       = GAMA_CURRENCY_CODE_DEFAULT_VALUE;
     self.currentLocalPrice  = GAMA_CURRENCY_CODE_DEFAULT_VALUE;
+    self.usdPrice = @"";
 }
 
 #pragma mark -
