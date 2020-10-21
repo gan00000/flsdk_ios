@@ -47,10 +47,10 @@
           
           [self addSubview:mLoginTitleView];
          [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(8);
+             make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
              make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-12);
-             make.height.mas_equalTo(kPageTitleHeight);
+             make.width.mas_equalTo(self).mas_offset(-VW(55));
+             make.height.mas_equalTo(VH(56));
          }];
             
           
@@ -61,9 +61,9 @@
              
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(16);
-            make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-            make.height.mas_equalTo(kInputTextFiledHeight * 1.2);
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(40));
+            make.width.mas_equalTo(self).offset(-VW(55));
+            make.height.mas_equalTo(VH(70));
          }];
         
         
@@ -72,7 +72,7 @@
            
            [self addSubview:mPhoneView];
            [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(10);
+                make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(16));
                  make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
                  make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
                  make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -83,7 +83,7 @@
           
           [self addSubview:vfCodeFiledView];
           [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-               make.top.equalTo(mPhoneView.mas_bottom).mas_offset(10);
+               make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(16));
                 make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
                 make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
                 make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -99,8 +99,8 @@
         [self addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.equalTo(vfCodeFiledView);
-            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(6);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-4);
+            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(VH(6));
+            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VH(4));
              
         }];
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
@@ -111,9 +111,9 @@
       
       [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
           make.centerX.equalTo(self);
-          make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(40);
-          make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-          make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+          make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(60));
+          make.width.mas_equalTo(accountSDKTextFiledView);
+          make.height.mas_equalTo(VH(70));
       }];
         
     }

@@ -36,10 +36,10 @@
         
         [self addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(8);
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
             make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-12);
-            make.height.mas_equalTo(kPageTitleHeight);
+            make.width.mas_equalTo(self).mas_offset(-VW(55));
+            make.height.mas_equalTo(VH(56));
         }];
         
         
@@ -50,14 +50,10 @@
         
         [guestBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(26);
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(40));
 //            make.width.mas_equalTo(self).offset(-30);
-            make.height.mas_equalTo(40);
-            if (Device_Is_Landscape) {
-                       make.width.mas_equalTo(self).multipliedBy(0.75);
-                   }else{
-                       make.width.mas_equalTo(self).offset(-30);
-                   }
+            make.height.mas_equalTo(VH(70));
+            make.width.mas_equalTo(mLoginTitleView);
         }];
         
         //UIButton *fbBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:)  target:self];

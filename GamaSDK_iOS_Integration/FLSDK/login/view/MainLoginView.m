@@ -52,9 +52,9 @@
     self.layer.masksToBounds = YES;
     
     UIView *tabView = [[UIView alloc] init];
-    tabView.layer.cornerRadius = 10; //设置圆角
+    tabView.layer.cornerRadius = 4; //设置圆角
     tabView.layer.borderColor = [UIColor colorWithHexString:@"ff3a3b"].CGColor;
-    tabView.layer.borderWidth = 1;
+    tabView.layer.borderWidth = 0.8;
     tabView.layer.masksToBounds = YES;
     
     

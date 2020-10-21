@@ -104,7 +104,7 @@
     [btn setTitle:titleText forState:UIControlStateNormal];
     [btn setTitle:titleText forState:UIControlStateSelected];
     
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    btn.titleLabel.font = [UIFont systemFontOfSize:VH(24)];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [btn setTitleColor:[UIColor colorWithHexString:@"ff3a3b"] forState:UIControlStateNormal];
     

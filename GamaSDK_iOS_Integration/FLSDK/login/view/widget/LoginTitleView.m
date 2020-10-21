@@ -27,7 +27,7 @@
      //标题
     self.titleLable = [[UILabel alloc] init];
    self.titleLable.text = title;
-   self.titleLable.font = [UIFont systemFontOfSize:24];
+   self.titleLable.font = [UIFont systemFontOfSize:VH(40)];
    self.titleLable.textAlignment = NSTextAlignmentCenter;
    self.titleLable.backgroundColor = [UIColor clearColor];
    self.titleLable.numberOfLines = 1;
