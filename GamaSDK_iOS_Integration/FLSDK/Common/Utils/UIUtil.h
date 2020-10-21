@@ -38,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 selector:(SEL)selector
   target:(id)target;
 
++ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
+                           tag:(NSUInteger)tag
+                      selector:(SEL)selector
+                           target:(id)target;
+
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg;
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg okHandler:(void (^ __nullable)(UIAlertAction *action))handler;
 
@@ -49,8 +54,8 @@ selector:(SEL)selector
 +(NSInteger)getItemHeight;//根据高度计算每一行的高度
 +(NSInteger)getItemWidthMargin;
 
-+(NSInteger)getViewHeight:(float)height;
-+(NSInteger)getViewWidthScale:(float)scale height:(float)xHeight;
++(CGFloat)getViewHeight:(CGFloat)height;
++(CGFloat)getViewWidth:(CGFloat)width;
 
 @end
 

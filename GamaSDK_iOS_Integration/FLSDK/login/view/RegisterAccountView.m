@@ -23,7 +23,7 @@
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *passwordAgainSDKTextFiledView;
     SDKTextFiledView *vfCodeFiledView;
-    UIButton *registorAccountBtn; //確定按鈕
+    UIButton *regAccountBtn; //確定按鈕
     LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
     NSTimer *downTimer;
@@ -34,21 +34,17 @@
 }
 
 
-- (instancetype)initViewWithBindType:(NSInteger) bindType
+//- (instancetype)initViewWithBindType:(NSInteger) bindType
+- (instancetype)initView
 {
-    self = [self initView];
+    self = [self initViewWithBindType:0];
     if (!self) {
         return nil;
     }
-    self.bindType = bindType;//綁定賬號
-    mLoginTitleView.titleLable.text = SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT");
-    //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateNormal];
-    //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateHighlighted];
-    
-    [registorAccountBtn setTitle:SDKConReaderGetLocalizedString(@"GAMA_REGISTER_BIND_CONFIRM_TEXT") forState:(UIControlStateNormal)];
     return self;
 }
-- (instancetype)initView
+//- (instancetype)initView
+- (instancetype)initViewWithBindType:(NSInteger) bindType
 {
     self = [super init];
     if (self) {
@@ -60,7 +56,7 @@
         //        self.layer.borderWidth = 2;
         self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        self.bindType = 0;
+        self.bindType = bindType;//綁定賬號
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"註冊會員"];
         mLoginTitleView.delegate = self.delegate;
@@ -68,13 +64,12 @@
         
         [self addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(10);
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
             make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-12);
-            make.height.mas_equalTo(kPageTitleHeight);
+            make.width.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
         }];
-        
-        
+       
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
         
@@ -82,9 +77,14 @@
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(kInputTextFiledTopMargin * 1.2);
-            make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-            make.height.mas_equalTo(kInputTextFiledHeight);
+            //make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(kInputTextFiledTopMargin * 1.2);
+            make.width.mas_equalTo(self).mas_offset(-VW(55));
+            make.height.mas_equalTo(VH(56));
+            if (self.bindType == 0) {
+                make.top.equalTo(self);
+            }else{
+                make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(24));
+            }
         }];
         
         
@@ -95,7 +95,7 @@
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(kInputTextFiledTopMargin);
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(10));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -109,7 +109,7 @@
         
         [passwordAgainSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(kInputTextFiledTopMargin);
+            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(10));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -120,7 +120,7 @@
         
         [self addSubview:mPhoneView];
         [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(passwordAgainSDKTextFiledView.mas_bottom).mas_offset(kInputTextFiledTopMargin);
+            make.top.equalTo(passwordAgainSDKTextFiledView.mas_bottom).mas_offset(VH(10));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -131,7 +131,7 @@
         
         [self addSubview:vfCodeFiledView];
         [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(kInputTextFiledTopMargin);
+            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(10));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -154,19 +154,19 @@
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         //注册
-        registorAccountBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_REGISTER) tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:)  target:self];
-        [self addSubview:registorAccountBtn];
+        regAccountBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_REGISTER) tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:)  target:self];
+        [self addSubview:regAccountBtn];
         
-        [registorAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             if (Device_Is_Landscape) {
-                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(kInputTextFiledTopMargin);
+                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(16));
             }else{
-                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(kInputTextFiledTopMargin * 2);
+                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(20));
             }
            
-            make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height).multipliedBy(1.2);
+            make.width.mas_equalTo(accountSDKTextFiledView.mas_width);
+            make.height.mas_equalTo(VH(64));
         }];
         
         UILabel *loginTipsLable = [[UILabel alloc] init];
@@ -176,15 +176,26 @@
         loginTipsLable.backgroundColor = [UIColor clearColor];
         loginTipsLable.numberOfLines = 1;
         loginTipsLable.textColor = [UIColor colorWithHexString:@"#FF3E37"];
+        loginTipsLable.adjustsFontSizeToFitWidth = YES;
         
         [self addSubview:loginTipsLable];
         [loginTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self);
-            make.top.mas_equalTo(registorAccountBtn.mas_bottom).mas_offset(4);
-            make.height.mas_equalTo(20);
-            make.width.mas_equalTo(self).mas_offset(-10);
+            make.top.mas_equalTo(regAccountBtn.mas_bottom).mas_offset(VH(10));
+            make.height.mas_equalTo(VH(20));
+            make.width.mas_equalTo(self).mas_offset(-VW(10));
             
         }];
+        
+        if ( self.bindType == 0) {
+            mLoginTitleView.hidden = YES;
+        }else{
+            mLoginTitleView.titleLable.text = SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT");
+            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateNormal];
+            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateHighlighted];
+            
+            [regAccountBtn setTitle:SDKConReaderGetLocalizedString(@"GAMA_REGISTER_BIND_CONFIRM_TEXT") forState:(UIControlStateNormal)];
+        }
     }
     return self;
 }

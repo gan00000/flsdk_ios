@@ -20,12 +20,15 @@
 #import "AccountModel.h"
 #import "Masonry.h"
 #import "TermsView.h"
+#import "MainLoginView.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @implementation SDKLoginViewController{
     SelectLoginTypeView *mSelectLoginTypeView;
+    MainLoginView *mMainLoginView;
+    
     SDKPage sdkPageType;
    
     AccountLoginView *mAccountLoginView;
@@ -113,7 +116,7 @@
     
     if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
         TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
-            [self addSelectLoginTypeView];//同意之后打开登录页面
+            [self addMainLoginView];//同意之后打开登录页面
         }];
 
         [self addTermsView:mTermsView];
@@ -124,18 +127,18 @@
             if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
                 NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
                if (!accounts || accounts.count == 0) {
-                   [self addSelectLoginTypeView];
+                   [self addMainLoginView];
                    return;
                }
             }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
             {
-                [self addSelectLoginTypeView];
+                [self addMainLoginView];
                 return;
             }
              [self addAutoLoginView];
            
         }else{
-             [self addSelectLoginTypeView];
+             [self addMainLoginView];
         }
 
     }
@@ -160,6 +163,18 @@
 }
 
 #pragma mark -頁面添加部分
+
+
+
+-(void)addMainLoginView
+{
+    //移除所有子视图
+    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    mMainLoginView = [[MainLoginView alloc] initView];
+    [self addSubSdkLoginView:mMainLoginView];
+}
+
 -(void)addSelectLoginTypeView
 {
     //移除所有子视图

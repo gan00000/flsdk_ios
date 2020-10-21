@@ -60,7 +60,7 @@
 #define SDK_AUTO_LOGIN_FAIL @"SDK_AUTO_LOGIN_FAIL"  //自动登录失败通知
 
 #define VH(h)  [UIUtil getViewHeight:h]
-#define VW(s,h)  [UIUtil getViewWidthScale:s height:h]
+#define VW(w)  [UIUtil getViewWidth:w]
 
 
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
@@ -92,6 +92,15 @@ typedef void (^ItemViewClickHander)(NSInteger);
 #define kBindFBActTag     32
 #define kBindAppleActTag    33
 #define kBindGuestActTag    34
+
+#define kLoginTabActTag    35
+#define kRegTabActTag    36
+
+#define fbLoginActTag       2000
+#define googleLoginActTag   2001
+#define guestLoginActTag    2002
+#define accountLoginActTag    2003
+#define appleLoginActTag    2004
 
 typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);
 

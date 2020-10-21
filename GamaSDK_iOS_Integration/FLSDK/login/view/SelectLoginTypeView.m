@@ -19,12 +19,6 @@
 #import "SDKIconTitleButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 
-#define fbLoginActTag       2000
-#define googleLoginActTag   2001
-#define guestLoginActTag    2002
-#define accountLoginActTag    2003
-#define appleLoginActTag    2004
-
 @implementation SelectLoginTypeView{
     
     UIView *bgView;

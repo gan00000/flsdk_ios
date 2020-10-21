@@ -95,6 +95,32 @@
     return btn;
 }
 
++ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
+                           tag:(NSUInteger)tag
+                      selector:(SEL)selector
+                        target:(id)target
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:titleText forState:UIControlStateNormal];
+    [btn setTitle:titleText forState:UIControlStateSelected];
+    
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [btn setTitleColor:[UIColor colorWithHexString:@"ff3a3b"] forState:UIControlStateNormal];
+    
+//    [btn setImage:nil forState:UIControlStateNormal];
+//    [btn setImage:nil forState:UIControlStateSelected];
+    
+    
+    [btn setTag:tag];
+    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    //[btn.layer setBorderWidth:1.5f];
+    //[btn.layer setBorderColor:[UIColor grayColor].CGColor];
+   // [btn.layer setMasksToBounds:YES];
+    //[btn.layer setCornerRadius:5.0f];
+
+    return btn;
+}
 
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg
 {
@@ -146,12 +172,12 @@
 {
     if (IS_IPHONE) {
         if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-            return 380;
+            return kBgHeight * (608.0 / 582.0);
         }
-        int width = MIN(SCREEN_WIDTH * 0.9, 350);
-        return width;
+        
+        return SCREEN_WIDTH * 0.9;
     }
-    return 380;
+    return 608 * 0.8;
 }
 
 
@@ -159,12 +185,12 @@
 {
     if (IS_IPHONE) {
         if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-            int hetight = MIN(SCREEN_HEIGHT * 0.9, 350);
+            int hetight = SCREEN_HEIGHT * 0.85;
             return hetight;
         }
-        return 360;
+        return [self getSdkPageWidth] * 1.2;//豎屏
     }
-    return 360;
+    return 582 * 0.8;;
 }
 
 +(NSInteger)getItemHeight
@@ -191,20 +217,38 @@
     return 30;
 }
 
-
-+(NSInteger)getViewHeight:(float)height
+//h = 582 w = 608
++(CGFloat)getViewHeight:(CGFloat)height
 {
-    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-        float ss = height / 720.0 * SCREEN_HEIGHT;
-        return ss;
-    }
-    float ss = height / 1280 * SCREEN_HEIGHT;
-    return ss;
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    return kBgHeight * (height / 582);
+    
+//
+//    if (device_is_iPhoneX) {
+//        return height;
+//    }else{//iphone 8以下    这里以414 * 896为模板
+//        CGFloat ppi = 401;
+//        if (scale == 2) {
+//            ppi = 326;
+//        }
+////        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+////            CGFloat ss = height / 414 * SCREEN_HEIGHT;
+////            return ss / 458 * ppi;
+////        }
+////        CGFloat ss = height / 896 * SCREEN_HEIGHT;
+//        return height / 458 * ppi;
+//    }
+////    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+////        float ss = height / 720.0 * SCREEN_HEIGHT;
+////        return ss;
+////    }
+////    float ss = height / 1280 * SCREEN_HEIGHT;
+////    return ss;
 }
 
-+(NSInteger)getViewWidthScale:(float)scale height:(float)xHeight
++(CGFloat)getViewWidth:(CGFloat)width
 {
-    return scale * xHeight;
+    return kBgWidth * (width / 608);
 }
 
 @end
