@@ -73,6 +73,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_CHANGE_PWD,
     CURRENT_PAGE_TYPE_BIND_ACCOUNT,
     CURRENT_PAGE_TYPE_AUTO,
+    CURRENT_PAGE_TYPE_TEARMS,
 };
 
 typedef void (^ItemViewClickHander)(NSInteger);
@@ -95,6 +96,7 @@ typedef void (^ItemViewClickHander)(NSInteger);
 
 #define kLoginTabActTag    35
 #define kRegTabActTag    36
+#define kAgreeTermsCheckBoxBtnTag     37
 
 #define fbLoginActTag       2000
 #define googleLoginActTag   2001

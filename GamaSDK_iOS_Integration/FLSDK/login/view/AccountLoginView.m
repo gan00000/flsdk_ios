@@ -22,6 +22,7 @@
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "GamaAppleLogin.h"
 #import "GamaFacebookPort.h"
+#import "TermsView.h"
 
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
@@ -48,6 +49,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     UIButton *checkBoxTermsBtn;
     
     GamaAppleLogin *gamaAppleLogin;
+    
+    BOOL isAgree;
 }
 
 /*
@@ -195,9 +198,11 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(10));
             make.height.mas_equalTo(VH(40));
         }];
+        rememberTermsLable.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+        UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rememberTermsLableTapped:)];
+        [rememberTermsLable addGestureRecognizer:tapGr];
         
-        
-        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
         
         [self addSubview:checkBoxTermsBtn];
         [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -206,6 +211,13 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.width.mas_equalTo(VH(26));
             make.height.mas_equalTo(VH(26));
         }];
+        
+        isAgree = [TermsView isAgreenProvision];
+        if (isAgree) {
+            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
+        }else{
+            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
+        }
         
         
         UIView *loginTypeView = [[UIView alloc] init];
@@ -342,6 +354,14 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     return self;
 }
 
+-(void)rememberTermsLableTapped:(UITapGestureRecognizer*)tapGr
+{
+    SDK_LOG(@"rememberTermsLableTapped");
+    if (self.delegate) {
+        [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS];
+    }
+}
+
 -(void) updatePasswordData{
     
    NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
@@ -355,6 +375,16 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         [accountListTableView reloadData];
     }
     
+}
+
+- (void)updateTermsStatus
+{
+    isAgree = [TermsView isAgreenProvision];
+    if (isAgree) {
+        [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
+    }else{
+        [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
+    }
 }
 
 - (void)drawRect:(CGRect)rect
@@ -458,6 +488,11 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             
         case kAccountLoginActTag:
             SDK_LOG(@"kAccountLoginActTag");
+            if (!isAgree) {//先同意
+                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+                return;
+            }
+            [TermsView saveAgreenProvisionState:isAgree];
             [self requestAccountLogin];
             break;
             
@@ -521,7 +556,17 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
                 
             }];
         }
+        
+        case kAgreeTermsCheckBoxBtnTag:
+        {
+            isAgree = !isAgree;
+            if (isAgree) {
+                [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
+            }else{
+                [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
+            }
             
+        }
             
         default:
             break;

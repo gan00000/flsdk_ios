@@ -7,8 +7,6 @@
 //
 
 #import "MainLoginView.h"
-#import "AccountLoginView.h"
-#import "RegisterAccountView.h"
 
 @interface MainLoginView()
 
@@ -20,9 +18,6 @@
     UIButton *regTabBtn;
     
     NSUInteger currentClickTab;
-    AccountLoginView *mAccountLoginView;
-    
-    RegisterAccountView *mRegisterAccountView;
     
 }
 
@@ -97,33 +92,33 @@
     [loginTabBtn setSelected:YES];
     [regTabBtn setSelected:NO];
     
-    mAccountLoginView = [[AccountLoginView alloc] initView];
-    [self addSubview:mAccountLoginView];
-    [mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.mAccountLoginView = [[AccountLoginView alloc] initView];
+    [self addSubview:self.mAccountLoginView];
+    [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(self);
         make.top.mas_equalTo(tabView.mas_bottom).mas_offset(VH(27));
 
     }];
     
-    mRegisterAccountView = [[RegisterAccountView alloc] initView];
-    [self addSubview:mRegisterAccountView];
-    [mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.mRegisterAccountView = [[RegisterAccountView alloc] initView];
+    [self addSubview:self.mRegisterAccountView];
+    [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(self);
         make.top.mas_equalTo(tabView.mas_bottom).mas_offset(VH(27));
     }];
     
-    mRegisterAccountView.hidden = YES;
+    self.mRegisterAccountView.hidden = YES;
 }
 
 - (void)drawRect:(CGRect)rect
 {
-    mAccountLoginView.delegate = self.delegate;
-    mAccountLoginView.theViewUIViewController = self.theViewUIViewController;
-    mAccountLoginView.mUITextFieldDelegate = self.mUITextFieldDelegate;
+    self.mAccountLoginView.delegate = self.delegate;
+    self.mAccountLoginView.theViewUIViewController = self.theViewUIViewController;
+    self.mAccountLoginView.mUITextFieldDelegate = self.mUITextFieldDelegate;
     
-    mRegisterAccountView.delegate = self.delegate;
-    mRegisterAccountView.theViewUIViewController = self.theViewUIViewController;
-    mRegisterAccountView.mUITextFieldDelegate = self.mUITextFieldDelegate;
+    self.mRegisterAccountView.delegate = self.delegate;
+    self.mRegisterAccountView.theViewUIViewController = self.theViewUIViewController;
+    self.mRegisterAccountView.mUITextFieldDelegate = self.mUITextFieldDelegate;
 }
 
 - (void)registerViewBtnAction:(UIButton *)sender
@@ -172,8 +167,8 @@
         [loginTabBtn setSelected:YES];
         [regTabBtn setSelected:NO];
         
-        mAccountLoginView.hidden = NO;
-        mRegisterAccountView.hidden = YES;
+        self.mAccountLoginView.hidden = NO;
+        self.mRegisterAccountView.hidden = YES;
         
     }else{
         
@@ -184,8 +179,8 @@
         [loginTabBtn setSelected:NO];
         [regTabBtn setSelected:YES];
     
-        mAccountLoginView.hidden = YES;
-        mRegisterAccountView.hidden = NO;
+        self.mAccountLoginView.hidden = YES;
+        self.mRegisterAccountView.hidden = NO;
     }
 }
 @end

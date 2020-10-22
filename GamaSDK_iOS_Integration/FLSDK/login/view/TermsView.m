@@ -56,6 +56,16 @@
             [self poritView];
         }
         
+        if ([TermsView isAgreenProvision]) {
+            isAgree = YES;
+        }
+        
+        if (isAgree) {
+            [agreeBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
+        }else{
+            [agreeBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
+        }
+        
     }
     return self;
 }
@@ -174,6 +184,7 @@
     
     
     isAgree = NO;
+   
 }
 
 - (void)landspaceView {
@@ -328,7 +339,7 @@
     */
     
     //確認登入遊戲
-    UIButton *okButton = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(action:)  target:self];
+    UIButton *okButton = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kAccountLoginActTag selector:@selector(action:)  target:self];
     [self addSubview:okButton];
     
     [okButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -417,7 +428,7 @@
 //                    return;
 //                }
             }
-            [self saveFirstAgreenProvisionState];
+            [TermsView saveAgreenProvisionState:isAgree];
             self.completer();
             [self removeFromSuperview];//移除自己
             
@@ -432,20 +443,22 @@
     
 }
 
-- (void)saveFirstAgreenProvisionState
++ (void)saveAgreenProvisionState:(BOOL)agreen
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
-    [saveDefault setObject:@"yes" forKey:SDK_PROVISIONS_FIRST_ENBLE];
+    [saveDefault setBool:agreen forKey:SDK_PROVISIONS_FIRST_ENBLE];
     [saveDefault synchronize];
 }
 
 + (BOOL)openProvision{
+    
+    return ![TermsView isAgreenProvision];
+}
+
++(BOOL)isAgreenProvision
+{
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
-    NSString *state = [saveDefault objectForKey:SDK_PROVISIONS_FIRST_ENBLE];
-    if (state.length > 1 && [state isEqualToString:@"yes"]) {
-        return NO;
-    }
-    return YES;
+    return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];
 }
 
 @end

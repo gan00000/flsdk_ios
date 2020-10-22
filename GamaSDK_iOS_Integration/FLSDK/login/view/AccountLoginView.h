@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initView;
 
 -(void) updatePasswordData;
+-(void) updateTermsStatus;
 
 @end
 

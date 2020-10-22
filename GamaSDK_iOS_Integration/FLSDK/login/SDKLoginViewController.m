@@ -27,12 +27,12 @@
 
 @implementation SDKLoginViewController{
     SelectLoginTypeView *mSelectLoginTypeView;
-    MainLoginView *mMainLoginView;
-    
+
     SDKPage sdkPageType;
    
-    AccountLoginView *mAccountLoginView;
+//    AccountLoginView *mAccountLoginView;
     SdkAutoLoginView *mAutoLoginView;
+    MainLoginView *mMainLoginView;
     
     UIView *sdkContentView;
 }
@@ -111,38 +111,61 @@
 }
 
 
+- (void)showTramsView {
+    TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
+        //[self addMainLoginView];//同意之后打开登录页面
+        [mMainLoginView.mAccountLoginView updateTermsStatus];
+    }];
+    
+    [self addTermsView:mTermsView];
+}
+
 -(void)showLoginPageOrAutoLogin
 {
     
-    if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
-        TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
-            [self addMainLoginView];//同意之后打开登录页面
-        }];
-
-        [self addTermsView:mTermsView];
-    }else{
-
-        NSString *loginType = [ConfigCoreUtil share].loginType;
-        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-               if (!accounts || accounts.count == 0) {
-                   [self addMainLoginView];
-                   return;
-               }
-            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-            {
-                [self addMainLoginView];
-                return;
-            }
-             [self addAutoLoginView];
-           
-        }else{
-             [self addMainLoginView];
-        }
-
-    }
+//    if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
+//        [self showTramsView];
+//    }else{
+//
+//        NSString *loginType = [ConfigCoreUtil share].loginType;
+//        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+//            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+//                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+//               if (!accounts || accounts.count == 0) {
+//                   [self addMainLoginView];
+//                   return;
+//               }
+//            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+//            {
+//                [self addMainLoginView];
+//                return;
+//            }
+//             [self addAutoLoginView];
+//
+//        }else{
+//             [self addMainLoginView];
+//        }
+//
+//    }
     
+    NSString *loginType = [ConfigCoreUtil share].loginType;
+    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+           if (!accounts || accounts.count == 0) {
+               [self addMainLoginView];
+               return;
+           }
+        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+        {
+            [self addMainLoginView];
+            return;
+        }
+         [self addAutoLoginView];
+       
+    }else{
+         [self addMainLoginView];
+    }
   
 }
 
@@ -164,8 +187,6 @@
 
 #pragma mark -頁面添加部分
 
-
-
 -(void)addMainLoginView
 {
     //移除所有子视图
@@ -175,14 +196,14 @@
     [self addSubSdkLoginView:mMainLoginView];
 }
 
--(void)addSelectLoginTypeView
-{
-    //移除所有子视图
-    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
-    mSelectLoginTypeView = [[SelectLoginTypeView alloc] initView];
-    [self addSubSdkLoginView:mSelectLoginTypeView];
-}
+//-(void)addSelectLoginTypeView
+//{
+//    //移除所有子视图
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+//
+//    mSelectLoginTypeView = [[SelectLoginTypeView alloc] initView];
+//    [self addSubSdkLoginView:mSelectLoginTypeView];
+//}
 
 
 -(void)addTermsView:(TermsView *)mTermsView //服務條款
@@ -220,19 +241,19 @@
     }];
 }
 
--(void)addAccountLoginView
-{
-    
-    mAccountLoginView = [[AccountLoginView alloc] initView];
-    [self addSubSdkLoginView:mAccountLoginView];
-}
+//-(void)addAccountLoginView
+//{
+//
+//    mAccountLoginView = [[AccountLoginView alloc] initView];
+//    [self addSubSdkLoginView:mAccountLoginView];
+//}
 
--(void)addRegisterAccountView
-{
-    //綁定和註冊共用頁面
-    RegisterAccountView *mRegisterAccountView = [[RegisterAccountView alloc] initView];
-    [self addSubSdkLoginView:mRegisterAccountView];
-}
+//-(void)addRegisterAccountView
+//{
+//    //綁定和註冊共用頁面
+//    RegisterAccountView *mRegisterAccountView = [[RegisterAccountView alloc] initView];
+//    [self addSubSdkLoginView:mRegisterAccountView];
+//}
 
 -(void)addBindAccountView:(NSInteger) p
 {
@@ -315,15 +336,16 @@
             break;
             
         case CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE:
-            [self addSelectLoginTypeView];//選擇登入方式
+            //[self addSelectLoginTypeView];//選擇登入方式
             break;
             
         case CURRENT_PAGE_TYPE_LOGIN_ACCOUNT:
-            [self addAccountLoginView];//賬號登入頁面
+            //[self addAccountLoginView];//賬號登入頁面
+            [self addMainLoginView];
             break;
             
         case CURRENT_PAGE_TYPE_REG_ACCOUNT:
-            [self addRegisterAccountView];//註冊
+           // [self addRegisterAccountView];//註冊
             break;
             
         case CURRENT_PAGE_TYPE_CHANGE_PWD:
@@ -336,6 +358,10 @@
             
         case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
                    [self addBindAccountView:p];//綁定賬號頁面
+                   break;
+            
+        case CURRENT_PAGE_TYPE_TEARMS:
+                   [self showTramsView];//服务条款頁面
                    break;
         default:
             break;
@@ -365,14 +391,14 @@
 -(void)cancelAutoSwitchAccount
 {
     
-    [self goPageView:CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE];
+    [self goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
 }
 
 -(void)changPasswordSuccess //密码改变
 {
-    if (mAccountLoginView) {
-        [mAccountLoginView updatePasswordData];
-    }
+//    if (mAccountLoginView) {
+//        [mAccountLoginView updatePasswordData];
+//    }
 }
 
 -(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate

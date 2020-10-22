@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithCompleter:(void (^)(void))completer;
 
 + (BOOL)openProvision;
++(BOOL)isAgreenProvision;
++ (void)saveAgreenProvisionState:(BOOL)agreen;
 @end
 
 NS_ASSUME_NONNULL_END
