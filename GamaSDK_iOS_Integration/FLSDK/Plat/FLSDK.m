@@ -66,6 +66,8 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
+#import "SDKRequest.h"
+
 #if __has_include(<PlatformTwModule/GMPlatformSDKTW.h>)
 #import <PlatformTwModule/GMPlatformSDKTW.h>
 #endif
@@ -263,6 +265,12 @@ serverName:(NSString *)serverName
     [SdkUserInfoModel shareInfoModel].vipLevel   = roleVipLevel;
     [SdkUserInfoModel shareInfoModel].serverCode = serverCode;
     [SdkUserInfoModel shareInfoModel].serverName = serverName;
+    
+    [SDKRequest reportRoleInfo:nil successBlock:^(id responseData) {
+        
+    } errorBlock:^(BJError *error) {
+        
+    }];
     
     
 //    NSString *loginName = nil;

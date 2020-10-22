@@ -13,7 +13,7 @@
 typedef void (^BJServiceSuccessBlock)(id responseData);
 typedef void (^BJServiceErrorBlock)(BJError *error);
 
-@interface BJHTTPServiceEngine : NSObject
+@interface HttpServiceEngineLogin : NSObject
 
 + (void)getRequestWithFunctionPath:(NSString *)path
                             params:(NSDictionary *)params

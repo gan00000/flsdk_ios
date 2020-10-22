@@ -61,7 +61,7 @@
             
             iconName = @"fl_sdk_suo.png";
             lableName = @"密碼";
-            placeholderText = @"8~16個字元，僅限字母大小寫及數字";
+            placeholderText = @"8-16字元，英文與數字混合";
             showEye = YES;
             break;
             

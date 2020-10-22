@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Benjia. All rights reserved.
 //
 
-#import "BJHTTPServiceEngine.h"
+#import "HttpServiceEngineLogin.h"
 #import "BJServiceConfigurator.h"
 #import "YYModel.h"
 #import "AFHTTPSessionManager.h"
@@ -14,20 +14,20 @@
 #import "SdkHeader.h"
 #import "GamaUtils.h"
 
-@interface BJHTTPServiceEngine ()
+@interface HttpServiceEngineLogin ()
 
 @property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
 
 @end
 
-@implementation BJHTTPServiceEngine
+@implementation HttpServiceEngineLogin
 
 + (instancetype)sharedInstance {
     
-    static BJHTTPServiceEngine *instance;
+    static HttpServiceEngineLogin *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[BJHTTPServiceEngine alloc] init];
+        instance = [[HttpServiceEngineLogin alloc] init];
         NSString *servicePath = [SDKConReader getLoginUrl];//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
         instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:servicePath];
         [instance.httpEngine updateSessionWithBlock:^(AFHTTPSessionManager *session) {
@@ -51,7 +51,7 @@
         [allParams addEntriesFromDictionary:params];
     }
     [GamaUtils gamaStarLoadingAtView:nil];
-    [[BJHTTPServiceEngine sharedInstance].httpEngine getRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEngineLogin sharedInstance].httpEngine getRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
@@ -94,7 +94,7 @@
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     [GamaUtils gamaStarLoadingAtView:nil];
-    [[BJHTTPServiceEngine sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEngineLogin sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
@@ -117,7 +117,7 @@
             }
         
     } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
-        
+        [GamaUtils gamaStopLoadingAtView:nil];
         SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
@@ -137,7 +137,7 @@
                       successBlock:(BJServiceSuccessBlock)successBlock
                         errorBlock:(BJServiceErrorBlock)errorBlock {
     
-    [[BJHTTPServiceEngine sharedInstance].httpEngine fileUploadWithFunctionPath:functionPath params:params fileData:fileData fileName:fileName mimeType:mimeType progressBlock:^(float progress) {
+    [[HttpServiceEngineLogin sharedInstance].httpEngine fileUploadWithFunctionPath:functionPath params:params fileData:fileData fileName:fileName mimeType:mimeType progressBlock:^(float progress) {
         
         if (progressBlock) {
             progressBlock(progress);
@@ -181,7 +181,7 @@
                        successBlock:(BJServiceSuccessBlock)successBlock
                          errorBlock:(BJServiceErrorBlock)errorBlock {
     
-    [[BJHTTPServiceEngine sharedInstance].httpEngine imageUploadWithFunctionPath:functionPath params:params imageData:imageData imageName:imageName progressBlock:^(float progress) {
+    [[HttpServiceEngineLogin sharedInstance].httpEngine imageUploadWithFunctionPath:functionPath params:params imageData:imageData imageName:imageName progressBlock:^(float progress) {
         
         if (progressBlock) {
             progressBlock(progress);

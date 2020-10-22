@@ -79,7 +79,7 @@
     }else{
         requestUrlPath = [SDKConReader getThirdPlatLoginOrRegisterPath];
     }
-    [BJHTTPServiceEngine getRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 
@@ -128,7 +128,7 @@
     } @catch (NSException *exception) {
         
     }
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_LOGIN_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_LOGIN_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 
@@ -161,7 +161,7 @@
     };
     
     [params addEntriesFromDictionary:dic];
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_ACQUIRE_PHONE_VERTIFY_CODE) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_ACQUIRE_PHONE_VERTIFY_CODE) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -242,7 +242,7 @@
     }
     
     
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_REGISTER_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_REGISTER_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -303,7 +303,7 @@
         
     }
     
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_CHANGE_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_CHANGE_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -356,10 +356,62 @@
         
     }
     
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_FIND_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_FIND_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
++ (void)reportRoleInfo:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+                                  errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+//    GameCode+ServerCode+UserId() + RoleId() + "FLYFUNGAME","UTF-8"
+//    NSString *timeStamp = [GamaFunction getTimeStamp];
+    NSMutableString * md5str=[[NSMutableString alloc]init];
+    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
+    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].serverCode];
+    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].userId];
+    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].roleID];
+    [md5str appendFormat:@"%@",@"FLYFUNGAME"];
+    
+    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    
+//    {
+//      "device_type": "string",
+//      "game_code": "string",
+//      "game_name": "string",
+//      "roleName": "string",
+//      "role_id": "string",
+//      "server_code": "string",
+//      "server_name": "string",
+//      "sigin": "string",
+//      "system": "string",
+//      "system_version": "string",
+//      "user_id": "string",
+//      "user_name": "string"
+//    }
+    NSDictionary *dic = @{@"device_type":[GamaFunction getDeviceType]? : @"",
+                          @"game_code": [SDKConReader getGameCode],
+                          @"game_name": [GamaFunction getBundleName]? : @"",
+                          @"role_id": [SdkUserInfoModel shareInfoModel].roleID,
+                          @"server_code": [SdkUserInfoModel shareInfoModel].serverCode,
+                          @"server_name": [SdkUserInfoModel shareInfoModel].serverName,
+                          @"sigin": md5SignStr,
+                          @"system":@"ios",
+                          @"system_version":[GamaFunction getSystemVersion]? : @"",
+                          @"user_id": [SdkUserInfoModel shareInfoModel].userId,
+                          @"user_name": SDK_DATA.mCCSDKResponse.account? : @"",
+    };
+    
+    [params addEntriesFromDictionary:dic];
+    [HttpServiceEngineAd postRequestWithFunctionPath:@"adv-api/v1/role/save/" params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
 
 #pragma mark - 绑定账号
 + (void)doAccountBindingWithUserName:(NSString *)userName
@@ -415,7 +467,7 @@
         
     }
     
-    [BJHTTPServiceEngine getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_THIRD_BINDING_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_THIRD_BINDING_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BJHTTPServiceEngine.h"
+#import "HttpServiceEngineLogin.h"
+#import "HttpServiceEngineAd.h"
 #import "SdkHeader.h"
 #import "CCSDKResponse.h"
 
@@ -65,6 +66,11 @@ NS_ASSUME_NONNULL_BEGIN
                     otherParamsDic:(NSDictionary *)otherParamsDic
                       successBlock:(BJServiceSuccessBlock)successBlock
                         errorBlock:(BJServiceErrorBlock)errorBlock;
+
+
++ (void)reportRoleInfo:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+            errorBlock:(BJServiceErrorBlock)errorBlock;
 
 
 + (void)doAccountBindingWithUserName:(NSString *)userName
