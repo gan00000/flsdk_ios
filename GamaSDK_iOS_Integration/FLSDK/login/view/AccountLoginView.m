@@ -182,14 +182,24 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         
         //
+        NSString *xtext = @"我已閱讀並同意定型化契約";
         UILabel *rememberTermsLable = [[UILabel alloc] init];
-        rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
+//        rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
         rememberTermsLable.font = [UIFont systemFontOfSize:VH(20)];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
         rememberTermsLable.textColor = [UIColor blackColor];
         rememberTermsLable.adjustsFontSizeToFitWidth = YES;
+        
+        // 下划线
+         NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],
+                                      NSFontAttributeName: [UIFont systemFontOfSize:VH(20)]
+         };
+         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
+        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
+         //赋值
+        rememberTermsLable.attributedText = attribtStr;
         
         [self addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -325,6 +335,11 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //            make.centerY.equalTo(changePasswordBtn);
 //            make.height.mas_equalTo(changePasswordBtn);
 //        }];
+        
+        //test saveAccount
+//        [[ConfigCoreUtil share] saveAccount:@"dddd" password:@"xxx" updateTime:YES];
+//        [[ConfigCoreUtil share] saveAccount:@"XXX" password:@"xxx" updateTime:YES];
+//        [[ConfigCoreUtil share] saveAccount:@"ddDDDDdd" password:@"xxx" updateTime:YES];
         
         [ConfigCoreUtil share].isSaveAccountInfo = YES;
         isSaveAccountInfo = YES;

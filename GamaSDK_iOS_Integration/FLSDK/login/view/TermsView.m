@@ -249,14 +249,25 @@
         make.left.mas_equalTo(contentView);
     }];
     
+   NSString *xtext = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+    
     UILabel *rememberLable = [[UILabel alloc] init];
     [xView addSubview:rememberLable];
-    rememberLable.text = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+//    rememberLable.text = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
     rememberLable.font = [UIFont systemFontOfSize:VH(20)];
     rememberLable.textAlignment = NSTextAlignmentLeft;
     rememberLable.backgroundColor = [UIColor clearColor];
     rememberLable.numberOfLines = 1;
     rememberLable.textColor = [UIColor blackColor];
+    
+    // 下划线
+     NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],
+                                  NSFontAttributeName: [UIFont systemFontOfSize:VH(20)]
+     };
+     NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
+    [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
+     //赋值
+    rememberLable.attributedText = attribtStr;
     
     [xView addSubview:rememberLable];
     [rememberLable mas_makeConstraints:^(MASConstraintMaker *make) {
