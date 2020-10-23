@@ -380,7 +380,7 @@
     [md5str appendFormat:@"%@",@"FLYFUNGAME"];
     
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
-    
+    md5SignStr = [md5SignStr lowercaseString];
 //    {
 //      "device_type": "string",
 //      "game_code": "string",

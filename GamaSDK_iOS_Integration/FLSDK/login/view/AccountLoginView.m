@@ -184,7 +184,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         //
         UILabel *rememberTermsLable = [[UILabel alloc] init];
         rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
-        rememberTermsLable.font = [UIFont systemFontOfSize:12];
+        rememberTermsLable.font = [UIFont systemFontOfSize:VH(20)];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -193,8 +193,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         [self addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.width.mas_greaterThanOrEqualTo(VW(300));
+            make.centerX.mas_equalTo(self).mas_offset(VW(20));
+            make.width.mas_greaterThanOrEqualTo(VW(280));
             make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(10));
             make.height.mas_equalTo(VH(40));
         }];
@@ -219,11 +219,17 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
         }
         
+        NSUInteger w = VW(90 * 4) + VW(48 * 3);
+        if (@available(iOS 13.0, *)) {
+            w = VW(90 * 4) + VW(48 * 3);
+        }else{
+            w = VW(90 * 3) + VW(48 * 2);
+        }
         
         UIView *loginTypeView = [[UIView alloc] init];
         [self addSubview:loginTypeView];
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(VW(80 * 4) + VW(48 * 3));
+            make.width.mas_equalTo(w);
             make.bottom.mas_equalTo(self).mas_offset(VH(-10));
             make.top.mas_equalTo(rememberTermsLable.mas_bottom).mas_offset(VH(30));
             make.centerX.mas_equalTo(self);
@@ -232,25 +238,18 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         LoginTypeButton *guestBtn = [[LoginTypeButton alloc] initWithType:guestLoginActTag title:@"遊客登入" image:@"icon_guest" selector:@selector(registerViewBtnAction:) target:self];
         [loginTypeView addSubview:guestBtn];
         [guestBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(VW(80));
+            make.width.mas_equalTo(VW(90));
             make.bottom.top.mas_equalTo(loginTypeView);
             make.leading.mas_equalTo(loginTypeView);
         }];
         
-        LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"icon_fb" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:fbBtn];
-        [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.mas_equalTo(guestBtn);
-            make.top.mas_equalTo(guestBtn);
-            make.leading.mas_equalTo(guestBtn.mas_trailing).mas_offset(VW(48));
-        }];
         
         LoginTypeButton *accountBindBtn = [[LoginTypeButton alloc] initWithType:kBindAccountActTag title:@"帳號綁定" image:@"icon_account" selector:@selector(registerViewBtnAction:) target:self];
         [loginTypeView addSubview:accountBindBtn];
         [accountBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.mas_equalTo(guestBtn);
             make.top.mas_equalTo(guestBtn);
-            make.leading.mas_equalTo(fbBtn.mas_trailing).mas_offset(VW(48));
+            make.leading.mas_equalTo(guestBtn.mas_trailing).mas_offset(VW(48));
         }];
         
 //        LoginTypeButton *appleBtn = [[LoginTypeButton alloc] initWithType:3 title:@"" image:@"icon_guest" selector:@selector(registerViewBtnAction:) target:self];
@@ -265,7 +264,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         if (@available(iOS 13.0, *)) {
             ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                       authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
-            [appleLoginBtn addTarget:self action:@selector(loginBtnsAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
             appleLoginBtn.tag = appleLoginActTag;
             appleLoginBtn.cornerRadius = VH(57) / 2;
             [loginTypeView addSubview:appleLoginBtn];
@@ -273,11 +272,28 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.width.height.mas_equalTo(VH(57));
                 make.top.mas_equalTo(guestBtn);
+                make.leading.mas_equalTo(accountBindBtn.mas_trailing).mas_offset(VW((90 - 57) / 2 + 48));
+            }];
+            
+            LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"icon_fb" selector:@selector(registerViewBtnAction:) target:self];
+            [loginTypeView addSubview:fbBtn];
+            [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.width.height.mas_equalTo(guestBtn);
+                make.top.mas_equalTo(guestBtn);
+                make.leading.mas_equalTo(appleLoginBtn.mas_trailing).mas_offset(VW((90 - 57) / 2 + 48));
+            }];
+            
+        } else {
+            LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"icon_fb" selector:@selector(registerViewBtnAction:) target:self];
+            [loginTypeView addSubview:fbBtn];
+            [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.width.height.mas_equalTo(guestBtn);
+                make.top.mas_equalTo(guestBtn);
                 make.leading.mas_equalTo(accountBindBtn.mas_trailing).mas_offset(VW(48));
             }];
-        } else {
-            // Fallback on earlier versions
         }
+        
+        
         
         //修改密碼
 //        UIButton *changePasswordBtn = [UIUtil initBtnWithTitle2:@"修改密碼" tag:kChangePwdActTag selector:@selector(registerViewBtnAction:) target:self];

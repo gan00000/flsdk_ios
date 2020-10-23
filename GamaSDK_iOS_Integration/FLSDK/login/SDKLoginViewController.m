@@ -117,6 +117,9 @@
         [mMainLoginView.mAccountLoginView updateTermsStatus];
     }];
     
+    mTermsView.delegate = self;
+    mTermsView.theViewUIViewController = self;
+    
     [self addTermsView:mTermsView];
 }
 
@@ -211,9 +214,9 @@
     int width = kBgWidth;
     int height = kBgHeight;
     if (Device_Is_Landscape) {
-        width = SCREEN_WIDTH * 0.7;
+        width = width + 30;
     }else{
-         height = kBgHeight + 60;
+         height = height + 30;
     }
     [self.view addSubview:mTermsView];
     [mTermsView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -346,6 +349,7 @@
             
         case CURRENT_PAGE_TYPE_REG_ACCOUNT:
            // [self addRegisterAccountView];//註冊
+            [self addMainLoginView];
             break;
             
         case CURRENT_PAGE_TYPE_CHANGE_PWD:

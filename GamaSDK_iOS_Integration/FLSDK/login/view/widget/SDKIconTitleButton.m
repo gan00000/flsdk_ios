@@ -83,17 +83,17 @@
             make.top.equalTo(self).mas_offset(4);
             make.bottom.equalTo(self).mas_offset(-4);
             make.width.mas_equalTo(self.mas_height);
-            make.leading.mas_equalTo(self).mas_offset(30);
+            make.leading.mas_equalTo(self).mas_offset(VW(30));
         }];
         
         UILabel *titleLable = [[UILabel alloc] init];
         titleLable.text = titleName;
-        if (device_is_iPhoneX) {
-            titleLable.font = [UIFont boldSystemFontOfSize:18];
-        }else{
-            titleLable.font = [UIFont boldSystemFontOfSize:14];
-        }
-        
+//        if (device_is_iPhoneX) {
+//
+//        }else{
+//            titleLable.font = [UIFont boldSystemFontOfSize:14];
+//        }
+        titleLable.font = [UIFont boldSystemFontOfSize:VH(32)];
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.backgroundColor = [UIColor clearColor];
         titleLable.numberOfLines = 1;

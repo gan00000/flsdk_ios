@@ -318,7 +318,9 @@
          [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
         [GamaAlertView showAlertWithMessage:cc.message];
         
-        
+        if (self.delegate) {
+            [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+        }
     }
                                   errorBlock:^(BJError *error) {
         if (error && error.message) {
@@ -349,6 +351,10 @@
         CCSDKResponse *cc = (CCSDKResponse *)responseData;
          [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
         [GamaAlertView showAlertWithMessage:cc.message];
+        
+        if (self.delegate) {
+            [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+        }
         
     }
                                   errorBlock:^(BJError *error) {
@@ -386,6 +392,10 @@
                 CCSDKResponse *cc = (CCSDKResponse *)responseData;
                 [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
                 [GamaAlertView showAlertWithMessage:cc.message];
+                
+                if (self.delegate) {
+                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+                }
                 
             }
                                           errorBlock:^(BJError *error) {

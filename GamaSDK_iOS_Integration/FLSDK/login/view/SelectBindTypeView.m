@@ -16,6 +16,7 @@
 
 @implementation SelectBindTypeView{
     LoginTitleView *mLoginTitleView;
+    UIView *appleBindView;
 }
 
 - (instancetype)initView
@@ -81,18 +82,56 @@
 //        }];
 //
         if (@available(iOS 13.0, *)) {
+            
+            appleBindView = [[UIView alloc] init];
+            appleBindView.layer.cornerRadius = 4;
+            appleBindView.tag = kBindAppleActTag;
+            appleBindView.backgroundColor = [UIColor blackColor];
+            
+            appleBindView.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+            UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(appleViewTapped:)];
+            [appleBindView addGestureRecognizer:tapGr];
+            
+            [self addSubview:appleBindView];
+            [appleBindView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerX.equalTo(self);
+                make.top.equalTo(fbBindBtn.mas_bottom).mas_offset(20);
+                make.width.mas_equalTo(guestBindBtn);
+                make.height.mas_equalTo(guestBindBtn);
+            }];
+
                ASAuthorizationAppleIDButton *appleBindBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
-               [appleBindBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
-               appleBindBtn.tag = kBindAppleActTag;
-                [self addSubview:appleBindBtn];
+            
+            [appleBindBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            appleBindBtn.tag = kBindAppleActTag;
+            [appleBindView addSubview:appleBindBtn];
                
                    [appleBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                       make.centerX.equalTo(self);
-                       make.top.equalTo(fbBindBtn.mas_bottom).mas_offset(20);
-                       make.width.mas_equalTo(guestBindBtn);
+                       make.top.mas_equalTo(appleBindView);
+                       make.leading.mas_equalTo(appleBindView).mas_offset(VW(30));
                        make.height.mas_equalTo(guestBindBtn);
+                       make.width.mas_equalTo(guestBindBtn.mas_height);
                    }];
+            
+            UILabel *titleLable = [[UILabel alloc] init];
+           titleLable.text = @"Apple帳號綁定";
+           titleLable.font = [UIFont systemFontOfSize:VH(32)];
+           titleLable.textAlignment = NSTextAlignmentCenter;
+           titleLable.backgroundColor = [UIColor clearColor];
+            titleLable.numberOfLines = 1;
+           titleLable.textColor = [UIColor whiteColor];
+            titleLable.adjustsFontSizeToFitWidth = YES;
+            [appleBindView addSubview:titleLable];
+            [titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.mas_equalTo(appleBindView);
+                make.bottom.mas_equalTo(appleBindView);
+                //make.centerX.mas_equalTo(appleBindView).mas_offset(10);
+                //make.width.mas_equalTo(appleBindView).multipliedBy(0.6);
+                make.leading.mas_equalTo(appleBindBtn.mas_trailing);
+                make.trailing.mas_equalTo(appleBindView);
+            }];
+            
            } else {
                // Fallback on earlier versions
            }
@@ -100,6 +139,14 @@
         
     }
     return self;
+}
+
+-(void)appleViewTapped:(UITapGestureRecognizer*)tapGr
+{
+    SDK_LOG(@"appleViewTapped");
+    UIButton *xButton = [[UIButton alloc] init];
+    xButton.tag = kBindAppleActTag;
+    [self registerViewBtnAction:xButton];
 }
 
 - (void)drawRect:(CGRect)rect{

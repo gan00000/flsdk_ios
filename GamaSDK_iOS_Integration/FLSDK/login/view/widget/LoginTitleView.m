@@ -32,13 +32,13 @@
    self.titleLable.backgroundColor = [UIColor clearColor];
    self.titleLable.numberOfLines = 1;
    self.titleLable.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-   
+    self.titleLable.adjustsFontSizeToFitWidth = YES;
     [self addSubview:self.titleLable];
     [self.titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self);
         make.bottom.mas_equalTo(self);
-        make.left.mas_equalTo(self);
-        make.right.mas_equalTo(self);
+        make.left.mas_equalTo(self).mas_offset(VW(40));
+        make.right.mas_equalTo(self).mas_offset(VW(-40));
     }];
     
     UIView *backView = [[UIView alloc] init];
@@ -49,19 +49,19 @@
     
     [self addSubview:backView];
     [backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(self).mas_offset(4);
+        make.leading.mas_equalTo(self).mas_offset(VW(4));
         make.top.mas_equalTo(self);
-        make.width.mas_equalTo(40);
+        make.width.mas_equalTo(VW(40));
         make.height.mas_equalTo(self);
     }];
     
     UIButton *backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(backBtnView:) target:self];
     [backView addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(backView).mas_offset(6);
-        make.width.mas_equalTo(23 * 0.6 );
+        make.leading.mas_equalTo(backView).mas_offset(VW(6));
+        make.width.mas_equalTo(VH(23));
         make.centerY.equalTo(backView);
-        make.height.mas_equalTo(37 * 0.6 );
+        make.height.mas_equalTo(VH(37));
     }];
     
     return self;
