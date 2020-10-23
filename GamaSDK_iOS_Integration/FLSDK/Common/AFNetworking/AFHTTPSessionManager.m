@@ -223,7 +223,11 @@
     } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
         if (responseObject) {
-            NSLog(@"NSURLSessionDataTask: code=%@, message=%@", responseObject[@"code"], responseObject[@"message"]);
+            @try {
+                NSLog(@"NSURLSessionDataTask: code=%@, message=%@", responseObject[@"code"], responseObject[@"message"]);
+            } @catch (NSException *exception) {
+                
+            }
         }
         if (error) {
             if (failure) {
