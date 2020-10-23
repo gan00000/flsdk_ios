@@ -52,7 +52,7 @@
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     //[GamaUtils gamaStarLoadingAtView:nil];
-    [[HttpServiceEngineAd sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEngineAd sharedInstance].httpEngine postJsonRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);

@@ -175,12 +175,26 @@
                        headers:(nullable NSDictionary<NSString *,NSString *> *)headers
      constructingBodyWithBlock:(nullable void (^)(id<AFMultipartFormData> _Nonnull))block
                       progress:(nullable void (^)(NSProgress * _Nonnull))uploadProgress
-                       success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
+                       success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+                       failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
     NSError *serializationError = nil;
-    NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
+    NSMutableURLRequest *request =  [NSMutableURLRequest requestWithURL: [NSURL URLWithString:URLString relativeToURL:self.baseURL]];
+//[self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
+    request.timeoutInterval = 30;
+    request.HTTPMethod = @"POST";
     for (NSString *headerField in headers.keyEnumerator) {
         [request setValue:headers[headerField] forHTTPHeaderField:headerField];
+    }
+    if (parameters) {
+        NSError *serializationError = nil;
+        NSData *bodyData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&serializationError];
+        if (bodyData) {
+            //[formData appendPartWithHeaders:nil body:bodyData];
+            //[request setHTTPBodyStream:nil];
+            [request setHTTPBody:bodyData];
+            
+        }
     }
     if (serializationError) {
         if (failure) {
@@ -192,7 +206,25 @@
         return nil;
     }
     
-    __block NSURLSessionDataTask *task = [self uploadTaskWithStreamedRequest:request progress:uploadProgress completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+//    __block NSURLSessionDataTask *task = [self uploadTaskWithStreamedRequest:request progress:uploadProgress completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+//        if (error) {
+//            if (failure) {
+//                failure(task, error);
+//            }
+//        } else {
+//            if (success) {
+//                success(task, responseObject);
+//            }
+//        }
+//    }];
+    
+    __block NSURLSessionDataTask *task =  [self dataTaskWithRequest:request uploadProgress:uploadProgress downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        
+        if (responseObject) {
+            NSLog(@"NSURLSessionDataTask: code=%@, message=%@", responseObject[@"code"], responseObject[@"message"]);
+        }
         if (error) {
             if (failure) {
                 failure(task, error);
@@ -202,6 +234,7 @@
                 success(task, responseObject);
             }
         }
+        
     }];
     
     [task resume];

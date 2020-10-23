@@ -8,6 +8,7 @@
 
 #import "BJBaseHTTPEngine.h"
 #import "AFNetworking.h"
+#import "BJBaseResponceModel.h"
 
 @interface BJBaseHTTPEngine ()
 
@@ -71,6 +72,46 @@
             if (successBlock) {
                 successBlock(task, responseObject);
             }
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if (errorBlock) {
+                errorBlock(task, error);
+            }
+        }];
+    } @catch (NSException *exception) {
+        
+    };
+}
+
+- (void)postJsonRequestWithFunctionPath:(NSString *)path
+                             params:(NSDictionary *)params
+                       successBlock:(BJHTTPSuccessBlock)successBlock
+                         errorBlock:(BJHTTPFailureBlock)errorBlock {
+    @try {
+        
+       // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{@"Content-Type" : @"application/json", @"charset":@"UTF-8"}
+        [self.sessionManager POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            
+        } progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+          
+//            BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseObject];
+//            if (mBJBaseResponceModel && mBJBaseResponceModel.code != 1000) {
+//
+//                if (errorBlock) {
+//                    errorBlock(task, error);
+//                }
+//            }else{
+//
+//
+//            }
+            
+            if (successBlock) {
+                successBlock(task, responseObject);
+            }
+           
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             

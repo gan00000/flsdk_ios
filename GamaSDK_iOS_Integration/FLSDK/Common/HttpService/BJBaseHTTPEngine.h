@@ -30,6 +30,11 @@ typedef void (^BJHTTPFailureBlock)(NSURLSessionDataTask *task, NSError *error);
                        successBlock:(BJHTTPSuccessBlock)successBlock
                          errorBlock:(BJHTTPFailureBlock)errorBlock;
 
+- (void)postJsonRequestWithFunctionPath:(NSString *)path
+                             params:(NSDictionary *)params
+                       successBlock:(BJHTTPSuccessBlock)successBlock
+                          errorBlock:(BJHTTPFailureBlock)errorBlock;
+
 - (void)fileUploadWithFunctionPath:(NSString *)functionPath
                             params:(NSDictionary *)params
                           fileData:(NSData *)fileData
