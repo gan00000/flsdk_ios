@@ -175,7 +175,7 @@
             return kBgHeight * (608.0 / 582.0);
         }
         
-        return SCREEN_WIDTH * 0.9;
+        return SCREEN_WIDTH * 0.88;
     }
     return 608 * 0.8;
 }
@@ -188,7 +188,7 @@
             int hetight = SCREEN_HEIGHT * 0.85;
             return hetight;
         }
-        return [self getSdkPageWidth] * 1.2;//豎屏
+        return [self getSdkPageWidth] + 1.1;//豎屏
     }
     return 582 * 0.8;;
 }
