@@ -399,6 +399,7 @@
                           @"game_code": [SDKConReader getGameCode],
                           @"game_name": [GamaFunction getBundleName]? : @"",
                           @"role_id": [SdkUserInfoModel shareInfoModel].roleID,
+                          @"role_name": [SdkUserInfoModel shareInfoModel].roleName,
                           @"server_code": [SdkUserInfoModel shareInfoModel].serverCode,
                           @"server_name": [SdkUserInfoModel shareInfoModel].serverName,
                           @"sigin": md5SignStr,
