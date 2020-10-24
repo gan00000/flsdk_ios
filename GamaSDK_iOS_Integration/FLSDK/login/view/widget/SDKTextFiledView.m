@@ -53,7 +53,7 @@
         case SDKTextFiledView_Type_Account:
             iconName = @"fl_sdk_ren.png";
             lableName = @"帳號";
-            placeholderText = @"6~18字符,僅限字母或數字";
+            placeholderText = @"6~18字元,僅限字母或數字";
             addMoreAccountBtn = YES;
             break;
             
