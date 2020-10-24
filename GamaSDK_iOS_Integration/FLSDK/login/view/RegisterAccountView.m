@@ -332,38 +332,61 @@
 {
     
     kWeakSelf
-    GamaAppleLogin *gamaAppleLogin = [[GamaAppleLogin alloc] init];
-    NSDictionary *tempDic = [gamaAppleLogin fetchAppleLoginInfo];
-    NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
-    NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-    [tempMutableDic removeObjectForKey:@"appleThirdID"];
-    
-    [SDKRequest doAccountBindingWithUserName:name
-                                    password:password
-                               phoneAreaCode:areaCode
-                                 phoneNumber:phoneNum
-                                      vfCode:vfCode
-                                       email:@""
-                                     thirdId:appleID
-                                  thirdPlate:_SDK_PLAT_APPLE
-                              otherParamsDic:tempMutableDic
-                                successBlock:^(id responseData) {
-        CCSDKResponse *cc = (CCSDKResponse *)responseData;
-         [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-        [GamaAlertView showAlertWithMessage:cc.message];
-        
-        if (self.delegate) {
-            [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-        }
-        
+    if (@available(iOS 13, *)) {
+                  
+    }else{
+       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+        return;
     }
-                                  errorBlock:^(BJError *error) {
-        if (error && error.message) {
-            [GamaAlertView showAlertWithMessage:error.message];
+    
+    GamaAppleLogin *gamaAppleLogin = [GamaAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
+        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
+        [tempMutableDic removeObjectForKey:@"appleThirdID"];
+
+        [SDKRequest doAccountBindingWithUserName:name
+                                        password:password
+                                   phoneAreaCode:areaCode
+                                     phoneNumber:phoneNum
+                                          vfCode:vfCode
+                                           email:@""
+                                         thirdId:appleID
+                                      thirdPlate:_SDK_PLAT_APPLE
+                                  otherParamsDic:tempMutableDic
+                                    successBlock:^(id responseData) {
+            CCSDKResponse *cc = (CCSDKResponse *)responseData;
+             [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
+            [GamaAlertView showAlertWithMessage:cc.message];
+            
+            if (self.delegate) {
+                [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+            }
+            
         }
+                                      errorBlock:^(BJError *error) {
+            if (error && error.message) {
+                [GamaAlertView showAlertWithMessage:error.message];
+            }
+        }];
+        
+    } andErrorBlock:^(NSError * _Nullable error) {
+        //           [GamaUtils gamaStopLoadingAtView:self.view];
+        //        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
+    [gamaAppleLogin handleAuthrization:nil];
+    
+    
+//    GamaAppleLogin *gamaAppleLogin = [[GamaAppleLogin alloc] init];
+//    NSDictionary *tempDic = [gamaAppleLogin fetchAppleLoginInfo];
+//    NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
+//    NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
+//    [tempMutableDic removeObjectForKey:@"appleThirdID"];
+    
+    
     
 }
+
+
 -(void)requestBindFb:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
     [GamaUtils gamaStarLoadingAtView:self];
