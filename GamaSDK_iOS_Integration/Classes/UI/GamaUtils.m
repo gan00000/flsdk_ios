@@ -465,7 +465,7 @@
 + (BOOL)validPwd:(NSString *)pwd
 {
     NSString *triStr = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *regex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";
+    NSString *regex = @"^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";//^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\W]).{8,16}$
     if([SDKConReaderGetString(GAMA_GAME_LANGUAGE) isEqualToString:@"en"]){
         regex = @"(^[A-Za-z0-9]{6,18}$)";
     }

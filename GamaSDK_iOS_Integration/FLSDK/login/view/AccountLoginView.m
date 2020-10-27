@@ -222,6 +222,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.height.mas_equalTo(VH(26));
         }];
         
+        [TermsView saveAgreenProvisionState:YES];
         isAgree = [TermsView isAgreenProvision];
         if (isAgree) {
             [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];

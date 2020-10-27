@@ -93,7 +93,7 @@
 
 -(void) initTimer
 {
-    __block int timeOut = 4;
+    __block int timeOut = 3;
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
     //每秒执行一次
