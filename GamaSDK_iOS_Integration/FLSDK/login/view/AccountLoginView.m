@@ -159,10 +159,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VW(30));
+            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VW(20));
             make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(10));
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-            make.leading.mas_equalTo(self.mas_centerX);
+            make.width.mas_equalTo(VW(140));
         }];
         
         rememberLable.hidden = YES;//新需求不要
