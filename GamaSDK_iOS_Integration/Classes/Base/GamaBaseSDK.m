@@ -50,10 +50,13 @@
     NSString *currencyLocalPrice = note.userInfo[@"currentLocalPrice"] ? note.userInfo[@"currentLocalPrice"] : @"";
     NSString *currencyCode = note.userInfo[@"currencyCode"] ? note.userInfo[@"currencyCode"] : @"";
     NSString *gamaUID = [SdkUserInfoModel shareInfoModel].userId? :@"";
+    NSString *roleID = [SdkUserInfoModel shareInfoModel].roleID? :@"";
     
     [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel
                          eventName:GAMESWORD_EVENT_IN_APP_PURCHASES
                        eventValues:@{@"productID":productID,
+                                     @"userId":gamaUID,
+                                     @"roleId":roleID,
                                      @"currencyLocalPrice":currencyLocalPrice,
                                      @"currencyCode":currencyCode}];
     
