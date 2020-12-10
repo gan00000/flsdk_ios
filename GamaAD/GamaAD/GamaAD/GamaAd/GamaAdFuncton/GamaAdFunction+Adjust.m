@@ -84,7 +84,7 @@
 
 //        ((void(*)(Class,SEL,double,id))objc_msgSend)(event,NSSelectorFromString(@"setRevenue:currency:"),revenue,currencyCode);
         [event setRevenue:revenue currency:currencyCode];
-        NSString *sysLog = [NSString stringWithFormat:@"channel:adjust currentLocalPrice:%@ currencyCode:%@", revenue, currencyCode];
+        NSString *sysLog = [NSString stringWithFormat:@"channel:adjust currentLocalPrice:%f currencyCode:%@", revenue, currencyCode];
         GAMA_FUNCTION_LOG(sysLog);
     }
 //    ((void(*)(Class,SEL,Class))objc_msgSend)(NSClassFromString(@"Adjust"),NSSelectorFromString(@"trackEvent:"),event);
