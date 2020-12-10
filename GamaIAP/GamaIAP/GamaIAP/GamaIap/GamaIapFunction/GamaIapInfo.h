@@ -3,7 +3,7 @@
 #import "GamaCentreInfo.h"
 
 //系统全打印
-#define GAMA_IAP_LOG(flag) if(SDKConReader.ISPRINT){NSLog(@"_iap_log:%@",flag);}
+#define GAMA_IAP_LOG(flag) if(SDKConReader.ISPRINT){NSLog(@"FL_SDK_iap_log:%@",flag);}
 #define GAMA_NIL                          @"GAMA_NIL_FLAG"                                      //Gama定义的空填充字符串
 #define GAMA_ONE_PURCHASE_INFO_KEY        @"GAMA_ONE_PURCHASE_INFO_KEY"                         //一笔购买的本地保存KEY
 #define GAMA_ONE_PURCHASE_PROCESS_LOG_KEY @"GAMA_ONE_PURCHASE_PROCESS_LOG_KEY"                  //购买的过程日志KEY

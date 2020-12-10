@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "LoginData.h"
 
-#define FL_SDK_VERSION @"1.2"
+#define FL_SDK_VERSION @"1.4.1"
 //typedef void (^openFuncationResult)(NSDictionary *result ,NSError *error);
 
 // 充值回调

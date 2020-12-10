@@ -63,22 +63,32 @@
 
 + (void)sendEventToAdjsutServicesWithEventName:(NSString *)token par:(NSDictionary *)dic{
 
-    Class event = ((Class(*)(Class,SEL,id))objc_msgSend)(NSClassFromString(@"ADJEvent"),NSSelectorFromString(@"eventWithEventToken:"),token);
-    ((void(*)(Class,SEL,id,id))objc_msgSend)(event,NSSelectorFromString(@"addCallbackParameter:value:"),@"gameCode",[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]);
+//    Class event = ((Class(*)(Class,SEL,id))objc_msgSend)(NSClassFromString(@"ADJEvent"),NSSelectorFromString(@"eventWithEventToken:"),token);
+//    ((void(*)(Class,SEL,id,id))objc_msgSend)(event,NSSelectorFromString(@"addCallbackParameter:value:"),@"gameCode",[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]);
+    
+    ADJEvent *event = [ADJEvent eventWithEventToken:token];
+    [event addCallbackParameter:@"gameCode" value:SDKConReaderGetString(SDK_GAME_CODE)];
     if (dic.count > 0) {
         NSArray *keysArray = [dic allKeys];
         for (int i = 0; i < keysArray.count; i++) {
             NSString *key = keysArray[i];
              //根据键值获取字典中的每一项
             NSString *value = dic[key];
-            ((void(*)(Class,SEL,id,id))objc_msgSend)(event,NSSelectorFromString(@"addCallbackParameter:value:"),key,value);
+//            ((void(*)(Class,SEL,id,id))objc_msgSend)(event,NSSelectorFromString(@"addCallbackParameter:value:"),key,value);
+            [event addCallbackParameter:key value:value];
         }
     }
     if (dic[@"currentLocalPrice"]) {
         double revenue = [NSString stringWithString:dic[@"currentLocalPrice"]].doubleValue;
-        ((void(*)(Class,SEL,double,id))objc_msgSend)(event,NSSelectorFromString(@"setRevenue:currency:"),revenue,dic[@"currencyCode"]);
+        NSString *currencyCode = [NSString stringWithString:dic[@"currencyCode"]];
+
+//        ((void(*)(Class,SEL,double,id))objc_msgSend)(event,NSSelectorFromString(@"setRevenue:currency:"),revenue,currencyCode);
+        [event setRevenue:revenue currency:currencyCode];
+        NSString *sysLog = [NSString stringWithFormat:@"channel:adjust currentLocalPrice:%@ currencyCode:%@", revenue, currencyCode];
+        GAMA_FUNCTION_LOG(sysLog);
     }
-    ((void(*)(Class,SEL,Class))objc_msgSend)(NSClassFromString(@"Adjust"),NSSelectorFromString(@"trackEvent:"),event);
+//    ((void(*)(Class,SEL,Class))objc_msgSend)(NSClassFromString(@"Adjust"),NSSelectorFromString(@"trackEvent:"),event);
+    [Adjust trackEvent:event];
     NSString *sysLog = [NSString stringWithFormat:@"channel:adjust eventToken:%@ eventValues:",token];
     GAMA_FUNCTION_LOG(sysLog);
 }

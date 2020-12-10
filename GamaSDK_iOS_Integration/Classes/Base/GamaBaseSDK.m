@@ -47,7 +47,7 @@
 + (void)_in_app_purchases:(NSNotification *)note
 {
     NSString *productID = note.userInfo[@"productID"] ? note.userInfo[@"productID"] : @"";
-    NSString *currencyLocalPrice = note.userInfo[@"currentLocalPrice"] ? note.userInfo[@"currentLocalPrice"] : @"";
+    NSString *currentLocalPrice = note.userInfo[@"currentLocalPrice"] ? note.userInfo[@"currentLocalPrice"] : @"";
     NSString *currencyCode = note.userInfo[@"currencyCode"] ? note.userInfo[@"currencyCode"] : @"";
     NSString *gamaUID = [SdkUserInfoModel shareInfoModel].userId? :@"";
     NSString *roleID = [SdkUserInfoModel shareInfoModel].roleID? :@"";
@@ -57,7 +57,7 @@
                        eventValues:@{@"productID":productID,
                                      @"userId":gamaUID,
                                      @"roleId":roleID,
-                                     @"currencyLocalPrice":currencyLocalPrice,
+                                     @"currentLocalPrice":currentLocalPrice,
                                      @"currencyCode":currencyCode}];
     
     __block BOOL firstPay = YES;

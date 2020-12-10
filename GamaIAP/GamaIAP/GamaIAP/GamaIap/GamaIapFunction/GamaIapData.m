@@ -160,7 +160,9 @@
         NSString *formattedPriceDecimalNumber = [numberFormatter stringFromNumber:tmpProductPrice];
         
         NSString *tmpCurrencyCode = [tmpLocalProduct objectForKey:NSLocaleCurrencyCode];
-        [GamaIapMemoryAndLocalDataAdmin paySuccessUpdateLocalDataWithCurrencyCode:tmpCurrencyCode andLocalPrice:formattedPriceDecimalNumber];
+//        [GamaIapMemoryAndLocalDataAdmin paySuccessUpdateLocalDataWithCurrencyCode:tmpCurrencyCode andLocalPrice:formattedPriceDecimalNumber];
+        
+        [GamaIapMemoryAndLocalDataAdmin paySuccessUpdateLocalDataWithCurrencyCode:@"USD" andLocalPrice:self.usdPrice];
     }
 }
 
