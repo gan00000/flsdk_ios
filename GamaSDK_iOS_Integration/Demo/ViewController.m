@@ -15,7 +15,7 @@
 //#import "KRAgeSystemView.h"
 #pragma end
 #import <AdSupport/AdSupport.h>
-
+#import "GamaAdPort.h"
 #import "Firebase.h"
 
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
@@ -184,7 +184,9 @@
         case 1:
         {
             
-            [[FLSDK share] setRoleInfo:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"999"];
+            [[FLSDK share] setRoleInfo:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            
+            
         }
             break;
             
@@ -196,7 +198,7 @@
 //            IAP_ViewController *iapView = [[IAP_ViewController alloc] init];
 //            [self presentViewController:iapView animated:YES completion:nil];
 //            [iapView release];
-            NSString *aProductID = @"com.flyfun.ylj.60";
+            NSString *aProductID = @"com.flyfun.lyj.340";
             NSString *cpOrderId = @"2e9fde2765c34b9a89f2de7934a887a0";//游戏订单ID
             NSString *extra = @"2e9fde2765c34b9a89f2de7934a887a0";
             
