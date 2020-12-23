@@ -36,59 +36,27 @@
 - (instancetype)initView{
     
     self = [super init];
-    
-    UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-    self.layer.cornerRadius = 10; //设置圆角
-    self.layer.masksToBounds = YES;
-    
-    
-//    UILabel *titleView = [[UILabel alloc]init];
-//    titleView.backgroundColor = UIColor.clearColor;
-//    titleView.textColor = [UIColor colorWithHexString:@"ff3e37"];
-//    titleView.font = [UIFont fontWithName:LABEL_FONT_NAME_BOLD size:30];
-//    titleView.textAlignment = NSTextAlignmentCenter;
-//    titleView.text = @"選擇登入方式";
-//    [self addSubview:titleView];
-//    [titleView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(self).mas_offset(16);
-//        //           make.bottom.mas_equalTo(self);
-//        make.left.mas_equalTo(self);
-//        make.right.mas_equalTo(self);
-//
-//        //            make.width.equalTo(@(kBgWidth));
-//        make.height.mas_equalTo(@(kPageTitleHeight * 1.2));
-//    }];
+        
+    bgView = [[UIView alloc] init];
+//    bgView.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
+    [self addSubview:bgView];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.top.mas_equalTo(self);
+        
+    }];
     
     
     //登入頁logo
-    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_logo"]];
+    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"h_icon_en"]];
     logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:logoImageView];
+    [bgView addSubview:logoImageView];
     [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.mas_top).mas_offset(12);
+        make.top.mas_equalTo(self.mas_top).mas_offset(VH(85));
         make.centerX.mas_equalTo(self);
-        make.width.mas_equalTo(self).mas_offset(-30);
-        make.height.mas_equalTo(kPageTitleHeight * 1.2);
+        make.width.mas_equalTo(VH(165));
+        make.height.mas_equalTo(VH(165));
     }];
     
-    logoImageView.hidden = YES;
-    
-    int leftOffset = -30;
-    int topOffset = kInputTextFiledTopMargin * 4;
-//    int topOffset = VH(16);//kInputTextFiledTopMargin * 1.8;
-    
-//    int swidth = VW(418.0/66.0, VH(66));
-    
-    bgView = [[UIView alloc] init];
-    //    contentView.backgroundColor = [UIColor redColor];
-    [self addSubview:bgView];
-    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.mas_equalTo(logoImageView.mas_bottom).mas_offset(-20);
-        make.left.bottom.right.mas_equalTo(self);
-        
-    }];
     
     //账号
    // UIButton *accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT) tag:accountLoginActTag selector:@selector(loginBtnsAction:)  target:self];
@@ -98,28 +66,10 @@
     
     [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(bgView);
-        make.top.equalTo(bgView).mas_offset(topOffset);
-        
-        if (Device_Is_Landscape) {
-            make.width.mas_equalTo(bgView).multipliedBy(0.75);
-        }else{
-            make.width.mas_equalTo(bgView).offset(leftOffset);
-        }
-        make.height.mas_equalTo(kInputTextFiledHeight * 1.2);
+        make.top.equalTo(bgView).mas_offset(VH(300));
+        make.width.mas_equalTo(VW(264));
+        make.height.mas_equalTo(VH(50));
     }];
-    
-
-    //游客
-   // UIButton *guestLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_GEUST) tag:guestLoginActTag selector:@selector(loginBtnsAction:)  target:self];
-    UIView *guestLoginBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_GEUST) tag:guestLoginActTag selector:@selector(loginBtnsAction:) target:self];
-    
-    [bgView addSubview:guestLoginBtn];
-    
-    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.height.equalTo(accountLoginBtn);
-        make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(topOffset);
-    }];
-    
     
     //fb
     //UIButton *fbLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_FB) tag:fbLoginActTag selector:@selector(loginBtnsAction:)  target:self];
@@ -128,34 +78,69 @@
     
     [fbLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.height.equalTo(accountLoginBtn);
-        make.top.equalTo(guestLoginBtn.mas_bottom).mas_offset(topOffset);
+        make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(20));
     }];
     
-    //apple
-   // UIButton *appleLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_APPLE) tag:appleLoginActTag selector:@selector(loginBtnsAction:)  target:self];
-//    UIView *appleLoginBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_APPLE) tag:appleLoginActTag selector:@selector(loginBtnsAction:) target:self];
-//    [bgView addSubview:appleLoginBtn];
-//
-//    [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(fbLoginBtn.mas_bottom).mas_offset(topOffset);
-//        make.leading.trailing.height.equalTo(accountLoginBtn);
-//    }];
-    
+    BOOL haveAppleLogin = NO;
+    UIView *appleLoginBtnView;
     
     if (@available(iOS 13.0, *)) {
+        
+        haveAppleLogin = YES;
+        
         ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                   authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
         [appleLoginBtn addTarget:self action:@selector(loginBtnsAction:) forControlEvents:(UIControlEventTouchUpInside)];
         appleLoginBtn.tag = appleLoginActTag;
+        appleLoginBtn.cornerRadius = VH(25);
         [bgView addSubview:appleLoginBtn];
         
         [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(fbLoginBtn.mas_bottom).mas_offset(topOffset);
+            make.top.equalTo(fbLoginBtn.mas_bottom).mas_offset(VH(20));
             make.leading.trailing.height.equalTo(accountLoginBtn);
         }];
+        appleLoginBtnView = appleLoginBtn;
+        
     } else {
         // Fallback on earlier versions
+        haveAppleLogin = NO;
     }
+    
+    //游客
+   // UIView *guestLoginBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_GEUST) tag:guestLoginActTag selector:@selector(loginBtnsAction:) target:self];
+    UIView *guestLoginBtn = [[UIView alloc] init];
+    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"c353b0"];
+    guestLoginBtn.layer.cornerRadius = 10;
+    
+    guestLoginBtn.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(guestTapped:)];
+    [guestLoginBtn addGestureRecognizer:tapGr];
+    
+    [bgView addSubview:guestLoginBtn];
+    
+    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(VW(40));
+        make.width.mas_equalTo(VH(224));
+        make.centerX.equalTo(bgView);
+        if (haveAppleLogin) {
+            make.top.equalTo(appleLoginBtnView.mas_bottom).mas_offset(VH(20));
+        }else{
+            make.top.equalTo(fbLoginBtn.mas_bottom).mas_offset(VH(20));
+        }
+        
+    }];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.numberOfLines = 1;
+    label.text = @"Start playing without Login";
+    label.font = [UIFont systemFontOfSize:VH(16)];
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    [guestLoginBtn addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.trailing.bottom.mas_equalTo(guestLoginBtn);
+    }];
+   
     
     return self;
 }
@@ -270,6 +255,23 @@
         //        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
     [gamaAppleLogin handleAuthrization:nil];
+}
+
+-(void)guestTapped:(UITapGestureRecognizer*)tapGr
+{
+    SDK_LOG(@"guestTapped");
+    [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
+        
+        if (self.delegate) {
+            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+        }
+        
+    } errorBlock:^(BJError *error) {
+        if (error && error.message) {
+            [GamaAlertView showAlertWithMessage:error.message];
+        }
+        
+    }];
 }
 
 @end

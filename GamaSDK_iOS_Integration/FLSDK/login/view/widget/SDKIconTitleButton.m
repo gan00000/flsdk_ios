@@ -27,22 +27,17 @@
 {
     self = [super init];
     if (self) {
-        if(type == SDK_ICON_TITLE_BUTTON_TYPE_FB || type == SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB)
-        {
-            //self.backgroundColor = [UIColor colorWithHexString:@"#3D5C9A"];
-            self.layer.contents = (id)(GetImage(@"sdk_btn_fb_bg.png").CGImage);
-        }else{
-             self.layer.contents = (id)(GetImage(@"sdk_btn_bg.png").CGImage);
-        }
-        self.layer.cornerRadius = kR2BtnCornerRadius;
         
-        NSString *iconName = @"fl_logo.png";
+        self.backgroundColor = [UIColor whiteColor];
+        self.layer.cornerRadius = VH(25);
+        
+        NSString *iconName = @"h_icon_en.png";
         NSString *titleName = @"會員帳號登入";
         
         switch (type) {
             case SDK_ICON_TITLE_BUTTON_TYPE_FB:
                 iconName = @"sdk_btn_icon_fb.png";
-                titleName = @"Sign in with Facebook";
+                titleName = @"Facebook Login";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_APPLE:
                 
@@ -55,7 +50,7 @@
                 titleName = @"遊客帳號登入";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_ACCOUNT:
-                iconName = @"fl_logo.png";
+                iconName = @"h_icon_en.png";
                 titleName = @"會員帳號登入";
                 break;
                 
@@ -80,10 +75,10 @@
         accountIconImageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:accountIconImageView];
         [accountIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self).mas_offset(4);
-            make.bottom.equalTo(self).mas_offset(-4);
-            make.width.mas_equalTo(self.mas_height);
-            make.leading.mas_equalTo(self).mas_offset(VW(30));
+            make.height.mas_equalTo(VH(36));
+            make.centerY.mas_equalTo(self);
+            make.width.mas_equalTo(accountIconImageView.mas_height);
+            make.leading.mas_equalTo(self).mas_offset(VW(12));
         }];
         
         UILabel *titleLable = [[UILabel alloc] init];
@@ -93,18 +88,18 @@
 //        }else{
 //            titleLable.font = [UIFont boldSystemFontOfSize:14];
 //        }
-        titleLable.font = [UIFont boldSystemFontOfSize:VH(32)];
+        titleLable.font = [UIFont systemFontOfSize:VH(21)];
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.backgroundColor = [UIColor clearColor];
         titleLable.numberOfLines = 1;
-        titleLable.textColor = [UIColor whiteColor];
+        titleLable.textColor = [UIColor colorWithHexString:@"#F349C1"];
         
         [self addSubview:titleLable];
         [titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self).mas_offset(4);
             make.bottom.equalTo(self).mas_offset(-4);
             make.leading.mas_equalTo(accountIconImageView.mas_trailing);
-            make.trailing.mas_equalTo(self);
+            make.trailing.mas_equalTo(self).mas_offset(-20);
         }];
               
         //账号

@@ -183,29 +183,12 @@
 
 +(NSInteger)getSdkPageHeight
 {
-    if (IS_IPHONE) {
-        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-            int hetight = SCREEN_HEIGHT * 0.85;
-            return hetight;
-        }
-        return [self getSdkPageWidth] + 1.1;//豎屏
-    }
-    return 582 * 0.8;;
+    return SCREEN_HEIGHT;
 }
 
 +(NSInteger)getItemHeight
 {
-    
-    if (IS_IPHONE) {
-        int width = [self getSdkPageHeight];
-        int itemHeight = width / 10;
-        //int itemTopMargin = width / 7;
-        if (itemHeight > 48) {
-            return 48;
-        }
-        return itemHeight;
-    }
-    return 40;
+    return SCREEN_WIDTH;
 }
 
 +(NSInteger)getItemWidthMargin
@@ -220,8 +203,8 @@
 //h = 582 w = 608
 +(CGFloat)getViewHeight:(CGFloat)height
 {
-    CGFloat scale = [[UIScreen mainScreen] scale];
-    return kBgHeight * (height / 582);
+//    CGFloat scale = [[UIScreen mainScreen] scale];
+    return kBgHeight * (height / (812-24));
     
 //
 //    if (device_is_iPhoneX) {
@@ -248,7 +231,7 @@
 
 +(CGFloat)getViewWidth:(CGFloat)width
 {
-    return kBgWidth * (width / 608);
+    return kBgWidth * (width / 375);
 }
 
 @end

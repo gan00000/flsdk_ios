@@ -30,7 +30,7 @@
 
     SDKPage sdkPageType;
    
-//    AccountLoginView *mAccountLoginView;
+    AccountLoginView *mAccountLoginView;
     SdkAutoLoginView *mAutoLoginView;
     MainLoginView *mMainLoginView;
     
@@ -59,7 +59,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(@"viewDidLoad");
-    self.view.backgroundColor = [UIColor clearColor];
+    //self.view.backgroundColor = [UIColor clearColor];
+    self.view.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
     
    // [self registNotification];
     switch (sdkPageType) {
@@ -126,50 +127,26 @@
 -(void)showLoginPageOrAutoLogin
 {
     
-//    if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
-//        [self showTramsView];
-//    }else{
-//
-//        NSString *loginType = [ConfigCoreUtil share].loginType;
-//        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-//            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-//                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-//               if (!accounts || accounts.count == 0) {
-//                   [self addMainLoginView];
-//                   return;
-//               }
-//            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-//            {
-//                [self addMainLoginView];
-//                return;
-//            }
-//             [self addAutoLoginView];
-//
-//        }else{
-//             [self addMainLoginView];
+//    NSString *loginType = [ConfigCoreUtil share].loginType;
+//    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+//        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+//            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+//           if (!accounts || accounts.count == 0) {
+//               [self addMainLoginView];
+//               return;
+//           }
+//        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+//        {
+//            [self addMainLoginView];
+//            return;
 //        }
+//         [self addAutoLoginView];
 //
+//    }else{
+//         [self addMainLoginView];
 //    }
-    
-    NSString *loginType = [ConfigCoreUtil share].loginType;
-    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-           if (!accounts || accounts.count == 0) {
-               [self addMainLoginView];
-               return;
-           }
-        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-        {
-            [self addMainLoginView];
-            return;
-        }
-         [self addAutoLoginView];
-       
-    }else{
-         [self addMainLoginView];
-    }
   
+    [self addSelectLoginTypeView];
 }
 
 -(UIView *) sdkContentView
@@ -181,8 +158,8 @@
         [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(@(0));
             make.centerY.equalTo(@(0));
-            make.width.equalTo(@(kBgWidth));
-            make.height.equalTo(@(kBgHeight));
+            make.width.equalTo(self.view);
+            make.height.equalTo(self.view);
         }];
     }
     return sdkContentView;
@@ -199,14 +176,14 @@
     [self addSubSdkLoginView:mMainLoginView];
 }
 
-//-(void)addSelectLoginTypeView
-//{
-//    //移除所有子视图
-//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//
-//    mSelectLoginTypeView = [[SelectLoginTypeView alloc] initView];
-//    [self addSubSdkLoginView:mSelectLoginTypeView];
-//}
+-(void)addSelectLoginTypeView
+{
+    //移除所有子视图
+    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+    mSelectLoginTypeView = [[SelectLoginTypeView alloc] initView];
+    [self addSubSdkLoginView:mSelectLoginTypeView];
+}
 
 
 -(void)addTermsView:(TermsView *)mTermsView //服務條款
@@ -244,12 +221,11 @@
     }];
 }
 
-//-(void)addAccountLoginView
-//{
-//
-//    mAccountLoginView = [[AccountLoginView alloc] initView];
-//    [self addSubSdkLoginView:mAccountLoginView];
-//}
+-(void)addAccountLoginView
+{
+    mAccountLoginView = [[AccountLoginView alloc] initView];
+    [self addSubSdkLoginView:mAccountLoginView];
+}
 
 //-(void)addRegisterAccountView
 //{
@@ -339,12 +315,12 @@
             break;
             
         case CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE:
-            //[self addSelectLoginTypeView];//選擇登入方式
+            [self addSelectLoginTypeView];//選擇登入方式
             break;
             
         case CURRENT_PAGE_TYPE_LOGIN_ACCOUNT:
-            //[self addAccountLoginView];//賬號登入頁面
-            [self addMainLoginView];
+            [self addAccountLoginView];//賬號登入頁面
+//            [self addMainLoginView];
             break;
             
         case CURRENT_PAGE_TYPE_REG_ACCOUNT:
