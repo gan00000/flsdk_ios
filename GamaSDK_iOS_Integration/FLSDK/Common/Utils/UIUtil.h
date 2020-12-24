@@ -16,9 +16,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - UI
 
++(void) addTapGestureWithView:(UIView *)view tagrget:(nullable id)target action:(nullable SEL)action;
+
++ (UIButton *)initBtnWithNormalColor:(NSString *)normalColor
+                    highlightedColor:(NSString *)highlightedColor
+                           titleText:(NSString *)titleText
+                           textSize :(CGFloat)textSize
+                                 tag:(NSUInteger)tag
+                            selector:(SEL)selector
+                              target:(id)target;
+
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
                            titleText:(NSString *)titleText
+                           textSize :(CGFloat)textSize
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target;

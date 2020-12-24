@@ -53,7 +53,7 @@
         case SDKTextFiledView_Type_Account:
             iconName = @"fl_sdk_ren.png";
             lableName = @"帳號";
-            placeholderText = @"6~18字元,僅限字母或數字";
+            placeholderText = SDKConReaderGetLocalizedString(@"text_enter_account");
             addMoreAccountBtn = YES;
             break;
             
@@ -61,7 +61,7 @@
             
             iconName = @"fl_sdk_suo.png";
             lableName = @"密碼";
-            placeholderText = @"8-16字元，英文與數字混合";
+            placeholderText = SDKConReaderGetLocalizedString(@"text_enter_pwd");
             showEye = YES;
             break;
             
@@ -96,42 +96,10 @@
     [lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading).mas_offset(10);
         make.centerY.mas_equalTo(self);
-        make.height.mas_equalTo(self).multipliedBy(0.4);
-        make.width.mas_equalTo(lableIconImageView.mas_height);
+        make.height.mas_equalTo(VH(30));
+        make.width.mas_equalTo(VH(30));
     }];
-    
-    UILabel *tipsUILabel = [[UILabel alloc] init];
-    if (device_is_iPhoneX) {
-        tipsUILabel.font = [UIFont systemFontOfSize:16];
-    }else{
-        tipsUILabel.font = [UIFont systemFontOfSize:14];
-    }
-    
-    tipsUILabel.text = lableName;
-    tipsUILabel.textAlignment = NSTextAlignmentLeft;
-    tipsUILabel.backgroundColor = [UIColor clearColor];
-    tipsUILabel.numberOfLines = 1; //0为多行
-    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-    
-    [self addSubview:tipsUILabel];
-    [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(4);
-        make.top.mas_equalTo(self).offset(2);
-        make.bottom.mas_equalTo(self).offset(-2);
-        if (lableName.length > 2) {
-            make.width.mas_equalTo(60);
-        }else{
-            make.width.mas_equalTo(40);
-        }
-        
-        
-    }];
-    
-    int trailing_offset = -10;
-    if (addMoreAccountBtn || showEye) {
-        trailing_offset = -30;
-    }
-    
+
     mUITextField = [[UITextField alloc] init];
     self.inputUITextField = mUITextField;
     if (mUIKeyboardType) {
@@ -139,56 +107,32 @@
     }
     mUITextField.textColor = [UIColor blackColor];
     
-    mUITextField.font = [UIFont systemFontOfSize:12];
+    mUITextField.font = [UIFont systemFontOfSize:VH(14)];
     mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小
     
     // 设置placeholder文字大小和居中显示
 //    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
 //    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
     
-    int placeHolderTextSize = 8;
-    if (Device_Is_Landscape || device_is_iPhoneX) {
-        placeHolderTextSize = 10;
-    }
+//    int placeHolderTextSize = 8;
+//    if (Device_Is_Landscape || device_is_iPhoneX) {
+//        placeHolderTextSize = 10;
+//    }
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],
-                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#A0A0A0"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:VH(14)],
+                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#999999"]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     
     [self addSubview:mUITextField];
     [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(tipsUILabel.mas_trailing).mas_offset(2);
+        make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(VW(10));
         make.top.mas_equalTo(self).offset(2);
         make.bottom.mas_equalTo(self).offset(-2);
-        make.trailing.mas_equalTo(self.mas_trailing).mas_offset(trailing_offset);
+        make.trailing.mas_equalTo(self.mas_trailing).mas_offset(-VW(30));
         
     }];
-    
-    if (addMoreAccountBtn) {
-        
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:nil tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
-        self.moreAccountBtn.hidden = YES;
-        self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:self.moreAccountBtn];
-        [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.trailing.mas_equalTo(self.mas_trailing).mas_offset(-6);
-            make.centerY.mas_equalTo(mUITextField.mas_centerY);
-            make.height.mas_equalTo(mUITextField);
-           // make.width.mas_equalTo(20);
-            make.height.mas_equalTo(self.mas_height);
-            //make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-            if (device_is_iPhoneX) {
-                make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-            }else{
-                make.width.mas_equalTo(self.mas_height).multipliedBy(0.45);
-            }
-        }];
-        
-    }
-    
-    
+
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
@@ -201,18 +145,11 @@
         [self addSubview:eyeBtn];
         [eyeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            //            make.top.mas_equalTo(self).offset(10);
-            //            make.bottom.mas_equalTo(self).offset(-10);
-            make.trailing.mas_equalTo(self.mas_trailing).mas_offset(-6);
+            make.trailing.mas_equalTo(self.mas_trailing);
             make.centerY.mas_equalTo(self);
+            make.height.mas_equalTo(VH(30));
+            make.width.mas_equalTo(VH(30));
             
-            make.height.mas_equalTo(self.mas_height);
-            //make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-            if (device_is_iPhoneX) {
-                make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-            }else{
-                make.width.mas_equalTo(self.mas_height).multipliedBy(0.45);
-            }
         }];
     }
     

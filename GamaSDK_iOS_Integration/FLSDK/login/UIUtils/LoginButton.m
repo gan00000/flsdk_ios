@@ -44,7 +44,7 @@
         case BUTTON_TYPE_ACCOUNT_LOGIN:
             normalImage = @"sdk_btn_bg.png";
             highlightedImage = @"sdk_btn_bg.png";
-            titleText = @"會員登入";
+            titleText = SDKConReaderGetLocalizedString(@"text_menber_login");
             break;
             
         case BUTTON_TYPE_ACCOUNT_REGISTER:
@@ -56,7 +56,7 @@
         case BUTTON_TYPE_OK: //確認
             normalImage = @"sdk_btn_bg.png";
             highlightedImage = @"sdk_btn_bg.png";
-            titleText = @"確   認";
+            titleText = SDKConReaderGetLocalizedString(@"text_confirm");
             break;
         case BUTTON_TYPE_BIND_FB: //綁定
             normalImage = @"sdk_btn_bdfb.png";
@@ -89,11 +89,12 @@
     }
     
     //UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage tag:tag selector:selector target:target];
+    //UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage titleText:titleText tag:tag selector:selector target:target];
     
-    UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage titleText:titleText tag:tag selector:selector target:target];
+    UIButton *mButton = [UIUtil initBtnWithNormalColor:@"#FF3FCA" highlightedColor:@"#FF3FCA" titleText:titleText textSize:VH(16) tag:tag selector:selector target:target];
     
     //closeImageView.backgroundColor = [UIColor clearColor];
-//    [mButton.layer setCornerRadius:kR2BtnCornerRadius];
+    [mButton.layer setCornerRadius:VH(25)];
     //mButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
     return mButton;

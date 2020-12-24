@@ -19,14 +19,15 @@
 
 {
     SDKTextFiledView *accountSDKTextFiledView;
-    SDKTextFiledView *vfCodeFiledView;
+   // SDKTextFiledView *vfCodeFiledView;
     PhoneView *mPhoneView;
     
-    LoginTitleView   *mLoginTitleView;
+    UIButton *backBtn;
     UIButton *getVfCodeBtn;
     
     int phoneCountdown;
     NSTimer *downTimer;
+    
 }
 
 - (instancetype)initView
@@ -34,37 +35,76 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-//        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+      
+        self.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
         
-         //title
-          mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼"];
-          mLoginTitleView.delegate = self.delegate;//此处不起作用
-          
-          [self addSubview:mLoginTitleView];
-         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
-             make.centerX.mas_equalTo(self);
-             make.width.mas_equalTo(self).mas_offset(-VW(55));
-             make.height.mas_equalTo(VH(56));
-         }];
-            
-          
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.text = SDKConReaderGetLocalizedString(@"text_forgot_password");
+        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.font = [UIFont boldSystemFontOfSize:VH(38)];
+        
+        [self addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(100));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
+            make.trailing.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
+        }];
+        
+        backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+        backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:backBtn];
+        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(VW(16));
+            make.top.equalTo(self).mas_offset(VH(55));
+            make.height.mas_equalTo(VH(22));
+            make.width.mas_equalTo(backBtn.mas_height);
+        }];
+        
+        
+        UIView * contentView = [[UIView alloc] init];
+        contentView.layer.cornerRadius = VW(30);
+        contentView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:contentView];
+        [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(self);
+            make.top.mas_equalTo(self).mas_offset(VH(267));
+        }];
+        
+        //登入頁logo
+        UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"h_icon_en"]];
+        logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:logoImageView];
+        [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(211));
+            make.leading.mas_equalTo(self).mas_offset(VW(32.5));
+            make.width.mas_equalTo(VH(90));
+            make.height.mas_equalTo(VH(90));
+        }];
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        [self addSubview:accountSDKTextFiledView];
-             
+    
+        [contentView addSubview:accountSDKTextFiledView];
+        
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(40));
-            make.width.mas_equalTo(self).offset(-VW(55));
-            make.height.mas_equalTo(VH(70));
-         }];
+    
+            make.top.equalTo(contentView).mas_offset(VH(44));
+            make.leading.mas_equalTo(contentView).mas_offset(VW(30));
+            make.trailing.mas_equalTo(contentView).mas_offset(-VW(48));
+            make.height.mas_equalTo(VH(40));
+        }];
+        
+        UIView *line1 = [[UIView alloc] init];
+        line1.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line1];
+        [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
         
         
         //電話號碼
@@ -72,49 +112,60 @@
            
            [self addSubview:mPhoneView];
            [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(16));
+                make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(24));
                  make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
                  make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
                  make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
            }];
         
-        //驗證碼
-         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
-          
-          [self addSubview:vfCodeFiledView];
-          [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-               make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(16));
-                make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-                make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
-                make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-          }];
-         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
-        getVfCodeBtn.layer.borderWidth = 1;
-        getVfCodeBtn.layer.cornerRadius = 10;
-        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-           [getVfCodeBtn setTitleColor:[UIColor colorWithHexString:@"#ff3e37"] forState:0];
-        [self addSubview:getVfCodeBtn];
-        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.bottom.equalTo(vfCodeFiledView);
-            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(VH(6));
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VH(4));
-             
+        UIView *line2 = [[UIView alloc] init];
+        line2.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line2];
+        [line2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
         }];
-        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        
+        //驗證碼
+//         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
+//
+//          [self addSubview:vfCodeFiledView];
+//          [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(24));
+//                make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+//                make.width.mas_equalTo(accountSDKTextFiledView.mas_width);
+//                make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+//          }];
+         //獲取驗證碼
+//        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+//
+//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
+//        getVfCodeBtn.layer.borderWidth = 1;
+//        getVfCodeBtn.layer.cornerRadius = 10;
+//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+//           [getVfCodeBtn setTitleColor:[UIColor colorWithHexString:@"#ff3e37"] forState:0];
+//        [self addSubview:getVfCodeBtn];
+//        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.bottom.equalTo(vfCodeFiledView);
+//            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(VH(6));
+//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VH(4));
+//
+//        }];
+//        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
          //確認
-      UIButton *okBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kOkActTag selector:@selector(registerViewBtnAction:)  target:self];
-      [self addSubview:okBtn];
-      
-      [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.centerX.equalTo(self);
-          make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(60));
-          make.width.mas_equalTo(accountSDKTextFiledView);
-          make.height.mas_equalTo(VH(70));
-      }];
+        UIButton *okBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kOkActTag selector:@selector(registerViewBtnAction:)  target:self];
+        [self addSubview:okBtn];
+        
+        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self);
+            make.top.mas_equalTo(contentView).mas_offset(VH(380));
+            make.width.mas_equalTo(VW(350));
+            make.height.mas_equalTo(VH(50));
+        }];
         
     }
     return self;
@@ -122,9 +173,9 @@
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
+    
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
+   // vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
 }
 
@@ -151,7 +202,13 @@
             SDK_LOG(@"kOkActTag");
             [self findPassword];
         }
-            
+        case kBackBtnActTag:
+        {
+            SDK_LOG(@"kBackBtnActTag");
+            if (self.delegate) {
+                [self.delegate goBackBtn:backBtn backCount:1];
+            }
+        }
             
         break;
             
@@ -167,7 +224,7 @@
     
     NSString *areaCode = [mPhoneView getPhoneAreaCode];
     NSString *phoneNum = [mPhoneView getPhoneNumber];
-    NSString *vfCode = vfCodeFiledView.inputUITextField.text;
+    NSString *vfCode = @"";//vfCodeFiledView.inputUITextField.text;
     
     
     if (![GamaUtils validUserName:userName]) {
@@ -205,7 +262,7 @@
     
     
     [SDKRequest requestPhoneVerficationWithPhoneArea:phoneArea phoneNumber:phoneN  interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
-        [self downTime];
+       // [self downTime];
     } errorBlock:^(BJError *error) {
         [self resetVfCodeBtnStatue];
         [GamaAlertView showAlertWithMessage:error.message];

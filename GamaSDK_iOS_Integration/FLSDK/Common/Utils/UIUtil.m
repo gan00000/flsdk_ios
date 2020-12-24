@@ -13,9 +13,41 @@
 
 #pragma mark - UI
 
++(void) addTapGestureWithView:(UIView *)view tagrget:(nullable id)target action:(nullable SEL)action
+{
+    view.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [view addGestureRecognizer:tapGr];
+}
+
++ (UIButton *)initBtnWithNormalColor:(NSString *)normalColor
+                    highlightedColor:(NSString *)highlightedColor
+                           titleText:(NSString *)titleText
+                           textSize :(CGFloat)textSize
+                                 tag:(NSUInteger)tag
+                            selector:(SEL)selector
+                              target:(id)target
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+   
+    [btn setTag:tag];
+    if (titleText && ![titleText isEqualToString:@""]) {
+        [btn setTitle:titleText forState:0];
+        btn.titleLabel.font = [UIFont systemFontOfSize:textSize];
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [btn setBackgroundColor:[UIColor colorWithHexString:normalColor]];
+    }
+   
+    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    
+    return btn;
+}
+
+
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
                            titleText:(NSString *)titleText
+                           textSize :(CGFloat)textSize
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target
@@ -25,17 +57,12 @@
     [btn setTag:tag];
     if (titleText && ![titleText isEqualToString:@""]) {
          [btn setTitle:titleText forState:0];
-        if (device_is_iPhoneX) {
-            btn.titleLabel.font = [UIFont systemFontOfSize:18];
-        }else{
-            btn.titleLabel.font = [UIFont systemFontOfSize:16];
-        }
-              
-                 [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:textSize];
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [btn setBackgroundImage:GetImage(normalImageName) forState:UIControlStateNormal];
     }else{
         [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
-           [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
+        [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
     }
    
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];

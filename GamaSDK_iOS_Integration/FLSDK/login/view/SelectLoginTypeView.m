@@ -36,9 +36,10 @@
 - (instancetype)initView{
     
     self = [super init];
-        
+    
+    self.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
+    
     bgView = [[UIView alloc] init];
-//    bgView.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
     [self addSubview:bgView];
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.top.mas_equalTo(self);
