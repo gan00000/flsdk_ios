@@ -47,7 +47,7 @@
             iconName = @"fl_sdk_dx.png";
             lableName = @"驗證碼";
             mUIKeyboardType = UIKeyboardTypeNumberPad;
-            placeholderText = @"請輸入驗證碼";
+            placeholderText = SDKConReaderGetLocalizedString(@"text_enter_vfcode");
             break;
             
         case SDKTextFiledView_Type_Account:

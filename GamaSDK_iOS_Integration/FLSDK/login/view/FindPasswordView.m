@@ -110,7 +110,7 @@
         //電話號碼
         mPhoneView = [[PhoneView alloc] initView];
            
-           [self addSubview:mPhoneView];
+           [contentView addSubview:mPhoneView];
            [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(24));
                  make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);

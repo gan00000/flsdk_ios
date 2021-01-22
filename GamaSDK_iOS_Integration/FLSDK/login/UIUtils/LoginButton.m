@@ -50,7 +50,7 @@
         case BUTTON_TYPE_ACCOUNT_REGISTER:
                    normalImage = @"sdk_btn_bg.png";
                    highlightedImage = @"sdk_btn_bg.png";
-                   titleText = @"註冊會員";
+            titleText = SDKConReaderGetLocalizedString(@"text_confirm");
                    break;
             
         case BUTTON_TYPE_OK: //確認

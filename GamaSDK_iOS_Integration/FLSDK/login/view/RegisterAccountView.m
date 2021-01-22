@@ -21,20 +21,21 @@
 {
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *passwordSDKTextFiledView;
-    SDKTextFiledView *passwordAgainSDKTextFiledView;
+//    SDKTextFiledView *passwordAgainSDKTextFiledView;
     SDKTextFiledView *vfCodeFiledView;
     UIButton *regAccountBtn; //確定按鈕
-    LoginTitleView   *mLoginTitleView;
+//    LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
     NSTimer *downTimer;
     UIButton *getVfCodeBtn;
     
     PhoneView *mPhoneView;
+    UIButton *backBtn;
+    UIButton *checkBoxBtn;
+    BOOL isSaveAccountInfo;
     
 }
 
-
-//- (instancetype)initViewWithBindType:(NSInteger) bindType
 - (instancetype)initView
 {
     self = [self initViewWithBindType:0];
@@ -49,109 +50,237 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
-        
         self.bindType = bindType;//綁定賬號
-        //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"註冊會員"];
-        mLoginTitleView.delegate = self.delegate;
         
+        self.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
         
-        [self addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
-            make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-VW(55));;
-            make.height.mas_equalTo(VH(56));
+        //===============+标题
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.text = SDKConReaderGetLocalizedString(@"text_register_up");
+        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.font = [UIFont boldSystemFontOfSize:VH(38)];
+        
+        [self addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(100));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
+            make.trailing.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
         }];
+        
+        //===============返回按钮
+        backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+        backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:backBtn];
+        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(VW(16));
+            make.top.equalTo(self).mas_offset(VH(55));
+            make.height.mas_equalTo(VH(22));
+            make.width.mas_equalTo(backBtn.mas_height);
+        }];
+        
+        //===============内容
+        UIView * contentView = [[UIView alloc] init];
+        contentView.layer.cornerRadius = VW(30);
+        contentView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:contentView];
+        [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(self);
+            make.top.mas_equalTo(self).mas_offset(VH(267));
+        }];
+        
+        //logo
+        UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"h_icon_en"]];
+        logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:logoImageView];
+        [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(211));
+            make.leading.mas_equalTo(self).mas_offset(VW(32.5));
+            make.width.mas_equalTo(VH(90));
+            make.height.mas_equalTo(VH(90));
+        }];
+        
        
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        
-        [self addSubview:accountSDKTextFiledView];
+    
+        [contentView addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            //make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(kInputTextFiledTopMargin * 1.2);
-            make.width.mas_equalTo(self).mas_offset(-VW(55));
-            make.height.mas_equalTo(VH(56));
-            if (self.bindType == 0) {
-                make.top.equalTo(self);
-            }else{
-                make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(24));
-            }
+    
+            make.top.equalTo(contentView).mas_offset(VH(44));
+            make.leading.mas_equalTo(contentView).mas_offset(VW(30));
+            make.trailing.mas_equalTo(contentView).mas_offset(-VW(48));
+            make.height.mas_equalTo(VH(40));
         }];
         
+        UIView *line1 = [[UIView alloc] init];
+        line1.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line1];
+        [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
         
         //密碼
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
         
-        [self addSubview:passwordSDKTextFiledView];
+        [contentView addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(10));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(24));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
         }];
         
-        
-        //再次輸入密碼
-        passwordAgainSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
-        
-        [self addSubview:passwordAgainSDKTextFiledView];
-        
-        [passwordAgainSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+        UIView *line2 = [[UIView alloc] init];
+        line2.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line2];
+        [line2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
         }];
         
         
+        //電話號碼
         mPhoneView = [[PhoneView alloc] initView];
+           
+       [contentView addSubview:mPhoneView];
+       [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(24));
+             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+       }];
         
-        [self addSubview:mPhoneView];
-        [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(passwordAgainSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+        UIView *line3 = [[UIView alloc] init];
+        line3.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line3];
+        [line3 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
         }];
+        
         
         //验证码
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
-        
-        [self addSubview:vfCodeFiledView];
+
+        [contentView addSubview:vfCodeFiledView];
         [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(10));
+            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(24));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
+            make.width.mas_equalTo(accountSDKTextFiledView.mas_width);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
         }];
-        
-        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
+
+        getVfCodeBtn = [UIUtil initBtnWithTitle2:SDKConReaderGetLocalizedString(@"text_send_out") tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+
+        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#E32CBC"].CGColor;
         getVfCodeBtn.layer.borderWidth = 1;
-        getVfCodeBtn.layer.cornerRadius = 10;
-        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString:@"#ff3e37"] forState:0];
-        [self addSubview:getVfCodeBtn];
+        getVfCodeBtn.layer.cornerRadius = VH(27/2);
+        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:VH(12)];
+        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString:@"#E32CBC"] forState:0];
+        [contentView addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.bottom.equalTo(vfCodeFiledView);
-            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(6);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).offset(-4);
-            
+            make.centerY.equalTo(vfCodeFiledView);
+            make.trailing.mas_equalTo(vfCodeFiledView.mas_trailing).offset(-VW(4));
+            make.width.mas_equalTo(VW(80));
+            make.height.mas_equalTo(VH(27));
+
         }];
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        
+        UIView *line4 = [[UIView alloc] init];
+        line4.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line4];
+        [line4 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
+        
+       
+        UIImageView *tipImage = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"vf_code_warming_icon"]];
+        tipImage.contentMode = UIViewContentModeScaleAspectFit;
+        [contentView addSubview:tipImage];
+        [tipImage mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(16 + 8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(10 + 4));
+            make.width.mas_equalTo(VH(14));
+            make.height.mas_equalTo(VH(14));
+        }];
+        
+        UILabel *loginTipsLable = [[UILabel alloc] init];
+        loginTipsLable.text = SDKConReaderGetLocalizedString(@"text_reg_tips");
+        loginTipsLable.font = [UIFont systemFontOfSize:VH(14)];
+        loginTipsLable.textAlignment = NSTextAlignmentLeft;
+        loginTipsLable.backgroundColor = [UIColor clearColor];
+        loginTipsLable.numberOfLines = 0;
+        loginTipsLable.textColor = [UIColor colorWithHexString:@"#999999"];
+        loginTipsLable.adjustsFontSizeToFitWidth = YES;
+        
+        [self addSubview:loginTipsLable];
+        [loginTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.top.mas_equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(12 + 8));
+            make.height.mas_equalTo(VH(26));
+            make.leading.mas_equalTo(tipImage.mas_trailing).mas_offset(VW(6));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            
+        }];
+        
+        
+        checkBoxBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+        
+        [contentView addSubview:checkBoxBtn];
+        [checkBoxBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(loginTipsLable.mas_bottom).mas_offset(VH(24));
+            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading).mas_offset(VW(20));
+            make.width.mas_equalTo(20);
+            make.height.mas_equalTo(20);
+        }];
+        isSaveAccountInfo = YES;
+        
+        //服务条款
+        NSString *xtext = SDKConReaderGetLocalizedString(@"text_privacy_policy");
+        NSString *aatext = SDKConReaderGetLocalizedString(@"text_privacy_policy_Terms_Conditions");
+        UILabel *policyLable = [[UILabel alloc] init];
+        //policyLable.text =  SDKConReaderGetLocalizedString(@"text_privacy_policy");
+        policyLable.font = [UIFont systemFontOfSize:VH(12)];
+        policyLable.textAlignment = NSTextAlignmentLeft;
+        policyLable.backgroundColor = [UIColor clearColor];
+        policyLable.numberOfLines = 0;
+        policyLable.textColor = [UIColor colorWithHexString:@"#969696"];
+        policyLable.adjustsFontSizeToFitWidth = YES;
+        
+        // 特殊属性
+         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#E32CBC"]
+         };
+         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
+        [attribtStr addAttributes:attribtDic range: [xtext rangeOfString:aatext]];
+         //赋值
+        policyLable.attributedText = attribtStr;
+        
+        [contentView addSubview:policyLable];
+        [policyLable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.mas_equalTo(passwordSDKTextFiledView.mas_trailing);
+            make.leading.mas_equalTo(checkBoxBtn.mas_trailing).mas_offset(10);
+            make.height.mas_equalTo(VH(26));
+            make.top.equalTo(checkBoxBtn);
+        }];
         
         //注册
         regAccountBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_REGISTER) tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:)  target:self];
@@ -159,38 +288,17 @@
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            if (Device_Is_Landscape) {
-                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(16));
-            }else{
-                 make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(20));
-            }
-           
-            make.width.mas_equalTo(accountSDKTextFiledView.mas_width);
-            make.height.mas_equalTo(VH(64));
+            make.top.equalTo(policyLable.mas_bottom).mas_offset(VH(30));
+            make.width.mas_equalTo(VW(305));
+            make.height.mas_equalTo(VH(50));
         }];
         
-        UILabel *loginTipsLable = [[UILabel alloc] init];
-        loginTipsLable.text = @"同一手機當日不得收取驗證碼超過五次";
-        loginTipsLable.font = [UIFont systemFontOfSize:10];
-        loginTipsLable.textAlignment = NSTextAlignmentCenter;
-        loginTipsLable.backgroundColor = [UIColor clearColor];
-        loginTipsLable.numberOfLines = 1;
-        loginTipsLable.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-        loginTipsLable.adjustsFontSizeToFitWidth = YES;
-        
-        [self addSubview:loginTipsLable];
-        [loginTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.mas_equalTo(regAccountBtn.mas_bottom).mas_offset(VH(10));
-            make.height.mas_equalTo(VH(20));
-            make.width.mas_equalTo(self).mas_offset(-VW(10));
-            
-        }];
+       
         
         if ( self.bindType == 0) {
-            mLoginTitleView.hidden = YES;
+//            mLoginTitleView.hidden = YES;
         }else{
-            mLoginTitleView.titleLable.text = SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT");
+//            mLoginTitleView.titleLable.text = SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT");
             //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateNormal];
             //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateHighlighted];
             
@@ -203,10 +311,8 @@
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    passwordAgainSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
     vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     
@@ -217,6 +323,18 @@
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {
+            
+        
+        case kCheckBoxBtnTag:
+            SDK_LOG(@"kCheckBoxBtnTag");
+            isSaveAccountInfo = !isSaveAccountInfo;
+//            [ConfigCoreUtil share].isSaveAccountInfo = isSaveAccountInfo;
+            if (isSaveAccountInfo) {
+                [checkBoxBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:UIControlStateNormal];
+            }else{
+                [checkBoxBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:UIControlStateNormal];
+            }
+            break;
             
         case kGetVfCodeActTag:
             
@@ -240,9 +358,7 @@
             NSString *areaCode = [mPhoneView getPhoneAreaCode];
             NSString *phoneNum = [mPhoneView getPhoneNumber];
             NSString *vfCode = vfCodeFiledView.inputUITextField.text;
-            
-            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
-            
+    
             if (!name || [name isEqualToString:@""]) {
                 [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
                 return;
@@ -263,10 +379,10 @@
                 return;
             }
             
-            if (![password isEqualToString:newPassword]) {
-                [GamaUtils gamaToastWithMsg:@"兩次輸入的密碼不一致"];
-                return;
-            }
+//            if (![password isEqualToString:newPassword]) {
+//                [GamaUtils gamaToastWithMsg:@"兩次輸入的密碼不一致"];
+//                return;
+//            }
             if ([password isEqualToString:name]) {
                 [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
                 return;
@@ -294,7 +410,14 @@
             
             
         }
-            break;
+        case kBackBtnActTag:
+        {
+            SDK_LOG(@"kBackBtnActTag");
+            if (self.delegate) {
+                [self.delegate goBackBtn:backBtn backCount:1];
+            }
+        }
+        break;
             
         default:
             break;
