@@ -227,12 +227,12 @@
     [self addSubSdkLoginView:mAccountLoginView];
 }
 
-//-(void)addRegisterAccountView
-//{
-//    //綁定和註冊共用頁面
-//    RegisterAccountView *mRegisterAccountView = [[RegisterAccountView alloc] initView];
-//    [self addSubSdkLoginView:mRegisterAccountView];
-//}
+-(void)addRegisterAccountView
+{
+    //綁定和註冊共用頁面
+    RegisterAccountView *mRegisterAccountView = [[RegisterAccountView alloc] initView];
+    [self addSubSdkLoginView:mRegisterAccountView];
+}
 
 -(void)addBindAccountView:(NSInteger) p
 {
@@ -324,8 +324,8 @@
             break;
             
         case CURRENT_PAGE_TYPE_REG_ACCOUNT:
-           // [self addRegisterAccountView];//註冊
-            [self addMainLoginView];
+            [self addRegisterAccountView];//註冊
+//            [self addMainLoginView];
             break;
             
         case CURRENT_PAGE_TYPE_CHANGE_PWD:

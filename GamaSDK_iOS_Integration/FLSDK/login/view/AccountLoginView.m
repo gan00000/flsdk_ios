@@ -250,6 +250,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         regLable.backgroundColor = [UIColor whiteColor];
         regLable.numberOfLines = 0;
         regLable.textColor = [UIColor colorWithHexString:@"#969696"];
+        regLable.tag = kRegisterAccountActTag;
+        [UIUtil addTapGestureWithView:regLable tagrget:self action:@selector(uesrViewClicked:)];
         
         [bottomView addSubview:regLable];
         [regLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -266,6 +268,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         memberCenterLable.backgroundColor = [UIColor whiteColor];
         memberCenterLable.numberOfLines = 0;
         memberCenterLable.textColor = [UIColor colorWithHexString:@"#969696"];
+        memberCenterLable.tag = kBindAccountActTag;
+        [UIUtil addTapGestureWithView:memberCenterLable tagrget:self action:@selector(uesrViewClicked:)];
         
         [bottomView addSubview:memberCenterLable];
         [memberCenterLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -281,6 +285,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         changePwdLable.backgroundColor = [UIColor whiteColor];
         changePwdLable.numberOfLines = 0;
         changePwdLable.textColor = [UIColor colorWithHexString:@"#969696"];
+        changePwdLable.tag = kChangePwdActTag;
+        [UIUtil addTapGestureWithView:changePwdLable tagrget:self action:@selector(uesrViewClicked:)];
         
         [bottomView addSubview:changePwdLable];
         [changePwdLable mas_makeConstraints:^(MASConstraintMaker *make) {
