@@ -21,6 +21,9 @@
     SDKTextFiledView *oldPasswordSDKTextFiledView;
     SDKTextFiledView *newPasswordSDKTextFiledView;
     LoginTitleView *mLoginTitleView;
+    
+    UIButton *backBtn;
+    UIButton *getVfCodeBtn;
 }
 
 - (instancetype)initView
@@ -28,62 +31,135 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-//        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+        self.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
         
-        //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"修改密碼"];
-        mLoginTitleView.delegate = self.delegate;//此处不起作用
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.text = SDKConReaderGetLocalizedString(@"text_change_pwd");
+        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.font = [UIFont boldSystemFontOfSize:VH(38)];
         
-        [self addSubview:mLoginTitleView];
-       [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.top.mas_equalTo(self.mas_top).mas_offset(8);
-           make.centerX.mas_equalTo(self);
-          make.width.mas_equalTo(self).mas_offset(-12);
-           make.height.mas_equalTo(kPageTitleHeight);
-       }];
-          
+        [self addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(100));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
+            make.trailing.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
+        }];
         
-        //账号
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        [self addSubview:accountSDKTextFiledView];
-        accountSDKTextFiledView.inputUITextField.delegate = self;
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(20);
-            make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-            make.height.mas_equalTo(kInputTextFiledHeight * 1.2);
-         }];
-        
-        
-        //旧密碼
-        oldPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Old)];
-       [self addSubview:oldPasswordSDKTextFiledView];
-           oldPasswordSDKTextFiledView.inputUITextField.delegate = self;
-       [oldPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-           
-           make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(10);
-           make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-           make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-           make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+        backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+        backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:backBtn];
+        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(VW(16));
+            make.top.equalTo(self).mas_offset(VH(55));
+            make.height.mas_equalTo(VH(22));
+            make.width.mas_equalTo(backBtn.mas_height);
         }];
         
         
-        //新密碼
-         newPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPasswordSDKTextFiledView];
-             newPasswordSDKTextFiledView.inputUITextField.delegate = self;
-        [newPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        UIView * contentView = [[UIView alloc] init];
+        contentView.layer.cornerRadius = VW(30);
+        contentView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:contentView];
+        [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(self);
+            make.top.mas_equalTo(self).mas_offset(VH(267));
+        }];
+        
+        //登入頁logo
+        UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"h_icon_en"]];
+        logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:logoImageView];
+        [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(211));
+            make.leading.mas_equalTo(self).mas_offset(VW(32.5));
+            make.width.mas_equalTo(VH(90));
+            make.height.mas_equalTo(VH(90));
+        }];
+        
+        //账号
+        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+    
+        [contentView addSubview:accountSDKTextFiledView];
+        
+        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(contentView).mas_offset(VH(44));
+            make.leading.mas_equalTo(contentView).mas_offset(VW(30));
+            make.trailing.mas_equalTo(contentView).mas_offset(-VW(48));
+            make.height.mas_equalTo(VH(40));
+        }];
+        
+        UIView *line1 = [[UIView alloc] init];
+        line1.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line1];
+        [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
+        
+        
+        //密碼
+        oldPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Old)];
+        
+        [contentView addSubview:oldPasswordSDKTextFiledView];
+        
+        [oldPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(oldPasswordSDKTextFiledView.mas_bottom).mas_offset(10);
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(24));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-         }];
+        }];
+        
+        UIView *line2 = [[UIView alloc] init];
+        line2.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line2];
+        [line2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(oldPasswordSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
+        
+        //新密碼
+//         newPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
+//        [self addSubview:newPasswordSDKTextFiledView];
+//             newPasswordSDKTextFiledView.inputUITextField.delegate = self;
+//        [newPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//            make.top.equalTo(oldPasswordSDKTextFiledView.mas_bottom).mas_offset(10);
+//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+//         }];
+//
+        newPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
+        
+        [contentView addSubview:newPasswordSDKTextFiledView];
+        
+        [newPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.equalTo(oldPasswordSDKTextFiledView.mas_bottom).mas_offset(VH(24));
+            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+        }];
+        
+        UIView *line3 = [[UIView alloc] init];
+        line3.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+        [contentView addSubview:line3];
+        [line3 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+            make.top.equalTo(newPasswordSDKTextFiledView.mas_bottom).mas_offset(VH(8));
+            make.leading.mas_equalTo(accountSDKTextFiledView).mas_offset(VW(24));
+            make.trailing.mas_equalTo(accountSDKTextFiledView).mas_offset(-VW(24));
+            make.height.mas_equalTo(1);
+        }];
 
         
          //确认
@@ -91,10 +167,10 @@
       [self addSubview:okBtn];
       
       [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.centerX.equalTo(self);
-          make.top.equalTo(newPasswordSDKTextFiledView.mas_bottom).mas_offset(40);
-          make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-          make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+          make.centerX.mas_equalTo(self);
+          make.top.mas_equalTo(contentView).mas_offset(VH(380));
+          make.width.mas_equalTo(VW(350));
+          make.height.mas_equalTo(VH(50));
       }];
         
        // [self layoutIfNeeded];
@@ -113,6 +189,15 @@
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {
+            
+        case kBackBtnActTag:
+        {
+            SDK_LOG(@"kBackBtnActTag");
+            if (self.delegate) {
+                [self.delegate goBackBtn:backBtn backCount:1];
+            }
+        }
+            break;
             
         case kChangePwdActTag:
         {

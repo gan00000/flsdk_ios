@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDKIconTitleButton : UIView
 
 - (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target;
+- (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target textSize:(CGFloat)textSize;
 @end
 
 NS_ASSUME_NONNULL_END

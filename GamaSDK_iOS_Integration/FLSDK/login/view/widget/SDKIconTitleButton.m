@@ -25,12 +25,16 @@
 
 - (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target
 {
+    return [self initBtnViewWithType:type tag:tag selector:selector target:target textSize:VH(21)];
+}
+
+- (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target textSize:(CGFloat)textSize
+{
     self = [super init];
     if (self) {
         
         self.backgroundColor = [UIColor whiteColor];
         self.layer.cornerRadius = VH(25);
-        
         NSString *iconName = @"h_icon_en.png";
         NSString *titleName = @"會員帳號登入";
         
@@ -56,11 +60,11 @@
                 
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB:
                 iconName = @"sdk_btn_icon_fb.png";
-                titleName = @"Facebook帳號綁定";
+                titleName = SDKConReaderGetLocalizedString(@"text_bind_fb");
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST:
-                iconName = @"sdk_btn_icon_guest.png";
-                titleName = @"遊客帳號綁定";
+                iconName = @"h_icon_en.png";
+                titleName = SDKConReaderGetLocalizedString(@"text_bind_guest");
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE:
                 iconName = @"sdk_btn_icon_apple.png";
@@ -83,12 +87,7 @@
         
         UILabel *titleLable = [[UILabel alloc] init];
         titleLable.text = titleName;
-//        if (device_is_iPhoneX) {
-//
-//        }else{
-//            titleLable.font = [UIFont boldSystemFontOfSize:14];
-//        }
-        titleLable.font = [UIFont systemFontOfSize:VH(21)];
+        titleLable.font = [UIFont systemFontOfSize:textSize];
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.backgroundColor = [UIColor clearColor];
         titleLable.numberOfLines = 1;

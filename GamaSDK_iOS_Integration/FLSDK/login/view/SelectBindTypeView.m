@@ -17,6 +17,7 @@
 @implementation SelectBindTypeView{
     LoginTitleView *mLoginTitleView;
     UIView *appleBindView;
+    UIButton *backBtn;
 }
 
 - (instancetype)initView
@@ -24,67 +25,59 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+        self.layer.contents = (id)[UIImage gama_imageNamed:@"h_bg"].CGImage;
         
-        //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"綁定會員帳號"];
-        mLoginTitleView.delegate = self.delegate;//此处不起作用
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.text = SDKConReaderGetLocalizedString(@"text_member_center");
+        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.font = [UIFont boldSystemFontOfSize:VH(38)];
         
-        [self addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
-            make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-VW(55));
-            make.height.mas_equalTo(VH(56));
+        [self addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(100));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
+            make.trailing.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
+        }];
+        
+        backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+        backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:backBtn];
+        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(VW(16));
+            make.top.equalTo(self).mas_offset(VH(55));
+            make.height.mas_equalTo(VH(22));
+            make.width.mas_equalTo(backBtn.mas_height);
         }];
         
         
-//        UIButton *guestBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_GEUST) tag:kBindGuestActTag selector:@selector(registerViewBtnAction:)  target:self];
-        UIView *guestBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST) tag:kBindGuestActTag selector:@selector(registerViewBtnAction:) target:self];
-           
+        
+        UIView *guestBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST) tag:kBindGuestActTag selector:@selector(registerViewBtnAction:) target:self textSize:VH(14)];
+        
         [self addSubview:guestBindBtn];
         
         [guestBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(40));
-//            make.width.mas_equalTo(self).offset(-30);
-            make.height.mas_equalTo(VH(70));
-            make.width.mas_equalTo(mLoginTitleView);
+            make.top.equalTo(titleLabel.mas_bottom).mas_offset(VH(160));
+            make.height.mas_equalTo(VH(50));
+            make.width.mas_equalTo(VW(305));
         }];
         
-        //UIButton *fbBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:)  target:self];
-              UIView *fbBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:) target:self];
-              [self addSubview:fbBindBtn];
-              
-              [fbBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                  make.centerX.equalTo(self);
-                  make.top.equalTo(guestBindBtn.mas_bottom).mas_offset(20);
-                  make.width.mas_equalTo(guestBindBtn);
-                  make.height.mas_equalTo(guestBindBtn);
-              }];
-              
         
-        //UIButton *appleBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_APPLE) tag:kBindAppleActTag selector:@selector(registerViewBtnAction:)  target:self];
-//        UIView *appleBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE) tag:kBindAppleActTag selector:@selector(registerViewBtnAction:) target:self];
-//
-//        [self addSubview:appleBindBtn];
-//
-//        [appleBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.equalTo(self);
-//            make.top.equalTo(guestBindBtn.mas_bottom).mas_offset(20);
-//            make.width.mas_equalTo(guestBindBtn);
-//            make.height.mas_equalTo(guestBindBtn);
-//        }];
-//
+        UIView *fbBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:) target:self textSize:VH(14)];
+        [self addSubview:fbBindBtn];
+        
+        [fbBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self);
+            make.top.equalTo(guestBindBtn.mas_bottom).mas_offset(VH(20));
+            make.width.mas_equalTo(guestBindBtn);
+            make.height.mas_equalTo(guestBindBtn);
+        }];
+        
         if (@available(iOS 13.0, *)) {
             
             appleBindView = [[UIView alloc] init];
-            appleBindView.layer.cornerRadius = 4;
+            appleBindView.layer.cornerRadius = VH(25);
             appleBindView.tag = kBindAppleActTag;
             appleBindView.backgroundColor = [UIColor blackColor];
             
@@ -95,32 +88,32 @@
             [self addSubview:appleBindView];
             [appleBindView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self);
-                make.top.equalTo(fbBindBtn.mas_bottom).mas_offset(20);
+                make.top.equalTo(fbBindBtn.mas_bottom).mas_offset(VH(20));
                 make.width.mas_equalTo(guestBindBtn);
                 make.height.mas_equalTo(guestBindBtn);
             }];
-
-               ASAuthorizationAppleIDButton *appleBindBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                         authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
+            
+            ASAuthorizationAppleIDButton *appleBindBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
+                                                                                                     authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
             
             [appleBindBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
             appleBindBtn.tag = kBindAppleActTag;
             [appleBindView addSubview:appleBindBtn];
-               
-                   [appleBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                       make.top.mas_equalTo(appleBindView);
-                       make.leading.mas_equalTo(appleBindView).mas_offset(VW(30));
-                       make.height.mas_equalTo(guestBindBtn);
-                       make.width.mas_equalTo(guestBindBtn.mas_height);
-                   }];
+            
+            [appleBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.mas_equalTo(appleBindView);
+                make.leading.mas_equalTo(appleBindView).mas_offset(VW(30));
+                make.height.mas_equalTo(guestBindBtn);
+                make.width.mas_equalTo(guestBindBtn.mas_height);
+            }];
             
             UILabel *titleLable = [[UILabel alloc] init];
-           titleLable.text = @"Apple帳號綁定";
-           titleLable.font = [UIFont systemFontOfSize:VH(32)];
-           titleLable.textAlignment = NSTextAlignmentCenter;
-           titleLable.backgroundColor = [UIColor clearColor];
+            titleLable.text = SDKConReaderGetLocalizedString(@"text_bind_apple");
+            titleLable.font = [UIFont systemFontOfSize:VH(14)];
+            titleLable.textAlignment = NSTextAlignmentCenter;
+            titleLable.backgroundColor = [UIColor clearColor];
             titleLable.numberOfLines = 1;
-           titleLable.textColor = [UIColor whiteColor];
+            titleLable.textColor = [UIColor whiteColor];
             titleLable.adjustsFontSizeToFitWidth = YES;
             [appleBindView addSubview:titleLable];
             [titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -132,10 +125,10 @@
                 make.trailing.mas_equalTo(appleBindView);
             }];
             
-           } else {
-               // Fallback on earlier versions
-           }
-      
+        } else {
+            // Fallback on earlier versions
+        }
+        
         
     }
     return self;
@@ -156,31 +149,41 @@
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {
-        switch (sender.tag) {
-            case kBindAppleActTag:
-            {
-                SDK_LOG(@"kBindAppleActTag");
-                if (@available(iOS 13, *)) {
-                                
-                  }else{
-                     [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
-                      return;
-                  }
+    switch (sender.tag) {
+            
+        case kBackBtnActTag:
+        {
+            SDK_LOG(@"kBackBtnActTag");
+            if (self.delegate) {
+                [self.delegate goBackBtn:backBtn backCount:1];
             }
-                
-                break;
-    
-            case kBindFBActTag:
-                SDK_LOG(@"kBindFBActTag");
-            break;
-    
-            case kBindAccountActTag:
-                SDK_LOG(@"kBindGuestActTag");
-            break;
-    
-            default:
-                break;
+            return;
         }
+            
+        case kBindAppleActTag:
+        {
+            SDK_LOG(@"kBindAppleActTag");
+            if (@available(iOS 13, *)) {
+                
+            }else{
+                [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+                return;
+            }
+        }
+            
+            break;
+            
+        case kBindFBActTag:
+            SDK_LOG(@"kBindFBActTag");
+            break;
+            
+        case kBindAccountActTag:
+            SDK_LOG(@"kBindGuestActTag");
+            break;
+            
+        default:
+            break;
+    }
     
     
     if (self.delegate) {

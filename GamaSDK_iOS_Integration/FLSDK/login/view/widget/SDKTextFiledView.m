@@ -76,13 +76,13 @@
         case SDKTextFiledView_Type_Password_New:
             iconName = @"fl_sdk_suo.png";
             lableName = @"新密碼";
-            placeholderText = SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            placeholderText = SDKConReaderGetLocalizedString(@"text_enter_pwd_new");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = @"fl_sdk_suo.png";
             lableName = @"舊密碼";
-            placeholderText = SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            placeholderText = SDKConReaderGetLocalizedString(@"text_enter_pwd_old");
             showEye = YES;
             break;
             
