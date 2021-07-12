@@ -106,6 +106,7 @@
 		3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E32A24DAF13200B85976 /* FLSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* FLSDK.h */; };
 		3295E38124DAF66400B85976 /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3218406124CB20C7004553C0 /* LoginData.h */; };
+		32A9AD99269C334800F752C0 /* HGameHomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF07F3269834330071E10D /* HGameHomeVC.storyboard */; };
 		32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* HttpServiceEngineAd.m */; };
 		32BE13DD24FB6154000BDFBE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
@@ -122,6 +123,8 @@
 		32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
 		32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32D790EE24D55D69006A2F69 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		32DF07F12698334D0071E10D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF07EF2698334D0071E10D /* HomeViewController.m */; };
+		32DF07F62698349C0071E10D /* hgsdk.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DF07F52698349C0071E10D /* hgsdk.xcassets */; };
 		32F9BEC525020ED4004E9727 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F9BEB225020ED4004E9727 /* GTMSessionFetcher.framework */; };
 		32F9BEC625020ED4004E9727 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F9BEB325020ED4004E9727 /* FirebaseAuth.framework */; };
 		32F9BEC725020ED4004E9727 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F9BEB625020ED4004E9727 /* GoogleDataTransport.framework */; };
@@ -468,6 +471,10 @@
 		32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKIconTitleButton.m; sourceTree = "<group>"; };
 		32D790EB24D55D69006A2F69 /* TermsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TermsView.h; sourceTree = "<group>"; };
 		32D790EC24D55D69006A2F69 /* TermsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TermsView.m; sourceTree = "<group>"; };
+		32DF07EE2698334D0071E10D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		32DF07EF2698334D0071E10D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		32DF07F3269834330071E10D /* HGameHomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HGameHomeVC.storyboard; sourceTree = "<group>"; };
+		32DF07F52698349C0071E10D /* hgsdk.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = hgsdk.xcassets; sourceTree = "<group>"; };
 		32F9BEB225020ED4004E9727 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		32F9BEB325020ED4004E9727 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
 		32F9BEB425020ED4004E9727 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -1337,6 +1344,24 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		32DF07ED269832850071E10D /* NewUI */ = {
+			isa = PBXGroup;
+			children = (
+				32DF07EE2698334D0071E10D /* HomeViewController.h */,
+				32DF07EF2698334D0071E10D /* HomeViewController.m */,
+			);
+			path = NewUI;
+			sourceTree = "<group>";
+		};
+		32DF07F2269833C40071E10D /* SdkView */ = {
+			isa = PBXGroup;
+			children = (
+				32DF07F3269834330071E10D /* HGameHomeVC.storyboard */,
+				32DF07F52698349C0071E10D /* hgsdk.xcassets */,
+			);
+			path = SdkView;
+			sourceTree = "<group>";
+		};
 		32F9BEB025020ED4004E9727 /* Firebase-6.19.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1552,6 +1577,8 @@
 		E974126520874A170018E1A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				32DF07F2269833C40071E10D /* SdkView */,
+				32DF07ED269832850071E10D /* NewUI */,
 				E94EE47D235D8D3B007D3A93 /* GamaAppleLogin.h */,
 				E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */,
 				E974126820874A170018E1A6 /* GamaLabel.h */,
@@ -1678,7 +1705,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A9AD99269C334800F752C0 /* HGameHomeVC.storyboard in Resources */,
 				32F9BED525020F1C004E9727 /* Info.plist in Resources */,
+				32DF07F62698349C0071E10D /* hgsdk.xcassets in Resources */,
 				E974128720874A170018E1A6 /* Default-568h@2x.png in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */,
@@ -1747,6 +1776,7 @@
 				3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */,
 				3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */,
 				3295E2FB24DAEDDE00B85976 /* AccountLoginView.m in Sources */,
+				32DF07F12698334D0071E10D /* HomeViewController.m in Sources */,
 				3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */,
 				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
@@ -1832,7 +1862,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_MODULES_AUTOLINK = NO;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -1866,7 +1896,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_MODULES_AUTOLINK = NO;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -2014,7 +2044,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2077,7 +2107,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
