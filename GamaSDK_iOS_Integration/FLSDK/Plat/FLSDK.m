@@ -67,6 +67,9 @@
 #import <objc/message.h>
 
 #import "SDKRequest.h"
+#import "AccountLoginViewController.h"
+#import "SdkBaseNavViewController.h"
+#import "MainHomeViewController.h"
 
 #if __has_include(<PlatformTwModule/GMPlatformSDKTW.h>)
 #import <PlatformTwModule/GMPlatformSDKTW.h>
@@ -211,7 +214,9 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 - (void)sdkLoginWithHandler:(SDKLoginCompletionHandler)cmopleteHandler
 {
         self.loginCompletionHandler = cmopleteHandler;
-        SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+//        SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+    MainHomeViewController *xMainHomeViewController = [MainHomeViewController createViewController];
+    SdkBaseNavViewController *controller = [[SdkBaseNavViewController alloc] initWithRootViewController:xMainHomeViewController];
 //        controller.definesPresentationContext = YES;
     #ifdef __IPHONE_8_0
             if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
@@ -225,6 +230,8 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
         SDK_LOG(@"not def __IPHONE_8_0");
     #endif
 //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+    
+    
         [[GamaFunction getCurrentViewController] presentViewController: controller animated:NO completion:^{
     
         }];

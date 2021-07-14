@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>sdkDemo</string>
+	<string>hgameDemo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -29,17 +29,17 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>lyjios</string>
-				<string>fb951929145281682</string>
+				<string>sxhios</string>
+				<string>fb431036224947775</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
-	<string>951929145281682</string>
+	<string>431036224947775</string>
 	<key>FacebookDisplayName</key>
-	<string>靈妖記</string>
+	<string>hgameDemo</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -68,7 +68,7 @@
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
-	<true/>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

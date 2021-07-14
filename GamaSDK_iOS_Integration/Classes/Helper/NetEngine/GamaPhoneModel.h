@@ -23,7 +23,7 @@
 @property (nonatomic, copy) NSString *selectedRegularExpression;
 @property (nonatomic, assign) id<GamaPhoneModelDelegate> delegate;
 
-- (void)gamaShowAreaCodesActionSheetFromView:(UIButton *)view;
+- (void)gamaShowAreaCodesActionSheetFromView:(UIView *)view;
 - (void)requestSendSecurityCodeToMobilePhoneNumber:(NSString *)phoneNumber;
 + (void)requestPhoneNumberAreaCodes;
 

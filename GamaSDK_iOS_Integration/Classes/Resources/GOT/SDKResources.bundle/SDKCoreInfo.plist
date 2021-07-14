@@ -22,7 +22,7 @@
 		<key>isFbLoginInApp</key>
 		<string>NO</string>
 		<key>loginAcquirePhoneVertifyCodeProName</key>
-		<string>acquire/v1/acquire-vf-code.app</string>
+		<string>acquireVfCode.app</string>
 		<key>loginBindPhoneOrEmailProName</key>
 		<string>bindpe_phone_email.app</string>
 		<key>loginCaptchaProName</key>
@@ -30,15 +30,15 @@
 		<key>loginDomainName</key>
 		<string>https://login__replaceServer__/</string>
 		<key>loginFreeRegisterProName</key>
-		<string>login/v1/free-register.app</string>
+		<string>freeRegister.app</string>
 		<key>loginStandardChangePwdProName</key>
-		<string>change/v1/pwd.app</string>
+		<string>changePwd.app</string>
 		<key>loginStandardFindPwdProName</key>
-		<string>find/v1/pwd.app</string>
+		<string>findPwd.app</string>
 		<key>loginStandardLoginProName</key>
-		<string>login/v1/login.app</string>
+		<string>login.app</string>
 		<key>loginStandardRegisterProName</key>
-		<string>login/v1/register.app</string>
+		<string>register.app</string>
 		<key>loginThirdBindPhoneProName</key>
 		<string>bind/v1/be-linked-phone.app</string>
 		<key>loginThirdBindingProName</key>
@@ -101,9 +101,9 @@
 		<key>gameRegion</key>
 		<string>REG_TW</string>
 		<key>sdkGameCode</key>
-		<string>xylhios</string>
+		<string>sxhios</string>
 		<key>gamekey</key>
-		<string>1234935f0ba081fd0a6488af126065df</string>
+		<string>cf65a85a67230a99ff58729520a6aeaa</string>
 	</dict>
 	<key>gameLogSetting</key>
 	<dict>
@@ -154,13 +154,13 @@
 	<key>serverInfo</key>
 	<dict>
 		<key>server_TW</key>
-		<string>.flyfungame.com</string>
+		<string>.17g4.games</string>
 		<key>server_TW_Backup</key>
-		<string>.flyfungame.com</string>
+		<string>.17g4.games</string>
 		<key>server_TW_CDN</key>
-		<string>sdk_download.flyfungame.com</string>
+		<string>static-download2.17g4.games</string>
 		<key>server_TW_CDN_Backup</key>
-		<string>sdk_download.flyfungame.com</string>
+		<string>static-download2.17g4.games</string>
 		<key>server_TW_Localization</key>
 		<string>REG_TW</string>
 	</dict>
@@ -187,9 +187,9 @@
 		<key>appsflyerDevKey</key>
 		<string></string>
 		<key>facebookAppID</key>
-		<string>681183295808063</string>
+		<string>431036224947775</string>
 		<key>facebookDisplayName</key>
-		<string>xylhios</string>
+		<string>sxhios</string>
 		<key>twitterConsumerKey</key>
 		<string></string>
 		<key>twitterSecret</key>

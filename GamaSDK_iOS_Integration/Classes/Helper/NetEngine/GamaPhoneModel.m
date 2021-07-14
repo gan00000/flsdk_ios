@@ -42,7 +42,7 @@
     return self;
 }
 
-- (void)gamaShowAreaCodesActionSheetFromView:(UIButton *)view
+- (void)gamaShowAreaCodesActionSheetFromView:(UIView *)view
 {
     NSMutableArray *tempArray = [NSMutableArray array];
 

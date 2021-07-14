@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gP-cd-kBL">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Home View Controller-->
+        <scene sceneID="1B6-V6-hIU">
+            <objects>
+                <viewController id="1gP-cd-kBL" customClass="MainHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IEb-Ks-2By">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdk_login_bg" highlightedImage="sdk_login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OJ0-OH-eTu">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdk_hg_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="Zxr-Id-eV9" userLabel="logo Image View">
+                                <rect key="frame" x="81" y="144" width="228" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="UYX-un-eu8"/>
+                                    <constraint firstAttribute="height" constant="228" id="Ye3-DZ-a0b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TX-og-dmu">
+                                <rect key="frame" x="63" y="506" width="264" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JKV-dG-JAo"/>
+                                    <constraint firstAttribute="width" constant="264" id="Xhp-oJ-V9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="会员登陆">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.17254901959999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goAccountLoginVCAction:" destination="1gP-cd-kBL" eventType="touchUpInside" id="mHV-Fb-OEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1v-gk-yC7">
+                                <rect key="frame" x="63" y="586" width="264" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="fAf-Jd-Myp"/>
+                                    <constraint firstAttribute="height" constant="50" id="vdH-tN-ROH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="直接玩">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.17254901959999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGuestLoginAction:" destination="1gP-cd-kBL" eventType="touchUpInside" id="XbJ-hS-qxs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FGU-aA-seg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2TX-og-dmu" firstAttribute="centerX" secondItem="IEb-Ks-2By" secondAttribute="centerX" id="5s5-U6-3JJ"/>
+                            <constraint firstItem="FGU-aA-seg" firstAttribute="trailing" secondItem="OJ0-OH-eTu" secondAttribute="trailing" id="7zV-LR-QuG"/>
+                            <constraint firstItem="OJ0-OH-eTu" firstAttribute="leading" secondItem="FGU-aA-seg" secondAttribute="leading" id="AjT-bI-VbM"/>
+                            <constraint firstItem="Zxr-Id-eV9" firstAttribute="centerX" secondItem="IEb-Ks-2By" secondAttribute="centerX" id="BVC-10-Nqr"/>
+                            <constraint firstAttribute="bottom" secondItem="OJ0-OH-eTu" secondAttribute="bottom" id="J0Y-VI-jDH"/>
+                            <constraint firstItem="OJ0-OH-eTu" firstAttribute="top" secondItem="IEb-Ks-2By" secondAttribute="top" id="La2-ax-R5y"/>
+                            <constraint firstItem="C1v-gk-yC7" firstAttribute="centerX" secondItem="IEb-Ks-2By" secondAttribute="centerX" id="TKA-Tq-tq9"/>
+                            <constraint firstItem="Zxr-Id-eV9" firstAttribute="top" secondItem="FGU-aA-seg" secondAttribute="top" constant="100" id="Zrh-Tq-qzK"/>
+                            <constraint firstItem="C1v-gk-yC7" firstAttribute="top" secondItem="2TX-og-dmu" secondAttribute="bottom" constant="30" id="dlQ-v0-5hX"/>
+                            <constraint firstItem="2TX-og-dmu" firstAttribute="top" secondItem="Zxr-Id-eV9" secondAttribute="bottom" constant="134" id="g8G-kY-Mvi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountLoginButton" destination="2TX-og-dmu" id="I5K-7o-6h5"/>
+                        <outlet property="guestLoginButton" destination="C1v-gk-yC7" id="9sJ-xq-Tov"/>
+                        <outlet property="sdkLogoImageView" destination="Zxr-Id-eV9" id="8TM-Nl-ecN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cE1-OU-yIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226.08695652173915" y="47.544642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sdk_hg_logo_big" width="228.66667175292969" height="221"/>
+        <image name="sdk_login_bg" width="375.33334350585938" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

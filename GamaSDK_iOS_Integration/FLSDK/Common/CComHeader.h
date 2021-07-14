@@ -18,4 +18,6 @@
 
 #define kWeakSelf __weak typeof(self) weakSelf = self;
 
+//#define kLoadStoryboardWithName(name) [UIStoryboard storyboardWithName:name bundle:nil].instantiateInitialViewController;
+
 #endif /* CComHeader_h */
