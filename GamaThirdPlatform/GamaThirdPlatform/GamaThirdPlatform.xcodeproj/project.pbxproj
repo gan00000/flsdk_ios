@@ -41,7 +41,6 @@
 		E9740FA62086EA970018E1A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9740F9E2086EA970018E1A6 /* Info.plist */; };
 		E9740FA72086EA970018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740F9F2086EA970018E1A6 /* main.m */; };
 		E9740FA82086EA970018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740FA12086EA970018E1A6 /* ViewController.m */; };
-		E9740FBC2086EAA30018E1A6 /* GamaSDK_CORE_20191227_164921.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9740FAA2086EAA30018E1A6 /* GamaSDK_CORE_20191227_164921.a */; };
 		E9740FBD2086ED850018E1A6 /* GamaThirdFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740F9A2086EA970018E1A6 /* GamaThirdFunction.m */; };
 		E9740FBE2086ED850018E1A6 /* GamaThirdFunctionPort.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740F9C2086EA970018E1A6 /* GamaThirdFunctionPort.m */; };
 		E9740FBF2086ED900018E1A6 /* GamaThirdFunction.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E9740F992086EA970018E1A6 /* GamaThirdFunction.h */; };
@@ -67,7 +66,6 @@
 		221260BF1E82701F00258FD4 /* libEfunFacebook_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunFacebook_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunFacebook_DotA.a"; sourceTree = "<group>"; };
 		225C13131E694A510000E81B /* libEfunFacebook_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunFacebook_DotA.a; path = "../../EfunFacebook/EfunFacebook/build/Debug-iphoneos/libEfunFacebook_DotA.a"; sourceTree = "<group>"; };
 		226E4CFA1E8102B400D53EBB /* libEfunCoreFunc_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunCoreFunc_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunCoreFunc_DotA.a"; sourceTree = "<group>"; };
-		32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaThirdPlatform_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaThirdPlatform_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		35A67F8A1A07884E007D5176 /* GamaThirdPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaThirdPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,22 +95,6 @@
 		E9740F9F2086EA970018E1A6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9740FA02086EA970018E1A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E9740FA12086EA970018E1A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E9740FAA2086EAA30018E1A6 /* GamaSDK_CORE_20191227_164921.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE_20191227_164921.a; sourceTree = "<group>"; };
-		E9740FAD2086EAA30018E1A6 /* GamaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
-		E9740FAE2086EAA30018E1A6 /* GamaSDK_Guest_20191128_190012.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = GamaSDK_Guest_20191128_190012.a; path = ../../../GamaGuestLogin_DotA/GamaSDK_Guest_20191128_190012.a; sourceTree = "<group>"; };
-		E9740FAF2086EAA30018E1A6 /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
-		E9740FB02086EAA30018E1A6 /* GamaCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCfUUID.h; sourceTree = "<group>"; };
-		E9740FB12086EAA30018E1A6 /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
-		E9740FB22086EAA30018E1A6 /* GamaFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFunction.h; sourceTree = "<group>"; };
-		E9740FB32086EAA30018E1A6 /* GamaPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
-		E9740FB42086EAA30018E1A6 /* GamaRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaRequestor.h; sourceTree = "<group>"; };
-		E9740FB52086EAA30018E1A6 /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
-		E9740FB62086EAA30018E1A6 /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
-		E9740FB72086EAA30018E1A6 /* GamaURLConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaURLConnect.h; sourceTree = "<group>"; };
-		E9740FB82086EAA30018E1A6 /* SdkUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
-		E9740FB92086EAA30018E1A6 /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
-		E9740FBA2086EAA30018E1A6 /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
-		E9740FBB2086EAA30018E1A6 /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +120,6 @@
 				35A680021A0790C5007D5176 /* Security.framework in Frameworks */,
 				35A680041A0790C9007D5176 /* SystemConfiguration.framework in Frameworks */,
 				35A680061A0790CC007D5176 /* AdSupport.framework in Frameworks */,
-				E9740FBC2086EAA30018E1A6 /* GamaSDK_CORE_20191227_164921.a in Frameworks */,
 				35A680081A0790D6007D5176 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +130,6 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */,
-				E9740FA92086EAA30018E1A6 /* GamaCoreFunc_DotA */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				E9740F962086EA970018E1A6 /* GamaThirdPlatform */,
 				35A67F8B1A07884E007D5176 /* Products */,
@@ -208,46 +187,6 @@
 				E9740FA12086EA970018E1A6 /* ViewController.m */,
 			);
 			path = GamaThirdPlatform;
-			sourceTree = "<group>";
-		};
-		E9740FA92086EAA30018E1A6 /* GamaCoreFunc_DotA */ = {
-			isa = PBXGroup;
-			children = (
-				E9740FAA2086EAA30018E1A6 /* GamaSDK_CORE_20191227_164921.a */,
-				E9740FAB2086EAA30018E1A6 /* include */,
-			);
-			name = GamaCoreFunc_DotA;
-			path = ../../GamaResources/_LibGroup/GamaCoreFunc_DotA;
-			sourceTree = "<group>";
-		};
-		E9740FAB2086EAA30018E1A6 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E9740FAC2086EAA30018E1A6 /* GamaCoreFunc_DotA */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		E9740FAC2086EAA30018E1A6 /* GamaCoreFunc_DotA */ = {
-			isa = PBXGroup;
-			children = (
-				E9740FAD2086EAA30018E1A6 /* GamaAlertView.h */,
-				E9740FAE2086EAA30018E1A6 /* GamaSDK_Guest_20191128_190012.a */,
-				E9740FAF2086EAA30018E1A6 /* GamaCentreInfo.h */,
-				E9740FB02086EAA30018E1A6 /* GamaCfUUID.h */,
-				E9740FB12086EAA30018E1A6 /* GamaCoreConfReader.h */,
-				E9740FB22086EAA30018E1A6 /* GamaFunction.h */,
-				E9740FB32086EAA30018E1A6 /* GamaPrivateKeychainCfUUID.h */,
-				E9740FB42086EAA30018E1A6 /* GamaRequestor.h */,
-				E9740FB52086EAA30018E1A6 /* GamaSecurity.h */,
-				E9740FB62086EAA30018E1A6 /* GamaSecurityFunction.h */,
-				E9740FB72086EAA30018E1A6 /* GamaURLConnect.h */,
-				E9740FB82086EAA30018E1A6 /* SdkUserInfoModel.h */,
-				E9740FB92086EAA30018E1A6 /* NSString+GamaSStringAddition.h */,
-				E9740FBA2086EAA30018E1A6 /* NSString+GamaURLEncoding.h */,
-				E9740FBB2086EAA30018E1A6 /* UIImage+GamaBundleImage.h */,
-			);
-			path = GamaCoreFunc_DotA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,11 +327,11 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -402,44 +341,38 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/WorkProjResources/SPCommonHeader.h",
-					"$(inherited)",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaThirdPlatform_DotA;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/WorkProjResources/SPCommonHeader.h";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/../../GamaResources/_LibGroup/GamaCoreFunc_DotA/include/GamaCoreFunc_DotA;
 				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Debug;
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8C25206FAF00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/WorkProjResources/SPCommonHeader.h",
-					"$(inherited)",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GamaThirdPlatform_DotA;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/WorkProjResources/SPCommonHeader.h";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/../../GamaResources/_LibGroup/GamaCoreFunc_DotA/include/GamaCoreFunc_DotA;
 				VALID_ARCHS = "arm64 armv7 armv7s arm64e x86_64 i386";
 			};
 			name = Release;

@@ -155,7 +155,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32C19D8625206CC700E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		35387F311D913FF700B17EF9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		35787A9E1D98FF53007149C3 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		35A67F441A0757D3007D5176 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -241,7 +240,6 @@
 		35E17A9E1A01EF9900F984ED = {
 			isa = PBXGroup;
 			children = (
-				32C19D8625206CC700E5417D /* xcode12-solution.xcconfig */,
 				E9537EA22085D72E00B08573 /* GamaCommonHeader.h */,
 				35B0FE861A071E61006F5435 /* BuildScript.sh */,
 				E9537EA42085D82500B08573 /* GamaCoreFunc */,
@@ -489,7 +487,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "chmod 755 \"$PROJECT_DIR/BuildScript.sh\"\n\"$PROJECT_DIR/BuildScript.sh\"";
+			shellScript = "chmod 755 \"$PROJECT_DIR/BuildScript.sh\"\n\"$PROJECT_DIR/BuildScript.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -745,13 +743,13 @@
 		};
 		35E17B651A03828700F984ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8625206CC700E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -769,13 +767,13 @@
 		};
 		35E17B661A03828700F984ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8625206CC700E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				GCC_PREPROCESSOR_DEFINITIONS = "";

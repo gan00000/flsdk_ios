@@ -8,7 +8,7 @@
 
 # Sets the target folders and the final framework product.
 ################以下是可配置的##########################
-PREFIX_NAME="GamaSDK"   #合并后库文件的名字的前缀，一般默认都是这个
+PREFIX_NAME="MW"   #合并后库文件的名字的前缀，一般默认都是这个
 FUNCTION_NAME="ThirdPlatform"  #生成库文件的名字的功能描述，如Login， Ad等
 
 DOTA_BUILD_FLODER_NAME="GamaThirdPlatform_DotA" #请输入你需要生成的target名字。一定要写正确哦
