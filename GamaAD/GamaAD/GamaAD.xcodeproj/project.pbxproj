@@ -29,7 +29,6 @@
 		0075349320862AF500D30F30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0075348A20862AF400D30F30 /* Images.xcassets */; };
 		0075349420862AF500D30F30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075348B20862AF400D30F30 /* AppDelegate.m */; };
 		0075349520862AF500D30F30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0075348C20862AF400D30F30 /* Info.plist */; };
-		007534A920862B8500D30F30 /* GamaSDK_CORE_20191227_164921.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0075349720862B8500D30F30 /* GamaSDK_CORE_20191227_164921.a */; };
 		007534AB20862F7800D30F30 /* GamaAdPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075348920862AF400D30F30 /* GamaAdPort.m */; };
 		007534AC20862F7800D30F30 /* GamaAdFunction+AppFlyerAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075348520862AF400D30F30 /* GamaAdFunction+AppFlyerAD.m */; };
 		007534AD20862F7800D30F30 /* GamaAdFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075348820862AF400D30F30 /* GamaAdFunction.m */; };
@@ -113,9 +112,7 @@
 		0075348B20862AF400D30F30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0075348C20862AF400D30F30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0075348D20862AF400D30F30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0075349720862B8500D30F30 /* GamaSDK_CORE_20191227_164921.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE_20191227_164921.a; sourceTree = "<group>"; };
 		0075349A20862B8500D30F30 /* GamaRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaRequestor.h; sourceTree = "<group>"; };
-		0075349B20862B8500D30F30 /* GamaUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaUserInfoModel.h; sourceTree = "<group>"; };
 		0075349C20862B8500D30F30 /* GamaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
 		0075349D20862B8500D30F30 /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
 		0075349E20862B8500D30F30 /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
@@ -131,7 +128,6 @@
 		007534A820862B8500D30F30 /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
 		007534AA20862B8F00D30F30 /* GamaCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
 		2698202C1AAD6CDE00C97099 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		32C19D8925206F6900E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaAD_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaAD_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A67F8A1A07884E007D5176 /* GamaAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A680011A0790C5007D5176 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -175,7 +171,6 @@
 		E9A3506D20EE4D12001EDCE8 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
 		E9A3506E20EE4D12001EDCE8 /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
 		E9AD2426235482880079D158 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
-		E9D1A431224B872600B80C1E /* GamaSDK_Facebook_20191128_173110.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_Facebook_20191128_173110.a; sourceTree = "<group>"; };
 		E9D1A434224B872600B80C1E /* GamaFacebookPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFacebookPort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,7 +193,6 @@
 				359DCDBB1BF440EB005E1E59 /* libxml2.tbd in Frameworks */,
 				E9A3503F20EE35F8001EDCE8 /* FirebaseNanoPB.framework in Frameworks */,
 				359DCDBC1BF440EB005E1E59 /* libsqlite3.0.tbd in Frameworks */,
-				007534A920862B8500D30F30 /* GamaSDK_CORE_20191227_164921.a in Frameworks */,
 				359DCDBD1BF440EB005E1E59 /* libc++.tbd in Frameworks */,
 				359DCDBE1BF440EB005E1E59 /* libz.tbd in Frameworks */,
 				E9A3504120EE35F8001EDCE8 /* nanopb.framework in Frameworks */,
@@ -276,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				007534AA20862B8F00D30F30 /* GamaCommonHeader.h */,
-				0075349720862B8500D30F30 /* GamaSDK_CORE_20191227_164921.a */,
 				0075349820862B8500D30F30 /* include */,
 			);
 			name = GamaCoreFunc_DotA;
@@ -295,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				0075349A20862B8500D30F30 /* GamaRequestor.h */,
-				0075349B20862B8500D30F30 /* GamaUserInfoModel.h */,
 				0075349C20862B8500D30F30 /* GamaAlertView.h */,
 				0075349D20862B8500D30F30 /* NSString+GamaSStringAddition.h */,
 				0075349E20862B8500D30F30 /* GamaCentreInfo.h */,
@@ -316,7 +308,6 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32C19D8925206F6900E5417D /* xcode12-solution.xcconfig */,
 				E9AD2424235482880079D158 /* Adjust */,
 				E9D1A430224B872600B80C1E /* GamaFacebook_DotA */,
 				E9A3506C20EE4D12001EDCE8 /* AF-iOS-SDK-v4.5.12 */,
@@ -434,7 +425,6 @@
 		E9D1A430224B872600B80C1E /* GamaFacebook_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				E9D1A431224B872600B80C1E /* GamaSDK_Facebook_20191128_173110.a */,
 				E9D1A432224B872600B80C1E /* include */,
 			);
 			name = GamaFacebook_DotA;
@@ -604,7 +594,6 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8925206F6900E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
@@ -631,10 +620,10 @@
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8925206F6900E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GamaAD/Firebase/Analytics",

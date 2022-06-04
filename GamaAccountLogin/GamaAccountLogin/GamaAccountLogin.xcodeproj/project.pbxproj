@@ -34,13 +34,6 @@
 		E9537E4D2085D44A00B08573 /* GamaLoginFunction+RegisterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E412085D44A00B08573 /* GamaLoginFunction+RegisterAccount.m */; };
 		E9537E4E2085D44A00B08573 /* GamaLoginFunction+ResetPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E422085D44A00B08573 /* GamaLoginFunction+ResetPassword.m */; };
 		E9537E502085D44A00B08573 /* GamaLoginFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E452085D44A00B08573 /* GamaLoginFunction.m */; };
-		E9537E982085D65F00B08573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E962085D65F00B08573 /* AppDelegate.m */; };
-		E9537E9E2085D66500B08573 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9537E992085D66500B08573 /* Info.plist */; };
-		E9537E9F2085D66500B08573 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9537E9A2085D66500B08573 /* Images.xcassets */; };
-		E9537EA02085D66500B08573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E9C2085D66500B08573 /* ViewController.m */; };
-		E9537EA12085D66500B08573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E9D2085D66500B08573 /* main.m */; };
-		E9537F622086037800B08573 /* GamaSDK_CORE_20181205_180354.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9537F612086037800B08573 /* GamaSDK_CORE_20181205_180354.a */; };
-		E9537F65208604CB00B08573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9537F63208604CA00B08573 /* Main.storyboard */; };
 		E9537F662086052F00B08573 /* GamaLoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E3C2085D44A00B08573 /* GamaLoginData.m */; };
 		E9537F672086053200B08573 /* GamaLoginFunction+AccountLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E3D2085D44A00B08573 /* GamaLoginFunction+AccountLogin.m */; };
 		E9537F682086053300B08573 /* GamaLoginFunction+FindPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = E9537E3F2085D44A00B08573 /* GamaLoginFunction+FindPassword.m */; };
@@ -51,23 +44,6 @@
 		E9537F6D2086054600B08573 /* GamaLoginFuncionPort.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E9537E382085D44A00B08573 /* GamaLoginFuncionPort.h */; };
 		E9537F6E2086054900B08573 /* GamaLoginFunction.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E9537E442085D44A00B08573 /* GamaLoginFunction.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E93A114A2088AAE5005722DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E93A11442088AAE5005722DD /* GamaAD.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 35A67F8A1A07884E007D5176;
-			remoteInfo = GamaAD;
-		};
-		E93A114C2088AAE5005722DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E93A11442088AAE5005722DD /* GamaAD.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 350F19421A08ABD800C2FF3B;
-			remoteInfo = GamaAD_DotA;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		350F19401A08ABD800C2FF3B /* Copy Files */ = {
@@ -85,7 +61,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32C19D8A25206F9800E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaAccountLogin_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaAccountLogin_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		35A67F8A1A07884E007D5176 /* GamaAccountLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaAccountLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,15 +69,6 @@
 		35A680051A0790CC007D5176 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		35A680071A0790D6007D5176 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE8E04901DE56E2D00A8AA49 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		E93A11442088AAE5005722DD /* GamaAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GamaAD.xcodeproj; path = ../../GamaAD/GamaAD/GamaAD.xcodeproj; sourceTree = "<group>"; };
-		E947D2E8221AA35000490C35 /* GamaBaseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaBaseSDK.h; sourceTree = "<group>"; };
-		E947D2E9221AA35000490C35 /* GamaBaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaBaseSDK.m; sourceTree = "<group>"; };
-		E947D2EA221AA35000490C35 /* GamaLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginViewModel.h; sourceTree = "<group>"; };
-		E947D2EB221AA35000490C35 /* GamaLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaLoginViewModel.m; sourceTree = "<group>"; };
-		E947D2EC221AA35000490C35 /* GamaInterfaceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaInterfaceSDK.h; sourceTree = "<group>"; };
-		E947D2ED221AA35000490C35 /* GamaInterfaceSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaInterfaceSDK.m; sourceTree = "<group>"; };
-		E947D2EE221AA35000490C35 /* GamaAdInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaAdInterface.h; sourceTree = "<group>"; };
-		E947D2EF221AA35000490C35 /* GamaAdInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaAdInterface.m; sourceTree = "<group>"; };
 		E9537E382085D44A00B08573 /* GamaLoginFuncionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginFuncionPort.h; sourceTree = "<group>"; };
 		E9537E392085D44A00B08573 /* GamaLoginFuncionPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaLoginFuncionPort.m; sourceTree = "<group>"; };
 		E9537E3B2085D44A00B08573 /* GamaLoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginData.h; sourceTree = "<group>"; };
@@ -115,13 +81,6 @@
 		E9537E452085D44A00B08573 /* GamaLoginFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaLoginFunction.m; sourceTree = "<group>"; };
 		E9537E462085D44A00B08573 /* GamaLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLoginInfo.h; sourceTree = "<group>"; };
 		E9537E932085D5F900B08573 /* GamaCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
-		E9537E952085D65F00B08573 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GamaAccountLogin/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		E9537E962085D65F00B08573 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GamaAccountLogin/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		E9537E992085D66500B08573 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GamaAccountLogin/Info.plist; sourceTree = SOURCE_ROOT; };
-		E9537E9A2085D66500B08573 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GamaAccountLogin/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		E9537E9B2085D66500B08573 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GamaAccountLogin/ViewController.h; sourceTree = SOURCE_ROOT; };
-		E9537E9C2085D66500B08573 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = GamaAccountLogin/ViewController.m; sourceTree = SOURCE_ROOT; };
-		E9537E9D2085D66500B08573 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GamaAccountLogin/main.m; sourceTree = SOURCE_ROOT; };
 		E9537F502085F71C00B08573 /* GamaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
 		E9537F512085F71C00B08573 /* GamaAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertViewDelegate.h; sourceTree = "<group>"; };
 		E9537F522085F71C00B08573 /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
@@ -138,8 +97,6 @@
 		E9537F5D2085F71C00B08573 /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
 		E9537F5E2085F71C00B08573 /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
 		E9537F5F2086017000B08573 /* libGamaCoreFunc_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGamaCoreFunc_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GamaCoreFunc-fpyagxfnfdadsifprrptlltaryfr/Build/Products/Debug-iphoneos/libGamaCoreFunc_DotA.a"; sourceTree = "<group>"; };
-		E9537F612086037800B08573 /* GamaSDK_CORE_20181205_180354.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE_20181205_180354.a; sourceTree = "<group>"; };
-		E9537F64208604CA00B08573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +114,6 @@
 				DE8E04911DE56E2D00A8AA49 /* JavaScriptCore.framework in Frameworks */,
 				35A680021A0790C5007D5176 /* Security.framework in Frameworks */,
 				35A680041A0790C9007D5176 /* SystemConfiguration.framework in Frameworks */,
-				E9537F622086037800B08573 /* GamaSDK_CORE_20181205_180354.a in Frameworks */,
 				35A680061A0790CC007D5176 /* AdSupport.framework in Frameworks */,
 				35A680081A0790D6007D5176 /* UIKit.framework in Frameworks */,
 			);
@@ -169,10 +125,6 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32C19D8A25206F9800E5417D /* xcode12-solution.xcconfig */,
-				E947D2F0221AA35000490C35 /* Base */,
-				E93A11442088AAE5005722DD /* GamaAD.xcodeproj */,
-				E9537E942085D65100B08573 /* Demo */,
 				E9537E7F2085D5F300B08573 /* GamaCoreFunc_DotA */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				E9537E372085D44A00B08573 /* GamaAccountLogin */,
@@ -201,30 +153,6 @@
 				DE8E04901DE56E2D00A8AA49 /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E93A11452088AAE5005722DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E93A114B2088AAE5005722DD /* GamaAD.app */,
-				E93A114D2088AAE5005722DD /* libGamaAD_DotA.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E947D2F0221AA35000490C35 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				E947D2E8221AA35000490C35 /* GamaBaseSDK.h */,
-				E947D2E9221AA35000490C35 /* GamaBaseSDK.m */,
-				E947D2EA221AA35000490C35 /* GamaLoginViewModel.h */,
-				E947D2EB221AA35000490C35 /* GamaLoginViewModel.m */,
-				E947D2EC221AA35000490C35 /* GamaInterfaceSDK.h */,
-				E947D2ED221AA35000490C35 /* GamaInterfaceSDK.m */,
-				E947D2EE221AA35000490C35 /* GamaAdInterface.h */,
-				E947D2EF221AA35000490C35 /* GamaAdInterface.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		E9537E372085D44A00B08573 /* GamaAccountLogin */ = {
@@ -258,36 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				E9537E932085D5F900B08573 /* GamaCommonHeader.h */,
-				E9537F612086037800B08573 /* GamaSDK_CORE_20181205_180354.a */,
 				E9537F4E2085F71C00B08573 /* include */,
 			);
 			name = GamaCoreFunc_DotA;
 			path = ../../GamaResources/_LibGroup/GamaCoreFunc_DotA;
 			sourceTree = "<group>";
-		};
-		E9537E942085D65100B08573 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				E9537E9A2085D66500B08573 /* Images.xcassets */,
-				E9537E992085D66500B08573 /* Info.plist */,
-				E9537E9D2085D66500B08573 /* main.m */,
-				E9537E9B2085D66500B08573 /* ViewController.h */,
-				E9537E9C2085D66500B08573 /* ViewController.m */,
-				E9537E952085D65F00B08573 /* AppDelegate.h */,
-				E9537E962085D65F00B08573 /* AppDelegate.m */,
-				E9537E972085D65F00B08573 /* Base.lproj */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		E9537E972085D65F00B08573 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				E9537F63208604CA00B08573 /* Main.storyboard */,
-			);
-			name = Base.lproj;
-			path = GamaAccountLogin/Base.lproj;
-			sourceTree = SOURCE_ROOT;
 		};
 		E9537F4E2085F71C00B08573 /* include */ = {
 			isa = PBXGroup;
@@ -389,12 +292,6 @@
 			mainGroup = 35A67F811A07884E007D5176;
 			productRefGroup = 35A67F8B1A07884E007D5176 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E93A11452088AAE5005722DD /* Products */;
-					ProjectRef = E93A11442088AAE5005722DD /* GamaAD.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				35A67F891A07884E007D5176 /* GamaAccountLogin */,
@@ -404,32 +301,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		E93A114B2088AAE5005722DD /* GamaAD.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GamaAD.app;
-			remoteRef = E93A114A2088AAE5005722DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E93A114D2088AAE5005722DD /* libGamaAD_DotA.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGamaAD_DotA.a;
-			remoteRef = E93A114C2088AAE5005722DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		35A67F881A07884E007D5176 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9537E9F2085D66500B08573 /* Images.xcassets in Resources */,
-				E9537E9E2085D66500B08573 /* Info.plist in Resources */,
 				350F195C1A08AE2B00C2FF3B /* BuildScript.sh in Resources */,
-				E9537F65208604CB00B08573 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,13 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9537EA12085D66500B08573 /* main.m in Sources */,
-				E9537E982085D65F00B08573 /* AppDelegate.m in Sources */,
 				E9537E492085D44A00B08573 /* GamaLoginFunction+AccountLogin.m in Sources */,
 				E9537E502085D44A00B08573 /* GamaLoginFunction.m in Sources */,
 				E9537E472085D44A00B08573 /* GamaLoginFuncionPort.m in Sources */,
 				E9537E482085D44A00B08573 /* GamaLoginData.m in Sources */,
-				E9537EA02085D66500B08573 /* ViewController.m in Sources */,
 				E9537E4D2085D44A00B08573 /* GamaLoginFunction+RegisterAccount.m in Sources */,
 				E9537E4E2085D44A00B08573 /* GamaLoginFunction+ResetPassword.m in Sources */,
 				E9537E4B2085D44A00B08573 /* GamaLoginFunction+FindPassword.m in Sources */,
@@ -485,21 +359,9 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		E9537F63208604CA00B08573 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9537F64208604CA00B08573 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8A25206F9800E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -520,11 +382,11 @@
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8A25206F9800E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;

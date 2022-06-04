@@ -52,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		0032090E21A4180B00062643 /* btn_xm_member_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_xm_member_login.png; sourceTree = "<group>"; };
+		0329E2E3284BBF8E0035B055 /* SdkUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
+		0329E2E4284BBFAB0035B055 /* GamaThirdFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunction.h; sourceTree = "<group>"; };
+		0329E2E5284BBFAB0035B055 /* GamaThirdFunctionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunctionPort.h; sourceTree = "<group>"; };
 		221260CA1E827E5B00258FD4 /* libEfunLogin_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunLogin_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunLogin_DotA.a"; sourceTree = "<group>"; };
 		221260CC1E827E5F00258FD4 /* libEfunCoreFunc_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunCoreFunc_DotA.a; path = "../../EfunCoreFunc/EfunCoreFunc/build/Debug-iphoneos/libEfunCoreFunc_DotA.a"; sourceTree = "<group>"; };
 		221260CE1E827E6400258FD4 /* libEfunThirdPlatform_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunThirdPlatform_DotA.a; path = "../../EfunThirdPlatform/EfunThirdPlatform/build/Debug-iphoneos/libEfunThirdPlatform_DotA.a"; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		32506C0D24F8CC4300010D7B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		32506C0E24F8CC4300010D7B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		32506C0F24F8CC4300010D7B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		32C19D8825206F0C00E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaFacebook_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaFacebook_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		3594B6761A0B4DCE00B92C19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,7 +95,6 @@
 		E9740F692086DE6D0018E1A6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9740F6A2086DE6D0018E1A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E9740F6B2086DE6D0018E1A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E9740FD42086EEA80018E1A6 /* GamaSDK_CORE_20190315_143855.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_CORE_20190315_143855.a; sourceTree = "<group>"; };
 		E9740FD72086EEA80018E1A6 /* GamaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertView.h; sourceTree = "<group>"; };
 		E9740FD82086EEA80018E1A6 /* GamaAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertViewDelegate.h; sourceTree = "<group>"; };
 		E9740FD92086EEA80018E1A6 /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
@@ -105,13 +106,9 @@
 		E9740FDF2086EEA80018E1A6 /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
 		E9740FE02086EEA80018E1A6 /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
 		E9740FE12086EEA80018E1A6 /* GamaURLConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaURLConnect.h; sourceTree = "<group>"; };
-		E9740FE22086EEA80018E1A6 /* GamaUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaUserInfoModel.h; sourceTree = "<group>"; };
 		E9740FE32086EEA80018E1A6 /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
 		E9740FE42086EEA80018E1A6 /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
 		E9740FE52086EEA80018E1A6 /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
-		E9740FE72086EEA80018E1A6 /* GamaSDK_ThirdPlatform_20180815_150957.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GamaSDK_ThirdPlatform_20180815_150957.a; sourceTree = "<group>"; };
-		E9740FEA2086EEA80018E1A6 /* GamaThirdFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunction.h; sourceTree = "<group>"; };
-		E9740FEB2086EEA80018E1A6 /* GamaThirdFunctionPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdFunctionPort.h; sourceTree = "<group>"; };
 		E97410122086F0120018E1A6 /* GamaFbLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaFbLogin.m; sourceTree = "<group>"; };
 		E97410132086F0120018E1A6 /* GamaFbLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFbLogin.h; sourceTree = "<group>"; };
 		E9E26B6F214A401E00907BD5 /* Default-iOS11-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iOS11-812h@3x.png"; sourceTree = "<group>"; };
@@ -147,7 +144,6 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32C19D8825206F0C00E5417D /* xcode12-solution.xcconfig */,
 				32506C0C24F8CC4300010D7B /* FacebookSDK_Static_v7.1.1 */,
 				E9740FC12086EEA80018E1A6 /* _LibGroup */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
@@ -273,7 +269,6 @@
 		E9740FD32086EEA80018E1A6 /* GamaCoreFunc_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				E9740FD42086EEA80018E1A6 /* GamaSDK_CORE_20190315_143855.a */,
 				E9740FD52086EEA80018E1A6 /* include */,
 			);
 			path = GamaCoreFunc_DotA;
@@ -290,6 +285,7 @@
 		E9740FD62086EEA80018E1A6 /* GamaCoreFunc_DotA */ = {
 			isa = PBXGroup;
 			children = (
+				0329E2E3284BBF8E0035B055 /* SdkUserInfoModel.h */,
 				E9740FD72086EEA80018E1A6 /* GamaAlertView.h */,
 				E9740FD82086EEA80018E1A6 /* GamaAlertViewDelegate.h */,
 				E9740FD92086EEA80018E1A6 /* GamaCentreInfo.h */,
@@ -301,7 +297,6 @@
 				E9740FDF2086EEA80018E1A6 /* GamaSecurity.h */,
 				E9740FE02086EEA80018E1A6 /* GamaSecurityFunction.h */,
 				E9740FE12086EEA80018E1A6 /* GamaURLConnect.h */,
-				E9740FE22086EEA80018E1A6 /* GamaUserInfoModel.h */,
 				E9740FE32086EEA80018E1A6 /* NSString+GamaSStringAddition.h */,
 				E9740FE42086EEA80018E1A6 /* NSString+GamaURLEncoding.h */,
 				E9740FE52086EEA80018E1A6 /* UIImage+GamaBundleImage.h */,
@@ -312,7 +307,6 @@
 		E9740FE62086EEA80018E1A6 /* GamaThirdPlatform_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				E9740FE72086EEA80018E1A6 /* GamaSDK_ThirdPlatform_20180815_150957.a */,
 				E9740FE82086EEA80018E1A6 /* include */,
 			);
 			path = GamaThirdPlatform_DotA;
@@ -329,8 +323,8 @@
 		E9740FE92086EEA80018E1A6 /* GamaThirdPlatform_DotA */ = {
 			isa = PBXGroup;
 			children = (
-				E9740FEA2086EEA80018E1A6 /* GamaThirdFunction.h */,
-				E9740FEB2086EEA80018E1A6 /* GamaThirdFunctionPort.h */,
+				0329E2E4284BBFAB0035B055 /* GamaThirdFunction.h */,
+				0329E2E5284BBFAB0035B055 /* GamaThirdFunctionPort.h */,
 			);
 			path = GamaThirdPlatform_DotA;
 			sourceTree = "<group>";
@@ -428,7 +422,6 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8825206F0C00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -456,11 +449,11 @@
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8825206F0C00E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../GamaSDK_iOS_Integration/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v7.1.1/",

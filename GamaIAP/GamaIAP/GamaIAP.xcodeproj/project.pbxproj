@@ -88,7 +88,6 @@
 		22B1A9D31FFB94CA00509C42 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		22B1A9D41FFB94CB00509C42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22B1A9D51FFB94CD00509C42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		32C19D8725206E6800E5417D /* xcode12-solution.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "xcode12-solution.xcconfig"; path = "../../GamaSDK_iOS_Integration/xcode12-solution.xcconfig"; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaIAP_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaIAP_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		35A67F8A1A07884E007D5176 /* GamaIAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaIAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +134,6 @@
 		E974111B208736980018E1A6 /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
 		E974111C208736980018E1A6 /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
 		E974111D208736980018E1A6 /* GamaURLConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaURLConnect.h; sourceTree = "<group>"; };
-		E974111E208736980018E1A6 /* GamaUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaUserInfoModel.h; sourceTree = "<group>"; };
 		E974111F208736980018E1A6 /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
 		E9741120208736980018E1A6 /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
 		E9741121208736980018E1A6 /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32C19D8725206E6800E5417D /* xcode12-solution.xcconfig */,
 				E974110F208736980018E1A6 /* GamaCoreFunc_DotA */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				E974112620873BED0018E1A6 /* GamaEncryptCoreInfo.plist */,
@@ -313,7 +310,6 @@
 				E974111B208736980018E1A6 /* GamaSecurity.h */,
 				E974111C208736980018E1A6 /* GamaSecurityFunction.h */,
 				E974111D208736980018E1A6 /* GamaURLConnect.h */,
-				E974111E208736980018E1A6 /* GamaUserInfoModel.h */,
 				E974111F208736980018E1A6 /* NSString+GamaSStringAddition.h */,
 				E9741120208736980018E1A6 /* NSString+GamaURLEncoding.h */,
 				E9741121208736980018E1A6 /* UIImage+GamaBundleImage.h */,
@@ -482,7 +478,6 @@
 /* Begin XCBuildConfiguration section */
 		350F19511A08ABD800C2FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8725206E6800E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -504,12 +499,12 @@
 		};
 		350F19521A08ABD800C2FF3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32C19D8725206E6800E5417D /* xcode12-solution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_MODULES_AUTOLINK = YES;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
