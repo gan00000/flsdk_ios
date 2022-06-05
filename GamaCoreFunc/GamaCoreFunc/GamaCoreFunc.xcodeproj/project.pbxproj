@@ -237,6 +237,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0333F521284CB60700F49CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35E17A9E1A01EF9900F984ED = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +252,7 @@
 				E9537EA42085D82500B08573 /* GamaCoreFunc */,
 				35E17AA81A01EF9900F984ED /* Products */,
 				843E98ED1B199A5D00650E03 /* Framework */,
+				0333F521284CB60700F49CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -749,7 +757,6 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -773,7 +780,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)) arm64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
