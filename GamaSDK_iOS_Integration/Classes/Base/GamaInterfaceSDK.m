@@ -6,7 +6,6 @@
 #import "GamaIapFunctionPort.h"
 #import "GamaNetEngine.h"
 #import "GamaCentreInfo.h"
-#import "GamaCDNConfig.h"
 #import "GamaCommonHeader.h"
 //#import "KRTwitterLogin.h"
 //#import "ProvisionsView.h"
