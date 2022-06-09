@@ -56,6 +56,7 @@ selector:(SEL)selector
 
 +(CGFloat)getViewHeight:(CGFloat)height;
 +(CGFloat)getViewWidth:(CGFloat)width;
++(CGFloat)getFontSize:(CGFloat)size;
 
 @end
 

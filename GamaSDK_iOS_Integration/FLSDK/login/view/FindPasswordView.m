@@ -34,12 +34,12 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
+//        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+//        self.backgroundColor = color;// 底图透明，控件不透明
+//        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
 //        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+//        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
          //title
           mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼"];
@@ -47,10 +47,10 @@
           
           [self addSubview:mLoginTitleView];
          [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
-             make.centerX.mas_equalTo(self);
-             make.width.mas_equalTo(self).mas_offset(-VW(55));
-             make.height.mas_equalTo(VH(56));
+             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+            
+             make.width.mas_equalTo(self);
+             make.height.mas_equalTo(VH(40));
          }];
             
           

@@ -65,13 +65,13 @@
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor blackColor] forState:0];
+    [btn setTitleColor:[UIColor whiteColor] forState:0];
     [btn setTag:tag];
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [btn.layer setBorderWidth:1.5f];
-    [btn.layer setBorderColor:[UIColor grayColor].CGColor];
-    [btn.layer setMasksToBounds:YES];
-    [btn.layer setCornerRadius:5.0f];
+//    [btn.layer setBorderWidth:1.5f];
+//    [btn.layer setBorderColor:[UIColor grayColor].CGColor];
+//    [btn.layer setMasksToBounds:YES];
+//    [btn.layer setCornerRadius:5.0f];
     
     return btn;
 }
@@ -104,9 +104,9 @@
     [btn setTitle:titleText forState:UIControlStateNormal];
     [btn setTitle:titleText forState:UIControlStateSelected];
     
-    btn.titleLabel.font = [UIFont systemFontOfSize:VH(24)];
+    btn.titleLabel.font = [UIFont systemFontOfSize:FS(24)];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [btn setTitleColor:[UIColor colorWithHexString:@"ff3a3b"] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 //    [btn setImage:nil forState:UIControlStateNormal];
 //    [btn setImage:nil forState:UIControlStateSelected];
@@ -171,7 +171,7 @@
 +(NSInteger)getSdkPageWidth
 {
     if (IS_IPHONE) {
-        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+        if (Device_Is_Landscape) {//横屏
             return kBgHeight * (608.0 / 582.0);
         }
         
@@ -220,8 +220,12 @@
 //h = 582 w = 608
 +(CGFloat)getViewHeight:(CGFloat)height
 {
-    CGFloat scale = [[UIScreen mainScreen] scale];
-    return kBgHeight * (height / 582);
+    
+//    return SCREEN_HEIGHT / 667 * height;
+    return SCREEN_WIDTH / 375 * height;
+    
+//    CGFloat scale = [[UIScreen mainScreen] scale];
+//    return kBgHeight * (height / 582);
     
 //
 //    if (device_is_iPhoneX) {
@@ -248,7 +252,13 @@
 
 +(CGFloat)getViewWidth:(CGFloat)width
 {
-    return kBgWidth * (width / 608);
+    NSLog(@"SCREEN_WIDTH:%f,SCREEN_HEIGHT:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
+    return SCREEN_WIDTH / 375 * width;
+   // return kBgWidth * (width / 608);
+}
+
++(CGFloat)getFontSize:(CGFloat)size{
+    return SCREEN_WIDTH / 375 * size;
 }
 
 @end

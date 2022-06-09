@@ -61,6 +61,7 @@
 
 #define VH(h)  [UIUtil getViewHeight:h]
 #define VW(w)  [UIUtil getViewWidth:w]
+#define FS(size)  [UIUtil getFontSize:size]
 
 
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
@@ -103,6 +104,7 @@ typedef void (^ItemViewClickHander)(NSInteger);
 #define guestLoginActTag    2002
 #define accountLoginActTag    2003
 #define appleLoginActTag    2004
+#define lineLoginActTag    2005
 
 typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);
 

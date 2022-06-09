@@ -28,29 +28,30 @@
         UIButton *iconBtn = [UIUtil initBtnWithNormalImage:image highlightedImage:image tag:type selector:selector target:target];
         [self addSubview:iconBtn];
         [iconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self);
-            make.width.mas_equalTo(VH(57));
-            make.height.mas_equalTo(VH(57));
-            make.centerX.mas_equalTo(self);
+//            make.top.mas_equalTo(self);
+//            make.width.mas_equalTo(VH(57));
+//            make.height.mas_equalTo(VH(57));
+//            make.centerX.mas_equalTo(self);
+            make.edges.mas_equalTo(self);
         }];
         
-        UILabel *titleLabel = [[UILabel alloc] init];
-        titleLabel.text = title;
-        titleLabel.font = [UIFont systemFontOfSize:18];
-//        titleLabel.textAlignment = NSTextAlignmentCenter;
-        titleLabel.backgroundColor = [UIColor clearColor];
-        titleLabel.numberOfLines = 1;
-        titleLabel.textColor = [UIColor colorWithHexString:@"#545454"];
-        titleLabel.adjustsFontSizeToFitWidth = YES;
-        
-        [self addSubview:titleLabel];
-        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.mas_equalTo(iconBtn.mas_bottom);
-            make.height.mas_greaterThanOrEqualTo(VH(24));
-            make.width.mas_equalTo(VW(70));
-           
-        }];
+//        UILabel *titleLabel = [[UILabel alloc] init];
+//        titleLabel.text = title;
+//        titleLabel.font = [UIFont systemFontOfSize:18];
+////        titleLabel.textAlignment = NSTextAlignmentCenter;
+//        titleLabel.backgroundColor = [UIColor clearColor];
+//        titleLabel.numberOfLines = 1;
+//        titleLabel.textColor = [UIColor colorWithHexString:@"#545454"];
+//        titleLabel.adjustsFontSizeToFitWidth = YES;
+//
+//        [self addSubview:titleLabel];
+//        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.centerX.mas_equalTo(self);
+//            make.top.mas_equalTo(iconBtn.mas_bottom);
+//            make.height.mas_greaterThanOrEqualTo(VH(24));
+//            make.width.mas_equalTo(VW(70));
+//
+//        }];
         
     }
     return self;

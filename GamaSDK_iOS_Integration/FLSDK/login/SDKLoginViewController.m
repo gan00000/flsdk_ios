@@ -59,7 +59,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(@"viewDidLoad");
-    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.8];//[UIColor clearColor];
     
    // [self registNotification];
     switch (sdkPageType) {
@@ -176,13 +176,13 @@
 {
     if (!sdkContentView) {
         sdkContentView = [[UIView alloc]init];
-        sdkContentView.backgroundColor = [UIColor clearColor];
+//        sdkContentView.backgroundColor = [UIColor redColor];
         [self.view addSubview:sdkContentView];
         [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(@(0));
             make.centerY.equalTo(@(0));
-            make.width.equalTo(@(kBgWidth));
-            make.height.equalTo(@(kBgHeight));
+            make.width.equalTo(@(VW(375)));
+            make.height.equalTo(@(VH(667 + 30)));
         }];
     }
     return sdkContentView;

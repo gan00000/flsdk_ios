@@ -37,7 +37,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 {
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *accountSDKTextFiledView;
-    UIButton *checkBoxBtn;
+//    UIButton *checkBoxBtn;
     UIButton *accountLoginBtn;
     UIButton *backBtn;
     UITableView *accountListTableView;
@@ -66,10 +66,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-        self.layer.masksToBounds = YES;
+//        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+//        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
+//        self.layer.cornerRadius = 10; //设置圆角
+//        self.layer.masksToBounds = YES;
         
         /**
         //登入頁logo
@@ -103,10 +103,11 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
+           // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.width.mas_equalTo(self).offset(-VW(59));
-            make.height.mas_equalTo(VH(56));
+            make.leading.mas_equalTo(self).mas_offset(VW(42));
+            make.trailing.mas_equalTo(self).mas_offset(-VW(40));
+            make.height.mas_equalTo(VH(40));
         }];
         
         
@@ -116,72 +117,49 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(10));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
         }];
         
         
-        //記住密碼
-        UILabel *rememberLable = [[UILabel alloc] init];
-        rememberLable.text =  @"記住密碼";
-        rememberLable.font = [UIFont systemFontOfSize:12];
-        rememberLable.textAlignment = NSTextAlignmentLeft;
-        rememberLable.backgroundColor = [UIColor clearColor];
-        rememberLable.numberOfLines = 1;
-        rememberLable.textColor = [UIColor blackColor];
-        
-        [self addSubview:rememberLable];
-        [rememberLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(60);
-            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(10);
-            make.trailing.mas_equalTo(self.mas_centerX).mas_offset(-40);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-        }];
-        
-        
-        checkBoxBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        [self addSubview:checkBoxBtn];
-        [checkBoxBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(rememberLable.mas_leading).mas_offset(-4);
-            make.centerY.mas_equalTo(rememberLable);
-            make.width.mas_equalTo(20);
-            make.height.mas_equalTo(20);
-        }];
-        
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitle2:@"找回密碼" tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
-        findPasswordBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-        [findPasswordBtn setTitleColor:[UIColor colorWithHexString:@"ff3e37"] forState:0];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitle2:@"忘記密碼?" tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        findPasswordBtn.titleLabel.font = [UIFont systemFontOfSize:FS(12)];
+        [findPasswordBtn setTitleColor:[UIColor colorWithHexString:@"#C0C0C0"] forState:0];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).mas_offset(-VW(20));
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-            make.width.mas_equalTo(VW(140));
+            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(7));
+//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+//            make.width.mas_equalTo(VW(140));
         }];
         
-        rememberLable.hidden = YES;//新需求不要
-        checkBoxBtn.hidden = YES;//新需求不要
-        
+       
         //账号登入
-        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
+//        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
+        
+        accountLoginBtn = [UIUtil initBtnWithTitle:@"登入" tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        
+        [accountLoginBtn setTitleColor:[UIColor whiteColor] forState:0];
+        [accountLoginBtn.layer setCornerRadius:VH(20)];
+        accountLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(14));
+            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(30));
             make.width.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(VH(64));
+            make.height.mas_equalTo(VH(40));
         }];
         
         
         
-        //
+    /**
         NSString *xtext = @"我已閱讀並同意定型化契約";
         UILabel *rememberTermsLable = [[UILabel alloc] init];
 //        rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
@@ -229,119 +207,104 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         }else{
             [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
         }
+     */
+//        NSUInteger w = VW(90 * 4) + VW(48 * 3);
+//        if (@available(iOS 13.0, *)) {
+//            w = VW(90 * 4) + VW(48 * 3);
+//        }else{
+//            w = VW(90 * 3) + VW(48 * 2);
+//        }
         
-        NSUInteger w = VW(90 * 4) + VW(48 * 3);
-        if (@available(iOS 13.0, *)) {
-            w = VW(90 * 4) + VW(48 * 3);
-        }else{
-            w = VW(90 * 3) + VW(48 * 2);
-        }
+        CGFloat btn_w = VW(28);
+        CGFloat btn_h = btn_w;
+        CGFloat margin_leading = VW(24);
         
         UIView *loginTypeView = [[UIView alloc] init];
         [self addSubview:loginTypeView];
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(w);
-            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(rememberTermsLable.mas_bottom).mas_offset(VH(30));
-            make.centerX.mas_equalTo(self);
+            make.leading.mas_equalTo(accountSDKTextFiledView);
+//            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
+            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
+//            make.centerX.mas_equalTo(self);
+            make.height.mas_equalTo(btn_h);
         }];
         
-        LoginTypeButton *guestBtn = [[LoginTypeButton alloc] initWithType:guestLoginActTag title:@"遊客登入" image:@"icon_guest" selector:@selector(registerViewBtnAction:) target:self];
+        UILabel *otherLabelTips = [[UILabel alloc] init];
+        otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
+        otherLabelTips.text = @"其他登入";
+        otherLabelTips.numberOfLines = 1; //0为多行
+        otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        
+        [loginTypeView addSubview:otherLabelTips];
+        [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(loginTypeView.mas_leading);
+            make.centerY.mas_equalTo(loginTypeView);
+           
+        }];
+        
+        UIView *leadingView = otherLabelTips;
+       
+        LoginTypeButton *guestBtn = [[LoginTypeButton alloc] initWithType:guestLoginActTag title:@"遊客登入" image:@"mw_guest_icon" selector:@selector(registerViewBtnAction:) target:self];
         [loginTypeView addSubview:guestBtn];
         [guestBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(VW(90));
-            make.bottom.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(loginTypeView);
+            make.width.mas_equalTo(btn_w);
+            make.height.mas_equalTo(btn_h);
+            make.top.mas_equalTo(loginTypeView);
+            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
         }];
-        
-        
-        LoginTypeButton *accountBindBtn = [[LoginTypeButton alloc] initWithType:kBindAccountActTag title:@"帳號綁定" image:@"icon_account" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:accountBindBtn];
-        [accountBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.mas_equalTo(guestBtn);
-            make.top.mas_equalTo(guestBtn);
-            make.leading.mas_equalTo(guestBtn.mas_trailing).mas_offset(VW(48));
-        }];
-        
-//        LoginTypeButton *appleBtn = [[LoginTypeButton alloc] initWithType:3 title:@"" image:@"icon_guest" selector:@selector(registerViewBtnAction:) target:self];
-//        [loginTypeView addSubview:appleBtn];
-//        [appleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.width.height.mas_equalTo(guestBtn);
-//            make.top.mas_equalTo(guestBtn);
-//            make.leading.mas_equalTo(accountBindBtn.mas_trailing).mas_offset(VW(48));
-//        }];
-        
+        leadingView = guestBtn;
         
         if (@available(iOS 13.0, *)) {
             ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                       authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
             [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
             appleLoginBtn.tag = appleLoginActTag;
-            appleLoginBtn.cornerRadius = VH(57) / 2;
+            appleLoginBtn.cornerRadius = btn_w / 2;
             [loginTypeView addSubview:appleLoginBtn];
             
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.height.mas_equalTo(VH(57));
-                make.top.mas_equalTo(guestBtn);
-                make.leading.mas_equalTo(accountBindBtn.mas_trailing).mas_offset(VW((90 - 57) / 2 + 48));
+                make.width.mas_equalTo(btn_w);
+                make.height.mas_equalTo(btn_h);
+                make.top.mas_equalTo(loginTypeView);
+                make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
             }];
             
-            LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"icon_fb" selector:@selector(registerViewBtnAction:) target:self];
-            [loginTypeView addSubview:fbBtn];
-            [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.height.mas_equalTo(guestBtn);
-                make.top.mas_equalTo(guestBtn);
-                make.leading.mas_equalTo(appleLoginBtn.mas_trailing).mas_offset(VW((90 - 57) / 2 + 48));
-            }];
+            leadingView = appleLoginBtn;
             
-        } else {
-            LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"icon_fb" selector:@selector(registerViewBtnAction:) target:self];
-            [loginTypeView addSubview:fbBtn];
-            [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.height.mas_equalTo(guestBtn);
-                make.top.mas_equalTo(guestBtn);
-                make.leading.mas_equalTo(accountBindBtn.mas_trailing).mas_offset(VW(48));
-            }];
         }
         
+        LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"mw_fb_icon" selector:@selector(registerViewBtnAction:) target:self];
+        [loginTypeView addSubview:fbBtn];
+        [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(btn_w);
+            make.height.mas_equalTo(btn_h);
+            make.top.mas_equalTo(loginTypeView);
+            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+        }];
+        leadingView = fbBtn;
+        
+        LoginTypeButton *googleBtn = [[LoginTypeButton alloc] initWithType:googleLoginActTag title:@"" image:@"mw_gp_icon" selector:@selector(registerViewBtnAction:) target:self];
+        [loginTypeView addSubview:googleBtn];
+        [googleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(btn_w);
+            make.height.mas_equalTo(btn_h);
+            make.top.mas_equalTo(loginTypeView);
+            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+        }];
+        leadingView = googleBtn;
         
         
-        //修改密碼
-//        UIButton *changePasswordBtn = [UIUtil initBtnWithTitle2:@"修改密碼" tag:kChangePwdActTag selector:@selector(registerViewBtnAction:) target:self];
-//        [self addSubview:changePasswordBtn];
-//        [changePasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.mas_equalTo(self.mas_centerX);
-//            make.width.mas_equalTo(90);
-//            make.top.equalTo(rememberTermsLable.mas_bottom).mas_offset(10);
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height).multipliedBy(0.7);
-//        }];
-//
-        //註冊帳號
-//        UIButton *registerBtn = [UIUtil initBtnWithTitle2:@"註冊帳號" tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-//        [self addSubview:registerBtn];
-//        [registerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.trailing.mas_equalTo(changePasswordBtn.mas_leading).mas_offset(-10);
-//            make.width.mas_equalTo(changePasswordBtn);
-//            make.centerY.equalTo(changePasswordBtn);
-//            make.height.mas_equalTo(changePasswordBtn);
-//        }];
+        LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
+        [loginTypeView addSubview:lineBtn];
+        [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(btn_w);
+            make.height.mas_equalTo(btn_h);
+            make.top.mas_equalTo(loginTypeView);
+            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+        }];
+        leadingView = lineBtn;
         
-        
-        //綁定帳號
-//        UIButton *bindAccountBtn = [UIUtil initBtnWithTitle2:@"綁定帳號" tag:kBindAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-//        [self addSubview:bindAccountBtn];
-//        [bindAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.leading.mas_equalTo(changePasswordBtn.mas_trailing).mas_offset(10);
-//            make.width.mas_equalTo(changePasswordBtn);
-//            make.centerY.equalTo(changePasswordBtn);
-//            make.height.mas_equalTo(changePasswordBtn);
-//        }];
-        
-        //test saveAccount
-//        [[ConfigCoreUtil share] saveAccount:@"dddd" password:@"xxx" updateTime:YES];
-//        [[ConfigCoreUtil share] saveAccount:@"XXX" password:@"xxx" updateTime:YES];
-//        [[ConfigCoreUtil share] saveAccount:@"ddDDDDdd" password:@"xxx" updateTime:YES];
-        
+     
         [ConfigCoreUtil share].isSaveAccountInfo = YES;
         isSaveAccountInfo = YES;
         accountDataList = [NSMutableArray array];//账号列表数据
@@ -352,11 +315,11 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
         }
         if (mAccountArray.count > 1) {
-            accountSDKTextFiledView.moreAccountBtn.hidden = NO;
+//            accountSDKTextFiledView.moreAccountBtn.hidden = NO;
             [accountDataList addObjectsFromArray:mAccountArray];
             
         }else{
-            accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+//            accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         }
         
         //添加账号显示列表
@@ -473,14 +436,14 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     switch (sender.tag) {
         case kCheckBoxBtnTag:
             SDK_LOG(@"kCheckBoxBtnTag");
-            isSaveAccountInfo = !isSaveAccountInfo;
-            [ConfigCoreUtil share].isSaveAccountInfo = isSaveAccountInfo;
-            if (isSaveAccountInfo) {
-                //checkBoxBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
-                [checkBoxBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:UIControlStateNormal];
-            }else{
-                [checkBoxBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:UIControlStateNormal];
-            }
+//            isSaveAccountInfo = !isSaveAccountInfo;
+//            [ConfigCoreUtil share].isSaveAccountInfo = isSaveAccountInfo;
+//            if (isSaveAccountInfo) {
+//                //checkBoxBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+//                [checkBoxBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:UIControlStateNormal];
+//            }else{
+//                [checkBoxBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:UIControlStateNormal];
+//            }
             break;
             
         case kFindPwdActTag:
@@ -708,7 +671,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             [[ConfigCoreUtil share] saveAccountModels:accountDataList];//保存
             if (accountDataList.count == 0) { //删除到位0的时候隐藏tableview和moreAccountBtn
                 [weakSelf setTableViewHiden:YES];
-                accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+//                accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             }
         }
     };

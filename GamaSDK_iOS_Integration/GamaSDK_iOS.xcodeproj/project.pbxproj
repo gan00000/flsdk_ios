@@ -56,6 +56,8 @@
 		034B7B74284CF1BE009FD2DF /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5D284CF1BE009FD2DF /* FIRAnalyticsConnector.framework */; };
 		034B7B75284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
 		034B7B76284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
+		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; };
+		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; };
 		2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		22AA03211F308AB4001C8B51 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AA03201F308AB4001C8B51 /* GameKit.framework */; };
 		242CE86B1CFEF1C700E3C747 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */; };
@@ -269,6 +271,10 @@
 		034B7B5C284CF1BE009FD2DF /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleDataTransport.xcframework; sourceTree = "<group>"; };
 		034B7B5D284CF1BE009FD2DF /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
+		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
+		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
+		03EA360A2850989900723340 /* MainHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeView.h; sourceTree = "<group>"; };
 		22AA03201F308AB4001C8B51 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		22DF6AB11EAD9A4C0003610E /* libFLSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFLSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
@@ -972,6 +978,10 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				03EA360A2850989900723340 /* MainHomeView.h */,
+				03EA36092850989900723340 /* MainHomeView.m */,
+				03EA36072850986F00723340 /* BindAccountView.h */,
+				03EA36062850986F00723340 /* BindAccountView.m */,
 				322CBC2824C589A5000D6B20 /* AccountLoginView.h */,
 				322CBC3624C589A5000D6B20 /* AccountLoginView.m */,
 				322CBC3024C589A5000D6B20 /* ChangePasswordView.h */,
@@ -1676,7 +1686,9 @@
 				32506C8124F920F900010D7B /* MASCompositeConstraint.m in Sources */,
 				3295E2EA24DAEDDE00B85976 /* UIColor+HexStringToColorTW.m in Sources */,
 				3295E2EB24DAEDDE00B85976 /* UIUtil.m in Sources */,
+				03EA36082850986F00723340 /* BindAccountView.m in Sources */,
 				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
+				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
 				3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */,
 				3295E2EE24DAEDDE00B85976 /* AFURLResponseSerialization.m in Sources */,
 				3295E2EF24DAEDDE00B85976 /* AFHTTPSessionManager.m in Sources */,
@@ -1997,7 +2009,7 @@
 				);
 				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

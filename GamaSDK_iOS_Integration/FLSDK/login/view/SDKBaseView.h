@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewDelegate.h"
 
+#define MARGIN_TOP 180
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKBaseView : UIView
