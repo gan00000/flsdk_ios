@@ -6,7 +6,7 @@
 //  Copyright © 2020 ganyuanrong. All rights reserved.
 //
 
-#import "AccountLoginView.h"
+#import "WelcomeBackView.h"
 #import "SDKTextFiledView.h"
 #import "SdkHeader.h"
 #import "LoginTitleView.h"
@@ -26,22 +26,20 @@
 
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
-@interface AccountLoginView() <UITableViewDelegate, UITableViewDataSource>
+@interface WelcomeBackView() <UITableViewDelegate, UITableViewDataSource>
     
 
 
 @end
 
 //会员登入view
-@implementation AccountLoginView
+@implementation WelcomeBackView
 {
-    SDKTextFiledView *passwordSDKTextFiledView;
+//    SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *accountSDKTextFiledView;
-//    UIButton *checkBoxBtn;
+
     UIButton *accountLoginBtn;
-    UIButton *backBtn;
-    UITableView *accountListTableView;
-    
+  
     NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
     
     BOOL isSaveAccountInfo;
@@ -49,6 +47,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     UIButton *checkBoxTermsBtn;
     
     GamaAppleLogin *gamaAppleLogin;
+    
+    LoginTitleView *mLoginTitleView;
     
     BOOL isAgree;
 }
@@ -65,37 +65,21 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 {
     self = [super init];
     if (self) {
-        
-//        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-//        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-//        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.masksToBounds = YES;
-        
-        /**
-        //登入頁logo
-        UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_logo"]];
-        logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:logoImageView];
-        [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(12);
-            make.centerX.mas_equalTo(self);
-            make.width.mas_equalTo(self).mas_offset(-30);
-            make.height.mas_equalTo(kPageTitleHeight * 1.2);
+    
+        //title
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼" hander:^(NSInteger) {
+            
+            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
         }];
-        logoImageView.hidden = YES;
+        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
-        backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
-        backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:backBtn];
-        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(self).mas_offset(20);
-            make.width.mas_equalTo(kInputTextFiledHeight * 0.6);
-            make.top.equalTo(self).mas_offset(20);
-            make.height.mas_equalTo(kInputTextFiledHeight * 0.6);
+        [self addSubview:mLoginTitleView];
+        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+            
+            make.width.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
         }];
-        backBtn.hidden = YES
-         
-         */
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
@@ -104,7 +88,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
            // make.centerX.mas_equalTo(self);
-            make.top.equalTo(self);
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));;
             make.leading.mas_equalTo(self).mas_offset(VW(42));
             make.trailing.mas_equalTo(self).mas_offset(-VW(40));
             make.height.mas_equalTo(VH(40));
@@ -112,16 +96,16 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         
         //密码
-        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-        [self addSubview:passwordSDKTextFiledView];
-        
-        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-        }];
+//        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+//        [self addSubview:passwordSDKTextFiledView];
+//
+//        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
+//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+//        }];
         
         
         //找回密碼

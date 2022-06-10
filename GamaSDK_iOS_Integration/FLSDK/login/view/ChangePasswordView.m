@@ -36,8 +36,12 @@
         self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"修改密碼"];
-        mLoginTitleView.delegate = self.delegate;//此处不起作用
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"修改密碼" hander:^(NSInteger) {
+            
+            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_CHANGE_PWD)];
+            
+        }];
+//        mLoginTitleView.delegate = self.delegate;//此处不起作用
         
         [self addSubview:mLoginTitleView];
        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -104,7 +108,7 @@
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
+//    mLoginTitleView.delegate = self.delegate;
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     oldPasswordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     newPasswordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;

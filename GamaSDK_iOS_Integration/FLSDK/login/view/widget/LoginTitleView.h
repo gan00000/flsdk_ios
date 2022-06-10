@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) UILabel *titleLable;
 
-- (instancetype)initViewWithTitle:(NSString *)title;
+- (instancetype)initViewWithTitle:(NSString *)title hander:(ItemViewClickHander) hander;
 
 @end
 

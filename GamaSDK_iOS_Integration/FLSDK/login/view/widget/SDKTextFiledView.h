@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UITextField *inputUITextField;
 @property (nonatomic) UIButton *moreAccountBtn;
 
+@property (nonatomic) UIImageView *lableIconImageView;
+
 @end
 
 NS_ASSUME_NONNULL_END

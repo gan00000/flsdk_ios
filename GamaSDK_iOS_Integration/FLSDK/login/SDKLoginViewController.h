@@ -13,13 +13,6 @@
 #import "LoginViewDelegate.h"
 #import "FLSDK.h"
 
-typedef NS_OPTIONS(NSUInteger, SDKPage)
-{
-    SDKPage_Login,
-    SDKPage_LoginType,
-    SDKPage_UnBind,
-};
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKLoginViewController : UIViewController <LoginViewDelegate,UITextFieldDelegate>

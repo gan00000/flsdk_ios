@@ -293,6 +293,12 @@
     mSDKBaseView.delegate = self;
     mSDKBaseView.theViewUIViewController = self;
     mSDKBaseView.mUITextFieldDelegate = self;
+    
+    //移除所有子视图
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
+    
     [[self sdkContentView] addSubview:mSDKBaseView];
 
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -372,13 +378,28 @@
     }
 }
 
-- (void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count{
-    if (count == 1) {
-        [[backView superview] removeFromSuperview];
-    }else if (count == 2){
-        [[[backView superview] superview] removeFromSuperview];
+- (void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count sdkPage:(CURRENT_PAGE_TYPE) page{
+    
+    switch (page) {
+        case CURRENT_PAGE_TYPE_FIND_PWD:
+            if (mMainLoginView) {
+                mMainLoginView.hidden = NO;
+            }
+            break;
+            
+        default:
+            break;
     }
     
+    if (backView) {
+        [backView removeFromSuperview];
+    }
+//    if (count == 1) {
+//        [[backView superview] removeFromSuperview];
+//    }else if (count == 2){
+//        [[[backView superview] superview] removeFromSuperview];
+//    }
+//
 }
 
 - (void)logout

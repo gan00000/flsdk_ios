@@ -32,8 +32,8 @@
 - (void) addContentView:(SDKTextFiledView_Type) type
 {
     
-//    self.backgroundColor = [UIColor whiteColor];
-//    self.layer.cornerRadius = 4;
+    //    self.backgroundColor = [UIColor whiteColor];
+    //    self.layer.cornerRadius = 4;
     
     NSString *iconName;
     NSString *lableName;
@@ -41,6 +41,7 @@
     BOOL addMoreAccountBtn = NO;
     UIKeyboardType mUIKeyboardType = UIKeyboardTypeDefault;
     NSString *placeholderText = @"";
+    BOOL showLableIcon = YES;
     
     switch (type) {
         case SDKTextFiledView_Type_VfCode:
@@ -48,12 +49,13 @@
             lableName = @"驗證碼";
             mUIKeyboardType = UIKeyboardTypeNumberPad;
             placeholderText = @"請輸入驗證碼";
+            showLableIcon = NO;
             break;
             
         case SDKTextFiledView_Type_Account:
             iconName = @"mw_account_icon.png";
             lableName = @"帳號";
-            placeholderText = @"6~18字元,僅限字母或數字";
+            placeholderText = @"請輸入您的常用信箱";
             addMoreAccountBtn = YES;
             break;
             
@@ -61,28 +63,28 @@
             
             iconName = @"mw_passowrd_icon.png";
             lableName = @"密碼";
-            placeholderText = @"8-16字元，英文與數字混合";
+            placeholderText = @"請輸入6-20字元";
             showEye = YES;
             break;
             
-            case SDKTextFiledView_Type_Password_Again:
+        case SDKTextFiledView_Type_Password_Again:
             
             iconName = @"mw_passowrd_icon.png";
             lableName = @"密碼";
-            placeholderText = @"請再次輸入密碼";
+            placeholderText = @"確認新密碼";
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"新密碼";
-            placeholderText = SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            lableName = @"請輸入新密碼";
+            placeholderText = @"請輸入新密碼";//SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"舊密碼";
-            placeholderText = SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            lableName = @"輸入舊密碼";
+            placeholderText = @"輸入舊密碼";//SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
             showEye = YES;
             break;
             
@@ -90,43 +92,44 @@
             break;
     }
     
-    UIImageView *lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:iconName]];
-    lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:lableIconImageView];
-    [lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:iconName]];
+    self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:self.lableIconImageView];
+    [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading);
         make.centerY.mas_equalTo(self);
         make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
-        make.width.mas_equalTo(lableIconImageView.mas_height);
+        make.width.mas_equalTo(self.lableIconImageView.mas_height);
     }];
     
-//    UILabel *tipsUILabel = [[UILabel alloc] init];
-//    if (device_is_iPhoneX) {
-//        tipsUILabel.font = [UIFont systemFontOfSize:16];
-//    }else{
-//        tipsUILabel.font = [UIFont systemFontOfSize:14];
-//    }
-//    tipsUILabel.font = [UIFont systemFontOfSize:14];
-//
-//    tipsUILabel.text = lableName;
-//    tipsUILabel.textAlignment = NSTextAlignmentLeft;
-//    tipsUILabel.backgroundColor = [UIColor clearColor];
-//    tipsUILabel.numberOfLines = 1; //0为多行
-//    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-//
-//    [self addSubview:tipsUILabel];
-//    [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(4);
-//        make.top.mas_equalTo(self).offset(2);
-//        make.bottom.mas_equalTo(self).offset(-2);
-//        if (lableName.length > 2) {
-//            make.width.mas_equalTo(60);
-//        }else{
-//            make.width.mas_equalTo(40);
-//        }
-//
-//
-//    }];
+    
+    //    UILabel *tipsUILabel = [[UILabel alloc] init];
+    //    if (device_is_iPhoneX) {
+    //        tipsUILabel.font = [UIFont systemFontOfSize:16];
+    //    }else{
+    //        tipsUILabel.font = [UIFont systemFontOfSize:14];
+    //    }
+    //    tipsUILabel.font = [UIFont systemFontOfSize:14];
+    //
+    //    tipsUILabel.text = lableName;
+    //    tipsUILabel.textAlignment = NSTextAlignmentLeft;
+    //    tipsUILabel.backgroundColor = [UIColor clearColor];
+    //    tipsUILabel.numberOfLines = 1; //0为多行
+    //    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
+    //
+    //    [self addSubview:tipsUILabel];
+    //    [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    //        make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(4);
+    //        make.top.mas_equalTo(self).offset(2);
+    //        make.bottom.mas_equalTo(self).offset(-2);
+    //        if (lableName.length > 2) {
+    //            make.width.mas_equalTo(60);
+    //        }else{
+    //            make.width.mas_equalTo(40);
+    //        }
+    //
+    //
+    //    }];
     
     
     UIView *lineView1 = [[UIView alloc] init];
@@ -135,11 +138,11 @@
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.width.mas_equalTo(0.5);
-        make.leading.mas_equalTo(lableIconImageView.mas_trailing).mas_offset(VW(8));
+        make.leading.mas_equalTo(self.lableIconImageView.mas_trailing).mas_offset(VW(8));
         make.centerY.mas_equalTo(self);
         
         make.height.mas_equalTo(VH(14));
-
+        
     }];
     
     
@@ -159,13 +162,13 @@
     mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小
     
     // 设置placeholder文字大小和居中显示
-//    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
-//    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
+    //    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
+    //    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
     
     int placeHolderTextSize = FS(14);
-//    if (Device_Is_Landscape || device_is_iPhoneX) {
-//        placeHolderTextSize = 10;
-//    }
+    //    if (Device_Is_Landscape || device_is_iPhoneX) {
+    //        placeHolderTextSize = 10;
+    //    }
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
     mUITextField.attributedPlaceholder = attrStr;
@@ -183,7 +186,7 @@
     if (addMoreAccountBtn) {
         
         self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
-//        self.moreAccountBtn.hidden = YES;
+        //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
         [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -215,11 +218,11 @@
             
             make.height.mas_equalTo(self.mas_height);
             make.width.mas_equalTo(VW(17));
-//            if (device_is_iPhoneX) {
-//                make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-//            }else{
-//                make.width.mas_equalTo(self.mas_height).multipliedBy(0.45);
-//            }
+            //            if (device_is_iPhoneX) {
+            //                make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
+            //            }else{
+            //                make.width.mas_equalTo(self.mas_height).multipliedBy(0.45);
+            //            }
         }];
     }
     
@@ -234,8 +237,14 @@
         make.bottom.mas_equalTo(self);
         
         make.height.mas_equalTo(1);
-
+        
     }];
+    
+    if (!showLableIcon) {
+        self.lableIconImageView.hidden = YES;
+        lineView1.hidden = YES;
+        lineView2.hidden = YES;
+    }
     
 }
 

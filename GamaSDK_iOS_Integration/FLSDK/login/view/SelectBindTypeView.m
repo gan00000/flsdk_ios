@@ -32,8 +32,10 @@
         self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"綁定會員帳號"];
-        mLoginTitleView.delegate = self.delegate;//此处不起作用
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"綁定會員帳號" hander:^(NSInteger) {
+            
+        }];
+//        mLoginTitleView.delegate = self.delegate;//此处不起作用
         
         [self addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {

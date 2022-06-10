@@ -199,7 +199,9 @@
     int offset = 10;
     
     //title
-    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"網路連線遊戲服務定型化契約"];
+    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"網路連線遊戲服務定型化契約" hander:^(NSInteger) {
+        
+    }];
     mLoginTitleView.titleLable.font = [UIFont systemFontOfSize:VH(30)];
     
      [self addSubview:mLoginTitleView];

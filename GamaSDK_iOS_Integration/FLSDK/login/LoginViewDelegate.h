@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "SdkHeader.h"
 
+typedef NS_OPTIONS(NSUInteger, SDKPage)
+{
+    SDKPage_Login,
+    SDKPage_LoginType,
+    SDKPage_UnBind,
+    SDKPage_Find_Pwd
+};
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol LoginViewDelegate <NSObject>
@@ -16,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)goPageView:(CURRENT_PAGE_TYPE) pageType;
 -(void)goPageView:(CURRENT_PAGE_TYPE) pageType param:(NSInteger) p;
 
--(void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count;
+-(void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count sdkPage:(CURRENT_PAGE_TYPE) page;
 
 -(void)logout;
 -(void)loginSuccess;
