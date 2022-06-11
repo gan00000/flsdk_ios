@@ -7,6 +7,10 @@
 //
 
 #import "MainHomeView.h"
+#import "UIUtil.H"
+#import "LoginTypeButton.h"
+
+#import <AuthenticationServices/AuthenticationServices.h>
 
 @interface MainHomeView()
 
@@ -14,7 +18,7 @@
 
 @implementation MainHomeView
 {
-    UIButton *loginTabBtn;
+    UIButton *guestLoginBtn;
     UIButton *regTabBtn;
     
     NSUInteger currentClickTab;
@@ -41,73 +45,141 @@
 
 -(void)addView
 {
-    UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-    self.layer.cornerRadius = 10; //设置圆角
-    self.layer.masksToBounds = YES;
     
-    UIView *tabView = [[UIView alloc] init];
-    tabView.layer.cornerRadius = 4; //设置圆角
-    tabView.layer.borderColor = [UIColor colorWithHexString:@"ff3a3b"].CGColor;
-    tabView.layer.borderWidth = 0.8;
-    tabView.layer.masksToBounds = YES;
+    guestLoginBtn = [UIUtil initBtnWithTitleText:@"繼續遊戲" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    [guestLoginBtn.layer setCornerRadius:VH(25)];
+//    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+    [self addSubview:guestLoginBtn];
     
+    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+        make.leading.mas_equalTo(self).mas_offset(VH(38));
+        make.trailing.mas_equalTo(self).mas_offset(VH(-38));;
+        make.height.mas_equalTo(VH(50));
+    }];
+   
+    UIView *topView = guestLoginBtn;
     
-    [self addSubview:tabView];
-    [tabView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(self).mas_offset(20);
-//        make.trailing.mas_equalTo(self).mas_offset(-20);
+    if (@available(iOS 13.0, *)) {
+        ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
+                                    authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+        [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        appleLoginBtn.tag = appleLoginActTag;
+        appleLoginBtn.cornerRadius = VH(25);
+        [self addSubview:appleLoginBtn];
+        
+        [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.trailing.height.mas_equalTo(guestLoginBtn);
+            make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+        }];
+        
+        topView = appleLoginBtn;
+        
+    }
+    
+    UIView *hasAccountContent = [[UIView alloc] init];
+    [self addSubview:hasAccountContent];
+    [hasAccountContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
-        make.width.mas_equalTo(self).offset(-VW(59));
-        make.top.mas_equalTo(VH(29));
-        make.height.mas_equalTo(VH(56));
+        make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
+    }];
+    
+    UILabel *hasAccountLabel = [UIUtil initLabelWithText:@"已有帳號？ " fontSize:FS(12) textColor:[UIColor whiteColor]];
+    [hasAccountContent addSubview:hasAccountLabel];
+    [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.bottom.top.mas_equalTo(hasAccountContent);
+//        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+    }];
+    
+    UILabel *loginLabel = [UIUtil initLabelWithText:@"登入" fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#EB2E2B"]];
+    [hasAccountContent addSubview:loginLabel];
+    [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.trailing.bottom.top.mas_equalTo(hasAccountContent);
+        make.leading.mas_equalTo(hasAccountLabel.mas_trailing);
     }];
     
     
+    UILabel *otherLoginLabel = [UIUtil initLabelWithText:@"其他登入" fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+    [self addSubview:otherLoginLabel];
+    [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
+        make.centerX.mas_equalTo(self);
+    }];
     
-    loginTabBtn = [UIUtil initTabBtnWithTitle:@"會員登入"  tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
-    [tabView addSubview:loginTabBtn];
-    [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *lineView1 = [[UIView alloc] init];
+    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    [self addSubview:lineView1];
+    [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(tabView);
-        make.leading.bottom.mas_equalTo(tabView);
-        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
-    }];
-    
-    
-    regTabBtn = [UIUtil initTabBtnWithTitle:@"註冊帳號"  tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
-    [tabView addSubview:regTabBtn];
-    [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        //make.width.mas_equalTo(0.5);
+        make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
+        make.centerY.mas_equalTo(otherLoginLabel);
+        make.height.mas_equalTo(1);
+        make.width.mas_equalTo(VW(26));
         
-        make.top.mas_equalTo(tabView);
-        make.leading.mas_equalTo(loginTabBtn.mas_trailing);
-        make.trailing.bottom.mas_equalTo(tabView);
-
     }];
     
-    loginTabBtn.backgroundColor = [UIColor colorWithHexString:@"ff3a3b"];
-    regTabBtn.backgroundColor = [UIColor whiteColor];
-    
-    currentClickTab = 1;
-    [loginTabBtn setSelected:YES];
-    [regTabBtn setSelected:NO];
-    
-    self.mAccountLoginView = [[AccountLoginView alloc] initView];
-    [self addSubview:self.mAccountLoginView];
-    [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(tabView.mas_bottom).mas_offset(VH(27));
-
+    UIView *lineView2 = [[UIView alloc] init];
+    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    [self addSubview:lineView2];
+    [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        //make.width.mas_equalTo(0.5);
+        make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
+        make.centerY.mas_equalTo(otherLoginLabel);
+        make.height.mas_equalTo(1);
+        make.width.mas_equalTo(VW(26));
+        
     }];
     
-    self.mRegisterAccountView = [[RegisterAccountView alloc] initView];
-    [self addSubview:self.mRegisterAccountView];
-    [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(tabView.mas_bottom).mas_offset(VH(27));
+    
+    //登录方式
+    
+    UIView *loginTypeView = [[UIView alloc] init];
+    [self addSubview:loginTypeView];
+    [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self);
+        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
     }];
     
-    self.mRegisterAccountView.hidden = YES;
+    
+    CGFloat btn_w = VW(28);
+    CGFloat btn_h = btn_w;
+    CGFloat margin_leading = VW(27);
+    
+    LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"mw_fb_icon" selector:@selector(registerViewBtnAction:) target:self];
+    [loginTypeView addSubview:fbBtn];
+    [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(btn_w);
+        make.height.mas_equalTo(btn_h);
+        make.top.mas_equalTo(loginTypeView);
+        make.leading.bottom.mas_equalTo(loginTypeView);
+    }];
+   UIView *leadingView = fbBtn;
+    
+    LoginTypeButton *googleBtn = [[LoginTypeButton alloc] initWithType:googleLoginActTag title:@"" image:@"mw_gp_icon" selector:@selector(registerViewBtnAction:) target:self];
+    [loginTypeView addSubview:googleBtn];
+    [googleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(btn_w);
+        make.height.mas_equalTo(btn_h);
+        make.top.mas_equalTo(loginTypeView);
+        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+    }];
+    leadingView = googleBtn;
+    
+    
+    LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
+    [loginTypeView addSubview:lineBtn];
+    [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(btn_w);
+        make.height.mas_equalTo(btn_h);
+        make.top.mas_equalTo(loginTypeView);
+        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+        make.trailing.mas_equalTo(loginTypeView);
+    }];
+    leadingView = lineBtn;
 }
 
 - (void)drawRect:(CGRect)rect
@@ -132,7 +204,7 @@
             }
             currentClickTab = 1;
             
-            [self makeTabStatus:YES];
+//            [self makeTabStatus:YES];
             if (self.delegate) {
                 //[self.delegate goBackBtn:backBtn backCount:1];
             }
@@ -148,7 +220,7 @@
             currentClickTab = 2;
             
            // [self requestAccountLogin];
-            [self makeTabStatus:NO];
+//            [self makeTabStatus:NO];
             break;
             
             
@@ -158,29 +230,5 @@
     
 }
 
--(void) makeTabStatus:(BOOL) loginClick
-{
-    if (loginClick) {
-        loginTabBtn.backgroundColor = [UIColor colorWithHexString:@"ff3a3b"];
-        regTabBtn.backgroundColor = [UIColor whiteColor];
-        
-        [loginTabBtn setSelected:YES];
-        [regTabBtn setSelected:NO];
-        
-        self.mAccountLoginView.hidden = NO;
-        self.mRegisterAccountView.hidden = YES;
-        
-    }else{
-        
-        
-        loginTabBtn.backgroundColor = [UIColor whiteColor];
-        regTabBtn.backgroundColor = [UIColor colorWithHexString:@"ff3a3b"];
-        
-        [loginTabBtn setSelected:NO];
-        [regTabBtn setSelected:YES];
-    
-        self.mAccountLoginView.hidden = YES;
-        self.mRegisterAccountView.hidden = NO;
-    }
-}
+
 @end

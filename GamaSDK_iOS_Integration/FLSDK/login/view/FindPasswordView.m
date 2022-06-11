@@ -77,13 +77,14 @@
         
         
         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"發送驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        getVfCodeBtn = [UIUtil initBtnWithTitleText:@"發送驗證碼" fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        
         
 //        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
 //        getVfCodeBtn.layer.borderWidth = 1;
 //        getVfCodeBtn.layer.cornerRadius = 10;
-        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
+//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
+//        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
         [self addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
@@ -162,11 +163,11 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitle:@"確  認" tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText:@"確  認" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         
-        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
+//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
-        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:okBtn];
         

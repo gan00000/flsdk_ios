@@ -28,9 +28,6 @@
 #define kR2BtnCornerRadius                 8.0f
 #define kBgAlpha                         0.9f
 
-#define SCREEN_WIDTH     [[UIScreen mainScreen] bounds].size.width
-#define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
-#define IS_PORTRAIT       ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)
 
 #define kBgWidth                    [UIUtil getSdkPageWidth]
 #define kBgHeight                   [UIUtil getSdkPageHeight]
@@ -77,8 +74,6 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_TEARMS,
 };
 
-typedef void (^ItemViewClickHander)(NSInteger);
-
 //页面按钮button点击tag
 #define kCheckBoxBtnTag     20
 #define kAccountLoginActTag     21
@@ -105,9 +100,6 @@ typedef void (^ItemViewClickHander)(NSInteger);
 #define accountLoginActTag    2003
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
-
-typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);
-
 
 // login type
 #define _SDK_PLAT_SELF           (@"gamesword")

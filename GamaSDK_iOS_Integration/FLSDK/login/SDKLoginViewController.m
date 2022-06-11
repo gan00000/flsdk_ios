@@ -21,6 +21,7 @@
 #import "Masonry.h"
 #import "TermsView.h"
 #import "MainLoginView.h"
+#import "MainHomeView.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
@@ -151,25 +152,26 @@
 //
 //    }
     
-    NSString *loginType = [ConfigCoreUtil share].loginType;
-    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-           if (!accounts || accounts.count == 0) {
-               [self addMainLoginView];
-               return;
-           }
-        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-        {
-            [self addMainLoginView];
-            return;
-        }
-         [self addAutoLoginView];
-       
-    }else{
-         [self addMainLoginView];
-    }
+//    NSString *loginType = [ConfigCoreUtil share].loginType;
+//    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+//        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+//            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+//           if (!accounts || accounts.count == 0) {
+//               [self addMainLoginView];
+//               return;
+//           }
+//        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+//        {
+//            [self addMainLoginView];
+//            return;
+//        }
+//         [self addAutoLoginView];
+//
+//    }else{
+//         [self addMainLoginView];
+//    }
   
+    [self addHomeView];
 }
 
 -(UIView *) sdkContentView
@@ -193,7 +195,7 @@
 -(void)addMainLoginView
 {
     //移除所有子视图
-    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     mMainLoginView = [[MainLoginView alloc] initView];
     [self addSubSdkLoginView:mMainLoginView];
@@ -228,21 +230,21 @@
     
 }
 
--(void)addAutoLoginView //自动登录中界面
-{
-    
-    mAutoLoginView = [[SdkAutoLoginView alloc] initView];
-    mAutoLoginView.delegate = self;
-    mAutoLoginView.theViewUIViewController = self;
-    [self.view addSubview:mAutoLoginView];
-    
-    [mAutoLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(@(0));
-        make.centerY.equalTo(@(0));
-        make.width.equalTo(@(kBgWidth - 20));
-        make.height.equalTo(@(kBgHeight * 0.5));
-    }];
-}
+//-(void)addAutoLoginView //自动登录中界面
+//{
+//
+//    mAutoLoginView = [[SdkAutoLoginView alloc] initView];
+//    mAutoLoginView.delegate = self;
+//    mAutoLoginView.theViewUIViewController = self;
+//    [self.view addSubview:mAutoLoginView];
+//
+//    [mAutoLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(@(0));
+//        make.centerY.equalTo(@(0));
+//        make.width.equalTo(@(kBgWidth - 20));
+//        make.height.equalTo(@(kBgHeight * 0.5));
+//    }];
+//}
 
 //-(void)addAccountLoginView
 //{
@@ -285,6 +287,16 @@
     FindPasswordView *view = [[FindPasswordView alloc] initView];
     [self addSubSdkLoginView:view];
 }
+
+-(void)addHomeView
+{
+    //移除所有子视图
+    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+    MainHomeView *view = [[MainHomeView alloc] initView];
+    [self addSubSdkLoginView:view];
+}
+
 
 
 -(void)addSubSdkLoginView:(SDKBaseView *)mSDKBaseView

@@ -16,9 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - UI
 
++(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor*)textColor;
+
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
                            titleText:(NSString *)titleText
+                            fontSize:(CGFloat)size
+                           textColor:(UIColor *)textColor
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target;
@@ -29,19 +33,22 @@ NS_ASSUME_NONNULL_BEGIN
                             selector:(SEL)selector
                               target:(id)target;
 
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target;
-+ (UIButton *)initBtnWithTitle2:(NSString *)titleText
-     tag:(NSUInteger)tag
-selector:(SEL)selector
-  target:(id)target;
 
-+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                           target:(id)target;
++ (UIButton *)initBtnWithTitleText:(NSString *)titleText
+                          fontSize:(CGFloat)size
+                         textColor:(UIColor *)textColor
+                               tag:(NSUInteger)tag
+                          selector:(SEL)selector
+                            target:(id)target;
+
++ (UIButton *)initBtnWithTitleText:(NSString *)titleText
+                          fontSize:(CGFloat)size
+                         textColor:(UIColor *)textColor;
+
+//+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
+//                           tag:(NSUInteger)tag
+//                      selector:(SEL)selector
+//                           target:(id)target;
 
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg;
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg okHandler:(void (^ __nullable)(UIAlertAction *action))handler;

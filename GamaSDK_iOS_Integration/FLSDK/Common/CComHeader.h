@@ -14,8 +14,19 @@
 //#else // 发布
 //#define SDK_LOG(format, ...) (NSLog)((@"FL_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 //#endif
-#define SDK_LOG(format, ...) (NSLog)((@"FL_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
+#define SDK_LOG(format, ...) (NSLog)((@"MW_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 
 #define kWeakSelf __weak typeof(self) weakSelf = self;
+
+#define SCREEN_WIDTH     [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
+#define IS_PORTRAIT       ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)
+
+
+
+typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);
+
+typedef void (^ItemViewClickHander)(NSInteger);
+
 
 #endif /* CComHeader_h */

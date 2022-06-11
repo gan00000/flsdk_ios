@@ -126,9 +126,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitle2:@"忘記密碼?" tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
-        findPasswordBtn.titleLabel.font = [UIFont systemFontOfSize:FS(12)];
-        [findPasswordBtn setTitleColor:[UIColor colorWithHexString:@"#C0C0C0"] forState:0];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText:@"忘記密碼?" fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -142,11 +140,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         //账号登入
 //        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitle:@"登入" tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
-        [accountLoginBtn setTitleColor:[UIColor whiteColor] forState:0];
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:accountLoginBtn];
         

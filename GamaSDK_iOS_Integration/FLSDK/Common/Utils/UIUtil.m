@@ -13,32 +13,51 @@
 
 #pragma mark - UI
 
++(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor *)textColor
+{
+    UILabel *mLable = [[UILabel alloc] init];
+    mLable.text =  text;
+    mLable.font = [UIFont systemFontOfSize:size];
+//    mLable.textAlignment = NSTextAlignmentLeft;
+    mLable.numberOfLines = 1;
+    mLable.textColor = textColor;//[UIColor colorWithHexString:@"#C0C0C0"];
+    
+    return mLable;
+    
+}
+
+
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
                            titleText:(NSString *)titleText
+                            fontSize:(CGFloat)size
+                           textColor:(UIColor *)textColor
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-   
+    
     [btn setTag:tag];
-    if (titleText && ![titleText isEqualToString:@""]) {
-         [btn setTitle:titleText forState:0];
-        if (device_is_iPhoneX) {
-            btn.titleLabel.font = [UIFont systemFontOfSize:18];
-        }else{
-            btn.titleLabel.font = [UIFont systemFontOfSize:16];
-        }
-              
-                 [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn setBackgroundImage:GetImage(normalImageName) forState:UIControlStateNormal];
-    }else{
-        [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
-           [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
+    if (titleText) {
+        [btn setTitle:titleText forState:0];
+        btn.titleLabel.font = [UIFont systemFontOfSize:size]; //VH(14)
+        
+        [btn setTitleColor:textColor forState:UIControlStateNormal];
+        [btn setTitleColor:textColor forState:UIControlStateHighlighted];
+        [btn setTitleColor:textColor forState:UIControlStateSelected];
+        
+//        [btn setBackgroundImage:GetImage(normalImageName) forState:UIControlStateNormal];
     }
-   
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    if (normalImageName) {
+        [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
+        [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
+    }
+    
+    if (target) {
+        [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    }
+    
     
     return btn;
 }
@@ -49,87 +68,82 @@
                             selector:(SEL)selector
                               target:(id)target
 {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
-    [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     
-    return btn;
+    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
+
 }
 
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target
++ (UIButton *)initBtnWithTitleText:(NSString *)titleText
+                          fontSize:(CGFloat)size
+                         textColor:(UIColor *)textColor
+                               tag:(NSUInteger)tag
+                          selector:(SEL)selector
+                            target:(id)target
 {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor whiteColor] forState:0];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-//    [btn.layer setBorderWidth:1.5f];
-//    [btn.layer setBorderColor:[UIColor grayColor].CGColor];
-//    [btn.layer setMasksToBounds:YES];
-//    [btn.layer setCornerRadius:5.0f];
-    
-    return btn;
+    return [self initBtnWithNormalImage:nil highlightedImage:nil titleText:titleText fontSize:size textColor:textColor tag:tag selector:selector target:target];
 }
 
-+ (UIButton *)initBtnWithTitle2:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:titleText forState:0];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [btn setTitleColor:[UIColor colorWithHexString:@"#777777"] forState:0];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    //[btn.layer setBorderWidth:1.5f];
-    //[btn.layer setBorderColor:[UIColor grayColor].CGColor];
-   // [btn.layer setMasksToBounds:YES];
-    //[btn.layer setCornerRadius:5.0f];
++ (UIButton *)initBtnWithTitleText:(NSString *)titleText
+                          fontSize:(CGFloat)size
+                         textColor:(UIColor *)textColor{
     
-    return btn;
+    return [self initBtnWithNormalImage:nil highlightedImage:nil titleText:titleText fontSize:size textColor:textColor tag:0 selector:nil target:nil];
 }
 
-+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:titleText forState:UIControlStateNormal];
-    [btn setTitle:titleText forState:UIControlStateSelected];
-    
-    btn.titleLabel.font = [UIFont systemFontOfSize:FS(24)];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
-//    [btn setImage:nil forState:UIControlStateNormal];
-//    [btn setImage:nil forState:UIControlStateSelected];
-    
-    
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    //[btn.layer setBorderWidth:1.5f];
-    //[btn.layer setBorderColor:[UIColor grayColor].CGColor];
-   // [btn.layer setMasksToBounds:YES];
-    //[btn.layer setCornerRadius:5.0f];
+//+ (UIButton *)initBtnWithTitle2:(NSString *)titleText
+//                            tag:(NSUInteger)tag
+//                       selector:(SEL)selector
+//                         target:(id)target
+//{
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [btn setTitle:titleText forState:0];
+//    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+//    [btn setTitleColor:[UIColor colorWithHexString:@"#777777"] forState:0];
+//    [btn setTag:tag];
+//    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+//    //[btn.layer setBorderWidth:1.5f];
+//    //[btn.layer setBorderColor:[UIColor grayColor].CGColor];
+//    // [btn.layer setMasksToBounds:YES];
+//    //[btn.layer setCornerRadius:5.0f];
+//
+//    return btn;
+//}
 
-    return btn;
-}
+//+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
+//                              tag:(NSUInteger)tag
+//                         selector:(SEL)selector
+//                           target:(id)target
+//{
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setTitle:titleText forState:UIControlStateNormal];
+//    [btn setTitle:titleText forState:UIControlStateSelected];
+//
+//    btn.titleLabel.font = [UIFont systemFontOfSize:FS(24)];
+//    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+//    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//
+//    //    [btn setImage:nil forState:UIControlStateNormal];
+//    //    [btn setImage:nil forState:UIControlStateSelected];
+//
+//
+//    [btn setTag:tag];
+//    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+//    //[btn.layer setBorderWidth:1.5f];
+//    //[btn.layer setBorderColor:[UIColor grayColor].CGColor];
+//    // [btn.layer setMasksToBounds:YES];
+//    //[btn.layer setCornerRadius:5.0f];
+//
+//    return btn;
+//}
 
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg
 {
     UIAlertController *mAlert = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:(UIAlertControllerStyleAlert)];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
-                                                              //响应事件
-                                                              SDK_LOG(@"action = %@", action);
-                                                          }];
+        //响应事件
+        SDK_LOG(@"action = %@", action);
+    }];
     [mAlert addAction:defaultAction];
     if (viewController) {
         [viewController presentViewController:mAlert animated:YES completion:nil];
@@ -150,9 +164,9 @@
         [viewController presentViewController:mAlert animated:YES completion:nil];
     }else
     {
-         [appTopViewController presentViewController:mAlert animated:YES completion:nil];
+        [appTopViewController presentViewController:mAlert animated:YES completion:nil];
     }
-   
+    
 }
 
 
@@ -221,40 +235,40 @@
 +(CGFloat)getViewHeight:(CGFloat)height
 {
     
-//    return SCREEN_HEIGHT / 667 * height;
+    //    return SCREEN_HEIGHT / 667 * height;
     return SCREEN_WIDTH / 375 * height;
     
-//    CGFloat scale = [[UIScreen mainScreen] scale];
-//    return kBgHeight * (height / 582);
+    //    CGFloat scale = [[UIScreen mainScreen] scale];
+    //    return kBgHeight * (height / 582);
     
-//
-//    if (device_is_iPhoneX) {
-//        return height;
-//    }else{//iphone 8以下    这里以414 * 896为模板
-//        CGFloat ppi = 401;
-//        if (scale == 2) {
-//            ppi = 326;
-//        }
-////        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-////            CGFloat ss = height / 414 * SCREEN_HEIGHT;
-////            return ss / 458 * ppi;
-////        }
-////        CGFloat ss = height / 896 * SCREEN_HEIGHT;
-//        return height / 458 * ppi;
-//    }
-////    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-////        float ss = height / 720.0 * SCREEN_HEIGHT;
-////        return ss;
-////    }
-////    float ss = height / 1280 * SCREEN_HEIGHT;
-////    return ss;
+    //
+    //    if (device_is_iPhoneX) {
+    //        return height;
+    //    }else{//iphone 8以下    这里以414 * 896为模板
+    //        CGFloat ppi = 401;
+    //        if (scale == 2) {
+    //            ppi = 326;
+    //        }
+    ////        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+    ////            CGFloat ss = height / 414 * SCREEN_HEIGHT;
+    ////            return ss / 458 * ppi;
+    ////        }
+    ////        CGFloat ss = height / 896 * SCREEN_HEIGHT;
+    //        return height / 458 * ppi;
+    //    }
+    ////    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
+    ////        float ss = height / 720.0 * SCREEN_HEIGHT;
+    ////        return ss;
+    ////    }
+    ////    float ss = height / 1280 * SCREEN_HEIGHT;
+    ////    return ss;
 }
 
 +(CGFloat)getViewWidth:(CGFloat)width
 {
     NSLog(@"SCREEN_WIDTH:%f,SCREEN_HEIGHT:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
     return SCREEN_WIDTH / 375 * width;
-   // return kBgWidth * (width / 608);
+    // return kBgWidth * (width / 608);
 }
 
 +(CGFloat)getFontSize:(CGFloat)size{

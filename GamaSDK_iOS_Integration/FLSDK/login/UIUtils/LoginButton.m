@@ -92,9 +92,11 @@
     
 //    UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage titleText:titleText tag:tag selector:selector target:target];
     
-    UIButton *mButton = [UIUtil initBtnWithTitle:titleText tag:tag selector:selector target:target];
+    UIButton *mButton = [UIUtil initBtnWithTitleText:titleText fontSize:FS(17) textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
     
-    [mButton setTitleColor:[UIColor whiteColor] forState:0];
+//    [UIUtil initBtnWithTitle:titleText tag:tag selector:selector target:target];
+    
+//    [mButton setTitleColor:[UIColor whiteColor] forState:0];
     [mButton.layer setCornerRadius:20.0f];
     
     //closeImageView.backgroundColor = [UIColor clearColor];

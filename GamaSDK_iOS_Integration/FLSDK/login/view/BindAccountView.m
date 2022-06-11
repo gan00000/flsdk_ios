@@ -36,7 +36,9 @@
         int rowMargin = 6;
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT")];
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT") hander:^(NSInteger) {
+            
+        }];
         mLoginTitleView.delegate = self.delegate;
         
         [self addSubview:mLoginTitleView];
@@ -106,7 +108,7 @@
                 make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
           }];
          
-        UIButton *getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *getVfCodeBtn; //= [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
         
         getVfCodeBtn.layer.borderColor = [UIColor grayColor].CGColor;
         getVfCodeBtn.layer.borderWidth = 1;

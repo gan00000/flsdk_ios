@@ -194,11 +194,8 @@
 //        }];
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        regAccountBtn = [UIUtil initBtnWithTitle:@"確認註冊" tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        [regAccountBtn setTitleColor:[UIColor whiteColor] forState:0];
+        regAccountBtn = [UIUtil initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:regAccountBtn];
         

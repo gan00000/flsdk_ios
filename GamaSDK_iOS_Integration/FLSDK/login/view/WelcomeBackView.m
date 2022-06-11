@@ -40,6 +40,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
     UIButton *accountLoginBtn;
   
+    
+    UITableView *accountListTableView;
     NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
     
     BOOL isSaveAccountInfo;
@@ -67,7 +69,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     if (self) {
     
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼" hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"歡迎回來" hander:^(NSInteger) {
             
             [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
         }];
@@ -108,187 +110,99 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //        }];
         
         
-        //找回密碼
+        UILabel *accountUpdateTipsLable = [[UILabel alloc] init];
+        accountUpdateTipsLable.text =  @"建議升級帳號，提升帳號安全性";
+        accountUpdateTipsLable.font = [UIFont systemFontOfSize:VH(13)];
+        accountUpdateTipsLable.textAlignment = NSTextAlignmentLeft;
+        accountUpdateTipsLable.numberOfLines = 1;
+        accountUpdateTipsLable.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitle2:@"忘記密碼?" tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
-        findPasswordBtn.titleLabel.font = [UIFont systemFontOfSize:FS(12)];
-        [findPasswordBtn setTitleColor:[UIColor colorWithHexString:@"#C0C0C0"] forState:0];
+        [self addSubview:accountUpdateTipsLable];
+
+        [accountUpdateTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
+
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(10));
+            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+        }];
         
-        [self addSubview:findPasswordBtn];
-        [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(7));
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-//            make.width.mas_equalTo(VW(140));
+        
+        
+        
+        UIButton *accountUpdateTipsBtn = [UIUtil initBtnWithNormalImage:@"nend_update_account_bg" highlightedImage:nil tag:0 selector:nil target:nil];
+        
+        [self addSubview:accountUpdateTipsBtn];
+        [accountUpdateTipsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(accountUpdateTipsLable);
+            make.leading.mas_equalTo(accountUpdateTipsBtn.mas_trailing).mas_offset(3);
+            make.height.mas_equalTo(VH(18));
+            make.width.mas_equalTo(accountUpdateTipsBtn.mas_height);
         }];
         
        
         //账号登入
 //        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitle:@"登入" tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText:@"繼續遊戲" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
-        [accountLoginBtn setTitleColor:[UIColor whiteColor] forState:0];
-        [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+        [accountLoginBtn.layer setCornerRadius:VH(25)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self);
-            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(30));
-            make.width.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(VH(40));
+            make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
+            make.top.equalTo(accountUpdateTipsLable.mas_bottom).mas_offset(VH(20));
+            make.height.mas_equalTo(VH(50));
         }];
         
         
+//        UIButton *swithAccountBtn = [UIUtil initBtnWithTitle:@"切換帳號" tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *swithAccountBtn = [UIUtil initBtnWithTitleText:@"切換帳號" fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        [swithAccountBtn.layer setCornerRadius:VH(20)];;
+        [self addSubview:swithAccountBtn];
         
-    /**
-        NSString *xtext = @"我已閱讀並同意定型化契約";
-        UILabel *rememberTermsLable = [[UILabel alloc] init];
-//        rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
-        rememberTermsLable.font = [UIFont systemFontOfSize:VH(20)];
-        rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-        rememberTermsLable.backgroundColor = [UIColor clearColor];
-        rememberTermsLable.numberOfLines = 1;
-        rememberTermsLable.textColor = [UIColor blackColor];
-        rememberTermsLable.adjustsFontSizeToFitWidth = YES;
-        
-        // 下划线
-         NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],
-                                      NSFontAttributeName: [UIFont systemFontOfSize:VH(20)]
-         };
-         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
-         //赋值
-        rememberTermsLable.attributedText = attribtStr;
-        
-        [self addSubview:rememberTermsLable];
-        [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self).mas_offset(VW(20));
-            make.width.mas_greaterThanOrEqualTo(VW(280));
-            make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(10));
-            make.height.mas_equalTo(VH(40));
-        }];
-        rememberTermsLable.userInteractionEnabled = YES; // 可以理解为设置label可被点击
-        UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rememberTermsLableTapped:)];
-        [rememberTermsLable addGestureRecognizer:tapGr];
-        
-        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        [self addSubview:checkBoxTermsBtn];
-        [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(rememberTermsLable.mas_leading).mas_offset(-4);
-            make.centerY.mas_equalTo(rememberTermsLable);
-            make.width.mas_equalTo(VH(26));
-            make.height.mas_equalTo(VH(26));
-        }];
-        
-        [TermsView saveAgreenProvisionState:YES];
-        isAgree = [TermsView isAgreenProvision];
-        if (isAgree) {
-            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
-        }else{
-            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
-        }
-     */
-//        NSUInteger w = VW(90 * 4) + VW(48 * 3);
-//        if (@available(iOS 13.0, *)) {
-//            w = VW(90 * 4) + VW(48 * 3);
-//        }else{
-//            w = VW(90 * 3) + VW(48 * 2);
-//        }
-        
-        CGFloat btn_w = VW(28);
-        CGFloat btn_h = btn_w;
-        CGFloat margin_leading = VW(24);
-        
-        UIView *loginTypeView = [[UIView alloc] init];
-        [self addSubview:loginTypeView];
-        [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [swithAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(accountSDKTextFiledView);
-//            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
-//            make.centerX.mas_equalTo(self);
-            make.height.mas_equalTo(btn_h);
+            make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(15));
+            make.height.mas_equalTo(VH(40));
+            make.width.mas_equalTo(VW(140));
         }];
         
-        UILabel *otherLabelTips = [[UILabel alloc] init];
-        otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"其他登入";
-        otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
         
-        [loginTypeView addSubview:otherLabelTips];
-        [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(loginTypeView.mas_leading);
-            make.centerY.mas_equalTo(loginTypeView);
-           
+        UIButton *updateAccountBtn = [UIUtil initBtnWithTitleText:@"升級帳號" fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        
+        [updateAccountBtn.layer setCornerRadius:VH(20)];
+//        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        [self addSubview:updateAccountBtn];
+        
+        [updateAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.mas_equalTo(accountSDKTextFiledView);
+            make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(15));
+            make.height.mas_equalTo(VH(40));
+            make.width.mas_equalTo(VW(140));
         }];
         
-        UIView *leadingView = otherLabelTips;
-       
-        LoginTypeButton *guestBtn = [[LoginTypeButton alloc] initWithType:guestLoginActTag title:@"遊客登入" image:@"mw_guest_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:guestBtn];
-        [guestBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
+        UIButton *changePwdBtn = [UIUtil initBtnWithTitleText:@"修改密碼" fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        [changePwdBtn.layer setCornerRadius:VH(20)];
+//        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        [self addSubview:changePwdBtn];
+        
+        [changePwdBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(swithAccountBtn);
         }];
-        leadingView = guestBtn;
         
-        if (@available(iOS 13.0, *)) {
-            ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                      authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
-            [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            appleLoginBtn.tag = appleLoginActTag;
-            appleLoginBtn.cornerRadius = btn_w / 2;
-            [loginTypeView addSubview:appleLoginBtn];
-            
-            [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.mas_equalTo(btn_w);
-                make.height.mas_equalTo(btn_h);
-                make.top.mas_equalTo(loginTypeView);
-                make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-            }];
-            
-            leadingView = appleLoginBtn;
-            
-        }
+        UIButton *swithAccountBtn2 = [UIUtil initBtnWithTitleText:@"切換帳號" fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
-        LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"mw_fb_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:fbBtn];
-        [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+        [swithAccountBtn2.layer setCornerRadius:VH(20)];
+//        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        [self addSubview:swithAccountBtn2];
+        
+        [swithAccountBtn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(updateAccountBtn);
         }];
-        leadingView = fbBtn;
-        
-        LoginTypeButton *googleBtn = [[LoginTypeButton alloc] initWithType:googleLoginActTag title:@"" image:@"mw_gp_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:googleBtn];
-        [googleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-        }];
-        leadingView = googleBtn;
         
         
-        LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:lineBtn];
-        [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-        }];
-        leadingView = lineBtn;
+   
         
-     
         [ConfigCoreUtil share].isSaveAccountInfo = YES;
         isSaveAccountInfo = YES;
         accountDataList = [NSMutableArray array];//账号列表数据
@@ -296,7 +210,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
             accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
-            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
+//            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
         }
         if (mAccountArray.count > 1) {
 //            accountSDKTextFiledView.moreAccountBtn.hidden = NO;
@@ -321,8 +235,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
                    [accountListTableView reloadData];
                     [weakSelf setTableViewHiden:NO];
                 }
-                
-                
+
+
             }else{//第一次点击显示
 
                 [self addAccountListTableView];
@@ -346,7 +260,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
    NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
     if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
         accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
-        passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
+//        passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
     }
     [accountDataList removeAllObjects];
     [accountDataList addObjectsFromArray:mAccountArray];
@@ -370,7 +284,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 {
     [super drawRect:rect];
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
+//    passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
 }
 
 //设置隐藏或者显示
@@ -460,9 +374,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             
         case kBackBtnActTag:
             SDK_LOG(@"kBackBtnActTag");
-            if (self.delegate) {
-                [self.delegate goBackBtn:backBtn backCount:1 sdkPage:(CURRENT_PAGE_TYPE_LOGIN_ACCOUNT)];
-            }
+//            if (self.delegate) {
+//                [self.delegate goBackBtn:backBtn backCount:1 sdkPage:(CURRENT_PAGE_TYPE_LOGIN_ACCOUNT)];
+//            }
             break;
             
         case kAccountLoginActTag:
@@ -590,7 +504,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 {
     
     NSString *accountName = [GamaUtils triString:accountSDKTextFiledView.inputUITextField.text];
-    NSString *pwd = [GamaUtils triString:passwordSDKTextFiledView.inputUITextField.text];
+    NSString *pwd = @"";//[GamaUtils triString:passwordSDKTextFiledView.inputUITextField.text];
     
         
     if (!accountName || [accountName isEqualToString:@""]) {
@@ -665,7 +579,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
     AccountModel *mAccountModel = accountDataList[indexPath.row];
     accountSDKTextFiledView.inputUITextField.text = mAccountModel.accountName;
-    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.accountPwd;
+//    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.accountPwd;
     [self setTableViewHiden:YES];
 }
 
