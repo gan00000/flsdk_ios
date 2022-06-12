@@ -15,12 +15,12 @@
 #import "HttpServiceEngineLogin.h"
 #import "YYModel.h"
 #import "AccountModel.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 #import "UIColor+HexStringToColorTW.h"
 #import "SDKRequest.h"
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
-#import "GamaAppleLogin.h"
+#import "AppleLogin.h"
 #import "GamaFacebookPort.h"
 #import "TermsView.h"
 
@@ -48,7 +48,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
     UIButton *checkBoxTermsBtn;
     
-    GamaAppleLogin *gamaAppleLogin;
+    AppleLogin *gamaAppleLogin;
     
     LoginTitleView *mLoginTitleView;
     
@@ -382,7 +382,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         case kAccountLoginActTag:
             SDK_LOG(@"kAccountLoginActTag");
             if (!isAgree) {//先同意
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
                 return;
             }
             [TermsView saveAgreenProvisionState:isAgree];
@@ -393,9 +393,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         case fbLoginActTag:
         {
             
-            [GamaUtils gamaStarLoadingAtView:self];
+            [SdkUtil gamaStarLoadingAtView:self];
             [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                [GamaUtils gamaStopLoadingAtView:self];
+                [SdkUtil gamaStopLoadingAtView:self];
                 if (!loginError)
                 {
                     
@@ -476,7 +476,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         return;
     }
     
-    gamaAppleLogin = [GamaAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+    gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];
@@ -503,22 +503,22 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 -(void) requestAccountLogin
 {
     
-    NSString *accountName = [GamaUtils triString:accountSDKTextFiledView.inputUITextField.text];
+    NSString *accountName = [SdkUtil triString:accountSDKTextFiledView.inputUITextField.text];
     NSString *pwd = @"";//[GamaUtils triString:passwordSDKTextFiledView.inputUITextField.text];
     
         
     if (!accountName || [accountName isEqualToString:@""]) {
-        [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
         return;
     }
     
-    if (![GamaUtils validUserName:accountName]) {
-        [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+    if (![SdkUtil validUserName:accountName]) {
+        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
         return;
     }
 //    if (GamaLoginViewModel.model.vfConfig == YES){

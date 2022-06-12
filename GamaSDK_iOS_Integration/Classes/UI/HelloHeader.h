@@ -9,16 +9,9 @@
 #ifndef HelloHeader_h
 #define HelloHeader_h
 
-#import "GamaUtils.h"
-#import "HelloProtocolViewController.h"
+#import "SdkUtil.h"
 #import "Masonry.h"
-#import "HelloMain.h"
-#import "HelloLoginView.h"
-#import "HelloRigisterView.h"
-#import "HelloTextField.h"
 #import "HelloWidgetConstant.h"
-#import "AutoLoginView.h"
-#import "ViewCalculationCriteria.h"
 #import "UIColor+HexColor.h"
 #import "GamaLoginFuncionPort.h"
 #import "GamaCentreInfo.h"

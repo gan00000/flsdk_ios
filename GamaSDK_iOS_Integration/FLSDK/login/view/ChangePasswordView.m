@@ -13,7 +13,7 @@
 #import "PhoneView.h"
 #import "LoginButton.h"
 #import "SDKRequest.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 
 @implementation ChangePasswordView
 {
@@ -126,27 +126,27 @@
             NSString *newPassword = newPasswordSDKTextFiledView.inputUITextField.text;
             
             if (!oldPassword || [oldPassword isEqualToString:@""]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD")];
                 return;
             }
             if (!newPassword || [newPassword isEqualToString:@""]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW")];
                 return;
             }
             
             if (!userName || [userName isEqualToString:@""]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
                 return;
             }
             
-            if (![GamaUtils validUserName:userName]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+            if (![SdkUtil validUserName:userName]) {
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
                 return;
             }
             
            
-            if (![GamaUtils validPwd: newPassword]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
+            if (![SdkUtil validPwd: newPassword]) {
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
                 return;
             }
             

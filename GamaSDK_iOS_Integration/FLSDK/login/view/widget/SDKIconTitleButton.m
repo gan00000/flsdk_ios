@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "UIUtil.h"
 #import "SdkHeader.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 
 
 @implementation SDKIconTitleButton
@@ -108,7 +108,7 @@
         }];
               
         //账号
-        UIButton *mButton = [GamaUtils initBtnWithTag:tag selector:selector target:target];
+        UIButton *mButton = [SdkUtil initBtnWithTag:tag selector:selector target:target];
         mButton.backgroundColor = [UIColor clearColor];
         [self addSubview:mButton];
           

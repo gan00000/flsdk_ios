@@ -13,9 +13,9 @@
 #import "PhoneView.h"
 #import "LoginButton.h"
 #import "SDKRequest.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 #import "GamaFacebookPort.h"
-#import "GamaAppleLogin.h"
+#import "AppleLogin.h"
 
 @implementation RegisterAccountView
 {
@@ -262,7 +262,7 @@
             NSString *areaCode = [mPhoneView getPhoneAreaCode];
             NSString *phoneNum = [mPhoneView getPhoneNumber];
             if (!phoneNum || [@"" isEqualToString:phoneNum]) {
-                [GamaUtils gamaToastWithMsg:@"請輸入電話號碼"];
+                [SdkUtil gamaToastWithMsg:@"請輸入電話號碼"];
                 return;
             }
             [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
@@ -281,37 +281,37 @@
             NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
             if (!name || [name isEqualToString:@""]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
                 return;
             }
             
             
             if (!password || [password isEqualToString:@""]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
                 return;
             }
             
-            if (![GamaUtils validUserName:name]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+            if (![SdkUtil validUserName:name]) {
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
                 return;
             }
-            if (![GamaUtils validPwd:password]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
+            if (![SdkUtil validPwd:password]) {
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
                 return;
             }
             
             if (![password isEqualToString:newPassword]) {
-                [GamaUtils gamaToastWithMsg:@"兩次輸入的密碼不一致"];
+                [SdkUtil gamaToastWithMsg:@"兩次輸入的密碼不一致"];
                 return;
             }
             if ([password isEqualToString:name]) {
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
                 return;
             }
             
             if ([@"" isEqualToString:vfCode]) {
                 
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
                 return;
             }
             
@@ -376,7 +376,7 @@
         return;
     }
     
-    GamaAppleLogin *gamaAppleLogin = [GamaAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+    AppleLogin *gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];
@@ -426,9 +426,9 @@
 
 -(void)requestBindFb:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
-    [GamaUtils gamaStarLoadingAtView:self];
+    [SdkUtil gamaStarLoadingAtView:self];
     [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-        [GamaUtils gamaStopLoadingAtView:self];
+        [SdkUtil gamaStopLoadingAtView:self];
         if (!loginError)
         {
             NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];

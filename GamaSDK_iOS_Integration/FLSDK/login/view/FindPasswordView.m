@@ -13,7 +13,7 @@
 #import "PhoneView.h"
 #import "LoginButton.h"
 #import "SDKRequest.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 
 @implementation FindPasswordView
 
@@ -243,14 +243,14 @@
     NSString *vfCode = vfCodeFiledView.inputUITextField.text;
     
     
-    if (![GamaUtils validUserName:userName]) {
-        [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+    if (![SdkUtil validUserName:userName]) {
+        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
         return;
     }
     
     if ([@"" isEqualToString:vfCode]) {
         
-        [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
+        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
         return;
     }
     

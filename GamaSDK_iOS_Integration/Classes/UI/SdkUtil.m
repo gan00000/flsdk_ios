@@ -6,7 +6,7 @@
 //  Copyright © 2017年 sunn. All rights reserved.
 //
 
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 #import "HelloHeader.h"
 #import <Photos/Photos.h>
 
@@ -29,7 +29,7 @@
 #define titleMaxFontSize    17
 #define titleMinFontSize    9
 
-@implementation GamaUtils
+@implementation SdkUtil
 
 + (BOOL)isFirstLogin
 {
@@ -153,7 +153,7 @@
 {
     NSString *loginType = nil;
     NSString *userNameID = nil;
-    [GamaUtils getStateLoginWithType:&loginType andUserName:&userNameID];
+    [SdkUtil getStateLoginWithType:&loginType andUserName:&userNameID];
     if (loginType.length > 0 && userNameID.length > 0) {
         return YES;
     }
@@ -288,33 +288,6 @@
     return [resultWebView autorelease];
 }
 
-+ (HelloTextField *)customTextfieldWidgetWithLeftView:(NSString *)imageName rightView:(UIView *)right placeholder:(NSString *)placeholder delegate:(id)delegate
-{
-    CGFloat onCalWidth = [ViewCalculationCriteria shareCriteria].calWidth;
-    CGFloat onCalHeight = [ViewCalculationCriteria shareCriteria].calHeight;
-
-    UIImageView *icon = [[UIImageView alloc] initWithImage:GetImage(imageName)];
-    [icon setFrame:CGRectMake(0, 0, 93/bgOriginWidth * onCalWidth, 58/bgOriginHeight * onCalHeight)];// 要用比例 93*58
-    
-    HelloTextField *resultText = [[HelloTextField alloc] initWithFrame:CGRectZero leftView:icon rightView:right];
-    [icon release];
-    [resultText setBackground:GetImage(textfield_bg)];
-    resultText.initDistance = (140)/bgOriginWidth * onCalWidth;
-    resultText.leftViewDistance = 27/bgOriginWidth * onCalWidth;
-    //    resultText.rightViewDistance = 50/1070.0f * rate * curWidth;
-    resultText.placeholder = placeholder;
-    resultText.clearButtonMode = UITextFieldViewModeAlways;
-    resultText.delegate = delegate;
-    
-    // font size and color
-    NSMutableParagraphStyle *style = [resultText.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
-    style.minimumLineHeight = resultText.font.lineHeight - (resultText.font.lineHeight - [UIFont systemFontOfSize:12.0].lineHeight) / 2.0;
-    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSParagraphStyleAttributeName:style}];
-    [resultText setAttributedPlaceholder:attrStr];
-    [attrStr release];
-    
-    return [resultText autorelease];
-}
 
 + (void)makeTextFieldPlaceHolderProperty:(UITextField *)textField
 {
@@ -561,7 +534,7 @@
         toastLabel.numberOfLines = 0;
 //        toastLabel.lineBreakMode = NSLineBreakByWordWrapping;
         
-        CGSize tempStringSize = [GamaUtils calculateSizeOfLabel:toastLabel];
+        CGSize tempStringSize = [SdkUtil calculateSizeOfLabel:toastLabel];
         CGFloat _width = tempStringSize.width + 60;
         CGFloat _height = tempStringSize.height + 20;
         CGFloat _tempHeight = tempStringSize.height;
@@ -803,7 +776,7 @@
         msg = SDKConReaderGetLocalizedString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
     }
     
-    [GamaUtils gamaToastWithMsg:msg];
+    [SdkUtil gamaToastWithMsg:msg];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_NOTE_SAVE_PHOTO object:nil userInfo:nil];
 }

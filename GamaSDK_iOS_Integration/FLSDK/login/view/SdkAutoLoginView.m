@@ -11,8 +11,8 @@
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "GamaFacebookPort.h"
-#import "GamaUtils.h"
-#import "GamaAppleLogin.h"
+#import "SdkUtil.h"
+#import "AppleLogin.h"
 #import "AccountModel.h"
 
 @implementation SdkAutoLoginView
@@ -153,9 +153,9 @@
         }];
         
     }else if ([loginType isEqualToString:_SDK_PLAT_FB]) {
-        [GamaUtils gamaStarLoadingAtView:weakSelf];
+        [SdkUtil gamaStarLoadingAtView:weakSelf];
         [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-            [GamaUtils gamaStopLoadingAtView:weakSelf];
+            [SdkUtil gamaStopLoadingAtView:weakSelf];
             
             if (isSwicth) {
                 return;
@@ -226,7 +226,7 @@
 -(void) doAutoAppleLogin
 {
     kWeakSelf
-    GamaAppleLogin *gamaAppleLogin = [[GamaAppleLogin alloc] init];
+    AppleLogin *gamaAppleLogin = [[AppleLogin alloc] init];
     NSDictionary *tempDic = [gamaAppleLogin fetchAppleLoginInfo];
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
     NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];

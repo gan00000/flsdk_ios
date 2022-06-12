@@ -12,10 +12,10 @@ typedef void (^AppleLoginSuccess )(NSDictionary *__nullable result);
 typedef void (^AppleLoginError)(NSError *__nullable error);
 typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * __nullable results);
 
-@interface GamaAppleLogin : NSObject
+@interface AppleLogin : NSObject
 @property (strong, nonatomic) NSString *appleThirdID;
 
-+ (GamaAppleLogin *)shareInfoModel;
++ (AppleLogin *)shareInfoModel;
 
 - (void)handleAuthrization:(id *_Nullable)sender;
 

@@ -15,7 +15,7 @@
 #import "GamaFunction.h"
 #import "HelloHeader.h"
 //#import "KRTwitterLogin.h"
-#import "GamaAppleLogin.h"
+#import "AppleLogin.h"
 
 @implementation GamaNetEngine (ThirdPlatformRequest)
 

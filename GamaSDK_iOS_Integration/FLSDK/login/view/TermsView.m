@@ -7,7 +7,7 @@
 //
 
 #import "TermsView.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 #import "UIColor+HexStringToColorTW.h"
 #import "SdkHeader.h"
 #import "LoginButton.h"
@@ -373,7 +373,7 @@
         case kAccountLoginActTag://進入遊戲
         {
             if (!isAgree) {//先同意
-                [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
                 return;
             }
             if (Device_Is_Landscape) {

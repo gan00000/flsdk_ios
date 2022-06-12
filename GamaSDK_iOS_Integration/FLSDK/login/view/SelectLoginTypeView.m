@@ -12,17 +12,17 @@
 #import "GamaAlertView.h"
 #import "LoginButton.h"
 #import "GamaNetEngine.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 #import "SDKRequest.h"
 #import "GamaFacebookPort.h"
-#import "GamaAppleLogin.h"
+#import "AppleLogin.h"
 #import "SDKIconTitleButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 
 @implementation SelectLoginTypeView{
     
     UIView *bgView;
-    GamaAppleLogin *gamaAppleLogin;
+    AppleLogin *gamaAppleLogin;
 }
 
 /*
@@ -168,9 +168,9 @@
         case fbLoginActTag:
         {
             
-            [GamaUtils gamaStarLoadingAtView:self];
+            [SdkUtil gamaStarLoadingAtView:self];
             [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                [GamaUtils gamaStopLoadingAtView:self];
+                [SdkUtil gamaStopLoadingAtView:self];
                 if (!loginError)
                 {
                     
@@ -248,7 +248,7 @@
         return;
     }
     
-    gamaAppleLogin = [GamaAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+    gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];

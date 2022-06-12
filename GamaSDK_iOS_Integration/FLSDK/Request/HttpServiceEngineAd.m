@@ -12,7 +12,7 @@
 #import "AFHTTPSessionManager.h"
 #import "BJBaseResponceModel.h"
 #import "SdkHeader.h"
-#import "GamaUtils.h"
+#import "SdkUtil.h"
 
 @interface HttpServiceEngineAd ()
 

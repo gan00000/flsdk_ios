@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00AACEE421B7B2DF002AC879 /* GamaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126920874A170018E1A6 /* GamaLabel.m */; };
 		00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
 		00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B1D81021ADBFDC00739E95 /* Social_ViewController.m */; };
 		00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
@@ -184,7 +183,7 @@
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
 		E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E95BCEDD237EBC39004A08B1 /* GamaAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */; };
+		E95BCEDD237EBC39004A08B1 /* AppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* AppleLogin.m */; };
 		E974128720874A170018E1A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97411BF20874A170018E1A6 /* Default-568h@2x.png */; };
 		E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97411C020874A170018E1A6 /* Default-iOS11-812h@3x.png */; };
 		E974128B20874A170018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
@@ -196,8 +195,7 @@
 		E97412F02088580A0018E1A6 /* GamaSDK+GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */; };
 		E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */; };
 		E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
-		E97412FA208858260018E1A6 /* GamaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* GamaUtils.m */; };
-		E9741300208858260018E1A6 /* HelloTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127A20874A170018E1A6 /* HelloTextField.m */; };
+		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
 		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
 		E9741303208858260018E1A6 /* ViewCalculationCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = E974128120874A170018E1A6 /* ViewCalculationCriteria.m */; };
 		E98131A921831A0200819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -553,8 +551,8 @@
 		E947D323221D73CE00490C35 /* GamaInterfaceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaInterfaceSDK.h; path = Classes/Base/GamaInterfaceSDK.h; sourceTree = SOURCE_ROOT; };
 		E947D324221D73CF00490C35 /* GamaBaseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaBaseSDK.h; path = Classes/Base/GamaBaseSDK.h; sourceTree = SOURCE_ROOT; };
 		E947D325221D73CF00490C35 /* GamaBaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamaBaseSDK.m; path = Classes/Base/GamaBaseSDK.m; sourceTree = SOURCE_ROOT; };
-		E94EE47D235D8D3B007D3A93 /* GamaAppleLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaAppleLogin.h; sourceTree = "<group>"; };
-		E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaAppleLogin.m; sourceTree = "<group>"; };
+		E94EE47D235D8D3B007D3A93 /* AppleLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleLogin.h; sourceTree = "<group>"; };
+		E94EE47E235D8D3B007D3A93 /* AppleLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleLogin.m; sourceTree = "<group>"; };
 		E94EE4812362CF72007D3A93 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E956BC79211D768F006D9E4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GamaSDK_iOS/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPhoneModel.h; sourceTree = "<group>"; };
@@ -580,15 +578,11 @@
 		E97411D720874A170018E1A6 /* GamaNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaNetEngine.h; sourceTree = "<group>"; };
 		E97411D820874A170018E1A6 /* GamaNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaNetEngine.m; sourceTree = "<group>"; };
 		E97411DA20874A170018E1A6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E974126820874A170018E1A6 /* GamaLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaLabel.h; sourceTree = "<group>"; };
-		E974126920874A170018E1A6 /* GamaLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaLabel.m; sourceTree = "<group>"; };
 		E974126A20874A170018E1A6 /* FLSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSDK.h; sourceTree = "<group>"; };
 		E974126B20874A170018E1A6 /* FLSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSDK.m; sourceTree = "<group>"; };
-		E974126C20874A170018E1A6 /* GamaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaUtils.h; sourceTree = "<group>"; };
-		E974126D20874A170018E1A6 /* GamaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaUtils.m; sourceTree = "<group>"; };
+		E974126C20874A170018E1A6 /* SdkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUtil.h; sourceTree = "<group>"; };
+		E974126D20874A170018E1A6 /* SdkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkUtil.m; sourceTree = "<group>"; };
 		E974126E20874A170018E1A6 /* HelloHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloHeader.h; sourceTree = "<group>"; };
-		E974127920874A170018E1A6 /* HelloTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTextField.h; sourceTree = "<group>"; };
-		E974127A20874A170018E1A6 /* HelloTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloTextField.m; sourceTree = "<group>"; };
 		E974127B20874A170018E1A6 /* HelloWidgetConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWidgetConstant.h; sourceTree = "<group>"; };
 		E974127E20874A170018E1A6 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		E974127F20874A170018E1A6 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
@@ -1515,17 +1509,13 @@
 		E974126520874A170018E1A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E94EE47D235D8D3B007D3A93 /* GamaAppleLogin.h */,
-				E94EE47E235D8D3B007D3A93 /* GamaAppleLogin.m */,
-				E974126820874A170018E1A6 /* GamaLabel.h */,
-				E974126920874A170018E1A6 /* GamaLabel.m */,
-				E974126C20874A170018E1A6 /* GamaUtils.h */,
-				E974126D20874A170018E1A6 /* GamaUtils.m */,
+				E94EE47D235D8D3B007D3A93 /* AppleLogin.h */,
+				E94EE47E235D8D3B007D3A93 /* AppleLogin.m */,
+				E974126C20874A170018E1A6 /* SdkUtil.h */,
+				E974126D20874A170018E1A6 /* SdkUtil.m */,
 				E99EB28521BE4E9E004FF8B5 /* GamaWebViewController.h */,
 				E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */,
 				E974126E20874A170018E1A6 /* HelloHeader.h */,
-				E974127920874A170018E1A6 /* HelloTextField.h */,
-				E974127A20874A170018E1A6 /* HelloTextField.m */,
 				E974127B20874A170018E1A6 /* HelloWidgetConstant.h */,
 				E9DF1BF221180EA300B0C591 /* UIButton+Gradient.h */,
 				E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */,
@@ -1734,16 +1724,14 @@
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
 				E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */,
 				32506CC924F920FA00010D7B /* UIImageView+WebCache.m in Sources */,
-				E97412FA208858260018E1A6 /* GamaUtils.m in Sources */,
+				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				E98131A921831A0200819215 /* GamaTimer.m in Sources */,
 				E98131AA2183258200819215 /* UIButton+Gradient.m in Sources */,
 				32506CBF24F920FA00010D7B /* SDWebImageCompat.m in Sources */,
 				32506CBB24F920FA00010D7B /* UIImage+GIF.m in Sources */,
-				E9741300208858260018E1A6 /* HelloTextField.m in Sources */,
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
 				E98131AB2183258800819215 /* UIImage+Gradient.m in Sources */,
 				32506C7F24F920F900010D7B /* ViewController+MASAdditions.m in Sources */,
-				00AACEE421B7B2DF002AC879 /* GamaLabel.m in Sources */,
 				E9741303208858260018E1A6 /* ViewCalculationCriteria.m in Sources */,
 				E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */,
 				E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */,
@@ -1762,7 +1750,7 @@
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				E947D354221ED7F300490C35 /* GamaBaseSDK.m in Sources */,
 				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
-				E95BCEDD237EBC39004A08B1 /* GamaAppleLogin.m in Sources */,
+				E95BCEDD237EBC39004A08B1 /* AppleLogin.m in Sources */,
 				32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

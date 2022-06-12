@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HelloTextField.h"
 #import <WebKit/WebKit.h>
 
-@interface GamaUtils : NSObject
+@interface SdkUtil : NSObject
 
 + (void)firstLoginSign;
 
@@ -65,10 +64,6 @@
                                             cornerRadius:(CGFloat)radius
                                                 delegate:(id)delegate;
 
-+ (HelloTextField *)customTextfieldWidgetWithLeftView:(NSString *)imageName
-                                            rightView:(UIView *)right
-                                          placeholder:(NSString *)placeholder
-                                             delegate:(id)delegate;
 
 // 处理placeholder，大小颜色等
 + (void)makeTextFieldPlaceHolderProperty:(UITextField *)textField;

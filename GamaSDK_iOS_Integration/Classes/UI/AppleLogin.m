@@ -6,19 +6,19 @@
 //  Copyright © 2019 Gama. All rights reserved.
 //
 
-#import "GamaAppleLogin.h"
+#import "AppleLogin.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "GamaFunction.h"
 #import "HelloHeader.h"
 #import "GamaAlertView.h"
 #import "GamaThirdFunctionPort.h"
 
-@interface GamaAppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
+@interface AppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
 @property (copy, atomic) AppleLoginSuccess impSuccess;
 @property (copy, atomic) AppleLoginError impError;
 @end
 
-@implementation GamaAppleLogin
+@implementation AppleLogin
 @synthesize appleThirdID = _appleThirdID;
 
 #pragma mark - Actions
@@ -287,7 +287,7 @@
 + (instancetype)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock
                                 andErrorBlock:(AppleLoginError)errorBlock
 {
-    GamaAppleLogin *temp = [[GamaAppleLogin alloc] init];
+    AppleLogin *temp = [[AppleLogin alloc] init];
     temp.impSuccess = successBlock;
     temp.impError = errorBlock;
     
