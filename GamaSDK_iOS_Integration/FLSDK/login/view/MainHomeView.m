@@ -9,6 +9,7 @@
 #import "MainHomeView.h"
 #import "UIUtil.H"
 #import "LoginTypeButton.h"
+#import "UIView+BlockGesture.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -180,6 +181,13 @@
         make.trailing.mas_equalTo(loginTypeView);
     }];
     leadingView = lineBtn;
+    
+    
+    [hasAccountContent addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        if (self.delegate) {
+            [self.delegate goPageView:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
+        }
+    }];
 }
 
 - (void)drawRect:(CGRect)rect

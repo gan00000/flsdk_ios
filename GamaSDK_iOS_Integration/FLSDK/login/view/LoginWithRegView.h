@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainLoginView : SDKBaseView
+@interface LoginWithRegView : SDKBaseView
 
 @property (nonatomic, strong) AccountLoginView *mAccountLoginView;
 

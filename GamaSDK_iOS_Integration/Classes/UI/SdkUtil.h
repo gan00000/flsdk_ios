@@ -12,12 +12,6 @@
 
 @interface SdkUtil : NSObject
 
-+ (void)firstLoginSign;
-
-#pragma mark - NSUserdefault Accesstor
-
-+ (BOOL)getTodayNotShowAdwallAnyMoreStatus;
-+ (void)setTodayNotShowAdwallAnyMoreStatus:(BOOL)checkedStatus;
 
 + (void)recordStateLoginWithType:(NSString *)type andUserName:(NSString *)name;
 + (void)getStateLoginWithType:(NSString **)type andUserName:(NSString **)name;
@@ -26,47 +20,12 @@
 
 #pragma mark - UI
 
-+ (UIButton *)initBtnWithTag:(NSUInteger)tag
-                    selector:(SEL)selector
-                      target:(id)target;
-
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                                 tag:(NSUInteger)tag
-                            selector:(SEL)selector
-                              target:(id)target;
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target;
-
-+ (UIButton *)initBtnWithType:(UIButtonType)type
-                        title:(NSString *)titleText
-                          tag:(NSUInteger)tag
-                     selector:(SEL)selector
-                       target:(id)target;
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-               backgroundColor:(NSString *)hexColor
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target;
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-               backgroundImage:(NSString *)imageStr
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target;
-
-+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
-                                               urlStirng:(NSString *)urlString
-                                            cornerRadius:(CGFloat)radius
-                                                delegate:(id)delegate;
+//+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
+//                                               urlStirng:(NSString *)urlString
+//                                            cornerRadius:(CGFloat)radius
+//                                                delegate:(id)delegate;
 
 
-// 处理placeholder，大小颜色等
-+ (void)makeTextFieldPlaceHolderProperty:(UITextField *)textField;
 
 #pragma mark Calculate Label Size
 

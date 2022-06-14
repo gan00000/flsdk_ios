@@ -6,13 +6,13 @@
 //  Copyright © 2020 Gama. All rights reserved.
 //
 
-#import "MainLoginView.h"
+#import "LoginWithRegView.h"
 
-@interface MainLoginView()
+@interface LoginWithRegView()
 
 @end
 
-@implementation MainLoginView
+@implementation LoginWithRegView
 {
     UIButton *loginTabBtn;
     UIButton *regTabBtn;
@@ -69,7 +69,8 @@
     
     
     
-    loginTabBtn = [UIUtil initTabBtnWithTitle:@"登入"  tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -79,7 +80,9 @@
     }];
     
     
-    regTabBtn = [UIUtil initTabBtnWithTitle:@"註冊"  tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    
+    [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -207,11 +210,11 @@
         loginBottomLine.hidden = NO;
         regBottomLine.hidden = YES;
         
+//        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+//        [regTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
+        
     }else{
-        
-        
-//        loginTabBtn.backgroundColor = [UIColor whiteColor];
-//        regTabBtn.backgroundColor = [UIColor colorWithHexString:@"ff3a3b"];
+    
         
         [loginTabBtn setSelected:NO];
         [regTabBtn setSelected:YES];
@@ -221,6 +224,9 @@
         
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
+        
+//        [regTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+//        [loginTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
     }
 }
 @end

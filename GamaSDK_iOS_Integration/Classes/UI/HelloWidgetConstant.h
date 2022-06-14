@@ -185,8 +185,8 @@
 //#define kBgAlpha                         0.9f
 //
 //// 底图原尺寸
-#define bgOriginWidth           Device_Is_Landscape ? 1330.0f : 803.0f
-#define bgOriginHeight          Device_Is_Landscape ? 803.0f : 1330.0f
+//#define bgOriginWidth           Device_Is_Landscape ? 1330.0f : 803.0f
+//#define bgOriginHeight          Device_Is_Landscape ? 803.0f : 1330.0f
 //
 //#define portraitBgRate          0.588f
 

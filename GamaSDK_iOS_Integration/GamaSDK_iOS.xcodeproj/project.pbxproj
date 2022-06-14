@@ -57,6 +57,7 @@
 		034B7B76284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
 		03FA12D42853565200BBBEB4 /* WelcomeBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* WelcomeBackView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		22AA03211F308AB4001C8B51 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AA03201F308AB4001C8B51 /* GameKit.framework */; };
@@ -142,7 +143,7 @@
 		32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
 		32BE13E024FB686E000BDFBE /* libFLSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DF6AB11EAD9A4C0003610E /* libFLSDK.a */; };
 		32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
-		32CDA792253FD43100D3969F /* MainLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* MainLoginView.m */; };
+		32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* LoginWithRegView.m */; };
 		32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
 		32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32D790EE24D55D69006A2F69 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -197,10 +198,7 @@
 		E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
 		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
 		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
-		E9741303208858260018E1A6 /* ViewCalculationCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = E974128120874A170018E1A6 /* ViewCalculationCriteria.m */; };
 		E98131A921831A0200819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E98131AA2183258200819215 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */; };
-		E98131AB2183258800819215 /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF1BF121180EA200B0C591 /* UIImage+Gradient.m */; };
 		E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
 		E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -274,6 +272,8 @@
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
 		03EA360A2850989900723340 /* MainHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeView.h; sourceTree = "<group>"; };
+		03F59A49285776730062B6EE /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
+		03F59A4A285776730062B6EE /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		03FA12D22853565200BBBEB4 /* WelcomeBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeBackView.h; sourceTree = "<group>"; };
 		03FA12D32853565200BBBEB4 /* WelcomeBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeBackView.m; sourceTree = "<group>"; };
 		22AA03201F308AB4001C8B51 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -490,8 +490,8 @@
 		32C9BC5424C5EA0800B3D704 /* SDKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKRequest.m; sourceTree = "<group>"; };
 		32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoInfo.plist; sourceTree = "<group>"; };
 		32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		32CDA790253FD43100D3969F /* MainLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoginView.h; sourceTree = "<group>"; };
-		32CDA791253FD43100D3969F /* MainLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainLoginView.m; sourceTree = "<group>"; };
+		32CDA790253FD43100D3969F /* LoginWithRegView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginWithRegView.h; sourceTree = "<group>"; };
+		32CDA791253FD43100D3969F /* LoginWithRegView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegView.m; sourceTree = "<group>"; };
 		32CDA7932540371A00D3969F /* LoginTypeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTypeButton.h; sourceTree = "<group>"; };
 		32CDA7942540371A00D3969F /* LoginTypeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTypeButton.m; sourceTree = "<group>"; };
 		32D790E724D51EBE006A2F69 /* SDKIconTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKIconTitleButton.h; sourceTree = "<group>"; };
@@ -573,7 +573,6 @@
 		E97411CE20874A170018E1A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E97411D020874A170018E1A6 /* GamaSDK+GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+GameCenter.h"; sourceTree = "<group>"; };
 		E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+GameCenter.m"; sourceTree = "<group>"; };
-		E97411D220874A170018E1A6 /* GamaSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamaSDK-Prefix.pch"; sourceTree = "<group>"; };
 		E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaNetEngine+ThirdPlatformRequest.m"; sourceTree = "<group>"; };
 		E97411D720874A170018E1A6 /* GamaNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaNetEngine.h; sourceTree = "<group>"; };
 		E97411D820874A170018E1A6 /* GamaNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaNetEngine.m; sourceTree = "<group>"; };
@@ -586,8 +585,6 @@
 		E974127B20874A170018E1A6 /* HelloWidgetConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWidgetConstant.h; sourceTree = "<group>"; };
 		E974127E20874A170018E1A6 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		E974127F20874A170018E1A6 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
-		E974128020874A170018E1A6 /* ViewCalculationCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCalculationCriteria.h; sourceTree = "<group>"; };
-		E974128120874A170018E1A6 /* ViewCalculationCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCalculationCriteria.m; sourceTree = "<group>"; };
 		E98131A6218319E900819215 /* GamaTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaTimer.h; sourceTree = "<group>"; };
 		E98131A7218319E900819215 /* GamaTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaTimer.m; sourceTree = "<group>"; };
 		E98E851F23825AB700257BDE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -601,10 +598,6 @@
 		E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Gama.m"; sourceTree = "<group>"; };
 		E9BF52DF21C1FA61003DE3F9 /* libGamaFacebook_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaFacebook_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BF52F321C236C6003DE3F9 /* libGamaFacebook_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaFacebook_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9DF1BF121180EA200B0C591 /* UIImage+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gradient.m"; sourceTree = "<group>"; };
-		E9DF1BF221180EA300B0C591 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
-		E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
-		E9DF1BF421180EA300B0C591 /* UIImage+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gradient.h"; sourceTree = "<group>"; };
 		E9DF1BF92118552200B0C591 /* libGamaAD_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAD_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4D964244EFFD900937AD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9F4D9662452C4DB00937AD5 /* GamaSDK_CORE_20200424_145341.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GamaSDK_CORE_20200424_145341.a; path = ../GamaResources/_LibGroup/GamaCoreFunc_DotA/GamaSDK_CORE_20200424_145341.a; sourceTree = "<group>"; };
@@ -748,6 +741,15 @@
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
+		03F59A48285776460062B6EE /* SDKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				03F59A49285776730062B6EE /* UIView+BlockGesture.h */,
+				03F59A4A285776730062B6EE /* UIView+BlockGesture.m */,
+			);
+			path = SDKCategory;
+			sourceTree = "<group>";
+		};
 		220B859D1E572CD000505690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,6 +868,7 @@
 		322CBBA224C589A5000D6B20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				03F59A48285776460062B6EE /* SDKCategory */,
 				322CBBBA24C589A5000D6B20 /* CComHeader.h */,
 				322CBBD524C589A5000D6B20 /* Utils */,
 				322CBBE324C589A5000D6B20 /* YYModel */,
@@ -1000,8 +1003,8 @@
 				322CBC1F24C589A5000D6B20 /* widget */,
 				32D790EB24D55D69006A2F69 /* TermsView.h */,
 				32D790EC24D55D69006A2F69 /* TermsView.m */,
-				32CDA790253FD43100D3969F /* MainLoginView.h */,
-				32CDA791253FD43100D3969F /* MainLoginView.m */,
+				32CDA790253FD43100D3969F /* LoginWithRegView.h */,
+				32CDA791253FD43100D3969F /* LoginWithRegView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1437,7 +1440,6 @@
 		E97411B720874A170018E1A6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E97411D220874A170018E1A6 /* GamaSDK-Prefix.pch */,
 				E97411D020874A170018E1A6 /* GamaSDK+GameCenter.h */,
 				E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */,
 				00087B6821AA5D1300236DEA /* GamaSDK+Social.h */,
@@ -1517,16 +1519,10 @@
 				E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */,
 				E974126E20874A170018E1A6 /* HelloHeader.h */,
 				E974127B20874A170018E1A6 /* HelloWidgetConstant.h */,
-				E9DF1BF221180EA300B0C591 /* UIButton+Gradient.h */,
-				E9DF1BF321180EA300B0C591 /* UIButton+Gradient.m */,
 				E974127E20874A170018E1A6 /* UIColor+HexColor.h */,
 				E974127F20874A170018E1A6 /* UIColor+HexColor.m */,
-				E9DF1BF421180EA300B0C591 /* UIImage+Gradient.h */,
-				E9DF1BF121180EA200B0C591 /* UIImage+Gradient.m */,
 				E99EB28821BE5633004FF8B5 /* UIScreen+Gama.h */,
 				E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */,
-				E974128020874A170018E1A6 /* ViewCalculationCriteria.h */,
-				E974128120874A170018E1A6 /* ViewCalculationCriteria.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1726,13 +1722,10 @@
 				32506CC924F920FA00010D7B /* UIImageView+WebCache.m in Sources */,
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				E98131A921831A0200819215 /* GamaTimer.m in Sources */,
-				E98131AA2183258200819215 /* UIButton+Gradient.m in Sources */,
 				32506CBF24F920FA00010D7B /* SDWebImageCompat.m in Sources */,
 				32506CBB24F920FA00010D7B /* UIImage+GIF.m in Sources */,
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
-				E98131AB2183258800819215 /* UIImage+Gradient.m in Sources */,
 				32506C7F24F920F900010D7B /* ViewController+MASAdditions.m in Sources */,
-				E9741303208858260018E1A6 /* ViewCalculationCriteria.m in Sources */,
 				E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */,
 				E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */,
 				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
@@ -1743,13 +1736,14 @@
 				E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */,
 				00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */,
 				00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */,
-				32CDA792253FD43100D3969F /* MainLoginView.m in Sources */,
+				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
 				32506C8D24F920F900010D7B /* MASViewConstraint.m in Sources */,
 				E947D352221ED76200490C35 /* GamaInterfaceSDK.m in Sources */,
 				E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */,
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				E947D354221ED7F300490C35 /* GamaBaseSDK.m in Sources */,
 				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
+				03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* AppleLogin.m in Sources */,
 				32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */,
 			);
@@ -1989,7 +1983,7 @@
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.19.0/FirebaseMessaging",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.31.0/FirebaseAnalytics",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Classes/GamaSDK-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;
@@ -2058,7 +2052,7 @@
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.19.0/FirebaseMessaging",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.31.0/FirebaseAnalytics",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Classes/GamaSDK-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;

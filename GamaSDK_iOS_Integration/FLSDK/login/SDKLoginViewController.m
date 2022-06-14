@@ -20,7 +20,7 @@
 #import "AccountModel.h"
 #import "Masonry.h"
 #import "TermsView.h"
-#import "MainLoginView.h"
+#import "LoginWithRegView.h"
 #import "MainHomeView.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
@@ -33,7 +33,7 @@
    
 //    AccountLoginView *mAccountLoginView;
     SdkAutoLoginView *mAutoLoginView;
-    MainLoginView *mMainLoginView;
+    LoginWithRegView *mLoginWithRegView;
     
     UIView *sdkContentView;
 }
@@ -115,7 +115,7 @@
 - (void)showTramsView {
     TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
         //[self addMainLoginView];//同意之后打开登录页面
-        [mMainLoginView.mAccountLoginView updateTermsStatus];
+        [mLoginWithRegView.mAccountLoginView updateTermsStatus];
     }];
     
     mTermsView.delegate = self;
@@ -192,13 +192,13 @@
 
 #pragma mark -頁面添加部分
 
--(void)addMainLoginView
+-(void)addLoginWithRegView
 {
     //移除所有子视图
 //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    mMainLoginView = [[MainLoginView alloc] initView];
-    [self addSubSdkLoginView:mMainLoginView];
+    mLoginWithRegView = [[LoginWithRegView alloc] initView];
+    [self addSubSdkLoginView:mLoginWithRegView];
 }
 
 //-(void)addSelectLoginTypeView
@@ -360,14 +360,9 @@
             //[self addSelectLoginTypeView];//選擇登入方式
             break;
             
-        case CURRENT_PAGE_TYPE_LOGIN_ACCOUNT:
-            //[self addAccountLoginView];//賬號登入頁面
-            [self addMainLoginView];
-            break;
-            
-        case CURRENT_PAGE_TYPE_REG_ACCOUNT:
-           // [self addRegisterAccountView];//註冊
-            [self addMainLoginView];
+        case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
+            //[self addAccountLoginView];//賬號登入和注册頁面
+            [self addLoginWithRegView];
             break;
             
         case CURRENT_PAGE_TYPE_CHANGE_PWD:
@@ -394,8 +389,8 @@
     
     switch (page) {
         case CURRENT_PAGE_TYPE_FIND_PWD:
-            if (mMainLoginView) {
-                mMainLoginView.hidden = NO;
+            if (mLoginWithRegView) {
+                mLoginWithRegView.hidden = NO;
             }
             break;
             

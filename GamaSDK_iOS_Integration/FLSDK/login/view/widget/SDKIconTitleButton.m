@@ -108,7 +108,7 @@
         }];
               
         //账号
-        UIButton *mButton = [SdkUtil initBtnWithTag:tag selector:selector target:target];
+        UIButton *mButton = [UIUtil initBtnWithTitleText:nil fontSize:14 textColor:nil tag:tag selector:selector target:target];//[SdkUtil initBtnWithTag:tag selector:selector target:target];
         mButton.backgroundColor = [UIColor clearColor];
         [self addSubview:mButton];
           

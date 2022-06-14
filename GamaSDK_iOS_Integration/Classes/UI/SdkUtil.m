@@ -11,18 +11,13 @@
 #import <Photos/Photos.h>
 
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
-#define GAMA_LAST_STARPY_LOGIN_USER_INFO_KEY @"GAMA_LAST_STARPY_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
 
 #define kEncryKey @"GAMAENKEY"
 #define kEncryIv  @"GAMAENIV"
 
-#define hFirstLoginKey              @"hello_first_login_sign"
-#define hFirstGuestLoginKey         @"hello_first_guest_login_sign"
-#define hTodayNotShowAnyMoreKey     @"hello_today_not_show_any_more_sign"
 #define hLoginType                  @"hello_login_type"
 #define hLoginUserName              @"hello_login_user_name"
-#define hLogoutClickedKey           @"hello_logout_clicked_sign"
 
 #define kLoadingTag     9999
 
@@ -31,80 +26,7 @@
 
 @implementation SdkUtil
 
-+ (BOOL)isFirstLogin
-{
-    if (![self _userdefaultGetObjForKey:hFirstLoginKey]) {
-        return NO;
-    }
-    return YES;
-}
 
-+ (void)firstLoginSign
-{
-    NSString *sign = @"firstLoginSign";
-    [self _userdefaultSetObject:sign forKey:hFirstLoginKey];
-}
-
-+ (BOOL)isFirstGuestLogin
-{
-    if (![self _userdefaultGetObjForKey:hFirstGuestLoginKey]) {
-        return NO;
-    }
-    return YES;
-}
-
-+ (void)firstGuestLoginSign
-{
-    NSString *sign = @"firstGuestLoginSign";
-    [self _userdefaultSetObject:sign forKey:hFirstLoginKey];
-}
-
-+ (BOOL)hasClickLogout
-{
-    if (![self _userdefaultGetObjForKey:hLogoutClickedKey]) {
-        return NO;
-    }
-    return YES;
-}
-
-+ (void)logoutSign
-{
-    NSString *sign = @"helloLogoutSign";
-    [self _userdefaultSetObject:sign forKey:hLogoutClickedKey];
-}
-
-+ (void)removeLogoutSign
-{
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:hLogoutClickedKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-+ (BOOL)isAccountValid
-{
-    return YES;
-}
-
-#pragma mark - NSUserdefault
-
-+ (void)setLoginType:(NSString *)loginType
-{
-    
-}
-
-+ (NSString *)getLoginType
-{
-    return @"";
-}
-
-+ (BOOL)getTodayNotShowAdwallAnyMoreStatus
-{
-    return [self _userdefaultGetBoolForKey:hTodayNotShowAnyMoreKey];
-}
-
-+ (void)setTodayNotShowAdwallAnyMoreStatus:(BOOL)checkedStatus
-{
-    [self _userdefaultSetBool:checkedStatus forKey:hTodayNotShowAnyMoreKey];
-}
 
 // ---- register excute two times
 + (void)recordStateLoginWithType:(NSString *)type andUserName:(NSString *)name
@@ -162,142 +84,32 @@
 
 #pragma mark - UI
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                                 tag:(NSUInteger)tag
-                            selector:(SEL)selector
-                              target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
-    [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    
-    return btn;
-}
 
-+ (UIButton *)initBtnWithTag:(NSUInteger)tag
-                            selector:(SEL)selector
-                              target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    
-    return btn;
-}
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-                                 tag:(NSUInteger)tag
-                            selector:(SEL)selector
-                              target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor blackColor] forState:0];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [btn.layer setBorderWidth:1.5f];
-    [btn.layer setBorderColor:RGB(32, 45, 57)];
-    [btn.layer setMasksToBounds:YES];
-    [btn.layer setCornerRadius:5.0f];
-    
-    return btn;
-}
-
-+ (UIButton *)initBtnWithType:(UIButtonType)type
-                        title:(NSString *)titleText
-                          tag:(NSUInteger)tag
-                     selector:(SEL)selector
-                       target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:type];
-    [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor blackColor] forState:0];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [btn.layer setBorderWidth:1.5f];
-    [btn.layer setBorderColor:[UIColor grayColor].CGColor];
-    [btn.layer setMasksToBounds:YES];
-    [btn.layer setCornerRadius:5.0f];
-    [btn.titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-    
-    return btn;
-}
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-               backgroundColor:(NSString *)hexColor
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor whiteColor] forState:0];
-    [btn setBackgroundColor:[UIColor colorWithHexString:hexColor]];
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [btn.layer setBorderWidth:1.0f];
-    [btn.layer setBorderColor:[UIColor whiteColor].CGColor];
-    [btn.layer setMasksToBounds:YES];
-    [btn.layer setCornerRadius:2.0f];
-    
-    return btn;
-}
-
-+ (UIButton *)initBtnWithTitle:(NSString *)titleText
-               backgroundImage:(NSString *)imageStr
-                           tag:(NSUInteger)tag
-                      selector:(SEL)selector
-                        target:(id)target
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:titleText forState:0];
-    [btn setTitleColor:[UIColor whiteColor] forState:0];
-//    [btn setBackgroundImage:GetImage(imageStr) forState:0];
-    [btn setBackgroundColor:RGB(88, 133, 239)];
-    btn.layer.cornerRadius = FONTSIZE(8);
-    [btn setTag:tag];
-    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [btn.titleLabel setFont:[UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(12)]];
-    return btn;
-}
-
-+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
-                                               urlStirng:(NSString *)urlString
-                                            cornerRadius:(CGFloat)radius
-                                                delegate:(id)delegate
-{
-    WKWebView *resultWebView;
-    NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
-    WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-    WKUserContentController *wkUController = [[WKUserContentController alloc] init]; [wkUController addUserScript:wkUScript];
-    WKWebViewConfiguration *wkWebConfig = [[WKWebViewConfiguration alloc] init];
-    wkWebConfig.userContentController = wkUController;
-    resultWebView = [[WKWebView alloc] initWithFrame:rect configuration:wkWebConfig];
-
-//    resultWebView = [[WKWebView alloc] initWithFrame:rect];
-//    resultWebView.scalesPageToFit = YES;
-//    resultWebView.delegate = delegate;
-    resultWebView.UIDelegate = delegate;
-    
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
-    [resultWebView loadRequest:request];
-    [request release];
-    return [resultWebView autorelease];
-}
+//+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
+//                                               urlStirng:(NSString *)urlString
+//                                            cornerRadius:(CGFloat)radius
+//                                                delegate:(id)delegate
+//{
+//    WKWebView *resultWebView;
+//    NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+//    WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+//    WKUserContentController *wkUController = [[WKUserContentController alloc] init]; [wkUController addUserScript:wkUScript];
+//    WKWebViewConfiguration *wkWebConfig = [[WKWebViewConfiguration alloc] init];
+//    wkWebConfig.userContentController = wkUController;
+//    resultWebView = [[WKWebView alloc] initWithFrame:rect configuration:wkWebConfig];
+//
+////    resultWebView = [[WKWebView alloc] initWithFrame:rect];
+////    resultWebView.scalesPageToFit = YES;
+////    resultWebView.delegate = delegate;
+//    resultWebView.UIDelegate = delegate;
+//
+//    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
+//    [resultWebView loadRequest:request];
+//    [request release];
+//    return [resultWebView autorelease];
+//}
 
 
-+ (void)makeTextFieldPlaceHolderProperty:(UITextField *)textField
-{
-    NSMutableParagraphStyle *style = [textField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
-    style.minimumLineHeight = textField.font.lineHeight - (textField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
-    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:textField.placeholder attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSParagraphStyleAttributeName:style}];
-    [style release];
-    [textField setAttributedPlaceholder:attrStr];
-    [attrStr release];
-}
 
 + (CGSize)calculateSizeOfLabel:(UILabel *)label
 {
@@ -306,19 +118,19 @@
                                               options:NSStringDrawingTruncatesLastVisibleLine
                                            attributes:@{NSFontAttributeName:label.font}
                                               context:nil].size;
-    
+
     return CGSizeMake(ceil(resultSize.width)+1, ceil(resultSize.height)+1);
 }
 
 + (CGSize)calculateSizeOfLabel:(UILabel *)label andWidth:(CGFloat)width
 {
     NSString *labelStr = label.text;
-    
+
     NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     style.lineBreakMode = NSLineBreakByWordWrapping;
     style.alignment = NSTextAlignmentLeft;
-    
-    
+
+
     CGSize resultSize = [labelStr boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
                                                options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading //NSStringDrawingTruncatesLastVisibleLine
                                             attributes:@{NSFontAttributeName:label.font,NSParagraphStyleAttributeName:style}
@@ -439,9 +251,7 @@
 {
     NSString *triStr = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *regex = @"^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";//^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\W]).{8,16}$
-    if([SDKConReaderGetString(GAMA_GAME_LANGUAGE) isEqualToString:@"en"]){
-        regex = @"(^[A-Za-z0-9]{6,18}$)";
-    }
+   
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     return [pred evaluateWithObject:triStr];
 }
@@ -523,13 +333,8 @@
         toastLabel.backgroundColor = [UIColor clearColor];
         toastLabel.textColor = [UIColor whiteColor];
 
-        if([SDKConReaderGetString(GAMA_GAME_LANGUAGE) isEqualToString:@"ja-JP"]){
-            toastLabel.font = [UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(10)];
-        }else if([SDKConReaderGetString(GAMA_GAME_LANGUAGE) isEqualToString:@"en"]){
-            toastLabel.font = [UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(12)];
-        }else{
-            toastLabel.font = [UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(16)];
-        }
+        
+        toastLabel.font = [UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(16)];
         toastLabel.textAlignment = NSTextAlignmentCenter;
         toastLabel.numberOfLines = 0;
 //        toastLabel.lineBreakMode = NSLineBreakByWordWrapping;
