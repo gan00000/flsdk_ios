@@ -146,8 +146,8 @@
     NSString *timeStamp = [GamaFunction getTimeStamp];
     // md5 和第三方充值的 sign 规则一样  appkey+gamecode(无ios)+timestamp
     NSString *signature = [GamaFunction getMD5StrFromString:[NSString stringWithFormat:@"%@%@%@",
-                                                           SDKConReaderGetString(GAMA_GAME_KEY),
-                                                           SDKConReaderGetString(SDK_GAME_CODE),
+                                                           GetConfigString(GAMA_GAME_KEY),
+                                                           GetConfigString(SDK_GAME_CODE),
                                                            timeStamp
                                                            ]];
     //    [signature lowercaseString];
@@ -163,7 +163,7 @@
                 
                 //
                 @"userId"                   :           [SdkUserInfoModel shareInfoModel].userId,
-                @"gameCode"                 :           [NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)],
+                @"gameCode"                 :           [NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
                 @"timestamp"                :           timeStamp,
                 @"signature"                :           [signature lowercaseString],
                 @"psid"                     :           @"62",
@@ -192,7 +192,7 @@
     {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At serviceParms:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At serviceParms:\n %@ \n %@", dic, exception.description]];
                        });
         SDK_LOG(exception.description);
     }
@@ -203,7 +203,7 @@
         NSString *tmpVal = dic[key];
         if (![tmpVal isKindOfClass:[NSString class]]) {
             NSString *errorInfo = [NSString stringWithFormat:@"ERROR Type:%@, key:%@, value:%@\n allValue: %@",[tmpVal class],key, tmpVal,dic];
-            [GamaAlertView showAlertWithMessage:errorInfo];
+            [AlertUtil showAlertWithMessage:errorInfo];
             NSString *fullDicInfo = [NSString stringWithFormat:@"%@",dic];
             SDK_LOG(fullDicInfo);
             continue ;
@@ -297,12 +297,12 @@
 
 #pragma mark - Toast
 
-+ (void)gamaToastWithMsg:(NSString *)msg
++ (void)toastMsg:(NSString *)msg
 {
-    [self gamaToastWithMsg:msg atView:nil];
+    [self toastMsg:msg atView:nil];
 }
 
-+ (void)gamaToastWithMsg:(NSString *)msg atView:(UIView *)baseView
++ (void)toastMsg:(NSString *)msg atView:(UIView *)baseView
 {
     if (!baseView) {
         baseView = [UIApplication sharedApplication].windows[0];
@@ -503,13 +503,13 @@
     UIImage *img = [UIImage imageWithData:imageData];
     
     // 根据英文版本审核时通常因为相册问题被拒绝
-//    [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
+//    [GamaAlertView showAlertWithMessage:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
 //                           completion:^(NSInteger clickedBtnIndex) {
 //                               if (clickedBtnIndex == 1) {
 //                                   // save img to photo
                                    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
 //                               }
-//                           } andButtonTitles:SDKConReaderGetLocalizedString(@"BTN_TITLE_TXT_CANCEL"),SDKConReaderGetLocalizedString(@"BTN_TITLE_TXT_COMFIRM"), nil];
+//                           } andButtonTitles:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
     
     // save img to photo
     //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
@@ -576,12 +576,12 @@
 {
     NSString *msg = nil ;
     if(error != NULL){
-        msg = SDKConReaderGetLocalizedString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_FAIL") ;
+        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_FAIL") ;
     }else{
-        msg = SDKConReaderGetLocalizedString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
+        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
     }
     
-    [SdkUtil gamaToastWithMsg:msg];
+    [SdkUtil toastMsg:msg];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_NOTE_SAVE_PHOTO object:nil userInfo:nil];
 }

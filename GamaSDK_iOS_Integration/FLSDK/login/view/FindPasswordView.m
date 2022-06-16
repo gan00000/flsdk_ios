@@ -244,13 +244,13 @@
     
     
     if (![SdkUtil validUserName:userName]) {
-        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+        [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
         return;
     }
     
     if ([@"" isEqualToString:vfCode]) {
         
-        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
+        [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
         return;
     }
     
@@ -261,14 +261,14 @@
         //        [[ConfigCoreUtil share] saveAccount:userName password:@"" updateTime:NO];
         [[ConfigCoreUtil share] removeAccount:userName];
         //通知更新登录界面的数据
-        [GamaAlertView showAlertWithMessage: cc.message];
+        [AlertUtil showAlertWithMessage: cc.message];
         if (self.delegate) {
             [self.delegate changPasswordSuccess];
         }
         [self removeFromSuperview];//返回登录界面
         
     } errorBlock:^(BJError *error) {
-        [GamaAlertView showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage:error.message];
     }];
     
 }
@@ -281,7 +281,7 @@
         [self downTime];
     } errorBlock:^(BJError *error) {
         [self resetVfCodeBtnStatue];
-        [GamaAlertView showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage:error.message];
     }];
 }
 

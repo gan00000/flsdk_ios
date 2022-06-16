@@ -15,7 +15,7 @@
 #import <Foundation/Foundation.h>
 #import "GamaAlertViewDelegate.h"
 
-@interface GamaAlertView : NSObject
+@interface AlertUtil : NSObject
 
 
 /**

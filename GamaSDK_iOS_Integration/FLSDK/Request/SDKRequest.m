@@ -83,9 +83,9 @@
     //空参数监测,这里只做简单处理。
     if (userName==nil|| [userName isEqualToString:@""]|| password==nil|| [password isEqualToString:@""])
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:GetString(GAMA_TEXT_PARAMETER_NULL)];
         BJError *mBJError = [[BJError alloc] init];
-        mBJError.message = SDKConReaderGetLocalizedString(GAMA_TEXT_PARAMETER_NULL);
+        mBJError.message = GetString(GAMA_TEXT_PARAMETER_NULL);
         errorBlock(mBJError);
         return;
     }
@@ -96,11 +96,11 @@
     NSString *timestamp = [GamaFunction getTimeStamp];
     //获取md5加密的值
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendFormat:@"%@",GetConfigString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendFormat:@"%@",timestamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
     [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
-    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
+    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];//gamecode
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
@@ -108,7 +108,7 @@
         dic = @{
             @"signature"        :[md5SignStr lowercaseString],
             @"timestamp"        :timestamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)],
+            @"gameCode"         :[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
             @"name"             :[userName lowercaseString],
             @"pwd"              :[[GamaFunction getMD5StrFromString:password] lowercaseString],
             
@@ -118,7 +118,7 @@
     } @catch (NSException *exception) {
         
     }
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_LOGIN_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_STANDARD_LOGIN_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 
@@ -136,22 +136,22 @@
     
     NSString *timeStamp = [GamaFunction getTimeStamp];
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendFormat:@"%@",GetConfigString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
+    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];//gamecode
     [md5str appendFormat:@"%@",phoneN]; //手机号
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     NSDictionary *dic = @{@"phone":phoneN,
                           @"phoneAreaCode":phoneArea,
                           @"interfaces":interfaces,
-                          @"gameCode":[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)],
+                          @"gameCode":[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
                           @"timestamp":timeStamp,
                           @"signature":md5SignStr
     };
     
     [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_ACQUIRE_PHONE_VERTIFY_CODE) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_ACQUIRE_PHONE_VERTIFY_CODE) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -176,8 +176,8 @@
         //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
         @"uniqueId"         :     [[GamaFunction getGamaUUID] lowercaseString]? : @"",
         
-        @"spy_platForm"       :   SDKConReaderGetString(@"spy_platForm")? :@"",
-        @"spy_advertiser"     :   SDKConReaderGetString(@"spy_advertiser")? :@"",
+        @"spy_platForm"       :   GetConfigString(@"spy_platForm")? :@"",
+        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
         
     };
     
@@ -206,11 +206,11 @@
     NSString * timeStamp=[GamaFunction getTimeStamp];
     //获取md5加密的值
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendFormat:@"%@",GetConfigString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
     [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
-    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];
+    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
@@ -232,7 +232,7 @@
     }
     
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_REGISTER_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_STANDARD_REGISTER_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -254,7 +254,7 @@
         [newPassword isEqualToString:@""])
     {
         BJError *err = [[BJError alloc] init];
-        err.message = SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL);
+        err.message = GetConfigString(GAMA_TEXT_PARAMETER_NULL);
         errorBlock(err);
         return;
     }
@@ -268,12 +268,12 @@
     
     //获取md5加密的值gamesPojo.getAppKey() + timestamp + name + pwd + newPwd + gameCode;
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendString:SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendString:GetConfigString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
     [md5str appendString:[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
     [md5str appendString:[[GamaFunction getMD5StrFromString:newPassword] lowercaseString]]; //新密码
-    [md5str appendString:[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]]; //gamecode
+    [md5str appendString:[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)]]; //gamecode
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
@@ -293,7 +293,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_CHANGE_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_STANDARD_CHANGE_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -346,7 +346,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_STANDARD_FIND_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_STANDARD_FIND_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -363,7 +363,7 @@
 //    GameCode+ServerCode+UserId() + RoleId() + "FLYFUNGAME","UTF-8"
 //    NSString *timeStamp = [GamaFunction getTimeStamp];
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
+    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];//gamecode
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].serverCode];
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].userId];
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].roleID];
@@ -427,11 +427,11 @@
     NSString * timeStamp=[GamaFunction getTimeStamp];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendFormat:@"%@",GetConfigString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
     [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
-    [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];
+    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];
     [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
     [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
@@ -441,7 +441,7 @@
         NSDictionary *dic = @{
             @"signature"        :[md5SignStr lowercaseString],
             @"timestamp"        :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)],
+            @"gameCode"         :[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
             @"name"             :[userName lowercaseString],
             @"pwd"              :[[GamaFunction getMD5StrFromString:password] lowercaseString],
             @"thirdPlatId"      :[thirdId lowercaseString],
@@ -458,7 +458,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:SDKConReaderGetString(GAMA_LOGIN_THIRD_BINDING_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_THIRD_BINDING_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 

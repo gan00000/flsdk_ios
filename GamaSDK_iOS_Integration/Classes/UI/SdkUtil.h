@@ -34,8 +34,8 @@
 
 #pragma mark - Toast
 
-+ (void)gamaToastWithMsg:(NSString *)msg;
-+ (void)gamaToastWithMsg:(NSString *)msg atView:(UIView *)baseView;
++ (void)toastMsg:(NSString *)msg;
++ (void)toastMsg:(NSString *)msg atView:(UIView *)baseView;
 // loading
 + (void)gamaStarLoadingAtView:(UIView *)baseView;
 + (void)gamaStopLoadingAtView:(UIView *)baseView;

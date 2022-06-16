@@ -9,7 +9,7 @@
 + (NSString*) getGamaCfUUID
 {
     //判断配置文件是否要用共有keychain
-//    if ([SDKConReaderGetString(GAMA_GAME_IS_KEYCHAIN_PUBLIC) isEqualToString:@"YES"])
+//    if ([GetConfigString(GAMA_GAME_IS_KEYCHAIN_PUBLIC) isEqualToString:@"YES"])
 //    {
 //        return [self getGamaCfUUIDFromPublicKeychain];
 //    }

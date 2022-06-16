@@ -37,11 +37,11 @@
     //弹出提示窗口
     if (handler==nil)
     {
-        return [GamaAlertView showAlertWithMessage:message];
+        return [AlertUtil showAlertWithMessage:message];
     }
     else
     {
-        return [GamaAlertView showAlertWithMessage:message
+        return [AlertUtil showAlertWithMessage:message
                                         completion:handler
                                    andButtonTitles:@"確定", nil];
     }

@@ -38,7 +38,7 @@ static Class g_fbClass = nil;
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
-            [GamaAlertView showAlertWithMessage:@"Please import Facebook SDK Framework."];
+            [AlertUtil showAlertWithMessage:@"Please import Facebook SDK Framework."];
         });
     }
 }
@@ -103,13 +103,13 @@ static Class g_fbClass = nil;
                                  if (loginError) {      //Error
                                      GAMA_FUNCTION_LOG(loginError);
                                      //提示用户获取token失败
-                                     [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_LOGIN_TEXT_GET_FB_TOKEN_FAIL)];
+                                     [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_LOGIN_TEXT_GET_FB_TOKEN_FAIL)];
 
                                      
                                      !callBackBlock ? : callBackBlock(loginError, [GamaFacebookCenter getFacebookId], [GamaFacebookCenter getFacebookTokenStr]);
                                  } else if (isLoginCancle) {      //@"Cancelled"
                                      //提示用户获取token失败
-                                     [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_LOGIN_TEXT_GET_FB_INFO_FAIL)];
+                                     [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_LOGIN_TEXT_GET_FB_INFO_FAIL)];
 
                                      NSError *error = [NSError errorWithDomain:@"Facebook Login" code:1001 userInfo:@{@"userInfo":@"user cancle facebook authorize!"}];
                                      !callBackBlock ? : callBackBlock(error, [GamaFacebookCenter getFacebookId], [GamaFacebookCenter getFacebookTokenStr]);

@@ -104,14 +104,14 @@
                        }
                        
                        if ([[NSString stringWithFormat:@"%@",resultJsonDic[@"code"]] isEqualToString:@"9001"]) {
-                           [GamaAlertView showAlertWithMessage:resultJsonDic[@"message"] completion:^(NSInteger clickedBtnIndex) {
+                           [AlertUtil showAlertWithMessage:resultJsonDic[@"message"] completion:^(NSInteger clickedBtnIndex) {
                                [[NSNotificationCenter defaultCenter] postNotificationName:IS_GUEST_BIND_ACCOUNT object:nil userInfo:resultJsonDic];
                            } andButtonTitles:@"立即綁定", nil];
                            return ;
                        }
                        
                        if ([[NSString stringWithFormat:@"%@",resultJsonDic[@"code"]] isEqualToString:@"9002"]) {
-                           [GamaAlertView showAlertWithMessage:resultJsonDic[@"message"]
+                           [AlertUtil showAlertWithMessage:resultJsonDic[@"message"]
                                                     completion:^(NSInteger clickedBtnIndex) {
                                if(clickedBtnIndex == 1){
                                    [[NSNotificationCenter defaultCenter] postNotificationName:IS_GUEST_BIND_ACCOUNT object:nil userInfo:resultJsonDic];
@@ -141,7 +141,7 @@
                                                                                           object:nil
                                                                                         userInfo:resultJsonDic];
                                    } else {
-                                       [GamaAlertView showAlertWithMessage:resultJsonDic[@"message"]];
+                                       [AlertUtil showAlertWithMessage:resultJsonDic[@"message"]];
                                        [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_LOGIN_FAIL
                                                                                           object:nil
                                                                                         userInfo:resultJsonDic];
@@ -182,7 +182,7 @@
                                                                               object:nil
                                                                             userInfo:resultJsonDic];
                        } else {
-                           [GamaAlertView showAlertWithMessage:resultJsonDic[@"message"]];
+                           [AlertUtil showAlertWithMessage:resultJsonDic[@"message"]];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_LOGIN_FAIL
                                                                               object:nil
                                                                             userInfo:resultJsonDic];
@@ -191,7 +191,7 @@
                    else
                    {
                        // 广播失败
-                       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+                       [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
                        [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_LOGIN_FAIL
                                                                           object:nil];
 
@@ -296,7 +296,7 @@
                                                                               object:nil
                                                                             userInfo:resultJsonDic];
                        } else {
-                           [GamaAlertView showAlertWithMessage:resultJsonDic[@"message"]];
+                           [AlertUtil showAlertWithMessage:resultJsonDic[@"message"]];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_PHONE_BIND_FAIL
                                                                               object:nil
                                                                             userInfo:resultJsonDic];
@@ -305,7 +305,7 @@
                    else
                    {
                        // 广播失败
-                       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+                       [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
                        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PHONE_BIND_FAIL
                                                                           object:nil];
 
@@ -318,7 +318,7 @@
 {
     dispatch_async(dispatch_get_main_queue(),^
                    {
-                       [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At ThirdLogin:\n %@ \n %@", dic, exception.description]];
+                       [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At ThirdLogin:\n %@ \n %@", dic, exception.description]];
                    });
     GAMA_FUNCTION_LOG(exception.description);
 }
@@ -344,7 +344,7 @@
         thirdPlate==nil||
         [thirdPlate isEqualToString:@""])
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_TEXT_PARAMETER_NULL)];
         [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_ACCOUNT_BINDING_FAIL
                                                            object:nil];
         return;
@@ -380,7 +380,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -423,7 +423,7 @@
                                                       nil];
                            
                            NSString * message=resultJsonDic[@"message"];
-                           [GamaAlertView showAlertWithMessage:message];
+                           [AlertUtil showAlertWithMessage:message];
                            
                            //告诉绑定界面，绑定成功，移除掉绑定界面。
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_BINDING_SUCCESS//GAMA_ACCOUNT_BINDING_SUCCESS
@@ -435,7 +435,7 @@
                        else if(codeStr.length == 4)
                        {
                            NSString * message=resultJsonDic[@"message"];
-                           [GamaAlertView showAlertWithMessage:message];
+                           [AlertUtil showAlertWithMessage:message];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_BINDING_FAIL//GAMA_ACCOUNT_BINDING_FAIL
                                                                               object:nil];
                            
@@ -443,7 +443,7 @@
                        }
                        else
                        {
-                           [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                           [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_THIRD_BINDING_FAIL//GAMA_ACCOUNT_BINDING_FAIL
                                                                               object:nil];
                            return;
@@ -455,7 +455,7 @@
                    else
                    {
                        GAMA_LOGIN_LOG(@"register gama account no net")
-                       [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+                       [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
                        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_THIRD_BINDING_FAIL//GAMA_ACCOUNT_BINDING_FAIL
                                                                           object:nil];
                        return;

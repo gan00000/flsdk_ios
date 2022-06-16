@@ -8,7 +8,7 @@
 
 
 @interface GamaCoreConfReader ()
-@property (nonatomic, retain) NSString *m_stringsName;
+@property (nonatomic, copy) NSString *m_stringsName;
 @property (nonatomic, retain) NSBundle *m_stringsBundle;
 @end
 

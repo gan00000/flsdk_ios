@@ -169,7 +169,7 @@
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
                 //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
-                [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
             }];
 

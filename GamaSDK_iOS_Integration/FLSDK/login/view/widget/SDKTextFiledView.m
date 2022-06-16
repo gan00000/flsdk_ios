@@ -78,13 +78,13 @@
         case SDKTextFiledView_Type_Password_New:
             iconName = @"mw_passowrd_icon.png";
             lableName = @"請輸入新密碼";
-            placeholderText = @"請輸入新密碼";//SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            placeholderText = @"請輸入新密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = @"mw_passowrd_icon.png";
             lableName = @"輸入舊密碼";
-            placeholderText = @"輸入舊密碼";//SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            placeholderText = @"輸入舊密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
             showEye = YES;
             break;
             

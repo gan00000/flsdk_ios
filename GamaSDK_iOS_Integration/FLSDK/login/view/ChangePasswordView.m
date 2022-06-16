@@ -126,27 +126,27 @@
             NSString *newPassword = newPasswordSDKTextFiledView.inputUITextField.text;
             
             if (!oldPassword || [oldPassword isEqualToString:@""]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD")];
+                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD")];
                 return;
             }
             if (!newPassword || [newPassword isEqualToString:@""]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW")];
+                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW")];
                 return;
             }
             
             if (!userName || [userName isEqualToString:@""]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
                 return;
             }
             
             if (![SdkUtil validUserName:userName]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
                 return;
             }
             
            
             if (![SdkUtil validPwd: newPassword]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
+                [SdkUtil toastMsg:GetString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
                 return;
             }
             
@@ -159,7 +159,7 @@
                 [newPassword isEqualToString:@""])
             {
                
-                [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
+                [AlertUtil showAlertWithMessage:GetConfigString(GAMA_TEXT_PARAMETER_NULL)];
                 return;
             }
         
@@ -167,14 +167,14 @@
                 CCSDKResponse *cc = (CCSDKResponse *)responseData;
                 [[ConfigCoreUtil share] saveAccount:userName password:newPassword updateTime:NO];
                 //通知更新登录界面的数据
-                [GamaAlertView showAlertWithMessage: cc.message];
+                [AlertUtil showAlertWithMessage: cc.message];
                 if (self.delegate) {
                     [self.delegate changPasswordSuccess];
                 }
                 [self removeFromSuperview];//返回登录界面
                 
             } errorBlock:^(BJError *error) {
-                [GamaAlertView showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage:error.message];
             }];
         }
             

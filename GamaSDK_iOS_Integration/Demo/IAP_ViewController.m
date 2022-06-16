@@ -91,7 +91,7 @@
     *extra = @"hehe";
 
     [[FLSDK share] pay:(SDK_PAY_TYPE_APPLE) productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, NSDictionary *result) {
-        [GamaAlertView showAlertWithMessage:@"completionHandler"];
+        [AlertUtil showAlertWithMessage:@"completionHandler"];
     }];
 }
 

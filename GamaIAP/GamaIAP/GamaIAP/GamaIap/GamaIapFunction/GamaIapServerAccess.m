@@ -125,7 +125,7 @@ static GamaIapServerAccess *_instance;
             receiptData ? [GamaIapData defaultData].transactionReciptData = receiptData : nil;
         }else{
             dispatch_async(dispatch_get_main_queue(), ^{
-                [GamaAlertView showAlertWithMessage:@"iap error: -404"];
+                [AlertUtil showAlertWithMessage:@"iap error: -404"];
             });
         }
     }
@@ -272,7 +272,7 @@ static GamaIapServerAccess *_instance;
                                         if (![resultCode isEqualToString:@""] && resultCode.length >0)
                                         {
                                             if (resultMutaDic[@"message"]) {
-                                                [GamaAlertView showAlertWithMessage:resultMutaDic[@"message"]];
+                                                [AlertUtil showAlertWithMessage:resultMutaDic[@"message"]];
                                             }else{
                                                 [GamaIapAlertView showAlertWithMessage:[NSString stringWithFormat:@"%@,tid:%@",
                                                                                         [GamaIapData defaultData].orderId ? [GamaIapData defaultData].orderId : orderId ,
@@ -402,7 +402,7 @@ static GamaIapServerAccess *_instance;
                               }
                               else if (!orderID || [orderID isEqualToString:@""]) {
                                   //提示用户
-                                  [GamaAlertView showAlertWithMessage:dic[@"message"]];
+                                  [AlertUtil showAlertWithMessage:dic[@"message"]];
                                   //修改购买中状态
                                   [GamaIapData defaultData].ISPURCHASING=NO;
                                   [GamaIapData defaultData].ISREPURCHASE=NO;

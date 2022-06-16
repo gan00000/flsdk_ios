@@ -15,7 +15,7 @@
         email==nil||
         [email isEqualToString:@""])
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
         [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                            object:nil];
         return;
@@ -38,7 +38,7 @@
     if (userName==nil||
         [userName isEqualToString:@""] || otherDic.count < 0)
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
         [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                            object:nil];
         return;
@@ -63,7 +63,7 @@
         code==nil||
         [code isEqualToString:@""])
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
         [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                            object:nil];
         return;
@@ -119,7 +119,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -150,7 +150,7 @@
                                                  nil];
                  //提示用户
                  NSString * message=resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  //發送廣播，让登陆view移出。
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_SUCCESS_IN
                                                                     object:nil
@@ -161,14 +161,14 @@
              else if(codeS.length==4)
              {
                  NSString * message = resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                     object:nil];
                  return;
              }
              else
              {
-                 [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                 [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                     object:nil];
                  return;
@@ -179,7 +179,7 @@
          else
          {
              GAMA_LOGIN_LOG(@"reget Gama account password no net")
-             [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+             [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
              [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                 object:nil];
              return;
@@ -226,7 +226,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -257,7 +257,7 @@
                                                  nil];
                  //提示用户
                  NSString * message=resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  //發送廣播，让登陆view移出。
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_SUCCESS_IN
                                                                     object:nil
@@ -268,14 +268,14 @@
              else if(codeS.length==4)
              {
                  NSString * message = resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                     object:nil];
                  return;
              }
              else
              {
-                 [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                 [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                     object:nil];
                  return;
@@ -286,7 +286,7 @@
          else
          {
              GAMA_LOGIN_LOG(@"reget Gama account password no net")
-             [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+             [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
              [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGET_PASSWORD_FAIL_IN
                                                                 object:nil];
              return;

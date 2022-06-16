@@ -41,7 +41,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -89,14 +89,14 @@
                        else if(codeStr.length==4)
                        {
                            NSString * message=resultJsonDic[@"message"];
-                           [GamaAlertView showAlertWithMessage:message];
+                           [AlertUtil showAlertWithMessage:message];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                               object:nil];
                            return;
                        }
                        else
                        {
-                           [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                           [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                               object:nil];
                            return;
@@ -106,7 +106,7 @@
                    else
                    {
                        GAMA_LOGIN_LOG(@"register Gama account no net")
-                       [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+                       [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
                        [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                           object:nil];
                        return;
@@ -149,7 +149,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -197,14 +197,14 @@
                        else if(codeStr.length==4)
                        {
                            NSString * message=resultJsonDic[@"message"];
-                           [GamaAlertView showAlertWithMessage:message];
+                           [AlertUtil showAlertWithMessage:message];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                               object:nil];
                            return;
                        }
                        else
                        {
-                           [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                           [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                            [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                               object:nil];
                            return;
@@ -214,7 +214,7 @@
                    else
                    {
                        GAMA_LOGIN_LOG(@"register Gama account no net")
-                       [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+                       [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
                        [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_REGISTER_FAIL_IN
                                                                           object:nil];
                        return;

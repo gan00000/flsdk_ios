@@ -18,6 +18,7 @@
 #import "GamaCentreInfo.h" //功能相关
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
+#import "SdkUtil.h"
 
 
 #ifndef CCSkyHourHeader_h

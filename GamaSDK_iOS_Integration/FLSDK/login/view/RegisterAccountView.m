@@ -226,11 +226,11 @@
 //        if ( self.bindType == 0) {
 //            mLoginTitleView.hidden = YES;
 //        }else{
-//            mLoginTitleView.titleLable.text = SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT");
+//            mLoginTitleView.titleLable.text = GetString(@"BTN_TITLE_BIND_ACCOUNT");
 //            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateNormal];
 //            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateHighlighted];
 //
-//            [regAccountBtn setTitle:SDKConReaderGetLocalizedString(@"GAMA_REGISTER_BIND_CONFIRM_TEXT") forState:(UIControlStateNormal)];
+//            [regAccountBtn setTitle:GetString(@"GAMA_REGISTER_BIND_CONFIRM_TEXT") forState:(UIControlStateNormal)];
 //        }
     }
     return self;
@@ -261,7 +261,7 @@
             NSString *areaCode = [mPhoneView getPhoneAreaCode];
             NSString *phoneNum = [mPhoneView getPhoneNumber];
             if (!phoneNum || [@"" isEqualToString:phoneNum]) {
-                [SdkUtil gamaToastWithMsg:@"請輸入電話號碼"];
+                [SdkUtil toastMsg:@"請輸入電話號碼"];
                 return;
             }
             [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
@@ -280,37 +280,37 @@
             NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
             if (!name || [name isEqualToString:@""]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
                 return;
             }
             
             
             if (!password || [password isEqualToString:@""]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
                 return;
             }
             
             if (![SdkUtil validUserName:name]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
                 return;
             }
             if (![SdkUtil validPwd:password]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
+                [SdkUtil toastMsg:GetString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
                 return;
             }
             
             if (![password isEqualToString:newPassword]) {
-                [SdkUtil gamaToastWithMsg:@"兩次輸入的密碼不一致"];
+                [SdkUtil toastMsg:@"兩次輸入的密碼不一致"];
                 return;
             }
             if ([password isEqualToString:name]) {
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
+                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
                 return;
             }
             
             if ([@"" isEqualToString:vfCode]) {
                 
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_VERTIFY_CODE_IS_NULL")];
+                [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
                 return;
             }
             
@@ -352,7 +352,7 @@
                                 successBlock:^(id responseData) {
         CCSDKResponse *cc = (CCSDKResponse *)responseData;
          [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-        [GamaAlertView showAlertWithMessage:cc.message];
+        [AlertUtil showAlertWithMessage:cc.message];
         
         if (self.delegate) {
             [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
@@ -360,7 +360,7 @@
     }
                                   errorBlock:^(BJError *error) {
         if (error && error.message) {
-            [GamaAlertView showAlertWithMessage:error.message];
+            [AlertUtil showAlertWithMessage:error.message];
         }
     }];
 }
@@ -371,7 +371,7 @@
     if (@available(iOS 13, *)) {
                   
     }else{
-       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+       [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
         return;
     }
     
@@ -392,7 +392,7 @@
                                     successBlock:^(id responseData) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
              [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-            [GamaAlertView showAlertWithMessage:cc.message];
+            [AlertUtil showAlertWithMessage:cc.message];
             
             if (self.delegate) {
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
@@ -401,13 +401,13 @@
         }
                                       errorBlock:^(BJError *error) {
             if (error && error.message) {
-                [GamaAlertView showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage:error.message];
             }
         }];
         
     } andErrorBlock:^(NSError * _Nullable error) {
         //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
     [gamaAppleLogin handleAuthrization:nil];
     
@@ -491,7 +491,7 @@
         }
     }
                                    errorBlock:^(BJError *error) {
-        [GamaAlertView showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage:error.message];
     }];
 }
 
@@ -507,7 +507,7 @@
         [self downTime];
     } errorBlock:^(BJError *error) {
         [self resetVfCodeBtnStatue];
-        [GamaAlertView showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage:error.message];
     }];
 }
 

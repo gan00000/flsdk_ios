@@ -10,7 +10,7 @@
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "GamaFunction.h"
 #import "HelloHeader.h"
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 
 @interface AppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
 @property (copy, atomic) AppleLoginSuccess impSuccess;
@@ -108,7 +108,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.impError(error);
         });
-        [GamaAlertView showAlertWithMessage:mStr];
+        [AlertUtil showAlertWithMessage:mStr];
 
     }
 }
@@ -122,26 +122,26 @@
     self.impError(error);
     switch (error.code) {
         case ASAuthorizationErrorCanceled:
-            errorMsg = SDKConReaderGetLocalizedString(@"GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT");
+            errorMsg = GetString(@"GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT");
             break;
         case ASAuthorizationErrorFailed:
-            errorMsg = SDKConReaderGetLocalizedString(@"GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT");
+            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT");
             break;
         case ASAuthorizationErrorInvalidResponse:
-            errorMsg = SDKConReaderGetLocalizedString(@"GAMA_APPLE_AUTHRIZATION_INVALID");
+            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_INVALID");
             break;
         case ASAuthorizationErrorNotHandled:
-            errorMsg = SDKConReaderGetLocalizedString(@"GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED");
+            errorMsg = GetString(@"GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED");
             break;
         case ASAuthorizationErrorUnknown:
-            errorMsg = SDKConReaderGetLocalizedString(@"GAMA_APPLE_RETURN_UNKNOWN_REASON");
+            errorMsg = GetString(@"GAMA_APPLE_RETURN_UNKNOWN_REASON");
             break;
     }
 
     NSMutableString *mStr = [NSMutableString string];
     [mStr appendString:errorMsg];
     [mStr appendString:@"\n"];
-    [GamaAlertView showAlertWithMessage:mStr];
+    [AlertUtil showAlertWithMessage:mStr];
 
 
     if (errorMsg) {
@@ -153,7 +153,7 @@
         [mStr appendString:error.localizedDescription];
         [mStr appendString:@"\n"];
 //        _appleIDInfoTextView.text = [mStr copy];
-        [GamaAlertView showAlertWithMessage:mStr];
+        [AlertUtil showAlertWithMessage:mStr];
 
     }
     NSLog(@"controller requests：%@", controller.authorizationRequests);
@@ -304,7 +304,7 @@
 //                                        andApps:@""
 //                               andBusinessToken:nil
 //                         andThirdAdditionParams:tempMutableDic
-//                                  andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+//                                  andDomainName:GetConfigString(GAMA_LOGIN_DOMAIN_NAME)
 //                                  andOtherBlock:^{
 //                                      //gama2 Server register success
 //                                  }];

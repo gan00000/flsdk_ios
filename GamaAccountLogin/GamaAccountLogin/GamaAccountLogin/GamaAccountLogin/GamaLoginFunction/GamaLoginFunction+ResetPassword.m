@@ -18,7 +18,7 @@
         newPassword==nil||
         [newPassword isEqualToString:@""])
     {
-        [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
+        [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_PARAMETER_NULL)];
         [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_RESET_PASSWORD_FAIL_IN
                                                            object:nil];
         return;
@@ -53,7 +53,7 @@
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^
                        {
-                           [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
+                           [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At Register:\n %@ \n %@", dic, exception.description]];
                        });
         GAMA_FUNCTION_LOG(exception.description);
     }
@@ -78,7 +78,7 @@
              {
                  //提示用户
                  NSString * message = resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  //發送廣播，
                  //这个字典，用来修改登陆界面的帐号，密码;其中密码是空，为了让用户再次输入
                  NSDictionary * nowUserDic=[NSDictionary dictionaryWithObjectsAndKeys:
@@ -96,14 +96,14 @@
              else if(codeStr.length==4)
              {
                  NSString * message = resultJsonDic[@"message"];
-                 [GamaAlertView showAlertWithMessage:message];
+                 [AlertUtil showAlertWithMessage:message];
                  [[NSNotificationCenter defaultCenter]
                   postNotificationName:GAMA_RESET_PASSWORD_FAIL_IN object:nil];
                  return;
              }
              else
              {
-                 [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
+                 [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_SERVER_RETURN_ERROR)];
                  [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_RESET_PASSWORD_FAIL_IN
                                                                     object:nil];
                  return;
@@ -112,7 +112,7 @@
          //服務器沒有反映
          else
          {
-             [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+             [AlertUtil showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
              [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_RESET_PASSWORD_FAIL_IN
                                                                 object:nil];
              return;

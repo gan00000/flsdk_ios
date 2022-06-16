@@ -128,7 +128,7 @@ static NSString *gameUrlCallBack = nil;
         }
     }
     NSString *showTips = [NSString stringWithFormat:@"請在URL Schemes 配置: %@",urlScheme];
-    [GamaAlertView showAlertWithMessage:showTips];
+    [AlertUtil showAlertWithMessage:showTips];
     return nil;
 }
 

@@ -49,7 +49,7 @@
 
 #import "GamaKeychainItemWrapper.h"
 #import <Security/Security.h>
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 
 /*
 

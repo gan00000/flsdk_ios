@@ -12,6 +12,7 @@
 #import "UIView+BlockGesture.h"
 #import "SDKRequest.h"
 #import "FBDelegate.h"
+#import "SdkHeader.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -305,6 +306,9 @@
         case guestLoginActTag:
         {
             SDK_LOG(@"guestLoginActTag");
+            if (![self checkAgreeTerm]) {
+                return;
+            }
             [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
                 
                 if (self.delegate) {
@@ -313,10 +317,11 @@
                 
             } errorBlock:^(BJError *error) {
                 if (error && error.message) {
-                    [GamaAlertView showAlertWithMessage:error.message];
+                    [AlertUtil showAlertWithMessage:error.message];
                 }
                 
             }];
+            break;
         }
             
             
@@ -352,5 +357,15 @@
     }];
 }
 
+
+-(BOOL)checkAgreeTerm
+{
+    if (checkBoxTermsBtn.selected) {
+        return YES;
+    }
+    [SdkUtil toastMsg:GetString(@"text_term_not_read")];
+//    [AlertUtil showAlertWithMessage:];
+    return NO;
+}
 
 @end

@@ -40,7 +40,7 @@
 ////                                   andApps:appsStr
 ////                          andBusinessToken:@""
 ////                    andThirdAdditionParams:@{GAMA_LOGIN_PARAMS_FB_OAUTHTOKEN:facebookTokenStr}
-////                             andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+////                             andDomainName:GetConfigString(GAMA_LOGIN_DOMAIN_NAME)
 ////                             andOtherBlock:nil];
 //                }
 //                else
@@ -95,7 +95,7 @@
 //                                   andThirdPlate:thirdPlate
 //                                         andApps:nil
 //                                andBusinessToken:nil
-//                                   andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+//                                   andDomainName:GetConfigString(GAMA_LOGIN_DOMAIN_NAME)
 //                                   andOtherBlock:handler];
 }
 

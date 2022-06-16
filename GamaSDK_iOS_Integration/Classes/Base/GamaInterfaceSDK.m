@@ -219,7 +219,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
         Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"AppsFlyerTracker"),NSSelectorFromString(@"sharedTracker"));
         ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(@"registerUninstall:"),deviceToken);
     }
-    if (SDKConReaderGetBool(GAMA_GAME_IS_INITIALIZE_AD) || SDKConReaderGetString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
         if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
             Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
             ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"setAPNSToken:"),deviceToken);
@@ -236,7 +236,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     // TODO: Handle data of notification
     // With swizzling disabled you must let Messaging know about the message, for Analytics
     
-    if (SDKConReaderGetBool(GAMA_GAME_IS_INITIALIZE_AD) || SDKConReaderGetString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
         ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
         if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
             Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
@@ -261,7 +261,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     
     // With swizzling disabled you must let Messaging know about the message, for Analytics
     
-    if (SDKConReaderGetBool(GAMA_GAME_IS_INITIALIZE_AD) || SDKConReaderGetString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
         ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
         if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
             Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
@@ -287,7 +287,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     NSDictionary *userInfo = notification.request.content.userInfo;
     
     // With swizzling disabled you must let Messaging know about the message, for Analytics
-    if (SDKConReaderGetBool(GAMA_GAME_IS_INITIALIZE_AD) || SDKConReaderGetString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
         ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
         if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
             Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));

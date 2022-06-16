@@ -3,7 +3,7 @@
 //
 #import "GamaSecurity.h"
 #import "GamaFunction.h"
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 #import "GamaCoreConfReader.h"
 #import "SdkUserInfoModel.h"
 #import "NSString+GamaURLEncoding.h"
@@ -12,9 +12,9 @@
 
 /*获取对应配置中，key对用的关键值。*/
 #define SDKConReader    [GamaCoreConfReader reader]
-#define SDKConReaderGetString(key) [SDKConReader getStringForKey:key]
-#define SDKConReaderGetBool(key) [SDKConReader getBoolForKey:key]
-#define SDKConReaderGetLocalizedString(key) [SDKConReader getLocalizedStringForKey:key]
+#define GetConfigString(key) [SDKConReader getStringForKey:key]
+#define GetConfigBool(key) [SDKConReader getBoolForKey:key]
+#define GetString(key) [SDKConReader getLocalizedStringForKey:key]
 
 
 #define Device_Is_Landscape  ![GamaFunction deviceIsPortrait]

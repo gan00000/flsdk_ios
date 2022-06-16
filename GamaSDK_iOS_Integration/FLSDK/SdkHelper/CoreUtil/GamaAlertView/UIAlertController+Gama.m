@@ -84,7 +84,7 @@
 }
 
 //- (NSUInteger)supportedInterfaceOrientations {
-////    if ([SDKConReaderGetString(GAMA_GAME_IS_INTERFACE_THWARTWISE) isEqualToString:@"YES"]) {
+////    if ([GetConfigString(GAMA_GAME_IS_INTERFACE_THWARTWISE) isEqualToString:@"YES"]) {
 ////        return UIInterfaceOrientationMaskPortrait;
 ////    }else{
 //        return UIInterfaceOrientationMaskLandscapeLeft;

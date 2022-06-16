@@ -6,13 +6,13 @@
 //
 //
 
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 
 #import "GamaCentreInfo.h"
 
 #define GamaAlertViewShowTime   2.0
 
-@implementation GamaAlertView
+@implementation AlertUtil
 
 static NSArray<UIViewController *> *presentViewControllers;
 

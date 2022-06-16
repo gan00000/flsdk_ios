@@ -466,7 +466,7 @@
     // 配置异常
     showTips = [NSString stringWithFormat:@"Info.plist文件配置不完整：%@%@%@；\n请同时参考SDK配置文档！",externalTip,identifierTip,urlSchemeTip];
     dispatch_async(dispatch_get_main_queue(), ^{
-        [GamaAlertView showAlertWithMessage:showTips];
+        [AlertUtil showAlertWithMessage:showTips];
     });
     return NO;
 }

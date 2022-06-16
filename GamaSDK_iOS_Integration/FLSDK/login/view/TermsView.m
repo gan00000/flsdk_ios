@@ -141,7 +141,7 @@
 //    //記住密碼
 //    UILabel *rememberLable = [[UILabel alloc] init];
 //    [self addSubview:rememberLable];
-//    rememberLable.text = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+//    rememberLable.text = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
 //    rememberLable.font = [UIFont systemFontOfSize:14];
 //    rememberLable.textAlignment = NSTextAlignmentLeft;
 //    rememberLable.backgroundColor = [UIColor clearColor];
@@ -171,7 +171,7 @@
 //
 //    //        https://member.flyfungame.com/sdk/archive.html   服務條款
 //    //        https://member.flyfungame.com/sdk/privacy.html   隱私政策
-//    NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",SDKConReaderGetString(@"gama_Member_URL")];
+//    NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",GetConfigString(@"gama_Member_URL")];
 //    provisionWebView = [[WKWebView alloc] init];
 //    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
 //    [provisionWebView.scrollView setBounces:YES];
@@ -237,7 +237,7 @@
     
     //        https://member.flyfungame.com/sdk/archive.html   服務條款
     //        https://member.flyfungame.com/sdk/privacy.html   隱私政策
-    NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",SDKConReaderGetString(@"gama_Member_URL")];
+    NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",GetConfigString(@"gama_Member_URL")];
     provisionWebView = [[WKWebView alloc] init];
     [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     [provisionWebView.scrollView setBounces:YES];
@@ -251,11 +251,11 @@
         make.left.mas_equalTo(contentView);
     }];
     
-   NSString *xtext = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+   NSString *xtext = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
     
     UILabel *rememberLable = [[UILabel alloc] init];
     [xView addSubview:rememberLable];
-//    rememberLable.text = SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+//    rememberLable.text = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
     rememberLable.font = [UIFont systemFontOfSize:VH(20)];
     rememberLable.textAlignment = NSTextAlignmentLeft;
     rememberLable.backgroundColor = [UIColor clearColor];
@@ -315,7 +315,7 @@
     switch (sender.tag) {
         case 11://點擊服務條款
         {
-            NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",SDKConReaderGetString(@"gama_Member_URL")];
+            NSString * url = [NSString stringWithFormat:@"%@sdk/archive.html",GetConfigString(@"gama_Member_URL")];
             [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
             [serverTermsBtn setTitleColor:[UIColor whiteColor] forState:0];
             serverTermsBtn.backgroundColor = [UIColor colorWithHexString:@"ff3e37"];
@@ -329,7 +329,7 @@
             
         case 12://點擊隱私政策
         {
-            NSString * url = [NSString stringWithFormat:@"%@sdk/privacy.html",SDKConReaderGetString(@"gama_Member_URL")];
+            NSString * url = [NSString stringWithFormat:@"%@sdk/privacy.html",GetConfigString(@"gama_Member_URL")];
             [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
             
             [privacyPolicyBtn setTitleColor:[UIColor whiteColor] forState:0];
@@ -373,12 +373,12 @@
         case kAccountLoginActTag://進入遊戲
         {
             if (!isAgree) {//先同意
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+                [SdkUtil toastMsg:GetString(@"GAMA_PROVISIONS_AGREENT_TERM")];
                 return;
             }
             if (Device_Is_Landscape) {
 //                if (!isAgree2) {//先同意
-//                    [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+//                    [GamaUtils gamaToastWithMsg:GetString(@"GAMA_PROVISIONS_AGREENT_TERM")];
 //                    return;
 //                }
             }

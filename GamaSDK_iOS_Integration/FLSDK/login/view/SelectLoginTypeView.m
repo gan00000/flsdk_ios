@@ -9,7 +9,7 @@
 #import "SelectLoginTypeView.h"
 #import "SdkHeader.h"
 #import "LoginTitleView.h"
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 #import "LoginButton.h"
 #import "GamaNetEngine.h"
 #import "SdkUtil.h"
@@ -218,7 +218,7 @@
                 
             } errorBlock:^(BJError *error) {
                 if (error && error.message) {
-                    [GamaAlertView showAlertWithMessage:error.message];
+                    [AlertUtil showAlertWithMessage:error.message];
                 }
                 
             }];
@@ -243,7 +243,7 @@
     if (@available(iOS 13, *)) {
                   
     }else{
-       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+       [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
         return;
     }
     
@@ -260,13 +260,13 @@
             
         } errorBlock:^(BJError *error) {
             if (error && error.message) {
-                [GamaAlertView showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage:error.message];
             }
         }];
         
     } andErrorBlock:^(NSError * _Nullable error) {
         //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
     [gamaAppleLogin handleAuthrization:nil];
 }

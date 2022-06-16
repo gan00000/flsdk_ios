@@ -7,7 +7,7 @@
 //
 
 #import "GamaPhoneModel.h"
-#import "GamaAlertView.h"
+#import "AlertUtil.h"
 
 #define GAMESWORD_PHONE_AREA_CODE  @"gameswordphoneAreaCode"
 
@@ -55,7 +55,7 @@
     
     __block GamaPhoneModel *weakSelf = self;
     
-    [GamaAlertView showActionSheetWithTitle:@"請選擇移動電話的區號"
+    [AlertUtil showActionSheetWithTitle:@"請選擇移動電話的區號"
                                     message:@""
                               callbackBlock:^(NSInteger btnIndex) {
                                   if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)

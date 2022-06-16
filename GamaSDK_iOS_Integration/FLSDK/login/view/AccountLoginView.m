@@ -424,7 +424,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         case kAccountLoginActTag:
             SDK_LOG(@"kAccountLoginActTag");
             if (!isAgree) {//先同意
-                [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_PROVISIONS_AGREENT_TERM")];
+                [SdkUtil toastMsg:GetString(@"GAMA_PROVISIONS_AGREENT_TERM")];
                 return;
             }
             [TermsView saveAgreenProvisionState:isAgree];
@@ -486,7 +486,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
                 
             } errorBlock:^(BJError *error) {
                 if (error && error.message) {
-                    [GamaAlertView showAlertWithMessage:error.message];
+                    [AlertUtil showAlertWithMessage:error.message];
                 }
                 
             }];
@@ -514,7 +514,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     if (@available(iOS 13, *)) {
                   
     }else{
-       [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+       [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
         return;
     }
     
@@ -531,13 +531,13 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             
         } errorBlock:^(BJError *error) {
             if (error && error.message) {
-                [GamaAlertView showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage:error.message];
             }
         }];
         
     } andErrorBlock:^(NSError * _Nullable error) {
         //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
     [gamaAppleLogin handleAuthrization:nil];
 }
@@ -550,22 +550,22 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
         
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
         return;
     }
     
     if (![SdkUtil validUserName:accountName]) {
-        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"ALERT_MSG_ACCOUNT_RULE")];
+        [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil gamaToastWithMsg:SDKConReaderGetLocalizedString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
         return;
     }
 //    if (GamaLoginViewModel.model.vfConfig == YES){
 //        if(vfTF.text.length<1){
-//            [GamaUtils gamaToastWithMsg:SDKConReaderGetLocalizedString(@"GAMA_LOGIN_CAPTCH_PLACEHOLDER")];
+//            [GamaUtils gamaToastWithMsg:GetString(@"GAMA_LOGIN_CAPTCH_PLACEHOLDER")];
 //            return;
 //        }
 //    }
@@ -580,7 +580,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         }
         
     } errorBlock:^(BJError *error) {
-        [GamaAlertView showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage:error.message];
     }];
 }
 

@@ -22,7 +22,7 @@
         //[GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
         NSLog(@"Please import AppFlyer Library.");
     } else if (parameterType == GamaParameterTypeBroken) {
-        [GamaAlertView showAlertWithMessage:@"The config is not complete, Please check it."];
+        [AlertUtil showAlertWithMessage:@"The config is not complete, Please check it."];
     } else if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker != nil) {
         id gamaShareTracker = [GamaAppsFlyerTracker sharedTracker];
         switch (trackType) {
@@ -63,7 +63,7 @@
 //        [GamaAlertView showAlertWithMessage:@"Please import AppFlyer Library."];
         NSLog(@"Please import AppFlyer Library.");
     } else if (parameterType == GamaParameterTypeBroken) {
-        [GamaAlertView showAlertWithMessage:@"The config is not complete, Please check it."];
+        [AlertUtil showAlertWithMessage:@"The config is not complete, Please check it."];
     } else if (parameterType == GamaParameterTypeComplete && GamaAppsFlyerTracker != nil) {
         id gamaShareTracker = [GamaAppsFlyerTracker sharedTracker];
         [gamaShareTracker trackEvent:eventName withValues:values];

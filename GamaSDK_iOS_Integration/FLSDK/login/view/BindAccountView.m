@@ -36,7 +36,7 @@
         int rowMargin = 6;
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:SDKConReaderGetLocalizedString(@"BTN_TITLE_BIND_ACCOUNT") hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"BTN_TITLE_BIND_ACCOUNT") hander:^(NSInteger) {
             
         }];
         mLoginTitleView.delegate = self.delegate;

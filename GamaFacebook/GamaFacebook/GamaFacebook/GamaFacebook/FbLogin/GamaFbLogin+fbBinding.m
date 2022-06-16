@@ -125,7 +125,7 @@
         NSString *tmpMessage = [NSString stringWithFormat:SDKConReaderGetLocalizedString(GAMA_FACEBOOK_BIND_INFO),
                                 [GamaFacebookCenter getFacebookName]];
         
-        [GamaAlertView showAlertWithMessage:tmpMessage completion:^(NSInteger clickedBtnIndex) {
+        [AlertUtil showAlertWithMessage:tmpMessage completion:^(NSInteger clickedBtnIndex) {
             //确定使用当前选定FB账号进行绑定
             if (clickedBtnIndex == 0) {
                 // 开始进行FB绑定
@@ -137,7 +137,7 @@
             } else if (clickedBtnIndex == 1) {
                 //切换账号
                 [GamaFacebookCenter facebookLogout];
-                [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_FACEBOOK_BIND_INFO_LOGOUT)];
+                [AlertUtil showAlertWithMessage:SDKConReaderGetLocalizedString(GAMA_FACEBOOK_BIND_INFO_LOGOUT)];
                 //取消绑定，需停止等待指示器
                 [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_FACEBOOK_BINDING_FAIL
                                                                    object:nil];

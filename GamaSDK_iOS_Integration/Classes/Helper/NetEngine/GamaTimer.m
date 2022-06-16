@@ -250,7 +250,7 @@ static GamaTimer *instance = nil;
     NSString *serverCode = [SdkUserInfoModel shareInfoModel].serverCode ? [SdkUserInfoModel shareInfoModel].serverCode : @"";
     NSString *roleID = [SdkUserInfoModel shareInfoModel].roleID ? [SdkUserInfoModel shareInfoModel].roleID : @"";
     NSString *roleLevel = [SdkUserInfoModel shareInfoModel].roleLevel ? [SdkUserInfoModel shareInfoModel].roleLevel : @"" ;
-    NSString *gamacode = [NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];
+    NSString *gamacode = [NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)];
     
     NSString *androidID = [[GamaFunction getIdfa] lowercaseString];//idfa
     NSString *adId = [[GamaFunction getGamaUUID] lowercaseString];//uuid
@@ -276,7 +276,7 @@ static GamaTimer *instance = nil;
                         packageName,
                         roleLevel];
     
-    NSString *domainUrl = [NSString stringWithFormat:@"%@online/api?%@",SDKConReaderGetString(GAMA_AD_DOMAIN_NAME),payUrl];
+    NSString *domainUrl = [NSString stringWithFormat:@"%@online/api?%@",GetConfigString(GAMA_AD_DOMAIN_NAME),payUrl];
     
 //    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainUrl]]
 //                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
@@ -293,7 +293,7 @@ static GamaTimer *instance = nil;
 //                                   return;
 //                               }
 //                           }else{
-////                               [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+////                               [GamaAlertView showAlertWithMessage:GetConfigString(GAMA_TEXT_NO_NET)];
 //                           }
 //                       }];
 }

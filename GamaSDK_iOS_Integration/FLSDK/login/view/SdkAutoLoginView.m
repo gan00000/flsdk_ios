@@ -145,7 +145,7 @@
                 return;
             }
             if (error && error.message) {
-                [GamaAlertView showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage:error.message];
             }
             [weakSelf switchAccount];
             
@@ -216,7 +216,7 @@
             }
             
         } errorBlock:^(BJError *error) {
-            [GamaAlertView showAlertWithMessage:error.message];
+            [AlertUtil showAlertWithMessage:error.message];
         }];
         
     }
@@ -243,7 +243,7 @@
             return;
         }
         if (error && error.message) {
-            [GamaAlertView showAlertWithMessage:error.message];
+            [AlertUtil showAlertWithMessage:error.message];
         }
         [weakSelf switchAccount];
     }];
@@ -277,7 +277,7 @@
      
      } andErrorBlock:^(NSError * _Nullable error) {
      //         [GamaUtils gamaStopLoadingAtView:self.view];
-     //         [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+     //         [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
      }];
      [gamaAppleLogin handleAuthrization:nil];
      */

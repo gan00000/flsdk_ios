@@ -165,7 +165,7 @@
                 if (@available(iOS 13, *)) {
                                 
                   }else{
-                     [GamaAlertView showAlertWithMessage:SDKConReaderGetLocalizedString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+                     [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
                       return;
                   }
             }
