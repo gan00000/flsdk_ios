@@ -56,8 +56,8 @@
 
 /*游戏配置，和平台标示*/
 #define GAMA_GAME_KEY                                   @"gamekey"                                //GAMA游戏key
-#define SDK_GAME_CODE                            @"sdkGameCode"                          //GAMA游戏sdkGameCode
-#define GAMA_GAME_LANGUAGE                              @"gameLanguage"                           //GAMA游戏语言
+#define SDK_GAME_CODE                            @"gameCode"                          //GAMA游戏sdkGameCode
+//#define GAMA_GAME_LANGUAGE                              @"gameLanguage"                           //GAMA游戏语言
 #define GAMA_GAME_REGION                                @"gameRegion"                             //GAMA游戏地区
 #define GAMA_PLATFORM_REGION                            @"platformRegion"                         //获取手机区号的地区字段
 #define GAMA_GAME_RETURNFBID                            @"isReturnFBID"                           //FB登录成功的时候是否返回FBID
@@ -86,8 +86,8 @@
 
 
 /*登录工程配置key*/
-/*域名*/
-#define GAMA_LOGIN_DOMAIN_NAME                          @"loginDomainName"                        //域名：登录
+
+//域名：登录
 #define GAMA_LOGIN_DOMAIN_NAME_IN_RESERVE               @"loginDomainNameInReserve"               //域名：登录备用
 #define GAMA_LOGIN_PT_DOMAIN_NAME                       @"loginPtDomainName"                      //域名：第三方平台登录
 #define GAMA_LOGIN_PT_DOMAIN_NAME_IN_RESERVE            @"loginPtDomainNameInReserve"             //域名：第三方平台登录备用
@@ -113,8 +113,7 @@
 #define GAMA_LOGIN_ASSIST_BIND_EMAIL_PHONE              @"loginAssistBind"                        //服务器接口名：普通账号绑定邮箱或手机
 #define GAMA_LOGIN_ASSIST_Find_EMAIL_PHONE              @"loginAssistFindPSW"                     //服务器接口名：用邮箱或者手机找回密码(新)
 #define GAMA_LOGIN_ASSIST_VALIDATE_USER_MESSAGE         @"loginValidateUserBindingInfo"           //服务器接口名：获取账户手机或邮箱绑定信息
-/*服务器第三方账号新接口*/
-#define GAMA_LOGIN_THIRD_LOGIN_PRO_NAME                 @"loginThirdLoginProName"                 //服务器新接口名：第三方登录
+
 #define GAMA_LOGIN_THIRD_BINDING_PRO_NAME               @"loginThirdBindingProName"               //服务器新接口名：账号绑定
 #define GAMA_LOGIN_THIRD_SP_BIND_PRO_NAME             @"loginThirdSPBindProName"              //服务器新接口名：GAMA账号绑定
 #define GAMA_LOGIN_THIRD_HAS_BIND_SP_PRO_NAME         @"loginThirdHasBindProName"               //服务器新接口名：已经绑定账号查询
@@ -139,9 +138,7 @@
 
 
 /*储值工程配置key*/
-/*储值的域名，工程名*/
-#define GAMA_IAP_DOMAIN_NAME                            @"iapDomainName"                          //域名：储值
-#define GAMA_IAP_SPASE_DOMAIN_NAME                      @"iapDomainNameInReserve"                 //域名：储值备用
+//域名：储值备用
 /*工程名字*/
 #define GAMA_IAP_CREATORDER_PROJECT_NAME                @"iapAppstoreCreditOrderProName"          //服务器接口名：获取SP交易订单号
 #define GAMA_IAP_PAY_STONE_PROJECT_NAME                 @"iapAppstorePayStoneProName"             //服务器接口名：验证并发放游戏币

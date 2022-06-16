@@ -22,6 +22,9 @@
 #define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
 #define IS_PORTRAIT       ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)
 
+#define STRING_COMBIN(note,content)   ([NSString stringWithFormat:@"%@%@",note,content])
+#define STRING_CLASS_COMBIN(content)  ([NSString stringWithFormat:@"-%s-:%@",object_getClassName(self),content])
+
 
 
 typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);

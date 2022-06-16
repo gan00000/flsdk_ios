@@ -51,8 +51,8 @@ static dispatch_once_t onceToken;
     
     NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
     for (AccountModel *am in mAccountArray) {
-        if ([am.accountName isEqualToString:mAccount]) {
-            am.accountPwd = password;
+        if ([am.account isEqualToString:mAccount]) {
+            am.password = password;
             if (updateTime) {
                 am.lastLoginTime = [GamaFunction getTimeStamp];
             }
@@ -64,8 +64,8 @@ static dispatch_once_t onceToken;
     AccountModel *mAccountModel = [[AccountModel alloc] init];
     //赋值
     mAccountModel.lastLoginTime = [GamaFunction getTimeStamp];
-    mAccountModel.accountName = mAccount;
-    mAccountModel.accountPwd = password;
+    mAccountModel.account = mAccount;
+    mAccountModel.password = password;
     [aar addObject:mAccountModel];
     [self saveAccountModels:aar];
     
@@ -77,7 +77,7 @@ static dispatch_once_t onceToken;
     NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
     NSMutableArray  *dataList = [NSMutableArray arrayWithArray:mAccountArray];
     for (AccountModel *am in dataList) {
-        if ([am.accountName isEqualToString:mAccount]) {
+        if ([am.account isEqualToString:mAccount]) {
             [dataList removeObject:am];
             [self saveAccountModels:dataList];
             return;
@@ -167,7 +167,7 @@ static dispatch_once_t onceToken;
         @"systemVersion"    :     [GamaFunction getSystemVersion]? : @"",
         @"deviceType"       :     [GamaFunction getDeviceType]? : @"",
         @"operatingSystem"  :     @"ios",
-        @"gameLanguage"     :     SDKConReaderGetBool(GAMA_GMAE_mLanguge) ? [GamaFunction getServerLanguage]:[GamaFunction getServerLocaleStrWithGameLanguage:[SDKConReader getGameLanguage]]? : @"",
+        @"gameLanguage"     :     GAME_LANGUAGE,
         @"osLanguage"       :     [GamaFunction getPreferredLanguage]? : @""
         
     };

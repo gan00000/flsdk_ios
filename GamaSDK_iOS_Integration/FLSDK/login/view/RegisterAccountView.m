@@ -14,7 +14,6 @@
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "SdkUtil.h"
-#import "GamaFacebookPort.h"
 #import "AppleLogin.h"
 
 @implementation RegisterAccountView
@@ -340,7 +339,7 @@
 
 -(void)requestBindMac:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
-    NSString *loginId = ([[GamaFunction getSystemVersion] intValue]) >= 7 ? [GamaFunction getGamaUUID] : [GamaFunction getMacaddress];
+    NSString *loginId = [GamaFunction getGamaUUID];
     [SDKRequest doAccountBindingWithUserName:name
                                     password:password
                                phoneAreaCode:areaCode
@@ -427,50 +426,50 @@
 -(void)requestBindFb:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
     [SdkUtil gamaStarLoadingAtView:self];
-    [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-        [SdkUtil gamaStopLoadingAtView:self];
-        if (!loginError)
-        {
-            NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-            NSDictionary *additionDic = @{
-                @"apps":appsStr,
-                @"tokenBusiness":@"",
-                @"fb_oauthToken":facebookTokenStr,
-            };
-            
-            [SDKRequest doAccountBindingWithUserName:name
-                                            password:password
-                                       phoneAreaCode:areaCode
-                                         phoneNumber:phoneNum
-                                              vfCode:vfCode
-                                               email:@""
-                                             thirdId:facebookID
-                                          thirdPlate:_SDK_PLAT_FB
-                                      otherParamsDic:additionDic
-                                        successBlock:^(id responseData) {
-                
-                CCSDKResponse *cc = (CCSDKResponse *)responseData;
-                [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-                [GamaAlertView showAlertWithMessage:cc.message];
-                
-                if (self.delegate) {
-                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-                }
-                
-            }
-                                          errorBlock:^(BJError *error) {
-                if (error && error.message) {
-                    [GamaAlertView showAlertWithMessage:error.message];
-                }
-            }];
-            
-            
-        }else{
-            //[GamaAlertView showAlertWithMessage:@"error.message"];
-        }
-        
-    }];
-    
+//    [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//        [SdkUtil gamaStopLoadingAtView:self];
+//        if (!loginError)
+//        {
+//            NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
+//            NSDictionary *additionDic = @{
+//                @"apps":appsStr,
+//                @"tokenBusiness":@"",
+//                @"fb_oauthToken":facebookTokenStr,
+//            };
+//            
+//            [SDKRequest doAccountBindingWithUserName:name
+//                                            password:password
+//                                       phoneAreaCode:areaCode
+//                                         phoneNumber:phoneNum
+//                                              vfCode:vfCode
+//                                               email:@""
+//                                             thirdId:facebookID
+//                                          thirdPlate:_SDK_PLAT_FB
+//                                      otherParamsDic:additionDic
+//                                        successBlock:^(id responseData) {
+//                
+//                CCSDKResponse *cc = (CCSDKResponse *)responseData;
+//                [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
+//                [GamaAlertView showAlertWithMessage:cc.message];
+//                
+//                if (self.delegate) {
+//                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+//                }
+//                
+//            }
+//                                          errorBlock:^(BJError *error) {
+//                if (error && error.message) {
+//                    [GamaAlertView showAlertWithMessage:error.message];
+//                }
+//            }];
+//            
+//            
+//        }else{
+//            //[GamaAlertView showAlertWithMessage:@"error.message"];
+//        }
+//        
+//    }];
+//    
 }
 
 - (void)requestRegister:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode {
@@ -485,8 +484,8 @@
         
         if (self.delegate) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
-            cc.account = name;
-            cc.password = password;
+            cc.data.account = name;
+            cc.data.password = password;
             
             [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_SELF];
         }

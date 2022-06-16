@@ -8,9 +8,6 @@
       location = "group:GamaFacebook/GamaFacebook/GamaFacebook.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GamaCoreFunc/GamaCoreFunc/GamaCoreFunc.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:GamaAD/GamaAD/GamaAD.xcodeproj">
    </FileRef>
    <FileRef

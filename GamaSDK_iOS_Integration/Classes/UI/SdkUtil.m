@@ -178,7 +178,7 @@
                 @"systemVersion"    :     [GamaFunction getSystemVersion],
                 @"deviceType"       :     [GamaFunction getDeviceType],
                 @"operatingSystem"  :     @"ios",
-                @"gameLanguage"     :     [GamaFunction getServerLocaleStrWithGameLanguage:SDKConReaderGetString(GAMA_GAME_LANGUAGE)],
+                @"gameLanguage"     :     [GamaFunction getServerLocaleStrWithGameLanguage:GAME_LANGUAGE],
                 @"osLanguage"       :     [GamaFunction getPreferredLanguage],
                 
                 @"loginTimestamp"   :     [SdkUserInfoModel shareInfoModel].timestamp ?
@@ -194,7 +194,7 @@
                        {
                            [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"!!!ERROR Dic At serviceParms:\n %@ \n %@", dic, exception.description]];
                        });
-        GAMA_FUNCTION_LOG(exception.description);
+        SDK_LOG(exception.description);
     }
     
     NSMutableString *appendStr = [[NSMutableString alloc] init];
@@ -205,7 +205,7 @@
             NSString *errorInfo = [NSString stringWithFormat:@"ERROR Type:%@, key:%@, value:%@\n allValue: %@",[tmpVal class],key, tmpVal,dic];
             [GamaAlertView showAlertWithMessage:errorInfo];
             NSString *fullDicInfo = [NSString stringWithFormat:@"%@",dic];
-            GAMA_FUNCTION_LOG(fullDicInfo)
+            SDK_LOG(fullDicInfo);
             continue ;
         }
         tmpVal = [tmpVal gamaUrlDecodeString];
@@ -221,7 +221,7 @@
     [appendStr release];
     
     // domain and proj Name
-    NSString *domainName = [NSString stringWithFormat:@"%@%@?",SDKConReaderGetString(GAMA_IAP_DOMAIN_NAME),SDKConReaderGetString(@"iapThirdPayProName")];
+    NSString *domainName = [NSString stringWithFormat:@"%@%@?",[SDKConReader getLoginUrl],api_login_guest];
     [gamaUrlStr appendFormat:@"%@%@",domainName,finalStr];
     
 //    NSLog(@"url = %@",gamaUrlStr);
@@ -517,12 +517,12 @@
 
 + (void)gama_getGuestAccount:(NSString **)userName andPassword:(NSString **)password
 {
-    if (password) {
-        *password = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserPassword"];
-    }
-    if (userName) {
-        *userName = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserName"];
-    }
+//    if (password) {
+//        *password = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserPassword"];
+//    }
+//    if (userName) {
+//        *userName = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserName"];
+//    }
 }
 
 + (void)gama_saveGuestEncryptedUserInfoToUserDefaultWith:(NSString *)userName

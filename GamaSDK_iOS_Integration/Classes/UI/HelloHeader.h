@@ -13,7 +13,6 @@
 #import "Masonry.h"
 #import "HelloWidgetConstant.h"
 #import "UIColor+HexColor.h"
-#import "GamaLoginFuncionPort.h"
 #import "GamaCentreInfo.h"
 #import "GamaFunction.h"
 #import "UIImage+GamaBundleImage.h"

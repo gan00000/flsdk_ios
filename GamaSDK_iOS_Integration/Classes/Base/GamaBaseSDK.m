@@ -3,15 +3,12 @@
 
 #import "GamaBaseSDK.h"
 #import "FLSDK.h"
-#import "GamaIapFunctionPort.h"
-#import "GamaFacebookPort.h"
 #import "GamaCentreInfo.h"
 #import "GamaFunction.h"
 #import "SdkUserInfoModel.h"
 #import "GamaTimer.h"
 //#import "KRTwitterLogin.h"
 #import "GamaAdInterface.h"
-#import "GamaAdPort.h"
 #import "GamaPhoneModel.h"
 #import "GamaCommonHeader.h"
 #import "SdkHeader.h"
@@ -23,10 +20,10 @@
 + (void)_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     // 广告初始化
-    [GamaAdPort start];
+//    [GamaAdPort start];
     
     // 储值初始化
-    [GamaIapFunctionPort startSDK];
+//    [GamaIapFunctionPort startSDK];
     
     // LoginViewModel初始化
 //    [GamaLoginViewModel model];
@@ -52,28 +49,28 @@
     NSString *gamaUID = [SdkUserInfoModel shareInfoModel].userId? :@"";
     NSString *roleID = [SdkUserInfoModel shareInfoModel].roleID? :@"";
     
-    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel
-                         eventName:GAMESWORD_EVENT_IN_APP_PURCHASES
-                       eventValues:@{@"productID":productID,
-                                     @"userId":gamaUID,
-                                     @"roleId":roleID,
-                                     @"currentLocalPrice":currentLocalPrice,
-                                     @"currencyCode":currencyCode}];
-    
-    __block BOOL firstPay = YES;
-    NSArray *tempSaveGamaUID = [[NSUserDefaults standardUserDefaults] objectForKey:@"gamaEventSaveId"];
-    [tempSaveGamaUID enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isEqualToString:gamaUID]) { //如果该用户已经不是首次购买，则不上报
-            firstPay = NO;
-        }
-    }];
-    if (firstPay &&gamaUID.length >1 ) {
-        NSMutableArray *insertGamaUID = [NSMutableArray arrayWithArray:tempSaveGamaUID];
-        [insertGamaUID addObject:gamaUID];
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:GAMESWORD_EVENT_FIRSTPAY eventValues:@{@"productID":productID,@"userId":gamaUID}];
-        [[NSUserDefaults standardUserDefaults] setObject:insertGamaUID forKey:@"gamaEventSaveId"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
+//    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel
+//                         eventName:GAMESWORD_EVENT_IN_APP_PURCHASES
+//                       eventValues:@{@"productID":productID,
+//                                     @"userId":gamaUID,
+//                                     @"roleId":roleID,
+//                                     @"currentLocalPrice":currentLocalPrice,
+//                                     @"currencyCode":currencyCode}];
+//
+//    __block BOOL firstPay = YES;
+//    NSArray *tempSaveGamaUID = [[NSUserDefaults standardUserDefaults] objectForKey:@"gamaEventSaveId"];
+//    [tempSaveGamaUID enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if ([obj isEqualToString:gamaUID]) { //如果该用户已经不是首次购买，则不上报
+//            firstPay = NO;
+//        }
+//    }];
+//    if (firstPay &&gamaUID.length >1 ) {
+//        NSMutableArray *insertGamaUID = [NSMutableArray arrayWithArray:tempSaveGamaUID];
+//        [insertGamaUID addObject:gamaUID];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:GAMESWORD_EVENT_FIRSTPAY eventValues:@{@"productID":productID,@"userId":gamaUID}];
+//        [[NSUserDefaults standardUserDefaults] setObject:insertGamaUID forKey:@"gamaEventSaveId"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//    }
     
 }
 
@@ -84,11 +81,11 @@
         --[UIApplication sharedApplication].applicationIconBadgeNumber;
     }
     
-    [GamaAdPort startWhenBecomeActive];
-    
-    [GamaIapFunctionPort applicationDidBecomeActive];
-    
-    [NSClassFromString(@"GamaFacebookPort") applicationDidBecomeActive:nil];
+//    [GamaAdPort startWhenBecomeActive];
+//
+//    [GamaIapFunctionPort applicationDidBecomeActive];
+//
+//    [NSClassFromString(@"GamaFacebookPort") applicationDidBecomeActive:nil];
     
 }
 
@@ -96,13 +93,13 @@
 {
     [NSClassFromString(@"GamaFacebookPort") applicationWillTerminate:nil];
     
-    [[SKPaymentQueue defaultQueue] removeTransactionObserver:[GamaIapFunctionPort iapDataObject]];
+//    [[SKPaymentQueue defaultQueue] removeTransactionObserver:[GamaIapFunctionPort iapDataObject]];
 }
 
 + (void)_applicationDidEnterBackground:(UIApplication *)application
 {
-    [GamaIapFunctionPort applicationDidEnterBackground];
-    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
+//    [GamaIapFunctionPort applicationDidEnterBackground];
+//    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
 }
 
 + (void)_applicationWillEnterForeground:(UIApplication *)application
@@ -119,12 +116,12 @@
          annotation:(id)annotation
 {
     
-    // 广告工程openURL回调
-    [GamaAdPort handleADURL:url];
-    // 储值工程openURL回调
-    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
-    // 第三方登录openURL回调
-    [NSClassFromString(@"GamaFacebookPort") application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+//    // 广告工程openURL回调
+//    [GamaAdPort handleADURL:url];
+//    // 储值工程openURL回调
+//    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
+//    // 第三方登录openURL回调
+//    [NSClassFromString(@"GamaFacebookPort") application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     
     return YES;
 }
@@ -145,10 +142,10 @@
     
     if (isRegister) {
         // 注册时广告跟踪
-        [GamaAdPort startWhenRegister];
+//        [GamaAdPort startWhenRegister];
     }
     // 登录时广告跟踪
-    [GamaAdPort startWhenLogin];
+//    [GamaAdPort startWhenLogin];
 }
 
 #pragma mark - 存储角色信息功能
@@ -177,20 +174,20 @@
     tmpLevel                = (!tmpLevel || [tmpLevel isEqualToString:@""]) ? @"noneLevel" : tmpLevel;
     tmpServerName           = tmpServerName ? tmpServerName : @"";
     
-    [GamaIapFunctionPort   userBuyProductWithProductId:productId
-                                                userId:localUid
-                                                roleId:tmpRoleID
-                                              creditId:tmpRoleID
-                                            serverCode:tmpServerCode
-                                                remark:@""
-                                             roleLevel:tmpLevel
-                                              roleName:tmpRoleName
-                                            serverName:tmpServerName
-                                             cpOrderId:cpOrderId
-                                                 extra:extra];
-    
-    SDK_LOG(@"储值接口传入的参数 ：productid : %@ servercode : %@ servername : %@ roleid : %@ rolelevel : %@ rolename : %@  , cpOrderId : %@ , extra : %@",
-            productId,tmpServerCode,tmpServerName,tmpRoleID,tmpLevel,tmpRoleName,cpOrderId,extra);
+//    [GamaIapFunctionPort   userBuyProductWithProductId:productId
+//                                                userId:localUid
+//                                                roleId:tmpRoleID
+//                                              creditId:tmpRoleID
+//                                            serverCode:tmpServerCode
+//                                                remark:@""
+//                                             roleLevel:tmpLevel
+//                                              roleName:tmpRoleName
+//                                            serverName:tmpServerName
+//                                             cpOrderId:cpOrderId
+//                                                 extra:extra];
+//    
+//    SDK_LOG(@"储值接口传入的参数 ：productid : %@ servercode : %@ servername : %@ roleid : %@ rolelevel : %@ rolename : %@  , cpOrderId : %@ , extra : %@",
+//            productId,tmpServerCode,tmpServerName,tmpRoleID,tmpLevel,tmpRoleName,cpOrderId,extra);
     
 }
 

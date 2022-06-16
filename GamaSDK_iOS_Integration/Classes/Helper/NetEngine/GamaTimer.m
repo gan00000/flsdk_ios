@@ -7,12 +7,10 @@
 //
 
 #import "GamaTimer.h"
-#import "GamaFacebookPort.h"
-#import "GamaAdPort.h"
 #import "SdkUserInfoModel.h"
 #import "GamaFunction.h"
-#import "GamaRequestor.h"
 #import "GamaCommonHeader.h"
+#import "SdkHeader.h"
 //Timer時間
 #define Play8888_TimeInterval 120.0
 
@@ -91,25 +89,25 @@ static GamaTimer *instance = nil;
     if (self.timerCount == 4 && ![self p_loadData]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self p_saveDataCount:self.timerCount fbKey:kGama_EightMin];
-            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_EightMin eventValues:roleInfo];
+//            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_EightMin eventValues:roleInfo];
         });
 
     }else if (self.timerCount == 5 && ![[self p_loadData] isEqualToString:kGama_TenMin]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self p_saveDataCount:self.timerCount fbKey:kGama_TenMin];
-            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_TenMin eventValues:roleInfo];
+//            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_TenMin eventValues:roleInfo];
         });
     }
     else if (self.timerCount == 10 && [[self p_loadData] isEqualToString:kGama_TenMin]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self p_saveDataCount:self.timerCount fbKey:kGama_TwentyMin];
-            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_TwentyMin eventValues:roleInfo];
+//            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_TwentyMin eventValues:roleInfo];
         });
     }
     else if (self.timerCount == 15 && [[self p_loadData] isEqualToString:kGama_TwentyMin]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self p_saveDataCount:self.timerCount fbKey:kGama_ThreetyMin];
-            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_ThreetyMin eventValues:roleInfo];
+//            [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:kGama_ThreetyMin eventValues:roleInfo];
         });
         [self.timer invalidate];
         self.timer = nil;
@@ -198,7 +196,7 @@ static GamaTimer *instance = nil;
                                @"server_code":roleServerId,
                                @"server_name":roleServerName,};
 
-    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:roleInfo];
+//    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:roleInfo];
     
     [[NSUserDefaults standardUserDefaults] setObject:newAry forKey:name];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -280,24 +278,24 @@ static GamaTimer *instance = nil;
     
     NSString *domainUrl = [NSString stringWithFormat:@"%@online/api?%@",SDKConReaderGetString(GAMA_AD_DOMAIN_NAME),payUrl];
     
-    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainUrl]]
-                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
-                           if (!error && !jsonParseErr)
-                           {
-                               NSString * codeStr= [NSString stringWithFormat:@"%@",resultJsonDic[@"code"]];
-                               if ([resultJsonDic[@"code"] integerValue] == 1000) {
-                                   //                                   self.impSuccess(nil);
-                               }else if(codeStr.length==4)
-                               {
-                                   NSString * message=resultJsonDic[@"message"];
-                                   NSLog(@"message:%@",message);
-                                   //[GamaAlertView showAlertWithMessage:message];
-                                   return;
-                               }
-                           }else{
-//                               [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
-                           }
-                       }];
+//    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainUrl]]
+//                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
+//                           if (!error && !jsonParseErr)
+//                           {
+//                               NSString * codeStr= [NSString stringWithFormat:@"%@",resultJsonDic[@"code"]];
+//                               if ([resultJsonDic[@"code"] integerValue] == 1000) {
+//                                   //                                   self.impSuccess(nil);
+//                               }else if(codeStr.length==4)
+//                               {
+//                                   NSString * message=resultJsonDic[@"message"];
+//                                   NSLog(@"message:%@",message);
+//                                   //[GamaAlertView showAlertWithMessage:message];
+//                                   return;
+//                               }
+//                           }else{
+////                               [GamaAlertView showAlertWithMessage:SDKConReaderGetString(GAMA_TEXT_NO_NET)];
+//                           }
+//                       }];
 }
 
 @end

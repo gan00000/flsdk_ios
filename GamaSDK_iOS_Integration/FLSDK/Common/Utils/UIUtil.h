@@ -20,9 +20,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
+                   selectedImageName:(NSString *)selectedImageName
                            titleText:(NSString *)titleText
                             fontSize:(CGFloat)size
                            textColor:(UIColor *)textColor
+                                 tag:(NSUInteger)tag
+                            selector:(SEL)selector
+                              target:(id)target;
+
++ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
+                    highlightedImage:(NSString *)highlightedImageName
+                   selectedImageName:(NSString *)selectedImageName
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target;

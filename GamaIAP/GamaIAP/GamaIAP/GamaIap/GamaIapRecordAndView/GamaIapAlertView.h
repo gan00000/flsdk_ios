@@ -13,7 +13,6 @@
 #import "GamaIapTransactionRecorder.h"
 #import "GamaIapMemoryAndLocalDataAdmin.h"
 #import "GamaFunction.h"
-#import "GamaURLConnect.h"
 #import "GamaAlertView.h"
 #import "GamaCentreInfo.h"
 #import "GamaSecurity.h"

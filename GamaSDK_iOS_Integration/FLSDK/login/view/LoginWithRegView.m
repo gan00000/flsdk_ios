@@ -59,12 +59,12 @@
     
     [self addSubview:tabView];
     [tabView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(self).mas_offset(VW(102));
-        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
-//        make.centerX.mas_equalTo(self);
+//        make.leading.mas_equalTo(self).mas_offset(VW(102));
+//        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
+        make.centerX.mas_equalTo(self);
 //        make.width.mas_equalTo(self).offset(-VW(102));
         make.top.mas_equalTo(VH(MARGIN_TOP));
-        make.height.mas_equalTo(VH(40));
+//        make.height.mas_equalTo(VH(40));
     }];
     
     
@@ -74,7 +74,7 @@
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(tabView);
+        make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
 //        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
     }];
@@ -86,8 +86,8 @@
     [tabView addSubview:regTabBtn];
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(tabView);
-//        make.leading.mas_equalTo(loginTabBtn.mas_trailing);
+        make.top.bottom.mas_equalTo(tabView);
+        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
         make.trailing.mas_equalTo(tabView);
 
     }];
@@ -115,6 +115,19 @@
         make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
+    }];
+    
+    //返回按钮
+    UIButton *backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon" highlightedImage:@"mw_back_icon" tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+    
+    [self addSubview:backBtn];
+    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.centerY.mas_equalTo(tabView);
+//        make.trailing.mas_equalTo(tabView.mas_leading).mas_offset(VW(82));
+        make.leading.mas_equalTo(self).mas_offset(VW(34));
+        
+        make.width.height.mas_equalTo(VW(25));
     }];
     
     
@@ -186,6 +199,12 @@
             [self makeTabStatus:NO];
             break;
             
+        case kBackBtnActTag:
+            
+            if (self.delegate) {
+                [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+            }
+            
             
         default:
             break;
@@ -196,10 +215,6 @@
 -(void) makeTabStatus:(BOOL) loginClick
 {
     if (loginClick) {
-//        loginTabBtn.backgroundColor = [UIColor colorWithHexString:@"ff3a3b"];
-//        regTabBtn.backgroundColor = [UIColor whiteColor];
-        
-        
         
         [loginTabBtn setSelected:YES];
         [regTabBtn setSelected:NO];

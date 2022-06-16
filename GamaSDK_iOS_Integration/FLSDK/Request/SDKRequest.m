@@ -14,13 +14,13 @@
 +(void)freeLoginOrRegisterWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                                 errorBlock:(BJServiceErrorBlock)errorBlock
 {
-    NSString *loginId = ([[GamaFunction getSystemVersion] intValue]) >= 7 ? [GamaFunction getGamaUUID] : [GamaFunction getMacaddress];
+    NSString *loginId =[GamaFunction getGamaUUID]; 
     [self thirdLoginOrReg:loginId andThirdPlate:_SDK_PLAT_MAC addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
     
 }
 
 
-+(void) thirdLoginOrReg:(NSString *)thirdId
++(void)thirdLoginOrReg:(NSString *)thirdId
           andThirdPlate:(NSString *)thirdPlate
          addOtherParams:(NSDictionary *)otherParams
            successBlock:(BJServiceSuccessBlock)successBlock
@@ -37,11 +37,11 @@
     BOOL isGuestLogin = [thirdPlate isEqualToString:_SDK_PLAT_MAC];
     // 签名顺序不能变
     NSMutableString * md5str= [[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",[SDKConReader getAppkey]]; //AppKey
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[thirdId lowercaseString]]; //用户名
-    [md5str appendFormat:@"%@",[SDKConReader getGameCode]];//gamecode
-    isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
+    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
+//    isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     
@@ -52,8 +52,9 @@
         dic = @{
             @"signature"        :[md5SignStr lowercaseString],
             @"timestamp"        :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@", [SDKConReader getGameCode]],
+            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
             @"registPlatform"   :thirdPlate,
+            @"thirdPlatId"      :thirdId,
         };
         [params addEntriesFromDictionary:dic];
         
@@ -61,23 +62,12 @@
         //[self _presentAlertWithException:exception andDictionary:dic];
     }
     
-    NSDictionary *additionDic = nil;
-    if (!isGuestLogin) {
-        @try {
-            additionDic = @{
-                @"thirdPlatId":thirdId,
-            };
-            [params addEntriesFromDictionary:additionDic];
-        } @catch (NSException *exception) {
-            //[self _presentAlertWithException:exception andDictionary:dic];
-        }
-    }
     
     NSString *requestUrlPath = @"";
     if (isGuestLogin) {
-        requestUrlPath = [SDKConReader getFreeRegisterPath];
+        requestUrlPath = api_login_guest;
     }else{
-        requestUrlPath = [SDKConReader getThirdPlatLoginOrRegisterPath];
+        requestUrlPath = api_login_third;
     }
     [HttpServiceEngineLogin getRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
 }
@@ -178,16 +168,16 @@
         @"versionCode"      :     [GamaFunction getBundleVersion]? : @"",
         @"systemVersion"    :     [GamaFunction getSystemVersion]? : @"",
         @"deviceType"       :     [GamaFunction getDeviceType]? : @"",
-        @"operatingSystem"  :     @"ios",
-        @"gameLanguage"     :     @"zh_TW",//[GamaFunction getServerLocaleStrWithGameLanguage:[SDKConReader getGameLanguage]]? : @"",
+        @"os"               :     @"ios", //os=ios
+        @"gameLanguage"     :     @"zh_TW",
         @"osLanguage"       :     [GamaFunction getPreferredLanguage]? : @"",
         
         //      @"loginTimestamp"   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
         //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
         @"uniqueId"         :     [[GamaFunction getGamaUUID] lowercaseString]? : @"",
         
-        @"spy_platForm"       :   SDKConReaderGetString(@"gama_platForm")? :@"",
-        @"spy_advertiser"     :   SDKConReaderGetString(@"gama_advertiser")? :@"",
+        @"spy_platForm"       :   SDKConReaderGetString(@"spy_platForm")? :@"",
+        @"spy_advertiser"     :   SDKConReaderGetString(@"spy_advertiser")? :@"",
         
     };
     
@@ -406,7 +396,7 @@
                           @"system":@"ios",
                           @"system_version":[GamaFunction getSystemVersion]? : @"",
                           @"user_id": [SdkUserInfoModel shareInfoModel].userId,
-                          @"user_name": SDK_DATA.mCCSDKResponse.account? : @"",
+//                          @"user_name": SDK_DATA.mCCSDKResponse.data.account? : @"",
     };
     
     [params addEntriesFromDictionary:dic];

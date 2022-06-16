@@ -11,7 +11,6 @@
 #import "GamaFunction.h"
 #import "HelloHeader.h"
 #import "GamaAlertView.h"
-#import "GamaThirdFunctionPort.h"
 
 @interface AppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
 @property (copy, atomic) AppleLoginSuccess impSuccess;
@@ -300,15 +299,15 @@
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
     NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
     [tempMutableDic removeObjectForKey:@"appleThirdID"];
-    [GamaThirdFunctionPort thirdLoginWithThirdId:appleID
-                                  andThirdPlate:@"apple"
-                                        andApps:@""
-                               andBusinessToken:nil
-                         andThirdAdditionParams:tempMutableDic
-                                  andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
-                                  andOtherBlock:^{
-                                      //gama2 Server register success
-                                  }];
+//    [GamaThirdFunctionPort thirdLoginWithThirdId:appleID
+//                                  andThirdPlate:@"apple"
+//                                        andApps:@""
+//                               andBusinessToken:nil
+//                         andThirdAdditionParams:tempMutableDic
+//                                  andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+//                                  andOtherBlock:^{
+//                                      //gama2 Server register success
+//                                  }];
 }
 
 - (void)saveAppleLastLoginSuccessWithInformation:(NSDictionary*)info{

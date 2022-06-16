@@ -2,14 +2,11 @@
 //
 
 #import "GamaInterfaceSDK.h"
-#import "GamaFacebookPort.h"
-#import "GamaIapFunctionPort.h"
 #import "GamaNetEngine.h"
 #import "GamaCentreInfo.h"
 #import "GamaCommonHeader.h"
 //#import "KRTwitterLogin.h"
 //#import "ProvisionsView.h"
-#import "GamaAdPort.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -187,8 +184,8 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation
 {
-    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
-    [GamaFacebookPort application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+//    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
+//    [GamaFacebookPort application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     
     return YES;
 }
@@ -207,7 +204,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
 continueUserActivity:(NSUserActivity *)userActivity
 restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 {
-    [GamaAdPort application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+//    [GamaAdPort application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
     return YES;
 }
 
@@ -216,7 +213,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 + (void)Gama_application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {    
     NSLog(@"push token:%@",[NSString stringWithFormat:@"%@",deviceToken]);
-    [GamaAdPort adjust_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+//    [GamaAdPort adjust_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 //    [[AppsFlyerTracker sharedTracker] registerUninstall:deviceToken];
     if ([NSClassFromString(@"AppsFlyerTracker") respondsToSelector:NSSelectorFromString(@"sharedTracker")]) {
         Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"AppsFlyerTracker"),NSSelectorFromString(@"sharedTracker"));

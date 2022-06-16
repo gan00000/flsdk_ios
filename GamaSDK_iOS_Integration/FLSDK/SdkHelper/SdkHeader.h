@@ -19,6 +19,7 @@
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
 
+
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
 
@@ -41,7 +42,7 @@
 #define ContentViewBgColor                    @"#f4f4f5"
 
 
-#define SDK_DATA                           [CCSDKDATA sharedSdkData]
+//#define SDK_DATA                           [CCSDKDATA sharedSdkData]
 
 #define LABEL_FONT_NAME_BOLD                 @"Helvetica-Bold"
 #define LABEL_FONT_NAME_Helvetica           @"Helvetica"
@@ -66,7 +67,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_REG_ACCOUNT,
     CURRENT_PAGE_TYPE_LOGIN_ACCOUNT,
     CURRENT_PAGE_TYPE_SELECT_BIND_TYPE,
-    CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE,
+//    CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE,
     CURRENT_PAGE_TYPE_FIND_PWD,
     CURRENT_PAGE_TYPE_CHANGE_PWD,
     CURRENT_PAGE_TYPE_BIND_ACCOUNT,
@@ -107,11 +108,19 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 
 // login type
 #define _SDK_PLAT_SELF           (@"gamesword")
-#define _SDK_PLAT_MAC            (@"unique")
+#define _SDK_PLAT_MAC            (@"visitor")
 #define _SDK_PLAT_FB             (@"fb")
 #define _SDK_PLAT_GC             (@"gc")
 #define _SDK_PLAT_TWITTER        (@"twitter")
 #define _SDK_PLAT_APPLE          (@"apple")
+
+
+//请求域名
+
+
+//请求接口
+#define api_login_guest  (@"api/user/visitorLogin")
+#define api_login_third  (@"api/user/thirdPartyLogin")
 
 
 #endif /* CCSkyHourHeader_h */

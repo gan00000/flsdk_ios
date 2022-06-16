@@ -38,7 +38,7 @@
         //登入頁logo
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"修改密碼" hander:^(NSInteger) {
             
-            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_CHANGE_PWD)];
+//            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_CHANGE_PWD)];
             
         }];
 //        mLoginTitleView.delegate = self.delegate;//此处不起作用

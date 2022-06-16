@@ -8,7 +8,6 @@
 
 #import "GamaPhoneModel.h"
 #import "GamaAlertView.h"
-#import "GamaRequestor.h"
 
 #define GAMESWORD_PHONE_AREA_CODE  @"gameswordphoneAreaCode"
 
@@ -93,18 +92,18 @@
 //访问服务器获得地区号码
 + (void)requestPhoneNumberAreaCodes
 {
-    NSString *phoneNumberAreaUrl = [NSString stringWithFormat:@"https://static-download2.flyfungame.com/baseconfig/v1/areacodes.json"];
-    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:phoneNumberAreaUrl]]
-                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
-        if (!error &&resultJsonDic.count > 0) {
-            NSArray *tempArray = [NSArray arrayWithObject:resultJsonDic];
-            if ([tempArray isKindOfClass:[NSArray class]] && [tempArray count] >0) {
-    //            [self resetupAreaCodesAndActionSheetWith:tempArray[0]];
-                [self savePhoneNumber:tempArray[0]]; //Attempting to load the view of a view controller while it is deallocating is not allowed and may result in undefined behavior (<UIAlertController: 0x7fb5a286b390>)问题在actionsheet那里
-                return ;
-            }
-        }
-    }];
+//    NSString *phoneNumberAreaUrl = [NSString stringWithFormat:@"https://static-download2.flyfungame.com/baseconfig/v1/areacodes.json"];
+//    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:phoneNumberAreaUrl]]
+//                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
+//        if (!error &&resultJsonDic.count > 0) {
+//            NSArray *tempArray = [NSArray arrayWithObject:resultJsonDic];
+//            if ([tempArray isKindOfClass:[NSArray class]] && [tempArray count] >0) {
+//    //            [self resetupAreaCodesAndActionSheetWith:tempArray[0]];
+//                [self savePhoneNumber:tempArray[0]]; //Attempting to load the view of a view controller while it is deallocating is not allowed and may result in undefined behavior (<UIAlertController: 0x7fb5a286b390>)问题在actionsheet那里
+//                return ;
+//            }
+//        }
+//    }];
 }
 
 + (void)savePhoneNumber:(NSArray *)numberAry

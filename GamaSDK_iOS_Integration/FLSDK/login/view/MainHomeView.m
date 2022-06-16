@@ -10,6 +10,7 @@
 #import "UIUtil.H"
 #import "LoginTypeButton.h"
 #import "UIView+BlockGesture.h"
+#import "SDKRequest.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -20,9 +21,7 @@
 @implementation MainHomeView
 {
     UIButton *guestLoginBtn;
-    UIButton *regTabBtn;
-    
-    NSUInteger currentClickTab;
+    UIButton *checkBoxTermsBtn;
     
 }
 
@@ -38,7 +37,7 @@
 {
     self = [super init];
     if (self) {
-        currentClickTab = 1;
+       
         [self addView];
     }
     return self;
@@ -46,11 +45,12 @@
 
 -(void)addView
 {
-    
-    guestLoginBtn = [UIUtil initBtnWithTitleText:@"繼續遊戲" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    //游客登录
+    guestLoginBtn = [UIUtil initBtnWithTitleText:@"" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
     guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+    
     [self addSubview:guestLoginBtn];
     
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -60,8 +60,31 @@
         make.trailing.mas_equalTo(self).mas_offset(VH(-38));;
         make.height.mas_equalTo(VH(50));
     }];
-   
+    
+    UIView *guestLoginBtnContent = [[UIView alloc] init];
+    [guestLoginBtn addSubview:guestLoginBtnContent];
+    [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(guestLoginBtn);
+//        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
+    }];
+    
+    UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage:@"guse_login_bg" highlightedImage:nil tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    [guestLoginBtnContent addSubview:guestIconBtn];
+    [guestIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.mas_equalTo(guestLoginBtnContent);
+        make.width.height.mas_equalTo(VW(30));
+    }];
+    
+    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText:@"遊客登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    [guestLoginBtnContent addSubview:guestTextBtn];
+    [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
+        make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
+    }];
+    
+    
     UIView *topView = guestLoginBtn;
+    //游客登录 end
     
     if (@available(iOS 13.0, *)) {
         ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
@@ -170,7 +193,6 @@
     }];
     leadingView = googleBtn;
     
-    
     LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
     [loginTypeView addSubview:lineBtn];
     [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -188,6 +210,59 @@
             [self.delegate goPageView:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }
     }];
+    
+  
+    UIView *termAgreeView = [[UIView alloc] init];
+    [self addSubview:termAgreeView];
+    [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self);
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
+    }];
+    
+    checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"mw_cb_uncheck" highlightedImage:nil selectedImageName:@"mw_cb_check" tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+    checkBoxTermsBtn.selected = YES;
+    [termAgreeView addSubview:checkBoxTermsBtn];
+    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(termAgreeView);
+        make.centerY.mas_equalTo(termAgreeView);
+        make.width.height.mas_equalTo(VH(10));
+       
+    }];
+    
+//    [TermsView saveAgreenProvisionState:YES];
+//    isAgree = [TermsView isAgreenProvision];
+//    if (isAgree) {
+//        [checkBoxTermsBtn setImage:GetImage(@"mw_cb_check.png") forState:(UIControlStateNormal)];
+//    }else{
+//        [checkBoxTermsBtn setImage:GetImage(@"mw_cb_uncheck.png") forState:(UIControlStateNormal)];
+//    }
+    
+        NSString *xtext = @"我已閱讀並同意定型化契約";
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        rememberTermsLable.textAlignment = NSTextAlignmentLeft;
+        rememberTermsLable.backgroundColor = [UIColor clearColor];
+        rememberTermsLable.numberOfLines = 1;
+        
+    
+         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
+         };
+         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
+        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
+         //赋值
+        rememberTermsLable.attributedText = attribtStr;
+        
+        [termAgreeView addSubview:rememberTermsLable];
+        [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.bottom.mas_equalTo(termAgreeView);
+            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.trailing.mas_equalTo(termAgreeView.mas_trailing);
+        }];
+//        rememberTermsLable.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+//        UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rememberTermsLableTapped:)];
+//        [rememberTermsLable addGestureRecognizer:tapGr];
+        
+      
+     
 }
 
 - (void)drawRect:(CGRect)rect
@@ -205,33 +280,56 @@
 {
     switch (sender.tag) {
        
-        case kLoginTabActTag:
-            SDK_LOG(@"kLoginTabActTag");
-            if (currentClickTab == 1) {
-                return;
-            }
-            currentClickTab = 1;
+        case appleLoginActTag:
+            SDK_LOG(@"appleLoginActTag");
             
-//            [self makeTabStatus:YES];
-            if (self.delegate) {
-                //[self.delegate goBackBtn:backBtn backCount:1];
-            }
             break;
             
         case kRegTabActTag:
             
             
             SDK_LOG(@"kRegTabActTag");
-            if (currentClickTab == 2) {
-                return;
-            }
-            currentClickTab = 2;
-            
-           // [self requestAccountLogin];
-//            [self makeTabStatus:NO];
+          
             break;
             
+        case kAgreeTermsCheckBoxBtnTag:
             
+            SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
+            if (checkBoxTermsBtn.selected) {
+                checkBoxTermsBtn.selected = NO;
+            }else{
+                checkBoxTermsBtn.selected = YES;
+            }
+            break;
+        case guestLoginActTag:
+        {
+            SDK_LOG(@"guestLoginActTag");
+            [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
+                
+                if (self.delegate) {
+                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+                }
+                
+            } errorBlock:^(BJError *error) {
+                if (error && error.message) {
+                    [GamaAlertView showAlertWithMessage:error.message];
+                }
+                
+            }];
+        }
+            
+            
+        case fbLoginActTag:
+            SDK_LOG(@"fbLoginActTag");
+            
+            
+            break;
+        case googleLoginActTag:
+            SDK_LOG(@"googleLoginActTag");
+            break;
+        case lineLoginActTag:
+            SDK_LOG(@"lineLoginActTag");
+            break;
         default:
             break;
     }

@@ -21,7 +21,6 @@
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "AppleLogin.h"
-#import "GamaFacebookPort.h"
 #import "TermsView.h"
 
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
@@ -153,63 +152,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.height.mas_equalTo(VH(40));
         }];
         
-        
-        
-    /**
-        NSString *xtext = @"我已閱讀並同意定型化契約";
-        UILabel *rememberTermsLable = [[UILabel alloc] init];
-//        rememberTermsLable.text =  @"我已閱讀並同意定型化契約";
-        rememberTermsLable.font = [UIFont systemFontOfSize:VH(20)];
-        rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-        rememberTermsLable.backgroundColor = [UIColor clearColor];
-        rememberTermsLable.numberOfLines = 1;
-        rememberTermsLable.textColor = [UIColor blackColor];
-        rememberTermsLable.adjustsFontSizeToFitWidth = YES;
-        
-        // 下划线
-         NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],
-                                      NSFontAttributeName: [UIFont systemFontOfSize:VH(20)]
-         };
-         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
-         //赋值
-        rememberTermsLable.attributedText = attribtStr;
-        
-        [self addSubview:rememberTermsLable];
-        [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self).mas_offset(VW(20));
-            make.width.mas_greaterThanOrEqualTo(VW(280));
-            make.top.equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(10));
-            make.height.mas_equalTo(VH(40));
-        }];
-        rememberTermsLable.userInteractionEnabled = YES; // 可以理解为设置label可被点击
-        UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rememberTermsLableTapped:)];
-        [rememberTermsLable addGestureRecognizer:tapGr];
-        
-        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        [self addSubview:checkBoxTermsBtn];
-        [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(rememberTermsLable.mas_leading).mas_offset(-4);
-            make.centerY.mas_equalTo(rememberTermsLable);
-            make.width.mas_equalTo(VH(26));
-            make.height.mas_equalTo(VH(26));
-        }];
-        
-        [TermsView saveAgreenProvisionState:YES];
-        isAgree = [TermsView isAgreenProvision];
-        if (isAgree) {
-            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:(UIControlStateNormal)];
-        }else{
-            [checkBoxTermsBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:(UIControlStateNormal)];
-        }
-     */
-//        NSUInteger w = VW(90 * 4) + VW(48 * 3);
-//        if (@available(iOS 13.0, *)) {
-//            w = VW(90 * 4) + VW(48 * 3);
-//        }else{
-//            w = VW(90 * 3) + VW(48 * 2);
-//        }
+    
         
         CGFloat btn_w = VW(28);
         CGFloat btn_h = btn_w;
@@ -218,7 +161,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         UIView *loginTypeView = [[UIView alloc] init];
         [self addSubview:loginTypeView];
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(accountSDKTextFiledView);
+            make.centerX.mas_equalTo(accountSDKTextFiledView);
 //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
             make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
 //            make.centerX.mas_equalTo(self);
@@ -297,6 +240,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.height.mas_equalTo(btn_h);
             make.top.mas_equalTo(loginTypeView);
             make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+            make.trailing.mas_equalTo(loginTypeView);
         }];
         leadingView = lineBtn;
         
@@ -307,8 +251,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-            accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
-            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
+            accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].account;
+            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].password;
         }
         if (mAccountArray.count > 1) {
 //            accountSDKTextFiledView.moreAccountBtn.hidden = NO;
@@ -357,8 +301,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
    NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
     if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-        accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
-        passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
+        accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].account;
+        passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].password;
     }
     [accountDataList removeAllObjects];
     [accountDataList addObjectsFromArray:mAccountArray];
@@ -473,7 +417,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         case kBackBtnActTag:
             SDK_LOG(@"kBackBtnActTag");
             if (self.delegate) {
-                [self.delegate goBackBtn:backBtn backCount:1 sdkPage:(CURRENT_PAGE_TYPE_LOGIN_ACCOUNT)];
+                [self.delegate goBackBtn:backBtn backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
@@ -492,36 +436,36 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         {
             
             [SdkUtil gamaStarLoadingAtView:self];
-            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                [SdkUtil gamaStopLoadingAtView:self];
-                if (!loginError)
-                {
-                    
-                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-                    NSDictionary *additionDic = @{
-                        @"apps":appsStr,
-                        @"tokenBusiness":@"",
-                        @"fb_oauthToken":facebookTokenStr,
-                    };
-                    
-                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
-                        
-                        if (self.delegate) {
-                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
-                        }
-                        
-                    } errorBlock:^(BJError *error) {
-                        if (error && error.message) {
-                            [GamaAlertView showAlertWithMessage:error.message];
-                        }
-                    }];
-                    
-                    
-                }else{
-                    //[GamaAlertView showAlertWithMessage:@"error.message"];
-                }
-                
-            }];
+//            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//                [SdkUtil gamaStopLoadingAtView:self];
+//                if (!loginError)
+//                {
+//                    
+//                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
+//                    NSDictionary *additionDic = @{
+//                        @"apps":appsStr,
+//                        @"tokenBusiness":@"",
+//                        @"fb_oauthToken":facebookTokenStr,
+//                    };
+//                    
+//                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                        
+//                        if (self.delegate) {
+//                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                        }
+//                        
+//                    } errorBlock:^(BJError *error) {
+//                        if (error && error.message) {
+//                            [GamaAlertView showAlertWithMessage:error.message];
+//                        }
+//                    }];
+//                    
+//                    
+//                }else{
+//                    //[GamaAlertView showAlertWithMessage:@"error.message"];
+//                }
+//                
+//            }];
             
         }
             break;
@@ -630,8 +574,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         if (weakSelf.delegate) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
-            cc.account = accountName;
-            cc.password = pwd;
+//            cc.account = accountName;
+//            cc.password = pwd;
             [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
         }
         
@@ -658,7 +602,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AccountModel *mAccountModel = accountDataList[indexPath.row];
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
-    cell.accountUILabel.text = mAccountModel.accountName;
+    cell.accountUILabel.text = mAccountModel.account;
     kWeakSelf
     cell.mItemViewClickHander = ^(NSInteger tag) {
         if (tag == kMoreAccountDeleteActTag) {
@@ -676,8 +620,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
     AccountModel *mAccountModel = accountDataList[indexPath.row];
-    accountSDKTextFiledView.inputUITextField.text = mAccountModel.accountName;
-    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.accountPwd;
+    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;
+    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
     [self setTableViewHiden:YES];
 }
 

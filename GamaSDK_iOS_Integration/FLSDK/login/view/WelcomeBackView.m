@@ -21,7 +21,6 @@
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "AppleLogin.h"
-#import "GamaFacebookPort.h"
 #import "TermsView.h"
 
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
@@ -71,7 +70,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"歡迎回來" hander:^(NSInteger) {
             
-            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
+//            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
@@ -209,7 +208,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-            accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
+            accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].account;
 //            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
         }
         if (mAccountArray.count > 1) {
@@ -259,7 +258,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
    NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
     if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-        accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountName;
+        accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].account;
 //        passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].accountPwd;
     }
     [accountDataList removeAllObjects];
@@ -394,36 +393,36 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         {
             
             [SdkUtil gamaStarLoadingAtView:self];
-            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                [SdkUtil gamaStopLoadingAtView:self];
-                if (!loginError)
-                {
-                    
-                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-                    NSDictionary *additionDic = @{
-                        @"apps":appsStr,
-                        @"tokenBusiness":@"",
-                        @"fb_oauthToken":facebookTokenStr,
-                    };
-                    
-                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
-                        
-                        if (self.delegate) {
-                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
-                        }
-                        
-                    } errorBlock:^(BJError *error) {
-                        if (error && error.message) {
-                            [GamaAlertView showAlertWithMessage:error.message];
-                        }
-                    }];
-                    
-                    
-                }else{
-                    //[GamaAlertView showAlertWithMessage:@"error.message"];
-                }
-                
-            }];
+//            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//                [SdkUtil gamaStopLoadingAtView:self];
+//                if (!loginError)
+//                {
+//                    
+//                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
+//                    NSDictionary *additionDic = @{
+//                        @"apps":appsStr,
+//                        @"tokenBusiness":@"",
+//                        @"fb_oauthToken":facebookTokenStr,
+//                    };
+//                    
+//                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                        
+//                        if (self.delegate) {
+//                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                        }
+//                        
+//                    } errorBlock:^(BJError *error) {
+//                        if (error && error.message) {
+//                            [GamaAlertView showAlertWithMessage:error.message];
+//                        }
+//                    }];
+//                    
+//                    
+//                }else{
+//                    //[GamaAlertView showAlertWithMessage:@"error.message"];
+//                }
+//                
+//            }];
             
         }
             break;
@@ -532,8 +531,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         if (weakSelf.delegate) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
-            cc.account = accountName;
-            cc.password = pwd;
+            cc.data.account = accountName;
+            cc.data.password = pwd;
             [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
         }
         
@@ -560,7 +559,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AccountModel *mAccountModel = accountDataList[indexPath.row];
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
-    cell.accountUILabel.text = mAccountModel.accountName;
+    cell.accountUILabel.text = mAccountModel.account;
     kWeakSelf
     cell.mItemViewClickHander = ^(NSInteger tag) {
         if (tag == kMoreAccountDeleteActTag) {
@@ -578,7 +577,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
     AccountModel *mAccountModel = accountDataList[indexPath.row];
-    accountSDKTextFiledView.inputUITextField.text = mAccountModel.accountName;
+    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;
 //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.accountPwd;
     [self setTableViewHiden:YES];
 }

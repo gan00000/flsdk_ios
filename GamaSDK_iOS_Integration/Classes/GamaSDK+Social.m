@@ -7,7 +7,6 @@
 //
 
 #import "GamaSDK+Social.h"
-#import "GamaFacebookPort.h"
 #import "GamaThirdSocial.h"
 //#import "KRTwitterLogin.h"
 //#import "KRGamaNaverCafe.h"
@@ -25,7 +24,7 @@ NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_c
                        completedHandler:(void (^)(NSDictionary * _Nullable,
                                                   NSError * _Nullable))handler
 {
-    [GamaFacebookPort social_getUserProfileWithCompletedHandler:handler];
+//    [GamaFacebookPort social_getUserProfileWithCompletedHandler:handler];
 }
 
 
@@ -40,10 +39,10 @@ NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_c
                                            NSString * _Nullable,
                                            NSError * _Nullable))handler
 {
-    [GamaFacebookPort social_fetchFriendsWithParam:par
-                                            Paging:paging
-                                             limit:limit
-                                  completedHandler:handler];
+//    [GamaFacebookPort social_fetchFriendsWithParam:par
+//                                            Paging:paging
+//                                             limit:limit
+//                                  completedHandler:handler];
 }
 
 +(void)gama_shareWithKind:(GamaThirdPartyType)kind
@@ -54,9 +53,9 @@ NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_c
     switch (kind) {
         case GamaThirdPartyTypeFacebook:
         {
-            [GamaFacebookPort social_shareWithParam:par
-                                            success:success
-                                            failure:failure];
+//            [GamaFacebookPort social_shareWithParam:par
+//                                            success:success
+//                                            failure:failure];
         }
             break;
         case GamaThirdPartyTypeWhatsApp:
@@ -104,9 +103,9 @@ NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_c
                                           success:(void (^)(NSDictionary * _Nullable))success
                                           failure:(void (^)(NSError * _Nullable))failure
 {
-    [GamaFacebookPort social_sentMessageToSpecifiedFriendsWithParam:par
-                                                            success:success
-                                                            failure:failure];
+//    [GamaFacebookPort social_sentMessageToSpecifiedFriendsWithParam:par
+//                                                            success:success
+//                                                            failure:failure];
 }
 
 +(void)gama_inviteFriendsWithKind:(GamaThirdPartyType)kind
@@ -114,9 +113,9 @@ NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_c
                           success:(void (^)(NSDictionary * _Nullable))success
                           failure:(void (^)(NSError * _Nullable))failure
 {
-    [GamaFacebookPort social_inviteFriendsWithParam:par
-                                            success:success
-                                            failure:failure];
+//    [GamaFacebookPort social_inviteFriendsWithParam:par
+//                                            success:success
+//                                            failure:failure];
 }
 
 + (void)gama_openCafeHome

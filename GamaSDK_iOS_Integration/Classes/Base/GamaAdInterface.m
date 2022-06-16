@@ -7,13 +7,12 @@
 //
 
 #import "GamaAdInterface.h"
-#import "GamaAdPort.h"
 
 @implementation GamaAdInterface
 
 + (void)allEventReportWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters
 {
-    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:eventName eventValues:parameters];
+//    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:eventName eventValues:parameters];
 }
 
 @end

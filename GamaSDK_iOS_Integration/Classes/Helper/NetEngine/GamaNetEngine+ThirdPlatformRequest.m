@@ -7,10 +7,8 @@
 //
 
 #import "GamaNetEngine.h"
-#import "GamaThirdFunctionPort.h"
 #import "GamaCommonHeader.h"
 #import "GamaCentreInfo.h"
-#import "GamaFacebookPort.h"
 #import "GamaCentreInfo.h"
 #import "GamaFunction.h"
 #import "HelloHeader.h"
@@ -28,31 +26,31 @@
             break;
         case Gama_Facebook: {
             
-            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                
-                if (!loginError)
-                {
-                    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-                    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
-                    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
-                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",[GamaFacebookCenter getFacebookId],facebookAppID];
-                    
-//                    [GamaThirdFunctionPort thirdLoginWithThirdId:facebookID
-//                             andThirdPlate:@"fb"
-//                                   andApps:appsStr
-//                          andBusinessToken:@""
-//                    andThirdAdditionParams:@{GAMA_LOGIN_PARAMS_FB_OAUTHTOKEN:facebookTokenStr}
-//                             andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
-//                             andOtherBlock:nil];
-                }
-                else
-                {
-                    //发送登陆失败的广播
-                    [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_FACEBOOK_LOGIN_FAIL
-                                                                       object:nil];
-                }
-                
-            }];
+//            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//
+//                if (!loginError)
+//                {
+//                    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+//                    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
+//                    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
+//                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",[GamaFacebookCenter getFacebookId],facebookAppID];
+//
+////                    [GamaThirdFunctionPort thirdLoginWithThirdId:facebookID
+////                             andThirdPlate:@"fb"
+////                                   andApps:appsStr
+////                          andBusinessToken:@""
+////                    andThirdAdditionParams:@{GAMA_LOGIN_PARAMS_FB_OAUTHTOKEN:facebookTokenStr}
+////                             andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+////                             andOtherBlock:nil];
+//                }
+//                else
+//                {
+//                    //发送登陆失败的广播
+//                    [[NSNotificationCenter defaultCenter]postNotificationName:GAMA_FACEBOOK_LOGIN_FAIL
+//                                                                       object:nil];
+//                }
+//
+//            }];
             
         }
             break;
@@ -74,7 +72,7 @@
             [NSClassFromString(@"GamaGamecenterPort") gamecenterBindWithUserName:userName andPassword:password otherDic:otherDic];
             break;
         case Gama_Facebook:
-            [GamaFacebookPort facebookBindingWithUserName:userName andPassword:password otherDic:otherDic];
+//            [GamaFacebookPort facebookBindingWithUserName:userName andPassword:password otherDic:otherDic];
             break;
         case Gama_Twitter:
         {
@@ -93,26 +91,26 @@
 
 + (void)thirdLoginWithThirdId:(NSString *)thirdId thirdPlate:(NSString *)thirdPlate handler:(void(^)(void))handler
 {    
-    [GamaThirdFunctionPort thirdLoginWithThirdId:thirdId
-                                   andThirdPlate:thirdPlate
-                                         andApps:nil
-                                andBusinessToken:nil
-                                   andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
-                                   andOtherBlock:handler];
+//    [GamaThirdFunctionPort thirdLoginWithThirdId:thirdId
+//                                   andThirdPlate:thirdPlate
+//                                         andApps:nil
+//                                andBusinessToken:nil
+//                                   andDomainName:SDKConReaderGetString(GAMA_LOGIN_DOMAIN_NAME)
+//                                   andOtherBlock:handler];
 }
 
 + (void)thirdBindPhoneWithInformation:(NSDictionary *)dic{
     NSString *thirID = [[SdkUserInfoModel shareInfoModel] thirdId];
     NSString *thirPlat = [[SdkUserInfoModel shareInfoModel] loginTypeStr];
-    [GamaThirdFunctionPort bindPhoneLogingWithThirdId:[thirID lowercaseString]
-                                        andThirdPlate:thirPlat
-                                              andApps:nil
-                                     andBusinessToken:nil
-                               andThirdAdditionParams:dic
-                                        andDomainName:nil
-                                        andOtherBlock:^{
-        
-    }];
+//    [GamaThirdFunctionPort bindPhoneLogingWithThirdId:[thirID lowercaseString]
+//                                        andThirdPlate:thirPlat
+//                                              andApps:nil
+//                                     andBusinessToken:nil
+//                               andThirdAdditionParams:dic
+//                                        andDomainName:nil
+//                                        andOtherBlock:^{
+//        
+//    }];
     
 }
 

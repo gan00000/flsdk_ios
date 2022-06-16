@@ -14,7 +14,6 @@
 #import "GamaNetEngine.h"
 #import "SdkUtil.h"
 #import "SDKRequest.h"
-#import "GamaFacebookPort.h"
 #import "AppleLogin.h"
 #import "SDKIconTitleButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
@@ -169,36 +168,36 @@
         {
             
             [SdkUtil gamaStarLoadingAtView:self];
-            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-                [SdkUtil gamaStopLoadingAtView:self];
-                if (!loginError)
-                {
-                    
-                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-                    NSDictionary *additionDic = @{
-                        @"apps":appsStr,
-                        @"tokenBusiness":@"",
-                        @"fb_oauthToken":facebookTokenStr,
-                    };
-                    
-                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
-                        
-                        if (self.delegate) {
-                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
-                        }
-                        
-                    } errorBlock:^(BJError *error) {
-                        if (error && error.message) {
-                            [GamaAlertView showAlertWithMessage:error.message];
-                        }
-                    }];
-                    
-                    
-                }else{
-                    //[GamaAlertView showAlertWithMessage:@"error.message"];
-                }
-                
-            }];
+//            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//                [SdkUtil gamaStopLoadingAtView:self];
+//                if (!loginError)
+//                {
+//                    
+//                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
+//                    NSDictionary *additionDic = @{
+//                        @"apps":appsStr,
+//                        @"tokenBusiness":@"",
+//                        @"fb_oauthToken":facebookTokenStr,
+//                    };
+//                    
+//                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                        
+//                        if (self.delegate) {
+//                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                        }
+//                        
+//                    } errorBlock:^(BJError *error) {
+//                        if (error && error.message) {
+//                            [GamaAlertView showAlertWithMessage:error.message];
+//                        }
+//                    }];
+//                    
+//                    
+//                }else{
+//                    //[GamaAlertView showAlertWithMessage:@"error.message"];
+//                }
+//                
+//            }];
             
         }
             break;

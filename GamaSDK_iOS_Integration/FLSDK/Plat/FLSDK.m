@@ -59,7 +59,6 @@
 #import "GamaTimer.h"
 //#import "NSString+GamaURLEncoding.h"
 //#import "KRAgeSystemView.h"
-#import "GamaAdPort.h"
 #import "SDKLoginViewController.h"
 #import "GamaFunction.h"
 
@@ -625,20 +624,20 @@ completionHandler:(PayCompletionHandler) handler
 - (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas
 {
     if (channel == SDKEventReportAllChannel || channel == 0) {
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:eventParmas];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:eventParmas];
         return ;//保险
     }
     if (channel & SDKEventReportFacebook){
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFacebook eventName:name eventValues:eventParmas];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFacebook eventName:name eventValues:eventParmas];
     }
     if(channel & SDKEventReportFirebase){
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFirebase eventName:name eventValues:eventParmas];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFirebase eventName:name eventValues:eventParmas];
     }
     if(channel & SDKEventReportAppsflyer){
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAppsflyer eventName:name eventValues:eventParmas];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAppsflyer eventName:name eventValues:eventParmas];
     }
     if (channel & SDKEventReportAdjust) {
-        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAdjust eventName:name eventValues:eventParmas];
+//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAdjust eventName:name eventValues:eventParmas];
     }
 }
 

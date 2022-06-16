@@ -23,6 +23,8 @@
 #import "LoginWithRegView.h"
 #import "MainHomeView.h"
 
+#import "AccountModel.h"
+
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
@@ -34,6 +36,7 @@
 //    AccountLoginView *mAccountLoginView;
     SdkAutoLoginView *mAutoLoginView;
     LoginWithRegView *mLoginWithRegView;
+    MainHomeView *mMainHomeView;
     
     UIView *sdkContentView;
 }
@@ -293,8 +296,8 @@
     //移除所有子视图
     [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 
-    MainHomeView *view = [[MainHomeView alloc] initView];
-    [self addSubSdkLoginView:view];
+    mMainHomeView = [[MainHomeView alloc] initView];
+    [self addSubSdkLoginView:mMainHomeView];
 }
 
 
@@ -356,8 +359,8 @@
             [self addFindPasswordView];
             break;
             
-        case CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE:
-            //[self addSelectLoginTypeView];//選擇登入方式
+        case CURRENT_PAGE_TYPE_MAIN_HOME:
+            [self addHomeView];//選擇登入方式
             break;
             
         case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
@@ -385,12 +388,18 @@
     }
 }
 
-- (void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count sdkPage:(CURRENT_PAGE_TYPE) page{
+-(void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count fromPage:(CURRENT_PAGE_TYPE) fromPage toPage:(CURRENT_PAGE_TYPE) toPage{
     
-    switch (page) {
-        case CURRENT_PAGE_TYPE_FIND_PWD:
+    switch (toPage) {
+        case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
             if (mLoginWithRegView) {
                 mLoginWithRegView.hidden = NO;
+            }
+            break;
+            
+        case CURRENT_PAGE_TYPE_MAIN_HOME:
+            if (mMainHomeView) {
+                mMainHomeView.hidden = NO;
             }
             break;
             
@@ -435,44 +444,44 @@
 
 -(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate
 {
-    CCSDKResponse *cc = (CCSDKResponse *)responseData;
-    cc.thirdPlate = thirdPlate;
-    SDK_DATA.mCCSDKResponse = cc;
+    CCSDKResponse *loginResopnse = (CCSDKResponse *)responseData;
+    AccountModel *rData = loginResopnse.data;
+    rData.loginType = thirdPlate;
     [[ConfigCoreUtil share] saveLoginType:thirdPlate];
-    [SdkUserInfoModel shareInfoModel].userId = cc.userId;
-    [SdkUserInfoModel shareInfoModel].accessToken = cc.accessToken;
+    [SdkUserInfoModel shareInfoModel].userId = rData.userId;
+    [SdkUserInfoModel shareInfoModel].accessToken = rData.token;
     //[SdkUserInfoModel shareInfoModel].loginType = thirdPlate;
     [SdkUserInfoModel shareInfoModel].loginTypeStr = thirdPlate;
-    [SdkUserInfoModel shareInfoModel].timestamp = cc.timestamp;
+    [SdkUserInfoModel shareInfoModel].timestamp = rData.timestamp;
     
     if ([_SDK_PLAT_SELF isEqualToString:thirdPlate]) {
         //是否需要保存账号密码
-        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
-            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
-//                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":cc.userId}];
-                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
-            }else if([ConfigCoreUtil share].isSaveAccountInfo){//登录并勾选记住密码
-//                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":cc.userId}];
-                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
-            }
-            
-        }
+//        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
+//            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
+////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":cc.userId}];
+//                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
+//            }else if([ConfigCoreUtil share].isSaveAccountInfo){//登录并勾选记住密码
+////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":cc.userId}];
+//                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
+//            }
+//
+//        }
 
     }
     
-    if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
-        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":cc.userId}];
+    if (loginResopnse.code == 1001) {//注册
+        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":rData.userId}];
         
     }else {//登录
-        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":cc.userId}];
+        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":rData.userId}];
         
     }
     
     if ([FLSDK share].loginCompletionHandler) {
         LoginData *loginData = [[LoginData alloc] init];
-        loginData.accessToken = SDK_DATA.mCCSDKResponse.accessToken;
-        loginData.userId = SDK_DATA.mCCSDKResponse.userId;
-        loginData.timestamp = SDK_DATA.mCCSDKResponse.timestamp;
+        loginData.accessToken = rData.token;
+        loginData.userId = rData.userId;
+        loginData.timestamp =rData.timestamp;
         
         [FLSDK share].loginCompletionHandler(loginData);
     }

@@ -48,7 +48,7 @@
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼" hander:^(NSInteger) {
             
-            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
+            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_FIND_PWD) toPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         

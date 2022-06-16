@@ -29,6 +29,7 @@
 
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
+                   selectedImageName:(NSString *)selectedImageName
                            titleText:(NSString *)titleText
                             fontSize:(CGFloat)size
                            textColor:(UIColor *)textColor
@@ -44,14 +45,19 @@
         btn.titleLabel.font = [UIFont systemFontOfSize:size]; //VH(14)
         
         [btn setTitleColor:textColor forState:UIControlStateNormal];
-        [btn setTitleColor:textColor forState:UIControlStateHighlighted];
-        [btn setTitleColor:textColor forState:UIControlStateSelected];
+//        [btn setTitleColor:textColor forState:UIControlStateHighlighted];
+//        [btn setTitleColor:textColor forState:UIControlStateSelected];
         
 //        [btn setBackgroundImage:GetImage(normalImageName) forState:UIControlStateNormal];
     }
     if (normalImageName) {
         [btn setImage:GetImage(normalImageName) forState:UIControlStateNormal];
+    }
+    if (highlightedImageName) {
         [btn setImage:GetImage(highlightedImageName) forState:UIControlStateHighlighted];
+    }
+    if (selectedImageName) {
+        [btn setImage:GetImage(selectedImageName) forState:UIControlStateSelected];
     }
     
     if (target) {
@@ -64,13 +70,23 @@
 
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
                     highlightedImage:(NSString *)highlightedImageName
+                   selectedImageName:(NSString *)selectedImageName
                                  tag:(NSUInteger)tag
                             selector:(SEL)selector
                               target:(id)target
 {
     
-    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
+    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName selectedImageName:selectedImageName titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
 
+}
+
++ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
+                    highlightedImage:(NSString *)highlightedImageName
+                                 tag:(NSUInteger)tag
+                            selector:(SEL)selector
+                              target:(id)target
+{
+    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName selectedImageName:nil titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
 }
 
 + (UIButton *)initBtnWithTitleText:(NSString *)titleText
@@ -80,14 +96,14 @@
                           selector:(SEL)selector
                             target:(id)target
 {
-    return [self initBtnWithNormalImage:nil highlightedImage:nil titleText:titleText fontSize:size textColor:textColor tag:tag selector:selector target:target];
+    return [self initBtnWithNormalImage:nil highlightedImage:nil selectedImageName:nil titleText:titleText fontSize:size textColor:textColor tag:tag selector:selector target:target];
 }
 
 + (UIButton *)initBtnWithTitleText:(NSString *)titleText
                           fontSize:(CGFloat)size
                          textColor:(UIColor *)textColor{
     
-    return [self initBtnWithNormalImage:nil highlightedImage:nil titleText:titleText fontSize:size textColor:textColor tag:0 selector:nil target:nil];
+    return [self initBtnWithNormalImage:nil highlightedImage:nil selectedImageName:nil titleText:titleText fontSize:size textColor:textColor tag:0 selector:nil target:nil];
 }
 
 //+ (UIButton *)initBtnWithTitle2:(NSString *)titleText

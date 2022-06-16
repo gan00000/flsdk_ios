@@ -10,7 +10,6 @@
 #import "SdkHeader.h"
 #import "LoginButton.h"
 #import "SDKRequest.h"
-#import "GamaFacebookPort.h"
 #import "SdkUtil.h"
 #import "AppleLogin.h"
 #import "AccountModel.h"
@@ -80,7 +79,7 @@
         if (accounts && accounts.count > 0) {
             AccountModel *mAccountModel = accounts[0];
             //        [mAccountModel.accountName]@"帳號%@登入中  %@"
-            autoLoginTips = [NSString stringWithFormat:@"帳號%@登入中\n(%@)", mAccountModel.accountName, @"%@"];
+            autoLoginTips = [NSString stringWithFormat:@"帳號%@登入中\n(%@)", mAccountModel.account, @"%@"];
         }else{
             [self switchAccount];
         }
@@ -154,44 +153,44 @@
         
     }else if ([loginType isEqualToString:_SDK_PLAT_FB]) {
         [SdkUtil gamaStarLoadingAtView:weakSelf];
-        [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-            [SdkUtil gamaStopLoadingAtView:weakSelf];
-            
-            if (isSwicth) {
-                return;
-            }
-            if (!loginError)
-            {
-                
-                NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-                
-                NSDictionary *additionDic = @{
-                    @"apps":appsStr,
-                    @"tokenBusiness":@"",
-                    @"fb_oauthToken":facebookTokenStr,
-                };
-                [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
-                    
-                    if (!isSwicth && weakSelf.delegate) {
-                        [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
-                    }
-                    
-                } errorBlock:^(BJError *error) {
-                    if (isSwicth) {
-                        return;
-                    }
-                    if (error && error.message) {
-                        [GamaAlertView showAlertWithMessage:error.message];
-                    }
-                    [weakSelf switchAccount];
-                }];
-                
-                
-            }else{
-                [weakSelf switchAccount];
-            }
-            
-        }];
+//        [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
+//            [SdkUtil gamaStopLoadingAtView:weakSelf];
+//            
+//            if (isSwicth) {
+//                return;
+//            }
+//            if (!loginError)
+//            {
+//                
+//                NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
+//                
+//                NSDictionary *additionDic = @{
+//                    @"apps":appsStr,
+//                    @"tokenBusiness":@"",
+//                    @"fb_oauthToken":facebookTokenStr,
+//                };
+//                [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                    
+//                    if (!isSwicth && weakSelf.delegate) {
+//                        [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                    }
+//                    
+//                } errorBlock:^(BJError *error) {
+//                    if (isSwicth) {
+//                        return;
+//                    }
+//                    if (error && error.message) {
+//                        [GamaAlertView showAlertWithMessage:error.message];
+//                    }
+//                    [weakSelf switchAccount];
+//                }];
+//                
+//                
+//            }else{
+//                [weakSelf switchAccount];
+//            }
+//            
+//        }];
         
     }else if ([loginType isEqualToString:_SDK_PLAT_APPLE]) {
         
@@ -205,14 +204,14 @@
             return;
         }
         kWeakSelf
-        NSString *accountName = accounts[0].accountName;
-        NSString *pwd = accounts[0].accountPwd;
+        NSString *accountName = accounts[0].account;
+        NSString *pwd = accounts[0].password;
         [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
             
             if (weakSelf.delegate) {
                 CCSDKResponse *cc = (CCSDKResponse *)responseData;
-                cc.account = accountName;
-                cc.password = pwd;
+                cc.data.account = accountName;
+                cc.data.password = pwd;
                 [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
             }
             

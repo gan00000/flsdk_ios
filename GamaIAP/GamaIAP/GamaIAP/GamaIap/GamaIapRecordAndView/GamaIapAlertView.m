@@ -43,7 +43,7 @@
     {
         return [GamaAlertView showAlertWithMessage:message
                                         completion:handler
-                                   andButtonTitles:SDKConReaderGetString(GAMA_TITLE_ALERT_SURE_BTN_TITLE), nil];
+                                   andButtonTitles:@"確定", nil];
     }
     return nil;
 }
