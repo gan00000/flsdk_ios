@@ -40,6 +40,13 @@
 		032AB8C4285A006600F1FD3B /* NSString+GamaSStringAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B1285A006600F1FD3B /* NSString+GamaSStringAddition.m */; };
 		032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */; };
 		032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */; };
+		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
+		034558CB285B134D0025EFB2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */; };
+		034558CC285B134D0025EFB2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */; };
+		034558CD285B134D0025EFB2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */; };
+		034558CE285B29F40025EFB2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */; };
+		034558CF285B29F70025EFB2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */; };
+		034558D0285B29FB0025EFB2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */; };
 		034B7B5F284CF1BE009FD2DF /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */; };
 		034B7B60284CF1BE009FD2DF /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */; };
 		034B7B61284CF1BE009FD2DF /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B52284CF1BE009FD2DF /* GTMSessionFetcher.xcframework */; };
@@ -91,9 +98,6 @@
 		32506C8B24F920F900010D7B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3724F920F900010D7B /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8D24F920F900010D7B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3924F920F900010D7B /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C3A24F920F900010D7B /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32506CA824F920FA00010D7B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4E24F920F900010D7B /* FBSDKLoginKit.framework */; };
-		32506CAA24F920FA00010D7B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C4F24F920F900010D7B /* FBSDKShareKit.framework */; };
-		32506CAC24F920FA00010D7B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5024F920F900010D7B /* FBSDKCoreKit.framework */; };
 		32506CAE24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C5324F920F900010D7B /* libAppsFlyerLib.a */; };
 		32506CB124F920FA00010D7B /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5524F920F900010D7B /* UIImage+WebP.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32506CB324F920FA00010D7B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32506C5824F920F900010D7B /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -294,6 +298,11 @@
 		032AB8B1285A006600F1FD3B /* NSString+GamaSStringAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GamaSStringAddition.m"; sourceTree = "<group>"; };
 		032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaKeychainItemWrapper.m; sourceTree = "<group>"; };
 		032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GamaBundleImage.m"; sourceTree = "<group>"; };
+		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
+		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
+		034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		034B7B52284CF1BE009FD2DF /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		034B7B53284CF1BE009FD2DF /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -447,9 +456,6 @@
 		32506C3824F920F900010D7B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		32506C3924F920F900010D7B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		32506C3A24F920F900010D7B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		32506C4E24F920F900010D7B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		32506C4F24F920F900010D7B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		32506C5024F920F900010D7B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		32506C5224F920F900010D7B /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
 		32506C5324F920F900010D7B /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
 		32506C5524F920F900010D7B /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
@@ -631,8 +637,11 @@
 				034B7B60284CF1BE009FD2DF /* FirebaseAuth.xcframework in Frameworks */,
 				034B7B70284CF1BE009FD2DF /* FirebaseCore.xcframework in Frameworks */,
 				034B7B64284CF1BE009FD2DF /* nanopb.xcframework in Frameworks */,
+				034558CB285B134D0025EFB2 /* FBSDKLoginKit.framework in Frameworks */,
 				034B7B74284CF1BE009FD2DF /* FIRAnalyticsConnector.framework in Frameworks */,
 				034B7B72284CF1BE009FD2DF /* GoogleDataTransport.xcframework in Frameworks */,
+				034558CD285B134D0025EFB2 /* FBSDKCoreKit.framework in Frameworks */,
+				034558CC285B134D0025EFB2 /* FBSDKShareKit.framework in Frameworks */,
 				034B7B6A284CF1BE009FD2DF /* FirebaseAnalytics.framework in Frameworks */,
 				034B7B6C284CF1BE009FD2DF /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
 				034B7B68284CF1BE009FD2DF /* PromisesObjC.xcframework in Frameworks */,
@@ -644,7 +653,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32BE13E024FB686E000BDFBE /* libFLSDK.a in Frameworks */,
+				034558D0285B29FB0025EFB2 /* FBSDKCoreKit.framework in Frameworks */,
 				32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */,
+				034558CE285B29F40025EFB2 /* FBSDKLoginKit.framework in Frameworks */,
 				034B7B65284CF1BE009FD2DF /* GoogleAppMeasurement.framework in Frameworks */,
 				32506CAE24F920FA00010D7B /* libAppsFlyerLib.a in Frameworks */,
 				32506C7424F920F900010D7B /* AdjustSdk.framework in Frameworks */,
@@ -652,6 +663,7 @@
 				E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */,
 				E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */,
 				034B7B6F284CF1BE009FD2DF /* FirebaseCore.xcframework in Frameworks */,
+				034558CF285B29F70025EFB2 /* FBSDKShareKit.framework in Frameworks */,
 				E9F4D965244EFFD900937AD5 /* Foundation.framework in Frameworks */,
 				E90C27C02445A421004DF16E /* libc++.tbd in Frameworks */,
 				E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */,
@@ -671,16 +683,13 @@
 				034B7B75284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */,
 				244537421C2E9D6D00260D4C /* AddressBook.framework in Frameworks */,
 				CEE6B9531A149908009E77FF /* QuartzCore.framework in Frameworks */,
-				32506CAA24F920FA00010D7B /* FBSDKShareKit.framework in Frameworks */,
 				2464555A1BB8F90F009E785B /* Photos.framework in Frameworks */,
 				034B7B6B284CF1BE009FD2DF /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
 				034B7B71284CF1BE009FD2DF /* GoogleDataTransport.xcframework in Frameworks */,
-				32506CA824F920FA00010D7B /* FBSDKLoginKit.framework in Frameworks */,
 				246455581BB8F905009E785B /* AssetsLibrary.framework in Frameworks */,
 				CE4F11641A6792A400780524 /* libsqlite3.0.dylib in Frameworks */,
 				CEE6B9611A149944009E77FF /* libxml2.dylib in Frameworks */,
 				034B7B69284CF1BE009FD2DF /* FirebaseAnalytics.framework in Frameworks */,
-				32506CAC24F920FA00010D7B /* FBSDKCoreKit.framework in Frameworks */,
 				CE4F116A1A6797BA00780524 /* Security.framework in Frameworks */,
 				CEF6E92A1A35B45500CFFE2F /* CFNetwork.framework in Frameworks */,
 				CEE6B95F1A14993E009E77FF /* ImageIO.framework in Frameworks */,
@@ -778,6 +787,25 @@
 				032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */,
 			);
 			path = GamaFunctionAppendant;
+			sourceTree = "<group>";
+		};
+		034558BC285B0AEA0025EFB2 /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				034558BD285B0B120025EFB2 /* FBDelegate.h */,
+				034558BE285B0B120025EFB2 /* FBDelegate.m */,
+			);
+			path = FB;
+			sourceTree = "<group>";
+		};
+		034558C7285B134D0025EFB2 /* FacebookSDK_Static_v7.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */,
+				034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */,
+				034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */,
+			);
+			path = FacebookSDK_Static_v7.1.1;
 			sourceTree = "<group>";
 		};
 		034B7B4F284CF1BE009FD2DF /* Firebase-6.31.0 */ = {
@@ -922,6 +950,7 @@
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				034558BC285B0AEA0025EFB2 /* FB */,
 				32C9BC5224C5E9E300B3D704 /* Request */,
 				322CBB9F24C589A5000D6B20 /* Plat */,
 				322CBBA224C589A5000D6B20 /* Common */,
@@ -1164,19 +1193,9 @@
 		32506C4C24F920F900010D7B /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				32506C4D24F920F900010D7B /* FacebookSDK_Static_v7.1.1 */,
+				034558C7285B134D0025EFB2 /* FacebookSDK_Static_v7.1.1 */,
 			);
 			path = Facebook;
-			sourceTree = "<group>";
-		};
-		32506C4D24F920F900010D7B /* FacebookSDK_Static_v7.1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				32506C4E24F920F900010D7B /* FBSDKLoginKit.framework */,
-				32506C4F24F920F900010D7B /* FBSDKShareKit.framework */,
-				32506C5024F920F900010D7B /* FBSDKCoreKit.framework */,
-			);
-			path = FacebookSDK_Static_v7.1.1;
 			sourceTree = "<group>";
 		};
 		32506C5124F920F900010D7B /* AF-iOS-SDK-v4.5.12 */ = {
@@ -1622,6 +1641,7 @@
 				3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */,
 				32506CBD24F920FA00010D7B /* UIImage+MultiFormat.m in Sources */,
 				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
+				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
 				32506CB124F920FA00010D7B /* UIImage+WebP.m in Sources */,
 				32506C8524F920F900010D7B /* MASLayoutConstraint.m in Sources */,
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
@@ -1707,6 +1727,7 @@
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Analytics",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v7.1.1",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.31.0/FirebaseAnalytics",
+					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v14",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -1744,6 +1765,7 @@
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Analytics",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v7.1.1",
 					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Firebase/Firebase-6.31.0/FirebaseAnalytics",
+					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v14",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";

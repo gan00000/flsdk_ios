@@ -11,6 +11,7 @@
 #import "LoginTypeButton.h"
 #import "UIView+BlockGesture.h"
 #import "SDKRequest.h"
+#import "FBDelegate.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -321,7 +322,7 @@
             
         case fbLoginActTag:
             SDK_LOG(@"fbLoginActTag");
-            
+            [self fbLogin];
             
             break;
         case googleLoginActTag:
@@ -334,6 +335,21 @@
             break;
     }
     
+}
+
+
+- (void)fbLogin
+{
+    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+    [mFBDelegate login:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
+        
+        
+        
+    } andFailBlock:^(NSError * _Nonnull error) {
+        
+    } andCancelBlock:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
 

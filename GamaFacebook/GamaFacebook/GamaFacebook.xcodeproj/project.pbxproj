@@ -21,9 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		32506C1124F8CC4300010D7B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C0D24F8CC4300010D7B /* FBSDKLoginKit.framework */; };
-		32506C1324F8CC4300010D7B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C0E24F8CC4300010D7B /* FBSDKShareKit.framework */; };
-		32506C1524F8CC4300010D7B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32506C0F24F8CC4300010D7B /* FBSDKCoreKit.framework */; };
 		32C9BC5124C5DCEA00B3D704 /* GamaFacebookCenter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E9740F5B2086DE6D0018E1A6 /* GamaFacebookCenter.h */; };
 		E9740F792086E40B0018E1A6 /* GamaFacebookImp_V4.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740F562086DE6D0018E1A6 /* GamaFacebookImp_V4.m */; };
 		E9740F7A2086E40B0018E1A6 /* FacebookShareDelegateWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9740F5A2086DE6D0018E1A6 /* FacebookShareDelegateWarper.m */; };
@@ -57,9 +54,6 @@
 		221260CE1E827E6400258FD4 /* libEfunThirdPlatform_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunThirdPlatform_DotA.a; path = "../../EfunThirdPlatform/EfunThirdPlatform/build/Debug-iphoneos/libEfunThirdPlatform_DotA.a"; sourceTree = "<group>"; };
 		225C130F1E6949BB0000E81B /* libEfunCoreFunc_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunCoreFunc_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunCoreFunc_DotA.a"; sourceTree = "<group>"; };
 		225C13111E6949DE0000E81B /* libEfunThirdPlatform_DotA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEfunThirdPlatform_DotA.a; path = "../../../../../Library/Developer/Xcode/DerivedData/EfunSDK_iOS_Workspace-bhgtvyogamcgzbcujtswaqweyacy/Build/Products/Debug-iphonesimulator/libEfunThirdPlatform_DotA.a"; sourceTree = "<group>"; };
-		32506C0D24F8CC4300010D7B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		32506C0E24F8CC4300010D7B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		32506C0F24F8CC4300010D7B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		350F19421A08ABD800C2FF3B /* libGamaFacebook_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaFacebook_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
 		3594B6761A0B4DCE00B92C19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,30 +98,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32506C1324F8CC4300010D7B /* FBSDKShareKit.framework in Frameworks */,
-				32506C1524F8CC4300010D7B /* FBSDKCoreKit.framework in Frameworks */,
-				32506C1124F8CC4300010D7B /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32506C0C24F8CC4300010D7B /* FacebookSDK_Static_v7.1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				32506C0D24F8CC4300010D7B /* FBSDKLoginKit.framework */,
-				32506C0E24F8CC4300010D7B /* FBSDKShareKit.framework */,
-				32506C0F24F8CC4300010D7B /* FBSDKCoreKit.framework */,
-			);
-			name = FacebookSDK_Static_v7.1.1;
-			path = ../../GamaSDK_iOS_Integration/Classes/Resources/ThirkLib/Facebook/FacebookSDK_Static_v7.1.1;
-			sourceTree = "<group>";
-		};
 		35A67F811A07884E007D5176 = {
 			isa = PBXGroup;
 			children = (
-				32506C0C24F8CC4300010D7B /* FacebookSDK_Static_v7.1.1 */,
 				350F195B1A08AE2B00C2FF3B /* BuildScript.sh */,
 				E9740F4F2086DE6D0018E1A6 /* GamaFacebook */,
 				35A67F8B1A07884E007D5176 /* Products */,
