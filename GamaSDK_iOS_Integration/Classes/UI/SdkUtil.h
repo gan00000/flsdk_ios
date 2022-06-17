@@ -9,15 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-#import "SDKTextFiledView.h"
 
 @interface SdkUtil : NSObject
 
-
-+ (void)recordStateLoginWithType:(NSString *)type andUserName:(NSString *)name;
-+ (void)getStateLoginWithType:(NSString **)type andUserName:(NSString **)name;
-+ (void)removeStateLogin;
-+ (BOOL)hadLastLoginStatus;
 
 #pragma mark - UI
 
@@ -56,9 +50,7 @@
 + (BOOL)validPhone:(NSString *)phone phoneRegex:(NSString *)regex;
 
 #pragma mark - 整合部分
-// guest 登陸過的憑證
-+ (void)gama_guestLoginSign;
-+ (BOOL)gama_hadEverGuestLogin;
+
 // guest 截屏過的憑證
 + (void)gama_saveGuestAccountToPhoto:(UIView *)curView;
 

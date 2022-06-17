@@ -28,61 +28,6 @@
 @implementation SdkUtil
 
 
-
-// ---- register excute two times
-+ (void)recordStateLoginWithType:(NSString *)type andUserName:(NSString *)name
-{
-    NSUserDefaults *tempUserDeafults = [NSUserDefaults standardUserDefaults];
-    if (type) {
-        [tempUserDeafults setObject:type forKey:hLoginType];
-    }
-    if (name) {
-        [tempUserDeafults setObject:name forKey:hLoginUserName];
-    }
-    
-    [tempUserDeafults synchronize];
-}
-
-+ (void)getStateLoginWithType:(NSString **)type andUserName:(NSString **)name
-{
-    NSUserDefaults *tempUserDeafults = [NSUserDefaults standardUserDefaults];
-    [tempUserDeafults synchronize];
-    
-    if (type != nil) {
-        @try {
-            *type = [tempUserDeafults stringForKey:hLoginType];
-        } @catch(NSException* exp) {
-            *type = @"";
-        }
-    }
-    if (name != nil) {
-        @try {
-            *name = [tempUserDeafults stringForKey:hLoginUserName];
-        } @catch(NSException* exp) {
-            *name = @"";
-        }
-    }
-}
-
-+ (void)removeStateLogin
-{
-    NSUserDefaults *tempUserDeafults = [NSUserDefaults standardUserDefaults];
-    [tempUserDeafults removeObjectForKey:hLoginType];
-    [tempUserDeafults removeObjectForKey:hLoginUserName];
-    [tempUserDeafults synchronize];
-}
-
-+ (BOOL)hadLastLoginStatus
-{
-    NSString *loginType = nil;
-    NSString *userNameID = nil;
-    [SdkUtil getStateLoginWithType:&loginType andUserName:&userNameID];
-    if (loginType.length > 0 && userNameID.length > 0) {
-        return YES;
-    }
-    return NO;
-}
-
 #pragma mark - UI
 
 
@@ -136,7 +81,7 @@
                                                options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading //NSStringDrawingTruncatesLastVisibleLine
                                             attributes:@{NSFontAttributeName:label.font,NSParagraphStyleAttributeName:style}
                                                context:nil].size;
-    [style release];
+    
     return CGSizeMake(ceil(resultSize.width)+1, ceil(resultSize.height)+1);
 }
 
@@ -179,7 +124,7 @@
                 @"systemVersion"    :     [GamaFunction getSystemVersion],
                 @"deviceType"       :     [GamaFunction getDeviceType],
                 @"operatingSystem"  :     @"ios",
-                @"gameLanguage"     :     [GamaFunction getServerLocaleStrWithGameLanguage:GAME_LANGUAGE],
+                @"gameLanguage"     :     GAME_LANGUAGE,
                 @"osLanguage"       :     [GamaFunction getPreferredLanguage],
                 
                 @"loginTimestamp"   :     [SdkUserInfoModel shareInfoModel].timestamp ?
@@ -219,7 +164,7 @@
     }
     
     NSString *finalStr = [appendStr substringToIndex:appendStr.length - 1]; // 去掉 &
-    [appendStr release];
+   
     
     // domain and proj Name
     NSString *domainName = [NSString stringWithFormat:@"%@%@?",[SDKConReader getLoginUrl],api_login_guest];
@@ -227,7 +172,7 @@
     
 //    NSLog(@"url = %@",gamaUrlStr);
     
-    return [gamaUrlStr autorelease];
+    return gamaUrlStr;
 }
 
 #pragma mark - Tri String
@@ -358,7 +303,7 @@
         
         [aler addSubview:toastLabel];
         
-        [toastLabel release];
+       
         toastLabel = nil;
         
         // animation
@@ -367,7 +312,7 @@
                              aler.alpha = 1.0f;
                          } completion:^(BOOL finished) {
                              [aler removeFromSuperview];
-                             [aler release];
+                             
                          }];
         
     });
@@ -477,20 +422,6 @@
 }
 
 
-#pragma mark - 整合部分
-+ (void)gama_guestLoginSign
-{
-    [[NSUserDefaults standardUserDefaults] setObject:@"gama_guest" forKey:@"gama_guest_sign"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-+ (BOOL)gama_hadEverGuestLogin
-{
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"gama_guest_sign"]) {
-        return YES;
-    }
-    return NO;
-}
 #pragma mark 保存免注册账号密码至相册
 + (void)gama_saveGuestAccountToPhoto:(UIView *)curView
 {
@@ -526,25 +457,25 @@
 //        *userName = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserName"];
 //    }
 }
-
-+ (void)gama_saveGuestEncryptedUserInfoToUserDefaultWith:(NSString *)userName
-                                           andPassword:(NSString *)password
-{
-    //紀錄本次登陸的用戶信息
-    NSDictionary * thisUserInfoDic=[NSDictionary dictionaryWithObjectsAndKeys:
-                                    userName,@"gamaGuestUserName",
-                                    password,@"gamaGuestUserPassword",
-                                    nil];
-    NSMutableDictionary * encryptDic=[[[NSMutableDictionary alloc]init]autorelease];
-    for (NSString * oneKey in thisUserInfoDic.allKeys)
-    {
-        NSString * valueStr=[thisUserInfoDic objectForKey:oneKey];
-        NSString * encryptKey = [self _loginEncryptFromString:oneKey];
-        NSString * encryptValue = [self _loginEncryptFromString:valueStr];
-        [encryptDic addEntriesFromDictionary:@{encryptKey:encryptValue}];
-    }
-    [self _updataLastLoginUserInfoWithNewInfo:encryptDic];
-}
+//
+//+ (void)gama_saveGuestEncryptedUserInfoToUserDefaultWith:(NSString *)userName
+//                                           andPassword:(NSString *)password
+//{
+//    //紀錄本次登陸的用戶信息
+//    NSDictionary * thisUserInfoDic=[NSDictionary dictionaryWithObjectsAndKeys:
+//                                    userName,@"gamaGuestUserName",
+//                                    password,@"gamaGuestUserPassword",
+//                                    nil];
+//    NSMutableDictionary * encryptDic=[[NSMutableDictionary alloc]init];
+//    for (NSString * oneKey in thisUserInfoDic.allKeys)
+//    {
+//        NSString * valueStr=[thisUserInfoDic objectForKey:oneKey];
+//        NSString * encryptKey = [self _loginEncryptFromString:oneKey];
+//        NSString * encryptValue = [self _loginEncryptFromString:valueStr];
+//        [encryptDic addEntriesFromDictionary:@{encryptKey:encryptValue}];
+//    }
+//    [self _updataLastLoginUserInfoWithNewInfo:encryptDic];
+//}
 
 
 #pragma mark - self
@@ -610,7 +541,7 @@
     NSString *path = [paths objectAtIndex:0];
     NSString *filename = [path stringByAppendingPathComponent:fileName];
     
-    NSDictionary * userInfodic = [[NSDictionary dictionaryWithContentsOfFile:filename] retain];
+    NSDictionary * userInfodic = [NSDictionary dictionaryWithContentsOfFile:filename];
     if (userInfodic.count > 0 || userInfodic!=nil) {
         if (userName != nil)  {
             @try {
@@ -629,47 +560,7 @@
             }
         }
     }
-    [userInfodic release];
-}
-
-+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView{
-    
-    
-//    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
-    
-    NSString *account = mAccountModel.userId;
-    NSString *iconName = @"";
-    NSString *pwdText = GetString(@"text_free_register");
-    if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
-        
-        account = mAccountModel.account;
-        iconName = @"mw_smail_icon";
-        pwdText = mAccountModel.password;
-        [pwdFiledView setPwdFiledView:YES];
-        pwdFiledView.inputUITextField.text = mAccountModel.password;
-        
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_FB]){
-        iconName = @"fb_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_GC]){
-        iconName = @"google_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_MAC]){
-        iconName = @"guest_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_APPLE]){
-        iconName = @"mw_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_LINE]){
-        iconName = @"line_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
-    }
-    
-    accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage gama_imageNamed:iconName];
-    
-    
-    
+//    [userInfodic release];
 }
 
 @end

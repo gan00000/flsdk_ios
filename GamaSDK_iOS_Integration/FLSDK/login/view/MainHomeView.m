@@ -259,11 +259,7 @@
             make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
         }];
-//        rememberTermsLable.userInteractionEnabled = YES; // 可以理解为设置label可被点击
-//        UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rememberTermsLableTapped:)];
-//        [rememberTermsLable addGestureRecognizer:tapGr];
-        
-      
+
      
 }
 

@@ -27,8 +27,8 @@
 		00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
 		032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* GamaSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
-		032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SdkUserInfoModel.m */; };
-		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; };
+		032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SdkUserInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BC285A006600F1FD3B /* GamaFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* GamaFunction.m */; };
 		032AB8BD285A006600F1FD3B /* GamaCentreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* GamaCentreInfo.m */; };
 		032AB8BE285A006600F1FD3B /* GamaAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */; };
@@ -47,6 +47,7 @@
 		034558CE285B29F40025EFB2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */; };
 		034558CF285B29F70025EFB2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */; };
 		034558D0285B29FB0025EFB2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */; };
+		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		034B7B5F284CF1BE009FD2DF /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */; };
 		034B7B60284CF1BE009FD2DF /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */; };
 		034B7B61284CF1BE009FD2DF /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B52284CF1BE009FD2DF /* GTMSessionFetcher.xcframework */; };
@@ -71,6 +72,7 @@
 		034B7B74284CF1BE009FD2DF /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5D284CF1BE009FD2DF /* FIRAnalyticsConnector.framework */; };
 		034B7B75284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
 		034B7B76284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
+		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
@@ -142,7 +144,6 @@
 		3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2FF24DAEDDE00B85976 /* SdkAutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30024DAEDDE00B85976 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1C24C589A5000D6B20 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30224DAEDDE00B85976 /* SelectLoginTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -209,8 +210,8 @@
 		E97412F02088580A0018E1A6 /* GamaSDK+GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */; };
 		E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */; };
 		E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
-		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
-		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
+		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E98131A921831A0200819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
 		E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -303,6 +304,8 @@
 		034558C8285B134D0025EFB2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		034558C9285B134D0025EFB2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		034558CA285B134D0025EFB2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
+		034558D2285C25210025EFB2 /* AccountListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountListView.m; sourceTree = "<group>"; };
 		034B7B51284CF1BE009FD2DF /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		034B7B52284CF1BE009FD2DF /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		034B7B53284CF1BE009FD2DF /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -316,6 +319,9 @@
 		034B7B5C284CF1BE009FD2DF /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleDataTransport.xcframework; sourceTree = "<group>"; };
 		034B7B5D284CF1BE009FD2DF /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		03650193285C761600578028 /* SDKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBaseView.h; sourceTree = "<group>"; };
+		03650194285C761600578028 /* SDKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKBaseView.m; sourceTree = "<group>"; };
+		03650196285C768300578028 /* SdkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkHeader.h; sourceTree = "<group>"; };
 		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
@@ -381,7 +387,6 @@
 		322CBC0924C589A5000D6B20 /* CCSDKDATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSDKDATA.m; sourceTree = "<group>"; };
 		322CBC0A24C589A5000D6B20 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		322CBC0C24C589A5000D6B20 /* ConfigCoreUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCoreUtil.h; sourceTree = "<group>"; };
-		322CBC0D24C589A5000D6B20 /* SdkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkHeader.h; sourceTree = "<group>"; };
 		322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCoreUtil.m; sourceTree = "<group>"; };
 		322CBC1124C589A5000D6B20 /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButton.h; sourceTree = "<group>"; };
 		322CBC1224C589A5000D6B20 /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
@@ -389,7 +394,6 @@
 		322CBC1724C589A5000D6B20 /* LoginViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewDelegate.h; sourceTree = "<group>"; };
 		322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKLoginViewController.m; sourceTree = "<group>"; };
 		322CBC1B24C589A5000D6B20 /* FindPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordView.h; sourceTree = "<group>"; };
-		322CBC1C24C589A5000D6B20 /* SDKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKBaseView.m; sourceTree = "<group>"; };
 		322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBindTypeView.m; sourceTree = "<group>"; };
 		322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordView.m; sourceTree = "<group>"; };
 		322CBC2024C589A5000D6B20 /* LoginTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTitleView.m; sourceTree = "<group>"; };
@@ -406,7 +410,6 @@
 		322CBC2E24C589A5000D6B20 /* FindPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordView.m; sourceTree = "<group>"; };
 		322CBC3024C589A5000D6B20 /* ChangePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordView.h; sourceTree = "<group>"; };
 		322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBindTypeView.h; sourceTree = "<group>"; };
-		322CBC3224C589A5000D6B20 /* SDKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBaseView.h; sourceTree = "<group>"; };
 		322CBC3524C589A5000D6B20 /* RegisterAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountView.m; sourceTree = "<group>"; };
 		322CBC3624C589A5000D6B20 /* AccountLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLoginView.m; sourceTree = "<group>"; };
 		322CBC3824C589A5000D6B20 /* SelectLoginTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLoginTypeView.h; sourceTree = "<group>"; };
@@ -1055,8 +1058,8 @@
 		322CBC0B24C589A5000D6B20 /* SdkHelper */ = {
 			isa = PBXGroup;
 			children = (
+				03650196285C768300578028 /* SdkHeader.h */,
 				032AB889285A006600F1FD3B /* CoreUtil */,
-				322CBC0D24C589A5000D6B20 /* SdkHeader.h */,
 				322CBC0C24C589A5000D6B20 /* ConfigCoreUtil.h */,
 				322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */,
 			);
@@ -1087,6 +1090,8 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				03650193285C761600578028 /* SDKBaseView.h */,
+				03650194285C761600578028 /* SDKBaseView.m */,
 				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
 				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
 				03EA360A2850989900723340 /* MainHomeView.h */,
@@ -1103,8 +1108,6 @@
 				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
 				322CBC7724C59186000D6B20 /* SdkAutoLoginView.h */,
 				322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */,
-				322CBC3224C589A5000D6B20 /* SDKBaseView.h */,
-				322CBC1C24C589A5000D6B20 /* SDKBaseView.m */,
 				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
 				322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */,
 				322CBC3824C589A5000D6B20 /* SelectLoginTypeView.h */,
@@ -1133,6 +1136,8 @@
 				322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */,
 				32CDA7932540371A00D3969F /* LoginTypeButton.h */,
 				32CDA7942540371A00D3969F /* LoginTypeButton.m */,
+				034558D1285C25210025EFB2 /* AccountListView.h */,
+				034558D2285C25210025EFB2 /* AccountListView.m */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -1600,6 +1605,7 @@
 				3295E2EA24DAEDDE00B85976 /* UIColor+HexStringToColorTW.m in Sources */,
 				3295E2EB24DAEDDE00B85976 /* UIUtil.m in Sources */,
 				03EA36082850986F00723340 /* BindAccountView.m in Sources */,
+				03650195285C761600578028 /* SDKBaseView.m in Sources */,
 				032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */,
 				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
 				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
@@ -1629,7 +1635,6 @@
 				032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */,
 				3295E2FF24DAEDDE00B85976 /* SdkAutoLoginView.m in Sources */,
 				32506CB524F920FA00010D7B /* SDWebImageDecoder.m in Sources */,
-				3295E30024DAEDDE00B85976 /* SDKBaseView.m in Sources */,
 				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
 				32506CC724F920FA00010D7B /* NSData+ImageContentType.m in Sources */,
 				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
@@ -1676,6 +1681,7 @@
 				E947D354221ED7F300490C35 /* GamaBaseSDK.m in Sources */,
 				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
 				03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */,
+				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* AppleLogin.m in Sources */,
 				32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */,
 				032AB8C1285A006600F1FD3B /* NSString+GamaURLEncoding.m in Sources */,

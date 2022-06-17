@@ -118,7 +118,7 @@
 - (void)showTramsView {
     TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
         //[self addMainLoginView];//同意之后打开登录页面
-        [mLoginWithRegView.mAccountLoginView updateTermsStatus];
+        
     }];
     
     mTermsView.delegate = self;

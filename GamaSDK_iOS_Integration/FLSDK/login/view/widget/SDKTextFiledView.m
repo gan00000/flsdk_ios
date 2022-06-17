@@ -29,17 +29,21 @@
 
 -(void)setPwdFiledView:(BOOL)enable{
     
-    eyeBtn.hidden = enable;
+    eyeBtn.hidden = !enable;
     mUITextField.enabled = enable;
     if (enable) {
         self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_icon"];
         mUITextField.secureTextEntry = YES;
         mUITextField.text = @"";
         eyeBtn.selected = YES;
+        mUITextField.textColor = [UIColor whiteColor];
+        
     }else{
         self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_disable_icon"];
         mUITextField.secureTextEntry = NO;
         mUITextField.text = GetString(@"text_free_register");
+        mUITextField.textColor = [UIColor colorWithHexString:@"#848484"];
+
         eyeBtn.selected = NO;
     }
     

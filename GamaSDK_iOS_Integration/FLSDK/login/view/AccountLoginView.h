@@ -7,6 +7,8 @@
 //
 
 #import "SDKBaseView.h"
+#import "SDKTextFiledView.h"
+#import "SdkHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initView;
 
--(void) updatePasswordData;
--(void) updateTermsStatus;
+
++(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
 
 @end
 
