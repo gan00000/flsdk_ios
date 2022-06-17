@@ -259,7 +259,7 @@
         
         CCSDKResponse *cc = (CCSDKResponse *)responseData;
         //        [[ConfigCoreUtil share] saveAccount:userName password:@"" updateTime:NO];
-        [[ConfigCoreUtil share] removeAccount:userName];
+//        [[ConfigCoreUtil share] removeAccount:userName];
         //通知更新登录界面的数据
         [AlertUtil showAlertWithMessage: cc.message];
         if (self.delegate) {

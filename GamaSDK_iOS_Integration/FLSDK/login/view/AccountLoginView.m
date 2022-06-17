@@ -22,10 +22,10 @@
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "AppleLogin.h"
 #import "TermsView.h"
+#import "AccountListView.h"
 
-static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
-@interface AccountLoginView() <UITableViewDelegate, UITableViewDataSource>
+@interface AccountLoginView()
     
 
 
@@ -39,17 +39,18 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //    UIButton *checkBoxBtn;
     UIButton *accountLoginBtn;
     UIButton *backBtn;
-    UITableView *accountListTableView;
-    
+   
     NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
-    
-    BOOL isSaveAccountInfo;
     
     UIButton *checkBoxTermsBtn;
     
     AppleLogin *gamaAppleLogin;
     
     BOOL isAgree;
+    
+    AccountModel *currentAccountModel;
+    
+    AccountListView *accountListView;
 }
 
 /*
@@ -246,48 +247,79 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
      
         [ConfigCoreUtil share].isSaveAccountInfo = YES;
-        isSaveAccountInfo = YES;
+        
         accountDataList = [NSMutableArray array];//账号列表数据
         
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-            accountSDKTextFiledView.inputUITextField.text = mAccountArray[0].account;
-            passwordSDKTextFiledView.inputUITextField.text = mAccountArray[0].password;
-        }
-        if (mAccountArray.count > 1) {
-//            accountSDKTextFiledView.moreAccountBtn.hidden = NO;
+            
+            currentAccountModel = mAccountArray[0];
             [accountDataList addObjectsFromArray:mAccountArray];
             
-        }else{
-//            accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+            
         }
+        
         
         //添加账号显示列表
         kWeakSelf
         accountSDKTextFiledView.clickAccountListItem = ^(NSInteger tag) {
             
-            if (accountListTableView) {
+            if (accountListView) {
                 //设置点击显示、隐藏
-                if (accountListTableView.tag == 0) {
-                    [weakSelf setTableViewHiden:YES];
+                
+                if (accountSDKTextFiledView.moreAccountBtn.isSelected) {
+                    accountSDKTextFiledView.moreAccountBtn.selected = NO;
+                    accountListView.hidden = YES;
                 }else{
+                    
+                    accountSDKTextFiledView.moreAccountBtn.selected = YES;
+                    accountListView.hidden = NO;
                     NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
                    [accountDataList removeAllObjects];
                    [accountDataList addObjectsFromArray:mAccountArray];
-                   [accountListTableView reloadData];
-                    [weakSelf setTableViewHiden:NO];
+                    accountListView.accountDataList = accountDataList;
+                   [accountListView.accountListTableView reloadData];
                 }
-                
-                
+    
             }else{//第一次点击显示
-
-                [self addAccountListTableView];
+                accountSDKTextFiledView.moreAccountBtn.selected = YES;
+                [self addAccountListView];
+                NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+               [accountDataList removeAllObjects];
+               [accountDataList addObjectsFromArray:mAccountArray];
+                accountListView.accountDataList = accountDataList;
+                [accountListView.accountListTableView reloadData];
             }
             
         };
     }
     return self;
 }
+
+-(void)addAccountListView{
+    accountListView = [[AccountListView alloc] init];
+    [self addSubview:accountListView];
+    [accountListView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+        make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+        make.top.equalTo(accountSDKTextFiledView.mas_bottom);
+        make.height.mas_equalTo(VH(200));
+//        make.edges.mas_equalTo(self);
+        
+    }];
+    kWeakSelf
+    accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
+                
+        if (isDelete) {
+            
+        }else{
+//            [SdkUtil makeAccountFiledViewStatus:aModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+        }
+        
+    };
+}
+
+
 
 -(void)rememberTermsLableTapped:(UITapGestureRecognizer*)tapGr
 {
@@ -306,9 +338,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     }
     [accountDataList removeAllObjects];
     [accountDataList addObjectsFromArray:mAccountArray];
-    if (accountListTableView) {
-        [accountListTableView reloadData];
-    }
+//    if (accountListTableView) {
+//        [accountListTableView reloadData];
+//    }
     
 }
 
@@ -328,48 +360,6 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
 }
-
-//设置隐藏或者显示
--(void) setTableViewHiden:(BOOL) hiden
-{
-    accountListTableView.hidden = hiden;
-    if (hiden) {
-        accountListTableView.tag = 1;
-    }else{
-        accountListTableView.tag = 0;
-    }
-}
-
-
-- (void)addAccountListTableView
-{
-    //获取需要显示的数据
-    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
-     [accountDataList removeAllObjects];
-     [accountDataList addObjectsFromArray:mAccountArray];
-
-    
-    //账号下拉列表
-    accountListTableView = [[UITableView alloc] init];
-    accountListTableView.backgroundColor = [UIColor whiteColor];
-    [self setTableViewHiden:NO];
-    accountListTableView.delegate = self;
-    accountListTableView.dataSource = self;
-    accountListTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    //    accountListTableView.estimatedRowHeight = 0;
-    //    accountListTableView.estimatedSectionFooterHeight = 0;
-    //    accountListTableView.estimatedSectionHeaderHeight = 0;
-    
-    [accountListTableView registerClass:[AccountListViewCell class] forCellReuseIdentifier:AccountListViewCellID];
-    [self addSubview:accountListTableView];
-    [accountListTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-        make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-        make.top.equalTo(accountSDKTextFiledView.mas_bottom);
-        make.height.mas_equalTo(100);
-    }];
-}
-
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {
@@ -423,11 +413,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             
         case kAccountLoginActTag:
             SDK_LOG(@"kAccountLoginActTag");
-            if (!isAgree) {//先同意
-                [SdkUtil toastMsg:GetString(@"GAMA_PROVISIONS_AGREENT_TERM")];
-                return;
-            }
-            [TermsView saveAgreenProvisionState:isAgree];
+        
             [self requestAccountLogin];
             break;
             
@@ -550,17 +536,17 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
         
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+        [SdkUtil toastMsg:GetString(@"py_account_empty")];
         return;
     }
     
     if (![SdkUtil validUserName:accountName]) {
-        [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
+        [SdkUtil toastMsg:GetString(@"text_account_format")];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+        [SdkUtil toastMsg:GetString(@"py_password_empty")];
         return;
     }
 //    if (GamaLoginViewModel.model.vfConfig == YES){
@@ -574,8 +560,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         if (weakSelf.delegate) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
-//            cc.account = accountName;
-//            cc.password = pwd;
+            cc.data.account = accountName;
+            cc.data.password = pwd;
+            cc.data.loginType = _SDK_PLAT_SELF;
             [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
         }
         
@@ -584,45 +571,5 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     }];
 }
 
-
-#pragma mark tableview deletage
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return accountDataList.count;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 30;
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AccountModel *mAccountModel = accountDataList[indexPath.row];
-    AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
-    cell.accountUILabel.text = mAccountModel.account;
-    kWeakSelf
-    cell.mItemViewClickHander = ^(NSInteger tag) {
-        if (tag == kMoreAccountDeleteActTag) {
-            [accountDataList removeObject:mAccountModel];
-            [tableView reloadData];
-            [[ConfigCoreUtil share] saveAccountModels:accountDataList];//保存
-            if (accountDataList.count == 0) { //删除到位0的时候隐藏tableview和moreAccountBtn
-                [weakSelf setTableViewHiden:YES];
-//                accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            }
-        }
-    };
-    return cell;
-}
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
-    AccountModel *mAccountModel = accountDataList[indexPath.row];
-    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;
-    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
-    [self setTableViewHiden:YES];
-}
 
 @end

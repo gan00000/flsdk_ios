@@ -68,17 +68,20 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_REG_ACCOUNT,
     CURRENT_PAGE_TYPE_LOGIN_ACCOUNT,
     CURRENT_PAGE_TYPE_SELECT_BIND_TYPE,
-//    CURRENT_PAGE_TYPE_SELECT_LOGIN_TYPE,
     CURRENT_PAGE_TYPE_FIND_PWD,
     CURRENT_PAGE_TYPE_CHANGE_PWD,
     CURRENT_PAGE_TYPE_BIND_ACCOUNT,
     CURRENT_PAGE_TYPE_AUTO,
     CURRENT_PAGE_TYPE_TEARMS,
-    
     CURRENT_PAGE_TYPE_MAIN_HOME,
     CURRENT_PAGE_TYPE_WELCOME_BACK,
     CURRENT_PAGE_TYPE_LOGIN_WITH_REG,
 };
+
+//typedef NS_OPTIONS(NSUInteger, LOGIN_TYPE)
+//{
+//    
+//};
 
 //页面按钮button点击tag
 #define kCheckBoxBtnTag     20
@@ -108,21 +111,22 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define lineLoginActTag    2005
 
 // login type
-#define _SDK_PLAT_SELF           (@"gamesword")
+#define _SDK_PLAT_SELF           (@"mg")
 #define _SDK_PLAT_MAC            (@"visitor")
 #define _SDK_PLAT_FB             (@"fb")
-#define _SDK_PLAT_GC             (@"gc")
+#define _SDK_PLAT_GC             (@"google")
 #define _SDK_PLAT_TWITTER        (@"twitter")
 #define _SDK_PLAT_APPLE          (@"apple")
-
+#define _SDK_PLAT_LINE          (@"line")
 
 //请求域名
 
 
 //请求接口
-#define api_login_guest  (@"api/user/visitorLogin")
-#define api_login_third  (@"api/user/thirdPartyLogin")
-
+#define api_login_guest     (@"api/user/visitorLogin")
+#define api_login_third     (@"api/user/thirdPartyLogin")
+#define api_login_register  (@"api/user/register")
+#define api_login_account   (@"api/user/login")
 
 #endif /* CCSkyHourHeader_h */
 

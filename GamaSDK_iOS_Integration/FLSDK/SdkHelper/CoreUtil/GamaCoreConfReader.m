@@ -17,21 +17,6 @@
 static GamaCoreConfReader * coreReader;
 static dispatch_once_t onceToken;
 
--(void)dealloc
-{
-    SDK_LOG(@"GamaCoreConfReader dealloc");
-    if (_coreConfDic)
-    {
-        [_coreConfDic release];
-        _coreConfDic=nil;
-
-    }
-
-    [_m_stringsBundle release]; _m_stringsBundle = nil;
-    [_m_stringsName release]; _m_stringsName = nil;
-    
-    [super dealloc];
-}
 
 + (GamaCoreConfReader *)reader
 {

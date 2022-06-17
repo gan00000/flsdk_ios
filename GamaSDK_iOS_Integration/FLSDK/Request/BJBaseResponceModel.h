@@ -8,7 +8,7 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
     BJResponseCodeError1 = -100,
     BJResponseCodeOK = 0,
     BJResponseCode_OK_Login = 1000,
-    BJResponseCode_OK_Register = 1001,
+    BJResponseCode_OK_Register = 5001,
 };
 
 

@@ -447,6 +447,7 @@
     CCSDKResponse *loginResopnse = (CCSDKResponse *)responseData;
     AccountModel *rData = loginResopnse.data;
     rData.loginType = thirdPlate;
+    
     [[ConfigCoreUtil share] saveLoginType:thirdPlate];
     [SdkUserInfoModel shareInfoModel].userId = rData.userId;
     [SdkUserInfoModel shareInfoModel].accessToken = rData.token;
@@ -468,6 +469,7 @@
 //        }
 
     }
+    [[ConfigCoreUtil share] saveAccountModel:rData];
     
     if (loginResopnse.code == 1001) {//注册
         [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":rData.userId}];

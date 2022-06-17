@@ -10,6 +10,7 @@
 #import "HelloHeader.h"
 #import <Photos/Photos.h>
 
+
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
 
@@ -239,12 +240,13 @@
 #pragma mark - Text Rule
 + (BOOL)validUserName:(NSString *)userName
 {
-    NSString *triStr = [userName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
-    
-    NSString  *regex = @"(^[A-Za-z0-9]{6,18}$)";
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    
-    return [pred evaluateWithObject:triStr];
+    return [userName containsString:@"@"];
+//    NSString *triStr = [userName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+//
+//    NSString  *regex = @"@";
+//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+//
+//    return [pred evaluateWithObject:triStr];
 }
 
 + (BOOL)validPwd:(NSString *)pwd
@@ -629,4 +631,45 @@
     }
     [userInfodic release];
 }
+
++(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView{
+    
+    
+//    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
+    
+    NSString *account = mAccountModel.userId;
+    NSString *iconName = @"";
+    NSString *pwdText = GetString(@"text_free_register");
+    if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
+        
+        account = mAccountModel.account;
+        iconName = @"mw_smail_icon";
+        pwdText = mAccountModel.password;
+        [pwdFiledView setPwdFiledView:YES];
+        pwdFiledView.inputUITextField.text = mAccountModel.password;
+        
+    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_FB]){
+        iconName = @"fb_smail_icon";
+        [pwdFiledView setPwdFiledView:NO];
+    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_GC]){
+        iconName = @"google_smail_icon";
+        [pwdFiledView setPwdFiledView:NO];
+    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_MAC]){
+        iconName = @"guest_smail_icon";
+        [pwdFiledView setPwdFiledView:NO];
+    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_APPLE]){
+        iconName = @"mw_smail_icon";
+        [pwdFiledView setPwdFiledView:NO];
+    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_LINE]){
+        iconName = @"line_smail_icon";
+        [pwdFiledView setPwdFiledView:NO];
+    }
+    
+    accountFiledView.inputUITextField.text = account;
+    accountFiledView.lableIconImageView.image = [UIImage gama_imageNamed:iconName];
+    
+    
+    
+}
+
 @end

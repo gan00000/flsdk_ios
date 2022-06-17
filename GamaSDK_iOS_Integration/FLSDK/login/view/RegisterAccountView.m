@@ -21,14 +21,14 @@
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *passwordAgainSDKTextFiledView;
-    SDKTextFiledView *vfCodeFiledView;
+//    SDKTextFiledView *vfCodeFiledView;
     UIButton *regAccountBtn; //確定按鈕
     LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
-    NSTimer *downTimer;
-    UIButton *getVfCodeBtn;
+//    NSTimer *downTimer;
+//    UIButton *getVfCodeBtn;
     
-    PhoneView *mPhoneView;
+//    PhoneView *mPhoneView;
     
 }
 
@@ -71,7 +71,7 @@
        
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-    
+        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -193,7 +193,7 @@
 //        }];
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        regAccountBtn = [UIUtil initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        regAccountBtn = [UIUtil initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:regAccountBtn];
@@ -242,9 +242,9 @@
     mLoginTitleView.delegate = self.delegate;
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    passwordAgainSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
-    vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
+//    passwordAgainSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
+//    mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
+//    vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     
 }
 
@@ -257,76 +257,64 @@
         case kGetVfCodeActTag:
             
         {
-            SDK_LOG(@"kGetVfCodeActTag");
-            NSString *areaCode = [mPhoneView getPhoneAreaCode];
-            NSString *phoneNum = [mPhoneView getPhoneNumber];
-            if (!phoneNum || [@"" isEqualToString:phoneNum]) {
-                [SdkUtil toastMsg:@"請輸入電話號碼"];
-                return;
-            }
-            [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
+//            SDK_LOG(@"kGetVfCodeActTag");
+//            NSString *areaCode = [mPhoneView getPhoneAreaCode];
+//            NSString *phoneNum = [mPhoneView getPhoneNumber];
+//            if (!phoneNum || [@"" isEqualToString:phoneNum]) {
+//                [SdkUtil toastMsg:@"請輸入電話號碼"];
+//                return;
+//            }
+//            [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
         }
             break;
             
         case kRegisterAccountActTag:
         {
             SDK_LOG(@"kRegisterAccountActTag");
-            NSString *name = accountSDKTextFiledView.inputUITextField.text;
-            NSString *password = passwordSDKTextFiledView.inputUITextField.text;
-            NSString *areaCode = [mPhoneView getPhoneAreaCode];
-            NSString *phoneNum = [mPhoneView getPhoneNumber];
-            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
+            NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
+            NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;
+//            NSString *areaCode = [mPhoneView getPhoneAreaCode];
+//            NSString *phoneNum = [mPhoneView getPhoneNumber];
+//            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
             
-            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
+//            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
-            if (!name || [name isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
+            if (!accountName || [accountName isEqualToString:@""]) {
+                [SdkUtil toastMsg:GetString(@"py_account_empty")];
                 return;
             }
             
-            
-            if (!password || [password isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
+            if (![SdkUtil validUserName:accountName]) {
+                [SdkUtil toastMsg:GetString(@"text_account_format")];
                 return;
             }
             
-            if (![SdkUtil validUserName:name]) {
-                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
-                return;
-            }
-            if (![SdkUtil validPwd:password]) {
-                [SdkUtil toastMsg:GetString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
+            if (!pwd || [pwd isEqualToString:@""]) {
+                [SdkUtil toastMsg:GetString(@"py_password_empty")];
                 return;
             }
             
-            if (![password isEqualToString:newPassword]) {
-                [SdkUtil toastMsg:@"兩次輸入的密碼不一致"];
-                return;
-            }
-            if ([password isEqualToString:name]) {
-                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_AND_PWD_RULE")];
-                return;
-            }
+//            if ([@"" isEqualToString:vfCode]) {
+//                
+//                [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
+//                return;
+//            }
             
-            if ([@"" isEqualToString:vfCode]) {
-                
-                [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
-                return;
-            }
+            [self requestRegister:@"" name:accountName password:pwd phoneNum:@"" vfCode:@""];
             
-            if (self.bindType == 0) {
-                [self requestRegister:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-            }else if (self.bindType == kBindFBActTag){
-                
-                [self requestBindFb:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-                
-            }else if (self.bindType == kBindAppleActTag){
-                
-                [self requestBindApple:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-                
-            }else if (self.bindType == kBindGuestActTag){
-                [self requestBindMac:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-            }
+//            if (self.bindType == 0) {
+//                [self requestRegister:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
+//            }else if (self.bindType == kBindFBActTag){
+//
+//                [self requestBindFb:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
+//
+//            }else if (self.bindType == kBindAppleActTag){
+//
+//                [self requestBindApple:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
+//
+//            }else if (self.bindType == kBindGuestActTag){
+//                [self requestBindMac:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
+//            }
             
             
         }
@@ -513,51 +501,49 @@
 
 -(void)downTime{
     
-    phoneCountdown = 60;
-    getVfCodeBtn.userInteractionEnabled = NO;
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
-    //getVfCodeBtn.layer.masksToBounds = YES;
-    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
-    }
-    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                                 target:self
-                                               selector:@selector(phoneFireTimer)
-                                               userInfo:nil
-                                                repeats:YES];
+//    phoneCountdown = 60;
+//    getVfCodeBtn.userInteractionEnabled = NO;
+//    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+//
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
+//    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+//                                                 target:self
+//                                               selector:@selector(phoneFireTimer)
+//                                               userInfo:nil
+//                                                repeats:YES];
     
     
 }
 
 - (void)phoneFireTimer {
-    phoneCountdown--;
-    if (phoneCountdown < 0) {
-        [self resetVfCodeBtnStatue];
-    }else{
-        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-    }
+//    phoneCountdown--;
+//    if (phoneCountdown < 0) {
+//        [self resetVfCodeBtnStatue];
+//    }else{
+//        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+//    }
     
 }
 
 -(void) resetVfCodeBtnStatue
 {
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
-    }
-    getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle: @"獲取驗證碼" forState:UIControlStateNormal];
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
+//    getVfCodeBtn.userInteractionEnabled = YES;
+//    [getVfCodeBtn setTitle: @"獲取驗證碼" forState:UIControlStateNormal];
 }
 
 - (void)dealloc
 {
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
-    }
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
 }
 @end

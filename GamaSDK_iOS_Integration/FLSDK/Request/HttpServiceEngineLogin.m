@@ -62,6 +62,8 @@
 //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
         CCSDKResponse *mCCSDKResponse = [CCSDKResponse yy_modelWithDictionary:responseData];
         if ([mCCSDKResponse isRequestSuccess]) {
+            mCCSDKResponse.data.thirdId = params[@"thirdPlatId"];
+            mCCSDKResponse.data.loginType = params[@"registPlatform"];
             if (successBlock) {
                 successBlock(mCCSDKResponse);
             }

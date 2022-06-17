@@ -24,6 +24,8 @@
     [aCoder encodeObject:self.thirdId forKey:@"thirdId"];
     [aCoder encodeObject:self.thirdAccount forKey:@"thirdAccount"];
     [aCoder encodeBool:self.isBind forKey:@"accountIsBind"];
+    
+    [aCoder encodeObject:self.loginType forKey:@"loginType"];
 
 }
 
@@ -43,6 +45,8 @@
         self.thirdId = [aDecoder decodeObjectForKey:@"thirdId"];
         self.thirdAccount = [aDecoder decodeObjectForKey:@"thirdAccount"];
         self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"];
+        
+        self.loginType = [aDecoder decodeObjectForKey:@"loginType"];
   
     }
     

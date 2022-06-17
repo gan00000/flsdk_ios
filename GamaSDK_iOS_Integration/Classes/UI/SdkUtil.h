@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import "SDKTextFiledView.h"
 
 @interface SdkUtil : NSObject
 
@@ -71,4 +72,7 @@
 + (UIView *)initWithMaxTitle:(NSString *)maxTitle minTitle:(NSString *)minTitle;
 + (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxSize:(CGSize)maxSize;
 + (CGFloat)titleFontWedthWithMaxStr:(NSString *)maxStr minStr:(NSString *)minStr;
+
+//+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
+
 @end

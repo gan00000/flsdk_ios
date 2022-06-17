@@ -11,11 +11,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "SdkHeader.h"
-
 @implementation SDKTextFiledView
 {
     UITextField *mUITextField;
+    UIButton *eyeBtn;
 }
 
 
@@ -26,6 +25,24 @@
         [self addContentView:type];
     }
     return self;
+}
+
+-(void)setPwdFiledView:(BOOL)enable{
+    
+    eyeBtn.hidden = enable;
+    mUITextField.enabled = enable;
+    if (enable) {
+        self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_icon"];
+        mUITextField.secureTextEntry = YES;
+        mUITextField.text = @"";
+        eyeBtn.selected = YES;
+    }else{
+        self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_disable_icon"];
+        mUITextField.secureTextEntry = NO;
+        mUITextField.text = GetString(@"text_free_register");
+        eyeBtn.selected = NO;
+    }
+    
 }
 
 
@@ -185,7 +202,7 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
+        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" selectedImageName:@"sdk_list_up.png" tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
         //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
@@ -204,11 +221,10 @@
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
-        UIButton *eyeBtn = [UIUtil initBtnWithNormalImage:@"fl_sdk_ky.png" highlightedImage:@"fl_sdk_ky.png" tag:22 selector:@selector(eyeViewBtnAction:) target:self];
-        eyeBtn.selected = NO;//设置为没有选择
+        eyeBtn = [UIUtil initBtnWithNormalImage:@"fl_sdk_ky.png" highlightedImage:@"fl_sdk_ky.png" selectedImageName:@"fl_sdk_by.png" tag:22 selector:@selector(eyeViewBtnAction:) target:self];
+        eyeBtn.selected = YES;//设置为选择
+        mUITextField.secureTextEntry = YES;
         
-        //        UIImageView *eyeImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_by.png"]];
-        //        eyeImageView.contentMode = UIViewContentModeScaleAspectFit;
         eyeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:eyeBtn];
         [eyeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -218,11 +234,7 @@
             
             make.height.mas_equalTo(self.mas_height);
             make.width.mas_equalTo(VW(17));
-            //            if (device_is_iPhoneX) {
-            //                make.width.mas_equalTo(self.mas_height).multipliedBy(0.6);
-            //            }else{
-            //                make.width.mas_equalTo(self.mas_height).multipliedBy(0.45);
-            //            }
+           
         }];
     }
     
@@ -257,7 +269,6 @@
         mUITextField.text = @""; // 这句代码可以防止切换的时候光标偏移
         mUITextField.secureTextEntry = NO;
         mUITextField.text = tempPwdStr;
-        [sender setImage:GetImage(@"fl_sdk_ky.png") forState:UIControlStateNormal];
         
     } else { // 暗文
         
@@ -265,8 +276,6 @@
         mUITextField.text = @"";
         mUITextField.secureTextEntry = YES;
         mUITextField.text = tempPwdStr;
-        
-        [sender setImage:GetImage(@"fl_sdk_by.png") forState:UIControlStateNormal];
     }
     // 切换按钮的状态
     sender.selected = !sender.selected;
