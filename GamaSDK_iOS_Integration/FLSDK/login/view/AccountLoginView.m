@@ -21,10 +21,9 @@
 #import "AppleLogin.h"
 #import "TermsView.h"
 #import "AccountListView.h"
-
+#import "UIView+BlockGesture.h"
 
 @interface AccountLoginView()
-
 
 
 @end
@@ -170,6 +169,14 @@
             make.top.bottom.mas_equalTo(termAgreeView);
             make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
+        }];
+        rememberTermsLable.userInteractionEnabled=YES;
+        [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+            SDK_LOG(@"rememberTermsLableTapped");
+            if (self.delegate) {
+                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
+            }
+
         }];
         
         
@@ -362,17 +369,6 @@
         
     };
 }
-
-
-
--(void)rememberTermsLableTapped:(UITapGestureRecognizer*)tapGr
-{
-    SDK_LOG(@"rememberTermsLableTapped");
-    if (self.delegate) {
-        [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS];
-    }
-}
-
 
 
 - (void)drawRect:(CGRect)rect

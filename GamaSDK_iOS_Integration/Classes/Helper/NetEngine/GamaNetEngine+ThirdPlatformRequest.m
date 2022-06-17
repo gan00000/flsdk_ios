@@ -8,8 +8,8 @@
 
 #import "GamaNetEngine.h"
 #import "GamaCommonHeader.h"
-#import "GamaCentreInfo.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
+#import "ConfigHeader.h"
 #import "GamaFunction.h"
 #import "HelloHeader.h"
 //#import "KRTwitterLogin.h"

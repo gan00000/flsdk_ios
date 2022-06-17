@@ -186,7 +186,7 @@
     
     
     if (self.delegate) {
-        [self.delegate goPageView:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) param:sender.tag];
+        [self.delegate goPageView:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) from:(CURRENT_PAGE_TYPE_SELECT_BIND_TYPE) param:sender.tag];
     }
 }
 @end

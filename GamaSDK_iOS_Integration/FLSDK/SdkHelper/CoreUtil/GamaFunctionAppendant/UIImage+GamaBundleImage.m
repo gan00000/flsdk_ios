@@ -1,7 +1,7 @@
 
 
 #import "UIImage+GamaBundleImage.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 
 @implementation UIImage (EFNBundleImage)
 

@@ -15,7 +15,7 @@
 #import "CCSDKResponse.h"
 #import "CComHeader.h" //最基本
 #import "GamaFunction.h"  //功能相关
-#import "GamaCentreInfo.h" //功能相关
+#import "ConfigHeader.h" //功能相关
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
 #import "SdkUtil.h"
@@ -76,6 +76,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_MAIN_HOME,
     CURRENT_PAGE_TYPE_WELCOME_BACK,
     CURRENT_PAGE_TYPE_LOGIN_WITH_REG,
+    CURRENT_PAGE_TYPE_NULL,
 };
 
 //typedef NS_OPTIONS(NSUInteger, LOGIN_TYPE)

@@ -1,5 +1,5 @@
 //
-//  GamaCentreInfo.h
+//  ConfigHeader.h
 //
 #import "GamaSecurity.h"
 #import "GamaFunction.h"
@@ -23,4 +23,4 @@
 #define APP_KEY   [SDKConReader getAppkey]
 #define GAME_LANGUAGE [SDKConReader getGameLanguage]
 #define FACEBOOK_APPID [SDKConReader getFacebookAppId]
-
+#define TERMS_SERVICE_URL [SDKConReader getTermsServiceUrl]

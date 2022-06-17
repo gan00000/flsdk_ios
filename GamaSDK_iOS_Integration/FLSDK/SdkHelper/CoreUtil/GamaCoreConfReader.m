@@ -3,7 +3,7 @@
 #import <malloc/malloc.h>
 #import <objc/runtime.h>
 #import "GamaCoreConfReader.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "SdkHeader.h"
 
 
@@ -211,6 +211,10 @@ static dispatch_once_t onceToken;
 -(NSString *) getPayUrl
 {
     return [self getStringForKey:@"sdk_url_pay"];
+}
+-(NSString *) getTermsServiceUrl
+{
+    return [self getStringForKey:@"terms_service_url"];
 }
 
 

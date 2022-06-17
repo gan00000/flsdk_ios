@@ -1,5 +1,5 @@
 #import "GamaCfUUID.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "GamaKeychainItemWrapper.h"
 
 #import "GamaPrivateKeychainCfUUID.h"

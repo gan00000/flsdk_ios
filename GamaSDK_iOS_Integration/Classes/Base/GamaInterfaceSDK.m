@@ -3,7 +3,7 @@
 
 #import "GamaInterfaceSDK.h"
 #import "GamaNetEngine.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "GamaCommonHeader.h"
 //#import "KRTwitterLogin.h"
 //#import "ProvisionsView.h"

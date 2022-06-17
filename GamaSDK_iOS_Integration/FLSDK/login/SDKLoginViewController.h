@@ -12,6 +12,7 @@
 #import "SdkHeader.h"
 #import "LoginViewDelegate.h"
 #import "FLSDK.h"
+#import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

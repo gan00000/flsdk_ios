@@ -30,7 +30,7 @@
 		032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SdkUserInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BC285A006600F1FD3B /* GamaFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* GamaFunction.m */; };
-		032AB8BD285A006600F1FD3B /* GamaCentreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* GamaCentreInfo.m */; };
+		032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* ConfigHeader.m */; };
 		032AB8BE285A006600F1FD3B /* GamaAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */; };
 		032AB8BF285A006600F1FD3B /* UIAlertController+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */; };
 		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
@@ -275,11 +275,11 @@
 		032AB894285A006600F1FD3B /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
 		032AB897285A006600F1FD3B /* SdkUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
 		032AB898285A006600F1FD3B /* SdkUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkUserInfoModel.m; sourceTree = "<group>"; };
-		032AB899285A006600F1FD3B /* GamaCentreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCentreInfo.h; sourceTree = "<group>"; };
+		032AB899285A006600F1FD3B /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
 		032AB89A285A006600F1FD3B /* GamaFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFunction.h; sourceTree = "<group>"; };
 		032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCoreConfReader.m; sourceTree = "<group>"; };
 		032AB89D285A006600F1FD3B /* GamaFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaFunction.m; sourceTree = "<group>"; };
-		032AB89E285A006600F1FD3B /* GamaCentreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCentreInfo.m; sourceTree = "<group>"; };
+		032AB89E285A006600F1FD3B /* ConfigHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigHeader.m; sourceTree = "<group>"; };
 		032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaAlertViewDelegate.m; sourceTree = "<group>"; };
 		032AB8A1285A006600F1FD3B /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
 		032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Gama.m"; sourceTree = "<group>"; };
@@ -727,8 +727,8 @@
 			isa = PBXGroup;
 			children = (
 				032AB89F285A006600F1FD3B /* GamaAlertView */,
-				032AB899285A006600F1FD3B /* GamaCentreInfo.h */,
-				032AB89E285A006600F1FD3B /* GamaCentreInfo.m */,
+				032AB899285A006600F1FD3B /* ConfigHeader.h */,
+				032AB89E285A006600F1FD3B /* ConfigHeader.m */,
 				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
 				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
 				032AB896285A006600F1FD3B /* GamaCoreData */,
@@ -1090,6 +1090,7 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
 				03650193285C761600578028 /* SDKBaseView.h */,
 				03650194285C761600578028 /* SDKBaseView.m */,
 				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
@@ -1105,7 +1106,6 @@
 				322CBC1B24C589A5000D6B20 /* FindPasswordView.h */,
 				322CBC2E24C589A5000D6B20 /* FindPasswordView.m */,
 				322CBC2924C589A5000D6B20 /* RegisterAccountView.h */,
-				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
 				322CBC7724C59186000D6B20 /* SdkAutoLoginView.h */,
 				322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */,
 				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
@@ -1616,7 +1616,7 @@
 				3295E2F024DAEDDE00B85976 /* AFURLSessionManager.m in Sources */,
 				3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */,
 				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
-				032AB8BD285A006600F1FD3B /* GamaCentreInfo.m in Sources */,
+				032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */,
 				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
 				3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */,
 				32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */,

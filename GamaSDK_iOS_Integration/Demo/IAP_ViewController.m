@@ -10,7 +10,7 @@
 #import "GamaInterfaceSDK.h"
 #import "UserModel.h"
 #import "GamaFunction.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "GamaCommonHeader.h"
 
 #import "FLSDK.h"

@@ -239,7 +239,7 @@
 //        [checkBoxTermsBtn setImage:GetImage(@"mw_cb_uncheck.png") forState:(UIControlStateNormal)];
 //    }
     
-        NSString *xtext = @"我已閱讀並同意定型化契約";
+        NSString *xtext = GetString(@"gama_ui_term_port_read2");
         UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
@@ -258,6 +258,13 @@
             make.top.bottom.mas_equalTo(termAgreeView);
             make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
+        }];
+        rememberTermsLable.userInteractionEnabled=YES;
+        [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+            SDK_LOG(@"rememberTermsLableTapped");
+            if (self.delegate) {
+                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_MAIN_HOME) param:0];
+            }
         }];
 
      

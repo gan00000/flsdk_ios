@@ -3,7 +3,7 @@
 
 #import "GamaBaseSDK.h"
 #import "FLSDK.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "GamaFunction.h"
 #import "SdkUserInfoModel.h"
 #import "GamaTimer.h"

@@ -1,9 +1,9 @@
 //
-//  GamaCentreInfo.m
+//  ConfigHeader.m
 //
 
 #import <Foundation/Foundation.h>
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 
 /*-----------
  @abstract      回调通知

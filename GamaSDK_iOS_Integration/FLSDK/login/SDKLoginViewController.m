@@ -30,10 +30,10 @@
 
 @implementation SDKLoginViewController{
     SelectLoginTypeView *mSelectLoginTypeView;
-
+    
     SDKPage sdkPageType;
-   
-//    AccountLoginView *mAccountLoginView;
+    
+    //    AccountLoginView *mAccountLoginView;
     SdkAutoLoginView *mAutoLoginView;
     LoginWithRegView *mLoginWithRegView;
     MainHomeView *mMainHomeView;
@@ -65,7 +65,7 @@
     SDK_LOG(@"viewDidLoad");
     self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.8];//[UIColor clearColor];
     
-   // [self registNotification];
+    // [self registNotification];
     switch (sdkPageType) {
         case SDKPage_Login:
         {
@@ -89,14 +89,14 @@
         default:
             break;
     }
-
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     SDK_LOG(@"viewDidAppear");
     
-
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -115,65 +115,53 @@
 }
 
 
-- (void)showTramsView {
-    TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
-        //[self addMainLoginView];//同意之后打开登录页面
-        
-    }];
-    
-    mTermsView.delegate = self;
-    mTermsView.theViewUIViewController = self;
-    
-    [self addTermsView:mTermsView];
-}
-
 -(void)showLoginPageOrAutoLogin
 {
     
-//    if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
-//        [self showTramsView];
-//    }else{
-//
-//        NSString *loginType = [ConfigCoreUtil share].loginType;
-//        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-//            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-//                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-//               if (!accounts || accounts.count == 0) {
-//                   [self addMainLoginView];
-//                   return;
-//               }
-//            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-//            {
-//                [self addMainLoginView];
-//                return;
-//            }
-//             [self addAutoLoginView];
-//
-//        }else{
-//             [self addMainLoginView];
-//        }
-//
-//    }
+    //    if ([TermsView openProvision]) {//是否打开服务条款页面，没同意过需要打开
+    //        [self showTramsView];
+    //    }else{
+    //
+    //        NSString *loginType = [ConfigCoreUtil share].loginType;
+    //        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+    //            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+    //                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+    //               if (!accounts || accounts.count == 0) {
+    //                   [self addMainLoginView];
+    //                   return;
+    //               }
+    //            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+    //            {
+    //                [self addMainLoginView];
+    //                return;
+    //            }
+    //             [self addAutoLoginView];
+    //
+    //        }else{
+    //             [self addMainLoginView];
+    //        }
+    //
+    //    }
     
-//    NSString *loginType = [ConfigCoreUtil share].loginType;
-//    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-//        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
-//            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
-//           if (!accounts || accounts.count == 0) {
-//               [self addMainLoginView];
-//               return;
-//           }
-//        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
-//        {
-//            [self addMainLoginView];
-//            return;
-//        }
-//         [self addAutoLoginView];
-//
-//    }else{
-//         [self addMainLoginView];
-//    }
-  
+    //    NSString *loginType = [ConfigCoreUtil share].loginType;
+    //    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
+    //        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+    //            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
+    //           if (!accounts || accounts.count == 0) {
+    //               [self addMainLoginView];
+    //               return;
+    //           }
+    //        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+    //        {
+    //            [self addMainLoginView];
+    //            return;
+    //        }
+    //         [self addAutoLoginView];
+    //
+    //    }else{
+    //         [self addMainLoginView];
+    //    }
+    
     [self addHomeView];
 }
 
@@ -181,7 +169,7 @@
 {
     if (!sdkContentView) {
         sdkContentView = [[UIView alloc]init];
-//        sdkContentView.backgroundColor = [UIColor redColor];
+        //        sdkContentView.backgroundColor = [UIColor redColor];
         [self.view addSubview:sdkContentView];
         [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(@(0));
@@ -198,7 +186,7 @@
 -(void)addLoginWithRegView
 {
     //移除所有子视图
-//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     mLoginWithRegView = [[LoginWithRegView alloc] initView];
     [self addSubSdkLoginView:mLoginWithRegView];
@@ -214,23 +202,19 @@
 //}
 
 
--(void)addTermsView:(TermsView *)mTermsView //服務條款
+-(SDKBaseView *)addTermsView//服務條款
 {
-    int width = kBgWidth;
-    int height = kBgHeight;
-    if (Device_Is_Landscape) {
-        width = width + 30;
-    }else{
-         height = height + 30;
-    }
-    [self.view addSubview:mTermsView];
-    [mTermsView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(@(0));
-        make.centerY.equalTo(@(0));
-        make.width.equalTo(@(width));
-        make.height.equalTo(@(height));
+    TermsView *mTermsView = [[TermsView alloc] initWithCompleter:^{
+        //[self addMainLoginView];//同意之后打开登录页面
+        
     }];
     
+    mTermsView.delegate = self;
+    mTermsView.theViewUIViewController = self;
+    
+    [self addSubSdkLoginView:mTermsView];
+    
+    return mTermsView;
 }
 
 //-(void)addAutoLoginView //自动登录中界面
@@ -295,7 +279,7 @@
 {
     //移除所有子视图
     [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-
+    
     mMainHomeView = [[MainHomeView alloc] initView];
     [self addSubSdkLoginView:mMainHomeView];
 }
@@ -310,12 +294,12 @@
     mSDKBaseView.mUITextFieldDelegate = self;
     
     //移除所有子视图
-//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
     
     [[self sdkContentView] addSubview:mSDKBaseView];
-
+    
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo([self sdkContentView]);
         make.center.mas_equalTo([self sdkContentView]);
@@ -344,11 +328,11 @@
 
 -(void)goPageView:(CURRENT_PAGE_TYPE) pageType;
 {
-    [self goPageView:pageType param:0];
+    [self goPageView:pageType from:CURRENT_PAGE_TYPE_NULL param:0];
     
 }
 
-- (void)goPageView:(CURRENT_PAGE_TYPE)pageType param:(NSInteger)p
+- (void)goPageView:(CURRENT_PAGE_TYPE)pageType from:(CURRENT_PAGE_TYPE)fromPage param:(NSInteger)p
 {
     switch (pageType) {
         case CURRENT_PAGE_TYPE_AUTO:
@@ -377,12 +361,18 @@
             break;
             
         case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
-                   [self addBindAccountView:p];//綁定賬號頁面
-                   break;
+            [self addBindAccountView:p];//綁定賬號頁面
+            break;
             
         case CURRENT_PAGE_TYPE_TEARMS:
-                   [self showTramsView];//服务条款頁面
-                   break;
+        {
+            SDKBaseView *mView = [self addTermsView];//服务条款頁面
+            if (fromPage && fromPage != CURRENT_PAGE_TYPE_NULL) {
+                mView.fromPage = fromPage;
+            }
+            
+        }
+            break;
         default:
             break;
     }
@@ -410,12 +400,12 @@
     if (backView) {
         [backView removeFromSuperview];
     }
-//    if (count == 1) {
-//        [[backView superview] removeFromSuperview];
-//    }else if (count == 2){
-//        [[[backView superview] superview] removeFromSuperview];
-//    }
-//
+    //    if (count == 1) {
+    //        [[backView superview] removeFromSuperview];
+    //    }else if (count == 2){
+    //        [[[backView superview] superview] removeFromSuperview];
+    //    }
+    //
 }
 
 - (void)logout
@@ -437,9 +427,9 @@
 
 -(void)changPasswordSuccess //密码改变
 {
-//    if (mAccountLoginView) {
-//        [mAccountLoginView updatePasswordData];
-//    }
+    //    if (mAccountLoginView) {
+    //        [mAccountLoginView updatePasswordData];
+    //    }
 }
 
 -(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate
@@ -457,17 +447,17 @@
     
     if ([_SDK_PLAT_SELF isEqualToString:thirdPlate]) {
         //是否需要保存账号密码
-//        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
-//            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
-////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":cc.userId}];
-//                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
-//            }else if([ConfigCoreUtil share].isSaveAccountInfo){//登录并勾选记住密码
-////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":cc.userId}];
-//                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
-//            }
-//
-//        }
-
+        //        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
+        //            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
+        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":cc.userId}];
+        //                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
+        //            }else if([ConfigCoreUtil share].isSaveAccountInfo){//登录并勾选记住密码
+        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":cc.userId}];
+        //                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password:SDK_DATA.mCCSDKResponse.password updateTime:YES];
+        //            }
+        //
+        //        }
+        
     }
     [[ConfigCoreUtil share] saveAccountModel:rData];
     
@@ -541,7 +531,7 @@
 }
 
 -(void)keyboardWillHide:(NSNotification *)note{
-   SDK_LOG(@"keyboardWillHide");
+    SDK_LOG(@"keyboardWillHide");
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
         //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
@@ -572,7 +562,7 @@
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField
 {
     SDK_LOG(@"textFieldShouldEndEditing");
-
+    
     return YES;
 }
 

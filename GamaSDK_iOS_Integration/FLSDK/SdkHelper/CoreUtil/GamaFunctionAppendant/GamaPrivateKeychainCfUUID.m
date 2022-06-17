@@ -1,7 +1,7 @@
 //
 
 #import "GamaPrivateKeychainCfUUID.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 
 
 @implementation GamaPrivateKeychainCfUUID

@@ -8,7 +8,7 @@
 
 #import "GamaNetEngine.h"
 #import "GamaCommonHeader.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 
 #import "HelloHeader.h"
 

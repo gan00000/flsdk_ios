@@ -8,7 +8,7 @@
 
 #import "AlertUtil.h"
 
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 
 #define GamaAlertViewShowTime   2.0
 

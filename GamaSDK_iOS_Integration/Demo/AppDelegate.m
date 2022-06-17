@@ -9,7 +9,7 @@
 #import "AppsFlyerTracker.h"
 
 #import "GamaCommonHeader.h"
-#import "GamaCentreInfo.h"
+#import "ConfigHeader.h"
 #import "FLSDK.h"
 
 #import "GamaTimer.h"
