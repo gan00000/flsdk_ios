@@ -485,18 +485,18 @@
 
 - (void)requestPhoneVerficationWithPhoneArea:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
 {
-    NSString *interfaces = @"1"; //註冊1 綁定2  找回密碼4
-    if (self.bindType == 0) {
-        interfaces = @"1";;
-    }else{
-        interfaces = @"2";
-    }
-    [SDKRequest requestPhoneVerficationWithPhoneArea:phoneArea phoneNumber:phoneN  interfaces:interfaces otherDic:nil successBlock:^(id responseData) {
-        [self downTime];
-    } errorBlock:^(BJError *error) {
-        [self resetVfCodeBtnStatue];
-        [AlertUtil showAlertWithMessage:error.message];
-    }];
+//    NSString *interfaces = @"1"; //註冊1 綁定2  找回密碼4
+//    if (self.bindType == 0) {
+//        interfaces = @"1";;
+//    }else{
+//        interfaces = @"2";
+//    }
+//    [SDKRequest requestPhoneVerficationWithPhoneArea:phoneArea phoneNumber:phoneN  interfaces:interfaces otherDic:nil successBlock:^(id responseData) {
+//        [self downTime];
+//    } errorBlock:^(BJError *error) {
+//        [self resetVfCodeBtnStatue];
+//        [AlertUtil showAlertWithMessage:error.message];
+//    }];
 }
 
 -(void)downTime{

@@ -32,8 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
              successBlock:(BJServiceSuccessBlock)successBlock
                errorBlock:(BJServiceErrorBlock)errorBlock;
 
-+ (void)requestPhoneVerficationWithPhoneArea:(NSString *)phoneArea
++ (void)requestVfCode:(NSString *)phoneArea
                                  phoneNumber:(NSString *)phoneN
+                                 email:(NSString *)email
                                   interfaces:(NSString *)interfaces
                                     otherDic:(NSDictionary *)otherParamsDic
                                 successBlock:(BJServiceSuccessBlock)successBlock
@@ -58,14 +59,15 @@ NS_ASSUME_NONNULL_BEGIN
                         errorBlock:(BJServiceErrorBlock)errorBlock;
 
 //找回密码
-+(void)doRegetPasswordWithUserName:(NSString *)userName
++(void)doForgotPasswordWithUserName:(NSString *)userName
                      phoneAreaCode:(NSString *)phoneAreaCode
                        phoneNumber:(NSString *)phoneN
+                             email:(NSString *)email
                             vfCode:(NSString *)vfCode
                         interfaces:(NSString *)interfaces
                     otherParamsDic:(NSDictionary *)otherParamsDic
                       successBlock:(BJServiceSuccessBlock)successBlock
-                        errorBlock:(BJServiceErrorBlock)errorBlock;
+                         errorBlock:(BJServiceErrorBlock)errorBlock;
 
 
 + (void)reportRoleInfo:(NSDictionary *)otherParamsDic

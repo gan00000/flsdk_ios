@@ -1,11 +1,16 @@
 //
+//  NSString+Util.m
+//  FLSDK
+//
+//  Created by Gan Yuanrong on 2022/6/18.
+//  Copyright © 2022 Gama. All rights reserved.
 //
 
-#import "NSString+GamaSStringAddition.h"
-
+#import "NSString+Common.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (GamaNSStringAddition)
+@implementation NSString (Common)
+
 
 - (NSString*)stringEsclipeFromXEndX:(int)X
 {
@@ -88,14 +93,13 @@
     return resultTimes;
 }
 
-- (NSString *)urlEncodeString
-{
-    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
-                                                                           (CFStringRef)self,
-                                                                           NULL,
-                                                                           (CFStringRef)@";/?:@&=$+{}<>,",
-                                                                           kCFStringEncodingUTF8);
-    return [result autorelease];
-}
-
+//- (NSString *)urlEncodeString
+//{
+//    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
+//                                                                           (CFStringRef)self,
+//                                                                           NULL,
+//                                                                           (CFStringRef)@";/?:@&=$+{}<>,",
+//                                                                           kCFStringEncodingUTF8);
+//    return result;
+//}
 @end

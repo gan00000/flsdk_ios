@@ -34,10 +34,9 @@
 		032AB8BE285A006600F1FD3B /* GamaAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */; };
 		032AB8BF285A006600F1FD3B /* UIAlertController+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */; };
 		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
-		032AB8C1285A006600F1FD3B /* NSString+GamaURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+GamaURLEncoding.m */; };
+		032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; };
 		032AB8C2285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */; };
 		032AB8C3285A006600F1FD3B /* GamaCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* GamaCfUUID.m */; };
-		032AB8C4285A006600F1FD3B /* NSString+GamaSStringAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B1285A006600F1FD3B /* NSString+GamaSStringAddition.m */; };
 		032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */; };
 		032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
@@ -73,6 +72,8 @@
 		034B7B75284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
 		034B7B76284CF1BE009FD2DF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B7B5E284CF1BE009FD2DF /* GoogleUtilities.xcframework */; };
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
@@ -287,16 +288,14 @@
 		032AB8A4285A006600F1FD3B /* UIAlertController+Gama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Gama.h"; sourceTree = "<group>"; };
 		032AB8A5285A006600F1FD3B /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
 		032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
-		032AB8A8285A006600F1FD3B /* NSString+GamaURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GamaURLEncoding.m"; sourceTree = "<group>"; };
-		032AB8A9285A006600F1FD3B /* NSString+GamaSStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaSStringAddition.h"; sourceTree = "<group>"; };
+		032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		032AB8AA285A006600F1FD3B /* GamaCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCfUUID.h; sourceTree = "<group>"; };
 		032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaPrivateKeychainCfUUID.m; sourceTree = "<group>"; };
 		032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
 		032AB8AD285A006600F1FD3B /* GamaKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaKeychainItemWrapper.h; sourceTree = "<group>"; };
-		032AB8AE285A006600F1FD3B /* NSString+GamaURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GamaURLEncoding.h"; sourceTree = "<group>"; };
+		032AB8AE285A006600F1FD3B /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		032AB8AF285A006600F1FD3B /* GamaPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
 		032AB8B0285A006600F1FD3B /* GamaCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCfUUID.m; sourceTree = "<group>"; };
-		032AB8B1285A006600F1FD3B /* NSString+GamaSStringAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GamaSStringAddition.m"; sourceTree = "<group>"; };
 		032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaKeychainItemWrapper.m; sourceTree = "<group>"; };
 		032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GamaBundleImage.m"; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
@@ -322,6 +321,10 @@
 		03650193285C761600578028 /* SDKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBaseView.h; sourceTree = "<group>"; };
 		03650194285C761600578028 /* SDKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKBaseView.m; sourceTree = "<group>"; };
 		03650196285C768300578028 /* SdkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkHeader.h; sourceTree = "<group>"; };
+		03669944285DBF3A0008EB50 /* NSString+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		03669945285DBF3A0008EB50 /* NSString+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		03669947285E26890008EB50 /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		03669948285E26890008EB50 /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
 		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
@@ -782,10 +785,6 @@
 				032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */,
 				032AB8AF285A006600F1FD3B /* GamaPrivateKeychainCfUUID.h */,
 				032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */,
-				032AB8A9285A006600F1FD3B /* NSString+GamaSStringAddition.h */,
-				032AB8B1285A006600F1FD3B /* NSString+GamaSStringAddition.m */,
-				032AB8AE285A006600F1FD3B /* NSString+GamaURLEncoding.h */,
-				032AB8A8285A006600F1FD3B /* NSString+GamaURLEncoding.m */,
 				032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */,
 				032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */,
 			);
@@ -848,13 +847,17 @@
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		03F59A48285776460062B6EE /* SDKCategory */ = {
+		03F59A48285776460062B6EE /* GCategory */ = {
 			isa = PBXGroup;
 			children = (
+				032AB8AE285A006600F1FD3B /* NSString+URLEncoding.h */,
+				032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */,
 				03F59A49285776730062B6EE /* UIView+BlockGesture.h */,
 				03F59A4A285776730062B6EE /* UIView+BlockGesture.m */,
+				03669944285DBF3A0008EB50 /* NSString+Common.h */,
+				03669945285DBF3A0008EB50 /* NSString+Common.m */,
 			);
-			path = SDKCategory;
+			path = GCategory;
 			sourceTree = "<group>";
 		};
 		220B859D1E572CD000505690 /* Frameworks */ = {
@@ -979,7 +982,7 @@
 		322CBBA224C589A5000D6B20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				03F59A48285776460062B6EE /* SDKCategory */,
+				03F59A48285776460062B6EE /* GCategory */,
 				322CBBBA24C589A5000D6B20 /* CComHeader.h */,
 				322CBBD524C589A5000D6B20 /* Utils */,
 				322CBBE324C589A5000D6B20 /* YYModel */,
@@ -996,6 +999,8 @@
 				322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */,
 				322CBBD724C589A5000D6B20 /* UIUtil.h */,
 				322CBBDA24C589A5000D6B20 /* UIUtil.m */,
+				03669947285E26890008EB50 /* StringUtil.h */,
+				03669948285E26890008EB50 /* StringUtil.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1090,33 +1095,33 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
-				03650193285C761600578028 /* SDKBaseView.h */,
-				03650194285C761600578028 /* SDKBaseView.m */,
-				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
-				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
-				03EA360A2850989900723340 /* MainHomeView.h */,
-				03EA36092850989900723340 /* MainHomeView.m */,
-				03EA36072850986F00723340 /* BindAccountView.h */,
-				03EA36062850986F00723340 /* BindAccountView.m */,
 				322CBC2824C589A5000D6B20 /* AccountLoginView.h */,
 				322CBC3624C589A5000D6B20 /* AccountLoginView.m */,
+				03EA36072850986F00723340 /* BindAccountView.h */,
+				03EA36062850986F00723340 /* BindAccountView.m */,
 				322CBC3024C589A5000D6B20 /* ChangePasswordView.h */,
 				322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */,
 				322CBC1B24C589A5000D6B20 /* FindPasswordView.h */,
 				322CBC2E24C589A5000D6B20 /* FindPasswordView.m */,
+				32CDA790253FD43100D3969F /* LoginWithRegView.h */,
+				32CDA791253FD43100D3969F /* LoginWithRegView.m */,
+				03EA360A2850989900723340 /* MainHomeView.h */,
+				03EA36092850989900723340 /* MainHomeView.m */,
 				322CBC2924C589A5000D6B20 /* RegisterAccountView.h */,
+				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
 				322CBC7724C59186000D6B20 /* SdkAutoLoginView.h */,
 				322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */,
+				03650193285C761600578028 /* SDKBaseView.h */,
+				03650194285C761600578028 /* SDKBaseView.m */,
 				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
 				322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */,
 				322CBC3824C589A5000D6B20 /* SelectLoginTypeView.h */,
 				322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */,
-				322CBC1F24C589A5000D6B20 /* widget */,
 				32D790EB24D55D69006A2F69 /* TermsView.h */,
 				32D790EC24D55D69006A2F69 /* TermsView.m */,
-				32CDA790253FD43100D3969F /* LoginWithRegView.h */,
-				32CDA791253FD43100D3969F /* LoginWithRegView.m */,
+				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
+				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
+				322CBC1F24C589A5000D6B20 /* widget */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1595,7 +1600,6 @@
 				32506CC324F920FA00010D7B /* SDImageCache.m in Sources */,
 				03FA12D42853565200BBBEB4 /* WelcomeBackView.m in Sources */,
 				3295E2E824DAEDDE00B85976 /* SDKRequest.m in Sources */,
-				032AB8C4285A006600F1FD3B /* NSString+GamaSStringAddition.m in Sources */,
 				32506C8324F920F900010D7B /* MASConstraintMaker.m in Sources */,
 				032AB8BC285A006600F1FD3B /* GamaFunction.m in Sources */,
 				032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */,
@@ -1634,6 +1638,7 @@
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
 				032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */,
 				3295E2FF24DAEDDE00B85976 /* SdkAutoLoginView.m in Sources */,
+				03669949285E26890008EB50 /* StringUtil.m in Sources */,
 				32506CB524F920FA00010D7B /* SDWebImageDecoder.m in Sources */,
 				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
 				32506CC724F920FA00010D7B /* NSData+ImageContentType.m in Sources */,
@@ -1655,6 +1660,7 @@
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				E98131A921831A0200819215 /* GamaTimer.m in Sources */,
 				032AB8C3285A006600F1FD3B /* GamaCfUUID.m in Sources */,
+				03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */,
 				32506CBF24F920FA00010D7B /* SDWebImageCompat.m in Sources */,
 				32506CBB24F920FA00010D7B /* UIImage+GIF.m in Sources */,
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
@@ -1684,7 +1690,7 @@
 				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* AppleLogin.m in Sources */,
 				32506C8F24F920F900010D7B /* MASViewAttribute.m in Sources */,
-				032AB8C1285A006600F1FD3B /* NSString+GamaURLEncoding.m in Sources */,
+				032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

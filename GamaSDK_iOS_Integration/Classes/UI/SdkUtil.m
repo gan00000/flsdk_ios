@@ -183,24 +183,47 @@
 }
 
 #pragma mark - Text Rule
-+ (BOOL)validUserName:(NSString *)userName
++ (BOOL)validUserName:(NSString *)accountName
 {
-    return [userName containsString:@"@"];
+//    return [userName containsString:@"@"];
 //    NSString *triStr = [userName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
 //
 //    NSString  *regex = @"@";
 //    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
 //
 //    return [pred evaluateWithObject:triStr];
+    
+    if (!accountName || [accountName isEqualToString:@""]) {
+        [SdkUtil toastMsg:GetString(@"py_account_empty")];
+        return NO;
+    }
+    
+    if (![accountName containsString:@"@"]) {
+        [SdkUtil toastMsg:GetString(@"text_account_format")];
+        return NO;
+    }
+    return YES;
+    
 }
 
 + (BOOL)validPwd:(NSString *)pwd
 {
-    NSString *triStr = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *regex = @"^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";//^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\W]).{8,16}$
-   
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
-    return [pred evaluateWithObject:triStr];
+    if (!pwd || [pwd isEqualToString:@""]) {
+        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        return NO;
+    }
+    
+    if (pwd.length < 6) {
+        [SdkUtil toastMsg:GetString(@"text_pwd_format")];
+        return NO;
+    }
+    return YES;
+    
+//    NSString *triStr = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+//    NSString *regex = @"^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";//^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\W]).{8,16}$
+//
+//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+//    return [pred evaluateWithObject:triStr];
 }
 
 + (BOOL)validEmail:(NSString *)email

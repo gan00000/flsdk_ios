@@ -19,6 +19,7 @@
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
 #import "SdkUtil.h"
+#import "StringUtil.h"
 
 
 #ifndef CCSkyHourHeader_h
@@ -128,6 +129,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_login_third     (@"api/user/thirdPartyLogin")
 #define api_login_register  (@"api/user/register")
 #define api_login_account   (@"api/user/login")
+#define api_forgot_pwd      (@"api/pwd/forgotPassword")
+#define api_get_vfCode      (@"api/vcode/sendEmailVcode")
 
 #endif /* CCSkyHourHeader_h */
 

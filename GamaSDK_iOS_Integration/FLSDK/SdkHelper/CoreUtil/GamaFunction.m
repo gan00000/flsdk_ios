@@ -6,7 +6,7 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import <AdSupport/AdSupport.h>//idfa用的类库
 #import "GamaCfUUID.h"//获取keychain中uuid用的自己的类
-#import "NSString+GamaURLEncoding.h"
+#import "NSString+URLEncoding.h"
 
 #import <sys/socket.h>
 #import <sys/sysctl.h>
@@ -316,7 +316,7 @@
                      result[8], result[9], result[10], result[11],
                      result[12], result[13], result[14], result[15]
                      ];
-    return [sign uppercaseString];
+    return [sign lowercaseString];
 }
 
 #pragma mark - 解析URL

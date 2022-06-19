@@ -46,7 +46,7 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"找回密碼" hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_forgot_pwd") hander:^(NSInteger) {
             
             [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_FIND_PWD) toPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
@@ -64,6 +64,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -77,7 +78,7 @@
         
         
         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitleText:@"發送驗證碼" fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
         
         
 //        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
@@ -209,13 +210,11 @@
         case kGetVfCodeActTag:
         {
             SDK_LOG(@"kGetVfCodeActTag");
-//            NSString *areaCode = [mPhoneView getPhoneAreaCode];
-//            NSString *phoneNum = [mPhoneView getPhoneNumber];
-//            if (!phoneNum || [@"" isEqualToString:phoneNum]) {
-//                [GamaUtils gamaToastWithMsg:@"請輸入電話號碼"];
-//                return;
-//            }
-//            [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
+            NSString *account = accountSDKTextFiledView.inputUITextField.text;
+            if (![SdkUtil validUserName:account]) {
+                return;
+            }
+            [self requestVfCodeByEmail:account];
         }
             break;
             
@@ -242,30 +241,63 @@
     NSString *phoneNum = @"";//[mPhoneView getPhoneNumber];
     NSString *vfCode = vfCodeFiledView.inputUITextField.text;
     
+    NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
+    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
     if (![SdkUtil validUserName:userName]) {
-        [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
         return;
     }
     
-    if ([@"" isEqualToString:vfCode]) {
+    if ([StringUtil isEmpty:vfCode]) {
+    
+        [SdkUtil toastMsg:GetString(@"py_vfcode_empty")];
+        return;
+    }
+    
+    if ([StringUtil isEmpty:newPwd]) {
+    
+        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        return;
+    }
+    
+    if ([StringUtil isEmpty:againPwd]) {
+    
+        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        return;
+    }
+    
+    if (![SdkUtil validPwd: newPwd] || ![SdkUtil validPwd: againPwd]) {
+       
+        return;
+    }
+    
+    if (![newPwd isEqualToString:againPwd]) {
+    
+        [SdkUtil toastMsg:GetString(@"text_pwd_not_equel")];
+        return;
+    }
+    
+    NSDictionary *otherParamsDic = nil;
+    @try {
+        otherParamsDic = @{
+            @"newPwd"        :[GamaFunction getMD5StrFromString:newPwd],
+        };
         
-        [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
-        return;
+    } @catch (NSException *exception) {
+        
     }
     
-    
-    [SDKRequest doRegetPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum vfCode:vfCode interfaces:@"4" otherParamsDic:nil successBlock:^(id responseData) {
+    [SDKRequest doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
         
         CCSDKResponse *cc = (CCSDKResponse *)responseData;
         //        [[ConfigCoreUtil share] saveAccount:userName password:@"" updateTime:NO];
 //        [[ConfigCoreUtil share] removeAccount:userName];
         //通知更新登录界面的数据
-        [AlertUtil showAlertWithMessage: cc.message];
+//        [AlertUtil showAlertWithMessage: cc.message];
         if (self.delegate) {
             [self.delegate changPasswordSuccess];
         }
-        [self removeFromSuperview];//返回登录界面
+//        [self removeFromSuperview];//返回登录界面
         
     } errorBlock:^(BJError *error) {
         [AlertUtil showAlertWithMessage:error.message];
@@ -273,11 +305,23 @@
     
 }
 
-- (void)requestPhoneVerficationWithPhoneArea:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
+- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
 {
     
     
-    [SDKRequest requestPhoneVerficationWithPhoneArea:phoneArea phoneNumber:phoneN  interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+    [SDKRequest requestVfCode:phoneArea phoneNumber:phoneN email:@"" interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+        [self downTime];
+        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
+    } errorBlock:^(BJError *error) {
+        [self resetVfCodeBtnStatue];
+        [AlertUtil showAlertWithMessage:error.message];
+    }];
+}
+
+- (void)requestVfCodeByEmail:(NSString *)email
+{
+    
+    [SDKRequest requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
         [self downTime];
     } errorBlock:^(BJError *error) {
         [self resetVfCodeBtnStatue];
@@ -324,7 +368,7 @@
         downTimer = nil;
     }
     getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle: @"獲取驗證碼" forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
 }
 
 - (void)dealloc

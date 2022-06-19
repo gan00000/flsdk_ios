@@ -1,8 +1,8 @@
 
 
-#import "NSString+GamaURLEncoding.h"
+#import "NSString+URLEncoding.h"
 
-@implementation NSString (GamaURLEncoding)
+@implementation NSString (URLEncoding)
 
 - (NSString *)gamaUrlEncodeString
 {
@@ -13,6 +13,7 @@
                                                         (CFStringRef)@";/?:@&=$+{}<>,",
                                                         kCFStringEncodingUTF8);
     return [result autorelease];
+
 }
 
 -(NSString *)gamaUrlDecodeString

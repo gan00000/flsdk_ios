@@ -44,7 +44,7 @@
 
 #pragma mark - TextField Rule
 // 字符验证
-+ (BOOL)validUserName:(NSString *)userName;
++ (BOOL)validUserName:(NSString *)accountName;
 + (BOOL)validPwd:(NSString *)pwd;
 + (BOOL)validEmail:(NSString *)email;
 + (BOOL)validPhone:(NSString *)phone phoneRegex:(NSString *)regex;
