@@ -4,7 +4,7 @@
 
 @implementation NSString (URLEncoding)
 
-- (NSString *)gamaUrlEncodeString
+- (NSString *)urlEncode
 {
     NSString *result =
     (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
@@ -16,7 +16,7 @@
 
 }
 
--(NSString *)gamaUrlDecodeString
+-(NSString *)urlDecode
 {
     NSString *result = (__bridge NSString *) CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
                                                                                          (__bridge CFStringRef) self,

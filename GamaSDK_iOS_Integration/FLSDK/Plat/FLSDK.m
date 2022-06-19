@@ -502,7 +502,7 @@ completionHandler:(PayCompletionHandler) handler
     BOOL roleIdExist = roleId && ![roleId isEqualToString:@""];
     if (serverCodeExist && roleIdExist) {
         NSString *sValue =[NSString stringWithFormat:@"%@||S||%@||S||%@",uid,serverCode,roleId];
-        [campaign appendFormat:@"campaign=%@",[sValue gamaUrlEncodeString]];
+        [campaign appendFormat:@"campaign=%@",[sValue urlEncode]];
     }
     
     if ([contentUrl rangeOfString:@"?"].location != NSNotFound) {

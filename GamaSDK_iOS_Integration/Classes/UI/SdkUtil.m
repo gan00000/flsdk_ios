@@ -154,7 +154,7 @@
             SDK_LOG(fullDicInfo);
             continue ;
         }
-        tmpVal = [tmpVal gamaUrlDecodeString];
+        tmpVal = [tmpVal urlDecode];
         
         [appendStr appendFormat:@"%@=%@&",
          key,

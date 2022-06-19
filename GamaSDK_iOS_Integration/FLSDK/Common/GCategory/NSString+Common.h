@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*)stringCutStringTo:(NSString *)cutString;
 - (NSString*)stringCutStringTo:(NSString *)cutString option:(NSStringCompareOptions)nsOption;
 - (NSString *)stringToMd5;
-//- (NSString *)urlEncodeString;
+- (NSString *)urlEncodeString;
 
 - (BOOL)isContainString:(NSString*)string;
 - (BOOL)isContainString:(NSString*)string withOption:(NSStringCompareOptions)options;

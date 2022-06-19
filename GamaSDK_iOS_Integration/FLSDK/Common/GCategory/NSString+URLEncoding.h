@@ -12,8 +12,8 @@
  *
  *	@return	URL转码以后的字符串
  */
-- (NSString *)gamaUrlEncodeString;
+- (NSString *)urlEncode;
 
-- (NSString *)gamaUrlDecodeString;
+- (NSString *)urlDecode;
 
 @end

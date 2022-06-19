@@ -210,8 +210,8 @@ static dispatch_once_t onceToken;
     //游戏传过来的信息
     [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
     [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
-    [resultURL appendFormat:@"roleName=%@&",[SdkUserInfoModel shareInfoModel].roleName.gamaUrlEncodeString];
-    [resultURL appendFormat:@"serverName=%@&",[SdkUserInfoModel shareInfoModel].serverName.gamaUrlEncodeString];
+    [resultURL appendFormat:@"roleName=%@&",[SdkUserInfoModel shareInfoModel].roleName.urlDecode];
+    [resultURL appendFormat:@"serverName=%@&",[SdkUserInfoModel shareInfoModel].serverName.urlEncode];
     if (Device_Is_Landscape) {
         [resultURL appendFormat:@"layout=%@&",@"transverse"];
     }else{

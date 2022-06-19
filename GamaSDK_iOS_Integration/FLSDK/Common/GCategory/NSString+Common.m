@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Common.h"
+#import "NSString+URLEncoding.h""
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (Common)
@@ -93,13 +94,15 @@
     return resultTimes;
 }
 
-//- (NSString *)urlEncodeString
-//{
+- (NSString *)urlEncodeString
+{
 //    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
 //                                                                           (CFStringRef)self,
 //                                                                           NULL,
 //                                                                           (CFStringRef)@";/?:@&=$+{}<>,",
 //                                                                           kCFStringEncodingUTF8);
 //    return result;
-//}
+    
+    return [self urlEncode];
+}
 @end

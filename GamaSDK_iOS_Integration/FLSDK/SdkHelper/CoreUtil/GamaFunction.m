@@ -364,7 +364,7 @@
 #pragma mark - URL转码
 +(NSString *)urlEcodingFromString:(NSString *)aString
 {
-    return [aString gamaUrlEncodeString];
+    return [aString urlEncode];
 }
 
 
