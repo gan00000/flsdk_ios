@@ -47,7 +47,7 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_update_account") hander:^(NSInteger) {
             
             [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
