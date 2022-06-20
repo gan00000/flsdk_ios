@@ -210,11 +210,8 @@
 		E974129020874A170018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		E974129520874A170018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
 		E97412F02088580A0018E1A6 /* GamaSDK+GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */; };
-		E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */; };
-		E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411D820874A170018E1A6 /* GamaNetEngine.m */; };
 		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E98131A921831A0200819215 /* GamaTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98131A7218319E900819215 /* GamaTimer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
 		E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Gama.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -602,9 +599,6 @@
 		E97411CE20874A170018E1A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E97411D020874A170018E1A6 /* GamaSDK+GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+GameCenter.h"; sourceTree = "<group>"; };
 		E97411D120874A170018E1A6 /* GamaSDK+GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+GameCenter.m"; sourceTree = "<group>"; };
-		E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaNetEngine+ThirdPlatformRequest.m"; sourceTree = "<group>"; };
-		E97411D720874A170018E1A6 /* GamaNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaNetEngine.h; sourceTree = "<group>"; };
-		E97411D820874A170018E1A6 /* GamaNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaNetEngine.m; sourceTree = "<group>"; };
 		E97411DA20874A170018E1A6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E974126A20874A170018E1A6 /* FLSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSDK.h; sourceTree = "<group>"; };
 		E974126B20874A170018E1A6 /* FLSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSDK.m; sourceTree = "<group>"; };
@@ -614,8 +608,6 @@
 		E974127B20874A170018E1A6 /* HelloWidgetConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWidgetConstant.h; sourceTree = "<group>"; };
 		E974127E20874A170018E1A6 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		E974127F20874A170018E1A6 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
-		E98131A6218319E900819215 /* GamaTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaTimer.h; sourceTree = "<group>"; };
-		E98131A7218319E900819215 /* GamaTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaTimer.m; sourceTree = "<group>"; };
 		E98E851F23825AB700257BDE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		E98E852023825BCD00257BDE /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		E991437C238288ED00E37E3F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -1422,11 +1414,6 @@
 		E97411D520874A170018E1A6 /* NetEngine */ = {
 			isa = PBXGroup;
 			children = (
-				E97411D620874A170018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m */,
-				E98131A6218319E900819215 /* GamaTimer.h */,
-				E98131A7218319E900819215 /* GamaTimer.m */,
-				E97411D720874A170018E1A6 /* GamaNetEngine.h */,
-				E97411D820874A170018E1A6 /* GamaNetEngine.m */,
 				E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */,
 				E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */,
 			);
@@ -1666,7 +1653,6 @@
 				E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */,
 				32506CC924F920FA00010D7B /* UIImageView+WebCache.m in Sources */,
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
-				E98131A921831A0200819215 /* GamaTimer.m in Sources */,
 				032AB8C3285A006600F1FD3B /* GamaCfUUID.m in Sources */,
 				03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */,
 				32506CBF24F920FA00010D7B /* SDWebImageCompat.m in Sources */,
@@ -1674,14 +1660,12 @@
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
 				32506C7F24F920F900010D7B /* ViewController+MASAdditions.m in Sources */,
 				E9DC839821BF9F750035F8CA /* UIScreen+Gama.m in Sources */,
-				E97412F22088580A0018E1A6 /* GamaNetEngine.m in Sources */,
 				032AB8BF285A006600F1FD3B /* UIAlertController+Gama.m in Sources */,
 				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
 				E97412F02088580A0018E1A6 /* GamaSDK+GameCenter.m in Sources */,
 				32506C7D24F920F900010D7B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
 				32506CCB24F920FA00010D7B /* UIView+WebCacheOperation.m in Sources */,
-				E97412F12088580A0018E1A6 /* GamaNetEngine+ThirdPlatformRequest.m in Sources */,
 				00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */,
 				032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */,
 				00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */,

@@ -56,7 +56,6 @@
 #import "GamaAdInterface.h"
 #import "GamaSDK+Social.h"
 #import "GamaWebViewController.h"
-#import "GamaTimer.h"
 //#import "NSString+GamaURLEncoding.h"
 //#import "KRAgeSystemView.h"
 #import "SDKLoginViewController.h"
@@ -355,7 +354,7 @@ serverName:(NSString *)serverName
                        ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
     }];
      */
-    [GamaTimer gama_UserRetentionEvent];
+//    [GamaTimer gama_UserRetentionEvent];
 
 }
 

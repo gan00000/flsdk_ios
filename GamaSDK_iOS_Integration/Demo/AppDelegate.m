@@ -12,8 +12,6 @@
 #import "ConfigHeader.h"
 #import "FLSDK.h"
 
-#import "GamaTimer.h"
-
 #import "Firebase.h"
 
 @interface AppDelegate ()

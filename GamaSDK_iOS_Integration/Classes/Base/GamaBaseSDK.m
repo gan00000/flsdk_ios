@@ -6,8 +6,6 @@
 #import "ConfigHeader.h"
 #import "GamaFunction.h"
 #import "SdkUserInfoModel.h"
-#import "GamaTimer.h"
-//#import "KRTwitterLogin.h"
 #import "GamaAdInterface.h"
 #import "GamaPhoneModel.h"
 #import "GamaCommonHeader.h"
@@ -38,7 +36,7 @@
     }];
     
     //Facebook事件打点初始化
-    [[GamaTimer shareInstance] gama_FBEventStartTimer];
+//    [[GamaTimer shareInstance] gama_FBEventStartTimer];
     
     [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_OPEN parameters:nil];
     
@@ -99,9 +97,7 @@
 
 + (void)_applicationWillEnterForeground:(UIApplication *)application
 {
-    if([SdkUserInfoModel shareInfoModel].userId){
-        [GamaTimer setStartTimeStamp];
-    }
+   
 }
 
 #pragma mark DB : AD Purchases

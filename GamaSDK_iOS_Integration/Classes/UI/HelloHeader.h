@@ -19,7 +19,6 @@
 #import "GamaCommonHeader.h"
 #import "SdkUserInfoModel.h"
 #import "GamaSecurityFunction.h"
-#import "GamaNetEngine.h"
 #import "SdkHeader.h"
 
 // -- Notes name
