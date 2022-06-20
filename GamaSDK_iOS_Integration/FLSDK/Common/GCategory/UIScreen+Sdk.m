@@ -6,9 +6,9 @@
 //  Copyright © 2018年 starpy. All rights reserved.
 //
 
-#import "UIScreen+Gama.h"
+#import "UIScreen+Sdk.h"
 
-@implementation UIScreen (Gama)
+@implementation UIScreen (Sdk)
 + (CGFloat)gama_screenScale {
     static CGFloat screenScale = 0.0;
     static dispatch_once_t onceToken;

@@ -612,10 +612,7 @@ completionHandler:(PayCompletionHandler) handler
         [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_SHARE_RESULT
                                                             object:nil
                                                           userInfo:note.userInfo];
-    }else if([noteName isEqualToString:GAMA_BIND_PHONE_RESULT]){
-        //[FLSDK share].result(note.userInfo, nil);
-    }
-    else {
+    }else {
         return;
     }
 }
