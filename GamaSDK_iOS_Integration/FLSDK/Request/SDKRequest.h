@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKRequest : NSObject
 
++(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
+                         errorBlock:(BJServiceErrorBlock)errorBlock;
+
 +(void)freeLoginOrRegisterWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                                 errorBlock:(BJServiceErrorBlock)errorBlock;
 

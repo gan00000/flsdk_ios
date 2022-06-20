@@ -198,26 +198,26 @@
         
     }else if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
-        NSArray<AccountModel *> *accounts = [[ConfigCoreUtil share] getAccountModels];
-        if (!accounts || accounts.count == 0) {
-            [self switchAccount];
-            return;
-        }
-        kWeakSelf
-        NSString *accountName = accounts[0].account;
-        NSString *pwd = accounts[0].password;
-        [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
-            
-            if (weakSelf.delegate) {
-                LoginResponse *cc = (LoginResponse *)responseData;
-                cc.data.account = accountName;
-                cc.data.password = pwd;
-                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
-            }
-            
-        } errorBlock:^(BJError *error) {
-            [AlertUtil showAlertWithMessage:error.message];
-        }];
+//        NSArray<AccountModel *> *accounts = [[ConfigCoreUtil share] getAccountModels];
+//        if (!accounts || accounts.count == 0) {
+//            [self switchAccount];
+//            return;
+//        }
+//        kWeakSelf
+//        NSString *accountName = accounts[0].account;
+//        NSString *pwd = accounts[0].password;
+//        [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
+//
+//            if (weakSelf.delegate) {
+//                LoginResponse *cc = (LoginResponse *)responseData;
+//                cc.data.account = accountName;
+//                cc.data.password = pwd;
+//                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+//            }
+//
+//        } errorBlock:^(BJError *error) {
+//            [AlertUtil showAlertWithMessage:error.message];
+//        }];
         
     }
 }

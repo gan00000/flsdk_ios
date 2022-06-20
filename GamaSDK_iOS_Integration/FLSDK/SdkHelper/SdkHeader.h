@@ -105,6 +105,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define kRegTabActTag    36
 #define kAgreeTermsCheckBoxBtnTag     37
 #define kSwitchAccountActTag    38
+#define kGoGameActTag     39
 
 #define fbLoginActTag       2000
 #define googleLoginActTag   2001

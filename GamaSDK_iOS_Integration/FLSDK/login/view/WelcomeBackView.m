@@ -24,6 +24,7 @@
 #import "TermsView.h"
 #import "AccountLoginView.h"
 #import "AccountListView.h"
+#import "SDKRequest.h"
 
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
@@ -149,7 +150,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
        
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText:GetString(@"text_go_game") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText:GetString(@"text_go_game") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kGoGameActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(25)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
@@ -201,7 +202,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             make.width.mas_equalTo(VW(140));
         }];
         
-        [self addDeleteAccountView];
+        if (SDK_DATA.mConfigModel.delectAccount) {
+            [self addDeleteAccountView];
+        }
+        
         
         isSaveAccountInfo = YES;
         accountDataList = [NSMutableArray array];//账号列表数据
@@ -383,9 +387,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             }
             break;
         
-        case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
-            
+        case kGoGameActTag:
+            SDK_LOG(@"kGoGameActTag");
+            [self goGame];
             break;
             
         case kSwitchAccountActTag:
@@ -398,6 +402,43 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             break;
     }
     
+}
+
+
+
+-(void) goGame
+{
+    if (!currentAccountModel) {
+        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        return;
+    }
+    if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+        kWeakSelf
+        [SDKRequest doLoginWithAccount:currentAccountModel.account andPassword:currentAccountModel.password otherDic:nil successBlock:^(id responseData) {
+            
+            if (weakSelf.delegate) {
+                LoginResponse *cc = (LoginResponse *)responseData;
+                cc.data.account = currentAccountModel.account;
+                cc.data.password = currentAccountModel.password;
+                cc.data.loginType = LOGIN_TYPE_SELF;
+                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+            }
+            
+        } errorBlock:^(BJError *error) {
+            [AlertUtil showAlertWithMessage:error.message];
+        }];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+        
+    }
 }
 
 -(void) doAppleLogin
@@ -432,48 +473,5 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     }];
     [gamaAppleLogin handleAuthrization:nil];
 }
-
--(void) requestAccountLogin
-{
-    
-    NSString *accountName = [SdkUtil triString:accountSDKTextFiledView.inputUITextField.text];
-    NSString *pwd = @"";//[GamaUtils triString:passwordSDKTextFiledView.inputUITextField.text];
-    
-        
-    if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
-        return;
-    }
-    
-    if (![SdkUtil validUserName:accountName]) {
-        [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
-        return;
-    }
-    
-    if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD")];
-        return;
-    }
-//    if (GamaLoginViewModel.model.vfConfig == YES){
-//        if(vfTF.text.length<1){
-//            [GamaUtils gamaToastWithMsg:GetString(@"GAMA_LOGIN_CAPTCH_PLACEHOLDER")];
-//            return;
-//        }
-//    }
-    kWeakSelf
-    [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
-        
-        if (weakSelf.delegate) {
-            LoginResponse *cc = (LoginResponse *)responseData;
-            cc.data.account = accountName;
-            cc.data.password = pwd;
-            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
-        }
-        
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
-    }];
-}
-
 
 @end
