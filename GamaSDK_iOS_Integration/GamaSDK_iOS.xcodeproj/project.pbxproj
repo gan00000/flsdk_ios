@@ -74,6 +74,8 @@
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
+		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
+		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
@@ -136,7 +138,7 @@
 		3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F724DAEDDE00B85976 /* CCSDKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* CCSDKResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* LoginButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -324,6 +326,10 @@
 		03669945285DBF3A0008EB50 /* NSString+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		03669947285E26890008EB50 /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		03669948285E26890008EB50 /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		03B918DC286029050029AE6A /* ConfigResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigResponse.h; sourceTree = "<group>"; };
+		03B918DD286029050029AE6A /* ConfigResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigResponse.m; sourceTree = "<group>"; };
+		03B918DF286029670029AE6A /* ConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigModel.h; sourceTree = "<group>"; };
+		03B918E0286029670029AE6A /* ConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigModel.m; sourceTree = "<group>"; };
 		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
@@ -382,10 +388,10 @@
 		322CBC0024C589A5000D6B20 /* BJError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJError.h; sourceTree = "<group>"; };
 		322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJBaseResponceModel.m; sourceTree = "<group>"; };
 		322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJBaseHTTPEngine.m; sourceTree = "<group>"; };
-		322CBC0524C589A5000D6B20 /* CCSDKResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSDKResponse.m; sourceTree = "<group>"; };
+		322CBC0524C589A5000D6B20 /* LoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
 		322CBC0624C589A5000D6B20 /* CCSDKDATA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSDKDATA.h; sourceTree = "<group>"; };
 		322CBC0724C589A5000D6B20 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
-		322CBC0824C589A5000D6B20 /* CCSDKResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSDKResponse.h; sourceTree = "<group>"; };
+		322CBC0824C589A5000D6B20 /* LoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
 		322CBC0924C589A5000D6B20 /* CCSDKDATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSDKDATA.m; sourceTree = "<group>"; };
 		322CBC0A24C589A5000D6B20 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		322CBC0C24C589A5000D6B20 /* ConfigCoreUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCoreUtil.h; sourceTree = "<group>"; };
@@ -1052,8 +1058,12 @@
 				322CBC0A24C589A5000D6B20 /* AccountModel.m */,
 				322CBC0624C589A5000D6B20 /* CCSDKDATA.h */,
 				322CBC0924C589A5000D6B20 /* CCSDKDATA.m */,
-				322CBC0824C589A5000D6B20 /* CCSDKResponse.h */,
-				322CBC0524C589A5000D6B20 /* CCSDKResponse.m */,
+				322CBC0824C589A5000D6B20 /* LoginResponse.h */,
+				322CBC0524C589A5000D6B20 /* LoginResponse.m */,
+				03B918DC286029050029AE6A /* ConfigResponse.h */,
+				03B918DD286029050029AE6A /* ConfigResponse.m */,
+				03B918DF286029670029AE6A /* ConfigModel.h */,
+				03B918E0286029670029AE6A /* ConfigModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1608,6 +1618,7 @@
 				03650195285C761600578028 /* SDKBaseView.m in Sources */,
 				032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */,
 				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
+				03B918DE286029050029AE6A /* ConfigResponse.m in Sources */,
 				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
 				3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */,
 				3295E2EE24DAEDDE00B85976 /* AFURLResponseSerialization.m in Sources */,
@@ -1615,6 +1626,7 @@
 				32506CB324F920FA00010D7B /* SDWebImageManager.m in Sources */,
 				3295E2F024DAEDDE00B85976 /* AFURLSessionManager.m in Sources */,
 				3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */,
+				03B918E1286029670029AE6A /* ConfigModel.m in Sources */,
 				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
 				032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */,
 				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
@@ -1623,7 +1635,7 @@
 				3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */,
 				3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */,
 				32506CB924F920FA00010D7B /* SDWebImageDownloader.m in Sources */,
-				3295E2F724DAEDDE00B85976 /* CCSDKResponse.m in Sources */,
+				3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */,
 				3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */,
 				3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */,
 				032AB8C2285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m in Sources */,

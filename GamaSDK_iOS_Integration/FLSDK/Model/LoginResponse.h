@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CCSDKResponse : BJBaseResponceModel
+@interface LoginResponse : BJBaseResponceModel
 
 //@property (nonatomic, assign) NSInteger code;
 //@property (nonatomic, copy) NSString *beLinked;

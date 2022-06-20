@@ -10,7 +10,8 @@
 #import "HttpServiceEngineLogin.h"
 #import "HttpServiceEngineAd.h"
 #import "SdkHeader.h"
-#import "CCSDKResponse.h"
+#import "LoginResponse.h"
+#import "ConfigResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

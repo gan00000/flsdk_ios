@@ -40,7 +40,7 @@ static dispatch_once_t onceToken;
     self=[super init];
     if (self)
     {
-        self.isSaveAccountInfo = YES;
+        
     }
     return self;
 }

@@ -68,7 +68,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     if (self) {
     
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"歡迎回來" hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_welcome_back") hander:^(NSInteger) {
             
 //            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
         }];
@@ -201,8 +201,6 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         
         
    
-        
-        [ConfigCoreUtil share].isSaveAccountInfo = YES;
         isSaveAccountInfo = YES;
         accountDataList = [NSMutableArray array];//账号列表数据
         
@@ -333,14 +331,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     switch (sender.tag) {
         case kCheckBoxBtnTag:
             SDK_LOG(@"kCheckBoxBtnTag");
-//            isSaveAccountInfo = !isSaveAccountInfo;
-//            [ConfigCoreUtil share].isSaveAccountInfo = isSaveAccountInfo;
-//            if (isSaveAccountInfo) {
-//                //checkBoxBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_checked.png" highlightedImage:nil tag:kCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
-//                [checkBoxBtn setImage:GetImage(@"btn_checkbox_checked.png") forState:UIControlStateNormal];
-//            }else{
-//                [checkBoxBtn setImage:GetImage(@"btn_checkbox_uncheck.png") forState:UIControlStateNormal];
-//            }
+
             break;
             
         case kFindPwdActTag:
@@ -530,7 +521,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
         
         if (weakSelf.delegate) {
-            CCSDKResponse *cc = (CCSDKResponse *)responseData;
+            LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = accountName;
             cc.data.password = pwd;
             [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];

@@ -39,7 +39,14 @@
 - (void)initData
 {
     self.isNeedAutoLogin = YES;
-   
+    ConfigModel *mcm = [[ConfigModel alloc] init];
+    mcm.visitorLogin = YES;
+    mcm.fbLogin = YES;
+    mcm.googleLogin = YES;
+    mcm.lineLogin = YES;
+    mcm.appleLogin = YES;
+    mcm.delectAccount = NO;
+    self.mConfigModel = mcm;
 }
 
 

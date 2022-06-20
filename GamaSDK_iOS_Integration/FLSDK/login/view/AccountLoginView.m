@@ -289,8 +289,6 @@
         leadingView = lineBtn;
         
         
-        [ConfigCoreUtil share].isSaveAccountInfo = YES;
-        
         accountDataList = [NSMutableArray array];//账号列表数据
         
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
@@ -579,7 +577,7 @@
     [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
         
         if (weakSelf.delegate) {
-            CCSDKResponse *cc = (CCSDKResponse *)responseData;
+            LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = accountName;
             cc.data.password = pwd;
             cc.data.loginType = LOGIN_TYPE_SELF;

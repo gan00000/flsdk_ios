@@ -6,9 +6,9 @@
 //  Copyright © 2019 ganyuanrong. All rights reserved.
 //
 
-#import "CCSDKResponse.h"
+#import "LoginResponse.h"
 
-@implementation CCSDKResponse
+@implementation LoginResponse
 
 
 

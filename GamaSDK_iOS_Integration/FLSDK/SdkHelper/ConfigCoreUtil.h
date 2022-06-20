@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (ConfigCoreUtil *)share;
 
-@property (nonatomic) BOOL isSaveAccountInfo;
+//@property (nonatomic) BOOL isSaveAccountInfo;
 
 -(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime;
 

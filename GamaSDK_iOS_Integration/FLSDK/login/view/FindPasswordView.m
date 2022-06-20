@@ -289,7 +289,7 @@
     
     [SDKRequest doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
         
-        CCSDKResponse *cc = (CCSDKResponse *)responseData;
+        LoginResponse *cc = (LoginResponse *)responseData;
         //        [[ConfigCoreUtil share] saveAccount:userName password:@"" updateTime:NO];
 //        [[ConfigCoreUtil share] removeAccount:userName];
         //通知更新登录界面的数据

@@ -62,7 +62,7 @@
             NSDictionary *responseDict = responseData;
             
     //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
-            CCSDKResponse *mCCSDKResponse = [CCSDKResponse yy_modelWithDictionary:responseData];
+            LoginResponse *mCCSDKResponse = [LoginResponse yy_modelWithDictionary:responseData];
             if ([mCCSDKResponse isRequestSuccess]) {
                 if (successBlock) {
                     successBlock(mCCSDKResponse);

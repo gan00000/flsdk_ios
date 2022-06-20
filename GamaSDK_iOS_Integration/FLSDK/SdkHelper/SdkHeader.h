@@ -12,7 +12,7 @@
 #import "UIUtil.h"
 #import "CCSDKDATA.h"
 #import "ConfigCoreUtil.h"
-#import "CCSDKResponse.h"
+#import "LoginResponse.h"
 #import "CComHeader.h" //最基本
 #import "GamaFunction.h"  //功能相关
 #import "ConfigHeader.h" //功能相关
@@ -44,7 +44,7 @@
 #define ContentViewBgColor                    @"#f4f4f5"
 
 
-//#define SDK_DATA                           [CCSDKDATA sharedSdkData]
+#define SDK_DATA                           [CCSDKDATA sharedSdkData]
 
 #define LABEL_FONT_NAME_BOLD                 @"Helvetica-Bold"
 #define LABEL_FONT_NAME_Helvetica           @"Helvetica"

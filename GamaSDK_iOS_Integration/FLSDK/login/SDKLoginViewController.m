@@ -16,7 +16,7 @@
 #import "FindPasswordView.h"
 #import "SelectLoginTypeView.h"
 #import "YYModel.h"
-#import "CCSDKResponse.h"
+#import "LoginResponse.h"
 #import "AccountModel.h"
 #import "Masonry.h"
 #import "TermsView.h"
@@ -29,7 +29,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @implementation SDKLoginViewController{
-    SelectLoginTypeView *mSelectLoginTypeView;
+    WelcomeBackView *mWelcomeBackView;
     
     SDKPage sdkPageType;
     
@@ -162,7 +162,13 @@
     //         [self addMainLoginView];
     //    }
     
-    [self addHomeView];
+    NSMutableArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels];
+    if (accountModels && accountModels.count > 0) {
+        [self addWelcomeView];
+    }else{
+        [self addHomeView];
+    }
+    
 }
 
 -(UIView *) sdkContentView
@@ -192,14 +198,14 @@
     [self addSubSdkLoginView:mLoginWithRegView];
 }
 
-//-(void)addSelectLoginTypeView
-//{
-//    //移除所有子视图
-//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//
-//    mSelectLoginTypeView = [[SelectLoginTypeView alloc] initView];
-//    [self addSubSdkLoginView:mSelectLoginTypeView];
-//}
+-(void)addWelcomeView
+{
+    //移除所有子视图
+    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+    mWelcomeBackView = [[WelcomeBackView alloc] initView];
+    [self addSubSdkLoginView:mWelcomeBackView];
+}
 
 
 -(SDKBaseView *)addTermsView//服務條款
@@ -434,7 +440,7 @@
 
 -(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate
 {
-    CCSDKResponse *loginResopnse = (CCSDKResponse *)responseData;
+    LoginResponse *loginResopnse = (LoginResponse *)responseData;
     AccountModel *rData = loginResopnse.data;
     rData.loginType = thirdPlate;
     

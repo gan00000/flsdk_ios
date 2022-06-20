@@ -338,7 +338,7 @@
                                   thirdPlate:LOGIN_TYPE_GUEST
                               otherParamsDic:nil
                                 successBlock:^(id responseData) {
-        CCSDKResponse *cc = (CCSDKResponse *)responseData;
+        LoginResponse *cc = (LoginResponse *)responseData;
          [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
         [AlertUtil showAlertWithMessage:cc.message];
         
@@ -378,7 +378,7 @@
                                       thirdPlate:LOGIN_TYPE_APPLE
                                   otherParamsDic:tempMutableDic
                                     successBlock:^(id responseData) {
-            CCSDKResponse *cc = (CCSDKResponse *)responseData;
+            LoginResponse *cc = (LoginResponse *)responseData;
              [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
             [AlertUtil showAlertWithMessage:cc.message];
             
@@ -471,7 +471,7 @@
                                  successBlock:^(id responseData) {
         
         if (self.delegate) {
-            CCSDKResponse *cc = (CCSDKResponse *)responseData;
+            LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = name;
             cc.data.password = password;
             

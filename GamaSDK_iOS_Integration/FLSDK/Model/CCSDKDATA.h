@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CCSDKResponse.h"
+#import "LoginResponse.h"
+#import "ConfigModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CCSDKDATA : NSObject
 
-@property (nonatomic, strong)CCSDKResponse *mCCSDKResponse;
+@property (nonatomic, strong)LoginResponse *mLoginResponse;
+@property (nonatomic, strong)ConfigModel *mConfigModel;
 
 @property (nonatomic,assign) BOOL isNeedAutoLogin;
 

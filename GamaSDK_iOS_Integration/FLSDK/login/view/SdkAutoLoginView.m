@@ -209,7 +209,7 @@
         [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
             
             if (weakSelf.delegate) {
-                CCSDKResponse *cc = (CCSDKResponse *)responseData;
+                LoginResponse *cc = (LoginResponse *)responseData;
                 cc.data.account = accountName;
                 cc.data.password = pwd;
                 [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];

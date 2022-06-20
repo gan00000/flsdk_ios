@@ -13,6 +13,7 @@
 #import "LoginViewDelegate.h"
 #import "FLSDK.h"
 #import "SDKBaseView.h"
+#import "WelcomeBackView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

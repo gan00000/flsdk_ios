@@ -164,7 +164,7 @@
             }
         
             [SDKRequest doChangePasswordWithUserName:userName andOldPassword:oldPassword andNewPassword:newPassword otherParamsDic:nil successBlock:^(id responseData) {
-                CCSDKResponse *cc = (CCSDKResponse *)responseData;
+                LoginResponse *cc = (LoginResponse *)responseData;
                 [[ConfigCoreUtil share] saveAccount:userName password:newPassword updateTime:NO];
                 //通知更新登录界面的数据
                 [AlertUtil showAlertWithMessage: cc.message];

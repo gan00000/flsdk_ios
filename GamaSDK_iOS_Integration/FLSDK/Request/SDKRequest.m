@@ -7,9 +7,56 @@
 //
 
 #import "SDKRequest.h"
+#import "CCSDKDATA.h"
 
 
 @implementation SDKRequest
+
+//https://www.meowplayer.com/sdk/config/jjcs/v1/version.json
+#pragma mark - 获取登录配置
++(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
+                                errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:@"https://www.meowplayer.com/"];
+    [configHTTPEngine getRequestWithFunctionPath:@"sdk/config/jjcs/v1/version.json" params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+        
+        NSDictionary *responseDict = responseData;
+        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
+        if (mCr) {
+            if (successBlock) {
+                successBlock(mCr);
+            }
+            
+            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[GamaFunction getBundleIdentifier]]) {//先匹配所有版本开关
+                SDK_DATA.mConfigModel = mCr.allVersion;
+                return;
+            }else if (mCr.subVersion){
+                
+                for (ConfigModel *cm in mCr.subVersion) {
+                    
+                    if ([cm.version isEqualToString:[GamaFunction getBundleVersion]] && [cm.packageName isEqualToString:[GamaFunction getBundleIdentifier]]) {//匹配子版本开关
+                        SDK_DATA.mConfigModel = cm;
+                        return;
+                    }
+                }
+            }
+            
+            
+//            [CCSDKDATA sharedSdkData].mConfigModel = mCr.
+        }else {
+//            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
+            if (errorBlock) {
+                errorBlock(nil);
+            }
+        }
+        
+    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
 
 #pragma mark - 免注册
 +(void)freeLoginOrRegisterWithSuccessBlock:(BJServiceSuccessBlock)successBlock
