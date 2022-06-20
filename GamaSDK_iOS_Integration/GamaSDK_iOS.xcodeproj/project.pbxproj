@@ -204,7 +204,6 @@
 		E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97411C020874A170018E1A6 /* Default-iOS11-812h@3x.png */; };
 		E974128B20874A170018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
-		E974128E20874A170018E1A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97411CA20874A170018E1A6 /* Images.xcassets */; };
 		E974128F20874A170018E1A6 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
 		E974129020874A170018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		E974129520874A170018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
@@ -591,7 +590,6 @@
 		E97411C520874A170018E1A6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E97411C820874A170018E1A6 /* IAP_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAP_ViewController.h; sourceTree = "<group>"; };
 		E97411C920874A170018E1A6 /* IAP_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAP_ViewController.m; sourceTree = "<group>"; };
-		E97411CA20874A170018E1A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E97411CB20874A170018E1A6 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		E97411CC20874A170018E1A6 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		E97411CD20874A170018E1A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -1390,7 +1388,6 @@
 				E97411C020874A170018E1A6 /* Default-iOS11-812h@3x.png */,
 				E97411C820874A170018E1A6 /* IAP_ViewController.h */,
 				E97411C920874A170018E1A6 /* IAP_ViewController.m */,
-				E97411CA20874A170018E1A6 /* Images.xcassets */,
 				E956BC79211D768F006D9E4C /* Images.xcassets */,
 				32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */,
 				E97411DA20874A170018E1A6 /* main.m */,
@@ -1559,7 +1556,6 @@
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */,
 				E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */,
-				E974128E20874A170018E1A6 /* Images.xcassets in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
