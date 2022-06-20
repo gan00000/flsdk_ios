@@ -202,7 +202,11 @@
         case kBackBtnActTag:
             
             if (self.delegate) {
-                [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+                
+                if (self.fromPage && self.fromPage != CURRENT_PAGE_TYPE_NULL) {
+                    [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:self.fromPage];
+                }
+               
             }
             
             

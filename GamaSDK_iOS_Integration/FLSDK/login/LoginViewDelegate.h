@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol LoginViewDelegate <NSObject>
 
 -(void)goPageView:(CURRENT_PAGE_TYPE) toPage;
--(void)goPageView:(CURRENT_PAGE_TYPE) toPage from:(CURRENT_PAGE_TYPE)fromPage param:(NSInteger) p;
+-(void)goPageView:(CURRENT_PAGE_TYPE) toPage from:(CURRENT_PAGE_TYPE)fromPage param:(id) obj;
 
 -(void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count fromPage:(CURRENT_PAGE_TYPE) fromPage toPage:(CURRENT_PAGE_TYPE) toPage;
 

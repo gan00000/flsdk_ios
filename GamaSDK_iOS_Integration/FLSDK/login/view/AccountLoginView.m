@@ -598,33 +598,40 @@
     NSString *account = mAccountModel.userId;
     NSString *iconName = @"mw_smail_icon";
     NSString *pwdText = GetString(@"text_free_register");
+    
+    BOOL pwdEnable = YES;
+    
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
         iconName = @"mw_smail_icon";
         pwdText = mAccountModel.password;
-        [pwdFiledView setPwdFiledView:YES];
-        pwdFiledView.inputUITextField.text = mAccountModel.password;
+        pwdEnable = YES;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
         iconName = @"fb_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
+        pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
         iconName = @"google_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
+        pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
         iconName = @"guest_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
+        pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
         iconName = @"mw_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
+        pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = @"line_smail_icon";
-        [pwdFiledView setPwdFiledView:NO];
+        pwdEnable = NO;
     }
     
     accountFiledView.inputUITextField.text = account;
     accountFiledView.lableIconImageView.image = [UIImage gama_imageNamed:iconName];
+    
+    if (pwdFiledView) {
+        [pwdFiledView setPwdFiledView:pwdEnable];
+        pwdFiledView.inputUITextField.text = pwdText;
+    }
     
 }
 

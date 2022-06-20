@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
+@property(nonatomic) id fromPageParam;
 
 @end
 

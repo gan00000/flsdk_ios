@@ -253,19 +253,7 @@
         [SdkUtil toastMsg:GetString(@"py_vfcode_empty")];
         return;
     }
-    
-    if ([StringUtil isEmpty:newPwd]) {
-    
-        [SdkUtil toastMsg:GetString(@"py_password_empty")];
-        return;
-    }
-    
-    if ([StringUtil isEmpty:againPwd]) {
-    
-        [SdkUtil toastMsg:GetString(@"py_password_empty")];
-        return;
-    }
-    
+        
     if (![SdkUtil validPwd: newPwd] || ![SdkUtil validPwd: againPwd]) {
        
         return;

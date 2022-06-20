@@ -60,9 +60,9 @@
     //        make.height.mas_equalTo(self);
     //    }];
     
-    UIButton *backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon.png" highlightedImage:@"mw_back_icon.png" tag:kBackBtnActTag selector:@selector(backBtnView:) target:self];
-    [self addSubview:backBtn];
-    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    _backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon.png" highlightedImage:@"mw_back_icon.png" tag:kBackBtnActTag selector:@selector(backBtnView:) target:self];
+    [self addSubview:_backBtn];
+    [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(self).mas_offset(VW(34));
         make.width.mas_equalTo(VH(25));
         make.centerY.equalTo(self);

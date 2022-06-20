@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - UI
 
++(UIImageView*)initImageViewWithImage:(NSString *)imageName;
+
 +(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor*)textColor;
 
 + (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName

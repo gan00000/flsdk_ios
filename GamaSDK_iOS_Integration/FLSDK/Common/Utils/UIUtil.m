@@ -13,6 +13,14 @@
 
 #pragma mark - UI
 
++(UIImageView*)initImageViewWithImage:(NSString *)imageName
+{
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:GetImage(imageName)];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    return imageView;
+}
+
 +(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor *)textColor
 {
     UILabel *mLable = [[UILabel alloc] init];
@@ -41,7 +49,7 @@
     
     [btn setTag:tag];
     if (titleText) {
-        [btn setTitle:titleText forState:0];
+        [btn setTitle:titleText forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:size]; //VH(14)
         
         [btn setTitleColor:textColor forState:UIControlStateNormal];

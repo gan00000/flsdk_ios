@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LoginTitleView : SDKBaseView
 
 @property (nonatomic,strong) UILabel *titleLable;
+@property (nonatomic,strong) UIButton *backBtn;
 
 - (instancetype)initViewWithTitle:(NSString *)title hander:(ItemViewClickHander) hander;
 

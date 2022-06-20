@@ -1,26 +1,36 @@
 //
-//  ChangePasswordView.m
+//  FindPasswordView.m
 //  R2DSDK
 //
-//  Created by ganyuanrong on 2020/7/13.
+//  Created by ganyuanrong on 2020/7/14.
 //  Copyright © 2020 ganyuanrong. All rights reserved.
 //
 
 #import "ChangePasswordView.h"
 #import "SdkHeader.h"
-#import "LoginTitleView.h"
 #import "SDKTextFiledView.h"
+#import "LoginTitleView.h"
 #import "PhoneView.h"
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "SdkUtil.h"
 
 @implementation ChangePasswordView
+
 {
-    SDKTextFiledView *accountSDKTextFiledView;
-    SDKTextFiledView *oldPasswordSDKTextFiledView;
-    SDKTextFiledView *newPasswordSDKTextFiledView;
-    LoginTitleView *mLoginTitleView;
+    SDKTextFiledView *oldPwdSDKTextFiledView;
+    SDKTextFiledView *newPwdSDKTextFiledView;
+    SDKTextFiledView *againPwdSDKTextFiledView;
+    
+//    SDKTextFiledView *vfCodeFiledView;
+    //    PhoneView *mPhoneView;
+    
+    LoginTitleView   *mLoginTitleView;
+    UIButton *getVfCodeBtn;
+    
+    
+//    int phoneCountdown;
+//    NSTimer *downTimer;
 }
 
 - (instancetype)initView
@@ -28,162 +38,269 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-//        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+        //        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+        //        self.backgroundColor = color;// 底图透明，控件不透明
+        //        self.layer.cornerRadius = 10; //设置圆角
+        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
+        //        self.layer.borderWidth = 2;
+        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"修改密碼" hander:^(NSInteger) {
+        //title
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
             
-//            [self.delegate goBackBtn:self backCount:1 sdkPage:(CURRENT_PAGE_TYPE_CHANGE_PWD)];
-            
+            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
-//        mLoginTitleView.delegate = self.delegate;//此处不起作用
+        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
         [self addSubview:mLoginTitleView];
-       [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.top.mas_equalTo(self.mas_top).mas_offset(8);
-           make.centerX.mas_equalTo(self);
-          make.width.mas_equalTo(self).mas_offset(-12);
-           make.height.mas_equalTo(kPageTitleHeight);
-       }];
-          
-        
-        //账号
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        [self addSubview:accountSDKTextFiledView];
-        accountSDKTextFiledView.inputUITextField.delegate = self;
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(20);
-            make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-            make.height.mas_equalTo(kInputTextFiledHeight * 1.2);
-         }];
-        
-        
-        //旧密碼
-        oldPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Old)];
-       [self addSubview:oldPasswordSDKTextFiledView];
-           oldPasswordSDKTextFiledView.inputUITextField.delegate = self;
-       [oldPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-           
-           make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(10);
-           make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-           make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-           make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+            
+            make.width.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
         }];
         
         
-        //新密碼
-         newPasswordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPasswordSDKTextFiledView];
-             newPasswordSDKTextFiledView.inputUITextField.delegate = self;
-        [newPasswordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.top.equalTo(oldPasswordSDKTextFiledView.mas_bottom).mas_offset(10);
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-         }];
+        
+        //旧密码
+        oldPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Old)];
+        oldPwdSDKTextFiledView.moreAccountBtn.hidden = YES;
+        [self addSubview:oldPwdSDKTextFiledView];
+        
+        [oldPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(40);
+            make.trailing.mas_equalTo(self).mas_offset(-40);
+            make.height.mas_equalTo(VH(40));
 
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
+            
+        }];
         
-         //确认
-      UIButton *okBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kChangePwdActTag selector:@selector(registerViewBtnAction:)  target:self];
-      [self addSubview:okBtn];
-      
-      [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.centerX.equalTo(self);
-          make.top.equalTo(newPasswordSDKTextFiledView.mas_bottom).mas_offset(40);
-          make.width.mas_equalTo(self).offset(-kInputTextFiledMarginLeftRight);
-          make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-      }];
         
-       // [self layoutIfNeeded];
+        //新密码
+        newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
+        [self addSubview:newPwdSDKTextFiledView];
+        
+        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(oldPwdSDKTextFiledView);
+            make.trailing.mas_equalTo(oldPwdSDKTextFiledView);
+            make.height.mas_equalTo(oldPwdSDKTextFiledView);
+
+            make.top.equalTo(oldPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            
+        }];
+        
+        
+        //确认密码
+        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
+        [self addSubview:againPwdSDKTextFiledView];
+        
+        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(oldPwdSDKTextFiledView);
+            make.trailing.mas_equalTo(oldPwdSDKTextFiledView);
+            make.height.mas_equalTo(oldPwdSDKTextFiledView);
+            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            
+        }];
+        
+        
+        //確認
+        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire_change") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        
+//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
+        [okBtn.layer setCornerRadius:VH(25)];
+//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        [self addSubview:okBtn];
+        
+        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self);
+            make.top.equalTo(againPwdSDKTextFiledView.mas_bottom).mas_offset(VH(32));
+            make.width.mas_equalTo(oldPwdSDKTextFiledView);
+            make.height.mas_equalTo(VH(50));
+        }];
+        
+        
+//        UIButton *okBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kOkActTag selector:@selector(registerViewBtnAction:)  target:self];
+//        [self addSubview:okBtn];
+//
+//        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.centerX.equalTo(self);
+//            make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(60));
+//            make.width.mas_equalTo(accountSDKTextFiledView);
+//            make.height.mas_equalTo(VH(70));
+//        }];
+        
     }
     return self;
 }
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-//    mLoginTitleView.delegate = self.delegate;
-    accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    oldPasswordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    newPasswordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
 }
+
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {
             
-        case kChangePwdActTag:
+     
+        case kOkActTag:
         {
-            NSLog(@"kChangePwdActTag");
-            NSString *userName = accountSDKTextFiledView.inputUITextField.text;
-            NSString *oldPassword = oldPasswordSDKTextFiledView.inputUITextField.text;
-            NSString *newPassword = newPasswordSDKTextFiledView.inputUITextField.text;
-            
-            if (!oldPassword || [oldPassword isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD")];
-                return;
-            }
-            if (!newPassword || [newPassword isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW")];
-                return;
-            }
-            
-            if (!userName || [userName isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"TXT_PH_ACCOUNT_INPUT_ACCOUNT")];
-                return;
-            }
-            
-            if (![SdkUtil validUserName:userName]) {
-                [SdkUtil toastMsg:GetString(@"ALERT_MSG_ACCOUNT_RULE")];
-                return;
-            }
-            
-           
-            if (![SdkUtil validPwd: newPassword]) {
-                [SdkUtil toastMsg:GetString(@"TXT_ACCOUNT_AND_PWD_PROMT_RULE")];
-                return;
-            }
-            
-            
-            if (userName==nil||
-                [userName isEqualToString:@""]||
-                oldPassword==nil||
-                [oldPassword isEqualToString:@""]||
-                newPassword==nil||
-                [newPassword isEqualToString:@""])
-            {
-               
-                [AlertUtil showAlertWithMessage:GetConfigString(GAMA_TEXT_PARAMETER_NULL)];
-                return;
-            }
-        
-            [SDKRequest doChangePasswordWithUserName:userName andOldPassword:oldPassword andNewPassword:newPassword otherParamsDic:nil successBlock:^(id responseData) {
-                LoginResponse *cc = (LoginResponse *)responseData;
-                [[ConfigCoreUtil share] saveAccount:userName password:newPassword updateTime:NO];
-                //通知更新登录界面的数据
-                [AlertUtil showAlertWithMessage: cc.message];
-                if (self.delegate) {
-                    [self.delegate changPasswordSuccess];
-                }
-                [self removeFromSuperview];//返回登录界面
-                
-            } errorBlock:^(BJError *error) {
-                [AlertUtil showAlertWithMessage:error.message];
-            }];
+            SDK_LOG(@"kOkActTag");
+            [self changePassword];
         }
             
-        break;
+            
+            break;
             
             
         default:
             break;
     }
 }
+
+-(void)changePassword
+{
+    
+    if (!self.fromPageParam) {
+        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        return;
+    }
+    
+    AccountModel * mAccountModel = (AccountModel *)self.fromPageParam;
+    NSString *userName = mAccountModel.account;
+    
+    NSString *oldPwd = oldPwdSDKTextFiledView.inputUITextField.text;
+    
+    NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
+    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
+    
+    if (![SdkUtil validUserName:userName]) {
+        return;
+    }
+    
+    if ([StringUtil isEmpty:oldPwd]) {
+        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        return;
+    }
+ 
+    if (![SdkUtil validPwd:newPwd]) {
+        return;
+    }
+    
+    if (![SdkUtil validPwd:againPwd]) {
+        return;
+    }
+    
+    if (![newPwd isEqualToString:againPwd]) {
+    
+        [SdkUtil toastMsg:GetString(@"text_pwd_not_equel")];
+        return;
+    }
+   
+    kWeakSelf
+    [SDKRequest doChangePasswordWithUserName:userName andOldPassword:oldPwd andNewPassword:newPwd otherParamsDic:nil successBlock:^(id responseData) {
+        
+        [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
+        
+//        LoginResponse *lr = (LoginResponse *)responseData;
+//        mAccountModel.password = newPwd;
+//        mAccountModel.token = lr.data.token;
+//        mAccountModel.timestamp = lr.data.timestamp;
+//        mAccountModel.isBind = lr.data.isBind;
+//
+//        [[ConfigCoreUtil share] saveAccountModel:mAccountModel];
+        
+        if (weakSelf.delegate) {
+            LoginResponse *cc = (LoginResponse *)responseData;
+            cc.data.account = mAccountModel.account;
+            cc.data.password = newPwd;
+            cc.data.loginType = LOGIN_TYPE_SELF;
+            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+        }
+        
+    } errorBlock:^(BJError *error) {
+        
+        [AlertUtil showAlertWithMessage:error.message];
+        
+    }];
+    
+}
+
+//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
+//{
+//
+//
+//    [SDKRequest requestVfCode:phoneArea phoneNumber:phoneN email:@"" interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+//        [self downTime];
+//        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
+//    } errorBlock:^(BJError *error) {
+//        [self resetVfCodeBtnStatue];
+//        [AlertUtil showAlertWithMessage:error.message];
+//    }];
+//}
+//
+//- (void)requestVfCodeByEmail:(NSString *)email
+//{
+//
+//    [SDKRequest requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+//        [self downTime];
+//    } errorBlock:^(BJError *error) {
+//        [self resetVfCodeBtnStatue];
+//        [AlertUtil showAlertWithMessage:error.message];
+//    }];
+//}
+
+//倒计时
+//-(void)downTime{
+//
+//    phoneCountdown = 60;
+//    getVfCodeBtn.userInteractionEnabled = NO;
+//    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+//    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
+//    //getVfCodeBtn.layer.masksToBounds = YES;
+//    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
+//    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+//                                                 target:self
+//                                               selector:@selector(phoneFireTimer)
+//                                               userInfo:nil
+//                                                repeats:YES];
+//
+//
+//}
+//
+//- (void)phoneFireTimer {
+//    phoneCountdown--;
+//    if (phoneCountdown < 0) {
+//        [self resetVfCodeBtnStatue];
+//    }else{
+//        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+//    }
+//
+//}
+//
+//-(void) resetVfCodeBtnStatue
+//{
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
+//    getVfCodeBtn.userInteractionEnabled = YES;
+//    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+//}
+//
+//- (void)dealloc
+//{
+//
+//    if (downTimer) {
+//        [downTimer invalidate];
+//        downTimer = nil;
+//    }
+//}
 
 @end

@@ -298,19 +298,6 @@
                          errorBlock:(BJServiceErrorBlock)errorBlock
 {
     
-    //空参数处理
-    if (userName==nil||
-        [userName isEqualToString:@""]||
-        oldPassword==nil||
-        [oldPassword isEqualToString:@""]||
-        newPassword==nil||
-        [newPassword isEqualToString:@""])
-    {
-        BJError *err = [[BJError alloc] init];
-        err.message = GetConfigString(GAMA_TEXT_PARAMETER_NULL);
-        errorBlock(err);
-        return;
-    }
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -318,15 +305,16 @@
     
     //获取时间戳
     NSString * timeStamp=[GamaFunction getTimeStamp];
+    userName = [userName lowercaseString];
     
     //获取md5加密的值gamesPojo.getAppKey() + timestamp + name + pwd + newPwd + gameCode;
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendString:GetConfigString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendString:APP_KEY]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
-    [md5str appendString:[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
-    [md5str appendString:[[GamaFunction getMD5StrFromString:newPassword] lowercaseString]]; //新密码
-    [md5str appendString:[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)]]; //gamecode
+    [md5str appendFormat:@"%@",userName]; //用户名
+//    [md5str appendString:[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
+//    [md5str appendString:[[GamaFunction getMD5StrFromString:newPassword] lowercaseString]]; //新密码
+    [md5str appendString:GAME_CODE]; //gamecode
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
@@ -334,9 +322,10 @@
         dic = @{
             @"signature"        :md5SignStr,
             @"timestamp"        :timeStamp,
-            @"gameCode"         :SDKConReader.getGameCode,
-            @"name"             :[userName lowercaseString],
-            @"pwd"              :[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString],
+            @"gameCode"         :GAME_CODE,
+            @"name"             :userName,
+            @"loginId"          :userName,
+            @"oldPwd"           :[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString],
             @"newPwd"           :[[GamaFunction getMD5StrFromString:newPassword] lowercaseString],
             @"registPlatform"   :LOGIN_TYPE_SELF,
         };
@@ -347,7 +336,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_STANDARD_CHANGE_PW_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:api_change_pwd params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 

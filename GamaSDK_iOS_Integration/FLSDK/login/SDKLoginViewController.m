@@ -29,7 +29,6 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @implementation SDKLoginViewController{
-    WelcomeBackView *mWelcomeBackView;
     
     SDKPage sdkPageType;
     
@@ -37,6 +36,7 @@
     SdkAutoLoginView *mAutoLoginView;
     LoginWithRegView *mLoginWithRegView;
     MainHomeView *mMainHomeView;
+    WelcomeBackView *mWelcomeBackView;
     
     UIView *sdkContentView;
 }
@@ -189,20 +189,21 @@
 
 #pragma mark -頁面添加部分
 
--(void)addLoginWithRegView
+-(SDKBaseView *)addLoginWithRegView
 {
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     mLoginWithRegView = [[LoginWithRegView alloc] initView];
     [self addSubSdkLoginView:mLoginWithRegView];
+    return mLoginWithRegView;
 }
 
 -(void)addWelcomeView
 {
     //移除所有子视图
     [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-
+    
     mWelcomeBackView = [[WelcomeBackView alloc] initView];
     [self addSubSdkLoginView:mWelcomeBackView];
 }
@@ -253,18 +254,17 @@
 //    [self addSubSdkLoginView:mRegisterAccountView];
 //}
 
--(void)addBindAccountView:(NSInteger) p
+-(void)addBindAccountView
 {
-    //綁定和註冊共用頁面
-    RegisterAccountView *mRegisterAccountView = [[RegisterAccountView alloc] initViewWithBindType:p];
-    [self addSubSdkLoginView:mRegisterAccountView];
+    
 }
 
--(void)addChangePasswordView
+-(SDKBaseView *)addChangePasswordView
 {
     
     ChangePasswordView *view = [[ChangePasswordView alloc] initView];
     [self addSubSdkLoginView:view];
+    return view;
 }
 
 -(void)addSelectBindTypeView
@@ -334,13 +334,14 @@
 
 -(void)goPageView:(CURRENT_PAGE_TYPE) pageType;
 {
-    [self goPageView:pageType from:CURRENT_PAGE_TYPE_NULL param:0];
+    [self goPageView:pageType from:CURRENT_PAGE_TYPE_NULL param:@(0)];
     
 }
 
-- (void)goPageView:(CURRENT_PAGE_TYPE)pageType from:(CURRENT_PAGE_TYPE)fromPage param:(NSInteger)p
+- (void)goPageView:(CURRENT_PAGE_TYPE)toPage from:(CURRENT_PAGE_TYPE)fromPage param:(id)obj
 {
-    switch (pageType) {
+    SDKBaseView *mView;
+    switch (toPage) {
         case CURRENT_PAGE_TYPE_AUTO:
             
             break;
@@ -354,12 +355,15 @@
             break;
             
         case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
+        {
             //[self addAccountLoginView];//賬號登入和注册頁面
-            [self addLoginWithRegView];
+            mView = [self addLoginWithRegView];
+            
+        }
             break;
             
         case CURRENT_PAGE_TYPE_CHANGE_PWD:
-            [self addChangePasswordView];
+            mView = [self addChangePasswordView];
             break;
             
         case CURRENT_PAGE_TYPE_SELECT_BIND_TYPE:
@@ -367,20 +371,21 @@
             break;
             
         case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
-            [self addBindAccountView:p];//綁定賬號頁面
+            [self addBindAccountView];//綁定賬號頁面
             break;
             
         case CURRENT_PAGE_TYPE_TEARMS:
         {
-            SDKBaseView *mView = [self addTermsView];//服务条款頁面
-            if (fromPage && fromPage != CURRENT_PAGE_TYPE_NULL) {
-                mView.fromPage = fromPage;
-            }
-            
+            mView = [self addTermsView];//服务条款頁面
         }
             break;
         default:
             break;
+    }
+    
+    if (mView && fromPage && fromPage != CURRENT_PAGE_TYPE_NULL) {
+        mView.fromPage = fromPage;
+        mView.fromPageParam = obj;
     }
 }
 
@@ -396,6 +401,12 @@
         case CURRENT_PAGE_TYPE_MAIN_HOME:
             if (mMainHomeView) {
                 mMainHomeView.hidden = NO;
+            }
+            break;
+            
+        case CURRENT_PAGE_TYPE_WELCOME_BACK:
+            if (mWelcomeBackView) {
+                mWelcomeBackView.hidden = NO;
             }
             break;
             

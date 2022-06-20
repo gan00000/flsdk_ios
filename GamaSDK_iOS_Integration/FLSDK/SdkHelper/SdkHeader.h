@@ -104,6 +104,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define kLoginTabActTag    35
 #define kRegTabActTag    36
 #define kAgreeTermsCheckBoxBtnTag     37
+#define kSwitchAccountActTag    38
 
 #define fbLoginActTag       2000
 #define googleLoginActTag   2001
@@ -131,6 +132,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_login_account   (@"api/user/login")
 #define api_forgot_pwd      (@"api/pwd/forgotPassword")
 #define api_get_vfCode      (@"api/vcode/sendEmailVcode")
+#define api_change_pwd      (@"api/pwd/changePassword")
 
 #endif /* CCSkyHourHeader_h */
 
