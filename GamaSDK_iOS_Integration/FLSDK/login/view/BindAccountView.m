@@ -134,12 +134,12 @@
     return self;
 }
 
-- (void)initData{
-    
+- (void)initData
+{
+    [super initData];
     AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
     [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:thirdAccountSDKTextFiledView pwdView:nil];
     thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
-    
 }
 
 
