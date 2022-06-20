@@ -339,6 +339,23 @@
             }
             
         };
+        
+        accountSDKTextFiledView.inputTextFieldChange = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            
+            if (currentAccountModel && ![currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+                
+                if (![msg isEqualToString:currentAccountModel.userId]) {//修改则变为平台用户登录方式
+                    AccountModel *tempAccountModel = [[AccountModel alloc] init];
+                    tempAccountModel.loginType = LOGIN_TYPE_SELF;
+                    tempAccountModel.account = msg;
+                    tempAccountModel.password = @"";
+                    [passwordSDKTextFiledView setPwdFiledView:YES];
+                    [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+                }
+            }
+            
+            
+        };
     }
     return self;
 }
@@ -365,6 +382,7 @@
             currentAccountModel = aModel;
             [AccountLoginView makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
             accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            
         }
         
     };
@@ -421,10 +439,10 @@
             //                        @"fb_oauthToken":facebookTokenStr,
             //                    };
             //
-            //                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+            //                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:LOGIN_TYPE_FB addOtherParams:additionDic successBlock:^(id responseData) {
             //
             //                        if (self.delegate) {
-            //                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+            //                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
             //                        }
             //
             //                    } errorBlock:^(BJError *error) {
@@ -459,7 +477,7 @@
             [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
                 
                 if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
                 }
                 
             } errorBlock:^(BJError *error) {
@@ -511,10 +529,10 @@
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];
         
-        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:_SDK_PLAT_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
+        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
             
             if (self.delegate) {
-                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_APPLE];
+                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
             }
             
         } errorBlock:^(BJError *error) {
@@ -564,8 +582,8 @@
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
             cc.data.account = accountName;
             cc.data.password = pwd;
-            cc.data.loginType = _SDK_PLAT_SELF;
-            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
+            cc.data.loginType = LOGIN_TYPE_SELF;
+            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
         }
         
     } errorBlock:^(BJError *error) {
@@ -582,7 +600,7 @@
     NSString *account = mAccountModel.userId;
     NSString *iconName = @"mw_smail_icon";
     NSString *pwdText = GetString(@"text_free_register");
-    if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
+    if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
         iconName = @"mw_smail_icon";
@@ -590,19 +608,19 @@
         [pwdFiledView setPwdFiledView:YES];
         pwdFiledView.inputUITextField.text = mAccountModel.password;
         
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_FB]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
         iconName = @"fb_smail_icon";
         [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_GC]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
         iconName = @"google_smail_icon";
         [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_MAC]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
         iconName = @"guest_smail_icon";
         [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_APPLE]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
         iconName = @"mw_smail_icon";
         [pwdFiledView setPwdFiledView:NO];
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_LINE]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = @"line_smail_icon";
         [pwdFiledView setPwdFiledView:NO];
     }

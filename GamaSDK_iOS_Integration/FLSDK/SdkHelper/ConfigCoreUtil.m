@@ -74,7 +74,7 @@ static dispatch_once_t onceToken;
 
 -(void)saveAccountModel:(AccountModel*) mAccountModel{
     
-    if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
+    if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         [self removeAccountByUserId:mAccountModel.userId];
         
@@ -83,7 +83,7 @@ static dispatch_once_t onceToken;
         
         NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
         for (AccountModel *am in mAccountArray) {
-            if ([am.userId isEqualToString: mAccountModel.userId] && [mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
+            if ([am.userId isEqualToString: mAccountModel.userId] && [mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 return;
             }
         }

@@ -405,10 +405,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //                        @"fb_oauthToken":facebookTokenStr,
 //                    };
 //                    
-//                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:LOGIN_TYPE_FB addOtherParams:additionDic successBlock:^(id responseData) {
 //                        
 //                        if (self.delegate) {
-//                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
 //                        }
 //                        
 //                    } errorBlock:^(BJError *error) {
@@ -438,7 +438,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
                 
                 if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
                 }
                 
             } errorBlock:^(BJError *error) {
@@ -480,10 +480,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];
 
-        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:_SDK_PLAT_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
+        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
             
             if (self.delegate) {
-                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_APPLE];
+                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
             }
             
         } errorBlock:^(BJError *error) {
@@ -533,7 +533,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
             cc.data.account = accountName;
             cc.data.password = pwd;
-            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
+            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
         }
         
     } errorBlock:^(BJError *error) {

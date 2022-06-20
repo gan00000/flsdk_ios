@@ -315,7 +315,7 @@
             [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
                 
                 if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
                 }
                 
             } errorBlock:^(BJError *error) {

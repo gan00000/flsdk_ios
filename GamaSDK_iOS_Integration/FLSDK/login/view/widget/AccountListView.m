@@ -101,23 +101,23 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     NSString *account = mAccountModel.userId;
     NSString *iconName = @"mw_smail_icon";
     
-    if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_SELF]) {
+    if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
         iconName = @"mw_smail_icon";
         
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_FB]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
         iconName = @"fb_smail_icon";
        
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_GC]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
         iconName = @"google_smail_icon";
         
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_MAC]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
         iconName = @"guest_smail_icon";
         
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_APPLE]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
         iconName = @"mw_smail_icon";
-    }else if ([mAccountModel.loginType isEqualToString:_SDK_PLAT_LINE]){
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = @"line_smail_icon";
     }
     cell.accountUILabel.text = account;

@@ -27,7 +27,7 @@
 
 
 
-typedef void (^ViewClickHandler)(NSString* msg, NSInteger m);
+typedef void (^CCallBack)(NSString* msg, NSInteger m, NSDictionary *dic);
 
 typedef void (^ItemViewClickHander)(NSInteger);
 

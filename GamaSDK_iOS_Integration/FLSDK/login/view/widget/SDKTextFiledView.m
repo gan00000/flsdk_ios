@@ -180,7 +180,7 @@
     mUITextField.textColor = [UIColor whiteColor];
     
     mUITextField.font = [UIFont systemFontOfSize:FS(14)];
-    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小
+//    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
     
     // 设置placeholder文字大小和居中显示
     //    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
@@ -262,6 +262,10 @@
         lineView2.hidden = YES;
     }
     
+    if (self.inputUITextField) {
+        [self.inputUITextField addTarget:self action:@selector(textChanged:) forControlEvents:(UIControlEventEditingChanged)];
+    }
+    
 }
 
 - (void)eyeViewBtnAction:(UIButton *)sender
@@ -293,4 +297,20 @@
     }
 }
 
+////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者@"任何字符串"都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
+///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
+- (void)textChanged:(UITextField *)sender
+{
+    SDK_LOG(@"textChanged=>%@",sender.text);
+    
+    if (sender.text && [sender.text containsString:@" "]) {
+        NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格
+        self.inputUITextField.text = tempStr;
+    }
+    
+    if (self.inputTextFieldChange) {
+        self.inputTextFieldChange(self.inputUITextField.text,0,nil);
+    }
+    
+}
 @end

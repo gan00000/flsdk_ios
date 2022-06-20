@@ -64,17 +64,17 @@
     }
     
     NSString *loginType = [ConfigCoreUtil share].loginType;
-    if ([loginType isEqualToString:_SDK_PLAT_MAC]) {
+    if ([loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         autoLoginTips = @"遊客帳號登入中\n(%@)";
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_FB]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_FB]) {
         autoLoginTips = @"Facebook帳號登入中\n(%@)";
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_APPLE]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
         autoLoginTips = @"Apple帳號登入中\n(%@)";
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_SELF]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {
         NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
         if (accounts && accounts.count > 0) {
             AccountModel *mAccountModel = accounts[0];
@@ -133,11 +133,11 @@
     }
     kWeakSelf
     NSString *loginType = [ConfigCoreUtil share].loginType;
-    if ([loginType isEqualToString:_SDK_PLAT_MAC]) {
+    if ([loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
             
             if (!isSwicth && weakSelf.delegate) {
-                [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_MAC];
+                [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
             }
             
         } errorBlock:^(BJError *error) {
@@ -151,7 +151,7 @@
             
         }];
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_FB]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_FB]) {
         [SdkUtil gamaStarLoadingAtView:weakSelf];
 //        [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
 //            [SdkUtil gamaStopLoadingAtView:weakSelf];
@@ -169,10 +169,10 @@
 //                    @"tokenBusiness":@"",
 //                    @"fb_oauthToken":facebookTokenStr,
 //                };
-//                [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:_SDK_PLAT_FB addOtherParams:additionDic successBlock:^(id responseData) {
+//                [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:LOGIN_TYPE_FB addOtherParams:additionDic successBlock:^(id responseData) {
 //                    
 //                    if (!isSwicth && weakSelf.delegate) {
-//                        [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_FB];
+//                        [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
 //                    }
 //                    
 //                } errorBlock:^(BJError *error) {
@@ -192,11 +192,11 @@
 //            
 //        }];
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_APPLE]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
         [self doAutoAppleLogin];
         
-    }else if ([loginType isEqualToString:_SDK_PLAT_SELF]) {
+    }else if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         NSArray<AccountModel *> *accounts = [[ConfigCoreUtil share] getAccountModels];
         if (!accounts || accounts.count == 0) {
@@ -212,7 +212,7 @@
                 CCSDKResponse *cc = (CCSDKResponse *)responseData;
                 cc.data.account = accountName;
                 cc.data.password = pwd;
-                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:_SDK_PLAT_SELF];
+                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
             }
             
         } errorBlock:^(BJError *error) {
@@ -230,12 +230,12 @@
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
     NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
     [tempMutableDic removeObjectForKey:@"appleThirdID"];
-    [SDKRequest thirdLoginOrReg:appleID andThirdPlate:_SDK_PLAT_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
+    [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
         if (isSwicth) {
             return;
         }
         if (weakSelf.delegate) {
-            [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_APPLE];
+            [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
         }
         
     } errorBlock:^(BJError *error) {
@@ -258,12 +258,12 @@
      NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
      [tempMutableDic removeObjectForKey:@"appleThirdID"];
      
-     [SDKRequest thirdLoginOrReg:appleID andThirdPlate:_SDK_PLAT_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
+     [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
      if (isSwicth) {
      return;
      }
      if (weakSelf.delegate) {
-     [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_APPLE];
+     [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
      }
      
      } errorBlock:^(BJError *error) {

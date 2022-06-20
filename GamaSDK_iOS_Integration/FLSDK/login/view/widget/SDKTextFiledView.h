@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setPwdFiledView:(BOOL)enable;
 
 @property (nonatomic) ItemViewClickHander clickAccountListItem;
+@property (nonatomic) CCallBack inputTextFieldChange;
 @property (nonatomic) UITextField *inputUITextField;
 @property (nonatomic) UIButton *moreAccountBtn;
 

@@ -124,13 +124,13 @@
     //
     //        NSString *loginType = [ConfigCoreUtil share].loginType;
     //        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-    //            if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+    //            if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {//自動登錄
     //                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
     //               if (!accounts || accounts.count == 0) {
     //                   [self addMainLoginView];
     //                   return;
     //               }
-    //            }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+    //            }else if ([loginType isEqualToString:LOGIN_TYPE_GUEST])
     //            {
     //                [self addMainLoginView];
     //                return;
@@ -145,13 +145,13 @@
     
     //    NSString *loginType = [ConfigCoreUtil share].loginType;
     //    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-    //        if ([loginType isEqualToString:_SDK_PLAT_SELF]) {//自動登錄
+    //        if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {//自動登錄
     //            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels];
     //           if (!accounts || accounts.count == 0) {
     //               [self addMainLoginView];
     //               return;
     //           }
-    //        }else if ([loginType isEqualToString:_SDK_PLAT_MAC])
+    //        }else if ([loginType isEqualToString:LOGIN_TYPE_GUEST])
     //        {
     //            [self addMainLoginView];
     //            return;
@@ -445,7 +445,7 @@
     [SdkUserInfoModel shareInfoModel].loginTypeStr = thirdPlate;
     [SdkUserInfoModel shareInfoModel].timestamp = rData.timestamp;
     
-    if ([_SDK_PLAT_SELF isEqualToString:thirdPlate]) {
+    if ([LOGIN_TYPE_SELF isEqualToString:thirdPlate]) {
         //是否需要保存账号密码
         //        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
         //            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册

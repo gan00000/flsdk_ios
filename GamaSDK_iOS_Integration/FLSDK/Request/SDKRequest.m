@@ -16,7 +16,7 @@
                                 errorBlock:(BJServiceErrorBlock)errorBlock
 {
     NSString *loginId =[GamaFunction getGamaUUID]; 
-    [self thirdLoginOrReg:loginId andThirdPlate:_SDK_PLAT_MAC addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
+    [self thirdLoginOrReg:loginId andThirdPlate:LOGIN_TYPE_GUEST addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -35,7 +35,7 @@
     //获取时间戳
     NSString * timeStamp=[GamaFunction getTimeStamp];
     
-    BOOL isGuestLogin = [thirdPlate isEqualToString:_SDK_PLAT_MAC];
+    BOOL isGuestLogin = [thirdPlate isEqualToString:LOGIN_TYPE_GUEST];
     // 签名顺序不能变
     NSMutableString * md5str= [[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
@@ -104,7 +104,7 @@
             @"gameCode"         :[NSString stringWithFormat:@"%@",GAME_CODE],
             @"loginId"             :[userName lowercaseString],
             @"password"              :[[GamaFunction getMD5StrFromString:password] lowercaseString],
-            @"registPlatform"   :_SDK_PLAT_SELF,
+            @"registPlatform"   :LOGIN_TYPE_SELF,
             
         };
         
@@ -230,7 +230,7 @@
             @"phoneAreaCode"    :phoneAreaCode,
             @"phone"            :phoneN,
             @"vfCode"           :vfCode,
-            @"registPlatform"   :_SDK_PLAT_SELF,
+            @"registPlatform"   :LOGIN_TYPE_SELF,
         };
         [params addEntriesFromDictionary:dic];
     } @catch (NSException *exception) {
@@ -291,7 +291,7 @@
             @"name"             :[userName lowercaseString],
             @"pwd"              :[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString],
             @"newPwd"           :[[GamaFunction getMD5StrFromString:newPassword] lowercaseString],
-            @"registPlatform"   :_SDK_PLAT_SELF,
+            @"registPlatform"   :LOGIN_TYPE_SELF,
         };
         
         [params addEntriesFromDictionary:dic];

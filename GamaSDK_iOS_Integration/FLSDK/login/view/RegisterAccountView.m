@@ -335,7 +335,7 @@
                                       vfCode:vfCode
                                        email:@""
                                      thirdId:loginId
-                                  thirdPlate:_SDK_PLAT_MAC
+                                  thirdPlate:LOGIN_TYPE_GUEST
                               otherParamsDic:nil
                                 successBlock:^(id responseData) {
         CCSDKResponse *cc = (CCSDKResponse *)responseData;
@@ -375,7 +375,7 @@
                                           vfCode:vfCode
                                            email:@""
                                          thirdId:appleID
-                                      thirdPlate:_SDK_PLAT_APPLE
+                                      thirdPlate:LOGIN_TYPE_APPLE
                                   otherParamsDic:tempMutableDic
                                     successBlock:^(id responseData) {
             CCSDKResponse *cc = (CCSDKResponse *)responseData;
@@ -432,7 +432,7 @@
 //                                              vfCode:vfCode
 //                                               email:@""
 //                                             thirdId:facebookID
-//                                          thirdPlate:_SDK_PLAT_FB
+//                                          thirdPlate:LOGIN_TYPE_FB
 //                                      otherParamsDic:additionDic
 //                                        successBlock:^(id responseData) {
 //                
@@ -475,7 +475,7 @@
             cc.data.account = name;
             cc.data.password = password;
             
-            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:_SDK_PLAT_SELF];
+            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
         }
     }
                                    errorBlock:^(BJError *error) {

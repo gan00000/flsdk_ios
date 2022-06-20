@@ -113,13 +113,13 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define lineLoginActTag    2005
 
 // login type
-#define _SDK_PLAT_SELF           (@"mg")
-#define _SDK_PLAT_MAC            (@"visitor")
-#define _SDK_PLAT_FB             (@"fb")
-#define _SDK_PLAT_GC             (@"google")
-#define _SDK_PLAT_TWITTER        (@"twitter")
-#define _SDK_PLAT_APPLE          (@"apple")
-#define _SDK_PLAT_LINE          (@"line")
+#define LOGIN_TYPE_SELF           (@"mg")
+#define LOGIN_TYPE_GUEST            (@"visitor")
+#define LOGIN_TYPE_FB             (@"fb")
+#define LOGIN_TYPE_GOOGLE             (@"google")
+#define LOGIN_TYPE_TWITTER        (@"twitter")
+#define LOGIN_TYPE_APPLE          (@"apple")
+#define LOGIN_TYPE_LINE          (@"line")
 
 //请求域名
 
