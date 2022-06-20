@@ -471,17 +471,19 @@
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
+    userName = [userName lowercaseString];
+    
     //获取时间戳
     NSString * timeStamp=[GamaFunction getTimeStamp];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",GetConfigString(GAMA_GAME_KEY)]; //AppKey
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
-    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
-    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];
-    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
-    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
+    [md5str appendFormat:@"%@",userName]; //用户名
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",GAME_CODE];
+//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
+//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
     NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
     
@@ -489,11 +491,16 @@
         NSDictionary *dic = @{
             @"signature"        :[md5SignStr lowercaseString],
             @"timestamp"        :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
-            @"name"             :[userName lowercaseString],
-            @"pwd"              :[[GamaFunction getMD5StrFromString:password] lowercaseString],
+            @"gameCode"         :GAME_CODE,
+            @"name"             :userName,
+            @"loginId"          :userName,
+            @"password"         :[[GamaFunction getMD5StrFromString:password] lowercaseString],
             @"thirdPlatId"      :[thirdId lowercaseString],
+            @"thirdLoginId"     :[thirdId lowercaseString],
+        
             @"registPlatform"   :[thirdPlate lowercaseString],
+            @"loginMode"        :[thirdPlate lowercaseString],
+            
             @"interfaces"       :@"2",
             @"phoneAreaCode"    :phoneAreaCode,
             @"phone"            :phoneN,
@@ -506,7 +513,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:GetConfigString(GAMA_LOGIN_THIRD_BINDING_PRO_NAME) params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 

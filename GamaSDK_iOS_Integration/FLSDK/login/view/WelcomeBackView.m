@@ -362,8 +362,12 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
                     
         case kBindAccountActTag:
             SDK_LOG(@"kBindAccountActTag");
+            if (!currentAccountModel) {
+                [SdkUtil toastMsg:GetString(@"text_select_account")];
+                return;
+            }
             if (self.delegate) {
-                [self.delegate goPageView:CURRENT_PAGE_TYPE_SELECT_BIND_TYPE];
+                [self.delegate goPageView:CURRENT_PAGE_TYPE_BIND_ACCOUNT from:CURRENT_PAGE_TYPE_WELCOME_BACK param:currentAccountModel];
             }
             break;
             

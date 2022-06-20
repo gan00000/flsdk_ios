@@ -1,24 +1,37 @@
 //
-//  BindAccountView.m
-//  CCSkyHourSDK
+//  FindPasswordView.m
+//  R2DSDK
 //
-//  Created by ganyuanrong on 2019/5/30.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
+//  Created by ganyuanrong on 2020/7/14.
+//  Copyright © 2020 ganyuanrong. All rights reserved.
 //
 
 #import "BindAccountView.h"
 #import "SdkHeader.h"
-#import "LoginTitleView.h"
 #import "SDKTextFiledView.h"
+#import "LoginTitleView.h"
 #import "PhoneView.h"
 #import "LoginButton.h"
+#import "SDKRequest.h"
+#import "SdkUtil.h"
+#import "AccountLoginView.h"
 
 @implementation BindAccountView
+
 {
+    SDKTextFiledView *thirdAccountSDKTextFiledView;
     SDKTextFiledView *accountSDKTextFiledView;
-    SDKTextFiledView *passwordSDKTextFiledView;
-    SDKTextFiledView *passwordAgainSDKTextFiledView;
+    SDKTextFiledView *pwdSDKTextFiledView;
+    
+//    SDKTextFiledView *vfCodeFiledView;
+    //    PhoneView *mPhoneView;
+    
     LoginTitleView   *mLoginTitleView;
+//    UIButton *getVfCodeBtn;
+    
+    
+//    int phoneCountdown;
+//    NSTimer *downTimer;
 }
 
 - (instancetype)initView
@@ -26,175 +39,187 @@
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        self.backgroundColor = color;// 底图透明，控件不透明
-        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-//        self.layer.borderWidth = 2;
-        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
-        
-        int rowMargin = 6;
+        //        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+        //        self.backgroundColor = color;// 底图透明，控件不透明
+        //        self.layer.cornerRadius = 10; //设置圆角
+        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
+        //        self.layer.borderWidth = 2;
+        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"BTN_TITLE_BIND_ACCOUNT") hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
             
+            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
-        mLoginTitleView.delegate = self.delegate;
+        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
         [self addSubview:mLoginTitleView];
-       [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.top.mas_equalTo(self.mas_top).mas_offset(10);
-           make.centerX.mas_equalTo(self);
-          make.width.mas_equalTo(self).mas_offset(-12);
-           make.height.mas_equalTo(kPageTitleHeight);
-       }];
-          
-        
-        //账号
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        [self addSubview:accountSDKTextFiledView];
-             
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(rowMargin);
-            make.width.mas_equalTo(self).offset(-30);
-            make.height.mas_equalTo(kInputTextFiledHeight);
-         }];
-        
-        
-        //密碼
-        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-       [self addSubview:passwordSDKTextFiledView];
+        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             
-       [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-           
-           make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(rowMargin);
-           make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-           make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-           make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+            make.width.mas_equalTo(self);
+            make.height.mas_equalTo(VH(40));
         }];
         
         
-        //再次輸入密碼
-         passwordAgainSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-        [self addSubview:passwordAgainSDKTextFiledView];
-             
-        [passwordAgainSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(rowMargin);
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-         }];
+        thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
+        [self addSubview:thirdAccountSDKTextFiledView];
+        
+        [thirdAccountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(self).mas_offset(40);
+            make.trailing.mas_equalTo(self).mas_offset(-40);
+            make.height.mas_equalTo(VH(40));
 
-        
-        PhoneView *mPhoneView = [[PhoneView alloc] initView];
-           
-           [self addSubview:mPhoneView];
-           [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(passwordAgainSDKTextFiledView.mas_bottom).mas_offset(rowMargin);
-                 make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-                 make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-                 make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-           }];
-          
-         SDKTextFiledView *vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
-          
-          [self addSubview:vfCodeFiledView];
-          [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-               make.top.equalTo(mPhoneView.mas_bottom).mas_offset(rowMargin);
-                make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-                make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.6);
-                make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-          }];
-         
-        UIButton *getVfCodeBtn; //= [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
-        
-        getVfCodeBtn.layer.borderColor = [UIColor grayColor].CGColor;
-        getVfCodeBtn.layer.borderWidth = 1;
-        getVfCodeBtn.layer.cornerRadius = 10;
-        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-           [getVfCodeBtn setTitleColor:[UIColor blackColor] forState:0];
-        [self addSubview:getVfCodeBtn];
-        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.bottom.equalTo(vfCodeFiledView);
-            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(6);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-             
-        }];
-        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-        
-         //账号绑定
-      UIButton *registorAccountBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_ACCOUNT) tag:kBindAccountActTag selector:@selector(registerViewBtnAction:)  target:self];
-      [self addSubview:registorAccountBtn];
-      
-      [registorAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.centerX.equalTo(self);
-          make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(10);
-          make.width.mas_equalTo(self).offset(-30);
-          make.height.mas_equalTo(40);
-      }];
-        
-        UILabel *loginTipsLable = [[UILabel alloc] init];
-       loginTipsLable.text = @"同一手機當日不得收取驗證碼超過五次";
-       loginTipsLable.font = [UIFont systemFontOfSize:10];
-       loginTipsLable.textAlignment = NSTextAlignmentCenter;
-       loginTipsLable.backgroundColor = [UIColor clearColor];
-       loginTipsLable.numberOfLines = 1;
-       loginTipsLable.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-       
-        [self addSubview:loginTipsLable];
-        [loginTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self);
-            make.top.mas_equalTo(registorAccountBtn.mas_bottom).mas_offset(4);
-            make.height.mas_equalTo(20);
-            make.width.mas_equalTo(self).mas_offset(-10);
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
             
         }];
+        
+        
+        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+        [self addSubview:accountSDKTextFiledView];
+        
+        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+
+            make.top.equalTo(thirdAccountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            
+        }];
+        
+        
+        //密码
+        pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+        [self addSubview:pwdSDKTextFiledView];
+        
+        [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            
+        }];
+        
+        UILabel *bindTipLabel = [UIUtil initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        [self addSubview:bindTipLabel];
+        
+        [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
+            
+        }];
+        
+        
+        //確認
+        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire_update") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        
+//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
+        [okBtn.layer setCornerRadius:VH(25)];
+//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        [self addSubview:okBtn];
+        
+        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self);
+            make.top.equalTo(bindTipLabel.mas_bottom).mas_offset(VH(32));
+            make.width.mas_equalTo(pwdSDKTextFiledView);
+            make.height.mas_equalTo(VH(50));
+        }];
+        
+      
     }
     return self;
 }
 
-- (void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
+- (void)initData{
+    
+    AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
+    [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:thirdAccountSDKTextFiledView pwdView:nil];
+    thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
+    
 }
+
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {
-        case kCheckBoxBtnTag:
-            SDK_LOG(@"kCheckBoxBtnTag");
+            
+     
+        case kOkActTag:
+        {
+            SDK_LOG(@"kOkActTag");
+            [self bindAccount];
+        }
+            
+            
             break;
-            
-        case kFindPwdActTag:
-            SDK_LOG(@"kFindPwdActTag");
-        break;
-            
-        case kBindAccountActTag:
-            SDK_LOG(@"kBindAccountActTag");
-        break;
-            
-        case kRegisterAccountActTag:
-            SDK_LOG(@"kRegisterAccountActTag");
-        break;
-            
-        case kChangePwdActTag:
-            SDK_LOG(@"kChangePwdActTag");
-        break;
-            
-        case kBackBtnActTag:
-            SDK_LOG(@"kBackBtnActTag");
-        break;
-            
-        case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
-        break;
             
             
         default:
             break;
     }
+}
+
+-(void)bindAccount
+{
+    
+    if (!self.fromPageParam) {
+        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        return;
+    }
+    
+    AccountModel * mAccountModel = (AccountModel *)self.fromPageParam;
+    //NSString *userName = mAccountModel.account;
+    
+    NSString *account = accountSDKTextFiledView.inputUITextField.text;
+    NSString *pasword = pwdSDKTextFiledView.inputUITextField.text;
+  
+    
+//    if ([StringUtil isEmpty:]) {
+//        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+//        return;
+//    }
+ 
+    if (![SdkUtil validUserName:account]) {
+        return;
+    }
+    
+    
+    if (![SdkUtil validPwd:pasword]) {
+        return;
+    }
+    
+    
+    kWeakSelf
+    [SDKRequest doChangePasswordWithUserName:@"" andOldPassword:@"" andNewPassword:@"" otherParamsDic:nil successBlock:^(id responseData) {
+        
+        [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
+        
+//        LoginResponse *lr = (LoginResponse *)responseData;
+//        mAccountModel.password = newPwd;
+//        mAccountModel.token = lr.data.token;
+//        mAccountModel.timestamp = lr.data.timestamp;
+//        mAccountModel.isBind = lr.data.isBind;
+//
+//        [[ConfigCoreUtil share] saveAccountModel:mAccountModel];
+        
+//        if (weakSelf.delegate) {
+//            LoginResponse *cc = (LoginResponse *)responseData;
+//            cc.data.account = mAccountModel.account;
+//            cc.data.password = newPwd;
+//            cc.data.loginType = LOGIN_TYPE_SELF;
+//            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+//        }
+        
+    } errorBlock:^(BJError *error) {
+        
+        [AlertUtil showAlertWithMessage:error.message];
+        
+    }];
+    
 }
 
 

@@ -22,6 +22,7 @@
 #import "TermsView.h"
 #import "LoginWithRegView.h"
 #import "MainHomeView.h"
+#import "BindAccountView.h"
 
 #import "AccountModel.h"
 
@@ -254,9 +255,11 @@
 //    [self addSubSdkLoginView:mRegisterAccountView];
 //}
 
--(void)addBindAccountView
+-(SDKBaseView *)addBindAccountView
 {
-    
+    BindAccountView *view = [[BindAccountView alloc] initView];
+    [self addSubSdkLoginView:view];
+    return view;
 }
 
 -(SDKBaseView *)addChangePasswordView
@@ -371,7 +374,7 @@
             break;
             
         case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
-            [self addBindAccountView];//綁定賬號頁面
+            mView = [self addBindAccountView];//綁定賬號頁面
             break;
             
         case CURRENT_PAGE_TYPE_TEARMS:
@@ -386,6 +389,7 @@
     if (mView && fromPage && fromPage != CURRENT_PAGE_TYPE_NULL) {
         mView.fromPage = fromPage;
         mView.fromPageParam = obj;
+        [mView initData];
     }
 }
 

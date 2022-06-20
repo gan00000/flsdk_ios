@@ -133,6 +133,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_forgot_pwd      (@"api/pwd/forgotPassword")
 #define api_get_vfCode      (@"api/vcode/sendEmailVcode")
 #define api_change_pwd      (@"api/pwd/changePassword")
+#define api_bind_account     (@"api/upgrade/bind")
 
 #endif /* CCSkyHourHeader_h */
 
