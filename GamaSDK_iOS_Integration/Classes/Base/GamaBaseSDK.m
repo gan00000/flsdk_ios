@@ -12,6 +12,7 @@
 #import "GamaPhoneModel.h"
 #import "GamaCommonHeader.h"
 #import "SdkHeader.h"
+#import "SDKRequest.h"
 
 #import "FBDelegate.h"
 
@@ -30,9 +31,11 @@
     // LoginViewModel初始化
 //    [GamaLoginViewModel model];
     
-    // 获取手机区号
-    [GamaPhoneModel requestPhoneNumberAreaCodes];
-    //    [phoneModel release];
+    [SDKRequest getSdkConfigWithSuccessBlock:^(id responseData) {
+        
+    } errorBlock:^(BJError *error) {
+        
+    }];
     
     //Facebook事件打点初始化
     [[GamaTimer shareInstance] gama_FBEventStartTimer];

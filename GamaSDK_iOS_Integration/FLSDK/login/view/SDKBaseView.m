@@ -10,5 +10,7 @@
 
 @implementation SDKBaseView
 
-
+- (void)initData{
+    
+}
 @end
