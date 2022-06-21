@@ -391,7 +391,7 @@ static GamaIapServerAccess *_instance;
                                                            [GamaIapData defaultData].serverCode,
                                                            orderIDStr,
                                                            payasId];
-                                  if ([GamaFunction getSystemVersion].intValue>7)
+                                  if ([SUtil getSystemVersion].intValue>7)
                                   {
                                       aPayment.applicationUsername=paramentsStr;
                                   }

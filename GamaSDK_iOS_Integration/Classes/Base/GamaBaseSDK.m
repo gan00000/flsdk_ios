@@ -4,7 +4,7 @@
 #import "GamaBaseSDK.h"
 #import "FLSDK.h"
 #import "ConfigHeader.h"
-#import "GamaFunction.h"
+#import "SUtil.h"
 #import "SdkUserInfoModel.h"
 #import "GamaAdInterface.h"
 #import "GamaPhoneModel.h"

@@ -8,7 +8,7 @@
 
 #import "AppleLogin.h"
 #import <AuthenticationServices/AuthenticationServices.h>
-#import "GamaFunction.h"
+#import "SUtil.h"
 #import "HelloHeader.h"
 #import "AlertUtil.h"
 

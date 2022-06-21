@@ -13,7 +13,7 @@
 #import "Masonry.h"
 #import "UIColor+HexColor.h"
 #import "ConfigHeader.h"
-#import "GamaFunction.h"
+#import "SUtil.h"
 #import "UIImage+GamaBundleImage.h"
 #import "GamaCommonHeader.h"
 #import "SdkUserInfoModel.h"
@@ -52,8 +52,8 @@
 
 
 // ---- constant
-#define winWidth        [GamaFunction getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
-#define winHeight       [GamaFunction getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
+#define winWidth        [SUtil getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
+#define winHeight       [SUtil getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
 
 
 #define LABEL_FONT_NAME                     @"Helvetica-Bold"

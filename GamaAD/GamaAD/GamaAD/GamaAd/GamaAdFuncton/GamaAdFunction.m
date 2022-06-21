@@ -10,7 +10,7 @@ static NSString *gameUrlCallBack = nil;
 
 + (void)initialize
 {
-    startTime = [GamaFunction getTimeStamp].copy;
+    startTime = [SUtil getTimeStamp].copy;
     
     gameUrlCallBack = [NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)].copy;
     
@@ -45,7 +45,7 @@ static NSString *gameUrlCallBack = nil;
 
 + (BOOL)startAd
 {
-    NSString * startTime=[GamaFunction getTimeStamp];
+    NSString * startTime=[SUtil getTimeStamp];
     
     //统一的标记
     if (![[NSUserDefaults standardUserDefaults] boolForKey:GAMA_AD_USERDEFAULT_KEY])

@@ -248,7 +248,7 @@ static NSString *previousPageUrl;
         !failure ? : failure(nil);
     }];
     
-    [FBSDKShareDialog showFromViewController:[GamaFunction getCurrentViewController] withContent:shareContent delegate:shareDalegateCls];//viewController有值才能接受回调；
+    [FBSDKShareDialog showFromViewController:[SUtil getCurrentViewController] withContent:shareContent delegate:shareDalegateCls];//viewController有值才能接受回调；
 
 //    FBSDKShareDialog *shareDialog = [[[FBSDKShareDialog alloc] init] autorelease];
 //    [shareDialog setMode:FBSDKShareDialogModeNative];

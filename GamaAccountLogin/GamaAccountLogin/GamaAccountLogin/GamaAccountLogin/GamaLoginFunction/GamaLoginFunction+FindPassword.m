@@ -96,14 +96,14 @@
     
     /*-----------获取参数----------*/
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
     
     NSMutableString * md5str=[[[NSMutableString alloc]init]autorelease];
     [md5str appendString:SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendString:[userName lowercaseString]]; //用户名
     [md5str appendString:[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]]; //gamecode
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
     NSDictionary *additionDic = nil;
@@ -204,14 +204,14 @@
     
     /*-----------获取参数----------*/
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
     
     NSMutableString * md5str=[[[NSMutableString alloc]init]autorelease];
     [md5str appendString:SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendString:[userName lowercaseString]]; //用户名
     [md5str appendString:[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]]; //gamecode
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
     NSDictionary *additionDic = otherDic;

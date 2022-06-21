@@ -21,16 +21,16 @@
  *
  *	@param 	^GamaAlertViewHandler
  */
-typedef void (^GamaAlertViewHandler)(NSInteger clickedBtnIndex);
+typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 
 
-@interface GamaAlertViewDelegate : NSObject
+@interface SAlertViewDelegate : NSObject
 <UIAlertViewDelegate,UIActionSheetDelegate>
 
 /**
  *	@brief	代理对象自己保存的black，用于回调。
  */
-@property (nonatomic,copy) GamaAlertViewHandler handler;
+@property (nonatomic,copy) SAlertViewHandler handler;
 
 /**
  *	@brief	创建一个AlertView代理对象，并且为该代理对象传递一个回调函数：
@@ -41,7 +41,7 @@ typedef void (^GamaAlertViewHandler)(NSInteger clickedBtnIndex);
  *
  *	@return	一个代理类型的对象。
  */
-+(GamaAlertViewDelegate *)creatDelegateWithBack:(GamaAlertViewHandler)oneHandler;
++(SAlertViewDelegate *)creatDelegateWithBack:(SAlertViewHandler)oneHandler;
 
 
 @end

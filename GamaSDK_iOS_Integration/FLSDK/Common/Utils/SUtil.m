@@ -1,4 +1,4 @@
-#import "GamaFunction.h"
+#import "SUtil.h"
 
 #import <SystemConfiguration/SystemConfiguration.h>
 #import "SdkHeader.h"
@@ -13,7 +13,7 @@
 #import <net/if.h>
 #import <net/if_dl.h>
 
-@implementation GamaFunction
+@implementation SUtil
 
 #pragma mark - 获取GamaCfUUID
 + (NSString *)getGamaUUID
@@ -31,22 +31,22 @@
 
 + (NSString *)getBundleName
 {
-    return [GamaFunction getProjectInfoPlist][@"CFBundleName"];
+    return [SUtil getProjectInfoPlist][@"CFBundleName"];
 }
 
 + (NSString *)getBundleIdentifier
 {
-    return [GamaFunction getProjectInfoPlist][@"CFBundleIdentifier"];
+    return [SUtil getProjectInfoPlist][@"CFBundleIdentifier"];
 }
 
 + (NSString *)getBundleShortVersionString
 {
-    return [GamaFunction getProjectInfoPlist][@"CFBundleShortVersionString"];
+    return [SUtil getProjectInfoPlist][@"CFBundleShortVersionString"];
 }
 
 + (NSString *)getBundleVersion
 {
-    return [GamaFunction getProjectInfoPlist][@"CFBundleVersion"];
+    return [SUtil getProjectInfoPlist][@"CFBundleVersion"];
 }
 
 #pragma mark - 获取时间戳
@@ -373,7 +373,7 @@
 {
     // 获取系统语言
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-    if ([GamaFunction getSystemVersion].intValue >= 9.0) {
+    if ([SUtil getSystemVersion].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
         NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
         NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
@@ -385,7 +385,7 @@
 
 + (NSString *)getServerLanguage{
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-    if ([GamaFunction getSystemVersion].intValue >= 9.0) {
+    if ([SUtil getSystemVersion].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
         NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
         NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];

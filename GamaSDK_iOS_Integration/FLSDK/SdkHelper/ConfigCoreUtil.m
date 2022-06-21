@@ -54,7 +54,7 @@ static dispatch_once_t onceToken;
         if ([am.account isEqualToString:mAccount]) {
             am.password = password;
             if (updateTime) {
-                am.lastLoginTime = [GamaFunction getTimeStamp];
+                am.lastLoginTime = [SUtil getTimeStamp];
             }
             [self saveAccountModels:mAccountArray];
             return;
@@ -63,7 +63,7 @@ static dispatch_once_t onceToken;
     NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
     AccountModel *mAccountModel = [[AccountModel alloc] init];
     //赋值
-    mAccountModel.lastLoginTime = [GamaFunction getTimeStamp];
+    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
     mAccountModel.account = mAccount;
     mAccountModel.password = password;
     [aar addObject:mAccountModel];
@@ -90,7 +90,7 @@ static dispatch_once_t onceToken;
         
     }
     
-    mAccountModel.lastLoginTime = [GamaFunction getTimeStamp];
+    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
     NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
     
     NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
@@ -222,17 +222,17 @@ static dispatch_once_t onceToken;
     NSDictionary * _commDic =
     @{
         // 公共的参数拼接
-        @"packageName"      :     [GamaFunction getBundleIdentifier],
-        @"adId"             :     [[GamaFunction getIdfa]       lowercaseString]? : @"",
-        @"idfa"             :     [[GamaFunction getIdfa]       lowercaseString]? : @"",
-        @"uuid"             :     [[GamaFunction getGamaUUID]     lowercaseString]? : @"",
-        @"versionName"      :     [GamaFunction getBundleShortVersionString]? : @"",
-        @"versionCode"      :     [GamaFunction getBundleVersion]? : @"",
-        @"systemVersion"    :     [GamaFunction getSystemVersion]? : @"",
-        @"deviceType"       :     [GamaFunction getDeviceType]? : @"",
+        @"packageName"      :     [SUtil getBundleIdentifier],
+        @"adId"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
+        @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
+        @"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
+        @"versionName"      :     [SUtil getBundleShortVersionString]? : @"",
+        @"versionCode"      :     [SUtil getBundleVersion]? : @"",
+        @"systemVersion"    :     [SUtil getSystemVersion]? : @"",
+        @"deviceType"       :     [SUtil getDeviceType]? : @"",
         @"operatingSystem"  :     @"ios",
         @"gameLanguage"     :     GAME_LANGUAGE,
-        @"osLanguage"       :     [GamaFunction getPreferredLanguage]? : @""
+        @"osLanguage"       :     [SUtil getPreferredLanguage]? : @""
         
     };
     

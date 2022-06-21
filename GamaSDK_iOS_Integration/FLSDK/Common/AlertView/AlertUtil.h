@@ -13,7 +13,7 @@
  代理提示：提示内容＋一个或多个选择按钮，选择按钮以后会有其他执行操作
  */
 #import <Foundation/Foundation.h>
-#import "GamaAlertViewDelegate.h"
+#import "SAlertViewDelegate.h"
 
 @interface AlertUtil : NSObject
 
@@ -41,7 +41,7 @@
  *	@return	一个AlertView。
  */
 +(UIAlertView *)showAlertWithMessage:(NSString *)message
-                          completion:(GamaAlertViewHandler)handler
+                          completion:(SAlertViewHandler)handler
                      andButtonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
@@ -56,7 +56,7 @@
  */
 + (UIAlertView *)showAlertViewWithTitle:(NSString *)title
                                 message:(NSString *)message
-                             completion:(GamaAlertViewHandler)handler
+                             completion:(SAlertViewHandler)handler
                            buttonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 

@@ -7,8 +7,8 @@
 //
 
 #import "AlertUtil.h"
-#import "UIAlertController+Gama.h""
-#import "ConfigHeader.h"
+#import "UIAlertController+Sdk.h"
+#import "SUtil.h"
 
 #define GamaAlertViewShowTime   2.0
 
@@ -30,7 +30,7 @@ static NSArray<UIViewController *> *presentViewControllers;
 
 //显示允许更多定制的方法
 +(UIAlertView *)showAlertWithMessage:(NSString *)message
-                          completion:(GamaAlertViewHandler)handler
+                          completion:(SAlertViewHandler)handler
                      andButtonTitles:(NSString *)buttonTitles,...
 {
  
@@ -55,7 +55,7 @@ static NSArray<UIViewController *> *presentViewControllers;
 //yao: 显示定制的alertView
 + (UIAlertView *)showAlertViewWithTitle:(NSString *)title
                                 message:(NSString *)message
-                             completion:(GamaAlertViewHandler)handler
+                             completion:(SAlertViewHandler)handler
                            buttonTitles:(NSString *)buttonTitles,...
 {
     
@@ -81,9 +81,9 @@ static NSArray<UIViewController *> *presentViewControllers;
 + (UIAlertView *)_showAlertViewWithTitle:(NSString *)title
                                  message:(NSString *)message
                             buttonTitles:(NSArray *)buttonTitles
-                              completion:(GamaAlertViewHandler)handler
+                              completion:(SAlertViewHandler)handler
 {
-    if ([GamaFunction getSystemVersion].intValue >= 8)//yao: 用alertController方法
+    if ([SUtil getSystemVersion].intValue >= 8)//yao: 用alertController方法
     {
         
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
@@ -114,7 +114,7 @@ static NSArray<UIViewController *> *presentViewControllers;
         UIAlertView * alert=[[UIAlertView alloc]initWithTitle:title
                                                       message:message
                                                      delegate:
-                             [GamaAlertViewDelegate creatDelegateWithBack:handler]
+                             [SAlertViewDelegate creatDelegateWithBack:handler]
                                             cancelButtonTitle:nil
                                             otherButtonTitles:nil];
         //添加各種按鈕
@@ -140,7 +140,7 @@ static NSArray<UIViewController *> *presentViewControllers;
                       sourceView:(UIView *)sourceView
                   arrowDirection:(UIPopoverArrowDirection)direction
 {
-    if ([GamaFunction getSystemVersion].intValue >= 8)
+    if ([SUtil getSystemVersion].intValue >= 8)
     {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
         
@@ -191,7 +191,7 @@ static NSArray<UIViewController *> *presentViewControllers;
     {
         UIActionSheet * actionSheet = [[UIActionSheet alloc] initWithTitle:title delegate:self cancelButtonTitle:cancelBtnTitle destructiveButtonTitle:destructiveBtnTitle otherButtonTitles:nil];
         
-        actionSheet.delegate = [GamaAlertViewDelegate creatDelegateWithBack:block];
+        actionSheet.delegate = [SAlertViewDelegate creatDelegateWithBack:block];
         
         if (otherButtonTitles.count > 0)
         {
@@ -200,7 +200,7 @@ static NSArray<UIViewController *> *presentViewControllers;
             }
         }
         
-        [actionSheet showInView:[GamaFunction getCurrentViewController].view];
+        [actionSheet showInView:[SUtil getCurrentViewController].view];
         
         //如果没有按钮，自动延迟消失
         if (cancelBtnTitle == nil && otherButtonTitles == nil) {

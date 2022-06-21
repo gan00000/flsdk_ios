@@ -25,17 +25,17 @@
     }
     
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
     
     //获取md5加密的值gamesPojo.getAppKey() + timestamp + name + pwd + newPwd + gameCode;
     NSMutableString * md5str=[[[NSMutableString alloc]init]autorelease];
     [md5str appendString:SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
-    [md5str appendString:[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
-    [md5str appendString:[[GamaFunction getMD5StrFromString:newPassword] lowercaseString]]; //新密码
+    [md5str appendString:[[SUtil getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
+    [md5str appendString:[[SUtil getMD5StrFromString:newPassword] lowercaseString]]; //新密码
     [md5str appendString:[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)]]; //gamecode
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
 
 
     NSDictionary *dic = nil;
@@ -47,8 +47,8 @@
                 @"timestamp"        :timeStamp,
                 @"gameCode"         :[NSString stringWithFormat:@"%@",GameCode],
                 @"name"             :[userName lowercaseString],
-                @"pwd"              :[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString],
-                @"newPwd"           :[[GamaFunction getMD5StrFromString:newPassword] lowercaseString],
+                @"pwd"              :[[SUtil getMD5StrFromString:oldPassword] lowercaseString],
+                @"newPwd"           :[[SUtil getMD5StrFromString:newPassword] lowercaseString],
                 };
     } @catch (NSException *exception) {
         dispatch_async(dispatch_get_main_queue(),^

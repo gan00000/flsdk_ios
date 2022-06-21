@@ -2,7 +2,7 @@
 //  ConfigHeader.h
 //
 #import "GamaSecurity.h"
-#import "GamaFunction.h"
+#import "SUtil.h"
 #import "AlertUtil.h"
 #import "GamaCoreConfReader.h"
 #import "SdkUserInfoModel.h"
@@ -17,7 +17,7 @@
 #define GetString(key) [SDKConReader getLocalizedStringForKey:key]
 
 
-#define Device_Is_Landscape  ![GamaFunction deviceIsPortrait]
+#define Device_Is_Landscape  ![SUtil deviceIsPortrait]
 
 #define GAME_CODE [SDKConReader getGameCode]
 #define APP_KEY   [SDKConReader getAppkey]

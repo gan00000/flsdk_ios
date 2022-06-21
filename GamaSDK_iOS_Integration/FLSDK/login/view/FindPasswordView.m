@@ -268,7 +268,7 @@
     NSDictionary *otherParamsDic = nil;
     @try {
         otherParamsDic = @{
-            @"newPwd"        :[GamaFunction getMD5StrFromString:newPwd],
+            @"newPwd"        :[SUtil getMD5StrFromString:newPwd],
         };
         
     } @catch (NSException *exception) {

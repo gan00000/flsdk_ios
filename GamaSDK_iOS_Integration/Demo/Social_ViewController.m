@@ -8,7 +8,7 @@
 
 #import "Social_ViewController.h"
 #import "GamaSDK+Social.h"
-#import "GamaFunction.h"
+#import "SUtil.h"
 #import "AlertUtil.h"
 @interface Social_ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *buttonsArray;

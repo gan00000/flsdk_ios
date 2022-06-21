@@ -43,7 +43,7 @@
     NSString * decryptRoleName=[GamaIapData defaultData].roleName;
     NSString * encryptRoleName=[self iapEncryptFromString:decryptRoleName];
         //
-    NSString * decryptTransactionDate=[GamaFunction getTimeDate];
+    NSString * decryptTransactionDate=[SUtil getTimeDate];
     NSString * encryptTransactionDate=[self iapEncryptFromString:decryptTransactionDate];
     
     

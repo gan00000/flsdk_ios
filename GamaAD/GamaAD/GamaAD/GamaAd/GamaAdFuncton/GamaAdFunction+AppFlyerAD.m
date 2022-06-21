@@ -29,7 +29,7 @@
             case ADTrackTypeInit: // AppFlyer配置初始化
                 [gamaShareTracker setAppsFlyerDevKey:appFlyerDevKey];
                 [gamaShareTracker setAppleAppID:appFlyerAppId];
-                [gamaShareTracker setCustomerUserID:[GamaFunction getGamaUUID]];
+                [gamaShareTracker setCustomerUserID:[SUtil getGamaUUID]];
                 [gamaShareTracker setCurrencyCode:appFlyerCurrencyCode];
                 break;
             case ADTrackTypeLanch: // 跟踪BecomeActive事件

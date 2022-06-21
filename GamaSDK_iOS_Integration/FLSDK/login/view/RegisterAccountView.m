@@ -327,7 +327,7 @@
 
 -(void)requestBindMac:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
-    NSString *loginId = [GamaFunction getGamaUUID];
+    NSString *loginId = [SUtil getGamaUUID];
     [SDKRequest doAccountBindingWithUserName:name
                                     password:password
                                phoneAreaCode:areaCode

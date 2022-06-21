@@ -1,17 +1,17 @@
 //
 //
 
-#import "UIAlertController+Gama.h"
+#import "UIAlertController+Sdk.h"
 #import <objc/runtime.h>
 //#import "gamaCenter.h"
 
-@interface UIAlertController (Gama)
+@interface UIAlertController (Sdk)
 
 @property (nonatomic, strong) UIWindow *alertWindow;
 
 @end
 
-@implementation UIAlertController (Gama)
+@implementation UIAlertController (Sdk)
 
 @dynamic alertWindow;
 

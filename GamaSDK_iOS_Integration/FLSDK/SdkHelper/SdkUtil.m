@@ -89,9 +89,9 @@
 {
     NSMutableString *gamaUrlStr = [[NSMutableString alloc] init];
     
-    NSString *timeStamp = [GamaFunction getTimeStamp];
+    NSString *timeStamp = [SUtil getTimeStamp];
     // md5 和第三方充值的 sign 规则一样  appkey+gamecode(无ios)+timestamp
-    NSString *signature = [GamaFunction getMD5StrFromString:[NSString stringWithFormat:@"%@%@%@",
+    NSString *signature = [SUtil getMD5StrFromString:[NSString stringWithFormat:@"%@%@%@",
                                                            GetConfigString(GAMA_GAME_KEY),
                                                            GetConfigString(SDK_GAME_CODE),
                                                            timeStamp
@@ -115,23 +115,23 @@
                 @"psid"                     :           @"62",
                 
                 // public
-                @"packageName"      :     [GamaFunction getBundleIdentifier],
-                @"mac"              :     [[GamaFunction getMacaddress] lowercaseString],
-                @"idfa"             :     [[GamaFunction getIdfa]       lowercaseString],
-                @"uuid"             :     [[GamaFunction getGamaUUID]     lowercaseString],
-                @"versionName"      :     [GamaFunction getBundleShortVersionString],
-                @"versionCode"      :     [GamaFunction getBundleVersion],
-                @"systemVersion"    :     [GamaFunction getSystemVersion],
-                @"deviceType"       :     [GamaFunction getDeviceType],
+                @"packageName"      :     [SUtil getBundleIdentifier],
+                @"mac"              :     [[SUtil getMacaddress] lowercaseString],
+                @"idfa"             :     [[SUtil getIdfa]       lowercaseString],
+                @"uuid"             :     [[SUtil getGamaUUID]     lowercaseString],
+                @"versionName"      :     [SUtil getBundleShortVersionString],
+                @"versionCode"      :     [SUtil getBundleVersion],
+                @"systemVersion"    :     [SUtil getSystemVersion],
+                @"deviceType"       :     [SUtil getDeviceType],
                 @"operatingSystem"  :     @"ios",
                 @"gameLanguage"     :     GAME_LANGUAGE,
-                @"osLanguage"       :     [GamaFunction getPreferredLanguage],
+                @"osLanguage"       :     [SUtil getPreferredLanguage],
                 
                 @"loginTimestamp"   :     [SdkUserInfoModel shareInfoModel].timestamp ?
                 [SdkUserInfoModel shareInfoModel].timestamp : @"",
                 @"accessToken"      :     [SdkUserInfoModel shareInfoModel].accessToken ?
                 [SdkUserInfoModel shareInfoModel].accessToken : @"",
-                @"uniqueId"         :     [[GamaFunction getGamaUUID] lowercaseString],
+                @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString],
                 };
     }
     @catch (NSException *exception)
@@ -158,7 +158,7 @@
         
         [appendStr appendFormat:@"%@=%@&",
          key,
-         [GamaFunction urlEcodingFromString:tmpVal]
+         [SUtil urlEcodingFromString:tmpVal]
          
          ];
     }

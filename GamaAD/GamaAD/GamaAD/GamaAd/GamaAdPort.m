@@ -62,10 +62,10 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *lastLoginDate = [userDefaults objectForKey:kUserLoginDatetimeKey];
     if (lastLoginDate == nil || [lastLoginDate isEqualToString:@""]) {
-        [userDefaults setObject:[GamaFunction getTimeDate] forKey:kUserLoginDatetimeKey];
+        [userDefaults setObject:[SUtil getTimeDate] forKey:kUserLoginDatetimeKey];
         [userDefaults synchronize];
     } else {
-        int ci = [self compareDate:[GamaFunction getTimeDate] withDate:lastLoginDate];
+        int ci = [self compareDate:[SUtil getTimeDate] withDate:lastLoginDate];
         if (ci == -1) {
             [GamaAdFunction appFlayerTrackWith:ADTrackTypeNextDayLogin];
         }

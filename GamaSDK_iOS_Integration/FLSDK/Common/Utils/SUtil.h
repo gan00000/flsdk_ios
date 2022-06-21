@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GamaFunction : NSObject
+@interface SUtil : NSObject
 {}
 
 

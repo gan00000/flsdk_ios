@@ -263,7 +263,7 @@
 
 - (void)showPurchasingView
 {
-    if ([GamaFunction getSystemVersion].floatValue >= 8.0) {
+    if ([SUtil getSystemVersion].floatValue >= 8.0) {
         if (self.uiAlertpurchsingController) {
             return;
         }
@@ -275,10 +275,10 @@
     
     NSString *tmpMes = SDKConReaderGetLocalizedString(@"_PAYING_");
 
-    if ([GamaFunction getSystemVersion].floatValue >= 8.0) {
+    if ([SUtil getSystemVersion].floatValue >= 8.0) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:tmpMes preferredStyle:UIAlertControllerStyleAlert];
         
-        [[GamaFunction getCurrentViewController] presentViewController:alertController animated:YES completion:nil];
+        [[SUtil getCurrentViewController] presentViewController:alertController animated:YES completion:nil];
         self.uiAlertpurchsingController = alertController;
     } else {
         UIAlertView *tempView = [[[UIAlertView alloc] initWithTitle:@"" message:tmpMes delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil] autorelease];
@@ -295,7 +295,7 @@
 
 - (void)dismissPurchasingView
 {
-    if ([GamaFunction getSystemVersion].floatValue >= 8.0) {
+    if ([SUtil getSystemVersion].floatValue >= 8.0) {
         if (self.uiAlertpurchsingController) {
             [self.uiAlertpurchsingController dismissViewControllerAnimated:YES completion:nil];
             self.uiAlertpurchsingController = nil;

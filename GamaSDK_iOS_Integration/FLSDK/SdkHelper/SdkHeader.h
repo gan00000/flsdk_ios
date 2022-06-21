@@ -14,7 +14,7 @@
 #import "ConfigCoreUtil.h"
 #import "LoginResponse.h"
 #import "CComHeader.h" //最基本
-#import "GamaFunction.h"  //功能相关
+#import "SUtil.h"  //功能相关
 #import "ConfigHeader.h" //功能相关
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
@@ -51,10 +51,10 @@
 
 #define GetImage(imageName)     [UIImage gama_imageNamed:imageName]
 
-#define appTopViewController    [GamaFunction getCurrentViewController]
+#define appTopViewController    [SUtil getCurrentViewController]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 // ------ 是否是 iPhoneX
-#define device_is_iPhoneX   [GamaFunction isIPhoneXSeries]
+#define device_is_iPhoneX   [SUtil isIPhoneXSeries]
 
 #define Guest_Login_Tipe_OK  @"Guest_Login_Tipe_OK" //游客登录成功通知
 #define SDK_AUTO_LOGIN_FAIL @"SDK_AUTO_LOGIN_FAIL"  //自动登录失败通知

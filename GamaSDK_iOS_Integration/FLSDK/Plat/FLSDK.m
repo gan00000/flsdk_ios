@@ -59,7 +59,7 @@
 //#import "NSString+GamaURLEncoding.h"
 //#import "KRAgeSystemView.h"
 #import "SDKLoginViewController.h"
-#import "GamaFunction.h"
+#import "SUtil.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -223,7 +223,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
         SDK_LOG(@"not def __IPHONE_8_0");
     #endif
 //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
-        [[GamaFunction getCurrentViewController] presentViewController: controller animated:NO completion:^{
+        [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
     
         }];
 }

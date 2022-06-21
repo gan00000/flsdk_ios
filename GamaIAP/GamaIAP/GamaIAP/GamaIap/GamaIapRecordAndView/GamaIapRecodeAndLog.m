@@ -201,7 +201,7 @@
 +(void)recodeExceptionOrderWithTransactionID:(NSString *)transID
                           andTransactionData:(NSData *)transData;
 {
-    NSString * BASE64str=[GamaFunction encode:(uint8_t *)transData.bytes
+    NSString * BASE64str=[SUtil encode:(uint8_t *)transData.bytes
                                        length:transData.length];
     
     

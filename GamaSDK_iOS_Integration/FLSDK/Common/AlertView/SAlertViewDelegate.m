@@ -6,17 +6,17 @@
 //
 //
 
-#import "GamaAlertViewDelegate.h"
+#import "SAlertViewDelegate.h"
 
-@implementation GamaAlertViewDelegate
+@implementation SAlertViewDelegate
 
 @synthesize handler;
 
 
 //创建一个代理对象，设置回调方法
-+(GamaAlertViewDelegate *)creatDelegateWithBack:(GamaAlertViewHandler)oneHandler
++(SAlertViewDelegate *)creatDelegateWithBack:(SAlertViewHandler)oneHandler
 {
-    GamaAlertViewDelegate * alertViewDelegate=[[GamaAlertViewDelegate alloc]init];
+    SAlertViewDelegate * alertViewDelegate=[[SAlertViewDelegate alloc]init];
     alertViewDelegate.handler=oneHandler;
     return alertViewDelegate;
 }

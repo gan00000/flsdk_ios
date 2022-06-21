@@ -29,10 +29,10 @@
 		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
 		032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SdkUserInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		032AB8BC285A006600F1FD3B /* GamaFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* GamaFunction.m */; };
+		032AB8BC285A006600F1FD3B /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
 		032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* ConfigHeader.m */; };
-		032AB8BE285A006600F1FD3B /* GamaAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */; };
-		032AB8BF285A006600F1FD3B /* UIAlertController+Gama.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */; };
+		032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
+		032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
 		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
 		032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C2285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -275,15 +275,15 @@
 		032AB897285A006600F1FD3B /* SdkUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
 		032AB898285A006600F1FD3B /* SdkUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkUserInfoModel.m; sourceTree = "<group>"; };
 		032AB899285A006600F1FD3B /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
-		032AB89A285A006600F1FD3B /* GamaFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaFunction.h; sourceTree = "<group>"; };
+		032AB89A285A006600F1FD3B /* SUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUtil.h; sourceTree = "<group>"; };
 		032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCoreConfReader.m; sourceTree = "<group>"; };
-		032AB89D285A006600F1FD3B /* GamaFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaFunction.m; sourceTree = "<group>"; };
+		032AB89D285A006600F1FD3B /* SUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUtil.m; sourceTree = "<group>"; };
 		032AB89E285A006600F1FD3B /* ConfigHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigHeader.m; sourceTree = "<group>"; };
-		032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaAlertViewDelegate.m; sourceTree = "<group>"; };
+		032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAlertViewDelegate.m; sourceTree = "<group>"; };
 		032AB8A1285A006600F1FD3B /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
-		032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Gama.m"; sourceTree = "<group>"; };
-		032AB8A3285A006600F1FD3B /* GamaAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaAlertViewDelegate.h; sourceTree = "<group>"; };
-		032AB8A4285A006600F1FD3B /* UIAlertController+Gama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Gama.h"; sourceTree = "<group>"; };
+		032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Sdk.m"; sourceTree = "<group>"; };
+		032AB8A3285A006600F1FD3B /* SAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAlertViewDelegate.h; sourceTree = "<group>"; };
+		032AB8A4285A006600F1FD3B /* UIAlertController+Sdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Sdk.h"; sourceTree = "<group>"; };
 		032AB8A5285A006600F1FD3B /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
 		032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
 		032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
@@ -723,15 +723,12 @@
 		032AB889285A006600F1FD3B /* CoreUtil */ = {
 			isa = PBXGroup;
 			children = (
-				032AB89F285A006600F1FD3B /* GamaAlertView */,
 				032AB899285A006600F1FD3B /* ConfigHeader.h */,
 				032AB89E285A006600F1FD3B /* ConfigHeader.m */,
 				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
 				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
 				032AB896285A006600F1FD3B /* GamaCoreData */,
 				032AB890285A006600F1FD3B /* GamaCoreSecurity */,
-				032AB89A285A006600F1FD3B /* GamaFunction.h */,
-				032AB89D285A006600F1FD3B /* GamaFunction.m */,
 				032AB8A7285A006600F1FD3B /* GamaFunctionAppendant */,
 			);
 			path = CoreUtil;
@@ -757,17 +754,17 @@
 			path = GamaCoreData;
 			sourceTree = "<group>";
 		};
-		032AB89F285A006600F1FD3B /* GamaAlertView */ = {
+		032AB89F285A006600F1FD3B /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
 				032AB8A1285A006600F1FD3B /* AlertUtil.h */,
 				032AB8A5285A006600F1FD3B /* AlertUtil.m */,
-				032AB8A3285A006600F1FD3B /* GamaAlertViewDelegate.h */,
-				032AB8A0285A006600F1FD3B /* GamaAlertViewDelegate.m */,
-				032AB8A4285A006600F1FD3B /* UIAlertController+Gama.h */,
-				032AB8A2285A006600F1FD3B /* UIAlertController+Gama.m */,
+				032AB8A3285A006600F1FD3B /* SAlertViewDelegate.h */,
+				032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */,
+				032AB8A4285A006600F1FD3B /* UIAlertController+Sdk.h */,
+				032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */,
 			);
-			path = GamaAlertView;
+			path = AlertView;
 			sourceTree = "<group>";
 		};
 		032AB8A7285A006600F1FD3B /* GamaFunctionAppendant */ = {
@@ -932,6 +929,10 @@
 		03F59A48285776460062B6EE /* GCategory */ = {
 			isa = PBXGroup;
 			children = (
+				E974127E20874A170018E1A6 /* UIColor+HexColor.h */,
+				E974127F20874A170018E1A6 /* UIColor+HexColor.m */,
+				322CBC7B24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.h */,
+				322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */,
 				E99EB28821BE5633004FF8B5 /* UIScreen+Sdk.h */,
 				E99EB28921BE5633004FF8B5 /* UIScreen+Sdk.m */,
 				032AB8AE285A006600F1FD3B /* NSString+URLEncoding.h */,
@@ -1066,6 +1067,7 @@
 		322CBBA224C589A5000D6B20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				032AB89F285A006600F1FD3B /* AlertView */,
 				03F59A48285776460062B6EE /* GCategory */,
 				322CBBBA24C589A5000D6B20 /* CComHeader.h */,
 				322CBBD524C589A5000D6B20 /* Utils */,
@@ -1079,10 +1081,8 @@
 		322CBBD524C589A5000D6B20 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E974127E20874A170018E1A6 /* UIColor+HexColor.h */,
-				E974127F20874A170018E1A6 /* UIColor+HexColor.m */,
-				322CBC7B24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.h */,
-				322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */,
+				032AB89A285A006600F1FD3B /* SUtil.h */,
+				032AB89D285A006600F1FD3B /* SUtil.m */,
 				322CBBD724C589A5000D6B20 /* UIUtil.h */,
 				322CBBDA24C589A5000D6B20 /* UIUtil.m */,
 				03669947285E26890008EB50 /* StringUtil.h */,
@@ -1545,7 +1545,7 @@
 				3295E2E724DAEDDE00B85976 /* BJServiceConfigurator.m in Sources */,
 				03FA12D42853565200BBBEB4 /* WelcomeBackView.m in Sources */,
 				3295E2E824DAEDDE00B85976 /* SDKRequest.m in Sources */,
-				032AB8BC285A006600F1FD3B /* GamaFunction.m in Sources */,
+				032AB8BC285A006600F1FD3B /* SUtil.m in Sources */,
 				03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */,
 				032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */,
 				3295E2E924DAEDDE00B85976 /* FLSDK.m in Sources */,
@@ -1613,7 +1613,7 @@
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
 				E9DC839821BF9F750035F8CA /* UIScreen+Sdk.m in Sources */,
 				03B919292860AECB0029AE6A /* MASCompositeConstraint.m in Sources */,
-				032AB8BF285A006600F1FD3B /* UIAlertController+Gama.m in Sources */,
+				032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */,
 				03B9192C2860AECB0029AE6A /* NSArray+MASAdditions.m in Sources */,
 				03B919382860AECB0029AE6A /* SDWebImageCompat.m in Sources */,
 				03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */,
@@ -1626,7 +1626,7 @@
 				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
 				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
 				03B9192D2860AECB0029AE6A /* View+MASAdditions.m in Sources */,
-				032AB8BE285A006600F1FD3B /* GamaAlertViewDelegate.m in Sources */,
+				032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */,
 				E947D352221ED76200490C35 /* GamaInterfaceSDK.m in Sources */,
 				E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */,
 				032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */,

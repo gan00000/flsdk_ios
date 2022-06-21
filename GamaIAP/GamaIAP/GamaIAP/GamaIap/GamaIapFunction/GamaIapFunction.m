@@ -73,7 +73,7 @@
         return;
     }
     //3 检查网络是否异常
-    if (![GamaFunction connectedToNetWork])
+    if (![SUtil connectedToNetWork])
     {
         GAMA_IAP_LOG(@"check no net")
         //提示原因
@@ -143,9 +143,9 @@
     NSMutableString * logStr=[[[NSMutableString alloc]init]autorelease];
     [logStr appendFormat:@"厂商传递过来空值:%@(*#)",log];
     [logStr appendFormat:@"***********************(*#)"];
-    [logStr appendFormat:@"mac=%@(*#)",[GamaFunction getMacaddress]];
-    [logStr appendFormat:@"idfa=%@(*#)",[GamaFunction getIdfa]];
-    [logStr appendFormat:@"ip=%@(*#)",[GamaFunction getIPAddress]];
+    [logStr appendFormat:@"mac=%@(*#)",[SUtil getMacaddress]];
+    [logStr appendFormat:@"idfa=%@(*#)",[SUtil getIdfa]];
+    [logStr appendFormat:@"ip=%@(*#)",[SUtil getIPAddress]];
     [logStr appendFormat:@"gameCode=%@(*#)",SDKConReaderGetString(SDK_GAME_CODE)];
     [logStr appendFormat:@"gameKey=%@(*#)",SDKConReaderGetString(GAMA_GAME_KEY)];
     //创建一个请求:
@@ -201,7 +201,7 @@
     
     //验证字符串,如果是8.0以上的系统，通过新的方式获取到receiptData
     //if ([GamaFunction getSystemVersion].intValue >= 8)
-    if ([GamaFunction getSystemVersion].floatValue >= 7.0)
+    if ([SUtil getSystemVersion].floatValue >= 7.0)
     {
         NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
         receiptData = [NSData dataWithContentsOfURL:receiptUrl];
@@ -222,7 +222,7 @@
         [self postBuyLogToServerWithDomainName:SDKConReaderGetString(GAMA_IAP_DOMAIN_NAME)
                                    andRoleName:[GamaIapData defaultData].roleName
                               andTransactionId:[GamaIapData defaultData].transactionID
-                                       andDate:[GamaFunction getTimeDate]];
+                                       andDate:[SUtil getTimeDate]];
         return;
     }
     
@@ -240,7 +240,7 @@
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
     
     NSString * parameterStr=nil;
-    if ([GamaFunction getSystemVersion].intValue < 7)
+    if ([SUtil getSystemVersion].intValue < 7)
     {
         [GAMA_IAP_LOG insertOneDescription:@"检查iOS版本<7,开始尝试获取requestData"];
         parameterStr = [[[NSString alloc]initWithData:transaction.payment.requestData encoding:NSUTF8StringEncoding] autorelease];
@@ -367,7 +367,7 @@
                        transactionId,
                        [GamaIapData defaultData].orderId,
                        date,
-                       [GamaFunction urlEcodingFromString:log]];
+                       [SUtil urlEcodingFromString:log]];
     GAMA_IAP_LOG(logStr)
     NSString * logLength=[NSString stringWithFormat:@"log string length %lu",(unsigned long)log.length];
     GAMA_IAP_LOG(logLength)
@@ -409,7 +409,7 @@
                 [self postBuyLogToServerWithDomainName:SDKConReaderGetString(GAMA_IAP_SPASE_DOMAIN_NAME)
                                                andRoleName:[GamaIapData defaultData].roleName
                                           andTransactionId:[GamaIapData defaultData].transactionID
-                                                   andDate:[GamaFunction getTimeDate]];
+                                                   andDate:[SUtil getTimeDate]];
                 return ;
             }
             GAMA_IAP_LOG(@"post log no net");

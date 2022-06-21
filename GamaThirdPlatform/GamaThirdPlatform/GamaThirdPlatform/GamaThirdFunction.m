@@ -26,7 +26,7 @@
     [[SdkUserInfoModel shareInfoModel] setLoginTypeWithStr:thirdPlate];
     
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
        
     //facebook的businessToken
     businessToken = !businessToken?@"":businessToken; 
@@ -39,7 +39,7 @@
     [md5str appendFormat:@"%@",[thirdId lowercaseString]]; //用户名
     [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
     isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
     NSDictionary *additionDic = nil;
@@ -215,7 +215,7 @@
     [[SdkUserInfoModel shareInfoModel] setLoginTypeWithStr:thirdPlate];
     
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
        
     //facebook的businessToken
     businessToken = !businessToken?@"":businessToken;
@@ -228,7 +228,7 @@
     [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];//gamecode
     [md5str appendFormat:@"%@",[thirdId lowercaseString]]; //用户名
     [md5str appendFormat:@"%@",thirdPlate]; //registPlatform
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
     NSDictionary *additionDic = nil;
@@ -351,18 +351,18 @@
     }
     
     //获取时间戳
-    NSString * timeStamp=[GamaFunction getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[[NSMutableString alloc] init] autorelease];
     [md5str appendFormat:@"%@",SDKConReaderGetString(GAMA_GAME_KEY)]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
-    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",[[SUtil getMD5StrFromString:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)];
     [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
     [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
-    NSString * md5SignStr=[GamaFunction getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
     
     NSDictionary *dic = nil;
     NSDictionary *additionDic = addParams;
@@ -373,7 +373,7 @@
                 @"timestamp"        :timeStamp,
                 @"gameCode"         :[NSString stringWithFormat:@"%@",SDKConReaderGetString(SDK_GAME_CODE)],
                 @"name"             :[userName lowercaseString],
-                @"pwd"              :[[GamaFunction getMD5StrFromString:password] lowercaseString],
+                @"pwd"              :[[SUtil getMD5StrFromString:password] lowercaseString],
                 @"thirdPlatId"      :[thirdId lowercaseString],
                 @"registPlatform"   :[thirdPlate lowercaseString],
                 };
