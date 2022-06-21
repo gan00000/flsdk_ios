@@ -24,11 +24,11 @@
 
 @implementation IAP_ViewController
 
-- (void)dealloc {
-    [_iapTable release];
-    [_dataSource release];
-    [super dealloc];
-}
+//- (void)dealloc {
+//    [_iapTable release];
+//    [_dataSource release];
+//    [super dealloc];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,7 +56,7 @@
     static NSString *cellIde = @"cell_identifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIde];
     if (!cell) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIde] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIde];
     }
     
     if (0 == indexPath.row) {

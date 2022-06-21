@@ -52,7 +52,7 @@
 #pragma mark - 获取时间戳
 +(NSString *)getTimeStamp
 {
-    double secondTime=[[[[NSDate alloc]init] autorelease]timeIntervalSince1970];
+    double secondTime=[[[NSDate alloc] init] timeIntervalSince1970];
     double millisecondTime=secondTime*1000;
     NSString * millisecondTimeStr=[NSString stringWithFormat:@"%f",millisecondTime];
     NSRange pointRange=[millisecondTimeStr rangeOfString:@"."];
@@ -278,7 +278,7 @@
 +(NSString *)getTimeDate
 {
     NSDate * nowDate=[NSDate date];
-    NSDateFormatter * dateFormatter=[[[NSDateFormatter alloc] init]autorelease];
+    NSDateFormatter * dateFormatter= [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd_HH:mm"];
     NSString *  locationString=[dateFormatter stringFromDate:nowDate];
     return locationString;
@@ -323,7 +323,7 @@
 +(NSDictionary*)parseURLParams:(NSString *)query
 {
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
-    NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     for (NSString *pair in pairs)
     {
         NSArray *kv = [pair componentsSeparatedByString:@"="];
@@ -358,7 +358,7 @@
         output[index + 2] = (i + 1) < length ? table[(value >> 6)  & 0x3F] : '=';
         output[index + 3] = (i + 2) < length ? table[(value >> 0)  & 0x3F] : '=';
     }
-    return [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] autorelease];
+    return [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 }
 
 #pragma mark - URL转码

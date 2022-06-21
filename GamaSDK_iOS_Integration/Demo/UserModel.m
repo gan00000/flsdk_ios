@@ -13,21 +13,20 @@
 @synthesize pushToken = _pushToken;
 
 static UserModel *_instanceUserModel = nil;
-
-- (void)dealloc
-{
-    [_sUserID release];_sUserID = nil;
-    [_gameRoleID release];_gameRoleID = nil;
-    [_gameRoleName release];_gameRoleName = nil;
-    [_gameRoleLevel release];_gameRoleLevel = nil;
-    [_gaemServerName release];_gaemServerName = nil;
-    [_gameServerID release];_gameServerID = nil;
-    [_gameVipLevel release];_gameVipLevel = nil;
-    [_gameLanguage release];_gameLanguage = nil;
-    [_gamaAccessToken release];_gamaAccessToken = nil;
-    [_gamaTimestamp release];_gamaTimestamp = nil;
-    [super dealloc];
-}
+//
+//- (void)dealloc
+//{
+//    _sUserID = nil;
+//    _gameRoleID = nil;
+//    _gameRoleName = nil;
+//    _gameRoleLevel = nil;
+//    _gaemServerName = nil;
+//    _gameServerID = nil;
+//    _gameVipLevel = nil;
+//    _gameLanguage = nil;
+//    _gamaAccessToken = nil;
+//    _gamaTimestamp = nil;
+//}
 
 + (UserModel *)sharedUser
 {

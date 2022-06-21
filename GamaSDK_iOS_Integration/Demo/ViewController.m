@@ -35,10 +35,10 @@
 
 - (void)dealloc
 {
-    [_buttonsTable release];
-    [_buttonsArray release];
+//    [_buttonsTable release];
+//    [_buttonsArray release];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [super dealloc];
+//    [super dealloc];
 }
 
 
@@ -72,7 +72,7 @@
     
     [self.view setBackgroundColor:[UIColor clearColor]];
     
-    self.buttonsTable = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)] autorelease];
+    self.buttonsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     _buttonsTable.delegate = self;
     _buttonsTable.dataSource = self;
     [self.view addSubview:_buttonsTable];
@@ -146,7 +146,7 @@
     UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:indetity];
     if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indetity] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indetity];
     }
     
     cell.textLabel.text = [_buttonsArray objectAtIndex:indexPath.row];
@@ -210,7 +210,7 @@
              *********************************************/
         case 3:
         {
-            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
+//            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
 
         }
             break;
@@ -225,7 +225,7 @@
         }
             break;
         case 6:{
-            [[FLSDK share] openWebPage:nil];
+//            [[FLSDK share] openWebPage:nil];
         }
             break;
         case 7:{

@@ -38,9 +38,9 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 //    NSString *printfPath = [keyPath stringByAppendingFormat:@"/Caches/%@",printFileName];
 //    [context writeToFile:printfPath atomically:NO encoding:NSUTF8StringEncoding error:nil];
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    ViewController *viewController = [[[ViewController alloc] init] autorelease];
+    ViewController *viewController = [[ViewController alloc] init];
     self.window.rootViewController = viewController;
     
 //    [application registerForRemoteNotifications];
@@ -110,9 +110,9 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 //    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 //}
 
-- (void)dealloc {
-    [_window release];_window = nil;
-    [super dealloc];
-}
+//- (void)dealloc {
+//    [_window release];_window = nil;
+//    [super dealloc];
+//}
 
 @end

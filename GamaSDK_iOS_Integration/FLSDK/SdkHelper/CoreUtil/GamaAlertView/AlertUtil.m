@@ -7,7 +7,7 @@
 //
 
 #import "AlertUtil.h"
-
+#import "UIAlertController+Gama.h""
 #import "ConfigHeader.h"
 
 #define GamaAlertViewShowTime   2.0
@@ -124,7 +124,7 @@ static NSArray<UIViewController *> *presentViewControllers;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [alert show];
-            [alert autorelease];
+            
         });
         return alert;
     }

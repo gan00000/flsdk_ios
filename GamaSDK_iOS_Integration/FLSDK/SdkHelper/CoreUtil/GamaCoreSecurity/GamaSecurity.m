@@ -19,7 +19,7 @@
 {
     NSData * encryptData=[GamaBase64Encoding decode:beforeDecryptString];
     NSData * decryptData=[encryptData gama_AES128DecryptWithKey:key iv:iv];
-    NSString * decryptStr=[[[NSString alloc]initWithData:decryptData encoding:NSUTF8StringEncoding]autorelease];
+    NSString * decryptStr=[[NSString alloc]initWithData:decryptData encoding:NSUTF8StringEncoding];
     return decryptStr;
 }
 

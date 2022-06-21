@@ -54,8 +54,7 @@ static char gamaDecodingTable[128];
         output[index + 3] = (i + 2) < length ? encodingTable[(value >> 0)  & 0x3F] : '=';
     }
     //他妈，之前没有autorelease，函数返回值，一定记得autorelease，内存不能坑爹有木有
-    return [[[NSString alloc] initWithData:data
-                                  encoding:NSASCIIStringEncoding]autorelease];
+    return [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 }
 
 + (NSString*) encode:(NSData*) rawBytes

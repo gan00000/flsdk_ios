@@ -26,7 +26,7 @@
      ***********************************************/
     [self.view setBackgroundColor:[UIColor clearColor]];
     
-    self.buttonsTable = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)] autorelease];
+    self.buttonsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     _buttonsTable.delegate = self;
     _buttonsTable.dataSource = self;
     [self.view addSubview:_buttonsTable];

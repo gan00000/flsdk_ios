@@ -53,8 +53,8 @@
 
 - (void)config
 {
-    self.alertWindow = [[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds] autorelease];
-    self.alertWindow.rootViewController = [[[UIViewController alloc] init] autorelease];
+    self.alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.alertWindow.rootViewController = [[UIViewController alloc] init];
     
     id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
     // Applications that does not load with UIMainStoryboardFile might not have a window property:
