@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flyfun_open</key>
+	<string>myc4i3</string>
+	<key>flyfun_register_event</key>
+	<string>6ceaa4</string>
+	<key>flyfun_10min</key>
+	<string>o88gmq</string>
+	<key>flyfun_15retention</key>
+	<string>ytqh4g</string>
+	<key>flyfun_1retention</key>
+	<string>4lq8j6</string>
+	<key>flyfun_20min</key>
+	<string>57ioo0</string>
+	<key>flyfun_30min</key>
+	<string>v3h6af</string>
+	<key>flyfun_30retention</key>
+	<string>18ekns</string>
+	<key>flyfun_3retention</key>
+	<string>e57j76</string>
+	<key>flyfun_7retention</key>
+	<string>4xvwgk</string>
+	<key>flyfun_8min</key>
+	<string>vog6sj</string>
+	<key>flyfun_firstpay</key>
+	<string>ij6qdi</string>
+	<key>flyfun_login_event</key>
+	<string>a0kgjz</string>
+	<key>flyfun_role_info</key>
+	<string>qawcl7</string>
+	<key>in_app_purchases</key>
+	<string>8aryij</string>
+	<key>install</key>
+	<string>kss4pt</string>
+</dict>
+</plist>
