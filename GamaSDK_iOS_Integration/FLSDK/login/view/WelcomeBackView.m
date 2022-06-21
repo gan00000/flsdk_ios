@@ -24,13 +24,9 @@
 #import "TermsView.h"
 #import "AccountLoginView.h"
 #import "AccountListView.h"
-#import "SDKRequest.h"
+#import "LoginHelper.h"
 
-static  NSString *AccountListViewCellID = @"AccountListViewCellID";
-
-@interface WelcomeBackView() <UITableViewDelegate, UITableViewDataSource>
-    
-
+@interface WelcomeBackView()
 
 @end
 
@@ -275,6 +271,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         //        make.edges.mas_equalTo(self);
         
     }];
+    kBlockSelf
     kWeakSelf
     accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
         
@@ -282,9 +279,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
             
         }else{//选择
             currentAccountModel = aModel;
-            accountSDKTextFiledView.moreAccountBtn.selected = NO;
-            [AccountLoginView makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:nil];
-            [self setViewStatue];
+            blockSelf->accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:blockSelf->accountSDKTextFiledView pwdView:nil];
+            [weakSelf setViewStatue];
         }
         
     };
@@ -413,65 +410,26 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         return;
     }
     if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
-        kWeakSelf
-        [SDKRequest doLoginWithAccount:currentAccountModel.account andPassword:currentAccountModel.password otherDic:nil successBlock:^(id responseData) {
-            
-            if (weakSelf.delegate) {
-                LoginResponse *cc = (LoginResponse *)responseData;
-                cc.data.account = currentAccountModel.account;
-                cc.data.password = currentAccountModel.password;
-                cc.data.loginType = LOGIN_TYPE_SELF;
-                [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
-            }
-            
-        } errorBlock:^(BJError *error) {
-            [AlertUtil showAlertWithMessage:error.message];
-        }];
+       
+        [LoginHelper selfLoginAndRequest:self.delegate account:currentAccountModel.account pwd:currentAccountModel.password];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
+        [LoginHelper fbLoginAndThirdRequest:self.delegate];
+        
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
+        [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
+        
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
+        
+        [LoginHelper guestLoginAndThirdRequest:self.delegate];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         
     }
-}
-
--(void) doAppleLogin
-{
-    if (@available(iOS 13, *)) {
-                  
-    }else{
-       [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
-        return;
-    }
-    
-//    gamaAppleLogin = [SAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
-//        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-//        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-//        [tempMutableDic removeObjectForKey:@"appleThirdID"];
-//
-//        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
-//            
-//            if (self.delegate) {
-//                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
-//            }
-//            
-//        } errorBlock:^(BJError *error) {
-//            if (error && error.message) {
-//                [AlertUtil showAlertWithMessage:error.message];
-//            }
-//        }];
-//        
-//    } andErrorBlock:^(NSError * _Nullable error) {
-//        //           [GamaUtils gamaStopLoadingAtView:self.view];
-//        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
-//    }];
-//    [gamaAppleLogin handleAuthrization:nil];
 }
 
 @end

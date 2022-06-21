@@ -18,6 +18,8 @@
 
 #define kWeakSelf __weak typeof(self) weakSelf = self;
 
+#define  kBlockSelf  __block typeof(self) blockSelf = self;
+
 #define SCREEN_WIDTH     [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
 #define IS_PORTRAIT       ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)

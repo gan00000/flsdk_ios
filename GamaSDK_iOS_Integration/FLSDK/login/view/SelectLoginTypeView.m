@@ -209,18 +209,18 @@
         case guestLoginActTag:
         {
             
-            [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
-                
-                if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
-                }
-                
-            } errorBlock:^(BJError *error) {
-                if (error && error.message) {
-                    [AlertUtil showAlertWithMessage:error.message];
-                }
-                
-            }];
+//            [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
+//                
+//                if (self.delegate) {
+//                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
+//                }
+//                
+//            } errorBlock:^(BJError *error) {
+//                if (error && error.message) {
+//                    [AlertUtil showAlertWithMessage:error.message];
+//                }
+//                
+//            }];
         }
             break;
             

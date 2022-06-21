@@ -7,7 +7,14 @@
 //
 
 #import "LineDelegate.h"
+//@import LineSDK;
 
 @implementation LineDelegate
+
++ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+//    [LoginManager sha]
+    return YES;
+}
 
 @end

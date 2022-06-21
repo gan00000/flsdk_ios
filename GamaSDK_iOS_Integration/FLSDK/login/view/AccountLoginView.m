@@ -15,7 +15,7 @@
 #import "AccountModel.h"
 #import "SdkUtil.h"
 #import "UIColor+HexStringToColorTW.h"
-#import "SDKRequest.h"
+#import "LoginHelper.h"
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "SAppleLogin.h"
@@ -423,39 +423,10 @@
             //新加
         case fbLoginActTag:
         {
-            
-            [SdkUtil showLoadingAtView:self];
-            //            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-            //                [SdkUtil gamaStopLoadingAtView:self];
-            //                if (!loginError)
-            //                {
-            //
-            //                    NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-            //                    NSDictionary *additionDic = @{
-            //                        @"apps":appsStr,
-            //                        @"tokenBusiness":@"",
-            //                        @"fb_oauthToken":facebookTokenStr,
-            //                    };
-            //
-            //                    [SDKRequest thirdLoginOrReg:facebookID andThirdPlate:LOGIN_TYPE_FB addOtherParams:additionDic successBlock:^(id responseData) {
-            //
-            //                        if (self.delegate) {
-            //                            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
-            //                        }
-            //
-            //                    } errorBlock:^(BJError *error) {
-            //                        if (error && error.message) {
-            //                            [GamaAlertView showAlertWithMessage:error.message];
-            //                        }
-            //                    }];
-            //
-            //
-            //                }else{
-            //                    //[GamaAlertView showAlertWithMessage:@"error.message"];
-            //                }
-            //
-            //            }];
-            
+            if (![self checkAgreeTerm]) {
+                return;
+            }
+            [LoginHelper fbLoginAndThirdRequest:self.delegate];
         }
             break;
         case appleLoginActTag:
@@ -463,7 +434,7 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
-//            [self doAppleLogin];
+            [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
         }
             break;
             
@@ -472,18 +443,21 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
-            [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
-                
-                if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
-                }
-                
-            } errorBlock:^(BJError *error) {
-                if (error && error.message) {
-                    [AlertUtil showAlertWithMessage:error.message];
-                }
-                
-            }];
+            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+        }
+        case googleLoginActTag:
+        {
+            if (![self checkAgreeTerm]) {
+                return;
+            }
+//            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+        }
+        case lineLoginActTag:
+        {
+            if (![self checkAgreeTerm]) {
+                return;
+            }
+//            [LoginHelper guestLoginAndThirdRequest:self.delegate];
         }
             
         case kAgreeTermsCheckBoxBtnTag:
@@ -535,26 +509,7 @@
         [SdkUtil toastMsg:GetString(@"py_password_empty")];
         return;
     }
-    //    if (GamaLoginViewModel.model.vfConfig == YES){
-    //        if(vfTF.text.length<1){
-    //            [GamaUtils gamaToastWithMsg:GetString(@"GAMA_LOGIN_CAPTCH_PLACEHOLDER")];
-    //            return;
-    //        }
-    //    }
-    kWeakSelf
-    [SDKRequest doLoginWithAccount:accountName andPassword:pwd otherDic:nil successBlock:^(id responseData) {
-        
-        if (weakSelf.delegate) {
-            LoginResponse *cc = (LoginResponse *)responseData;
-            cc.data.account = accountName;
-            cc.data.password = pwd;
-            cc.data.loginType = LOGIN_TYPE_SELF;
-            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
-        }
-        
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
-    }];
+    [LoginHelper selfLoginAndRequest:self.delegate account:accountName pwd:pwd];
 }
 
 
@@ -586,7 +541,7 @@
         iconName = @"guest_smail_icon";
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
-        iconName = @"mw_smail_icon";
+        iconName = @"apple_smail_icon";
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = @"line_smail_icon";

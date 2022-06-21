@@ -116,7 +116,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         iconName = @"guest_smail_icon";
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
-        iconName = @"mw_smail_icon";
+        iconName = @"apple_smail_icon";
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = @"line_smail_icon";
     }

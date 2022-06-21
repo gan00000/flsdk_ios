@@ -26,6 +26,11 @@
 
 #import "AccountModel.h"
 
+@interface SDKLoginViewController()
+
+@property (nonatomic,strong)UIView *sdkContentView;
+
+@end
 
 @implementation SDKLoginViewController{
     
@@ -37,7 +42,6 @@
     MainHomeView *mMainHomeView;
     WelcomeBackView *mWelcomeBackView;
     
-    UIView *sdkContentView;
 }
 
 -(instancetype)initWithPageType:(SDKPage) pageType
@@ -172,18 +176,18 @@
 
 -(UIView *) sdkContentView
 {
-    if (!sdkContentView) {
-        sdkContentView = [[UIView alloc]init];
+    if (!_sdkContentView) {
+        _sdkContentView = [[UIView alloc]init];
         //        sdkContentView.backgroundColor = [UIColor redColor];
-        [self.view addSubview:sdkContentView];
-        [sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.view addSubview:_sdkContentView];
+        [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(@(0));
             make.centerY.equalTo(@(0));
             make.width.equalTo(@(VW(375)));
             make.height.equalTo(@(VH(667 + 30)));
         }];
     }
-    return sdkContentView;
+    return _sdkContentView;
 }
 
 #pragma mark -頁面添加部分
@@ -303,9 +307,13 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
+//    [self.sdkContentView.subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
     
-    [[self sdkContentView] addSubview:mSDKBaseView];
+    for (UIView *subView in self.sdkContentView.subviews) {
+        subView.hidden = YES;
+    }
+    
+    [self.sdkContentView addSubview:mSDKBaseView];
     
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo([self sdkContentView]);
@@ -533,7 +541,7 @@
         kWeakSelf
         [UIView animateWithDuration:0.3 animations:^{
             //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.equalTo(@(0)).mas_offset(-offSet);
             }];
         }];
@@ -541,7 +549,7 @@
         kWeakSelf
         [UIView animateWithDuration:0.3 animations:^{
             //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.equalTo(@(0));
             }];
         }];
@@ -554,7 +562,7 @@
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
         //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-        [sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(@(0));
         }];
     }];

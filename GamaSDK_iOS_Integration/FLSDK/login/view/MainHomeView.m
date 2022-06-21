@@ -287,11 +287,6 @@
 {
     switch (sender.tag) {
        
-        case appleLoginActTag:
-            SDK_LOG(@"appleLoginActTag");
-            [LoginHelper appleLoginAndThirdRequest:self.delegate];
-            break;
-            
         case kAgreeTermsCheckBoxBtnTag:
             
             SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
@@ -301,38 +296,42 @@
                 checkBoxTermsBtn.selected = YES;
             }
             break;
+            
+        case appleLoginActTag:
+            SDK_LOG(@"appleLoginActTag");
+            [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
+            break;
+            
         case guestLoginActTag:
-        {
+            {
             SDK_LOG(@"guestLoginActTag");
             if (![self checkAgreeTerm]) {
                 return;
             }
-            [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
-                
-                if (self.delegate) {
-                    [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
-                }
-                
-            } errorBlock:^(BJError *error) {
-                if (error && error.message) {
-                    [AlertUtil showAlertWithMessage:error.message];
-                }
-                
-            }];
-            break;
-        }
+            [LoginHelper guestLoginAndThirdRequest:self.delegate];
             
+            }
+            break;
             
         case fbLoginActTag:
             SDK_LOG(@"fbLoginActTag");
+            if (![self checkAgreeTerm]) {
+                return;
+            }
             [LoginHelper fbLoginAndThirdRequest:self.delegate];
             
             break;
         case googleLoginActTag:
             SDK_LOG(@"googleLoginActTag");
+            if (![self checkAgreeTerm]) {
+                return;
+            }
             break;
         case lineLoginActTag:
             SDK_LOG(@"lineLoginActTag");
+            if (![self checkAgreeTerm]) {
+                return;
+            }
             break;
         default:
             break;

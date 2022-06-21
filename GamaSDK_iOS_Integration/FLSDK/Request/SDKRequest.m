@@ -67,11 +67,12 @@
 }
 
 #pragma mark - 免注册
-+(void)freeLoginOrRegisterWithSuccessBlock:(BJServiceSuccessBlock)successBlock
-                                errorBlock:(BJServiceErrorBlock)errorBlock
++(void)freeLoginOrRegister:(NSString *)thirdId
+                            successBlock:(BJServiceSuccessBlock)successBlock
+                            errorBlock:(BJServiceErrorBlock)errorBlock
 {
-    NSString *loginId =[SUtil getGamaUUID]; 
-    [self thirdLoginOrReg:loginId andThirdPlate:LOGIN_TYPE_GUEST addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
+    
+    [self thirdLoginOrReg:thirdId andThirdPlate:LOGIN_TYPE_GUEST addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
     
 }
 

@@ -12,7 +12,7 @@
 #import "LoginTitleView.h"
 #import "PhoneView.h"
 #import "LoginButton.h"
-#import "SDKRequest.h"
+#import "LoginHelper.h"
 #import "SdkUtil.h"
 #import "AccountLoginView.h"
 
@@ -171,7 +171,7 @@
         return;
     }
     
-    AccountModel * mAccountModel = (AccountModel *)self.fromPageParam;
+    AccountModel * currentAccountModel = (AccountModel *)self.fromPageParam;
     //NSString *userName = mAccountModel.account;
     
     NSString *account = accountSDKTextFiledView.inputUITextField.text;
@@ -192,34 +192,12 @@
         return;
     }
     
-    
-    kWeakSelf
-    [SDKRequest doChangePasswordWithUserName:@"" andOldPassword:@"" andNewPassword:@"" otherParamsDic:nil successBlock:^(id responseData) {
-        
-        [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
-        
-//        LoginResponse *lr = (LoginResponse *)responseData;
-//        mAccountModel.password = newPwd;
-//        mAccountModel.token = lr.data.token;
-//        mAccountModel.timestamp = lr.data.timestamp;
-//        mAccountModel.isBind = lr.data.isBind;
-//
-//        [[ConfigCoreUtil share] saveAccountModel:mAccountModel];
-        
-//        if (weakSelf.delegate) {
-//            LoginResponse *cc = (LoginResponse *)responseData;
-//            cc.data.account = mAccountModel.account;
-//            cc.data.password = newPwd;
-//            cc.data.loginType = LOGIN_TYPE_SELF;
-//            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
-//        }
-        
-    } errorBlock:^(BJError *error) {
-        
-        [AlertUtil showAlertWithMessage:error.message];
-        
-    }];
-    
+    if (!currentAccountModel) {
+        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        return;
+    }
+  
+    [LoginHelper bindAccountAndRequest:self.delegate view:self account:currentAccountModel account:account pwd:pasword];
 }
 
 

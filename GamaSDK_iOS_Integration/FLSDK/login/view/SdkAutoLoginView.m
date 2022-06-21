@@ -134,22 +134,22 @@
     kWeakSelf
     NSString *loginType = [ConfigCoreUtil share].loginType;
     if ([loginType isEqualToString:LOGIN_TYPE_GUEST]) {
-        [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
-            
-            if (!isSwicth && weakSelf.delegate) {
-                [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
-            }
-            
-        } errorBlock:^(BJError *error) {
-            if (isSwicth) {
-                return;
-            }
-            if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
-            }
-            [weakSelf switchAccount];
-            
-        }];
+//        [SDKRequest freeLoginOrRegisterWithSuccessBlock:^(id responseData) {
+//            
+//            if (!isSwicth && weakSelf.delegate) {
+//                [weakSelf.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
+//            }
+//            
+//        } errorBlock:^(BJError *error) {
+//            if (isSwicth) {
+//                return;
+//            }
+//            if (error && error.message) {
+//                [AlertUtil showAlertWithMessage:error.message];
+//            }
+//            [weakSelf switchAccount];
+//            
+//        }];
         
     }else if ([loginType isEqualToString:LOGIN_TYPE_FB]) {
         [SdkUtil showLoadingAtView:weakSelf];
