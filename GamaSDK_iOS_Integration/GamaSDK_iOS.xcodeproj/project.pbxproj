@@ -47,7 +47,6 @@
 		035690B42861874F00670CF8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 035690B32861874F00670CF8 /* FirebaseAnalytics */; };
 		035690B7286187B600670CF8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 035690B6286187B600670CF8 /* FirebaseAuth */; };
 		035690BA28618DE300670CF8 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 035690B928618DE300670CF8 /* AppsFlyerLib */; };
-		035690BD28618FF600670CF8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 035690BC28618FF600670CF8 /* GoogleSignIn */; };
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
@@ -344,6 +343,7 @@
 		03B919242860AECB0029AE6A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		03B919252860AECB0029AE6A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		03E5D85F2861A7C80055B25E /* GamaCommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
 		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
@@ -544,7 +544,6 @@
 		E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaPhoneModel.m; sourceTree = "<group>"; };
 		E95BCED9237EAD0D004A08B1 /* libGamaGamecenter_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaGamecenter_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95BCEDB237EBA1E004A08B1 /* libGamaGuestLogin_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaGuestLogin_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E97411B62087456F0018E1A6 /* GamaCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
 		E97411BF20874A170018E1A6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E97411C020874A170018E1A6 /* Default-iOS11-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iOS11-812h@3x.png"; sourceTree = "<group>"; };
 		E97411C420874A170018E1A6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -623,7 +622,6 @@
 				CE4F11641A6792A400780524 /* libsqlite3.0.dylib in Frameworks */,
 				CEE6B9611A149944009E77FF /* libxml2.dylib in Frameworks */,
 				CE4F116A1A6797BA00780524 /* Security.framework in Frameworks */,
-				035690BD28618FF600670CF8 /* GoogleSignIn in Frameworks */,
 				CEF6E92A1A35B45500CFFE2F /* CFNetwork.framework in Frameworks */,
 				CEE6B95F1A14993E009E77FF /* ImageIO.framework in Frameworks */,
 				CEE6B95D1A14992F009E77FF /* CoreMedia.framework in Frameworks */,
@@ -905,18 +903,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22EE09011F0B9DCE002A12B3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E97411B62087456F0018E1A6 /* GamaCommonHeader.h */,
-			);
-			name = Resources;
-			path = Classes/Resources;
-			sourceTree = "<group>";
-		};
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03E5D85F2861A7C80055B25E /* GamaCommonHeader.h */,
 				037648082861789A00CAD034 /* GID */,
 				E974121820874A170018E1A6 /* Resources */,
 				034558BC285B0AEA0025EFB2 /* FB */,
@@ -1163,7 +1153,6 @@
 				E97411C320874A170018E1A6 /* Demo */,
 				322CBB9C24C589A5000D6B20 /* FLSDK */,
 				24C7588E1D66F98D0088A176 /* FrameworkScript.sh */,
-				22EE09011F0B9DCE002A12B3 /* Resources */,
 				CEE6B9621A1499CB009E77FF /* Framework */,
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
@@ -1293,6 +1282,8 @@
 			dependencies = (
 			);
 			name = FLSDK;
+			packageProductDependencies = (
+			);
 			productName = SPSDK;
 			productReference = 22DF6AB11EAD9A4C0003610E /* libFLSDK.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1318,7 +1309,6 @@
 				035690B32861874F00670CF8 /* FirebaseAnalytics */,
 				035690B6286187B600670CF8 /* FirebaseAuth */,
 				035690B928618DE300670CF8 /* AppsFlyerLib */,
-				035690BC28618FF600670CF8 /* GoogleSignIn */,
 			);
 			productName = EfunSDK_iOS_KR;
 			productReference = CEE6B3711A148B1E009E77FF /* dybttDemo.app */;
@@ -1413,7 +1403,7 @@
 				035690B22861874F00670CF8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				035690B5286187B600670CF8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				035690B828618DE300670CF8 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
-				035690BB28618FF500670CF8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				03E5D85A2861A4F90055B25E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = CEE6B3721A148B1E009E77FF /* Products */;
 			projectDirPath = "";
@@ -1610,11 +1600,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1640,11 +1626,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1789,11 +1771,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1851,11 +1829,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/Classes/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF-iOS-SDK-v4.5.12",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
@@ -1957,7 +1931,7 @@
 				minimumVersion = 6.7.0;
 			};
 		};
-		035690BB28618FF500670CF8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+		03E5D85A2861A4F90055B25E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
 			requirement = {
@@ -1997,11 +1971,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 035690B828618DE300670CF8 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
 			productName = AppsFlyerLib;
-		};
-		035690BC28618FF600670CF8 /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 035690BB28618FF500670CF8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

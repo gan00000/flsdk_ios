@@ -41,7 +41,7 @@
 
 + (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [FBSDKAppEvents activateApp];
+//    [FBSDKAppEvents activateApp];
 }
 
 
