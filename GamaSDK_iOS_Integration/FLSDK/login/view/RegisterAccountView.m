@@ -413,7 +413,7 @@
 
 -(void)requestBindFb:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
 {
-    [SdkUtil gamaStarLoadingAtView:self];
+    [SdkUtil showLoadingAtView:self];
 //    [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
 //        [SdkUtil gamaStopLoadingAtView:self];
 //        if (!loginError)

@@ -50,13 +50,13 @@
     if (params) {
         [allParams addEntriesFromDictionary:params];
     }
-    [SdkUtil gamaStarLoadingAtView:nil];
+    [SdkUtil showLoadingAtView:nil];
     [[HttpServiceEngineLogin sharedInstance].httpEngine getRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
 #endif
-        [SdkUtil gamaStopLoadingAtView:nil];
+        [SdkUtil stopLoadingAtView:nil];
         NSDictionary *responseDict = responseData;
         
 //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
@@ -75,7 +75,7 @@
         }
         
     } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
-        [SdkUtil gamaStopLoadingAtView:nil];
+        [SdkUtil stopLoadingAtView:nil];
         SDK_LOG(@"get: path = %@, error = %@", path, error);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
@@ -95,14 +95,14 @@
         [allParams addEntriesFromDictionary:params];
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
-    [SdkUtil gamaStarLoadingAtView:nil];
+    [SdkUtil showLoadingAtView:nil];
     [[HttpServiceEngineLogin sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
 #endif
         
-          [SdkUtil gamaStopLoadingAtView:nil];
+          [SdkUtil stopLoadingAtView:nil];
             NSDictionary *responseDict = responseData;
             
     //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
@@ -119,7 +119,7 @@
             }
         
     } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
-        [SdkUtil gamaStopLoadingAtView:nil];
+        [SdkUtil stopLoadingAtView:nil];
         SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];

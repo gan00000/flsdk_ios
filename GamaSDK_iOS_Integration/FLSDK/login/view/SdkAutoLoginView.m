@@ -152,7 +152,7 @@
         }];
         
     }else if ([loginType isEqualToString:LOGIN_TYPE_FB]) {
-        [SdkUtil gamaStarLoadingAtView:weakSelf];
+        [SdkUtil showLoadingAtView:weakSelf];
 //        [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
 //            [SdkUtil gamaStopLoadingAtView:weakSelf];
 //            

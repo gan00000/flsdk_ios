@@ -342,7 +342,7 @@
 }
 
 
-+ (void)gamaStarLoadingAtView:(UIView *)baseView
++ (void)showLoadingAtView:(UIView *)baseView
 {
     if (baseView == nil) {
         baseView = appTopViewController.view;
@@ -382,7 +382,7 @@
     [indicator startAnimating];
 }
 
-+ (void)gamaStopLoadingAtView:(UIView *)baseView
++ (void)stopLoadingAtView:(UIView *)baseView
 {
     if (baseView == nil) {
         baseView = appTopViewController.view;
@@ -445,31 +445,31 @@
 }
 
 
-#pragma mark 保存免注册账号密码至相册
-+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView
-{
-    // to do
-    NSLog(@"保存guest账号密码截图到相册");
-    // create image
-    UIGraphicsBeginImageContext(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height));
-    [curView.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *extractImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    NSData *imageData = UIImagePNGRepresentation(extractImage);
-    UIImage *img = [UIImage imageWithData:imageData];
-    
-    // 根据英文版本审核时通常因为相册问题被拒绝
-//    [GamaAlertView showAlertWithMessage:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
-//                           completion:^(NSInteger clickedBtnIndex) {
-//                               if (clickedBtnIndex == 1) {
-//                                   // save img to photo
-                                   UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
-//                               }
-//                           } andButtonTitles:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
-    
-    // save img to photo
-    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
-}
+//#pragma mark 保存免注册账号密码至相册
+//+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView
+//{
+//    // to do
+//    NSLog(@"保存guest账号密码截图到相册");
+//    // create image
+//    UIGraphicsBeginImageContext(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height));
+//    [curView.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIImage *extractImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    NSData *imageData = UIImagePNGRepresentation(extractImage);
+//    UIImage *img = [UIImage imageWithData:imageData];
+//    
+//    // 根据英文版本审核时通常因为相册问题被拒绝
+////    [GamaAlertView showAlertWithMessage:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
+////                           completion:^(NSInteger clickedBtnIndex) {
+////                               if (clickedBtnIndex == 1) {
+////                                   // save img to photo
+//                                   UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
+////                               }
+////                           } andButtonTitles:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
+//    
+//    // save img to photo
+//    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
+//}
 
 + (void)gama_getGuestAccount:(NSString **)userName andPassword:(NSString **)password
 {

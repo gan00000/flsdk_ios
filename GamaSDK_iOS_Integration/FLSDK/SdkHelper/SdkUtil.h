@@ -32,8 +32,8 @@
 + (void)toastMsg:(NSString *)msg;
 + (void)toastMsg:(NSString *)msg atView:(UIView *)baseView;
 // loading
-+ (void)gamaStarLoadingAtView:(UIView *)baseView;
-+ (void)gamaStopLoadingAtView:(UIView *)baseView;
++ (void)showLoadingAtView:(UIView *)baseView;
++ (void)stopLoadingAtView:(UIView *)baseView;
 
 #pragma mark - Strings
 // 处理链接请求
@@ -52,7 +52,7 @@
 #pragma mark - 整合部分
 
 // guest 截屏過的憑證
-+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView;
+//+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView;
 
 //----账号密码的保存
 + (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName;

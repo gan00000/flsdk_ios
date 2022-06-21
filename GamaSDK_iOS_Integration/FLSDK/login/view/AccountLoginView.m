@@ -424,7 +424,7 @@
         case fbLoginActTag:
         {
             
-            [SdkUtil gamaStarLoadingAtView:self];
+            [SdkUtil showLoadingAtView:self];
             //            [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
             //                [SdkUtil gamaStopLoadingAtView:self];
             //                if (!loginError)
