@@ -21,7 +21,15 @@
     [configHTTPEngine getRequestWithFunctionPath:@"sdk/config/jjcs/v1/version.json" params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
-        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
+        
+        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];//需要分开解析
+        NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
+        
+//        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
+        
+        ConfigResponse *mCr = [[ConfigResponse alloc] init];
+        mCr.subVersion = subVersion;
+        mCr.allVersion = allVersion;
         if (mCr) {
             if (successBlock) {
                 successBlock(mCr);
