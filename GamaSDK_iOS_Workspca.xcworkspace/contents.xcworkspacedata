@@ -5,18 +5,6 @@
       location = "group:GamaIAP/GamaIAP/GamaIAP.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GamaFacebook/GamaFacebook/GamaFacebook.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:GamaAD/GamaAD/GamaAD.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:GamaAccountLogin/GamaAccountLogin/GamaAccountLogin.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:GamaSDK_iOS_Integration/GamaSDK_iOS.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:GamaThirdPlatform/GamaThirdPlatform/GamaThirdPlatform.xcodeproj">
    </FileRef>
 </Workspace>

@@ -6,13 +6,13 @@
 #import "GamaInterfaceSDK.h"
 #import "ViewController.h"
 #import "UserModel.h"
-#import "AppsFlyerTracker.h"
 
 #import "GamaCommonHeader.h"
 #import "ConfigHeader.h"
 #import "FLSDK.h"
 
 #import "Firebase.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 @interface AppDelegate ()
 
@@ -87,7 +87,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
     NSLog(@"push token:%@",[NSString stringWithFormat:@"%@",deviceToken]);
-    [[AppsFlyerTracker sharedTracker] registerUninstall:deviceToken];
+    
 }
 
 -(void)applicationDidEnterBackground:(UIApplication *)application {

@@ -38,8 +38,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>290914729828439</string>
-    <key>FacebookClientToken</key>
-    <string>6a5570d4d7aad0ba5fb55035ce199da6</string>
+	<key>FacebookClientToken</key>
+	<string>6a5570d4d7aad0ba5fb55035ce199da6</string>
 	<key>FacebookDisplayName</key>
 	<string>靈妖記</string>
 	<key>LSApplicationQueriesSchemes</key>
