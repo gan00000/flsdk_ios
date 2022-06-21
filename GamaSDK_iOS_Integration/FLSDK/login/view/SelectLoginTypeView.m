@@ -13,14 +13,14 @@
 #import "LoginButton.h"
 #import "SdkUtil.h"
 #import "SDKRequest.h"
-#import "AppleLogin.h"
+#import "SAppleLogin.h"
 #import "SDKIconTitleButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 
 @implementation SelectLoginTypeView{
     
     UIView *bgView;
-    AppleLogin *gamaAppleLogin;
+    SAppleLogin *gamaAppleLogin;
 }
 
 /*
@@ -246,28 +246,7 @@
         return;
     }
     
-    gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
-        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-        [tempMutableDic removeObjectForKey:@"appleThirdID"];
-
-        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
-            
-            if (self.delegate) {
-                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
-            }
-            
-        } errorBlock:^(BJError *error) {
-            if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
-            }
-        }];
-        
-    } andErrorBlock:^(NSError * _Nullable error) {
-        //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
-    }];
-    [gamaAppleLogin handleAuthrization:nil];
+  
 }
 
 @end

@@ -18,7 +18,7 @@
 #import "SDKRequest.h"
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
-#import "AppleLogin.h"
+#import "SAppleLogin.h"
 #import "TermsView.h"
 #import "AccountListView.h"
 #import "UIView+BlockGesture.h"
@@ -41,7 +41,7 @@
     
     UIButton *checkBoxTermsBtn;
     
-    AppleLogin *gamaAppleLogin;
+    SAppleLogin *gamaAppleLogin;
     
     BOOL isAgree;
     
@@ -463,7 +463,7 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
-            [self doAppleLogin];
+//            [self doAppleLogin];
         }
             break;
             
@@ -513,38 +513,6 @@
     return NO;
 }
 
--(void) doAppleLogin
-{
-    if (@available(iOS 13, *)) {
-        
-    }else{
-        
-        return;
-    }
-    
-    gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
-        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-        [tempMutableDic removeObjectForKey:@"appleThirdID"];
-        
-        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
-            
-            if (self.delegate) {
-                [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
-            }
-            
-        } errorBlock:^(BJError *error) {
-            if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
-            }
-        }];
-        
-    } andErrorBlock:^(NSError * _Nullable error) {
-        //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
-    }];
-    [gamaAppleLogin handleAuthrization:nil];
-}
 
 -(void) requestAccountLogin
 {

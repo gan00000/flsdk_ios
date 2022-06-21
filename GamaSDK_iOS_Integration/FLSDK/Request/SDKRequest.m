@@ -110,7 +110,9 @@
             @"timestamp"        :timeStamp,
             @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
             @"registPlatform"   :thirdPlate,
+            @"loginMode"        :thirdPlate,
             @"thirdPlatId"      :thirdId,
+            @"thirdLoginId"     :thirdId,
         };
         [params addEntriesFromDictionary:dic];
         

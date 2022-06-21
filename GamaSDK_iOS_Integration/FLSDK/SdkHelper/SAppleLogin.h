@@ -7,21 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>>
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^AppleLoginSuccess )(NSDictionary *__nullable result);
 typedef void (^AppleLoginError)(NSError *__nullable error);
 typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * __nullable results);
 
-@interface AppleLogin : NSObject
+@interface SAppleLogin : NSObject
 @property (strong, nonatomic) NSString *appleThirdID;
 
-+ (AppleLogin *)shareInfoModel;
++ (instancetype)share;
 
-- (void)handleAuthrization:(id *_Nullable)sender;
+- (void)handleAuthrization:(UIView *_Nullable)mView;
 
-+ (instancetype)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock andErrorBlock:(AppleLoginError)errorBlock;
+- (void)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock andErrorBlock:(AppleLoginError)errorBlock;
 
-- (void)gama_appleLoginRequestWithThirdID:(NSString *)thirdID thirdPlate:(NSString *)thirdPlate;
+//- (void)gama_appleLoginRequestWithThirdID:(NSString *)thirdID thirdPlate:(NSString *)thirdPlate;
 
 - (void)autoLoginAppleAccountWithInformation;
 

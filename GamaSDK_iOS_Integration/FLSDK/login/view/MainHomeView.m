@@ -13,6 +13,8 @@
 #import "SDKRequest.h"
 #import "FBDelegate.h"
 #import "SdkHeader.h"
+#import "LoginHelper.h"
+#import "SAppleLogin.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -287,14 +289,7 @@
        
         case appleLoginActTag:
             SDK_LOG(@"appleLoginActTag");
-            
-            break;
-            
-        case kRegTabActTag:
-            
-            
-            SDK_LOG(@"kRegTabActTag");
-          
+            [LoginHelper appleLoginAndThirdRequest:self.delegate];
             break;
             
         case kAgreeTermsCheckBoxBtnTag:
@@ -330,7 +325,7 @@
             
         case fbLoginActTag:
             SDK_LOG(@"fbLoginActTag");
-            [self fbLogin];
+            [LoginHelper fbLoginAndThirdRequest:self.delegate];
             
             break;
         case googleLoginActTag:
@@ -343,21 +338,6 @@
             break;
     }
     
-}
-
-
-- (void)fbLogin
-{
-    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
-    [mFBDelegate login:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
-        
-        
-        
-    } andFailBlock:^(NSError * _Nonnull error) {
-        
-    } andCancelBlock:^(NSError * _Nonnull error) {
-        
-    }];
 }
 
 

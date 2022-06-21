@@ -21,7 +21,6 @@
 #import "SdkUtil.h"
 #import "StringUtil.h"
 
-
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
 

@@ -14,7 +14,7 @@
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "SdkUtil.h"
-#import "AppleLogin.h"
+#import "SAppleLogin.h"
 
 @implementation RegisterAccountView
 {
@@ -363,41 +363,41 @@
         return;
     }
     
-    AppleLogin *gamaAppleLogin = [AppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
-        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-        [tempMutableDic removeObjectForKey:@"appleThirdID"];
-
-        [SDKRequest doAccountBindingWithUserName:name
-                                        password:password
-                                   phoneAreaCode:areaCode
-                                     phoneNumber:phoneNum
-                                          vfCode:vfCode
-                                           email:@""
-                                         thirdId:appleID
-                                      thirdPlate:LOGIN_TYPE_APPLE
-                                  otherParamsDic:tempMutableDic
-                                    successBlock:^(id responseData) {
-            LoginResponse *cc = (LoginResponse *)responseData;
-             [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-            [AlertUtil showAlertWithMessage:cc.message];
-            
-            if (self.delegate) {
-                [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-            }
-            
-        }
-                                      errorBlock:^(BJError *error) {
-            if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
-            }
-        }];
-        
-    } andErrorBlock:^(NSError * _Nullable error) {
-        //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
-    }];
-    [gamaAppleLogin handleAuthrization:nil];
+//    SAppleLogin *gamaAppleLogin = [SAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+//        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
+//        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
+//        [tempMutableDic removeObjectForKey:@"appleThirdID"];
+//
+//        [SDKRequest doAccountBindingWithUserName:name
+//                                        password:password
+//                                   phoneAreaCode:areaCode
+//                                     phoneNumber:phoneNum
+//                                          vfCode:vfCode
+//                                           email:@""
+//                                         thirdId:appleID
+//                                      thirdPlate:LOGIN_TYPE_APPLE
+//                                  otherParamsDic:tempMutableDic
+//                                    successBlock:^(id responseData) {
+//            LoginResponse *cc = (LoginResponse *)responseData;
+//             [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
+//            [AlertUtil showAlertWithMessage:cc.message];
+//
+//            if (self.delegate) {
+//                [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
+//            }
+//
+//        }
+//                                      errorBlock:^(BJError *error) {
+//            if (error && error.message) {
+//                [AlertUtil showAlertWithMessage:error.message];
+//            }
+//        }];
+//
+//    } andErrorBlock:^(NSError * _Nullable error) {
+//        //           [GamaUtils gamaStopLoadingAtView:self.view];
+//        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+//    }];
+//    [gamaAppleLogin handleAuthrization:nil];
     
     
 //    GamaAppleLogin *gamaAppleLogin = [[GamaAppleLogin alloc] init];

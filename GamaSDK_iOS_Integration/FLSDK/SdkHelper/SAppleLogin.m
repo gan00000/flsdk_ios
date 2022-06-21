@@ -6,24 +6,42 @@
 //  Copyright © 2019 Gama. All rights reserved.
 //
 
-#import "AppleLogin.h"
+#import "SAppleLogin.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "SUtil.h"
 #import "HelloHeader.h"
 #import "AlertUtil.h"
 
-@interface AppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
+@interface SAppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
 @property (copy, atomic) AppleLoginSuccess impSuccess;
 @property (copy, atomic) AppleLoginError impError;
 @end
 
-@implementation AppleLogin
+//sign in with apple 工具类设成全局变量，或使用单例类，如果使用局部变量，和IAP工具类一样苹果的回调不会执行。
+@implementation SAppleLogin
+{
+    UIView *presentView;
+}
 @synthesize appleThirdID = _appleThirdID;
+
++ (instancetype)share{
+    
+    static SAppleLogin *_sAppleLogin = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sAppleLogin = [[SAppleLogin alloc] init];
+    });
+    
+    return _sAppleLogin;
+}
 
 #pragma mark - Actions
 
 //! 处理授权
-- (void)handleAuthrization:(UIButton *)sender {
+- (void)handleAuthrization:(UIView *_Nullable)mView{
+    
+    presentView = mView;
+    
     if (@available(iOS 13.0, *)) {
         // A mechanism for generating requests to authenticate users based on their Apple ID.
         // 基于用户的Apple ID授权用户，生成用户授权请求的一种机制
@@ -122,41 +140,40 @@
     self.impError(error);
     switch (error.code) {
         case ASAuthorizationErrorCanceled:
-            errorMsg = GetString(@"GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT");
+//            errorMsg = GetString(@"GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT");
             break;
         case ASAuthorizationErrorFailed:
-            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT");
+//            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT");
             break;
         case ASAuthorizationErrorInvalidResponse:
-            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_INVALID");
+//            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_INVALID");
             break;
         case ASAuthorizationErrorNotHandled:
-            errorMsg = GetString(@"GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED");
+//            errorMsg = GetString(@"GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED");
             break;
         case ASAuthorizationErrorUnknown:
-            errorMsg = GetString(@"GAMA_APPLE_RETURN_UNKNOWN_REASON");
+//            errorMsg = GetString(@"GAMA_APPLE_RETURN_UNKNOWN_REASON");
             break;
     }
 
-    NSMutableString *mStr = [NSMutableString string];
-    [mStr appendString:errorMsg];
-    [mStr appendString:@"\n"];
-    [AlertUtil showAlertWithMessage:mStr];
+//    NSMutableString *mStr = [NSMutableString string];
+//    [mStr appendString:errorMsg];
+//    [mStr appendString:@"\n"];
+//    [AlertUtil showAlertWithMessage:mStr];
+//
+//
+//    if (errorMsg) {
+//        return;
+//    }
 
-
-    if (errorMsg) {
-        return;
-    }
-
-    if (error.localizedDescription) {
-        NSMutableString *mStr = [NSMutableString string];
-        [mStr appendString:error.localizedDescription];
-        [mStr appendString:@"\n"];
-//        _appleIDInfoTextView.text = [mStr copy];
-        [AlertUtil showAlertWithMessage:mStr];
-
-    }
-    NSLog(@"controller requests：%@", controller.authorizationRequests);
+//    if (error.localizedDescription) {
+//        NSMutableString *mStr = [NSMutableString string];
+//        [mStr appendString:error.localizedDescription];
+//        [mStr appendString:@"\n"];
+//        [AlertUtil showAlertWithMessage:mStr];
+//
+//    }
+//    NSLog(@"controller requests：%@", controller.authorizationRequests);
     /* // 取消授权的时候也会调用这里
      ((ASAuthorizationAppleIDRequest *)(controller.authorizationRequests[0])).requestedScopes
      <__NSArrayI 0x2821e2520>(
@@ -169,10 +186,13 @@
 
 //! Tells the delegate from which window it should present content to the user.
 //! 告诉代理应该在哪个window 展示内容给用户
-- (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller  API_AVAILABLE(ios(13.0)){
+- (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller API_AVAILABLE(ios(13.0)){
 
     NSLog(@"调用展示window方法：%s", __FUNCTION__);
     // 返回window
+    if (presentView) {
+        return presentView.window;
+    }
     return appTopViewController.view.window;
 }
 
@@ -283,14 +303,13 @@
 
 
 
-+ (instancetype)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock
+-(void)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock
                                 andErrorBlock:(AppleLoginError)errorBlock
 {
-    AppleLogin *temp = [[AppleLogin alloc] init];
-    temp.impSuccess = successBlock;
-    temp.impError = errorBlock;
+//    SAppleLogin *temp = [[SAppleLogin alloc] init];
+    self.impSuccess = successBlock;
+    self.impError = errorBlock;
     
-    return temp;
 }
 
 

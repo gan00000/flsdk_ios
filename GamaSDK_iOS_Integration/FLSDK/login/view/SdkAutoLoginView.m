@@ -11,7 +11,7 @@
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "SdkUtil.h"
-#import "AppleLogin.h"
+#import "SAppleLogin.h"
 #import "AccountModel.h"
 
 @implementation SdkAutoLoginView
@@ -225,7 +225,7 @@
 -(void) doAutoAppleLogin
 {
     kWeakSelf
-    AppleLogin *gamaAppleLogin = [[AppleLogin alloc] init];
+    SAppleLogin *gamaAppleLogin = [[SAppleLogin alloc] init];
     NSDictionary *tempDic = [gamaAppleLogin fetchAppleLoginInfo];
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
     NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
