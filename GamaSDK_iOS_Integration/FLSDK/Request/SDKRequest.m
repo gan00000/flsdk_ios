@@ -96,7 +96,7 @@
     NSMutableString * md5str= [[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",[thirdId lowercaseString]]; //用户名
+    [md5str appendFormat:@"%@",thirdId]; //用户名
     [md5str appendFormat:@"%@",GAME_CODE];//gamecode
 //    isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
     NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
@@ -144,12 +144,13 @@
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
+    userName = [userName lowercaseString];
     NSString *timestamp = [SUtil getTimeStamp];
     //获取md5加密的值
     NSMutableString * md5str=[[NSMutableString alloc]init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timestamp]; //时间戳
-    [md5str appendFormat:@"%@",[userName lowercaseString]]; //用户名
+    [md5str appendFormat:@"%@",userName]; //用户名
 //    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",GAME_CODE];//gamecode
     NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
@@ -160,7 +161,7 @@
             @"signature"        :[md5SignStr lowercaseString],
             @"timestamp"        :timestamp,
             @"gameCode"         :[NSString stringWithFormat:@"%@",GAME_CODE],
-            @"loginId"             :[userName lowercaseString],
+            @"loginId"             :userName,
             @"password"              :[[SUtil getMD5StrFromString:password] lowercaseString],
             @"registPlatform"   :LOGIN_TYPE_SELF,
             
@@ -506,11 +507,11 @@
             @"name"             :userName,
             @"loginId"          :userName,
             @"password"         :[[SUtil getMD5StrFromString:password] lowercaseString],
-            @"thirdPlatId"      :[thirdId lowercaseString],
-            @"thirdLoginId"     :[thirdId lowercaseString],
+            @"thirdPlatId"      :thirdId,
+            @"thirdLoginId"     :thirdId,
         
-            @"registPlatform"   :[thirdPlate lowercaseString],
-            @"loginMode"        :[thirdPlate lowercaseString],
+            @"registPlatform"   :thirdPlate,
+            @"loginMode"        :thirdPlate,
             
             @"interfaces"       :@"2",
             @"phoneAreaCode"    :phoneAreaCode,

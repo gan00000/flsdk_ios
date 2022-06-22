@@ -148,6 +148,30 @@
     
     [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
+        NSDictionary *otherParamsDic = nil;
+        @try {
+            otherParamsDic = @{
+                @"lineAccessToken"        :accessToken,
+                
+            };
+
+        } @catch (NSException *exception) {
+            
+        }
+        
+        [SDKRequest thirdLoginOrReg:userID andThirdPlate:LOGIN_TYPE_LINE addOtherParams:otherParamsDic successBlock:^(id responseData) {
+            
+            if (delegate) {
+                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_LINE];
+            }
+            
+        } errorBlock:^(BJError *error) {
+            if (error && error.message) {
+                [AlertUtil showAlertWithMessage:error.message];
+            }
+        }];
+        
+        
     } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
     }];
