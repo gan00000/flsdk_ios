@@ -175,7 +175,7 @@
     [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:thirdId thirdPlate:thirdPlate otherParamsDic:otherParamsDic successBlock:^(id responseData) {
         
         if (delegate) {
-            
+            LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
             cc.data.password = password;
             cc.data.loginType = LOGIN_TYPE_SELF;
