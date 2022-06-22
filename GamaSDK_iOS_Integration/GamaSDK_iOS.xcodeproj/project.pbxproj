@@ -47,8 +47,6 @@
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		0383346C2862E9E500A255FB /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038334512862E9E500A255FB /* FirebaseAuth.xcframework */; };
 		0383346E2862E9E500A255FB /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038334522862E9E500A255FB /* GTMSessionFetcher.xcframework */; };
-		038334702862E9E500A255FB /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 038334542862E9E500A255FB /* NOTICES */; };
-		038334712862E9E500A255FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 038334552862E9E500A255FB /* README.md */; };
 		038334722862E9E500A255FB /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038334572862E9E500A255FB /* nanopb.xcframework */; };
 		038334742862E9E500A255FB /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038334582862E9E500A255FB /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		038334762862E9E500A255FB /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038334592862E9E500A255FB /* PromisesObjC.xcframework */; };
@@ -308,8 +306,6 @@
 		038334512862E9E500A255FB /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		038334522862E9E500A255FB /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		038334532862E9E500A255FB /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
-		038334542862E9E500A255FB /* NOTICES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICES; sourceTree = "<group>"; };
-		038334552862E9E500A255FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		038334572862E9E500A255FB /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
 		038334582862E9E500A255FB /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
 		038334592862E9E500A255FB /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
@@ -804,8 +800,6 @@
 			children = (
 				038334502862E9E500A255FB /* FirebaseAuth */,
 				038334532862E9E500A255FB /* Firebase.h */,
-				038334542862E9E500A255FB /* NOTICES */,
-				038334552862E9E500A255FB /* README.md */,
 				038334562862E9E500A255FB /* FirebaseAnalytics */,
 				038334632862E9E500A255FB /* module.modulemap */,
 				038334642862E9E500A255FB /* GoogleSignIn */,
@@ -1560,14 +1554,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				038334702862E9E500A255FB /* NOTICES in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				E974128720874A170018E1A6 /* Default-568h@2x.png in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				0383348E2862E9E500A255FB /* GoogleSignIn.bundle in Resources */,
 				E974128820874A170018E1A6 /* Default-iOS11-812h@3x.png in Resources */,
 				E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */,
-				038334712862E9E500A255FB /* README.md in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

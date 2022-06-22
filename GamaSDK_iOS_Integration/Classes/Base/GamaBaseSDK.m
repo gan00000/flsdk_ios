@@ -13,6 +13,7 @@
 #import "SDKRequest.h"
 
 #import "FBDelegate.h"
+#import "FirebaseDelegate.h"
 
 #import <StoreKit/StoreKit.h>
 @implementation GamaBaseSDK
@@ -42,6 +43,8 @@
     
 //    [NSClassFromString(@"KRTwitterLogin") twitterFinishLaunching];
     [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    
 }
 
 + (BOOL)application:(UIApplication *)application

@@ -128,7 +128,7 @@
     }else{
         requestUrlPath = api_login_third;
     }
-    [HttpServiceEngineLogin getRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 #pragma mark - 登录

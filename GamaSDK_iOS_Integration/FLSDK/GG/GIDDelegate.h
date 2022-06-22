@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @import GoogleSignIn;
-
-//#import <GoogleSignIn/GIDSignIn.h>
+#import "FirebaseDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GIDDelegate : NSObject
 
 
++(void)loginWithClientID:(NSString *)kClientID
+                presentingViewController:(UIViewController *)presentingViewController
+                successCallback:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
+                failCallback:(void(^)(NSString *msg))failCallback
+          cancelCallback:(void(^)(NSString *msg))cancelCallback;
     
 @end
 

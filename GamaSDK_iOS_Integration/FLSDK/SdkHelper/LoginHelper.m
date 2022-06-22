@@ -52,7 +52,18 @@
     FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
     [mFBDelegate login:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
         
-        [SDKRequest thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:nil successBlock:^(id responseData) {
+        NSDictionary *otherParamsDic = nil;
+        @try {
+            otherParamsDic = @{
+                @"fbOauthToken"        :fbIdToken,
+                
+            };
+
+        } @catch (NSException *exception) {
+            
+        }
+        
+        [SDKRequest thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:otherParamsDic successBlock:^(id responseData) {
             
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
@@ -90,6 +101,44 @@
         
     }];
     
+}
+
+
++ (void)googleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate{
+    
+    
+    [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
+        
+        NSDictionary *otherParamsDic = nil;
+        @try {
+            otherParamsDic = @{
+                @"googleIdToken"        :idToken,
+                @"googleClientId"       :kClientID,
+                
+            };
+
+        } @catch (NSException *exception) {
+            
+        }
+        
+        [SDKRequest thirdLoginOrReg:userId andThirdPlate:LOGIN_TYPE_GOOGLE addOtherParams:otherParamsDic successBlock:^(id responseData) {
+            
+            if (delegate) {
+                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GOOGLE];
+            }
+            
+        } errorBlock:^(BJError *error) {
+            if (error && error.message) {
+                [AlertUtil showAlertWithMessage:error.message];
+            }
+        }];
+        
+        
+    } failCallback:^(NSString * _Nonnull msg) {
+        
+    } cancelCallback:^(NSString * _Nonnull msg) {
+        
+    }];
 }
 
 + (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password

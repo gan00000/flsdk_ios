@@ -20,4 +20,10 @@
     return YES;
 }
 
++(NSString *)getClientID
+{
+    return [FIRApp defaultApp].options.clientID;
+}
+
+
 @end

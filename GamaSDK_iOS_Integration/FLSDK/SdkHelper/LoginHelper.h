@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LoginViewDelegate.h"
+#import "GIDDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
 
 + (void)guestLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
+
++ (void)googleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
 
 + (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password;
 

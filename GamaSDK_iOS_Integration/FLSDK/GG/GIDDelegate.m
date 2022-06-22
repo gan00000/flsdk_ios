@@ -8,21 +8,35 @@
 
 #import "GIDDelegate.h"
 #import "CComHeader.h"
+#import "StringUtil.h"
 
 @implementation GIDDelegate
 {
-    GIDConfiguration *_configuration;
+   
 }
 
--(void)loginWithClientID:(NSString *)kClientID
++(void)loginWithClientID:(NSString *)kClientID
                 presentingViewController:(UIViewController *)presentingViewController
-                successCallback:(void(^)(NSString *userId,NSString *name,NSString *email))successCallback
+                successCallback:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
                 failCallback:(void(^)(NSString *msg))failCallback
                 cancelCallback:(void(^)(NSString *msg))cancelCallback
 {
 //    NSString *kClientID = @"";
-    _configuration = [[GIDConfiguration alloc] initWithClientID:kClientID];
-
+    
+    if ([StringUtil isEmpty:kClientID]) {
+        kClientID = [FirebaseDelegate getClientID];
+    }
+    
+    if ([StringUtil isEmpty:kClientID]) {
+        SDK_LOG(@"kClientID is empty");
+        if (failCallback) {
+            failCallback(@"");
+        }
+        return;
+    }
+    SDK_LOG(@"kClientID = %@",kClientID);
+    GIDConfiguration * _configuration = [[GIDConfiguration alloc] initWithClientID:kClientID];
+    
     [GIDSignIn.sharedInstance signInWithConfiguration:_configuration presentingViewController:presentingViewController callback:^(GIDGoogleUser * _Nullable user,
                                  NSError * _Nullable error) {
          if (error) {
@@ -46,9 +60,13 @@
             NSString *userID = googleUser.userID;
             NSString *name = googleUser.profile.name;
             NSString *email = googleUser.profile.email;
-            SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@", userID,name,email);
+            
+            NSString *idToken = googleUser.authentication.idToken;
+            NSString *accessToken = googleUser.authentication.accessToken;
+            
+            SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
             if (successCallback) {
-                successCallback(userID,name,email);
+                successCallback(userID,name,email,idToken,accessToken,kClientID);
             }
         } else {
           // To authenticate, use Google Sign-In button.

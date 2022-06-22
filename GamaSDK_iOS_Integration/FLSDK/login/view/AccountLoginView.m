@@ -176,7 +176,7 @@
             if (self.delegate) {
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
             }
-
+            
         }];
         
         
@@ -445,21 +445,23 @@
             }
             [LoginHelper guestLoginAndThirdRequest:self.delegate];
         }
+            break;
         case googleLoginActTag:
         {
             if (![self checkAgreeTerm]) {
                 return;
             }
-//            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+            [LoginHelper googleLoginAndThirdRequest:self.delegate];
         }
+            break;
         case lineLoginActTag:
         {
             if (![self checkAgreeTerm]) {
                 return;
             }
-//            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+            //            [LoginHelper guestLoginAndThirdRequest:self.delegate];
         }
-            
+            break;
         case kAgreeTermsCheckBoxBtnTag:
         {
             if (checkBoxTermsBtn.isSelected) {
@@ -469,7 +471,7 @@
             }
             
         }
-            
+            break;
         default:
             break;
     }
