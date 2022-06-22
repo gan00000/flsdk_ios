@@ -9,12 +9,8 @@
 #import "FLSDK.h"
 #import "Social_ViewController.h"
 #import "GamaWebViewController.h"
-#pragma add age System test
-#import "HelloHeader.h"
-//#import "KRAgeSystemView.h"
-#pragma end
+
 #import <AdSupport/AdSupport.h>
-#import "Firebase.h"
 
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
 {

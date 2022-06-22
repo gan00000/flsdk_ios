@@ -11,9 +11,6 @@
 #import "ConfigHeader.h"
 #import "FLSDK.h"
 
-#import "Firebase.h"
-#import <AppsFlyerLib/AppsFlyerLib.h>
-
 @interface AppDelegate ()
 
 @end

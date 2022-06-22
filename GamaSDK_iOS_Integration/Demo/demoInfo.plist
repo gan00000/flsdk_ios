@@ -31,6 +31,15 @@
 			<array>
 				<string>lyjios</string>
 				<string>fb290914729828439</string>
+				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.61788863107-ibqppv1m5dc6p9kce4g24umk2fr8sh84</string>
 			</array>
 		</dict>
 	</array>
@@ -48,6 +57,7 @@
 		<string>fbauth2</string>
 		<string>fb-messenger-api</string>
 		<string>fbshareextension</string>
+		<string>lineauth2</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -62,10 +72,13 @@
 	<string>為了給您提供更好的客戶服務，App需要獲取您照片的訪問權限</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>為了給您提供更好的客戶服務，App需要獲取您相冊的訪問權限</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
-		<string>gamekit</string>
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>

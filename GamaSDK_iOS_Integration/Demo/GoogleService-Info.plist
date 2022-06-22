@@ -3,36 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>942710672171-audo2btofim510ujvq6a70b10gqhmukm.apps.googleusercontent.com</string>
+	<string>61788863107-ibqppv1m5dc6p9kce4g24umk2fr8sh84.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.942710672171-audo2btofim510ujvq6a70b10gqhmukm</string>
+	<string>com.googleusercontent.apps.61788863107-ibqppv1m5dc6p9kce4g24umk2fr8sh84</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>942710672171-q9p5qd0vdjjqf1uqicsg1ous9g51a4lh.apps.googleusercontent.com</string>
+	<string>61788863107-kqg3srg1tcelrta7rac0d630gd44krkc.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDzgNk2QVCxLtg_NhQ1wsvu0DlxyeTSLsc</string>
+	<string>AIzaSyD-3nyjFbrT_NAO-tLJAuH-7nHez7b8Do8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>942710672171</string>
+	<string>61788863107</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.flyfun.dybtt.ios</string>
+	<string>com.fzzh.tw</string>
 	<key>PROJECT_ID</key>
-	<string>flyfun-lyj</string>
+	<string>meowplayer-5541c</string>
 	<key>STORAGE_BUCKET</key>
-	<string>flyfun-lyj.appspot.com</string>
+	<string>meowplayer-5541c.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:942710672171:ios:2e30484ee94c242edd536e</string>
-	<key>DATABASE_URL</key>
-	<string>https://flyfun-lyj.firebaseio.com</string>
+	<string>1:61788863107:ios:566410590ddb7002c5f9b6</string>
 </dict>
 </plist>
