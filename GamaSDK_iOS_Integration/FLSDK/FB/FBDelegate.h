@@ -9,20 +9,24 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <FBSDKShareKit/FBSDKShareKit.h>
-//@import FacebookCore;
-//@import FacebookLogin;
+//#import <FBSDKCoreKit/FBSDKCoreKit.h>
+//#import <FBSDKLoginKit/FBSDKLoginKit.h>
+//#import <FBSDKShareKit/FBSDKShareKit.h>
+
+@import FBSDKCoreKit;
+@import FBSDKLoginKit;
+@import FBSDKShareKit;
+
 #import "CComHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FBDelegate : NSObject
 
++ (instancetype)share;
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-
++ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
 + (void)applicationWillTerminate:(UIApplication *)application;
@@ -30,11 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)applicationDidBecomeActive:(UIApplication *)application;
 
 
-- (void)login:(BOOL)isForceInappLogin
+-(void)loginWithPesentingViewController:(UIViewController *)presentingViewController
+                        isForceInappLogin:(BOOL)isForceInappLogin
             andIsForceReAuthorize:(BOOL)isForceReAuthorize
             andSuccessBlock:(void(^)(NSString *fbUserId,NSString *fbUserName,NSString *fbIdToken))successBlock
             andFailBlock:(void(^)(NSError *error))failBlock
-andCancelBlock:(void(^)(NSError *error))cancelBlock;
+                           andCancelBlock:(void(^)(NSError *error))cancelBlock;
 
 @end
 

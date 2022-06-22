@@ -44,7 +44,7 @@ extern NSString *const GAMA_NOTIFICATION_SHARE_RESULT;            // 分享结�
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation;
 
-+ (BOOL)application:(UIApplication *)app
++ (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
             options:(NSDictionary *)options;
 #pragma mark - 储值功能

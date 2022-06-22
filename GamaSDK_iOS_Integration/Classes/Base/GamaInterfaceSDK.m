@@ -178,26 +178,22 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
 }
 #pragma mark - Life Cycle
 
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-//    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
-//    [GamaFacebookPort application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    
-    return YES;
-}
-
-// system version is ios9 and later
-+ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
-{
-//    [KRTwitterLogin application:app openURL:url options:options];
-    return [GamaInterfaceSDK application:app
-                                 openURL:url
-                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
-                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
-}
+//+ (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation
+//{
+//    return YES;
+//}
+//
+//// system version is ios9 and later
+//+ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
+//{
+//    return [GamaInterfaceSDK application:app
+//                                 openURL:url
+//                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
+//                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+//}
 
 + (BOOL)application:(UIApplication *)application
 continueUserActivity:(NSUserActivity *)userActivity

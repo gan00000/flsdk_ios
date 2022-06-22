@@ -10,6 +10,7 @@
 #import "SAppleLogin.h"
 #import "SDKRequest.h"
 #import "FBDelegate.h"
+#import "LineDelegate.h"
 
 @implementation LoginHelper
 
@@ -49,8 +50,8 @@
 
 +(void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate
 {
-    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
-    [mFBDelegate login:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
+//    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+    [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
         
         NSDictionary *otherParamsDic = nil;
         @try {
@@ -141,6 +142,17 @@
     }];
 }
 
+
++ (void)lineLoginAndThirdRequest:(id<LoginViewDelegate>)delegate{
+//    LineDelegate *mLineDelegate = [[LineDelegate alloc] init];
+    
+    [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        
+    } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        
+    }];
+}
+
 + (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password
 {
     [SDKRequest doLoginWithAccount:account andPassword:password otherDic:nil successBlock:^(id responseData) {
@@ -177,8 +189,8 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
-        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
-        [mFBDelegate login:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
+//        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+        [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
             
             [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:otherParamsDic];
             

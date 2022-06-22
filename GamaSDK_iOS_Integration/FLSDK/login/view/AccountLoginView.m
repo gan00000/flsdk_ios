@@ -459,7 +459,7 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
-            //            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+            [LoginHelper lineLoginAndThirdRequest:self.delegate];
         }
             break;
         case kAgreeTermsCheckBoxBtnTag:

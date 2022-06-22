@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)googleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
 
++ (void)lineLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
+
 + (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password;
 
 

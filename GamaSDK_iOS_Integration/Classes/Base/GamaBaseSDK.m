@@ -14,6 +14,7 @@
 
 #import "FBDelegate.h"
 #import "FirebaseDelegate.h"
+#import "LineDelegate.h"
 
 #import <StoreKit/StoreKit.h>
 @implementation GamaBaseSDK
@@ -60,14 +61,21 @@
 //    // 第三方登录openURL回调
 //    [NSClassFromString(@"GamaFacebookPort") application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     
-    [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    if (!result) {
+        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
     
     return YES;
 }
 
-+ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
++ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
-    return YES;
+    BOOL result = [FBDelegate application:application openURL:url options:options];
+    if (!result) {
+        result = [LineDelegate application:application openURL:url sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"] annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+    }
+    return result;
 }
 
 + (void)_applicationDidBecomeActive:(UIApplication *)application

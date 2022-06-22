@@ -131,13 +131,14 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
     return [GamaInterfaceSDK application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
+//system version is ios9 and later
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
 {
-    [GamaInterfaceSDK application:app openURL:url options:options];
-    return [GamaInterfaceSDK application:app
-                                 openURL:url
-                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
-                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+    return [GamaInterfaceSDK application:app openURL:url options:options];
+//    return [GamaInterfaceSDK application:app
+//                                 openURL:url
+//                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
+//                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
 }
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
