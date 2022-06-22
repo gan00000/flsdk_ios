@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@import GoogleSignIn;
+
+//#import <GoogleSignIn/GIDSignIn.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GIDDelegate : NSObject
 
+
+    
 @end
 
 NS_ASSUME_NONNULL_END

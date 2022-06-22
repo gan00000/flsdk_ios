@@ -12,7 +12,8 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
-
+//@import FacebookCore;
+//@import FacebookLogin;
 #import "CComHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
