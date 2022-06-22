@@ -21,33 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		220B85161E54AF7D00505690 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B85151E54AF7D00505690 /* JavaScriptCore.framework */; };
-		350F195C1A08AE2B00C2FF3B /* BuildScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 350F195B1A08AE2B00C2FF3B /* BuildScript.sh */; };
-		E48D63C22060AFB2003326CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A9D51FFB94CD00509C42 /* Security.framework */; };
-		E48D63C32060AFB4003326CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A9D41FFB94CB00509C42 /* SystemConfiguration.framework */; };
-		E48D63C42060AFB6003326CE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A9D31FFB94CA00509C42 /* AdSupport.framework */; };
-		E48D63C52060AFB7003326CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A9D21FFB94C700509C42 /* UIKit.framework */; };
-		E97410FC208719A10018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410D9208719A10018E1A6 /* AppDelegate.m */; };
-		E97410FD208719A10018E1A6 /* GamaIapData.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410DD208719A10018E1A6 /* GamaIapData.m */; };
-		E97410FE208719A10018E1A6 /* GamaIapFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410DF208719A10018E1A6 /* GamaIapFunction.m */; };
-		E97410FF208719A10018E1A6 /* GamaIapServerAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410E2208719A10018E1A6 /* GamaIapServerAccess.m */; };
-		E9741100208719A10018E1A6 /* GamaIapFunctionPort.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410E4208719A10018E1A6 /* GamaIapFunctionPort.m */; };
-		E9741101208719A10018E1A6 /* GamaIapTransactionRecorder+CheckSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410E8208719A10018E1A6 /* GamaIapTransactionRecorder+CheckSuccess.m */; };
-		E9741102208719A10018E1A6 /* GamaIapTransactionRecorder+CreatRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410E9208719A10018E1A6 /* GamaIapTransactionRecorder+CreatRecord.m */; };
-		E9741103208719A10018E1A6 /* GamaIapTransactionRecorder+PayFail.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410EA208719A10018E1A6 /* GamaIapTransactionRecorder+PayFail.m */; };
-		E9741104208719A10018E1A6 /* GamaIapTransactionRecorder+PaySuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410EB208719A10018E1A6 /* GamaIapTransactionRecorder+PaySuccess.m */; };
-		E9741105208719A10018E1A6 /* GamaIapTransactionRecorder+ServerCheckFail.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410EC208719A10018E1A6 /* GamaIapTransactionRecorder+ServerCheckFail.m */; };
-		E9741106208719A10018E1A6 /* GamaIapTransactionRecorder+UserCancelPay.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410ED208719A10018E1A6 /* GamaIapTransactionRecorder+UserCancelPay.m */; };
-		E9741107208719A10018E1A6 /* GamaIapTransactionRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410EF208719A10018E1A6 /* GamaIapTransactionRecorder.m */; };
-		E9741108208719A10018E1A6 /* GamaIapAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410F2208719A10018E1A6 /* GamaIapAlertView.m */; };
-		E9741109208719A10018E1A6 /* GamaIapMemoryAndLocalDataAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410F4208719A10018E1A6 /* GamaIapMemoryAndLocalDataAdmin.m */; };
-		E974110A208719A10018E1A6 /* GamaIapRecodeAndLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410F6208719A10018E1A6 /* GamaIapRecodeAndLog.m */; };
-		E974110B208719A10018E1A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97410F7208719A10018E1A6 /* Images.xcassets */; };
-		E974110C208719A10018E1A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97410F8208719A10018E1A6 /* Info.plist */; };
-		E974110D208719A10018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410F9208719A10018E1A6 /* main.m */; };
-		E974110E208719A10018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410FB208719A10018E1A6 /* ViewController.m */; };
-		E974112520873A630018E1A6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E974112420873A630018E1A6 /* StoreKit.framework */; };
-		E974112720873BED0018E1A6 /* GamaEncryptCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E974112620873BED0018E1A6 /* GamaEncryptCoreInfo.plist */; };
 		E974112820873C5C0018E1A6 /* GamaIapData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E97410DC208719A10018E1A6 /* GamaIapData.h */; };
 		E974112920873C630018E1A6 /* GamaIapFunctionPort.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E97410E3208719A10018E1A6 /* GamaIapFunctionPort.h */; };
 		E974112A20873C730018E1A6 /* GamaIapData.m in Sources */ = {isa = PBXBuildFile; fileRef = E97410DD208719A10018E1A6 /* GamaIapData.m */; };
@@ -89,7 +62,6 @@
 		22B1A9D51FFB94CD00509C42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		350F19421A08ABD800C2FF3B /* libGamaIAP_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamaIAP_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		350F195B1A08AE2B00C2FF3B /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
-		35A67F8A1A07884E007D5176 /* GamaIAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamaIAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97410D8208719A10018E1A6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E97410D9208719A10018E1A6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E97410DC208719A10018E1A6 /* GamaIapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaIapData.h; sourceTree = "<group>"; };
@@ -133,19 +105,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35A67F871A07884E007D5176 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E974112520873A630018E1A6 /* StoreKit.framework in Frameworks */,
-				220B85161E54AF7D00505690 /* JavaScriptCore.framework in Frameworks */,
-				E48D63C22060AFB2003326CE /* Security.framework in Frameworks */,
-				E48D63C32060AFB4003326CE /* SystemConfiguration.framework in Frameworks */,
-				E48D63C42060AFB6003326CE /* AdSupport.framework in Frameworks */,
-				E48D63C52060AFB7003326CE /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,7 +135,6 @@
 		35A67F8B1A07884E007D5176 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35A67F8A1A07884E007D5176 /* GamaIAP.app */,
 				350F19421A08ABD800C2FF3B /* libGamaIAP_DotA.a */,
 			);
 			name = Products;
@@ -280,23 +238,6 @@
 			productReference = 350F19421A08ABD800C2FF3B /* libGamaIAP_DotA.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		35A67F891A07884E007D5176 /* GamaIAP */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35A67FAD1A078853007D5176 /* Build configuration list for PBXNativeTarget "GamaIAP" */;
-			buildPhases = (
-				35A67F861A07884E007D5176 /* Sources */,
-				35A67F871A07884E007D5176 /* Frameworks */,
-				35A67F881A07884E007D5176 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GamaIAP;
-			productName = EfunLogin;
-			productReference = 35A67F8A1A07884E007D5176 /* GamaIAP.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,11 +252,6 @@
 					};
 					350F19561A08AE1500C2FF3B = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					35A67F891A07884E007D5176 = {
-						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = N64JLDR4LD;
-						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -333,26 +269,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35A67F891A07884E007D5176 /* GamaIAP */,
 				350F19411A08ABD800C2FF3B /* GamaIAP_DotA */,
 				350F19561A08AE1500C2FF3B /* GamaIAP_Builder */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		35A67F881A07884E007D5176 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				350F195C1A08AE2B00C2FF3B /* BuildScript.sh in Resources */,
-				E974110B208719A10018E1A6 /* Images.xcassets in Resources */,
-				E974110C208719A10018E1A6 /* Info.plist in Resources */,
-				E974112720873BED0018E1A6 /* GamaEncryptCoreInfo.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		350F195A1A08AE1D00C2FF3B /* ShellScript */ = {
@@ -389,30 +310,6 @@
 				E974112B20873C730018E1A6 /* GamaIapFunction.m in Sources */,
 				E974112A20873C730018E1A6 /* GamaIapData.m in Sources */,
 				E974112D20873C730018E1A6 /* GamaIapFunctionPort.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A67F861A07884E007D5176 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E974110E208719A10018E1A6 /* ViewController.m in Sources */,
-				E9741104208719A10018E1A6 /* GamaIapTransactionRecorder+PaySuccess.m in Sources */,
-				E97410FD208719A10018E1A6 /* GamaIapData.m in Sources */,
-				E9741102208719A10018E1A6 /* GamaIapTransactionRecorder+CreatRecord.m in Sources */,
-				E9741108208719A10018E1A6 /* GamaIapAlertView.m in Sources */,
-				E9741107208719A10018E1A6 /* GamaIapTransactionRecorder.m in Sources */,
-				E9741105208719A10018E1A6 /* GamaIapTransactionRecorder+ServerCheckFail.m in Sources */,
-				E974110D208719A10018E1A6 /* main.m in Sources */,
-				E974110A208719A10018E1A6 /* GamaIapRecodeAndLog.m in Sources */,
-				E9741109208719A10018E1A6 /* GamaIapMemoryAndLocalDataAdmin.m in Sources */,
-				E9741106208719A10018E1A6 /* GamaIapTransactionRecorder+UserCancelPay.m in Sources */,
-				E97410FF208719A10018E1A6 /* GamaIapServerAccess.m in Sources */,
-				E9741101208719A10018E1A6 /* GamaIapTransactionRecorder+CheckSuccess.m in Sources */,
-				E9741103208719A10018E1A6 /* GamaIapTransactionRecorder+PayFail.m in Sources */,
-				E9741100208719A10018E1A6 /* GamaIapFunctionPort.m in Sources */,
-				E97410FC208719A10018E1A6 /* AppDelegate.m in Sources */,
-				E97410FE208719A10018E1A6 /* GamaIapFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,68 +479,6 @@
 			};
 			name = Release;
 		};
-		35A67FAE1A078853007D5176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_MODULES_AUTOLINK = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N64JLDR4LD;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				INFOPLIST_FILE = GamaIAP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gama.myapplication;
-				PRODUCT_NAME = GamaIAP;
-				PROVISIONING_PROFILE = "ea5aa7f5-94d5-45a5-8734-9df8d147a885";
-				PROVISIONING_PROFILE_SPECIFIER = "dev-ios-0416";
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
-			};
-			name = Debug;
-		};
-		35A67FAF1A078853007D5176 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_MODULES_AUTOLINK = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N64JLDR4LD;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/../../WorkProjResources/GamaCommonHeader.h";
-				INFOPLIST_FILE = GamaIAP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gama.myapplication;
-				PRODUCT_NAME = GamaIAP;
-				PROVISIONING_PROFILE = "ea5aa7f5-94d5-45a5-8734-9df8d147a885";
-				PROVISIONING_PROFILE_SPECIFIER = "dev-ios-0416";
-				VALID_ARCHS = "arm64 armv7 x86_64 i386";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -670,15 +505,6 @@
 			buildConfigurations = (
 				35A67FAB1A078853007D5176 /* Debug */,
 				35A67FAC1A078853007D5176 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35A67FAD1A078853007D5176 /* Build configuration list for PBXNativeTarget "GamaIAP" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35A67FAE1A078853007D5176 /* Debug */,
-				35A67FAF1A078853007D5176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
