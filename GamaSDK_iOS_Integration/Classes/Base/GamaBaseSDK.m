@@ -80,22 +80,21 @@
 //    [GamaAdPort startWhenBecomeActive];
 //
 //    [GamaIapFunctionPort applicationDidBecomeActive];
-//
-//    [NSClassFromString(@"GamaFacebookPort") applicationDidBecomeActive:nil];
+    
+    [FBDelegate applicationDidBecomeActive:application];
     
 }
 
 + (void)_applicationWillTerminate:(UIApplication *)application
 {
-    [NSClassFromString(@"GamaFacebookPort") applicationWillTerminate:nil];
-    
-//    [[SKPaymentQueue defaultQueue] removeTransactionObserver:[GamaIapFunctionPort iapDataObject]];
+    [FBDelegate applicationWillTerminate:application];
 }
 
 + (void)_applicationDidEnterBackground:(UIApplication *)application
 {
 //    [GamaIapFunctionPort applicationDidEnterBackground];
 //    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
+    
 }
 
 + (void)_applicationWillEnterForeground:(UIApplication *)application
