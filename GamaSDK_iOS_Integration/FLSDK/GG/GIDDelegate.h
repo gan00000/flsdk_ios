@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
                 failCallback:(void(^)(NSString *msg))failCallback
           cancelCallback:(void(^)(NSString *msg))cancelCallback;
     
++ (void)signOut;
 @end
 
 NS_ASSUME_NONNULL_END

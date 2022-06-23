@@ -54,6 +54,8 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
     
   
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    [[FLSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
     
     /// TO DO
