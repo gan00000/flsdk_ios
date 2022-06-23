@@ -35,10 +35,7 @@
                 successBlock(mCr);
             }
             
-            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier]]) {//先匹配所有版本开关
-                SDK_DATA.mConfigModel = mCr.allVersion;
-                return;
-            }else if (mCr.subVersion){
+            if (mCr.subVersion){
                 
                 for (ConfigModel *cm in mCr.subVersion) {
                     
@@ -49,8 +46,10 @@
                 }
             }
             
+            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier]]) {//先匹配所有版本开关
+                SDK_DATA.mConfigModel = mCr.allVersion;
+            }
             
-//            [CCSDKDATA sharedSdkData].mConfigModel = mCr.
         }else {
 //            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
             if (errorBlock) {
