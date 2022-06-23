@@ -3,7 +3,7 @@
 //
 
 #import "AppDelegate.h"
-#import "GamaInterfaceSDK.h"
+#import "BaseSDKImpl.h"
 #import "ViewController.h"
 #import "UserModel.h"
 

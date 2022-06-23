@@ -50,8 +50,8 @@
 
 #import "FLSDK.h"
 
-#import "GamaBaseSDK.h"
-#import "GamaInterfaceSDK.h"
+#import "BaseSDK.h"
+#import "BaseSDKImpl.h"
 #import "HelloHeader.h"
 #import "GamaAdInterface.h"
 #import "GamaSDK+Social.h"
@@ -387,7 +387,7 @@ completionHandler:(PayCompletionHandler) handler
         return;
     }
     self.payHandler = handler;
-    [GamaInterfaceSDK gamaPay:productId cpOrderId:cpOrderId extra:extra];
+    [BaseSDKImpl gamaPay:productId cpOrderId:cpOrderId extra:extra];
 
 }
 
@@ -585,7 +585,7 @@ completionHandler:(PayCompletionHandler) handler
 //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_SUCCUESS
 //                                                            object:nil
 //                                                          userInfo:resultDic];
-        [GamaBaseSDK _in_app_purchases:note];
+        [BaseSDK _in_app_purchases:note];
         if (self.payHandler) {
             self.payHandler(SDK_PAY_STATUS_SUCCESS, resultDic);
         }

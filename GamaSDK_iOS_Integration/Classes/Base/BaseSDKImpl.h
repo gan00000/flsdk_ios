@@ -6,9 +6,9 @@
 //  Copyright © 2017年 SP. All rights reserved.
 //
 
-#import "GamaBaseSDK.h"
+#import "BaseSDK.h"
 
-@interface GamaInterfaceSDK : GamaBaseSDK
+@interface BaseSDKImpl : BaseSDK
 
 
 @end

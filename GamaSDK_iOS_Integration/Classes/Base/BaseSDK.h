@@ -18,7 +18,7 @@ extern NSString *const GAMA_NOTIFICATION_PHCHASE_PUCHASING;           // 储值�
 
 extern NSString *const GAMA_NOTIFICATION_SHARE_RESULT;            // 分享结果
 
-@interface GamaBaseSDK : NSObject
+@interface BaseSDK : NSObject
 
 
 #pragma mark - 储值功能

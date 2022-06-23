@@ -1,7 +1,7 @@
 //
 
 
-#import "GamaBaseSDK.h"
+#import "BaseSDK.h"
 #import "FLSDK.h"
 #import "ConfigHeader.h"
 #import "SUtil.h"
@@ -17,7 +17,7 @@
 #import "LineDelegate.h"
 
 #import <StoreKit/StoreKit.h>
-@implementation GamaBaseSDK
+@implementation BaseSDK
 
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 + (void)_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

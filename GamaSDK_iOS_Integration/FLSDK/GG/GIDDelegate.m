@@ -97,12 +97,12 @@ presentingViewController:(UIViewController *)presentingViewController
     
 //    [GIDSignIn.sharedInstance disconnectWithCallback:^(NSError * _Nullable error) {
 //        if (error) {
-//            
+//
 //            SDK_LOG(@"Status: Failed to disconnect: %@",error);
 //        } else {
 //            SDK_LOG(@"Status: Disconnected");
 //        }
-//        
+//
 //    }];
 }
 

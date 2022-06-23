@@ -271,25 +271,30 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         
-        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-            
-            NSDictionary *otherParamsDic = nil;
-            @try {
-                otherParamsDic = @{
-                    @"lineAccessToken"        :accessToken,
-                    
-                };
-
-            } @catch (NSException *exception) {
-                
-            }
-            
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
-            
-            
-        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-            
-        }];
+//        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+//
+//            NSDictionary *otherParamsDic = nil;
+//            @try {
+//                otherParamsDic = @{
+//                    @"lineAccessToken"        :accessToken,
+//
+//                };
+//
+//            } @catch (NSException *exception) {
+//
+//            }
+//
+//            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
+//
+//
+//        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+//
+//        }];
+        
+        if ([StringUtil isEmpty:currentAccountModel.thirdId]) {
+            return;
+        }
+        [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:currentAccountModel.thirdId thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
         
     }
     

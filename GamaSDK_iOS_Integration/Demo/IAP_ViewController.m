@@ -7,7 +7,7 @@
 //
 
 #import "IAP_ViewController.h"
-#import "GamaInterfaceSDK.h"
+#import "BaseSDKImpl.h"
 #import "UserModel.h"
 #import "SUtil.h"
 #import "ConfigHeader.h"

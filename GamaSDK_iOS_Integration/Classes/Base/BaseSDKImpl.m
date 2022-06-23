@@ -1,7 +1,7 @@
 //
 //
 
-#import "GamaInterfaceSDK.h"
+#import "BaseSDKImpl.h"
 #import "ConfigHeader.h"
 #import "GamaCommonHeader.h"
 //#import "KRTwitterLogin.h"
@@ -20,7 +20,7 @@
 #define GAMA_ADD_SELECTOR_PREFIX(__SELECTOR__) @selector(Gama_##__SELECTOR__)
 
 #define GAMA_SWIZZLE_DELEGATE_METHOD(__SELECTORSTRING__) \
-Gama_Swizzle([delegate class], @selector(__SELECTORSTRING__), class_getClassMethod([GamaInterfaceSDK class], GAMA_ADD_SELECTOR_PREFIX(__SELECTORSTRING__))); \
+Gama_Swizzle([delegate class], @selector(__SELECTORSTRING__), class_getClassMethod([BaseSDKImpl class], GAMA_ADD_SELECTOR_PREFIX(__SELECTORSTRING__))); \
 
 void Gama_Swizzle(Class class, SEL originalSelector, Method swizzledMehotd)
 {
@@ -44,7 +44,7 @@ BOOL Gama_Appdelegate_method_return(id _self_, SEL _cmd_, SEL _efun_selector_, i
 {
     BOOL returnValue = NO;
     if (![NSStringFromSelector(_cmd_) isEqualToString:NSStringFromSelector(_efun_selector_)]) {
-        Method m = class_getClassMethod([GamaInterfaceSDK class], _efun_selector_);
+        Method m = class_getClassMethod([BaseSDKImpl class], _efun_selector_);
         IMP method = method_getImplementation(m);
         BOOL (* callMethod)(id,SEL,id,id,id,id) = (void *)method;
         returnValue = callMethod(_self_, _efun_selector_, _application_, _args1_, _args2_, _args3_);
@@ -52,7 +52,7 @@ BOOL Gama_Appdelegate_method_return(id _self_, SEL _cmd_, SEL _efun_selector_, i
     return returnValue;
 }
 
-@interface GamaBaseSDK () <UNUserNotificationCenterDelegate>
+@interface BaseSDK () <UNUserNotificationCenterDelegate>
 
 + (void)_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 + (void)_applicationDidBecomeActive:(UIApplication *)application;
@@ -81,7 +81,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
 }
 @end
 
-@implementation GamaInterfaceSDK
+@implementation BaseSDKImpl
 
 #pragma mark - Init
 
@@ -102,7 +102,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_application:note.object didFinishLaunchingWithOptions:note.userInfo];
+                                                          [BaseSDKImpl star_application:note.object didFinishLaunchingWithOptions:note.userInfo];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification
@@ -110,7 +110,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_applicationDidBecomeActive:note.object];
+                                                          [BaseSDKImpl star_applicationDidBecomeActive:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillTerminateNotification
@@ -118,7 +118,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_applicationWillTerminate:note.object];
+                                                          [BaseSDKImpl star_applicationWillTerminate:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification
@@ -126,7 +126,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_applicationDidEnterBackground:note.object];
+                                                          [BaseSDKImpl star_applicationDidEnterBackground:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification
@@ -134,7 +134,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_applicationDidEnterBackground:note.object];
+                                                          [BaseSDKImpl star_applicationDidEnterBackground:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification
@@ -142,7 +142,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [GamaInterfaceSDK star_applicationWillEnterForeground:note.object];
+                                                          [BaseSDKImpl star_applicationWillEnterForeground:note.object];
                                                       });
                                                   }];
 }
