@@ -212,7 +212,7 @@ static dispatch_once_t onceToken;
     [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
     [resultURL appendFormat:@"roleName=%@&",[SdkUserInfoModel shareInfoModel].roleName.urlDecode];
     [resultURL appendFormat:@"serverName=%@&",[SdkUserInfoModel shareInfoModel].serverName.urlEncode];
-    if (Device_Is_Landscape) {
+    if (!IS_PORTRAIT) {
         [resultURL appendFormat:@"layout=%@&",@"transverse"];
     }else{
         [resultURL appendFormat:@"layout=%@&",@"vertical"];

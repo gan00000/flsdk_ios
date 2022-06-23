@@ -124,35 +124,6 @@
     }];
     
     
-    //    UILabel *tipsUILabel = [[UILabel alloc] init];
-    //    if (device_is_iPhoneX) {
-    //        tipsUILabel.font = [UIFont systemFontOfSize:16];
-    //    }else{
-    //        tipsUILabel.font = [UIFont systemFontOfSize:14];
-    //    }
-    //    tipsUILabel.font = [UIFont systemFontOfSize:14];
-    //
-    //    tipsUILabel.text = lableName;
-    //    tipsUILabel.textAlignment = NSTextAlignmentLeft;
-    //    tipsUILabel.backgroundColor = [UIColor clearColor];
-    //    tipsUILabel.numberOfLines = 1; //0为多行
-    //    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
-    //
-    //    [self addSubview:tipsUILabel];
-    //    [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(4);
-    //        make.top.mas_equalTo(self).offset(2);
-    //        make.bottom.mas_equalTo(self).offset(-2);
-    //        if (lableName.length > 2) {
-    //            make.width.mas_equalTo(60);
-    //        }else{
-    //            make.width.mas_equalTo(40);
-    //        }
-    //
-    //
-    //    }];
-    
-    
     UIView *lineView1 = [[UIView alloc] init];
     lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
     [self addSubview:lineView1];
@@ -187,9 +158,6 @@
     //    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
     
     int placeHolderTextSize = FS(14);
-    //    if (Device_Is_Landscape || device_is_iPhoneX) {
-    //        placeHolderTextSize = 10;
-    //    }
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
     mUITextField.attributedPlaceholder = attrStr;

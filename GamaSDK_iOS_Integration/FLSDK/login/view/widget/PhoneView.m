@@ -41,7 +41,7 @@
         make.leading.equalTo(self.mas_leading);
         make.top.mas_equalTo(self);
         make.height.mas_equalTo(self);
-        if (device_is_iPhoneX || Device_Is_Landscape) {
+        if (device_is_iPhoneX || !IS_PORTRAIT) {
             make.width.mas_equalTo(self).multipliedBy(0.45);
         }else{
             make.width.mas_equalTo(self).multipliedBy(0.5);
@@ -61,7 +61,7 @@
     
     UILabel *tipsUILabel = [[UILabel alloc] init];
 //    tipsUILabel.font = [UIFont systemFontOfSize:16];
-    if (device_is_iPhoneX || Device_Is_Landscape) {
+    if (device_is_iPhoneX || !IS_PORTRAIT) {
            tipsUILabel.font = [UIFont systemFontOfSize:16];
        }else{
            tipsUILabel.font = [UIFont systemFontOfSize:14];
@@ -144,7 +144,7 @@
     [self.mUITextField setKeyboardType:(UIKeyboardTypePhonePad)];
     
     int placeHolderTextSize = 8;
-       if (Device_Is_Landscape || device_is_iPhoneX) {
+       if (!IS_PORTRAIT || device_is_iPhoneX) {
            placeHolderTextSize = 10;
        }
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:@"請輸入電話號碼"

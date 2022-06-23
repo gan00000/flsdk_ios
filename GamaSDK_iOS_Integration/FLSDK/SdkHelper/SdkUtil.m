@@ -92,8 +92,8 @@
     NSString *timeStamp = [SUtil getTimeStamp];
     // md5 和第三方充值的 sign 规则一样  appkey+gamecode(无ios)+timestamp
     NSString *signature = [SUtil getMD5StrFromString:[NSString stringWithFormat:@"%@%@%@",
-                                                           GetConfigString(GAMA_GAME_KEY),
-                                                           GetConfigString(SDK_GAME_CODE),
+                                                           APP_KEY,
+                                                           GAME_CODE,
                                                            timeStamp
                                                            ]];
     //    [signature lowercaseString];
@@ -109,7 +109,7 @@
                 
                 //
                 @"userId"                   :           [SdkUserInfoModel shareInfoModel].userId,
-                @"gameCode"                 :           [NSString stringWithFormat:@"%@",GetConfigString(SDK_GAME_CODE)],
+                @"gameCode"                 :           [NSString stringWithFormat:@"%@",GAME_CODE],
                 @"timestamp"                :           timeStamp,
                 @"signature"                :           [signature lowercaseString],
                 @"psid"                     :           @"62",

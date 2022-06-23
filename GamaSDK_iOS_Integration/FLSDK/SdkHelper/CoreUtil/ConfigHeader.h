@@ -16,9 +16,6 @@
 #define GetConfigBool(key) [SDKConReader getBoolForKey:key]
 #define GetString(key) [SDKConReader getLocalizedStringForKey:key]
 
-
-#define Device_Is_Landscape  ![SUtil deviceIsPortrait]
-
 #define GAME_CODE [SDKConReader getGameCode]
 #define APP_KEY   [SDKConReader getAppkey]
 #define GAME_LANGUAGE [SDKConReader getGameLanguage]

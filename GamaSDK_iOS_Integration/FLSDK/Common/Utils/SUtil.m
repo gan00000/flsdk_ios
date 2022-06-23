@@ -208,7 +208,7 @@
 +(CGRect)getCurrentScreenFrame
 {
     CGRect currentScreenSize;
-    if (Device_Is_Landscape)//如果是横屏幕的游戏
+    if (!IS_PORTRAIT)//如果是横屏幕的游戏
     {
         currentScreenSize = [self rectFromWinSize_Landscape];
     }
@@ -525,14 +525,14 @@
     return iPhoneXSeries;
 }
 
-+(BOOL)deviceIsPortrait
-{
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
-        return YES;
-    }else {
-         return NO;
-    }
-}
+//+(BOOL)deviceIsPortrait
+//{
+//    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+//    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
+//        return YES;
+//    }else {
+//         return NO;
+//    }
+//}
 
 @end

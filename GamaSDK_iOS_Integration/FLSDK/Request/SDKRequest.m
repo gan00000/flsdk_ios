@@ -21,7 +21,7 @@
     [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
-        
+        SDK_LOG(@"sdk config:%@",responseDict);
         ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];//需要分开解析
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
         
@@ -422,7 +422,7 @@
 //    GameCode+ServerCode+UserId() + RoleId() + "FLYFUNGAME","UTF-8"
 //    NSString *timeStamp = [GamaFunction getTimeStamp];
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",GetConfigString(SDK_GAME_CODE)];//gamecode
+    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].serverCode];
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].userId];
     [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].roleID];

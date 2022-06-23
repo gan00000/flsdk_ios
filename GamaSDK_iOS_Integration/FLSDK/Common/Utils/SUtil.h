@@ -203,6 +203,6 @@
 //是否是流海屏
 +(BOOL)isIPhoneXSeries;
 
-+(BOOL)deviceIsPortrait;
+//+(BOOL)deviceIsPortrait;
 
 @end

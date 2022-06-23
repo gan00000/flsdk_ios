@@ -209,7 +209,7 @@
 +(NSInteger)getSdkPageWidth
 {
     if (IS_IPHONE) {
-        if (Device_Is_Landscape) {//横屏
+        if (!IS_PORTRAIT) {//横屏
             return kBgHeight * (608.0 / 582.0);
         }
         

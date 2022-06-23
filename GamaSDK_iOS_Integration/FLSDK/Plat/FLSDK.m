@@ -530,13 +530,9 @@ completionHandler:(PayCompletionHandler) handler
     
 //    [NSClassFromString(@"GamaFacebookPort") postFacebookShareDialogWithContentUrl:contentUrl];
     [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:contentUrl} success:^(NSDictionary * _Nullable result) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"Gama_httpRequest_SharingResult"
-                                                            object:nil
-                                                          userInfo:@{@"code":@"1000",@"message":GetConfigString(GAMA_SHARE_TEXT_SHARE_SUCCESS)}];
+        
     } failure:^(NSError * _Nullable error) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"Gama_httpRequest_SharingResult"
-                                                            object:nil
-                                                          userInfo:@{@"code":@"1010",@"message":GetConfigString(GAMA_SHARE_TEXT_DO_SHARE_FAIL)}];
+        
     }];
 }
 

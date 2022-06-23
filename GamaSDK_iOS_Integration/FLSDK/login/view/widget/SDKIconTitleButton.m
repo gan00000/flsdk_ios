@@ -88,11 +88,6 @@
         
         UILabel *titleLable = [[UILabel alloc] init];
         titleLable.text = titleName;
-//        if (device_is_iPhoneX) {
-//
-//        }else{
-//            titleLable.font = [UIFont boldSystemFontOfSize:14];
-//        }
         titleLable.font = [UIFont boldSystemFontOfSize:VH(32)];
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.backgroundColor = [UIColor clearColor];
