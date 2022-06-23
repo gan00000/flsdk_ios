@@ -34,10 +34,10 @@
 #define kBgWidth                    [UIUtil getSdkPageWidth]
 #define kBgHeight                   [UIUtil getSdkPageHeight]
 
-#define kInputTextFiledHeight                     [UIUtil getItemHeight]//48.0
-#define kInputTextFiledMarginLeftRight                 [UIUtil getItemWidthMargin]
-#define kInputTextFiledTopMargin                       kInputTextFiledHeight / 7
-#define kPageTitleHeight                        MIN(kInputTextFiledHeight * 1.6, 40)
+//#define kInputTextFiledHeight                     [UIUtil getItemHeight]//48.0
+//#define kInputTextFiledMarginLeftRight                 [UIUtil getItemWidthMargin]
+//#define kInputTextFiledTopMargin                       kInputTextFiledHeight / 7
+//#define kPageTitleHeight                        MIN(kInputTextFiledHeight * 1.6, 40)
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
 #define ContentViewBgColor                    @"#f4f4f5"

@@ -319,4 +319,22 @@
         [AlertUtil showAlertWithMessage:error.message];
     }];
 }
+
++ (void)deleteAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)accountMode otherParamsDic:(NSDictionary *)otherParamsDic successBlock:(void(^)())successBlock
+{
+    
+    [SDKRequest deleteAccount:accountMode otherParamsDic:otherParamsDic successBlock:^(id responseData) {
+        
+        LoginResponse *cc = (LoginResponse *)responseData;
+        [SdkUtil toastMsg:cc.message];
+        [[ConfigCoreUtil share] removeAccountByUserId:accountMode.userId];
+        if (successBlock) {
+            successBlock();
+        }
+        
+    } errorBlock:^(BJError *error) {
+        [AlertUtil showAlertWithMessage:error.message];
+    }];
+}
+
 @end

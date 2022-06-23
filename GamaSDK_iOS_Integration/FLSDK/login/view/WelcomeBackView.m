@@ -25,6 +25,7 @@
 #import "AccountLoginView.h"
 #import "AccountListView.h"
 #import "LoginHelper.h"
+#import "UIView+BlockGesture.h"
 
 @interface WelcomeBackView()
 
@@ -335,6 +336,34 @@
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
         make.centerY.equalTo(deleteView);
        
+    }];
+    
+    [deleteView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [LoginHelper deleteAccountAndRequest:self.delegate view:self account:currentAccountModel otherParamsDic:nil successBlock:^{
+            
+            NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+            if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+                currentAccountModel = mAccountArray[0];
+                
+                [accountDataList removeAllObjects];
+                [accountDataList addObjectsFromArray:mAccountArray];
+                
+                [AccountLoginView makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+                
+                [self setViewStatue];
+                
+            }else{
+                
+                currentAccountModel = nil;
+                if (self.delegate) {
+                    //数据为空不再返回此页面，返回到主登录页面
+                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:CURRENT_PAGE_TYPE_WELCOME_BACK param:nil];
+                }
+                
+            }
+            
+        }];
     }];
 }
 

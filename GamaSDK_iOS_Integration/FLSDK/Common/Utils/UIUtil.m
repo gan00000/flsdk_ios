@@ -231,29 +231,6 @@
     return 582 * 0.8;;
 }
 
-+(NSInteger)getItemHeight
-{
-    
-    if (IS_IPHONE) {
-        int width = [self getSdkPageHeight];
-        int itemHeight = width / 10;
-        //int itemTopMargin = width / 7;
-        if (itemHeight > 48) {
-            return 48;
-        }
-        return itemHeight;
-    }
-    return 40;
-}
-
-+(NSInteger)getItemWidthMargin
-{
-    
-    if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
-        return 80;
-    }
-    return 30;
-}
 
 //h = 582 w = 608
 +(CGFloat)getViewHeight:(CGFloat)height

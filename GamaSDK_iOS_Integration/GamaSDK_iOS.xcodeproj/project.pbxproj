@@ -145,9 +145,7 @@
 		3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FF24DAEDDE00B85976 /* SdkAutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30224DAEDDE00B85976 /* SelectLoginTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -472,15 +470,11 @@
 		322CBC2724C589A5000D6B20 /* AccountListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountListViewCell.m; sourceTree = "<group>"; };
 		322CBC2824C589A5000D6B20 /* AccountLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLoginView.h; sourceTree = "<group>"; };
 		322CBC2924C589A5000D6B20 /* RegisterAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountView.h; sourceTree = "<group>"; };
-		322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLoginTypeView.m; sourceTree = "<group>"; };
 		322CBC2E24C589A5000D6B20 /* FindPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordView.m; sourceTree = "<group>"; };
 		322CBC3024C589A5000D6B20 /* ChangePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordView.h; sourceTree = "<group>"; };
 		322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBindTypeView.h; sourceTree = "<group>"; };
 		322CBC3524C589A5000D6B20 /* RegisterAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountView.m; sourceTree = "<group>"; };
 		322CBC3624C589A5000D6B20 /* AccountLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLoginView.m; sourceTree = "<group>"; };
-		322CBC3824C589A5000D6B20 /* SelectLoginTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLoginTypeView.h; sourceTree = "<group>"; };
-		322CBC7724C59186000D6B20 /* SdkAutoLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkAutoLoginView.h; sourceTree = "<group>"; };
-		322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkAutoLoginView.m; sourceTree = "<group>"; };
 		322CBC7B24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexStringToColorTW.h"; sourceTree = "<group>"; };
 		322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexStringToColorTW.m"; sourceTree = "<group>"; };
 		32B79161254159FC008C4365 /* HttpServiceEngineAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpServiceEngineAd.h; sourceTree = "<group>"; };
@@ -1127,14 +1121,10 @@
 				03EA36092850989900723340 /* MainHomeView.m */,
 				322CBC2924C589A5000D6B20 /* RegisterAccountView.h */,
 				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
-				322CBC7724C59186000D6B20 /* SdkAutoLoginView.h */,
-				322CBC7824C59186000D6B20 /* SdkAutoLoginView.m */,
 				03650193285C761600578028 /* SDKBaseView.h */,
 				03650194285C761600578028 /* SDKBaseView.m */,
 				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
 				322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */,
-				322CBC3824C589A5000D6B20 /* SelectLoginTypeView.h */,
-				322CBC2C24C589A5000D6B20 /* SelectLoginTypeView.m */,
 				32D790EB24D55D69006A2F69 /* TermsView.h */,
 				32D790EC24D55D69006A2F69 /* TermsView.m */,
 				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
@@ -1552,14 +1542,12 @@
 				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
 				032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */,
-				3295E2FF24DAEDDE00B85976 /* SdkAutoLoginView.m in Sources */,
 				03669949285E26890008EB50 /* StringUtil.m in Sources */,
 				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
 				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
 				03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				03B919372860AECB0029AE6A /* UIImage+MultiFormat.m in Sources */,
 				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
-				3295E30224DAEDDE00B85976 /* SelectLoginTypeView.m in Sources */,
 				03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */,
 				32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */,
 				3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */,

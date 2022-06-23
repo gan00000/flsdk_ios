@@ -93,6 +93,13 @@ thirdPlate:(NSString *)thirdPlate
  successBlock:(BJServiceSuccessBlock)successBlock
                           errorBlock:(BJServiceErrorBlock)errorBlock;
 
+
+
++ (void)deleteAccount:(AccountModel *)accountMode
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(BJServiceSuccessBlock)successBlock
+           errorBlock:(BJServiceErrorBlock)errorBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

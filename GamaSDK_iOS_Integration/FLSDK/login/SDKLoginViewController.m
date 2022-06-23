@@ -12,9 +12,7 @@
 #import "RegisterAccountView.h"
 #import "ChangePasswordView.h"
 #import "SelectBindTypeView.h"
-#import "SdkAutoLoginView.h"
 #import "FindPasswordView.h"
-#import "SelectLoginTypeView.h"
 #import "YYModel.h"
 #import "LoginResponse.h"
 #import "AccountModel.h"
@@ -548,38 +546,38 @@
     NSDictionary* info = [note userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     //140是文本框的高度，如果你的文本框高度不一样，则可以进行不同的调整
-    CGFloat offSet = self.currentEditingTextViewFrame.origin.y + kInputTextFiledHeight*2 - (self.view.frame.size.height - kbSize.height);
-    //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
-    if (offSet > 0.01) {
-        kWeakSelf
-        [UIView animateWithDuration:0.3 animations:^{
-            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.centerY.equalTo(@(0)).mas_offset(-offSet);
-            }];
-        }];
-    }else if(offSet < - kInputTextFiledHeight){
-        kWeakSelf
-        [UIView animateWithDuration:0.3 animations:^{
-            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.centerY.equalTo(@(0));
-            }];
-        }];
-        self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
-    }
+//    CGFloat offSet = self.currentEditingTextViewFrame.origin.y + kInputTextFiledHeight*2 - (self.view.frame.size.height - kbSize.height);
+//    //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
+//    if (offSet > 0.01) {
+//        kWeakSelf
+//        [UIView animateWithDuration:0.3 animations:^{
+//            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
+//            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.centerY.equalTo(@(0)).mas_offset(-offSet);
+//            }];
+//        }];
+//    }else if(offSet < - kInputTextFiledHeight){
+//        kWeakSelf
+//        [UIView animateWithDuration:0.3 animations:^{
+//            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
+//            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.centerY.equalTo(@(0));
+//            }];
+//        }];
+//        self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
+//    }
 }
 
 -(void)keyboardWillHide:(NSNotification *)note{
     SDK_LOG(@"keyboardWillHide");
-    kWeakSelf
-    [UIView animateWithDuration:0.3 animations:^{
-        //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(@(0));
-        }];
-    }];
-    self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
+//    kWeakSelf
+//    [UIView animateWithDuration:0.3 animations:^{
+//        //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
+//        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.centerY.equalTo(@(0));
+//        }];
+//    }];
+//    self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
     
 }
 #pragma mark - UITextField Delegate

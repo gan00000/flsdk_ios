@@ -18,7 +18,7 @@
                                 errorBlock:(BJServiceErrorBlock)errorBlock
 {
     BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKConReader getCdnUrl]];
-    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json", GAME_CODE] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
         
@@ -528,6 +528,59 @@
     
 }
 
-
++ (void)deleteAccount:(AccountModel *)accountMode
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(BJServiceSuccessBlock)successBlock
+                          errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    [md5str appendFormat:@"%@",accountMode.userId]; //用户名
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",GAME_CODE];
+//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
+//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
+    
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    
+    @try {
+        NSDictionary *dic = @{
+            @"signature"        :[md5SignStr lowercaseString],
+            @"timestamp"        :timeStamp,
+            @"gameCode"         :GAME_CODE,
+            @"userId"           :accountMode.userId,
+            @"loginAccessToken"  :accountMode.token,
+            @"loginTimestamp"   :accountMode.timestamp,
+            @"thirdPlatId"      :accountMode.thirdId,
+            @"thirdLoginId"     :accountMode.thirdId,
+        
+            @"registPlatform"   :accountMode.loginType,
+            @"loginMode"        :accountMode.loginType,
+            
+            @"interfaces"       :@"2",
+            @"phoneAreaCode"    :@"",
+            @"phone"            :@"",
+            @"vfCode"           :@"",
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        
+    }
+    
+    [HttpServiceEngineLogin getRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
 
 @end

@@ -68,8 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(NSInteger)getSdkPageHeight;
 
-+(NSInteger)getItemHeight;//根据高度计算每一行的高度
-+(NSInteger)getItemWidthMargin;
+//+(NSInteger)getItemHeight;//根据高度计算每一行的高度
+//+(NSInteger)getItemWidthMargin;
 
 +(CGFloat)getViewHeight:(CGFloat)height;
 +(CGFloat)getViewWidth:(CGFloat)width;
