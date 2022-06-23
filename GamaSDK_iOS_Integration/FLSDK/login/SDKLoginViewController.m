@@ -30,6 +30,10 @@
 
 @property (nonatomic,strong)UIView *sdkContentView;
 
+//@property (nonatomic,strong)UIView *mLoginWithRegView;
+//@property (nonatomic,strong)UIView *mMainHomeView;
+//@property (nonatomic,strong)UIView *sdkContentView;
+
 @end
 
 @implementation SDKLoginViewController{
@@ -37,7 +41,7 @@
     SDKPage sdkPageType;
     
     //    AccountLoginView *mAccountLoginView;
-    SdkAutoLoginView *mAutoLoginView;
+//    SdkAutoLoginView *mAutoLoginView;
     LoginWithRegView *mLoginWithRegView;
     MainHomeView *mMainHomeView;
     WelcomeBackView *mWelcomeBackView;
@@ -197,6 +201,7 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
+    
     mLoginWithRegView = [[LoginWithRegView alloc] initView];
     [self addSubSdkLoginView:mLoginWithRegView];
     return mLoginWithRegView;
@@ -205,8 +210,10 @@
 -(void)addWelcomeView
 {
     //移除所有子视图
-    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    for (UIView *subView in [self sdkContentView].subviews) {
+        [subView removeFromSuperview];
+    }
     mWelcomeBackView = [[WelcomeBackView alloc] initView];
     [self addSubSdkLoginView:mWelcomeBackView];
 }
@@ -289,8 +296,10 @@
 -(void)addHomeView
 {
     //移除所有子视图
-    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    for (UIView *subView in [self sdkContentView].subviews) {
+        [subView removeFromSuperview];
+    }
     mMainHomeView = [[MainHomeView alloc] initView];
     [self addSubSdkLoginView:mMainHomeView];
 }
@@ -411,12 +420,16 @@
         case CURRENT_PAGE_TYPE_MAIN_HOME:
             if (mMainHomeView) {
                 mMainHomeView.hidden = NO;
+            }else{
+                [self addHomeView];
             }
             break;
             
         case CURRENT_PAGE_TYPE_WELCOME_BACK:
             if (mWelcomeBackView) {
                 mWelcomeBackView.hidden = NO;
+            }else{
+                [self addWelcomeView];
             }
             break;
             

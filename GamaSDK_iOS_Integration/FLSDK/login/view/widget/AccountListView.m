@@ -53,9 +53,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
 //     [self.accountDataList removeAllObjects];
 //     [self.accountDataList addObjectsFromArray:mAccountArray];
-    if (!self.accountDataList) {
-        self.accountDataList = [NSMutableArray array];
-    }
+//    if (!self.accountDataList) {
+//        self.accountDataList = [NSMutableArray array];
+//    }
 
     //账号下拉列表
     _accountListTableView = [[UITableView alloc] init];
@@ -88,6 +88,9 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if (!self.accountDataList) {
+        return 0;
+    }
     return self.accountDataList.count;
 }
 
@@ -95,6 +98,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     return 40;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     AccountModel *mAccountModel = self.accountDataList[indexPath.row];
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
     

@@ -96,7 +96,7 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
            // make.centerX.mas_equalTo(self);
             make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));;
-            make.leading.mas_equalTo(self).mas_offset(VW(42));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
             make.trailing.mas_equalTo(self).mas_offset(-VW(40));
             make.height.mas_equalTo(VH(40));
         }];
@@ -273,12 +273,29 @@
     }];
     kBlockSelf
     kWeakSelf
-    accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
+    accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *list) {
         
         if (isDelete) {
             
+            if (accountDataList.count > 0) {
+                currentAccountModel = accountDataList[0];
+                
+    //            [blockSelf->accountDataList removeAllObjects];
+    //            [blockSelf->accountDataList addObjectsFromArray:list];
+                
+                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+            }else{
+                currentAccountModel = nil;
+                if (self.delegate) {
+                    //数据为空不再返回此页面，返回到主登录页面
+                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:CURRENT_PAGE_TYPE_WELCOME_BACK param:nil];
+                }
+                
+            }
+            
+            
         }else{//选择
-            currentAccountModel = aModel;
+            blockSelf->currentAccountModel = aModel;
             blockSelf->accountSDKTextFiledView.moreAccountBtn.selected = NO;
             [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:blockSelf->accountSDKTextFiledView pwdView:nil];
             [weakSelf setViewStatue];
@@ -427,8 +444,10 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+        [LoginHelper googleLoginAndThirdRequest:self.delegate];
         
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+        [LoginHelper lineLoginAndThirdRequest:self.delegate];
     }
 }
 

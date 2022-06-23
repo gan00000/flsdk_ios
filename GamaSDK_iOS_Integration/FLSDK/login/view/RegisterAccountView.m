@@ -77,7 +77,7 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
            // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.leading.mas_equalTo(self).mas_offset(VW(42));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
             make.trailing.mas_equalTo(self).mas_offset(-VW(40));
             make.height.mas_equalTo(VH(40));
         }];

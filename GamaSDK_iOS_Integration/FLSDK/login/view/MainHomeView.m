@@ -326,12 +326,14 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
+            [LoginHelper googleLoginAndThirdRequest:self.delegate];
             break;
         case lineLoginActTag:
             SDK_LOG(@"lineLoginActTag");
             if (![self checkAgreeTerm]) {
                 return;
             }
+            [LoginHelper lineLoginAndThirdRequest:self.delegate];
             break;
         default:
             break;

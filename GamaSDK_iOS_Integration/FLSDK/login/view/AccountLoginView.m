@@ -102,7 +102,7 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.leading.mas_equalTo(self).mas_offset(VW(42));
+            make.leading.mas_equalTo(self).mas_offset(VW(40));
             make.trailing.mas_equalTo(self).mas_offset(-VW(40));
             make.height.mas_equalTo(VH(40));
         }];
@@ -372,9 +372,27 @@
         
     }];
     kWeakSelf
+    kBlockSelf
     accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
         
         if (isDelete) {
+            
+            if (accountDataList.count > 0) {
+                currentAccountModel = accountDataList[0];
+                
+    //            [blockSelf->accountDataList removeAllObjects];
+    //            [blockSelf->accountDataList addObjectsFromArray:list];
+                
+                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+            }else{
+//                currentAccountModel = nil;
+                AccountModel *resetAm = [[AccountModel alloc] init];
+                resetAm.loginType = LOGIN_TYPE_SELF;
+                resetAm.account = @"";
+                resetAm.password = @"";
+                currentAccountModel = resetAm;
+                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+            }
             
         }else{//选择
             currentAccountModel = aModel;

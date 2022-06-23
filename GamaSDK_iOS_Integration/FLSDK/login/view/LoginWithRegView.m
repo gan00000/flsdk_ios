@@ -203,9 +203,19 @@
             
             if (self.delegate) {
                 
-                if (self.fromPage && self.fromPage != CURRENT_PAGE_TYPE_NULL) {
-                    [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:self.fromPage];
+                NSArray<AccountModel *> *ams = [[ConfigCoreUtil share] getAccountModels];
+                
+                if (ams && ams.count > 0) {
+                    
+                    if (self.fromPage && self.fromPage != CURRENT_PAGE_TYPE_NULL) {
+                        [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:self.fromPage];
+                    }
+                }else{
+                    
+                    [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:CURRENT_PAGE_TYPE_MAIN_HOME];
                 }
+                
+               
                
             }
             

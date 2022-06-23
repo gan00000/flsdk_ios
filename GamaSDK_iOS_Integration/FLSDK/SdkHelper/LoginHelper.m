@@ -246,7 +246,50 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
+        [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
+            
+            NSDictionary *otherParamsDic = nil;
+            @try {
+                otherParamsDic = @{
+                    @"googleIdToken"        :idToken,
+                    @"googleClientId"       :kClientID,
+                    
+                };
+
+            } @catch (NSException *exception) {
+                
+            }
+            
+            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userId thirdPlate:LOGIN_TYPE_GOOGLE otherParamsDic:otherParamsDic];
+            
+            
+        } failCallback:^(NSString * _Nonnull msg) {
+            
+        } cancelCallback:^(NSString * _Nonnull msg) {
+            
+        }];
+        
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+        
+        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+            
+            NSDictionary *otherParamsDic = nil;
+            @try {
+                otherParamsDic = @{
+                    @"lineAccessToken"        :accessToken,
+                    
+                };
+
+            } @catch (NSException *exception) {
+                
+            }
+            
+            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
+            
+            
+        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+            
+        }];
         
     }
     
