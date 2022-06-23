@@ -349,6 +349,7 @@
                     tempAccountModel.password = @"";
                     [passwordSDKTextFiledView setPwdFiledView:YES];
                     [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+                    currentAccountModel = tempAccountModel;
                 }
             }
             
@@ -437,7 +438,8 @@
             if (![self checkAgreeTerm]) {
                 return;
             }
-            [self requestAccountLogin];
+            
+            [self goGame];
             break;
             
             //新加
@@ -509,6 +511,36 @@
     return NO;
 }
 
+-(void) goGame
+{
+    if (!currentAccountModel) {
+        [self requestAccountLogin];
+        return;
+    }
+    if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+       
+        [self requestAccountLogin];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
+        
+        [LoginHelper fbLoginAndThirdRequest:self.delegate];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
+        
+        [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
+        
+        [LoginHelper guestLoginAndThirdRequest:self.delegate];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
+        
+        [LoginHelper googleLoginAndThirdRequest:self.delegate];
+        
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+        [LoginHelper lineLoginAndThirdRequest:self.delegate];
+    }
+}
 
 -(void) requestAccountLogin
 {
