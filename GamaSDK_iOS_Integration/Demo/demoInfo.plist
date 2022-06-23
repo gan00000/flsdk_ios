@@ -51,6 +51,11 @@
 	<string>6a5570d4d7aad0ba5fb55035ce199da6</string>
 	<key>FacebookDisplayName</key>
 	<string>靈妖記</string>
+    <key>LineSDKConfig</key>
+    <dict>
+        <key>ChannelID</key>
+        <string>1657186918</string>
+    </dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
