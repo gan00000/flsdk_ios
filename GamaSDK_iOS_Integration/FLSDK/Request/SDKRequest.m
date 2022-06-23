@@ -17,8 +17,8 @@
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                                 errorBlock:(BJServiceErrorBlock)errorBlock
 {
-    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:@"https://www.meowplayer.com/"];
-    [configHTTPEngine getRequestWithFunctionPath:@"sdk/config/jjcs/v1/version.json" params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKConReader getCdnUrl]];
+    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json", GAME_CODE] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
         

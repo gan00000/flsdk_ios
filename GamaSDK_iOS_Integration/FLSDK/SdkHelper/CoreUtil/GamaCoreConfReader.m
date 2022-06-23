@@ -212,6 +212,12 @@ static dispatch_once_t onceToken;
 {
     return [self getStringForKey:@"sdk_url_pay"];
 }
+
+-(NSString *) getCdnUrl
+{
+    return [self getStringForKey:@"sdk_url_cdn"];
+}
+
 -(NSString *) getTermsServiceUrl
 {
     return [self getStringForKey:@"terms_service_url"];

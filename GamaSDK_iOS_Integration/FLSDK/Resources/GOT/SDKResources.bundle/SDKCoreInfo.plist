@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>sdk_url_cdn</key>
+	<string>https://hktw-t-reshktw-static.meowplayer.com/</string>
 	<key>terms_service_url</key>
 	<string>https://member.meowplayer.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>

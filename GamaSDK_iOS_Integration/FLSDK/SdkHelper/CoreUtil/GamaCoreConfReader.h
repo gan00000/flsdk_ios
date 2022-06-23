@@ -42,6 +42,7 @@
 -(NSString *) getGameLanguage;
 -(NSString *) getLoginUrl;
 -(NSString *) getPayUrl;
+-(NSString *) getCdnUrl;
 -(NSString *) getTermsServiceUrl;
 
 -(NSString *) getFacebookAppId;
