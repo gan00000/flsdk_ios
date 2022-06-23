@@ -178,22 +178,6 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
 }
 #pragma mark - Life Cycle
 
-//+ (BOOL)application:(UIApplication *)application
-//            openURL:(NSURL *)url
-//  sourceApplication:(NSString *)sourceApplication
-//         annotation:(id)annotation
-//{
-//    return YES;
-//}
-//
-//// system version is ios9 and later
-//+ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
-//{
-//    return [GamaInterfaceSDK application:app
-//                                 openURL:url
-//                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
-//                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
-//}
 
 + (BOOL)application:(UIApplication *)application
 continueUserActivity:(NSUserActivity *)userActivity
@@ -317,9 +301,5 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:),center, response, completionHandler, nil);
 }
 
-+ (void)gamaLogin:(NSDictionary *)loginParameters
-{
-    
-}
 
 @end

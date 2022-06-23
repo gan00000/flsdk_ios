@@ -48,35 +48,6 @@
     
 }
 
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-    
-//    // 广告工程openURL回调
-//    [GamaAdPort handleADURL:url];
-//    // 储值工程openURL回调
-//    [GamaIapFunctionPort handleOpenIAPHistoryWithURL:url];
-//    // 第三方登录openURL回调
-//    [NSClassFromString(@"GamaFacebookPort") application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    
-    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    }
-    
-    return YES;
-}
-
-+ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
-{
-    BOOL result = [FBDelegate application:application openURL:url options:options];
-    if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"] annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
-    }
-    return result;
-}
 
 + (void)_applicationDidBecomeActive:(UIApplication *)application
 {
@@ -145,11 +116,7 @@
 }
 
 #pragma mark - 登录功能
-+ (void)gamaLogin:(NSDictionary *)loginParameters
-{
-    
-    //接著繼承...
-}
+
 
 + (void)_gamaLoginSuccess:(BOOL) isRegister
 {
@@ -162,11 +129,6 @@
 //    [GamaAdPort startWhenLogin];
 }
 
-#pragma mark - 存储角色信息功能
-+ (void)gamaRoleInfo:(NSDictionary *)roleInfoParams
-{
-    
-}
 
 #pragma mark - 储值功能
 /**

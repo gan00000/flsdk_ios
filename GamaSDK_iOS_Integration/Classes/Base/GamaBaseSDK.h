@@ -20,33 +20,7 @@ extern NSString *const GAMA_NOTIFICATION_SHARE_RESULT;            // 分享结�
 
 @interface GamaBaseSDK : NSObject
 
-#pragma mark - 登录功能
-/**
- @abstract      登录功能
- */
-+ (void)gamaLogin:(NSDictionary *)loginParameters;
 
-
-/**
- @abstract      保存角色信息，供其他SDK接口使用
-
- @param roleInfoParams 角色的具体信息
- */
-+ (void)gamaRoleInfo:(NSDictionary *)roleInfoParams;
-
-
-#pragma mark - 生命周期
-/**
- @abstract      SDK生命周期 iOS 9 以下 SDK openURL回调
- */
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation;
-
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-            options:(NSDictionary *)options;
 #pragma mark - 储值功能
 /**
  @abstract      储值功能

@@ -66,10 +66,8 @@
 
 #import "SDKRequest.h"
 
-#if __has_include(<PlatformTwModule/GMPlatformSDKTW.h>)
-#import <PlatformTwModule/GMPlatformSDKTW.h>
-#endif
-
+#import "FBDelegate.h"
+#import "LineDelegate.h"
 
 
 // 通知类型
@@ -128,17 +126,22 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation
 {
-    return [GamaInterfaceSDK application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    if (!result) {
+        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
+    
+    return YES;
 }
 
 //system version is ios9 and later
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
-    return [GamaInterfaceSDK application:app openURL:url options:options];
-//    return [GamaInterfaceSDK application:app
-//                                 openURL:url
-//                       sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"]
-//                              annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+    BOOL result = [FBDelegate application:application openURL:url options:options];
+    if (!result) {
+        result = [LineDelegate application:application openURL:url sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"] annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+    }
+    return result;
 }
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
