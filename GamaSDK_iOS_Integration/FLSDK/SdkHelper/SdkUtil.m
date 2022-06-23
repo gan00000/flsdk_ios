@@ -319,7 +319,9 @@
         }
         
         [aler setFrame:CGRectMake(0, 0, _width, _height)];
-        aler.center = baseView.center;
+        
+        CGPoint b_c = baseView.center;
+        aler.center = CGPointMake( b_c.x,b_c.y + b_c.y / 2);
         
         [toastLabel setFrame:CGRectMake( 0, 0, tempStringSize.width *2 , _tempHeight)];
         toastLabel.center = CGPointMake(_width/2, _height/2);
