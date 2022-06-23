@@ -135,5 +135,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_change_pwd      (@"api/pwd/changePassword")
 #define api_bind_account     (@"api/upgrade/bind")
 
+#define api_delete_account     (@"api/cancel/account")
+
 #endif /* CCSkyHourHeader_h */
 

@@ -579,7 +579,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin getRequestWithFunctionPath:api_delete_account params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
