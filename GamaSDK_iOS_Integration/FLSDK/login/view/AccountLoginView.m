@@ -383,7 +383,7 @@
     //            [blockSelf->accountDataList removeAllObjects];
     //            [blockSelf->accountDataList addObjectsFromArray:list];
                 
-                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
             }else{
 //                currentAccountModel = nil;
                 AccountModel *resetAm = [[AccountModel alloc] init];
@@ -391,7 +391,9 @@
                 resetAm.account = @"";
                 resetAm.password = @"";
                 currentAccountModel = resetAm;
-                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+                [AccountLoginView makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+                accountSDKTextFiledView.moreAccountBtn.selected = NO;
+                accountListView.hidden = YES;
             }
             
         }else{//选择

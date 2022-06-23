@@ -299,6 +299,9 @@
             
         case appleLoginActTag:
             SDK_LOG(@"appleLoginActTag");
+            if (![self checkAgreeTerm]) {
+                return;
+            }
             [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
             break;
             
