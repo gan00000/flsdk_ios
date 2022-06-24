@@ -544,7 +544,7 @@
     //获取键盘高度
     NSDictionary* info = [note userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    //140是文本框的高度，如果你的文本框高度不一样，则可以进行不同的调整
+    
     CGFloat offSet = self.currentEditingTextViewFrame.origin.y + self.currentEditingTextViewFrame.size.height - (self.view.frame.size.height - kbSize.height);
     //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
     if (offSet > 0.01) {
@@ -572,8 +572,8 @@
     SDK_LOG(@"keyboardWillHide");
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
-        //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+        [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(@(0));
         }];
     }];
