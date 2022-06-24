@@ -63,18 +63,6 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg;
 +(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg okHandler:(void (^ __nullable)(UIAlertAction *action))handler;
 
-//+(UIViewController *)getSDKController;
-+(NSInteger)getSdkPageWidth;
-
-+(NSInteger)getSdkPageHeight;
-
-//+(NSInteger)getItemHeight;//根据高度计算每一行的高度
-//+(NSInteger)getItemWidthMargin;
-
-+(CGFloat)getViewHeight:(CGFloat)height;
-+(CGFloat)getViewWidth:(CGFloat)width;
-+(CGFloat)getFontSize:(CGFloat)size;
-
 @end
 
 NS_ASSUME_NONNULL_END

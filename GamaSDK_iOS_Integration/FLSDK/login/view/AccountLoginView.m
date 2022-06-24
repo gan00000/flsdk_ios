@@ -239,9 +239,10 @@
         
         if (@available(iOS 13.0, *)) {
             ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                      authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
+                                                                                                      authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
             [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
             appleLoginBtn.tag = appleLoginActTag;
+            
             appleLoginBtn.cornerRadius = btn_w / 2;
             [loginTypeView addSubview:appleLoginBtn];
             

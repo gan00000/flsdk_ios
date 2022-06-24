@@ -20,6 +20,7 @@
 #import "GamaAdInterface.h"
 #import "SdkUtil.h"
 #import "StringUtil.h"
+#import "DimeUtil.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -58,9 +59,9 @@
 #define Guest_Login_Tipe_OK  @"Guest_Login_Tipe_OK" //游客登录成功通知
 #define SDK_AUTO_LOGIN_FAIL @"SDK_AUTO_LOGIN_FAIL"  //自动登录失败通知
 
-#define VH(h)  [UIUtil getViewHeight:h]
-#define VW(w)  [UIUtil getViewWidth:w]
-#define FS(size)  [UIUtil getFontSize:size]
+#define VH(h)  [[DimeUtil share] getViewHeight:h]
+#define VW(w)  [[DimeUtil share] getViewWidth:w]
+#define FS(size)  [[DimeUtil share] getFontSize:size]
 
 
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)

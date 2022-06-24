@@ -16,9 +16,6 @@
 #import <Foundation/Foundation.h>
 #endif
 
-/*下面是适配方法*/
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define GAMA_MAP_APIKEY                                 @"googleMapApiKey"
 
 //存放资源文件Bundle名称
