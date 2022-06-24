@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //@property (nonatomic) BOOL isSaveAccountInfo;
 
--(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime;
+//-(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime;
 
 -(void)saveAccountModel:(AccountModel*) mAccountModel;
 -(void)removeAccountByUserId:(NSString *) userId;

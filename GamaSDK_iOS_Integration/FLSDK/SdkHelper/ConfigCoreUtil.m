@@ -41,30 +41,30 @@ static dispatch_once_t onceToken;
 }
 
 //保存一个账号密码，如果存在，则更新，不存在则添加
--(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime
-{
-    
-    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
-    for (AccountModel *am in mAccountArray) {
-        if ([am.account isEqualToString:mAccount]) {
-            am.password = password;
-            if (updateTime) {
-                am.lastLoginTime = [SUtil getTimeStamp];
-            }
-            [self saveAccountModels:mAccountArray];
-            return;
-        }
-    }
-    NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
-    AccountModel *mAccountModel = [[AccountModel alloc] init];
-    //赋值
-    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
-    mAccountModel.account = mAccount;
-    mAccountModel.password = password;
-    [aar addObject:mAccountModel];
-    [self saveAccountModels:aar];
-    
-}
+//-(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime
+//{
+//
+//    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
+//    for (AccountModel *am in mAccountArray) {
+//        if ([am.account isEqualToString:mAccount]) {
+//            am.password = password;
+//            if (updateTime) {
+//                am.lastLoginTime = [SUtil getTimeStamp];
+//            }
+//            [self saveAccountModels:mAccountArray];
+//            return;
+//        }
+//    }
+//    NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
+//    AccountModel *mAccountModel = [[AccountModel alloc] init];
+//    //赋值
+//    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
+//    mAccountModel.account = mAccount;
+//    mAccountModel.password = password;
+//    [aar addObject:mAccountModel];
+//    [self saveAccountModels:aar];
+//
+//}
 
 
 -(void)saveAccountModel:(AccountModel*) mAccountModel{
@@ -74,15 +74,16 @@ static dispatch_once_t onceToken;
         [self removeAccountByUserId:mAccountModel.userId];
         
     }else{//第三方
+       
         [self removeAccountByLoginType:mAccountModel.loginType];//删除同类型第三方
         
         NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
         for (AccountModel *am in mAccountArray) {
-            if ([am.userId isEqualToString: mAccountModel.userId] && [mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+            if ([am.userId isEqualToString: mAccountModel.userId] && [am.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 return;
             }
         }
-        
+  
     }
     
     mAccountModel.lastLoginTime = [SUtil getTimeStamp];
@@ -110,34 +111,34 @@ static dispatch_once_t onceToken;
 //保存一个账号密码，如果存在，则更新，不存在则添加
 -(void)removeAccountByLoginType:(NSString *) loginType
 {
-    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
-    NSMutableArray  *dataList = [NSMutableArray arrayWithArray:mAccountArray];
-    BOOL has = NO;
+    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels]];//获取保存的数据
+    NSMutableArray  *removeList = [NSMutableArray array];
+
     for (AccountModel *am in mAccountArray) {
         if ([am.loginType isEqualToString:loginType]) {
-            [dataList removeObject:am];
-            has = YES;
+            [removeList addObject:am];
         }
     }
-    if (has) {
-        [self saveAccountModels:dataList];
+    if (removeList.count > 0) {
+        [mAccountArray removeObjectsInArray:removeList];
+        [self saveAccountModels:mAccountArray];
     }
     
 }
 
 -(void)removeAccountByUserId:(NSString *) userId
 {
-    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
-    NSMutableArray  *dataList = [NSMutableArray arrayWithArray:mAccountArray];
-    BOOL has = NO;
+    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels]];//获取保存的数据
+    NSMutableArray  *removeList = [NSMutableArray array];
+
     for (AccountModel *am in mAccountArray) {
         if ([am.userId isEqualToString:userId]) {
-            [dataList removeObject:am];
-            has = YES;
+            [removeList addObject:am];
         }
     }
-    if (has) {
-        [self saveAccountModels:dataList];
+    if (removeList.count > 0) {
+        [mAccountArray removeObjectsInArray:removeList];
+        [self saveAccountModels:mAccountArray];
     }
     
 }
