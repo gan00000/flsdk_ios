@@ -275,15 +275,17 @@
         
     }
     
+    kWeakSelf
     [SDKRequest doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
         
-        LoginResponse *cc = (LoginResponse *)responseData;
-        //        [[ConfigCoreUtil share] saveAccount:userName password:@"" updateTime:NO];
-//        [[ConfigCoreUtil share] removeAccount:userName];
-        //通知更新登录界面的数据
-//        [AlertUtil showAlertWithMessage: cc.message];
-        if (self.delegate) {
-            [self.delegate changPasswordSuccess];
+        [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
+
+        if (weakSelf.delegate) {
+            LoginResponse *cc = (LoginResponse *)responseData;
+            cc.data.account = userName;
+            cc.data.password = newPwd;
+            cc.data.loginType = LOGIN_TYPE_SELF;
+            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
         }
 //        [self removeFromSuperview];//返回登录界面
         
@@ -293,23 +295,27 @@
     
 }
 
-- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
-{
-    
-    
-    [SDKRequest requestVfCode:phoneArea phoneNumber:phoneN email:@"" interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
-        [self downTime];
-        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
-    } errorBlock:^(BJError *error) {
-        [self resetVfCodeBtnStatue];
-        [AlertUtil showAlertWithMessage:error.message];
-    }];
-}
+//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
+//{
+//
+//
+//    [SDKRequest requestVfCode:phoneArea phoneNumber:phoneN email:@"" interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+//
+//        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
+//
+//        [self downTime];
+//
+//    } errorBlock:^(BJError *error) {
+//        [self resetVfCodeBtnStatue];
+//        [AlertUtil showAlertWithMessage:error.message];
+//    }];
+//}
 
 - (void)requestVfCodeByEmail:(NSString *)email
 {
     
     [SDKRequest requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
         [self downTime];
     } errorBlock:^(BJError *error) {
         [self resetVfCodeBtnStatue];

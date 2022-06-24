@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginHelper : NSObject
 
++ (void)accountRegister:(id<LoginViewDelegate>)delegate view:(UIView *)currentView areaCode:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode;
+
 +(void) appleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView;
 
 + (void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;

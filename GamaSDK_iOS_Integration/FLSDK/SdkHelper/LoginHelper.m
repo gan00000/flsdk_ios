@@ -14,6 +14,30 @@
 
 @implementation LoginHelper
 
+
++ (void)accountRegister:(id<LoginViewDelegate>)delegate view:(UIView *)currentView areaCode:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode {
+    [SDKRequest doRegisterAccountWithUserName:name
+                                  andPassword:password
+                                phoneAreaCode:areaCode
+                                  phoneNumber:phoneNum
+                                       vfCode:vfCode
+                                   interfaces:@"1"
+                               otherParamsDic:nil
+                                 successBlock:^(id responseData) {
+        
+        if (delegate) {
+            LoginResponse *cc = (LoginResponse *)responseData;
+            cc.data.account = name;
+            cc.data.password = password;
+            [SdkUtil toastMsg:GetString(@"text_account_reg_success")];
+            [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
+        }
+    }
+                                   errorBlock:^(BJError *error) {
+        [AlertUtil showAlertWithMessage:error.message];
+    }];
+}
+
 +(void) appleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView
 {
     if (@available(iOS 13, *)) {
@@ -30,6 +54,7 @@
         
         [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
             
+            [SdkUtil toastMsg:GetString(@"py_login_success")];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
             }
@@ -65,7 +90,7 @@
         }
         
         [SDKRequest thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            
+            [SdkUtil toastMsg:GetString(@"py_login_success")];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
             }
@@ -89,6 +114,7 @@
     NSString *loginId =[SUtil getGamaUUID];
     [SDKRequest freeLoginOrRegister:loginId successBlock:^(id responseData) {
         
+        [SdkUtil toastMsg:GetString(@"py_login_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.thirdId = loginId;
@@ -123,7 +149,7 @@
         }
         
         [SDKRequest thirdLoginOrReg:userId andThirdPlate:LOGIN_TYPE_GOOGLE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            
+            [SdkUtil toastMsg:GetString(@"py_login_success")];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GOOGLE];
             }
@@ -160,7 +186,7 @@
         }
         
         [SDKRequest thirdLoginOrReg:userID andThirdPlate:LOGIN_TYPE_LINE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            
+            [SdkUtil toastMsg:GetString(@"py_login_success")];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_LINE];
             }
@@ -180,7 +206,7 @@
 + (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password
 {
     [SDKRequest doLoginWithAccount:account andPassword:password otherDic:nil successBlock:^(id responseData) {
-        
+        [SdkUtil toastMsg:GetString(@"py_login_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
@@ -306,7 +332,7 @@
 {
     
     [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:thirdId thirdPlate:thirdPlate otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        
+        [SdkUtil toastMsg:GetString(@"text_account_bind_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;

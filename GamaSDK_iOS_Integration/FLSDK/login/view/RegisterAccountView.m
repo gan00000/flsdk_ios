@@ -15,6 +15,7 @@
 #import "SDKRequest.h"
 #import "SdkUtil.h"
 #import "SAppleLogin.h"
+#import "LoginHelper.h"
 
 @implementation RegisterAccountView
 {
@@ -242,9 +243,6 @@
     mLoginTitleView.delegate = self.delegate;
     accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-//    passwordAgainSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-//    mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
-//    vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
     
 }
 
@@ -254,19 +252,6 @@
 {
     switch (sender.tag) {
             
-        case kGetVfCodeActTag:
-            
-        {
-//            SDK_LOG(@"kGetVfCodeActTag");
-//            NSString *areaCode = [mPhoneView getPhoneAreaCode];
-//            NSString *phoneNum = [mPhoneView getPhoneNumber];
-//            if (!phoneNum || [@"" isEqualToString:phoneNum]) {
-//                [SdkUtil toastMsg:@"請輸入電話號碼"];
-//                return;
-//            }
-//            [self requestPhoneVerficationWithPhoneArea:areaCode phoneNumber:phoneNum];
-        }
-            break;
             
         case kRegisterAccountActTag:
         {
@@ -279,43 +264,16 @@
             
 //            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
-            if (!accountName || [accountName isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"py_account_empty")];
-                return;
-            }
-            
             if (![SdkUtil validUserName:accountName]) {
-                [SdkUtil toastMsg:GetString(@"text_account_format")];
+                
                 return;
             }
             
-            if (!pwd || [pwd isEqualToString:@""]) {
-                [SdkUtil toastMsg:GetString(@"py_password_empty")];
+            if (![SdkUtil validPwd:pwd]) {
                 return;
             }
-            
-//            if ([@"" isEqualToString:vfCode]) {
-//                
-//                [SdkUtil toastMsg:GetString(@"TXT_VERTIFY_CODE_IS_NULL")];
-//                return;
-//            }
-            
-            [self requestRegister:@"" name:accountName password:pwd phoneNum:@"" vfCode:@""];
-            
-//            if (self.bindType == 0) {
-//                [self requestRegister:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-//            }else if (self.bindType == kBindFBActTag){
-//
-//                [self requestBindFb:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-//
-//            }else if (self.bindType == kBindAppleActTag){
-//
-//                [self requestBindApple:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-//
-//            }else if (self.bindType == kBindGuestActTag){
-//                [self requestBindMac:areaCode name:name password:password phoneNum:phoneNum vfCode:vfCode];
-//            }
-            
+          
+            [LoginHelper accountRegister:self.delegate view:self areaCode:@"" name:accountName password:pwd phoneNum:@"" vfCode:@""];
             
         }
             break;
@@ -325,225 +283,4 @@
     }
 }
 
--(void)requestBindMac:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
-{
-    NSString *loginId = [SUtil getGamaUUID];
-    [SDKRequest doAccountBindingWithUserName:name
-                                    password:password
-                               phoneAreaCode:areaCode
-                                 phoneNumber:phoneNum
-                                      vfCode:vfCode
-                                       email:@""
-                                     thirdId:loginId
-                                  thirdPlate:LOGIN_TYPE_GUEST
-                              otherParamsDic:nil
-                                successBlock:^(id responseData) {
-        LoginResponse *cc = (LoginResponse *)responseData;
-         [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-        [AlertUtil showAlertWithMessage:cc.message];
-        
-        if (self.delegate) {
-            [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-        }
-    }
-                                  errorBlock:^(BJError *error) {
-        if (error && error.message) {
-            [AlertUtil showAlertWithMessage:error.message];
-        }
-    }];
-}
--(void)requestBindApple:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
-{
-    
-    kWeakSelf
-    if (@available(iOS 13, *)) {
-                  
-    }else{
-       [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
-        return;
-    }
-    
-//    SAppleLogin *gamaAppleLogin = [SAppleLogin makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
-//        NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-//        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-//        [tempMutableDic removeObjectForKey:@"appleThirdID"];
-//
-//        [SDKRequest doAccountBindingWithUserName:name
-//                                        password:password
-//                                   phoneAreaCode:areaCode
-//                                     phoneNumber:phoneNum
-//                                          vfCode:vfCode
-//                                           email:@""
-//                                         thirdId:appleID
-//                                      thirdPlate:LOGIN_TYPE_APPLE
-//                                  otherParamsDic:tempMutableDic
-//                                    successBlock:^(id responseData) {
-//            LoginResponse *cc = (LoginResponse *)responseData;
-//             [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-//            [AlertUtil showAlertWithMessage:cc.message];
-//
-//            if (self.delegate) {
-//                [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-//            }
-//
-//        }
-//                                      errorBlock:^(BJError *error) {
-//            if (error && error.message) {
-//                [AlertUtil showAlertWithMessage:error.message];
-//            }
-//        }];
-//
-//    } andErrorBlock:^(NSError * _Nullable error) {
-//        //           [GamaUtils gamaStopLoadingAtView:self.view];
-//        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
-//    }];
-//    [gamaAppleLogin handleAuthrization:nil];
-    
-    
-//    GamaAppleLogin *gamaAppleLogin = [[GamaAppleLogin alloc] init];
-//    NSDictionary *tempDic = [gamaAppleLogin fetchAppleLoginInfo];
-//    NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
-//    NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-//    [tempMutableDic removeObjectForKey:@"appleThirdID"];
-    
-    
-    
-}
-
-
--(void)requestBindFb:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode
-{
-    [SdkUtil showLoadingAtView:self];
-//    [GamaFacebookPort loginWithFacebook:^(NSError *loginError, NSString *facebookID, NSString *facebookTokenStr) {
-//        [SdkUtil gamaStopLoadingAtView:self];
-//        if (!loginError)
-//        {
-//            NSString *appsStr = [NSString stringWithFormat:@"%@_%@",facebookID, [SDKConReader getFacebookAppId]];
-//            NSDictionary *additionDic = @{
-//                @"apps":appsStr,
-//                @"tokenBusiness":@"",
-//                @"fb_oauthToken":facebookTokenStr,
-//            };
-//            
-//            [SDKRequest doAccountBindingWithUserName:name
-//                                            password:password
-//                                       phoneAreaCode:areaCode
-//                                         phoneNumber:phoneNum
-//                                              vfCode:vfCode
-//                                               email:@""
-//                                             thirdId:facebookID
-//                                          thirdPlate:LOGIN_TYPE_FB
-//                                      otherParamsDic:additionDic
-//                                        successBlock:^(id responseData) {
-//                
-//                CCSDKResponse *cc = (CCSDKResponse *)responseData;
-//                [[ConfigCoreUtil share] saveAccount:name password:password updateTime:YES];
-//                [GamaAlertView showAlertWithMessage:cc.message];
-//                
-//                if (self.delegate) {
-//                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_ACCOUNT];
-//                }
-//                
-//            }
-//                                          errorBlock:^(BJError *error) {
-//                if (error && error.message) {
-//                    [GamaAlertView showAlertWithMessage:error.message];
-//                }
-//            }];
-//            
-//            
-//        }else{
-//            //[GamaAlertView showAlertWithMessage:@"error.message"];
-//        }
-//        
-//    }];
-//    
-}
-
-- (void)requestRegister:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode {
-    [SDKRequest doRegisterAccountWithUserName:name
-                                  andPassword:password
-                                phoneAreaCode:areaCode
-                                  phoneNumber:phoneNum
-                                       vfCode:vfCode
-                                   interfaces:@"1"
-                               otherParamsDic:nil
-                                 successBlock:^(id responseData) {
-        
-        if (self.delegate) {
-            LoginResponse *cc = (LoginResponse *)responseData;
-            cc.data.account = name;
-            cc.data.password = password;
-            
-            [self.delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
-        }
-    }
-                                   errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
-    }];
-}
-
-- (void)requestPhoneVerficationWithPhoneArea:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
-{
-//    NSString *interfaces = @"1"; //註冊1 綁定2  找回密碼4
-//    if (self.bindType == 0) {
-//        interfaces = @"1";;
-//    }else{
-//        interfaces = @"2";
-//    }
-//    [SDKRequest requestPhoneVerficationWithPhoneArea:phoneArea phoneNumber:phoneN  interfaces:interfaces otherDic:nil successBlock:^(id responseData) {
-//        [self downTime];
-//    } errorBlock:^(BJError *error) {
-//        [self resetVfCodeBtnStatue];
-//        [AlertUtil showAlertWithMessage:error.message];
-//    }];
-}
-
--(void)downTime{
-    
-//    phoneCountdown = 60;
-//    getVfCodeBtn.userInteractionEnabled = NO;
-//    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-//
-//    if (downTimer) {
-//        [downTimer invalidate];
-//        downTimer = nil;
-//    }
-//    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-//                                                 target:self
-//                                               selector:@selector(phoneFireTimer)
-//                                               userInfo:nil
-//                                                repeats:YES];
-    
-    
-}
-
-- (void)phoneFireTimer {
-//    phoneCountdown--;
-//    if (phoneCountdown < 0) {
-//        [self resetVfCodeBtnStatue];
-//    }else{
-//        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-//    }
-    
-}
-
--(void) resetVfCodeBtnStatue
-{
-//    if (downTimer) {
-//        [downTimer invalidate];
-//        downTimer = nil;
-//    }
-//    getVfCodeBtn.userInteractionEnabled = YES;
-//    [getVfCodeBtn setTitle: @"獲取驗證碼" forState:UIControlStateNormal];
-}
-
-- (void)dealloc
-{
-    
-//    if (downTimer) {
-//        [downTimer invalidate];
-//        downTimer = nil;
-//    }
-}
 @end

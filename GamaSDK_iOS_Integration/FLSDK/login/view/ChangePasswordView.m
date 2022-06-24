@@ -203,15 +203,6 @@
     [SDKRequest doChangePasswordWithUserName:userName andOldPassword:oldPwd andNewPassword:newPwd otherParamsDic:nil successBlock:^(id responseData) {
         
         [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
-        
-//        LoginResponse *lr = (LoginResponse *)responseData;
-//        mAccountModel.password = newPwd;
-//        mAccountModel.token = lr.data.token;
-//        mAccountModel.timestamp = lr.data.timestamp;
-//        mAccountModel.isBind = lr.data.isBind;
-//
-//        [[ConfigCoreUtil share] saveAccountModel:mAccountModel];
-        
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;
