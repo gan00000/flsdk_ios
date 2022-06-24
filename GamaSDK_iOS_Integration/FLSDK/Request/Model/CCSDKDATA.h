@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LoginResponse.h"
 #import "ConfigModel.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)ConfigModel *mConfigModel;
 
 @property (nonatomic,assign) BOOL isNeedAutoLogin;
+
+@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
 + (instancetype)sharedSdkData;
 

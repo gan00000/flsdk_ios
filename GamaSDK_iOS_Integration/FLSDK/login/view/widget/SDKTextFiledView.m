@@ -151,6 +151,11 @@
     mUITextField.textColor = [UIColor whiteColor];
     
     mUITextField.font = [UIFont systemFontOfSize:FS(14)];
+    
+    if (SDK_DATA.mUITextFieldDelegate) {
+        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate;
+    }
+    
 //    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
     
     // 设置placeholder文字大小和居中显示
