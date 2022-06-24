@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainHomeView : SDKBaseView
 
-@property (nonatomic, strong) AccountLoginView *mAccountLoginView;
-
-@property (nonatomic, strong) RegisterAccountView *mRegisterAccountView;
+//@property (nonatomic, strong) AccountLoginView *mAccountLoginView;
+//
+//@property (nonatomic, strong) RegisterAccountView *mRegisterAccountView;
 
 - (instancetype)initView;
 

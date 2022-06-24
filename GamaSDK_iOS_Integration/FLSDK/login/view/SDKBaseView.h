@@ -16,11 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDKBaseView : UIView
 
 
-@property(nonatomic, weak) UIViewController * theViewUIViewController;
+//@property(nonatomic, weak) UIViewController * theViewUIViewController;
 
 @property(nonatomic, weak) id<LoginViewDelegate> delegate;
 
-@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
+//@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
 @property(nonatomic,assign) id fromPageParam;

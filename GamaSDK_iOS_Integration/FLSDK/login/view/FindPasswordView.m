@@ -194,14 +194,6 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    //    mLoginTitleView.delegate = self.delegate;
-    accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    vfCodeFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-//    mPhoneView.mUITextField.delegate = self.mUITextFieldDelegate;
-}
-
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {

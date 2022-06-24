@@ -238,16 +238,6 @@
 }
 
 
-- (void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
-    accountSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    passwordSDKTextFiledView.inputUITextField.delegate = self.mUITextFieldDelegate;
-    
-}
-
-
-
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {

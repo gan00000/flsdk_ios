@@ -284,8 +284,6 @@
                 }];
                 [ggParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
-
-            
             
             [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userId thirdPlate:LOGIN_TYPE_GOOGLE otherParamsDic:ggParamsDic];
             

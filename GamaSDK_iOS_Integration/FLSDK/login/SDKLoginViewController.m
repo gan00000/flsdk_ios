@@ -61,6 +61,7 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    SDK_DATA.mUITextFieldDelegate = nil;
     SDK_LOG(@"dealloc视图被销毁");
 }
 
@@ -70,7 +71,7 @@
     SDK_LOG(@"viewDidLoad");
     self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.8];//[UIColor clearColor];
     
-    // [self registNotification];
+    SDK_DATA.mUITextFieldDelegate = self;
     switch (sdkPageType) {
         case SDKPage_Login:
         {
@@ -225,8 +226,6 @@
     }];
     
     mTermsView.delegate = self;
-    mTermsView.theViewUIViewController = self;
-    
     [self addSubSdkLoginView:mTermsView];
     
     return mTermsView;
@@ -308,8 +307,8 @@
 {
     
     mSDKBaseView.delegate = self;
-    mSDKBaseView.theViewUIViewController = self;
-    mSDKBaseView.mUITextFieldDelegate = self;
+//    mSDKBaseView.theViewUIViewController = self;
+//    mSDKBaseView.mUITextFieldDelegate = self;
     
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -527,7 +526,6 @@
 #pragma mark notification 通知管理
 /**
  *    @brief    通知注册
- *    @return
  */
 - (void)registNotification
 {
@@ -547,17 +545,18 @@
     NSDictionary* info = [note userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     //140是文本框的高度，如果你的文本框高度不一样，则可以进行不同的调整
-//    CGFloat offSet = self.currentEditingTextViewFrame.origin.y + kInputTextFiledHeight*2 - (self.view.frame.size.height - kbSize.height);
-//    //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
-//    if (offSet > 0.01) {
-//        kWeakSelf
-//        [UIView animateWithDuration:0.3 animations:^{
-//            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-//            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-//                make.centerY.equalTo(@(0)).mas_offset(-offSet);
-//            }];
-//        }];
-//    }else if(offSet < - kInputTextFiledHeight){
+    CGFloat offSet = self.currentEditingTextViewFrame.origin.y + self.currentEditingTextViewFrame.size.height*2 - (self.view.frame.size.height - kbSize.height);
+    //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
+    if (offSet > 0.01) {
+        kWeakSelf
+        [UIView animateWithDuration:0.3 animations:^{
+            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
+            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.centerY.equalTo(@(0)).mas_offset(-offSet);
+            }];
+        }];
+    }
+//    else if(offSet < - kInputTextFiledHeight){
 //        kWeakSelf
 //        [UIView animateWithDuration:0.3 animations:^{
 //            //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
@@ -571,14 +570,14 @@
 
 -(void)keyboardWillHide:(NSNotification *)note{
     SDK_LOG(@"keyboardWillHide");
-//    kWeakSelf
-//    [UIView animateWithDuration:0.3 animations:^{
-//        //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-//        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-//            make.centerY.equalTo(@(0));
-//        }];
-//    }];
-//    self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
+    kWeakSelf
+    [UIView animateWithDuration:0.3 animations:^{
+        //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
+        [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(@(0));
+        }];
+    }];
+    self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
     
 }
 #pragma mark - UITextField Delegate

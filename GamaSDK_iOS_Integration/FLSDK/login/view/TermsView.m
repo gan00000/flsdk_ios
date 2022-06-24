@@ -59,11 +59,6 @@
 }
 
 
-- (void)drawRect:(CGRect)rect
-{
-    mLoginTitleView.delegate = self.delegate;//此处不起作用
-}
-
 - (void)landspaceView {
    
     //title

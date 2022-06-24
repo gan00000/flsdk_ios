@@ -284,16 +284,6 @@
      
 }
 
-- (void)drawRect:(CGRect)rect
-{
-    self.mAccountLoginView.delegate = self.delegate;
-    self.mAccountLoginView.theViewUIViewController = self.theViewUIViewController;
-    self.mAccountLoginView.mUITextFieldDelegate = self.mUITextFieldDelegate;
-    
-    self.mRegisterAccountView.delegate = self.delegate;
-    self.mRegisterAccountView.theViewUIViewController = self.theViewUIViewController;
-    self.mRegisterAccountView.mUITextFieldDelegate = self.mUITextFieldDelegate;
-}
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {

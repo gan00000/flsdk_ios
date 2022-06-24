@@ -151,10 +151,7 @@
     [self registerViewBtnAction:xButton];
 }
 
-- (void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    mLoginTitleView.delegate = self.delegate;
-}
+
 
 - (void)registerViewBtnAction:(UIButton *)sender
 {

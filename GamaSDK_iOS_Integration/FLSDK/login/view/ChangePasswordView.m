@@ -135,11 +135,6 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-}
-
-
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {
