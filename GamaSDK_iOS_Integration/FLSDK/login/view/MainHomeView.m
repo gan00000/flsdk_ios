@@ -85,6 +85,9 @@
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
         make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
     }];
+    if (!SDK_DATA.mConfigModel.visitorLogin) {
+        guestLoginBtnContent.hidden = YES;
+    }
     
     
     UIView *topView = guestLoginBtn;
@@ -105,6 +108,9 @@
         
         topView = appleLoginBtn;
         
+        if (!SDK_DATA.mConfigModel.appleLogin) {
+            appleLoginBtn.hidden = YES;
+        }
     }
     
     UIView *hasAccountContent = [[UIView alloc] init];
@@ -177,36 +183,42 @@
     CGFloat btn_h = btn_w;
     CGFloat margin_leading = VW(27);
     
-    LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"mw_fb_icon" selector:@selector(registerViewBtnAction:) target:self];
-    [loginTypeView addSubview:fbBtn];
-    [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(btn_w);
-        make.height.mas_equalTo(btn_h);
-        make.top.mas_equalTo(loginTypeView);
-        make.leading.bottom.mas_equalTo(loginTypeView);
-    }];
-   UIView *leadingView = fbBtn;
-    
-    LoginTypeButton *googleBtn = [[LoginTypeButton alloc] initWithType:googleLoginActTag title:@"" image:@"mw_gp_icon" selector:@selector(registerViewBtnAction:) target:self];
-    [loginTypeView addSubview:googleBtn];
-    [googleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(btn_w);
-        make.height.mas_equalTo(btn_h);
-        make.top.mas_equalTo(loginTypeView);
-        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-    }];
-    leadingView = googleBtn;
-    
-    LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
-    [loginTypeView addSubview:lineBtn];
-    [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(btn_w);
-        make.height.mas_equalTo(btn_h);
-        make.top.mas_equalTo(loginTypeView);
-        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-        make.trailing.mas_equalTo(loginTypeView);
-    }];
-    leadingView = lineBtn;
+    NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel isHome:YES];
+    UIView *leadingView = loginTypeView;
+  
+    for (int i = 0; i < loginBtnDatas.count; i++) {
+        
+        LoginButtonData *lbd = loginBtnDatas[i];
+        UIView *btnView;
+        
+        LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType:lbd.tag title:@"" image:lbd.image selector:@selector(registerViewBtnAction:) target:self];
+        
+        btnView = mBtn;
+        
+        if (btnView) {
+            
+            [loginTypeView addSubview:btnView];
+            [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.width.mas_equalTo(btn_w);
+                make.height.mas_equalTo(btn_h);
+                make.top.mas_equalTo(loginTypeView);
+                make.bottom.mas_equalTo(loginTypeView);
+                
+                if (i == 0) {
+                    make.leading.mas_equalTo(leadingView);
+                }else{
+                    make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+                }
+                if (i == loginBtnDatas.count - 1) {
+                    make.trailing.mas_equalTo(loginTypeView);
+                }
+            }];
+            
+            leadingView = btnView;
+            
+        }
+
+    }
     
     
     [hasAccountContent addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {

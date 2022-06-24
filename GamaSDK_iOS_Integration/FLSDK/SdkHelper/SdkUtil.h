@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import "LoginButtonData.h"
+#import "ConfigModel.h"
 
 @interface SdkUtil : NSObject
 
@@ -67,4 +69,5 @@
 
 //+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
 
++(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel isHome:(BOOL) isHome;
 @end

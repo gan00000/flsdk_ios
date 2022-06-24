@@ -71,6 +71,7 @@
 		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
 		0369B35928647256002F4B2F /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
+		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
@@ -324,6 +325,8 @@
 		03669948285E26890008EB50 /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
 		0369B35728647256002F4B2F /* DimeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimeUtil.h; sourceTree = "<group>"; };
 		0369B35828647256002F4B2F /* DimeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimeUtil.m; sourceTree = "<group>"; };
+		0369B35B28655669002F4B2F /* LoginButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginButtonData.h; sourceTree = "<group>"; };
+		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
 		03764809286178D600CAD034 /* GIDDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIDDelegate.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* GIDDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIDDelegate.m; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
@@ -813,6 +816,15 @@
 			path = LineSDK;
 			sourceTree = "<group>";
 		};
+		0369B35A28655630002F4B2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0369B35B28655669002F4B2F /* LoginButtonData.h */,
+				0369B35C28655669002F4B2F /* LoginButtonData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		037648082861789A00CAD034 /* GG */ = {
 			isa = PBXGroup;
 			children = (
@@ -1091,6 +1103,7 @@
 		322CBC0F24C589A5000D6B20 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				0369B35A28655630002F4B2F /* Model */,
 				322CBC1624C589A5000D6B20 /* SDKLoginViewController.h */,
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
 				322CBC1724C589A5000D6B20 /* LoginViewDelegate.h */,
@@ -1552,6 +1565,7 @@
 				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
 				03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				03B919372860AECB0029AE6A /* UIImage+MultiFormat.m in Sources */,
+				0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */,
 				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
 				03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */,
 				32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */,

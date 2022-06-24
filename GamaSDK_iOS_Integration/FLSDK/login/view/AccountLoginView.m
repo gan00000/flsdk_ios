@@ -22,6 +22,7 @@
 #import "TermsView.h"
 #import "AccountListView.h"
 #import "UIView+BlockGesture.h"
+#import "LoginButtonData.h"
 
 @interface AccountLoginView()
 
@@ -197,11 +198,6 @@
         }];
         
         
-        
-        CGFloat btn_w = VW(28);
-        CGFloat btn_h = btn_w;
-        CGFloat margin_leading = VW(24);
-        
         UIView *loginTypeView = [[UIView alloc] init];
         [self addSubview:loginTypeView];
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -209,9 +205,10 @@
             //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
             make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
             //            make.centerX.mas_equalTo(self);
-            make.height.mas_equalTo(btn_h);
+//            make.height.mas_equalTo(btn_h);
         }];
         
+       
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
         otherLabelTips.text = @"其他登入";
@@ -225,70 +222,63 @@
             
         }];
         
+        CGFloat btn_w = VW(28);
+        CGFloat btn_h = btn_w;
+        CGFloat margin_leading = VW(24);
+        
+        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel isHome:NO];
         UIView *leadingView = otherLabelTips;
-        
-        LoginTypeButton *guestBtn = [[LoginTypeButton alloc] initWithType:guestLoginActTag title:@"遊客登入" image:@"mw_guest_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:guestBtn];
-        [guestBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
-        }];
-        leadingView = guestBtn;
-        
-        if (@available(iOS 13.0, *)) {
-            ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                      authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
-            [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
-            appleLoginBtn.tag = appleLoginActTag;
+       
+        for (int i = 0; i < loginBtnDatas.count; i++) {
             
-            appleLoginBtn.cornerRadius = btn_w / 2;
-            [loginTypeView addSubview:appleLoginBtn];
+            LoginButtonData *lbd = loginBtnDatas[i];
+            UIView *btnView;
             
-            [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.mas_equalTo(btn_w);
-                make.height.mas_equalTo(btn_h);
-                make.top.mas_equalTo(loginTypeView);
-                make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-            }];
+            if ([lbd.btnType isEqualToString:LOGIN_TYPE_APPLE]) {
+                
+                if (@available(iOS 13.0, *)) {
+                    
+                    ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
+                                                                                                              authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+                    [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+                    appleLoginBtn.tag = lbd.tag;
+                    appleLoginBtn.cornerRadius = btn_w / 2.0;
+                    btnView = appleLoginBtn;
+                }
+                
+            }else{
+                
+                LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType:lbd.tag title:@"" image:lbd.image selector:@selector(registerViewBtnAction:) target:self];
+                
+                btnView = mBtn;
+            }
             
-            leadingView = appleLoginBtn;
+            if (btnView) {
+                
+                [loginTypeView addSubview:btnView];
+                [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.width.mas_equalTo(btn_w);
+                    make.height.mas_equalTo(btn_h);
+                    make.top.mas_equalTo(loginTypeView);
+                    make.bottom.mas_equalTo(loginTypeView);
+                    
+                    if (i == 0) {
+                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
+                    }else{
+                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+                    }
+                    if (i == loginBtnDatas.count - 1) {
+                        make.trailing.mas_equalTo(loginTypeView);
+                    }
+                }];
+                
+                leadingView = btnView;
+                
+            }
+            
             
         }
-        
-        LoginTypeButton *fbBtn = [[LoginTypeButton alloc] initWithType:fbLoginActTag title:@"FB登入" image:@"mw_fb_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:fbBtn];
-        [fbBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-        }];
-        leadingView = fbBtn;
-        
-        LoginTypeButton *googleBtn = [[LoginTypeButton alloc] initWithType:googleLoginActTag title:@"" image:@"mw_gp_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:googleBtn];
-        [googleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-        }];
-        leadingView = googleBtn;
-        
-        
-        LoginTypeButton *lineBtn = [[LoginTypeButton alloc] initWithType:lineLoginActTag title:@"" image:@"mw_line_icon" selector:@selector(registerViewBtnAction:) target:self];
-        [loginTypeView addSubview:lineBtn];
-        [lineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(btn_w);
-            make.height.mas_equalTo(btn_h);
-            make.top.mas_equalTo(loginTypeView);
-            make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-            make.trailing.mas_equalTo(loginTypeView);
-        }];
-        leadingView = lineBtn;
-        
+
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
