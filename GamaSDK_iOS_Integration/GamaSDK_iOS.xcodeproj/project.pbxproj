@@ -1651,11 +1651,11 @@
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -1687,11 +1687,11 @@
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -1754,6 +1754,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1800,6 +1801,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1842,6 +1844,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;
@@ -1905,6 +1908,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = NO;

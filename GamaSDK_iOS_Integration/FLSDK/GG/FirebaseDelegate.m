@@ -7,8 +7,10 @@
 //
 
 #import "FirebaseDelegate.h"
-@import FirebaseCore;
-@import FirebaseAuth;
+//@import FirebaseCore;
+//@import FirebaseAuth;
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseAuth/FirebaseAuth.h>
 
 @implementation FirebaseDelegate
     
