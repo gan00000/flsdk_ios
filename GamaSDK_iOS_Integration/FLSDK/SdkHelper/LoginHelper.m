@@ -233,16 +233,18 @@
     } @catch (NSException *exception) {
         
     }
-    
-    if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
-
-        
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
+    if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
 //        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
         [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
             
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:otherParamsDic];
+            NSMutableDictionary *fbParamsDic = nil;
+            @try {
+                fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{@"fbOauthToken":fbIdToken}];
+                [fbParamsDic addEntriesFromDictionary:otherParamsDic];
+            } @catch (NSException *exception) { }
+
+            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:fbParamsDic];
             
         } andFailBlock:^(NSError * _Nonnull error) {
             
@@ -273,20 +275,19 @@
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
         [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
-            
-            NSDictionary *otherParamsDic = nil;
+
+            NSMutableDictionary *ggParamsDic = nil;
             @try {
-                otherParamsDic = @{
+                ggParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{
                     @"googleIdToken"        :idToken,
                     @"googleClientId"       :kClientID,
-                    
-                };
+                }];
+                [ggParamsDic addEntriesFromDictionary:otherParamsDic];
+            } @catch (NSException *exception) { }
 
-            } @catch (NSException *exception) {
-                
-            }
             
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userId thirdPlate:LOGIN_TYPE_GOOGLE otherParamsDic:otherParamsDic];
+            
+            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userId thirdPlate:LOGIN_TYPE_GOOGLE otherParamsDic:ggParamsDic];
             
             
         } failCallback:^(NSString * _Nonnull msg) {
