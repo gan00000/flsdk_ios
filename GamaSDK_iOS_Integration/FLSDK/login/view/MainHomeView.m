@@ -241,7 +241,7 @@
     [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(termAgreeView);
         make.centerY.mas_equalTo(termAgreeView);
-        make.width.height.mas_equalTo(VH(10));
+        make.width.height.mas_equalTo(VH(15));
        
     }];
     
