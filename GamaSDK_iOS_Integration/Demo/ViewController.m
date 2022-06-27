@@ -79,11 +79,11 @@
     self.buttonsArray = @[@"登入",
                           @"保存/更新角色信息（进入游戏得到角色信息后调用）",
                           @"充值",
-                          @"第三方充值",
-                          @"分享",
-                          @"打开网址客服",
-                          @"打开公告",
-                          @"事件上报",
+//                          @"第三方充值",
+//                          @"分享",
+//                          @"打开网址客服",
+//                          @"打开公告",
+//                          @"事件上报",
                      
                           ];
     
@@ -178,7 +178,7 @@
         case 1:
         {
             
-            [[FLSDK share] setRoleInfo:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[FLSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
             
             
         }
@@ -189,14 +189,14 @@
              *********************************************/
         case 2:
         {
-//            IAP_ViewController *iapView = [[IAP_ViewController alloc] init];
-//            [self presentViewController:iapView animated:YES completion:nil];
-//            [iapView release];
-            NSString *aProductID = @"com.flyfun.lyj.340";
+//            com.fzzh.tw.1usd
+//            com.fzzh.tw.2usd
+            
+            NSString *aProductID = @"com.fzzh.tw.1usd";
             NSString *cpOrderId = @"2e9fde2765c34b9a89f2de7934a887a0";//游戏订单ID
             NSString *extra = @"2e9fde2765c34b9a89f2de7934a887a0";
             
-            [[FLSDK share] pay:(SDK_PAY_TYPE_APPLE) productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, NSDictionary *result) {
+            [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, NSDictionary *result) {
                 NSLog(@"pay finish");
             }];
         }

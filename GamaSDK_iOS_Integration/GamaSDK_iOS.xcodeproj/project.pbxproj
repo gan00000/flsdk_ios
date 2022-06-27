@@ -25,9 +25,14 @@
 		00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
 		00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B1D81021ADBFDC00739E95 /* Social_ViewController.m */; };
 		00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
+		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
+		03202921286958FB00E8D5A5 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
+		0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
+		032029282869840800E8D5A5 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 032029272869840800E8D5A5 /* PayData.m */; };
+		0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
 		032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* GamaSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
-		032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SdkUserInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BC285A006600F1FD3B /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
 		032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* ConfigHeader.m */; };
@@ -246,12 +251,22 @@
 		003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaThirdSocial.m; sourceTree = "<group>"; };
 		00B1D80F21ADBFDC00739E95 /* Social_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Social_ViewController.h; sourceTree = "<group>"; };
 		00B1D81021ADBFDC00739E95 /* Social_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		0320291C28694D6300E8D5A5 /* MWApplePayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApplePayManager.h; sourceTree = "<group>"; };
+		0320291D28694D6300E8D5A5 /* MWApplePayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWApplePayManager.m; sourceTree = "<group>"; };
+		0320291F286958FB00E8D5A5 /* ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePay.h; sourceTree = "<group>"; };
+		03202920286958FB00E8D5A5 /* ApplePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePay.m; sourceTree = "<group>"; };
+		0320292228695BD200E8D5A5 /* HttpServiceEnginePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpServiceEnginePay.h; sourceTree = "<group>"; };
+		0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpServiceEnginePay.m; sourceTree = "<group>"; };
+		032029262869840800E8D5A5 /* PayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PayData.h; path = FLSDK/Request/PayData.h; sourceTree = SOURCE_ROOT; };
+		032029272869840800E8D5A5 /* PayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PayData.m; path = FLSDK/Request/PayData.m; sourceTree = SOURCE_ROOT; };
+		0320292928698F1800E8D5A5 /* CreateOrderResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateOrderResp.h; sourceTree = "<group>"; };
+		0320292A28698F1800E8D5A5 /* CreateOrderResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateOrderResp.m; sourceTree = "<group>"; };
 		032AB891285A006600F1FD3B /* GamaSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurityFunction.m; sourceTree = "<group>"; };
 		032AB892285A006600F1FD3B /* GamaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurity.m; sourceTree = "<group>"; };
 		032AB893285A006600F1FD3B /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
 		032AB894285A006600F1FD3B /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
-		032AB897285A006600F1FD3B /* SdkUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUserInfoModel.h; sourceTree = "<group>"; };
-		032AB898285A006600F1FD3B /* SdkUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkUserInfoModel.m; sourceTree = "<group>"; };
+		032AB897285A006600F1FD3B /* GameUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUserModel.h; sourceTree = "<group>"; };
+		032AB898285A006600F1FD3B /* GameUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameUserModel.m; sourceTree = "<group>"; };
 		032AB899285A006600F1FD3B /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
 		032AB89A285A006600F1FD3B /* SUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUtil.h; sourceTree = "<group>"; };
 		032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCoreConfReader.m; sourceTree = "<group>"; };
@@ -655,6 +670,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032028F128694B7D00E8D5A5 /* SDKIAP */ = {
+			isa = PBXGroup;
+			children = (
+				0320291C28694D6300E8D5A5 /* MWApplePayManager.h */,
+				0320291D28694D6300E8D5A5 /* MWApplePayManager.m */,
+				0320291F286958FB00E8D5A5 /* ApplePay.h */,
+				03202920286958FB00E8D5A5 /* ApplePay.m */,
+			);
+			path = SDKIAP;
+			sourceTree = "<group>";
+		};
+		03202925286962CB00E8D5A5 /* DataMode */ = {
+			isa = PBXGroup;
+			children = (
+				322CBC0624C589A5000D6B20 /* CCSDKDATA.h */,
+				322CBC0924C589A5000D6B20 /* CCSDKDATA.m */,
+				032AB897285A006600F1FD3B /* GameUserModel.h */,
+				032AB898285A006600F1FD3B /* GameUserModel.m */,
+			);
+			path = DataMode;
+			sourceTree = "<group>";
+		};
 		032AB889285A006600F1FD3B /* CoreUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,7 +699,6 @@
 				032AB89E285A006600F1FD3B /* ConfigHeader.m */,
 				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
 				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
-				032AB896285A006600F1FD3B /* GamaCoreData */,
 				032AB890285A006600F1FD3B /* GamaCoreSecurity */,
 				032AB8A7285A006600F1FD3B /* GamaFunctionAppendant */,
 			);
@@ -678,15 +714,6 @@
 				032AB894285A006600F1FD3B /* GamaSecurity.h */,
 			);
 			path = GamaCoreSecurity;
-			sourceTree = "<group>";
-		};
-		032AB896285A006600F1FD3B /* GamaCoreData */ = {
-			isa = PBXGroup;
-			children = (
-				032AB897285A006600F1FD3B /* SdkUserInfoModel.h */,
-				032AB898285A006600F1FD3B /* SdkUserInfoModel.m */,
-			);
-			path = GamaCoreData;
 			sourceTree = "<group>";
 		};
 		032AB89F285A006600F1FD3B /* AlertView */ = {
@@ -951,6 +978,8 @@
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03202925286962CB00E8D5A5 /* DataMode */,
+				032028F128694B7D00E8D5A5 /* SDKIAP */,
 				03E076652861E71800B81B65 /* Line */,
 				03E5D85F2861A7C80055B25E /* GamaCommonHeader.h */,
 				037648082861789A00CAD034 /* GG */,
@@ -1051,14 +1080,14 @@
 			children = (
 				322CBC0724C589A5000D6B20 /* AccountModel.h */,
 				322CBC0A24C589A5000D6B20 /* AccountModel.m */,
-				322CBC0624C589A5000D6B20 /* CCSDKDATA.h */,
-				322CBC0924C589A5000D6B20 /* CCSDKDATA.m */,
 				322CBC0824C589A5000D6B20 /* LoginResponse.h */,
 				322CBC0524C589A5000D6B20 /* LoginResponse.m */,
 				03B918DC286029050029AE6A /* ConfigResponse.h */,
 				03B918DD286029050029AE6A /* ConfigResponse.m */,
 				03B918DF286029670029AE6A /* ConfigModel.h */,
 				03B918E0286029670029AE6A /* ConfigModel.m */,
+				0320292928698F1800E8D5A5 /* CreateOrderResp.h */,
+				0320292A28698F1800E8D5A5 /* CreateOrderResp.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1179,6 +1208,8 @@
 		32C9BC5224C5E9E300B3D704 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				0320292228695BD200E8D5A5 /* HttpServiceEnginePay.h */,
+				0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */,
 				322CBC0424C589A5000D6B20 /* Model */,
 				322CBBFC24C589A5000D6B20 /* BJBaseResponceModel.h */,
 				322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */,
@@ -1279,6 +1310,8 @@
 				E947D325221D73CF00490C35 /* BaseSDK.m */,
 				E947D323221D73CE00490C35 /* BaseSDKImpl.h */,
 				E947D320221D73CD00490C35 /* BaseSDKImpl.m */,
+				032029262869840800E8D5A5 /* PayData.h */,
+				032029272869840800E8D5A5 /* PayData.m */,
 			);
 			name = Base;
 			path = ../../../GamaAccountLogin/GamaAccountLogin/Base;
@@ -1503,10 +1536,11 @@
 				3295E2E824DAEDDE00B85976 /* SDKRequest.m in Sources */,
 				032AB8BC285A006600F1FD3B /* SUtil.m in Sources */,
 				03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */,
-				032AB8BA285A006600F1FD3B /* SdkUserInfoModel.m in Sources */,
+				032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */,
 				3295E2E924DAEDDE00B85976 /* FLSDK.m in Sources */,
 				03E076682861E73C00B81B65 /* LineDelegate.m in Sources */,
 				03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */,
+				032029282869840800E8D5A5 /* PayData.m in Sources */,
 				03B9193E2860AECB0029AE6A /* UIView+WebCacheOperation.m in Sources */,
 				0376480B286178D600CAD034 /* GIDDelegate.m in Sources */,
 				3295E2EA24DAEDDE00B85976 /* UIColor+HexStringToColorTW.m in Sources */,
@@ -1516,6 +1550,7 @@
 				032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */,
 				03B9192B2860AECB0029AE6A /* MASLayoutConstraint.m in Sources */,
 				03B919342860AECB0029AE6A /* UIImageView+HighlightedWebCache.m in Sources */,
+				0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */,
 				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
 				03B918DE286029050029AE6A /* ConfigResponse.m in Sources */,
 				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
@@ -1558,6 +1593,7 @@
 				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
 				03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */,
 				32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */,
+				03202921286958FB00E8D5A5 /* ApplePay.m in Sources */,
 				3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */,
 				3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */,
 				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
@@ -1574,6 +1610,7 @@
 				032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */,
 				03B9192C2860AECB0029AE6A /* NSArray+MASAdditions.m in Sources */,
 				03B919382860AECB0029AE6A /* SDWebImageCompat.m in Sources */,
+				0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */,
 				03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */,
 				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
 				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
@@ -1589,6 +1626,7 @@
 				E947D352221ED76200490C35 /* BaseSDKImpl.m in Sources */,
 				0389B3192861B7B30024E62E /* LoginHelper.m in Sources */,
 				E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */,
+				0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */,
 				032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */,
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				E947D354221ED7F300490C35 /* BaseSDK.m in Sources */,

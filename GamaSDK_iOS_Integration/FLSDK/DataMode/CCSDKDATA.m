@@ -38,7 +38,6 @@
 
 - (void)initData
 {
-    self.isNeedAutoLogin = YES;
     ConfigModel *mcm = [[ConfigModel alloc] init];
     mcm.visitorLogin = YES;
     mcm.fbLogin = YES;
@@ -47,6 +46,16 @@
     mcm.appleLogin = YES;
     mcm.delectAccount = NO;
     self.mConfigModel = mcm;
+    
+    
+    GameUserModel *mGameUserModel = [[GameUserModel alloc] init];
+    mGameUserModel.roleID = @"";
+    mGameUserModel.roleName = @"";
+    mGameUserModel.roleLevel = @"";
+    mGameUserModel.roleVipLevel = @"";
+    mGameUserModel.serverCode = @"";
+    mGameUserModel.serverName = @"";
+    self.gameUserModel = mGameUserModel;
 }
 
 

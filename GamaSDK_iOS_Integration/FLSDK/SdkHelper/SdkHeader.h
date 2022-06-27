@@ -138,5 +138,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 
 #define api_delete_account     (@"api/cancel/account")
 
+#define api_order_create     (@"api/order/create")
+
 #endif /* CCSkyHourHeader_h */
 

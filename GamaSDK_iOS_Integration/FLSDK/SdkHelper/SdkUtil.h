@@ -38,8 +38,6 @@
 + (void)stopLoadingAtView:(UIView *)baseView;
 
 #pragma mark - Strings
-// 处理链接请求
-+ (NSString *)spliceSpecialString;
 
 //去掉空字符
 + (NSString *)triString:(NSString *)aStr;

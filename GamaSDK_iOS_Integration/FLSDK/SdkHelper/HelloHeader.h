@@ -16,7 +16,6 @@
 #import "SUtil.h"
 #import "UIImage+GamaBundleImage.h"
 #import "GamaCommonHeader.h"
-#import "SdkUserInfoModel.h"
 #import "GamaSecurityFunction.h"
 #import "SdkHeader.h"
 

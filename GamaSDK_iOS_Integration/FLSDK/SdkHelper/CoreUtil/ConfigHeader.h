@@ -5,7 +5,6 @@
 #import "SUtil.h"
 #import "AlertUtil.h"
 #import "GamaCoreConfReader.h"
-#import "SdkUserInfoModel.h"
 #import "NSString+URLEncoding.h"
 
 #define GAMA_VERSION_SDK_DATE @""

@@ -5,7 +5,6 @@
 #import "FLSDK.h"
 #import "ConfigHeader.h"
 #import "SUtil.h"
-#import "SdkUserInfoModel.h"
 #import "GamaAdInterface.h"
 #import "GamaPhoneModel.h"
 #import "GamaCommonHeader.h"
@@ -79,92 +78,6 @@
 + (void)_applicationWillEnterForeground:(UIApplication *)application
 {
    
-}
-
-#pragma mark DB : AD Purchases
-+ (void)_in_app_purchases:(NSNotification *)note
-{
-    NSString *productID = note.userInfo[@"productID"] ? note.userInfo[@"productID"] : @"";
-    NSString *currentLocalPrice = note.userInfo[@"currentLocalPrice"] ? note.userInfo[@"currentLocalPrice"] : @"";
-    NSString *currencyCode = note.userInfo[@"currencyCode"] ? note.userInfo[@"currencyCode"] : @"";
-    NSString *gamaUID = [SdkUserInfoModel shareInfoModel].userId? :@"";
-    NSString *roleID = [SdkUserInfoModel shareInfoModel].roleID? :@"";
-    
-//    [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel
-//                         eventName:GAMESWORD_EVENT_IN_APP_PURCHASES
-//                       eventValues:@{@"productID":productID,
-//                                     @"userId":gamaUID,
-//                                     @"roleId":roleID,
-//                                     @"currentLocalPrice":currentLocalPrice,
-//                                     @"currencyCode":currencyCode}];
-//
-//    __block BOOL firstPay = YES;
-//    NSArray *tempSaveGamaUID = [[NSUserDefaults standardUserDefaults] objectForKey:@"gamaEventSaveId"];
-//    [tempSaveGamaUID enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if ([obj isEqualToString:gamaUID]) { //如果该用户已经不是首次购买，则不上报
-//            firstPay = NO;
-//        }
-//    }];
-//    if (firstPay &&gamaUID.length >1 ) {
-//        NSMutableArray *insertGamaUID = [NSMutableArray arrayWithArray:tempSaveGamaUID];
-//        [insertGamaUID addObject:gamaUID];
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:GAMESWORD_EVENT_FIRSTPAY eventValues:@{@"productID":productID,@"userId":gamaUID}];
-//        [[NSUserDefaults standardUserDefaults] setObject:insertGamaUID forKey:@"gamaEventSaveId"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-//    }
-    
-}
-
-#pragma mark - 登录功能
-
-
-+ (void)_gamaLoginSuccess:(BOOL) isRegister
-{
-    
-    if (isRegister) {
-        // 注册时广告跟踪
-//        [GamaAdPort startWhenRegister];
-    }
-    // 登录时广告跟踪
-//    [GamaAdPort startWhenLogin];
-}
-
-
-#pragma mark - 储值功能
-/**
- @abstract      储值功能
- */
-+ (void)gamaPay:(NSString *)productId
-      cpOrderId:(NSString *)cpOrderId
-          extra:(NSString *)extra
-{
-    NSString *localUid      = [SdkUserInfoModel shareInfoModel].userId;
-    NSString *tmpRoleID     = [SdkUserInfoModel shareInfoModel].roleID;
-    NSString *tmpServerCode = [SdkUserInfoModel shareInfoModel].serverCode;
-    NSString *tmpServerName = [SdkUserInfoModel shareInfoModel].serverName;
-    NSString *tmpLevel      = [SdkUserInfoModel shareInfoModel].roleLevel;
-    NSString *tmpRoleName   = [SdkUserInfoModel shareInfoModel].roleName;
-    
-    //兼容roleName和level为可选。兼容
-    tmpRoleName             = (!tmpRoleName || [tmpRoleName isEqualToString:@""]) ? @"noneRoleName" : tmpRoleName;
-    tmpLevel                = (!tmpLevel || [tmpLevel isEqualToString:@""]) ? @"noneLevel" : tmpLevel;
-    tmpServerName           = tmpServerName ? tmpServerName : @"";
-    
-//    [GamaIapFunctionPort   userBuyProductWithProductId:productId
-//                                                userId:localUid
-//                                                roleId:tmpRoleID
-//                                              creditId:tmpRoleID
-//                                            serverCode:tmpServerCode
-//                                                remark:@""
-//                                             roleLevel:tmpLevel
-//                                              roleName:tmpRoleName
-//                                            serverName:tmpServerName
-//                                             cpOrderId:cpOrderId
-//                                                 extra:extra];
-//    
-//    SDK_LOG(@"储值接口传入的参数 ：productid : %@ servercode : %@ servername : %@ roleid : %@ rolelevel : %@ rolename : %@  , cpOrderId : %@ , extra : %@",
-//            productId,tmpServerCode,tmpServerName,tmpRoleID,tmpLevel,tmpRoleName,cpOrderId,extra);
-    
 }
 
 @end

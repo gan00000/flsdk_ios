@@ -92,14 +92,19 @@ typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){
 /**
  存储游戏角色信息
  */
-- (void)setRoleInfo:(NSString *)roleId
+- (void)setRoleInfoWithRoleId:(NSString *)roleId
            roleName:(NSString *)roleName
           roleLevel:(NSString *)roleLevel
        roleVipLevel:(NSString *)roleVipLevel
          serverCode:(NSString *)serverCode
          serverName:(NSString *)serverName;
 
-- (void)pay:(SDK_PAY_TYPE)payType
+- (void)payWithRoleId:(NSString *)roleId
+   roleName:(NSString *)roleName
+  roleLevel:(NSString *)roleLevel
+roleVipLevel:(NSString *)roleVipLevel
+ serverCode:(NSString *)serverCode
+ serverName:(NSString *)serverName
   productId:(NSString *)productId
   cpOrderId:(NSString *)cpOrderId
       extra:(NSString *)extra
@@ -131,8 +136,8 @@ completionHandler:(PayCompletionHandler) handler;
  */
 - (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas;
 
-- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
-                              roleName:(NSString *)roleName;
+//- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
+//                              roleName:(NSString *)roleName;
 
 @end
 

@@ -409,59 +409,6 @@
     
 }
 
-+ (void)reportRoleInfo:(NSDictionary *)otherParamsDic
-                                successBlock:(BJServiceSuccessBlock)successBlock
-                                  errorBlock:(BJServiceErrorBlock)errorBlock
-{
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
-    if (otherParamsDic) {
-        [params addEntriesFromDictionary:otherParamsDic];
-    }
-    
-//    GameCode+ServerCode+UserId() + RoleId() + "FLYFUNGAME","UTF-8"
-//    NSString *timeStamp = [GamaFunction getTimeStamp];
-    NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
-    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].serverCode];
-    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].userId];
-    [md5str appendFormat:@"%@",[SdkUserInfoModel shareInfoModel].roleID];
-    [md5str appendFormat:@"%@",@"FLYFUNGAME"];
-    
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
-    md5SignStr = [md5SignStr lowercaseString];
-//    {
-//      "device_type": "string",
-//      "game_code": "string",
-//      "game_name": "string",
-//      "roleName": "string",
-//      "role_id": "string",
-//      "server_code": "string",
-//      "server_name": "string",
-//      "sigin": "string",
-//      "system": "string",
-//      "system_version": "string",
-//      "user_id": "string",
-//      "user_name": "string"
-//    }
-    NSDictionary *dic = @{@"device_type":[SUtil getDeviceType]? : @"",
-                          @"game_code": [SDKConReader getGameCode],
-                          @"game_name": [SUtil getBundleName]? : @"",
-                          @"role_id": [SdkUserInfoModel shareInfoModel].roleID,
-                          @"role_name": [SdkUserInfoModel shareInfoModel].roleName,
-                          @"server_code": [SdkUserInfoModel shareInfoModel].serverCode,
-                          @"server_name": [SdkUserInfoModel shareInfoModel].serverName,
-                          @"sigin": md5SignStr,
-                          @"system":@"ios",
-                          @"system_version":[SUtil getSystemVersion]? : @"",
-                          @"user_id": [SdkUserInfoModel shareInfoModel].userId,
-//                          @"user_name": SDK_DATA.mCCSDKResponse.data.account? : @"",
-    };
-    
-    [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineAd postRequestWithFunctionPath:@"adv-api/v1/role/save/" params:params successBlock:successBlock errorBlock:errorBlock];
-    
-}
 
 #pragma mark - 绑定账号
 + (void)doAccountBindingWithUserName:(NSString *)userName
@@ -581,6 +528,83 @@
     
     [HttpServiceEngineLogin getRequestWithFunctionPath:api_delete_account params:params successBlock:successBlock errorBlock:errorBlock];
     
+}
+
+#pragma mark - 創單
++ (void)createOrderWithproductId:(NSString *)productId
+            cpOrderId:(NSString *)cpOrderId
+                extra:(NSString *)extra
+             gameInfo:(GameUserModel*)gameUserModel
+         accountModel:(AccountModel*) accountModel
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(PayServiceSuccessBlock)successBlock
+                          errorBlock:(PayServiceErrorBlock)errorBlock
+{
+    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",GAME_CODE];
+    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+    
+//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
+//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
+    
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    
+    @try {
+        NSDictionary *dic = @{
+            @"signature"        :[md5SignStr lowercaseString],
+            @"timestamp"        :timeStamp,
+            @"gameCode"         :GAME_CODE,
+            @"userId"           :accountModel.userId,
+            @"loginAccessToken"  :accountModel.token,
+            @"loginTimestamp"   :accountModel.timestamp,
+            @"thirdPlatId"      :accountModel.thirdId,
+            @"thirdLoginId"     :accountModel.thirdId,
+            
+            @"registPlatform"   :accountModel.loginType,
+            @"loginMode"        :accountModel.loginType,
+            
+            @"payType"          :@"apple",
+            @"mode"             :@"apple",//支付方式
+            @"productId"           :productId,
+            @"extra"           :extra,
+            @"cpOrderId"         :cpOrderId,
+            @"serverCode"           :gameUserModel.serverCode,
+            @"serverName"           :gameUserModel.serverName,
+            @"roleId"           :gameUserModel.roleID,
+            @"roleName"           :gameUserModel.roleName,
+            @"roleLevel"           :gameUserModel.roleLevel,
+            @"roleVipLevel"           :gameUserModel.roleVipLevel,
+
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    [HttpServiceEnginePay getRequestWithFunctionPath:api_order_create params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
+
+
+#pragma mark - 通過url創建通用參數鏈接
++(NSString *) createSdkUrl:(NSString *)url{
+    
+    return @"";
 }
 
 @end

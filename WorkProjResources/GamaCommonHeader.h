@@ -53,6 +53,6 @@
 //#define GAMESWORD_EVENT_7RETENTION          @"gamesword_7retention"
 //#define GAMESWORD_EVENT_15RETENTION         @"gamesword_15retention"
 //#define GAMESWORD_EVENT_30RETENTION         @"gamesword_30retention"
-#define GAMESWORD_EVENT_IN_APP_PURCHASES    @"in_app_purchases"
+//#define GAMESWORD_EVENT_IN_APP_PURCHASES    @"in_app_purchases"
 
 #endif

@@ -90,9 +90,7 @@
     *cpOrderId = @"atestaporderid",
     *extra = @"hehe";
 
-    [[FLSDK share] pay:(SDK_PAY_TYPE_APPLE) productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, NSDictionary *result) {
-        [AlertUtil showAlertWithMessage:@"completionHandler"];
-    }];
+//    [[FLSDK share] payWithRoleId:<#(NSString *)#> roleName:<#(NSString *)#> roleLevel:<#(NSString *)#> roleVipLevel:<#(NSString *)#> serverCode:<#(NSString *)#> serverName:<#(NSString *)#> productId:<#(NSString *)#> cpOrderId:<#(NSString *)#> extra:<#(NSString *)#> completionHandler:<#^(SDK_PAY_STATUS status, NSDictionary *result)handler#>];
 }
 
 @end

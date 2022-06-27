@@ -472,16 +472,18 @@
 -(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate
 {
     LoginResponse *loginResopnse = (LoginResponse *)responseData;
+    SDK_DATA.mLoginResponse = loginResopnse;
+    
     AccountModel *rData = loginResopnse.data;
     rData.loginType = thirdPlate;
     [[ConfigCoreUtil share] saveAccountModel:rData];
     
     [[ConfigCoreUtil share] saveLoginType:thirdPlate];
-    [SdkUserInfoModel shareInfoModel].userId = rData.userId;
-    [SdkUserInfoModel shareInfoModel].accessToken = rData.token;
+//    [SdkUserInfoModel shareInfoModel].userId = rData.userId;
+//    [SdkUserInfoModel shareInfoModel].accessToken = rData.token;
     //[SdkUserInfoModel shareInfoModel].loginType = thirdPlate;
-    [SdkUserInfoModel shareInfoModel].loginTypeStr = thirdPlate;
-    [SdkUserInfoModel shareInfoModel].timestamp = rData.timestamp;
+//    [SdkUserInfoModel shareInfoModel].loginTypeStr = thirdPlate;
+//    [SdkUserInfoModel shareInfoModel].timestamp = rData.timestamp;
     
     if ([LOGIN_TYPE_SELF isEqualToString:thirdPlate]) {
         //是否需要保存账号密码

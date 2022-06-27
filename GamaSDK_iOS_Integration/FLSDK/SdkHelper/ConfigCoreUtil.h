@@ -30,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSString *) loginType;
 
--(NSString *) createSdkUrl:(NSString *)url;
 @end
 
 NS_ASSUME_NONNULL_END

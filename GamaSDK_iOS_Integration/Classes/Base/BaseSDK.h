@@ -20,17 +20,4 @@ extern NSString *const GAMA_NOTIFICATION_SHARE_RESULT;            // 分享结�
 
 @interface BaseSDK : NSObject
 
-
-#pragma mark - 储值功能
-/**
- @abstract      储值功能
- 
- */
-+ (void)gamaPay:(NSString *)productId
-cpOrderId:(NSString *)cpOrderId
-          extra:(NSString *)extra;
-
-+ (void)_gamaLoginSuccess:(BOOL) isRegister;
-+ (void)_in_app_purchases:(NSNotification *)note;
-
 @end

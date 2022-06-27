@@ -60,6 +60,7 @@
 //#import "KRAgeSystemView.h"
 #import "SDKLoginViewController.h"
 #import "SUtil.h"
+#import "StringUtil.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -68,6 +69,7 @@
 
 #import "FBDelegate.h"
 #import "LineDelegate.h"
+#import "MWApplePayManager.h"
 
 
 // 通知类型
@@ -172,10 +174,10 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
         
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                                 selector:@selector(_gamaNoteListener:)
-//                                                     name:GAMA_NOTIFICATION_SUCCESS_LOGIN
-//                                                   object:nil];
+        //        [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                                 selector:@selector(_gamaNoteListener:)
+        //                                                     name:GAMA_NOTIFICATION_SUCCESS_LOGIN
+        //                                                   object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(_gamaNoteListener:)
                                                      name:GAMA_NOTIFICATION_PHCHASE_SUCCESSFUL
@@ -188,14 +190,14 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
                                                  selector:@selector(_gamaNoteListener:)
                                                      name:GAMA_NOTIFICATION_PHCHASE_PUCHASING
                                                    object:nil];
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                                 selector:@selector(_gamaNoteListener:)
-//                                                     name:@"Gama_httpRequest_SharingResult"//GAMA_NOTIFICATION_SHARE_RESULT
-//                                                   object:nil];
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                                 selector:@selector(_gamaNoteListener:)
-//                                                     name:@"GAMA_BIND_PHONE_RESULT"//GAMA_NOTIFICATION_SHARE_RESULT
-//                                                   object:nil];
+        //        [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                                 selector:@selector(_gamaNoteListener:)
+        //                                                     name:@"Gama_httpRequest_SharingResult"//GAMA_NOTIFICATION_SHARE_RESULT
+        //                                                   object:nil];
+        //        [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                                 selector:@selector(_gamaNoteListener:)
+        //                                                     name:@"GAMA_BIND_PHONE_RESULT"//GAMA_NOTIFICATION_SHARE_RESULT
+        //                                                   object:nil];
         
         // 监听登录成功通知，调用数据统计等接口
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_gamaNoteListener:) name:GAMA_NOTIFICATION_SUCCESS_LOGIN object:nil];
@@ -212,210 +214,222 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 
 - (void)sdkLoginWithHandler:(SDKLoginCompletionHandler)cmopleteHandler
 {
-        self.loginCompletionHandler = cmopleteHandler;
-        SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
-//        controller.definesPresentationContext = YES;
-    #ifdef __IPHONE_8_0
-            if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
-                SDK_LOG(@"[UIDevice currentDevice] systemVersion].intValue < 8");
-            }
-            else {
-                SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
-                [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以
-            }
-    #else
-        SDK_LOG(@"not def __IPHONE_8_0");
-    #endif
-//        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
-        [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
-    
-        }];
+    self.loginCompletionHandler = cmopleteHandler;
+    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+    //        controller.definesPresentationContext = YES;
+#ifdef __IPHONE_8_0
+    if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
+        SDK_LOG(@"[UIDevice currentDevice] systemVersion].intValue < 8");
+    }
+    else {
+        SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
+        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以
+    }
+#else
+    SDK_LOG(@"not def __IPHONE_8_0");
+#endif
+    //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+    [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
+        
+    }];
 }
 
 
 /**
  保存或更新角色信息
-
- @param roleInfo 角色信息
  */
-- (void)setRoleInfo:(NSString *)roleId
-           roleName:(NSString *)roleName
-         roleLevel:(NSString *)roleLevel
-roleVipLevel:(NSString *)roleVipLevel
-serverCode:(NSString *)serverCode
-serverName:(NSString *)serverName
+- (void)setRoleInfoWithRoleId:(NSString *)roleId
+                     roleName:(NSString *)roleName
+                    roleLevel:(NSString *)roleLevel
+                 roleVipLevel:(NSString *)roleVipLevel
+                   serverCode:(NSString *)serverCode
+                   serverName:(NSString *)serverName
 {
     
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
-                             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
+            roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     // 对必要参数进行检查
-    if ([self _isEmpty:roleId] ||
-        [self _isEmpty:roleName] ||
-        [self _isEmpty:roleLevel] ||
-        [self _isEmpty:serverCode]
-        )
+    if ([StringUtil isEmpty:roleId] || [StringUtil isEmpty:roleName] ||
+        [StringUtil isEmpty:roleLevel] ||
+        [StringUtil isEmpty:serverCode])
     {
         //NSLog(@"角色重要信息为空,请检查参数中 key-value 是否都有值，key 为 GAMA_PRM_ROLE_ID、GAMA_PRM_ROLE_NAME、GAMA_PRM_ROLE_LEVEL、GAMA_PRM_ROLE_SERVER_ID， 均是 SDK 定义的宏");
         [AlertUtil showAlertWithMessage:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
         return;
     }
     
-    [SdkUserInfoModel shareInfoModel].roleID     = roleId;
-    [SdkUserInfoModel shareInfoModel].roleName   = roleName;
-    [SdkUserInfoModel shareInfoModel].roleLevel  = roleLevel;
-    [SdkUserInfoModel shareInfoModel].vipLevel   = roleVipLevel;
-    [SdkUserInfoModel shareInfoModel].serverCode = serverCode;
-    [SdkUserInfoModel shareInfoModel].serverName = serverName;
-    
-    [SDKRequest reportRoleInfo:nil successBlock:^(id responseData) {
-        
-    } errorBlock:^(BJError *error) {
-        
-    }];
+    //    [SdkUserInfoModel shareInfoModel].roleID     = roleId;
+    //    [SdkUserInfoModel shareInfoModel].roleName   = roleName;
+    //    [SdkUserInfoModel shareInfoModel].roleLevel  = roleLevel;
+    //    [SdkUserInfoModel shareInfoModel].vipLevel   = roleVipLevel;
+    //    [SdkUserInfoModel shareInfoModel].serverCode = serverCode;
+    //    [SdkUserInfoModel shareInfoModel].serverName = serverName;
     
     
-//    NSString *loginName = nil;
-//    NSString *loginPwd = nil;
-//    [GamaUtils getUserInfo:&loginName andPassword:&loginPwd fromFile:GAMA_SAVE_Guest_USER_FILE_NAME];
-
+    
+    //    NSString *loginName = nil;
+    //    NSString *loginPwd = nil;
+    //    [GamaUtils getUserInfo:&loginName andPassword:&loginPwd fromFile:GAMA_SAVE_Guest_USER_FILE_NAME];
+    
     ///平台悬浮按钮设置接口
-//    if ([NSClassFromString(@"GMPlatformSDKTW") respondsToSelector:NSSelectorFromString(@"setPlatformDataWithUserId:accountName:gameCode:serverCode:roleName:roleId:roleLevel:appKey:loginToken:loginTimestamp:loginType:isLandscape:")]) {
-//        ((void(*)(Class, SEL,id,id,id,id,id,id,int,id,id,id,id,BOOL))objc_msgSend)(NSClassFromString(@"GMPlatformSDKTW"),
-//                                                                                   NSSelectorFromString(@"setPlatformDataWithUserId:accountName:gameCode:serverCode:roleName:roleId:roleLevel:appKey:loginToken:loginTimestamp:loginType:isLandscape:"),
-//                                                                                   [GamaUserInfoModel shareInfoModel].gamaUID,
-//                                                                                   loginName ? loginName : @"",
-//                                                                                   GetConfigString(SDK_GAME_CODE),
-//                                                                                   roleServerId,
-//                                                                                   roleName,
-//                                                                                   roleId,
-//                                                                                   [roleLevel integerValue],
-//                                                                                   GetConfigString(GAMA_GAME_KEY),
-//                                                                                   [GamaUserInfoModel shareInfoModel].accessToken,
-//                                                                                   [GamaUserInfoModel shareInfoModel].timestamp,
-//                                                                                   [GamaUserInfoModel shareInfoModel].loginTypeStr,
-//                                                                                   GAMA_IS_INTERFACE_THWARTWISE);
-//    }
-
-//    Class class = NSClassFromString(@"GMPlatformSDKTW");
-//    [class platformLogOut];
-//    [GMPlatformSDKTW platformLogOut];
-//    [class setPlatformDataWithUserId:[GamaUserInfoModel shareInfoModel].gamaUID
-//                       accountName:loginName ? loginName : @""
-//                          gameCode:GetConfigString(SDK_GAME_CODE)
-//                        serverCode:roleServerId
-//                          roleName:roleName
-//                            roleId:roleId
-//                         roleLevel:[roleLevel integerValue]
-//                            appKey:GetConfigString(GAMA_GAME_KEY)
-//                        loginToken:[GamaUserInfoModel shareInfoModel].accessToken
-//                    loginTimestamp:[GamaUserInfoModel shareInfoModel].timestamp
-//                         loginType:[GamaUserInfoModel shareInfoModel].loginTypeStr
-//                       isLandscape:GAMA_IS_INTERFACE_THWARTWISE];
-
+    //    if ([NSClassFromString(@"GMPlatformSDKTW") respondsToSelector:NSSelectorFromString(@"setPlatformDataWithUserId:accountName:gameCode:serverCode:roleName:roleId:roleLevel:appKey:loginToken:loginTimestamp:loginType:isLandscape:")]) {
+    //        ((void(*)(Class, SEL,id,id,id,id,id,id,int,id,id,id,id,BOOL))objc_msgSend)(NSClassFromString(@"GMPlatformSDKTW"),
+    //                                                                                   NSSelectorFromString(@"setPlatformDataWithUserId:accountName:gameCode:serverCode:roleName:roleId:roleLevel:appKey:loginToken:loginTimestamp:loginType:isLandscape:"),
+    //                                                                                   [GamaUserInfoModel shareInfoModel].gamaUID,
+    //                                                                                   loginName ? loginName : @"",
+    //                                                                                   GetConfigString(SDK_GAME_CODE),
+    //                                                                                   roleServerId,
+    //                                                                                   roleName,
+    //                                                                                   roleId,
+    //                                                                                   [roleLevel integerValue],
+    //                                                                                   GetConfigString(GAMA_GAME_KEY),
+    //                                                                                   [GamaUserInfoModel shareInfoModel].accessToken,
+    //                                                                                   [GamaUserInfoModel shareInfoModel].timestamp,
+    //                                                                                   [GamaUserInfoModel shareInfoModel].loginTypeStr,
+    //                                                                                   GAMA_IS_INTERFACE_THWARTWISE);
+    //    }
+    
+    //    Class class = NSClassFromString(@"GMPlatformSDKTW");
+    //    [class platformLogOut];
+    //    [GMPlatformSDKTW platformLogOut];
+    //    [class setPlatformDataWithUserId:[GamaUserInfoModel shareInfoModel].gamaUID
+    //                       accountName:loginName ? loginName : @""
+    //                          gameCode:GetConfigString(SDK_GAME_CODE)
+    //                        serverCode:roleServerId
+    //                          roleName:roleName
+    //                            roleId:roleId
+    //                         roleLevel:[roleLevel integerValue]
+    //                            appKey:GetConfigString(GAMA_GAME_KEY)
+    //                        loginToken:[GamaUserInfoModel shareInfoModel].accessToken
+    //                    loginTimestamp:[GamaUserInfoModel shareInfoModel].timestamp
+    //                         loginType:[GamaUserInfoModel shareInfoModel].loginTypeStr
+    //                       isLandscape:GAMA_IS_INTERFACE_THWARTWISE];
+    
     ///用户登入信息上报
-//    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
-//                                                                                        @"role_name":roleName,
-//                                                                                        @"level":roleLevel,
-//                                                                                        @"vip_level":roleVipLevel,
-//                                                                                        @"server_code":serverCode,
-//                                                                                        @"server_name":serverName,
-//                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
-//                                                                                        }];
+    //    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
+    //                                                                                        @"role_name":roleName,
+    //                                                                                        @"level":roleLevel,
+    //                                                                                        @"vip_level":roleVipLevel,
+    //                                                                                        @"server_code":serverCode,
+    //                                                                                        @"server_name":serverName,
+    //                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
+    //                                                                                        }];
     /**
-    NSDateFormatter *sysTemFormatter = [[NSDateFormatter alloc]init];
-    NSDate *date = [NSDate date]; // 获得时间对象 UTC 比北京时间少8个小时
-    [sysTemFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    NSString* systemDateStr = [sysTemFormatter stringFromDate:date];//自动转换就对+回8个小时了？这么强？
-
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSTimeZone * timeZone = [NSTimeZone timeZoneForSecondsFromGMT:8*60*60];
-    [formatter setTimeZone:timeZone];
-    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    NSDate *datenow = [NSDate date];
-    NSString* beijingtimeStr = [formatter stringFromDate:datenow];
-    
-    //https://ads.gamamobi.com/separateServer/{userId}/{gameCode}/{packageName}/{serverCode}/{roleId}/{beijingTime}/{localTime}?loingServerSignature
-    NSString *urlParamer = [NSString stringWithFormat:
-                            @"%@/%@/%@/%@/%@/%@/%@?logingServerSignature=%@&json=%@",
-                            [GamaUserInfoModel shareInfoModel].gamaUID,
-                            GetConfigString(SDK_GAME_CODE),
-                            [GamaFunction getBundleIdentifier],
-                            roleServerId,
-                            roleId,
-                            beijingtimeStr,
-                            systemDateStr,
-                            [GamaUserInfoModel shareInfoModel].accessToken,
-    @{@"gama_role_id":roleId,@"gama_role_name":roleName,@"gama_level":roleLevel,@"gama_vip_level":roleVipLevel,@"gama_server_code":roleServerId,@"gama_server_name":roleServerName,@"userId":[GamaUserInfoModel shareInfoModel].gamaUID}];
-    
-    urlParamer = [urlParamer gamaUrlDecodeString];
-    NSString *urlUtf8Encode = [urlParamer gamaUrlEncodeString];
-    NSString *domainUrl = [NSString stringWithFormat:@"%@separateServer/%@",GetConfigString(GAMA_AD_DOMAIN_NAME),urlUtf8Encode];
-    
-//    NSString *urlEncodeUrl = [domainUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    //分服数据上报
-    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainUrl]]
-                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
-    }];
+     NSDateFormatter *sysTemFormatter = [[NSDateFormatter alloc]init];
+     NSDate *date = [NSDate date]; // 获得时间对象 UTC 比北京时间少8个小时
+     [sysTemFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+     NSString* systemDateStr = [sysTemFormatter stringFromDate:date];//自动转换就对+回8个小时了？这么强？
+     
+     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+     NSTimeZone * timeZone = [NSTimeZone timeZoneForSecondsFromGMT:8*60*60];
+     [formatter setTimeZone:timeZone];
+     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+     NSDate *datenow = [NSDate date];
+     NSString* beijingtimeStr = [formatter stringFromDate:datenow];
+     
+     //https://ads.gamamobi.com/separateServer/{userId}/{gameCode}/{packageName}/{serverCode}/{roleId}/{beijingTime}/{localTime}?loingServerSignature
+     NSString *urlParamer = [NSString stringWithFormat:
+     @"%@/%@/%@/%@/%@/%@/%@?logingServerSignature=%@&json=%@",
+     [GamaUserInfoModel shareInfoModel].gamaUID,
+     GetConfigString(SDK_GAME_CODE),
+     [GamaFunction getBundleIdentifier],
+     roleServerId,
+     roleId,
+     beijingtimeStr,
+     systemDateStr,
+     [GamaUserInfoModel shareInfoModel].accessToken,
+     @{@"gama_role_id":roleId,@"gama_role_name":roleName,@"gama_level":roleLevel,@"gama_vip_level":roleVipLevel,@"gama_server_code":roleServerId,@"gama_server_name":roleServerName,@"userId":[GamaUserInfoModel shareInfoModel].gamaUID}];
+     
+     urlParamer = [urlParamer gamaUrlDecodeString];
+     NSString *urlUtf8Encode = [urlParamer gamaUrlEncodeString];
+     NSString *domainUrl = [NSString stringWithFormat:@"%@separateServer/%@",GetConfigString(GAMA_AD_DOMAIN_NAME),urlUtf8Encode];
+     
+     //    NSString *urlEncodeUrl = [domainUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+     //分服数据上报
+     [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainUrl]]
+     ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
+     }];
      */
-//    [GamaTimer gama_UserRetentionEvent];
-
-}
-
-// 参数检查
-- (BOOL)_isEmpty:(NSString *)parm
-{
-    return parm == nil || [parm isEqualToString:@""];
+    //    [GamaTimer gama_UserRetentionEvent];
+    
 }
 
 /**
  充值
-
+ 
  @param payParms 充值参数
  */
-- (void)pay:(SDK_PAY_TYPE)payType
-  productId:(NSString *)productId
-  cpOrderId:(NSString *)cpOrderId
-      extra:(NSString *)extra
-completionHandler:(PayCompletionHandler) handler
+- (void)payWithRoleId:(NSString *)roleId
+             roleName:(NSString *)roleName
+            roleLevel:(NSString *)roleLevel
+         roleVipLevel:(NSString *)roleVipLevel
+           serverCode:(NSString *)serverCode
+           serverName:(NSString *)serverName
+            productId:(NSString *)productId
+            cpOrderId:(NSString *)cpOrderId
+                extra:(NSString *)extra
+    completionHandler:(PayCompletionHandler) handler
 {
-
+    SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
     // 第三方
-    if (payType == SDK_PAY_TYPE_WEB) {
-        [self _pay_webview];
+//    if (payType == SDK_PAY_TYPE_WEB) {
+//        [self _pay_webview];
+//        return;
+//    }
+    
+    if ([StringUtil isEmpty:productId]) {
+        [AlertUtil showAlertWithMessage:@"productId must be not empty"];
         return;
     }
+    if ([StringUtil isEmpty:roleId]) {
+        [AlertUtil showAlertWithMessage:@"roleId must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty:serverCode]) {
+        [AlertUtil showAlertWithMessage:@"serverCode must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty:cpOrderId]) {
+        [AlertUtil showAlertWithMessage:@"cpOrderId must be not empty"];
+        return;
+    }
+    
+    SDK_DATA.gameUserModel.roleID = roleId;
+    SDK_DATA.gameUserModel.roleName = roleName;
+    SDK_DATA.gameUserModel.roleLevel = roleLevel;
+    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel;
+    SDK_DATA.gameUserModel.serverCode = serverCode;
+    SDK_DATA.gameUserModel.serverName = serverName;
+    
     self.payHandler = handler;
-    [BaseSDKImpl gamaPay:productId cpOrderId:cpOrderId extra:extra];
-
+    
+    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
+    AccountModel *accountModel = sLoginResponse.data;
+    
+    if (!accountModel || !accountModel.userId) {
+        [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
+        return;
+    }
+    
+    [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+        
+    }];
 }
 
 - (void)_pay_webview
 {
-   //NSMutableString *resultURL = [[NSMutableString alloc] init];
-  // [resultURL appendFormat:@"%@web/page/service.app?",GetConfigString(@"platformDomainName")];
-    NSString * resultURL = [[ConfigCoreUtil share] createSdkUrl:@"https://platform.flyfungame.com/"];
-   [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    NSString * resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/"];
+    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
     
 }
 
 - (void)openCs
 {
-//    NSMutableString *resultURL = [[NSMutableString alloc] init];
-//           [resultURL appendFormat:@"%@",@"https://platform.flyfungame.com/api/web/service.do?"];
-//           [resultURL appendFormat:@"gameCode=%@&",GetConfigString(SDK_GAME_CODE)];
-//           [resultURL appendFormat:@"userId=%@&",[SdkUserInfoModel shareInfoModel].userId];
-//           [resultURL appendFormat:@"accessToken=%@&",[SdkUserInfoModel shareInfoModel].accessToken];
-//           [resultURL appendFormat:@"packageName=%@&",[GamaFunction getBundleIdentifier]];
-//           [resultURL appendFormat:@"timestamp=%@&",[SdkUserInfoModel shareInfoModel].timestamp];
-//           [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
-//           [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
-//           [resultURL appendFormat:@"from=%@",@"gamePage"];
-//           NSLog(@"openWebUrl:%@",resultURL);
     SDK_LOG(@"openCs..");
-    NSString *resultURL = [[ConfigCoreUtil share] createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
-           [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    NSString *resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
+    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
 
 - (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
@@ -424,116 +438,116 @@ completionHandler:(PayCompletionHandler) handler
     
     [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
                                                                                         @"role_name":roleName,
-//                                                                                        @"level":roleLevel,
-//                                                                                        @"vip_level":roleVipLevel,
-//                                                                                        @"server_code":serverCode,
-//                                                                                        @"server_name":serverName,
-                                                                                        @"userId":[SdkUserInfoModel shareInfoModel].userId,
-                                                                                        }];
+                                                                                        //                                                                                        @"level":roleLevel,
+                                                                                        //                                                                                        @"vip_level":roleVipLevel,
+                                                                                        //                                                                                        @"server_code":serverCode,
+                                                                                        //                                                                                        @"server_name":serverName,
+                                                                                        @"userId":SDK_DATA.mLoginResponse.data.userId,
+                                                                                      }];
 }
 
 - (void)openWebPage:(NSDictionary *)webParams {
     
-//    NSMutableString *resultURL = [[NSMutableString alloc] init];
-//    [resultURL appendFormat:@"%@/web/page/service.app?",@"https://www.flyfungame.com"];
-//    [resultURL appendFormat:@"gameCode=%@&",GetConfigString(SDK_GAME_CODE)];
-//    [resultURL appendFormat:@"userId=%@&",[SdkUserInfoModel shareInfoModel].userId];
-//    [resultURL appendFormat:@"accessToken=%@&",[SdkUserInfoModel shareInfoModel].accessToken];
-//    [resultURL appendFormat:@"packageName=%@&",[GamaFunction getBundleIdentifier]];
-//    [resultURL appendFormat:@"timestamp=%@&",[SdkUserInfoModel shareInfoModel].timestamp];
-//    [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
-//    [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
-//    [resultURL appendFormat:@"from=%@",@"gamePage"];
-//    NSLog(@"openWebUrl:%@",resultURL);
-//    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    //    NSMutableString *resultURL = [[NSMutableString alloc] init];
+    //    [resultURL appendFormat:@"%@/web/page/service.app?",@"https://www.flyfungame.com"];
+    //    [resultURL appendFormat:@"gameCode=%@&",GetConfigString(SDK_GAME_CODE)];
+    //    [resultURL appendFormat:@"userId=%@&",[SdkUserInfoModel shareInfoModel].userId];
+    //    [resultURL appendFormat:@"accessToken=%@&",[SdkUserInfoModel shareInfoModel].accessToken];
+    //    [resultURL appendFormat:@"packageName=%@&",[GamaFunction getBundleIdentifier]];
+    //    [resultURL appendFormat:@"timestamp=%@&",[SdkUserInfoModel shareInfoModel].timestamp];
+    //    [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
+    //    [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
+    //    [resultURL appendFormat:@"from=%@",@"gamePage"];
+    //    NSLog(@"openWebUrl:%@",resultURL);
+    //    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
     
     /**
-    NSString *webPageUrl = webParams[GAMA_PRM_OPEN_WEB_URL];
-    if ([webPageUrl isEqualToString:GAMA_PRM_WEB_SERVICE]) {    //客服系统；
-        NSMutableString *resultURL = [[NSMutableString alloc] init];
-        [resultURL appendFormat:@"%@/web/page/service.app?",@"https://www.flyfungame.com"];
-        [resultURL appendFormat:@"gameCode=%@&",GetConfigString(SDK_GAME_CODE)];
-        [resultURL appendFormat:@"userId=%@&",[SdkUserInfoModel shareInfoModel].userId];
-        [resultURL appendFormat:@"accessToken=%@&",[SdkUserInfoModel shareInfoModel].accessToken];
-        [resultURL appendFormat:@"packageName=%@&",[GamaFunction getBundleIdentifier]];
-        [resultURL appendFormat:@"timestamp=%@&",[SdkUserInfoModel shareInfoModel].timestamp];
-        [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
-        [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
-        [resultURL appendFormat:@"from=%@",@"gamePage"];
-        NSLog(@"openWebUrl:%@",resultURL);
-        [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
-        return ;
-    }else if([webPageUrl isEqualToString:GAMA_PRM_WEB_NOTICE]) {    //系统公告；
-        
-        NSMutableString *resultURL = [[NSMutableString alloc] init];
-        [resultURL appendFormat:@"%@%@?",GetConfigString(GAMA_PLATFORM_DOMAIN_NAME),GetConfigString(GAMA_LOGIN_UNFIED_SWITCH)];
-        [resultURL appendFormat:@"gameCode=%@",GetConfigString(SDK_GAME_CODE)];
-        [resultURL appendFormat:@"&type=%@",@"notice,fb"];
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]];
-        
-        [GamaURLConnect accessServerWithRequest:request andHandler:^(NSData *resultData, NSString *resultStr, NSError *error) {
-            NSError *errors = nil;
-            NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableLeaves error:&errors];
-            NSLog(@"%@",resultDic);
-            NSString *code = (NSString *)resultDic[@"code"];
-            NSString *noticeUrl = resultDic[@"data"][@"notice"][@"url"];
-            if([code isEqual:@1000] && noticeUrl.length > 1){
-                HelloProtocolViewController *protocol = [[HelloProtocolViewController alloc] init];
-                [protocol openWebPage:noticeUrl];  //打开链接
-            }else{
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"GAMA_NOTICE_CLOSE" object:nil userInfo:nil];
-            }
-        }];
-
-        return;
-    }
-    HelloProtocolViewController *protocol = [[HelloProtocolViewController alloc] init];
-    [protocol openWebPage:webPageUrl];  //打开链接
+     NSString *webPageUrl = webParams[GAMA_PRM_OPEN_WEB_URL];
+     if ([webPageUrl isEqualToString:GAMA_PRM_WEB_SERVICE]) {    //客服系统；
+     NSMutableString *resultURL = [[NSMutableString alloc] init];
+     [resultURL appendFormat:@"%@/web/page/service.app?",@"https://www.flyfungame.com"];
+     [resultURL appendFormat:@"gameCode=%@&",GetConfigString(SDK_GAME_CODE)];
+     [resultURL appendFormat:@"userId=%@&",[SdkUserInfoModel shareInfoModel].userId];
+     [resultURL appendFormat:@"accessToken=%@&",[SdkUserInfoModel shareInfoModel].accessToken];
+     [resultURL appendFormat:@"packageName=%@&",[GamaFunction getBundleIdentifier]];
+     [resultURL appendFormat:@"timestamp=%@&",[SdkUserInfoModel shareInfoModel].timestamp];
+     [resultURL appendFormat:@"serverCode=%@&",[SdkUserInfoModel shareInfoModel].serverCode];
+     [resultURL appendFormat:@"roleId=%@&",[SdkUserInfoModel shareInfoModel].roleID];
+     [resultURL appendFormat:@"from=%@",@"gamePage"];
+     NSLog(@"openWebUrl:%@",resultURL);
+     [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+     return ;
+     }else if([webPageUrl isEqualToString:GAMA_PRM_WEB_NOTICE]) {    //系统公告；
+     
+     NSMutableString *resultURL = [[NSMutableString alloc] init];
+     [resultURL appendFormat:@"%@%@?",GetConfigString(GAMA_PLATFORM_DOMAIN_NAME),GetConfigString(GAMA_LOGIN_UNFIED_SWITCH)];
+     [resultURL appendFormat:@"gameCode=%@",GetConfigString(SDK_GAME_CODE)];
+     [resultURL appendFormat:@"&type=%@",@"notice,fb"];
+     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]];
+     
+     [GamaURLConnect accessServerWithRequest:request andHandler:^(NSData *resultData, NSString *resultStr, NSError *error) {
+     NSError *errors = nil;
+     NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableLeaves error:&errors];
+     NSLog(@"%@",resultDic);
+     NSString *code = (NSString *)resultDic[@"code"];
+     NSString *noticeUrl = resultDic[@"data"][@"notice"][@"url"];
+     if([code isEqual:@1000] && noticeUrl.length > 1){
+     HelloProtocolViewController *protocol = [[HelloProtocolViewController alloc] init];
+     [protocol openWebPage:noticeUrl];  //打开链接
+     }else{
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"GAMA_NOTICE_CLOSE" object:nil userInfo:nil];
+     }
+     }];
+     
+     return;
+     }
+     HelloProtocolViewController *protocol = [[HelloProtocolViewController alloc] init];
+     [protocol openWebPage:webPageUrl];  //打开链接
      */
 }
 
 - (void)share:(NSDictionary *)shareParams
 {
-    NSDictionary *paymentDict = nil;
-    
-    NSString *uid = [SdkUserInfoModel shareInfoModel].userId;
-    NSString *serverCode = [SdkUserInfoModel shareInfoModel].serverCode;
-    NSString *roleId = [SdkUserInfoModel shareInfoModel].roleID;
-    NSMutableString *contentUrl = [NSMutableString stringWithFormat:@"%@",shareParams[GAMA_PRM_SHARE_CONTENT_URL]];
-    NSMutableString *campaign = [[NSMutableString alloc] init];
-    BOOL serverCodeExist = serverCode && ![serverCode isEqualToString:@""];
-    BOOL roleIdExist = roleId && ![roleId isEqualToString:@""];
-    if (serverCodeExist && roleIdExist) {
-        NSString *sValue =[NSString stringWithFormat:@"%@||S||%@||S||%@",uid,serverCode,roleId];
-        [campaign appendFormat:@"campaign=%@",[sValue urlEncode]];
-    }
-    
-    if ([contentUrl rangeOfString:@"?"].location != NSNotFound) {
-        [contentUrl appendFormat:@"&%@",campaign];
-    } else {
-        [contentUrl appendFormat:@"?%@",campaign];
-    }
-    
-    @try {
-        paymentDict = @{
-                        GAMA_PRM_SHARE_CONTENT_URL       : contentUrl,
-                        };
-    }
-    @catch (NSException *exception)
-    {
-        dispatch_async(dispatch_get_main_queue(),^
-                       {
-                           NSString *errorStr = [NSString stringWithFormat:@"!!!ERROR Dit At :\n %@ \n %@", paymentDict, exception.description];
-                           NSLog(@"%@",errorStr);
-                       });
-    }
-    
-//    [NSClassFromString(@"GamaFacebookPort") postFacebookShareDialogWithContentUrl:contentUrl];
-    [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:contentUrl} success:^(NSDictionary * _Nullable result) {
-        
-    } failure:^(NSError * _Nullable error) {
-        
-    }];
+    //    NSDictionary *paymentDict = nil;
+    //
+    //    NSString *uid = [SdkUserInfoModel shareInfoModel].userId;
+    //    NSString *serverCode = [SdkUserInfoModel shareInfoModel].serverCode;
+    //    NSString *roleId = [SdkUserInfoModel shareInfoModel].roleID;
+    //    NSMutableString *contentUrl = [NSMutableString stringWithFormat:@"%@",shareParams[GAMA_PRM_SHARE_CONTENT_URL]];
+    //    NSMutableString *campaign = [[NSMutableString alloc] init];
+    //    BOOL serverCodeExist = serverCode && ![serverCode isEqualToString:@""];
+    //    BOOL roleIdExist = roleId && ![roleId isEqualToString:@""];
+    //    if (serverCodeExist && roleIdExist) {
+    //        NSString *sValue =[NSString stringWithFormat:@"%@||S||%@||S||%@",uid,serverCode,roleId];
+    //        [campaign appendFormat:@"campaign=%@",[sValue urlEncode]];
+    //    }
+    //
+    //    if ([contentUrl rangeOfString:@"?"].location != NSNotFound) {
+    //        [contentUrl appendFormat:@"&%@",campaign];
+    //    } else {
+    //        [contentUrl appendFormat:@"?%@",campaign];
+    //    }
+    //
+    //    @try {
+    //        paymentDict = @{
+    //                        GAMA_PRM_SHARE_CONTENT_URL       : contentUrl,
+    //                        };
+    //    }
+    //    @catch (NSException *exception)
+    //    {
+    //        dispatch_async(dispatch_get_main_queue(),^
+    //                       {
+    //                           NSString *errorStr = [NSString stringWithFormat:@"!!!ERROR Dit At :\n %@ \n %@", paymentDict, exception.description];
+    //                           NSLog(@"%@",errorStr);
+    //                       });
+    //    }
+    //
+    ////    [NSClassFromString(@"GamaFacebookPort") postFacebookShareDialogWithContentUrl:contentUrl];
+    //    [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:contentUrl} success:^(NSDictionary * _Nullable result) {
+    //
+    //    } failure:^(NSError * _Nullable error) {
+    //
+    //    }];
 }
 
 
@@ -542,7 +556,7 @@ completionHandler:(PayCompletionHandler) handler
 
 /**
  内部通知事件监听
-
+ 
  @param note 通知
  */
 - (void)_gamaNoteListener:(NSNotification *)note
@@ -551,21 +565,21 @@ completionHandler:(PayCompletionHandler) handler
     
     if ([noteName isEqualToString:GAMA_NOTIFICATION_SUCCESS_LOGIN]) {
         // 对外界发送登录成功的通知
-//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_LOGIN_SUCCUESS
-//                                                             object:nil
-//                                                           userInfo:note.userInfo];
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_LOGIN_SUCCUESS
+        //                                                             object:nil
+        //                                                           userInfo:note.userInfo];
         
         //增加登入成功时间戳
-//        NSString *loginUid = [[NSUserDefaults standardUserDefaults] objectForKey:@"saveLoginUid"];
-//        if ([loginUid isEqual:note.userInfo[@"userId"]]) {
-//
-//        }else{//首次登入
-//        [GamaTimer setStartTimeStamp];
-//        [GamaTimer shareInstance].loginState = YES;
-//        [GamaBaseSDK _gamaLoginSuccess:note];
-//        }
-//        [[NSUserDefaults standardUserDefaults] setObject:note.userInfo[@"userId"] forKey:@"saveLoginUid"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
+        //        NSString *loginUid = [[NSUserDefaults standardUserDefaults] objectForKey:@"saveLoginUid"];
+        //        if ([loginUid isEqual:note.userInfo[@"userId"]]) {
+        //
+        //        }else{//首次登入
+        //        [GamaTimer setStartTimeStamp];
+        //        [GamaTimer shareInstance].loginState = YES;
+        //        [GamaBaseSDK _gamaLoginSuccess:note];
+        //        }
+        //        [[NSUserDefaults standardUserDefaults] setObject:note.userInfo[@"userId"] forKey:@"saveLoginUid"];
+        //        [[NSUserDefaults standardUserDefaults] synchronize];
         
     }
     else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_SUCCESSFUL]) {
@@ -576,38 +590,33 @@ completionHandler:(PayCompletionHandler) handler
             //  remove productID
             [resultDic removeObjectForKey:@"productID"];
         }
-
-        //  post outside
-//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_SUCCUESS
-//                                                            object:nil
-//                                                          userInfo:resultDic];
-        [BaseSDK _in_app_purchases:note];
+        
         if (self.payHandler) {
             self.payHandler(SDK_PAY_STATUS_SUCCESS, resultDic);
         }
     }
     else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_FAIL]) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_FAIL
-//                                                            object:nil
-//                                                          userInfo:note.userInfo];
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_FAIL
+        //                                                            object:nil
+        //                                                          userInfo:note.userInfo];
         if (self.payHandler) {
             self.payHandler(SDK_PAY_STATUS_FAIL, note.userInfo);
         }
         
     }
     else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_PUCHASING]) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
-//                                                            object:nil
-//                                                          userInfo:note.userInfo];
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
+        //                                                            object:nil
+        //                                                          userInfo:note.userInfo];
         if (self.payHandler) {
-                   self.payHandler(SDK_PAY_STATUS_PUCHESSING, note.userInfo);
-               }
+            self.payHandler(SDK_PAY_STATUS_PUCHESSING, note.userInfo);
+        }
     }
-//    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_PUCHASING]) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
-//                                                            object:nil
-//                                                          userInfo:note.userInfo];
-//    }
+    //    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_PUCHASING]) {
+    //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
+    //                                                            object:nil
+    //                                                          userInfo:note.userInfo];
+    //    }
     else if ([noteName isEqualToString:GAMA_NOTIFICATION_SHARE_RESULT]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_SHARE_RESULT
                                                             object:nil
@@ -620,31 +629,31 @@ completionHandler:(PayCompletionHandler) handler
 - (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas
 {
     if (channel == SDKEventReportAllChannel || channel == 0) {
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:eventParmas];
+        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:eventParmas];
         return ;//保险
     }
     if (channel & SDKEventReportFacebook){
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFacebook eventName:name eventValues:eventParmas];
+        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFacebook eventName:name eventValues:eventParmas];
     }
     if(channel & SDKEventReportFirebase){
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFirebase eventName:name eventValues:eventParmas];
+        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFirebase eventName:name eventValues:eventParmas];
     }
     if(channel & SDKEventReportAppsflyer){
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAppsflyer eventName:name eventValues:eventParmas];
+        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAppsflyer eventName:name eventValues:eventParmas];
     }
     if (channel & SDKEventReportAdjust) {
-//        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAdjust eventName:name eventValues:eventParmas];
+        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAdjust eventName:name eventValues:eventParmas];
     }
 }
 
 - (void)gama_showPlatformToView:(UIView *)view
 {
-
+    
 }
 
 - (void)gama_hiddenPlatform
 {
-   
+    
 }
 
 

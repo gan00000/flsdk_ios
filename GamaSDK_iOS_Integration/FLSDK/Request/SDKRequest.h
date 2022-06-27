@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "HttpServiceEngineLogin.h"
 #import "HttpServiceEngineAd.h"
+#import "HttpServiceEnginePay.h"
 #import "SdkHeader.h"
 #import "LoginResponse.h"
 #import "ConfigResponse.h"
@@ -18,9 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKRequest : NSObject
 
+#pragma mark - sdk配置接口
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                          errorBlock:(BJServiceErrorBlock)errorBlock;
 
+#pragma mark - 登入接口
 +(void)freeLoginOrRegister:(NSString *)thirdId
                             successBlock:(BJServiceSuccessBlock)successBlock
                 errorBlock:(BJServiceErrorBlock)errorBlock;
@@ -76,10 +79,6 @@ NS_ASSUME_NONNULL_BEGIN
                          errorBlock:(BJServiceErrorBlock)errorBlock;
 
 
-+ (void)reportRoleInfo:(NSDictionary *)otherParamsDic
-                                successBlock:(BJServiceSuccessBlock)successBlock
-            errorBlock:(BJServiceErrorBlock)errorBlock;
-
 
 + (void)doAccountBindingWithUserName:(NSString *)userName
   password:(NSString *)password
@@ -100,6 +99,18 @@ thirdPlate:(NSString *)thirdPlate
                         successBlock:(BJServiceSuccessBlock)successBlock
            errorBlock:(BJServiceErrorBlock)errorBlock;
 
+#pragma mark - 充值接口
++ (void)createOrderWithproductId:(NSString *)productId
+            cpOrderId:(NSString *)cpOrderId
+                extra:(NSString *)extra
+             gameInfo:(GameUserModel*)gameUserModel
+         accountModel:(AccountModel*) accountModel
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(PayServiceSuccessBlock)successBlock
+           errorBlock:(PayServiceErrorBlock)errorBlock;
+
+
++(NSString *) createSdkUrl:(NSString *)url;
 @end
 
 NS_ASSUME_NONNULL_END
