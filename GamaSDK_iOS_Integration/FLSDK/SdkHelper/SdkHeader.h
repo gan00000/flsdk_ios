@@ -107,6 +107,9 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define kSwitchAccountActTag    38
 #define kGoGameActTag     39
 
+#define kSureDeleteAccountActTag     40
+#define kCancelDeleteAccountActTag     41
+
 #define fbLoginActTag       2000
 #define googleLoginActTag   2001
 #define guestLoginActTag    2002

@@ -58,6 +58,8 @@
     UIButton *update_change_btn;
     UIButton *swithAccountBtn;
     
+    UIView *deleteAccountConfireView;
+    
     BOOL isAgree;
 }
 
@@ -305,6 +307,74 @@
     };
 }
 
+
+-(UIView *)addDeleteAccountConfireView
+{
+    
+    if (deleteAccountConfireView) {
+        [deleteAccountConfireView removeFromSuperview];
+    }
+    
+    UIView *deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.85];
+    deleteView.layer.cornerRadius = VW(10);
+    
+    [self addSubview:deleteView];
+    
+    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self);
+        make.width.mas_equalTo(VW(272));
+    }];
+    
+    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage:@"nend_update_account_bg"];
+    [deleteView addSubview:deleteWarmIV];
+    [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteView).mas_offset(VH(12));
+        make.centerX.equalTo(self);
+        make.height.width.mas_equalTo(VW(25));
+    }];
+    
+    UILabel *deleteWarmLabel = [UIUtil initLabelWithText:GetString(@"text_delete_account_tips") fontSize:FS(13) textColor:[UIColor whiteColor]];
+    [deleteView addSubview:deleteWarmLabel];
+    deleteWarmLabel.numberOfLines = 0;
+    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteWarmIV.mas_bottom).mas_offset(VH(10));
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(14));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
+    }];
+    
+    UIButton *cancelBtn = [UIUtil initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    cancelBtn.layer.cornerRadius = VW(16);
+    [deleteView addSubview:cancelBtn];
+    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VH(-18));
+        make.height.mas_equalTo(VW(32));
+        make.width.mas_equalTo(VW(108));
+        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
+    }];
+    
+    UIButton *sureBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    sureBtn.layer.cornerRadius = VW(16);
+    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    sureBtn.layer.borderWidth = 1;
+    
+    [deleteView addSubview:sureBtn];
+    [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(cancelBtn);
+        make.bottom.mas_equalTo(cancelBtn);
+        make.width.mas_equalTo(cancelBtn);
+        make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
+    }];
+    
+    deleteAccountConfireView = deleteView;
+    return deleteAccountConfireView;
+    
+}
+
+
 -(void)addDeleteAccountView
 {
     UIView *deleteView = [[UIView alloc] init];
@@ -340,30 +410,8 @@
     
     [deleteView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [LoginHelper deleteAccountAndRequest:self.delegate view:self account:currentAccountModel otherParamsDic:nil successBlock:^{
-            
-            NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
-            if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-                currentAccountModel = mAccountArray[0];
-                
-                [accountDataList removeAllObjects];
-                [accountDataList addObjectsFromArray:mAccountArray];
-                
-                [AccountLoginView makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
-                
-                [self setViewStatue];
-                
-            }else{
-                
-                currentAccountModel = nil;
-                if (self.delegate) {
-                    //数据为空不再返回此页面，返回到主登录页面
-                    [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:CURRENT_PAGE_TYPE_WELCOME_BACK param:nil];
-                }
-                
-            }
-            
-        }];
+        [self addDeleteAccountConfireView];
+       
     }];
 }
 
@@ -441,6 +489,14 @@
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:(CURRENT_PAGE_TYPE_WELCOME_BACK) param:@(0)];
             }
             break;
+        case kSureDeleteAccountActTag:
+            SDK_LOG(@"kSureDeleteAccountActTag");
+            [self doDeleteAccount];
+            break;
+        case kCancelDeleteAccountActTag:
+            SDK_LOG(@"kCancelDeleteAccountActTag");
+            [deleteAccountConfireView removeFromSuperview];
+            break;
         default:
             break;
     }
@@ -478,6 +534,34 @@
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         [LoginHelper lineLoginAndThirdRequest:self.delegate];
     }
+}
+
+
+- (void)doDeleteAccount {
+    [LoginHelper deleteAccountAndRequest:self.delegate view:self account:currentAccountModel otherParamsDic:nil successBlock:^{
+        [deleteAccountConfireView removeFromSuperview];
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+            currentAccountModel = mAccountArray[0];
+            
+            [accountDataList removeAllObjects];
+            [accountDataList addObjectsFromArray:mAccountArray];
+            
+            [AccountLoginView makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: nil];
+            
+            [self setViewStatue];
+            
+        }else{
+            
+            currentAccountModel = nil;
+            if (self.delegate) {
+                //数据为空不再返回此页面，返回到主登录页面
+                [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:CURRENT_PAGE_TYPE_WELCOME_BACK param:nil];
+            }
+            
+        }
+        
+    }];
 }
 
 @end
