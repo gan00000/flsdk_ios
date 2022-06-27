@@ -131,7 +131,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
         result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }
     
-    return YES;
+    return result;
 }
 
 //system version is ios9 and later
@@ -139,7 +139,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 {
     BOOL result = [FBDelegate application:application openURL:url options:options];
     if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:options[@"UIApplicationOpenURLOptionsSourceApplicationKey"] annotation:options[@"UIApplicationOpenURLOptionsAnnotationKey"]];
+        result = [LineDelegate application:application openURL:url options:options];
     }
     return result;
 }
