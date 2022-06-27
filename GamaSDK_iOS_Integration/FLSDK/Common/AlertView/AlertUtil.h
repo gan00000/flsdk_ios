@@ -27,7 +27,7 @@
  *
  *	@return	一个AlertView。
  */
-+(UIAlertView *)showAlertWithMessage:(NSString *)message;
++(void)showAlertWithMessage:(NSString *)message;
 
 
 /**
@@ -54,10 +54,10 @@
  *
  *  @return 一个AlertView
  */
-+ (UIAlertView *)showAlertViewWithTitle:(NSString *)title
-                                message:(NSString *)message
-                             completion:(SAlertViewHandler)handler
-                           buttonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+//+ (UIAlertView *)showAlertViewWithTitle:(NSString *)title
+//                                message:(NSString *)message
+//                             completion:(SAlertViewHandler)handler
+//                           buttonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 
 + (void)showActionSheetWithTitle:(NSString *)title

@@ -18,12 +18,11 @@ static NSArray<UIViewController *> *presentViewControllers;
 
 #pragma mark - Alert
 //简单显示Alert的方法
-+(UIAlertView *)showAlertWithMessage:(NSString *)message
++(void)showAlertWithMessage:(NSString *)message
 {
-    
     NSString *tmp = @"確定";
     
-    return [self showAlertWithMessage:message
+    [self showAlertWithMessage:message
                            completion:nil
                       andButtonTitles:tmp, nil];
 }
@@ -85,28 +84,31 @@ static NSArray<UIViewController *> *presentViewControllers;
 {
     if ([SUtil getSystemVersion].intValue >= 8)//yao: 用alertController方法
     {
-        
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
-                                                                                 message:message
-                                                                          preferredStyle:UIAlertControllerStyleAlert];
-        
-        NSInteger index = 0;
-        //yao: 添加各種按鈕actions
-        for (NSString *str in buttonTitles)
-        {
-            UIAlertAction *action = [UIAlertAction actionWithTitle:str
-                                                             style:UIAlertActionStyleDefault
-                                                           handler:^(UIAlertAction *action)
-                                     {
-                                         if (handler) handler(index);
-                                     }];
+        dispatch_async(dispatch_get_main_queue(), ^{
             
-            index++;
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
+                                                                                     message:message
+                                                                              preferredStyle:UIAlertControllerStyleAlert];
             
-            [alertController addAction:action];
-        }
+            NSInteger index = 0;
+            //yao: 添加各種按鈕actions
+            for (NSString *str in buttonTitles)
+            {
+                UIAlertAction *action = [UIAlertAction actionWithTitle:str
+                                                                 style:UIAlertActionStyleDefault
+                                                               handler:^(UIAlertAction *action)
+                                         {
+                                             if (handler) handler(index);
+                                         }];
+                
+                index++;
+                
+                [alertController addAction:action];
+            }
 
-        [alertController show];
+            [alertController show];
+        });
+        
         return nil;
     }
     else//yao: 用alertView方法

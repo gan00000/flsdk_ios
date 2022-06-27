@@ -165,16 +165,19 @@
 
 //请求失败
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{
-    NSLog(@"------------------错误-----------------:%@", error);
-    if (self.statusBlcok) {
-        self.statusBlcok(NO);
-    }
-    [AlertUtil showAlertWithMessage:(@"从Apple获取商品信息失败")];
+    NSLog(@"------------------错误didFailWithError-----------------:%@", error);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (self.statusBlcok) {
+            self.statusBlcok(NO);
+        }
+        [AlertUtil showAlertWithMessage:(@"从Apple获取商品信息失败")];
 
+    });
 }
 
 - (void)requestDidFinish:(SKRequest *)request{
-    NSLog(@"------------反馈信息结束-----------------%@",request);
+    NSLog(@"------------反馈信息结束requestDidFinish-----------------%@",request);
 }
 
 #pragma mark -- 监听AppStore支付状态
