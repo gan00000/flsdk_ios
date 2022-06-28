@@ -17,6 +17,7 @@
 
 @property (nonatomic, copy) NSString *orderId;
 //@property (nonatomic, copy) NSString *roleId;
+@property (nonatomic)PayStatusBlock payStatusBlock;
 
 @end
 
@@ -95,6 +96,7 @@
 
 -(void)startPayWithProductId:(NSString *)productId cpOrderId:(NSString *)cpOrderId extra:(NSString *)extra gameInfo:(GameUserModel*)gameUserModel accountModel:(AccountModel*) accountModel payStatusBlock:(PayStatusBlock)payStatusBlock
 {
+    self.payStatusBlock = payStatusBlock;
     [self checkOrderStatus];//检查本地订单状态
     
     self.orderId = @"";
@@ -279,7 +281,10 @@
     //未完成的情况下transactionId相同  receiptData每次会变
     NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
     NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
-    NSString *receiptString = [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+//    NSString *receiptString = [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+    
+    NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
+    
     [self saveReceiptData:receiptString transactionId:transactionId orderId:self.orderId];
     
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
@@ -309,12 +314,20 @@
     
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
+        PayData *mPayData = [[PayData alloc] init];
+        if (self.payStatusBlock) {
+            self.payStatusBlock(status,nil);
+        }
     }else{
         SDK_LOG(@"finishPayWithStatus fail");
         if ([StringUtil isNotEmpty:msg]) {
             [AlertUtil showAlertWithMessage:msg];
         }
+        if (self.payStatusBlock) {
+            self.payStatusBlock(status,nil);
+        }
     }
+   
     
 }
 
@@ -322,6 +335,7 @@
 - (void)completeTransaction:(SKPaymentTransaction *)transaction
 {
     [SdkUtil stopLoadingAtView:nil];
+    //需要完成才能下次购买
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
@@ -369,7 +383,7 @@ static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
         NSDictionary *subDic = localPayDataDic[transactionId];
         if (subDic) {
             NSMutableDictionary *payDatas = [[NSMutableDictionary alloc] initWithDictionary: localPayDataDic];
-            [payDatas removeObjectForKey:payDatas];
+            [payDatas removeObjectForKey:transactionId];
             
             [[NSUserDefaults standardUserDefaults] setValue:payDatas forKey:kSaveReceiptData];
             [[NSUserDefaults standardUserDefaults]synchronize];

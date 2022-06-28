@@ -501,7 +501,7 @@
     }
     
     
-    if (loginResopnse.code == 1001) {//注册
+    if (loginResopnse.code == BJResponseCode_OK_Register) {//注册
         [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":rData.userId}];
         
     }else {//登录

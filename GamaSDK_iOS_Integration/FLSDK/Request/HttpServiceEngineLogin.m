@@ -93,8 +93,14 @@
     NSMutableDictionary *allParams = [NSMutableDictionary dictionary];
     if (params) {
         [allParams addEntriesFromDictionary:params];
+        NSString *aUrl = @"";
+        for (NSString *key in params) {
+            NSString *value = params[key];
+            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+        }
+        SDK_LOG(@"%@?%@",path,aUrl);
     }
-    SDK_LOG(@"post: path = %@,params = %@", path, params);
+//    SDK_LOG(@"post: path = %@,params = %@", path, params);
     [SdkUtil showLoadingAtView:nil];
     [[HttpServiceEngineLogin sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
