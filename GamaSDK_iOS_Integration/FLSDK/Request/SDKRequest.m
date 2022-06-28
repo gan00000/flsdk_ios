@@ -127,7 +127,7 @@
     }else{
         requestUrlPath = api_login_third;
     }
-    [HttpServiceEngineLogin getRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 #pragma mark - 登录
@@ -170,7 +170,7 @@
     } @catch (NSException *exception) {
         
     }
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_login_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_login_account params:params successBlock:successBlock errorBlock:errorBlock];
 }
 
 #pragma mark - 获取验证码
@@ -213,7 +213,7 @@
     };
     
     [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_get_vfCode params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_get_vfCode params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -296,7 +296,7 @@
     }
     
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_login_register params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_login_register params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -347,7 +347,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_change_pwd params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_change_pwd params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -405,7 +405,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_forgot_pwd params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_forgot_pwd params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -471,7 +471,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -526,7 +526,7 @@
         
     }
     
-    [HttpServiceEngineLogin getRequestWithFunctionPath:api_delete_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_delete_account params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -596,7 +596,7 @@
         NSLog(@"exception:%@",exception.description);
     }
     
-    [HttpServiceEnginePay getRequestWithFunctionPath:api_order_create params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEnginePay postRequestWithFunctionPath:api_order_create params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 
@@ -668,7 +668,7 @@
         NSLog(@"exception:%@",exception.description);
     }
     
-    [HttpServiceEnginePay getRequestWithFunctionPath:api_payment params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEnginePay postRequestWithFunctionPath:api_payment params:params successBlock:successBlock errorBlock:errorBlock];
     
 }
 

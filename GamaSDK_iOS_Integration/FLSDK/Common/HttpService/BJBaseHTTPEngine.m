@@ -63,7 +63,7 @@
     @try {
         
         
-        [self.sessionManager POST:path parameters:params headers:@{@"Content-Type" : @"application/x-www-form-urlencoded"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [self.sessionManager POST:path parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
