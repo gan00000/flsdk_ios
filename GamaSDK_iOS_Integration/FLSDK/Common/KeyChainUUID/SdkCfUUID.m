@@ -1,12 +1,12 @@
-#import "GamaCfUUID.h"
+#import "SdkCfUUID.h"
 #import "ConfigHeader.h"
-#import "GamaKeychainItemWrapper.h"
+#import "SdkKeychainItemWrapper.h"
 
-#import "GamaPrivateKeychainCfUUID.h"
+#import "SdkPrivateKeychainCfUUID.h"
 
-@implementation GamaCfUUID
+@implementation SdkCfUUID
 
-+ (NSString*) getGamaCfUUID
++ (NSString*) getCustomCfUUID
 {
     //判断配置文件是否要用共有keychain
 //    if ([GetConfigString(GAMA_GAME_IS_KEYCHAIN_PUBLIC) isEqualToString:@"YES"])
@@ -14,7 +14,7 @@
 //        return [self getGamaCfUUIDFromPublicKeychain];
 //    }
     
-    return [GamaPrivateKeychainCfUUID GamaUID];
+    return [SdkPrivateKeychainCfUUID customUUID];
 }
 
 + (NSString *)bundleSeedID
@@ -46,9 +46,9 @@
     NSString * result = nil;
     NSString * savedgetGamaCfUUID = nil;
     //获取itemWrapper
-    GamaKeychainItemWrapper *wrapper =
-    [[GamaKeychainItemWrapper alloc] initWithIdentifier:SDK_KEY_CHAIN_KEY
-                                           accessGroup:[NSString stringWithFormat:@"%@.com.gamamobiKeyChainGroup", [GamaCfUUID bundleSeedID]]];
+    SdkKeychainItemWrapper *wrapper =
+    [[SdkKeychainItemWrapper alloc] initWithIdentifier:SDK_KEY_CHAIN_KEY
+                                           accessGroup:[NSString stringWithFormat:@"%@.com.mwKeyChainGroup", [SdkCfUUID bundleSeedID]]];
     //通过wrapper获取纪录再keychain中的cfUUID
     savedgetGamaCfUUID = [wrapper objectForKey:(id)kSecValueData];
     //如果获取值不是空

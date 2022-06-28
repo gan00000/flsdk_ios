@@ -7,7 +7,6 @@
 //
 
 #import "GamaThirdSocial.h"
-#import "HelloHeader.h"
 #import "GamaSDK+Social.h"
 
 @interface GamaThirdSocial() <UIDocumentInteractionControllerDelegate>

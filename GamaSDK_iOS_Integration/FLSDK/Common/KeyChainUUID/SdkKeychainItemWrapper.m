@@ -47,9 +47,8 @@
   
 */ 
 
-#import "GamaKeychainItemWrapper.h"
+#import "SdkKeychainItemWrapper.h"
 #import <Security/Security.h>
-#import "AlertUtil.h"
 
 /*
 
@@ -74,7 +73,7 @@ See the header file Security/SecItem.h for more details.
 
 */
 
-@interface GamaKeychainItemWrapper (PrivateMethods)
+@interface SdkKeychainItemWrapper (PrivateMethods)
 /*
 The decision behind the following two methods (secItemFormatToDictionary and dictionaryToSecItemFormat) was
 to encapsulate the transition between what the detail view controller was expecting (NSString *) and what the
@@ -88,7 +87,7 @@ Keychain API expects as a validly constructed container class.
 
 @end
 
-@implementation GamaKeychainItemWrapper
+@implementation SdkKeychainItemWrapper
 
 @synthesize keychainItemData, genericPasswordQuery;
 

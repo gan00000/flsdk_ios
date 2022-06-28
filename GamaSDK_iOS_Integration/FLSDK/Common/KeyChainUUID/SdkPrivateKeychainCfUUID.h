@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GamaPrivateKeychainCfUUID : NSObject
+@interface SdkPrivateKeychainCfUUID : NSObject
 
 /**
  *	@brief	获取私有keychain中的cfUUID
@@ -14,7 +14,7 @@
  *
  *	@return	字符串，cfuuid 样例：“34B6AFC6-42B3-4ABC-A555-E0625EADA903”
  */
-+(NSString*) GamaUID;
++(NSString*) customUUID;
 
 
 @end

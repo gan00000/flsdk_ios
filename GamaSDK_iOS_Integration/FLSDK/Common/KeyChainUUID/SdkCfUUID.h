@@ -2,7 +2,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GamaCfUUID : NSObject
+@interface SdkCfUUID : NSObject
 
 /**
  *	@brief	获取Gama保存的cfuuid
@@ -11,7 +11,7 @@
  *
  *	@return	cfuuid字符串，样例：“34B6AFC6-42B3-4ABC-A555-E0625EADA903”
  */
-+ (NSString *)getGamaCfUUID;
++ (NSString *)getCustomCfUUID;
 
 + (NSString *)bundleSeedID;
 @end

@@ -10,8 +10,6 @@
 #import "Social_ViewController.h"
 #import "GamaWebViewController.h"
 
-#import <AdSupport/AdSupport.h>
-
 #import "AlertUtil.h"
 
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
@@ -48,23 +46,16 @@
     return verificationID;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    NSString *idfaStr = nil;
-    if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
-        idfaStr = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    } else {
-        idfaStr = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    }
-
+    
     // iOS 获取设备当前语言的代码
     NSString *preferredLanguage = [[[NSBundle mainBundle] preferredLocalizations] firstObject];
     // iOS 获取设备当前地区的代码
     NSString *localeIdentifier = [[NSLocale currentLocale] objectForKey:NSLocaleIdentifier];
-    
-    NSLog(@"idfa = %@",idfaStr);
     
     _tData = [[NSMutableData alloc] init];
     
@@ -144,6 +135,7 @@
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
             }];
+            
 
         }
             break;

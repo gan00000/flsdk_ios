@@ -2,7 +2,6 @@
 
 #import "BaseSDK.h"
 #import "BaseSDKImpl.h"
-#import "HelloHeader.h"
 #import "GamaAdInterface.h"
 #import "GamaSDK+Social.h"
 #import "GamaWebViewController.h"
@@ -18,7 +17,7 @@
 #import "FBDelegate.h"
 #import "LineDelegate.h"
 #import "MWApplePayManager.h"
-
+#import "AdUtil.h"
 
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";
@@ -119,6 +118,8 @@
     [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
         
     }];
+    
+//    [AdUtil ];
 }
 
 

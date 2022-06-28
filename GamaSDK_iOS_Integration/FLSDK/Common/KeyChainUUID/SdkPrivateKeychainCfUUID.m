@@ -1,15 +1,15 @@
 //
 
-#import "GamaPrivateKeychainCfUUID.h"
+#import "SdkPrivateKeychainCfUUID.h"
 #import "ConfigHeader.h"
 
 
-@implementation GamaPrivateKeychainCfUUID
+@implementation SdkPrivateKeychainCfUUID
 
-+ (NSString*) GamaUID
++ (NSString*) customUUID
 {
     NSString *result = nil;
-    result=[GamaPrivateKeychainCfUUID getCfUUID];
+    result=[SdkPrivateKeychainCfUUID getCfUUID];
     
     if (result==nil)
     {

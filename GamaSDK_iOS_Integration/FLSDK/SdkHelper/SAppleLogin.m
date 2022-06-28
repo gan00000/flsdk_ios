@@ -9,7 +9,6 @@
 #import "SAppleLogin.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "SUtil.h"
-#import "HelloHeader.h"
 #import "AlertUtil.h"
 
 @interface SAppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>

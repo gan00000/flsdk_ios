@@ -100,7 +100,7 @@
         }
         SDK_LOG(@"%@?%@",path,aUrl);
     }
-//    SDK_LOG(@"post: path = %@,params = %@", path, params);
+    SDK_LOG(@"post: path = %@,params = %@", path, params);
     [SdkUtil showLoadingAtView:nil];
     [[HttpServiceEngineLogin sharedInstance].httpEngine postRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
         

@@ -1,7 +1,6 @@
 //
 //  ConfigHeader.h
 //
-#import "GamaSecurity.h"
 #import "SUtil.h"
 #import "AlertUtil.h"
 #import "GamaCoreConfReader.h"

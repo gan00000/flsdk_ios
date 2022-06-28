@@ -32,6 +32,11 @@
 		0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
 		0320292F2869B84A00E8D5A5 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320292D2869B84A00E8D5A5 /* LineSDK.framework */; };
 		032029302869B84A00E8D5A5 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */; };
+		03202934286B017600E8D5A5 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03202933286B017600E8D5A5 /* AppsFlyerLib.framework */; };
+		03202939286B02D900E8D5A5 /* AFDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AFDelegate.m */; };
+		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
+		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
+		03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320293F286B17CF00E8D5A5 /* AdUtil.m */; };
 		032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* GamaSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
 		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -41,9 +46,9 @@
 		032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
 		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
 		032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C2285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C3285A006600F1FD3B /* GamaCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* GamaCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		032AB8C2285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
 		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -262,6 +267,13 @@
 		0320292A28698F1800E8D5A5 /* CreateOrderResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateOrderResp.m; sourceTree = "<group>"; };
 		0320292D2869B84A00E8D5A5 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
+		03202933286B017600E8D5A5 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		03202937286B02D900E8D5A5 /* AFDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDelegate.h; sourceTree = "<group>"; };
+		03202938286B02D900E8D5A5 /* AFDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDelegate.m; sourceTree = "<group>"; };
+		0320293A286B08E000E8D5A5 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		0320293E286B17CF00E8D5A5 /* AdUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdUtil.h; sourceTree = "<group>"; };
+		0320293F286B17CF00E8D5A5 /* AdUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdUtil.m; sourceTree = "<group>"; };
 		032AB891285A006600F1FD3B /* GamaSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurityFunction.m; sourceTree = "<group>"; };
 		032AB892285A006600F1FD3B /* GamaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurity.m; sourceTree = "<group>"; };
 		032AB893285A006600F1FD3B /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
@@ -280,14 +292,14 @@
 		032AB8A5285A006600F1FD3B /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
 		032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
 		032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		032AB8AA285A006600F1FD3B /* GamaCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCfUUID.h; sourceTree = "<group>"; };
-		032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaPrivateKeychainCfUUID.m; sourceTree = "<group>"; };
+		032AB8AA285A006600F1FD3B /* SdkCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkCfUUID.h; sourceTree = "<group>"; };
+		032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkPrivateKeychainCfUUID.m; sourceTree = "<group>"; };
 		032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
-		032AB8AD285A006600F1FD3B /* GamaKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaKeychainItemWrapper.h; sourceTree = "<group>"; };
+		032AB8AD285A006600F1FD3B /* SdkKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkKeychainItemWrapper.h; sourceTree = "<group>"; };
 		032AB8AE285A006600F1FD3B /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		032AB8AF285A006600F1FD3B /* GamaPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
-		032AB8B0285A006600F1FD3B /* GamaCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCfUUID.m; sourceTree = "<group>"; };
-		032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaKeychainItemWrapper.m; sourceTree = "<group>"; };
+		032AB8AF285A006600F1FD3B /* SdkPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
+		032AB8B0285A006600F1FD3B /* SdkCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkCfUUID.m; sourceTree = "<group>"; };
+		032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkKeychainItemWrapper.m; sourceTree = "<group>"; };
 		032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GamaBundleImage.m"; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
@@ -566,7 +578,6 @@
 		E974126B20874A170018E1A6 /* FLSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSDK.m; sourceTree = "<group>"; };
 		E974126C20874A170018E1A6 /* SdkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkUtil.h; sourceTree = "<group>"; };
 		E974126D20874A170018E1A6 /* SdkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkUtil.m; sourceTree = "<group>"; };
-		E974126E20874A170018E1A6 /* HelloHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloHeader.h; sourceTree = "<group>"; };
 		E974127E20874A170018E1A6 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		E974127F20874A170018E1A6 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		E98E851F23825AB700257BDE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -592,6 +603,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */,
+				0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */,
 				035FA55C28644456000B2335 /* FBSDKCoreKit.xcframework in Frameworks */,
 				03E076862862C90600B81B65 /* libFLSDK.a in Frameworks */,
 				32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */,
@@ -599,6 +612,7 @@
 				E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */,
 				E9F4D965244EFFD900937AD5 /* Foundation.framework in Frameworks */,
 				035FA53C286442A7000B2335 /* FirebaseAnalytics.xcframework in Frameworks */,
+				03202934286B017600E8D5A5 /* AppsFlyerLib.framework in Frameworks */,
 				E90C27C02445A421004DF16E /* libc++.tbd in Frameworks */,
 				E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */,
 				035FA542286442A7000B2335 /* GoogleDataTransport.xcframework in Frameworks */,
@@ -698,27 +712,46 @@
 			path = LineSDK;
 			sourceTree = "<group>";
 		};
-		032AB889285A006600F1FD3B /* CoreUtil */ = {
+		03202932286B017600E8D5A5 /* AF */ = {
+			isa = PBXGroup;
+			children = (
+				03202933286B017600E8D5A5 /* AppsFlyerLib.framework */,
+			);
+			path = AF;
+			sourceTree = "<group>";
+		};
+		03202936286B02AD00E8D5A5 /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				03202937286B02D900E8D5A5 /* AFDelegate.h */,
+				03202938286B02D900E8D5A5 /* AFDelegate.m */,
+				0320293E286B17CF00E8D5A5 /* AdUtil.h */,
+				0320293F286B17CF00E8D5A5 /* AdUtil.m */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		032AB889285A006600F1FD3B /* Res */ = {
 			isa = PBXGroup;
 			children = (
 				032AB899285A006600F1FD3B /* ConfigHeader.h */,
+				032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */,
+				032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */,
 				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
 				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
-				032AB890285A006600F1FD3B /* GamaCoreSecurity */,
-				032AB8A7285A006600F1FD3B /* GamaFunctionAppendant */,
 			);
-			path = CoreUtil;
+			path = Res;
 			sourceTree = "<group>";
 		};
-		032AB890285A006600F1FD3B /* GamaCoreSecurity */ = {
+		032AB890285A006600F1FD3B /* CoreSecurity */ = {
 			isa = PBXGroup;
 			children = (
-				032AB891285A006600F1FD3B /* GamaSecurityFunction.m */,
+				032AB894285A006600F1FD3B /* GamaSecurity.h */,
 				032AB892285A006600F1FD3B /* GamaSecurity.m */,
 				032AB893285A006600F1FD3B /* GamaSecurityFunction.h */,
-				032AB894285A006600F1FD3B /* GamaSecurity.h */,
+				032AB891285A006600F1FD3B /* GamaSecurityFunction.m */,
 			);
-			path = GamaCoreSecurity;
+			path = CoreSecurity;
 			sourceTree = "<group>";
 		};
 		032AB89F285A006600F1FD3B /* AlertView */ = {
@@ -734,19 +767,17 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
-		032AB8A7285A006600F1FD3B /* GamaFunctionAppendant */ = {
+		032AB8A7285A006600F1FD3B /* KeyChainUUID */ = {
 			isa = PBXGroup;
 			children = (
-				032AB8AA285A006600F1FD3B /* GamaCfUUID.h */,
-				032AB8B0285A006600F1FD3B /* GamaCfUUID.m */,
-				032AB8AD285A006600F1FD3B /* GamaKeychainItemWrapper.h */,
-				032AB8B2285A006600F1FD3B /* GamaKeychainItemWrapper.m */,
-				032AB8AF285A006600F1FD3B /* GamaPrivateKeychainCfUUID.h */,
-				032AB8AB285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m */,
-				032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */,
-				032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */,
+				032AB8AA285A006600F1FD3B /* SdkCfUUID.h */,
+				032AB8B0285A006600F1FD3B /* SdkCfUUID.m */,
+				032AB8AD285A006600F1FD3B /* SdkKeychainItemWrapper.h */,
+				032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */,
+				032AB8AF285A006600F1FD3B /* SdkPrivateKeychainCfUUID.h */,
+				032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */,
 			);
-			path = GamaFunctionAppendant;
+			path = KeyChainUUID;
 			sourceTree = "<group>";
 		};
 		034558BC285B0AEA0025EFB2 /* FB */ = {
@@ -951,6 +982,8 @@
 		220B859D1E572CD000505690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */,
+				0320293A286B08E000E8D5A5 /* AdServices.framework */,
 				E940F2432477D14700C9A6DC /* CoreText.framework */,
 				E940F2412477D13400C9A6DC /* CoreFoundation.framework */,
 				E9F4D964244EFFD900937AD5 /* Foundation.framework */,
@@ -974,6 +1007,7 @@
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03202936286B02AD00E8D5A5 /* AD */,
 				03202925286962CB00E8D5A5 /* DataMode */,
 				032028F128694B7D00E8D5A5 /* SDKIAP */,
 				03E076652861E71800B81B65 /* Line */,
@@ -1005,6 +1039,7 @@
 		322CBBA224C589A5000D6B20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				032AB8A7285A006600F1FD3B /* KeyChainUUID */,
 				032AB89F285A006600F1FD3B /* AlertView */,
 				03F59A48285776460062B6EE /* GCategory */,
 				322CBBBA24C589A5000D6B20 /* CComHeader.h */,
@@ -1091,6 +1126,8 @@
 		322CBC0B24C589A5000D6B20 /* SdkHelper */ = {
 			isa = PBXGroup;
 			children = (
+				032AB889285A006600F1FD3B /* Res */,
+				032AB890285A006600F1FD3B /* CoreSecurity */,
 				00087B6821AA5D1300236DEA /* GamaSDK+Social.h */,
 				00087B6921AA5D1300236DEA /* GamaSDK+Social.m */,
 				003CE8C321B69E1900A6A3C8 /* GamaThirdSocial.h */,
@@ -1101,11 +1138,9 @@
 				E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */,
 				E99EB28521BE4E9E004FF8B5 /* GamaWebViewController.h */,
 				E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */,
-				E974126E20874A170018E1A6 /* HelloHeader.h */,
 				E974126C20874A170018E1A6 /* SdkUtil.h */,
 				E974126D20874A170018E1A6 /* SdkUtil.m */,
 				03650196285C768300578028 /* SdkHeader.h */,
-				032AB889285A006600F1FD3B /* CoreUtil */,
 				322CBC0C24C589A5000D6B20 /* ConfigCoreUtil.h */,
 				322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */,
 				0389B3172861B7B30024E62E /* LoginHelper.h */,
@@ -1192,6 +1227,7 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
+				03202932286B017600E8D5A5 /* AF */,
 				0320292C2869B84A00E8D5A5 /* LineSDK */,
 				035FA55528644455000B2335 /* Facebook */,
 				035FA51D286442A7000B2335 /* Firebase */,
@@ -1544,7 +1580,7 @@
 				3295E2EB24DAEDDE00B85976 /* UIUtil.m in Sources */,
 				03EA36082850986F00723340 /* BindAccountView.m in Sources */,
 				03650195285C761600578028 /* SDKBaseView.m in Sources */,
-				032AB8C5285A006600F1FD3B /* GamaKeychainItemWrapper.m in Sources */,
+				032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */,
 				03B9192B2860AECB0029AE6A /* MASLayoutConstraint.m in Sources */,
 				03B919342860AECB0029AE6A /* UIImageView+HighlightedWebCache.m in Sources */,
 				0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */,
@@ -1572,10 +1608,11 @@
 				03B919392860AECB0029AE6A /* SDWebImagePrefetcher.m in Sources */,
 				3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */,
 				3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */,
-				032AB8C2285A006600F1FD3B /* GamaPrivateKeychainCfUUID.m in Sources */,
+				032AB8C2285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m in Sources */,
 				3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */,
 				3295E2FB24DAEDDE00B85976 /* AccountLoginView.m in Sources */,
 				03B9192F2860AECB0029AE6A /* MASViewConstraint.m in Sources */,
+				03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */,
 				3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */,
 				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
@@ -1592,12 +1629,13 @@
 				03202921286958FB00E8D5A5 /* ApplePay.m in Sources */,
 				3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */,
 				3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */,
+				03202939286B02D900E8D5A5 /* AFDelegate.m in Sources */,
 				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
 				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
 				E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */,
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
-				032AB8C3285A006600F1FD3B /* GamaCfUUID.m in Sources */,
+				032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */,
 				03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */,
 				03B9193F2860AECB0029AE6A /* UIButton+WebCache.m in Sources */,
 				3218406424CB20C7004553C0 /* LoginData.m in Sources */,
@@ -1679,6 +1717,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -1715,6 +1754,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -1866,6 +1906,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
 				);
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "";
@@ -1931,6 +1972,7 @@
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
 				);
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "";

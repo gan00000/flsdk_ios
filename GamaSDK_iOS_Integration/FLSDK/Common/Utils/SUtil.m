@@ -5,7 +5,7 @@
 #import "netdb.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import <AdSupport/AdSupport.h>//idfa用的类库
-#import "GamaCfUUID.h"//获取keychain中uuid用的自己的类
+#import "SdkCfUUID.h"//获取keychain中uuid用的自己的类
 #import "NSString+URLEncoding.h"
 
 #import <sys/socket.h>
@@ -19,13 +19,13 @@
 + (NSString *)getGamaUUID
 {
 //    ([[GamaFunction getSystemVersion] intValue]) >= 7 ? [GamaFunction getGamaUUID] : [GamaFunction getMacaddress];
-    NSString * gamaUUid = [[GamaCfUUID getGamaCfUUID] lowercaseString];
+    NSString * gamaUUid = [[SdkCfUUID getCustomCfUUID] lowercaseString];
     return gamaUUid;
 }
 
 + (NSString *)bundleSeedID
 {
-    NSString * gamaBundleSeedId=[GamaCfUUID bundleSeedID];
+    NSString * gamaBundleSeedId=[SdkCfUUID bundleSeedID];
     return gamaBundleSeedId;
 }
 
@@ -217,8 +217,8 @@
         currentScreenSize = [self rectFromWinSize_Portrait];
     }
     //判断全打印
-    NSString * systemlog=[NSString stringWithFormat:@" screen_frame:w%f_h%f",
-                          currentScreenSize.size.width,currentScreenSize.size.height];
+//    NSString * systemlog=[NSString stringWithFormat:@" screen_frame:w%f_h%f",
+//                          currentScreenSize.size.width,currentScreenSize.size.height];
 //    Gama_FUNCTION_LOG(systemlog)
     return currentScreenSize;
 }

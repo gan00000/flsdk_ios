@@ -5,7 +5,7 @@
 //  Created by dongbin on 2018/11/25.
 //  Copyright © 2018年 starpy. All rights reserved.
 //
-
+#import "SdkHeader.h"
 #import "FLSDK.h"
 
 extern NSString *const GAMA_PRM_SOCIAL_SHARE_LINK;

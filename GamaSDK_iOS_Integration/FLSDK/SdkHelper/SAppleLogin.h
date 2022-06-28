@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>>
+#import <UIKit/UIKit.h>
+#import "SdkHeader.h"
+
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^AppleLoginSuccess )(NSDictionary *__nullable result);
 typedef void (^AppleLoginError)(NSError *__nullable error);

@@ -7,20 +7,22 @@
 //
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
+#import "CComHeader.h" //最基本
+
 #import "UIImage+GamaBundleImage.h"
 #import "UIColor+HexStringToColorTW.h"
 #import "UIUtil.h"
 #import "CCSDKDATA.h"
 #import "ConfigCoreUtil.h"
 #import "LoginResponse.h"
-#import "CComHeader.h" //最基本
+
 #import "SUtil.h"  //功能相关
 #import "ConfigHeader.h" //功能相关
 #import "GamaCommonHeader.h" //功能相关
 #import "GamaAdInterface.h"
-#import "SdkUtil.h"
 #import "StringUtil.h"
 #import "DimeUtil.h"
+#import "SdkUtil.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -46,9 +48,6 @@
 
 #define SDK_DATA                           [CCSDKDATA sharedSdkData]
 
-#define LABEL_FONT_NAME_BOLD                 @"Helvetica-Bold"
-#define LABEL_FONT_NAME_Helvetica           @"Helvetica"
-
 #define GetImage(imageName)     [UIImage gama_imageNamed:imageName]
 
 #define appTopViewController    [SUtil getCurrentViewController]
@@ -56,14 +55,12 @@
 // ------ 是否是 iPhoneX
 #define device_is_iPhoneX   [SUtil isIPhoneXSeries]
 
-#define Guest_Login_Tipe_OK  @"Guest_Login_Tipe_OK" //游客登录成功通知
-#define SDK_AUTO_LOGIN_FAIL @"SDK_AUTO_LOGIN_FAIL"  //自动登录失败通知
-
+#pragma mark - 页面字体尺寸适配
 #define VH(h)  [[DimeUtil share] getViewHeight:h]
 #define VW(w)  [[DimeUtil share] getViewWidth:w]
 #define FS(size)  [[DimeUtil share] getFontSize:size]
 
-
+#pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 {
     CURRENT_PAGE_TYPE_REG_ACCOUNT,
@@ -85,7 +82,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 //    
 //};
 
-//页面按钮button点击tag
+#pragma mark - 页面按钮button点击tag
 #define kCheckBoxBtnTag     20
 #define kAccountLoginActTag     21
 #define kChangePwdActTag     22
@@ -117,7 +114,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
 
-// login type
+#pragma mark - login type登录方式
+
 #define LOGIN_TYPE_SELF           (@"mg")
 #define LOGIN_TYPE_GUEST            (@"visitor")
 #define LOGIN_TYPE_FB             (@"fb")
@@ -126,10 +124,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define LOGIN_TYPE_APPLE          (@"apple")
 #define LOGIN_TYPE_LINE          (@"line")
 
-//请求域名
-
-
-//请求接口
+#pragma mark - api请求接口
 #define api_login_guest     (@"api/user/visitorLogin")
 #define api_login_third     (@"api/user/thirdPartyLogin")
 #define api_login_register  (@"api/user/register")
@@ -138,12 +133,9 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_get_vfCode      (@"api/vcode/sendEmailVcode")
 #define api_change_pwd      (@"api/pwd/changePassword")
 #define api_bind_account     (@"api/upgrade/bind")
-
 #define api_delete_account     (@"api/cancel/account")
-
 #define api_order_create     (@"api/order/create")
 #define api_payment         (@"api/apple/payment")
-
 
 #endif /* CCSkyHourHeader_h */
 

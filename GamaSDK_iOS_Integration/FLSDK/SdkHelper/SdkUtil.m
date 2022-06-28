@@ -7,9 +7,9 @@
 //
 
 #import "SdkUtil.h"
-#import "HelloHeader.h"
+#import "SdkHeader.h"
 #import <Photos/Photos.h>
-
+#import "GamaSecurity.h"
 
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
@@ -17,8 +17,14 @@
 #define kEncryKey @"GAMAENKEY"
 #define kEncryIv  @"GAMAENIV"
 
-#define hLoginType                  @"hello_login_type"
-#define hLoginUserName              @"hello_login_user_name"
+#pragma mark - loading alert用到
+
+#define winWidth        [SUtil getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
+#define winHeight       [SUtil getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
+#define FONT_Helvetica_BOLD      @"Helvetica-Bold"
+#define FONT_Helvetica           @"Helvetica"
+#define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
+
 
 #define kLoadingTag     9999
 
@@ -214,7 +220,7 @@
         toastLabel.textColor = [UIColor whiteColor];
 
         
-        toastLabel.font = [UIFont fontWithName:LABEL_FONT_NAME size:FONTSIZE(16)];
+        toastLabel.font = [UIFont fontWithName:FONT_Helvetica_BOLD size:FONTSIZE(16)];
         toastLabel.textAlignment = NSTextAlignmentCenter;
         toastLabel.numberOfLines = 0;
 //        toastLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -387,36 +393,6 @@
 //    // save img to photo
 //    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
 //}
-
-+ (void)gama_getGuestAccount:(NSString **)userName andPassword:(NSString **)password
-{
-//    if (password) {
-//        *password = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserPassword"];
-//    }
-//    if (userName) {
-//        *userName = [[GamaLoginFuncionPort getLastLoginUserInfo] objectForKey:@"gamaGuestUserName"];
-//    }
-}
-//
-//+ (void)gama_saveGuestEncryptedUserInfoToUserDefaultWith:(NSString *)userName
-//                                           andPassword:(NSString *)password
-//{
-//    //紀錄本次登陸的用戶信息
-//    NSDictionary * thisUserInfoDic=[NSDictionary dictionaryWithObjectsAndKeys:
-//                                    userName,@"gamaGuestUserName",
-//                                    password,@"gamaGuestUserPassword",
-//                                    nil];
-//    NSMutableDictionary * encryptDic=[[NSMutableDictionary alloc]init];
-//    for (NSString * oneKey in thisUserInfoDic.allKeys)
-//    {
-//        NSString * valueStr=[thisUserInfoDic objectForKey:oneKey];
-//        NSString * encryptKey = [self _loginEncryptFromString:oneKey];
-//        NSString * encryptValue = [self _loginEncryptFromString:valueStr];
-//        [encryptDic addEntriesFromDictionary:@{encryptKey:encryptValue}];
-//    }
-//    [self _updataLastLoginUserInfoWithNewInfo:encryptDic];
-//}
-
 
 #pragma mark - self
 //纪录登陆玩家信息
