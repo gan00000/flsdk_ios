@@ -568,18 +568,18 @@
             @"timestamp"        :timeStamp,
             @"gameCode"         :GAME_CODE,
             @"userId"           :accountModel.userId,
-            @"loginAccessToken"  :accountModel.token,
-            @"loginTimestamp"   :accountModel.timestamp,
-            @"thirdPlatId"      :accountModel.thirdId,
-            @"thirdLoginId"     :accountModel.thirdId,
+            @"loginAccessToken"  :accountModel.token ? : @"",
+            @"loginTimestamp"   :accountModel.timestamp ? : @"",
+            @"thirdPlatId"      :accountModel.thirdId ? : @"",
+            @"thirdLoginId"     :accountModel.thirdId ? : @"",
             
-            @"registPlatform"   :accountModel.loginType,
-            @"loginMode"        :accountModel.loginType,
+            @"registPlatform"   :accountModel.loginType ? : @"",
+            @"loginMode"        :accountModel.loginType ? : @"",
             
             @"payType"          :@"apple",
             @"mode"             :@"apple",//支付方式
             @"productId"           :productId,
-            @"extra"           :extra,
+            @"extra"           :extra ? : @"",
             @"cpOrderId"         :cpOrderId,
             @"serverCode"           :gameUserModel.serverCode,
             @"serverName"           :gameUserModel.serverName,
@@ -645,20 +645,8 @@
             @"loginAccessToken"  :accountModel.token,
             @"loginTimestamp"   :accountModel.timestamp,
             
-//            @"thirdPlatId"      :accountModel.thirdId,
-//            @"thirdLoginId"     :accountModel.thirdId,
-//
-//            @"registPlatform"   :accountModel.loginType,
-//            @"loginMode"        :accountModel.loginType,
-            
             @"payType"          :@"apple",
             @"mode"             :@"apple",//支付方式
-//            @"serverCode"           :gameUserModel.serverCode,
-//            @"serverName"           :gameUserModel.serverName,
-//            @"roleId"           :gameUserModel.roleID,
-//            @"roleName"           :gameUserModel.roleName,
-//            @"roleLevel"           :gameUserModel.roleLevel,
-//            @"roleVipLevel"           :gameUserModel.roleVipLevel,
 
         };
         

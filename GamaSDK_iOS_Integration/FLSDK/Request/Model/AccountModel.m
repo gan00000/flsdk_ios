@@ -11,8 +11,35 @@
 @implementation AccountModel
 
 
+- (void)initData {
+    self.account = @"";
+    self.password = @"";
+    self.lastLoginTime = @"";
+    self.userId = @"";
+    self.token = @"";
+    self.timestamp = @"";
+    
+    self.thirdId = @"";
+    self.thirdAccount = @"";
+    self.isBind = NO;
+    self.loginType = @"";
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"AccountModel init");
+        [self initData];
+        
+    }
+    return self;
+}
+
+
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
+    NSLog(@"AccountModel encodeWithCoder");
     [aCoder encodeObject:self.account forKey:@"accountName"];
     [aCoder encodeObject:self.password forKey:@"accountPwd"];
     [aCoder encodeObject:self.lastLoginTime forKey:@"lastLoginTimemobile"];
@@ -32,21 +59,22 @@
 
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
 {
+    NSLog(@"AccountModel initWithCoder");
     if (self = [super init]) {
-
-        self.account = [aDecoder decodeObjectForKey:@"accountName"];
-        self.password = [aDecoder decodeObjectForKey:@"accountPwd"];
-        self.lastLoginTime = [aDecoder decodeObjectForKey:@"lastLoginTimemobile"];
         
-        self.userId = [aDecoder decodeObjectForKey:@"userId"];
-        self.token = [aDecoder decodeObjectForKey:@"accessToken"];
-        self.timestamp = [aDecoder decodeObjectForKey:@"loginTimestamp"];
+        self.account = [aDecoder decodeObjectForKey:@"accountName"] ? : @"";
+        self.password = [aDecoder decodeObjectForKey:@"accountPwd"] ? : @"";
+        self.lastLoginTime = [aDecoder decodeObjectForKey:@"lastLoginTimemobile"] ? : @"";
         
-        self.thirdId = [aDecoder decodeObjectForKey:@"thirdId"];
-        self.thirdAccount = [aDecoder decodeObjectForKey:@"thirdAccount"];
-        self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"];
+        self.userId = [aDecoder decodeObjectForKey:@"userId"] ? : @"";
+        self.token = [aDecoder decodeObjectForKey:@"accessToken"] ? : @"";
+        self.timestamp = [aDecoder decodeObjectForKey:@"loginTimestamp"] ? : @"";
         
-        self.loginType = [aDecoder decodeObjectForKey:@"loginType"];
+        self.thirdId = [aDecoder decodeObjectForKey:@"thirdId"] ? : @"";
+        self.thirdAccount = [aDecoder decodeObjectForKey:@"thirdAccount"] ? : @"";
+        self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"] ? : NO;
+        
+        self.loginType = [aDecoder decodeObjectForKey:@"loginType"] ? : @"";
   
     }
     

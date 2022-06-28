@@ -49,12 +49,6 @@
     
     
     GameUserModel *mGameUserModel = [[GameUserModel alloc] init];
-    mGameUserModel.roleID = @"";
-    mGameUserModel.roleName = @"";
-    mGameUserModel.roleLevel = @"";
-    mGameUserModel.roleVipLevel = @"";
-    mGameUserModel.serverCode = @"";
-    mGameUserModel.serverName = @"";
     self.gameUserModel = mGameUserModel;
 }
 
