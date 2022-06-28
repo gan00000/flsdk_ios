@@ -18,6 +18,7 @@
 #import "LineDelegate.h"
 #import "MWApplePayManager.h"
 #import "AdUtil.h"
+#import "EventHeader.h"
 
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";

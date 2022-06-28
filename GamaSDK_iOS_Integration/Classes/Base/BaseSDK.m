@@ -6,8 +6,6 @@
 #import "ConfigHeader.h"
 #import "SUtil.h"
 #import "GamaAdInterface.h"
-#import "GamaPhoneModel.h"
-#import "GamaCommonHeader.h"
 #import "SdkHeader.h"
 #import "SDKRequest.h"
 
@@ -15,6 +13,7 @@
 #import "FirebaseDelegate.h"
 #import "LineDelegate.h"
 
+#import "EventHeader.h"
 #import <StoreKit/StoreKit.h>
 
 @implementation BaseSDK

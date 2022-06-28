@@ -7,7 +7,6 @@
 #import "ViewController.h"
 #import "UserModel.h"
 
-#import "GamaCommonHeader.h"
 #import "ConfigHeader.h"
 #import "FLSDK.h"
 

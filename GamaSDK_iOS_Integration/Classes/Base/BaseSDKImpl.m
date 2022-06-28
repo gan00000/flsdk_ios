@@ -3,9 +3,8 @@
 
 #import "BaseSDKImpl.h"
 #import "ConfigHeader.h"
-#import "GamaCommonHeader.h"
-//#import "KRTwitterLogin.h"
-//#import "ProvisionsView.h"
+
+#import "EventHeader.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -194,16 +193,16 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     NSLog(@"push token:%@",[NSString stringWithFormat:@"%@",deviceToken]);
 //    [GamaAdPort adjust_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 //    [[AppsFlyerTracker sharedTracker] registerUninstall:deviceToken];
-    if ([NSClassFromString(@"AppsFlyerTracker") respondsToSelector:NSSelectorFromString(@"sharedTracker")]) {
-        Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"AppsFlyerTracker"),NSSelectorFromString(@"sharedTracker"));
-        ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(@"registerUninstall:"),deviceToken);
-    }
-    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
-        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
-            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"setAPNSToken:"),deviceToken);
-        }
-    }
+//    if ([NSClassFromString(@"AppsFlyerTracker") respondsToSelector:NSSelectorFromString(@"sharedTracker")]) {
+//        Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"AppsFlyerTracker"),NSSelectorFromString(@"sharedTracker"));
+//        ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(@"registerUninstall:"),deviceToken);
+//    }
+//    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+//        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
+//            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"setAPNSToken:"),deviceToken);
+//        }
+//    }
     
 //    [FIRMessaging messaging].APNSToken = deviceToken;
     Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didRegisterForRemoteNotificationsWithDeviceToken:),application, deviceToken, nil, nil);
@@ -215,13 +214,13 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     // TODO: Handle data of notification
     // With swizzling disabled you must let Messaging know about the message, for Analytics
     
-    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
-        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
-            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
-        }
-    }
+//    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+//        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
+//        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
+//            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//        }
+//    }
     // Print message ID.
     if (userInfo[kGCMMessageIDKey]) {
         NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
@@ -240,13 +239,13 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     
     // With swizzling disabled you must let Messaging know about the message, for Analytics
     
-    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
-        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
-            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
-        }
-    }
+//    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+//        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
+//        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
+//            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//        }
+//    }
     
     // Print message ID.
     if (userInfo[kGCMMessageIDKey]) {
@@ -266,14 +265,14 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
     NSDictionary *userInfo = notification.request.content.userInfo;
     
     // With swizzling disabled you must let Messaging know about the message, for Analytics
-    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
-        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
-            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
-        }
-    }
-    
+//    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
+//        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
+//        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
+//            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//        }
+//    }
+
     // Print message ID.
     if (userInfo[kGCMMessageIDKey]) {
         NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);

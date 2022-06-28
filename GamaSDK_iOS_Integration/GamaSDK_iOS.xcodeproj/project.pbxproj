@@ -406,11 +406,11 @@
 		03B919242860AECB0029AE6A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		03B919252860AECB0029AE6A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		03BA72BC286B343800801F31 /* EventHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventHeader.h; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* LineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineDelegate.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* LineDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineDelegate.m; sourceTree = "<group>"; };
 		03E0767F2862C07700B81B65 /* FirebaseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseDelegate.h; sourceTree = "<group>"; };
 		03E076802862C07700B81B65 /* FirebaseDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseDelegate.m; sourceTree = "<group>"; };
-		03E5D85F2861A7C80055B25E /* GamaCommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaCommonHeader.h; path = ../../WorkProjResources/GamaCommonHeader.h; sourceTree = "<group>"; };
 		03EA36062850986F00723340 /* BindAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountView.m; sourceTree = "<group>"; };
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
@@ -727,6 +727,7 @@
 				03202938286B02D900E8D5A5 /* AFDelegate.m */,
 				0320293E286B17CF00E8D5A5 /* AdUtil.h */,
 				0320293F286B17CF00E8D5A5 /* AdUtil.m */,
+				03BA72BC286B343800801F31 /* EventHeader.h */,
 			);
 			path = AD;
 			sourceTree = "<group>";
@@ -1011,7 +1012,6 @@
 				03202925286962CB00E8D5A5 /* DataMode */,
 				032028F128694B7D00E8D5A5 /* SDKIAP */,
 				03E076652861E71800B81B65 /* Line */,
-				03E5D85F2861A7C80055B25E /* GamaCommonHeader.h */,
 				037648082861789A00CAD034 /* GG */,
 				E974121820874A170018E1A6 /* Resources */,
 				034558BC285B0AEA0025EFB2 /* FB */,

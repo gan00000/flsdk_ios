@@ -11,7 +11,6 @@
 #import "UserModel.h"
 #import "SUtil.h"
 #import "ConfigHeader.h"
-#import "GamaCommonHeader.h"
 
 #import "FLSDK.h"
 

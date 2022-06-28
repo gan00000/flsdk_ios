@@ -39,11 +39,7 @@
 #define GAMA_IAP_TEXT_BUY_ERROR                         @"textIapBuyError"                        //提示语："交易訂單號：%@\n验证error！請截屏後聯繫我們客服。\n屏幕截圖將視為補單唯一憑證！"
 #define GAMA_IAP_TEXT_SERVER_IN_MAINTAIN                @"textIapServerInMaintain"                //提示语："服務器維護中！\n請過一段時間進行購買，感謝您的支持。\nE_code：%@"
 
-#define GAMESWORD_EVENT_FIRSTPAY            @"flyfun_firstpay"
-#define GAMESWORD_EVENT_OPEN                @"flyfun_open"
-#define GAMESWORD_EVENT_LOGIN               @"flyfun_login_event"
-#define GAMESWORD_EVENT_REGISTER            @"flyfun_register_event"
-#define GAMESWORD_EVENT_ROLE_INFO           @"flyfun_role_info"
+
 //#define GAMESWORD_EVENT_8MIN                @"flyfun_8min"
 //#define GAMESWORD_EVENT_10MIN               @"flyfun_10min"
 //#define GAMESWORD_EVENT_20MIN               @"flyfun_20min"

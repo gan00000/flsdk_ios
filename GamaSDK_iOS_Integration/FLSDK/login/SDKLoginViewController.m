@@ -23,6 +23,7 @@
 #import "BindAccountView.h"
 
 #import "AccountModel.h"
+#import "EventHeader.h"
 
 @interface SDKLoginViewController()
 
