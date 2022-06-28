@@ -111,10 +111,6 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 
 @interface FLSDK()
 
-@property (copy, atomic) PayCompletionHandler payHandler;
-
-@property (copy, atomic)SDKLogoutHandler logoutHandler;
-
 @end
 
 @implementation FLSDK
@@ -212,7 +208,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)sdkLoginWithHandler:(SDKLoginCompletionHandler)cmopleteHandler
+- (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
     self.loginCompletionHandler = cmopleteHandler;
     SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
@@ -369,7 +365,7 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
             productId:(NSString *)productId
             cpOrderId:(NSString *)cpOrderId
                 extra:(NSString *)extra
-    completionHandler:(PayCompletionHandler) handler
+    completionHandler:(SDKPayBlock) handler
 {
     SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
@@ -414,6 +410,15 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
     }
     
     [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+        
+        if (self.payHandler) {
+            if (success) {
+                PayData *mPayData = [[PayData alloc] init];
+                self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
+            }else{
+                self.payHandler(SDK_PAY_STATUS_FAIL, nil);
+            }
+        }
         
     }];
 }

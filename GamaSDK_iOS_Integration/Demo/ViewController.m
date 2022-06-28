@@ -12,6 +12,8 @@
 
 #import <AdSupport/AdSupport.h>
 
+#import "AlertUtil.h"
+
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
 {
     NSString *inputText;
@@ -196,8 +198,22 @@
             NSString *cpOrderId = @"2e9fde2765c34b9a89f2de7934a887a0";//游戏订单ID
             NSString *extra = @"2e9fde2765c34b9a89f2de7934a887a0";
             
-            [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, NSDictionary *result) {
+            [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
                 NSLog(@"pay finish");
+                
+                switch (status) {
+                    case SDK_PAY_STATUS_SUCCESS:
+                        
+                        [AlertUtil showAlertWithMessage:@"充值成功"];
+                        break;
+                        
+                    case SDK_PAY_STATUS_FAIL:
+                        [AlertUtil showAlertWithMessage:@"充值失败"];
+                        break;
+                        
+                    default:
+                        break;
+                }
             }];
         }
             break;

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LoginData.h"
+#import "PayData.h"
 
 #define FL_SDK_VERSION @"1.4.1"
 //typedef void (^openFuncationResult)(NSDictionary *result ,NSError *error);
@@ -22,11 +23,11 @@ typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
 };
 
 
-typedef void (^SDKLoginCompletionHandler)(LoginData * loginData);
+typedef void (^SDKLoginBlock)(LoginData * loginData);
 
-typedef void (^SDKLogoutHandler)(NSInteger logout);
+typedef void (^SDKLogoutBlock)(NSInteger logout);
 
-typedef void (^PayCompletionHandler)(SDK_PAY_STATUS status,NSDictionary *result);
+typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData *mPayData);
 //typedef void (^PayFail)(NSDictionary *result);
 //typedef void (^PayPuchessing)(NSDictionary *result);
 
@@ -56,7 +57,9 @@ typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){
 
 @interface FLSDK : NSObject
 
-@property (nonatomic)SDKLoginCompletionHandler loginCompletionHandler;
+@property (nonatomic) SDKPayBlock payHandler;
+@property (nonatomic)  SDKLogoutBlock logoutHandler;
+@property (nonatomic)  SDKLoginBlock loginCompletionHandler;
 
 
 /**
@@ -86,7 +89,7 @@ typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){
 /**
  登录
  */
-- (void)sdkLoginWithHandler:(SDKLoginCompletionHandler)cmopleteHandler;
+- (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
 
 
 /**
@@ -108,7 +111,7 @@ roleVipLevel:(NSString *)roleVipLevel
   productId:(NSString *)productId
   cpOrderId:(NSString *)cpOrderId
       extra:(NSString *)extra
-completionHandler:(PayCompletionHandler) handler;
+completionHandler:(SDKPayBlock) handler;
 
 /**
  社交分享
