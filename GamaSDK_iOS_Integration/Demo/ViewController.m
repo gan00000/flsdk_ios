@@ -80,8 +80,8 @@
      ***********************************************/
     self.buttonsArray = @[@"登入",
                           @"保存/更新角色信息（进入游戏得到角色信息后调用）",
-                          @"充值",
-//                          @"第三方充值",
+                          @"充值com.fzzh.tw.1usd",
+                          @"充值com.fzzh.tw.2usd",
 //                          @"分享",
 //                          @"打开网址客服",
 //                          @"打开公告",
@@ -103,33 +103,6 @@
 }
 
 
-- (void)gamaPhchaSesuccessFul:(NSNotification *)notification {
-    
-}
-
-- (void)gamaPhchaFail:(NSNotification *)notification {
-    
-}
-
-- (void)gamaPuchessing:(NSNotification *)notification {
-    
-}
-
-
-- (void)userSharingResult:(NSNotification *)notification
-{
-    /*********************************************
-     社群分享后得到的结果
-     *  code = -1000 为失败
-     *  code = 1000 为成功
-     *********************************************/
-    NSDictionary * userInfo= notification.userInfo;
-    NSLog(@"user info = %@",userInfo);
-    NSString *code = [userInfo objectForKey:@"code"];
-    NSString *message = [userInfo objectForKey:@"message"];
-    NSLog(@"FB分享发布调用后的结果: code:%@, message:%@",code,message);
-    
-}
 
 #pragma mark - TableView DataSource and Delegate Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -151,6 +124,7 @@
     
     return cell ;
 }
+
 
 //点击选中表格行
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -195,26 +169,7 @@
 //            com.fzzh.tw.2usd
             
             NSString *aProductID = @"com.fzzh.tw.1usd";
-            NSString *cpOrderId = @"2e9fde2765c34b9a89f2de7934a887a0";//游戏订单ID
-            NSString *extra = @"2e9fde2765c34b9a89f2de7934a887a0";
-            
-            [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
-                NSLog(@"pay finish");
-                
-                switch (status) {
-                    case SDK_PAY_STATUS_SUCCESS:
-                        
-                        [AlertUtil showAlertWithMessage:@"充值成功"];
-                        break;
-                        
-                    case SDK_PAY_STATUS_FAIL:
-                        [AlertUtil showAlertWithMessage:@"充值失败"];
-                        break;
-                        
-                    default:
-                        break;
-                }
-            }];
+            [self pay:aProductID];
         }
             break;
             /*********************************************
@@ -223,7 +178,8 @@
         case 3:
         {
 //            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
-
+            NSString *aProductID = @"com.fzzh.tw.2usd";
+            [self pay:aProductID];
         }
             break;
         case 4:
@@ -249,6 +205,31 @@
 
        
     }
+}
+
+
+- (void)pay:(NSString *)aProductID {
+    
+    NSString *cpOrderId = [SUtil getTimeStamp];//游戏订单ID
+    NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
+    
+    [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+        NSLog(@"pay finish");
+        
+        switch (status) {
+            case SDK_PAY_STATUS_SUCCESS:
+                
+                [AlertUtil showAlertWithMessage:@"充值成功"];
+                break;
+                
+            case SDK_PAY_STATUS_FAIL:
+                [AlertUtil showAlertWithMessage:@"充值失败"];
+                break;
+                
+            default:
+                break;
+        }
+    }];
 }
 
 @end

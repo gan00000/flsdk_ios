@@ -37,7 +37,6 @@
 		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BC285A006600F1FD3B /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
-		032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89E285A006600F1FD3B /* ConfigHeader.m */; };
 		032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
 		032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
 		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
@@ -273,7 +272,6 @@
 		032AB89A285A006600F1FD3B /* SUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUtil.h; sourceTree = "<group>"; };
 		032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCoreConfReader.m; sourceTree = "<group>"; };
 		032AB89D285A006600F1FD3B /* SUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUtil.m; sourceTree = "<group>"; };
-		032AB89E285A006600F1FD3B /* ConfigHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigHeader.m; sourceTree = "<group>"; };
 		032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAlertViewDelegate.m; sourceTree = "<group>"; };
 		032AB8A1285A006600F1FD3B /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
 		032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Sdk.m"; sourceTree = "<group>"; };
@@ -704,7 +702,6 @@
 			isa = PBXGroup;
 			children = (
 				032AB899285A006600F1FD3B /* ConfigHeader.h */,
-				032AB89E285A006600F1FD3B /* ConfigHeader.m */,
 				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
 				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
 				032AB890285A006600F1FD3B /* GamaCoreSecurity */,
@@ -1563,7 +1560,6 @@
 				3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */,
 				03B918E1286029670029AE6A /* ConfigModel.m in Sources */,
 				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
-				032AB8BD285A006600F1FD3B /* ConfigHeader.m in Sources */,
 				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
 				03B919352860AECB0029AE6A /* SDWebImageDownloader.m in Sources */,
 				3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */,

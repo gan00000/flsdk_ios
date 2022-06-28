@@ -1,53 +1,3 @@
-//
-//  GamaSDK.m
-//  GamaSDK_iOS_KR
-//
-//  Created by sunn on 2017/2/24.
-//  Copyright © 2017年 gama. All rights reserved.
-//
-///version:"5.2.0"
-//1.修改切換語言引發的自動登入bug
-//2.修改綁定帳號界面確認按鈕文字原：註冊會員 新：綁定會員
-
-
-///version:"5.1.5"
-//1..bundle文件新增：en\de\it\pt\等语言及免注册登入图片
-//2..plist文件新增moreLanguage是否多语言版本判断
-//3.修改获取资源图文路径，请求参数语言变更
-
-///version:"5.1.4"
-//1.不存在adjustToken则不请求以及上报adjust相关数据
-//2.增加登入后打开公告
-
-///version:"5.1.3"
-//1.用户在线时长上报增加退出后台上报，重新打开重新计时
-
-///version:"5.1.2"
-//1.兼容深色模式
-
-///version:"5.1.1"
-//1.为兼容FB 5.13.1Version,修改Facebook分享代码；
-//2.修改文字错误内容(获取验证码文字第二次显示过大)
-//3.增加iap Error 逻辑判断，避免崩溃与单例被释放报错；
-
-
-///version:"5.1.0"
-//1.剔除所有webview框
-
-///version:"5.0.8"
-//1.更换平台悬浮按钮版本
-//2.更换客服链接
-//3.全部使用WKWebView处理
-
-///version:"5.0.6"
-//1.修复iPad手机区号无法选择Bug
-//2.适配台版竖版（ipad）
-
-///version:"5.0.4"
-//1.增加gama_openFuncation接口
-//2.修復IAP查詢訂單崩潰
-
-
 #import "FLSDK.h"
 
 #import "BaseSDK.h"
@@ -56,8 +6,6 @@
 #import "GamaAdInterface.h"
 #import "GamaSDK+Social.h"
 #import "GamaWebViewController.h"
-//#import "NSString+GamaURLEncoding.h"
-//#import "KRAgeSystemView.h"
 #import "SDKLoginViewController.h"
 #import "SUtil.h"
 #import "StringUtil.h"
@@ -73,41 +21,13 @@
 
 
 // 通知类型
-NSString *const GAMA_LOGIN_SUCCUESS    = @"CONST_GAMA_LOGIN_SUCCUESS";
+//NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";
 
-NSString *const GAMA_PAY_SUCCUESS      = @"GAMAPHCHASESUCCESSFUL";
-NSString *const GAMA_PAY_FAIL          = @"GAMAPHCHASEFAIL";
-NSString *const GAMA_PAY_PUCHESSING    = @"GAMAPHCHASING";
-NSString *const GAMA_SHARE_RESULT      = @"CONST_GAMA_SHARE_RESULT";
-NSString *const GAMA_NOTICE_CLOSE      = @"GAMA_NOTICE_CLOSE";
-
-// 参数类型
-NSString *const GAMA_PRM_USER_ID           = @"py_param_user_id";
-NSString *const GAMA_PRM_ROLE_ID           = @"py_param_role_id";
-NSString *const GAMA_PRM_ROLE_NAME         = @"py_param_role_name";
-NSString *const GAMA_PRM_ROLE_LEVEL        = @"py_param_role_level";
-NSString *const GAMA_PRM_ROLE_VIP_LEVEL    = @"py_param_role_vip_level";
-NSString *const GAMA_PRM_ROLE_SERVER_ID    = @"py_param_role_server_id";
-NSString *const GAMA_PRM_ROLE_SERVER_NAME  = @"py_param_role_server_name";
-
-NSString *const GAMA_PRM_SHARE_CONTENT_URL  = @"py_param_share_content_url";
-NSString *const GAMA_PRM_SHARE_CONTENT_IMAGE  = @"py_param_share_content_image";
-
-
-// 充值类型
-//NSString *const GAMA_PAY_MODE_DEFAULT      = @"gama_pay_mode_default";
-//NSString *const GAMA_PAY_MODE_WEB          = @"gama_pay_mode_web";
-
-// web
-NSString *const GAMA_PRM_WEB_MODE          = @"py_param_web_type";
-NSString *const GAMA_PRM_WEB_URL           = @"py_param_web_url";
-NSString *const GAMA_PRM_OPEN_WEB_URL      = @"py_param_oepn_web_url";
-
-
-NSString *const GAMA_WEB_MODE_CP           = @"gama_web_mode_cp";
-NSString *const GAMA_WEB_MODE_SDK          = @"gama_web_mode_sdk";
-NSString *const GAMA_PRM_WEB_SERVICE       = @"gama_web_service";
-NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
+//NSString *const GAMA_PAY_SUCCUESS      = @"GAMAPHCHASESUCCESSFUL";
+//NSString *const GAMA_PAY_FAIL          = @"GAMAPHCHASEFAIL";
+//NSString *const GAMA_PAY_PUCHESSING    = @"GAMAPHCHASING";
+//NSString *const GAMA_SHARE_RESULT      = @"CONST_GAMA_SHARE_RESULT";
+//NSString *const GAMA_NOTICE_CLOSE      = @"GAMA_NOTICE_CLOSE";
 
 @interface FLSDK()
 
@@ -169,35 +89,6 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
     if (self = [super init]) {
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
-        
-        //        [[NSNotificationCenter defaultCenter] addObserver:self
-        //                                                 selector:@selector(_gamaNoteListener:)
-        //                                                     name:GAMA_NOTIFICATION_SUCCESS_LOGIN
-        //                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(_gamaNoteListener:)
-                                                     name:GAMA_NOTIFICATION_PHCHASE_SUCCESSFUL
-                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(_gamaNoteListener:)
-                                                     name:GAMA_NOTIFICATION_PHCHASE_FAIL
-                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(_gamaNoteListener:)
-                                                     name:GAMA_NOTIFICATION_PHCHASE_PUCHASING
-                                                   object:nil];
-        //        [[NSNotificationCenter defaultCenter] addObserver:self
-        //                                                 selector:@selector(_gamaNoteListener:)
-        //                                                     name:@"Gama_httpRequest_SharingResult"//GAMA_NOTIFICATION_SHARE_RESULT
-        //                                                   object:nil];
-        //        [[NSNotificationCenter defaultCenter] addObserver:self
-        //                                                 selector:@selector(_gamaNoteListener:)
-        //                                                     name:@"GAMA_BIND_PHONE_RESULT"//GAMA_NOTIFICATION_SHARE_RESULT
-        //                                                   object:nil];
-        
-        // 监听登录成功通知，调用数据统计等接口
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_gamaNoteListener:) name:GAMA_NOTIFICATION_SUCCESS_LOGIN object:nil];
-        
     }
     
     return self;
@@ -558,78 +449,6 @@ NSString *const GAMA_PRM_WEB_NOTICE        = @"gama_web_notice";
 
 
 #pragma mark - 内部方法
-
-/**
- 内部通知事件监听
- 
- @param note 通知
- */
-- (void)_gamaNoteListener:(NSNotification *)note
-{
-    NSString *noteName = note.name;
-    
-    if ([noteName isEqualToString:GAMA_NOTIFICATION_SUCCESS_LOGIN]) {
-        // 对外界发送登录成功的通知
-        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_LOGIN_SUCCUESS
-        //                                                             object:nil
-        //                                                           userInfo:note.userInfo];
-        
-        //增加登入成功时间戳
-        //        NSString *loginUid = [[NSUserDefaults standardUserDefaults] objectForKey:@"saveLoginUid"];
-        //        if ([loginUid isEqual:note.userInfo[@"userId"]]) {
-        //
-        //        }else{//首次登入
-        //        [GamaTimer setStartTimeStamp];
-        //        [GamaTimer shareInstance].loginState = YES;
-        //        [GamaBaseSDK _gamaLoginSuccess:note];
-        //        }
-        //        [[NSUserDefaults standardUserDefaults] setObject:note.userInfo[@"userId"] forKey:@"saveLoginUid"];
-        //        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-    }
-    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_SUCCESSFUL]) {
-        NSMutableDictionary *resultDic = [NSMutableDictionary dictionaryWithDictionary:note.userInfo];
-        //  handle productID
-        NSString *sucProductId = resultDic[@"productID"];
-        if (sucProductId && ![@"" isEqualToString:sucProductId]) {
-            //  remove productID
-            [resultDic removeObjectForKey:@"productID"];
-        }
-        
-        if (self.payHandler) {
-            self.payHandler(SDK_PAY_STATUS_SUCCESS, resultDic);
-        }
-    }
-    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_FAIL]) {
-        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_FAIL
-        //                                                            object:nil
-        //                                                          userInfo:note.userInfo];
-        if (self.payHandler) {
-            self.payHandler(SDK_PAY_STATUS_FAIL, note.userInfo);
-        }
-        
-    }
-    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_PUCHASING]) {
-        //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
-        //                                                            object:nil
-        //                                                          userInfo:note.userInfo];
-        if (self.payHandler) {
-            self.payHandler(SDK_PAY_STATUS_PUCHESSING, note.userInfo);
-        }
-    }
-    //    else if ([noteName isEqualToString:GAMA_NOTIFICATION_PHCHASE_PUCHASING]) {
-    //        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_PAY_PUCHESSING
-    //                                                            object:nil
-    //                                                          userInfo:note.userInfo];
-    //    }
-    else if ([noteName isEqualToString:GAMA_NOTIFICATION_SHARE_RESULT]) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_SHARE_RESULT
-                                                            object:nil
-                                                          userInfo:note.userInfo];
-    }else {
-        return;
-    }
-}
 
 - (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas
 {
