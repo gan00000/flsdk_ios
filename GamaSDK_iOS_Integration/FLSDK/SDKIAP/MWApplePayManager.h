@@ -11,8 +11,6 @@
 #import "AccountModel.h"
 #import "PayData.h"
 
-typedef void(^XSProductStatusBlock)(BOOL isStatus);
-
 typedef void(^PayStatusBlock)(BOOL success,PayData* _Nullable payData);
 
 
@@ -23,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shareManager;
 
 /** 检测客户端与服务器漏单情况处理*/
-+ (void)checkOrderStatus;
+- (void)checkOrderStatus;
 
 
 /**
