@@ -171,7 +171,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
     [super _applicationWillTerminate:application];
 }
 
-+ (void)star_applicationWillEnterForeground:(UIAlertAction *)application
++ (void)star_applicationWillEnterForeground:(UIApplication *)application
 {
     [super _applicationWillEnterForeground:application];
 }
@@ -205,7 +205,7 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 //    }
     
 //    [FIRMessaging messaging].APNSToken = deviceToken;
-    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didRegisterForRemoteNotificationsWithDeviceToken:),application, deviceToken, nil, nil);
+//    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didRegisterForRemoteNotificationsWithDeviceToken:),application, deviceToken, nil, nil);
 }
 
 + (void)Gama_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
@@ -222,13 +222,13 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 //        }
 //    }
     // Print message ID.
-    if (userInfo[kGCMMessageIDKey]) {
-        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
-    }
-    
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didReceiveRemoteNotification:),application, userInfo, nil, nil);
+//    if (userInfo[kGCMMessageIDKey]) {
+//        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//    }
+//
+//    // Print full message.
+//    NSLog(@"%@", userInfo);
+//    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didReceiveRemoteNotification:),application, userInfo, nil, nil);
 }
 
 + (void)Gama_application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
@@ -248,14 +248,14 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 //    }
     
     // Print message ID.
-    if (userInfo[kGCMMessageIDKey]) {
-        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
-    }
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    completionHandler(UIBackgroundFetchResultNewData);
-    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didReceiveRemoteNotification:
-                                                         fetchCompletionHandler:),application, userInfo, completionHandler, nil);
+//    if (userInfo[kGCMMessageIDKey]) {
+//        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//    }
+//    // Print full message.
+//    NSLog(@"%@", userInfo);
+//    completionHandler(UIBackgroundFetchResultNewData);
+//    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_application: didReceiveRemoteNotification:
+//                                                         fetchCompletionHandler:),application, userInfo, completionHandler, nil);
 }
 // Receive displayed notifications for iOS 10 devices.
 // Handle incoming notification messages while app is in the foreground.
@@ -274,30 +274,30 @@ restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
 //    }
 
     // Print message ID.
-    if (userInfo[kGCMMessageIDKey]) {
-        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
-    }
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    // Change this to your preferred presentation option
-    completionHandler(UNNotificationPresentationOptionNone);
-    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_userNotificationCenter:willPresentNotification:withCompletionHandler:),center, notification, completionHandler, nil);
+//    if (userInfo[kGCMMessageIDKey]) {
+//        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//    }
+//    // Print full message.
+//    NSLog(@"%@", userInfo);
+//    // Change this to your preferred presentation option
+//    completionHandler(UNNotificationPresentationOptionNone);
+//    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_userNotificationCenter:willPresentNotification:withCompletionHandler:),center, notification, completionHandler, nil);
 }
 
 // Handle notification messages after display notification is tapped by the user.
 + (void)Gama_userNotificationCenter:(UNUserNotificationCenter *)center
      didReceiveNotificationResponse:(UNNotificationResponse *)response
               withCompletionHandler:(void(^)(void))completionHandler {
-    NSDictionary *userInfo = response.notification.request.content.userInfo;
-    if (userInfo[kGCMMessageIDKey]) {
-        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
-    }
-    
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    
-    completionHandler();
-    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:),center, response, completionHandler, nil);
+//    NSDictionary *userInfo = response.notification.request.content.userInfo;
+//    if (userInfo[kGCMMessageIDKey]) {
+//        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//    }
+//
+//    // Print full message.
+//    NSLog(@"%@", userInfo);
+//
+//    completionHandler();
+//    Gama_Appdelegate_method_return(self, _cmd, @selector(Gama_userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:),center, response, completionHandler, nil);
 }
 
 
