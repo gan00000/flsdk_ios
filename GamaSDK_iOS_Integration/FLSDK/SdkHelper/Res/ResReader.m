@@ -2,27 +2,27 @@
 //
 #import <malloc/malloc.h>
 #import <objc/runtime.h>
-#import "GamaCoreConfReader.h"
-#import "ConfigHeader.h"
+#import "ResReader.h"
+#import "ResHeader.h"
 #import "SdkHeader.h"
 
 
-@interface GamaCoreConfReader ()
+@interface ResReader ()
 @property (nonatomic, copy) NSString *m_stringsName;
 @property (nonatomic, retain) NSBundle *m_stringsBundle;
 @end
 
-@implementation GamaCoreConfReader
+@implementation ResReader
 
-static GamaCoreConfReader * coreReader;
+static ResReader * coreReader;
 static dispatch_once_t onceToken;
 
 
-+ (GamaCoreConfReader *)reader
++ (ResReader *)reader
 {
     
     dispatch_once(&onceToken,^{
-        coreReader = [[GamaCoreConfReader alloc] init];
+        coreReader = [[ResReader alloc] init];
         
     });
     return coreReader;

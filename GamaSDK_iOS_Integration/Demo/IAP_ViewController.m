@@ -10,7 +10,7 @@
 #import "BaseSDKImpl.h"
 #import "UserModel.h"
 #import "SUtil.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 
 #import "FLSDK.h"
 

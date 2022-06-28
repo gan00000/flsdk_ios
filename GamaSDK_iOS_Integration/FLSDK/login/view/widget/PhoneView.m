@@ -49,7 +49,7 @@
         
     }];
     
-    UIImageView *lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:iconName]];
+    UIImageView *lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:iconName]];
     lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [areaCodeContentView addSubview:lableIconImageView];
     [lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {

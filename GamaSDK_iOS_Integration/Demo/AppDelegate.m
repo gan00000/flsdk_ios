@@ -7,7 +7,7 @@
 #import "ViewController.h"
 #import "UserModel.h"
 
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 #import "FLSDK.h"
 
 @interface AppDelegate ()

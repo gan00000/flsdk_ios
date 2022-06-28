@@ -1,7 +1,7 @@
 //
 
 #import "SdkPrivateKeychainCfUUID.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 
 
 @implementation SdkPrivateKeychainCfUUID

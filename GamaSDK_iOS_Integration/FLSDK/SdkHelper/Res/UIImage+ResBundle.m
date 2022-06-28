@@ -1,11 +1,11 @@
 
 
-#import "UIImage+GamaBundleImage.h"
-#import "ConfigHeader.h"
+#import "UIImage+ResBundle.h"
+#import "ResHeader.h"
 
-@implementation UIImage (EFNBundleImage)
+@implementation UIImage (ResBundle)
 
-+ (UIImage *)gama_imageNamed:(NSString *)imageName {
++ (UIImage *)res_imageNamed:(NSString *)imageName {
     
     if (imageName.length <= 0) {
         return nil;
@@ -16,10 +16,10 @@
         UIImage *resultImage = [UIImage imageNamed:imageName];
         return resultImage;
     }
-    return [self gama_imageNamed:imageName inBundle:[NSBundle bundleWithURL:defaultBundleUrl]];
+    return [self res_imageNamed:imageName inBundle:[NSBundle bundleWithURL:defaultBundleUrl]];
 }
 
-+ (UIImage *)gama_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
++ (UIImage *)res_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
     
     UIImage *resultImage = nil;
     
@@ -32,7 +32,7 @@
     return resultImage;
 }
 
-+ (UIImage *)gama_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle inFolder:(NSString *)folder
++ (UIImage *)res_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle inFolder:(NSString *)folder
 {
     UIImage *resultImage = nil;
     

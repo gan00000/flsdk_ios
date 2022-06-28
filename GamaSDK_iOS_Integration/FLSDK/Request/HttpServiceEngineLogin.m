@@ -28,7 +28,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEngineLogin alloc] init];
-        NSString *servicePath = [SDKConReader getLoginUrl];//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
+        NSString *servicePath = [SDKRES getLoginUrl];//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
         instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:servicePath];
         [instance.httpEngine updateSessionWithBlock:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;

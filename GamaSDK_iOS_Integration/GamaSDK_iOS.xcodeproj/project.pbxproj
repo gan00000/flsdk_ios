@@ -37,10 +37,10 @@
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320293F286B17CF00E8D5A5 /* AdUtil.m */; };
-		032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* GamaSecurityFunction.m */; };
-		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
+		032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
+		032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
 		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		032AB8BB285A006600F1FD3B /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		032AB8BC285A006600F1FD3B /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
 		032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
 		032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
@@ -49,7 +49,7 @@
 		032AB8C2285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */; };
+		032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
 		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		035FA537286442A7000B2335 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035FA51F286442A7000B2335 /* FirebaseAuth.xcframework */; };
@@ -274,15 +274,15 @@
 		0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		0320293E286B17CF00E8D5A5 /* AdUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdUtil.h; sourceTree = "<group>"; };
 		0320293F286B17CF00E8D5A5 /* AdUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdUtil.m; sourceTree = "<group>"; };
-		032AB891285A006600F1FD3B /* GamaSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurityFunction.m; sourceTree = "<group>"; };
-		032AB892285A006600F1FD3B /* GamaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurity.m; sourceTree = "<group>"; };
-		032AB893285A006600F1FD3B /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
-		032AB894285A006600F1FD3B /* GamaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurity.h; sourceTree = "<group>"; };
+		032AB891285A006600F1FD3B /* SdkSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkSecurityFunction.m; sourceTree = "<group>"; };
+		032AB892285A006600F1FD3B /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		032AB893285A006600F1FD3B /* SdkSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkSecurityFunction.h; sourceTree = "<group>"; };
+		032AB894285A006600F1FD3B /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
 		032AB897285A006600F1FD3B /* GameUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUserModel.h; sourceTree = "<group>"; };
 		032AB898285A006600F1FD3B /* GameUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameUserModel.m; sourceTree = "<group>"; };
-		032AB899285A006600F1FD3B /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
+		032AB899285A006600F1FD3B /* ResHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResHeader.h; sourceTree = "<group>"; };
 		032AB89A285A006600F1FD3B /* SUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUtil.h; sourceTree = "<group>"; };
-		032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaCoreConfReader.m; sourceTree = "<group>"; };
+		032AB89B285A006600F1FD3B /* ResReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResReader.m; sourceTree = "<group>"; };
 		032AB89D285A006600F1FD3B /* SUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUtil.m; sourceTree = "<group>"; };
 		032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAlertViewDelegate.m; sourceTree = "<group>"; };
 		032AB8A1285A006600F1FD3B /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
@@ -290,17 +290,17 @@
 		032AB8A3285A006600F1FD3B /* SAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAlertViewDelegate.h; sourceTree = "<group>"; };
 		032AB8A4285A006600F1FD3B /* UIAlertController+Sdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Sdk.h"; sourceTree = "<group>"; };
 		032AB8A5285A006600F1FD3B /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
-		032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaCoreConfReader.h; sourceTree = "<group>"; };
+		032AB8A6285A006600F1FD3B /* ResReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResReader.h; sourceTree = "<group>"; };
 		032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		032AB8AA285A006600F1FD3B /* SdkCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkCfUUID.h; sourceTree = "<group>"; };
 		032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkPrivateKeychainCfUUID.m; sourceTree = "<group>"; };
-		032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GamaBundleImage.h"; sourceTree = "<group>"; };
+		032AB8AC285A006600F1FD3B /* UIImage+ResBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResBundle.h"; sourceTree = "<group>"; };
 		032AB8AD285A006600F1FD3B /* SdkKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkKeychainItemWrapper.h; sourceTree = "<group>"; };
 		032AB8AE285A006600F1FD3B /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		032AB8AF285A006600F1FD3B /* SdkPrivateKeychainCfUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkPrivateKeychainCfUUID.h; sourceTree = "<group>"; };
 		032AB8B0285A006600F1FD3B /* SdkCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkCfUUID.m; sourceTree = "<group>"; };
 		032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkKeychainItemWrapper.m; sourceTree = "<group>"; };
-		032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GamaBundleImage.m"; sourceTree = "<group>"; };
+		032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResBundle.m"; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
@@ -735,11 +735,11 @@
 		032AB889285A006600F1FD3B /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				032AB899285A006600F1FD3B /* ConfigHeader.h */,
-				032AB8AC285A006600F1FD3B /* UIImage+GamaBundleImage.h */,
-				032AB8B3285A006600F1FD3B /* UIImage+GamaBundleImage.m */,
-				032AB8A6285A006600F1FD3B /* GamaCoreConfReader.h */,
-				032AB89B285A006600F1FD3B /* GamaCoreConfReader.m */,
+				032AB899285A006600F1FD3B /* ResHeader.h */,
+				032AB8AC285A006600F1FD3B /* UIImage+ResBundle.h */,
+				032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */,
+				032AB8A6285A006600F1FD3B /* ResReader.h */,
+				032AB89B285A006600F1FD3B /* ResReader.m */,
 			);
 			path = Res;
 			sourceTree = "<group>";
@@ -747,10 +747,10 @@
 		032AB890285A006600F1FD3B /* CoreSecurity */ = {
 			isa = PBXGroup;
 			children = (
-				032AB894285A006600F1FD3B /* GamaSecurity.h */,
-				032AB892285A006600F1FD3B /* GamaSecurity.m */,
-				032AB893285A006600F1FD3B /* GamaSecurityFunction.h */,
-				032AB891285A006600F1FD3B /* GamaSecurityFunction.m */,
+				032AB894285A006600F1FD3B /* SecurityUtil.h */,
+				032AB892285A006600F1FD3B /* SecurityUtil.m */,
+				032AB893285A006600F1FD3B /* SdkSecurityFunction.h */,
+				032AB891285A006600F1FD3B /* SdkSecurityFunction.m */,
 			);
 			path = CoreSecurity;
 			sourceTree = "<group>";
@@ -1561,7 +1561,7 @@
 			files = (
 				3295E2E424DAEDDE00B85976 /* BJBaseResponceModel.m in Sources */,
 				03B919322860AECB0029AE6A /* SDWebImageManager.m in Sources */,
-				032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */,
+				032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */,
 				3295E2E524DAEDDE00B85976 /* BJError.m in Sources */,
 				3295E2E624DAEDDE00B85976 /* HttpServiceEngineLogin.m in Sources */,
 				3295E2E724DAEDDE00B85976 /* BJServiceConfigurator.m in Sources */,
@@ -1616,7 +1616,7 @@
 				3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */,
 				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
-				032AB8C6285A006600F1FD3B /* UIImage+GamaBundleImage.m in Sources */,
+				032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */,
 				03669949285E26890008EB50 /* StringUtil.m in Sources */,
 				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
 				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
@@ -1650,7 +1650,7 @@
 				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
 				00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */,
 				03B9192E2860AECB0029AE6A /* MASConstraint.m in Sources */,
-				032AB8BB285A006600F1FD3B /* GamaCoreConfReader.m in Sources */,
+				032AB8BB285A006600F1FD3B /* ResReader.m in Sources */,
 				00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */,
 				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
 				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
@@ -1661,7 +1661,7 @@
 				0389B3192861B7B30024E62E /* LoginHelper.m in Sources */,
 				E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */,
 				0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */,
-				032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */,
+				032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */,
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				E947D354221ED7F300490C35 /* BaseSDK.m in Sources */,
 				03B9193B2860AECB0029AE6A /* SDWebImageDownloaderOperation.m in Sources */,

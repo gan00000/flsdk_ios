@@ -587,7 +587,7 @@
     }
     
     accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage gama_imageNamed:iconName];
+    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed:iconName];
     
     if (pwdFiledView) {
         [pwdFiledView setPwdFiledView:pwdEnable];

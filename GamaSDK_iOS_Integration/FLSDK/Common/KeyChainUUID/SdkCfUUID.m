@@ -1,5 +1,5 @@
 #import "SdkCfUUID.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 #import "SdkKeychainItemWrapper.h"
 
 #import "SdkPrivateKeychainCfUUID.h"

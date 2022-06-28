@@ -2,7 +2,7 @@
 //
 
 #import "BaseSDKImpl.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 
 #import "EventHeader.h"
 

@@ -4,7 +4,7 @@
 #import "ViewController.h"
 #import "UserModel.h"
 #import "IAP_ViewController.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 #import "FLSDK.h"
 #import "Social_ViewController.h"
 #import "GamaWebViewController.h"

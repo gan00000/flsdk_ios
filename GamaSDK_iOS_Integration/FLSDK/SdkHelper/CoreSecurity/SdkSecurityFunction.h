@@ -6,7 +6,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GamaBase64Encoding : NSObject
+@interface SdkBase64Encoding : NSObject
 
 /**
  *	@brief	base64 吧data转吗成字符串
@@ -26,7 +26,7 @@
 
 
 
-@interface NSData (GamaAES128)
+@interface NSData (SdkAES128)
 
 /**
  *	@brief	AES128加密

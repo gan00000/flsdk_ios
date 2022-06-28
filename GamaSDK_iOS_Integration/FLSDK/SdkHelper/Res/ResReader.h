@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GamaCoreConfReader : NSObject
+@interface ResReader : NSObject
 {
     
 }
@@ -20,7 +20,7 @@
 
 @property (nonatomic,strong) NSDictionary * coreConfDic;
 
-+ (GamaCoreConfReader *)reader;
++ (ResReader *)reader;
 //+ (void)releaseReader;
 
 - (void)reloadCoreConf;

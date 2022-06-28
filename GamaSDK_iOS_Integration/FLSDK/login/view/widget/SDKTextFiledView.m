@@ -32,14 +32,14 @@
     eyeBtn.hidden = !enable;
     mUITextField.enabled = enable;
     if (enable) {
-        self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_icon"];
+        self.lableIconImageView.image = [UIImage res_imageNamed:@"mw_passowrd_icon"];
         mUITextField.secureTextEntry = YES;
         mUITextField.text = @"";
         eyeBtn.selected = YES;
         mUITextField.textColor = [UIColor whiteColor];
         
     }else{
-        self.lableIconImageView.image = [UIImage gama_imageNamed:@"mw_passowrd_disable_icon"];
+        self.lableIconImageView.image = [UIImage res_imageNamed:@"mw_passowrd_disable_icon"];
         mUITextField.secureTextEntry = NO;
         mUITextField.text = GetString(@"text_free_register");
         mUITextField.textColor = [UIColor colorWithHexString:@"#848484"];
@@ -113,7 +113,7 @@
             break;
     }
     
-    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:iconName]];
+    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:iconName]];
     self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.lableIconImageView];
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {

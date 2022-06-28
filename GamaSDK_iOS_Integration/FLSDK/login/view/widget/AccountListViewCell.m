@@ -68,7 +68,7 @@
 -(UIImageView*)iconImageView
 {
     if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"mw_smail_icon"]];
+        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:@"mw_smail_icon"]];
         _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconImageView;

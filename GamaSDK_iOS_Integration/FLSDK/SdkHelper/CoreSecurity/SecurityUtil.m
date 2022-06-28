@@ -1,7 +1,7 @@
-#import "GamaSecurity.h"
-#import "GamaSecurityFunction.h"
+#import "SecurityUtil.h"
+#import "SdkSecurityFunction.h"
 
-@implementation GamaSecurity
+@implementation SecurityUtil
 
 +(NSString *)getEncryptStringFromString:(NSString *)beforeEncryptString
                                 WithKey:(NSString *)key
@@ -9,7 +9,7 @@
 {
     NSData * decryptData=[beforeEncryptString dataUsingEncoding:NSUTF8StringEncoding];
     NSData * encryptData=[decryptData gama_AES128EncryptWithKey:key iv:iv];
-    NSString * encryptStr=[GamaBase64Encoding encode:encryptData];
+    NSString * encryptStr=[SdkBase64Encoding encode:encryptData];
     return encryptStr;
 }
 
@@ -17,7 +17,7 @@
                                 withKey:(NSString *)key
                                      iv:(NSString *)iv
 {
-    NSData * encryptData=[GamaBase64Encoding decode:beforeDecryptString];
+    NSData * encryptData=[SdkBase64Encoding decode:beforeDecryptString];
     NSData * decryptData=[encryptData gama_AES128DecryptWithKey:key iv:iv];
     NSString * decryptStr=[[NSString alloc]initWithData:decryptData encoding:NSUTF8StringEncoding];
     return decryptStr;
@@ -39,12 +39,12 @@
 
 +(NSString *)getEncodeStringFromData:(NSData *)beforeEncodeData
 {
-    return [GamaBase64Encoding encode:beforeEncodeData];
+    return [SdkBase64Encoding encode:beforeEncodeData];
 }
 
 +(NSData *)getEncodeDataFromString:(NSString *)beforeEncodeString
 {
-    return [GamaBase64Encoding decode:beforeEncodeString];
+    return [SdkBase64Encoding decode:beforeEncodeString];
 }
 
 @end

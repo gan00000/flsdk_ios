@@ -1,9 +1,9 @@
 
 
-#import "GamaSecurityFunction.h"
+#import "SdkSecurityFunction.h"
 #import <CommonCrypto/CommonCrypto.h>
 
-@implementation GamaBase64Encoding
+@implementation SdkBase64Encoding
 
 #define ArrayLength(x) (sizeof(x)/sizeof(*(x)))
 
@@ -14,7 +14,7 @@ static char gamaDecodingTable[128];
 {
     //一串char数组，用来初始化spDecodingTable
     char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-    if (self == [GamaBase64Encoding class])
+    if (self == [SdkBase64Encoding class])
     {
         //把char 数组清零
         memset(gamaDecodingTable, 0, ArrayLength(gamaDecodingTable));
@@ -107,7 +107,7 @@ static char gamaDecodingTable[128];
 
 
 
-@implementation NSData (GamaAES128)
+@implementation NSData (SdkAES128)
 
 - (NSData *)gama_AES128Operation:(CCOperation)operation key:(NSString *)key iv:(NSString *)iv
 {

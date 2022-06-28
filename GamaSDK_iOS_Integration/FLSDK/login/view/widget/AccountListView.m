@@ -125,7 +125,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         iconName = @"line_smail_icon";
     }
     cell.accountUILabel.text = account;
-    cell.iconImageView.image = [UIImage gama_imageNamed:iconName];
+    cell.iconImageView.image = [UIImage res_imageNamed:iconName];
     
     kWeakSelf
     cell.mItemViewClickHander = ^(NSInteger tag) {

@@ -3,7 +3,7 @@
 
 #import "BaseSDK.h"
 #import "FLSDK.h"
-#import "ConfigHeader.h"
+#import "ResHeader.h"
 #import "SUtil.h"
 #import "GamaAdInterface.h"
 #import "SdkHeader.h"

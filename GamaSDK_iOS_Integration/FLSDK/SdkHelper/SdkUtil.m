@@ -9,7 +9,7 @@
 #import "SdkUtil.h"
 #import "SdkHeader.h"
 #import <Photos/Photos.h>
-#import "GamaSecurity.h"
+#import "SecurityUtil.h"
 
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
@@ -412,12 +412,12 @@
 
 + (NSString *)loginEncryptFromString:(NSString *)aString
 {
-    return [GamaSecurity getEncryptStringFromString:aString WithKey:kEncryKey iv:kEncryIv];
+    return [SecurityUtil getEncryptStringFromString:aString WithKey:kEncryKey iv:kEncryIv];
 }
 
 + (NSString *)loginDecryptFromString:(NSString *)aString
 {
-    return [GamaSecurity getDecryptStringFromString:aString withKey:kEncryKey iv:kEncryIv];
+    return [SecurityUtil getDecryptStringFromString:aString withKey:kEncryKey iv:kEncryIv];
 }
 
 // 保存图片到相册后的结果

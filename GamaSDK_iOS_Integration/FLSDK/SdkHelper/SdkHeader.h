@@ -9,7 +9,7 @@
 #import "Masonry.h"
 #import "CComHeader.h" //最基本
 
-#import "UIImage+GamaBundleImage.h"
+#import "UIImage+ResBundle.h"
 #import "UIColor+HexStringToColorTW.h"
 #import "UIUtil.h"
 #import "CCSDKDATA.h"
@@ -17,7 +17,7 @@
 #import "LoginResponse.h"
 
 #import "SUtil.h"  //功能相关
-#import "ConfigHeader.h" //功能相关
+#import "ResHeader.h" //功能相关
 #import "GamaAdInterface.h"
 #import "StringUtil.h"
 #import "DimeUtil.h"
@@ -47,7 +47,7 @@
 
 #define SDK_DATA                           [CCSDKDATA sharedSdkData]
 
-#define GetImage(imageName)     [UIImage gama_imageNamed:imageName]
+#define GetImage(imageName)     [UIImage res_imageNamed:imageName]
 
 #define appTopViewController    [SUtil getCurrentViewController]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]

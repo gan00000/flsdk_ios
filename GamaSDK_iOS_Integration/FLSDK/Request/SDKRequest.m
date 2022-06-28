@@ -17,7 +17,7 @@
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                                 errorBlock:(BJServiceErrorBlock)errorBlock
 {
-    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKConReader getCdnUrl]];
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getCdnUrl]];
     [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;

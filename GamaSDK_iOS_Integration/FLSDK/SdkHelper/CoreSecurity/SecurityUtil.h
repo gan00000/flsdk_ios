@@ -11,7 +11,7 @@
  GAMA的保密类,主要进行：加密，解密，转码等职能。
  */
 
-@interface GamaSecurity : NSObject
+@interface SecurityUtil : NSObject
 /**
  *  从一个明文字符串，加密得到一个加密的字符串
  *
