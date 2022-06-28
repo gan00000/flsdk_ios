@@ -296,11 +296,16 @@
 
 + (void)stopLoadingAtView:(UIView *)baseView
 {
-    if (baseView == nil) {
-        baseView = appTopViewController.view;
-    }
-    UIActivityIndicatorView *indicator = (UIActivityIndicatorView *)[baseView viewWithTag:kLoadingTag];
-    [indicator removeFromSuperview];
+    __block  UIView *blockView= baseView;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (blockView == nil) {
+            blockView = appTopViewController.view;
+        }
+        UIActivityIndicatorView *indicator = (UIActivityIndicatorView *)[blockView viewWithTag:kLoadingTag];
+        [indicator removeFromSuperview];
+    });
+   
 }
 
 + (UIView *)initWithMaxTitle:(NSString *)maxTitle minTitle:(NSString *)minTitle

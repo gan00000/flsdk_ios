@@ -30,6 +30,8 @@
 		0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
 		032029282869840800E8D5A5 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 032029272869840800E8D5A5 /* PayData.m */; };
 		0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
+		0320292F2869B84A00E8D5A5 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320292D2869B84A00E8D5A5 /* LineSDK.framework */; };
+		032029302869B84A00E8D5A5 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */; };
 		032AB8B7285A006600F1FD3B /* GamaSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* GamaSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* GamaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* GamaSecurity.m */; };
 		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -75,8 +77,6 @@
 		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
 		0369B35928647256002F4B2F /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
 		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
-		0371266E2868235200A5A092 /* LineSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03712669286719EF00A5A092 /* LineSDK.xcframework */; };
-		037126702868235400A5A092 /* LineSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371266C286734E600A5A092 /* LineSDKObjC.xcframework */; };
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
@@ -261,6 +261,8 @@
 		032029272869840800E8D5A5 /* PayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PayData.m; path = FLSDK/Request/PayData.m; sourceTree = SOURCE_ROOT; };
 		0320292928698F1800E8D5A5 /* CreateOrderResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateOrderResp.h; sourceTree = "<group>"; };
 		0320292A28698F1800E8D5A5 /* CreateOrderResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateOrderResp.m; sourceTree = "<group>"; };
+		0320292D2869B84A00E8D5A5 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
+		0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
 		032AB891285A006600F1FD3B /* GamaSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurityFunction.m; sourceTree = "<group>"; };
 		032AB892285A006600F1FD3B /* GamaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaSecurity.m; sourceTree = "<group>"; };
 		032AB893285A006600F1FD3B /* GamaSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaSecurityFunction.h; sourceTree = "<group>"; };
@@ -330,8 +332,6 @@
 		0369B35828647256002F4B2F /* DimeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimeUtil.m; sourceTree = "<group>"; };
 		0369B35B28655669002F4B2F /* LoginButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginButtonData.h; sourceTree = "<group>"; };
 		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
-		03712669286719EF00A5A092 /* LineSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LineSDK.xcframework; sourceTree = "<group>"; };
-		0371266C286734E600A5A092 /* LineSDKObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LineSDKObjC.xcframework; sourceTree = "<group>"; };
 		03764809286178D600CAD034 /* GIDDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIDDelegate.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* GIDDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIDDelegate.m; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
@@ -614,7 +614,6 @@
 				22AA03211F308AB4001C8B51 /* GameKit.framework in Frameworks */,
 				2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */,
 				035FA55B28644456000B2335 /* FBSDKShareKit.xcframework in Frameworks */,
-				037126702868235400A5A092 /* LineSDKObjC.xcframework in Frameworks */,
 				24A4B6691DD5BA7A003AF6F0 /* JavaScriptCore.framework in Frameworks */,
 				035FA549286442A7000B2335 /* GTMAppAuth.xcframework in Frameworks */,
 				24966D971D5894C9005BE6EB /* ReplayKit.framework in Frameworks */,
@@ -660,7 +659,7 @@
 				CEE6B9351A149895009E77FF /* MessageUI.framework in Frameworks */,
 				CEE6B9391A1498A5009E77FF /* StoreKit.framework in Frameworks */,
 				CEE6B93D1A1498B5009E77FF /* Accounts.framework in Frameworks */,
-				0371266E2868235200A5A092 /* LineSDK.xcframework in Frameworks */,
+				0320292F2869B84A00E8D5A5 /* LineSDK.framework in Frameworks */,
 				035FA541286442A7000B2335 /* FirebaseCoreInternal.xcframework in Frameworks */,
 				CEE6B9371A14989E009E77FF /* SystemConfiguration.framework in Frameworks */,
 				CEE6B9311A149887009E77FF /* CoreGraphics.framework in Frameworks */,
@@ -690,6 +689,15 @@
 				032AB898285A006600F1FD3B /* GameUserModel.m */,
 			);
 			path = DataMode;
+			sourceTree = "<group>";
+		};
+		0320292C2869B84A00E8D5A5 /* LineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0320292D2869B84A00E8D5A5 /* LineSDK.framework */,
+				0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */,
+			);
+			path = LineSDK;
 			sourceTree = "<group>";
 		};
 		032AB889285A006600F1FD3B /* CoreUtil */ = {
@@ -832,15 +840,6 @@
 				0369B35C28655669002F4B2F /* LoginButtonData.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		03712668286719EF00A5A092 /* LineSDK */ = {
-			isa = PBXGroup;
-			children = (
-				0371266C286734E600A5A092 /* LineSDKObjC.xcframework */,
-				03712669286719EF00A5A092 /* LineSDK.xcframework */,
-			);
-			path = LineSDK;
 			sourceTree = "<group>";
 		};
 		037648082861789A00CAD034 /* GG */ = {
@@ -1196,7 +1195,7 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
-				03712668286719EF00A5A092 /* LineSDK */,
+				0320292C2869B84A00E8D5A5 /* LineSDK */,
 				035FA55528644455000B2335 /* Facebook */,
 				035FA51D286442A7000B2335 /* Firebase */,
 				03B918ED2860AECB0029AE6A /* Masonry */,
@@ -1492,6 +1491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032029302869B84A00E8D5A5 /* LineSDKResource.bundle in Resources */,
 				035FA547286442A7000B2335 /* GoogleSignIn.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				E974128720874A170018E1A6 /* Default-568h@2x.png in Resources */,

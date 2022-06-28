@@ -29,8 +29,15 @@
     static MWApplePayManager *manager = nil;
     dispatch_once(&onceToken, ^{
         manager = [[MWApplePayManager alloc]init];
+        [manager initManager];
     });
     return manager;
+}
+
+- (void)initManager
+{
+    SDK_LOG(@"-addTransactionObserver");
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
 /** 检测客户端与服务器漏单情况处理*/
@@ -42,7 +49,7 @@
         NSString *orderId = orderInfo[@"orderId"];
         NSString *receipt = orderInfo[@"receipt"];
         
-        [[MWApplePayManager shareManager] verifyPurchaseForServiceWithOrderId:orderId receipt:receipt];
+//        [[MWApplePayManager shareManager] verifyPurchaseForServiceWithOrderId:orderId receipt:receipt];
     }
 }
 
@@ -60,7 +67,7 @@
         }
         
     }else{
-        NSLog(@"没有历史未消耗订单");
+        SDK_LOG(@"没有历史未消耗订单");
     }
 }
 
@@ -100,13 +107,10 @@
 //        [AAProgressManager showFinishWithStatus:@"越狱手机不支持内购"];
 //        return;
 //    }
-    
+    SDK_LOG(@"-SKPaymentQueue canMakePayments]");
     if([SKPaymentQueue canMakePayments]){
         
-        [self removeAllUncompleteTransactionsBeforeNewPurchase];
-        
-        [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-
+//        [self removeAllUncompleteTransactionsBeforeNewPurchase];
         self.orderId = orderId;
         self.statusBlcok = statusBlock;
         [self requestProductData:productId];
@@ -117,26 +121,33 @@
 }
 
 /** 去Apple IAP Service 根据商品ID请求商品信息*/
+#pragma mark -根据商品ID请求商品信息
 - (void)requestProductData:(NSString *)productId{
     
-//    [AAProgressManager showWithStatus:@"正在请求..."];
+    [SdkUtil showLoadingAtView:nil];
     NSArray *product = [[NSArray alloc] initWithObjects:productId,nil];
     
     NSSet *nsset = [NSSet setWithArray:product];
     SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:nsset];
     request.delegate = self;
+    SDK_LOG(@"-SKProductsRequest start");
     [request start];
 }
 
+#pragma mark -请求付款
 - (void)requestPament:(SKProduct *)p {
     
     SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:p];
-    payment.quantity = (NSInteger)p.price;//购买次数=价钱
-    if (payment.quantity == 0) {
-        payment.quantity = 1;
-    }
+//    payment.quantity = (NSInteger)p.price;//购买次数=价钱
+//    if (payment.quantity == 0) {
+//        payment.quantity = 1;
+//    }
     //設置用戶信息
-    payment.applicationUsername = self.orderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager] getUID]];
+    if ([SUtil getSystemVersion].intValue>7)
+    {
+        payment.applicationUsername = self.orderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager] getUID]];
+    }
+    SDK_LOG(@"发起付款-addPayment");
     [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
 
@@ -147,13 +158,14 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
+        [SdkUtil stopLoadingAtView:nil];
         NSArray *product = response.products;
         if([product count] == 0){
             [AlertUtil showAlertWithMessage:(@"無法獲取商品信息，請重新嘗試購買")];
             return;
         }
         
-        NSLog(@"产品付费数量:%ld",product.count);
+        SDK_LOG(@"产品付费数量:%ld",product.count);
         
         SKProduct *p = product.firstObject;
         
@@ -165,9 +177,9 @@
 
 //请求失败
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{
-    NSLog(@"------------------错误didFailWithError-----------------:%@", error);
+    SDK_LOG(@"------------------错误didFailWithError-----------------:%@", error);
     dispatch_async(dispatch_get_main_queue(), ^{
-        
+        [SdkUtil stopLoadingAtView:nil];
         if (self.statusBlcok) {
             self.statusBlcok(NO);
         }
@@ -177,31 +189,33 @@
 }
 
 - (void)requestDidFinish:(SKRequest *)request{
-    NSLog(@"------------反馈信息结束requestDidFinish-----------------%@",request);
+    SDK_LOG(@"------------反馈信息结束requestDidFinish-----------------%@",request);
+//    [SdkUtil stopLoadingAtView:nil];
 }
 
 #pragma mark -- 监听AppStore支付状态
+
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transaction{
     
-    NSLog(@"监听AppStore支付状态");
+    SDK_LOG(@"监听AppStore支付状态");
     dispatch_async(dispatch_get_main_queue(), ^{
         
         for(SKPaymentTransaction *tran in transaction){
+            //如果上一笔未调用finishTransaction，发起付款会直接回调到这里
             switch (tran.transactionState) {
                 case SKPaymentTransactionStatePurchased:
                 {
-                    // 发送到苹果服务器验证凭证
-                    [self verifyPurchaseWithPaymentTransaction];
-                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+                    [self handleTransaction:tran];
+//                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
                 }
                     break;
                 case SKPaymentTransactionStatePurchasing:
-                    NSLog(@"商品添加进列表");
+                    SDK_LOG(@"商品添加进列表 SKPaymentTransactionStatePurchasing");
                     break;
                 case SKPaymentTransactionStateRestored:
                 {
-                    [AlertUtil showAlertWithMessage:(@"已经购买过商品")];
-                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+//                    [AlertUtil showAlertWithMessage:(@"已经购买过商品")];
+                    [self completeTransaction:tran];
                 }
                     break;
                 case SKPaymentTransactionStateFailed:
@@ -209,9 +223,9 @@
                     if (self.statusBlcok) {
                         self.statusBlcok(NO);
                     }
-                    NSLog(@"交易失败");
+                    SDK_LOG(@"交易失败:%@",tran.error);
 
-                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+                    [self completeTransaction:tran];
                 }
                     break;
                 case SKPaymentTransactionStateDeferred:
@@ -220,7 +234,7 @@
                 }
                     break;
                 default:
-                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+                    [self completeTransaction:tran];
                     break;
             }
         }
@@ -229,89 +243,50 @@
 }
 
 #pragma mark -- 验证
-/**验证购买，避免越狱软件模拟苹果请求达到非法购买问题*/
--(void)verifyPurchaseWithPaymentTransaction{
-    
-    //从沙盒中获取交易凭证并且拼接成请求体数据
-    NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
-    NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
-    NSString *receiptString = [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
-    [self saveReceiptData:@{@"receipt":receiptString,
-                            @"orderId":self.orderId}];
-    
-  
-    [self verifyPurchaseForServiceWithOrderId:self.orderId
-                                      receipt:receiptString];
-}
-
-- (void)verifyPurchaseForServiceWithOrderId:(NSString *)orderId
-                                    receipt:(NSString *)receiptString
+-(void)handleTransaction:(SKPaymentTransaction *)transaction
 {
-    if (orderId == nil && receiptString == nil) {
-        if (self.statusBlcok) {
-            self.statusBlcok(NO);
-        }
-//        [AAProgressManager showFinishWithStatus:@"订单号/凭证无效"];
+    
+    NSString *transactionId = transaction.transactionIdentifier;
+    
+    if ([StringUtil isEmpty:transactionId]) {
         return;
     }
     
-    [self removeTransaction];
-//
-//    [AAProgressManager showWithStatus:@"正在验证服务器..."];
-//    
-//    WS(weakSelf);
-//    [[APIManager sharedInstance] verifyPurchaseWithOrderID:orderId
-//                                                    params:@{@"ceceipt-data":receiptString}
-//                                                   success:^(id response)
-//     {
-//         dispatch_async(dispatch_get_main_queue(), ^{
-//             [AAProgressManager dismiss];
-//             [AAProgressManager showFinishWithStatus:L(@"交易完成")];
-//             [weakSelf removeLocReceiptData];
-//             if (weakSelf.statusBlcok) {
-//                 weakSelf.statusBlcok(YES);
-//             }
-//         });
-//         
-//     } failure:^(NSError *error) {
-//         dispatch_async(dispatch_get_main_queue(), ^{
-//             
-//             [CommonFunction showError:error];
-//             [weakSelf verifyPurchaseFail];
-//         });
-//     }];
+    //从沙盒中获取交易凭证并且拼接成请求体数据
+    //验证字符串,如果是8.0以上的系统，通过新的方式获取到receiptData
+    
+    //未完成的情况下transactionId相同  receiptData每次会变
+    NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
+    NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
+    NSString *receiptString = [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+    [self saveReceiptData:@{@"receipt":receiptString, @"orderId":self.orderId}];
+    
+    /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
+    NSString * parameterStr = transaction.payment.applicationUsername;
+    
+    if (!parameterStr)
+    {
+        parameterStr = @"";
+    }
+    
+    [SDKRequest paymentWithTransactionId:transactionId receiptData:receiptString orderId:parameterStr gameInfo:SDK_DATA.gameUserModel accountModel:SDK_DATA.mLoginResponse.data otherParamsDic:nil successBlock:^(id responseData) {
+        
+        [[SKPaymentQueue defaultQueue] finishTransaction:transaction];// 结束订单
+        [self removeTransaction];
+        
+    } errorBlock:^(BJError *error) {
+        
+        [AlertUtil showAlertWithMessage:error.message];
+    }];
+    
 }
 
-- (void)verifyPurchaseFail
-{
-//    WS(weakSelf);
-//    UIAlertView *altert =[UIAlertView alertViewWithTitle:@"服务器验证失败"
-//                                                 message:@"账单在验证服务器过程中出现错误，\n请检查网络环境是否可以再次验证\n如果取消可在网络环境良好的情况下重新启动行者可再次继续验证支付"
-//                                       cancelButtonTitle:L(@"取消")
-//                                       otherButtonTitles:@[L(@"再次验证")]
-//                                               onDismiss:^(NSInteger buttonIndex)
-//                          {
-//                              dispatch_async(dispatch_get_main_queue(), ^
-//                                             {
-//                                                 [XSApplePayManager checkOrderStatus];
-//                                             });           ;
-//
-//                          } onCancel:^{
-//                              dispatch_async(dispatch_get_main_queue(), ^{
-//
-//                                  if (weakSelf.statusBlcok) {
-//                                      weakSelf.statusBlcok(NO);
-//                                  }
-//                                  [PromptInfo showWithText:@"可在网络环境良好的情况下重新启动行者可再次继续验证支付"];
-//
-//                              });
-//                          }];
-//    [altert show];
-}
+
 
 //交易结束
 - (void)completeTransaction:(SKPaymentTransaction *)transaction
 {
+    [SdkUtil stopLoadingAtView:nil];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
@@ -321,7 +296,7 @@
 }
 
 #pragma mark -- 本地保存一次支付凭证
-static NSString *const kSaveReceiptData = @"kSaveReceiptData";
+static NSString *const kSaveReceiptData = @"kSaveReceiptData_";
 
 - (void)saveReceiptData:(NSDictionary *)receiptData
 {

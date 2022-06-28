@@ -109,6 +109,14 @@ thirdPlate:(NSString *)thirdPlate
                         successBlock:(PayServiceSuccessBlock)successBlock
            errorBlock:(PayServiceErrorBlock)errorBlock;
 
++ (void)paymentWithTransactionId:(NSString *)transactionId
+                     receiptData:(NSString *)receiptData
+                         orderId:(NSString *)orderId
+                        gameInfo:(GameUserModel*)gameUserModel
+                    accountModel:(AccountModel*) accountModel
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(PayServiceSuccessBlock)successBlock
+                      errorBlock:(PayServiceErrorBlock)errorBlock;
 
 +(NSString *) createSdkUrl:(NSString *)url;
 @end

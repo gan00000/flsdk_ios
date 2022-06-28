@@ -600,6 +600,78 @@
     
 }
 
++ (void)paymentWithTransactionId:(NSString *)transactionId
+                     receiptData:(NSString *)receiptData
+                         orderId:(NSString *)orderId
+                        gameInfo:(GameUserModel*)gameUserModel
+                    accountModel:(AccountModel*) accountModel
+                      otherParamsDic:(NSDictionary *)otherParamsDic
+                        successBlock:(PayServiceSuccessBlock)successBlock
+                          errorBlock:(PayServiceErrorBlock)errorBlock
+{
+    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",GAME_CODE];
+    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+    
+//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
+//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
+    
+    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    
+    @try {
+        NSDictionary *dic = @{
+            @"signature"        :[md5SignStr lowercaseString],
+            @"timestamp"        :timeStamp,
+            @"gameCode"         :GAME_CODE,
+            @"userId"           :accountModel.userId,
+            
+            @"orderId"           :orderId,
+            @"transactionId"      :transactionId,
+            @"receiptData"        :receiptData,
+            
+            @"loginAccessToken"  :accountModel.token,
+            @"loginTimestamp"   :accountModel.timestamp,
+            
+//            @"thirdPlatId"      :accountModel.thirdId,
+//            @"thirdLoginId"     :accountModel.thirdId,
+//
+//            @"registPlatform"   :accountModel.loginType,
+//            @"loginMode"        :accountModel.loginType,
+            
+            @"payType"          :@"apple",
+            @"mode"             :@"apple",//支付方式
+//            @"serverCode"           :gameUserModel.serverCode,
+//            @"serverName"           :gameUserModel.serverName,
+//            @"roleId"           :gameUserModel.roleID,
+//            @"roleName"           :gameUserModel.roleName,
+//            @"roleLevel"           :gameUserModel.roleLevel,
+//            @"roleVipLevel"           :gameUserModel.roleVipLevel,
+
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    [HttpServiceEnginePay getRequestWithFunctionPath:api_payment params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
+
 
 #pragma mark - 通過url創建通用參數鏈接
 +(NSString *) createSdkUrl:(NSString *)url{
