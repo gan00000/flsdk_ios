@@ -23,7 +23,7 @@
             // 获取到权限后，依然使用老方法获取idfa
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-                NSLog(@"%@",idfa);
+                NSLog(@"idfa=%@",idfa);
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
             }
@@ -33,7 +33,7 @@
         // 判断在设置-隐私里用户是否打开了广告跟踪
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-            NSLog(@"%@",idfa);
+            NSLog(@"idfa=%@",idfa);
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
         }

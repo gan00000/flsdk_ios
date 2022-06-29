@@ -120,7 +120,7 @@
         
     }];
     
-//    [AdUtil ];
+    [AdUtil requestIDFA];
 }
 
 

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdUtil : NSObject
 
++ (void)requestIDFA;
+
 @end
 
 NS_ASSUME_NONNULL_END
