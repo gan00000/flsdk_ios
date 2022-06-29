@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
+@property (nonatomic, assign)CGFloat keyBoardHeight;
+
 + (instancetype)sharedSdkData;
 
 @end

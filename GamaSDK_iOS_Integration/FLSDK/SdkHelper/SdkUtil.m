@@ -191,7 +191,8 @@
 + (void)toastMsg:(NSString *)msg atView:(UIView *)baseView
 {
     if (!baseView) {
-        baseView = [UIApplication sharedApplication].windows[0];
+        baseView = [UIApplication sharedApplication].keyWindow;//windows[0];
+//        baseView = [SUtil getCurrentWindow];
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -237,7 +238,12 @@
         [aler setFrame:CGRectMake(0, 0, _width, _height)];
         
         CGPoint b_c = baseView.center;
-        aler.center = CGPointMake( b_c.x,b_c.y + b_c.y / 2);
+//        CGFloat keyBoardHeight = SDK_DATA.keyBoardHeight;
+        if (SDK_DATA.keyBoardHeight > 10) {
+            aler.center = CGPointMake( b_c.x, baseView.frame.size.height - SDK_DATA.keyBoardHeight - _height);
+        }else{
+            aler.center = CGPointMake( b_c.x,b_c.y + b_c.y / 2);
+        }
         
         [toastLabel setFrame:CGRectMake( 0, 0, tempStringSize.width *2 , _tempHeight)];
         toastLabel.center = CGPointMake(_width/2, _height/2);

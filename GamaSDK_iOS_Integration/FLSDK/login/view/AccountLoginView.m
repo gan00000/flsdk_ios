@@ -97,7 +97,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        
+        accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -111,6 +111,7 @@
         
         //密码
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
         [self addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {

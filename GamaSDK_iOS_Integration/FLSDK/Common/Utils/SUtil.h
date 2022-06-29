@@ -96,6 +96,7 @@
  */
 + (UIViewController *)getCurrentViewController;
 
++ (UIWindow *)getCurrentWindow;
 /**
  *	@brief	判断设备是否连接网络
  *

@@ -534,10 +534,11 @@
     if (self.currentEditingTextViewFrame.origin.y == 0) {//为0返回
         return;
     }
+    
     //获取键盘高度
     NSDictionary* info = [note userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    
+    SDK_DATA.keyBoardHeight = kbSize.height;
     CGFloat offSet = self.currentEditingTextViewFrame.origin.y + self.currentEditingTextViewFrame.size.height - (self.view.frame.size.height - kbSize.height);
     //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
     if (offSet > 0.01) {
@@ -571,6 +572,7 @@
         }];
     }];
     self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
+    SDK_DATA.keyBoardHeight = 0;
     
 }
 #pragma mark - UITextField Delegate
