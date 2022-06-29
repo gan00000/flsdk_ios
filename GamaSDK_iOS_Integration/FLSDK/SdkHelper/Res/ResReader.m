@@ -223,6 +223,15 @@ static dispatch_once_t onceToken;
     return [self getStringForKey:@"terms_service_url"];
 }
 
+-(NSString *) getAfDevKey
+{
+    return [self getStringForKey:@"af_dev_key"];
+}
+
+-(NSString *) getAppId
+{
+    return [self getStringForKey:@"sdk_appId"];
+}
 
 -(NSString *) getFacebookAppId
 {

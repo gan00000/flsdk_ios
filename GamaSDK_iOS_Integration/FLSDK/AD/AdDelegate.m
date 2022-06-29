@@ -10,15 +10,23 @@
 #import <AdSupport/AdSupport.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/ASIdentifierManager.h>
+#import "SdkHeader.h"
 
 @implementation AdDelegate
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
-    [AppsFlyerLib shared].isDebug = YES;
-    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"QtrxWJpdhQVov9F8hwKD3o"];
-    [[AppsFlyerLib shared] setAppleAppID:@"1630130607"];
-    
+    NSString *afDevKey = [SDKRES getAfDevKey];
+    NSString *appId = [SDKRES getAppId];
+    SDK_LOG(@"afDevKey:%@,appId=%@",afDevKey,appId);
+    if ([StringUtil isNotEmpty:afDevKey] && [StringUtil isNotEmpty:appId]) {
+        
+        [AppsFlyerLib shared].isDebug = YES;
+        [[AppsFlyerLib shared] setAppsFlyerDevKey:afDevKey];//QtrxWJpdhQVov9F8hwKD3o
+        [[AppsFlyerLib shared] setAppleAppID:appId];
+        
+    }
+   
     return YES;
 }
 

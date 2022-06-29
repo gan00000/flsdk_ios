@@ -46,4 +46,7 @@
 -(NSString *) getTermsServiceUrl;
 
 -(NSString *) getFacebookAppId;
+
+-(NSString *) getAfDevKey;
+-(NSString *) getAppId;
 @end

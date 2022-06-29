@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>sdk_appId</key>
+	<string>1630130607</string>
+	<key>af_dev_key</key>
+	<string>QtrxWJpdhQVov9F8hwKD3o</string>
 	<key>sdk_url_cdn</key>
 	<string>https://hktw-t-reshktw-static.meowplayer.com/</string>
 	<key>terms_service_url</key>
@@ -16,36 +20,5 @@
 	<string>https://hktw-t-login.meowplayer.com/</string>
 	<key>sdk_url_pay</key>
 	<string>https://hktw-t-pay.meowplayer.com/</string>
-	<key>thirdPartyInfo</key>
-	<dict>
-		<key>FacebookReadPermissions</key>
-		<string></string>
-		<key>adjustAppKey1</key>
-		<string>1154138418</string>
-		<key>adjustAppKey2</key>
-		<string>645943775</string>
-		<key>adjustAppKey3</key>
-		<string>578757334</string>
-		<key>adjustAppKey4</key>
-		<string>1082196441</string>
-		<key>adjustAppSecret</key>
-		<string>1</string>
-		<key>adjustAppToken</key>
-		<string>cy9vwv6ohurk</string>
-		<key>appsflyerAppID</key>
-		<string></string>
-		<key>appsflyerCurrentCode</key>
-		<string>USD</string>
-		<key>appsflyerDevKey</key>
-		<string></string>
-		<key>facebookAppID</key>
-		<string>951929145281682</string>
-		<key>facebookDisplayName</key>
-		<string>lyjios</string>
-		<key>twitterConsumerKey</key>
-		<string></string>
-		<key>twitterSecret</key>
-		<string></string>
-	</dict>
 </dict>
 </plist>
