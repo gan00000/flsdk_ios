@@ -26,8 +26,8 @@
     return _xDimeUtil;
 }
 
--(NSInteger)getSdkPageWidth
-{
+//-(NSInteger)getSdkPageWidth
+//{
 //    if (IS_IPHONE) {
 //        if (!IS_PORTRAIT) {//横屏
 //            return kBgHeight * (608.0 / 582.0);
@@ -35,12 +35,12 @@
 //
 //        return SCREEN_WIDTH * 0.88;
 //    }
-    return 608 * 0.8;
-}
+//    return 608 * 0.8;
+//}
 
 
--(NSInteger)getSdkPageHeight
-{
+//-(NSInteger)getSdkPageHeight
+//{
 //    if (IS_IPHONE) {
 //        if (SCREEN_WIDTH > SCREEN_HEIGHT) {//横屏
 //            int hetight = SCREEN_HEIGHT * 0.85;
@@ -48,8 +48,8 @@
 //        }
 //        return [self getSdkPageWidth] + 1.1;//豎屏
 //    }
-    return 582 * 0.8;;
-}
+//    return 582 * 0.8;;
+//}
 
 
 //h = 582 w = 608

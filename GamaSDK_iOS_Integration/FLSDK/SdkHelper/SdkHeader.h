@@ -33,9 +33,6 @@
 #define kBgAlpha                         0.9f
 
 
-#define kBgWidth                    [UIUtil getSdkPageWidth]
-#define kBgHeight                   [UIUtil getSdkPageHeight]
-
 //#define kInputTextFiledHeight                     [UIUtil getItemHeight]//48.0
 //#define kInputTextFiledMarginLeftRight                 [UIUtil getItemWidthMargin]
 //#define kInputTextFiledTopMargin                       kInputTextFiledHeight / 7

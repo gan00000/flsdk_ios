@@ -178,8 +178,14 @@
         [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(@(0));
             make.centerY.equalTo(@(0));
-            make.width.equalTo(@(VW(375)));
-            make.height.equalTo(@(VH(667 + 30)));
+            if (IS_PORTRAIT) {
+                make.width.mas_equalTo(VW(375));
+                make.height.mas_equalTo(VH(667 + 30));
+            }else{
+                make.width.mas_equalTo(VW(667));
+                make.height.mas_equalTo(VH(375));
+            }
+           
         }];
     }
     return _sdkContentView;
