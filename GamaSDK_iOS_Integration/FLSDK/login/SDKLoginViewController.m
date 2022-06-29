@@ -23,7 +23,6 @@
 #import "BindAccountView.h"
 
 #import "AccountModel.h"
-#import "EventHeader.h"
 
 @interface SDKLoginViewController()
 
@@ -182,8 +181,11 @@
                 make.width.mas_equalTo(VW(375));
                 make.height.mas_equalTo(VH(667 + 30));
             }else{
-                make.width.mas_equalTo(VW(667));
-                make.height.mas_equalTo(VH(375));
+//                make.width.mas_equalTo(VW(667));
+//                make.height.mas_equalTo(VH(375));
+                
+                make.width.mas_equalTo(VW(375));
+                make.height.mas_equalTo(VH(667));
             }
            
         }];

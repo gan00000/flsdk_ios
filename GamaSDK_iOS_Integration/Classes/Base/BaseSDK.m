@@ -13,8 +13,6 @@
 #import "FirebaseDelegate.h"
 #import "LineDelegate.h"
 #import "AdDelegate.h"
-#import "EventHeader.h"
-#import "AdUtil.h"
 #import <StoreKit/StoreKit.h>
 
 @implementation BaseSDK

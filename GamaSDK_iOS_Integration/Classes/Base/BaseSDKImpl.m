@@ -4,8 +4,6 @@
 #import "BaseSDKImpl.h"
 #import "ResHeader.h"
 
-#import "EventHeader.h"
-
 #import <objc/runtime.h>
 #import <objc/message.h>
 #if __has_include(<FirebaseMessaging/FirebaseMessaging.h>)

@@ -36,7 +36,6 @@
 		03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
-		03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320293F286B17CF00E8D5A5 /* AdUtil.m */; };
 		032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
 		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -272,8 +271,6 @@
 		03202938286B02D900E8D5A5 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
 		0320293A286B08E000E8D5A5 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		0320293E286B17CF00E8D5A5 /* AdUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdUtil.h; sourceTree = "<group>"; };
-		0320293F286B17CF00E8D5A5 /* AdUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdUtil.m; sourceTree = "<group>"; };
 		032AB891285A006600F1FD3B /* SdkSecurityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkSecurityFunction.m; sourceTree = "<group>"; };
 		032AB892285A006600F1FD3B /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		032AB893285A006600F1FD3B /* SdkSecurityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkSecurityFunction.h; sourceTree = "<group>"; };
@@ -406,7 +403,6 @@
 		03B919242860AECB0029AE6A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		03B919252860AECB0029AE6A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		03BA72BC286B343800801F31 /* EventHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventHeader.h; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* LineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineDelegate.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* LineDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineDelegate.m; sourceTree = "<group>"; };
 		03E0767F2862C07700B81B65 /* FirebaseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseDelegate.h; sourceTree = "<group>"; };
@@ -727,9 +723,6 @@
 				E947D321221D73CE00490C35 /* AdLogger.m */,
 				03202937286B02D900E8D5A5 /* AdDelegate.h */,
 				03202938286B02D900E8D5A5 /* AdDelegate.m */,
-				0320293E286B17CF00E8D5A5 /* AdUtil.h */,
-				0320293F286B17CF00E8D5A5 /* AdUtil.m */,
-				03BA72BC286B343800801F31 /* EventHeader.h */,
 			);
 			path = AD;
 			sourceTree = "<group>";
@@ -1612,7 +1605,6 @@
 				3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */,
 				3295E2FB24DAEDDE00B85976 /* AccountLoginView.m in Sources */,
 				03B9192F2860AECB0029AE6A /* MASViewConstraint.m in Sources */,
-				03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */,
 				3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */,
 				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,

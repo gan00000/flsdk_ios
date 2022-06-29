@@ -120,10 +120,12 @@
 //    [provisionWebView setUserInteractionEnabled:YES];
     [contentView addSubview:provisionWebView];
     [provisionWebView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(contentView).mas_offset(VH(-100));
+        
         make.leading.mas_equalTo(contentView);
         make.top.mas_equalTo(contentView);
         make.trailing.mas_equalTo(contentView);
+        
+        make.height.mas_equalTo(provisionWebView.mas_width);
     }];
     
 //   NSString *xtext = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");

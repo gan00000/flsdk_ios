@@ -17,8 +17,6 @@
 #import "FBDelegate.h"
 #import "LineDelegate.h"
 #import "MWApplePayManager.h"
-#import "AdUtil.h"
-#import "EventHeader.h"
 #import "AdLogger.h"
 
 // 通知类型
@@ -121,7 +119,7 @@
         
     }];
     
-    [AdUtil requestIDFA];
+//    [AdUtil requestIDFA]
 }
 
 
