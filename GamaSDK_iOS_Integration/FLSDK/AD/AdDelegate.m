@@ -12,6 +12,11 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import "SdkHeader.h"
 
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseAnalytics/FIRAnalytics.h>
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 @implementation AdDelegate
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
@@ -57,8 +62,13 @@
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
                 NSLog(@"idfa=%@",idfa);
+                
+                //FB 从 iOS 14.5 开始，您需要设置 isAdvertiserTrackingEnabled，并在每次为设备授予与 Facebook 分享数据的权限时，做好记录。
+                [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:YES];
+                
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
+                [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:NO];
             }
             
         }];
@@ -79,7 +89,18 @@
 
 + (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues{
     
-    [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
+    @try {
+        
+        [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
+        //firebase
+        [FIRAnalytics logEventWithName:eventName parameters:eventValues];
+        //fb
+        [[FBSDKAppEvents shared] logEvent: eventName parameters:eventValues];
+        
+    } @catch (NSException *exception) {
+        //[self _presentAlertWithException:exception andDictionary:dic];
+    }
+   
 }
 
 @end
