@@ -33,7 +33,7 @@
 		0320292F2869B84A00E8D5A5 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320292D2869B84A00E8D5A5 /* LineSDK.framework */; };
 		032029302869B84A00E8D5A5 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */; };
 		03202934286B017600E8D5A5 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03202933286B017600E8D5A5 /* AppsFlyerLib.framework */; };
-		03202939286B02D900E8D5A5 /* AFDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AFDelegate.m */; };
+		03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03202940286B17CF00E8D5A5 /* AdUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320293F286B17CF00E8D5A5 /* AdUtil.m */; };
@@ -201,7 +201,7 @@
 		E92D51CA23668CE70071A0E3 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */; };
 		E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2412477D13400C9A6DC /* CoreFoundation.framework */; };
 		E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
-		E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* GamaAdInterface.m */; };
+		E947D351221ED75F00490C35 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
 		E947D352221ED76200490C35 /* BaseSDKImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D320221D73CD00490C35 /* BaseSDKImpl.m */; };
 		E947D354221ED7F300490C35 /* BaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D325221D73CF00490C35 /* BaseSDK.m */; };
 		E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
@@ -268,8 +268,8 @@
 		0320292D2869B84A00E8D5A5 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0320292E2869B84A00E8D5A5 /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
 		03202933286B017600E8D5A5 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
-		03202937286B02D900E8D5A5 /* AFDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDelegate.h; sourceTree = "<group>"; };
-		03202938286B02D900E8D5A5 /* AFDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDelegate.m; sourceTree = "<group>"; };
+		03202937286B02D900E8D5A5 /* AdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
+		03202938286B02D900E8D5A5 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
 		0320293A286B08E000E8D5A5 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		0320293E286B17CF00E8D5A5 /* AdUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdUtil.h; sourceTree = "<group>"; };
@@ -551,8 +551,8 @@
 		E940F2412477D13400C9A6DC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E940F2432477D14700C9A6DC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		E947D320221D73CD00490C35 /* BaseSDKImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseSDKImpl.m; path = Classes/Base/BaseSDKImpl.m; sourceTree = SOURCE_ROOT; };
-		E947D321221D73CE00490C35 /* GamaAdInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamaAdInterface.m; path = Classes/Base/GamaAdInterface.m; sourceTree = SOURCE_ROOT; };
-		E947D322221D73CE00490C35 /* GamaAdInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamaAdInterface.h; path = Classes/Base/GamaAdInterface.h; sourceTree = SOURCE_ROOT; };
+		E947D321221D73CE00490C35 /* AdLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdLogger.m; path = FLSDK/AD/AdLogger.m; sourceTree = SOURCE_ROOT; };
+		E947D322221D73CE00490C35 /* AdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdLogger.h; path = FLSDK/AD/AdLogger.h; sourceTree = SOURCE_ROOT; };
 		E947D323221D73CE00490C35 /* BaseSDKImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseSDKImpl.h; path = Classes/Base/BaseSDKImpl.h; sourceTree = SOURCE_ROOT; };
 		E947D324221D73CF00490C35 /* BaseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseSDK.h; path = Classes/Base/BaseSDK.h; sourceTree = SOURCE_ROOT; };
 		E947D325221D73CF00490C35 /* BaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseSDK.m; path = Classes/Base/BaseSDK.m; sourceTree = SOURCE_ROOT; };
@@ -723,8 +723,10 @@
 		03202936286B02AD00E8D5A5 /* AD */ = {
 			isa = PBXGroup;
 			children = (
-				03202937286B02D900E8D5A5 /* AFDelegate.h */,
-				03202938286B02D900E8D5A5 /* AFDelegate.m */,
+				E947D322221D73CE00490C35 /* AdLogger.h */,
+				E947D321221D73CE00490C35 /* AdLogger.m */,
+				03202937286B02D900E8D5A5 /* AdDelegate.h */,
+				03202938286B02D900E8D5A5 /* AdDelegate.m */,
 				0320293E286B17CF00E8D5A5 /* AdUtil.h */,
 				0320293F286B17CF00E8D5A5 /* AdUtil.m */,
 				03BA72BC286B343800801F31 /* EventHeader.h */,
@@ -1336,8 +1338,6 @@
 		E974115A208744C30018E1A6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E947D322221D73CE00490C35 /* GamaAdInterface.h */,
-				E947D321221D73CE00490C35 /* GamaAdInterface.m */,
 				E947D324221D73CF00490C35 /* BaseSDK.h */,
 				E947D325221D73CF00490C35 /* BaseSDK.m */,
 				E947D323221D73CE00490C35 /* BaseSDKImpl.h */,
@@ -1629,7 +1629,7 @@
 				03202921286958FB00E8D5A5 /* ApplePay.m in Sources */,
 				3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */,
 				3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */,
-				03202939286B02D900E8D5A5 /* AFDelegate.m in Sources */,
+				03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */,
 				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
 				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
@@ -1659,7 +1659,7 @@
 				032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */,
 				E947D352221ED76200490C35 /* BaseSDKImpl.m in Sources */,
 				0389B3192861B7B30024E62E /* LoginHelper.m in Sources */,
-				E947D351221ED75F00490C35 /* GamaAdInterface.m in Sources */,
+				E947D351221ED75F00490C35 /* AdLogger.m in Sources */,
 				0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */,
 				032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */,
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,

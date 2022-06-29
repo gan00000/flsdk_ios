@@ -153,7 +153,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
     [super _application:application didFinishLaunchingWithOptions:launchOptions];
     
     // handle remote noti
-    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+//    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
 + (void)star_applicationDidBecomeActive:(UIApplication *)application

@@ -9,10 +9,10 @@
 #ifndef EventHeader_h
 #define EventHeader_h
 
-#define GAMESWORD_EVENT_FIRSTPAY            @"flyfun_firstpay"
-#define GAMESWORD_EVENT_OPEN                @"flyfun_open"
-#define GAMESWORD_EVENT_LOGIN               @"flyfun_login_event"
-#define GAMESWORD_EVENT_REGISTER            @"flyfun_register_event"
-#define GAMESWORD_EVENT_ROLE_INFO           @"flyfun_role_info"
+//#define GAMESWORD_EVENT_FIRSTPAY            @"flyfun_firstpay"
+//#define GAMESWORD_EVENT_OPEN                @"flyfun_open"
+//#define GAMESWORD_EVENT_LOGIN               @"flyfun_login_event"
+//#define GAMESWORD_EVENT_REGISTER            @"flyfun_register_event"
+//#define GAMESWORD_EVENT_ROLE_INFO           @"flyfun_role_info"
 
 #endif /* EventHeader_h */

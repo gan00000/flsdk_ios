@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AFDelegate : NSObject
+@interface AdDelegate : NSObject
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)applicationDidBecomeActive:(UIApplication *)application;
 
 
++ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 @end
 
 NS_ASSUME_NONNULL_END

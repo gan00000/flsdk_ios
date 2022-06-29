@@ -77,26 +77,17 @@
         case SDKPage_Login:
         {
             [self showLoginPageOrAutoLogin];
-            
         }
             break;
             
         case SDKPage_LoginType:
         {
-            
-            
-        }
-            break;
-            
-        case SDKPage_UnBind:
-        {
-            
         }
             break;
         default:
             break;
     }
-    
+    [AdLogger logWithEventName:AD_EVENT_OPEN_LOGIN_SCREEN parameters:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -503,11 +494,10 @@
     
     
     if (loginResopnse.code == BJResponseCode_OK_Register) {//注册
-        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters:@{@"userId":rData.userId}];
+        [AdLogger logWithEventName:AD_EVENT_REGISTER_SUCCESS parameters:nil];
         
     }else {//登录
-        [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters:@{@"userId":rData.userId}];
-        
+        [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil];
     }
     
     if ([FLSDK share].loginCompletionHandler) {

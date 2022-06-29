@@ -12,7 +12,21 @@
 #import "PayData.h"
 
 #define FL_SDK_VERSION @"1.4.1"
-//typedef void (^openFuncationResult)(NSDictionary *result ,NSError *error);
+
+// 追踪事件名称
+#define AD_EVENT_APP_OPEN  @"APP_OPEN"
+#define AD_EVENT_LOGIN_SUCCESS  @"LOGIN_SUCCESS"
+#define AD_EVENT_REGISTER_SUCCESS  @"REGISTER_SUCCESS"
+#define AD_EVENT_OPEN_LOGIN_SCREEN  @"OPEN_LOGIN_SCREEN"
+
+#define AD_EVENT_CHECK_PERMISSIONS  @"CHECK_PERMISSIONS"
+#define AD_EVENT_CHECK_UPDATE  @"CHECK_UPDATE"
+#define AD_EVENT_CHECK_RESOURCES  @"CHECK_RESOURCES"
+#define AD_EVENT_SELECT_SERVER  @"SELECT_SERVER"
+#define AD_EVENT_CREATE_ROLE  @"CREATE_ROLE"
+#define AD_EVENT_START_GUIDE  @"START_GUIDE"
+#define AD_EVENT_COMPLETE_GUIDE  @"COMPLETE_GUIDE"
+#define AD_EVENT_FIRST_PAY  @"FIRST_PAY"
 
 // 充值回调
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
@@ -22,38 +36,28 @@ typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
     SDK_PAY_STATUS_PUCHESSING,
 };
 
-
-typedef void (^SDKLoginBlock)(LoginData * loginData);
-
+typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
 typedef void (^SDKLogoutBlock)(NSInteger logout);
-
-typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData *mPayData);
+typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
 //typedef void (^PayFail)(NSDictionary *result);
 //typedef void (^PayPuchessing)(NSDictionary *result);
 
 // 充值类型
-typedef NS_OPTIONS(NSUInteger, SDK_PAY_TYPE)
-{
-    SDK_PAY_TYPE_APPLE,
-    SDK_PAY_TYPE_WEB,
-};
+//typedef NS_OPTIONS(NSUInteger, SDK_PAY_TYPE)
+//{
+//    SDK_PAY_TYPE_APPLE,
+//    SDK_PAY_TYPE_WEB,
+//};
 
 /**
  */
-typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){
-    SDKEventReportFacebook = 1<<0,
-    SDKEventReportFirebase = 1<<1,
-    SDKEventReportAppsflyer = 1<<2,
-    SDKEventReportAdjust = 1<<3,
-    SDKEventReportAllChannel = (SDKEventReportFacebook|SDKEventReportFirebase|SDKEventReportAppsflyer|SDKEventReportAdjust),
-};
-
-
-//typedef NS_ENUM(NSUInteger,GamaOpenFuntion){
-//    GamaOpenDefault = 0,
-//    GamaOpenPhoneBindView = 1,
+//typedef NS_OPTIONS(NSUInteger,SDKEventReportChannel){
+//    SDKEventReportFacebook = 1<<0,
+//    SDKEventReportFirebase = 1<<1,
+//    SDKEventReportAppsflyer = 1<<2,
+//    SDKEventReportAdjust = 1<<3,
+//    SDKEventReportAllChannel = (SDKEventReportFacebook|SDKEventReportFirebase|SDKEventReportAppsflyer|SDKEventReportAdjust),
 //};
-
 
 @interface FLSDK : NSObject
 
@@ -133,14 +137,11 @@ completionHandler:(SDKPayBlock) handler;
 /**
  事件上报
  
- @param channel  选择事件上报渠道;默认:GamaEventReportAllChannel
  @param name 事件名
- @param eventParmas 事件参数
+ @param eventValues 事件参数
  */
-- (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas;
+- (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
-//- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
-//                              roleName:(NSString *)roleName;
 
 @end
 

@@ -2,7 +2,7 @@
 
 #import "BaseSDK.h"
 #import "BaseSDKImpl.h"
-#import "GamaAdInterface.h"
+#import "AdLogger.h"
 #import "GamaSDK+Social.h"
 #import "GamaWebViewController.h"
 #import "SDKLoginViewController.h"
@@ -19,6 +19,7 @@
 #import "MWApplePayManager.h"
 #import "AdUtil.h"
 #import "EventHeader.h"
+#import "AdLogger.h"
 
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";
@@ -316,32 +317,23 @@
     }];
 }
 
+- (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
+{
+    [AdLogger logWithEventName:name parameters:eventValues];
+}
+
 - (void)_pay_webview
 {
-    NSString * resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/"];
-    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+//    NSString * resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/"];
+//    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
     
 }
 
 - (void)openCs
 {
-    SDK_LOG(@"openCs..");
-    NSString *resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
-    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
-}
-
-- (void)trackCreateRoleEventWithRoleId:(NSString *)roleId
-                              roleName:(NSString *)roleName{
-    SDK_LOG(@"trackCreateRoleEventWithRoleId roleID = %@，roleName = %@",roleId,roleName);
-    
-    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_ROLE_INFO parameters:@{@"role_id":roleId,
-                                                                                        @"role_name":roleName,
-                                                                                        //                                                                                        @"level":roleLevel,
-                                                                                        //                                                                                        @"vip_level":roleVipLevel,
-                                                                                        //                                                                                        @"server_code":serverCode,
-                                                                                        //                                                                                        @"server_name":serverName,
-                                                                                        @"userId":SDK_DATA.mLoginResponse.data.userId,
-                                                                                      }];
+//    SDK_LOG(@"openCs..");
+//    NSString *resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
+//    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
 
 - (void)openWebPage:(NSDictionary *)webParams {
@@ -451,26 +443,6 @@
 
 
 #pragma mark - 内部方法
-
-- (void)trackEvent:(SDKEventReportChannel)channel eventName:(NSString *)name eventPar:(NSDictionary *)eventParmas
-{
-    if (channel == SDKEventReportAllChannel || channel == 0) {
-        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAllChannel eventName:name eventValues:eventParmas];
-        return ;//保险
-    }
-    if (channel & SDKEventReportFacebook){
-        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFacebook eventName:name eventValues:eventParmas];
-    }
-    if(channel & SDKEventReportFirebase){
-        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementFirebase eventName:name eventValues:eventParmas];
-    }
-    if(channel & SDKEventReportAppsflyer){
-        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAppsflyer eventName:name eventValues:eventParmas];
-    }
-    if (channel & SDKEventReportAdjust) {
-        //        [GamaAdPort reportEventChannel:GamaThirdAdvertisementAdjust eventName:name eventValues:eventParmas];
-    }
-}
 
 - (void)gama_showPlatformToView:(UIView *)view
 {

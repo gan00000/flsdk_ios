@@ -5,15 +5,16 @@
 #import "FLSDK.h"
 #import "ResHeader.h"
 #import "SUtil.h"
-#import "GamaAdInterface.h"
+#import "AdLogger.h"
 #import "SdkHeader.h"
 #import "SDKRequest.h"
 
 #import "FBDelegate.h"
 #import "FirebaseDelegate.h"
 #import "LineDelegate.h"
-
+#import "AdDelegate.h"
 #import "EventHeader.h"
+#import "AdUtil.h"
 #import <StoreKit/StoreKit.h>
 
 @implementation BaseSDK
@@ -22,13 +23,8 @@
 + (void)_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     // 广告初始化
-//    [GamaAdPort start];
     
-    // 储值初始化
-//    [GamaIapFunctionPort startSDK];
-    
-    // LoginViewModel初始化
-//    [GamaLoginViewModel model];
+    [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     
     [SDKRequest getSdkConfigWithSuccessBlock:^(id responseData) {
         
@@ -39,11 +35,10 @@
     //Facebook事件打点初始化
 //    [[GamaTimer shareInstance] gama_FBEventStartTimer];
     
-    [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_OPEN parameters:nil];
-    
-//    [NSClassFromString(@"KRTwitterLogin") twitterFinishLaunching];
     [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [AdLogger logWithEventName:AD_EVENT_APP_OPEN parameters:nil];
     
 }
 
@@ -51,13 +46,11 @@
 + (void)_applicationDidBecomeActive:(UIApplication *)application
 {
     // 应用每次启动时，将应用icon上的数字减1（前提是原本大于或等于1）
-    if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
-        --[UIApplication sharedApplication].applicationIconBadgeNumber;
-    }
+//    if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
+//        --[UIApplication sharedApplication].applicationIconBadgeNumber;
+//    }
     
-//    [GamaAdPort startWhenBecomeActive];
-//
-//    [GamaIapFunctionPort applicationDidBecomeActive];
+    [AdDelegate applicationDidBecomeActive:application];
     
     [FBDelegate applicationDidBecomeActive:application];
     

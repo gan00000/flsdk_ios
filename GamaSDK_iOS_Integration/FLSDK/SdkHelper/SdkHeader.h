@@ -18,7 +18,7 @@
 
 #import "SUtil.h"  //功能相关
 #import "ResHeader.h" //功能相关
-#import "GamaAdInterface.h"
+#import "AdLogger.h"
 #import "StringUtil.h"
 #import "DimeUtil.h"
 #import "SdkUtil.h"

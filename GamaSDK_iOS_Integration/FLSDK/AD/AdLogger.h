@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GamaAdInterface : NSObject
+@interface AdLogger : NSObject
 
-+ (void)allEventReportWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
++ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
 
 @end
