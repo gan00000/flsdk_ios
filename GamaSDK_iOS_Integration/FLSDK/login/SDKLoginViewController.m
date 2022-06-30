@@ -184,7 +184,7 @@
 //                make.width.mas_equalTo(VW(667));
 //                make.height.mas_equalTo(VH(375));
                 
-                make.width.mas_equalTo(VW(375));
+                make.width.mas_equalTo(VW(380));
                 make.height.mas_equalTo(VH(375));
             }
            

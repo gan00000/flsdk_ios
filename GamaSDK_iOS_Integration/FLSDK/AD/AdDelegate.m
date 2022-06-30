@@ -17,6 +17,8 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+#import <AppsFlyerLib/AppsFlyerLib.h>
+
 @implementation AdDelegate
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
