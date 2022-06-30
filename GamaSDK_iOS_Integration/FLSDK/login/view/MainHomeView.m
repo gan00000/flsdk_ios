@@ -49,6 +49,19 @@
 
 -(void)addView
 {
+    
+    UIImageView *logoIV = [UIUtil initImageViewWithImage:@"mw_logo"];
+    logoIV.hidden = YES;
+    [self addSubview:logoIV];
+    [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+        make.width.mas_equalTo(VW(200));
+        make.height.mas_equalTo(VH(50));
+        make.centerX.mas_equalTo(self);
+    }];
+    
+    
     //游客登录
     guestLoginBtn = [UIUtil initBtnWithTitleText:@"" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
@@ -59,7 +72,7 @@
     
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+        make.top.mas_equalTo(logoIV.mas_bottom).mas_offset(VH(18));
         make.leading.mas_equalTo(self).mas_offset(VH(38));
         make.trailing.mas_equalTo(self).mas_offset(VH(-38));;
         make.height.mas_equalTo(VH(50));
@@ -233,6 +246,7 @@
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
         make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
+//        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     
     checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"mw_cb_uncheck" highlightedImage:nil selectedImageName:@"mw_cb_check" tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
@@ -244,14 +258,6 @@
         make.width.height.mas_equalTo(VH(15));
        
     }];
-    
-//    [TermsView saveAgreenProvisionState:YES];
-//    isAgree = [TermsView isAgreenProvision];
-//    if (isAgree) {
-//        [checkBoxTermsBtn setImage:GetImage(@"mw_cb_check.png") forState:(UIControlStateNormal)];
-//    }else{
-//        [checkBoxTermsBtn setImage:GetImage(@"mw_cb_uncheck.png") forState:(UIControlStateNormal)];
-//    }
     
         NSString *xtext = GetString(@"gama_ui_term_port_read2");
         UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];

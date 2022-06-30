@@ -91,14 +91,17 @@
         }
     }else{
         
-        CGFloat designRate = 667.0/375.0;
-        CGFloat deviceRate = SCREEN_WIDTH / SCREEN_HEIGHT;
+//        CGFloat designRate = 667.0/375.0;
+//        CGFloat deviceRate = SCREEN_WIDTH / SCREEN_HEIGHT;
+//
+//        if (deviceRate >=  designRate) {//设备屏幕宽度大
+//            _viewAdaptRate = SCREEN_HEIGHT / 375.0;
+//        }else{
+//            _viewAdaptRate = SCREEN_WIDTH / 667.0;
+//        }
         
-        if (deviceRate >=  designRate) {//设备屏幕宽度大
-            _viewAdaptRate = SCREEN_HEIGHT / 375.0;
-        }else{
-            _viewAdaptRate = SCREEN_WIDTH / 667.0;
-        }
+        CGFloat deviceRate = SCREEN_HEIGHT / 375.0 * 0.9;
+        _viewAdaptRate = deviceRate;
     }
     return _viewAdaptRate;
 }
