@@ -87,7 +87,7 @@
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             
-            make.width.mas_equalTo(self);
+            make.leading.trailing.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
         }];
         
