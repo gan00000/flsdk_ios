@@ -51,10 +51,10 @@
     
     if (@available(iOS 14, *)) {
         
-//        if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
-//        }else{
-//        }
-        [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:60];
+        if (![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+            [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:60];
+        }
+        
         [[AppsFlyerLib shared] start];
         // iOS14及以上版本需要先请求权限
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
@@ -66,12 +66,16 @@
                 //FB 从 iOS 14.5 开始，您需要设置 isAdvertiserTrackingEnabled，并在每次为设备授予与 Facebook 分享数据的权限时，做好记录。
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:YES];
                 
+//                [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"idfa=%@",idfa]];
+                
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:NO];
+                
             }
             
         }];
+        
     } else {
         // iOS14以下版本依然使用老方法
         // 判断在设置-隐私里用户是否打开了广告跟踪
@@ -79,6 +83,7 @@
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
             NSLog(@"idfa=%@",idfa);
+//            [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"idfa=%@",idfa]];
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
         }
