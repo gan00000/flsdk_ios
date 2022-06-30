@@ -8,6 +8,7 @@
 
 #import "AccountListViewCell.h"
 #import "SdkHeader.h"
+#import "UIView+BlockGesture.h"
 
 @implementation AccountListViewCell
 
@@ -25,15 +26,33 @@
     
     self.contentView.backgroundColor = [UIColor whiteColor];
     
+    UIView *delContentView = [[UIView alloc] init];
+    [self addSubview:delContentView];
+    [delContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.trailing.equalTo(self.contentView.mas_trailing).mas_offset(VW(-10));
+        make.top.mas_equalTo(self.contentView).offset(2);
+        make.bottom.mas_equalTo(self.contentView).offset(-2);
+        make.width.mas_equalTo(delContentView.mas_height);
+       // make.centerY.mas_equalTo(self);
+    }];
+    
     self.deleteAccountBtn = [UIUtil initBtnWithNormalImage:@"delete_icon.png" highlightedImage:@"delete_icon.png" tag:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick:) target:self];
     self.deleteAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.contentView addSubview:self.deleteAccountBtn];
+    [delContentView addSubview:self.deleteAccountBtn];
     [self.deleteAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(self.contentView.mas_trailing).mas_offset(VW(-10));
+//        make.trailing.equalTo(self.contentView.mas_trailing).mas_offset(VW(-10));
 //        make.top.mas_equalTo(self.contentView).offset(2);
 //        make.bottom.mas_equalTo(self.contentView).offset(-2);
-        make.width.height.mas_equalTo(VW(10));
-        make.centerY.mas_equalTo(self);
+        make.width.height.mas_equalTo(VW(14));
+        make.center.mas_equalTo(delContentView);
+    }];
+    delContentView.userInteractionEnabled = YES;
+    [delContentView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        if (self.mItemViewClickHander) {
+            self.mItemViewClickHander(kMoreAccountDeleteActTag);
+        }
+        
     }];
     
     //icon
@@ -60,7 +79,7 @@
         make.leading.equalTo(self.iconImageView.mas_trailing).mas_offset(VW(15));
         make.top.mas_equalTo(self.contentView).offset(2);
         make.bottom.mas_equalTo(self.contentView).offset(-2);
-        make.trailing.mas_equalTo(self.deleteAccountBtn.mas_leading).mas_offset(VW(-15));
+        make.trailing.mas_equalTo(delContentView.mas_leading).mas_offset(VW(-15));
         
     }];
 }
