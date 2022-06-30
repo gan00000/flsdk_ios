@@ -82,7 +82,7 @@
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = @"请求失败"; //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(@"py_error_occur"); //TODO:获取NSError里面的描述信息
             errorBlock(errorObject);
         }
     }];
@@ -135,7 +135,7 @@
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = @"请求失败"; //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(@"py_error_occur"); //TODO:获取NSError里面的描述信息
             errorBlock(errorObject);
         }
     }];
