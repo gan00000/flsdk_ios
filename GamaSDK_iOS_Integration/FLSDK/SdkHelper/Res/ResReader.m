@@ -70,8 +70,7 @@ static dispatch_once_t onceToken;
 //    NSFileManager *fileManager = [NSFileManager defaultManager];
     
     //读取bundle
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME
-                                                   withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -117,8 +116,25 @@ static dispatch_once_t onceToken;
 //从文件中读取配置信息
 -(NSDictionary *)readCoreConfInfo
 {
+    //1.先读取sdk bundle里面
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSBundle *sdkBundle = nil;
+    if (sdkBundleURL) {
+        sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
+    }
+    NSString *infoPlistPath=[sdkBundle pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
+    if (!infoPlistPath) {
+       infoPlistPath = [[NSBundle mainBundle] pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
+    }
+    if (infoPlistPath) {
+        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
+        if (infoDic) {
+            return infoDic;
+        }
+    }
+    //2.在读取复制的documents文件
     //获取配置文件路径
-    NSString * infoPlistPath=[NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@.plist",SDK_CONFIG_INFO_PLIST_NAME]];
+    infoPlistPath=[NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@.plist",SDK_CONFIG_INFO_PLIST_NAME]];
     //获取配置内容字典
     NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
     

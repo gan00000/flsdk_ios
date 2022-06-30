@@ -188,7 +188,6 @@
         }
             break;
         case 7:{
-            [[FLSDK share] trackEvent:SDKEventReportAllChannel eventName:@"test" eventPar:nil];
         }
             break;
 

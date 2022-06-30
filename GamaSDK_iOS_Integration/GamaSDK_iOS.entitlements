@@ -8,9 +8,5 @@
 	<array>
 		<string>Default</string>
 	</array>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>$(AppIdentifierPrefix)com.fzzh.tw</string>
-	</array>
 </dict>
 </plist>
