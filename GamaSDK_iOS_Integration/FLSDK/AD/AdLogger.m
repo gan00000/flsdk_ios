@@ -33,6 +33,8 @@
             @"TIME"        :[SUtil getTimeStamp],
             @"role_name"    :roleName,
             @"role_id"      :roleId,
+            @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
+            @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
         };
         
     } @catch (NSException *exception) {
