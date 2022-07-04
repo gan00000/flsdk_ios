@@ -12,13 +12,6 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import "SdkHeader.h"
 
-#import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseAnalytics/FIRAnalytics.h>
-
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-
-#import <AppsFlyerLib/AppsFlyerLib.h>
-
 @implementation AdDelegate
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
@@ -28,7 +21,9 @@
     SDK_LOG(@"afDevKey:%@,appId=%@",afDevKey,appId);
     if ([StringUtil isNotEmpty:afDevKey] && [StringUtil isNotEmpty:appId]) {
         
-        [AppsFlyerLib shared].isDebug = YES;
+        if ([SDKRES isAdDebug]) {//是否开启debug
+            [AppsFlyerLib shared].isDebug = YES;
+        }
         [[AppsFlyerLib shared] setAppsFlyerDevKey:afDevKey];//QtrxWJpdhQVov9F8hwKD3o
         [[AppsFlyerLib shared] setAppleAppID:appId];
         
@@ -93,21 +88,42 @@
     
 }
 
-
-+ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues{
++ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type{
     
     @try {
         
-        [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
-        //firebase
-        [FIRAnalytics logEventWithName:eventName parameters:eventValues];
-        //fb
-        [[FBSDKAppEvents shared] logEvent: eventName parameters:eventValues];
+        if (type & AdType_Appflyer) {
+            [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
+        }
+        if (type & AdType_Firebase) {
+            //firebase
+            [FIRAnalytics logEventWithName:eventName parameters:eventValues];
+        }
+        if (type & AdType_FB) {
+            
+             //fb
+            [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
+        }
+       
         
     } @catch (NSException *exception) {
         //[self _presentAlertWithException:exception andDictionary:dic];
     }
    
 }
+
+
+
+//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues{
+//
+//    @try {
+//        //fb
+//        [[FBSDKAppEvents shared] logEvent: eventName parameters:eventValues];
+//
+//    } @catch (NSException *exception) {
+//        //[self _presentAlertWithException:exception andDictionary:dic];
+//    }
+//
+//}
 
 @end

@@ -9,6 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseAnalytics/FIRAnalytics.h>
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+#import <AppsFlyerLib/AppsFlyerLib.h>
+
+typedef NS_OPTIONS(NSUInteger, AdType) {
+    AdType_None        = 0,
+    AdType_Appflyer            =  1 << 1,   // 0000 0001
+    AdType_FB                  =  1 << 2,   // 0000 0010
+    AdType_Firebase            =  1 << 3,   // 0000 0100
+    AdType_All                 = AdType_Appflyer | AdType_FB | AdType_Firebase,
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,7 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)applicationDidBecomeActive:(UIApplication *)application;
 
 
-+ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
++ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
+//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -48,6 +48,7 @@
 		032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */; };
+		032ACA4128729E5D00644568 /* USDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 032ACA4028729E5D00644568 /* USDefault.m */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
 		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		035FA537286442A7000B2335 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035FA51F286442A7000B2335 /* FirebaseAuth.xcframework */; };
@@ -296,6 +297,8 @@
 		032AB8B0285A006600F1FD3B /* SdkCfUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkCfUUID.m; sourceTree = "<group>"; };
 		032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdkKeychainItemWrapper.m; sourceTree = "<group>"; };
 		032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResBundle.m"; sourceTree = "<group>"; };
+		032ACA3F28729E5D00644568 /* USDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USDefault.h; sourceTree = "<group>"; };
+		032ACA4028729E5D00644568 /* USDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USDefault.m; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
@@ -1066,6 +1069,8 @@
 				322CBBDA24C589A5000D6B20 /* UIUtil.m */,
 				03669947285E26890008EB50 /* StringUtil.h */,
 				03669948285E26890008EB50 /* StringUtil.m */,
+				032ACA3F28729E5D00644568 /* USDefault.h */,
+				032ACA4028729E5D00644568 /* USDefault.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1588,6 +1593,7 @@
 				32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */,
 				3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */,
 				03B919312860AECB0029AE6A /* UIImage+WebP.m in Sources */,
+				032ACA4128729E5D00644568 /* USDefault.m in Sources */,
 				03B919362860AECB0029AE6A /* UIImage+GIF.m in Sources */,
 				3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */,
 				3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */,

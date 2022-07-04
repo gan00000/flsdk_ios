@@ -49,4 +49,5 @@
 
 -(NSString *) getAfDevKey;
 -(NSString *) getAppId;
+-(BOOL) isAdDebug;
 @end

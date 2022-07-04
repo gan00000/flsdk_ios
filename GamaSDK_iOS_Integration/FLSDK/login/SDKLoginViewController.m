@@ -86,7 +86,7 @@
         default:
             break;
     }
-    [AdLogger logWithEventName:AD_EVENT_OPEN_LOGIN_SCREEN parameters:nil];
+    [AdLogger logWithEventName:AD_EVENT_OPEN_LOGIN_SCREEN parameters:nil type:AdType_Appflyer|AdType_Firebase];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -502,10 +502,13 @@
     
     
     if (loginResopnse.code == BJResponseCode_OK_Register) {//注册
-        [AdLogger logWithEventName:AD_EVENT_REGISTER_SUCCESS parameters:nil];
+        [AdLogger logWithEventName:AD_EVENT_REGISTER_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
+        
+        [AdLogger logWithEventName:FBSDKAppEventNameCompletedRegistration parameters:nil type:AdType_FB];
+        [AdLogger logWithEventName:AD_EVENT_COMPLETE_REGISTRATION_IOS parameters:nil type:AdType_FB];
         
     }else {//登录
-        [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil];
+        [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
     }
     
     if ([FLSDK share].loginCompletionHandler) {

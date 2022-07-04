@@ -36,7 +36,7 @@
     [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [AdLogger logWithEventName:AD_EVENT_APP_OPEN parameters:nil];
+    [AdLogger logWithEventName:AD_EVENT_APP_OPEN parameters:nil type:AdType_Appflyer|AdType_Firebase];
     
 }
 

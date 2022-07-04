@@ -249,6 +249,11 @@ static dispatch_once_t onceToken;
     return [self getStringForKey:@"sdk_appId"];
 }
 
+-(BOOL) isAdDebug
+{
+    return [self getBoolForKey:@"sdk_ad_bug"];
+}
+
 -(NSString *) getFacebookAppId
 {
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];

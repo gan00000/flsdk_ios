@@ -7,12 +7,16 @@
 //
 
 #import "AdLogger.h"
-#import "AdDelegate.h"
 #import "SdkHeader.h"
 
 @implementation AdLogger
 
 + (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues
+{
+    [self logWithEventName:eventName parameters:eventValues type:(AdType_All)];
+}
+
++ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type
 {
     
     NSString *userId = @"";
@@ -30,7 +34,7 @@
     @try {
         comDic = @{
             @"userId"      : userId,
-            @"TIME"        :[SUtil getTimeStamp],
+            @"time"        :[SUtil getTimeStamp],
             @"role_name"    :roleName,
             @"role_id"      :roleId,
             @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
@@ -43,7 +47,8 @@
     if (eventValues) {
         [eventV addEntriesFromDictionary:eventValues];
     }
-    [AdDelegate logEventWithEventName:eventName eventValues:eventV];
+    
+    [AdDelegate logEventWithEventName:eventName eventValues:eventV type:type];
 }
 
 @end

@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AdDelegate.h"
+
 @interface AdLogger : NSObject
 
 + (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
+
++ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
 
 @end

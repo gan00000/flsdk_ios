@@ -307,6 +307,13 @@
             if (success) {
                 PayData *mPayData = [[PayData alloc] init];
                 self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
+                
+                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                if (!havePay) {
+                    [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
+                }
+                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                
             }else{
                 self.payHandler(SDK_PAY_STATUS_FAIL, nil);
             }

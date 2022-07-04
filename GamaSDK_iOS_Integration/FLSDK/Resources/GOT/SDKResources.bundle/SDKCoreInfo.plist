@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>sdk_ad_bug</key>
+	<true/>
 	<key>sdk_appId</key>
 	<string>1630130607</string>
 	<key>af_dev_key</key>
