@@ -5,7 +5,7 @@
 #import "UserModel.h"
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
-#import "FLSDK.h"
+#import "MWSDK.h"
 #import "Social_ViewController.h"
 #import "GamaWebViewController.h"
 
@@ -126,7 +126,7 @@
              *********************************************/
         case 0:
         {
-            [[FLSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
+            [[MWSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -145,7 +145,7 @@
         case 1:
         {
             
-            [[FLSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[MWSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
             
             
         }
@@ -180,7 +180,7 @@
             break;
 
         case 5:{
-            [[FLSDK share] openCs];
+            [[MWSDK share] openCs];
         }
             break;
         case 6:{
@@ -203,7 +203,7 @@
     NSString *cpOrderId = [SUtil getTimeStamp];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[FLSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[MWSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {

@@ -70,7 +70,7 @@ static NSArray *tempFriendsAry;
             //........
         }break;
         case 1:{//获取用户信息
-            [FLSDK gama_getUserProfileWithPartyKind:GamaThirdPartyTypeFacebook completedHandler:^(NSDictionary * _Nullable result, NSError * _Nullable error) {
+            [MWSDK gama_getUserProfileWithPartyKind:GamaThirdPartyTypeFacebook completedHandler:^(NSDictionary * _Nullable result, NSError * _Nullable error) {
                 if (error) {
                     NSLog(@"获取用户信息失败:%@",error);
                     [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"获取用户信息失败:%@",error]];
@@ -80,7 +80,7 @@ static NSArray *tempFriendsAry;
             }];
         }break;
         case 2:{//获取在玩好友（首页）
-            [FLSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
+            [MWSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
                                          param:@{GAMA_PRM_SOCIAL_FIELDS_CONTENT:@"id"}
                                         paging:GamaSocialPagingHome
                                          limit:limitCount
@@ -106,7 +106,7 @@ static NSArray *tempFriendsAry;
             }];
         }break;
         case 3:{//获取在玩好友（下一页）
-            [FLSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
+            [MWSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
                                          param:@{GAMA_PRM_SOCIAL_FIELDS_CONTENT:@"id"}
                                         paging:GamaSocialPagingNext
                                          limit:limitCount
@@ -127,7 +127,7 @@ static NSArray *tempFriendsAry;
             
         }break;
         case 4:{//获取在玩好友（上一页）
-            [FLSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
+            [MWSDK gama_fetchFriendsWithKind:GamaThirdPartyTypeFacebook
                                          param:@{GAMA_PRM_SOCIAL_FIELDS_CONTENT:@"id"}
                                         paging:GamaSocialPagingPrevious
                                          limit:limitCount
@@ -147,14 +147,14 @@ static NSArray *tempFriendsAry;
                               }];
         }break;
         case 5:{//分享链接
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:@"https://developers.facebook.com/"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:@"https://developers.facebook.com/"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"分享成功:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"分享失败:%@",error]];
             }];
         }break;
         case 6:{//分享图片
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:@"Default-568h@2x.png"}
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:@"Default-568h@2x.png"}
                                 success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"分享成功:%@",result]];
             } failure:^(NSError * _Nullable error) {
@@ -177,21 +177,21 @@ static NSArray *tempFriendsAry;
         }break;
         case 9:{//邀请在玩好友
             NSArray *lastUserIdAry = tempFriendsAry.count > 0 ? tempFriendsAry : @[];
-            [FLSDK gama_inviteFriendsWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_INVITE_USERID: lastUserIdAry,GAMA_PRM_SOCIAL_INVITE_MSG:@"hello",GAMA_PRM_SOCIAL_INVITE_TITLE:@"邀请好友"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_inviteFriendsWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_INVITE_USERID: lastUserIdAry,GAMA_PRM_SOCIAL_INVITE_MSG:@"hello",GAMA_PRM_SOCIAL_INVITE_TITLE:@"邀请好友"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"邀请成功:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"邀请失败:%@",error]];
             }];
         }break;
         case 10:{//邀请未玩好友
-            [FLSDK gama_inviteFriendsWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_INVITE_USERID:@[],GAMA_PRM_SOCIAL_INVITE_MSG:@"hello",GAMA_PRM_SOCIAL_INVITE_TITLE:@"邀请好友"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_inviteFriendsWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_INVITE_USERID:@[],GAMA_PRM_SOCIAL_INVITE_MSG:@"hello",GAMA_PRM_SOCIAL_INVITE_TITLE:@"邀请好友"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"邀请成功:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"邀请失败:%@",error]];
             }];
         }break;
         case 11:{//line文字分享
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeLine param:@{GAMA_PRM_SOCIAL_SHARE_MSG:@"hello"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeLine param:@{GAMA_PRM_SOCIAL_SHARE_MSG:@"hello"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"line文字分享成功：:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"line文字分享失败：:%@",error]];
@@ -199,7 +199,7 @@ static NSArray *tempFriendsAry;
         }break;
 
         case 12:{//line图片分享
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeLine param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:shareImage} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeLine param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:shareImage} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"line图片分享成功：:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"line图片分享失败：:%@",error]];
@@ -207,7 +207,7 @@ static NSArray *tempFriendsAry;
         }break;
 
         case 13:{//whatsApp文字分享
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeWhatsApp param:@{GAMA_PRM_SOCIAL_SHARE_MSG:@"hello"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeWhatsApp param:@{GAMA_PRM_SOCIAL_SHARE_MSG:@"hello"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"whatsAapp文字分享成功：:%@",result]];
             }failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"whatsAapp文字分享失败：:%@",error]];
@@ -216,14 +216,14 @@ static NSArray *tempFriendsAry;
         }break;
 
         case 14:{//whatsApp图片分享
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeWhatsApp param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:shareImage} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeWhatsApp param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:shareImage} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"whatsAapp图片分享成功：:%@",result]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"whatsAapp图片分享失败：:%@",error]];
             }];
         }break;
         case 15:{
-            [FLSDK gama_shareWithKind:GamaThirdPartyTypeTwitter param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:@"Default-568h@2x.png"} success:^(NSDictionary * _Nullable result) {
+            [MWSDK gama_shareWithKind:GamaThirdPartyTypeTwitter param:@{GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE:@"Default-568h@2x.png"} success:^(NSDictionary * _Nullable result) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"分享成功"]];
             } failure:^(NSError * _Nullable error) {
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"分享失败"]];
@@ -231,7 +231,7 @@ static NSArray *tempFriendsAry;
             }];
         }break;
         case 16:{
-            [FLSDK gama_openCafeHome];
+            [MWSDK gama_openCafeHome];
 
 //            [GamaSDK gama_shareWithKind:GamaThirdPartyTypeTwitter param:@{GAMA_PRM_SOCIAL_SHARE_MSG:@"123123"} success:^(NSDictionary * _Nullable result) {
 //                [GamaAlertView showAlertWithMessage:[NSString stringWithFormat:@"分享成功"]];

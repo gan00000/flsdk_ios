@@ -12,7 +12,7 @@
 #import "SUtil.h"
 #import "ResHeader.h"
 
-#import "FLSDK.h"
+#import "MWSDK.h"
 
 @interface IAP_ViewController () <UITableViewDataSource,UITableViewDelegate>
 {

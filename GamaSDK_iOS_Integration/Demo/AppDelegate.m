@@ -8,7 +8,7 @@
 #import "UserModel.h"
 
 #import "ResHeader.h"
-#import "FLSDK.h"
+#import "MWSDK.h"
 
 @interface AppDelegate ()
 
@@ -54,7 +54,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
   
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    [[FLSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
+    [[MWSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
     
     /// TO DO
@@ -67,7 +67,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
          annotation:(id)annotation
 {
    
-    return [[FLSDK share]application:application
+    return [[MWSDK share]application:application
                         openURL:url
             sourceApplication:sourceApplication
                     annotation:annotation];
@@ -76,7 +76,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
 
-     [[FLSDK share] application:app
+     [[MWSDK share] application:app
                   openURL:url
                   options:options];
     return YES;
