@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>sdk_ad_bug</key>
-	<true/>
+	<false/>
 	<key>sdk_appId</key>
 	<string>1630130607</string>
 	<key>af_dev_key</key>

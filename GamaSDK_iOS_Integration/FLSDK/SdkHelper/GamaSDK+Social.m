@@ -19,7 +19,7 @@ NSString *const GAMA_PRM_SOCIAL_INVITE_MSG          = @"gama_prm_social_invite_m
 NSString *const GAMA_PRM_SOCIAL_INVITE_TITLE        = @"gama_prm_social_invite_title";
 NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_content";
 
-@implementation FLSDK (Social)
+@implementation MWSDK (Social)
 +(void)gama_getUserProfileWithPartyKind:(GamaThirdPartyType)kind
                        completedHandler:(void (^)(NSDictionary * _Nullable,
                                                   NSError * _Nullable))handler

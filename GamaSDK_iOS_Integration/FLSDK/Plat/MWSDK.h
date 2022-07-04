@@ -61,7 +61,7 @@ typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
 //    SDKEventReportAllChannel = (SDKEventReportFacebook|SDKEventReportFirebase|SDKEventReportAppsflyer|SDKEventReportAdjust),
 //};
 
-@interface FLSDK : NSObject
+@interface MWSDK : NSObject
 
 @property (nonatomic) SDKPayBlock payHandler;
 @property (nonatomic)  SDKLogoutBlock logoutHandler;

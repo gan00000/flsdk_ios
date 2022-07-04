@@ -1,9 +1,8 @@
-#import "FLSDK.h"
+#import "MWSDK.h"
 
 #import "BaseSDK.h"
 #import "BaseSDKImpl.h"
 #import "AdLogger.h"
-#import "GamaSDK+Social.h"
 #import "GamaWebViewController.h"
 #import "SDKLoginViewController.h"
 #import "SUtil.h"
@@ -28,11 +27,11 @@
 //NSString *const GAMA_SHARE_RESULT      = @"CONST_GAMA_SHARE_RESULT";
 //NSString *const GAMA_NOTICE_CLOSE      = @"GAMA_NOTICE_CLOSE";
 
-@interface FLSDK()
+@interface MWSDK()
 
 @end
 
-@implementation FLSDK
+@implementation MWSDK
 
 /**
  应用间跳转
@@ -74,10 +73,10 @@
  */
 + (instancetype)share
 {
-    static FLSDK *_shareSP = nil;
+    static MWSDK *_shareSP = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _shareSP = [[FLSDK alloc] init];
+        _shareSP = [[MWSDK alloc] init];
     });
     
     return _shareSP;
@@ -147,12 +146,12 @@
         return;
     }
     
-    //    [SdkUserInfoModel shareInfoModel].roleID     = roleId;
-    //    [SdkUserInfoModel shareInfoModel].roleName   = roleName;
-    //    [SdkUserInfoModel shareInfoModel].roleLevel  = roleLevel;
-    //    [SdkUserInfoModel shareInfoModel].vipLevel   = roleVipLevel;
-    //    [SdkUserInfoModel shareInfoModel].serverCode = serverCode;
-    //    [SdkUserInfoModel shareInfoModel].serverName = serverName;
+    SDK_DATA.gameUserModel.roleID = roleId;
+    SDK_DATA.gameUserModel.roleName = roleName;
+    SDK_DATA.gameUserModel.roleLevel = roleLevel;
+    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel;
+    SDK_DATA.gameUserModel.serverCode = serverCode;
+    SDK_DATA.gameUserModel.serverName = serverName;
     
     
     

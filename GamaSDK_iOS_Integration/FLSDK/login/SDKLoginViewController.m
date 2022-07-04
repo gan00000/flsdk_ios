@@ -511,13 +511,13 @@
         [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
     }
     
-    if ([FLSDK share].loginCompletionHandler) {
+    if ([MWSDK share].loginCompletionHandler) {
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
         loginData.timestamp =rData.timestamp;
         
-        [FLSDK share].loginCompletionHandler(loginData);
+        [MWSDK share].loginCompletionHandler(loginData);
     }
     
     [self dismissViewControllerAnimated:NO completion:^{

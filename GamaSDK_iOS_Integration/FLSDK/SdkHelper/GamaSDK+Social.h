@@ -6,7 +6,7 @@
 //  Copyright © 2018年 starpy. All rights reserved.
 //
 #import "SdkHeader.h"
-#import "FLSDK.h"
+#import "MWSDK.h"
 
 extern NSString *const GAMA_PRM_SOCIAL_SHARE_LINK;
 extern NSString *const GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE;
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSUInteger,GamaThirdPartyType){
     GamaThirdPartyTypeTwitter,
 };
 
-@interface FLSDK (Social)
+@interface MWSDK (Social)
 /**
  获取第三方社交平台用户资料
  */
