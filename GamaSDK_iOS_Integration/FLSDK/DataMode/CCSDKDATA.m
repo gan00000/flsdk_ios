@@ -45,6 +45,7 @@
     mcm.lineLogin = YES;
     mcm.appleLogin = YES;
     mcm.delectAccount = NO;
+    mcm.appPassCheck = NO;
     self.mConfigModel = mcm;
     
     

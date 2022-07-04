@@ -113,17 +113,24 @@
         appleLoginBtn.tag = appleLoginActTag;
         appleLoginBtn.cornerRadius = VH(25);
         [self addSubview:appleLoginBtn];
-        
-        [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.trailing.height.mas_equalTo(guestLoginBtn);
-            make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
-        }];
-        
+
         topView = appleLoginBtn;
         
-        if (!SDK_DATA.mConfigModel.appleLogin) {
+        if (!SDK_DATA.mConfigModel.appleLogin || SDK_DATA.mConfigModel.appPassCheck) {
             appleLoginBtn.hidden = YES;
+            [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
+                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(2);
+//                make.height.mas_equalTo(2);
+            }];
+            
+        }else{
+            [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
+                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+            }];
         }
+        
     }
     
     UIView *hasAccountContent = [[UIView alloc] init];
@@ -196,7 +203,12 @@
     CGFloat btn_h = btn_w;
     CGFloat margin_leading = VW(27);
     
-    NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel isHome:YES];
+    NSMutableArray *loginBtnDatas;
+    if (SDK_DATA.mConfigModel.appPassCheck) {
+        loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel appleBtn:YES guestBtn:NO];
+    }else{
+        loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel appleBtn:NO guestBtn:NO];
+    }
     UIView *leadingView = loginTypeView;
   
     for (int i = 0; i < loginBtnDatas.count; i++) {
@@ -204,9 +216,25 @@
         LoginButtonData *lbd = loginBtnDatas[i];
         UIView *btnView;
         
-        LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType:lbd.tag title:@"" image:lbd.image selector:@selector(registerViewBtnAction:) target:self];
-        
-        btnView = mBtn;
+        if ([lbd.btnType isEqualToString:LOGIN_TYPE_APPLE]) {
+            
+            if (@available(iOS 13.0, *)) {
+                
+                ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
+                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+                [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+                appleLoginBtn.tag = lbd.tag;
+                appleLoginBtn.cornerRadius = btn_w / 2.0;
+                btnView = appleLoginBtn;
+            }
+            
+        }else{
+            
+            LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType:lbd.tag title:@"" image:lbd.image selector:@selector(registerViewBtnAction:) target:self];
+            
+            btnView = mBtn;
+        }
+       
         
         if (btnView) {
             

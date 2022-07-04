@@ -157,16 +157,16 @@ static dispatch_once_t onceToken;
 -(BOOL)getBoolForKey:(NSString *)key
 {
     
-   
-    NSString *boolStr = [[self.coreConfDic objectForKey:key] lowercaseString];
-    if ([boolStr isEqualToString:@"yes"] || [boolStr isEqualToString:@"true"]) {
-        return YES;
-    } else if ([boolStr isEqualToString:@"no"] || [boolStr isEqualToString:@"false"]) {
-        return NO;
-    } else {
-        NSLog(@"Can't Find BOOL Key: %@ \n------------------------------",key);
-        return NO;
-    }
+    return [self.coreConfDic objectForKey:key];
+//    NSString *boolStr = [[self.coreConfDic objectForKey:key] lowercaseString];
+//    if ([boolStr isEqualToString:@"yes"] || [boolStr isEqualToString:@"true"]) {
+//        return YES;
+//    } else if ([boolStr isEqualToString:@"no"] || [boolStr isEqualToString:@"false"]) {
+//        return NO;
+//    } else {
+//        NSLog(@"Can't Find BOOL Key: %@ \n------------------------------",key);
+//        return NO;
+//    }
 }
 
 -(NSString *)getLocalizedStringForKey:(NSString *)key

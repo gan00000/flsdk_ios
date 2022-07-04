@@ -227,7 +227,7 @@
         CGFloat btn_h = btn_w;
         CGFloat margin_leading = VW(24);
         
-        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel isHome:NO];
+        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel appleBtn:YES guestBtn:YES];
         UIView *leadingView = otherLabelTips;
        
         for (int i = 0; i < loginBtnDatas.count; i++) {

@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL delectAccount;
 
+//是否过审状态
+@property (nonatomic, assign) BOOL appPassCheck;
 @end
 
 NS_ASSUME_NONNULL_END

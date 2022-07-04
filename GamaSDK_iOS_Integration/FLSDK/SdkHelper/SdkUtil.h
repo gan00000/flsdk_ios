@@ -67,5 +67,5 @@
 
 //+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
 
-+(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel isHome:(BOOL) isHome;
++(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel appleBtn:(BOOL) appleBtn guestBtn:(BOOL) guestBtn;
 @end

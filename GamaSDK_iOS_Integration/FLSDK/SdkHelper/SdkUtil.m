@@ -461,12 +461,12 @@
 //    [userInfodic release];
 }
 
-+(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel isHome:(BOOL) isHome
++(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel appleBtn:(BOOL) appleBtn guestBtn:(BOOL) guestBtn
 {
 //    mConfigModel.googleLogin = NO;
 //    mConfigModel.lineLogin = NO;
     NSMutableArray *loginBtnDatas = [NSMutableArray array];
-    if (mConfigModel.appleLogin && !isHome) {
+    if (mConfigModel.appleLogin && appleBtn) {
         
         if (@available(iOS 13.0, *)) {
             LoginButtonData *lbds = [[LoginButtonData alloc] init];
@@ -476,7 +476,7 @@
         }
         
     }
-    if (mConfigModel.visitorLogin && !isHome) {
+    if (mConfigModel.visitorLogin && guestBtn) {
         LoginButtonData *lbds = [[LoginButtonData alloc] init];
         lbds.tag = guestLoginActTag;
         lbds.btnType = LOGIN_TYPE_GUEST;
