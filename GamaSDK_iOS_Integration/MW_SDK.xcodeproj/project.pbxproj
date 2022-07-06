@@ -81,6 +81,124 @@
 		0369B35928647256002F4B2F /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
 		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
+		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
+		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
+		037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
+		037C6EF12875A97C0041EC34 /* MWSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		037C6EF92875AC790041EC34 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
+		037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
+		037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
+		037C6EFC2875AC790041EC34 /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; };
+		037C6EFD2875AC790041EC34 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
+		037C6EFE2875AC790041EC34 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
+		037C6EFF2875AC790041EC34 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
+		037C6F002875AC790041EC34 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
+		037C6F012875AC790041EC34 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
+		037C6F022875AC790041EC34 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
+		037C6F032875AC790041EC34 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
+		037C6F042875AC790041EC34 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; };
+		037C6F052875AC790041EC34 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; };
+		037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
+		037C6F072875AC790041EC34 /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
+		037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
+		037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; };
+		037C6F0A2875AC790041EC34 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; };
+		037C6F0B2875AC790041EC34 /* HttpServiceEngineLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* HttpServiceEngineLogin.m */; };
+		037C6F0C2875AC790041EC34 /* BJServiceConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* BJServiceConfigurator.m */; };
+		037C6F0D2875AC790041EC34 /* SDKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* SDKRequest.m */; };
+		037C6F0E2875AC790041EC34 /* HttpServiceEngineAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* HttpServiceEngineAd.m */; };
+		037C6F0F2875AC790041EC34 /* BaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* BaseSDK.m */; };
+		037C6F102875AC790041EC34 /* BaseSDKImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* BaseSDKImpl.m */; };
+		037C6F112875AC790041EC34 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
+		037C6F122875AC790041EC34 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
+		037C6F132875AC790041EC34 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; };
+		037C6F142875AC790041EC34 /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		037C6F152875AC790041EC34 /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		037C6F162875AC790041EC34 /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		037C6F172875AC790041EC34 /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
+		037C6F182875AC790041EC34 /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
+		037C6F192875AC790041EC34 /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
+		037C6F1A2875AC790041EC34 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
+		037C6F1B2875AC790041EC34 /* UIColor+HexStringToColorTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */; };
+		037C6F1C2875AC790041EC34 /* UIScreen+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Sdk.m */; };
+		037C6F1D2875AC790041EC34 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
+		037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; };
+		037C6F202875AC790041EC34 /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
+		037C6F212875AC790041EC34 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* UIUtil.m */; };
+		037C6F222875AC790041EC34 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
+		037C6F232875AC790041EC34 /* USDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 032ACA4028729E5D00644568 /* USDefault.m */; };
+		037C6F242875AC790041EC34 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; };
+		037C6F252875AC790041EC34 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE724C589A5000D6B20 /* YYClassInfo.m */; };
+		037C6F262875AC790041EC34 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEE24C589A5000D6B20 /* AFURLResponseSerialization.m */; };
+		037C6F272875AC790041EC34 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEF24C589A5000D6B20 /* AFHTTPSessionManager.m */; };
+		037C6F282875AC790041EC34 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF124C589A5000D6B20 /* AFURLSessionManager.m */; };
+		037C6F292875AC790041EC34 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF224C589A5000D6B20 /* AFURLRequestSerialization.m */; };
+		037C6F2A2875AC790041EC34 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF424C589A5000D6B20 /* AFNetworkReachabilityManager.m */; };
+		037C6F2B2875AC790041EC34 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF524C589A5000D6B20 /* AFSecurityPolicy.m */; };
+		037C6F2C2875AC790041EC34 /* BJBaseHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */; };
+		037C6F2D2875AC790041EC34 /* UIImage+ResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */; };
+		037C6F2E2875AC790041EC34 /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; };
+		037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
+		037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
+		037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
+		037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
+		037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; };
+		037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
+		037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; };
+		037C6F362875AC790041EC34 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
+		037C6F372875AC790041EC34 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; };
+		037C6F382875AC790041EC34 /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
+		037C6F392875AC790041EC34 /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
+		037C6F3A2875AC790041EC34 /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
+		037C6F3B2875AC790041EC34 /* SDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */; };
+		037C6F3C2875AC790041EC34 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* LoginButton.m */; };
+		037C6F3D2875AC790041EC34 /* AccountLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3624C589A5000D6B20 /* AccountLoginView.m */; };
+		037C6F3E2875AC790041EC34 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; };
+		037C6F3F2875AC790041EC34 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */; };
+		037C6F402875AC790041EC34 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; };
+		037C6F412875AC790041EC34 /* LoginWithRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* LoginWithRegView.m */; };
+		037C6F422875AC790041EC34 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; };
+		037C6F432875AC790041EC34 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; };
+		037C6F442875AC790041EC34 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; };
+		037C6F452875AC790041EC34 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; };
+		037C6F462875AC790041EC34 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; };
+		037C6F472875AC790041EC34 /* WelcomeBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* WelcomeBackView.m */; };
+		037C6F482875AC790041EC34 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; };
+		037C6F492875AC790041EC34 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; };
+		037C6F4A2875AC790041EC34 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; };
+		037C6F4B2875AC790041EC34 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; };
+		037C6F4C2875AC790041EC34 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; };
+		037C6F4D2875AC790041EC34 /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
+		037C6F4E2875AC790041EC34 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; };
+		037C6F4F2875ACD70041EC34 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		037C6F502875ACD70041EC34 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918F82860AECB0029AE6A /* ViewController+MASAdditions.m */; };
+		037C6F512875ACD70041EC34 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FC2860AECB0029AE6A /* MASCompositeConstraint.m */; };
+		037C6F522875ACD70041EC34 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FD2860AECB0029AE6A /* MASConstraintMaker.m */; };
+		037C6F532875ACD70041EC34 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FE2860AECB0029AE6A /* MASLayoutConstraint.m */; };
+		037C6F542875ACD70041EC34 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FF2860AECB0029AE6A /* NSArray+MASAdditions.m */; };
+		037C6F552875ACD70041EC34 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919002860AECB0029AE6A /* View+MASAdditions.m */; };
+		037C6F562875ACD70041EC34 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919032860AECB0029AE6A /* MASConstraint.m */; };
+		037C6F572875ACD70041EC34 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919052860AECB0029AE6A /* MASViewConstraint.m */; };
+		037C6F582875ACD70041EC34 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919062860AECB0029AE6A /* MASViewAttribute.m */; };
+		037C6F592875ACD70041EC34 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919082860AECB0029AE6A /* UIImage+WebP.m */; };
+		037C6F5A2875ACD70041EC34 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190B2860AECB0029AE6A /* SDWebImageManager.m */; };
+		037C6F5B2875ACD70041EC34 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190C2860AECB0029AE6A /* SDWebImageDecoder.m */; };
+		037C6F5C2875ACD70041EC34 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190E2860AECB0029AE6A /* UIImageView+HighlightedWebCache.m */; };
+		037C6F5D2875ACD70041EC34 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919102860AECB0029AE6A /* SDWebImageDownloader.m */; };
+		037C6F5E2875ACD70041EC34 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919112860AECB0029AE6A /* UIImage+GIF.m */; };
+		037C6F5F2875ACD70041EC34 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919132860AECB0029AE6A /* UIImage+MultiFormat.m */; };
+		037C6F602875ACD70041EC34 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919142860AECB0029AE6A /* SDWebImageCompat.m */; };
+		037C6F612875ACD70041EC34 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919152860AECB0029AE6A /* SDWebImagePrefetcher.m */; };
+		037C6F622875ACD70041EC34 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919182860AECB0029AE6A /* SDImageCache.m */; };
+		037C6F632875ACD70041EC34 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191A2860AECB0029AE6A /* SDWebImageDownloaderOperation.m */; };
+		037C6F642875ACD70041EC34 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191D2860AECB0029AE6A /* NSData+ImageContentType.m */; };
+		037C6F652875ACD70041EC34 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
+		037C6F662875ACD70041EC34 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
+		037C6F672875ACD70041EC34 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
+		037C6F682875AD230041EC34 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F692875AD230041EC34 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
@@ -224,6 +342,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		037C6EE62875A97C0041EC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
+			remoteInfo = MWSDK;
+		};
+		037C6EE82875A97C0041EC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE6B3701A148B1E009E77FF;
+			remoteInfo = SDK_TEST;
+		};
+		037C6EEE2875A97C0041EC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
+			remoteInfo = MWSDK;
+		};
 		22DF6AE51EADA5600003610E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -234,6 +373,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		037C6EF52875A97C0041EC34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				037C6EF12875A97C0041EC34 /* MWSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22DF6AAF1EAD9A4C0003610E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +492,9 @@
 		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
 		03764809286178D600CAD034 /* GIDDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIDDelegate.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* GIDDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIDDelegate.m; sourceTree = "<group>"; };
+		037C6EDB2875A97B0041EC34 /* MWSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		037C6EEB2875A97C0041EC34 /* MWSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDKTests.m; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
 		03B918DC286029050029AE6A /* ConfigResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigResponse.h; sourceTree = "<group>"; };
@@ -589,6 +742,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		037C6ED82875A97B0041EC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037C6EE12875A97C0041EC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22DF6AAE1EAD9A4C0003610E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +805,7 @@
 				244537421C2E9D6D00260D4C /* AddressBook.framework in Frameworks */,
 				CEE6B9531A149908009E77FF /* QuartzCore.framework in Frameworks */,
 				035FA545286442A7000B2335 /* AppAuth.xcframework in Frameworks */,
+				037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */,
 				2464555A1BB8F90F009E785B /* Photos.framework in Frameworks */,
 				035FA55D28644456000B2335 /* FBSDKLoginKit.xcframework in Frameworks */,
 				246455581BB8F905009E785B /* AssetsLibrary.framework in Frameworks */,
@@ -876,6 +1045,14 @@
 				03E076802862C07700B81B65 /* FirebaseDelegate.m */,
 			);
 			path = GG;
+			sourceTree = "<group>";
+		};
+		037C6EEA2875A97C0041EC34 /* MWSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				037C6EEB2875A97C0041EC34 /* MWSDKTests.m */,
+			);
+			path = MWSDKTests;
 			sourceTree = "<group>";
 		};
 		03B918ED2860AECB0029AE6A /* Masonry */ = {
@@ -1278,6 +1455,7 @@
 				322CBB9C24C589A5000D6B20 /* FLSDK */,
 				24C7588E1D66F98D0088A176 /* FrameworkScript.sh */,
 				CEE6B9621A1499CB009E77FF /* Framework */,
+				037C6EEA2875A97C0041EC34 /* MWSDKTests */,
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
@@ -1290,6 +1468,8 @@
 			children = (
 				CEE6B3711A148B1E009E77FF /* dybttDemo.app */,
 				22DF6AB11EAD9A4C0003610E /* libFLSDK.a */,
+				037C6EDB2875A97B0041EC34 /* MWSDK.framework */,
+				037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1376,7 +1556,57 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		037C6ED62875A97B0041EC34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C6F682875AD230041EC34 /* PayData.h in Headers */,
+				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
+				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		037C6EDA2875A97B0041EC34 /* MWSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */;
+			buildPhases = (
+				037C6ED62875A97B0041EC34 /* Headers */,
+				037C6ED72875A97B0041EC34 /* Sources */,
+				037C6ED82875A97B0041EC34 /* Frameworks */,
+				037C6ED92875A97B0041EC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWSDK;
+			productName = MWSDK;
+			productReference = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		037C6EE32875A97C0041EC34 /* MWSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037C6EF62875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDKTests" */;
+			buildPhases = (
+				037C6EE02875A97C0041EC34 /* Sources */,
+				037C6EE12875A97C0041EC34 /* Frameworks */,
+				037C6EE22875A97C0041EC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				037C6EE72875A97C0041EC34 /* PBXTargetDependency */,
+				037C6EE92875A97C0041EC34 /* PBXTargetDependency */,
+			);
+			name = MWSDKTests;
+			productName = MWSDKTests;
+			productReference = 037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		22DF6AB01EAD9A4C0003610E /* FLSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22DF6AB71EAD9A4D0003610E /* Build configuration list for PBXNativeTarget "FLSDK" */;
@@ -1403,10 +1633,12 @@
 				CEE6B36D1A148B1E009E77FF /* Sources */,
 				CEE6B36F1A148B1E009E77FF /* Resources */,
 				CEE6B36E1A148B1E009E77FF /* Frameworks */,
+				037C6EF52875A97C0041EC34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				037C6EEF2875A97C0041EC34 /* PBXTargetDependency */,
 			);
 			name = SDK_TEST;
 			packageProductDependencies = (
@@ -1424,6 +1656,13 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Gama;
 				TargetAttributes = {
+					037C6EDA2875A97B0041EC34 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					037C6EE32875A97C0041EC34 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CEE6B3701A148B1E009E77FF;
+					};
 					22DF6AB01EAD9A4C0003610E = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -1508,11 +1747,27 @@
 				CEE6B3701A148B1E009E77FF /* SDK_TEST */,
 				22DF6AB01EAD9A4C0003610E /* FLSDK */,
 				24C7583D1D65B3520088A176 /* Framework */,
+				037C6EDA2875A97B0041EC34 /* MWSDK */,
+				037C6EE32875A97C0041EC34 /* MWSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		037C6ED92875A97B0041EC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037C6EE22875A97C0041EC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE6B36F1A148B1E009E77FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1546,6 +1801,132 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		037C6ED72875A97B0041EC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C6F4F2875ACD70041EC34 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				037C6F502875ACD70041EC34 /* ViewController+MASAdditions.m in Sources */,
+				037C6F512875ACD70041EC34 /* MASCompositeConstraint.m in Sources */,
+				037C6F522875ACD70041EC34 /* MASConstraintMaker.m in Sources */,
+				037C6F532875ACD70041EC34 /* MASLayoutConstraint.m in Sources */,
+				037C6F542875ACD70041EC34 /* NSArray+MASAdditions.m in Sources */,
+				037C6F552875ACD70041EC34 /* View+MASAdditions.m in Sources */,
+				037C6F562875ACD70041EC34 /* MASConstraint.m in Sources */,
+				037C6F572875ACD70041EC34 /* MASViewConstraint.m in Sources */,
+				037C6F582875ACD70041EC34 /* MASViewAttribute.m in Sources */,
+				037C6F592875ACD70041EC34 /* UIImage+WebP.m in Sources */,
+				037C6F5A2875ACD70041EC34 /* SDWebImageManager.m in Sources */,
+				037C6F5B2875ACD70041EC34 /* SDWebImageDecoder.m in Sources */,
+				037C6F5C2875ACD70041EC34 /* UIImageView+HighlightedWebCache.m in Sources */,
+				037C6F5D2875ACD70041EC34 /* SDWebImageDownloader.m in Sources */,
+				037C6F5E2875ACD70041EC34 /* UIImage+GIF.m in Sources */,
+				037C6F5F2875ACD70041EC34 /* UIImage+MultiFormat.m in Sources */,
+				037C6F602875ACD70041EC34 /* SDWebImageCompat.m in Sources */,
+				037C6F612875ACD70041EC34 /* SDWebImagePrefetcher.m in Sources */,
+				037C6F622875ACD70041EC34 /* SDImageCache.m in Sources */,
+				037C6F632875ACD70041EC34 /* SDWebImageDownloaderOperation.m in Sources */,
+				037C6F642875ACD70041EC34 /* NSData+ImageContentType.m in Sources */,
+				037C6F652875ACD70041EC34 /* UIImageView+WebCache.m in Sources */,
+				037C6F662875ACD70041EC34 /* UIView+WebCacheOperation.m in Sources */,
+				037C6F672875ACD70041EC34 /* UIButton+WebCache.m in Sources */,
+				037C6EF92875AC790041EC34 /* AdLogger.m in Sources */,
+				037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */,
+				037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */,
+				037C6EFC2875AC790041EC34 /* GameUserModel.m in Sources */,
+				037C6EFD2875AC790041EC34 /* MWApplePayManager.m in Sources */,
+				037C6EFE2875AC790041EC34 /* ApplePay.m in Sources */,
+				037C6EFF2875AC790041EC34 /* LineDelegate.m in Sources */,
+				037C6F002875AC790041EC34 /* GIDDelegate.m in Sources */,
+				037C6F012875AC790041EC34 /* FirebaseDelegate.m in Sources */,
+				037C6F022875AC790041EC34 /* FBDelegate.m in Sources */,
+				037C6F032875AC790041EC34 /* HttpServiceEnginePay.m in Sources */,
+				037C6F042875AC790041EC34 /* AccountModel.m in Sources */,
+				037C6F052875AC790041EC34 /* LoginResponse.m in Sources */,
+				037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */,
+				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
+				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
+				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
+				037C6F0A2875AC790041EC34 /* BJError.m in Sources */,
+				037C6F0B2875AC790041EC34 /* HttpServiceEngineLogin.m in Sources */,
+				037C6F0C2875AC790041EC34 /* BJServiceConfigurator.m in Sources */,
+				037C6F0D2875AC790041EC34 /* SDKRequest.m in Sources */,
+				037C6F0E2875AC790041EC34 /* HttpServiceEngineAd.m in Sources */,
+				037C6F0F2875AC790041EC34 /* BaseSDK.m in Sources */,
+				037C6F102875AC790041EC34 /* BaseSDKImpl.m in Sources */,
+				037C6F112875AC790041EC34 /* PayData.m in Sources */,
+				037C6F122875AC790041EC34 /* LoginData.m in Sources */,
+				037C6F132875AC790041EC34 /* MWSDK.m in Sources */,
+				037C6F142875AC790041EC34 /* SdkCfUUID.m in Sources */,
+				037C6F152875AC790041EC34 /* SdkKeychainItemWrapper.m in Sources */,
+				037C6F162875AC790041EC34 /* SdkPrivateKeychainCfUUID.m in Sources */,
+				037C6F172875AC790041EC34 /* AlertUtil.m in Sources */,
+				037C6F182875AC790041EC34 /* SAlertViewDelegate.m in Sources */,
+				037C6F192875AC790041EC34 /* UIAlertController+Sdk.m in Sources */,
+				037C6F1A2875AC790041EC34 /* UIColor+HexColor.m in Sources */,
+				037C6F1B2875AC790041EC34 /* UIColor+HexStringToColorTW.m in Sources */,
+				037C6F1C2875AC790041EC34 /* UIScreen+Sdk.m in Sources */,
+				037C6F1D2875AC790041EC34 /* NSString+URLEncoding.m in Sources */,
+				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
+				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
+				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
+				037C6F212875AC790041EC34 /* UIUtil.m in Sources */,
+				037C6F222875AC790041EC34 /* StringUtil.m in Sources */,
+				037C6F232875AC790041EC34 /* USDefault.m in Sources */,
+				037C6F242875AC790041EC34 /* NSObject+YYModel.m in Sources */,
+				037C6F252875AC790041EC34 /* YYClassInfo.m in Sources */,
+				037C6F262875AC790041EC34 /* AFURLResponseSerialization.m in Sources */,
+				037C6F272875AC790041EC34 /* AFHTTPSessionManager.m in Sources */,
+				037C6F282875AC790041EC34 /* AFURLSessionManager.m in Sources */,
+				037C6F292875AC790041EC34 /* AFURLRequestSerialization.m in Sources */,
+				037C6F2A2875AC790041EC34 /* AFNetworkReachabilityManager.m in Sources */,
+				037C6F2B2875AC790041EC34 /* AFSecurityPolicy.m in Sources */,
+				037C6F2C2875AC790041EC34 /* BJBaseHTTPEngine.m in Sources */,
+				037C6F2D2875AC790041EC34 /* UIImage+ResBundle.m in Sources */,
+				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
+				037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */,
+				037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */,
+				037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */,
+				037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */,
+				037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */,
+				037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */,
+				037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */,
+				037C6F362875AC790041EC34 /* SdkUtil.m in Sources */,
+				037C6F372875AC790041EC34 /* ConfigCoreUtil.m in Sources */,
+				037C6F382875AC790041EC34 /* LoginHelper.m in Sources */,
+				037C6F392875AC790041EC34 /* DimeUtil.m in Sources */,
+				037C6F3A2875AC790041EC34 /* LoginButtonData.m in Sources */,
+				037C6F3B2875AC790041EC34 /* SDKLoginViewController.m in Sources */,
+				037C6F3C2875AC790041EC34 /* LoginButton.m in Sources */,
+				037C6F3D2875AC790041EC34 /* AccountLoginView.m in Sources */,
+				037C6F3E2875AC790041EC34 /* BindAccountView.m in Sources */,
+				037C6F3F2875AC790041EC34 /* ChangePasswordView.m in Sources */,
+				037C6F402875AC790041EC34 /* FindPasswordView.m in Sources */,
+				037C6F412875AC790041EC34 /* LoginWithRegView.m in Sources */,
+				037C6F422875AC790041EC34 /* MainHomeView.m in Sources */,
+				037C6F432875AC790041EC34 /* RegisterAccountView.m in Sources */,
+				037C6F442875AC790041EC34 /* SDKBaseView.m in Sources */,
+				037C6F452875AC790041EC34 /* SelectBindTypeView.m in Sources */,
+				037C6F462875AC790041EC34 /* TermsView.m in Sources */,
+				037C6F472875AC790041EC34 /* WelcomeBackView.m in Sources */,
+				037C6F482875AC790041EC34 /* AccountListViewCell.m in Sources */,
+				037C6F492875AC790041EC34 /* LoginTitleView.m in Sources */,
+				037C6F4A2875AC790041EC34 /* PhoneView.m in Sources */,
+				037C6F4B2875AC790041EC34 /* SDKIconTitleButton.m in Sources */,
+				037C6F4C2875AC790041EC34 /* SDKTextFiledView.m in Sources */,
+				037C6F4D2875AC790041EC34 /* LoginTypeButton.m in Sources */,
+				037C6F4E2875AC790041EC34 /* AccountListView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037C6EE02875A97C0041EC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22DF6AAD1EAD9A4C0003610E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1681,6 +2062,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		037C6EE72875A97C0041EC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
+			targetProxy = 037C6EE62875A97C0041EC34 /* PBXContainerItemProxy */;
+		};
+		037C6EE92875A97C0041EC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE6B3701A148B1E009E77FF /* SDK_TEST */;
+			targetProxy = 037C6EE82875A97C0041EC34 /* PBXContainerItemProxy */;
+		};
+		037C6EEF2875A97C0041EC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
+			targetProxy = 037C6EEE2875A97C0041EC34 /* PBXContainerItemProxy */;
+		};
 		22DF6AE61EADA5600003610E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22DF6AB01EAD9A4C0003610E /* FLSDK */;
@@ -1689,6 +2085,228 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		037C6EF32875A97C0041EC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		037C6EF42875A97C0041EC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		037C6EF72875A97C0041EC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dybttDemo.app/dybttDemo";
+			};
+			name = Debug;
+		};
+		037C6EF82875A97C0041EC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dybttDemo.app/dybttDemo";
+			};
+			name = Release;
+		};
 		22DF6AB81EAD9A4D0003610E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1769,6 +2387,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 arm64e x86_64";
@@ -1781,6 +2400,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 arm64e x86_64";
@@ -2008,6 +2628,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037C6EF32875A97C0041EC34 /* Debug */,
+				037C6EF42875A97C0041EC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037C6EF62875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037C6EF72875A97C0041EC34 /* Debug */,
+				037C6EF82875A97C0041EC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22DF6AB71EAD9A4D0003610E /* Build configuration list for PBXNativeTarget "FLSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
