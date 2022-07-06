@@ -32,11 +32,17 @@
     return YES;
 }
 
+// Deep linking
+
+// Open URI-scheme for iOS 9 and above
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options{
-    
+    [[AppsFlyerLib shared] handleOpenUrl:url options:options];
     return YES;
 }
+
+// Open URI-scheme for iOS 8 and below
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    [[AppsFlyerLib shared] handleOpenURL:url sourceApplication:sourceApplication];
     return YES;
 }
 

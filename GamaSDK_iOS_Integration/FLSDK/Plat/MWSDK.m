@@ -42,6 +42,7 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation
 {
+    [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
         result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
@@ -53,6 +54,7 @@
 //system version is ios9 and later
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
+    [AdDelegate application:application openURL:url options:options];
     BOOL result = [FBDelegate application:application openURL:url options:options];
     if (!result) {
         result = [LineDelegate application:application openURL:url options:options];
@@ -304,14 +306,16 @@
         
         if (self.payHandler) {
             if (success) {
-                PayData *mPayData = [[PayData alloc] init];
-                self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
-                
+               
                 BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
                 if (!havePay) {
                     [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
                 }
                 [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                
+                PayData *mPayData = [[PayData alloc] init];
+                self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
+                
                 
             }else{
                 self.payHandler(SDK_PAY_STATUS_FAIL, nil);
