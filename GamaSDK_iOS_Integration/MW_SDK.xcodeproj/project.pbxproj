@@ -235,7 +235,6 @@
 		03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; };
 		03E076682861E73C00B81B65 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
 		03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
-		03E076862862C90600B81B65 /* libFLSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DF6AB11EAD9A4C0003610E /* libFLSDK.a */; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
@@ -768,10 +767,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */,
 				0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */,
 				0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */,
 				035FA55C28644456000B2335 /* FBSDKCoreKit.xcframework in Frameworks */,
-				03E076862862C90600B81B65 /* libFLSDK.a in Frameworks */,
 				32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */,
 				E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */,
 				E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */,
@@ -805,7 +804,6 @@
 				244537421C2E9D6D00260D4C /* AddressBook.framework in Frameworks */,
 				CEE6B9531A149908009E77FF /* QuartzCore.framework in Frameworks */,
 				035FA545286442A7000B2335 /* AppAuth.xcframework in Frameworks */,
-				037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */,
 				2464555A1BB8F90F009E785B /* Photos.framework in Frameworks */,
 				035FA55D28644456000B2335 /* FBSDKLoginKit.xcframework in Frameworks */,
 				246455581BB8F905009E785B /* AssetsLibrary.framework in Frameworks */,
@@ -2319,7 +2317,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
@@ -2333,7 +2330,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -2371,6 +2368,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
