@@ -119,9 +119,9 @@
         if (!SDK_DATA.mConfigModel.appleLogin || SDK_DATA.mConfigModel.appPassCheck) {
             appleLoginBtn.hidden = YES;
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
+                make.leading.trailing.mas_equalTo(guestLoginBtn);
                 make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(2);
-//                make.height.mas_equalTo(2);
+                make.height.mas_equalTo(2);
             }];
             
         }else{
