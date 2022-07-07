@@ -54,10 +54,10 @@
     logoIV.hidden = YES;
     [self addSubview:logoIV];
     [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
+        CGFloat hx = VH(MARGIN_TOP);
+        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
         make.width.mas_equalTo(VW(200));
-        make.height.mas_equalTo(VH(50));
+        make.height.mas_equalTo(VH(5));//不显示设置高度小 make.height.mas_equalTo(VH(50));
         make.centerX.mas_equalTo(self);
     }];
     

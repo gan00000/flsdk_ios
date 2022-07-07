@@ -179,7 +179,7 @@
             make.centerY.equalTo(@(0));
             if (IS_PORTRAIT) {
                 make.width.mas_equalTo(VW(375));
-                make.height.mas_equalTo(VH(667 + 30));
+                make.height.mas_equalTo(VH(667));
             }else{
 //                make.width.mas_equalTo(VW(667));
 //                make.height.mas_equalTo(VH(375));
