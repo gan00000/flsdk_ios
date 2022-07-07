@@ -95,8 +95,6 @@
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
-		037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
-		037C6EF12875A97C0041EC34 /* MWSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		037C6EF92875AC790041EC34 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
 		037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
@@ -211,6 +209,7 @@
 		037C6F682875AD230041EC34 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F692875AD230041EC34 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
@@ -367,14 +366,14 @@
 			remoteGlobalIDString = CEE6B3701A148B1E009E77FF;
 			remoteInfo = SDK_TEST;
 		};
-		037C6EEE2875A97C0041EC34 /* PBXContainerItemProxy */ = {
+		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
 			remoteInfo = MWSDK;
 		};
-		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
+		037C6F77287708F40041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
 			proxyType = 1;
@@ -397,7 +396,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				037C6EF12875A97C0041EC34 /* MWSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -787,7 +785,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037C6EF02875A97C0041EC34 /* MWSDK.framework in Frameworks */,
+				037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */,
 				0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */,
 				0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */,
 				035FA55C28644456000B2335 /* FBSDKCoreKit.xcframework in Frameworks */,
@@ -1657,7 +1655,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				037C6EEF2875A97C0041EC34 /* PBXTargetDependency */,
+				037C6F78287708F40041EC34 /* PBXTargetDependency */,
 			);
 			name = SDK_TEST;
 			packageProductDependencies = (
@@ -2106,15 +2104,15 @@
 			target = CEE6B3701A148B1E009E77FF /* SDK_TEST */;
 			targetProxy = 037C6EE82875A97C0041EC34 /* PBXContainerItemProxy */;
 		};
-		037C6EEF2875A97C0041EC34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
-			targetProxy = 037C6EEE2875A97C0041EC34 /* PBXContainerItemProxy */;
-		};
 		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
 			targetProxy = 037C6F73287686D40041EC34 /* PBXContainerItemProxy */;
+		};
+		037C6F78287708F40041EC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
+			targetProxy = 037C6F77287708F40041EC34 /* PBXContainerItemProxy */;
 		};
 		22DF6AE61EADA5600003610E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
