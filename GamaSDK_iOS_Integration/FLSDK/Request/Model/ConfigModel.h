@@ -21,7 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL lineLogin;
 @property (nonatomic, assign) BOOL appleLogin;
 
-@property (nonatomic, assign) BOOL delectAccount;
+//是否显示定型化契约
+@property (nonatomic, assign) BOOL showContract;
+@property (nonatomic, assign) BOOL deleteAccount;
 
 //是否过审状态
 @property (nonatomic, assign) BOOL appPassCheck;

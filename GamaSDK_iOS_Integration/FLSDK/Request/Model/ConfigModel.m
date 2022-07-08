@@ -10,4 +10,22 @@
 
 @implementation ConfigModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        self.visitorLogin = YES;
+        self.fbLogin = YES;
+        self.googleLogin = YES;
+        self.lineLogin = YES;
+        self.appleLogin = YES;
+        self.deleteAccount = NO;
+        self.appPassCheck = NO;
+        self.showContract = YES;
+        
+    }
+    return self;
+}
+
 @end

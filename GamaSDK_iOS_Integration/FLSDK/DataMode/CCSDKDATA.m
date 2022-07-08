@@ -39,15 +39,7 @@
 - (void)initData
 {
     ConfigModel *mcm = [[ConfigModel alloc] init];
-    mcm.visitorLogin = YES;
-    mcm.fbLogin = YES;
-    mcm.googleLogin = YES;
-    mcm.lineLogin = YES;
-    mcm.appleLogin = YES;
-    mcm.delectAccount = NO;
-    mcm.appPassCheck = NO;
     self.mConfigModel = mcm;
-    
     
     GameUserModel *mGameUserModel = [[GameUserModel alloc] init];
     self.gameUserModel = mGameUserModel;

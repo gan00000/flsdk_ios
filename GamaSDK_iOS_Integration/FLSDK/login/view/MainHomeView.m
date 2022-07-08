@@ -314,7 +314,8 @@
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_MAIN_HOME) param:0];
             }
         }];
-
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    termAgreeView.hidden = !mConfigModel.showContract;
      
 }
 

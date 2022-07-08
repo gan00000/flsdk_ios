@@ -180,6 +180,8 @@
             }
             
         }];
+        ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+        termAgreeView.hidden = !mConfigModel.showContract;
         
         
         //账号登入

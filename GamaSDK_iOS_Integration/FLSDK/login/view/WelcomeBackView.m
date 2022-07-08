@@ -201,7 +201,8 @@
             make.width.mas_equalTo(VW(140));
         }];
         
-        if (SDK_DATA.mConfigModel.delectAccount) {
+        ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+        if (mConfigModel.deleteAccount) {
             [self addDeleteAccountView];
         }
         
