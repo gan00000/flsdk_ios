@@ -15,9 +15,9 @@
 
 	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、AdServices.framework、ApptrackingTransparency.framework、AuthenticationServices.framework
 	
-* **entitlements文件设置**
+* **添加Sign in with Apple**
 
-	在 Targets -> Capabilities 下，找到 Keychain Sharing ，修改其状态为 ON （默认是 OFF），此时会自动生成一个 xxxx.entitlements 文件(xxxx 为工程名字)，该文件也会自动添加到工程索引上。ON 状态打开后 Keychain Groups 的第一项已经生成，默认为 bundleID，然后点击 "+" 按钮增加一项，内容为 **com.flsdlChainGroup**
+	在 Targets -> Signing&Capabilities 下，添加Sign in with Apple
 	
 * **创建objcetc swift的桥接文件**, 即直接创建一个swift文件按xcode提示即可
 
