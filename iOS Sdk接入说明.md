@@ -7,6 +7,7 @@
 5. [登录接口](#6)
 6. [充值接口](#7)
 7. [事件追踪接口](#8)
+8. [应用内评分接口](#9)
 
 ----------------
 
@@ -249,6 +250,14 @@
 	sample:
 		
 	[[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
+             
+ ```
+ 
+* <h3 id="9">应用内评分接口</h3>
+
+ ```
+ 
+	- (void)requestStoreReview;
              
  ```
 
