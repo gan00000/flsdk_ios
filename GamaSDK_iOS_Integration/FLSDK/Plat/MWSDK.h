@@ -18,6 +18,7 @@
 #define AD_EVENT_LOGIN_SUCCESS  @"LOGIN_SUCCESS"
 #define AD_EVENT_REGISTER_SUCCESS  @"REGISTER_SUCCESS"
 #define AD_EVENT_OPEN_LOGIN_SCREEN  @"OPEN_LOGIN_SCREEN"
+#define AD_EVENT_FIRST_PURCHASE  @"FIRST_PURCHASE"
 
 #define AD_EVENT_COMPLETE_REGISTRATION_IOS  @"COMPLETE_REGISTRATION_IOS" //对fb单独使用，和AD_EVENT_REGISTER_SUCCESS是同样的事件
 
@@ -28,7 +29,7 @@
 #define AD_EVENT_CREATE_ROLE  @"CREATE_ROLE"
 #define AD_EVENT_START_GUIDE  @"START_GUIDE"
 #define AD_EVENT_COMPLETE_GUIDE  @"COMPLETE_GUIDE"
-#define AD_EVENT_FIRST_PURCHASE  @"FIRST_PURCHASE"
+
 
 // 充值回调
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
@@ -151,6 +152,11 @@ completionHandler:(SDKPayBlock) handler;
  GAMA_PRM_WEB_URL      打开的URL
  */
 //- (void)openWebPage:(NSDictionary *)webParams;
+
+
+/// 事件追踪
+/// @param name 事件名称
+- (void)trackEventWithEventName:(NSString *)name;
 
 /**
  事件上报

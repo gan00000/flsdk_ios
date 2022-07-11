@@ -23,7 +23,7 @@
     NSString *roleName = @"";
     NSString *roleId = @"";
     if (SDK_DATA.mLoginResponse && SDK_DATA.mLoginResponse.data && SDK_DATA.mLoginResponse.data.userId) {
-        userId = SDK_DATA.mLoginResponse.data.userId;
+        userId = SDK_DATA.mLoginResponse.data.userId ?: @"";
     }
     if (SDK_DATA.gameUserModel) {
         roleId = SDK_DATA.gameUserModel.roleID ?: @"";

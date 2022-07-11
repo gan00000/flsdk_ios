@@ -321,6 +321,10 @@
     }];
 }
 
+- (void)trackEventWithEventName:(NSString *)name{
+    [self trackEventWithEventName:name eventValues:nil];
+}
+
 - (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
     [AdLogger logWithEventName:name parameters:eventValues];
