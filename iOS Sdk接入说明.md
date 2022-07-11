@@ -1,4 +1,4 @@
-#SDK接入说明
+#IOS SDK接入说明
 
 1. [工程配置](#99)
 2. [App Info.plist配置](#100)
@@ -6,6 +6,7 @@
 4. [设置角色信息](#5)
 5. [登录接口](#6)
 6. [充值接口](#7)
+7. [事件追踪接口](#8)
 
 ----------------
 
@@ -226,6 +227,29 @@
     }];
              
  ```
+ 
+* <h3 id="8">事件追踪接口</h3>
 
+ ```
+ 
+	
+	/// 事件追踪
+	/// @param name 事件名称
+	- (void)trackEventWithEventName:(NSString *)name;
+
+	
+	游戏接入需要对下列几个事件进行埋点：
+	AD_EVENT_CHECK_UPDATE  检查更新
+	AD_EVENT_CHECK_RESOURCES  检查游戏资源
+	AD_EVENT_SELECT_SERVER  选择伺服器
+	AD_EVENT_CREATE_ROLE  创建角色
+	AD_EVENT_START_GUIDE  开始新手引导
+	AD_EVENT_COMPLETE_GUIDE  完成新手引导
+	
+	sample:
+		
+	[[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
+             
+ ```
 
 

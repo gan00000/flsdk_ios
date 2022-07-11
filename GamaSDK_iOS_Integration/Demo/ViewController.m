@@ -72,7 +72,7 @@
                           @"保存/更新角色信息（进入游戏得到角色信息后调用）",
                           @"充值com.fzzh.tw.1usd",
                           @"充值com.fzzh.tw.2usd",
-//                          @"分享",
+                          @"事件追踪",
 //                          @"打开网址客服",
 //                          @"打开公告",
 //                          @"事件上报",
@@ -174,9 +174,7 @@
         }
             break;
         case 4:
-//            [[FLSDK share] share:@{
-//                                            GAMA_PRM_SHARE_CONTENT_URL:@"http://mtd.starb168.com/invite/fbShare.html?gameCode=mthxtw&adsPlatForm=star_invite&advertiser=share&campaign=44252%7C%7CS%7C%7C1001%7C%7CS%7C%7C20210011000004",
-//                                            }];
+            [[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
             break;
 
         case 5:{
