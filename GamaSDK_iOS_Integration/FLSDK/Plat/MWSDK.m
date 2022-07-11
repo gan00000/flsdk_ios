@@ -123,10 +123,6 @@
 //    [AdUtil requestIDFA]
 }
 
-
-/**
- 保存或更新角色信息
- */
 - (void)setRoleInfoWithRoleId:(NSString *)roleId
                      roleName:(NSString *)roleName
                     roleLevel:(NSString *)roleLevel

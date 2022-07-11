@@ -92,15 +92,19 @@ typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 
-/**
- 登录
- */
+
+/// 登录接口
+/// @param cmopleteHandler 登录回调block
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
 
 
-/**
- 存储游戏角色信息
- */
+/// 每次登录或者切换账号的时候获得角色信息的时候调用
+/// @param roleId 角色id，必传
+/// @param roleName 角色名称，必传
+/// @param roleLevel 等色等级，没有传@""
+/// @param roleVipLevel 等色vip等级，没有传@""
+/// @param serverCode 伺服器id，必传
+/// @param serverName 伺服器名称，没有传@""
 - (void)setRoleInfoWithRoleId:(NSString *)roleId
            roleName:(NSString *)roleName
           roleLevel:(NSString *)roleLevel
@@ -108,6 +112,18 @@ typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
          serverCode:(NSString *)serverCode
          serverName:(NSString *)serverName;
 
+
+/// 充值接口
+/// @param roleId 角色id，必传
+/// @param roleName 角色名称，必传
+/// @param roleLevel 等色等级，没有传@""
+/// @param roleVipLevel 等色vip等级，没有传@""
+/// @param serverCode 伺服器id，必传
+/// @param serverName  伺服器名称，没有传@""
+/// @param productId 商品id,必传
+/// @param cpOrderId 厂商订单号，必传，该值通过服务端接口返回给厂商
+/// @param extra 预留值，可选，该值通过服务端接口返回给厂商
+/// @param handler 充值回调，成功是否成功请以服务端回调为准
 - (void)payWithRoleId:(NSString *)roleId
    roleName:(NSString *)roleName
   roleLevel:(NSString *)roleLevel
