@@ -18,6 +18,8 @@
 #import "MWApplePayManager.h"
 #import "AdLogger.h"
 
+#import <StoreKit/StoreKit.h>
+
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";
 
@@ -328,6 +330,16 @@
 - (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
     [AdLogger logWithEventName:name parameters:eventValues];
+}
+
+
+- (void)requestStoreReview
+{
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 - (void)_pay_webview

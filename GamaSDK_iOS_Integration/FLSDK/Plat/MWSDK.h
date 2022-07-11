@@ -166,6 +166,7 @@ completionHandler:(SDKPayBlock) handler;
  */
 - (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
+- (void)requestStoreReview;
 
 @end
 
