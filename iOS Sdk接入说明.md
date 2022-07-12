@@ -19,7 +19,7 @@
 	
 * **添加Sign in with Apple**
 
-	在 Targets -> Signing&Capabilities 下，添加Sign in with Apple
+	在 Targets -> Signing&Capabilities 下，添加Sign in with Apple、Push Notifications.
 	
 * **创建objcetc swift的桥接文件**, 即直接创建一个swift文件按xcode提示即可
 
