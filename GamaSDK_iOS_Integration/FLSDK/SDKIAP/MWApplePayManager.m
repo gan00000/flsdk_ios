@@ -288,11 +288,13 @@
     [self saveReceiptData:receiptString transactionId:transactionId orderId:self.orderId];
     
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
+    
+//    在開發過程中，無法直接關聯 transaction 與 orderID 之間聯絡，雖然有一個 applicationUserName 欄位，可以儲存一個資訊。但是這個欄位是不是 100%靠譜，在某些情況下會丟失儲存的資料。
     NSString * parameterStr = transaction.payment.applicationUsername;
     
-    if (!parameterStr)
+    if (!parameterStr || [@"" isEqualToString:parameterStr])
     {
-        parameterStr = @"";
+        parameterStr = self.orderId;
     }
     [SdkUtil showLoadingAtView:nil];
     [SDKRequest paymentWithTransactionId:transactionId receiptData:receiptString orderId:parameterStr gameInfo:SDK_DATA.gameUserModel accountModel:SDK_DATA.mLoginResponse.data otherParamsDic:nil successBlock:^(id responseData) {
