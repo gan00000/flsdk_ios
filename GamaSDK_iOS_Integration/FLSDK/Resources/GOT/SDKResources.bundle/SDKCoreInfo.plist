@@ -9,7 +9,7 @@
 	<key>af_dev_key</key>
 	<string>QtrxWJpdhQVov9F8hwKD3o</string>
 	<key>sdk_url_cdn</key>
-	<string>https://hktw-t-reshktw-static.meowplayer.com/</string>
+	<string>https://res-static.meowplayer.com/</string>
 	<key>terms_service_url</key>
 	<string>https://member.meowplayer.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>
@@ -19,8 +19,8 @@
 	<key>gameLanguage</key>
 	<string>zh-Hant</string>
 	<key>sdk_url_login</key>
-	<string>https://hktw-t-login.meowplayer.com/</string>
+	<string>https://login.meowplayer.com/</string>
 	<key>sdk_url_pay</key>
-	<string>https://hktw-t-pay.meowplayer.com/</string>
+	<string>https://pay.meowplayer.com/</string>
 </dict>
 </plist>
