@@ -69,7 +69,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(@"viewDidLoad");
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.8];//[UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.9];//[UIColor clearColor];
     
     SDK_DATA.mUITextFieldDelegate = self;
     switch (sdkPageType) {
