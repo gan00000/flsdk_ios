@@ -50,15 +50,23 @@
 -(void)addView
 {
     
+    UIView *contentView = [[UIView alloc] init];
+    [self addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.mas_equalTo(self);
+        make.centerY.mas_equalTo(self);
+    }];
+    
     UIImageView *logoIV = [UIUtil initImageViewWithImage:@"mw_logo"];
     logoIV.hidden = YES;
-    [self addSubview:logoIV];
+    [contentView addSubview:logoIV];
     [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        CGFloat hx = VH(MARGIN_TOP);
-        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
+//        CGFloat hx = VH(MARGIN_TOP);
+//        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
+        make.top.mas_equalTo(contentView.mas_top);
         make.width.mas_equalTo(VW(200));
-        make.height.mas_equalTo(VH(5));//不显示设置高度小 make.height.mas_equalTo(VH(50));
-        make.centerX.mas_equalTo(self);
+        make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
+        make.centerX.mas_equalTo(contentView);
     }];
     
     
@@ -68,13 +76,18 @@
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
     guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
     
-    [self addSubview:guestLoginBtn];
+    [contentView addSubview:guestLoginBtn];
     
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(logoIV.mas_bottom).mas_offset(VH(18));
-        make.leading.mas_equalTo(self).mas_offset(VH(38));
-        make.trailing.mas_equalTo(self).mas_offset(VH(-38));;
+        if (logoIV.hidden) {
+            make.top.mas_equalTo(logoIV.mas_bottom);
+        }else{
+            make.top.mas_equalTo(logoIV.mas_bottom).mas_offset(VH(18));
+        }
+        
+        make.leading.mas_equalTo(contentView).mas_offset(VH(38));
+        make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));;
         make.height.mas_equalTo(VH(50));
     }];
     
@@ -106,13 +119,17 @@
     UIView *topView = guestLoginBtn;
     //游客登录 end
     
+    //test
+//    SDK_DATA.mConfigModel.appleLogin = YES;
+//    SDK_DATA.mConfigModel.appPassCheck = NO;
+    
     if (@available(iOS 13.0, *)) {
         ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                     authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
         [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
         appleLoginBtn.tag = appleLoginActTag;
         appleLoginBtn.cornerRadius = VH(25);
-        [self addSubview:appleLoginBtn];
+        [contentView addSubview:appleLoginBtn];
 
         topView = appleLoginBtn;
         
@@ -134,9 +151,9 @@
     }
     
     UIView *hasAccountContent = [[UIView alloc] init];
-    [self addSubview:hasAccountContent];
+    [contentView addSubview:hasAccountContent];
     [hasAccountContent mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self);
+        make.centerX.mas_equalTo(contentView);
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
     }];
     
@@ -156,15 +173,15 @@
     
     
     UILabel *otherLoginLabel = [UIUtil initLabelWithText:@"其他登入" fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
-    [self addSubview:otherLoginLabel];
+    [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
-        make.centerX.mas_equalTo(self);
+        make.centerX.mas_equalTo(contentView);
     }];
     
     UIView *lineView1 = [[UIView alloc] init];
     lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
-    [self addSubview:lineView1];
+    [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         //make.width.mas_equalTo(0.5);
@@ -177,7 +194,7 @@
     
     UIView *lineView2 = [[UIView alloc] init];
     lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
-    [self addSubview:lineView2];
+    [contentView addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         //make.width.mas_equalTo(0.5);
@@ -192,10 +209,12 @@
     //登录方式
     
     UIView *loginTypeView = [[UIView alloc] init];
-    [self addSubview:loginTypeView];
+    [contentView addSubview:loginTypeView];
     [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self);
+        make.centerX.mas_equalTo(contentView);
         make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
+        
+        make.bottom.mas_equalTo(contentView.mas_bottom);
     }];
     
     
