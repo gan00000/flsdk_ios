@@ -157,7 +157,9 @@ static dispatch_once_t onceToken;
 -(BOOL)getBoolForKey:(NSString *)key
 {
     
-    return [self.coreConfDic objectForKey:key];
+//    return [self.coreConfDic objectForKey:key];
+    id obj = [self.coreConfDic objectForKey:key];
+    BOOL boolValue = [obj boolValue];
 //    NSString *boolStr = [[self.coreConfDic objectForKey:key] lowercaseString];
 //    if ([boolStr isEqualToString:@"yes"] || [boolStr isEqualToString:@"true"]) {
 //        return YES;
@@ -167,6 +169,7 @@ static dispatch_once_t onceToken;
 //        NSLog(@"Can't Find BOOL Key: %@ \n------------------------------",key);
 //        return NO;
 //    }
+    return boolValue;
 }
 
 -(NSString *)getLocalizedStringForKey:(NSString *)key
