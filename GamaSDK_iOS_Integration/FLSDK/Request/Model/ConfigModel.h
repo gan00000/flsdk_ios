@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //是否过审状态
 @property (nonatomic, assign) BOOL appPassCheck;
+
+@property (nonatomic, assign) BOOL showLogo;
+
 @end
 
 NS_ASSUME_NONNULL_END

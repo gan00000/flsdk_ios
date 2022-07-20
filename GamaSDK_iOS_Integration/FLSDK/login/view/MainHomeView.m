@@ -50,6 +50,11 @@
 -(void)addView
 {
     
+    //test
+//    SDK_DATA.mConfigModel.appleLogin = YES;
+//    SDK_DATA.mConfigModel.appPassCheck = NO;
+//    SDK_DATA.mConfigModel.showLogo = YES;
+    
     UIView *contentView = [[UIView alloc] init];
     [self addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,13 +64,20 @@
     
     UIImageView *logoIV = [UIUtil initImageViewWithImage:@"mw_logo"];
     logoIV.hidden = YES;
+    if (SDK_DATA.mConfigModel.showLogo) {
+        logoIV.hidden = NO;
+    }
     [contentView addSubview:logoIV];
     [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
 //        CGFloat hx = VH(MARGIN_TOP);
 //        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
         make.top.mas_equalTo(contentView.mas_top);
         make.width.mas_equalTo(VW(200));
-        make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
+        if (SDK_DATA.mConfigModel.showLogo) {
+            make.height.mas_equalTo(VH(50));
+        }else{
+            make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
+        }
         make.centerX.mas_equalTo(contentView);
     }];
     
@@ -119,9 +131,6 @@
     UIView *topView = guestLoginBtn;
     //游客登录 end
     
-    //test
-//    SDK_DATA.mConfigModel.appleLogin = YES;
-//    SDK_DATA.mConfigModel.appPassCheck = NO;
     
     if (@available(iOS 13.0, *)) {
         ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn

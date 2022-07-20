@@ -23,6 +23,7 @@
         self.deleteAccount = NO;
         self.appPassCheck = NO;
         self.showContract = YES;
+        self.showLogo = NO;
         
     }
     return self;
