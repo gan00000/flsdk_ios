@@ -515,7 +515,11 @@
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
-        loginData.timestamp =rData.timestamp;
+        loginData.timestamp = rData.timestamp;
+        
+        loginData.isBind = rData.isBind;
+        loginData.isBindPhone = rData.isBindPhone;
+        loginData.loginType = thirdPlate;
         
         [MWSDK share].loginCompletionHandler(loginData);
     }

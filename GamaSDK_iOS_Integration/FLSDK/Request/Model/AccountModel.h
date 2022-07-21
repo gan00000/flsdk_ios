@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *lastLoginTime;
 
-@property (nonatomic, assign) BOOL isBind;
+@property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
+@property (nonatomic, assign) BOOL isBindPhone;//是否绑定手机号码
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
 @property (nonatomic, copy) NSString *token;

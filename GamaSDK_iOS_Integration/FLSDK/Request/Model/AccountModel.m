@@ -22,6 +22,7 @@
     self.thirdId = @"";
     self.thirdAccount = @"";
     self.isBind = NO;
+    self.isBindPhone = NO;
     self.loginType = @"";
 }
 
