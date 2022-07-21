@@ -73,7 +73,7 @@
                           @"充值com.fzzh.tw.1usd",
                           @"充值com.fzzh.tw.2usd",
                           @"事件追踪",
-//                          @"打开网址客服",
+                          @"fb分享url",
 //                          @"打开公告",
 //                          @"事件上报",
                      
@@ -178,7 +178,13 @@
             break;
 
         case 5:{
-            [[MWSDK share] openCs];
+            [[MWSDK share] shareWithUrl:@"https://developers.facebook.com/docs/sharing/ios" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
+                if (success) {
+                    [AlertUtil showAlertWithMessage:@"分享成功"];
+                }else{
+                    [AlertUtil showAlertWithMessage:@"分享失败"];
+                }
+            }];
         }
             break;
         case 6:{
