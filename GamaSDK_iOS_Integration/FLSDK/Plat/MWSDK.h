@@ -42,7 +42,7 @@ typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
 typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
 typedef void (^SDKLogoutBlock)(NSInteger logout);
 typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
-//typedef void (^PayFail)(NSDictionary *result);
+typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
 //typedef void (^PayPuchessing)(NSDictionary *result);
 
 // 充值类型
@@ -167,6 +167,8 @@ completionHandler:(SDKPayBlock) handler;
 - (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
 - (void)requestStoreReview;
+
+-(void)shareWithUrl:(NSString *)url successBlock:(ShareBlock)shareBlock;
 
 @end
 

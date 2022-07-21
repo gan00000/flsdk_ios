@@ -8,9 +8,12 @@
 
 #import "FBDelegate.h"
 
-@interface FBDelegate()
+@interface FBDelegate() <FBSDKSharingDelegate>
 
 @property (nonatomic,strong) FBSDKLoginManager *loginManager;
+
+@property (nonatomic,strong) CCallBack successBlock;
+@property (nonatomic,strong) CCallBack failBlock;
 
 @end
 
@@ -205,6 +208,62 @@
 //
 //    ws.facebookId = @"";
 //    ws.facebookName = @"";
+}
+
+-(void)shareLink:(NSString *)url presentingViewController:(UIViewController * _Nonnull)presentingViewController
+    successBlock:(CCallBack)successBlock
+    failBlock:(CCallBack)failBlock
+{
+    self.successBlock = successBlock;
+    self.failBlock = failBlock;
+    
+    NSURL *mUrl = [NSURL URLWithString:url];
+    FBSDKShareLinkContent *xFBSDKShareLinkContent = [[FBSDKShareLinkContent alloc] init];
+    xFBSDKShareLinkContent.contentURL = mUrl;
+    FBSDKShareDialog *shareDialog = [[FBSDKShareDialog alloc] initWithViewController:presentingViewController content:xFBSDKShareLinkContent delegate:self];
+    
+    BOOL fbExist = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fbapi://"]]; //判断fb是否安装
+    if (fbExist) {
+        shareDialog.mode = FBSDKShareDialogModeNative;
+    }else{
+        shareDialog.mode = FBSDKShareDialogModeAutomatic;
+    }
+    
+    BOOL ok = [shareDialog show];
+    SDK_LOG(@"FBSDKShareDialogModeNative not ok");
+  
+//    [FBSDKShareDialog showFromViewController:presentingViewController withContent:xFBSDKShareLinkContent delegate:self];
+    
+}
+
+
+/// Sent to the delegate when sharing completes without error or cancellation.
+/// @param sharer The sharer that completed.
+/// @param results The results from the sharer.  This may be nil or empty.
+- (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
+    
+    SDK_LOG(@"share didCompleteWithResults");
+    if (self.successBlock) {
+        self.successBlock(@"", 1, nil);
+    }
+}
+/// Sent to the delegate when the sharer encounters an error.
+/// @param sharer The sharer that completed.
+/// @param error The error.
+///
+- (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
+    SDK_LOG(@"share didFailWithError: %@",error);
+    if (self.failBlock) {
+        self.failBlock(@"error", 0, nil);
+    }
+}
+/// Sent to the delegate when the sharer is cancelled.
+/// @param sharer The sharer that completed.
+- (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
+    SDK_LOG(@"sharerDidCancel");
+    if (self.failBlock) {
+        self.failBlock(@"cancel", 0, nil);
+    }
 }
 
 @end

@@ -342,6 +342,21 @@
     }
 }
 
+- (void)shareWithUrl:(NSString *)url successBlock:(ShareBlock)shareBlock{
+    
+    [[FBDelegate share] shareLink:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        
+        if (shareBlock) {
+            shareBlock(YES,dic);
+        }
+    } failBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        if (shareBlock) {
+            shareBlock(NO,nil);
+        }
+    }];
+    
+}
+
 - (void)_pay_webview
 {
 //    NSString * resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/"];
