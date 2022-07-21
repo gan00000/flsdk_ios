@@ -178,13 +178,16 @@
             break;
 
         case 5:{
-            [[MWSDK share] shareWithUrl:@"https://developers.facebook.com/docs/sharing/ios" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
+            
+            [[MWSDK share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
+                
                 if (success) {
                     [AlertUtil showAlertWithMessage:@"分享成功"];
                 }else{
                     [AlertUtil showAlertWithMessage:@"分享失败"];
                 }
             }];
+            
         }
             break;
         case 6:{

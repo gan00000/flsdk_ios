@@ -342,9 +342,9 @@
     }
 }
 
-- (void)shareWithUrl:(NSString *)url successBlock:(ShareBlock)shareBlock{
+- (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     
-    [[FBDelegate share] shareLink:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [[FBDelegate share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         
         if (shareBlock) {
             shareBlock(YES,dic);

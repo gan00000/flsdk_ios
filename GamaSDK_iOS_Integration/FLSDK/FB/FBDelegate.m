@@ -210,7 +210,8 @@
 //    ws.facebookName = @"";
 }
 
--(void)shareLink:(NSString *)url presentingViewController:(UIViewController * _Nonnull)presentingViewController
+-(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url
+    presentingViewController:(UIViewController * _Nonnull)presentingViewController
     successBlock:(CCallBack)successBlock
     failBlock:(CCallBack)failBlock
 {
@@ -220,6 +221,11 @@
     NSURL *mUrl = [NSURL URLWithString:url];
     FBSDKShareLinkContent *xFBSDKShareLinkContent = [[FBSDKShareLinkContent alloc] init];
     xFBSDKShareLinkContent.contentURL = mUrl;
+    xFBSDKShareLinkContent.quote = message;
+    if (hashTag) {
+        xFBSDKShareLinkContent.hashtag = [[FBSDKHashtag alloc] initWithString:hashTag];
+    }
+    
     FBSDKShareDialog *shareDialog = [[FBSDKShareDialog alloc] initWithViewController:presentingViewController content:xFBSDKShareLinkContent delegate:self];
     
     BOOL fbExist = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fbapi://"]]; //判断fb是否安装

@@ -168,7 +168,13 @@ completionHandler:(SDKPayBlock) handler;
 
 - (void)requestStoreReview;
 
--(void)shareWithUrl:(NSString *)url successBlock:(ShareBlock)shareBlock;
+
+/// fb分享接口
+/// @param hashTag  话题
+/// @param message  引文
+/// @param url  分享的url
+/// @param shareBlock 分享的回调
+-(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock;
 
 @end
 

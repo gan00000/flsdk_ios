@@ -41,9 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
             andFailBlock:(void(^)(NSError *error))failBlock
                            andCancelBlock:(void(^)(NSError *error))cancelBlock;
 
--(void)shareLink:(NSString *)url presentingViewController:(UIViewController * _Nonnull)presentingViewController
+-(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url
+    presentingViewController:(UIViewController * _Nonnull)presentingViewController
     successBlock:(CCallBack)successBlock
-       failBlock:(CCallBack)failBlock;
+          failBlock:(CCallBack)failBlock;
 
 @end
 
