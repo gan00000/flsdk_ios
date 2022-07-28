@@ -146,12 +146,12 @@
         return;
     }
     
-    SDK_DATA.gameUserModel.roleID = roleId;
-    SDK_DATA.gameUserModel.roleName = roleName;
-    SDK_DATA.gameUserModel.roleLevel = roleLevel;
-    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel;
-    SDK_DATA.gameUserModel.serverCode = serverCode;
-    SDK_DATA.gameUserModel.serverName = serverName;
+    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
+    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
+    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
+    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
+    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
+    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
     
     
     
@@ -283,12 +283,12 @@
         return;
     }
     
-    SDK_DATA.gameUserModel.roleID = roleId;
-    SDK_DATA.gameUserModel.roleName = roleName;
-    SDK_DATA.gameUserModel.roleLevel = roleLevel;
-    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel;
-    SDK_DATA.gameUserModel.serverCode = serverCode;
-    SDK_DATA.gameUserModel.serverName = serverName;
+    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
+    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
+    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
+    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
+    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
+    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
     
     self.payHandler = handler;
     

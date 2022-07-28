@@ -582,11 +582,11 @@
             @"extra"           :extra ? : @"",
             @"cpOrderId"         :cpOrderId,
             @"serverCode"           :gameUserModel.serverCode,
-            @"serverName"           :gameUserModel.serverName,
+            @"serverName"           :gameUserModel.serverName ? : @"",
             @"roleId"           :gameUserModel.roleID,
-            @"roleName"           :gameUserModel.roleName,
-            @"roleLevel"           :gameUserModel.roleLevel,
-            @"roleVipLevel"           :gameUserModel.roleVipLevel,
+            @"roleName"           :gameUserModel.roleName ? : @"",
+            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
+            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
 
         };
         
