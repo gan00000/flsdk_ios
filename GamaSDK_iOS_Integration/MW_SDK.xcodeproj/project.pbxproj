@@ -2154,7 +2154,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2227,7 +2227,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/FBFrameworks/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2581,7 +2581,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/FBFrameworks",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
@@ -2647,7 +2647,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/FBFrameworks",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
