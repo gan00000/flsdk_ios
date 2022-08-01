@@ -23,6 +23,7 @@
 #import "StringUtil.h"
 #import "DimeUtil.h"
 #import "SdkUtil.h"
+#import "NSString+Local.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
