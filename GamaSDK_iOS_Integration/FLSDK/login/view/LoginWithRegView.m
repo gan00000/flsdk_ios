@@ -63,8 +63,8 @@
     
     
     
-    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
-    [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    [loginTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -74,9 +74,9 @@
     }];
     
     
-    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
     
-    [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [regTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -87,7 +87,7 @@
     }];
     
     loginBottomLine = [[UIView alloc] init];
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    loginBottomLine.backgroundColor = [UIColor colorWithHexString:BaseColor];
     [tabView addSubview:loginBottomLine];
     [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -99,7 +99,7 @@
     }];
     
     regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    regBottomLine.backgroundColor = [UIColor colorWithHexString:BaseColor];
     regBottomLine.hidden = YES;
     [tabView addSubview:regBottomLine];
     [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {

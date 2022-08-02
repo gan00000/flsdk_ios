@@ -225,7 +225,7 @@
             
         }];
         
-        CGFloat btn_w = VW(28);
+        CGFloat btn_w = VW(34);
         CGFloat btn_h = btn_w;
         CGFloat margin_leading = VW(24);
         

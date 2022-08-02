@@ -54,10 +54,12 @@
 {
     
     //    self.backgroundColor = [UIColor whiteColor];
-    //    self.layer.cornerRadius = 4;
+    self.layer.cornerRadius = VW(20);
+    self.layer.borderWidth = 1.0;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
     
     NSString *iconName;
-    NSString *lableName;
+//    NSString *lableName;
     BOOL showEye = NO;
     BOOL addMoreAccountBtn = NO;
     UIKeyboardType mUIKeyboardType = UIKeyboardTypeDefault;
@@ -67,45 +69,45 @@
     switch (type) {
         case SDKTextFiledView_Type_VfCode:
             iconName = @"fl_sdk_dx.png";
-            lableName = @"驗證碼";
+            
             mUIKeyboardType = UIKeyboardTypeNumberPad;
-            placeholderText = @"請輸入驗證碼";
+            placeholderText = @"py_msg_vfcode_hint".localx;
             showLableIcon = NO;
             break;
             
         case SDKTextFiledView_Type_Account:
             iconName = @"mw_account_icon.png";
-            lableName = @"帳號";
-            placeholderText = @"請輸入您的常用信箱";
+            
+            placeholderText = @"py_register_account_hit".localx;
             addMoreAccountBtn = YES;
             break;
             
         case SDKTextFiledView_Type_Password:
             
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"密碼";
-            placeholderText = @"請輸入6-20字元";
+            
+            placeholderText = @"py_register_password_hit".localx;
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_Again:
             
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"密碼";
-            placeholderText = @"確認新密碼";
+            
+            placeholderText = @"text_input_new_pwd_confire".localx;
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"請輸入新密碼";
-            placeholderText = @"請輸入新密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            
+            placeholderText = @"text_input_new_pwd".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = @"mw_passowrd_icon.png";
-            lableName = @"輸入舊密碼";
-            placeholderText = @"輸入舊密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            
+            placeholderText = @"py_input_old_password".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
             showEye = YES;
             break;
             
@@ -117,7 +119,7 @@
     self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.lableIconImageView];
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.mas_leading);
+        make.leading.equalTo(self.mas_leading).mas_offset(VW(18));
         make.centerY.mas_equalTo(self);
         make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
         make.width.mas_equalTo(self.lableIconImageView.mas_height);
@@ -185,7 +187,7 @@
         [self addSubview:self.moreAccountBtn];
         [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.trailing.mas_equalTo(self).mas_offset(VW(-8));;
+            make.trailing.mas_equalTo(self).mas_offset(VW(-15));;
             make.centerY.mas_equalTo(self);
             
             make.height.mas_equalTo(self.mas_height);
@@ -206,7 +208,7 @@
         [self addSubview:eyeBtn];
         [eyeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.trailing.mas_equalTo(self).mas_offset(VW(-8));
+            make.trailing.mas_equalTo(self).mas_offset(VW(-15));
             make.centerY.mas_equalTo(self);
             
             make.height.mas_equalTo(self.mas_height);
@@ -217,6 +219,7 @@
     
     
     UIView *lineView2 = [[UIView alloc] init];
+    lineView2.hidden = YES;
     lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
