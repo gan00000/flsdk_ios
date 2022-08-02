@@ -148,6 +148,7 @@
     }];
     
     self.mRegisterAccountView.hidden = YES;
+    
 }
 
 
@@ -156,6 +157,8 @@
 {
     self.mAccountLoginView.delegate = self.delegate;
     self.mRegisterAccountView.delegate = self.delegate;
+    
+    self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
 }
 
 - (void)registerViewBtnAction:(UIButton *)sender
@@ -217,19 +220,38 @@
 
 -(void) makeTabStatus:(BOOL) loginClick
 {
+//    YES: 子视图超出父视图范围部分不显示.
+//    NO: 子视图超出父视图范围时, 会显示.
+    self.clipsToBounds = YES;
+
     if (loginClick) {
         
         [loginTabBtn setSelected:YES];
         [regTabBtn setSelected:NO];
         
-        self.mAccountLoginView.hidden = NO;
-        self.mRegisterAccountView.hidden = YES;
-        
         loginBottomLine.hidden = NO;
         regBottomLine.hidden = YES;
         
+        self.mAccountLoginView.hidden = NO;
+        self.mRegisterAccountView.hidden = NO;
+        
+//        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(-self.frame.size.width, 0);
+//        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(0, 0);
+        
+        [UIView animateWithDuration:0.6 animations:^{
+            
+            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,self.frame.size.width, 0);
+            
+            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, self.frame.size.width, 0);
+            
+        } completion:^(BOOL finished) {
+//            self.mAccountLoginView.hidden = NO;
+//            self.mRegisterAccountView.hidden = YES;
+        }];
+        
 //        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
 //        [regTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
+        
         
     }else{
     
@@ -237,14 +259,26 @@
         [loginTabBtn setSelected:NO];
         [regTabBtn setSelected:YES];
     
-        self.mAccountLoginView.hidden = YES;
+        self.mAccountLoginView.hidden = NO;
         self.mRegisterAccountView.hidden = NO;
         
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
         
-//        [regTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-//        [loginTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
+
+//        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(0, 0);
+//        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+        [UIView animateWithDuration:0.6 animations:^{
+            
+            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,-self.frame.size.width, 0);
+            
+            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, -self.frame.size.width, 0);
+            
+        } completion:^(BOOL finished) {
+//            self.mAccountLoginView.hidden = YES;
+//            self.mRegisterAccountView.hidden = NO;
+        }];
+        
     }
 }
 @end

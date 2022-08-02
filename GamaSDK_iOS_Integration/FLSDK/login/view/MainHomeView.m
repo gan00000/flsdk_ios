@@ -86,7 +86,7 @@
     guestLoginBtn = [UIUtil initBtnWithTitleText:@"" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
     
     [contentView addSubview:guestLoginBtn];
     
@@ -117,7 +117,7 @@
         make.width.height.mas_equalTo(VW(30));
     }];
     
-    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText:@"遊客登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText:@"guest_login_btn".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtnContent addSubview:guestTextBtn];
     [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
@@ -166,14 +166,14 @@
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
     }];
     
-    UILabel *hasAccountLabel = [UIUtil initLabelWithText:@"已有帳號？ " fontSize:FS(12) textColor:[UIColor whiteColor]];
+    UILabel *hasAccountLabel = [UIUtil initLabelWithText:@"tips_have_account".localx fontSize:FS(12) textColor:[UIColor whiteColor]];
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
 //        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
     }];
     
-    UILabel *loginLabel = [UIUtil initLabelWithText:@"登入" fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#EB2E2B"]];
+    UILabel *loginLabel = [UIUtil initLabelWithText:@"text_login".localx fontSize:FS(12) textColor:[UIColor colorWithHexString:BaseColor]];
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.bottom.top.mas_equalTo(hasAccountContent);
@@ -181,7 +181,7 @@
     }];
     
     
-    UILabel *otherLoginLabel = [UIUtil initLabelWithText:@"其他登入" fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [UIUtil initLabelWithText:@"text_login_other".localx fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
@@ -227,7 +227,7 @@
     }];
     
     
-    CGFloat btn_w = VW(28);
+    CGFloat btn_w = VW(34);
     CGFloat btn_h = btn_w;
     CGFloat margin_leading = VW(27);
     
@@ -315,7 +315,7 @@
        
     }];
     
-        NSString *xtext = GetString(@"gama_ui_term_port_read2");
+        NSString *xtext = GetString(@"text_ui_term_port_read2");
         UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
