@@ -10,6 +10,14 @@
 #import <AdSupport/AdSupport.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/ASIdentifierManager.h>
+
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseAnalytics/FIRAnalytics.h>
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+#import <AppsFlyerLib/AppsFlyerLib.h>
+
 #import "SdkHeader.h"
 
 @implementation AdDelegate

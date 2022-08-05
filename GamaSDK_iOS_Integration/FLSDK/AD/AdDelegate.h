@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseAnalytics/FIRAnalytics.h>
-
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-
-#import <AppsFlyerLib/AppsFlyerLib.h>
-
 typedef NS_OPTIONS(NSUInteger, AdType) {
     AdType_None        = 0,
     AdType_Appflyer            =  1 << 1,   // 0000 0001
