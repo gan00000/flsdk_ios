@@ -1,8 +1,8 @@
 xcschememanagement.plist
 GamaResources/_LibGroup
-xcshareddata/
-xcuserdata/
-xcshareddata/
+#xcshareddata/
+#xcuserdata/
+#xcshareddata/
 GamaSDK_iOS_Integration/FLSDK/framework_history
 GamaSDK_iOS_Integration/FLSDK/FLSDK.framework
 
@@ -12,3 +12,4 @@ GamaSDK_iOS_Integration/Resources/ThirkLib/LineSDK
 GamaSDK_iOS_Integration/build
 GamaSDK_iOS_Integration/archives
 GamaSDK_iOS_Integration/Resources/ThirkLib/Facebook
+SDK_iOS_WS.xcworkspace/xcuserdata
