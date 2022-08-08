@@ -70,7 +70,7 @@ static dispatch_once_t onceToken;
 //    NSFileManager *fileManager = [NSFileManager defaultManager];
     
     //读取bundle
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -112,12 +112,19 @@ static dispatch_once_t onceToken;
     return _coreConfDic;
 }
 
+-(NSDictionary *)mainBundleConfDic{
+    if (!_mainBundleConfDic) {
+        _mainBundleConfDic = [self readMainBundleCoreConfInfo];
+    }
+    return _mainBundleConfDic;
+}
+
 #pragma mark -
 //从文件中读取配置信息
 -(NSDictionary *)readCoreConfInfo
 {
     //1.先读取sdk bundle里面
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -141,12 +148,38 @@ static dispatch_once_t onceToken;
     return infoDic;
 }
 
+-(NSDictionary *)readMainBundleCoreConfInfo
+{
+    //读取自定义的 plist文件的写法
+    NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
+    
+    if (infoPlistPath) {
+        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
+        if (infoDic) {
+            return infoDic;
+        }
+    }
+    
+    // NSLog(@"dictionary = %@",dictionary);
+    //读取系统产生的 plist文件的写法
+    // NSDictionary *plistDic = [[NSBundle mainBundle] infoDictionary];
+    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    
+    return nil;
+}
+
 
 #pragma mark - 获取某个key对应的确定的配置值
 -(NSString *)getStringForKey:(NSString *)key
 {
+    NSString *strconfig = [self.mainBundleConfDic objectForKey:key];
+    if (strconfig && ![strconfig isEqualToString:@""]) {
+        return strconfig;
+    }
     
-    NSString *strconfig = [self.coreConfDic objectForKey:key];
+    strconfig = [self.coreConfDic objectForKey:key];
     if (strconfig && ![strconfig isEqualToString:@""]) {
         return strconfig;
     }
@@ -195,7 +228,7 @@ static dispatch_once_t onceToken;
     self.m_stringsBundle = [NSBundle mainBundle];
     self.m_stringsName = @"";
 
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
 
     if (bundleURL) {
 
@@ -255,6 +288,20 @@ static dispatch_once_t onceToken;
 -(BOOL) isAdDebug
 {
     return [self getBoolForKey:@"sdk_ad_bug"];
+}
+
+-(BOOL) isVersion2
+{
+    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"];
+}
+
+- (NSString *)getSdkBundleName
+{
+    NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
+    if (bundleName && ![bundleName isEqualToString:@""]) {
+        return bundleName;
+    }
+    return SDK_BUNDLE_NAME_v1;
 }
 
 -(NSString *) getFacebookAppId

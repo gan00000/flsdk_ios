@@ -17,3 +17,5 @@
 #define GAME_LANGUAGE [SDKRES getGameLanguage]
 #define FACEBOOK_APPID [SDKRES getFacebookAppId]
 #define TERMS_SERVICE_URL [SDKRES getTermsServiceUrl]
+
+#define is_Version2 [SDKRES isVersion2]
