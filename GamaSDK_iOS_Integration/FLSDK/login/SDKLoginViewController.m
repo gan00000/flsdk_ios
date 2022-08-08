@@ -24,6 +24,7 @@
 
 #import "MainHomeViewV2.h"
 #import "LoginWithRegViewV2.h"
+#import "FindPasswordViewV2.h"
 
 #import "AccountModel.h"
 
@@ -294,9 +295,16 @@
 
 -(void)addFindPasswordView
 {
-    
-    FindPasswordView *view = [[FindPasswordView alloc] initView];
-    [self addSubSdkLoginView:view];
+    if (is_Version2) {
+        
+        FindPasswordViewV2 *view = [[FindPasswordViewV2 alloc] initView];
+        [self addSubSdkLoginView:view];
+        
+    }else{
+        FindPasswordView *view = [[FindPasswordView alloc] initView];
+        [self addSubSdkLoginView:view];
+    }
+   
 }
 
 -(void)addHomeView

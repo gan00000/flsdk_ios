@@ -190,7 +190,7 @@
         accountLoginBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -225,7 +225,7 @@
             
         }];
         
-        CGFloat btn_w = VW(34);
+        CGFloat btn_w = VW(28);
         CGFloat btn_h = btn_w;
         CGFloat margin_leading = VW(24);
         

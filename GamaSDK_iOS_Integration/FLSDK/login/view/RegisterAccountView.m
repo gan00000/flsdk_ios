@@ -196,7 +196,7 @@
         
         regAccountBtn = [UIUtil initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        regAccountBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:regAccountBtn];
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {

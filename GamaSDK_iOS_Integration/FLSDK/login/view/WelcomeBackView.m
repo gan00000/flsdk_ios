@@ -152,7 +152,7 @@
         accountLoginBtn = [UIUtil initBtnWithTitleText:GetString(@"text_go_game") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kGoGameActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(25)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {

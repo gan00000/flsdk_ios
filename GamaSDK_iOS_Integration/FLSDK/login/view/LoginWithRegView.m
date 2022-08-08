@@ -63,8 +63,8 @@
     
     
     
-    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
-    [loginTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
+    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -74,9 +74,9 @@
     }];
     
     
-    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
     
-    [regTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
+    [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -87,7 +87,7 @@
     }];
     
     loginBottomLine = [[UIView alloc] init];
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString:BaseColor];
+    loginBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
     [tabView addSubview:loginBottomLine];
     [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -99,7 +99,7 @@
     }];
     
     regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString:BaseColor];
+    regBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
     regBottomLine.hidden = YES;
     [tabView addSubview:regBottomLine];
     [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -148,7 +148,6 @@
     }];
     
     self.mRegisterAccountView.hidden = YES;
-    
 }
 
 
@@ -157,8 +156,6 @@
 {
     self.mAccountLoginView.delegate = self.delegate;
     self.mRegisterAccountView.delegate = self.delegate;
-    
-    self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
 }
 
 - (void)registerViewBtnAction:(UIButton *)sender
@@ -220,38 +217,19 @@
 
 -(void) makeTabStatus:(BOOL) loginClick
 {
-//    YES: 子视图超出父视图范围部分不显示.
-//    NO: 子视图超出父视图范围时, 会显示.
-    self.clipsToBounds = YES;
-
     if (loginClick) {
         
         [loginTabBtn setSelected:YES];
         [regTabBtn setSelected:NO];
         
+        self.mAccountLoginView.hidden = NO;
+        self.mRegisterAccountView.hidden = YES;
+        
         loginBottomLine.hidden = NO;
         regBottomLine.hidden = YES;
         
-        self.mAccountLoginView.hidden = NO;
-        self.mRegisterAccountView.hidden = NO;
-        
-//        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(-self.frame.size.width, 0);
-//        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(0, 0);
-        
-        [UIView animateWithDuration:0.6 animations:^{
-            
-            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,self.frame.size.width, 0);
-            
-            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, self.frame.size.width, 0);
-            
-        } completion:^(BOOL finished) {
-//            self.mAccountLoginView.hidden = NO;
-//            self.mRegisterAccountView.hidden = YES;
-        }];
-        
 //        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
 //        [regTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
-        
         
     }else{
     
@@ -259,26 +237,14 @@
         [loginTabBtn setSelected:NO];
         [regTabBtn setSelected:YES];
     
-        self.mAccountLoginView.hidden = NO;
+        self.mAccountLoginView.hidden = YES;
         self.mRegisterAccountView.hidden = NO;
         
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
         
-
-//        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(0, 0);
-//        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
-        [UIView animateWithDuration:0.6 animations:^{
-            
-            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,-self.frame.size.width, 0);
-            
-            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, -self.frame.size.width, 0);
-            
-        } completion:^(BOOL finished) {
-//            self.mAccountLoginView.hidden = YES;
-//            self.mRegisterAccountView.hidden = NO;
-        }];
-        
+//        [regTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+//        [loginTabBtn setTitleColor:[UIColor colorWithHexString:@"#848484"] forState:(UIControlStateNormal)];
     }
 }
 @end

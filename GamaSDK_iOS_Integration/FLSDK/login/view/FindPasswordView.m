@@ -20,7 +20,7 @@
 {
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *newPwdSDKTextFiledView;
-//    SDKTextFiledView *againPwdSDKTextFiledView;
+    SDKTextFiledView *againPwdSDKTextFiledView;
     
     SDKTextFiledView *vfCodeFiledView;
     //    PhoneView *mPhoneView;
@@ -68,40 +68,27 @@
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(VW(-40));
+            make.leading.mas_equalTo(self).mas_offset(40);
+            make.trailing.mas_equalTo(self).mas_offset(-40);
             make.height.mas_equalTo(VH(40));
 
             make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
             
         }];
         
-        //新密码
-        newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPwdSDKTextFiledView];
-        
-        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(accountSDKTextFiledView);
-            make.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(accountSDKTextFiledView);
-
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
-            
-        }];
-        
         
         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
         
         
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
-        getVfCodeBtn.layer.borderWidth = 1;
-        getVfCodeBtn.layer.cornerRadius = VH(20);
+//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
+//        getVfCodeBtn.layer.borderWidth = 1;
+//        getVfCodeBtn.layer.cornerRadius = 10;
 //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
 //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
         [self addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.width.mas_equalTo(VW(100));
             make.height.mas_equalTo(accountSDKTextFiledView);
@@ -110,18 +97,17 @@
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
-//        UIView *lineView1 = [[UIView alloc] init];
-//        lineView1.hidden = YES;
-//        lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
-//        [self addSubview:lineView1];
-//        [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//            make.width.mas_equalTo(0.5);
-//            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading);
-//            make.centerY.mas_equalTo(getVfCodeBtn);
-//            make.height.mas_equalTo(VH(14));
-//
-//        }];
+        UIView *lineView1 = [[UIView alloc] init];
+        lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        [self addSubview:lineView1];
+        [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.width.mas_equalTo(0.5);
+            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading);
+            make.centerY.mas_equalTo(getVfCodeBtn);
+            make.height.mas_equalTo(VH(14));
+
+        }];
         
         //驗證碼输入框
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
@@ -133,12 +119,11 @@
             
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
 //            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
-            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
+            make.trailing.mas_equalTo(lineView1.mas_leading);
         }];
         
         //下划线
         UIView *vfCodeFiledView_bottom_line = [[UIView alloc] init];
-        vfCodeFiledView_bottom_line.hidden = YES;
         vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
         [self addSubview:vfCodeFiledView_bottom_line];
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -151,18 +136,31 @@
 
         }];
         
+        //新密码
+        newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
+        [self addSubview:newPwdSDKTextFiledView];
+        
+        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(accountSDKTextFiledView);
+            make.trailing.mas_equalTo(accountSDKTextFiledView);
+            make.height.mas_equalTo(accountSDKTextFiledView);
 
+            make.top.equalTo(vfCodeFiledView_bottom_line.mas_bottom).mas_offset(VH(15));
+            
+        }];
+        
+        
         //确认密码
-//        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
-//        [self addSubview:againPwdSDKTextFiledView];
-//
-//        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.leading.mas_equalTo(accountSDKTextFiledView);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView);
-//            make.height.mas_equalTo(accountSDKTextFiledView);
-//            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
-//
-//        }];
+        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
+        [self addSubview:againPwdSDKTextFiledView];
+        
+        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(accountSDKTextFiledView);
+            make.trailing.mas_equalTo(accountSDKTextFiledView);
+            make.height.mas_equalTo(accountSDKTextFiledView);
+            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            
+        }];
         
         
         //確認
@@ -171,12 +169,12 @@
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
         [self addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(getVfCodeBtn.mas_bottom).mas_offset(VH(30));
+            make.top.equalTo(againPwdSDKTextFiledView.mas_bottom).mas_offset(VH(32));
             make.width.mas_equalTo(accountSDKTextFiledView);
             make.height.mas_equalTo(VH(50));
         }];
@@ -236,7 +234,7 @@
     NSString *vfCode = vfCodeFiledView.inputUITextField.text;
     
     NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
-//    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
+    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
     if (![SdkUtil validUserName:userName]) {
         return;
@@ -248,16 +246,16 @@
         return;
     }
         
-    if (![SdkUtil validPwd: newPwd]) {
+    if (![SdkUtil validPwd: newPwd] || ![SdkUtil validPwd: againPwd]) {
        
         return;
     }
     
-//    if (![newPwd isEqualToString:againPwd]) {
-//
-//        [SdkUtil toastMsg:GetString(@"text_pwd_not_equel")];
-//        return;
-//    }
+    if (![newPwd isEqualToString:againPwd]) {
+    
+        [SdkUtil toastMsg:GetString(@"text_pwd_not_equel")];
+        return;
+    }
     
     NSDictionary *otherParamsDic = nil;
     @try {
