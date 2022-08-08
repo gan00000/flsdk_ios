@@ -167,7 +167,15 @@
     
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels];
     if (accountModels && accountModels.count > 0) {
-        [self addWelcomeView];
+        
+        if (is_Version2) {
+            
+            [self addLoginWithRegView];
+            
+        }else{
+            [self addWelcomeView];
+        }
+        
     }else{
         [self addHomeView];
     }
