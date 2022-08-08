@@ -34,9 +34,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
-		00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B1D81021ADBFDC00739E95 /* Social_ViewController.m */; };
-		00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
+		030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */; };
+		030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
+		030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
+		030FAA3328A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */; };
+		030FAA3428A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */; };
+		030FAA3F28A0FA7C00709536 /* SDKTextFiledViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */; };
+		030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */; };
+		030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */; };
+		030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */; };
+		030FAA4D28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */; };
+		030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA2028A0FA7C00709536 /* MainHomeViewV2.h */; };
+		030FAA5528A0FA7C00709536 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */; };
+		030FAA5628A0FA7C00709536 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */; };
+		030FAA5728A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */; };
+		030FAA5828A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */; };
+		030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */; };
+		030FAA5F28A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
+		030FAA6028A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -153,8 +168,6 @@
 		037C6F2E2875AC790041EC34 /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; };
 		037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
 		037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
-		037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
-		037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
 		037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; };
 		037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
 		037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; };
@@ -417,12 +430,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00087B6821AA5D1300236DEA /* GamaSDK+Social.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+Social.h"; sourceTree = "<group>"; };
-		00087B6921AA5D1300236DEA /* GamaSDK+Social.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+Social.m"; sourceTree = "<group>"; };
-		003CE8C321B69E1900A6A3C8 /* GamaThirdSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaThirdSocial.h; sourceTree = "<group>"; };
-		003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaThirdSocial.m; sourceTree = "<group>"; };
-		00B1D80F21ADBFDC00739E95 /* Social_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Social_ViewController.h; sourceTree = "<group>"; };
-		00B1D81021ADBFDC00739E95 /* Social_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
+		030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewV2.m; sourceTree = "<group>"; };
+		030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKTextFiledViewV2.m; sourceTree = "<group>"; };
+		030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKTextFiledViewV2.h; sourceTree = "<group>"; };
+		030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithRegViewV2.h; sourceTree = "<group>"; };
+		030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
+		030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewV2.m; sourceTree = "<group>"; };
+		030FAA2028A0FA7C00709536 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
+		030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLoginViewV2.m; sourceTree = "<group>"; };
+		030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
+		030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
+		030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -868,6 +887,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030FAA0028A0FA7C00709536 /* view_v2 */ = {
+			isa = PBXGroup;
+			children = (
+				030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */,
+				030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */,
+				030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */,
+				030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */,
+				030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */,
+				030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */,
+				030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */,
+				030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */,
+				030FAA2028A0FA7C00709536 /* MainHomeViewV2.h */,
+				030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */,
+				030FAA0728A0FA7C00709536 /* widget */,
+			);
+			path = view_v2;
+			sourceTree = "<group>";
+		};
+		030FAA0728A0FA7C00709536 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */,
+				030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
 		031B9FBA2897D4FA00D35EFB /* sdkCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -1346,10 +1392,6 @@
 				031B9FBA2897D4FA00D35EFB /* sdkCategory */,
 				032AB889285A006600F1FD3B /* Res */,
 				032AB890285A006600F1FD3B /* CoreSecurity */,
-				00087B6821AA5D1300236DEA /* GamaSDK+Social.h */,
-				00087B6921AA5D1300236DEA /* GamaSDK+Social.m */,
-				003CE8C321B69E1900A6A3C8 /* GamaThirdSocial.h */,
-				003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */,
 				E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */,
 				E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */,
 				E94EE47D235D8D3B007D3A93 /* SAppleLogin.h */,
@@ -1372,13 +1414,14 @@
 		322CBC0F24C589A5000D6B20 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				031B9FB92897D2CD00D35EFB /* ColorHeader.h */,
+				322CBC1724C589A5000D6B20 /* LoginViewDelegate.h */,
 				0369B35A28655630002F4B2F /* Model */,
 				322CBC1624C589A5000D6B20 /* SDKLoginViewController.h */,
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
-				322CBC1724C589A5000D6B20 /* LoginViewDelegate.h */,
 				322CBC1024C589A5000D6B20 /* UIUtils */,
 				322CBC1924C589A5000D6B20 /* view */,
-				031B9FB92897D2CD00D35EFB /* ColorHeader.h */,
+				030FAA0028A0FA7C00709536 /* view_v2 */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -1568,8 +1611,6 @@
 				E956BC79211D768F006D9E4C /* Images.xcassets */,
 				32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */,
 				E97411DA20874A170018E1A6 /* main.m */,
-				00B1D80F21ADBFDC00739E95 /* Social_ViewController.h */,
-				00B1D81021ADBFDC00739E95 /* Social_ViewController.m */,
 				E97411CB20874A170018E1A6 /* UserModel.h */,
 				E97411CC20874A170018E1A6 /* UserModel.m */,
 				E97411CD20874A170018E1A6 /* ViewController.h */,
@@ -1594,10 +1635,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
+				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
+				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
+				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
+				030FAA3F28A0FA7C00709536 /* SDKTextFiledViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
+				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1879,6 +1926,7 @@
 				037C6F652875ACD70041EC34 /* UIImageView+WebCache.m in Sources */,
 				037C6F662875ACD70041EC34 /* UIView+WebCacheOperation.m in Sources */,
 				037C6F672875ACD70041EC34 /* UIButton+WebCache.m in Sources */,
+				030FAA6028A0FC8600709536 /* RegisterAccountViewV2.m in Sources */,
 				037C6EF92875AC790041EC34 /* AdLogger.m in Sources */,
 				037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */,
 				037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */,
@@ -1888,6 +1936,7 @@
 				037C6EFF2875AC790041EC34 /* LineDelegate.m in Sources */,
 				037C6F002875AC790041EC34 /* GIDDelegate.m in Sources */,
 				037C6F012875AC790041EC34 /* FirebaseDelegate.m in Sources */,
+				030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */,
 				037C6F022875AC790041EC34 /* FBDelegate.m in Sources */,
 				037C6F032875AC790041EC34 /* HttpServiceEnginePay.m in Sources */,
 				037C6F042875AC790041EC34 /* AccountModel.m in Sources */,
@@ -1901,6 +1950,7 @@
 				037C6F0C2875AC790041EC34 /* BJServiceConfigurator.m in Sources */,
 				037C6F0D2875AC790041EC34 /* SDKRequest.m in Sources */,
 				037C6F0E2875AC790041EC34 /* HttpServiceEngineAd.m in Sources */,
+				030FAA5628A0FA7C00709536 /* AccountLoginViewV2.m in Sources */,
 				037C6F0F2875AC790041EC34 /* BaseSDK.m in Sources */,
 				037C6F102875AC790041EC34 /* BaseSDKImpl.m in Sources */,
 				037C6F112875AC790041EC34 /* PayData.m in Sources */,
@@ -1916,6 +1966,7 @@
 				037C6F1B2875AC790041EC34 /* UIColor+HexStringToColorTW.m in Sources */,
 				037C6F1C2875AC790041EC34 /* UIScreen+Sdk.m in Sources */,
 				037C6F1D2875AC790041EC34 /* NSString+URLEncoding.m in Sources */,
+				030FAA3428A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */,
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
@@ -1935,8 +1986,6 @@
 				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
 				037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */,
 				037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */,
-				037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */,
-				037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */,
 				037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */,
 				037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */,
 				037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */,
@@ -1952,10 +2001,12 @@
 				037C6F3F2875AC790041EC34 /* ChangePasswordView.m in Sources */,
 				037C6F402875AC790041EC34 /* FindPasswordView.m in Sources */,
 				037C6F412875AC790041EC34 /* LoginWithRegView.m in Sources */,
+				030FAA4D28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
 				037C6F422875AC790041EC34 /* MainHomeView.m in Sources */,
 				037C6F432875AC790041EC34 /* RegisterAccountView.m in Sources */,
 				037C6F442875AC790041EC34 /* SDKBaseView.m in Sources */,
 				037C6F452875AC790041EC34 /* SelectBindTypeView.m in Sources */,
+				030FAA5828A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */,
 				037C6F462875AC790041EC34 /* TermsView.m in Sources */,
 				037C6F472875AC790041EC34 /* WelcomeBackView.m in Sources */,
 				037C6F482875AC790041EC34 /* AccountListViewCell.m in Sources */,
@@ -2010,7 +2061,9 @@
 				03B918DE286029050029AE6A /* ConfigResponse.m in Sources */,
 				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
 				3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */,
+				030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
 				03B919302860AECB0029AE6A /* MASViewAttribute.m in Sources */,
+				030FAA5528A0FA7C00709536 /* AccountLoginViewV2.m in Sources */,
 				3295E2EE24DAEDDE00B85976 /* AFURLResponseSerialization.m in Sources */,
 				03B9192A2860AECB0029AE6A /* MASConstraintMaker.m in Sources */,
 				3295E2EF24DAEDDE00B85976 /* AFHTTPSessionManager.m in Sources */,
@@ -2027,6 +2080,7 @@
 				032ACA4128729E5D00644568 /* USDefault.m in Sources */,
 				03B919362860AECB0029AE6A /* UIImage+GIF.m in Sources */,
 				3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */,
+				030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */,
 				3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */,
 				03B919392860AECB0029AE6A /* SDWebImagePrefetcher.m in Sources */,
 				3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */,
@@ -2040,6 +2094,7 @@
 				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
 				032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */,
 				03669949285E26890008EB50 /* StringUtil.m in Sources */,
+				030FAA5F28A0FC8600709536 /* RegisterAccountViewV2.m in Sources */,
 				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
 				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
 				03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -2071,10 +2126,8 @@
 				03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */,
 				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
 				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
-				00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */,
 				03B9192E2860AECB0029AE6A /* MASConstraint.m in Sources */,
 				032AB8BB285A006600F1FD3B /* ResReader.m in Sources */,
-				00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */,
 				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
 				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
 				03D97DDC286EE281008D0B3A /* LoginData.m in Sources */,
@@ -2084,6 +2137,7 @@
 				0389B3192861B7B30024E62E /* LoginHelper.m in Sources */,
 				E947D351221ED75F00490C35 /* AdLogger.m in Sources */,
 				0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */,
+				030FAA5728A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */,
 				032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */,
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				03B9193B2860AECB0029AE6A /* SDWebImageDownloaderOperation.m in Sources */,
@@ -2092,6 +2146,7 @@
 				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */,
 				032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */,
+				030FAA3328A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2101,7 +2156,6 @@
 			files = (
 				E974128B20874A170018E1A6 /* AppDelegate.m in Sources */,
 				32BE13DD24FB6154000BDFBE /* File.swift in Sources */,
-				00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */,
 				E974128F20874A170018E1A6 /* UserModel.m in Sources */,
 				E974129020874A170018E1A6 /* ViewController.m in Sources */,
 				E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */,
