@@ -22,6 +22,9 @@
 #import "MainHomeView.h"
 #import "BindAccountView.h"
 
+#import "MainHomeViewV2.h"
+#import "LoginWithRegViewV2.h"
+
 #import "AccountModel.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
@@ -42,9 +45,9 @@
     
     //    AccountLoginView *mAccountLoginView;
 //    SdkAutoLoginView *mAutoLoginView;
-    LoginWithRegView *mLoginWithRegView;
-    MainHomeView *mMainHomeView;
-    WelcomeBackView *mWelcomeBackView;
+    SDKBaseView *mLoginWithRegView;
+    SDKBaseView *mMainHomeView;
+    SDKBaseView *mWelcomeBackView;
     
 }
 
@@ -202,8 +205,12 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
+    if (is_Version2) {
+        mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView];
+    }else{
+        mLoginWithRegView = [[LoginWithRegView alloc] initView];
+    }
     
-    mLoginWithRegView = [[LoginWithRegView alloc] initView];
     [self addSubSdkLoginView:mLoginWithRegView];
     return mLoginWithRegView;
 }
@@ -299,7 +306,12 @@
     for (UIView *subView in [self sdkContentView].subviews) {
         [subView removeFromSuperview];
     }
-    mMainHomeView = [[MainHomeView alloc] initView];
+    if (is_Version2) {
+        mMainHomeView = [[MainHomeViewV2 alloc] initView];
+    }else{
+        mMainHomeView = [[MainHomeView alloc] initView];
+    }
+    
     [self addSubSdkLoginView:mMainHomeView];
 }
 
