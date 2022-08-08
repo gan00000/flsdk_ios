@@ -37,9 +37,6 @@
 		030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */; };
 		030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
 		030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
-		030FAA3328A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */; };
-		030FAA3428A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */; };
-		030FAA3F28A0FA7C00709536 /* SDKTextFiledViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */; };
 		030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */; };
 		030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */; };
 		030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */; };
@@ -434,8 +431,6 @@
 /* Begin PBXFileReference section */
 		030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
 		030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewV2.m; sourceTree = "<group>"; };
-		030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKTextFiledViewV2.m; sourceTree = "<group>"; };
-		030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKTextFiledViewV2.h; sourceTree = "<group>"; };
 		030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithRegViewV2.h; sourceTree = "<group>"; };
 		030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
 		030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewV2.m; sourceTree = "<group>"; };
@@ -912,8 +907,6 @@
 		030FAA0728A0FA7C00709536 /* widget */ = {
 			isa = PBXGroup;
 			children = (
-				030FAA1128A0FA7C00709536 /* SDKTextFiledViewV2.h */,
-				030FAA0928A0FA7C00709536 /* SDKTextFiledViewV2.m */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -1647,7 +1640,6 @@
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
-				030FAA3F28A0FA7C00709536 /* SDKTextFiledViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
@@ -1974,7 +1966,6 @@
 				037C6F1B2875AC790041EC34 /* UIColor+HexStringToColorTW.m in Sources */,
 				037C6F1C2875AC790041EC34 /* UIScreen+Sdk.m in Sources */,
 				037C6F1D2875AC790041EC34 /* NSString+URLEncoding.m in Sources */,
-				030FAA3428A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */,
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
@@ -2154,7 +2145,6 @@
 				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */,
 				032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */,
-				030FAA3328A0FA7C00709536 /* SDKTextFiledViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
