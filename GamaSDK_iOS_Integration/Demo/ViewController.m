@@ -6,7 +6,6 @@
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
 #import "MWSDK.h"
-#import "Social_ViewController.h"
 #import "GamaWebViewController.h"
 
 #import "AlertUtil.h"

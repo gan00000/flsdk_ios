@@ -34,9 +34,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
-		00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B1D81021ADBFDC00739E95 /* Social_ViewController.m */; };
-		00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
 		03202921286958FB00E8D5A5 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
 		0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
@@ -151,8 +148,6 @@
 		037C6F2E2875AC790041EC34 /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; };
 		037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
 		037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
-		037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 00087B6921AA5D1300236DEA /* GamaSDK+Social.m */; };
-		037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */; };
 		037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; };
 		037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
 		037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; };
@@ -415,12 +410,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00087B6821AA5D1300236DEA /* GamaSDK+Social.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+Social.h"; sourceTree = "<group>"; };
-		00087B6921AA5D1300236DEA /* GamaSDK+Social.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+Social.m"; sourceTree = "<group>"; };
-		003CE8C321B69E1900A6A3C8 /* GamaThirdSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamaThirdSocial.h; sourceTree = "<group>"; };
-		003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamaThirdSocial.m; sourceTree = "<group>"; };
-		00B1D80F21ADBFDC00739E95 /* Social_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Social_ViewController.h; sourceTree = "<group>"; };
-		00B1D81021ADBFDC00739E95 /* Social_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		0320291C28694D6300E8D5A5 /* MWApplePayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApplePayManager.h; sourceTree = "<group>"; };
 		0320291D28694D6300E8D5A5 /* MWApplePayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWApplePayManager.m; sourceTree = "<group>"; };
 		0320291F286958FB00E8D5A5 /* ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePay.h; sourceTree = "<group>"; };
@@ -1331,10 +1320,6 @@
 			children = (
 				032AB889285A006600F1FD3B /* Res */,
 				032AB890285A006600F1FD3B /* CoreSecurity */,
-				00087B6821AA5D1300236DEA /* GamaSDK+Social.h */,
-				00087B6921AA5D1300236DEA /* GamaSDK+Social.m */,
-				003CE8C321B69E1900A6A3C8 /* GamaThirdSocial.h */,
-				003CE8C421B69E1900A6A3C8 /* GamaThirdSocial.m */,
 				E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */,
 				E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */,
 				E94EE47D235D8D3B007D3A93 /* SAppleLogin.h */,
@@ -1552,8 +1537,6 @@
 				E956BC79211D768F006D9E4C /* Images.xcassets */,
 				32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */,
 				E97411DA20874A170018E1A6 /* main.m */,
-				00B1D80F21ADBFDC00739E95 /* Social_ViewController.h */,
-				00B1D81021ADBFDC00739E95 /* Social_ViewController.m */,
 				E97411CB20874A170018E1A6 /* UserModel.h */,
 				E97411CC20874A170018E1A6 /* UserModel.m */,
 				E97411CD20874A170018E1A6 /* ViewController.h */,
@@ -1918,8 +1901,6 @@
 				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
 				037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */,
 				037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */,
-				037C6F312875AC790041EC34 /* GamaSDK+Social.m in Sources */,
-				037C6F322875AC790041EC34 /* GamaThirdSocial.m in Sources */,
 				037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */,
 				037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */,
 				037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */,
@@ -2053,10 +2034,8 @@
 				03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */,
 				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
 				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
-				00AACEF121B7E4E2002AC879 /* GamaThirdSocial.m in Sources */,
 				03B9192E2860AECB0029AE6A /* MASConstraint.m in Sources */,
 				032AB8BB285A006600F1FD3B /* ResReader.m in Sources */,
-				00B1D81621ADE0FA00739E95 /* GamaSDK+Social.m in Sources */,
 				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
 				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
 				03D97DDC286EE281008D0B3A /* LoginData.m in Sources */,
@@ -2083,7 +2062,6 @@
 			files = (
 				E974128B20874A170018E1A6 /* AppDelegate.m in Sources */,
 				32BE13DD24FB6154000BDFBE /* File.swift in Sources */,
-				00B1D81121ADBFDC00739E95 /* Social_ViewController.m in Sources */,
 				E974128F20874A170018E1A6 /* UserModel.m in Sources */,
 				E974129020874A170018E1A6 /* ViewController.m in Sources */,
 				E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */,
