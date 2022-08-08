@@ -24,6 +24,8 @@
         self.appPassCheck = NO;
         self.showContract = YES;
         self.showLogo = NO;
+        self.showForgetPwd = YES;
+        self.showNotice = NO;
         
     }
     return self;
