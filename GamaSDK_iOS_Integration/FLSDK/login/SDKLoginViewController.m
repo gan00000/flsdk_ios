@@ -24,6 +24,8 @@
 
 #import "AccountModel.h"
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 @interface SDKLoginViewController()
 
 @property (nonatomic,strong)UIView *sdkContentView;

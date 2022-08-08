@@ -10,6 +10,9 @@
 #import "CComHeader.h"
 #import "StringUtil.h"
 
+//@import GoogleSignIn;
+#import <GoogleSignIn/GoogleSignIn.h>
+
 @implementation GIDDelegate
 {
     

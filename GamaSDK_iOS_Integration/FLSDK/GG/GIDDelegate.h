@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//@import GoogleSignIn;
-#import <GoogleSignIn/GoogleSignIn.h>
 #import "FirebaseDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
