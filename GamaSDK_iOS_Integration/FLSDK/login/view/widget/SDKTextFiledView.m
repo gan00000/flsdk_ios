@@ -251,8 +251,8 @@
 {
     
     //    self.backgroundColor = [UIColor whiteColor];
-    self.layer.cornerRadius = VW(20);
-    self.layer.borderWidth = 1.0;
+    self.layer.cornerRadius = VH(20);
+    self.layer.borderWidth = 0.6;
     self.layer.borderColor = [UIColor whiteColor].CGColor;
     
     NSString *iconName;

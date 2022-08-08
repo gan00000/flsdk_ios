@@ -64,37 +64,6 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
-        //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.masksToBounds = YES;
-        
-        /**
-         //登入頁logo
-         UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed:@"fl_sdk_logo"]];
-         logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-         [self addSubview:logoImageView];
-         [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.top.mas_equalTo(self.mas_top).mas_offset(12);
-         make.centerX.mas_equalTo(self);
-         make.width.mas_equalTo(self).mas_offset(-30);
-         make.height.mas_equalTo(kPageTitleHeight * 1.2);
-         }];
-         logoImageView.hidden = YES;
-         
-         backBtn = [UIUtil initBtnWithNormalImage:@"sdk_btn_back.png" highlightedImage:nil tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
-         backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-         [self addSubview:backBtn];
-         [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.leading.mas_equalTo(self).mas_offset(20);
-         make.width.mas_equalTo(kInputTextFiledHeight * 0.6);
-         make.top.equalTo(self).mas_offset(20);
-         make.height.mas_equalTo(kInputTextFiledHeight * 0.6);
-         }];
-         backBtn.hidden = YES
-         
-         */
-        
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
@@ -120,6 +89,7 @@
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+//            make.height.mas_equalTo();
         }];
         
         
@@ -182,7 +152,7 @@
         }];
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
         termAgreeView.hidden = !mConfigModel.showContract;
-        
+        findPasswordBtn.hidden = !mConfigModel.showForgetPwd;
         
         //账号登入
         //        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
@@ -593,10 +563,25 @@
     accountFiledView.lableIconImageView.image = [UIImage res_imageNamed:iconName];
     
     if (pwdFiledView) {
-        [pwdFiledView setPwdFiledView:pwdEnable];
-        pwdFiledView.inputUITextField.text = pwdText;
+//        [pwdFiledView setPwdFiledView:pwdEnable];
+       
+        if (pwdEnable) {
+            pwdFiledView.hidden = NO;
+            pwdFiledView.inputUITextField.text = pwdText;
+            
+//            [pwdFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.height.mas_equalTo(accountFiledView.mas_height);
+//            }];
+        }else{
+            pwdFiledView.inputUITextField.text = @"";
+            pwdFiledView.hidden = YES;
+//            [pwdFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.height.mas_equalTo(4);
+//            }];
+        }
+        [pwdFiledView layoutIfNeeded];
+        
     }
-    
 }
 
 

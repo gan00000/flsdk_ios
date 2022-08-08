@@ -23,6 +23,8 @@
     
     UIView *regBottomLine;
     
+    UIButton *backBtn;
+    
 }
 
 
@@ -112,7 +114,7 @@
     }];
     
     //返回按钮
-    UIButton *backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon" highlightedImage:@"mw_back_icon" tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+    backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon" highlightedImage:@"mw_back_icon" tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
     
     [self addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -151,14 +153,16 @@
     
 }
 
-
-
 - (void)drawRect:(CGRect)rect
 {
     self.mAccountLoginView.delegate = self.delegate;
     self.mRegisterAccountView.delegate = self.delegate;
     
     self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+    
+    if (!self.fromPage) {
+        backBtn.hidden = YES;
+    }
 }
 
 - (void)registerViewBtnAction:(UIButton *)sender
@@ -195,18 +199,18 @@
             
             if (self.delegate) {
                 
-                NSArray<AccountModel *> *ams = [[ConfigCoreUtil share] getAccountModels];
-                
-                if (ams && ams.count > 0) {
-                    
-                    if (self.fromPage && self.fromPage != CURRENT_PAGE_TYPE_NULL) {
-                        [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:self.fromPage];
-                    }
-                }else{
-                    
-                    [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:CURRENT_PAGE_TYPE_MAIN_HOME];
-                }
-                
+//                NSArray<AccountModel *> *ams = [[ConfigCoreUtil share] getAccountModels];
+//
+//                if (ams && ams.count > 0) {
+//
+//                    if (self.fromPage && self.fromPage != CURRENT_PAGE_TYPE_NULL) {
+//                        [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:self.fromPage];
+//                    }
+//                }else{
+//
+//                    [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:CURRENT_PAGE_TYPE_MAIN_HOME];
+//                }
+                [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:CURRENT_PAGE_TYPE_MAIN_HOME];
                
                
             }

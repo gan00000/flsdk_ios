@@ -292,7 +292,7 @@
     
     [hasAccountContent addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         if (self.delegate) {
-            [self.delegate goPageView:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
+            [self.delegate goPageView:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) from:CURRENT_PAGE_TYPE_MAIN_HOME param:@1];
         }
     }];
     
