@@ -50,6 +50,8 @@
     AccountModel *currentAccountModel;
     
     AccountListView *accountListView;
+    
+    UIView *deleteAccountConfireView;
 }
 
 /*
@@ -86,7 +88,7 @@
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -178,7 +180,7 @@
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(30));
+            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(25));
             make.width.mas_equalTo(accountSDKTextFiledView);
             make.height.mas_equalTo(VH(40));
         }];
@@ -189,7 +191,7 @@
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(accountSDKTextFiledView);
             //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
+            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(16));
             //            make.centerX.mas_equalTo(self);
 //            make.height.mas_equalTo(btn_h);
         }];
@@ -333,6 +335,12 @@
             
         };
     }
+    
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if (mConfigModel.deleteAccount) {
+        [self addDeleteAccountView];
+    }
+    
     return self;
 }
 
@@ -463,6 +471,14 @@
             }
             
         }
+        case kSureDeleteAccountActTag:
+            SDK_LOG(@"kSureDeleteAccountActTag");
+            [self doDeleteAccount];
+            break;
+        case kCancelDeleteAccountActTag:
+            SDK_LOG(@"kCancelDeleteAccountActTag");
+            [deleteAccountConfireView removeFromSuperview];
+            
             break;
         default:
             break;
@@ -595,6 +611,147 @@
         [pwdFiledView layoutIfNeeded];
         
     }
+}
+
+
+
+-(UIView *)addDeleteAccountConfireView
+{
+    
+    if (deleteAccountConfireView) {
+        [deleteAccountConfireView removeFromSuperview];
+    }
+    
+    UIView *deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.85];
+    deleteView.layer.cornerRadius = VW(10);
+    
+    [self addSubview:deleteView];
+    
+    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self);
+        make.width.mas_equalTo(VW(272));
+    }];
+    
+    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage:@"nend_update_account_bg"];
+    [deleteView addSubview:deleteWarmIV];
+    [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteView).mas_offset(VH(12));
+        make.centerX.equalTo(self);
+        make.height.width.mas_equalTo(VW(25));
+    }];
+    
+    UILabel *deleteWarmLabel = [UIUtil initLabelWithText:GetString(@"text_delete_account_tips") fontSize:FS(13) textColor:[UIColor whiteColor]];
+    [deleteView addSubview:deleteWarmLabel];
+    deleteWarmLabel.numberOfLines = 0;
+    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteWarmIV.mas_bottom).mas_offset(VH(10));
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(14));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
+    }];
+    
+    UIButton *cancelBtn = [UIUtil initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    cancelBtn.layer.cornerRadius = VW(16);
+    [deleteView addSubview:cancelBtn];
+    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VH(-18));
+        make.height.mas_equalTo(VW(32));
+        make.width.mas_equalTo(VW(108));
+        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
+    }];
+    
+    UIButton *sureBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    sureBtn.layer.cornerRadius = VW(16);
+    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    sureBtn.layer.borderWidth = 1;
+    
+    [deleteView addSubview:sureBtn];
+    [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(cancelBtn);
+        make.bottom.mas_equalTo(cancelBtn);
+        make.width.mas_equalTo(cancelBtn);
+        make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
+    }];
+    
+    deleteAccountConfireView = deleteView;
+    return deleteAccountConfireView;
+    
+}
+
+
+-(void)addDeleteAccountView
+{
+    UIView *deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView.layer.cornerRadius = VW(14);
+    
+    [self addSubview:deleteView];
+    
+    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.mas_bottom);
+//        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+        make.centerX.equalTo(self);
+//        make.height.mas_equalTo(VH(28));
+    }];
+    
+    UIImageView *deleteIV = [UIUtil initImageViewWithImage:@"mw_delete_icon"];
+    [deleteView addSubview:deleteIV];
+    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView);
+        make.width.height.mas_equalTo(VW(15));
+    }];
+    
+    UILabel *delLabel = [UIUtil initLabelWithText:GetString(@"text_delete_account") fontSize:FS(10) textColor:[UIColor blackColor]];
+    [deleteView addSubview:delLabel];
+    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView);
+       
+    }];
+    
+    [deleteView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [self addDeleteAccountConfireView];
+       
+    }];
+}
+
+- (void)doDeleteAccount {
+    
+    if ([StringUtil isEmpty:currentAccountModel.userId]) {
+        [SdkUtil toastMsg:@"text_select_account".localx];
+        return;
+    }
+    [LoginHelper deleteAccountAndRequest:self.delegate view:self account:currentAccountModel otherParamsDic:nil successBlock:^{
+        
+        [deleteAccountConfireView removeFromSuperview];
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+            currentAccountModel = mAccountArray[0];
+            
+            [accountDataList removeAllObjects];
+            [accountDataList addObjectsFromArray:mAccountArray];
+            
+            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+            
+//            [self setViewStatue];
+            
+        }else{
+            AccountModel *tempA = [[AccountModel alloc] init];
+            tempA.loginType = LOGIN_TYPE_SELF;
+            currentAccountModel = tempA;
+            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+            
+        }
+        
+    }];
 }
 
 
