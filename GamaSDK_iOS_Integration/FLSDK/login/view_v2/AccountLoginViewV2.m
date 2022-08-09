@@ -91,7 +91,7 @@
             make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+            make.height.mas_equalTo(VH(40));
 //            make.height.mas_equalTo();
         }];
         
@@ -326,7 +326,7 @@
                     tempAccountModel.loginType = LOGIN_TYPE_SELF;
                     tempAccountModel.account = msg;
                     tempAccountModel.password = @"";
-                    [passwordSDKTextFiledView setPwdFiledView:YES];
+//                    [passwordSDKTextFiledView setPwdFiledView:YES];
                     [AccountLoginViewV2 makeAccountFiledViewStatus:tempAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
                     currentAccountModel = tempAccountModel;
                 }
@@ -598,15 +598,20 @@
             pwdFiledView.hidden = NO;
             pwdFiledView.inputUITextField.text = pwdText;
             
-//            [pwdFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.height.mas_equalTo(accountFiledView.mas_height);
-//            }];
+            [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
+                
+                make.height.mas_equalTo(VH(40));
+            }];
+            
+            
         }else{
             pwdFiledView.inputUITextField.text = @"";
             pwdFiledView.hidden = YES;
-//            [pwdFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.height.mas_equalTo(4);
-//            }];
+            [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.height.mas_equalTo(1);
+            }];
+            
+            
         }
         [pwdFiledView layoutIfNeeded];
         
@@ -746,8 +751,10 @@
         }else{
             AccountModel *tempA = [[AccountModel alloc] init];
             tempA.loginType = LOGIN_TYPE_SELF;
+            tempA.account = @"";
+            tempA.password = @"";
             currentAccountModel = tempA;
-            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+            [AccountLoginViewV2 makeAccountFiledViewStatus:tempA accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
             
         }
         
