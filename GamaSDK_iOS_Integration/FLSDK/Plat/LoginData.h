@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *loginType;
 
+@property (nonatomic, copy) NSString *telephone;//用户绑定的手机
+@property (nonatomic, copy) NSString *loginId;//用户账号
+@property (nonatomic, copy) NSString *sign; //用于cp验证账号
+
 @end
 
 NS_ASSUME_NONNULL_END

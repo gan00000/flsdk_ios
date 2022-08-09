@@ -553,6 +553,10 @@
         loginData.isBindPhone = rData.isBindPhone;
         loginData.loginType = thirdPlate;
         
+        loginData.sign = rData.sign;
+        loginData.telephone = rData.telephone;
+        loginData.loginId = rData.loginId;
+        
         [MWSDK share].loginCompletionHandler(loginData);
     }
     
