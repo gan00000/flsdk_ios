@@ -112,6 +112,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
 
+#define TAG_CLOSE    90
+
 #pragma mark - login type登录方式
 
 #define LOGIN_TYPE_SELF           (@"mg")

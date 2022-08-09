@@ -23,6 +23,7 @@
 #import "AccountListView.h"
 #import "UIView+BlockGesture.h"
 #import "LoginButtonData.h"
+#import "TermsViewV2.h"
 
 @interface AccountLoginViewV2()
 
@@ -145,9 +146,21 @@
         rememberTermsLable.userInteractionEnabled=YES;
         [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
             SDK_LOG(@"rememberTermsLableTapped");
-            if (self.delegate) {
-                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
-            }
+//            if (self.delegate) {
+//                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
+//            }
+            TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter:^{
+                checkBoxTermsBtn.selected = YES;
+            }];
+            
+            UIView *superView = appTopViewController.view;
+            [superView addSubview:aTermsViewV2];
+            
+            [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.bottom.mas_equalTo(superView);
+                make.leading.mas_equalTo(superView);
+                make.trailing.mas_equalTo(superView);
+            }];
             
         }];
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;

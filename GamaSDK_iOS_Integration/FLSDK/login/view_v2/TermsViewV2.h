@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TermsView : SDKBaseView
+@interface TermsViewV2 : SDKBaseView
 - (instancetype)initWithCompleter:(void (^)(void))completer;
 
 + (BOOL)openProvision;
