@@ -52,6 +52,7 @@
     AccountListView *accountListView;
     
     UIView *deleteAccountConfireView;
+    UIView *deleteBtnView;
 }
 
 /*
@@ -278,6 +279,9 @@
             
         }
 
+        if (mConfigModel.deleteAccount) {
+            [self addDeleteAccountView];
+        }
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
@@ -288,6 +292,10 @@
             [accountDataList addObjectsFromArray:mAccountArray];
             
             [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+        }else{
+            if (deleteBtnView) {
+                deleteBtnView.hidden = YES;
+            }
         }
         
         
@@ -347,11 +355,6 @@
         };
     }
     
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if (mConfigModel.deleteAccount) {
-        [self addDeleteAccountView];
-    }
-    
     return self;
 }
 
@@ -391,6 +394,10 @@
                 [AccountLoginViewV2 makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
                 accountSDKTextFiledView.moreAccountBtn.selected = NO;
                 accountListView.hidden = YES;
+                
+                if (deleteBtnView) {
+                    deleteBtnView.hidden = YES;
+                }
             }
             
         }else{//选择
@@ -738,6 +745,8 @@
         [self addDeleteAccountConfireView];
        
     }];
+    
+    deleteBtnView = deleteView;
 }
 
 - (void)doDeleteAccount {
