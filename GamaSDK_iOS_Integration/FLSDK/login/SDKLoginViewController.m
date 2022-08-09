@@ -537,6 +537,8 @@
         [AdLogger logWithEventName:FBSDKAppEventNameCompletedRegistration parameters:nil type:AdType_FB];
         [AdLogger logWithEventName:AD_EVENT_COMPLETE_REGISTRATION_IOS parameters:nil type:AdType_FB];
         
+        [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];//注册成功也是登录成功
+        
     }else {//登录
         [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
     }
