@@ -18,6 +18,8 @@
 #import "MWApplePayManager.h"
 #import "AdLogger.h"
 
+#import "NoticeViewV2.h"
+
 #import <StoreKit/StoreKit.h>
 
 // 通知类型
@@ -104,6 +106,37 @@
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
     self.loginCompletionHandler = cmopleteHandler;
+//    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+//    //        controller.definesPresentationContext = YES;
+//#ifdef __IPHONE_8_0
+//    if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
+//        SDK_LOG(@"[UIDevice currentDevice] systemVersion].intValue < 8");
+//    }
+//    else {
+//        SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
+//        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以
+//    }
+//#else
+//    SDK_LOG(@"not def __IPHONE_8_0");
+//#endif
+//    //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+//    [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
+//
+//    }];
+    
+    if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+        
+        [self showNoticeView];
+        
+    }else{
+        [self sdkLoginWithHandlerForInner];
+    }
+    
+}
+
+- (void)sdkLoginWithHandlerForInner
+{
+
     SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
     //        controller.definesPresentationContext = YES;
 #ifdef __IPHONE_8_0
@@ -123,6 +156,21 @@
     }];
     
 //    [AdUtil requestIDFA]
+}
+
+
+-(void)showNoticeView
+{
+    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter:^{
+        
+        [self sdkLoginWithHandlerForInner];
+    }];
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mNoticeViewV2];
+    
+    [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
 }
 
 - (void)setRoleInfoWithRoleId:(NSString *)roleId

@@ -54,6 +54,9 @@
 		030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6628A1FE5800709536 /* TermsViewV2.h */; };
+		030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6A28A2619500709536 /* NoticeViewV2.h */; };
+		030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
+		030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -446,6 +449,8 @@
 		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
 		030FAA6528A1FE5800709536 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
 		030FAA6628A1FE5800709536 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
+		030FAA6A28A2619500709536 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
+		030FAA6B28A2619500709536 /* NoticeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewV2.m; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -894,6 +899,8 @@
 		030FAA0028A0FA7C00709536 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA6A28A2619500709536 /* NoticeViewV2.h */,
+				030FAA6B28A2619500709536 /* NoticeViewV2.m */,
 				030FAA6628A1FE5800709536 /* TermsViewV2.h */,
 				030FAA6528A1FE5800709536 /* TermsViewV2.m */,
 				030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */,
@@ -1644,6 +1651,7 @@
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
+				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
@@ -1978,6 +1986,7 @@
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
+				030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */,
 				037C6F212875AC790041EC34 /* UIUtil.m in Sources */,
 				037C6F222875AC790041EC34 /* StringUtil.m in Sources */,
 				037C6F232875AC790041EC34 /* USDefault.m in Sources */,
@@ -2118,6 +2127,7 @@
 				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
 				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
+				030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */,
 				E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */,
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */,

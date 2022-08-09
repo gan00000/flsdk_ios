@@ -356,6 +356,16 @@
                 make.trailing.mas_equalTo(superView);
             }];
             
+            aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
+            
+            [UIView animateWithDuration:0.6 animations:^{
+                
+                aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
+                
+                
+            } completion:^(BOOL finished) {
+            }];
+            
         }];
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     termAgreeView.hidden = !mConfigModel.showContract;
