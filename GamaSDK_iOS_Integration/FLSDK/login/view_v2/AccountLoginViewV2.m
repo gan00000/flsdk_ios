@@ -469,8 +469,9 @@
             }else{
                 checkBoxTermsBtn.selected = YES;
             }
-            
+           
         }
+            break;
         case kSureDeleteAccountActTag:
             SDK_LOG(@"kSureDeleteAccountActTag");
             [self doDeleteAccount];
