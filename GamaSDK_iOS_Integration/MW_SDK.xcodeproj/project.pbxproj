@@ -51,6 +51,9 @@
 		030FAA6028A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
 		030FAA6228A1077F00709536 /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
 		030FAA6428A1142900709536 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
+		030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
+		030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
+		030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6628A1FE5800709536 /* TermsViewV2.h */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -441,6 +444,8 @@
 		030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
 		030FAA6128A1077F00709536 /* SDKCoreInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDKCoreInfo.plist; sourceTree = "<group>"; };
 		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
+		030FAA6528A1FE5800709536 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
+		030FAA6628A1FE5800709536 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -889,6 +894,8 @@
 		030FAA0028A0FA7C00709536 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA6628A1FE5800709536 /* TermsViewV2.h */,
+				030FAA6528A1FE5800709536 /* TermsViewV2.m */,
 				030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */,
 				030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */,
 				030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */,
@@ -1641,6 +1648,7 @@
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
+				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
 			);
@@ -1917,6 +1925,7 @@
 				037C6F5C2875ACD70041EC34 /* UIImageView+HighlightedWebCache.m in Sources */,
 				037C6F5D2875ACD70041EC34 /* SDWebImageDownloader.m in Sources */,
 				037C6F5E2875ACD70041EC34 /* UIImage+GIF.m in Sources */,
+				030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */,
 				037C6F5F2875ACD70041EC34 /* UIImage+MultiFormat.m in Sources */,
 				037C6F602875ACD70041EC34 /* SDWebImageCompat.m in Sources */,
 				037C6F612875ACD70041EC34 /* SDWebImagePrefetcher.m in Sources */,
@@ -2113,6 +2122,7 @@
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */,
 				03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */,
+				030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */,
 				03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */,
 				03B9193F2860AECB0029AE6A /* UIButton+WebCache.m in Sources */,
 				E9DC839821BF9F750035F8CA /* UIScreen+Sdk.m in Sources */,
@@ -2674,7 +2684,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fzzh.tw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
 				PRODUCT_NAME = dybttDemo;
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fzzh-dev";
@@ -2740,7 +2750,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fzzh.tw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
 				PRODUCT_NAME = dybttDemo;
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fzzh-dis";
