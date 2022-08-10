@@ -156,7 +156,7 @@
 {
     NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSPredicate *phonePred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    return ![phonePred evaluateWithObject:phone];
+    return [phonePred evaluateWithObject:triStr];
 }
 
 #pragma mark - Toast

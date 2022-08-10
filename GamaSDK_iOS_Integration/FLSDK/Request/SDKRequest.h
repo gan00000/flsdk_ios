@@ -52,6 +52,20 @@ NS_ASSUME_NONNULL_BEGIN
                                 successBlock:(BJServiceSuccessBlock)successBlock
                                   errorBlock:(BJServiceErrorBlock)errorBlock;
 
++ (void)requestMobileVfCode:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                                 email:(NSString *)email
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+                 errorBlock:(BJServiceErrorBlock)errorBlock;
+
++ (void)bindAccountPhone:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                      vCode:(NSString *)vCode
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+              errorBlock:(BJServiceErrorBlock)errorBlock;
+
 +(void)doRegisterAccountWithUserName:(NSString *)userName
                          andPassword:(NSString *)password
                        phoneAreaCode:(NSString *)phoneAreaCode

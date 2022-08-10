@@ -243,7 +243,6 @@
 + (void)requestMobileVfCode:(NSString *)phoneArea
                                  phoneNumber:(NSString *)phoneN
                                  email:(NSString *)email
-               accountModel:(AccountModel*) accountModel
                                     otherDic:(NSDictionary *)otherParamsDic
                                 successBlock:(BJServiceSuccessBlock)successBlock
                                   errorBlock:(BJServiceErrorBlock)errorBlock
@@ -283,7 +282,6 @@
 + (void)bindAccountPhone:(NSString *)phoneArea
                                  phoneNumber:(NSString *)phoneN
                       vCode:(NSString *)vCode
-               accountModel:(AccountModel*) accountModel
                                     otherDic:(NSDictionary *)otherParamsDic
                                 successBlock:(BJServiceSuccessBlock)successBlock
                                   errorBlock:(BJServiceErrorBlock)errorBlock

@@ -8,7 +8,7 @@
 #import "MyTextFiled.h"
 #import "CountTimerDelegate.h"
 #import "PhoneInfoModel.h"
-
+#import "SDKRequest.h"
 
 @interface BindPhoneViewV2 () <CountTimerDelegate,PhoneInfoModelDelegate>
 
@@ -25,6 +25,8 @@
     UILabel *areaCodeLabel;
     
     PhoneInfoModel *mPhoneInfoModel;
+    MyTextFiled *vfCodeFiled;
+    MyTextFiled *phoneNumFiled;
     
 }
 
@@ -159,7 +161,7 @@
     
     
     
-    MyTextFiled *phoneNumFiled = [[MyTextFiled alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"text_please_input_phone".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    phoneNumFiled = [[MyTextFiled alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"text_please_input_phone".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
     
     phoneNumFiled.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
     phoneNumFiled.layer.borderWidth = 0.5;
@@ -189,7 +191,7 @@
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(15));
     }];
     
-    MyTextFiled *vfCodeFiled = [[MyTextFiled alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"py_msg_vfcode_hint".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    vfCodeFiled = [[MyTextFiled alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"py_msg_vfcode_hint".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
     
     vfCodeFiled.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
     vfCodeFiled.layer.borderWidth = 0.5;
@@ -264,14 +266,79 @@
             }
             break;
         case kGetVfCodeActTag:
+        {
+            NSString *tel = phoneNumFiled.inputTextField.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            //NSString *vfCode = vfCodeFiled.inputTextField.text;
+            if ([StringUtil isEmpty:areaCode]) {
+                [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+                return;
+            }
+            if ([StringUtil isEmpty:tel]) {
+                [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+                return;
+            }
+            if (![SdkUtil validPhone:tel phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+                [SdkUtil toastMsg: @"text_phone_not_match".localx];
+                return;
+            }
             
-            [self startCountTimer];
+            [SDKRequest requestMobileVfCode:areaCode phoneNumber:tel email:@"" otherDic:nil successBlock:^(id responseData) {
+                
+                [SdkUtil toastMsg: @"text_vfcode_has_send".localx];
+                [self startCountTimer];
+                
+            } errorBlock:^(BJError *error) {
+                
+                [self finishCountTimer];
+                [AlertUtil showAlertWithMessage:error.message];
+                
+            }];
+            
+        }
             
             break;
             
         case kMoreAccountListActTag:
             
             [mPhoneInfoModel showAreaCodesActionSheetFromView:sender];
+            
+            break;
+            
+        case kOkActTag:
+            
+        {
+            NSString *tel = phoneNumFiled.inputTextField.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            NSString *vfCode = vfCodeFiled.inputTextField.text;
+            
+            if ([StringUtil isEmpty:areaCode]) {
+                [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+                return;
+            }
+            if ([StringUtil isEmpty:tel]) {
+                [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+                return;
+            }
+            
+            if (![SdkUtil validPhone:tel phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+                [SdkUtil toastMsg: @"text_phone_not_match".localx];
+                return;
+            }
+            
+            if ([StringUtil isEmpty:vfCode]) {
+                [SdkUtil toastMsg: @"py_msg_vfcode_hint".localx];
+                return;
+            }
+            
+            [SDKRequest bindAccountPhone:areaCode phoneNumber:tel vCode:vfCode otherDic:nil successBlock:^(id responseData) {
+                
+                
+            } errorBlock:^(BJError *error) {
+                
+            }];
+            
+        }
             
             break;
             
