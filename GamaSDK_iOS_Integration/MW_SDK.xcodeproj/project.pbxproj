@@ -57,6 +57,12 @@
 		030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6A28A2619500709536 /* NoticeViewV2.h */; };
 		030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
 		030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
+		030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6F28A27F0600709536 /* BindPhoneViewV2.h */; };
+		030FAA7228A27F0600709536 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7028A27F0600709536 /* BindPhoneViewV2.m */; };
+		030FAA7328A27F0600709536 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7028A27F0600709536 /* BindPhoneViewV2.m */; };
+		030FAA7628A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
+		030FAA7728A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
+		030FAA7828A362E200709536 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -451,6 +457,10 @@
 		030FAA6628A1FE5800709536 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
 		030FAA6A28A2619500709536 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
 		030FAA6B28A2619500709536 /* NoticeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewV2.m; sourceTree = "<group>"; };
+		030FAA6F28A27F0600709536 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
+		030FAA7028A27F0600709536 /* BindPhoneViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneViewV2.m; sourceTree = "<group>"; };
+		030FAA7428A362E200709536 /* MyTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextFiled.m; sourceTree = "<group>"; };
+		030FAA7528A362E200709536 /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -899,6 +909,8 @@
 		030FAA0028A0FA7C00709536 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA6F28A27F0600709536 /* BindPhoneViewV2.h */,
+				030FAA7028A27F0600709536 /* BindPhoneViewV2.m */,
 				030FAA6A28A2619500709536 /* NoticeViewV2.h */,
 				030FAA6B28A2619500709536 /* NoticeViewV2.m */,
 				030FAA6628A1FE5800709536 /* TermsViewV2.h */,
@@ -1479,6 +1491,8 @@
 		322CBC1F24C589A5000D6B20 /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA7528A362E200709536 /* MyTextFiled.h */,
+				030FAA7428A362E200709536 /* MyTextFiled.m */,
 				322CBC2324C589A5000D6B20 /* AccountListViewCell.h */,
 				322CBC2724C589A5000D6B20 /* AccountListViewCell.m */,
 				322CBC2624C589A5000D6B20 /* LoginTitleView.h */,
@@ -1651,10 +1665,12 @@
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
+				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
 				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
+				030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
 				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
@@ -1919,6 +1935,7 @@
 			files = (
 				037C6F4F2875ACD70041EC34 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				037C6F502875ACD70041EC34 /* ViewController+MASAdditions.m in Sources */,
+				030FAA7328A27F0600709536 /* BindPhoneViewV2.m in Sources */,
 				037C6F512875ACD70041EC34 /* MASCompositeConstraint.m in Sources */,
 				037C6F522875ACD70041EC34 /* MASConstraintMaker.m in Sources */,
 				037C6F532875ACD70041EC34 /* MASLayoutConstraint.m in Sources */,
@@ -1959,6 +1976,7 @@
 				037C6F042875AC790041EC34 /* AccountModel.m in Sources */,
 				037C6F052875AC790041EC34 /* LoginResponse.m in Sources */,
 				037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */,
+				030FAA7728A362E200709536 /* MyTextFiled.m in Sources */,
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
 				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
@@ -2090,6 +2108,7 @@
 				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
 				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
 				03B919352860AECB0029AE6A /* SDWebImageDownloader.m in Sources */,
+				030FAA7628A362E200709536 /* MyTextFiled.m in Sources */,
 				3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */,
 				32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */,
 				3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */,
@@ -2161,6 +2180,7 @@
 				E9DC839721BF9F720035F8CA /* GamaWebViewController.m in Sources */,
 				03B9193B2860AECB0029AE6A /* SDWebImageDownloaderOperation.m in Sources */,
 				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
+				030FAA7228A27F0600709536 /* BindPhoneViewV2.m in Sources */,
 				03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */,
 				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
 				E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */,

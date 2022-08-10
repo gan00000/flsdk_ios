@@ -42,7 +42,7 @@
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
 #define ContentViewBgColor                    @"#f4f4f5"
-
+#define ColorHex(color)  [UIColor colorWithHexString:color]
 
 #define SDK_DATA                           [CCSDKDATA sharedSdkData]
 

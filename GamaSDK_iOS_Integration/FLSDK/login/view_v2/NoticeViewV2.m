@@ -43,7 +43,7 @@
 //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.25];
+        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
         
         [self landspaceView];
         
