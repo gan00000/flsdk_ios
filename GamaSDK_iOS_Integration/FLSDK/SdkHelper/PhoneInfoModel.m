@@ -10,17 +10,28 @@
 #import "AlertUtil.h"
 #import "SdkHeader.h"
 
-#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
-
 @interface PhoneInfoModel()
 @property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;
 @end
 
 @implementation PhoneInfoModel
+
+- (void)setData {
+    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo];
+    if (serverInfo) {
+        [self resetupAreaCodesAndActionSheetWith:serverInfo];
+    }else{
+        [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
+    }
+}
+
 - (id)init
 {
     self = [super init];
     if (self) {
+        
+        [self setData];
+        
     }
     return self;
 }
@@ -34,7 +45,7 @@
 //    [self resetupAreaCodesAndActionSheetWith:[PhoneInfoModel fetchPhoneNumber]];
     
     //将sheet设置为默认的港台区号
-    [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
+//    [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
     
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
@@ -96,17 +107,6 @@
 //    }];
 //}
 
-+ (void)savePhoneNumber:(NSArray *)numberAry
-{
-    [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-+ (NSArray *)fetchPhoneNumber
-{
-    NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
-    return tempAry;
-}
 
 #pragma mark - Getter&Setter
 - (NSMutableArray *)gamaAreaCodesArray

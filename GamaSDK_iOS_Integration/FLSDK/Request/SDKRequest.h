@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDKRequest : NSObject
 
 #pragma mark - sdk配置接口
++(void)getAreaInfoWithSuccessBlock:(BJServiceSuccessBlock)successBlock
+                        errorBlock:(BJServiceErrorBlock)errorBlock;
+
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                          errorBlock:(BJServiceErrorBlock)errorBlock;
 

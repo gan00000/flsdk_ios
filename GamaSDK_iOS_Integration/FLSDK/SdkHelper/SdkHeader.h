@@ -137,5 +137,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_order_create     (@"api/order/create")
 #define api_payment         (@"api/apple/payment")
 
+#define api_sendMobileVcode  (@"api/vcode/sendMobileVcode")
+#define api_bind_phone  (@"api/mobile/bind")
+
 #endif /* CCSkyHourHeader_h */
 

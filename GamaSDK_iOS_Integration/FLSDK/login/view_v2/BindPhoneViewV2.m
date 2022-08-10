@@ -138,6 +138,7 @@
     }];
     
     areaCodeLabel = [UIUtil initLabelWithText:@"text_area_code".localx fontSize:FS(14) textColor:UIColor.blackColor];
+    areaCodeLabel.text = mPhoneInfoModel.selectedAreaCodeValue;
     
     [phoneAreaCodeView addSubview:areaCodeLabel];
     [areaCodeLabel mas_makeConstraints:^(MASConstraintMaker *make) {

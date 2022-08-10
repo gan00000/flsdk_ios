@@ -30,6 +30,12 @@
         
     }];
     
+    [SDKRequest getAreaInfoWithSuccessBlock:^(id responseData) {
+
+    } errorBlock:^(BJError *error) {
+
+    }];
+    
     //Facebook事件打点初始化
 //    [[GamaTimer shareInstance] gama_FBEventStartTimer];
     

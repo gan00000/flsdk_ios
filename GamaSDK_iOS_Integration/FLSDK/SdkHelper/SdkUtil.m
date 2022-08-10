@@ -31,6 +31,8 @@
 #define titleMaxFontSize    17
 #define titleMinFontSize    9
 
+#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
+
 @implementation SdkUtil
 
 
@@ -506,4 +508,17 @@
     }
     return loginBtnDatas;
 }
+
++ (void)savePhoneAreaInfo:(NSArray *)numberAry
+{
+    [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (NSArray *)fetchPhoneAreaInfo
+{
+    NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
+    return tempAry;
+}
+
 @end
