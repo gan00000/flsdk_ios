@@ -6,8 +6,11 @@
 #import "LoginButton.h"
 #import "LoginTitleView.h"
 #import "MyTextFiled.h"
+#import "CountTimerDelegate.h"
+#import "PhoneInfoModel.h"
 
-@interface BindPhoneViewV2 ()
+
+@interface BindPhoneViewV2 () <CountTimerDelegate,PhoneInfoModelDelegate>
 
 @end
 
@@ -19,6 +22,9 @@
     
     UILabel *hasBindPhoneTips;
     UIView *phoneContentView;
+    UILabel *areaCodeLabel;
+    
+    PhoneInfoModel *mPhoneInfoModel;
     
 }
 
@@ -28,13 +34,16 @@
     self = [super init];
     if (self) {
         
-//        UIColor *color = [UIColor whiteColor];
-//        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-//        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.masksToBounds = YES;
+        //        UIColor *color = [UIColor whiteColor];
+        //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
+        //        self.layer.cornerRadius = 10; //设置圆角
+        //        self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
         
-        [self landspaceView];
+        mPhoneInfoModel = [[PhoneInfoModel alloc] init];
+        mPhoneInfoModel.delegate = self;
+        
+        [self addView];
         
         
     }
@@ -42,8 +51,8 @@
 }
 
 
-- (void)landspaceView {
-   
+- (void)addView {
+    
     
     UIView *contentView = [[UIView alloc] init];
     
@@ -66,8 +75,8 @@
         make.top.mas_equalTo(contentView.mas_top).mas_offset(VH(15));
         make.leading.mas_equalTo(contentView).mas_offset(VW(15));
         make.trailing.mas_equalTo(contentView).mas_offset(VW(-15));
-//        make.width.mas_equalTo(self);
-//        make.height.mas_equalTo(VH(40));
+        //        make.width.mas_equalTo(self);
+        //        make.height.mas_equalTo(VH(40));
     }];
     
     UIView *tagView = [[UIView alloc] init];
@@ -78,7 +87,7 @@
         make.leading.mas_equalTo(titleView);
         make.width.mas_equalTo(VW(4));
         make.height.mas_equalTo(VH(14));
-//        make.top.mas_equalTo(titleView);
+        //        make.top.mas_equalTo(titleView);
         make.bottom.mas_equalTo(titleView);
     }];
     
@@ -88,7 +97,7 @@
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(titleView);
+        //        make.center.mas_equalTo(titleView);
         make.leading.mas_equalTo(titleView).mas_offset(6);
         make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView);
@@ -99,7 +108,7 @@
     
     [titleView addSubview:closeBtn];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(titleView);
+        //        make.center.mas_equalTo(titleView);
         make.trailing.mas_equalTo(titleView);
         make.centerY.mas_equalTo(titleView);
         make.width.mas_equalTo(VH(22));
@@ -128,7 +137,7 @@
         make.height.mas_equalTo(VH(40));
     }];
     
-    UILabel *areaCodeLabel = [UIUtil initLabelWithText:@"text_area_code".localx fontSize:FS(14) textColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    areaCodeLabel = [UIUtil initLabelWithText:@"text_area_code".localx fontSize:FS(14) textColor:UIColor.blackColor];
     
     [phoneAreaCodeView addSubview:areaCodeLabel];
     [areaCodeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -170,9 +179,9 @@
     
     
     UIView *vfInfoView = [[UIView alloc] init];
-//    vfInfoView.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
-//    vfInfoView.layer.borderWidth = 0.5;
-//    vfInfoView.layer.cornerRadius = VH(20);
+    //    vfInfoView.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    //    vfInfoView.layer.borderWidth = 0.5;
+    //    vfInfoView.layer.cornerRadius = VH(20);
     [contentView addSubview:vfInfoView];
     [vfInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.mas_equalTo(titleView);
@@ -201,11 +210,11 @@
     getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(action:) target:self];
     
     
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
-        getVfCodeBtn.layer.borderWidth = 0.5;
-        getVfCodeBtn.layer.cornerRadius = VH(20);
-//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-//        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
+    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    getVfCodeBtn.layer.borderWidth = 0.5;
+    getVfCodeBtn.layer.cornerRadius = VH(20);
+    //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
+    //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
     [vfInfoView addSubview:getVfCodeBtn];
     [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -237,24 +246,63 @@
         make.centerX.mas_equalTo(phoneContentView);
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(8));
     }];
+    
+    self.countTimerDelegate = self;
 }
+
 
 - (void)action:(UIButton *)sender
 {
-   
-    switch (sender.tag) {
     
+    switch (sender.tag) {
+            
         case TAG_CLOSE:
             [self removeFromSuperview];
             if (self.mMWBlock) {
                 self.mMWBlock(NO, nil);
             }
             break;
+        case kGetVfCodeActTag:
+            
+            [self startCountTimer];
+            
+            break;
+            
+        case kMoreAccountListActTag:
+            
+            [mPhoneInfoModel showAreaCodesActionSheetFromView:sender];
+            
+            break;
+            
             
         default:
             break;
     }
     
+}
+
+- (void)beforeStartTimer {
+    self.totalCount = 60;
+    getVfCodeBtn.userInteractionEnabled = NO;
+    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%ld", self.totalCount] forState:UIControlStateNormal];
+    
+}
+
+- (void)finishTimer {
+    
+    getVfCodeBtn.userInteractionEnabled = YES;
+    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+}
+
+- (void)timing:(NSString *)count{
+    
+    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%@", count] forState:UIControlStateNormal];
+    
+}
+
+- (void)showSelectedAreaCodeValue:(NSString *)selectedAreaCodeValue
+{
+    areaCodeLabel.text = selectedAreaCodeValue;
 }
 
 @end

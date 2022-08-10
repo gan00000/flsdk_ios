@@ -63,6 +63,10 @@
 		030FAA7628A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
 		030FAA7728A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
 		030FAA7828A362E200709536 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
+		030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
+		030FAA7C28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
+		030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
+		030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -179,7 +183,7 @@
 		037C6F2E2875AC790041EC34 /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; };
 		037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
 		037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
-		037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; };
+		037C6F332875AC790041EC34 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; };
 		037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
 		037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* GamaWebViewController.m */; };
 		037C6F362875AC790041EC34 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
@@ -362,7 +366,7 @@
 		E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
 		E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E95BCED6237D4B87004A08B1 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
 		E974128B20874A170018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
@@ -461,6 +465,9 @@
 		030FAA7028A27F0600709536 /* BindPhoneViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneViewV2.m; sourceTree = "<group>"; };
 		030FAA7428A362E200709536 /* MyTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextFiled.m; sourceTree = "<group>"; };
 		030FAA7528A362E200709536 /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
+		030FAA7928A39F0800709536 /* BaseCountTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCountTimerView.h; sourceTree = "<group>"; };
+		030FAA7A28A39F0800709536 /* BaseCountTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCountTimerView.m; sourceTree = "<group>"; };
+		030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -772,8 +779,8 @@
 		E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAppleLogin.m; sourceTree = "<group>"; };
 		E94EE4812362CF72007D3A93 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E956BC79211D768F006D9E4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GamaSDK_iOS/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaPhoneModel.h; sourceTree = "<group>"; };
-		E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaPhoneModel.m; sourceTree = "<group>"; };
+		E95BCED3237D4A2A004A08B1 /* PhoneInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfoModel.h; sourceTree = "<group>"; };
+		E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneInfoModel.m; sourceTree = "<group>"; };
 		E95BCED9237EAD0D004A08B1 /* libGamaGamecenter_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaGamecenter_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97411C420874A170018E1A6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E97411C520874A170018E1A6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1415,8 +1422,8 @@
 				031B9FBA2897D4FA00D35EFB /* sdkCategory */,
 				032AB889285A006600F1FD3B /* Res */,
 				032AB890285A006600F1FD3B /* CoreSecurity */,
-				E95BCED3237D4A2A004A08B1 /* GamaPhoneModel.h */,
-				E95BCED4237D4A2A004A08B1 /* GamaPhoneModel.m */,
+				E95BCED3237D4A2A004A08B1 /* PhoneInfoModel.h */,
+				E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */,
 				E94EE47D235D8D3B007D3A93 /* SAppleLogin.h */,
 				E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */,
 				E99EB28521BE4E9E004FF8B5 /* GamaWebViewController.h */,
@@ -1439,6 +1446,7 @@
 			children = (
 				031B9FB92897D2CD00D35EFB /* ColorHeader.h */,
 				322CBC1724C589A5000D6B20 /* LoginViewDelegate.h */,
+				030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */,
 				0369B35A28655630002F4B2F /* Model */,
 				322CBC1624C589A5000D6B20 /* SDKLoginViewController.h */,
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
@@ -1461,6 +1469,8 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA7928A39F0800709536 /* BaseCountTimerView.h */,
+				030FAA7A28A39F0800709536 /* BaseCountTimerView.m */,
 				322CBC2824C589A5000D6B20 /* AccountLoginView.h */,
 				322CBC3624C589A5000D6B20 /* AccountLoginView.m */,
 				03EA36072850986F00723340 /* BindAccountView.h */,
@@ -1664,9 +1674,11 @@
 			files = (
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
+				030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */,
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
 				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
 				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
+				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
@@ -2004,6 +2016,7 @@
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
+				030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */,
 				030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */,
 				037C6F212875AC790041EC34 /* UIUtil.m in Sources */,
 				037C6F222875AC790041EC34 /* StringUtil.m in Sources */,
@@ -2021,7 +2034,7 @@
 				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
 				037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */,
 				037C6F302875AC790041EC34 /* SdkSecurityFunction.m in Sources */,
-				037C6F332875AC790041EC34 /* GamaPhoneModel.m in Sources */,
+				037C6F332875AC790041EC34 /* PhoneInfoModel.m in Sources */,
 				037C6F342875AC790041EC34 /* SAppleLogin.m in Sources */,
 				037C6F352875AC790041EC34 /* GamaWebViewController.m in Sources */,
 				037C6F362875AC790041EC34 /* SdkUtil.m in Sources */,
@@ -2094,6 +2107,7 @@
 				0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */,
 				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
 				03B918DE286029050029AE6A /* ConfigResponse.m in Sources */,
+				030FAA7C28A39F0800709536 /* BaseCountTimerView.m in Sources */,
 				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
 				3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */,
 				030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
@@ -2147,7 +2161,7 @@
 				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
 				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
 				030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */,
-				E95BCED6237D4B87004A08B1 /* GamaPhoneModel.m in Sources */,
+				E95BCED6237D4B87004A08B1 /* PhoneInfoModel.m in Sources */,
 				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
 				032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */,
 				03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */,

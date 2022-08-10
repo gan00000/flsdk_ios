@@ -9,7 +9,7 @@
 
 @interface ResReader ()
 @property (nonatomic, copy) NSString *m_stringsName;
-@property (nonatomic, retain) NSBundle *m_stringsBundle;
+@property (nonatomic, strong) NSBundle *m_stringsBundle;
 @end
 
 @implementation ResReader
@@ -42,6 +42,8 @@ static dispatch_once_t onceToken;
     if (self)
     {
         SDK_LOG(@"reader init");
+//        self.areaCodeDic = [NSMutableDictionary dictionary];
+        self.areaInfoArray = [NSMutableArray array];
         [self copyConfigeFileToDocument];
         
 //        [self readCoreConfInfo];
@@ -74,6 +76,30 @@ static dispatch_once_t onceToken;
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
+        
+        NSString *areaInfo_path=[sdkBundle pathForResource:@"areaInfo" ofType:@"json"];
+        if (areaInfo_path) {
+            
+            // 将文件数据化
+            NSData *resultData = [[NSData alloc] initWithContentsOfFile:areaInfo_path];
+            // 对数据进行JSON格式化并返回字典形式
+            NSArray *areaInfo_arry = [NSJSONSerialization JSONObjectWithData:resultData options:kNilOptions error:nil];
+            
+            if (areaInfo_arry) {
+                [self.areaInfoArray addObjectsFromArray:areaInfo_arry];
+                [areaInfo_arry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    
+                    if (obj) {
+                        [self.areaCodeDic addEntriesFromDictionary:obj];
+                    }
+                    
+                }];
+            }
+            
+//            NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableLeaves error:&errors];
+            
+        }
+       
     }
     
     NSString *infoPlistPath=[sdkBundle pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];

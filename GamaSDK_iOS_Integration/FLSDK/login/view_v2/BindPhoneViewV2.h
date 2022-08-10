@@ -1,9 +1,9 @@
 //
-#import "SDKBaseView.h"
-#import "MWSDK.h""
+#import "BaseCountTimerView.h"
+#import "MWSDK.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BindPhoneViewV2 : SDKBaseView
+@interface BindPhoneViewV2 : BaseCountTimerView
 
 @property (copy,nonatomic) MWBlock mMWBlock;
 

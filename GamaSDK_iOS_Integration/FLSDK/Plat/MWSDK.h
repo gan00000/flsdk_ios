@@ -43,6 +43,9 @@ typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
 typedef void (^SDKLogoutBlock)(NSInteger logout);
 typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
 typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
+
+typedef void (^MWBlock)(BOOL success, id _Nullable result);
+
 //typedef void (^PayPuchessing)(NSDictionary *result);
 
 // 充值类型
@@ -175,6 +178,8 @@ completionHandler:(SDKPayBlock) handler;
 /// @param url  分享的url
 /// @param shareBlock 分享的回调
 -(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock;
+
+-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
 
 @end
 

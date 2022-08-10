@@ -6,56 +6,44 @@
 //  Copyright © 2019年 james. All rights reserved.
 //
 
-#import "GamaPhoneModel.h"
+#import "PhoneInfoModel.h"
 #import "AlertUtil.h"
+#import "SdkHeader.h"
 
-#define GAMESWORD_PHONE_AREA_CODE  @"gameswordphoneAreaCode"
+#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
 
-@interface GamaPhoneModel()
+@interface PhoneInfoModel()
 @property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;
 @end
 
-@implementation GamaPhoneModel
+@implementation PhoneInfoModel
 - (id)init
 {
     self = [super init];
     if (self) {
-        
-        NSDictionary *twDic = [NSDictionary dictionaryWithObjectsAndKeys:
-                               @"tw",@"key",
-                               @"886",@"value",
-                               @"台灣 +886",@"text",
-                               @"^0{0,1}[6,7,9](?:\\d{7}|\\d{8}|\\d{10})$",@"pattern",
-                               nil];
-        NSDictionary *hkDic = [NSDictionary dictionaryWithObjectsAndKeys:
-                               @"hk",@"key",
-                               @"852",@"value",
-                               @"香港 +852",@"text",
-                               @"^0{0,1}[1,5,6,9](?:\\d{7}|\\d{8}|\\d{12})$",@"pattern",
-                               nil];
-        
-        //将sheet设置为默认的港台区号
-        [self resetupAreaCodesAndActionSheetWith:@[twDic,hkDic]];
-        
     }
     return self;
 }
 
-- (void)gamaShowAreaCodesActionSheetFromView:(UIButton *)view
+- (void)showAreaCodesActionSheetFromView:(UIButton *)view
 {
     NSMutableArray *tempArray = [NSMutableArray array];
 
 //    [self.gamaAreaCodesArray removeAllObjects];
 //    [self.gamaAreaCodesArray addObjectsFromArray:[GamaPhoneModel fetchPhoneNumber]];
-    [self resetupAreaCodesAndActionSheetWith:[GamaPhoneModel fetchPhoneNumber]];
+//    [self resetupAreaCodesAndActionSheetWith:[PhoneInfoModel fetchPhoneNumber]];
+    
+    //将sheet设置为默认的港台区号
+    [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
+    
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
         [tempArray addObject:[dict objectForKey:@"text"]];
     }
     
-    __block GamaPhoneModel *weakSelf = self;
+    __block PhoneInfoModel *weakSelf = self;
     
-    [AlertUtil showActionSheetWithTitle:@"請選擇移動電話的區號"
+    [AlertUtil showActionSheetWithTitle:@"text_select_phone_area_title".localx
                                     message:@""
                               callbackBlock:^(NSInteger btnIndex) {
                                   if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
@@ -71,13 +59,15 @@
                                   }
                               }
                      destructiveButtonTitle:nil
-                          cancelButtonTitle:@"取消"
+                          cancelButtonTitle:@"text_cancel".localx
                           otherButtonTitles:[NSArray arrayWithArray:tempArray]
                                  sourceView:view
                              arrowDirection:UIPopoverArrowDirectionLeft];
 }
 
-- (void)resetupAreaCodesAndActionSheetWith:(NSArray *)newAreaCodesArray//有两个地方调用这个方法，一个是一开始只有两个默认地区，另一个是经过访问服务器后得到的地区区号
+//有两个地方调用这个方法，一个是一开始只有两个默认地区，另一个是经过访问服务器后得到的地区区号
+- (void)resetupAreaCodesAndActionSheetWith:(NSArray *)newAreaCodesArray
+
 {
     if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray isKindOfClass:[NSMutableArray class]]) {
         [self.gamaAreaCodesArray removeAllObjects];
@@ -90,8 +80,8 @@
 }
 
 //访问服务器获得地区号码
-+ (void)requestPhoneNumberAreaCodes
-{
+//+ (void)requestPhoneNumberAreaCodes
+//{
 //    NSString *phoneNumberAreaUrl = [NSString stringWithFormat:@"https://static-download2.flyfungame.com/baseconfig/v1/areacodes.json"];
 //    [GamaRequestor requestByNSURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:phoneNumberAreaUrl]]
 //                       ComplitionHandler:^(NSURLResponse *response, NSDictionary *resultJsonDic, NSError *jsonParseErr, NSString *resultStr, NSData *resultRawData, NSError *error) {
@@ -104,17 +94,17 @@
 //            }
 //        }
 //    }];
-}
+//}
 
 + (void)savePhoneNumber:(NSArray *)numberAry
 {
-    [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:GAMESWORD_PHONE_AREA_CODE];
+    [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (NSArray *)fetchPhoneNumber
 {
-    NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:GAMESWORD_PHONE_AREA_CODE];
+    NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
     return tempAry;
 }
 
