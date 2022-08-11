@@ -51,7 +51,7 @@
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
         
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.25];
+        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.1];
         
         [self landspaceView];
         
