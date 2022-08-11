@@ -82,7 +82,7 @@
         }];
         
         
-        UILabel *titleLabel = [UIUtil initLabelWithText:@"text_phone_bind".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+        UILabel *titleLabel = [UIUtil initLabelWithText:@"text_update_account".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
         titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
         
         [titleView addSubview:titleLabel];
@@ -287,6 +287,7 @@
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
     if (!currentAccountModel) {
 //        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
   

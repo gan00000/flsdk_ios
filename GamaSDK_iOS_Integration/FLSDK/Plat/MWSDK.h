@@ -183,5 +183,13 @@ completionHandler:(SDKPayBlock) handler;
 
 -(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
 
+
+
+- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
+
+- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
+
+- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+
 @end
 

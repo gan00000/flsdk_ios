@@ -432,6 +432,147 @@
 }
 
 
+- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
+{
+    if ([StringUtil isEmpty:areaCode]) {
+        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+        return;
+    }
+    if ([StringUtil isEmpty:telephone]) {
+        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+        return;
+    }
+//    if (![SdkUtil validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+//        [SdkUtil toastMsg: @"text_phone_not_match".localx];
+//        return;
+//    }
+    
+    [SDKRequest requestMobileVfCode:areaCode phoneNumber:telephone email:@"" otherDic:nil successBlock:^(id responseData) {
+        
+//        [SdkUtil toastMsg: @"text_vfcode_has_send".localx];
+        if (mMWBlock) {
+            mMWBlock(YES, nil);
+        }
+        
+    } errorBlock:^(BJError *error) {
+        
+//        if (error.message) {
+//            [AlertUtil showAlertWithMessage:error.message];
+//        }
+        if (mMWBlock) {
+            mMWBlock(NO, error.message);
+        }
+        
+    }];
+}
+
+- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
+    
+    if ([StringUtil isEmpty:areaCode]) {
+        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+        return;
+    }
+    if ([StringUtil isEmpty:telephone]) {
+        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+        return;
+    }
+    
+//    if (![SdkUtil validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+//        [SdkUtil toastMsg: @"text_phone_not_match".localx];
+//        return;
+//    }
+    
+    if ([StringUtil isEmpty:vfCode]) {
+        [SdkUtil toastMsg: @"py_msg_vfcode_hint".localx];
+        return;
+    }
+    
+    [SDKRequest bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
+        
+//        [SdkUtil toastMsg: @"text_phone_bind_success".localx];
+        SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
+        SDK_DATA.mLoginResponse.data.isBindPhone = YES;
+        
+        if (mMWBlock) {
+            mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
+        }
+        
+    } errorBlock:^(BJError *error) {
+        
+//        if (error.message) {
+//            [AlertUtil showAlertWithMessage:error.message];
+//        }
+        if (mMWBlock) {
+            mMWBlock(NO, error.message);
+        }
+        
+    }];
+    
+    
+}
+
+- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
+{
+    if (![SdkUtil validUserName:account]) {
+        return;
+    }
+
+
+    if (![SdkUtil validPwd:password]) {
+        return;
+    }
+    
+    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
+    if (!currentAccountModel) {
+//        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
+        return;
+    }
+    
+    [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
+        
+//        [SdkUtil toastMsg:GetString(@"text_account_bind_success2")];
+        
+        LoginResponse *cc = (LoginResponse *)responseData;
+        cc.data.account = account;
+        cc.data.password = password;
+        cc.data.loginType = LOGIN_TYPE_SELF;
+        SDK_DATA.mLoginResponse = cc;
+        
+        [[ConfigCoreUtil share] saveAccountModel:cc.data];
+        
+//        [delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+        
+        AccountModel *rData = cc.data;
+        LoginData *loginData = [[LoginData alloc] init];
+        loginData.accessToken = rData.token;
+        loginData.userId = rData.userId;
+        loginData.timestamp = rData.timestamp;
+        
+        loginData.isBind = rData.isBind;
+        loginData.isBindPhone = rData.isBindPhone;
+        loginData.loginType = rData.loginType;
+        
+        loginData.sign = rData.sign;
+        loginData.telephone = rData.telephone;
+        loginData.loginId = rData.loginId;
+        
+        if (mMWBlock) {
+            mMWBlock(YES, loginData);
+        }
+        
+    } errorBlock:^(BJError *error) {
+//        if (error.message) {
+//            [AlertUtil showAlertWithMessage:error.message];
+//        }
+        if (mMWBlock) {
+            mMWBlock(NO, error.message);
+        }
+    }];
+    
+}
+
+
 - (void)_pay_webview
 {
 //    NSString * resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/"];

@@ -253,7 +253,7 @@
     self.countTimerDelegate = self;
 //    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
     
-    AccountModel *xx = SDK_DATA.mLoginResponse.data;
+//    AccountModel *xx = SDK_DATA.mLoginResponse.data;
     
     if (SDK_DATA.mLoginResponse.data.isBindPhone) {
         
@@ -361,6 +361,7 @@
                 
                 [SdkUtil toastMsg: @"text_phone_bind_success".localx];
                 SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,tel];
+                SDK_DATA.mLoginResponse.data.isBindPhone = YES;
                 
                 if (self.mMWBlock) {
                     self.mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
