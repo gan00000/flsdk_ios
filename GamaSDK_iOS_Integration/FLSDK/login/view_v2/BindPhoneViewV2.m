@@ -251,7 +251,10 @@
     }];
     
     self.countTimerDelegate = self;
-    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
+//    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
+    
+    AccountModel *xx = SDK_DATA.mLoginResponse.data;
+    
     if (SDK_DATA.mLoginResponse.data.isBindPhone) {
         
         hasBindPhoneTips.hidden = NO;

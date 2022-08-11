@@ -181,5 +181,7 @@ completionHandler:(SDKPayBlock) handler;
 
 -(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
 
+-(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
+
 @end
 

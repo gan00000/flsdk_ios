@@ -20,6 +20,7 @@
 
 #import "NoticeViewV2.h"
 #import "BindPhoneViewV2.h"
+#import "BindAccountViewV2.h"
 
 #import <StoreKit/StoreKit.h>
 
@@ -414,6 +415,18 @@
     [superView addSubview:mBindPhoneViewV2];
     
     [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+}
+
+- (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
+{
+    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
+    mBindAccountViewV2.mMWBlock = mBlock;
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mBindAccountViewV2];
+    
+    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
     }];
 }

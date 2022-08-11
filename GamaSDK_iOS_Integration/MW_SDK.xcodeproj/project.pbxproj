@@ -67,6 +67,9 @@
 		030FAA7C28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
 		030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
 		030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
+		030FAA8428A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
+		030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
+		030FAA8628A4B07900709536 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -468,6 +471,8 @@
 		030FAA7928A39F0800709536 /* BaseCountTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCountTimerView.h; sourceTree = "<group>"; };
 		030FAA7A28A39F0800709536 /* BaseCountTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCountTimerView.m; sourceTree = "<group>"; };
 		030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
+		030FAA8228A4B07900709536 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
+		030FAA8328A4B07900709536 /* BindAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountViewV2.h; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -916,6 +921,8 @@
 		030FAA0028A0FA7C00709536 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA8328A4B07900709536 /* BindAccountViewV2.h */,
+				030FAA8228A4B07900709536 /* BindAccountViewV2.m */,
 				030FAA6F28A27F0600709536 /* BindPhoneViewV2.h */,
 				030FAA7028A27F0600709536 /* BindPhoneViewV2.m */,
 				030FAA6A28A2619500709536 /* NoticeViewV2.h */,
@@ -1684,6 +1691,7 @@
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
 				030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
+				030FAA8628A4B07900709536 /* BindAccountViewV2.h in Headers */,
 				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
@@ -1988,6 +1996,7 @@
 				037C6F042875AC790041EC34 /* AccountModel.m in Sources */,
 				037C6F052875AC790041EC34 /* LoginResponse.m in Sources */,
 				037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */,
+				030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */,
 				030FAA7728A362E200709536 /* MyTextFiled.m in Sources */,
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
@@ -2081,6 +2090,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3295E2E424DAEDDE00B85976 /* BJBaseResponceModel.m in Sources */,
+				030FAA8428A4B07900709536 /* BindAccountViewV2.m in Sources */,
 				03B919322860AECB0029AE6A /* SDWebImageManager.m in Sources */,
 				032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */,
 				3295E2E524DAEDDE00B85976 /* BJError.m in Sources */,

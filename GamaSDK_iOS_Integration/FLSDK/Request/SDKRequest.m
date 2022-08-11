@@ -348,18 +348,18 @@
         NSDictionary *dic = @{
             
             @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId,
+            @"userId"           :accountModel.userId ? : @"",
             @"loginAccessToken"  :accountModel.token ? : @"",
             @"loginTimestamp"   :accountModel.timestamp ? : @"",
-            @"thirdPlatId"      :accountModel.thirdId ? : @"",
-            @"thirdLoginId"     :accountModel.thirdId ? : @"",
+//            @"thirdPlatId"      :accountModel.thirdId ? : @"",
+//            @"thirdLoginId"     :accountModel.thirdId ? : @"",
             
-            @"registPlatform"   :accountModel.loginType ? : @"",
-            @"loginMode"        :accountModel.loginType ? : @"",
+//            @"registPlatform"   :accountModel.loginType ? : @"",
+//            @"loginMode"        :accountModel.loginType ? : @"",
             
-            @"serverCode"           :gameUserModel.serverCode,
+            @"serverCode"           :gameUserModel.serverCode ? : @"",
             @"serverName"           :gameUserModel.serverName ? : @"",
-            @"roleId"           :gameUserModel.roleID,
+            @"roleId"           :gameUserModel.roleID ? : @"",
             @"roleName"           :gameUserModel.roleName ? : @"",
             @"roleLevel"           :gameUserModel.roleLevel ? : @"",
             @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
@@ -553,7 +553,7 @@
                           errorBlock:(BJServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
