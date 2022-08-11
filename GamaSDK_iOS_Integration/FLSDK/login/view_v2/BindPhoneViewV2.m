@@ -251,6 +251,29 @@
     }];
     
     self.countTimerDelegate = self;
+    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
+    if (SDK_DATA.mLoginResponse.data.isBindPhone) {
+        
+        hasBindPhoneTips.hidden = NO;
+        vfInfoView.hidden = YES;
+        [phoneContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.mas_equalTo(titleView.mas_bottom).mas_offset(VH(46));
+            
+        }];
+        NSString *tel = SDK_DATA.mLoginResponse.data.telephone;
+        NSArray *pairs = [tel componentsSeparatedByString:@"&"];
+        if (pairs && pairs.count >=2) {
+            NSString *areaCode = pairs[0];
+            NSString *telNum = pairs[1];
+            areaCodeLabel.text = areaCode;
+            phoneNumFiled.inputTextField.text = telNum;
+        }
+        
+    }else{
+        hasBindPhoneTips.hidden = YES;
+        vfInfoView.hidden = NO;
+    }
 }
 
 
@@ -333,8 +356,20 @@
             
             [SDKRequest bindAccountPhone:areaCode phoneNumber:tel vCode:vfCode otherDic:nil successBlock:^(id responseData) {
                 
+                [SdkUtil toastMsg: @"text_phone_bind_success".localx];
+                SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,tel];
+                
+                if (self.mMWBlock) {
+                    self.mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
+                }
+                [self removeFromSuperview];
                 
             } errorBlock:^(BJError *error) {
+                
+                if (error.message) {
+                    [AlertUtil showAlertWithMessage:error.message];
+                }
+                
                 
             }];
             

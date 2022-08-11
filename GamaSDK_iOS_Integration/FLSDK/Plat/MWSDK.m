@@ -19,6 +19,7 @@
 #import "AdLogger.h"
 
 #import "NoticeViewV2.h"
+#import "BindPhoneViewV2.h"
 
 #import <StoreKit/StoreKit.h>
 
@@ -404,6 +405,19 @@
     }];
     
 }
+
+-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock
+{
+    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    mBindPhoneViewV2.mMWBlock = mBlock;
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mBindPhoneViewV2];
+    
+    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+}
+
 
 - (void)_pay_webview
 {
