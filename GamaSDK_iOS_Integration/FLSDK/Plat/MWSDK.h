@@ -75,7 +75,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 /**
  单例
  
- @return Satrpy 单例对象
+ @return MWSDK 单例对象
  */
 + (instancetype)share;
 

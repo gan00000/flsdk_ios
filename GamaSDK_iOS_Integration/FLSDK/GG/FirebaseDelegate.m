@@ -11,13 +11,14 @@
 //@import FirebaseAuth;
 #import <FirebaseCore/FirebaseCore.h>
 #import <FirebaseAuth/FirebaseAuth.h>
+#import <FirebaseMessaging/FIRMessaging.h>
 
 @implementation FirebaseDelegate
     
 + (BOOL)application:(id)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Use Firebase library to configure APIs
-    [FIRApp configure];
+    
     
     return YES;
 }

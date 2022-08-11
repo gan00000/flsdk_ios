@@ -1,7 +1,5 @@
 #import "MWSDK.h"
 
-#import "BaseSDK.h"
-#import "BaseSDKImpl.h"
 #import "AdLogger.h"
 #import "GamaWebViewController.h"
 #import "SDKLoginViewController.h"

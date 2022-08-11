@@ -70,6 +70,7 @@
 		030FAA8428A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
 		030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
 		030FAA8628A4B07900709536 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
+		030FAA8928A5039700709536 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030FAA8828A5039700709536 /* FirebaseMessaging.xcframework */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -473,6 +474,7 @@
 		030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
 		030FAA8228A4B07900709536 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
 		030FAA8328A4B07900709536 /* BindAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountViewV2.h; sourceTree = "<group>"; };
+		030FAA8828A5039700709536 /* FirebaseMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseMessaging.xcframework; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -897,6 +899,7 @@
 				CEE6B94B1A1498E6009E77FF /* EventKit.framework in Frameworks */,
 				035FA543286442A7000B2335 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				035FA546286442A7000B2335 /* GoogleSignInSwiftSupport.xcframework in Frameworks */,
+				030FAA8928A5039700709536 /* FirebaseMessaging.xcframework in Frameworks */,
 				035FA55F28644456000B2335 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				CEE6B9491A1498DF009E77FF /* CoreLocation.framework in Frameworks */,
 				CEE6B9471A1498D9009E77FF /* MobileCoreServices.framework in Frameworks */,
@@ -949,6 +952,14 @@
 			children = (
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		030FAA8728A5039700709536 /* FirebaseMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				030FAA8828A5039700709536 /* FirebaseMessaging.xcframework */,
+			);
+			path = FirebaseMessaging;
 			sourceTree = "<group>";
 		};
 		031B9FBA2897D4FA00D35EFB /* sdkCategory */ = {
@@ -1071,6 +1082,7 @@
 		035FA51D286442A7000B2335 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA8728A5039700709536 /* FirebaseMessaging */,
 				035FA51E286442A7000B2335 /* FirebaseAuth */,
 				035FA521286442A7000B2335 /* Firebase.h */,
 				035FA522286442A7000B2335 /* FirebaseAnalytics */,
@@ -2294,6 +2306,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2367,6 +2380,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;

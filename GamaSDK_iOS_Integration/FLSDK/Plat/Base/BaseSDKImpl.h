@@ -6,9 +6,9 @@
 //  Copyright © 2017年 SP. All rights reserved.
 //
 
-#import "BaseSDK.h"
-
-@interface BaseSDKImpl : BaseSDK
-
-
-@end
+//#import "BaseSDK.h"
+//
+//@interface BaseSDKImpl : BaseSDK
+//
+//
+//@end
