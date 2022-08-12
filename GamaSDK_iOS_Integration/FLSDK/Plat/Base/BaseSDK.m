@@ -184,8 +184,11 @@
 }
 
 #pragma mark FIRMessagingDelegate代理
+
+//监控令牌刷新
+//如需在每次令牌更新时获得通知，请提供符合消息委托协议的委托。以下示例注册了此类委托，并添加了合适的委托方法
 - (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{
-    SDK_LOG(@"fcmToken = %@",fcmToken);
+    SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
     NSLog(@"FCM registration token: %@", fcmToken);
     // Notify about received token.
 //    NSDictionary *dataDict = [NSDictionary dictionaryWithObject:fcmToken forKey:@"token"];
@@ -206,7 +209,7 @@
       // ...
 
       // Print full message.
-      NSLog(@"%@", userInfo);
+    SDK_LOG(@"willPresentNotification = %@", userInfo);
 
       // Change this to your preferred presentation option
       completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionAlert);
@@ -214,6 +217,7 @@
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{
     
+    SDK_LOG(@"didReceiveNotificationResponse");
     NSDictionary *userInfo = response.notification.request.content.userInfo;
     NSString *kGCMMessageIDKey = @"gcm.message_id";
     
