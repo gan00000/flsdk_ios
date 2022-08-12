@@ -3,7 +3,6 @@
 //
 
 #import "AppDelegate.h"
-#import "BaseSDKImpl.h"
 #import "ViewController.h"
 #import "UserModel.h"
 
@@ -88,8 +87,9 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
     
 }
 
+
 -(void)applicationDidEnterBackground:(UIApplication *)application {
-//    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
+    
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
@@ -97,10 +97,9 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-//    if([GamaUserInfoModel shareInfoModel].gamaUID){
-//        [GamaTimer getStartTimeStamp];
-//    }
+
 }
+
 
 //- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
 //    // Called when a new scene session is being created.

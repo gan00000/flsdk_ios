@@ -7,7 +7,6 @@
 //
 
 #import "IAP_ViewController.h"
-#import "BaseSDKImpl.h"
 #import "UserModel.h"
 #import "SUtil.h"
 #import "ResHeader.h"

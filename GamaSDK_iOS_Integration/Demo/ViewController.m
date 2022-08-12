@@ -73,8 +73,8 @@
                           @"充值com.fzzh.tw.2usd",
                           @"事件追踪",
                           @"fb分享url",
-//                          @"打开公告",
-//                          @"事件上报",
+                          @"显示手机绑定页面",
+                          @"显示账号升级页面",
                      
                           ];
     
@@ -190,10 +190,16 @@
         }
             break;
         case 6:{
-//            [[FLSDK share] openWebPage:nil];
+            [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+            }];
         }
             break;
         case 7:{
+            [[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+            }];
+            
         }
             break;
 
