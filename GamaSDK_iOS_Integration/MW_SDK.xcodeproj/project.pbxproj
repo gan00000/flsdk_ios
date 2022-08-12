@@ -71,6 +71,15 @@
 		030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
 		030FAA8628A4B07900709536 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
 		030FAA8928A5039700709536 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030FAA8828A5039700709536 /* FirebaseMessaging.xcframework */; };
+		030FAA9128A6571900709536 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
+		030FAA9228A6571900709536 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
+		030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
+		030FAA9428A6571900709536 /* GamaThirdSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* GamaThirdSocial.h */; };
+		030FAA9528A6571900709536 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
+		030FAA9628A6571900709536 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
+		030FAB3528A66ED300709536 /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
+		030FAB3628A66ED300709536 /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
+		030FAB3728A66ED300709536 /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
@@ -475,6 +484,12 @@
 		030FAA8228A4B07900709536 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
 		030FAA8328A4B07900709536 /* BindAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountViewV2.h; sourceTree = "<group>"; };
 		030FAA8828A5039700709536 /* FirebaseMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseMessaging.xcframework; sourceTree = "<group>"; };
+		030FAA8D28A6571900709536 /* GamaSDK+Social.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+Social.h"; sourceTree = "<group>"; };
+		030FAA8E28A6571900709536 /* GamaThirdSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaThirdSocial.m; sourceTree = "<group>"; };
+		030FAA8F28A6571900709536 /* GamaThirdSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdSocial.h; sourceTree = "<group>"; };
+		030FAA9028A6571900709536 /* GamaSDK+Social.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+Social.m"; sourceTree = "<group>"; };
+		030FAB3328A66ED300709536 /* UrlMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlMode.h; sourceTree = "<group>"; };
+		030FAB3428A66ED300709536 /* UrlMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlMode.m; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
 		031B9FBB2897D81600D35EFB /* NSString+Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Local.h"; sourceTree = "<group>"; };
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
@@ -1431,6 +1446,8 @@
 				03B918E0286029670029AE6A /* ConfigModel.m */,
 				0320292928698F1800E8D5A5 /* CreateOrderResp.h */,
 				0320292A28698F1800E8D5A5 /* CreateOrderResp.m */,
+				030FAB3328A66ED300709536 /* UrlMode.h */,
+				030FAB3428A66ED300709536 /* UrlMode.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1438,6 +1455,10 @@
 		322CBC0B24C589A5000D6B20 /* SdkHelper */ = {
 			isa = PBXGroup;
 			children = (
+				030FAA8D28A6571900709536 /* GamaSDK+Social.h */,
+				030FAA9028A6571900709536 /* GamaSDK+Social.m */,
+				030FAA8F28A6571900709536 /* GamaThirdSocial.h */,
+				030FAA8E28A6571900709536 /* GamaThirdSocial.m */,
 				031B9FBA2897D4FA00D35EFB /* sdkCategory */,
 				032AB889285A006600F1FD3B /* Res */,
 				032AB890285A006600F1FD3B /* CoreSecurity */,
@@ -1694,9 +1715,12 @@
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */,
+				030FAA9128A6571900709536 /* GamaSDK+Social.h in Headers */,
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
 				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
 				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
+				030FAA9428A6571900709536 /* GamaThirdSocial.h in Headers */,
+				030FAB3528A66ED300709536 /* UrlMode.h in Headers */,
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
@@ -1989,6 +2013,7 @@
 				037C6F622875ACD70041EC34 /* SDImageCache.m in Sources */,
 				037C6F632875ACD70041EC34 /* SDWebImageDownloaderOperation.m in Sources */,
 				037C6F642875ACD70041EC34 /* NSData+ImageContentType.m in Sources */,
+				030FAB3728A66ED300709536 /* UrlMode.m in Sources */,
 				037C6F652875ACD70041EC34 /* UIImageView+WebCache.m in Sources */,
 				037C6F662875ACD70041EC34 /* UIView+WebCacheOperation.m in Sources */,
 				037C6F672875ACD70041EC34 /* UIButton+WebCache.m in Sources */,
@@ -2013,6 +2038,7 @@
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
 				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
+				030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */,
 				037C6F0A2875AC790041EC34 /* BJError.m in Sources */,
 				037C6F0B2875AC790041EC34 /* HttpServiceEngineLogin.m in Sources */,
 				037C6F0C2875AC790041EC34 /* BJServiceConfigurator.m in Sources */,
@@ -2025,6 +2051,7 @@
 				037C6F122875AC790041EC34 /* LoginData.m in Sources */,
 				037C6F132875AC790041EC34 /* MWSDK.m in Sources */,
 				037C6F142875AC790041EC34 /* SdkCfUUID.m in Sources */,
+				030FAA9628A6571900709536 /* GamaSDK+Social.m in Sources */,
 				037C6F152875AC790041EC34 /* SdkKeychainItemWrapper.m in Sources */,
 				037C6F162875AC790041EC34 /* SdkPrivateKeychainCfUUID.m in Sources */,
 				037C6F172875AC790041EC34 /* AlertUtil.m in Sources */,
@@ -2114,6 +2141,7 @@
 				03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */,
 				032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */,
 				3295E2E924DAEDDE00B85976 /* MWSDK.m in Sources */,
+				030FAB3628A66ED300709536 /* UrlMode.m in Sources */,
 				03E076682861E73C00B81B65 /* LineDelegate.m in Sources */,
 				03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */,
 				03B9193E2860AECB0029AE6A /* UIView+WebCacheOperation.m in Sources */,
@@ -2142,6 +2170,7 @@
 				3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */,
 				03B918E1286029670029AE6A /* ConfigModel.m in Sources */,
 				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
+				030FAA9228A6571900709536 /* GamaThirdSocial.m in Sources */,
 				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
 				03B919352860AECB0029AE6A /* SDWebImageDownloader.m in Sources */,
 				030FAA7628A362E200709536 /* MyTextFiled.m in Sources */,
@@ -2171,6 +2200,7 @@
 				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
 				03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				03B919372860AECB0029AE6A /* UIImage+MultiFormat.m in Sources */,
+				030FAA9528A6571900709536 /* GamaSDK+Social.m in Sources */,
 				0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */,
 				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
 				03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */,

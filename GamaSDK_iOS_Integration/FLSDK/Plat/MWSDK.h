@@ -1,17 +1,9 @@
-//
-//  GamaSDK.h
-//
-//
-//  Created by sunn on 2017/2/24.
-//
-//
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LoginData.h"
 #import "PayData.h"
 
-#define FL_SDK_VERSION @"1.0.1"
+#define FL_SDK_VERSION @"1.0.2"
 
 // 追踪事件名称
 #define AD_EVENT_APP_OPEN  @"APP_OPEN"
@@ -140,11 +132,10 @@ roleVipLevel:(NSString *)roleVipLevel
 completionHandler:(SDKPayBlock) handler;
 
 /**
- 社交分享
- @param shareParams 分享参数集合
- GAMA_PRM_SHARE_CONTENT_URL              分享应用链接
+ line分享
+ @param content 分享的内容和链接
  */
-- (void)share:(NSDictionary *)shareParams __deprecated_msg("Method deprecated. Use `+ (void)gama_shareWithKind:param:success:failure:");
+- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
 - (void)openCs;
 

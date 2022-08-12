@@ -46,12 +46,15 @@
         SDK_LOG(@"sdk config:%@",responseDict);
         ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];//需要分开解析
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
+        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[@"url"]];
         
 //        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
         
         ConfigResponse *mCr = [[ConfigResponse alloc] init];
         mCr.subVersion = subVersion;
         mCr.allVersion = allVersion;
+        mCr.url = urls;
+        SDK_DATA.urls = urls;
         if (mCr) {
             if (successBlock) {
                 successBlock(mCr);

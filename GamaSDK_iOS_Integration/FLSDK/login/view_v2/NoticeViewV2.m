@@ -141,7 +141,7 @@
     }];
 
     
-    NSString * url = [NSString stringWithFormat:TERMS_SERVICE_URL,GAME_CODE];
+    NSString * url = SDK_DATA.urls.noticeUrl;
     SDK_LOG(@"notice Url=%@",url);
     nWebView = [[WKWebView alloc] init];
     [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];

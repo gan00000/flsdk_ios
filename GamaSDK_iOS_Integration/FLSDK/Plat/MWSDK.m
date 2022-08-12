@@ -645,48 +645,24 @@
      */
 }
 
-- (void)share:(NSDictionary *)shareParams
+- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
 {
-    //    NSDictionary *paymentDict = nil;
-    //
-    //    NSString *uid = [SdkUserInfoModel shareInfoModel].userId;
-    //    NSString *serverCode = [SdkUserInfoModel shareInfoModel].serverCode;
-    //    NSString *roleId = [SdkUserInfoModel shareInfoModel].roleID;
-    //    NSMutableString *contentUrl = [NSMutableString stringWithFormat:@"%@",shareParams[GAMA_PRM_SHARE_CONTENT_URL]];
-    //    NSMutableString *campaign = [[NSMutableString alloc] init];
-    //    BOOL serverCodeExist = serverCode && ![serverCode isEqualToString:@""];
-    //    BOOL roleIdExist = roleId && ![roleId isEqualToString:@""];
-    //    if (serverCodeExist && roleIdExist) {
-    //        NSString *sValue =[NSString stringWithFormat:@"%@||S||%@||S||%@",uid,serverCode,roleId];
-    //        [campaign appendFormat:@"campaign=%@",[sValue urlEncode]];
-    //    }
-    //
-    //    if ([contentUrl rangeOfString:@"?"].location != NSNotFound) {
-    //        [contentUrl appendFormat:@"&%@",campaign];
-    //    } else {
-    //        [contentUrl appendFormat:@"?%@",campaign];
-    //    }
-    //
-    //    @try {
-    //        paymentDict = @{
-    //                        GAMA_PRM_SHARE_CONTENT_URL       : contentUrl,
-    //                        };
-    //    }
-    //    @catch (NSException *exception)
-    //    {
-    //        dispatch_async(dispatch_get_main_queue(),^
-    //                       {
-    //                           NSString *errorStr = [NSString stringWithFormat:@"!!!ERROR Dit At :\n %@ \n %@", paymentDict, exception.description];
-    //                           NSLog(@"%@",errorStr);
-    //                       });
-    //    }
-    //
-    ////    [NSClassFromString(@"GamaFacebookPort") postFacebookShareDialogWithContentUrl:contentUrl];
-    //    [FLSDK gama_shareWithKind:GamaThirdPartyTypeFacebook param:@{GAMA_PRM_SOCIAL_SHARE_LINK:contentUrl} success:^(NSDictionary * _Nullable result) {
-    //
-    //    } failure:^(NSError * _Nullable error) {
-    //
-    //    }];
+    if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https:itunes.apple.com/app/line/id443904275"]];
+        return;
+    }
+    
+    NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lineUrl]];
+    if (result) {
+        if (bMWBlock) {
+            bMWBlock(YES, @"Scheme share succeed");
+        }
+    } else {
+        if (bMWBlock) {
+            bMWBlock(NO,nil);
+        }
+    }
 }
 
 
