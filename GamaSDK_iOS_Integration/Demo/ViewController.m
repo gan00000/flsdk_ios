@@ -75,7 +75,7 @@
                           @"fb分享url",
                           @"显示手机绑定页面",
                           @"显示账号升级页面",
-                     
+                          @"line分享",
                           ];
     
     /*********************************************
@@ -202,7 +202,13 @@
             
         }
             break;
-
+        case 8:{
+            [[MWSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
+                NSLog(@"shareLineWithContent finish");
+            }];
+            
+        }
+            break;
   
 
        

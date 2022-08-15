@@ -58,6 +58,7 @@
 		<string>fb-messenger-api</string>
 		<string>fbshareextension</string>
 		<string>lineauth2</string>
+        <string>line</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
