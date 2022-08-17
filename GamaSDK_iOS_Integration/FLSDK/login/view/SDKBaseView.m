@@ -13,4 +13,10 @@
 - (void)initData{
     
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"SDKBaseView touchesBegan");
+    [self endEditing:YES];
+}
 @end
