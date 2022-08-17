@@ -195,12 +195,12 @@
 - (BOOL)isFacebookLogined
 {
     BOOL retResult = NO;
-    
-    if (nil == [self currentAccessToken] || [[self currentAccessToken] isExpired]) {
-        retResult = NO;
-    } else {
-        retResult = YES;
-    }
+    //注释掉，不判断accessToken,直接每次调用登录
+//    if (nil == [self currentAccessToken] || [[self currentAccessToken] isExpired]) {
+//        retResult = NO;
+//    } else {
+//        retResult = YES;
+//    }
     
     return retResult;
 }
