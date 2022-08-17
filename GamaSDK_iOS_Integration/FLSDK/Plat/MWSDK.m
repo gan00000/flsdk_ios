@@ -407,6 +407,10 @@
 
 -(void)showBindPhoneViewWithBlock:(MWBlock) mBlock
 {
+    if (!is_Version2) {
+        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        return;
+    }
     BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
     mBindPhoneViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
@@ -419,6 +423,10 @@
 
 - (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
 {
+    if (!is_Version2) {
+        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        return;
+    }
     BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
@@ -432,6 +440,7 @@
 
 - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
 {
+   
     if ([StringUtil isEmpty:areaCode]) {
         [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
         return;
