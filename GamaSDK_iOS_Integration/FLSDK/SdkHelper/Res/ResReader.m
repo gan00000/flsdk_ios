@@ -252,7 +252,7 @@ static dispatch_once_t onceToken;
             
         }else if ([preferredLang hasPrefix:@"zh-Hant"]){
             languageStr = @"zh-Hant";
-        }else if ([preferredLang hasPrefix:@"en-"]){
+        }else if ([preferredLang hasPrefix:@"en"]){
             languageStr = @"en";
         }else{
             languageStr = @"zh-Hant";
