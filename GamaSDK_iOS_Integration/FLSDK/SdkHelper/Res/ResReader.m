@@ -190,8 +190,8 @@ static dispatch_once_t onceToken;
     //读取系统产生的 plist文件的写法
     // NSDictionary *plistDic = [[NSBundle mainBundle] infoDictionary];
     SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
-    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
-    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
     
     return nil;
 }
