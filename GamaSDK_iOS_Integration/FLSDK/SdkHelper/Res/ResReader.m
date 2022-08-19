@@ -241,18 +241,27 @@ static dispatch_once_t onceToken;
 //#pragma mark - 初始化 Bundle
 - (void)setBundleInfo {
 
-//    NSString *GamaResourceBundleName = _coreConfDic[GAMA_GAME_RESOURCE_BUNDLE_NAME];
-//    NSString *languageStr = _coreConfDic[GAMA_GAME_LANGUAGE];//不通过配置文件读取对应的本地化文件
-    // song:20170406 通过手机设置的语言显示对应地区的本地化文件
-    NSString *languageStr = @"zh-Hant";//[[NSString alloc] init];
-//    if (_coreConfDic[GAMA_GMAE_mLanguge]) {
-//        languageStr  = [[GamaFunction getPreferredLanguage] containsString:@"zh-"]? @"zh-Hant": [GamaFunction getPreferredLanguage];
-//    }else{
-//        languageStr = _coreConfDic[GAMA_GAME_LANGUAGE];//不通过配置文件读取对应的本地化文件
-//    }
-
+    NSString *languageStr = @"zh-Hant";
+    
+    if ([self isMoreLanguage]) {//是否使用多语言
+        
+        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+            
+            languageStr = @"zh-Hans";
+            
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){
+            languageStr = @"zh-Hant";
+        }else if ([preferredLang hasPrefix:@"en-"]){
+            languageStr = @"en";
+        }else{
+            languageStr = @"zh-Hant";
+        }
+    }
+    
+ 
     self.m_stringsBundle = [NSBundle mainBundle];
-    self.m_stringsName = @"";
+    self.m_stringsName = @"Localizable";
 
     NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
 
@@ -264,7 +273,7 @@ static dispatch_once_t onceToken;
 
         if (lprojBundleURL) {
             self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
-            self.m_stringsName = @"Localizable";
+            //self.m_stringsName = @"Localizable";
         }
     }
 }
@@ -279,6 +288,9 @@ static dispatch_once_t onceToken;
 }
 -(NSString *) getGameLanguage
 {
+    if ([self isMoreLanguage]) {
+        return [SUtil getServerLanguage];
+    }
     return [self getStringForKey:@"gameLanguage"];
 }
 -(NSString *) getLoginUrl
@@ -320,6 +332,12 @@ static dispatch_once_t onceToken;
 {
     return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"];
 }
+
+-(BOOL) isMoreLanguage
+{
+    return [self getBoolForKey:@"sdk_more_language"];
+}
+
 
 - (NSString *)getSdkBundleName
 {

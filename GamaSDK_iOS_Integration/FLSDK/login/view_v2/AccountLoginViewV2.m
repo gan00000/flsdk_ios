@@ -192,7 +192,7 @@
         //账号登入
         //        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText:@"text_login".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
@@ -219,7 +219,7 @@
        
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"其他登入";
+        otherLabelTips.text = @"text_login_other".localx;
         otherLabelTips.numberOfLines = 1; //0为多行
         otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
         

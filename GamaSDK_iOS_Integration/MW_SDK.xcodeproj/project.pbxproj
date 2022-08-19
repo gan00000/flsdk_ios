@@ -49,7 +49,6 @@
 		030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */; };
 		030FAA5F28A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
 		030FAA6028A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
-		030FAA6428A1142900709536 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
 		030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6628A1FE5800709536 /* TermsViewV2.h */; };
@@ -253,6 +252,8 @@
 		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
+		03A0CD5528AF6D350092CDE0 /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
+		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -378,7 +379,6 @@
 		E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2412477D13400C9A6DC /* CoreFoundation.framework */; };
 		E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
 		E947D351221ED75F00490C35 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
-		E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
 		E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		E95BCED6237D4B87004A08B1 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -1871,45 +1871,9 @@
 			knownRegions = (
 				English,
 				Base,
-				"zh-Hant",
-				de,
-				he,
-				ar,
-				el,
-				ja,
 				en,
-				uk,
-				es_MX,
-				zh_CN,
-				nb,
-				es,
-				pt_BR,
-				da,
-				it,
-				sk,
-				pt_PT,
-				ms,
-				sv,
-				cs,
-				ko,
-				hu,
-				tr,
-				pl,
-				zh_TW,
-				en_GB,
-				vi,
-				ru,
-				fr_CA,
-				fr,
-				fi,
-				id,
-				nl,
-				th,
-				pt,
-				ro,
-				hr,
-				hi,
-				ca,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = CEE6B3681A148B1E009E77FF;
 			packageReferences = (
@@ -1947,12 +1911,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
+				03A0CD5528AF6D350092CDE0 /* SDKCoreInfo.plist in Resources */,
 				032029302869B84A00E8D5A5 /* LineSDKResource.bundle in Resources */,
 				035FA547286442A7000B2335 /* GoogleSignIn.bundle in Resources */,
-				030FAA6428A1142900709536 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
-				E949669223A0FF1600F3C11A /* SDKResources.bundle in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

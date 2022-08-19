@@ -377,20 +377,27 @@
         NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
         NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
         // zh-Hans   zh-HK   zh-TW
-        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@-%@",languageCode,countryCode] : languageCode;
+        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@_%@",languageCode,countryCode] : languageCode;
     }
     return preferredLang;
 }
 
 + (NSString *)getServerLanguage{
+    
+    NSString *languageStr = @"zh_TW";
+    
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-    if ([SUtil getSystemVersion].intValue >= 9.0) {
-        NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
-        NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
-        NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
-        // zh-Hans   zh-HK   zh-TW
-        preferredLang = [NSString stringWithFormat:@"%@_%@",languageCode,countryCode];
+    if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+        
+        languageStr = @"zh_CN";
+        
+    }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+        languageStr = @"zh_TW";
+        
+    }else if ([preferredLang hasPrefix:@"en-"]){
+        languageStr = @"en_US";
     }
+    
     return preferredLang;
 
 }

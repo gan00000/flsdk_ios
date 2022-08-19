@@ -65,7 +65,7 @@
     
     
     
-    loginTabBtn = [UIUtil initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    loginTabBtn = [UIUtil initBtnWithTitleText:@"text_login".localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
     [loginTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -76,7 +76,7 @@
     }];
     
     
-    regTabBtn = [UIUtil initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [UIUtil initBtnWithTitleText:@"text_register".localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
     
     [regTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];

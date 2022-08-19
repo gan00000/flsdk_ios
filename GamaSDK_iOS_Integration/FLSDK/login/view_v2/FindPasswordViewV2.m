@@ -166,7 +166,7 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText:@"確  認" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText:@"py_confire".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];

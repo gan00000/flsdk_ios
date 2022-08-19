@@ -98,7 +98,7 @@
         
         UILabel *tipsUILabel = [[UILabel alloc] init];
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
-        tipsUILabel.text = @"*帳號信箱將會作為您找回密碼的驗證信箱，請謹慎輸入";
+        tipsUILabel.text = @"text_reg_tips".localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
 //        tipsUILabel.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
         tipsUILabel.numberOfLines = 1; //0为多行
@@ -194,7 +194,7 @@
 //        }];
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        regAccountBtn = [UIUtil initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        regAccountBtn = [UIUtil initBtnWithTitleText:@"text_confire_reg".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
         [self addSubview:regAccountBtn];

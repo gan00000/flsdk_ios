@@ -60,6 +60,7 @@
 
 -(BOOL) isVersion2;
 
+-(BOOL) isMoreLanguage;
 - (NSString *)getSdkBundleName;
 
 @end
