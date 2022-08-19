@@ -398,7 +398,7 @@
         languageStr = @"en_US";
     }
     
-    return preferredLang;
+    return languageStr;
 
 }
 
