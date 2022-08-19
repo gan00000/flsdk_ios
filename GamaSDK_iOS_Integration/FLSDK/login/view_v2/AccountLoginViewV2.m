@@ -24,6 +24,7 @@
 #import "UIView+BlockGesture.h"
 #import "LoginButtonData.h"
 #import "TermsViewV2.h"
+#import "BasePopupView.h"
 
 @interface AccountLoginViewV2()
 
@@ -50,6 +51,7 @@
     AccountModel *currentAccountModel;
     
     AccountListView *accountListView;
+    BasePopupView *accountMaskView;
     
     UIView *deleteAccountConfireView;
     UIView *deleteBtnView;
@@ -62,6 +64,12 @@
  // Drawing code
  }
  */
+
+- (void)dealloc{
+    if (accountMaskView) {
+        [accountMaskView removeFromSuperview];
+    }
+}
 
 - (instancetype)initView
 {
@@ -303,14 +311,14 @@
         kWeakSelf
         accountSDKTextFiledView.clickAccountListItem = ^(NSInteger tag) {
             
-            if (accountListView) {
+            if (accountMaskView && accountListView) {
                 //设置点击显示、隐藏
                 
                 
-                if (accountListView.isHidden) {
+                if (accountMaskView.isHidden) {
                     
                     accountSDKTextFiledView.moreAccountBtn.selected = YES;
-                    accountListView.hidden = NO;
+                    accountMaskView.hidden = NO;
                     NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
                     [accountDataList removeAllObjects];
                     [accountDataList addObjectsFromArray:mAccountArray];
@@ -320,7 +328,7 @@
                 }else{
                     
                     accountSDKTextFiledView.moreAccountBtn.selected = NO;
-                    accountListView.hidden = YES;
+                    accountMaskView.hidden = YES;
                     
                 }
                 
@@ -359,10 +367,28 @@
 }
 
 -(void)addAccountListView{
+    
+    accountMaskView = [[BasePopupView alloc] init];
+//    accountMaskView.backgroundColor = UIColor.blueColor;
+    accountMaskView.touchesBeganCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        if (!accountMaskView.isHidden) {
+            
+            accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            accountMaskView.hidden = YES;
+        }
+        
+    };
+    UIView * topView = self.superview.superview.superview;
+    
+    [topView addSubview:accountMaskView];
+    [accountMaskView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(topView);
+    }];
+    
     accountListView = [[AccountListView alloc] init];
     accountListView.layer.cornerRadius = 2.5f;
     accountListView.layer.masksToBounds = YES;
-    [self addSubview:accountListView];
+    [accountMaskView addSubview:accountListView];
     [accountListView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
         make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
@@ -393,7 +419,7 @@
                 currentAccountModel = resetAm;
                 [AccountLoginViewV2 makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
                 accountSDKTextFiledView.moreAccountBtn.selected = NO;
-                accountListView.hidden = YES;
+                accountMaskView.hidden = YES;
                 
                 if (deleteBtnView) {
                     deleteBtnView.hidden = YES;
@@ -404,6 +430,7 @@
             currentAccountModel = aModel;
             [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
             accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            accountMaskView.hidden = YES;
             
         }
         
