@@ -246,11 +246,11 @@ static dispatch_once_t onceToken;
     if ([self isMoreLanguage]) {//是否使用多语言
         
         NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
             
             languageStr = @"zh-Hans";
             
-        }else if ([preferredLang hasPrefix:@"zh-Hant"]){
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
             languageStr = @"zh-Hant";
         }else if ([preferredLang hasPrefix:@"en"]){
             languageStr = @"en";
