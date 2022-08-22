@@ -385,17 +385,19 @@
 + (NSString *)getServerLanguage{
     
     NSString *languageStr = @"zh_TW";
-    
-    NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-    if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+    if ([SDKRES isMoreLanguage]) {//多语言版本才根据下列情况取值，非多语言版本默认繁体
         
-        languageStr = @"zh_CN";
-        
-    }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-        languageStr = @"zh_TW";
-        
-    }else if ([preferredLang hasPrefix:@"en-"]){
-        languageStr = @"en_US";
+        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+            
+            languageStr = @"zh_CN";
+            
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+            languageStr = @"zh_TW";
+            
+        }else if ([preferredLang hasPrefix:@"en"]){
+            languageStr = @"en_US";
+        }
     }
     
     return languageStr;
