@@ -72,6 +72,7 @@
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
+        make.centerX.mas_equalTo(self.mas_leading).mas_offset(VW(100+16));
 //        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
     }];
     
@@ -83,8 +84,9 @@
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
-        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
+//        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
         make.trailing.mas_equalTo(tabView);
+        make.centerX.mas_equalTo(self.mas_trailing).mas_offset(-VW(100+16));
 
     }];
     
@@ -93,8 +95,8 @@
     [tabView addSubview:loginBottomLine];
     [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.width.mas_equalTo(loginTabBtn);
-        make.centerX.mas_equalTo(loginTabBtn);
+        make.leading.trailing.mas_equalTo(loginTabBtn);
+//        make.centerX.mas_equalTo(loginTabBtn);
         make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
@@ -106,8 +108,8 @@
     [tabView addSubview:regBottomLine];
     [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.width.mas_equalTo(regTabBtn);
-        make.centerX.mas_equalTo(regTabBtn);
+        make.leading.trailing.mas_equalTo(regTabBtn);
+//        make.centerX.mas_equalTo(regTabBtn);
         make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
