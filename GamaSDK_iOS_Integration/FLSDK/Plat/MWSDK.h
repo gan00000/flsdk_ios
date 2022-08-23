@@ -139,14 +139,6 @@ completionHandler:(SDKPayBlock) handler;
 
 - (void)openCs;
 
-/**
- webView界面：打开如系统公告等；
- 
- @param webParams web参数集合
- GAMA_PRM_WEB_URL      打开的URL
- */
-//- (void)openWebPage:(NSDictionary *)webParams;
-
 
 /// 事件追踪
 /// @param name 事件名称
