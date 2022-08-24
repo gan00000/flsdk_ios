@@ -330,8 +330,8 @@
         //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
         @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
         
-        @"spy_platForm"       :   GetConfigString(@"spy_platForm")? :@"",
-        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
+        @"platform"       :   GetConfigString(@"channel_platform")? :@"ios",
+//        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
         
     };
     
