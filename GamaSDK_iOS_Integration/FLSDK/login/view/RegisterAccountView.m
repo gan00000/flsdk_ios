@@ -253,7 +253,7 @@
 //            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
             
 //            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
-            
+            [self endEditing:YES];
             if (![SdkUtil validUserName:accountName]) {
                 
                 return;
@@ -262,7 +262,7 @@
             if (![SdkUtil validPwd:pwd]) {
                 return;
             }
-          
+            
             [LoginHelper accountRegister:self.delegate view:self areaCode:@"" name:accountName password:pwd phoneNum:@"" vfCode:@""];
             
         }

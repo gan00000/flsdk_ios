@@ -476,6 +476,7 @@
             
         case guestLoginActTag:
         {
+            [self endEditing:YES];
             if (![self checkAgreeTerm]) {
                 return;
             }
