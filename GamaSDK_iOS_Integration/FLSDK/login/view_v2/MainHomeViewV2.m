@@ -317,6 +317,8 @@
     }];
     
         NSString *xtext = GetString(@"text_ui_term_port_read2");
+    NSString *temptext = GetString(@"sdk_terms_title");
+    
         UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
@@ -326,7 +328,7 @@
          NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
          };
          NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
+        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
          //赋值
         rememberTermsLable.attributedText = attribtStr;
         
