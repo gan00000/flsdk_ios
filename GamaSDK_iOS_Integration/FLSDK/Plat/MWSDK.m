@@ -105,18 +105,21 @@
 
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    
+    self.loginCompletionHandler = cmopleteHandler;
+    if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
         
-        self.loginCompletionHandler = cmopleteHandler;
-        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-            
-            [self showNoticeView];
-            
-        }else{
-            [self sdkLoginWithHandlerForInner];
-        }
+        [self showNoticeView];
         
-    });
+    }else{
+        [self sdkLoginWithHandlerForInner];
+    }
     
 }
 
@@ -147,20 +150,16 @@
 
 -(void)showNoticeView
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-       
-        NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter:^{
-            
-            [self sdkLoginWithHandlerForInner];
-        }];
-        UIView *superView = appTopViewController.view;
-        [superView addSubview:mNoticeViewV2];
+    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter:^{
         
-        [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(superView);
-        }];
-        
-    });
+        [self sdkLoginWithHandlerForInner];
+    }];
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mNoticeViewV2];
+    
+    [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
     
 }
 
@@ -213,70 +212,68 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
     }
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    
+    SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
+    SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
+    
+    if ([StringUtil isEmpty:productId]) {
+        [AlertUtil showAlertWithMessage:@"productId must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty:roleId]) {
+        [AlertUtil showAlertWithMessage:@"roleId must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty:serverCode]) {
+        [AlertUtil showAlertWithMessage:@"serverCode must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty:cpOrderId]) {
+        [AlertUtil showAlertWithMessage:@"cpOrderId must be not empty"];
+        return;
+    }
+    
+    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
+    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
+    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
+    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
+    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
+    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+    
+    self.payHandler = handler;
+    
+    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
+    AccountModel *accountModel = sLoginResponse.data;
+    
+    if (!accountModel || !accountModel.userId) {
+        [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
+        return;
+    }
+    
+    [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
         
-        
-        SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
-        SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
-        
-        if ([StringUtil isEmpty:productId]) {
-            [AlertUtil showAlertWithMessage:@"productId must be not empty"];
-            return;
-        }
-        if ([StringUtil isEmpty:roleId]) {
-            [AlertUtil showAlertWithMessage:@"roleId must be not empty"];
-            return;
-        }
-        if ([StringUtil isEmpty:serverCode]) {
-            [AlertUtil showAlertWithMessage:@"serverCode must be not empty"];
-            return;
-        }
-        if ([StringUtil isEmpty:cpOrderId]) {
-            [AlertUtil showAlertWithMessage:@"cpOrderId must be not empty"];
-            return;
-        }
-        
-        SDK_DATA.gameUserModel.roleID = roleId ? : @"";
-        SDK_DATA.gameUserModel.roleName = roleName ? : @"";
-        SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
-        SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
-        SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
-        SDK_DATA.gameUserModel.serverName = serverName ? : @"";
-        
-        self.payHandler = handler;
-        
-        LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
-        AccountModel *accountModel = sLoginResponse.data;
-        
-        if (!accountModel || !accountModel.userId) {
-            [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
-            return;
-        }
-        
-        [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
-            
-            if (self.payHandler) {
-                if (success) {
-                   
-                    BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
-                    if (!havePay) {
-                        [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
-                    }
-                    [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
-                    
-                    PayData *mPayData = [[PayData alloc] init];
-                    self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
-                    
-                    
-                }else{
-                    self.payHandler(SDK_PAY_STATUS_FAIL, nil);
+        if (self.payHandler) {
+            if (success) {
+               
+                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                if (!havePay) {
+                    [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
                 }
+                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                
+                PayData *mPayData = [[PayData alloc] init];
+                self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
+                
+                
+            }else{
+                self.payHandler(SDK_PAY_STATUS_FAIL, nil);
             }
-            
-        }];
+        }
         
-    });
+    }];
     
 }
 
@@ -286,79 +283,94 @@
 
 - (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        [AdLogger logWithEventName:name parameters:eventValues];
-    });
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    [AdLogger logWithEventName:name parameters:eventValues];
 }
 
 
 - (void)requestStoreReview
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        if (@available(iOS 10.3, *)) {
-            [SKStoreReviewController requestReview];
-        } else {
-            // Fallback on earlier versions
-        }
-    });
     
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 - (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    
+    [[FBDelegate share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         
-        [[FBDelegate share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-            
-            if (shareBlock) {
-                shareBlock(YES,dic);
-            }
-        } failBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-            if (shareBlock) {
-                shareBlock(NO,nil);
-            }
-        }];
-        
-    });
+        if (shareBlock) {
+            shareBlock(YES,dic);
+        }
+    } failBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        if (shareBlock) {
+            shareBlock(NO,nil);
+        }
+    }];
 }
 
 -(void)showBindPhoneViewWithBlock:(MWBlock) mBlock
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        
-        if (!is_Version2) {
-            [SdkUtil toastMsg: @"当前版本不支持该功能"];
-            return;
-        }
-        BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
-        mBindPhoneViewV2.mMWBlock = mBlock;
-        UIView *superView = appTopViewController.view;
-        [superView addSubview:mBindPhoneViewV2];
-        
-        [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(superView);
-        }];
-        
-    });
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    if (!is_Version2) {
+        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        return;
+    }
+    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    mBindPhoneViewV2.mMWBlock = mBlock;
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mBindPhoneViewV2];
+    
+    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
     
 }
 
 - (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        if (!is_Version2) {
-            [SdkUtil toastMsg: @"当前版本不支持该功能"];
-            return;
-        }
-        BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
-        mBindAccountViewV2.mMWBlock = mBlock;
-        UIView *superView = appTopViewController.view;
-        [superView addSubview:mBindAccountViewV2];
-        
-        [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(superView);
-        }];
-    });
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    
+    if (!is_Version2) {
+        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        return;
+    }
+    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
+    mBindAccountViewV2.mMWBlock = mBlock;
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:mBindAccountViewV2];
+    
+    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
     
 }
 
@@ -515,25 +527,28 @@
 
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
 {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        
-        if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https:itunes.apple.com/app/line/id443904275"]];
-            return;
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https:itunes.apple.com/app/line/id443904275"]];
+        return;
+    }
+    
+    NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lineUrl]];
+    if (result) {
+        if (bMWBlock) {
+            bMWBlock(YES, @"Scheme share succeed");
         }
-        
-        NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-        BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lineUrl]];
-        if (result) {
-            if (bMWBlock) {
-                bMWBlock(YES, @"Scheme share succeed");
-            }
-        } else {
-            if (bMWBlock) {
-                bMWBlock(NO,nil);
-            }
+    } else {
+        if (bMWBlock) {
+            bMWBlock(NO,nil);
         }
-    });
+    }
     
 }
 
