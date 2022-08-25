@@ -5,14 +5,14 @@
 "guest_login_btn"     ="Visitor Login";
 "tips_have_account"     ="Already have an account？";
 
-"text_register"     ="Registration";
-"text_login_other"     ="Other ways";
+"text_register"     ="Sign up";
+"text_login_other"     ="Other";
 "text_reg_tips"     ="*The account email will be used as your verification email to retrieve your password, please fill in carefully";
 "text_get_vfcode"     ="Send code";
 
 "py_register_account_hit"     ="Enter your usual email address";
 "py_register_password_hit"     ="Enter 6-20 characters";
-"py_msg_vfcode_hint"     ="Enter the verification code";
+"py_msg_vfcode_hint"     ="Enter the code";
 "text_input_new_pwd"     ="Enter a new password";
 "text_input_new_pwd_confire"     ="Confirm new password";
 "text_update_account_tips"     ="It is recommended to upgrade the account to improve account security";
@@ -57,8 +57,8 @@
 
 "py_login_save_account"      ="Remember account";
 "py_findpwd"      ="Forgot?";
-"py_register_account"      ="Registration";
-"py_register_account_phone"      ="Enter your cell phone number";
+"py_register_account"      ="Sign up";
+"py_register_account_phone"      ="Enter your phone number";
 
 "py_login_page_change_pwd"      ="Change password";
 
@@ -81,7 +81,7 @@
 "py_confire"      ="Confirmation";
 "gama_toast_msg_app_not_install"      ="Since you do not have %s installed, please install the app first and then share";
 
-"py_register_success"      ="Register successfully";
+"py_register_success"      ="successful";
 
 "py_login_mac_tips"      ="You are logged in %1$s the account number and password are as follows:\n account: %2$s password: %3$s";
 "py_login_mac_saveimage_tips"      ="Your account password has been saved to the album";
@@ -105,7 +105,7 @@
 "text_agree_read_tips"     ="Read and agree";
 "text_title_notice"     ="Announcement";
 "text_area_code"     ="Area code";
-"text_please_input_phone"      ="Enter your cell phone number";
+"text_please_input_phone"      ="Enter your phone number";
 "text_phone_bind"      ="Phone Binding";
 "text_has_phone_bind_tips"      ="You have successfully bound, this is your current bound cell phone number";
 "text_select_phone_area_title"      ="Please select the area code of the number";
