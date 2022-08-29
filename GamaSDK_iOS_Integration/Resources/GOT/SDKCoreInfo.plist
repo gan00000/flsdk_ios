@@ -15,7 +15,7 @@
 	<key>af_dev_key</key>
 	<string>QtrxWJpdhQVov9F8hwKD3o</string>
 	<key>sdk_url_cdn</key>
-	<string>https://res-static.meowplayer.com/</string>
+	<string>https://cdn-download.meowplayer.com/</string>
 	<key>terms_service_url</key>
 	<string>https://member.meowplayer.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>
