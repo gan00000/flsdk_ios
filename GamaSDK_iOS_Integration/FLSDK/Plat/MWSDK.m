@@ -20,6 +20,8 @@
 #import "BindPhoneViewV2.h"
 #import "BindAccountViewV2.h"
 
+#import "AdDelegate.h"
+
 #import <StoreKit/StoreKit.h>
 
 // 通知类型
@@ -260,12 +262,12 @@
                
                 BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
                 if (!havePay) {
-                    [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
+//                    [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
                 }
                 [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
                 
-                PayData *mPayData = [[PayData alloc] init];
-                self.payHandler(SDK_PAY_STATUS_SUCCESS, mPayData);
+                [AdDelegate logEventPurchaseValues:payData type:(AdType_All)];
+                self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 
             }else{
