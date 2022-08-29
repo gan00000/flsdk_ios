@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *orderId;
 @property (nonatomic, copy) NSString *paymentId;
+@property (nonatomic, assign) CGFloat amount;
 
 @end
 
