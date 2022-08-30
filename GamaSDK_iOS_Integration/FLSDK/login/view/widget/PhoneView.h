@@ -7,13 +7,13 @@
 //
 
 #import "SDKBaseView.h"
-#import "GamaPhoneModel.h"
+#import "PhoneInfoModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PhoneView : SDKBaseView <GamaPhoneModelDelegate>
+@interface PhoneView : SDKBaseView <PhoneInfoModelDelegate>
 
-@property (nonatomic, strong) GamaPhoneModel *phoneModel;
+@property (nonatomic, strong) PhoneInfoModel *phoneModel;
 @property (nonatomic) UILabel *aracCodeUILabel;
 
 @property (nonatomic) UITextField *mUITextField;

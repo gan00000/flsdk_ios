@@ -68,4 +68,7 @@
 //+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
 
 +(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel appleBtn:(BOOL) appleBtn guestBtn:(BOOL) guestBtn;
+
++ (void)savePhoneAreaInfo:(NSArray *)numberAry;
++ (NSArray *)fetchPhoneAreaInfo;
 @end

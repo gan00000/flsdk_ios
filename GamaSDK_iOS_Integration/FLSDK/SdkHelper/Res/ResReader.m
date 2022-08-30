@@ -9,7 +9,7 @@
 
 @interface ResReader ()
 @property (nonatomic, copy) NSString *m_stringsName;
-@property (nonatomic, retain) NSBundle *m_stringsBundle;
+@property (nonatomic, strong) NSBundle *m_stringsBundle;
 @end
 
 @implementation ResReader
@@ -42,6 +42,8 @@ static dispatch_once_t onceToken;
     if (self)
     {
         SDK_LOG(@"reader init");
+//        self.areaCodeDic = [NSMutableDictionary dictionary];
+        self.areaInfoArray = [NSMutableArray array];
         [self copyConfigeFileToDocument];
         
 //        [self readCoreConfInfo];
@@ -70,10 +72,34 @@ static dispatch_once_t onceToken;
 //    NSFileManager *fileManager = [NSFileManager defaultManager];
     
     //读取bundle
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
+        
+        NSString *areaInfo_path=[sdkBundle pathForResource:@"areaInfo" ofType:@"json"];
+        if (areaInfo_path) {
+            
+            // 将文件数据化
+            NSData *resultData = [[NSData alloc] initWithContentsOfFile:areaInfo_path];
+            // 对数据进行JSON格式化并返回字典形式
+            NSArray *areaInfo_arry = [NSJSONSerialization JSONObjectWithData:resultData options:kNilOptions error:nil];
+            
+            if (areaInfo_arry) {
+                [self.areaInfoArray addObjectsFromArray:areaInfo_arry];
+                [areaInfo_arry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    
+                    if (obj) {
+                        [self.areaCodeDic addEntriesFromDictionary:obj];
+                    }
+                    
+                }];
+            }
+            
+//            NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableLeaves error:&errors];
+            
+        }
+       
     }
     
     NSString *infoPlistPath=[sdkBundle pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
@@ -112,12 +138,19 @@ static dispatch_once_t onceToken;
     return _coreConfDic;
 }
 
+-(NSDictionary *)mainBundleConfDic{
+    if (!_mainBundleConfDic) {
+        _mainBundleConfDic = [self readMainBundleCoreConfInfo];
+    }
+    return _mainBundleConfDic;
+}
+
 #pragma mark -
 //从文件中读取配置信息
 -(NSDictionary *)readCoreConfInfo
 {
     //1.先读取sdk bundle里面
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -141,12 +174,38 @@ static dispatch_once_t onceToken;
     return infoDic;
 }
 
+-(NSDictionary *)readMainBundleCoreConfInfo
+{
+    //读取自定义的 plist文件的写法
+    NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
+    
+    if (infoPlistPath) {
+        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
+        if (infoDic) {
+            return infoDic;
+        }
+    }
+    
+    // NSLog(@"dictionary = %@",dictionary);
+    //读取系统产生的 plist文件的写法
+    // NSDictionary *plistDic = [[NSBundle mainBundle] infoDictionary];
+    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    
+    return nil;
+}
+
 
 #pragma mark - 获取某个key对应的确定的配置值
 -(NSString *)getStringForKey:(NSString *)key
 {
+    NSString *strconfig = [self.mainBundleConfDic objectForKey:key];
+    if (strconfig && ![strconfig isEqualToString:@""]) {
+        return strconfig;
+    }
     
-    NSString *strconfig = [self.coreConfDic objectForKey:key];
+    strconfig = [self.coreConfDic objectForKey:key];
     if (strconfig && ![strconfig isEqualToString:@""]) {
         return strconfig;
     }
@@ -182,20 +241,29 @@ static dispatch_once_t onceToken;
 //#pragma mark - 初始化 Bundle
 - (void)setBundleInfo {
 
-//    NSString *GamaResourceBundleName = _coreConfDic[GAMA_GAME_RESOURCE_BUNDLE_NAME];
-//    NSString *languageStr = _coreConfDic[GAMA_GAME_LANGUAGE];//不通过配置文件读取对应的本地化文件
-    // song:20170406 通过手机设置的语言显示对应地区的本地化文件
-    NSString *languageStr = @"zh-Hant";//[[NSString alloc] init];
-//    if (_coreConfDic[GAMA_GMAE_mLanguge]) {
-//        languageStr  = [[GamaFunction getPreferredLanguage] containsString:@"zh-"]? @"zh-Hant": [GamaFunction getPreferredLanguage];
-//    }else{
-//        languageStr = _coreConfDic[GAMA_GAME_LANGUAGE];//不通过配置文件读取对应的本地化文件
-//    }
-
+    NSString *languageStr = @"zh-Hant";
+    
+    if ([self isMoreLanguage]) {//是否使用多语言
+        
+        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
+            
+            languageStr = @"zh-Hans";
+            
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+            languageStr = @"zh-Hant";
+        }else if ([preferredLang hasPrefix:@"en"]){
+            languageStr = @"en";
+        }else{
+            languageStr = @"zh-Hant";
+        }
+    }
+    
+ 
     self.m_stringsBundle = [NSBundle mainBundle];
-    self.m_stringsName = @"";
+    self.m_stringsName = @"Localizable";
 
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:SDK_DEFAULT_BUNDLE_NAME withExtension:@"bundle"];
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
 
     if (bundleURL) {
 
@@ -205,7 +273,7 @@ static dispatch_once_t onceToken;
 
         if (lprojBundleURL) {
             self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
-            self.m_stringsName = @"Localizable";
+            //self.m_stringsName = @"Localizable";
         }
     }
 }
@@ -220,8 +288,15 @@ static dispatch_once_t onceToken;
 }
 -(NSString *) getGameLanguage
 {
-    return [self getStringForKey:@"gameLanguage"];
+    if ([self isMoreLanguage]) {
+        return [SUtil getServerLanguage];
+    }
+    if ([StringUtil isNotEmpty:[self getStringForKey:@"gameLanguage"]]) {
+        return [self getStringForKey:@"gameLanguage"];
+    }
+    return @"zh_TW";
 }
+
 -(NSString *) getLoginUrl
 {
     return [self getStringForKey:@"sdk_url_login"];
@@ -255,6 +330,26 @@ static dispatch_once_t onceToken;
 -(BOOL) isAdDebug
 {
     return [self getBoolForKey:@"sdk_ad_bug"];
+}
+
+-(BOOL) isVersion2
+{
+    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"];
+}
+
+-(BOOL) isMoreLanguage
+{
+    return [self getBoolForKey:@"sdk_more_language"];
+}
+
+
+- (NSString *)getSdkBundleName
+{
+    NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
+    if (bundleName && ![bundleName isEqualToString:@""]) {
+        return bundleName;
+    }
+    return SDK_BUNDLE_NAME_v1;
 }
 
 -(NSString *) getFacebookAppId

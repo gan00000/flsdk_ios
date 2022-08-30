@@ -23,6 +23,7 @@
 #import "StringUtil.h"
 #import "DimeUtil.h"
 #import "SdkUtil.h"
+#import "NSString+Local.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -41,7 +42,7 @@
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
 #define ContentViewBgColor                    @"#f4f4f5"
-
+#define ColorHex(color)  [UIColor colorWithHexString:color]
 
 #define SDK_DATA                           [CCSDKDATA sharedSdkData]
 
@@ -111,6 +112,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
 
+#define TAG_CLOSE    90
+
 #pragma mark - login type登录方式
 
 #define LOGIN_TYPE_SELF           (@"mg")
@@ -133,6 +136,9 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_delete_account     (@"api/cancel/account")
 #define api_order_create     (@"api/order/create")
 #define api_payment         (@"api/apple/payment")
+
+#define api_sendMobileVcode  (@"api/vcode/sendMobileVcode")
+#define api_bind_phone  (@"api/mobile/bind")
 
 #endif /* CCSkyHourHeader_h */
 

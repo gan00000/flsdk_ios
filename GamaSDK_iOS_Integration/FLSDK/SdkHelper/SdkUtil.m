@@ -31,6 +31,8 @@
 #define titleMaxFontSize    17
 #define titleMinFontSize    9
 
+#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
+
 @implementation SdkUtil
 
 
@@ -154,7 +156,7 @@
 {
     NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSPredicate *phonePred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    return ![phonePred evaluateWithObject:phone];
+    return [phonePred evaluateWithObject:triStr];
 }
 
 #pragma mark - Toast
@@ -506,4 +508,17 @@
     }
     return loginBtnDatas;
 }
+
++ (void)savePhoneAreaInfo:(NSArray *)numberAry
+{
+    [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (NSArray *)fetchPhoneAreaInfo
+{
+    NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
+    return tempAry;
+}
+
 @end

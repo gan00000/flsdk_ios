@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>61788863107-ibqppv1m5dc6p9kce4g24umk2fr8sh84.apps.googleusercontent.com</string>
+	<string>166447905232-0430a669fr754far2h70q08nmsku9p69.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.61788863107-ibqppv1m5dc6p9kce4g24umk2fr8sh84</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>61788863107-kqg3srg1tcelrta7rac0d630gd44krkc.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.166447905232-0430a669fr754far2h70q08nmsku9p69</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD-3nyjFbrT_NAO-tLJAuH-7nHez7b8Do8</string>
+	<string>AIzaSyBAHdYi9HraEl3Elt7D9iLaDWNIeT2q3Oo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>61788863107</string>
+	<string>166447905232</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.fzzh.tw</string>
+	<string>com.wanye.fszhl</string>
 	<key>PROJECT_ID</key>
-	<string>meowplayer-5541c</string>
+	<string>first-game-0506</string>
 	<key>STORAGE_BUCKET</key>
-	<string>meowplayer-5541c.appspot.com</string>
+	<string>first-game-0506.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:61788863107:ios:566410590ddb7002c5f9b6</string>
+	<string>1:166447905232:ios:874d86a048c5c0d4b1e1d5</string>
 </dict>
 </plist>

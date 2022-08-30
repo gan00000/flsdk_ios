@@ -9,22 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class GamaPhoneModel;
-@protocol GamaPhoneModelDelegate <NSObject>
+@class PhoneInfoModel;
+@protocol PhoneInfoModelDelegate <NSObject>
 @optional
 - (void)fire;
 @required
 - (void)showSelectedAreaCodeValue:(NSString *)selectedAreaCodeValue;
 @end
 
-@interface GamaPhoneModel : NSObject
+@interface PhoneInfoModel : NSObject
+
 @property (nonatomic, strong) NSString *selectedAreaCodeKey;
 @property (nonatomic, strong) NSString *selectedAreaCodeValue;
 @property (nonatomic, copy) NSString *selectedRegularExpression;
-@property (nonatomic, assign) id<GamaPhoneModelDelegate> delegate;
+@property (nonatomic, assign) id<PhoneInfoModelDelegate> delegate;
 
-- (void)gamaShowAreaCodesActionSheetFromView:(UIButton *)view;
-- (void)requestSendSecurityCodeToMobilePhoneNumber:(NSString *)phoneNumber;
-+ (void)requestPhoneNumberAreaCodes;
+- (void)showAreaCodesActionSheetFromView:(UIButton *)view;
+//- (void)requestSendSecurityCodeToMobilePhoneNumber:(NSString *)phoneNumber;
+//+ (void)requestPhoneNumberAreaCodes;
 
 @end

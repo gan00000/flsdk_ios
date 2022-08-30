@@ -24,6 +24,10 @@
     self.isBind = NO;
     self.isBindPhone = NO;
     self.loginType = @"";
+    
+    self.sign = @"";
+    self.telephone = @"";
+    self.loginId = @"";
 }
 
 - (instancetype)init
@@ -54,6 +58,11 @@
     [aCoder encodeBool:self.isBind forKey:@"accountIsBind"];
     
     [aCoder encodeObject:self.loginType forKey:@"loginType"];
+    
+    [aCoder encodeObject:self.sign forKey:@"sign"];
+    [aCoder encodeObject:self.telephone forKey:@"telephone"];
+    [aCoder encodeObject:self.loginId forKey:@"loginId"];
+    [aCoder encodeBool:self.isBindPhone forKey:@"isBindPhone"];
 
 }
 
@@ -76,6 +85,11 @@
         self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"] ? : NO;
         
         self.loginType = [aDecoder decodeObjectForKey:@"loginType"] ? : @"";
+        
+        self.sign = [aDecoder decodeObjectForKey:@"sign"] ? : @"";
+        self.telephone = [aDecoder decodeObjectForKey:@"telephone"] ? : @"";
+        self.loginId = [aDecoder decodeObjectForKey:@"loginId"] ? : @"";
+        self.isBindPhone = [aDecoder decodeBoolForKey:@"isBindPhone"] ? : NO;
   
     }
     

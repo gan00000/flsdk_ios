@@ -10,6 +10,7 @@
 #import "LoginResponse.h"
 #import "ConfigModel.h"
 #import "GameUserModel.h"
+#import "UrlMode.h"
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -19,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)LoginResponse *mLoginResponse;
 @property (nonatomic, strong)ConfigModel *mConfigModel;
 @property (nonatomic, strong)GameUserModel * gameUserModel;
+@property (nonatomic,strong) UrlMode *urls;
 
 @property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 

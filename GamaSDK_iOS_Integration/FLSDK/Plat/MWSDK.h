@@ -1,17 +1,9 @@
-//
-//  GamaSDK.h
-//
-//
-//  Created by sunn on 2017/2/24.
-//
-//
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LoginData.h"
 #import "PayData.h"
 
-#define FL_SDK_VERSION @"1.0.1"
+#define FL_SDK_VERSION @"1.0.3"
 
 // 追踪事件名称
 #define AD_EVENT_APP_OPEN  @"APP_OPEN"
@@ -43,6 +35,9 @@ typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
 typedef void (^SDKLogoutBlock)(NSInteger logout);
 typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
 typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
+
+typedef void (^MWBlock)(BOOL success, id _Nullable result);
+
 //typedef void (^PayPuchessing)(NSDictionary *result);
 
 // 充值类型
@@ -72,7 +67,7 @@ typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
 /**
  单例
  
- @return Satrpy 单例对象
+ @return MWSDK 单例对象
  */
 + (instancetype)share;
 
@@ -137,21 +132,12 @@ roleVipLevel:(NSString *)roleVipLevel
 completionHandler:(SDKPayBlock) handler;
 
 /**
- 社交分享
- @param shareParams 分享参数集合
- GAMA_PRM_SHARE_CONTENT_URL              分享应用链接
+ line分享
+ @param content 分享的内容和链接
  */
-- (void)share:(NSDictionary *)shareParams __deprecated_msg("Method deprecated. Use `+ (void)gama_shareWithKind:param:success:failure:");
+- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
 - (void)openCs;
-
-/**
- webView界面：打开如系统公告等；
- 
- @param webParams web参数集合
- GAMA_PRM_WEB_URL      打开的URL
- */
-//- (void)openWebPage:(NSDictionary *)webParams;
 
 
 /// 事件追踪
@@ -175,6 +161,18 @@ completionHandler:(SDKPayBlock) handler;
 /// @param url  分享的url
 /// @param shareBlock 分享的回调
 -(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock;
+
+-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
+
+-(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
+
+
+
+- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
+
+- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
+
+- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
 
 @end
 

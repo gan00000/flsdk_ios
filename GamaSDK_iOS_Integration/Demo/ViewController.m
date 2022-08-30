@@ -6,7 +6,6 @@
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
 #import "MWSDK.h"
-#import "GamaWebViewController.h"
 
 #import "AlertUtil.h"
 
@@ -73,9 +72,9 @@
                           @"充值com.fzzh.tw.2usd",
                           @"事件追踪",
                           @"fb分享url",
-//                          @"打开公告",
-//                          @"事件上报",
-                     
+                          @"显示手机绑定页面",
+                          @"显示账号升级页面",
+                          @"line分享",
                           ];
     
     /*********************************************
@@ -129,6 +128,10 @@
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
+                BOOL isBind = loginData.isBind; //是否绑定账号
+                BOOL isBindPhone = loginData.isBindPhone;//是否绑定手机
+                NSString *telephone = loginData.telephone;//绑定的手机号码
+                
                 //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
@@ -158,7 +161,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.fzzh.tw.1usd";
+            NSString *aProductID = @"com.wanye.fszhl.lb4";
             [self pay:aProductID];
         }
             break;
@@ -190,13 +193,25 @@
         }
             break;
         case 6:{
-//            [[FLSDK share] openWebPage:nil];
+            [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+            }];
         }
             break;
         case 7:{
+            [[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+            }];
+            
         }
             break;
-
+        case 8:{
+            [[MWSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
+                NSLog(@"shareLineWithContent finish");
+            }];
+            
+        }
+            break;
   
 
        

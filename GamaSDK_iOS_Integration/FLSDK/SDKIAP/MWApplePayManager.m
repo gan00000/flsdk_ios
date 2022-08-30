@@ -16,7 +16,11 @@
 @interface MWApplePayManager ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
 @property (nonatomic, copy) NSString *orderId;
-//@property (nonatomic, copy) NSString *roleId;
+//@property (nonatomic, copy) NSString *b_transactionId;
+//@property (nonatomic, copy) NSString *b_productId;
+//@property (nonatomic, copy) NSString *b_cpOrderId;
+
+@property (nonatomic, strong) PayData *mPayData;
 @property (nonatomic)PayStatusBlock payStatusBlock;
 
 @end
@@ -97,19 +101,26 @@
 -(void)startPayWithProductId:(NSString *)productId cpOrderId:(NSString *)cpOrderId extra:(NSString *)extra gameInfo:(GameUserModel*)gameUserModel accountModel:(AccountModel*) accountModel payStatusBlock:(PayStatusBlock)payStatusBlock
 {
     self.payStatusBlock = payStatusBlock;
+  
     [self checkOrderStatus];//检查本地订单状态
     
     self.orderId = @"";
+    self.mPayData = [[PayData alloc] init];
+    
     if (!cpOrderId || !productId) {
         [self finishPayWithStatus:NO msg:@"error:cpOrderId/productId empty"];
         return;
     }
+    self.mPayData.productId = productId;
+    self.mPayData.cpOrderId = cpOrderId;
+
     
     [SdkUtil showLoadingAtView:nil];
     [SDKRequest createOrderWithproductId:productId cpOrderId:cpOrderId extra:extra gameInfo:gameUserModel accountModel:accountModel otherParamsDic:nil successBlock:^(id responseData) {
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
         self.orderId = cor.orderId;
+        self.mPayData.amount = cor.amount;
 //        self.roleId = gameUserModel.roleID;
         
         [self payWithOrderId:self.orderId productId:productId];
@@ -300,6 +311,7 @@
     [SDKRequest paymentWithTransactionId:transactionId receiptData:receiptString orderId:parameterStr gameInfo:SDK_DATA.gameUserModel accountModel:SDK_DATA.mLoginResponse.data otherParamsDic:nil successBlock:^(id responseData) {
         [self completeTransaction:transaction];// 结束订单
         [self removeLocReceiptDataByTranId:transactionId];
+        self.mPayData.transactionId = transactionId;
         [self finishPayWithStatus:YES msg:@""];
         
     } errorBlock:^(BJError *error) {
@@ -316,9 +328,10 @@
     
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
-        PayData *mPayData = [[PayData alloc] init];
+        self.mPayData.orderId = self.orderId;
+        
         if (self.payStatusBlock) {
-            self.payStatusBlock(status,nil);
+            self.payStatusBlock(status,self.mPayData);
         }
     }else{
         SDK_LOG(@"finishPayWithStatus fail");

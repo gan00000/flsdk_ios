@@ -160,7 +160,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     if (self.mAccountModelClickHander) {
         self.mAccountModelClickHander(NO,mAccountModel, self.accountDataList);
     }
-    self.hidden = YES;
+//    self.hidden = YES;
 }
 
 @end

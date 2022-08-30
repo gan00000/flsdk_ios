@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "PayData.h"
 
 typedef NS_OPTIONS(NSUInteger, AdType) {
     AdType_None        = 0,
@@ -32,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
 //+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
+
++ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type;
 
 @end
 

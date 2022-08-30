@@ -202,6 +202,7 @@
         case kGetVfCodeActTag:
         {
             SDK_LOG(@"kGetVfCodeActTag");
+            [self endEditing:YES];
             NSString *account = accountSDKTextFiledView.inputUITextField.text;
             if (![SdkUtil validUserName:account]) {
                 return;

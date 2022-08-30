@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         
-        self.phoneModel = [[GamaPhoneModel alloc] init];
+        self.phoneModel = [[PhoneInfoModel alloc] init];
         self.phoneModel.delegate = self;
         
         [self addContentView];
@@ -175,7 +175,7 @@
 
 #pragma mark -- 电话号码
 - (void)pushAreaTable:(UIButton *)sender{
-    [self.phoneModel gamaShowAreaCodesActionSheetFromView:sender];
+    [self.phoneModel showAreaCodesActionSheetFromView:sender];
 }
 
 -(void)showSelectedAreaCodeValue:(NSString *)selectedAreaCodeValue{

@@ -15,10 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *lastLoginTime;
 
 @property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
-@property (nonatomic, assign) BOOL isBindPhone;//是否绑定手机号码
+
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
-@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *token; //用于内部接口访问
+
+@property (nonatomic, copy) NSString *sign; //用于cp验证账号
 
 @property (nonatomic, copy) NSString *loginType;
 @property (nonatomic, copy) NSString *thirdId;
@@ -28,7 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *account;
 @property (nonatomic, copy) NSString *password;
 
-
+@property (nonatomic, assign) BOOL isBindPhone;//是否绑定手机号码
+@property (nonatomic, copy) NSString *telephone;//用户绑定的手机
+@property (nonatomic, copy) NSString *loginId;//用户账号
 
 @end
 

@@ -30,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL showLogo;
 
+@property (nonatomic, assign) BOOL showForgetPwd;
+@property (nonatomic, assign) BOOL showNotice;
+
 @end
 
 NS_ASSUME_NONNULL_END

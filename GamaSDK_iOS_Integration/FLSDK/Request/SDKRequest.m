@@ -12,6 +12,28 @@
 
 @implementation SDKRequest
 
+//手机区号获取
++(void)getAreaInfoWithSuccessBlock:(BJServiceSuccessBlock)successBlock
+                                errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getCdnUrl]];
+    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/areaCode/areaInfo.json?t=%@", [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+        
+        NSArray *responseArray = responseData;
+        SDK_LOG(@"sdk areaCode info:%@",responseArray);
+        if (responseArray) {
+            [SdkUtil savePhoneAreaInfo:responseArray];
+        }
+        
+    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
+
 //https://www.meowplayer.com/sdk/config/jjcs/v1/version.json
 #pragma mark - 获取登录配置
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
@@ -24,12 +46,15 @@
         SDK_LOG(@"sdk config:%@",responseDict);
         ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];//需要分开解析
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
+        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[@"url"]];
         
 //        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
         
         ConfigResponse *mCr = [[ConfigResponse alloc] init];
         mCr.subVersion = subVersion;
         mCr.allVersion = allVersion;
+        mCr.url = urls;
+        SDK_DATA.urls = urls;
         if (mCr) {
             if (successBlock) {
                 successBlock(mCr);
@@ -217,6 +242,73 @@
     
 }
 
+#pragma mark - 游戏内获取手机验证码
++ (void)requestMobileVfCode:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                                 email:(NSString *)email
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+                                  errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    NSString *vf_acccount = phoneN;
+    if (!vf_acccount || [vf_acccount isEqualToString:@""]) {
+        vf_acccount = email;
+    }
+    
+//    NSString *timeStamp = [SUtil getTimeStamp];
+//    NSMutableString * md5str=[[NSMutableString alloc]init];
+//    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+//    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+//    [md5str appendFormat:@"%@",vf_acccount];
+//    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
+//
+//    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    
+    //字典未能设置nil
+    NSDictionary *dic = @{@"telephone":phoneN,
+                          @"areaCode":phoneArea,
+                          @"email":email,
+    };
+    
+    [params addEntriesFromDictionary:dic];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_sendMobileVcode params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
+
+#pragma mark - 游戏内绑定手机
++ (void)bindAccountPhone:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                      vCode:(NSString *)vCode
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+                                  errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    //字典不能设置nil
+    NSDictionary *dic = @{@"telephone":phoneN ? : @"",
+                          @"areaCode":phoneArea ? : @"",
+                          @"vCode":vCode ? : @"",
+    };
+    
+    [params addEntriesFromDictionary:dic];
+    [HttpServiceEngineLogin postRequestWithFunctionPath:api_bind_phone params:params successBlock:successBlock errorBlock:errorBlock];
+    
+}
+
+
+
+#pragma mark - sdk基本参数
 + (NSDictionary *)appendCommParamsDic
 {
     NSDictionary * _commDic =
@@ -231,19 +323,59 @@
         @"systemVersion"    :     [SUtil getSystemVersion]? : @"",
         @"deviceType"       :     [SUtil getDeviceType]? : @"",
         @"os"               :     @"ios", //os=ios
-        @"gameLanguage"     :     @"zh_TW",
+        @"gameLanguage"     :     GAME_LANGUAGE? : @"",
         @"osLanguage"       :     [SUtil getPreferredLanguage]? : @"",
         
         //      @"loginTimestamp"   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
         //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
         @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
         
-        @"spy_platForm"       :   GetConfigString(@"spy_platForm")? :@"",
-        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
+        @"platform"       :   @"ios",
+//        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
         
     };
     
     return _commDic;
+}
+
+#pragma mark - sdk基本参数 + 角色相关数值参数
++ (NSDictionary *)appendGameParamsDic
+{
+    
+    NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic]];
+    @try {
+        
+        AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+        GameUserModel *gameUserModel = SDK_DATA.gameUserModel;
+        
+        NSDictionary *dic = @{
+            
+            @"gameCode"         :GAME_CODE,
+            @"userId"           :accountModel.userId ? : @"",
+            @"loginAccessToken"  :accountModel.token ? : @"",
+            @"loginTimestamp"   :accountModel.timestamp ? : @"",
+//            @"thirdPlatId"      :accountModel.thirdId ? : @"",
+//            @"thirdLoginId"     :accountModel.thirdId ? : @"",
+            
+//            @"registPlatform"   :accountModel.loginType ? : @"",
+//            @"loginMode"        :accountModel.loginType ? : @"",
+            
+            @"serverCode"           :gameUserModel.serverCode ? : @"",
+            @"serverName"           :gameUserModel.serverName ? : @"",
+            @"roleId"           :gameUserModel.roleID ? : @"",
+            @"roleName"           :gameUserModel.roleName ? : @"",
+            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
+            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
+
+        };
+        
+        [wDic addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    return wDic;
+    
 }
 
 #pragma mark - 注册账号
@@ -424,7 +556,7 @@
                           errorBlock:(BJServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }

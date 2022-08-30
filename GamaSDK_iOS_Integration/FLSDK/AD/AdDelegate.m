@@ -126,6 +126,54 @@
    
 }
 
++ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type{
+    
+    @try {
+        
+        if (type & AdType_Appflyer) {
+            
+            [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
+                            AFEventParamRevenue  : @(mPayData.amount),
+                            AFEventParamCurrency : @"USD",
+                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                            AFEventParamContentId: mPayData.productId,
+                            AFEventParamOrderId: mPayData.orderId,
+                            
+            }];
+            
+        }
+        if (type & AdType_Firebase) {
+            //firebase
+            
+            [FIRAnalytics logEventWithName:kFIREventPurchase parameters:@{
+                kFIRParameterItemID : mPayData.productId,
+                //kFIRParameterPrice : @(mPayData.amount),
+                kFIRParameterValue : @(mPayData.amount),
+                kFIRParameterCurrency : @"USD",
+                kFIRParameterTransactionID : mPayData.orderId,
+                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                
+            }];
+        }
+        if (type & AdType_FB) {
+            
+             //fb
+            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD" parameters:@{
+                FBSDKAppEventParameterNameCurrency : @"USD",
+                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
+                FBSDKAppEventParameterNameContentID : mPayData.productId,
+                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+               
+            }];
+        }
+       
+        
+    } @catch (NSException *exception) {
+        //[self _presentAlertWithException:exception andDictionary:dic];
+    }
+   
+}
+
 
 
 //+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues{

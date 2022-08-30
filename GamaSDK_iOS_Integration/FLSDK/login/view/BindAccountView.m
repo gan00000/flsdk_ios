@@ -151,6 +151,7 @@
         case kOkActTag:
         {
             SDK_LOG(@"kOkActTag");
+            [self endEditing:YES];
             [self bindAccount];
         }
             

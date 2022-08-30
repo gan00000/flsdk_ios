@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDKRequest : NSObject
 
 #pragma mark - sdk配置接口
++(void)getAreaInfoWithSuccessBlock:(BJServiceSuccessBlock)successBlock
+                        errorBlock:(BJServiceErrorBlock)errorBlock;
+
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                          errorBlock:(BJServiceErrorBlock)errorBlock;
 
@@ -48,6 +51,20 @@ NS_ASSUME_NONNULL_BEGIN
                                     otherDic:(NSDictionary *)otherParamsDic
                                 successBlock:(BJServiceSuccessBlock)successBlock
                                   errorBlock:(BJServiceErrorBlock)errorBlock;
+
++ (void)requestMobileVfCode:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                                 email:(NSString *)email
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+                 errorBlock:(BJServiceErrorBlock)errorBlock;
+
++ (void)bindAccountPhone:(NSString *)phoneArea
+                                 phoneNumber:(NSString *)phoneN
+                      vCode:(NSString *)vCode
+                                    otherDic:(NSDictionary *)otherParamsDic
+                                successBlock:(BJServiceSuccessBlock)successBlock
+              errorBlock:(BJServiceErrorBlock)errorBlock;
 
 +(void)doRegisterAccountWithUserName:(NSString *)userName
                          andPassword:(NSString *)password

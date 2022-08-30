@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginViewDelegate.h"
+#import "ColorHeader.h"
 
 #define MARGIN_TOP  IS_PORTRAIT ? 180.0 : 20.0
 

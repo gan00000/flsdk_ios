@@ -22,6 +22,10 @@
 #import "MainHomeView.h"
 #import "BindAccountView.h"
 
+#import "MainHomeViewV2.h"
+#import "LoginWithRegViewV2.h"
+#import "FindPasswordViewV2.h"
+
 #import "AccountModel.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
@@ -42,9 +46,9 @@
     
     //    AccountLoginView *mAccountLoginView;
 //    SdkAutoLoginView *mAutoLoginView;
-    LoginWithRegView *mLoginWithRegView;
-    MainHomeView *mMainHomeView;
-    WelcomeBackView *mWelcomeBackView;
+    SDKBaseView *mLoginWithRegView;
+    SDKBaseView *mMainHomeView;
+    SDKBaseView *mWelcomeBackView;
     
 }
 
@@ -163,7 +167,15 @@
     
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels];
     if (accountModels && accountModels.count > 0) {
-        [self addWelcomeView];
+        
+        if (is_Version2) {
+            
+            [self addLoginWithRegView];
+            
+        }else{
+            [self addWelcomeView];
+        }
+        
     }else{
         [self addHomeView];
     }
@@ -202,8 +214,12 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
+    if (is_Version2) {
+        mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView];
+    }else{
+        mLoginWithRegView = [[LoginWithRegView alloc] initView];
+    }
     
-    mLoginWithRegView = [[LoginWithRegView alloc] initView];
     [self addSubSdkLoginView:mLoginWithRegView];
     return mLoginWithRegView;
 }
@@ -287,9 +303,16 @@
 
 -(void)addFindPasswordView
 {
-    
-    FindPasswordView *view = [[FindPasswordView alloc] initView];
-    [self addSubSdkLoginView:view];
+    if (is_Version2) {
+        
+        FindPasswordViewV2 *view = [[FindPasswordViewV2 alloc] initView];
+        [self addSubSdkLoginView:view];
+        
+    }else{
+        FindPasswordView *view = [[FindPasswordView alloc] initView];
+        [self addSubSdkLoginView:view];
+    }
+   
 }
 
 -(void)addHomeView
@@ -299,7 +322,12 @@
     for (UIView *subView in [self sdkContentView].subviews) {
         [subView removeFromSuperview];
     }
-    mMainHomeView = [[MainHomeView alloc] initView];
+    if (is_Version2) {
+        mMainHomeView = [[MainHomeViewV2 alloc] initView];
+    }else{
+        mMainHomeView = [[MainHomeView alloc] initView];
+    }
+    
     [self addSubSdkLoginView:mMainHomeView];
 }
 
@@ -335,6 +363,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+    
+    [super touchesBegan:touches withEvent:event];
 }
 
 
@@ -509,6 +539,8 @@
         [AdLogger logWithEventName:FBSDKAppEventNameCompletedRegistration parameters:nil type:AdType_FB];
         [AdLogger logWithEventName:AD_EVENT_COMPLETE_REGISTRATION_IOS parameters:nil type:AdType_FB];
         
+        [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];//注册成功也是登录成功
+        
     }else {//登录
         [AdLogger logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
     }
@@ -522,6 +554,10 @@
         loginData.isBind = rData.isBind;
         loginData.isBindPhone = rData.isBindPhone;
         loginData.loginType = thirdPlate;
+        
+        loginData.sign = rData.sign;
+        loginData.telephone = rData.telephone;
+        loginData.loginId = rData.loginId;
         
         [MWSDK share].loginCompletionHandler(loginData);
     }

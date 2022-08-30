@@ -6,12 +6,12 @@
 //  Copyright © 2018年 starpy. All rights reserved.
 //
 
-#import "GamaWebViewController.h"
+#import "MWWebViewController.h"
 #import <SafariServices/SafariServices.h>
 
 #define WK_WEBVIEW_ESTIMATED_PROGRESS @"estimatedProgress"
 
-@interface GamaWebViewController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
+@interface MWWebViewController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
 @property (nonatomic, copy) GamaWebLayoutHandler layoutHandler;
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) WKWebView *wkwebView;
@@ -23,7 +23,7 @@
 @property (nonatomic, strong)NSURLRequest *webRequest;
 @end
 
-@implementation GamaWebViewController
+@implementation MWWebViewController
 
 +(instancetype)webViewControllerPresentingWithURLRequest:(NSURLRequest *)request layoutHandler:(id)handler animation:(BOOL)animation animationStyle:(UIModalTransitionStyle)animationStyle
 {
@@ -36,7 +36,7 @@
         return nil;
     }
     SDK_LOG(@"not device_is_iPhoneX");
-    GamaWebViewController *webVC = [[GamaWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
+    MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
     webVC.webRequest = request;

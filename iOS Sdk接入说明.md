@@ -9,6 +9,10 @@
 7. [事件追踪接口](#8)
 8. [应用内评分接口](#9)
 9. [fb分享接口](#10)
+10. [line分享接口](#11)
+10. [获取手机验证码接口](#12)
+11. [请求绑定手机接口](#13)
+12. [请求升级账号接口](#14)
 
 ----------------
 
@@ -74,6 +78,7 @@
 		<string>fb-messenger-api</string>
 		<string>fbshareextension</string>
 		<string>lineauth2</string>
+		<string>line</string>
 	</array>
 	line配置
 	<dict>
@@ -285,6 +290,48 @@
     }];
              
  ```
+ 
+* <h3 id="11">line分享接口</h3>
+
+ ```
+ ///content 分享的内容
+ - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
+ 
+ sample:
+	[[MWSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
+                NSLog(@"shareLineWithContent finish");
+            }];
+             
+ ```
+ 
+* <h3 id="12">获取手机验证码接口</h3>
+
+ ```
+ ///areaCode 手机区号
+ ///telephone 手机号码
+ - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
+             
+ ```
+ 
+* <h3 id="13">请求绑定手机接口</h3>
+
+ ```
+ ///areaCode 手机区号
+ ///telephone 手机号码
+ ///vfCode 验证码
+ - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
+             
+ ```
+
+* <h3 id="14">请求升级账号接口</h3>
+
+ ```
+ ///account 账号
+ ///password 密码
+- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+             
+ ```
+
 
 
 
