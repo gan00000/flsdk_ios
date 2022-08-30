@@ -291,8 +291,12 @@ static dispatch_once_t onceToken;
     if ([self isMoreLanguage]) {
         return [SUtil getServerLanguage];
     }
-    return [self getStringForKey:@"gameLanguage"];
+    if ([StringUtil isNotEmpty:[self getStringForKey:@"gameLanguage"]]) {
+        return [self getStringForKey:@"gameLanguage"];
+    }
+    return @"zh_TW";
 }
+
 -(NSString *) getLoginUrl
 {
     return [self getStringForKey:@"sdk_url_login"];

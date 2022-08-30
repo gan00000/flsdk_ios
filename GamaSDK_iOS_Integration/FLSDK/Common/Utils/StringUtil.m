@@ -13,7 +13,7 @@
 
 +(BOOL) isEmpty:(NSString *)s
 {
-    if (!s || s.length < 1 || [s isEqualToString:@""]) {
+    if (!s || [s isEqualToString:@""]) {
         return YES;
     }
     return NO;

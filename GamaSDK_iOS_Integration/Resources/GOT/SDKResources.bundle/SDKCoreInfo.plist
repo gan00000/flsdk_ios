@@ -17,7 +17,7 @@
 	<key>gameCode</key>
 	<string>fszhlios</string>
 	<key>gameLanguage</key>
-	<string>zh-Hant</string>
+	<string>zh_TW</string>
 	<key>sdk_url_login</key>
 	<string>https://login.meowplayer.com/</string>
 	<key>sdk_url_pay</key>
