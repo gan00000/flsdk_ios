@@ -6,7 +6,6 @@
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
 #import "MWSDK.h"
-#import "GamaWebViewController.h"
 
 #import "AlertUtil.h"
 
@@ -162,7 +161,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.fzzh.tw.1usd";
+            NSString *aProductID = @"com.wanye.fszhl.lb4";
             [self pay:aProductID];
         }
             break;

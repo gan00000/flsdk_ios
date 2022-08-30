@@ -18,7 +18,7 @@ typedef void(^GamaWebConfirmHandler)(BOOL confirmResult);
 typedef void(^GamaWebAlertHandler)(NSString *message, GamaWebConfirmHandler confirmHandler);
 
 
-@interface GamaWebViewController : UIViewController
+@interface MWWebViewController : UIViewController
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
 @property (nonatomic,copy) GamaWebCloseHandler closeHandler;
 @property (nonatomic,copy) GamaWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
