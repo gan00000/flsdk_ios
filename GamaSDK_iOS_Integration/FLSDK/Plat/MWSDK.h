@@ -3,7 +3,7 @@
 #import "LoginData.h"
 #import "PayData.h"
 
-#define FL_SDK_VERSION @"1.0.3"
+#define FL_SDK_VERSION @"1.0.4"
 
 // 追踪事件名称
 #define AD_EVENT_APP_OPEN  @"APP_OPEN"
