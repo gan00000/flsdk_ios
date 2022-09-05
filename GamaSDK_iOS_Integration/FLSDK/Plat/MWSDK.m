@@ -34,6 +34,8 @@
 
 @interface MWSDK()
 
+@property (nonatomic, assign) BOOL isPaying;
+
 @end
 
 @implementation MWSDK
@@ -237,6 +239,12 @@
         return;
     }
     
+    if (self.isPaying) {//是否正在充值中
+        SDK_LOG(@"正在充值中...");
+        return;
+    }
+    self.isPaying = YES;
+    
     SDK_DATA.gameUserModel.roleID = roleId ? : @"";
     SDK_DATA.gameUserModel.roleName = roleName ? : @"";
     SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
@@ -251,10 +259,13 @@
     
     if (!accountModel || !accountModel.userId) {
         [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
+        self.isPaying = NO;
         return;
     }
     
     [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+        
+        self.isPaying = NO;
         
         if (self.payHandler) {
             if (success) {

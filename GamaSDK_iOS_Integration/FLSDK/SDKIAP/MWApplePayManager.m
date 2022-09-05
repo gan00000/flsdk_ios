@@ -100,6 +100,9 @@
 
 -(void)startPayWithProductId:(NSString *)productId cpOrderId:(NSString *)cpOrderId extra:(NSString *)extra gameInfo:(GameUserModel*)gameUserModel accountModel:(AccountModel*) accountModel payStatusBlock:(PayStatusBlock)payStatusBlock
 {
+    
+    [SdkUtil showLoadingAtView:nil];
+    
     self.payStatusBlock = payStatusBlock;
   
     [self checkOrderStatus];//检查本地订单状态
@@ -115,7 +118,7 @@
     self.mPayData.cpOrderId = cpOrderId;
 
     
-    [SdkUtil showLoadingAtView:nil];
+    //[SdkUtil showLoadingAtView:nil];
     [SDKRequest createOrderWithproductId:productId cpOrderId:cpOrderId extra:extra gameInfo:gameUserModel accountModel:accountModel otherParamsDic:nil successBlock:^(id responseData) {
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
