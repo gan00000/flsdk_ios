@@ -261,7 +261,8 @@
         make.width.equalTo(@(SCREEN_WIDTH));
         make.height.equalTo(@(SCREEN_HEIGHT));
     }];
-
+    [baseView bringSubviewToFront:bgV];
+    
     UIView *v=[[UIView alloc] initWithFrame:CGRectZero];
     v.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.6];
     v.layer.cornerRadius = 10.0f;
