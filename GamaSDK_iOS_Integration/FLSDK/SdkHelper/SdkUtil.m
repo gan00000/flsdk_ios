@@ -19,8 +19,8 @@
 
 #pragma mark - loading alert用到
 
-#define winWidth        [SUtil getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
-#define winHeight       [SUtil getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
+//#define winWidth        [SUtil getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
+//#define winHeight       [SUtil getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
 #define FONT_Helvetica_BOLD      @"Helvetica-Bold"
 #define FONT_Helvetica           @"Helvetica"
 #define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
@@ -252,13 +252,14 @@
     UIView *bgV = [[UIView alloc] initWithFrame:CGRectZero];
     bgV.backgroundColor = [UIColor clearColor];
     bgV.tag = kLoadingTag;
+    bgV.userInteractionEnabled = YES;
     [baseView addSubview:bgV];
     
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(@(0));
         make.centerY.equalTo(@(0));
-        make.width.equalTo(@(winWidth));
-        make.height.equalTo(@(winHeight));
+        make.width.equalTo(@(SCREEN_WIDTH));
+        make.height.equalTo(@(SCREEN_HEIGHT));
     }];
 
     UIView *v=[[UIView alloc] initWithFrame:CGRectZero];
