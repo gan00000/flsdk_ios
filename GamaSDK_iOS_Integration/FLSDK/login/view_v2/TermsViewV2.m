@@ -171,7 +171,7 @@
     //        https://member.flyfungame.com/sdk/archive.html   服務條款
     //        https://member.flyfungame.com/sdk/privacy.html   隱私政策
     
-    NSString * url = SDK_DATA.urls.noticeUrl;
+    NSString * url = SDK_DATA.urls.agreementUrl;
     if (!url || [@"" isEqualToString:url]) {
         url = [NSString stringWithFormat:TERMS_SERVICE_URL,GAME_CODE];
     }
