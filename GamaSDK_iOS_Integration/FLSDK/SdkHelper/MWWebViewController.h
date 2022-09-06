@@ -12,19 +12,19 @@
 #import "SdkHeader.h"
 #import "UIScreen+Sdk.h"
 
-typedef void(^GamaWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
-typedef void(^GamaWebCloseHandler)(void);
-typedef void(^GamaWebConfirmHandler)(BOOL confirmResult);
-typedef void(^GamaWebAlertHandler)(NSString *message, GamaWebConfirmHandler confirmHandler);
+typedef void(^MWWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
+typedef void(^MWWebCloseHandler)(void);
+typedef void(^MWWebConfirmHandler)(BOOL confirmResult);
+typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmHandler);
 
 
 @interface MWWebViewController : UIViewController
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
-@property (nonatomic,copy) GamaWebCloseHandler closeHandler;
-@property (nonatomic,copy) GamaWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
+@property (nonatomic,copy) MWWebCloseHandler closeHandler;
+@property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
 @property (nonatomic) BOOL shouldRotate;
 @property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
-@property (nonatomic) UIInterfaceOrientation interfaceOrientation;
+//@property (nonatomic) UIInterfaceOrientation interfaceOrientation;
 
 /**
  webView后退
@@ -55,7 +55,7 @@ typedef void(^GamaWebAlertHandler)(NSString *message, GamaWebConfirmHandler conf
  
  @return 初始化完毕的实例化对象。
  */
-- (instancetype)initWithWebLayoutHandler:(GamaWebLayoutHandler)handler animation:(BOOL)animation NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithWebLayoutHandler:(MWWebLayoutHandler)handler animation:(BOOL)animation NS_DESIGNATED_INITIALIZER;
 
 /**
  @description 生成一个WebViewController并且使用rootViewController上的顶层presentedViewController来present出来。注意：webView在iOS8或以上采用WKWebView，其它版本采用xxWebView，且不要直接在EFWebLayoutHandler返回的webView上操作。
@@ -71,7 +71,7 @@ typedef void(^GamaWebAlertHandler)(NSString *message, GamaWebConfirmHandler conf
  @return 实例化对象。
  */
 + (instancetype)webViewControllerPresentingWithURLRequest:(NSURLRequest *)request
-                                            layoutHandler:(GamaWebLayoutHandler)handler
+                                            layoutHandler:(MWWebLayoutHandler)handler
                                                 animation:(BOOL)animation
                                            animationStyle:(UIModalTransitionStyle)animationStyle;
 

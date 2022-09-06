@@ -20,6 +20,7 @@
 #import "BindAccountViewV2.h"
 
 #import "AdDelegate.h"
+#import "MWWebViewController.h"
 
 #import <StoreKit/StoreKit.h>
 
@@ -531,9 +532,20 @@
 
 - (void)openCs
 {
-//    SDK_LOG(@"openCs..");
-//    NSString *resultURL = [SDKRequest createSdkUrl:@"https://platform.flyfungame.com/api/web/service.do"];
-//    [GamaWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    SDK_LOG(@"openCs..");
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    
+    NSString * csurl = SDK_DATA.urls.csUrl;
+    if ([StringUtil isEmpty:csurl]) {
+        SDK_LOG(@"客服地址错误 csurl=%@",csurl);
+        return;
+    }
+    NSString *resultURL = [SDKRequest createSdkUrl:csurl];
+    [MWWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
 
 

@@ -11,8 +11,11 @@
 
 #define WK_WEBVIEW_ESTIMATED_PROGRESS @"estimatedProgress"
 
+//1）当 Status bar is initially hidden 设置为 NO 的时候，不管 View controller-based status bar appearance 设置为 NO 还是 YES ，都是无效的。
+//2）只有 Status bar is initially hidden 设置为 YES 的时候， View controller-based status bar appearance 才生效，这个要注意一下。
+
 @interface MWWebViewController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
-@property (nonatomic, copy) GamaWebLayoutHandler layoutHandler;
+@property (nonatomic, copy) MWWebLayoutHandler layoutHandler;
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) WKWebView *wkwebView;
 @property (nonatomic, strong) UIView *headerView;
@@ -28,14 +31,14 @@
 +(instancetype)webViewControllerPresentingWithURLRequest:(NSURLRequest *)request layoutHandler:(id)handler animation:(BOOL)animation animationStyle:(UIModalTransitionStyle)animationStyle
 {
     UIViewController *containerVC = appTopViewController;
-    if(device_is_iPhoneX){
-        SDK_LOG(@"device_is_iPhoneX");
-        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
-//        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
-        [containerVC presentViewController:safariVC animated:animation completion:handler];
-        return nil;
-    }
-    SDK_LOG(@"not device_is_iPhoneX");
+//    if(device_is_iPhoneX){
+//        SDK_LOG(@"device_is_iPhoneX");
+//        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
+////        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
+//        [containerVC presentViewController:safariVC animated:animation completion:handler];
+//        return nil;
+//    }
+//    SDK_LOG(@"not device_is_iPhoneX");
     MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
@@ -44,7 +47,7 @@
     [containerVC presentViewController:webVC animated:animation completion:nil];
     return webVC;
 }
-- (instancetype)initWithWebLayoutHandler:(GamaWebLayoutHandler)handler animation:(BOOL)animation
+- (instancetype)initWithWebLayoutHandler:(MWWebLayoutHandler)handler animation:(BOOL)animation
 {
     if (self = [super initWithNibName:nil bundle:nil]) {
         self.layoutHandler = handler;
@@ -62,8 +65,8 @@
         self.footView = [[UIView alloc] init];
         
         self.shouldRotate = NO;
-        self.interfaceOrientationMask = UIInterfaceOrientationMaskAll;
-        self.interfaceOrientation = UIInterfaceOrientationUnknown;
+        self.interfaceOrientationMask = UIInterfaceOrientationMaskAll;// 设备支持方向
+//        self.interfaceOrientation = UIInterfaceOrientationPortrait;
     }
     return self;
 }
@@ -80,9 +83,10 @@
     self.backgroundView.frame = self.view.bounds;
     
     //backgroundView add subviews
-    [self.backgroundView addSubview:self.headerView];
-    !_wkwebView?:[self.backgroundView addSubview:self.wkwebView];
-    [self.backgroundView addSubview:self.footView];
+//    [self.backgroundView addSubview:self.headerView];
+    
+    [self.backgroundView addSubview:self.wkwebView];
+//    [self.backgroundView addSubview:self.footView];
     
     
     //custom layout or not
@@ -90,48 +94,87 @@
         _layoutHandler(self.backgroundView, self.headerView, self.wkwebView, self.footView);
     } else {
         [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.view);
+            
+            if (@available(iOS 11.0, *)) {
+                make.leading.trailing.mas_equalTo(self.view);
+                make.top.mas_equalTo(self.view.safeAreaInsets.top);
+                make.bottom.mas_equalTo(-self.view.safeAreaInsets.bottom);
+            } else {
+                // Fallback on earlier versions
+                make.edges.mas_equalTo(self.view);
+            }
         }];
         
-        [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.and.left.and.right.equalTo(self.backgroundView);
-            make.height.equalTo(self.backgroundView).multipliedBy(0.08);
-        }];
+//        [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.leading.trailing.mas_equalTo(self.backgroundView);
+//            make.height.mas_equalTo(self.backgroundView).multipliedBy(0.08);
+//        }];
         
-        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(webClose)];
-        UIBarButtonItem *reloadBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(webReload)];
-        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target:self action:@selector(webGoBack)];
-        UIBarButtonItem *forwardBtn = [[UIBarButtonItem alloc] initWithTitle:@">" style:UIBarButtonItemStylePlain target:self action:@selector(webGoForward)];
-        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        CGFloat screenWidth = [[UIScreen mainScreen] gama_currentBounds].size.width;
-        fixedSpace.width = screenWidth * 0.05;
+//        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(webClose)];
+//        UIBarButtonItem *reloadBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(webReload)];
+//        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+//        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target:self action:@selector(webGoBack)];
+//        UIBarButtonItem *forwardBtn = [[UIBarButtonItem alloc] initWithTitle:@">" style:UIBarButtonItemStylePlain target:self action:@selector(webGoForward)];
+//        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+//        CGFloat screenWidth = [[UIScreen mainScreen] gama_currentBounds].size.width;
+//        fixedSpace.width = screenWidth * 0.05;
+//
+//        UIToolbar *toolBar = [[UIToolbar alloc] init];
+//        [toolBar setItems:@[backBtn,fixedSpace,forwardBtn,space,reloadBtn,fixedSpace,closeBtn] animated:YES];
+//        [self.headerView addSubview:toolBar];
+//        [toolBar mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.edges.equalTo(self.headerView);
+//        }];
         
-        UIToolbar *toolBar = [[UIToolbar alloc] init];
-        [toolBar setItems:@[backBtn,fixedSpace,forwardBtn,space,reloadBtn,fixedSpace,closeBtn] animated:YES];
-        [self.headerView addSubview:toolBar];
-        [toolBar mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.headerView);
-        }];
-        
-        UIView *webView = nil;
-        if (_wkwebView) {
-            webView = _wkwebView;
-        }
-        [webView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.headerView.mas_bottom);
-            make.left.and.right.and.bottom.equalTo(self.backgroundView);
+        [_wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(self.backgroundView);
         }];
     }
     
     if (_wkwebView && _progressView) {
         [_wkwebView addSubview:_progressView];
         [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.and.left.and.right.equalTo(_wkwebView);
+            make.top.leading.trailing.mas_equalTo(_wkwebView);
             make.height.equalTo(@(3));
         }];
     }
     [self webLoadURLRequest:self.webRequest];
+    
+    //设置状态栏是否隐藏
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
+}
+
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    NSLog(@"viewDidLayoutSubviews");
+    
+    if (@available(iOS 11.0, *)) {
+        //获取到安全区域，更新安全区域
+        [self.backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+            
+            make.leading.trailing.mas_equalTo(self.view);
+            make.top.mas_equalTo(self.view.safeAreaInsets.top);
+            make.bottom.mas_equalTo(-self.view.safeAreaInsets.bottom);
+            
+        }];
+    }
+  
+    
 }
 
 #pragma mark - WebView Operator
@@ -169,6 +212,8 @@
 }
 
 #pragma mark - WKNavigationDelegate
+
+//2、当WebView开始加载Web内容时触发；
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
 {
     [_indicatorView startAnimating];
@@ -191,6 +236,8 @@
         [_webViewDelegate webView:webView didFinishNavigation:navigation];
     }
 }
+
+//当Web视图正在加载内容时发生错误时调用;
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error
 {
     [_indicatorView stopAnimating];
@@ -212,6 +259,8 @@
         decisionHandler(WKNavigationActionPolicyAllow);
     }
 }
+
+//1、当Web视图收到服务器重定向时调用；
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation
 {
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
@@ -288,18 +337,20 @@
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
-        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-        
-        if (UIInterfaceOrientationIsLandscape(orientation)) {
-            return orientation;
-        } else {
-            return UIInterfaceOrientationPortrait;
-        }
-    } else {
-        return _interfaceOrientation;
-    }
+//    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
+//        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+//
+//        if (UIInterfaceOrientationIsLandscape(orientation)) {
+//            return orientation;
+//        } else {
+//            return UIInterfaceOrientationPortrait;
+//        }
+//    } else {
+//        return _interfaceOrientation;
+//    }
+    return UIInterfaceOrientationPortrait;
 }
+
 
 - (void)dealloc
 {

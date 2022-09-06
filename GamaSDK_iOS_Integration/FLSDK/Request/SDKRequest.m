@@ -796,7 +796,25 @@
 #pragma mark - 通過url創建通用參數鏈接
 +(NSString *) createSdkUrl:(NSString *)url{
     
-    return @"";
+    NSDictionary *temDic = [self appendGameParamsDic];
+    NSString *tempParams = @"";
+   
+    for (NSString * key in temDic) {
+    
+        NSString * value = [NSString stringWithFormat:@"%@", temDic[key]];
+        tempParams = [NSString stringWithFormat:@"%@%@=%@&", tempParams, key, value];
+        
+    }
+    
+    if ([url hasSuffix:@"?"]) {
+        return [NSString stringWithFormat:@"%@%@", url, tempParams];
+    }
+    
+    if ([url containsString:@"?"]){
+        return [NSString stringWithFormat:@"%@&%@", url, tempParams];
+    }
+    
+    return [NSString stringWithFormat:@"%@?%@", url, tempParams];;
 }
 
 @end
