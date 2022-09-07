@@ -11,6 +11,7 @@
 
 #define WK_WEBVIEW_ESTIMATED_PROGRESS @"estimatedProgress"
 
+//View controller-based status bar appearance 一个布尔值，指示状态栏外观是否基于当前视图控制器的首选样式。
 //1）当 Status bar is initially hidden 设置为 NO 的时候，不管 View controller-based status bar appearance 设置为 NO 还是 YES ，都是无效的。
 //2）只有 Status bar is initially hidden 设置为 YES 的时候， View controller-based status bar appearance 才生效，这个要注意一下。
 
@@ -66,7 +67,7 @@
         
         self.shouldRotate = NO;
         self.interfaceOrientationMask = UIInterfaceOrientationMaskAll;// 设备支持方向
-//        self.interfaceOrientation = UIInterfaceOrientationPortrait;
+        self.interfaceOrientation = UIInterfaceOrientationPortrait;
     }
     return self;
 }
@@ -79,8 +80,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIView *statueView = [[UIView alloc] init];
+    statueView.backgroundColor = [UIColor colorWithHexString:@"#F13B11"];
+    [self.view addSubview:statueView];
+    [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.leading.trailing.mas_equalTo(self.view);
+        make.height.mas_equalTo(60);
+    }];
+    
+    self.backgroundView = [[UIView alloc] init];
+    
     [self.view addSubview:self.backgroundView];
-    self.backgroundView.frame = self.view.bounds;
+//    self.backgroundView.frame = self.view.bounds;
     
     //backgroundView add subviews
 //    [self.backgroundView addSubview:self.headerView];
@@ -88,7 +101,7 @@
     [self.backgroundView addSubview:self.wkwebView];
 //    [self.backgroundView addSubview:self.footView];
     
-    
+    self.view.backgroundColor = UIColor.clearColor;
     //custom layout or not
     if (_layoutHandler) {
         _layoutHandler(self.backgroundView, self.headerView, self.wkwebView, self.footView);
@@ -97,8 +110,9 @@
             
             if (@available(iOS 11.0, *)) {
                 make.leading.trailing.mas_equalTo(self.view);
-                make.top.mas_equalTo(self.view.safeAreaInsets.top);
-                make.bottom.mas_equalTo(-self.view.safeAreaInsets.bottom);
+                make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
+                make.bottom.mas_equalTo(self.view);
+//                make.edges.mas_equalTo(self.view);
             } else {
                 // Fallback on earlier versions
                 make.edges.mas_equalTo(self.view);
@@ -150,7 +164,8 @@
 
 - (BOOL)prefersStatusBarHidden
 {
-    return YES;
+    return YES;  //状态栏隐藏
+//    return NO; //状态栏显示, 默认值
 }
 
 
@@ -166,11 +181,11 @@
     if (@available(iOS 11.0, *)) {
         //获取到安全区域，更新安全区域
         [self.backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
-            
+
             make.leading.trailing.mas_equalTo(self.view);
-            make.top.mas_equalTo(self.view.safeAreaInsets.top);
-            make.bottom.mas_equalTo(-self.view.safeAreaInsets.bottom);
-            
+            make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
+            make.bottom.mas_equalTo(self.view);
+
         }];
     }
   
@@ -348,7 +363,7 @@
 //    } else {
 //        return _interfaceOrientation;
 //    }
-    return UIInterfaceOrientationPortrait;
+    return self.interfaceOrientation;
 }
 
 
