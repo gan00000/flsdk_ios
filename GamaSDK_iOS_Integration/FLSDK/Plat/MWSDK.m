@@ -50,6 +50,7 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation
 {
+    SDK_LOG(@"application openURL sourceApplication annotation");
     [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
@@ -62,6 +63,7 @@
 //system version is ios9 and later
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
+    SDK_LOG(@"ios9 and later = application openURL options");
     [AdDelegate application:application openURL:url options:options];
     BOOL result = [FBDelegate application:application openURL:url options:options];
     if (!result) {
