@@ -6,6 +6,8 @@
 //  Copyright © 2018年 starpy. All rights reserved.
 //
 
+#define js_close    @"close"
+
 #import "MWWebViewController.h"
 #import <SafariServices/SafariServices.h>
 
@@ -55,10 +57,8 @@
         self.animation = animation;
         self.backgroundView = [[UIView alloc] init];
         self.headerView = [[UIView alloc] init];
-        self.wkwebView = [[WKWebView alloc] init];
-        self.wkwebView.navigationDelegate = self;
-        self.wkwebView.UIDelegate = self;
-        [self.wkwebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+        
+        
         self.progressView = [[UIProgressView alloc] init];
         self.progressView.progressViewStyle = UIProgressViewStyleDefault;
         self.progressView.progress = 0.0;
@@ -70,6 +70,28 @@
         self.interfaceOrientation = UIInterfaceOrientationPortrait;
     }
     return self;
+}
+
+- (WKWebView*)wkwebView{
+    
+    if (!_wkwebView) {
+        
+        WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+        configuration.userContentController = [[WKUserContentController alloc] init];
+        [configuration.userContentController addScriptMessageHandler:self name:js_close];
+
+        _wkwebView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
+        
+//        _wkwebView = [[WKWebView alloc] init];
+        
+//        _wkwebView.configuration = configuration;
+        _wkwebView.navigationDelegate = self;
+        _wkwebView.UIDelegate = self;
+        [_wkwebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+    }
+    
+    return _wkwebView;
+
 }
 
 - (void)loadView
@@ -140,15 +162,15 @@
 //            make.edges.equalTo(self.headerView);
 //        }];
         
-        [_wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(self.backgroundView);
         }];
     }
     
-    if (_wkwebView && _progressView) {
-        [_wkwebView addSubview:_progressView];
+    if (self.wkwebView && _progressView) {
+        [self.wkwebView addSubview:_progressView];
         [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.leading.trailing.mas_equalTo(_wkwebView);
+            make.top.leading.trailing.mas_equalTo(self.wkwebView);
             make.height.equalTo(@(3));
         }];
     }
@@ -195,8 +217,8 @@
 #pragma mark - WebView Operator
 - (void)webLoadURLRequest:(NSURLRequest *)request
 {
-    if (_wkwebView) {
-        [_wkwebView loadRequest:request];
+    if (self.wkwebView) {
+        [self.wkwebView loadRequest:request];
     }
 }
 
@@ -316,6 +338,19 @@
     }
     return nil;
 }
+
+#pragma mark - WKUserContentController
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+{
+    SDK_LOG(@"userContentController message=%@", message.name);
+    if ([message.name isEqualToString:js_close]) {
+        
+        [self dismissViewControllerAnimated:NO completion:^{
+            
+        }];
+    }
+}
+
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     
@@ -325,8 +360,8 @@
         
     } else if ([@"URL" isEqualToString:keyPath]) {
         
-    } else if (object == _wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
-        _progressView.progress = _wkwebView.estimatedProgress;
+    } else if (object == self.wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
+        _progressView.progress = self.wkwebView.estimatedProgress;
         
         CGFloat newProgress = [change[NSKeyValueChangeNewKey] doubleValue];
         if (newProgress == 1) {
@@ -369,7 +404,7 @@
 
 - (void)dealloc
 {
-    [_wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
+    [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
 }
 
 @end

@@ -39,29 +39,28 @@
 #pragma mark - UI
 
 
-//+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
-//                                               urlStirng:(NSString *)urlString
-//                                            cornerRadius:(CGFloat)radius
-//                                                delegate:(id)delegate
-//{
-//    WKWebView *resultWebView;
-//    NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
-//    WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-//    WKUserContentController *wkUController = [[WKUserContentController alloc] init]; [wkUController addUserScript:wkUScript];
-//    WKWebViewConfiguration *wkWebConfig = [[WKWebViewConfiguration alloc] init];
-//    wkWebConfig.userContentController = wkUController;
-//    resultWebView = [[WKWebView alloc] initWithFrame:rect configuration:wkWebConfig];
-//
-////    resultWebView = [[WKWebView alloc] initWithFrame:rect];
-////    resultWebView.scalesPageToFit = YES;
-////    resultWebView.delegate = delegate;
-//    resultWebView.UIDelegate = delegate;
-//
-//    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
-//    [resultWebView loadRequest:request];
-//    [request release];
-//    return [resultWebView autorelease];
-//}
++ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
+                                               urlStirng:(NSString *)urlString
+                                            cornerRadius:(CGFloat)radius
+                                                delegate:(id)delegate
+{
+    WKWebView *resultWebView;
+    NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+    WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+    WKUserContentController *wkUController = [[WKUserContentController alloc] init]; [wkUController addUserScript:wkUScript];
+    WKWebViewConfiguration *wkWebConfig = [[WKWebViewConfiguration alloc] init];
+    wkWebConfig.userContentController = wkUController;
+    resultWebView = [[WKWebView alloc] initWithFrame:rect configuration:wkWebConfig];
+
+//    resultWebView = [[WKWebView alloc] initWithFrame:rect];
+//    resultWebView.scalesPageToFit = YES;
+//    resultWebView.delegate = delegate;
+    resultWebView.UIDelegate = delegate;
+
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
+    [resultWebView loadRequest:request];
+    return resultWebView;
+}
 
 
 
