@@ -131,7 +131,7 @@
     @try {
         
         if (type & AdType_Appflyer) {
-            
+            SDK_LOG(@"logEventPurchaseValues af");
             [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
                             AFEventParamRevenue  : @(mPayData.amount),
                             AFEventParamCurrency : @"USD",
@@ -144,7 +144,7 @@
         }
         if (type & AdType_Firebase) {
             //firebase
-            
+            SDK_LOG(@"logEventPurchaseValues firebase");
             [FIRAnalytics logEventWithName:kFIREventPurchase parameters:@{
                 kFIRParameterItemID : mPayData.productId,
                 //kFIRParameterPrice : @(mPayData.amount),
@@ -158,12 +158,12 @@
         if (type & AdType_FB) {
             
              //fb
+            SDK_LOG(@"logEventPurchaseValues fb");
             [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD" parameters:@{
                 FBSDKAppEventParameterNameCurrency : @"USD",
                 FBSDKAppEventParameterNameOrderID : mPayData.orderId,
                 FBSDKAppEventParameterNameContentID : mPayData.productId,
                 @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
-               
             }];
         }
        
