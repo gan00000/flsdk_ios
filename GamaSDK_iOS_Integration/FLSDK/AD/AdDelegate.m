@@ -159,12 +159,15 @@
             
              //fb
             SDK_LOG(@"logEventPurchaseValues fb");
-            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD" parameters:@{
-                FBSDKAppEventParameterNameCurrency : @"USD",
-                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
-                FBSDKAppEventParameterNameContentID : mPayData.productId,
-                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
-            }];
+//            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD" parameters:@{
+//                FBSDKAppEventParameterNameCurrency : @"USD",
+//                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
+//                FBSDKAppEventParameterNameContentID : mPayData.productId,
+//                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+//            }];
+            
+            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD"];
+
         }
        
         
