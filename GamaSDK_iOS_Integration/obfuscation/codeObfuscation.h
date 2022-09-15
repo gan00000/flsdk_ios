@@ -1,3 +1,7 @@
+#ifndef codeObfuscation_h
+#define codeObfuscation_h
+
+#ifdef SDK_CODE_OBFUSCATION  //是否开启方法混淆
 #define accountRegister   sufUberunitie
 #define addAccountListTableView   withoutatoryFlectan
 #define addAccountListView   yetotUrsfinditude
@@ -239,3 +243,10 @@
 #define validPhone   felinstateaceousHugeent
 #define validPwd   todayationBrachyial
 #define validUserName   irascPylel
+
+
+#else
+
+#endif
+
+#endif  /* codeObfuscation_h */

@@ -9,6 +9,8 @@
 #ifndef preHeader_h
 #define preHeader_h
 
+//#define SDK_CODE_OBFUSCATION   1  //是否开启方法混淆
+
 #import "codeObfuscation.h"
 #import "imageNameHeader.h"
 
