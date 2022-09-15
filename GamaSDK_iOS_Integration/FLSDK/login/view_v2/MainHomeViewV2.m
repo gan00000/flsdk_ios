@@ -63,7 +63,7 @@
         make.centerY.mas_equalTo(self);
     }];
     
-    UIImageView *logoIV = [UIUtil initImageViewWithImage:@"mw_logo"];
+    UIImageView *logoIV = [UIUtil initImageViewWithImage:mw_logo];
     logoIV.hidden = YES;
     if (SDK_DATA.mConfigModel.showLogo) {
         logoIV.hidden = NO;
@@ -111,7 +111,7 @@
 //        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
     }];
     
-    UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage:@"guse_login_bg" highlightedImage:nil tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage:guse_login_bg highlightedImage:nil tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtnContent addSubview:guestIconBtn];
     [guestIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.leading.mas_equalTo(guestLoginBtnContent);
@@ -306,7 +306,7 @@
 //        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     
-    checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"mw_cb_uncheck" highlightedImage:nil selectedImageName:@"mw_cb_check" tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+    checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:mw_cb_uncheck highlightedImage:nil selectedImageName:mw_cb_check tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
     checkBoxTermsBtn.selected = YES;
     [termAgreeView addSubview:checkBoxTermsBtn];
     [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {

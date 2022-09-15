@@ -93,7 +93,7 @@
 //        make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:@"icon_close_4" highlightedImage:@"icon_close_4" tag:TAG_CLOSE selector:@selector(action:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_4 highlightedImage:icon_close_4 tag:TAG_CLOSE selector:@selector(action:) target:self];
     
 //    closeBtn.layer.cornerRadius = VH(32) / 2;
 //    closeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
@@ -109,7 +109,7 @@
     }];
     
     
-    UIButton *leftBtn = [UIUtil initBtnWithNormalImage:@"mw_arr_left" highlightedImage:@"mw_arr_left" tag:0 selector:@selector(action:) target:nil];
+    UIButton *leftBtn = [UIUtil initBtnWithNormalImage:mw_arr_left highlightedImage:mw_arr_left tag:0 selector:@selector(action:) target:nil];
     [titleView addSubview:leftBtn];
     [leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(titleLabel.mas_trailing).mas_offset(VW(20));;
@@ -119,7 +119,7 @@
     }];
     
     
-    UIButton *rightBtn = [UIUtil initBtnWithNormalImage:@"mw_arr_right" highlightedImage:@"mw_arr_right" tag:0 selector:@selector(action:) target:nil];
+    UIButton *rightBtn = [UIUtil initBtnWithNormalImage:mw_arr_right highlightedImage:mw_arr_right tag:0 selector:@selector(action:) target:nil];
     [titleView addSubview:rightBtn];
     [rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(titleLabel.mas_leading).mas_offset(-VW(20));;

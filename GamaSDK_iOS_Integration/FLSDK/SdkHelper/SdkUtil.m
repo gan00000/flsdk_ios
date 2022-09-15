@@ -483,28 +483,28 @@
         LoginButtonData *lbds = [[LoginButtonData alloc] init];
         lbds.tag = guestLoginActTag;
         lbds.btnType = LOGIN_TYPE_GUEST;
-        lbds.image = @"mw_guest_icon";
+        lbds.image = mw_guest_icon;
         [loginBtnDatas addObject:lbds];
     }
     if (mConfigModel.fbLogin) {
         LoginButtonData *lbds = [[LoginButtonData alloc] init];
         lbds.tag = fbLoginActTag;
         lbds.btnType = LOGIN_TYPE_FB;
-        lbds.image = @"mw_fb_icon";
+        lbds.image = mw_fb_icon;
         [loginBtnDatas addObject:lbds];
     }
     if (mConfigModel.googleLogin) {
         LoginButtonData *lbds = [[LoginButtonData alloc] init];
         lbds.tag = googleLoginActTag;
         lbds.btnType = LOGIN_TYPE_GOOGLE;
-        lbds.image = @"mw_gp_icon";
+        lbds.image = mw_gp_icon;
         [loginBtnDatas addObject:lbds];
     }
     if (mConfigModel.lineLogin) {
         LoginButtonData *lbds = [[LoginButtonData alloc] init];
         lbds.tag = lineLoginActTag;
         lbds.btnType = LOGIN_TYPE_LINE;
-        lbds.image = @"mw_line_icon";
+        lbds.image = mw_line_icon;
         [loginBtnDatas addObject:lbds];
     }
     return loginBtnDatas;

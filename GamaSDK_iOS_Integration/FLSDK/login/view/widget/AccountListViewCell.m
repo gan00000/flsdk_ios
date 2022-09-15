@@ -36,7 +36,7 @@
        // make.centerY.mas_equalTo(self);
     }];
     
-    self.deleteAccountBtn = [UIUtil initBtnWithNormalImage:@"delete_icon.png" highlightedImage:@"delete_icon.png" tag:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick:) target:self];
+    self.deleteAccountBtn = [UIUtil initBtnWithNormalImage:delete_icon highlightedImage:delete_icon tag:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick:) target:self];
     self.deleteAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [delContentView addSubview:self.deleteAccountBtn];
     [self.deleteAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -87,7 +87,7 @@
 -(UIImageView*)iconImageView
 {
     if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:@"mw_smail_icon"]];
+        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:mw_smail_icon]];
         _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconImageView;

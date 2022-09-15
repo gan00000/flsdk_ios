@@ -151,7 +151,7 @@
             make.leading.mas_equalTo(accountSDKTextFiledView);
         }];
         
-        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:@"mw_cb_uncheck" highlightedImage:nil selectedImageName:@"mw_cb_check" tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:mw_cb_uncheck highlightedImage:nil selectedImageName:mw_cb_check tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
         checkBoxTermsBtn.selected = YES;
         [termAgreeView addSubview:checkBoxTermsBtn];
         [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -588,7 +588,7 @@
     //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
     
     NSString *account = mAccountModel.userId;
-    NSString *iconName = @"mw_smail_icon";
+    NSString *iconName = mw_smail_icon;
     NSString *pwdText = GetString(@"text_free_register");
     
     BOOL pwdEnable = YES;
@@ -596,24 +596,24 @@
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
-        iconName = @"mw_smail_icon";
+        iconName = mw_smail_icon;
         pwdText = mAccountModel.password;
         pwdEnable = YES;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
-        iconName = @"fb_smail_icon";
+        iconName = fb_smail_icon;
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
-        iconName = @"google_smail_icon";
+        iconName = google_smail_icon;
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
-        iconName = @"guest_smail_icon";
+        iconName = guest_smail_icon;
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
-        iconName = @"apple_smail_icon";
+        iconName = apple_smail_icon;
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
-        iconName = @"line_smail_icon";
+        iconName = line_smail_icon;
         pwdEnable = NO;
     }
     

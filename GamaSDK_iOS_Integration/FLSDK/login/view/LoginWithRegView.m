@@ -112,7 +112,7 @@
     }];
     
     //返回按钮
-    UIButton *backBtn = [UIUtil initBtnWithNormalImage:@"mw_back_icon" highlightedImage:@"mw_back_icon" tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *backBtn = [UIUtil initBtnWithNormalImage:mw_back_icon highlightedImage:mw_back_icon tag:kBackBtnActTag selector:@selector(registerViewBtnAction:) target:self];
     
     [self addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {

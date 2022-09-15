@@ -94,7 +94,7 @@
             make.bottom.mas_equalTo(titleView);
         }];
         
-        UIButton *closeBtn = [UIUtil initBtnWithNormalImage:@"icon_close_3" highlightedImage:@"icon_close_3" tag:TAG_CLOSE selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_3 highlightedImage:icon_close_3 tag:TAG_CLOSE selector:@selector(registerViewBtnAction:) target:self];
         
         [titleView addSubview:closeBtn];
         [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -112,7 +112,7 @@
             thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
             thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
             thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
-            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:@"mw_smail_icon2"];
+            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
             thirdAccountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
             [contentView addSubview:thirdAccountSDKTextFiledView];
@@ -130,7 +130,7 @@
             
             hasBind_accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
             hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
-            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:@"mw_smail_icon2"];
+            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
             hasBind_accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             hasBind_accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             hasBind_accountSDKTextFiledView.inputUITextField.enabled = NO;
@@ -155,7 +155,7 @@
             accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
             accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:@"mw_smail_icon2"];
+            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
             [contentView addSubview:accountSDKTextFiledView];
             
             [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -171,7 +171,7 @@
             
             //密码
             pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:@"mw_passowrd_icon2"];
+            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_icon2];
             pwdSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
             pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             [contentView addSubview:pwdSDKTextFiledView];
@@ -340,7 +340,7 @@
     
     NSString *account = @"text_has_bind_tips_mw".localx;
     NSString *account_tips = @"text_has_bind_tips_mw".localx;
-    NSString *iconName = @"mw_smail_icon2";
+    NSString *iconName = mw_smail_icon2;
     NSString *pwdText = GetString(@"text_free_register");
     
     BOOL pwdEnable = YES;
@@ -348,33 +348,33 @@
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
-        iconName = @"mw_smail_icon2";
+        iconName = mw_smail_icon2;
         pwdText = mAccountModel.password;
         pwdEnable = YES;
         account_tips = @"text_has_bind_tips_mw".localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
-        iconName = @"fb_smail_icon";
+        iconName = fb_smail_icon;
         pwdEnable = NO;
         account_tips = @"text_has_bind_tips_fb".localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
-        iconName = @"google_smail_icon";
+        iconName = google_smail_icon;
         pwdEnable = NO;
         account_tips = @"text_has_bind_tips_google".localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
-        iconName = @"guest_smail_icon";
+        iconName = guest_smail_icon;
         pwdEnable = NO;
         account_tips = @"text_has_bind_tips_guest".localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
-        iconName = @"apple_smail_icon";
+        iconName = apple_smail_icon;
         pwdEnable = NO;
         account_tips = @"text_has_bind_tips_apple".localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
-        iconName = @"line_smail_icon";
+        iconName = line_smail_icon;
         pwdEnable = NO;
         account_tips = @"text_has_bind_tips_line".localx;
     }

@@ -106,7 +106,7 @@
         make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:@"icon_close_3" highlightedImage:@"icon_close_3" tag:TAG_CLOSE selector:@selector(action:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_3 highlightedImage:icon_close_3 tag:TAG_CLOSE selector:@selector(action:) target:self];
     
     [titleView addSubview:closeBtn];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -149,7 +149,7 @@
         
     }];
     
-    UIButton *areaMoreBtn = [UIUtil initBtnWithNormalImage:@"icon_down_list2" highlightedImage:@"icon_down_list2" tag:kMoreAccountListActTag selector:@selector(action:) target:self];
+    UIButton *areaMoreBtn = [UIUtil initBtnWithNormalImage:icon_down_list2 highlightedImage:icon_down_list2 tag:kMoreAccountListActTag selector:@selector(action:) target:self];
     
     [phoneAreaCodeView addSubview:areaMoreBtn];
     [areaMoreBtn mas_makeConstraints:^(MASConstraintMaker *make) {

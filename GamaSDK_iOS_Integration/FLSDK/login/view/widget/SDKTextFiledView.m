@@ -38,14 +38,14 @@
     eyeBtn.hidden = !enable;
     mUITextField.enabled = enable;
     if (enable) {
-        self.lableIconImageView.image = [UIImage res_imageNamed:@"mw_passowrd_icon"];
+        self.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_icon];
         mUITextField.secureTextEntry = YES;
         mUITextField.text = @"";
         eyeBtn.selected = YES;
         mUITextField.textColor = [UIColor whiteColor];
         
     }else{
-        self.lableIconImageView.image = [UIImage res_imageNamed:@"mw_passowrd_disable_icon"];
+        self.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_disable_icon];
         mUITextField.secureTextEntry = NO;
         mUITextField.text = GetString(@"text_free_register");
         mUITextField.textColor = [UIColor colorWithHexString:@"#848484"];
@@ -80,7 +80,7 @@
             break;
             
         case SDKTextFiledView_Type_Account:
-            iconName = @"mw_account_icon.png";
+            iconName = mw_account_icon;
             lableName = @"帳號";
             placeholderText = @"請輸入您的常用信箱";
             addMoreAccountBtn = YES;
@@ -88,7 +88,7 @@
             
         case SDKTextFiledView_Type_Password:
             
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             lableName = @"密碼";
             placeholderText = @"請輸入6-20字元";
             showEye = YES;
@@ -96,20 +96,20 @@
             
         case SDKTextFiledView_Type_Password_Again:
             
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             lableName = @"密碼";
             placeholderText = @"確認新密碼";
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             lableName = @"請輸入新密碼";
             placeholderText = @"請輸入新密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             lableName = @"輸入舊密碼";
             placeholderText = @"輸入舊密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
             showEye = YES;
@@ -185,7 +185,7 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" selectedImageName:@"sdk_list_up.png" tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
+        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down selectedImageName:sdk_list_up tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
         //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
@@ -204,7 +204,7 @@
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
-        eyeBtn = [UIUtil initBtnWithNormalImage:@"fl_sdk_ky.png" highlightedImage:@"fl_sdk_ky.png" selectedImageName:@"fl_sdk_by.png" tag:22 selector:@selector(eyeViewBtnAction:) target:self];
+        eyeBtn = [UIUtil initBtnWithNormalImage:fl_sdk_ky highlightedImage:fl_sdk_ky selectedImageName:fl_sdk_by tag:22 selector:@selector(eyeViewBtnAction:) target:self];
         eyeBtn.selected = YES;//设置为选择
         mUITextField.secureTextEntry = YES;
         
@@ -273,7 +273,7 @@
             break;
             
         case SDKTextFiledView_Type_Account:
-            iconName = @"mw_account_icon.png";
+            iconName = mw_account_icon;
             
             placeholderText = @"py_register_account_hit".localx;
             addMoreAccountBtn = YES;
@@ -281,7 +281,7 @@
             
         case SDKTextFiledView_Type_Password:
             
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             
             placeholderText = @"py_register_password_hit".localx;
             showEye = YES;
@@ -289,20 +289,20 @@
             
         case SDKTextFiledView_Type_Password_Again:
             
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             
             placeholderText = @"text_input_new_pwd_confire".localx;
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             
             placeholderText = @"text_input_new_pwd".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
-            iconName = @"mw_passowrd_icon.png";
+            iconName = mw_passowrd_icon;
             
             placeholderText = @"py_input_old_password".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
             showEye = YES;
@@ -378,7 +378,7 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" selectedImageName:@"sdk_list_up.png" tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
+        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down selectedImageName:sdk_list_up tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
         //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
@@ -397,7 +397,7 @@
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
-        eyeBtn = [UIUtil initBtnWithNormalImage:@"fl_sdk_ky.png" highlightedImage:@"fl_sdk_ky.png" selectedImageName:@"fl_sdk_by.png" tag:22 selector:@selector(eyeViewBtnAction:) target:self];
+        eyeBtn = [UIUtil initBtnWithNormalImage:fl_sdk_ky highlightedImage:fl_sdk_ky selectedImageName:fl_sdk_by tag:22 selector:@selector(eyeViewBtnAction:) target:self];
         eyeBtn.selected = YES;//设置为选择
         mUITextField.secureTextEntry = YES;
         

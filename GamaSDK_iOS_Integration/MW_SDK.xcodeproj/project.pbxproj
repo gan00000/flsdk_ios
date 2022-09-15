@@ -650,6 +650,9 @@
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		03C05CA628AE5F6B0060F4CD /* BasePopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePopupView.h; sourceTree = "<group>"; };
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
+		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
+		03D5F35D28D3187F00C3855E /* codeObfuscation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
 		03D97DD6286EE281008D0B3A /* BaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSDK.m; sourceTree = "<group>"; };
 		03D97DD7286EE281008D0B3A /* BaseSDKImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSDKImpl.h; sourceTree = "<group>"; };
@@ -1269,6 +1272,16 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		03D5F35B28D3183D00C3855E /* obfuscation */ = {
+			isa = PBXGroup;
+			children = (
+				03D5F35D28D3187F00C3855E /* codeObfuscation.h */,
+				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,
+				03D5F35E28D3187F00C3855E /* preHeader.pch */,
+			);
+			path = obfuscation;
+			sourceTree = "<group>";
+		};
 		03D97DD4286EE281008D0B3A /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1605,6 +1618,7 @@
 		CEE6B3681A148B1E009E77FF = {
 			isa = PBXGroup;
 			children = (
+				03D5F35B28D3183D00C3855E /* obfuscation */,
 				037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */,
 				24C7588E1D66F98D0088A176 /* FrameworkScript.sh */,
 				32BE13DC24FB6154000BDFBE /* File.swift */,
@@ -2312,6 +2326,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2386,6 +2401,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2735,7 +2751,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2801,7 +2817,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

@@ -103,26 +103,26 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
     
     NSString *account = mAccountModel.userId;
-    NSString *iconName = @"mw_smail_icon";
+    NSString *iconName = mw_smail_icon;
     
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         account = mAccountModel.account;
-        iconName = @"mw_smail_icon";
+        iconName = mw_smail_icon;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
-        iconName = @"fb_smail_icon";
+        iconName = fb_smail_icon;
        
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
-        iconName = @"google_smail_icon";
+        iconName = google_smail_icon;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
-        iconName = @"guest_smail_icon";
+        iconName = guest_smail_icon;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
-        iconName = @"apple_smail_icon";
+        iconName = apple_smail_icon;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
-        iconName = @"line_smail_icon";
+        iconName = line_smail_icon;
     }
     cell.accountUILabel.text = account;
     cell.iconImageView.image = [UIImage res_imageNamed:iconName];

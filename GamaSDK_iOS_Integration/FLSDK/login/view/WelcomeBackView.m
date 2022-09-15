@@ -359,7 +359,7 @@
         make.width.mas_equalTo(VW(272));
     }];
     
-    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage:@"nend_update_account_bg"];
+    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage:nend_update_account_bg];
     [deleteView addSubview:deleteWarmIV];
     [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(deleteView).mas_offset(VH(12));
@@ -422,7 +422,7 @@
 //        make.height.mas_equalTo(VH(28));
     }];
     
-    UIImageView *deleteIV = [UIUtil initImageViewWithImage:@"mw_delete_icon"];
+    UIImageView *deleteIV = [UIUtil initImageViewWithImage:mw_delete_icon];
     [deleteView addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteView).mas_offset(VW(13));

@@ -100,7 +100,7 @@
         
     }];
     
-    UIButton *dropButton = [UIUtil initBtnWithNormalImage:@"sdk_list_down.png" highlightedImage:@"sdk_list_down.png" tag:222 selector:@selector(itemBtnAction:) target:self];
+    UIButton *dropButton = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down tag:222 selector:@selector(itemBtnAction:) target:self];
     
     int moffset = -6;
     if (IS_IPHONE && IS_PORTRAIT) {
