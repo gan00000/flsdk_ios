@@ -86,7 +86,7 @@
 #define getAppkey   viiceEarlyable
 #define getAreaInfoWithSuccessBlock   optoPropertyible
 #define getBoolForKey   dinnerianBothitive
-#define getBuffer   fumuousBoload
+//#define getBuffer   fumuousBoload
 #define getBundleIdentifier   miranDocureduceia
 #define getBundleName   costBank
 #define getBundleShortVersionString   somniHendecageeer
