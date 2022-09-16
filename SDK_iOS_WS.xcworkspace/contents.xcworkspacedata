@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GamaIAP/GamaIAP/GamaIAP.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:GamaSDK_iOS_Integration/MW_SDK.xcodeproj">
+      location = "group:MainSDK/MW_SDK.xcodeproj">
    </FileRef>
 </Workspace>
