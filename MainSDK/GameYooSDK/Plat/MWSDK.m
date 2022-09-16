@@ -1,26 +1,26 @@
 #import "MWSDK.h"
 
-#import "AdLogger.h"
-#import "SDKLoginViewController.h"
-#import "SUtil.h"
-#import "StringUtil.h"
+#import "RedyardasterEducationair.h"
+#import "LaughitorGoator.h"
+#import "TyponessHugehood.h"
+#import "CuspPhloearian.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-#import "SDKRequest.h"
+#import "RangeionHer.h"
 
-#import "FBDelegate.h"
-#import "LineDelegate.h"
-#import "MWApplePayManager.h"
-#import "AdLogger.h"
+#import "SeaariumContinueatory.h"
+#import "MensLeaderarium.h"
+#import "CathareryGas.h"
+#import "RedyardasterEducationair.h"
 
-#import "NoticeViewV2.h"
-#import "BindPhoneViewV2.h"
-#import "BindAccountViewV2.h"
+#import "EnvironmentitudePtychid.h"
+#import "PneuclassoriumPollinrealize.h"
+#import "CollectionletOmasthing.h"
 
-#import "AdDelegate.h"
-#import "MWWebViewController.h"
+#import "PropertyLessfication.h"
+#import "TakeFan.h"
 
 #import <StoreKit/StoreKit.h>
 
@@ -51,10 +51,10 @@
          annotation:(id)annotation
 {
     SDK_LOG(@"application openURL sourceApplication annotation");
-    [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    [PropertyLessfication application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [SeaariumContinueatory application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        result = [MensLeaderarium application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }
     
     return result;
@@ -64,10 +64,10 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
     SDK_LOG(@"ios9 and later = application openURL options");
-    [AdDelegate application:application openURL:url options:options];
-    BOOL result = [FBDelegate application:application openURL:url options:options];
+    [PropertyLessfication application:application openURL:url options:options];
+    BOOL result = [SeaariumContinueatory application:application openURL:url options:options];
     if (!result) {
-        result = [LineDelegate application:application openURL:url options:options];
+        result = [MensLeaderarium application:application openURL:url options:options];
     }
     return result;
 }
@@ -114,7 +114,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     
@@ -132,7 +132,7 @@
 - (void)sdkLoginWithHandlerForInner
 {
 
-    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+    LaughitorGoator *controller = [[LaughitorGoator alloc] initWithPageType:(SDKPage_Login)];
     //        controller.definesPresentationContext = YES;
 #ifdef __IPHONE_8_0
     if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
@@ -146,7 +146,7 @@
     SDK_LOG(@"not def __IPHONE_8_0");
 #endif
     //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
-    [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
+    [[TyponessHugehood getCurrentViewController] presentViewController: controller animated:NO completion:^{
         
     }];
     
@@ -156,7 +156,7 @@
 
 -(void)showNoticeView
 {
-    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter:^{
+    EnvironmentitudePtychid *mNoticeViewV2 = [[EnvironmentitudePtychid alloc] initWithCompleter:^{
         
         [self sdkLoginWithHandlerForInner];
     }];
@@ -181,12 +181,12 @@
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     // 对必要参数进行检查
-    if ([StringUtil isEmpty:roleId] || [StringUtil isEmpty:roleName] ||
-        [StringUtil isEmpty:roleLevel] ||
-        [StringUtil isEmpty:serverCode])
+    if ([CuspPhloearian isEmpty:roleId] || [CuspPhloearian isEmpty:roleName] ||
+        [CuspPhloearian isEmpty:roleLevel] ||
+        [CuspPhloearian isEmpty:serverCode])
     {
         //NSLog(@"角色重要信息为空,请检查参数中 key-value 是否都有值，key 为 GAMA_PRM_ROLE_ID、GAMA_PRM_ROLE_NAME、GAMA_PRM_ROLE_LEVEL、GAMA_PRM_ROLE_SERVER_ID， 均是 SDK 定义的宏");
-        [AlertUtil showAlertWithMessage:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        [MeetHemisignate showAlertWithMessage:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
         return;
     }
     
@@ -218,27 +218,27 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     
     SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
     
-    if ([StringUtil isEmpty:productId]) {
-        [AlertUtil showAlertWithMessage:@"productId must be not empty"];
+    if ([CuspPhloearian isEmpty:productId]) {
+        [MeetHemisignate showAlertWithMessage:@"productId must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty:roleId]) {
-        [AlertUtil showAlertWithMessage:@"roleId must be not empty"];
+    if ([CuspPhloearian isEmpty:roleId]) {
+        [MeetHemisignate showAlertWithMessage:@"roleId must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty:serverCode]) {
-        [AlertUtil showAlertWithMessage:@"serverCode must be not empty"];
+    if ([CuspPhloearian isEmpty:serverCode]) {
+        [MeetHemisignate showAlertWithMessage:@"serverCode must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty:cpOrderId]) {
-        [AlertUtil showAlertWithMessage:@"cpOrderId must be not empty"];
+    if ([CuspPhloearian isEmpty:cpOrderId]) {
+        [MeetHemisignate showAlertWithMessage:@"cpOrderId must be not empty"];
         return;
     }
     
@@ -261,25 +261,25 @@
     AccountModel *accountModel = sLoginResponse.data;
     
     if (!accountModel || !accountModel.userId) {
-        [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
+        [MeetHemisignate showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
         self.isPaying = NO;
         return;
     }
     
-    [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+    [[CathareryGas shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
         
         self.isPaying = NO;
         
         if (self.payHandler) {
             if (success) {
                
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [PoliticalatoryBellisingleality _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
                 if (!havePay) {
-//                    [AdLogger logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
+//                    [RedyardasterEducationair logWithEventName:AD_EVENT_FIRST_PURCHASE parameters:nil];
                 }
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [PoliticalatoryBellisingleality _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
                 
-                [AdDelegate logEventPurchaseValues:payData type:(AdType_All)];
+                [PropertyLessfication logEventPurchaseValues:payData type:(AdType_All)];
                 self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 
@@ -300,10 +300,10 @@
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
-    [AdLogger logWithEventName:name parameters:eventValues];
+    [RedyardasterEducationair logWithEventName:name parameters:eventValues];
 }
 
 
@@ -312,7 +312,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if (@available(iOS 10.3, *)) {
@@ -326,11 +326,11 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     
-    [[FBDelegate share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [[SeaariumContinueatory share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         
         if (shareBlock) {
             shareBlock(YES,dic);
@@ -347,14 +347,14 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if (!is_Version2) {
-        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        [GenuosityFirst toastMsg: @"当前版本不支持该功能"];
         return;
     }
-    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    PneuclassoriumPollinrealize *mBindPhoneViewV2 = [[PneuclassoriumPollinrealize alloc] init];
     mBindPhoneViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
     [superView addSubview:mBindPhoneViewV2];
@@ -370,15 +370,15 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     
     if (!is_Version2) {
-        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        [GenuosityFirst toastMsg: @"当前版本不支持该功能"];
         return;
     }
-    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
+    CollectionletOmasthing *mBindAccountViewV2 = [[CollectionletOmasthing alloc] initView];
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
     [superView addSubview:mBindAccountViewV2];
@@ -393,30 +393,30 @@
 - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
 {
    
-    if ([StringUtil isEmpty:areaCode]) {
-        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+    if ([CuspPhloearian isEmpty:areaCode]) {
+        [GenuosityFirst toastMsg: @"text_area_code_not_empty".localx];
         return;
     }
-    if ([StringUtil isEmpty:telephone]) {
-        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+    if ([CuspPhloearian isEmpty:telephone]) {
+        [GenuosityFirst toastMsg: @"text_phone_not_empty".localx];
         return;
     }
-//    if (![SdkUtil validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg: @"text_phone_not_match".localx];
+//    if (![GenuosityFirst validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+//        [GenuosityFirst toastMsg: @"text_phone_not_match".localx];
 //        return;
 //    }
     
-    [SDKRequest requestMobileVfCode:areaCode phoneNumber:telephone email:@"" otherDic:nil successBlock:^(id responseData) {
+    [RangeionHer requestMobileVfCode:areaCode phoneNumber:telephone email:@"" otherDic:nil successBlock:^(id responseData) {
         
-//        [SdkUtil toastMsg: @"text_vfcode_has_send".localx];
+//        [GenuosityFirst toastMsg: @"text_vfcode_has_send".localx];
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(LifeenceGenator *error) {
         
 //        if (error.message) {
-//            [AlertUtil showAlertWithMessage:error.message];
+//            [MeetHemisignate showAlertWithMessage:error.message];
 //        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
@@ -427,28 +427,28 @@
 
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
     
-    if ([StringUtil isEmpty:areaCode]) {
-        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+    if ([CuspPhloearian isEmpty:areaCode]) {
+        [GenuosityFirst toastMsg: @"text_area_code_not_empty".localx];
         return;
     }
-    if ([StringUtil isEmpty:telephone]) {
-        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+    if ([CuspPhloearian isEmpty:telephone]) {
+        [GenuosityFirst toastMsg: @"text_phone_not_empty".localx];
         return;
     }
     
-//    if (![SdkUtil validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg: @"text_phone_not_match".localx];
+//    if (![GenuosityFirst validPhone:telephone phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
+//        [GenuosityFirst toastMsg: @"text_phone_not_match".localx];
 //        return;
 //    }
     
-    if ([StringUtil isEmpty:vfCode]) {
-        [SdkUtil toastMsg: @"py_msg_vfcode_hint".localx];
+    if ([CuspPhloearian isEmpty:vfCode]) {
+        [GenuosityFirst toastMsg: @"py_msg_vfcode_hint".localx];
         return;
     }
     
-    [SDKRequest bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
+    [RangeionHer bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
         
-//        [SdkUtil toastMsg: @"text_phone_bind_success".localx];
+//        [GenuosityFirst toastMsg: @"text_phone_bind_success".localx];
         SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
         SDK_DATA.mLoginResponse.data.isBindPhone = YES;
         
@@ -456,10 +456,10 @@
             mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
         }
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(LifeenceGenator *error) {
         
 //        if (error.message) {
-//            [AlertUtil showAlertWithMessage:error.message];
+//            [MeetHemisignate showAlertWithMessage:error.message];
 //        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
@@ -472,25 +472,25 @@
 
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
 {
-    if (![SdkUtil validUserName:account]) {
+    if (![GenuosityFirst validUserName:account]) {
         return;
     }
 
 
-    if (![SdkUtil validPwd:password]) {
+    if (![GenuosityFirst validPwd:password]) {
         return;
     }
     
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
     if (!currentAccountModel) {
-//        [SdkUtil toastMsg:GetString(@"text_select_account")];
+//        [GenuosityFirst toastMsg:GetString(@"text_select_account")];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
     
-    [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
+    [RangeionHer doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
         
-//        [SdkUtil toastMsg:GetString(@"text_account_bind_success2")];
+//        [GenuosityFirst toastMsg:GetString(@"text_account_bind_success2")];
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -498,7 +498,7 @@
         cc.data.loginType = LOGIN_TYPE_SELF;
         SDK_DATA.mLoginResponse = cc;
         
-        [[ConfigCoreUtil share] saveAccountModel:cc.data];
+        [[UsBag share] saveAccountModel:cc.data];
         
 //        [delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
         
@@ -520,9 +520,9 @@
             mMWBlock(YES, loginData);
         }
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(LifeenceGenator *error) {
 //        if (error.message) {
-//            [AlertUtil showAlertWithMessage:error.message];
+//            [MeetHemisignate showAlertWithMessage:error.message];
 //        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
@@ -537,17 +537,17 @@
     SDK_LOG(@"openCs..");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     
     NSString * csurl = SDK_DATA.urls.csUrl;
-    if ([StringUtil isEmpty:csurl]) {
+    if ([CuspPhloearian isEmpty:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
     }
-    NSString *resultURL = [SDKRequest createSdkUrl:csurl];
-    [MWWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    NSString *resultURL = [RangeionHer createSdkUrl:csurl];
+    [TakeFan webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
 
 
@@ -556,7 +556,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){

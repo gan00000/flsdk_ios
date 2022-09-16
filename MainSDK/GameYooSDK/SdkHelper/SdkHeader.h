@@ -9,21 +9,21 @@
 #import "Masonry.h"
 #import "CComHeader.h" //最基本
 
-#import "USDefault.h"
-#import "UIImage+ResBundle.h"
-#import "UIColor+HexStringToColorTW.h"
-#import "UIUtil.h"
-#import "CCSDKDATA.h"
-#import "ConfigCoreUtil.h"
+#import "PoliticalatoryBellisingleality.h"
+#import "UIImage+LystcontinueitGamsion.h"
+#import "UIColor+SignificantationBisward.h"
+#import "StenRoborious.h"
+#import "HeiseLeuker.h"
+#import "UsBag.h"
 #import "LoginResponse.h"
 
-#import "SUtil.h"  //功能相关
+#import "TyponessHugehood.h"  //功能相关
 #import "ResHeader.h" //功能相关
-#import "AdLogger.h"
-#import "StringUtil.h"
-#import "DimeUtil.h"
-#import "SdkUtil.h"
-#import "NSString+Local.h"
+#import "RedyardasterEducationair.h"
+#import "CuspPhloearian.h"
+#import "ThusitionPercreate.h"
+#import "GenuosityFirst.h"
+#import "NSString+WarNonagenly.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -35,8 +35,8 @@
 #define kBgAlpha                         0.9f
 
 
-//#define kInputTextFiledHeight                     [UIUtil getItemHeight]//48.0
-//#define kInputTextFiledMarginLeftRight                 [UIUtil getItemWidthMargin]
+//#define kInputTextFiledHeight                     [StenRoborious getItemHeight]//48.0
+//#define kInputTextFiledMarginLeftRight                 [StenRoborious getItemWidthMargin]
 //#define kInputTextFiledTopMargin                       kInputTextFiledHeight / 7
 //#define kPageTitleHeight                        MIN(kInputTextFiledHeight * 1.6, 40)
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
@@ -44,19 +44,19 @@
 #define ContentViewBgColor                    @"#f4f4f5"
 #define ColorHex(color)  [UIColor colorWithHexString:color]
 
-#define SDK_DATA                           [CCSDKDATA sharedSdkData]
+#define SDK_DATA                           [HeiseLeuker sharedSdkData]
 
 #define GetImage(imageName)     [UIImage res_imageNamed:imageName]
 
-#define appTopViewController    [SUtil getCurrentViewController]
+#define appTopViewController    [TyponessHugehood getCurrentViewController]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 // ------ 是否是 iPhoneX
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries]
+#define device_is_iPhoneX   [TyponessHugehood isIPhoneXSeries]
 
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight:h]
-#define VW(w)  [[DimeUtil share] getViewWidth:w]
-#define FS(size)  [[DimeUtil share] getFontSize:size]
+#define VH(h)  [[ThusitionPercreate share] getViewHeight:h]
+#define VW(w)  [[ThusitionPercreate share] getViewWidth:w]
+#define FS(size)  [[ThusitionPercreate share] getFontSize:size]
 
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)

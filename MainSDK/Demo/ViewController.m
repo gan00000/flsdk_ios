@@ -3,11 +3,8 @@
 
 #import "ViewController.h"
 #import "UserModel.h"
-#import "IAP_ViewController.h"
 #import "ResHeader.h"
 #import "MWSDK.h"
-
-#import "AlertUtil.h"
 
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
 {
@@ -134,7 +131,6 @@
                 NSString *telephone = loginData.telephone;//绑定的手机号码
                 
                 //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
-                [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
             }];
             
@@ -184,11 +180,11 @@
             
             [[MWSDK share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
                 
-                if (success) {
-                    [AlertUtil showAlertWithMessage:@"分享成功"];
-                }else{
-                    [AlertUtil showAlertWithMessage:@"分享失败"];
-                }
+//                if (success) {
+//                    [AlertUtil showAlertWithMessage:@"分享成功"];
+//                }else{
+//                    [AlertUtil showAlertWithMessage:@"分享失败"];
+//                }
             }];
             
         }
@@ -226,7 +222,7 @@
 
 - (void)pay:(NSString *)aProductID {
     
-    NSString *cpOrderId = [SUtil getTimeStamp];//游戏订单ID
+    NSString *cpOrderId = @"xxxx";//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
     [[MWSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
@@ -235,11 +231,11 @@
         switch (status) {
             case SDK_PAY_STATUS_SUCCESS:
                 
-                [AlertUtil showAlertWithMessage:@"充值成功"];
+//                [AlertUtil showAlertWithMessage:@"充值成功"];
                 break;
                 
             case SDK_PAY_STATUS_FAIL:
-                [AlertUtil showAlertWithMessage:@"充值失败"];
+//                [AlertUtil showAlertWithMessage:@"充值失败"];
                 break;
                 
             default:
