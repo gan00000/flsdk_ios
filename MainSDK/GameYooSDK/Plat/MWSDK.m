@@ -579,6 +579,66 @@
 }
 
 
+//推送类型:
+//UNTimeIntervalNotificationTrigger // （本地通知） 一定时间之后，重复或者不重复推送通知。我们可以设置timeInterval（时间间隔）和repeats（是否重复）
+//UNCalendarNotificationTrigger //（本地通知） 一定日期之后，重复或者不重复推送通知 例如，你每天8点推送一个通知，只要dateComponents为8，如果你想每天8点都推送这个通知，只要repeats为YES就可以了
+//UNLocationNotificationTrigger // （本地通知）地理位置的一种通知，当用户进入或离开一个地理区域来通知
+
+- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
+   
+    SDK_LOG(@"addLocalNotificationWithTitle");
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [MeetHemisignate showAlertWithMessage:@"请在主线程调用该接口"];
+        return;
+    }
+    
+    if (@available(iOS 10.0, *)) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        // 标题
+        content.title = title;
+        content.subtitle = subtitle;
+        // 内容
+        content.body = body;
+        // 声音
+       // 默认声音
+        content.sound = [UNNotificationSound defaultSound];
+     // 添加自定义声音
+//       content.sound = [UNNotificationSound soundNamed:@"Alert_ActivityGoalAttained_Salient_Haptic.caf"];
+        // 角标 （我这里测试的角标无效，暂时没找到原因）
+        content.badge = @1;
+        
+        // 添加通知的标识符，可以用于移除，更新等操作
+        if ([CuspPhloearian isEmpty:notifyId]) {
+            notifyId = [TyponessHugehood getMD5StrFromString:title];
+        }
+        
+        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
+        
+        [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {
+            SDK_LOG(@"addLocalNotificationWithTitle 成功添加推送");
+        }];
+        
+    }else {
+//        UILocalNotification *notif = [[UILocalNotification alloc] init];
+//        // 发出推送的日期
+//        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+//        // 推送的内容
+//        notif.alertBody = @"你已经10秒没出现了";
+//        // 可以添加特定信息
+//        notif.userInfo = @{@"noticeId":@"00001"};
+//        // 角标
+//        notif.applicationIconBadgeNumber = 1;
+//        // 提示音
+//        notif.soundName = UILocalNotificationDefaultSoundName;
+//        // 每周循环提醒
+//        notif.repeatInterval = NSCalendarUnitWeekOfYear;
+//
+//        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
+    }
+}
+
 
 #pragma mark - 内部方法
 
