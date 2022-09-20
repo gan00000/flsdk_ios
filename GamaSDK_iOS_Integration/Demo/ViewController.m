@@ -9,6 +9,8 @@
 
 #import "AlertUtil.h"
 
+#import <UserNotifications/UserNotifications.h>
+
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
 {
     NSString *inputText;
@@ -76,6 +78,8 @@
                           @"显示账号升级页面",
                           @"line分享",
                           @"客服",
+                          @"本地定时通知",
+                          @"本地定期通知",
                           ];
     
     /*********************************************
@@ -215,7 +219,14 @@
             break;
         case 9:{
             [[MWSDK share] openCs];
-            
+        }
+            break;
+        case 10:{
+            [self addLocalNotificationForTimeInterval];
+        }
+            break;
+        case 11:{
+            [self addLocalNotificationForDateComponents];
         }
             break;
 
@@ -247,5 +258,32 @@
         }
     }];
 }
+
+- (void)addLocalNotificationForTimeInterval{
+    
+    // 多少秒后发送,可以将固定的日期转化为时间
+    NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:10] timeIntervalSinceNow];
+    // repeats，是否重复，如果重复的话时间必须大于60s，要不会报错
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
+    
+    [[MWSDK share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
+ 
+}
+
+- (void)addLocalNotificationForDateComponents{
+    
+    //如果想重复可以使用这个,按日期
+    // 周一早上 8：00 上班
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    // 注意，weekday默认是从周日开始
+    components.weekday = 3;
+    components.hour = 12;
+    components.minute = 50;
+    UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
+    
+    [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
+   
+}
+
 
 @end
