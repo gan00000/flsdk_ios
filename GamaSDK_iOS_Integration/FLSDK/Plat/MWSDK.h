@@ -163,8 +163,14 @@ completionHandler:(SDKPayBlock) handler;
 /// @param shareBlock 分享的回调
 -(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock;
 
+
+/// 显示SDK内部绑定手机界面
+/// @param mBlock mBlock description
 -(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
 
+
+/// 显示SDK内部升级账号界面
+/// @param mBlock
 -(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
 
 
