@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 #import "LoginData.h"
 #import "PayData.h"
 
@@ -173,6 +174,15 @@ completionHandler:(SDKPayBlock) handler;
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
 
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+
+
+/// <#Description#>  添加本地推送通知
+/// @param title 标题
+/// @param subtitle 副标题
+/// @param body 通知内容
+/// @param trigger 通知的触发条件
+/// @param notifyId  通知标识 id，用于更新、删除
+- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
 @end
 
