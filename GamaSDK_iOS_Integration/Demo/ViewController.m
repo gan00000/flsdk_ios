@@ -200,11 +200,25 @@
         case 6:{
             [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
                 
+                if (success) {
+                    NSLog(@"绑定手机成功");
+                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码
+                }else{
+                    NSLog(@"绑定手机失败");
+                }
+                
             }];
         }
             break;
         case 7:{
             [[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+                if (success) {
+                    NSLog(@"账号升级成功");
+                    LoginData *data = (LoginData*)result;
+                }else{
+                    NSLog(@"账号升级失败");
+                }
                 
             }];
             

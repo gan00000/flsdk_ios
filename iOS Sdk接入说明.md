@@ -13,8 +13,10 @@
 10. [获取手机验证码接口](#12)
 11. [请求绑定手机接口](#13)
 12. [请求升级账号接口](#14)
-13. [客服接口](#15)
-14. [添加本地推送接口](#16)
+13. [显示SDK内部绑定手机页面](#151)
+14. [显示SDK内部升级账号页面](#152)
+15. [客服接口](#15)
+16. [添加本地推送接口](#16)
 
 ----------------
 
@@ -332,6 +334,50 @@
  ///password 密码
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
              
+ ```
+ 
+* <h3 id="151">显示SDK内部绑定手机页面</h3>
+
+ ```
+	 /// 显示SDK内部绑定手机界面
+	/// @param mBlock mBlock description
+	-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
+	
+	demo:
+	
+	[[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+                if (success) {
+                    NSLog(@"绑定手机成功");
+                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码
+                }else{
+                    NSLog(@"绑定手机失败");
+                }
+                
+            }];
+	            
+ ```
+ 
+* <h3 id="152">显示SDK内部升级账号页面</h3>
+
+ ```
+	/// 显示SDK内部升级账号界面
+	/// @param mBlock
+	-(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
+	
+	demo:
+	
+	[[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+                
+                if (success) {
+                    NSLog(@"账号升级成功");
+                    LoginData *data = (LoginData*)result;
+                }else{
+                    NSLog(@"账号升级失败");
+                }
+                
+            }];
+	            
  ```
  
 * <h3 id="15">客服接口</h3>
