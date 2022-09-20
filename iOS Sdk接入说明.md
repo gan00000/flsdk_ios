@@ -13,6 +13,8 @@
 10. [获取手机验证码接口](#12)
 11. [请求绑定手机接口](#13)
 12. [请求升级账号接口](#14)
+13. [客服接口](#15)
+14. [添加本地推送接口](#16)
 
 ----------------
 
@@ -329,6 +331,48 @@
  ///account 账号
  ///password 密码
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+             
+ ```
+ 
+* <h3 id="15">客服接口</h3>
+
+ ```
+ - (void)openCs;
+             
+ ```
+ 
+* <h3 id="16">添加本地推送接口</h3>
+
+ ```
+ /// <#Description#>  添加本地推送通知
+/// @param title 标题
+/// @param subtitle 副标题
+/// @param body 通知内容
+/// @param trigger 通知的触发条件
+/// @param notifyId  通知标识 id，用于更新、删除
+- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
+
+	simple:
+
+	// 多少秒后发送,可以将固定的日期转化为时间
+    NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:10] timeIntervalSinceNow];
+    // repeats，是否重复，如果重复的话时间必须大于60s，要不会报错
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
+    
+    [[MWSDK share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
+    
+    或者：
+    
+    //如果想重复可以使用这个,按日期
+    // 周一早上 8：00 上班
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    // 注意，weekday默认是从周日开始
+    components.weekday = 3;
+    components.hour = 12;
+    components.minute = 50;
+    UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
+    
+    [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
              
  ```
 
