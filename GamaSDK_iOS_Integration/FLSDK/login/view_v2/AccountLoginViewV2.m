@@ -702,8 +702,11 @@
     }];
     
     UIButton *cancelBtn = [UIUtil initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
+    cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    cancelBtn.layer.borderWidth = 1;
+    
     [deleteView addSubview:cancelBtn];
     [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
@@ -714,10 +717,10 @@
     }];
     
     UIButton *sureBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
-    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
-    sureBtn.layer.borderWidth = 1;
+//    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sureBtn.layer.borderWidth = 1;
     
     [deleteView addSubview:sureBtn];
     [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
