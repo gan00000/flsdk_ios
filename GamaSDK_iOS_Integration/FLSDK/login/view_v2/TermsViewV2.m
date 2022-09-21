@@ -12,6 +12,7 @@
 #import "SdkHeader.h"
 #import "LoginButton.h"
 #import "LoginTitleView.h"
+#import "ViewUtil.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE @"sdk_provisions_first_enble"
 @interface TermsViewV2 ()
@@ -145,6 +146,12 @@
         make.height.mas_equalTo(VH(32));
     }];
     
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius:VH(16)];
+    [okBtn.layer addSublayer:gl];
+    
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        gl.frame = okBtn.bounds;
+    }];
     
     UIView *xView = [[UIView alloc] init];
     //xView.backgroundColor = [UIColor colorWithHexString:@"#E4E4E4"];

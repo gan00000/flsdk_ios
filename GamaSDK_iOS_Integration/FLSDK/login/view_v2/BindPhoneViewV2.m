@@ -9,6 +9,7 @@
 #import "CountTimerDelegate.h"
 #import "PhoneInfoModel.h"
 #import "SDKRequest.h"
+#import "ViewUtil.h"
 
 @interface BindPhoneViewV2 () <CountTimerDelegate,PhoneInfoModelDelegate>
 
@@ -213,7 +214,7 @@
     getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(action:) target:self];
     
     
-    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
     getVfCodeBtn.layer.borderWidth = 0.5;
     getVfCodeBtn.layer.cornerRadius = VH(20);
     //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
@@ -241,6 +242,11 @@
         make.height.mas_equalTo(VH(40));
     }];
     
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius:VH(20)];
+    [okBtn.layer addSublayer:gl];
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        gl.frame = okBtn.bounds;
+    }];
     
     hasBindPhoneTips = [UIUtil initLabelWithText:@"text_has_phone_bind_tips".localx fontSize:FS(12) textColor:ColorHex(@"#4B4B4B")];
     [contentView addSubview:hasBindPhoneTips];

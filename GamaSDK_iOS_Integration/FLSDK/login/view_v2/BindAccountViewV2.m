@@ -16,6 +16,7 @@
 #import "SdkUtil.h"
 #import "AccountLoginView.h"
 #import "SDKRequest.h"
+#import "ViewUtil.h"
 
 @implementation BindAccountViewV2
 
@@ -215,6 +216,11 @@
         }];
         
       
+        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius:VH(20)];
+        [okBtn.layer addSublayer:gl];
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            gl.frame = okBtn.bounds;
+        }];
     }
     return self;
 }

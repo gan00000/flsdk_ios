@@ -72,7 +72,7 @@
     
     
     UIView *titleView = [[UIView alloc] init];
-    titleView.backgroundColor = [UIColor colorWithHexString:BaseColor];
+    titleView.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
     [contentView addSubview:titleView];
     [titleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(contentView.mas_top);
