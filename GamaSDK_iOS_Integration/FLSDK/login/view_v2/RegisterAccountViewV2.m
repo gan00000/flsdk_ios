@@ -16,6 +16,7 @@
 #import "SdkUtil.h"
 #import "SAppleLogin.h"
 #import "LoginHelper.h"
+#import "ViewUtil.h"
 
 @implementation RegisterAccountViewV2
 {
@@ -26,11 +27,6 @@
     UIButton *regAccountBtn; //確定按鈕
     LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
-//    NSTimer *downTimer;
-//    UIButton *getVfCodeBtn;
-    
-//    PhoneView *mPhoneView;
-    
 }
 
 
@@ -203,6 +199,12 @@
             make.leading.trailing.equalTo(accountSDKTextFiledView);
             make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(34));
             make.height.mas_equalTo(VH(50));
+        }];
+        
+        CAGradientLayer *glLayer = [ViewUtil createGradientLayerWithRadius:VH(25)];
+        [regAccountBtn.layer addSublayer:glLayer];
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            glLayer.frame = regAccountBtn.bounds;
         }];
         
         

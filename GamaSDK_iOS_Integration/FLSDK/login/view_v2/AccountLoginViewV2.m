@@ -25,6 +25,7 @@
 #import "LoginButtonData.h"
 #import "TermsViewV2.h"
 #import "BasePopupView.h"
+#import "ViewUtil.h"
 
 @interface AccountLoginViewV2()
 
@@ -55,6 +56,8 @@
     
     UIView *deleteAccountConfireView;
     UIView *deleteBtnView;
+    
+    CAGradientLayer *loginGl;
 }
 
 /*
@@ -195,8 +198,11 @@
         accountLoginBtn = [UIUtil initBtnWithTitleText:@"text_login".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+//        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
         [self addSubview:accountLoginBtn];
+        
+        loginGl = [ViewUtil createGradientLayerWithRadius:VH(20)];
+        [accountLoginBtn.layer addSublayer:loginGl];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -204,6 +210,11 @@
             make.width.mas_equalTo(accountSDKTextFiledView);
             make.height.mas_equalTo(VH(40));
         }];
+        
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            loginGl.frame = accountLoginBtn.bounds;
+        }];
+        
         
         
         UIView *loginTypeView = [[UIView alloc] init];

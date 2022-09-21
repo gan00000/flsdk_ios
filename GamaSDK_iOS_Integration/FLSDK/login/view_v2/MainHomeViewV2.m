@@ -16,6 +16,7 @@
 #import "LoginHelper.h"
 #import "SAppleLogin.h"
 #import "TermsViewV2.h"
+#import "ViewUtil.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -27,6 +28,8 @@
 {
     UIButton *guestLoginBtn;
     UIButton *checkBoxTermsBtn;
+    
+    CAGradientLayer *guestBtnGradientLayer;
     
 }
 
@@ -47,6 +50,7 @@
     }
     return self;
 }
+
 
 -(void)addView
 {
@@ -87,7 +91,15 @@
     guestLoginBtn = [UIUtil initBtnWithTitleText:@"" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+//    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+    
+    // gradient
+    guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius:VH(25)];
+    [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
+    
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        guestBtnGradientLayer.frame = guestLoginBtn.bounds;
+    }];
     
     [contentView addSubview:guestLoginBtn];
     
