@@ -128,6 +128,7 @@
 		0332F57528C5B44C00B7A99F /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */; };
 		0332F57628C5B44C00B7A99F /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
+		033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
 		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -1925,6 +1926,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */,
 				037B562728BDA67D007A3434 /* SDKResources.bundle in Resources */,
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
