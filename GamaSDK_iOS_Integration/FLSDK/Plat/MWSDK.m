@@ -606,8 +606,8 @@
         content.sound = [UNNotificationSound defaultSound];
      // 添加自定义声音
 //       content.sound = [UNNotificationSound soundNamed:@"Alert_ActivityGoalAttained_Salient_Haptic.caf"];
-        // 角标 （我这里测试的角标无效，暂时没找到原因）
-        content.badge = @1;
+        // 角标，桌面icon 小红标数量
+//        content.badge = @(1);
         
         // 添加通知的标识符，可以用于移除，更新等操作
         if ([StringUtil isEmpty:notifyId]) {

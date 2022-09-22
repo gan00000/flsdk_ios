@@ -158,9 +158,9 @@
 - (void)sdk_applicationDidBecomeActive:(UIApplication *)application
 {
     // 应用每次启动时，将应用icon上的数字减1（前提是原本大于或等于1）
-//    if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
-//        --[UIApplication sharedApplication].applicationIconBadgeNumber;
-//    }
+    if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
+        --[UIApplication sharedApplication].applicationIconBadgeNumber;
+    }
     
     [AdDelegate applicationDidBecomeActive:application];
     
@@ -237,6 +237,14 @@
       // Print full message.
       NSLog(@"%@", userInfo);
 
+//    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    // 应用每次启动时，将应用icon上的数字减1（前提是原本大于或等于1）
+    if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
+        --[UIApplication sharedApplication].applicationIconBadgeNumber;
+    }
+    
+//    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+//    [[UNUserNotificationCenter currentNotificationCenter] removeAllDeliveredNotifications];
       completionHandler();
     
 }
