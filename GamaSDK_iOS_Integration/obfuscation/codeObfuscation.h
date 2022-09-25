@@ -47,7 +47,7 @@
 #define createOrderWithproductId   performAnyone
 #define createSdkUrl   erriteGnarfier
 #define customUUID   buildmostLotsion
-#define deleteAccount   acrLifeence
+#define requestDeleteUserAccount   acrLifeence
 #define deleteAccountAndRequest   proliProduceent
 #define doAccountBindingWithUserName   pravDogwise
 #define doChangePasswordWithUserName   lightfierBecomeetic
@@ -243,7 +243,7 @@
 #define validPhone   felinstateaceousHugeent
 #define validPwd   todayationBrachyial
 #define validUserName   irascPylel
-
+#define paymentWithTransactionId   irascJJSAPPylel
 
 #else
 

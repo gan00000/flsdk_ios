@@ -348,7 +348,7 @@
 + (void)deleteAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)accountMode otherParamsDic:(NSDictionary *)otherParamsDic successBlock:(void(^)())successBlock
 {
     
-    [SDKRequest deleteAccount:accountMode otherParamsDic:otherParamsDic successBlock:^(id responseData) {
+    [SDKRequest requestDeleteUserAccount:accountMode otherParamsDic:otherParamsDic successBlock:^(id responseData) {
         
         LoginResponse *cc = (LoginResponse *)responseData;
         [SdkUtil toastMsg:cc.message];

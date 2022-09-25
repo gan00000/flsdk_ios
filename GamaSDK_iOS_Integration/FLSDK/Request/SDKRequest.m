@@ -607,7 +607,7 @@
     
 }
 
-+ (void)deleteAccount:(AccountModel *)accountMode
++ (void)requestDeleteUserAccount:(AccountModel *)accountMode
                       otherParamsDic:(NSDictionary *)otherParamsDic
                         successBlock:(BJServiceSuccessBlock)successBlock
                           errorBlock:(BJServiceErrorBlock)errorBlock
