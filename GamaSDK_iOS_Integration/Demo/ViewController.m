@@ -289,7 +289,7 @@
     //如果想重复可以使用这个,按日期
     // 周一早上 8：00 上班
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    // 注意，weekday默认是从周日开始
+    // 注意，weekday默认是从周日开始   Sunday == 1, Saturday == 7
     components.weekday = 3;
     components.hour = 12;
     components.minute = 50;
