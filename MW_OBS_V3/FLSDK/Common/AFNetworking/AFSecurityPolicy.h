@@ -1,161 +1,85 @@
-// AFSecurityPolicy.h
-// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <Security/Security.h>
-
-typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
-    AFSSLPinningModeNone,
-    AFSSLPinningModePublicKey,
-    AFSSLPinningModeCertificate,
-};
 
 /**
- `AFSecurityPolicy` evaluates server trust against pinned X.509 certificates and public keys over secure connections.
+  raid of you… I'm only afraid of losing you. Like you're going to disappear…
+现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
+You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, masochistic lion.
+你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
+图片
+I love three things in  
+**/
+#import <Security/Security.h>
+typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
 
- Adding pinned SSL certificates to your app helps prevent man-in-the-middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an HTTPS connection with SSL pinning configured and enabled.
- */
+/**
+  t let them d 
+**/
+    AFSSLPinningModeNone,
 
+/**
+  hose who love you. The worth of our lives comes, not in what we do or who we know, but by Who We Are.” 
+**/
+    AFSSLPinningModePublicKey,
+    AFSSLPinningModeCertificate,
+
+/**
+  rove your success rate, too. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidence. It also forces you to be introspective about what works in ways you might not otherwise.
+
+奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建议时，这会增强你的自信。这样也会迫使你反省自己的方法是否对路。
+
+1. Make a  
+**/
+};
 NS_ASSUME_NONNULL_BEGIN
-
 @interface AFSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 
 /**
- The criteria by which server trust should be evaluated against the pinned SSL certificates. Defaults to `AFSSLPinningModeNone`.
- */
+  t you.
+
+
+
+尽管实现梦想的 
+**/
 @property (readonly, nonatomic, assign) AFSSLPinningMode SSLPinningMode;
-
-/**
- The certificates used to evaluate server trust according to the SSL pinning mode. 
- 
- Note that if pinning is enabled, `evaluateServerTrust:forDomain:` will return true if any pinned certificate matches.
-
- @see policyWithPinningMode:withPinnedCertificates:
- */
+//from you anymore.
+//我再也没有离开你的力气了。
+//Your number was up the first time l met you.
+//第一次遇见我，你就在劫难逃了。
+//You're in here because of me.
+//你在这里，是因为有我。
+//Nobody's ever loved anybody as much as I love you.
 @property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
-
-/**
- Whether or not to trust servers with an invalid or expired SSL certificates. Defaults to `NO`.
- */
+// end, that's what often matters most to achieving a New Year's resolution.
+//
+//如果锻炼或学习没有乐趣，就不太可能坚持下去。但研究发现如果你从锻炼或学习中获得乐趣，就会坚持得更久。而最终，这往往是实现新年计划的最重要因素。
+//
+//
+//
+//One way to make pursuing a goal that normally feels like a chore more
 @property (nonatomic, assign) BOOL allowInvalidCertificates;
-
-/**
- Whether or not to validate the domain name in the certificate's CN field. Defaults to `YES`.
- */
 @property (nonatomic, assign) BOOL validatesDomainName;
-
-///-----------------------------------------
-/// @name Getting Certificates from the Bundle
-///-----------------------------------------
-
-/**
- Returns any certificates included in the bundle. If you are using AFNetworking as an embedded framework, you must use this method to find the certificates you have included in your app bundle, and use them when creating your security policy by calling `policyWithPinningMode:withPinnedCertificates`.
-
- @return The certificates included in the given bundle.
- */
 + (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
-
-///-----------------------------------------
-/// @name Getting Specific Security Policies
-///-----------------------------------------
-
-/**
- Returns the shared default security policy, which does not allow invalid certificates, validates domain name, and does not validate against pinned certificates or public keys.
-
- @return The default security policy.
- */
 + (instancetype)defaultPolicy;
-
-///---------------------
-/// @name Initialization
-///---------------------
-
-/**
- Creates and returns a security policy with the specified pinning mode.
- 
- Certificates with the `.cer` extension found in the main bundle will be pinned. If you want more control over which certificates are pinned, please use `policyWithPinningMode:withPinnedCertificates:` instead.
-
- @param pinningMode The SSL pinning mode.
-
- @return A new security policy.
-
- @see -policyWithPinningMode:withPinnedCertificates:
- */
 + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode;
-
-/**
- Creates and returns a security policy with the specified pinning mode.
-
- @param pinningMode The SSL pinning mode.
- @param pinnedCertificates The certificates to pin against.
-
- @return A new security policy.
-
- @see +certificatesInBundle:
- @see -pinnedCertificates
-*/
 + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
-
-///------------------------------
-/// @name Evaluating Server Trust
-///------------------------------
-
-/**
- Whether or not the specified server trust should be accepted, based on the security policy.
-
- This method should be used when responding to an authentication challenge from a server.
-
- @param serverTrust The X.509 certificate trust of the server.
- @param domain The domain of serverTrust. If `nil`, the domain will not be validated.
-
- @return Whether or not to trust the server.
- */
 - (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
+// a few people about your goal so you'll feel ashamed if they check back later and find out you haven't followed through.
+//
+//一个简单的方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
+//
+//
+//
+//A steeper penalty than shame, however, is putting cold hard cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can 
                   forDomain:(nullable NSString *)domain;
-
 @end
-
 NS_ASSUME_NONNULL_END
-
-///----------------
-/// @name Constants
-///----------------
-
-/**
- ## SSL Pinning Modes
-
- The following constants are provided by `AFSSLPinningMode` as possible SSL pinning modes.
-
- enum {
- AFSSLPinningModeNone,
- AFSSLPinningModePublicKey,
- AFSSLPinningModeCertificate,
- }
-
- `AFSSLPinningModeNone`
- Do not used pinned certificates to validate servers.
-
- `AFSSLPinningModePublicKey`
- Validate host certificates against public keys of pinned certificates.
-
- `AFSSLPinningModeCertificate`
- Validate host certificates against pinned certificates.
-*/
+//not otherwise.
+//
+//奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建议时，这会增强你的自信。这样也会迫使你反省自己的方法是否对路。
+//
+//1. Make a schedule, and stick to it
+//
+//每天在固定时间起床和上床
+//
+//Melatonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is s

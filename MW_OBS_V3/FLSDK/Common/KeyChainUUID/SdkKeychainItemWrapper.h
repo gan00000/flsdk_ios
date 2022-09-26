@@ -1,74 +1,54 @@
-/*
-     File: KeychainItemWrapper.h
- Abstract: 
- Objective-C wrapper for accessing a single keychain item.
- 
-  Version: 1.2
- 
- Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
- Inc. ("Apple") in consideration of your agreement to the following
- terms, and your use, installation, modification or redistribution of
- this Apple software constitutes acceptance of these terms.  If you do
- not agree with these terms, please do not use, install, modify or
- redistribute this Apple software.
- 
- In consideration of your agreement to abide by the following terms, and
- subject to these terms, Apple grants you a personal, non-exclusive
- license, under Apple's copyrights in this original Apple software (the
- "Apple Software"), to use, reproduce, modify and redistribute the Apple
- Software, with or without modifications, in source and/or binary forms;
- provided that if you redistribute the Apple Software in its entirety and
- without modifications, you must retain this notice and the following
- text and disclaimers in all such redistributions of the Apple Software.
- Neither the name, trademarks, service marks or logos of Apple Inc. may
- be used to endorse or promote products derived from the Apple Software
- without specific prior written permission from Apple.  Except as
- expressly stated in this notice, no other rights or licenses, express or
- implied, are granted by Apple herein, including but not limited to any
- patent rights that may be infringed by your derivative works or by other
- works in which the Apple Software may be incorporated.
- 
- The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
- MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
- THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
- FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
- OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
- 
- IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
- OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
- MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
- AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
- STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- 
- Copyright (C) 2010 Apple Inc. All Rights Reserved.
- 
-*/
 
 #import <UIKit/UIKit.h>
-
-/*
-    The KeychainItemWrapper class is an abstraction layer for the iPhone Keychain communication. It is merely a 
-    simple wrapper to provide a distinct barrier between all the idiosyncracies involved with the Keychain
-    CF/NS container objects.
-*/
+//ed.
+//
+//幸运的是，有一种方法可以避免这种宿命。研究表明，设定困难的目标（比如每晚10点入睡），但每周给自己一两张豁免卡，就可以比设定没有回旋余地的或难或易的目标获得更好的结果。
+//
+//
+//
+//5.Get a little help from your friends
+//
+//借
 @interface SdkKeychainItemWrapper : NSObject{
-    NSMutableDictionary *keychainItemData;		// The actual keychain item data backing store.
-    NSMutableDictionary *genericPasswordQuery;	// A placeholder for the generic keychain item query used to locate the item.
-}
+    NSMutableDictionary *keychainItemData;
 
+/**
+  is $20. to one of you. but first, let me do this."
+
+
+
+开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
+
+
+ 
+**/
+    NSMutableDictionary *genericPasswordQuery;
+}
 @property (nonatomic, retain) NSMutableDictionary *keychainItemData;
+
+/**
+  究人员称之为“去他的效应”。就比如这样：你计划每晚早睡，但忍不住在某个星期五熬夜多看一集《继承之战》，此后你的早睡计划泡汤了，因为“去他的”反正你已经失败了。
+
+
+
+Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourself one or two get-out-of-jail-free cards 
+**/
 @property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
 @property (nonatomic, assign) NSUInteger scabioeryAllelrecognize;
-
-// Designated initializer.
 - (id)initWithIdentifier: (NSString *)identifier accessGroup:(NSString *) accessGroup;
+
+/**
+  cing mind and allow you to fall asleep."
+
+他说：“比如说你需要提早上床睡觉。床将能帮助你安抚纷繁的思绪，让你酣然入睡。”
+
+3. Change your attitude about sleep
+
+改变对睡眠的心态
+
+Many people view sle 
+**/
 - (void)setObject:(id)inObject forKey:(id)key;
 - (id)objectForKey:(id)key;
-
-// Initializes and resets the default generic keychain item data.
 - (void)resetKeychainItem;
-
 @end

@@ -1,285 +1,316 @@
-// AFHTTPSessionManager.h
-// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
 #if !TARGET_OS_WATCH
 #import <SystemConfiguration/SystemConfiguration.h>
 #endif
+//期结束时，也就没有理由再去伤心。
+//图片
+//Bella, the only reason I left was because I thought I was protecting you.
+//我离开你的唯一原因是因为我觉得这能保护你。
+//I don’t have th strength to stay away from you any
 #import <TargetConditionals.h>
-
 #import "AFURLSessionManager.h"
 
 /**
- `AFHTTPSessionManager` is a subclass of `AFURLSessionManager` with convenience methods for making HTTP requests. When a `baseURL` is provided, requests made with the `GET` / `POST` / et al. convenience methods can be made with relative paths.
+  chedule, and stick to it
 
- ## Subclassing Notes
+每天在固定时间起床和上床
 
- Developers targeting iOS 7 or Mac OS X 10.9 or later that deal extensively with a web service are encouraged to subclass `AFHTTPSessionManager`, providing a class method that returns a shared singleton object on which authentication and other configuration can be shared across the application.
-
- ## Methods to Override
-
- To change the behavior of all data task operation construction, which is also used in the `GET` / `POST` / et al. convenience methods, override `dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:`.
-
- ## Serialization
-
- Requests created by an HTTP client will contain default headers and encode parameters according to the `requestSerializer` property, which is an object conforming to `<AFURLRequestSerialization>`.
-
- Responses received from the server are automatically validated and serialized by the `responseSerializers` property, which is an object conforming to `<AFURLResponseSerialization>`
-
- ## URL Construction Using Relative Paths
-
- For HTTP convenience methods, the request serializer constructs URLs from the path relative to the `-baseURL`, using `NSURL +URLWithString:relativeToURL:`, when provided. If `baseURL` is `nil`, `path` needs to resolve to a valid `NSURL` object using `NSURL +URLWithString:`.
-
- Below are a few examples of how `baseURL` and relative paths interact:
-
-    NSURL *baseURL = [NSURL URLWithString:@"http://example.com/v1/"];
-    [NSURL URLWithString:@"foo" relativeToURL:baseURL];                  // http://example.com/v1/foo
-    [NSURL URLWithString:@"foo?bar=baz" relativeToURL:baseURL];          // http://example.com/v1/foo?bar=baz
-    [NSURL URLWithString:@"/foo" relativeToURL:baseURL];                 // http://example.com/foo
-    [NSURL URLWithString:@"foo/" relativeToURL:baseURL];                 // http://example.com/v1/foo
-    [NSURL URLWithString:@"/foo/" relativeToURL:baseURL];                // http://example.com/foo/
-    [NSURL URLWithString:@"http://example2.com/" relativeToURL:baseURL]; // http://example2.com/
-
- Also important to note is that a trailing slash will be added to any `baseURL` without one. This would otherwise cause unexpected behavior when constructing URLs using paths without a leading slash.
-
- @warning Managers for background sessions must be owned for the duration of their use. This can be accomplished by creating an application-wide or shared singleton instance.
- */
-
+Melatonin is a hormone produced by the body to regulate when you get sleepy and when you w 
+**/
 NS_ASSUME_NONNULL_BEGIN
-
 @interface AFHTTPSessionManager : AFURLSessionManager <NSSecureCoding, NSCopying>
-
-/**
- The URL used to construct requests from relative paths in methods like `requestWithMethod:URLString:parameters:`, and the `GET` / `POST` / et al. convenience methods.
- */
 @property (readonly, nonatomic, strong, nullable) NSURL *baseURL;
-
-/**
- Requests created with `requestWithMethod:URLString:parameters:` & `multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:` are constructed with a set of default headers using a parameter serialization specified by this property. By default, this is set to an instance of `AFHTTPRequestSerializer`, which serializes query string parameters for `GET`, `HEAD`, and `DELETE` requests, or otherwise URL-form-encodes HTTP message bodies.
-
- @warning `requestSerializer` must not be `nil`.
- */
 @property (nonatomic, strong) AFHTTPRequestSerializer <AFURLRequestSerialization> * requestSerializer;
 
 /**
- Responses sent from the server in data tasks created with `dataTaskWithRequest:success:failure:` and run using the `GET` / `POST` / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an instance of `AFJSONResponseSerializer`.
+  ate something crucial.
+他把那双眼睛的全部魅力都释放在我身上了，好像试图跟我说某件至关重要的事情似的。
+图片
+《暮光之城》插曲
+图片
 
- @warning `responseSerializer` must not be `nil`.
- */
+ 《Flightless Bird, American Mouth》是由Iron & Wine乐 
+**/
 @property (nonatomic, strong) AFHTTPResponseSerializer <AFURLResponseSerialization> * responseSerializer;
 
-///-------------------------------
-/// @name Managing Security Policy
-///-------------------------------
-
 /**
- The security policy used by created session to evaluate server trust for secure connections. `AFURLSessionManager` uses the `defaultPolicy` unless otherwise specified. A security policy configured with `AFSSLPinningModePublicKey` or `AFSSLPinningModeCertificate` can only be applied on a session manager initialized with a secure base URL (i.e. https). Applying a security policy with pinning enabled on an insecure session manager throws an `Invalid Security Policy` exception.
- */
+  ple about your goal so you'll feel ashamed if they check back later and find out you haven't followed through.
+
+一个简单的方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
+
+
+
+A steeper penalty than shame, however, is putting cold hard cash on the table, and there is excellent evidence tha 
+**/
 @property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
-///---------------------
-/// @name Initialization
-///---------------------
-
 /**
- Creates and returns an `AFHTTPSessionManager` object.
- */
+  运的是，有一种方法可以避免这种宿命。研究表明，设定困难的目标（比如每晚10点入睡），但每周给自己一两张豁免卡，就可以比设定没有回旋余地的或难或易的目标获得更好的结果。
+
+
+
+5.Get a little help from your friends
+
+借助朋友的帮助
+
+
+
+Spending time around high achievers can boost your own performance. I 
+**/
 + (instancetype)manager;
-
-/**
- Initializes an `AFHTTPSessionManager` object with the specified base URL.
-
- @param url The base URL for the HTTP client.
-
- @return The newly-initialized HTTP client
- */
 - (instancetype)initWithBaseURL:(nullable NSURL *)url;
-
-/**
- Initializes an `AFHTTPSessionManager` object with the specified base URL.
-
- This is the designated initializer.
-
- @param url The base URL for the HTTP client.
- @param configuration The configuration used to create the managed session.
-
- @return The newly-initialized HTTP client
- */
+//body doesn't know how to respond.
+//
+//临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知道如何作出反应。
+//
+//Therefore it's important to have a standard wake up time, even on week
 - (instancetype)initWithBaseURL:(nullable NSURL *)url
            sessionConfiguration:(nullable NSURLSessionConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
 
-///---------------------------
-/// @name Making HTTP Requests
-///---------------------------
-
 /**
- Creates and runs an `NSURLSessionDataTask` with a `GET` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param downloadProgress A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
- */
+  cally.
+
+没有足够的言语能表达我有多想念你，我想念我们在一起。
+
+My heart aches and I miss you so bad.
+
+我的心很疼，我很想念你。
+Catch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still sparkle before you. Always believe that your ultimate goal is attainable as long as you commit yourself to it.
+
+
+
+追随能够改变你命运的那颗星，那颗永远在 
+**/
 - (nullable NSURLSessionDataTask *)GET:(NSString *)URLString
                             parameters:(nullable id)parameters
                                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+
+/**
+  n what we do or who we know, but by Who We Are.”
+
+
+
+“无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了什么，或者我们认识谁，生活的价值在于我们是谁。”
+
+
+
+“You are special ——don't ever forget it.”
+
+
+
+“你是与众不同的，永远不要忘记这一点!”
+
+不要醒着躺在床上
+
+It's a golden rule in sleep medicine, backed by "decades of data," Grandner said. In fact, he sai 
+**/
                               progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
                                success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+
+/**
+  roduce rapid progress. If you want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an even more important part of the equation: whether you enjoy the act of goal p 
+**/
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `HEAD` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
+   it comes to achieving our goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you 
+**/
 - (nullable NSURLSessionDataTask *)HEAD:(NSString *)URLString
                              parameters:(nullable id)parameters
+// morning kisses and the morning snuggling you and I shared.
+//
+//我想念早上的吻，早上依偎着你和我分享。
+//
+//I miss you. I miss going to work in the morning and knowing that at the end of the day,
+//
+//我想你。我想念早上去上班，直到在一天结束的时候，
+//
+//I will find you waiting for me outside the office and have dinner together.
+//
+//我会发现你在办公室外等我，一起吃饭。
+//
+//I miss you. I miss our late night walks and how you and I would eat ice cream.
+//
+//我想你。我想念我们深夜散
                                 headers:(nullable NSDictionary <NSString *, NSString *> *)headers
                                 success:(nullable void (^)(NSURLSessionDataTask *task))success
+
+/**
+  atest weakness ,then going all you can do to protect each other.
+爱就是让对方成为自己最大的弱点，然后再用尽全力守护彼此。
+Is it not enough just to have a long and happy life with me?
+只是跟我共度幸福美满的漫长一生，难道还不够吗？
+Only for making me want to you badly. I still don't know if I can control myself.
+就是因 
+**/
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `POST` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
- */
+  目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明，专注于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
+
+
+
+If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or study sessions,  
+**/
 - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
+
+/**
+  阻止身体分泌褪黑素，所以白天来临时褪黑素水平就会下降，让你准备好迎接新的一天。
+
+To wo 
+**/
                              parameters:(nullable id)parameters
                                 headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+
+/**
+   advised. "See your sleep as the amount of time you need in order to set yourself up for a productive tomorrow."
+
+他建 
+**/
                                progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
                                 success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+
+/**
+  ne become your greatest weakness ,then going all you can do to protect each other.
+爱就是让对方成为自己最大的弱点，然后再用尽全力守护彼此。
+Is it not enough just to have a long and happy life with me?
+只是跟我共度幸福美满的漫长一生，难道还不够吗？
+Only for making me want to you badly. I still don't know if I can control myself.
+就是因为发觉自己多么渴望想得到你，我到现在还不知道是否控制得了自己。
+When life offer 
+**/
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a multipart `POST` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param block A block that takes a single argument and appends data to the HTTP body. The block argument is an object adopting the `AFMultipartFormData` protocol.
- @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
- */
+  
+
+开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
+
+
+
+He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the hands were up in the air.
+
+
+
+他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
+
+
+
+“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants i 
+**/
 - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
                              parameters:(nullable id)parameters
                                 headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+//rstand that you may make mistakes, but don’t let them discourage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired t
               constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
                                progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
                                 success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
-/**
- Creates and runs an `NSURLSessionDataTask` with a `PUT` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
+//冥想五天，那么像“我将在工作日冥想”这样的计划就太模糊了。但是，“我将在工作日的午休时间在办公室冥想”这样有信息提示的计划就很合适。
+//
+//
+//
+//Plotting when and where you'll execute on your New Year's resolution jogs your memory when it's opportune and generates guilt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you p
 - (nullable NSURLSessionDataTask *)PUT:(NSString *)URLString
                             parameters:(nullable id)parameters
+
+/**
+  。坚持不懈，你就能享受那些幸福时刻。
+
+
+
+Take pride in your accomplishments, as they are stepping stones to your dreams. Understand that you may make mista 
+**/
                                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
                                success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
-/**
- Creates and runs an `NSURLSessionDataTask` with a `PATCH` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
 - (nullable NSURLSessionDataTask *)PATCH:(NSString *)URLString
                               parameters:(nullable id)parameters
                                  headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+//to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the hands were up in the air.
+//
+//
+//
+//他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
+//
+//
+//
+//“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?
                                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `DELETE` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
+  讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
+
+
+
+Hands started g 
+**/
 - (nullable NSURLSessionDataTask *)DELETE:(NSString *)URLString
                                parameters:(nullable id)parameters
                                   headers:(nullable NSDictionary <NSString *, NSString *> *)headers
                                   success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                   failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
-/**
- Creates an `NSURLSessionDataTask` with a custom `HTTPMethod` request.
-
- @param method The HTTPMethod string used to create the request.
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
- @param downloadProgress A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
-
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
- */
 - (nullable NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
                                                 URLString:(NSString *)URLString
+
+/**
+  是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这首收录在《暮光之城》中的惊艳单曲会带给你寂静深夜中属于你的美好爱情回忆录！
+
+《Flightless Bird, American Mouth》
+
+MV
+图片
+
+
+
+
+
+《Flightless Bird, American  
+**/
                                                parameters:(nullable id)parameters
                                                   headers:(nullable NSDictionary <NSString *, NSString *> *)headers
                                            uploadProgress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
-                                         downloadProgress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
-                                                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
+/**
+  o your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
+
+正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示，能帮助你记住何时行动。一定要详细说明你将在何时何地做什么。
+
+
+
+If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue 
+**/
+                                         downloadProgress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+//re blunt tongue
+//咒骂着我那因发炎而没有知觉的舌头
+//Watching the warm poison rats
+//看着刚被毒死的老鼠
+//Curl through the wide fence cracks
+//卷曲的毛穿过白色围篱的大裂缝
+//Pissing on magazine photos
+//亲着杂志上的照片
+//
+                                                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+
+/**
+  et ready to go to bed whether you're done or not," Grander said. "The problem is we don't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
+
+There are no 
+**/
+                                                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 @end
 
+/**
+  as the final thing they have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, office work or the latest binge-worthy television series.
+
+许多人将睡眠视为忙碌的一天后要做的最后一件事，为了完成家务、作业、工作或追新剧，晚点再睡也没事。
+
+That thinking needs to be changed, Grander said.
+
+格兰德纳说，这种想法必须改变。
+
+"Don't see your sleep as the amount of  
+**/
 NS_ASSUME_NONNULL_END

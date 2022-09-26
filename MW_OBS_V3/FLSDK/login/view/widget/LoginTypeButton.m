@@ -1,60 +1,63 @@
-//
-//  LoginTypeButton.m
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import "LoginTypeButton.h"
-#import "Masonry.h"
 
+/**
+  e best sleep tip you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. " 
+**/
+#import "Masonry.h"
 @implementation LoginTypeButton
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
+/**
+   your destiny is hiding behind them. Accept the fact that not everyo 
+**/
 - (instancetype)initWithType:(NSUInteger)type title:(NSString *)title image:(NSString *)image selector:(SEL)selector
                       target:(id)target
 {
     self = [super init];
     if (self) {
-        
         UIButton *iconBtn = [UIUtil initBtnWithNormalImage:image highlightedImage:image tag:type selector:selector target:target];
         [self addSubview:iconBtn];
+
+/**
+  hen asked, “Who still wants it?” Still the hands were up in the air.
+
+
+
+他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
+
+
+
+“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
+ 
+**/
         [iconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.mas_equalTo(self);
-//            make.width.mas_equalTo(VH(57));
-//            make.height.mas_equalTo(VH(57));
-//            make.centerX.mas_equalTo(self);
             make.edges.mas_equalTo(self);
+
+/**
+  ed, and ground into the dirt by the decisions we make and the circumstances that come our way. We feel as though we are worthless；but no matter what happened or what will happen, you will never lose your value."
+
+
+ 
+**/
         }];
-        
-//        UILabel *titleLabel = [[UILabel alloc] init];
-//        titleLabel.text = title;
-//        titleLabel.font = [UIFont systemFontOfSize:18];
-////        titleLabel.textAlignment = NSTextAlignmentCenter;
-//        titleLabel.backgroundColor = [UIColor clearColor];
-//        titleLabel.numberOfLines = 1;
-//        titleLabel.textColor = [UIColor colorWithHexString:@"#545454"];
-//        titleLabel.adjustsFontSizeToFitWidth = YES;
-//
-//        [self addSubview:titleLabel];
-//        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.mas_equalTo(self);
-//            make.top.mas_equalTo(iconBtn.mas_bottom);
-//            make.height.mas_greaterThanOrEqualTo(VH(24));
-//            make.width.mas_equalTo(VW(70));
-//
-//        }];
-        
+
+/**
+   is a way to dodge this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourself one or two get-out-of-jail-free cards each week, you can get better results than by setting either tough or easy goals without wiggle room, research has revealed.
+
+幸运的是，有一种方法可以避免这种宿命。研究表明，设定困难的目标（比如每晚10点入睡），但每周给自己一两张豁免卡，就可以比设定没有回旋余地的或难或易的目标获得更好的结果。
+
+
+
+5.Get 
+**/
     }
     return self;
 }
-
+//d you will catch the star that holds your destiny.
+//
+//
+//
+//寻找心中那颗闪耀的明星，因为只有你自己才能够让美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。
+//
+//I miss you. I miss all the mornings that I have woken u
 @end

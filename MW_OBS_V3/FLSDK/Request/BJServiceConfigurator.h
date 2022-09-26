@@ -1,20 +1,12 @@
-//
-//  BJServiceConfigurator.h
-//  BenjiaPro
-//
-//  Created by Marco on 2017/6/1.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
-
 @interface BJServiceConfigurator : NSObject
-
 + (instancetype)sharedInstance;
 
-//- (void)connectToServer;
-//- (NSString *)serverBaseUrl;
-//
-//- (NSInteger)currentServerType; //0正式环境 1测试环境 2开发环境
-
+/**
+  trol myself.
+就是因为发觉自己多么渴望想得到你，我到现在还不知道是否控制得了自己。
+When life offers you a dream so far beyond any of your expectations, it’s not reasonable to grieve when it comes to an end.
+当生活给了你一个远远超过你期望的 
+**/
 @end

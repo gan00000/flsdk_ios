@@ -1,85 +1,66 @@
 
-
-
 #import <Foundation/Foundation.h>
 
-
-#define GAMA_CONF_DEFAULT_KEY    @"GAMA128KEY"                  //文件加密时候使用的Key参数
-#define GAMA_CONF_DEFAULT_IV     @"GAMA128IV"                   //文件加密时候使用的iv参数
-
-/*
- GAMA的保密类,主要进行：加密，解密，转码等职能。
- */
-
-@interface SecurityUtil : NSObject
 /**
- *  从一个明文字符串，加密得到一个加密的字符串
- *
- *  @param beforeEncryptString 明文字符串
- *  @param key                 加密参数，根据加密要求，不要超过16个字符，要和解密参数保持一致
- *  @param iv                  加密参数，根据加密要求，不要超过16个字符，要和解密参数保持一致
- *
- *  @return 加密后的字符串
- */
+  too. When you're on the hook to give someone else tips on how to achieve, it boosts y 
+**/
+#define GAMA_CONF_DEFAULT_KEY    @"GAMA128KEY"
+#define GAMA_CONF_DEFAULT_IV     @"GAMA128IV"
+@interface SecurityUtil : NSObject
 +(NSString *)getEncryptStringFromString:(NSString *)beforeEncryptString
                                 WithKey:(NSString *)key
+
+/**
+  币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
+
+
+
+“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
+
+
+ 
+**/
                                      iv:(NSString *)iv;
 
 /**
- *  从一个加密过的字符串，解密得到一个明文字符串
- *
- *  @param beforeDecryptString 一个加密后的字符串
- *  @param key                 解密参数，根据加密要求，不要超过16个字符，要和加密参数保持一致
- *  @param iv                  解密参数，根据加密要求，不要超过16个字符，要和加密参数保持一致
- *
- *  @return 解密后的字符串
- */
+  ues tell Broadway stars when to step onto the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
+
+正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划 
+**/
 +(NSString *)getDecryptStringFromString:(NSString *)beforeDecryptString
                                 withKey:(NSString *)key
-                                     iv:(NSString *)iv;
 
 /**
- *  对NSData加密
- *
- *  @param beforeEncryptData 加密前的数据
- *  @param key               加密参数，根据加密要求，不要超过16个字符，要和解密参数保持一致
- *  @param iv                加密参数，根据加密要求，不要超过16个字符，要和解密参数保持一致
- *
- *  @return 加密以后的数据
- */
+  光照在你的脸上，早晨的寒风让我们感到惊讶。
+
+I miss the morning kisses and the morning snuggling you and I shared.
+
+我想念早上的吻，早上依 
+**/
+                                     iv:(NSString *)iv;
 +(NSData *)getEncryptDataFromData:(NSData *)beforeEncryptData
                           withKey:(NSString *)key
                                iv:(NSString *)iv;
 
 /**
- *  对NSData解密
- *
- *  @param beforeDecryptData 被加密的数据
- *  @param key               解密参数，根据加密要求，不要超过16个字符，要和加密参数保持一致
- *  @param iv                解密参数，根据加密要求，不要超过16个字符，要和加密参数保持一致
- *
- *  @return 解密后的数据
- */
+  ow, who still wants it?”
+
+
+
+“好，”他说道，“如果我这样做会怎么样呢？”他把纸币扔到地上，开始用皮鞋使劲踩踏。然后他拣起又脏又皱的纸币，“现在，还有人要它吗？”
+
+
+
+Still the hands went into the  
+**/
 +(NSData *)getDecryptDataFromData:(NSData *)beforeDecryptData
                           withKey:(NSString *)key
                                iv:(NSString *)iv;
-
-/**
- *  NSData转换成NSString
- *
- *  @param beforeEncodeData 转码前的NSData
- *
- *  @return 转码后的字符串
- */
 +(NSString *)getEncodeStringFromData:(NSData *)beforeEncodeData;
-
-/**
- *  NSString转换成NSData
- *
- *  @param beforeEncodeString 转码前的NSString
- *
- *  @return 转码后的NSData
- */
 +(NSData *)getEncodeDataFromString:(NSString *)beforeEncodeString;
-
 @end
+//because of me.
+//你在这里，是因为有我。
+//Nobody's ever loved anybody as much as I love you.
+//我对你的爱 无人能及。
+//Love is letting someone become your greatest w

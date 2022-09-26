@@ -1,52 +1,35 @@
-//
-//  UIColor+HexColor.m
-//  YCSDK
-//
-//  Created by sunn on 2017/6/27.
-//  Copyright © 2017年 sunn. All rights reserved.
-//
 
+// so badly.
+//只有你才能让我如此上瘾。
+//I don't have the strength to stay away from you anymore.
+//我再也没有离开你的力气了。
+//Your number was up the first time l met you.
+//第一次遇见我，你就在劫难逃了。
+//You're in here because of me.
+//你在这里，是因为有我。
+//Nobody's ev
 #import "UIColor+HexColor.h"
 
+/**
+   your value."
+
+
+
+“在生活中，很多次我们被自己制定的决策和身边的环境所抛弃、蹂躏，甚至碾入尘土。我们感到自己一无是处。但是不管发生了什么，或者将要发生什么，你们都永远不会失去自 
+**/
 @implementation UIColor (HexColor)
-
-//+ (UIColor *)colorWithHexString:(NSString *)color
-//{
-//    return [self colorWithHexString:color andAlpha:1.0f];
-//}
-
-//+ (UIColor *) colorWithHexString: (NSString *)color andAlpha:(CGFloat)alpha
-//{
-//    NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
-//
-//    // String should be 6 or 8 characters
-//    if ([cString length] < 6) {
-//        return [UIColor clearColor];
-//    }
-//    // 判断前缀
-//    if ([cString hasPrefix:@"0X"])
-//        cString = [cString substringFromIndex:2];
-//    if ([cString hasPrefix:@"#"])
-//        cString = [cString substringFromIndex:1];
-//    if ([cString length] != 6)
-//        return [UIColor clearColor];
-//    // 从六位数值中找到RGB对应的位数并转换
-//    NSRange range;
-//    range.location = 0;
-//    range.length = 2;
-//    //R、G、B
-//    NSString *rString = [cString substringWithRange:range];
-//    range.location = 2;
-//    NSString *gString = [cString substringWithRange:range];
-//    range.location = 4;
-//    NSString *bString = [cString substringWithRange:range];
-//    // Scan values
-//    unsigned int r, g, b;
-//    [[NSScanner scannerWithString:rString] scanHexInt:&r];
-//    [[NSScanner scannerWithString:gString] scanHexInt:&g];
-//    [[NSScanner scannerWithString:bString] scanHexInt:&b];
-//
-//    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
-//}
-
 @end
+
+/**
+  nce cracks
+卷曲的毛穿过白色围篱的大裂缝
+Pissing on magazine photos
+亲着杂志上的照片
+Those fishing lures thrown in the cold and clean
+那些鱼饵被扔进冰冷而纯净的
+Blood of Christ mountain stream
+基督山溪的血里去
+Have I found you?
+我找到你了吗
+Flightless bird, grounded b 
+**/

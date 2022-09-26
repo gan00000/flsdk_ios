@@ -1,50 +1,19 @@
-//
-//  MASAttribute.h
-//  Masonry
-//
-//  Created by Jonas Budelmann on 21/07/13.
-//  Copyright (c) 2013 cloudling. All rights reserved.
-//
 
+//
+//
+//正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示，能
 #import "MASUtilities.h"
-
-/**
- *  An immutable tuple which stores the view and the related NSLayoutAttribute.
- *  Describes part of either the left or right hand side of a constraint equation
- */
+//究表明，专注于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
+//
+//
+//
+//If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to ac
 @interface MASViewAttribute : NSObject
-
-/**
- *  The view which the reciever relates to. Can be nil if item is not a view.
- */
 @property (nonatomic, weak, readonly) MAS_VIEW *view;
-
-/**
- *  The item which the reciever relates to.
- */
 @property (nonatomic, weak, readonly) id item;
-
-/**
- *  The attribute which the reciever relates to
- */
 @property (nonatomic, assign, readonly) NSLayoutAttribute layoutAttribute;
 @property (nonatomic, copy) NSString *veracifutureaceousCepttryitiousTemnplay;
-
-/**
- *  Convenience initializer.
- */
 - (id)initWithView:(MAS_VIEW *)view layoutAttribute:(NSLayoutAttribute)layoutAttribute;
-
-/**
- *  The designated initializer.
- */
 - (id)initWithView:(MAS_VIEW *)view item:(id)item layoutAttribute:(NSLayoutAttribute)layoutAttribute;
-
-/**
- *	Determine whether the layoutAttribute is a size attribute
- *
- *	@return	YES if layoutAttribute is equal to NSLayoutAttributeWidth or NSLayoutAttributeHeight
- */
 - (BOOL)isSizeAttribute;
-
 @end

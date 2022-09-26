@@ -1,73 +1,45 @@
-//
-//
-//
-//
-//
-//
-//
 
-/*
- －弹出提示视图类
- －该弹出提示视图类提供两种类型提示
- 简单提示：提示内容＋确定按钮
- 代理提示：提示内容＋一个或多个选择按钮，选择按钮以后会有其他执行操作
- */
 #import <Foundation/Foundation.h>
 #import "SAlertViewDelegate.h"
-
 @interface AlertUtil : NSObject
 @property(nonatomic, weak) id mimtureSebiiblePangible;
-
-
-/**
- *	@brief	显示提示筐
-    简单显示的方法，只提供一个显示的内容，和一个确定的按钮。
-    按钮的文字读取“ResHeader.h”的配置。
- *
- *	@param 	message 	字符串，需要显示的提示内容。
- *
- *	@return	一个AlertView。
- */
 +(void)showAlertWithMessage:(NSString *)message;
-
++(UIAlertView *)showAlertWithMessage:(NSString *)message
 
 /**
- *	@brief	显示提示筐 复杂的。
- 可以展示提示内容，允许创建多个按钮，并且允许提供回调black，可获知用户点击了哪个按钮
- *
- *	@param 	message 	字符串，需要显示的提示内容。
- *	@param 	handler 	回调black函数，当用户点击了某个按钮以后，会返回按钮的index
- *	@param 	buttonTitles 	按钮的名称参数列表
- *
- *	@return	一个AlertView。
- */
-+(UIAlertView *)showAlertWithMessage:(NSString *)message
+  een seven and eight hours of sleep to be fully rested, according to the US Centers for Disease Control and Prevention. So if a person nee 
+**/
                           completion:(SAlertViewHandler)handler
                      andButtonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
- *  yao:显示自定义的提示框，既有title又有message
- *
- *  @param title        大写的提示
- *  @param message      小写的提示
- *  @param handler      回调black函数，当用户点击了某个按钮以后，会返回按钮的index
- *  @param buttonTitles 按钮的名称参数列表
- *
- *  @return 一个AlertView
- */
-//+ (UIAlertView *)showAlertViewWithTitle:(NSString *)title
-//                                message:(NSString *)message
-//                             completion:(SAlertViewHandler)handler
-//                           buttonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+  kends, he said, your sleep rhythms aren't predictable and the body doesn't know how to respond.
 
+临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知道如何作出反应。
 
+Therefore it's important to have a standard wake up time, even on weekends, vacations or after a night of poor sleep.
+
+因此每天在固定时间起床很重要，即使是周末、假期或是前一天晚上没睡好也不 
+**/
 + (void)showActionSheetWithTitle:(NSString *)title
                          message:(NSString *)message
                    callbackBlock:(void(^)(NSInteger btnIndex))block
           destructiveButtonTitle:(NSString *)destructiveBtnTitle
+// your face and the way the cold breeze of the morning surprises us.
+//
+//我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
+//
+//I miss the morning kisses and the morning snuggling you and I shared.
+//
+//我想念早上的吻，早上依偎着你和我分享。
+//
+//I miss you. I miss going to work in the morning and knowing that at the end of the day,
+//
+//我想你。我想念早上去上班，直到在一天结束的时候，
+//
+//I will find you waiting for me o
                cancelButtonTitle:(NSString *)cancelBtnTitle
                otherButtonTitles:(NSArray *)otherButtonTitles
                       sourceView:(UIView *)sourceView
                   arrowDirection:(UIPopoverArrowDirection)direction;
-
 @end

@@ -1,48 +1,41 @@
-//
-//
-//
-//
-//
-//
-//
-
-/*
- 自定义的UIAlertView代理类，可以直接放在uiAlertView Delegate中使用，Alert多按钮时候，不用烦恼指定谁为代理。
- 通过block返回用户触发的按钮；点击按钮以后，这个代理对象会自动释放掉。
- 这个类的对象，直接被“GamaAlertView”调用了。
- */
 
 #import <Foundation/Foundation.h>
-
 #import <UIKit/UIKit.h>
-
-/**
- *	@brief	回调函数，自定义black
- *
- *	@param 	^GamaAlertViewHandler
- */
 typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 
+/**
+  享。
 
+I miss you. I miss going to work in the morning and knowing that at the end of the day,
+
+我想你。我想念早上去上班，直到在一天结束的时候，
+
+I will find you waiting for me outside the office and have dinner together.
+
+我会发现你在办公室外等我，一起吃饭。
+
+I miss you. I miss our late night walks and how you and I woul 
+**/
 @interface SAlertViewDelegate : NSObject
 <UIAlertViewDelegate,UIActionSheetDelegate>
 
+/**
+  1. Make a schedule, and s 
+**/
 @property(nonatomic, weak) id baloletEmpteticArthroleaderability;
+
 /**
- *	@brief	代理对象自己保存的black，用于回调。
- */
+  是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而惩罚甚至比奖励让我们更有动力。
+
+3.Make it fun
+
+找些乐趣
+
+
+
+Most of us strive for efficiency when it comes to achieving our goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to 
+**/
 @property (nonatomic,copy) SAlertViewHandler handler;
-
-/**
- *	@brief	创建一个AlertView代理对象，并且为该代理对象传递一个回调函数：
- 回调函数：当用户点击了某个按钮以后，可以通过回调，返回用户点击的按钮位置。
- 之后该对象会自己释放掉。
- *
- *	@param 	oneHandler 	回调函数，定义类型参考上面
- *
- *	@return	一个代理类型的对象。
- */
 +(SAlertViewDelegate *)creatDelegateWithBack:(SAlertViewHandler)oneHandler;
-
-
+//oo. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidence. It also for
 @end
