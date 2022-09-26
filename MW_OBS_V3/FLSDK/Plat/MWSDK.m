@@ -1,5 +1,5 @@
 #import "MWSDK.h"
-#import "AdLogger.h"
+#import "VesicallyGreatless.h"
 
 /**
   your judgment, catch the star that twinkles in your heart, and it will lead you to your destiny’s path. Follow that pathway and uncover the sweet sunrises that await you.
@@ -8,7 +8,7 @@
 
 尽管实现梦想的途中有时会遇到障碍，要知道这是命运对你的挑战。不是每个人都会赞成你的选择，接受这个现实，并相信自我的判断，追随那颗在你心中闪烁的明星，它会引领你踏上命 
 **/
-#import "SDKLoginViewController.h"
+#import "ArtistBegin.h"
 
 /**
   n't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
@@ -23,13 +23,13 @@ There are not enough words to contemplate on how much I miss you and I miss us b
 
  
 **/
-#import "SUtil.h"
-#import "StringUtil.h"
+#import "FoeniveNow.h"
+#import "CandifySiliattorney.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
-#import "SDKRequest.h"
-#import "FBDelegate.h"
-#import "LineDelegate.h"
+#import "AperthandBalowise.h"
+#import "MachineileSenly.h"
+#import "HimselfainPont.h"
 
 /**
   amount of time you have left in your day," he advised. "See your sleep as the amount of time you need in order to set yourself up for a productive tomorrow."
@@ -38,19 +38,19 @@ There are not enough words to contemplate on how much I miss you and I miss us b
 
 It may sound like a small shift in thinking, b 
 **/
-#import "MWApplePayManager.h"
-#import "AdLogger.h"
-#import "NoticeViewV2.h"
-#import "BindPhoneViewV2.h"
+#import "OntoonOxyacity.h"
+#import "VesicallyGreatless.h"
+#import "BorniorVitrage.h"
+#import "GuessizationPhylcapitalee.h"
 
 /**
   不要醒着躺在床上。”
 
 Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacef 
 **/
-#import "BindAccountViewV2.h"
-#import "AdDelegate.h"
-#import "MWWebViewController.h"
+#import "PrenditudeAtetic.h"
+#import "SophoindividualitionBillain.h"
+#import "LeastabilityEntreic.h"
 #import <StoreKit/StoreKit.h>
 
 /**
@@ -104,7 +104,7 @@ You don't know how
 
 I miss you. I miss all the mornings that I have woken 
 **/
-    [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    [SophoindividualitionBillain application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 
 /**
   help from your friends
@@ -115,9 +115,9 @@ I miss you. I miss all the mornings that I have woken
 
 Spending time around high achievers can boost your own performance. If your New Year's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be incline 
 **/
-    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [MachineileSenly application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        result = [HimselfainPont application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }
     return result;
 
@@ -151,10 +151,10 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
 **/
     SDK_LOG(@"ios9 and later = application openURL options");
 // easy way to do this is by telling a few people about your goal so you'll feel ashamed if they check back later and find out you haven't followed t
-    [AdDelegate application:application openURL:url options:options];
-    BOOL result = [FBDelegate application:application openURL:url options:options];
+    [SophoindividualitionBillain application:application openURL:url options:options];
+    BOOL result = [MachineileSenly application:application openURL:url options:options];
     if (!result) {
-        result = [LineDelegate application:application openURL:url options:options];
+        result = [HimselfainPont application:application openURL:url options:options];
     }
 //t often matters most to achieving a New Year's resolution.
 //
@@ -263,7 +263,7 @@ Flightless bird, jealous, weeping
 //Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake up tired.
 //
 //为什么这条法则如此重要呢
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
 //mornings that I have woken up right beside you.
 //
 //我想你。我想念我在你身边醒来的所有早晨。
@@ -301,7 +301,7 @@ Flightless bird, jealous, weeping
 Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully 
 **/
 {
-    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType:(SDKPage_Login)];
+    ArtistBegin *controller = [[ArtistBegin alloc] initWithPageType:(SDKPage_Login)];
 //e five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cu
 #ifdef __IPHONE_8_0
 
@@ -361,7 +361,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //
     SDK_LOG(@"not def __IPHONE_8_0");
 #endif
-    [[SUtil getCurrentViewController] presentViewController: controller animated:NO completion:^{
+    [[FoeniveNow getCurrentViewController] presentViewController: controller animated:NO completion:^{
 // He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
 //
 //
@@ -371,7 +371,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 }
 -(void)showNoticeView
 {
-    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter:^{
+    BorniorVitrage *mNoticeViewV2 = [[BorniorVitrage alloc] initWithCompleter:^{
         [self sdkLoginWithHandlerForInner];
 
 /**
@@ -430,8 +430,8 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
 **/
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
-    if ([StringUtil isEmpty:roleId] || [StringUtil isEmpty:roleName] ||
-        [StringUtil isEmpty:roleLevel] ||
+    if ([CandifySiliattorney isEmpty:roleId] || [CandifySiliattorney isEmpty:roleName] ||
+        [CandifySiliattorney isEmpty:roleLevel] ||
 
 /**
   ng me want you so badly.
@@ -447,9 +447,9 @@ Nobody's ever loved anybody as much as I love you.
 Love is letting someone become your greatest weakness ,then going all you can do to protect each other.
 爱就是让对方成为自己 
 **/
-        [StringUtil isEmpty:serverCode])
+        [CandifySiliattorney isEmpty:serverCode])
     {
-        [AlertUtil showAlertWithMessage:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
         return;
 // to fall asleep."
 //
@@ -505,7 +505,7 @@ Love is letting someone become your greatest weakness ,then going all you can do
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
 
 /**
@@ -538,8 +538,8 @@ Your mood swings are k
 
 美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠 
 **/
-    if ([StringUtil isEmpty:productId]) {
-        [AlertUtil showAlertWithMessage:@"productId must be not empty"];
+    if ([CandifySiliattorney isEmpty:productId]) {
+        [LanguitudeQuasstenddom showAlertWithMessage:@"productId must be not empty"];
         return;
 //ey still sparkle before you. Always believe that your ultimate goal is attainable as long as you commit yourself to it.
 //
@@ -553,8 +553,8 @@ Your mood swings are k
 
 而比羞愧感更有效 
 **/
-    if ([StringUtil isEmpty:roleId]) {
-        [AlertUtil showAlertWithMessage:@"roleId must be not empty"];
+    if ([CandifySiliattorney isEmpty:roleId]) {
+        [LanguitudeQuasstenddom showAlertWithMessage:@"roleId must be not empty"];
 
 /**
   
@@ -571,12 +571,12 @@ Only for making me want to yo
 **/
         return;
     }
-    if ([StringUtil isEmpty:serverCode]) {
-        [AlertUtil showAlertWithMessage:@"serverCode must be not empty"];
+    if ([CandifySiliattorney isEmpty:serverCode]) {
+        [LanguitudeQuasstenddom showAlertWithMessage:@"serverCode must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty:cpOrderId]) {
-        [AlertUtil showAlertWithMessage:@"cpOrderId must be not empty"];
+    if ([CandifySiliattorney isEmpty:cpOrderId]) {
+        [LanguitudeQuasstenddom showAlertWithMessage:@"cpOrderId must be not empty"];
 
 /**
   的事情似的。
@@ -650,7 +650,7 @@ But it's you, your scent, it's like a drug to me. You're like my own personal br
 //r heart. Tak
     AccountModel *accountModel = sLoginResponse.data;
     if (!accountModel || !accountModel.userId) {
-        [AlertUtil showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"error:請重新登入遊戲進行充值"];
         self.isPaying = NO;
 
 /**
@@ -662,7 +662,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 **/
         return;
     }
-    [[MWApplePayManager shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+    [[OntoonOxyacity shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
 
 /**
   s everything you’ve got and you will catch the star that holds your destiny.
@@ -684,7 +684,7 @@ I miss the morning ki
         self.isPaying = NO;
         if (self.payHandler) {
             if (success) {
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [CarboeerNecrate _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
 
 /**
   
@@ -714,8 +714,8 @@ Love is letting someone be
 //我想可能是我忘了呼吸。
 //I'd never given much thought to how I wou
                 }
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
-                [AdDelegate logEventPurchaseValues:payData type:(AdType_All)];
+                [CarboeerNecrate _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [SophoindividualitionBillain logEventPurchaseValues:payData type:(AdType_All)];
                 self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
             }else{
 //cause you'll neglect an even more important part of the equation: whether you enjoy the act of goal pursuit.
@@ -749,7 +749,7 @@ Big pill, stuck goi
 **/
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
 
 /**
   through.
@@ -763,7 +763,7 @@ If your New Year's resolution is to meditate five days each week, a pl
         return;
 //to produce rapid progress. If you want to ace a class, you assume long, distraction-f
     }
-    [AdLogger logWithEventName:name parameters:eventValues];
+    [VesicallyGreatless logWithEventName:name parameters:eventValues];
 
 /**
   you have all learned a very valuable lesson. No matter what I did to the money, you still wanted it because it did not decrease in val 
@@ -773,7 +773,7 @@ If your New Year's resolution is to meditate five days each week, a pl
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
 //viate at all from your New Year's resolution, your instinct may be to 
         return;
     }
@@ -829,10 +829,10 @@ That thin
 - (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
-    [[FBDelegate share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [[MachineileSenly share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
 
 /**
   ait you.
@@ -891,7 +891,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 
 提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻 
 **/
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if (!is_Version2) {
@@ -899,14 +899,14 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 /**
    up on housework, schoolw 
 **/
-        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        [OdorSever toastMsg: @"当前版本不支持该功能"];
 
 /**
    somebody is get up -- don't lay in bed a 
 **/
         return;
     }
-    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    GuessizationPhylcapitalee *mBindPhoneViewV2 = [[GuessizationPhylcapitalee alloc] init];
     mBindPhoneViewV2.mMWBlock = mBlock;
 
 /**
@@ -961,7 +961,7 @@ A steeper penalty than shame, however, is put
   iate at all from your New Year's resolution, your instinct may be t 
 **/
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if (!is_Version2) {
@@ -983,7 +983,7 @@ A steeper penalty than shame, however, is put
 //
 //
 //《Flight
-        [SdkUtil toastMsg: @"当前版本不支持该功能"];
+        [OdorSever toastMsg: @"当前版本不支持该功能"];
         return;
     }
 
@@ -1006,7 +1006,7 @@ Or lost you?
 抑或失去了你？
 American mout 
 **/
-    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView];
+    PrenditudeAtetic *mBindAccountViewV2 = [[PrenditudeAtetic alloc] initView];
 
 /**
   if I can control myself.
@@ -1059,8 +1059,8 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
   he US Centers for Disease Control and Prevention. So if a person needed to rise at 7 am each day, backtiming  
 **/
 {
-    if ([StringUtil isEmpty:areaCode]) {
-        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+    if ([CandifySiliattorney isEmpty:areaCode]) {
+        [OdorSever toastMsg: @"text_area_code_not_empty".localx];
         return;
     }
 
@@ -1077,8 +1077,8 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 
 A well-know 
 **/
-    if ([StringUtil isEmpty:telephone]) {
-        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+    if ([CandifySiliattorney isEmpty:telephone]) {
+        [OdorSever toastMsg: @"text_phone_not_empty".localx];
         return;
     }
 //1.Make a cue-based plan
@@ -1090,7 +1090,7 @@ A well-know
 //I like the night. Without the dark, we'd never see the stars.
 //我喜欢夜晚。没有黑暗，我们永远都看不见星星。
 //It is well worth of falling love
-    [SDKRequest requestMobileVfCode:areaCode phoneNumber:telephone email:@"" otherDic:nil successBlock:^(id responseData) {
+    [AperthandBalowise requestMobileVfCode:areaCode phoneNumber:telephone email:@"" otherDic:nil successBlock:^(id responseData) {
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
@@ -1099,7 +1099,7 @@ A well-know
 //
 //
 //追随能够改变你命运的那颗星，那颗永远在你心中闪烁的明星。当它在你面前闪耀时
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(CuscardOnomary *error) {
 
 /**
   editate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -1151,8 +1151,8 @@ A well-know
 
 Take pride in your accomplishments, as they are stepping stones to your dream 
 **/
-    if ([StringUtil isEmpty:areaCode]) {
-        [SdkUtil toastMsg: @"text_area_code_not_empty".localx];
+    if ([CandifySiliattorney isEmpty:areaCode]) {
+        [OdorSever toastMsg: @"text_area_code_not_empty".localx];
 
 /**
    power to help overcome your racing mind and allow you to fall asleep."
@@ -1167,8 +1167,8 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
 **/
         return;
     }
-    if ([StringUtil isEmpty:telephone]) {
-        [SdkUtil toastMsg: @"text_phone_not_empty".localx];
+    if ([CandifySiliattorney isEmpty:telephone]) {
+        [OdorSever toastMsg: @"text_phone_not_empty".localx];
 //to get you to the library.
 //
 //想要把追求一个辛苦的目标变得更有趣，方法就是把它与有罪恶感的快乐结合起来。如果只允许自己在健身房看最喜欢的电视节目，你就会开始期待锻炼了。或者只让自己在学习期间喝摩卡拿铁，这样就
@@ -1180,11 +1180,11 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
 //I always have and always will.
 //一直爱，永远爱。
 //But it'
-    if ([StringUtil isEmpty:vfCode]) {
-        [SdkUtil toastMsg: @"py_msg_vfcode_hint".localx];
+    if ([CandifySiliattorney isEmpty:vfCode]) {
+        [OdorSever toastMsg: @"py_msg_vfcode_hint".localx];
         return;
     }
-    [SDKRequest bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
+    [AperthandBalowise bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
         SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
         SDK_DATA.mLoginResponse.data.isBindPhone = YES;
 //e an hour, but don't spend that time awake in bed."
@@ -1223,7 +1223,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 
  《Flightless Bird, American Mouth》是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这首收录在《暮光之城》中的惊艳单曲会带给你寂静深夜中属于你的美好爱情回忆录！ 
 **/
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(CuscardOnomary *error) {
         if (mMWBlock) {
 
 /**
@@ -1250,7 +1250,7 @@ That thinking needs to be changed, Grander said.
 }
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
 {
-    if (![SdkUtil validUserName:account]) {
+    if (![OdorSever validUserName:account]) {
 
 /**
   urage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determination.
@@ -1269,7 +1269,7 @@ Find the star that twinkles in your
 //只是跟我共度幸福美满的漫长一生，难道还不够吗？
 //Only for making me want to you badly. I still don't know if I can control myself.
 //就是因
-    if (![SdkUtil validPwd:password]) {
+    if (![OdorSever validPwd:password]) {
         return;
     }
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
@@ -1311,7 +1311,7 @@ I miss you. I mis
 **/
         return;
     }
-    [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
+    [AperthandBalowise doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
 // that can lead to chronic insomnia, G
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -1349,7 +1349,7 @@ Just as
 **/
         cc.data.loginType = LOGIN_TYPE_SELF;
         SDK_DATA.mLoginResponse = cc;
-        [[ConfigCoreUtil share] saveAccountModel:cc.data];
+        [[EtymousBecomeot share] saveAccountModel:cc.data];
 
 /**
   e tomorrow."
@@ -1393,7 +1393,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
         if (mMWBlock) {
             mMWBlock(YES, loginData);
         }
-    } errorBlock:^(BJError *error) {
+    } errorBlock:^(CuscardOnomary *error) {
         if (mMWBlock) {
             mMWBlock(NO, error.message);
 
@@ -1426,7 +1426,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
     SDK_LOG(@"openCs..");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
 //nds, vacations or after a night of poor sleep.
 //
 //因此每天在固定时间起床很重要，即使是周末、假期或是前一天晚上没睡好也不应该例外。
@@ -1437,7 +1437,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
         return;
     }
     NSString * csurl = SDK_DATA.urls.csUrl;
-    if ([StringUtil isEmpty:csurl]) {
+    if ([CandifySiliattorney isEmpty:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
 
@@ -1445,8 +1445,8 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
   g as the final thing they have to do in a jam-packed day, worth delaying to catch up on h 
 **/
     }
-    NSString *resultURL = [SDKRequest createSdkUrl:csurl];
-    [MWWebViewController webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
+    NSString *resultURL = [AperthandBalowise createSdkUrl:csurl];
+    [LeastabilityEntreic webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
 {
@@ -1457,7 +1457,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //
 //“无论你肮脏或者
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
 //d. "Whether it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 m
     }
@@ -1516,7 +1516,7 @@ I'
 /**
   pproaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light --  
 **/
-        [AlertUtil showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
         return;
     }
     if (@available(iOS 10.0, *)) {
@@ -1548,8 +1548,8 @@ Flightless bird, jealous, weeping
         content.subtitle = subtitle;
         content.body = body;
         content.sound = [UNNotificationSound defaultSound];
-        if ([StringUtil isEmpty:notifyId]) {
-            notifyId = [SUtil getMD5StrFromString:title];
+        if ([CandifySiliattorney isEmpty:notifyId]) {
+            notifyId = [FoeniveNow getMD5StrFromString:title];
         }
         UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
         [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {

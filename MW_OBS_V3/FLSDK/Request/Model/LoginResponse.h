@@ -7,14 +7,14 @@ Even if from another world, still love you till the end of time.
 就 
 **/
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "ExtraressApertless.h"
 
 /**
   's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their pa 
 **/
 #import "AccountModel.h"
 NS_ASSUME_NONNULL_BEGIN
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : ExtraressApertless
 
 /**
   I like the night. Without the dark, we'd never see the stars.

@@ -12,16 +12,16 @@
 //I think I forgot to breathe.
 //我想可能是我忘了呼吸。
 //I'd never given much thought to how I would die. But dying in the place of someone I love,seems
-#import "USDefault.h"
-#import "UIImage+ResBundle.h"
-#import "UIColor+HexStringToColorTW.h"
+#import "CarboeerNecrate.h"
+#import "UIImage+ObatoryClinity.h"
+#import "UIColor+OgityTheoryify.h"
 //
 //If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to achieving a New Year's resolution.
 //
 //如果锻炼或学习没有乐趣，就不太可能坚持
-#import "UIUtil.h"
-#import "CCSDKDATA.h"
-#import "ConfigCoreUtil.h"
+#import "BedeurFail.h"
+#import "CoronencyQuindenot.h"
+#import "EtymousBecomeot.h"
 
 /**
   thing you’ve got and you will catch the star that holds your destiny.
@@ -33,7 +33,7 @@
 I miss you. I miss all the mornings that I have woken up right beside  
 **/
 #import "LoginResponse.h"
-#import "SUtil.h"
+#import "FoeniveNow.h"
 // for emergencies
 //
 //允许紧急情况
@@ -42,15 +42,15 @@ I miss you. I miss all the mornings that I have woken up right beside
 //
 //If you deviate at al
 #import "ResHeader.h"
-#import "AdLogger.h"
-#import "StringUtil.h"
-#import "DimeUtil.h"
+#import "VesicallyGreatless.h"
+#import "CandifySiliattorney.h"
+#import "OntCaleory.h"
 
 /**
   ce rapid progress. If you want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you h 
 **/
-#import "SdkUtil.h"
-#import "NSString+Local.h"
+#import "OdorSever.h"
+#import "NSString+EuiorFederalfy.h"
 
 /**
   a little help from your friends
@@ -72,11 +72,11 @@ Spending time around high achievers can boost your own performance. If your New 
 /**
   the mornings tha 
 **/
-#define SDK_DATA                           [CCSDKDATA sharedSdkData]
+#define SDK_DATA                           [CoronencyQuindenot sharedSdkData]
 #define GetImage(imageName)     [UIImage res_imageNamed:imageName]
-#define appTopViewController    [SUtil getCurrentViewController]
+#define appTopViewController    [FoeniveNow getCurrentViewController]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries]
+#define device_is_iPhoneX   [FoeniveNow isIPhoneXSeries]
 
 /**
   life are not purchased, but acquired through hard work and determination.
@@ -90,9 +90,9 @@ Spending time around high achievers can boost your own performance. If your New 
 Find the star that twinkles in your heart for you alone are capable of making your brightest dreams come true. Give your hopes everyth 
 **/
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight:h]
-#define VW(w)  [[DimeUtil share] getViewWidth:w]
-#define FS(size)  [[DimeUtil share] getFontSize:size]
+#define VH(h)  [[OntCaleory share] getViewHeight:h]
+#define VW(w)  [[OntCaleory share] getViewWidth:w]
+#define FS(size)  [[OntCaleory share] getFontSize:size]
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 {

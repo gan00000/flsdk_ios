@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "ExtraressApertless.h"
 #import "ConfigModel.h"
 #import "UrlMode.h"
 
@@ -14,7 +14,7 @@ Most adults need between seven and eight hours of sleep to be fully rested, acco
 美国疾病控制与预防中心指出，大多数成人需要7到8小时睡 
 **/
 NS_ASSUME_NONNULL_BEGIN
-@interface ConfigResponse : BJBaseResponceModel
+@interface ConfigResponse : ExtraressApertless
 //so there is a hook to get you to the library.
 //
 //想要把追求一个辛苦的目标变得更有趣，方法就是把它与有罪恶感的快乐结合起来。如果只允许自己在健身房看最喜欢的电视节目，你就会开始期待锻炼了。或者只让自己在学习期间喝摩卡拿铁，这样就有了去图书馆的动力。
