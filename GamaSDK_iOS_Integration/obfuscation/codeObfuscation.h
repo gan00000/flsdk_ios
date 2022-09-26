@@ -238,7 +238,6 @@
 #define toastMsg   itslikeSimilarior
 #define urlEcodingFromString   amouriceRhag
 #define urlEncodeString   sapiDis
-#define userNotificationCenter   genuosityBeautifulate
 #define validEmail   habiltownonCare
 #define validPhone   felinstateaceousHugeent
 #define validPwd   todayationBrachyial
