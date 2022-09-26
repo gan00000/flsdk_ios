@@ -20,13 +20,16 @@ NS_ASSUME_NONNULL_BEGIN
 //@property(nonatomic, weak) UIViewController * theViewUIViewController;
 
 @property(nonatomic, weak) id<LoginViewDelegate> delegate;
+@property (nonatomic, assign) NSUInteger vovturePopulation;
 
 //@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
+@property (nonatomic, copy) NSString *phylactMindia;
 @property(nonatomic,assign) id fromPageParam;
 
 @property(nonatomic,strong)NSMutableArray *drawBlockArray;
+@property (nonatomic, assign) BOOL firstentScelanalysislike;
 
 -(void) initData;
 

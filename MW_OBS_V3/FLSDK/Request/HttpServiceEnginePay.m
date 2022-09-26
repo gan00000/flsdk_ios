@@ -16,13 +16,20 @@
 #import "SdkUtil.h"
 
 @interface HttpServiceEnginePay()
+@property (nonatomic, copy) NSString *focizeAph;
 
 @property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
+@property (nonatomic, assign) CGFloat ramatoryQuiteule;
 
 @end
 
 @implementation HttpServiceEnginePay
 
+
+- (NSString *)peopleSeiery:(NSUInteger)eveningtion bathoesque:(BOOL)bathoesque maximture:(NSUInteger)maximture
+{
+    return [NSString stringWithFormat:@"%@%@", @"phylax" , @"grader"]; 
+}
 + (instancetype)sharedInstance {
     
     static HttpServiceEnginePay *instance;

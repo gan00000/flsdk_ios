@@ -14,11 +14,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ConfigResponse : BJBaseResponceModel
+@property(nonatomic, weak) id roleFetsome;
 
 @property (nonatomic, strong) ConfigModel *allVersion;
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;
 
 @property (nonatomic,strong) UrlMode *url;
+@property (nonatomic, strong) NSDictionary *howeverfierApabilityCordicurrentary;
 @end
 
 NS_ASSUME_NONNULL_END

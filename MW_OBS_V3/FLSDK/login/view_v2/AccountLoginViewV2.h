@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountLoginViewV2 : SDKBaseView 
+@property (nonatomic, assign) CGFloat caldistArchyacious;
 
 - (instancetype)initView;
 

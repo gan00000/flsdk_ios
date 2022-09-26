@@ -14,8 +14,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginWithRegViewV2 : SDKBaseView
+@property(nonatomic, weak) id thinkelAirTreetion;
 
 @property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;
+@property (nonatomic, assign) CGFloat mustPrimasterAcetoo;
 
 @property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;
 

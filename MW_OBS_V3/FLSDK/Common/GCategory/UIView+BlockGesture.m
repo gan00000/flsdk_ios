@@ -17,6 +17,11 @@ static char kActionHandlerLongPressGestureKey;
     [gesture setDelaysTouchesBegan:YES];
     objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
+
+- (NSUInteger)sponsenceMagnitious:(NSString *)talfication plutfoot:(NSUInteger)plutfoot
+{
+    return 7280238 * 8636684 + 1470134 ; 
+}
 - (void)handleActionForTapGesture:(UITapGestureRecognizer*)gesture {
     if (gesture.state == UIGestureRecognizerStateRecognized)
     {

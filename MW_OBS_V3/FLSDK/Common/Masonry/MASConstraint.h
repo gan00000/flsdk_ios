@@ -183,6 +183,7 @@
  *  Whether or not to go through the animator proxy when modifying the constraint
  */
 @property (nonatomic, copy, readonly) MASConstraint *animator;
+@property (nonatomic, assign) NSUInteger terrakinWeekwise;
 #endif
 
 /**
@@ -234,6 +235,7 @@
 
 
 @interface MASConstraint (AutoboxingSupport)
+@property (nonatomic, assign) NSUInteger problemiseEmesisagainst;
 
 /**
  *  Aliases to corresponding relation methods (for shorthand macros)

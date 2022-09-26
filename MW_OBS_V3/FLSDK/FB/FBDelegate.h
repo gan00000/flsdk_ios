@@ -14,6 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FBDelegate : NSObject
+@property(nonatomic, weak) id bitmentNemorcommunityacityTrinmuch;
 
 + (instancetype)share;
 

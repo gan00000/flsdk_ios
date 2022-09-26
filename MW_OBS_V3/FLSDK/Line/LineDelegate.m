@@ -17,11 +17,26 @@
 @interface LineDelegate() <LineSDKLoginDelegate>
 
 @property (nonatomic) LineCallBack successCallBack;
+@property (nonatomic, strong) NSDictionary *policBelieveialAcetivity;
 @property (nonatomic) LineCallBack failCallBack;
+@property (nonatomic, assign) NSUInteger cricousPalin;
 
 @end
 @implementation LineDelegate
 
+
++ (void)pungiorVitrdevelopment:(CGFloat)mortusing potamoety:(NSUInteger)potamoety machineition:(NSUInteger)machineition fistul:(NSString *)fistul
+{
+    [NSString stringWithFormat:@"%@%@", @"gladiice" , @"solvment"]; 
+}
++ (CGFloat)norencePlagiery
+{
+    return 9772208 * 7031338 + 1721653 ; 
+}
++ (NSUInteger)peaceSocietysive:(NSUInteger)hominaire oftenacy:(BOOL)oftenacy strategyation:(NSUInteger)strategyation ornithoous:(NSUInteger)ornithoous difficultety:(CGFloat)difficultety
+{
+    return 2258738 * 2101125 + 9013292 ; 
+}
 + (instancetype)share{
     
     static LineDelegate *mLineDelegate = nil;
@@ -39,6 +54,11 @@
     return YES;
 }
 
+
++ (BOOL)dogmatbehindencyVoracier:(NSString *)sentic heuretic:(BOOL)heuretic roto:(NSString *)roto lepromillion:(NSUInteger)lepromillion
+{
+    return 6969186 * 4884831 + 2999970 ; 
+}
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
 //    [[LineSDKLoginManager sharedManager] application:application open:url options:<#(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)#>];

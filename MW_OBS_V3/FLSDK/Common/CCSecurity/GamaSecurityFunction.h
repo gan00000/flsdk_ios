@@ -27,6 +27,7 @@
 
 
 @interface NSData (GamaAES128)
+@property (nonatomic, assign) NSUInteger cancerTingesque;
 
 /**
  *	@brief	AES128加密

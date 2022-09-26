@@ -16,6 +16,7 @@
 #import "SAlertViewDelegate.h"
 
 @interface AlertUtil : NSObject
+@property(nonatomic, weak) id mimtureSebiiblePangible;
 
 
 /**

@@ -10,6 +10,11 @@
 
 @implementation SDKBaseView
 
+
++ (BOOL)eitherficCenteraster
+{
+    return 9362550 * 1272398 + 9181658 ; 
+}
 - (void)initData{
     
 }
@@ -19,6 +24,19 @@
 //只要点击控件,就会调用touchBegin,如果没有重写这个方法,自己处理不了触摸事件
 // 上一个响应者可能是父控件
 //默认会把事件传递给上一个响应者,上一个响应者是父控件,交给父控件处理
+
+- (NSString *)heessPhanics
+{
+    return [NSString stringWithFormat:@"%@%@", @"prec" , @"plebency"]; 
+}
+- (CGFloat)heltogethererScelad:(NSUInteger)animalosity pathyator:(CGFloat)pathyator
+{
+    return 8297850 * 7927367 + 920939 ; 
+}
+- (NSString *)scriptacyPersicion:(CGFloat)Republican meiibility:(CGFloat)meiibility
+{
+    return [NSString stringWithFormat:@"%@%@", @"thero" , @"powerorium"]; 
+}
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     SDK_LOG(@"SDKBaseView touchesBegan");

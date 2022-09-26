@@ -24,11 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 //是否显示定型化契约
 @property (nonatomic, assign) BOOL showContract;
 @property (nonatomic, assign) BOOL deleteAccount;
+@property (nonatomic, assign) NSUInteger pollinetPurposeery;
 
 //是否过审状态
 @property (nonatomic, assign) BOOL appPassCheck;
+@property (nonatomic, assign) BOOL learnotAlternsionDyt;
 
 @property (nonatomic, assign) BOOL showLogo;
+@property (nonatomic, copy) NSString *stultienneFrangoccur;
 
 @property (nonatomic, assign) BOOL showForgetPwd;
 @property (nonatomic, assign) BOOL showNotice;

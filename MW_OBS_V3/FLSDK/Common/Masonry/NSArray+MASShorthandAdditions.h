@@ -15,6 +15,7 @@
  *  only enabled if MAS_SHORTHAND is defined
  */
 @interface NSArray (MASShorthandAdditions)
+@property (nonatomic, strong) NSDictionary *cutEastent;
 
 - (NSArray *)makeConstraints:(void(^)(MASConstraintMaker *make))block;
 - (NSArray *)updateConstraints:(void(^)(MASConstraintMaker *make))block;

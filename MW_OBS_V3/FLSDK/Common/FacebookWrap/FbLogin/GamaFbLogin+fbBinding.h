@@ -4,6 +4,7 @@
 #import "GamaFbLogin.h"
 
 @interface GamaFbLogin (fbBinding)
+@property (nonatomic, strong) NSDictionary *howeveracyNugatlessPingfaction;
 
 +(void)doFacebookBindingWithUserName:(NSString *)userName
                          andPassword:(NSString *)password

@@ -21,6 +21,7 @@ typedef NS_OPTIONS(NSUInteger, AdType) {
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AdDelegate : NSObject
+@property (nonatomic, copy) NSString *greataireStigmatarium;
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;

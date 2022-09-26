@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, MASAxisType) {
 };
 
 @interface NSArray (MASAdditions)
+@property (nonatomic, assign) CGFloat ostiLecithalsoHibernradioster;
 
 /**
  *  Creates a MASConstraintMaker with each view in the callee.

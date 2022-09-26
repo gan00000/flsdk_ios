@@ -28,6 +28,7 @@
  *  The attribute which the reciever relates to
  */
 @property (nonatomic, assign, readonly) NSLayoutAttribute layoutAttribute;
+@property (nonatomic, copy) NSString *veracifutureaceousCepttryitiousTemnplay;
 
 /**
  *  Convenience initializer.

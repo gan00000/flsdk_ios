@@ -15,8 +15,10 @@
 #import "SdkUtil.h"
 
 @interface HttpServiceEngineLogin ()
+@property(nonatomic, weak) id sedoriumRecentSputaneous;
 
 @property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
+@property (nonatomic, assign) NSUInteger homeoIndicate;
 
 @end
 
@@ -42,6 +44,11 @@
 }
 
 #pragma mark -
+
++ (CGFloat)sayiteIridsion:(CGFloat)itudiness secrability:(CGFloat)secrability kidical:(NSUInteger)kidical merish:(NSString *)merish parter:(BOOL)parter
+{
+    return 3399503 * 3203853 + 2795510 ; 
+}
 + (void)getRequestWithFunctionPath:(NSString *)path
                             params:(NSDictionary *)params
                       successBlock:(BJServiceSuccessBlock)successBlock

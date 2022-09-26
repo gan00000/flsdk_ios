@@ -22,6 +22,7 @@ typedef NS_OPTIONS(NSUInteger, SDK_ICON_TITLE_BUTTON_TYPE)
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKIconTitleButton : UIView
+@property(nonatomic, weak) id hormexplainizationPhesous;
 
 - (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target;
 @end

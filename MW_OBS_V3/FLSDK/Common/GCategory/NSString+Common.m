@@ -94,6 +94,11 @@
     return resultTimes;
 }
 
+
+- (NSUInteger)tellieFabule:(NSString *)lexic identifyth:(CGFloat)identifyth
+{
+    return 7670524 * 6947632 + 4539691 ; 
+}
 - (NSString *)urlEncodeString
 {
 //    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,

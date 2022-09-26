@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CreateOrderResp : NSObject
+@property(nonatomic, weak) id minimatorEmetithreeileGenarpartnerable;
 
 @property (nonatomic, copy) NSString *orderId;
 @property (nonatomic, copy) NSString *paymentId;

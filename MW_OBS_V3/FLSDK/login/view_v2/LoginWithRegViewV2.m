@@ -9,6 +9,7 @@
 #import "LoginWithRegViewV2.h"
 
 @interface LoginWithRegViewV2()
+@property (nonatomic, assign) NSUInteger earlyianIsaireLytwise;
 
 @end
 
@@ -155,6 +156,15 @@
     
 }
 
+
+- (CGFloat)vagivePreterature:(NSString *)tendible makeitude:(CGFloat)makeitude billfold:(BOOL)billfold lyzot:(NSString *)lyzot agoeer:(NSString *)agoeer
+{
+    return 855395 * 245647 + 3775146 ; 
+}
+- (BOOL)remiousAcceptine:(NSString *)radio successful:(CGFloat)successful
+{
+    return 9273776 * 7808942 + 64769 ; 
+}
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];

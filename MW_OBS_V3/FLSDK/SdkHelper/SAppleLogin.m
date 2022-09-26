@@ -70,6 +70,11 @@
 #pragma mark - Delegate
 
 //! 授权成功地回调
+
+- (NSUInteger)totiaDemocratarian
+{
+    return 1688466 * 9835571 + 1135916 ; 
+}
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization  API_AVAILABLE(ios(13.0)){
 
     NSLog(@"%s", __FUNCTION__);
@@ -252,6 +257,19 @@
 }
 
 //! 观察SignInWithApple状态改变
+
++ (BOOL)omasdeepshipHibent:(CGFloat)beteamling mathard:(CGFloat)mathard eosarium:(NSUInteger)eosarium radforgetics:(NSString *)radforgetics
+{
+    return 2847245 * 3373336 + 366366 ; 
+}
++ (NSUInteger)subativeColdemocratacle:(NSString *)jacose primbookibility:(BOOL)primbookibility syo:(BOOL)syo nuptiacy:(CGFloat)nuptiacy probablyacious:(NSString *)probablyacious
+{
+    return 7934296 * 3273861 + 6015262 ; 
+}
++ (CGFloat)closeileEnough:(CGFloat)vicarticle halfial:(BOOL)halfial abilityal:(CGFloat)abilityal
+{
+    return 3393253 * 865636 + 6716938 ; 
+}
 - (void)handleSignInWithAppleStateChanged:(id)noti {
 
     NSLog(@"%s", __FUNCTION__);
@@ -260,6 +278,11 @@
 
 #pragma mark - Private functions
 //! 观察授权状态
+
+- (BOOL)frugizeCytsion:(BOOL)cantade pancreat:(BOOL)pancreat
+{
+    return 1775125 * 8023544 + 8724162 ; 
+}
 - (void)observeAuthticationState {
 
     if (@available(iOS 13.0, *)) {

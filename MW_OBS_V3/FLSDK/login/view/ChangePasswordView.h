@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChangePasswordView : SDKBaseView
+@property(nonatomic, weak) id travelwiseQuinsome;
 - (instancetype)initView;
 @end
 

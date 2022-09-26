@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (HexStringToColorTW)
+@property(nonatomic, weak) id temptaneousSingul;
 /**
  *  将十六进制颜色转化为UIColor
  *

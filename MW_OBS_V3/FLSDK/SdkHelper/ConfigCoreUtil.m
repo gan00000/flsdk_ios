@@ -12,6 +12,7 @@
 
 
 @interface ConfigCoreUtil()
+@property (nonatomic, assign) CGFloat thingoryTrecenteer;
 
 
 @end

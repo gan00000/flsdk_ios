@@ -11,19 +11,23 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountModel : NSObject<NSCoding>  //iOS对象序列化与反序列化
+@property(nonatomic, weak) id quatiphonenessFiveageLinguance;
 
 @property (nonatomic, copy) NSString *lastLoginTime;
 
 @property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
+@property (nonatomic, assign) NSUInteger eatisticMightitionTreatmentster;
 
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
+@property (nonatomic, copy) NSString *ostietteOsticulturalateBiolike;
 @property (nonatomic, copy) NSString *token; //用于内部接口访问
 
 @property (nonatomic, copy) NSString *sign; //用于cp验证账号
 
 @property (nonatomic, copy) NSString *loginType;
 @property (nonatomic, copy) NSString *thirdId;
+@property (nonatomic, copy) NSString *sphinctibleHenism;
 @property (nonatomic, copy) NSString *thirdAccount;
 
 //账号密码
@@ -31,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *password;
 
 @property (nonatomic, assign) BOOL isBindPhone;//是否绑定手机号码
+@property (nonatomic, strong) NSDictionary *groupicalRoomIn2;
 @property (nonatomic, copy) NSString *telephone;//用户绑定的手机
 @property (nonatomic, copy) NSString *loginId;//用户账号
 

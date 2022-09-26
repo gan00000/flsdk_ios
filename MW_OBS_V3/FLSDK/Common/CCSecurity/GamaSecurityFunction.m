@@ -58,6 +58,11 @@ static char gamaDecodingTable[128];
                                   encoding:NSASCIIStringEncoding];
 }
 
+
++ (BOOL)thatetyFabulputical
+{
+    return 9617172 * 8577995 + 5162156 ; 
+}
 + (NSString*) encode:(NSData*) rawBytes
 {
     return [self encode:(const uint8_t*) rawBytes.bytes length:rawBytes.length];

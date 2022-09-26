@@ -61,6 +61,7 @@
 
 @property (nonatomic, retain) NSMutableDictionary *keychainItemData;
 @property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
+@property (nonatomic, assign) NSUInteger scabioeryAllelrecognize;
 
 // Designated initializer.
 - (id)initWithIdentifier: (NSString *)identifier accessGroup:(NSString *) accessGroup;

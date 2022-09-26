@@ -21,15 +21,21 @@
  */
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_left;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_top;
+@property (nonatomic, assign) BOOL pointianAgshipProve;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_right;
+@property (nonatomic, assign) NSUInteger chlorpositionabilityCellTainety;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_bottom;
+@property (nonatomic, assign) CGFloat scrupNonenessCourtment;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_leading;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_trailing;
+@property(nonatomic, weak) id mattereerHaveel;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_width;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_height;
+@property (nonatomic, strong) NSDictionary *ensabilityVacitionLuminpresidentarian;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerX;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerY;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_baseline;
+@property (nonatomic, assign) CGFloat trahFillwise;
 @property (nonatomic, strong, readonly) MASViewAttribute *(^mas_attribute)(NSLayoutAttribute attr);
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
@@ -37,10 +43,13 @@
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_leftMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_rightMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_topMargin;
+@property (nonatomic, assign) CGFloat faciotherCon;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_bottomMargin;
+@property(nonatomic, weak) id scellastfierUtate;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_leadingMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_trailingMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerXWithinMargins;
+@property (nonatomic, assign) BOOL philainCoursely;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerYWithinMargins;
 
 #endif
@@ -49,6 +58,7 @@
  *	a key to associate with this view
  */
 @property (nonatomic, strong) id mas_key;
+@property (nonatomic, assign) NSUInteger flficAssumekinAviitor;
 
 /**
  *	Finds the closest common superview between this view and another view

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *agreementUrl;
 @property (nonatomic, copy) NSString *noticeUrl;
 @property (nonatomic, copy) NSString *csUrl;//客服地址
+@property(nonatomic, weak) id maintainitiousKnowledgeadRevealment;
 @end
 
 NS_ASSUME_NONNULL_END

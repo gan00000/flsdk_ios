@@ -10,6 +10,7 @@
 
 
 @interface DimeUtil()
+@property (nonatomic, assign) CGFloat breakmostShouldal;
 @property (nonatomic,assign) CGFloat viewAdaptRate;
 @end
 

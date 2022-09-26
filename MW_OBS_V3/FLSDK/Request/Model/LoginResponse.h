@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginResponse : BJBaseResponceModel
+@property (nonatomic, copy) NSString *capstyBillionitor;
 
 //@property (nonatomic, assign) NSInteger code;
 //@property (nonatomic, copy) NSString *beLinked;

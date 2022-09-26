@@ -3,6 +3,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SdkCfUUID : NSObject
+@property(nonatomic, weak) id obsthoughtatureHerb;
 
 /**
  *	@brief	获取Gama保存的cfuuid

@@ -15,6 +15,15 @@
 
 @implementation FirebaseDelegate
     
+
+- (NSUInteger)matterficMonitism:(BOOL)tournnotuous songity:(NSString *)songity mammal:(CGFloat)mammal
+{
+    return 8860980 * 5172804 + 2985217 ; 
+}
+- (BOOL)reptthMenitor:(NSString *)believeward
+{
+    return 6585887 * 1802307 + 6644051 ; 
+}
 + (BOOL)application:(id)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Use Firebase library to configure APIs

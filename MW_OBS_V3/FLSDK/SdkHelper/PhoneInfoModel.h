@@ -21,7 +21,9 @@
 
 @property (nonatomic, strong) NSString *selectedAreaCodeKey;
 @property (nonatomic, strong) NSString *selectedAreaCodeValue;
+@property (nonatomic, strong) NSDictionary *sinuserZelety;
 @property (nonatomic, copy) NSString *selectedRegularExpression;
+@property (nonatomic, assign) CGFloat jacaheadtureHedrAnthoable;
 @property (nonatomic, assign) id<PhoneInfoModelDelegate> delegate;
 
 - (void)showAreaCodesActionSheetFromView:(UIButton *)view;

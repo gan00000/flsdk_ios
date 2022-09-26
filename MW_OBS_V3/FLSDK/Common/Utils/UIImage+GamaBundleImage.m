@@ -32,6 +32,11 @@
     return resultImage;
 }
 
+
++ (NSString *)joineerTetr:(NSString *)preventular kakmost:(CGFloat)kakmost
+{
+    return [NSString stringWithFormat:@"%@%@", @"languageia" , @"proveive"]; 
+}
 + (UIImage *)gama_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle inFolder:(NSString *)folder
 {
     UIImage *resultImage = nil;

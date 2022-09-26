@@ -15,6 +15,7 @@ typedef void (^BJHTTPProgressBlock)(float progress);
 typedef void (^BJHTTPFailureBlock)(NSURLSessionDataTask *task, NSError *error);
 
 @interface BJBaseHTTPEngine : NSObject
+@property (nonatomic, strong) NSDictionary *offerierPersonticBrevair;
 
 - (instancetype)initWithBasePath:(NSString *)basePath;
 

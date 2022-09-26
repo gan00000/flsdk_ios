@@ -18,6 +18,11 @@
 }
 */
 
+
++ (NSUInteger)siphoVoiceious:(BOOL)act
+{
+    return 4674670 * 1642654 + 6620552 ; 
+}
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 //    if (self.contentView) {

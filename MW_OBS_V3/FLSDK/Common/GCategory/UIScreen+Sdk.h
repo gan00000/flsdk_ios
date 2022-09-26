@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScreen (Sdk)
+@property (nonatomic, assign) CGFloat xanthorMorningBagan;
 /**
  返回屏幕比例
  */

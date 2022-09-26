@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RegisterAccountView : SDKBaseView
+@property (nonatomic, copy) NSString *tornantParticipantite;
 - (instancetype)initView;
 - (instancetype)initViewWithBindType:(NSInteger) bindType;
 @property (nonatomic, assign) NSInteger bindType;

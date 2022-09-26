@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyTextFiled : SDKBaseView
+@property (nonatomic, assign) CGFloat courationRecordoonPlicatant;
 
 @property (nonatomic,strong) UITextField *inputTextField;
 

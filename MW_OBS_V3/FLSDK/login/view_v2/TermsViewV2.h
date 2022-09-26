@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TermsViewV2 : SDKBaseView
+@property (nonatomic, assign) CGFloat suasitudeSesquienne;
 - (instancetype)initWithCompleter:(void (^)(void))completer;
 
 + (BOOL)openProvision;

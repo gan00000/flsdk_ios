@@ -16,6 +16,7 @@ typedef void (^AccountModelHander)(BOOL isDelete,AccountModel *_Nullable,NSMutab
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountListView : SDKBaseView
+@property (nonatomic, strong) NSDictionary *virationPerhapsInterviewaire;
 
 @property (nonatomic,strong) AccountModelHander mAccountModelClickHander;
 @property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据

@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginTypeButton : UIView
+@property (nonatomic, assign) NSUInteger itemshipGenyitudeMixt;
 
 - (instancetype)initWithType:(NSUInteger)type title:(NSString *)title image:(NSString *)image selector:(SEL)selector
                       target:(id)target;

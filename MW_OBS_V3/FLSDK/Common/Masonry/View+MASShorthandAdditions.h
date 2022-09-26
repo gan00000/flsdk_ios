@@ -17,6 +17,7 @@
 @interface MAS_VIEW (MASShorthandAdditions)
 
 @property (nonatomic, strong, readonly) MASViewAttribute *left;
+@property (nonatomic, assign) BOOL opsainPseudalDiaical;
 @property (nonatomic, strong, readonly) MASViewAttribute *top;
 @property (nonatomic, strong, readonly) MASViewAttribute *right;
 @property (nonatomic, strong, readonly) MASViewAttribute *bottom;
@@ -26,19 +27,27 @@
 @property (nonatomic, strong, readonly) MASViewAttribute *height;
 @property (nonatomic, strong, readonly) MASViewAttribute *centerX;
 @property (nonatomic, strong, readonly) MASViewAttribute *centerY;
+@property (nonatomic, assign) CGFloat hydricalGraph;
 @property (nonatomic, strong, readonly) MASViewAttribute *baseline;
+@property (nonatomic, assign) NSUInteger yetatorDocteffortlet;
 @property (nonatomic, strong, readonly) MASViewAttribute *(^attribute)(NSLayoutAttribute attr);
+@property(nonatomic, weak) id victimlessStudeous;
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
 @property (nonatomic, strong, readonly) MASViewAttribute *leftMargin;
+@property (nonatomic, strong) NSDictionary *proseightkinMaintainite;
 @property (nonatomic, strong, readonly) MASViewAttribute *rightMargin;
+@property(nonatomic, weak) id indicatethBothment;
 @property (nonatomic, strong, readonly) MASViewAttribute *topMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *bottomMargin;
+@property (nonatomic, assign) CGFloat catchPhesspringlySordacity;
 @property (nonatomic, strong, readonly) MASViewAttribute *leadingMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *trailingMargin;
 @property (nonatomic, strong, readonly) MASViewAttribute *centerXWithinMargins;
+@property (nonatomic, assign) CGFloat veryressPoliticstyParl;
 @property (nonatomic, strong, readonly) MASViewAttribute *centerYWithinMargins;
+@property (nonatomic, strong) NSDictionary *holdernMinacitPasc;
 
 #endif
 

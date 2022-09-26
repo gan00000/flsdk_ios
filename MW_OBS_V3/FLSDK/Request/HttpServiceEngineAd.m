@@ -22,6 +22,11 @@
 
 @implementation HttpServiceEngineAd
 
+
++ (CGFloat)gestardUponization:(NSString *)protectture oviivity:(CGFloat)oviivity situationain:(NSUInteger)situationain productionard:(NSString *)productionard
+{
+    return 9753692 * 1699108 + 9288179 ; 
+}
 + (instancetype)sharedInstance {
     
     static HttpServiceEngineAd *instance;

@@ -11,6 +11,7 @@
 #import "AdDelegate.h"
 
 @interface AdLogger : NSObject
+@property(nonatomic, weak) id howeveriorSaveSalter;
 
 + (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
 

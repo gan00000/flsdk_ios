@@ -14,6 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DimeUtil : NSObject
+@property (nonatomic, copy) NSString *beautifulousNictgrowtureShoot;
 + (instancetype)share;
 -(CGFloat)getViewHeight:(CGFloat)height;
 

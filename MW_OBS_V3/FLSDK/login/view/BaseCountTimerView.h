@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign,nonatomic) NSInteger totalCount;
 @property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;
+@property (nonatomic, copy) NSString *risearyTaxit;
 
 -(void)startCountTimer;
 -(void) finishCountTimer;

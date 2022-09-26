@@ -19,7 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong)LoginResponse *mLoginResponse;
 @property (nonatomic, strong)ConfigModel *mConfigModel;
+@property (nonatomic, copy) NSString *acceptSeaitionPositiony;
 @property (nonatomic, strong)GameUserModel * gameUserModel;
+@property(nonatomic, weak) id therifoldPuber;
 @property (nonatomic,strong) UrlMode *urls;
 
 @property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;

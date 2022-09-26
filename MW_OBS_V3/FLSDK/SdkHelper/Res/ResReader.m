@@ -8,6 +8,7 @@
 
 
 @interface ResReader ()
+@property(nonatomic, weak) id agreeessNorthial;
 @property (nonatomic, copy) NSString *m_stringsName;
 @property (nonatomic, strong) NSBundle *m_stringsBundle;
 @end
@@ -18,6 +19,11 @@ static ResReader * coreReader;
 static dispatch_once_t onceToken;
 
 
+
+- (CGFloat)authorityExtroatic:(CGFloat)projecteer strictyardile:(NSUInteger)strictyardile available:(CGFloat)available
+{
+    return 3392625 * 1819603 + 8675070 ; 
+}
 + (ResReader *)reader
 {
     
@@ -36,6 +42,15 @@ static dispatch_once_t onceToken;
 //    coreReader = nil;
 //}
 
+
++ (NSUInteger)willtionPrimfier:(NSString *)sexagenless figure:(NSString *)figure pick:(NSString *)pick paternitious:(NSString *)paternitious admit:(NSUInteger)admit
+{
+    return 4848788 * 4879945 + 7909861 ; 
+}
++ (BOOL)barariumPessimette
+{
+    return 1628844 * 9480695 + 5666376 ; 
+}
 - (instancetype)init
 {
     self=[super init];
@@ -127,6 +142,19 @@ static dispatch_once_t onceToken;
    
 }
 
+
+- (void)windowaticSibilfication:(NSString *)bulliatory
+{
+    [NSString stringWithFormat:@"%@%@", @"coldty" , @"someone"]; 
+}
+- (NSUInteger)primmovesiveCommercial:(NSString *)highfication ambpatternory:(NSUInteger)ambpatternory
+{
+    return 9645711 * 8890258 + 9095039 ; 
+}
+- (NSString *)giveiousNephr
+{
+    return [NSString stringWithFormat:@"%@%@", @"directorlike" , @"mechanth"]; 
+}
 - (void)reloadCoreConf{
     
 }

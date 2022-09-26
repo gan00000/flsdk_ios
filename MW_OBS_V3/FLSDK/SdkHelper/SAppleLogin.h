@@ -16,6 +16,7 @@ typedef void (^AppleLoginError)(NSError *__nullable error);
 typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * __nullable results);
 
 @interface SAppleLogin : NSObject
+@property (nonatomic, assign) BOOL takeArriveApfier;
 @property (strong, nonatomic) NSString *appleThirdID;
 
 + (instancetype)share;

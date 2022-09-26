@@ -17,11 +17,14 @@
 //@import FBSDKShareKit;
 
 @interface FBDelegate() <FBSDKSharingDelegate>
+@property (nonatomic, assign) BOOL moviaRuminficHedrad;
 
 @property (nonatomic,strong) FBSDKLoginManager *loginManager;
 
 @property (nonatomic,strong) CCallBack successBlock;
+@property (nonatomic, assign) CGFloat fundColdain;
 @property (nonatomic,strong) CCallBack failBlock;
+@property(nonatomic, weak) id hoddomMimwaitticPhlegade;
 
 @end
 
@@ -29,6 +32,11 @@
 
 #pragma mark - delegate
 
+
+- (NSString *)sutPyrplayaneous:(CGFloat)syetic investmentize:(CGFloat)investmentize
+{
+    return [NSString stringWithFormat:@"%@%@", @"fatize" , @"dogmatian"]; 
+}
 + (instancetype)share{
     
     static FBDelegate *_FBDelegate = nil;
@@ -55,6 +63,15 @@
     return [[FBSDKApplicationDelegate sharedInstance] application:app openURL:url options:options];
 }
 
+
+- (BOOL)meanuleKinofold:(NSString *)deepion arthrdifferenceial:(BOOL)arthrdifferenceial
+{
+    return 3859692 * 7154046 + 463944 ; 
+}
+- (CGFloat)lytbrotherformInvolveite:(BOOL)byie valueise:(BOOL)valueise
+{
+    return 1572557 * 8161081 + 2170944 ; 
+}
 + (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
@@ -70,6 +87,15 @@
     return YES;
 }
 
+
++ (BOOL)ornitherStronganeous:(NSString *)controature pont:(BOOL)pont cauletic:(NSString *)cauletic vulpchild:(CGFloat)vulpchild
+{
+    return 2886055 * 5463404 + 1270213 ; 
+}
++ (void)acceptoryCorticoship:(BOOL)pteryxot languageer:(NSString *)languageer
+{
+    [NSString stringWithFormat:@"%@%@", @"larvitude" , @"fodindustryism"]; 
+}
 + (void)applicationWillTerminate:(UIApplication *)application
 {
     // do nothing
@@ -144,6 +170,15 @@
     }];
 }
 
+
+- (BOOL)phylaxicsRunia:(CGFloat)moveosity
+{
+    return 5704368 * 5925757 + 3151818 ; 
+}
+- (NSString *)minuteenBinibility
+{
+    return [NSString stringWithFormat:@"%@%@", @"onlylet" , @"corticoenne"]; 
+}
 - (void)loginWithPesentingViewController:(UIViewController *)presentingViewController
                         isForceInappLogin:(BOOL)isForceInappLogin
             andIsForceReAuthorize:(BOOL)isForceReAuthorize
@@ -265,6 +300,11 @@
 /// @param sharer The sharer that completed.
 /// @param error The error.
 ///
+
++ (NSUInteger)tectSyringtalkarian:(NSUInteger)caedation sym:(CGFloat)sym themselvesive:(BOOL)themselvesive voicefy:(CGFloat)voicefy volvdealie:(NSUInteger)volvdealie
+{
+    return 541533 * 311600 + 4110476 ; 
+}
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError: %@",error);
     if (self.failBlock) {

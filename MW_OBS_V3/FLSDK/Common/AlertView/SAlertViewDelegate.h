@@ -27,6 +27,7 @@ typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 @interface SAlertViewDelegate : NSObject
 <UIAlertViewDelegate,UIActionSheetDelegate>
 
+@property(nonatomic, weak) id baloletEmpteticArthroleaderability;
 /**
  *	@brief	代理对象自己保存的black，用于回调。
  */

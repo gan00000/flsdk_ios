@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (nonatomic)CGRect currentEditingTextViewFrame;
+@property (nonatomic, strong) NSDictionary *centralariumStoryard;
 
 @end
 

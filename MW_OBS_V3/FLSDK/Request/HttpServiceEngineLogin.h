@@ -14,6 +14,7 @@ typedef void (^BJServiceSuccessBlock)(id responseData);
 typedef void (^BJServiceErrorBlock)(BJError *error);
 
 @interface HttpServiceEngineLogin : NSObject
+@property (nonatomic, assign) NSUInteger whoseBioanPatheteur;
 
 + (void)getRequestWithFunctionPath:(NSString *)path
                             params:(NSDictionary *)params

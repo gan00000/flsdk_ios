@@ -14,6 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainHomeView : SDKBaseView
+@property (nonatomic, assign) CGFloat optionfulPhylanFant;
 
 //@property (nonatomic, strong) AccountLoginView *mAccountLoginView;
 //

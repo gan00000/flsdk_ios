@@ -14,6 +14,7 @@ typedef void (^PayServiceSuccessBlock)(id responseData);
 typedef void (^PayServiceErrorBlock)(BJError *error);
 
 @interface HttpServiceEnginePay : NSObject
+@property (nonatomic, assign) BOOL dinoityMandkinNtot;
 
 + (void)getRequestWithFunctionPath:(NSString *)path
                             params:(NSDictionary *)params

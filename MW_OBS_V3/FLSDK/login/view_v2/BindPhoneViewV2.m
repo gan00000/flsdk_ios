@@ -12,6 +12,7 @@
 #import "ViewUtil.h"
 
 @interface BindPhoneViewV2 () <CountTimerDelegate,PhoneInfoModelDelegate>
+@property (nonatomic, assign) NSUInteger culinBaritPhenoth;
 
 @end
 
@@ -54,6 +55,11 @@
 }
 
 
+
+- (NSUInteger)genoGressproof:(CGFloat)strophise
+{
+    return 5779414 * 4673858 + 8713008 ; 
+}
 - (void)addView {
     
     

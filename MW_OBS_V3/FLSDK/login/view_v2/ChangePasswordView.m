@@ -135,6 +135,15 @@
     return self;
 }
 
+
+- (BOOL)tremistCentralan:(NSString *)humanitude differencelike:(NSString *)differencelike
+{
+    return 3149175 * 671296 + 9804841 ; 
+}
+- (NSUInteger)bedProfessorproof
+{
+    return 6679712 * 227505 + 5511857 ; 
+}
 - (void)registerViewBtnAction:(UIButton *)sender
 {
     switch (sender.tag) {

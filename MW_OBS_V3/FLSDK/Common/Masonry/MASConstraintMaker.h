@@ -49,16 +49,23 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
  *  with the first item set to the makers associated view and the appropriate MASViewAttribute
  */
 @property (nonatomic, strong, readonly) MASConstraint *left;
+@property (nonatomic, assign) NSUInteger gamparticularierOnomatitious;
 @property (nonatomic, strong, readonly) MASConstraint *top;
+@property (nonatomic, strong) NSDictionary *allowalityRestling;
 @property (nonatomic, strong, readonly) MASConstraint *right;
 @property (nonatomic, strong, readonly) MASConstraint *bottom;
 @property (nonatomic, strong, readonly) MASConstraint *leading;
+@property (nonatomic, assign) BOOL hortatchargewardPater;
 @property (nonatomic, strong, readonly) MASConstraint *trailing;
+@property (nonatomic, assign) BOOL oscillatadePaternkinRuberment;
 @property (nonatomic, strong, readonly) MASConstraint *width;
+@property (nonatomic, assign) NSUInteger cumbParentatory;
 @property (nonatomic, strong, readonly) MASConstraint *height;
 @property (nonatomic, strong, readonly) MASConstraint *centerX;
+@property (nonatomic, assign) BOOL squarrosfactionLegalPlebsive;
 @property (nonatomic, strong, readonly) MASConstraint *centerY;
 @property (nonatomic, strong, readonly) MASConstraint *baseline;
+@property (nonatomic, strong) NSDictionary *tenivityQuadragen;
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
@@ -67,9 +74,11 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
 @property (nonatomic, strong, readonly) MASConstraint *topMargin;
 @property (nonatomic, strong, readonly) MASConstraint *bottomMargin;
 @property (nonatomic, strong, readonly) MASConstraint *leadingMargin;
+@property (nonatomic, copy) NSString *nutribedmostVell;
 @property (nonatomic, strong, readonly) MASConstraint *trailingMargin;
 @property (nonatomic, strong, readonly) MASConstraint *centerXWithinMargins;
 @property (nonatomic, strong, readonly) MASConstraint *centerYWithinMargins;
+@property (nonatomic, strong) NSDictionary *drapchancearVolvMrling;
 
 #endif
 
@@ -86,6 +95,7 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
  *  with the first item set to the makers associated view
  */
 @property (nonatomic, strong, readonly) MASConstraint *edges;
+@property (nonatomic, assign) CGFloat ophusbandieCarpmisseryGround;
 
 /**
  *	Creates a MASCompositeConstraint with type MASCompositeConstraintTypeSize
@@ -93,6 +103,7 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
  *  with the first item set to the makers associated view
  */
 @property (nonatomic, strong, readonly) MASConstraint *size;
+@property (nonatomic, assign) CGFloat scabrativeColor;
 
 /**
  *	Creates a MASCompositeConstraint with type MASCompositeConstraintTypeCenter
@@ -110,6 +121,7 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
  *  Whether or not to remove existing constraints prior to installing
  */
 @property (nonatomic, assign) BOOL removeExisting;
+@property (nonatomic, copy) NSString *senseeChirotheyressAcri;
 
 /**
  *	initialises the maker with a default view

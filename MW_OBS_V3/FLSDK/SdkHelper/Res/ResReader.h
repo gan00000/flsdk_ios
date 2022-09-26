@@ -22,6 +22,7 @@
 @property (nonatomic,strong) NSDictionary * coreConfDic;
 
 @property (nonatomic,strong) NSDictionary * mainBundleConfDic;//配置文件不放在bundle，以前是放在bundle
+@property (nonatomic, assign) BOOL phylaneousModerneer;
 
 @property (nonatomic, strong) NSMutableDictionary *areaCodeDic;
 @property (nonatomic, strong) NSMutableArray *areaInfoArray;

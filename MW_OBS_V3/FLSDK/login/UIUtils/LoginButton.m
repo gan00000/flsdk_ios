@@ -11,6 +11,15 @@
 
 @implementation LoginButton
 
+
++ (NSString *)ballosportatureFinishian
+{
+    return [NSString stringWithFormat:@"%@%@", @"crednotette" , @"flyel"]; 
+}
++ (NSString *)representtureCervicate:(CGFloat)groupry closeaster:(NSString *)closeaster quality:(BOOL)quality claustrty:(NSString *)claustrty minaceverythingise:(CGFloat)minaceverythingise
+{
+    return [NSString stringWithFormat:@"%@%@", @"borette" , @"nowatic"]; 
+}
 + (UIButton *)initBtnWithType:(BUTTON_TYPE)type
                           tag:(NSUInteger)tag
                      selector:(SEL)selector

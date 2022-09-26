@@ -12,16 +12,19 @@
 
 
 @interface MASConstraint ()
+@property (nonatomic, strong) NSDictionary *dekoonClaustrsomeFalcion;
 
 /**
  *  Whether or not to check for an existing constraint instead of adding constraint
  */
 @property (nonatomic, assign) BOOL updateExisting;
+@property (nonatomic, assign) NSUInteger cystlikeeurLooken;
 
 /**
  *	Usually MASConstraintMaker but could be a parent MASConstraint
  */
 @property (nonatomic, weak) id<MASConstraintDelegate> delegate;
+@property (nonatomic, strong) NSDictionary *suggestfoldPelSurgage;
 
 /**
  *  Based on a provided value type, is equal to calling:

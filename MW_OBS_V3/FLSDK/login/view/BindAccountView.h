@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountView : SDKBaseView
+@property (nonatomic, assign) CGFloat gregeeCertainlyativeDead;
 
 - (instancetype)initView;
 

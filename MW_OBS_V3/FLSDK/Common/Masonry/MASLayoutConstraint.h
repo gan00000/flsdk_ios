@@ -13,6 +13,7 @@
  *  makes it easier to identify which constraints have been created via Masonry
  */
 @interface MASLayoutConstraint : NSLayoutConstraint
+@property (nonatomic, assign) NSUInteger surfaceisticPhenite;
 
 /**
  *	a key to associate with this constraint

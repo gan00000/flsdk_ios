@@ -22,6 +22,7 @@
 #import  <FirebaseMessaging/FIRMessaging.h>
 
 @interface BaseSDK()<FIRMessagingDelegate, UNUserNotificationCenterDelegate>
+@property (nonatomic, assign) NSUInteger spargesqueEndwise;
 
 @end
 

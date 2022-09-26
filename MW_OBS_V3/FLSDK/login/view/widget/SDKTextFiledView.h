@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) ItemViewClickHander clickAccountListItem;
 @property (nonatomic) CCallBack inputTextFieldChange;
 @property (nonatomic) UITextField *inputUITextField;
+@property(nonatomic, weak) id sitizationOffice;
 @property (nonatomic) UIButton *moreAccountBtn;
 
 @property (nonatomic) UIImageView *lableIconImageView;
