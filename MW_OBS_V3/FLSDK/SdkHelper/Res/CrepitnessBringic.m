@@ -865,7 +865,7 @@ It's a golden rule in sleep medicine, backed by "
 临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你 
 **/
 {
-    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"];
+    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
 }
 -(BOOL) isMoreLanguage
 
