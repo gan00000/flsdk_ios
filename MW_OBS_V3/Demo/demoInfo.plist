@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>放置动画demo</string>
+	<string>终末V3 demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -48,7 +48,7 @@
 	<key>FacebookAppID</key>
 	<string>1672362243138559</string>
 	<key>FacebookClientToken</key>
-	<string>6a5570d4d7aad0ba5fb55035ce199da6</string>
+	<string>d5b9ebb98ff9a1f67266d937f4cce980</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
 	<key>LSApplicationQueriesSchemes</key>

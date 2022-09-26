@@ -140,7 +140,6 @@
 		0369B35928647256002F4B2F /* OntCaleory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* OntCaleory.m */; };
 		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
 		0376480B286178D600CAD034 /* CollegesureSafeeur.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* CollegesureSafeeur.m */; };
-		037B562728BDA67D007A3434 /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
 		037C6EF92875AC790041EC34 /* VesicallyGreatless.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* VesicallyGreatless.m */; };
@@ -1930,7 +1929,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				033B9C9C28DAFC09000DA93D /* SDKCoreInfo.plist in Resources */,
-				037B562728BDA67D007A3434 /* SDKResources.bundle in Resources */,
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
