@@ -138,6 +138,7 @@
                             AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
                             AFEventParamContentId: mPayData.productId,
                             AFEventParamOrderId: mPayData.orderId,
+                            @"platform"      : @"ios",
                             
             }];
             
@@ -152,6 +153,7 @@
                 kFIRParameterCurrency : @"USD",
                 kFIRParameterTransactionID : mPayData.orderId,
                 @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                @"platform"      : @"ios",
                 
             }];
         }

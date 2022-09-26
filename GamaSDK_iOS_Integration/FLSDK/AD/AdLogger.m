@@ -39,6 +39,7 @@
             @"role_id"      :roleId,
             @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
             @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
+            @"platform"      : @"ios",
         };
         
     } @catch (NSException *exception) {
