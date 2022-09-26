@@ -334,7 +334,7 @@ static dispatch_once_t onceToken;
 
 -(BOOL) isVersion2
 {
-    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"];
+    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
 }
 
 -(BOOL) isMoreLanguage
