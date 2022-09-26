@@ -1,6 +1,0 @@
-framework module MWSDK {
-  umbrella header "MWSDK.h"
-
-  export *
-  module * { export * }
-}
