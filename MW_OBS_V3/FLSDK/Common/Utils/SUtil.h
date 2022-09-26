@@ -5,8 +5,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SUtil : NSObject
-{}
+@interface SUtil : NSObject{
+    
+}
 
 
 

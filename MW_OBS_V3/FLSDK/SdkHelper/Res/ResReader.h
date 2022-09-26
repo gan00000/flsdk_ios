@@ -13,8 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ResReader : NSObject
-{
+@interface ResReader : NSObject{
     
 }
 
