@@ -95,6 +95,7 @@ When life offers you a dream so far
 **/
             @"idfa"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
             @"uniqueId"         :     [[FoeniveNow getGamaUUID] lowercaseString]? : @"",
+            @"platform"      : @"ios",
         };
     } @catch (NSException *exception) {
     }

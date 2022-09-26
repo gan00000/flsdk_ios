@@ -241,6 +241,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
 **/
                             AFEventParamContentId: mPayData.productId,
                             AFEventParamOrderId: mPayData.orderId,
+                            @"platform"      : @"ios",
 
 /**
   道还不够吗？
