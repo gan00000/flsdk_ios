@@ -66,8 +66,18 @@
     [self addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(self);
-        make.width.mas_equalTo(VW(498));
-        make.height.mas_equalTo(VH(288));
+        
+        if (IS_PORTRAIT) {
+            make.width.mas_equalTo(VW(330));
+            make.height.mas_equalTo(VH(512));
+        }else{
+            
+            make.width.mas_equalTo(VW(498));
+            make.height.mas_equalTo(VH(288));
+            
+        }
+       
+        
     }];
     
     
