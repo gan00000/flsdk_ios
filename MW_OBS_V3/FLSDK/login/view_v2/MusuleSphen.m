@@ -92,6 +92,51 @@ Is it not en
 //没有足够
     return self;
 }
+- (void)showTermsViewForAccountLoginView {
+    SDK_LOG(@"rememberTermsLableTapped");
+    MeanerAnnoutsideful *aTermsViewV2 = [[MeanerAnnoutsideful alloc] initWithCompleter:^{
+        
+        /**
+         andner. So if your bedtime and wake up time change from day to day or on weekends, he said, your sleep rhythms aren't predictable and the body doesn't know how to respond.
+         
+         临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都
+         **/
+        checkBoxTermsBtn.selected = YES;
+        
+        /**
+         s they are stepping stones to your dreams. Understand that you may make mistakes, but don’t let them discourage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determination.
+         
+         
+         
+         每前进一步，你都应该引以为豪，因为它们是你实现梦想的阶梯。要知道在这个过程中你也许会犯错误，但不要气馁。珍视自我的潜能，因为它们使你独
+         **/
+    }];
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:aTermsViewV2];
+    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.mas_equalTo(superView);
+        make.leading.mas_equalTo(superView);
+        
+        /**
+         as still worth $20."
+         
+         
+         
+         “朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它仍然是20美元。”
+         
+         
+         
+         “Many times in ou
+         **/
+        make.trailing.mas_equalTo(superView);
+    }];
+    aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
+    [UIView animateWithDuration:0.6 animations:^{
+        aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
+    } completion:^(BOOL finished) {
+    }];
+}
+
 -(void)addView
 {
 //ve and always will.
@@ -782,48 +827,7 @@ There are not enough words to contemplate on how much I m
 设置惩罚条 
 **/
         [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
-            SDK_LOG(@"rememberTermsLableTapped");
-            MeanerAnnoutsideful *aTermsViewV2 = [[MeanerAnnoutsideful alloc] initWithCompleter:^{
-
-/**
-  andner. So if your bedtime and wake up time change from day to day or on weekends, he said, your sleep rhythms aren't predictable and the body doesn't know how to respond.
-
-临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都 
-**/
-                checkBoxTermsBtn.selected = YES;
-
-/**
-  s they are stepping stones to your dreams. Understand that you may make mistakes, but don’t let them discourage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determination.
-
-
-
-每前进一步，你都应该引以为豪，因为它们是你实现梦想的阶梯。要知道在这个过程中你也许会犯错误，但不要气馁。珍视自我的潜能，因为它们使你独 
-**/
-            }];
-            UIView *superView = appTopViewController.view;
-            [superView addSubview:aTermsViewV2];
-            [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.bottom.mas_equalTo(superView);
-                make.leading.mas_equalTo(superView);
-
-/**
-  as still worth $20."
-
-
-
-“朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它仍然是20美元。”
-
-
-
-“Many times in ou 
-**/
-                make.trailing.mas_equalTo(superView);
-            }];
-            aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
-            [UIView animateWithDuration:0.6 animations:^{
-                aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
-            } completion:^(BOOL finished) {
-            }];
+            [self showTermsViewForAccountLoginView];
         }];
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     termAgreeView.hidden = !mConfigModel.showContract;
@@ -993,6 +997,8 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
         return YES;
     }
     [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    
+    [self showTermsViewForAccountLoginView];
     return NO;
 }
 @end

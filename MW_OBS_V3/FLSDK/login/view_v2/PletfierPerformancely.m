@@ -119,6 +119,71 @@ He proceeded to crumple the 20 dollar note up. He then
 //
 //If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or stu
 }
+- (void)showTermsViewForMainHomeView {
+    SDK_LOG(@"rememberTermsLableTapped");
+    
+    /**
+     t let them discourage you. Value your capabilities
+     **/
+    MeanerAnnoutsideful *aTermsViewV2 = [[MeanerAnnoutsideful alloc] initWithCompleter:^{
+        //a $20 bill. In the room of 200, he asked, “Who would like this $20 bill?”
+        //
+        //
+        //
+        //一位有名的演讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
+        //
+        //
+        //
+        //Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me do this."
+        //
+        //
+        //
+        //开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
+        //
+        //
+        //
+        //He proceeded to crumple the 20 dollar note u
+        checkBoxTermsBtn.selected = YES;
+        
+        /**
+         死在自己爱的人的怀里看起来是一个不错的选择。
+         Your mood swings
+         **/
+    }];
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:aTermsViewV2];
+    
+    /**
+     我不是害怕你……我只是害怕失去你，害怕你会突然消失……
+     You don't know how lo
+     **/
+    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.mas_equalTo(superView);
+        make.leading.mas_equalTo(superView);
+        make.trailing.mas_equalTo(superView);
+    }];
+    //m afraid. I'm not afraid of you… I'm only a
+    aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
+    [UIView animateWithDuration:0.6 animations:^{
+        aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
+        //
+        //I miss the way the sun shines at your face and the way the cold breeze of the morning surprises us.
+        //
+        //我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
+        //
+        //I miss the morning kisses and the morning snuggling you and I shared.
+        //
+        //我想念早上的吻，早上依偎着你和我分享。
+        //
+        //I miss you. I miss going to work in the morning and knowing that at the end of the day,
+        //
+        //我想你。我想念早上去上班，直到在一天结束的时候，
+        //
+        //I will find you wa
+    } completion:^(BOOL finished) {
+    }];
+}
+
 - (instancetype)initView
 {
     self = [super init];
@@ -334,68 +399,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
 //床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起床调整一下。也许你只需要5分钟就能感觉到困意，也许需要一小时，但是这段时间不要醒着躺在床上。”
 //
 //Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of
-            SDK_LOG(@"rememberTermsLableTapped");
-
-/**
-  t let them discourage you. Value your capabilities  
-**/
-            MeanerAnnoutsideful *aTermsViewV2 = [[MeanerAnnoutsideful alloc] initWithCompleter:^{
-//a $20 bill. In the room of 200, he asked, “Who would like this $20 bill?”
-//
-//
-//
-//一位有名的演讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
-//
-//
-//
-//Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me do this."
-//
-//
-//
-//开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
-//
-//
-//
-//He proceeded to crumple the 20 dollar note u
-                checkBoxTermsBtn.selected = YES;
-
-/**
-  死在自己爱的人的怀里看起来是一个不错的选择。
-Your mood swings 
-**/
-            }];
-            UIView *superView = appTopViewController.view;
-            [superView addSubview:aTermsViewV2];
-
-/**
-  我不是害怕你……我只是害怕失去你，害怕你会突然消失……
-You don't know how lo 
-**/
-            [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.bottom.mas_equalTo(superView);
-                make.leading.mas_equalTo(superView);
-                make.trailing.mas_equalTo(superView);
-            }];
-//m afraid. I'm not afraid of you… I'm only a
-            aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
-            [UIView animateWithDuration:0.6 animations:^{
-                aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
-//
-//I miss the way the sun shines at your face and the way the cold breeze of the morning surprises us.
-//
-//我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
-//
-//I miss the morning kisses and the morning snuggling you and I shared.
-//
-//我想念早上的吻，早上依偎着你和我分享。
-//
-//I miss you. I miss going to work in the morning and knowing that at the end of the day,
-//
-//我想你。我想念早上去上班，直到在一天结束的时候，
-//
-//I will find you wa
-            } completion:^(BOOL finished) {
-            }];
+            [self showTermsViewForMainHomeView];
 
 /**
   ore.
@@ -1176,6 +1180,7 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
 **/
     }
     [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    [self showTermsViewForMainHomeView];
     return NO;
 //
 //

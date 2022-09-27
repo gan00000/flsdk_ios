@@ -659,6 +659,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
         gl.frame = okBtn.bounds;
     }];
     hasBindPhoneTips = [BedeurFail initLabelWithText:@"text_has_phone_bind_tips".localx fontSize:FS(12) textColor:ColorHex(@"#4B4B4B")];
+    hasBindPhoneTips.numberOfLines = 0;
     [contentView addSubview:hasBindPhoneTips];
     [hasBindPhoneTips mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(phoneContentView);
