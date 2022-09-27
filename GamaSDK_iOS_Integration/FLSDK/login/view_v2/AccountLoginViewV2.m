@@ -71,6 +71,36 @@
     }
 }
 
+- (void)showTermsViewForAccountLoginView {
+    SDK_LOG(@"rememberTermsLableTapped");
+    //            if (self.delegate) {
+    //                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
+    //            }
+    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter:^{
+        checkBoxTermsBtn.selected = YES;
+    }];
+    
+    UIView *superView = appTopViewController.view;
+    [superView addSubview:aTermsViewV2];
+    
+    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.mas_equalTo(superView);
+        make.leading.mas_equalTo(superView);
+        make.trailing.mas_equalTo(superView);
+    }];
+    
+    
+    aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
+    
+    [UIView animateWithDuration:0.6 animations:^{
+        
+        aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
+        
+        
+    } completion:^(BOOL finished) {
+    }];
+}
+
 - (instancetype)initView
 {
     self = [super init];
@@ -156,33 +186,8 @@
         }];
         rememberTermsLable.userInteractionEnabled=YES;
         [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
-            SDK_LOG(@"rememberTermsLableTapped");
-//            if (self.delegate) {
-//                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
-//            }
-            TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter:^{
-                checkBoxTermsBtn.selected = YES;
-            }];
             
-            UIView *superView = appTopViewController.view;
-            [superView addSubview:aTermsViewV2];
-            
-            [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.bottom.mas_equalTo(superView);
-                make.leading.mas_equalTo(superView);
-                make.trailing.mas_equalTo(superView);
-            }];
-            
-            
-            aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, superView.frame.size.height);
-            
-            [UIView animateWithDuration:0.6 animations:^{
-                
-                aTermsViewV2.transform = CGAffineTransformTranslate(aTermsViewV2.transform, 0, -superView.frame.size.height);
-                
-                
-            } completion:^(BOOL finished) {
-            }];
+            [self showTermsViewForAccountLoginView];
             
         }];
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
@@ -540,6 +545,7 @@
     }
     [SdkUtil toastMsg:GetString(@"text_term_not_read")];
     //    [AlertUtil showAlertWithMessage:];
+    [self showTermsViewForAccountLoginView];
     return NO;
 }
 
