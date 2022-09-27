@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>947127177793-ekcuhguvh2ubs3d1prtqeqrb72c816dd.apps.googleusercontent.com</string>
+	<string>1041194482672-9jee2ds6pbn1k54e281vcq7413d1cj7r.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.947127177793-ekcuhguvh2ubs3d1prtqeqrb72c816dd</string>
+	<string>com.googleusercontent.apps.1041194482672-9jee2ds6pbn1k54e281vcq7413d1cj7r</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCgb2qKigi_i50jMSo99jTP6Ny183qnBq4</string>
+	<string>AIzaSyAa9-75NE-9B8Vwl2-YKEctbJpvVaVbxB0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>947127177793</string>
+	<string>1041194482672</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.wanye.fszhl</string>
+	<string>com.miaoplay.tw</string>
 	<key>PROJECT_ID</key>
-	<string>tw-zmdyls-ios</string>
+	<string>rd-sdk</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tw-zmdyls-ios.appspot.com</string>
+	<string>rd-sdk.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:947127177793:ios:055a61c010c20b59fcecc0</string>
+	<string>1:1041194482672:ios:6d3ef8883a28fc84f97b35</string>
 </dict>
 </plist>

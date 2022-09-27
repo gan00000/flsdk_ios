@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>终末V3 demo</string>
+	<string>SDK_V3 demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -30,7 +30,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fszhlios</string>
-				<string>fb1672362243138559</string>
+				<string>fb1167206653872363</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -39,16 +39,16 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.947127177793-ekcuhguvh2ubs3d1prtqeqrb72c816dd</string>
+				<string>com.googleusercontent.apps.1041194482672-9jee2ds6pbn1k54e281vcq7413d1cj7r</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
-	<string>1672362243138559</string>
+	<string>1167206653872363</string>
 	<key>FacebookClientToken</key>
-	<string>d5b9ebb98ff9a1f67266d937f4cce980</string>
+	<string>42c8e6c78eeccdebb597390ee50b05ca</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -65,7 +65,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1657313585</string>
+		<string>1657186918</string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
