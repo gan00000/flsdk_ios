@@ -958,6 +958,13 @@ Flightless bird, jealous, weeping
 折翼的鸟？羡慕，哭泣
 Or lost you? 
 **/
+
+-(NSString *) getLogUrl
+{
+    return [self getStringForKey:@"sdk_url_log"];
+}
+
+
 @end
 
 /**

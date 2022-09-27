@@ -100,6 +100,10 @@ Even if from another world, s
 /**
   r give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. "Whether it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get 
 **/
+
++ (void)saveReportEventName:(NSString *)eventName;
+
++ (BOOL)isReportEventName:(NSString *)eventName;
 @end
 
 /**

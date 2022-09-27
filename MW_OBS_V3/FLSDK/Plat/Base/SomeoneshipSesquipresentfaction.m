@@ -347,6 +347,9 @@ That thinking needs to be changed, Grander said.
 - (void)sdk_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     SDK_LOG_FILE_FUNCTION(@"didFinishLaunchingWithOptions");
+    
+    [VesicallyGreatless logServerWithEventName_Install];//发送事件到日志服务器
+    
     [SophoindividualitionBillain application:application didFinishLaunchingWithOptions:launchOptions];
     [AperthandBalowise getSdkConfigWithSuccessBlock:^(id responseData) {
     } errorBlock:^(CuscardOnomary *error) {

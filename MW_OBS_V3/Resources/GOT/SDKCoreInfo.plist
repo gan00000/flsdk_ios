@@ -28,5 +28,7 @@
 	<string>https://login.mmhyplayer.com/</string>
 	<key>sdk_url_pay</key>
 	<string>https://pay.mmhyplayer.com/</string>
+	<key>sdk_url_log</key>
+	<string>https://log.meowplayer.com/</string>
 </dict>
 </plist>

@@ -79,4 +79,6 @@ Happily, there is a way to d
 -(BOOL) isVersion2;
 -(BOOL) isMoreLanguage;
 - (NSString *)getSdkBundleName;
+
+-(NSString *) getLogUrl;
 @end

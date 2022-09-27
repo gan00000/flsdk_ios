@@ -263,6 +263,48 @@ It's
         }
     }];
 }
+
+//https://log.meowplayer.com/sdk/event/log
+#pragma mark - 上报自己服务器一些事件
++(void)reportSdkEventWithEventName:(NSString *)eventName successBlock:(BJServiceSuccessBlock)successBlock
+                                errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSString * timeStamp=[FoeniveNow getTimeStamp];
+    NSDictionary *dic = nil;
+    @try {
+        dic = @{
+            @"eventName"        :eventName,
+            @"appTime"          :timeStamp,
+            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
+        };
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        //[self _presentAlertWithException:exception andDictionary:dic];
+    }
+    
+    SDK_LOG(@"reportSdkEvent start EventName:%@", eventName);
+    FlyesqueSapiship *logHTTPEngine = [[FlyesqueSapiship alloc] initWithBasePath:[SDKRES getLogUrl]];
+    
+    [logHTTPEngine getRequestWithFunctionPath:@"sdk/event/log" params:params successBlock:^(NSURLSessionDataTask *task, id responseData) {
+        
+        SDK_LOG(@"reportSdkEvent finish success EventName:%@", eventName);
+        
+        if (successBlock) {
+            successBlock(responseData);
+        }
+        
+    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+        
+        SDK_LOG(@"reportSdkEvent finish error EventName:%@, errorMsg:%@", eventName, error.description);
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
 #pragma mark - 免注册
 +(void)freeLoginOrRegister:(NSString *)thirdId
                             successBlock:(BJServiceSuccessBlock)successBlock
@@ -809,7 +851,7 @@ Those fishing lur
         @"packageName"      :     [FoeniveNow getBundleIdentifier],
         @"adId"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
         @"idfa"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
-        @"uuid"             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
+//        @"uuid"             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
 //得到的。
 //
 //

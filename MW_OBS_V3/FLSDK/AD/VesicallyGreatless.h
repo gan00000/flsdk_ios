@@ -1,6 +1,9 @@
 
 #import <Foundation/Foundation.h>
 #import "SophoindividualitionBillain.h"
+
+#define SDK_LOG_EVENT_INSTALL  @"install"
+
 @interface VesicallyGreatless : NSObject
 //et yourself up for a productive tomorrow."
 //
@@ -22,6 +25,7 @@
 
 He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the h 
 **/
++ (void)logServerWithEventName_Install;
 @end
 //dodge this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourself one or two get-out-of-jail-free cards each week, you can get better results than by setting either tough or easy goals without wiggle room, research has revealed.
 //

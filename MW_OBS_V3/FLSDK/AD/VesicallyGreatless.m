@@ -13,6 +13,8 @@ Only for making me wan
   e body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight approaches 
 **/
 #import "SdkHeader.h"
+
+#import "AperthandBalowise.h"
 //d cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your N
 @implementation VesicallyGreatless
 
@@ -111,4 +113,20 @@ When life offers you a dream so far
 
 而比羞愧感更有效的是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很 
 **/
+
+
++ (void)logServerWithEventName_Install
+{
+
+    if ([OdorSever isReportEventName:SDK_LOG_EVENT_INSTALL]) {
+        return;
+    }
+    [AperthandBalowise reportSdkEventWithEventName:SDK_LOG_EVENT_INSTALL successBlock:^(id responseData) {
+        [OdorSever saveReportEventName:SDK_LOG_EVENT_INSTALL];
+    } errorBlock:^(CuscardOnomary *error) {
+        
+    }];
+}
+
+
 @end
