@@ -100,6 +100,8 @@
 {
     SDK_LOG_FILE_FUNCTION(@"didFinishLaunchingWithOptions");
     
+    [AdLogger logServerWithEventName_Install];//发送事件到日志服务器
+    
     // 广告初始化
     
     [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];

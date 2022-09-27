@@ -10,10 +10,13 @@
 
 #import "AdDelegate.h"
 
+#define SDK_LOG_EVENT_INSTALL  @"install"
+
 @interface AdLogger : NSObject
 
 + (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
 
 + (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
 
++ (void)logServerWithEventName_Install;
 @end

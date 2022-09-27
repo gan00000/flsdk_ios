@@ -90,6 +90,48 @@
     
 }
 
+//https://log.meowplayer.com/sdk/event/log
+#pragma mark - 上报自己服务器一些事件
++(void)reportSdkEventWithEventName:(NSString *)eventName successBlock:(BJServiceSuccessBlock)successBlock
+                                errorBlock:(BJServiceErrorBlock)errorBlock
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSString * timeStamp=[SUtil getTimeStamp];
+    NSDictionary *dic = nil;
+    @try {
+        dic = @{
+            @"eventName"        :eventName,
+            @"appTime"          :timeStamp,
+            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
+        };
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        //[self _presentAlertWithException:exception andDictionary:dic];
+    }
+    
+    SDK_LOG(@"reportSdkEvent start EventName:%@", eventName);
+    BJBaseHTTPEngine *logHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getLogUrl]];
+    
+    [logHTTPEngine getRequestWithFunctionPath:@"sdk/event/log" params:params successBlock:^(NSURLSessionDataTask *task, id responseData) {
+        
+        SDK_LOG(@"reportSdkEvent finish success EventName:%@", eventName);
+        
+        if (successBlock) {
+            successBlock(responseData);
+        }
+        
+    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+        
+        SDK_LOG(@"reportSdkEvent finish error EventName:%@, errorMsg:%@", eventName, error.description);
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
+
 #pragma mark - 免注册
 +(void)freeLoginOrRegister:(NSString *)thirdId
                             successBlock:(BJServiceSuccessBlock)successBlock
@@ -317,7 +359,7 @@
         @"packageName"      :     [SUtil getBundleIdentifier],
         @"adId"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
         @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
-        @"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
+        //@"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
         @"versionName"      :     [SUtil getBundleShortVersionString]? : @"",
         @"versionCode"      :     [SUtil getBundleVersion]? : @"",
         @"systemVersion"    :     [SUtil getSystemVersion]? : @"",

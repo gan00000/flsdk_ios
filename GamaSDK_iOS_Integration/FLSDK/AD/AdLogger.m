@@ -8,6 +8,7 @@
 
 #import "AdLogger.h"
 #import "SdkHeader.h"
+#import "SDKRequest.h"
 
 @implementation AdLogger
 
@@ -52,4 +53,16 @@
     [AdDelegate logEventWithEventName:eventName eventValues:eventV type:type];
 }
 
++ (void)logServerWithEventName_Install
+{
+
+    if ([SdkUtil isReportEventName:SDK_LOG_EVENT_INSTALL]) {
+        return;
+    }
+    [SDKRequest reportSdkEventWithEventName:SDK_LOG_EVENT_INSTALL successBlock:^(id responseData) {
+        [SdkUtil saveReportEventName:SDK_LOG_EVENT_INSTALL];
+    } errorBlock:^(BJError *error) {
+        
+    }];
+}
 @end

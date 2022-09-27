@@ -312,6 +312,11 @@ static dispatch_once_t onceToken;
     return [self getStringForKey:@"sdk_url_cdn"];
 }
 
+-(NSString *) getLogUrl
+{
+    return [self getStringForKey:@"sdk_url_log"];
+}
+
 -(NSString *) getTermsServiceUrl
 {
     return [self getStringForKey:@"terms_service_url"];

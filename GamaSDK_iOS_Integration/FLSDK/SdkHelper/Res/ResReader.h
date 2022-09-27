@@ -50,6 +50,7 @@
 -(NSString *) getLoginUrl;
 -(NSString *) getPayUrl;
 -(NSString *) getCdnUrl;
+-(NSString *) getLogUrl;
 -(NSString *) getTermsServiceUrl;
 
 -(NSString *) getFacebookAppId;

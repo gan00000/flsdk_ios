@@ -522,4 +522,21 @@
     return tempAry;
 }
 
++ (void)saveReportEventName:(NSString *)eventName
+{
+    [[NSUserDefaults standardUserDefaults] setObject:eventName forKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (BOOL)isReportEventName:(NSString *)eventName
+{
+    NSString *saveName = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
+    
+    if (saveName) {
+        return YES;
+    }
+    return NO;
+}
+
+
 @end

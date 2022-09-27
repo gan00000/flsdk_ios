@@ -71,4 +71,7 @@
 
 + (void)savePhoneAreaInfo:(NSArray *)numberAry;
 + (NSArray *)fetchPhoneAreaInfo;
+
++ (void)saveReportEventName:(NSString *)eventName;
++ (BOOL)isReportEventName:(NSString *)eventName;
 @end

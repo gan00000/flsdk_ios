@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
                          errorBlock:(BJServiceErrorBlock)errorBlock;
 
++(void)reportSdkEventWithEventName:(NSString *)eventName successBlock:(BJServiceSuccessBlock)successBlock
+                        errorBlock:(BJServiceErrorBlock)errorBlock;
+
 #pragma mark - 登入接口
 +(void)freeLoginOrRegister:(NSString *)thirdId
                             successBlock:(BJServiceSuccessBlock)successBlock
