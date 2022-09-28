@@ -101,7 +101,7 @@
         tipsUILabel.text = @"text_reg_tips".localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
 //        tipsUILabel.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
-        tipsUILabel.numberOfLines = 1; //0为多行
+        tipsUILabel.numberOfLines = 0; //0为多行
         tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
     
         [self addSubview:tipsUILabel];
