@@ -851,7 +851,7 @@ Those fishing lur
         @"packageName"      :     [FoeniveNow getBundleIdentifier],
         @"adId"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
         @"idfa"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
-//        @"uuid"             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
+        @"uuid"             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
 //得到的。
 //
 //
