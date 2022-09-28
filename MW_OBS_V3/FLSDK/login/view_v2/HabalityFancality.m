@@ -208,7 +208,7 @@ This may sound sinister,
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
         tipsUILabel.text = @"text_reg_tips".localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
-        tipsUILabel.numberOfLines = 1;
+        tipsUILabel.numberOfLines = 0;
         tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
         [self addSubview:tipsUILabel];
 //ate goal is attainable as long as you commit yourself to i
