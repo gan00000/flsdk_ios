@@ -606,7 +606,7 @@ Have I found you
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
         cc.data.password = password;
-        cc.data.loginType = LOGIN_TYPE_SELF;
+        cc.data.loginType = currentAccountModel.loginType;
         SDK_DATA.mLoginResponse = cc;
 
 /**
