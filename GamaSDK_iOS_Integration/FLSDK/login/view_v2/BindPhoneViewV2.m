@@ -249,6 +249,7 @@
     [hasBindPhoneTips mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(phoneContentView);
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(8));
+        make.leading.trailing.mas_equalTo(vfInfoView);
     }];
     
     self.countTimerDelegate = self;
