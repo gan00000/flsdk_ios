@@ -186,6 +186,7 @@
             }];
             
             UILabel *bindTipLabel = [UIUtil initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+            bindTipLabel.numberOfLines = 0;
             [contentView addSubview:bindTipLabel];
             
             [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -197,9 +198,12 @@
             
         }
         
-        
+//        NSString *btnString = GetString(@"text_confire_update");
+//        if (currentAccount.isBind) {
+//            btnString = GetString(@"text_confire");
+//        }
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire_update") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(20)];
