@@ -267,12 +267,27 @@
             
         }];
         NSString *tel = SDK_DATA.mLoginResponse.data.telephone;
-        NSArray *pairs = [tel componentsSeparatedByString:@"&"];
+        NSArray *pairs = [tel componentsSeparatedByString:@"-"];
         if (pairs && pairs.count >=2) {
             NSString *areaCode = pairs[0];
             NSString *telNum = pairs[1];
             areaCodeLabel.text = areaCode;
             phoneNumFiled.inputTextField.text = telNum;
+            phoneNumFiled.inputTextField.enabled = NO;
+            areaMoreBtn.hidden = YES;
+            
+            [areaCodeLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.center.mas_equalTo(phoneAreaCodeView);
+//                make.leading.mas_equalTo(phoneAreaCodeView).mas_offset(VW(15));
+                
+            }];
+            
+//            [areaMoreBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+//                make.leading.mas_equalTo(areaCodeLabel.mas_trailing).mas_offset(VW(10));
+//                make.centerY.mas_equalTo(phoneAreaCodeView);
+//                make.width.height.mas_equalTo(VH(16));
+//
+//            }];
         }
         
     }else{
@@ -336,6 +351,11 @@
         case kOkActTag:
             
         {
+            if(SDK_DATA.mLoginResponse.data.isBindPhone) //已经绑定的状态
+            {
+                [self removeFromSuperview];
+                return;
+            }
             NSString *tel = phoneNumFiled.inputTextField.text;
             NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
             NSString *vfCode = vfCodeFiled.inputTextField.text;
