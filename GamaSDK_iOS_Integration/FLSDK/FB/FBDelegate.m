@@ -47,11 +47,11 @@
                                     didFinishLaunchingWithOptions:launchOptions];
 }
 
-+  (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
++ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
 {
-//    NSString * systemFlog=[NSString stringWithFormat:@"facebook_login:get url,%@",url.description];
-//    SDK_LOG(systemFlog);
-//
+    //    NSString * systemFlog=[NSString stringWithFormat:@"facebook_login:get url,%@",url.description];
+    //    SDK_LOG(systemFlog);
+    //
     return [[FBSDKApplicationDelegate sharedInstance] application:app openURL:url options:options];
 }
 
