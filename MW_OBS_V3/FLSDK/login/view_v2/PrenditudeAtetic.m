@@ -379,6 +379,7 @@ Spending time around high achievers can boost your own performance. If your New 
             }];
             UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
             [contentView addSubview:bindTipLabel];
+            bindTipLabel.numberOfLines = 0;
 
 /**
   了什么，或者将要发生什么，你们都永远不会失去自己的价值。”
@@ -401,7 +402,7 @@ Spending time around high achievers can boost your own performance. If your New 
                 make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
             }];
         }
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire_update") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(20)];
         okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
 //athway and uncover the sweet sunrises that await you.
