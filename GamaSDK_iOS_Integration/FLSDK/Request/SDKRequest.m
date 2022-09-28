@@ -359,7 +359,7 @@
         @"packageName"      :     [SUtil getBundleIdentifier],
         @"adId"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
         @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
-        //@"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
+        @"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
         @"versionName"      :     [SUtil getBundleShortVersionString]? : @"",
         @"versionCode"      :     [SUtil getBundleVersion]? : @"",
         @"systemVersion"    :     [SUtil getSystemVersion]? : @"",
