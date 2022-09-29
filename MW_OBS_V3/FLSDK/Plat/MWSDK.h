@@ -28,7 +28,7 @@ Bella, the only reason I left was because I thought I was protecting you.
 我离开你的唯一原因是因为我觉得这能保护你。
 I don’t have th strength to s 
 **/
-#define FL_SDK_VERSION @"1.0.8"
+#define FL_SDK_VERSION @"v3-1.1.0"
 #define AD_EVENT_APP_OPEN  @"APP_OPEN"
 #define AD_EVENT_LOGIN_SUCCESS  @"LOGIN_SUCCESS"
 #define AD_EVENT_REGISTER_SUCCESS  @"REGISTER_SUCCESS"

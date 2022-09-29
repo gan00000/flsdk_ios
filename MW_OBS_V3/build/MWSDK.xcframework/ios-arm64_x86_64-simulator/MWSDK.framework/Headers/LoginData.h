@@ -1,33 +1,55 @@
-//
-//  LoginData.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/7/24.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
-
 NS_ASSUME_NONNULL_BEGIN
-
 @interface LoginData : NSObject
-
-//@property (nonatomic, copy) NSString *beLinked;
-//@property (nonatomic, copy) NSString *gmbPlayerIp;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
+
+/**
+  ause it did not decrease in value. It was still worth $20."
+
+
+
+“朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它仍然是20美元。”
+
+
+
+“Many times in our lives, we are dropped, crumpled, and ground  
+**/
 @property (nonatomic, copy) NSString *accessToken;
+
+/**
+  能坚持下去。但研究发现如果你从锻炼或学习中获得乐趣，就会坚持得更久。而最终，这往往是实现新年计划的最重要因素。
+
+
+
+One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider on 
+**/
 @property (nonatomic, copy) NSString *thirdPlate;
+@property (nonatomic, assign) BOOL isBind;
 
-@property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
-@property (nonatomic, assign) BOOL isBindPhone;//是否绑定手机号码
+/**
+  orm to their patterns of behavior.
 
+花时间和高成就者在一起可以提高你自己的表现。如果你的新年愿望是跑一场马拉松或写一本书，那么明智 
+**/
+@property (nonatomic, assign) BOOL isBindPhone;
+//ate at all from your New Year's resolution, your instinct may be to declare yourself a failure and throw in the towel. Researchers
 @property (nonatomic, copy) NSString *loginType;
+@property (nonatomic, copy) NSString *telephone;
+@property (nonatomic, copy) NSString *loginId;
+@property (nonatomic, copy) NSString *sign;
 
-@property (nonatomic, copy) NSString *telephone;//用户绑定的手机
-@property (nonatomic, copy) NSString *loginId;//用户账号
-@property (nonatomic, copy) NSString *sign; //用于cp验证账号
-
+/**
+  regular times, said clinical psychologist and sleep expert Michael Grandner. So if y 
+**/
 @end
-
+//… I'm only afraid of losing you. Like you're going to disappear…
+//现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
+//You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, m
 NS_ASSUME_NONNULL_END
+//where nobody dies.
+//童年是没有生老病死的国度。
+//I think I forgot to breathe.
+//我想可能是我忘了呼吸。
+//I'd never given much thought to how I would die. But dying in the place of someone I love,seems like a g

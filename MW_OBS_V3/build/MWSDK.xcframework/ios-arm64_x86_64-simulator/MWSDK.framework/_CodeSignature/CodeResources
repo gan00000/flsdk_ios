@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/LoginData.h</key>
 		<data>
-		4ui7rQduIvfv35FDFdNKjzOhJXo=
+		Ts8GtTDM4xVoXoLOeQC2nlb4erY=
 		</data>
 		<key>Headers/MWSDK.h</key>
 		<data>
-		IeiSQ6Z1hLSF1EV8DpgBM/NbAKE=
+		voELB4QRTCo30QDilIZYfWRSHo4=
 		</data>
 		<key>Headers/PayData.h</key>
 		<data>
-		Rj55dHxxaXtvQGXkKyqhhr53R6M=
+		bvaK6y0SdIKGDi0OL6/+S7SLh6c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pmcQEjPqnzq/oHXybgID/i4E95w=
+		Y0/7Wg/CBNHWfkWUhFm8/3ayxNI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,33 +31,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ui7rQduIvfv35FDFdNKjzOhJXo=
+			Ts8GtTDM4xVoXoLOeQC2nlb4erY=
 			</data>
 			<key>hash2</key>
 			<data>
-			gCI3EzSfWLo3ZFH6C5WgpPv5WEC8reePCIeY3kHyuMc=
+			Wbk6BoZROVa8+qCoyWoerg3/gbZ68ZJXPrErj8a7kyw=
 			</data>
 		</dict>
 		<key>Headers/MWSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IeiSQ6Z1hLSF1EV8DpgBM/NbAKE=
+			voELB4QRTCo30QDilIZYfWRSHo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			pvLY2tPQW8fxpq2oxnHtrcndw4WcvyK93YOG5wZIVDw=
+			hcOZ/8skYExAr5scyZKa2cg01YAi8tbMSpk7MJLfqLk=
 			</data>
 		</dict>
 		<key>Headers/PayData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rj55dHxxaXtvQGXkKyqhhr53R6M=
+			bvaK6y0SdIKGDi0OL6/+S7SLh6c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzuxokLzm8FdmsifvC3tRIHLPohI2HzBKnLntycSlx4=
+			0PasjrU3r/oiHCFbt4TONKysjRWHQ1BHwy/u3Xb1Gug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
