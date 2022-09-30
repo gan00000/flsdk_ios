@@ -193,7 +193,7 @@
 #pragma mark -- SKProductsRequestDelegate
 
 //收到产品返回信息  子線程
-- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{
+- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{ //system_method
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
@@ -214,7 +214,7 @@
 }
 
 //请求失败
-- (void)request:(SKRequest *)request didFailWithError:(NSError *)error{
+- (void)request:(SKRequest *)request didFailWithError:(NSError *)error{ //system_method
     SDK_LOG(@"------------------错误didFailWithError-----------------:%@", error);
     dispatch_async(dispatch_get_main_queue(), ^{
         [self finishPayWithStatus:NO msg:(@"从Apple获取商品信息失败")];
@@ -222,14 +222,14 @@
     });
 }
 
-- (void)requestDidFinish:(SKRequest *)request{
+- (void)requestDidFinish:(SKRequest *)request{//system_method
     SDK_LOG(@"------------反馈信息结束requestDidFinish-----------------%@",request);
 //    [SdkUtil stopLoadingAtView:nil];
 }
 
 #pragma mark -- 监听AppStore支付状态
 
-- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transaction{
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transaction{//system_method
     
     SDK_LOG(@"监听AppStore支付状态");
     dispatch_async(dispatch_get_main_queue(), ^{

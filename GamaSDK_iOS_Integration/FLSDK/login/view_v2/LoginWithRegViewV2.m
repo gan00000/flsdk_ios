@@ -155,7 +155,7 @@
     
 }
 
-- (void)drawRect:(CGRect)rect
+- (void)drawRect:(CGRect)rect  //system_method
 {
     self.mAccountLoginView.delegate = self.delegate;
     self.mRegisterAccountView.delegate = self.delegate;

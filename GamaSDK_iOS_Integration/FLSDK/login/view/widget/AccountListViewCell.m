@@ -13,7 +13,7 @@
 @implementation AccountListViewCell
 
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{ //system_method
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
        if (self) {
@@ -100,7 +100,7 @@
     }
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated { //system_method
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

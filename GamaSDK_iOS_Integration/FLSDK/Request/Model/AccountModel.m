@@ -42,7 +42,7 @@
 }
 
 
-- (void)encodeWithCoder:(NSCoder *)aCoder
+- (void)encodeWithCoder:(NSCoder *)aCoder //system_method
 {
     NSLog(@"AccountModel encodeWithCoder");
     [aCoder encodeObject:self.account forKey:@"accountName"];
@@ -67,7 +67,7 @@
 }
 
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder //system_method
 {
     NSLog(@"AccountModel initWithCoder");
     if (self = [super init]) {
