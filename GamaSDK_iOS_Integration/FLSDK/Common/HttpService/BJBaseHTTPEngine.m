@@ -44,12 +44,14 @@
             if (successBlock) {
                 successBlock(task, responseObject);
             }
+            NSLog(@"MW_SDK get: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseObject);
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
             if (errorBlock) {
                 errorBlock(task, error);
             }
+            NSLog(@"MW_SDK get: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, error);
         }];
     } @catch (NSException *exception) {
         
