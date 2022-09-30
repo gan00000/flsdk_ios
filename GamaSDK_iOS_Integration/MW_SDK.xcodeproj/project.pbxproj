@@ -965,16 +965,8 @@
 				030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */,
 				030FAA2028A0FA7C00709536 /* MainHomeViewV2.h */,
 				030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */,
-				030FAA0728A0FA7C00709536 /* widget */,
 			);
 			path = view_v2;
-			sourceTree = "<group>";
-		};
-		030FAA0728A0FA7C00709536 /* widget */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = widget;
 			sourceTree = "<group>";
 		};
 		031B9FBA2897D4FA00D35EFB /* sdkCategory */ = {
