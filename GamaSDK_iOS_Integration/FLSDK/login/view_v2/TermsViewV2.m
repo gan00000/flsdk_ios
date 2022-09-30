@@ -114,7 +114,7 @@
         make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithTitleText:@"text_close".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:BaseColor] tag:TAG_CLOSE selector:@selector(action:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithTitleText:@"text_close".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:BaseColor] tag:TAG_CLOSE selector:@selector(btnClickAction:) target:self];
     
     closeBtn.layer.cornerRadius = VH(32) / 2;
     closeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
@@ -129,7 +129,7 @@
         make.height.mas_equalTo(VH(32));
     }];
     
-    UIButton *okBtn = [UIUtil initBtnWithTitleText:@"text_agree_read_tips".localx fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAgreeTermsCheckBoxBtnTag selector:@selector(action:) target:self];
+    UIButton *okBtn = [UIUtil initBtnWithTitleText:@"text_agree_read_tips".localx fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAgreeTermsCheckBoxBtnTag selector:@selector(btnClickAction:) target:self];
     
     okBtn.layer.cornerRadius = VH(32) / 2;
     okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
@@ -191,7 +191,7 @@
     
 }
 
-- (void)action:(UIButton *)sender
+- (void)btnClickAction:(UIButton *)sender
 {
    
     switch (sender.tag) {

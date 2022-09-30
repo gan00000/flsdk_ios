@@ -28,7 +28,7 @@
 
 @implementation BaseSDK
 
-+ (void)load
++ (void)load    //system_method
 {
     [super load];
     
@@ -191,7 +191,7 @@
 
 //监控令牌刷新
 //如需在每次令牌更新时获得通知，请提供符合消息委托协议的委托。以下示例注册了此类委托，并添加了合适的委托方法
-- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{   //system_method
     SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
     NSLog(@"FCM registration token: %@", fcmToken);
     // Notify about received token.
@@ -206,7 +206,7 @@
 
 // Receive displayed notifications for iOS 10 devices.
 // Handle incoming notification messages while app is in the foreground.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler   //system_method
 {
     NSDictionary *userInfo = notification.request.content.userInfo;
 
@@ -223,7 +223,7 @@
 }
 
 // Handle notification messages after display notification is tapped by the user.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{    //system_method
     
     SDK_LOG(@"didReceiveNotificationResponse");
     NSDictionary *userInfo = response.notification.request.content.userInfo;

@@ -24,13 +24,6 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 - (instancetype)init
 {
@@ -81,12 +74,12 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
 
 #pragma mark tableview deletage
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView //system_method
 {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //system_method
 {
     if (!self.accountDataList) {
         return 0;
@@ -94,10 +87,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     return self.accountDataList.count;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
     return 40;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
     
     AccountModel *mAccountModel = self.accountDataList[indexPath.row];
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
@@ -151,7 +144,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     };
     return cell;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
     SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
     AccountModel *mAccountModel = self.accountDataList[indexPath.row];
 //    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;

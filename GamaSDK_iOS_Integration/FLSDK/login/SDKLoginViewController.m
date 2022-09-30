@@ -360,7 +360,7 @@
 
 #pragma mark - Touches
 // keybord down
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  //system_method
 {
     [self.view endEditing:YES];
     
@@ -630,14 +630,14 @@
 }
 #pragma mark - UITextField Delegate
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
+- (BOOL)textFieldShouldReturn:(UITextField *)textField  //system_method
 {
     SDK_LOG(@"textFieldShouldReturn");
     [textField resignFirstResponder];
     return YES;
 }
 
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField  //system_method
 {
     SDK_LOG(@"textFieldShouldBeginEditing");
     //获取当前输入文本框相对于当前view的位置
@@ -645,19 +645,19 @@
     return YES;
 }
 
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField  //system_method
 {
     SDK_LOG(@"textFieldShouldEndEditing");
     
     return YES;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)textFieldDidBeginEditing:(UITextField *)textField   //system_method
 {
     SDK_LOG(@"textFieldDidBeginEditing");
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField
+- (void)textFieldDidEndEditing:(UITextField *)textField //system_method
 {
     SDK_LOG(@"textFieldDidEndEditing");
 }

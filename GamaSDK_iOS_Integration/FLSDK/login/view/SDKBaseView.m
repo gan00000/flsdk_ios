@@ -19,7 +19,7 @@
 //只要点击控件,就会调用touchBegin,如果没有重写这个方法,自己处理不了触摸事件
 // 上一个响应者可能是父控件
 //默认会把事件传递给上一个响应者,上一个响应者是父控件,交给父控件处理
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  //system_method
 {
     SDK_LOG(@"SDKBaseView touchesBegan");
     [self endEditing:YES];

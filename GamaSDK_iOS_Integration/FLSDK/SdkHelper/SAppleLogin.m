@@ -70,7 +70,7 @@
 #pragma mark - Delegate
 
 //! 授权成功地回调
-- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization  API_AVAILABLE(ios(13.0)){
+- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization  API_AVAILABLE(ios(13.0)){    //system_method
 
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", controller);
@@ -131,7 +131,7 @@
 }
 
 //! 授权失败的回调
-- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  API_AVAILABLE(ios(13.0)){
+- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  API_AVAILABLE(ios(13.0)){    //system_method
 
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"错误信息：%@", error);
@@ -185,7 +185,7 @@
 
 //! Tells the delegate from which window it should present content to the user.
 //! 告诉代理应该在哪个window 展示内容给用户
-- (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller API_AVAILABLE(ios(13.0)){
+- (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller API_AVAILABLE(ios(13.0)){  //system_method
 
     NSLog(@"调用展示window方法：%s", __FUNCTION__);
     // 返回window

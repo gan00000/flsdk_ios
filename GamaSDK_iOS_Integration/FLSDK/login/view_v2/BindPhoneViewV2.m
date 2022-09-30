@@ -106,7 +106,7 @@
         make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_3 highlightedImage:icon_close_3 tag:TAG_CLOSE selector:@selector(action:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_3 highlightedImage:icon_close_3 tag:TAG_CLOSE selector:@selector(btnClickAction:) target:self];
     
     [titleView addSubview:closeBtn];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -149,7 +149,7 @@
         
     }];
     
-    UIButton *areaMoreBtn = [UIUtil initBtnWithNormalImage:icon_down_list2 highlightedImage:icon_down_list2 tag:kMoreAccountListActTag selector:@selector(action:) target:self];
+    UIButton *areaMoreBtn = [UIUtil initBtnWithNormalImage:icon_down_list2 highlightedImage:icon_down_list2 tag:kMoreAccountListActTag selector:@selector(btnClickAction:) target:self];
     
     [phoneAreaCodeView addSubview:areaMoreBtn];
     [areaMoreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -210,7 +210,7 @@
     }];
     
     //獲取驗證碼
-    getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(action:) target:self];
+    getVfCodeBtn = [UIUtil initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(btnClickAction:) target:self];
     
     
     getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
@@ -229,7 +229,7 @@
     [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     
     
-    okBtn = [UIUtil initBtnWithTitleText:@"py_confire".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(action:) target:self];
+    okBtn = [UIUtil initBtnWithTitleText:@"py_confire".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(btnClickAction:) target:self];
     
     [okBtn.layer setCornerRadius:VH(20)];
     okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
@@ -297,7 +297,7 @@
 }
 
 
-- (void)action:(UIButton *)sender
+- (void)btnClickAction:(UIButton *)sender
 {
     
     switch (sender.tag) {

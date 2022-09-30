@@ -99,7 +99,7 @@
     self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] gama_currentBounds]];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad { //system_method
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -180,23 +180,23 @@
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated{  //system_method
     [self setNeedsStatusBarAppearanceUpdate];
 }
 
-- (BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden  //system_method
 {
     return YES;  //状态栏隐藏
 //    return NO; //状态栏显示, 默认值
 }
 
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
+- (UIStatusBarStyle)preferredStatusBarStyle{    //system_method
     return UIStatusBarStyleDefault;
 }
 
 
-- (void)viewDidLayoutSubviews{
+- (void)viewDidLayoutSubviews{  //system_method
     [super viewDidLayoutSubviews];
     NSLog(@"viewDidLayoutSubviews");
     
@@ -251,7 +251,7 @@
 #pragma mark - WKNavigationDelegate
 
 //2、当WebView开始加载Web内容时触发；
-- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   //system_method
 {
     [_indicatorView startAnimating];
     
@@ -259,13 +259,13 @@
         [_webViewDelegate webView:webView didStartProvisionalNavigation:navigation];
     }
 }
-- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
 {
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didCommitNavigation:)]) {
         [_webViewDelegate webView:webView didCommitNavigation:navigation];
     }
 }
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
     [_indicatorView stopAnimating];
     
@@ -275,7 +275,7 @@
 }
 
 //当Web视图正在加载内容时发生错误时调用;
-- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
 {
     [_indicatorView stopAnimating];
     
@@ -285,7 +285,7 @@
         [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
     }
 }
--(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
@@ -298,7 +298,7 @@
 }
 
 //1、当Web视图收到服务器重定向时调用；
-- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
 {
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
@@ -307,7 +307,7 @@
 }
 
 #pragma mark - WKUIDelegate
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
 //    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
 //    [alert addAction:[UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -322,7 +322,7 @@
 
 }
 
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  //system_method
 {
     !_alertHandler?:_alertHandler(message, ^(BOOL confirmResult) {
         !completionHandler?:completionHandler(confirmResult);
@@ -330,7 +330,7 @@
 }
 
 
--(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
+-(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures  //system_method
 {
     WKFrameInfo *frameInfo = navigationAction.targetFrame;
     if (![frameInfo isMainFrame]) {
@@ -340,7 +340,7 @@
 }
 
 #pragma mark - WKUserContentController
-- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message   //system_method
 {
     SDK_LOG(@"userContentController message=%@", message.name);
     if ([message.name isEqualToString:js_close]) {
@@ -352,7 +352,7 @@
 }
 
 #pragma mark - KVO
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change  context:(void *)context {  //system_method
     
     if ([@"loading" isEqualToString:keyPath]) {
         
@@ -375,17 +375,17 @@
 }
 
 #pragma mark - Orientation Override
-- (BOOL)shouldAutorotate
+- (BOOL)shouldAutorotate    //system_method
 {
     return _shouldRotate;
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations    //system_method
 {
     return _interfaceOrientationMask;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation  //system_method
 {
 //    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
 //        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
