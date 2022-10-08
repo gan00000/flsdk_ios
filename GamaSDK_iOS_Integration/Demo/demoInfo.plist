@@ -49,6 +49,10 @@
 	<string>1672362243138559</string>
 	<key>FacebookClientToken</key>
 	<string>6a5570d4d7aad0ba5fb55035ce199da6</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<true/>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
 	<key>LSApplicationQueriesSchemes</key>

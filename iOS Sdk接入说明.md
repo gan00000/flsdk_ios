@@ -73,6 +73,10 @@
 	<string>此值对接时候提供</string>
 	<key>FacebookClientToken</key>
 	<string>此值对接时候提供</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<true/>
 	<key>FacebookDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>LSApplicationQueriesSchemes</key>
