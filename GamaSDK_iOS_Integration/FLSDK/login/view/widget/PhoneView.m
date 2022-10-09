@@ -19,13 +19,13 @@
         self.phoneModel = [[PhoneInfoModel alloc] init];
         self.phoneModel.delegate = self;
         
-        [self addContentView];
+        [self addPhoneViewContentView];
     }
     return self;
 }
 
 
-- (void) addContentView
+- (void)addPhoneViewContentView
 {
     
     self.backgroundColor = [UIColor clearColor];
