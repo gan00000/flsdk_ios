@@ -254,7 +254,7 @@
 /// Sent to the delegate when sharing completes without error or cancellation.
 /// @param sharer The sharer that completed.
 /// @param results The results from the sharer.  This may be nil or empty.
-- (void)sharer_MMMethodMMM:(id<FBSDKSharing>)sharer didCompleteWithResults_MMMethodMMM:(NSDictionary<NSString *,id> *)results{
+- (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
     
     SDK_LOG(@"share didCompleteWithResults");
     if (self.successBlock) {
@@ -265,7 +265,7 @@
 /// @param sharer The sharer that completed.
 /// @param error The error.
 ///
-- (void)sharer_MMMethodMMM:(id<FBSDKSharing>)sharer didFailWithError_MMMethodMMM:(NSError *)error{
+- (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
     if (self.failBlock) {
         self.failBlock(@"error", 0, nil);
@@ -273,7 +273,7 @@
 }
 /// Sent to the delegate when the sharer is cancelled.
 /// @param sharer The sharer that completed.
-- (void)sharerDidCancel_MMMethodMMM:(id<FBSDKSharing>)sharer{
+- (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
     SDK_LOG(@"sharerDidCancel");
     if (self.failBlock) {
         self.failBlock(@"cancel", 0, nil);

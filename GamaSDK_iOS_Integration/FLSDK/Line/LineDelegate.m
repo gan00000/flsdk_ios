@@ -104,7 +104,7 @@
 
 
 
-- (void)didLogin_MMMethodMMM:(LineSDKLogin *)login credential_MMMethodMMM:(nullable LineSDKCredential *)credential profile_MMMethodMMM:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
+- (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
 
 
     if (error) {

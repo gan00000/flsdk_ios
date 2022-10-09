@@ -14,7 +14,7 @@
 @optional
 - (void)fire;
 @required
-- (void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue_MMMethodMMM;
+- (void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue;
 @end
 
 @interface PhoneInfoModel : NSObject

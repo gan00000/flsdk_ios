@@ -88,10 +88,10 @@
 #define currentAccessToken_MMMethodMMM   opisthiceMonthish_MMMethodMMM
 #define facebookLogout_MMMethodMMM   probablyuleToward_MMMethodMMM
 #define isFacebookLogined_MMMethodMMM   readizationTreatain_MMMethodMMM
-#define sharer_MMMethodMMM   goalarNascoutsideier_MMMethodMMM
-#define didCompleteWithResults_MMMethodMMM   absitudeFinalacious_MMMethodMMM
-#define didFailWithError_MMMethodMMM   orablyPausyeahth_MMMethodMMM
-#define sharerDidCancel_MMMethodMMM   comeQuinoon_MMMethodMMM
+//#define sharer_MMMethodMMM   goalarNascoutsideier_MMMethodMMM
+//#define didCompleteWithResults_MMMethodMMM   absitudeFinalacious_MMMethodMMM
+//#define didFailWithError_MMMethodMMM   orablyPausyeahth_MMMethodMMM
+//#define sharerDidCancel_MMMethodMMM   comeQuinoon_MMMethodMMM
 #define getSystemVersion_MMMethodMMM   kinesshipProblem_MMMethodMMM
 #define getMacaddress_MMMethodMMM   merssionThoseet_MMMethodMMM
 #define getCustomCfUUID_MMMethodMMM   typeressClusical_MMMethodMMM
@@ -211,9 +211,9 @@
 #define imageName_MMMethodMMM   turboSeicollegeaceous_MMMethodMMM
 #define startLoginWithCallBack_MMMethodMMM   zygarAsency_MMMethodMMM
 #define fail_MMMethodMMM   pedinvolveallyPositionitive_MMMethodMMM
-#define didLogin_MMMethodMMM   indicateicalPmcy_MMMethodMMM
-#define credential_MMMethodMMM   stellficHemally_MMMethodMMM
-#define profile_MMMethodMMM   tingItinerproduceel_MMMethodMMM
+//#define didLogin_MMMethodMMM   indicateicalPmcy_MMMethodMMM
+//#define credential_MMMethodMMM   stellficHemally_MMMethodMMM
+//#define profile_MMMethodMMM   tingItinerproduceel_MMMethodMMM
 #define isRequestSuccess_MMMethodMMM   finditPurposeit_MMMethodMMM
 #define getCdnUrl_MMMethodMMM   workerfactionNigrish_MMMethodMMM
 #define savePhoneAreaInfo_MMMethodMMM   interidClassian_MMMethodMMM
