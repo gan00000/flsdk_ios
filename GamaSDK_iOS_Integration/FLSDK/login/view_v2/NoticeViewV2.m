@@ -151,10 +151,8 @@
     }];
 
     
-    NSString * url = SDK_DATA.urls.noticeUrl;
-    SDK_LOG(@"notice Url=%@",url);
+    
     nWebView = [[WKWebView alloc] init];
-    [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     [nWebView.scrollView setBounces:YES];
     [nWebView.scrollView setScrollEnabled:YES];
 //    [provisionWebView setUserInteractionEnabled:YES];
@@ -164,6 +162,12 @@
         make.top.leading.mas_equalTo(xView).mas_offset(VH(10));
         make.bottom.trailing.mas_equalTo(xView).mas_offset(-VH(10));
     }];
+    
+    NSString * url = SDK_DATA.urls.noticeUrl;
+    SDK_LOG(@"notice Url=%@",url);
+    if(url){
+        [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    }
     
 }
 

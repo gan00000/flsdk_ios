@@ -84,7 +84,7 @@
     }];
 }
 
--(UIImageView*)iconImageView_MMMethodMMM
+-(UIImageView*)iconImageView
 {
     if (!_iconImageView) {
         _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:mw_smail_icon]];

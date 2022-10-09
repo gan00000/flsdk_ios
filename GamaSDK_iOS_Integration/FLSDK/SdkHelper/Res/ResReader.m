@@ -131,14 +131,14 @@ static dispatch_once_t onceToken;
     
 }
 
--(NSDictionary *)coreConfDic_MMMethodMMM{
+-(NSDictionary *)coreConfDic{
     if (!_coreConfDic) {
         _coreConfDic = [self readCoreConfInfo_MMMethodMMM];
     }
     return _coreConfDic;
 }
 
--(NSDictionary *)mainBundleConfDic_MMMethodMMM{
+-(NSDictionary *)mainBundleConfDic{
     if (!_mainBundleConfDic) {
         _mainBundleConfDic = [self readMainBundleCoreConfInfo_MMMethodMMM];
     }

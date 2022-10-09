@@ -80,7 +80,7 @@
 //    [FBSDKAppEvents activateApp];
 }
 
--(FBSDKLoginManager *)loginManager_MMMethodMMM
+-(FBSDKLoginManager *)loginManager
 {
     if (!_loginManager) {
         _loginManager = [[FBSDKLoginManager alloc] init];

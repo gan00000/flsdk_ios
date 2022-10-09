@@ -12,7 +12,7 @@
 
 @dynamic localx;
 
--(NSString *)localx_MMMethodMMM{
+-(NSString *)localx{
 
     NSString *value = GetString(self);
 

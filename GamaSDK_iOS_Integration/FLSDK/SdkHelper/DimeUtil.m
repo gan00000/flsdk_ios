@@ -70,7 +70,7 @@
 
 
 
--(CGFloat)viewAdaptRate_MMMethodMMM
+-(CGFloat)viewAdaptRate
 {
     if (_viewAdaptRate) {
         return _viewAdaptRate;

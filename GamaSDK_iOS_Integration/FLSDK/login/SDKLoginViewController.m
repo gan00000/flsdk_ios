@@ -64,14 +64,14 @@
 }
 
 // 视图被销毁
-- (void)dealloc
+- (void)dealloc //system_method
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     SDK_DATA.mUITextFieldDelegate = nil;
     SDK_LOG(@"dealloc视图被销毁");
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad {   //system_method
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(@"viewDidLoad");
@@ -95,24 +95,24 @@
     [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
 }
 
-- (void)viewDidAppear_MMMethodMMM:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated    //system_method
 {
     SDK_LOG(@"viewDidAppear");
     
     
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated   //system_method
 {
     SDK_LOG(@"viewWillAppear");
 }
 
-- (void)viewWillDisappear_MMMethodMMM:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated    //system_method
 {
     SDK_LOG(@"viewWillDisappear");
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated //system_method
 {
     SDK_LOG(@"viewDidDisappear");
 }
@@ -182,7 +182,7 @@
     
 }
 
--(UIView *)sdkContentView_MMMethodMMM
+-(UIView *)sdkContentView
 {
     if (!_sdkContentView) {
         _sdkContentView = [[UIView alloc]init];
@@ -212,7 +212,7 @@
 -(SDKBaseView *)addLoginWithRegView_MMMethodMMM
 {
     //移除所有子视图
-    //    [[self sdkContentView_MMMethodMMM].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     if (is_Version2) {
         mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView_MMMethodMMM];
@@ -227,8 +227,8 @@
 -(void)addWelcomeView_MMMethodMMM
 {
     //移除所有子视图
-//    [[self sdkContentView_MMMethodMMM].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    for (UIView *subView in [self sdkContentView_MMMethodMMM].subviews) {
+//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    for (UIView *subView in [self sdkContentView].subviews) {
         [subView removeFromSuperview];
     }
     mWelcomeBackView = [[WelcomeBackView alloc] initView_MMMethodMMM];
@@ -319,7 +319,7 @@
 {
     //移除所有子视图
 //    [[self sdkContentView_MMMethodMMM].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    for (UIView *subView in [self sdkContentView_MMMethodMMM].subviews) {
+    for (UIView *subView in [self sdkContentView].subviews) {
         [subView removeFromSuperview];
     }
     if (is_Version2) {
@@ -341,7 +341,7 @@
 //    mSDKBaseView.mUITextFieldDelegate = self;
     
     //移除所有子视图
-    //    [[self sdkContentView_MMMethodMMM].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
 //    [self.sdkContentView.subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
     
@@ -352,8 +352,8 @@
     [self.sdkContentView addSubview:mSDKBaseView];
     
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo([self sdkContentView_MMMethodMMM]);
-        make.center.mas_equalTo([self sdkContentView_MMMethodMMM]);
+        make.size.mas_equalTo([self sdkContentView]);
+        make.center.mas_equalTo([self sdkContentView]);
     }];
 }
 

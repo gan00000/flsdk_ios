@@ -72,7 +72,7 @@
     return self;
 }
 
-- (WKWebView*)wkwebView_MMMethodMMM{
+- (WKWebView*)wkwebView{
     
     if (!_wkwebView) {
         
@@ -94,7 +94,7 @@
 
 }
 
-- (void)loadView_MMMethodMMM
+- (void)loadView //system_method
 {
     self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] gama_currentBounds_MMMethodMMM]];
 }
