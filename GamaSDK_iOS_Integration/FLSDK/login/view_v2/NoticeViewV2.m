@@ -24,7 +24,7 @@
     
 }
 
-- (instancetype)initWithCompleter:(void (^)(void))completer
+- (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer
 {
     self = [self init];
     if (self) {
@@ -43,9 +43,9 @@
 //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.15];
         
-        [self landspaceView];
+        [self landspaceView_MMMethodMMM];
         
         
     }
@@ -53,7 +53,7 @@
 }
 
 
-- (void)landspaceView {
+- (void)landspaceView_MMMethodMMM {
    
     
     UIView *contentView = [[UIView alloc] init];
@@ -82,7 +82,7 @@
     
     
     UIView *titleView = [[UIView alloc] init];
-    titleView.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    titleView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"];
     [contentView addSubview:titleView];
     [titleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(contentView.mas_top);
@@ -92,7 +92,7 @@
         make.height.mas_equalTo(VH(36));
     }];
     
-    UILabel *titleLabel = [UIUtil initLabelWithText:@"text_title_notice".localx fontSize:FS(16) textColor:[UIColor whiteColor]];
+    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_title_notice".localx fontSize_MMMethodMMM:FS(16) textColor_MMMethodMMM:[UIColor whiteColor]];
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -103,10 +103,10 @@
 //        make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_4 highlightedImage:icon_close_4 tag:TAG_CLOSE selector:@selector(btnClickAction:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_4 highlightedImage_MMMethodMMM:icon_close_4 tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
 //    closeBtn.layer.cornerRadius = VH(32) / 2;
-//    closeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
+//    closeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
 //    closeBtn.layer.borderWidth = 0.5;
     
     [titleView addSubview:closeBtn];
@@ -119,7 +119,7 @@
     }];
     
     
-    UIButton *leftBtn = [UIUtil initBtnWithNormalImage:mw_arr_left highlightedImage:mw_arr_left tag:0 selector:@selector(btnClickAction:) target:nil];
+    UIButton *leftBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_arr_left highlightedImage_MMMethodMMM:mw_arr_left tag_MMMethodMMM:0 selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:nil];
     [titleView addSubview:leftBtn];
     [leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(titleLabel.mas_trailing).mas_offset(VW(20));;
@@ -129,7 +129,7 @@
     }];
     
     
-    UIButton *rightBtn = [UIUtil initBtnWithNormalImage:mw_arr_right highlightedImage:mw_arr_right tag:0 selector:@selector(btnClickAction:) target:nil];
+    UIButton *rightBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_arr_right highlightedImage_MMMethodMMM:mw_arr_right tag_MMMethodMMM:0 selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:nil];
     [titleView addSubview:rightBtn];
     [rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(titleLabel.mas_leading).mas_offset(-VW(20));;
@@ -139,8 +139,8 @@
     }];
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString:@"#E4E4E4"];
-//    xView.layer.borderColor = [UIColor colorWithHexString:@"#DEDEDE"].CGColor;
+    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E4E4E4"];
+//    xView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#DEDEDE"].CGColor;
 //    xView.layer.borderWidth = 0.6;
     [contentView addSubview:xView];
     [xView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,7 +167,7 @@
     
 }
 
-- (void)btnClickAction:(UIButton *)sender
+- (void)btnClickAction_MMMethodMMM:(UIButton *)sender
 {
    
     switch (sender.tag) {

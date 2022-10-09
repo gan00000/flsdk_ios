@@ -64,12 +64,12 @@
     }
 }
 
-- (void)showTermsViewForAccountLoginView {
+- (void)showTermsViewForAccountLoginView_MMMethodMMM {
     SDK_LOG(@"rememberTermsLableTapped");
     //            if (self.delegate) {
-    //                [self.delegate goPageView:CURRENT_PAGE_TYPE_TEARMS from:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param:0];
+    //                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param_MMMethodMMM:0];
     //            }
-    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter:^{
+    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
         checkBoxTermsBtn.selected = YES;
     }];
     
@@ -94,13 +94,13 @@
     }];
 }
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
         
         //账号
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
         [self addSubview:accountSDKTextFiledView];
         
@@ -114,7 +114,7 @@
         
         
         //密码
-        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
         [self addSubview:passwordSDKTextFiledView];
         
@@ -130,7 +130,7 @@
         
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText:GetString(@"py_findpwd") fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"py_findpwd") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -148,7 +148,7 @@
             make.leading.mas_equalTo(accountSDKTextFiledView);
         }];
         
-        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage:mw_cb_uncheck highlightedImage:nil selectedImageName:mw_cb_check tag:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction:) target:self];
+        checkBoxTermsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         checkBoxTermsBtn.selected = YES;
         [termAgreeView addSubview:checkBoxTermsBtn];
         [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -159,7 +159,7 @@
         }];
         
         NSString *xtext = GetString(@"sdk_terms_title");
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
         //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         //            rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -178,9 +178,9 @@
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
         }];
         rememberTermsLable.userInteractionEnabled=YES;
-        [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
             
-            [self showTermsViewForAccountLoginView];
+            [self showTermsViewForAccountLoginView_MMMethodMMM];
             
         }];
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
@@ -188,12 +188,12 @@
         findPasswordBtn.hidden = !mConfigModel.showForgetPwd;
         
         //账号登入
-        //        accountLoginBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_ACCOUNT_LOGIN) tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:)  target:self];
+        //        accountLoginBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_ACCOUNT_LOGIN) tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText:@"text_login".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_login".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -219,7 +219,7 @@
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
         otherLabelTips.text = @"text_login_other".localx;
         otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
         
         [loginTypeView addSubview:otherLabelTips];
         [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -232,7 +232,7 @@
         CGFloat btn_h = btn_w;
         CGFloat margin_leading = VW(24);
         
-        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas:SDK_DATA.mConfigModel appleBtn:YES guestBtn:YES];
+        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:YES];
         UIView *leadingView = otherLabelTips;
        
         for (int i = 0; i < loginBtnDatas.count; i++) {
@@ -246,7 +246,7 @@
                     
                     ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                               authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
-                    [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+                    [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
                     appleLoginBtn.tag = lbd.tag;
                     appleLoginBtn.cornerRadius = btn_w / 2.0;
                     btnView = appleLoginBtn;
@@ -254,7 +254,7 @@
                 
             }else{
                 
-                LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType:lbd.tag title:@"" image:lbd.image selector:@selector(registerViewBtnAction:) target:self];
+                LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
                 
                 btnView = mBtn;
             }
@@ -286,18 +286,18 @@
         }
 
         if (mConfigModel.deleteAccount) {
-            [self addDeleteAccountView];
+            [self addDeleteAccountView_MMMethodMMM];
         }
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
-        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
             
             currentAccountModel = mAccountArray[0];
             [accountDataList addObjectsFromArray:mAccountArray];
             
-            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
         }else{
             if (deleteBtnView) {
                 deleteBtnView.hidden = YES;
@@ -317,7 +317,7 @@
                     
                     accountSDKTextFiledView.moreAccountBtn.selected = YES;
                     accountMaskView.hidden = NO;
-                    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+                    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
                     [accountDataList removeAllObjects];
                     [accountDataList addObjectsFromArray:mAccountArray];
                     accountListView.accountDataList = accountDataList;
@@ -332,8 +332,8 @@
                 
             }else{//第一次点击显示
                 accountSDKTextFiledView.moreAccountBtn.selected = YES;
-                [self addAccountListView];
-                NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+                [self addAccountListView_MMMethodMMM];
+                NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
                 [accountDataList removeAllObjects];
                 [accountDataList addObjectsFromArray:mAccountArray];
                 accountListView.accountDataList = accountDataList;
@@ -351,8 +351,8 @@
                     tempAccountModel.loginType = LOGIN_TYPE_SELF;
                     tempAccountModel.account = msg;
                     tempAccountModel.password = @"";
-//                    [passwordSDKTextFiledView setPwdFiledView:YES];
-                    [AccountLoginViewV2 makeAccountFiledViewStatus:tempAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+//                    [passwordSDKTextFiledView setPwdFiledView_MMMethodMMM:YES];
+                    [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
                     currentAccountModel = tempAccountModel;
                 }
             }
@@ -364,7 +364,7 @@
     return self;
 }
 
--(void)addAccountListView{
+-(void)addAccountListView_MMMethodMMM{
     
     accountMaskView = [[BasePopupView alloc] init];
 //    accountMaskView.backgroundColor = UIColor.blueColor;
@@ -407,7 +407,7 @@
     //            [blockSelf->accountDataList removeAllObjects];
     //            [blockSelf->accountDataList addObjectsFromArray:list];
                 
-                [AccountLoginViewV2 makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+                [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
             }else{
 //                currentAccountModel = nil;
                 AccountModel *resetAm = [[AccountModel alloc] init];
@@ -415,7 +415,7 @@
                 resetAm.account = @"";
                 resetAm.password = @"";
                 currentAccountModel = resetAm;
-                [AccountLoginViewV2 makeAccountFiledViewStatus:blockSelf->currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+                [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
                 accountSDKTextFiledView.moreAccountBtn.selected = NO;
                 accountMaskView.hidden = YES;
                 
@@ -426,7 +426,7 @@
             
         }else{//选择
             currentAccountModel = aModel;
-            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView:passwordSDKTextFiledView];
+            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
             accountSDKTextFiledView.moreAccountBtn.selected = NO;
             accountMaskView.hidden = YES;
             
@@ -436,73 +436,73 @@
 }
 
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
         case kFindPwdActTag:
             SDK_LOG(@"kFindPwdActTag");
             if (self.delegate) {
-                [self.delegate goPageView:CURRENT_PAGE_TYPE_FIND_PWD];
+                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_FIND_PWD];
             }
             break;
             
         case kBackBtnActTag:
             SDK_LOG(@"kBackBtnActTag");
             if (self.delegate) {
-                [self.delegate goBackBtn:backBtn backCount:1 fromPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+                [self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
         case kAccountLoginActTag:
             SDK_LOG(@"kAccountLoginActTag");
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
             
-            [self goGame];
+            [self goGame_MMMethodMMM];
             break;
             
             //新加
         case fbLoginActTag:
         {
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper fbLoginAndThirdRequest:self.delegate];
+            [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
         }
             break;
         case appleLoginActTag:
         {
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
+            [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
         }
             break;
             
         case guestLoginActTag:
         {
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper guestLoginAndThirdRequest:self.delegate];
+            [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
         }
             break;
         case googleLoginActTag:
         {
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper googleLoginAndThirdRequest:self.delegate];
+            [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
         }
             break;
         case lineLoginActTag:
         {
-            if (![self checkAgreeTerm]) {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper lineLoginAndThirdRequest:self.delegate];
+            [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
         }
             break;
         case kAgreeTermsCheckBoxBtnTag:
@@ -517,7 +517,7 @@
             break;
         case kSureDeleteAccountActTag:
             SDK_LOG(@"kSureDeleteAccountActTag");
-            [self doDeleteAccount];
+            [self doDeleteAccount_MMMethodMMM];
             break;
         case kCancelDeleteAccountActTag:
             SDK_LOG(@"kCancelDeleteAccountActTag");
@@ -531,74 +531,74 @@
 }
 
 
--(BOOL)checkAgreeTerm
+-(BOOL)checkAgreeTerm_MMMethodMMM
 {
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [SdkUtil toastMsg:GetString(@"text_term_not_read")];
-    //    [AlertUtil showAlertWithMessage:];
-    [self showTermsViewForAccountLoginView];
+    [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
+    //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
+    [self showTermsViewForAccountLoginView_MMMethodMMM];
     return NO;
 }
 
--(void) goGame
+-(void)goGame_MMMethodMMM
 {
     if (!currentAccountModel) {
-        [self requestAccountLogin];
+        [self requestAccountLogin_MMMethodMMM];
         return;
     }
     if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
        
-        [self requestAccountLogin];
+        [self requestAccountLogin_MMMethodMMM];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
-        [LoginHelper fbLoginAndThirdRequest:self.delegate];
+        [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
-        [LoginHelper appleLoginAndThirdRequest:self.delegate view:self];
+        [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         
-        [LoginHelper guestLoginAndThirdRequest:self.delegate];
+        [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
-        [LoginHelper googleLoginAndThirdRequest:self.delegate];
+        [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
-        [LoginHelper lineLoginAndThirdRequest:self.delegate];
+        [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
     }
 }
 
--(void) requestAccountLogin
+-(void)requestAccountLogin_MMMethodMMM
 {
     
-    NSString *accountName = [SdkUtil triString:accountSDKTextFiledView.inputUITextField.text];
-    NSString *pwd = [SdkUtil triString:passwordSDKTextFiledView.inputUITextField.text];
+    NSString *accountName = [SdkUtil triString_MMMethodMMM:accountSDKTextFiledView.inputUITextField.text];
+    NSString *pwd = [SdkUtil triString_MMMethodMMM:passwordSDKTextFiledView.inputUITextField.text];
     
     
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"py_account_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_account_empty")];
         return;
     }
     
-    if (![SdkUtil validUserName:accountName]) {
-        [SdkUtil toastMsg:GetString(@"text_account_format")];
+    if (![SdkUtil validUserName_MMMethodMMM:accountName]) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_format")];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
         return;
     }
-    [LoginHelper selfLoginAndRequest:self.delegate account:accountName pwd:pwd];
+    [LoginHelper selfLoginAndRequest_MMMethodMMM:self.delegate account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
 }
 
 
-+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView{
++(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView{
     
     
     //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
@@ -634,10 +634,10 @@
     }
     
     accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed:iconName];
+    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     
     if (pwdFiledView) {
-//        [pwdFiledView setPwdFiledView:pwdEnable];
+//        [pwdFiledView setPwdFiledView_MMMethodMMM:pwdEnable];
        
         if (pwdEnable) {
             pwdFiledView.hidden = NO;
@@ -665,7 +665,7 @@
 
 
 
--(UIView *)addDeleteAccountConfireView
+-(UIView *)addDeleteAccountConfireView_MMMethodMMM
 {
     
     if (deleteAccountConfireView) {
@@ -673,7 +673,7 @@
     }
     
     UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.85];
+    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
     deleteView.layer.cornerRadius = VW(10);
     
     [self addSubview:deleteView];
@@ -683,7 +683,7 @@
         make.width.mas_equalTo(VW(272));
     }];
     
-    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage:nend_update_account_bg];
+    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage_MMMethodMMM:nend_update_account_bg];
     [deleteView addSubview:deleteWarmIV];
     [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(deleteView).mas_offset(VH(12));
@@ -691,7 +691,7 @@
         make.height.width.mas_equalTo(VW(25));
     }];
     
-    UILabel *deleteWarmLabel = [UIUtil initLabelWithText:GetString(@"text_delete_account_tips") fontSize:FS(13) textColor:[UIColor whiteColor]];
+    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
     [deleteView addSubview:deleteWarmLabel];
     deleteWarmLabel.numberOfLines = 0;
     [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -700,8 +700,8 @@
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
     }];
     
-    UIButton *cancelBtn = [UIUtil initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelBtn.layer.borderWidth = 1;
@@ -715,8 +715,8 @@
         make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
     }];
     
-    UIButton *sureBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
 //    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 //    sureBtn.layer.borderWidth = 1;
@@ -735,7 +735,7 @@
 }
 
 
--(void)addDeleteAccountView
+-(void)addDeleteAccountView_MMMethodMMM
 {
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
@@ -750,7 +750,7 @@
 //        make.height.mas_equalTo(VH(28));
     }];
     
-    UIImageView *deleteIV = [UIUtil initImageViewWithImage:mw_delete_icon];
+    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
     [deleteView addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
@@ -760,7 +760,7 @@
         make.width.height.mas_equalTo(VW(15));
     }];
     
-    UILabel *delLabel = [UIUtil initLabelWithText:GetString(@"text_delete_account") fontSize:FS(10) textColor:[UIColor blackColor]];
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
@@ -769,34 +769,34 @@
        
     }];
     
-    [deleteView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [self addDeleteAccountConfireView];
+        [self addDeleteAccountConfireView_MMMethodMMM];
        
     }];
     
     deleteBtnView = deleteView;
 }
 
-- (void)doDeleteAccount {
+- (void)doDeleteAccount_MMMethodMMM {
     
-    if ([StringUtil isEmpty:currentAccountModel.userId]) {
-        [SdkUtil toastMsg:@"text_select_account".localx];
+    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+        [SdkUtil toastMsg_MMMethodMMM:@"text_select_account".localx];
         return;
     }
-    [LoginHelper deleteAccountAndRequest:self.delegate view:self account:currentAccountModel otherParamsDic:nil successBlock:^{
+    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
         
         [deleteAccountConfireView removeFromSuperview];
-        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
         if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
             currentAccountModel = mAccountArray[0];
             
             [accountDataList removeAllObjects];
             [accountDataList addObjectsFromArray:mAccountArray];
             
-            [AccountLoginViewV2 makeAccountFiledViewStatus:currentAccountModel accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
             
-//            [self setViewStatue];
+//            [self setViewStatue_MMMethodMMM];
             
         }else{
             AccountModel *tempA = [[AccountModel alloc] init];
@@ -804,7 +804,7 @@
             tempA.account = @"";
             tempA.password = @"";
             currentAccountModel = tempA;
-            [AccountLoginViewV2 makeAccountFiledViewStatus:tempA accountView:accountSDKTextFiledView pwdView: passwordSDKTextFiledView];
+            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempA accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
             
         }
         

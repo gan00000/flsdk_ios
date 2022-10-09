@@ -6,18 +6,18 @@
 
 @implementation SdkCfUUID
 
-+ (NSString*) getCustomCfUUID
++ (NSString*)getCustomCfUUID_MMMethodMMM
 {
     //判断配置文件是否要用共有keychain
 //    if ([GetConfigString(GAMA_GAME_IS_KEYCHAIN_PUBLIC) isEqualToString:@"YES"])
 //    {
-//        return [self getGamaCfUUIDFromPublicKeychain];
+//        return [self getGamaCfUUIDFromPublicKeychain_MMMethodMMM];
 //    }
     
-    return [SdkPrivateKeychainCfUUID customUUID];
+    return [SdkPrivateKeychainCfUUID customUUID_MMMethodMMM];
 }
 
-+ (NSString *)bundleSeedID
++ (NSString *)bundleSeedID_MMMethodMMM
 {
     NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:
                            kSecClassGenericPassword, kSecClass,
@@ -40,15 +40,15 @@
 }
 
 //获取共有keychain的cfuuid
-+(NSString *)getGamaCfUUIDFromPublicKeychain
++(NSString *)getGamaCfUUIDFromPublicKeychain_MMMethodMMM
 {
     //初始化两个变量
     NSString * result = nil;
     NSString * savedgetGamaCfUUID = nil;
     //获取itemWrapper
     SdkKeychainItemWrapper *wrapper =
-    [[SdkKeychainItemWrapper alloc] initWithIdentifier:SDK_KEY_CHAIN_KEY
-                                           accessGroup:[NSString stringWithFormat:@"%@.com.mwKeyChainGroup", [SdkCfUUID bundleSeedID]]];
+    [[SdkKeychainItemWrapper alloc] initWithIdentifier_MMMethodMMM:SDK_KEY_CHAIN_KEY
+                                           accessGroup_MMMethodMMM:[NSString stringWithFormat:@"%@.com.mwKeyChainGroup", [SdkCfUUID bundleSeedID_MMMethodMMM]]];
     //通过wrapper获取纪录再keychain中的cfUUID
     savedgetGamaCfUUID = [wrapper objectForKey:(id)kSecValueData];
     //如果获取值不是空

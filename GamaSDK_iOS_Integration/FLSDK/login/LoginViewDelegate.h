@@ -22,19 +22,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol LoginViewDelegate <NSObject>
 
--(void)goPageView:(CURRENT_PAGE_TYPE) toPage;
--(void)goPageView:(CURRENT_PAGE_TYPE) toPage from:(CURRENT_PAGE_TYPE)fromPage param:(id) obj;
+-(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) toPage;
+-(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) toPage from_MMMethodMMM:(CURRENT_PAGE_TYPE)fromPage param_MMMethodMMM:(id) obj;
 
--(void)goBackBtn:(UIView *)backView backCount:(NSUInteger) count fromPage:(CURRENT_PAGE_TYPE) fromPage toPage:(CURRENT_PAGE_TYPE) toPage;
+-(void)goBackBtn_MMMethodMMM:(UIView *)backView backCount_MMMethodMMM:(NSUInteger) count fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE) fromPage toPage_MMMethodMMM:(CURRENT_PAGE_TYPE) toPage;
 
--(void)logout;
--(void)loginSuccess;
+-(void)logout_MMMethodMMM;
+-(void)loginSuccess_MMMethodMMM;
 
--(void)cancelAutoSwitchAccount;
+-(void)cancelAutoSwitchAccount_MMMethodMMM;
 
--(void) handleLoginOrRegSuccess:(id)responseData thirdPlate:(NSString *)thirdPlate;
+-(void) handleLoginOrRegSuccess_MMMethodMMM:(id)responseData thirdPlate_MMMethodMMM:(NSString *)thirdPlate;
 
--(void)changPasswordSuccess;
+-(void)changPasswordSuccess_MMMethodMMM;
 
 @end
 

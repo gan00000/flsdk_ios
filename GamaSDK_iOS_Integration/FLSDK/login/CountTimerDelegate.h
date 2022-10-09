@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol CountTimerDelegate <NSObject>
 
--(void)beforeStartTimer;
+-(void)beforeStartTimer_MMMethodMMM;
 
--(void)timing:(NSString *)count;
+-(void)timing_MMMethodMMM:(NSString *)count;
 
--(void)finishTimer;
+-(void)finishTimer_MMMethodMMM;
 
 @end
 

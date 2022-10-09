@@ -4,7 +4,7 @@
 
 @implementation NSString (URLEncoding)
 
-- (NSString *)urlEncode
+- (NSString *)urlEncode_MMMethodMMM
 {
     NSString *result =
     (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
@@ -16,7 +16,7 @@
 
 }
 
--(NSString *)urlDecode
+-(NSString *)urlDecode_MMMethodMMM
 {
     NSString *result = (__bridge NSString *) CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
                                                                                          (__bridge CFStringRef) self,

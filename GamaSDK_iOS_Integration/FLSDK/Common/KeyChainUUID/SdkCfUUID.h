@@ -11,7 +11,7 @@
  *
  *	@return	cfuuid字符串，样例：“34B6AFC6-42B3-4ABC-A555-E0625EADA903”
  */
-+ (NSString *)getCustomCfUUID;
++ (NSString *)getCustomCfUUID_MMMethodMMM;
 
-+ (NSString *)bundleSeedID;
++ (NSString *)bundleSeedID_MMMethodMMM;
 @end

@@ -43,18 +43,18 @@ static void handleUserInfo(void (^ _Nonnull failCallback)(NSString *), NSString 
     }
 }
 
-+(void)loginWithClientID:(NSString *)kClientID
++(void)loginWithClientID_MMMethodMMM:(NSString *)kClientID
 presentingViewController:(UIViewController *)presentingViewController
-         successCallback:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
-            failCallback:(void(^)(NSString *msg))failCallback
-          cancelCallback:(void(^)(NSString *msg))cancelCallback
+         successCallback_MMMethodMMM:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
+            failCallback_MMMethodMMM:(void(^)(NSString *msg))failCallback
+          cancelCallback_MMMethodMMM:(void(^)(NSString *msg))cancelCallback
 {
     //    NSString *kClientID = @"";
-    if ([StringUtil isEmpty:kClientID]) {
-        kClientID = [FirebaseDelegate getClientID];
+    if ([StringUtil isEmpty_MMMethodMMM:kClientID]) {
+        kClientID = [FirebaseDelegate getClientID_MMMethodMMM];
     }
     
-    if ([StringUtil isEmpty:kClientID]) {
+    if ([StringUtil isEmpty_MMMethodMMM:kClientID]) {
         SDK_LOG(@"kClientID is empty");
         if (failCallback) {
             failCallback(@"");
@@ -93,7 +93,7 @@ presentingViewController:(UIViewController *)presentingViewController
     }];
 }
 
-+ (void)signOut {
++ (void)signOut_MMMethodMMM {
     
     
     [GIDSignIn.sharedInstance signOut];//登出会重新请求认证

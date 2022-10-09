@@ -37,12 +37,12 @@
 //    NSTimer *downTimer;
 }
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
         
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.15];
         
         UIView *contentView = [[UIView alloc] init];
         
@@ -70,7 +70,7 @@
         }];
         
         UIView *tagView = [[UIView alloc] init];
-        tagView.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        tagView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [titleView addSubview:tagView];
         [tagView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(titleView);
@@ -82,7 +82,7 @@
         }];
         
         
-        UILabel *titleLabel = [UIUtil initLabelWithText:@"text_update_account".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+        UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_update_account".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#2A2A2A"]];
         titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
         
         [titleView addSubview:titleLabel];
@@ -94,7 +94,7 @@
             make.bottom.mas_equalTo(titleView);
         }];
         
-        UIButton *closeBtn = [UIUtil initBtnWithNormalImage:icon_close_3 highlightedImage:icon_close_3 tag:TAG_CLOSE selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:TAG_CLOSE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [titleView addSubview:closeBtn];
         [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -109,10 +109,10 @@
         AccountModel *currentAccount = SDK_DATA.mLoginResponse.data;
         if (currentAccount.isBind) {
             
-            thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+            thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
             thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
-            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
+            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             thirdAccountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
             [contentView addSubview:thirdAccountSDKTextFiledView];
@@ -126,11 +126,11 @@
                 
             }];
             
-            [self makeAccountFiledViewStatus:currentAccount accountView:thirdAccountSDKTextFiledView pwdView:nil];
+            [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
             
-            hasBind_accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+            hasBind_accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
-            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
+            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             hasBind_accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             hasBind_accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             hasBind_accountSDKTextFiledView.inputUITextField.enabled = NO;
@@ -151,11 +151,11 @@
             
         }else{
             
-            accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+            accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
             accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
+            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             [contentView addSubview:accountSDKTextFiledView];
             
             [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -170,8 +170,8 @@
             
             
             //密码
-            pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_icon2];
+            pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
             pwdSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
             pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             [contentView addSubview:pwdSDKTextFiledView];
@@ -185,7 +185,7 @@
                 
             }];
             
-            UILabel *bindTipLabel = [UIUtil initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+            UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_bind_account_tips") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
             bindTipLabel.numberOfLines = 0;
             [contentView addSubview:bindTipLabel];
             
@@ -203,12 +203,12 @@
 //            btnString = GetString(@"text_confire");
 //        }
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(20)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [contentView addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -223,16 +223,16 @@
     return self;
 }
 
-- (void)initData
+- (void)initData_MMMethodMMM
 {
-    [super initData];
+    [super initData_MMMethodMMM];
     AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
-    [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:thirdAccountSDKTextFiledView pwdView:nil];
+    [AccountLoginView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
     thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
 }
 
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
@@ -247,7 +247,7 @@
         {
             SDK_LOG(@"kOkActTag");
             if (accountSDKTextFiledView) {
-                [self bindAccount];
+                [self bindAccount_MMMethodMMM];
             }else{
                 [self removeFromSuperview];
 //                if (self.mMWBlock) {
@@ -266,7 +266,7 @@
     }
 }
 
--(void)bindAccount
+-(void)bindAccount_MMMethodMMM
 {
     
     
@@ -274,30 +274,30 @@
     NSString *password = pwdSDKTextFiledView.inputUITextField.text;
   
     
-//    if ([StringUtil isEmpty:]) {
-//        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+//    if ([StringUtil isEmpty_MMMethodMMM:]) {
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
 //        return;
 //    }
  
-    if (![SdkUtil validUserName:account]) {
+    if (![SdkUtil validUserName_MMMethodMMM:account]) {
         return;
     }
     
     
-    if (![SdkUtil validPwd:password]) {
+    if (![SdkUtil validPwd_MMMethodMMM:password]) {
         return;
     }
     
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
     if (!currentAccountModel) {
-//        [SdkUtil toastMsg:GetString(@"text_select_account")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
   
     
-    [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
-        [SdkUtil toastMsg:GetString(@"text_account_bind_success2")];
+    [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_bind_success2")];
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -305,9 +305,9 @@
         cc.data.loginType = currentAccountModel.loginType;
         SDK_DATA.mLoginResponse = cc;
         
-        [[ConfigCoreUtil share] saveAccountModel:cc.data];
+        [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
         
-//        [delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+//        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];
@@ -329,8 +329,8 @@
         
         [self removeFromSuperview];
         
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
         if (self.mMWBlock) {
             self.mMWBlock(NO, nil);
         }
@@ -338,7 +338,7 @@
     
 }
 
--(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView{
+-(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView{
     
     //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
     
@@ -384,11 +384,11 @@
     }
     
 //    accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed:iconName];
+    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     accountFiledView.inputUITextField.text = account_tips;
     
     if (pwdFiledView) {
-//        [pwdFiledView setPwdFiledView:pwdEnable];
+//        [pwdFiledView setPwdFiledView_MMMethodMMM:pwdEnable];
        
         if (pwdEnable) {
             pwdFiledView.hidden = NO;

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WelcomeBackView : SDKBaseView 
 
-- (instancetype)initView;
+- (instancetype)initView_MMMethodMMM;
 
 @end
 

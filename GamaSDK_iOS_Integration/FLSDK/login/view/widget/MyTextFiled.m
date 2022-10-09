@@ -16,7 +16,7 @@
     
 }
 
-- (instancetype)initWithTextColor:(UIColor *)textColor fontOfSize:(CGFloat)size placeholder:(NSString*)placeholder placeColor:(UIColor *)placeColor
+- (instancetype)initWithTextColor_MMMethodMMM:(UIColor *)textColor fontOfSize_MMMethodMMM:(CGFloat)size placeholder_MMMethodMMM:(NSString*)placeholder placeColor_MMMethodMMM:(UIColor *)placeColor
 {
     self = [super init];
     if (self) {
@@ -39,7 +39,7 @@
             self.inputTextField.delegate = SDK_DATA.mUITextFieldDelegate;
         }
         
-        [self.inputTextField addTarget:self action:@selector(textChanged:) forControlEvents:(UIControlEventEditingChanged)];
+        [self.inputTextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
         
         [self addSubview:self.inputTextField];
         [self.inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,7 +56,7 @@
 
 ////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者@"任何字符串"都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
-- (void)textChanged:(UITextField *)sender
+- (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
     SDK_LOG(@"MyTextFiled textChanged=>%@",sender.text);
     

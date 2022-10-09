@@ -8,10 +8,10 @@
 
 + (instancetype)share;
 
-- (void)sdk_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-- (void)sdk_applicationDidBecomeActive:(UIApplication *)application;
-- (void)sdk_applicationWillTerminate:(UIApplication *)application;
-- (void)sdk_applicationDidEnterBackground:(UIApplication *)application;
-- (void)sdk_applicationWillEnterForeground:(UIApplication *)application;
+- (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (void)sdk_applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application;
+- (void)sdk_applicationWillTerminate_MMMethodMMM:(UIApplication *)application;
+- (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application;
+- (void)sdk_applicationWillEnterForeground_MMMethodMMM:(UIApplication *)application;
 
 @end

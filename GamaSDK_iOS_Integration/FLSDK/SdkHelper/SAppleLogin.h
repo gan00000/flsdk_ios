@@ -22,13 +22,13 @@ typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * _
 
 - (void)handleAuthrization:(UIView *_Nullable)mView;
 
-- (void)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock andErrorBlock:(AppleLoginError)errorBlock;
+- (void)makeAppleCallbackSuccessBlock_MMMethodMMM:(AppleLoginSuccess)successBlock andErrorBlock_MMMethodMMM:(AppleLoginError)errorBlock;
 
-//- (void)gama_appleLoginRequestWithThirdID:(NSString *)thirdID thirdPlate:(NSString *)thirdPlate;
+//- (void)gama_appleLoginRequestWithThirdID:(NSString *)thirdID thirdPlate_MMMethodMMM:(NSString *)thirdPlate;
 
-- (void)autoLoginAppleAccountWithInformation;
+- (void)autoLoginAppleAccountWithInformation_MMMethodMMM;
 
-- (NSDictionary *)fetchAppleLoginInfo;
+- (NSDictionary *)fetchAppleLoginInfo_MMMethodMMM;
 @end
 
 NS_ASSUME_NONNULL_END

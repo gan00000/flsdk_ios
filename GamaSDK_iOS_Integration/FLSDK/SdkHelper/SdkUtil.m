@@ -19,8 +19,8 @@
 
 #pragma mark - loading alert用到
 
-//#define winWidth        [SUtil getCurrentScreenFrame].size.width//[UIScreen mainScreen].bounds.size.width
-//#define winHeight       [SUtil getCurrentScreenFrame].size.height//[UIScreen mainScreen].bounds.size.height
+//#define winWidth        [SUtil getCurrentScreenFrame_MMMethodMMM].size.width//[UIScreen mainScreen].bounds.size.width
+//#define winHeight       [SUtil getCurrentScreenFrame_MMMethodMMM].size.height//[UIScreen mainScreen].bounds.size.height
 #define FONT_Helvetica_BOLD      @"Helvetica-Bold"
 #define FONT_Helvetica           @"Helvetica"
 #define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
@@ -39,9 +39,9 @@
 #pragma mark - UI
 
 
-+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect:(CGRect)rect
-                                               urlStirng:(NSString *)urlString
-                                            cornerRadius:(CGFloat)radius
++ (WKWebView *)createWKWebViewAndAddToParentViewWithRect_MMMethodMMM:(CGRect)rect
+                                               urlStirng_MMMethodMMM:(NSString *)urlString
+                                            cornerRadius_MMMethodMMM:(CGFloat)radius
                                                 delegate:(id)delegate
 {
     WKWebView *resultWebView;
@@ -64,7 +64,7 @@
 
 
 
-+ (CGSize)calculateSizeOfLabel:(UILabel *)label
++ (CGSize)calculateSizeOfLabel_MMMethodMMM:(UILabel *)label
 {
     NSString *labelStr = label.text;
     CGSize resultSize = [labelStr boundingRectWithSize:CGSizeMake(1000, 1000)
@@ -75,7 +75,7 @@
     return CGSizeMake(ceil(resultSize.width)+1, ceil(resultSize.height)+1);
 }
 
-+ (CGSize)calculateSizeOfLabel:(UILabel *)label andWidth:(CGFloat)width
++ (CGSize)calculateSizeOfLabel_MMMethodMMM:(UILabel *)label andWidth_MMMethodMMM:(CGFloat)width
 {
     NSString *labelStr = label.text;
 
@@ -94,13 +94,13 @@
 
 #pragma mark - Tri String
 
-+ (NSString *)triString:(NSString *)aStr
++ (NSString *)triString_MMMethodMMM:(NSString *)aStr
 {
     return [aStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
 }
 
 #pragma mark - Text Rule
-+ (BOOL)validUserName:(NSString *)accountName
++ (BOOL)validUserName_MMMethodMMM:(NSString *)accountName
 {
 //    return [userName containsString:@"@"];
 //    NSString *triStr = [userName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
@@ -111,27 +111,27 @@
 //    return [pred evaluateWithObject:triStr];
     
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"py_account_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_account_empty")];
         return NO;
     }
     
     if (![accountName containsString:@"@"]) {
-        [SdkUtil toastMsg:GetString(@"text_account_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_format")];
         return NO;
     }
     return YES;
     
 }
 
-+ (BOOL)validPwd:(NSString *)pwd
++ (BOOL)validPwd_MMMethodMMM:(NSString *)pwd
 {
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
         return NO;
     }
     
     if (pwd.length < 6) {
-        [SdkUtil toastMsg:GetString(@"text_pwd_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_pwd_format")];
         return NO;
     }
     return YES;
@@ -143,7 +143,7 @@
 //    return [pred evaluateWithObject:triStr];
 }
 
-+ (BOOL)validEmail:(NSString *)email
++ (BOOL)validEmail_MMMethodMMM:(NSString *)email
 {
     NSString *triStr = [email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
@@ -151,7 +151,7 @@
     return [emailPred evaluateWithObject:triStr];
 }
 
-+ (BOOL)validPhone:(NSString *)phone phoneRegex:(NSString *)regex
++ (BOOL)validPhone_MMMethodMMM:(NSString *)phone phoneRegex_MMMethodMMM:(NSString *)regex
 {
     NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSPredicate *phonePred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
@@ -160,16 +160,16 @@
 
 #pragma mark - Toast
 
-+ (void)toastMsg:(NSString *)msg
++ (void)toastMsg_MMMethodMMM:(NSString *)msg
 {
-    [self toastMsg:msg atView:nil];
+    [self toastMsg_MMMethodMMM:msg atView_MMMethodMMM:nil];
 }
 
-+ (void)toastMsg:(NSString *)msg atView:(UIView *)baseView
++ (void)toastMsg_MMMethodMMM:(NSString *)msg atView_MMMethodMMM:(UIView *)baseView
 {
     if (!baseView) {
         baseView = [UIApplication sharedApplication].keyWindow;//windows[0];
-//        baseView = [SUtil getCurrentWindow];
+//        baseView = [SUtil getCurrentWindow_MMMethodMMM];
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -177,7 +177,7 @@
         // bottom view
         UIView *aler = [[UIView alloc] initWithFrame:CGRectZero];
 
-        aler.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.7];
+        aler.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.7];
         aler.alpha = 0.9f;
         aler.layer.cornerRadius = 10.0f;
         
@@ -203,7 +203,7 @@
         toastLabel.numberOfLines = 0;
 //        toastLabel.lineBreakMode = NSLineBreakByWordWrapping;
         
-        CGSize tempStringSize = [SdkUtil calculateSizeOfLabel:toastLabel];
+        CGSize tempStringSize = [SdkUtil calculateSizeOfLabel_MMMethodMMM:toastLabel];
         CGFloat _width = tempStringSize.width + 60;
         CGFloat _height = tempStringSize.height + 20;
         CGFloat _tempHeight = tempStringSize.height;
@@ -243,7 +243,7 @@
 }
 
 
-+ (void)showLoadingAtView:(UIView *)baseView
++ (void)showLoadingAtView_MMMethodMMM:(UIView *)baseView
 {
     if (baseView == nil) {
         baseView = appTopViewController.view;
@@ -263,7 +263,7 @@
     [baseView bringSubviewToFront:bgV];
     
     UIView *v=[[UIView alloc] initWithFrame:CGRectZero];
-    v.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.6];
+    v.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.6];
     v.layer.cornerRadius = 10.0f;
     [bgV addSubview:v];
 
@@ -285,7 +285,7 @@
     [indicator startAnimating];
 }
 
-+ (void)stopLoadingAtView:(UIView *)baseView
++ (void)stopLoadingAtView_MMMethodMMM:(UIView *)baseView
 {
     __block  UIView *blockView= baseView;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -299,13 +299,13 @@
    
 }
 
-+ (UIView *)initWithMaxTitle:(NSString *)maxTitle minTitle:(NSString *)minTitle
++ (UIView *)initWithMaxTitle_MMMethodMMM:(NSString *)maxTitle minTitle_MMMethodMMM:(NSString *)minTitle
 {
     UIView *titleView = [[UIView alloc] init];
     [titleView setBackgroundColor:[UIColor clearColor]];
 
-    CGSize maxTextSize = [self sizeWithText:maxTitle font:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-    CGSize minTextSize = [self sizeWithText:minTitle font:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxTitle font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minTitle font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
     
     UITextField *maxTextView = [[UITextField alloc] init];
     [maxTextView setEnabled:NO];
@@ -337,17 +337,17 @@
     return titleView;
 }
 
-+ (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxSize:(CGSize)maxSize
++ (CGSize)sizeWithText_MMMethodMMM:(NSString *)text font_MMMethodMMM:(UIFont *)font maxSize_MMMethodMMM:(CGSize)maxSize
 {
     NSDictionary *attrs = @{NSFontAttributeName : font};
     return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
     
 }
 
-+ (CGFloat)titleFontWedthWithMaxStr:(NSString *)maxStr minStr:(NSString *)minStr
++ (CGFloat)titleFontWedthWithMaxStr_MMMethodMMM:(NSString *)maxStr minStr_MMMethodMMM:(NSString *)minStr
 {
-    CGSize maxTextSize = [self sizeWithText:maxStr font:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-    CGSize minTextSize = [self sizeWithText:minStr font:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxStr font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minStr font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
     
     return maxTextSize.width+minTextSize.width;
 }
@@ -367,13 +367,13 @@
 //    UIImage *img = [UIImage imageWithData:imageData];
 //    
 //    // 根据英文版本审核时通常因为相册问题被拒绝
-////    [GamaAlertView showAlertWithMessage:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
+////    [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
 ////                           completion:^(NSInteger clickedBtnIndex) {
 ////                               if (clickedBtnIndex == 1) {
 ////                                   // save img to photo
 //                                   UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
 ////                               }
-////                           } andButtonTitles:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
+////                           } andButtonTitles_MMMethodMMM:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
 //    
 //    // save img to photo
 //    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
@@ -381,7 +381,7 @@
 
 #pragma mark - self
 //纪录登陆玩家信息
-+ (void)_updataLastLoginUserInfoWithNewInfo:(NSDictionary *)loginUserInfo
++ (void)_updataLastLoginUserInfoWithNewInfo_MMMethodMMM:(NSDictionary *)loginUserInfo
 {
     NSDictionary * lastUserInfoDic=
     [[NSUserDefaults standardUserDefaults]objectForKey:GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY];
@@ -395,18 +395,18 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
-+ (NSString *)loginEncryptFromString:(NSString *)aString
++ (NSString *)loginEncryptFromString_MMMethodMMM:(NSString *)aString
 {
-    return [SecurityUtil getEncryptStringFromString:aString WithKey:kEncryKey iv:kEncryIv];
+    return [SecurityUtil getEncryptStringFromString_MMMethodMMM:aString WithKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
 }
 
-+ (NSString *)loginDecryptFromString:(NSString *)aString
++ (NSString *)loginDecryptFromString_MMMethodMMM:(NSString *)aString
 {
-    return [SecurityUtil getDecryptStringFromString:aString withKey:kEncryKey iv:kEncryIv];
+    return [SecurityUtil getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
 }
 
 // 保存图片到相册后的结果
-+ (void)_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
++ (void)_image_MMMethodMMM: (UIImage *) image didFinishSavingWithError_MMMethodMMM: (NSError *) error contextInfo_MMMethodMMM: (void *) contextInfo
 {
     NSString *msg = nil ;
     if(error != NULL){
@@ -415,20 +415,20 @@
         msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
     }
     
-    [SdkUtil toastMsg:msg];
+    [SdkUtil toastMsg_MMMethodMMM:msg];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:GAMA_NOTE_SAVE_PHOTO object:nil userInfo:nil];
 }
 
 #pragma mark -
 
-+ (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName
++ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     NSString *path = [paths objectAtIndex:0];
     NSString *filename = [path stringByAppendingPathComponent:fileName];
     
-    NSString *encryptPwd = [self loginEncryptFromString:password];
+    NSString *encryptPwd = [self loginEncryptFromString_MMMethodMMM:password];
     
     NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
                                   userName,encryptPwd,// user name 不需要加密，加密密码即可
@@ -436,7 +436,7 @@
     [userInfoDic writeToFile:filename atomically:YES];
 }
 
-+ (void)getUserInfo:(NSString **)userName andPassword:(NSString **)password fromFile:(NSString*)fileName
++ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     NSString *path = [paths objectAtIndex:0];
@@ -464,7 +464,7 @@
 //    [userInfodic release];
 }
 
-+(NSMutableArray *)getShowBtnDatas:(ConfigModel *)mConfigModel appleBtn:(BOOL) appleBtn guestBtn:(BOOL) guestBtn
++(NSMutableArray *)getShowBtnDatas_MMMethodMMM:(ConfigModel *)mConfigModel appleBtn_MMMethodMMM:(BOOL) appleBtn guestBtn_MMMethodMMM:(BOOL) guestBtn
 {
 //    mConfigModel.googleLogin = NO;
 //    mConfigModel.lineLogin = NO;
@@ -510,25 +510,25 @@
     return loginBtnDatas;
 }
 
-+ (void)savePhoneAreaInfo:(NSArray *)numberAry
++ (void)savePhoneAreaInfo_MMMethodMMM:(NSArray *)numberAry
 {
     [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (NSArray *)fetchPhoneAreaInfo
++ (NSArray *)fetchPhoneAreaInfo_MMMethodMMM
 {
     NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
     return tempAry;
 }
 
-+ (void)saveReportEventName:(NSString *)eventName
++ (void)saveReportEventName_MMMethodMMM:(NSString *)eventName
 {
     [[NSUserDefaults standardUserDefaults] setObject:eventName forKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (BOOL)isReportEventName:(NSString *)eventName
++ (BOOL)isReportEventName_MMMethodMMM:(NSString *)eventName
 {
     NSString *saveName = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
     

@@ -6,21 +6,21 @@
 
 @implementation SdkPrivateKeychainCfUUID
 
-+ (NSString*) customUUID
++ (NSString*)customUUID_MMMethodMMM
 {
     NSString *result = nil;
-    result=[SdkPrivateKeychainCfUUID getCfUUID];
+    result=[SdkPrivateKeychainCfUUID getCfUUID_MMMethodMMM];
     
     if (result==nil)
     {
-        [self saveCfUUID];
-        result=[self getCfUUID];
+        [self saveCfUUID_MMMethodMMM];
+        result=[self getCfUUID_MMMethodMMM];
     }
     return result;
 }
 
 //创建cfUUID并且保存
-+(void)saveCfUUID
++(void)saveCfUUID_MMMethodMMM
 {
     //创建cfUUDI
     CFUUIDRef cfuuid = CFUUIDCreate(kCFAllocatorDefault);
@@ -41,7 +41,7 @@
     }
 }
 
-+(NSString *)getCfUUID
++(NSString *)getCfUUID_MMMethodMMM
 {
     if (SDK_KEY_CHAIN_KEY.length >0)
     {

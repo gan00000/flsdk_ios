@@ -5,7 +5,7 @@
 
 @implementation UIImage (ResBundle)
 
-+ (UIImage *)res_imageNamed:(NSString *)imageName {
++ (UIImage *)res_imageNamed_MMMethodMMM:(NSString *)imageName {
     
     if (imageName.length <= 0) {
         return nil;
@@ -16,10 +16,10 @@
         UIImage *resultImage = [UIImage imageNamed:imageName];
         return resultImage;
     }
-    return [self res_imageNamed:imageName inBundle:[NSBundle bundleWithURL:defaultBundleUrl]];
+    return [self res_imageNamed_MMMethodMMM:imageName inBundle_MMMethodMMM:[NSBundle bundleWithURL:defaultBundleUrl]];
 }
 
-+ (UIImage *)res_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
++ (UIImage *)res_imageNamed_MMMethodMMM:(NSString *)imageName inBundle_MMMethodMMM:(NSBundle *)bundle {
     
     UIImage *resultImage = nil;
     
@@ -32,7 +32,7 @@
     return resultImage;
 }
 
-+ (UIImage *)res_imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle inFolder:(NSString *)folder
++ (UIImage *)res_imageNamed_MMMethodMMM:(NSString *)imageName inBundle_MMMethodMMM:(NSBundle *)bundle inFolder_MMMethodMMM:(NSString *)folder
 {
     UIImage *resultImage = nil;
     

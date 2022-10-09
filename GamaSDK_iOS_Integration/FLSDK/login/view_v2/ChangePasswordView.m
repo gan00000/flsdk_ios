@@ -33,12 +33,12 @@
 //    NSTimer *downTimer;
 }
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
         //        self.backgroundColor = color;// 底图透明，控件不透明
         //        self.layer.cornerRadius = 10; //设置圆角
         //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
@@ -46,9 +46,9 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_change_pwd") hander_MMMethodMMM:^(NSInteger) {
             
-            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
+            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
@@ -63,7 +63,7 @@
         
         
         //旧密码
-        oldPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Old)];
+        oldPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Old)];
         oldPwdSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:oldPwdSDKTextFiledView];
         
@@ -78,7 +78,7 @@
         
         
         //新密码
-        newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_New)];
+        newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
         [self addSubview:newPwdSDKTextFiledView];
         
         [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -92,7 +92,7 @@
         
         
         //确认密码
-        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
+        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
         [self addSubview:againPwdSDKTextFiledView];
         
         [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -105,12 +105,12 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire_change") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire_change") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -121,7 +121,7 @@
         }];
         
         
-//        UIButton *okBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kOkActTag selector:@selector(registerViewBtnAction:)  target:self];
+//        UIButton *okBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_OK) tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction:)  target_MMMethodMMM:self];
 //        [self addSubview:okBtn];
 //
 //        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +135,7 @@
     return self;
 }
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
@@ -143,7 +143,7 @@
         case kOkActTag:
         {
             SDK_LOG(@"kOkActTag");
-            [self changePassword];
+            [self changePassword_MMMethodMMM];
         }
             
             
@@ -155,11 +155,11 @@
     }
 }
 
--(void)changePassword
+-(void)changePassword_MMMethodMMM
 {
     
     if (!self.fromPageParam) {
-        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
         return;
     }
     
@@ -171,75 +171,75 @@
     NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
     NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
-    if (![SdkUtil validUserName:userName]) {
+    if (![SdkUtil validUserName_MMMethodMMM:userName]) {
         return;
     }
     
-    if ([StringUtil isEmpty:oldPwd]) {
-        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+    if ([StringUtil isEmpty_MMMethodMMM:oldPwd]) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
         return;
     }
  
-    if (![SdkUtil validPwd:newPwd]) {
+    if (![SdkUtil validPwd_MMMethodMMM:newPwd]) {
         return;
     }
     
-    if (![SdkUtil validPwd:againPwd]) {
+    if (![SdkUtil validPwd_MMMethodMMM:againPwd]) {
         return;
     }
     
     if (![newPwd isEqualToString:againPwd]) {
     
-        [SdkUtil toastMsg:GetString(@"text_pwd_not_equel")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_pwd_not_equel")];
         return;
     }
    
     kWeakSelf
-    [SDKRequest doChangePasswordWithUserName:userName andOldPassword:oldPwd andNewPassword:newPwd otherParamsDic:nil successBlock:^(id responseData) {
+    [SDKRequest doChangePasswordWithUserName_MMMethodMMM:userName andOldPassword_MMMethodMMM:oldPwd andNewPassword_MMMethodMMM:newPwd otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-        [SdkUtil toastMsg:GetString(@"text_account_change_pwd_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_change_pwd_success")];
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;
             cc.data.password = newPwd;
             cc.data.loginType = LOGIN_TYPE_SELF;
-            [weakSelf.delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+            [weakSelf.delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BJError *error) {
         
-        [AlertUtil showAlertWithMessage:error.message];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
         
     }];
     
 }
 
-//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber:(NSString *)phoneN
+//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber_MMMethodMMM:(NSString *)phoneN
 //{
 //
 //
-//    [SDKRequest requestVfCode:phoneArea phoneNumber:phoneN email:@"" interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
-//        [self downTime];
-//        [SdkUtil toastMsg:GetString(@"text_send_vf_code_success")];
-//    } errorBlock:^(BJError *error) {
-//        [self resetVfCodeBtnStatue];
-//        [AlertUtil showAlertWithMessage:error.message];
+//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//        [self downTime_MMMethodMMM];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_send_vf_code_success")];
+//    } errorBlock_MMMethodMMM:^(BJError *error) {
+//        [self resetVfCodeBtnStatue_MMMethodMMM];
+//        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
 //    }];
 //}
 //
-//- (void)requestVfCodeByEmail:(NSString *)email
+//- (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
 //{
 //
-//    [SDKRequest requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
-//        [self downTime];
-//    } errorBlock:^(BJError *error) {
-//        [self resetVfCodeBtnStatue];
-//        [AlertUtil showAlertWithMessage:error.message];
+//    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//        [self downTime_MMMethodMMM];
+//    } errorBlock_MMMethodMMM:^(BJError *error) {
+//        [self resetVfCodeBtnStatue_MMMethodMMM];
+//        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
 //    }];
 //}
 
 //倒计时
-//-(void)downTime{
+//-(void)downTime_MMMethodMMM{
 //
 //    phoneCountdown = 60;
 //    getVfCodeBtn.userInteractionEnabled = NO;
@@ -252,7 +252,7 @@
 //        downTimer = nil;
 //    }
 //    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-//                                                 target:self
+//                                                 target_MMMethodMMM:self
 //                                               selector:@selector(phoneFireTimer)
 //                                               userInfo:nil
 //                                                repeats:YES];
@@ -260,17 +260,17 @@
 //
 //}
 //
-//- (void)phoneFireTimer {
+//- (void)phoneFireTimer_MMMethodMMM {
 //    phoneCountdown--;
 //    if (phoneCountdown < 0) {
-//        [self resetVfCodeBtnStatue];
+//        [self resetVfCodeBtnStatue_MMMethodMMM];
 //    }else{
 //        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
 //    }
 //
 //}
 //
-//-(void) resetVfCodeBtnStatue
+//-(void)resetVfCodeBtnStatue_MMMethodMMM
 //{
 //    if (downTimer) {
 //        [downTimer invalidate];

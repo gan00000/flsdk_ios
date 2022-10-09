@@ -13,5 +13,5 @@
 @property (copy, nonatomic) NSString *roleVipLevel; //vip等级
 
 
--(BOOL) checkParams;
+-(BOOL)checkParams_MMMethodMMM;
 @end

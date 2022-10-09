@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) UILabel *titleLable;
 @property (nonatomic,strong) UIButton *backBtn;
 
-- (instancetype)initViewWithTitle:(NSString *)title hander:(ItemViewClickHander) hander;
+- (instancetype)initViewWithTitle_MMMethodMMM:(NSString *)title hander_MMMethodMMM:(ItemViewClickHander) hander;
 
 @end
 

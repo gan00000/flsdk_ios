@@ -11,7 +11,7 @@
 @implementation StringUtil
 
 
-+(BOOL) isEmpty:(NSString *)s
++(BOOL) isEmpty_MMMethodMMM:(NSString *)s
 {
     if (!s || [s isEqualToString:@""]) {
         return YES;
@@ -19,8 +19,8 @@
     return NO;
 }
 
-+(BOOL) isNotEmpty:(NSString *)s{
-    return  ![self isEmpty:s];
++(BOOL) isNotEmpty_MMMethodMMM:(NSString *)s{
+    return  ![self isEmpty_MMMethodMMM:s];
 }
 
 @end

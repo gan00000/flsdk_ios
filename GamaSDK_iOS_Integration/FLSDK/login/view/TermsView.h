@@ -11,11 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TermsView : SDKBaseView
-- (instancetype)initWithCompleter:(void (^)(void))completer;
+- (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer;
 
-+ (BOOL)openProvision;
-+(BOOL)isAgreenProvision;
-+ (void)saveAgreenProvisionState:(BOOL)agreen;
++ (BOOL)openProvision_MMMethodMMM;
++(BOOL)isAgreenProvision_MMMethodMMM;
++ (void)saveAgreenProvisionState_MMMethodMMM:(BOOL)agreen;
 @end
 
 NS_ASSUME_NONNULL_END

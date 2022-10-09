@@ -21,9 +21,9 @@
  *
  *  @return 加密后的字符串
  */
-+(NSString *)getEncryptStringFromString:(NSString *)beforeEncryptString
-                                WithKey:(NSString *)key
-                                     iv:(NSString *)iv;
++(NSString *)getEncryptStringFromString_MMMethodMMM:(NSString *)beforeEncryptString
+                                WithKey_MMMethodMMM:(NSString *)key
+                                     iv_MMMethodMMM:(NSString *)iv;
 
 /**
  *  从一个加密过的字符串，解密得到一个明文字符串
@@ -34,9 +34,9 @@
  *
  *  @return 解密后的字符串
  */
-+(NSString *)getDecryptStringFromString:(NSString *)beforeDecryptString
-                                withKey:(NSString *)key
-                                     iv:(NSString *)iv;
++(NSString *)getDecryptStringFromString_MMMethodMMM:(NSString *)beforeDecryptString
+                                withKey_MMMethodMMM:(NSString *)key
+                                     iv_MMMethodMMM:(NSString *)iv;
 
 /**
  *  对NSData加密
@@ -47,9 +47,9 @@
  *
  *  @return 加密以后的数据
  */
-+(NSData *)getEncryptDataFromData:(NSData *)beforeEncryptData
-                          withKey:(NSString *)key
-                               iv:(NSString *)iv;
++(NSData *)getEncryptDataFromData_MMMethodMMM:(NSData *)beforeEncryptData
+                          withKey_MMMethodMMM:(NSString *)key
+                               iv_MMMethodMMM:(NSString *)iv;
 
 /**
  *  对NSData解密
@@ -60,9 +60,9 @@
  *
  *  @return 解密后的数据
  */
-+(NSData *)getDecryptDataFromData:(NSData *)beforeDecryptData
-                          withKey:(NSString *)key
-                               iv:(NSString *)iv;
++(NSData *)getDecryptDataFromData_MMMethodMMM:(NSData *)beforeDecryptData
+                          withKey_MMMethodMMM:(NSString *)key
+                               iv_MMMethodMMM:(NSString *)iv;
 
 /**
  *  NSData转换成NSString
@@ -71,7 +71,7 @@
  *
  *  @return 转码后的字符串
  */
-+(NSString *)getEncodeStringFromData:(NSData *)beforeEncodeData;
++(NSString *)getEncodeStringFromData_MMMethodMMM:(NSData *)beforeEncodeData;
 
 /**
  *  NSString转换成NSData
@@ -80,6 +80,6 @@
  *
  *  @return 转码后的NSData
  */
-+(NSData *)getEncodeDataFromString:(NSString *)beforeEncodeString;
++(NSData *)getEncodeDataFromString_MMMethodMMM:(NSString *)beforeEncodeString;
 
 @end

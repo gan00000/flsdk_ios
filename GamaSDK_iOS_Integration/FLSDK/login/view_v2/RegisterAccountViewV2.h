@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RegisterAccountViewV2 : SDKBaseView
-- (instancetype)initView;
-- (instancetype)initViewWithBindType:(NSInteger) bindType;
+- (instancetype)initView_MMMethodMMM;
+- (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType;
 @property (nonatomic, assign) NSInteger bindType;
 @end
 

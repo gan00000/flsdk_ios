@@ -79,11 +79,11 @@ The decision behind the following two methods (secItemFormatToDictionary and dic
 to encapsulate the transition between what the detail view controller was expecting (NSString *) and what the
 Keychain API expects as a validly constructed container class.
 */
-- (NSMutableDictionary *)secItemFormatToDictionary:(NSDictionary *)dictionaryToConvert;
-- (NSMutableDictionary *)dictionaryToSecItemFormat:(NSDictionary *)dictionaryToConvert;
+- (NSMutableDictionary *)secItemFormatToDictionary_MMMethodMMM:(NSDictionary *)dictionaryToConvert;
+- (NSMutableDictionary *)dictionaryToSecItemFormat_MMMethodMMM:(NSDictionary *)dictionaryToConvert;
 
 // Updates the item in the keychain, or adds it if it doesn't exist.
-- (void)writeToKeychain;
+- (void)writeToKeychain_MMMethodMMM;
 
 @end
 
@@ -91,7 +91,7 @@ Keychain API expects as a validly constructed container class.
 
 @synthesize keychainItemData, genericPasswordQuery;
 
-- (id)initWithIdentifier: (NSString *)identifier accessGroup:(NSString *) accessGroup;
+- (id)initWithIdentifier_MMMethodMMM: (NSString *)identifier accessGroup_MMMethodMMM:(NSString *) accessGroup;
 {
     if (self = [super init])
     {
@@ -132,7 +132,7 @@ Keychain API expects as a validly constructed container class.
         if (! SecItemCopyMatching((CFDictionaryRef)tempQuery, (CFTypeRef *)&outDictionary) == noErr)
         {
             // Stick these default values into keychain item if nothing found.
-            [self resetKeychainItem];
+            [self resetKeychainItem_MMMethodMMM];
 			
 			// Add the generic attribute and the keychain access group.
 			[keychainItemData setObject:identifier forKey:(id)kSecAttrGeneric];
@@ -155,7 +155,7 @@ Keychain API expects as a validly constructed container class.
         else
         {
             // load the saved data from Keychain.
-            self.keychainItemData = [self secItemFormatToDictionary:outDictionary];
+            self.keychainItemData = [self secItemFormatToDictionary_MMMethodMMM:outDictionary];
         }
        
 		[outDictionary release];
@@ -179,7 +179,7 @@ Keychain API expects as a validly constructed container class.
     if (![currentObject isEqual:inObject])
     {
         [keychainItemData setObject:inObject forKey:key];
-        [self writeToKeychain];
+        [self writeToKeychain_MMMethodMMM];
     }
 }
 
@@ -188,7 +188,7 @@ Keychain API expects as a validly constructed container class.
     return [keychainItemData objectForKey:key];
 }
 
-- (void)resetKeychainItem
+- (void)resetKeychainItem_MMMethodMMM
 {
 	OSStatus junk = noErr;
     if (!keychainItemData) 
@@ -197,7 +197,7 @@ Keychain API expects as a validly constructed container class.
     }
     else if (keychainItemData)
     {
-        NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat:keychainItemData];
+        NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
 		junk = SecItemDelete((CFDictionaryRef)tempDictionary);
         NSAssert( junk == noErr || junk == errSecItemNotFound, @"Problem deleting current dictionary." );
     }
@@ -211,7 +211,7 @@ Keychain API expects as a validly constructed container class.
     [keychainItemData setObject:@"" forKey:(id)kSecValueData];
 }
 
-- (NSMutableDictionary *)dictionaryToSecItemFormat:(NSDictionary *)dictionaryToConvert
+- (NSMutableDictionary *)dictionaryToSecItemFormat_MMMethodMMM:(NSDictionary *)dictionaryToConvert
 {
     // The assumption is that this method will be called with a properly populated dictionary
     // containing all the right key/value pairs for a SecItem.
@@ -230,7 +230,7 @@ Keychain API expects as a validly constructed container class.
     return returnDictionary;
 }
 
-- (NSMutableDictionary *)secItemFormatToDictionary:(NSDictionary *)dictionaryToConvert
+- (NSMutableDictionary *)secItemFormatToDictionary_MMMethodMMM:(NSDictionary *)dictionaryToConvert
 {
     // The assumption is that this method will be called with a properly populated dictionary
     // containing all the right key/value pairs for the UI element.
@@ -266,7 +266,7 @@ Keychain API expects as a validly constructed container class.
 	return returnDictionary;
 }
 
-- (void)writeToKeychain
+- (void)writeToKeychain_MMMethodMMM
 {
     NSDictionary *attributes = NULL;
     NSMutableDictionary *updateItem = NULL;
@@ -280,7 +280,7 @@ Keychain API expects as a validly constructed container class.
         [updateItem setObject:[genericPasswordQuery objectForKey:(id)kSecClass] forKey:(id)kSecClass];
         
         // Lastly, we need to set up the updated attribute list being careful to remove the class.
-        NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat:keychainItemData];
+        NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
         [tempCheck removeObjectForKey:(id)kSecClass];
 		
 #if TARGET_IPHONE_SIMULATOR
@@ -310,7 +310,7 @@ Keychain API expects as a validly constructed container class.
     else
     {
         // No previous item found; add the new one.
-        result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat:keychainItemData], NULL);
+        result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData], NULL);
 //		NSAssert( result == noErr, @"Couldn't add the Keychain Item." );
 //        NSLog(@"Adding the Keychain Item. result: %d",(int)result);
         if (result != noErr) {

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) UITextField *inputTextField;
 
-- (instancetype)initWithTextColor:(UIColor *)textColor fontOfSize:(CGFloat)size placeholder:(NSString*)placeholder placeColor:(UIColor *)placeColor;
+- (instancetype)initWithTextColor_MMMethodMMM:(UIColor *)textColor fontOfSize_MMMethodMMM:(CGFloat)size placeholder_MMMethodMMM:(NSString*)placeholder placeColor_MMMethodMMM:(UIColor *)placeColor;
 
 @end
 

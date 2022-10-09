@@ -12,12 +12,12 @@
 
 @implementation AdLogger
 
-+ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues
++ (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
-    [self logWithEventName:eventName parameters:eventValues type:(AdType_All)];
+    [self logWithEventName_MMMethodMMM:eventName parameters_MMMethodMMM:eventValues type_MMMethodMMM:(AdType_All)];
 }
 
-+ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type
++ (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type
 {
     
     NSString *userId = @"";
@@ -35,11 +35,11 @@
     @try {
         comDic = @{
             @"userId"      : userId,
-            @"time"        :[SUtil getTimeStamp],
+            @"time"        :[SUtil getTimeStamp_MMMethodMMM],
             @"role_name"    :roleName,
             @"role_id"      :roleId,
-            @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
-            @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
+            @"idfa"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+            @"uniqueId"         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
             @"platform"      : @"ios",
         };
         
@@ -50,18 +50,18 @@
         [eventV addEntriesFromDictionary:eventValues];
     }
     
-    [AdDelegate logEventWithEventName:eventName eventValues:eventV type:type];
+    [AdDelegate logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventV type_MMMethodMMM:type];
 }
 
-+ (void)logServerWithEventName_Install
++ (void)logServerWithEventName_Install_MMMethodMMM
 {
 
-    if ([SdkUtil isReportEventName:SDK_LOG_EVENT_INSTALL]) {
+    if ([SdkUtil isReportEventName_MMMethodMMM:SDK_LOG_EVENT_INSTALL]) {
         return;
     }
-    [SDKRequest reportSdkEventWithEventName:SDK_LOG_EVENT_INSTALL successBlock:^(id responseData) {
-        [SdkUtil saveReportEventName:SDK_LOG_EVENT_INSTALL];
-    } errorBlock:^(BJError *error) {
+    [SDKRequest reportSdkEventWithEventName_MMMethodMMM:SDK_LOG_EVENT_INSTALL successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil saveReportEventName_MMMethodMMM:SDK_LOG_EVENT_INSTALL];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
         
     }];
 }

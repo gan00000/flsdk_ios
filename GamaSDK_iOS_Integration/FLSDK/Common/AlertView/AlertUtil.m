@@ -18,19 +18,19 @@ static NSArray<UIViewController *> *presentViewControllers;
 
 #pragma mark - Alert
 //简单显示Alert的方法
-+(void)showAlertWithMessage:(NSString *)message
++(void)showAlertWithMessage_MMMethodMMM:(NSString *)message
 {
     NSString *tmp = @"確定";
     
-    [self showAlertWithMessage:message
+    [self showAlertWithMessage_MMMethodMMM:message
                            completion:nil
-                      andButtonTitles:tmp, nil];
+                      andButtonTitles_MMMethodMMM:tmp, nil];
 }
 
 //显示允许更多定制的方法
-+(UIAlertView *)showAlertWithMessage:(NSString *)message
++(UIAlertView *)showAlertWithMessage_MMMethodMMM:(NSString *)message
                           completion:(SAlertViewHandler)handler
-                     andButtonTitles:(NSString *)buttonTitles,...
+                     andButtonTitles_MMMethodMMM:(NSString *)buttonTitles,...
 {
  
     
@@ -45,17 +45,17 @@ static NSArray<UIViewController *> *presentViewControllers;
     }
     va_end(args);
     
-    return [self _showAlertViewWithTitle:nil
-                                 message:message
-                            buttonTitles:[NSArray arrayWithArray:tempArray]
+    return [self _showAlertViewWithTitle_MMMethodMMM:nil
+                                 message_MMMethodMMM:message
+                            buttonTitles_MMMethodMMM:[NSArray arrayWithArray:tempArray]
                               completion:handler];
 }
 
 //yao: 显示定制的alertView
-+ (UIAlertView *)showAlertViewWithTitle:(NSString *)title
-                                message:(NSString *)message
++ (UIAlertView *)showAlertViewWithTitle_MMMethodMMM:(NSString *)title
+                                message_MMMethodMMM:(NSString *)message
                              completion:(SAlertViewHandler)handler
-                           buttonTitles:(NSString *)buttonTitles,...
+                           buttonTitles_MMMethodMMM:(NSString *)buttonTitles,...
 {
     
     
@@ -71,18 +71,18 @@ static NSArray<UIViewController *> *presentViewControllers;
     
     va_end(args);
     
-    return [self _showAlertViewWithTitle:title
-                                 message:message
-                            buttonTitles:[NSArray arrayWithArray:tempArray]
+    return [self _showAlertViewWithTitle_MMMethodMMM:title
+                                 message_MMMethodMMM:message
+                            buttonTitles_MMMethodMMM:[NSArray arrayWithArray:tempArray]
                               completion:handler];
 }
 
-+ (UIAlertView *)_showAlertViewWithTitle:(NSString *)title
-                                 message:(NSString *)message
-                            buttonTitles:(NSArray *)buttonTitles
++ (UIAlertView *)_showAlertViewWithTitle_MMMethodMMM:(NSString *)title
+                                 message_MMMethodMMM:(NSString *)message
+                            buttonTitles_MMMethodMMM:(NSArray *)buttonTitles
                               completion:(SAlertViewHandler)handler
 {
-    if ([SUtil getSystemVersion].intValue >= 8)//yao: 用alertController方法
+    if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 8)//yao: 用alertController方法
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             
@@ -116,7 +116,7 @@ static NSArray<UIViewController *> *presentViewControllers;
         UIAlertView * alert=[[UIAlertView alloc]initWithTitle:title
                                                       message:message
                                                      delegate:
-                             [SAlertViewDelegate creatDelegateWithBack:handler]
+                             [SAlertViewDelegate creatDelegateWithBack_MMMethodMMM:handler]
                                             cancelButtonTitle:nil
                                             otherButtonTitles:nil];
         //添加各種按鈕
@@ -133,16 +133,16 @@ static NSArray<UIViewController *> *presentViewControllers;
 }
 
 #pragma mark - ActionSheet
-+ (void)showActionSheetWithTitle:(NSString *)title
-                         message:(NSString *)message
-                   callbackBlock:(void(^)(NSInteger btnIndex))block
-          destructiveButtonTitle:(NSString *)destructiveBtnTitle
-               cancelButtonTitle:(NSString *)cancelBtnTitle
-               otherButtonTitles:(NSArray *)otherButtonTitles
-                      sourceView:(UIView *)sourceView
-                  arrowDirection:(UIPopoverArrowDirection)direction
++ (void)showActionSheetWithTitle_MMMethodMMM:(NSString *)title
+                         message_MMMethodMMM:(NSString *)message
+                   callbackBlock_MMMethodMMM:(void(^)(NSInteger btnIndex))block
+          destructiveButtonTitle_MMMethodMMM:(NSString *)destructiveBtnTitle
+               cancelButtonTitle_MMMethodMMM:(NSString *)cancelBtnTitle
+               otherButtonTitles_MMMethodMMM:(NSArray *)otherButtonTitles
+                      sourceView_MMMethodMMM:(UIView *)sourceView
+                  arrowDirection_MMMethodMMM:(UIPopoverArrowDirection)direction
 {
-    if ([SUtil getSystemVersion].intValue >= 8)
+    if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 8)
     {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
         
@@ -186,14 +186,14 @@ static NSArray<UIViewController *> *presentViewControllers;
         
         //如果没有按钮，自动延迟消失
         if (cancelBtnTitle == nil && destructiveBtnTitle == nil && otherButtonTitles == nil) {
-            [self performSelector:@selector(dismissAlertController:) withObject:alertController afterDelay:GamaAlertViewShowTime];
+            [self performSelector:@selector(dismissAlertController_MMMethodMMM:) withObject:alertController afterDelay:GamaAlertViewShowTime];
         }
     }
     else
     {
         UIActionSheet * actionSheet = [[UIActionSheet alloc] initWithTitle:title delegate:self cancelButtonTitle:cancelBtnTitle destructiveButtonTitle:destructiveBtnTitle otherButtonTitles:nil];
         
-        actionSheet.delegate = [SAlertViewDelegate creatDelegateWithBack:block];
+        actionSheet.delegate = [SAlertViewDelegate creatDelegateWithBack_MMMethodMMM:block];
         
         if (otherButtonTitles.count > 0)
         {
@@ -202,24 +202,24 @@ static NSArray<UIViewController *> *presentViewControllers;
             }
         }
         
-        [actionSheet showInView:[SUtil getCurrentViewController].view];
+        [actionSheet showInView:[SUtil getCurrentViewController_MMMethodMMM].view];
         
         //如果没有按钮，自动延迟消失
         if (cancelBtnTitle == nil && otherButtonTitles == nil) {
-            [self performSelector:@selector(dismissActionSheet:) withObject:actionSheet afterDelay:GamaAlertViewShowTime];
+            [self performSelector:@selector(dismissActionSheet_MMMethodMMM:) withObject:actionSheet afterDelay:GamaAlertViewShowTime];
         }
     }
 }
 
-+ (void)dismissAlertView:(UIAlertView*)alertView
++ (void)dismissAlertView_MMMethodMMM:(UIAlertView*)alertView
 {
     [alertView dismissWithClickedButtonIndex:0 animated:YES];
 }
-+ (void)dismissActionSheet:(UIActionSheet *)actionSheet
++ (void)dismissActionSheet_MMMethodMMM:(UIActionSheet *)actionSheet
 {
     [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
 }
-+ (void)dismissAlertController:(UIAlertController *)alert
++ (void)dismissAlertController_MMMethodMMM:(UIAlertController *)alert
 {
     [alert dismissViewControllerAnimated:YES completion:nil];
 }

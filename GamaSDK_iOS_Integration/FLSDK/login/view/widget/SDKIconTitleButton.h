@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKIconTitleButton : UIView
 
-- (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target;
+- (instancetype)initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HttpServiceEngineAd : NSObject
 
-+ (void)postRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJServiceSuccessBlock)successBlock
-                         errorBlock:(BJServiceErrorBlock)errorBlock;
++ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 @end
 

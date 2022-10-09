@@ -32,7 +32,7 @@
     LoginTitleView *mLoginTitleView;
 }
 
-- (instancetype)initWithCompleter:(void (^)(void))completer
+- (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer
 {
     self = [self init];
     if (self) {
@@ -46,12 +46,12 @@
 {
     self = [super init];
     if (self) {
-//        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+//        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
 //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
         
-        [self landspaceView];
+        [self landspaceView_MMMethodMMM];
         
         
     }
@@ -59,15 +59,15 @@
 }
 
 
-- (void)landspaceView {
+- (void)landspaceView_MMMethodMMM {
    
     //title
-    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"sdk_terms_title") hander:^(NSInteger param) {
+    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"sdk_terms_title") hander_MMMethodMMM:^(NSInteger param) {
         
         if (self.fromPage == CURRENT_PAGE_TYPE_MAIN_HOME) {
-            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_TEARMS) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_TEARMS) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
         }else if (self.fromPage == CURRENT_PAGE_TYPE_LOGIN_WITH_REG){
-            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_TEARMS) toPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
+            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_TEARMS) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }
         
         
@@ -81,7 +81,7 @@
     }];
     
     UIView *lineView = [[UIView alloc] init];
-    lineView.backgroundColor = [UIColor colorWithHexString:@"#848484"];
+    lineView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#848484"];
     [self addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(17));
@@ -91,7 +91,7 @@
     }];
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString:@"#E4E4E4"];
+    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E4E4E4"];
     [self addSubview:xView];
     [xView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(lineView.mas_bottom).mas_offset(VH(12));
@@ -102,7 +102,7 @@
     
     UIView *contentView = [[UIView alloc] init];
 //    contentView.backgroundColor = [UIColor whiteColor];
-//    contentView.layer.borderColor = [UIColor colorWithHexString:@"#545454"].CGColor;
+//    contentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#545454"].CGColor;
 //    contentView.layer.borderWidth = 0.8;
     [xView addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -164,7 +164,7 @@
 //    }];
 //
 //        //同意按鈕
-//        agreeBtn = [UIUtil initBtnWithNormalImage:@"btn_checkbox_uncheck.png" highlightedImage:nil tag:13 selector:@selector(action:) target:self];
+//        agreeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:@"btn_checkbox_uncheck.png" highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:13 selector:@selector(action:) target_MMMethodMMM:self];
 //        agreeBtn.layer.borderColor = [UIColor blackColor].CGColor;
 //        agreeBtn.layer.borderWidth = 0.5;
 //        [xView addSubview:agreeBtn];
@@ -176,7 +176,7 @@
 //        }];
 //
 //    //確認登入遊戲
-//    UIButton *okButton = [LoginButton initBtnWithType:(BUTTON_TYPE_OK) tag:kAccountLoginActTag selector:@selector(action:)  target:self];
+//    UIButton *okButton = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_OK) tag_MMMethodMMM:kAccountLoginActTag selector:@selector(action:)  target_MMMethodMMM:self];
 //    [self addSubview:okButton];
 //
 //    [okButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -201,19 +201,19 @@
     
 }
 
-+ (void)saveAgreenProvisionState:(BOOL)agreen
++ (void)saveAgreenProvisionState_MMMethodMMM:(BOOL)agreen
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     [saveDefault setBool:agreen forKey:SDK_PROVISIONS_FIRST_ENBLE];
     [saveDefault synchronize];
 }
 
-+ (BOOL)openProvision{
++ (BOOL)openProvision_MMMethodMMM{
     
-    return ![TermsView isAgreenProvision];
+    return ![TermsView isAgreenProvision_MMMethodMMM];
 }
 
-+(BOOL)isAgreenProvision
++(BOOL)isAgreenProvision_MMMethodMMM
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];

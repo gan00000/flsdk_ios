@@ -53,24 +53,24 @@
 
 
 //h = 582 w = 608
--(CGFloat)getViewHeight:(CGFloat)height
+-(CGFloat)getViewHeight_MMMethodMMM:(CGFloat)height
 {
     return height * self.viewAdaptRate;
     
 }
 
--(CGFloat)getViewWidth:(CGFloat)width
+-(CGFloat)getViewWidth_MMMethodMMM:(CGFloat)width
 {
     return width * self.viewAdaptRate;
 }
 
--(CGFloat)getFontSize:(CGFloat)size{
+-(CGFloat)getFontSize_MMMethodMMM:(CGFloat)size{
     return size * self.viewAdaptRate;
 }
 
 
 
--(CGFloat)viewAdaptRate
+-(CGFloat)viewAdaptRate_MMMethodMMM
 {
     if (_viewAdaptRate) {
         return _viewAdaptRate;

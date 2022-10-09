@@ -27,7 +27,7 @@
  *
  *	@return	一个AlertView。
  */
-+(void)showAlertWithMessage:(NSString *)message;
++(void)showAlertWithMessage_MMMethodMMM:(NSString *)message;
 
 
 /**
@@ -40,9 +40,9 @@
  *
  *	@return	一个AlertView。
  */
-+(UIAlertView *)showAlertWithMessage:(NSString *)message
++(UIAlertView *)showAlertWithMessage_MMMethodMMM:(NSString *)message
                           completion:(SAlertViewHandler)handler
-                     andButtonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+                     andButtonTitles_MMMethodMMM:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  *  yao:显示自定义的提示框，既有title又有message
@@ -54,19 +54,19 @@
  *
  *  @return 一个AlertView
  */
-//+ (UIAlertView *)showAlertViewWithTitle:(NSString *)title
-//                                message:(NSString *)message
+//+ (UIAlertView *)showAlertViewWithTitle_MMMethodMMM:(NSString *)title
+//                                message_MMMethodMMM:(NSString *)message
 //                             completion:(SAlertViewHandler)handler
-//                           buttonTitles:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+//                           buttonTitles_MMMethodMMM:(NSString *)buttonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 
-+ (void)showActionSheetWithTitle:(NSString *)title
-                         message:(NSString *)message
-                   callbackBlock:(void(^)(NSInteger btnIndex))block
-          destructiveButtonTitle:(NSString *)destructiveBtnTitle
-               cancelButtonTitle:(NSString *)cancelBtnTitle
-               otherButtonTitles:(NSArray *)otherButtonTitles
-                      sourceView:(UIView *)sourceView
-                  arrowDirection:(UIPopoverArrowDirection)direction;
++ (void)showActionSheetWithTitle_MMMethodMMM:(NSString *)title
+                         message_MMMethodMMM:(NSString *)message
+                   callbackBlock_MMMethodMMM:(void(^)(NSInteger btnIndex))block
+          destructiveButtonTitle_MMMethodMMM:(NSString *)destructiveBtnTitle
+               cancelButtonTitle_MMMethodMMM:(NSString *)cancelBtnTitle
+               otherButtonTitles_MMMethodMMM:(NSArray *)otherButtonTitles
+                      sourceView_MMMethodMMM:(UIView *)sourceView
+                  arrowDirection_MMMethodMMM:(UIPopoverArrowDirection)direction;
 
 @end

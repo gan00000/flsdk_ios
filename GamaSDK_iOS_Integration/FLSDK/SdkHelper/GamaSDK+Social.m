@@ -29,7 +29,7 @@
 //
 //
 //+(void)gama_fetchFriendsWithKind:(GamaThirdPartyType)kind
-//                           param:(nullable NSDictionary *)par
+//                           param_MMMethodMMM:(nullable NSDictionary *)par
 //                          paging:(GamaSocialPaging)paging
 //                           limit:(NSUInteger)limit
 //                completedHandler:(void (^)(NSDictionary *_Nullable initialData,
@@ -46,7 +46,7 @@
 //}
 //
 //+(void)gama_shareWithKind:(GamaThirdPartyType)kind
-//                    param:(NSDictionary *)par
+//                    param_MMMethodMMM:(NSDictionary *)par
 //                  success:(void (^)(NSDictionary * _Nullable))success
 //                  failure:(void (^)(NSError * _Nullable))failure
 //{
@@ -99,7 +99,7 @@
 //}
 //
 //+(void)gama_sentMessageToSpecifiedFriendsWithKind:(GamaThirdPartyType)kind
-//                                            param:(NSDictionary *)par
+//                                            param_MMMethodMMM:(NSDictionary *)par
 //                                          success:(void (^)(NSDictionary * _Nullable))success
 //                                          failure:(void (^)(NSError * _Nullable))failure
 //{
@@ -109,7 +109,7 @@
 //}
 //
 //+(void)gama_inviteFriendsWithKind:(GamaThirdPartyType)kind
-//                            param:(NSDictionary *)par
+//                            param_MMMethodMMM:(NSDictionary *)par
 //                          success:(void (^)(NSDictionary * _Nullable))success
 //                          failure:(void (^)(NSError * _Nullable))failure
 //{

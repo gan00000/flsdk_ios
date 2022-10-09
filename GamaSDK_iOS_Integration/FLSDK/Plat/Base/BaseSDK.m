@@ -38,7 +38,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_application:note.object didFinishLaunchingWithOptions:note.userInfo];
+                                                          [[BaseSDK share] sdk_application_MMMethodMMM:note.object didFinishLaunchingWithOptions:note.userInfo];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification
@@ -46,7 +46,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationDidBecomeActive:note.object];
+                                                          [[BaseSDK share] sdk_applicationDidBecomeActive_MMMethodMMM:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillTerminateNotification
@@ -54,7 +54,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationWillTerminate:note.object];
+                                                          [[BaseSDK share] sdk_applicationWillTerminate_MMMethodMMM:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification
@@ -62,7 +62,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationDidEnterBackground:note.object];
+                                                          [[BaseSDK share] sdk_applicationDidEnterBackground_MMMethodMMM:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification
@@ -70,7 +70,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationDidEnterBackground:note.object];
+                                                          [[BaseSDK share] sdk_applicationDidEnterBackground_MMMethodMMM:note.object];
                                                       });
                                                   }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification
@@ -78,7 +78,7 @@
                                                        queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationWillEnterForeground:note.object];
+                                                          [[BaseSDK share] sdk_applicationWillEnterForeground_MMMethodMMM:note.object];
                                                       });
                                                   }];
 }
@@ -96,25 +96,25 @@
 
 
 #pragma mark - 生命周期接口（内部监听系统通知处理）
-- (void)sdk_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     SDK_LOG_FILE_FUNCTION(@"didFinishLaunchingWithOptions");
     
-    [AdLogger logServerWithEventName_Install];//发送事件到日志服务器
+    [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
     
     // 广告初始化
     
     [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [SDKRequest getSdkConfigWithSuccessBlock:^(id responseData) {
+    [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BJError *error) {
         
     }];
     
-    [SDKRequest getAreaInfoWithSuccessBlock:^(id responseData) {
+    [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
 
-    } errorBlock:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BJError *error) {
 
     }];
     
@@ -124,7 +124,7 @@
     [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [AdLogger logWithEventName:AD_EVENT_APP_OPEN parameters:nil type:AdType_Appflyer|AdType_Firebase];
+    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
     
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
@@ -157,32 +157,32 @@
 }
 
 
-- (void)sdk_applicationDidBecomeActive:(UIApplication *)application
+- (void)sdk_applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application
 {
     // 应用每次启动时，将应用icon上的数字减1（前提是原本大于或等于1）
     if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
         --[UIApplication sharedApplication].applicationIconBadgeNumber;
     }
     
-    [AdDelegate applicationDidBecomeActive:application];
+    [AdDelegate applicationDidBecomeActive_MMMethodMMM:application];
     
-    [FBDelegate applicationDidBecomeActive:application];
+    [FBDelegate applicationDidBecomeActive_MMMethodMMM:application];
     
 }
 
-- (void)sdk_applicationWillTerminate:(UIApplication *)application
+- (void)sdk_applicationWillTerminate_MMMethodMMM:(UIApplication *)application
 {
-    [FBDelegate applicationWillTerminate:application];
+    [FBDelegate applicationWillTerminate_MMMethodMMM:application];
 }
 
-- (void)sdk_applicationDidEnterBackground:(UIApplication *)application
+- (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application
 {
 //    [GamaIapFunctionPort applicationDidEnterBackground];
 //    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
     
 }
 
-- (void)sdk_applicationWillEnterForeground:(UIApplication *)application
+- (void)sdk_applicationWillEnterForeground_MMMethodMMM:(UIApplication *)application
 {
    
 }

@@ -13,17 +13,17 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (Common)
 
 
-- (NSString*)stringEsclipeFromXEndX:(int)X;
-- (NSString*)stringCutStringFrom:(NSString *)cutString;
-- (NSString*)stringCutStringTo:(NSString *)cutString;
-- (NSString*)stringCutStringTo:(NSString *)cutString option:(NSStringCompareOptions)nsOption;
-- (NSString *)stringToMd5;
-- (NSString *)urlEncodeString;
+- (NSString*)stringEsclipeFromXEndX_MMMethodMMM:(int)X;
+- (NSString*)stringCutStringFrom_MMMethodMMM:(NSString *)cutString;
+- (NSString*)stringCutStringTo_MMMethodMMM:(NSString *)cutString;
+- (NSString*)stringCutStringTo_MMMethodMMM:(NSString *)cutString option_MMMethodMMM:(NSStringCompareOptions)nsOption;
+- (NSString *)stringToMd5_MMMethodMMM;
+- (NSString *)urlEncodeString_MMMethodMMM;
 
-- (BOOL)isContainString:(NSString*)string;
-- (BOOL)isContainString:(NSString*)string withOption:(NSStringCompareOptions)options;
+- (BOOL)isContainString_MMMethodMMM:(NSString*)string;
+- (BOOL)isContainString_MMMethodMMM:(NSString*)string withOption_MMMethodMMM:(NSStringCompareOptions)options;
 
-- (int)numberTimesAtString:(NSString *)findStr;
+- (int)numberTimesAtString_MMMethodMMM:(NSString *)findStr;
 
 @end
 

@@ -24,10 +24,10 @@
 
 
 //倒计时
--(void)startCountTimer{
+-(void)startCountTimer_MMMethodMMM{
     
     if (self.countTimerDelegate) {
-        [self.countTimerDelegate beforeStartTimer];
+        [self.countTimerDelegate beforeStartTimer_MMMethodMMM];
     }
     
     if (!self.totalCount || self.totalCount <= 0) {
@@ -40,29 +40,29 @@
     }
     downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self
-                                               selector:@selector(doTiming)
+                                               selector:@selector(doTiming_MMMethodMMM)
                                                userInfo:nil
                                                 repeats:YES];
     
     
 }
 
-- (void)doTiming {
+- (void)doTiming_MMMethodMMM {
     
     self.totalCount--;
     if (self.totalCount < 0) {
-        [self finishCountTimer];
+        [self finishCountTimer_MMMethodMMM];
     }else{
         
         if (self.countTimerDelegate) {
-            [self.countTimerDelegate timing:[NSString stringWithFormat:@"%ld", self.totalCount]];
+            [self.countTimerDelegate timing_MMMethodMMM:[NSString stringWithFormat:@"%ld", self.totalCount]];
         }
         
     }
     
 }
 
--(void) finishCountTimer
+-(void)finishCountTimer_MMMethodMMM
 {
     if (downTimer) {
         [downTimer invalidate];
@@ -70,7 +70,7 @@
     }
     
     if (self.countTimerDelegate) {
-        [self.countTimerDelegate finishTimer];
+        [self.countTimerDelegate finishTimer_MMMethodMMM];
     }
 }
 

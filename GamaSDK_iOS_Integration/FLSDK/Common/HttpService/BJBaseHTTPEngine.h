@@ -16,40 +16,40 @@ typedef void (^BJHTTPFailureBlock)(NSURLSessionDataTask *task, NSError *error);
 
 @interface BJBaseHTTPEngine : NSObject
 
-- (instancetype)initWithBasePath:(NSString *)basePath;
+- (instancetype)initWithBasePath_MMMethodMMM:(NSString *)basePath;
 
-- (void)updateSessionWithBlock:(void(^)(AFHTTPSessionManager *session))updateBlock;
+- (void)updateSessionWithBlock_MMMethodMMM:(void(^)(AFHTTPSessionManager *session))updateBlock;
 
-- (void)getRequestWithFunctionPath:(NSString *)path
-                            params:(NSDictionary *)params
-                      successBlock:(BJHTTPSuccessBlock)successBlock
-                        errorBlock:(BJHTTPFailureBlock)errorBlock;
+- (void)getRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                            params_MMMethodMMM:(NSDictionary *)params
+                      successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock;
 
-- (void)postRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                         errorBlock:(BJHTTPFailureBlock)errorBlock;
+- (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock;
 
-- (void)postJsonRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                          errorBlock:(BJHTTPFailureBlock)errorBlock;
+- (void)postJsonRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock;
 
-- (void)fileUploadWithFunctionPath:(NSString *)functionPath
-                            params:(NSDictionary *)params
-                          fileData:(NSData *)fileData
-                          fileName:(NSString *)fileName
-                          mimeType:(NSString *)mimeType
-                     progressBlock:(BJHTTPProgressBlock)progressBlock
-                      successBlock:(BJHTTPSuccessBlock)successBlock
-                        errorBlock:(BJHTTPFailureBlock)errorBlock;
+- (void)fileUploadWithFunctionPath_MMMethodMMM:(NSString *)functionPath
+                            params_MMMethodMMM:(NSDictionary *)params
+                          fileData_MMMethodMMM:(NSData *)fileData
+                          fileName_MMMethodMMM:(NSString *)fileName
+                          mimeType_MMMethodMMM:(NSString *)mimeType
+                     progressBlock_MMMethodMMM:(BJHTTPProgressBlock)progressBlock
+                      successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock;
 
-- (void)imageUploadWithFunctionPath:(NSString *)functionPath
-                             params:(NSDictionary *)params
-                          imageData:(NSData *)imageData
-                          imageName:(NSString *)imageName
-                      progressBlock:(BJHTTPProgressBlock)progressBlock
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                         errorBlock:(BJHTTPFailureBlock)errorBlock;
+- (void)imageUploadWithFunctionPath_MMMethodMMM:(NSString *)functionPath
+                             params_MMMethodMMM:(NSDictionary *)params
+                          imageData_MMMethodMMM:(NSData *)imageData
+                          imageName_MMMethodMMM:(NSString *)imageName
+                      progressBlock_MMMethodMMM:(BJHTTPProgressBlock)progressBlock
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock;
 
 @end

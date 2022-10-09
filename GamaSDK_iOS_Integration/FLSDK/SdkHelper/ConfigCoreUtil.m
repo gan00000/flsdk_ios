@@ -41,43 +41,43 @@ static dispatch_once_t onceToken;
 }
 
 //保存一个账号密码，如果存在，则更新，不存在则添加
-//-(void)saveAccount:(NSString *) mAccount password:(NSString *) password updateTime:(BOOL) updateTime
+//-(void)saveAccount:(NSString *) mAccount password_MMMethodMMM:(NSString *) password updateTime:(BOOL) updateTime
 //{
 //
-//    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
+//    NSArray *mAccountArray = [self getAccountModels_MMMethodMMM];//获取保存的数据
 //    for (AccountModel *am in mAccountArray) {
 //        if ([am.account isEqualToString:mAccount]) {
 //            am.password = password;
 //            if (updateTime) {
-//                am.lastLoginTime = [SUtil getTimeStamp];
+//                am.lastLoginTime = [SUtil getTimeStamp_MMMethodMMM];
 //            }
-//            [self saveAccountModels:mAccountArray];
+//            [self saveAccountModels_MMMethodMMM:mAccountArray];
 //            return;
 //        }
 //    }
 //    NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
 //    AccountModel *mAccountModel = [[AccountModel alloc] init];
 //    //赋值
-//    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
+//    mAccountModel.lastLoginTime = [SUtil getTimeStamp_MMMethodMMM];
 //    mAccountModel.account = mAccount;
 //    mAccountModel.password = password;
 //    [aar addObject:mAccountModel];
-//    [self saveAccountModels:aar];
+//    [self saveAccountModels_MMMethodMMM:aar];
 //
 //}
 
 
--(void)saveAccountModel:(AccountModel*) mAccountModel{
+-(void)saveAccountModel_MMMethodMMM:(AccountModel*) mAccountModel{
     
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
-        [self removeAccountByUserId:mAccountModel.userId];
+        [self removeAccountByUserId_MMMethodMMM:mAccountModel.userId];
         
     }else{//第三方
        
-        [self removeAccountByLoginType:mAccountModel.loginType];//删除同类型第三方
+        [self removeAccountByLoginType_MMMethodMMM:mAccountModel.loginType];//删除同类型第三方
         
-        NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
+        NSArray *mAccountArray = [self getAccountModels_MMMethodMMM];//获取保存的数据
         for (AccountModel *am in mAccountArray) {
             if ([am.userId isEqualToString: mAccountModel.userId] && [am.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 return;
@@ -86,32 +86,32 @@ static dispatch_once_t onceToken;
   
     }
     
-    mAccountModel.lastLoginTime = [SUtil getTimeStamp];
-    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
+    mAccountModel.lastLoginTime = [SUtil getTimeStamp_MMMethodMMM];
+    NSArray *mAccountArray = [self getAccountModels_MMMethodMMM];//获取保存的数据
     
     NSMutableArray *aar = [NSMutableArray arrayWithArray:mAccountArray];
     [aar addObject:mAccountModel];
-    [self saveAccountModels:aar];
+    [self saveAccountModels_MMMethodMMM:aar];
 }
 
 //保存一个账号密码，如果存在，则更新，不存在则添加
 //-(void)removeAccount:(NSString *) mAccount
 //{
-//    NSArray *mAccountArray = [self getAccountModels];//获取保存的数据
+//    NSArray *mAccountArray = [self getAccountModels_MMMethodMMM];//获取保存的数据
 //    NSMutableArray  *dataList = [NSMutableArray arrayWithArray:mAccountArray];
 //    for (AccountModel *am in mAccountArray) {
 //        if ([am.account isEqualToString:mAccount]) {
 //            [dataList removeObject:am];
-//            [self saveAccountModels:dataList];
+//            [self saveAccountModels_MMMethodMMM:dataList];
 //            return;
 //        }
 //    }
 //}
 
 //保存一个账号密码，如果存在，则更新，不存在则添加
--(void)removeAccountByLoginType:(NSString *) loginType
+-(void)removeAccountByLoginType_MMMethodMMM:(NSString *)loginType
 {
-    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels]];//获取保存的数据
+    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels_MMMethodMMM]];//获取保存的数据
     NSMutableArray  *removeList = [NSMutableArray array];
 
     for (AccountModel *am in mAccountArray) {
@@ -121,14 +121,14 @@ static dispatch_once_t onceToken;
     }
     if (removeList.count > 0) {
         [mAccountArray removeObjectsInArray:removeList];
-        [self saveAccountModels:mAccountArray];
+        [self saveAccountModels_MMMethodMMM:mAccountArray];
     }
     
 }
 
--(void)removeAccountByUserId:(NSString *) userId
+-(void)removeAccountByUserId_MMMethodMMM:(NSString *) userId
 {
-    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels]];//获取保存的数据
+    NSMutableArray *mAccountArray = [NSMutableArray arrayWithArray:[self getAccountModels_MMMethodMMM]];//获取保存的数据
     NSMutableArray  *removeList = [NSMutableArray array];
 
     for (AccountModel *am in mAccountArray) {
@@ -138,13 +138,13 @@ static dispatch_once_t onceToken;
     }
     if (removeList.count > 0) {
         [mAccountArray removeObjectsInArray:removeList];
-        [self saveAccountModels:mAccountArray];
+        [self saveAccountModels_MMMethodMMM:mAccountArray];
     }
     
 }
 
 
--(void)saveAccountModels:(NSArray<AccountModel *> *) mAccountModelArray
+-(void)saveAccountModels_MMMethodMMM:(NSArray<AccountModel *> *) mAccountModelArray
 {
     
     NSMutableArray  *dataList = [NSMutableArray array];
@@ -162,7 +162,7 @@ static dispatch_once_t onceToken;
 }
 
 
--(NSMutableArray<AccountModel *> *)getAccountModels
+-(NSMutableArray<AccountModel *> *)getAccountModels_MMMethodMMM
 {
     NSMutableArray  *accountModelList = [NSMutableArray array];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -179,7 +179,7 @@ static dispatch_once_t onceToken;
 }
 
 
--(void)saveLoginType:(NSString *)thirdPlate
+-(void)saveLoginType_MMMethodMMM:(NSString *)thirdPlate
 {
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -189,7 +189,7 @@ static dispatch_once_t onceToken;
     [userDefaults synchronize];
 }
 
--(NSString *) loginType
+-(NSString *)loginType_MMMethodMMM
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return [userDefaults stringForKey:@"SDK_LOGIN_TYPE"];

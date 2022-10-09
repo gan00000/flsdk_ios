@@ -13,19 +13,19 @@
 @implementation SDKRequest
 
 //手机区号获取
-+(void)getAreaInfoWithSuccessBlock:(BJServiceSuccessBlock)successBlock
-                                errorBlock:(BJServiceErrorBlock)errorBlock
++(void)getAreaInfoWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getCdnUrl]];
-    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/areaCode/areaInfo.json?t=%@", [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/areaCode/areaInfo.json?t=%@", [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
         NSArray *responseArray = responseData;
         SDK_LOG(@"sdk areaCode info:%@",responseArray);
         if (responseArray) {
-            [SdkUtil savePhoneAreaInfo:responseArray];
+            [SdkUtil savePhoneAreaInfo_MMMethodMMM:responseArray];
         }
         
-    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         if (errorBlock) {
             errorBlock(nil);
         }
@@ -36,11 +36,11 @@
 
 //https://www.meowplayer.com/sdk/config/jjcs/v1/version.json
 #pragma mark - 获取登录配置
-+(void)getSdkConfigWithSuccessBlock:(BJServiceSuccessBlock)successBlock
-                                errorBlock:(BJServiceErrorBlock)errorBlock
++(void)getSdkConfigWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getCdnUrl]];
-    [configHTTPEngine getRequestWithFunctionPath:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp]] params:nil successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
         SDK_LOG(@"sdk config:%@",responseDict);
@@ -64,14 +64,14 @@
                 
                 for (ConfigModel *cm in mCr.subVersion) {
                     
-                    if ([cm.version isEqualToString:[SUtil getBundleVersion]] && [cm.packageName isEqualToString:[SUtil getBundleIdentifier]]) {//匹配子版本开关
+                    if ([cm.version isEqualToString:[SUtil getBundleVersion_MMMethodMMM]] && [cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
                         SDK_DATA.mConfigModel = cm;
                         return;
                     }
                 }
             }
             
-            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier]]) {//先匹配所有版本开关
+            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//先匹配所有版本开关
                 SDK_DATA.mConfigModel = mCr.allVersion;
             }
             
@@ -82,7 +82,7 @@
             }
         }
         
-    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         if (errorBlock) {
             errorBlock(nil);
         }
@@ -92,11 +92,11 @@
 
 //https://log.meowplayer.com/sdk/event/log
 #pragma mark - 上报自己服务器一些事件
-+(void)reportSdkEventWithEventName:(NSString *)eventName successBlock:(BJServiceSuccessBlock)successBlock
-                                errorBlock:(BJServiceErrorBlock)errorBlock
++(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     NSDictionary *dic = nil;
     @try {
         dic = @{
@@ -111,9 +111,9 @@
     }
     
     SDK_LOG(@"reportSdkEvent start EventName:%@", eventName);
-    BJBaseHTTPEngine *logHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:[SDKRES getLogUrl]];
+    BJBaseHTTPEngine *logHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getLogUrl_MMMethodMMM]];
     
-    [logHTTPEngine getRequestWithFunctionPath:@"sdk/event/log" params:params successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [logHTTPEngine getRequestWithFunctionPath_MMMethodMMM:@"sdk/event/log" params_MMMethodMMM:params successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
         SDK_LOG(@"reportSdkEvent finish success EventName:%@", eventName);
         
@@ -121,7 +121,7 @@
             successBlock(responseData);
         }
         
-    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         
         SDK_LOG(@"reportSdkEvent finish error EventName:%@, errorMsg:%@", eventName, error.description);
         if (errorBlock) {
@@ -133,29 +133,29 @@
 
 
 #pragma mark - 免注册
-+(void)freeLoginOrRegister:(NSString *)thirdId
-                            successBlock:(BJServiceSuccessBlock)successBlock
-                            errorBlock:(BJServiceErrorBlock)errorBlock
++(void)freeLoginOrRegister_MMMethodMMM:(NSString *)thirdId
+                            successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                            errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    [self thirdLoginOrReg:thirdId andThirdPlate:LOGIN_TYPE_GUEST addOtherParams:nil successBlock:successBlock errorBlock:errorBlock];
+    [self thirdLoginOrReg_MMMethodMMM:thirdId andThirdPlate_MMMethodMMM:LOGIN_TYPE_GUEST addOtherParams_MMMethodMMM:nil successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 #pragma mark - 三方登录
-+(void)thirdLoginOrReg:(NSString *)thirdId
-          andThirdPlate:(NSString *)thirdPlate
-         addOtherParams:(NSDictionary *)otherParams
-           successBlock:(BJServiceSuccessBlock)successBlock
-             errorBlock:(BJServiceErrorBlock)errorBlock
++(void)thirdLoginOrReg_MMMethodMMM:(NSString *)thirdId
+          andThirdPlate_MMMethodMMM:(NSString *)thirdPlate
+         addOtherParams_MMMethodMMM:(NSDictionary *)otherParams
+           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+             errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParams) {
         [params addEntriesFromDictionary:otherParams];
     }
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     
     BOOL isGuestLogin = [thirdPlate isEqualToString:LOGIN_TYPE_GUEST];
     // 签名顺序不能变
@@ -165,7 +165,7 @@
     [md5str appendFormat:@"%@",thirdId]; //用户名
     [md5str appendFormat:@"%@",GAME_CODE];//gamecode
 //    isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     
     NSDictionary *dic = nil;
@@ -194,32 +194,32 @@
     }else{
         requestUrlPath = api_login_third;
     }
-    [HttpServiceEngineLogin postRequestWithFunctionPath:requestUrlPath params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:requestUrlPath params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
 }
 
 #pragma mark - 登录
-+(void)doLoginWithAccount:(NSString *)userName
-              andPassword:(NSString *)password
-                 otherDic:(NSDictionary *)otherParamsDic
-             successBlock:(BJServiceSuccessBlock)successBlock
-               errorBlock:(BJServiceErrorBlock)errorBlock
++(void)doLoginWithAccount_MMMethodMMM:(NSString *)userName
+              andPassword_MMMethodMMM:(NSString *)password
+                 otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+             successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+               errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     userName = [userName lowercaseString];
-    NSString *timestamp = [SUtil getTimeStamp];
+    NSString *timestamp = [SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值
     NSMutableString * md5str=[[NSMutableString alloc]init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timestamp]; //时间戳
     [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",GAME_CODE];//gamecode
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
     @try {
@@ -228,7 +228,7 @@
             @"timestamp"        :timestamp,
             @"gameCode"         :[NSString stringWithFormat:@"%@",GAME_CODE],
             @"loginId"             :userName,
-            @"password"              :[[SUtil getMD5StrFromString:password] lowercaseString],
+            @"password"              :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
             @"registPlatform"   :LOGIN_TYPE_SELF,
             
         };
@@ -237,20 +237,20 @@
     } @catch (NSException *exception) {
         
     }
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_login_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_login_account params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
 }
 
 #pragma mark - 获取验证码
-+ (void)requestVfCode:(NSString *)phoneArea
-                                 phoneNumber:(NSString *)phoneN
-                                 email:(NSString *)email
-                                  interfaces:(NSString *)interfaces  //注册1 绑定2
-                                    otherDic:(NSDictionary *)otherParamsDic
-                                successBlock:(BJServiceSuccessBlock)successBlock
-                                  errorBlock:(BJServiceErrorBlock)errorBlock
++ (void)requestVfCode_MMMethodMMM:(NSString *)phoneArea
+                                 phoneNumber_MMMethodMMM:(NSString *)phoneN
+                                 email_MMMethodMMM:(NSString *)email
+                                  interfaces_MMMethodMMM:(NSString *)interfaces  //注册1 绑定2
+                                    otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                                successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                  errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -260,14 +260,14 @@
         vf_acccount = email;
     }
     
-    NSString *timeStamp = [SUtil getTimeStamp];
+    NSString *timeStamp = [SUtil getTimeStamp_MMMethodMMM];
     NSMutableString * md5str=[[NSMutableString alloc]init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",vf_acccount];
     [md5str appendFormat:@"%@",GAME_CODE];//gamecode
     
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     //字典未能设置nil
     NSDictionary *dic = @{@"phone":phoneN,
@@ -280,20 +280,20 @@
     };
     
     [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_get_vfCode params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_get_vfCode params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 #pragma mark - 游戏内获取手机验证码
-+ (void)requestMobileVfCode:(NSString *)phoneArea
-                                 phoneNumber:(NSString *)phoneN
-                                 email:(NSString *)email
-                                    otherDic:(NSDictionary *)otherParamsDic
-                                successBlock:(BJServiceSuccessBlock)successBlock
-                                  errorBlock:(BJServiceErrorBlock)errorBlock
++ (void)requestMobileVfCode_MMMethodMMM:(NSString *)phoneArea
+                                 phoneNumber_MMMethodMMM:(NSString *)phoneN
+                                 email_MMMethodMMM:(NSString *)email
+                                    otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                                successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                  errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -303,14 +303,14 @@
         vf_acccount = email;
     }
     
-//    NSString *timeStamp = [SUtil getTimeStamp];
+//    NSString *timeStamp = [SUtil getTimeStamp_MMMethodMMM];
 //    NSMutableString * md5str=[[NSMutableString alloc]init];
 //    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
 //    [md5str appendFormat:@"%@",timeStamp]; //时间戳
 //    [md5str appendFormat:@"%@",vf_acccount];
 //    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
 //
-//    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+//    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     //字典未能设置nil
     NSDictionary *dic = @{@"telephone":phoneN,
@@ -319,20 +319,20 @@
     };
     
     [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_sendMobileVcode params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_sendMobileVcode params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 #pragma mark - 游戏内绑定手机
-+ (void)bindAccountPhone:(NSString *)phoneArea
-                                 phoneNumber:(NSString *)phoneN
-                      vCode:(NSString *)vCode
-                                    otherDic:(NSDictionary *)otherParamsDic
-                                successBlock:(BJServiceSuccessBlock)successBlock
-                                  errorBlock:(BJServiceErrorBlock)errorBlock
++ (void)bindAccountPhone_MMMethodMMM:(NSString *)phoneArea
+                                 phoneNumber_MMMethodMMM:(NSString *)phoneN
+                      vCode_MMMethodMMM:(NSString *)vCode
+                                    otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                                successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                  errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -344,33 +344,33 @@
     };
     
     [params addEntriesFromDictionary:dic];
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_bind_phone params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_bind_phone params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 
 
 #pragma mark - sdk基本参数
-+ (NSDictionary *)appendCommParamsDic
++ (NSDictionary *)appendCommParamsDic_MMMethodMMM
 {
     NSDictionary * _commDic =
     @{
         // 公共的参数拼接
-        @"packageName"      :     [SUtil getBundleIdentifier],
-        @"adId"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
-        @"idfa"             :     [[SUtil getIdfa]       lowercaseString]? : @"",
-        @"uuid"             :     [[SUtil getGamaUUID]     lowercaseString]? : @"",
-        @"versionName"      :     [SUtil getBundleShortVersionString]? : @"",
-        @"versionCode"      :     [SUtil getBundleVersion]? : @"",
-        @"systemVersion"    :     [SUtil getSystemVersion]? : @"",
-        @"deviceType"       :     [SUtil getDeviceType]? : @"",
+        @"packageName"      :     [SUtil getBundleIdentifier_MMMethodMMM],
+        @"adId"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+        @"idfa"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+        @"uuid"             :     [[SUtil getGamaUUID_MMMethodMMM]     lowercaseString]? : @"",
+        @"versionName"      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
+        @"versionCode"      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
+        @"systemVersion"    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+        @"deviceType"       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
         @"os"               :     @"ios", //os=ios
         @"gameLanguage"     :     GAME_LANGUAGE? : @"",
-        @"osLanguage"       :     [SUtil getPreferredLanguage]? : @"",
+        @"osLanguage"       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
         
         //      @"loginTimestamp"   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
         //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
-        @"uniqueId"         :     [[SUtil getGamaUUID] lowercaseString]? : @"",
+        @"uniqueId"         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
         @"platform"       :   @"ios",
 //        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
@@ -381,10 +381,10 @@
 }
 
 #pragma mark - sdk基本参数 + 角色相关数值参数
-+ (NSDictionary *)appendGameParamsDic
++ (NSDictionary *)appendGameParamsDic_MMMethodMMM
 {
     
-    NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic]];
+    NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic_MMMethodMMM]];
     @try {
         
         AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
@@ -421,18 +421,18 @@
 }
 
 #pragma mark - 注册账号
-+(void)doRegisterAccountWithUserName:(NSString *)userName
-                         andPassword:(NSString *)password
-                       phoneAreaCode:(NSString *)phoneAreaCode
-                         phoneNumber:(NSString *)phoneN
-                              vfCode:(NSString *)vfCode
-                          interfaces:(NSString *)interfaces
-                      otherParamsDic:(NSDictionary *)otherParamsDic
-                        successBlock:(BJServiceSuccessBlock)successBlock
-                          errorBlock:(BJServiceErrorBlock)errorBlock
++(void)doRegisterAccountWithUserName_MMMethodMMM:(NSString *)userName
+                         andPassword_MMMethodMMM:(NSString *)password
+                       phoneAreaCode_MMMethodMMM:(NSString *)phoneAreaCode
+                         phoneNumber_MMMethodMMM:(NSString *)phoneN
+                              vfCode_MMMethodMMM:(NSString *)vfCode
+                          interfaces_MMMethodMMM:(NSString *)interfaces
+                      otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -440,15 +440,15 @@
     userName = !userName?@"":userName;
     userName = [userName lowercaseString];
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值
     NSMutableString * md5str=[[NSMutableString alloc]init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",GAME_CODE];
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
     
@@ -458,7 +458,7 @@
             @"timestamp"        :timeStamp,
             @"gameCode"         :GAME_CODE,
             @"loginId"          :userName,
-            @"password"         :[SUtil getMD5StrFromString:password],
+            @"password"         :[SUtil getMD5StrFromString_MMMethodMMM:password],
             @"phoneAreaCode"    :phoneAreaCode,
             @"phone"            :phoneN,
             @"vfCode"           :vfCode,
@@ -470,26 +470,26 @@
     }
     
     
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_login_register params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_login_register params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 
-+(void)doChangePasswordWithUserName:(NSString *)userName
-                     andOldPassword:(NSString *)oldPassword
-                     andNewPassword:(NSString *)newPassword
-                     otherParamsDic:(NSDictionary *)otherParamsDic
-                       successBlock:(BJServiceSuccessBlock)successBlock
-                         errorBlock:(BJServiceErrorBlock)errorBlock
++(void)doChangePasswordWithUserName_MMMethodMMM:(NSString *)userName
+                     andOldPassword_MMMethodMMM:(NSString *)oldPassword
+                     andNewPassword_MMMethodMMM:(NSString *)newPassword
+                     otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     userName = [userName lowercaseString];
     
     //获取md5加密的值gamesPojo.getAppKey() + timestamp + name + pwd + newPwd + gameCode;
@@ -497,10 +497,10 @@
     [md5str appendString:APP_KEY]; //AppKey
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendString:[[GamaFunction getMD5StrFromString:oldPassword] lowercaseString]]; //用户密码
-//    [md5str appendString:[[GamaFunction getMD5StrFromString:newPassword] lowercaseString]]; //新密码
+//    [md5str appendString:[[GamaFunction getMD5StrFromString_MMMethodMMM:oldPassword] lowercaseString]]; //用户密码
+//    [md5str appendString:[[GamaFunction getMD5StrFromString_MMMethodMMM:newPassword] lowercaseString]]; //新密码
     [md5str appendString:GAME_CODE]; //gamecode
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
     @try {
@@ -510,8 +510,8 @@
             @"gameCode"         :GAME_CODE,
             @"name"             :userName,
             @"loginId"          :userName,
-            @"oldPwd"           :[[SUtil getMD5StrFromString:oldPassword] lowercaseString],
-            @"newPwd"           :[[SUtil getMD5StrFromString:newPassword] lowercaseString],
+            @"oldPwd"           :[[SUtil getMD5StrFromString_MMMethodMMM:oldPassword] lowercaseString],
+            @"newPwd"           :[[SUtil getMD5StrFromString_MMMethodMMM:newPassword] lowercaseString],
             @"registPlatform"   :LOGIN_TYPE_SELF,
         };
         
@@ -521,32 +521,32 @@
         
     }
     
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_change_pwd params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_change_pwd params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 
-+(void)doForgotPasswordWithUserName:(NSString *)userName
-                     phoneAreaCode:(NSString *)phoneAreaCode
-                       phoneNumber:(NSString *)phoneN
-                             email:(NSString *)email
-                            vfCode:(NSString *)vfCode
-                        interfaces:(NSString *)interfaces
-                    otherParamsDic:(NSDictionary *)otherParamsDic
-                      successBlock:(BJServiceSuccessBlock)successBlock
-                        errorBlock:(BJServiceErrorBlock)errorBlock
++(void)doForgotPasswordWithUserName_MMMethodMMM:(NSString *)userName
+                     phoneAreaCode_MMMethodMMM:(NSString *)phoneAreaCode
+                       phoneNumber_MMMethodMMM:(NSString *)phoneN
+                             email_MMMethodMMM:(NSString *)email
+                            vfCode_MMMethodMMM:(NSString *)vfCode
+                        interfaces_MMMethodMMM:(NSString *)interfaces
+                    otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                      successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
     
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
     /*-----------获取参数----------*/
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     userName = userName?userName:@"";
     userName = [userName lowercaseString];
     email = [email lowercaseString];
@@ -556,7 +556,7 @@
     [md5str appendString:timeStamp]; //时间戳
     [md5str appendString:email]; //用户名
     [md5str appendString: GAME_CODE]; //gamecode
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
     
@@ -579,26 +579,26 @@
         
     }
     
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_forgot_pwd params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_forgot_pwd params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 
 #pragma mark - 绑定账号
-+ (void)doAccountBindingWithUserName:(NSString *)userName
-                            password:(NSString *)password
-                       phoneAreaCode:(NSString *)phoneAreaCode
-                         phoneNumber:(NSString *)phoneN
-                              vfCode:(NSString *)vfCode
-                               email:(NSString *)email
-                             thirdId:(NSString *)thirdId
-                          thirdPlate:(NSString *)thirdPlate
-                      otherParamsDic:(NSDictionary *)otherParamsDic
-                        successBlock:(BJServiceSuccessBlock)successBlock
-                          errorBlock:(BJServiceErrorBlock)errorBlock
++ (void)doAccountBindingWithUserName_MMMethodMMM:(NSString *)userName
+                            password_MMMethodMMM:(NSString *)password
+                       phoneAreaCode_MMMethodMMM:(NSString *)phoneAreaCode
+                         phoneNumber_MMMethodMMM:(NSString *)phoneN
+                              vfCode_MMMethodMMM:(NSString *)vfCode
+                               email_MMMethodMMM:(NSString *)email
+                             thirdId_MMMethodMMM:(NSString *)thirdId
+                          thirdPlate_MMMethodMMM:(NSString *)thirdPlate
+                      otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -606,18 +606,18 @@
     userName = [userName lowercaseString];
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",GAME_CODE];
 //    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
 //    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     @try {
         NSDictionary *dic = @{
@@ -626,7 +626,7 @@
             @"gameCode"         :GAME_CODE,
             @"name"             :userName,
             @"loginId"          :userName,
-            @"password"         :[[SUtil getMD5StrFromString:password] lowercaseString],
+            @"password"         :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
             @"thirdPlatId"      :thirdId,
             @"thirdLoginId"     :thirdId,
         
@@ -645,34 +645,34 @@
         
     }
     
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_bind_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_bind_account params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
-+ (void)requestDeleteUserAccount:(AccountModel *)accountMode
-                      otherParamsDic:(NSDictionary *)otherParamsDic
-                        successBlock:(BJServiceSuccessBlock)successBlock
-                          errorBlock:(BJServiceErrorBlock)errorBlock
++ (void)requestDeleteUserAccount_MMMethodMMM:(AccountModel *)accountMode
+                      otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     [md5str appendFormat:@"%@",accountMode.userId]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     [md5str appendFormat:@"%@",GAME_CODE];
 //    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
 //    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     @try {
         NSDictionary *dic = @{
@@ -700,28 +700,28 @@
         
     }
     
-    [HttpServiceEngineLogin postRequestWithFunctionPath:api_delete_account params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEngineLogin postRequestWithFunctionPath_MMMethodMMM:api_delete_account params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 #pragma mark - 創單
-+ (void)createOrderWithproductId:(NSString *)productId
-            cpOrderId:(NSString *)cpOrderId
-                extra:(NSString *)extra
-             gameInfo:(GameUserModel*)gameUserModel
-         accountModel:(AccountModel*) accountModel
-                      otherParamsDic:(NSDictionary *)otherParamsDic
-                        successBlock:(PayServiceSuccessBlock)successBlock
-                          errorBlock:(PayServiceErrorBlock)errorBlock
++ (void)createOrderWithproductId_MMMethodMMM:(NSString *)productId
+            cpOrderId_MMMethodMMM:(NSString *)cpOrderId
+                extra_MMMethodMMM:(NSString *)extra
+             gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
+         accountModel_MMMethodMMM:(AccountModel*) accountModel
+                      otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                        successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
@@ -729,12 +729,12 @@
     [md5str appendFormat:@"%@",accountModel.userId]; //用户名
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     
 //    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
 //    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     @try {
         NSDictionary *dic = @{
@@ -770,27 +770,27 @@
         NSLog(@"exception:%@",exception.description);
     }
     
-    [HttpServiceEnginePay postRequestWithFunctionPath:api_order_create params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_order_create params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
-+ (void)paymentWithTransactionId:(NSString *)transactionId
-                     receiptData:(NSString *)receiptData
-                         orderId:(NSString *)orderId
-                        gameInfo:(GameUserModel*)gameUserModel
-                    accountModel:(AccountModel*) accountModel
-                      otherParamsDic:(NSDictionary *)otherParamsDic
-                        successBlock:(PayServiceSuccessBlock)successBlock
-                          errorBlock:(PayServiceErrorBlock)errorBlock
++ (void)paymentWithTransactionId_MMMethodMMM:(NSString *)transactionId
+                     receiptData_MMMethodMMM:(NSString *)receiptData
+                         orderId_MMMethodMMM:(NSString *)orderId
+                        gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
+                    accountModel_MMMethodMMM:(AccountModel*) accountModel
+                      otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                        successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                          errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
     //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
     //获取时间戳
-    NSString * timeStamp=[SUtil getTimeStamp];
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
     NSMutableString * md5str=[[NSMutableString alloc] init];
     [md5str appendFormat:@"%@",APP_KEY]; //AppKey
@@ -798,12 +798,12 @@
     [md5str appendFormat:@"%@",accountModel.userId]; //用户名
     [md5str appendFormat:@"%@",timeStamp]; //时间戳
     
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString:password] lowercaseString]]; //用户密码
+//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     
 //    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
 //    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
-    NSString * md5SignStr=[SUtil getMD5StrFromString:md5str];
+    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     @try {
         NSDictionary *dic = @{
@@ -830,15 +830,15 @@
         NSLog(@"exception:%@",exception.description);
     }
     
-    [HttpServiceEnginePay postRequestWithFunctionPath:api_payment params:params successBlock:successBlock errorBlock:errorBlock];
+    [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_payment params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 
 
 #pragma mark - 通過url創建通用參數鏈接
-+(NSString *) createSdkUrl:(NSString *)url{
++(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url{
     
-    NSDictionary *temDic = [self appendGameParamsDic];
+    NSDictionary *temDic = [self appendGameParamsDic_MMMethodMMM];
     NSString *tempParams = @"";
    
     for (NSString * key in temDic) {

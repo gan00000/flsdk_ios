@@ -13,12 +13,12 @@
 @implementation NSString (Common)
 
 
-- (NSString*)stringEsclipeFromXEndX:(int)X
+- (NSString*)stringEsclipeFromXEndX_MMMethodMMM:(int)X
 {
     int strLegth = (int)self.length;
     return [NSString stringWithFormat:@"%@.%@",[self substringToIndex:(X>strLegth)?strLegth:X],[self substringFromIndex:((strLegth-X)>0)?(strLegth-X):0]];
 }
-- (NSString*)stringCutStringFrom:(NSString *)cutString
+- (NSString*)stringCutStringFrom_MMMethodMMM:(NSString *)cutString
 {
     NSRange tempStringRange = [self rangeOfString:cutString];
     if (tempStringRange.location == NSNotFound)
@@ -27,7 +27,7 @@
     }
     return [self substringFromIndex:tempStringRange.location + tempStringRange.length];
 }
-- (NSString*)stringCutStringTo:(NSString *)cutString
+- (NSString*)stringCutStringTo_MMMethodMMM:(NSString *)cutString
 {
     NSRange tempStringRange = [self rangeOfString:cutString options:NSBackwardsSearch];
     if (tempStringRange.location == NSNotFound)
@@ -36,7 +36,7 @@
     }
     return [self substringToIndex:tempStringRange.location];
 }
-- (NSString*)stringCutStringTo:(NSString *)cutString option:(NSStringCompareOptions)nsOption
+- (NSString*)stringCutStringTo_MMMethodMMM:(NSString *)cutString option_MMMethodMMM:(NSStringCompareOptions)nsOption
 {
     NSRange tempStringRange = [self rangeOfString:cutString options:nsOption];
     if (tempStringRange.location == NSNotFound)
@@ -46,7 +46,7 @@
     return [self substringToIndex:tempStringRange.location];
 }
 
-- (NSString*)stringToMd5
+- (NSString*)stringToMd5_MMMethodMMM
 {
     const char *cStr = [self UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
@@ -61,7 +61,7 @@
     return result;
 }
 
-- (BOOL)isContainString:(NSString *)string withOption:(NSStringCompareOptions)options
+- (BOOL)isContainString_MMMethodMMM:(NSString *)string withOption_MMMethodMMM:(NSStringCompareOptions)options
 {
     if (string == nil)
     {
@@ -72,13 +72,13 @@
     return rng.location != NSNotFound;
 }
 
-- (BOOL)isContainString:(NSString *)string
+- (BOOL)isContainString_MMMethodMMM:(NSString *)string
 {
-    return [self isContainString:string withOption:0];
+    return [self isContainString_MMMethodMMM:string withOption_MMMethodMMM:0];
 }
 
 
-- (int)numberTimesAtString:(NSString *)findStr
+- (int)numberTimesAtString_MMMethodMMM:(NSString *)findStr
 {
     int resultTimes = 0;
     
@@ -94,7 +94,7 @@
     return resultTimes;
 }
 
-- (NSString *)urlEncodeString
+- (NSString *)urlEncodeString_MMMethodMMM
 {
 //    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
 //                                                                           (CFStringRef)self,
@@ -103,6 +103,6 @@
 //                                                                           kCFStringEncodingUTF8);
 //    return result;
     
-    return [self urlEncode];
+    return [self urlEncode_MMMethodMMM];
 }
 @end

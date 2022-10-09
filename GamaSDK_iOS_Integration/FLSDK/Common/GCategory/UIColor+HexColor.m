@@ -10,12 +10,12 @@
 
 @implementation UIColor (HexColor)
 
-//+ (UIColor *)colorWithHexString:(NSString *)color
+//+ (UIColor *)colorWithHexString_MMMethodMMM:(NSString *)color
 //{
-//    return [self colorWithHexString:color andAlpha:1.0f];
+//    return [self colorWithHexString_MMMethodMMM:color andAlpha_MMMethodMMM:1.0f];
 //}
 
-//+ (UIColor *) colorWithHexString: (NSString *)color andAlpha:(CGFloat)alpha
+//+ (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color andAlpha_MMMethodMMM:(CGFloat)alpha
 //{
 //    NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
 //

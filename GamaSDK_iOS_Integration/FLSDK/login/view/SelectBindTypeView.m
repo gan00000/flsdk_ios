@@ -19,12 +19,12 @@
     UIView *appleBindView;
 }
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
         
-        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
         self.backgroundColor = color;// 底图透明，控件不透明
         self.layer.cornerRadius = 10; //设置圆角
         //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
@@ -32,7 +32,7 @@
         self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"綁定會員帳號" hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:@"綁定會員帳號" hander_MMMethodMMM:^(NSInteger) {
             
         }];
 //        mLoginTitleView.delegate = self.delegate;//此处不起作用
@@ -46,8 +46,8 @@
         }];
         
         
-//        UIButton *guestBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_GEUST) tag:kBindGuestActTag selector:@selector(registerViewBtnAction:)  target:self];
-        UIView *guestBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST) tag:kBindGuestActTag selector:@selector(registerViewBtnAction:) target:self];
+//        UIButton *guestBindBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_BIND_GEUST) tag_MMMethodMMM:kBindGuestActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
+        UIView *guestBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST) tag_MMMethodMMM:kBindGuestActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
            
         [self addSubview:guestBindBtn];
         
@@ -59,8 +59,8 @@
             make.width.mas_equalTo(mLoginTitleView);
         }];
         
-        //UIButton *fbBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:)  target:self];
-              UIView *fbBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB) tag:kBindFBActTag selector:@selector(registerViewBtnAction:) target:self];
+        //UIButton *fbBindBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_BIND_FB) tag_MMMethodMMM:kBindFBActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
+              UIView *fbBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB) tag_MMMethodMMM:kBindFBActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
               [self addSubview:fbBindBtn];
               
               [fbBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,8 +71,8 @@
               }];
               
         
-        //UIButton *appleBindBtn = [LoginButton initBtnWithType:(BUTTON_TYPE_BIND_APPLE) tag:kBindAppleActTag selector:@selector(registerViewBtnAction:)  target:self];
-//        UIView *appleBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE) tag:kBindAppleActTag selector:@selector(registerViewBtnAction:) target:self];
+        //UIButton *appleBindBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_BIND_APPLE) tag_MMMethodMMM:kBindAppleActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
+//        UIView *appleBindBtn = [[SDKIconTitleButton alloc] initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE) tag_MMMethodMMM:kBindAppleActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 //
 //        [self addSubview:appleBindBtn];
 //
@@ -91,7 +91,7 @@
             appleBindView.backgroundColor = [UIColor blackColor];
             
             appleBindView.userInteractionEnabled = YES; // 可以理解为设置label可被点击
-            UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(appleViewTapped:)];
+            UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(appleViewTapped_MMMethodMMM:)];
             [appleBindView addGestureRecognizer:tapGr];
             
             [self addSubview:appleBindView];
@@ -105,7 +105,7 @@
                ASAuthorizationAppleIDButton *appleBindBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
             
-            [appleBindBtn addTarget:self action:@selector(registerViewBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
+            [appleBindBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
             appleBindBtn.tag = kBindAppleActTag;
             [appleBindView addSubview:appleBindBtn];
                
@@ -143,17 +143,17 @@
     return self;
 }
 
--(void)appleViewTapped:(UITapGestureRecognizer*)tapGr
+-(void)appleViewTapped_MMMethodMMM:(UITapGestureRecognizer*)tapGr
 {
     SDK_LOG(@"appleViewTapped");
     UIButton *xButton = [[UIButton alloc] init];
     xButton.tag = kBindAppleActTag;
-    [self registerViewBtnAction:xButton];
+    [self registerViewBtnAction_MMMethodMMM:xButton];
 }
 
 
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
         switch (sender.tag) {
             case kBindAppleActTag:
@@ -162,7 +162,7 @@
                 if (@available(iOS 13, *)) {
                                 
                   }else{
-                     [AlertUtil showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+                     [AlertUtil showAlertWithMessage_MMMethodMMM:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
                       return;
                   }
             }
@@ -183,7 +183,7 @@
     
     
     if (self.delegate) {
-        [self.delegate goPageView:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) from:(CURRENT_PAGE_TYPE_SELECT_BIND_TYPE) param:@(sender.tag)];
+        [self.delegate goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) from_MMMethodMMM:(CURRENT_PAGE_TYPE_SELECT_BIND_TYPE) param_MMMethodMMM:@(sender.tag)];
     }
 }
 @end

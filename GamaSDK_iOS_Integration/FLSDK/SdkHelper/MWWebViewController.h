@@ -29,23 +29,23 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 /**
  webView后退
  */
-- (void)webGoBack;
+- (void)webGoBack_MMMethodMMM;
 /**
  webView前进
  */
-- (void)webGoForward;
+- (void)webGoForward_MMMethodMMM;
 /**
  webView重载
  */
-- (void)webReload;
+- (void)webReload_MMMethodMMM;
 /**
  关闭webView
  */
-- (void)webClose;
+- (void)webClose_MMMethodMMM;
 /**
  webView载入某链接请求
  */
-- (void)webLoadURLRequest:(NSURLRequest *)request;
+- (void)webLoadURLRequest_MMMethodMMM:(NSURLRequest *)request;
 /**
  @description 初始化一个WebViewController。注意：webView在iOS8或以上采用WKWebView，其它版本采用xxWebView，且不要直接在GamaWebLayoutHandler返回的webView上操作。
  
@@ -55,7 +55,7 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
  
  @return 初始化完毕的实例化对象。
  */
-- (instancetype)initWithWebLayoutHandler:(MWWebLayoutHandler)handler animation:(BOOL)animation NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation NS_DESIGNATED_INITIALIZER;
 
 /**
  @description 生成一个WebViewController并且使用rootViewController上的顶层presentedViewController来present出来。注意：webView在iOS8或以上采用WKWebView，其它版本采用xxWebView，且不要直接在EFWebLayoutHandler返回的webView上操作。
@@ -70,9 +70,9 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
  
  @return 实例化对象。
  */
-+ (instancetype)webViewControllerPresentingWithURLRequest:(NSURLRequest *)request
-                                            layoutHandler:(MWWebLayoutHandler)handler
-                                                animation:(BOOL)animation
-                                           animationStyle:(UIModalTransitionStyle)animationStyle;
++ (instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request
+                                            layoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler
+                                                animation_MMMethodMMM:(BOOL)animation
+                                           animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle;
 
 @end

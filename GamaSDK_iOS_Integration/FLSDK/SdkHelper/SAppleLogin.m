@@ -99,7 +99,7 @@
         NSLog(@"mStr：%@", mStr);
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation:@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""}];
+            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""}];
             self.impSuccess(@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""});
         });
     } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
@@ -114,7 +114,7 @@
         [mStr appendString:@"\n"];
         NSLog(@"mStr：%@", mStr);
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation:@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""}];
+            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""}];
             self.impSuccess(@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""});
         });
 
@@ -125,7 +125,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.impError(error);
         });
-        [AlertUtil showAlertWithMessage:mStr];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:mStr];
 
     }
 }
@@ -158,7 +158,7 @@
 //    NSMutableString *mStr = [NSMutableString string];
 //    [mStr appendString:errorMsg];
 //    [mStr appendString:@"\n"];
-//    [AlertUtil showAlertWithMessage:mStr];
+//    [AlertUtil showAlertWithMessage_MMMethodMMM:mStr];
 //
 //
 //    if (errorMsg) {
@@ -169,7 +169,7 @@
 //        NSMutableString *mStr = [NSMutableString string];
 //        [mStr appendString:error.localizedDescription];
 //        [mStr appendString:@"\n"];
-//        [AlertUtil showAlertWithMessage:mStr];
+//        [AlertUtil showAlertWithMessage_MMMethodMMM:mStr];
 //
 //    }
 //    NSLog(@"controller requests：%@", controller.authorizationRequests);
@@ -195,15 +195,15 @@
     return appTopViewController.view.window;
 }
 
-//- (void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
+//- (void)viewDidAppear_MMMethodMMM:(BOOL)animated {
+//    [super viewDidAppear_MMMethodMMM:animated];
 //
-//    [self perfomExistingAccountSetupFlows];
+//    [self perfomExistingAccountSetupFlows_MMMethodMMM];
 //}
 
 //! Prompts the user if an existing iCloud Keychain credential or Apple ID credential is found.
 //! 如果存在iCloud Keychain 凭证或者AppleID 凭证提示用户
-- (void)perfomExistingAccountSetupFlows {
+- (void)perfomExistingAccountSetupFlows_MMMethodMMM {
     if (@available(iOS 13.0, *)) {
         // A mechanism for generating requests to authenticate users based on their Apple ID.
         // 基于用户的Apple ID授权用户，生成用户授权请求的一种机制
@@ -244,15 +244,15 @@
 }
 
 //! 添加苹果登录的状态通知
-- (void)observeAppleSignInState {
+- (void)observeAppleSignInState_MMMethodMMM {
     if (@available(iOS 13.0, *)) {
         NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(handleSignInWithAppleStateChanged:) name:ASAuthorizationAppleIDProviderCredentialRevokedNotification object:nil];
+        [center addObserver:self selector:@selector(handleSignInWithAppleStateChanged_MMMethodMMM:) name:ASAuthorizationAppleIDProviderCredentialRevokedNotification object:nil];
     }
 }
 
 //! 观察SignInWithApple状态改变
-- (void)handleSignInWithAppleStateChanged:(id)noti {
+- (void)handleSignInWithAppleStateChanged_MMMethodMMM:(id)noti {
 
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", noti);
@@ -260,7 +260,7 @@
 
 #pragma mark - Private functions
 //! 观察授权状态
-- (void)observeAuthticationState {
+- (void)observeAuthticationState_MMMethodMMM {
 
     if (@available(iOS 13.0, *)) {
         // A mechanism for generating requests to authenticate users based on their Apple ID.
@@ -302,8 +302,8 @@
 
 
 
--(void)makeAppleCallbackSuccessBlock:(AppleLoginSuccess)successBlock
-                                andErrorBlock:(AppleLoginError)errorBlock
+-(void)makeAppleCallbackSuccessBlock_MMMethodMMM:(AppleLoginSuccess)successBlock
+                                andErrorBlock_MMMethodMMM:(AppleLoginError)errorBlock
 {
 //    SAppleLogin *temp = [[SAppleLogin alloc] init];
     self.impSuccess = successBlock;
@@ -312,13 +312,13 @@
 }
 
 
-- (void)autoLoginAppleAccountWithInformation{
-    NSDictionary *tempDic = [self fetchAppleLoginInfo];
+- (void)autoLoginAppleAccountWithInformation_MMMethodMMM{
+    NSDictionary *tempDic = [self fetchAppleLoginInfo_MMMethodMMM];
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
     NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
     [tempMutableDic removeObjectForKey:@"appleThirdID"];
 //    [GamaThirdFunctionPort thirdLoginWithThirdId:appleID
-//                                  andThirdPlate:@"apple"
+//                                  andThirdPlate_MMMethodMMM:@"apple"
 //                                        andApps:@""
 //                               andBusinessToken:nil
 //                         andThirdAdditionParams:tempMutableDic
@@ -328,12 +328,12 @@
 //                                  }];
 }
 
-- (void)saveAppleLastLoginSuccessWithInformation:(NSDictionary*)info{
+- (void)saveAppleLastLoginSuccessWithInformation_MMMethodMMM:(NSDictionary*)info{
     [[NSUserDefaults standardUserDefaults] setObject:info forKey:@"GameswordAppleTmp"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSDictionary *)fetchAppleLoginInfo
+- (NSDictionary *)fetchAppleLoginInfo_MMMethodMMM
 {
     NSDictionary *infoDic = [[NSUserDefaults standardUserDefaults] objectForKey:@"GameswordAppleTmp"];
     return infoDic;

@@ -14,7 +14,7 @@
 
 
 //创建一个代理对象，设置回调方法
-+(SAlertViewDelegate *)creatDelegateWithBack:(SAlertViewHandler)oneHandler
++(SAlertViewDelegate *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler
 {
     SAlertViewDelegate * alertViewDelegate=[[SAlertViewDelegate alloc]init];
     alertViewDelegate.handler=oneHandler;
@@ -22,7 +22,7 @@
 }
 
 //用户点击了按钮以后
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+-(void)alertView_MMMethodMMM:(UIAlertView *)alertView clickedButtonAtIndex_MMMethodMMM:(NSInteger)buttonIndex
 {
     if (handler)
     {
@@ -32,7 +32,7 @@
    
 }
 
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)actionSheet_MMMethodMMM:(UIActionSheet *)actionSheet clickedButtonAtIndex_MMMethodMMM:(NSInteger)buttonIndex
 {
     if (handler)
     {

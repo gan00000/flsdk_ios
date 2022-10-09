@@ -9,7 +9,7 @@
 #import "UIColor+HexStringToColorTW.h"
 
 @implementation UIColor (HexStringToColorTW)
-+ (UIColor *)colorWithHexString:(NSString *)color
++ (UIColor *)colorWithHexString_MMMethodMMM:(NSString *)color
 {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
@@ -57,12 +57,12 @@
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
 
-//+ (UIColor *)colorWithHexString:(NSString *)color
+//+ (UIColor *)colorWithHexString_MMMethodMMM:(NSString *)color
 //{
-//    return [self colorWithHexString:color andAlpha:1.0f];
+//    return [self colorWithHexString_MMMethodMMM:color andAlpha_MMMethodMMM:1.0f];
 //}
 
-+ (UIColor *) colorWithHexString: (NSString *)color andAlpha:(CGFloat)alpha
++ (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color andAlpha_MMMethodMMM:(CGFloat)alpha
 {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     

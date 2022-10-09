@@ -5,11 +5,11 @@ static char kActionHandlerTapGestureKey;
 static char kActionHandlerLongPressBlockKey;
 static char kActionHandlerLongPressGestureKey;
 @implementation UIView (BlockGesture)
-- (void)addTapActionWithBlock:(GestureActionBlock)block {
+- (void)addTapActionWithBlock_MMMethodMMM:(GestureActionBlock)block {
     UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerTapGestureKey);
     if (!gesture)
     {
-        gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
+        gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture_MMMethodMMM:)];
         [self addGestureRecognizer:gesture];
         objc_setAssociatedObject(self, &kActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
     }
@@ -17,7 +17,7 @@ static char kActionHandlerLongPressGestureKey;
     [gesture setDelaysTouchesBegan:YES];
     objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
-- (void)handleActionForTapGesture:(UITapGestureRecognizer*)gesture {
+- (void)handleActionForTapGesture_MMMethodMMM:(UITapGestureRecognizer*)gesture {
     if (gesture.state == UIGestureRecognizerStateRecognized)
     {
         GestureActionBlock block = objc_getAssociatedObject(self, &kActionHandlerTapBlockKey);
@@ -27,17 +27,17 @@ static char kActionHandlerLongPressGestureKey;
         }
     }
 }
-- (void)addLongPressActionWithBlock:(GestureActionBlock)block {
+- (void)addLongPressActionWithBlock_MMMethodMMM:(GestureActionBlock)block {
     UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerLongPressGestureKey);
     if (!gesture)
     {
-        gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForLongPressGesture:)];
+        gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForLongPressGesture_MMMethodMMM:)];
         [self addGestureRecognizer:gesture];
         objc_setAssociatedObject(self, &kActionHandlerLongPressGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
     }
     objc_setAssociatedObject(self, &kActionHandlerLongPressBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
-- (void)handleActionForLongPressGesture:(UITapGestureRecognizer*)gesture {
+- (void)handleActionForLongPressGesture_MMMethodMMM:(UITapGestureRecognizer*)gesture {
     if (gesture.state == UIGestureRecognizerStateRecognized)
     {
         GestureActionBlock block = objc_getAssociatedObject(self, &kActionHandlerLongPressBlockKey);

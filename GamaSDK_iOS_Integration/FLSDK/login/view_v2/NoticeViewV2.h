@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NoticeViewV2 : SDKBaseView
-- (instancetype)initWithCompleter:(void (^)(void))completer;
+- (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer;
 
 @end
 

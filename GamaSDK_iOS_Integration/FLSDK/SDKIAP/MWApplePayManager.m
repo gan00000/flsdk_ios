@@ -27,32 +27,32 @@
 
 @implementation MWApplePayManager
 
-+ (instancetype)shareManager
++ (instancetype)shareManager_MMMethodMMM
 {
     static dispatch_once_t onceToken;
     static MWApplePayManager *manager = nil;
     dispatch_once(&onceToken, ^{
         manager = [[MWApplePayManager alloc]init];
-        [manager initManager];
+        [manager initManager_MMMethodMMM];
     });
     return manager;
 }
 
 - (void)dealloc{
-    [self removeTransactionObserver];
+    [self removeTransactionObserver_MMMethodMMM];
 }
 
-- (void)initManager
+- (void)initManager_MMMethodMMM
 {
     SDK_LOG(@"-addTransactionObserver");
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
 /** 检测客户端与服务器漏单情况处理*/
-- (void)checkOrderStatus
+- (void)checkOrderStatus_MMMethodMMM
 {
     SDK_LOG(@"checkOrderStatus 检测客户端与服务器漏单情况处理");
-    NSDictionary *orderInfoDic = [self getLocalReceiptData];
+    NSDictionary *orderInfoDic = [self getLocalReceiptData_MMMethodMMM];
     if (orderInfoDic != nil) {
         
         for (id keyObj in orderInfoDic) {
@@ -69,10 +69,10 @@
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderId);
-            [SDKRequest paymentWithTransactionId:transactionId receiptData:receiptData orderId:orderId gameInfo:SDK_DATA.gameUserModel accountModel:SDK_DATA.mLoginResponse.data otherParamsDic:nil successBlock:^(id responseData) {
+            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderId);
-                [self removeLocReceiptDataByTranId:transactionId];
-            } errorBlock:^(BJError *error) {
+                [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
+            } errorBlock_MMMethodMMM:^(BJError *error) {
                 SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderId);
             }];
         }
@@ -80,7 +80,7 @@
 }
 
 #pragma mark -- 结束上次未完成的交易
--(void)removeAllUncompleteTransactionsBeforeNewPurchase{
+-(void)removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM{
     
     NSArray* transactions = [SKPaymentQueue defaultQueue].transactions;
     
@@ -98,50 +98,50 @@
 }
 
 
--(void)startPayWithProductId:(NSString *)productId cpOrderId:(NSString *)cpOrderId extra:(NSString *)extra gameInfo:(GameUserModel*)gameUserModel accountModel:(AccountModel*) accountModel payStatusBlock:(PayStatusBlock)payStatusBlock
+-(void)startPayWithProductId_MMMethodMMM:(NSString *)productId cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel accountModel_MMMethodMMM:(AccountModel*) accountModel payStatusBlock_MMMethodMMM:(PayStatusBlock)payStatusBlock
 {
     
-    [SdkUtil showLoadingAtView:nil];
+    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     
     self.payStatusBlock = payStatusBlock;
   
-    [self checkOrderStatus];//检查本地订单状态
+    [self checkOrderStatus_MMMethodMMM];//检查本地订单状态
     
     self.orderId = @"";
     self.mPayData = [[PayData alloc] init];
     
     if (!cpOrderId || !productId) {
-        [self finishPayWithStatus:NO msg:@"error:cpOrderId/productId empty"];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@"error:cpOrderId/productId empty"];
         return;
     }
     self.mPayData.productId = productId;
     self.mPayData.cpOrderId = cpOrderId;
 
     
-    //[SdkUtil showLoadingAtView:nil];
-    [SDKRequest createOrderWithproductId:productId cpOrderId:cpOrderId extra:extra gameInfo:gameUserModel accountModel:accountModel otherParamsDic:nil successBlock:^(id responseData) {
+    //[SdkUtil showLoadingAtView_MMMethodMMM:nil];
+    [SDKRequest createOrderWithproductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
         self.orderId = cor.orderId;
         self.mPayData.amount = cor.amount;
 //        self.roleId = gameUserModel.roleID;
         
-        [self payWithOrderId:self.orderId productId:productId];
-    } errorBlock:^(BJError *error) {
-        [self finishPayWithStatus:NO msg:error.message];
+        [self payWithOrderId_MMMethodMMM:self.orderId productId_MMMethodMMM:productId];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:error.message];
     }];
     
 }
 
 
 /** 检测权限 添加支付监测 开始支付流程*/
-- (void)payWithOrderId:(NSString *)orderId
-                        productId:(NSString *)productId
+- (void)payWithOrderId_MMMethodMMM:(NSString *)orderId
+                        productId_MMMethodMMM:(NSString *)productId
 
 {
     
     if (orderId == nil || productId == nil) {
-        [self finishPayWithStatus:NO msg:@"error:orderId/productId empty"];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@"error:orderId/productId empty"];
         return;
     }
     
@@ -152,18 +152,18 @@
     SDK_LOG(@"-SKPaymentQueue canMakePayments]");
     if([SKPaymentQueue canMakePayments]){
         
-        [self removeAllUncompleteTransactionsBeforeNewPurchase];
+        [self removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM];
         self.orderId = orderId;
-        [self requestProductData:productId];
+        [self requestProductData_MMMethodMMM:productId];
         
     }else{
-        [self finishPayWithStatus:NO msg:(@"請打開應用內購功能")];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"請打開應用內購功能")];
     }
 }
 
 /** 去Apple IAP Service 根据商品ID请求商品信息*/
 #pragma mark -根据商品ID请求商品信息
-- (void)requestProductData:(NSString *)productId{
+- (void)requestProductData_MMMethodMMM:(NSString *)productId{
     
     NSArray *product = [[NSArray alloc] initWithObjects:productId,nil];
     
@@ -175,7 +175,7 @@
 }
 
 #pragma mark -请求付款
-- (void)requestPament:(SKProduct *)p {
+- (void)requestPament_MMMethodMMM:(SKProduct *)p {
     
     SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:p];
 //    payment.quantity = (NSInteger)p.price;//购买次数=价钱
@@ -183,8 +183,8 @@
 //        payment.quantity = 1;
 //    }
     //設置用戶信息
-    if ([SUtil getSystemVersion].intValue>7){
-        payment.applicationUsername = self.orderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager] getUID]];
+    if ([SUtil getSystemVersion_MMMethodMMM].intValue>7){
+        payment.applicationUsername = self.orderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager_MMMethodMMM] getUID]];
     }
     SDK_LOG(@"发起付款-addPayment");
     [[SKPaymentQueue defaultQueue] addPayment:payment];
@@ -199,7 +199,7 @@
         
         NSArray *product = response.products;
         if([product count] == 0){
-            [self finishPayWithStatus:NO msg:(@"無法獲取商品信息，請重新嘗試購買")];
+            [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"無法獲取商品信息，請重新嘗試購買")];
             return;
         }
         
@@ -207,7 +207,7 @@
         
         SKProduct *p = product.firstObject;
         
-        [self requestPament:p];
+        [self requestPament_MMMethodMMM:p];
 
     });
     
@@ -217,14 +217,14 @@
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{ //system_method
     SDK_LOG(@"------------------错误didFailWithError-----------------:%@", error);
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self finishPayWithStatus:NO msg:(@"从Apple获取商品信息失败")];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"从Apple获取商品信息失败")];
 
     });
 }
 
 - (void)requestDidFinish:(SKRequest *)request{//system_method
     SDK_LOG(@"------------反馈信息结束requestDidFinish-----------------%@",request);
-//    [SdkUtil stopLoadingAtView:nil];
+//    [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
 }
 
 #pragma mark -- 监听AppStore支付状态
@@ -239,7 +239,7 @@
             switch (tran.transactionState) {
                 case SKPaymentTransactionStatePurchased:
                 {
-                    [self handleTransaction:tran];
+                    [self handleTransaction_MMMethodMMM:tran];
 //                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
                 }
                     break;
@@ -249,26 +249,26 @@
                 case SKPaymentTransactionStateRestored:
                 {
                     SDK_LOG(@"已经购买过商品");
-                    [self completeTransaction:tran];
-                    [self finishPayWithStatus:NO msg:@""];
+                    [self completeTransaction_MMMethodMMM:tran];
+                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@""];
                 }
                     break;
                 case SKPaymentTransactionStateFailed:
                 {
                     SDK_LOG(@"交易失败:%@",tran.error);
-                    [self completeTransaction:tran];
-                    [self finishPayWithStatus:NO msg:@""];
+                    [self completeTransaction_MMMethodMMM:tran];
+                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@""];
                 }
                     break;
                 case SKPaymentTransactionStateDeferred:
                 {
-//                    [self completeTransaction:tran];
-//                    [self finishPayWithStatus:NO msg:(@"最终状态未确定")];
+//                    [self completeTransaction_MMMethodMMM:tran];
+//                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"最终状态未确定")];
                 }
                     break;
                 default:
-                    [self completeTransaction:tran];
-                    [self finishPayWithStatus:NO msg:@""];
+                    [self completeTransaction_MMMethodMMM:tran];
+                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@""];
                     break;
             }
         }
@@ -277,15 +277,15 @@
 }
 
 #pragma mark -- 验证
--(void)handleTransaction:(SKPaymentTransaction *)transaction
+-(void)handleTransaction_MMMethodMMM:(SKPaymentTransaction *)transaction
 {
     
     NSString *transactionId = transaction.transactionIdentifier;
     
-    if ([StringUtil isEmpty:transactionId]) {
+    if ([StringUtil isEmpty_MMMethodMMM:transactionId]) {
         
-        [self completeTransaction:transaction];
-        [self finishPayWithStatus:NO msg:@"transactionId is empty"];
+        [self completeTransaction_MMMethodMMM:transaction];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@"transactionId is empty"];
         return;
     }
     
@@ -299,7 +299,7 @@
     
     NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
     
-    [self saveReceiptData:receiptString transactionId:transactionId orderId:self.orderId];
+    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.orderId];
     
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
     
@@ -310,24 +310,24 @@
     {
         parameterStr = self.orderId;
     }
-    [SdkUtil showLoadingAtView:nil];
-    [SDKRequest paymentWithTransactionId:transactionId receiptData:receiptString orderId:parameterStr gameInfo:SDK_DATA.gameUserModel accountModel:SDK_DATA.mLoginResponse.data otherParamsDic:nil successBlock:^(id responseData) {
-        [self completeTransaction:transaction];// 结束订单
-        [self removeLocReceiptDataByTranId:transactionId];
+    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
+    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [self completeTransaction_MMMethodMMM:transaction];// 结束订单
+        [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;
-        [self finishPayWithStatus:YES msg:@""];
+        [self finishPayWithStatus_MMMethodMMM:YES msg_MMMethodMMM:@""];
         
-    } errorBlock:^(BJError *error) {
-        [self completeTransaction:transaction];
-        [self finishPayWithStatus:NO msg:error.message];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [self completeTransaction_MMMethodMMM:transaction];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:error.message];
     }];
     
 }
 
 //失败处理
-- (void)finishPayWithStatus:(BOOL)status msg:(NSString *)msg
+- (void)finishPayWithStatus_MMMethodMMM:(BOOL)status msg_MMMethodMMM:(NSString *)msg
 {
-    [SdkUtil stopLoadingAtView:nil];
+    [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
     
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
@@ -338,8 +338,8 @@
         }
     }else{
         SDK_LOG(@"finishPayWithStatus fail");
-        if ([StringUtil isNotEmpty:msg]) {
-            [AlertUtil showAlertWithMessage:msg];
+        if ([StringUtil isNotEmpty_MMMethodMMM:msg]) {
+            [AlertUtil showAlertWithMessage_MMMethodMMM:msg];
         }
         if (self.payStatusBlock) {
             self.payStatusBlock(status,nil);
@@ -350,14 +350,14 @@
 }
 
 //交易结束
-- (void)completeTransaction:(SKPaymentTransaction *)transaction
+- (void)completeTransaction_MMMethodMMM:(SKPaymentTransaction *)transaction
 {
-    [SdkUtil stopLoadingAtView:nil];
+    [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
     //需要完成才能下次购买
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
-- (void)removeTransactionObserver
+- (void)removeTransactionObserver_MMMethodMMM
 {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
 }
@@ -369,9 +369,9 @@ static NSString *const kSaveReceiptData_orderId = @"kSaveReceiptData_orderId";
 static NSString *const kSaveReceiptData_transactionId = @"kSaveReceiptData_transactionId";
 static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
 
-- (void)saveReceiptData:(NSString *)receiptData transactionId:(NSString *)transactionId orderId:(NSString *)orderId
+- (void)saveReceiptData_MMMethodMMM:(NSString *)receiptData transactionId_MMMethodMMM:(NSString *)transactionId orderId_MMMethodMMM:(NSString *)orderId
 {
-    NSDictionary *localPayDataDic = [self getLocalReceiptData];
+    NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
     if (localPayDataDic) {
         NSDictionary *subDic = localPayDataDic[transactionId];
         if (subDic) {
@@ -388,15 +388,15 @@ static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
-- (NSDictionary *)getLocalReceiptData
+- (NSDictionary *)getLocalReceiptData_MMMethodMMM
 {
     return [[NSUserDefaults standardUserDefaults] valueForKey:kSaveReceiptData];
 }
 
-- (void)removeLocReceiptDataByTranId:(NSString *)transactionId
+- (void)removeLocReceiptDataByTranId_MMMethodMMM:(NSString *)transactionId
 {
     
-    NSDictionary *localPayDataDic = [self getLocalReceiptData];
+    NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
     if (localPayDataDic) {
         NSDictionary *subDic = localPayDataDic[transactionId];
         if (subDic) {

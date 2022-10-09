@@ -14,9 +14,9 @@
 
 @interface AdLogger : NSObject
 
-+ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary *)parameters;
++ (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary *)parameters;
 
-+ (void)logWithEventName:(NSString *)eventName parameters:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
++ (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type;
 
-+ (void)logServerWithEventName_Install;
++ (void)logServerWithEventName_Install_MMMethodMMM;
 @end

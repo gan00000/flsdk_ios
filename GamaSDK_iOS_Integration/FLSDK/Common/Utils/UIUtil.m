@@ -13,7 +13,7 @@
 
 #pragma mark - UI
 
-+(UIImageView*)initImageViewWithImage:(NSString *)imageName
++(UIImageView*)initImageViewWithImage_MMMethodMMM:(NSString *)imageName
 {
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:GetImage(imageName)];
@@ -21,29 +21,29 @@
     return imageView;
 }
 
-+(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor *)textColor
++(UILabel*)initLabelWithText_MMMethodMMM:(NSString *)text fontSize_MMMethodMMM:(CGFloat)size textColor_MMMethodMMM:(UIColor *)textColor
 {
     UILabel *mLable = [[UILabel alloc] init];
     mLable.text =  text;
     mLable.font = [UIFont systemFontOfSize:size];
 //    mLable.textAlignment = NSTextAlignmentLeft;
     mLable.numberOfLines = 1;
-    mLable.textColor = textColor;//[UIColor colorWithHexString:@"#C0C0C0"];
+    mLable.textColor = textColor;//[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     
     return mLable;
     
 }
 
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                   selectedImageName:(NSString *)selectedImageName
-                           titleText:(NSString *)titleText
-                            fontSize:(CGFloat)size
-                           textColor:(UIColor *)textColor
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                   selectedImageName_MMMethodMMM:(NSString *)selectedImageName
+                           titleText_MMMethodMMM:(NSString *)titleText
+                            fontSize_MMMethodMMM:(CGFloat)size
+                           textColor_MMMethodMMM:(UIColor *)textColor
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target
+                              target_MMMethodMMM:(id)target
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -76,53 +76,53 @@
     return btn;
 }
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                   selectedImageName:(NSString *)selectedImageName
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                   selectedImageName_MMMethodMMM:(NSString *)selectedImageName
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target
+                              target_MMMethodMMM:(id)target
 {
     
-    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName selectedImageName:selectedImageName titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
+    return [self initBtnWithNormalImage_MMMethodMMM:normalImageName highlightedImage_MMMethodMMM:highlightedImageName selectedImageName_MMMethodMMM:selectedImageName titleText_MMMethodMMM:nil fontSize_MMMethodMMM:14 textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
 
 }
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target
+                              target_MMMethodMMM:(id)target
 {
-    return [self initBtnWithNormalImage:normalImageName highlightedImage:highlightedImageName selectedImageName:nil titleText:nil fontSize:14 textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
+    return [self initBtnWithNormalImage_MMMethodMMM:normalImageName highlightedImage_MMMethodMMM:highlightedImageName selectedImageName_MMMethodMMM:nil titleText_MMMethodMMM:nil fontSize_MMMethodMMM:14 textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
 }
 
-+ (UIButton *)initBtnWithTitleText:(NSString *)titleText
-                          fontSize:(CGFloat)size
-                         textColor:(UIColor *)textColor
-                               tag:(NSUInteger)tag
++ (UIButton *)initBtnWithTitleText_MMMethodMMM:(NSString *)titleText
+                          fontSize_MMMethodMMM:(CGFloat)size
+                         textColor_MMMethodMMM:(UIColor *)textColor
+                               tag_MMMethodMMM:(NSUInteger)tag
                           selector:(SEL)selector
-                            target:(id)target
+                            target_MMMethodMMM:(id)target
 {
-    return [self initBtnWithNormalImage:nil highlightedImage:nil selectedImageName:nil titleText:titleText fontSize:size textColor:textColor tag:tag selector:selector target:target];
+    return [self initBtnWithNormalImage_MMMethodMMM:nil highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:nil titleText_MMMethodMMM:titleText fontSize_MMMethodMMM:size textColor_MMMethodMMM:textColor tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
 }
 
-+ (UIButton *)initBtnWithTitleText:(NSString *)titleText
-                          fontSize:(CGFloat)size
-                         textColor:(UIColor *)textColor{
++ (UIButton *)initBtnWithTitleText_MMMethodMMM:(NSString *)titleText
+                          fontSize_MMMethodMMM:(CGFloat)size
+                         textColor_MMMethodMMM:(UIColor *)textColor{
     
-    return [self initBtnWithNormalImage:nil highlightedImage:nil selectedImageName:nil titleText:titleText fontSize:size textColor:textColor tag:0 selector:nil target:nil];
+    return [self initBtnWithNormalImage_MMMethodMMM:nil highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:nil titleText_MMMethodMMM:titleText fontSize_MMMethodMMM:size textColor_MMMethodMMM:textColor tag_MMMethodMMM:0 selector:nil target_MMMethodMMM:nil];
 }
 
 //+ (UIButton *)initBtnWithTitle2:(NSString *)titleText
-//                            tag:(NSUInteger)tag
+//                            tag_MMMethodMMM:(NSUInteger)tag
 //                       selector:(SEL)selector
-//                         target:(id)target
+//                         target_MMMethodMMM:(id)target
 //{
 //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
 //    [btn setTitle:titleText forState:0];
 //    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-//    [btn setTitleColor:[UIColor colorWithHexString:@"#777777"] forState:0];
+//    [btn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#777777"] forState:0];
 //    [btn setTag:tag];
 //    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
 //    //[btn.layer setBorderWidth:1.5f];
@@ -134,9 +134,9 @@
 //}
 
 //+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
-//                              tag:(NSUInteger)tag
+//                              tag_MMMethodMMM:(NSUInteger)tag
 //                         selector:(SEL)selector
-//                           target:(id)target
+//                           target_MMMethodMMM:(id)target
 //{
 //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [btn setTitle:titleText forState:UIControlStateNormal];
@@ -160,7 +160,7 @@
 //    return btn;
 //}
 
-+(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg
++(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg
 {
     UIAlertController *mAlert = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:(UIAlertControllerStyleAlert)];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
@@ -178,7 +178,7 @@
     
 }
 
-+(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg okHandler:(void (^ __nullable)(UIAlertAction *action))handler
++(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg okHandler_MMMethodMMM:(void (^ __nullable)(UIAlertAction *action))handler
 {
     UIAlertController *mAlert = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:(UIAlertControllerStyleAlert)];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
@@ -200,10 +200,10 @@
 //        return [R2SDKPlat shareR2SDK].sdkPresentedVC;
 //    }else
 //    {
-//      return  [GamaFunction getCurrentViewController];
+//      return  [GamaFunction getCurrentViewController_MMMethodMMM];
 //    }
 //    
-//     return  [GamaFunction getCurrentViewController];
+//     return  [GamaFunction getCurrentViewController_MMMethodMMM];
 //}
 
 @end

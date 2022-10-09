@@ -11,8 +11,8 @@
 @interface UIColor (HexColor)
 
 // 颜色转换：iOS中（以#开头）十六进制的颜色转换为UIColor(RGB)
-//+ (UIColor *) colorWithHexString: (NSString *)color;
+//+ (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color;
 // 加上 alpha 值
-//+ (UIColor *) colorWithHexString: (NSString *)color andAlpha:(CGFloat)alpha;
+//+ (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color andAlpha_MMMethodMMM:(CGFloat)alpha;
 
 @end

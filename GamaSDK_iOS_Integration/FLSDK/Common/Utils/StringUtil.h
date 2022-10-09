@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StringUtil : NSObject
 
 
-+(BOOL) isEmpty:(NSString *)s;
++(BOOL) isEmpty_MMMethodMMM:(NSString *)s;
 
-+(BOOL) isNotEmpty:(NSString *)s;
++(BOOL) isNotEmpty_MMMethodMMM:(NSString *)s;
 @end
 
 NS_ASSUME_NONNULL_END

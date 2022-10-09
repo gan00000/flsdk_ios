@@ -17,12 +17,12 @@
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
        if (self) {
-           [self addCellView];
+           [self addCellView_MMMethodMMM];
        }
        return self;
 }
 
-- (void)addCellView{
+- (void)addCellView_MMMethodMMM{
     
     self.contentView.backgroundColor = [UIColor whiteColor];
     
@@ -36,7 +36,7 @@
        // make.centerY.mas_equalTo(self);
     }];
     
-    self.deleteAccountBtn = [UIUtil initBtnWithNormalImage:delete_icon highlightedImage:delete_icon tag:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick:) target:self];
+    self.deleteAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:delete_icon highlightedImage_MMMethodMMM:delete_icon tag_MMMethodMMM:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick_MMMethodMMM:) target_MMMethodMMM:self];
     self.deleteAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [delContentView addSubview:self.deleteAccountBtn];
     [self.deleteAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -47,7 +47,7 @@
         make.center.mas_equalTo(delContentView);
     }];
     delContentView.userInteractionEnabled = YES;
-    [delContentView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+    [delContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
         if (self.mItemViewClickHander) {
             self.mItemViewClickHander(kMoreAccountDeleteActTag);
@@ -84,16 +84,16 @@
     }];
 }
 
--(UIImageView*)iconImageView
+-(UIImageView*)iconImageView_MMMethodMMM
 {
     if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:mw_smail_icon]];
+        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:mw_smail_icon]];
         _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconImageView;
 }
 
-- (void)deleteAccontClick:(UIButton *)sender
+- (void)deleteAccontClick_MMMethodMMM:(UIButton *)sender
 {
     if (self.mItemViewClickHander) {
         self.mItemViewClickHander(sender.tag);

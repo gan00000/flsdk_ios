@@ -34,12 +34,12 @@
 //    NSTimer *downTimer;
 }
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
         //        self.backgroundColor = color;// 底图透明，控件不透明
         //        self.layer.cornerRadius = 10; //设置圆角
         //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
@@ -47,9 +47,9 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:GetString(@"text_update_account") hander:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_update_account") hander_MMMethodMMM:^(NSInteger) {
             
-            [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
+            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
@@ -62,7 +62,7 @@
         }];
         
         
-        thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:thirdAccountSDKTextFiledView];
         
@@ -76,7 +76,7 @@
         }];
         
         
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
@@ -91,7 +91,7 @@
         
         
         //密码
-        pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+        pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         [self addSubview:pwdSDKTextFiledView];
         
         [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -102,7 +102,7 @@
             
         }];
         
-        UILabel *bindTipLabel = [UIUtil initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_bind_account_tips") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
         [self addSubview:bindTipLabel];
         
         [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -114,12 +114,12 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText:GetString(@"text_confire_update") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire_update") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
         [self addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -134,16 +134,16 @@
     return self;
 }
 
-- (void)initData
+- (void)initData_MMMethodMMM
 {
-    [super initData];
+    [super initData_MMMethodMMM];
     AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
-    [AccountLoginView makeAccountFiledViewStatus:tempAccountModel accountView:thirdAccountSDKTextFiledView pwdView:nil];
+    [AccountLoginView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
     thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
 }
 
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
@@ -152,7 +152,7 @@
         {
             SDK_LOG(@"kOkActTag");
             [self endEditing:YES];
-            [self bindAccount];
+            [self bindAccount_MMMethodMMM];
         }
             
             
@@ -164,11 +164,11 @@
     }
 }
 
--(void)bindAccount
+-(void)bindAccount_MMMethodMMM
 {
     
     if (!self.fromPageParam) {
-        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
         return;
     }
     
@@ -179,26 +179,26 @@
     NSString *pasword = pwdSDKTextFiledView.inputUITextField.text;
   
     
-//    if ([StringUtil isEmpty:]) {
-//        [SdkUtil toastMsg:GetString(@"py_password_empty")];
+//    if ([StringUtil isEmpty_MMMethodMMM:]) {
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
 //        return;
 //    }
  
-    if (![SdkUtil validUserName:account]) {
+    if (![SdkUtil validUserName_MMMethodMMM:account]) {
         return;
     }
     
     
-    if (![SdkUtil validPwd:pasword]) {
+    if (![SdkUtil validPwd_MMMethodMMM:pasword]) {
         return;
     }
     
     if (!currentAccountModel) {
-        [SdkUtil toastMsg:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
         return;
     }
   
-    [LoginHelper bindAccountAndRequest:self.delegate view:self account:currentAccountModel account:account pwd:pasword];
+    [LoginHelper bindAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel account_MMMethodMMM:account pwd_MMMethodMMM:pasword];
 }
 
 

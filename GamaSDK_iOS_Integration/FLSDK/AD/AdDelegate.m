@@ -24,12 +24,12 @@
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
-    NSString *afDevKey = [SDKRES getAfDevKey];
-    NSString *appId = [SDKRES getAppId];
+    NSString *afDevKey = [SDKRES getAfDevKey_MMMethodMMM];
+    NSString *appId = [SDKRES getAppId_MMMethodMMM];
     SDK_LOG(@"afDevKey:%@,appId=%@",afDevKey,appId);
-    if ([StringUtil isNotEmpty:afDevKey] && [StringUtil isNotEmpty:appId]) {
+    if ([StringUtil isNotEmpty_MMMethodMMM:afDevKey] && [StringUtil isNotEmpty_MMMethodMMM:appId]) {
         
-        if ([SDKRES isAdDebug]) {//是否开启debug
+        if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
             [AppsFlyerLib shared].isDebug = YES;
         }
         [[AppsFlyerLib shared] setAppsFlyerDevKey:afDevKey];//QtrxWJpdhQVov9F8hwKD3o
@@ -54,11 +54,11 @@
     return YES;
 }
 
-+ (void)applicationWillTerminate:(UIApplication *)application{
++ (void)applicationWillTerminate_MMMethodMMM:(UIApplication *)application{
     
 }
 
-+ (void)applicationDidBecomeActive:(UIApplication *)application{
++ (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application{
     
     if (@available(iOS 14, *)) {
         
@@ -77,7 +77,7 @@
                 //FB 从 iOS 14.5 开始，您需要设置 isAdvertiserTrackingEnabled，并在每次为设备授予与 Facebook 分享数据的权限时，做好记录。
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:YES];
                 
-//                [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"idfa=%@",idfa]];
+//                [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
                 
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
@@ -94,7 +94,7 @@
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
             NSLog(@"idfa=%@",idfa);
-//            [AlertUtil showAlertWithMessage:[NSString stringWithFormat:@"idfa=%@",idfa]];
+//            [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
         }
@@ -102,7 +102,7 @@
     
 }
 
-+ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type{
++ (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type{
     
     @try {
         
@@ -126,7 +126,7 @@
    
 }
 
-+ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type{
++ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
     
     @try {
         

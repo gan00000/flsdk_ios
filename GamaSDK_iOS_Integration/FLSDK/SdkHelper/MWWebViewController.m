@@ -31,7 +31,7 @@
 
 @implementation MWWebViewController
 
-+(instancetype)webViewControllerPresentingWithURLRequest:(NSURLRequest *)request layoutHandler:(id)handler animation:(BOOL)animation animationStyle:(UIModalTransitionStyle)animationStyle
++(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request layoutHandler_MMMethodMMM:(id)handler animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
 {
     UIViewController *containerVC = appTopViewController;
 //    if(device_is_iPhoneX){
@@ -42,15 +42,15 @@
 //        return nil;
 //    }
 //    SDK_LOG(@"not device_is_iPhoneX");
-    MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutHandler:handler animation:animation];
+    MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutHandler_MMMethodMMM:handler animation_MMMethodMMM:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
     webVC.webRequest = request;
-    //[webVC webLoadURLRequest:request];
+    //[webVC webLoadURLRequest_MMMethodMMM:request];
     [containerVC presentViewController:webVC animated:animation completion:nil];
     return webVC;
 }
-- (instancetype)initWithWebLayoutHandler:(MWWebLayoutHandler)handler animation:(BOOL)animation
+- (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation
 {
     if (self = [super initWithNibName:nil bundle:nil]) {
         self.layoutHandler = handler;
@@ -72,7 +72,7 @@
     return self;
 }
 
-- (WKWebView*)wkwebView{
+- (WKWebView*)wkwebView_MMMethodMMM{
     
     if (!_wkwebView) {
         
@@ -94,9 +94,9 @@
 
 }
 
-- (void)loadView
+- (void)loadView_MMMethodMMM
 {
-    self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] gama_currentBounds]];
+    self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] gama_currentBounds_MMMethodMMM]];
 }
 
 - (void)viewDidLoad { //system_method
@@ -104,7 +104,7 @@
     // Do any additional setup after loading the view.
     
     UIView *statueView = [[UIView alloc] init];
-    statueView.backgroundColor = [UIColor colorWithHexString:@"#F13B11"];
+    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F13B11"];
     [self.view addSubview:statueView];
     [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -146,13 +146,13 @@
 //            make.height.mas_equalTo(self.backgroundView).multipliedBy(0.08);
 //        }];
         
-//        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(webClose)];
-//        UIBarButtonItem *reloadBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(webReload)];
-//        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-//        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target:self action:@selector(webGoBack)];
-//        UIBarButtonItem *forwardBtn = [[UIBarButtonItem alloc] initWithTitle:@">" style:UIBarButtonItemStylePlain target:self action:@selector(webGoForward)];
-//        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-//        CGFloat screenWidth = [[UIScreen mainScreen] gama_currentBounds].size.width;
+//        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target_MMMethodMMM:self action:@selector(webClose)];
+//        UIBarButtonItem *reloadBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target_MMMethodMMM:self action:@selector(webReload)];
+//        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target_MMMethodMMM:nil action:nil];
+//        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target_MMMethodMMM:self action:@selector(webGoBack)];
+//        UIBarButtonItem *forwardBtn = [[UIBarButtonItem alloc] initWithTitle:@">" style:UIBarButtonItemStylePlain target_MMMethodMMM:self action:@selector(webGoForward)];
+//        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target_MMMethodMMM:nil action:nil];
+//        CGFloat screenWidth = [[UIScreen mainScreen] gama_currentBounds_MMMethodMMM].size.width;
 //        fixedSpace.width = screenWidth * 0.05;
 //
 //        UIToolbar *toolBar = [[UIToolbar alloc] init];
@@ -174,7 +174,7 @@
             make.height.equalTo(@(3));
         }];
     }
-    [self webLoadURLRequest:self.webRequest];
+    [self webLoadURLRequest_MMMethodMMM:self.webRequest];
     
     //设置状态栏是否隐藏
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
@@ -215,33 +215,33 @@
 }
 
 #pragma mark - WebView Operator
-- (void)webLoadURLRequest:(NSURLRequest *)request
+- (void)webLoadURLRequest_MMMethodMMM:(NSURLRequest *)request
 {
     if (self.wkwebView) {
         [self.wkwebView loadRequest:request];
     }
 }
 
-- (void)webGoBack
+- (void)webGoBack_MMMethodMMM
 {
     if ([self.wkwebView canGoBack]) {
         [self.wkwebView goBack];
     }
 }
 
-- (void)webGoForward
+- (void)webGoForward_MMMethodMMM
 {
     if ([self.wkwebView canGoForward]) {
         [self.wkwebView goForward];
     }
 }
 
-- (void)webReload
+- (void)webReload_MMMethodMMM
 {
     [self.wkwebView reload];
 }
 
-- (void)webClose
+- (void)webClose_MMMethodMMM
 {
     [self dismissViewControllerAnimated:self.animation completion:^{
         !_closeHandler?:_closeHandler();
@@ -309,7 +309,7 @@
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message_MMMethodMMM:message preferredStyle:UIAlertControllerStyleAlert];
 //    [alert addAction:[UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
 //        completionHandler();
 //    }]];

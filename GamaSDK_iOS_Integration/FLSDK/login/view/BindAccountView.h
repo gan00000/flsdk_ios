@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountView : SDKBaseView
 
-- (instancetype)initView;
+- (instancetype)initView_MMMethodMMM;
 
 @end
 

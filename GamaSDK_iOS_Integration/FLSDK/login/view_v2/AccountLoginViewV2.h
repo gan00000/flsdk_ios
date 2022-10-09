@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountLoginViewV2 : SDKBaseView 
 
-- (instancetype)initView;
+- (instancetype)initView_MMMethodMMM;
 
 
-+(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(SDKTextFiledView *)accountFiledView pwdView:(SDKTextFiledView *)pwdFiledView;
++(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView;
 
 @end
 

@@ -14,27 +14,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginHelper : NSObject
 
-+ (void)accountRegister:(id<LoginViewDelegate>)delegate view:(UIView *)currentView areaCode:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode;
++ (void)accountRegister_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView areaCode_MMMethodMMM:(NSString *)areaCode name:(NSString *)name password_MMMethodMMM:(NSString *)password phoneNum_MMMethodMMM:(NSString *)phoneNum vfCode_MMMethodMMM:(NSString *)vfCode;
 
-+(void) appleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView;
++(void) appleLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView;
 
-+ (void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
++ (void)fbLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
 
-+ (void)guestLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
++ (void)guestLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
 
-+ (void)googleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
++ (void)googleLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
 
-+ (void)lineLoginAndThirdRequest:(id<LoginViewDelegate>)delegate;
++ (void)lineLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
 
-+ (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password;
-
-
-+ (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(NSString *)account pwd:(NSString *)password thirdId:(NSString *)thirdId  thirdPlate:(NSString *)thirdPlate otherParamsDic:(NSDictionary *)otherParamsDic;
-
-+ (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)currentAccountModel account:(NSString *)account pwd:(NSString *)password;
++ (void)selfLoginAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password;
 
 
-+ (void)deleteAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)accountMode otherParamsDic:(NSDictionary *)otherParamsDic successBlock:(void(^)())successBlock;
++ (void)bindAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password thirdId_MMMethodMMM:(NSString *)thirdId  thirdPlate_MMMethodMMM:(NSString *)thirdPlate otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic;
+
++ (void)bindAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(AccountModel *)currentAccountModel account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password;
+
+
++ (void)deleteAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(AccountModel *)accountMode otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic successBlock_MMMethodMMM:(void(^)())successBlock;
 @end
 
 NS_ASSUME_NONNULL_END

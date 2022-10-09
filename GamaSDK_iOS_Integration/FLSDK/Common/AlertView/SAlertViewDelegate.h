@@ -41,7 +41,7 @@ typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
  *
  *	@return	一个代理类型的对象。
  */
-+(SAlertViewDelegate *)creatDelegateWithBack:(SAlertViewHandler)oneHandler;
++(SAlertViewDelegate *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler;
 
 
 @end

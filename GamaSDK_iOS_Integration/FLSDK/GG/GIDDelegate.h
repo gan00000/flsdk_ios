@@ -14,13 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GIDDelegate : NSObject
 
 
-+(void)loginWithClientID:(NSString *)kClientID
++(void)loginWithClientID_MMMethodMMM:(NSString *)kClientID
                 presentingViewController:(UIViewController *)presentingViewController
-                successCallback:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
-                failCallback:(void(^)(NSString *msg))failCallback
-          cancelCallback:(void(^)(NSString *msg))cancelCallback;
+                successCallback_MMMethodMMM:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
+                failCallback_MMMethodMMM:(void(^)(NSString *msg))failCallback
+          cancelCallback_MMMethodMMM:(void(^)(NSString *msg))cancelCallback;
     
-+ (void)signOut;
++ (void)signOut_MMMethodMMM;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -66,7 +66,7 @@
 // * @completedHandler    回调信息
 // */
 //+ (void)gama_fetchFriendsWithKind:(GamaThirdPartyType)kind
-//                            param:(nullable NSDictionary *)par
+//                            param_MMMethodMMM:(nullable NSDictionary *)par
 //                           paging:(GamaSocialPaging)paging
 //                            limit:(NSUInteger)limit
 //                 completedHandler:(nullable void(^)(NSDictionary *_Nullable initialData,
@@ -87,7 +87,7 @@
 // * @param failure 分享失败
 // */
 //+ (void)gama_shareWithKind:(GamaThirdPartyType)kind
-//                     param:(nullable NSDictionary *)par
+//                     param_MMMethodMMM:(nullable NSDictionary *)par
 //                   success:(nullable void(^)(NSDictionary * _Nullable result))success
 //                   failure:(nullable void (^)(NSError * _Nullable error))failure;
 //
@@ -103,7 +103,7 @@
 // * @param failure 邀请失败
 // */
 //+ (void)gama_inviteFriendsWithKind:(GamaThirdPartyType)kind
-//                             param:(nullable NSDictionary *)par
+//                             param_MMMethodMMM:(nullable NSDictionary *)par
 //                           success:(nullable void(^)(NSDictionary * _Nullable result))success
 //                           failure:(nullable void (^)(NSError * _Nullable error))failure;
 //

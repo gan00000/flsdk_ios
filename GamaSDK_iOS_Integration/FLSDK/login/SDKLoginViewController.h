@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKLoginViewController : UIViewController <LoginViewDelegate,UITextFieldDelegate>
 
--(instancetype)initWithPageType:(SDKPage) pageType;
+-(instancetype)initWithPageType_MMMethodMMM:(SDKPage) pageType;
 
 
 @property (nonatomic)CGRect currentEditingTextViewFrame;

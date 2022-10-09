@@ -18,37 +18,37 @@
 }
 
 
-- (instancetype)initViewWithType:(SDKTextFiledView_Type) type
+- (instancetype)initViewWithType_MMMethodMMM:(SDKTextFiledView_Type) type
 {
     self = [super init];
     if (self) {
         if (is_Version2) {
             
-            [self addContentView_v2:type];
+            [self addContentView_v2_MMMethodMMM:type];
         }else{
-            [self addContentView:type];
+            [self addContentView_MMMethodMMM:type];
         }
         
     }
     return self;
 }
 
--(void)setPwdFiledView:(BOOL)enable{
+-(void)setPwdFiledView_MMMethodMMM:(BOOL)enable{
     
     eyeBtn.hidden = !enable;
     mUITextField.enabled = enable;
     if (enable) {
-        self.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_icon];
+        self.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon];
         mUITextField.secureTextEntry = YES;
         mUITextField.text = @"";
         eyeBtn.selected = YES;
         mUITextField.textColor = [UIColor whiteColor];
         
     }else{
-        self.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_disable_icon];
+        self.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_disable_icon];
         mUITextField.secureTextEntry = NO;
         mUITextField.text = GetString(@"text_free_register");
-        mUITextField.textColor = [UIColor colorWithHexString:@"#848484"];
+        mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#848484"];
 
         eyeBtn.selected = NO;
     }
@@ -56,7 +56,7 @@
 }
 
 
-- (void) addContentView:(SDKTextFiledView_Type) type
+- (void) addContentView_MMMethodMMM:(SDKTextFiledView_Type) type
 {
     
     //    self.backgroundColor = [UIColor whiteColor];
@@ -119,7 +119,7 @@
             break;
     }
     
-    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:iconName]];
+    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
     self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.lableIconImageView];
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -131,7 +131,7 @@
     
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -170,7 +170,7 @@
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#848484"]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     
@@ -185,7 +185,7 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down selectedImageName:sdk_list_up tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
+        self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
         //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
@@ -204,7 +204,7 @@
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
-        eyeBtn = [UIUtil initBtnWithNormalImage:fl_sdk_ky highlightedImage:fl_sdk_ky selectedImageName:fl_sdk_by tag:22 selector:@selector(eyeViewBtnAction:) target:self];
+        eyeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         eyeBtn.selected = YES;//设置为选择
         mUITextField.secureTextEntry = YES;
         
@@ -223,7 +223,7 @@
     
     
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -242,12 +242,12 @@
     }
     
     if (self.inputUITextField) {
-        [self.inputUITextField addTarget:self action:@selector(textChanged:) forControlEvents:(UIControlEventEditingChanged)];
+        [self.inputUITextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
     }
     
 }
 
-- (void) addContentView_v2:(SDKTextFiledView_Type) type
+- (void) addContentView_v2_MMMethodMMM:(SDKTextFiledView_Type) type
 {
     
     //    self.backgroundColor = [UIColor whiteColor];
@@ -312,7 +312,7 @@
             break;
     }
     
-    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:iconName]];
+    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
     self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.lableIconImageView];
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -324,7 +324,7 @@
     
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -363,7 +363,7 @@
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#848484"]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     
@@ -378,7 +378,7 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down selectedImageName:sdk_list_up tag:kMoreAccountListActTag selector:@selector(clickItemBtn:) target:self];
+        self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
         //        self.moreAccountBtn.hidden = YES;
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
@@ -397,7 +397,7 @@
     
     if (showEye) {
         mUITextField.secureTextEntry = NO;
-        eyeBtn = [UIUtil initBtnWithNormalImage:fl_sdk_ky highlightedImage:fl_sdk_ky selectedImageName:fl_sdk_by tag:22 selector:@selector(eyeViewBtnAction:) target:self];
+        eyeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         eyeBtn.selected = YES;//设置为选择
         mUITextField.secureTextEntry = YES;
         
@@ -417,7 +417,7 @@
     
     UIView *lineView2 = [[UIView alloc] init];
     lineView2.hidden = YES;
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -436,12 +436,12 @@
     }
     
     if (self.inputUITextField) {
-        [self.inputUITextField addTarget:self action:@selector(textChanged:) forControlEvents:(UIControlEventEditingChanged)];
+        [self.inputUITextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
     }
     
 }
 
-- (void)eyeViewBtnAction:(UIButton *)sender
+- (void)eyeViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     
     if (sender.selected) { // 按下去了就是明文
@@ -463,7 +463,7 @@
 }
 
 //点击账号记录下拉列表
-- (void)clickItemBtn:(UIButton *)sender
+- (void)clickItemBtn_MMMethodMMM:(UIButton *)sender
 {
     if (self.clickAccountListItem) {
         self.clickAccountListItem(sender.tag);
@@ -472,7 +472,7 @@
 
 ////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者@"任何字符串"都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
-- (void)textChanged:(UITextField *)sender
+- (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
     SDK_LOG(@"textChanged=>%@",sender.text);
     

@@ -42,21 +42,21 @@
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
 #define ContentViewBgColor                    @"#f4f4f5"
-#define ColorHex(color)  [UIColor colorWithHexString:color]
+#define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
 
-#define SDK_DATA                           [CCSDKDATA sharedSdkData]
+#define SDK_DATA                           [CCSDKDATA sharedSdkData_MMMethodMMM]
 
-#define GetImage(imageName)     [UIImage res_imageNamed:imageName]
+#define GetImage(imageName)     [UIImage res_imageNamed_MMMethodMMM:imageName]
 
-#define appTopViewController    [SUtil getCurrentViewController]
+#define appTopViewController    [SUtil getCurrentViewController_MMMethodMMM]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 // ------ 是否是 iPhoneX
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries]
+#define device_is_iPhoneX   [SUtil isIPhoneXSeries_MMMethodMMM]
 
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight:h]
-#define VW(w)  [[DimeUtil share] getViewWidth:w]
-#define FS(size)  [[DimeUtil share] getFontSize:size]
+#define VH(h)  [[DimeUtil share] getViewHeight_MMMethodMMM:h]
+#define VW(w)  [[DimeUtil share] getViewWidth_MMMethodMMM:w]
+#define FS(size)  [[DimeUtil share] getFontSize_MMMethodMMM:size]
 
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)

@@ -21,22 +21,22 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
-+ (void)applicationWillTerminate:(UIApplication *)application;
++ (void)applicationWillTerminate_MMMethodMMM:(UIApplication *)application;
 
-+ (void)applicationDidBecomeActive:(UIApplication *)application;
++ (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application;
 
 
--(void)loginWithPesentingViewController:(UIViewController *)presentingViewController
-                        isForceInappLogin:(BOOL)isForceInappLogin
-            andIsForceReAuthorize:(BOOL)isForceReAuthorize
-            andSuccessBlock:(void(^)(NSString *fbUserId,NSString *fbUserName,NSString *fbIdToken))successBlock
-            andFailBlock:(void(^)(NSError *error))failBlock
-                           andCancelBlock:(void(^)(NSError *error))cancelBlock;
+-(void)loginWithPesentingViewController_MMMethodMMM:(UIViewController *)presentingViewController
+                        isForceInappLogin_MMMethodMMM:(BOOL)isForceInappLogin
+            andIsForceReAuthorize_MMMethodMMM:(BOOL)isForceReAuthorize
+            andSuccessBlock_MMMethodMMM:(void(^)(NSString *fbUserId,NSString *fbUserName,NSString *fbIdToken))successBlock
+            andFailBlock_MMMethodMMM:(void(^)(NSError *error))failBlock
+                           andCancelBlock_MMMethodMMM:(void(^)(NSError *error))cancelBlock;
 
--(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url
+-(void)shareWithTag_MMMethodMMM:(NSString *)hashTag message_MMMethodMMM:(NSString *)message url_MMMethodMMM:(NSString *)url
     presentingViewController:(UIViewController * _Nonnull)presentingViewController
-    successBlock:(CCallBack)successBlock
-          failBlock:(CCallBack)failBlock;
+    successBlock_MMMethodMMM:(CCallBack)successBlock
+          failBlock_MMMethodMMM:(CCallBack)failBlock;
 
 @end
 

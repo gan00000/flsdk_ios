@@ -70,17 +70,17 @@
     return YES;
 }
 
-+ (void)applicationWillTerminate:(UIApplication *)application
++ (void)applicationWillTerminate_MMMethodMMM:(UIApplication *)application
 {
     // do nothing
 }
 
-+ (void)applicationDidBecomeActive:(UIApplication *)application
++ (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application
 {
 //    [FBSDKAppEvents activateApp];
 }
 
--(FBSDKLoginManager *)loginManager
+-(FBSDKLoginManager *)loginManager_MMMethodMMM
 {
     if (!_loginManager) {
         _loginManager = [[FBSDKLoginManager alloc] init];
@@ -88,7 +88,7 @@
     return _loginManager;
 }
 
-- (void)loginWithPerssion:(void (^ _Nonnull)(NSError *))cancelBlock failBlock:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
+- (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
     NSArray *readPermissions = @[@"public_profile"];
     
     [self.loginManager logInWithPermissions:readPermissions
@@ -111,7 +111,7 @@
                 [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile * _Nullable profile, NSError * _Nullable error) {
                     
                     NSString *fbUserId = FBSDKProfile.currentProfile.userID;
-                    NSString *facebookTokenStr = [[self currentAccessToken] tokenString];
+                    NSString *facebookTokenStr = [[self currentAccessToken_MMMethodMMM] tokenString];
                     NSString *fbUserName = FBSDKProfile.currentProfile.name;
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -144,25 +144,25 @@
     }];
 }
 
-- (void)loginWithPesentingViewController:(UIViewController *)presentingViewController
-                        isForceInappLogin:(BOOL)isForceInappLogin
-            andIsForceReAuthorize:(BOOL)isForceReAuthorize
-            andSuccessBlock:(void(^)(NSString *fbUserId,NSString *fbUserName,NSString *fbIdToken))successBlock
-            andFailBlock:(void(^)(NSError *error))failBlock
-                    andCancelBlock:(void(^)(NSError *error))cancelBlock
+- (void)loginWithPesentingViewController_MMMethodMMM:(UIViewController *)presentingViewController
+                        isForceInappLogin_MMMethodMMM:(BOOL)isForceInappLogin
+            andIsForceReAuthorize_MMMethodMMM:(BOOL)isForceReAuthorize
+            andSuccessBlock_MMMethodMMM:(void(^)(NSString *fbUserId,NSString *fbUserName,NSString *fbIdToken))successBlock
+            andFailBlock_MMMethodMMM:(void(^)(NSError *error))failBlock
+                    andCancelBlock_MMMethodMMM:(void(^)(NSError *error))cancelBlock
                     
 {
    
     if (isForceReAuthorize) {
-        [self facebookLogout];
+        [self facebookLogout_MMMethodMMM];
     }
     
-    if ([self isFacebookLogined]) {
+    if ([self isFacebookLogined_MMMethodMMM]) {
         
         [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile * _Nullable profile, NSError * _Nullable error) {
             
             NSString *fbUserId = FBSDKProfile.currentProfile.userID;
-            NSString *facebookTokenStr = [[self currentAccessToken] tokenString];
+            NSString *facebookTokenStr = [[self currentAccessToken_MMMethodMMM] tokenString];
             NSString *fbUserName = FBSDKProfile.currentProfile.name;
             
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -173,7 +173,7 @@
                     return;
                 }else{
                     
-                    [self loginWithPerssion:cancelBlock failBlock:failBlock presentingViewController:presentingViewController successBlock:successBlock];
+                    [self loginWithPerssion_MMMethodMMM:cancelBlock failBlock_MMMethodMMM:failBlock presentingViewController:presentingViewController successBlock_MMMethodMMM:successBlock];
                     
                 }
                
@@ -188,15 +188,15 @@
     
     
 //     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
-    [self loginWithPerssion:cancelBlock failBlock:failBlock presentingViewController:presentingViewController successBlock:successBlock];
+    [self loginWithPerssion_MMMethodMMM:cancelBlock failBlock_MMMethodMMM:failBlock presentingViewController:presentingViewController successBlock_MMMethodMMM:successBlock];
 }
 
 
-- (BOOL)isFacebookLogined
+- (BOOL)isFacebookLogined_MMMethodMMM
 {
     BOOL retResult = NO;
     //注释掉，不判断accessToken,直接每次调用登录
-//    if (nil == [self currentAccessToken] || [[self currentAccessToken] isExpired]) {
+//    if (nil == [self currentAccessToken_MMMethodMMM] || [[self currentAccessToken_MMMethodMMM] isExpired]) {
 //        retResult = NO;
 //    } else {
 //        retResult = YES;
@@ -205,12 +205,12 @@
     return retResult;
 }
 
-- (FBSDKAccessToken *)currentAccessToken
+- (FBSDKAccessToken *)currentAccessToken_MMMethodMMM
 {
     return [FBSDKAccessToken currentAccessToken];
 }
 
-- (void)facebookLogout
+- (void)facebookLogout_MMMethodMMM
 {
     [self.loginManager logOut];
 //
@@ -218,10 +218,10 @@
 //    ws.facebookName = @"";
 }
 
--(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url
+-(void)shareWithTag_MMMethodMMM:(NSString *)hashTag message_MMMethodMMM:(NSString *)message url_MMMethodMMM:(NSString *)url
     presentingViewController:(UIViewController * _Nonnull)presentingViewController
-    successBlock:(CCallBack)successBlock
-    failBlock:(CCallBack)failBlock
+    successBlock_MMMethodMMM:(CCallBack)successBlock
+    failBlock_MMMethodMMM:(CCallBack)failBlock
 {
     self.successBlock = successBlock;
     self.failBlock = failBlock;
@@ -254,7 +254,7 @@
 /// Sent to the delegate when sharing completes without error or cancellation.
 /// @param sharer The sharer that completed.
 /// @param results The results from the sharer.  This may be nil or empty.
-- (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
+- (void)sharer_MMMethodMMM:(id<FBSDKSharing>)sharer didCompleteWithResults_MMMethodMMM:(NSDictionary<NSString *,id> *)results{
     
     SDK_LOG(@"share didCompleteWithResults");
     if (self.successBlock) {
@@ -265,15 +265,15 @@
 /// @param sharer The sharer that completed.
 /// @param error The error.
 ///
-- (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
-    SDK_LOG(@"share didFailWithError: %@",error);
+- (void)sharer_MMMethodMMM:(id<FBSDKSharing>)sharer didFailWithError_MMMethodMMM:(NSError *)error{
+    SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
     if (self.failBlock) {
         self.failBlock(@"error", 0, nil);
     }
 }
 /// Sent to the delegate when the sharer is cancelled.
 /// @param sharer The sharer that completed.
-- (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
+- (void)sharerDidCancel_MMMethodMMM:(id<FBSDKSharing>)sharer{
     SDK_LOG(@"sharerDidCancel");
     if (self.failBlock) {
         self.failBlock(@"cancel", 0, nil);

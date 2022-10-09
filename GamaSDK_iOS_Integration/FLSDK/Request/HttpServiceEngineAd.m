@@ -29,8 +29,8 @@
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEngineAd alloc] init];
         NSString *servicePath = @"http://adv.flyfungame.com/";//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
-        instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath:servicePath];
-        [instance.httpEngine updateSessionWithBlock:^(AFHTTPSessionManager *session) {
+        instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
+        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
 //            [session.requestSerializer setValue:@"89bc52ca5b" forHTTPHeaderField:@"X-User-AppId"];
 //            [session.requestSerializer setValue:@"1" forHTTPHeaderField:@"X-User-Platform"];
@@ -42,17 +42,17 @@
 }
 
 #pragma mark -
-+ (void)postRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJServiceSuccessBlock)successBlock
-                         errorBlock:(BJServiceErrorBlock)errorBlock {
++ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock {
     NSMutableDictionary *allParams = [NSMutableDictionary dictionary];
     if (params) {
         [allParams addEntriesFromDictionary:params];
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     //[GamaUtils gamaStarLoadingAtView:nil];
-    [[HttpServiceEngineAd sharedInstance].httpEngine postJsonRequestWithFunctionPath:path params:allParams successBlock:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEngineAd sharedInstance].httpEngine postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
@@ -63,7 +63,7 @@
             
     //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
             LoginResponse *mCCSDKResponse = [LoginResponse yy_modelWithDictionary:responseData];
-            if ([mCCSDKResponse isRequestSuccess]) {
+            if ([mCCSDKResponse isRequestSuccess_MMMethodMMM]) {
                 if (successBlock) {
                     successBlock(mCCSDKResponse);
                 }
@@ -74,7 +74,7 @@
                 }
             }
         
-    } errorBlock:^(NSURLSessionDataTask *task, NSError *error) {
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         
         SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {

@@ -84,7 +84,7 @@
 //    
 //    if (iconImage) {
 //        GamaThirdSocial *gamaThirdSocial = [[GamaThirdSocial alloc] init];
-//        [gamaThirdSocial postShareByPastingWithPasteboardName:@"jp.naver.linecamera.pasteboard" image:[UIImage imageNamed:@""] imageName:@"public" imageType:@"png" URL:@"line://msg/image" appStoreLink:@"https:itunes.apple.com/app/line/id443904275" success:success failure:failure];
+//        [gamaThirdSocial postShareByPastingWithPasteboardName:@"jp.naver.linecamera.pasteboard" image_MMMethodMMM:[UIImage imageNamed:@""] imageName_MMMethodMMM:@"public" imageType:@"png" URL:@"line://msg/image" appStoreLink:@"https:itunes.apple.com/app/line/id443904275" success:success failure:failure];
 //
 //    }else if(shareContentText.length > 0){
 //        NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[shareContentText stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
@@ -98,8 +98,8 @@
 //}
 //
 //- (void)postShareByPastingWithPasteboardName:(NSString *)pasteboardName
-//                                       image:(UIImage *)image
-//                                   imageName:(NSString *)imageName
+//                                       image_MMMethodMMM:(UIImage *)image
+//                                   imageName_MMMethodMMM:(NSString *)imageName
 //                                   imageType:(NSString *)imageType
 //                                         URL:(NSString *)URLString
 //                                appStoreLink:(NSString *)storeLinkString

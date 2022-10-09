@@ -22,12 +22,12 @@
     return self;
 }
 
--(BOOL) checkParams{
+-(BOOL)checkParams_MMMethodMMM{
     
-    if ([StringUtil isEmpty:self.roleID]) {
+    if ([StringUtil isEmpty_MMMethodMMM:self.roleID]) {
         return NO;
     }
-    if ([StringUtil isEmpty:self.serverCode]) {
+    if ([StringUtil isEmpty_MMMethodMMM:self.serverCode]) {
         return NO;
     }
     return YES;

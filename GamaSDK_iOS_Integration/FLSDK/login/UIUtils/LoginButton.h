@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginButton : NSObject
 
-+ (UIButton *)initBtnWithType:(BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target;
++ (UIButton *)initBtnWithType_MMMethodMMM:(BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target;
 
 @end
 

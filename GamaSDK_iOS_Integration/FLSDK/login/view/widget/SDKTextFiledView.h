@@ -24,8 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKTextFiledView : SDKBaseView
 
-- (instancetype)initViewWithType:(SDKTextFiledView_Type) type;
--(void)setPwdFiledView:(BOOL)enable;
+- (instancetype)initViewWithType_MMMethodMMM:(SDKTextFiledView_Type) type;
+-(void)setPwdFiledView_MMMethodMMM:(BOOL)enable;
 
 @property (nonatomic) ItemViewClickHander clickAccountListItem;
 @property (nonatomic) CCallBack inputTextFieldChange;

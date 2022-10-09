@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
 @property(nonatomic,assign) id fromPageParam;
 
--(void) initData;
+-(void)initData_MMMethodMMM;
 
 @end
 

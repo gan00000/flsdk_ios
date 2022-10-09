@@ -11,7 +11,7 @@
 
 @implementation PhoneView
 
-- (instancetype)initView
+- (instancetype)initView_MMMethodMMM
 {
     self = [super init];
     if (self) {
@@ -19,13 +19,13 @@
         self.phoneModel = [[PhoneInfoModel alloc] init];
         self.phoneModel.delegate = self;
         
-        [self addPhoneViewContentView];
+        [self addPhoneViewContentView_MMMethodMMM];
     }
     return self;
 }
 
 
-- (void)addPhoneViewContentView
+- (void)addPhoneViewContentView_MMMethodMMM
 {
     
     self.backgroundColor = [UIColor clearColor];
@@ -49,7 +49,7 @@
         
     }];
     
-    UIImageView *lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed:iconName]];
+    UIImageView *lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
     lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [areaCodeContentView addSubview:lableIconImageView];
     [lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,7 +71,7 @@
     tipsUILabel.backgroundColor = [UIColor clearColor];
     tipsUILabel.numberOfLines = 1; //0为多行
     //tipsUILabel.textColor = [UIColor blackColor];
-    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
+    tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#FF3E37"];
     
     [areaCodeContentView addSubview:tipsUILabel];
     [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -100,7 +100,7 @@
         
     }];
     
-    UIButton *dropButton = [UIUtil initBtnWithNormalImage:sdk_list_down highlightedImage:sdk_list_down tag:222 selector:@selector(itemBtnAction:) target:self];
+    UIButton *dropButton = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down tag_MMMethodMMM:222 selector:@selector(itemBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     int moffset = -6;
     if (IS_IPHONE && IS_PORTRAIT) {
@@ -119,7 +119,7 @@
     }];
     
     self.aracCodeUILabel.userInteractionEnabled = YES; // 可以理解为设置label可被点击
-    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped_MMMethodMMM:)];
     [self.aracCodeUILabel addGestureRecognizer:tapGr];
     
     //============
@@ -149,7 +149,7 @@
        }
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:@"請輸入電話號碼"
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],
-                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#A0A0A0"]}];
+                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#A0A0A0"]}];
     self.mUITextField.attributedPlaceholder = attrStr;
     [phoneInputContentView addSubview:self.mUITextField];
     [self.mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -163,33 +163,33 @@
     
 }
 
--(NSString *) getPhoneNumber
+-(NSString *)getPhoneNumber_MMMethodMMM
 {
     return self.mUITextField.text;
 }
 
--(NSString *) getPhoneAreaCode
+-(NSString *)getPhoneAreaCode_MMMethodMMM
 {
     return self.aracCodeUILabel.text;
 }
 
 #pragma mark -- 电话号码
-- (void)pushAreaTable:(UIButton *)sender{
-    [self.phoneModel showAreaCodesActionSheetFromView:sender];
+- (void)pushAreaTable_MMMethodMMM:(UIButton *)sender{
+    [self.phoneModel showAreaCodesActionSheetFromView_MMMethodMMM:sender];
 }
 
--(void)showSelectedAreaCodeValue:(NSString *)selectedAreaCodeValue{
+-(void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue{
     self.aracCodeUILabel.text = selectedAreaCodeValue;
     //    [self.mobile_area_tf setTitle:selectedAreaCodeValue forState:UIControlStateNormal];
 }
 
--(void)viewTapped:(UITapGestureRecognizer*)tapGr
+-(void)viewTapped_MMMethodMMM:(UITapGestureRecognizer*)tapGr
 {
-    [self pushAreaTable:nil];
+    [self pushAreaTable_MMMethodMMM:nil];
 }
 
-- (void)itemBtnAction:(UIButton *)sender
+- (void)itemBtnAction_MMMethodMMM:(UIButton *)sender
 {
-    [self pushAreaTable:sender];
+    [self pushAreaTable_MMMethodMMM:sender];
 }
 @end

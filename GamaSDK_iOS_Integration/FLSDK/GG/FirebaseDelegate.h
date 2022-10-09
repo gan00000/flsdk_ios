@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
-+(NSString *)getClientID;
++(NSString *)getClientID_MMMethodMMM;
 
 @end
 

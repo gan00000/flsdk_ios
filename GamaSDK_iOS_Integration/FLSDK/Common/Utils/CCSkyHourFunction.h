@@ -22,16 +22,16 @@
  然后把给字符串保存在共有的keychain中，保证唯一性的唯一识别字符串。
  样例：328DCE39-C501-4195-B2CC-E2CEB069FAB0
  */
-+(NSString *)getGamaUUID;
++(NSString *)getGamaUUID_MMMethodMMM;
 
 
 /*获取头*/
-+ (NSString *)bundleSeedID;
++ (NSString *)bundleSeedID_MMMethodMMM;
 
-+ (NSString *)getBundleName;
-+ (NSString *)getBundleIdentifier;
-+ (NSString *)getBundleShortVersionString;
-+ (NSString *)getBundleVersion;
++ (NSString *)getBundleName_MMMethodMMM;
++ (NSString *)getBundleIdentifier_MMMethodMMM;
++ (NSString *)getBundleShortVersionString_MMMethodMMM;
++ (NSString *)getBundleVersion_MMMethodMMM;
 
 /**
  *	@brief	获取时间戳
@@ -39,7 +39,7 @@
  *	@return	字符串的形式，从1970年一月一日零点到当前时间的毫秒数。
  样例：1392717252908
  */
-+(NSString *)getTimeStamp;
++(NSString *)getTimeStamp_MMMethodMMM;
 
 
 /**
@@ -47,7 +47,7 @@
  *
  *	@return	字符串形式返回当前系统的版本号,样例：“7.0”
  */
-+(NSString *)getSystemVersion;
++(NSString *)getSystemVersion_MMMethodMMM;
 
 
 /**
@@ -55,7 +55,7 @@
  *
  *	@return	设备类型的字符串：样例："iPod_touch_5"
  */
-+(NSString *)getDeviceType;
++(NSString *)getDeviceType_MMMethodMMM;
 
 
 /**
@@ -63,7 +63,7 @@
  *
  *	@return	返回设备的mac地址，样例："70:11:24:4B:2B:5C"
  */
-+(NSString *)getMacaddress;
++(NSString *)getMacaddress_MMMethodMMM;
 
 
 /**
@@ -72,7 +72,7 @@
  *
  *	@return	一串广告标示字符串，样例：“B9031A0C-0E66-40EE-ACA4-3CCB30DB9F49”
  */
-+(NSString *)getIdfa;
++(NSString *)getIdfa_MMMethodMMM;
 
 
 /**
@@ -80,7 +80,7 @@
  *
  *	@return 样例：“172.16.10.20”
  */
-+(NSString *)getIPAddress;
++(NSString *)getIPAddress_MMMethodMMM;
 
 
 /**
@@ -88,7 +88,7 @@
  *
  *	@return	CGrect，一个位置是（0,0）尺寸是当前屏幕大小的frame
  */
-+(CGRect)getCurrentScreenFrame;
++(CGRect)getCurrentScreenFrame_MMMethodMMM;
 
 
 /**
@@ -96,29 +96,29 @@
  *          为了适应UIAlertController
  *  @return UIViewController
  */
-+ (UIViewController *)getCurrentViewController;
++ (UIViewController *)getCurrentViewController_MMMethodMMM;
 
 /**
  *	@brief	判断设备是否连接网络
  *
  *	@return	BOOL，YES：设备连接了网络；NO：设备未连接任何网络
  */
-+(BOOL)connectedToNetWork;
++(BOOL)connectedToNetWork_MMMethodMMM;
 
 /**
  *	@brief	获取当前日期，年月日 时分
  *
  *	@return	字符串，样例：“2014-02-18_18:30”
  */
-+(NSString *)getTimeDate;
-+(NSString *)getTodayInfo;
++(NSString *)getTimeDate_MMMethodMMM;
++(NSString *)getTodayInfo_MMMethodMMM;
 
 /**
  *	@brief	获取项目配置文件的配置信息
  *
  *	@return	字典Info.plist的内容
  */
-+(NSDictionary *)getProjectInfoPlist;
++(NSDictionary *)getProjectInfoPlist_MMMethodMMM;
 
 
 
@@ -133,7 +133,7 @@
  *
  *	@return	加密以后的MD5字符串
  */
-+(NSString *)getMD5StrFromString:(NSString *)beforeMD5String;
++(NSString *)getMD5StrFromString_MMMethodMMM:(NSString *)beforeMD5String;
 
 
 /**
@@ -143,7 +143,7 @@
  *
  *	@return	解析后的字典
  */
-+(NSDictionary*)parseURLParams:(NSString *)query;
++(NSDictionary*)parseURLParams_MMMethodMMM:(NSString *)query;
 
 
 /**
@@ -164,7 +164,7 @@
  *
  *	@return	URL转码以后的字符串
  */
-+(NSString *)urlEcodingFromString:(NSString *)aString;
++(NSString *)urlEcodingFromString_MMMethodMMM:(NSString *)aString;
 
 /**
  *	@brief	判断上一次记录的时间点到此刻是否已超出传入的间隔
@@ -187,24 +187,24 @@
  *
  *	@return	超出总间隔时间则返回YES，否则返回NO。
  */
-+(BOOL)isTimeOnArrivalFromLastInitWithEvent:(NSString *)event
-                                      Years:(NSUInteger)years
-                                     months:(NSUInteger)months
-                                       days:(NSUInteger)days
-                                      hours:(NSUInteger)hours
-                                    minutes:(NSUInteger)minutes
-                                    seconds:(NSUInteger)seconds;
++(BOOL)isTimeOnArrivalFromLastInitWithEvent_MMMethodMMM:(NSString *)event
+                                      Years_MMMethodMMM:(NSUInteger)years
+                                     months_MMMethodMMM:(NSUInteger)months
+                                       days_MMMethodMMM:(NSUInteger)days
+                                      hours_MMMethodMMM:(NSUInteger)hours
+                                    minutes_MMMethodMMM:(NSUInteger)minutes
+                                    seconds_MMMethodMMM:(NSUInteger)seconds;
 
 #pragma mark - 获取当前系统语言（与服务器的语言并不一样，请注意使用
-+ (NSString*)getPreferredLanguage;
++ (NSString*)getPreferredLanguage_MMMethodMMM;
 
 + (NSString *)getServerLocaleStrWithGameLanguage:(NSString *)curLanguage;
 
 + (void)setGameLanguage:(NSString *)gameLanguage;
 
-+ (BOOL)checkValue:(id)value key:(NSString *)key andURLScheme:(NSString *)urlScheme andURLIdentifier:(NSString *)identifier;
++ (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier;
 
 //是否是流海屏
-+(BOOL)isIPhoneXSeries;
++(BOOL)isIPhoneXSeries_MMMethodMMM;
 
 @end

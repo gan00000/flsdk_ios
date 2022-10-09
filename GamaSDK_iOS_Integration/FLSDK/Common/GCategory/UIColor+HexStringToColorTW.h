@@ -16,9 +16,9 @@
  *
  *  @return UIColor对象
  */
-+ (UIColor *)colorWithHexString: (NSString *)color;
++ (UIColor *)colorWithHexString_MMMethodMMM: (NSString *)color;
 
 
-+ (UIColor *) colorWithHexString: (NSString *)color andAlpha:(CGFloat)alpha;
++ (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color andAlpha_MMMethodMMM:(CGFloat)alpha;
 
 @end

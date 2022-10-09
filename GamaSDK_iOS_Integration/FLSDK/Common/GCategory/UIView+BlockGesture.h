@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 typedef void (^GestureActionBlock)(UIGestureRecognizer *gestureRecoginzer);
 @interface UIView (BlockGesture)
-- (void)addTapActionWithBlock:(GestureActionBlock)block;
-- (void)addLongPressActionWithBlock:(GestureActionBlock)block;
+- (void)addTapActionWithBlock_MMMethodMMM:(GestureActionBlock)block;
+- (void)addLongPressActionWithBlock_MMMethodMMM:(GestureActionBlock)block;
 @end

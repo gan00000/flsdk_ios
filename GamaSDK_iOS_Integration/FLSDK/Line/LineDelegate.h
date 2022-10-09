@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options;
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
--(void)startLoginWithCallBack:(LineCallBack)successCallBack fail:(LineCallBack)failCallBack;
+-(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack;
 
 @end
 

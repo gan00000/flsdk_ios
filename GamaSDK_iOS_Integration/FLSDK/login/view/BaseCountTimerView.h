@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign,nonatomic) NSInteger totalCount;
 @property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;
 
--(void)startCountTimer;
--(void) finishCountTimer;
+-(void)startCountTimer_MMMethodMMM;
+-(void)finishCountTimer_MMMethodMMM;
 
 @end
 

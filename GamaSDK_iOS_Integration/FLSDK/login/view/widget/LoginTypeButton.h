@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginTypeButton : UIView
 
-- (instancetype)initWithType:(NSUInteger)type title:(NSString *)title image:(NSString *)image selector:(SEL)selector
-                      target:(id)target;
+- (instancetype)initWithType_MMMethodMMM:(NSUInteger)type title_MMMethodMMM:(NSString *)title image_MMMethodMMM:(NSString *)image selector:(SEL)selector
+                      target_MMMethodMMM:(id)target;
 @end
 
 NS_ASSUME_NONNULL_END

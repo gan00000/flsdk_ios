@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)CGFloat keyBoardHeight;
 
-+ (instancetype)sharedSdkData;
++ (instancetype)sharedSdkData_MMMethodMMM;
 
 @end
 

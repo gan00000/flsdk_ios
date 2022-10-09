@@ -23,7 +23,7 @@
     return YES;
 }
 
-+(NSString *)getClientID
++(NSString *)getClientID_MMMethodMMM
 {
     return [FIRApp defaultApp].options.clientID;
 }

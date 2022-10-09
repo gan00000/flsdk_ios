@@ -55,7 +55,7 @@
     return [[LineSDKLogin sharedInstance] handleOpenURL:url];
 }
 
--(void)startLoginWithCallBack:(LineCallBack)successCallBack fail:(LineCallBack)failCallBack
+-(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
 {
     self.successCallBack = successCallBack;
     self.failCallBack = failCallBack;
@@ -69,7 +69,7 @@
 //                              nil];
 //    [[LineSDKLoginManager sharedManager] loginWithPermissions:permissions
 //            inViewController:nil
-//                  parameters:nil
+//                  parameters_MMMethodMMM:nil
 //           completionHandler:^(LineSDKLoginResult *result, NSError *error) {
 //               if (result) {
 //                   NSLog(@"User Name: %@", result.userProfile.displayName);
@@ -104,7 +104,7 @@
 
 
 
-- (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
+- (void)didLogin_MMMethodMMM:(LineSDKLogin *)login credential_MMMethodMMM:(nullable LineSDKCredential *)credential profile_MMMethodMMM:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
 
 
     if (error) {

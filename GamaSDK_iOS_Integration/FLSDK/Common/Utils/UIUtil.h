@@ -16,52 +16,52 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - UI
 
-+(UIImageView*)initImageViewWithImage:(NSString *)imageName;
++(UIImageView*)initImageViewWithImage_MMMethodMMM:(NSString *)imageName;
 
-+(UILabel*)initLabelWithText:(NSString *)text fontSize:(CGFloat)size textColor:(UIColor*)textColor;
++(UILabel*)initLabelWithText_MMMethodMMM:(NSString *)text fontSize_MMMethodMMM:(CGFloat)size textColor_MMMethodMMM:(UIColor*)textColor;
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                   selectedImageName:(NSString *)selectedImageName
-                           titleText:(NSString *)titleText
-                            fontSize:(CGFloat)size
-                           textColor:(UIColor *)textColor
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                   selectedImageName_MMMethodMMM:(NSString *)selectedImageName
+                           titleText_MMMethodMMM:(NSString *)titleText
+                            fontSize_MMMethodMMM:(CGFloat)size
+                           textColor_MMMethodMMM:(UIColor *)textColor
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target;
+                              target_MMMethodMMM:(id)target;
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                   selectedImageName:(NSString *)selectedImageName
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                   selectedImageName_MMMethodMMM:(NSString *)selectedImageName
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target;
+                              target_MMMethodMMM:(id)target;
 
-+ (UIButton *)initBtnWithNormalImage:(NSString *)normalImageName
-                    highlightedImage:(NSString *)highlightedImageName
-                                 tag:(NSUInteger)tag
++ (UIButton *)initBtnWithNormalImage_MMMethodMMM:(NSString *)normalImageName
+                    highlightedImage_MMMethodMMM:(NSString *)highlightedImageName
+                                 tag_MMMethodMMM:(NSUInteger)tag
                             selector:(SEL)selector
-                              target:(id)target;
+                              target_MMMethodMMM:(id)target;
 
 
-+ (UIButton *)initBtnWithTitleText:(NSString *)titleText
-                          fontSize:(CGFloat)size
-                         textColor:(UIColor *)textColor
-                               tag:(NSUInteger)tag
++ (UIButton *)initBtnWithTitleText_MMMethodMMM:(NSString *)titleText
+                          fontSize_MMMethodMMM:(CGFloat)size
+                         textColor_MMMethodMMM:(UIColor *)textColor
+                               tag_MMMethodMMM:(NSUInteger)tag
                           selector:(SEL)selector
-                            target:(id)target;
+                            target_MMMethodMMM:(id)target;
 
-+ (UIButton *)initBtnWithTitleText:(NSString *)titleText
-                          fontSize:(CGFloat)size
-                         textColor:(UIColor *)textColor;
++ (UIButton *)initBtnWithTitleText_MMMethodMMM:(NSString *)titleText
+                          fontSize_MMMethodMMM:(CGFloat)size
+                         textColor_MMMethodMMM:(UIColor *)textColor;
 
 //+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
-//                           tag:(NSUInteger)tag
+//                           tag_MMMethodMMM:(NSUInteger)tag
 //                      selector:(SEL)selector
-//                           target:(id)target;
+//                           target_MMMethodMMM:(id)target;
 
-+(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg;
-+(void)showAlertTips:(UIViewController *)viewController msg:(NSString *)msg okHandler:(void (^ __nullable)(UIAlertAction *action))handler;
++(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg;
++(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg okHandler_MMMethodMMM:(void (^ __nullable)(UIAlertAction *action))handler;
 
 @end
 

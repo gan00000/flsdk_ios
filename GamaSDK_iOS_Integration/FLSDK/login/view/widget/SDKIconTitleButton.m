@@ -17,13 +17,13 @@
 
 
 
-- (instancetype)initBtnViewWithType:(SDK_ICON_TITLE_BUTTON_TYPE)type tag:(NSUInteger)tag selector:(SEL)selector target:(id)target
+- (instancetype)initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target
 {
     self = [super init];
     if (self) {
         if(type == SDK_ICON_TITLE_BUTTON_TYPE_FB || type == SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB)
         {
-            //self.backgroundColor = [UIColor colorWithHexString:@"#3D5C9A"];
+            //self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3D5C9A"];
             self.layer.contents = (id)(GetImage(@"sdk_btn_fb_bg.png").CGImage);
         }else{
              self.layer.contents = (id)(GetImage(@"sdk_btn_bg.png").CGImage);
@@ -97,7 +97,7 @@
         }];
               
         //账号
-        UIButton *mButton = [UIUtil initBtnWithTitleText:nil fontSize:14 textColor:nil tag:tag selector:selector target:target];//[SdkUtil initBtnWithTag:tag selector:selector target:target];
+        UIButton *mButton = [UIUtil initBtnWithTitleText_MMMethodMMM:nil fontSize_MMMethodMMM:14 textColor_MMMethodMMM:nil tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];//[SdkUtil initBtnWithTag:tag selector:selector target_MMMethodMMM:target];
         mButton.backgroundColor = [UIColor clearColor];
         [self addSubview:mButton];
           

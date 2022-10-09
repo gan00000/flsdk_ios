@@ -36,7 +36,7 @@
  *
  *	@return	一个data
  */
-- (NSData *)gama_AES128EncryptWithKey:(NSString *)key iv:(NSString *)iv;
+- (NSData *)gama_AES128EncryptWithKey_MMMethodMMM:(NSString *)key iv_MMMethodMMM:(NSString *)iv;
 
 /**
  *	@brief	AES128解密
@@ -46,6 +46,6 @@
  *
  *	@return	一个data
  */
-- (NSData *)gama_AES128DecryptWithKey:(NSString *)key iv:(NSString *)iv;
+- (NSData *)gama_AES128DecryptWithKey_MMMethodMMM:(NSString *)key iv_MMMethodMMM:(NSString *)iv;
 
 @end

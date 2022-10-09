@@ -15,28 +15,28 @@
 
 @implementation CCSkyHourFunction
 
-+ (NSString *)getBundleName
++ (NSString *)getBundleName_MMMethodMMM
 {
-    return [CCSkyHourFunction getProjectInfoPlist][@"CFBundleName"];
+    return [CCSkyHourFunction getProjectInfoPlist_MMMethodMMM][@"CFBundleName"];
 }
 
-+ (NSString *)getBundleIdentifier
++ (NSString *)getBundleIdentifier_MMMethodMMM
 {
-    return [CCSkyHourFunction getProjectInfoPlist][@"CFBundleIdentifier"];
+    return [CCSkyHourFunction getProjectInfoPlist_MMMethodMMM][@"CFBundleIdentifier"];
 }
 
-+ (NSString *)getBundleShortVersionString
++ (NSString *)getBundleShortVersionString_MMMethodMMM
 {
-    return [CCSkyHourFunction getProjectInfoPlist][@"CFBundleShortVersionString"];
+    return [CCSkyHourFunction getProjectInfoPlist_MMMethodMMM][@"CFBundleShortVersionString"];
 }
 
-+ (NSString *)getBundleVersion
++ (NSString *)getBundleVersion_MMMethodMMM
 {
-    return [CCSkyHourFunction getProjectInfoPlist][@"CFBundleVersion"];
+    return [CCSkyHourFunction getProjectInfoPlist_MMMethodMMM][@"CFBundleVersion"];
 }
 
 #pragma mark - 获取时间戳
-+(NSString *)getTimeStamp
++(NSString *)getTimeStamp_MMMethodMMM
 {
     double secondTime=[[[NSDate alloc]init]timeIntervalSince1970];
     double millisecondTime=secondTime*1000;
@@ -48,7 +48,7 @@
 }
 
 #pragma mark - 获取当前iOS操作系统版本号
-+(NSString *)getSystemVersion
++(NSString *)getSystemVersion_MMMethodMMM
 {
     NSString * systemversion=[[UIDevice currentDevice] systemVersion];
 
@@ -56,7 +56,7 @@
 }
 
 #pragma mark - 获取当前设备类型
-+(NSString *)getDeviceVersion
++(NSString *)getDeviceVersion_MMMethodMMM
 {
     size_t size;
     sysctlbyname("hw.machine", NULL, &size, NULL, 0);
@@ -66,15 +66,15 @@
     free(machine);
     return deviceType;
 }
-+(NSString *)getDeviceType
++(NSString *)getDeviceType_MMMethodMMM
 {
-    NSString *deviceType = [self getDeviceVersion];
+    NSString *deviceType = [self getDeviceVersion_MMMethodMMM];
     
     return deviceType;
 }
 
 #pragma mark - 获取MAC地址
-+(NSString *)getMacaddress
++(NSString *)getMacaddress_MMMethodMMM
 {
 	int                    mib[6];
 	size_t                len;
@@ -119,10 +119,10 @@
 }
 
 #pragma mark - 获取IDFA
-+(NSString *)getIdfa
++(NSString *)getIdfa_MMMethodMMM
 {
     NSString *idfaStr = nil;
-    if ([[self getSystemVersion] intValue] >= 6)
+    if ([[self getSystemVersion_MMMethodMMM] intValue] >= 6)
     {
         if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
             idfaStr = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
@@ -139,16 +139,16 @@
 }
 
 #pragma mark - 获取IP地址
-+(NSString *)getIPAddress
++(NSString *)getIPAddress_MMMethodMMM
 {
     return @"";
 }
 
 #pragma mark - 获取当前ViewController
-+ (UIViewController *)getCurrentViewController
++ (UIViewController *)getCurrentViewController_MMMethodMMM
 {
     
-    UIWindow *keyWindow = [self getCurrentWindow];
+    UIWindow *keyWindow = [self getCurrentWindow_MMMethodMMM];
     // SDK expects a key window at this point, if it is not, make it one
     if (keyWindow !=  nil && !keyWindow.isKeyWindow) {
         SDK_LOG(@"Unable to obtain a key window, marking as keyWindow");
@@ -162,7 +162,7 @@
     return topController;
 }
 
-+ (UIWindow *)getCurrentWindow
++ (UIWindow *)getCurrentWindow_MMMethodMMM
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if (window == nil || window.windowLevel != UIWindowLevelNormal) {
@@ -179,16 +179,16 @@
 }
 
 #pragma mark - 获取当前屏幕尺寸
-//+(CGRect)getCurrentScreenFrame
+//+(CGRect)getCurrentScreenFrame_MMMethodMMM
 //{
 //    CGRect currentScreenSize;
 //    if (IS_INTERFACE_THWARTWISE_IN)//如果是横屏幕的游戏
 //    {
-//        currentScreenSize = [self rectFromWinSize_Landscape];
+//        currentScreenSize = [self rectFromWinSize_Landscape_MMMethodMMM];
 //    }
 //    else
 //    {
-//        currentScreenSize = [self rectFromWinSize_Portrait];
+//        currentScreenSize = [self rectFromWinSize_Portrait_MMMethodMMM];
 //    }
 //    //判断全打印
 //    NSString * systemlog=[NSString stringWithFormat:@" screen_frame:w%f_h%f",
@@ -197,7 +197,7 @@
 //    return currentScreenSize;
 //}
 
-+ (CGRect)rectFromWinSize_Landscape
++ (CGRect)rectFromWinSize_Landscape_MMMethodMMM
 {
     CGRect retult_ = [[UIScreen mainScreen] bounds];
     
@@ -211,7 +211,7 @@
     return retult_;
 }
 
-+ (CGRect)rectFromWinSize_Portrait
++ (CGRect)rectFromWinSize_Portrait_MMMethodMMM
 {
     CGRect retult_;
     retult_ = [[UIScreen mainScreen] bounds];
@@ -227,7 +227,7 @@
 }
 
 #pragma mark - 判断当前网络状态,是否联网
-+(BOOL)connectedToNetWork
++(BOOL)connectedToNetWork_MMMethodMMM
 {
     struct sockaddr_in zeroAddress;
     bzero(&zeroAddress, sizeof(zeroAddress));
@@ -249,7 +249,7 @@
 }
 
 #pragma mark - 获取日期
-+(NSString *)getTimeDate
++(NSString *)getTimeDate_MMMethodMMM
 {
     NSDate * nowDate=[NSDate date];
     NSDateFormatter * dateFormatter=[[NSDateFormatter alloc] init];
@@ -258,7 +258,7 @@
     return locationString;
 }
 
-+(NSString *)getTodayInfo
++(NSString *)getTodayInfo_MMMethodMMM
 {
     NSDate *senddate = [NSDate date];
     NSCalendar  *cal=[NSCalendar  currentCalendar];
@@ -270,7 +270,7 @@
 }
 
 #pragma mark - 获取项目配置信息
-+(NSDictionary *)getProjectInfoPlist
++(NSDictionary *)getProjectInfoPlist_MMMethodMMM
 {
     return [[NSBundle mainBundle]infoDictionary];
 }
@@ -278,7 +278,7 @@
 #pragma mark - － － － － － － － －
 
 #pragma mark - 进行md5加密
-+(NSString *)getMD5StrFromString:(NSString *)beforeMD5String
++(NSString *)getMD5StrFromString_MMMethodMMM:(NSString *)beforeMD5String
 {
     const char * cString = [beforeMD5String UTF8String];
     unsigned char result[16];
@@ -294,7 +294,7 @@
 }
 
 #pragma mark - 解析URL
-+(NSDictionary*)parseURLParams:(NSString *)query
++(NSDictionary*)parseURLParams_MMMethodMMM:(NSString *)query
 {
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
@@ -336,18 +336,18 @@
 }
 
 #pragma mark - URL转码
-//+(NSString *)urlEcodingFromString:(NSString *)aString
+//+(NSString *)urlEcodingFromString_MMMethodMMM:(NSString *)aString
 //{
 //    return [aString gamaUrlEncodeString];
 //}
 
 
 #pragma mark - 获取当前系统语言（与服务器的语言并不一样，请注意使用
-+ (NSString*)getPreferredLanguage
++ (NSString*)getPreferredLanguage_MMMethodMMM
 {
     // 获取系统语言
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-    if ([CCSkyHourFunction getSystemVersion].intValue >= 9.0) {
+    if ([CCSkyHourFunction getSystemVersion_MMMethodMMM].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
         NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
         NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
@@ -378,11 +378,11 @@
 //        return;
 //    }
 //
-//    [SDKConReader setBundleInfo];
+//    [SDKConReader setBundleInfo_MMMethodMMM];
 //}
 
 // Value暂添加NSString、NSDictionary两种类型的支持
-//+ (BOOL)checkValue:(id)value key:(NSString *)key andURLScheme:(NSString *)urlScheme andURLIdentifier:(NSString *)identifier
+//+ (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier
 //{
 //    static NSDictionary *infoDic = nil;
 //    static NSArray *urlTypes = nil;
@@ -450,19 +450,19 @@
 //    // 配置异常
 //    showTips = [NSString stringWithFormat:@"Info.plist文件配置不完整：%@%@%@；\n请同时参考SDK配置文档！",externalTip,identifierTip,urlSchemeTip];
 //    dispatch_async(dispatch_get_main_queue(), ^{
-//        [GamaAlertView showAlertWithMessage:showTips];
+//        [GamaAlertView showAlertWithMessage_MMMethodMMM:showTips];
 //    });
 //    return NO;
 //}
 
 #pragma mark - 时间间隔判断
-+(BOOL)isTimeOnArrivalFromLastInitWithEvent:(NSString *)event
-                                      Years:(NSUInteger)years
-                                     months:(NSUInteger)months
-                                       days:(NSUInteger)days
-                                      hours:(NSUInteger)hours
-                                    minutes:(NSUInteger)minutes
-                                    seconds:(NSUInteger)seconds;
++(BOOL)isTimeOnArrivalFromLastInitWithEvent_MMMethodMMM:(NSString *)event
+                                      Years_MMMethodMMM:(NSUInteger)years
+                                     months_MMMethodMMM:(NSUInteger)months
+                                       days_MMMethodMMM:(NSUInteger)days
+                                      hours_MMMethodMMM:(NSUInteger)hours
+                                    minutes_MMMethodMMM:(NSUInteger)minutes
+                                    seconds_MMMethodMMM:(NSUInteger)seconds;
 {
     if (event.length <= 0) {
         return NO;
@@ -492,7 +492,7 @@
     return NO;
 }
 
-+(BOOL)isIPhoneXSeries
++(BOOL)isIPhoneXSeries_MMMethodMMM
 {
     BOOL iPhoneXSeries = NO;
     if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {

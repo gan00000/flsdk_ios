@@ -27,6 +27,6 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
  */
 @property (nonatomic, copy) NSString *message;
 
-- (BOOL)isRequestSuccess;
+- (BOOL)isRequestSuccess_MMMethodMMM;
 @end
 

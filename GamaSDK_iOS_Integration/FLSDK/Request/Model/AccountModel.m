@@ -11,7 +11,7 @@
 @implementation AccountModel
 
 
-- (void)initData {
+- (void)initData_MMMethodMMM {
     self.account = @"";
     self.password = @"";
     self.lastLoginTime = @"";
@@ -35,7 +35,7 @@
     self = [super init];
     if (self) {
         NSLog(@"AccountModel init");
-        [self initData];
+        [self initData_MMMethodMMM];
         
     }
     return self;

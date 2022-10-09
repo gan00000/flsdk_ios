@@ -18,7 +18,7 @@ static ResReader * coreReader;
 static dispatch_once_t onceToken;
 
 
-+ (ResReader *)reader
++ (ResReader *)reader_MMMethodMMM
 {
     
     dispatch_once(&onceToken,^{
@@ -44,9 +44,9 @@ static dispatch_once_t onceToken;
         SDK_LOG(@"reader init");
 //        self.areaCodeDic = [NSMutableDictionary dictionary];
         self.areaInfoArray = [NSMutableArray array];
-        [self copyConfigeFileToDocument];
+        [self copyConfigeFileToDocument_MMMethodMMM];
         
-//        [self readCoreConfInfo];
+//        [self readCoreConfInfo_MMMethodMMM];
         
 //        [self checkInfoPlistConfiguration];
         
@@ -54,14 +54,14 @@ static dispatch_once_t onceToken;
         self.ISPRINT=YES;
         //[self setWhetherPrint];
         
-        [self setBundleInfo];
+        [self setBundleInfo_MMMethodMMM];
         
     }
     return self;
 }
 
 //复制配置文件到Documents，根据版本号CFBundleShortVersionString更新
-- (void)copyConfigeFileToDocument
+- (void)copyConfigeFileToDocument_MMMethodMMM
 {
     
   
@@ -72,7 +72,7 @@ static dispatch_once_t onceToken;
 //    NSFileManager *fileManager = [NSFileManager defaultManager];
     
     //读取bundle
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName_MMMethodMMM] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -118,7 +118,7 @@ static dispatch_once_t onceToken;
     NSError * error = nil;
     [[NSFileManager defaultManager] copyItemAtPath:infoPlistPath toPath:configDesPath error:&error];
     if (error) {
-//        [self copyConfigeFileToDocument];
+//        [self copyConfigeFileToDocument_MMMethodMMM];
         SDK_LOG(@"config copyItemAtPath error:%@",error);
     }else{
         SDK_LOG(@"配置文件复制成功");
@@ -127,30 +127,30 @@ static dispatch_once_t onceToken;
    
 }
 
-- (void)reloadCoreConf{
+- (void)reloadCoreConf_MMMethodMMM{
     
 }
 
--(NSDictionary *)coreConfDic{
+-(NSDictionary *)coreConfDic_MMMethodMMM{
     if (!_coreConfDic) {
-        _coreConfDic = [self readCoreConfInfo];
+        _coreConfDic = [self readCoreConfInfo_MMMethodMMM];
     }
     return _coreConfDic;
 }
 
--(NSDictionary *)mainBundleConfDic{
+-(NSDictionary *)mainBundleConfDic_MMMethodMMM{
     if (!_mainBundleConfDic) {
-        _mainBundleConfDic = [self readMainBundleCoreConfInfo];
+        _mainBundleConfDic = [self readMainBundleCoreConfInfo_MMMethodMMM];
     }
     return _mainBundleConfDic;
 }
 
 #pragma mark -
 //从文件中读取配置信息
--(NSDictionary *)readCoreConfInfo
+-(NSDictionary *)readCoreConfInfo_MMMethodMMM
 {
     //1.先读取sdk bundle里面
-    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
+    NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName_MMMethodMMM] withExtension:@"bundle"];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -174,7 +174,7 @@ static dispatch_once_t onceToken;
     return infoDic;
 }
 
--(NSDictionary *)readMainBundleCoreConfInfo
+-(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
     //读取自定义的 plist文件的写法
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
@@ -198,7 +198,7 @@ static dispatch_once_t onceToken;
 
 
 #pragma mark - 获取某个key对应的确定的配置值
--(NSString *)getStringForKey:(NSString *)key
+-(NSString *)getStringForKey_MMMethodMMM:(NSString *)key
 {
     NSString *strconfig = [self.mainBundleConfDic objectForKey:key];
     if (strconfig && ![strconfig isEqualToString:@""]) {
@@ -210,10 +210,10 @@ static dispatch_once_t onceToken;
         return strconfig;
     }
     return @"";
-//    return [self getLocalizedStringForKey:key];
+//    return [self getLocalizedStringForKey_MMMethodMMM:key];
 }
 
--(BOOL)getBoolForKey:(NSString *)key
+-(BOOL)getBoolForKey_MMMethodMMM:(NSString *)key
 {
     
 //    return [self.coreConfDic objectForKey:key];
@@ -231,7 +231,7 @@ static dispatch_once_t onceToken;
     return boolValue;
 }
 
--(NSString *)getLocalizedStringForKey:(NSString *)key
+-(NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key
 {
     return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
 }
@@ -239,11 +239,11 @@ static dispatch_once_t onceToken;
 //
 //
 //#pragma mark - 初始化 Bundle
-- (void)setBundleInfo {
+- (void)setBundleInfo_MMMethodMMM {
 
     NSString *languageStr = @"zh-Hant";
     
-    if ([self isMoreLanguage]) {//是否使用多语言
+    if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
         
         NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
         if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
@@ -263,7 +263,7 @@ static dispatch_once_t onceToken;
     self.m_stringsBundle = [NSBundle mainBundle];
     self.m_stringsName = @"Localizable";
 
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName] withExtension:@"bundle"];
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName_MMMethodMMM] withExtension:@"bundle"];
 
     if (bundleURL) {
 
@@ -278,77 +278,77 @@ static dispatch_once_t onceToken;
     }
 }
 
--(NSString *) getGameCode
+-(NSString *)getGameCode_MMMethodMMM
 {
-    return [self getStringForKey:@"gameCode"];
+    return [self getStringForKey_MMMethodMMM:@"gameCode"];
 }
--(NSString *) getAppkey
+-(NSString *)getAppkey_MMMethodMMM
 {
-    return [self getStringForKey:@"appKey"];
+    return [self getStringForKey_MMMethodMMM:@"appKey"];
 }
--(NSString *) getGameLanguage
+-(NSString *)getGameLanguage_MMMethodMMM
 {
-    if ([self isMoreLanguage]) {
-        return [SUtil getServerLanguage];
+    if ([self isMoreLanguage_MMMethodMMM]) {
+        return [SUtil getServerLanguage_MMMethodMMM];
     }
-    if ([StringUtil isNotEmpty:[self getStringForKey:@"gameLanguage"]]) {
-        return [self getStringForKey:@"gameLanguage"];
+    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
+        return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
     }
     return @"zh_TW";
 }
 
--(NSString *) getLoginUrl
+-(NSString *)getLoginUrl_MMMethodMMM
 {
-    return [self getStringForKey:@"sdk_url_login"];
+    return [self getStringForKey_MMMethodMMM:@"sdk_url_login"];
 }
 
--(NSString *) getPayUrl
+-(NSString *)getPayUrl_MMMethodMMM
 {
-    return [self getStringForKey:@"sdk_url_pay"];
+    return [self getStringForKey_MMMethodMMM:@"sdk_url_pay"];
 }
 
--(NSString *) getCdnUrl
+-(NSString *)getCdnUrl_MMMethodMMM
 {
-    return [self getStringForKey:@"sdk_url_cdn"];
+    return [self getStringForKey_MMMethodMMM:@"sdk_url_cdn"];
 }
 
--(NSString *) getLogUrl
+-(NSString *)getLogUrl_MMMethodMMM
 {
-    return [self getStringForKey:@"sdk_url_log"];
+    return [self getStringForKey_MMMethodMMM:@"sdk_url_log"];
 }
 
--(NSString *) getTermsServiceUrl
+-(NSString *)getTermsServiceUrl_MMMethodMMM
 {
-    return [self getStringForKey:@"terms_service_url"];
+    return [self getStringForKey_MMMethodMMM:@"terms_service_url"];
 }
 
--(NSString *) getAfDevKey
+-(NSString *)getAfDevKey_MMMethodMMM
 {
-    return [self getStringForKey:@"af_dev_key"];
+    return [self getStringForKey_MMMethodMMM:@"af_dev_key"];
 }
 
--(NSString *) getAppId
+-(NSString *)getAppId_MMMethodMMM
 {
-    return [self getStringForKey:@"sdk_appId"];
+    return [self getStringForKey_MMMethodMMM:@"sdk_appId"];
 }
 
--(BOOL) isAdDebug
+-(BOOL)isAdDebug_MMMethodMMM
 {
-    return [self getBoolForKey:@"sdk_ad_bug"];
+    return [self getBoolForKey_MMMethodMMM:@"sdk_ad_bug"];
 }
 
--(BOOL) isVersion2
+-(BOOL)isVersion2_MMMethodMMM
 {
-    return [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
 }
 
--(BOOL) isMoreLanguage
+-(BOOL)isMoreLanguage_MMMethodMMM
 {
-    return [self getBoolForKey:@"sdk_more_language"];
+    return [self getBoolForKey_MMMethodMMM:@"sdk_more_language"];
 }
 
 
-- (NSString *)getSdkBundleName
+- (NSString *)getSdkBundleName_MMMethodMMM
 {
     NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
     if (bundleName && ![bundleName isEqualToString:@""]) {
@@ -357,7 +357,7 @@ static dispatch_once_t onceToken;
     return SDK_BUNDLE_NAME_v1;
 }
 
--(NSString *) getFacebookAppId
+-(NSString *)getFacebookAppId_MMMethodMMM
 {
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];

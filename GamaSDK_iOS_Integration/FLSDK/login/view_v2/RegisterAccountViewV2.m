@@ -34,22 +34,22 @@
 }
 
 
-//- (instancetype)initViewWithBindType:(NSInteger) bindType
-- (instancetype)initView
+//- (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType
+- (instancetype)initView_MMMethodMMM
 {
-    self = [self initViewWithBindType:0];
+    self = [self initViewWithBindType_MMMethodMMM:0];
     if (!self) {
         return nil;
     }
     return self;
 }
-//- (instancetype)initView
-- (instancetype)initViewWithBindType:(NSInteger) bindType
+//- (instancetype)initView_MMMethodMMM
+- (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType
 {
     self = [super init];
     if (self) {
         
-//        UIColor *color = [UIColor colorWithHexString:ContentViewBgColor];
+//        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
 //        self.backgroundColor = color;// 底图透明，控件不透明
 //        self.layer.cornerRadius = 10; //设置圆角
         //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
@@ -58,7 +58,7 @@
         
         self.bindType = bindType;//綁定賬號
         //title
-//        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle:@"註冊會員"];
+//        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:@"註冊會員"];
 //        mLoginTitleView.delegate = self.delegate;
 //
 //
@@ -71,7 +71,7 @@
 //        }];
        
         //账号
-        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
@@ -85,7 +85,7 @@
         
         
         //密码
-        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         [self addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -100,9 +100,9 @@
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
         tipsUILabel.text = @"text_reg_tips".localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
-//        tipsUILabel.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+//        tipsUILabel.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
         tipsUILabel.numberOfLines = 0; //0为多行
-        tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
     
         [self addSubview:tipsUILabel];
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -112,7 +112,7 @@
         }];
         
 //        //账号
-//        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
+//        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
 //
 //        [self addSubview:accountSDKTextFiledView];
 //
@@ -130,7 +130,7 @@
 //
 //
 //        //密碼
-//        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
+//        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
 //
 //        [self addSubview:passwordSDKTextFiledView];
 //
@@ -144,7 +144,7 @@
 //
 //
 //        //再次輸入密碼
-//        passwordAgainSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_Password_Again)];
+//        passwordAgainSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
 //
 //        [self addSubview:passwordAgainSDKTextFiledView];
 //
@@ -157,7 +157,7 @@
 //        }];
 //
 //
-//        mPhoneView = [[PhoneView alloc] initView];
+//        mPhoneView = [[PhoneView alloc] initView_MMMethodMMM];
 //
 //        [self addSubview:mPhoneView];
 //        [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -168,7 +168,7 @@
 //        }];
 //
 //        //验证码
-//        vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType:(SDKTextFiledView_Type_VfCode)];
+//        vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
 //
 //        [self addSubview:vfCodeFiledView];
 //        [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -178,13 +178,13 @@
 //            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
 //        }];
 //
-//        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+//        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 //
-//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:@"#ff3e37"].CGColor;
+//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#ff3e37"].CGColor;
 //        getVfCodeBtn.layer.borderWidth = 1;
 //        getVfCodeBtn.layer.cornerRadius = 10;
 //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-//        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString:@"#ff3e37"] forState:0];
+//        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#ff3e37"] forState:0];
 //        [self addSubview:getVfCodeBtn];
 //        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 //            make.top.bottom.equalTo(vfCodeFiledView);
@@ -194,9 +194,9 @@
 //        }];
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        regAccountBtn = [UIUtil initBtnWithTitleText:@"text_confire_reg".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_confire_reg".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
+        regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:regAccountBtn];
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -212,7 +212,7 @@
 //        loginTipsLable.textAlignment = NSTextAlignmentCenter;
 //        loginTipsLable.backgroundColor = [UIColor clearColor];
 //        loginTipsLable.numberOfLines = 1;
-//        loginTipsLable.textColor = [UIColor colorWithHexString:@"#FF3E37"];
+//        loginTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#FF3E37"];
 //        loginTipsLable.adjustsFontSizeToFitWidth = YES;
 //
 //        [self addSubview:loginTipsLable];
@@ -238,7 +238,7 @@
 }
 
 
-- (void)registerViewBtnAction:(UIButton *)sender
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
@@ -248,22 +248,22 @@
             SDK_LOG(@"kRegisterAccountActTag");
             NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
             NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;
-//            NSString *areaCode = [mPhoneView getPhoneAreaCode];
-//            NSString *phoneNum = [mPhoneView getPhoneNumber];
+//            NSString *areaCode = [mPhoneView getPhoneAreaCode_MMMethodMMM];
+//            NSString *phoneNum = [mPhoneView getPhoneNumber_MMMethodMMM];
 //            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
             
 //            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
-            if (![SdkUtil validUserName:accountName]) {
+            if (![SdkUtil validUserName_MMMethodMMM:accountName]) {
                 
                 return;
             }
             
-            if (![SdkUtil validPwd:pwd]) {
+            if (![SdkUtil validPwd_MMMethodMMM:pwd]) {
                 return;
             }
           
-            [LoginHelper accountRegister:self.delegate view:self areaCode:@"" name:accountName password:pwd phoneNum:@"" vfCode:@""];
+            [LoginHelper accountRegister_MMMethodMMM:self.delegate view_MMMethodMMM:self areaCode_MMMethodMMM:@"" name:accountName password_MMMethodMMM:pwd phoneNum_MMMethodMMM:@"" vfCode_MMMethodMMM:@""];
             
         }
             break;

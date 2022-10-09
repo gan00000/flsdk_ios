@@ -14,7 +14,7 @@
  *
  *	@return	字符串，cfuuid 样例：“34B6AFC6-42B3-4ABC-A555-E0625EADA903”
  */
-+(NSString*) customUUID;
++(NSString*)customUUID_MMMethodMMM;
 
 
 @end

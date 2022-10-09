@@ -15,30 +15,30 @@
 @implementation LoginHelper
 
 
-+ (void)accountRegister:(id<LoginViewDelegate>)delegate view:(UIView *)currentView areaCode:(NSString *)areaCode name:(NSString *)name password:(NSString *)password phoneNum:(NSString *)phoneNum vfCode:(NSString *)vfCode {
-    [SDKRequest doRegisterAccountWithUserName:name
-                                  andPassword:password
-                                phoneAreaCode:areaCode
-                                  phoneNumber:phoneNum
-                                       vfCode:vfCode
-                                   interfaces:@"1"
-                               otherParamsDic:nil
-                                 successBlock:^(id responseData) {
++ (void)accountRegister_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView areaCode_MMMethodMMM:(NSString *)areaCode name:(NSString *)name password_MMMethodMMM:(NSString *)password phoneNum_MMMethodMMM:(NSString *)phoneNum vfCode_MMMethodMMM:(NSString *)vfCode {
+    [SDKRequest doRegisterAccountWithUserName_MMMethodMMM:name
+                                  andPassword_MMMethodMMM:password
+                                phoneAreaCode_MMMethodMMM:areaCode
+                                  phoneNumber_MMMethodMMM:phoneNum
+                                       vfCode_MMMethodMMM:vfCode
+                                   interfaces_MMMethodMMM:@"1"
+                               otherParamsDic_MMMethodMMM:nil
+                                 successBlock_MMMethodMMM:^(id responseData) {
         
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = name;
             cc.data.password = password;
-            [SdkUtil toastMsg:GetString(@"text_account_reg_success")];
-            [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_reg_success")];
+            [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
     }
-                                   errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
+                                   errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
     }];
 }
 
-+(void) appleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView
++(void) appleLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView
 {
     if (@available(iOS 13, *)) {
         
@@ -47,36 +47,36 @@
         return;
     }
     
-    [[SAppleLogin share] makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+    [[SAppleLogin share] makeAppleCallbackSuccessBlock_MMMethodMMM:^(NSDictionary * _Nullable result) {
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
         NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
         [tempMutableDic removeObjectForKey:@"appleThirdID"];
         
-        [SDKRequest thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
+        [SDKRequest thirdLoginOrReg_MMMethodMMM:appleID andThirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE addOtherParams_MMMethodMMM:tempMutableDic successBlock_MMMethodMMM:^(id responseData) {
             
-            [SdkUtil toastMsg:GetString(@"py_login_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
             if (delegate) {
-                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_APPLE];
+                [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE];
             }
             
-        } errorBlock:^(BJError *error) {
+        } errorBlock_MMMethodMMM:^(BJError *error) {
             if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
             }
         }];
         
-    } andErrorBlock:^(NSError * _Nullable error) {
+    } andErrorBlock_MMMethodMMM:^(NSError * _Nullable error) {
         //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+        //        [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
     }];
     [[SAppleLogin share] handleAuthrization:currentView];
 }
 
 
-+(void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate
++(void)fbLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate
 {
     //    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
-    [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
+    [[FBDelegate share] loginWithPesentingViewController_MMMethodMMM:nil isForceInappLogin_MMMethodMMM:NO andIsForceReAuthorize_MMMethodMMM:NO andSuccessBlock_MMMethodMMM:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
         
         NSDictionary *otherParamsDic = nil;
         @try {
@@ -89,41 +89,41 @@
             
         }
         
-        [SDKRequest thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [SdkUtil toastMsg:GetString(@"py_login_success")];
+        [SDKRequest thirdLoginOrReg_MMMethodMMM:fbUserId andThirdPlate_MMMethodMMM:LOGIN_TYPE_FB addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
             if (delegate) {
-                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_FB];
+                [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_FB];
             }
             
-        } errorBlock:^(BJError *error) {
+        } errorBlock_MMMethodMMM:^(BJError *error) {
             if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
             }
         }];
         
-    } andFailBlock:^(NSError * _Nonnull error) {
+    } andFailBlock_MMMethodMMM:^(NSError * _Nonnull error) {
         
-    } andCancelBlock:^(NSError * _Nonnull error) {
+    } andCancelBlock_MMMethodMMM:^(NSError * _Nonnull error) {
         
     }];
 }
 
-+ (void)guestLoginAndThirdRequest:(id<LoginViewDelegate>)delegate
++ (void)guestLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate
 {
     
-    NSString *loginId =[SUtil getGamaUUID];
-    [SDKRequest freeLoginOrRegister:loginId successBlock:^(id responseData) {
+    NSString *loginId =[SUtil getGamaUUID_MMMethodMMM];
+    [SDKRequest freeLoginOrRegister_MMMethodMMM:loginId successBlock_MMMethodMMM:^(id responseData) {
         
-        [SdkUtil toastMsg:GetString(@"py_login_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.thirdId = loginId;
-            [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GUEST];
+            [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_GUEST];
         }
         
-    } errorBlock:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BJError *error) {
         if (error && error.message) {
-            [AlertUtil showAlertWithMessage:error.message];
+            [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
         }
         
     }];
@@ -131,10 +131,10 @@
 }
 
 
-+ (void)googleLoginAndThirdRequest:(id<LoginViewDelegate>)delegate{
++ (void)googleLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate{
     
     
-    [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
+    [GIDDelegate loginWithClientID_MMMethodMMM:@"" presentingViewController:appTopViewController successCallback_MMMethodMMM:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
         
         NSDictionary *otherParamsDic = nil;
         @try {
@@ -148,31 +148,31 @@
             
         }
         
-        [SDKRequest thirdLoginOrReg:userId andThirdPlate:LOGIN_TYPE_GOOGLE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [SdkUtil toastMsg:GetString(@"py_login_success")];
+        [SDKRequest thirdLoginOrReg_MMMethodMMM:userId andThirdPlate_MMMethodMMM:LOGIN_TYPE_GOOGLE addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
             if (delegate) {
-                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_GOOGLE];
+                [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_GOOGLE];
             }
             
-        } errorBlock:^(BJError *error) {
+        } errorBlock_MMMethodMMM:^(BJError *error) {
             if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
             }
         }];
         
         
-    } failCallback:^(NSString * _Nonnull msg) {
+    } failCallback_MMMethodMMM:^(NSString * _Nonnull msg) {
         
-    } cancelCallback:^(NSString * _Nonnull msg) {
+    } cancelCallback_MMMethodMMM:^(NSString * _Nonnull msg) {
         
     }];
 }
 
 
-+ (void)lineLoginAndThirdRequest:(id<LoginViewDelegate>)delegate{
++ (void)lineLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate{
     //    LineDelegate *mLineDelegate = [[LineDelegate alloc] init];
     
-    [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+    [[LineDelegate share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
         NSDictionary *otherParamsDic = nil;
         @try {
@@ -185,42 +185,42 @@
             
         }
         
-        [SDKRequest thirdLoginOrReg:userID andThirdPlate:LOGIN_TYPE_LINE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [SdkUtil toastMsg:GetString(@"py_login_success")];
+        [SDKRequest thirdLoginOrReg_MMMethodMMM:userID andThirdPlate_MMMethodMMM:LOGIN_TYPE_LINE addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
             if (delegate) {
-                [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_LINE];
+                [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_LINE];
             }
             
-        } errorBlock:^(BJError *error) {
+        } errorBlock_MMMethodMMM:^(BJError *error) {
             if (error && error.message) {
-                [AlertUtil showAlertWithMessage:error.message];
+                [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
             }
         }];
         
         
-    } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+    } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
     }];
 }
 
-+ (void)selfLoginAndRequest:(id<LoginViewDelegate>)delegate account:(NSString *)account pwd:(NSString *)password
++ (void)selfLoginAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password
 {
-    [SDKRequest doLoginWithAccount:account andPassword:password otherDic:nil successBlock:^(id responseData) {
-        [SdkUtil toastMsg:GetString(@"py_login_success")];
+    [SDKRequest doLoginWithAccount_MMMethodMMM:account andPassword_MMMethodMMM:password otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
             cc.data.password = password;
             cc.data.loginType = LOGIN_TYPE_SELF;
-            [delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+            [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
         
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
     }];
 }
 
-+ (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)currentAccountModel account:(NSString *)account pwd:(NSString *)password{
++ (void)bindAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(AccountModel *)currentAccountModel account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password{
     
     NSDictionary *otherParamsDic = nil;
     @try {
@@ -236,7 +236,7 @@
     if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
         //        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
-        [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
+        [[FBDelegate share] loginWithPesentingViewController_MMMethodMMM:nil isForceInappLogin_MMMethodMMM:NO andIsForceReAuthorize_MMMethodMMM:NO andSuccessBlock_MMMethodMMM:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
             
             NSMutableDictionary *fbParamsDic = nil;
             @try {
@@ -244,37 +244,37 @@
                 [fbParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
             
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:fbParamsDic];
+            [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:fbUserId thirdPlate_MMMethodMMM:LOGIN_TYPE_FB otherParamsDic_MMMethodMMM:fbParamsDic];
             
-        } andFailBlock:^(NSError * _Nonnull error) {
+        } andFailBlock_MMMethodMMM:^(NSError * _Nonnull error) {
             
-        } andCancelBlock:^(NSError * _Nonnull error) {
+        } andCancelBlock_MMMethodMMM:^(NSError * _Nonnull error) {
             
         }];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
-        [[SAppleLogin share] makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
+        [[SAppleLogin share] makeAppleCallbackSuccessBlock_MMMethodMMM:^(NSDictionary * _Nullable result) {
             NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
             NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
             [tempMutableDic removeObjectForKey:@"appleThirdID"];
             
             [tempMutableDic addEntriesFromDictionary:otherParamsDic];
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:appleID thirdPlate:LOGIN_TYPE_APPLE otherParamsDic:tempMutableDic];
+            [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:appleID thirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE otherParamsDic_MMMethodMMM:tempMutableDic];
             
-        } andErrorBlock:^(NSError * _Nullable error) {
+        } andErrorBlock_MMMethodMMM:^(NSError * _Nullable error) {
             
         }];
         [[SAppleLogin share] handleAuthrization:currentView];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         
-        NSString *loginId =[SUtil getGamaUUID];
-        [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:loginId thirdPlate:LOGIN_TYPE_GUEST otherParamsDic:otherParamsDic];
+        NSString *loginId =[SUtil getGamaUUID_MMMethodMMM];
+        [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:loginId thirdPlate_MMMethodMMM:LOGIN_TYPE_GUEST otherParamsDic_MMMethodMMM:otherParamsDic];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
-        [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
+        [GIDDelegate loginWithClientID_MMMethodMMM:@"" presentingViewController:appTopViewController successCallback_MMMethodMMM:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
             
             NSMutableDictionary *ggParamsDic = nil;
             @try {
@@ -285,18 +285,18 @@
                 [ggParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
             
-            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userId thirdPlate:LOGIN_TYPE_GOOGLE otherParamsDic:ggParamsDic];
+            [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:userId thirdPlate_MMMethodMMM:LOGIN_TYPE_GOOGLE otherParamsDic_MMMethodMMM:ggParamsDic];
             
             
-        } failCallback:^(NSString * _Nonnull msg) {
+        } failCallback_MMMethodMMM:^(NSString * _Nonnull msg) {
             
-        } cancelCallback:^(NSString * _Nonnull msg) {
+        } cancelCallback_MMMethodMMM:^(NSString * _Nonnull msg) {
             
         }];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         
-        //        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        //        [[LineDelegate share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         //
         //            NSDictionary *otherParamsDic = nil;
         //            @try {
@@ -309,17 +309,17 @@
         //
         //            }
         //
-        //            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
+        //            [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:userID thirdPlate_MMMethodMMM:LOGIN_TYPE_LINE otherParamsDic_MMMethodMMM:otherParamsDic];
         //
         //
-        //        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        //        } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         //
         //        }];
         
-        if ([StringUtil isEmpty:currentAccountModel.thirdId]) {
+        if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.thirdId]) {
             return;
         }
-        [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:currentAccountModel.thirdId thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
+        [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:LOGIN_TYPE_LINE otherParamsDic_MMMethodMMM:otherParamsDic];
         
     }
     
@@ -327,38 +327,38 @@
     
 }
 
-+ (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(NSString *)account pwd:(NSString *)password thirdId:(NSString *)thirdId  thirdPlate:(NSString *)thirdPlate otherParamsDic:(NSDictionary *)otherParamsDic
++ (void)bindAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password thirdId_MMMethodMMM:(NSString *)thirdId  thirdPlate_MMMethodMMM:(NSString *)thirdPlate otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
 {
     
-    [SDKRequest doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:thirdId thirdPlate:thirdPlate otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        [SdkUtil toastMsg:GetString(@"text_account_bind_success")];
+    [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:thirdId thirdPlate_MMMethodMMM:thirdPlate otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_bind_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
             cc.data.password = password;
             cc.data.loginType = LOGIN_TYPE_SELF;
-            [delegate handleLoginOrRegSuccess:cc thirdPlate:LOGIN_TYPE_SELF];
+            [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
         
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
     }];
 }
 
-+ (void)deleteAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(AccountModel *)accountMode otherParamsDic:(NSDictionary *)otherParamsDic successBlock:(void(^)())successBlock
++ (void)deleteAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(AccountModel *)accountMode otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic successBlock_MMMethodMMM:(void(^)())successBlock
 {
     
-    [SDKRequest requestDeleteUserAccount:accountMode otherParamsDic:otherParamsDic successBlock:^(id responseData) {
+    [SDKRequest requestDeleteUserAccount_MMMethodMMM:accountMode otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         
         LoginResponse *cc = (LoginResponse *)responseData;
-        [SdkUtil toastMsg:cc.message];
-        [[ConfigCoreUtil share] removeAccountByUserId:accountMode.userId];
+        [SdkUtil toastMsg_MMMethodMMM:cc.message];
+        [[ConfigCoreUtil share] removeAccountByUserId_MMMethodMMM:accountMode.userId];
         if (successBlock) {
             successBlock();
         }
         
-    } errorBlock:^(BJError *error) {
-        [AlertUtil showAlertWithMessage:error.message];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
     }];
 }
 

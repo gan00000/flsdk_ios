@@ -31,7 +31,7 @@
     
 }
 
-- (instancetype)initWithCompleter:(void (^)(void))completer
+- (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer
 {
     self = [self init];
     if (self) {
@@ -51,9 +51,9 @@
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
         
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.1];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.1];
         
-        [self landspaceView];
+        [self landspaceView_MMMethodMMM];
         
         
     }
@@ -61,7 +61,7 @@
 }
 
 
-- (void)landspaceView {
+- (void)landspaceView_MMMethodMMM {
    
     
     UIView *contentView = [[UIView alloc] init];
@@ -90,7 +90,7 @@
     }];
     
     UIView *tagView = [[UIView alloc] init];
-    tagView.backgroundColor = [UIColor colorWithHexString:BaseColor];
+    tagView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     [titleView addSubview:tagView];
     [tagView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(titleView);
@@ -102,7 +102,7 @@
     }];
     
     
-    UILabel *titleLabel = [UIUtil initLabelWithText:@"sdk_terms_title".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"sdk_terms_title".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#2A2A2A"]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
     
     [titleView addSubview:titleLabel];
@@ -114,10 +114,10 @@
         make.bottom.mas_equalTo(titleView);
     }];
     
-    UIButton *closeBtn = [UIUtil initBtnWithTitleText:@"text_close".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:BaseColor] tag:TAG_CLOSE selector:@selector(btnClickAction:) target:self];
+    UIButton *closeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_close".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     closeBtn.layer.cornerRadius = VH(32) / 2;
-    closeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
+    closeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
     closeBtn.layer.borderWidth = 0.5;
     
     [contentView addSubview:closeBtn];
@@ -129,11 +129,11 @@
         make.height.mas_equalTo(VH(32));
     }];
     
-    UIButton *okBtn = [UIUtil initBtnWithTitleText:@"text_agree_read_tips".localx fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAgreeTermsCheckBoxBtnTag selector:@selector(btnClickAction:) target:self];
+    UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_agree_read_tips".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     okBtn.layer.cornerRadius = VH(32) / 2;
-    okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
-//    okBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
+    okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+//    okBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
 //    okBtn.layer.borderWidth = 0.5;
     
     [contentView addSubview:okBtn];
@@ -147,8 +147,8 @@
     
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString:@"#E4E4E4"];
-    xView.layer.borderColor = [UIColor colorWithHexString:@"#DEDEDE"].CGColor;
+    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E4E4E4"];
+    xView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#DEDEDE"].CGColor;
     xView.layer.borderWidth = 0.6;
     [contentView addSubview:xView];
     [xView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -161,7 +161,7 @@
 
 //    UIView *contentView = [[UIView alloc] init];
 //    contentView.backgroundColor = [UIColor whiteColor];
-//    contentView.layer.borderColor = [UIColor colorWithHexString:@"#545454"].CGColor;
+//    contentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#545454"].CGColor;
 //    contentView.layer.borderWidth = 0.8;
 //    [xView addSubview:contentView];
 //    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -191,7 +191,7 @@
     
 }
 
-- (void)btnClickAction:(UIButton *)sender
+- (void)btnClickAction_MMMethodMMM:(UIButton *)sender
 {
    
     switch (sender.tag) {
@@ -217,19 +217,19 @@
     
 }
 
-+ (void)saveAgreenProvisionState:(BOOL)agreen
++ (void)saveAgreenProvisionState_MMMethodMMM:(BOOL)agreen
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     [saveDefault setBool:agreen forKey:SDK_PROVISIONS_FIRST_ENBLE];
     [saveDefault synchronize];
 }
 
-+ (BOOL)openProvision{
++ (BOOL)openProvision_MMMethodMMM{
     
-    return ![TermsViewV2 isAgreenProvision];
+    return ![TermsViewV2 isAgreenProvision_MMMethodMMM];
 }
 
-+(BOOL)isAgreenProvision
++(BOOL)isAgreenProvision_MMMethodMMM
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];

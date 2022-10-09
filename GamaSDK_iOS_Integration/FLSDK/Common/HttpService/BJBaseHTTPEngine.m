@@ -18,7 +18,7 @@
 
 @implementation BJBaseHTTPEngine
 
-- (instancetype)initWithBasePath:(NSString *)basePath {
+- (instancetype)initWithBasePath_MMMethodMMM:(NSString *)basePath {
     self = [super init];
     if (self) {
         self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
@@ -27,14 +27,14 @@
     return self;
 }
 
-- (void)updateSessionWithBlock:(void(^)(AFHTTPSessionManager *sesson))updateBlock {
+- (void)updateSessionWithBlock_MMMethodMMM:(void(^)(AFHTTPSessionManager *sesson))updateBlock {
     updateBlock(self.sessionManager);
 }
 
-- (void)getRequestWithFunctionPath:(NSString *)path
-                            params:(NSDictionary *)params
-                      successBlock:(BJHTTPSuccessBlock)successBlock
-                        errorBlock:(BJHTTPFailureBlock)errorBlock {
+- (void)getRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                            params_MMMethodMMM:(NSDictionary *)params
+                      successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
         [self.sessionManager GET:path parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -58,10 +58,10 @@
     };
 }
 
-- (void)postRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                         errorBlock:(BJHTTPFailureBlock)errorBlock {
+- (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
         
@@ -86,10 +86,10 @@
     };
 }
 
-- (void)postJsonRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                         errorBlock:(BJHTTPFailureBlock)errorBlock {
+- (void)postJsonRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
        // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{@"Content-Type" : @"application/json", @"charset":@"UTF-8"}
@@ -126,14 +126,14 @@
     };
 }
 
-- (void)fileUploadWithFunctionPath:(NSString *)functionPath
-                            params:(NSDictionary *)params
-                          fileData:(NSData *)fileData
-                          fileName:(NSString *)fileName
-                          mimeType:(NSString *)mimeType
-                     progressBlock:(BJHTTPProgressBlock)progressBlock
-                      successBlock:(BJHTTPSuccessBlock)successBlock
-                        errorBlock:(BJHTTPFailureBlock)errorBlock {
+- (void)fileUploadWithFunctionPath_MMMethodMMM:(NSString *)functionPath
+                            params_MMMethodMMM:(NSDictionary *)params
+                          fileData_MMMethodMMM:(NSData *)fileData
+                          fileName_MMMethodMMM:(NSString *)fileName
+                          mimeType_MMMethodMMM:(NSString *)mimeType
+                     progressBlock_MMMethodMMM:(BJHTTPProgressBlock)progressBlock
+                      successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     
     NSString *path = [self.sessionManager.baseURL.absoluteString stringByAppendingPathComponent:functionPath];
     NSMutableURLRequest *request = [self.sessionManager.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
@@ -167,15 +167,15 @@
     
 }
 
-- (void)imageUploadWithFunctionPath:(NSString *)functionPath
-                             params:(NSDictionary *)params
-                          imageData:(NSData *)imageData
-                          imageName:(NSString *)imageName
-                      progressBlock:(BJHTTPProgressBlock)progressBlock
-                       successBlock:(BJHTTPSuccessBlock)successBlock
-                         errorBlock:(BJHTTPFailureBlock)errorBlock {
+- (void)imageUploadWithFunctionPath_MMMethodMMM:(NSString *)functionPath
+                             params_MMMethodMMM:(NSDictionary *)params
+                          imageData_MMMethodMMM:(NSData *)imageData
+                          imageName_MMMethodMMM:(NSString *)imageName
+                      progressBlock_MMMethodMMM:(BJHTTPProgressBlock)progressBlock
+                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     
-    [self fileUploadWithFunctionPath:functionPath params:params fileData:imageData fileName:imageName mimeType:@"image/jpeg" progressBlock:progressBlock successBlock:successBlock errorBlock:errorBlock];
+    [self fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:imageData fileName_MMMethodMMM:imageName mimeType_MMMethodMMM:@"image/jpeg" progressBlock_MMMethodMMM:progressBlock successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 

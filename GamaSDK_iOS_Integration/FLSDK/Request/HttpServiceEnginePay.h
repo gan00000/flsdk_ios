@@ -15,14 +15,14 @@ typedef void (^PayServiceErrorBlock)(BJError *error);
 
 @interface HttpServiceEnginePay : NSObject
 
-+ (void)getRequestWithFunctionPath:(NSString *)path
-                            params:(NSDictionary *)params
-                      successBlock:(PayServiceSuccessBlock)successBlock
-                        errorBlock:(PayServiceErrorBlock)errorBlock;
++ (void)getRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                            params_MMMethodMMM:(NSDictionary *)params
+                      successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                        errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
 
-+ (void)postRequestWithFunctionPath:(NSString *)path
-                             params:(NSDictionary *)params
-                       successBlock:(PayServiceSuccessBlock)successBlock
-                         errorBlock:(PayServiceErrorBlock)errorBlock;
++ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+                             params_MMMethodMMM:(NSDictionary *)params
+                       successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
 
 @end

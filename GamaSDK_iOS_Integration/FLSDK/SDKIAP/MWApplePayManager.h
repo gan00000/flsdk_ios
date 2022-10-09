@@ -18,10 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MWApplePayManager : NSObject
 
-+ (instancetype)shareManager;
++ (instancetype)shareManager_MMMethodMMM;
 
 /** 检测客户端与服务器漏单情况处理*/
-- (void)checkOrderStatus;
+- (void)checkOrderStatus_MMMethodMMM;
 
 
 /**
@@ -32,9 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param productId 商品号
  @param statusBlock 回掉block
  */
-//- (void)requestProductWithOrderId:(NSString *)orderId productId:(NSString *)productId statusBlock:(XSProductStatusBlock)statusBlock;;
+//- (void)requestProductWithOrderId:(NSString *)orderId productId_MMMethodMMM:(NSString *)productId statusBlock:(XSProductStatusBlock)statusBlock;;
 
--(void)startPayWithProductId:(NSString *)productId cpOrderId:(NSString *)cpOrderId extra:(NSString *)extra gameInfo:(GameUserModel*)gameUserModel accountModel:(AccountModel*) accountModel payStatusBlock:(PayStatusBlock)payStatusBlock;
+-(void)startPayWithProductId_MMMethodMMM:(NSString *)productId cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel accountModel_MMMethodMMM:(AccountModel*) accountModel payStatusBlock_MMMethodMMM:(PayStatusBlock)payStatusBlock;
 
 @end
 

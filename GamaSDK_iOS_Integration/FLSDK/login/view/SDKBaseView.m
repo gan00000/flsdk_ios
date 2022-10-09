@@ -10,7 +10,7 @@
 
 @implementation SDKBaseView
 
-- (void)initData{
+- (void)initData_MMMethodMMM{
     
 }
 //事件的传递和响应的区别：

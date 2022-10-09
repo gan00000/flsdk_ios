@@ -29,21 +29,21 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 {
     self = [super init];
     if (self) {
-        [self addView];
+        [self addView_MMMethodMMM];
     }
     return self;
 }
 
--(void)addView{
-    [self addAccountListTableView];
+-(void)addView_MMMethodMMM{
+    [self addAccountListTableView_MMMethodMMM];
 }
 
 
 
-- (void)addAccountListTableView
+- (void)addAccountListTableView_MMMethodMMM
 {
     //获取需要显示的数据
-//    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels];//获取保存的数据
+//    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
 //     [self.accountDataList removeAllObjects];
 //     [self.accountDataList addObjectsFromArray:mAccountArray];
 //    if (!self.accountDataList) {
@@ -118,17 +118,17 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         iconName = line_smail_icon;
     }
     cell.accountUILabel.text = account;
-    cell.iconImageView.image = [UIImage res_imageNamed:iconName];
+    cell.iconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     
     kWeakSelf
     cell.mItemViewClickHander = ^(NSInteger tag) {
                 
         if (tag == kMoreAccountDeleteActTag) {
 //            [self.accountDataList removeObject:mAccountModel];
-            [[ConfigCoreUtil share] removeAccountByUserId:mAccountModel.userId];
+            [[ConfigCoreUtil share] removeAccountByUserId_MMMethodMMM:mAccountModel.userId];
             
             [self.accountDataList removeAllObjects];
-            [self.accountDataList addObjectsFromArray:[[ConfigCoreUtil share] getAccountModels]];
+            [self.accountDataList addObjectsFromArray:[[ConfigCoreUtil share] getAccountModels_MMMethodMMM]];
             
             [tableView reloadData];
             
@@ -136,7 +136,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
                 self.mAccountModelClickHander(YES, mAccountModel, self.accountDataList);
             }
             
-//            [[ConfigCoreUtil share] saveAccountModels:self.accountDataList];//保存
+//            [[ConfigCoreUtil share] saveAccountModels_MMMethodMMM:self.accountDataList];//保存
 //            if (self.accountDataList.count == 0) { //删除到位0的时候隐藏tableview和moreAccountBtn
 //
 //            }

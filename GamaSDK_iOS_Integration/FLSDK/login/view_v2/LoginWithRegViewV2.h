@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;
 
-- (instancetype)initView;
+- (instancetype)initView_MMMethodMMM;
 
 @end
 

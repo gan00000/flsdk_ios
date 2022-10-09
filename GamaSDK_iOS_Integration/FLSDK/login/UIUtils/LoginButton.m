@@ -11,10 +11,10 @@
 
 @implementation LoginButton
 
-+ (UIButton *)initBtnWithType:(BUTTON_TYPE)type
-                          tag:(NSUInteger)tag
++ (UIButton *)initBtnWithType_MMMethodMMM:(BUTTON_TYPE)type
+                          tag_MMMethodMMM:(NSUInteger)tag
                      selector:(SEL)selector
-                       target:(id)target
+                       target_MMMethodMMM:(id)target
 {
     
     NSString *normalImage = @"btn_hy.png";
@@ -88,13 +88,13 @@
             break;
     }
     
-    //UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage tag:tag selector:selector target:target];
+    //UIButton *mButton = [UIUtil initBtnWithNormalImage_MMMethodMMM:normalImage highlightedImage_MMMethodMMM:highlightedImage tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-//    UIButton *mButton = [UIUtil initBtnWithNormalImage:normalImage highlightedImage:highlightedImage titleText:titleText tag:tag selector:selector target:target];
+//    UIButton *mButton = [UIUtil initBtnWithNormalImage_MMMethodMMM:normalImage highlightedImage_MMMethodMMM:highlightedImage titleText_MMMethodMMM:titleText tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-    UIButton *mButton = [UIUtil initBtnWithTitleText:titleText fontSize:FS(17) textColor:[UIColor whiteColor] tag:tag selector:selector target:target];
+    UIButton *mButton = [UIUtil initBtnWithTitleText_MMMethodMMM:titleText fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-//    [UIUtil initBtnWithTitle:titleText tag:tag selector:selector target:target];
+//    [UIUtil initBtnWithTitle:titleText tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
 //    [mButton setTitleColor:[UIColor whiteColor] forState:0];
     [mButton.layer setCornerRadius:20.0f];

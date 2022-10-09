@@ -109,7 +109,7 @@ static char gamaDecodingTable[128];
 
 @implementation NSData (SdkAES128)
 
-- (NSData *)gama_AES128Operation:(CCOperation)operation key:(NSString *)key iv:(NSString *)iv
+- (NSData *)gama_AES128Operation_MMMethodMMM:(CCOperation)operation key_MMMethodMMM:(NSString *)key iv_MMMethodMMM:(NSString *)iv
 {
     //一个char数组，kCCKeySizeAES128 ＝ 16
     char keyPtr[kCCKeySizeAES128 + 1];
@@ -157,14 +157,14 @@ static char gamaDecodingTable[128];
     return nil;
 }
 
-- (NSData *)gama_AES128EncryptWithKey:(NSString *)key iv:(NSString *)iv
+- (NSData *)gama_AES128EncryptWithKey_MMMethodMMM:(NSString *)key iv_MMMethodMMM:(NSString *)iv
 {
-    return [self gama_AES128Operation:kCCEncrypt key:key iv:iv];
+    return [self gama_AES128Operation_MMMethodMMM:kCCEncrypt key_MMMethodMMM:key iv_MMMethodMMM:iv];
 }
 
-- (NSData *)gama_AES128DecryptWithKey:(NSString *)key iv:(NSString *)iv
+- (NSData *)gama_AES128DecryptWithKey_MMMethodMMM:(NSString *)key iv_MMMethodMMM:(NSString *)iv
 {
-    return [self gama_AES128Operation:kCCDecrypt key:key iv:iv];
+    return [self gama_AES128Operation_MMMethodMMM:kCCDecrypt key_MMMethodMMM:key iv_MMMethodMMM:iv];
 }
 
 @end

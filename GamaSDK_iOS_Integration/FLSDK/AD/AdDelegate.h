@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
-+ (void)applicationWillTerminate:(UIApplication *)application;
++ (void)applicationWillTerminate_MMMethodMMM:(UIApplication *)application;
 
-+ (void)applicationDidBecomeActive:(UIApplication *)application;
++ (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application;
 
 
-+ (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
-//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
++ (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type;
+//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
-+ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type;
++ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type;
 
 @end
 

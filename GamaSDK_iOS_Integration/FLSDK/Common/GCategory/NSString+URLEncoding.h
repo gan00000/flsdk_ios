@@ -12,8 +12,8 @@
  *
  *	@return	URL转码以后的字符串
  */
-- (NSString *)urlEncode;
+- (NSString *)urlEncode_MMMethodMMM;
 
-- (NSString *)urlDecode;
+- (NSString *)urlDecode_MMMethodMMM;
 
 @end

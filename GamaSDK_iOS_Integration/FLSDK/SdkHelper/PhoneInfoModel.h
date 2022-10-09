@@ -14,7 +14,7 @@
 @optional
 - (void)fire;
 @required
-- (void)showSelectedAreaCodeValue:(NSString *)selectedAreaCodeValue;
+- (void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue_MMMethodMMM;
 @end
 
 @interface PhoneInfoModel : NSObject
@@ -24,7 +24,7 @@
 @property (nonatomic, copy) NSString *selectedRegularExpression;
 @property (nonatomic, assign) id<PhoneInfoModelDelegate> delegate;
 
-- (void)showAreaCodesActionSheetFromView:(UIButton *)view;
+- (void)showAreaCodesActionSheetFromView_MMMethodMMM:(UIButton *)view;
 //- (void)requestSendSecurityCodeToMobilePhoneNumber:(NSString *)phoneNumber;
 //+ (void)requestPhoneNumberAreaCodes;
 

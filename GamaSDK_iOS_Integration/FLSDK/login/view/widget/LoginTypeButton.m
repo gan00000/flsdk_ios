@@ -12,13 +12,13 @@
 @implementation LoginTypeButton
 
 
-- (instancetype)initWithType:(NSUInteger)type title:(NSString *)title image:(NSString *)image selector:(SEL)selector
-                      target:(id)target
+- (instancetype)initWithType_MMMethodMMM:(NSUInteger)type title_MMMethodMMM:(NSString *)title image_MMMethodMMM:(NSString *)image selector:(SEL)selector
+                      target_MMMethodMMM:(id)target
 {
     self = [super init];
     if (self) {
         
-        UIButton *iconBtn = [UIUtil initBtnWithNormalImage:image highlightedImage:image tag:type selector:selector target:target];
+        UIButton *iconBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:image highlightedImage_MMMethodMMM:image tag_MMMethodMMM:type selector:selector target_MMMethodMMM:target];
         [self addSubview:iconBtn];
         [iconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 //            make.top.mas_equalTo(self);
@@ -34,7 +34,7 @@
 ////        titleLabel.textAlignment = NSTextAlignmentCenter;
 //        titleLabel.backgroundColor = [UIColor clearColor];
 //        titleLabel.numberOfLines = 1;
-//        titleLabel.textColor = [UIColor colorWithHexString:@"#545454"];
+//        titleLabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#545454"];
 //        titleLabel.adjustsFontSizeToFitWidth = YES;
 //
 //        [self addSubview:titleLabel];

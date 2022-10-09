@@ -17,11 +17,11 @@
 @implementation PhoneInfoModel
 
 - (void)setData {
-    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo];
+    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
     if (serverInfo) {
-        [self resetupAreaCodesAndActionSheetWith:serverInfo];
+        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
     }else{
-        [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
+        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
     }
 }
 
@@ -36,16 +36,16 @@
     return self;
 }
 
-- (void)showAreaCodesActionSheetFromView:(UIButton *)view
+- (void)showAreaCodesActionSheetFromView_MMMethodMMM:(UIButton *)view
 {
     NSMutableArray *tempArray = [NSMutableArray array];
 
 //    [self.gamaAreaCodesArray removeAllObjects];
 //    [self.gamaAreaCodesArray addObjectsFromArray:[GamaPhoneModel fetchPhoneNumber]];
-//    [self resetupAreaCodesAndActionSheetWith:[PhoneInfoModel fetchPhoneNumber]];
+//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[PhoneInfoModel fetchPhoneNumber]];
     
     //将sheet设置为默认的港台区号
-//    [self resetupAreaCodesAndActionSheetWith:SDKRES.areaInfoArray];
+//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
     
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
@@ -54,30 +54,30 @@
     
     __block PhoneInfoModel *weakSelf = self;
     
-    [AlertUtil showActionSheetWithTitle:@"text_select_phone_area_title".localx
-                                    message:@""
-                              callbackBlock:^(NSInteger btnIndex) {
+    [AlertUtil showActionSheetWithTitle_MMMethodMMM:@"text_select_phone_area_title".localx
+                                    message_MMMethodMMM:@""
+                              callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
                                   if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
                                   {
                                       NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];//因0為cancel
                                       weakSelf.selectedAreaCodeValue = [dict objectForKey:@"value"];
                                       weakSelf.selectedAreaCodeKey = [dict objectForKey:@"key"];
                                       weakSelf.selectedRegularExpression = [dict objectForKey:@"pattern"];
-                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue:)])// 保险
+                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
                                       {
-                                          [weakSelf.delegate showSelectedAreaCodeValue:weakSelf.selectedAreaCodeValue];
+                                          [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
                                       }
                                   }
                               }
-                     destructiveButtonTitle:nil
-                          cancelButtonTitle:@"text_cancel".localx
-                          otherButtonTitles:[NSArray arrayWithArray:tempArray]
-                                 sourceView:view
-                             arrowDirection:UIPopoverArrowDirectionLeft];
+                     destructiveButtonTitle_MMMethodMMM:nil
+                          cancelButtonTitle_MMMethodMMM:@"text_cancel".localx
+                          otherButtonTitles_MMMethodMMM:[NSArray arrayWithArray:tempArray]
+                                 sourceView_MMMethodMMM:view
+                             arrowDirection_MMMethodMMM:UIPopoverArrowDirectionLeft];
 }
 
 //有两个地方调用这个方法，一个是一开始只有两个默认地区，另一个是经过访问服务器后得到的地区区号
-- (void)resetupAreaCodesAndActionSheetWith:(NSArray *)newAreaCodesArray
+- (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
 
 {
     if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray isKindOfClass:[NSMutableArray class]]) {
