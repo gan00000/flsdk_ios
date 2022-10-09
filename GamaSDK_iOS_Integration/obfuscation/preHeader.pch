@@ -13,5 +13,6 @@
 
 //#import "codeObfuscation.h"
 #import "imageNameHeader.h"
+#import "codeObfuscationForMethodName.h"
 
 #endif /* preHeader_h */
