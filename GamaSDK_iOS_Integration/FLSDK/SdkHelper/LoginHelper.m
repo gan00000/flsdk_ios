@@ -75,7 +75,7 @@
 
 +(void)fbLoginAndThirdRequest:(id<LoginViewDelegate>)delegate
 {
-//    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+    //    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
     [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
         
         NSDictionary *otherParamsDic = nil;
@@ -84,7 +84,7 @@
                 @"fbOauthToken"        :fbIdToken,
                 
             };
-
+            
         } @catch (NSException *exception) {
             
         }
@@ -143,7 +143,7 @@
                 @"googleClientId"       :kClientID,
                 
             };
-
+            
         } @catch (NSException *exception) {
             
         }
@@ -170,7 +170,7 @@
 
 
 + (void)lineLoginAndThirdRequest:(id<LoginViewDelegate>)delegate{
-//    LineDelegate *mLineDelegate = [[LineDelegate alloc] init];
+    //    LineDelegate *mLineDelegate = [[LineDelegate alloc] init];
     
     [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
@@ -180,7 +180,7 @@
                 @"lineAccessToken"        :accessToken,
                 
             };
-
+            
         } @catch (NSException *exception) {
             
         }
@@ -229,13 +229,13 @@
             @"loginAccessToken"        :currentAccountModel.token,
             @"loginTimestamp"         :currentAccountModel.timestamp,
         };
-
+        
     } @catch (NSException *exception) {
         
     }
     if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
-//        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+        //        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
         [[FBDelegate share] loginWithPesentingViewController:nil isForceInappLogin:NO andIsForceReAuthorize:NO andSuccessBlock:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
             
             NSMutableDictionary *fbParamsDic = nil;
@@ -243,7 +243,7 @@
                 fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{@"fbOauthToken":fbIdToken}];
                 [fbParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
-
+            
             [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:fbParamsDic];
             
         } andFailBlock:^(NSError * _Nonnull error) {
@@ -275,7 +275,7 @@
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
         [GIDDelegate loginWithClientID:@"" presentingViewController:appTopViewController successCallback:^(NSString * _Nonnull userId, NSString * _Nonnull name, NSString * _Nonnull email, NSString * _Nonnull idToken, NSString * _Nonnull accessToken, NSString * _Nonnull kClientID) {
-
+            
             NSMutableDictionary *ggParamsDic = nil;
             @try {
                 ggParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{
@@ -296,25 +296,25 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         
-//        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-//
-//            NSDictionary *otherParamsDic = nil;
-//            @try {
-//                otherParamsDic = @{
-//                    @"lineAccessToken"        :accessToken,
-//
-//                };
-//
-//            } @catch (NSException *exception) {
-//
-//            }
-//
-//            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
-//
-//
-//        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-//
-//        }];
+        //        [[LineDelegate share] startLoginWithCallBack:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        //
+        //            NSDictionary *otherParamsDic = nil;
+        //            @try {
+        //                otherParamsDic = @{
+        //                    @"lineAccessToken"        :accessToken,
+        //
+        //                };
+        //
+        //            } @catch (NSException *exception) {
+        //
+        //            }
+        //
+        //            [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:userID thirdPlate:LOGIN_TYPE_LINE otherParamsDic:otherParamsDic];
+        //
+        //
+        //        } fail:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        //
+        //        }];
         
         if ([StringUtil isEmpty:currentAccountModel.thirdId]) {
             return;
