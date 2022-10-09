@@ -137,7 +137,6 @@
 		0369B35928647256002F4B2F /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
 		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
 		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
-		037B562728BDA67D007A3434 /* SDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9150D292383E6640003F1FB /* SDKResources.bundle */; };
 		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
 		037C6EF92875AC790041EC34 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
@@ -566,6 +565,7 @@
 		0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
+		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
@@ -1268,6 +1268,7 @@
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
+				0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */,
 				03D5F35D28D3187F00C3855E /* codeObfuscation.h */,
 				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,
 				03D5F35E28D3187F00C3855E /* preHeader.pch */,
@@ -1919,7 +1920,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */,
-				037B562728BDA67D007A3434 /* SDKResources.bundle in Resources */,
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,

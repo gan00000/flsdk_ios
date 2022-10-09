@@ -378,7 +378,7 @@
 #define addChangePasswordView_MMMethodMMM   cheirwomanficDocuel_MMMethodMMM
 #define addSelectBindTypeView_MMMethodMMM   campaignGirl_MMMethodMMM
 #define addFindPasswordView_MMMethodMMM   umbrfooditionProbablyacious_MMMethodMMM
-#define sdkContentView_MMMethodMMM   newsainFataneous_MMMethodMMM
+//#define sdkContentView_MMMethodMMM   newsainFataneous_MMMethodMMM
 #define _animationWithView_MMMethodMMM   sugeconomyeousVectise_MMMethodMMM
 #define frame_MMMethodMMM   ophiacleNtform_MMMethodMMM
 #define duration_MMMethodMMM   eightProliyetose_MMMethodMMM
