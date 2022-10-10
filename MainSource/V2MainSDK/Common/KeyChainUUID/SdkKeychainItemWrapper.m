@@ -1,345 +1,561 @@
-/*
-     File: KeychainItemWrapper.m 
- Abstract: 
- Objective-C wrapper for accessing a single keychain item.
-  
-  Version: 1.2 
-  
- Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
- Inc. ("Apple") in consideration of your agreement to the following 
- terms, and your use, installation, modification or redistribution of 
- this Apple software constitutes acceptance of these terms.  If you do 
- not agree with these terms, please do not use, install, modify or 
- redistribute this Apple software. 
-  
- In consideration of your agreement to abide by the following terms, and 
- subject to these terms, Apple grants you a personal, non-exclusive 
- license, under Apple's copyrights in this original Apple software (the 
- "Apple Software"), to use, reproduce, modify and redistribute the Apple 
- Software, with or without modifications, in source and/or binary forms; 
- provided that if you redistribute the Apple Software in its entirety and 
- without modifications, you must retain this notice and the following 
- text and disclaimers in all such redistributions of the Apple Software. 
- Neither the name, trademarks, service marks or logos of Apple Inc. may 
- be used to endorse or promote products derived from the Apple Software 
- without specific prior written permission from Apple.  Except as 
- expressly stated in this notice, no other rights or licenses, express or 
- implied, are granted by Apple herein, including but not limited to any 
- patent rights that may be infringed by your derivative works or by other 
- works in which the Apple Software may be incorporated. 
-  
- The Apple Software is provided by Apple on an "AS IS" basis.  APPLE 
- MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION 
- THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS 
- FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND 
- OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS. 
-  
- IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL 
- OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, 
- MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED 
- AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), 
- STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
- POSSIBILITY OF SUCH DAMAGE. 
-  
- Copyright (C) 2010 Apple Inc. All Rights Reserved. 
-  
-*/ 
 
 #import "SdkKeychainItemWrapper.h"
 #import <Security/Security.h>
 
-/*
+/**
+  tter if we weren’t friends, not that I didn’t wanna be.
+我只是说如果我们不是朋友会好很多，但是那不代表我不想和你交朋友。
+He unleashed the full, devastating power of his eyes on me, as if trying to communicate something crucial.
+他把那双眼睛的全部魅力都释放在我身上了，好像试图跟我说某件至关重要的事情似的。
+图片
+《暮光之城》插曲
+图片
 
-These are the default constants and their respective types,
-available for the kSecClassGenericPassword Keychain Item class:
-
-kSecAttrAccessGroup			-		CFStringRef
-kSecAttrCreationDate		-		CFDateRef
-kSecAttrModificationDate    -		CFDateRef
-kSecAttrDescription			-		CFStringRef
-kSecAttrComment				-		CFStringRef
-kSecAttrCreator				-		CFNumberRef
-kSecAttrType                -		CFNumberRef
-kSecAttrLabel				-		CFStringRef
-kSecAttrIsInvisible			-		CFBooleanRef
-kSecAttrIsNegative			-		CFBooleanRef
-kSecAttrAccount				-		CFStringRef
-kSecAttrService				-		CFStringRef
-kSecAttrGeneric				-		CFDataRef
- 
-See the header file Security/SecItem.h for more details.
-
-*/
-
+ 《Flightless Bird, American Mouth》是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给 
+**/
 @interface SdkKeychainItemWrapper (PrivateMethods)
 @property(nonatomic, weak) id fingeretFensitionShoulderern;
-/*
-The decision behind the following two methods (secItemFormatToDictionary and dictionaryToSecItemFormat) was
-to encapsulate the transition between what the detail view controller was expecting (NSString *) and what the
-Keychain API expects as a validly constructed container class.
-*/
 - (NSMutableDictionary *)secItemFormatToDictionary_MMMethodMMM:(NSDictionary *)dictionaryToConvert;
 - (NSMutableDictionary *)dictionaryToSecItemFormat_MMMethodMMM:(NSDictionary *)dictionaryToConvert;
-
-// Updates the item in the keychain, or adds it if it doesn't exist.
 - (void)writeToKeychain_MMMethodMMM;
-
 @end
-
 @implementation SdkKeychainItemWrapper
-
 @synthesize keychainItemData, genericPasswordQuery;
-
 - (id)initWithIdentifier_MMMethodMMM: (NSString *)identifier accessGroup_MMMethodMMM:(NSString *) accessGroup;
 {
     if (self = [super init])
+//.
+//我再也无法控制自己远离你了。
+//Then don’t.
+//那就不
     {
-        // Begin Keychain search setup. The genericPasswordQuery leverages the special user
-        // defined attribute kSecAttrGeneric to distinguish itself between other generic Keychain
-        // items which may be included by the same application.
+
+/**
+  n housework, schoolwork, office work or the latest binge-worthy television series.
+
+ 
+**/
         genericPasswordQuery = [[NSMutableDictionary alloc] init];
-        
 		[genericPasswordQuery setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
         [genericPasswordQuery setObject:identifier forKey:(id)kSecAttrGeneric];
-		
-		// The keychain access group attribute determines if this item can be shared
-		// amongst multiple apps whose code signing entitlements contain the same keychain access group.
+
+/**
+  小时睡眠时间应该是晚上11点。
+
+"Now you know when you have to stop and get ready to go to bed whether you're done or not," Grander said. "The problem is we don't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
+
+There are not enough ways to express how much I miss you
+
+没有足够的方式能表达我有多想念你
+
+The 
+**/
 		if (accessGroup != nil)
+// let them discourage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determination.
+//
+//
+//
+//每前进一步，你都应该引以为豪，因为它们是你实现
 		{
+
+/**
+  mination.
+
+
+
+每前进一步，你都应该引以为豪，因为它们是你实现梦想的阶梯。要知道在这个过程中你也许会犯错误，但 
+**/
 #if TARGET_IPHONE_SIMULATOR
-			// Ignore the access group if running on the iPhone simulator.
-			// 
-			// Apps that are built for the simulator aren't signed, so there's no keychain access group
-			// for the simulator to check. This means that all apps can see all keychain items when run
-			// on the simulator.
-			//
-			// If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
-			// simulator will return -25243 (errSecNoAccessForItem).
-#else			
+#else
+//s at your face and the way the cold breeze of the morning surprises us.
+//
+//我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
+//
+//I miss the morning kisses and the morning snuggling you and I shared.
+//
+//我想念早上的吻，早上依偎着你和我分享。
+//
+//I miss you. I miss going to work in the morning and knowing that at the end of the day,
+//
+//我想你。我想念早上去上班，直到在一天结束的时候，
+//
+//I will find you waiting for
 			[genericPasswordQuery setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
 #endif
+
+/**
+   hours would require a bedtime of 11 pm.
+
+美国疾病控制与预防中心指出， 
+**/
 		}
-		
-		// Use the proper search constants, return only the attributes of the first match.
         [genericPasswordQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
         [genericPasswordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
-        
         NSDictionary *tempQuery = [NSDictionary dictionaryWithDictionary:genericPasswordQuery];
-        
         NSMutableDictionary *outDictionary = nil;
-        
         if (! SecItemCopyMatching((CFDictionaryRef)tempQuery, (CFTypeRef *)&outDictionary) == noErr)
+
+/**
+  Prevention. So if a person needed to rise at 7 am each day, backtiming eight hours would require a bedtime of 11 pm.
+
+美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠时间才能得到充分休息。因此如果一个人每天要在早上7点起床，倒推8个小时睡眠时间应该是晚上11点。
+
+"Now you know when you have to stop and get ready to go to bed whether you're done or not," Grander sai 
+**/
         {
-            // Stick these default values into keychain item if nothing found.
             [self resetKeychainItem_MMMethodMMM];
-			
-			// Add the generic attribute and the keychain access group.
 			[keychainItemData setObject:identifier forKey:(id)kSecAttrGeneric];
+//ver see the stars.
+//我喜欢夜晚。没有黑暗，我们永远都看不见星星。
+//It is well worth of fal
 			if (accessGroup != nil)
+
+/**
+  act of goal pursuit.
+
+在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明，专注于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
+
+
+
+If it's not fun to exerci 
+**/
 			{
+
+/**
+  这个过程中你也许会犯错误，但不要气馁。珍视自我的潜能，因为它们使你独一无二。生命中最珍贵的礼物不是花钱买来的，而是通过努力和决心得到的。
+
+
+
+Find the star that twinkles in your heart for you alone are capa 
+**/
 #if TARGET_IPHONE_SIMULATOR
-				// Ignore the access group if running on the iPhone simulator.
-				// 
-				// Apps that are built for the simulator aren't signed, so there's no keychain access group
-				// for the simulator to check. This means that all apps can see all keychain items when run
-				// on the simulator.
-				//
-				// If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
-				// simulator will return -25243 (errSecNoAccessForItem).
-#else			
+#else
+
+/**
+  t to how I would die. But dying in the place of someone I love,seems like a good way to go.
+我从来没有想过自己会怎么死。但是死在自己爱的人的怀里看起来是一个不错的选择。
+Your mood swings are kind of giving me a whiplash.
+ 
+**/
 				[keychainItemData setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
 #endif
+
+/**
+  ."
+
+
+
+“在生活中，很多次我们被自己制定的决策和身边的环境所抛弃、蹂躏，甚至碾入尘土。我们感到自己一无是处。但是不管发生了什么，或者将要发生什么，你们都永远不会失去自己的价值。”
+
+
+
+“Dirty or clean, crumpled or finely creased you are still priceless to those who love you. The worth o 
+**/
 			}
 		}
+
+/**
+  l the hands were up in the air.
+
+
+
+他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
+
+
+
+“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He  
+**/
         else
         {
-            // load the saved data from Keychain.
+
+/**
+  around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their patterns of behavior.
+
+花时间 
+**/
             self.keychainItemData = [self secItemFormatToDictionary_MMMethodMMM:outDictionary];
+//ht, and you forever.
+//浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿
         }
-       
+
+/**
+  aid of you… I'm only afraid of losing you. Like you're going to disappear…
+现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
+You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, masochistic lion.
+你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
+图片
+ 
+**/
 		[outDictionary release];
     }
-    
 	return self;
 }
-
 - (void)dealloc
 {
     [keychainItemData release];
+
+/**
+   first, let me do this."
+
+
+
+开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
+
+
+
+He proceeded to crumple the 20 dollar note up. H 
+**/
     [genericPasswordQuery release];
-    
 	[super dealloc];
 }
-
-- (void)setObject:(id)inObject forKey:(id)key 
+- (void)setObject:(id)inObject forKey:(id)key
 {
     if (inObject == nil) return;
+
+/**
+  因此每天在固定时间起床很重要，即使是周末、假期或是前一天晚上没睡好也不应该例外。
+
+2. Don't lay in bed awake
+
+A well-known speaker started off his seminar by holding up a $20 bill 
+**/
     id currentObject = [keychainItemData objectForKey:key];
     if (![currentObject isEqual:inObject])
     {
         [keychainItemData setObject:inObject forKey:key];
         [self writeToKeychain_MMMethodMMM];
-    }
-}
 
+/**
+  lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake up t 
+**/
+    }
+// to me. You're like my own personal brand of heroin.
+//但是你，你的气味，对我来说就像是毒品一样。你是让我上瘾的海洛因。
+//As long as i live, my feeling for you will never fade.
+//我对你的爱，至死不渝。
+//Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you're going to disappear…
+//现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
+//You don't know how long I've waited for you. 
+}
 - (id)objectForKey:(id)key
+
+/**
+  ere are not enough ways to express how much I miss you
+
+没有足够的方式能表达我有多想念你
+
+There are not enough words to contemplate on how much I miss you and I miss us being together physically.
+
+没有足够的言语能表达我有多想念你，我想念我们在一起。
+
+My heart aches and I miss you so bad.
+ 
+**/
 {
     return [keychainItemData objectForKey:key];
 }
-
 - (void)resetKeychainItem_MMMethodMMM
 {
 	OSStatus junk = noErr;
-    if (!keychainItemData) 
+    if (!keychainItemData)
     {
         self.keychainItemData = [[[NSMutableDictionary alloc] init] autorelease];
     }
     else if (keychainItemData)
     {
         NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
+//民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这首收录在《暮光之城》中的惊艳单曲会带给你寂静深夜中属于你的美好爱情回忆录！
+//
+//《Flightless Bird, American Mouth》
+//
+//MV
+//图片
+//
+//
+//
+//
+//
+//《Flightless Bird, American Mouth 》 -Iron & Wine
+//
 		junk = SecItemDelete((CFDictionaryRef)tempDictionary);
+
+/**
+  itate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue-based plan like "I'll meditate at the office on weekdays during my lunch break" would fit the 
+**/
         NSAssert( junk == noErr || junk == errSecItemNotFound, @"Problem deleting current dictionary." );
+
+/**
+   wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their patterns of behavior.
+
+花时间和高成就者在一起可以提高你自己的表现。如果你的新年愿望是跑一场马拉松或写一本书，那么明智的做法是开始与那些已经实现这一目标、可以告诉你如何做到的朋友们 
+**/
     }
-    
-    // Default attributes for keychain item.
     [keychainItemData setObject:@"" forKey:(id)kSecAttrAccount];
     [keychainItemData setObject:@"" forKey:(id)kSecAttrLabel];
     [keychainItemData setObject:@"" forKey:(id)kSecAttrDescription];
-    
-	// Default data for keychain item.
+
+/**
+  penalties motivate success. 
+**/
     [keychainItemData setObject:@"" forKey:(id)kSecValueData];
 }
-
-
+//, stuck going down
+//贴着的大海报正在落下
+//
+//
+//Just as cues tell Broadway
 - (BOOL)tenttvmostGnose:(NSString *)malleoorium furcization:(NSString *)furcization tagair:(NSString *)tagair regionot:(NSUInteger)regionot
 {
-    return 2674252 * 1339805 + 9464685 ; 
+    return 2674252 * 1339805 + 9464685 ;
+
+/**
+  作或追新剧，晚点再睡也没事。
+
+That thinking needs to be changed, Grander said.
+
+格兰德纳说，这种想法必须改变。
+
+"Don't se 
+**/
 }
 - (void)uniacrossasterMonthian:(NSUInteger)goal liquly:(CGFloat)liquly placfy:(NSUInteger)placfy
 {
-    [NSString stringWithFormat:@"%@%@", @"dynaful" , @"piress"]; 
+    [NSString stringWithFormat:@"%@%@", @"dynaful" , @"piress"];
+// have all learned a very valuable lesson. No matter what I did to the money,
 }
 - (NSMutableDictionary *)dictionaryToSecItemFormat_MMMethodMMM:(NSDictionary *)dictionaryToConvert
+
+/**
+  决策和身边的环境所抛弃、蹂躏，甚至碾入尘土。我们感到自己一无是处。但是不管发生了什么，或者将要发生什么，你们都永远不会失去自己的价值。”
+
+
+
+“Dirty or clean, crumpled or finely cre 
+**/
 {
-    // The assumption is that this method will be called with a properly populated dictionary
-    // containing all the right key/value pairs for a SecItem.
-    
-    // Create a dictionary to return populated with the attributes and data.
     NSMutableDictionary *returnDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionaryToConvert];
-    
-    // Add the Generic Password keychain item class attribute.
     [returnDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
-    
-    // Convert the NSString to NSData to meet the requirements for the value type kSecValueData.
-	// This is where to store sensitive data that should be encrypted.
+
+/**
+  一原因是因为我觉得这能保护你。
+I don’t have th strength to stay away from you anymore.
+我再也无法控制自己远离你了。
+Then don’t.
+那就不要。
+Childhood is the kingdom where nobody dies.
+童年是没有生老病死的国度。
+I think I forgot to breathe.
+我想可能是我忘了呼吸。
+I'd never given much thought to how I would die. But dying in the place o 
+**/
     NSString *passwordString = [dictionaryToConvert objectForKey:(id)kSecValueData];
     [returnDictionary setObject:[passwordString dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
-    
+//leashed the full, devastating power of his eyes on me, as if trying to communicate something crucial.
+//他把那双眼睛的全部魅力都释放在我身上了，好像试图跟我说某件至关重要的事情似的。
+//图片
+//《暮光之城》插曲
+//图片
+//
+// 《Flightless Bird, American Mouth》是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这首收录在《暮光之城》中的惊艳单曲会带给你寂静深夜中属于你的美好爱情回忆录！
+//
+//《Flightless Bird, American Mouth》
+//
+//MV
+//图片
+//
+//
+//
+//
+//
+//《Flightless Bird, 
     return returnDictionary;
 }
-
-
 - (NSUInteger)habilmonthicTrogloarian:(BOOL)technologyly audienceth:(NSString *)audienceth trag:(NSUInteger)trag campaneity:(CGFloat)campaneity
+// they have to do in a jam-packed day, 
 {
-    return 398465 * 991453 + 9323508 ; 
+    return 398465 * 991453 + 9323508 ;
+//action-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an even more important part of the equation: whether you enjoy the act of goal pursuit.
+//
+//在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明，专注于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
+//
+//
+//
+//If it's not fun to exercise or study
 }
 - (NSUInteger)xenierHalitature:(CGFloat)deathor fugit:(CGFloat)fugit actuallyette:(BOOL)actuallyette threatatory:(CGFloat)threatatory
+
+/**
+  rk in the morning and knowing that at the end of the day,
+
+我想你。我想念早上去上班，直到在一天结束的时候，
+
+I will find you waiting for me outside the office and have dinner toget 
+**/
 {
-    return 1982123 * 5310153 + 3876365 ; 
+    return 1982123 * 5310153 + 3876365 ;
 }
+//么这条法则如此重要呢？格兰德纳解释道，因为醒着躺在床
 - (NSString *)triyeareurEloon
 {
-    return [NSString stringWithFormat:@"%@%@", @"andosity" , @"performment"]; 
+    return [NSString stringWithFormat:@"%@%@", @"andosity" , @"performment"];
 }
+//therwise.
+//
+//奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建议时，这会增强你的自信。这样也会迫使你反省自己的方法是否对路。
+//
+//1. Make a schedule, and stick to it
+//
+//每天在固定时间起床和上床
+//
+//Melatonin is a hormone produced by the body to regulate when you get sleep
 - (NSMutableDictionary *)secItemFormatToDictionary_MMMethodMMM:(NSDictionary *)dictionaryToConvert
 {
-    // The assumption is that this method will be called with a properly populated dictionary
-    // containing all the right key/value pairs for the UI element.
-    
-    // Create a dictionary to return populated with the attributes and data.
     NSMutableDictionary *returnDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionaryToConvert];
-    
-    // Add the proper search key and class attribute.
     [returnDictionary setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
     [returnDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
-    
-    // Acquire the password data from the attributes.
     NSData *passwordData = NULL;
     if (SecItemCopyMatching((CFDictionaryRef)returnDictionary, (CFTypeRef *)&passwordData) == noErr)
+
+/**
+  实现。
+
+
+
+Though barriers may sometimes stand in the way of your dreams 
+**/
     {
-        // Remove the search, class, and identifier key/value, we don't need them anymore.
         [returnDictionary removeObjectForKey:(id)kSecReturnData];
-        
-        // Add the password to the dictionary, converting from NSData to NSString.
         NSString *password = [[[NSString alloc]
                                initWithBytes:[passwordData bytes]
                                length:[passwordData length]encoding:NSUTF8StringEncoding] autorelease];
         [returnDictionary setObject:password forKey:(id)kSecValueData];
     }
+
+/**
+  ow to respond.
+
+临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起 
+**/
     else
     {
-        // Don't do anything if nothing is found.
         NSAssert(NO, @"Serious error, no matching item found in the keychain.\n");
+
+/**
+  继承之战》，此后你的早睡计划泡汤了，因为“去他的”反正你已经失败了。
+
+
+
+Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourself one or two get-out-of-jail-free 
+**/
     }
-    
     [passwordData release];
-   
 	return returnDictionary;
+//ld breeze of the morning surprises us.
+//
+//我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
+//
+//I miss the morning kisses and the morning snuggling you and I shared.
+//
+//我想念早上的吻，早上依偎着你和我分享。
+//
+//I miss you. I miss going to work in the morning and knowing that at the end of the day,
+//
+//我想你。我想念早上去上班，直到在一天结束的时候，
+//
+//I will find you wai
 }
 
+/**
+  u’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it will lead you to your destiny’s path. Follow that pathway and uncover the sweet sunrises that await you.
+
+
+
+尽管实现梦想的途中有时会遇到障碍，要知道这是命运对你的挑战。不是每个人都会赞成你的选择，接受这个现实，并相信自我的判断，追随那颗在你心中闪烁的明星，它会引领你踏上命运的征途。坚持不懈，你就能享受那些幸福时刻。
+
+
+
+T 
+**/
 - (void)writeToKeychain_MMMethodMMM
 {
+//study sessions so there is a hook to get you to the library.
+//
+//想要把追求一个辛苦的目标变得更有趣，方法就是把它与有罪恶感的快乐结合起来。如果只允许自己在健身房看最喜欢的电视节目，你就会开始期待锻炼了。或者只让自己在学习期间喝摩卡拿铁，这样就有了去
     NSDictionary *attributes = NULL;
+// to act. Be sure to detail when and where you'll follow through.
+//
+//正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示，能帮助你记住何时行动。一定要详细说明你将在何时何地做什么。
+//
+//
+//
+//If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue-based plan like "I'll meditate at the office on weekdays during my lunch break" would fit the bill.
+//
+//如果你的新年计划是每周冥想五天，那么像“
     NSMutableDictionary *updateItem = NULL;
 	OSStatus result;
-    
     if (SecItemCopyMatching((CFDictionaryRef)genericPasswordQuery, (CFTypeRef *)&attributes) == noErr)
     {
-        // First we need the attributes from the Keychain.
         updateItem = [NSMutableDictionary dictionaryWithDictionary:attributes];
-        // Second we need to add the appropriate search key/values.
         [updateItem setObject:[genericPasswordQuery objectForKey:(id)kSecClass] forKey:(id)kSecClass];
-        
-        // Lastly, we need to set up the updated attribute list being careful to remove the class.
         NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
         [tempCheck removeObjectForKey:(id)kSecClass];
-		
 #if TARGET_IPHONE_SIMULATOR
-		// Remove the access group if running on the iPhone simulator.
-		// 
-		// Apps that are built for the simulator aren't signed, so there's no keychain access group
-		// for the simulator to check. This means that all apps can see all keychain items when run
-		// on the simulator.
-		//
-		// If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
-		// simulator will return -25243 (errSecNoAccessForItem).
-		//
-		// The access group attribute will be included in items returned by SecItemCopyMatching,
-		// which is why we need to remove it before updating the item.
+
+/**
+  我上瘾的海洛因。
+As long as i live, my feeling for you will never fade.
+我对你的爱，至死不渝。
+Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you're going  
+**/
 		[tempCheck removeObjectForKey:(id)kSecAttrAccessGroup];
 #endif
-        
-        // An implicit assumption is that you can only update a single item at a time.
-		
         result = SecItemUpdate((CFDictionaryRef)updateItem, (CFDictionaryRef)tempCheck);
-//		NSAssert( result == noErr, @"Couldn't update the Keychain Item." );
-//        NSLog(@"Updating the Keychain Item. result: %d",(int)result);
         if (result != noErr) {
+//to the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
+//
+//正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示，能帮助你记住何时行动。一定要详细说明你将在何时何地做什么。
+//
+//
+//
+//If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too 
             NSLog(@"Dangerous!!! Couldn't update the Keychain Item. result: %d",(int)result);
         }
     }
     else
+// to get sleepy, or maybe an hour, but don't spend that time awake in bed."
+//
+//格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起床调整一下。也许你只需要5分钟就能感觉到困意，也许需要一小时，但是这段时间不要醒着躺在床上。”
+//
+//Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chron
     {
-        // No previous item found; add the new one.
+
+/**
+  
+他说：“比如说你需要提早上床睡觉。床将能帮助你安抚纷繁的思绪，让你酣然入睡。”
+
+3. Change your attitude about sleep
+
+改变对睡眠的心态
+
+Many people view sleeping as the final thing they have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, o 
+**/
         result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData], NULL);
-//		NSAssert( result == noErr, @"Couldn't add the Keychain Item." );
-//        NSLog(@"Adding the Keychain Item. result: %d",(int)result);
         if (result != noErr) {
             NSLog(@"Dangerous!!! Couldn't add the Keychain Item. result: %d",(int)result);
+
+/**
+  e left in your day," he advised. "See your sleep as the amount of time you need in order to set yourself up for a productive tomorrow."
+
+他建议：“不要将睡眠时间看成你一天中剩下的时间，而是将其看成为了高效的明天而休整的时间。”
+
+It may sound like a small shift in thinking, but it's an important one, Grander added.
+
+格兰德纳补充道，或许这听起来只是想法上的一个 
+**/
         }
     }
+//awake
+//
+//A well-known speaker started off his seminar by holdin
 }
-
 @end

@@ -1,19 +1,16 @@
 
 
+/**
+  上
+And when the cops closed the fair
+当警察把集市关起时
+I cut 
+**/
 #import <Foundation/Foundation.h>
-
-/**
- *	@brief	NSString 类别，URL转吗方法。用于Gama内部URL转吗。
- */
+//s most to achieving a New Year's resolution.
+//
+//如果锻炼或学习没有乐趣，就不太可
 @interface NSString (GamaURLEncoding)
-
-/**
- *	@brief	URL转码的方法
- *
- *	@return	URL转码以后的字符串
- */
 - (NSString *)urlEncode_MMMethodMMM;
-
 - (NSString *)urlDecode_MMMethodMMM;
-
 @end

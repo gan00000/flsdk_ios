@@ -1,21 +1,10 @@
-//
-//  NSString+Local.h
-//  MWSDK
-//
-//  Created by Gan Yuanrong on 2022/8/1.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
-
 NS_ASSUME_NONNULL_BEGIN
-
+//rather die than stay away from you.
+//你不知道，等了你有多久。所以，宁可死别，绝不生离。
+//I like th
 @interface NSString (Local)
-
-
 @property (nonatomic, copy) NSString *localx;
-
 @end
-
-
 NS_ASSUME_NONNULL_END
