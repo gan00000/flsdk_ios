@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GamaSDK_iOS_Integration/MW_SDK.xcodeproj">
+      location = "group:MainSource/MW_SDK.xcodeproj">
    </FileRef>
 </Workspace>

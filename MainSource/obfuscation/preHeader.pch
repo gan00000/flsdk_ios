@@ -1,0 +1,18 @@
+//
+//  preHeader.h
+//  MW_SDK
+//
+//  Created by Gan Yuanrong on 2022/9/2.
+//  Copyright © 2022 Gama. All rights reserved.
+//
+
+#ifndef preHeader_h
+#define preHeader_h
+
+#define SDK_CODE_OBFUSCATION   1  //是否开启方法混淆
+
+//#import "codeObfuscation.h"
+#import "imageNameHeader.h"
+#import "codeObfuscationForMethodName.h"
+
+#endif /* preHeader_h */
