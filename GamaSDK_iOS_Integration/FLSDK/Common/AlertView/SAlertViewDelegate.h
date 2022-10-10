@@ -24,8 +24,7 @@
 typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 
 
-@interface SAlertViewDelegate : NSObject
-<UIAlertViewDelegate,UIActionSheetDelegate>
+@interface SAlertViewDelegate : NSObject <UIAlertViewDelegate,UIActionSheetDelegate>
 
 /**
  *	@brief	代理对象自己保存的black，用于回调。
