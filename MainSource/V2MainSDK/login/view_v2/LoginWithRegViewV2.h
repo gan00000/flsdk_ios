@@ -14,10 +14,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginWithRegViewV2 : SDKBaseView
+@property (nonatomic, assign) CGFloat horoproofPogonard;
 
 @property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;
+@property (nonatomic, copy) NSString *phylactingMesidoorosity;
 
 @property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;
+@property (nonatomic, copy) NSString *giveCanLeonaceous;
 
 - (instancetype)initView_MMMethodMMM;
 

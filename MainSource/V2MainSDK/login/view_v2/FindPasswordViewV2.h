@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FindPasswordViewV2 : SDKBaseView
+@property(nonatomic, weak) id attorneytionVentorAvoidate;
 
 - (instancetype)initView_MMMethodMMM;
 

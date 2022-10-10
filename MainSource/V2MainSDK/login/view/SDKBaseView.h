@@ -24,7 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 //@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
+@property (nonatomic, assign) BOOL hundredExtremoon;
 @property(nonatomic,assign) id fromPageParam;
+@property (nonatomic, copy) NSString *plagiableCirccy;
 
 -(void)initData_MMMethodMMM;
 

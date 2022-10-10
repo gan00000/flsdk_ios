@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ConfigCoreUtil : NSObject
+@property (nonatomic, copy) NSString *oenacyBusinesssive;
 
 + (ConfigCoreUtil *)share;
 

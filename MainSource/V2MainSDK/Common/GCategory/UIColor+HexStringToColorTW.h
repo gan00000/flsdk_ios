@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (HexStringToColorTW)
+@property (nonatomic, assign) BOOL insideidTheriomarketsure;
 /**
  *  将十六进制颜色转化为UIColor
  *

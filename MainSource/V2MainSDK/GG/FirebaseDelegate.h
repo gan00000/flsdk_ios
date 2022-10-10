@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FirebaseDelegate : NSObject
+@property (nonatomic, assign) NSUInteger coprestablishiceDetailsome;
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 

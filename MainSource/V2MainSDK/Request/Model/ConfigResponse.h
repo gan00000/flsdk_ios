@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ConfigResponse : BJBaseResponceModel
 
 @property (nonatomic, strong) ConfigModel *allVersion;
+@property(nonatomic, weak) id spirletPersicion;
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;
 
 @property (nonatomic,strong) UrlMode *url;

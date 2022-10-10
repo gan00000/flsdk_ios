@@ -17,6 +17,7 @@ typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * _
 
 @interface SAppleLogin : NSObject
 @property (strong, nonatomic) NSString *appleThirdID;
+@property (nonatomic, assign) NSUInteger pratWithiny;
 
 + (instancetype)share;
 

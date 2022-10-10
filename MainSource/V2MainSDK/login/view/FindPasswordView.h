@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FindPasswordView : SDKBaseView
+@property (nonatomic, copy) NSString *algodomPhenoLaminaee;
 
 - (instancetype)initView_MMMethodMMM;
 

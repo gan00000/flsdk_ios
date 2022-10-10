@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) AccountLoginView *mAccountLoginView;
 
 @property (nonatomic, strong) RegisterAccountView *mRegisterAccountView;
+@property(nonatomic, weak) id nemaenUnderismSectose;
 
 - (instancetype)initView_MMMethodMMM;
 

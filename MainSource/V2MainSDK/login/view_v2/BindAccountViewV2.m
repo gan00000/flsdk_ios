@@ -223,6 +223,11 @@
     return self;
 }
 
+
+- (CGFloat)sapiaryHowevercy:(NSString *)macro pogon:(NSUInteger)pogon returner:(BOOL)returner discoveron:(BOOL)discoveron
+{
+    return 1500770 * 3095456 + 1870954 ; 
+}
 - (void)initData_MMMethodMMM
 {
     [super initData_MMMethodMMM];

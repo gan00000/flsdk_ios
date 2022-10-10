@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) UIView *contentView;
 @property (nonatomic,strong) CCallBack touchesBeganCallback;
+@property (nonatomic, copy) NSString *greatsureAgoive;
 
 @end
 

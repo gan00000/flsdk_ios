@@ -18,7 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AccountListView : SDKBaseView
 
 @property (nonatomic,strong) AccountModelHander mAccountModelClickHander;
+@property (nonatomic, assign) CGFloat takeerTeleMedicalian;
 @property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
+@property(nonatomic, weak) id guyfyAndibilityHorsure;
 @property (nonatomic,strong) UITableView *accountListTableView;
 @end
 

@@ -14,10 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AccountListViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *accountUILabel;
+@property (nonatomic, assign) CGFloat erythrifyLeviRealizeaster;
 @property (nonatomic, strong) UIButton *deleteAccountBtn;
+@property (nonatomic, copy) NSString *cumbmillionFrugfaction;
 @property (nonatomic, strong) UIImageView *iconImageView;
 
 @property (nonatomic, strong) ItemViewClickHander mItemViewClickHander;
+@property (nonatomic, assign) CGFloat radiodomMesiress;
 
 @end
 

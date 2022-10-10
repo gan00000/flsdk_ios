@@ -18,6 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKLoginViewController : UIViewController <LoginViewDelegate,UITextFieldDelegate>
+@property (nonatomic, copy) NSString *optiontyEvidenceWonderular;
 
 -(instancetype)initWithPageType_MMMethodMMM:(SDKPage) pageType;
 

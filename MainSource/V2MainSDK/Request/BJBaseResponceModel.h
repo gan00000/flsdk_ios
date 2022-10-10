@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
  *	@brief	数据状态号
  */
 @property (nonatomic, assign) NSInteger code;
+@property(nonatomic, weak) id husbandicalEspeciallyion;
 
 /**
  *	@brief	提示信息

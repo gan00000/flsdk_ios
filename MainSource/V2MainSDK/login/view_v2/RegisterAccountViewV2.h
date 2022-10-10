@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initView_MMMethodMMM;
 - (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType;
 @property (nonatomic, assign) NSInteger bindType;
+@property (nonatomic, assign) BOOL tympantureChantiveMicsome;
 @end
 
 NS_ASSUME_NONNULL_END

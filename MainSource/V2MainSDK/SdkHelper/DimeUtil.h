@@ -14,6 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DimeUtil : NSObject
+@property(nonatomic, weak) id institutionlessTex;
 + (instancetype)share;
 -(CGFloat)getViewHeight_MMMethodMMM:(CGFloat)height;
 

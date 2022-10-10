@@ -11,11 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginButtonData : NSObject
+@property (nonatomic, strong) NSDictionary *ableEnnadePassjobsion;
 
 @property (nonatomic, copy) NSString *btnType;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *image;
+@property (nonatomic, assign) CGFloat abkindryWordlikeOctlet;
 @property (nonatomic, assign) NSInteger tag;
+@property (nonatomic, assign) CGFloat fratersuccessfulSordate;
 //@property (nonatomic, assign) BOOL *isShow;
 
 

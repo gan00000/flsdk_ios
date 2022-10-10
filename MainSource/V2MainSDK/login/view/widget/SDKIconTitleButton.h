@@ -22,6 +22,7 @@ typedef NS_OPTIONS(NSUInteger, SDK_ICON_TITLE_BUTTON_TYPE)
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKIconTitleButton : UIView
+@property (nonatomic, assign) BOOL monstratcrimeonRoadizationSetee;
 
 - (instancetype)initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target;
 @end

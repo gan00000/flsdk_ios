@@ -15,9 +15,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginTitleView : SDKBaseView
+@property (nonatomic, strong) NSDictionary *resourcefoldItudinive;
 
 @property (nonatomic,strong) UILabel *titleLable;
 @property (nonatomic,strong) UIButton *backBtn;
+@property (nonatomic, copy) NSString *heurabilityScopeiaMusclet;
 
 - (instancetype)initViewWithTitle_MMMethodMMM:(NSString *)title hander_MMMethodMMM:(ItemViewClickHander) hander;
 

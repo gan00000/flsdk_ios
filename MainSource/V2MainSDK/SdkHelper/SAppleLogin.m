@@ -14,6 +14,7 @@
 @interface SAppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
 @property (copy, atomic) AppleLoginSuccess impSuccess;
 @property (copy, atomic) AppleLoginError impError;
+@property(nonatomic, weak) id resultsomeArgentade;
 @end
 
 //sign in with apple 工具类设成全局变量，或使用单例类，如果使用局部变量，和IAP工具类一样苹果的回调不会执行。
@@ -23,6 +24,19 @@
 }
 @synthesize appleThirdID = _appleThirdID;
 
+
+- (BOOL)liminficationItsty:(CGFloat)free
+{
+    return 6843710 * 7393828 + 6736604 ; 
+}
+- (CGFloat)purpurScience:(BOOL)pleaslike serviceivity:(BOOL)serviceivity
+{
+    return 8290769 * 8734148 + 2788875 ; 
+}
+- (NSString *)vilCallsome:(BOOL)cochlture primiment:(NSString *)primiment novenfier:(BOOL)novenfier uponress:(NSUInteger)uponress virsuchless:(NSString *)virsuchless
+{
+    return [NSString stringWithFormat:@"%@%@", @"uliginness" , @"pugnous"]; 
+}
 + (instancetype)share{
     
     static SAppleLogin *_sAppleLogin = nil;
@@ -70,6 +84,15 @@
 #pragma mark - Delegate
 
 //! 授权成功地回调
+
++ (NSString *)seasonKlept:(BOOL)felicitious certainive:(CGFloat)certainive ambic:(NSString *)ambic
+{
+    return [NSString stringWithFormat:@"%@%@", @"languive" , @"sidearian"]; 
+}
++ (CGFloat)perantionTussness:(NSUInteger)senry hormette:(CGFloat)hormette placeaneous:(NSUInteger)placeaneous corticoad:(NSString *)corticoad
+{
+    return 9110618 * 7273946 + 7395951 ; 
+}
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization  API_AVAILABLE(ios(13.0)){    //system_method
 
     NSLog(@"%s", __FUNCTION__);
@@ -131,6 +154,11 @@
 }
 
 //! 授权失败的回调
+
++ (void)southernTechnit:(CGFloat)felino victwise:(BOOL)victwise careably:(CGFloat)careably happenator:(NSUInteger)happenator tostveryally:(BOOL)tostveryally
+{
+    [NSString stringWithFormat:@"%@%@", @"messageorium" , @"oxyic"]; 
+}
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  API_AVAILABLE(ios(13.0)){    //system_method
 
     NSLog(@"%s", __FUNCTION__);
@@ -203,6 +231,19 @@
 
 //! Prompts the user if an existing iCloud Keychain credential or Apple ID credential is found.
 //! 如果存在iCloud Keychain 凭证或者AppleID 凭证提示用户
+
+- (void)emptisticLayule:(BOOL)scans novaire:(NSUInteger)novaire
+{
+    [NSString stringWithFormat:@"%@%@", @"syringant" , @"oligomost"]; 
+}
+- (void)onomatetyDefenseible:(CGFloat)antiment fally:(CGFloat)fally owneratic:(NSString *)owneratic intraary:(NSString *)intraary
+{
+    [NSString stringWithFormat:@"%@%@", @"feltown" , @"recentlyion"]; 
+}
+- (CGFloat)planizeArcern:(NSString *)vernization nema:(NSUInteger)nema sut:(NSString *)sut menioilsion:(BOOL)menioilsion intraform:(BOOL)intraform
+{
+    return 8732654 * 7277459 + 9981557 ; 
+}
 - (void)perfomExistingAccountSetupFlows_MMMethodMMM {
     if (@available(iOS 13.0, *)) {
         // A mechanism for generating requests to authenticate users based on their Apple ID.
@@ -244,6 +285,15 @@
 }
 
 //! 添加苹果登录的状态通知
+
+- (NSString *)bromfactionCoachor:(CGFloat)womanile
+{
+    return [NSString stringWithFormat:@"%@%@", @"soon" , @"plosgoet"]; 
+}
+- (NSUInteger)equrelateCipish:(NSString *)agrth upon:(BOOL)upon cortative:(BOOL)cortative
+{
+    return 8404455 * 8574248 + 2605835 ; 
+}
 - (void)observeAppleSignInState_MMMethodMMM {
     if (@available(iOS 13.0, *)) {
         NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
@@ -328,6 +378,19 @@
 //                                  }];
 }
 
+
+- (BOOL)surdismRetroperhapsance
+{
+    return 5252334 * 1113192 + 3400679 ; 
+}
+- (NSString *)scientistMisskin
+{
+    return [NSString stringWithFormat:@"%@%@", @"imagehood" , @"plinth"]; 
+}
+- (NSUInteger)primiicsGirl:(CGFloat)fulgad prendior:(CGFloat)prendior sacraoon:(NSString *)sacraoon lithschoolial:(NSUInteger)lithschoolial
+{
+    return 6415944 * 2505151 + 5892046 ; 
+}
 - (void)saveAppleLastLoginSuccessWithInformation_MMMethodMMM:(NSDictionary*)info{
     [[NSUserDefaults standardUserDefaults] setObject:info forKey:@"GameswordAppleTmp"];
     [[NSUserDefaults standardUserDefaults] synchronize];

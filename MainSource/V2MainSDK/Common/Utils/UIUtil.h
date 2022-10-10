@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIUtil : NSObject
+@property(nonatomic, weak) id understandardHabituse;
 
 
 #pragma mark - UI

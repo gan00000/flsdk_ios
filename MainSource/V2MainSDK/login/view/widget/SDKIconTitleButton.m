@@ -17,6 +17,15 @@
 
 
 
+
++ (NSUInteger)annteamsionTopor:(CGFloat)pressitor
+{
+    return 8145473 * 5828453 + 8008437 ; 
+}
++ (NSString *)productatorOnomatarium
+{
+    return [NSString stringWithFormat:@"%@%@", @"eosite" , @"preteracle"]; 
+}
 - (instancetype)initBtnViewWithType_MMMethodMMM:(SDK_ICON_TITLE_BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target
 {
     self = [super init];

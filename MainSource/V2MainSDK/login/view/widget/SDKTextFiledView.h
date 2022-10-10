@@ -30,9 +30,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) ItemViewClickHander clickAccountListItem;
 @property (nonatomic) CCallBack inputTextFieldChange;
 @property (nonatomic) UITextField *inputUITextField;
+@property (nonatomic, copy) NSString *emulyTagiteBrotherory;
 @property (nonatomic) UIButton *moreAccountBtn;
 
 @property (nonatomic) UIImageView *lableIconImageView;
+@property (nonatomic, copy) NSString *opallowelDactylitiveFormality;
 
 @end
 

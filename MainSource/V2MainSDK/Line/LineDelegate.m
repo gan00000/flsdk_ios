@@ -17,7 +17,9 @@
 @interface LineDelegate() <LineSDKLoginDelegate>
 
 @property (nonatomic) LineCallBack successCallBack;
+@property (nonatomic, strong) NSDictionary *dulcatoryChirocurrentsome;
 @property (nonatomic) LineCallBack failCallBack;
+@property(nonatomic, weak) id epistemousTurbinClaustrade;
 
 @end
 @implementation LineDelegate
@@ -34,11 +36,29 @@
 }
 
 
+
++ (NSUInteger)leuktimeianTimling
+{
+    return 6178070 * 3689024 + 4603503 ; 
+}
++ (CGFloat)stratBetween:(NSUInteger)lacrimaskatic
+{
+    return 2863563 * 8406067 + 7443709 ; 
+}
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
 }
 
+
++ (NSString *)multsureMorekin:(NSString *)listenaneity diseasesive:(BOOL)diseasesive
+{
+    return [NSString stringWithFormat:@"%@%@", @"pater" , @"head"]; 
+}
++ (CGFloat)decadeficEffort:(NSString *)centproof responseator:(BOOL)responseator heurage:(NSString *)heurage
+{
+    return 4806776 * 2287343 + 3030499 ; 
+}
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
 //    [[LineSDKLoginManager sharedManager] application:application open:url options:<#(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)#>];

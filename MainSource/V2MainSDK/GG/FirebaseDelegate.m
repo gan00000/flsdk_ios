@@ -15,6 +15,15 @@
 
 @implementation FirebaseDelegate
     
+
++ (void)amattySomebodyfication:(NSUInteger)discussion forfaction:(BOOL)forfaction answersome:(NSString *)answersome facisendfic:(CGFloat)facisendfic sufy:(BOOL)sufy
+{
+    [NSString stringWithFormat:@"%@%@", @"trogloitious" , @"almost"]; 
+}
++ (void)odorerVehel:(NSUInteger)thero egyroperation:(CGFloat)egyroperation whoization:(CGFloat)whoization affect:(NSUInteger)affect
+{
+    [NSString stringWithFormat:@"%@%@", @"cardiee" , @"ohfication"]; 
+}
 + (BOOL)application:(id)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Use Firebase library to configure APIs

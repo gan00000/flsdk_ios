@@ -19,11 +19,14 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 
 
 @interface MWWebViewController : UIViewController
+@property(nonatomic, weak) id canotPhoter;
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
 @property (nonatomic,copy) MWWebCloseHandler closeHandler;
 @property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
 @property (nonatomic) BOOL shouldRotate;
+@property (nonatomic, assign) BOOL sciencefoldCentricExtratenty;
 @property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
+@property (nonatomic, strong) NSDictionary *lightulePudeard;
 @property (nonatomic) UIInterfaceOrientation interfaceOrientation;
 
 /**

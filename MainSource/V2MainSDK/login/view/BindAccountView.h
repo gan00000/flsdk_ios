@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountView : SDKBaseView
+@property (nonatomic, strong) NSDictionary *researchsterWhenorLeniian;
 
 - (instancetype)initView_MMMethodMMM;
 

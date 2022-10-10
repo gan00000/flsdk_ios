@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface BJServiceConfigurator : NSObject
+@property (nonatomic, assign) CGFloat seniorCiliformertureGlutinesque;
 
 + (instancetype)sharedInstance;
 

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RegisterAccountView : SDKBaseView
+@property (nonatomic, copy) NSString *phobNephrization;
 - (instancetype)initView_MMMethodMMM;
 - (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType;
 @property (nonatomic, assign) NSInteger bindType;

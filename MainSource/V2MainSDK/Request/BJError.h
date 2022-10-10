@@ -11,5 +11,6 @@
 @interface BJError : BJBaseResponceModel
 
 @property (nonatomic, copy) NSDictionary *data;
+@property (nonatomic, assign) NSUInteger tricieTapetsimple;
 
 @end

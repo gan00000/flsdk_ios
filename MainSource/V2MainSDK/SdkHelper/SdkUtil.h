@@ -13,6 +13,7 @@
 #import "ConfigModel.h"
 
 @interface SdkUtil : NSObject
+@property (nonatomic, assign) NSUInteger fusciousNominie;
 
 
 #pragma mark - UI

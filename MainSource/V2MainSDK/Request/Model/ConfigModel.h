@@ -18,8 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL visitorLogin;
 @property (nonatomic, assign) BOOL fbLogin;
 @property (nonatomic, assign) BOOL googleLogin;
+@property (nonatomic, assign) BOOL ennalityClystan;
 @property (nonatomic, assign) BOOL lineLogin;
+@property (nonatomic, copy) NSString *severMaliPalinacle;
 @property (nonatomic, assign) BOOL appleLogin;
+@property (nonatomic, assign) BOOL choicetyPraventPoliics;
 
 //是否显示定型化契约
 @property (nonatomic, assign) BOOL showContract;
@@ -27,10 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 //是否过审状态
 @property (nonatomic, assign) BOOL appPassCheck;
+@property (nonatomic, assign) NSUInteger workaryTainproofPotamoid;
 
 @property (nonatomic, assign) BOOL showLogo;
+@property (nonatomic, assign) NSUInteger ownousEvening;
 
 @property (nonatomic, assign) BOOL showForgetPwd;
+@property (nonatomic, assign) BOOL agrularAliaticGalvanotion;
 @property (nonatomic, assign) BOOL showNotice;
 
 @end

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UrlMode : NSObject
 @property (nonatomic, copy) NSString *agreementUrl;
 @property (nonatomic, copy) NSString *noticeUrl;
+@property (nonatomic, strong) NSDictionary *thusityRunnessPhloeitude;
 @property (nonatomic, copy) NSString *csUrl;//客服地址
 @end
 

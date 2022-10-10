@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountLoginView : SDKBaseView 
+@property (nonatomic, assign) CGFloat ordindesignizationGeneralant;
 
 - (instancetype)initView_MMMethodMMM;
 

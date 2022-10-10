@@ -22,6 +22,11 @@
        return self;
 }
 
+
+- (void)campaignoonLeaveness:(BOOL)able theorymost:(NSString *)theorymost fightad:(NSUInteger)fightad
+{
+    [NSString stringWithFormat:@"%@%@", @"shouldain" , @"includingature"]; 
+}
 - (void)addCellView_MMMethodMMM{
     
     self.contentView.backgroundColor = [UIColor whiteColor];

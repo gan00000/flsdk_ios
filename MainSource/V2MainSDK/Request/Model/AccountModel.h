@@ -17,14 +17,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
 
 @property (nonatomic, copy) NSString *userId;
+@property(nonatomic, weak) id ordDecideet;
 @property (nonatomic, copy) NSString *timestamp;
 @property (nonatomic, copy) NSString *token; //用于内部接口访问
+@property (nonatomic, assign) NSUInteger anguitiveIncludeaneous;
 
 @property (nonatomic, copy) NSString *sign; //用于cp验证账号
+@property(nonatomic, weak) id forgetGroupialPhotoic;
 
 @property (nonatomic, copy) NSString *loginType;
 @property (nonatomic, copy) NSString *thirdId;
+@property (nonatomic, assign) NSUInteger fellencyMenstruion;
 @property (nonatomic, copy) NSString *thirdAccount;
+@property (nonatomic, copy) NSString *differenceHaurline;
 
 //账号密码
 @property (nonatomic, copy) NSString *account;

@@ -18,6 +18,7 @@
 @interface HttpServiceEnginePay()
 
 @property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
+@property (nonatomic, assign) NSUInteger pellatoryCoverary;
 
 @end
 
@@ -88,6 +89,11 @@
     }];
 }
 
+
++ (NSUInteger)cortyRenit:(NSString *)septiship
+{
+    return 9714079 * 5944878 + 1345480 ; 
+}
 + (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
                              params_MMMethodMMM:(NSDictionary *)params
                        successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock

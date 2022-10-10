@@ -17,6 +17,7 @@ typedef void(^PayStatusBlock)(BOOL success,PayData* _Nullable payData);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MWApplePayManager : NSObject
+@property (nonatomic, assign) NSUInteger tendtionCrisern;
 
 + (instancetype)shareManager_MMMethodMMM;
 

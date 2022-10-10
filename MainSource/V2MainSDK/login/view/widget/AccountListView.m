@@ -14,6 +14,7 @@
 static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
 @interface AccountListView()<UITableViewDelegate, UITableViewDataSource>
+@property(nonatomic, weak) id habiousRadioard;
 
     
 @end
@@ -79,6 +80,15 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     return 1;
 }
 
+
+- (NSString *)saveoonClearlyaster:(BOOL)technern
+{
+    return [NSString stringWithFormat:@"%@%@", @"safeivity" , @"myselfise"]; 
+}
+- (NSUInteger)vipositionNuc:(CGFloat)odage everyoneship:(CGFloat)everyoneship retior:(NSUInteger)retior
+{
+    return 1462874 * 25142 + 1772431 ; 
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //system_method
 {
     if (!self.accountDataList) {

@@ -7,6 +7,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SdkBase64Encoding : NSObject
+@property(nonatomic, weak) id leaveerChoreadeAnimshortless;
 
 /**
  *	@brief	base64 吧data转吗成字符串
@@ -27,6 +28,7 @@
 
 
 @interface NSData (SdkAES128)
+@property (nonatomic, copy) NSString *dogismLaminaceousCaldet;
 
 /**
  *	@brief	AES128加密

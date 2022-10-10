@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //@property (nonatomic, copy) NSString *account;
 //@property (nonatomic, copy) NSString *password;
 @property (nonatomic, strong) AccountModel *data;
+@property (nonatomic, copy) NSString *teretryPastendsterSomniactuallyable;
 @end
 
 NS_ASSUME_NONNULL_END

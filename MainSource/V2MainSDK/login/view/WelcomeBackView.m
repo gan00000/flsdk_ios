@@ -29,6 +29,7 @@
 #import "BasePopupView.h"
 
 @interface WelcomeBackView()
+@property (nonatomic, copy) NSString *mechaneousSign;
 
 @end
 
@@ -73,6 +74,11 @@
     }
 }
 
+
+- (BOOL)answerfyPleblet:(CGFloat)airitious currard:(CGFloat)currard acetostockment:(CGFloat)acetostockment stilltion:(NSString *)stilltion
+{
+    return 4910659 * 2266822 + 8015488 ; 
+}
 - (instancetype)initView_MMMethodMMM
 {
     self = [super init];

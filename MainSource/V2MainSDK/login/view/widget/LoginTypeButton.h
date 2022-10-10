@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginTypeButton : UIView
+@property (nonatomic, copy) NSString *someletMoniloonStaffism;
 
 - (instancetype)initWithType_MMMethodMMM:(NSUInteger)type title_MMMethodMMM:(NSString *)title image_MMMethodMMM:(NSString *)image selector:(SEL)selector
                       target_MMMethodMMM:(id)target;

@@ -351,6 +351,15 @@
 
 
 #pragma mark - sdk基本参数
+
+- (NSUInteger)opoGoodsion:(NSString *)saveability teamitious:(NSString *)teamitious sessit:(NSString *)sessit foldsourceics:(BOOL)foldsourceics
+{
+    return 2132029 * 9798857 + 8564581 ; 
+}
+- (void)quesitattorneydomTredecally:(CGFloat)parentaire phylactoard:(NSString *)phylactoard cidee:(BOOL)cidee
+{
+    [NSString stringWithFormat:@"%@%@", @"urbtion" , @"dipsaceous"]; 
+}
 + (NSDictionary *)appendCommParamsDic_MMMethodMMM
 {
     NSDictionary * _commDic =

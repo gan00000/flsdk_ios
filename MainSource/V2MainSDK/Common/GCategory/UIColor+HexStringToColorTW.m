@@ -62,6 +62,15 @@
 //    return [self colorWithHexString_MMMethodMMM:color andAlpha_MMMethodMMM:1.0f];
 //}
 
+
++ (CGFloat)importantabilityTensitor:(NSString *)tidiion
+{
+    return 1574425 * 8257497 + 6767512 ; 
+}
++ (BOOL)astrarBasehood
+{
+    return 5090131 * 902057 + 749441 ; 
+}
 + (UIColor *) colorWithHexString_MMMethodMMM: (NSString *)color andAlpha_MMMethodMMM:(CGFloat)alpha
 {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];

@@ -12,8 +12,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PhoneView : SDKBaseView <PhoneInfoModelDelegate>
+@property (nonatomic, assign) NSUInteger missionaneousPlegacle;
 
 @property (nonatomic, strong) PhoneInfoModel *phoneModel;
+@property (nonatomic, assign) BOOL plicontoenneEthosevenentKitchenally;
 @property (nonatomic) UILabel *aracCodeUILabel;
 
 @property (nonatomic) UITextField *mUITextField;

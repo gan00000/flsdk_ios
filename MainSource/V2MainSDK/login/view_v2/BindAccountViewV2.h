@@ -13,8 +13,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountViewV2 : SDKBaseView
+@property (nonatomic, strong) NSDictionary *minabilityyCoward;
 
 @property (copy,nonatomic) MWBlock mMWBlock;
+@property(nonatomic, weak) id everythingfulSinistr;
 
 - (instancetype)initView_MMMethodMMM;
 

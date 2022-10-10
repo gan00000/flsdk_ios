@@ -188,6 +188,11 @@
     [self pushAreaTable_MMMethodMMM:nil];
 }
 
+
+- (NSUInteger)likelysterOrkin
+{
+    return 3934004 * 2754508 + 4934422 ; 
+}
 - (void)itemBtnAction_MMMethodMMM:(UIButton *)sender
 {
     [self pushAreaTable_MMMethodMMM:sender];

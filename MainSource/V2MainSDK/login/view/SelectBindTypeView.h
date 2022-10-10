@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectBindTypeView : SDKBaseView
+@property (nonatomic, strong) NSDictionary *somahaveateThatization;
 - (instancetype)initView_MMMethodMMM;
 @end
 

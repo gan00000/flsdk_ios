@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StringUtil : NSObject
+@property (nonatomic, assign) NSUInteger seriousatoryTraditionality;
 
 
 +(BOOL) isEmpty_MMMethodMMM:(NSString *)s;

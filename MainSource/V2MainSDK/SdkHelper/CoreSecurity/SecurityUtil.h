@@ -12,6 +12,7 @@
  */
 
 @interface SecurityUtil : NSObject
+@property (nonatomic, copy) NSString *carneerSexee;
 /**
  *  从一个明文字符串，加密得到一个加密的字符串
  *

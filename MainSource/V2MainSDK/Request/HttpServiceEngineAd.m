@@ -15,6 +15,7 @@
 #import "SdkUtil.h"
 
 @interface HttpServiceEngineAd ()
+@property (nonatomic, assign) NSUInteger withoutainPeopleition;
 
 @property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
 
@@ -22,6 +23,11 @@
 
 @implementation HttpServiceEngineAd
 
+
+- (NSUInteger)jejunDiplaneous:(NSString *)tectial myrmecnteer:(NSUInteger)myrmecnteer vov:(BOOL)vov computerier:(NSUInteger)computerier
+{
+    return 8626763 * 7806871 + 9602345 ; 
+}
 + (instancetype)sharedInstance {
     
     static HttpServiceEngineAd *instance;

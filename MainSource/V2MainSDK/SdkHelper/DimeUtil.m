@@ -11,10 +11,16 @@
 
 @interface DimeUtil()
 @property (nonatomic,assign) CGFloat viewAdaptRate;
+@property (nonatomic, assign) NSUInteger differentoItem;
 @end
 
 @implementation DimeUtil
 
+
++ (NSString *)amphoriumSurdism:(BOOL)haur mixthand:(NSString *)mixthand frainavoid:(NSString *)frainavoid
+{
+    return [NSString stringWithFormat:@"%@%@", @"ogance" , @"audience"]; 
+}
 + (instancetype)share{
     
     static DimeUtil *_xDimeUtil = nil;

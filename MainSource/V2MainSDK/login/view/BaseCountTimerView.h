@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseCountTimerView : SDKBaseView
+@property (nonatomic, copy) NSString *brevonCineize;
 
 @property (assign,nonatomic) NSInteger totalCount;
 @property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;

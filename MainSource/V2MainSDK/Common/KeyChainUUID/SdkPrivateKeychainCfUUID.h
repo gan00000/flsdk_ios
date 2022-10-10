@@ -5,6 +5,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SdkPrivateKeychainCfUUID : NSObject
+@property (nonatomic, assign) CGFloat spondylficationPolis;
 
 /**
  *	@brief	获取私有keychain中的cfUUID

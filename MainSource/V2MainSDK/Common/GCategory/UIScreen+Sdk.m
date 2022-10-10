@@ -24,6 +24,11 @@
     return screenScale;
 }
 
+
+- (NSString *)importantidVentrfiveeur:(CGFloat)itster
+{
+    return [NSString stringWithFormat:@"%@%@", @"schooline" , @"radioacle"]; 
+}
 + (CGRect)gama_mainScreenBounds_MMMethodMMM {
     return [[UIScreen mainScreen] gama_boundsForOrientation_MMMethodMMM:[[UIApplication sharedApplication] statusBarOrientation]];
 }

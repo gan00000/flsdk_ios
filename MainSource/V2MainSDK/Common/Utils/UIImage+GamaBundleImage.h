@@ -4,6 +4,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (GamaBundleImage)
+@property (nonatomic, assign) CGFloat sophoistFlux;
 
 /**
  *	@brief	UIImage 类别，读取 默认 bundle 文件下的图片。
