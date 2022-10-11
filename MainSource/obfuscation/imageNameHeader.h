@@ -44,9 +44,9 @@
 #define nend_update_account_bg    @"mmplaygame_suprise"
 #define sdk_list_down    @"mmplaygame_down_white"
 #define sdk_list_up    @"mmplaygame_up_white"
-#define mw_arr_left    @"mw_arr_left"
-#define mw_arr_right    @"mw_arr_right"
-#define mw_logo         @"mw_logo"
+#define mw_arr_left    @"mmplaygame_arr_left"
+#define mw_arr_right    @"mmplaygame_arr_right"
+#define mw_logo         @"mmplaygame_logo"
 
 #else
 
