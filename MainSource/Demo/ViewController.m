@@ -290,9 +290,9 @@
     // 周一早上 8：00 上班
     NSDateComponents *components = [[NSDateComponents alloc] init];
     // 注意，weekday默认是从周日开始   Sunday == 1, Saturday == 7
-    components.weekday = 3;
-    components.hour = 12;
-    components.minute = 50;
+    components.weekday = 4;
+    components.hour = 17;
+    components.minute = 24;
     UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
     [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
