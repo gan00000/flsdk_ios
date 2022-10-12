@@ -217,7 +217,7 @@
 #define setNeedUpdate    rotsuccessfulageEndization
 #define setPwdFiledView    unguialitySendit
 #define setViewStatue    laudardBoytion
-#define shouldAutorotate    superpositionarianCondine
+//#define shouldAutorotate    superpositionarianCondine
 #define showActionSheetWithTitle    fendSpecsive
 #define showAlertTips    concernacityCellacle
 #define showAlertViewWithTitle    audacLearn
@@ -229,7 +229,7 @@
 #define showSelectedAreaCodeValue    tinctaticAstro
 #define startCountTimer    aroundidWindally
 #define startLoginWithCallBack    typoonPlexform
-#define startMonitoring    solvableTreatistic
+//#define startMonitoring    solvableTreatistic
 #define startPayWithProductId    proletinstitutionainCortit
 #define stopLoadingAtView    treearyMovieize
 #define stringToMd5    interprocessHairain
