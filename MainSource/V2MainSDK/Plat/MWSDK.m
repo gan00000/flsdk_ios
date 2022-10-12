@@ -10,8 +10,8 @@ I don't have the strength to stay away from you anymore.
 Your number was up the first time l met you.
 第一次遇见我 
 **/
-#import "AdLogger.h"
-#import "SDKLoginViewController.h"
+#import "LargeRump.h"
+#import "LocalerOrnithtaskment.h"
 
 /**
   中闪烁的明星，它会引领你踏上命运的征途。坚持不懈，你就能享受那些幸福时刻。
@@ -20,14 +20,14 @@ Your number was up the first time l met you.
 
 Take pride in your accomplishments, as they are stepping stones to your dreams. Un 
 **/
-#import "SUtil.h"
-#import "StringUtil.h"
+#import "DrapfoldWife.h"
+#import "NautindustryitSimplyesque.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
-#import "SDKRequest.h"
-#import "FBDelegate.h"
-#import "LineDelegate.h"
-#import "MWApplePayManager.h"
+#import "PhemiaBothular.h"
+#import "BattaneityGreenfold.h"
+#import "PolisatorGuessics.h"
+#import "AgsortListlike.h"
 
 /**
   y to keep at it. But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to achieving a New Year's resolution.
@@ -38,8 +38,8 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 
 One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty ple 
 **/
-#import "AdLogger.h"
-#import "NoticeViewV2.h"
+#import "LargeRump.h"
+#import "PogonuousGuyitive.h"
 
 /**
   o step onto the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
@@ -50,7 +50,7 @@ One way to make pursuing a goal that normally feels like a chore more fun is to 
 
 If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a  
 **/
-#import "BindPhoneViewV2.h"
+#import "DamnallyOctogensive.h"
 
 /**
   quire a bedtime of 11 pm.
@@ -59,7 +59,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 
 " 
 **/
-#import "BindAccountViewV2.h"
+#import "PhonPosorium.h"
 
 /**
   Mouth 》 -Iron & Wine
@@ -83,8 +83,8 @@ And called for you everywhere
 而我到处在找你
 Have  
 **/
-#import "AdDelegate.h"
-#import "MWWebViewController.h"
+#import "PatternelCrischooseorium.h"
+#import "LetuleSeptuagesimic.h"
 //ody doesn't know how to respond.
 //
 //临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身
@@ -110,8 +110,8 @@ Love is letting someone become your greatest weakness ,then going all you can do
          annotation:(id)annotation
 {
     SDK_LOG(@"application openURL sourceApplication annotation");
-    [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    [PatternelCrischooseorium application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [BattaneityGreenfold application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 //，你会认为长时间、不被打扰的
     if (!result) {
 
@@ -120,7 +120,7 @@ Love is letting someone become your greatest weakness ,then going all you can do
 
 “朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因 
 **/
-        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        result = [PolisatorGuessics application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }
     return result;
 }
@@ -137,8 +137,8 @@ Love is letting someone become your greatest weakness ,then going all you can do
 Plotting 
 **/
     SDK_LOG(@"ios9 and later = application openURL options");
-    [AdDelegate application:application openURL:url options:options];
-    BOOL result = [FBDelegate application:application openURL:url options:options];
+    [PatternelCrischooseorium application:application openURL:url options:options];
+    BOOL result = [BattaneityGreenfold application:application openURL:url options:options];
     if (!result) {
 
 /**
@@ -146,7 +146,7 @@ Plotting
 
 在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明 
 **/
-        result = [LineDelegate application:application openURL:url options:options];
+        result = [PolisatorGuessics application:application openURL:url options:options];
     }
     return result;
 }
@@ -245,7 +245,7 @@ A well-known speaker
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
     }
     self.loginCompletionHandler = cmopleteHandler;
@@ -289,7 +289,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 我想你。我想念早上去上班，直到在一天结束的时候 
 **/
 {
-    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
+    LocalerOrnithtaskment *controller = [[LocalerOrnithtaskment alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
 #ifdef __IPHONE_8_0
 
 /**
@@ -322,7 +322,7 @@ He proceeded to crumple the 20 dollar
 //
 //奇怪的是，有证据表
 #endif
-    [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
+    [[DrapfoldWife getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
 
 /**
   d the morning snuggling you and I shared.
@@ -336,7 +336,7 @@ I miss you. I miss going to work in the morning
 -(void)showNoticeView
 {
 //in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it will lead you to your destiny’s path. Follow that pat
-    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter_MMMethodMMM:^{
+    PogonuousGuyitive *mNoticeViewV2 = [[PogonuousGuyitive alloc] initWithCompleter_MMMethodMMM:^{
         [self sdkLoginWithHandlerForInner];
 
 /**
@@ -399,8 +399,8 @@ Hands started going up. He said, “I am going
 **/
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
-    if ([StringUtil isEmpty_MMMethodMMM:roleId] || [StringUtil isEmpty_MMMethodMMM:roleName] ||
-        [StringUtil isEmpty_MMMethodMMM:roleLevel] ||
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:roleId] || [NautindustryitSimplyesque isEmpty_MMMethodMMM:roleName] ||
+        [NautindustryitSimplyesque isEmpty_MMMethodMMM:roleLevel] ||
 //ng on magazine photos
 //亲着杂志上的照片
 //Those fishing lures thrown in the cold and clean
@@ -410,9 +410,9 @@ Hands started going up. He said, “I am going
 //Have I found you?
 //我找到你了吗
 //Flightless 
-        [StringUtil isEmpty_MMMethodMMM:serverCode])
+        [NautindustryitSimplyesque isEmpty_MMMethodMMM:serverCode])
     {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
         return;
 //'d never see the stars.
 //我喜欢夜晚。没有黑暗，我们永远都看不见星星。
@@ -504,13 +504,13 @@ Hands started going up. He said, “I am going to give this $20. to one of you. 
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
     }
     SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
-    if ([StringUtil isEmpty_MMMethodMMM:productId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:productId]) {
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
 
 /**
    and dodge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -528,14 +528,14 @@ This may sound sinister, but ensuring you'll face some penalty if you don't achi
         return;
     }
 //ander said. "The problem is we don't 
-    if ([StringUtil isEmpty_MMMethodMMM:roleId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:roleId]) {
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
         return;
 //rd, American Mouth》是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生
     }
-    if ([StringUtil isEmpty_MMMethodMMM:serverCode]) {
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:serverCode]) {
 // Year's resolution, your instinct may be to declare yourself a failure and throw in the towel. Researchers call this the "what
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
 
 /**
   
@@ -544,8 +544,8 @@ If you deviate at all from your New
 **/
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:cpOrderId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:cpOrderId]) {
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
         return;
     }
     if (self.isPaying) {
@@ -582,14 +582,14 @@ I don’t have th strength to stay away from you anymore.
 //Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you pe
     AccountModel *accountModel = sLoginResponse.data;
     if (!accountModel || !accountModel.userId) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
         self.isPaying = NO;
 //人每天要在早上7点起床，倒推8个小时睡眠时间应该是晚上11点。
 //
 //"Now you know when you have to stop and get ready to go to bed whether you're done or not," Grander said. "The pro
         return;
     }
-    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+    [[AgsortListlike shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
 //Let's say you need to go to bed extra ear
         self.isPaying = NO;
 
@@ -627,7 +627,7 @@ Your mood swings are kind of giving me a whiplash.
 你的态度忽冷忽热让我难受。
 I only said it’d be better if we weren’t friends, not that I  
 **/
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [TriptlessDieing _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
                 if (!havePay) {
 // and the b
                 }
@@ -641,8 +641,8 @@ I only said it’d be better if we weren’t friends, not that I didn’t wanna 
 我只是说如果我们不是朋友会好很多，但是那不代表我不想和你交朋友。
 He unleashed the full, devastating power of his eyes on me, as if try 
 **/
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
-                [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
+                [TriptlessDieing _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [PatternelCrischooseorium logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
 
 /**
   e logic for why this works is simple. Incentives change our decisions, and penalties are even more motivating than rewards.
@@ -701,10 +701,10 @@ And when the cops
 **/
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
     }
-    [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
+    [LargeRump logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 
 /**
@@ -745,7 +745,7 @@ Bella, the only reason I left was because I thought I was protecting you.
 //
 //Find the star that twinkles in your heart for you alone are capable of making your brightest dreams come true. Give your ho
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
     }
     if (@available(iOS 10.3, *)) {
@@ -765,7 +765,7 @@ Bella, the only reason I left was because I thought I was protecting you.
 - (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
 
 /**
    is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their patterns of behavior.
@@ -774,7 +774,7 @@ Bella, the only reason I left was because I thought I was protecting you.
 **/
         return;
     }
-    [[FBDelegate share] shareWithTag_MMMethodMMM:hashTag message_MMMethodMMM:message url_MMMethodMMM:url presentingViewController:appTopViewController successBlock_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [[BattaneityGreenfold share] shareWithTag_MMMethodMMM:hashTag message_MMMethodMMM:message url_MMMethodMMM:url presentingViewController:appTopViewController successBlock_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         if (shareBlock) {
             shareBlock(YES,dic);
         }
@@ -838,7 +838,7 @@ American mouth
     if (![[NSThread currentThread] isMainThread]) {
 //cy can leave you high and dry because you'll neglect an even more important part of the equation: whether
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
     }
 
@@ -850,7 +850,7 @@ American mouth
 One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasu 
 **/
     if (!is_Version2) {
-        [SdkUtil toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
+        [ValueletTheatic toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
         return;
 
 /**
@@ -887,7 +887,7 @@ Your mood swings are kind of giving me a whiplash.
 你的态度忽冷忽热让我难受。
 I only said it’d be better if we weren’t friends, not that I didn’t wa 
 **/
-    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    DamnallyOctogensive *mBindPhoneViewV2 = [[DamnallyOctogensive alloc] init];
 
 /**
   f making your brightest dreams come true. Give your hopes everything 
@@ -903,7 +903,7 @@ I only said it’d be better if we weren’t friends, not that I didn’t wa
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
 
 /**
   Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake up tired.
@@ -928,7 +928,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 
 《Flig 
 **/
-        [SdkUtil toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
+        [ValueletTheatic toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
 //而休整的时间。”
 //
 //It may sound like a small shift in thinking, but it's an important one, Grander added.
@@ -946,7 +946,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 Therefore it's important to have a standard wake up time, e 
 **/
     }
-    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView_MMMethodMMM];
+    PhonPosorium *mBindAccountViewV2 = [[PhonPosorium alloc] initView_MMMethodMMM];
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
     [superView addSubview:mBindAccountViewV2];
@@ -966,8 +966,8 @@ Love is letting someone become your greatest weakness ,then going all you can do
 Is it not enough just to have a long and happy l 
 **/
 {
-    if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:areaCode]) {
+        [ValueletTheatic toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
         return;
 
 /**
@@ -978,21 +978,21 @@ Establishing that positive relationship between the bed and sleep can be benefic
 格兰 
 **/
     }
-    if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:telephone]) {
 
 /**
   steeper penalty than shame, however, is putting cold hard cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your New Year's resolution. The logic for why this works is simple. Incentives change our decisions, and penalties are even more motivating than rewards.
 
 而 
 **/
-        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+        [ValueletTheatic toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
         return;
     }
-    [SDKRequest requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [PhemiaBothular requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(PharmacainDrug *error) {
         if (mMWBlock) {
 
 /**
@@ -1011,8 +1011,8 @@ Establishing that positive relationship between the bed and sleep can be benefic
     }];
 }
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
-    if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:areaCode]) {
+        [ValueletTheatic toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
         return;
 
 /**
@@ -1042,15 +1042,15 @@ Have I found you?
 Flightless bird, jealous, weeping
 折翼的鸟？羡慕， 
 **/
-    if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:telephone]) {
+        [ValueletTheatic toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"py_msg_vfcode_hint".localx];
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:vfCode]) {
+        [ValueletTheatic toastMsg_MMMethodMMM: @"py_msg_vfcode_hint".localx];
         return;
     }
-    [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [PhemiaBothular bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
 
 /**
   ，” he replied, “what if I do this?” He dropped it on the ground and sta 
@@ -1068,7 +1068,7 @@ Flightless bird, jealous, weeping
         if (mMWBlock) {
             mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
         }
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(PharmacainDrug *error) {
         if (mMWBlock) {
 //rospective about what works in ways you might not otherwise.
 //
@@ -1085,10 +1085,10 @@ Flightless bird, jealous, weeping
 }
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
 {
-    if (![SdkUtil validUserName_MMMethodMMM:account]) {
+    if (![ValueletTheatic validUserName_MMMethodMMM:account]) {
         return;
     }
-    if (![SdkUtil validPwd_MMMethodMMM:password]) {
+    if (![ValueletTheatic validPwd_MMMethodMMM:password]) {
         return;
     }
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
@@ -1120,7 +1120,7 @@ One way to make pursuing a goal that normally feels like a chore mor
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
-    [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [PhemiaBothular doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
         cc.data.password = password;
@@ -1135,7 +1135,7 @@ One way to make pursuing a goal that normally feels like a chore mor
 //
 //我想你。我想念我在你身边
         SDK_DATA.mLoginResponse = cc;
-        [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
+        [[ClearidVerminternationalitude share] saveAccountModel_MMMethodMMM:cc.data];
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;
@@ -1179,7 +1179,7 @@ One way to make pursuing a goal that normally feels like a chore mor
 Spending time around high achie 
 **/
         }
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(PharmacainDrug *error) {
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -1203,7 +1203,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 If your New Year's resolution  
 **/
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
 //matter what happened or what will happen, you will never lose your value."
 //
@@ -1220,7 +1220,7 @@ If your New Year's resolution
 //“无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代
     }
     NSString * csurl = SDK_DATA.urls.csUrl;
-    if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
+    if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:csurl]) {
 
 /**
   命运的那颗星，那颗永远在你心中闪烁的明星。当它在你面前闪耀时，抓住这宝贵的机会。请谨记，只要你坚持不懈，最终的目标总能实现。
@@ -1233,8 +1233,8 @@ Though barriers may sometimes stand in the way of
         return;
 //rates guilt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you plan to meditate during lunch, you'll be
     }
-    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl];
-    [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    NSString *resultURL = [PhemiaBothular createSdkUrl_MMMethodMMM:csurl];
+    [LetuleSeptuagesimic webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
 //yourself a failure and throw in the towel. Researchers call this the "what the hell effect." Here's what it looks like: You planned to get to bed early every night but couldn't resist staying up late one Friday to watch 
 }
 //ff his seminar by holding up a $20 bill. In the room of 200, he asked, “Who would like this $20 bill?”
@@ -1272,7 +1272,7 @@ Though barriers may sometimes stand in the way of
 “好，”他说道，“如果我这 
 **/
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
 
 /**
@@ -1324,7 +1324,7 @@ Though barriers may sometimes stand in the way of your dr
     SDK_LOG(@"addLocalNotificationWithTitle");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [PepsitPostulo showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
         return;
 
 /**
@@ -1385,8 +1385,8 @@ Catch the star that holds your destiny, the one that forever twinkles within you
 **/
         content.body = body;
         content.sound = [UNNotificationSound defaultSound];
-        if ([StringUtil isEmpty_MMMethodMMM:notifyId]) {
-            notifyId = [SUtil getMD5StrFromString_MMMethodMMM:title];
+        if ([NautindustryitSimplyesque isEmpty_MMMethodMMM:notifyId]) {
+            notifyId = [DrapfoldWife getMD5StrFromString_MMMethodMMM:title];
         }
 
 /**

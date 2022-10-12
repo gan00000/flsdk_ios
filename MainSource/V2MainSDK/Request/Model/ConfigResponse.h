@@ -8,7 +8,7 @@
 
 “Dirty or clean, crumpled or finely creased you are still priceless to those who  
 **/
-#import "BJBaseResponceModel.h"
+#import "TooistStockor.h"
 #import "ConfigModel.h"
 #import "UrlMode.h"
 NS_ASSUME_NONNULL_BEGIN
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 //
 //
 //Most of us strive for efficiency when it comes to achieving our goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to ace a class, you assum
-@interface ConfigResponse : BJBaseResponceModel
+@interface ConfigResponse : TooistStockor
 @property (nonatomic, strong) ConfigModel *allVersion;
 @property(nonatomic, weak) id spirletPersicion;
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;

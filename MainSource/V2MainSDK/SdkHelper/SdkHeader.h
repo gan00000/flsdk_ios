@@ -8,10 +8,10 @@
 
 格兰德纳说：“你可以给出的最好的睡眠建议 
 **/
-#import "USDefault.h"
-#import "UIImage+ResBundle.h"
-#import "UIColor+HexStringToColorTW.h"
-#import "UIUtil.h"
+#import "TriptlessDieing.h"
+#import "UIImage+SuioseInaceous.h"
+#import "UIColor+ZygCedsimilar.h"
+#import "NaturetyYoung.h"
 //w, who still wants it?”
 //
 //
@@ -29,16 +29,16 @@
 //
 //
 //
-#import "CCSDKDATA.h"
-#import "ConfigCoreUtil.h"
+#import "OwnotStationit.h"
+#import "ClearidVerminternationalitude.h"
 #import "LoginResponse.h"
 
 /**
   said, your sleep rhythms aren't predictable and the body  
 **/
-#import "SUtil.h"
+#import "DrapfoldWife.h"
 #import "ResHeader.h"
-#import "AdLogger.h"
+#import "LargeRump.h"
 
 /**
   dle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
@@ -47,10 +47,10 @@
 
 Why is that so important? Bec 
 **/
-#import "StringUtil.h"
-#import "DimeUtil.h"
-#import "SdkUtil.h"
-#import "NSString+Local.h"
+#import "NautindustryitSimplyesque.h"
+#import "LineencyEnni.h"
+#import "ValueletTheatic.h"
+#import "NSString+PromentQuadragesimable.h"
 
 /**
   is eyes on me, as if trying to c 
@@ -70,7 +70,7 @@ Why is that so important? Bec
 #define kBgAlpha                         0.9f
 #define ContentViewBgColor                    @"#f4f4f5"
 #define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
-#define SDK_DATA                           [CCSDKDATA sharedSdkData_MMMethodMMM]
+#define SDK_DATA                           [OwnotStationit sharedSdkData_MMMethodMMM]
 #define GetImage(imageName)     [UIImage res_imageNamed_MMMethodMMM:imageName]
 
 /**
@@ -84,12 +84,12 @@ Why is that so important? Bec
 
 “Many times in our lives, we are dropped,  
 **/
-#define appTopViewController    [SUtil getCurrentViewController_MMMethodMMM]
+#define appTopViewController    [DrapfoldWife getCurrentViewController_MMMethodMMM]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 //success rate, too. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidence. It also forces you to be introspective about what works in ways you migh
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries_MMMethodMMM]
+#define device_is_iPhoneX   [DrapfoldWife isIPhoneXSeries_MMMethodMMM]
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight_MMMethodMMM:h]
+#define VH(h)  [[LineencyEnni share] getViewHeight_MMMethodMMM:h]
 
 /**
   e circumstances that come our way. We feel as though we are worthless；but no matter what happened or what will happen, you will never lose your value."
@@ -102,7 +102,7 @@ Why is that so important? Bec
 
 “Dirty or clean, crumpled or finely creased you are still priceless to those who love you. The worth of our lives comes, n 
 **/
-#define VW(w)  [[DimeUtil share] getViewWidth_MMMethodMMM:w]
+#define VW(w)  [[LineencyEnni share] getViewWidth_MMMethodMMM:w]
 //you might not otherwise.
 //
 //奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建议时，这会增强你的自信。这样也会迫使你反省自己的方法是否对路。
@@ -112,7 +112,7 @@ Why is that so important? Bec
 //每天在固定时间起床和上床
 //
 //Melatonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. 
-#define FS(size)  [[DimeUtil share] getFontSize_MMMethodMMM:size]
+#define FS(size)  [[LineencyEnni share] getFontSize_MMMethodMMM:size]
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 {

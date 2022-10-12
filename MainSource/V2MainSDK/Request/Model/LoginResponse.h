@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "TooistStockor.h"
 
 /**
   于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your fav 
 **/
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : TooistStockor
 
 /**
    unavoidable 
