@@ -216,7 +216,7 @@
 #define setNeedUpdate   recentlySalvar
 #define setPwdFiledView   mitfierLubrictheorysive
 #define setViewStatue   carpthGravier
-#define shouldAutorotate   peacelessAllowety
+//#define shouldAutorotate   peacelessAllowety
 #define showActionSheetWithTitle   manthpersonturePrettyation
 #define showAlertTips   superencyItsance
 #define showAlertViewWithTitle   entericsMammacity
@@ -228,7 +228,7 @@
 #define showSelectedAreaCodeValue   systemadeNespeechation
 #define startCountTimer   tendicMrair
 #define startLoginWithCallBack   kinyearfulAfterally
-#define startMonitoring   plebatureRaceast
+//#define startMonitoring   plebatureRaceast
 #define startPayWithProductId   templaboveessEnvironmentitude
 #define stopLoadingAtView   gustBuccseaably
 #define stringToMd5   saccibilityOdontize
