@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>SDK_V3 demo</string>
+	<string>万灵召唤师demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>

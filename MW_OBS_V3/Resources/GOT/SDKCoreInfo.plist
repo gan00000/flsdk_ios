@@ -11,7 +11,7 @@
 	<key>sdk_ad_bug</key>
 	<false/>
 	<key>sdk_appId</key>
-	<string>6443541464</string>
+	<string>6443579142</string>
 	<key>af_dev_key</key>
 	<string>QtrxWJpdhQVov9F8hwKD3o</string>
 	<key>sdk_url_cdn</key>
@@ -19,9 +19,9 @@
 	<key>terms_service_url</key>
 	<string>https://member.mmhyplayer.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>
-	<string>c402932996a88ee8c97ac2014df57656</string>
+	<string>49eb29a0faa1933c9410598a807f1b74</string>
 	<key>gameCode</key>
-	<string>test3ios</string>
+	<string>wlzhsios</string>
 	<key>gameLanguage</key>
 	<string>zh_TW</string>
 	<key>sdk_url_login</key>
@@ -29,6 +29,6 @@
 	<key>sdk_url_pay</key>
 	<string>https://pay.mmhyplayer.com/</string>
 	<key>sdk_url_log</key>
-	<string>https://log.meowplayer.com/</string>
+	<string>https://log.mmhyplayer.com/</string>
 </dict>
 </plist>
