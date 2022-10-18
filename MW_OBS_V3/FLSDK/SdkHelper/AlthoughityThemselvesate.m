@@ -98,7 +98,7 @@ Those fishing lures thrown in the cold an
 3. Change your attitude about sleep 
 **/
             cc.data.password = password;
-            [OdorSever toastMsg:GetString(@"text_account_reg_success")];
+//            [OdorSever toastMsg:GetString(@"text_account_reg_success")];
             [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
         }
 //ge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -148,7 +148,7 @@ I don’t have th s
 //
 //Many people view sleeping as the final thing they have to do in a jam-packed 
         [AperthandBalowise thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
-            [OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(@"py_login_success")];
 
 /**
   goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an 
@@ -207,7 +207,7 @@ Still the ha
 If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue-based plan like  
 **/
         [AperthandBalowise thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(@"py_login_success")];
 
 /**
   方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
@@ -351,7 +351,7 @@ Take pride in your accomp
 If you deviate at all from your New Year's resolution, your instinct may be to declare yourself a failure and throw in the t 
 **/
     [AperthandBalowise freeLoginOrRegister:loginId successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"py_login_success")];
+        //[OdorSever toastMsg:GetString(@"py_login_success")];
 
 /**
   和你交朋友。
@@ -446,7 +446,7 @@ One easy way to do this is by telling a few people about your goal so you'll fee
 格兰德纳补充 
 **/
         [AperthandBalowise thirdLoginOrReg:userId andThirdPlate:LOGIN_TYPE_GOOGLE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(@"py_login_success")];
             if (delegate) {
 //die. But dying in the place of someone I love,seems like a good way to go.
 //我从来没有想过自己会怎么死。但是死在自己爱的人的怀里看起来是一个不错的选择。
@@ -560,7 +560,7 @@ Your mood swings are kind of giving me
 //“无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了什么，或者我们认识谁，生活的价值在于我们是谁。”
         }
         [AperthandBalowise thirdLoginOrReg:userID andThirdPlate:LOGIN_TYPE_LINE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            [OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(@"py_login_success")];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_LINE];
 // to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -621,7 +621,7 @@ One way to make pursuing a goal that normally feels like a chore more fun is to 
 **/
 {
     [AperthandBalowise doLoginWithAccount:account andPassword:password otherDic:nil successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"py_login_success")];
+        //[OdorSever toastMsg:GetString(@"py_login_success")];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
@@ -821,7 +821,7 @@ There are not enough words to contemplate on
 + (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(NSString *)account pwd:(NSString *)password thirdId:(NSString *)thirdId  thirdPlate:(NSString *)thirdPlate otherParamsDic:(NSDictionary *)otherParamsDic
 {
     [AperthandBalowise doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:thirdId thirdPlate:thirdPlate otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"text_account_bind_success")];
+        //[OdorSever toastMsg:GetString(@"text_account_bind_success")];
 
 /**
   e cracks

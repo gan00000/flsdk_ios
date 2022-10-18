@@ -402,7 +402,7 @@ You don't know how lon
 //One ea
     kWeakSelf
     [AperthandBalowise doChangePasswordWithUserName:userName andOldPassword:oldPwd andNewPassword:newPwd otherParamsDic:nil successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+        //[OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;

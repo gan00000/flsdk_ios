@@ -1,14 +1,8 @@
 
 #import "ConfigModel.h"
 @implementation ConfigModel
+
 - (instancetype)init
-//outh
-//美国的河口
-//Big pill, stuck going down
-//贴着的大海报正在落下
-//
-//
-//Just as cues tell Broadway stars 
 {
     self = [super init];
 
@@ -80,23 +74,10 @@ Those fishing lures thr
 **/
     return self;
 
-/**
-  ake pride in your  
-**/
 }
 
-/**
-  ed.
-
-格兰德纳补充道，或许这听起来只是想法上的一个小小改变，但却很重要。
-
-Most adults need between seven and eight hours of sleep to be fully re 
-**/
+-(BOOL) isAllThirdLoginTypeHidden
+{
+    return !self.visitorLogin && !self.googleLogin && !self.lineLogin && !self.appleLogin && !self.fbLogin;
+}
 @end
-
-/**
-  s and I miss you so bad.
-
-我的心很疼，我很想念你。
-Catch the star that holds your destiny, the one that forever twinkles within your heart. Take 
-**/

@@ -85,5 +85,7 @@ Establishing that
 @property (nonatomic, copy) NSString *stultienneFrangoccur;
 @property (nonatomic, assign) BOOL showForgetPwd;
 @property (nonatomic, assign) BOOL showNotice;
+
+-(BOOL) isAllThirdLoginTypeHidden;
 @end
 NS_ASSUME_NONNULL_END

@@ -609,7 +609,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
     }
     kWeakSelf
     [AperthandBalowise doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+        //[OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
         if (weakSelf.delegate) {
 
 /**
