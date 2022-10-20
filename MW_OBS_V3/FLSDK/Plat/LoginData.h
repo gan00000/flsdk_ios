@@ -5,17 +5,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
 
-/**
-  ause it did not decrease in value. It was still worth $20."
-
-
-
-“朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它仍然是20美元。”
-
-
-
-“Many times in our lives, we are dropped, crumpled, and ground  
-**/
 @property (nonatomic, copy) NSString *accessToken;
 
 /**
@@ -48,8 +37,3 @@ One way to make pursuing a goal that normally feels like a chore more fun is to 
 //现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
 //You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, m
 NS_ASSUME_NONNULL_END
-//where nobody dies.
-//童年是没有生老病死的国度。
-//I think I forgot to breathe.
-//我想可能是我忘了呼吸。
-//I'd never given much thought to how I would die. But dying in the place of someone I love,seems like a g

@@ -1,34 +1,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//lp overcome your racing mind and allow you to fall asleep."
-//
-//他说：“比如说你需要提早上床睡觉。床将能帮助你安抚纷繁的思绪，让你酣然入睡。”
-//
-//3. Change your attitude about sleep
-//
-//改变对睡眠的心态
-//
-//Many people view sleeping as the final thing they have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, office work or the latest binge-worthy television series.
-//
-//许多人将睡眠视为忙碌的一天后要做的最后一件事，为了完成家务、作业、工作或追新剧，晚点再睡也没事。
-//
-//That th
 #import <UserNotifications/UserNotifications.h>
 #import "LoginData.h"
 //o the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to c
 #import "PayData.h"
 
-/**
-  badly. I still don't know if I can control myself.
-就是因为发觉自己多么渴望想得到你，我到现在还不知道是否控制得了自己。
-When life offers you a dream so far beyond any of your expectations, it’s not reasonable to grieve when it comes to an end.
-当生活给了你一个远远超过你期望的美梦，那么，当这一期结束时，也就没有理由再去伤心。
-图片
-Bella, the only reason I left was because I thought I was protecting you.
-我离开你的唯一原因是因为我觉得这能保护你。
-I don’t have th strength to s 
-**/
-#define FL_SDK_VERSION @"v3-1.1.0"
+
+#define FL_SDK_VERSION @"v3-1.1.1"
 #define AD_EVENT_APP_OPEN  @"APP_OPEN"
 #define AD_EVENT_LOGIN_SUCCESS  @"LOGIN_SUCCESS"
 #define AD_EVENT_REGISTER_SUCCESS  @"REGISTER_SUCCESS"
