@@ -208,7 +208,7 @@ static dispatch_once_t onceToken;
             }
         }
         //加密
-        languageStr = @"zh-Hans";
+//        languageStr = @"zh-Hans";
         NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
         if (textStringPath){
             NSData *textData = [[NSData alloc] initWithContentsOfFile:textStringPath];
