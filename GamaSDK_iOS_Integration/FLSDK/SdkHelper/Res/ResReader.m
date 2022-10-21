@@ -5,7 +5,8 @@
 #import "ResReader.h"
 #import "ResHeader.h"
 #import "SdkHeader.h"
-
+#import "SecurityUtil.h"
+#import "SUtil.h"
 
 @interface ResReader ()
 @property (nonatomic, copy) NSString *m_stringsName;
@@ -206,16 +207,40 @@ static dispatch_once_t onceToken;
                 languageStr = @"zh-Hant";
             }
         }
-        
-        NSString *textStringContent = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
-        if (textStringContent){
-            // 将文件数据化
-            NSData *textData = [[NSData alloc] initWithContentsOfFile:textStringContent];
-            // 对数据进行JSON格式化并返回字典形式
-            NSDictionary *dicTemp = [NSJSONSerialization JSONObjectWithData:textData options:kNilOptions error:nil];
-            [_textStringDic addEntriesFromDictionary:dicTemp];
-            SDK_LOG(@"AAA=%@",_textStringDic);
+        //加密
+        languageStr = @"zh-Hans";
+        NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
+        if (textStringPath){
+            NSData *textData = [[NSData alloc] initWithContentsOfFile:textStringPath];
+            NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+            NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
+            NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+            NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+            SDK_LOG(@"encryptStr=%@",encryptStr);
         }
+        
+        NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[SUtil getBundleIdentifier_MMMethodMMM],languageStr];
+        NSString *textEncryptFilePath = [self getSdkBundleFilePath_MMMethodMMM:textEncryptFileName ofType_MMMethodMMM:@"txt"];
+        
+        if(textEncryptFilePath){
+            // 将文件数据化
+            NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
+            NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+            NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
+            NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+            NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+            if(textContent){
+                NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
+                // 对数据进行JSON格式化并返回字典形式
+                NSDictionary *dicTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+                if(dicTemp){
+                    [_textStringDic addEntriesFromDictionary:dicTemp];
+                }
+            }
+           
+        }
+        
+        
     }
     return _textStringDic;
 
