@@ -29,14 +29,6 @@
     return gamaBundleSeedId;
 }
 
-+ (NSString *)getSdkEncryptKey_MMMethodMMM
-{
-    NSString *bundleId = [SUtil getBundleIdentifier_MMMethodMMM];
-    NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];
-    NSString *key = [keyTemp stringByReplacingOccurrencesOfString:@"." withString:@""];
-    return key;
-}
-
 + (NSString *)getBundleName_MMMethodMMM
 {
     return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleName"];

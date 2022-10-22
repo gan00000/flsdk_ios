@@ -23,7 +23,6 @@
 /*获取头*/
 + (NSString *)bundleSeedID_MMMethodMMM;
 
-+ (NSString *)getSdkEncryptKey_MMMethodMMM;
 + (NSString *)getBundleName_MMMethodMMM;
 + (NSString *)getBundleIdentifier_MMMethodMMM;
 + (NSString *)getBundleShortVersionString_MMMethodMMM;

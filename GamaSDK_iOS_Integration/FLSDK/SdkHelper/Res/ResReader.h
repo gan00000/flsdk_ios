@@ -55,4 +55,7 @@
 -(BOOL)isMoreLanguage_MMMethodMMM;
 - (NSString *)getSdkBundleName_MMMethodMMM;
 
+- (NSString *)getSdkBaseEncryptKey_MMMethodMMM;
+- (NSString *)getSdkEncryptKey_MMMethodMMM;
+
 @end

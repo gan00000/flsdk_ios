@@ -7,6 +7,7 @@
 #import "SdkHeader.h"
 #import "SecurityUtil.h"
 #import "SUtil.h"
+#import "MWSDK.h"
 
 @interface ResReader ()
 @property (nonatomic, copy) NSString *m_stringsName;
@@ -174,23 +175,23 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 设置一个名称获取该文件名称拼接bundleId后的md5名称（用于混淆文件名防止被关联）
 - (NSString *)getMd5ResFileName_MMMethodMMM:(NSString *)originalName {
-    NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[SUtil getBundleIdentifier_MMMethodMMM],originalName];
+    NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[self getSdkBaseEncryptKey_MMMethodMMM],originalName];
     NSString *md5EncryptFileName = [SUtil getMD5StrFromString_MMMethodMMM:textEncryptFileName];
     return md5EncryptFileName;
 }
 
 #pragma mark - 加密内容
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
-    NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
-    NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     //加密后的密文
     NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return encryptStr;
 }
 #pragma mark - 解密内容
 - (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
-    NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
-    NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -426,8 +427,22 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取config配置文件名称，使用bundleId命名
 - (NSString *)getSdkConfigInfoName_MMMethodMMM
 {
-    return [[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+    return [[self getSdkBaseEncryptKey_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
 }
 
+- (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
+    if([MWSDK share].sdkBaseEncryptKey){
+        return [MWSDK share].sdkBaseEncryptKey;
+    }
+    return [SUtil getBundleIdentifier_MMMethodMMM];
+}
+
+- (NSString *)getSdkEncryptKey_MMMethodMMM
+{
+    NSString *bundleId = [self getSdkBaseEncryptKey_MMMethodMMM];
+    NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];
+    NSString *key = [keyTemp stringByReplacingOccurrencesOfString:@"." withString:@""];
+    return key;
+}
 
 @end
