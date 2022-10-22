@@ -86,7 +86,7 @@
 #define getAppId    decisioneurAgent
 #define getAppkey    cerebristCatenitious
 #define getAreaInfoWithSuccessBlock    ledendLystness
-#define getBoolForKey    amicionFerrose
+#define getBoolForKey_MMMethodMMM    amicionFerrose
 //#define getBuffer    amattyTaxsure
 #define getBundleIdentifier    societySeptiform
 #define getBundleName    campaignanceStoryard
@@ -100,7 +100,7 @@
 #define getCurrentWindow    prendapproachAnnivity
 #define getCustomCfUUID    herbatureFungaccountive
 #define getDecryptDataFromData    predMouthty
-#define getDecryptStringFromString    causThoughtous
+#define getDecryptStringFromString_MMMethodMMM    causThoughtous
 #define getDeviceType    phasadeRoadivity
 #define getDeviceVersion    practiceishNephr
 #define getEncodeDataFromString    arborSerrstationar
@@ -116,7 +116,7 @@
 #define getIPAddress    carniitorOfferform
 #define getIdfa    apertshipMeterel
 #define getLocalReceiptData    produceNihilsion
-#define getLocalizedStringForKey    populativeEnjoy
+#define getLocalizedStringForKey_MMMethodMMM    populativeEnjoy
 #define getLoginUrl    leadeticArborinstitution
 #define getMD5StrFromString    credareaoseDegreeious
 #define getMacaddress    areaairRemove
@@ -127,12 +127,12 @@
 #define getProjectInfoPlist    televisionileVelleous
 #define getRequestWithFunctionPath    phylactAlgia
 #define postRequestWithFunctionPath    detailableAlter
-#define getSdkBundleName    dactyliokindGelent
+#define getSdkBundleName_MMMethodMMM    dactyliokindGelent
 #define getSdkConfigWithSuccessBlock    claustroActivityward
 #define getServerLanguage    templizeMustive
 #define getServerLocaleStrWithGameLanguage    conallyFirmation
 #define getShowBtnDatas    sputlingDecisionory
-#define getStringForKey    arboriPinsive
+#define getStringForKey_MMMethodMMM    arboriPinsive
 #define getSystemVersion    stegsureSexagesimfier
 #define getTermsServiceUrl    mentarianScrupesque
 #define getTimeDate    fancSpondylexistast
@@ -179,7 +179,7 @@
 #define phoneFireTimer    herbPartenne
 #define pushAreaTable    cauliTeloorium
 #define readCoreConfInfo    historyativePall
-#define readMainBundleCoreConfInfo    tinacigenerationablyPleward
+#define readMainBundleCoreConfInfo_MMMethodMMM    tinacigenerationablyPleward
 #define rectFromWinSize_Landscape    nulliveAtade
 #define rectFromWinSize_Portrait    pepswiseGust
 #define registNotification    prolesanceRecentatic
@@ -245,6 +245,19 @@
 #define validUserName    majoriseSalutopportunity
 #define paymentWithTransactionId    sesquipositiveOlitive
 
+#define getSdkEncryptKey_MMMethodMMM sxxesqandPlayOli
+#define WithKey_MMMethodMMM  aaaKeyHelp
+#define iv_MMMethodMMM  mmxIvValue
+
+#define getSdkConfigInfoName_MMMethodMMM  getJJSCinfugName
+#define getMySdkBundle_MMMethodMMM getMyMDSSdkBundle
+#define getSdkBundleFilePath_MMMethodMMM  getSdkKAFHEUFBundleFilePath
+#define ofType_MMMethodMMM fieladofType
+#define setBundleInfo_MMMethodMMM   setJppdBundleaaeInfo
+#define getEncryptFileAndEncryptContentWithBundle_MMMethodMMM   getEncryptFileAndEncryptContentWithBundle
+#define  name_MMMethodMMM amdakFileName
+#define logSdkResConfig_MMMethodMMM     logSdkResConfig
+#define getSdkBaseEncryptKey_MMMethodMMM    getSdkBaseEncryptKey
 #else
 
 #endif

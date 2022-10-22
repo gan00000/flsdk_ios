@@ -18,8 +18,8 @@
 
 “无论 
 **/
-                                WithKey:(NSString *)key
-                                     iv:(NSString *)iv
+                    WithKey_MMMethodMMM:(NSString *)key
+                         iv_MMMethodMMM:(NSString *)iv
 //中你也许会犯错误，但不要气馁。珍视自我的潜能，因为它们使你独一无二。生命中最珍贵的礼物不是花钱买来的，而是通过努力和决心得到的。
 //
 //
@@ -39,9 +39,9 @@
     NSString * encryptStr=[SdkBase64Encoding encode:encryptData];
     return encryptStr;
 }
-+(NSString *)getDecryptStringFromString:(NSString *)beforeDecryptString
-                                withKey:(NSString *)key
-                                     iv:(NSString *)iv
++(NSString *)getDecryptStringFromString_MMMethodMMM:(NSString *)beforeDecryptString
+                                withKey_MMMethodMMM:(NSString *)key
+                                     iv_MMMethodMMM:(NSString *)iv
 {
 
 /**

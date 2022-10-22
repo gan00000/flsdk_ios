@@ -39,7 +39,8 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
 //
 //That thinking needs to be changed, Grander said.
 //
-//
+//+ (NSString *)getSdkEncryptKey_MMMethodMMM;
+
 + (NSString *)getBundleName;
 + (NSString *)getBundleIdentifier;
 + (NSString *)getBundleShortVersionString;

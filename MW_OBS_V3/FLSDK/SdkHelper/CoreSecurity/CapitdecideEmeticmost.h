@@ -8,7 +8,7 @@
 #define GAMA_CONF_DEFAULT_IV     @"GAMA128IV"
 @interface CapitdecideEmeticmost : NSObject
 +(NSString *)getEncryptStringFromString:(NSString *)beforeEncryptString
-                                WithKey:(NSString *)key
+                    WithKey_MMMethodMMM:(NSString *)key
 
 /**
   币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
@@ -20,15 +20,15 @@
 
  
 **/
-                                     iv:(NSString *)iv;
+                         iv_MMMethodMMM:(NSString *)iv;
 
 /**
   ues tell Broadway stars when to step onto the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
 
 正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划 
 **/
-+(NSString *)getDecryptStringFromString:(NSString *)beforeDecryptString
-                                withKey:(NSString *)key
++(NSString *)getDecryptStringFromString_MMMethodMMM:(NSString *)beforeDecryptString
+                                withKey_MMMethodMMM:(NSString *)key
 
 /**
   光照在你的脸上，早晨的寒风让我们感到惊讶。
@@ -37,7 +37,7 @@ I miss the morning kisses and the morning snuggling you and I shared.
 
 我想念早上的吻，早上依 
 **/
-                                     iv:(NSString *)iv;
+                                     iv_MMMethodMMM:(NSString *)iv;
 +(NSData *)getEncryptDataFromData:(NSData *)beforeEncryptData
                           withKey:(NSString *)key
                                iv:(NSString *)iv;

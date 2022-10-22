@@ -1028,7 +1028,7 @@ Wide on my plastic t
 }
 + (NSString *)loginEncryptFromString:(NSString *)aString
 {
-    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey:kEncryKey iv:kEncryIv];
+    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
 //你，害怕你会突然消失……
 //You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, masochistic lion.
 //你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
@@ -1068,7 +1068,7 @@ Even if from another world, still love you till the end of time.
 Only for making me want you so bad 
 **/
 {
-    return [CapitdecideEmeticmost getDecryptStringFromString:aString withKey:kEncryKey iv:kEncryIv];
+    return [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
 }
 + (void)_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {

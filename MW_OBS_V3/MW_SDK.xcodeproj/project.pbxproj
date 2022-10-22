@@ -128,7 +128,7 @@
 		0332F57528C5B44C00B7A99F /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */; };
 		0332F57628C5B44C00B7A99F /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
-		033B9C9C28DAFC09000DA93D /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
+		033B9C9C28DAFC09000DA93D /* com_mplay_wlzhs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* com_mplay_wlzhs.plist */; };
 		033B9C9F28DB0DAF000DA93D /* GenetsayDextrition.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B9C9D28DB0DAF000DA93D /* GenetsayDextrition.h */; };
 		033B9CA028DB0DAF000DA93D /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
 		033B9CA128DB0DAF000DA93D /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
@@ -472,7 +472,7 @@
 		030FAA2328A0FA7C00709536 /* EquiaciousAcuacious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquiaciousAcuacious.m; sourceTree = "<group>"; };
 		030FAA5C28A0FC8600709536 /* HabalityFancality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabalityFancality.h; sourceTree = "<group>"; };
 		030FAA5D28A0FC8600709536 /* HabalityFancality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabalityFancality.m; sourceTree = "<group>"; };
-		030FAA6128A1077F00709536 /* SDKCoreInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDKCoreInfo.plist; sourceTree = "<group>"; };
+		030FAA6128A1077F00709536 /* com_mplay_wlzhs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_mplay_wlzhs.plist; sourceTree = "<group>"; };
 		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
 		030FAA6528A1FE5800709536 /* MeanerAnnoutsideful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeanerAnnoutsideful.m; sourceTree = "<group>"; };
 		030FAA6628A1FE5800709536 /* MeanerAnnoutsideful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeanerAnnoutsideful.h; sourceTree = "<group>"; };
@@ -1694,7 +1694,7 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
-				030FAA6128A1077F00709536 /* SDKCoreInfo.plist */,
+				030FAA6128A1077F00709536 /* com_mplay_wlzhs.plist */,
 				E9150D292383E6640003F1FB /* SDKResources.bundle */,
 				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
 			);
@@ -1928,7 +1928,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033B9C9C28DAFC09000DA93D /* SDKCoreInfo.plist in Resources */,
+				033B9C9C28DAFC09000DA93D /* com_mplay_wlzhs.plist in Resources */,
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,

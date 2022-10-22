@@ -94,6 +94,8 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 @property (nonatomic) SDKPayBlock payHandler;
 @property (nonatomic)  SDKLogoutBlock logoutHandler;
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;
+
+@property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
 + (instancetype)share;
 
 /**

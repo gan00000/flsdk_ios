@@ -1670,4 +1670,14 @@ That thinking needs to be changed, Grander said.
 没有足够的言 
 **/
 }
+
+//+ (NSString *)getSdkEncryptKey_MMMethodMMM
+//{
+//    NSString *bundleId = [FoeniveNow getBundleIdentifier];
+//    NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];
+//    NSString *key = [keyTemp stringByReplacingOccurrencesOfString:@"." withString:@""];
+//    return key;
+//}
+
+
 @end
