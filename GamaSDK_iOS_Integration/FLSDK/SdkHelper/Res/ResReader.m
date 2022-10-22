@@ -78,7 +78,7 @@ static dispatch_once_t onceToken;
     if(!_areaInfoArray){
         _areaInfoArray = [NSMutableArray array];
         
-        NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"txt"];
+        NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"txt"];
         if (areaInfo_arry) {
             [_areaInfoArray addObjectsFromArray:areaInfo_arry];
         }
@@ -126,7 +126,7 @@ static dispatch_once_t onceToken;
     //获取配置文件名字
     NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
     
-    NSDictionary *configDic = [self getEncryptFileAndEncryptContentWithBundle:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"txt"];
+    NSDictionary *configDic = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"txt"];
     
     if(configDic){
         return configDic;
@@ -260,7 +260,7 @@ static dispatch_once_t onceToken;
                 languageStr = @"zh-Hant";
             }
         }
-        NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
+        NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
         }
@@ -270,7 +270,7 @@ static dispatch_once_t onceToken;
 }
 
 #pragma mark - 获取加密的文件名中的加密josn内容，返回NSDictionary，文件名加密规则 getMd5ResFileName,优先从sdkBundle获取
--(id)getEncryptFileAndEncryptContentWithBundle:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
+-(id)getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
 {
     NSString *md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:name];
     SDK_LOG(@"md5EncryptFileName=%@",md5EncryptFileName);
