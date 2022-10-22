@@ -51,6 +51,10 @@
 	<string>42c8e6c78eeccdebb597390ee50b05ca</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
+    <key>FacebookAdvertiserIDCollectionEnabled</key>
+        <true/>
+    <key>FacebookAutoLogAppEventsEnabled</key>
+    <true/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
