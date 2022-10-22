@@ -1,0 +1,16 @@
+{   "af_dev_key" : "QtrxWJpdhQVov9F8hwKD3o",
+    "appKey" : "c402932996a88ee8c97ac2014df57656",
+    "gameCode" : "fszhlios",
+    "gameLanguage" : "zh_TW",
+    "sdk_ad_bug" : "0",
+    "sdk_appId" : "1635276856",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "SDKResourcesV2",
+    "sdk_url_cdn" : "https://cdn-download.meowplayer.com/",
+    "sdk_url_log" : "https://log.meowplayer.com/",
+    "sdk_url_login" : "https://login.meowplayer.com/",
+    "sdk_url_pay" : "https://pay.meowplayer.com/",
+    "sdk_v_version" : "v2",
+    "terms_service_url" : "https://member.meowplayer.com/sdk/agreement/%@_agreement.html"
+    
+}

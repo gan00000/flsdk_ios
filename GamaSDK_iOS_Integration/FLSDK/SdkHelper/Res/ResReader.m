@@ -46,7 +46,7 @@ static dispatch_once_t onceToken;
 //        self.areaCodeDic = [NSMutableDictionary dictionary];
         
         [self setBundleInfo_MMMethodMMM];
-        
+        [self logSdkResConfig_MMMethodMMM];
     }
     return self;
 }
@@ -62,6 +62,7 @@ static dispatch_once_t onceToken;
     return sdkBundle;
 }
 
+#pragma mark -获取sdk bundle文件路径，不存在返回nil
 - (NSString *)getSdkBundleFilePath_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)ext
 {
     NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
@@ -76,25 +77,10 @@ static dispatch_once_t onceToken;
 {
     if(!_areaInfoArray){
         _areaInfoArray = [NSMutableArray array];
-        NSString *areaInfo_path= [self getSdkBundleFilePath_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"json"];
-        if (areaInfo_path) {
-            
-            // 将文件数据化
-            NSData *resultData = [[NSData alloc] initWithContentsOfFile:areaInfo_path];
-            // 对数据进行JSON格式化并返回字典形式
-            NSArray *areaInfo_arry = [NSJSONSerialization JSONObjectWithData:resultData options:kNilOptions error:nil];
-            
-            if (areaInfo_arry) {
-                [_areaInfoArray addObjectsFromArray:areaInfo_arry];
-    //            [areaInfo_arry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    //
-    //                if (obj) {
-    //                    [self.areaCodeDic addEntriesFromDictionary:obj];
-    //                }
-    //
-    //            }];
-            }
-            
+        
+        NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"txt"];
+        if (areaInfo_arry) {
+            [_areaInfoArray addObjectsFromArray:areaInfo_arry];
         }
     }
     return _areaInfoArray;
@@ -105,10 +91,10 @@ static dispatch_once_t onceToken;
     if (!_mySdkConfDic) {
         //1.先读取main bundle
         _mySdkConfDic = self.mainBundleConfDic;
-        if(!_mySdkConfDic)
-        {   //2.再去读sdk bundle
-            _mySdkConfDic = [self readCoreConfInfo_MMMethodMMM];
-        }
+//        if(!_mySdkConfDic)
+//        {   //2.再去读sdk bundle
+//            _mySdkConfDic = [self readSdkBundleCoreConfInfo_MMMethodMMM];
+//        }
     }
     return _mySdkConfDic;
 }
@@ -120,24 +106,33 @@ static dispatch_once_t onceToken;
     return _mainBundleConfDic;
 }
 
-#pragma mark -从sdk bundle配置文件中读取配置信息
--(NSDictionary *)readCoreConfInfo_MMMethodMMM
-{
-    //1.先读取sdk bundle里面
-    NSString *infoPlistPath= [self getSdkBundleFilePath_MMMethodMMM:SDK_CONFIG_INFO_PLIST_NAME ofType_MMMethodMMM:@"plist"];
-    if (infoPlistPath) {
-        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
-        if (infoDic) {
-            return infoDic;
-        }
-    }
-    return nil;
-}
+//#pragma mark -从sdk bundle配置文件中读取配置信息
+//-(NSDictionary *)readSdkBundleCoreConfInfo_MMMethodMMM
+//{
+//    NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
+//    NSString *infoPlistPath= [self getSdkBundleFilePath_MMMethodMMM:configName ofType_MMMethodMMM:@"plist"];
+//    if (infoPlistPath) {
+//        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
+//        if (infoDic) {
+//            return infoDic;
+//        }
+//    }
+//    return nil;
+//}
 #pragma mark -从main bundle配置文件中读取配置信息
 -(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
+    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    //获取配置文件名字
+    NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
+    
+    NSDictionary *configDic = [self getEncryptFileAndEncryptContentWithBundle:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"txt"];
+    
+    if(configDic){
+        return configDic;
+    }
     //读取自定义的 plist文件的写法
-    NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:SDK_CONFIG_INFO_PLIST_NAME ofType:@"plist"];
+    NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
     
     if (infoPlistPath) {
         NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
@@ -145,14 +140,6 @@ static dispatch_once_t onceToken;
             return infoDic;
         }
     }
-    
-    // NSLog(@"dictionary = %@",dictionary);
-    //读取系统产生的 plist文件的写法
-    // NSDictionary *plistDic = [[NSBundle mainBundle] infoDictionary];
-    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
-//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
-//    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
-    
     return nil;
 }
 
@@ -184,6 +171,72 @@ static dispatch_once_t onceToken;
     return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
 }
 
+
+#pragma mark - 设置一个名称获取该文件名称拼接bundleId后的md5名称（用于混淆文件名防止被关联）
+- (NSString *)getMd5ResFileName_MMMethodMMM:(NSString *)originalName {
+    NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[SUtil getBundleIdentifier_MMMethodMMM],originalName];
+    NSString *md5EncryptFileName = [SUtil getMD5StrFromString_MMMethodMMM:textEncryptFileName];
+    return md5EncryptFileName;
+}
+
+#pragma mark - 加密内容
+- (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
+    NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+    //加密后的密文
+    NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+    return encryptStr;
+}
+#pragma mark - 解密内容
+- (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
+    NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
+    
+    // 去掉首尾的空白字符
+    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    // 去除掉控制字符
+//    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
+    
+    NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+    return textContent;
+}
+
+
+#pragma mark - 打印配置文件加密内容
+- (void)logSdkResConfig_MMMethodMMM {
+    
+    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"areaInfo"];
+    for (NSString *languageStr in languageArr) {
+        
+        NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
+        if (textStringPath){
+            NSData *textData = [[NSData alloc] initWithContentsOfFile:textStringPath];
+            NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+            NSString * encryptStr = [self encryptContent_MMMethodMMM:textStringContent];
+            
+            //文件名称md5后添加到resbundle
+            NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:languageStr];
+            
+            SDK_LOG(@"languageStr=%@,md5EncryptFileName=%@,encryptStr=%@",languageStr,md5EncryptFileName,encryptStr);
+        }else{
+            SDK_LOG(@"file not find : %@.json", languageStr);
+        }
+    }
+    
+    NSString *configInfoName = [self getSdkConfigInfoName_MMMethodMMM];
+    NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
+    
+    if (configInfoName_path) {
+        NSData *textData = [[NSData alloc] initWithContentsOfFile:configInfoName_path];
+        NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+        NSString * encryptStr = [self encryptContent_MMMethodMMM:textStringContent];
+        NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:configInfoName];
+        SDK_LOG(@"configInfoName=%@,md5EncryptFileName=%@,encryptStr=%@",configInfoName,md5EncryptFileName,encryptStr);
+    }else{
+        SDK_LOG(@"file not find : %@.json", configInfoName);
+    }
+}
+
 #pragma mark - 初始化加密json文本
 -(NSMutableDictionary *)textStringDic
 {
@@ -207,43 +260,36 @@ static dispatch_once_t onceToken;
                 languageStr = @"zh-Hant";
             }
         }
-        //加密
-//        languageStr = @"zh-Hans";
-        NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
-        if (textStringPath){
-            NSData *textData = [[NSData alloc] initWithContentsOfFile:textStringPath];
-            NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
-            NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
-            NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
-            NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-            SDK_LOG(@"encryptStr=%@",encryptStr);
+        NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
+        if(dicTemp){
+            [_textStringDic addEntriesFromDictionary:dicTemp];
         }
-        
-        NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[SUtil getBundleIdentifier_MMMethodMMM],languageStr];
-        NSString *textEncryptFilePath = [self getSdkBundleFilePath_MMMethodMMM:textEncryptFileName ofType_MMMethodMMM:@"txt"];
-        
-        if(textEncryptFilePath){
-            // 将文件数据化
-            NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
-            NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
-            NSString *eKey = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"KEY");
-            NSString *eIV = STRING_COMBIN([SUtil getSdkEncryptKey_MMMethodMMM], @"IV");
-            NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-            if(textContent){
-                NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
-                // 对数据进行JSON格式化并返回字典形式
-                NSDictionary *dicTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
-                if(dicTemp){
-                    [_textStringDic addEntriesFromDictionary:dicTemp];
-                }
-            }
-           
-        }
-        
-        
     }
     return _textStringDic;
 
+}
+
+#pragma mark - 获取加密的文件名中的加密josn内容，返回NSDictionary，文件名加密规则 getMd5ResFileName,优先从sdkBundle获取
+-(id)getEncryptFileAndEncryptContentWithBundle:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
+{
+    NSString *md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:name];
+    SDK_LOG(@"md5EncryptFileName=%@",md5EncryptFileName);
+    NSString *textEncryptFilePath = [bundle pathForResource:md5EncryptFileName ofType:type];
+    
+    if(textEncryptFilePath){
+        // 将文件数据化
+        NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
+        NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+        NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
+        if(textContent){
+            NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
+            // 对数据进行JSON格式化并返回字典形式
+            NSError *error = nil;
+            id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+            return resultTemp;
+        }
+    }
+    return nil;
 }
 
 
@@ -356,22 +402,32 @@ static dispatch_once_t onceToken;
     return [self getBoolForKey_MMMethodMMM:@"sdk_more_language"];
 }
 
-
+#pragma mark - 获取配置文件中sdk bundle名字，获取不到去gameCode作为名字
 - (NSString *)getSdkBundleName_MMMethodMMM
 {
     NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
     if (bundleName && ![bundleName isEqualToString:@""]) {
         return bundleName;
     }
-    return SDK_BUNDLE_NAME_v1;
+    return [self getGameCode_MMMethodMMM];
 }
 
+#pragma mark - 获取info.plist配置文件中facebook appid
 -(NSString *)getFacebookAppId_MMMethodMMM
 {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
-    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
-    return facebookAppID;
+//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+//    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
+//    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
+//    return facebookAppID;
+    
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"FacebookAppID"];
 }
+
+#pragma mark - 获取config配置文件名称，使用bundleId命名
+- (NSString *)getSdkConfigInfoName_MMMethodMMM
+{
+    return [[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+}
+
 
 @end

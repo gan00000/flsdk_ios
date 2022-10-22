@@ -7,9 +7,6 @@
  并且提供一个接口“getStringForKey：”方法，供其他需要的地方获取。*/
 
 #define SDK_DEFAULT_BUNDLE_NAME  [[ResReader reader_MMMethodMMM] getSdkBundleName_MMMethodMMM]
-#define SDK_CONFIG_INFO_PLIST_NAME     @"SDKCoreInfo" //游戏配置文件名字
-
-#define SDK_BUNDLE_NAME_v1  @"SDKResources"
 
 #import <Foundation/Foundation.h>
 
@@ -25,8 +22,6 @@
 
 + (ResReader *)reader_MMMethodMMM;
 //+ (void)releaseReader;
-
-- (void)reloadCoreConf_MMMethodMMM;
 
 /*配置文件都会读取到该单例的字典中，使用单例中的配置信息时候，可以通过该方法，查询并获取对应的值。*/
 - (NSString *)getStringForKey_MMMethodMMM:(NSString *)key;
