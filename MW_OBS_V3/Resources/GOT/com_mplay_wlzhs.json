@@ -1,0 +1,16 @@
+{   "af_dev_key" : "QtrxWJpdhQVov9F8hwKD3o",
+    "appKey" : "49eb29a0faa1933c9410598a807f1b74",
+    "gameCode" : "wlzhsios",
+    "gameLanguage" : "zh_TW",
+    "sdk_ad_bug" : "0",
+    "sdk_appId" : "6443579142",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "WLZHSSDK",
+    "sdk_url_cdn" : "https://cdn-download.mmhyplayer.com/",
+    "sdk_url_log" : "https://log.mmhyplayer.com/",
+    "sdk_url_login" : "https://login.mmhyplayer.com/",
+    "sdk_url_pay" : "https://pay.mmhyplayer.com/",
+    "sdk_v_version" : "v3",
+    "terms_service_url" : "https://member.mmhyplayer.com/sdk/agreement/%@_agreement.html"
+    
+}
