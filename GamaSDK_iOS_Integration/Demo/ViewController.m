@@ -208,6 +208,15 @@
                 }
                 
             }];
+            
+            [[MWSDK share] requestVfCodeWithAreaCode:@"" telephone:@""  Block:^(BOOL success, id  _Nullable result) {
+                if (success){
+                    //result=nil
+                }else{
+                    //错误提示
+                    NSString *msg = [NSString stringWithFormat:@"%@",result];
+                }
+            }];
         }
             break;
         case 7:{

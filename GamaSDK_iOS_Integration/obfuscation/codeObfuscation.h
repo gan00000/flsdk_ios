@@ -228,7 +228,7 @@
 #define showSelectedAreaCodeValue   systemadeNespeechation
 #define startCountTimer   tendicMrair
 #define startLoginWithCallBack   kinyearfulAfterally
-#define startMonitoring   plebatureRaceast
+//#define startMonitoring   plebatureRaceast
 #define startPayWithProductId   templaboveessEnvironmentitude
 #define stopLoadingAtView   gustBuccseaably
 #define stringToMd5   saccibilityOdontize

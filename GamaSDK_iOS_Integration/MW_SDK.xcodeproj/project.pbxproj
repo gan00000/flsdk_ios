@@ -128,7 +128,6 @@
 		0332F57528C5B44C00B7A99F /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */; };
 		0332F57628C5B44C00B7A99F /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
-		033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
 		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
 		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -254,6 +253,7 @@
 		037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
+		03B5F46B2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -470,7 +470,6 @@
 		030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
 		030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
-		030FAA6128A1077F00709536 /* SDKCoreInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDKCoreInfo.plist; sourceTree = "<group>"; };
 		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
 		030FAA6528A1FE5800709536 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
 		030FAA6628A1FE5800709536 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
@@ -589,6 +588,7 @@
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
+		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 80e6376902b9d3aa81e01d7eecb89ad6.txt; sourceTree = "<group>"; };
 		03B918DC286029050029AE6A /* ConfigResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigResponse.h; sourceTree = "<group>"; };
 		03B918DD286029050029AE6A /* ConfigResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigResponse.m; sourceTree = "<group>"; };
 		03B918DF286029670029AE6A /* ConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigModel.h; sourceTree = "<group>"; };
@@ -767,7 +767,7 @@
 		32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKIconTitleButton.m; sourceTree = "<group>"; };
 		32D790EB24D55D69006A2F69 /* TermsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TermsView.h; sourceTree = "<group>"; };
 		32D790EC24D55D69006A2F69 /* TermsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TermsView.m; sourceTree = "<group>"; };
-		CEE6B3711A148B1E009E77FF /* dybttDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dybttDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE6B3711A148B1E009E77FF /* SDK_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE6B9301A149887009E77FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CEE6B9321A14988C009E77FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEE6B9341A149895009E77FF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -1631,7 +1631,7 @@
 		CEE6B3721A148B1E009E77FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEE6B3711A148B1E009E77FF /* dybttDemo.app */,
+				CEE6B3711A148B1E009E77FF /* SDK_TEST.app */,
 				22DF6AB11EAD9A4C0003610E /* libFLSDK.a */,
 				037C6EDB2875A97B0041EC34 /* MWSDK.framework */,
 				037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */,
@@ -1684,7 +1684,7 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
-				030FAA6128A1077F00709536 /* SDKCoreInfo.plist */,
+				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */,
 				E9150D292383E6640003F1FB /* SDKResources.bundle */,
 				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
 			);
@@ -1826,7 +1826,7 @@
 			packageProductDependencies = (
 			);
 			productName = EfunSDK_iOS_KR;
-			productReference = CEE6B3711A148B1E009E77FF /* dybttDemo.app */;
+			productReference = CEE6B3711A148B1E009E77FF /* SDK_TEST.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1919,12 +1919,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */,
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				0332F56D28C5B44C00B7A99F /* GoogleSignIn.bundle in Resources */,
 				0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */,
+				03B5F46B2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2746,8 +2746,10 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2765,7 +2767,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
-				PRODUCT_NAME = dybttDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
@@ -2812,8 +2814,10 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Demo/demoInfo.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2831,7 +2835,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
-				PRODUCT_NAME = dybttDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
