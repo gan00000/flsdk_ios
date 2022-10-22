@@ -254,6 +254,8 @@
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
 		03B5F46B2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */; };
+		03B5F46E2903ECEA00D1F03E /* com_wanye_fszhl.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wanye_fszhl.json */; };
+		03B5F46F2903ECEA00D1F03E /* com_wanye_fszhl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46D2903ECEA00D1F03E /* com_wanye_fszhl.plist */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -589,6 +591,8 @@
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 80e6376902b9d3aa81e01d7eecb89ad6.txt; sourceTree = "<group>"; };
+		03B5F46C2903ECEA00D1F03E /* com_wanye_fszhl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wanye_fszhl.json; sourceTree = "<group>"; };
+		03B5F46D2903ECEA00D1F03E /* com_wanye_fszhl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_wanye_fszhl.plist; sourceTree = "<group>"; };
 		03B918DC286029050029AE6A /* ConfigResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigResponse.h; sourceTree = "<group>"; };
 		03B918DD286029050029AE6A /* ConfigResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigResponse.m; sourceTree = "<group>"; };
 		03B918DF286029670029AE6A /* ConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigModel.h; sourceTree = "<group>"; };
@@ -1684,6 +1688,8 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
+				03B5F46C2903ECEA00D1F03E /* com_wanye_fszhl.json */,
+				03B5F46D2903ECEA00D1F03E /* com_wanye_fszhl.plist */,
 				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt */,
 				E9150D292383E6640003F1FB /* SDKResources.bundle */,
 				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
@@ -1920,9 +1926,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
+				03B5F46F2903ECEA00D1F03E /* com_wanye_fszhl.plist in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				0332F56D28C5B44C00B7A99F /* GoogleSignIn.bundle in Resources */,
+				03B5F46E2903ECEA00D1F03E /* com_wanye_fszhl.json in Resources */,
 				0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */,
 				03B5F46B2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6.txt in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,

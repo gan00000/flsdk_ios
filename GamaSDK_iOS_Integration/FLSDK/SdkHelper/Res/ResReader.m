@@ -427,7 +427,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取config配置文件名称，使用bundleId命名
 - (NSString *)getSdkConfigInfoName_MMMethodMMM
 {
-    return [[self getSdkBaseEncryptKey_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+    return [[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
 }
 
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
