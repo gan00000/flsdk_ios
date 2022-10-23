@@ -451,8 +451,8 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 解密所有字符串 内容
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
-    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], genuturn_tortence);
-    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], oculeur_anguit);
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
