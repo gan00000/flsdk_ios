@@ -460,7 +460,7 @@ static dispatch_once_t onceToken;
 //    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
     
     NSString *textContent = [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    return [textContent stringByReplacingOccurrencesOfString:@"\0" withString:@""];
+    return textContent;//[textContent stringByReplacingOccurrencesOfString:@"\0" withString:@""];
 }
 
 
