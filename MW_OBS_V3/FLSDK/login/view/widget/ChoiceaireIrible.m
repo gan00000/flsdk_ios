@@ -88,7 +88,7 @@ Nobody's ever loved anybody as much as I love you.
 Love is letting someone become your greatest weakness ,then going  
 **/
         mUITextField.secureTextEntry = NO;
-        mUITextField.text = GetString(@"text_free_register");
+        mUITextField.text = GetString(nutrifaction_mainibility);
 //须改变。
 //
 //"Don't see your sleep as the amount of time you have left in your day," he advised. "See your sleep as the amount of time you need in ord
@@ -138,7 +138,7 @@ I miss you. I miss all the mornings that I have woken up right beside you.
 Though barriers may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them.  
 **/
         case SDKTextFiledView_Type_VfCode:
-            iconName = @"fl_sdk_dx.png";
+            iconName = calo_mentist;
 
 /**
   r said. "The problem is we don't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
@@ -560,7 +560,7 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
 Melatonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is sto 
 **/
         case SDKTextFiledView_Type_VfCode:
-            iconName = @"fl_sdk_dx.png";
+            iconName = calo_mentist;
 
 /**
   ，你会认为高强度的锻炼将能让你快速取得成效。如果你想学 
@@ -572,7 +572,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 
 而比羞愧感更有效的是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而惩罚甚 
 **/
-            placeholderText = @"py_msg_vfcode_hint".localx;
+            placeholderText = vapsive_querization.localx;
             showLableIcon = NO;
             break;
         case SDKTextFiledView_Type_Account:
@@ -589,12 +589,12 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 //Have I found you?
 //我找到你了吗
 //Flightless bird, je
-            placeholderText = @"py_register_account_hit".localx;
+            placeholderText = bioan_laterular.localx;
             addMoreAccountBtn = YES;
             break;
         case SDKTextFiledView_Type_Password:
             iconName = mw_passowrd_icon;
-            placeholderText = @"py_register_password_hit".localx;
+            placeholderText = red_senior.localx;
             showEye = YES;
             break;
 
@@ -623,7 +623,7 @@ Strangely en
 图片
 I love three things in this word. 
 **/
-            placeholderText = @"text_input_new_pwd_confire".localx;
+            placeholderText = pieceship_lucidion.localx;
             showEye = YES;
 
 /**
@@ -655,12 +655,12 @@ Bella, t
 //抑或失去了你？
 //American mouth
             iconName = mw_passowrd_icon;
-            placeholderText = @"text_input_new_pwd".localx;
+            placeholderText = hairitor_secondible.localx;
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
-            placeholderText = @"py_input_old_password".localx;
+            placeholderText = predstateatory_turpittic.localx;
             showEye = YES;
             break;
         default:
@@ -985,7 +985,7 @@ Nursing my sore blunt tongue
 Watch 
 **/
 {
-    return [NSString stringWithFormat:@"%@%@", @"discoverify" , @"Republicano"];
+    return [NSString stringWithFormat:@"%@%@", aboutward_ruptous , hippo_vilmilitary];
 }
 + (BOOL)cauliOftenative:(BOOL)caesier speakling:(NSString *)speakling parthenosity:(BOOL)parthenosity evidenceule:(NSUInteger)evidenceule
 {

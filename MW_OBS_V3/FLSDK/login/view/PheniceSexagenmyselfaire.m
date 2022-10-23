@@ -314,7 +314,7 @@ Love is letting someone become your greatest
 //这
     switch (sender.tag) {
         case kLoginTabActTag:
-            SDK_LOG(@"kLoginTabActTag");
+            SDK_LOG(glandbabyard_consumerality);
             if (currentClickTab == 1) {
                 return;
             }
@@ -325,7 +325,7 @@ Love is letting someone become your greatest
             break;
 //op and get ready to go to bed whether you're done or not," Grander said. "The problem is we don't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressf
         case kRegTabActTag:
-            SDK_LOG(@"kRegTabActTag");
+            SDK_LOG(trab_patho);
             if (currentClickTab == 2) {
 // of behavior.
 //

@@ -79,7 +79,7 @@ A well-known speaker started off his seminar by holding up a $20 bill. In the ro
 {
     self = [super init];
     if (self) {
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_update_account") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(parl_cutistic) hander:^(NSInteger) {
 //our plan helps you remember when to act. Be sure to detail when and where you'll follow through.
 //
 //正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示，能帮助你记住何时行动。一定要详细说明你将在何时何地做什么。
@@ -183,7 +183,7 @@ When l
 美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠时间才能得到充分休息。因此如果一个人每天要在早上7点 
 **/
         }];
-        UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         [self addSubview:bindTipLabel];
         [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 //l pursuit.
@@ -198,7 +198,7 @@ When l
             make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
             make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
         }];
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire_update") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(omaacy_plen) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(25)];
         okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
 
@@ -256,7 +256,7 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
     switch (sender.tag) {
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
             [self endEditing:YES];
             [self bindAccount];
         }
@@ -293,7 +293,7 @@ There are not enough words to contemplate on
 
 Establishing that positive relationship between the bed and sleep ca 
 **/
-        [OdorSever toastMsg:GetString(@"text_select_account")];
+        [OdorSever toastMsg:GetString(admitan_gliacy)];
         return;
     }
 //ted to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
@@ -352,7 +352,7 @@ Establishing that positive relationship between the bed and sleep ca
 //
 //寻找心中那颗闪耀的
     if (!currentAccountModel) {
-        [OdorSever toastMsg:GetString(@"text_select_account")];
+        [OdorSever toastMsg:GetString(admitan_gliacy)];
         return;
     }
     [AlthoughityThemselvesate bindAccountAndRequest:self.delegate view:self account:currentAccountModel account:account pwd:pasword];

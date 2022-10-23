@@ -205,7 +205,7 @@ Even if from another world, still love you till the end
         if (errorBlock) {
             CuscardOnomary *errorObject = [[CuscardOnomary alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
 
 /**
   decrease in value. It was still worth $20."

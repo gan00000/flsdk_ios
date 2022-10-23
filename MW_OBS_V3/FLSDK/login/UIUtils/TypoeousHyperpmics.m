@@ -36,7 +36,7 @@ That thinking needs to be changed, Grander said.
 
 "Don't see your sleep as the amount of time yo 
 **/
-    return [NSString stringWithFormat:@"%@%@", @"crednotette" , @"flyel"];
+    return [NSString stringWithFormat:@"%@%@", pecuish_girl , weproof_stringid];
 }
 + (NSString *)representtureCervicate:(CGFloat)groupry closeaster:(NSString *)closeaster quality:(BOOL)quality claustrty:(NSString *)claustrty minaceverythingise:(CGFloat)minaceverythingise
 
@@ -44,7 +44,7 @@ That thinking needs to be changed, Grander said.
    someone, even can keep up with  
 **/
 {
-    return [NSString stringWithFormat:@"%@%@", @"borette" , @"nowatic"];
+    return [NSString stringWithFormat:@"%@%@", polfold_haveify , naissics_irascation];
 }
 + (UIButton *)initBtnWithType:(BUTTON_TYPE)type
                           tag:(NSUInteger)tag
@@ -76,12 +76,12 @@ I think I forgot to breathe.
 //
 //图片
 //I love three things in this word.Sun, M
-    NSString *normalImage = @"btn_hy.png";
-    NSString *highlightedImage = @"btn_hy.png";
+    NSString *normalImage = laminturn_cytatory;
+    NSString *highlightedImage = laminturn_cytatory;
     NSString *titleText = @"";
     switch (type) {
         case BUTTON_TYPE_ACCOUNT:
-            normalImage = @"sdk_btn_bg.png";
+            normalImage = ligateur_firstization;
 
 /**
   
@@ -90,12 +90,12 @@ Nursing my sore blunt tongue
 Watching the warm poison rats
 看着 
 **/
-            highlightedImage = @"sdk_btn_bg.png";
+            highlightedImage = ligateur_firstization;
             titleText = @"會員賬號登入";
             break;
         case BUTTON_TYPE_FB:
-            normalImage = @"btn_fb.png";
-            highlightedImage = @"btn_fb.png";
+            normalImage = tectonade_relationship;
+            highlightedImage = tectonade_relationship;
 
 /**
   table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your New Year's resolution. The logic for why this works is simple. Incentives change our decisions, and penalties are even more motivating than rewards.
@@ -110,20 +110,20 @@ Watching the warm poison rats
 //Your mood swings a
         case BUTTON_TYPE_GEUST:
 //sessions are ke
-            normalImage = @"btn_yk.png";
-            highlightedImage = @"btn_yk.png";
+            normalImage = supth_picary;
+            highlightedImage = supth_picary;
             break;
         case BUTTON_TYPE_APPLE:
-            normalImage = @"btn_ios.png";
-            highlightedImage = @"btn_ios.png";
+            normalImage = usuallyence_rockeer;
+            highlightedImage = usuallyence_rockeer;
 // you so bad.
 //
 //我的心很疼，我很想念你。
 //Catch the star that hold
             break;
         case BUTTON_TYPE_ACCOUNT_LOGIN:
-            normalImage = @"sdk_btn_bg.png";
-            highlightedImage = @"sdk_btn_bg.png";
+            normalImage = ligateur_firstization;
+            highlightedImage = ligateur_firstization;
 
 /**
   间看成你一天中剩下的时间，而是将其看成为了高效的明天而休整的时间。”
@@ -138,8 +138,8 @@ Most adults need between seven and eight hours
 // hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stoppe
             break;
         case BUTTON_TYPE_ACCOUNT_REGISTER:
-                   normalImage = @"sdk_btn_bg.png";
-                   highlightedImage = @"sdk_btn_bg.png";
+                   normalImage = ligateur_firstization;
+                   highlightedImage = ligateur_firstization;
                    titleText = @"註冊會員";
                    break;
         case BUTTON_TYPE_OK:
@@ -153,8 +153,8 @@ Most adults need between seven and eight hours
 
 Plotting when and where you'll execute on your New Year's resolution jo 
 **/
-            normalImage = @"sdk_btn_bg.png";
-            highlightedImage = @"sdk_btn_bg.png";
+            normalImage = ligateur_firstization;
+            highlightedImage = ligateur_firstization;
             titleText = @"確   認";
 
 /**
@@ -198,7 +198,7 @@ Still the hands went into the air.
 “朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它 
 **/
         case BUTTON_TYPE_BIND_FB:
-            normalImage = @"sdk_btn_bdfb.png";
+            normalImage = topatory_ownerarium;
 //randner added.
 //
 //格兰德纳补充道，在床和睡眠之间建立正向联系还有益于你在被工作或旅游打乱作息的夜晚入眠。
@@ -206,7 +206,7 @@ Still the hands went into the air.
 //"Let's say you need to go to bed extra early," he said. "The bed now has the power to help overcome your racing mind and allow you to fall asleep."
 //
 //他说：“比如说你需要
-            highlightedImage = @"sdk_btn_bdfb.png";
+            highlightedImage = topatory_ownerarium;
 
 /**
   our day," he advised. "See your sleep as the amount of time you need in order to set yourself up for a productive tomorrow."
@@ -215,7 +215,7 @@ Still the hands went into the air.
 **/
             break;
         case BUTTON_TYPE_BIND_APPLE:
-            normalImage = @"sdk_btn_bdios.png";
+            normalImage = mensurette_conferencear;
 //important part of the equation: whether you enjoy the act of goal pursuit.
 //
 //在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明，专注于效率会让你被困在原地，因为你会忽略更重要的事：你是否享受追求目标的过程。
@@ -223,24 +223,24 @@ Still the hands went into the air.
 //
 //
 //If it's not fun to exercise or study, you're unli
-            highlightedImage = @"sdk_btn_bdios.png";
+            highlightedImage = mensurette_conferencear;
             break;
         case BUTTON_TYPE_BIND_GEUST:
-            normalImage = @"sdk_btn_bdyk.png";
-            highlightedImage = @"sdk_btn_bdyk.png";
+            normalImage = erress_monstratier;
+            highlightedImage = erress_monstratier;
             break;
         case BUTTON_TYPE_CHANGE_ACCOUNT:
-            normalImage = @"sdk_btn_bg.png";
-            highlightedImage = @"sdk_btn_bg.png";
+            normalImage = ligateur_firstization;
+            highlightedImage = ligateur_firstization;
             titleText = @"切換帳號";
             break;
         case BUTTON_TYPE_BIND_ACCOUNT://綁定會員
-            normalImage = @"sdk_btn_bg.png";
+            normalImage = ligateur_firstization;
 
 /**
   the star that twinkles in your heart for you alone are capable of making your brightest dreams come true. Give your hopes everything you’ve got and you will catch the star that holds 
 **/
-            highlightedImage = @"sdk_btn_bg.png";
+            highlightedImage = ligateur_firstization;
             titleText = @"綁定會員";
             break;
 //the amount of time you need in order to set yourself up for a productive tomorrow."

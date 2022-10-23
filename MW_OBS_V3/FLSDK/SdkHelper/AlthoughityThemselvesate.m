@@ -56,7 +56,7 @@ If your New Year's resolution is to meditate five days each week, a plan
                                 phoneAreaCode:areaCode
                                   phoneNumber:phoneNum
                                        vfCode:vfCode
-                                   interfaces:@"1"
+                                   interfaces:murar_qualityfy
                                otherParamsDic:nil
                                  successBlock:^(id responseData) {
 
@@ -98,7 +98,7 @@ Those fishing lures thrown in the cold an
 3. Change your attitude about sleep 
 **/
             cc.data.password = password;
-//            [OdorSever toastMsg:GetString(@"text_account_reg_success")];
+//            [OdorSever toastMsg:GetString(music_pactaneity)];
             [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_SELF];
         }
 //ge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -136,8 +136,8 @@ I don’t have th s
     [[MontieTheie share] makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
 //solution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spe
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-        [tempMutableDic removeObjectForKey:@"appleThirdID"];
+        NSString *appleID = [tempMutableDic[healthory_resourceette] copy];
+        [tempMutableDic removeObjectForKey:healthory_resourceette];
 // racing mind and allow you to fall asleep."
 //
 //他说：“比如说你需要提早上床睡觉。床将能帮助你安抚纷繁的思绪，让你酣然入睡。”
@@ -148,7 +148,7 @@ I don’t have th s
 //
 //Many people view sleeping as the final thing they have to do in a jam-packed 
         [AperthandBalowise thirdLoginOrReg:appleID andThirdPlate:LOGIN_TYPE_APPLE addOtherParams:tempMutableDic successBlock:^(id responseData) {
-            //[OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
 
 /**
   goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an 
@@ -184,7 +184,7 @@ Still the ha
         NSDictionary *otherParamsDic = nil;
         @try {
             otherParamsDic = @{
-                @"fbOauthToken"        :fbIdToken,
+                matterster_apoaire        :fbIdToken,
             };
 
 /**
@@ -207,7 +207,7 @@ Still the ha
 If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue-based plan like  
 **/
         [AperthandBalowise thirdLoginOrReg:fbUserId andThirdPlate:LOGIN_TYPE_FB addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            //[OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
 
 /**
   方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
@@ -351,7 +351,7 @@ Take pride in your accomp
 If you deviate at all from your New Year's resolution, your instinct may be to declare yourself a failure and throw in the t 
 **/
     [AperthandBalowise freeLoginOrRegister:loginId successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"py_login_success")];
+        //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
 
 /**
   和你交朋友。
@@ -434,8 +434,8 @@ One easy way to do this is by telling a few people about your goal so you'll fee
         NSDictionary *otherParamsDic = nil;
         @try {
             otherParamsDic = @{
-                @"googleIdToken"        :idToken,
-                @"googleClientId"       :kClientID,
+                candidateably_contraair        :idToken,
+                venial_productionivity       :kClientID,
             };
         } @catch (NSException *exception) {
         }
@@ -446,7 +446,7 @@ One easy way to do this is by telling a few people about your goal so you'll fee
 格兰德纳补充 
 **/
         [AperthandBalowise thirdLoginOrReg:userId andThirdPlate:LOGIN_TYPE_GOOGLE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            //[OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
             if (delegate) {
 //die. But dying in the place of someone I love,seems like a good way to go.
 //我从来没有想过自己会怎么死。但是死在自己爱的人的怀里看起来是一个不错的选择。
@@ -522,7 +522,7 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
 //只是害怕失去你，害怕你会突然消失……
 //You don't know how long I've wa
 {
-    return [NSString stringWithFormat:@"%@%@", @"scienceier" , @"brachyfy"];
+    return [NSString stringWithFormat:@"%@%@", international_prehensfail , multatel_ossory];
 
 /**
   s. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an even more important part of the equation: whether you enjoy  
@@ -546,7 +546,7 @@ Your mood swings are kind of giving me
         @try {
 //he table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your New Y
             otherParamsDic = @{
-                @"lineAccessToken"        :accessToken,
+                taliile_septenfaction        :accessToken,
             };
         } @catch (NSException *exception) {
 //远不会失去自己的价值。”
@@ -560,7 +560,7 @@ Your mood swings are kind of giving me
 //“无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了什么，或者我们认识谁，生活的价值在于我们是谁。”
         }
         [AperthandBalowise thirdLoginOrReg:userID andThirdPlate:LOGIN_TYPE_LINE addOtherParams:otherParamsDic successBlock:^(id responseData) {
-            //[OdorSever toastMsg:GetString(@"py_login_success")];
+            //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess:responseData thirdPlate:LOGIN_TYPE_LINE];
 // to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -621,7 +621,7 @@ One way to make pursuing a goal that normally feels like a chore more fun is to 
 **/
 {
     [AperthandBalowise doLoginWithAccount:account andPassword:password otherDic:nil successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"py_login_success")];
+        //[OdorSever toastMsg:GetString(jejunoleadial_cutet)];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
@@ -671,7 +671,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 
 如果你的新年计划是每周冥想五天，那么像“我将在工作日冥想”这样的计划就太模糊了。但是，“我将在工作日的午休时间在办公室冥想”这样有信息提示的计划就很合适 
 **/
-            @"userId"        :currentAccountModel.userId,
+            southan_megalike        :currentAccountModel.userId,
 //g than rewards.
 //
 //而比羞愧感更有效的是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而惩罚甚至比奖励让我们更有动力。
@@ -683,8 +683,8 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //
 //
 //Most of us strive for efficiency when it comes to achieving our goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress. If you want to ace a class, you assume long, dis
-            @"loginAccessToken"        :currentAccountModel.token,
-            @"loginTimestamp"         :currentAccountModel.timestamp,
+            certainel_streptosity        :currentAccountModel.token,
+            gnor_hepar         :currentAccountModel.timestamp,
         };
     } @catch (NSException *exception) {
 //始有人举手。他说我会把这20美元纸币给你们中间的一位，但
@@ -701,7 +701,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 **/
             NSMutableDictionary *fbParamsDic = nil;
             @try {
-                fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{@"fbOauthToken":fbIdToken}];
+                fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{matterster_apoaire:fbIdToken}];
                 [fbParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
             [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:fbUserId thirdPlate:LOGIN_TYPE_FB otherParamsDic:fbParamsDic];
@@ -737,8 +737,8 @@ I miss you. I miss all the mornings that I have woken up right beside you.
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         [[MontieTheie share] makeAppleCallbackSuccessBlock:^(NSDictionary * _Nullable result) {
             NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-            NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-            [tempMutableDic removeObjectForKey:@"appleThirdID"];
+            NSString *appleID = [tempMutableDic[healthory_resourceette] copy];
+            [tempMutableDic removeObjectForKey:healthory_resourceette];
             [tempMutableDic addEntriesFromDictionary:otherParamsDic];
             [self bindAccountAndRequest:delegate view:currentView account:account pwd:password thirdId:appleID thirdPlate:LOGIN_TYPE_APPLE otherParamsDic:tempMutableDic];
         } andErrorBlock:^(NSError * _Nullable error) {
@@ -791,8 +791,8 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 
 如果你的新年计划是每周冥想五天，那么像“我将在工作日冥想” 
 **/
-                    @"googleIdToken"        :idToken,
-                    @"googleClientId"       :kClientID,
+                    candidateably_contraair        :idToken,
+                    venial_productionivity       :kClientID,
                 }];
                 [ggParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
@@ -821,7 +821,7 @@ There are not enough words to contemplate on
 + (void)bindAccountAndRequest:(id<LoginViewDelegate>)delegate view:(UIView *)currentView account:(NSString *)account pwd:(NSString *)password thirdId:(NSString *)thirdId  thirdPlate:(NSString *)thirdPlate otherParamsDic:(NSDictionary *)otherParamsDic
 {
     [AperthandBalowise doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:thirdId thirdPlate:thirdPlate otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"text_account_bind_success")];
+        //[OdorSever toastMsg:GetString(challenge_motherress)];
 
 /**
   e cracks

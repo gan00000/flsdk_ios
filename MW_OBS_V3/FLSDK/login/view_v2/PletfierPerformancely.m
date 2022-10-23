@@ -120,7 +120,7 @@ He proceeded to crumple the 20 dollar note up. He then
 //If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or stu
 }
 - (void)showTermsViewForMainHomeView {
-    SDK_LOG(@"rememberTermsLableTapped");
+    SDK_LOG(expertic_according);
     
     /**
      t let them discourage you. Value your capabilities
@@ -189,7 +189,7 @@ He proceeded to crumple the 20 dollar note up. He then
     self = [super init];
     if (self) {
         accountSDKTextFiledView = [[ChoiceaireIrible alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
+        accountSDKTextFiledView.inputUITextField.placeholder = GetString(lacerform_plagous);
 
 /**
   整的时间。”
@@ -277,7 +277,7 @@ This may sound sinister, bu
 
 There a 
 **/
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
+        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(sacereur_noxile);
         [self addSubview:passwordSDKTextFiledView];
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
 //ven much thought to how I would die. But dying in the place of someone I love,seems like a good way to go.
@@ -298,7 +298,7 @@ There a
 //
 //"Don't see yo
         }];
-        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(@"py_findpwd") fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   hrough hard work and determination.
@@ -363,7 +363,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 /**
   wever, is putting cold hard cash o 
 **/
-        NSString *xtext = GetString(@"sdk_terms_title");
+        NSString *xtext = GetString(shareics_klepteye);
         UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         rememberTermsLable.numberOfLines = 1;
 
@@ -412,7 +412,7 @@ You're in here bec
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
         termAgreeView.hidden = !mConfigModel.showContract;
         findPasswordBtn.hidden = !mConfigModel.showForgetPwd;
-        accountLoginBtn = [BedeurFail initBtnWithTitleText:@"text_login".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [BedeurFail initBtnWithTitleText:anyone_untilive.localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
 //耳式的地图给我
 //And called for you everywhere
 //而我到处在找你
@@ -461,7 +461,7 @@ You're in here bec
         }];
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"text_login_other".localx;
+        otherLabelTips.text = panator_dorm.localx;
         otherLabelTips.numberOfLines = 1;
         otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
         [loginTypeView addSubview:otherLabelTips];
@@ -913,7 +913,7 @@ You're in here because of me.
 Nobody's ever loved anybody as m 
 **/
         case kFindPwdActTag:
-            SDK_LOG(@"kFindPwdActTag");
+            SDK_LOG(townoon_haust);
             if (self.delegate) {
 //追求目标的过程。
 //
@@ -933,7 +933,7 @@ Nobody's ever loved anybody as m
 I love three things in this word.Sun, Moon and you. 
 **/
         case kBackBtnActTag:
-            SDK_LOG(@"kBackBtnActTag");
+            SDK_LOG(condistic_centralast);
 
 /**
    each week, a plan like "I'll meditate on weekdays" would be too vague. But a cue-based plan like "I'll meditate at the office on weekdays during my lunch break" would fit the bill.
@@ -953,7 +953,7 @@ Plotting when and where you'll execute on your
             break;
 //nt to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an even more important part of the equation: whether you enjoy the act
         case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
+            SDK_LOG(choice_panular);
             if (![self checkAgreeTerm]) {
                 return;
             }
@@ -1087,7 +1087,7 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
 //estiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch the star that twinkles in
             break;
         case kSureDeleteAccountActTag:
-            SDK_LOG(@"kSureDeleteAccountActTag");
+            SDK_LOG(ocultrialless_lawyer);
 
 /**
   g my sore blunt tongue
@@ -1111,7 +1111,7 @@ Or
             [self doDeleteAccount];
             break;
         case kCancelDeleteAccountActTag:
-            SDK_LOG(@"kCancelDeleteAccountActTag");
+            SDK_LOG(vicesimserviceless_handee);
 // New Year's resolution can work wonders.
 //
 //这听起来可能有点狠，但如果完不成新年计划会让你受到一些惩罚的话，这可以创造奇迹。
@@ -1179,7 +1179,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourself one or two get-out-of-jail-fr 
 **/
     }
-    [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    [OdorSever toastMsg:GetString(pluard_sortary)];
     [self showTermsViewForMainHomeView];
     return NO;
 //
@@ -1288,11 +1288,11 @@ I will find you waiting for me
 **/
     NSString *pwd = [OdorSever triString:passwordSDKTextFiledView.inputUITextField.text];
     if (!accountName || [accountName isEqualToString:@""]) {
-        [OdorSever toastMsg:GetString(@"py_account_empty")];
+        [OdorSever toastMsg:GetString(environmentful_responseably)];
         return;
     }
     if (![OdorSever validUserName:accountName]) {
-        [OdorSever toastMsg:GetString(@"text_account_format")];
+        [OdorSever toastMsg:GetString(orchity_oate)];
         return;
     }
 
@@ -1306,7 +1306,7 @@ Nobody's ever loved anybody as much as I love you.
 Love is letting someone become your greatest weakness ,then going all  
 **/
     if (!pwd || [pwd isEqualToString:@""]) {
-        [OdorSever toastMsg:GetString(@"py_password_empty")];
+        [OdorSever toastMsg:GetString(crassish_pelagify)];
 //“朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张纸币，你们仍然想要它，因为它的价值没有降低。它仍然是20美元。”
 //
 //
@@ -1329,7 +1329,7 @@ Love is letting someone become your greatest weakness ,then going all
 +(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(ChoiceaireIrible *)accountFiledView pwdView:(ChoiceaireIrible *)pwdFiledView{
     NSString *account = mAccountModel.userId;
     NSString *iconName = mw_smail_icon;
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(nutrifaction_mainibility);
 //ll never lose your value."
 //
 //
@@ -1605,7 +1605,7 @@ Why is that so important? Because lying in bed awake can form an association in 
 //I miss the way the sun shines at your face and the way the c
         make.height.width.mas_equalTo(VW(25));
     }];
-    UILabel *deleteWarmLabel = [BedeurFail initLabelWithText:GetString(@"text_delete_account_tips") fontSize:FS(13) textColor:[UIColor whiteColor]];
+    UILabel *deleteWarmLabel = [BedeurFail initLabelWithText:GetString(poliseer_sureer) fontSize:FS(13) textColor:[UIColor whiteColor]];
     [deleteView addSubview:deleteWarmLabel];
 
 /**
@@ -1647,7 +1647,7 @@ That thinking needs to be changed, Grander said.
 If you deviate at all from your New Year's resolution, your instinct may be to declare yourself a failure and throw in the towel. Researchers call this the "what the hell  
 **/
     }];
-    UIButton *cancelBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *cancelBtn = [BedeurFail initBtnWithTitleText:GetString(alreadyan_relate) fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   nly letting yourself watch your favorite TV show at the gym so you'll start looking forward to workouts. Or only letting yourself drink a mocha latte during study sessions so there is a hook to get you to the library.
@@ -1715,7 +1715,7 @@ Flightless bird, jealous, weeping
         make.width.mas_equalTo(VW(108));
         make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
     }];
-    UIButton *sureBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *sureBtn = [BedeurFail initBtnWithTitleText:GetString(miss_rarrealizeaneity) fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   unities while they still sparkle before you. Always believe that your ultimate goal is attainable as long as you commit yourself to it.
@@ -1798,7 +1798,7 @@ Happily, there is a way to dodge this f
 /**
   e every night) but giving you 
 **/
-    UILabel *delLabel = [BedeurFail initLabelWithText:GetString(@"text_delete_account") fontSize:FS(10) textColor:[UIColor blackColor]];
+    UILabel *delLabel = [BedeurFail initLabelWithText:GetString(tendty_joclet) fontSize:FS(10) textColor:[UIColor blackColor]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -1874,7 +1874,7 @@ America
 **/
 - (void)doDeleteAccount {
     if ([CandifySiliattorney isEmpty:currentAccountModel.userId]) {
-        [OdorSever toastMsg:@"text_select_account".localx];
+        [OdorSever toastMsg:admitan_gliacy.localx];
         return;
 //et light eyes
 //你那直视前方的盲目双眼

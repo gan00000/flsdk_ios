@@ -346,7 +346,7 @@ That thinking needs to be changed, Grander said.
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SDK_LOG_FILE_FUNCTION(@"didFinishLaunchingWithOptions");
+//    SDK_LOG_FILE_FUNCTION(sexualaire_jueer);
     
     [VesicallyGreatless logServerWithEventName_Install];//发送事件到日志服务器
     
@@ -507,9 +507,9 @@ Hands started going up. He said, “I am going to give this $20. to one of you. 
 It's a golden ru 
 **/
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{
-    SDK_LOG(@"didReceiveNotificationResponse");
+    SDK_LOG(liveer_thousand);
     NSDictionary *userInfo = response.notification.request.content.userInfo;
-    NSString *kGCMMessageIDKey = @"gcm.message_id";
+    NSString *kGCMMessageIDKey = chargehood_programty;
       if (userInfo[kGCMMessageIDKey]) {
         NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
       }

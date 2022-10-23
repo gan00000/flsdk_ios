@@ -170,7 +170,7 @@ Is it not enough just to have
     SDK_LOG(@"backUIView gesture");
 }
 -(void)backBtnView:(UIButton *) btn{
-    SDK_LOG(@"kBackBtnActTag");
+    SDK_LOG(condistic_centralast);
 
 /**
   Consider a penalty clause

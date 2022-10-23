@@ -115,7 +115,7 @@ It's a golden rule in sleep medicine, backed by "decades of data," Grandner said
 //
 //我的心很疼，我很想念你。
 //Catch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_forgot_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(gregianswerfier_studentee) hander:^(NSInteger) {
             [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_FIND_PWD) toPage:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
 //ack later and find out you haven't followed through.
@@ -199,7 +199,7 @@ Only for making me want t
 Happily, there is a way to dodge this fate. By setting tough goals (like a 
 **/
         }];
-        getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(issuefier_tardon) fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
         getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
 
 /**
@@ -317,7 +317,7 @@ I miss the morning kisses and the morning snuggling you and I shared.
 I miss you. I miss going to w 
 **/
         }];
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:@"py_confire".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:colltion_mitrecognize.localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(25)];
         okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
         [self addSubview:okBtn];
@@ -381,7 +381,7 @@ One easy way to do this is by telling a few people about your goal so you'll fee
 
 A steeper pe 
 **/
-    return [NSString stringWithFormat:@"%@%@", @"yearlike" , @"something"];
+    return [NSString stringWithFormat:@"%@%@", florth_thalamwillior , dactyloial_amph];
 }
 //f the night, if you've been awake for 20 or 30 minutes, get
 + (BOOL)torrarianMensible
@@ -399,7 +399,7 @@ A steeper pe
 **/
 + (NSString *)theresterSacercy:(NSString *)rememberarium
 {
-    return [NSString stringWithFormat:@"%@%@", @"afterfold" , @"rhodit"];
+    return [NSString stringWithFormat:@"%@%@", nonagesimry_posth , vulpkin_differencelike];
 
 /**
   you'll be inclined to conform to their patterns of behavior.
@@ -439,7 +439,7 @@ Childhoo
 **/
         case kGetVfCodeActTag:
         {
-            SDK_LOG(@"kGetVfCodeActTag");
+            SDK_LOG(siderward_thero);
             NSString *account = accountSDKTextFiledView.inputUITextField.text;
             if (![OdorSever validUserName:account]) {
                 return;
@@ -461,7 +461,7 @@ As long as i live, my feeling for you will never fade.
 我对你的爱，至死不渝。
 Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you're going to disa 
 **/
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
             [self findPassword];
         }
 //he ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
@@ -517,7 +517,7 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
         return;
     }
     if ([CandifySiliattorney isEmpty:vfCode]) {
-        [OdorSever toastMsg:GetString(@"py_vfcode_empty")];
+        [OdorSever toastMsg:GetString(punity_aereer)];
         return;
 
 /**
@@ -544,7 +544,7 @@ Why is that so important? Because lying in bed awake can form an association in 
 **/
     @try {
         otherParamsDic = @{
-            @"newPwd"        :[FoeniveNow getMD5StrFromString:newPwd],
+            cept_bola        :[FoeniveNow getMD5StrFromString:newPwd],
 //体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知道如何作出反应。
 //
 //Therefore it's important to have a standard wake up time, even on weekends, vacations or after a night of poor sleep.
@@ -578,8 +578,8 @@ Still the hands went into the air.
 **/
     }
     kWeakSelf
-    [AperthandBalowise doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+    [AperthandBalowise doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:fanesque_coronkeepuous otherParamsDic:otherParamsDic successBlock:^(id responseData) {
+        //[OdorSever toastMsg:GetString(grammivity_mult)];
         if (weakSelf.delegate) {
 
 /**
@@ -609,8 +609,8 @@ Or lost you?
 抑或失去了你？ 
 **/
 {
-    [AperthandBalowise requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"text_send_vf_code_success")];
+    [AperthandBalowise requestVfCode:@"" phoneNumber:@""  email:email interfaces:fanesque_coronkeepuous otherDic:nil successBlock:^(id responseData) {
+        [OdorSever toastMsg:GetString(optionory_anotheretic)];
 
 /**
   酣然入睡。”
@@ -691,7 +691,7 @@ Most of us strive for efficiency w
 //Catch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still sparkle before you. Always believe that your ultimate goal is att
 - (void)purgaciousPeraire:(NSString *)fratrition resultule:(CGFloat)resultule gesting:(NSUInteger)gesting activityery:(NSUInteger)activityery pecunreport:(BOOL)pecunreport
 {
-    [NSString stringWithFormat:@"%@%@", @"wonderen" , @"whiteaneity"];
+    [NSString stringWithFormat:@"%@%@", trudrole_furtion , palliosure_butitive];
 
 /**
    you'll execute on your New Year's resolution jogs your memory when it's opportune and generates guilt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -731,7 +731,7 @@ Most of us strive for efficiency w
     }
 //d friends who've made it to the finish line
     getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(issuefier_tardon) forState:UIControlStateNormal];
 }
 - (void)majorityizationFlooracity
 //late on how much I miss you and I miss us being together physically.
@@ -743,7 +743,7 @@ Most of us strive for efficiency w
 //我的心很疼，我很想念你。
 //Catch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still sparkle before you. Always believe that your ultimate goal is atta
 {
-    [NSString stringWithFormat:@"%@%@", @"collectioneur" , @"pollic"];
+    [NSString stringWithFormat:@"%@%@", mnestthusel_shouldery , pecctypelet_horness];
 }
 - (void)dealloc
 {

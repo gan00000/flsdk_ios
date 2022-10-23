@@ -140,7 +140,7 @@ One easy way to do this is by telling a few people about your goal so you'll fee
         NSString *authorCodeStr = [[NSString alloc] initWithData:authorCode encoding:NSUTF8StringEncoding];
         NSString *user = appleIDCredential.user;
         NSString *token = [[NSString alloc] initWithData:appleIDCredential.identityToken encoding:NSUTF8StringEncoding];
-        [[NSUserDefaults standardUserDefaults] setValue:user forKey:@"GamaAppleCurrentIdentifier"];
+        [[NSUserDefaults standardUserDefaults] setValue:user forKey:commercialish_herpship];
         [mStr appendString:user?:@""];
         NSString *familyName = appleIDCredential.fullName.familyName;
 
@@ -159,8 +159,8 @@ One easy way to do this is by telling a few people about your goal so you'll fee
         NSLog(@"mStr：%@", mStr);
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation:@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""}];
-            self.impSuccess(@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""});
+            [self saveAppleLastLoginSuccessWithInformation:@{healthory_resourceette:user?:@"",trichothreeesque_monilen:token?:@"",begin_juskin:authorCodeStr?:@""}];
+            self.impSuccess(@{healthory_resourceette:user?:@"",trichothreeesque_monilen:token?:@"",begin_juskin:authorCodeStr?:@""});
         });
     } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
 //给我
@@ -197,8 +197,8 @@ Watching the warm poison rats
 看着刚被毒死的老鼠 
 **/
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation:@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""}];
-            self.impSuccess(@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""});
+            [self saveAppleLastLoginSuccessWithInformation:@{healthory_resourceette:user?:@"",pingu_kudoie:password?:@""}];
+            self.impSuccess(@{healthory_resourceette:user?:@"",pingu_kudoie:password?:@""});
         });
     } else {
 
@@ -457,7 +457,7 @@ I'd never given much thought to how I would die. But dying in the place of someo
 - (void)observeAuthticationState {
     if (@available(iOS 13.0, *)) {
         ASAuthorizationAppleIDProvider *appleIDProvider = [ASAuthorizationAppleIDProvider new];
-        NSString *userIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:@"GamaCurrentIdentifier"];
+        NSString *userIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:effectaceous_baroial];
         if (userIdentifier) {
             NSString* __block errorMsg = nil;
             [appleIDProvider getCredentialStateForUserID:userIdentifier completion:^(ASAuthorizationAppleIDProviderCredentialState credentialState, NSError * _Nullable error) {
@@ -610,16 +610,16 @@ It's a golden rule
 **/
     NSDictionary *tempDic = [self fetchAppleLoginInfo];
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
-    NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-    [tempMutableDic removeObjectForKey:@"appleThirdID"];
+    NSString *appleID = [tempMutableDic[healthory_resourceette] copy];
+    [tempMutableDic removeObjectForKey:healthory_resourceette];
 }
 - (void)saveAppleLastLoginSuccessWithInformation:(NSDictionary*)info{
-    [[NSUserDefaults standardUserDefaults] setObject:info forKey:@"GameswordAppleTmp"];
+    [[NSUserDefaults standardUserDefaults] setObject:info forKey:quesitguy_struinstitutionress];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 - (NSDictionary *)fetchAppleLoginInfo
 {
-    NSDictionary *infoDic = [[NSUserDefaults standardUserDefaults] objectForKey:@"GameswordAppleTmp"];
+    NSDictionary *infoDic = [[NSUserDefaults standardUserDefaults] objectForKey:quesitguy_struinstitutionress];
     return infoDic;
 }
 

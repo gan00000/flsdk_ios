@@ -1,5 +1,7 @@
 
 #import "AccountModel.h"
+#import "ResHeader.h"
+#import "CapitdecideEmeticmost.h"
 @implementation AccountModel
 
 /**
@@ -113,36 +115,36 @@ If you deviate at all from your New Year's resolution, your instinct may be to d
 {
 // don't know how long 
     NSLog(@"AccountModel encodeWithCoder");
-    [aCoder encodeObject:self.account forKey:@"accountName"];
+    [aCoder encodeObject:self.account forKey:takeition_germin];
 
 /**
   you ready to greet the day.
 
 褪黑素是身体分泌的一种激素，你什么时候感到困，什么时候醒来，都靠这种激素来调节。随着黑夜降临，褪黑素的水平就会升 
 **/
-    [aCoder encodeObject:self.password forKey:@"accountPwd"];
+    [aCoder encodeObject:self.password forKey:rustproof_trialism];
 
 /**
   aturally fall as daylight approach 
 **/
-    [aCoder encodeObject:self.lastLoginTime forKey:@"lastLoginTimemobile"];
-    [aCoder encodeObject:self.userId forKey:@"userId"];
-    [aCoder encodeObject:self.token forKey:@"accessToken"];
+    [aCoder encodeObject:self.lastLoginTime forKey:lacrimise_prem];
+    [aCoder encodeObject:self.userId forKey:southan_megalike];
+    [aCoder encodeObject:self.token forKey:act_centerlet];
 //unch, you'll be sure to decline a proffered lunch meeting.
 //
 //提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会
-    [aCoder encodeObject:self.timestamp forKey:@"loginTimestamp"];
-    [aCoder encodeObject:self.thirdId forKey:@"thirdId"];
+    [aCoder encodeObject:self.timestamp forKey:gnor_hepar];
+    [aCoder encodeObject:self.thirdId forKey:claimistic_herpad];
 //s the beginning of the night or the middle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
 //
 //格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，
-    [aCoder encodeObject:self.thirdAccount forKey:@"thirdAccount"];
-    [aCoder encodeBool:self.isBind forKey:@"accountIsBind"];
-    [aCoder encodeObject:self.loginType forKey:@"loginType"];
-    [aCoder encodeObject:self.sign forKey:@"sign"];
-    [aCoder encodeObject:self.telephone forKey:@"telephone"];
-    [aCoder encodeObject:self.loginId forKey:@"loginId"];
-    [aCoder encodeBool:self.isBindPhone forKey:@"isBindPhone"];
+    [aCoder encodeObject:self.thirdAccount forKey:porcious_udintudement];
+    [aCoder encodeBool:self.isBind forKey:decadeery_painie];
+    [aCoder encodeObject:self.loginType forKey:struct_caudise];
+    [aCoder encodeObject:self.sign forKey:cordinetworkfication_puber];
+    [aCoder encodeObject:self.telephone forKey:botanial_rumpful];
+    [aCoder encodeObject:self.loginId forKey:nonagenmonth_sexage];
+    [aCoder encodeBool:self.isBindPhone forKey:orern_addior];
 }
 
 /**
@@ -170,10 +172,10 @@ When
 {
     NSLog(@"AccountModel initWithCoder");
     if (self = [super init]) {
-        self.account = [aDecoder decodeObjectForKey:@"accountName"] ? : @"";
-        self.password = [aDecoder decodeObjectForKey:@"accountPwd"] ? : @"";
-        self.lastLoginTime = [aDecoder decodeObjectForKey:@"lastLoginTimemobile"] ? : @"";
-        self.userId = [aDecoder decodeObjectForKey:@"userId"] ? : @"";
+        self.account = [aDecoder decodeObjectForKey:takeition_germin] ? : @"";
+        self.password = [aDecoder decodeObjectForKey:rustproof_trialism] ? : @"";
+        self.lastLoginTime = [aDecoder decodeObjectForKey:lacrimise_prem] ? : @"";
+        self.userId = [aDecoder decodeObjectForKey:southan_megalike] ? : @"";
 
 /**
   rom you anymore.
@@ -188,33 +190,33 @@ I'd never given much thought to how I would die. But dying in the place of someo
 我从来没有想过自己会怎么死。但是死在自己爱的人的怀里看起来是一个不错的选择。
 Your mood swings are kind of giving  
 **/
-        self.token = [aDecoder decodeObjectForKey:@"accessToken"] ? : @"";
-        self.timestamp = [aDecoder decodeObjectForKey:@"loginTimestamp"] ? : @"";
-        self.thirdId = [aDecoder decodeObjectForKey:@"thirdId"] ? : @"";
+        self.token = [aDecoder decodeObjectForKey:act_centerlet] ? : @"";
+        self.timestamp = [aDecoder decodeObjectForKey:gnor_hepar] ? : @"";
+        self.thirdId = [aDecoder decodeObjectForKey:claimistic_herpad] ? : @"";
 
 /**
   
 
 格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起 
 **/
-        self.thirdAccount = [aDecoder decodeObjectForKey:@"thirdAccount"] ? : @"";
+        self.thirdAccount = [aDecoder decodeObjectForKey:porcious_udintudement] ? : @"";
 
 /**
   作或追新剧，晚点再睡也没事。
 
 That thinking needs to be cha 
 **/
-        self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"] ? : NO;
+        self.isBind = [aDecoder decodeBoolForKey:decadeery_painie] ? : NO;
 // up, now crumpled and dirty. “Now, who still wants it?”
 //
 //
 //
 //“好，”他说道，“如果我这样做会怎么样呢？”他把纸币扔到地上，开始用皮鞋使劲踩踏。然后他拣
-        self.loginType = [aDecoder decodeObjectForKey:@"loginType"] ? : @"";
-        self.sign = [aDecoder decodeObjectForKey:@"sign"] ? : @"";
-        self.telephone = [aDecoder decodeObjectForKey:@"telephone"] ? : @"";
-        self.loginId = [aDecoder decodeObjectForKey:@"loginId"] ? : @"";
-        self.isBindPhone = [aDecoder decodeBoolForKey:@"isBindPhone"] ? : NO;
+        self.loginType = [aDecoder decodeObjectForKey:struct_caudise] ? : @"";
+        self.sign = [aDecoder decodeObjectForKey:cordinetworkfication_puber] ? : @"";
+        self.telephone = [aDecoder decodeObjectForKey:botanial_rumpful] ? : @"";
+        self.loginId = [aDecoder decodeObjectForKey:nonagenmonth_sexage] ? : @"";
+        self.isBindPhone = [aDecoder decodeBoolForKey:orern_addior] ? : NO;
     }
     return self;
 }

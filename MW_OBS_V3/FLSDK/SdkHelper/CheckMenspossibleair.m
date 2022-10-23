@@ -84,10 +84,10 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
 // by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight approaches, getting you ready to gre
-        [tempArray addObject:[dict objectForKey:@"text"]];
+        [tempArray addObject:[dict objectForKey:frigency_stereoing]];
     }
     __block CheckMenspossibleair *weakSelf = self;
-    [LanguitudeQuasstenddom showActionSheetWithTitle:@"text_select_phone_area_title".localx
+    [LanguitudeQuasstenddom showActionSheetWithTitle:seeous_carryitude.localx
 // or who we know, but by Who We Are.”
 //
 //
@@ -118,9 +118,9 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 2.Consider a penalty  
 **/
                                       NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];
-                                      weakSelf.selectedAreaCodeValue = [dict objectForKey:@"value"];
-                                      weakSelf.selectedAreaCodeKey = [dict objectForKey:@"key"];
-                                      weakSelf.selectedRegularExpression = [dict objectForKey:@"pattern"];
+                                      weakSelf.selectedAreaCodeValue = [dict objectForKey:minaciless_flwhereature];
+                                      weakSelf.selectedAreaCodeKey = [dict objectForKey:dog_half];
+                                      weakSelf.selectedRegularExpression = [dict objectForKey:improveoon_fidelfiveress];
                                       if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue:)])
                                       {
                                           [weakSelf.delegate showSelectedAreaCodeValue:weakSelf.selectedAreaCodeValue];
@@ -137,7 +137,7 @@ But it's you, your scent, it's like a drug to me. You're like my own personal br
 但是你，你的气味，对我来说就像是毒品一样。你是让我上瘾的海洛因。
 As long as i live, my f 
 **/
-                          cancelButtonTitle:@"text_cancel".localx
+                          cancelButtonTitle:alreadyan_relate.localx
                           otherButtonTitles:[NSArray arrayWithArray:tempArray]
 
 /**
@@ -183,7 +183,7 @@ I don’t have t
   ill priceless to those who love you. The worth of our lives comes,  
 **/
 {
-    return [NSString stringWithFormat:@"%@%@", @"colorage" , @"little"];
+    return [NSString stringWithFormat:@"%@%@", adultfier_missard , them_stalagm];
 }
 - (void)resetupAreaCodesAndActionSheetWith:(NSArray *)newAreaCodesArray
 {
@@ -203,9 +203,9 @@ I don’t have t
 //
 //It's a golden rule in sleep medicine, backed by "decades of data," Grandner said. In fact, he said this tip is so powerful that when used in his
         [self.gamaAreaCodesArray addObjectsFromArray:newAreaCodesArray];
-        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][@"key"];
-        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][@"value"];
-        self.selectedRegularExpression = _gamaAreaCodesArray[0][@"pattern"];
+        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][dog_half];
+        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][minaciless_flwhereature];
+        self.selectedRegularExpression = _gamaAreaCodesArray[0][improveoon_fidelfiveress];
     }
 }
 #pragma mark - Getter&Setter
@@ -296,7 +296,7 @@ There are not enough ways to express how much I miss you
 
 There are not enough words to contemplate on how much I miss you and I miss u 
 **/
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:@"key"];
+        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:dog_half];
     }
     return _selectedAreaCodeKey;
 }
@@ -306,7 +306,7 @@ There are not enough words to contemplate on how much I miss you and I miss u
 - (NSString *)selectedAreaCodeValue
 {
     if (!_selectedAreaCodeValue) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:@"value"];
+        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:minaciless_flwhereature];
 
 /**
   他的”反正你已经失败了。

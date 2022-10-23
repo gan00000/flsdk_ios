@@ -113,13 +113,13 @@ Spending time around high achievers can boost your own performance. If your New 
 
 格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起床调整一下。也许你 
 **/
-        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];
+        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[genybigance_fodindustryism]];
 //, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight approaches, getting you ready to greet the day.
 //
 //褪黑素是身体分泌的一种激素，你什么时候感到困，什么时候醒来，都靠这种激素来调节。随着黑夜降临，褪黑素的水平就会升高，暗示身体该睡觉了。光线会阻止身体分泌褪黑素，所以白天来临时褪黑素水平就会下降，让你准备好迎接新的一天。
 //
 //To work properly
-        NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
+        NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[pollinon_form]];
 
 /**
   plained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake up tired.
@@ -128,7 +128,7 @@ Spending time around high achievers can boost your own performance. If your New 
 
 Establishing that positive relationship between the bed and sleep can be beneficial on nights where your schedule has to  
 **/
-        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[@"url"]];
+        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[aurior_ownaneous]];
         ConfigResponse *mCr = [[ConfigResponse alloc] init];
 //l when and where you'll follow through.
 //
@@ -274,9 +274,9 @@ It's
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"eventName"        :eventName,
-            @"appTime"          :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
+            lexicose_porceur        :eventName,
+            sequeous_Republicantion          :timeStamp,
+            culturalfold_positiveit         :[NSString stringWithFormat:@"%@", GAME_CODE],
         };
         [params addEntriesFromDictionary:dic];
         
@@ -398,13 +398,13 @@ Pissing on magazine
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
-            @"registPlatform"   :thirdPlate,
-            @"loginMode"        :thirdPlate,
-            @"thirdPlatId"      :thirdId,
-            @"thirdLoginId"     :thirdId,
+            gasice_body        :[md5SignStr lowercaseString],
+            tertiite_subjectern        :timeStamp,
+            culturalfold_positiveit         :[NSString stringWithFormat:@"%@", GAME_CODE],
+            newtion_blenncareeritious   :thirdPlate,
+            jejuness_movemost        :thirdPlate,
+            cochlaire_treeeer      :thirdId,
+            mechanoice_pacern     :thirdId,
 
 /**
   Just as cues tell Broadway stars when to step onto the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
@@ -537,17 +537,17 @@ Most a
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
+            gasice_body        :[md5SignStr lowercaseString],
 //this fate. By setting tough goals (like a 10 pm bedtime every night) but giving yourse
-            @"timestamp"        :timestamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@",GAME_CODE],
-            @"loginId"             :userName,
-            @"password"              :[[FoeniveNow getMD5StrFromString:password] lowercaseString],
+            tertiite_subjectern        :timestamp,
+            culturalfold_positiveit         :[NSString stringWithFormat:@"%@",GAME_CODE],
+            nonagenmonth_sexage             :userName,
+            vocast_sortetic              :[[FoeniveNow getMD5StrFromString:password] lowercaseString],
 
 /**
   one else tips  
 **/
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            newtion_blenncareeritious   :LOGIN_TYPE_SELF,
         };
         [params addEntriesFromDictionary:dic];
 //is we don't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
@@ -671,8 +671,8 @@ To work pr
 //“朋友们，刚刚你们已经得出一个非常宝贵的经验。不管我怎么糟蹋这张
     [md5str appendFormat:@"%@",GAME_CODE];
     NSString * md5SignStr=[FoeniveNow getMD5StrFromString:md5str];
-    NSDictionary *dic = @{@"phone":phoneN,
-                          @"phoneAreaCode":phoneArea,
+    NSDictionary *dic = @{with_septenive:phoneN,
+                          securityee_flig:phoneArea,
 // to it.
 //
 //
@@ -682,11 +682,11 @@ To work pr
 //
 //
 //Though barriers may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it w
-                          @"email":email,
-                          @"interfaces":interfaces,
-                          @"gameCode":[NSString stringWithFormat:@"%@",GAME_CODE],
-                          @"timestamp":timeStamp,
-                          @"signature":md5SignStr
+                          tudinitudewhenaceous_nonagesimmycy:email,
+                          shootic_rosuous:interfaces,
+                          culturalfold_positiveit:[NSString stringWithFormat:@"%@",GAME_CODE],
+                          tertiite_subjectern:timeStamp,
+                          gasice_body:md5SignStr
     };
     [params addEntriesFromDictionary:dic];
     [OpportunityoOmmmanageity postRequestWithFunctionPath:api_get_vfCode params:params successBlock:successBlock errorBlock:errorBlock];
@@ -726,9 +726,9 @@ Curl through the wi
     if (!vf_acccount || [vf_acccount isEqualToString:@""]) {
         vf_acccount = email;
     }
-    NSDictionary *dic = @{@"telephone":phoneN,
-                          @"areaCode":phoneArea,
-                          @"email":email,
+    NSDictionary *dic = @{botanial_rumpful:phoneN,
+                          nextage_death:phoneArea,
+                          tudinitudewhenaceous_nonagesimmycy:email,
     };
     [params addEntriesFromDictionary:dic];
     [OpportunityoOmmmanageity postRequestWithFunctionPath:api_sendMobileVcode params:params successBlock:successBlock errorBlock:errorBlock];
@@ -785,7 +785,7 @@ It may sound like a sm
 Most of us strive for efficiency when it comes to achieving our goals. If you want to get fit, you figure a punishing workout will be just the thing to produce rapid progress 
 **/
 {
-    return [NSString stringWithFormat:@"%@%@", @"tript" , @"miss"];
+    return [NSString stringWithFormat:@"%@%@", thoughine_institutionice , dogfier_mathemable];
 //rds to contemplate on how much I
 }
 + (void)bindAccountPhone:(NSString *)phoneArea
@@ -817,9 +817,9 @@ Most of us strive for efficiency when it comes to achieving our goals. If you wa
 如果你的新年计划是每周冥想五天，那么像“我将在工作日冥想”这样的计划就太模糊了。但是，“我将在工作日的午休时间在办 
 **/
     }
-    NSDictionary *dic = @{@"telephone":phoneN ? : @"",
-                          @"areaCode":phoneArea ? : @"",
-                          @"vCode":vCode ? : @"",
+    NSDictionary *dic = @{botanial_rumpful:phoneN ? : @"",
+                          nextage_death:phoneArea ? : @"",
+                          adultet_bromoish:vCode ? : @"",
     };
     [params addEntriesFromDictionary:dic];
     [OpportunityoOmmmanageity postRequestWithFunctionPath:api_bind_phone params:params successBlock:successBlock errorBlock:errorBlock];
@@ -848,10 +848,10 @@ Those fishing lur
 **/
     NSDictionary * _commDic =
     @{
-        @"packageName"      :     [FoeniveNow getBundleIdentifier],
-        @"adId"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
-        @"idfa"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
-        @"uuid"             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
+        heavyan_multatosity      :     [FoeniveNow getBundleIdentifier],
+        synhood_commercialability             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
+        alg_desism             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
+        pavose_plos             :     [[FoeniveNow getGamaUUID]     lowercaseString]? : @"",
 //得到的。
 //
 //
@@ -863,13 +863,13 @@ Those fishing lur
 //寻找心中那颗闪耀的明星，因为只有你自己才能够让美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。
 //
 //I miss yo
-        @"versionName"      :     [FoeniveNow getBundleShortVersionString]? : @"",
-        @"versionCode"      :     [FoeniveNow getBundleVersion]? : @"",
-        @"systemVersion"    :     [FoeniveNow getSystemVersion]? : @"",
-        @"deviceType"       :     [FoeniveNow getDeviceType]? : @"",
-        @"os"               :     @"ios",
-        @"gameLanguage"     :     GAME_LANGUAGE? : @"",
-        @"osLanguage"       :     [FoeniveNow getPreferredLanguage]? : @"",
+        matterair_aesthet      :     [FoeniveNow getBundleShortVersionString]? : @"",
+        countryfication_believeit      :     [FoeniveNow getBundleVersion]? : @"",
+        rhachitor_thankile    :     [FoeniveNow getSystemVersion]? : @"",
+        difold_sellation       :     [FoeniveNow getDeviceType]? : @"",
+        linid_bank               :     phasiath_loqustationmost,
+        fillary_nominiery     :     GAME_LANGUAGE? : @"",
+        method_pastaire       :     [FoeniveNow getPreferredLanguage]? : @"",
 
 /**
   
@@ -880,8 +880,8 @@ I will find you waiting for me outside the office and have dinner together.
 
 I miss you. I miss our late night walks and how 
 **/
-        @"uniqueId"         :     [[FoeniveNow getGamaUUID] lowercaseString]? : @"",
-        @"platform"       :   @"ios",
+        with_sexagesimive         :     [[FoeniveNow getGamaUUID] lowercaseString]? : @"",
+        hyal_describe       :   phasiath_loqustationmost,
 
 /**
   help you anticipate and dodge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
@@ -911,9 +911,9 @@ But it's you, your
         AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
         SpendSubative *gameUserModel = SDK_DATA.gameUserModel;
         NSDictionary *dic = @{
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId ? : @"",
-            @"loginAccessToken"  :accountModel.token ? : @"",
+            culturalfold_positiveit         :GAME_CODE,
+            southan_megalike           :accountModel.userId ? : @"",
+            certainel_streptosity  :accountModel.token ? : @"",
 //ted for you. I'd rather die than stay away from you.
 //你不知道，等了你有多久。所以，宁可死别，绝不生离。
 //I like the night. Without the dark, we'd never see the stars.
@@ -923,16 +923,16 @@ But it's you, your
 //I always have and always will.
 //一直爱，永远爱。
 //But it's you, your scent, it's like a drug to me. You're like
-            @"loginTimestamp"   :accountModel.timestamp ? : @"",
+            gnor_hepar   :accountModel.timestamp ? : @"",
 
 /**
   ve I found you?
 我找到你了吗
 Flight 
 **/
-            @"serverCode"           :gameUserModel.serverCode ? : @"",
-            @"serverName"           :gameUserModel.serverName ? : @"",
-            @"roleId"           :gameUserModel.roleID ? : @"",
+            eveningarian_pygaceous           :gameUserModel.serverCode ? : @"",
+            altous_cribrsion           :gameUserModel.serverName ? : @"",
+            ceiv_thereian           :gameUserModel.roleID ? : @"",
 //that your ultimate goal is attainable as long as you commit yourself to it.
 //
 //
@@ -942,9 +942,9 @@ Flight
 //
 //
 //Though barriers may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch 
-            @"roleName"           :gameUserModel.roleName ? : @"",
-            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
-            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
+            paternite_malelike           :gameUserModel.roleName ? : @"",
+            zelture_noct           :gameUserModel.roleLevel ? : @"",
+            pecc_footation           :gameUserModel.roleVipLevel ? : @"",
         };
         [wDic addEntriesFromDictionary:dic];
 //午餐时冥想，你一定会拒绝别人提出的午餐会议。
@@ -1066,13 +1066,13 @@ Bella, the only reason I left was because I thought I was protecting you.
 I don’t h 
 **/
         dic = @{
-            @"signature"        :md5SignStr,
-            @"timestamp"        :timeStamp,
+            gasice_body        :md5SignStr,
+            tertiite_subjectern        :timeStamp,
 
 /**
   d be too vague. But a cue-based plan like "I'll meditate at the office on weekdays during my lunch break" would fi 
 **/
-            @"gameCode"         :GAME_CODE,
+            culturalfold_positiveit         :GAME_CODE,
 
 /**
   at the office on weekdays during my lunch break" would fit the bill.
@@ -1083,11 +1083,11 @@ I don’t h
 
 Plotting when and where you'll execute on your New Year's resolution jogs your memory when it's opportune and generates guilt if you flake out. Detailed planning can also help you anti 
 **/
-            @"loginId"          :userName,
-            @"password"         :[FoeniveNow getMD5StrFromString:password],
-            @"phoneAreaCode"    :phoneAreaCode,
-            @"phone"            :phoneN,
-            @"vfCode"           :vfCode,
+            nonagenmonth_sexage          :userName,
+            vocast_sortetic         :[FoeniveNow getMD5StrFromString:password],
+            securityee_flig    :phoneAreaCode,
+            with_septenive            :phoneN,
+            approachitude_calolefthood           :vfCode,
 //找你
 //Have I found you?
 //我找到你了吗
@@ -1105,7 +1105,7 @@ Plotting when and where you'll execute on your New Year's resolution jogs your m
 //咒骂着我那因发炎而没有知觉的舌头
 //Watching the warm poison rats
 //看着刚被毒死
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            newtion_blenncareeritious   :LOGIN_TYPE_SELF,
 
 /**
   our mood swings are kind of giving me a whiplash.
@@ -1250,7 +1250,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 //
 //我的心很疼，我很想念你。
 //Catch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still sparkle before you. Always believe that your ultimate goal is attainable as lon
-            @"signature"        :md5SignStr,
+            gasice_body        :md5SignStr,
 
 /**
   察把集市关起时
@@ -1277,7 +1277,7 @@ Nursing my sore blunt tongue
 Watching the warm poison rats
 看着刚被毒死的 
 **/
-            @"timestamp"        :timeStamp,
+            tertiite_subjectern        :timeStamp,
 
 /**
   o have a long and happy life with me?
@@ -1285,12 +1285,12 @@ Watching the warm poison rats
 Only for making me want to you badly. I still don't know if I can control myself.
 就是因为发觉自己多么渴望想得到你，我到现在还不 
 **/
-            @"gameCode"         :GAME_CODE,
-            @"name"             :userName,
-            @"loginId"          :userName,
-            @"oldPwd"           :[[FoeniveNow getMD5StrFromString:oldPassword] lowercaseString],
-            @"newPwd"           :[[FoeniveNow getMD5StrFromString:newPassword] lowercaseString],
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            culturalfold_positiveit         :GAME_CODE,
+            tonfication_acceptant             :userName,
+            nonagenmonth_sexage          :userName,
+            outice_hundred           :[[FoeniveNow getMD5StrFromString:oldPassword] lowercaseString],
+            cept_bola           :[[FoeniveNow getMD5StrFromString:newPassword] lowercaseString],
+            newtion_blenncareeritious   :LOGIN_TYPE_SELF,
 //日冥想”这样的计划就太模糊了。但是，“我将在工作日的午休时间在办公室冥想”这样有信息提示的计划就很合适。
 //
 //
@@ -1403,7 +1403,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"signature"        :md5SignStr,
+            gasice_body        :md5SignStr,
 
 /**
   体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知道如何作出反应。
@@ -1416,8 +1416,8 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 
 A well-known speaker started off his seminar by holding up a $20 bill. In the room of 200, he asked, “Who would like thi 
 **/
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
+            tertiite_subjectern        :timeStamp,
+            culturalfold_positiveit         :GAME_CODE,
 
 /**
   有知觉的舌头
@@ -1429,7 +1429,7 @@ Pissing on magazine photos
 亲着杂志上的照片
 Those fishing lures t 
 **/
-            @"name"             :userName,
+            tonfication_acceptant             :userName,
 // at your face and the way the cold breeze of the morning surprises us.
 //
 //我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
@@ -1439,12 +1439,12 @@ Those fishing lures t
 //我想念早上的吻，早上依偎着你和我分享。
 //
 //I miss you. I miss going to work
-            @"phoneAreaCode"    :phoneAreaCode,
-            @"phone"            :phoneN,
-            @"vfCode"           :vfCode,
-            @"verifyCode"       :vfCode,
-            @"email"            :email,
-            @"interfaces"       :interfaces,
+            securityee_flig    :phoneAreaCode,
+            with_septenive            :phoneN,
+            approachitude_calolefthood           :vfCode,
+            onto_discoverency       :vfCode,
+            tudinitudewhenaceous_nonagesimmycy            :email,
+            shootic_rosuous       :interfaces,
         };
 
 /**
@@ -1582,28 +1582,28 @@ But it's you, your scent, it's like a drug to me. You're like my own pe
    up a $20 bill. In the room of 200, he asked, 
 **/
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
+            gasice_body        :[md5SignStr lowercaseString],
+            tertiite_subjectern        :timeStamp,
 
 /**
   ”。
 
 "The best sleep tip you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. "Whether it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five mi 
 **/
-            @"gameCode"         :GAME_CODE,
-            @"name"             :userName,
+            culturalfold_positiveit         :GAME_CODE,
+            tonfication_acceptant             :userName,
 //ng the warm poison rats
 //看着刚被毒死的老鼠
 //Curl through the wide fence cracks
 //卷曲的毛穿过白色围篱的大裂缝
 //Pissing on magaz
-            @"loginId"          :userName,
+            nonagenmonth_sexage          :userName,
 
 /**
   .Get a little help from  
 **/
-            @"password"         :[[FoeniveNow getMD5StrFromString:password] lowercaseString],
-            @"thirdPlatId"      :thirdId,
+            vocast_sortetic         :[[FoeniveNow getMD5StrFromString:password] lowercaseString],
+            cochlaire_treeeer      :thirdId,
 
 /**
   e help from your friends
@@ -1614,9 +1614,9 @@ But it's you, your scent, it's like a drug to me. You're like my own pe
 
 Spending time around high achievers can boost your own performance. If your New Year's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by 
 **/
-            @"thirdLoginId"     :thirdId,
-            @"registPlatform"   :thirdPlate,
-            @"loginMode"        :thirdPlate,
+            mechanoice_pacern     :thirdId,
+            newtion_blenncareeritious   :thirdPlate,
+            jejuness_movemost        :thirdPlate,
 
 /**
   azine photos
@@ -1639,17 +1639,17 @@ Big pill, stuck going down
 
 Just as cues tell Broadway stars when to step onto the stage, research has sh 
 **/
-            @"interfaces"       :@"2",
-            @"phoneAreaCode"    :phoneAreaCode,
+            shootic_rosuous       :minimel_sect,
+            securityee_flig    :phoneAreaCode,
 
 /**
   omeone, even can keep up with the unavoi 
 **/
-            @"phone"            :phoneN,
+            with_septenive            :phoneN,
 //ehavior.
 //
 //花时间和高成就者在一起可以提高你自己的表现。如果你的新年愿望是跑一场马拉松或写一本书，那么明智的做法是开始与那些已经实现这一目标、可以告诉你如何做到的朋友们在一起。
-            @"vfCode"           :vfCode,
+            approachitude_calolefthood           :vfCode,
         };
         [params addEntriesFromDictionary:dic];
 
@@ -1723,8 +1723,8 @@ M
     @try {
 //earned a very valuable lesson. No matter what
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
+            gasice_body        :[md5SignStr lowercaseString],
+            tertiite_subjectern        :timeStamp,
 
 /**
    to be erratic due to work or travel, Grandner added.
@@ -1737,24 +1737,24 @@ M
 
 3. Cha 
 **/
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountMode.userId,
+            culturalfold_positiveit         :GAME_CODE,
+            southan_megalike           :accountMode.userId,
 
 /**
   he library.
 
 想要把追求一个辛苦的目标变得更有趣，方法就是把它与有罪恶感的快乐结合起来。如果只允许自己在健身房看最喜欢的电视节 
 **/
-            @"loginAccessToken"  :accountMode.token,
-            @"loginTimestamp"   :accountMode.timestamp,
-            @"thirdPlatId"      :accountMode.thirdId,
-            @"thirdLoginId"     :accountMode.thirdId,
-            @"registPlatform"   :accountMode.loginType,
-            @"loginMode"        :accountMode.loginType,
-            @"interfaces"       :@"2",
-            @"phoneAreaCode"    :@"",
-            @"phone"            :@"",
-            @"vfCode"           :@"",
+            certainel_streptosity  :accountMode.token,
+            gnor_hepar   :accountMode.timestamp,
+            cochlaire_treeeer      :accountMode.thirdId,
+            mechanoice_pacern     :accountMode.thirdId,
+            newtion_blenncareeritious   :accountMode.loginType,
+            jejuness_movemost        :accountMode.loginType,
+            shootic_rosuous       :minimel_sect,
+            securityee_flig    :@"",
+            with_septenive            :@"",
+            approachitude_calolefthood           :@"",
 
 /**
   e body doesn't know how to respond.
@@ -1869,7 +1869,7 @@ Why is that so important? Because lying in bed awake can form an association in 
 格兰德纳说：“你可以给出的最好的睡眠建 
 **/
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
+            gasice_body        :[md5SignStr lowercaseString],
 //an make a bet with a friend that you'll stick to your New Year's resolution. The logic for why this works is simple. Incentives change our decisions, and penalties are even more motivating than rewards.
 //
 //而比羞愧感更有效的是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而惩罚甚至比奖励让我们更有动力。
@@ -1881,10 +1881,10 @@ Why is that so important? Because lying in bed awake can form an association in 
 //
 //
 //Mo
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId,
-            @"loginAccessToken"  :accountModel.token ? : @"",
+            tertiite_subjectern        :timeStamp,
+            culturalfold_positiveit         :GAME_CODE,
+            southan_megalike           :accountModel.userId,
+            certainel_streptosity  :accountModel.token ? : @"",
 //d it will lead you to your destiny’s path. Follow that pathway and uncover the sweet sunrises that await you.
 //
 //
@@ -1894,11 +1894,11 @@ Why is that so important? Because lying in bed awake can form an association in 
 //
 //
 //Take pride in your accomplishments, as they are stepping stones to your dreams. Under
-            @"loginTimestamp"   :accountModel.timestamp ? : @"",
-            @"thirdPlatId"      :accountModel.thirdId ? : @"",
-            @"thirdLoginId"     :accountModel.thirdId ? : @"",
+            gnor_hepar   :accountModel.timestamp ? : @"",
+            cochlaire_treeeer      :accountModel.thirdId ? : @"",
+            mechanoice_pacern     :accountModel.thirdId ? : @"",
 //ght to how I wo
-            @"registPlatform"   :accountModel.loginType ? : @"",
+            newtion_blenncareeritious   :accountModel.loginType ? : @"",
 //想念我们在一起。
 //
 //My heart aches and I miss you so bad.
@@ -1909,19 +1909,19 @@ Why is that so important? Because lying in bed awake can form an association in 
 //
 //
 //追随能够
-            @"loginMode"        :accountModel.loginType ? : @"",
+            jejuness_movemost        :accountModel.loginType ? : @"",
 
 /**
   mnia, Grandner explained. Instead of being  
 **/
-            @"payType"          :@"apple",
-            @"mode"             :@"apple",
-            @"productId"           :productId,
+            monysomethingth_wear          :rid_butite,
+            canarium_actuallyetic             :rid_butite,
+            dosier_considerid           :productId,
 
 /**
   t coaching friends with shared goals can improve your success rate, too. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidence.  
 **/
-            @"extra"           :extra ? : @"",
+            mentious_clearhood           :extra ? : @"",
 
 /**
   心态
@@ -1932,10 +1932,10 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
 
 That thinking needs t 
 **/
-            @"cpOrderId"         :cpOrderId,
-            @"serverCode"           :gameUserModel.serverCode,
-            @"serverName"           :gameUserModel.serverName ? : @"",
-            @"roleId"           :gameUserModel.roleID,
+            religiousaceous_luden         :cpOrderId,
+            eveningarian_pygaceous           :gameUserModel.serverCode,
+            altous_cribrsion           :gameUserModel.serverName ? : @"",
+            ceiv_thereian           :gameUserModel.roleID,
 
 /**
   sed the fair
@@ -1963,14 +1963,14 @@ Nursing my sore blunt tongue
 Watching the warm poison rats
 看着刚 
 **/
-            @"roleName"           :gameUserModel.roleName ? : @"",
+            paternite_malelike           :gameUserModel.roleName ? : @"",
 //ate during lunch, you'll be sure to decline a proffered lunch meeting.
 //
 //提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻碍——如果你计划在午餐时冥想，你一定会拒绝别人提出的午餐会议。
 //
 //2.Consider a penalty cl
-            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
-            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
+            zelture_noct           :gameUserModel.roleLevel ? : @"",
+            pecc_footation           :gameUserModel.roleVipLevel ? : @"",
         };
         [params addEntriesFromDictionary:dic];
     } @catch (NSException *exception) {
@@ -2041,8 +2041,8 @@ Even if from another world, still love you till the end of time.
     NSString * md5SignStr=[FoeniveNow getMD5StrFromString:md5str];
     @try {
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
+            gasice_body        :[md5SignStr lowercaseString],
+            tertiite_subjectern        :timeStamp,
 
 /**
   d to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the hands were up in the air.
@@ -2055,7 +2055,7 @@ Even if from another world, still love you till the end of time.
 
 “Well，” he replied, “what if I  
 **/
-            @"gameCode"         :GAME_CODE,
+            culturalfold_positiveit         :GAME_CODE,
 
 /**
   . We feel as though we are worthless；but no matter what happened or what will happen, you will never lose your value."
@@ -2064,9 +2064,9 @@ Even if from another world, still love you till the end of time.
 
 “在生活中， 
 **/
-            @"userId"           :accountModel.userId,
-            @"orderId"           :orderId,
-            @"transactionId"      :transactionId,
+            southan_megalike           :accountModel.userId,
+            glanslocal_indiivity           :orderId,
+            hortat_pugnous      :transactionId,
 //our early-to-bed plans went out the window because "what the hell," you'd already failed.
 //
 //如果你完全违背了自己的新年计划，你可能本能地认输并放弃。研究人员称之为“去他的效应”。就比如这样：你计划每晚早睡，但忍不住在某个星期五熬夜多看一集《继承之战》，此后你的早睡计划泡汤了，因为“去他的”反正你已经失败了。
@@ -2074,12 +2074,12 @@ Even if from another world, still love you till the end of time.
 //
 //
 //Happily, there is a way to dodge this 
-            @"receiptData"        :receiptData,
+            clivast_itudinhood        :receiptData,
 //e view sleeping as the final thing they have to do in a jam-packed day, worth delaying to c
-            @"loginAccessToken"  :accountModel.token,
-            @"loginTimestamp"   :accountModel.timestamp,
-            @"payType"          :@"apple",
-            @"mode"             :@"apple",
+            certainel_streptosity  :accountModel.token,
+            gnor_hepar   :accountModel.timestamp,
+            monysomethingth_wear          :rid_butite,
+            canarium_actuallyetic             :rid_butite,
         };
         [params addEntriesFromDictionary:dic];
     } @catch (NSException *exception) {

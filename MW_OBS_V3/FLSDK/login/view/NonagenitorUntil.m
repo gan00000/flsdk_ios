@@ -58,7 +58,7 @@ One way to make pursuing a goal that normally feels like a chore more fun is to 
 {
     self = [super init];
     if (self) {
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(cauditious_assumester) hander:^(NSInteger) {
             [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
 
 /**
@@ -172,7 +172,7 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
 /**
   her it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get s 
 **/
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire_change") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(ornitude_trogl) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
    in bed awake but not sleepin 
@@ -243,7 +243,7 @@ Stole me a dog-eared map
     switch (sender.tag) {
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
             [self changePassword];
         }
 
@@ -327,7 +327,7 @@ Those fishing lures th
 **/
 {
     if (!self.fromPageParam) {
-        [OdorSever toastMsg:GetString(@"text_select_account")];
+        [OdorSever toastMsg:GetString(admitan_gliacy)];
         return;
     }
     AccountModel * mAccountModel = (AccountModel *)self.fromPageParam;
@@ -360,7 +360,7 @@ I'd never given much thought to ho
 现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
 You don't know how lon 
 **/
-        [OdorSever toastMsg:GetString(@"py_password_empty")];
+        [OdorSever toastMsg:GetString(crassish_pelagify)];
 //er to help overcome your racing mind and allow you to fall
         return;
     }
@@ -371,7 +371,7 @@ You don't know how lon
         return;
     }
     if (![newPwd isEqualToString:againPwd]) {
-        [OdorSever toastMsg:GetString(@"text_pwd_not_equel")];
+        [OdorSever toastMsg:GetString(jejunoia_unguiition)];
         return;
 //s, not that I didn’t wanna be.
 //我只是说如果我们不是朋友会好很多，但是那不代表我不想和你交朋友。
@@ -402,7 +402,7 @@ You don't know how lon
 //One ea
     kWeakSelf
     [AperthandBalowise doChangePasswordWithUserName:userName andOldPassword:oldPwd andNewPassword:newPwd otherParamsDic:nil successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+        //[OdorSever toastMsg:GetString(grammivity_mult)];
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;

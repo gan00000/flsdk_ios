@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "SophoindividualitionBillain.h"
 
-#define SDK_LOG_EVENT_INSTALL  @"install"
+#define SDK_LOG_EVENT_INSTALL  similical_calorsive
 
 @interface VesicallyGreatless : NSObject
 //et yourself up for a productive tomorrow."

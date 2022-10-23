@@ -242,7 +242,7 @@ One easy way to do this is by telling
     switch (sender.tag) {
         case kRegisterAccountActTag:
         {
-            SDK_LOG(@"kRegisterAccountActTag");
+            SDK_LOG(wholike_ephness);
 //s. Or only letting yourself drink a mocha latte during study sessions so there is a hook to get y
             NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
             NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;

@@ -278,7 +278,7 @@ Nursing my sore blunt tongue
         make.height.mas_equalTo(VH(14));
         make.bottom.mas_equalTo(titleView);
     }];
-    UILabel *titleLabel = [BedeurFail initLabelWithText:@"text_phone_bind".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+    UILabel *titleLabel = [BedeurFail initLabelWithText:clearlyance_directorsive.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -382,7 +382,7 @@ As long as i live, my feeling for you will never fade.
 Now I'm afraid. I'm not af 
 **/
     }];
-    areaCodeLabel = [BedeurFail initLabelWithText:@"text_area_code".localx fontSize:FS(14) textColor:UIColor.blackColor];
+    areaCodeLabel = [BedeurFail initLabelWithText:paedo_owncy.localx fontSize:FS(14) textColor:UIColor.blackColor];
 //
 //
 //One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your favorite TV show at the gym so you'll start looking forward to workouts. Or only letting yourself drink
@@ -439,7 +439,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like
 格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十 
 **/
     }];
-    phoneNumFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"text_please_input_phone".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    phoneNumFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:horoity_astrster.localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
     phoneNumFiled.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
 //g needs to be changed, Grander said.
 //
@@ -510,7 +510,7 @@ Now I'm afr
         make.leading.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(15));
     }];
-    vfCodeFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:@"py_msg_vfcode_hint".localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    vfCodeFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:vapsive_querization.localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
 
 /**
   id, your sleep rhythms aren't predictable and the body doesn't know how to respond.
@@ -581,7 +581,7 @@ And called for you everywhere
 而我到处在找 
 **/
     }];
-    getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(action:) target:self];
+    getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(issuefier_tardon) fontSize:FS(14) textColor:[UIColor colorWithHexString:BaseColor] tag:kGetVfCodeActTag selector:@selector(action:) target:self];
     getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
     getVfCodeBtn.layer.borderWidth = 0.5;
     getVfCodeBtn.layer.cornerRadius = VH(20);
@@ -613,7 +613,7 @@ American mouth
 Big pill, stuck going down
 贴着的大海 
 **/
-    okBtn = [BedeurFail initBtnWithTitleText:@"py_confire".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(action:) target:self];
+    okBtn = [BedeurFail initBtnWithTitleText:colltion_mitrecognize.localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(action:) target:self];
 
 /**
   住何时行动。一定要详 
@@ -658,7 +658,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
 **/
         gl.frame = okBtn.bounds;
     }];
-    hasBindPhoneTips = [BedeurFail initLabelWithText:@"text_has_phone_bind_tips".localx fontSize:FS(12) textColor:ColorHex(@"#4B4B4B")];
+    hasBindPhoneTips = [BedeurFail initLabelWithText:wantoon_technern.localx fontSize:FS(12) textColor:ColorHex(@"#4B4B4B")];
     hasBindPhoneTips.numberOfLines = 0;
     [contentView addSubview:hasBindPhoneTips];
     [hasBindPhoneTips mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -748,12 +748,12 @@ Most adults need between seven and eight hours of sleep to be fully rested, acco
             NSString *tel = phoneNumFiled.inputTextField.text;
             NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;
             if ([CandifySiliattorney isEmpty:areaCode]) {
-                [OdorSever toastMsg: @"text_area_code_not_empty".localx];
+                [OdorSever toastMsg: torskin_alion.localx];
 //om your New Year's resolution, your instinct may be to declare yourself a failure and throw in the towel. Researchers call this the "what the hell effect." Here's what it looks like: You planned to get to bed early every night but couldn't resist staying up late one Friday to watch an extra episode of "Succ
                 return;
             }
             if ([CandifySiliattorney isEmpty:tel]) {
-                [OdorSever toastMsg: @"text_phone_not_empty".localx];
+                [OdorSever toastMsg: orbcultureule_trapez.localx];
 
 /**
   t, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
@@ -763,11 +763,11 @@ Most adults need between seven and eight hours of sleep to be fully rested, acco
                 return;
             }
             if (![OdorSever validPhone:tel phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
-                [OdorSever toastMsg: @"text_phone_not_match".localx];
+                [OdorSever toastMsg: secearlyator_orth.localx];
                 return;
             }
             [AperthandBalowise requestMobileVfCode:areaCode phoneNumber:tel email:@"" otherDic:nil successBlock:^(id responseData) {
-                [OdorSever toastMsg: @"text_vfcode_has_send".localx];
+                [OdorSever toastMsg: gelage_leaderize.localx];
                 [self startCountTimer];
             } errorBlock:^(CuscardOnomary *error) {
                 [self finishCountTimer];
@@ -819,7 +819,7 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
   atch the star that holds your destin 
 **/
             if ([CandifySiliattorney isEmpty:areaCode]) {
-                [OdorSever toastMsg: @"text_area_code_not_empty".localx];
+                [OdorSever toastMsg: torskin_alion.localx];
 
 /**
   's an important one, Grander added.
@@ -831,7 +831,7 @@ Most adults need between seven and eight hours of sleep to be fully rested, acco
                 return;
             }
             if ([CandifySiliattorney isEmpty:tel]) {
-                [OdorSever toastMsg: @"text_phone_not_empty".localx];
+                [OdorSever toastMsg: orbcultureule_trapez.localx];
 
 /**
   .
@@ -841,7 +841,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
                 return;
             }
             if (![OdorSever validPhone:tel phoneRegex:mPhoneInfoModel.selectedRegularExpression]) {
-                [OdorSever toastMsg: @"text_phone_not_match".localx];
+                [OdorSever toastMsg: secearlyator_orth.localx];
 
 /**
   的。
@@ -879,12 +879,12 @@ T
    thing they have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, office work or the lat 
 **/
             if ([CandifySiliattorney isEmpty:vfCode]) {
-                [OdorSever toastMsg: @"py_msg_vfcode_hint".localx];
+                [OdorSever toastMsg: vapsive_querization.localx];
                 return;
             }
 //umpled and dirty. “Now, who still wants it
             [AperthandBalowise bindAccountPhone:areaCode phoneNumber:tel vCode:vfCode otherDic:nil successBlock:^(id responseData) {
-                [OdorSever toastMsg: @"text_phone_bind_success".localx];
+                [OdorSever toastMsg: tagality_agreeory.localx];
 
 /**
   天要在早上7点起床，倒推8个小时睡眠时间应该是晚上11点。
@@ -948,7 +948,7 @@ Find the star that twinkles in your heart for you alone are ca
 
 "The best sleep tip you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Gr 
 **/
-    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(issuefier_tardon) forState:UIControlStateNormal];
 //n, you will never lose your value."
 //
 //

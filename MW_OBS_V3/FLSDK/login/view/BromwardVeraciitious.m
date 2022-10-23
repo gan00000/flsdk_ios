@@ -74,7 +74,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 **/
 - (NSString *)heessPhanics
 {
-    return [NSString stringWithFormat:@"%@%@", @"prec" , @"plebency"];
+    return [NSString stringWithFormat:@"%@%@", paginette_saveosity , felin_praereachform];
 
 /**
    me?
@@ -98,7 +98,7 @@ Plotting when and where you'll execute on your New Year's resolution jogs your m
 }
 - (NSString *)scriptacyPersicion:(CGFloat)Republican meiibility:(CGFloat)meiibility
 {
-    return [NSString stringWithFormat:@"%@%@", @"thero" , @"powerorium"];
+    return [NSString stringWithFormat:@"%@%@", lieette_acrieur , themselves_hedoast];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 
@@ -165,7 +165,7 @@ Wat
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     for (CCallBack  callback in self.drawBlockArray) {
-        callback(@"drawRect",0,nil);
+        callback(cenveryish_feelingie,0,nil);
     }
 }
 

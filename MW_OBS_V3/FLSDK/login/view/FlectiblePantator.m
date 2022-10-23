@@ -698,7 +698,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
  
 **/
     }];
-        NSString *xtext = GetString(@"gama_ui_term_port_read2");
+        NSString *xtext = GetString(taxmanine_requireo);
         UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
 
 /**
@@ -767,7 +767,7 @@ Still the hands went into the air.
 //
 //
 //If your New Year's resolution is to meditate five days each week, a plan like "I'll meditate on weekdays" would be too va
-            SDK_LOG(@"rememberTermsLableTapped");
+            SDK_LOG(expertic_according);
             if (self.delegate) {
 //这种想法必须改变。
 //
@@ -813,7 +813,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 
 “无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了什么，或者我们认识谁，生活的价 
 **/
-            SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
+            SDK_LOG(easyization_sylsufferule);
 
 /**
   sh line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their patterns of behavior.
@@ -848,7 +848,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 3.Mak 
 **/
         case appleLoginActTag:
-            SDK_LOG(@"appleLoginActTag");
+            SDK_LOG(plectatory_stratsive);
 //l of your street light eyes
 //你那直视前方的盲目双眼
 //Wide on my plastic toys
@@ -871,7 +871,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 **/
         case guestLoginActTag:
             {
-            SDK_LOG(@"guestLoginActTag");
+            SDK_LOG(lookator_enness);
 
 /**
    it boosts your self-confidence. It also forces you to be introspective about what works in ways you might not otherwise.
@@ -892,7 +892,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
 //
 //One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your favorite TV show at the gym so you'll 
         case fbLoginActTag:
-            SDK_LOG(@"fbLoginActTag");
+            SDK_LOG(ootonight_lucidlike);
 //outh
 //美国的河口
 //Big pill, stuck going down
@@ -906,7 +906,7 @@ I miss you. I miss going to work in the morning and knowing that at the end of t
             [AlthoughityThemselvesate fbLoginAndThirdRequest:self.delegate];
             break;
         case googleLoginActTag:
-            SDK_LOG(@"googleLoginActTag");
+            SDK_LOG(violenceative_recentling);
 
 /**
   道这是命运对你的挑战。不是每个人都会赞成你的选择，接受这个现实，并相信自我的判断，追随那颗在你心中闪烁的明星，它会引领你踏上命运的征途。坚持不懈，你就能享受那些幸福时刻。
@@ -921,7 +921,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
             [AlthoughityThemselvesate googleLoginAndThirdRequest:self.delegate];
             break;
         case lineLoginActTag:
-            SDK_LOG(@"lineLoginActTag");
+            SDK_LOG(viscible_ogel);
 
 /**
   you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. "Whether it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 minutes, get up and reset. Maybe you just need five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
@@ -1001,7 +1001,7 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    [OdorSever toastMsg:GetString(pluard_sortary)];
 
 /**
   法预测你的睡眠节奏，也就不知道如何作出反应。

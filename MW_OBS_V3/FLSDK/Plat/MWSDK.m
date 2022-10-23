@@ -1060,7 +1060,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 **/
 {
     if ([CandifySiliattorney isEmpty:areaCode]) {
-        [OdorSever toastMsg: @"text_area_code_not_empty".localx];
+        [OdorSever toastMsg: torskin_alion.localx];
         return;
     }
 
@@ -1078,7 +1078,7 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 A well-know 
 **/
     if ([CandifySiliattorney isEmpty:telephone]) {
-        [OdorSever toastMsg: @"text_phone_not_empty".localx];
+        [OdorSever toastMsg: orbcultureule_trapez.localx];
         return;
     }
 //1.Make a cue-based plan
@@ -1152,7 +1152,7 @@ A well-know
 Take pride in your accomplishments, as they are stepping stones to your dream 
 **/
     if ([CandifySiliattorney isEmpty:areaCode]) {
-        [OdorSever toastMsg: @"text_area_code_not_empty".localx];
+        [OdorSever toastMsg: torskin_alion.localx];
 
 /**
    power to help overcome your racing mind and allow you to fall asleep."
@@ -1168,7 +1168,7 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
         return;
     }
     if ([CandifySiliattorney isEmpty:telephone]) {
-        [OdorSever toastMsg: @"text_phone_not_empty".localx];
+        [OdorSever toastMsg: orbcultureule_trapez.localx];
 //to get you to the library.
 //
 //想要把追求一个辛苦的目标变得更有趣，方法就是把它与有罪恶感的快乐结合起来。如果只允许自己在健身房看最喜欢的电视节目，你就会开始期待锻炼了。或者只让自己在学习期间喝摩卡拿铁，这样就
@@ -1181,7 +1181,7 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
 //一直爱，永远爱。
 //But it'
     if ([CandifySiliattorney isEmpty:vfCode]) {
-        [OdorSever toastMsg: @"py_msg_vfcode_hint".localx];
+        [OdorSever toastMsg: vapsive_querization.localx];
         return;
     }
     [AperthandBalowise bindAccountPhone:areaCode phoneNumber:telephone vCode:vfCode otherDic:nil successBlock:^(id responseData) {
@@ -1423,7 +1423,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 “好，” 
 **/
 {
-    SDK_LOG(@"openCs..");
+    SDK_LOG(sebiier_political);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
@@ -1509,7 +1509,7 @@ I'
 //would be too vague. 
 }
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
-    SDK_LOG(@"addLocalNotificationWithTitle");
+    SDK_LOG(redry_andrwhyery);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
 

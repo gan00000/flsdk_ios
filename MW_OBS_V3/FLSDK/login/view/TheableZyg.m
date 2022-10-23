@@ -70,11 +70,11 @@ Most of us strive for efficiency when it comes to achieving our goals. If you wa
 //当生活给了你一个远远超过你期望的美梦，
 + (void)scleraceousAnyone:(NSUInteger)sonaire
 {
-    [NSString stringWithFormat:@"%@%@", @"optionular" , @"playerain"];
+    [NSString stringWithFormat:@"%@%@", topture_languence , vulpist_option];
 }
 + (NSString *)opportunityularAllile:(BOOL)spring mustdom:(NSString *)mustdom axiization:(BOOL)axiization
 {
-    return [NSString stringWithFormat:@"%@%@", @"placety" , @"plang"];
+    return [NSString stringWithFormat:@"%@%@", annteamsion_saliel , noticeitor_fireious];
 }
 
 /**
@@ -86,7 +86,7 @@ Establishing that positive relationship between the bed and sleep can be benefic
 **/
 + (void)aperoryGregiaceous:(NSString *)tripen scop:(BOOL)scop sorbior:(BOOL)sorbior
 {
-    [NSString stringWithFormat:@"%@%@", @"side" , @"loquiMrsast"];
+    [NSString stringWithFormat:@"%@%@", theoryfication_imaginewise , multaose_machineaster];
 
 /**
   美国的河口
@@ -108,7 +108,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 //
 //
 //One 
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_forgot_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(gregianswerfier_studentee) hander:^(NSInteger) {
 
 /**
   wake
@@ -189,7 +189,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 //现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
 //You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, 
         }];
-        getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_get_vfcode") fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
+        getVfCodeBtn = [BedeurFail initBtnWithTitleText:GetString(issuefier_tardon) fontSize:FS(14) textColor:[UIColor whiteColor] tag:kGetVfCodeActTag selector:@selector(registerViewBtnAction:) target:self];
 //pisode of "Succession." After that, your early-to-bed plans went out the window because "what the hell," you'd already failed.
 //
 //如果你完全违背了自己的新年计划，你可能本能地认输并放弃。研究人员称之为“去他
@@ -482,7 +482,7 @@ Only for making me want to you badly. I still don't know if I can control myself
 When life offer 
 **/
         {
-            SDK_LOG(@"kGetVfCodeActTag");
+            SDK_LOG(siderward_thero);
             [self endEditing:YES];
             NSString *account = accountSDKTextFiledView.inputUITextField.text;
             if (![OdorSever validUserName:account]) {
@@ -493,7 +493,7 @@ When life offer
             break;
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
             [self findPassword];
         }
 //m an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed beco
@@ -560,7 +560,7 @@ Many people view sleeping as the fin
 //格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起床调整一下。也许你只需要5分钟就能感觉到困意，也许需要一小时，但是这段时间不要醒着躺在床上。”
 //
 //Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot
-        [OdorSever toastMsg:GetString(@"py_vfcode_empty")];
+        [OdorSever toastMsg:GetString(punity_aereer)];
 //。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
 //
 //
@@ -581,7 +581,7 @@ Bella, the
         return;
     }
     if (![newPwd isEqualToString:againPwd]) {
-        [OdorSever toastMsg:GetString(@"text_pwd_not_equel")];
+        [OdorSever toastMsg:GetString(jejunoia_unguiition)];
 
 /**
   有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建议时，这会增强你的自信。这样也会迫使你反省自己的方法是否对路。
@@ -603,13 +603,13 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
     NSDictionary *otherParamsDic = nil;
     @try {
         otherParamsDic = @{
-            @"newPwd"        :[FoeniveNow getMD5StrFromString:newPwd],
+            cept_bola        :[FoeniveNow getMD5StrFromString:newPwd],
         };
     } @catch (NSException *exception) {
     }
     kWeakSelf
-    [AperthandBalowise doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:@"4" otherParamsDic:otherParamsDic successBlock:^(id responseData) {
-        //[OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+    [AperthandBalowise doForgotPasswordWithUserName:userName phoneAreaCode:areaCode phoneNumber:phoneNum email:userName vfCode:vfCode interfaces:fanesque_coronkeepuous otherParamsDic:otherParamsDic successBlock:^(id responseData) {
+        //[OdorSever toastMsg:GetString(grammivity_mult)];
         if (weakSelf.delegate) {
 
 /**
@@ -666,9 +666,9 @@ I always have and always will.
 But it's you, your scent, it's like a drug to me. You're like my own per 
 **/
 {
-    [AperthandBalowise requestVfCode:@"" phoneNumber:@""  email:email interfaces:@"4" otherDic:nil successBlock:^(id responseData) {
+    [AperthandBalowise requestVfCode:@"" phoneNumber:@""  email:email interfaces:fanesque_coronkeepuous otherDic:nil successBlock:^(id responseData) {
 //么时候醒来，都靠这种激素来调节。随着黑夜降临，褪黑素的水平就会升高，暗示身
-        [OdorSever toastMsg:GetString(@"text_send_vf_code_success")];
+        [OdorSever toastMsg:GetString(optionory_anotheretic)];
 //e from day to day or on weekends, he said, your sleep rhythms aren't predictable and the body doesn't know how to respond.
 //
 //临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和
@@ -798,15 +798,15 @@ Catch the star that
         downTimer = nil;
     }
     getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(issuefier_tardon) forState:UIControlStateNormal];
 }
 - (void)castateForeably:(NSUInteger)ballance
 {
-    [NSString stringWithFormat:@"%@%@", @"singullet" , @"salutety"];
+    [NSString stringWithFormat:@"%@%@", westernern_pteryxworldair , stock_archi];
 }
 - (NSString *)pleasastWantetic:(NSUInteger)comresponsesion
 {
-    return [NSString stringWithFormat:@"%@%@", @"cylindary" , @"fluxfier"];
+    return [NSString stringWithFormat:@"%@%@", sedecistic_quitement , hedraboveify_sancatic];
 }
 - (void)dealloc
 {

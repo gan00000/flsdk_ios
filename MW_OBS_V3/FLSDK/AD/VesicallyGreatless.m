@@ -87,17 +87,17 @@ When life offers you a dream so far
    shame, however, is putting cold hard cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a fri 
 **/
         comDic = @{
-            @"userId"      : userId,
-            @"time"        :[FoeniveNow getTimeStamp],
-            @"role_name"    :roleName,
-            @"role_id"      :roleId,
+            southan_megalike      : userId,
+            felicMrsior_sexivity        :[FoeniveNow getTimeStamp],
+            audacion_hourward    :roleName,
+            meriibility_legisistic      :roleId,
 
 /**
   e body that it's time for bed. Prod 
 **/
-            @"idfa"             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
-            @"uniqueId"         :     [[FoeniveNow getGamaUUID] lowercaseString]? : @"",
-            @"platform"      : @"ios",
+            alg_desism             :     [[FoeniveNow getIdfa]       lowercaseString]? : @"",
+            with_sexagesimive         :     [[FoeniveNow getGamaUUID] lowercaseString]? : @"",
+            hyal_describe      : phasiath_loqustationmost,
         };
     } @catch (NSException *exception) {
     }

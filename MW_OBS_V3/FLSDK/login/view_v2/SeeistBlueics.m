@@ -67,7 +67,7 @@ Why is that so important? Because lying in bed awake can form an association in 
 图片
 Bella, the only reason I left was because I thought I was protecting yo 
 **/
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_change_pwd") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(cauditious_assumester) hander:^(NSInteger) {
 
 /**
   photos
@@ -258,7 +258,7 @@ Strangely enough, there is evidence that coaching friends with shared go
 /**
    thing they have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, office work or the lat 
 **/
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire_change") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(ornitude_trogl) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(25)];
         okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
         [self addSubview:okBtn];
@@ -344,7 +344,7 @@ If your New Year's resolution is to me
     switch (sender.tag) {
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
 
 /**
   d or finely creased you are still priceless to those who love you. The worth of our lives comes, not in what we do or who we know, but by Who We Are.”
@@ -425,7 +425,7 @@ I cut my long baby hair
 我剪掉了我婴儿般的长发
 Stol 
 **/
-        [OdorSever toastMsg:GetString(@"text_select_account")];
+        [OdorSever toastMsg:GetString(admitan_gliacy)];
         return;
     }
     AccountModel * mAccountModel = (AccountModel *)self.fromPageParam;
@@ -467,7 +467,7 @@ One way to make pursuing a goal that normally feels lik
 
 如果你完全违背了自己的新年计划，你可能本能地认输并放弃。研究人员称之为“去他的效应” 
 **/
-        [OdorSever toastMsg:GetString(@"py_password_empty")];
+        [OdorSever toastMsg:GetString(crassish_pelagify)];
         return;
     }
 //ng for me outside the office and have dinner together.
@@ -490,7 +490,7 @@ One way to make pursuing a goal that normally feels lik
         return;
     }
     if (![newPwd isEqualToString:againPwd]) {
-        [OdorSever toastMsg:GetString(@"text_pwd_not_equel")];
+        [OdorSever toastMsg:GetString(jejunoia_unguiition)];
         return;
     }
     kWeakSelf
@@ -509,7 +509,7 @@ I love three thin
 
 美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠时间才能得到充分休息。因此如果一个人每天要在早上 
 **/
-        [OdorSever toastMsg:GetString(@"text_account_change_pwd_success")];
+        [OdorSever toastMsg:GetString(grammivity_mult)];
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;

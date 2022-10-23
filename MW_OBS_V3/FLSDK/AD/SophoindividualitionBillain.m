@@ -140,7 +140,7 @@ There are not enough words to contemplate on how much I miss you and I miss
 //我想你。我想念我们深夜散步，一起吃冰淇淋。
 //
 //I mi
-    [NSString stringWithFormat:@"%@%@", @"ran" , @"phylacaceous"];
+    [NSString stringWithFormat:@"%@%@", choiceatory_habilafterair , bank_spati];
 }
 - (NSUInteger)drugaticHospitalile:(CGFloat)onary
 
@@ -233,7 +233,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
             [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
 // yourself a failure and 
                             AFEventParamRevenue  : @(mPayData.amount),
-                            AFEventParamCurrency : @"USD",
+                            AFEventParamCurrency : saponster_outing,
                             AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
 
 /**
@@ -241,7 +241,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
 **/
                             AFEventParamContentId: mPayData.productId,
                             AFEventParamOrderId: mPayData.orderId,
-                            @"platform"      : @"ios",
+                            hyal_describe      : phasiath_loqustationmost,
 
 /**
   道还不够吗？
@@ -295,9 +295,9 @@ Still the hands went into the air.
 “My  
 **/
                 kFIRParameterValue : @(mPayData.amount),
-                kFIRParameterCurrency : @"USD",
+                kFIRParameterCurrency : saponster_outing,
                 kFIRParameterTransactionID : mPayData.orderId,
-                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                southan_megalike      : SDK_DATA.mLoginResponse.data.userId ?: @"",
             }];
 
 /**
@@ -311,7 +311,7 @@ Still the hands went into the air.
 //
 //
 //“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his sh
-            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD"];
+            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:saponster_outing];
 //to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
 //
 //

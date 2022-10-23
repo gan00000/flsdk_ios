@@ -346,7 +346,7 @@ Take pride in your accomplishments, as they
 /**
   red goals can improve your succes 
 **/
-    SDK_LOG(@"appleViewTapped");
+    SDK_LOG(widement_graphy);
     UIButton *xButton = [[UIButton alloc] init];
     xButton.tag = kBindAppleActTag;
     [self registerViewBtnAction:xButton];
@@ -363,7 +363,7 @@ Take pride in your accomplishments, as they
         switch (sender.tag) {
             case kBindAppleActTag:
             {
-                SDK_LOG(@"kBindAppleActTag");
+                SDK_LOG(lav_functose);
                 if (@available(iOS 13, *)) {
                   }else{
 
@@ -371,7 +371,7 @@ Take pride in your accomplishments, as they
   e lamb. What a stupid lamb. What a sick, masochistic lion.
 你不知道我等了你多久，就这样，狮子爱上 
 **/
-                     [LanguitudeQuasstenddom showAlertWithMessage:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+                     [LanguitudeQuasstenddom showAlertWithMessage:GetString(nugataster_otward)];
 //n what we do or who we know, but by Who We 
                       return;
 //work and determination.
@@ -394,7 +394,7 @@ Take pride in your accomplishments, as they
                 break;
 //u want to ace a class, you assume long, distraction-free study sessions are key. But research has shown that focusing on efficiency can leave you high and dry because you'll neglect an even more important
             case kBindFBActTag:
-                SDK_LOG(@"kBindFBActTag");
+                SDK_LOG(neite_wholehood);
 
 /**
   们后来发现你没有坚持下去，你会感到羞愧。
@@ -405,7 +405,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
 **/
             break;
             case kBindAccountActTag:
-                SDK_LOG(@"kBindGuestActTag");
+                SDK_LOG(operationism_labor);
             break;
             default:
 //you anymore.

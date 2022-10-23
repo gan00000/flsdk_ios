@@ -118,7 +118,7 @@ Catch the star that holds your destiny, the one that forever twinkles within you
 }
 - (NSString *)bulbmostFeliling:(NSUInteger)manth
 {
-    return [NSString stringWithFormat:@"%@%@", @"rarrealizeaneity" , @"anythingenne"];
+    return [NSString stringWithFormat:@"%@%@", creism_sancor , icosmatteroon_crepdeadory];
 }
 
 /**
@@ -149,7 +149,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 }
 - (void)moveingTremaier:(CGFloat)altercatchproof uberfic:(NSUInteger)uberfic pleling:(NSUInteger)pleling
 {
-    [NSString stringWithFormat:@"%@%@", @"gonier" , @"again"];
+    [NSString stringWithFormat:@"%@%@", multa_anythingitor , carboth_ability];
 //e乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这首收录在《暮光之城》中的惊艳单曲会带给你寂静深夜中属于你的美好爱情回忆录！
 //
 //《Flightless Bird, American Mouth》
@@ -180,7 +180,7 @@ I'd n
 }
 - (void)tapetsimpleStitu
 {
-    [NSString stringWithFormat:@"%@%@", @"rheaster" , @"deictad"];
+    [NSString stringWithFormat:@"%@%@", mnemonan_pan , whiteite_scal];
 
 /**
   ourself up for a productive tom 
@@ -201,7 +201,7 @@ It may sound like a small shift in thinking, but it's an important one, Grander 
     self = [super init];
     if (self) {
         accountSDKTextFiledView = [[ChoiceaireIrible alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
+        accountSDKTextFiledView.inputUITextField.placeholder = GetString(lacerform_plagous);
 
 /**
   
@@ -228,7 +228,7 @@ Catch the star that holds your destiny, the one that forever twinkles within you
 //It is well worth of falling love in someone, even can keep up with the unavoidable damage.
 //真正爱上一个人的时候，一切都
         passwordSDKTextFiledView = [[ChoiceaireIrible alloc] initViewWithType:(SDKTextFiledView_Type_Password)];
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
+        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(sacereur_noxile);
         [self addSubview:passwordSDKTextFiledView];
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -269,7 +269,7 @@ MV
 
 《Flightless Bird, American Mouth 》 -Iron & W 
 **/
-        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(@"py_findpwd") fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   -to-bed plans went out the window because "what the hell," you'd already failed.
@@ -384,7 +384,7 @@ I will find you waiting for me outside the office and have dinne
 
 “Many times in our lives, we are dropped, crumpled, and ground into the dirt by the decisions we make and the circumstances that come our way. We feel as though we are worthless；but no matter what happened or what will happen, you will never lose yo 
 **/
-        NSString *xtext = GetString(@"sdk_terms_title");
+        NSString *xtext = GetString(shareics_klepteye);
 
 /**
   d you?
@@ -423,7 +423,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 褪黑素是身体分泌的一种激素，你什么时候感到困，什么时候醒来，都 
 **/
         [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
-            SDK_LOG(@"rememberTermsLableTapped");
+            SDK_LOG(expertic_according);
             if (self.delegate) {
 
 /**
@@ -1042,7 +1042,7 @@ Still the hands went into the air.
     switch (sender.tag) {
         case kFindPwdActTag:
 // the ground and started to grind it into the floor with his shoe. He picked
-            SDK_LOG(@"kFindPwdActTag");
+            SDK_LOG(townoon_haust);
             if (self.delegate) {
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_FIND_PWD];
             }
@@ -1060,7 +1060,7 @@ Still the hands went into the air.
 //《Flightless Bird, American 
             break;
         case kBackBtnActTag:
-            SDK_LOG(@"kBackBtnActTag");
+            SDK_LOG(condistic_centralast);
             if (self.delegate) {
 // out the window because "what the hell," you'd already failed.
 //
@@ -1085,7 +1085,7 @@ I'd neve
 **/
             break;
         case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
+            SDK_LOG(choice_panular);
             if (![self checkAgreeTerm]) {
                 return;
             }
@@ -1318,7 +1318,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    [OdorSever toastMsg:GetString(pluard_sortary)];
 
 /**
   ve minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
@@ -1441,7 +1441,7 @@ If it's not fun to exercise or study, you're unlikely
 //I miss
     NSString *pwd = [OdorSever triString:passwordSDKTextFiledView.inputUITextField.text];
     if (!accountName || [accountName isEqualToString:@""]) {
-        [OdorSever toastMsg:GetString(@"py_account_empty")];
+        [OdorSever toastMsg:GetString(environmentful_responseably)];
         return;
     }
 
@@ -1452,11 +1452,11 @@ If it's not fun to exercise or study, you're unlikely
  
 **/
     if (![OdorSever validUserName:accountName]) {
-        [OdorSever toastMsg:GetString(@"text_account_format")];
+        [OdorSever toastMsg:GetString(orchity_oate)];
         return;
     }
     if (!pwd || [pwd isEqualToString:@""]) {
-        [OdorSever toastMsg:GetString(@"py_password_empty")];
+        [OdorSever toastMsg:GetString(crassish_pelagify)];
         return;
     }
     [AlthoughityThemselvesate selfLoginAndRequest:self.delegate account:accountName pwd:pwd];
@@ -1479,7 +1479,7 @@ If it's not fun to exercise or study, you're unlikely
 /**
   at coaching friends with shared goals c 
 **/
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(nutrifaction_mainibility);
     BOOL pwdEnable = YES;
     if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
 

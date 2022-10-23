@@ -166,13 +166,13 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 }
 - (void)cylindletChangedom:(NSUInteger)megaward corollminuteency:(NSString *)corollminuteency bolward:(NSString *)bolward hemess:(CGFloat)hemess onceair:(NSString *)onceair
 {
-    [NSString stringWithFormat:@"%@%@", @"opertaccept" , @"civilment"];
+    [NSString stringWithFormat:@"%@%@", away_pretiice , lessform_quadragesimarium];
 }
 - (instancetype)initView
 {
     self = [super init];
     if (self) {
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"text_welcome_back") hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(quality_testlike) hander:^(NSInteger) {
         }];
 
 /**
@@ -242,7 +242,7 @@ Only for making me want you so badly.
 //A steeper penalty than shame, however, is putting cold hard cash on the table, and there is exce
             make.height.mas_equalTo(VH(40));
         }];
-        accountLoginBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_go_game") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kGoGameActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [BedeurFail initBtnWithTitleText:GetString(menaciship_every) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kGoGameActTag selector:@selector(registerViewBtnAction:) target:self];
 //id lamb. What a sick, masochistic lion.
 //你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
 //图片
@@ -258,7 +258,7 @@ Only for making me want you so badly.
             make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(42));
             make.height.mas_equalTo(VH(50));
         }];
-        swithAccountBtn_2 = [BedeurFail initBtnWithTitleText:GetString(@"text_switch_account") fontSize:FS(15) textColor:[UIColor whiteColor] tag:kSwitchAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        swithAccountBtn_2 = [BedeurFail initBtnWithTitleText:GetString(seemity_sesstreatation) fontSize:FS(15) textColor:[UIColor whiteColor] tag:kSwitchAccountActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
    get you to the library.
@@ -318,7 +318,7 @@ He proceeded
 //I think I forgot to breathe.
 //我想可能是我忘了呼吸。
 //I'd never given much thought to how I would die. But dy
-        update_change_btn = [BedeurFail initBtnWithTitleText:GetString(@"text_update_account_bind") fontSize:FS(15) textColor:[UIColor whiteColor] tag:kBindAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        update_change_btn = [BedeurFail initBtnWithTitleText:GetString(chrysoical_movemost) fontSize:FS(15) textColor:[UIColor whiteColor] tag:kBindAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [update_change_btn.layer setCornerRadius:VH(20)];
 // it's opportune and generates guilt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
 //
@@ -369,7 +369,7 @@ I don't have the strength to stay away from you anymore.
 // a proffered lunch meeting.
 //
 //提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的
-        swithAccountBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_switch_account") fontSize:FS(15) textColor:[UIColor whiteColor] tag:kSwitchAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        swithAccountBtn = [BedeurFail initBtnWithTitleText:GetString(seemity_sesstreatation) fontSize:FS(15) textColor:[UIColor whiteColor] tag:kSwitchAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [swithAccountBtn.layer setCornerRadius:VH(20)];
         swithAccountBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 
@@ -831,7 +831,7 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
 As long as i live, my feeling for you will never fade.
 我对你的爱，至 
 **/
-    UILabel *deleteWarmLabel = [BedeurFail initLabelWithText:GetString(@"text_delete_account_tips") fontSize:FS(13) textColor:[UIColor whiteColor]];
+    UILabel *deleteWarmLabel = [BedeurFail initLabelWithText:GetString(poliseer_sureer) fontSize:FS(13) textColor:[UIColor whiteColor]];
     [deleteView addSubview:deleteWarmLabel];
 
 /**
@@ -847,7 +847,7 @@ As long as i live, my feeling for you will never fade.
 //Most adults need between seven and eight 
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
     }];
-    UIButton *cancelBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_cancel") fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *cancelBtn = [BedeurFail initBtnWithTitleText:GetString(alreadyan_relate) fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
     cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     [deleteView addSubview:cancelBtn];
@@ -887,7 +887,7 @@ There
 //
 //I miss the way the sun shines at your face and the way the cold breeze of the morning surprises u
     }];
-    UIButton *sureBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *sureBtn = [BedeurFail initBtnWithTitleText:GetString(miss_rarrealizeaneity) fontSize:FS(12) textColor:UIColor.whiteColor tag:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
 //nt, it's like a drug to me. You're like my own personal brand of heroin.
 //但是你，你的气味，对我来说就像是毒品一样。你是让我上瘾的海洛因。
 //As long as i live, my feeling for you will never 
@@ -1029,7 +1029,7 @@ Melatonin is a hormone produced by the body to regulate when
 “Well，” he replied, “what if I do this?” He dropped it on the ground and started to 
 **/
     }];
-    UILabel *delLabel = [BedeurFail initLabelWithText:GetString(@"text_delete_account") fontSize:FS(12) textColor:[UIColor blackColor]];
+    UILabel *delLabel = [BedeurFail initLabelWithText:GetString(tendty_joclet) fontSize:FS(12) textColor:[UIColor blackColor]];
 
 /**
   e goal is attainable as long as you commit yourself to it.
@@ -1086,13 +1086,13 @@ Though barriers may sometimes stand in the way of your dreams, remember that
 /**
   ut couldn't resist staying up late one Friday to w 
 **/
-    SDK_LOG(@"setViewStatue");
+    SDK_LOG(oscilltion_fructless);
     if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         swithAccountBtn_2.hidden = YES;
         swithAccountBtn.hidden = NO;
         update_change_btn.hidden = NO;
         update_change_btn.tag = kChangePwdActTag;
-        [update_change_btn setTitle:GetString(@"py_login_page_change_pwd") forState:(UIControlStateNormal)];
+        [update_change_btn setTitle:GetString(bintrueatic_imitor) forState:(UIControlStateNormal)];
     }else{
         if (currentAccountModel.isBind) {
 
@@ -1128,7 +1128,7 @@ One easy way to do this is by telling a few people about your goal so you'll fee
 
 Many people view sleeping as the f 
 **/
-            [update_change_btn setTitle:GetString(@"text_update_account_bind") forState:(UIControlStateNormal)];
+            [update_change_btn setTitle:GetString(chrysoical_movemost) forState:(UIControlStateNormal)];
         }
 
 /**
@@ -1185,7 +1185,7 @@ Still the hands went into the air.
 //
 //Just as cues tell Broadway stars when to step onto the stage, research has shown that adding a cue to your plan helps you remember w
 {
-    [NSString stringWithFormat:@"%@%@", @"listious" , @"peacekin"];
+    [NSString stringWithFormat:@"%@%@", enssure_building , paraire_activity];
 
 /**
   fun
@@ -1203,7 +1203,7 @@ Most of us strive for efficiency when it comes to achieving our goals. If you wa
 /**
   essions, research has found you'll persist  
 **/
-    return [NSString stringWithFormat:@"%@%@", @"megaior" , @"staffmost"];
+    return [NSString stringWithFormat:@"%@%@", hemerical_halit , gliaallenne_pickably];
 }
 - (void)registerViewBtnAction:(UIButton *)sender
 //eded to rise at 7 am each day, backtiming eight hours would require a bedtime of 11 pm.
@@ -1225,9 +1225,9 @@ Most of us strive for efficiency when it comes to achieving our goals. If you wa
 
 "The best sleep tip you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. "Wh 
 **/
-            SDK_LOG(@"kBindAccountActTag");
+            SDK_LOG(rasar_youics);
             if (!currentAccountModel) {
-                [OdorSever toastMsg:GetString(@"text_select_account")];
+                [OdorSever toastMsg:GetString(admitan_gliacy)];
                 return;
             }
 
@@ -1269,13 +1269,13 @@ I miss the way the sun shines at your face and the way the cold breeze of the mo
 I miss the morning kisses and the morning snuggling you and I sh 
 **/
         case kChangePwdActTag:
-            SDK_LOG(@"kChangePwdActTag");
+            SDK_LOG(collegey_closeistic);
             if (!currentAccountModel) {
 
 /**
   写一本书，那么明智的做法是开始与那些已经实现这一目标、可 
 **/
-                [OdorSever toastMsg:GetString(@"text_select_account")];
+                [OdorSever toastMsg:GetString(admitan_gliacy)];
                 return;
             }
             if (self.delegate) {
@@ -1284,7 +1284,7 @@ I miss the morning kisses and the morning snuggling you and I sh
             }
             break;
         case kGoGameActTag:
-            SDK_LOG(@"kGoGameActTag");
+            SDK_LOG(learn_sumpteur);
 
 /**
   ation in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peac 
@@ -1300,7 +1300,7 @@ I miss the morning kisses and the morning snuggling you and I sh
 
 Strangely enough, there is evidence that coaching friends with shared  
 **/
-            SDK_LOG(@"kSwitchAccountActTag");
+            SDK_LOG(message_metrice);
             if (self.delegate) {
                 [self.delegate goPageView:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from:(CURRENT_PAGE_TYPE_WELCOME_BACK) param:@(0)];
 
@@ -1328,14 +1328,14 @@ Diving too deep for coins
 **/
             break;
         case kSureDeleteAccountActTag:
-            SDK_LOG(@"kSureDeleteAccountActTag");
+            SDK_LOG(ocultrialless_lawyer);
             [self doDeleteAccount];
 // long as i live, my feeling for you will never fade.
 //我对你的爱，至死不渝。
 //Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you're going to disappea
             break;
         case kCancelDeleteAccountActTag:
-            SDK_LOG(@"kCancelDeleteAccountActTag");
+            SDK_LOG(vicesimserviceless_handee);
             [deleteAccountConfireView removeFromSuperview];
             break;
         default:
@@ -1345,7 +1345,7 @@ Diving too deep for coins
 -(void) goGame
 {
     if (!currentAccountModel) {
-        [OdorSever toastMsg:GetString(@"text_select_account")];
+        [OdorSever toastMsg:GetString(admitan_gliacy)];
         return;
     }
 

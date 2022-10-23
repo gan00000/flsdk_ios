@@ -32,9 +32,9 @@ Bella, the only reason I left was because I thought I was prot
   en seven and eight hours of sleep to be fully rested, according to the US Centers for Disease Control and Prevention. So if a person  
 **/
         {
-            self.layer.contents = (id)(GetImage(@"sdk_btn_fb_bg.png").CGImage);
+            self.layer.contents = (id)(GetImage(flavuous_typeence).CGImage);
         }else{
-             self.layer.contents = (id)(GetImage(@"sdk_btn_bg.png").CGImage);
+             self.layer.contents = (id)(GetImage(ligateur_firstization).CGImage);
         }
         self.layer.cornerRadius = kR2BtnCornerRadius;
 
@@ -61,14 +61,14 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 
 他开始把这张纸币揉皱，然后他问 
 **/
-        NSString *iconName = @"fl_logo.png";
+        NSString *iconName = scalenics_hendecstepless;
 // five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
 //
 //格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论
         NSString *titleName = @"會員帳號登入";
         switch (type) {
             case SDK_ICON_TITLE_BUTTON_TYPE_FB:
-                iconName = @"sdk_btn_icon_fb.png";
+                iconName = astroia_manthemible;
 //ime around high achievers can boost your own performance. If your New Year's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because y
                 titleName = @"Sign in with Facebook";
                 break;
@@ -88,7 +88,7 @@ Nobody's ever loved anybody as much as I love you.
 我对 
 **/
             case SDK_ICON_TITLE_BUTTON_TYPE_APPLE:
-                iconName = @"sdk_btn_icon_apple.png";
+                iconName = themot_flagrsive;
 
 /**
   and always will.
@@ -98,7 +98,7 @@ But it's you, your scent, it's like a drug to me. You're like my own personal br
                 titleName = @"Sign in with Apple";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_GEUST:
-                iconName = @"sdk_btn_icon_guest.png";
+                iconName = pelagpolicyon_enn;
                 titleName = @"遊客帳號登入";
 
 /**
@@ -119,7 +119,7 @@ As long as i live, my feeling for you will never fade.
 我对你的爱，至死不渝。
 Now I'm afraid. I'm not afraid of you… I'm only afraid of losin 
 **/
-                iconName = @"fl_logo.png";
+                iconName = scalenics_hendecstepless;
                 titleName = @"會員帳號登入";
 //劲踩踏。然后他拣起又脏又皱的纸币，“现在，还有人要它吗？”
 //
@@ -155,16 +155,16 @@ I cut my long baby hair
 我剪掉了我婴儿般的长发
 Stole me a dog-ear 
 **/
-                iconName = @"sdk_btn_icon_fb.png";
+                iconName = astroia_manthemible;
 //d you'll persist longer. And in the end, t
                 titleName = @"Facebook帳號綁定";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST:
-                iconName = @"sdk_btn_icon_guest.png";
+                iconName = pelagpolicyon_enn;
                 titleName = @"遊客帳號綁定";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE:
-                iconName = @"sdk_btn_icon_apple.png";
+                iconName = themot_flagrsive;
                 titleName = @"Apple帳號綁定";
 //r world, still love you till the end of time.
 //就算来自不同世界，依旧爱你到地老天荒。

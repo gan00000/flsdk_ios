@@ -225,7 +225,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
 //n't predictable and
         make.height.mas_equalTo(VH(36));
     }];
-    UILabel *titleLabel = [BedeurFail initLabelWithText:@"text_title_notice".localx fontSize:FS(16) textColor:[UIColor whiteColor]];
+    UILabel *titleLabel = [BedeurFail initLabelWithText:squam_pand.localx fontSize:FS(16) textColor:[UIColor whiteColor]];
 
 /**
   here are not enough words to contemplate on how much I miss you and I miss us being together physically.

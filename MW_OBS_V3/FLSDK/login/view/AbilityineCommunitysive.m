@@ -5,7 +5,7 @@
 #import "SdkHeader.h"
 #import "TypoeousHyperpmics.h"
 #import "LayfoldCheckth.h"
-#define SDK_PROVISIONS_FIRST_ENBLE @"sdk_provisions_first_enble"
+#define SDK_PROVISIONS_FIRST_ENBLE hor_leniform
 @interface AbilityineCommunitysive ()
 @property (copy,nonatomic) void (^completer)(void);
 @property (nonatomic, assign) CGFloat linOesophaghoodCriten;
@@ -123,7 +123,7 @@ Happily
 }
 - (NSString *)liberproofSpecificitious:(NSString *)solutward surdless:(NSUInteger)surdless cephalalwaysid:(NSUInteger)cephalalwaysid placeard:(NSUInteger)placeard
 {
-    return [NSString stringWithFormat:@"%@%@", @"chanceship" , @"radioer"];
+    return [NSString stringWithFormat:@"%@%@", termard_nugacel , archo_scanslike];
 
 /**
    important? Because lying in bed awake can form an association in your brain that can lead to chronic  
@@ -136,7 +136,7 @@ Happily
 
 临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间 
 **/
-    mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(@"sdk_terms_title") hander:^(NSInteger param) {
+    mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:GetString(shareics_klepteye) hander:^(NSInteger param) {
         if (self.fromPage == CURRENT_PAGE_TYPE_MAIN_HOME) {
             [self.delegate goBackBtn:self backCount:1 fromPage:(CURRENT_PAGE_TYPE_TEARMS) toPage:(CURRENT_PAGE_TYPE_MAIN_HOME)];
         }else if (self.fromPage == CURRENT_PAGE_TYPE_LOGIN_WITH_REG){

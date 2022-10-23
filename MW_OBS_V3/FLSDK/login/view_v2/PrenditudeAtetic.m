@@ -141,7 +141,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
             make.height.mas_equalTo(VH(14));
             make.bottom.mas_equalTo(titleView);
         }];
-        UILabel *titleLabel = [BedeurFail initLabelWithText:@"text_update_account".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+        UILabel *titleLabel = [BedeurFail initLabelWithText:parl_cutistic.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
         titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
 
 /**
@@ -377,7 +377,7 @@ Spending time around high achievers can boost your own performance. If your New 
                 make.height.mas_equalTo(accountSDKTextFiledView);
                 make.top.mas_equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             }];
-            UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(@"text_bind_account_tips") fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+            UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
             [contentView addSubview:bindTipLabel];
             bindTipLabel.numberOfLines = 0;
 
@@ -402,7 +402,7 @@ Spending time around high achievers can boost your own performance. If your New 
                 make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
             }];
         }
-        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(@"text_confire") fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(miss_rarrealizeaneity) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(20)];
         okBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
 //athway and uncover the sweet sunrises that await you.
@@ -494,7 +494,7 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
 Strangely enough, there is evidence that coaching friends with shared goals can improve your success rate, too. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidenc 
 **/
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(spendacity_suffer);
             if (accountSDKTextFiledView) {
 
 /**
@@ -602,7 +602,7 @@ And called for you everywhere
 Have I found you 
 **/
     [AperthandBalowise doAccountBindingWithUserName:account password:password phoneAreaCode:@"" phoneNumber:@"" vfCode:@"" email:account thirdId:currentAccountModel.thirdId thirdPlate:currentAccountModel.loginType otherParamsDic:nil successBlock:^(id responseData) {
-        [OdorSever toastMsg:GetString(@"text_account_bind_success2")];
+        [OdorSever toastMsg:GetString(calcameraress_fossseriousacy)];
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
         cc.data.password = password;
@@ -691,8 +691,8 @@ Just as cues tel
     }];
 }
 -(void)makeAccountFiledViewStatus:(AccountModel *)mAccountModel accountView:(ChoiceaireIrible *)accountFiledView pwdView:(ChoiceaireIrible *)pwdFiledView{
-    NSString *account = @"text_has_bind_tips_mw".localx;
-    NSString *account_tips = @"text_has_bind_tips_mw".localx;
+    NSString *account = emuleer_serious.localx;
+    NSString *account_tips = emuleer_serious.localx;
     NSString *iconName = mw_smail_icon2;
 
 /**
@@ -702,7 +702,7 @@ Just as cues tel
 
 寻找心中那颗闪耀的明星，因为只有你自己才能够让美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。 
 **/
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(nutrifaction_mainibility);
     BOOL pwdEnable = YES;
 // drug to me. You're like my own personal brand of heroin.
 //但是你，你的气味，对我来说就像是毒品一样。你是让我上瘾的海洛因。
@@ -717,7 +717,7 @@ Just as cues tel
 //ording to the US Centers for Disease Control and Prevention. So if a person needed to rise at 7 am each day, backtiming eight hours would require a bedtime of 11 pm.
 //
 //美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠时间才能得到充分休息。因此如果一个人每天要在早上7点起床，倒推8个小时睡眠时间应该是晚上11点
-        account_tips = @"text_has_bind_tips_mw".localx;
+        account_tips = emuleer_serious.localx;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
         iconName = fb_smail_icon;
         pwdEnable = NO;
@@ -727,7 +727,7 @@ Just as cues tel
 现在我害怕了，我不是害怕你……我只是害怕失去你，害怕你会突然消失……
 You don't know 
 **/
-        account_tips = @"text_has_bind_tips_fb".localx;
+        account_tips = juv_pavify.localx;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
 
 /**
@@ -747,7 +747,7 @@ You don't know
 /**
   w in the towel. Researchers call this the "what the hell effect." Here's what it looks like: You planned to get to bed early every night but couldn't resist staying up late one Friday to wat 
 **/
-        account_tips = @"text_has_bind_tips_google".localx;
+        account_tips = firmeous_frontally.localx;
 
 /**
   now how long I've waited for you. I'd rather die than stay away from you.
@@ -761,15 +761,15 @@ I always have and
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
         iconName = guest_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_guest".localx;
+        account_tips = hospitalatic_thesive.localx;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
         iconName = apple_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_apple".localx;
+        account_tips = supersome_safeior.localx;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = line_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_line".localx;
+        account_tips = votester_monthel.localx;
 
 /**
   amb. What a sick, masochistic lion.

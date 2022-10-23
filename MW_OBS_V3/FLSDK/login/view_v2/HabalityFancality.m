@@ -97,7 +97,7 @@ Your number was up the first time l met you.
 - (NSString *)supraitorFam:(NSUInteger)hydrosure fraternoon:(BOOL)fraternoon fichoweveruous:(BOOL)fichoweveruous tasko:(NSUInteger)tasko lookical:(CGFloat)lookical
 {
 //ard cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your New Year's resolution. The logic
-    return [NSString stringWithFormat:@"%@%@", @"tryar" , @"horoproof"];
+    return [NSString stringWithFormat:@"%@%@", energyile_factor , tree_noneer];
 }
 
 /**
@@ -206,7 +206,7 @@ This may sound sinister,
         }];
         UILabel *tipsUILabel = [[UILabel alloc] init];
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
-        tipsUILabel.text = @"text_reg_tips".localx;
+        tipsUILabel.text = catalineate_PMally.localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
         tipsUILabel.numberOfLines = 0;
         tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
@@ -225,7 +225,7 @@ This may sound sinister,
 //
 //"Now you know when you have to stop and get ready to go to bed whether you're done or not," Grander said. "The problem is we don't stop, and we don't disconnect. And t
         }];
-        regAccountBtn = [BedeurFail initBtnWithTitleText:@"text_confire_reg".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        regAccountBtn = [BedeurFail initBtnWithTitleText:strongry_bity.localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString:BaseColor];
         [self addSubview:regAccountBtn];
@@ -302,7 +302,7 @@ This may sound sinister, but ensuring you'll face some penalty if
 /**
   是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励 
 **/
-            SDK_LOG(@"kRegisterAccountActTag");
+            SDK_LOG(wholike_ephness);
             NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
 
 /**

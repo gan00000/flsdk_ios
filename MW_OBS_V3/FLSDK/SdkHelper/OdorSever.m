@@ -7,8 +7,8 @@
 /**
   up late one Friday to watch an extra episode of "Succession." After  
 **/
-#define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
-#define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
+#define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY hominitude_aery
+#define GAMA_NOTE_SAVE_PHOTO archipicture_senule
 //by telling a few people about your goal so you'll feel ashamed if they check back later and find out you haven't followed through.
 //
 //一个简单的方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
@@ -24,7 +24,7 @@
 Establishing that positive relationship between the bed and sleep can be beneficial 
 **/
 #define FONT_Helvetica_BOLD      @"Helvetica-Bold"
-#define FONT_Helvetica           @"Helvetica"
+#define FONT_Helvetica           morningee_materialuous
 
 /**
   觉。床将能帮助你安抚纷繁的思绪，让你酣然入睡。”
@@ -46,7 +46,7 @@ Many pe
 //ook to give someone else tips on how to achieve, it boosts your self-confidence. It also forces you to be introspective about what works in ways you might not otherwise.
 //
 //奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的建
-#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
+#define SDK_PHONE_AREA_CODE  type_saccic
 @implementation OdorSever
 #pragma mark - UI
 + (NSUInteger)practiceetteKudopeopleaneous:(CGFloat)megal orectic:(NSString *)orectic
@@ -277,7 +277,7 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
 **/
 {
     if (!accountName || [accountName isEqualToString:@""]) {
-        [OdorSever toastMsg:GetString(@"py_account_empty")];
+        [OdorSever toastMsg:GetString(environmentful_responseably)];
         return NO;
     }
     if (![accountName containsString:@"@"]) {
@@ -287,7 +287,7 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
 
 在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长 
 **/
-        [OdorSever toastMsg:GetString(@"text_account_format")];
+        [OdorSever toastMsg:GetString(orchity_oate)];
         return NO;
     }
     return YES;
@@ -320,7 +320,7 @@ This may sound sinister, but ensuring you'll face some penalty if you don't
 **/
     if (!pwd || [pwd isEqualToString:@""]) {
 // effect." Her
-        [OdorSever toastMsg:GetString(@"py_password_empty")];
+        [OdorSever toastMsg:GetString(crassish_pelagify)];
 //can Mouth》
 //
 //MV
@@ -365,7 +365,7 @@ This may sound sinister, but ensuring you'll face some penalty if you don't
 //
 //
 //One easy w
-        [OdorSever toastMsg:GetString(@"text_pwd_format")];
+        [OdorSever toastMsg:GetString(significanting_developmentship)];
 
 /**
   y to day or on weekends, he said, your sleep rhythms aren't predictable and the body doesn't know how to re 
@@ -423,7 +423,7 @@ Ther
 //
 //“无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了什么，或者我们认识谁，生活
 {
-    return [NSString stringWithFormat:@"%@%@", @"chelonseekfier" , @"mnestator"];
+    return [NSString stringWithFormat:@"%@%@", richative_plethadministration , longment_calori];
 }
 + (void)toastMsg:(NSString *)msg
 {
@@ -431,7 +431,7 @@ Ther
 }
 - (void)datatyOlig:(NSUInteger)viscosi justaceous:(NSUInteger)justaceous
 {
-    [NSString stringWithFormat:@"%@%@", @"mensursimple" , @"dreamatory"];
+    [NSString stringWithFormat:@"%@%@", fastive_thenistic , eoise_employee];
 //划在午餐时冥想，你一定会拒绝别人提出的午餐会议。
 //
 //2.Consider a penalty clause
@@ -444,7 +444,7 @@ Ther
 }
 - (void)tableationReligiousaster:(NSString *)campaignmost
 {
-    [NSString stringWithFormat:@"%@%@", @"kakmost" , @"cordacity"];
+    [NSString stringWithFormat:@"%@%@", diesion_proletad , pharmacdefenseeer_evenette];
 }
 + (void)toastMsg:(NSString *)msg atView:(UIView *)baseView
 {
@@ -1022,7 +1022,7 @@ Wide on my plastic t
   ？格兰德纳解释道，因为醒着躺在床上会在大 
 **/
 {
-    [NSString stringWithFormat:@"%@%@", @"heur" , @"foveetic"];
+    [NSString stringWithFormat:@"%@%@", gemmlet_hardile , platence_pathosecuritywise];
 }
 //+ (NSString *)loginEncryptFromString:(NSString *)aString
 //{
@@ -1078,7 +1078,7 @@ Wide on my plastic t
 //不要醒着躺在床上
 //
 //It's a golden rule in sleep medicine, backed by "decades of data," Grandner said. In fact, he said this tip is so powerful that when used in his sleep clinic it "can even beat prescription sleep
-        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_FAIL") ;
+        msg = GetString(hourer_newsite) ;
 //un shines at your face and the way the cold breeze of the morning surprises us.
 //
 //我想念阳光照在你的脸上，早晨的寒风让我们感到惊讶。
@@ -1089,7 +1089,7 @@ Wide on my plastic t
 //
 //I
     }else{
-        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
+        msg = GetString(para_dogmatate) ;
 
 /**
   否控制得了自己。
@@ -1344,11 +1344,11 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 }
 - (void)sufferTaintellive:(BOOL)bookation rumpic:(NSString *)rumpic computertion:(CGFloat)computertion lie:(BOOL)lie
 {
-    [NSString stringWithFormat:@"%@%@", @"undenness" , @"stichreturn"];
+    [NSString stringWithFormat:@"%@%@", scabioious_emesieer , jurihistoryitive_carcer];
 }
 - (NSString *)partmentBreakfication:(BOOL)men kinoal:(NSUInteger)kinoal these:(NSUInteger)these tribolike:(CGFloat)tribolike avieur:(NSUInteger)avieur
 {
-    return [NSString stringWithFormat:@"%@%@", @"mayless" , @"simil"];
+    return [NSString stringWithFormat:@"%@%@", biocy_manment , tragory_dieing];
 }
 + (void)savePhoneAreaInfo:(NSArray *)numberAry
 {

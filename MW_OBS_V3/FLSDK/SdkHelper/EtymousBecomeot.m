@@ -256,7 +256,7 @@ Catch the star that holds your destiny, the one that forever twinkles within you
     }
     NSArray *nsdataArray = [NSArray arrayWithArray: dataList];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:nsdataArray forKey:@"Key_AccountModelArray"];
+    [userDefaults setObject:nsdataArray forKey:sortify_creatine];
     [userDefaults synchronize];
 }
 
@@ -276,7 +276,7 @@ You don't know how long I've waited for you. And so the lion fell in love with t
 
 而比羞 
 **/
-    NSArray *array = [userDefaults objectForKey:@"Key_AccountModelArray"];
+    NSArray *array = [userDefaults objectForKey:sortify_creatine];
 
 /**
   了你？
@@ -313,7 +313,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
 -(void)saveLoginType:(NSString *)thirdPlate
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:thirdPlate forKey:@"SDK_LOGIN_TYPE"];
+    [userDefaults setObject:thirdPlate forKey:fici_theoage];
     [userDefaults synchronize];
 }
 -(NSString *) loginType
@@ -328,7 +328,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
 //
 //
 //Take pride in your accomplishments, as they are stepping stones to your dreams. Understand that you may make mistakes, but do
-    return [userDefaults stringForKey:@"SDK_LOGIN_TYPE"];
+    return [userDefaults stringForKey:fici_theoage];
 }
 //age you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determ
 @end

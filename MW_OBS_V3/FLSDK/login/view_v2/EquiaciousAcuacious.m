@@ -155,7 +155,7 @@ There
 If you deviate at all from your New Year's resolution, your instinct may be to declare yourself a failure and throw in the towel. Researchers call this th 
 **/
     }];
-    loginTabBtn = [BedeurFail initBtnWithTitleText:@"text_login".localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    loginTabBtn = [BedeurFail initBtnWithTitleText:anyone_untilive.localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
     [loginTabBtn setTitleColor:[UIColor colorWithHexString:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,7 +167,7 @@ If you deviate at all from your New Year's resolution, your instinct may be to d
         make.leading.mas_equalTo(tabView);
         make.centerX.mas_equalTo(self.mas_leading).mas_offset(VW(100+16));
     }];
-    regTabBtn = [BedeurFail initBtnWithTitleText:@"text_register".localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [BedeurFail initBtnWithTitleText:someoneature_aperlike.localx fontSize:FS(24) textColor:UIColor.whiteColor tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   alty clause
@@ -481,7 +481,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 {
     switch (sender.tag) {
         case kLoginTabActTag:
-            SDK_LOG(@"kLoginTabActTag");
+            SDK_LOG(glandbabyard_consumerality);
             if (currentClickTab == 1) {
 
 /**
@@ -500,7 +500,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
             }
             break;
         case kRegTabActTag:
-            SDK_LOG(@"kRegTabActTag");
+            SDK_LOG(trab_patho);
             if (currentClickTab == 2) {
                 return;
             }

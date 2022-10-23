@@ -211,18 +211,18 @@ Most of us strive for efficiency when it comes to achieving our goals. If you wa
 #define lineLoginActTag    2005
 #define TAG_CLOSE    90
 #pragma mark - login type登录方式
-#define LOGIN_TYPE_SELF           (@"mg")
-#define LOGIN_TYPE_GUEST            (@"visitor")
-#define LOGIN_TYPE_FB             (@"fb")
+#define LOGIN_TYPE_SELF           (needee_professorible)
+#define LOGIN_TYPE_GUEST            (sterelittledom_receive)
+#define LOGIN_TYPE_FB             (killorium_genarwillation)
 
 /**
    for making me want you so badly.
 只有你才能让我如此上瘾。
 I don't have the 
 **/
-#define LOGIN_TYPE_GOOGLE             (@"google")
-#define LOGIN_TYPE_TWITTER        (@"twitter")
-#define LOGIN_TYPE_APPLE          (@"apple")
+#define LOGIN_TYPE_GOOGLE             (polemency_gemm)
+#define LOGIN_TYPE_TWITTER        (mesterboxorium_weeklet)
+#define LOGIN_TYPE_APPLE          (rid_butite)
 
 /**
   正在落下
@@ -236,7 +236,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 
 If your New Year's resolution is to meditate five days each week, a plan li 
 **/
-#define LOGIN_TYPE_LINE          (@"line")
+#define LOGIN_TYPE_LINE          (nucate_fumory)
 #pragma mark - api请求接口
 //愧。
 //

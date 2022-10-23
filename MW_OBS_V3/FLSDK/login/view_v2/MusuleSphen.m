@@ -93,7 +93,7 @@ Is it not en
     return self;
 }
 - (void)showTermsViewForAccountLoginView {
-    SDK_LOG(@"rememberTermsLableTapped");
+    SDK_LOG(expertic_according);
     MeanerAnnoutsideful *aTermsViewV2 = [[MeanerAnnoutsideful alloc] initWithCompleter:^{
         
         /**
@@ -288,7 +288,7 @@ Stole me
 **/
         make.width.height.mas_equalTo(VW(30));
     }];
-    UIButton *guestTextBtn = [BedeurFail initBtnWithTitleText:@"guest_login_btn".localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *guestTextBtn = [BedeurFail initBtnWithTitleText:eveningatic_maciian.localx fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your favorite TV show at the gym so you'll start looking forward to workouts. Or only letting yourself drink a mocha latte during study sessions so there is a hook to get you to the library.
@@ -443,7 +443,7 @@ If it's n
 **/
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
     }];
-    UILabel *hasAccountLabel = [BedeurFail initLabelWithText:@"tips_have_account".localx fontSize:FS(12) textColor:[UIColor whiteColor]];
+    UILabel *hasAccountLabel = [BedeurFail initLabelWithText:startition_landot.localx fontSize:FS(12) textColor:[UIColor whiteColor]];
 
 /**
   xtra episode of "Succession." After that, your early-to-bed plans went out the window because "what the hell," you'd already failed.
@@ -458,7 +458,7 @@ Happily, there is a way to dodge this fate. By setting tough
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
     }];
-    UILabel *loginLabel = [BedeurFail initLabelWithText:@"text_login".localx fontSize:FS(12) textColor:[UIColor colorWithHexString:BaseColor]];
+    UILabel *loginLabel = [BedeurFail initLabelWithText:anyone_untilive.localx fontSize:FS(12) textColor:[UIColor colorWithHexString:BaseColor]];
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.bottom.top.mas_equalTo(hasAccountContent);
@@ -476,7 +476,7 @@ Happily, there is a way to dodge this fate. By setting tough
 Still 
 **/
     }];
-    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:@"text_login_other".localx fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:panator_dorm.localx fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -771,8 +771,8 @@ You don't know how long I've waited for you. And so the lion fell in love with t
         make.centerY.mas_equalTo(termAgreeView);
         make.width.height.mas_equalTo(VH(15));
     }];
-        NSString *xtext = GetString(@"text_ui_term_port_read2");
-    NSString *temptext = GetString(@"sdk_terms_title");
+        NSString *xtext = GetString(novsive_amph);
+    NSString *temptext = GetString(shareics_klepteye);
 //like a chore more fun is t
         UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
@@ -836,7 +836,7 @@ There are not enough words to contemplate on how much I m
 {
     switch (sender.tag) {
         case kAgreeTermsCheckBoxBtnTag:
-            SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
+            SDK_LOG(easyization_sylsufferule);
 //you enjoy the act of goal pursuit.
 //
 //在完成目标的过程中，大多数
@@ -878,7 +878,7 @@ I miss you. I miss you holding
             }
             break;
         case appleLoginActTag:
-            SDK_LOG(@"appleLoginActTag");
+            SDK_LOG(plectatory_stratsive);
             if (![self checkAgreeTerm]) {
                 return;
             }
@@ -892,7 +892,7 @@ I miss you. I miss you holding
             break;
         case guestLoginActTag:
             {
-            SDK_LOG(@"guestLoginActTag");
+            SDK_LOG(lookator_enness);
             if (![self checkAgreeTerm]) {
                 return;
             }
@@ -900,7 +900,7 @@ I miss you. I miss you holding
             }
             break;
         case fbLoginActTag:
-            SDK_LOG(@"fbLoginActTag");
+            SDK_LOG(ootonight_lucidlike);
             if (![self checkAgreeTerm]) {
                 return;
 //. It was still worth $20."
@@ -935,7 +935,7 @@ I miss you. I miss you holding
 //Spending time around hig
             break;
         case googleLoginActTag:
-            SDK_LOG(@"googleLoginActTag");
+            SDK_LOG(violenceative_recentling);
             if (![self checkAgreeTerm]) {
                 return;
             }
@@ -958,7 +958,7 @@ I miss you. I miss you holding
 **/
             break;
         case lineLoginActTag:
-            SDK_LOG(@"lineLoginActTag");
+            SDK_LOG(viscible_ogel);
 
 /**
   d called for you eve 
@@ -996,7 +996,7 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
 **/
         return YES;
     }
-    [OdorSever toastMsg:GetString(@"text_term_not_read")];
+    [OdorSever toastMsg:GetString(pluard_sortary)];
     
     [self showTermsViewForAccountLoginView];
     return NO;

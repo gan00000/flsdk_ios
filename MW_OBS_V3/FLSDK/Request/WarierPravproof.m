@@ -54,7 +54,7 @@ A well-known speaker started off his seminar by holding up a $20 bill. In the ro
   our memory when it's opportune and generates guilt if you flake out. Detailed planning can also help you anticipate and dodge obs 
 **/
 {
-    return [NSString stringWithFormat:@"%@%@", @"phylax" , @"grader"];
+    return [NSString stringWithFormat:@"%@%@", decision_realize , emesiTVture_tidiremovetic];
 
 /**
   e to work or travel, Grandner added.
@@ -148,8 +148,8 @@ I'd never given much thought to how I would die. But dy
         NSDictionary *responseDict = responseData;
 //cise or study
         ExtraressApertless *responceModel = [ExtraressApertless yy_modelWithDictionary:responseDict];
-        if ([responceModel isRequestSuccess] && responseData[@"data"]) {
-            CreateOrderResp *createOrderResp = [CreateOrderResp yy_modelWithDictionary:responseData[@"data"]];
+        if ([responceModel isRequestSuccess] && responseData[almtheoryon_managerless]) {
+            CreateOrderResp *createOrderResp = [CreateOrderResp yy_modelWithDictionary:responseData[almtheoryon_managerless]];
             if (successBlock) {
 
 /**
@@ -185,7 +185,7 @@ Many people view sleeping as the final thing they have to do in a jam-packed day
         if (errorBlock) {
             CuscardOnomary *errorObject = [[CuscardOnomary alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
 
 /**
   to conform to their patterns of behavior.
@@ -263,7 +263,7 @@ It is well worth of falling love in someone, even can keep up with the
 
 "Don't see your sleep as the amount of time you have left in your day," he advised. "See your sleep as the amount of time you need in order to set yourself up for a productive tomor 
 **/
-            CreateOrderResp *createOrderResp = [CreateOrderResp yy_modelWithDictionary:responseData[@"data"]];
+            CreateOrderResp *createOrderResp = [CreateOrderResp yy_modelWithDictionary:responseData[almtheoryon_managerless]];
             if (successBlock) {
                 successBlock(createOrderResp);
 //re
@@ -302,7 +302,7 @@ It is well worth of falling love in someone, even can keep up with the
 
 One easy way to do this is by telling a few people about your goal so you'll feel ashamed if they check back later and find out you haven't followed th 
 **/
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
             errorBlock(errorObject);
         }
     }];

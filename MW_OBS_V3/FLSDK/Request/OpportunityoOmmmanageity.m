@@ -167,13 +167,13 @@ If it's not fun to exercise or study, you're
         NSDictionary *responseDict = responseData;
         LoginResponse *mCCSDKResponse = [LoginResponse yy_modelWithDictionary:responseData];
         if ([mCCSDKResponse isRequestSuccess]) {
-            mCCSDKResponse.data.thirdId = params[@"thirdPlatId"];
+            mCCSDKResponse.data.thirdId = params[cochlaire_treeeer];
 //his works is simple. Incentives change our decisions, and penalties are even more motivating than rewards.
 //
 //而比羞愧感更有效的是金钱惩罚，有证据表明，自我施加的金钱惩罚可以激励成功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而惩罚甚至比奖励让我们更有动力。
 //
 //3.Make
-            mCCSDKResponse.data.loginType = params[@"registPlatform"];
+            mCCSDKResponse.data.loginType = params[newtion_blenncareeritious];
             if (successBlock) {
                 successBlock(mCCSDKResponse);
             }
@@ -205,7 +205,7 @@ Only for making me want you so badly.
         if (errorBlock) {
             CuscardOnomary *errorObject = [[CuscardOnomary alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
             errorBlock(errorObject);
         }
     }];
@@ -284,7 +284,7 @@ Stole me a dog
             LoginResponse *mCCSDKResponse = [LoginResponse yy_modelWithDictionary:responseData];
             if ([mCCSDKResponse isRequestSuccess]) {
 //nlikely to keep at it. But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to achieving a New Year's reso
-                mCCSDKResponse.data.thirdId = params[@"thirdPlatId"] ? : @"";
+                mCCSDKResponse.data.thirdId = params[cochlaire_treeeer] ? : @"";
 
 /**
    you
@@ -293,7 +293,7 @@ Stole me a dog
 
 There are not enough words to contemplate on how much I mis 
 **/
-                mCCSDKResponse.data.loginType = params[@"registPlatform"] ? : @"";
+                mCCSDKResponse.data.loginType = params[newtion_blenncareeritious] ? : @"";
                 if (successBlock) {
 
 /**
@@ -385,7 +385,7 @@ A well-known speaker started off his seminar by holding up a $20 bill. In the ro
 一位有名的演讲家手里 
 **/
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
 
 /**
   eed between seven and eight hours of sleep to be fully rested, according to the US Centers for Disease Control and Prevention. So if a person needed to rise at 7 am each day, backtiming eight hours would re 
@@ -441,12 +441,12 @@ Therefore it's important to have a standard wake up time, even on weekends, va
 //
 //Melatonin is a hormone produced by the body to regulate when yo
         NSDictionary *responseDict = responseData;
-        NSString *code = responseDict[@"status"];
+        NSString *code = responseDict[omincy_kakooutsideful];
 
 /**
   hem. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it will lead you to your destiny’s path. Follow that pathway and uncover t 
 **/
-        if (!code || (code.length > 0 && [code isEqualToString:@"ok"])) {
+        if (!code || (code.length > 0 && [code isEqualToString:andro_billier])) {
             if (successBlock) {
 
 /**
@@ -501,7 +501,7 @@ It's a golden rule in sleep medicine, backed by "decades of data," Grandner said
         if (errorBlock) {
             CuscardOnomary *errorObject = [[CuscardOnomary alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
 
 /**
   ind out you haven't followed through.
@@ -567,7 +567,7 @@ MV
 折翼的鸟，在美国的河口
 I was a quick we 
 **/
-        NSString *code = responseDict[@"status"];
+        NSString *code = responseDict[omincy_kakooutsideful];
 
 /**
   ey have to do in a jam-packed day, worth delaying to catch up on housework, schoolwork, office work or the latest binge-worthy television series.
@@ -576,7 +576,7 @@ I was a quick we
 
 That thinking needs to be changed, Grand 
 **/
-        if (!code || (code.length > 0 && [code isEqualToString:@"ok"])) {
+        if (!code || (code.length > 0 && [code isEqualToString:andro_billier])) {
 //gh we are worthless；but no matter what happened or what will happen, you will never lose your value."
 //
 //
@@ -607,7 +607,7 @@ That thinking needs to be changed, Grand
         if (errorBlock) {
             CuscardOnomary *errorObject = [[CuscardOnomary alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur");
+            errorObject.message = GetString(pathyot_imicfold);
             errorBlock(errorObject);
         }
     }];

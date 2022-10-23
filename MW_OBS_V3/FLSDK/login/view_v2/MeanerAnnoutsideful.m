@@ -20,7 +20,7 @@ To work properly, the re
 
 寻找心中那 
 **/
-#define SDK_PROVISIONS_FIRST_ENBLE @"sdk_provisions_first_enble"
+#define SDK_PROVISIONS_FIRST_ENBLE hor_leniform
 @interface MeanerAnnoutsideful ()
 @property (copy,nonatomic) void (^completer)(void);
 @end
@@ -171,7 +171,7 @@ You don't know how long I've waited for you. And so the lion fell in love with t
   ng stones to your dre 
 **/
     }];
-    UILabel *titleLabel = [BedeurFail initLabelWithText:@"sdk_terms_title".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+    UILabel *titleLabel = [BedeurFail initLabelWithText:shareics_klepteye.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
 //But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to achieving a New Year's resolution.
 //
@@ -208,7 +208,7 @@ A steeper penal
         make.top.mas_equalTo(titleView);
         make.bottom.mas_equalTo(titleView);
     }];
-    UIButton *closeBtn = [BedeurFail initBtnWithTitleText:@"text_close".localx fontSize:FS(15) textColor:[UIColor colorWithHexString:BaseColor] tag:TAG_CLOSE selector:@selector(action:) target:self];
+    UIButton *closeBtn = [BedeurFail initBtnWithTitleText:primi_heliooutth.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:BaseColor] tag:TAG_CLOSE selector:@selector(action:) target:self];
     closeBtn.layer.cornerRadius = VH(32) / 2;
     closeBtn.layer.borderColor = [UIColor colorWithHexString:BaseColor].CGColor;
     closeBtn.layer.borderWidth = 0.5;
@@ -243,7 +243,7 @@ Strangely enough, ther
 //eds to occur at regular times, said
         make.height.mas_equalTo(VH(32));
     }];
-    UIButton *okBtn = [BedeurFail initBtnWithTitleText:@"text_agree_read_tips".localx fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAgreeTermsCheckBoxBtnTag selector:@selector(action:) target:self];
+    UIButton *okBtn = [BedeurFail initBtnWithTitleText:trabship_chair.localx fontSize:FS(15) textColor:[UIColor whiteColor] tag:kAgreeTermsCheckBoxBtnTag selector:@selector(action:) target:self];
     okBtn.layer.cornerRadius = VH(32) / 2;
 
 /**
