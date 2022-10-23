@@ -297,6 +297,7 @@
 		03E076812862C07700B81B65 /* ApplycySoial.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* ApplycySoial.m */; };
 		03EA36082850986F00723340 /* SarcooryPoiequite.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* SarcooryPoiequite.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03EA360B2850989900723340 /* FlectiblePantator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* FlectiblePantator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		03F487172905287700D5A10E /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F487162905287700D5A10E /* com_mplay_wlzhs.json */; };
 		03F59A4B285776730062B6EE /* UIView+GonyticSocialance.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+GonyticSocialance.m */; };
 		03FA12D42853565200BBBEB4 /* FodindustryismCome.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* FodindustryismCome.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
@@ -674,6 +675,7 @@
 		03EA36072850986F00723340 /* SarcooryPoiequite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SarcooryPoiequite.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* FlectiblePantator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlectiblePantator.m; sourceTree = "<group>"; };
 		03EA360A2850989900723340 /* FlectiblePantator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlectiblePantator.h; sourceTree = "<group>"; };
+		03F487162905287700D5A10E /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
 		03F59A49285776730062B6EE /* UIView+GonyticSocialance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GonyticSocialance.h"; sourceTree = "<group>"; };
 		03F59A4A285776730062B6EE /* UIView+GonyticSocialance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GonyticSocialance.m"; sourceTree = "<group>"; };
 		03FA12D22853565200BBBEB4 /* FodindustryismCome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FodindustryismCome.h; sourceTree = "<group>"; };
@@ -1696,6 +1698,7 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
+				03F487162905287700D5A10E /* com_mplay_wlzhs.json */,
 				03B5F4722903F3A700D1F03E /* 73d30001bc0f27f512ed3afa30f2feb3.txt */,
 				E9150D292383E6640003F1FB /* SDKResources.bundle */,
 				030FAA6328A1142900709536 /* WLZHSSDK.bundle */,
@@ -1932,6 +1935,7 @@
 			files = (
 				03A0CD5628AF6EEF0092CDE0 /* WLZHSSDK.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
+				03F487172905287700D5A10E /* com_mplay_wlzhs.json in Resources */,
 				03B5F4732903F3A700D1F03E /* 73d30001bc0f27f512ed3afa30f2feb3.txt in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				0332F56D28C5B44C00B7A99F /* GoogleSignIn.bundle in Resources */,

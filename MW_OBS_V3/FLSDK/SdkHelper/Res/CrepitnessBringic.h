@@ -54,5 +54,5 @@
 
 -(BOOL)isMoreLanguage;
 - (NSString *)getSdkBundleName_MMMethodMMM;
-
+- (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent;
 @end

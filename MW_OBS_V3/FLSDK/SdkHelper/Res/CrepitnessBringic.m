@@ -449,5 +449,19 @@ static dispatch_once_t onceToken;
     return key;
 }
 
+#pragma mark - 解密所有字符串 内容
+- (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], genuturn_tortence);
+    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], oculeur_anguit);
+    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+    // 去掉首尾的空白字符
+    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    // 去除掉控制字符
+//    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
+    
+    NSString *textContent = [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+    return [textContent stringByReplacingOccurrencesOfString:@"\0" withString:@""];
+}
+
 
 @end
