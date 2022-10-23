@@ -4,8 +4,6 @@
 /**
   too. When you're on the hook to give someone else tips on how to achieve, it boosts y 
 **/
-#define GAMA_CONF_DEFAULT_KEY    @"GAMA128KEY"
-#define GAMA_CONF_DEFAULT_IV     @"GAMA128IV"
 @interface CapitdecideEmeticmost : NSObject
 +(NSString *)getEncryptStringFromString:(NSString *)beforeEncryptString
                     WithKey_MMMethodMMM:(NSString *)key

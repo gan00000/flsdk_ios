@@ -82,10 +82,10 @@ Even if from another world, s
 + (BOOL)validEmail:(NSString *)email;
 + (BOOL)validPhone:(NSString *)phone phoneRegex:(NSString *)regex;
 #pragma mark - 整合部分
-+ (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName;
+//+ (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName;
 + (void)getUserInfo:(NSString **)userName andPassword:(NSString **)password fromFile:(NSString*)fileName;
-+ (NSString *)loginEncryptFromString:(NSString *)aString;
-+ (NSString *)loginDecryptFromString:(NSString *)aString;
+//+ (NSString *)loginEncryptFromString:(NSString *)aString;
+//+ (NSString *)loginDecryptFromString:(NSString *)aString;
 + (UIView *)initWithMaxTitle:(NSString *)maxTitle minTitle:(NSString *)minTitle;
 + (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxSize:(CGSize)maxSize;
 + (CGFloat)titleFontWedthWithMaxStr:(NSString *)maxStr minStr:(NSString *)minStr;

@@ -186,6 +186,7 @@ static dispatch_once_t onceToken;
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
+    SDK_LOG(@"encryptContent eKey=%@,eIV=%@",eKey,eIV);
     //加密后的密文
     NSString *encryptStr = [CapitdecideEmeticmost getEncryptStringFromString:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return encryptStr;
@@ -194,7 +195,7 @@ static dispatch_once_t onceToken;
 - (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-    
+    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
@@ -429,7 +430,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取config配置文件名称，使用bundleId命名
 - (NSString *)getSdkConfigInfoName_MMMethodMMM
 {
-    return [[FoeniveNow getBundleIdentifier] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+    return [[self getSdkBaseEncryptKey_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
 }
 
 

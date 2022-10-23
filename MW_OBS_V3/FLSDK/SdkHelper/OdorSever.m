@@ -9,8 +9,6 @@
 **/
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
-#define kEncryKey @"GAMAENKEY"
-#define kEncryIv  @"GAMAENIV"
 //by telling a few people about your goal so you'll feel ashamed if they check back later and find out you haven't followed through.
 //
 //一个简单的方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
@@ -1026,17 +1024,10 @@ Wide on my plastic t
 {
     [NSString stringWithFormat:@"%@%@", @"heur" , @"foveetic"];
 }
-+ (NSString *)loginEncryptFromString:(NSString *)aString
-{
-    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
-//你，害怕你会突然消失……
-//You don't know how long I've waited for you. And so the lion fell in love with the lamb. What a stupid lamb. What a sick, masochistic lion.
-//你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
-//图片
-//I love three things in this word.Sun, Moon and you. Sun for morning, Moon for night, and you forever.
-//浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿为朝朝暮暮。
-//Even if from an
-}
+//+ (NSString *)loginEncryptFromString:(NSString *)aString
+//{
+//    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
+//}
 + (BOOL)momentiveEnvironmentic
 {
     return 106790 * 8424046 + 1089653 ;
@@ -1058,18 +1049,18 @@ Wide on my plastic t
 //
 //“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the fl
 }
-+ (NSString *)loginDecryptFromString:(NSString *)aString
-
-/**
-  e things in this word.Sun, Moon and you. Sun for morning, Moon for night, and you forever.
-浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿为朝朝暮暮。
-Even if from another world, still love you till the end of time.
-就算来自不同世界，依旧爱你到地老天荒。
-Only for making me want you so bad 
-**/
-{
-    return [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
-}
+//+ (NSString *)loginDecryptFromString:(NSString *)aString
+//
+///**
+//  e things in this word.Sun, Moon and you. Sun for morning, Moon for night, and you forever.
+//浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿为朝朝暮暮。
+//Even if from another world, still love you till the end of time.
+//就算来自不同世界，依旧爱你到地老天荒。
+//Only for making me want you so bad 
+//**/
+//{
+//    return [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
+//}
 + (void)_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {
     NSString *msg = nil ;
@@ -1098,23 +1089,6 @@ Only for making me want you so bad
 //
 //I
     }else{
-//20 bill. In the room of 200, he asked, “Who would like this $20 bill?”
-//
-//
-//
-//一位有名的演讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
-//
-//
-//
-//Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me do this."
-//
-//
-//
-//开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
-//
-//
-//
-//He proceeded to crumple the 20 dollar note up
         msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
 
 /**
@@ -1151,33 +1125,33 @@ Find the star that twinkles in your heart for you alone are capable of making yo
 **/
 }
 #pragma mark -
-+ (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName
-{
-
-/**
-   your destiny.
-
-
-
-寻找心中那颗闪耀的明星，因为只有你自己才能够让美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。
-
-I miss you. I miss all the mornings that I have woken up right beside you.
-
-我想你。我想念我在你身边醒来的所有早晨。
-
-I miss the way the sun shines at your face and the way the cold breeze of the morning surprises us.
-
-我想念阳光照在你的脸上，早晨的寒 
-**/
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSString *path = [paths objectAtIndex:0];
-    NSString *filename = [path stringByAppendingPathComponent:fileName];
-    NSString *encryptPwd = [self loginEncryptFromString:password];
-    NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  userName,encryptPwd,
-                                  nil];
-    [userInfoDic writeToFile:filename atomically:YES];
-}
+//+ (void)saveUserInfo:(NSString *)userName andPassword:(NSString *)password toFile:(NSString*)fileName
+//{
+//
+///**
+//   your destiny.
+//
+//
+//
+//寻找心中那颗闪耀的明星，因为只有你自己才能够让美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。
+//
+//I miss you. I miss all the mornings that I have woken up right beside you.
+//
+//我想你。我想念我在你身边醒来的所有早晨。
+//
+//I miss the way the sun shines at your face and the way the cold breeze of the morning surprises us.
+//
+//我想念阳光照在你的脸上，早晨的寒 
+//**/
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+//    NSString *path = [paths objectAtIndex:0];
+//    NSString *filename = [path stringByAppendingPathComponent:fileName];
+//    NSString *encryptPwd = [self loginEncryptFromString:password];
+//    NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                  userName,encryptPwd,
+//                                  nil];
+//    [userInfoDic writeToFile:filename atomically:YES];
+//}
 + (void)getUserInfo:(NSString **)userName andPassword:(NSString **)password fromFile:(NSString*)fileName
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
