@@ -7,7 +7,7 @@
 #import "SdkHeader.h"
 #import "CapitdecideEmeticmost.h"
 #import "FoeniveNow.h"
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 
 @interface CrepitnessBringic ()
 @property (nonatomic, strong) NSBundle *mmasyya;
@@ -435,8 +435,8 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
-    if([MWSDK share].sdkBaseEncryptKey){
-        return [MWSDK share].sdkBaseEncryptKey;
+    if([WLZSHLib share].sdkBaseEncryptKey){
+        return [WLZSHLib share].sdkBaseEncryptKey;
     }
     return [FoeniveNow getBundleIdentifier];
 }

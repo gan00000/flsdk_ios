@@ -8,7 +8,7 @@
 //
 //Plotting when and where you'll execute on your New Year's resolution 
 #import <UIKit/UIKit.h>
-#import "PayData.h"
+#import "WPayModel.h"
 
 /**
   you are still priceless to those who love you. The worth of our lives comes, not in what we do or who we know, but by Who We Are.”
@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)applicationWillTerminate:(UIApplication *)application;
 + (void)applicationDidBecomeActive:(UIApplication *)application;
 + (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type;
-+ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type;
++ (void)logEventPurchaseValues:(WPayModel *)mPayData type:(AdType) type;
 @end
 
 /**

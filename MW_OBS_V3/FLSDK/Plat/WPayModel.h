@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@interface PayData : NSObject
+@interface WPayModel : NSObject
 @property (nonatomic, copy) NSString *orderId;
 
 @property (nonatomic, copy) NSString *transactionId;

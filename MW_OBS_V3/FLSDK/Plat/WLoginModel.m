@@ -1,6 +1,6 @@
 
-#import "LoginData.h"
-@implementation LoginData
+#import "WLoginModel.h"
+@implementation WLoginModel
 @end
 //的思绪，让你酣然入睡。”
 //

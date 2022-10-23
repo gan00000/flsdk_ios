@@ -7,7 +7,7 @@
 一个简单的方法是把你的目标告诉一些人，这样，如果他们后来发现你没有坚持下去，你会感到羞愧。
  
 **/
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 #import "ResHeader.h"
 #import "FoeniveNow.h"
 #import "VesicallyGreatless.h"

@@ -11,8 +11,8 @@
 
 Find the star that twinkle 
 **/
-#import "PayData.h"
-@implementation PayData
+#import "WPayModel.h"
+@implementation WPayModel
 @end
 
 /**

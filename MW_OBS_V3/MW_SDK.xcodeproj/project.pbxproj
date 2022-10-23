@@ -165,9 +165,9 @@
 		037C6F0E2875AC790041EC34 /* FilmadeExpectaceous.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* FilmadeExpectaceous.m */; };
 		037C6F0F2875AC790041EC34 /* SomeoneshipSesquipresentfaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* SomeoneshipSesquipresentfaction.m */; };
 		037C6F102875AC790041EC34 /* AudienceEquator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* AudienceEquator.m */; };
-		037C6F112875AC790041EC34 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
-		037C6F122875AC790041EC34 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
-		037C6F132875AC790041EC34 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; };
+		037C6F112875AC790041EC34 /* WPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* WPayModel.m */; };
+		037C6F122875AC790041EC34 /* WLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* WLoginModel.m */; };
+		037C6F132875AC790041EC34 /* WLZSHLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* WLZSHLib.m */; };
 		037C6F142875AC790041EC34 /* OpulshowizationTurpon.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* OpulshowizationTurpon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		037C6F152875AC790041EC34 /* MatteroCommonfold.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* MatteroCommonfold.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		037C6F162875AC790041EC34 /* ThoughlikeCineaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* ThoughlikeCineaire.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -250,9 +250,9 @@
 		037C6F652875ACD70041EC34 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
 		037C6F662875ACD70041EC34 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
 		037C6F672875ACD70041EC34 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
-		037C6F682875AD230041EC34 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		037C6F692875AD230041EC34 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F682875AD230041EC34 /* WPayModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* WPayModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F692875AD230041EC34 /* WLoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* WLoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C6F6A2875AD230041EC34 /* WLZSHLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* WLZSHLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		0389B3192861B7B30024E62E /* AlthoughityThemselvesate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* AlthoughityThemselvesate.m */; };
 		03A0CD5628AF6EEF0092CDE0 /* WLZHSSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* WLZHSSDK.bundle */; };
@@ -288,11 +288,11 @@
 		03C05CA928AE5F6B0060F4CD /* JocspecificfactionStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* JocspecificfactionStruct.m */; };
 		03C05CAA28AE5F6B0060F4CD /* JocspecificfactionStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* JocspecificfactionStruct.m */; };
 		03D97DDB286EE281008D0B3A /* SomeoneshipSesquipresentfaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* SomeoneshipSesquipresentfaction.m */; };
-		03D97DDC286EE281008D0B3A /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
+		03D97DDC286EE281008D0B3A /* WLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* WLoginModel.m */; };
 		03D97DDD286EE281008D0B3A /* AudienceEquator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* AudienceEquator.m */; };
-		03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
-		03D97DE1286EE422008D0B3A /* PayData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; };
-		03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; };
+		03D97DE0286EE3A3008D0B3A /* WPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* WPayModel.m */; };
+		03D97DE1286EE422008D0B3A /* WPayModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* WPayModel.h */; };
+		03D97DE2286EE422008D0B3A /* WLoginModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* WLoginModel.h */; };
 		03E076682861E73C00B81B65 /* HimselfainPont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* HimselfainPont.m */; };
 		03E076812862C07700B81B65 /* ApplycySoial.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* ApplycySoial.m */; };
 		03EA36082850986F00723340 /* SarcooryPoiequite.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* SarcooryPoiequite.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -316,7 +316,7 @@
 		3295E2E624DAEDDE00B85976 /* OpportunityoOmmmanageity.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* OpportunityoOmmmanageity.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2E724DAEDDE00B85976 /* MarketidMereid.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* MarketidMereid.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2E824DAEDDE00B85976 /* AperthandBalowise.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* AperthandBalowise.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E924DAEDDE00B85976 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3295E2E924DAEDDE00B85976 /* WLZSHLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* WLZSHLib.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2EA24DAEDDE00B85976 /* UIColor+OgityTheoryify.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+OgityTheoryify.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2EB24DAEDDE00B85976 /* BedeurFail.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* BedeurFail.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -343,7 +343,7 @@
 		3295E30424DAEDDE00B85976 /* LayfoldCheckth.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LayfoldCheckth.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30524DAEDDE00B85976 /* MelioratureTaurrelateality.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* MelioratureTaurrelateality.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3295E30624DAEDDE00B85976 /* ChoiceaireIrible.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* ChoiceaireIrible.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E32A24DAF13200B85976 /* MWSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; };
+		3295E32A24DAF13200B85976 /* WLZSHLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* WLZSHLib.h */; };
 		32B79163254159FC008C4365 /* FilmadeExpectaceous.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* FilmadeExpectaceous.m */; };
 		32BE13DD24FB6154000BDFBE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
@@ -454,9 +454,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				03D97DE1286EE422008D0B3A /* PayData.h in CopyFiles */,
-				03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */,
-				3295E32A24DAF13200B85976 /* MWSDK.h in CopyFiles */,
+				03D97DE1286EE422008D0B3A /* WPayModel.h in CopyFiles */,
+				03D97DE2286EE422008D0B3A /* WLoginModel.h in CopyFiles */,
+				3295E32A24DAF13200B85976 /* WLZSHLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,14 +659,14 @@
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
 		03D5F35D28D3187F00C3855E /* codeObfuscation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
-		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
+		03D97DD5286EE281008D0B3A /* WLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLoginModel.h; sourceTree = "<group>"; };
 		03D97DD6286EE281008D0B3A /* SomeoneshipSesquipresentfaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeoneshipSesquipresentfaction.m; sourceTree = "<group>"; };
 		03D97DD7286EE281008D0B3A /* AudienceEquator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudienceEquator.h; sourceTree = "<group>"; };
 		03D97DD8286EE281008D0B3A /* SomeoneshipSesquipresentfaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeoneshipSesquipresentfaction.h; sourceTree = "<group>"; };
-		03D97DD9286EE281008D0B3A /* LoginData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginData.m; sourceTree = "<group>"; };
+		03D97DD9286EE281008D0B3A /* WLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLoginModel.m; sourceTree = "<group>"; };
 		03D97DDA286EE281008D0B3A /* AudienceEquator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudienceEquator.m; sourceTree = "<group>"; };
-		03D97DDE286EE3A3008D0B3A /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
-		03D97DDF286EE3A3008D0B3A /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
+		03D97DDE286EE3A3008D0B3A /* WPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPayModel.h; sourceTree = "<group>"; };
+		03D97DDF286EE3A3008D0B3A /* WPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPayModel.m; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* HimselfainPont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HimselfainPont.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* HimselfainPont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HimselfainPont.m; sourceTree = "<group>"; };
 		03E0767F2862C07700B81B65 /* ApplycySoial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplycySoial.h; sourceTree = "<group>"; };
@@ -825,8 +825,8 @@
 		E97411CD20874A170018E1A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E97411CE20874A170018E1A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E97411DA20874A170018E1A6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E974126A20874A170018E1A6 /* MWSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSDK.h; sourceTree = "<group>"; };
-		E974126B20874A170018E1A6 /* MWSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSDK.m; sourceTree = "<group>"; };
+		E974126A20874A170018E1A6 /* WLZSHLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLZSHLib.h; sourceTree = "<group>"; };
+		E974126B20874A170018E1A6 /* WLZSHLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLZSHLib.m; sourceTree = "<group>"; };
 		E974126C20874A170018E1A6 /* OdorSever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdorSever.h; sourceTree = "<group>"; };
 		E974126D20874A170018E1A6 /* OdorSever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdorSever.m; sourceTree = "<group>"; };
 		E974127E20874A170018E1A6 /* UIColor+MnelessSalubrwindeur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MnelessSalubrwindeur.h"; sourceTree = "<group>"; };
@@ -1374,12 +1374,12 @@
 			isa = PBXGroup;
 			children = (
 				03D97DD4286EE281008D0B3A /* Base */,
-				03D97DDE286EE3A3008D0B3A /* PayData.h */,
-				03D97DDF286EE3A3008D0B3A /* PayData.m */,
-				03D97DD5286EE281008D0B3A /* LoginData.h */,
-				03D97DD9286EE281008D0B3A /* LoginData.m */,
-				E974126A20874A170018E1A6 /* MWSDK.h */,
-				E974126B20874A170018E1A6 /* MWSDK.m */,
+				03D97DDE286EE3A3008D0B3A /* WPayModel.h */,
+				03D97DDF286EE3A3008D0B3A /* WPayModel.m */,
+				03D97DD5286EE281008D0B3A /* WLoginModel.h */,
+				03D97DD9286EE281008D0B3A /* WLoginModel.m */,
+				E974126A20874A170018E1A6 /* WLZSHLib.h */,
+				E974126B20874A170018E1A6 /* WLZSHLib.m */,
 			);
 			path = Plat;
 			sourceTree = "<group>";
@@ -1750,15 +1750,15 @@
 				030FAB3528A66ED300709536 /* UrlMode.h in Headers */,
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				030FAA2628A0FA7C00709536 /* InsideAuthor.h in Headers */,
-				037C6F682875AD230041EC34 /* PayData.h in Headers */,
+				037C6F682875AD230041EC34 /* WPayModel.h in Headers */,
 				033B9C9F28DB0DAF000DA93D /* GenetsayDextrition.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MusuleSphen.h in Headers */,
 				030FAA7128A27F0600709536 /* GuessizationPhylcapitalee.h in Headers */,
-				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
+				037C6F692875AD230041EC34 /* WLoginModel.h in Headers */,
 				03C05CA828AE5F6B0060F4CD /* JocspecificfactionStruct.h in Headers */,
 				030FAA8628A4B07900709536 /* PrenditudeAtetic.h in Headers */,
 				030FAA6928A1FE5800709536 /* MeanerAnnoutsideful.h in Headers */,
-				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
+				037C6F6A2875AD230041EC34 /* WLZSHLib.h in Headers */,
 				030FAA4728A0FA7C00709536 /* PletfierPerformancely.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2041,9 +2041,9 @@
 				030FAA5628A0FA7C00709536 /* PletfierPerformancely.m in Sources */,
 				037C6F0F2875AC790041EC34 /* SomeoneshipSesquipresentfaction.m in Sources */,
 				037C6F102875AC790041EC34 /* AudienceEquator.m in Sources */,
-				037C6F112875AC790041EC34 /* PayData.m in Sources */,
-				037C6F122875AC790041EC34 /* LoginData.m in Sources */,
-				037C6F132875AC790041EC34 /* MWSDK.m in Sources */,
+				037C6F112875AC790041EC34 /* WPayModel.m in Sources */,
+				037C6F122875AC790041EC34 /* WLoginModel.m in Sources */,
+				037C6F132875AC790041EC34 /* WLZSHLib.m in Sources */,
 				037C6F142875AC790041EC34 /* OpulshowizationTurpon.m in Sources */,
 				030FAA9628A6571900709536 /* GamaSDK+OtherslessVorile.m in Sources */,
 				037C6F152875AC790041EC34 /* MatteroCommonfold.m in Sources */,
@@ -2135,7 +2135,7 @@
 				032AB8BC285A006600F1FD3B /* FoeniveNow.m in Sources */,
 				03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */,
 				032AB8BA285A006600F1FD3B /* SpendSubative.m in Sources */,
-				3295E2E924DAEDDE00B85976 /* MWSDK.m in Sources */,
+				3295E2E924DAEDDE00B85976 /* WLZSHLib.m in Sources */,
 				030FAB3628A66ED300709536 /* UrlMode.m in Sources */,
 				03E076682861E73C00B81B65 /* HimselfainPont.m in Sources */,
 				03E076812862C07700B81B65 /* ApplycySoial.m in Sources */,
@@ -2213,7 +2213,7 @@
 				E95BCED6237D4B87004A08B1 /* CheckMenspossibleair.m in Sources */,
 				E97412FA208858260018E1A6 /* OdorSever.m in Sources */,
 				032AB8C3285A006600F1FD3B /* OpulshowizationTurpon.m in Sources */,
-				03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */,
+				03D97DE0286EE3A3008D0B3A /* WPayModel.m in Sources */,
 				030FAA6728A1FE5800709536 /* MeanerAnnoutsideful.m in Sources */,
 				03669946285DBF3A0008EB50 /* NSString+SurgsafeorEntrekitchenetic.m in Sources */,
 				03B9193F2860AECB0029AE6A /* UIButton+WebCache.m in Sources */,
@@ -2231,7 +2231,7 @@
 				032AB8BB285A006600F1FD3B /* CrepitnessBringic.m in Sources */,
 				32CDA792253FD43100D3969F /* PheniceSexagenmyselfaire.m in Sources */,
 				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
-				03D97DDC286EE281008D0B3A /* LoginData.m in Sources */,
+				03D97DDC286EE281008D0B3A /* WLoginModel.m in Sources */,
 				03B9192D2860AECB0029AE6A /* View+MASAdditions.m in Sources */,
 				0369B35928647256002F4B2F /* OntCaleory.m in Sources */,
 				032AB8BE285A006600F1FD3B /* OligbeautifulIgeer.m in Sources */,

@@ -1,4 +1,4 @@
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 #import "VesicallyGreatless.h"
 
 /**
@@ -56,7 +56,7 @@ Why is that so important? Because lying in bed awake can form an association in 
 /**
    said. In fact, he said this tip is so powerful that when used in his sleep clinic it 
 **/
-@interface MWSDK()
+@interface WLZSHLib()
 
 /**
   ace where you toss and turn and wake up tired.
@@ -75,7 +75,7 @@ Establishing that positive relationsh
 Most adults need between seven and eight hours of sleep to be fully rested, a 
 **/
 @end
-@implementation MWSDK
+@implementation WLZSHLib
 
 /**
   ys will.
@@ -189,7 +189,7 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 }
 + (instancetype)share
 {
-    static MWSDK *_shareSP = nil;
+    static WLZSHLib *_shareSP = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 
@@ -198,7 +198,7 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 
 Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake  
 **/
-        _shareSP = [[MWSDK alloc] init];
+        _shareSP = [[WLZSHLib alloc] init];
     });
 
 /**
@@ -662,7 +662,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 **/
         return;
     }
-    [[OntoonOxyacity shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, PayData * _Nullable payData) {
+    [[OntoonOxyacity shareManager] startPayWithProductId:productId cpOrderId:cpOrderId extra:extra gameInfo:SDK_DATA.gameUserModel accountModel:accountModel payStatusBlock:^(BOOL success, WPayModel * _Nullable payData) {
 
 /**
   s everything you’ve got and you will catch the star that holds your destiny.
@@ -1364,7 +1364,7 @@ Most adults nee
 **/
         AccountModel *rData = cc.data;
 //ugh barriers may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to
-        LoginData *loginData = [[LoginData alloc] init];
+        WLoginModel *loginData = [[WLoginModel alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
         loginData.timestamp = rData.timestamp;

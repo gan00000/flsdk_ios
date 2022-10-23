@@ -1131,8 +1131,8 @@ I like the night. Without the dark, we'd never see the stars.
     }else {
         [VesicallyGreatless logWithEventName:AD_EVENT_LOGIN_SUCCESS parameters:nil type:AdType_Appflyer|AdType_Firebase];
     }
-    if ([MWSDK share].loginCompletionHandler) {
-        LoginData *loginData = [[LoginData alloc] init];
+    if ([WLZSHLib share].loginCompletionHandler) {
+        WLoginModel *loginData = [[WLoginModel alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
         loginData.timestamp = rData.timestamp;
@@ -1146,7 +1146,7 @@ I like the night. Without the dark, we'd never see the stars.
         loginData.sign = rData.sign;
         loginData.telephone = rData.telephone;
         loginData.loginId = rData.loginId;
-        [MWSDK share].loginCompletionHandler(loginData);
+        [WLZSHLib share].loginCompletionHandler(loginData);
 
 /**
   ll shift in thinking, but it's an important one, Grander added.

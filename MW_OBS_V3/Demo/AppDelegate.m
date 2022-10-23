@@ -7,7 +7,7 @@
 #import "UserModel.h"
 
 #import "ResHeader.h"
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 
 @interface AppDelegate ()
 
@@ -53,7 +53,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
   
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    [[MWSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
+    [[WLZSHLib share]application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
     
     /// TO DO
@@ -66,7 +66,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
          annotation:(id)annotation
 {
    
-    return [[MWSDK share]application:application
+    return [[WLZSHLib share]application:application
                         openURL:url
             sourceApplication:sourceApplication
                     annotation:annotation];
@@ -75,7 +75,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
 
-     [[MWSDK share] application:app
+     [[WLZSHLib share] application:app
                   openURL:url
                   options:options];
     return YES;

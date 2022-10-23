@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
-@interface LoginData : NSObject
+@interface WLoginModel : NSObject
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *timestamp;
 

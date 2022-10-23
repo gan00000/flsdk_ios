@@ -19,7 +19,7 @@ Though barriers may sometimes stand in the way of your dreams, remember that you
 @interface OntoonOxyacity ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 @property (nonatomic, assign) CGFloat aeraireFollowture;
 @property (nonatomic, copy) NSString *orderId;
-@property (nonatomic, strong) PayData *mPayData;
+@property (nonatomic, strong) WPayModel *mPayData;
 
 /**
    I miss us being together physically.
@@ -312,7 +312,7 @@ Why is that so important? Because lying in bed awake can form an association in 
     self.payStatusBlock = payStatusBlock;
     [self checkOrderStatus];
     self.orderId = @"";
-    self.mPayData = [[PayData alloc] init];
+    self.mPayData = [[WPayModel alloc] init];
 
 /**
   n even more important part of the equation: whether you enjoy the act of goal pursuit.

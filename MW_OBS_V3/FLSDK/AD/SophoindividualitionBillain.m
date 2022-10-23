@@ -218,7 +218,7 @@ A well-known speaker started off his seminar by holding up a $20 bill. In the ro
 
 Though barriers may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you 
 **/
-+ (void)logEventPurchaseValues:(PayData *)mPayData type:(AdType) type{
++ (void)logEventPurchaseValues:(WPayModel *)mPayData type:(AdType) type{
 
 /**
    never fade.

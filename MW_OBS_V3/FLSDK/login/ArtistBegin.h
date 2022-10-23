@@ -4,7 +4,7 @@
 //hange our decisions, and penalties are even more motivati
 #import "SdkHeader.h"
 #import "LoginViewDelegate.h"
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 #import "BromwardVeraciitious.h"
 #import "FodindustryismCome.h"
 NS_ASSUME_NONNULL_BEGIN

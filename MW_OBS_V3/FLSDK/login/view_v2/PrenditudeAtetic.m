@@ -636,7 +636,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
 Many people view sleeping as t 
 **/
         AccountModel *rData = cc.data;
-        LoginData *loginData = [[LoginData alloc] init];
+        WLoginModel *loginData = [[WLoginModel alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
 

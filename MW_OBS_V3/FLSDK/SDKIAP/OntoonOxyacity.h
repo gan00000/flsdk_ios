@@ -12,8 +12,8 @@
 
 Strangely enough, there is evidence that coaching friends with 
 **/
-#import "PayData.h"
-typedef void(^PayStatusBlock)(BOOL success,PayData* _Nullable payData);
+#import "WPayModel.h"
+typedef void(^PayStatusBlock)(BOOL success,WPayModel* _Nullable payData);
 NS_ASSUME_NONNULL_BEGIN
 @interface OntoonOxyacity : NSObject
 + (instancetype)shareManager;

@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
-#import "LoginData.h"
+#import "WLoginModel.h"
 //o the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to c
-#import "PayData.h"
+#import "WPayModel.h"
 
 
 #define FL_SDK_VERSION @"v3-1.1.1"
@@ -52,7 +52,7 @@ That thinking needs to be changed, Grander said.
 //F
     SDK_PAY_STATUS_PUCHESSING,
 };
-typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
+typedef void (^SDKLoginBlock)(WLoginModel * _Nullable loginData);
 //样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻碍——如果你计划在午餐时冥想，你一定会拒绝别人提出的午餐会议。
 //
 //2.Consider a penalty clause
@@ -75,7 +75,7 @@ typedef void (^SDKLogoutBlock)(NSInteger logout);
 
 “无论你肮脏或者干净,皱巴巴的或者被折磨，对周围爱你的人来说你仍然是无可替代的。我们生活的价值不在于我们做了 
 **/
-typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
+typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,WPayModel * _Nullable mPayData);
 typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
 typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
@@ -90,7 +90,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still 
 **/
-@interface MWSDK : NSObject
+@interface WLZSHLib : NSObject
 @property (nonatomic) SDKPayBlock payHandler;
 @property (nonatomic)  SDKLogoutBlock logoutHandler;
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;

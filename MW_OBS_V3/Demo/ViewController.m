@@ -5,7 +5,7 @@
 #import "UserModel.h"
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
-#import "MWSDK.h"
+#import "WLZSHLib.h"
 
 //#import "LanguitudeQuasstenddom.h"
 
@@ -129,7 +129,7 @@
              *********************************************/
         case 0:
         {
-            [[MWSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
+            [[WLZSHLib share] sdkLoginWithHandler:^(WLoginModel *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -152,7 +152,7 @@
         case 1:
         {
             
-            [[MWSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[WLZSHLib share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
             
             
         }
@@ -181,12 +181,12 @@
         }
             break;
         case 4:
-            [[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
+            [[WLZSHLib share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
             break;
 
         case 5:{
             
-            [[MWSDK share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
+            [[WLZSHLib share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
                 
                 if (success) {
 //                    [AlertUtil showAlertWithMessage:@"分享成功"];
@@ -198,7 +198,7 @@
         }
             break;
         case 6:{
-            [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
+            [[WLZSHLib share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
                 
                 if (success) {
                     NSLog(@"绑定手机成功");
@@ -211,11 +211,11 @@
         }
             break;
         case 7:{
-            [[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+            [[WLZSHLib share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
                 
                 if (success) {
                     NSLog(@"账号升级成功");
-                    LoginData *data = (LoginData*)result;
+                    WLoginModel *data = (WLoginModel*)result;
                 }else{
                     NSLog(@"账号升级失败");
                 }
@@ -225,14 +225,14 @@
         }
             break;
         case 8:{
-            [[MWSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
+            [[WLZSHLib share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
                 NSLog(@"shareLineWithContent finish");
             }];
             
         }
             break;
         case 9:{
-            [[MWSDK share] openCs];
+            [[WLZSHLib share] openCs];
         }
             break;
         case 10:{
@@ -254,7 +254,7 @@
     NSString *cpOrderId = [FoeniveNow getTimeStamp];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[MWSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[WLZSHLib share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, WPayModel *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {
@@ -280,7 +280,7 @@
     // repeats，是否重复，如果重复的话时间必须大于60s，要不会报错
     UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
     
-    [[MWSDK share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
+    [[WLZSHLib share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
  
 }
 
@@ -295,7 +295,7 @@
     components.minute = 50;
     UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
-    [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
+    [[WLZSHLib share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
    
 }
 
