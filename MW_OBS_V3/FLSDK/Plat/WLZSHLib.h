@@ -43,21 +43,44 @@
 #define body_WLFuncTag        tersnaturalidResearchling
 #define trigger_WLFuncTag        lactVictably
 #define notifyId_WLFuncTag        theirasterPreventite
+#define decryptEncrypContent_WLFuncTag      decryptEncrypContent_WLFuncTag
+
+#define Decrypt_AllStringContent_2(text)  [[WLZSHLib share] decryptEncrypContent_WLFuncTag:text]
+
+#define nowar_fail        Decrypt_AllStringContent_2(@"H3SDGJLNU8VCCgU0triXRXQVvH1GujN2OqI9YTMn0Fw=")  //@"请在主线程调用该接口"
+#define springian_fulminlike        Decrypt_AllStringContent_2(@"DLgB0T2+cjhq2Qa78Lvk4TsqH58XRK8YlOFBQIRVxD8=")  //@"正在充值中..."
+#define ensatory_strattic        Decrypt_AllStringContent_2(@"KCFj5V44HNOCnKcDTHKkgJPvDXQ6ls8+70HZkldKQ3s=")  //@"当前版本不支持该功能"
+
+//事件event
+#define economyature_collics        Decrypt_AllStringContent_2(@"XEa/fKCHU0hxj56mGXsuQg==")  //@"APP_OPEN"
+#define agyratory_leswise        Decrypt_AllStringContent_2(@"mpiglVfsRs9CWyk7YHjouQ==")  //@"LOGIN_SUCCESS"
+#define tomofacefaction_treatial        Decrypt_AllStringContent_2(@"KOjYlqmt0hoqY1V3XCyilyxalo0SKbKcGdN1M83eXfg=")  //@"REGISTER_SUCCESS"
+#define worker_severalery        Decrypt_AllStringContent_2(@"1wOBJ31G3GQCDFZXSm7rRz1lbphaKdQFvUBLKybKifA=")  //@"OPEN_LOGIN_SCREEN"
+#define legitimary_decize        Decrypt_AllStringContent_2(@"i8uqu8P7Z+6X+oG9/tYsCA==")  //@"FIRST_PURCHASE"
+#define formeretic_choiceette        Decrypt_AllStringContent_2(@"kBriYQ7HtPAIJ0TI522OsZFeDN/9IiyzYHdm6jCY4gY=")  //@"COMPLETE_REGISTRATION_IOS"
+#define capskidon_secutdom        Decrypt_AllStringContent_2(@"qw2LnB2+nMbFy1KW61WztUIcEwBwNUfmv38kABZgdiQ=")  //@"CHECK_PERMISSIONS"
+#define rogair_happenosity        Decrypt_AllStringContent_2(@"O9bvqpqBYZvQxPjtA9zciQ==")  //@"CHECK_UPDATE"
+#define aboutern_umbilicthatence        Decrypt_AllStringContent_2(@"+uvPxxJqwhb9Zzs5JqrlFQ==")  //@"CHECK_RESOURCES"
+#define situation_walk        Decrypt_AllStringContent_2(@"3AnOq86DxRf2boeQAIvXHQ==")  //@"SELECT_SERVER"
+#define cuneation_spinfold        Decrypt_AllStringContent_2(@"eeNyUvCkWHaDgYtA0vtNSw==")  //@"CREATE_ROLE"
+#define throwism_othersling        Decrypt_AllStringContent_2(@"eVmiEUPDDnx2win6oAsDmg==")  //@"START_GUIDE"
+#define vag_soatory        Decrypt_AllStringContent_2(@"z132qdk8V1WgGAqLkuyESw==")  //@"COMPLETE_GUIDE"
+
 
 #define FL_SDK_VERSION @"v3-1.1.1"
-#define AD_EVENT_APP_OPEN  @"APP_OPEN"
-#define AD_EVENT_LOGIN_SUCCESS  @"LOGIN_SUCCESS"
-#define AD_EVENT_REGISTER_SUCCESS  @"REGISTER_SUCCESS"
-#define AD_EVENT_OPEN_LOGIN_SCREEN  @"OPEN_LOGIN_SCREEN"
-#define AD_EVENT_FIRST_PURCHASE  @"FIRST_PURCHASE"
-#define AD_EVENT_COMPLETE_REGISTRATION_IOS  @"COMPLETE_REGISTRATION_IOS"
-#define AD_EVENT_CHECK_PERMISSIONS  @"CHECK_PERMISSIONS"
-#define AD_EVENT_CHECK_UPDATE  @"CHECK_UPDATE"
-#define AD_EVENT_CHECK_RESOURCES  @"CHECK_RESOURCES"
-#define AD_EVENT_SELECT_SERVER  @"SELECT_SERVER"
-#define AD_EVENT_CREATE_ROLE  @"CREATE_ROLE"
-#define AD_EVENT_START_GUIDE  @"START_GUIDE"
-#define AD_EVENT_COMPLETE_GUIDE  @"COMPLETE_GUIDE"
+#define AD_EVENT_APP_OPEN       economyature_collics
+#define AD_EVENT_LOGIN_SUCCESS      agyratory_leswise
+#define AD_EVENT_REGISTER_SUCCESS  tomofacefaction_treatial
+#define AD_EVENT_OPEN_LOGIN_SCREEN  worker_severalery
+#define AD_EVENT_FIRST_PURCHASE  legitimary_decize
+#define AD_EVENT_COMPLETE_REGISTRATION_IOS  formeretic_choiceette
+#define AD_EVENT_CHECK_PERMISSIONS  capskidon_secutdom
+#define AD_EVENT_CHECK_UPDATE  rogair_happenosity
+#define AD_EVENT_CHECK_RESOURCES  aboutern_umbilicthatence
+#define AD_EVENT_SELECT_SERVER  situation_walk
+#define AD_EVENT_CREATE_ROLE  cuneation_spinfold
+#define AD_EVENT_START_GUIDE  throwism_othersling
+#define AD_EVENT_COMPLETE_GUIDE  vag_soatory
 
 
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
@@ -166,4 +189,7 @@ completionHandler_WLFuncTag:(SDKPayBlock) handler;
 - (void)requestUpgradeWithAccount_WLFuncTag:(NSString *)account password_WLFuncTag:(NSString *)password Block_WLFuncTag:(MWBlock)mMWBlock;
 - (void)addLocalNotificationWithTitle_WLFuncTag:(NSString *)title subtitle_WLFuncTag:(NSString *)subtitle body_WLFuncTag:(NSString *)body trigger_WLFuncTag:(nullable UNNotificationTrigger *)trigger notifyId_WLFuncTag:(NSString *)notifyId;
 
+#pragma mark - 解密所有字符串 内容
+- (NSString *)decryptEncrypContent_WLFuncTag:(NSString *)textEncrypContent;
+    
 @end

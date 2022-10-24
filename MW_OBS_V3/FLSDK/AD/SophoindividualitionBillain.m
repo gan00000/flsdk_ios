@@ -157,6 +157,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 }
 + (void)logEventWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues type:(AdType) type{
     @try {
+        SDK_LOG(@"logEventWithEventName eventName:%@,eventValues:%@",eventName,eventValues);
         if (type & AdType_Appflyer) {
             [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
         }
@@ -228,6 +229,7 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like you
     @try {
 // afraid. I'm not afraid of you… I'm only afraid of losing you. Like you're going to disappear…
 //现在我害怕了，我不是害怕你……我只是害怕
+        SDK_LOG(@"logEventPurchaseValues eventValues:%f",  mPayData.amount);
         if (type & AdType_Appflyer) {
             SDK_LOG(@"logEventPurchaseValues af");
             [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{

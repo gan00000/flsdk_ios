@@ -192,36 +192,18 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
     static WLZSHLib *_shareSP = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-
-/**
-  不着，就起床调整一下。也许你只需要5分钟就能感觉到困意，也许需要一小时，但是这段时间不要醒着躺在床上。”
-
-Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake  
-**/
-        _shareSP = [[WLZSHLib alloc] init];
+        
+    _shareSP = [[WLZSHLib alloc] init];
+        
     });
 
-/**
-  sitive relationship between the bed and sleep can be beneficial on nights where your schedule has to be erratic due to work or travel, Grandner added.
-
-格兰德纳补充道，在床和睡眠之间建立正向联系还有益于你在被工作或旅游打乱作息的夜晚入眠。
-
-"Let's say you need to go to bed e 
-**/
     return _shareSP;
 }
+
 - (instancetype)init
 {
     if (self = [super init]) {
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
-
-/**
-  hedule, and stick to it
-
-每天在固定时间起床和上床
-
-Melatonin is a hormone produced by the body to regulate 
-**/
     }
 
 /**
@@ -263,7 +245,7 @@ Flightless bird, jealous, weeping
 //Why is that so important? Because lying in bed awake can form an association in your brain that can lead to chronic insomnia, Grandner explained. Instead of being a restful spot where you peacefully fall asleep, your bed becomes an anxious place where you toss and turn and wake up tired.
 //
 //为什么这条法则如此重要呢
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
 //mornings that I have woken up right beside you.
 //
 //我想你。我想念我在你身边醒来的所有早晨。
@@ -505,7 +487,7 @@ Love is letting someone become your greatest weakness ,then going all you can do
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
 
 /**
@@ -622,7 +604,7 @@ Diving too
 //
 //
 //One way to make pursuing a goal that normally feels
-        SDK_LOG(@"正在充值中...");
+        SDK_LOG(springian_fulminlike);
         return;
 
 /**
@@ -749,7 +731,7 @@ Big pill, stuck goi
 **/
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
 
 /**
   through.
@@ -773,7 +755,7 @@ If your New Year's resolution is to meditate five days each week, a pl
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
 //viate at all from your New Year's resolution, your instinct may be to 
         return;
     }
@@ -829,7 +811,7 @@ That thin
 - (void)shareWithTag_WLFuncTag:(NSString *)hashTag message_WLFuncTag:(NSString *)message url_WLFuncTag:(NSString *)url successBlock_WLFuncTag:(ShareBlock)shareBlock{
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
     }
     [[MachineileSenly share] shareWithTag:hashTag message:message url:url presentingViewController:appTopViewController successBlock:^(NSString *msg, NSInteger m, NSDictionary *dic) {
@@ -891,7 +873,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 
 提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻 
 **/
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
     }
     if (!is_Version2) {
@@ -899,7 +881,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 /**
    up on housework, schoolw 
 **/
-        [OdorSever toastMsg: @"当前版本不支持该功能"];
+        [OdorSever toastMsg: ensatory_strattic];
 
 /**
    somebody is get up -- don't lay in bed a 
@@ -961,7 +943,7 @@ A steeper penalty than shame, however, is put
   iate at all from your New Year's resolution, your instinct may be t 
 **/
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
     }
     if (!is_Version2) {
@@ -983,7 +965,7 @@ A steeper penalty than shame, however, is put
 //
 //
 //《Flight
-        [OdorSever toastMsg: @"当前版本不支持该功能"];
+        [OdorSever toastMsg: ensatory_strattic];
         return;
     }
 
@@ -1426,7 +1408,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
     SDK_LOG(sebiier_political);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
 //nds, vacations or after a night of poor sleep.
 //
 //因此每天在固定时间起床很重要，即使是周末、假期或是前一天晚上没睡好也不应该例外。
@@ -1457,7 +1439,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //
 //“无论你肮脏或者
         SDK_LOG(@"currentThread is not main thread");
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
 //d. "Whether it's the beginning of the night or the middle of the night, if you've been awake for 20 or 30 m
     }
@@ -1516,7 +1498,7 @@ I'
 /**
   pproaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light --  
 **/
-        [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
+        [LanguitudeQuasstenddom showAlertWithMessage:nowar_fail];
         return;
     }
     if (@available(iOS 10.0, *)) {
@@ -1571,4 +1553,8 @@ Flightless bird, jealous, weeping
     }
 }
 
+- (NSString *)decryptEncrypContent_WLFuncTag:(NSString *)textEncrypContent
+{
+    return [SDKRES decryptAllStringContent_WLFuncTag:textEncrypContent];
+}
 @end

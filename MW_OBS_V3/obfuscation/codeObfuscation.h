@@ -257,6 +257,7 @@
 #define  name_WLFuncTag amdakFileName
 #define logSdkResConfig_WLFuncTag     logSdkResConfig
 #define getSdkBaseEncryptKey_WLFuncTag    getSdkBaseEncryptKey
+#define decryptAllStringContent_WLFuncTag   decryptAllStringContent_WLFuncTag
 #else
 
 #endif
