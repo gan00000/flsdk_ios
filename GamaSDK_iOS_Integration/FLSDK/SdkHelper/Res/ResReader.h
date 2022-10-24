@@ -58,4 +58,5 @@
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM;
 - (NSString *)getSdkEncryptKey_MMMethodMMM;
 
+- (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent;
 @end

@@ -184,6 +184,7 @@ static dispatch_once_t onceToken;
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
+    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     //加密后的密文
     NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return encryptStr;
@@ -192,7 +193,7 @@ static dispatch_once_t onceToken;
 - (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-    
+    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
@@ -282,6 +283,7 @@ static dispatch_once_t onceToken;
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
+        SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
             // 对数据进行JSON格式化并返回字典形式
@@ -427,7 +429,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取config配置文件名称，使用bundleId命名
 - (NSString *)getSdkConfigInfoName_MMMethodMMM
 {
-    return [[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+    return [[self getSdkBaseEncryptKey_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
 }
 
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
@@ -443,6 +445,21 @@ static dispatch_once_t onceToken;
     NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];
     NSString *key = [keyTemp stringByReplacingOccurrencesOfString:@"." withString:@""];
     return key;
+}
+
+#pragma mark - 解密所有字符串 内容
+- (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
+//    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+    // 去掉首尾的空白字符
+    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    // 去除掉控制字符
+//    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
+    
+    NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
+    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+    return textContent;
 }
 
 @end
