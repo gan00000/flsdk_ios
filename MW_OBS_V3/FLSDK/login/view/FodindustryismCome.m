@@ -251,7 +251,7 @@ Only for making me want you so badly.
 //Even if from another world, still love you till the end of time.
 //就算来自不同
         [accountLoginBtn.layer setCornerRadius:VH(25)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
         [self addSubview:accountLoginBtn];
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
@@ -780,7 +780,7 @@ I think I forg
 “Many times in our lives, we are dropped, crumpled, and ground into the dirt by the decisions we make and the circumstances that come our way. We feel as thou 
 **/
     UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.85];
+    deleteView.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.85];
     deleteView.layer.cornerRadius = VW(10);
 
 /**
@@ -848,7 +848,7 @@ As long as i live, my feeling for you will never fade.
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
     }];
     UIButton *cancelBtn = [BedeurFail initBtnWithTitleText:GetString(alreadyan_relate) fontSize:FS(12) textColor:UIColor.whiteColor tag:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction:) target:self];
-    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString:caulidom_posth].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     [deleteView addSubview:cancelBtn];
     [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {

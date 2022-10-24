@@ -65,7 +65,7 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 // five minutes to get sleepy, or maybe an hour, but don't spend that time awake in bed."
 //
 //格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论
-        NSString *titleName = @"會員帳號登入";
+        NSString *titleName = largeie_novative;
         switch (type) {
             case SDK_ICON_TITLE_BUTTON_TYPE_FB:
                 iconName = astroia_manthemible;
@@ -99,7 +99,7 @@ But it's you, your scent, it's like a drug to me. You're like my own personal br
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_GEUST:
                 iconName = pelagpolicyon_enn;
-                titleName = @"遊客帳號登入";
+                titleName = dactylioar_highion;
 
 /**
   o rise at 7 am each day, backtiming eight hours would require a bedtime of 11 pm.
@@ -120,7 +120,7 @@ As long as i live, my feeling for you will never fade.
 Now I'm afraid. I'm not afraid of you… I'm only afraid of losin 
 **/
                 iconName = scalenics_hendecstepless;
-                titleName = @"會員帳號登入";
+                titleName = largeie_novative;
 //劲踩踏。然后他拣起又脏又皱的纸币，“现在，还有人要它吗？”
 //
 //
@@ -157,15 +157,15 @@ Stole me a dog-ear
 **/
                 iconName = astroia_manthemible;
 //d you'll persist longer. And in the end, t
-                titleName = @"Facebook帳號綁定";
+                titleName = suiose_eatary;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST:
                 iconName = pelagpolicyon_enn;
-                titleName = @"遊客帳號綁定";
+                titleName = concernet_interest;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE:
                 iconName = themot_flagrsive;
-                titleName = @"Apple帳號綁定";
+                titleName = popularite_ligataire;
 //r world, still love you till the end of time.
 //就算来自不同世界，依旧爱你到地老天荒。
 //Only for making me want you so badly.

@@ -136,7 +136,7 @@ If it's not fun to e
 
 褪黑素是身体分泌的一种激素，你什么时候感到困，什么时候醒来，都靠这种激素来调节。随着黑夜降临，褪黑素的水平就会升高，暗 
 **/
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
+        self.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.15];
 //到你，我到现在还不知道是否控制得了自己。
 //When life offers you a dream so far beyond any of your expectations, it’s not reasonable to grieve when it comes to an end.
 //当生活给了你一个远远超过你期望的美梦，那么，当这一期结束时，也就没有理由再去伤心。
@@ -278,7 +278,7 @@ Nursing my sore blunt tongue
         make.height.mas_equalTo(VH(14));
         make.bottom.mas_equalTo(titleView);
     }];
-    UILabel *titleLabel = [BedeurFail initLabelWithText:clearlyance_directorsive.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+    UILabel *titleLabel = [BedeurFail initLabelWithText:clearlyance_directorsive.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:sucrast_prat]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -333,7 +333,7 @@ If you deviate at all from your New Year's resolution, your instinct may be to d
 //在床上会在大脑中形成关联，从而导致长期失眠。这样一来，床就不再是你安眠的舒适窝，而成为你辗转
     }];
     UIView *phoneAreaCodeView = [[UIView alloc] init];
-    phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString:audienceitor_tinct].CGColor;
 
 /**
   ame, however, is putting cold hard cash on the table, and there is excellent evidence that self-imposed cash penalties motivate success. You can make a bet with a friend that you'll stick to your N 
@@ -439,8 +439,8 @@ Now I'm afraid. I'm not afraid of you… I'm only afraid of losing you. Like
 格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十 
 **/
     }];
-    phoneNumFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:horoity_astrster.localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
-    phoneNumFiled.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    phoneNumFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:horoity_astrster.localx placeColor:[UIColor colorWithHexString:pelagan_velacious]];
+    phoneNumFiled.layer.borderColor = [UIColor colorWithHexString:audienceitor_tinct].CGColor;
 //g needs to be changed, Grander said.
 //
 //格兰德纳说，这种想法必须改变。
@@ -510,14 +510,14 @@ Now I'm afr
         make.leading.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(15));
     }];
-    vfCodeFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:vapsive_querization.localx placeColor:[UIColor colorWithHexString:@"#B8B8B8"]];
+    vfCodeFiled = [[LetteradSupportal alloc] initWithTextColor:UIColor.blackColor fontOfSize:FS(14) placeholder:vapsive_querization.localx placeColor:[UIColor colorWithHexString:pelagan_velacious]];
 
 /**
   id, your sleep rhythms aren't predictable and the body doesn't know how to respond.
 
 临床心理学家、睡眠专家迈克尔·格兰 
 **/
-    vfCodeFiled.layer.borderColor = [UIColor colorWithHexString:@"#606060"].CGColor;
+    vfCodeFiled.layer.borderColor = [UIColor colorWithHexString:audienceitor_tinct].CGColor;
 //ng time around high achievers can boost your own performance. If your New Year's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be inclined to conform to their patterns of behavior.
 //
     vfCodeFiled.layer.borderWidth = 0.5;
@@ -658,7 +658,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
 **/
         gl.frame = okBtn.bounds;
     }];
-    hasBindPhoneTips = [BedeurFail initLabelWithText:wantoon_technern.localx fontSize:FS(12) textColor:ColorHex(@"#4B4B4B")];
+    hasBindPhoneTips = [BedeurFail initLabelWithText:wantoon_technern.localx fontSize:FS(12) textColor:ColorHex(hibatic_priorpageably)];
     hasBindPhoneTips.numberOfLines = 0;
     [contentView addSubview:hasBindPhoneTips];
     [hasBindPhoneTips mas_makeConstraints:^(MASConstraintMaker *make) {

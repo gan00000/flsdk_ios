@@ -476,7 +476,7 @@ Happily, there is a way to dodge this fate. By setting tough
 Still 
 **/
     }];
-    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:panator_dorm.localx fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:panator_dorm.localx fontSize:FS(11) textColor:[UIColor colorWithHexString:understand_establishaster]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -497,7 +497,7 @@ Happily, there is a way to dodge thi
   ur New Year's resolution jogs your memory when it's opportune and generates guilt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you plan to m 
 **/
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -544,7 +544,7 @@ Still the hands went into the air.
 “My friends, you have all learned a very valuable lesson. No matter what I did to the money, you still wanted it because it did not dec 
 **/
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [contentView addSubview:lineView2];
 
 /**
@@ -774,7 +774,7 @@ You don't know how long I've waited for you. And so the lion fell in love with t
         NSString *xtext = GetString(novsive_amph);
     NSString *temptext = GetString(shareics_klepteye);
 //like a chore more fun is t
-        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:understand_establishaster]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;

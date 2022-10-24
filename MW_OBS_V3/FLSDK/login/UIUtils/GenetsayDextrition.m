@@ -35,7 +35,7 @@
 Most of us strive for efficiency when it comes to achieving our goals. If you want to get fit, you fi 
 **/
     gl.endPoint = CGPointMake(0.96, 0.95);
-    gl.colors = @[(__bridge id)[UIColor colorWithHexString:@"#4CADFE"].CGColor, (__bridge id)[UIColor colorWithHexString:@"#02EDFC"].CGColor];
+    gl.colors = @[(__bridge id)[UIColor colorWithHexString:male_omenition].CGColor, (__bridge id)[UIColor colorWithHexString:run_selftellism].CGColor];
     gl.locations = @[@(0), @(1.0f)];
     gl.cornerRadius = cornerRadius;
     gl.zPosition = -10000;

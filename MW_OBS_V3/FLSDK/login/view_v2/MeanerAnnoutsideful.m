@@ -84,7 +84,7 @@ Still the hands went into the air.
 //心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.1];
+        self.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.1];
         [self landspaceView];
     }
     return self;
@@ -171,7 +171,7 @@ You don't know how long I've waited for you. And so the lion fell in love with t
   ng stones to your dre 
 **/
     }];
-    UILabel *titleLabel = [BedeurFail initLabelWithText:shareics_klepteye.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+    UILabel *titleLabel = [BedeurFail initLabelWithText:shareics_klepteye.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:sucrast_prat]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
 //But if you get pleasure from your workouts or study sessions, research has found you'll persist longer. And in the end, that's what often matters most to achieving a New Year's resolution.
 //
@@ -294,7 +294,7 @@ But it's you, your scent, it's like a dru
     }];
     UIView *xView = [[UIView alloc] init];
 //甚至碾入尘土。我们感到自己一无是处。但是不管发生了什么，或者将要发生什么，你们都永远
-    xView.layer.borderColor = [UIColor colorWithHexString:@"#DEDEDE"].CGColor;
+    xView.layer.borderColor = [UIColor colorWithHexString:dysism_look].CGColor;
 
 /**
   omething crucial.

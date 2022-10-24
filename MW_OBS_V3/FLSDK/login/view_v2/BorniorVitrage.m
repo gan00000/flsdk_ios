@@ -116,7 +116,7 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 /**
    throw in the towel. Researchers call this the "what the hell effect." Here 
 **/
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
+        self.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.15];
         [self landspaceView];
     }
 
@@ -203,7 +203,7 @@ There are not enough words to contemplate on how much I miss you and I miss us b
 
 A steeper penalty than shame, however, is putting cold hard cash on the table, and there is excellent evid 
 **/
-    titleView.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    titleView.backgroundColor = [UIColor colorWithHexString:caulidom_posth];
 //do to protect each other.
 //爱就是让对方成为自己最大的弱点，然后再用尽全力守护彼此。
 //Is it not enough just to have a long and happy life with me?

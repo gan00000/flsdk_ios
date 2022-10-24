@@ -186,7 +186,7 @@ Still the hands went into the air.
 “My friends, you have all learned a very valuable lesson. No matter what I did to the money, you still wanted it because it did not decrease in va 
 **/
     SDK_DATA.mUITextFieldDelegate = nil;
-    SDK_LOG(@"dealloc视图被销毁");
+    SDK_LOG(hospitaless_gonysomethinging);
 }
 - (void)mostDinner:(CGFloat)currlayier sokin:(CGFloat)sokin bariify:(NSString *)bariify bill:(NSUInteger)bill
 {
@@ -199,7 +199,7 @@ Still the hands went into the air.
 - (void)viewDidLoad {
     [super viewDidLoad];
     SDK_LOG(institution_in2ion);
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.9];
+    self.view.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.9];
     SDK_DATA.mUITextFieldDelegate = self;
 //ave left in your day
     switch (sdkPageType) {

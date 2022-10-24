@@ -162,7 +162,7 @@ Happily
 Strangely enough, there is evidence that coaching friends with shared goals can improve your success rate, too. When you're o 
 **/
     UIView *lineView = [[UIView alloc] init];
-    lineView.backgroundColor = [UIColor colorWithHexString:@"#848484"];
+    lineView.backgroundColor = [UIColor colorWithHexString:read_hered];
     [self addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(17));

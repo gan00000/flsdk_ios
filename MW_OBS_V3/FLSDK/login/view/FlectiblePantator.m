@@ -184,7 +184,7 @@ It may sound like a small sh
 //
 //Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me
     [guestLoginBtn.layer setCornerRadius:VH(25)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+    guestLoginBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
     [contentView addSubview:guestLoginBtn];
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         if (logoIV.hidden) {
@@ -233,7 +233,7 @@ There are not enough words to contemplate on how much I miss you and I miss us b
 //Hands started going up. He said, “I
         make.width.height.mas_equalTo(VW(30));
     }];
-    UIButton *guestTextBtn = [BedeurFail initBtnWithTitleText:@"遊客登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+    UIButton *guestTextBtn = [BedeurFail initBtnWithTitleText:polemdebate_picture fontSize:FS(17) textColor:[UIColor whiteColor] tag:guestLoginActTag selector:@selector(registerViewBtnAction:) target:self];
     [guestLoginBtnContent addSubview:guestTextBtn];
     [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
@@ -387,7 +387,7 @@ Establishing that positive relationship between the bed and sleep can be benefic
 尽管实现梦 
 **/
     }];
-    UILabel *loginLabel = [BedeurFail initLabelWithText:@"登入" fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#EB2E2B"]];
+    UILabel *loginLabel = [BedeurFail initLabelWithText:circumad_triciness fontSize:FS(12) textColor:[UIColor colorWithHexString:fractage_hier]];
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.bottom.top.mas_equalTo(hasAccountContent);
@@ -419,7 +419,7 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
 我离开你的唯一原因是因为我觉得这能保护你。
 I don’t have 
 **/
-    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:@"其他登入" fontSize:FS(11) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [BedeurFail initLabelWithText:zymot_TVile fontSize:FS(11) textColor:[UIColor colorWithHexString:understand_establishaster]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
@@ -436,7 +436,7 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
         make.centerX.mas_equalTo(contentView);
     }];
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
@@ -458,7 +458,7 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
         make.width.mas_equalTo(VW(26));
     }];
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [contentView addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
@@ -699,7 +699,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 **/
     }];
         NSString *xtext = GetString(taxmanine_requireo);
-        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(10) textColor:[UIColor colorWithHexString:understand_establishaster]];
 
 /**
   把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。

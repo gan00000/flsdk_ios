@@ -75,7 +75,7 @@ MV
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.15];
+        self.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.15];
 //he worth of our lives comes, not in w
         UIView *contentView = [[UIView alloc] init];
 
@@ -141,7 +141,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
             make.height.mas_equalTo(VH(14));
             make.bottom.mas_equalTo(titleView);
         }];
-        UILabel *titleLabel = [BedeurFail initLabelWithText:parl_cutistic.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:@"#2A2A2A"]];
+        UILabel *titleLabel = [BedeurFail initLabelWithText:parl_cutistic.localx fontSize:FS(15) textColor:[UIColor colorWithHexString:sucrast_prat]];
         titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
 
 /**
@@ -203,7 +203,7 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 /**
    to the body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight ap 
 **/
-            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(audienceitor_tinct).CGColor;
 
 /**
    approaches 
@@ -256,7 +256,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 
 Strangely enough, there is evidence that coaching friends with shared goals can improve your success rate, too. When you're on the hook to give someone else tips on how to achieve, it boosts your self-confidence. It also forces you to be  
 **/
-            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(audienceitor_tinct).CGColor;
 
 /**
   为你会忽略更重要的事：你是否享受追求目标的过程。
@@ -323,7 +323,7 @@ If your N
 //I miss the wa
             accountSDKTextFiledView = [[ChoiceaireIrible alloc] initViewWithType:(SDKTextFiledView_Type_Account)];
             accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            accountSDKTextFiledView.layer.borderColor = ColorHex(audienceitor_tinct).CGColor;
             accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_smail_icon2];
             [contentView addSubview:accountSDKTextFiledView];
@@ -363,7 +363,7 @@ Spending time around high achievers can boost your own performance. If your New 
 “You are speci 
 **/
             pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed:mw_passowrd_icon2];
-            pwdSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            pwdSDKTextFiledView.layer.borderColor = ColorHex(audienceitor_tinct).CGColor;
             pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             [contentView addSubview:pwdSDKTextFiledView];
             [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -377,7 +377,7 @@ Spending time around high achievers can boost your own performance. If your New 
                 make.height.mas_equalTo(accountSDKTextFiledView);
                 make.top.mas_equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             }];
-            UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+            UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:understand_establishaster]];
             [contentView addSubview:bindTipLabel];
             bindTipLabel.numberOfLines = 0;
 

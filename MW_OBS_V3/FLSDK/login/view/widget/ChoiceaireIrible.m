@@ -92,7 +92,7 @@ Love is letting someone become your greatest weakness ,then going
 //须改变。
 //
 //"Don't see your sleep as the amount of time you have left in your day," he advised. "See your sleep as the amount of time you need in ord
-        mUITextField.textColor = [UIColor colorWithHexString:@"#848484"];
+        mUITextField.textColor = [UIColor colorWithHexString:read_hered];
         eyeBtn.selected = NO;
     }
 
@@ -156,7 +156,7 @@ My heart aches and I miss you so bad.
 我的心很疼，我很想念你。
  
 **/
-            lableName = @"驗證碼";
+            lableName = cortictic_authorful;
             mUIKeyboardType = UIKeyboardTypeNumberPad;
 
 /**
@@ -164,7 +164,7 @@ My heart aches and I miss you so bad.
 
 在完成目标的过程中，大多数人都力求高效。如果你的目标是锻炼身体，你会认为高强度的锻炼将能让你快速取得成效。如果你想学好一门功课，你会认为长时间、不被打扰的学习很重要。但研究表明，专注于效率会让你被困在原地，因为你会忽略更 
 **/
-            placeholderText = @"請輸入驗證碼";
+            placeholderText = homeition_environmentalety;
             showLableIcon = NO;
             break;
 
@@ -175,7 +175,7 @@ My heart aches and I miss you so bad.
 **/
         case SDKTextFiledView_Type_Account:
             iconName = mw_account_icon;
-            lableName = @"帳號";
+            lableName = sumptfier_materaneous;
 
 /**
   ther physically.
@@ -187,7 +187,7 @@ My heart aches and I miss you so bad.
 我的心很疼，我很想念你。
 Catch the star that holds your destiny, the one that forever twinkles within yo 
 **/
-            placeholderText = @"請輸入您的常用信箱";
+            placeholderText = justular_stegmemory;
             addMoreAccountBtn = YES;
 //aid it’d be better if we weren’t friends, not that I didn’t wanna be.
 //我只是说如果我们不是朋友会好很多，但是那不代表我不想和你交朋友。
@@ -207,7 +207,7 @@ Catch the star that holds your destiny, the one that forever twinkles within yo
 //latonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight approaches, getting you ready to greet the day.
 //
 //褪黑素是身体分泌的一种激素，你什么时候感到困，什么时候醒来，
-            lableName = @"密碼";
+            lableName = foreignair_clinmillion;
 
 /**
    has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll follow through.
@@ -231,8 +231,8 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //Is it not enough just to have a long and happy life with me?
 //只是跟我共度幸福美满的漫长一生，难道还不够吗？
 //Only for making me want to
-            lableName = @"密碼";
-            placeholderText = @"確認新密碼";
+            lableName = foreignair_clinmillion;
+            placeholderText = nutriize_treataster;
 
 /**
   ay you need to go to bed extra early," he said. "The bed now has the power to help overcome your racing mind and allow you to fall asleep."
@@ -245,7 +245,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
             break;
         case SDKTextFiledView_Type_Password_New:
             iconName = mw_passowrd_icon;
-            lableName = @"請輸入新密碼";
+            lableName = maybeie_author;
 
 /**
   wn
@@ -254,13 +254,13 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 
 Just as cues tell Broadway stars when to step onto the stage, research has shown that adding a cue to your plan helps you remember when to act. Be sure to detail when and where you'll f 
 **/
-            placeholderText = @"請輸入新密碼";
+            placeholderText = maybeie_author;
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
-            lableName = @"輸入舊密碼";
-            placeholderText = @"輸入舊密碼";
+            lableName = rangeivity_habilast;
+            placeholderText = rangeivity_habilast;
             showEye = YES;
             break;
 
@@ -306,7 +306,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
         make.width.mas_equalTo(self.lableIconImageView.mas_height);
     }];
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(0.5);
@@ -405,7 +405,7 @@ A well-known speaker started off his seminar by holding up a $20 bill. In the ro
 **/
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:read_hered]}];
     mUITextField.attributedPlaceholder = attrStr;
     [self addSubview:mUITextField];
     [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -505,7 +505,7 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
         }];
     }
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [self addSubview:lineView2];
 // you’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it will lead you to your dest
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -692,7 +692,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
         make.width.mas_equalTo(self.lableIconImageView.mas_height);
     }];
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(0.5);
@@ -752,7 +752,7 @@ A steeper penalty than shame, however, is putting cold hard cash on the table, a
     }
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString:read_hered]}];
     mUITextField.attributedPlaceholder = attrStr;
     [self addSubview:mUITextField];
     [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -891,7 +891,7 @@ He proceeded to crumple the 20 dollar note up. He then asked,
     UIView *lineView2 = [[UIView alloc] init];
 // the "what the hell effect." Here's what it looks like: You planned to get to bed early every night but couldn't resist staying up late one Friday to watch an ext
     lineView2.hidden = YES;
-    lineView2.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
 
 /**
   宿命。研究表明，设定困难的目标（比如每晚10点入睡），但每周给自己一两张豁免卡，就可以比设定没有回旋余地的或难或易的目标获得更好的结果。

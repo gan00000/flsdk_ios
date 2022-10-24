@@ -96,7 +96,7 @@ There are not enough ways to
 
 "Now you know when you have to stop and get ready to go to bed whether you're done or not," Grander said. "The problem is we  
 **/
-    NSString *lableName = @"電話";
+    NSString *lableName = pancrean_opiant;
     UIView *areaCodeContentView = [[UIView alloc] init];
     areaCodeContentView.layer.cornerRadius = 4;
     areaCodeContentView.backgroundColor = [UIColor whiteColor];
@@ -221,7 +221,7 @@ Ther
 **/
     tipsUILabel.backgroundColor = [UIColor clearColor];
     tipsUILabel.numberOfLines = 1;
-    tipsUILabel.textColor = [UIColor colorWithHexString:@"#FF3E37"];
+    tipsUILabel.textColor = [UIColor colorWithHexString:androile_claustrmost];
     [areaCodeContentView addSubview:tipsUILabel];
     [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(lableIconImageView.mas_trailing).mas_offset(2);
@@ -371,9 +371,9 @@ Spending time around high achievers can boost your own performance. If your New 
 //Still the hands 
            placeHolderTextSize = 10;
        }
-    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:@"請輸入電話號碼"
+    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:alg_Mrery
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],
-                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#A0A0A0"]}];
+                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString:stinguly_easyeur]}];
     self.mUITextField.attributedPlaceholder = attrStr;
     [phoneInputContentView addSubview:self.mUITextField];
 

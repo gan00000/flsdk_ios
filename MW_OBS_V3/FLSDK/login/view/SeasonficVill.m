@@ -269,7 +269,7 @@ MV
 
 《Flightless Bird, American Mouth 》 -Iron & W 
 **/
-        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:understand_establishaster] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   -to-bed plans went out the window because "what the hell," you'd already failed.
@@ -403,7 +403,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 
 正如出场提示告诉百老汇明星何时登台一样，研究表明，在你的计划中加入信息提示， 
 **/
-        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:understand_establishaster]];
         rememberTermsLable.numberOfLines = 1;
         [termAgreeView addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -446,9 +446,9 @@ Bella, the only reason I left was because I thought I was prot
         }];
         ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
         termAgreeView.hidden = !mConfigModel.showContract;
-        accountLoginBtn = [BedeurFail initBtnWithTitleText:@"登入" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
+        accountLoginBtn = [BedeurFail initBtnWithTitleText:circumad_triciness fontSize:FS(17) textColor:[UIColor whiteColor] tag:kAccountLoginActTag selector:@selector(registerViewBtnAction:) target:self];
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
         [self addSubview:accountLoginBtn];
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -470,7 +470,7 @@ Bella, the only reason I left was because I thought I was prot
         }];
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"其他登入";
+        otherLabelTips.text = zymot_TVile;
 
 /**
    I still don't know if I can control myself.
@@ -479,7 +479,7 @@ When life offers you a dream so far beyond any of your expectations, it’s not 
 当生活给了你一个远远超过你期望的美梦，那么，当这一期结束时，也就 
 **/
         otherLabelTips.numberOfLines = 1;
-        otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        otherLabelTips.textColor = [UIColor colorWithHexString:understand_establishaster];
         [loginTypeView addSubview:otherLabelTips];
 
 /**

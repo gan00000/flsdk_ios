@@ -216,7 +216,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 
 追随能够 
 **/
-        lineView1.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        lineView1.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
         [self addSubview:lineView1];
         [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(0.5);
@@ -260,7 +260,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
 //
 //
 //Happily, there is a way t
-        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
 
 /**
   功。你可以和朋友打赌，赌你会坚持新年计划。这样做的逻辑很简单。激励措施会改变我们的决定，而 
@@ -341,7 +341,7 @@ It may sound like a small shift in thinking, but it's an important one, Grander 
         }];
         UIButton *okBtn = [BedeurFail initBtnWithTitleText:@"確  認" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(25)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
         [self addSubview:okBtn];
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 

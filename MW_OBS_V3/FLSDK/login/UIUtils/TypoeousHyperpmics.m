@@ -91,7 +91,7 @@ Watching the warm poison rats
 看着 
 **/
             highlightedImage = ligateur_firstization;
-            titleText = @"會員賬號登入";
+            titleText = Mrsaceous_doloritious;
             break;
         case BUTTON_TYPE_FB:
             normalImage = tectonade_relationship;
@@ -134,13 +134,13 @@ It may sound like a small shift in thinking, but it's an important one, Grander 
 
 Most adults need between seven and eight hours 
 **/
-            titleText = @"會員登入";
+            titleText = firstetic_checkious;
 // hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stoppe
             break;
         case BUTTON_TYPE_ACCOUNT_REGISTER:
                    normalImage = ligateur_firstization;
                    highlightedImage = ligateur_firstization;
-                   titleText = @"註冊會員";
+                   titleText = ruptkin_superial;
                    break;
         case BUTTON_TYPE_OK:
 
@@ -232,7 +232,7 @@ Still the hands went into the air.
         case BUTTON_TYPE_CHANGE_ACCOUNT:
             normalImage = ligateur_firstization;
             highlightedImage = ligateur_firstization;
-            titleText = @"切換帳號";
+            titleText = ableo_lusard;
             break;
         case BUTTON_TYPE_BIND_ACCOUNT://綁定會員
             normalImage = ligateur_firstization;
@@ -241,7 +241,7 @@ Still the hands went into the air.
   the star that twinkles in your heart for you alone are capable of making your brightest dreams come true. Give your hopes everything you’ve got and you will catch the star that holds 
 **/
             highlightedImage = ligateur_firstization;
-            titleText = @"綁定會員";
+            titleText = someive_primadescribeacious;
             break;
 //the amount of time you need in order to set yourself up for a productive tomorrow."
 //

@@ -170,7 +170,7 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
         tipsUILabel.numberOfLines = 1;
 //riday to watch an extra episode of "Succession." After that, your early-to-bed plans went out th
-        tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        tipsUILabel.textColor = [UIColor colorWithHexString:understand_establishaster];
         [self addSubview:tipsUILabel];
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
 //e and the body doesn't know how to respond.
@@ -189,9 +189,9 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
 One easy way to do this is by telling  
 **/
         }];
-        regAccountBtn = [BedeurFail initBtnWithTitleText:@"確認註冊" fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
+        regAccountBtn = [BedeurFail initBtnWithTitleText:malleo_realetic fontSize:FS(17) textColor:[UIColor whiteColor] tag:kRegisterAccountActTag selector:@selector(registerViewBtnAction:) target:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        regAccountBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
 //me a dog-eared map
 //你偷了一张狗耳式的地图给我
 //And called for you everywhere

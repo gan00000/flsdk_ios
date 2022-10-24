@@ -183,7 +183,7 @@ When l
 美国疾病控制与预防中心指出，大多数成人需要7到8小时睡眠时间才能得到充分休息。因此如果一个人每天要在早上7点 
 **/
         }];
-        UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *bindTipLabel = [BedeurFail initLabelWithText:GetString(socialess_mantion) fontSize:FS(10) textColor:[UIColor colorWithHexString:understand_establishaster]];
         [self addSubview:bindTipLabel];
         [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 //l pursuit.
@@ -200,7 +200,7 @@ When l
         }];
         UIButton *okBtn = [BedeurFail initBtnWithTitleText:GetString(omaacy_plen) fontSize:FS(17) textColor:[UIColor whiteColor] tag:kOkActTag selector:@selector(registerViewBtnAction:) target:self];
         [okBtn.layer setCornerRadius:VH(25)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
 
 /**
   sun shines at your face and the way the cold breeze of the morning surprises us.

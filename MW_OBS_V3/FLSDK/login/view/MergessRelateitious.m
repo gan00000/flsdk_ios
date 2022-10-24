@@ -141,7 +141,7 @@ Still the hands went into the air.
 //
 //
 //“Well，” he replied, “what if I do this?” He dropped it on the ground and started to grind it into the floor with his shoe. He picked it up, now crumpled and dirty. “Now, who
-        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:@"綁定會員帳號" hander:^(NSInteger) {
+        mLoginTitleView = [[LayfoldCheckth alloc] initViewWithTitle:nocier_ramacious hander:^(NSInteger) {
         }];
         [self addSubview:mLoginTitleView];
 //图片
@@ -290,7 +290,7 @@ Plotting when and where you'll execute on your New Year's resolution jogs your m
 //你在这里，是因为有我。
 //Nobody's ever loved anybody
             UILabel *titleLable = [[UILabel alloc] init];
-           titleLable.text = @"Apple帳號綁定";
+           titleLable.text = popularite_ligataire;
            titleLable.font = [UIFont systemFontOfSize:VH(32)];
            titleLable.textAlignment = NSTextAlignmentCenter;
            titleLable.backgroundColor = [UIColor clearColor];

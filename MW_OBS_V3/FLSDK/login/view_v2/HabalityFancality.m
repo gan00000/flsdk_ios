@@ -209,7 +209,7 @@ This may sound sinister,
         tipsUILabel.text = catalineate_PMally.localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
         tipsUILabel.numberOfLines = 0;
-        tipsUILabel.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        tipsUILabel.textColor = [UIColor colorWithHexString:understand_establishaster];
         [self addSubview:tipsUILabel];
 //ate goal is attainable as long as you commit yourself to i
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -300,7 +300,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 
 I miss the way the sun sh 
 **/
-        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString:understand_establishaster];
         [self addSubview:vfCodeFiledView_bottom_line];
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.mas_equalTo(accountSDKTextFiledView);

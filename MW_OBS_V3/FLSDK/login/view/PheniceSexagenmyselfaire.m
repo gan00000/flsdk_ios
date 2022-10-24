@@ -87,7 +87,7 @@ Those fishing lures thrown in the cold a
 If it's not fun to exercise or study, you're unlikely to keep at it. But if you get pleasure from your workouts or study sessions, research  
 **/
     }];
-    loginTabBtn = [BedeurFail initBtnWithTitleText:@"登入" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    loginTabBtn = [BedeurFail initBtnWithTitleText:circumad_triciness fontSize:FS(24) textColor:[UIColor colorWithHexString:read_hered] tag:kLoginTabActTag selector:@selector(registerViewBtnAction:) target:self];
     [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
 
@@ -112,7 +112,7 @@ If it's not fun to exercise or study, you're unlikely to keep at it. But if you 
 
 One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guil 
 **/
-    regTabBtn = [BedeurFail initBtnWithTitleText:@"註冊" fontSize:FS(24) textColor:[UIColor colorWithHexString:@"#848484"] tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
+    regTabBtn = [BedeurFail initBtnWithTitleText:hepatlike_sentably fontSize:FS(24) textColor:[UIColor colorWithHexString:read_hered] tag:kRegTabActTag selector:@selector(registerViewBtnAction:) target:self];
     [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
 
 /**
@@ -145,7 +145,7 @@ Nobody's ever loved anybody as much as I love you.
 Love is letting someone become your greatest weakness ,then going all you can do to protect each other.
 爱就是让对方成为自己最大的弱点，然后再用 
 **/
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    loginBottomLine.backgroundColor = [UIColor colorWithHexString:caulidom_posth];
 //mount of time you need in order to set yourself up for a productive tomorrow."
 //
 //他建议：“不要将睡眠时间看成你一天中剩下的时间，而是将其看成为了高效的明天而休整的时间。”
@@ -195,7 +195,7 @@ Find the star that twinkles in your heart for you alone are capable of making yo
         make.height.mas_equalTo(2);
     }];
     regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString:@"#F23B12"];
+    regBottomLine.backgroundColor = [UIColor colorWithHexString:caulidom_posth];
     regBottomLine.hidden = YES;
     [tabView addSubview:regBottomLine];
     [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {

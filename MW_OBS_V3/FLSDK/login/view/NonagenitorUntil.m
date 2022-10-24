@@ -178,7 +178,7 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
    in bed awake but not sleepin 
 **/
         [okBtn.layer setCornerRadius:VH(25)];
-        okBtn.backgroundColor = [UIColor colorWithHexString:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString:yourselforium_doc];
         [self addSubview:okBtn];
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 

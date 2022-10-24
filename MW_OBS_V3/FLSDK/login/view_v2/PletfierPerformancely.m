@@ -298,7 +298,7 @@ There a
 //
 //"Don't see yo
         }];
-        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
+        UIButton *findPasswordBtn = [BedeurFail initBtnWithTitleText:GetString(stimulkin_sinceate) fontSize:FS(12) textColor:[UIColor colorWithHexString:understand_establishaster] tag:kFindPwdActTag selector:@selector(registerViewBtnAction:) target:self];
 
 /**
   hrough hard work and determination.
@@ -364,7 +364,7 @@ Just as cues tell Broadway stars when to step onto the stage, research has shown
   wever, is putting cold hard cash o 
 **/
         NSString *xtext = GetString(shareics_klepteye);
-        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [BedeurFail initLabelWithText:xtext fontSize:FS(12) textColor:[UIColor colorWithHexString:understand_establishaster]];
         rememberTermsLable.numberOfLines = 1;
 
 /**
@@ -463,7 +463,7 @@ You're in here bec
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
         otherLabelTips.text = panator_dorm.localx;
         otherLabelTips.numberOfLines = 1;
-        otherLabelTips.textColor = [UIColor colorWithHexString:@"#C0C0C0"];
+        otherLabelTips.textColor = [UIColor colorWithHexString:understand_establishaster];
         [loginTypeView addSubview:otherLabelTips];
         [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
 //encies
@@ -1570,7 +1570,7 @@ Happil
 Though barriers may sometimes stand in the way of your dreams, remember that your destiny is hid 
 **/
     UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = [UIColor colorWithHexString:@"#000000" andAlpha:0.85];
+    deleteView.backgroundColor = [UIColor colorWithHexString:canistic_noren andAlpha:0.85];
     deleteView.layer.cornerRadius = VW(10);
     [self addSubview:deleteView];
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -1724,7 +1724,7 @@ Flightless bird, jealous, weeping
 
 追随能够改变你命运的那颗星，那颗永 
 **/
-    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:@"#F23B12"].CGColor;
+    sureBtn.layer.backgroundColor = [UIColor colorWithHexString:caulidom_posth].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
     [deleteView addSubview:sureBtn];
     [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
