@@ -3,7 +3,7 @@
 #import "LanguitudeQuasstenddom.h"
 #import "CrepitnessBringic.h"
 #import "NSString+ManagerBrachiine.h"
-#define SDKRES    [CrepitnessBringic reader_MMMethodMMM]
+#define SDKRES    [CrepitnessBringic reader_WLFuncTag]
 //纷繁的思绪，让你酣然入睡。”
 //
 //3. Change your attitude about sleep
@@ -11,9 +11,9 @@
 //改变对睡眠的心态
 //
 //Many people view sleeping as the final thing they have to do in a jam-pack
-#define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
-#define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
-#define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]
+#define GetConfigString(key) [SDKRES getStringForKey_WLFuncTag:key]
+#define GetConfigBool(key) [SDKRES getBoolForKey_WLFuncTag:key]
+#define GetString(key) [SDKRES getLocalizedStringForKey_WLFuncTag:key]
 
 /**
   you have all learned a very valuable lesson. No matter what I did to the money, you still wanted it because it did 

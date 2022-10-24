@@ -1671,7 +1671,7 @@ That thinking needs to be changed, Grander said.
 **/
 }
 
-//+ (NSString *)getSdkEncryptKey_MMMethodMMM
+//+ (NSString *)getSdkEncryptKey_WLFuncTag
 //{
 //    NSString *bundleId = [FoeniveNow getBundleIdentifier];
 //    NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];

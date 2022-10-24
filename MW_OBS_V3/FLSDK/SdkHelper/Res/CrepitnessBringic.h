@@ -6,7 +6,7 @@
  获取到加密信息（key和value都加密的字典）以后，进行对应的解密，存在自己的_coneConfDic中
  并且提供一个接口“getStringForKey：”方法，供其他需要的地方获取。*/
 
-#define SDK_DEFAULT_BUNDLE_NAME  [[CrepitnessBringic reader_MMMethodMMM] getSdkBundleName_MMMethodMMM]
+#define SDK_DEFAULT_BUNDLE_NAME  [[CrepitnessBringic reader_WLFuncTag] getSdkBundleName_WLFuncTag]
 
 #import <Foundation/Foundation.h>
 
@@ -20,19 +20,19 @@
 
 @property (nonatomic,strong) NSMutableDictionary * textStringDic;
 
-+ (CrepitnessBringic *)reader_MMMethodMMM;
++ (CrepitnessBringic *)reader_WLFuncTag;
 //+ (void)releaseReader;
 
 /*配置文件都会读取到该单例的字典中，使用单例中的配置信息时候，可以通过该方法，查询并获取对应的值。*/
-- (NSString *)getStringForKey_MMMethodMMM:(NSString *)key;
+- (NSString *)getStringForKey_WLFuncTag:(NSString *)key;
 
-- (BOOL)getBoolForKey_MMMethodMMM:(NSString *)key;
+- (BOOL)getBoolForKey_WLFuncTag:(NSString *)key;
 
-- (NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key;
+- (NSString *)getLocalizedStringForKey_WLFuncTag:(NSString *)key;
 
 //- (void)setEncryptPlistWithKey:(NSString *)key andValue:(NSString *)val;
 
-//- (void)setBundleInfo_MMMethodMMM;
+//- (void)setBundleInfo_WLFuncTag;
 
 
 -(NSString *)getGameCode;
@@ -53,6 +53,6 @@
 -(BOOL)isVersion2;
 
 -(BOOL)isMoreLanguage;
-- (NSString *)getSdkBundleName_MMMethodMMM;
-- (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent;
+- (NSString *)getSdkBundleName_WLFuncTag;
+- (NSString *)decryptAllStringContent_WLFuncTag:(NSString *)textEncrypContent;
 @end

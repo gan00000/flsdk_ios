@@ -1026,7 +1026,7 @@ Wide on my plastic t
 }
 //+ (NSString *)loginEncryptFromString:(NSString *)aString
 //{
-//    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
+//    return [CapitdecideEmeticmost getEncryptStringFromString:aString WithKey_WLFuncTag:kEncryKey iv_WLFuncTag:kEncryIv];
 //}
 + (BOOL)momentiveEnvironmentic
 {
@@ -1059,7 +1059,7 @@ Wide on my plastic t
 //Only for making me want you so bad 
 //**/
 //{
-//    return [CapitdecideEmeticmost getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
+//    return [CapitdecideEmeticmost getDecryptStringFromString_WLFuncTag:aString withKey_WLFuncTag:kEncryKey iv_WLFuncTag:kEncryIv];
 //}
 + (void)_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {

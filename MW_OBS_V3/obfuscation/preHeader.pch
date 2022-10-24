@@ -16,7 +16,7 @@
 #import "imageNameHeader.h"
 
 
-#define Decrypt_AllStringContent(text)  [[CrepitnessBringic reader_MMMethodMMM] decryptAllStringContent_MMMethodMMM:text]
+#define Decrypt_AllStringContent(text)  [[CrepitnessBringic reader_WLFuncTag] decryptAllStringContent_WLFuncTag:text]
 
 #import "StringHeaders.h"
 #endif /* preHeader_h */
