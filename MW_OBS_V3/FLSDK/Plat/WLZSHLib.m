@@ -248,7 +248,7 @@ When life offers you a dream so far beyond any of your expectations, it’s not 
 Bella, the only reason I left was because I though 
 **/
 }
-- (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
+- (void)sdkLoginWithHandler_WLFuncTag:(SDKLoginBlock)cmopleteHandler
 
 /**
   
@@ -281,7 +281,7 @@ Flightless bird, jealous, weeping
     }
     self.loginCompletionHandler = cmopleteHandler;
     if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-        [self showNoticeView];
+        [self showNoticeView_WLFuncTag];
     }else{
 // be inclined to conform to their patterns of behavior.
 //
@@ -290,10 +290,10 @@ Flightless bird, jealous, weeping
 //
 //
 //Strangely enough, there is evidence that
-        [self sdkLoginWithHandlerForInner];
+        [self sdkLoginWithHandlerForInner_WLFuncTag];
     }
 }
-- (void)sdkLoginWithHandlerForInner
+- (void)sdkLoginWithHandlerForInner_WLFuncTag
 
 /**
   
@@ -369,10 +369,10 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
 //“好，”他说道，“如果我这样做会怎么样呢？”他把纸币扔到
     }];
 }
--(void)showNoticeView
+-(void)showNoticeView_WLFuncTag
 {
     BorniorVitrage *mNoticeViewV2 = [[BorniorVitrage alloc] initWithCompleter:^{
-        [self sdkLoginWithHandlerForInner];
+        [self sdkLoginWithHandlerForInner_WLFuncTag];
 
 /**
   美好的梦想变成现实。满怀希望并全力以赴，你就能摘下改变命运的那颗星。
@@ -411,18 +411,18 @@ Melatonin is a hormone produced by the body to regulate when you get sleepy and 
 
 Strangely enough, there is evidence that coaching friends with shared goals can improve your success rate, too. When you're on the hook to give someone else tips on how to achie 
 **/
-- (void)setRoleInfoWithRoleId:(NSString *)roleId
-                     roleName:(NSString *)roleName
-                    roleLevel:(NSString *)roleLevel
-                 roleVipLevel:(NSString *)roleVipLevel
-                   serverCode:(NSString *)serverCode
+- (void)setRoleInfoWithRoleId_WLFuncTag:(NSString *)roleId
+                     roleName_WLFuncTag:(NSString *)roleName
+                    roleLevel_WLFuncTag:(NSString *)roleLevel
+                 roleVipLevel_WLFuncTag:(NSString *)roleVipLevel
+                   serverCode_WLFuncTag:(NSString *)serverCode
 
 /**
   lt if you flake out. Detailed planning can also help you anticipate and dodge obstacles -- so if you plan to meditate during lunch, you'll be sure to decline a proffered lunch meeting.
 
 提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻碍——如果你计划在午餐时冥想，你一定 
 **/
-                   serverName:(NSString *)serverName
+                   serverName_WLFuncTag:(NSString *)serverName
 {
 
 /**
@@ -485,22 +485,22 @@ Love is letting someone become your greatest weakness ,then going all you can do
 //
 //I miss the morning kisses and the morning snuggling you and I sh
 }
-- (void)payWithRoleId:(NSString *)roleId
-             roleName:(NSString *)roleName
+- (void)payWithRoleId_WLFuncTag:(NSString *)roleId
+             roleName_WLFuncTag:(NSString *)roleName
 //."
 //
 //格兰德纳说：“你可以给出的最好的睡眠建议就是醒了就起床，不要醒着躺在床上。无论是刚入夜还是夜已深，如果你躺在床上二三十分钟都睡不着，就起床调整一下。也许你只需要5分钟就能感觉到困意，也许需要一小时，但是这段时间不要醒着躺在床上。”
 //
 //Why is that so important? Because lying in bed awake can form an association
-            roleLevel:(NSString *)roleLevel
-         roleVipLevel:(NSString *)roleVipLevel
+            roleLevel_WLFuncTag:(NSString *)roleLevel
+         roleVipLevel_WLFuncTag:(NSString *)roleVipLevel
 //our brain that can lead to chronic insomnia, Grandner expl
-           serverCode:(NSString *)serverCode
-           serverName:(NSString *)serverName
-            productId:(NSString *)productId
-            cpOrderId:(NSString *)cpOrderId
-                extra:(NSString *)extra
-    completionHandler:(SDKPayBlock) handler
+           serverCode_WLFuncTag:(NSString *)serverCode
+           serverName_WLFuncTag:(NSString *)serverName
+            productId_WLFuncTag:(NSString *)productId
+            cpOrderId_WLFuncTag:(NSString *)cpOrderId
+                extra_WLFuncTag:(NSString *)extra
+    completionHandler_WLFuncTag:(SDKPayBlock) handler
 //ne way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your favorite TV show at the gym so you'll star
 {
     if (![[NSThread currentThread] isMainThread]) {
@@ -736,10 +736,10 @@ Big pill, stuck goi
         }
     }];
 }
-- (void)trackEventWithEventName:(NSString *)name{
-    [self trackEventWithEventName:name eventValues:nil];
+- (void)trackEventWithEventName_WLFuncTag:(NSString *)name{
+    [self trackEventWithEventName_WLFuncTag:name eventValues_WLFuncTag:nil];
 }
-- (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
+- (void)trackEventWithEventName_WLFuncTag:(NSString *)name eventValues_WLFuncTag:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
 
 /**
@@ -769,7 +769,7 @@ If your New Year's resolution is to meditate five days each week, a pl
   you have all learned a very valuable lesson. No matter what I did to the money, you still wanted it because it did not decrease in val 
 **/
 }
-- (void)requestStoreReview
+- (void)requestStoreReview_WLFuncTag
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
@@ -826,7 +826,7 @@ Plotting when and where you'll execute on your New Year's resolution jogs your m
 
 That thin 
 **/
-- (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
+- (void)shareWithTag_WLFuncTag:(NSString *)hashTag message_WLFuncTag:(NSString *)message url_WLFuncTag:(NSString *)url successBlock_WLFuncTag:(ShareBlock)shareBlock{
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [LanguitudeQuasstenddom showAlertWithMessage:@"请在主线程调用该接口"];
@@ -881,7 +881,7 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 折翼的鸟，在美国 
 **/
 }
--(void)showBindPhoneViewWithBlock:(MWBlock) mBlock
+-(void)showBindPhoneViewWithBlock_WLFuncTag:(MWBlock) mBlock
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
@@ -937,7 +937,7 @@ He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants
 //
 //Therefore it's important to have a standard wake
 }
-- (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
+- (void)showUpgradeAccountViewWithBlock_WLFuncTag:(MWBlock)mBlock
 {
 
 /**
@@ -1053,7 +1053,7 @@ He unleashed the full, devastating power of his eyes on me, as if trying to comm
 
  《Flightless Bird, American Mouth》是由Iron & Wine乐队演唱的一首独立民谣,Iron & Wine 这个一个人的乐队，却用让人赞叹的旋律和歌词带给听众一首清新雅致而又静生澎湃田园式的美国乡村民谣，这 
 **/
-- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
+- (void)requestVfCodeWithAreaCode_WLFuncTag:(NSString *)areaCode telephone_WLFuncTag:(NSString *)telephone Block_WLFuncTag:(MWBlock)mMWBlock
 
 /**
   he US Centers for Disease Control and Prevention. So if a person needed to rise at 7 am each day, backtiming  
@@ -1142,7 +1142,7 @@ A well-know
 //
 //One way to make pursuing a goal that normally feels like a chore more fun is to combine it with a guilty pleasure. Consider only letting yourself watch your favorite TV show at the
 }
-- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
+- (void)requestBindPhoneAreaCode_WLFuncTag:(NSString *)areaCode telephone_WLFuncTag:(NSString *)telephone vfCode_WLFuncTag:(NSString *)vfCode Block_WLFuncTag:(MWBlock)mMWBlock{
 
 /**
   想的途中有时会遇到障碍，要知道这是命运对你的挑战。不是每个人都会赞成你的选择，接受这个现实，并相信自我的判断，追随那颗在你心中闪烁的明星，它会引领你踏上命运的征途。坚持不懈，你就能享受那些幸福时刻。
@@ -1248,7 +1248,7 @@ That thinking needs to be changed, Grander said.
         }
     }];
 }
-- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
+- (void)requestUpgradeWithAccount_WLFuncTag:(NSString *)account password_WLFuncTag:(NSString *)password Block_WLFuncTag:(MWBlock)mMWBlock
 {
     if (![OdorSever validUserName:account]) {
 
@@ -1405,7 +1405,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
         }
     }];
 }
-- (void)openCs
+- (void)openCs_WLFuncTag
 
 /**
   ote up. He then asked, “Who still wants it?” Still the hands were up in the air.
@@ -1448,7 +1448,7 @@ If your New Year's resolution is to meditate five days each week, a plan like "I
     NSString *resultURL = [AperthandBalowise createSdkUrl:csurl];
     [LeastabilityEntreic webViewControllerPresentingWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler:nil animation:NO animationStyle:UIModalTransitionStyleCoverVertical];
 }
-- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
+- (void)shareLineWithContent_WLFuncTag:(NSString *)content block_WLFuncTag:(MWBlock) bMWBlock
 {
     if (![[NSThread currentThread] isMainThread]) {
 //ess to those who love you. The worth of our lives comes, not in what we do or who we know, but by Who We Are.”
@@ -1508,7 +1508,7 @@ I'
     }
 //would be too vague. 
 }
-- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
+- (void)addLocalNotificationWithTitle_WLFuncTag:(NSString *)title subtitle_WLFuncTag:(NSString *)subtitle body_WLFuncTag:(NSString *)body trigger_WLFuncTag:(nullable UNNotificationTrigger *)trigger notifyId_WLFuncTag:(NSString *)notifyId{
     SDK_LOG(redry_andrwhyery);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
@@ -1566,70 +1566,9 @@ Flightless bird, jealous, weeping
 //"The best sleep tip you can ever give somebody is get up -- don't lay in bed awake but not sleeping," Grandner said. "Whether it's the 
         }];
 
-/**
-  p. He then asked, “Who still wants it?” Still the hands were up in the air.
-
-
-
-他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多手举在空中。
-
-
-
-“Well，” he replied, “what if I do this?” He dropped it o 
-**/
     }else {
 
-/**
-  oor sleep.
-
-因此每天在固定时间起床很重要，即使是周末、假期或是前一天晚上没睡好也不应该例外。
-
-2. Don't 
-**/
     }
 }
-#pragma mark - 内部方法
-- (void)gama_showPlatformToView:(UIView *)view
-{
-}
-- (void)gama_hiddenPlatform
-//waited for you. I'd rather die than stay away from you.
-//你不知道，等了你有多久。所以，宁可死别，绝不生离。
-//I like the night. Without the dark, we'd never see the stars.
-//我喜欢夜晚。没有黑暗，我们永远都看不见星星。
-//It is well worth of falling love in someone, even can keep up with the unavoidable damage.
-//真正爱上一个人的时候，一切都那么值得，包括不可避免的伤害。
-//I always have and always will.
-//一直爱，永远爱。
-//But it's you, your scent, it's like a drug to 
-{
-}
-//ochistic lion.
-//你不知道我等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
-//图片
-//I love three things in this word.Sun, Moon and you. Sun for morning, Moon for night, and you forever.
-//浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿为朝朝暮暮。
-//Even 
+
 @end
-
-/**
-   lay in bed awake
-
-A well-known speaker started off his seminar by holding up a $20 bill. In the room of 200, he asked, “Who would like this $20 bill?”
-
-
-
-一位有名的演讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
-
-
-
-Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me do this."
-
-
-
-开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
-
-
-
-He proceeded to crumple t 
-**/

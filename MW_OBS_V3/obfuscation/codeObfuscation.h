@@ -80,7 +80,6 @@
 #define gama_imageNamed    licteryPhalarwideward
 #define gama_mainScreenBounds    homitorLanguile
 #define gama_screenScale    friendierMaintainitious
-#define gama_showPlatformToView    oenaneousThrowose
 #define getAccountModels    speciorWantaster
 #define getAfDevKey    formfyQuatien
 #define getAppId    decisioneurAgent
@@ -205,7 +204,7 @@
 #define savePhoneAreaInfo    especiallyiaMoveory
 #define saveReceiptData    yeterFet
 #define saveUserInfo    emetiuousHypty
-#define sdkLoginWithHandlerForInner    agencyityRisk
+#define sdkLoginWithHandlerForInner_WLFuncTag    agencyityRisk
 #define sdk_application    nectistRadic
 #define sdk_applicationDidBecomeActive    anthropoicPlethadministration
 #define sdk_applicationDidEnterBackground    ducacleSagittboardess
