@@ -285,6 +285,7 @@ static dispatch_once_t onceToken;
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * textContent = [self decryptContent_WLFuncTag:textEncrypContent];
+        SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
             // 对数据进行JSON格式化并返回字典形式
@@ -453,13 +454,14 @@ static dispatch_once_t onceToken;
 - (NSString *)decryptAllStringContent_WLFuncTag:(NSString *)textEncrypContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_WLFuncTag], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_WLFuncTag], @"IV");
-    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+//    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
 //    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
     
     NSString *textContent = [CapitdecideEmeticmost getDecryptStringFromString_WLFuncTag:textEncrypContent withKey_WLFuncTag:eKey iv_WLFuncTag:eIV];
+    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
     return textContent;//[textContent stringByReplacingOccurrencesOfString:@"\0" withString:@""];
 }
 
