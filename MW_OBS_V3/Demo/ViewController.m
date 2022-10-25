@@ -5,7 +5,7 @@
 #import "UserModel.h"
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
-#import "WLZSHLib.h"
+#import <WLZHSSDK/WLZSHLib.h>
 
 //#import "LanguitudeQuasstenddom.h"
 
@@ -50,7 +50,7 @@
 {
     [super viewDidLoad];
 
-    
+    [WLZSHLib share].sdkBaseEncryptKey = @"com.mplay.wlzhs";
     // iOS 获取设备当前语言的代码
     NSString *preferredLanguage = [[[NSBundle mainBundle] preferredLocalizations] firstObject];
     // iOS 获取设备当前地区的代码
