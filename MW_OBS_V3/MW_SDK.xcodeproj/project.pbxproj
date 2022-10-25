@@ -14,7 +14,7 @@
 				037C6F6F287686B10041EC34 /* Run Script */,
 			);
 			dependencies = (
-				037C6F74287686D40041EC34 /* PBXTargetDependency */,
+				037169B0290779DE006A4EFD /* PBXTargetDependency */,
 			);
 			name = XCFrameworkMake;
 			productName = Framework;
@@ -96,6 +96,153 @@
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		033B9C9F28DB0DAF000DA93D /* GenetsayDextrition.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B9C9D28DB0DAF000DA93D /* GenetsayDextrition.h */; };
 		033B9CA128DB0DAF000DA93D /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
+		03716915290779BD006A4EFD /* EquiaciousAcuacious.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1628A0FA7C00709536 /* EquiaciousAcuacious.h */; };
+		03716916290779BD006A4EFD /* NSString+EuiorFederalfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+EuiorFederalfy.h */; };
+		03716917290779BD006A4EFD /* CenturylikePascatic.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* CenturylikePascatic.h */; };
+		03716918290779BD006A4EFD /* GamaSDK+OtherslessVorile.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+OtherslessVorile.h */; };
+		03716919290779BD006A4EFD /* HabalityFancality.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA5C28A0FC8600709536 /* HabalityFancality.h */; };
+		0371691A290779BD006A4EFD /* LetteradSupportal.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* LetteradSupportal.h */; };
+		0371691B290779BD006A4EFD /* BorniorVitrage.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6A28A2619500709536 /* BorniorVitrage.h */; };
+		0371691C290779BD006A4EFD /* BuildingantProxim.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* BuildingantProxim.h */; };
+		0371691D290779BD006A4EFD /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
+		0371691E290779BD006A4EFD /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
+		0371691F290779BD006A4EFD /* InsideAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* InsideAuthor.h */; };
+		03716920290779BD006A4EFD /* WPayModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* WPayModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03716921290779BD006A4EFD /* GenetsayDextrition.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B9C9D28DB0DAF000DA93D /* GenetsayDextrition.h */; };
+		03716922290779BD006A4EFD /* MusuleSphen.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA2028A0FA7C00709536 /* MusuleSphen.h */; };
+		03716923290779BD006A4EFD /* GuessizationPhylcapitalee.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6F28A27F0600709536 /* GuessizationPhylcapitalee.h */; };
+		03716924290779BD006A4EFD /* WLoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* WLoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03716925290779BD006A4EFD /* JocspecificfactionStruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* JocspecificfactionStruct.h */; };
+		03716926290779BD006A4EFD /* PrenditudeAtetic.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* PrenditudeAtetic.h */; };
+		03716927290779BD006A4EFD /* MeanerAnnoutsideful.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6628A1FE5800709536 /* MeanerAnnoutsideful.h */; };
+		03716928290779BD006A4EFD /* WLZSHLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* WLZSHLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03716929290779BD006A4EFD /* PletfierPerformancely.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1728A0FA7C00709536 /* PletfierPerformancely.h */; };
+		0371692B290779BD006A4EFD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		0371692C290779BD006A4EFD /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918F82860AECB0029AE6A /* ViewController+MASAdditions.m */; };
+		0371692D290779BD006A4EFD /* GuessizationPhylcapitalee.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7028A27F0600709536 /* GuessizationPhylcapitalee.m */; };
+		0371692E290779BD006A4EFD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FC2860AECB0029AE6A /* MASCompositeConstraint.m */; };
+		0371692F290779BD006A4EFD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FD2860AECB0029AE6A /* MASConstraintMaker.m */; };
+		03716930290779BD006A4EFD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FE2860AECB0029AE6A /* MASLayoutConstraint.m */; };
+		03716931290779BD006A4EFD /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FF2860AECB0029AE6A /* NSArray+MASAdditions.m */; };
+		03716932290779BD006A4EFD /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919002860AECB0029AE6A /* View+MASAdditions.m */; };
+		03716933290779BD006A4EFD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919032860AECB0029AE6A /* MASConstraint.m */; };
+		03716934290779BD006A4EFD /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919052860AECB0029AE6A /* MASViewConstraint.m */; };
+		03716935290779BD006A4EFD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919062860AECB0029AE6A /* MASViewAttribute.m */; };
+		03716936290779BD006A4EFD /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919082860AECB0029AE6A /* UIImage+WebP.m */; };
+		03716937290779BD006A4EFD /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190B2860AECB0029AE6A /* SDWebImageManager.m */; };
+		03716938290779BD006A4EFD /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190C2860AECB0029AE6A /* SDWebImageDecoder.m */; };
+		03716939290779BD006A4EFD /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190E2860AECB0029AE6A /* UIImageView+HighlightedWebCache.m */; };
+		0371693A290779BD006A4EFD /* JocspecificfactionStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* JocspecificfactionStruct.m */; };
+		0371693B290779BD006A4EFD /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919102860AECB0029AE6A /* SDWebImageDownloader.m */; };
+		0371693C290779BD006A4EFD /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919112860AECB0029AE6A /* UIImage+GIF.m */; };
+		0371693D290779BD006A4EFD /* MeanerAnnoutsideful.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* MeanerAnnoutsideful.m */; };
+		0371693E290779BD006A4EFD /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919132860AECB0029AE6A /* UIImage+MultiFormat.m */; };
+		0371693F290779BD006A4EFD /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919142860AECB0029AE6A /* SDWebImageCompat.m */; };
+		03716940290779BD006A4EFD /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919152860AECB0029AE6A /* SDWebImagePrefetcher.m */; };
+		03716941290779BD006A4EFD /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919182860AECB0029AE6A /* SDImageCache.m */; };
+		03716942290779BD006A4EFD /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191A2860AECB0029AE6A /* SDWebImageDownloaderOperation.m */; };
+		03716943290779BD006A4EFD /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191D2860AECB0029AE6A /* NSData+ImageContentType.m */; };
+		03716944290779BD006A4EFD /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
+		03716945290779BD006A4EFD /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
+		03716946290779BD006A4EFD /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
+		03716947290779BD006A4EFD /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
+		03716948290779BD006A4EFD /* HabalityFancality.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* HabalityFancality.m */; };
+		03716949290779BD006A4EFD /* VesicallyGreatless.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* VesicallyGreatless.m */; };
+		0371694A290779BD006A4EFD /* SophoindividualitionBillain.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* SophoindividualitionBillain.m */; };
+		0371694B290779BD006A4EFD /* CoronencyQuindenot.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CoronencyQuindenot.m */; };
+		0371694C290779BD006A4EFD /* SpendSubative.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* SpendSubative.m */; };
+		0371694D290779BD006A4EFD /* OntoonOxyacity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* OntoonOxyacity.m */; };
+		0371694E290779BD006A4EFD /* SoonotErgency.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* SoonotErgency.m */; };
+		0371694F290779BD006A4EFD /* HimselfainPont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* HimselfainPont.m */; };
+		03716950290779BD006A4EFD /* CollegesureSafeeur.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* CollegesureSafeeur.m */; };
+		03716951290779BD006A4EFD /* ApplycySoial.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* ApplycySoial.m */; };
+		03716952290779BD006A4EFD /* MusuleSphen.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MusuleSphen.m */; };
+		03716953290779BD006A4EFD /* MachineileSenly.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* MachineileSenly.m */; };
+		03716954290779BD006A4EFD /* WarierPravproof.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* WarierPravproof.m */; };
+		03716955290779BD006A4EFD /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; };
+		03716956290779BD006A4EFD /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; };
+		03716957290779BD006A4EFD /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
+		03716958290779BD006A4EFD /* PrenditudeAtetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* PrenditudeAtetic.m */; };
+		03716959290779BD006A4EFD /* LetteradSupportal.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* LetteradSupportal.m */; };
+		0371695A290779BD006A4EFD /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
+		0371695B290779BD006A4EFD /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
+		0371695C290779BD006A4EFD /* ExtraressApertless.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* ExtraressApertless.m */; };
+		0371695D290779BD006A4EFD /* BuildingantProxim.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* BuildingantProxim.m */; };
+		0371695E290779BD006A4EFD /* CuscardOnomary.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* CuscardOnomary.m */; };
+		0371695F290779BD006A4EFD /* OpportunityoOmmmanageity.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* OpportunityoOmmmanageity.m */; };
+		03716960290779BD006A4EFD /* MarketidMereid.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* MarketidMereid.m */; };
+		03716961290779BD006A4EFD /* AperthandBalowise.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* AperthandBalowise.m */; };
+		03716962290779BD006A4EFD /* FilmadeExpectaceous.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* FilmadeExpectaceous.m */; };
+		03716963290779BD006A4EFD /* PletfierPerformancely.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2228A0FA7C00709536 /* PletfierPerformancely.m */; };
+		03716964290779BD006A4EFD /* SomeoneshipSesquipresentfaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* SomeoneshipSesquipresentfaction.m */; };
+		03716965290779BD006A4EFD /* AudienceEquator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* AudienceEquator.m */; };
+		03716966290779BD006A4EFD /* WPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* WPayModel.m */; };
+		03716967290779BD006A4EFD /* WLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* WLoginModel.m */; };
+		03716968290779BD006A4EFD /* WLZSHLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* WLZSHLib.m */; };
+		03716969290779BD006A4EFD /* OpulshowizationTurpon.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* OpulshowizationTurpon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0371696A290779BD006A4EFD /* GamaSDK+OtherslessVorile.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+OtherslessVorile.m */; };
+		0371696B290779BD006A4EFD /* MatteroCommonfold.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* MatteroCommonfold.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0371696C290779BD006A4EFD /* ThoughlikeCineaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* ThoughlikeCineaire.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0371696D290779BD006A4EFD /* LanguitudeQuasstenddom.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* LanguitudeQuasstenddom.m */; };
+		0371696E290779BD006A4EFD /* OligbeautifulIgeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* OligbeautifulIgeer.m */; };
+		0371696F290779BD006A4EFD /* UIAlertController+ForwardityCampaignfaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+ForwardityCampaignfaction.m */; };
+		03716970290779BD006A4EFD /* UIColor+MnelessSalubrwindeur.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+MnelessSalubrwindeur.m */; };
+		03716971290779BD006A4EFD /* UIColor+OgityTheoryify.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+OgityTheoryify.m */; };
+		03716972290779BD006A4EFD /* UIScreen+SenstableTypo.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+SenstableTypo.m */; };
+		03716973290779BD006A4EFD /* NSString+ManagerBrachiine.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+ManagerBrachiine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		03716974290779BD006A4EFD /* UIView+GonyticSocialance.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+GonyticSocialance.m */; };
+		03716975290779BD006A4EFD /* NSString+SurgsafeorEntrekitchenetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+SurgsafeorEntrekitchenetic.m */; };
+		03716976290779BD006A4EFD /* FoeniveNow.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* FoeniveNow.m */; };
+		03716977290779BD006A4EFD /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
+		03716978290779BD006A4EFD /* CenturylikePascatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* CenturylikePascatic.m */; };
+		03716979290779BD006A4EFD /* BorniorVitrage.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* BorniorVitrage.m */; };
+		0371697A290779BD006A4EFD /* BedeurFail.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* BedeurFail.m */; };
+		0371697B290779BD006A4EFD /* CandifySiliattorney.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* CandifySiliattorney.m */; };
+		0371697C290779BD006A4EFD /* CarboeerNecrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032ACA4028729E5D00644568 /* CarboeerNecrate.m */; };
+		0371697D290779BD006A4EFD /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; };
+		0371697E290779BD006A4EFD /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE724C589A5000D6B20 /* YYClassInfo.m */; };
+		0371697F290779BD006A4EFD /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEE24C589A5000D6B20 /* AFURLResponseSerialization.m */; };
+		03716980290779BD006A4EFD /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEF24C589A5000D6B20 /* AFHTTPSessionManager.m */; };
+		03716981290779BD006A4EFD /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF124C589A5000D6B20 /* AFURLSessionManager.m */; };
+		03716982290779BD006A4EFD /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF224C589A5000D6B20 /* AFURLRequestSerialization.m */; };
+		03716983290779BD006A4EFD /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF424C589A5000D6B20 /* AFNetworkReachabilityManager.m */; };
+		03716984290779BD006A4EFD /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF524C589A5000D6B20 /* AFSecurityPolicy.m */; };
+		03716985290779BD006A4EFD /* FlyesqueSapiship.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* FlyesqueSapiship.m */; };
+		03716986290779BD006A4EFD /* UIImage+ObatoryClinity.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ObatoryClinity.m */; };
+		03716987290779BD006A4EFD /* CrepitnessBringic.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* CrepitnessBringic.m */; };
+		03716988290779BD006A4EFD /* CapitdecideEmeticmost.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* CapitdecideEmeticmost.m */; };
+		03716989290779BD006A4EFD /* DekaiaPhasarian.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* DekaiaPhasarian.m */; };
+		0371698A290779BD006A4EFD /* CheckMenspossibleair.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* CheckMenspossibleair.m */; };
+		0371698B290779BD006A4EFD /* MontieTheie.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* MontieTheie.m */; };
+		0371698C290779BD006A4EFD /* LeastabilityEntreic.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* LeastabilityEntreic.m */; };
+		0371698D290779BD006A4EFD /* OdorSever.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* OdorSever.m */; };
+		0371698E290779BD006A4EFD /* EtymousBecomeot.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* EtymousBecomeot.m */; };
+		0371698F290779BD006A4EFD /* AlthoughityThemselvesate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* AlthoughityThemselvesate.m */; };
+		03716990290779BD006A4EFD /* OntCaleory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* OntCaleory.m */; };
+		03716991290779BD006A4EFD /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
+		03716992290779BD006A4EFD /* ArtistBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* ArtistBegin.m */; };
+		03716993290779BD006A4EFD /* TypoeousHyperpmics.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* TypoeousHyperpmics.m */; };
+		03716994290779BD006A4EFD /* SeasonficVill.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3624C589A5000D6B20 /* SeasonficVill.m */; };
+		03716995290779BD006A4EFD /* SarcooryPoiequite.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* SarcooryPoiequite.m */; };
+		03716996290779BD006A4EFD /* NonagenitorUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* NonagenitorUntil.m */; };
+		03716997290779BD006A4EFD /* TheableZyg.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* TheableZyg.m */; };
+		03716998290779BD006A4EFD /* PheniceSexagenmyselfaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* PheniceSexagenmyselfaire.m */; };
+		03716999290779BD006A4EFD /* InsideAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* InsideAuthor.m */; };
+		0371699A290779BD006A4EFD /* FlectiblePantator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* FlectiblePantator.m */; };
+		0371699B290779BD006A4EFD /* CorticatorAffectward.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* CorticatorAffectward.m */; };
+		0371699C290779BD006A4EFD /* BromwardVeraciitious.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* BromwardVeraciitious.m */; };
+		0371699D290779BD006A4EFD /* MergessRelateitious.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* MergessRelateitious.m */; };
+		0371699E290779BD006A4EFD /* EquiaciousAcuacious.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2328A0FA7C00709536 /* EquiaciousAcuacious.m */; };
+		0371699F290779BD006A4EFD /* AbilityineCommunitysive.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* AbilityineCommunitysive.m */; };
+		037169A0290779BD006A4EFD /* FodindustryismCome.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* FodindustryismCome.m */; };
+		037169A1290779BD006A4EFD /* MontiveNarine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* MontiveNarine.m */; };
+		037169A2290779BD006A4EFD /* NSString+EuiorFederalfy.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+EuiorFederalfy.m */; };
+		037169A3290779BD006A4EFD /* LayfoldCheckth.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LayfoldCheckth.m */; };
+		037169A4290779BD006A4EFD /* MelioratureTaurrelateality.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* MelioratureTaurrelateality.m */; };
+		037169A5290779BD006A4EFD /* NothanHeatible.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* NothanHeatible.m */; };
+		037169A6290779BD006A4EFD /* ChoiceaireIrible.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* ChoiceaireIrible.m */; };
+		037169A7290779BD006A4EFD /* SeeizeMacismallary.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* SeeizeMacismallary.m */; };
+		037169A8290779BD006A4EFD /* CompanyetyMaybeaneous.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* CompanyetyMaybeaneous.m */; };
 		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
 		037C6EF92875AC790041EC34 /* VesicallyGreatless.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* VesicallyGreatless.m */; };
@@ -271,6 +418,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		037169AF290779DE006A4EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03716913290779BD006A4EFD;
+			remoteInfo = WLZHSSDK;
+		};
 		037C6EE62875A97C0041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -284,13 +438,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CEE6B3701A148B1E009E77FF;
 			remoteInfo = SDK_TEST;
-		};
-		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
-			remoteInfo = MWSDK;
 		};
 		037C6F77287708F40041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -436,6 +583,7 @@
 		0369B35828647256002F4B2F /* OntCaleory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OntCaleory.m; sourceTree = "<group>"; };
 		0369B35B28655669002F4B2F /* LoginButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginButtonData.h; sourceTree = "<group>"; };
 		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
+		037169AE290779BD006A4EFD /* WLZHSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WLZHSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03764809286178D600CAD034 /* CollegesureSafeeur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollegesureSafeeur.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* CollegesureSafeeur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollegesureSafeeur.m; sourceTree = "<group>"; };
 		037C6EDB2875A97B0041EC34 /* MWSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -694,6 +842,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		037169A9290779BD006A4EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037C6ED82875A97B0041EC34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1492,6 +1647,7 @@
 				CEE6B3711A148B1E009E77FF /* dybttDemo.app */,
 				037C6EDB2875A97B0041EC34 /* MWSDK.framework */,
 				037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */,
+				037169AE290779BD006A4EFD /* WLZHSSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1578,6 +1734,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		03716914290779BD006A4EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03716915290779BD006A4EFD /* EquiaciousAcuacious.h in Headers */,
+				03716916290779BD006A4EFD /* NSString+EuiorFederalfy.h in Headers */,
+				03716917290779BD006A4EFD /* CenturylikePascatic.h in Headers */,
+				03716918290779BD006A4EFD /* GamaSDK+OtherslessVorile.h in Headers */,
+				03716919290779BD006A4EFD /* HabalityFancality.h in Headers */,
+				0371691A290779BD006A4EFD /* LetteradSupportal.h in Headers */,
+				0371691B290779BD006A4EFD /* BorniorVitrage.h in Headers */,
+				0371691C290779BD006A4EFD /* BuildingantProxim.h in Headers */,
+				0371691D290779BD006A4EFD /* UrlMode.h in Headers */,
+				0371691E290779BD006A4EFD /* CountTimerDelegate.h in Headers */,
+				0371691F290779BD006A4EFD /* InsideAuthor.h in Headers */,
+				03716920290779BD006A4EFD /* WPayModel.h in Headers */,
+				03716921290779BD006A4EFD /* GenetsayDextrition.h in Headers */,
+				03716922290779BD006A4EFD /* MusuleSphen.h in Headers */,
+				03716923290779BD006A4EFD /* GuessizationPhylcapitalee.h in Headers */,
+				03716924290779BD006A4EFD /* WLoginModel.h in Headers */,
+				03716925290779BD006A4EFD /* JocspecificfactionStruct.h in Headers */,
+				03716926290779BD006A4EFD /* PrenditudeAtetic.h in Headers */,
+				03716927290779BD006A4EFD /* MeanerAnnoutsideful.h in Headers */,
+				03716928290779BD006A4EFD /* WLZSHLib.h in Headers */,
+				03716929290779BD006A4EFD /* PletfierPerformancely.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037C6ED62875A97B0041EC34 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1609,6 +1793,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		03716913290779BD006A4EFD /* WLZHSSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037169AB290779BD006A4EFD /* Build configuration list for PBXNativeTarget "WLZHSSDK" */;
+			buildPhases = (
+				03716914290779BD006A4EFD /* Headers */,
+				0371692A290779BD006A4EFD /* Sources */,
+				037169A9290779BD006A4EFD /* Frameworks */,
+				037169AA290779BD006A4EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLZHSSDK;
+			productName = MWSDK;
+			productReference = 037169AE290779BD006A4EFD /* WLZHSSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		037C6EDA2875A97B0041EC34 /* MWSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */;
@@ -1729,11 +1931,19 @@
 				037C6EDA2875A97B0041EC34 /* MWSDK */,
 				037C6EE32875A97C0041EC34 /* MWSDKTests */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
+				03716913290779BD006A4EFD /* WLZHSSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		037169AA290779BD006A4EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037C6ED92875A97B0041EC34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1797,6 +2007,139 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0371692A290779BD006A4EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0371692B290779BD006A4EFD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0371692C290779BD006A4EFD /* ViewController+MASAdditions.m in Sources */,
+				0371692D290779BD006A4EFD /* GuessizationPhylcapitalee.m in Sources */,
+				0371692E290779BD006A4EFD /* MASCompositeConstraint.m in Sources */,
+				0371692F290779BD006A4EFD /* MASConstraintMaker.m in Sources */,
+				03716930290779BD006A4EFD /* MASLayoutConstraint.m in Sources */,
+				03716931290779BD006A4EFD /* NSArray+MASAdditions.m in Sources */,
+				03716932290779BD006A4EFD /* View+MASAdditions.m in Sources */,
+				03716933290779BD006A4EFD /* MASConstraint.m in Sources */,
+				03716934290779BD006A4EFD /* MASViewConstraint.m in Sources */,
+				03716935290779BD006A4EFD /* MASViewAttribute.m in Sources */,
+				03716936290779BD006A4EFD /* UIImage+WebP.m in Sources */,
+				03716937290779BD006A4EFD /* SDWebImageManager.m in Sources */,
+				03716938290779BD006A4EFD /* SDWebImageDecoder.m in Sources */,
+				03716939290779BD006A4EFD /* UIImageView+HighlightedWebCache.m in Sources */,
+				0371693A290779BD006A4EFD /* JocspecificfactionStruct.m in Sources */,
+				0371693B290779BD006A4EFD /* SDWebImageDownloader.m in Sources */,
+				0371693C290779BD006A4EFD /* UIImage+GIF.m in Sources */,
+				0371693D290779BD006A4EFD /* MeanerAnnoutsideful.m in Sources */,
+				0371693E290779BD006A4EFD /* UIImage+MultiFormat.m in Sources */,
+				0371693F290779BD006A4EFD /* SDWebImageCompat.m in Sources */,
+				03716940290779BD006A4EFD /* SDWebImagePrefetcher.m in Sources */,
+				03716941290779BD006A4EFD /* SDImageCache.m in Sources */,
+				03716942290779BD006A4EFD /* SDWebImageDownloaderOperation.m in Sources */,
+				03716943290779BD006A4EFD /* NSData+ImageContentType.m in Sources */,
+				03716944290779BD006A4EFD /* UrlMode.m in Sources */,
+				03716945290779BD006A4EFD /* UIImageView+WebCache.m in Sources */,
+				03716946290779BD006A4EFD /* UIView+WebCacheOperation.m in Sources */,
+				03716947290779BD006A4EFD /* UIButton+WebCache.m in Sources */,
+				03716948290779BD006A4EFD /* HabalityFancality.m in Sources */,
+				03716949290779BD006A4EFD /* VesicallyGreatless.m in Sources */,
+				0371694A290779BD006A4EFD /* SophoindividualitionBillain.m in Sources */,
+				0371694B290779BD006A4EFD /* CoronencyQuindenot.m in Sources */,
+				0371694C290779BD006A4EFD /* SpendSubative.m in Sources */,
+				0371694D290779BD006A4EFD /* OntoonOxyacity.m in Sources */,
+				0371694E290779BD006A4EFD /* SoonotErgency.m in Sources */,
+				0371694F290779BD006A4EFD /* HimselfainPont.m in Sources */,
+				03716950290779BD006A4EFD /* CollegesureSafeeur.m in Sources */,
+				03716951290779BD006A4EFD /* ApplycySoial.m in Sources */,
+				03716952290779BD006A4EFD /* MusuleSphen.m in Sources */,
+				03716953290779BD006A4EFD /* MachineileSenly.m in Sources */,
+				03716954290779BD006A4EFD /* WarierPravproof.m in Sources */,
+				03716955290779BD006A4EFD /* AccountModel.m in Sources */,
+				03716956290779BD006A4EFD /* LoginResponse.m in Sources */,
+				03716957290779BD006A4EFD /* ConfigResponse.m in Sources */,
+				03716958290779BD006A4EFD /* PrenditudeAtetic.m in Sources */,
+				03716959290779BD006A4EFD /* LetteradSupportal.m in Sources */,
+				0371695A290779BD006A4EFD /* ConfigModel.m in Sources */,
+				0371695B290779BD006A4EFD /* CreateOrderResp.m in Sources */,
+				0371695C290779BD006A4EFD /* ExtraressApertless.m in Sources */,
+				0371695D290779BD006A4EFD /* BuildingantProxim.m in Sources */,
+				0371695E290779BD006A4EFD /* CuscardOnomary.m in Sources */,
+				0371695F290779BD006A4EFD /* OpportunityoOmmmanageity.m in Sources */,
+				03716960290779BD006A4EFD /* MarketidMereid.m in Sources */,
+				03716961290779BD006A4EFD /* AperthandBalowise.m in Sources */,
+				03716962290779BD006A4EFD /* FilmadeExpectaceous.m in Sources */,
+				03716963290779BD006A4EFD /* PletfierPerformancely.m in Sources */,
+				03716964290779BD006A4EFD /* SomeoneshipSesquipresentfaction.m in Sources */,
+				03716965290779BD006A4EFD /* AudienceEquator.m in Sources */,
+				03716966290779BD006A4EFD /* WPayModel.m in Sources */,
+				03716967290779BD006A4EFD /* WLoginModel.m in Sources */,
+				03716968290779BD006A4EFD /* WLZSHLib.m in Sources */,
+				03716969290779BD006A4EFD /* OpulshowizationTurpon.m in Sources */,
+				0371696A290779BD006A4EFD /* GamaSDK+OtherslessVorile.m in Sources */,
+				0371696B290779BD006A4EFD /* MatteroCommonfold.m in Sources */,
+				0371696C290779BD006A4EFD /* ThoughlikeCineaire.m in Sources */,
+				0371696D290779BD006A4EFD /* LanguitudeQuasstenddom.m in Sources */,
+				0371696E290779BD006A4EFD /* OligbeautifulIgeer.m in Sources */,
+				0371696F290779BD006A4EFD /* UIAlertController+ForwardityCampaignfaction.m in Sources */,
+				03716970290779BD006A4EFD /* UIColor+MnelessSalubrwindeur.m in Sources */,
+				03716971290779BD006A4EFD /* UIColor+OgityTheoryify.m in Sources */,
+				03716972290779BD006A4EFD /* UIScreen+SenstableTypo.m in Sources */,
+				03716973290779BD006A4EFD /* NSString+ManagerBrachiine.m in Sources */,
+				03716974290779BD006A4EFD /* UIView+GonyticSocialance.m in Sources */,
+				03716975290779BD006A4EFD /* NSString+SurgsafeorEntrekitchenetic.m in Sources */,
+				03716976290779BD006A4EFD /* FoeniveNow.m in Sources */,
+				03716977290779BD006A4EFD /* GenetsayDextrition.m in Sources */,
+				03716978290779BD006A4EFD /* CenturylikePascatic.m in Sources */,
+				03716979290779BD006A4EFD /* BorniorVitrage.m in Sources */,
+				0371697A290779BD006A4EFD /* BedeurFail.m in Sources */,
+				0371697B290779BD006A4EFD /* CandifySiliattorney.m in Sources */,
+				0371697C290779BD006A4EFD /* CarboeerNecrate.m in Sources */,
+				0371697D290779BD006A4EFD /* NSObject+YYModel.m in Sources */,
+				0371697E290779BD006A4EFD /* YYClassInfo.m in Sources */,
+				0371697F290779BD006A4EFD /* AFURLResponseSerialization.m in Sources */,
+				03716980290779BD006A4EFD /* AFHTTPSessionManager.m in Sources */,
+				03716981290779BD006A4EFD /* AFURLSessionManager.m in Sources */,
+				03716982290779BD006A4EFD /* AFURLRequestSerialization.m in Sources */,
+				03716983290779BD006A4EFD /* AFNetworkReachabilityManager.m in Sources */,
+				03716984290779BD006A4EFD /* AFSecurityPolicy.m in Sources */,
+				03716985290779BD006A4EFD /* FlyesqueSapiship.m in Sources */,
+				03716986290779BD006A4EFD /* UIImage+ObatoryClinity.m in Sources */,
+				03716987290779BD006A4EFD /* CrepitnessBringic.m in Sources */,
+				03716988290779BD006A4EFD /* CapitdecideEmeticmost.m in Sources */,
+				03716989290779BD006A4EFD /* DekaiaPhasarian.m in Sources */,
+				0371698A290779BD006A4EFD /* CheckMenspossibleair.m in Sources */,
+				0371698B290779BD006A4EFD /* MontieTheie.m in Sources */,
+				0371698C290779BD006A4EFD /* LeastabilityEntreic.m in Sources */,
+				0371698D290779BD006A4EFD /* OdorSever.m in Sources */,
+				0371698E290779BD006A4EFD /* EtymousBecomeot.m in Sources */,
+				0371698F290779BD006A4EFD /* AlthoughityThemselvesate.m in Sources */,
+				03716990290779BD006A4EFD /* OntCaleory.m in Sources */,
+				03716991290779BD006A4EFD /* LoginButtonData.m in Sources */,
+				03716992290779BD006A4EFD /* ArtistBegin.m in Sources */,
+				03716993290779BD006A4EFD /* TypoeousHyperpmics.m in Sources */,
+				03716994290779BD006A4EFD /* SeasonficVill.m in Sources */,
+				03716995290779BD006A4EFD /* SarcooryPoiequite.m in Sources */,
+				03716996290779BD006A4EFD /* NonagenitorUntil.m in Sources */,
+				03716997290779BD006A4EFD /* TheableZyg.m in Sources */,
+				03716998290779BD006A4EFD /* PheniceSexagenmyselfaire.m in Sources */,
+				03716999290779BD006A4EFD /* InsideAuthor.m in Sources */,
+				0371699A290779BD006A4EFD /* FlectiblePantator.m in Sources */,
+				0371699B290779BD006A4EFD /* CorticatorAffectward.m in Sources */,
+				0371699C290779BD006A4EFD /* BromwardVeraciitious.m in Sources */,
+				0371699D290779BD006A4EFD /* MergessRelateitious.m in Sources */,
+				0371699E290779BD006A4EFD /* EquiaciousAcuacious.m in Sources */,
+				0371699F290779BD006A4EFD /* AbilityineCommunitysive.m in Sources */,
+				037169A0290779BD006A4EFD /* FodindustryismCome.m in Sources */,
+				037169A1290779BD006A4EFD /* MontiveNarine.m in Sources */,
+				037169A2290779BD006A4EFD /* NSString+EuiorFederalfy.m in Sources */,
+				037169A3290779BD006A4EFD /* LayfoldCheckth.m in Sources */,
+				037169A4290779BD006A4EFD /* MelioratureTaurrelateality.m in Sources */,
+				037169A5290779BD006A4EFD /* NothanHeatible.m in Sources */,
+				037169A6290779BD006A4EFD /* ChoiceaireIrible.m in Sources */,
+				037169A7290779BD006A4EFD /* SeeizeMacismallary.m in Sources */,
+				037169A8290779BD006A4EFD /* CompanyetyMaybeaneous.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037C6ED72875A97B0041EC34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1953,6 +2296,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		037169B0290779DE006A4EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03716913290779BD006A4EFD /* WLZHSSDK */;
+			targetProxy = 037169AF290779DE006A4EFD /* PBXContainerItemProxy */;
+		};
 		037C6EE72875A97C0041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
@@ -1963,11 +2311,6 @@
 			target = CEE6B3701A148B1E009E77FF /* SDK_TEST */;
 			targetProxy = 037C6EE82875A97C0041EC34 /* PBXContainerItemProxy */;
 		};
-		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
-			targetProxy = 037C6F73287686D40041EC34 /* PBXContainerItemProxy */;
-		};
 		037C6F78287708F40041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
@@ -1976,6 +2319,154 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		037169AC290779BD006A4EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		037169AD290779BD006A4EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		037C6EF32875A97C0041EC34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2481,6 +2972,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		037169AB290779BD006A4EFD /* Build configuration list for PBXNativeTarget "WLZHSSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037169AC290779BD006A4EFD /* Debug */,
+				037169AD290779BD006A4EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
