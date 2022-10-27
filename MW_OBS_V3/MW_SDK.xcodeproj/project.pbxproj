@@ -14,6 +14,7 @@
 				037C6F6F287686B10041EC34 /* Run Script */,
 			);
 			dependencies = (
+				03EC970B29097A9400D5AC29 /* PBXTargetDependency */,
 				037169B0290779DE006A4EFD /* PBXTargetDependency */,
 			);
 			name = XCFrameworkMake;
@@ -96,6 +97,12 @@
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		033B9C9F28DB0DAF000DA93D /* GenetsayDextrition.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B9C9D28DB0DAF000DA93D /* GenetsayDextrition.h */; };
 		033B9CA128DB0DAF000DA93D /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
+		0362AEED290977FE009074A8 /* WPayModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* WPayModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0362AEF1290977FE009074A8 /* WLoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* WLoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0362AEF5290977FE009074A8 /* WLZSHLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* WLZSHLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0362AF33290977FE009074A8 /* WPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* WPayModel.m */; };
+		0362AF34290977FE009074A8 /* WLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* WLoginModel.m */; };
+		0362AF35290977FE009074A8 /* WLZSHLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* WLZSHLib.m */; };
 		03716915290779BD006A4EFD /* EquiaciousAcuacious.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1628A0FA7C00709536 /* EquiaciousAcuacious.h */; };
 		03716916290779BD006A4EFD /* NSString+EuiorFederalfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+EuiorFederalfy.h */; };
 		03716917290779BD006A4EFD /* CenturylikePascatic.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* CenturylikePascatic.h */; };
@@ -446,6 +453,13 @@
 			remoteGlobalIDString = CEE6B3701A148B1E009E77FF;
 			remoteInfo = SDK_TEST;
 		};
+		03EC970A29097A9400D5AC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0362AEE0290977FE009074A8;
+			remoteInfo = "WLZHSSDKV2 ";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -572,6 +586,7 @@
 		034558BE285B0B120025EFB2 /* MachineileSenly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineileSenly.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* CompanyetyMaybeaneous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyetyMaybeaneous.h; sourceTree = "<group>"; };
 		034558D2285C25210025EFB2 /* CompanyetyMaybeaneous.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyetyMaybeaneous.m; sourceTree = "<group>"; };
+		0362AF7B290977FE009074A8 /* WLZHSSDK_TEST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WLZHSSDK_TEST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03650193285C761600578028 /* BromwardVeraciitious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BromwardVeraciitious.h; sourceTree = "<group>"; };
 		03650194285C761600578028 /* BromwardVeraciitious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BromwardVeraciitious.m; sourceTree = "<group>"; };
 		03650196285C768300578028 /* SdkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkHeader.h; sourceTree = "<group>"; };
@@ -842,6 +857,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0362AF76290977FE009074A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037169A9290779BD006A4EFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1648,6 +1670,7 @@
 				037C6EDB2875A97B0041EC34 /* MWSDK.framework */,
 				037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */,
 				037169AE290779BD006A4EFD /* WLZHSSDK.framework */,
+				0362AF7B290977FE009074A8 /* WLZHSSDK_TEST.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1734,6 +1757,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0362AEE1290977FE009074A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0362AEED290977FE009074A8 /* WPayModel.h in Headers */,
+				0362AEF1290977FE009074A8 /* WLoginModel.h in Headers */,
+				0362AEF5290977FE009074A8 /* WLZSHLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03716914290779BD006A4EFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1793,6 +1826,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0362AEE0290977FE009074A8 /* WLZHSSDK_TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0362AF78290977FE009074A8 /* Build configuration list for PBXNativeTarget "WLZHSSDK_TEST" */;
+			buildPhases = (
+				0362AEE1290977FE009074A8 /* Headers */,
+				0362AEF7290977FE009074A8 /* Sources */,
+				0362AF76290977FE009074A8 /* Frameworks */,
+				0362AF77290977FE009074A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLZHSSDK_TEST;
+			productName = MWSDK;
+			productReference = 0362AF7B290977FE009074A8 /* WLZHSSDK_TEST.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		03716913290779BD006A4EFD /* WLZHSSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 037169AB290779BD006A4EFD /* Build configuration list for PBXNativeTarget "WLZHSSDK" */;
@@ -1932,11 +1983,19 @@
 				037C6EE32875A97C0041EC34 /* MWSDKTests */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
 				03716913290779BD006A4EFD /* WLZHSSDK */,
+				0362AEE0290977FE009074A8 /* WLZHSSDK_TEST */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0362AF77290977FE009074A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037169AA290779BD006A4EFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2007,6 +2066,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0362AEF7290977FE009074A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0362AF33290977FE009074A8 /* WPayModel.m in Sources */,
+				0362AF34290977FE009074A8 /* WLoginModel.m in Sources */,
+				0362AF35290977FE009074A8 /* WLZSHLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0371692A290779BD006A4EFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2316,9 +2385,162 @@
 			target = CEE6B3701A148B1E009E77FF /* SDK_TEST */;
 			targetProxy = 037C6EE82875A97C0041EC34 /* PBXContainerItemProxy */;
 		};
+		03EC970B29097A9400D5AC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0362AEE0290977FE009074A8 /* WLZHSSDK_TEST */;
+			targetProxy = 03EC970A29097A9400D5AC29 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0362AF79290977FE009074A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0362AF7A290977FE009074A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		037169AC290779BD006A4EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2972,6 +3194,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0362AF78290977FE009074A8 /* Build configuration list for PBXNativeTarget "WLZHSSDK_TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0362AF79290977FE009074A8 /* Debug */,
+				0362AF7A290977FE009074A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		037169AB290779BD006A4EFD /* Build configuration list for PBXNativeTarget "WLZHSSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
