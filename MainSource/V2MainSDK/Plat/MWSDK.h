@@ -64,6 +64,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 @property (nonatomic)  SDKLogoutBlock logoutHandler;
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;
 
+@property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
 
 /**
  单例
