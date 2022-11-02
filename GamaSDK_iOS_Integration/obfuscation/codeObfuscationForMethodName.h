@@ -455,4 +455,16 @@
 #define showTermsView_MMMethodMMM   januSolenite_MMMethodMMM
 #define showTermsViewForAccountLoginView_MMMethodMMM   kindainCheirowhiteion_MMMethodMMM
 
+#define getSdkEncryptKey_MMMethodMMM sxxesqandPlayOli
+
+#define getSdkConfigInfoName_MMMethodMMM  getJJSCinfugName
+#define getMySdkBundle_MMMethodMMM getMyMDSSdkBundle
+#define getSdkBundleFilePath_MMMethodMMM  getSdkKAFHEUFBundleFilePath
+#define ofType_MMMethodMMM fieladofType
+#define getEncryptFileAndEncryptContentWithBundle_MMMethodMMM   getEncryptFileAndEncryptContentWithBundle
+#define name_MMMethodMMM amdakFileName
+#define logSdkResConfig_MMMethodMMM     logSdkResConfigWird
+#define getSdkBaseEncryptKey_MMMethodMMM    getSdkBaseEncryptKeyahheqDy
+#define decryptAllStringContent_MMMethodMMM   decryptAllStringContentfssz
+
 #endif  /* codeObfuscation_h */
