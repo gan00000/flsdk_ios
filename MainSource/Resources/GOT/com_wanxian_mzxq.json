@@ -1,0 +1,16 @@
+{   "af_dev_key" : "cqwD4y28TnuUZUqkcr682k",
+    "appKey" : "c402932996a88ee8c97ac2014df57656",
+    "gameCode" : "mzxqios",
+    "gameLanguage" : "zh_TW",
+    "sdk_ad_bug" : "0",
+    "sdk_appId" : "1638699381",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "MZXQRES",
+    "sdk_url_cdn" : "https://cdn-download.mmplaygame.com/",
+    "sdk_url_log" : "https://log.mmplaygame.com/",
+    "sdk_url_login" : "https://login.mmplaygame.com/",
+    "sdk_url_pay" : "https://pay.mmplaygame.com/",
+    "sdk_v_version" : "v2",
+    "terms_service_url" : "https://member.mmplaygame.com/sdk/agreement/%@_agreement.html"
+    
+}

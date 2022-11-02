@@ -86,6 +86,8 @@
 		0337F4AC28F3D56100F0A4A9 /* LargeRump.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337F4AA28F3D56100F0A4A9 /* LargeRump.h */; };
 		0337F4AE28F3D56100F0A4A9 /* LargeRump.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337F4AB28F3D56100F0A4A9 /* LargeRump.m */; };
 		033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6128A1077F00709536 /* SDKCoreInfo.plist */; };
+		037A46CC291278A500DA2D62 /* com_wanxian_mzxq.json in Resources */ = {isa = PBXBuildFile; fileRef = 037A46CB291278A500DA2D62 /* com_wanxian_mzxq.json */; };
+		037A46CE29127C3700DA2D62 /* 499dbbb023ddcc6a4e9ea885b880a505.txt in Resources */ = {isa = PBXBuildFile; fileRef = 037A46CD29127C3700DA2D62 /* 499dbbb023ddcc6a4e9ea885b880a505.txt */; };
 		037C6EE52875A97C0041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
 		037C6EEC2875A97C0041EC34 /* MWSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037C6EEB2875A97C0041EC34 /* MWSDKTests.m */; };
 		037C6EFA2875AC790041EC34 /* PatternelCrischooseorium.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* PatternelCrischooseorium.m */; };
@@ -200,7 +202,7 @@
 		037C6F692875AD230041EC34 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F76287708C40041EC34 /* MWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */; };
-		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
+		03A0CD5628AF6EEF0092CDE0 /* MZXQRES.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* MZXQRES.bundle */; };
 		03C05CA828AE5F6B0060F4CD /* MachinantYearation.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* MachinantYearation.h */; };
 		03C05CAA28AE5F6B0060F4CD /* MachinantYearation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* MachinantYearation.m */; };
 		2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
@@ -314,7 +316,7 @@
 		030FAA5C28A0FC8600709536 /* TaurGeoile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaurGeoile.h; sourceTree = "<group>"; };
 		030FAA5D28A0FC8600709536 /* TaurGeoile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaurGeoile.m; sourceTree = "<group>"; };
 		030FAA6128A1077F00709536 /* SDKCoreInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDKCoreInfo.plist; sourceTree = "<group>"; };
-		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
+		030FAA6328A1142900709536 /* MZXQRES.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MZXQRES.bundle; sourceTree = "<group>"; };
 		030FAA6528A1FE5800709536 /* EastidVictimtic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EastidVictimtic.m; sourceTree = "<group>"; };
 		030FAA6628A1FE5800709536 /* EastidVictimtic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EastidVictimtic.h; sourceTree = "<group>"; };
 		030FAA6A28A2619500709536 /* PogonuousGuyitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PogonuousGuyitive.h; sourceTree = "<group>"; };
@@ -428,6 +430,8 @@
 		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
 		03764809286178D600CAD034 /* SystemacitySordglasslike.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemacitySordglasslike.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* SystemacitySordglasslike.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemacitySordglasslike.m; sourceTree = "<group>"; };
+		037A46CB291278A500DA2D62 /* com_wanxian_mzxq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wanxian_mzxq.json; sourceTree = "<group>"; };
+		037A46CD29127C3700DA2D62 /* 499dbbb023ddcc6a4e9ea885b880a505.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 499dbbb023ddcc6a4e9ea885b880a505.txt; sourceTree = "<group>"; };
 		037C6EDB2875A97B0041EC34 /* MWSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		037C6EE42875A97C0041EC34 /* MWSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037C6EEB2875A97C0041EC34 /* MWSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDKTests.m; sourceTree = "<group>"; };
@@ -639,7 +643,6 @@
 		CEE6B9601A149944009E77FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEF6E9291A35B45500CFFE2F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E90A13AE208ECED2007BC6A9 /* libGamaIAP_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaIAP_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9150D292383E6640003F1FB /* SDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResources.bundle; sourceTree = "<group>"; };
 		E92B434F2355D36400D45BF9 /* libGamaAD_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAD_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C238920CA665A00C27B2C /* libGamaCoreFunc_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaCoreFunc_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C23A420CE51CE00C27B2C /* libGamaAccountLogin_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAccountLogin_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1518,9 +1521,10 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
+				037A46CD29127C3700DA2D62 /* 499dbbb023ddcc6a4e9ea885b880a505.txt */,
+				037A46CB291278A500DA2D62 /* com_wanxian_mzxq.json */,
 				030FAA6128A1077F00709536 /* SDKCoreInfo.plist */,
-				E9150D292383E6640003F1FB /* SDKResources.bundle */,
-				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
+				030FAA6328A1142900709536 /* MZXQRES.bundle */,
 			);
 			path = GOT;
 			sourceTree = "<group>";
@@ -1726,11 +1730,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				033B9CA228DB3874000DA93D /* SDKCoreInfo.plist in Resources */,
-				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
+				03A0CD5628AF6EEF0092CDE0 /* MZXQRES.bundle in Resources */,
 				32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */,
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
+				037A46CC291278A500DA2D62 /* com_wanxian_mzxq.json in Resources */,
 				0332F56D28C5B44C00B7A99F /* GoogleSignIn.bundle in Resources */,
 				0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */,
+				037A46CE29127C3700DA2D62 /* 499dbbb023ddcc6a4e9ea885b880a505.txt in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2285,12 +2291,13 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZG5848DZ6C;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2320,10 +2327,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanxian.mzxq;
 				PRODUCT_NAME = dybttDemo;
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = zhengshu_dis;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2357,6 +2365,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZG5848DZ6C;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2386,10 +2395,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanye.fszhl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanxian.mzxq;
 				PRODUCT_NAME = dybttDemo;
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = zhengshu_dis;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

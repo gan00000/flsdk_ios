@@ -11,24 +11,24 @@
 	<key>sdk_ad_bug</key>
 	<false/>
 	<key>sdk_appId</key>
-	<string>1635276856</string>
+	<string>1638699381</string>
 	<key>af_dev_key</key>
-	<string>QtrxWJpdhQVov9F8hwKD3o</string>
+	<string>cqwD4y28TnuUZUqkcr682k</string>
 	<key>sdk_url_cdn</key>
-	<string>https://cdn-download.meowplayer.com/</string>
+	<string>https://cdn-download.mmplaygame.com/</string>
 	<key>terms_service_url</key>
-	<string>https://member.meowplayer.com/sdk/agreement/%@_agreement.html</string>
+	<string>https://member.mmplaygame.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>
-	<string>c402932996a88ee8c97ac2014df57656</string>
+	<string>aa61e7a07fbd93669eaa9e912a88c260</string>
 	<key>gameCode</key>
-	<string>fszhlios</string>
+	<string>mzxqios</string>
 	<key>gameLanguage</key>
 	<string>zh_TW</string>
 	<key>sdk_url_login</key>
-	<string>https://login.meowplayer.com/</string>
+	<string>https://login.mmplaygame.com/</string>
 	<key>sdk_url_pay</key>
-	<string>https://pay.meowplayer.com/</string>
+	<string>https://pay.mmplaygame.com/</string>
 	<key>sdk_url_log</key>
-	<string>https://log.meowplayer.com/</string>
+	<string>https://log.mmplaygame.com/</string>
 </dict>
 </plist>
