@@ -43,6 +43,7 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
 {
     UIButton *guestLoginBtn;
     UIButton *checkBoxTermsBtn;
+    UIView *deleteView;
 //hen it comes to achie
 }
 - (instancetype)initView_MMMethodMMM
@@ -252,29 +253,6 @@ Love is letting someone become your greatest weakness ,then going all you can do
         }
         make.leading.mas_equalTo(contentView).mas_offset(VH(38));
 
-/**
-  is $20 bill?”
-
-
-
-一位有名的演讲家手里拿着一张20美元的纸币，开始了讨论会。在200人的屋子里， 他问道：“谁想要这20美元纸币？”
-
-
-
-Hands started going up. He said, “I am going to give this $20. to one of you. but first, let me do this."
-
-
-
-开始有人举手。他说我会把这20美元纸币给你们中间的一位，但是，先看看我会这么做。”
-
-
-
-He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the hands were up in the air.
-
-
-
-他开始把这张纸币揉皱，然后他问道:“还有人想要它吗？”仍然有很多 
-**/
         make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));;
         make.height.mas_equalTo(VH(50));
 
@@ -302,17 +280,6 @@ Most adults need between seven and eight hours of sleep to be fully rested, acco
         make.center.mas_equalTo(guestLoginBtn);
     }];
 
-/**
-  等了你多久，就这样，狮子爱上了羔羊。多蠢的羔羊，多病态又自虐的狮子。
-图片
-I love three things in this word.Sun, Moon and you. Sun for morning, Moon for night, and you forever.
-浮世万千，吾爱有三。日，月与卿。日为朝，月为暮，卿为朝朝暮暮。
-Even if from another world, still love you till the end of time.
-就算来自不同世界，依旧爱你到地老天荒。
-Only for making me want you so badly.
-只有你才能让我如此上瘾。
-I don't have the strength to stay aw 
-**/
     UIButton *guestIconBtn = [NaturetyYoung initBtnWithNormalImage_MMMethodMMM:guse_login_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtnContent addSubview:guestIconBtn];
     [guestIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -962,18 +929,37 @@ All of your street light eyes
 **/
         rememberTermsLable.userInteractionEnabled=YES;
 
-/**
-   I forgot to breathe.
-我想可能是我忘了呼吸。
-I'd never given much thought to how I would die. But dying in the place of someone I love,seems like a good way to go.
-我从来没有想过自己会怎么死。但是死在自己爱的人的怀里看起来是一个不错的选择。
-Your mood s 
-**/
         [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
             [self showTermsView_MMMethodMMM];
         }];
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     termAgreeView.hidden = !mConfigModel.showContract;
+    
+    
+    if (mConfigModel.deleteAccount) {
+        [self addDeleteAccountView_MMMethodMMM];
+        if(deleteView){
+            [self addSubview:deleteView];
+         
+            [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+                if(IS_PORTRAIT){
+                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
+                    make.centerX.mas_equalTo(self);
+                }else{
+                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-12));
+                    make.centerX.mas_equalTo(self);
+//                    if(device_is_iPhoneX){
+//                        make.top.mas_equalTo(self).mas_offset(VH(15));
+//                        make.trailing.mas_equalTo(self).mas_offset(VW(-(44+15)));
+//                    }else{
+//                        make.top.mas_equalTo(self).mas_offset(VH(15));
+//                        make.trailing.mas_equalTo(self).mas_offset(VW(-15));
+//                    }
+                }
+            }];
+            
+        }
+    }
 }
 - (CGFloat)aphfierMonilier:(NSString *)cinctous
 {
@@ -1187,17 +1173,146 @@ Establishing that positive relationship between the bed and sleep can be benefic
     }
     [ValueletTheatic toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
     [self showTermsView_MMMethodMMM];
-//o vague. But a cue-based plan like "I'll meditate at the office on weekdays during my lunch break" would fit the bill.
-//
-//如果你的新年计划是每周冥想五天，那么像“我将在工作日冥想”这样的计划就太模糊了。但是，“我将在工作日的午休时间在办公室冥想”这样有信息提示的计划就很合适。
-//
-//
-//
-//Plotting when and where you'll execute on your New Year's resolution jogs your memory when it's opportune and generates guilt if you flake out. Detailed p
     return NO;
 }
 
-/**
-  ear's resolution is to run a marathon or write a book, you'd be wise to start hanging around friends who've made it to the finish line (literally or figuratively) and ca 
-**/
+#pragma mark - 删除账号按钮
+
+//-(UIView *)addDeleteAccountConfireView_MMMethodMMM
+//{
+//
+//    if (deleteAccountConfireView) {
+//        [deleteAccountConfireView removeFromSuperview];
+//    }
+//
+//    UIView *deleteView = [[UIView alloc] init];
+//    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
+//    deleteView.layer.cornerRadius = VW(10);
+//
+//    [self addSubview:deleteView];
+//
+//    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self);
+//        make.width.mas_equalTo(VW(272));
+//    }];
+//
+//    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage_MMMethodMMM:nend_update_account_bg];
+//    [deleteView addSubview:deleteWarmIV];
+//    [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteView).mas_offset(VH(12));
+//        make.centerX.equalTo(self);
+//        make.height.width.mas_equalTo(VW(25));
+//    }];
+//
+//    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
+//    [deleteView addSubview:deleteWarmLabel];
+//    deleteWarmLabel.numberOfLines = 0;
+//    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteWarmIV.mas_bottom).mas_offset(VH(10));
+//        make.leading.mas_equalTo(deleteView).mas_offset(VW(14));
+//        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
+//    }];
+//
+//    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+////    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    cancelBtn.layer.cornerRadius = VW(16);
+//    cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+//    cancelBtn.layer.borderWidth = 1;
+//
+//    [deleteView addSubview:cancelBtn];
+//    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
+//        make.bottom.mas_equalTo(deleteView).mas_offset(VH(-18));
+//        make.height.mas_equalTo(VW(32));
+//        make.width.mas_equalTo(VW(108));
+//        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
+//    }];
+//
+//    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    sureBtn.layer.cornerRadius = VW(16);
+////    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+////    sureBtn.layer.borderWidth = 1;
+//
+//    [deleteView addSubview:sureBtn];
+//    [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(cancelBtn);
+//        make.bottom.mas_equalTo(cancelBtn);
+//        make.width.mas_equalTo(cancelBtn);
+//        make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
+//    }];
+//
+//    deleteAccountConfireView = deleteView;
+//    return deleteAccountConfireView;
+//
+//}
+
+
+-(void)addDeleteAccountView_MMMethodMMM
+{
+    deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView.layer.cornerRadius = VW(14);
+    
+    UIImageView *deleteIV = [NaturetyYoung initImageViewWithImage_MMMethodMMM:mw_delete_icon];
+    [deleteView addSubview:deleteIV];
+    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView);
+        make.width.height.mas_equalTo(VW(15));
+    }];
+    
+    UILabel *delLabel = [NaturetyYoung initLabelWithText_MMMethodMMM:GetString(@"text_delete_account") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    [deleteView addSubview:delLabel];
+    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView);
+       
+    }];
+    
+    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+//        [self addDeleteAccountConfireView_MMMethodMMM];
+        [ValueletTheatic toastMsg_MMMethodMMM:GetString(@"text_account_not_login")];
+        
+    }];
+    
+//    deleteBtnView = deleteView;
+}
+
+//- (void)doDeleteAccount_MMMethodMMM {
+//
+//    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+//        [SdkUtil toastMsg_MMMethodMMM:@"text_select_account".localx];
+//        return;
+//    }
+//    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
+//
+//        [deleteAccountConfireView removeFromSuperview];
+//        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
+//        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+//            currentAccountModel = mAccountArray[0];
+//
+//            [accountDataList removeAllObjects];
+//            [accountDataList addObjectsFromArray:mAccountArray];
+//
+//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
+//
+////            [self setViewStatue_MMMethodMMM];
+//
+//        }else{
+//            AccountModel *tempA = [[AccountModel alloc] init];
+//            tempA.loginType = LOGIN_TYPE_SELF;
+//            tempA.account = @"";
+//            tempA.password = @"";
+//            currentAccountModel = tempA;
+//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempA accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
+//
+//        }
+//
+//    }];
+//}
 @end
