@@ -121,4 +121,6 @@
 "text_has_bind_tips_line"     :  "Account has been upgraded",
 "text_has_bind_tips_apple"     :  "Account has been upgraded",
 "text_has_bind_tips_mw"     :  "Member Account",
-"text_account_bind_success2"  :  "Upgrade member account successfully"}
+"text_account_bind_success2"  :  "Upgrade member account successfully",
+"text_account_not_login"  :  "You do not have an account, please login first！"
+}
