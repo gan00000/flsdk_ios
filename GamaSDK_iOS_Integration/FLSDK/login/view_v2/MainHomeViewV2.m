@@ -380,7 +380,15 @@
                     make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
                     make.centerX.mas_equalTo(self);
                 }else{
-                    
+                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-12));
+                    make.centerX.mas_equalTo(self);
+//                    if(device_is_iPhoneX){
+//                        make.top.mas_equalTo(self).mas_offset(VH(15));
+//                        make.trailing.mas_equalTo(self).mas_offset(VW(-(44+15)));
+//                    }else{
+//                        make.top.mas_equalTo(self).mas_offset(VH(15));
+//                        make.trailing.mas_equalTo(self).mas_offset(VW(-15));
+//                    }
                 }
             }];
             
