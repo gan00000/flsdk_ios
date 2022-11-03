@@ -54,6 +54,7 @@ To work properly, the release of this hormone needs to occur at regular times, s
     UIButton *guestLoginBtn;
     UIButton *checkBoxTermsBtn;
     CAGradientLayer *guestBtnGradientLayer;
+    UIView *deleteView;
 }
 - (instancetype)initView
 {
@@ -817,20 +818,28 @@ There are not enough words to contemplate on how much I m
         }];
         rememberTermsLable.userInteractionEnabled=YES;
 
-/**
-  lunch, you'll be sure to decline a proffered lunch meeting.
-
-提前想好你会在何时何地执行计划，这样做能在适当的时候让你想起自己的计划，如果你没有按照计划去做，就会产生内疚感。详细的计划也可以帮助你预测和避免阻碍——如果你计划在午餐时冥想，你一定会拒绝别人提出的午餐会议。
-
-2.Consider a penalty clause
-
-设置惩罚条 
-**/
         [rememberTermsLable addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
             [self showTermsViewForAccountLoginView];
         }];
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     termAgreeView.hidden = !mConfigModel.showContract;
+    
+    if (mConfigModel.deleteAccount) {
+        [self addDeleteAccountView];
+        if(deleteView){
+            [self addSubview:deleteView];
+         
+            [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+                if(IS_PORTRAIT){
+                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
+                    make.centerX.mas_equalTo(self);
+                }else{
+                    
+                }
+            }];
+            
+        }
+    }
 }
 - (void)registerViewBtnAction:(UIButton *)sender
 {
@@ -1001,4 +1010,145 @@ Happily, there is a way to dodge this fate. By setting tough goals (like a 10 pm
     [self showTermsViewForAccountLoginView];
     return NO;
 }
+
+#pragma mark - 删除账号按钮
+
+//-(UIView *)addDeleteAccountConfireView_MMMethodMMM
+//{
+//
+//    if (deleteAccountConfireView) {
+//        [deleteAccountConfireView removeFromSuperview];
+//    }
+//
+//    UIView *deleteView = [[UIView alloc] init];
+//    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
+//    deleteView.layer.cornerRadius = VW(10);
+//
+//    [self addSubview:deleteView];
+//
+//    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self);
+//        make.width.mas_equalTo(VW(272));
+//    }];
+//
+//    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage_MMMethodMMM:nend_update_account_bg];
+//    [deleteView addSubview:deleteWarmIV];
+//    [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteView).mas_offset(VH(12));
+//        make.centerX.equalTo(self);
+//        make.height.width.mas_equalTo(VW(25));
+//    }];
+//
+//    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
+//    [deleteView addSubview:deleteWarmLabel];
+//    deleteWarmLabel.numberOfLines = 0;
+//    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteWarmIV.mas_bottom).mas_offset(VH(10));
+//        make.leading.mas_equalTo(deleteView).mas_offset(VW(14));
+//        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
+//    }];
+//
+//    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+////    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    cancelBtn.layer.cornerRadius = VW(16);
+//    cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+//    cancelBtn.layer.borderWidth = 1;
+//
+//    [deleteView addSubview:cancelBtn];
+//    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
+//        make.bottom.mas_equalTo(deleteView).mas_offset(VH(-18));
+//        make.height.mas_equalTo(VW(32));
+//        make.width.mas_equalTo(VW(108));
+//        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
+//    }];
+//
+//    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    sureBtn.layer.cornerRadius = VW(16);
+////    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+////    sureBtn.layer.borderWidth = 1;
+//
+//    [deleteView addSubview:sureBtn];
+//    [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(cancelBtn);
+//        make.bottom.mas_equalTo(cancelBtn);
+//        make.width.mas_equalTo(cancelBtn);
+//        make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
+//    }];
+//
+//    deleteAccountConfireView = deleteView;
+//    return deleteAccountConfireView;
+//
+//}
+
+
+-(void)addDeleteAccountView
+{
+    deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView.layer.cornerRadius = VW(14);
+    
+    UIImageView *deleteIV = [BedeurFail initImageViewWithImage:mw_delete_icon];
+    [deleteView addSubview:deleteIV];
+    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView);
+        make.width.height.mas_equalTo(VW(15));
+    }];
+    
+    UILabel *delLabel = [BedeurFail initLabelWithText:GetString(@"text_delete_account") fontSize:FS(10) textColor:[UIColor blackColor]];
+    [deleteView addSubview:delLabel];
+    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView);
+       
+    }];
+    
+    [deleteView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+//        [self addDeleteAccountConfireView_MMMethodMMM];
+        [OdorSever toastMsg:GetString(@"text_account_not_login")];
+        
+    }];
+    
+//    deleteBtnView = deleteView;
+}
+
+//- (void)doDeleteAccount_MMMethodMMM {
+//
+//    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+//        [SdkUtil toastMsg_MMMethodMMM:@"text_select_account".localx];
+//        return;
+//    }
+//    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
+//
+//        [deleteAccountConfireView removeFromSuperview];
+//        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
+//        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+//            currentAccountModel = mAccountArray[0];
+//
+//            [accountDataList removeAllObjects];
+//            [accountDataList addObjectsFromArray:mAccountArray];
+//
+//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
+//
+////            [self setViewStatue_MMMethodMMM];
+//
+//        }else{
+//            AccountModel *tempA = [[AccountModel alloc] init];
+//            tempA.loginType = LOGIN_TYPE_SELF;
+//            tempA.account = @"";
+//            tempA.password = @"";
+//            currentAccountModel = tempA;
+//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempA accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
+//
+//        }
+//
+//    }];
+//}
+
 @end
