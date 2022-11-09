@@ -331,9 +331,9 @@
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-        if (self.mMWBlock) {
-            self.mMWBlock(NO, nil);
-        }
+//        if (self.mMWBlock) {
+//            self.mMWBlock(NO, nil);
+//        }
     }];
     
 }
