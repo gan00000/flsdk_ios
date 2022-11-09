@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) id fromPageParam;
 
 -(void)initData_MMMethodMMM;
+@property(nonatomic,strong)NSMutableArray *drawBlockArray;
+
+- (void)addDrawRectBolck:(CCallBack)callback;
 
 @end
 

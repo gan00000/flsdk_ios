@@ -38,4 +38,24 @@
 //某个系统事件(例如电话呼入)打断触摸过程
 //-(void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent*)event
 
+
+- (void)addDrawRectBolck:(CCallBack)callback
+{
+    if (!self.drawBlockArray) {
+        self.drawBlockArray = [NSMutableArray array];
+    }
+    [self.drawBlockArray addObject:callback];
+    
+}
+
+- (void)drawRect:(CGRect)rect{
+    
+    [super drawRect:rect];
+    
+    for (CCallBack  callback in self.drawBlockArray) {
+        
+        callback(@"drawRect",0,nil);
+    }
+    
+}
 @end
