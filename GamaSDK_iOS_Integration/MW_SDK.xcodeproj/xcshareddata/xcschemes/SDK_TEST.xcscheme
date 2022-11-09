@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
-               BuildableName = "dybttDemo.app"
+               BuildableName = "SDK_TEST.app"
                BlueprintName = "SDK_TEST"
                ReferencedContainer = "container:MW_SDK.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
-            BuildableName = "dybttDemo.app"
+            BuildableName = "SDK_TEST.app"
             BlueprintName = "SDK_TEST"
             ReferencedContainer = "container:MW_SDK.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
-            BuildableName = "dybttDemo.app"
+            BuildableName = "SDK_TEST.app"
             BlueprintName = "SDK_TEST"
             ReferencedContainer = "container:MW_SDK.xcodeproj">
          </BuildableReference>
