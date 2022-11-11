@@ -11,8 +11,13 @@
 
 #define SDK_CODE_OBFUSCATION   1  //是否开启方法混淆
 
+//#define SDK_V2      1
+//#define SDK_V3      1
+#define SDK_V4      1
+
 //#import "codeObfuscation.h"
 #import "imageNameHeader.h"
 //#import "codeObfuscationForMethodName.h"
 
+#import "ColorHeader.h"
 #endif /* preHeader_h */
