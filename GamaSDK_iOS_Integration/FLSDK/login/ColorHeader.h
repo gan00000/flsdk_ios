@@ -9,7 +9,22 @@
 #ifndef ColorHeader_h
 #define ColorHeader_h
 
+#ifdef SDK_V3
+
+#define BaseColor  @"#4CADFE"
+#define C_BUTTON_START  @"#4CADFE"
+#define C_BUTTON_END  @"#02EDFC"
+
+#elif SDK_V4
+
+#define BaseColor  @"#03CAFC"
+#define C_BUTTON_START  @"#90FD9E"
+#define C_BUTTON_END  @"#00C9FE"
+
+#else
 
 #define BaseColor  @"#FF892E"
+
+#endif
 
 #endif /* ColorHeader_h */

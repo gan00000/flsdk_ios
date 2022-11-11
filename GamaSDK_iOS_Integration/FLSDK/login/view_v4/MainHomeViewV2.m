@@ -16,6 +16,7 @@
 #import "LoginHelper.h"
 #import "SAppleLogin.h"
 #import "TermsViewV2.h"
+#import "ViewUtil.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -125,6 +126,14 @@
         make.leading.mas_equalTo(contentView).mas_offset(VH(38));
         make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));;
         make.height.mas_equalTo(VH(50));
+    }];
+    
+    // gradient
+    CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+    [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
+    
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        guestBtnGradientLayer.frame = guestLoginBtn.bounds;
     }];
     
     UIView *guestLoginBtnContent = [[UIView alloc] init];

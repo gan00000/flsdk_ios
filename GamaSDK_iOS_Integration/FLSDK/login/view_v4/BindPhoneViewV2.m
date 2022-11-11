@@ -9,6 +9,7 @@
 #import "CountTimerDelegate.h"
 #import "PhoneInfoModel.h"
 #import "SDKRequest.h"
+#import "ViewUtil.h"
 
 @interface BindPhoneViewV2 () <CountTimerDelegate,PhoneInfoModelDelegate>
 
@@ -213,7 +214,7 @@
     getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_get_vfcode") fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     
-    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#606060"].CGColor;
+    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
     getVfCodeBtn.layer.borderWidth = 0.5;
     getVfCodeBtn.layer.cornerRadius = VH(20);
     //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
@@ -241,6 +242,11 @@
         make.height.mas_equalTo(VH(40));
     }];
     
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
+    [okBtn.layer addSublayer:gl];
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        gl.frame = okBtn.bounds;
+    }];
     
     hasBindPhoneTips = [UIUtil initLabelWithText_MMMethodMMM:@"text_has_phone_bind_tips".localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:ColorHex(@"#4B4B4B")];
     hasBindPhoneTips.numberOfLines = 0;

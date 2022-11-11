@@ -14,6 +14,7 @@
 #import "LoginButton.h"
 #import "SDKRequest.h"
 #import "SdkUtil.h"
+#import "ViewUtil.h"
 
 @implementation FindPasswordViewV2
 
@@ -181,6 +182,14 @@
             make.height.mas_equalTo(VH(50));
         }];
         
+        
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            CAGradientLayer *glLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+            glLayer.frame = okBtn.bounds;
+            [okBtn.layer addSublayer:glLayer];
+            
+        }];
+
         
 //        UIButton *okBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_OK) tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
 //        [self addSubview:okBtn];

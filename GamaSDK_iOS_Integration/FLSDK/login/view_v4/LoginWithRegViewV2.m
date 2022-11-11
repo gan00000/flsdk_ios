@@ -157,6 +157,7 @@
 
 - (void)drawRect:(CGRect)rect  //system_method
 {
+    [super drawRect:rect];
     self.mAccountLoginView.delegate = self.delegate;
     self.mRegisterAccountView.delegate = self.delegate;
     

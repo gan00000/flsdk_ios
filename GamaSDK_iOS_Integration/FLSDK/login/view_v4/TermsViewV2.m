@@ -12,6 +12,7 @@
 #import "SdkHeader.h"
 #import "LoginButton.h"
 #import "LoginTitleView.h"
+#import "ViewUtil.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE @"sdk_provisions_first_enble"
 @interface TermsViewV2 ()
@@ -131,7 +132,7 @@
     
     UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_agree_read_tips".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    okBtn.layer.cornerRadius = VH(32) / 2;
+    okBtn.layer.cornerRadius = VH(16);
     okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
 //    okBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
 //    okBtn.layer.borderWidth = 0.5;
@@ -143,6 +144,12 @@
         make.bottom.mas_equalTo(closeBtn.mas_bottom);
         make.width.mas_equalTo(VW(190));
         make.height.mas_equalTo(VH(32));
+    }];
+    
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(16)];
+    [okBtn.layer addSublayer:gl];
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        gl.frame = okBtn.bounds;
     }];
     
     

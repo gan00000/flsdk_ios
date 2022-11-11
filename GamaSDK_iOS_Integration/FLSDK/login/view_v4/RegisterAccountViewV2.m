@@ -16,6 +16,7 @@
 #import "SdkUtil.h"
 #import "SAppleLogin.h"
 #import "LoginHelper.h"
+#import "ViewUtil.h"
 
 @implementation RegisterAccountViewV2
 {
@@ -204,6 +205,13 @@
             make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(34));
             make.height.mas_equalTo(VH(50));
         }];
+        
+        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+        [regAccountBtn.layer addSublayer:gl];
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            gl.frame = regAccountBtn.bounds;
+        }];
+
         
         
 //        UILabel *loginTipsLable = [[UILabel alloc] init];

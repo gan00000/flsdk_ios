@@ -11,14 +11,14 @@
 
 @implementation ViewUtil
 
-+(CAGradientLayer *)createGradientLayerWithRadius:(CGFloat)cornerRadius{
++(CAGradientLayer *)createGradientLayerWithRadius_MMMethodMMM:(CGFloat)cornerRadius{
     // gradient
     CAGradientLayer *gl = [CAGradientLayer layer];
 //    gl.frame = guestLoginBtn.bounds;//CGRectMake(37.5,217.5,300,50);
 //    guestBtnGradientLayer.frame = CGRectMake(0,0,200,20);
     gl.startPoint = CGPointMake(0.05, 0.05);
     gl.endPoint = CGPointMake(0.96, 0.95);
-    gl.colors = @[(__bridge id)[UIColor colorWithHexString:@"#4CADFE"].CGColor, (__bridge id)[UIColor colorWithHexString:@"#02EDFC"].CGColor];
+    gl.colors = @[(__bridge id)[UIColor colorWithHexString_MMMethodMMM:C_BUTTON_START].CGColor, (__bridge id)[UIColor colorWithHexString_MMMethodMMM:C_BUTTON_END].CGColor];
     gl.locations = @[@(0), @(1.0f)];
     gl.cornerRadius = cornerRadius;//VH(25)
     gl.zPosition = -10000;

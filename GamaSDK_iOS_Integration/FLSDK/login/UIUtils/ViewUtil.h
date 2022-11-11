@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewUtil : NSObject
 
-+(CAGradientLayer *)createGradientLayerWithRadius:(CGFloat)cornerRadius;
++(CAGradientLayer *)createGradientLayerWithRadius_MMMethodMMM:(CGFloat)cornerRadius;
 
 @end
 
