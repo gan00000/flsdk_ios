@@ -261,19 +261,18 @@ Have I found you?
 + (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type{
     @try {
 
-/**
-  hieve, it boosts your self-confidence. It also forces you to be introspective about what works in ways you might not otherwise.
-
-奇怪的是，有证据表明，指导有共同目标的朋友也能提高你的成功率。当你想给别人一些如何实现目标的 
-**/
+        SDK_LOG(@"logEventWithEventName=%@,eventValues=%@",eventName,eventValues);
         if (type & AdType_Appflyer) {
+            SDK_LOG(@"logEvent AdType_Appflyer");
             [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
         }
         if (type & AdType_Firebase) {
+            SDK_LOG(@"logEvent AdType_Firebase");
             [FIRAnalytics logEventWithName:eventName parameters:eventValues];
 //, your instinct may be to declare yourself a failure and throw in the towel. Researchers call
         }
         if (type & AdType_FB) {
+            SDK_LOG(@"logEvent AdType_FB");
             [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
         }
     } @catch (NSException *exception) {
