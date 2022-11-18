@@ -116,22 +116,6 @@ If it's not fun to e
     LetteradSupportal *phoneNumFiled;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    SDK_LOG(@"touchesBegan...");
-}
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    SDK_LOG(@"touchesBegan...");
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    SDK_LOG(@"touchesBegan...");
-}
-
-
 /**
   enough words to contemplate on how much I miss you and I miss us bein 
 **/

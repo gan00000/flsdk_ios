@@ -9,7 +9,7 @@
 尽管实现梦想的途中有时会遇到障碍，要知道这是命运对你的挑战。不是每个人都会赞成你的选择，接受这个现实，并相信自我的判断，追随那颗在你心中闪烁的明星，它会引领你踏上命 
 **/
 #import "ArtistBegin.h"
-
+#import "LoadingView.h"
 /**
   n't stop, and we don't disconnect. And that's to our detriment and it makes the next day more stressful."
 
@@ -372,18 +372,17 @@ I miss the morning kisses and the morning snuggling you a
     }];
 //tch the star that holds your destiny, the one that forever twinkles within your heart. Take advantage of precious opportunities while they still sparkle before you. Always believe that your ultimate goal is attainable as long as you commit yourself to 
     UIView *superView = appTopViewController.view;
-    [superView addSubview:mNoticeViewV2];
-    [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    UIView *bgV = [[LoadingView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
     }];
-
-/**
-  o it
-
-每天在固定时间起床和上床
-
-Melatonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approaches, levels of melatonin rise, becoming a signal to the body that it's time for bed. Production of melatonin is stopped by light -- so levels naturally fall as daylight approaches, getting you ready to greet the day 
-**/
+    
+    [bgV addSubview:mNoticeViewV2];
+    [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
+    }];
 }
 
 /**
@@ -899,25 +898,20 @@ Take pride in your accomplishments, as they are stepping stones to your dreams. 
 He proceeded to crumple the 20 dollar note up. He then asked, “Who still wants it?” Still the han 
 **/
     UIView *superView = appTopViewController.view;
-    [superView addSubview:mBindPhoneViewV2];
-//nds who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be
-    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-//s. Understand that you may make mistakes, but don’t let them discourage you. Value your capabilities and talents for they are what make you truly unique. The greatest gifts in life are not purchased, but acquired through hard work and determination.
-//
-//
-//
-//每前进一步，你都应该引以为豪，因为它们是你实现梦想的阶梯。要知道在这个过程中你也许会犯错误，但不要气馁。珍视自我的潜能，因为它们使你独一无二。生命中最珍贵的礼物不是花钱买来的，而是通过努力和决心得到的。
-//
-//
-//
-//F
+    
+    UIView *bgV = [[LoadingView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
     }];
-//ekends, he said, your sleep rhythms aren't predictable and the body doesn't know how to respond.
-//
-//临床心理学家、睡眠专家迈克尔·格兰德纳指出，为了让身体正常分泌褪黑素，你必须规律作息。如果你的上床和起床时间每天都不一样或者一到周末就改变，身体就无法预测你的睡眠节奏，也就不知道如何作出反应。
-//
-//Therefore it's important to have a standard wake
+    
+    [bgV addSubview:mBindPhoneViewV2];
+//nds who've made it to the finish line (literally or figuratively) and can show you how it's done. You'll pick up a bit just by spending time together because you'll be
+    
+    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
+    }];
+    
 }
 - (void)showUpgradeAccountViewWithBlock_WLFuncTag:(MWBlock)mBlock
 {
@@ -1001,18 +995,15 @@ Bella, the only reason I left was because I thought I was
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
 
-/**
-  。
-
-1. Make a schedule, and stick to it
-
-每天在固定时间起床和上床
-
-Melatonin is a hormone produced by the body to regulate when you get sleepy and when you wake up. As night approa 
-**/
-    [superView addSubview:mBindAccountViewV2];
-    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *bgV = [[LoadingView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:mBindAccountViewV2];
+    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
 
 /**
   he floor with his shoe. He picked it up, now crumpled and dirty. “Now, who still wants it?”
