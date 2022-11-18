@@ -10,6 +10,7 @@
 #import "SdkHeader.h"
 #import <Photos/Photos.h>
 #import "SecurityUtil.h"
+#import "TouchEventInterruptView.h"
 
 #define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
 #define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
@@ -248,10 +249,11 @@
     if (baseView == nil) {
         baseView = appTopViewController.view;
     }
-    UIView *bgV = [[UIView alloc] initWithFrame:CGRectZero];
+    UIView *bgV = [[TouchEventInterruptView alloc] initWithFrame:CGRectZero];
     bgV.backgroundColor = [UIColor clearColor];
     bgV.tag = kLoadingTag;
-    bgV.userInteractionEnabled = YES;
+    //bgV.userInteractionEnabled = YES;
+    
     [baseView addSubview:bgV];
     
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {

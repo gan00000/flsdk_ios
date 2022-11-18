@@ -21,7 +21,7 @@
 
 #import "AdDelegate.h"
 #import "MWWebViewController.h"
-
+#import "TouchEventInterruptView.h"
 #import <StoreKit/StoreKit.h>
 
 // 通知类型
@@ -160,11 +160,18 @@
         
         [self sdkLoginWithHandlerForInner];
     }];
+    
     UIView *superView = appTopViewController.view;
-    [superView addSubview:mNoticeViewV2];
+    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:mNoticeViewV2];
     
     [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(superView);
+        make.edges.mas_equalTo(bgV);
     }];
     
 }
@@ -357,10 +364,16 @@
     BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
     mBindPhoneViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
-    [superView addSubview:mBindPhoneViewV2];
     
-    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:mBindPhoneViewV2];
+    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
     }];
     
 }
@@ -381,10 +394,16 @@
     BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView_MMMethodMMM];
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
-    [superView addSubview:mBindAccountViewV2];
     
-    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:mBindAccountViewV2];
+    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
     }];
     
 }
