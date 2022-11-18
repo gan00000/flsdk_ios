@@ -58,4 +58,13 @@
     }
     
 }
+
+-(void)removeFromGameView{
+    
+    if([self.superview isKindOfClass:[TouchEventInterruptView class]]){
+        [self.superview removeFromSuperview];
+    }else{
+        [self removeFromSuperview];
+    }
+}
 @end

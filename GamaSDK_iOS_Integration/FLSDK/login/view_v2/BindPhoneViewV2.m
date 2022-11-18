@@ -303,7 +303,7 @@
     switch (sender.tag) {
             
         case TAG_CLOSE:
-            [self removeFromSuperview];
+            [self removeFromGameView];
             if (self.mMWBlock) {
                 self.mMWBlock(NO, nil);
             }
@@ -353,7 +353,7 @@
         {
             if(SDK_DATA.mLoginResponse.data.isBindPhone) //已经绑定的状态
             {
-                [self removeFromSuperview];
+                [self removeFromGameView];
                 return;
             }
             NSString *tel = phoneNumFiled.inputTextField.text;
@@ -388,7 +388,7 @@
                 if (self.mMWBlock) {
                     self.mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
                 }
-                [self removeFromSuperview];
+                [self removeFromGameView];
                 
             } errorBlock_MMMethodMMM:^(BJError *error) {
                 

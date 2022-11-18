@@ -237,7 +237,7 @@
     switch (sender.tag) {
             
         case TAG_CLOSE:
-            [self removeFromSuperview];
+            [self removeFromGameView];
 //            if (self.mMWBlock) {
 //                self.mMWBlock(NO, nil);
 //            }
@@ -249,7 +249,7 @@
             if (accountSDKTextFiledView) {
                 [self bindAccount_MMMethodMMM];
             }else{
-                [self removeFromSuperview];
+                [self removeFromGameView];
 //                if (self.mMWBlock) {
 //                    self.mMWBlock(NO, nil);
 //                }
@@ -327,7 +327,7 @@
             self.mMWBlock(YES, loginData);
         }
         
-        [self removeFromSuperview];
+        [self removeFromGameView];
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];

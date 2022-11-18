@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewDelegate.h"
 #import "ColorHeader.h"
+#import "TouchEventInterruptView.h"
 
 #define MARGIN_TOP  IS_PORTRAIT ? 180.0 : 20.0
 
@@ -31,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addDrawRectBolck:(CCallBack)callback;
 
+-(void)removeFromGameView;
 @end
 
 NS_ASSUME_NONNULL_END
