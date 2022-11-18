@@ -107,6 +107,22 @@ Therefore it's important to have a standard wake up time, even on weekends, vaca
     }
     return self;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
 - (instancetype)init
 //t to have a stan
 {
