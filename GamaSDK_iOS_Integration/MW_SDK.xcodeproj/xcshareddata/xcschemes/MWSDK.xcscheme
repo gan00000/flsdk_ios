@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "037C6EDA2875A97B0041EC34"
-               BuildableName = "MWSDK.framework"
-               BlueprintName = "MWSDK"
+               BuildableName = "MWSDK_V2.framework"
+               BlueprintName = "MWSDK_V2"
                ReferencedContainer = "container:MW_SDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "037C6EDA2875A97B0041EC34"
-            BuildableName = "MWSDK.framework"
-            BlueprintName = "MWSDK"
+            BuildableName = "MWSDK_V2.framework"
+            BlueprintName = "MWSDK_V2"
             ReferencedContainer = "container:MW_SDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -725,7 +725,7 @@
 		0369B35C28655669002F4B2F /* LoginButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginButtonData.m; sourceTree = "<group>"; };
 		03764809286178D600CAD034 /* GIDDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIDDelegate.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* GIDDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIDDelegate.m; sourceTree = "<group>"; };
-		037C6EDB2875A97B0041EC34 /* MWSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		037C6EEB2875A97C0041EC34 /* MWSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDKTests.m; sourceTree = "<group>"; };
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
@@ -1824,7 +1824,7 @@
 			children = (
 				CEE6B3711A148B1E009E77FF /* SDK_TEST.app */,
 				22DF6AB11EAD9A4C0003610E /* libFLSDK.a */,
-				037C6EDB2875A97B0041EC34 /* MWSDK.framework */,
+				037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */,
 				0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */,
 			);
 			name = Products;
@@ -1976,9 +1976,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		037C6EDA2875A97B0041EC34 /* MWSDK */ = {
+		037C6EDA2875A97B0041EC34 /* MWSDK_V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */;
+			buildConfigurationList = 037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK_V2" */;
 			buildPhases = (
 				037C6ED62875A97B0041EC34 /* Headers */,
 				037C6ED72875A97B0041EC34 /* Sources */,
@@ -1989,9 +1989,9 @@
 			);
 			dependencies = (
 			);
-			name = MWSDK;
+			name = MWSDK_V2;
 			productName = MWSDK;
-			productReference = 037C6EDB2875A97B0041EC34 /* MWSDK.framework */;
+			productReference = 037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */ = {
@@ -2112,7 +2112,7 @@
 				CEE6B3701A148B1E009E77FF /* SDK_TEST */,
 				22DF6AB01EAD9A4C0003610E /* FLSDK */,
 				24C7583D1D65B3520088A176 /* Framework */,
-				037C6EDA2875A97B0041EC34 /* MWSDK */,
+				037C6EDA2875A97B0041EC34 /* MWSDK_V2 */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
 				0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */,
 			);
@@ -2602,7 +2602,7 @@
 /* Begin PBXTargetDependency section */
 		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 037C6EDA2875A97B0041EC34 /* MWSDK */;
+			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
 			targetProxy = 037C6F73287686D40041EC34 /* PBXContainerItemProxy */;
 		};
 		0387BA95291B8F32001BACA8 /* PBXTargetDependency */ = {
@@ -3265,7 +3265,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK" */ = {
+		037C6EF22875A97C0041EC34 /* Build configuration list for PBXNativeTarget "MWSDK_V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037C6EF32875A97C0041EC34 /* Debug */,
