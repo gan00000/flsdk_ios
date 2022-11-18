@@ -97,6 +97,10 @@
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		033B9C9F28DB0DAF000DA93D /* GenetsayDextrition.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B9C9D28DB0DAF000DA93D /* GenetsayDextrition.h */; };
 		033B9CA128DB0DAF000DA93D /* GenetsayDextrition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B9C9E28DB0DAF000DA93D /* GenetsayDextrition.m */; };
+		0352F7072927413700160A67 /* LoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F7052927413700160A67 /* LoadingView.h */; };
+		0352F7082927413700160A67 /* LoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F7052927413700160A67 /* LoadingView.h */; };
+		0352F7092927413700160A67 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F7062927413700160A67 /* LoadingView.m */; };
+		0352F70A2927413700160A67 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F7062927413700160A67 /* LoadingView.m */; };
 		0362AEED290977FE009074A8 /* WPayModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* WPayModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0362AEF1290977FE009074A8 /* WLoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* WLoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0362AEF5290977FE009074A8 /* WLZSHLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* WLZSHLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -586,6 +590,8 @@
 		034558BE285B0B120025EFB2 /* MachineileSenly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineileSenly.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* CompanyetyMaybeaneous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyetyMaybeaneous.h; sourceTree = "<group>"; };
 		034558D2285C25210025EFB2 /* CompanyetyMaybeaneous.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyetyMaybeaneous.m; sourceTree = "<group>"; };
+		0352F7052927413700160A67 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		0352F7062927413700160A67 /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		0362AF7B290977FE009074A8 /* WLZHSSDK_TEST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WLZHSSDK_TEST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03650193285C761600578028 /* BromwardVeraciitious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BromwardVeraciitious.h; sourceTree = "<group>"; };
 		03650194285C761600578028 /* BromwardVeraciitious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BromwardVeraciitious.m; sourceTree = "<group>"; };
@@ -1615,6 +1621,8 @@
 				32CDA7942540371A00D3969F /* SeeizeMacismallary.m */,
 				034558D1285C25210025EFB2 /* CompanyetyMaybeaneous.h */,
 				034558D2285C25210025EFB2 /* CompanyetyMaybeaneous.m */,
+				0352F7052927413700160A67 /* LoadingView.h */,
+				0352F7062927413700160A67 /* LoadingView.m */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -1795,6 +1803,7 @@
 				03716922290779BD006A4EFD /* MusuleSphen.h in Headers */,
 				03716923290779BD006A4EFD /* GuessizationPhylcapitalee.h in Headers */,
 				03716924290779BD006A4EFD /* WLoginModel.h in Headers */,
+				0352F7082927413700160A67 /* LoadingView.h in Headers */,
 				03716925290779BD006A4EFD /* JocspecificfactionStruct.h in Headers */,
 				03716926290779BD006A4EFD /* PrenditudeAtetic.h in Headers */,
 				03716927290779BD006A4EFD /* MeanerAnnoutsideful.h in Headers */,
@@ -1823,6 +1832,7 @@
 				030FAA5228A0FA7C00709536 /* MusuleSphen.h in Headers */,
 				030FAA7128A27F0600709536 /* GuessizationPhylcapitalee.h in Headers */,
 				037C6F692875AD230041EC34 /* WLoginModel.h in Headers */,
+				0352F7072927413700160A67 /* LoadingView.h in Headers */,
 				03C05CA828AE5F6B0060F4CD /* JocspecificfactionStruct.h in Headers */,
 				030FAA8628A4B07900709536 /* PrenditudeAtetic.h in Headers */,
 				030FAA6928A1FE5800709536 /* MeanerAnnoutsideful.h in Headers */,
@@ -2105,6 +2115,7 @@
 				03716939290779BD006A4EFD /* UIImageView+HighlightedWebCache.m in Sources */,
 				0371693A290779BD006A4EFD /* JocspecificfactionStruct.m in Sources */,
 				0371693B290779BD006A4EFD /* SDWebImageDownloader.m in Sources */,
+				0352F70A2927413700160A67 /* LoadingView.m in Sources */,
 				0371693C290779BD006A4EFD /* UIImage+GIF.m in Sources */,
 				0371693D290779BD006A4EFD /* MeanerAnnoutsideful.m in Sources */,
 				0371693E290779BD006A4EFD /* UIImage+MultiFormat.m in Sources */,
@@ -2238,6 +2249,7 @@
 				037C6F5C2875ACD70041EC34 /* UIImageView+HighlightedWebCache.m in Sources */,
 				03C05CAA28AE5F6B0060F4CD /* JocspecificfactionStruct.m in Sources */,
 				037C6F5D2875ACD70041EC34 /* SDWebImageDownloader.m in Sources */,
+				0352F7092927413700160A67 /* LoadingView.m in Sources */,
 				037C6F5E2875ACD70041EC34 /* UIImage+GIF.m in Sources */,
 				030FAA6828A1FE5800709536 /* MeanerAnnoutsideful.m in Sources */,
 				037C6F5F2875ACD70041EC34 /* UIImage+MultiFormat.m in Sources */,
@@ -3076,7 +3088,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 16;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = RA4K92S7FF;
@@ -3145,7 +3157,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 16;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = RA4K92S7FF;

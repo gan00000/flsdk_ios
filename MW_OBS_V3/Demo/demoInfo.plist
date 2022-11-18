@@ -30,7 +30,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fszhlios</string>
-				<string>fb1167206653872363</string>
+				<string>fb1137481690478934</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -45,16 +45,16 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<true/>
 	<key>FacebookAppID</key>
-	<string>1167206653872363</string>
+	<string>1137481690478934</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
 	<key>FacebookClientToken</key>
-	<string>42c8e6c78eeccdebb597390ee50b05ca</string>
+	<string>9457e9f00d7e1c0a9869c451326b15a9</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
-    <key>FacebookAdvertiserIDCollectionEnabled</key>
-        <true/>
-    <key>FacebookAutoLogAppEventsEnabled</key>
-    <true/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -98,12 +98,6 @@
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 </dict>

@@ -3,7 +3,7 @@
 #import "SdkHeader.h"
 #import <Photos/Photos.h>
 #import "CapitdecideEmeticmost.h"
-
+#import "LoadingView.h"
 /**
   up late one Friday to watch an extra episode of "Succession." After  
 **/
@@ -626,17 +626,12 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
 **/
         baseView = appTopViewController.view;
     }
-    UIView *bgV = [[UIView alloc] initWithFrame:CGRectZero];
+    UIView *bgV = [[LoadingView alloc] initWithFrame:CGRectZero];
     bgV.backgroundColor = [UIColor clearColor];
     bgV.tag = kLoadingTag;
-    bgV.userInteractionEnabled = YES;
+//    bgV.userInteractionEnabled = YES;
     [baseView addSubview:bgV];
-//ou badly. I still don't know if I can control myself.
-//就是因为发觉自己多么渴望想得到你，我到现在还不知道是否控制得了自己。
-//When life offers you a dream so far beyond any of your expectations, it’s not reasonable to grieve when it comes to an end.
-//当生活给了你一个远远超过你期望的美梦，那么，当这一期结束时，也就没有理由再去伤心。
-//图片
-//Bella, the only reason I
+
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(@(0));
 //抓住这宝贵的机会。请谨记，只要你坚持不懈，最终的目标总能实现。
@@ -646,28 +641,9 @@ Strangely enough, there is evidence that coaching friends with shared goals can 
 //Though barriers may sometimes stand in the way of
         make.centerY.equalTo(@(0));
         make.width.equalTo(@(SCREEN_WIDTH));
-//s may sometimes stand in the way of your dreams, remember that your destiny is hiding behind them. Accept the fact that not everyone is going to approve of the choices you’ve made, have faith in your judgment, catch the star that twinkles in your heart, and it will lead you to your destiny’s path. Follow that pathway and uncover the sweet sunrises that await you.
-//
-//
-//
-//尽管实现梦想的途中有时会遇到障碍，要知道这是命
+
         make.height.equalTo(@(SCREEN_HEIGHT));
-//h》
-//
-//MV
-//图片
-//
-//
-//
-//
-//
-//《Flightless Bird, American Mouth 》 -Iron & Wine
-//
-//折翼的鸟，在美国的河口
-//I was a quick wet boy
-//我曾是个爱哭的男孩
-//Diving too deep for coins
-//为钱币而潜
+
     }];
 
 /**

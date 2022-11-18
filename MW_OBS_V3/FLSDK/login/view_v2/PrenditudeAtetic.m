@@ -71,6 +71,22 @@ MV
     LayfoldCheckth   *mLoginTitleView;
 //during lunch, you'll
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    SDK_LOG(@"touchesBegan...");
+}
+
 - (instancetype)initView
 {
     self = [super init];
