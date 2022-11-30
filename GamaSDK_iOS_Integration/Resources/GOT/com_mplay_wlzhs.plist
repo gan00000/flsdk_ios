@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>sdk_more_language</key>
-	<true/>
+	<false/>
 	<key>sdk_res_bundle_name</key>
 	<string>SDKResourcesV4</string>
 	<key>sdk_v_version</key>
@@ -11,26 +11,26 @@
 	<key>sdk_ad_bug</key>
 	<false/>
 	<key>sdk_appId</key>
-	<string>1635276856</string>
+	<string>6443579142</string>
 	<key>af_dev_key</key>
-	<string>QtrxWJpdhQVov9F8hwKD3o</string>
+	<string>823qxpxym3xeHK3qsHFiv5</string>
 	<key>sdk_url_cdn</key>
-	<string>https://cdn-download.meowplayer.com/</string>
+	<string>https://cdn-download.mmhyplayer.com/</string>
 	<key>terms_service_url</key>
-	<string>https://member.meowplayer.com/sdk/agreement/%@_agreement.html</string>
+	<string>https://member.mmhyplayer.com/sdk/agreement/%@_agreement.html</string>
 	<key>appKey</key>
-	<string>c402932996a88ee8c97ac2014df57656</string>
+	<string>49eb29a0faa1933c9410598a807f1b74</string>
 	<key>gameCode</key>
-	<string>fszhlios</string>
+	<string>wlzhsios</string>
 	<key>gameLanguage</key>
 	<string>en_US</string>
 	<key>sdk_language</key>
 	<string>en</string>
 	<key>sdk_url_login</key>
-	<string>https://login.meowplayer.com/</string>
+	<string>https://login.mmhyplayer.com/</string>
 	<key>sdk_url_pay</key>
-	<string>https://pay.meowplayer.com/</string>
+	<string>https://pay.mmhyplayer.com/</string>
 	<key>sdk_url_log</key>
-	<string>https://log.meowplayer.com/</string>
+	<string>https://log.mmhyplayer.com/</string>
 </dict>
 </plist>

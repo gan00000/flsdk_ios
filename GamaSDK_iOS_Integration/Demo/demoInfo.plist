@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>放置动画demo</string>
+	<string>万灵召唤师demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fszhlios</string>
-				<string>fb1672362243138559</string>
+				<string>wlzhsios</string>
+				<string>fb1137481690478934</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -48,11 +48,11 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>1672362243138559</string>
+	<string>1137481690478934</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>6a5570d4d7aad0ba5fb55035ce199da6</string>
+	<string>9457e9f00d7e1c0a9869c451326b15a9</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -69,7 +69,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1657313585</string>
+		<string>1657186918</string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
