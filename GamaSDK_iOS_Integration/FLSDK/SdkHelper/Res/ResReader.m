@@ -245,7 +245,7 @@ static dispatch_once_t onceToken;
     if(!_textStringDic){
         _textStringDic = [NSMutableDictionary dictionary];
         
-        NSString *languageStr = @"zh-Hant";
+        NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
         
         if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
             
@@ -258,8 +258,6 @@ static dispatch_once_t onceToken;
                 languageStr = @"zh-Hant";
             }else if ([preferredLang hasPrefix:@"en"]){
                 languageStr = @"en";
-            }else{
-                languageStr = @"zh-Hant";
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
@@ -299,7 +297,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 初始化 Bundle
 - (void)setBundleInfo_MMMethodMMM {
 
-    NSString *languageStr = @"zh-Hant";
+    NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
     
     if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
         
@@ -312,8 +310,6 @@ static dispatch_once_t onceToken;
             languageStr = @"zh-Hant";
         }else if ([preferredLang hasPrefix:@"en"]){
             languageStr = @"en";
-        }else{
-            languageStr = @"zh-Hant";
         }
     }
     
@@ -346,14 +342,45 @@ static dispatch_once_t onceToken;
 }
 -(NSString *)getGameLanguage_MMMethodMMM
 {
-    if ([self isMoreLanguage_MMMethodMMM]) {
-        return [SUtil getServerLanguage_MMMethodMMM];
+//    if ([self isMoreLanguage_MMMethodMMM]) {
+//        return [SUtil getServerLanguage_MMMethodMMM];
+//    }
+//    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
+//        return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
+//    }
+//    return @"zh_TW";
+    
+    return [self getServerLanguage_MMMethodMMM];
+}
+
+- (NSString *)getServerLanguage_MMMethodMMM{
+    
+    NSString *languageStr = @"";
+    if ([self isMoreLanguage_MMMethodMMM]) {//多语言版本才根据下列情况取值，非多语言版本默认繁体
+        
+        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+            
+            languageStr = @"zh_CN";
+            
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+            languageStr = @"zh_TW";
+            
+        }else if ([preferredLang hasPrefix:@"en"]){
+            languageStr = @"en_US";
+        }
     }
+    if ([StringUtil isNotEmpty_MMMethodMMM:languageStr]) {
+        return languageStr;
+    }
+    
     if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
         return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
     }
     return @"zh_TW";
+
 }
+
 
 -(NSString *)getLoginUrl_MMMethodMMM
 {
@@ -403,6 +430,11 @@ static dispatch_once_t onceToken;
 -(BOOL)isMoreLanguage_MMMethodMMM
 {
     return [self getBoolForKey_MMMethodMMM:@"sdk_more_language"];
+}
+
+-(NSString *)getsdkLanguage_MMMethodMMM
+{
+    return [self getStringForKey_MMMethodMMM:@"sdk_language"];
 }
 
 #pragma mark - 获取配置文件中sdk bundle名字，获取不到去gameCode作为名字

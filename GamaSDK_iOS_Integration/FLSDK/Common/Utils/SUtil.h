@@ -194,7 +194,7 @@
 #pragma mark - 获取当前系统语言（与服务器的语言并不一样，请注意使用
 + (NSString*)getPreferredLanguage_MMMethodMMM;
 
-+ (NSString *)getServerLanguage_MMMethodMMM;
+//+ (NSString *)getServerLanguage_MMMethodMMM;
 
 + (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier;
 

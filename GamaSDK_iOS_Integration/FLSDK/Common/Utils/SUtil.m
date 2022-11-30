@@ -382,28 +382,6 @@
     return preferredLang;
 }
 
-+ (NSString *)getServerLanguage_MMMethodMMM{
-    
-    NSString *languageStr = @"zh_TW";
-    if ([SDKRES isMoreLanguage_MMMethodMMM]) {//多语言版本才根据下列情况取值，非多语言版本默认繁体
-        
-        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
-            
-            languageStr = @"zh_CN";
-            
-        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-            languageStr = @"zh_TW";
-            
-        }else if ([preferredLang hasPrefix:@"en"]){
-            languageStr = @"en_US";
-        }
-    }
-    
-    return languageStr;
-
-}
-
 
 // Value暂添加NSString、NSDictionary两种类型的支持
 + (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier

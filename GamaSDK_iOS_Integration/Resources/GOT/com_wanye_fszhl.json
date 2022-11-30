@@ -1,7 +1,8 @@
 {   "af_dev_key" : "QtrxWJpdhQVov9F8hwKD3o",
     "appKey" : "c402932996a88ee8c97ac2014df57656",
     "gameCode" : "fszhlios",
-    "gameLanguage" : "zh_TW",
+    "gameLanguage" : "zh_TW", //zh_CN  zh_TW  en_US
+    "sdk_language" : "zh-Hans", //zh-Hans, zh-Hant, en
     "sdk_ad_bug" : "0",
     "sdk_appId" : "1635276856",
     "sdk_more_language" : "1",
