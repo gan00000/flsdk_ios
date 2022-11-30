@@ -5,7 +5,7 @@
 	<key>sdk_more_language</key>
 	<true/>
 	<key>sdk_res_bundle_name</key>
-	<string>SDKResourcesV2</string>
+	<string>SDKResourcesV4</string>
 	<key>sdk_v_version</key>
 	<string>v2</string>
 	<key>sdk_ad_bug</key>
@@ -23,7 +23,9 @@
 	<key>gameCode</key>
 	<string>fszhlios</string>
 	<key>gameLanguage</key>
-	<string>zh_TW</string>
+	<string>en_US</string>
+	<key>sdk_language</key>
+	<string>en</string>
 	<key>sdk_url_login</key>
 	<string>https://login.meowplayer.com/</string>
 	<key>sdk_url_pay</key>
