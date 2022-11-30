@@ -363,6 +363,7 @@
         @"versionName"      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
         @"versionCode"      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
         @"systemVersion"    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+        @"osVersion"        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
         @"deviceType"       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
         @"os"               :     @"ios", //os=ios
         @"gameLanguage"     :     GAME_LANGUAGE? : @"",
