@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>sdk_more_language</key>
-	<false/>
+	<true/>
 	<key>sdk_res_bundle_name</key>
-	<string>SDKResourcesV4</string>
+	<string>SDKResourcesV3</string>
 	<key>sdk_v_version</key>
 	<string>v2</string>
 	<key>sdk_ad_bug</key>
