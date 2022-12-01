@@ -254,6 +254,7 @@
 		037C6F682875AD230041EC34 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F692875AD230041EC34 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038612D4293861B900CC9C44 /* MWSDK_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */; };
 		0387B9D8291B8C9E001BACA8 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		0387B9D9291B8C9E001BACA8 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		0387B9DA291B8C9E001BACA8 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
@@ -441,7 +442,6 @@
 		03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
 		03D97DE1286EE422008D0B3A /* PayData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; };
 		03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; };
-		03DDE6E3291B968800A6A1E6 /* MWSDK_V4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */; };
 		03E076682861E73C00B81B65 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
 		03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
 		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -555,6 +555,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
 			remoteInfo = MWSDK;
+		};
+		038612D5293861C500CC9C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
+			remoteInfo = MWSDK_V2;
 		};
 		0387BA94291B8F32001BACA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -815,7 +822,6 @@
 		03C05CA628AE5F6B0060F4CD /* BasePopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePopupView.h; sourceTree = "<group>"; };
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
-		03D5F35D28D3187F00C3855E /* codeObfuscation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
 		03D97DD6286EE281008D0B3A /* BaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSDK.m; sourceTree = "<group>"; };
@@ -1027,7 +1033,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03DDE6E3291B968800A6A1E6 /* MWSDK_V4.framework in Frameworks */,
+				038612D4293861B900CC9C44 /* MWSDK_V2.framework in Frameworks */,
 				0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */,
 				0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */,
 				0332F57428C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
@@ -1455,7 +1461,6 @@
 			isa = PBXGroup;
 			children = (
 				0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */,
-				03D5F35D28D3187F00C3855E /* codeObfuscation.h */,
 				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,
 				03D5F35E28D3187F00C3855E /* preHeader.pch */,
 			);
@@ -2043,6 +2048,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				038612D6293861C500CC9C44 /* PBXTargetDependency */,
 				0387BA95291B8F32001BACA8 /* PBXTargetDependency */,
 			);
 			name = SDK_TEST;
@@ -2604,6 +2610,11 @@
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
 			targetProxy = 037C6F73287686D40041EC34 /* PBXContainerItemProxy */;
+		};
+		038612D6293861C500CC9C44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
+			targetProxy = 038612D5293861C500CC9C44 /* PBXContainerItemProxy */;
 		};
 		0387BA95291B8F32001BACA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

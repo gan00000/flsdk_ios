@@ -123,7 +123,7 @@ static dispatch_once_t onceToken;
 #pragma mark -从main bundle配置文件中读取配置信息
 -(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
-    SDK_LOG(@"======================readMainBundleCoreConfInfo error =================");
+    SDK_LOG(@"======================readMainBundleCoreConfInfo start =================");
     //获取配置文件名字
     NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
     

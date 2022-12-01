@@ -467,4 +467,6 @@
 #define getSdkBaseEncryptKey_MMMethodMMM    getSdkBaseEncryptKeyahheqDy
 #define decryptAllStringContent_MMMethodMMM   decryptAllStringContentfssz
 
+#define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
+
 #endif  /* codeObfuscation_h */
