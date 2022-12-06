@@ -468,5 +468,7 @@
 #define decryptAllStringContent_MMMethodMMM   decryptAllStringContentfssz
 
 #define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
+#define reissue_MMMethodMMM reissue
+
 
 #endif  /* codeObfuscation_h */

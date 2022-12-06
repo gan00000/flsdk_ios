@@ -354,13 +354,31 @@
 //    在開發過程中，無法直接關聯 transaction 與 orderID 之間聯絡，雖然有一個 applicationUserName 欄位，可以儲存一個資訊。但是這個欄位是不是 100%靠譜，在某些情況下會丟失儲存的資料。
     //没有消耗的话，相同的productId会被直接返回，此时applicationUsername为空值
     NSString * parameterStr = transaction.payment.applicationUsername;
-    
-    if (!parameterStr || [@"" isEqualToString:parameterStr])
+    NSString *reissue = @"no";
+    if (!parameterStr || [@"" isEqualToString:parameterStr])//applicationUsername为空值
     {
-        parameterStr = self.orderId;
+        //此时去找历史订单，找到transactionId相同的记录，把orderId赋值
+        NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
+        if (localPayDataDic) {
+            NSDictionary *subDic = localPayDataDic[transactionId];
+            if (subDic) {
+                NSString *orderId = subDic[kSaveReceiptData_orderId];
+//                NSString *receiptData = subDic[kSaveReceiptData_receiptData];
+//                NSString *transactionId = subDic[kSaveReceiptData_transactionId];
+                SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderId);
+                parameterStr = orderId;
+                reissue = @"no_2";
+            }
+        }
+        //如果此处仍为空值，把当前生成的订单赋值（该笔订单可能为不是对应该笔成功的充值的）
+        if([StringUtil isEmpty_MMMethodMMM:parameterStr]){
+            parameterStr = self.orderId;
+        }
+        
     }
+    
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:@"no" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];// 结束订单
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;
