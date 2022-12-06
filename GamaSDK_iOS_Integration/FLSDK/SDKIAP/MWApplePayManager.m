@@ -69,7 +69,7 @@
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderId);
-            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId reissue_MMMethodMMM:@"yes" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderId);
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
             } errorBlock_MMMethodMMM:^(BJError *error) {
@@ -88,6 +88,9 @@
         SDK_LOG(@"结束所有apple未消耗订单");
         for (SKPaymentTransaction* transaction in transactions) {
             if (transaction.transactionState == SKPaymentTransactionStatePurchased ||transaction.transactionState == SKPaymentTransactionStateRestored) {//此处是否做个补发好一点...
+//                NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
+//                NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
+//                NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
                 [[SKPaymentQueue defaultQueue]finishTransaction:transaction];
             }
         }
@@ -237,8 +240,9 @@
         for(SKPaymentTransaction *tran in transaction){
             //如果上一笔未调用finishTransaction，发起付款会直接回调到这里
             switch (tran.transactionState) {
-                case SKPaymentTransactionStatePurchased:
+                case SKPaymentTransactionStatePurchased://没有消耗的话，相同的productId会被直接返回
                 {
+                    SDK_LOG(@"购买成功 SKPaymentTransactionStatePurchased");
                     [self handleTransaction_MMMethodMMM:tran];
 //                    [[SKPaymentQueue defaultQueue] finishTransaction:tran];
                 }
@@ -262,6 +266,7 @@
                     break;
                 case SKPaymentTransactionStateDeferred:
                 {
+                    SDK_LOG(@"SKPaymentTransactionStateDeferred");
 //                    [self completeTransaction_MMMethodMMM:tran];
 //                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"最终状态未确定")];
                 }
@@ -297,6 +302,49 @@
     NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
 //    NSString *receiptString = [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
     
+    /**
+     {
+         "receipt": {
+             "receipt_type": "ProductionSandbox",
+             "adam_id": 0,  //沙盒为0，线上是appId ,需要验证
+             "app_item_id": 0,
+             "bundle_id": "com.mplay.wlzhs",  //需要验证
+             "application_version": "1",
+             "download_id": 0,
+             "version_external_identifier": 0,
+             "receipt_creation_date": "2022-12-06 04:20:04 Etc/GMT",
+             "receipt_creation_date_ms": "1670300404000",
+             "receipt_creation_date_pst": "2022-12-05 20:20:04 America/Los_Angeles",
+             "request_date": "2022-12-06 04:23:06 Etc/GMT",
+             "request_date_ms": "1670300586758",
+             "request_date_pst": "2022-12-05 20:23:06 America/Los_Angeles",
+             "original_purchase_date": "2013-08-01 07:00:00 Etc/GMT",
+             "original_purchase_date_ms": "1375340400000",
+             "original_purchase_date_pst": "2013-08-01 00:00:00 America/Los_Angeles",
+             "original_application_version": "1.0",
+             "in_app": [
+                 {
+                     "quantity": "1",
+                     "product_id": "com.mplay.wlzhs.tqlb2", //需要验证
+                     "transaction_id": "2000000219999864",
+                     "original_transaction_id": "2000000219999864",
+                     "purchase_date": "2022-12-06 03:59:03 Etc/GMT",
+                     "purchase_date_ms": "1670299143000",
+                     "purchase_date_pst": "2022-12-05 19:59:03 America/Los_Angeles",
+                     "original_purchase_date": "2022-12-06 03:59:03 Etc/GMT",
+                     "original_purchase_date_ms": "1670299143000",
+                     "original_purchase_date_pst": "2022-12-05 19:59:03 America/Los_Angeles",
+                     "is_trial_period": "false",
+                     "in_app_ownership_type": "PURCHASED"
+                 }
+             ]
+         },
+         "environment": "Sandbox",
+         "status": 0
+     }
+     */
+
+    //每次获取都会改变，但in_app信息不会变，需要验证
     NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
     
     [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.orderId];
@@ -304,14 +352,33 @@
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
     
 //    在開發過程中，無法直接關聯 transaction 與 orderID 之間聯絡，雖然有一個 applicationUserName 欄位，可以儲存一個資訊。但是這個欄位是不是 100%靠譜，在某些情況下會丟失儲存的資料。
+    //没有消耗的话，相同的productId会被直接返回，此时applicationUsername为空值
     NSString * parameterStr = transaction.payment.applicationUsername;
-    
-    if (!parameterStr || [@"" isEqualToString:parameterStr])
+    NSString *reissue = @"no";
+    if (!parameterStr || [@"" isEqualToString:parameterStr])//applicationUsername为空值
     {
-        parameterStr = self.orderId;
+        //此时去找历史订单，找到transactionId相同的记录，把orderId赋值
+        NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
+        if (localPayDataDic) {
+            NSDictionary *subDic = localPayDataDic[transactionId];
+            if (subDic) {
+                NSString *orderId = subDic[kSaveReceiptData_orderId];
+//                NSString *receiptData = subDic[kSaveReceiptData_receiptData];
+//                NSString *transactionId = subDic[kSaveReceiptData_transactionId];
+                SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderId);
+                parameterStr = orderId;
+                reissue = @"no_2";
+            }
+        }
+        //如果此处仍为空值，把当前生成的订单赋值（该笔订单可能为不是对应该笔成功的充值的）
+        if([StringUtil isEmpty_MMMethodMMM:parameterStr]){
+            parameterStr = self.orderId;
+        }
+        
     }
+    
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];// 结束订单
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;

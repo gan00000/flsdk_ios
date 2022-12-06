@@ -132,6 +132,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)paymentWithTransactionId_MMMethodMMM:(NSString *)transactionId
                      receiptData_MMMethodMMM:(NSString *)receiptData
                          orderId_MMMethodMMM:(NSString *)orderId
+                         reissue_MMMethodMMM:(NSString *)reissue
                         gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
                     accountModel_MMMethodMMM:(AccountModel*) accountModel
                   otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
