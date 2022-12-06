@@ -69,7 +69,7 @@
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderId);
-            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId reissue_MMMethodMMM:@"yes" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderId);
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
             } errorBlock_MMMethodMMM:^(BJError *error) {
@@ -360,7 +360,7 @@
         parameterStr = self.orderId;
     }
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:@"no" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];// 结束订单
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;

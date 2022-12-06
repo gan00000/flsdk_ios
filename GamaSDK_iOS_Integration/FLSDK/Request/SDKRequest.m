@@ -778,6 +778,7 @@
 + (void)paymentWithTransactionId_MMMethodMMM:(NSString *)transactionId
                      receiptData_MMMethodMMM:(NSString *)receiptData
                          orderId_MMMethodMMM:(NSString *)orderId
+                         reissue_MMMethodMMM:(NSString *)reissue
                         gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
                     accountModel_MMMethodMMM:(AccountModel*) accountModel
                       otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
@@ -822,6 +823,7 @@
             
             @"payType"          :@"apple",
             @"mode"             :@"apple",//支付方式
+            @"reissue"             :reissue,//是否是补发调用
 
         };
         
