@@ -166,7 +166,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.wanye.fszhl.lb4";
+            NSString *aProductID = @"com.mplay.wlzhs.tqlb2";
             [self pay:aProductID];
         }
             break;
@@ -176,7 +176,7 @@
         case 3:
         {
 //            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
-            NSString *aProductID = @"com.fzzh.tw.2usd";
+            NSString *aProductID = @"com.mplay.wlzhs.tqlb1";
             [self pay:aProductID];
         }
             break;
@@ -202,21 +202,46 @@
                 
                 if (success) {
                     NSLog(@"绑定手机成功");
-                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码
+                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码 格式：区号-号码
                 }else{
                     NSLog(@"绑定手机失败");
                 }
                 
             }];
             
-//            [[MWSDK share] requestVfCodeWithAreaCode:@"" telephone:@""  Block:^(BOOL success, id  _Nullable result) {
+//            NSString *areaCode = @"";//区号，不用添加”+“
+//            NSString *telephone = @"";//号码
+//            [[MWSDK share] requestVfCodeWithAreaCode:areaCode telephone:telephone  Block:^(BOOL success, id  _Nullable result) {
 //                if (success){
-//                    //result=nil
+//                    //请求验证码成功，result=nil
 //                }else{
-//                    //错误提示
+//                    //请求验证码失败，msg错误提示
 //                    NSString *msg = [NSString stringWithFormat:@"%@",result];
 //                }
 //            }];
+            
+//            NSString *vfCode = @"";//验证码
+//            [[MWSDK share] requestBindPhoneAreaCode:areaCode telephone:telephone vfCode:vfCode Block:^(BOOL success, id  _Nullable result) {
+//                if (success) {
+//                    NSLog(@"绑定手机成功");
+//                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码 格式：区号-号码
+//                }else{
+//                    NSLog(@"绑定手机失败");
+//                }
+//
+//            }];
+            
+            NSString *account = @"";//账号
+            NSString *pwd = @"";//密码
+            [[MWSDK share] requestUpgradeWithAccount:account password:(NSString *)pwd Block:^(BOOL success, id  _Nullable result) {
+                if (success) {
+                    NSLog(@"账号升级成功");
+                    LoginData *data = (LoginData*)result;
+                }else{
+                    NSLog(@"账号升级失败");
+                }
+            }];
+            
         }
             break;
         case 7:{
