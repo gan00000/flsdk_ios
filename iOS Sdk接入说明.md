@@ -22,6 +22,7 @@
 
 * <h2 id="99">工程配置</h2> 
 *  **添加sdk提供的 SDK_Frameworks 中库文件**
+
 *	**系统库导入**
 
 	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、AdServices.framework、ApptrackingTransparency.framework、AuthenticationServices.framework
@@ -31,6 +32,7 @@
 	在 Targets -> Signing&Capabilities 下，添加Sign in with Apple、Push Notifications.
 	
 * **创建objcetc swift的桥接文件**, 即直接创建一个swift文件按xcode提示即可
+* **项目other linker flags添加 -ObjC**
 
 
 * <h2 id="100">App Info.plist配置</h2> 
@@ -318,6 +320,18 @@
  ///areaCode 手机区号
  ///telephone 手机号码
  - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
+
+ 示例：
+	 NSString *areaCode = @"";//区号，不用添加”+“
+	NSString *telephone = @"";//号码
+	[[MWSDK share] requestVfCodeWithAreaCode:areaCode telephone:telephone  Block:^(BOOL success, id  _Nullable result) {
+	    if (success){
+	        //请求验证码成功，result=nil
+	    }else{
+	        //请求验证码失败，msg错误提示
+	        NSString *msg = [NSString stringWithFormat:@"%@",result];
+	    }
+	}];
              
  ```
  
@@ -328,6 +342,21 @@
  ///telephone 手机号码
  ///vfCode 验证码
  - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
+
+ 
+	示例：
+	NSString *areaCode = @"";//区号，不用添加”+“
+	NSString *telephone = @"";//号码
+	NSString *vfCode = @"";//验证码
+	[[MWSDK share] requestBindPhoneAreaCode:areaCode telephone:telephone vfCode:vfCode Block:^(BOOL success, id  _Nullable result) {
+	    if (success) {
+	        NSLog(@"绑定手机成功");
+	        NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码 格式：区号-号码
+	    }else{
+	        NSLog(@"绑定手机失败");
+	    }
+	    
+	}];
              
  ```
 
@@ -337,28 +366,43 @@
  ///account 账号
  ///password 密码
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+	
+	示例：
+
+	
+	NSString *account = @"";//账号
+    NSString *pwd = @"";//密码
+    [[MWSDK share] requestUpgradeWithAccount:account password:(NSString *)pwd Block:^(BOOL success, id  _Nullable result) {
+        if (success) {
+            NSLog(@"账号升级成功");
+            LoginData *data = (LoginData*)result;
+        }else{
+            NSLog(@"账号升级失败");
+        }
+    }];
              
  ```
  
 * <h3 id="151">显示SDK内部绑定手机页面</h3>
 
  ```
-	 /// 显示SDK内部绑定手机界面
+
+	/// 显示SDK内部绑定手机界面
 	/// @param mBlock mBlock description
 	-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
-	
+		
 	demo:
-	
+		
 	[[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
-                
-                if (success) {
-                    NSLog(@"绑定手机成功");
-                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码
-                }else{
-                    NSLog(@"绑定手机失败");
-                }
-                
-            }];
+	    
+	    if (success) {
+	        NSLog(@"绑定手机成功");
+	        NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码
+	    }else{
+	        NSLog(@"绑定手机失败");
+	    }
+	    
+	}];
 	            
  ```
  

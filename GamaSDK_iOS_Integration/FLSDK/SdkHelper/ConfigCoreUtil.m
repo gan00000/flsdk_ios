@@ -168,6 +168,7 @@ static dispatch_once_t onceToken;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSArray *array = [userDefaults objectForKey:@"Key_AccountModelArray"];
     for (NSData *data in array) {
+        //开启混淆的话，名字不一样会报错
         AccountModel *m = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         [accountModelList addObject:m];
     }
