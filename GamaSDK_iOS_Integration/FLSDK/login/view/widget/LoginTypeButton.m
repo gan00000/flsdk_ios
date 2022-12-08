@@ -34,7 +34,7 @@
 ////        titleLabel.textAlignment = NSTextAlignmentCenter;
 //        titleLabel.backgroundColor = [UIColor clearColor];
 //        titleLabel.numberOfLines = 1;
-//        titleLabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#545454"];
+//        titleLabel.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_545454];
 //        titleLabel.adjustsFontSizeToFitWidth = YES;
 //
 //        [self addSubview:titleLabel];

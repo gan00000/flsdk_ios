@@ -89,7 +89,7 @@
 }
 
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
-    NSArray *readPermissions = @[@"public_profile"];
+    NSArray *readPermissions = @[wwwww_tag_wwwww_public_profile];
     
     [self.loginManager logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
@@ -178,7 +178,7 @@
                 }
                
             });
-            NSLog(@"loadCurrentProfileWithCompletion");
+            NSLog(wwwww_tag_wwwww_loadCurrentProfileWithCompletion);
             return;
         }];
         
@@ -268,15 +268,15 @@
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
     if (self.failBlock) {
-        self.failBlock(@"error", 0, nil);
+        self.failBlock(wwwww_tag_wwwww_error, 0, nil);
     }
 }
 /// Sent to the delegate when the sharer is cancelled.
 /// @param sharer The sharer that completed.
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
-    SDK_LOG(@"sharerDidCancel");
+    SDK_LOG(wwwww_tag_wwwww_sharerDidCancel);
     if (self.failBlock) {
-        self.failBlock(@"cancel", 0, nil);
+        self.failBlock(wwwww_tag_wwwww_cancel, 0, nil);
     }
 }
 

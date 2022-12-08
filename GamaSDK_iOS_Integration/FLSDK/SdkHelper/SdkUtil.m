@@ -12,18 +12,18 @@
 #import "SecurityUtil.h"
 #import "TouchEventInterruptView.h"
 
-#define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY @"GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY"
-#define GAMA_NOTE_SAVE_PHOTO @"GAMA_NOTE_SAVE_PHOTO"
+#define GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY wwwww_tag_wwwww_GAMA_LAST_GUEST_LOGIN_USER_INFO_KEY
+#define GAMA_NOTE_SAVE_PHOTO wwwww_tag_wwwww_GAMA_NOTE_SAVE_PHOTO
 
-#define kEncryKey @"GAMAENKEY"
-#define kEncryIv  @"GAMAENIV"
+#define kEncryKey wwwww_tag_wwwww_GAMAENKEY
+#define kEncryIv  wwwww_tag_wwwww_GAMAENIV
 
 #pragma mark - loading alert用到
 
 //#define winWidth        [SUtil getCurrentScreenFrame_MMMethodMMM].size.width//[UIScreen mainScreen].bounds.size.width
 //#define winHeight       [SUtil getCurrentScreenFrame_MMMethodMMM].size.height//[UIScreen mainScreen].bounds.size.height
 #define FONT_Helvetica_BOLD      @"Helvetica-Bold"
-#define FONT_Helvetica           @"Helvetica"
+#define FONT_Helvetica           wwwww_tag_wwwww_Helvetica
 #define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
 
 
@@ -32,7 +32,7 @@
 #define titleMaxFontSize    17
 #define titleMinFontSize    9
 
-#define SDK_PHONE_AREA_CODE  @"SDK_PHONE_AREA_CODE"
+#define SDK_PHONE_AREA_CODE  wwwww_tag_wwwww_SDK_PHONE_AREA_CODE
 
 @implementation SdkUtil
 
@@ -112,12 +112,12 @@
 //    return [pred evaluateWithObject:triStr];
     
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_account_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_account_empty)];
         return NO;
     }
     
     if (![accountName containsString:@"@"]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
         return NO;
     }
     return YES;
@@ -127,12 +127,12 @@
 + (BOOL)validPwd_MMMethodMMM:(NSString *)pwd
 {
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return NO;
     }
     
     if (pwd.length < 6) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_pwd_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_pwd_format)];
         return NO;
     }
     return YES;
@@ -178,7 +178,7 @@
         // bottom view
         UIView *aler = [[UIView alloc] initWithFrame:CGRectZero];
 
-        aler.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.7];
+        aler.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.7];
         aler.alpha = 0.9f;
         aler.layer.cornerRadius = 10.0f;
         
@@ -265,7 +265,7 @@
     [baseView bringSubviewToFront:bgV];
     
     UIView *v=[[UIView alloc] initWithFrame:CGRectZero];
-    v.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.6];
+    v.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.6];
     v.layer.cornerRadius = 10.0f;
     [bgV addSubview:v];
 
@@ -359,7 +359,7 @@
 //+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView
 //{
 //    // to do
-//    NSLog(@"保存guest账号密码截图到相册");
+//    NSLog(wwwww_tag_wwwww_auct_conditionit);
 //    // create image
 //    UIGraphicsBeginImageContext(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height));
 //    [curView.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -369,13 +369,13 @@
 //    UIImage *img = [UIImage imageWithData:imageData];
 //    
 //    // 根据英文版本审核时通常因为相册问题被拒绝
-////    [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(@"TXT_GUEST_SAVE_IMAGE_OR_NOT")
+////    [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(wwwww_tag_wwwww_TXT_GUEST_SAVE_IMAGE_OR_NOT)
 ////                           completion:^(NSInteger clickedBtnIndex) {
 ////                               if (clickedBtnIndex == 1) {
 ////                                   // save img to photo
 //                                   UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
 ////                               }
-////                           } andButtonTitles_MMMethodMMM:GetString(@"BTN_TITLE_TXT_CANCEL"),GetString(@"BTN_TITLE_TXT_COMFIRM"), nil];
+////                           } andButtonTitles_MMMethodMMM:GetString(wwwww_tag_wwwww_BTN_TITLE_TXT_CANCEL),GetString(wwwww_tag_wwwww_BTN_TITLE_TXT_COMFIRM), nil];
 //    
 //    // save img to photo
 //    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
@@ -412,9 +412,9 @@
 {
     NSString *msg = nil ;
     if(error != NULL){
-        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_FAIL") ;
+        msg = GetString(wwwww_tag_wwwww_ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_FAIL) ;
     }else{
-        msg = GetString(@"ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS") ;
+        msg = GetString(wwwww_tag_wwwww_ALERT_MSG_SAVE_ACCOUNT_AND_PASSWORD_TO_PHOTO_SUCCESS) ;
     }
     
     [SdkUtil toastMsg_MMMethodMMM:msg];

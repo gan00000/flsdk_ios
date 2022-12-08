@@ -46,7 +46,7 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_change_pwd") hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_change_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
@@ -105,12 +105,12 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire_change") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire_change) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -142,7 +142,7 @@
      
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(wwwww_tag_wwwww_kOkActTag);
             [self changePassword_MMMethodMMM];
         }
             
@@ -159,7 +159,7 @@
 {
     
     if (!self.fromPageParam) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         return;
     }
     
@@ -176,7 +176,7 @@
     }
     
     if ([StringUtil isEmpty_MMMethodMMM:oldPwd]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return;
     }
  
@@ -190,14 +190,14 @@
     
     if (![newPwd isEqualToString:againPwd]) {
     
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_pwd_not_equel")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_pwd_not_equel)];
         return;
     }
    
     kWeakSelf
     [SDKRequest doChangePasswordWithUserName_MMMethodMMM:userName andOldPassword_MMMethodMMM:oldPwd andNewPassword_MMMethodMMM:newPwd otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_change_pwd_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_change_pwd_success)];
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = mAccountModel.account;
@@ -218,9 +218,9 @@
 //{
 //
 //
-//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
 //        [self downTime_MMMethodMMM];
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_send_vf_code_success")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
 //    } errorBlock_MMMethodMMM:^(BJError *error) {
 //        [self resetVfCodeBtnStatue_MMMethodMMM];
 //        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
@@ -230,7 +230,7 @@
 //- (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
 //{
 //
-//    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
 //        [self downTime_MMMethodMMM];
 //    } errorBlock_MMMethodMMM:^(BJError *error) {
 //        [self resetVfCodeBtnStatue_MMMethodMMM];
@@ -277,7 +277,7 @@
 //        downTimer = nil;
 //    }
 //    getVfCodeBtn.userInteractionEnabled = YES;
-//    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+//    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 //}
 //
 //- (void)dealloc

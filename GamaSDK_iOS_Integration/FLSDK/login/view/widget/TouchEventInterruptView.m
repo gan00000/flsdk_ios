@@ -21,17 +21,17 @@
 //中断触摸事件，防止事件传递到游戏view
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    SDK_LOG(@"touchesBegan...");
+    SDK_LOG(wwwww_tag_wwwww_touchesBegan___);
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    SDK_LOG(@"touchesBegan...");
+    SDK_LOG(wwwww_tag_wwwww_touchesBegan___);
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    SDK_LOG(@"touchesBegan...");
+    SDK_LOG(wwwww_tag_wwwww_touchesBegan___);
 }
 
 

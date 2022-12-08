@@ -21,7 +21,7 @@
                                 phoneAreaCode_MMMethodMMM:areaCode
                                   phoneNumber_MMMethodMMM:phoneNum
                                        vfCode_MMMethodMMM:vfCode
-                                   interfaces_MMMethodMMM:@"1"
+                                   interfaces_MMMethodMMM:wwwww_tag_wwwww_1
                                otherParamsDic_MMMethodMMM:nil
                                  successBlock_MMMethodMMM:^(id responseData) {
         
@@ -29,7 +29,7 @@
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = name;
             cc.data.password = password;
-            [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_reg_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_reg_success)];
             [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
     }
@@ -49,12 +49,12 @@
     
     [[SAppleLogin share] makeAppleCallbackSuccessBlock_MMMethodMMM:^(NSDictionary * _Nullable result) {
         NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-        NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-        [tempMutableDic removeObjectForKey:@"appleThirdID"];
+        NSString *appleID = [tempMutableDic[wwwww_tag_wwwww_appleThirdID] copy];
+        [tempMutableDic removeObjectForKey:wwwww_tag_wwwww_appleThirdID];
         
         [SDKRequest thirdLoginOrReg_MMMethodMMM:appleID andThirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE addOtherParams_MMMethodMMM:tempMutableDic successBlock_MMMethodMMM:^(id responseData) {
             
-            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE];
             }
@@ -81,7 +81,7 @@
         NSDictionary *otherParamsDic = nil;
         @try {
             otherParamsDic = @{
-                @"fbOauthToken"        :fbIdToken,
+                wwwww_tag_wwwww_fbOauthToken        :fbIdToken,
                 
             };
             
@@ -90,7 +90,7 @@
         }
         
         [SDKRequest thirdLoginOrReg_MMMethodMMM:fbUserId andThirdPlate_MMMethodMMM:LOGIN_TYPE_FB addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
-            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_FB];
             }
@@ -114,7 +114,7 @@
     NSString *loginId =[SUtil getGamaUUID_MMMethodMMM];
     [SDKRequest freeLoginOrRegister_MMMethodMMM:loginId successBlock_MMMethodMMM:^(id responseData) {
         
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.thirdId = loginId;
@@ -139,8 +139,8 @@
         NSDictionary *otherParamsDic = nil;
         @try {
             otherParamsDic = @{
-                @"googleIdToken"        :idToken,
-                @"googleClientId"       :kClientID,
+                wwwww_tag_wwwww_googleIdToken        :idToken,
+                wwwww_tag_wwwww_googleClientId       :kClientID,
                 
             };
             
@@ -149,7 +149,7 @@
         }
         
         [SDKRequest thirdLoginOrReg_MMMethodMMM:userId andThirdPlate_MMMethodMMM:LOGIN_TYPE_GOOGLE addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
-            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_GOOGLE];
             }
@@ -177,7 +177,7 @@
         NSDictionary *otherParamsDic = nil;
         @try {
             otherParamsDic = @{
-                @"lineAccessToken"        :accessToken,
+                wwwww_tag_wwwww_lineAccessToken        :accessToken,
                 
             };
             
@@ -186,7 +186,7 @@
         }
         
         [SDKRequest thirdLoginOrReg_MMMethodMMM:userID andThirdPlate_MMMethodMMM:LOGIN_TYPE_LINE addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
-            [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
             if (delegate) {
                 [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_LINE];
             }
@@ -206,7 +206,7 @@
 + (void)selfLoginAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password
 {
     [SDKRequest doLoginWithAccount_MMMethodMMM:account andPassword_MMMethodMMM:password otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_login_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;
@@ -225,9 +225,9 @@
     NSDictionary *otherParamsDic = nil;
     @try {
         otherParamsDic = @{
-            @"userId"        :currentAccountModel.userId,
-            @"loginAccessToken"        :currentAccountModel.token,
-            @"loginTimestamp"         :currentAccountModel.timestamp,
+            wwwww_tag_wwwww_userId        :currentAccountModel.userId,
+            wwwww_tag_wwwww_loginAccessToken        :currentAccountModel.token,
+            wwwww_tag_wwwww_loginTimestamp         :currentAccountModel.timestamp,
         };
         
     } @catch (NSException *exception) {
@@ -240,7 +240,7 @@
             
             NSMutableDictionary *fbParamsDic = nil;
             @try {
-                fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{@"fbOauthToken":fbIdToken}];
+                fbParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{wwwww_tag_wwwww_fbOauthToken:fbIdToken}];
                 [fbParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
             
@@ -256,8 +256,8 @@
         
         [[SAppleLogin share] makeAppleCallbackSuccessBlock_MMMethodMMM:^(NSDictionary * _Nullable result) {
             NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:result];
-            NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-            [tempMutableDic removeObjectForKey:@"appleThirdID"];
+            NSString *appleID = [tempMutableDic[wwwww_tag_wwwww_appleThirdID] copy];
+            [tempMutableDic removeObjectForKey:wwwww_tag_wwwww_appleThirdID];
             
             [tempMutableDic addEntriesFromDictionary:otherParamsDic];
             [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:appleID thirdPlate_MMMethodMMM:LOGIN_TYPE_APPLE otherParamsDic_MMMethodMMM:tempMutableDic];
@@ -279,8 +279,8 @@
             NSMutableDictionary *ggParamsDic = nil;
             @try {
                 ggParamsDic = [NSMutableDictionary dictionaryWithDictionary:@{
-                    @"googleIdToken"        :idToken,
-                    @"googleClientId"       :kClientID,
+                    wwwww_tag_wwwww_googleIdToken        :idToken,
+                    wwwww_tag_wwwww_googleClientId       :kClientID,
                 }];
                 [ggParamsDic addEntriesFromDictionary:otherParamsDic];
             } @catch (NSException *exception) { }
@@ -301,7 +301,7 @@
         //            NSDictionary *otherParamsDic = nil;
         //            @try {
         //                otherParamsDic = @{
-        //                    @"lineAccessToken"        :accessToken,
+        //                    wwwww_tag_wwwww_lineAccessToken        :accessToken,
         //
         //                };
         //
@@ -331,7 +331,7 @@
 {
     
     [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:thirdId thirdPlate_MMMethodMMM:thirdPlate otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_bind_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success)];
         if (delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = account;

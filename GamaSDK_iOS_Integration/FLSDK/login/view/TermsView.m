@@ -13,7 +13,7 @@
 #import "LoginButton.h"
 #import "LoginTitleView.h"
 
-#define SDK_PROVISIONS_FIRST_ENBLE @"sdk_provisions_first_enble"
+#define SDK_PROVISIONS_FIRST_ENBLE wwwww_tag_wwwww_sdk_provisions_first_enble
 @interface TermsView ()
 @property (copy,nonatomic) void (^completer)(void);
 @end
@@ -62,7 +62,7 @@
 - (void)landspaceView_MMMethodMMM {
    
     //title
-    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"sdk_terms_title") hander_MMMethodMMM:^(NSInteger param) {
+    mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_sdk_terms_title) hander_MMMethodMMM:^(NSInteger param) {
         
         if (self.fromPage == CURRENT_PAGE_TYPE_MAIN_HOME) {
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_TEARMS) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
@@ -81,7 +81,7 @@
     }];
     
     UIView *lineView = [[UIView alloc] init];
-    lineView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#848484"];
+    lineView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
     [self addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(17));
@@ -91,7 +91,7 @@
     }];
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E4E4E4"];
+    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_E4E4E4];
     [self addSubview:xView];
     [xView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(lineView.mas_bottom).mas_offset(VH(12));
@@ -102,7 +102,7 @@
     
     UIView *contentView = [[UIView alloc] init];
 //    contentView.backgroundColor = [UIColor whiteColor];
-//    contentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#545454"].CGColor;
+//    contentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_545454].CGColor;
 //    contentView.layer.borderWidth = 0.8;
     [xView addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -133,11 +133,11 @@
         make.height.mas_equalTo(provisionWebView.mas_width);
     }];
     
-//   NSString *xtext = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+//   NSString *xtext = GetString(wwwww_tag_wwwww_GAMA_PROVISIONS_PROTRAIT_TEXT);
 //
 //    UILabel *rememberLable = [[UILabel alloc] init];
 //    [xView addSubview:rememberLable];
-////    rememberLable.text = GetString(@"GAMA_PROVISIONS_PROTRAIT_TEXT");
+////    rememberLable.text = GetString(wwwww_tag_wwwww_GAMA_PROVISIONS_PROTRAIT_TEXT);
 //    rememberLable.font = [UIFont systemFontOfSize:VH(20)];
 //    rememberLable.textAlignment = NSTextAlignmentLeft;
 //    rememberLable.backgroundColor = [UIColor clearColor];
@@ -164,7 +164,7 @@
 //    }];
 //
 //        //同意按鈕
-//        agreeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:@"btn_checkbox_uncheck.png" highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:13 selector:@selector(action:) target_MMMethodMMM:self];
+//        agreeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:wwwww_tag_wwwww_btn_checkbox_uncheck_png highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:13 selector:@selector(action:) target_MMMethodMMM:self];
 //        agreeBtn.layer.borderColor = [UIColor blackColor].CGColor;
 //        agreeBtn.layer.borderWidth = 0.5;
 //        [xView addSubview:agreeBtn];

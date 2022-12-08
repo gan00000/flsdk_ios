@@ -45,24 +45,24 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder //system_method
 {
     NSLog(@"AccountModel encodeWithCoder");
-    [aCoder encodeObject:self.account forKey:@"accountName"];
-    [aCoder encodeObject:self.password forKey:@"accountPwd"];
-    [aCoder encodeObject:self.lastLoginTime forKey:@"lastLoginTimemobile"];
+    [aCoder encodeObject:self.account forKey:wwwww_tag_wwwww_accountName];
+    [aCoder encodeObject:self.password forKey:wwwww_tag_wwwww_accountPwd];
+    [aCoder encodeObject:self.lastLoginTime forKey:wwwww_tag_wwwww_lastLoginTimemobile];
     
-    [aCoder encodeObject:self.userId forKey:@"userId"];
-    [aCoder encodeObject:self.token forKey:@"accessToken"];
-    [aCoder encodeObject:self.timestamp forKey:@"loginTimestamp"];
+    [aCoder encodeObject:self.userId forKey:wwwww_tag_wwwww_userId];
+    [aCoder encodeObject:self.token forKey:wwwww_tag_wwwww_accessToken];
+    [aCoder encodeObject:self.timestamp forKey:wwwww_tag_wwwww_loginTimestamp];
     
-    [aCoder encodeObject:self.thirdId forKey:@"thirdId"];
-    [aCoder encodeObject:self.thirdAccount forKey:@"thirdAccount"];
-    [aCoder encodeBool:self.isBind forKey:@"accountIsBind"];
+    [aCoder encodeObject:self.thirdId forKey:wwwww_tag_wwwww_thirdId];
+    [aCoder encodeObject:self.thirdAccount forKey:wwwww_tag_wwwww_thirdAccount];
+    [aCoder encodeBool:self.isBind forKey:wwwww_tag_wwwww_accountIsBind];
     
-    [aCoder encodeObject:self.loginType forKey:@"loginType"];
+    [aCoder encodeObject:self.loginType forKey:wwwww_tag_wwwww_loginType];
     
-    [aCoder encodeObject:self.sign forKey:@"sign"];
-    [aCoder encodeObject:self.telephone forKey:@"telephone"];
-    [aCoder encodeObject:self.loginId forKey:@"loginId"];
-    [aCoder encodeBool:self.isBindPhone forKey:@"isBindPhone"];
+    [aCoder encodeObject:self.sign forKey:wwwww_tag_wwwww_sign];
+    [aCoder encodeObject:self.telephone forKey:wwwww_tag_wwwww_telephone];
+    [aCoder encodeObject:self.loginId forKey:wwwww_tag_wwwww_loginId];
+    [aCoder encodeBool:self.isBindPhone forKey:wwwww_tag_wwwww_isBindPhone];
 
 }
 
@@ -72,24 +72,24 @@
     NSLog(@"AccountModel initWithCoder");
     if (self = [super init]) {
         
-        self.account = [aDecoder decodeObjectForKey:@"accountName"] ? : @"";
-        self.password = [aDecoder decodeObjectForKey:@"accountPwd"] ? : @"";
-        self.lastLoginTime = [aDecoder decodeObjectForKey:@"lastLoginTimemobile"] ? : @"";
+        self.account = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_accountName] ? : @"";
+        self.password = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_accountPwd] ? : @"";
+        self.lastLoginTime = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_lastLoginTimemobile] ? : @"";
         
-        self.userId = [aDecoder decodeObjectForKey:@"userId"] ? : @"";
-        self.token = [aDecoder decodeObjectForKey:@"accessToken"] ? : @"";
-        self.timestamp = [aDecoder decodeObjectForKey:@"loginTimestamp"] ? : @"";
+        self.userId = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_userId] ? : @"";
+        self.token = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_accessToken] ? : @"";
+        self.timestamp = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_loginTimestamp] ? : @"";
         
-        self.thirdId = [aDecoder decodeObjectForKey:@"thirdId"] ? : @"";
-        self.thirdAccount = [aDecoder decodeObjectForKey:@"thirdAccount"] ? : @"";
-        self.isBind = [aDecoder decodeBoolForKey:@"accountIsBind"] ? : NO;
+        self.thirdId = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_thirdId] ? : @"";
+        self.thirdAccount = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_thirdAccount] ? : @"";
+        self.isBind = [aDecoder decodeBoolForKey:wwwww_tag_wwwww_accountIsBind] ? : NO;
         
-        self.loginType = [aDecoder decodeObjectForKey:@"loginType"] ? : @"";
+        self.loginType = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_loginType] ? : @"";
         
-        self.sign = [aDecoder decodeObjectForKey:@"sign"] ? : @"";
-        self.telephone = [aDecoder decodeObjectForKey:@"telephone"] ? : @"";
-        self.loginId = [aDecoder decodeObjectForKey:@"loginId"] ? : @"";
-        self.isBindPhone = [aDecoder decodeBoolForKey:@"isBindPhone"] ? : NO;
+        self.sign = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_sign] ? : @"";
+        self.telephone = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_telephone] ? : @"";
+        self.loginId = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_loginId] ? : @"";
+        self.isBindPhone = [aDecoder decodeBoolForKey:wwwww_tag_wwwww_isBindPhone] ? : NO;
   
     }
     

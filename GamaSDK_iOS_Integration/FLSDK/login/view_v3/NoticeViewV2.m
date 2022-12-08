@@ -43,7 +43,7 @@
 //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //        self.layer.cornerRadius = 10; //设置圆角
 //        self.layer.masksToBounds = YES;
-        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.15];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
         [self landspaceView_MMMethodMMM];
         
@@ -82,7 +82,7 @@
     
     
     UIView *titleView = [[UIView alloc] init];
-    titleView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"];
+    titleView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
     [contentView addSubview:titleView];
     [titleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(contentView.mas_top);
@@ -92,7 +92,7 @@
         make.height.mas_equalTo(VH(36));
     }];
     
-    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_title_notice".localx fontSize_MMMethodMMM:FS(16) textColor_MMMethodMMM:[UIColor whiteColor]];
+    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_title_notice.localx fontSize_MMMethodMMM:FS(16) textColor_MMMethodMMM:[UIColor whiteColor]];
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -139,8 +139,8 @@
     }];
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E4E4E4"];
-//    xView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#DEDEDE"].CGColor;
+    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_E4E4E4];
+//    xView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_DEDEDE].CGColor;
 //    xView.layer.borderWidth = 0.6;
     [contentView addSubview:xView];
     [xView mas_makeConstraints:^(MASConstraintMaker *make) {

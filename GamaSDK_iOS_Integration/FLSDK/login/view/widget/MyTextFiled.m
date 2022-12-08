@@ -54,7 +54,7 @@
 }
 
 
-////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者@"任何字符串"都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
+////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者wwwww_tag_wwwww_lubricite_nearaceous都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {

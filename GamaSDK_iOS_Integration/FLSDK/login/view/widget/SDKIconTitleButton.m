@@ -23,47 +23,47 @@
     if (self) {
         if(type == SDK_ICON_TITLE_BUTTON_TYPE_FB || type == SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB)
         {
-            //self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3D5C9A"];
-            self.layer.contents = (id)(GetImage(@"sdk_btn_fb_bg.png").CGImage);
+            //self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_3D5C9A];
+            self.layer.contents = (id)(GetImage(wwwww_tag_wwwww_sdk_btn_fb_bg_png).CGImage);
         }else{
-             self.layer.contents = (id)(GetImage(@"sdk_btn_bg.png").CGImage);
+             self.layer.contents = (id)(GetImage(wwwww_tag_wwwww_sdk_btn_bg_png).CGImage);
         }
         self.layer.cornerRadius = kR2BtnCornerRadius;
         
-        NSString *iconName = @"fl_logo.png";
-        NSString *titleName = @"會員帳號登入";
+        NSString *iconName = wwwww_tag_wwwww_fl_logo_png;
+        NSString *titleName = wwwww_tag_wwwww_today_fiveess;
         
         switch (type) {
             case SDK_ICON_TITLE_BUTTON_TYPE_FB:
-                iconName = @"sdk_btn_icon_fb.png";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_fb_png;
                 titleName = @"Sign in with Facebook";
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_APPLE:
                 
-                iconName = @"sdk_btn_icon_apple.png";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_apple_png;
                 titleName = @"Sign in with Apple";
                 
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_GEUST:
-                iconName = @"sdk_btn_icon_guest.png";
-                titleName = @"遊客帳號登入";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_guest_png;
+                titleName = wwwww_tag_wwwww_betteritive_exampleage;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_ACCOUNT:
-                iconName = @"fl_logo.png";
-                titleName = @"會員帳號登入";
+                iconName = wwwww_tag_wwwww_fl_logo_png;
+                titleName = wwwww_tag_wwwww_today_fiveess;
                 break;
                 
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB:
-                iconName = @"sdk_btn_icon_fb.png";
-                titleName = @"Facebook帳號綁定";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_fb_png;
+                titleName = wwwww_tag_wwwww_ichthyshootness_stear;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_GEUST:
-                iconName = @"sdk_btn_icon_guest.png";
-                titleName = @"遊客帳號綁定";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_guest_png;
+                titleName = wwwww_tag_wwwww_battbetter_aloneics;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_BIND_APPLE:
-                iconName = @"sdk_btn_icon_apple.png";
-                titleName = @"Apple帳號綁定";
+                iconName = wwwww_tag_wwwww_sdk_btn_icon_apple_png;
+                titleName = wwwww_tag_wwwww_plasative_comdebateatic;
                 break;
                 
                 default:

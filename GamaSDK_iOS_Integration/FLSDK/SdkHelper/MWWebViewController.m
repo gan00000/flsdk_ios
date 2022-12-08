@@ -6,12 +6,12 @@
 //  Copyright © 2018年 starpy. All rights reserved.
 //
 
-#define js_close    @"close"
+#define js_close    wwwww_tag_wwwww_close
 
 #import "MWWebViewController.h"
 #import <SafariServices/SafariServices.h>
 
-#define WK_WEBVIEW_ESTIMATED_PROGRESS @"estimatedProgress"
+#define WK_WEBVIEW_ESTIMATED_PROGRESS wwwww_tag_wwwww_estimatedProgress
 
 //View controller-based status bar appearance 一个布尔值，指示状态栏外观是否基于当前视图控制器的首选样式。
 //1）当 Status bar is initially hidden 设置为 NO 的时候，不管 View controller-based status bar appearance 设置为 NO 还是 YES ，都是无效的。
@@ -35,7 +35,7 @@
 {
     UIViewController *containerVC = appTopViewController;
 //    if(device_is_iPhoneX){
-//        SDK_LOG(@"device_is_iPhoneX");
+//        SDK_LOG(wwwww_tag_wwwww_device_is_iPhoneX);
 //        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
 ////        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
 //        [containerVC presentViewController:safariVC animated:animation completion:handler];
@@ -87,7 +87,7 @@
 //        _wkwebView.configuration = configuration;
         _wkwebView.navigationDelegate = self;
         _wkwebView.UIDelegate = self;
-        [_wkwebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+        [_wkwebView addObserver:self forKeyPath:wwwww_tag_wwwww_estimatedProgress options:NSKeyValueObservingOptionNew context:nil];
     }
     
     return _wkwebView;
@@ -104,7 +104,7 @@
     // Do any additional setup after loading the view.
     
     UIView *statueView = [[UIView alloc] init];
-    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F13B11"];
+    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
     [self.view addSubview:statueView];
     [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -198,7 +198,7 @@
 
 - (void)viewDidLayoutSubviews{  //system_method
     [super viewDidLayoutSubviews];
-    NSLog(@"viewDidLayoutSubviews");
+    NSLog(wwwww_tag_wwwww_viewDidLayoutSubviews);
     
     if (@available(iOS 11.0, *)) {
         //获取到安全区域，更新安全区域
@@ -309,8 +309,8 @@
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message_MMMethodMMM:message preferredStyle:UIAlertControllerStyleAlert];
-//    [alert addAction:[UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:wwwww_tag_wwwww_diplive_clinoful message_MMMethodMMM:message preferredStyle:UIAlertControllerStyleAlert];
+//    [alert addAction:[UIAlertAction actionWithTitle:wwwww_tag_wwwww_matraeur_ampl style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
 //        completionHandler();
 //    }]];
 //
@@ -354,11 +354,11 @@
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change  context:(void *)context {  //system_method
     
-    if ([@"loading" isEqualToString:keyPath]) {
+    if ([wwwww_tag_wwwww_loading isEqualToString:keyPath]) {
         
-    } else if ([@"title" isEqualToString:keyPath]) {
+    } else if ([wwwww_tag_wwwww_title isEqualToString:keyPath]) {
         
-    } else if ([@"URL" isEqualToString:keyPath]) {
+    } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
     } else if (object == self.wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
         _progressView.progress = self.wkwebView.estimatedProgress;

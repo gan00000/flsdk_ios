@@ -58,7 +58,7 @@
         
         self.bindType = bindType;//綁定賬號
         //title
-//        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:@"註冊會員"];
+//        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_nattion_pecc];
 //        mLoginTitleView.delegate = self.delegate;
 //
 //
@@ -100,9 +100,9 @@
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
         tipsUILabel.text = @"*帳號信箱將會作為您找回密碼的驗證信箱，請謹慎輸入";
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
-//        tipsUILabel.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+//        tipsUILabel.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
         tipsUILabel.numberOfLines = 1; //0为多行
-        tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+        tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     
         [self addSubview:tipsUILabel];
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -178,13 +178,13 @@
 //            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
 //        }];
 //
-//        getVfCodeBtn = [UIUtil initBtnWithTitle2:@"獲取驗證碼" tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//        getVfCodeBtn = [UIUtil initBtnWithTitle2:wwwww_tag_wwwww_cipitite_stateain tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 //
-//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#ff3e37"].CGColor;
+//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_ff3e37].CGColor;
 //        getVfCodeBtn.layer.borderWidth = 1;
 //        getVfCodeBtn.layer.cornerRadius = 10;
 //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-//        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#ff3e37"] forState:0];
+//        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_ff3e37] forState:0];
 //        [self addSubview:getVfCodeBtn];
 //        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 //            make.top.bottom.equalTo(vfCodeFiledView);
@@ -194,9 +194,9 @@
 //        }];
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"確認註冊" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_erraneous_styleward fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+        regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:regAccountBtn];
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -207,12 +207,12 @@
         
         
 //        UILabel *loginTipsLable = [[UILabel alloc] init];
-//        loginTipsLable.text = @"同一手機當日不得收取驗證碼超過五次";
+//        loginTipsLable.text = wwwww_tag_wwwww_quintial_determineie;
 //        loginTipsLable.font = [UIFont systemFontOfSize:10];
 //        loginTipsLable.textAlignment = NSTextAlignmentCenter;
 //        loginTipsLable.backgroundColor = [UIColor clearColor];
 //        loginTipsLable.numberOfLines = 1;
-//        loginTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#FF3E37"];
+//        loginTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF3E37];
 //        loginTipsLable.adjustsFontSizeToFitWidth = YES;
 //
 //        [self addSubview:loginTipsLable];
@@ -227,11 +227,11 @@
 //        if ( self.bindType == 0) {
 //            mLoginTitleView.hidden = YES;
 //        }else{
-//            mLoginTitleView.titleLable.text = GetString(@"BTN_TITLE_BIND_ACCOUNT");
-//            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateNormal];
-//            //    [registorAccountBtn setImage:GetImage(@"btn_bind_account.png") forState:UIControlStateHighlighted];
+//            mLoginTitleView.titleLable.text = GetString(wwwww_tag_wwwww_BTN_TITLE_BIND_ACCOUNT);
+//            //    [registorAccountBtn setImage:GetImage(wwwww_tag_wwwww_btn_bind_account_png) forState:UIControlStateNormal];
+//            //    [registorAccountBtn setImage:GetImage(wwwww_tag_wwwww_btn_bind_account_png) forState:UIControlStateHighlighted];
 //
-//            [regAccountBtn setTitle:GetString(@"GAMA_REGISTER_BIND_CONFIRM_TEXT") forState:(UIControlStateNormal)];
+//            [regAccountBtn setTitle:GetString(wwwww_tag_wwwww_GAMA_REGISTER_BIND_CONFIRM_TEXT) forState:(UIControlStateNormal)];
 //        }
     }
     return self;
@@ -245,7 +245,7 @@
             
         case kRegisterAccountActTag:
         {
-            SDK_LOG(@"kRegisterAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
             NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
             NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;
 //            NSString *areaCode = [mPhoneView getPhoneAreaCode_MMMethodMMM];

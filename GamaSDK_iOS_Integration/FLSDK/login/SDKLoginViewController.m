@@ -68,14 +68,14 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     SDK_DATA.mUITextFieldDelegate = nil;
-    SDK_LOG(@"dealloc视图被销毁");
+    SDK_LOG(wwwww_tag_wwwww_roboracity_starety);
 }
 
 - (void)viewDidLoad {   //system_method
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    SDK_LOG(@"viewDidLoad");
-    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.9];//[UIColor clearColor];
+    SDK_LOG(wwwww_tag_wwwww_viewDidLoad);
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];//[UIColor clearColor];
     
     SDK_DATA.mUITextFieldDelegate = self;
     switch (sdkPageType) {
@@ -97,24 +97,24 @@
 
 - (void)viewDidAppear:(BOOL)animated    //system_method
 {
-    SDK_LOG(@"viewDidAppear");
+    SDK_LOG(wwwww_tag_wwwww_viewDidAppear);
     
     
 }
 
 - (void)viewWillAppear:(BOOL)animated   //system_method
 {
-    SDK_LOG(@"viewWillAppear");
+    SDK_LOG(wwwww_tag_wwwww_viewWillAppear);
 }
 
 - (void)viewWillDisappear:(BOOL)animated    //system_method
 {
-    SDK_LOG(@"viewWillDisappear");
+    SDK_LOG(wwwww_tag_wwwww_viewWillDisappear);
 }
 
 - (void)viewDidDisappear:(BOOL)animated //system_method
 {
-    SDK_LOG(@"viewDidDisappear");
+    SDK_LOG(wwwww_tag_wwwww_viewDidDisappear);
 }
 
 
@@ -521,10 +521,10 @@
         //是否需要保存账号密码
         //        if (SDK_DATA.mCCSDKResponse.account && SDK_DATA.mCCSDKResponse.password) {
         //            if (SDK_DATA.mCCSDKResponse.code == 1001) {//注册
-        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters_MMMethodMMM:@{@"userId":cc.userId}];
+        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_REGISTER parameters_MMMethodMMM:@{wwwww_tag_wwwww_userId:cc.userId}];
         //                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password_MMMethodMMM:SDK_DATA.mCCSDKResponse.password updateTime:YES];
         //            }else if([ConfigCoreUtil share].isSaveAccountInfo){//登录并勾选记住密码
-        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters_MMMethodMMM:@{@"userId":cc.userId}];
+        ////                [GamaAdInterface allEventReportWithEventName:GAMESWORD_EVENT_LOGIN parameters_MMMethodMMM:@{wwwww_tag_wwwww_userId:cc.userId}];
         //                [[ConfigCoreUtil share] saveAccount:SDK_DATA.mCCSDKResponse.account password_MMMethodMMM:SDK_DATA.mCCSDKResponse.password updateTime:YES];
         //            }
         //
@@ -583,7 +583,7 @@
 
 #pragma mark --键盘弹出收起管理
 -(void)keyboardWillShow_MMMethodMMM:(NSNotification *)note{
-    SDK_LOG(@"keyboardWillShow");
+    SDK_LOG(wwwww_tag_wwwww_keyboardWillShow);
     if (self.currentEditingTextViewFrame.origin.y == 0) {//为0返回
         return;
     }
@@ -616,7 +616,7 @@
 }
 
 -(void)keyboardWillHide_MMMethodMMM:(NSNotification *)note{
-    SDK_LOG(@"keyboardWillHide");
+    SDK_LOG(wwwww_tag_wwwww_keyboardWillHide);
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
         
@@ -632,14 +632,14 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField  //system_method
 {
-    SDK_LOG(@"textFieldShouldReturn");
+    SDK_LOG(wwwww_tag_wwwww_textFieldShouldReturn);
     [textField resignFirstResponder];
     return YES;
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField  //system_method
 {
-    SDK_LOG(@"textFieldShouldBeginEditing");
+    SDK_LOG(wwwww_tag_wwwww_textFieldShouldBeginEditing);
     //获取当前输入文本框相对于当前view的位置
     self.currentEditingTextViewFrame = [textField convertRect:textField.frame toView:self.view];
     return YES;
@@ -647,19 +647,19 @@
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField  //system_method
 {
-    SDK_LOG(@"textFieldShouldEndEditing");
+    SDK_LOG(wwwww_tag_wwwww_textFieldShouldEndEditing);
     
     return YES;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField   //system_method
 {
-    SDK_LOG(@"textFieldDidBeginEditing");
+    SDK_LOG(wwwww_tag_wwwww_textFieldDidBeginEditing);
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField //system_method
 {
-    SDK_LOG(@"textFieldDidEndEditing");
+    SDK_LOG(wwwww_tag_wwwww_textFieldDidEndEditing);
 }
 
 //===============================

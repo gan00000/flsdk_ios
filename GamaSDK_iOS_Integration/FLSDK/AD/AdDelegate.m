@@ -134,11 +134,11 @@
             SDK_LOG(@"logEventPurchaseValues af");
             [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
                             AFEventParamRevenue  : @(mPayData.amount),
-                            AFEventParamCurrency : @"USD",
+                            AFEventParamCurrency : wwwww_tag_wwwww_USD,
                             AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
                             AFEventParamContentId: mPayData.productId,
                             AFEventParamOrderId: mPayData.orderId,
-                            @"platform"      : @"ios",
+                            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                             
             }];
             
@@ -150,10 +150,10 @@
                 kFIRParameterItemID : mPayData.productId,
                 //kFIRParameterPrice : @(mPayData.amount),
                 kFIRParameterValue : @(mPayData.amount),
-                kFIRParameterCurrency : @"USD",
+                kFIRParameterCurrency : wwwww_tag_wwwww_USD,
                 kFIRParameterTransactionID : mPayData.orderId,
-                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
-                @"platform"      : @"ios",
+                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                 
             }];
         }
@@ -161,14 +161,14 @@
             
              //fb
             SDK_LOG(@"logEventPurchaseValues fb");
-//            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD" parameters:@{
-//                FBSDKAppEventParameterNameCurrency : @"USD",
+//            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD parameters:@{
+//                FBSDKAppEventParameterNameCurrency : wwwww_tag_wwwww_USD,
 //                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
 //                FBSDKAppEventParameterNameContentID : mPayData.productId,
-//                @"userId"      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+//                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
 //            }];
             
-            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:@"USD"];
+            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
 
         }
        

@@ -95,7 +95,7 @@
 ///**
 // 邀请在玩好友
 // * @param par 邀请参数集合
-// GAMA_PRM_SOCIAL_INVITE_USERID          邀请好友的ID(数组类型如：@[@"12",@"32",......])
+// GAMA_PRM_SOCIAL_INVITE_USERID          邀请好友的ID(数组类型如：@[wwwww_tag_wwwww_12,wwwww_tag_wwwww_32,......])
 // GAMA_PRM_SOCIAL_INVITE_MSG             邀请信息
 // GAMA_PRM_SOCIAL_INVITE_TITLE           邀请标题
 // 

@@ -75,7 +75,7 @@
 //    }
 }
 -(void)backBtnView_MMMethodMMM:(UIButton *) btn{
-    SDK_LOG(@"kBackBtnActTag");
+    SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
     // [appTopViewController dismissViewControllerAnimated:NO completion:nil];
 //    if (self.delegate) {
 //        [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 sdkPage:<#(SDKPage)#>];

@@ -41,7 +41,7 @@
         //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
         //        self.layer.cornerRadius = 10; //设置圆角
         //        self.layer.masksToBounds = YES;
-        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.15];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
         mPhoneInfoModel = [[PhoneInfoModel alloc] init];
         mPhoneInfoModel.delegate = self;
@@ -95,7 +95,7 @@
     }];
     
     
-    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_phone_bind".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#2A2A2A"]];
+    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_phone_bind.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_2A2A2A]];
     titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
     
     [titleView addSubview:titleLabel];
@@ -129,7 +129,7 @@
     
     
     UIView *phoneAreaCodeView = [[UIView alloc] init];
-    phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#606060"].CGColor;
+    phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneAreaCodeView.layer.borderWidth = 0.5;
     phoneAreaCodeView.layer.cornerRadius = VH(20);
     [phoneContentView addSubview:phoneAreaCodeView];
@@ -140,7 +140,7 @@
         make.height.mas_equalTo(VH(40));
     }];
     
-    areaCodeLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_area_code".localx fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:UIColor.blackColor];
+    areaCodeLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_area_code.localx fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:UIColor.blackColor];
     areaCodeLabel.text = mPhoneInfoModel.selectedAreaCodeValue;
     
     [phoneAreaCodeView addSubview:areaCodeLabel];
@@ -162,9 +162,9 @@
     
     
     
-    phoneNumFiled = [[MyTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:@"text_please_input_phone".localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#B8B8B8"]];
+    phoneNumFiled = [[MyTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_text_please_input_phone.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
     
-    phoneNumFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#606060"].CGColor;
+    phoneNumFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneNumFiled.layer.borderWidth = 0.5;
     phoneNumFiled.layer.cornerRadius = VH(20);
     phoneNumFiled.inputTextField.keyboardType = UIKeyboardTypePhonePad;
@@ -183,7 +183,7 @@
     
     
     UIView *vfInfoView = [[UIView alloc] init];
-    //    vfInfoView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#606060"].CGColor;
+    //    vfInfoView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     //    vfInfoView.layer.borderWidth = 0.5;
     //    vfInfoView.layer.cornerRadius = VH(20);
     [contentView addSubview:vfInfoView];
@@ -192,9 +192,9 @@
         make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(15));
     }];
     
-    vfCodeFiled = [[MyTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:@"py_msg_vfcode_hint".localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#B8B8B8"]];
+    vfCodeFiled = [[MyTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_py_msg_vfcode_hint.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
     
-    vfCodeFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#606060"].CGColor;
+    vfCodeFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     vfCodeFiled.layer.borderWidth = 0.5;
     vfCodeFiled.layer.cornerRadius = VH(20);
     vfCodeFiled.inputTextField.keyboardType = UIKeyboardTypeNumberPad;
@@ -211,7 +211,7 @@
     }];
     
     //獲取驗證碼
-    getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_get_vfcode") fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+    getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     
     getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
@@ -230,7 +230,7 @@
     [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     
     
-    okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"py_confire".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+    okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     [okBtn.layer setCornerRadius:VH(20)];
     okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
@@ -248,7 +248,7 @@
         gl.frame = okBtn.bounds;
     }];
     
-    hasBindPhoneTips = [UIUtil initLabelWithText_MMMethodMMM:@"text_has_phone_bind_tips".localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:ColorHex(@"#4B4B4B")];
+    hasBindPhoneTips = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_has_phone_bind_tips.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:ColorHex(wwwww_tag_wwwww__CC_4B4B4B)];
     hasBindPhoneTips.numberOfLines = 0;
     [contentView addSubview:hasBindPhoneTips];
     
@@ -320,21 +320,21 @@
             NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
             //NSString *vfCode = vfCodeFiled.inputTextField.text;
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
                 return;
             }
             if ([StringUtil isEmpty_MMMethodMMM:tel]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
                 return;
             }
             if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_match".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
                 return;
             }
             
             [SDKRequest requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:tel email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 
-                [SdkUtil toastMsg_MMMethodMMM: @"text_vfcode_has_send".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_vfcode_has_send.localx];
                 [self startCountTimer_MMMethodMMM];
                 
             } errorBlock_MMMethodMMM:^(BJError *error) {
@@ -367,27 +367,27 @@
             NSString *vfCode = vfCodeFiled.inputTextField.text;
             
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
                 return;
             }
             if ([StringUtil isEmpty_MMMethodMMM:tel]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
                 return;
             }
             
             if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_match".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
                 return;
             }
             
             if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
-                [SdkUtil toastMsg_MMMethodMMM: @"py_msg_vfcode_hint".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
                 return;
             }
             
             [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:tel vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 
-                [SdkUtil toastMsg_MMMethodMMM: @"text_phone_bind_success".localx];
+                [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_bind_success.localx];
                 SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,tel];
                 SDK_DATA.mLoginResponse.data.isBindPhone = YES;
                 
@@ -426,7 +426,7 @@
 - (void)finishTimer_MMMethodMMM {
     
     getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }
 
 - (void)timing_MMMethodMMM:(NSString *)count{

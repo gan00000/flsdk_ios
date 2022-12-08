@@ -54,7 +54,7 @@
 //
 //
 //@end
-//NSString *const kGCMMessageIDKey = @"gcm.message_id";
+//NSString *const kGCMMessageIDKey = wwwww_tag_wwwww_gcm_message_id;
 //
 //#pragma mark Application Swzzle
 ////@implementation UIApplication(Gama)
@@ -196,13 +196,13 @@
 ////    NSLog(@"push token:%@",[NSString stringWithFormat:@"%@",deviceToken]);
 //////    [GamaAdPort adjust_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 //////    [[AppsFlyerTracker sharedTracker] registerUninstall:deviceToken];
-//////    if ([NSClassFromString(@"AppsFlyerTracker") respondsToSelector:NSSelectorFromString(@"sharedTracker")]) {
-//////        Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"AppsFlyerTracker"),NSSelectorFromString(@"sharedTracker"));
+//////    if ([NSClassFromString(wwwww_tag_wwwww_AppsFlyerTracker) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_sharedTracker)]) {
+//////        Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_AppsFlyerTracker),NSSelectorFromString(wwwww_tag_wwwww_sharedTracker));
 //////        ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(@"registerUninstall:"),deviceToken);
 //////    }
 //////    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
-//////        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
+//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
 //////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"setAPNSToken:"),deviceToken);
 //////        }
 //////    }
@@ -219,8 +219,8 @@
 ////
 //////    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-//////        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
+//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
 //////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
 //////        }
 //////    }
@@ -244,8 +244,8 @@
 ////
 //////    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-//////        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
+//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
 //////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
 //////        }
 //////    }
@@ -273,8 +273,8 @@
 ////    // With swizzling disabled you must let Messaging know about the message, for Analytics
 //////    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-//////        if ([NSClassFromString(@"FIRMessaging") respondsToSelector:NSSelectorFromString(@"messaging")]) {
-//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(@"FIRMessaging"),NSSelectorFromString(@"messaging"));
+//////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
+//////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
 //////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
 //////        }
 //////    }

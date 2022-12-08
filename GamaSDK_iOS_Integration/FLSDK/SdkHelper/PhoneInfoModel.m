@@ -49,20 +49,20 @@
     
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
-        [tempArray addObject:[dict objectForKey:@"text"]];
+        [tempArray addObject:[dict objectForKey:wwwww_tag_wwwww_text]];
     }
     
     __block PhoneInfoModel *weakSelf = self;
     
-    [AlertUtil showActionSheetWithTitle_MMMethodMMM:@"text_select_phone_area_title".localx
+    [AlertUtil showActionSheetWithTitle_MMMethodMMM:wwwww_tag_wwwww_text_select_phone_area_title.localx
                                     message_MMMethodMMM:@""
                               callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
                                   if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
                                   {
                                       NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];//因0為cancel
-                                      weakSelf.selectedAreaCodeValue = [dict objectForKey:@"value"];
-                                      weakSelf.selectedAreaCodeKey = [dict objectForKey:@"key"];
-                                      weakSelf.selectedRegularExpression = [dict objectForKey:@"pattern"];
+                                      weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
+                                      weakSelf.selectedAreaCodeKey = [dict objectForKey:wwwww_tag_wwwww_key];
+                                      weakSelf.selectedRegularExpression = [dict objectForKey:wwwww_tag_wwwww_pattern];
                                       if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
                                       {
                                           [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
@@ -70,7 +70,7 @@
                                   }
                               }
                      destructiveButtonTitle_MMMethodMMM:nil
-                          cancelButtonTitle_MMMethodMMM:@"text_cancel".localx
+                          cancelButtonTitle_MMMethodMMM:wwwww_tag_wwwww_text_cancel.localx
                           otherButtonTitles_MMMethodMMM:[NSArray arrayWithArray:tempArray]
                                  sourceView_MMMethodMMM:view
                              arrowDirection_MMMethodMMM:UIPopoverArrowDirectionLeft];
@@ -84,9 +84,9 @@
         [self.gamaAreaCodesArray removeAllObjects];
         [self.gamaAreaCodesArray addObjectsFromArray:newAreaCodesArray];
         
-        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][@"key"];
-        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][@"value"];
-        self.selectedRegularExpression = _gamaAreaCodesArray[0][@"pattern"];
+        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][wwwww_tag_wwwww_key];
+        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][wwwww_tag_wwwww_value];
+        self.selectedRegularExpression = _gamaAreaCodesArray[0][wwwww_tag_wwwww_pattern];
     }
 }
 
@@ -102,7 +102,7 @@
 - (NSString *)selectedAreaCodeKey
 {
     if (!_selectedAreaCodeKey) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:@"key"];
+        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
     }
     return _selectedAreaCodeKey;
 }
@@ -110,7 +110,7 @@
 - (NSString *)selectedAreaCodeValue
 {
     if (!_selectedAreaCodeValue) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:@"value"];
+        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
     }
     return _selectedAreaCodeValue;
 }

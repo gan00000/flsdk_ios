@@ -47,7 +47,7 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_update_account") hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_update_account) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
@@ -102,7 +102,7 @@
             
         }];
         
-        UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_bind_account_tips") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+        UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_bind_account_tips) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         [self addSubview:bindTipLabel];
         
         [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -114,12 +114,12 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire_update") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire_update) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+        okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -150,7 +150,7 @@
      
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(wwwww_tag_wwwww_kOkActTag);
             [self endEditing:YES];
             [self bindAccount_MMMethodMMM];
         }
@@ -168,7 +168,7 @@
 {
     
     if (!self.fromPageParam) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         return;
     }
     
@@ -180,7 +180,7 @@
   
     
 //    if ([StringUtil isEmpty_MMMethodMMM:]) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
 //        return;
 //    }
  
@@ -194,7 +194,7 @@
     }
     
     if (!currentAccountModel) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         return;
     }
   

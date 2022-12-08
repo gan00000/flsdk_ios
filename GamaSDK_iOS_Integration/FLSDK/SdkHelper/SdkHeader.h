@@ -41,7 +41,7 @@
 //#define kPageTitleHeight                        MIN(kInputTextFiledHeight * 1.6, 40)
 //#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
-#define ContentViewBgColor                    @"#f4f4f5"
+#define ContentViewBgColor                    wwwww_tag_wwwww__CC_f4f4f5
 #define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
 
 #define SDK_DATA                           [CCSDKDATA sharedSdkData_MMMethodMMM]
@@ -116,13 +116,13 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 
 #pragma mark - login type登录方式
 
-#define LOGIN_TYPE_SELF           (@"mg")
-#define LOGIN_TYPE_GUEST            (@"visitor")
-#define LOGIN_TYPE_FB             (@"fb")
-#define LOGIN_TYPE_GOOGLE             (@"google")
-#define LOGIN_TYPE_TWITTER        (@"twitter")
-#define LOGIN_TYPE_APPLE          (@"apple")
-#define LOGIN_TYPE_LINE          (@"line")
+#define LOGIN_TYPE_SELF           (wwwww_tag_wwwww_mg)
+#define LOGIN_TYPE_GUEST            (wwwww_tag_wwwww_visitor)
+#define LOGIN_TYPE_FB             (wwwww_tag_wwwww_fb)
+#define LOGIN_TYPE_GOOGLE             (wwwww_tag_wwwww_google)
+#define LOGIN_TYPE_TWITTER        (wwwww_tag_wwwww_twitter)
+#define LOGIN_TYPE_APPLE          (wwwww_tag_wwwww_apple)
+#define LOGIN_TYPE_LINE          (wwwww_tag_wwwww_line)
 
 #pragma mark - api请求接口
 #define api_login_guest     (@"api/user/visitorLogin")

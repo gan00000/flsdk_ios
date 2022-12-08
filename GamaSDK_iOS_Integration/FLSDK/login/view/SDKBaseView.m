@@ -54,7 +54,7 @@
     
     for (CCallBack  callback in self.drawBlockArray) {
         
-        callback(@"drawRect",0,nil);
+        callback(wwwww_tag_wwwww_drawRect,0,nil);
     }
     
 }
