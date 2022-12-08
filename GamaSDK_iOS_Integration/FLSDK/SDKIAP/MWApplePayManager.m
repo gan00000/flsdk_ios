@@ -15,7 +15,7 @@
 
 @interface MWApplePayManager ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
-@property (nonatomic, copy) NSString *orderId;
+@property (nonatomic, copy) NSString *currentOrderId;
 //@property (nonatomic, copy) NSString *b_transactionId;
 //@property (nonatomic, copy) NSString *b_productId;
 //@property (nonatomic, copy) NSString *b_cpOrderId;
@@ -110,7 +110,7 @@
   
     [self checkOrderStatus_MMMethodMMM];//检查本地订单状态
     
-    self.orderId = @"";
+    self.currentOrderId = @"";
     self.mPayData = [[PayData alloc] init];
     
     if (!cpOrderId || !productId) {
@@ -125,11 +125,11 @@
     [SDKRequest createOrderWithproductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
-        self.orderId = cor.orderId;
+        self.currentOrderId = cor.orderId;
         self.mPayData.amount = cor.amount;
 //        self.roleId = gameUserModel.roleID;
         
-        [self payWithOrderId_MMMethodMMM:self.orderId productId_MMMethodMMM:productId];
+        [self payWithOrderId_MMMethodMMM:self.currentOrderId productId_MMMethodMMM:productId];
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:error.message];
     }];
@@ -156,7 +156,7 @@
     if([SKPaymentQueue canMakePayments]){
         
         [self removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM];
-        self.orderId = orderId;
+        self.currentOrderId = orderId;
         [self requestProductData_MMMethodMMM:productId];
         
     }else{
@@ -187,7 +187,7 @@
 //    }
     //設置用戶信息
     if ([SUtil getSystemVersion_MMMethodMMM].intValue>7){
-        payment.applicationUsername = self.orderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager_MMMethodMMM] getUID]];
+        payment.applicationUsername = self.currentOrderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager_MMMethodMMM] getUID]];
     }
     SDK_LOG(@"发起付款-addPayment");
     [[SKPaymentQueue defaultQueue] addPayment:payment];
@@ -347,7 +347,7 @@
     //每次获取都会改变，但in_app信息不会变，需要验证
     NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
     
-    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.orderId];
+    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.currentOrderId];
     
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
     
@@ -372,7 +372,7 @@
         }
         //如果此处仍为空值，把当前生成的订单赋值（该笔订单可能为不是对应该笔成功的充值的）
         if([StringUtil isEmpty_MMMethodMMM:parameterStr]){
-            parameterStr = self.orderId;
+            parameterStr = self.currentOrderId;
         }
         
     }
@@ -398,7 +398,7 @@
     
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
-        self.mPayData.orderId = self.orderId;
+        self.mPayData.orderId = self.currentOrderId;
         
         if (self.payStatusBlock) {
             self.payStatusBlock(status,self.mPayData);
