@@ -61,19 +61,19 @@
             if (!subOrderDic) {
                 break;
             }
-            NSString *orderId = subOrderDic[kSaveReceiptData_orderId];
+            NSString *orderIdLocal = subOrderDic[kSaveReceiptData_orderId];
             NSString *receiptData = subOrderDic[kSaveReceiptData_receiptData];
             NSString *transactionId = subOrderDic[kSaveReceiptData_transactionId];
             
             if (!receiptData) {
                 break;
             }
-            SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderId);
-            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderId reissue_MMMethodMMM:@"yes" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-                SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderId);
+            SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
+            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderIdLocal reissue_MMMethodMMM:@"yes" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+                SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
             } errorBlock_MMMethodMMM:^(BJError *error) {
-                SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderId);
+                SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
             }];
         }
     }
@@ -362,11 +362,11 @@
         if (localPayDataDic) {
             NSDictionary *subDic = localPayDataDic[transactionId];
             if (subDic) {
-                NSString *orderId = subDic[kSaveReceiptData_orderId];
+                NSString *orderIdTemp = subDic[kSaveReceiptData_orderId];
 //                NSString *receiptData = subDic[kSaveReceiptData_receiptData];
 //                NSString *transactionId = subDic[kSaveReceiptData_transactionId];
-                SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderId);
-                parameterStr = orderId;
+                SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderIdTemp);
+                parameterStr = orderIdTemp;
                 reissue = @"no_2";
             }
         }

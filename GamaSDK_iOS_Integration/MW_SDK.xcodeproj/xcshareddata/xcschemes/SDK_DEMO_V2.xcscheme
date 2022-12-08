@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "037C6EDA2875A97B0041EC34"
-               BuildableName = "MWSDK_V2.framework"
-               BlueprintName = "MWSDK_V2"
+               BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
+               BuildableName = "SDK_DEMO_V2.app"
+               BlueprintName = "SDK_DEMO_V2"
                ReferencedContainer = "container:MW_SDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
+            BuildableName = "SDK_DEMO_V2.app"
+            BlueprintName = "SDK_DEMO_V2"
+            ReferencedContainer = "container:MW_SDK.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "037C6EDA2875A97B0041EC34"
-            BuildableName = "MWSDK_V2.framework"
-            BlueprintName = "MWSDK_V2"
+            BlueprintIdentifier = "CEE6B3701A148B1E009E77FF"
+            BuildableName = "SDK_DEMO_V2.app"
+            BlueprintName = "SDK_DEMO_V2"
             ReferencedContainer = "container:MW_SDK.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
