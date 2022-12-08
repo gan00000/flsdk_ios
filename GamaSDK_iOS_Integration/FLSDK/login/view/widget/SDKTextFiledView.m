@@ -47,8 +47,8 @@
     }else{
         self.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_disable_icon];
         mUITextField.secureTextEntry = NO;
-        mUITextField.text = GetString(@"text_free_register");
-        mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#848484"];
+        mUITextField.text = GetString(wwwww_tag_wwwww_text_free_register);
+        mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
 
         eyeBtn.selected = NO;
     }
@@ -72,24 +72,24 @@
     
     switch (type) {
         case SDKTextFiledView_Type_VfCode:
-            iconName = @"fl_sdk_dx.png";
-            lableName = @"驗證碼";
+            iconName = wwwww_tag_wwwww_fl_sdk_dx_png;
+            lableName = wwwww_tag_wwwww_soonoon_teleoator;
             mUIKeyboardType = UIKeyboardTypeNumberPad;
-            placeholderText = @"請輸入驗證碼";
+            placeholderText = wwwww_tag_wwwww_corticoaster_numberature;
             showLableIcon = NO;
             break;
             
         case SDKTextFiledView_Type_Account:
             iconName = mw_account_icon;
-            lableName = @"帳號";
-            placeholderText = @"請輸入您的常用信箱";
+            lableName = wwwww_tag_wwwww_broncheer_whitester;
+            placeholderText = wwwww_tag_wwwww_oursure_pleging;
             addMoreAccountBtn = YES;
             break;
             
         case SDKTextFiledView_Type_Password:
             
             iconName = mw_passowrd_icon;
-            lableName = @"密碼";
+            lableName = wwwww_tag_wwwww_almostive_penotic;
             placeholderText = @"請輸入6-20字元";
             showEye = YES;
             break;
@@ -97,21 +97,21 @@
         case SDKTextFiledView_Type_Password_Again:
             
             iconName = mw_passowrd_icon;
-            lableName = @"密碼";
-            placeholderText = @"確認新密碼";
+            lableName = wwwww_tag_wwwww_almostive_penotic;
+            placeholderText = wwwww_tag_wwwww_zyment_gamid;
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
             iconName = mw_passowrd_icon;
-            lableName = @"請輸入新密碼";
-            placeholderText = @"請輸入新密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            lableName = wwwww_tag_wwwww_scientist_misceair;
+            placeholderText = wwwww_tag_wwwww_scientist_misceair;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_NEW);
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
-            lableName = @"輸入舊密碼";
-            placeholderText = @"輸入舊密碼";//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            lableName = wwwww_tag_wwwww_fontmentionry_labor;
+            placeholderText = wwwww_tag_wwwww_fontmentionry_labor;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_OLD);
             showEye = YES;
             break;
             
@@ -131,7 +131,7 @@
     
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -170,7 +170,7 @@
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     
@@ -223,7 +223,7 @@
     
     
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -265,17 +265,17 @@
     
     switch (type) {
         case SDKTextFiledView_Type_VfCode:
-            iconName = @"fl_sdk_dx.png";
+            iconName = wwwww_tag_wwwww_fl_sdk_dx_png;
             
             mUIKeyboardType = UIKeyboardTypeNumberPad;
-            placeholderText = @"py_msg_vfcode_hint".localx;
+            placeholderText = wwwww_tag_wwwww_py_msg_vfcode_hint.localx;
             showLableIcon = NO;
             break;
             
         case SDKTextFiledView_Type_Account:
             iconName = mw_account_icon;
             
-            placeholderText = @"py_register_account_hit".localx;
+            placeholderText = wwwww_tag_wwwww_py_register_account_hit.localx;
             addMoreAccountBtn = YES;
             break;
             
@@ -283,7 +283,7 @@
             
             iconName = mw_passowrd_icon;
             
-            placeholderText = @"py_register_password_hit".localx;
+            placeholderText = wwwww_tag_wwwww_py_register_password_hit.localx;
             showEye = YES;
             break;
             
@@ -291,20 +291,20 @@
             
             iconName = mw_passowrd_icon;
             
-            placeholderText = @"text_input_new_pwd_confire".localx;
+            placeholderText = wwwww_tag_wwwww_text_input_new_pwd_confire.localx;
             showEye = YES;
             break;
             
         case SDKTextFiledView_Type_Password_New:
             iconName = mw_passowrd_icon;
             
-            placeholderText = @"text_input_new_pwd".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_NEW");
+            placeholderText = wwwww_tag_wwwww_text_input_new_pwd.localx;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_NEW);
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
             
-            placeholderText = @"py_input_old_password".localx;//GetString(@"TXT_PH_ACCOUNT_INPUT_PWD_OLD");
+            placeholderText = wwwww_tag_wwwww_py_input_old_password.localx;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_OLD);
             showEye = YES;
             break;
             
@@ -324,7 +324,7 @@
     
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [self addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -363,7 +363,7 @@
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#848484"]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     
@@ -417,7 +417,7 @@
     
     UIView *lineView2 = [[UIView alloc] init];
     lineView2.hidden = YES;
-    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -470,7 +470,7 @@
     }
 }
 
-////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者@"任何字符串"都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
+////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者wwwww_tag_wwwww_lubricite_nearaceous都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {

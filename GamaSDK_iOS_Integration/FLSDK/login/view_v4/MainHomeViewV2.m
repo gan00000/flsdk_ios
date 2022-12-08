@@ -43,7 +43,7 @@
 }
 
 - (void)showTermsView_MMMethodMMM {
-    SDK_LOG(@"rememberTermsLableTapped");
+    SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
     //            if (self.delegate) {
     //                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME) param_MMMethodMMM:0];
     //            }
@@ -150,7 +150,7 @@
         make.width.height.mas_equalTo(VW(30));
     }];
     
-    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"guest_login_btn".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_guest_login_btn.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtnContent addSubview:guestTextBtn];
     [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
@@ -199,14 +199,14 @@
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
     }];
     
-    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:@"tips_have_account".localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor whiteColor]];
+    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor whiteColor]];
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
 //        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
     }];
     
-    UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_login".localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
+    UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.bottom.top.mas_equalTo(hasAccountContent);
@@ -214,7 +214,7 @@
     }];
     
     
-    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_login_other".localx fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login_other.localx fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
@@ -222,7 +222,7 @@
     }];
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -235,7 +235,7 @@
     }];
     
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [contentView addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -348,10 +348,10 @@
        
     }];
     
-        NSString *xtext = GetString(@"text_ui_term_port_read2");
-    NSString *temptext = GetString(@"sdk_terms_title");
+        NSString *xtext = GetString(wwwww_tag_wwwww_text_ui_term_port_read2);
+    NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
     
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -412,7 +412,7 @@
        
         case kAgreeTermsCheckBoxBtnTag:
             
-            SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
+            SDK_LOG(wwwww_tag_wwwww_kAgreeTermsCheckBoxBtnTag);
             if (checkBoxTermsBtn.selected) {
                 checkBoxTermsBtn.selected = NO;
             }else{
@@ -421,7 +421,7 @@
             break;
             
         case appleLoginActTag:
-            SDK_LOG(@"appleLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_appleLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -430,7 +430,7 @@
             
         case guestLoginActTag:
             {
-            SDK_LOG(@"guestLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_guestLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -440,7 +440,7 @@
             break;
             
         case fbLoginActTag:
-            SDK_LOG(@"fbLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_fbLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -448,14 +448,14 @@
             
             break;
         case googleLoginActTag:
-            SDK_LOG(@"googleLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_googleLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
             [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
             break;
         case lineLoginActTag:
-            SDK_LOG(@"lineLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_lineLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -473,7 +473,7 @@
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
+    [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
 //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
     [self showTermsView_MMMethodMMM];
     return NO;
@@ -489,7 +489,7 @@
 //    }
 //
 //    UIView *deleteView = [[UIView alloc] init];
-//    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
+//    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.85];
 //    deleteView.layer.cornerRadius = VW(10);
 //
 //    [self addSubview:deleteView];
@@ -507,7 +507,7 @@
 //        make.height.width.mas_equalTo(VW(25));
 //    }];
 //
-//    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
+//    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account_tips) fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
 //    [deleteView addSubview:deleteWarmLabel];
 //    deleteWarmLabel.numberOfLines = 0;
 //    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -516,8 +516,8 @@
 //        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
 //    }];
 //
-//    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-////    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_cancel) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+////    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
 //    cancelBtn.layer.cornerRadius = VW(16);
 //    cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 //    cancelBtn.layer.borderWidth = 1;
@@ -531,8 +531,8 @@
 //        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
 //    }];
 //
-//    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+//    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
 //    sureBtn.layer.cornerRadius = VW(16);
 ////    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 ////    sureBtn.layer.borderWidth = 1;
@@ -567,7 +567,7 @@
         make.width.height.mas_equalTo(VW(15));
     }];
     
-    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
@@ -579,7 +579,7 @@
     [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
 //        [self addDeleteAccountConfireView_MMMethodMMM];
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_not_login")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
         
     }];
     
@@ -589,7 +589,7 @@
 //- (void)doDeleteAccount_MMMethodMMM {
 //
 //    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
-//        [SdkUtil toastMsg_MMMethodMMM:@"text_select_account".localx];
+//        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
 //        return;
 //    }
 //    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{

@@ -11,13 +11,13 @@
 ////#import "KRTwitterLogin.h"
 ////#import "KRGamaNaverCafe.h"
 //
-//NSString *const GAMA_PRM_SOCIAL_SHARE_LINK          = @"gama_prm_social_share_link";
-//NSString *const GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE   = @"gama_prm_social_local_image";
-//NSString *const GAMA_PRM_SOCIAL_SHARE_MSG           = @"gama_prm_social_share_msg";
-//NSString *const GAMA_PRM_SOCIAL_INVITE_USERID       = @"gama_prm_social_invite_userId";
-//NSString *const GAMA_PRM_SOCIAL_INVITE_MSG          = @"gama_prm_social_invite_msg";
-//NSString *const GAMA_PRM_SOCIAL_INVITE_TITLE        = @"gama_prm_social_invite_title";
-//NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = @"gama_prm_social_fields_content";
+//NSString *const GAMA_PRM_SOCIAL_SHARE_LINK          = wwwww_tag_wwwww_gama_prm_social_share_link;
+//NSString *const GAMA_PRM_SOCIAL_SHARE_LOCAL_IMAGE   = wwwww_tag_wwwww_gama_prm_social_local_image;
+//NSString *const GAMA_PRM_SOCIAL_SHARE_MSG           = wwwww_tag_wwwww_gama_prm_social_share_msg;
+//NSString *const GAMA_PRM_SOCIAL_INVITE_USERID       = wwwww_tag_wwwww_gama_prm_social_invite_userId;
+//NSString *const GAMA_PRM_SOCIAL_INVITE_MSG          = wwwww_tag_wwwww_gama_prm_social_invite_msg;
+//NSString *const GAMA_PRM_SOCIAL_INVITE_TITLE        = wwwww_tag_wwwww_gama_prm_social_invite_title;
+//NSString *const GAMA_PRM_SOCIAL_FIELDS_CONTENT      = wwwww_tag_wwwww_gama_prm_social_fields_content;
 //
 //@implementation MWSDK (Social)
 //+(void)gama_getUserProfileWithPartyKind:(GamaThirdPartyType)kind

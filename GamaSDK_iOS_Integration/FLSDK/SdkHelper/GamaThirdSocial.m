@@ -41,7 +41,7 @@
 //            NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/whatsAppTmp.wai"];
 //            [UIImageJPEGRepresentation(iconImage, 1.0) writeToFile:filePath atomically:YES];
 //            gamaThirdSocial.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:filePath]];
-//            gamaThirdSocial.documentInteractionController.UTI = @"net.whatsapp.image";
+//            gamaThirdSocial.documentInteractionController.UTI = wwwww_tag_wwwww_net_whatsapp_image;
 //            gamaThirdSocial.documentInteractionController.delegate = gamaThirdSocial;
 //            BOOL result = [gamaThirdSocial.documentInteractionController presentOpenInMenuFromRect:CGRectZero inView:appTopViewController.view animated:YES];
 //            if(result){
@@ -56,7 +56,7 @@
 //        if([[UIApplication sharedApplication] canOpenURL:whatsAppUrl]){
 //            BOOL result = [[UIApplication sharedApplication] openURL:whatsAppUrl];
 //            if (result) {
-//                success(@{@"message":@"content share succeed"});
+//                success(@{wwwww_tag_wwwww_message:@"content share succeed"});
 //            } else {
 //                failure(nil);
 //            }
@@ -84,13 +84,13 @@
 //    
 //    if (iconImage) {
 //        GamaThirdSocial *gamaThirdSocial = [[GamaThirdSocial alloc] init];
-//        [gamaThirdSocial postShareByPastingWithPasteboardName:@"jp.naver.linecamera.pasteboard" image_MMMethodMMM:[UIImage imageNamed:@""] imageName_MMMethodMMM:@"public" imageType:@"png" URL:@"line://msg/image" appStoreLink:@"https:itunes.apple.com/app/line/id443904275" success:success failure:failure];
+//        [gamaThirdSocial postShareByPastingWithPasteboardName:wwwww_tag_wwwww_jp_naver_linecamera_pasteboard image_MMMethodMMM:[UIImage imageNamed:@""] imageName_MMMethodMMM:wwwww_tag_wwwww_public imageType:wwwww_tag_wwwww_png URL:@"line://msg/image" appStoreLink:@"https:itunes.apple.com/app/line/id443904275" success:success failure:failure];
 //
 //    }else if(shareContentText.length > 0){
 //        NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[shareContentText stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 //        BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lineUrl]];
 //        if (result) {
-//            success(@{@"message":@"Scheme share succeed"});
+//            success(@{wwwww_tag_wwwww_message:@"Scheme share succeed"});
 //        } else {
 //            failure(nil);
 //        }
@@ -117,7 +117,7 @@
 //    [pasteboard setData:UIImageJPEGRepresentation(image, 0.8) forPasteboardType:[NSString stringWithFormat:@"%@.%@",imageName,imageType]];
 //    BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",URLString ,pasteboard.name]]];
 //    if (result) { //成功
-//        success(@{@"message":@"pasteboard share succeed"});
+//        success(@{wwwww_tag_wwwww_message:@"pasteboard share succeed"});
 //    }else{ //失败
 //        failure(nil);
 //    }
@@ -140,7 +140,7 @@
 //          didEndSendingToApplication:(NSString *)application
 //{
 //    dispatch_async(dispatch_get_main_queue(), ^{
-//        self.impSuccess(@{@"message":@"document share succeed"});
+//        self.impSuccess(@{wwwww_tag_wwwww_message:@"document share succeed"});
 //    });
 //    //分享成功？
 //}

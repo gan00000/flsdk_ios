@@ -25,13 +25,13 @@
 #import <StoreKit/StoreKit.h>
 
 // 通知类型
-//NSString *const SDK_LOGIN_SUCCUESS    = @"SDK_LOGIN_SUCCUESS";
+//NSString *const SDK_LOGIN_SUCCUESS    = wwwww_tag_wwwww_SDK_LOGIN_SUCCUESS;
 
-//NSString *const GAMA_PAY_SUCCUESS      = @"GAMAPHCHASESUCCESSFUL";
-//NSString *const GAMA_PAY_FAIL          = @"GAMAPHCHASEFAIL";
-//NSString *const GAMA_PAY_PUCHESSING    = @"GAMAPHCHASING";
-//NSString *const GAMA_SHARE_RESULT      = @"CONST_GAMA_SHARE_RESULT";
-//NSString *const GAMA_NOTICE_CLOSE      = @"GAMA_NOTICE_CLOSE";
+//NSString *const GAMA_PAY_SUCCUESS      = wwwww_tag_wwwww_GAMAPHCHASESUCCESSFUL;
+//NSString *const GAMA_PAY_FAIL          = wwwww_tag_wwwww_GAMAPHCHASEFAIL;
+//NSString *const GAMA_PAY_PUCHESSING    = wwwww_tag_wwwww_GAMAPHCHASING;
+//NSString *const GAMA_SHARE_RESULT      = wwwww_tag_wwwww_CONST_GAMA_SHARE_RESULT;
+//NSString *const GAMA_NOTICE_CLOSE      = wwwww_tag_wwwww_GAMA_NOTICE_CLOSE;
 
 @interface MWSDK()
 
@@ -114,7 +114,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -225,7 +225,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -250,7 +250,7 @@
     }
     
     if (self.isPaying) {//是否正在充值中
-        SDK_LOG(@"正在充值中...");
+        SDK_LOG(wwwww_tag_wwwww_gloriistic_diamisslike);
         return;
     }
     self.isPaying = YES;
@@ -307,7 +307,7 @@
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
@@ -319,7 +319,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if (@available(iOS 10.3, *)) {
@@ -333,7 +333,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -354,11 +354,11 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if (!is_Version2) {
-        [SdkUtil toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
         return;
     }
     BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
@@ -383,12 +383,12 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     if (!is_Version2) {
-        [SdkUtil toastMsg_MMMethodMMM: @"当前版本不支持该功能"];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
         return;
     }
     BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView_MMMethodMMM];
@@ -413,21 +413,21 @@
 {
    
     if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
         return;
     }
     if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
         return;
     }
 //    if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_match".localx];
+//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
 //        return;
 //    }
     
     [SDKRequest requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM: @"text_vfcode_has_send".localx];
+//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_vfcode_has_send.localx];
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
@@ -447,27 +447,27 @@
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
     
     if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_area_code_not_empty".localx];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
         return;
     }
     if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_empty".localx];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
         return;
     }
     
 //    if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_not_match".localx];
+//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
 //        return;
 //    }
     
     if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: @"py_msg_vfcode_hint".localx];
+        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
         return;
     }
     
     [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM: @"text_phone_bind_success".localx];
+//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_bind_success.localx];
         SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
         SDK_DATA.mLoginResponse.data.isBindPhone = YES;
         
@@ -502,14 +502,14 @@
     
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
     if (!currentAccountModel) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
     
     [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_bind_success2")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success2)];
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -553,10 +553,10 @@
 
 - (void)openCs
 {
-    SDK_LOG(@"openCs..");
+    SDK_LOG(wwwww_tag_wwwww_openCs__);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -575,7 +575,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
@@ -605,10 +605,10 @@
 
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
    
-    SDK_LOG(@"addLocalNotificationWithTitle");
+    SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"请在主线程调用该接口"];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -624,7 +624,7 @@
        // 默认声音
         content.sound = [UNNotificationSound defaultSound];
      // 添加自定义声音
-//       content.sound = [UNNotificationSound soundNamed:@"Alert_ActivityGoalAttained_Salient_Haptic.caf"];
+//       content.sound = [UNNotificationSound soundNamed:wwwww_tag_wwwww_Alert_ActivityGoalAttained_Salient_Haptic_caf];
         // 角标，桌面icon 小红标数量
 //        content.badge = @(1);
         
@@ -644,9 +644,9 @@
 //        // 发出推送的日期
 //        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
 //        // 推送的内容
-//        notif.alertBody = @"你已经10秒没出现了";
+//        notif.alertBody = wwwww_tag_wwwww_octogesimserveation_cause;
 //        // 可以添加特定信息
-//        notif.userInfo = @{@"noticeId":@"00001"};
+//        notif.userInfo = @{wwwww_tag_wwwww_noticeId:wwwww_tag_wwwww_00001};
 //        // 角标
 //        notif.applicationIconBadgeNumber = 1;
 //        // 提示音

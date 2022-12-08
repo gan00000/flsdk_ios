@@ -1125,6 +1125,7 @@
 		0387BA80291B8DA5001BACA8 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
+		039DBCB529419C00007EAD2F /* StringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringHeaders.h; sourceTree = "<group>"; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
 		03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_mplay_wlzhs.plist; sourceTree = "<group>"; };
@@ -2021,6 +2022,7 @@
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
+				039DBCB529419C00007EAD2F /* StringHeaders.h */,
 				0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */,
 				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,
 				03D5F35E28D3187F00C3855E /* preHeader.pch */,

@@ -30,8 +30,8 @@
     
     self.backgroundColor = [UIColor clearColor];
     
-    NSString *iconName = @"fl_sdk_mb.png";
-    NSString *lableName = @"電話";
+    NSString *iconName = wwwww_tag_wwwww_fl_sdk_mb_png;
+    NSString *lableName = wwwww_tag_wwwww_purgresponseism_polship;
     
     UIView *areaCodeContentView = [[UIView alloc] init];
     areaCodeContentView.layer.cornerRadius = 4;
@@ -71,7 +71,7 @@
     tipsUILabel.backgroundColor = [UIColor clearColor];
     tipsUILabel.numberOfLines = 1; //0为多行
     //tipsUILabel.textColor = [UIColor blackColor];
-    tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#FF3E37"];
+    tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF3E37];
     
     [areaCodeContentView addSubview:tipsUILabel];
     [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -85,7 +85,7 @@
     
     self.aracCodeUILabel = [[UILabel alloc] init];//区号
     self.aracCodeUILabel.font = [UIFont systemFontOfSize:14];
-    self.aracCodeUILabel.text = @"886";
+    self.aracCodeUILabel.text = wwwww_tag_wwwww_886;
     self.aracCodeUILabel.textAlignment = NSTextAlignmentCenter;
     self.aracCodeUILabel.backgroundColor = [UIColor clearColor];
     self.aracCodeUILabel.numberOfLines = 1; //0为多行
@@ -147,9 +147,9 @@
        if (!IS_PORTRAIT || device_is_iPhoneX) {
            placeHolderTextSize = 10;
        }
-    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:@"請輸入電話號碼"
+    NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:wwwww_tag_wwwww_anything_scanslike
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],
-                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:@"#A0A0A0"]}];
+                                                                               NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_A0A0A0]}];
     self.mUITextField.attributedPlaceholder = attrStr;
     [phoneInputContentView addSubview:self.mUITextField];
     [self.mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {

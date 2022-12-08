@@ -72,7 +72,7 @@
         
         /**
          //登入頁logo
-         UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed_MMMethodMMM:@"fl_sdk_logo"]];
+         UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage gama_imageNamed_MMMethodMMM:wwwww_tag_wwwww_fl_sdk_logo]];
          logoImageView.contentMode = UIViewContentModeScaleAspectFit;
          [self addSubview:logoImageView];
          [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,7 +83,7 @@
          }];
          logoImageView.hidden = YES;
          
-         backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:@"sdk_btn_back.png" highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+         backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:wwwww_tag_wwwww_sdk_btn_back_png highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
          backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
          [self addSubview:backBtn];
          [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,7 +98,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
+        accountSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -112,7 +112,7 @@
         
         //密码
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
+        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
         [self addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -126,7 +126,7 @@
         
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"py_findpwd") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_py_findpwd) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -154,8 +154,8 @@
             
         }];
         
-        NSString *xtext = GetString(@"sdk_terms_title");
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+        NSString *xtext = GetString(wwwww_tag_wwwww_sdk_terms_title);
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         //            rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -175,7 +175,7 @@
         }];
         rememberTermsLable.userInteractionEnabled=YES;
         [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-            SDK_LOG(@"rememberTermsLableTapped");
+            SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
             if (self.delegate) {
                 [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param_MMMethodMMM:0];
             }
@@ -188,10 +188,10 @@
         //账号登入
         //        accountLoginBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_ACCOUNT_LOGIN) tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"登入" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -215,9 +215,9 @@
        
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"其他登入";
+        otherLabelTips.text = wwwww_tag_wwwww_mostery_tricesimreachory;
         otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
         
         [loginTypeView addSubview:otherLabelTips];
         [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -427,21 +427,21 @@
     switch (sender.tag) {
             
         case kFindPwdActTag:
-            SDK_LOG(@"kFindPwdActTag");
+            SDK_LOG(wwwww_tag_wwwww_kFindPwdActTag);
             if (self.delegate) {
                 [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_FIND_PWD];
             }
             break;
             
         case kBackBtnActTag:
-            SDK_LOG(@"kBackBtnActTag");
+            SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
             if (self.delegate) {
                 [self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
         case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_kAccountLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -514,7 +514,7 @@
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
+    [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
     //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
     return NO;
 }
@@ -558,17 +558,17 @@
     
     
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_account_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_account_empty)];
         return;
     }
     
     if (![SdkUtil validUserName_MMMethodMMM:accountName]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return;
     }
     [LoginHelper selfLoginAndRequest_MMMethodMMM:self.delegate account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
@@ -582,7 +582,7 @@
     
     NSString *account = mAccountModel.userId;
     NSString *iconName = mw_smail_icon;
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(wwwww_tag_wwwww_text_free_register);
     
     BOOL pwdEnable = YES;
     

@@ -34,13 +34,13 @@
     NSDictionary *comDic = nil;
     @try {
         comDic = @{
-            @"userId"      : userId,
-            @"time"        :[SUtil getTimeStamp_MMMethodMMM],
-            @"role_name"    :roleName,
-            @"role_id"      :roleId,
-            @"idfa"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
-            @"uniqueId"         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
-            @"platform"      : @"ios",
+            wwwww_tag_wwwww_userId      : userId,
+            wwwww_tag_wwwww_time        :[SUtil getTimeStamp_MMMethodMMM],
+            wwwww_tag_wwwww_role_name    :roleName,
+            wwwww_tag_wwwww_role_id      :roleId,
+            wwwww_tag_wwwww_idfa             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+            wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
+            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
         };
         
     } @catch (NSException *exception) {

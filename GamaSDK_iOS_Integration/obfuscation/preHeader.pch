@@ -15,6 +15,7 @@
 //#define SDK_V3      1
 #define SDK_V4      1
 
+#import "StringHeaders.h"
 #import "imageNameHeader.h"
 //#import "codeObfuscationForMethodName.h"
 

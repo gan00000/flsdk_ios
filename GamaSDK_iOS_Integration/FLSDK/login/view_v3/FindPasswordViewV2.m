@@ -47,7 +47,7 @@
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_forgot_pwd") hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
@@ -92,7 +92,7 @@
         
         
         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_get_vfcode") fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         
         getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
@@ -113,7 +113,7 @@
         
 //        UIView *lineView1 = [[UIView alloc] init];
 //        lineView1.hidden = YES;
-//        lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+//        lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
 //        [self addSubview:lineView1];
 //        [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
 //
@@ -140,7 +140,7 @@
         //下划线
         UIView *vfCodeFiledView_bottom_line = [[UIView alloc] init];
         vfCodeFiledView_bottom_line.hidden = YES;
-        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
         [self addSubview:vfCodeFiledView_bottom_line];
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             
@@ -167,7 +167,7 @@
         
         
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"py_confire".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(25)];
@@ -212,7 +212,7 @@
             
         case kGetVfCodeActTag:
         {
-            SDK_LOG(@"kGetVfCodeActTag");
+            SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
             NSString *account = accountSDKTextFiledView.inputUITextField.text;
             if (![SdkUtil validUserName_MMMethodMMM:account]) {
                 return;
@@ -223,7 +223,7 @@
             
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(wwwww_tag_wwwww_kOkActTag);
             [self findPassword_MMMethodMMM];
         }
             
@@ -253,7 +253,7 @@
     
     if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
     
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_vfcode_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_vfcode_empty)];
         return;
     }
         
@@ -264,14 +264,14 @@
     
 //    if (![newPwd isEqualToString:againPwd]) {
 //
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_pwd_not_equel")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_pwd_not_equel)];
 //        return;
 //    }
     
     NSDictionary *otherParamsDic = nil;
     @try {
         otherParamsDic = @{
-            @"newPwd"        :[SUtil getMD5StrFromString_MMMethodMMM:newPwd],
+            wwwww_tag_wwwww_newPwd        :[SUtil getMD5StrFromString_MMMethodMMM:newPwd],
         };
         
     } @catch (NSException *exception) {
@@ -279,9 +279,9 @@
     }
     
     kWeakSelf
-    [SDKRequest doForgotPasswordWithUserName_MMMethodMMM:userName phoneAreaCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:phoneNum email_MMMethodMMM:userName vfCode_MMMethodMMM:vfCode interfaces_MMMethodMMM:@"4" otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+    [SDKRequest doForgotPasswordWithUserName_MMMethodMMM:userName phoneAreaCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:phoneNum email_MMMethodMMM:userName vfCode_MMMethodMMM:vfCode interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_change_pwd_success")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_change_pwd_success)];
 
         if (weakSelf.delegate) {
             LoginResponse *cc = (LoginResponse *)responseData;
@@ -302,9 +302,9 @@
 //{
 //
 //
-//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
 //
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_send_vf_code_success")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
 //
 //        [self downTime_MMMethodMMM];
 //
@@ -317,8 +317,8 @@
 - (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
 {
     
-    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:@"4" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_send_vf_code_success")];
+    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
         [self downTime_MMMethodMMM];
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [self resetVfCodeBtnStatue_MMMethodMMM];
@@ -365,7 +365,7 @@
         downTimer = nil;
     }
     getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(@"text_get_vfcode") forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }
 
 - (void)dealloc

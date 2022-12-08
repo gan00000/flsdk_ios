@@ -79,7 +79,7 @@
     if (self) {
     
         //title
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(@"text_welcome_back") hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_welcome_back) hander_MMMethodMMM:^(NSInteger) {
             
 //            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 sdkPage:(CURRENT_PAGE_TYPE_FIND_PWD)];
         }];
@@ -126,7 +126,7 @@
 //        accountUpdateTipsLable.font = [UIFont systemFontOfSize:VH(13)];
 //        accountUpdateTipsLable.textAlignment = NSTextAlignmentLeft;
 //        accountUpdateTipsLable.numberOfLines = 1;
-//        accountUpdateTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+//        accountUpdateTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
 //
 //        [self addSubview:accountUpdateTipsLable];
 //
@@ -139,7 +139,7 @@
 //
 //
 //
-//        UIButton *accountUpdateTipsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:@"nend_update_account_bg" highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:0 selector:nil target_MMMethodMMM:nil];
+//        UIButton *accountUpdateTipsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:wwwww_tag_wwwww_nend_update_account_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:0 selector:nil target_MMMethodMMM:nil];
 //
 //        [self addSubview:accountUpdateTipsBtn];
 //        [accountUpdateTipsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -151,10 +151,10 @@
         
        
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_go_game") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGoGameActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_go_game) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGoGameActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(25)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:accountLoginBtn];
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -163,7 +163,7 @@
             make.height.mas_equalTo(VH(50));
         }];
         
-        swithAccountBtn_2 = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_switch_account") fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kSwitchAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        swithAccountBtn_2 = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_switch_account) fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kSwitchAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [swithAccountBtn_2.layer setCornerRadius:VH(20)];
         swithAccountBtn_2.layer.borderColor = [UIColor whiteColor].CGColor;
         swithAccountBtn_2.layer.borderWidth = 1;
@@ -176,7 +176,7 @@
         
         }];
         
-        update_change_btn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_update_account_bind") fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kBindAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        update_change_btn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_update_account_bind) fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kBindAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [update_change_btn.layer setCornerRadius:VH(20)];
         update_change_btn.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -190,7 +190,7 @@
             make.width.mas_equalTo(VW(140));
         }];
         
-        swithAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_switch_account") fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kSwitchAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        swithAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_switch_account) fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kSwitchAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [swithAccountBtn.layer setCornerRadius:VH(20)];
         swithAccountBtn.layer.borderColor = [UIColor whiteColor].CGColor;
         swithAccountBtn.layer.borderWidth = 1;
@@ -342,7 +342,7 @@
     }
     
     UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
+    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.85];
     deleteView.layer.cornerRadius = VW(10);
     
     [self addSubview:deleteView];
@@ -360,7 +360,7 @@
         make.height.width.mas_equalTo(VW(25));
     }];
     
-    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
+    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account_tips) fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
     [deleteView addSubview:deleteWarmLabel];
     deleteWarmLabel.numberOfLines = 0;
     [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -369,8 +369,8 @@
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
     }];
     
-    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_cancel) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     [deleteView addSubview:cancelBtn];
     [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -381,8 +381,8 @@
         make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
     }];
     
-    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
     sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     sureBtn.layer.borderWidth = 1;
@@ -425,7 +425,7 @@
         make.width.height.mas_equalTo(VW(16));
     }];
     
-    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor blackColor]];
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor blackColor]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
@@ -443,7 +443,7 @@
 
 -(void)setViewStatue_MMMethodMMM
 {
-    SDK_LOG(@"setViewStatue");
+    SDK_LOG(wwwww_tag_wwwww_setViewStatue);
     if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
         
         swithAccountBtn_2.hidden = YES;
@@ -452,7 +452,7 @@
 
         //修改密码
         update_change_btn.tag = kChangePwdActTag;
-        [update_change_btn setTitle:GetString(@"py_login_page_change_pwd") forState:(UIControlStateNormal)];
+        [update_change_btn setTitle:GetString(wwwww_tag_wwwww_py_login_page_change_pwd) forState:(UIControlStateNormal)];
         
     }else{//三方账号
         
@@ -468,7 +468,7 @@
             
             //绑定账号
             update_change_btn.tag = kBindAccountActTag;
-            [update_change_btn setTitle:GetString(@"text_update_account_bind") forState:(UIControlStateNormal)];
+            [update_change_btn setTitle:GetString(wwwww_tag_wwwww_text_update_account_bind) forState:(UIControlStateNormal)];
         }
         
     }
@@ -482,9 +482,9 @@
     switch (sender.tag) {
                     
         case kBindAccountActTag:
-            SDK_LOG(@"kBindAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kBindAccountActTag);
             if (!currentAccountModel) {
-                [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+                [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
                 return;
             }
             if (self.delegate) {
@@ -494,9 +494,9 @@
             
             
         case kChangePwdActTag:
-            SDK_LOG(@"kChangePwdActTag");
+            SDK_LOG(wwwww_tag_wwwww_kChangePwdActTag);
             if (!currentAccountModel) {
-                [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+                [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
                 return;
             }
             if (self.delegate) {
@@ -505,22 +505,22 @@
             break;
         
         case kGoGameActTag:
-            SDK_LOG(@"kGoGameActTag");
+            SDK_LOG(wwwww_tag_wwwww_kGoGameActTag);
             [self goGame_MMMethodMMM];
             break;
             
         case kSwitchAccountActTag:
-            SDK_LOG(@"kSwitchAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kSwitchAccountActTag);
             if (self.delegate) {
                 [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_LOGIN_WITH_REG from_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK) param_MMMethodMMM:@(0)];
             }
             break;
         case kSureDeleteAccountActTag:
-            SDK_LOG(@"kSureDeleteAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kSureDeleteAccountActTag);
             [self doDeleteAccount_MMMethodMMM];
             break;
         case kCancelDeleteAccountActTag:
-            SDK_LOG(@"kCancelDeleteAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kCancelDeleteAccountActTag);
             [deleteAccountConfireView removeFromSuperview];
             break;
         default:
@@ -534,7 +534,7 @@
 -(void)goGame_MMMethodMMM
 {
     if (!currentAccountModel) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         return;
     }
     if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {

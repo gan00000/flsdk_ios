@@ -10,7 +10,7 @@
 
 #import "AdDelegate.h"
 
-#define SDK_LOG_EVENT_INSTALL  @"install"
+#define SDK_LOG_EVENT_INSTALL  wwwww_tag_wwwww_install
 
 @interface AdLogger : NSObject
 

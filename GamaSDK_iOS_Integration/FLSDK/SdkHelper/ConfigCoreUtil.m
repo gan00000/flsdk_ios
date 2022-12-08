@@ -157,7 +157,7 @@ static dispatch_once_t onceToken;
     //转为不可变数组才能保存
     NSArray *nsdataArray = [NSArray arrayWithArray: dataList];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:nsdataArray forKey:@"Key_AccountModelArray"];
+    [userDefaults setObject:nsdataArray forKey:wwwww_tag_wwwww_Key_AccountModelArray];
     [userDefaults synchronize];
 }
 
@@ -166,7 +166,7 @@ static dispatch_once_t onceToken;
 {
     NSMutableArray  *accountModelList = [NSMutableArray array];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSArray *array = [userDefaults objectForKey:@"Key_AccountModelArray"];
+    NSArray *array = [userDefaults objectForKey:wwwww_tag_wwwww_Key_AccountModelArray];
     for (NSData *data in array) {
         //开启混淆的话，名字不一样会报错
         AccountModel *m = [NSKeyedUnarchiver unarchiveObjectWithData:data];
@@ -185,7 +185,7 @@ static dispatch_once_t onceToken;
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     // 1、写入
-    [userDefaults setObject:thirdPlate forKey:@"SDK_LOGIN_TYPE"];
+    [userDefaults setObject:thirdPlate forKey:wwwww_tag_wwwww_SDK_LOGIN_TYPE];
     // 强制写入
     [userDefaults synchronize];
 }
@@ -193,7 +193,7 @@ static dispatch_once_t onceToken;
 -(NSString *)loginType_MMMethodMMM
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    return [userDefaults stringForKey:@"SDK_LOGIN_TYPE"];
+    return [userDefaults stringForKey:wwwww_tag_wwwww_SDK_LOGIN_TYPE];
 }
 
 @end

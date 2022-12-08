@@ -69,7 +69,7 @@
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
-            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderIdLocal reissue_MMMethodMMM:@"yes" gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+            [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderIdLocal reissue_MMMethodMMM:wwwww_tag_wwwww_yes gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
             } errorBlock_MMMethodMMM:^(BJError *error) {
@@ -85,7 +85,7 @@
     NSArray* transactions = [SKPaymentQueue defaultQueue].transactions;
     
     if (transactions.count >= 1) {
-        SDK_LOG(@"结束所有apple未消耗订单");
+        SDK_LOG(wwwww_tag_wwwww_radio_tenyesator);
         for (SKPaymentTransaction* transaction in transactions) {
             if (transaction.transactionState == SKPaymentTransactionStatePurchased ||transaction.transactionState == SKPaymentTransactionStateRestored) {//此处是否做个补发好一点...
 //                NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
@@ -96,7 +96,7 @@
         }
         
     }else{
-        SDK_LOG(@"apple没有历史未消耗订单");
+        SDK_LOG(wwwww_tag_wwwww_gasad_archi);
     }
 }
 
@@ -148,8 +148,8 @@
         return;
     }
     
-//    if ([[XZDeviceManager didRoot] isEqualToString:@"didRoot"]) {//写自己的越狱判断方法
-//        [AAProgressManager showFinishWithStatus:@"越狱手机不支持内购"];
+//    if ([[XZDeviceManager didRoot] isEqualToString:wwwww_tag_wwwww_didRoot]) {//写自己的越狱判断方法
+//        [AAProgressManager showFinishWithStatus:wwwww_tag_wwwww_marketly_umbrern];
 //        return;
 //    }
     SDK_LOG(@"-SKPaymentQueue canMakePayments]");
@@ -160,7 +160,7 @@
         [self requestProductData_MMMethodMMM:productId];
         
     }else{
-        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"請打開應用內購功能")];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(wwwww_tag_wwwww_investmentibility_responseia)];
     }
 }
 
@@ -220,7 +220,7 @@
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{ //system_method
     SDK_LOG(@"------------------错误didFailWithError-----------------:%@", error);
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"从Apple获取商品信息失败")];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(wwwww_tag_wwwww_kitchenfaction_hedr)];
 
     });
 }
@@ -234,7 +234,7 @@
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transaction{//system_method
     
-    SDK_LOG(@"监听AppStore支付状态");
+    SDK_LOG(wwwww_tag_wwwww_yourselfenne_pent);
     dispatch_async(dispatch_get_main_queue(), ^{
         
         for(SKPaymentTransaction *tran in transaction){
@@ -252,7 +252,7 @@
                     break;
                 case SKPaymentTransactionStateRestored:
                 {
-                    SDK_LOG(@"已经购买过商品");
+                    SDK_LOG(wwwww_tag_wwwww_listenaneous_lacrimaskatic);
                     [self completeTransaction_MMMethodMMM:tran];
                     [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@""];
                 }
@@ -266,9 +266,9 @@
                     break;
                 case SKPaymentTransactionStateDeferred:
                 {
-                    SDK_LOG(@"SKPaymentTransactionStateDeferred");
+                    SDK_LOG(wwwww_tag_wwwww_SKPaymentTransactionStateDeferred);
 //                    [self completeTransaction_MMMethodMMM:tran];
-//                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"最终状态未确定")];
+//                    [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(wwwww_tag_wwwww_court_hundredlet)];
                 }
                     break;
                 default:
@@ -354,7 +354,7 @@
 //    在開發過程中，無法直接關聯 transaction 與 orderID 之間聯絡，雖然有一個 applicationUserName 欄位，可以儲存一個資訊。但是這個欄位是不是 100%靠譜，在某些情況下會丟失儲存的資料。
     //没有消耗的话，相同的productId会被直接返回，此时applicationUsername为空值
     NSString * parameterStr = transaction.payment.applicationUsername;
-    NSString *reissue = @"no";
+    NSString *reissue = wwwww_tag_wwwww_no;
     if (!parameterStr || [@"" isEqualToString:parameterStr])//applicationUsername为空值
     {
         //此时去找历史订单，找到transactionId相同的记录，把orderId赋值
@@ -367,7 +367,7 @@
 //                NSString *transactionId = subDic[kSaveReceiptData_transactionId];
                 SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderIdTemp);
                 parameterStr = orderIdTemp;
-                reissue = @"no_2";
+                reissue = wwwww_tag_wwwww_no_2;
             }
         }
         //如果此处仍为空值，把当前生成的订单赋值（该笔订单可能为不是对应该笔成功的充值的）
@@ -430,11 +430,11 @@
 }
 
 #pragma mark -- 本地保存一次支付凭证
-static NSString *const kSaveReceiptData = @"kSaveReceiptData_MW";
-static NSString *const kSaveReceiptData_receiptData = @"kSaveReceiptData_receiptData";
-static NSString *const kSaveReceiptData_orderId = @"kSaveReceiptData_orderId";
-static NSString *const kSaveReceiptData_transactionId = @"kSaveReceiptData_transactionId";
-static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
+static NSString *const kSaveReceiptData = wwwww_tag_wwwww_kSaveReceiptData_MW;
+static NSString *const kSaveReceiptData_receiptData = wwwww_tag_wwwww_kSaveReceiptData_receiptData;
+static NSString *const kSaveReceiptData_orderId = wwwww_tag_wwwww_kSaveReceiptData_orderId;
+static NSString *const kSaveReceiptData_transactionId = wwwww_tag_wwwww_kSaveReceiptData_transactionId;
+static NSString *const kSaveReceiptData_time = wwwww_tag_wwwww_kSaveReceiptData_time;
 
 - (void)saveReceiptData_MMMethodMMM:(NSString *)receiptData transactionId_MMMethodMMM:(NSString *)transactionId orderId_MMMethodMMM:(NSString *)orderId
 {

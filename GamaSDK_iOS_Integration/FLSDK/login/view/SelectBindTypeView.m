@@ -32,7 +32,7 @@
         self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
         //登入頁logo
-        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:@"綁定會員帳號" hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_sureenne_terless hander_MMMethodMMM:^(NSInteger) {
             
         }];
 //        mLoginTitleView.delegate = self.delegate;//此处不起作用
@@ -117,7 +117,7 @@
                    }];
             
             UILabel *titleLable = [[UILabel alloc] init];
-           titleLable.text = @"Apple帳號綁定";
+           titleLable.text = wwwww_tag_wwwww_plasative_comdebateatic;
            titleLable.font = [UIFont systemFontOfSize:VH(32)];
            titleLable.textAlignment = NSTextAlignmentCenter;
            titleLable.backgroundColor = [UIColor clearColor];
@@ -145,7 +145,7 @@
 
 -(void)appleViewTapped_MMMethodMMM:(UITapGestureRecognizer*)tapGr
 {
-    SDK_LOG(@"appleViewTapped");
+    SDK_LOG(wwwww_tag_wwwww_appleViewTapped);
     UIButton *xButton = [[UIButton alloc] init];
     xButton.tag = kBindAppleActTag;
     [self registerViewBtnAction_MMMethodMMM:xButton];
@@ -158,11 +158,11 @@
         switch (sender.tag) {
             case kBindAppleActTag:
             {
-                SDK_LOG(@"kBindAppleActTag");
+                SDK_LOG(wwwww_tag_wwwww_kBindAppleActTag);
                 if (@available(iOS 13, *)) {
                                 
                   }else{
-                     [AlertUtil showAlertWithMessage_MMMethodMMM:GetString(@"GAMA_APPLE_SYSTEM_OLD_WARNING")];
+                     [AlertUtil showAlertWithMessage_MMMethodMMM:GetString(wwwww_tag_wwwww_GAMA_APPLE_SYSTEM_OLD_WARNING)];
                       return;
                   }
             }
@@ -170,11 +170,11 @@
                 break;
     
             case kBindFBActTag:
-                SDK_LOG(@"kBindFBActTag");
+                SDK_LOG(wwwww_tag_wwwww_kBindFBActTag);
             break;
     
             case kBindAccountActTag:
-                SDK_LOG(@"kBindGuestActTag");
+                SDK_LOG(wwwww_tag_wwwww_kBindGuestActTag);
             break;
     
             default:

@@ -44,9 +44,9 @@
         
         NSDictionary *responseDict = responseData;
         SDK_LOG(@"sdk config:%@",responseDict);
-        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[@"allVersion"]];//需要分开解析
-        NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[@"subVersion"]];
-        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[@"url"]];
+        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];//需要分开解析
+        NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_subVersion]];
+        UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_url]];
         
 //        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
         
@@ -100,9 +100,9 @@
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"eventName"        :eventName,
-            @"appTime"          :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
+            wwwww_tag_wwwww_eventName        :eventName,
+            wwwww_tag_wwwww_appTime          :timeStamp,
+            wwwww_tag_wwwww_gameCode         :[NSString stringWithFormat:@"%@", GAME_CODE],
         };
         [params addEntriesFromDictionary:dic];
         
@@ -173,13 +173,13 @@
     // NSArray *expectDictArr = nil;
     @try {
         dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@", GAME_CODE],
-            @"registPlatform"   :thirdPlate,
-            @"loginMode"        :thirdPlate,
-            @"thirdPlatId"      :thirdId,
-            @"thirdLoginId"     :thirdId,
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :[NSString stringWithFormat:@"%@", GAME_CODE],
+            wwwww_tag_wwwww_registPlatform   :thirdPlate,
+            wwwww_tag_wwwww_loginMode        :thirdPlate,
+            wwwww_tag_wwwww_thirdPlatId      :thirdId,
+            wwwww_tag_wwwww_thirdLoginId     :thirdId,
         };
         [params addEntriesFromDictionary:dic];
         
@@ -224,12 +224,12 @@
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timestamp,
-            @"gameCode"         :[NSString stringWithFormat:@"%@",GAME_CODE],
-            @"loginId"             :userName,
-            @"password"              :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timestamp,
+            wwwww_tag_wwwww_gameCode         :[NSString stringWithFormat:@"%@",GAME_CODE],
+            wwwww_tag_wwwww_loginId             :userName,
+            wwwww_tag_wwwww_password              :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
+            wwwww_tag_wwwww_registPlatform   :LOGIN_TYPE_SELF,
             
         };
         
@@ -270,13 +270,13 @@
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     //字典未能设置nil
-    NSDictionary *dic = @{@"phone":phoneN,
-                          @"phoneAreaCode":phoneArea,
-                          @"email":email,
-                          @"interfaces":interfaces,
-                          @"gameCode":[NSString stringWithFormat:@"%@",GAME_CODE],
-                          @"timestamp":timeStamp,
-                          @"signature":md5SignStr
+    NSDictionary *dic = @{wwwww_tag_wwwww_phone:phoneN,
+                          wwwww_tag_wwwww_phoneAreaCode:phoneArea,
+                          wwwww_tag_wwwww_email:email,
+                          wwwww_tag_wwwww_interfaces:interfaces,
+                          wwwww_tag_wwwww_gameCode:[NSString stringWithFormat:@"%@",GAME_CODE],
+                          wwwww_tag_wwwww_timestamp:timeStamp,
+                          wwwww_tag_wwwww_signature:md5SignStr
     };
     
     [params addEntriesFromDictionary:dic];
@@ -313,9 +313,9 @@
 //    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     //字典未能设置nil
-    NSDictionary *dic = @{@"telephone":phoneN,
-                          @"areaCode":phoneArea,
-                          @"email":email,
+    NSDictionary *dic = @{wwwww_tag_wwwww_telephone:phoneN,
+                          wwwww_tag_wwwww_areaCode:phoneArea,
+                          wwwww_tag_wwwww_email:email,
     };
     
     [params addEntriesFromDictionary:dic];
@@ -338,9 +338,9 @@
     }
     
     //字典不能设置nil
-    NSDictionary *dic = @{@"telephone":phoneN ? : @"",
-                          @"areaCode":phoneArea ? : @"",
-                          @"vCode":vCode ? : @"",
+    NSDictionary *dic = @{wwwww_tag_wwwww_telephone:phoneN ? : @"",
+                          wwwww_tag_wwwww_areaCode:phoneArea ? : @"",
+                          wwwww_tag_wwwww_vCode:vCode ? : @"",
     };
     
     [params addEntriesFromDictionary:dic];
@@ -356,25 +356,25 @@
     NSDictionary * _commDic =
     @{
         // 公共的参数拼接
-        @"packageName"      :     [SUtil getBundleIdentifier_MMMethodMMM],
-        @"adId"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
-        @"idfa"             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
-        @"uuid"             :     [[SUtil getGamaUUID_MMMethodMMM]     lowercaseString]? : @"",
-        @"versionName"      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
-        @"versionCode"      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
-        @"systemVersion"    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
-        @"osVersion"        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
-        @"deviceType"       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
-        @"os"               :     @"ios", //os=ios
-        @"gameLanguage"     :     GAME_LANGUAGE? : @"",
-        @"osLanguage"       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_packageName      :     [SUtil getBundleIdentifier_MMMethodMMM],
+        wwwww_tag_wwwww_adId             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+        wwwww_tag_wwwww_idfa             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+        wwwww_tag_wwwww_uuid             :     [[SUtil getGamaUUID_MMMethodMMM]     lowercaseString]? : @"",
+        wwwww_tag_wwwww_versionName      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_versionCode      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_systemVersion    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_osVersion        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_deviceType       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
+        wwwww_tag_wwwww_os               :     wwwww_tag_wwwww_ios, //os=ios
+        wwwww_tag_wwwww_gameLanguage     :     GAME_LANGUAGE? : @"",
+        wwwww_tag_wwwww_osLanguage       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
         
-        //      @"loginTimestamp"   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
-        //      @"accessToken"      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
-        @"uniqueId"         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
+        //      wwwww_tag_wwwww_loginTimestamp   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
+        //      wwwww_tag_wwwww_accessToken      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
+        wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
-        @"platform"       :   @"ios",
-//        @"spy_advertiser"     :   GetConfigString(@"spy_advertiser")? :@"",
+        wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
+//        wwwww_tag_wwwww_spy_advertiser     :   GetConfigString(wwwww_tag_wwwww_spy_advertiser)? :@"",
         
     };
     
@@ -393,22 +393,22 @@
         
         NSDictionary *dic = @{
             
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId ? : @"",
-            @"loginAccessToken"  :accountModel.token ? : @"",
-            @"loginTimestamp"   :accountModel.timestamp ? : @"",
-//            @"thirdPlatId"      :accountModel.thirdId ? : @"",
-//            @"thirdLoginId"     :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_userId           :accountModel.userId ? : @"",
+            wwwww_tag_wwwww_loginAccessToken  :accountModel.token ? : @"",
+            wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp ? : @"",
+//            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+//            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
             
-//            @"registPlatform"   :accountModel.loginType ? : @"",
-//            @"loginMode"        :accountModel.loginType ? : @"",
+//            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+//            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
             
-            @"serverCode"           :gameUserModel.serverCode ? : @"",
-            @"serverName"           :gameUserModel.serverName ? : @"",
-            @"roleId"           :gameUserModel.roleID ? : @"",
-            @"roleName"           :gameUserModel.roleName ? : @"",
-            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
-            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
+            wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode ? : @"",
+            wwwww_tag_wwwww_serverName           :gameUserModel.serverName ? : @"",
+            wwwww_tag_wwwww_roleId           :gameUserModel.roleID ? : @"",
+            wwwww_tag_wwwww_roleName           :gameUserModel.roleName ? : @"",
+            wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
+            wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
 
         };
         
@@ -455,15 +455,15 @@
     
     @try {
         dic = @{
-            @"signature"        :md5SignStr,
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"loginId"          :userName,
-            @"password"         :[SUtil getMD5StrFromString_MMMethodMMM:password],
-            @"phoneAreaCode"    :phoneAreaCode,
-            @"phone"            :phoneN,
-            @"vfCode"           :vfCode,
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            wwwww_tag_wwwww_signature        :md5SignStr,
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_loginId          :userName,
+            wwwww_tag_wwwww_password         :[SUtil getMD5StrFromString_MMMethodMMM:password],
+            wwwww_tag_wwwww_phoneAreaCode    :phoneAreaCode,
+            wwwww_tag_wwwww_phone            :phoneN,
+            wwwww_tag_wwwww_vfCode           :vfCode,
+            wwwww_tag_wwwww_registPlatform   :LOGIN_TYPE_SELF,
         };
         [params addEntriesFromDictionary:dic];
     } @catch (NSException *exception) {
@@ -506,14 +506,14 @@
     NSDictionary *dic = nil;
     @try {
         dic = @{
-            @"signature"        :md5SignStr,
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"name"             :userName,
-            @"loginId"          :userName,
-            @"oldPwd"           :[[SUtil getMD5StrFromString_MMMethodMMM:oldPassword] lowercaseString],
-            @"newPwd"           :[[SUtil getMD5StrFromString_MMMethodMMM:newPassword] lowercaseString],
-            @"registPlatform"   :LOGIN_TYPE_SELF,
+            wwwww_tag_wwwww_signature        :md5SignStr,
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_name             :userName,
+            wwwww_tag_wwwww_loginId          :userName,
+            wwwww_tag_wwwww_oldPwd           :[[SUtil getMD5StrFromString_MMMethodMMM:oldPassword] lowercaseString],
+            wwwww_tag_wwwww_newPwd           :[[SUtil getMD5StrFromString_MMMethodMMM:newPassword] lowercaseString],
+            wwwww_tag_wwwww_registPlatform   :LOGIN_TYPE_SELF,
         };
         
         [params addEntriesFromDictionary:dic];
@@ -563,16 +563,16 @@
     
     @try {
         dic = @{
-            @"signature"        :md5SignStr,
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"name"             :userName,
-            @"phoneAreaCode"    :phoneAreaCode,
-            @"phone"            :phoneN,
-            @"vfCode"           :vfCode,
-            @"verifyCode"       :vfCode,
-            @"email"            :email,
-            @"interfaces"       :interfaces,
+            wwwww_tag_wwwww_signature        :md5SignStr,
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_name             :userName,
+            wwwww_tag_wwwww_phoneAreaCode    :phoneAreaCode,
+            wwwww_tag_wwwww_phone            :phoneN,
+            wwwww_tag_wwwww_vfCode           :vfCode,
+            wwwww_tag_wwwww_verifyCode       :vfCode,
+            wwwww_tag_wwwww_email            :email,
+            wwwww_tag_wwwww_interfaces       :interfaces,
         };
         
         [params addEntriesFromDictionary:dic];
@@ -598,7 +598,7 @@
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -622,22 +622,22 @@
     
     @try {
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"name"             :userName,
-            @"loginId"          :userName,
-            @"password"         :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
-            @"thirdPlatId"      :thirdId,
-            @"thirdLoginId"     :thirdId,
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_name             :userName,
+            wwwww_tag_wwwww_loginId          :userName,
+            wwwww_tag_wwwww_password         :[[SUtil getMD5StrFromString_MMMethodMMM:password] lowercaseString],
+            wwwww_tag_wwwww_thirdPlatId      :thirdId,
+            wwwww_tag_wwwww_thirdLoginId     :thirdId,
         
-            @"registPlatform"   :thirdPlate,
-            @"loginMode"        :thirdPlate,
+            wwwww_tag_wwwww_registPlatform   :thirdPlate,
+            wwwww_tag_wwwww_loginMode        :thirdPlate,
             
-            @"interfaces"       :@"2",
-            @"phoneAreaCode"    :phoneAreaCode,
-            @"phone"            :phoneN,
-            @"vfCode"           :vfCode,
+            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
+            wwwww_tag_wwwww_phoneAreaCode    :phoneAreaCode,
+            wwwww_tag_wwwww_phone            :phoneN,
+            wwwww_tag_wwwww_vfCode           :vfCode,
         };
         
         [params addEntriesFromDictionary:dic];
@@ -655,7 +655,7 @@
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -677,22 +677,22 @@
     
     @try {
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountMode.userId,
-            @"loginAccessToken"  :accountMode.token,
-            @"loginTimestamp"   :accountMode.timestamp,
-            @"thirdPlatId"      :accountMode.thirdId,
-            @"thirdLoginId"     :accountMode.thirdId,
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_userId           :accountMode.userId,
+            wwwww_tag_wwwww_loginAccessToken  :accountMode.token,
+            wwwww_tag_wwwww_loginTimestamp   :accountMode.timestamp,
+            wwwww_tag_wwwww_thirdPlatId      :accountMode.thirdId,
+            wwwww_tag_wwwww_thirdLoginId     :accountMode.thirdId,
         
-            @"registPlatform"   :accountMode.loginType,
-            @"loginMode"        :accountMode.loginType,
+            wwwww_tag_wwwww_registPlatform   :accountMode.loginType,
+            wwwww_tag_wwwww_loginMode        :accountMode.loginType,
             
-            @"interfaces"       :@"2",
-            @"phoneAreaCode"    :@"",
-            @"phone"            :@"",
-            @"vfCode"           :@"",
+            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
+            wwwww_tag_wwwww_phoneAreaCode    :@"",
+            wwwww_tag_wwwww_phone            :@"",
+            wwwww_tag_wwwww_vfCode           :@"",
         };
         
         [params addEntriesFromDictionary:dic];
@@ -715,7 +715,7 @@
                         successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
-    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -739,29 +739,29 @@
     
     @try {
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId,
-            @"loginAccessToken"  :accountModel.token ? : @"",
-            @"loginTimestamp"   :accountModel.timestamp ? : @"",
-            @"thirdPlatId"      :accountModel.thirdId ? : @"",
-            @"thirdLoginId"     :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_userId           :accountModel.userId,
+            wwwww_tag_wwwww_loginAccessToken  :accountModel.token ? : @"",
+            wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp ? : @"",
+            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
             
-            @"registPlatform"   :accountModel.loginType ? : @"",
-            @"loginMode"        :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
             
-            @"payType"          :@"apple",
-            @"mode"             :@"apple",//支付方式
-            @"productId"           :productId,
-            @"extra"           :extra ? : @"",
-            @"cpOrderId"         :cpOrderId,
-            @"serverCode"           :gameUserModel.serverCode,
-            @"serverName"           :gameUserModel.serverName ? : @"",
-            @"roleId"           :gameUserModel.roleID,
-            @"roleName"           :gameUserModel.roleName ? : @"",
-            @"roleLevel"           :gameUserModel.roleLevel ? : @"",
-            @"roleVipLevel"           :gameUserModel.roleVipLevel ? : @"",
+            wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_productId           :productId,
+            wwwww_tag_wwwww_extra           :extra ? : @"",
+            wwwww_tag_wwwww_cpOrderId         :cpOrderId,
+            wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode,
+            wwwww_tag_wwwww_serverName           :gameUserModel.serverName ? : @"",
+            wwwww_tag_wwwww_roleId           :gameUserModel.roleID,
+            wwwww_tag_wwwww_roleName           :gameUserModel.roleName ? : @"",
+            wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
+            wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
 
         };
         
@@ -785,7 +785,7 @@
                         successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
-    //@{@"vfCode": vfCode,@"phone": phoneNum,@"phoneAreaCode": areaCode}
+    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -809,21 +809,21 @@
     
     @try {
         NSDictionary *dic = @{
-            @"signature"        :[md5SignStr lowercaseString],
-            @"timestamp"        :timeStamp,
-            @"gameCode"         :GAME_CODE,
-            @"userId"           :accountModel.userId,
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_userId           :accountModel.userId,
             
-            @"orderId"           :orderId,
-            @"transactionId"      :transactionId,
-            @"receiptData"        :receiptData,
+            wwwww_tag_wwwww_orderId           :orderId,
+            wwwww_tag_wwwww_transactionId      :transactionId,
+            wwwww_tag_wwwww_receiptData        :receiptData,
             
-            @"loginAccessToken"  :accountModel.token,
-            @"loginTimestamp"   :accountModel.timestamp,
+            wwwww_tag_wwwww_loginAccessToken  :accountModel.token,
+            wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp,
             
-            @"payType"          :@"apple",
-            @"mode"             :@"apple",//支付方式
-            @"reissue"             :reissue,//是否是补发调用
+            wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_reissue             :reissue,//是否是补发调用
 
         };
         

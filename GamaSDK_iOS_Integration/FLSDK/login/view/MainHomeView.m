@@ -79,7 +79,7 @@
     guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F94925"];
+    guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
     
     [contentView addSubview:guestLoginBtn];
     
@@ -110,7 +110,7 @@
         make.width.height.mas_equalTo(VW(30));
     }];
     
-    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"遊客登入" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    UIButton *guestTextBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_archae_effortfold fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtnContent addSubview:guestTextBtn];
     [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
@@ -166,7 +166,7 @@
 //        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
     }];
     
-    UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:@"登入" fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#EB2E2B"]];
+    UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_EB2E2B]];
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.bottom.top.mas_equalTo(hasAccountContent);
@@ -174,7 +174,7 @@
     }];
     
     
-    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:@"其他登入" fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_mostery_tricesimreachory fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
     [contentView addSubview:otherLoginLabel];
     [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
@@ -182,7 +182,7 @@
     }];
     
     UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -195,7 +195,7 @@
     }];
     
     UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     [contentView addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -308,8 +308,8 @@
        
     }];
     
-        NSString *xtext = GetString(@"gama_ui_term_port_read2");
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+        NSString *xtext = GetString(wwwww_tag_wwwww_gama_ui_term_port_read2);
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -330,7 +330,7 @@
         }];
         rememberTermsLable.userInteractionEnabled=YES;
         [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-            SDK_LOG(@"rememberTermsLableTapped");
+            SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
             if (self.delegate) {
                 [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME) param_MMMethodMMM:0];
             }
@@ -347,7 +347,7 @@
        
         case kAgreeTermsCheckBoxBtnTag:
             
-            SDK_LOG(@"kAgreeTermsCheckBoxBtnTag");
+            SDK_LOG(wwwww_tag_wwwww_kAgreeTermsCheckBoxBtnTag);
             if (checkBoxTermsBtn.selected) {
                 checkBoxTermsBtn.selected = NO;
             }else{
@@ -356,7 +356,7 @@
             break;
             
         case appleLoginActTag:
-            SDK_LOG(@"appleLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_appleLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -365,7 +365,7 @@
             
         case guestLoginActTag:
             {
-            SDK_LOG(@"guestLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_guestLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -375,7 +375,7 @@
             break;
             
         case fbLoginActTag:
-            SDK_LOG(@"fbLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_fbLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -383,14 +383,14 @@
             
             break;
         case googleLoginActTag:
-            SDK_LOG(@"googleLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_googleLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
             [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
             break;
         case lineLoginActTag:
-            SDK_LOG(@"lineLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_lineLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -408,7 +408,7 @@
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
+    [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
 //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
     return NO;
 }

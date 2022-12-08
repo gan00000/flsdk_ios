@@ -69,7 +69,7 @@
 }
 
 - (void)showTermsViewForAccountLoginView_MMMethodMMM {
-    SDK_LOG(@"rememberTermsLableTapped");
+    SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
     //            if (self.delegate) {
     //                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param_MMMethodMMM:0];
     //            }
@@ -105,7 +105,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_account");
+        accountSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -119,7 +119,7 @@
         
         //密码
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(@"text_input_pwd");
+        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
         [self addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -134,7 +134,7 @@
         
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"py_findpwd") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_py_findpwd) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -162,8 +162,8 @@
             
         }];
         
-        NSString *xtext = GetString(@"sdk_terms_title");
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+        NSString *xtext = GetString(wwwww_tag_wwwww_sdk_terms_title);
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         //            rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -194,7 +194,7 @@
         //账号登入
         //        accountLoginBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_ACCOUNT_LOGIN) tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
         
-        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"text_login".localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [accountLoginBtn.layer setCornerRadius:VH(20)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
@@ -229,9 +229,9 @@
        
         UILabel *otherLabelTips = [[UILabel alloc] init];
         otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = @"text_login_other".localx;
+        otherLabelTips.text = wwwww_tag_wwwww_text_login_other.localx;
         otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
         
         [loginTypeView addSubview:otherLabelTips];
         [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -453,21 +453,21 @@
     switch (sender.tag) {
             
         case kFindPwdActTag:
-            SDK_LOG(@"kFindPwdActTag");
+            SDK_LOG(wwwww_tag_wwwww_kFindPwdActTag);
             if (self.delegate) {
                 [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_FIND_PWD];
             }
             break;
             
         case kBackBtnActTag:
-            SDK_LOG(@"kBackBtnActTag");
+            SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
             if (self.delegate) {
                 [self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
         case kAccountLoginActTag:
-            SDK_LOG(@"kAccountLoginActTag");
+            SDK_LOG(wwwww_tag_wwwww_kAccountLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
@@ -528,11 +528,11 @@
         }
             break;
         case kSureDeleteAccountActTag:
-            SDK_LOG(@"kSureDeleteAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kSureDeleteAccountActTag);
             [self doDeleteAccount_MMMethodMMM];
             break;
         case kCancelDeleteAccountActTag:
-            SDK_LOG(@"kCancelDeleteAccountActTag");
+            SDK_LOG(wwwww_tag_wwwww_kCancelDeleteAccountActTag);
             [deleteAccountConfireView removeFromSuperview];
             
             break;
@@ -548,7 +548,7 @@
     if (checkBoxTermsBtn.selected) {
         return YES;
     }
-    [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_term_not_read")];
+    [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
     //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
     [self showTermsViewForAccountLoginView_MMMethodMMM];
     return NO;
@@ -593,17 +593,17 @@
     
     
     if (!accountName || [accountName isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_account_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_account_empty)];
         return;
     }
     
     if (![SdkUtil validUserName_MMMethodMMM:accountName]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_format")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
         return;
     }
     
     if (!pwd || [pwd isEqualToString:@""]) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return;
     }
     [LoginHelper selfLoginAndRequest_MMMethodMMM:self.delegate account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
@@ -617,7 +617,7 @@
     
     NSString *account = mAccountModel.userId;
     NSString *iconName = mw_smail_icon;
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(wwwww_tag_wwwww_text_free_register);
     
     BOOL pwdEnable = YES;
     
@@ -685,7 +685,7 @@
     }
     
     UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.85];
+    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.85];
     deleteView.layer.cornerRadius = VW(10);
     
     [self addSubview:deleteView];
@@ -703,7 +703,7 @@
         make.height.width.mas_equalTo(VW(25));
     }];
     
-    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account_tips") fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
+    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account_tips) fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
     [deleteView addSubview:deleteWarmLabel];
     deleteWarmLabel.numberOfLines = 0;
     [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -712,8 +712,8 @@
         make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
     }];
     
-    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_cancel") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_cancel) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelBtn.layer.borderWidth = 1;
@@ -727,8 +727,8 @@
         make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
     }];
     
-    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"].CGColor;
+    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
 //    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 //    sureBtn.layer.borderWidth = 1;
@@ -772,7 +772,7 @@
         make.width.height.mas_equalTo(VW(15));
     }];
     
-    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_delete_account") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
@@ -793,7 +793,7 @@
 - (void)doDeleteAccount_MMMethodMMM {
     
     if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
-        [SdkUtil toastMsg_MMMethodMMM:@"text_select_account".localx];
+        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
         return;
     }
     [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{

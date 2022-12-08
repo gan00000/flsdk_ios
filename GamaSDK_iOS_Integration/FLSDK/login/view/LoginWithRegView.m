@@ -46,7 +46,7 @@
     
     UIView *tabView = [[UIView alloc] init];
 //    tabView.layer.cornerRadius = 4; //设置圆角
-//    tabView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"ff3a3b"].CGColor;
+//    tabView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww_ff3a3b].CGColor;
 //    tabView.layer.borderWidth = 0.8;
 //    tabView.layer.masksToBounds = YES;
     
@@ -63,7 +63,7 @@
     
     
     
-    loginTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"登入" fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#848484"] tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    loginTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -74,7 +74,7 @@
     }];
     
     
-    regTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"註冊" fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#848484"] tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    regTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_heurice_lithtoo fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];
@@ -87,7 +87,7 @@
     }];
     
     loginBottomLine = [[UIView alloc] init];
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"];
+    loginBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
     [tabView addSubview:loginBottomLine];
     [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -99,7 +99,7 @@
     }];
     
     regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#F23B12"];
+    regBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
     regBottomLine.hidden = YES;
     [tabView addSubview:regBottomLine];
     [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -125,7 +125,7 @@
     }];
     
     
-//    loginTabBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"ff3a3b"];
+//    loginTabBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww_ff3a3b];
 //    regTabBtn.backgroundColor = [UIColor whiteColor];
     
     currentClickTab = 1;
@@ -164,7 +164,7 @@
     switch (sender.tag) {
        
         case kLoginTabActTag:
-            SDK_LOG(@"kLoginTabActTag");
+            SDK_LOG(wwwww_tag_wwwww_kLoginTabActTag);
             if (currentClickTab == 1) {
                 return;
             }
@@ -179,7 +179,7 @@
         case kRegTabActTag:
             
             
-            SDK_LOG(@"kRegTabActTag");
+            SDK_LOG(wwwww_tag_wwwww_kRegTabActTag);
             if (currentClickTab == 2) {
                 return;
             }
@@ -230,7 +230,7 @@
         regBottomLine.hidden = YES;
         
 //        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-//        [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#848484"] forState:(UIControlStateNormal)];
+//        [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] forState:(UIControlStateNormal)];
         
     }else{
     
@@ -245,7 +245,7 @@
         regBottomLine.hidden = NO;
         
 //        [regTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-//        [loginTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#848484"] forState:(UIControlStateNormal)];
+//        [loginTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] forState:(UIControlStateNormal)];
     }
 }
 @end

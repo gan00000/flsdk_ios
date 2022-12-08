@@ -88,7 +88,7 @@
         NSString *user = appleIDCredential.user;
         NSString *token = [[NSString alloc] initWithData:appleIDCredential.identityToken encoding:NSUTF8StringEncoding];
         //  需要使用钥匙串的方式保存用户的唯一信息 这里暂且处于测试阶段 是否的NSUserDefaults
-        [[NSUserDefaults standardUserDefaults] setValue:user forKey:@"GamaAppleCurrentIdentifier"];//QiShareCurrentIdentifier
+        [[NSUserDefaults standardUserDefaults] setValue:user forKey:wwwww_tag_wwwww_GamaAppleCurrentIdentifier];//QiShareCurrentIdentifier
         [mStr appendString:user?:@""];
         NSString *familyName = appleIDCredential.fullName.familyName;
         [mStr appendString:familyName?:@""];
@@ -99,8 +99,8 @@
         NSLog(@"mStr：%@", mStr);
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""}];
-            self.impSuccess(@{@"appleThirdID":user?:@"",@"appleToken":token?:@"",@"authorizationCode":authorCodeStr?:@""});
+            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""}];
+            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""});
         });
     } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
         // 用户登录使用现有的密码凭证
@@ -114,13 +114,13 @@
         [mStr appendString:@"\n"];
         NSLog(@"mStr：%@", mStr);
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""}];
-            self.impSuccess(@{@"appleThirdID":user?:@"",@"appleVerfication":password?:@""});
+            [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""}];
+            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
         });
 
     } else {
-        NSLog(@"授权信息均不符");
-        mStr = [@"授權信息均不符" mutableCopy];
+        NSLog(wwwww_tag_wwwww_macrsmallenne_radi);
+        mStr = [wwwww_tag_wwwww_follow_hibatic mutableCopy];
         NSError *error = nil;
         dispatch_async(dispatch_get_main_queue(), ^{
             self.impError(error);
@@ -139,19 +139,19 @@
     self.impError(error);
     switch (error.code) {
         case ASAuthorizationErrorCanceled:
-//            errorMsg = GetString(@"GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT");
+//            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT);
             break;
         case ASAuthorizationErrorFailed:
-//            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT");
+//            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_AUTHRIZATION_REQUEST_FAILED_TEXT);
             break;
         case ASAuthorizationErrorInvalidResponse:
-//            errorMsg = GetString(@"GAMA_APPLE_AUTHRIZATION_INVALID");
+//            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_AUTHRIZATION_INVALID);
             break;
         case ASAuthorizationErrorNotHandled:
-//            errorMsg = GetString(@"GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED");
+//            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_PROCESS_AUTHOROZATION_FAILED);
             break;
         case ASAuthorizationErrorUnknown:
-//            errorMsg = GetString(@"GAMA_APPLE_RETURN_UNKNOWN_REASON");
+//            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_RETURN_UNKNOWN_REASON);
             break;
     }
 
@@ -267,7 +267,7 @@
         // 基于用户的Apple ID 生成授权用户请求的机制
         ASAuthorizationAppleIDProvider *appleIDProvider = [ASAuthorizationAppleIDProvider new];
         // 注意 存储用户标识信息需要使用钥匙串来存储 这里笔者简单期间 使用NSUserDefaults 做的简单示例
-        NSString *userIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:@"GamaCurrentIdentifier"];
+        NSString *userIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:wwwww_tag_wwwww_GamaCurrentIdentifier];
 
         if (userIdentifier) {
             NSString* __block errorMsg = nil;
@@ -278,20 +278,20 @@
                         // 苹果证书的授权状态
                     case ASAuthorizationAppleIDProviderCredentialRevoked:
                         // 苹果授权凭证失效
-                        errorMsg = @"苹果授权凭证失效";
+                        errorMsg = wwwww_tag_wwwww_ceptsive_primath;
                         break;
                     case ASAuthorizationAppleIDProviderCredentialAuthorized:
                         // 苹果授权凭证状态良好
-                        errorMsg = @"苹果授权凭证状态良好";
+                        errorMsg = wwwww_tag_wwwww_them_wife;
                         break;
                     case ASAuthorizationAppleIDProviderCredentialNotFound:
                         // 未发现苹果授权凭证
-                        errorMsg = @"未发现苹果授权凭证";
+                        errorMsg = wwwww_tag_wwwww_hoplify_interary;
                         // 可以引导用户重新登录
                         break;
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"SignInWithApple授权状态变化情况");
+                    NSLog(wwwww_tag_wwwww_successfulen_perical);
                     NSLog(@"%@", errorMsg);
                 });
             }];
@@ -315,10 +315,10 @@
 - (void)autoLoginAppleAccountWithInformation_MMMethodMMM{
     NSDictionary *tempDic = [self fetchAppleLoginInfo_MMMethodMMM];
     NSMutableDictionary *tempMutableDic = [NSMutableDictionary dictionaryWithDictionary:tempDic];
-    NSString *appleID = [tempMutableDic[@"appleThirdID"] copy];
-    [tempMutableDic removeObjectForKey:@"appleThirdID"];
+    NSString *appleID = [tempMutableDic[wwwww_tag_wwwww_appleThirdID] copy];
+    [tempMutableDic removeObjectForKey:wwwww_tag_wwwww_appleThirdID];
 //    [GamaThirdFunctionPort thirdLoginWithThirdId:appleID
-//                                  andThirdPlate_MMMethodMMM:@"apple"
+//                                  andThirdPlate_MMMethodMMM:wwwww_tag_wwwww_apple
 //                                        andApps:@""
 //                               andBusinessToken:nil
 //                         andThirdAdditionParams:tempMutableDic
@@ -329,13 +329,13 @@
 }
 
 - (void)saveAppleLastLoginSuccessWithInformation_MMMethodMMM:(NSDictionary*)info{
-    [[NSUserDefaults standardUserDefaults] setObject:info forKey:@"GameswordAppleTmp"];
+    [[NSUserDefaults standardUserDefaults] setObject:info forKey:wwwww_tag_wwwww_GameswordAppleTmp];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (NSDictionary *)fetchAppleLoginInfo_MMMethodMMM
 {
-    NSDictionary *infoDic = [[NSUserDefaults standardUserDefaults] objectForKey:@"GameswordAppleTmp"];
+    NSDictionary *infoDic = [[NSUserDefaults standardUserDefaults] objectForKey:wwwww_tag_wwwww_GameswordAppleTmp];
     return infoDic;
 }
 @end

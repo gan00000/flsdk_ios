@@ -42,7 +42,7 @@
     self = [super init];
     if (self) {
         
-        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#000000" andAlpha_MMMethodMMM:0.15];
+        self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
         UIView *contentView = [[UIView alloc] init];
         
@@ -82,7 +82,7 @@
         }];
         
         
-        UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"text_update_account".localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#2A2A2A"]];
+        UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_update_account.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_2A2A2A]];
         titleLabel.font = [UIFont boldSystemFontOfSize:FS(15)];
         
         [titleView addSubview:titleLabel];
@@ -111,7 +111,7 @@
             
             thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
             thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             thirdAccountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
@@ -129,7 +129,7 @@
             [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
             
             hasBind_accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
             hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             hasBind_accountSDKTextFiledView.moreAccountBtn.hidden = YES;
             hasBind_accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
@@ -153,7 +153,7 @@
             
             accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            accountSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
             accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             [contentView addSubview:accountSDKTextFiledView];
@@ -172,7 +172,7 @@
             //密码
             pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
             pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
-            pwdSDKTextFiledView.layer.borderColor = ColorHex(@"#606060").CGColor;
+            pwdSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
             pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
             [contentView addSubview:pwdSDKTextFiledView];
             
@@ -185,7 +185,7 @@
                 
             }];
             
-            UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(@"text_bind_account_tips") fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"]];
+            UILabel *bindTipLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_bind_account_tips) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
             bindTipLabel.numberOfLines = 0;
             [contentView addSubview:bindTipLabel];
             
@@ -198,12 +198,12 @@
             
         }
         
-//        NSString *btnString = GetString(@"text_confire_update");
+//        NSString *btnString = GetString(wwwww_tag_wwwww_text_confire_update);
 //        if (currentAccount.isBind) {
-//            btnString = GetString(@"text_confire");
+//            btnString = GetString(wwwww_tag_wwwww_text_confire);
 //        }
         //確認
-        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(@"text_confire") fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(20)];
@@ -245,7 +245,7 @@
             
         case kOkActTag:
         {
-            SDK_LOG(@"kOkActTag");
+            SDK_LOG(wwwww_tag_wwwww_kOkActTag);
             if (accountSDKTextFiledView) {
                 [self bindAccount_MMMethodMMM];
             }else{
@@ -275,7 +275,7 @@
   
     
 //    if ([StringUtil isEmpty_MMMethodMMM:]) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"py_password_empty")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
 //        return;
 //    }
  
@@ -290,14 +290,14 @@
     
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
     if (!currentAccountModel) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_select_account")];
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
         return;
     }
   
     
     [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        [SdkUtil toastMsg_MMMethodMMM:GetString(@"text_account_bind_success2")];
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success2)];
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -342,10 +342,10 @@
     
     //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
     
-    NSString *account = @"text_has_bind_tips_mw".localx;
-    NSString *account_tips = @"text_has_bind_tips_mw".localx;
+    NSString *account = wwwww_tag_wwwww_text_has_bind_tips_mw.localx;
+    NSString *account_tips = wwwww_tag_wwwww_text_has_bind_tips_mw.localx;
     NSString *iconName = mw_smail_icon2;
-    NSString *pwdText = GetString(@"text_free_register");
+    NSString *pwdText = GetString(wwwww_tag_wwwww_text_free_register);
     
     BOOL pwdEnable = YES;
     
@@ -355,32 +355,32 @@
         iconName = mw_smail_icon2;
         pwdText = mAccountModel.password;
         pwdEnable = YES;
-        account_tips = @"text_has_bind_tips_mw".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_mw.localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]){
         iconName = fb_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_fb".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_fb.localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]){
         iconName = google_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_google".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_google.localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]){
         iconName = guest_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_guest".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_guest.localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]){
         iconName = apple_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_apple".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_apple.localx;
         
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = line_smail_icon;
         pwdEnable = NO;
-        account_tips = @"text_has_bind_tips_line".localx;
+        account_tips = wwwww_tag_wwwww_text_has_bind_tips_line.localx;
     }
     
 //    accountFiledView.inputUITextField.text = account;

@@ -32,8 +32,8 @@
         instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
-//            [session.requestSerializer setValue:@"89bc52ca5b" forHTTPHeaderField:@"X-User-AppId"];
-//            [session.requestSerializer setValue:@"1" forHTTPHeaderField:@"X-User-Platform"];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
 //            [session.requestSerializer setValue:[NSString stringWithFormat:@"%@|%@|%@", [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:@"X-User-Device"]; //机器名称 | 系统版本 | idfa
 //            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:@"X-App-Version"];
         }];
@@ -80,7 +80,7 @@
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(@"py_error_occur"); //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); //TODO:获取NSError里面的描述信息
             errorBlock(errorObject);
         }
     }];

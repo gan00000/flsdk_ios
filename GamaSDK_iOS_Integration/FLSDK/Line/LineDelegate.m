@@ -61,7 +61,7 @@
     self.failCallBack = failCallBack;
     
     [LineSDKLogin sharedInstance].delegate = self;
-    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[@"profile"]];
+    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
     
 //    NSSet *permissions = [NSSet setWithObjects:
 //                              [LineSDKLoginPermission profile],

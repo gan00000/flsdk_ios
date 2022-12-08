@@ -98,7 +98,7 @@
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SDK_LOG_FILE_FUNCTION(@"didFinishLaunchingWithOptions");
+    SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
     [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
     
@@ -195,8 +195,8 @@
     SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
     NSLog(@"FCM registration token: %@", fcmToken);
     // Notify about received token.
-//    NSDictionary *dataDict = [NSDictionary dictionaryWithObject:fcmToken forKey:@"token"];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"FCMToken" object:nil userInfo:dataDict];
+//    NSDictionary *dataDict = [NSDictionary dictionaryWithObject:fcmToken forKey:wwwww_tag_wwwww_token];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:wwwww_tag_wwwww_FCMToken object:nil userInfo:dataDict];
     // TODO: If necessary send token to application server.
     // Note: This callback is fired at each app startup and whenever a new token is generated.
 }
@@ -225,9 +225,9 @@
 // Handle notification messages after display notification is tapped by the user.
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{    //system_method
     
-    SDK_LOG(@"didReceiveNotificationResponse");
+    SDK_LOG(wwwww_tag_wwwww_didReceiveNotificationResponse);
     NSDictionary *userInfo = response.notification.request.content.userInfo;
-    NSString *kGCMMessageIDKey = @"gcm.message_id";
+    NSString *kGCMMessageIDKey = wwwww_tag_wwwww_gcm_message_id;
     
       if (userInfo[kGCMMessageIDKey]) {
         NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
