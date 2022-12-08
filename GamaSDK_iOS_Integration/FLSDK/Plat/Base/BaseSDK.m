@@ -4,15 +4,15 @@
 #import "BaseSDK.h"
 #import "MWSDK.h"
 #import "ResHeader.h"
-#import "SUtil.h"
-#import "AdLogger.h"
+#import "CHMXTTBlock.h"
+#import "CHMXTTEnginePple.h"
 #import "SdkHeader.h"
-#import "SDKRequest.h"
+#import "CHMXTTChangeTimer.h"
 
-#import "FBDelegate.h"
-#import "FirebaseDelegate.h"
-#import "LineDelegate.h"
-#import "AdDelegate.h"
+#import "CHMXTTResp.h"
+#import "CHMXTTWith.h"
+#import "CHMXTTScriptSelect.h"
+#import "CHMXTTColor.h"
 
 #import <UserNotifications/UserNotifications.h>
 #import <StoreKit/StoreKit.h>
@@ -100,31 +100,31 @@
 {
     SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
-    [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+    [CHMXTTEnginePple logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
     
     // 广告初始化
     
-    [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    [CHMXTTColor application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+    [CHMXTTChangeTimer getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
         
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
         
     }];
     
-    [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+    [CHMXTTChangeTimer getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
 
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
 
     }];
     
     //Facebook事件打点初始化
 //    [[GamaTimer shareInstance] gama_FBEventStartTimer];
     
-    [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
-    [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    [CHMXTTResp application:application didFinishLaunchingWithOptions:launchOptions];
+    [CHMXTTWith application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+    [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
     
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
@@ -164,15 +164,15 @@
         --[UIApplication sharedApplication].applicationIconBadgeNumber;
     }
     
-    [AdDelegate applicationDidBecomeActive_MMMethodMMM:application];
+    [CHMXTTColor applicationDidBecomeActive_MMMethodMMM:application];
     
-    [FBDelegate applicationDidBecomeActive_MMMethodMMM:application];
+    [CHMXTTResp applicationDidBecomeActive_MMMethodMMM:application];
     
 }
 
 - (void)sdk_applicationWillTerminate_MMMethodMMM:(UIApplication *)application
 {
-    [FBDelegate applicationWillTerminate_MMMethodMMM:application];
+    [CHMXTTResp applicationWillTerminate_MMMethodMMM:application];
 }
 
 - (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application

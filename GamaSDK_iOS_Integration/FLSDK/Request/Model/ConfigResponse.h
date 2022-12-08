@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "CHMXTTCreateTouch.h"
 #import "ConfigModel.h"
 #import "UrlMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ConfigResponse : BJBaseResponceModel
+@interface ConfigResponse : CHMXTTCreateTouch
 
 @property (nonatomic, strong) ConfigModel *allVersion;
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;

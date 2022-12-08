@@ -1,17 +1,10 @@
-//
-//  CComHeader.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/16.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #ifndef CComHeader_h
 #define CComHeader_h
 
-#ifdef DEBUG // 开发
+#ifdef DEBUG 
 #define SDK_LOG_FILE_FUNCTION(format, ...) NSLog((@"\n[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d]\n" @"[输出:" format@"]"@"\n\n"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else // 发布
+#else 
 #define SDK_LOG_FILE_FUNCTION(format, ...) (NSLog)((@"MW_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 #endif
 
@@ -38,4 +31,4 @@ typedef void (^CCallBack)(NSString* msg, NSInteger m, NSDictionary *dic);
 typedef void (^ItemViewClickHander)(NSInteger);
 
 
-#endif /* CComHeader_h */
+#endif  

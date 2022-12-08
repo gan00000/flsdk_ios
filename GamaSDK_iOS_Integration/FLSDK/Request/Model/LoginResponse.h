@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "CHMXTTCreateTouch.h"
 #import "AccountModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : CHMXTTCreateTouch
 
 //@property (nonatomic, assign) NSInteger code;
 //@property (nonatomic, copy) NSString *beLinked;
