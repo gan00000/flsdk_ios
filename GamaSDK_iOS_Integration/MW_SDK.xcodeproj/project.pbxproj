@@ -638,6 +638,7 @@
 		0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */; };
 		0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387B9D4291B8BBB001BACA8 /* AccountLoginViewV2.m */; };
 		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
+		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
 		03B5F46B2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */; };
 		03B5F46E2903ECEA00D1F03E /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */; };
@@ -1125,7 +1126,7 @@
 		0387BA80291B8DA5001BACA8 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
-		039DBCB529419C00007EAD2F /* StringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringHeaders.h; sourceTree = "<group>"; };
+		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
 		03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_mplay_wlzhs.plist; sourceTree = "<group>"; };
@@ -2022,7 +2023,7 @@
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
-				039DBCB529419C00007EAD2F /* StringHeaders.h */,
+				039DBCB529419C00007EAD2F /* MWStringHeaders.h */,
 				0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */,
 				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,
 				03D5F35E28D3187F00C3855E /* preHeader.pch */,
@@ -2526,6 +2527,7 @@
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
 				038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */,
+				039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */,
 				038612DF29388F8900CC9C44 /* MyTextFiled.h in Headers */,
 				0386138D2938906000CC9C44 /* TermsViewV2.h in Headers */,
 				038613932938906000CC9C44 /* NoticeViewV2.h in Headers */,

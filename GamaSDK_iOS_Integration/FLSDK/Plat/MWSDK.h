@@ -3,6 +3,7 @@
 #import <UserNotifications/UserNotifications.h>
 #import "LoginData.h"
 #import "PayData.h"
+#import "MWStringHeaders.h"
 
 #define FL_SDK_VERSION      @"1.0.8"
 
