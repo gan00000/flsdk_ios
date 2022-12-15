@@ -1203,6 +1203,7 @@
 		03D97DDA286EE281008D0B3A /* BaseSDKImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSDKImpl.m; sourceTree = "<group>"; };
 		03D97DDE286EE3A3008D0B3A /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
 		03D97DDF286EE3A3008D0B3A /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
+		03DD67E3294AD95000C1D307 /* SDK_DEMO_V3 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK_DEMO_V3 copy-Info.plist"; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* CHMXTTScriptSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMXTTScriptSelect.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* CHMXTTScriptSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHMXTTScriptSelect.m; sourceTree = "<group>"; };
 		03E0767F2862C07700B81B65 /* CHMXTTWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMXTTWith.h; sourceTree = "<group>"; };
@@ -1212,7 +1213,6 @@
 		03EA36092850989900723340 /* CHMXTTPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMXTTPasswordView.m; sourceTree = "<group>"; };
 		03EA360A2850989900723340 /* CHMXTTPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMXTTPasswordView.h; sourceTree = "<group>"; };
 		03F543132940BC5D00F75F51 /* SDK_DEMO_V4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V4.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03F543142940BC5F00F75F51 /* SDK_DEMO_V3 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V3 copy-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V3 copy-Info.plist"; sourceTree = "<absolute>"; };
 		03F59A49285776730062B6EE /* CHMXTTGamaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMXTTGamaCore.h; sourceTree = "<group>"; };
 		03F59A4A285776730062B6EE /* CHMXTTGamaCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMXTTGamaCore.m; sourceTree = "<group>"; };
 		03FA12D22853565200BBBEB4 /* CHMXTTWithView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMXTTWithView.h; sourceTree = "<group>"; };
@@ -2387,7 +2387,7 @@
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
 				038614072938981200CC9C44 /* SDK_TEST copy-Info.plist */,
-				03F543142940BC5F00F75F51 /* SDK_DEMO_V3 copy-Info.plist */,
+				03DD67E3294AD95000C1D307 /* SDK_DEMO_V3 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 0;
