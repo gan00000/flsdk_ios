@@ -42,7 +42,11 @@
 
 	```
 	<key>CFBundleDevelopmentRegion</key>
-	<string>zh_TW</string>
+	<string>zh_TW</string>   繁体设置为zh_TW，英文版设置为en_US
+	<key>CFBundleDisplayName</key>
+	<string>此值为游戏名字</string>
+	<key>CFBundleName</key>
+	<string>此值请设置为游戏名字</string> 第三方(fb)授权会显示用到
 	
 	添加UrlType
 	<key>CFBundleURLTypes</key>
