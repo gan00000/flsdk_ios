@@ -424,6 +424,11 @@ double puny = [self getsdkAllowSuccessFieldSisteraryValues];
     
     [editingView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
+        if (!currentAccountModel || [CHMXTTImplGama isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+            [CHMXTTRegister toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_account_not_login.localx];
+            return;
+        }
+        
         [self addDeleteAccountConfireView_MMMethodMMM];
        
     }];
@@ -767,7 +772,7 @@ UILabel * gormandizeInfer = [self safeSinceJunkKitLabel];
                 accountMaskView.hidden = YES;
                 
                 if (deleteBtnView) {
-                    deleteBtnView.hidden = YES;
+//                    deleteBtnView.hidden = YES;
                 }
             }
             
@@ -1518,7 +1523,7 @@ NSArray * gamble = [self nowCharactersLocalized];
             
             
         }
-
+        
         if (http.deleteAccount) {
             [self addDeleteAccountView_MMMethodMMM];
         }
@@ -1536,7 +1541,7 @@ NSArray * gamble = [self nowCharactersLocalized];
             [CHMXTTResponceBind makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
         }else{
             if (deleteBtnView) {
-                deleteBtnView.hidden = YES;
+//                deleteBtnView.hidden = YES;
             }
         }
         
