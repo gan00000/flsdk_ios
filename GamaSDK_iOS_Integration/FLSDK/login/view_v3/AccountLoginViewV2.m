@@ -312,7 +312,7 @@
             [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
         }else{
             if (deleteBtnView) {
-                deleteBtnView.hidden = YES;
+//                deleteBtnView.hidden = YES;
             }
         }
         
@@ -432,7 +432,7 @@
                 accountMaskView.hidden = YES;
                 
                 if (deleteBtnView) {
-                    deleteBtnView.hidden = YES;
+//                    deleteBtnView.hidden = YES;
                 }
             }
             
@@ -783,6 +783,10 @@
     
     [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
+        if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
+            return;
+        }
         [self addDeleteAccountConfireView_MMMethodMMM];
        
     }];
