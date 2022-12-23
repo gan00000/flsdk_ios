@@ -202,7 +202,7 @@
         
         NSArray *product = response.products;
         if([product count] == 0){
-            [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"無法獲取商品信息，請重新嘗試購買")];
+            [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"Unable to fetch product, please try again")];//無法獲取商品信息，請重新嘗試購買
             return;
         }
         

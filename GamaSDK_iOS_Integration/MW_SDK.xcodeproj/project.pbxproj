@@ -1081,7 +1081,6 @@
 		03764809286178D600CAD034 /* GIDDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIDDelegate.h; sourceTree = "<group>"; };
 		0376480A286178D600CAD034 /* GIDDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIDDelegate.m; sourceTree = "<group>"; };
 		037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		037C6EEB2875A97C0041EC34 /* MWSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDKTests.m; sourceTree = "<group>"; };
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0386137429388F8900CC9C44 /* MWSDK_V3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		038613762938906000CC9C44 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
@@ -1892,14 +1891,6 @@
 			path = GG;
 			sourceTree = "<group>";
 		};
-		037C6EEA2875A97C0041EC34 /* MWSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				037C6EEB2875A97C0041EC34 /* MWSDKTests.m */,
-			);
-			path = MWSDKTests;
-			sourceTree = "<group>";
-		};
 		038613752938906000CC9C44 /* view_v3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2381,7 +2372,6 @@
 				E97411C320874A170018E1A6 /* Demo */,
 				322CBB9C24C589A5000D6B20 /* FLSDK */,
 				CEE6B9621A1499CB009E77FF /* Framework */,
-				037C6EEA2875A97C0041EC34 /* MWSDKTests */,
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
