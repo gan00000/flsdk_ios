@@ -1,13 +1,10 @@
-//
-//  ResHeader.h
-//
-#import "SUtil.h"
-#import "AlertUtil.h"
-#import "ResReader.h"
-#import "NSString+URLEncoding.h"
+#import "MCoolFishResponse.h"
+#import "MCoolFishUserEdit.h"
+#import "MCoolFishConfigHour.h"
+#import "MCoolFishTouchPopup.h"
 
-/*获取对应配置中，key对用的关键值。*/
-#define SDKRES    [ResReader reader_MMMethodMMM]
+ 
+#define SDKRES    [MCoolFishConfigHour reader_MMMethodMMM]
 #define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
 #define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
 #define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]

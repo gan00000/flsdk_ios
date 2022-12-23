@@ -1,62 +1,48 @@
-//
-//  CCSkyHourHeader.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
-#import "CComHeader.h" //最基本
+#import "CComHeader.h" 
 
-#import "USDefault.h"
-#import "UIImage+ResBundle.h"
-#import "UIColor+HexStringToColorTW.h"
-#import "UIUtil.h"
-#import "CCSDKDATA.h"
-#import "ConfigCoreUtil.h"
+#import "MCoolFishBlockLocal.h"
+#import "MCoolFishButtonList.h"
+#import "MCoolFishWithWith.h"
+#import "MCoolFishConfig.h"
+#import "MCoolFishEncodingPhone.h"
+#import "MCoolFishPple.h"
 #import "LoginResponse.h"
 
-#import "SUtil.h"  //功能相关
-#import "ResHeader.h" //功能相关
-#import "AdLogger.h"
-#import "StringUtil.h"
-#import "DimeUtil.h"
-#import "SdkUtil.h"
-#import "NSString+Local.h"
+#import "MCoolFishResponse.h"  
+#import "ResHeader.h" 
+#import "MCoolFishCore.h"
+#import "MCoolFishSecurityHome.h"
+#import "MCoolFishTitle.h"
+#import "MCoolFishEventFile.h"
+#import "MCoolFishPrivateButton.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
 
 #define ENABLE_REQUEST_LOG 1
 
-// cornerRadius
 #define kR2BtnCornerRadius                 8.0f
 #define kBgAlpha                         0.9f
 
 
-//#define kInputTextFiledHeight                     [UIUtil getItemHeight]//48.0
-//#define kInputTextFiledMarginLeftRight                 [UIUtil getItemWidthMargin]
-//#define kInputTextFiledTopMargin                       kInputTextFiledHeight / 7
-//#define kPageTitleHeight                        MIN(kInputTextFiledHeight * 1.6, 40)
-//#define kPageOkButtonHeight                        kInputTextFiledHeight * 1.6
 
 #define ContentViewBgColor                    wwwww_tag_wwwww__CC_f4f4f5
 #define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
 
-#define SDK_DATA                           [CCSDKDATA sharedSdkData_MMMethodMMM]
+#define SDK_DATA                           [MCoolFishEncodingPhone sharedSdkData_MMMethodMMM]
 
 #define GetImage(imageName)     [UIImage res_imageNamed_MMMethodMMM:imageName]
 
-#define appTopViewController    [SUtil getCurrentViewController_MMMethodMMM]
+#define appTopViewController    [MCoolFishResponse getCurrentViewController_MMMethodMMM]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-// ------ 是否是 iPhoneX
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries_MMMethodMMM]
+#define device_is_iPhoneX   [MCoolFishResponse isIPhoneXSeries_MMMethodMMM]
 
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight_MMMethodMMM:h]
-#define VW(w)  [[DimeUtil share] getViewWidth_MMMethodMMM:w]
-#define FS(size)  [[DimeUtil share] getFontSize_MMMethodMMM:size]
+#define VH(h)  [[MCoolFishTitle share] getViewHeight_MMMethodMMM:h]
+#define VW(w)  [[MCoolFishTitle share] getViewWidth_MMMethodMMM:w]
+#define FS(size)  [[MCoolFishTitle share] getFontSize_MMMethodMMM:size]
 
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
@@ -75,10 +61,6 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_NULL,
 };
 
-//typedef NS_OPTIONS(NSUInteger, LOGIN_TYPE)
-//{
-//    
-//};
 
 #pragma mark - 页面按钮button点击tag
 #define kCheckBoxBtnTag     20
@@ -140,5 +122,5 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_sendMobileVcode  (@"api/vcode/sendMobileVcode")
 #define api_bind_phone  (@"api/mobile/bind")
 
-#endif /* CCSkyHourHeader_h */
+#endif  
 

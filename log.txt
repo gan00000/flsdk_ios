@@ -1,0 +1,1063 @@
+开始自动混淆项目代码扫描文件中。。。。。。
+
+
+混淆项目路径：/Users/ganyuanrong/iOSProject/SDK_VERSION_V22
+新文件 <-> 现有文件 : MCoolFishCore.h      AdLogger.h
+新文件 <-> 现有文件 : MCoolFishRameworkTerms.h      AdDelegate.h
+新文件 <-> 现有文件 : MCoolFishButton.h      GIDDelegate.h
+新文件 <-> 现有文件 : MCoolFishEncodingWelcome.h      FirebaseDelegate.h
+新文件 <-> 现有文件 : MCoolFishServicePassword.h      FBDelegate.h
+新文件 <-> 现有文件 : MCoolFishConfig.h      UIUtil.h
+新文件 <-> 现有文件 : MCoolFishRespCore.h      CCSkyHourFunction.h
+新文件 <-> 现有文件 : MCoolFishSecurityHome.h      StringUtil.h
+新文件 <-> 现有文件 : MCoolFishEngineEdit.h      UIImage+GamaBundleImage.h
+新文件 <-> 现有文件 : MCoolFishBlockLocal.h      USDefault.h
+新文件 <-> 现有文件 : MCoolFishResponse.h      SUtil.h
+新文件 <-> 现有文件 : MCoolFishNotice.h      SdkPrivateKeychainCfUUID.h
+新文件 <-> 现有文件 : MCoolFishNews.h      SdkCfUUID.h
+新文件 <-> 现有文件 : MCoolFishThird.h      SdkKeychainItemWrapper.h
+新文件 <-> 现有文件 : MCoolFishWithWith.h      UIColor+HexStringToColorTW.h
+新文件 <-> 现有文件 : MCoolFishTouchPopup.h      NSString+URLEncoding.h
+新文件 <-> 现有文件 : MCoolFishBack.h      NSString+Common.h
+新文件 <-> 现有文件 : MCoolFishBase.h      UIScreen+Sdk.h
+新文件 <-> 现有文件 : MCoolFishCount.h      UIView+BlockGesture.h
+新文件 <-> 现有文件 : MCoolFishThirdTitle.h      UIColor+HexColor.h
+新文件 <-> 现有文件 : MCoolFishApple.h      UIAlertController+Sdk.h
+新文件 <-> 现有文件 : MCoolFishUserEdit.h      AlertUtil.h
+新文件 <-> 现有文件 : MCoolFishErviceWelcome.h      SAlertViewDelegate.h
+新文件 <-> 现有文件 : MCoolFishAlertReader.h      BJBaseHTTPEngine.h
+新文件 <-> 现有文件 : MCoolFishFiled.h      LineDelegate.h
+新文件 <-> 现有文件 : MCoolFishKeychain.h      BJServiceConfigurator.h
+新文件 <-> 现有文件 : MCoolFishCenter.h      HttpServiceEnginePay.h
+新文件 <-> 现有文件 : MCoolFishChangeCenter.h      BJBaseResponceModel.h
+新文件 <-> 现有文件 : MCoolFishElegate.h      HttpServiceEngineLogin.h
+新文件 <-> 现有文件 : MCoolFishWelcome.h      HttpServiceEngineAd.h
+新文件 <-> 现有文件 : MCoolFishAlert.h      BJError.h
+新文件 <-> 现有文件 : MCoolFishWithCommon.h      SDKRequest.h
+新文件 <-> 现有文件 : MCoolFishRequestEdit.h      PhoneInfoModel.h
+新文件 <-> 现有文件 : MCoolFishSecurityResp.h      GamaSDK+Social.h
+新文件 <-> 现有文件 : MCoolFishButtonList.h      UIImage+ResBundle.h
+新文件 <-> 现有文件 : MCoolFishConfigHour.h      ResReader.h
+新文件 <-> 现有文件 : MCoolFishPple.h      ConfigCoreUtil.h
+新文件 <-> 现有文件 : MCoolFishPrivateButton.h      NSString+Local.h
+新文件 <-> 现有文件 : MCoolFishTitle.h      DimeUtil.h
+新文件 <-> 现有文件 : MCoolFishEventFile.h      SdkUtil.h
+新文件 <-> 现有文件 : MCoolFishHome.h      SdkSecurityFunction.h
+新文件 <-> 现有文件 : MCoolFishGamaImage.h      SecurityUtil.h
+新文件 <-> 现有文件 : MCoolFishScriptReader.h      GamaThirdSocial.h
+新文件 <-> 现有文件 : MCoolFishPrivateController.h      MWWebViewController.h
+新文件 <-> 现有文件 : MCoolFishBlock.h      LoginHelper.h
+新文件 <-> 现有文件 : MCoolFishDelegate.h      SAppleLogin.h
+新文件 <-> 现有文件 : MCoolFishUtilTouch.h      ApplePay.h
+新文件 <-> 现有文件 : MCoolFishAccountPrivate.h      MWApplePayManager.h
+新文件 <-> 现有文件 : MCoolFishEncodingPhone.h      CCSDKDATA.h
+新文件 <-> 现有文件 : MCoolFishEncoding.h      GameUserModel.h
+新文件 <-> 现有文件 : MCoolFishKeychainButton.h      LoginButton.h
+新文件 <-> 现有文件 : MCoolFishElegateHeader.h      ViewUtil.h
+新文件 <-> 现有文件 : MCoolFishLogin.h      FindPasswordViewV2.h
+新文件 <-> 现有文件 : MCoolFishManager.h      RegisterAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.h      BindAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishConfigType.h      TermsViewV2.h
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.h      AccountLoginViewV2.h
+新文件 <-> 现有文件 : MCoolFishType.h      LoginWithRegViewV2.h
+新文件 <-> 现有文件 : MCoolFishBundle.h      NoticeViewV2.h
+新文件 <-> 现有文件 : MCoolFishHomeManager.h      BindPhoneViewV2.h
+新文件 <-> 现有文件 : MCoolFishFirebase.h      MainHomeViewV2.h
+新文件 <-> 现有文件 : MCoolFishLogin.h      FindPasswordViewV2.h
+新文件 <-> 现有文件 : MCoolFishManager.h      RegisterAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.h      BindAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishConfigType.h      TermsViewV2.h
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.h      AccountLoginViewV2.h
+新文件 <-> 现有文件 : MCoolFishType.h      LoginWithRegViewV2.h
+新文件 <-> 现有文件 : MCoolFishBundle.h      NoticeViewV2.h
+新文件 <-> 现有文件 : MCoolFishHomeManager.h      BindPhoneViewV2.h
+新文件 <-> 现有文件 : MCoolFishFirebase.h      MainHomeViewV2.h
+新文件 <-> 现有文件 : MCoolFishColorNoticeView.h      FindPasswordView.h
+新文件 <-> 现有文件 : MCoolFishImplHttp.h      MyTextFiled.h
+新文件 <-> 现有文件 : MCoolFishPrivateCell.h      AccountListViewCell.h
+新文件 <-> 现有文件 : MCoolFishMainView.h      AccountListView.h
+新文件 <-> 现有文件 : MCoolFishGamaCommonView.h      PhoneView.h
+新文件 <-> 现有文件 : MCoolFishFrameworkButton.h      SDKIconTitleButton.h
+新文件 <-> 现有文件 : MCoolFishFiledEncodingView.h      SDKTextFiledView.h
+新文件 <-> 现有文件 : MCoolFishFiledGestureView.h      LoginTitleView.h
+新文件 <-> 现有文件 : MCoolFishMainButton.h      LoginTypeButton.h
+新文件 <-> 现有文件 : MCoolFishWrapperView.h      TouchEventInterruptView.h
+新文件 <-> 现有文件 : MCoolFishThirdStringView.h      LoginWithRegView.h
+新文件 <-> 现有文件 : MCoolFishInterruptView.h      AccountLoginView.h
+新文件 <-> 现有文件 : MCoolFishModityOrderView.h      RegisterAccountView.h
+新文件 <-> 现有文件 : MCoolFishFunctionView.h      BaseCountTimerView.h
+新文件 <-> 现有文件 : MCoolFishBaseConfigView.h      BasePopupView.h
+新文件 <-> 现有文件 : MCoolFishHeaderView.h      TermsView.h
+新文件 <-> 现有文件 : MCoolFishUtilView.h      WelcomeBackView.h
+新文件 <-> 现有文件 : MCoolFishNewsView.h      ChangePasswordView.h
+新文件 <-> 现有文件 : MCoolFishAppleGameView.h      SelectBindTypeView.h
+新文件 <-> 现有文件 : MCoolFishRegisterView.h      SDKBaseView.h
+新文件 <-> 现有文件 : MCoolFishWelcomeTouchView.h      MainHomeView.h
+新文件 <-> 现有文件 : MCoolFishPasswordView.h      BindAccountView.h
+新文件 <-> 现有文件 : MCoolFishLogin.h      FindPasswordViewV2.h
+新文件 <-> 现有文件 : MCoolFishManager.h      RegisterAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.h      BindAccountViewV2.h
+新文件 <-> 现有文件 : MCoolFishConfigType.h      TermsViewV2.h
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.h      AccountLoginViewV2.h
+新文件 <-> 现有文件 : MCoolFishType.h      LoginWithRegViewV2.h
+新文件 <-> 现有文件 : MCoolFishBundle.h      NoticeViewV2.h
+新文件 <-> 现有文件 : MCoolFishHomeManager.h      BindPhoneViewV2.h
+新文件 <-> 现有文件 : MCoolFishFirebase.h      MainHomeViewV2.h
+新文件 <-> 现有文件 : MCoolFishManagerController.h      SDKLoginViewController.h
+新文件 <-> 现有文件 : MCoolFishCore.m      AdLogger.m
+新文件 <-> 现有文件 : MCoolFishWithWith.m      UIColor+HexStringToColorTW.m
+新文件 <-> 现有文件 : MCoolFishKeychainButton.m      LoginButton.m
+新文件 <-> 现有文件 : MCoolFishRameworkTerms.m      AdDelegate.m
+新文件 <-> 现有文件 : MCoolFishTouchPopup.m      NSString+URLEncoding.m
+新文件 <-> 现有文件 : MCoolFishConfigHour.m      ResReader.m
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.m      AccountLoginViewV2.m
+新文件 <-> 现有文件 : MCoolFishManagerController.m      SDKLoginViewController.m
+新文件 <-> 现有文件 : MCoolFishBase.m      UIScreen+Sdk.m
+新文件 <-> 现有文件 : MCoolFishScriptReader.m      GamaThirdSocial.m
+新文件 <-> 现有文件 : MCoolFishButton.m      GIDDelegate.m
+新文件 <-> 现有文件 : MCoolFishEncodingWelcome.m      FirebaseDelegate.m
+新文件 <-> 现有文件 : MCoolFishPasswordView.m      BindAccountView.m
+新文件 <-> 现有文件 : MCoolFishType.m      LoginWithRegViewV2.m
+新文件 <-> 现有文件 : MCoolFishConfigType.m      TermsViewV2.m
+新文件 <-> 现有文件 : MCoolFishUserEdit.m      AlertUtil.m
+新文件 <-> 现有文件 : MCoolFishBundle.m      NoticeViewV2.m
+新文件 <-> 现有文件 : MCoolFishColorNoticeView.m      FindPasswordView.m
+新文件 <-> 现有文件 : MCoolFishPrivateButton.m      NSString+Local.m
+新文件 <-> 现有文件 : MCoolFishServicePassword.m      FBDelegate.m
+新文件 <-> 现有文件 : MCoolFishFunctionView.m      BaseCountTimerView.m
+新文件 <-> 现有文件 : MCoolFishErviceWelcome.m      SAlertViewDelegate.m
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.m      BindAccountViewV2.m
+新文件 <-> 现有文件 : MCoolFishRegisterView.m      SDKBaseView.m
+新文件 <-> 现有文件 : MCoolFishApple.m      UIAlertController+Sdk.m
+新文件 <-> 现有文件 : MCoolFishFirebase.m      MainHomeViewV2.m
+新文件 <-> 现有文件 : MCoolFishResponse.m      SUtil.m
+新文件 <-> 现有文件 : MCoolFishDelegate.m      SAppleLogin.m
+新文件 <-> 现有文件 : MCoolFishBlockLocal.m      USDefault.m
+新文件 <-> 现有文件 : MCoolFishAlertReader.m      BJBaseHTTPEngine.m
+新文件 <-> 现有文件 : MCoolFishModityOrderView.m      RegisterAccountView.m
+新文件 <-> 现有文件 : MCoolFishHomeManager.m      BindPhoneViewV2.m
+新文件 <-> 现有文件 : MCoolFishBlock.m      LoginHelper.m
+新文件 <-> 现有文件 : MCoolFishWelcomeTouchView.m      MainHomeView.m
+新文件 <-> 现有文件 : MCoolFishConfig.m      UIUtil.m
+新文件 <-> 现有文件 : MCoolFishFiled.m      LineDelegate.m
+新文件 <-> 现有文件 : MCoolFishInterruptView.m      AccountLoginView.m
+新文件 <-> 现有文件 : MCoolFishPrivateController.m      MWWebViewController.m
+新文件 <-> 现有文件 : MCoolFishLogin.m      FindPasswordViewV2.m
+新文件 <-> 现有文件 : MCoolFishAlert.m      BJError.m
+新文件 <-> 现有文件 : MCoolFishAppleGameView.m      SelectBindTypeView.m
+新文件 <-> 现有文件 : MCoolFishRespCore.m      CCSkyHourFunction.m
+新文件 <-> 现有文件 : MCoolFishThirdStringView.m      LoginWithRegView.m
+新文件 <-> 现有文件 : MCoolFishSecurityResp.m      GamaSDK+Social.m
+新文件 <-> 现有文件 : MCoolFishWithCommon.m      SDKRequest.m
+新文件 <-> 现有文件 : MCoolFishNewsView.m      ChangePasswordView.m
+新文件 <-> 现有文件 : MCoolFishManager.m      RegisterAccountViewV2.m
+新文件 <-> 现有文件 : MCoolFishHeaderView.m      TermsView.m
+新文件 <-> 现有文件 : MCoolFishKeychain.m      BJServiceConfigurator.m
+新文件 <-> 现有文件 : MCoolFishChangeCenter.m      BJBaseResponceModel.m
+新文件 <-> 现有文件 : MCoolFishBaseConfigView.m      BasePopupView.m
+新文件 <-> 现有文件 : MCoolFishUtilView.m      WelcomeBackView.m
+新文件 <-> 现有文件 : MCoolFishEngineEdit.m      UIImage+GamaBundleImage.m
+新文件 <-> 现有文件 : MCoolFishCenter.m      HttpServiceEnginePay.m
+新文件 <-> 现有文件 : MCoolFishSecurityHome.m      StringUtil.m
+新文件 <-> 现有文件 : MCoolFishType.m      LoginWithRegViewV2.m
+新文件 <-> 现有文件 : MCoolFishRequestEdit.m      PhoneInfoModel.m
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.m      AccountLoginViewV2.m
+新文件 <-> 现有文件 : MCoolFishFiledGestureView.m      LoginTitleView.m
+新文件 <-> 现有文件 : MCoolFishWelcome.m      HttpServiceEngineAd.m
+新文件 <-> 现有文件 : MCoolFishThird.m      SdkKeychainItemWrapper.m
+新文件 <-> 现有文件 : MCoolFishBundle.m      NoticeViewV2.m
+新文件 <-> 现有文件 : MCoolFishPple.m      ConfigCoreUtil.m
+新文件 <-> 现有文件 : MCoolFishFiledEncodingView.m      SDKTextFiledView.m
+新文件 <-> 现有文件 : MCoolFishConfigType.m      TermsViewV2.m
+新文件 <-> 现有文件 : MCoolFishElegate.m      HttpServiceEngineLogin.m
+新文件 <-> 现有文件 : MCoolFishFirebase.m      MainHomeViewV2.m
+新文件 <-> 现有文件 : MCoolFishGamaImage.m      SecurityUtil.m
+新文件 <-> 现有文件 : MCoolFishFrameworkButton.m      SDKIconTitleButton.m
+新文件 <-> 现有文件 : MCoolFishNotice.m      SdkPrivateKeychainCfUUID.m
+新文件 <-> 现有文件 : MCoolFishEventFile.m      SdkUtil.m
+新文件 <-> 现有文件 : MCoolFishHomeManager.m      BindPhoneViewV2.m
+新文件 <-> 现有文件 : MCoolFishHome.m      SdkSecurityFunction.m
+新文件 <-> 现有文件 : MCoolFishNews.m      SdkCfUUID.m
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.m      BindAccountViewV2.m
+新文件 <-> 现有文件 : MCoolFishGamaCommonView.m      PhoneView.m
+新文件 <-> 现有文件 : MCoolFishTitle.m      DimeUtil.m
+新文件 <-> 现有文件 : MCoolFishLogin.m      FindPasswordViewV2.m
+新文件 <-> 现有文件 : MCoolFishButtonList.m      UIImage+ResBundle.m
+新文件 <-> 现有文件 : MCoolFishWrapperView.m      TouchEventInterruptView.m
+新文件 <-> 现有文件 : MCoolFishType.m      LoginWithRegViewV2.m
+新文件 <-> 现有文件 : MCoolFishThirdTitle.m      UIColor+HexColor.m
+新文件 <-> 现有文件 : MCoolFishManager.m      RegisterAccountViewV2.m
+新文件 <-> 现有文件 : MCoolFishMainButton.m      LoginTypeButton.m
+新文件 <-> 现有文件 : MCoolFishAccountPrivate.m      MWApplePayManager.m
+新文件 <-> 现有文件 : MCoolFishCount.m      UIView+BlockGesture.m
+新文件 <-> 现有文件 : MCoolFishImplHttp.m      MyTextFiled.m
+新文件 <-> 现有文件 : MCoolFishBundle.m      NoticeViewV2.m
+新文件 <-> 现有文件 : MCoolFishUtilTouch.m      ApplePay.m
+新文件 <-> 现有文件 : MCoolFishButtonConfigurator.m      AccountLoginViewV2.m
+新文件 <-> 现有文件 : MCoolFishBack.m      NSString+Common.m
+新文件 <-> 现有文件 : MCoolFishMainView.m      AccountListView.m
+新文件 <-> 现有文件 : MCoolFishFirebase.m      MainHomeViewV2.m
+新文件 <-> 现有文件 : MCoolFishEncoding.m      GameUserModel.m
+新文件 <-> 现有文件 : MCoolFishConfigType.m      TermsViewV2.m
+新文件 <-> 现有文件 : MCoolFishPrivateCell.m      AccountListViewCell.m
+新文件 <-> 现有文件 : MCoolFishHomeManager.m      BindPhoneViewV2.m
+新文件 <-> 现有文件 : MCoolFishEncodingPhone.m      CCSDKDATA.m
+新文件 <-> 现有文件 : MCoolFishElegateHeader.m      ViewUtil.m
+新文件 <-> 现有文件 : MCoolFishTermsWelcome.m      BindAccountViewV2.m
+新文件 <-> 现有文件 : MCoolFishLogin.m      FindPasswordViewV2.m
+新文件 <-> 现有文件 : MCoolFishManager.m      RegisterAccountViewV2.m
+
+
+自动为您开启6个线程进行混淆。。。。。。。
+开始自动清理源代码中的注释。。。。。。
+
+
+开始提取所有源文件中的类名并生成新类名。。。。。。
+类名: AdLogger <---替换为---> MCoolFishCore
+类名: SDKIconTitleButton <---替换为---> MCoolFishFrameworkButton
+类名: UIUtil <---替换为---> MCoolFishConfig
+类名: LoginButton <---替换为---> MCoolFishKeychainButton
+类名: SdkPrivateKeychainCfUUID <---替换为---> MCoolFishNotice
+类名: LineDelegate <---替换为---> MCoolFishFiled
+类名: AdDelegate <---替换为---> MCoolFishRameworkTerms
+类名: SdkUtil <---替换为---> MCoolFishEventFile
+类名: AccountLoginView <---替换为---> MCoolFishInterruptView
+类名: ResReader <---替换为---> MCoolFishConfigHour
+类名: BindPhoneViewV2 <---替换为---> MCoolFishHomeManager
+类名: MWWebViewController <---替换为---> MCoolFishPrivateController
+类名: SdkBase64Encoding <---替换为---> MCoolFishInfoRequest
+类名: SdkCfUUID <---替换为---> MCoolFishNews
+类名: FindPasswordViewV2 <---替换为---> MCoolFishLogin
+类名: AccountLoginViewV2 <---替换为---> MCoolFishButtonConfigurator
+类名: BJError <---替换为---> MCoolFishAlert
+类名: BindAccountViewV2 <---替换为---> MCoolFishTermsWelcome
+类名: SelectBindTypeView <---替换为---> MCoolFishAppleGameView
+类名: SDKLoginViewController <---替换为---> MCoolFishManagerController
+类名: PhoneView <---替换为---> MCoolFishGamaCommonView
+类名: GIDDelegate <---替换为---> MCoolFishButton
+类名: CCSkyHourFunction <---替换为---> MCoolFishRespCore
+类名: DimeUtil <---替换为---> MCoolFishTitle
+类名: LoginWithRegView <---替换为---> MCoolFishThirdStringView
+类名: FirebaseDelegate <---替换为---> MCoolFishEncodingWelcome
+类名: ChangePasswordView <---替换为---> MCoolFishNewsView
+类名: FindPasswordViewV2 <---替换为---> MCoolFishLogin
+类名: BindAccountView <---替换为---> MCoolFishPasswordView
+类名: TouchEventInterruptView <---替换为---> MCoolFishWrapperView
+类名: LoginWithRegViewV2 <---替换为---> MCoolFishType
+类名: LoginWithRegViewV2 <---替换为---> MCoolFishType
+类名: SDKRequest <---替换为---> MCoolFishWithCommon
+类名: TermsViewV2 <---替换为---> MCoolFishConfigType
+类名: LoginTypeButton <---替换为---> MCoolFishMainButton
+类名: RegisterAccountViewV2 <---替换为---> MCoolFishManager
+类名: AlertUtil <---替换为---> MCoolFishUserEdit
+类名: RegisterAccountViewV2 <---替换为---> MCoolFishManager
+类名: TermsView <---替换为---> MCoolFishHeaderView
+类名: NoticeViewV2 <---替换为---> MCoolFishBundle
+类名: BJServiceConfigurator <---替换为---> MCoolFishKeychain
+类名: MWApplePayManager <---替换为---> MCoolFishAccountPrivate
+类名: BJBaseResponceModel <---替换为---> MCoolFishChangeCenter
+类名: FindPasswordView <---替换为---> MCoolFishColorNoticeView
+类名: MyTextFiled <---替换为---> MCoolFishImplHttp
+类名: BasePopupView <---替换为---> MCoolFishBaseConfigView
+类名: FBDelegate <---替换为---> MCoolFishServicePassword
+类名: NoticeViewV2 <---替换为---> MCoolFishBundle
+类名: BaseCountTimerView <---替换为---> MCoolFishFunctionView
+类名: ApplePay <---替换为---> MCoolFishUtilTouch
+类名: WelcomeBackView <---替换为---> MCoolFishUtilView
+类名: SAlertViewDelegate <---替换为---> MCoolFishErviceWelcome
+类名: HttpServiceEnginePay <---替换为---> MCoolFishCenter
+类名: StringUtil <---替换为---> MCoolFishSecurityHome
+类名: AccountLoginViewV2 <---替换为---> MCoolFishButtonConfigurator
+类名: LoginWithRegViewV2 <---替换为---> MCoolFishType
+类名: AccountListView <---替换为---> MCoolFishMainView
+类名: BindAccountViewV2 <---替换为---> MCoolFishTermsWelcome
+类名: PhoneInfoModel <---替换为---> MCoolFishRequestEdit
+类名: SDKBaseView <---替换为---> MCoolFishRegisterView
+类名: MainHomeViewV2 <---替换为---> MCoolFishFirebase
+类名: TermsViewV2 <---替换为---> MCoolFishConfigType
+类名: MainHomeViewV2 <---替换为---> MCoolFishFirebase
+类名: AccountLoginViewV2 <---替换为---> MCoolFishButtonConfigurator
+类名: GameUserModel <---替换为---> MCoolFishEncoding
+类名: LoginTitleView <---替换为---> MCoolFishFiledGestureView
+类名: SUtil <---替换为---> MCoolFishResponse
+类名: AccountListViewCell <---替换为---> MCoolFishPrivateCell
+类名: HttpServiceEngineAd <---替换为---> MCoolFishWelcome
+类名: SAppleLogin <---替换为---> MCoolFishDelegate
+类名: SdkKeychainItemWrapper <---替换为---> MCoolFishThird
+类名: BindPhoneViewV2 <---替换为---> MCoolFishHomeManager
+类名: USDefault <---替换为---> MCoolFishBlockLocal
+类名: NoticeViewV2 <---替换为---> MCoolFishBundle
+类名: CCSDKDATA <---替换为---> MCoolFishEncodingPhone
+类名: BJBaseHTTPEngine <---替换为---> MCoolFishAlertReader
+类名: ViewUtil <---替换为---> MCoolFishElegateHeader
+类名: ConfigCoreUtil <---替换为---> MCoolFishPple
+类名: RegisterAccountView <---替换为---> MCoolFishModityOrderView
+类名: BindAccountViewV2 <---替换为---> MCoolFishTermsWelcome
+类名: SDKTextFiledView <---替换为---> MCoolFishFiledEncodingView
+类名: BindPhoneViewV2 <---替换为---> MCoolFishHomeManager
+类名: FindPasswordViewV2 <---替换为---> MCoolFishLogin
+类名: TermsViewV2 <---替换为---> MCoolFishConfigType
+类名: RegisterAccountViewV2 <---替换为---> MCoolFishManager
+类名: LoginHelper <---替换为---> MCoolFishBlock
+类名: HttpServiceEngineLogin <---替换为---> MCoolFishElegate
+类名: MainHomeView <---替换为---> MCoolFishWelcomeTouchView
+类名: MainHomeViewV2 <---替换为---> MCoolFishFirebase
+类名: SecurityUtil <---替换为---> MCoolFishGamaImage
+
+
+开始替换所有源文件中的类名。。。。。。
+
+
+
+开始提取所有协议名并生成新协议名。。。。。。
+协议: PhoneInfoModelDelegate <---替换为---> OVMCoolFishTermsPassword
+
+
+开始多语言文件的key名称。。。。。。
+
+
+开始自动检测类继承关系。。。。。。
+MCoolFishCore : NSObject
+MCoolFishRameworkTerms : NSObject
+MCoolFishButton : NSObject
+MCoolFishEncodingWelcome : NSObject
+MCoolFishServicePassword : NSObject
+MCoolFishConfig : NSObject
+MCoolFishRespCore : NSObject
+MCoolFishSecurityHome : NSObject
+MCoolFishBlockLocal : NSObject
+MCoolFishResponse : NSObject
+MCoolFishNotice : NSObject
+MCoolFishNews : NSObject
+MCoolFishThird : NSObject
+MCoolFishUserEdit : NSObject
+MCoolFishErviceWelcome : NSObject
+MCoolFishAlertReader : NSObject
+MCoolFishFiled : NSObject
+MCoolFishKeychain : NSObject
+MCoolFishCenter : NSObject
+MCoolFishChangeCenter : NSObject
+MCoolFishElegate : NSObject
+MCoolFishWelcome : NSObject
+MCoolFishAlert : MCoolFishChangeCenter
+MCoolFishWithCommon : NSObject
+MCoolFishRequestEdit : NSObject
+MCoolFishConfigHour : NSObject
+MCoolFishPple : NSObject
+MCoolFishTitle : NSObject
+MCoolFishEventFile : NSObject
+MCoolFishInfoRequest : NSObject
+MCoolFishGamaImage : NSObject
+MCoolFishPrivateController : UIViewController
+MCoolFishBlock : NSObject
+MCoolFishDelegate : NSObject
+MCoolFishUtilTouch : NSObject
+MCoolFishAccountPrivate : NSObject
+MCoolFishEncodingPhone : NSObject
+MCoolFishEncoding : NSObject
+MCoolFishKeychainButton : NSObject
+MCoolFishElegateHeader : NSObject
+MCoolFishLogin : MCoolFishRegisterView
+MCoolFishManager : MCoolFishRegisterView
+MCoolFishTermsWelcome : MCoolFishRegisterView
+MCoolFishConfigType : MCoolFishRegisterView
+MCoolFishButtonConfigurator : MCoolFishRegisterView
+MCoolFishType : MCoolFishRegisterView
+MCoolFishBundle : MCoolFishRegisterView
+MCoolFishHomeManager : MCoolFishFunctionView
+MCoolFishFirebase : MCoolFishRegisterView
+MCoolFishLogin : MCoolFishRegisterView
+MCoolFishManager : MCoolFishRegisterView
+MCoolFishTermsWelcome : MCoolFishRegisterView
+MCoolFishConfigType : MCoolFishRegisterView
+MCoolFishButtonConfigurator : MCoolFishRegisterView
+MCoolFishType : MCoolFishRegisterView
+MCoolFishBundle : MCoolFishRegisterView
+MCoolFishHomeManager : MCoolFishFunctionView
+MCoolFishFirebase : MCoolFishRegisterView
+MCoolFishColorNoticeView : MCoolFishRegisterView
+MCoolFishImplHttp : MCoolFishRegisterView
+MCoolFishPrivateCell : UITableViewCell
+MCoolFishMainView : MCoolFishRegisterView
+MCoolFishGamaCommonView : MCoolFishRegisterView
+MCoolFishFrameworkButton : UIView
+MCoolFishFiledEncodingView : MCoolFishRegisterView
+MCoolFishFiledGestureView : MCoolFishRegisterView
+MCoolFishMainButton : UIView
+MCoolFishWrapperView : UIView
+MCoolFishThirdStringView : MCoolFishRegisterView
+MCoolFishInterruptView : MCoolFishRegisterView
+MCoolFishModityOrderView : MCoolFishRegisterView
+MCoolFishFunctionView : MCoolFishRegisterView
+MCoolFishBaseConfigView : MCoolFishRegisterView
+MCoolFishHeaderView : MCoolFishRegisterView
+MCoolFishUtilView : MCoolFishRegisterView
+MCoolFishNewsView : MCoolFishRegisterView
+MCoolFishAppleGameView : MCoolFishRegisterView
+MCoolFishRegisterView : UIView
+MCoolFishWelcomeTouchView : MCoolFishRegisterView
+MCoolFishPasswordView : MCoolFishRegisterView
+MCoolFishLogin : MCoolFishRegisterView
+MCoolFishManager : MCoolFishRegisterView
+MCoolFishTermsWelcome : MCoolFishRegisterView
+MCoolFishConfigType : MCoolFishRegisterView
+MCoolFishButtonConfigurator : MCoolFishRegisterView
+MCoolFishType : MCoolFishRegisterView
+MCoolFishBundle : MCoolFishRegisterView
+MCoolFishHomeManager : MCoolFishFunctionView
+MCoolFishFirebase : MCoolFishRegisterView
+MCoolFishManagerController : UIViewController
+
+
+开始自动检测统计所有文件中属性信息。。。。。。
+文件: [旧 BindPhoneViewV2 <--> 新 MCoolFishHomeManager] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 LineDelegate <--> 新 MCoolFishFiled] 属性:@property (nonatomic) LineCallBack successCallBack;属性名称:successCallBack
+文件: [旧 LineDelegate <--> 新 MCoolFishFiled] 属性:@property (nonatomic) LineCallBack failCallBack;属性名称:failCallBack
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic,strong) NSDictionary * mySdkConfDic;属性名称:mySdkConfDic
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic,strong) NSDictionary * mainBundleConfDic;属性名称:mainBundleConfDic
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic, strong) NSMutableArray *areaInfoArray;属性名称:areaInfoArray
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic,strong) NSMutableDictionary * textStringDic;属性名称:textStringDic
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic, copy) NSString *m_stringsName;属性名称:m_stringsName
+文件: [旧 ResReader <--> 新 MCoolFishConfigHour] 属性:@property (nonatomic, strong) NSBundle *m_stringsBundle;属性名称:m_stringsBundle
+文件: [旧 MyTextFiled <--> 新 MCoolFishImplHttp] 属性:@property (nonatomic,strong) UITextField *inputTextField;属性名称:inputTextField
+文件: [旧 NSString+Local <--> 新 MCoolFishPrivateButton] 属性:@property (nonatomic, copy) NSString *localx;属性名称:localx
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, copy) MWWebLayoutHandler layoutHandler;属性名称:layoutHandler
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) UIView *backgroundView;属性名称:backgroundView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) WKWebView *wkwebView;属性名称:wkwebView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) UIView *headerView;属性名称:headerView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) UIView *footView;属性名称:footView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;属性名称:indicatorView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong) UIProgressView *progressView;属性名称:progressView
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic) BOOL animation;属性名称:animation
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic, strong)NSURLRequest *webRequest;属性名称:webRequest
+文件: [旧 AccountListViewCell <--> 新 MCoolFishPrivateCell] 属性:@property (nonatomic, strong) UILabel *accountUILabel;属性名称:accountUILabel
+文件: [旧 AccountListViewCell <--> 新 MCoolFishPrivateCell] 属性:@property (nonatomic, strong) UIButton *deleteAccountBtn;属性名称:deleteAccountBtn
+文件: [旧 AccountListViewCell <--> 新 MCoolFishPrivateCell] 属性:@property (nonatomic, strong) UIImageView *iconImageView;属性名称:iconImageView
+文件: [旧 AccountListViewCell <--> 新 MCoolFishPrivateCell] 属性:@property (nonatomic, strong) ItemViewClickHander mItemViewClickHander;属性名称:mItemViewClickHander
+文件: [旧 AccountListView <--> 新 MCoolFishMainView] 属性:@property (nonatomic,strong) AccountModelHander mAccountModelClickHander;属性名称:mAccountModelClickHander
+文件: [旧 AccountListView <--> 新 MCoolFishMainView] 属性:@property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList;属性名称:accountDataList
+文件: [旧 AccountListView <--> 新 MCoolFishMainView] 属性:@property (nonatomic,strong) UITableView *accountListTableView;属性名称:accountListTableView
+文件: [旧 DimeUtil <--> 新 MCoolFishTitle] 属性:@property (nonatomic,assign) CGFloat viewAdaptRate;属性名称:viewAdaptRate
+文件: [旧 SDKLoginViewController <--> 新 MCoolFishManagerController] 属性:@property (nonatomic,strong)UIView *sdkContentView;属性名称:sdkContentView
+文件: [旧 PhoneView <--> 新 MCoolFishGamaCommonView] 属性:@property (nonatomic, strong) MCoolFishRequestEdit *phoneModel;属性名称:phoneModel
+文件: [旧 PhoneView <--> 新 MCoolFishGamaCommonView] 属性:@property (nonatomic) UILabel *aracCodeUILabel;属性名称:aracCodeUILabel
+文件: [旧 PhoneView <--> 新 MCoolFishGamaCommonView] 属性:@property (nonatomic) UITextField *mUITextField;属性名称:mUITextField
+文件: [旧 SDKTextFiledView <--> 新 MCoolFishFiledEncodingView] 属性:@property (nonatomic) ItemViewClickHander clickAccountListItem;属性名称:clickAccountListItem
+文件: [旧 SDKTextFiledView <--> 新 MCoolFishFiledEncodingView] 属性:@property (nonatomic) CCallBack inputTextFieldChange;属性名称:inputTextFieldChange
+文件: [旧 SDKTextFiledView <--> 新 MCoolFishFiledEncodingView] 属性:@property (nonatomic) UITextField *inputUITextField;属性名称:inputUITextField
+文件: [旧 SDKTextFiledView <--> 新 MCoolFishFiledEncodingView] 属性:@property (nonatomic) UIButton *moreAccountBtn;属性名称:moreAccountBtn
+文件: [旧 SDKTextFiledView <--> 新 MCoolFishFiledEncodingView] 属性:@property (nonatomic) UIImageView *lableIconImageView;属性名称:lableIconImageView
+文件: [旧 MWApplePayManager <--> 新 MCoolFishAccountPrivate] 属性:@property (nonatomic, copy) NSString *currentOrderId;属性名称:currentOrderId
+文件: [旧 MWApplePayManager <--> 新 MCoolFishAccountPrivate] 属性:@property (nonatomic, strong) PayData *mPayData;属性名称:mPayData
+文件: [旧 MWApplePayManager <--> 新 MCoolFishAccountPrivate] 属性:@property (nonatomic)PayStatusBlock payStatusBlock;属性名称:payStatusBlock
+文件: [旧 LoginTitleView <--> 新 MCoolFishFiledGestureView] 属性:@property (nonatomic,strong) UILabel *titleLable;属性名称:titleLable
+文件: [旧 LoginTitleView <--> 新 MCoolFishFiledGestureView] 属性:@property (nonatomic,strong) UIButton *backBtn;属性名称:backBtn
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;属性名称:webViewDelegate
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic,copy) MWWebCloseHandler closeHandler;属性名称:closeHandler
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic,copy) MWWebAlertHandler alertHandler;属性名称:alertHandler
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic) BOOL shouldRotate;属性名称:shouldRotate
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;属性名称:interfaceOrientationMask
+文件: [旧 MWWebViewController <--> 新 MCoolFishPrivateController] 属性:@property (nonatomic) UIInterfaceOrientation interfaceOrientation;属性名称:interfaceOrientation
+文件: [旧 HttpServiceEnginePay <--> 新 MCoolFishCenter] 属性:@property (nonatomic, strong) MCoolFishAlertReader *httpEngine;属性名称:httpEngine
+文件: [旧 FBDelegate <--> 新 MCoolFishServicePassword] 属性:@property (nonatomic,strong) FBSDKLoginManager *loginManager;属性名称:loginManager
+文件: [旧 FBDelegate <--> 新 MCoolFishServicePassword] 属性:@property (nonatomic,strong) CCallBack successBlock;属性名称:successBlock
+文件: [旧 FBDelegate <--> 新 MCoolFishServicePassword] 属性:@property (nonatomic,strong) CCallBack failBlock;属性名称:failBlock
+文件: [旧 LoginWithRegView <--> 新 MCoolFishThirdStringView] 属性:@property (nonatomic, strong) MCoolFishInterruptView *mAccountLoginView;属性名称:mAccountLoginView
+文件: [旧 LoginWithRegView <--> 新 MCoolFishThirdStringView] 属性:@property (nonatomic, strong) MCoolFishModityOrderView *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: [旧 SAppleLogin <--> 新 MCoolFishDelegate] 属性:@property (strong, nonatomic) NSString *appleThirdID;属性名称:appleThirdID
+文件: [旧 SdkKeychainItemWrapper <--> 新 MCoolFishThird] 属性:@property (nonatomic, retain) NSMutableDictionary *keychainItemData;属性名称:keychainItemData
+文件: [旧 SdkKeychainItemWrapper <--> 新 MCoolFishThird] 属性:@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;属性名称:genericPasswordQuery
+文件: [旧 PhoneInfoModel <--> 新 MCoolFishRequestEdit] 属性:@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;属性名称:gamaAreaCodesArray
+文件: [旧 UIAlertController+Sdk <--> 新 MCoolFishApple] 属性:@property (nonatomic, strong) UIWindow *alertWindow;属性名称:alertWindow
+文件: [旧 RegisterAccountView <--> 新 MCoolFishModityOrderView] 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: [旧 BaseCountTimerView <--> 新 MCoolFishFunctionView] 属性:@property (assign,nonatomic) NSInteger totalCount;属性名称:totalCount
+文件: [旧 BaseCountTimerView <--> 新 MCoolFishFunctionView] 属性:@property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;属性名称:countTimerDelegate
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property (nonatomic, strong)LoginResponse *mLoginResponse;属性名称:mLoginResponse
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property (nonatomic, strong)ConfigModel *mConfigModel;属性名称:mConfigModel
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property (nonatomic, strong)MCoolFishEncoding * gameUserModel;属性名称:gameUserModel
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property (nonatomic,strong) UrlMode *urls;属性名称:urls
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;属性名称:mUITextFieldDelegate
+文件: [旧 CCSDKDATA <--> 新 MCoolFishEncodingPhone] 属性:@property (nonatomic, assign)CGFloat keyBoardHeight;属性名称:keyBoardHeight
+文件: [旧 HttpServiceEngineAd <--> 新 MCoolFishWelcome] 属性:@property (nonatomic, strong) MCoolFishAlertReader *httpEngine;属性名称:httpEngine
+文件: [旧 BasePopupView <--> 新 MCoolFishBaseConfigView] 属性:@property (nonatomic,strong) UIView *contentView;属性名称:contentView
+文件: [旧 BasePopupView <--> 新 MCoolFishBaseConfigView] 属性:@property (nonatomic,strong) CCallBack touchesBeganCallback;属性名称:touchesBeganCallback
+文件: [旧 SAppleLogin <--> 新 MCoolFishDelegate] 属性:@property (copy, atomic) AppleLoginSuccess impSuccess;属性名称:impSuccess
+文件: [旧 SAppleLogin <--> 新 MCoolFishDelegate] 属性:@property (copy, atomic) AppleLoginError impError;属性名称:impError
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *roleID;属性名称:roleID
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *roleLevel;属性名称:roleLevel
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *roleName;属性名称:roleName
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *serverCode;属性名称:serverCode
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *serverName;属性名称:serverName
+文件: [旧 GameUserModel <--> 新 MCoolFishEncoding] 属性:@property (copy, nonatomic) NSString *roleVipLevel;属性名称:roleVipLevel
+文件: [旧 BJBaseHTTPEngine <--> 新 MCoolFishAlertReader] 属性:@property (nonatomic, strong) AFHTTPSessionManager *sessionManager;属性名称:sessionManager
+文件: [旧 RegisterAccountViewV2 <--> 新 MCoolFishManager] 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: [旧 SDKBaseView <--> 新 MCoolFishRegisterView] 属性:@property(nonatomic, weak) id<LoginViewDelegate> delegate;属性名称:delegate
+文件: [旧 SDKBaseView <--> 新 MCoolFishRegisterView] 属性:@property(nonatomic) CURRENT_PAGE_TYPE fromPage;属性名称:fromPage
+文件: [旧 SDKBaseView <--> 新 MCoolFishRegisterView] 属性:@property(nonatomic,assign) id fromPageParam;属性名称:fromPageParam
+文件: [旧 SDKBaseView <--> 新 MCoolFishRegisterView] 属性:@property(nonatomic,strong)NSMutableArray *drawBlockArray;属性名称:drawBlockArray
+文件: [旧 BindAccountViewV2 <--> 新 MCoolFishTermsWelcome] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 SAlertViewDelegate <--> 新 MCoolFishErviceWelcome] 属性:@property (nonatomic,copy) SAlertViewHandler handler;属性名称:handler
+文件: [旧 HttpServiceEngineLogin <--> 新 MCoolFishElegate] 属性:@property (nonatomic, strong) MCoolFishAlertReader *httpEngine;属性名称:httpEngine
+文件: [旧 RegisterAccountViewV2 <--> 新 MCoolFishManager] 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishButtonConfigurator *mAccountLoginView;属性名称:mAccountLoginView
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishManager *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: [旧 BindAccountViewV2 <--> 新 MCoolFishTermsWelcome] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 BindPhoneViewV2 <--> 新 MCoolFishHomeManager] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishButtonConfigurator *mAccountLoginView;属性名称:mAccountLoginView
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishManager *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: [旧 BJBaseResponceModel <--> 新 MCoolFishChangeCenter] 属性:@property (nonatomic, assign) NSInteger code;属性名称:code
+文件: [旧 BJBaseResponceModel <--> 新 MCoolFishChangeCenter] 属性:@property (nonatomic, copy) NSString *message;属性名称:message
+文件: [旧 RegisterAccountViewV2 <--> 新 MCoolFishManager] 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: [旧 BindPhoneViewV2 <--> 新 MCoolFishHomeManager] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 BindAccountViewV2 <--> 新 MCoolFishTermsWelcome] 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: [旧 BJError <--> 新 MCoolFishAlert] 属性:@property (nonatomic, copy) NSDictionary *data;属性名称:data
+文件: [旧 SDKLoginViewController <--> 新 MCoolFishManagerController] 属性:@property (nonatomic)CGRect currentEditingTextViewFrame;属性名称:currentEditingTextViewFrame
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishButtonConfigurator *mAccountLoginView;属性名称:mAccountLoginView
+文件: [旧 LoginWithRegViewV2 <--> 新 MCoolFishType] 属性:@property (nonatomic, strong) MCoolFishManager *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: [旧 PhoneInfoModel <--> 新 MCoolFishRequestEdit] 属性:@property (nonatomic, strong) NSString *selectedAreaCodeKey;属性名称:selectedAreaCodeKey
+文件: [旧 PhoneInfoModel <--> 新 MCoolFishRequestEdit] 属性:@property (nonatomic, strong) NSString *selectedAreaCodeValue;属性名称:selectedAreaCodeValue
+文件: [旧 PhoneInfoModel <--> 新 MCoolFishRequestEdit] 属性:@property (nonatomic, copy) NSString *selectedRegularExpression;属性名称:selectedRegularExpression
+文件: [旧 PhoneInfoModel <--> 新 MCoolFishRequestEdit] 属性:@property (nonatomic, assign) id<OVMCoolFishTermsPassword> delegate;属性名称:delegate
+
+
+开始自动修改Assets图片资源。。。。。。。
+
+Assets图片资源修改结束
+
+
+开始自动修改sks资源名称。。。。。。。
+
+sks资源修改结束
+
+开始打乱函数定义顺序。。。。。。。
+100%👌
+
+
+开始自动随机生成属性并插入头文件和源文件。。。。。。。
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, assign)long  welcome_count;
+@property(nonatomic, assign)NSInteger  utilMark;
+
+[old: AdLogger -> new: MCoolFishCore] insert  @property(nonatomic, assign)double  modelOffset;
+@property(nonatomic, assign)NSInteger  keychain_index;
+
+[old: LineDelegate -> new: MCoolFishFiled] insert  @property(nonatomic, assign)NSInteger  web_tag;
+@property(nonatomic, copy)NSArray *  tableList;
+
+[old: ResReader -> new: MCoolFishConfigHour] insert  @property(nonatomic, assign)NSInteger  foot_count;
+@property(nonatomic, copy)NSString *  k_view_str;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, assign)int  success_sum;
+@property(nonatomic, assign)Boolean  is_Event;
+@property(nonatomic, assign)float  file_margin;
+
+[old: AdDelegate -> new: MCoolFishRameworkTerms] insert  @property(nonatomic, copy)NSString *  securityTotalString;
+@property(nonatomic, assign)double  arrayMax;
+@property(nonatomic, assign)double  ynews_margin;
+
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, assign)float  failOffset;
+@property(nonatomic, copy)NSArray *  http_Array;
+@property(nonatomic, assign)double  modelOffset;
+
+[old: ResReader -> new: MCoolFishConfigHour] insert  @property(nonatomic, assign)long  closeIdx;
+@property(nonatomic, assign)double  beganSize;
+@property(nonatomic, assign)NSInteger  filed_idx;
+@property(nonatomic, assign)double  itemPadding;
+
+[old: GIDDelegate -> new: MCoolFishButton] insert  @property(nonatomic, assign)Boolean  has_Firebase;
+@property(nonatomic, assign)int  find_count;
+@property(nonatomic, assign)float  interruptOffset;
+
+[old: AccountLoginView -> new: MCoolFishInterruptView] insert  @property(nonatomic, copy)NSString *  expressionStr;
+@property(nonatomic, copy)NSString *  firebaseScriptClickString;
+@property(nonatomic, assign)long  sdkSum;
+@property(nonatomic, copy)NSArray *  helperArray;
+
+[old: ConfigCoreUtil -> new: MCoolFishPple] insert  @property(nonatomic, assign)double  layout_size;
+@property(nonatomic, assign)long  session_mark;
+@property(nonatomic, assign)NSInteger  list_flag;
+@property(nonatomic, copy)NSString *  orientationPpleString;
+
+[old: FindPasswordView -> new: MCoolFishColorNoticeView] insert  @property(nonatomic, copy)NSArray *  managerErrorEncodingArr;
+@property(nonatomic, assign)Boolean  can_Page;
+@property(nonatomic, copy)NSArray *  error_Array;
+
+[old: FirebaseDelegate -> new: MCoolFishEncodingWelcome] insert  @property(nonatomic, assign)Boolean  enbale_Animation;
+@property(nonatomic, assign)int  socialIndex;
+@property(nonatomic, assign)NSInteger  fromCount;
+
+[old: MWWebViewController -> new: MCoolFishPrivateController] insert  @property(nonatomic, copy)NSArray *  rameworkList;
+@property(nonatomic, assign)double  http_margin;
+@property(nonatomic, assign)double  interruptOffset;
+
+[old: DimeUtil -> new: MCoolFishTitle] insert  @property(nonatomic, assign)double  layout_max;
+@property(nonatomic, assign)Boolean  canValue;
+@property(nonatomic, assign)double  callMargin;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, assign)double  event_offset;
+@property(nonatomic, assign)float  select_offset;
+@property(nonatomic, assign)float  paramMax;
+@property(nonatomic, assign)double  orientation_padding;
+
+[old: DimeUtil -> new: MCoolFishTitle] insert  @property(nonatomic, assign)long  color_tag;
+@property(nonatomic, assign)int  pay_ur;
+@property(nonatomic, assign)NSInteger  l_image;
+@property(nonatomic, assign)Boolean  enbale_Data;
+
+[old: FBDelegate -> new: MCoolFishServicePassword] insert  @property(nonatomic, assign)double  generic_max;
+@property(nonatomic, assign)long  arrayMark;
+@property(nonatomic, copy)NSArray *  urlsFromCenter_list;
+
+[old: MyTextFiled -> new: MCoolFishImplHttp] insert  @property(nonatomic, copy)NSString *  with_dKeychainString;
+@property(nonatomic, assign)double  backMargin;
+@property(nonatomic, copy)NSString *  selectString;
+@property(nonatomic, copy)NSArray *  delegate_kReaderText_list;
+
+[old: SdkUtil -> new: MCoolFishEventFile] insert  @property(nonatomic, copy)NSArray *  centerGenericServer_arr;
+@property(nonatomic, assign)double  keyMin;
+@property(nonatomic, assign)Boolean  has_Lable;
+@property(nonatomic, assign)double  background_offset;
+
+[old: UIUtil -> new: MCoolFishConfig] insert  @property(nonatomic, copy)NSString *  stringStr;
+@property(nonatomic, assign)double  indicatorOffset;
+
+[old: SDKLoginViewController -> new: MCoolFishManagerController] insert  @property(nonatomic, assign)double  frame_xb;
+@property(nonatomic, assign)Boolean  isEvent;
+
+[old: LoginWithRegView -> new: MCoolFishThirdStringView] insert  @property(nonatomic, assign)float  query_offset;
+@property(nonatomic, assign)double  changeSize;
+@property(nonatomic, assign)double  color_offset;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, assign)long  scriptFlag;
+@property(nonatomic, assign)Boolean  enbale_Edit;
+@property(nonatomic, assign)long  m_title;
+@property(nonatomic, assign)Boolean  has_Popup;
+
+[old: SdkSecurityFunction -> new: MCoolFishHome] insert  @property(nonatomic, assign)int  mask_mark;
+@property(nonatomic, assign)long  touch_mark;
+
+[old: AccountListViewCell -> new: MCoolFishPrivateCell] insert  @property(nonatomic, assign)double  adapt_padding;
+@property(nonatomic, assign)int  password_count;
+@property(nonatomic, copy)NSArray *  configurator_arr;
+
+[old: CCSkyHourFunction -> new: MCoolFishRespCore] insert  @property(nonatomic, assign)float  list_max;
+@property(nonatomic, assign)float  adapt_min;
+@property(nonatomic, assign)double  rror_min;
+
+[old: SecurityUtil -> new: MCoolFishGamaImage] insert  @property(nonatomic, assign)Boolean  hasBegan;
+@property(nonatomic, assign)Boolean  can_Order;
+
+[old: MWApplePayManager -> new: MCoolFishAccountPrivate] insert  @property(nonatomic, assign)int  sessionFlag;
+@property(nonatomic, assign)long  status_sum;
+@property(nonatomic, assign)float  helper_space;
+
+[old: TermsView -> new: MCoolFishHeaderView] insert  @property(nonatomic, assign)int  handerFlag;
+@property(nonatomic, assign)double  touchOffset;
+@property(nonatomic, assign)long  textMark;
+
+[old: AccountListView -> new: MCoolFishMainView] insert  @property(nonatomic, assign)double  line_size;
+@property(nonatomic, assign)Boolean  has_Role;
+@property(nonatomic, copy)NSString *  with_9SocialEncodingStr;
+
+[old: StringUtil -> new: MCoolFishSecurityHome] insert  @property(nonatomic, assign)double  btn_max;
+@property(nonatomic, assign)double  morePadding;
+@property(nonatomic, assign)long  draw_flag;
+@property(nonatomic, assign)double  dic_offset;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, copy)NSString *  tableSdkMore_string;
+@property(nonatomic, assign)int  draw_sum;
+@property(nonatomic, copy)NSString *  filedImageString;
+@property(nonatomic, copy)NSArray *  expressionList;
+
+[old: MWWebViewController -> new: MCoolFishPrivateController] insert  @property(nonatomic, assign)float  responsePadding;
+@property(nonatomic, assign)double  security_offset;
+@property(nonatomic, assign)long  window_p;
+
+[old: PhoneView -> new: MCoolFishGamaCommonView] insert  @property(nonatomic, copy)NSArray *  rameworkArr;
+@property(nonatomic, copy)NSArray *  editingItem_Array;
+
+[old: USDefault -> new: MCoolFishBlockLocal] insert  @property(nonatomic, assign)double  window_2;
+@property(nonatomic, assign)Boolean  private_yr;
+@property(nonatomic, assign)Boolean  hasBundle;
+@property(nonatomic, assign)Boolean  enbaleQuery;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, assign)double  private_3q;
+@property(nonatomic, assign)double  maskOffset;
+@property(nonatomic, assign)int  m_title;
+
+[old: SDKIconTitleButton -> new: MCoolFishFrameworkButton] insert  @property(nonatomic, copy)NSString *  centerImpl_str;
+@property(nonatomic, assign)double  arac_size;
+
+[old: WelcomeBackView -> new: MCoolFishUtilView] insert  @property(nonatomic, copy)NSArray *  message_list;
+@property(nonatomic, copy)NSString *  levelImpCurrent_string;
+@property(nonatomic, assign)Boolean  is_Handler;
+@property(nonatomic, assign)int  labelCount;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, assign)NSInteger  genericMark;
+@property(nonatomic, copy)NSString *  blockWith_5lAccount_string;
+
+[old: LoginHelper -> new: MCoolFishBlock] insert  @property(nonatomic, assign)float  frameworkOffset;
+@property(nonatomic, assign)double  fileMargin;
+@property(nonatomic, assign)long  register_f;
+
+[old: SUtil -> new: MCoolFishResponse] insert  @property(nonatomic, assign)float  modelMin;
+@property(nonatomic, assign)double  layout_space;
+@property(nonatomic, assign)double  modelMax;
+
+[old: SDKTextFiledView -> new: MCoolFishFiledEncodingView] insert  @property(nonatomic, assign)NSInteger  backgroundIndex;
+@property(nonatomic, copy)NSString *  erviceFirebaseWeb_str;
+@property(nonatomic, assign)float  line_margin;
+@property(nonatomic, assign)float  request_offset;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, assign)Boolean  can_Password;
+@property(nonatomic, assign)NSInteger  apple_flag;
+@property(nonatomic, assign)float  session_size;
+@property(nonatomic, assign)Boolean  is_Editing;
+
+[old: SAppleLogin -> new: MCoolFishDelegate] insert  @property(nonatomic, copy)NSString *  sessionStr;
+@property(nonatomic, assign)double  animation_size;
+@property(nonatomic, assign)long  textSum;
+@property(nonatomic, assign)double  function_max;
+
+[old: SdkPrivateKeychainCfUUID -> new: MCoolFishNotice] insert  @property(nonatomic, assign)long  readerCount;
+@property(nonatomic, assign)double  lable_size;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, assign)NSInteger  array_tag;
+@property(nonatomic, assign)NSInteger  coreMark;
+@property(nonatomic, assign)double  message_offset;
+
+[old: ApplePay -> new: MCoolFishUtilTouch] insert  @property(nonatomic, copy)NSString *  backAdapt_string;
+@property(nonatomic, assign)long  orderSum;
+
+[old: LoginTitleView -> new: MCoolFishFiledGestureView] insert  @property(nonatomic, assign)long  label_sum;
+@property(nonatomic, copy)NSArray *  headerNewsArr;
+@property(nonatomic, assign)float  current_offset;
+@property(nonatomic, assign)double  animation_size;
+
+[old: HttpServiceEnginePay -> new: MCoolFishCenter] insert  @property(nonatomic, assign)NSInteger  encodingIndex;
+@property(nonatomic, assign)double  btnSpace;
+@property(nonatomic, assign)float  script_offset;
+
+[old: SdkCfUUID -> new: MCoolFishNews] insert  @property(nonatomic, assign)Boolean  enbale_Progress;
+@property(nonatomic, assign)float  lablePadding;
+
+[old: AccountListView -> new: MCoolFishMainView] insert  @property(nonatomic, assign)float  list_padding;
+@property(nonatomic, assign)double  beganMargin;
+@property(nonatomic, assign)Boolean  has_Fail;
+
+[old: FBDelegate -> new: MCoolFishServicePassword] insert  @property(nonatomic, assign)float  confPadding;
+@property(nonatomic, assign)double  firebase_min;
+
+[old: LoginTypeButton -> new: MCoolFishMainButton] insert  @property(nonatomic, assign)double  rotate_margin;
+@property(nonatomic, assign)int  userTag;
+@property(nonatomic, assign)float  valueSpace;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, copy)NSString *  baseSuccessGenericString;
+@property(nonatomic, copy)NSString *  draw_string;
+
+[old: MWApplePayManager -> new: MCoolFishAccountPrivate] insert  @property(nonatomic, assign)NSInteger  third_index;
+@property(nonatomic, assign)double  call_space;
+@property(nonatomic, assign)Boolean  hasIcon;
+@property(nonatomic, assign)float  utilMargin;
+
+[old: SdkKeychainItemWrapper -> new: MCoolFishThird] insert  @property(nonatomic, assign)NSInteger  callbackSum;
+@property(nonatomic, assign)double  progress_min;
+@property(nonatomic, copy)NSString *  impCallStr;
+@property(nonatomic, assign)Boolean  enbale_Model;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, assign)double  homeMin;
+@property(nonatomic, copy)NSString *  functionWelcome_string;
+@property(nonatomic, assign)NSInteger  core_mark;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, assign)double  bundleSpace;
+@property(nonatomic, assign)int  home_index;
+@property(nonatomic, copy)NSArray *  button_list;
+
+[old: TouchEventInterruptView -> new: MCoolFishWrapperView] insert  @property(nonatomic, assign)long  homeIdx;
+@property(nonatomic, assign)NSInteger  handerCount;
+@property(nonatomic, assign)int  functionFlag;
+@property(nonatomic, assign)double  footMargin;
+
+[old: PhoneInfoModel -> new: MCoolFishRequestEdit] insert  @property(nonatomic, assign)Boolean  can_Dic;
+@property(nonatomic, copy)NSArray *  arrayFirebaseArr;
+@property(nonatomic, copy)NSArray *  thirdButtonArr;
+@property(nonatomic, copy)NSArray *  modelArr;
+
+[old: CCSDKDATA -> new: MCoolFishEncodingPhone] insert  @property(nonatomic, copy)NSString *  currentCommonFrom_string;
+@property(nonatomic, assign)float  firebaseMargin;
+@property(nonatomic, assign)Boolean  q_count;
+@property(nonatomic, copy)NSArray *  selectedLable_list;
+
+[old: AlertUtil -> new: MCoolFishUserEdit] insert  @property(nonatomic, assign)double  localx_padding;
+@property(nonatomic, assign)float  draw_padding;
+
+[old: LoginWithRegView -> new: MCoolFishThirdStringView] insert  @property(nonatomic, assign)Boolean  enbale_Fail;
+@property(nonatomic, assign)long  function_count;
+@property(nonatomic, copy)NSArray *  delegate_8List;
+@property(nonatomic, assign)NSInteger  generic_tag;
+
+[old: GameUserModel -> new: MCoolFishEncoding] insert  @property(nonatomic, assign)double  modity_min;
+@property(nonatomic, assign)int  third_count;
+@property(nonatomic, assign)Boolean  canTable;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, assign)double  imp_margin;
+@property(nonatomic, assign)long  codeTag;
+@property(nonatomic, assign)NSInteger  boardIndex;
+@property(nonatomic, copy)NSArray *  helperArray;
+
+[old: SAlertViewDelegate -> new: MCoolFishErviceWelcome] insert  @property(nonatomic, assign)int  dataIdx;
+@property(nonatomic, assign)float  window_9n;
+@property(nonatomic, assign)Boolean  isBtn;
+@property(nonatomic, assign)Boolean  y_view;
+
+[old: AccountLoginView -> new: MCoolFishInterruptView] insert  @property(nonatomic, assign)double  password_max;
+@property(nonatomic, copy)NSArray *  urlsGestureInterfaceArr;
+@property(nonatomic, assign)float  textMax;
+@property(nonatomic, assign)NSInteger  service_mark;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, assign)double  alertMax;
+@property(nonatomic, assign)NSInteger  roleFlag;
+@property(nonatomic, assign)double  param_size;
+@property(nonatomic, assign)Boolean  enbaleTable;
+
+[old: LoginButton -> new: MCoolFishKeychainButton] insert  @property(nonatomic, copy)NSArray *  clickList;
+@property(nonatomic, copy)NSString *  centerModity_string;
+
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, assign)float  window_f8;
+@property(nonatomic, copy)NSArray *  hourCallEfault_list;
+
+[old: SAppleLogin -> new: MCoolFishDelegate] insert  @property(nonatomic, assign)long  gamaTag;
+@property(nonatomic, copy)NSString *  engineSelectFrame_7Str;
+
+[old: RegisterAccountView -> new: MCoolFishModityOrderView] insert  @property(nonatomic, assign)long  page_index;
+@property(nonatomic, copy)NSString *  progressThirdLineString;
+@property(nonatomic, assign)Boolean  enbale_Helper;
+
+[old: BJBaseHTTPEngine -> new: MCoolFishAlertReader] insert  @property(nonatomic, assign)Boolean  enbale_Error;
+@property(nonatomic, assign)Boolean  has_Engine;
+
+[old: ViewUtil -> new: MCoolFishElegateHeader] insert  @property(nonatomic, assign)double  labelSpace;
+@property(nonatomic, assign)long  model_sum;
+
+[old: BaseCountTimerView -> new: MCoolFishFunctionView] insert  @property(nonatomic, assign)double  progressMin;
+@property(nonatomic, assign)double  reader_min;
+
+[old: FindPasswordViewV2 -> new: MCoolFishLogin] insert  @property(nonatomic, assign)int  createIndex;
+@property(nonatomic, assign)long  password_count;
+
+[old: LineDelegate -> new: MCoolFishFiled] insert  @property(nonatomic, assign)NSInteger  querySum;
+@property(nonatomic, copy)NSString *  serviceStatusAreaString;
+@property(nonatomic, assign)long  elegate_index;
+@property(nonatomic, copy)NSString *  messageGesture_str;
+
+[old: BJBaseHTTPEngine -> new: MCoolFishAlertReader] insert  @property(nonatomic, copy)NSString *  codes_string;
+@property(nonatomic, copy)NSArray *  loggerArray;
+@property(nonatomic, assign)Boolean  has_Strings;
+
+[old: HttpServiceEngineAd -> new: MCoolFishWelcome] insert  @property(nonatomic, assign)int  termsIndex;
+@property(nonatomic, copy)NSString *  rameworkEditAdaptString;
+
+[old: BasePopupView -> new: MCoolFishBaseConfigView] insert  @property(nonatomic, assign)Boolean  has_Editing;
+@property(nonatomic, copy)NSArray *  unews_list;
+@property(nonatomic, assign)long  stringIdx;
+
+[old: BJServiceConfigurator -> new: MCoolFishKeychain] insert  @property(nonatomic, assign)double  impl_max;
+@property(nonatomic, assign)float  request_margin;
+
+[old: RegisterAccountViewV2 -> new: MCoolFishManager] insert  @property(nonatomic, assign)double  interruptMin;
+@property(nonatomic, assign)long  mode_idx;
+@property(nonatomic, assign)int  responseIdx;
+
+[old: TermsView -> new: MCoolFishHeaderView] insert  @property(nonatomic, assign)int  function_flag;
+@property(nonatomic, assign)int  main_p;
+@property(nonatomic, assign)double  layout_space;
+@property(nonatomic, assign)double  commonPadding;
+
+[old: HttpServiceEnginePay -> new: MCoolFishCenter] insert  @property(nonatomic, copy)NSArray *  interruptEvent_list;
+@property(nonatomic, assign)Boolean  enbaleGesture;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, assign)float  rotate_min;
+@property(nonatomic, assign)double  window_vv;
+@property(nonatomic, copy)NSString *  delegate_4_string;
+
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, copy)NSArray *  timerResponseArr;
+@property(nonatomic, copy)NSArray *  boardHelperStrings_list;
+@property(nonatomic, assign)float  modeSpace;
+@property(nonatomic, assign)long  orderIdx;
+
+[old: WelcomeBackView -> new: MCoolFishUtilView] insert  @property(nonatomic, assign)Boolean  hasBackground;
+@property(nonatomic, copy)NSArray *  user_Array;
+@property(nonatomic, assign)long  currentCount;
+@property(nonatomic, copy)NSArray *  maskCodesCallList;
+
+[old: ConfigCoreUtil -> new: MCoolFishPple] insert  @property(nonatomic, assign)NSInteger  timer_sum;
+@property(nonatomic, assign)Boolean  enbale_Line;
+@property(nonatomic, copy)NSArray *  localx_list;
+@property(nonatomic, assign)NSInteger  adaptMark;
+
+[old: BJBaseResponceModel -> new: MCoolFishChangeCenter] insert  @property(nonatomic, assign)NSInteger  serviceMark;
+@property(nonatomic, assign)NSInteger  coreTag;
+@property(nonatomic, assign)float  script_offset;
+@property(nonatomic, assign)float  indicatorMargin;
+
+[old: BindAccountViewV2 -> new: MCoolFishTermsWelcome] insert  @property(nonatomic, copy)NSString *  bindRrorConfiguratorStr;
+@property(nonatomic, assign)NSInteger  rotate_mark;
+@property(nonatomic, copy)NSArray *  termsGameConfigList;
+@property(nonatomic, assign)int  b_height;
+
+[old: ChangePasswordView -> new: MCoolFishNewsView] insert  @property(nonatomic, assign)double  wrapper_size;
+@property(nonatomic, assign)int  line_mark;
+@property(nonatomic, assign)double  window_o;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, copy)NSArray *  colorList;
+@property(nonatomic, assign)double  bindSize;
+
+[old: HttpServiceEngineLogin -> new: MCoolFishElegate] insert  @property(nonatomic, assign)double  fileSpace;
+@property(nonatomic, assign)double  home_space;
+@property(nonatomic, assign)int  close_index;
+@property(nonatomic, assign)NSInteger  string_idx;
+
+[old: SelectBindTypeView -> new: MCoolFishAppleGameView] insert  @property(nonatomic, assign)double  background_padding;
+@property(nonatomic, assign)double  c_manager;
+@property(nonatomic, assign)int  animationIdx;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, copy)NSArray *  stringsWindow_yy_Array;
+@property(nonatomic, copy)NSArray *  mainImageCoreArray;
+
+[old: MainHomeView -> new: MCoolFishWelcomeTouchView] insert  @property(nonatomic, copy)NSString *  indicatorUtil_str;
+@property(nonatomic, assign)float  passwordMax;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, copy)NSArray *  engineFirebaseFieldArray;
+@property(nonatomic, assign)float  roleOffset;
+@property(nonatomic, assign)double  alertSize;
+
+[old: HttpServiceEngineAd -> new: MCoolFishWelcome] insert  @property(nonatomic, assign)int  webIdx;
+@property(nonatomic, copy)NSString *  backFootStringStr;
+
+[old: SDKBaseView -> new: MCoolFishRegisterView] insert  @property(nonatomic, assign)long  efaultIndex;
+@property(nonatomic, assign)float  dimeMin;
+@property(nonatomic, copy)NSString *  commonStr;
+@property(nonatomic, assign)int  orientationSum;
+
+[old: HttpServiceEngineLogin -> new: MCoolFishElegate] insert  @property(nonatomic, assign)Boolean  enbale_Back;
+@property(nonatomic, assign)float  dime_size;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, copy)NSArray *  levelBtn_arr;
+@property(nonatomic, assign)long  error_idx;
+@property(nonatomic, assign)Boolean  isResponse;
+@property(nonatomic, copy)NSString *  totalStr;
+
+[old: BJError -> new: MCoolFishAlert] insert  @property(nonatomic, assign)double  animation_size;
+@property(nonatomic, copy)NSString *  rrorLogger_str;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, copy)NSArray *  utilList;
+@property(nonatomic, assign)int  adapt_index;
+
+[old: MainHomeView -> new: MCoolFishWelcomeTouchView] insert  @property(nonatomic, assign)long  handerSum;
+@property(nonatomic, copy)NSString *  efaultAdapt_string;
+@property(nonatomic, copy)NSString *  configuratorFailNews_str;
+@property(nonatomic, assign)Boolean  hasInfo;
+
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, copy)NSArray *  lnewsList;
+@property(nonatomic, assign)NSInteger  string_count;
+
+[old: SDKRequest -> new: MCoolFishWithCommon] insert  @property(nonatomic, copy)NSArray *  passwordResponseLabelArray;
+@property(nonatomic, assign)NSInteger  create_index;
+
+[old: BindAccountView -> new: MCoolFishPasswordView] insert  @property(nonatomic, assign)NSInteger  pageTag;
+@property(nonatomic, assign)double  editingPadding;
+@property(nonatomic, assign)NSInteger  messageTag;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, assign)NSInteger  confIndex;
+@property(nonatomic, assign)float  phoneSize;
+@property(nonatomic, assign)int  p_view;
+@property(nonatomic, assign)long  window_28;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, copy)NSArray *  arrayExpression_Array;
+@property(nonatomic, assign)int  close_sum;
+@property(nonatomic, assign)double  editing_space;
+@property(nonatomic, assign)Boolean  has_Rotate;
+
+[old: FindPasswordViewV2 -> new: MCoolFishLogin] insert  @property(nonatomic, assign)float  layout_margin;
+@property(nonatomic, copy)NSString *  codesBoardCenter_string;
+@property(nonatomic, copy)NSArray *  touchesPple_list;
+@property(nonatomic, assign)float  gameMin;
+
+[old: PhoneInfoModel -> new: MCoolFishRequestEdit] insert  @property(nonatomic, assign)float  phone_offset;
+@property(nonatomic, assign)double  frameworkMargin;
+@property(nonatomic, assign)double  userMin;
+
+[old: RegisterAccountViewV2 -> new: MCoolFishManager] insert  @property(nonatomic, assign)NSInteger  delete_s;
+@property(nonatomic, assign)Boolean  hasErvice;
+@property(nonatomic, assign)double  interruptMin;
+@property(nonatomic, assign)long  appleCount;
+
+[old: FindPasswordViewV2 -> new: MCoolFishLogin] insert  @property(nonatomic, copy)NSString *  vipDraw_str;
+@property(nonatomic, assign)double  account_size;
+@property(nonatomic, copy)NSArray *  fieldDelete_jqModityArr;
+
+[old: BindAccountViewV2 -> new: MCoolFishTermsWelcome] insert  @property(nonatomic, assign)Boolean  enbale_Board;
+@property(nonatomic, assign)double  ppleSize;
+@property(nonatomic, assign)long  phoneTag;
+@property(nonatomic, assign)long  tableIndex;
+
+[old: RegisterAccountViewV2 -> new: MCoolFishManager] insert  @property(nonatomic, assign)float  header_size;
+@property(nonatomic, assign)float  level_size;
+@property(nonatomic, assign)int  filedFlag;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, assign)long  bundleIndex;
+@property(nonatomic, assign)Boolean  enbaleAnimation;
+
+[old: BindAccountViewV2 -> new: MCoolFishTermsWelcome] insert  @property(nonatomic, assign)int  reader_sum;
+@property(nonatomic, assign)Boolean  is_Foot;
+@property(nonatomic, assign)double  bindMax;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, assign)int  arac_sum;
+@property(nonatomic, assign)int  main_e;
+@property(nonatomic, assign)long  notice_tag;
+@property(nonatomic, assign)float  sessionMin;
+
+[old: TermsViewV2 -> new: MCoolFishConfigType] insert  @property(nonatomic, assign)int  web_index;
+@property(nonatomic, assign)double  headerMax;
+@property(nonatomic, assign)double  pple_size;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, assign)long  type_mt;
+@property(nonatomic, assign)int  common_mark;
+@property(nonatomic, assign)long  fieldSum;
+@property(nonatomic, assign)Boolean  enbaleShould;
+
+[old: AccountLoginViewV2 -> new: MCoolFishButtonConfigurator] insert  @property(nonatomic, assign)long  interruptCount;
+@property(nonatomic, assign)int  layoutCount;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, copy)NSString *  frame_rString;
+@property(nonatomic, assign)Boolean  canScript;
+
+[old: LoginWithRegViewV2 -> new: MCoolFishType] insert  @property(nonatomic, assign)double  hander_padding;
+@property(nonatomic, assign)Boolean  is_Editing;
+@property(nonatomic, copy)NSString *  successNewsFramework_string;
+
+[old: BindPhoneViewV2 -> new: MCoolFishHomeManager] insert  @property(nonatomic, copy)NSString *  itemItemSecurityString;
+@property(nonatomic, assign)double  bundleSize;
+@property(nonatomic, copy)NSArray *  wkwebFrame_gTableList;
+@property(nonatomic, assign)double  readerOffset;
+
+[old: NoticeViewV2 -> new: MCoolFishBundle] insert  @property(nonatomic, assign)double  reader_min;
+@property(nonatomic, copy)NSString *  helper_str;
+@property(nonatomic, assign)long  orientationMark;
+@property(nonatomic, assign)double  headerMin;
+
+[old: MainHomeViewV2 -> new: MCoolFishFirebase] insert  @property(nonatomic, copy)NSArray *  status_arr;
+@property(nonatomic, assign)NSInteger  dataTag;
+@property(nonatomic, assign)double  serverPadding;
+
+[old: SDKLoginViewController -> new: MCoolFishManagerController] insert  @property(nonatomic, assign)int  selectTag;
+@property(nonatomic, assign)Boolean  canWelcome;
+@property(nonatomic, assign)float  background_offset;
+
+
+
+开始生成新混淆源文件。。。。。。。
+100%👌
+
+
+开始自动更新项目配置。。。。。。。
+100%👌

@@ -4,15 +4,15 @@
 #import "BaseSDK.h"
 #import "MWSDK.h"
 #import "ResHeader.h"
-#import "SUtil.h"
-#import "AdLogger.h"
+#import "MCoolFishResponse.h"
+#import "MCoolFishCore.h"
 #import "SdkHeader.h"
-#import "SDKRequest.h"
+#import "MCoolFishWithCommon.h"
 
-#import "FBDelegate.h"
-#import "FirebaseDelegate.h"
-#import "LineDelegate.h"
-#import "AdDelegate.h"
+#import "MCoolFishServicePassword.h"
+#import "MCoolFishEncodingWelcome.h"
+#import "MCoolFishFiled.h"
+#import "MCoolFishRameworkTerms.h"
 
 #import <UserNotifications/UserNotifications.h>
 #import <StoreKit/StoreKit.h>
@@ -100,31 +100,31 @@
 {
     SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
-    [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+    [MCoolFishCore logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
     
     // 广告初始化
     
-    [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    [MCoolFishRameworkTerms application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+    [MCoolFishWithCommon getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
         
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(MCoolFishAlert *error) {
         
     }];
     
-    [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+    [MCoolFishWithCommon getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
 
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(MCoolFishAlert *error) {
 
     }];
     
     //Facebook事件打点初始化
 //    [[GamaTimer shareInstance] gama_FBEventStartTimer];
     
-    [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
-    [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+    [MCoolFishServicePassword application:application didFinishLaunchingWithOptions:launchOptions];
+    [MCoolFishEncodingWelcome application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+    [MCoolFishCore logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
     
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
@@ -164,15 +164,15 @@
         --[UIApplication sharedApplication].applicationIconBadgeNumber;
     }
     
-    [AdDelegate applicationDidBecomeActive_MMMethodMMM:application];
+    [MCoolFishRameworkTerms applicationDidBecomeActive_MMMethodMMM:application];
     
-    [FBDelegate applicationDidBecomeActive_MMMethodMMM:application];
+    [MCoolFishServicePassword applicationDidBecomeActive_MMMethodMMM:application];
     
 }
 
 - (void)sdk_applicationWillTerminate_MMMethodMMM:(UIApplication *)application
 {
-    [FBDelegate applicationWillTerminate_MMMethodMMM:application];
+    [MCoolFishServicePassword applicationWillTerminate_MMMethodMMM:application];
 }
 
 - (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application
