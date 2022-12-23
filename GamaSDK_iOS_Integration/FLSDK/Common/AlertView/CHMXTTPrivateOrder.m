@@ -48,7 +48,7 @@ static NSArray<UIViewController *> *presentViewControllers;
 +(void)showAlertWithMessage_MMMethodMMM:(NSString *)message
 {
 
-    NSString *empty = @"確定";
+    NSString *empty = @"OK";
     
     [self showAlertWithMessage_MMMethodMMM:message
                            completion:nil
