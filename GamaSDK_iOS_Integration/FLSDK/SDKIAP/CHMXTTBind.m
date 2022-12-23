@@ -900,7 +900,7 @@ getsdkDown = getsdkDown;
         
         NSArray *plistv = response.products;
         if([plistv count] == 0){
-            [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"無法獲取商品信息，請重新嘗試購買")];
+            [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"Unable to fetch product, please try again")];//無法獲取商品信息，請重新嘗試購買
             NSArray * noticeN = @[@(6210.0)];
              if (noticeN.count > 92) {}
             return;
