@@ -78,7 +78,7 @@
 
 
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
-    NSArray *readPermissions = @[wwwww_tag_wwwww_public_profile];
+    NSArray *readPermissions = @[@"public_profile"];
     
     [self.loginManager logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
@@ -137,7 +137,7 @@
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
     if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_error, 0, nil);
+        self.failBlock(@"error", 0, nil);
     }
 }
 
@@ -176,7 +176,7 @@
                 }
                
             });
-            NSLog(wwwww_tag_wwwww_loadCurrentProfileWithCompletion);
+            NSLog(@"loadCurrentProfileWithCompletion");
             return;
         }];
         
@@ -265,9 +265,9 @@
 }
 
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
-    SDK_LOG(wwwww_tag_wwwww_sharerDidCancel);
+    SDK_LOG(@"sharerDidCancel");
     if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_cancel, 0, nil);
+        self.failBlock(@"cancel", 0, nil);
     }
 }
 

@@ -15,12 +15,13 @@
 //#define SDK_V3      1
 //#define SDK_V4      1
 
-#import "MWStringHeaders.h"
+#import "codeObfuscationForMethodName.h"
 #import "imageNameHeader.h"
-//#import "codeObfuscationForMethodName.h"
+
+#import "MWSDK.h"
+
+#import "MWStringHeaders.h"
 
 #import "ColorHeader.h"
-
-#define Decrypt_AllStringContent(text)  [[CrepitnessBringic reader_WLFuncTag] decryptAllStringContent_WLFuncTag:text]
 
 #endif /* preHeader_h */

@@ -57,7 +57,7 @@
                     break;
                 case SKPaymentTransactionStateDeferred:
                 {
-                    SDK_LOG(wwwww_tag_wwwww_SKPaymentTransactionStateDeferred);
+                    SDK_LOG(@"SKPaymentTransactionStateDeferred");
                 }
                     break;
                 default:
@@ -116,7 +116,7 @@
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{ 
     SDK_LOG(@"------------------错误didFailWithError-----------------:%@", error);
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(wwwww_tag_wwwww_kitchenfaction_hedr)];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:@"Failed to get product information from Apple"];
 
     });
 }
@@ -210,7 +210,7 @@
         [self requestProductData_MMMethodMMM:productId];
         
     }else{
-        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(wwwww_tag_wwwww_investmentibility_responseia)];
+        [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:(@"In-app purchases are not supported")];
     }
 }
 
@@ -333,11 +333,12 @@
 }
 
 #pragma mark -- 本地保存一次支付凭证
-static NSString *const kSaveReceiptData = wwwww_tag_wwwww_kSaveReceiptData_MW;
-static NSString *const kSaveReceiptData_receiptData = wwwww_tag_wwwww_kSaveReceiptData_receiptData;
-static NSString *const kSaveReceiptData_orderId = wwwww_tag_wwwww_kSaveReceiptData_orderId;
-static NSString *const kSaveReceiptData_transactionId = wwwww_tag_wwwww_kSaveReceiptData_transactionId;
-static NSString *const kSaveReceiptData_time = wwwww_tag_wwwww_kSaveReceiptData_time;
+static NSString *const kSaveReceiptData = @"kSaveReceiptData_MW";
+static NSString *const kSaveReceiptData_receiptData = @"kSaveReceiptData_receiptData";
+static NSString *const kSaveReceiptData_orderId = @"kSaveReceiptData_orderId";
+static NSString *const kSaveReceiptData_transactionId = @"kSaveReceiptData_transactionId";
+static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
+
 
 
 -(void)handleTransaction_MMMethodMMM:(SKPaymentTransaction *)transaction

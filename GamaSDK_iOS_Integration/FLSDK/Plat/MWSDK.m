@@ -100,7 +100,7 @@
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
     }
-    
+    self.sdkBaseEncryptKey = @"WMLLGameV2";
     return self;
 }
 
@@ -658,17 +658,9 @@
     }
 }
 
-
-#pragma mark - 内部方法
-
-- (void)gama_showPlatformToView:(UIView *)view
+- (NSString *)decryptStringContent:(NSString *)textEncrypContent
 {
-    
-}
-
-- (void)gama_hiddenPlatform
-{
-    
+    return [SDKRES decryptAllStringContent_MMMethodMMM:textEncrypContent];
 }
 
 @end
