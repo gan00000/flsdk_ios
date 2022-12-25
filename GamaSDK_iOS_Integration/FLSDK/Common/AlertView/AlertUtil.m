@@ -20,7 +20,7 @@ static NSArray<UIViewController *> *presentViewControllers;
 //简单显示Alert的方法
 +(void)showAlertWithMessage_MMMethodMMM:(NSString *)message
 {
-    NSString *tmp = @"確定";
+    NSString *tmp = @"OK";
     
     [self showAlertWithMessage_MMMethodMMM:message
                            completion:nil
