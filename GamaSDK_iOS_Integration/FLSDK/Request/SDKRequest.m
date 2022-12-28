@@ -44,7 +44,8 @@
         
         NSDictionary *responseDict = responseData;
         SDK_LOG(@"sdk config:%@",responseDict);
-        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];//需要分开解析
+//        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];//需要分开解析
+        NSArray<ConfigModel *> *allVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_allVersion]];
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_subVersion]];
         UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_url]];
         
@@ -71,8 +72,19 @@
                 }
             }
             
-            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//先匹配所有版本开关
-                SDK_DATA.mConfigModel = mCr.allVersion;
+//            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//先匹配所有版本开关
+//                SDK_DATA.mConfigModel = mCr.allVersion;
+//            }
+            
+            if (mCr.allVersion){
+                
+                for (ConfigModel *cm in mCr.allVersion) {
+                    
+                    if ([cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
+                        SDK_DATA.mConfigModel = cm;
+                        return;
+                    }
+                }
             }
             
         }else {
