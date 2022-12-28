@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL showForgetPwd;
 @property (nonatomic, assign) BOOL showNotice;
+@property (nonatomic, copy) NSString *platform;
 
 @end
 

@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ConfigResponse : MCoolFishChangeCenter
 
-@property (nonatomic, strong) ConfigModel *allVersion;
+//@property (nonatomic, strong) ConfigModel *allVersion;
+@property (nonatomic, strong) NSArray<ConfigModel *> *allVersion;
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;
 
 @property (nonatomic,strong) UrlMode *url;

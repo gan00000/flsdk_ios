@@ -459,7 +459,8 @@
         
         NSDictionary *responseDict = responseData;
         SDK_LOG(@"sdk config:%@",responseDict);
-        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];
+//        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];
+        NSArray<ConfigModel *> *allVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_allVersion]];
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_subVersion]];
         UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_url]];
         
@@ -485,8 +486,19 @@
                 }
             }
             
-            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[MCoolFishResponse getBundleIdentifier_MMMethodMMM]]) {
-                SDK_DATA.mConfigModel = mCr.allVersion;
+//            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[MCoolFishResponse getBundleIdentifier_MMMethodMMM]]) {
+//                SDK_DATA.mConfigModel = mCr.allVersion;
+//            }
+            
+            if (mCr.allVersion){
+                
+                for (ConfigModel *cm in mCr.allVersion) {
+                    
+                    if ([cm.packageName isEqualToString:[MCoolFishResponse getBundleIdentifier_MMMethodMMM]]) {
+                        SDK_DATA.mConfigModel = cm;
+                        return;
+                    }
+                }
             }
             
         }else {
