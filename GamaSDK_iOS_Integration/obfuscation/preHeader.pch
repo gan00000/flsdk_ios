@@ -18,8 +18,6 @@
 #import "codeObfuscationForMethodName.h"
 #import "imageNameHeader.h"
 
-#import "MWSDK.h"
-
 #import "MWStringHeaders.h"
 
 #import "ColorHeader.h"

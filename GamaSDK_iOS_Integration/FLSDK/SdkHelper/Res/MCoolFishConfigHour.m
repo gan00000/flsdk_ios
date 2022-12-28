@@ -370,6 +370,7 @@ static dispatch_once_t onceToken;
     }
     
     NSString *configInfoName = [self getSdkConfigInfoName_MMMethodMMM];
+    SDK_LOG(@"sdk config file name = %@.json", configInfoName);
     NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
     
     if (configInfoName_path) {

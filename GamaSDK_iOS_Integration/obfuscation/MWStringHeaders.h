@@ -9,6 +9,8 @@
 #ifndef Headers_h
 #define Headers_h
 
+#import "MWSDK.h"
+
 #define wwwww_tag_wwwww_install        Decrypt_AllStringContent(@"Yx+KM9uuHYRFU6Rt/R02dw==")  //@"install"
 #define wwwww_tag_wwwww_userId        Decrypt_AllStringContent(@"BlbHlL1zlenuJ2fhuIc+9Q==")  //@"userId"
 #define wwwww_tag_wwwww_time        Decrypt_AllStringContent(@"5vzFt426swsev3FJ9fimzQ==")  //@"time"
