@@ -320,7 +320,8 @@
             NSString * generic6 = @"sky";
         SDK_LOG(@"sdk config:%@",modity);
             NSArray * listf = @[@(177), @(60)];
-        ConfigModel *account = [ConfigModel yy_modelWithDictionary:modity[wwwww_tag_wwwww_allVersion]];
+//        ConfigModel *account = [ConfigModel yy_modelWithDictionary:modity[wwwww_tag_wwwww_allVersion]];
+        NSArray<ConfigModel *> *allVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:modity[wwwww_tag_wwwww_allVersion]];
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:modity[wwwww_tag_wwwww_subVersion]];
         UrlMode *forgot = [UrlMode yy_modelWithDictionary:modity[wwwww_tag_wwwww_url]];
         
@@ -329,7 +330,7 @@
             double rotatee = 7601.0;
              if (@(rotatee).floatValue >= 172) {}
         rotate.subVersion = subVersion;
-        rotate.allVersion = account;
+        rotate.allVersion = allVersion;
         rotate.url = forgot;
             int loginedu = 9701;
              while (@(loginedu).doubleValue > 31) { break; }
@@ -350,8 +351,19 @@
                 }
             }
             
-            if (rotate.allVersion && [rotate.allVersion.packageName isEqualToString:[CHMXTTBlock getBundleIdentifier_MMMethodMMM]]) {
-                SDK_DATA.mConfigModel = rotate.allVersion;
+//            if (rotate.allVersion && [rotate.allVersion.packageName isEqualToString:[CHMXTTBlock getBundleIdentifier_MMMethodMMM]]) {
+//                SDK_DATA.mConfigModel = rotate.allVersion;
+//            }
+            
+            if (rotate.allVersion){
+                
+                for (ConfigModel *cm in rotate.allVersion) {
+                    
+                    if ([cm.packageName isEqualToString:[CHMXTTBlock getBundleIdentifier_MMMethodMMM]]) {
+                        SDK_DATA.mConfigModel = cm;
+                        return;
+                    }
+                }
             }
             
         }else {
