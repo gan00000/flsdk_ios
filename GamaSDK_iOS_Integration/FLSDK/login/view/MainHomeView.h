@@ -1,10 +1,3 @@
-//
-//  MainLoginView.h
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import "SDKBaseView.h"
@@ -15,9 +8,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainHomeView : SDKBaseView
 
-//@property (nonatomic, strong) AccountLoginView *mAccountLoginView;
-//
-//@property (nonatomic, strong) RegisterAccountView *mRegisterAccountView;
+
+
+@property(nonatomic, assign)double  changed_margin;
+@property(nonatomic, assign)NSInteger  create_count;
+@property(nonatomic, copy)NSArray *  progressConfiguratorChangList;
+@property(nonatomic, assign)int  orientationTag;
+
+
+
+
+-(NSDictionary *)firebaseAllocatorFilenameFull:(NSArray *)changPlist;
+
+-(UITableView *)firebaseTokenLaunchSuffixRoboracityValTableView:(Boolean)movedUrls register_rdCalculate:(int)register_rdCalculate passwordError:(int)passwordError;
+
 
 - (instancetype)initView_MMMethodMMM;
 

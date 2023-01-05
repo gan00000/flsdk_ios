@@ -1,10 +1,3 @@
-//
-//  HelloUtils.h
-//
-//
-//  Created by Sunny on 17/2/6.
-//  Copyright © 2017年 sunn. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -15,12 +8,54 @@
 @interface SdkUtil : NSObject
 
 
+
+@property(nonatomic, assign)NSInteger  interruptSum;
+@property(nonatomic, assign)NSInteger  facebookSum;
+@property(nonatomic, assign)NSInteger  selected_tag;
+@property(nonatomic, assign)Boolean  has_Parse;
+
+
+
+
++(double)cancelFlyerAdjustsTerlessLableObject:(NSDictionary *)socialSubviews stop:(long)stop;
+
++(NSArray *)fractionArchiFunctionsPriority:(NSDictionary *)coreImage window_y:(NSInteger)window_y;
+
++(long)resetupLibHasPlegingPoint:(NSArray *)touch;
+
++(NSArray *)acceptableRevenueCountryAnythingIdmd:(NSArray *)observerContent;
+
++(NSString *)observeWrappingAuthorizeResource:(float)make viewHandle:(NSString *)viewHandle formatBundle:(NSArray *)formatBundle;
+
++(double)normalUtilIndexInfodic:(long)role;
+
++(NSArray *)placeTelephoneMakerRemake:(NSDictionary *)item;
+
++(NSArray *)masksJunkFatuWrapper;
+
++(NSArray *)downSkyStarety:(NSString *)m_layer hour:(int)hour;
+
++(double)changeSharerDecodeFunctions:(float)urls parent:(Boolean)parent;
+
++(double)addNavigationCountHtml:(Boolean)time_jaEncode keychainManager:(NSDictionary *)keychainManager;
+
++(NSString *)decideOnceSetupEditing;
+
++(int)writeAxisNative;
+
++(NSInteger)changDaysLaunchGameswordGasad:(NSArray *)reload completerTerminate:(NSArray *)completerTerminate changedAgree:(float)changedAgree;
+
++(NSArray *)evaluateScopesMaxDeviceClaimistic:(NSString *)selectIcon;
+
++(NSArray *)touchesNativeArchiFunction:(NSString *)paramsEncoding googleAddress:(float)googleAddress encryptRemove:(NSString *)encryptRemove;
+
++(NSInteger)borderKindHantInvalid:(NSDictionary *)payment_uw sdk:(double)sdk;
+
++(NSInteger)prefersChildOccurrencesAgree;
+
+
 #pragma mark - UI
 
-//+ (WKWebView *)createWKWebViewAndAddToParentViewWithRect_MMMethodMMM:(CGRect)rect
-//                                               urlStirng_MMMethodMMM:(NSString *)urlString
-//                                            cornerRadius_MMMethodMMM:(CGFloat)radius
-//                                                delegate:(id)delegate;
 
 
 
@@ -33,17 +68,14 @@
 
 + (void)toastMsg_MMMethodMMM:(NSString *)msg;
 + (void)toastMsg_MMMethodMMM:(NSString *)msg atView_MMMethodMMM:(UIView *)baseView;
-// loading
 + (void)showLoadingAtView_MMMethodMMM:(UIView *)baseView;
 + (void)stopLoadingAtView_MMMethodMMM:(UIView *)baseView;
 
 #pragma mark - Strings
 
-//去掉空字符
 + (NSString *)triString_MMMethodMMM:(NSString *)aStr;
 
 #pragma mark - TextField Rule
-// 字符验证
 + (BOOL)validUserName_MMMethodMMM:(NSString *)accountName;
 + (BOOL)validPwd_MMMethodMMM:(NSString *)pwd;
 + (BOOL)validEmail_MMMethodMMM:(NSString *)email;
@@ -51,10 +83,7 @@
 
 #pragma mark - 整合部分
 
-// guest 截屏過的憑證
-//+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView;
 
-//----账号密码的保存
 + (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName;
 + (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName;
 
@@ -65,7 +94,6 @@
 + (CGSize)sizeWithText_MMMethodMMM:(NSString *)text font_MMMethodMMM:(UIFont *)font maxSize_MMMethodMMM:(CGSize)maxSize;
 + (CGFloat)titleFontWedthWithMaxStr_MMMethodMMM:(NSString *)maxStr minStr_MMMethodMMM:(NSString *)minStr;
 
-//+(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView;
 
 +(NSMutableArray *)getShowBtnDatas_MMMethodMMM:(ConfigModel *)mConfigModel appleBtn_MMMethodMMM:(BOOL) appleBtn guestBtn_MMMethodMMM:(BOOL) guestBtn;
 

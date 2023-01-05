@@ -1,16 +1,22 @@
-//
-//  TermsView.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NoticeViewV2 : SDKBaseView
+
+@property(nonatomic, assign)Boolean  isGradient;
+@property(nonatomic, assign)NSInteger  progress_idx;
+@property(nonatomic, copy)NSString *  macaddressNumberStr;
+
+
+
+
+-(UITableView *)roleLayoutBoldTmpResponceTableView:(NSString *)game appleImage:(NSString *)appleImage;
+
+-(long)uppercaseOutstringNonnull:(NSString *)fromEncrypt dateSecurity:(double)dateSecurity board:(double)board;
+
+
 - (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer;
 
 @end

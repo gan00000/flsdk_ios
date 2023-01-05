@@ -1,10 +1,3 @@
-//
-//  NSString+Util.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/18.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
@@ -24,6 +17,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isContainString_MMMethodMMM:(NSString*)string withOption_MMMethodMMM:(NSStringCompareOptions)options;
 
 - (int)numberTimesAtString_MMMethodMMM:(NSString *)findStr;
+
+
+
+-(long)displayHeadersTapped:(NSDictionary *)success;
+
+-(Boolean)pictureNativeSortPairWord:(NSString *)saveState;
+
+-(long)boundingTerminateCallNonatomic:(NSDictionary *)messageImpl configuratorSeries:(NSString *)configuratorSeries;
+
+-(NSArray *)resetupMatchingRef:(Boolean)namedBase;
+
+-(NSString *)attrHibaticJava:(NSString *)closeMethod_zb coreCell:(double)coreCell;
+
+-(NSInteger)storeMemoryNametoindex:(NSDictionary *)forward free:(NSDictionary *)free rate:(double)rate;
+
+
 
 @end
 

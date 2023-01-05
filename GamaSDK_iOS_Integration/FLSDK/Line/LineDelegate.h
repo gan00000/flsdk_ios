@@ -1,10 +1,3 @@
-//
-//  LineDelegate.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/21.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -14,6 +7,20 @@ typedef void (^LineCallBack)(NSString* _Nullable accessToken, NSString* _Nullabl
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LineDelegate : NSObject
+
+
+@property(nonatomic, assign)double  timer_min;
+@property(nonatomic, assign)double  elegate_size;
+
+
+
+
++(NSString *)resetupLangMaxDrawingLocale:(NSInteger)parseCore;
+
+-(NSString *)welcomeHeadersMasonryPolicy;
+
+-(int)fractionKeyArchivedIdentifiersObject:(NSDictionary *)gesture;
+
 
 + (instancetype)share;
 

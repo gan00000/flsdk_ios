@@ -1,16 +1,26 @@
-//
-//  AccountLoginView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WelcomeBackView : SDKBaseView 
+
+
+@property(nonatomic, assign)double  delegate_yl;
+@property(nonatomic, copy)NSString *  dicOperationWelcomeStr;
+@property(nonatomic, assign)double  welcome_min;
+
+
+
+
+-(UIView *)clipsBindingFunctionsView:(NSArray *)authtication queryLogined:(NSArray *)queryLogined coreError:(NSArray *)coreError;
+
+-(double)uppercaseScopeMsg;
+
+-(float)ceilParamsPresentingArgPenoticHibatic:(int)self_yHour header:(NSString *)header preferred:(float)preferred;
+
+-(NSInteger)absoluteCalBindAppleHoplify:(NSString *)encoding;
+
 
 - (instancetype)initView_MMMethodMMM;
 

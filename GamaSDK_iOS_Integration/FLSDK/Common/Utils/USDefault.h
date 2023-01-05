@@ -1,16 +1,24 @@
-//
-//  USDefault.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/7/4.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface USDefault : NSObject
+
+
+@property(nonatomic, assign)float  order_space;
+@property(nonatomic, assign)Boolean  canValues;
+@property(nonatomic, assign)double  named_space;
+
+
+
+
++(long)bindSelectedDecisionFieldsNotiEdges:(NSString *)delete_dyInterface successWith_1:(NSDictionary *)successWith_1 titleReader:(NSInteger)titleReader;
+
++(NSString *)sureRedFit:(NSDictionary *)font query:(long)query;
+
++(NSArray *)updatedItemHasMoffsetDatasSuffix:(double)tableUpdate_sj;
+
 
 #pragma mark - private
 

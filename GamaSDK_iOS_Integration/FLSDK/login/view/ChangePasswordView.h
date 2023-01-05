@@ -1,16 +1,21 @@
-//
-//  ChangePasswordView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/13.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChangePasswordView : SDKBaseView
+
+@property(nonatomic, assign)int  z_title;
+@property(nonatomic, assign)Boolean  isConf;
+@property(nonatomic, assign)float  phoneOffset;
+@property(nonatomic, assign)NSInteger  facebookIdx;
+
+
+
+
+-(NSArray *)clipsFunctionTemptext:(float)flows;
+
+
 - (instancetype)initView_MMMethodMMM;
 @end
 

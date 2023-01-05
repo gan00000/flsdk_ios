@@ -1,53 +1,181 @@
-//
-//  GamaPhoneModel.m
-//  GamaModule
-//
-//  Created by wind on 2019/11/14.
-//  Copyright © 2019年 james. All rights reserved.
-//
 
 #import "PhoneInfoModel.h"
 #import "AlertUtil.h"
 #import "SdkHeader.h"
 
 @interface PhoneInfoModel()
-@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;
+
+@property(nonatomic, copy)NSArray *  frameworkUtilUserArr;
+@property(nonatomic, assign)double  filedSize;
+
+
+@property (nonatomic, strong) NSMutableArray *hander;
 @end
 
 @implementation PhoneInfoModel
 
-- (void)setData {
-    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
-    if (serverInfo) {
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
-    }else{
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
+
+- (NSString *)selectedAreaCodeValue
+{
+    if (!_selectedAreaCodeValue) {
+        if(self.hander.count > 0) self.selectedAreaCodeValue = [_hander[0] objectForKey:wwwww_tag_wwwww_value];
+    }
+    return _selectedAreaCodeValue;
+}
+
+-(NSString *)toastInteractionTransition:(NSDictionary *)perfom callAlert:(NSArray *)callAlert managerTouches:(NSArray *)managerTouches {
+     float session = 56.0;
+     double foot = 1426.0;
+    NSString *minutiaEcho = [[NSString alloc] init];
+         int a_20 = (int)session;
+     switch (a_20) {
+          case 76: {
+          a_20 *= 33;
+          a_20 += 23;
+             break;
+
+     }
+          case 9: {
+          a_20 /= 2;
+             break;
+
+     }
+     default:
+         break;
+
+     }
+         int t_10 = (int)foot;
+     if (t_10 != 349) {
+          t_10 += 65;
+     }
+
+    return minutiaEcho;
+
+}
+
+
+
+
+
+
+- (NSMutableArray *)hander
+{
+
+         {
+    [self toastInteractionTransition:@{@"hurt":@(288)} callAlert:[NSArray arrayWithObjects:@(804), @(817), @(823), nil] managerTouches:[NSArray arrayWithObjects:@(178), @(349), nil]];
+
+}
+
+    if (!_hander) {
+        _hander = [NSMutableArray array];
+    }
+    return _hander;
+}
+
+
+- (NSString *)selectedAreaCodeKey
+{
+    if (!_selectedAreaCodeKey) {
+        if(self.hander.count > 0) self.selectedAreaCodeKey = [_hander[0] objectForKey:wwwww_tag_wwwww_key];
+    }
+    return _selectedAreaCodeKey;
+}
+
+-(NSString *)addXtextCurrentRemakeUnique:(double)progressClose {
+    NSString *substratum = [NSString string];
+
+    return substratum;
+
+}
+
+
+
+
+
+
+- (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
+
+{
+
+         {
+    [self addXtextCurrentRemakeUnique:2373.0];
+
+}
+
+    if (newAreaCodesArray.count >0 && [self.hander isKindOfClass:[NSMutableArray class]]) {
+        [self.hander removeAllObjects];
+            float touches0 = 1963.0;
+             if (@(touches0).floatValue == 178) {}
+        [self.hander addObjectsFromArray:newAreaCodesArray];
+        
+        self.selectedAreaCodeKey = _hander[0][wwwww_tag_wwwww_key];
+            NSString * block5 = @"constellation";
+        self.selectedAreaCodeValue = _hander[0][wwwww_tag_wwwww_value];
+            NSDictionary * frameworkt = @{@"administrative":@(4346.0)};
+             if (frameworkt.count > 1) {}
+        self.selectedRegularExpression = _hander[0][wwwww_tag_wwwww_pattern];
     }
 }
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-        [self setData];
-        
-    }
-    return self;
+#pragma mark - Getter&Setter
+
+-(NSDictionary *)oneSeriousRightValuesSin:(NSDictionary *)responceTerms register_f:(NSString *)register_f getsdkDelegate_pc:(long)getsdkDelegate_pc {
+     double buttonReader = 3108.0;
+    NSMutableDictionary * requitalSubstantialDoggedly = [NSMutableDictionary dictionaryWithObject:@(201)forKey:@"plod"];
+    buttonReader += buttonReader;
+    [requitalSubstantialDoggedly setObject: @(buttonReader) forKey:@"covenantDismemberAsylum"];
+         int _p_33 = (int)buttonReader;
+     int j_96 = 1;
+     int t_48 = 0;
+     if (_p_33 > t_48) {
+         _p_33 = t_48;
+     }
+     while (j_96 < _p_33) {
+         j_96 += 1;
+          _p_33 -= j_96;
+     int v_48 = j_96;
+          if (v_48 >= 898) {
+          }
+     else if (v_48 == 731) {
+     
+     }
+         break;
+     }
+
+    return requitalSubstantialDoggedly;
+
 }
+
+
+
+
 
 - (void)showAreaCodesActionSheetFromView_MMMethodMMM:(UIButton *)view
 {
+
+   self.frameworkUtilUserArr = @[@(507), @(794), @(308)];
+
+   self.filedSize = 8368.0;
+
+   self.loggerFlag = 9701;
+
+   self.googleManager_list = [NSArray arrayWithObjects:@(521), @(452), nil];
+
+         {
+    [self oneSeriousRightValuesSin:@{@"e":@"X", @"5":@"j"} register_f:@"auspicious" getsdkDelegate_pc:4912];
+
+}
+
+   self.sheet_sum = 5894;
+
+   self.plistSum = 8642;
+
     NSMutableArray *tempArray = [NSMutableArray array];
 
-//    [self.gamaAreaCodesArray removeAllObjects];
-//    [self.gamaAreaCodesArray addObjectsFromArray:[GamaPhoneModel fetchPhoneNumber]];
-//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[PhoneInfoModel fetchPhoneNumber]];
     
-    //将sheet设置为默认的港台区号
-//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
     
-    for (NSDictionary *dict in self.gamaAreaCodesArray)
+    
+    for (NSDictionary *dict in self.hander)
     {
         [tempArray addObject:[dict objectForKey:wwwww_tag_wwwww_text]];
     }
@@ -57,13 +185,19 @@
     [AlertUtil showActionSheetWithTitle_MMMethodMMM:wwwww_tag_wwwww_text_select_phone_area_title.localx
                                     message_MMMethodMMM:@""
                               callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
-                                  if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
+                                  if (btnIndex > 0 && btnIndex <= weakSelf.hander.count)
                                   {
-                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];//因0為cancel
+                                      NSDictionary *dict = [weakSelf.hander objectAtIndex:btnIndex-1];
+            float coder = 678.0;
+             while (@(coder).longValue > 128) { break; }
                                       weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
+            Boolean upload1 = YES;
+             while (!upload1) { __asm__("NOP"); break; }
                                       weakSelf.selectedAreaCodeKey = [dict objectForKey:wwwww_tag_wwwww_key];
+            NSDictionary * resetup9 = @{@"awkwardly":@(3689.0)};
+             while (resetup9.count > 107) { break; }
                                       weakSelf.selectedRegularExpression = [dict objectForKey:wwwww_tag_wwwww_pattern];
-                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
+                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])
                                       {
                                           [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
                                       }
@@ -74,45 +208,30 @@
                           otherButtonTitles_MMMethodMMM:[NSArray arrayWithArray:tempArray]
                                  sourceView_MMMethodMMM:view
                              arrowDirection_MMMethodMMM:UIPopoverArrowDirectionLeft];
+            int chang_ = 2756;
+             if (@(chang_).floatValue > 159) {}
 }
 
-//有两个地方调用这个方法，一个是一开始只有两个默认地区，另一个是经过访问服务器后得到的地区区号
-- (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
 
+- (void)setData {
+    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
+    if (serverInfo) {
+        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
+    }else{
+        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
+    }
+}
+
+
+- (id)init
 {
-    if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray isKindOfClass:[NSMutableArray class]]) {
-        [self.gamaAreaCodesArray removeAllObjects];
-        [self.gamaAreaCodesArray addObjectsFromArray:newAreaCodesArray];
+    self = [super init];
+    if (self) {
         
-        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][wwwww_tag_wwwww_key];
-        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][wwwww_tag_wwwww_value];
-        self.selectedRegularExpression = _gamaAreaCodesArray[0][wwwww_tag_wwwww_pattern];
+        [self setData];
+        
     }
-}
-
-#pragma mark - Getter&Setter
-- (NSMutableArray *)gamaAreaCodesArray
-{
-    if (!_gamaAreaCodesArray) {
-        _gamaAreaCodesArray = [NSMutableArray array];
-    }
-    return _gamaAreaCodesArray;
-}
-
-- (NSString *)selectedAreaCodeKey
-{
-    if (!_selectedAreaCodeKey) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
-    }
-    return _selectedAreaCodeKey;
-}
-
-- (NSString *)selectedAreaCodeValue
-{
-    if (!_selectedAreaCodeValue) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
-    }
-    return _selectedAreaCodeValue;
+    return self;
 }
 
 @end

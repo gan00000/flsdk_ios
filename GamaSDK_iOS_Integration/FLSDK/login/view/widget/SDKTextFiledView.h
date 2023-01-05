@@ -1,10 +1,3 @@
-//
-//  SDKTextFiledView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 #import "SdkHeader.h"
@@ -23,6 +16,26 @@ typedef NS_OPTIONS(NSUInteger, SDKTextFiledView_Type)
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKTextFiledView : SDKBaseView
+
+
+@property(nonatomic, assign)Boolean  has_Block;
+@property(nonatomic, assign)long  stringCount;
+@property(nonatomic, assign)float  select_margin;
+@property(nonatomic, assign)float  custom_offset;
+
+
+
+
+-(UIView *)mallocMsghdrJosnMemoryDeviceVerficationView:(NSArray *)productsApplication;
+
+-(NSArray *)authorCountFrontRead:(NSString *)qinitializeBundle;
+
+-(UIView *)oneBundleRadiusView:(NSString *)informationConf welcomeData:(NSString *)welcomeData decryptSelected:(NSString *)decryptSelected;
+
+-(Boolean)masksCustomerSync:(NSArray *)interruptUser dataNotice:(NSArray *)dataNotice block:(double)block;
+
+-(double)storeSyncSign;
+
 
 - (instancetype)initViewWithType_MMMethodMMM:(SDKTextFiledView_Type) type;
 -(void)setPwdFiledView_MMMethodMMM:(BOOL)enable;

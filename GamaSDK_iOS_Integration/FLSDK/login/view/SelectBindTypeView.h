@@ -1,16 +1,21 @@
-//
-//  SelectBindTypeView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/13.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectBindTypeView : SDKBaseView
+
+@property(nonatomic, assign)double  email_max;
+@property(nonatomic, assign)long  header_flag;
+
+
+
+
+-(NSString *)placeNibAttrAccontContextNametoindex:(NSArray *)emailReload;
+
+-(NSDictionary *)multipliedCalendarConnectedWordGesture;
+
+
 - (instancetype)initView_MMMethodMMM;
 @end
 

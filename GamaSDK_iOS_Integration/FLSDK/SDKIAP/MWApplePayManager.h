@@ -1,10 +1,3 @@
-//
-//  MWApplePayManager.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/27.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "GameUserModel.h"
@@ -18,21 +11,45 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MWApplePayManager : NSObject
 
+
+@property(nonatomic, copy)NSString *  input_str;
+@property(nonatomic, assign)NSInteger  touchSum;
+
+
+
+
++(NSInteger)unitPermissionsImgAresultWeb:(NSString *)portrait animationPesenting:(NSString *)animationPesenting show:(NSArray *)show;
+
+-(NSArray *)dismissSignRectRuntime;
+
+-(NSArray *)stopAxisWkwebTypesAlgorithmUser:(NSDictionary *)keyboard call:(NSArray *)call workWith_4:(NSString *)workWith_4;
+
+-(Boolean)externalMobileToastSubSisteraryMcm:(long)color dismiss:(int)dismiss updata:(NSString *)updata;
+
+-(NSArray *)baseUserdefaultReissueSublayer;
+
+-(NSString *)temSharingRequsetHanderContractHave;
+
+-(NSArray *)backNendAgainArgsDomainPerical:(NSDictionary *)elegate type_uc:(NSDictionary *)type_uc dealloc_q:(NSDictionary *)dealloc_q;
+
+-(NSString *)landspacePercentSafeCouldnAppkeyCor;
+
+-(Boolean)ceilFamilyConfigbundleConnectionDispatch:(double)will;
+
+-(NSDictionary *)saveResourcePresentingScriptIndicatorKind:(long)private__Close frameworkFramework:(NSString *)frameworkFramework;
+
+-(Boolean)impResponderUnknownNullable:(NSDictionary *)keyboardAction termsStyle:(NSDictionary *)termsStyle;
+
+-(float)postPesentingSecondsLbd:(NSInteger)selectedPament;
+
+
 + (instancetype)shareManager_MMMethodMMM;
 
-/** 检测客户端与服务器漏单情况处理*/
+ 
 - (void)checkOrderStatus_MMMethodMMM;
 
 
-/**
-  根据商品ID请求支付信息
-
-
- @param orderId 订单号
- @param productId 商品号
- @param statusBlock 回掉block
- */
-//- (void)requestProductWithOrderId:(NSString *)orderId productId_MMMethodMMM:(NSString *)productId statusBlock:(XSProductStatusBlock)statusBlock;;
+ 
 
 -(void)startPayWithProductId_MMMethodMMM:(NSString *)productId cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel accountModel_MMMethodMMM:(AccountModel*) accountModel payStatusBlock_MMMethodMMM:(PayStatusBlock)payStatusBlock;
 

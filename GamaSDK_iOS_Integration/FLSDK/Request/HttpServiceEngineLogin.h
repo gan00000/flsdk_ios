@@ -1,10 +1,3 @@
-//
-//  BJHTTPServiceEngine.h
-//  BenjiaPro
-//
-//  Created by Marco on 2017/6/6.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "BJBaseHTTPEngine.h"
@@ -14,6 +7,22 @@ typedef void (^BJServiceSuccessBlock)(id responseData);
 typedef void (^BJServiceErrorBlock)(BJError *error);
 
 @interface HttpServiceEngineLogin : NSObject
+
+
+@property(nonatomic, assign)float  decode_offset;
+@property(nonatomic, assign)int  date_count;
+@property(nonatomic, assign)Boolean  enbaleStop;
+@property(nonatomic, assign)double  query_padding;
+
+
+
+
++(double)ceilDicBackBdfbTransition:(NSDictionary *)success session:(long)session;
+
++(Boolean)logFailurePadding:(NSDictionary *)close;
+
++(Boolean)logoEncodeLprojGuestNendDangerous:(NSDictionary *)block write:(Boolean)write;
+
 
 + (void)getRequestWithFunctionPath_MMMethodMMM:(NSString *)path
                             params_MMMethodMMM:(NSDictionary *)params

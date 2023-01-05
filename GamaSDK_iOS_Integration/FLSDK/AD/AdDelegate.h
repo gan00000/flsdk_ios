@@ -1,10 +1,3 @@
-//
-//  AFDelegate.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/28.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -12,15 +5,28 @@
 
 typedef NS_OPTIONS(NSUInteger, AdType) {
     AdType_None        = 0,
-    AdType_Appflyer            =  1 << 1,   // 0000 0001
-    AdType_FB                  =  1 << 2,   // 0000 0010
-    AdType_Firebase            =  1 << 3,   // 0000 0100
+    AdType_Appflyer            =  1 << 1,   
+    AdType_FB                  =  1 << 2,   
+    AdType_Firebase            =  1 << 3,   
     AdType_All                 = AdType_Appflyer | AdType_FB | AdType_Firebase,
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AdDelegate : NSObject
+
+
+@property(nonatomic, copy)NSArray *  headerRateAuthrizationArr;
+@property(nonatomic, assign)double  gama_offset;
+@property(nonatomic, assign)int  httpMark;
+
+
+
+
++(NSDictionary *)checkInstancetypeStoreSelectOtherResource:(NSInteger)webShared model:(NSString *)model boardView:(Boolean)boardView;
+
++(double)perfomHitNotificationSaving:(NSString *)workUpdate_h8 requestRect:(NSDictionary *)requestRect namedAdapt:(NSArray *)namedAdapt;
+
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
@@ -32,7 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type;
-//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
 + (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type;
 

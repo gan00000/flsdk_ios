@@ -1,10 +1,5 @@
-//
-//
 
-/*  这是一个单例，目的从加密的plist文件“EncryptCoreInfo”中获取游戏的配置信息。
  
- 获取到加密信息（key和value都加密的字典）以后，进行对应的解密，存在自己的_coneConfDic中
- 并且提供一个接口“getStringForKey：”方法，供其他需要的地方获取。*/
 
 #define SDK_DEFAULT_BUNDLE_NAME  [[ResReader reader_MMMethodMMM] getSdkBundleName_MMMethodMMM]
 
@@ -12,27 +7,81 @@
 
 @interface ResReader : NSObject
 
-@property (nonatomic,strong) NSDictionary * mySdkConfDic;//配置文件不放在bundle，以前是放在bundle
 
-@property (nonatomic,strong) NSDictionary * mainBundleConfDic;//配置文件不放在bundle，以前是放在bundle
-//@property (nonatomic, strong) NSMutableDictionary *areaCodeDic;
+@property(nonatomic, assign)double  checkPadding;
+@property(nonatomic, assign)double  interrupt_offset;
+
+
+
+
+-(NSDictionary *)borderGameswordRootPlaceholderNumberFire:(NSString *)perfom logout:(double)logout;
+
+-(float)commonKitTermsMsghdrPositionRequest;
+
+-(NSDictionary *)landspaceEffortfoldBugUnable:(NSDictionary *)commonHidden;
+
+-(NSString *)hashOauthSheet;
+
+-(NSString *)whiteCapacityUpdataDelays;
+
+-(double)safePeccWhitespaceEntriesActiveNib;
+
+-(NSInteger)dequeueBetteritiveHttpFormatPrimath:(NSDictionary *)textBind responceIcon:(Boolean)responceIcon;
+
+-(NSString *)placeHanderLogOnlyFilename:(float)request;
+
++(NSDictionary *)safeDisableRegularArchiver:(NSInteger)buttonCodes;
+
+-(double)unarchiveMoffsetHolder:(int)binding wrapperFinish:(int)wrapperFinish errorLast:(int)errorLast;
+
+-(NSArray *)highlightedBdfbRootJunkCdnEditing;
+
+-(NSDictionary *)drawDirectoryCenterLogoutArchi:(float)sharedWelcome requestDisappear:(NSArray *)requestDisappear;
+
+-(Boolean)subTextDequeueProgressRestoredGama:(NSArray *)alertBolck;
+
+-(NSArray *)completeCredentialAbsoluteModelsHint;
+
+-(NSArray *)writeNamedCountryMakeActionRate:(NSDictionary *)localxFile timesSocial:(NSString *)timesSocial;
+
+-(double)runCallAppTrailingParameters;
+
+-(NSString *)firebaseFolderWhitespaceFailureNumber:(NSArray *)time_e terms:(NSArray *)terms;
+
+-(double)phonePentMillisecondLangResopnse:(NSArray *)controllerPrefers read:(NSString *)read resetVip:(NSString *)resetVip;
+
+-(NSArray *)canHandledCheckBottomChangeAssign;
+
+-(NSString *)touchesConfirmNeedsFatuPatternArry:(NSInteger)bundle forgot:(long)forgot;
+
+-(float)requireStatusCurrentNullableCurrency:(long)configLocalx sections:(NSDictionary *)sections hideGesture:(NSString *)hideGesture;
+
+-(NSInteger)saveEsclipeSortLegthTelephoneCrypto:(NSInteger)modelsItem;
+
+-(NSArray *)pwdAdvertiserReuseGamid:(NSDictionary *)uncomplete;
+
+-(NSDictionary *)fontProviderBaseBolckProfileFit;
+
+-(Boolean)requsetTitlesTableviewHeight:(Boolean)edit;
+
+
+@property (nonatomic,strong) NSDictionary * mySdkConfDic;
+
+@property (nonatomic,strong) NSDictionary * mainBundleConfDic;
 @property (nonatomic, strong) NSMutableArray *areaInfoArray;
 
 @property (nonatomic,strong) NSMutableDictionary * textStringDic;
 
 + (ResReader *)reader_MMMethodMMM;
-//+ (void)releaseReader;
 
-/*配置文件都会读取到该单例的字典中，使用单例中的配置信息时候，可以通过该方法，查询并获取对应的值。*/
+ 
 - (NSString *)getStringForKey_MMMethodMMM:(NSString *)key;
 
 - (BOOL)getBoolForKey_MMMethodMMM:(NSString *)key;
 
 - (NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key;
 
-//- (void)setEncryptPlistWithKey:(NSString *)key andValue:(NSString *)val;
 
-//- (void)setBundleInfo_MMMethodMMM;
 
 
 -(NSString *)getGameCode_MMMethodMMM;

@@ -1,10 +1,3 @@
-//
-//  HttpServiceEngineAd.h
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/22.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "BJBaseHTTPEngine.h"
@@ -14,6 +7,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HttpServiceEngineAd : NSObject
+
+
+@property(nonatomic, assign)float  http_max;
+@property(nonatomic, assign)long  moved_index;
+@property(nonatomic, assign)double  localx_space;
+
+
+
+
++(NSInteger)resetupCodeResignNumberatureRadius:(int)field wrapper:(NSArray *)wrapper fieldPple:(double)fieldPple;
+
 
 + (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
                              params_MMMethodMMM:(NSDictionary *)params

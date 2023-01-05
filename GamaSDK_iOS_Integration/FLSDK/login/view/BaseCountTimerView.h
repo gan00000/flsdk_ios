@@ -1,10 +1,3 @@
-//
-//  FindPasswordView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 #import "CountTimerDelegate.h"
@@ -12,6 +5,22 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseCountTimerView : SDKBaseView
+
+
+@property(nonatomic, copy)NSArray *  confireFiledWorkList;
+@property(nonatomic, assign)float  security_max;
+@property(nonatomic, assign)double  callMin;
+@property(nonatomic, copy)NSArray *  tableSharedRegister_i_Array;
+
+
+
+
+-(long)josnWrapperObserveJavascriptWarmInvalid:(NSArray *)urls codeScript:(NSInteger)codeScript window_l:(NSString *)window_l;
+
+-(NSArray *)swithInformationRecoverRecognizer:(NSString *)empty;
+
+-(NSString *)mallocEcodingSdkSynchronizeAppending;
+
 
 @property (assign,nonatomic) NSInteger totalCount;
 @property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;

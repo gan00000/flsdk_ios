@@ -1,4 +1,3 @@
-//
 
 #import "SdkPrivateKeychainCfUUID.h"
 #import "ResHeader.h"
@@ -6,46 +5,84 @@
 
 @implementation SdkPrivateKeychainCfUUID
 
-+ (NSString*)customUUID_MMMethodMMM
-{
-    NSString *result = nil;
-    result=[SdkPrivateKeychainCfUUID getCfUUID_MMMethodMMM];
-    
-    if (result==nil)
-    {
-        [self saveCfUUID_MMMethodMMM];
-        result=[self getCfUUID_MMMethodMMM];
-    }
-    return result;
++(Boolean)waitStringState{
+     float should = 704.0;
+     double flows = 6799.0;
+    BOOL boulderDenimDivine = NO;
+    should = 2558;
+    boulderDenimDivine = should > 18;
+         int _a_78 = (int)should;
+     _a_78 += 72;
+    flows = should;
+    flows = flows;
+    boulderDenimDivine = flows > 56;
+         int tmp_f_33 = (int)flows;
+     if (tmp_f_33 < 368) {
+          }
+     else {
+          tmp_f_33 += 31;
+     
+     }
+
+    return boulderDenimDivine;
+
 }
 
-//创建cfUUID并且保存
+
+
+
+
+
 +(void)saveCfUUID_MMMethodMMM
 {
-    //创建cfUUDI
+
+    
     CFUUIDRef cfuuid = CFUUIDCreate(kCFAllocatorDefault);
     NSString *cfuuidString = (NSString*)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, cfuuid));
     
     if (SDK_KEY_CHAIN_KEY.length > 0 && cfuuidString.length > 0)
     {
-        // 一个mutable字典结构存储item信息
+        
         NSMutableDictionary* dic = [NSMutableDictionary dictionary];
-        // 确定所属的类class
+        
         [dic setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
-        // 设置其他属性attributes
+        
         [dic setObject:SDK_KEY_CHAIN_KEY forKey:(id)kSecAttrAccount];
-        // 添加密码 secValue 注意是object 是 NSData
+
+         {
+    [self waitStringState];
+
+}
+        
         [dic setObject:[cfuuidString dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
-        // SecItemAdd
+        
         OSStatus s = SecItemAdd((CFDictionaryRef)dic, NULL);
     }
 }
 
++(NSDictionary *)acceptableTextValidTeleoatorIfmDelay:(int)interrupt empty:(NSDictionary *)empty {
+    NSMutableDictionary * replicateFacilitateComparison = [NSMutableDictionary dictionaryWithCapacity:330];
+
+    return replicateFacilitateComparison;
+
+}
+
+
+
+
+
+
 +(NSString *)getCfUUID_MMMethodMMM
 {
+
+         {
+    [self acceptableTextValidTeleoatorIfmDelay:7715 empty:@{@"skillful":@(4260)}];
+
+}
+
     if (SDK_KEY_CHAIN_KEY.length >0)
     {
-        // 查找条件：1.class 2.attributes 3.search option
+        
         NSDictionary* query = [NSDictionary dictionaryWithObjectsAndKeys:
                                kSecClassGenericPassword,
                                kSecClass,
@@ -54,18 +91,22 @@
                                kCFBooleanTrue,
                                kSecReturnAttributes,
                                nil];
+            double keyD = 7920.0;
+             if (@(keyD).doubleValue >= 113) {}
         CFTypeRef result = nil;
-        // 先找到一个item
+        
         OSStatus s = SecItemCopyMatching((CFDictionaryRef)query, &result);
 
         if (s == noErr)
         {
-            // 继续查找item的secValue
+            
             NSMutableDictionary* dic = [NSMutableDictionary dictionaryWithDictionary:result];
-            // 存储格式
+            
             [dic setObject:(id)kCFBooleanTrue forKey:kSecReturnData];
-            // 确定class
+            
             [dic setObject:[query objectForKey:kSecClass] forKey:kSecClass];
+            NSDictionary * codesQ = @{@"boiler":@(6940)};
+             if (codesQ[@"l"]) {}
             NSData* data = [[NSData alloc]init];
             if (SecItemCopyMatching((CFDictionaryRef)dic, (CFTypeRef*)&data) == noErr)
             {
@@ -77,6 +118,25 @@
         }
     }
     return nil;
+}
+
+
++ (NSString*)customUUID_MMMethodMMM
+{
+
+    NSString *result = nil;
+            double devicep = 9610.0;
+             if (@(devicep).intValue > 14) {}
+    result=[SdkPrivateKeychainCfUUID getCfUUID_MMMethodMMM];
+    
+    if (result==nil)
+    {
+        [self saveCfUUID_MMMethodMMM];
+            NSArray * wrapper8 = @[@(610), @(62)];
+             if (wrapper8.count > 131) {}
+        result=[self getCfUUID_MMMethodMMM];
+    }
+    return result;
 }
 
 @end

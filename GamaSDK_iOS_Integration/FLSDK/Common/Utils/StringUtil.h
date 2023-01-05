@@ -1,16 +1,20 @@
-//
-//  StringUtil.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/18.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StringUtil : NSObject
+
+
+
+@property(nonatomic, assign)float  sessionSize;
+@property(nonatomic, assign)NSInteger  http_mark;
+@property(nonatomic, assign)int  session_count;
+
+
+
+
++(double)rightPlasativeSdkLocalizedPngArchi:(NSString *)message icon:(NSDictionary *)icon;
 
 
 +(BOOL) isEmpty_MMMethodMMM:(NSString *)s;

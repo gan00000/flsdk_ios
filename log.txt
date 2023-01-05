@@ -1,0 +1,1484 @@
+开始自动混淆项目代码扫描文件中。。。。。。
+
+
+混淆项目路径：/Users/ganyuanrong/iOSProject/flsdk_ios_v55
+文件 : AdLogger.h
+文件 : AdDelegate.h
+文件 : GIDDelegate.h
+文件 : FirebaseDelegate.h
+文件 : FBDelegate.h
+文件 : UIUtil.h
+文件 : CCSkyHourFunction.h
+文件 : StringUtil.h
+文件 : UIImage+GamaBundleImage.h
+文件 : USDefault.h
+文件 : SUtil.h
+文件 : SdkPrivateKeychainCfUUID.h
+文件 : SdkCfUUID.h
+文件 : SdkKeychainItemWrapper.h
+文件 : UIColor+HexStringToColorTW.h
+文件 : NSString+URLEncoding.h
+文件 : NSString+Common.h
+文件 : UIScreen+Sdk.h
+文件 : UIView+BlockGesture.h
+文件 : UIColor+HexColor.h
+文件 : UIAlertController+Sdk.h
+文件 : AlertUtil.h
+文件 : SAlertViewDelegate.h
+文件 : BJBaseHTTPEngine.h
+文件 : LineDelegate.h
+文件 : BJServiceConfigurator.h
+文件 : HttpServiceEnginePay.h
+文件 : BJBaseResponceModel.h
+文件 : HttpServiceEngineLogin.h
+文件 : HttpServiceEngineAd.h
+文件 : BJError.h
+文件 : SDKRequest.h
+文件 : PhoneInfoModel.h
+文件 : GamaSDK+Social.h
+文件 : UIImage+ResBundle.h
+文件 : ResReader.h
+文件 : ConfigCoreUtil.h
+文件 : NSString+Local.h
+文件 : DimeUtil.h
+文件 : SdkUtil.h
+文件 : SdkSecurityFunction.h
+文件 : SecurityUtil.h
+文件 : GamaThirdSocial.h
+文件 : MWWebViewController.h
+文件 : LoginHelper.h
+文件 : SAppleLogin.h
+文件 : ApplePay.h
+文件 : MWApplePayManager.h
+文件 : CCSDKDATA.h
+文件 : GameUserModel.h
+文件 : LoginButton.h
+文件 : ViewUtil.h
+文件 : FindPasswordViewV2.h
+文件 : RegisterAccountViewV2.h
+文件 : BindAccountViewV2.h
+文件 : TermsViewV2.h
+文件 : AccountLoginViewV2.h
+文件 : LoginWithRegViewV2.h
+文件 : NoticeViewV2.h
+文件 : BindPhoneViewV2.h
+文件 : MainHomeViewV2.h
+文件 : FindPasswordViewV2.h
+文件 : RegisterAccountViewV2.h
+文件 : BindAccountViewV2.h
+文件 : TermsViewV2.h
+文件 : AccountLoginViewV2.h
+文件 : LoginWithRegViewV2.h
+文件 : NoticeViewV2.h
+文件 : BindPhoneViewV2.h
+文件 : MainHomeViewV2.h
+文件 : FindPasswordView.h
+文件 : MyTextFiled.h
+文件 : AccountListViewCell.h
+文件 : AccountListView.h
+文件 : PhoneView.h
+文件 : SDKIconTitleButton.h
+文件 : SDKTextFiledView.h
+文件 : LoginTitleView.h
+文件 : LoginTypeButton.h
+文件 : TouchEventInterruptView.h
+文件 : LoginWithRegView.h
+文件 : AccountLoginView.h
+文件 : RegisterAccountView.h
+文件 : BaseCountTimerView.h
+文件 : BasePopupView.h
+文件 : TermsView.h
+文件 : WelcomeBackView.h
+文件 : ChangePasswordView.h
+文件 : SelectBindTypeView.h
+文件 : SDKBaseView.h
+文件 : MainHomeView.h
+文件 : BindAccountView.h
+文件 : FindPasswordViewV2.h
+文件 : RegisterAccountViewV2.h
+文件 : BindAccountViewV2.h
+文件 : TermsViewV2.h
+文件 : AccountLoginViewV2.h
+文件 : LoginWithRegViewV2.h
+文件 : NoticeViewV2.h
+文件 : BindPhoneViewV2.h
+文件 : MainHomeViewV2.h
+文件 : SDKLoginViewController.h
+文件 : UIColor+HexStringToColorTW.m
+文件 : AdLogger.m
+文件 : LoginButton.m
+文件 : NSString+URLEncoding.m
+文件 : BindAccountView.m
+文件 : AdDelegate.m
+文件 : UIScreen+Sdk.m
+文件 : SDKLoginViewController.m
+文件 : GIDDelegate.m
+文件 : FindPasswordView.m
+文件 : AlertUtil.m
+文件 : FirebaseDelegate.m
+文件 : AccountLoginViewV2.m
+文件 : ResReader.m
+文件 : LoginWithRegViewV2.m
+文件 : FBDelegate.m
+文件 : SAlertViewDelegate.m
+文件 : BaseCountTimerView.m
+文件 : GamaThirdSocial.m
+文件 : UIAlertController+Sdk.m
+文件 : NoticeViewV2.m
+文件 : NSString+Local.m
+文件 : BJBaseHTTPEngine.m
+文件 : TermsViewV2.m
+文件 : SAppleLogin.m
+文件 : SUtil.m
+文件 : LineDelegate.m
+文件 : MainHomeViewV2.m
+文件 : LoginHelper.m
+文件 : BJError.m
+文件 : BindAccountViewV2.m
+文件 : MWWebViewController.m
+文件 : RegisterAccountView.m
+文件 : SDKBaseView.m
+文件 : USDefault.m
+文件 : SDKRequest.m
+文件 : BindPhoneViewV2.m
+文件 : UIUtil.m
+文件 : AccountLoginView.m
+文件 : GamaSDK+Social.m
+文件 : BJServiceConfigurator.m
+文件 : CCSkyHourFunction.m
+文件 : PhoneInfoModel.m
+文件 : BJBaseResponceModel.m
+文件 : UIImage+GamaBundleImage.m
+文件 : LoginWithRegView.m
+文件 : MainHomeView.m
+文件 : StringUtil.m
+文件 : FindPasswordViewV2.m
+文件 : TermsView.m
+文件 : HttpServiceEnginePay.m
+文件 : SdkKeychainItemWrapper.m
+文件 : ConfigCoreUtil.m
+文件 : RegisterAccountViewV2.m
+文件 : BasePopupView.m
+文件 : SdkPrivateKeychainCfUUID.m
+文件 : SelectBindTypeView.m
+文件 : HttpServiceEngineAd.m
+文件 : SdkCfUUID.m
+文件 : AccountLoginViewV2.m
+文件 : ChangePasswordView.m
+文件 : HttpServiceEngineLogin.m
+文件 : UIColor+HexColor.m
+文件 : TermsViewV2.m
+文件 : UIView+BlockGesture.m
+文件 : SdkUtil.m
+文件 : SecurityUtil.m
+文件 : NSString+Common.m
+文件 : UIImage+ResBundle.m
+文件 : LoginWithRegViewV2.m
+文件 : SdkSecurityFunction.m
+文件 : WelcomeBackView.m
+文件 : BindAccountViewV2.m
+文件 : DimeUtil.m
+文件 : LoginTitleView.m
+文件 : NoticeViewV2.m
+文件 : LoginWithRegViewV2.m
+文件 : MWApplePayManager.m
+文件 : SDKTextFiledView.m
+文件 : NoticeViewV2.m
+文件 : ApplePay.m
+文件 : SDKIconTitleButton.m
+文件 : MainHomeViewV2.m
+文件 : GameUserModel.m
+文件 : MainHomeViewV2.m
+文件 : PhoneView.m
+文件 : CCSDKDATA.m
+文件 : BindPhoneViewV2.m
+文件 : TouchEventInterruptView.m
+文件 : ViewUtil.m
+文件 : BindPhoneViewV2.m
+文件 : FindPasswordViewV2.m
+文件 : LoginTypeButton.m
+文件 : FindPasswordViewV2.m
+文件 : RegisterAccountViewV2.m
+文件 : MyTextFiled.m
+文件 : AccountListView.m
+文件 : RegisterAccountViewV2.m
+文件 : AccountListViewCell.m
+文件 : AccountLoginViewV2.m
+文件 : TermsViewV2.m
+文件 : BindAccountViewV2.m
+
+
+自动为您开启6个线程进行混淆。。。。。。。
+开始自动清理源代码中的注释。。。。。。
+
+
+开始提取所有源文件中的类名并生成新类名。。。。。。
+
+
+开始提取所有协议名并生成新协议名。。。。。。
+协议: PhoneInfoModelDelegate <---替换为---> KLJRManagerNotice
+
+
+开始多语言文件的key名称。。。。。。
+
+
+开始自动检测类继承关系。。。。。。
+AdLogger : NSObject
+AdDelegate : NSObject
+GIDDelegate : NSObject
+FirebaseDelegate : NSObject
+FBDelegate : NSObject
+UIUtil : NSObject
+CCSkyHourFunction : NSObject
+StringUtil : NSObject
+USDefault : NSObject
+SUtil : NSObject
+SdkPrivateKeychainCfUUID : NSObject
+SdkCfUUID : NSObject
+SdkKeychainItemWrapper : NSObject
+AlertUtil : NSObject
+SAlertViewDelegate : NSObject
+BJBaseHTTPEngine : NSObject
+LineDelegate : NSObject
+BJServiceConfigurator : NSObject
+HttpServiceEnginePay : NSObject
+BJBaseResponceModel : NSObject
+HttpServiceEngineLogin : NSObject
+HttpServiceEngineAd : NSObject
+BJError : BJBaseResponceModel
+SDKRequest : NSObject
+PhoneInfoModel : NSObject
+ResReader : NSObject
+ConfigCoreUtil : NSObject
+DimeUtil : NSObject
+SdkUtil : NSObject
+SdkBase64Encoding : NSObject
+SecurityUtil : NSObject
+MWWebViewController : UIViewController
+LoginHelper : NSObject
+SAppleLogin : NSObject
+ApplePay : NSObject
+MWApplePayManager : NSObject
+CCSDKDATA : NSObject
+GameUserModel : NSObject
+LoginButton : NSObject
+ViewUtil : NSObject
+FindPasswordViewV2 : SDKBaseView
+RegisterAccountViewV2 : SDKBaseView
+BindAccountViewV2 : SDKBaseView
+TermsViewV2 : SDKBaseView
+AccountLoginViewV2 : SDKBaseView
+LoginWithRegViewV2 : SDKBaseView
+NoticeViewV2 : SDKBaseView
+BindPhoneViewV2 : BaseCountTimerView
+MainHomeViewV2 : SDKBaseView
+FindPasswordViewV2 : SDKBaseView
+RegisterAccountViewV2 : SDKBaseView
+BindAccountViewV2 : SDKBaseView
+TermsViewV2 : SDKBaseView
+AccountLoginViewV2 : SDKBaseView
+LoginWithRegViewV2 : SDKBaseView
+NoticeViewV2 : SDKBaseView
+BindPhoneViewV2 : BaseCountTimerView
+MainHomeViewV2 : SDKBaseView
+FindPasswordView : SDKBaseView
+MyTextFiled : SDKBaseView
+AccountListViewCell : UITableViewCell
+AccountListView : SDKBaseView
+PhoneView : SDKBaseView
+SDKIconTitleButton : UIView
+SDKTextFiledView : SDKBaseView
+LoginTitleView : SDKBaseView
+LoginTypeButton : UIView
+TouchEventInterruptView : UIView
+LoginWithRegView : SDKBaseView
+AccountLoginView : SDKBaseView
+RegisterAccountView : SDKBaseView
+BaseCountTimerView : SDKBaseView
+BasePopupView : SDKBaseView
+TermsView : SDKBaseView
+WelcomeBackView : SDKBaseView
+ChangePasswordView : SDKBaseView
+SelectBindTypeView : SDKBaseView
+SDKBaseView : UIView
+MainHomeView : SDKBaseView
+BindAccountView : SDKBaseView
+FindPasswordViewV2 : SDKBaseView
+RegisterAccountViewV2 : SDKBaseView
+BindAccountViewV2 : SDKBaseView
+TermsViewV2 : SDKBaseView
+AccountLoginViewV2 : SDKBaseView
+LoginWithRegViewV2 : SDKBaseView
+NoticeViewV2 : SDKBaseView
+BindPhoneViewV2 : BaseCountTimerView
+MainHomeViewV2 : SDKBaseView
+SDKLoginViewController : UIViewController
+
+
+开始自动检测统计所有文件中属性信息。。。。。。
+文件: BindPhoneViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: SDKLoginViewController 属性:@property (nonatomic,strong)UIView *sdkContentView;属性名称:sdkContentView
+文件: ResReader 属性:@property (nonatomic,strong) NSDictionary * mySdkConfDic;属性名称:mySdkConfDic
+文件: ResReader 属性:@property (nonatomic,strong) NSDictionary * mainBundleConfDic;属性名称:mainBundleConfDic
+文件: ResReader 属性:@property (nonatomic, strong) NSMutableArray *areaInfoArray;属性名称:areaInfoArray
+文件: ResReader 属性:@property (nonatomic,strong) NSMutableDictionary * textStringDic;属性名称:textStringDic
+文件: NSString+Local 属性:@property (nonatomic, copy) NSString *localx;属性名称:localx
+文件: MyTextFiled 属性:@property (nonatomic,strong) UITextField *inputTextField;属性名称:inputTextField
+文件: ResReader 属性:@property (nonatomic, copy) NSString *m_stringsName;属性名称:m_stringsName
+文件: ResReader 属性:@property (nonatomic, strong) NSBundle *m_stringsBundle;属性名称:m_stringsBundle
+文件: PhoneInfoModel 属性:@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;属性名称:gamaAreaCodesArray
+文件: DimeUtil 属性:@property (nonatomic,assign) CGFloat viewAdaptRate;属性名称:viewAdaptRate
+文件: AccountListViewCell 属性:@property (nonatomic, strong) UILabel *accountUILabel;属性名称:accountUILabel
+文件: AccountListViewCell 属性:@property (nonatomic, strong) UIButton *deleteAccountBtn;属性名称:deleteAccountBtn
+文件: AccountListViewCell 属性:@property (nonatomic, strong) UIImageView *iconImageView;属性名称:iconImageView
+文件: AccountListViewCell 属性:@property (nonatomic, strong) ItemViewClickHander mItemViewClickHander;属性名称:mItemViewClickHander
+文件: AccountListView 属性:@property (nonatomic,strong) AccountModelHander mAccountModelClickHander;属性名称:mAccountModelClickHander
+文件: AccountListView 属性:@property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList;属性名称:accountDataList
+文件: AccountListView 属性:@property (nonatomic,strong) UITableView *accountListTableView;属性名称:accountListTableView
+文件: FBDelegate 属性:@property (nonatomic,strong) FBSDKLoginManager *loginManager;属性名称:loginManager
+文件: FBDelegate 属性:@property (nonatomic,strong) CCallBack successBlock;属性名称:successBlock
+文件: FBDelegate 属性:@property (nonatomic,strong) CCallBack failBlock;属性名称:failBlock
+文件: PhoneView 属性:@property (nonatomic, strong) PhoneInfoModel *phoneModel;属性名称:phoneModel
+文件: PhoneView 属性:@property (nonatomic) UILabel *aracCodeUILabel;属性名称:aracCodeUILabel
+文件: PhoneView 属性:@property (nonatomic) UITextField *mUITextField;属性名称:mUITextField
+文件: UIAlertController+Sdk 属性:@property (nonatomic, strong) UIWindow *alertWindow;属性名称:alertWindow
+文件: MWApplePayManager 属性:@property (nonatomic, copy) NSString *currentOrderId;属性名称:currentOrderId
+文件: MWApplePayManager 属性:@property (nonatomic, strong) PayData *mPayData;属性名称:mPayData
+文件: MWApplePayManager 属性:@property (nonatomic)PayStatusBlock payStatusBlock;属性名称:payStatusBlock
+文件: SDKTextFiledView 属性:@property (nonatomic) ItemViewClickHander clickAccountListItem;属性名称:clickAccountListItem
+文件: SDKTextFiledView 属性:@property (nonatomic) CCallBack inputTextFieldChange;属性名称:inputTextFieldChange
+文件: SDKTextFiledView 属性:@property (nonatomic) UITextField *inputUITextField;属性名称:inputUITextField
+文件: SDKTextFiledView 属性:@property (nonatomic) UIButton *moreAccountBtn;属性名称:moreAccountBtn
+文件: SDKTextFiledView 属性:@property (nonatomic) UIImageView *lableIconImageView;属性名称:lableIconImageView
+文件: HttpServiceEnginePay 属性:@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;属性名称:httpEngine
+文件: MWWebViewController 属性:@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;属性名称:webViewDelegate
+文件: MWWebViewController 属性:@property (nonatomic,copy) MWWebCloseHandler closeHandler;属性名称:closeHandler
+文件: MWWebViewController 属性:@property (nonatomic,copy) MWWebAlertHandler alertHandler;属性名称:alertHandler
+文件: MWWebViewController 属性:@property (nonatomic) BOOL shouldRotate;属性名称:shouldRotate
+文件: MWWebViewController 属性:@property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;属性名称:interfaceOrientationMask
+文件: MWWebViewController 属性:@property (nonatomic) UIInterfaceOrientation interfaceOrientation;属性名称:interfaceOrientation
+文件: BJBaseHTTPEngine 属性:@property (nonatomic, strong) AFHTTPSessionManager *sessionManager;属性名称:sessionManager
+文件: LoginTitleView 属性:@property (nonatomic,strong) UILabel *titleLable;属性名称:titleLable
+文件: LoginTitleView 属性:@property (nonatomic,strong) UIButton *backBtn;属性名称:backBtn
+文件: HttpServiceEngineAd 属性:@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;属性名称:httpEngine
+文件: SdkKeychainItemWrapper 属性:@property (nonatomic, retain) NSMutableDictionary *keychainItemData;属性名称:keychainItemData
+文件: SdkKeychainItemWrapper 属性:@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;属性名称:genericPasswordQuery
+文件: SAppleLogin 属性:@property (copy, atomic) AppleLoginSuccess impSuccess;属性名称:impSuccess
+文件: SAppleLogin 属性:@property (copy, atomic) AppleLoginError impError;属性名称:impError
+文件: SAppleLogin 属性:@property (strong, nonatomic) NSString *appleThirdID;属性名称:appleThirdID
+文件: LineDelegate 属性:@property (nonatomic) LineCallBack successCallBack;属性名称:successCallBack
+文件: LineDelegate 属性:@property (nonatomic) LineCallBack failCallBack;属性名称:failCallBack
+文件: LoginWithRegView 属性:@property (nonatomic, strong) AccountLoginView *mAccountLoginView;属性名称:mAccountLoginView
+文件: LoginWithRegView 属性:@property (nonatomic, strong) RegisterAccountView *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: HttpServiceEngineLogin 属性:@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;属性名称:httpEngine
+文件: CCSDKDATA 属性:@property (nonatomic, strong)LoginResponse *mLoginResponse;属性名称:mLoginResponse
+文件: CCSDKDATA 属性:@property (nonatomic, strong)ConfigModel *mConfigModel;属性名称:mConfigModel
+文件: CCSDKDATA 属性:@property (nonatomic, strong)GameUserModel * gameUserModel;属性名称:gameUserModel
+文件: CCSDKDATA 属性:@property (nonatomic,strong) UrlMode *urls;属性名称:urls
+文件: CCSDKDATA 属性:@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;属性名称:mUITextFieldDelegate
+文件: CCSDKDATA 属性:@property (nonatomic, assign)CGFloat keyBoardHeight;属性名称:keyBoardHeight
+文件: RegisterAccountView 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: MWWebViewController 属性:@property (nonatomic, copy) MWWebLayoutHandler layoutHandler;属性名称:layoutHandler
+文件: MWWebViewController 属性:@property (nonatomic, strong) UIView *backgroundView;属性名称:backgroundView
+文件: MWWebViewController 属性:@property (nonatomic, strong) WKWebView *wkwebView;属性名称:wkwebView
+文件: MWWebViewController 属性:@property (nonatomic, strong) UIView *headerView;属性名称:headerView
+文件: MWWebViewController 属性:@property (nonatomic, strong) UIView *footView;属性名称:footView
+文件: MWWebViewController 属性:@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;属性名称:indicatorView
+文件: MWWebViewController 属性:@property (nonatomic, strong) UIProgressView *progressView;属性名称:progressView
+文件: MWWebViewController 属性:@property (nonatomic) BOOL animation;属性名称:animation
+文件: MWWebViewController 属性:@property (nonatomic, strong)NSURLRequest *webRequest;属性名称:webRequest
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *roleID;属性名称:roleID
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *roleLevel;属性名称:roleLevel
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *roleName;属性名称:roleName
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *serverCode;属性名称:serverCode
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *serverName;属性名称:serverName
+文件: GameUserModel 属性:@property (copy, nonatomic) NSString *roleVipLevel;属性名称:roleVipLevel
+文件: BaseCountTimerView 属性:@property (assign,nonatomic) NSInteger totalCount;属性名称:totalCount
+文件: BaseCountTimerView 属性:@property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;属性名称:countTimerDelegate
+文件: BasePopupView 属性:@property (nonatomic,strong) UIView *contentView;属性名称:contentView
+文件: BasePopupView 属性:@property (nonatomic,strong) CCallBack touchesBeganCallback;属性名称:touchesBeganCallback
+文件: RegisterAccountViewV2 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: BindAccountViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: SAlertViewDelegate 属性:@property (nonatomic,copy) SAlertViewHandler handler;属性名称:handler
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;属性名称:mAccountLoginView
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: SDKBaseView 属性:@property(nonatomic, weak) id<LoginViewDelegate> delegate;属性名称:delegate
+文件: SDKBaseView 属性:@property(nonatomic) CURRENT_PAGE_TYPE fromPage;属性名称:fromPage
+文件: SDKBaseView 属性:@property(nonatomic,assign) id fromPageParam;属性名称:fromPageParam
+文件: SDKBaseView 属性:@property(nonatomic,strong)NSMutableArray *drawBlockArray;属性名称:drawBlockArray
+文件: BindPhoneViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: RegisterAccountViewV2 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: RegisterAccountViewV2 属性:@property (nonatomic, assign) NSInteger bindType;属性名称:bindType
+文件: BindAccountViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: BindAccountViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: BJBaseResponceModel 属性:@property (nonatomic, assign) NSInteger code;属性名称:code
+文件: BJBaseResponceModel 属性:@property (nonatomic, copy) NSString *message;属性名称:message
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;属性名称:mAccountLoginView
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;属性名称:mAccountLoginView
+文件: LoginWithRegViewV2 属性:@property (nonatomic, strong) RegisterAccountViewV2 *mRegisterAccountView;属性名称:mRegisterAccountView
+文件: BindPhoneViewV2 属性:@property (copy,nonatomic) MWBlock mMWBlock;属性名称:mMWBlock
+文件: BJError 属性:@property (nonatomic, copy) NSDictionary *data;属性名称:data
+文件: SDKLoginViewController 属性:@property (nonatomic)CGRect currentEditingTextViewFrame;属性名称:currentEditingTextViewFrame
+文件: PhoneInfoModel 属性:@property (nonatomic, strong) NSString *selectedAreaCodeKey;属性名称:selectedAreaCodeKey
+文件: PhoneInfoModel 属性:@property (nonatomic, strong) NSString *selectedAreaCodeValue;属性名称:selectedAreaCodeValue
+文件: PhoneInfoModel 属性:@property (nonatomic, copy) NSString *selectedRegularExpression;属性名称:selectedRegularExpression
+文件: PhoneInfoModel 属性:@property (nonatomic, assign) id<KLJRManagerNotice> delegate;属性名称:delegate
+
+
+开始自动修改Assets图片资源。。。。。。。
+
+Assets图片资源修改结束
+
+
+开始自动修改sks资源名称。。。。。。。
+
+sks资源修改结束
+
+开始打乱函数定义顺序。。。。。。。
+100%👌
+
+开始提取分析源文件中函数名称。。。。。。。
+文件: UIImage+ResBundle   函数名称: res_imageNamed_MMMethodMMM
+文件: UIColor+HexStringToColorTW   函数名称: colorWithHexString_MMMethodMMM
+文件: USDefault   函数名称: _userdefaultGetObjForKey
+文件: UIImage+ResBundle   函数名称: res_imageNamed_MMMethodMMM
+文件: UIColor+HexStringToColorTW   函数名称: colorWithHexString_MMMethodMMM
+文件: USDefault   函数名称: _userdefaultSetObject
+文件: UIImage+ResBundle   函数名称: res_imageNamed_MMMethodMMM
+文件: USDefault   函数名称: _userdefaultSetBool
+文件: USDefault   函数名称: _userdefaultGetBoolForKey
+文件: AdLogger   函数名称: logWithEventName_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AdLogger   函数名称: logWithEventName_MMMethodMMM
+文件: AdLogger   函数名称: logServerWithEventName_Install_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: addView_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: makeTabStatus_MMMethodMMM
+文件: SDKRequest   函数名称: doAccountBindingWithUserName_MMMethodMMM
+文件: SDKRequest   函数名称: reportSdkEventWithEventName_MMMethodMMM
+文件: SDKRequest   函数名称: doChangePasswordWithUserName_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: encode
+文件: SDKRequest   函数名称: getSdkConfigWithSuccessBlock_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: encode
+文件: SDKRequest   函数名称: doRegisterAccountWithUserName_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: decode
+文件: SdkSecurityFunction   函数名称: decode
+文件: SDKRequest   函数名称: requestVfCode_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: gama_AES128Operation_MMMethodMMM
+文件: SDKRequest   函数名称: requestMobileVfCode_MMMethodMMM
+文件: NSString+URLEncoding   函数名称: urlEncode_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: gama_AES128EncryptWithKey_MMMethodMMM
+文件: SDKRequest   函数名称: paymentWithTransactionId_MMMethodMMM
+文件: NSString+URLEncoding   函数名称: urlDecode_MMMethodMMM
+文件: SDKRequest   函数名称: doLoginWithAccount_MMMethodMMM
+文件: SdkSecurityFunction   函数名称: gama_AES128DecryptWithKey_MMMethodMMM
+文件: SDKRequest   函数名称: freeLoginOrRegister_MMMethodMMM
+文件: SDKRequest   函数名称: createOrderWithproductId_MMMethodMMM
+文件: BindAccountView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: SDKRequest   函数名称: requestDeleteUserAccount_MMMethodMMM
+文件: BindAccountView   函数名称: bindAccount_MMMethodMMM
+文件: WelcomeBackView   函数名称: addAccountListView_MMMethodMMM
+文件: SDKRequest   函数名称: appendGameParamsDic_MMMethodMMM
+文件: SDKRequest   函数名称: appendCommParamsDic_MMMethodMMM
+文件: WelcomeBackView   函数名称: setViewStatue_MMMethodMMM
+文件: SDKRequest   函数名称: thirdLoginOrReg_MMMethodMMM
+文件: WelcomeBackView   函数名称: addDeleteAccountView_MMMethodMMM
+文件: SDKRequest   函数名称: doForgotPasswordWithUserName_MMMethodMMM
+文件: WelcomeBackView   函数名称: doDeleteAccount_MMMethodMMM
+文件: SDKRequest   函数名称: bindAccountPhone_MMMethodMMM
+文件: WelcomeBackView   函数名称: addDeleteAccountConfireView_MMMethodMMM
+文件: SDKRequest   函数名称: getAreaInfoWithSuccessBlock_MMMethodMMM
+文件: WelcomeBackView   函数名称: goGame_MMMethodMMM
+文件: AdDelegate   函数名称: logEventPurchaseValues_MMMethodMMM
+文件: SDKRequest   函数名称: createSdkUrl_MMMethodMMM
+文件: WelcomeBackView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AdDelegate   函数名称: logEventWithEventName_MMMethodMMM
+文件: AdDelegate   函数名称: applicationWillTerminate_MMMethodMMM
+文件: AdDelegate   函数名称: applicationDidBecomeActive_MMMethodMMM
+文件: UIUtil   函数名称: showAlertTips_MMMethodMMM
+文件: UIScreen+Sdk   函数名称: gama_boundsForOrientation_MMMethodMMM
+文件: UIScreen+Sdk   函数名称: gama_currentBounds_MMMethodMMM
+文件: UIUtil   函数名称: showAlertTips_MMMethodMMM
+文件: UIScreen+Sdk   函数名称: gama_mainScreenBounds_MMMethodMMM
+文件: UIScreen+Sdk   函数名称: gama_screenScale_MMMethodMMM
+文件: BindAccountViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: BindAccountViewV2   函数名称: bindAccount_MMMethodMMM
+文件: BindAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: DimeUtil   函数名称: getFontSize_MMMethodMMM
+文件: DimeUtil   函数名称: getViewWidth_MMMethodMMM
+文件: SDKLoginViewController   函数名称: changPasswordSuccess_MMMethodMMM
+文件: DimeUtil   函数名称: getViewHeight_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: beforeStartTimer_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addHomeView_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: showSelectedAreaCodeValue_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: timing_MMMethodMMM
+文件: SDKLoginViewController   函数名称: showLoginPageOrAutoLogin_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: addView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addTermsView_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addSubSdkLoginView_MMMethodMMM
+文件: LoginTitleView   函数名称: backBtnView_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: finishTimer_MMMethodMMM
+文件: LoginTitleView   函数名称: backUIView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: logout_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addLoginWithRegView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: keyboardWillShow_MMMethodMMM
+文件: SDKLoginViewController   函数名称: registNotification_MMMethodMMM
+文件: SDKLoginViewController   函数名称: goPageView_MMMethodMMM
+文件: NoticeViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: SDKLoginViewController   函数名称: keyboardWillHide_MMMethodMMM
+文件: NoticeViewV2   函数名称: landspaceView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: loginSuccess_MMMethodMMM
+文件: AccountLoginView   函数名称: goGame_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addFindPasswordView_MMMethodMMM
+文件: AccountLoginView   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: AccountLoginView   函数名称: requestAccountLogin_MMMethodMMM
+文件: SDKLoginViewController   函数名称: _animationWithView_MMMethodMMM
+文件: AccountLoginView   函数名称: addAccountListView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: textFieldShouldBeginEditing
+文件: LoginWithRegViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AccountLoginView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: addView_MMMethodMMM
+文件: AccountLoginView   函数名称: checkAgreeTerm_MMMethodMMM
+文件: SDKLoginViewController   函数名称: handleLoginOrRegSuccess_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addBindAccountView_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: makeTabStatus_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addWelcomeView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addChangePasswordView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: addSelectBindTypeView_MMMethodMMM
+文件: SDKLoginViewController   函数名称: cancelAutoSwitchAccount_MMMethodMMM
+文件: MWApplePayManager   函数名称: shareManager_MMMethodMMM
+文件: SDKLoginViewController   函数名称: goBackBtn_MMMethodMMM
+文件: MWApplePayManager   函数名称: removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM
+文件: MWApplePayManager   函数名称: payWithOrderId_MMMethodMMM
+文件: MWApplePayManager   函数名称: requestPament_MMMethodMMM
+文件: MWApplePayManager   函数名称: requestProductData_MMMethodMMM
+文件: MWApplePayManager   函数名称: checkOrderStatus_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: encode
+文件: GIDDelegate   函数名称: signOut_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: rectFromWinSize_Portrait_MMMethodMMM
+文件: MWApplePayManager   函数名称: getLocalReceiptData_MMMethodMMM
+文件: GIDDelegate   函数名称: loginWithClientID_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getDeviceType_MMMethodMMM
+文件: MWApplePayManager   函数名称: handleTransaction_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getTodayInfo_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getIdfa_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getCurrentWindow_MMMethodMMM
+文件: MWApplePayManager   函数名称: startPayWithProductId_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getIPAddress_MMMethodMMM
+文件: MWApplePayManager   函数名称: completeTransaction_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getMacaddress_MMMethodMMM
+文件: MWApplePayManager   函数名称: finishPayWithStatus_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getProjectInfoPlist_MMMethodMMM
+文件: FindPasswordView   函数名称: findPassword_MMMethodMMM
+文件: MWApplePayManager   函数名称: saveReceiptData_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getTimeDate_MMMethodMMM
+文件: MWApplePayManager   函数名称: removeLocReceiptDataByTranId_MMMethodMMM
+文件: FindPasswordView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: isIPhoneXSeries_MMMethodMMM
+文件: MWApplePayManager   函数名称: removeTransactionObserver_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: rectFromWinSize_Landscape_MMMethodMMM
+文件: FindPasswordView   函数名称: resetVfCodeBtnStatue_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getCurrentViewController_MMMethodMMM
+文件: FindPasswordView   函数名称: phoneFireTimer_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getMD5StrFromString_MMMethodMMM
+文件: FindPasswordView   函数名称: downTime_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: parseURLParams_MMMethodMMM
+文件: FindPasswordView   函数名称: requestVfCodeByEmail_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getBundleVersion_MMMethodMMM
+文件: SDKTextFiledView   函数名称: eyeViewBtnAction_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getBundleShortVersionString_MMMethodMMM
+文件: SDKTextFiledView   函数名称: clickItemBtn_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: connectedToNetWork_MMMethodMMM
+文件: SDKTextFiledView   函数名称: addContentView_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getPreferredLanguage_MMMethodMMM
+文件: SDKTextFiledView   函数名称: addContentView_v2_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getSystemVersion_MMMethodMMM
+文件: SDKTextFiledView   函数名称: textChanged_MMMethodMMM
+文件: AlertUtil   函数名称: showAlertWithMessage_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getTimeStamp_MMMethodMMM
+文件: AlertUtil   函数名称: _showAlertViewWithTitle_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getBundleName_MMMethodMMM
+文件: SDKTextFiledView   函数名称: setPwdFiledView_MMMethodMMM
+文件: AlertUtil   函数名称: showActionSheetWithTitle_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getBundleIdentifier_MMMethodMMM
+文件: AlertUtil   函数名称: dismissAlertView_MMMethodMMM
+文件: CCSkyHourFunction   函数名称: getDeviceVersion_MMMethodMMM
+文件: AlertUtil   函数名称: dismissActionSheet_MMMethodMMM
+文件: AlertUtil   函数名称: dismissAlertController_MMMethodMMM
+文件: NoticeViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: NoticeViewV2   函数名称: landspaceView_MMMethodMMM
+文件: FirebaseDelegate   函数名称: getClientID_MMMethodMMM
+文件: PhoneInfoModel   函数名称: resetupAreaCodesAndActionSheetWith_MMMethodMMM
+文件: PhoneInfoModel   函数名称: showAreaCodesActionSheetFromView_MMMethodMMM
+文件: BJBaseResponceModel   函数名称: isRequestSuccess_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: requestAccountLogin_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: showTermsViewForAccountLoginView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addAccountListView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountConfireView_MMMethodMMM
+文件: UIImage+GamaBundleImage   函数名称: gama_imageNamed_MMMethodMMM
+文件: MainHomeViewV2   函数名称: showTermsView_MMMethodMMM
+文件: UIImage+GamaBundleImage   函数名称: gama_imageNamed_MMMethodMMM
+文件: MainHomeViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: UIImage+GamaBundleImage   函数名称: gama_imageNamed_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: goGame_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: doDeleteAccount_MMMethodMMM
+文件: MainHomeViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: GameUserModel   函数名称: checkParams_MMMethodMMM
+文件: LoginWithRegView   函数名称: addView_MMMethodMMM
+文件: LoginWithRegView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: LoginWithRegView   函数名称: makeTabStatus_MMMethodMMM
+文件: ResReader   函数名称: getSdkBundleName_MMMethodMMM
+文件: MainHomeViewV2   函数名称: showTermsView_MMMethodMMM
+文件: ResReader   函数名称: getSdkConfigInfoName_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addView_MMMethodMMM
+文件: MainHomeView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: ResReader   函数名称: getStringForKey_MMMethodMMM
+文件: MainHomeViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: ResReader   函数名称: decryptContent_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: MainHomeView   函数名称: addView_MMMethodMMM
+文件: MainHomeView   函数名称: checkAgreeTerm_MMMethodMMM
+文件: ResReader   函数名称: getServerLanguage_MMMethodMMM
+文件: MainHomeViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: ResReader   函数名称: getEncryptFileAndEncryptContentWithBundle_MMMethodMMM
+文件: ResReader   函数名称: getSdkBaseEncryptKey_MMMethodMMM
+文件: ResReader   函数名称: getCdnUrl_MMMethodMMM
+文件: StringUtil   函数名称: isEmpty_MMMethodMMM
+文件: ResReader   函数名称: reader_MMMethodMMM
+文件: PhoneView   函数名称: showSelectedAreaCodeValue_MMMethodMMM
+文件: StringUtil   函数名称: isNotEmpty_MMMethodMMM
+文件: ResReader   函数名称: isMoreLanguage_MMMethodMMM
+文件: PhoneView   函数名称: pushAreaTable_MMMethodMMM
+文件: ResReader   函数名称: getGameLanguage_MMMethodMMM
+文件: ResReader   函数名称: getAppkey_MMMethodMMM
+文件: PhoneView   函数名称: addPhoneViewContentView_MMMethodMMM
+文件: PhoneView   函数名称: viewTapped_MMMethodMMM
+文件: ResReader   函数名称: getTermsServiceUrl_MMMethodMMM
+文件: PhoneView   函数名称: getPhoneAreaCode_MMMethodMMM
+文件: ResReader   函数名称: decryptAllStringContent_MMMethodMMM
+文件: PhoneView   函数名称: getPhoneNumber_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: phoneFireTimer_MMMethodMMM
+文件: ResReader   函数名称: getBoolForKey_MMMethodMMM
+文件: PhoneView   函数名称: itemBtnAction_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: resetVfCodeBtnStatue_MMMethodMMM
+文件: ResReader   函数名称: getMd5ResFileName_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: downTime_MMMethodMMM
+文件: ResReader   函数名称: getSdkBundleFilePath_MMMethodMMM
+文件: ResReader   函数名称: encryptContent_MMMethodMMM
+文件: ResReader   函数名称: getPayUrl_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: ResReader   函数名称: getSdkEncryptKey_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: requestVfCodeByEmail_MMMethodMMM
+文件: ResReader   函数名称: getLocalizedStringForKey_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: findPassword_MMMethodMMM
+文件: ResReader   函数名称: getFacebookAppId_MMMethodMMM
+文件: CCSDKDATA   函数名称: sharedSdkData_MMMethodMMM
+文件: ResReader   函数名称: getAppId_MMMethodMMM
+文件: ResReader   函数名称: isVersion2_MMMethodMMM
+文件: ResReader   函数名称: getGameCode_MMMethodMMM
+文件: ResReader   函数名称: getLoginUrl_MMMethodMMM
+文件: ResReader   函数名称: getLogUrl_MMMethodMMM
+文件: ResReader   函数名称: logSdkResConfig_MMMethodMMM
+文件: ResReader   函数名称: getAfDevKey_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: timing_MMMethodMMM
+文件: ResReader   函数名称: isAdDebug_MMMethodMMM
+文件: TermsView   函数名称: landspaceView_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: beforeStartTimer_MMMethodMMM
+文件: ResReader   函数名称: setBundleInfo_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: showSelectedAreaCodeValue_MMMethodMMM
+文件: TermsView   函数名称: saveAgreenProvisionState_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: finishTimer_MMMethodMMM
+文件: ResReader   函数名称: getsdkLanguage_MMMethodMMM
+文件: TermsView   函数名称: openProvision_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: addView_MMMethodMMM
+文件: ResReader   函数名称: getMySdkBundle_MMMethodMMM
+文件: TermsView   函数名称: isAgreenProvision_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: ResReader   函数名称: readMainBundleCoreConfInfo_MMMethodMMM
+文件: HttpServiceEnginePay   函数名称: getRequestWithFunctionPath_MMMethodMMM
+文件: HttpServiceEnginePay   函数名称: postRequestWithFunctionPath_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: addView_MMMethodMMM
+文件: LoginWithRegViewV2   函数名称: makeTabStatus_MMMethodMMM
+文件: ViewUtil   函数名称: createGradientLayerWithRadius_MMMethodMMM
+文件: FBDelegate   函数名称: facebookLogout_MMMethodMMM
+文件: FBDelegate   函数名称: applicationWillTerminate_MMMethodMMM
+文件: SdkKeychainItemWrapper   函数名称: resetKeychainItem_MMMethodMMM
+文件: FBDelegate   函数名称: sharerDidCancel
+文件: SdkKeychainItemWrapper   函数名称: dictionaryToSecItemFormat_MMMethodMMM
+文件: FBDelegate   函数名称: currentAccessToken_MMMethodMMM
+文件: SdkKeychainItemWrapper   函数名称: secItemFormatToDictionary_MMMethodMMM
+文件: SdkKeychainItemWrapper   函数名称: writeToKeychain_MMMethodMMM
+文件: FBDelegate   函数名称: applicationDidBecomeActive_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: addView_MMMethodMMM
+文件: FBDelegate   函数名称: sharer
+文件: BindPhoneViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: FBDelegate   函数名称: sharer
+文件: BindPhoneViewV2   函数名称: finishTimer_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: timing_MMMethodMMM
+文件: FBDelegate   函数名称: isFacebookLogined_MMMethodMMM
+文件: RegisterAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: FBDelegate   函数名称: shareWithTag_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: showSelectedAreaCodeValue_MMMethodMMM
+文件: FBDelegate   函数名称: loginWithPesentingViewController_MMMethodMMM
+文件: BindPhoneViewV2   函数名称: beforeStartTimer_MMMethodMMM
+文件: FBDelegate   函数名称: loginWithPerssion_MMMethodMMM
+文件: SAlertViewDelegate   函数名称: creatDelegateWithBack_MMMethodMMM
+文件: SAlertViewDelegate   函数名称: alertView_MMMethodMMM
+文件: SAlertViewDelegate   函数名称: actionSheet_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: phoneFireTimer_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: downTime_MMMethodMMM
+文件: SdkPrivateKeychainCfUUID   函数名称: saveCfUUID_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: requestVfCodeByEmail_MMMethodMMM
+文件: SdkPrivateKeychainCfUUID   函数名称: getCfUUID_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: findPassword_MMMethodMMM
+文件: SdkPrivateKeychainCfUUID   函数名称: customUUID_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: resetVfCodeBtnStatue_MMMethodMMM
+文件: BaseCountTimerView   函数名称: doTiming_MMMethodMMM
+文件: BaseCountTimerView   函数名称: startCountTimer_MMMethodMMM
+文件: BaseCountTimerView   函数名称: finishCountTimer_MMMethodMMM
+文件: SelectBindTypeView   函数名称: appleViewTapped_MMMethodMMM
+文件: SelectBindTypeView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: HttpServiceEngineAd   函数名称: postRequestWithFunctionPath_MMMethodMMM
+文件: UIAlertController+Sdk   函数名称: config
+文件: UIAlertController+Sdk   函数名称: showIpadActionSheet
+文件: FindPasswordViewV2   函数名称: resetVfCodeBtnStatue_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: findPassword_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: downTime_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: requestVfCodeByEmail_MMMethodMMM
+文件: SdkCfUUID   函数名称: getGamaCfUUIDFromPublicKeychain_MMMethodMMM
+文件: SdkCfUUID   函数名称: bundleSeedID_MMMethodMMM
+文件: NoticeViewV2   函数名称: landspaceView_MMMethodMMM
+文件: FindPasswordViewV2   函数名称: phoneFireTimer_MMMethodMMM
+文件: SdkCfUUID   函数名称: getCustomCfUUID_MMMethodMMM
+文件: NoticeViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: RegisterAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: goGame_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: updateSessionWithBlock_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addAccountListView_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: postRequestWithFunctionPath_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: showTermsViewForAccountLoginView_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: postJsonRequestWithFunctionPath_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: requestAccountLogin_MMMethodMMM
+文件: MyTextFiled   函数名称: textChanged_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: imageUploadWithFunctionPath_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: fileUploadWithFunctionPath_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: BJBaseHTTPEngine   函数名称: getRequestWithFunctionPath_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: doDeleteAccount_MMMethodMMM
+文件: AccountListView   函数名称: addView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountConfireView_MMMethodMMM
+文件: TermsViewV2   函数名称: landspaceView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: TermsViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: AccountListView   函数名称: addAccountListTableView_MMMethodMMM
+文件: TermsViewV2   函数名称: saveAgreenProvisionState_MMMethodMMM
+文件: TermsViewV2   函数名称: openProvision_MMMethodMMM
+文件: TermsViewV2   函数名称: isAgreenProvision_MMMethodMMM
+文件: ChangePasswordView   函数名称: changePassword_MMMethodMMM
+文件: ChangePasswordView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: RegisterAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: SAppleLogin   函数名称: saveAppleLastLoginSuccessWithInformation_MMMethodMMM
+文件: SAppleLogin   函数名称: autoLoginAppleAccountWithInformation_MMMethodMMM
+文件: SAppleLogin   函数名称: observeAuthticationState_MMMethodMMM
+文件: SAppleLogin   函数名称: perfomExistingAccountSetupFlows_MMMethodMMM
+文件: SAppleLogin   函数名称: fetchAppleLoginInfo_MMMethodMMM
+文件: SAppleLogin   函数名称: handleSignInWithAppleStateChanged_MMMethodMMM
+文件: SAppleLogin   函数名称: observeAppleSignInState_MMMethodMMM
+文件: AccountListViewCell   函数名称: deleteAccontClick_MMMethodMMM
+文件: SAppleLogin   函数名称: makeAppleCallbackSuccessBlock_MMMethodMMM
+文件: HttpServiceEngineLogin   函数名称: getRequestWithFunctionPath_MMMethodMMM
+文件: SAppleLogin   函数名称: handleAuthrization
+文件: HttpServiceEngineLogin   函数名称: postRequestWithFunctionPath_MMMethodMMM
+文件: AccountListViewCell   函数名称: addCellView_MMMethodMMM
+文件: HttpServiceEngineLogin   函数名称: fileUploadWithFunctionPath_MMMethodMMM
+文件: HttpServiceEngineLogin   函数名称: imageUploadWithFunctionPath_MMMethodMMM
+文件: SUtil   函数名称: getTimeDate_MMMethodMMM
+文件: SUtil   函数名称: getCurrentWindow_MMMethodMMM
+文件: SUtil   函数名称: rectFromWinSize_Landscape_MMMethodMMM
+文件: SUtil   函数名称: getSystemVersion_MMMethodMMM
+文件: SUtil   函数名称: connectedToNetWork_MMMethodMMM
+文件: SUtil   函数名称: checkValue_MMMethodMMM
+文件: SUtil   函数名称: getTodayInfo_MMMethodMMM
+文件: SUtil   函数名称: getGamaUUID_MMMethodMMM
+文件: SUtil   函数名称: getBundleName_MMMethodMMM
+文件: TermsViewV2   函数名称: landspaceView_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: SUtil   函数名称: getBundleVersion_MMMethodMMM
+文件: TermsViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: showTermsViewForAccountLoginView_MMMethodMMM
+文件: SUtil   函数名称: getTimeStamp_MMMethodMMM
+文件: TermsViewV2   函数名称: saveAgreenProvisionState_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: goGame_MMMethodMMM
+文件: SUtil   函数名称: getDeviceType_MMMethodMMM
+文件: TermsViewV2   函数名称: openProvision_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: SUtil   函数名称: getMD5StrFromString_MMMethodMMM
+文件: TermsViewV2   函数名称: isAgreenProvision_MMMethodMMM
+文件: SUtil   函数名称: encode
+文件: AccountLoginViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: SUtil   函数名称: getBundleIdentifier_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: SUtil   函数名称: rectFromWinSize_Portrait_MMMethodMMM
+文件: SUtil   函数名称: getDeviceVersion_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addDeleteAccountConfireView_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: saveAccountModel_MMMethodMMM
+文件: SUtil   函数名称: urlEcodingFromString_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: addAccountListView_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: loginType_MMMethodMMM
+文件: SUtil   函数名称: getCurrentScreenFrame_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: doDeleteAccount_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: removeAccountByLoginType_MMMethodMMM
+文件: SUtil   函数名称: getPreferredLanguage_MMMethodMMM
+文件: AccountLoginViewV2   函数名称: requestAccountLogin_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: removeAccountByUserId_MMMethodMMM
+文件: SUtil   函数名称: getBundleShortVersionString_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: saveAccountModels_MMMethodMMM
+文件: SUtil   函数名称: bundleSeedID_MMMethodMMM
+文件: SUtil   函数名称: getMacaddress_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: saveLoginType_MMMethodMMM
+文件: SUtil   函数名称: getIdfa_MMMethodMMM
+文件: TermsViewV2   函数名称: landspaceView_MMMethodMMM
+文件: ConfigCoreUtil   函数名称: getAccountModels_MMMethodMMM
+文件: SUtil   函数名称: parseURLParams_MMMethodMMM
+文件: TermsViewV2   函数名称: btnClickAction_MMMethodMMM
+文件: SUtil   函数名称: getCurrentViewController_MMMethodMMM
+文件: TermsViewV2   函数名称: saveAgreenProvisionState_MMMethodMMM
+文件: SUtil   函数名称: isIPhoneXSeries_MMMethodMMM
+文件: TermsViewV2   函数名称: openProvision_MMMethodMMM
+文件: SUtil   函数名称: getIPAddress_MMMethodMMM
+文件: TermsViewV2   函数名称: isAgreenProvision_MMMethodMMM
+文件: UIView+BlockGesture   函数名称: addTapActionWithBlock_MMMethodMMM
+文件: SUtil   函数名称: getProjectInfoPlist_MMMethodMMM
+文件: UIView+BlockGesture   函数名称: addLongPressActionWithBlock_MMMethodMMM
+文件: UIView+BlockGesture   函数名称: handleActionForLongPressGesture_MMMethodMMM
+文件: UIView+BlockGesture   函数名称: handleActionForTapGesture_MMMethodMMM
+文件: LineDelegate   函数名称: startLoginWithCallBack_MMMethodMMM
+文件: BindAccountViewV2   函数名称: bindAccount_MMMethodMMM
+文件: LineDelegate   函数名称: didLogin
+文件: BindAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: BindAccountViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: SdkUtil   函数名称: createWKWebViewAndAddToParentViewWithRect_MMMethodMMM
+文件: SdkUtil   函数名称: calculateSizeOfLabel_MMMethodMMM
+文件: SdkUtil   函数名称: calculateSizeOfLabel_MMMethodMMM
+文件: SdkUtil   函数名称: triString_MMMethodMMM
+文件: SdkUtil   函数名称: validUserName_MMMethodMMM
+文件: SdkUtil   函数名称: validPwd_MMMethodMMM
+文件: SdkUtil   函数名称: validEmail_MMMethodMMM
+文件: SdkUtil   函数名称: validPhone_MMMethodMMM
+文件: MainHomeViewV2   函数名称: showTermsView_MMMethodMMM
+文件: SdkUtil   函数名称: toastMsg_MMMethodMMM
+文件: MainHomeViewV2   函数名称: checkAgreeTerm_MMMethodMMM
+文件: SdkUtil   函数名称: toastMsg_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addDeleteAccountView_MMMethodMMM
+文件: SdkUtil   函数名称: showLoadingAtView_MMMethodMMM
+文件: MainHomeViewV2   函数名称: addView_MMMethodMMM
+文件: SdkUtil   函数名称: stopLoadingAtView_MMMethodMMM
+文件: MainHomeViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: SdkUtil   函数名称: sizeWithText_MMMethodMMM
+文件: SdkUtil   函数名称: titleFontWedthWithMaxStr_MMMethodMMM
+文件: SdkUtil   函数名称: _updataLastLoginUserInfoWithNewInfo_MMMethodMMM
+文件: SdkUtil   函数名称: loginEncryptFromString_MMMethodMMM
+文件: SdkUtil   函数名称: loginDecryptFromString_MMMethodMMM
+文件: SdkUtil   函数名称: _image_MMMethodMMM
+文件: SdkUtil   函数名称: saveUserInfo_MMMethodMMM
+文件: SdkUtil   函数名称: getUserInfo_MMMethodMMM
+文件: SdkUtil   函数名称: getShowBtnDatas_MMMethodMMM
+文件: SdkUtil   函数名称: savePhoneAreaInfo_MMMethodMMM
+文件: SdkUtil   函数名称: fetchPhoneAreaInfo_MMMethodMMM
+文件: SdkUtil   函数名称: saveReportEventName_MMMethodMMM
+文件: LoginHelper   函数名称: accountRegister_MMMethodMMM
+文件: SdkUtil   函数名称: isReportEventName_MMMethodMMM
+文件: LoginHelper   函数名称: appleLoginAndThirdRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getEncodeStringFromData_MMMethodMMM
+文件: LoginHelper   函数名称: selfLoginAndRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getEncryptStringFromString_MMMethodMMM
+文件: LoginHelper   函数名称: fbLoginAndThirdRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getDecryptStringFromString_MMMethodMMM
+文件: LoginHelper   函数名称: lineLoginAndThirdRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getEncodeDataFromString_MMMethodMMM
+文件: LoginHelper   函数名称: guestLoginAndThirdRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getDecryptDataFromData_MMMethodMMM
+文件: LoginHelper   函数名称: bindAccountAndRequest_MMMethodMMM
+文件: SecurityUtil   函数名称: getEncryptDataFromData_MMMethodMMM
+文件: LoginHelper   函数名称: deleteAccountAndRequest_MMMethodMMM
+文件: NSString+Common   函数名称: isContainString_MMMethodMMM
+文件: LoginHelper   函数名称: googleLoginAndThirdRequest_MMMethodMMM
+文件: NSString+Common   函数名称: stringEsclipeFromXEndX_MMMethodMMM
+文件: LoginHelper   函数名称: bindAccountAndRequest_MMMethodMMM
+文件: NSString+Common   函数名称: stringCutStringTo_MMMethodMMM
+文件: NSString+Common   函数名称: stringCutStringFrom_MMMethodMMM
+文件: NSString+Common   函数名称: numberTimesAtString_MMMethodMMM
+文件: NSString+Common   函数名称: stringToMd5_MMMethodMMM
+文件: NSString+Common   函数名称: stringCutStringTo_MMMethodMMM
+文件: NSString+Common   函数名称: isContainString_MMMethodMMM
+文件: NSString+Common   函数名称: urlEncodeString_MMMethodMMM
+文件: BindAccountViewV2   函数名称: registerViewBtnAction_MMMethodMMM
+文件: BindAccountViewV2   函数名称: bindAccount_MMMethodMMM
+文件: BindAccountViewV2   函数名称: makeAccountFiledViewStatus_MMMethodMMM
+文件: MWWebViewController   函数名称: webViewControllerPresentingWithURLRequest_MMMethodMMM
+文件: MWWebViewController   函数名称: webLoadURLRequest_MMMethodMMM
+文件: MWWebViewController   函数名称: webGoBack_MMMethodMMM
+文件: MWWebViewController   函数名称: webGoForward_MMMethodMMM
+文件: MWWebViewController   函数名称: webReload_MMMethodMMM
+文件: MWWebViewController   函数名称: webClose_MMMethodMMM
+文件: RegisterAccountView   函数名称: registerViewBtnAction_MMMethodMMM
+文件: SDKBaseView   函数名称: addDrawRectBolck
+文件: SDKBaseView   函数名称: removeFromGameView
+
+开始扰乱改变函数里面执行顺序。。。。。。。
+100%👌
+
+
+开始自动随机生成属性并插入头文件和源文件。。。。。。。
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, copy)NSString *  guestDelegate_zBackgroundStr;
+@property(nonatomic, assign)int  orientations_count;
+@property(nonatomic, assign)NSInteger  tapped_index;
+
+[old: AdLogger -> new: AdLogger] insert  @property(nonatomic, copy)NSString *  confDrawStr;
+@property(nonatomic, assign)int  saveCount;
+@property(nonatomic, assign)double  ramework_offset;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)long  responce_sum;
+@property(nonatomic, assign)float  engineMax;
+
+[old: ResReader -> new: ResReader] insert  @property(nonatomic, assign)double  checkPadding;
+@property(nonatomic, assign)double  interrupt_offset;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, assign)long  animation_mark;
+@property(nonatomic, assign)long  success_tag;
+@property(nonatomic, assign)double  eventMargin;
+
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, assign)Boolean  can_Role;
+@property(nonatomic, assign)double  down_max;
+
+[old: SDKLoginViewController -> new: SDKLoginViewController] insert  @property(nonatomic, assign)NSInteger  session_idx;
+@property(nonatomic, assign)long  configurator_tag;
+@property(nonatomic, assign)int  x_height;
+@property(nonatomic, assign)long  btnCount;
+
+[old: AdDelegate -> new: AdDelegate] insert  @property(nonatomic, copy)NSArray *  headerRateAuthrizationArr;
+@property(nonatomic, assign)double  gama_offset;
+@property(nonatomic, assign)int  httpMark;
+
+[old: FindPasswordView -> new: FindPasswordView] insert  @property(nonatomic, assign)float  inputSpace;
+@property(nonatomic, copy)NSArray *  fieldArr;
+@property(nonatomic, assign)double  nameSpace;
+
+[old: AccountLoginView -> new: AccountLoginView] insert  @property(nonatomic, copy)NSArray *  helperAnimation_arr;
+@property(nonatomic, assign)Boolean  enbale_Efault;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, assign)double  userMax;
+@property(nonatomic, copy)NSArray *  frameworkLoggerSessionList;
+
+[old: ConfigCoreUtil -> new: ConfigCoreUtil] insert  @property(nonatomic, assign)double  beganOffset;
+@property(nonatomic, assign)Boolean  can_Prefers;
+@property(nonatomic, assign)double  fetchMin;
+
+[old: WelcomeBackView -> new: WelcomeBackView] insert  @property(nonatomic, assign)NSInteger  firebase_mark;
+@property(nonatomic, assign)NSInteger  ppleFlag;
+@property(nonatomic, assign)double  q_center;
+
+[old: GIDDelegate -> new: GIDDelegate] insert  @property(nonatomic, assign)double  selectedSpace;
+@property(nonatomic, assign)int  portraitIndex;
+
+[old: MyTextFiled -> new: MyTextFiled] insert  @property(nonatomic, copy)NSArray *  transactionsArray;
+@property(nonatomic, copy)NSString *  projectBackgroundCommon_str;
+
+[old: DimeUtil -> new: DimeUtil] insert  @property(nonatomic, assign)Boolean  canChang;
+@property(nonatomic, assign)NSInteger  iconIdx;
+
+[old: PhoneInfoModel -> new: PhoneInfoModel] insert  @property(nonatomic, copy)NSArray *  frameworkUtilUserArr;
+@property(nonatomic, assign)double  filedSize;
+
+[old: DimeUtil -> new: DimeUtil] insert  @property(nonatomic, assign)Boolean  enbaleHidden;
+@property(nonatomic, assign)double  utilMax;
+@property(nonatomic, copy)NSString *  normal_str;
+
+[old: FirebaseDelegate -> new: FirebaseDelegate] insert  @property(nonatomic, copy)NSArray *  success_Array;
+@property(nonatomic, assign)double  terminate_max;
+@property(nonatomic, assign)float  makeMargin;
+@property(nonatomic, copy)NSString *  selectedObjectSuccessString;
+
+[old: AccountListViewCell -> new: AccountListViewCell] insert  @property(nonatomic, assign)double  postOffset;
+@property(nonatomic, assign)double  pplePadding;
+@property(nonatomic, assign)long  reset_sum;
+
+[old: ResReader -> new: ResReader] insert  @property(nonatomic, assign)Boolean  enbale_Dime;
+@property(nonatomic, copy)NSString *  pushRamework_str;
+@property(nonatomic, assign)long  beganIdx;
+@property(nonatomic, assign)Boolean  canReport;
+
+[old: SdkUtil -> new: SdkUtil] insert  @property(nonatomic, assign)NSInteger  interruptSum;
+@property(nonatomic, assign)NSInteger  facebookSum;
+@property(nonatomic, assign)NSInteger  selected_tag;
+@property(nonatomic, assign)Boolean  has_Parse;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, assign)Boolean  canConfigurator;
+@property(nonatomic, assign)Boolean  canFirebase;
+@property(nonatomic, assign)Boolean  isConnected;
+@property(nonatomic, copy)NSString *  setupHttp_str;
+
+[old: LoginWithRegView -> new: LoginWithRegView] insert  @property(nonatomic, copy)NSArray *  identifierDelete_d2AdaptArray;
+@property(nonatomic, assign)long  update_ui;
+
+[old: FBDelegate -> new: FBDelegate] insert  @property(nonatomic, assign)NSInteger  notification_idx;
+@property(nonatomic, assign)Boolean  hasBind;
+
+[old: AccountListView -> new: AccountListView] insert  @property(nonatomic, assign)double  keychain_min;
+@property(nonatomic, copy)NSString *  regularStr;
+@property(nonatomic, assign)NSInteger  blockIndex;
+@property(nonatomic, assign)NSInteger  disappear_flag;
+
+[old: SdkSecurityFunction -> new: SdkSecurityFunction] insert  @property(nonatomic, assign)Boolean  enbale_Code;
+@property(nonatomic, assign)int  comm_tag;
+@property(nonatomic, assign)Boolean  dealloc_ap;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)int  check_idx;
+@property(nonatomic, assign)Boolean  enbaleSave;
+@property(nonatomic, assign)NSInteger  controller_index;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)float  named_max;
+@property(nonatomic, assign)double  autorotate_margin;
+@property(nonatomic, assign)long  eventSum;
+
+[old: PhoneView -> new: PhoneView] insert  @property(nonatomic, assign)float  facebookMax;
+@property(nonatomic, assign)float  loginedSize;
+
+[old: MainHomeView -> new: MainHomeView] insert  @property(nonatomic, assign)double  forward_min;
+@property(nonatomic, assign)double  tappedOffset;
+
+[old: UIUtil -> new: UIUtil] insert  @property(nonatomic, assign)long  home_sum;
+@property(nonatomic, assign)NSInteger  notice_index;
+@property(nonatomic, copy)NSArray *  delegate_7NameFile_Array;
+
+[old: SecurityUtil -> new: SecurityUtil] insert  @property(nonatomic, assign)long  adaptMark;
+@property(nonatomic, assign)double  comm_margin;
+@property(nonatomic, copy)NSString *  append_string;
+@property(nonatomic, copy)NSString *  activeForwardRateString;
+
+[old: SDKIconTitleButton -> new: SDKIconTitleButton] insert  @property(nonatomic, assign)long  existing_tag;
+@property(nonatomic, assign)int  touchSum;
+
+[old: FBDelegate -> new: FBDelegate] insert  @property(nonatomic, copy)NSArray *  v_view_arr;
+@property(nonatomic, assign)double  type_ch;
+
+[old: MWApplePayManager -> new: MWApplePayManager] insert  @property(nonatomic, assign)double  btn_margin;
+@property(nonatomic, assign)Boolean  enbaleCommon;
+@property(nonatomic, assign)NSInteger  impIndex;
+@property(nonatomic, assign)double  frame_z;
+
+[old: SDKTextFiledView -> new: SDKTextFiledView] insert  @property(nonatomic, assign)Boolean  has_Block;
+@property(nonatomic, assign)long  stringCount;
+@property(nonatomic, assign)float  select_margin;
+@property(nonatomic, assign)float  custom_offset;
+
+[old: MWWebViewController -> new: MWWebViewController] insert  @property(nonatomic, assign)int  n_products;
+@property(nonatomic, assign)NSInteger  identifier_mark;
+@property(nonatomic, assign)double  began_padding;
+
+[old: CCSkyHourFunction -> new: CCSkyHourFunction] insert  @property(nonatomic, assign)float  efault_margin;
+@property(nonatomic, assign)Boolean  is_Ramework;
+@property(nonatomic, copy)NSString *  itemFiledRateString;
+@property(nonatomic, assign)float  sheet_space;
+
+[old: TermsView -> new: TermsView] insert  @property(nonatomic, copy)NSArray *  existingActionArray;
+@property(nonatomic, copy)NSString *  queryStartString;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, assign)float  switch_f;
+@property(nonatomic, assign)int  q_width;
+
+[old: LoginHelper -> new: LoginHelper] insert  @property(nonatomic, assign)Boolean  isUserdefault;
+@property(nonatomic, assign)double  versionMax;
+
+[old: LoginTitleView -> new: LoginTitleView] insert  @property(nonatomic, assign)long  stringCount;
+@property(nonatomic, assign)int  systemTag;
+@property(nonatomic, assign)Boolean  canTouches;
+
+[old: StringUtil -> new: StringUtil] insert  @property(nonatomic, assign)float  sessionSize;
+@property(nonatomic, assign)NSInteger  http_mark;
+@property(nonatomic, assign)int  session_count;
+
+[old: LoginTypeButton -> new: LoginTypeButton] insert  @property(nonatomic, assign)long  itemFlag;
+@property(nonatomic, assign)float  socialMin;
+
+[old: SAppleLogin -> new: SAppleLogin] insert  @property(nonatomic, assign)NSInteger  purchaseSum;
+@property(nonatomic, assign)float  pament_space;
+@property(nonatomic, assign)double  p_count;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, copy)NSString *  tableForward_str;
+@property(nonatomic, copy)NSString *  rect_str;
+@property(nonatomic, assign)double  system_padding;
+@property(nonatomic, assign)int  debug_index;
+
+[old: HttpServiceEnginePay -> new: HttpServiceEnginePay] insert  @property(nonatomic, assign)long  orientationsIdx;
+@property(nonatomic, assign)float  roleMax;
+@property(nonatomic, assign)int  pathCount;
+@property(nonatomic, assign)Boolean  enbaleDic;
+
+[old: ApplePay -> new: ApplePay] insert  @property(nonatomic, assign)float  arrayMargin;
+@property(nonatomic, assign)Boolean  canRotate;
+
+[old: USDefault -> new: USDefault] insert  @property(nonatomic, assign)float  order_space;
+@property(nonatomic, assign)Boolean  canValues;
+@property(nonatomic, assign)double  named_space;
+
+[old: TouchEventInterruptView -> new: TouchEventInterruptView] insert  @property(nonatomic, copy)NSString *  seedString;
+@property(nonatomic, assign)NSInteger  core_mark;
+
+[old: MWApplePayManager -> new: MWApplePayManager] insert  @property(nonatomic, copy)NSString *  input_str;
+@property(nonatomic, assign)NSInteger  touchSum;
+
+[old: BJBaseHTTPEngine -> new: BJBaseHTTPEngine] insert  @property(nonatomic, assign)int  param_count;
+@property(nonatomic, assign)Boolean  is_File;
+@property(nonatomic, assign)double  labelMargin;
+@property(nonatomic, assign)long  rectFlag;
+
+[old: CCSDKDATA -> new: CCSDKDATA] insert  @property(nonatomic, assign)double  bool_2w;
+@property(nonatomic, assign)int  tips_idx;
+
+[old: HttpServiceEngineAd -> new: HttpServiceEngineAd] insert  @property(nonatomic, assign)float  bundleMin;
+@property(nonatomic, copy)NSString *  cancel_string;
+
+[old: LoginWithRegView -> new: LoginWithRegView] insert  @property(nonatomic, assign)float  layout_margin;
+@property(nonatomic, assign)long  selectCount;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, assign)double  generic_offset;
+@property(nonatomic, assign)Boolean  enbale_Total;
+@property(nonatomic, assign)Boolean  is_Presenting;
+@property(nonatomic, assign)NSInteger  social_mark;
+
+[old: SUtil -> new: SUtil] insert  @property(nonatomic, assign)double  y_view;
+@property(nonatomic, assign)float  gameSpace;
+@property(nonatomic, copy)NSArray *  formatInformationArr;
+@property(nonatomic, assign)double  terminate_margin;
+
+[old: GameUserModel -> new: GameUserModel] insert  @property(nonatomic, copy)NSString *  registString;
+@property(nonatomic, assign)long  labelTag;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, assign)double  esclipe_offset;
+@property(nonatomic, assign)long  agreenFlag;
+@property(nonatomic, copy)NSArray *  purchaseArr;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)int  codesCount;
+@property(nonatomic, assign)double  observeMax;
+@property(nonatomic, assign)Boolean  canCodes;
+
+[old: AccountLoginView -> new: AccountLoginView] insert  @property(nonatomic, assign)double  report_offset;
+@property(nonatomic, assign)double  observeSpace;
+@property(nonatomic, assign)long  roleTag;
+@property(nonatomic, assign)float  pamentMax;
+
+[old: SdkPrivateKeychainCfUUID -> new: SdkPrivateKeychainCfUUID] insert  @property(nonatomic, assign)float  mobileSpace;
+@property(nonatomic, assign)float  efaultSize;
+
+[old: LoginButton -> new: LoginButton] insert  @property(nonatomic, assign)long  main_l;
+@property(nonatomic, assign)double  firebaseSize;
+@property(nonatomic, assign)int  projectTag;
+@property(nonatomic, assign)NSInteger  t_view;
+
+[old: RegisterAccountView -> new: RegisterAccountView] insert  @property(nonatomic, copy)NSString *  switch_lVersionStr;
+@property(nonatomic, copy)NSArray *  changImageList;
+@property(nonatomic, assign)double  selected_offset;
+
+[old: ViewUtil -> new: ViewUtil] insert  @property(nonatomic, copy)NSString *  framework_string;
+@property(nonatomic, assign)double  errorMargin;
+
+[old: SdkCfUUID -> new: SdkCfUUID] insert  @property(nonatomic, assign)Boolean  d_title;
+@property(nonatomic, copy)NSArray *  popupTime_9xArr;
+@property(nonatomic, assign)Boolean  enbaleInput;
+
+[old: SAppleLogin -> new: SAppleLogin] insert  @property(nonatomic, assign)int  window_r;
+@property(nonatomic, assign)long  g_image;
+
+[old: HttpServiceEngineLogin -> new: HttpServiceEngineLogin] insert  @property(nonatomic, assign)double  firePadding;
+@property(nonatomic, assign)NSInteger  nameMark;
+
+[old: FindPasswordViewV2 -> new: FindPasswordViewV2] insert  @property(nonatomic, copy)NSString *  showCommonFrame_7Str;
+@property(nonatomic, assign)double  macaddress_padding;
+
+[old: BaseCountTimerView -> new: BaseCountTimerView] insert  @property(nonatomic, copy)NSArray *  confireFiledWorkList;
+@property(nonatomic, assign)float  security_max;
+@property(nonatomic, assign)double  callMin;
+@property(nonatomic, copy)NSArray *  tableSharedRegister_i_Array;
+
+[old: SdkKeychainItemWrapper -> new: SdkKeychainItemWrapper] insert  @property(nonatomic, assign)Boolean  enbaleLogin;
+@property(nonatomic, assign)NSInteger  interruptIdx;
+@property(nonatomic, assign)int  valuesFlag;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, copy)NSArray *  keySdkWindow_9_Array;
+@property(nonatomic, assign)double  editMargin;
+@property(nonatomic, copy)NSArray *  homeImageEfaultArray;
+@property(nonatomic, assign)int  keychainFlag;
+
+[old: RegisterAccountViewV2 -> new: RegisterAccountViewV2] insert  @property(nonatomic, assign)int  fromSum;
+@property(nonatomic, assign)Boolean  is_Reset;
+@property(nonatomic, assign)Boolean  can_String;
+
+[old: BasePopupView -> new: BasePopupView] insert  @property(nonatomic, assign)long  registIdx;
+@property(nonatomic, copy)NSString *  implChangeNotification_str;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)NSInteger  colorMark;
+@property(nonatomic, assign)int  t_count;
+
+[old: LineDelegate -> new: LineDelegate] insert  @property(nonatomic, assign)Boolean  can_Forward;
+@property(nonatomic, assign)Boolean  canAdapt;
+@property(nonatomic, assign)float  http_margin;
+
+[old: TermsView -> new: TermsView] insert  @property(nonatomic, assign)double  commSize;
+@property(nonatomic, assign)double  welcomeMargin;
+@property(nonatomic, assign)double  datas_offset;
+
+[old: AlertUtil -> new: AlertUtil] insert  @property(nonatomic, assign)NSInteger  efault_sum;
+@property(nonatomic, copy)NSString *  layoutTimerString;
+@property(nonatomic, assign)float  linePadding;
+@property(nonatomic, assign)float  dismissSize;
+
+[old: BindAccountViewV2 -> new: BindAccountViewV2] insert  @property(nonatomic, assign)double  resp_offset;
+@property(nonatomic, assign)int  setupIndex;
+@property(nonatomic, assign)Boolean  has_String;
+@property(nonatomic, assign)NSInteger  scriptSum;
+
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, assign)Boolean  can_Editing;
+@property(nonatomic, assign)double  idfaMin;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, copy)NSString *  requestApple_str;
+@property(nonatomic, assign)Boolean  has_Role;
+@property(nonatomic, assign)long  impl_flag;
+@property(nonatomic, copy)NSString *  dealloc_gi_string;
+
+[old: ConfigCoreUtil -> new: ConfigCoreUtil] insert  @property(nonatomic, assign)int  datas_index;
+@property(nonatomic, assign)NSInteger  dime_tag;
+@property(nonatomic, copy)NSString *  rrorLine_string;
+
+[old: WelcomeBackView -> new: WelcomeBackView] insert  @property(nonatomic, assign)double  delegate_yl;
+@property(nonatomic, copy)NSString *  dicOperationWelcomeStr;
+@property(nonatomic, assign)double  welcome_min;
+
+[old: SAlertViewDelegate -> new: SAlertViewDelegate] insert  @property(nonatomic, assign)int  wkweb_flag;
+@property(nonatomic, assign)int  delegate_6l;
+@property(nonatomic, assign)int  device_flag;
+@property(nonatomic, assign)NSInteger  product_sum;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)Boolean  enbale_Base;
+@property(nonatomic, assign)Boolean  has_Orientation;
+
+[old: ChangePasswordView -> new: ChangePasswordView] insert  @property(nonatomic, assign)int  z_title;
+@property(nonatomic, assign)Boolean  isConf;
+@property(nonatomic, assign)float  phoneOffset;
+@property(nonatomic, assign)NSInteger  facebookIdx;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, assign)double  content_space;
+@property(nonatomic, assign)double  handle_offset;
+@property(nonatomic, assign)double  modity_min;
+@property(nonatomic, assign)int  encrypt_index;
+
+[old: SelectBindTypeView -> new: SelectBindTypeView] insert  @property(nonatomic, assign)double  email_max;
+@property(nonatomic, assign)long  header_flag;
+
+[old: BJBaseHTTPEngine -> new: BJBaseHTTPEngine] insert  @property(nonatomic, assign)NSInteger  terms_sum;
+@property(nonatomic, assign)float  appendSize;
+@property(nonatomic, assign)NSInteger  with_1;
+
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, assign)long  filedIdx;
+@property(nonatomic, copy)NSArray *  handleConfire_arr;
+@property(nonatomic, assign)long  transactionCount;
+
+[old: MWWebViewController -> new: MWWebViewController] insert  @property(nonatomic, copy)NSString *  responseLayoutTime_h_string;
+@property(nonatomic, copy)NSArray *  handerArr;
+@property(nonatomic, copy)NSString *  seedParseRoleStr;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)NSInteger  status_tag;
+@property(nonatomic, assign)long  information_flag;
+@property(nonatomic, assign)float  commonPadding;
+
+[old: SDKBaseView -> new: SDKBaseView] insert  @property(nonatomic, copy)NSString *  implBaseString;
+@property(nonatomic, assign)int  ended_count;
+
+[old: LineDelegate -> new: LineDelegate] insert  @property(nonatomic, assign)double  timer_min;
+@property(nonatomic, assign)double  elegate_size;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, assign)float  encodingMargin;
+@property(nonatomic, copy)NSString *  load_str;
+@property(nonatomic, assign)double  arac_margin;
+
+[old: BJServiceConfigurator -> new: BJServiceConfigurator] insert  @property(nonatomic, assign)double  token_space;
+@property(nonatomic, assign)int  animation_tag;
+@property(nonatomic, copy)NSArray *  viewNameArr;
+
+[old: MainHomeView -> new: MainHomeView] insert  @property(nonatomic, assign)double  changed_margin;
+@property(nonatomic, assign)NSInteger  create_count;
+@property(nonatomic, copy)NSArray *  progressConfiguratorChangList;
+@property(nonatomic, assign)int  orientationTag;
+
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, assign)long  content_count;
+@property(nonatomic, assign)long  pushMark;
+
+[old: HttpServiceEnginePay -> new: HttpServiceEnginePay] insert  @property(nonatomic, assign)double  responce_margin;
+@property(nonatomic, copy)NSString *  totalLandscapeStr;
+
+[old: AccountListView -> new: AccountListView] insert  @property(nonatomic, copy)NSArray *  inputFromValidList;
+@property(nonatomic, assign)int  indicatorMark;
+
+[old: BindAccountView -> new: BindAccountView] insert  @property(nonatomic, assign)Boolean  enbaleRegular;
+@property(nonatomic, assign)double  indicator_offset;
+@property(nonatomic, assign)double  number_offset;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, assign)float  conf_min;
+@property(nonatomic, copy)NSArray *  sdk_list;
+@property(nonatomic, assign)double  wkweb_margin;
+@property(nonatomic, assign)Boolean  hasAnimation;
+
+[old: BJBaseResponceModel -> new: BJBaseResponceModel] insert  @property(nonatomic, assign)int  vipCount;
+@property(nonatomic, assign)NSInteger  login_sum;
+
+[old: FindPasswordViewV2 -> new: FindPasswordViewV2] insert  @property(nonatomic, assign)NSInteger  dimeSum;
+@property(nonatomic, assign)Boolean  j_height;
+
+[old: FindPasswordViewV2 -> new: FindPasswordViewV2] insert  @property(nonatomic, assign)double  social_min;
+@property(nonatomic, assign)double  edit_max;
+
+[old: RegisterAccountViewV2 -> new: RegisterAccountViewV2] insert  @property(nonatomic, assign)double  scriptOffset;
+@property(nonatomic, copy)NSString *  window_umWkwebEncodingStr;
+@property(nonatomic, assign)long  wkweb_idx;
+@property(nonatomic, assign)double  private_g;
+
+[old: RegisterAccountViewV2 -> new: RegisterAccountViewV2] insert  @property(nonatomic, assign)float  bnews_min;
+@property(nonatomic, assign)int  ipadFlag;
+
+[old: HttpServiceEngineLogin -> new: HttpServiceEngineLogin] insert  @property(nonatomic, assign)float  decode_offset;
+@property(nonatomic, assign)int  date_count;
+@property(nonatomic, assign)Boolean  enbaleStop;
+@property(nonatomic, assign)double  query_padding;
+
+[old: BindAccountViewV2 -> new: BindAccountViewV2] insert  @property(nonatomic, copy)NSArray *  arrayAccount_Array;
+@property(nonatomic, assign)NSInteger  util_mark;
+
+[old: BindAccountViewV2 -> new: BindAccountViewV2] insert  @property(nonatomic, assign)double  ppleSpace;
+@property(nonatomic, copy)NSArray *  reload_list;
+@property(nonatomic, assign)NSInteger  aracMark;
+@property(nonatomic, copy)NSString *  startEfaultActive_string;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, assign)double  elegateSpace;
+@property(nonatomic, assign)double  cell_space;
+@property(nonatomic, copy)NSString *  actionFunctionBoard_string;
+@property(nonatomic, assign)double  generic_offset;
+
+[old: HttpServiceEngineAd -> new: HttpServiceEngineAd] insert  @property(nonatomic, assign)float  http_max;
+@property(nonatomic, assign)long  moved_index;
+@property(nonatomic, assign)double  localx_space;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)Boolean  can_Table;
+@property(nonatomic, copy)NSString *  colorLocalxQuery_str;
+@property(nonatomic, copy)NSString *  authtication_str;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)Boolean  hasQuery;
+@property(nonatomic, copy)NSArray *  loadingPage_Array;
+@property(nonatomic, assign)double  localxSpace;
+
+[old: BJError -> new: BJError] insert  @property(nonatomic, copy)NSArray *  long_8tModelsInterface_Array;
+@property(nonatomic, assign)float  encryptMax;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, assign)int  codesIndex;
+@property(nonatomic, assign)NSInteger  welcomeTag;
+@property(nonatomic, assign)NSInteger  payment_t;
+
+[old: AccountLoginViewV2 -> new: AccountLoginViewV2] insert  @property(nonatomic, copy)NSArray *  homeInfoAppend_list;
+@property(nonatomic, assign)Boolean  hasPreferred;
+@property(nonatomic, assign)int  register_3;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)NSInteger  eventCount;
+@property(nonatomic, assign)double  touch_size;
+
+[old: SDKRequest -> new: SDKRequest] insert  @property(nonatomic, copy)NSArray *  modity_arr;
+@property(nonatomic, assign)Boolean  enbaleInput;
+@property(nonatomic, assign)double  eventMin;
+@property(nonatomic, assign)int  confire_flag;
+
+[old: LoginWithRegViewV2 -> new: LoginWithRegViewV2] insert  @property(nonatomic, assign)NSInteger  number_flag;
+@property(nonatomic, assign)long  indicatorIndex;
+@property(nonatomic, assign)int  pay_p;
+@property(nonatomic, assign)NSInteger  currentSum;
+
+[old: TermsViewV2 -> new: TermsViewV2] insert  @property(nonatomic, assign)Boolean  enbale_Perssion;
+@property(nonatomic, assign)Boolean  has_Click;
+@property(nonatomic, assign)float  decodeMin;
+@property(nonatomic, assign)double  encoding_margin;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, assign)NSInteger  readerFlag;
+@property(nonatomic, copy)NSString *  statusLable_string;
+
+[old: NoticeViewV2 -> new: NoticeViewV2] insert  @property(nonatomic, assign)Boolean  isGradient;
+@property(nonatomic, assign)NSInteger  progress_idx;
+@property(nonatomic, copy)NSString *  macaddressNumberStr;
+
+[old: PhoneInfoModel -> new: PhoneInfoModel] insert  @property(nonatomic, assign)int  loggerFlag;
+@property(nonatomic, copy)NSArray *  googleManager_list;
+@property(nonatomic, assign)NSInteger  sheet_sum;
+@property(nonatomic, assign)long  plistSum;
+
+[old: BindPhoneViewV2 -> new: BindPhoneViewV2] insert  @property(nonatomic, assign)double  reader_offset;
+@property(nonatomic, copy)NSArray *  autorotateWith_rFinishList;
+
+[old: MainHomeViewV2 -> new: MainHomeViewV2] insert  @property(nonatomic, assign)float  token_margin;
+@property(nonatomic, assign)Boolean  hasHidden;
+
+[old: SDKLoginViewController -> new: SDKLoginViewController] insert  @property(nonatomic, assign)double  elegateMax;
+@property(nonatomic, assign)long  type_z4;
+@property(nonatomic, assign)Boolean  can_Game;
+@property(nonatomic, assign)double  creat_padding;
+
+
+
+开始自动混淆指定属性名称。。。。。。
+文件: [旧 PhoneInfoModel <--> 新 PhoneInfoModel] 属性:gamaAreaCodesArray ==> hander
+文件: [旧 DimeUtil <--> 新 DimeUtil] 属性:viewAdaptRate ==> fieldFile
+文件: [旧 SDKLoginViewController <--> 新 SDKLoginViewController] 属性:sdkContentView ==> fontG
+文件: [旧 MWApplePayManager <--> 新 MWApplePayManager] 属性:currentOrderId ==> guest
+文件: [旧 HttpServiceEnginePay <--> 新 HttpServiceEnginePay] 属性:httpEngine ==> colorC
+文件: [旧 HttpServiceEngineAd <--> 新 HttpServiceEngineAd] 属性:httpEngine ==> colora
+文件: [旧 HttpServiceEngineLogin <--> 新 HttpServiceEngineLogin] 属性:httpEngine ==> colorw
+文件: [旧 ResReader <--> 新 ResReader] 属性:m_stringsName ==> facebookResp
+文件: [旧 MWApplePayManager <--> 新 MWApplePayManager] 属性:mPayData ==> configuratorCenter
+文件: [旧 ResReader <--> 新 ResReader] 属性:m_stringsBundle ==> bindStamp
+文件: [旧 MWApplePayManager <--> 新 MWApplePayManager] 属性:payStatusBlock ==> tappedBlock
+文件: [旧 FBDelegate <--> 新 FBDelegate] 属性:loginManager ==> changeKeychain
+文件: [旧 FBDelegate <--> 新 FBDelegate] 属性:successBlock ==> statusData
+文件: [旧 FBDelegate <--> 新 FBDelegate] 属性:failBlock ==> self_jResetup
+文件: [旧 UIAlertController+Sdk <--> 新 UIAlertController+Sdk] 属性:alertWindow ==> area
+文件: [旧 BJBaseHTTPEngine <--> 新 BJBaseHTTPEngine] 属性:sessionManager ==> p_manager
+文件: [旧 SAppleLogin <--> 新 SAppleLogin] 属性:impSuccess ==> login
+文件: [旧 SAppleLogin <--> 新 SAppleLogin] 属性:impError ==> lineKey
+文件: [旧 LineDelegate <--> 新 LineDelegate] 属性:successCallBack ==> sdkFirebase
+文件: [旧 LineDelegate <--> 新 LineDelegate] 属性:failCallBack ==> arac
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:layoutHandler ==> textL
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:wkwebView ==> editingMobile
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:headerView ==> passwordh
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:footView ==> icon
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:indicatorView ==> landspaceContent
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:progressView ==> errorG
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:animation ==> localx
+文件: [旧 MWWebViewController <--> 新 MWWebViewController] 属性:webRequest ==> createModel
+
+
+开始插入混淆函数并在现有函数体里面自动插入混淆函数调用语句。。。。。。。
+100%👌
+
+
+开始自动插入头文件混淆函数定义语句。。。。。。。
+100%👌
+
+
+开始生成新混淆源文件。。。。。。。
+100%👌

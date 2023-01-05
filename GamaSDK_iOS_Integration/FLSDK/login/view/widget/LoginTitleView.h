@@ -1,10 +1,3 @@
-//
-//  LoginTitleView.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -15,6 +8,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginTitleView : SDKBaseView
+
+
+@property(nonatomic, assign)long  stringCount;
+@property(nonatomic, assign)int  systemTag;
+@property(nonatomic, assign)Boolean  canTouches;
+
+
+
+
+-(double)phoneSkyPass:(double)plist;
+
+-(UIView *)eyePadWhiteTipJsonRememberView:(int)information confire:(NSDictionary *)confire;
+
 
 @property (nonatomic,strong) UILabel *titleLable;
 @property (nonatomic,strong) UIButton *backBtn;

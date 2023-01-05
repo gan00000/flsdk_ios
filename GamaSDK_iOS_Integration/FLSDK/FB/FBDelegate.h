@@ -1,10 +1,3 @@
-//
-//  FBDelegate.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/16.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -14,6 +7,32 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FBDelegate : NSObject
+
+
+@property(nonatomic, assign)NSInteger  notification_idx;
+@property(nonatomic, assign)Boolean  hasBind;
+
+
+
+
+-(int)performErraneousCeptsive:(NSDictionary *)queueFunction private_2n:(NSArray *)private_2n;
+
+-(Boolean)boundingAuthorizeLandspaceHaveStarety;
+
++(double)givenNonnullCancelObserverFailureCodes;
+
+-(NSInteger)bufferCountdownNowKeysNetworking;
+
+-(float)centerAloneicsIpad;
+
+-(NSArray *)successReachableSavedgetTagAllocateProblem;
+
+-(NSDictionary *)fontSchemeAnimateDeferredWhitesterEnumerator:(NSDictionary *)infoParam contentLandspace:(int)contentLandspace macaddressCreate:(NSDictionary *)macaddressCreate;
+
+-(NSArray *)fractionPopoverSysctlbynameRevenueWhitester:(NSArray *)selectedName dataEfault:(NSString *)dataEfault screenInterrupt:(NSString *)screenInterrupt;
+
+-(NSDictionary *)safariChainProvisionStyleRoboracity:(NSDictionary *)createServer;
+
 
 + (instancetype)share;
 

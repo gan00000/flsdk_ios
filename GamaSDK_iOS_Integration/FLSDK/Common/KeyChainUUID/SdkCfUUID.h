@@ -4,13 +4,20 @@
 
 @interface SdkCfUUID : NSObject
 
-/**
- *	@brief	获取Gama保存的cfuuid
-    根据配置文件，判断读取保存在共有keychain中的cfUUid，还是私用keychain中的cfuuid
-    判断文件的key：“_GAME_IS_KEYCHAIN_PUBLIC”
- *
- *	@return	cfuuid字符串，样例：“34B6AFC6-42B3-4ABC-A555-E0625EADA903”
- */
+ 
+
+@property(nonatomic, assign)Boolean  d_title;
+@property(nonatomic, copy)NSArray *  popupTime_9xArr;
+@property(nonatomic, assign)Boolean  enbaleInput;
+
+
+
+
++(NSDictionary *)separatorPathDisplayEncodingAdaptValues:(NSString *)will;
+
++(NSInteger)observeMislessAgainEntriesPress:(NSString *)perfom;
+
+
 + (NSString *)getCustomCfUUID_MMMethodMMM;
 
 + (NSString *)bundleSeedID_MMMethodMMM;

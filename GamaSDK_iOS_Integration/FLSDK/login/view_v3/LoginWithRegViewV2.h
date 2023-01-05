@@ -1,10 +1,3 @@
-//
-//  MainLoginView.h
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import "SDKBaseView.h"
@@ -14,6 +7,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginWithRegViewV2 : SDKBaseView
+
+
+@property(nonatomic, assign)NSInteger  status_tag;
+@property(nonatomic, assign)long  information_flag;
+@property(nonatomic, assign)float  commonPadding;
+
+
+
+
+-(NSString *)scanExpArea:(double)read;
+
+-(NSInteger)failRngTimestampObserving:(float)click;
+
+-(NSString *)uppercaseEventPentAmount:(NSArray *)callTapped observe:(int)observe;
+
 
 @property (nonatomic, strong) AccountLoginViewV2 *mAccountLoginView;
 

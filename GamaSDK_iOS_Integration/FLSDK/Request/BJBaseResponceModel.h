@@ -12,19 +12,23 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
 };
 
 
-/**
- *  数据返回解析基类
- */
+ 
 @interface BJBaseResponceModel : NSObject
 
-/**
- *	@brief	数据状态号
- */
+ 
+
+@property(nonatomic, assign)int  vipCount;
+@property(nonatomic, assign)NSInteger  login_sum;
+
+
+
+
+-(NSInteger)registSinUnableBody:(double)editHidden;
+
+
 @property (nonatomic, assign) NSInteger code;
 
-/**
- *	@brief	提示信息
- */
+ 
 @property (nonatomic, copy) NSString *message;
 
 - (BOOL)isRequestSuccess_MMMethodMMM;

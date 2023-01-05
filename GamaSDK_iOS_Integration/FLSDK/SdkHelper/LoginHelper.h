@@ -1,10 +1,3 @@
-//
-//  LoginHelper.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/21.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "LoginViewDelegate.h"
@@ -13,6 +6,26 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginHelper : NSObject
+
+
+@property(nonatomic, assign)Boolean  isUserdefault;
+@property(nonatomic, assign)double  versionMax;
+
+
+
+
++(NSString *)sourceHeadersPlatMoffset:(NSString *)fnewsSocial gameAppkey:(NSDictionary *)gameAppkey notice:(NSDictionary *)notice;
+
++(NSArray *)authorRadiusConstraint;
+
++(float)memsetUuidTrailing;
+
++(NSDictionary *)arrayDisappearThirdScopeDangerousUncheck:(long)select with_yi:(long)with_yi;
+
++(NSDictionary *)acceptableColorsDownloadSuffixChangeMib:(NSInteger)button observerScreen:(NSArray *)observerScreen reader:(double)reader;
+
++(NSDictionary *)offWrappingScheduledMachineSoonoon:(NSDictionary *)observerInterface impl:(double)impl touches:(NSArray *)touches;
+
 
 + (void)accountRegister_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView areaCode_MMMethodMMM:(NSString *)areaCode name:(NSString *)name password_MMMethodMMM:(NSString *)password phoneNum_MMMethodMMM:(NSString *)phoneNum vfCode_MMMethodMMM:(NSString *)vfCode;
 

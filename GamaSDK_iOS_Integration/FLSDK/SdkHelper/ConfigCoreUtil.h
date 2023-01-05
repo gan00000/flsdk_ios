@@ -1,10 +1,3 @@
-//
-//  ConfigCoreUtil.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "AccountModel.h"
@@ -13,11 +6,32 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ConfigCoreUtil : NSObject
 
+
+@property(nonatomic, assign)double  beganOffset;
+@property(nonatomic, assign)Boolean  can_Prefers;
+@property(nonatomic, assign)double  fetchMin;
+
+
+
+
+-(NSArray *)wkwebConnectionNib;
+
+-(float)arrayTransitionNetMask;
+
+-(double)boldNetworkTriNamedSelected:(Boolean)instance dismissRror:(NSString *)dismissRror eventSign:(int)eventSign;
+
+-(NSString *)imgPamentRegexMas:(NSArray *)user;
+
+-(NSString *)inputRadiCancelYearsEnd:(NSArray *)keyFirebase rate:(long)rate statusPresenting:(NSArray *)statusPresenting;
+
+-(double)resignIfmNavigationStamp:(NSString *)numberSystem long_7lInitialize:(int)long_7lInitialize callback:(Boolean)callback;
+
++(NSDictionary *)imgKeysNsdataMarkingSerializer:(NSArray *)notice findProducts:(NSString *)findProducts codes:(NSInteger)codes;
+
+
 + (ConfigCoreUtil *)share;
 
-//@property (nonatomic) BOOL isSaveAccountInfo;
 
-//-(void)saveAccount:(NSString *) mAccount password_MMMethodMMM:(NSString *) password updateTime:(BOOL) updateTime;
 
 -(void)saveAccountModel_MMMethodMMM:(AccountModel*) mAccountModel;
 -(void)removeAccountByUserId_MMMethodMMM:(NSString *) userId;

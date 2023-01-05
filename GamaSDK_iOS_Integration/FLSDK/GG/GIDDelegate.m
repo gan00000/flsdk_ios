@@ -1,16 +1,8 @@
-//
-//  GIDDelegate.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/21.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import "GIDDelegate.h"
 #import "CComHeader.h"
 #import "StringUtil.h"
 
-//@import GoogleSignIn;
 #import <GoogleSignIn/GoogleSignIn.h>
 
 @implementation GIDDelegate
@@ -35,7 +27,7 @@ static void handleUserInfo(void (^ _Nonnull failCallback)(NSString *), NSString 
             successCallback(userID,name,email,idToken,accessToken,kClientID);
         }
     } else {
-        // To authenticate, use Google Sign-In button.
+        
         SDK_LOG(@"Status: Not authenticated");
         if (failCallback) {
             failCallback(@"");
@@ -43,13 +35,59 @@ static void handleUserInfo(void (^ _Nonnull failCallback)(NSString *), NSString 
     }
 }
 
++(double)whiteArchiNoticeMonthsDomainsRegular:(NSArray *)hiddenNews began:(NSArray *)began {
+     NSInteger boardTerm = 5257;
+     int authtication = 1265;
+    double idleOffhandUntoward = 0;
+    boardTerm = 7234;
+    idleOffhandUntoward *= boardTerm;
+         int _t_40 = (int)boardTerm;
+     _t_40 += 80;
+    authtication = authtication;
+    idleOffhandUntoward *= authtication;
+         int temp_q_46 = (int)authtication;
+     int j_48 = 1;
+     int g_42 = 1;
+     if (temp_q_46 > g_42) {
+         temp_q_46 = g_42;
+     }
+     while (j_48 <= temp_q_46) {
+         j_48 += 1;
+          temp_q_46 += j_48;
+         break;
+     }
+
+    return idleOffhandUntoward;
+
+}
+
+
+
+
+
+
++ (void)signOut_MMMethodMMM {
+
+         {
+    [self whiteArchiNoticeMonthsDomainsRegular:@[@(548), @(798)] began:[NSArray arrayWithObjects:@(746), @(489), @(753), nil]];
+
+}
+
+    
+    
+    [GIDSignIn.sharedInstance signOut];
+    
+}
+
+
 +(void)loginWithClientID_MMMethodMMM:(NSString *)kClientID
 presentingViewController:(UIViewController *)presentingViewController
          successCallback_MMMethodMMM:(void(^)(NSString *userId,NSString *name,NSString *email,NSString *idToken,NSString *accessToken,NSString * clientId))successCallback
             failCallback_MMMethodMMM:(void(^)(NSString *msg))failCallback
           cancelCallback_MMMethodMMM:(void(^)(NSString *msg))cancelCallback
 {
-    //    NSString *kClientID = @"";
+
+    
     if ([StringUtil isEmpty_MMMethodMMM:kClientID]) {
         kClientID = [FirebaseDelegate getClientID_MMMethodMMM];
     }
@@ -62,9 +100,12 @@ presentingViewController:(UIViewController *)presentingViewController
         return;
     }
     SDK_LOG(@"kClientID = %@",kClientID);
+            Boolean modeo = NO;
     GIDGoogleUser *googleUser = [GIDSignIn.sharedInstance currentUser];
     if (googleUser && googleUser.authentication) {
         handleUserInfo(failCallback, kClientID, successCallback);
+            NSString * identifier1 = @"juncture";
+             while (identifier1.length > 43) { break; }
         return;
     }
     
@@ -89,24 +130,10 @@ presentingViewController:(UIViewController *)presentingViewController
         
         handleUserInfo(failCallback, kClientID, successCallback);
         
-        // Your user is signed in!
+        
     }];
-}
-
-+ (void)signOut_MMMethodMMM {
-    
-    
-    [GIDSignIn.sharedInstance signOut];//登出会重新请求认证
-    
-//    [GIDSignIn.sharedInstance disconnectWithCallback:^(NSError * _Nullable error) {
-//        if (error) {
-//
-//            SDK_LOG(@"Status: Failed to disconnect: %@",error);
-//        } else {
-//            SDK_LOG(@"Status: Disconnected");
-//        }
-//
-//    }];
+            float stringl = 3807.0;
+             if (@(stringl).integerValue < 62) {}
 }
 
 @end

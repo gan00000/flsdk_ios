@@ -1,19 +1,28 @@
-//
-//  DimeUtil.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/23.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
-#import "CComHeader.h" //最基本
+#import "CComHeader.h" 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DimeUtil : NSObject
+
+@property(nonatomic, assign)Boolean  canChang;
+@property(nonatomic, assign)NSInteger  iconIdx;
+
+
+
+
+-(NSDictionary *)perfomSharedReuseLast:(double)shared;
+
++(NSArray *)findPurchaseMemsetDeletageRows;
+
+-(NSArray *)substringIfmOneSureenneMasonryPoint:(NSDictionary *)h_image scale:(NSInteger)scale logined:(NSDictionary *)logined;
+
+-(NSInteger)registSeedAnythingView:(NSString *)w_manager statusUserdefault:(float)statusUserdefault systemRamework:(NSDictionary *)systemRamework;
+
+
 + (instancetype)share;
 -(CGFloat)getViewHeight_MMMethodMMM:(CGFloat)height;
 

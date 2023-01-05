@@ -1,30 +1,101 @@
-//
-//  LineDelegate.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/21.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import "LineDelegate.h"
 #import "LineSDK/LineSDK.h"
 
-//@import LineSDK;
-//@import LineSDKObjC;
 
 #import "CComHeader.h"
 
 @interface LineDelegate() <LineSDKLoginDelegate>
+@property(nonatomic, assign)Boolean  can_Forward;
+@property(nonatomic, assign)Boolean  canAdapt;
+@property(nonatomic, assign)float  http_margin;
 
-@property (nonatomic) LineCallBack successCallBack;
-@property (nonatomic) LineCallBack failCallBack;
+
+
+
+@property (nonatomic) LineCallBack sdkFirebase;
+@property (nonatomic) LineCallBack arac;
 
 @end
 @implementation LineDelegate
 
+
++(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
+{
+    
+    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+}
+
++(NSString *)resetupLangMaxDrawingLocale:(NSInteger)parseCore {
+     NSInteger delegate_8f = 4113;
+    NSString *referBourgeoisScarcity = [[NSString alloc] init];
+         int l_29 = (int)delegate_8f;
+     switch (l_29) {
+          case 96: {
+          l_29 *= 81;
+          if (l_29 < 770) {
+          }
+             break;
+
+     }
+          case 54: {
+          int m_40 = 1;
+     int d_81 = 1;
+     if (l_29 > d_81) {
+         l_29 = d_81;
+     }
+     while (m_40 < l_29) {
+         m_40 += 1;
+     int g_51 = m_40;
+          if (g_51 < 103) {
+          g_51 += 90;
+          g_51 *= 3;
+     }
+         break;
+     }
+             break;
+
+     }
+          case 35: {
+          int e_11 = 1;
+     int d_58 = 1;
+     if (l_29 > d_58) {
+         l_29 = d_58;
+     }
+     while (e_11 < l_29) {
+         e_11 += 1;
+          l_29 /= e_11;
+     int v_20 = e_11;
+              break;
+     }
+             break;
+
+     }
+     default:
+         break;
+
+     }
+
+    return referBourgeoisScarcity;
+
+}
+
+
+
+
+
+
+
 + (instancetype)share{
+
+         {
+    [self resetupLangMaxDrawingLocale:9803];
+
+}
+
     
     static LineDelegate *mLineDelegate = nil;
+            NSDictionary * short_ebO = [NSDictionary dictionaryWithObjectsAndKeys:@"imperialist",@(92), nil];
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         mLineDelegate = [[LineDelegate alloc] init];
@@ -33,104 +104,141 @@
     return mLineDelegate;
 }
 
+-(NSString *)welcomeHeadersMasonryPolicy{
+    NSString *loafCreateIdyll = [NSString new];
+
+    return loafCreateIdyll;
+
+}
+
+
+
+
+
+
+-(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)sdkFirebase fail_MMMethodMMM:(LineCallBack)arac
+{
+
+   self.can_Forward = NO;
+
+   self.canAdapt = NO;
+
+   self.http_margin = 9598.0;
+
+   self.timer_min = 1936.0;
+
+   self.elegate_size = 2387.0;
+
+         {
+    [self welcomeHeadersMasonryPolicy];
+
+}
+
+    self.sdkFirebase = sdkFirebase;
+            NSArray * filel = [NSArray arrayWithObjects:@(577), @(602), nil];
+             if ([filel containsObject:@"6"]) {}
+    self.arac = arac;
+    
+    [LineSDKLogin sharedInstance].delegate = self;
+            NSDictionary * adaptD = [NSDictionary dictionaryWithObjectsAndKeys:@"portraiture",@(462), @"diplomat",@(155), @"rivulet",@(201), nil];
+             while (adaptD.count > 92) { break; }
+    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
+    
+    
+}
+
+
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
 }
 
+
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-//    [[LineSDKLoginManager sharedManager] application:application open:url options:<#(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)#>];
-//    return NO;
     return [[LineSDKLogin sharedInstance] handleOpenURL:url];
 
 }
 
+-(int)fractionKeyArchivedIdentifiersObject:(NSDictionary *)gesture {
+     long debugEditing = 1432;
+    int broilDetractor = 0;
+    debugEditing = 4851;
+    broilDetractor *= debugEditing;
+         int _t_46 = (int)debugEditing;
+     if (_t_46 < 121) {
+          switch (_t_46) {
+          case 61: {
+          _t_46 *= 19;
+                  break;
 
-+(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
-{
-//    return [[LineSDKLoginManager sharedManager] application:application open:url options:options];
-    
-    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+     }
+          case 58: {
+          _t_46 -= 79;
+                  break;
+
+     }
+          case 31: {
+          _t_46 *= 85;
+                  break;
+
+     }
+     default:
+         break;
+
+     }
+     }
+
+    return broilDetractor;
+
 }
 
--(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
-{
-    self.successCallBack = successCallBack;
-    self.failCallBack = failCallBack;
-    
-    [LineSDKLogin sharedInstance].delegate = self;
-    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
-    
-//    NSSet *permissions = [NSSet setWithObjects:
-//                              [LineSDKLoginPermission profile],
-//                              [LineSDKLoginPermission openID],
-//                              nil];
-//    [[LineSDKLoginManager sharedManager] loginWithPermissions:permissions
-//            inViewController:nil
-//                  parameters_MMMethodMMM:nil
-//           completionHandler:^(LineSDKLoginResult *result, NSError *error) {
-//               if (result) {
-//                   NSLog(@"User Name: %@", result.userProfile.displayName);
-//                   [LineSDKAPI getProfileWithCompletionHandler:^(LineSDKUserProfile * _Nullable profile, NSError * _Nullable error) {
-//
-//                       if (profile) {
-//                           NSLog(@"getProfile User Name: %@", profile.displayName);
-//                       } else {
-//                           NSLog(@"getProfile Error: %@", error);
-//                       }
-//
-//                   }];
-//
-//               } else {
-//                   NSLog(@"loginWithPermissions Error: %@", error);
-//                   if ([error.domain isEqualToString:[LineSDKErrorConstant errorDomain]]) {
-//                       // SDK Error
-//                       if (error.code == 2004) {
-//                           // invalidHTTPStatusAPIError
-//                           NSNumber *statusCode = error.userInfo[[LineSDKErrorConstant userInfoKeyStatusCode]];
-//                           if ([statusCode integerValue] == 403) {
-//                               // Permission granting issue. Ask for authorization with enough permission again.
-//                           }
-//                       }
-//
-//                   }
-//               }
-//           }
-//     ];
-    
-}
+
+
+
+
 
 
 
 - (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
 
 
+
     if (error) {
-        // Login failed with an error. Use the error parameter to identify the problem.
+        
         NSLog(@"Error: %@", error.localizedDescription);
-        if (self.failCallBack) {
-            self.failCallBack(@"",@"",@"");
+        if (self.arac) {
+            self.arac(@"",@"",@"");
+
+         {
+    [self fractionKeyArchivedIdentifiersObject:@{@"range":@(480), @"academic":@(831)}];
+
+}
         }
     }else {
 
-        // Login success. Extracts the access token, user profile ID, display name, status message, and profile picture.
+        
         NSString * accessToken = credential.accessToken.accessToken;
+            NSString * scriptm = @"fasten";
         NSString * userID = profile.userID;
+            NSString * modeb = @"closely";
+             if ([modeb isEqualToString:@"_"]) {}
         NSString * displayName = profile.displayName;
         NSString * statusMessage = profile.statusMessage;
+            float queryf = 4577.0;
+             while (@(queryf).longLongValue < 67) { break; }
         NSURL * pictureURL = profile.pictureURL;
 
         NSString * pictureUrlString;
 
-        // If the user doesn't have a profile picture set, pictureURL will be nil
+        
         if (pictureURL) {
             pictureUrlString = profile.pictureURL.absoluteString;
         }
         SDK_LOG(@"accessToken=%@,userID=%@,displayName=%@",accessToken,userID,displayName);
-        if (self.successCallBack) {
-            self.successCallBack(accessToken, userID, displayName);
+        if (self.sdkFirebase) {
+            self.sdkFirebase(accessToken, userID, displayName);
         }
 
     }

@@ -1,16 +1,26 @@
-//
-//  TermsView.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TermsView : SDKBaseView
+
+@property(nonatomic, assign)double  commSize;
+@property(nonatomic, assign)double  welcomeMargin;
+@property(nonatomic, assign)double  datas_offset;
+
+
+
+
+-(long)imgInappNattion:(NSString *)delegate_3;
+
+-(long)insertBridgingPresentLegthScript:(float)imp stamp:(NSArray *)stamp;
+
++(NSArray *)storeLoginClipsUnarchiverFeaturesAresult:(NSString *)configUrls event:(NSString *)event;
+
++(NSDictionary *)launchAuthorizeSin;
+
+
 - (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer;
 
 + (BOOL)openProvision_MMMethodMMM;

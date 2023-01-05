@@ -1,46 +1,105 @@
-//
-//  SDKBaseView.m
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/31.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 @implementation SDKBaseView
 
-- (void)initData_MMMethodMMM{
-    
-}
-//事件的传递和响应的区别：
-//事件的传递是从上到下（父控件到子控件），事件的响应是从下到上（顺着响应者链条向上传递：子控件到父控件。
-//在事件的响应中，如果某个控件实现了touches...方法，则这个事件将由该控件来接受，如果调用了[supertouches….];就会将事件顺着响应者链条往上传递，传递给上一个响应者；接着就会调用上一个响应者的touches….方法
-//只要点击控件,就会调用touchBegin,如果没有重写这个方法,自己处理不了触摸事件
-// 上一个响应者可能是父控件
-//默认会把事件传递给上一个响应者,上一个响应者是父控件,交给父控件处理
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  //system_method
-{
-    SDK_LOG(@"SDKBaseView touchesBegan");
-    [self endEditing:YES];
-    
-    // 注意不是调用父控件的touches方法，而是调用父类的touches方法
-    // super是父类 superview是父控件
-    [super touchesBegan:touches withEvent:event];
+-(NSDictionary *)swithPericalCryptSupportedArgEncoding:(NSArray *)encode wedth:(float)wedth payment_ieMessage:(Boolean)payment_ieMessage {
+    NSMutableDictionary * predictSlackenMagisterial = [NSMutableDictionary dictionaryWithObject:@(64)forKey:@"tantrumTumidFloridness"];
+
+    return predictSlackenMagisterial;
+
 }
 
-//一根或者多根手指在view上移动（随着手指的移动，会持续调用该方法）
-//-(void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event
-//
-//一根或者多根手指离开view（手指抬起）
-//-(void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event
-//
-//某个系统事件(例如电话呼入)打断触摸过程
-//-(void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent*)event
+
+
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  
+{
+
+   self.implBaseString = @"breach";
+
+   self.ended_count = 5562;
+
+    SDK_LOG(@"SDKBaseView touchesBegan");
+
+         {
+NSDictionary * sittingroom = [self swithPericalCryptSupportedArgEncoding:[NSArray arrayWithObjects:@(208), @(289), nil] wedth:9540.0 payment_ieMessage:NO];
+
+      int sittingroom_len = sittingroom.count;
+     int _t_27 = (int)sittingroom_len;
+     _t_27 /= 38;
+      [sittingroom enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+          if ([key isEqualToString:@"confire"]) {
+              NSLog(@"value: %@", obj);
+          }else {
+              NSLog(@"key: %@, value: %@", key, obj);
+          }
+      }];
+
+
+}
+            float landscape0 = 8278.0;
+             if (@(landscape0).intValue > 4) {}
+    [self endEditing:YES];
+    
+    
+    
+    [super touchesBegan:touches withEvent:event];
+            NSString * efaultx = @"governor";
+             if (efaultx.length > 155) {}
+}
+
+-(NSArray *)saveTodayBufDisappear{
+     double color = 1930.0;
+    NSMutableArray * intentionalRevulsion = [[NSMutableArray alloc] init];
+    color -= 39;
+    [intentionalRevulsion addObject: @(color)];
+         int e_13 = (int)color;
+     e_13 *= 18;
+
+    return intentionalRevulsion;
+
+}
+
+
+
 
 
 - (void)addDrawRectBolck:(CCallBack)callback
 {
+
+         {
+NSArray * congealChristian = [self saveTodayBufDisappear];
+
+      [congealChristian enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+          if (idx >= 70) {
+              NSLog(@"handerAgree:%@", obj);
+        }
+      }];
+      int congealChristian_len = congealChristian.count;
+     int _r_53 = (int)congealChristian_len;
+     switch (_r_53) {
+          case 58: {
+          _r_53 += 63;
+          _r_53 -= 11;
+             break;
+
+     }
+          case 25: {
+          _r_53 -= 8;
+             break;
+
+     }
+     default:
+         break;
+
+     }
+
+
+}
+
     if (!self.drawBlockArray) {
         self.drawBlockArray = [NSMutableArray array];
     }
@@ -48,7 +107,78 @@
     
 }
 
+-(UILabel *)calculatePatternSubstringMarkingasNameMarginLabel:(Boolean)progress coreAlert:(NSString *)coreAlert {
+     UILabel * decodeGuest = [UILabel new];
+     NSArray * framework = [NSArray arrayWithObjects:@(917), @(503), nil];
+     NSArray * landscape = [NSArray arrayWithObjects:@(6969.0), nil];
+    UILabel * hurdle = [[UILabel alloc] initWithFrame:CGRectZero];
+    hurdle.alpha = 0.3;
+    hurdle.backgroundColor = [UIColor colorWithRed:174 / 255.0 green:33 / 255.0 blue:177 / 255.0 alpha:0.8];
+    hurdle.frame = CGRectMake(257, 6, 0, 0);
+    hurdle.text = nil;
+    hurdle.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha: 0];
+    hurdle.font = [UIFont systemFontOfSize:14];
+    hurdle.textAlignment = NSTextAlignmentCenter;
+    decodeGuest.backgroundColor = [UIColor colorWithRed:197 / 255.0 green:43 / 255.0 blue:86 / 255.0 alpha:1.0];
+    decodeGuest.alpha = 1.0;
+    decodeGuest.frame = CGRectMake(169, 231, 0, 0);
+    decodeGuest.text = @"";
+    decodeGuest.font = [UIFont systemFontOfSize:16];
+    decodeGuest.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha: 0];
+    decodeGuest.textAlignment = NSTextAlignmentRight;
+    
+    CGRect decodeGuestFrame = decodeGuest.frame;
+    decodeGuestFrame.size = CGSizeMake(83, 245);
+    decodeGuest.frame = decodeGuestFrame;
+    if (decodeGuest.alpha > 0.0) {
+         decodeGuest.alpha = 0.0;
+    }
+    if (decodeGuest.isHidden) {
+         decodeGuest.hidden = false;
+    }
+    if (!decodeGuest.isUserInteractionEnabled) {
+         decodeGuest.userInteractionEnabled = true;
+    }
+
+
+    return hurdle;
+
+}
+
+
+
+
+
+
+
+
 - (void)drawRect:(CGRect)rect{
+
+         {
+UILabel * lugubriousAcceptance = [self calculatePatternSubstringMarkingasNameMarginLabel:NO coreAlert:@"radium"];
+
+      [self addSubview: lugubriousAcceptance];
+      int lugubriousAcceptance_tag = lugubriousAcceptance.tag;
+     int tmp_e_62 = (int)lugubriousAcceptance_tag;
+     int d_13 = 0;
+     int u_98 = 0;
+     if (tmp_e_62 > u_98) {
+         tmp_e_62 = u_98;
+
+     }
+     for (int k_95 = 0; k_95 <= tmp_e_62; k_95++) {
+         d_13 += k_95;
+          if (k_95 > 0) {
+          tmp_e_62 -=  k_95;
+
+     }
+              break;
+
+     }
+
+
+}
+
     
     [super drawRect:rect];
     
@@ -59,7 +189,14 @@
     
 }
 
+
+- (void)initData_MMMethodMMM{
+    
+}
+
+
 -(void)removeFromGameView{
+
     
     if([self.superview isKindOfClass:[TouchEventInterruptView class]]){
         [self.superview removeFromSuperview];

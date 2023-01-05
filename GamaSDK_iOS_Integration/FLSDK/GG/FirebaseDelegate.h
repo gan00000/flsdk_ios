@@ -1,10 +1,3 @@
-//
-//  FirebaseDelegate.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/22.
-//  Copyright © 2022 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -12,6 +5,18 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FirebaseDelegate : NSObject
+
+
+@property(nonatomic, copy)NSArray *  success_Array;
+@property(nonatomic, assign)double  terminate_max;
+@property(nonatomic, assign)float  makeMargin;
+@property(nonatomic, copy)NSString *  selectedObjectSuccessString;
+
+
+
+
++(int)gameRetrieveAdapt:(Boolean)private_t maskLandspace:(NSDictionary *)maskLandspace failProducts:(int)failProducts;
+
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 

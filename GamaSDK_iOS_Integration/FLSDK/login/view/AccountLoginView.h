@@ -1,10 +1,3 @@
-//
-//  AccountLoginView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 #import "SDKTextFiledView.h"
@@ -13,6 +6,26 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountLoginView : SDKBaseView 
+
+
+@property(nonatomic, assign)double  report_offset;
+@property(nonatomic, assign)double  observeSpace;
+@property(nonatomic, assign)long  roleTag;
+@property(nonatomic, assign)float  pamentMax;
+
+
+
+
+-(NSString *)bundlegameLayoutAnimating:(NSArray *)configuratorConnected fire:(NSDictionary *)fire facebookRror:(NSArray *)facebookRror;
+
++(NSInteger)nowPointRevenueOther:(NSArray *)before;
+
+-(NSDictionary *)downloadNameContainsAutorotatePercent:(NSDictionary *)authtication orientation:(long)orientation;
+
+-(UITableView *)updatedOffsetPurchasedTableView;
+
+-(UIScrollView *)whitespaceLocalizableResultHeuriceSocketScrollView:(NSString *)transactionsApplication progressRegular:(double)progressRegular uncomplete:(double)uncomplete;
+
 
 - (instancetype)initView_MMMethodMMM;
 

@@ -1,10 +1,3 @@
-//
-//  BJBaseHTTPEngine.h
-//  BenjiaPro
-//
-//  Created by Marco on 2017/5/23.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
@@ -15,6 +8,23 @@ typedef void (^BJHTTPProgressBlock)(float progress);
 typedef void (^BJHTTPFailureBlock)(NSURLSessionDataTask *task, NSError *error);
 
 @interface BJBaseHTTPEngine : NSObject
+
+
+@property(nonatomic, assign)NSInteger  terms_sum;
+@property(nonatomic, assign)float  appendSize;
+@property(nonatomic, assign)NSInteger  with_1;
+
+
+
+
+-(NSDictionary *)aracActiveBecomeApp;
+
+-(NSDictionary *)changeTelLaunchingPragma:(Boolean)modelSelect select:(NSDictionary *)select create:(int)create;
+
+-(NSString *)adjustsFontsizeCheckLenPairsMoved:(NSDictionary *)lable share:(NSDictionary *)share heightRotate:(double)heightRotate;
+
+-(NSDictionary *)scanNibLprojBattbetterAffinePesenting:(double)client messageShow:(NSDictionary *)messageShow lnews:(double)lnews;
+
 
 - (instancetype)initWithBasePath_MMMethodMMM:(NSString *)basePath;
 

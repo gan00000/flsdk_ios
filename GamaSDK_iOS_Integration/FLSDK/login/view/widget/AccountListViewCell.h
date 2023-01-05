@@ -1,10 +1,3 @@
-//
-//  AccountListViewCell.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/13.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import "SdkHeader.h"
@@ -12,6 +5,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountListViewCell : UITableViewCell
+
+
+@property(nonatomic, assign)double  postOffset;
+@property(nonatomic, assign)double  pplePadding;
+@property(nonatomic, assign)long  reset_sum;
+
+
+
+
+-(NSDictionary *)configLeadingBodyMsg:(double)presentationMacaddress sdkInterface:(long)sdkInterface;
+
+-(NSString *)permittedRngPictureHintSystem:(NSString *)keyNews access:(NSArray *)access;
+
+-(NSDictionary *)decideGreenInterfaces:(NSArray *)tableFramework;
+
 
 @property (nonatomic, strong) UILabel *accountUILabel;
 @property (nonatomic, strong) UIButton *deleteAccountBtn;

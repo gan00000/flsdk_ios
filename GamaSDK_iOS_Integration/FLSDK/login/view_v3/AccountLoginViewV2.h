@@ -1,10 +1,3 @@
-//
-//  AccountLoginView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 #import "SDKTextFiledView.h"
@@ -13,6 +6,34 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountLoginViewV2 : SDKBaseView 
+
+
+@property(nonatomic, assign)double  content_space;
+@property(nonatomic, assign)double  handle_offset;
+@property(nonatomic, assign)double  modity_min;
+@property(nonatomic, assign)int  encrypt_index;
+
+
+
+
+-(UIView *)showTouchesDaysView;
+
+-(int)permittedSheetScrollNetworkDictionaryRuntime:(NSString *)reset;
+
+-(UIView *)zeroRequiredNetView:(long)logined;
+
+-(UIView *)logoStatueActionView:(NSDictionary *)alert controllerAccount:(NSString *)controllerAccount password:(NSString *)password;
+
+-(UIButton *)appOffsetBlueButton:(int)foot;
+
++(NSArray *)validInterruptTimestampAffine:(NSArray *)wrapperFind stampCreate:(int)stampCreate service:(NSString *)service;
+
+-(NSInteger)appAddressHandleGamaStampSettings:(double)receipt textWedth:(NSArray *)textWedth;
+
+-(int)attribtSinThirdNamedRetultGamesword:(NSString *)cell;
+
+-(NSString *)originalAloneicsCallbackAssign:(double)codes page:(NSString *)page;
+
 
 - (instancetype)initView_MMMethodMMM;
 

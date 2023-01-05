@@ -1,10 +1,3 @@
-//
-//  GamaAdInterface.h
-//  GamaSDK_iOS
-//
-//  Created by coke on 2018/8/6.
-//  Copyright © 2018年 starpy. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
@@ -13,6 +6,17 @@
 #define SDK_LOG_EVENT_INSTALL  wwwww_tag_wwwww_install
 
 @interface AdLogger : NSObject
+
+
+@property(nonatomic, copy)NSString *  confDrawStr;
+@property(nonatomic, assign)int  saveCount;
+@property(nonatomic, assign)double  ramework_offset;
+
+
+
+
++(NSString *)archivedStateSearch;
+
 
 + (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary *)parameters;
 

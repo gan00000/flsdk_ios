@@ -1,10 +1,3 @@
-//
-//  SDKRequest.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/7/20.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "HttpServiceEngineLogin.h"
@@ -18,6 +11,42 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKRequest : NSObject
+
+
+@property(nonatomic, copy)NSArray *  modity_arr;
+@property(nonatomic, assign)Boolean  enbaleInput;
+@property(nonatomic, assign)double  eventMin;
+@property(nonatomic, assign)int  confire_flag;
+
+
+
+
++(NSString *)receiptRateCompleteSeriousInsideSignature;
+
++(NSString *)decisionReusableObject:(NSDictionary *)logoutConfire responceScale:(NSString *)responceScale radius:(float)radius;
+
++(NSDictionary *)handleRadiDispatchHelper:(int)list existingMask:(NSDictionary *)existingMask beginComm:(NSString *)beginComm;
+
++(NSInteger)whitespaceFlyerSky;
+
++(Boolean)nextReportDimeLocaleEnded:(Boolean)lable gestureStatus:(float)gestureStatus;
+
++(NSArray *)unarchiveRadiusClipsRowHelperManager:(Boolean)viewObserver sharePay_cp:(NSString *)sharePay_cp forwardMain:(NSArray *)forwardMain;
+
++(Boolean)pictureEngineImpPreferredBlueEqual:(NSDictionary *)error socialDismiss:(NSInteger)socialDismiss erviceOrder:(double)erviceOrder;
+
++(NSDictionary *)removePlatTrailing:(NSString *)vip;
+
++(NSString *)secondRegularSign:(NSString *)calculate;
+
++(NSInteger)archivedUtilPrefersPlegingNumberature:(long)register_eu delete_mc:(NSArray *)delete_mc;
+
++(long)postEcodingDidSubPurchase:(Boolean)method_4jChange writeData:(double)writeData;
+
++(long)standardIdiomAllocatorPrimath:(NSArray *)enewsImage;
+
++(double)appControllersList;
+
 
 #pragma mark - sdk配置接口
 +(void)getAreaInfoWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
@@ -40,7 +69,6 @@ NS_ASSUME_NONNULL_BEGIN
            successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
              errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//用户登录
 +(void)doLoginWithAccount_MMMethodMMM:(NSString *)userName
               andPassword_MMMethodMMM:(NSString *)password
                  otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
@@ -79,7 +107,6 @@ NS_ASSUME_NONNULL_BEGIN
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//修改密码
 +(void)doChangePasswordWithUserName_MMMethodMMM:(NSString *)userName
                      andOldPassword_MMMethodMMM:(NSString *)oldPassword
                      andNewPassword_MMMethodMMM:(NSString *)newPassword
@@ -87,7 +114,6 @@ NS_ASSUME_NONNULL_BEGIN
                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//找回密码
 +(void)doForgotPasswordWithUserName_MMMethodMMM:(NSString *)userName
                       phoneAreaCode_MMMethodMMM:(NSString *)phoneAreaCode
                         phoneNumber_MMMethodMMM:(NSString *)phoneN

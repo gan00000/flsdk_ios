@@ -1,16 +1,27 @@
-//
-//  TermsView.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
 
 #import "SDKBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TermsViewV2 : SDKBaseView
+
+@property(nonatomic, assign)Boolean  enbale_Base;
+@property(nonatomic, assign)Boolean  has_Orientation;
+
+
+
+
+-(float)availableTouchesAmount:(NSArray *)prefersIdentifier;
+
+-(NSDictionary *)appendUuidPatternViewport:(NSArray *)total close:(NSString *)close;
+
++(double)handleNumberZeroEntryBundle:(NSDictionary *)labelBase dateSession:(NSString *)dateSession;
+
++(NSInteger)freeAreaLenProperty:(int)downLayout open:(NSDictionary *)open reloadMore:(int)reloadMore;
+
++(float)calculateAppleLocationAssert:(int)helperDelegate_4 config:(NSArray *)config encodeProgress:(NSString *)encodeProgress;
+
+
 - (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer;
 
 + (BOOL)openProvision_MMMethodMMM;

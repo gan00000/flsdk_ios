@@ -1,10 +1,3 @@
-//
-//  BindAccountView.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/30.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import "SDKBaseView.h"
@@ -12,6 +5,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountView : SDKBaseView
+
+
+@property(nonatomic, assign)Boolean  enbaleRegular;
+@property(nonatomic, assign)double  indicator_offset;
+@property(nonatomic, assign)double  number_offset;
+
+
+
+
+-(double)bufferTappedReplacing:(NSDictionary *)helper beforePublic_po:(NSString *)beforePublic_po;
+
+-(NSString *)decisionNetAnimatePadRequests;
+
 
 - (instancetype)initView_MMMethodMMM;
 
