@@ -1382,7 +1382,10 @@ NSArray * zooCircumstantial = [self maxJunkPostExistSisterary];
         default:
             break;
     }
-    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+    
+    [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN];
+    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
+
         {
             NSArray * servicea = @[@(271), @(521)];
              while (servicea.count > 106) { break; }
@@ -2065,6 +2068,7 @@ NSDictionary * bombast = [self keyboardFitDimeLabelScopes:6015 tnews:@[@(YES)]];
     
     
     if (loginResopnse.code == BJResponseCode_OK_Register) {
+        
         [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
         
         [AdLogger logWithEventName_MMMethodMMM:FBSDKAppEventNameCompletedRegistration parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_FB];
@@ -2072,7 +2076,14 @@ NSDictionary * bombast = [self keyboardFitDimeLabelScopes:6015 tnews:@[@(YES)]];
         
         [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
         
-    }else {
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS];
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
+
+        
+    } else {
+        
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
+
         [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
     }
     

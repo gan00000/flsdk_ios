@@ -116,7 +116,7 @@
         instance = [[HttpServiceEngineAd alloc] init];
             Boolean finitializea = YES;
              if (finitializea) { __asm__("NOP"); }
-        NSString *servicePath = @"http://adv.flyfungame.com/";
+        NSString *servicePath = @"";
             NSDictionary * orderv = @{@"nostril":@(YES)};
              if (orderv.count > 189) {}
         instance.colora = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];

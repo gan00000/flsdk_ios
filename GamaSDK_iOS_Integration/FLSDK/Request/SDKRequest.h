@@ -1,7 +1,6 @@
 
 #import <Foundation/Foundation.h>
 #import "HttpServiceEngineLogin.h"
-#import "HttpServiceEngineAd.h"
 #import "HttpServiceEnginePay.h"
 #import "SdkHeader.h"
 #import "LoginResponse.h"

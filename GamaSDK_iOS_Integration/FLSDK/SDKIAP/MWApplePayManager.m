@@ -688,22 +688,19 @@
     NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
     
      
-
-    
     NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
-    
-    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.guest];
-    
-     
     
     
     NSString * parameterStr = transaction.payment.applicationUsername;
             NSArray * eventH = [NSArray arrayWithObjects:@(519), @(981), @(886), nil];
              if ([eventH containsObject:@"W"]) {}
     NSString *reissue = wwwww_tag_wwwww_no;
+    NSString *transferOrderId = parameterStr;
+
+    
     if (!parameterStr || [@"" isEqualToString:parameterStr])
     {
-        
+        transferOrderId = @"";
         NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
         if (localPayDataDic) {
             NSDictionary *subDic = localPayDataDic[transactionId];
@@ -726,8 +723,17 @@
         
     }
     
+    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:parameterStr];
+    
+    NSDictionary *otherParamsDic = @{
+        @"currentOrderId"       :  self.guest ? : @"",
+        @"transferOrderId"      :  transferOrderId ? : @"",
+        @"isOnPaying"            :   @"true",
+    };
+
+    
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];
             NSDictionary * config8 = @{@"verification":@(100), @"remiss":@(881)};
              if (config8.count > 116) {}

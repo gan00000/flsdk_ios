@@ -470,5 +470,6 @@
 #define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
 #define reissue_MMMethodMMM reissue
 
+#define logServerWithEventName_MMMethodMMM sreaEventDayServer
 
 #endif  /* codeObfuscation_h */

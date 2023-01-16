@@ -222,8 +222,8 @@
             filePath = "GamaSDK_iOS_Integration/FLSDK/Plat/MWSDK.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "569"
-            endingLineNumber = "569"
+            startingLineNumber = "573"
+            endingLineNumber = "573"
             landmarkName = "-openCs"
             landmarkType = "7">
          </BreakpointContent>
@@ -240,8 +240,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "848"
             endingLineNumber = "848"
-            landmarkName = "+paymentWithTransactionId_MMMethodMMM:receiptData_MMMethodMMM:orderId_MMMethodMMM:reissue_MMMethodMMM:gameInfo_MMMethodMMM:accountModel_MMMethodMMM:otherParamsDic_MMMethodMMM:successBlock_MMMethodMMM:errorBlock_MMMethodMMM:"
-            landmarkType = "7">
+            landmarkName = "SDKRequest"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,7 +256,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
             endingLineNumber = "189"
-            landmarkName = "-requestPament_MMMethodMMM:"
+            landmarkName = "-externalMobileToastSubSisteraryMcm:dismiss:updata:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -288,8 +288,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "-checkOrderStatus_MMMethodMMM"
-            landmarkType = "7">
+            landmarkName = "MWApplePayManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -304,7 +304,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
             endingLineNumber = "113"
-            landmarkName = "-startPayWithProductId_MMMethodMMM:cpOrderId_MMMethodMMM:extra_MMMethodMMM:gameInfo_MMMethodMMM:accountModel_MMMethodMMM:payStatusBlock_MMMethodMMM:"
+            landmarkName = "-removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -320,7 +320,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "288"
             endingLineNumber = "288"
-            landmarkName = "-handleTransaction_MMMethodMMM:"
+            landmarkName = "-paymentQueue:updatedTransactions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -336,8 +336,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
-            landmarkName = "-removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM"
-            landmarkType = "7">
+            landmarkName = "MWApplePayManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -352,7 +352,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "382"
             endingLineNumber = "382"
-            landmarkName = "-handleTransaction_MMMethodMMM:"
+            landmarkName = "-baseUserdefaultReissueSublayer"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -384,7 +384,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "242"
             endingLineNumber = "242"
-            landmarkName = "-paymentQueue:updatedTransactions:"
+            landmarkName = "-externalMobileToastSubSisteraryMcm:dismiss:updata:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -400,7 +400,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "388"
             endingLineNumber = "388"
-            landmarkName = "-handleTransaction_MMMethodMMM:"
+            landmarkName = "-baseUserdefaultReissueSublayer"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -416,7 +416,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "442"
             endingLineNumber = "442"
-            landmarkName = "-saveReceiptData_MMMethodMMM:transactionId_MMMethodMMM:orderId_MMMethodMMM:"
+            landmarkName = "-requestProductData_MMMethodMMM:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -432,7 +432,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "383"
             endingLineNumber = "383"
-            landmarkName = "-handleTransaction_MMMethodMMM:"
+            landmarkName = "-baseUserdefaultReissueSublayer"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -448,7 +448,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "358"
             endingLineNumber = "358"
-            landmarkName = "-handleTransaction_MMMethodMMM:"
+            landmarkName = "-baseUserdefaultReissueSublayer"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -19,10 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSInteger)resetupCodeResignNumberatureRadius:(int)field wrapper:(NSArray *)wrapper fieldPple:(double)fieldPple;
 
 
-+ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
-                             params_MMMethodMMM:(NSDictionary *)params
-                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
-                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+//+ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+//                             params_MMMethodMMM:(NSDictionary *)params
+//                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+//                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 @end
 

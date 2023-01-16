@@ -310,6 +310,8 @@
         [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
+    [AdLogger logServerWithEventName_MMMethodMMM:name];//发送到服务器
+
     [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 
@@ -566,6 +568,8 @@
         return;
     }
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl];
+    SDK_LOG(@"客服地址csurl=%@",resultURL);
+
     [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
 }
 
