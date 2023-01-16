@@ -347,8 +347,6 @@
     //每次获取都会改变，但in_app信息不会变，需要验证
     NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
     
-    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.currentOrderId];
-    
     /*通过判断iOS版本号确定通过哪个方式获取payment中订单信息*/
     
 //    在開發過程中，無法直接關聯 transaction 與 orderID 之間聯絡，雖然有一個 applicationUserName 欄位，可以儲存一個資訊。但是這個欄位是不是 100%靠譜，在某些情況下會丟失儲存的資料。
@@ -376,6 +374,9 @@
         }
         
     }
+    //记录保存
+    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:parameterStr];
+    
     
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     [SDKRequest paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
