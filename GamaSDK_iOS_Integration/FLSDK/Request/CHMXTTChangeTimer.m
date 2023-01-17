@@ -579,6 +579,9 @@
              for(NSInteger fielda_idx = 28; fielda_idx < @(fielda).intValue; fielda_idx--) { break; } 
         CHMXTTUtil *time_m = SDK_DATA.gameUserModel;
         
+        NSString *roleNameTemp = time_m.roleName ? : @"";
+        NSString *serverNameTemp = time_m.serverName ? : @"";
+        
         NSDictionary *label7 = @{
             
             wwwww_tag_wwwww_gameCode         :GAME_CODE,
@@ -588,9 +591,9 @@
             
             
             wwwww_tag_wwwww_serverCode           :time_m.serverCode ? : @"",
-            wwwww_tag_wwwww_serverName           :time_m.serverName ? : @"",
+            wwwww_tag_wwwww_serverName           : [serverNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleId           :time_m.roleID ? : @"",
-            wwwww_tag_wwwww_roleName           :time_m.roleName ? : @"",
+            wwwww_tag_wwwww_roleName           :[roleNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleLevel           :time_m.roleLevel ? : @"",
             wwwww_tag_wwwww_roleVipLevel           :time_m.roleVipLevel ? : @"",
 
@@ -785,6 +788,8 @@
     
     
     NSString * phoneVN=[CHMXTTBlock getMD5StrFromString_MMMethodMMM:bindC];
+    NSString *roleNameTemp = gameUserModel.roleName ? : @"";
+    NSString *serverNameTemp = gameUserModel.serverName ? : @"";
     
     @try {
         NSDictionary *label5 = @{
@@ -806,9 +811,9 @@
             wwwww_tag_wwwww_extra           :extra ? : @"",
             wwwww_tag_wwwww_cpOrderId         :cpOrderId,
             wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode,
-            wwwww_tag_wwwww_serverName           :gameUserModel.serverName ? : @"",
+            wwwww_tag_wwwww_serverName           : [serverNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleId           :gameUserModel.roleID,
-            wwwww_tag_wwwww_roleName           :gameUserModel.roleName ? : @"",
+            wwwww_tag_wwwww_roleName           :  [roleNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
             wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
 
@@ -1325,6 +1330,11 @@
         tempParams = [NSString stringWithFormat:@"%@%@=%@&", tempParams, key, value];
         
     }
+    
+    if ([tempParams hasSuffix:@"&"]){
+        tempParams = [NSString stringWithFormat:@"%@aKey=1", tempParams];
+    }
+
     
     if ([url hasSuffix:@"?"]) {
         return [NSString stringWithFormat:@"%@%@", url, tempParams];
