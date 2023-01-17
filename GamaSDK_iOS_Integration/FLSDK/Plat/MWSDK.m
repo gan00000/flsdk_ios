@@ -566,6 +566,7 @@
         return;
     }
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl];
+    SDK_LOG(@"客服地址csurl=%@",resultURL);
     [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
 }
 
