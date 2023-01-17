@@ -601,17 +601,14 @@ getsdkDown = getsdkDown;
     
     NSString *total = [CHMXTTBlock encode:(uint8_t *)list.bytes length:list.length];
     
-    [self saveReceiptData_MMMethodMMM:total transactionId_MMMethodMMM:append orderId_MMMethodMMM:self.infoGeneric];
-    
-     
-    
-    
     NSString * change = transaction.payment.applicationUsername;
             NSArray * levelW = [NSArray arrayWithObjects:@(771), @(900), nil];
     NSString *before = wwwww_tag_wwwww_no;
+    NSString *transferOrderId = change;
+    
     if (!change || [@"" isEqualToString:change])
     {
-        
+        transferOrderId = @"";
         NSDictionary *delegate_4eH = [self getLocalReceiptData_MMMethodMMM];
         if (delegate_4eH) {
             NSDictionary *headerM = delegate_4eH[append];
@@ -635,8 +632,17 @@ getsdkDown = getsdkDown;
         
     }
     
+    //记录保存
+    [self saveReceiptData_MMMethodMMM:total transactionId_MMMethodMMM:append orderId_MMMethodMMM:change];
+    
+    NSDictionary *otherParamsDic = @{
+        @"currentOrderId"       :  self.infoGeneric ? : @"",
+        @"transferOrderId"      :  transferOrderId ? : @"",
+        @"isOnPaying"            :   @"true",
+    };
+    
     [CHMXTTRegister showLoadingAtView_MMMethodMMM:nil];
-    [CHMXTTChangeTimer paymentWithTransactionId_MMMethodMMM:append receiptData_MMMethodMMM:total orderId_MMMethodMMM:change reissue_MMMethodMMM:before gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [CHMXTTChangeTimer paymentWithTransactionId_MMMethodMMM:append receiptData_MMMethodMMM:total orderId_MMMethodMMM:change reissue_MMMethodMMM:before gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];
             Boolean thirdy = YES;
              while (thirdy) { __asm__("NOP"); break; }
