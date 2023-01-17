@@ -365,16 +365,13 @@ static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
     
     NSString *receiptString = [MCoolFishResponse encode:(uint8_t *)receiptData.bytes length:receiptData.length];
     
-    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:self.currentOrderId];
-    
-     
-    
-    
     NSString * parameterStr = transaction.payment.applicationUsername;
     NSString *reissue = wwwww_tag_wwwww_no;
+    NSString *transferOrderId = parameterStr;
+    
     if (!parameterStr || [@"" isEqualToString:parameterStr])
     {
-        
+        transferOrderId = @"";
         NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
         if (localPayDataDic) {
             NSDictionary *subDic = localPayDataDic[transactionId];
@@ -392,8 +389,17 @@ static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
         
     }
     
+    //记录保存
+    [self saveReceiptData_MMMethodMMM:receiptString transactionId_MMMethodMMM:transactionId orderId_MMMethodMMM:parameterStr];
+    
+    NSDictionary *otherParamsDic = @{
+        @"currentOrderId"       :  self.currentOrderId ? : @"",
+        @"transferOrderId"      :  transferOrderId ? : @"",
+        @"isOnPaying"            :   @"true",
+    };
+    
     [MCoolFishEventFile showLoadingAtView_MMMethodMMM:nil];
-    [MCoolFishWithCommon paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [MCoolFishWithCommon paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;
