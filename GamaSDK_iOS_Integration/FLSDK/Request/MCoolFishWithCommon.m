@@ -274,6 +274,9 @@
         AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
         MCoolFishEncoding *gameUserModel = SDK_DATA.gameUserModel;
         
+        NSString *roleNameTemp = gameUserModel.roleName ? : @"";
+        NSString *serverNameTemp = gameUserModel.serverName ? : @"";
+        
         NSDictionary *dic = @{
             
             wwwww_tag_wwwww_gameCode         :GAME_CODE,
@@ -283,9 +286,9 @@
             
             
             wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode ? : @"",
-            wwwww_tag_wwwww_serverName           :gameUserModel.serverName ? : @"",
+            wwwww_tag_wwwww_serverName           :[serverNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleId           :gameUserModel.roleID ? : @"",
-            wwwww_tag_wwwww_roleName           :gameUserModel.roleName ? : @"",
+            wwwww_tag_wwwww_roleName           :[roleNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
             wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
 
@@ -725,6 +728,8 @@
     
     
     NSString * md5SignStr=[MCoolFishResponse getMD5StrFromString_MMMethodMMM:md5str];
+    NSString *roleNameTemp = gameUserModel.roleName ? : @"";
+    NSString *serverNameTemp = gameUserModel.serverName ? : @"";
     
     @try {
         NSDictionary *dic = @{
@@ -746,9 +751,9 @@
             wwwww_tag_wwwww_extra           :extra ? : @"",
             wwwww_tag_wwwww_cpOrderId         :cpOrderId,
             wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode,
-            wwwww_tag_wwwww_serverName           :gameUserModel.serverName ? : @"",
+            wwwww_tag_wwwww_serverName           :[serverNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleId           :gameUserModel.roleID,
-            wwwww_tag_wwwww_roleName           :gameUserModel.roleName ? : @"",
+            wwwww_tag_wwwww_roleName           :[roleNameTemp urlEncode_MMMethodMMM],
             wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
             wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
 
@@ -838,6 +843,10 @@
         NSString * value = [NSString stringWithFormat:@"%@", temDic[key]];
         tempParams = [NSString stringWithFormat:@"%@%@=%@&", tempParams, key, value];
         
+    }
+    
+    if ([tempParams hasSuffix:@"&"]){
+        tempParams = [NSString stringWithFormat:@"%@aKey=1", tempParams];
     }
     
     if ([url hasSuffix:@"?"]) {
