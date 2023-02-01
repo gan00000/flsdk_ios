@@ -310,6 +310,7 @@
         [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
+    [AdLogger logServerWithEventName_MMMethodMMM:name];//发送到服务器
     [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 

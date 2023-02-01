@@ -65,4 +65,21 @@
         
     }];
 }
+
++ (void)logServerWithEventName_MMMethodMMM:(NSString *)eventName
+{
+    
+    if ([SdkUtil isReportEventName_MMMethodMMM:eventName]) {
+        SDK_LOG(@"send event to sever exist, eventName=%@",eventName);
+        return;
+    }
+    SDK_LOG(@"send event to sever, eventName=%@",eventName);
+    [SDKRequest reportSdkEventWithEventName_MMMethodMMM:eventName successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil saveReportEventName_MMMethodMMM:eventName];
+        SDK_LOG(@"send event to sever success, eventName=%@",eventName);
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        
+    }];
+}
+
 @end

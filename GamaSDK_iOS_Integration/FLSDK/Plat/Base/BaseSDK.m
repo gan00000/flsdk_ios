@@ -100,32 +100,6 @@
 {
     SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
-    [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
-    
-    // 广告初始化
-    
-    [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
-        
-    } errorBlock_MMMethodMMM:^(BJError *error) {
-        
-    }];
-    
-    [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
-
-    } errorBlock_MMMethodMMM:^(BJError *error) {
-
-    }];
-    
-    //Facebook事件打点初始化
-//    [[GamaTimer shareInstance] gama_FBEventStartTimer];
-    
-    [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
-    [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
-    
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
     
@@ -150,6 +124,32 @@
         }
         
         [application registerForRemoteNotifications];
+        
+        
+        [FBDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+        [FirebaseDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+        
+        // 广告初始化
+        [AdDelegate application:application didFinishLaunchingWithOptions:launchOptions];
+        
+        //事件打点
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
+        [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+        
+        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        
+        [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+            
+        } errorBlock_MMMethodMMM:^(BJError *error) {
+            
+        }];
+        
+        [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+
+        } errorBlock_MMMethodMMM:^(BJError *error) {
+
+        }];
+        
     } else {
         // Fallback on earlier versions
     }
