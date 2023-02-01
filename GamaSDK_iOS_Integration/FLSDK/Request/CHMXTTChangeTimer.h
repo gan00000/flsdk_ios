@@ -1,7 +1,6 @@
 
 #import <Foundation/Foundation.h>
 #import "CHMXTTCore.h"
-#import "CHMXTTScript.h"
 #import "CHMXTTAppleColor.h"
 #import "SdkHeader.h"
 #import "LoginResponse.h"

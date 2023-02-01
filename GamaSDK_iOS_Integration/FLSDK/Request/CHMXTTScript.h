@@ -20,10 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString *)startNewlineEnumeratorScreen:(double)service arac:(Boolean)arac;
 
 
-+ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
-                             params_MMMethodMMM:(NSDictionary *)params
-                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
-                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+//+ (void)postRequestWithFunctionPath_MMMethodMMM:(NSString *)path
+//                             params_MMMethodMMM:(NSDictionary *)params
+//                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+//                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 @end
 

@@ -79,7 +79,7 @@
         instance = [[CHMXTTScript alloc] init];
             double willK = 9185.0;
              while (@(willK).floatValue == 137) { break; }
-        NSString *selected = @"http://adv.flyfungame.com/";
+        NSString *selected = @"";
             Boolean codesV = NO;
         instance.third = [[CHMXTTEventTerms alloc] initWithBasePath_MMMethodMMM:selected];
         [instance.third updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
