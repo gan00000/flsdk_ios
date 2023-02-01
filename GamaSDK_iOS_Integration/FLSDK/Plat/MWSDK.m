@@ -310,6 +310,7 @@
         [CHMXTTPrivateOrder showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
+    [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:name];//发送到服务器
     [CHMXTTEnginePple logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 

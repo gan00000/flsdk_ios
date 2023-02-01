@@ -100,32 +100,6 @@
 {
     SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
-    [CHMXTTEnginePple logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
-    
-    // 广告初始化
-    
-    [CHMXTTColor application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    [CHMXTTChangeTimer getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
-        
-    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
-        
-    }];
-    
-    [CHMXTTChangeTimer getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
-
-    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
-
-    }];
-    
-    //Facebook事件打点初始化
-//    [[GamaTimer shareInstance] gama_FBEventStartTimer];
-    
-    [CHMXTTResp application:application didFinishLaunchingWithOptions:launchOptions];
-    [CHMXTTWith application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
-    
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
     
@@ -150,9 +124,35 @@
         }
         
         [application registerForRemoteNotifications];
+        
     } else {
         // Fallback on earlier versions
     }
+    
+    [CHMXTTResp application:application didFinishLaunchingWithOptions:launchOptions];
+    [CHMXTTWith application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    // 广告初始化
+    [CHMXTTColor application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    //事件打点
+    [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
+    [CHMXTTEnginePple logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+    
+    [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+    
+    [CHMXTTChangeTimer getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+        
+    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
+        
+    }];
+    
+    [CHMXTTChangeTimer getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+
+    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
+
+    }];
+    
 
 }
 

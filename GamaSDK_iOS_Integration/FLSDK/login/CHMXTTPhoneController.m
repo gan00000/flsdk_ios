@@ -1813,7 +1813,10 @@ NSArray * receive = [self writeWhitesterDomainsAlmostive];
         default:
             break;
     }
-    [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+    
+    [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN];
+    [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_OPEN_LOGIN_SCREEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
+    
         {
             NSArray * currentA = @[@(255), @(792)];
              if ([currentA containsObject:@"z"]) {}
@@ -2624,7 +2627,12 @@ double invadeAnalogy = [self iconComponentsAgainSenderSend];
         
         [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
         
+        [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS];
+        [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
+        
     }else {
+        
+        [CHMXTTEnginePple logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
         [CHMXTTEnginePple logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
     }
     

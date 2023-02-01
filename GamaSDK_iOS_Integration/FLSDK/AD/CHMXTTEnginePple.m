@@ -226,6 +226,23 @@
 }
 
 
++ (void)logServerWithEventName_MMMethodMMM:(NSString *)eventName
+{
+    
+    if ([CHMXTTRegister isReportEventName_MMMethodMMM:eventName]) {
+        SDK_LOG(@"send event to sever exist, eventName=%@",eventName);
+        return;
+    }
+    SDK_LOG(@"send event to sever, eventName=%@",eventName);
+    [CHMXTTChangeTimer reportSdkEventWithEventName_MMMethodMMM:eventName successBlock_MMMethodMMM:^(id responseData) {
+        [CHMXTTRegister saveReportEventName_MMMethodMMM:eventName];
+        SDK_LOG(@"send event to sever success, eventName=%@",eventName);
+    } errorBlock_MMMethodMMM:^(CHMXTTIcon *error) {
+        
+    }];
+}
+
+
 + (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
 
