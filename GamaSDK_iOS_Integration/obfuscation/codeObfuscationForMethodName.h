@@ -467,6 +467,7 @@
 #define getsdkLanguage_MMMethodMMM          tidiierChiractivityPhanthang
 #define reissue_MMMethodMMM          pancreoentTheirennePartance
 
+#define logServerWithEventName_MMMethodMMM sendEventToGoodlePlat
 
 
 #endif  /* codeObfuscation_h */
