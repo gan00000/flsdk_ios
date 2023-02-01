@@ -102,7 +102,7 @@
     
 }
 
-//https://log.meowplayer.com/sdk/event/log
+
 #pragma mark - 上报自己服务器一些事件
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock

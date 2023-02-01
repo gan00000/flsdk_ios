@@ -28,7 +28,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEngineAd alloc] init];
-        NSString *servicePath = @"http://adv.flyfungame.com/";//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
+        NSString *servicePath = @"";//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
         instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
