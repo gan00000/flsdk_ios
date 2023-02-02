@@ -411,5 +411,6 @@
 #define wwwww_tag_wwwww__CC_A0A0A0        @"#A0A0A0"  //@"#A0A0A0"
 #define wwwww_tag_wwwww_touchesBegan___        @"touchesBegan..."  //@"touchesBegan..."
 
-
+#define wwwww_tag_wwwww__CC_FC676F      @"#FC676F"  //@"#FC676F"
+#define wwwww_tag_wwwww__CC_FF9944      @"#FF9944"  //@"#FF9944"
 #endif /* Headers_h */
