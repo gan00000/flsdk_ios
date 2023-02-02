@@ -13,7 +13,9 @@
 
 //#define SDK_V2      1
 //#define SDK_V3      1
-#define SDK_V4      1
+//#define SDK_V4      1
+#define SDK_V5      1
+
 
 #import "MWStringHeaders.h"
 #import "imageNameHeader.h"
