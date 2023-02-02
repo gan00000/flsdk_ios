@@ -275,6 +275,7 @@
 		0381EC77298B5677006D6100 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0381EC65298B5677006D6100 /* BindPhoneViewV2.h */; };
 		0381EC78298B5677006D6100 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0381EC66298B5677006D6100 /* MainHomeViewV2.h */; };
 		0381EC7B298B5703006D6100 /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B268A298B555300045C53 /* MWSDK_V5.framework */; };
+		0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */; };
 		038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
@@ -794,7 +795,6 @@
 		039B2692298B557400045C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		039B2693298B557400045C53 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		039B2694298B557400045C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		039B2696298B557400045C53 /* SDKResourcesV4.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */; };
 		039B2697298B557400045C53 /* com_mplay_wlzhs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */; };
 		039B2698298B557400045C53 /* demoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */; };
 		039B2699298B557400045C53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
@@ -1352,6 +1352,7 @@
 		0381EC64298B5677006D6100 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
 		0381EC65298B5677006D6100 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
 		0381EC66298B5677006D6100 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
+		0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
 		0386137429388F8900CC9C44 /* MWSDK_V3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		038613762938906000CC9C44 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		038613772938906000CC9C44 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
@@ -2835,6 +2836,7 @@
 				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
 				0386139D293897C900CC9C44 /* SDKResourcesV3.bundle */,
 				03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */,
+				0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */,
 			);
 			path = GOT;
 			sourceTree = "<group>";
@@ -3284,11 +3286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039B2696298B557400045C53 /* SDKResourcesV4.bundle in Resources */,
 				039B2697298B557400045C53 /* com_mplay_wlzhs.plist in Resources */,
 				039B2698298B557400045C53 /* demoInfo.plist in Resources */,
 				039B2699298B557400045C53 /* GoogleService-Info.plist in Resources */,
 				039B269A298B557400045C53 /* GoogleSignIn.bundle in Resources */,
+				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
 				039B269B298B557400045C53 /* com_mplay_wlzhs.json in Resources */,
 				039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */,
 				039B269D298B557400045C53 /* Images.xcassets in Resources */,
