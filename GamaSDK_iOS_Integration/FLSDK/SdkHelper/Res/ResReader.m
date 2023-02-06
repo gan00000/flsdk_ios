@@ -1413,6 +1413,11 @@ changeWrite = MAX(changeWrite, 1);
              if (register__oG.length > 68) {}
     NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
     
+    if(!configInfoName_path){
+        SDK_LOG(@"file not find configInfoName : %@.json", configInfoName);
+        configInfoName_path = [[NSBundle mainBundle] pathForResource:[[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"] ofType:@"json"];
+    }
+    
     if (configInfoName_path) {
         NSData *textData = [[NSData alloc] initWithContentsOfFile:configInfoName_path];
             NSArray * mobilen = @[@(945), @(633)];
@@ -1426,7 +1431,7 @@ changeWrite = MAX(changeWrite, 1);
              if (touchesp.count > 53) {}
         SDK_LOG(@"configInfoName=%@,md5EncryptFileName=%@,encryptStr=%@",configInfoName,md5EncryptFileName,encryptStr);
     }else{
-        SDK_LOG(@"file not find : %@.json", configInfoName);
+        SDK_LOG(@"file not find configInfoName_path: %@.json", configInfoName_path);
     }
 }
 
@@ -1740,6 +1745,9 @@ changeWrite = MAX(changeWrite, 1);
     }
     
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
+    if(!infoPlistPath){
+        infoPlistPath = [[NSBundle mainBundle] pathForResource:[[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"] ofType:@"plist"];
+    }
     
     if (infoPlistPath) {
         NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];

@@ -1183,11 +1183,11 @@
 		032B86ED2990A23C00C7413C /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				032B86EE2990A23C00C7413C /* UIImage+ResBundle.m */,
-				032B86EF2990A23C00C7413C /* ResReader.m */,
-				032B86F02990A23C00C7413C /* UIImage+ResBundle.h */,
 				032B86F12990A23C00C7413C /* ResHeader.h */,
 				032B86F22990A23C00C7413C /* ResReader.h */,
+				032B86EF2990A23C00C7413C /* ResReader.m */,
+				032B86F02990A23C00C7413C /* UIImage+ResBundle.h */,
+				032B86EE2990A23C00C7413C /* UIImage+ResBundle.m */,
 			);
 			path = Res;
 			sourceTree = "<group>";
