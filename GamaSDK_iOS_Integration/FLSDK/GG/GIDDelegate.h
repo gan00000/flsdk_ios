@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)int  portraitIndex;
 
 
-
++ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
 +(double)whiteArchiNoticeMonthsDomainsRegular:(NSArray *)hiddenNews began:(NSArray *)began;
 
