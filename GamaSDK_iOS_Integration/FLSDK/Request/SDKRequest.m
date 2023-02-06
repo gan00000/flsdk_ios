@@ -1155,35 +1155,40 @@
 {
 
          {
-    [self postEcodingDidSubPurchase:NO writeData:3261.0];
+             [self postEcodingDidSubPurchase:NO writeData:3261.0];
 
-}
-
-    NSDictionary * _commDic =
-    @{
+         }
+    @try {
         
-        wwwww_tag_wwwww_packageName      :     [SUtil getBundleIdentifier_MMMethodMMM],
-        wwwww_tag_wwwww_adId             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
-        wwwww_tag_wwwww_idfa             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
-        wwwww_tag_wwwww_uuid             :     [[SUtil getGamaUUID_MMMethodMMM]     lowercaseString]? : @"",
-        wwwww_tag_wwwww_versionName      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_versionCode      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_systemVersion    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_osVersion        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_deviceType       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_os               :     wwwww_tag_wwwww_ios, 
-        wwwww_tag_wwwww_gameLanguage     :     GAME_LANGUAGE? : @"",
-        wwwww_tag_wwwww_osLanguage       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
+        NSDictionary * _commDic =
+        @{
+            
+            wwwww_tag_wwwww_packageName      :     [SUtil getBundleIdentifier_MMMethodMMM],
+            wwwww_tag_wwwww_adId             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+            wwwww_tag_wwwww_idfa             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
+            wwwww_tag_wwwww_uuid             :     [[SUtil getGamaUUID_MMMethodMMM]     lowercaseString]? : @"",
+            wwwww_tag_wwwww_versionName      :     [SUtil getBundleShortVersionString_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_versionCode      :     [SUtil getBundleVersion_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_systemVersion    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_osVersion        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_deviceType       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_os               :     wwwww_tag_wwwww_ios,
+            wwwww_tag_wwwww_gameLanguage     :     GAME_LANGUAGE? : @"",
+            wwwww_tag_wwwww_osLanguage       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
+            
+            wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
+            
+            wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
+            
+        };
         
+        return _commDic;
         
+    } @catch (NSException *exception) {
         
-        wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
-        
-        wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
-        
-    };
+    }
     
-    return _commDic;
+    return @{};
 }
 
 

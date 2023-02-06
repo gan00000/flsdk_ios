@@ -95,7 +95,7 @@
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
     });
-    
+    _shareSP.sdkBaseEncryptKey = @"gamesdkv5v5v5";
     return _shareSP;
 }
 
@@ -667,17 +667,10 @@
     }
 }
 
-
-#pragma mark - 内部方法
-
-- (void)gama_showPlatformToView:(UIView *)view
+- (NSString *)decryptMyData:(NSString *)data
 {
-    
+    return [SDKRES decryptAllStringContent_MMMethodMMM:data];
 }
 
-- (void)gama_hiddenPlatform
-{
-    
-}
 
 @end

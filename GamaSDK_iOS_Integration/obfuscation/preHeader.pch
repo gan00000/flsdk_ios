@@ -19,10 +19,10 @@
 
 #import "MWStringHeaders.h"
 #import "imageNameHeader.h"
-//#import "codeObfuscationForMethodName.h"
+#import "codeObfuscationForMethodName.h"
 
 #import "ColorHeader.h"
 
-#define Decrypt_AllStringContent(text)  [[CrepitnessBringic reader_WLFuncTag] decryptAllStringContent_WLFuncTag:text]
+//#define Decrypt_AllStringContent(text)  [[CrepitnessBringic reader_WLFuncTag] decryptAllStringContent_WLFuncTag:text]
 
 #endif /* preHeader_h */
