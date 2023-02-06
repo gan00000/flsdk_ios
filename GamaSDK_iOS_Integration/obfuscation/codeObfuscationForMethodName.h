@@ -1,3 +1,6 @@
+#ifndef codeObfuscationForMethodName_h
+#define codeObfuscationForMethodName_h
+
 #define logWithEventName_MMMethodMMM          betReminder
 #define parameters_MMMethodMMM          sneerAccounting
 #define type_MMMethodMMM          belchFur
@@ -464,3 +467,5 @@
 #define getsdkLanguage_MMMethodMMM          bidWeedkiller
 #define reissue_MMMethodMMM          enjoyBack
 #define logServerWithEventName_MMMethodMMM          jabberSimplification
+
+#endif  /* codeObfuscation_h */
