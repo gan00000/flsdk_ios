@@ -330,7 +330,230 @@
     UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
     [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
-   
+    
+//    NSString *var_temp = @"";
+//    
+//    NSString *ppppp1_ppppp = @"";
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else{
+//        ppppp1_ppppp = @"ppppp4_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp12_ppppp"]){
+//        ppppp1_ppppp = @"ppppp13_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp12_ppppp"]){
+//        ppppp1_ppppp = @"ppppp13_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp14_ppppp"]){
+//        ppppp1_ppppp = @"ppppp15_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp12_ppppp"]){
+//        ppppp1_ppppp = @"ppppp13_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp14_ppppp"]){
+//        ppppp1_ppppp = @"ppppp15_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp16_ppppp"]){
+//        ppppp1_ppppp = @"ppppp17_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp8_ppppp"]){
+//        ppppp1_ppppp = @"ppppp9_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp12_ppppp"]){
+//        ppppp1_ppppp = @"ppppp13_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp14_ppppp"]){
+//        ppppp1_ppppp = @"ppppp15_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp16_ppppp"]){
+//        ppppp1_ppppp = @"ppppp17_ppppp";
+//    }else{
+//        ppppp1_ppppp = @"ppppp18_ppppp";
+//    }
+//    
+//    
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp4_ppppp"]){
+//        ppppp1_ppppp = @"ppppp5_ppppp";
+//    }else if([var_temp isEqualToString:@"ppppp6_ppppp"]){
+//        ppppp1_ppppp = @"ppppp7_ppppp";
+//    }
+//    NSString *ppppp8_ppppp = [NSString stringWithFormat:@"ppppp9_ppppp%@",ppppp1_ppppp];
+//    if([ppppp8_ppppp hasSuffix:@"ppppp10_ppppp"]){
+//        ppppp8_ppppp = @"ppppp11_ppppp";
+//    }
+//    
+//    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
+//        ppppp1_ppppp = @"ppppp3_ppppp";
+//    }
+//    if([ppppp1_ppppp hasPrefix:@"ppppp10_ppppp"]){
+//        ppppp1_ppppp = @"ppppp11_ppppp";
+//        int iiiiii1_iiiii = iiiiii2_iiiii * iiiiii3_iiiii;
+//    }
+//    
+//    
+//    int var_temp_int = 0;
+//    int iiiiii1_iiiii = iiiiii2_iiiii;
+//    switch (var_temp_int) {
+//            
+//        case iiiiii3_iiiii:
+//            iiiiii1_iiiii = iiiiii4_iiiii ooooo1_ooooo iiiiii5_iiiii
+//            break;
+//        case iiiiii6_iiiii:
+//            iiiiii1_iiiii = iiiiii7_iiiii ooooo1_ooooo iiiiii8_iiiii
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    int var_temp_int = 0;
+//    int iiiiii1_iiiii = iiiiii2_iiiii;
+//    switch (var_temp_int) {
+//            
+//        case iiiiii3_iiiii:
+//            iiiiii1_iiiii = iiiiii4_iiiii ooooo1_ooooo iiiiii5_iiiii
+//            break;
+//        case iiiiii6_iiiii:
+//            iiiiii1_iiiii = iiiiii7_iiiii ooooo1_ooooo iiiiii8_iiiii
+//            break;
+//            
+//        case iiiiii9_iiiii:
+//            iiiiii1_iiiii = iiiiii10_iiiii ooooo1_ooooo iiiiii11_iiiii
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    
+//    int var_temp_int = 0;
+//    int iiiiii1_iiiii = iiiiii2_iiiii;
+//    switch (var_temp_int) {
+//            
+//        case iiiiii3_iiiii:
+//            iiiiii1_iiiii = iiiiii4_iiiii ooooo1_ooooo iiiiii5_iiiii
+//            break;
+//        case iiiiii6_iiiii:
+//            iiiiii1_iiiii = iiiiii7_iiiii ooooo1_ooooo iiiiii8_iiiii
+//            break;
+//            
+//        case iiiiii9_iiiii:
+//            iiiiii1_iiiii = iiiiii10_iiiii ooooo1_ooooo iiiiii11_iiiii
+//            break;
+//        case iiiiii12_iiiii:
+//            iiiiii1_iiiii = iiiiii13_iiiii ooooo1_ooooo iiiiii14_iiiii
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    int var_temp_int = 0;
+//    int iiiiii1_iiiii = iiiiii2_iiiii;
+//    switch (var_temp_int) {
+//            
+//        case iiiiii3_iiiii:
+//            iiiiii1_iiiii = iiiiii4_iiiii ooooo1_ooooo iiiiii5_iiiii
+//            break;
+//        case iiiiii6_iiiii:
+//            iiiiii1_iiiii = iiiiii7_iiiii ooooo1_ooooo iiiiii8_iiiii
+//            break;
+//            
+//        case iiiiii9_iiiii:
+//            iiiiii1_iiiii = iiiiii10_iiiii ooooo1_ooooo iiiiii11_iiiii
+//            break;
+//        case iiiiii12_iiiii:
+//            iiiiii1_iiiii = iiiiii13_iiiii ooooo1_ooooo iiiiii14_iiiii
+//            break;
+//            
+//        case iiiiii12_iiiii:
+//            iiiiii1_iiiii = iiiiii13_iiiii ooooo1_ooooo iiiiii14_iiiii;
+//            break;
+//            
+//        default:
+//            break;
+//    }
+    
 }
 
 
