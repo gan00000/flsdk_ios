@@ -207,7 +207,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 打印配置文件加密内容
 - (void)logSdkResConfig_MMMethodMMM {
     
-    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"areaInfo"];
+    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"vi", @"areaInfo"];
     for (NSString *languageStr in languageArr) {
         
         NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
@@ -246,6 +246,7 @@ static dispatch_once_t onceToken;
         _textStringDic = [NSMutableDictionary dictionary];
         
         NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
+        NSString *languageStr_temp = languageStr;
         
         if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
             
@@ -258,11 +259,18 @@ static dispatch_once_t onceToken;
                 languageStr = @"zh-Hant";
             }else if ([preferredLang hasPrefix:@"en"]){
                 languageStr = @"en";
+            }else if ([preferredLang hasPrefix:@"vi"]){
+                languageStr = @"vi";
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
+        }else{
+            SDK_LOG(@"language = %@ not exist",languageStr);
+            dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"txt"];
+            [_textStringDic addEntriesFromDictionary:dicTemp];
+            SDK_LOG(@"set language str = %@ ",languageStr_temp);
         }
     }
     return _textStringDic;
@@ -310,6 +318,8 @@ static dispatch_once_t onceToken;
             languageStr = @"zh-Hant";
         }else if ([preferredLang hasPrefix:@"en"]){
             languageStr = @"en";
+        }else if ([preferredLang hasPrefix:@"vi"]){
+            languageStr = @"vi";
         }
     }
     
@@ -368,6 +378,9 @@ static dispatch_once_t onceToken;
             
         }else if ([preferredLang hasPrefix:@"en"]){
             languageStr = @"en_US";
+            
+        }else if ([preferredLang hasPrefix:@"vi"]){
+            languageStr = @"vi_VN";
         }
     }
     if ([StringUtil isNotEmpty_MMMethodMMM:languageStr]) {
