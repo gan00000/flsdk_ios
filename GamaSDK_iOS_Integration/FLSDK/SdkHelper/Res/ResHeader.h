@@ -1,10 +1,10 @@
-#import "SUtil.h"
-#import "AlertUtil.h"
-#import "ResReader.h"
-#import "NSString+URLEncoding.h"
+#import "PeopleitionStudentosity.h"
+#import "RiskHalf.h"
+#import "HabeerSparsth.h"
+#import "NSString+TroubleianThe.h"
 
  
-#define SDKRES    [ResReader reader_MMMethodMMM]
+#define SDKRES    [HabeerSparsth reader_MMMethodMMM]
 #define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
 #define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
 #define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]

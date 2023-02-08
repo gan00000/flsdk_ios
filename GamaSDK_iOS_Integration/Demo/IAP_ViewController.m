@@ -8,7 +8,7 @@
 
 #import "IAP_ViewController.h"
 #import "UserModel.h"
-#import "SUtil.h"
+#import "PeopleitionStudentosity.h"
 #import "ResHeader.h"
 
 #import "MWSDK.h"
@@ -38,7 +38,7 @@
                             @"com.gs.sst.daily1",
                             ];
     _dataSource = [productArr copy];
-//    _iapTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [SUtil getCurrentScreenFrame].size.width, [SUtil getCurrentScreenFrame].size.height) style:UITableViewStylePlain];
+//    _iapTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [PeopleitionStudentosity getCurrentScreenFrame].size.width, [PeopleitionStudentosity getCurrentScreenFrame].size.height) style:UITableViewStylePlain];
     _iapTable.dataSource = self;
     _iapTable.delegate = self;
     [self.view addSubview:_iapTable];

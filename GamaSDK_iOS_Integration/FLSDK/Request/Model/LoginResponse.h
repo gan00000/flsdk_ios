@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "ForeignhoodDes.h"
 #import "AccountModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : ForeignhoodDes
 
 //@property (nonatomic, assign) NSInteger code;
 //@property (nonatomic, copy) NSString *beLinked;
