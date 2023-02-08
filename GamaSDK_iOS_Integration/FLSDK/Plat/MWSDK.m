@@ -23,6 +23,7 @@
 #import "MWWebViewController.h"
 #import "TouchEventInterruptView.h"
 #import <StoreKit/StoreKit.h>
+#import "GIDDelegate.h"
 
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = wwwww_tag_wwwww_SDK_LOGIN_SUCCUESS;
@@ -68,6 +69,10 @@
     BOOL result = [FBDelegate application:application openURL:url options:options];
     if (!result) {
         result = [LineDelegate application:application openURL:url options:options];
+    }
+    
+    if (!result) {//google sign in
+        result = [GIDDelegate application:application openURL:url options:options];
     }
     return result;
 }

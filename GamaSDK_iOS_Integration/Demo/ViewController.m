@@ -231,16 +231,16 @@
 //
 //            }];
             
-            NSString *account = @"";//账号
-            NSString *pwd = @"";//密码
-            [[MWSDK share] requestUpgradeWithAccount:account password:(NSString *)pwd Block:^(BOOL success, id  _Nullable result) {
-                if (success) {
-                    NSLog(@"账号升级成功");
-                    LoginData *data = (LoginData*)result;
-                }else{
-                    NSLog(@"账号升级失败");
-                }
-            }];
+//            NSString *account = @"";//账号
+//            NSString *pwd = @"";//密码
+//            [[MWSDK share] requestUpgradeWithAccount:account password:(NSString *)pwd Block:^(BOOL success, id  _Nullable result) {
+//                if (success) {
+//                    NSLog(@"账号升级成功");
+//                    LoginData *data = (LoginData*)result;
+//                }else{
+//                    NSLog(@"账号升级失败");
+//                }
+//            }];
             
         }
             break;

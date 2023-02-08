@@ -18,29 +18,34 @@
     
 }
 
-static void handleUserInfo(void (^ _Nonnull failCallback)(NSString *), NSString * _Nonnull kClientID, void (^ _Nonnull successCallback)(NSString *, NSString *, NSString *, NSString *, NSString *, NSString *)) {
-    
-    GIDGoogleUser *googleUser = [GIDSignIn.sharedInstance currentUser];
-    if (googleUser.authentication) {
-        
-        NSString *userID = googleUser.userID;
-        NSString *name = googleUser.profile.name;
-        NSString *email = googleUser.profile.email;
-        
-        NSString *idToken = googleUser.authentication.idToken;
-        NSString *accessToken = googleUser.authentication.accessToken;
-        
-        SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
-        if (successCallback) {
-            successCallback(userID,name,email,idToken,accessToken,kClientID);
-        }
-    } else {
-        // To authenticate, use Google Sign-In button.
-        SDK_LOG(@"Status: Not authenticated");
-        if (failCallback) {
-            failCallback(@"");
-        }
-    }
+//static void handleUserInfo(void (^ _Nonnull failCallback)(NSString *), NSString * _Nonnull kClientID, void (^ _Nonnull successCallback)(NSString *, NSString *, NSString *, NSString *, NSString *, NSString *)) {
+//
+//    GIDGoogleUser *googleUser = [GIDSignIn.sharedInstance currentUser];
+//    if (googleUser.authentication) {
+//
+//        NSString *userID = googleUser.userID;
+//        NSString *name = googleUser.profile.name;
+//        NSString *email = googleUser.profile.email;
+//
+//        NSString *idToken = googleUser.authentication.idToken;
+//        NSString *accessToken = googleUser.authentication.accessToken;
+//
+//        SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
+//        if (successCallback) {
+//            successCallback(userID,name,email,idToken,accessToken,kClientID);
+//        }
+//    } else {
+//        // To authenticate, use Google Sign-In button.
+//        SDK_LOG(@"Status: Not authenticated");
+//        if (failCallback) {
+//            failCallback(@"");
+//        }
+//    }
+//}
+
++ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    SDK_LOG(@"GIDDelegate application openURL options");
+    return [GIDSignIn.sharedInstance handleURL:url];
 }
 
 +(void)loginWithClientID_MMMethodMMM:(NSString *)kClientID
@@ -61,36 +66,47 @@ presentingViewController:(UIViewController *)presentingViewController
         }
         return;
     }
-    SDK_LOG(@"kClientID = %@",kClientID);
-    GIDGoogleUser *googleUser = [GIDSignIn.sharedInstance currentUser];
-    if (googleUser && googleUser.authentication) {
-        handleUserInfo(failCallback, kClientID, successCallback);
-        return;
-    }
+    SDK_LOG(@"google kClientID = %@",kClientID);
     
-    GIDConfiguration * _configuration = [[GIDConfiguration alloc] initWithClientID:kClientID];
+    [GIDSignIn.sharedInstance signInWithPresentingViewController:presentingViewController completion:^(GIDSignInResult * _Nullable signInResult, NSError * _Nullable error) {
     
-    [GIDSignIn.sharedInstance signInWithConfiguration:_configuration presentingViewController:presentingViewController callback:^(GIDGoogleUser * _Nullable user,
-                                                                                                                                  NSError * _Nullable error) {
         if (error) {
-            SDK_LOG(@"Status: Authentication error: %@", error);
+            SDK_LOG(@"gid signInWithPresentingViewController error: %@", error);
             if (failCallback) {
                 failCallback(@"");
             }
             return;
         }
-        if (user == nil) {
-            SDK_LOG(@"user == nil");
+        if (signInResult == nil) {
+            SDK_LOG(@"signInResult == nil");
             if (failCallback) {
                 failCallback(@"");
             }
             return;
         }
         
-        handleUserInfo(failCallback, kClientID, successCallback);
+
+        GIDGoogleUser *user = signInResult.user;
+
+        NSString *userID = user.userID;
+        NSString *email = user.profile.email;
+
+        NSString *name = user.profile.name;
+//        NSString *givenName = user.profile.givenName;
+//        NSString *familyName = user.profile.familyName;
+
+        NSString *idToken = user.idToken.tokenString;
+        NSString *accessToken = user.accessToken.tokenString;
         
-        // Your user is signed in!
+//        NSURL *profilePic = [user.profile imageURLWithDimension:320];
+        
+        SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
+        if (successCallback) {
+            successCallback(userID,name,email,idToken,accessToken,kClientID);
+        }
+        
     }];
+    
 }
 
 + (void)signOut_MMMethodMMM {
