@@ -71,9 +71,8 @@
 		<key>ChannelID</key>
 		<string>1657186918</string>
 	</dict>
-    <key>GIDClientID</key>
-    <string>503664990056-pvdp09io2bnoekk59cta1sro1kf9kkkt.apps.googleusercontent.com</string>
-    
+	<key>GIDClientID</key>
+	<string>503664990056-pvdp09io2bnoekk59cta1sro1kf9kkkt.apps.googleusercontent.com</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
