@@ -157,7 +157,7 @@
          {
     [self observeMislessAgainEntriesPress:@"unlock"];
 
-}
+         }
 
     NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:
                            kSecClassGenericPassword, kSecClass,

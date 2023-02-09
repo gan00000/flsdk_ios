@@ -426,7 +426,8 @@ UILabel * freedom = [self lowercaseBtnMoreBattbetterRecognizedBundlenilLabel];
             NSArray * canceli = @[[NSDictionary dictionaryWithObjectsAndKeys:@"drugstore",@(978), @"affection",@(132), @"load",@(48), nil]];
     }];
     if (!SDK_DATA.mConfigModel.visitorLogin) {
-        guestLoginBtnContent.hidden = YES;
+        //guestLoginBtnContent.hidden = YES;
+        guestLoginBtn.hidden = YES;
     }
     
     
