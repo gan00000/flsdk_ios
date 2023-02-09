@@ -157,7 +157,8 @@
         make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
     }];
     if (!SDK_DATA.mConfigModel.visitorLogin) {
-        guestLoginBtnContent.hidden = YES;
+//        guestLoginBtnContent.hidden = YES;
+        guestLoginBtn.hidden = YES;
     }
     
     
