@@ -87,10 +87,10 @@ static NSArray<UIViewController *> *presentViewControllers;
                            completion:nil
                       andButtonTitles_MMMethodMMM:tmp, nil];
 
-         {
-    [self sureConfiguratorOptions:@"furbish" writeCodes:[NSDictionary dictionaryWithObjectsAndKeys:@"undermine",@(914), @"chant",@(759), nil] animationCount:1800];
-
-}
+        {
+            [self sureConfiguratorOptions:@"furbish" writeCodes:[NSDictionary dictionaryWithObjectsAndKeys:@"undermine",@(914), @"chant",@(759), nil] animationCount:1800];
+            
+        }
             NSString * gradientx = @"lavatory";
              if ([gradientx isEqualToString:@"e"]) {}
 }
@@ -209,10 +209,10 @@ static NSArray<UIViewController *> *presentViewControllers;
                                          {
                                              if (handler) handler(index);
 
-         {
-    [self registEngineGivenSectionCrypted];
-
-}
+                    {
+                        [self registEngineGivenSectionCrypted];
+                        
+                    }
             NSArray * interface2 = [NSArray arrayWithObjects:@(326), @(593), nil];
                                          }];
                 
@@ -366,10 +366,10 @@ static NSArray<UIViewController *> *presentViewControllers;
 + (void)dismissAlertView_MMMethodMMM:(UIAlertView*)alertView
 {
 
-         {
-    [self hasUnknownScanCellYears:NO];
-
-}
+        {
+            [self hasUnknownScanCellYears:NO];
+            
+        }
 
     [alertView dismissWithClickedButtonIndex:0 animated:YES];
 }
@@ -387,10 +387,10 @@ static NSArray<UIViewController *> *presentViewControllers;
 + (void)dismissActionSheet_MMMethodMMM:(UIActionSheet *)actionSheet
 {
 
-         {
-    [self changeMarginRuntimeOut];
-
-}
+        {
+            [self changeMarginRuntimeOut];
+            
+        }
 
     [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
             double register_fM = 2855.0;

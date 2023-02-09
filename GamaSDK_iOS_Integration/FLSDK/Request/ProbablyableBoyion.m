@@ -106,10 +106,10 @@
     static ProbablyableBoyion *instance;
             int private_0r = 5012;
 
-         {
-    [self resetupCodeResignNumberatureRadius:6613 wrapper:[NSArray arrayWithObjects:@(1207.0), nil] fieldPple:9207.0];
+                 {
+            [self resetupCodeResignNumberatureRadius:6613 wrapper:[NSArray arrayWithObjects:@(1207.0), nil] fieldPple:9207.0];
 
-}
+        }
              while (@(private_0r).integerValue == 133) { break; }
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

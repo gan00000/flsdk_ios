@@ -26,15 +26,15 @@ static HabeerSparsth * coreReader;
 static dispatch_once_t onceToken;
 
 -(NSDictionary *)borderGameswordRootPlaceholderNumberFire:(NSString *)perfom logout:(double)logout {
-     double delegate_1Field = 8662.0;
+    double delegate_1Field = 8662.0;
     NSMutableDictionary * distillation = [NSMutableDictionary dictionary];
     delegate_1Field = 8664;
     [distillation setObject: @(delegate_1Field) forKey:@"callowVariegateSinger"];
-         int temp_o_86 = (int)delegate_1Field;
-     temp_o_86 += 8;
-
+    int temp_o_86 = (int)delegate_1Field;
+    temp_o_86 += 8;
+    
     return distillation;
-
+    
 }
 
 
@@ -45,12 +45,12 @@ static dispatch_once_t onceToken;
 
 - (NSString *)getSdkBundleName_MMMethodMMM
 {
-
-         {
-    [self borderGameswordRootPlaceholderNumberFire:@"overextend" logout:339.0];
-
-}
-
+    
+    {
+        [self borderGameswordRootPlaceholderNumberFire:@"overextend" logout:339.0];
+        
+    }
+    
     NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
     if (bundleName && ![bundleName isEqualToString:@""]) {
         return bundleName;
@@ -59,123 +59,123 @@ static dispatch_once_t onceToken;
 }
 
 -(float)commonKitTermsMsghdrPositionRequest{
-     float orderEnded = 2683.0;
+    float orderEnded = 2683.0;
     float lineage = 0;
     orderEnded = orderEnded;
     lineage *= orderEnded;
-         int _b_10 = (int)orderEnded;
-     switch (_b_10) {
-          case 44: {
-          if (_b_10 <= 950) {
-          }
-             break;
-
-     }
-          case 82: {
-          _b_10 -= 65;
-          _b_10 *= 82;
-             break;
-
-     }
-          case 28: {
-          _b_10 += 32;
-             break;
-
-     }
-          case 46: {
-          _b_10 *= 66;
-             break;
-
-     }
-          case 64: {
-          int u_23 = 0;
-     int z_63 = 0;
-     if (_b_10 > z_63) {
-         _b_10 = z_63;
-
-     }
-     for (int a_33 = 0; a_33 <= _b_10; a_33++) {
-         u_23 += a_33;
-     int i_40 = u_23;
-          switch (i_40) {
-          case 93: {
-          i_40 -= 51;
-                  break;
-
-     }
-          case 94: {
-          i_40 += 92;
-             break;
-
-     }
-          case 65: {
-          i_40 /= 59;
-          i_40 *= 54;
-             break;
-
-     }
-          case 100: {
-          i_40 -= 100;
-             break;
-
-     }
-     default:
-         break;
-
-     }
-         break;
-
-     }
-             break;
-
-     }
-          case 37: {
-          int w_0 = 0;
-     for (int v_58 = _b_10; v_58 > _b_10 - 1; v_58--) {
-         w_0 += v_58;
-     int o_98 = w_0;
-          if (o_98 <= 48) {
-          o_98 *= 57;
-          }
-         break;
-
-     }
-             break;
-
-     }
-          case 32: {
-          _b_10 -= 10;
-             break;
-
-     }
-          case 58: {
-          int l_87 = 0;
-     int z_59 = 1;
-     if (_b_10 > z_59) {
-         _b_10 = z_59;
-
-     }
-     for (int s_40 = 1; s_40 <= _b_10; s_40++) {
-         l_87 += s_40;
-     int l_85 = l_87;
-              break;
-
-     }
-             break;
-
-     }
-          case 56: {
-          _b_10 -= 31;
-             break;
-
-     }
-     default:
-         break;
-
-     }
-
+    int _b_10 = (int)orderEnded;
+    switch (_b_10) {
+        case 44: {
+            if (_b_10 <= 950) {
+            }
+            break;
+            
+        }
+        case 82: {
+            _b_10 -= 65;
+            _b_10 *= 82;
+            break;
+            
+        }
+        case 28: {
+            _b_10 += 32;
+            break;
+            
+        }
+        case 46: {
+            _b_10 *= 66;
+            break;
+            
+        }
+        case 64: {
+            int u_23 = 0;
+            int z_63 = 0;
+            if (_b_10 > z_63) {
+                _b_10 = z_63;
+                
+            }
+            for (int a_33 = 0; a_33 <= _b_10; a_33++) {
+                u_23 += a_33;
+                int i_40 = u_23;
+                switch (i_40) {
+                    case 93: {
+                        i_40 -= 51;
+                        break;
+                        
+                    }
+                    case 94: {
+                        i_40 += 92;
+                        break;
+                        
+                    }
+                    case 65: {
+                        i_40 /= 59;
+                        i_40 *= 54;
+                        break;
+                        
+                    }
+                    case 100: {
+                        i_40 -= 100;
+                        break;
+                        
+                    }
+                    default:
+                        break;
+                        
+                }
+                break;
+                
+            }
+            break;
+            
+        }
+        case 37: {
+            int w_0 = 0;
+            for (int v_58 = _b_10; v_58 > _b_10 - 1; v_58--) {
+                w_0 += v_58;
+                int o_98 = w_0;
+                if (o_98 <= 48) {
+                    o_98 *= 57;
+                }
+                break;
+                
+            }
+            break;
+            
+        }
+        case 32: {
+            _b_10 -= 10;
+            break;
+            
+        }
+        case 58: {
+            int l_87 = 0;
+            int z_59 = 1;
+            if (_b_10 > z_59) {
+                _b_10 = z_59;
+                
+            }
+            for (int s_40 = 1; s_40 <= _b_10; s_40++) {
+                l_87 += s_40;
+                int l_85 = l_87;
+                break;
+                
+            }
+            break;
+            
+        }
+        case 56: {
+            _b_10 -= 31;
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    
     return lineage;
-
+    
 }
 
 
@@ -186,52 +186,52 @@ static dispatch_once_t onceToken;
 
 - (NSString *)getSdkConfigInfoName_MMMethodMMM
 {
-
-         {
-    [self commonKitTermsMsghdrPositionRequest];
-
-}
-
+    
+    {
+        [self commonKitTermsMsghdrPositionRequest];
+        
+    }
+    
     return [[self getSdkBaseEncryptKey_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"];
 }
 
 -(NSDictionary *)landspaceEffortfoldBugUnable:(NSDictionary *)commonHidden {
-     long baseReport = 7374;
+    long baseReport = 7374;
     NSMutableDictionary * proclivity = [NSMutableDictionary dictionary];
     baseReport = 9063;
     [proclivity setObject: @(baseReport) forKey:@"thoughtlessExpression"];
-         int _u_42 = (int)baseReport;
-     int k_37 = 0;
-     int r_92 = 0;
-     if (_u_42 > r_92) {
-         _u_42 = r_92;
-
-     }
-     for (int g_62 = 0; g_62 <= _u_42; g_62++) {
-         k_37 += g_62;
-     int a_54 = k_37;
-          int o_2 = 0;
-     int a_100 = 0;
-     if (a_54 > a_100) {
-         a_54 = a_100;
-
-     }
-     for (int a_39 = 1; a_39 <= a_54; a_39++) {
-         o_2 += a_39;
-          if (a_39 > 0) {
-          a_54 -=  a_39;
-
-     }
-     int u_57 = o_2;
-              break;
-
-     }
-         break;
-
-     }
-
+    int _u_42 = (int)baseReport;
+    int k_37 = 0;
+    int r_92 = 0;
+    if (_u_42 > r_92) {
+        _u_42 = r_92;
+        
+    }
+    for (int g_62 = 0; g_62 <= _u_42; g_62++) {
+        k_37 += g_62;
+        int a_54 = k_37;
+        int o_2 = 0;
+        int a_100 = 0;
+        if (a_54 > a_100) {
+            a_54 = a_100;
+            
+        }
+        for (int a_39 = 1; a_39 <= a_54; a_39++) {
+            o_2 += a_39;
+            if (a_39 > 0) {
+                a_54 -=  a_39;
+                
+            }
+            int u_57 = o_2;
+            break;
+            
+        }
+        break;
+        
+    }
+    
     return proclivity;
-
+    
 }
 
 
@@ -242,12 +242,12 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getStringForKey_MMMethodMMM:(NSString *)key
 {
-
-         {
-    [self landspaceEffortfoldBugUnable:[NSDictionary dictionaryWithObjectsAndKeys:@"unwelcome",@(710), @"kidnaper",@(838), nil]];
-
-}
-
+    
+    {
+        [self landspaceEffortfoldBugUnable:[NSDictionary dictionaryWithObjectsAndKeys:@"unwelcome",@(710), @"kidnaper",@(838), nil]];
+        
+    }
+    
     id aresult = [self.mySdkConfDic objectForKey:key];
     if (aresult) {
         return [NSString stringWithFormat:@"%@", aresult];
@@ -258,17 +258,17 @@ static dispatch_once_t onceToken;
 #pragma mark -获取sdk bundle文件路径，不存在返回nil
 
 -(NSString *)hashOauthSheet{
-     double vip = 2125.0;
+    double vip = 2125.0;
     NSMutableString *vegetable = [NSMutableString string];
-         int tmp_k_49 = (int)vip;
-     if (tmp_k_49 == 488) {
-          }
-     else {
-     
-     }
-
+    int tmp_k_49 = (int)vip;
+    if (tmp_k_49 == 488) {
+    }
+    else {
+        
+    }
+    
     return vegetable;
-
+    
 }
 
 
@@ -276,15 +276,15 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
-
-         {
-    [self hashOauthSheet];
-
-}
-
+    
+    {
+        [self hashOauthSheet];
+        
+    }
+    
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
-            double alert4 = 9875.0;
-             if (@(alert4).integerValue > 63) {}
+    double alert4 = 9875.0;
+    if (@(alert4).integerValue > 63) {}
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     
@@ -292,8 +292,8 @@ static dispatch_once_t onceToken;
     
     
     NSString *textContent = [PitiWhether getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-            float sheetv = 1412.0;
-             if (@(sheetv).floatValue == 200) {}
+    float sheetv = 1412.0;
+    if (@(sheetv).floatValue == 200) {}
     return textContent;
 }
 
@@ -307,8 +307,8 @@ static dispatch_once_t onceToken;
         SDK_LOG(@"reader init");
         
         [self setBundleInfo_MMMethodMMM];
-            NSString * failp = @"blotch";
-             if ([failp isEqualToString:@"R"]) {}
+        NSString * failp = @"blotch";
+        if ([failp isEqualToString:@"R"]) {}
         [self logSdkResConfig_MMMethodMMM];
     }
     return self;
@@ -317,121 +317,121 @@ static dispatch_once_t onceToken;
 #pragma mark -配置属性信息
 
 -(NSString *)whiteCapacityUpdataDelays{
-     NSInteger authticationHander = 9894;
-     float social = 1468.0;
+    NSInteger authticationHander = 9894;
+    float social = 1468.0;
     NSString *consequent = [NSString new];
-         int w_57 = (int)authticationHander;
-     switch (w_57) {
-          case 49: {
-          w_57 -= 80;
-          int i_33 = 1;
-     int e_49 = 0;
-     if (w_57 > e_49) {
-         w_57 = e_49;
-     }
-     while (i_33 < w_57) {
-         i_33 += 1;
-          w_57 -= i_33;
-              break;
-     }
-             break;
-
-     }
-          case 10: {
-          w_57 -= 64;
-          int i_51 = 0;
-     for (int n_31 = w_57; n_31 > w_57 - 1; n_31--) {
-         i_51 += n_31;
-          if (n_31 > 0) {
-          w_57 +=  n_31;
-
-     }
-     int w_63 = i_51;
-          switch (w_63) {
-          case 24: {
-          w_63 /= 43;
-          w_63 *= 97;
-             break;
-
-     }
-          case 13: {
-                  break;
-
-     }
-          case 8: {
-          w_63 -= 6;
-             break;
-
-     }
-          case 52: {
-          w_63 /= 97;
-             break;
-
-     }
-          case 68: {
-                  break;
-
-     }
-          case 62: {
-          w_63 *= 39;
-             break;
-
-     }
-          case 89: {
-          w_63 -= 85;
-             break;
-
-     }
-     default:
-         break;
-
-     }
-         break;
-
-     }
-             break;
-
-     }
-          case 91: {
-          w_57 -= 29;
-             break;
-
-     }
-          case 40: {
-          w_57 *= 61;
-          int h_18 = 1;
-     int v_89 = 1;
-     if (w_57 > v_89) {
-         w_57 = v_89;
-     }
-     while (h_18 <= w_57) {
-         h_18 += 1;
-     int u_55 = h_18;
-          if (u_55 != 57) {
-          }
-         break;
-     }
-             break;
-
-     }
-          case 56: {
-          if (w_57 != 346) {
-          if (w_57 != 749) {
-          w_57 /= 19;
-          }
-     }
-             break;
-
-     }
-     default:
-         break;
-
-     }
-         int g_12 = (int)social;
-     g_12 += 31;
-
+    int w_57 = (int)authticationHander;
+    switch (w_57) {
+        case 49: {
+            w_57 -= 80;
+            int i_33 = 1;
+            int e_49 = 0;
+            if (w_57 > e_49) {
+                w_57 = e_49;
+            }
+            while (i_33 < w_57) {
+                i_33 += 1;
+                w_57 -= i_33;
+                break;
+            }
+            break;
+            
+        }
+        case 10: {
+            w_57 -= 64;
+            int i_51 = 0;
+            for (int n_31 = w_57; n_31 > w_57 - 1; n_31--) {
+                i_51 += n_31;
+                if (n_31 > 0) {
+                    w_57 +=  n_31;
+                    
+                }
+                int w_63 = i_51;
+                switch (w_63) {
+                    case 24: {
+                        w_63 /= 43;
+                        w_63 *= 97;
+                        break;
+                        
+                    }
+                    case 13: {
+                        break;
+                        
+                    }
+                    case 8: {
+                        w_63 -= 6;
+                        break;
+                        
+                    }
+                    case 52: {
+                        w_63 /= 97;
+                        break;
+                        
+                    }
+                    case 68: {
+                        break;
+                        
+                    }
+                    case 62: {
+                        w_63 *= 39;
+                        break;
+                        
+                    }
+                    case 89: {
+                        w_63 -= 85;
+                        break;
+                        
+                    }
+                    default:
+                        break;
+                        
+                }
+                break;
+                
+            }
+            break;
+            
+        }
+        case 91: {
+            w_57 -= 29;
+            break;
+            
+        }
+        case 40: {
+            w_57 *= 61;
+            int h_18 = 1;
+            int v_89 = 1;
+            if (w_57 > v_89) {
+                w_57 = v_89;
+            }
+            while (h_18 <= w_57) {
+                h_18 += 1;
+                int u_55 = h_18;
+                if (u_55 != 57) {
+                }
+                break;
+            }
+            break;
+            
+        }
+        case 56: {
+            if (w_57 != 346) {
+                if (w_57 != 749) {
+                    w_57 /= 19;
+                }
+            }
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    int g_12 = (int)social;
+    g_12 += 31;
+    
     return consequent;
-
+    
 }
 
 
@@ -439,7 +439,7 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)getServerLanguage_MMMethodMMM{
-
+    
     
     NSString *languageStr = @"";
     if ([self isMoreLanguage_MMMethodMMM]) {
@@ -448,11 +448,11 @@ static dispatch_once_t onceToken;
         if ([preferredLang hasPrefix:@"zh-Hans"]) {
             
             languageStr = @"zh_CN";
-
-         {
-    [self whiteCapacityUpdataDelays];
-
-}
+            
+            {
+                [self whiteCapacityUpdataDelays];
+                
+            }
             
         }else if ([preferredLang hasPrefix:@"zh-Hant"]){
             languageStr = @"zh_TW";
@@ -469,19 +469,19 @@ static dispatch_once_t onceToken;
         return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
     }
     return @"zh_TW";
-
+    
 }
 
 -(double)safePeccWhitespaceEntriesActiveNib{
-     NSInteger more = 937;
+    NSInteger more = 937;
     double icecreamExpatiateSauce = 0;
     more -= 19;
     icecreamExpatiateSauce /= MAX(more, 1);
-         int c_87 = (int)more;
-     c_87 -= 12;
-
+    int c_87 = (int)more;
+    c_87 -= 12;
+    
     return icecreamExpatiateSauce;
-
+    
 }
 
 
@@ -491,38 +491,38 @@ static dispatch_once_t onceToken;
 
 -(id)getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
 {
-
+    
     NSString *md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:name];
-            double users = 3251.0;
-
-         {
-    [self safePeccWhitespaceEntriesActiveNib];
-
-}
-             if (@(users).floatValue >= 186) {}
+    double users = 3251.0;
+    
+    {
+        [self safePeccWhitespaceEntriesActiveNib];
+        
+    }
+    if (@(users).floatValue >= 186) {}
     SDK_LOG(@"md5EncryptFileName=%@",md5EncryptFileName);
-            NSDictionary * touchj = [NSDictionary dictionaryWithObjectsAndKeys:@"meet",@(480), nil];
-             while (touchj.count > 105) { break; }
+    NSDictionary * touchj = [NSDictionary dictionaryWithObjectsAndKeys:@"meet",@(480), nil];
+    while (touchj.count > 105) { break; }
     NSString *textEncryptFilePath = [bundle pathForResource:md5EncryptFileName ofType:type];
     
     if(textEncryptFilePath){
         
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
-            NSArray * array2 = [NSArray arrayWithObjects:@(114), @(982), nil];
-             if (array2.count > 150) {}
+        NSArray * array2 = [NSArray arrayWithObjects:@(114), @(982), nil];
+        if (array2.count > 150) {}
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
-            float timingi = 8601.0;
-             if (@(timingi).longValue < 105) {}
+        float timingi = 8601.0;
+        if (@(timingi).longValue < 105) {}
         NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
-            NSString * google9 = @"treatise";
-             while (google9.length > 85) { break; }
+        NSString * google9 = @"treatise";
+        while (google9.length > 85) { break; }
         SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
             
             NSError *error = nil;
             NSArray * frame_2n3 = [NSArray arrayWithObjects:@(426), @(71), nil];
-             if ([frame_2n3 containsObject:@"5"]) {}
+            if ([frame_2n3 containsObject:@"5"]) {}
             id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
             NSArray * cancelN = @[@(559), @(276)];
             return resultTemp;
@@ -534,25 +534,25 @@ static dispatch_once_t onceToken;
 #pragma mark -从main bundle配置文件中读取配置信息
 
 -(NSInteger)dequeueBetteritiveHttpFormatPrimath:(NSDictionary *)textBind responceIcon:(Boolean)responceIcon {
-     double report = 7066.0;
+    double report = 7066.0;
     NSInteger feedMolding = 0;
     report -= 56;
     feedMolding += report;
-         int o_81 = (int)report;
-     int u_10 = 1;
-     int c_60 = 1;
-     if (o_81 > c_60) {
-         o_81 = c_60;
-     }
-     while (u_10 < o_81) {
-         u_10 += 1;
-          o_81 -= u_10;
-          o_81 *= 57;
-         break;
-     }
-
+    int o_81 = (int)report;
+    int u_10 = 1;
+    int c_60 = 1;
+    if (o_81 > c_60) {
+        o_81 = c_60;
+    }
+    while (u_10 < o_81) {
+        u_10 += 1;
+        o_81 -= u_10;
+        o_81 *= 57;
+        break;
+    }
+    
     return feedMolding;
-
+    
 }
 
 
@@ -560,12 +560,12 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
-
-         {
-    [self dequeueBetteritiveHttpFormatPrimath:@{@"immobilize":@(381), @"increment":@(786)} responceIcon:NO];
-
-}
-
+    
+    {
+        [self dequeueBetteritiveHttpFormatPrimath:@{@"immobilize":@(381), @"increment":@(786)} responceIcon:NO];
+        
+    }
+    
     if([MWSDK share].sdkBaseEncryptKey){
         return [MWSDK share].sdkBaseEncryptKey;
     }
@@ -576,22 +576,22 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取某个key对应的确定的配置值
 
 -(NSString *)placeHanderLogOnlyFilename:(float)request {
-     float boardResp = 2656.0;
+    float boardResp = 2656.0;
     NSMutableString *substantiate = [NSMutableString new];
-         int _q_44 = (int)boardResp;
-     int e_84 = 1;
-     int w_49 = 1;
-     if (_q_44 > w_49) {
-         _q_44 = w_49;
-     }
-     while (e_84 < _q_44) {
-         e_84 += 1;
-          _q_44 -= e_84;
-              break;
-     }
-
+    int _q_44 = (int)boardResp;
+    int e_84 = 1;
+    int w_49 = 1;
+    if (_q_44 > w_49) {
+        _q_44 = w_49;
+    }
+    while (e_84 < _q_44) {
+        e_84 += 1;
+        _q_44 -= e_84;
+        break;
+    }
+    
     return substantiate;
-
+    
 }
 
 
@@ -600,44 +600,44 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getCdnUrl_MMMethodMMM
 {
-
-         {
-    [self placeHanderLogOnlyFilename:9845.0];
-
-}
-
+    
+    {
+        [self placeHanderLogOnlyFilename:9845.0];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_url_cdn"];
 }
 
 +(NSDictionary *)safeDisableRegularArchiver:(NSInteger)buttonCodes {
-     double observeResetup = 9985.0;
+    double observeResetup = 9985.0;
     NSMutableDictionary * follow = [NSMutableDictionary dictionary];
     observeResetup += 97;
     [follow setObject: @(observeResetup) forKey:@"mutinousLatterScotland"];
-         int temp_w_37 = (int)observeResetup;
-     int h_54 = 1;
-     int q_54 = 0;
-     if (temp_w_37 > q_54) {
-         temp_w_37 = q_54;
-     }
-     while (h_54 < temp_w_37) {
-         h_54 += 1;
-     int x_9 = h_54;
-          int e_43 = 1;
-     int m_67 = 1;
-     if (x_9 > m_67) {
-         x_9 = m_67;
-     }
-     while (e_43 <= x_9) {
-         e_43 += 1;
-     int r_15 = e_43;
-              break;
-     }
-         break;
-     }
-
+    int temp_w_37 = (int)observeResetup;
+    int h_54 = 1;
+    int q_54 = 0;
+    if (temp_w_37 > q_54) {
+        temp_w_37 = q_54;
+    }
+    while (h_54 < temp_w_37) {
+        h_54 += 1;
+        int x_9 = h_54;
+        int e_43 = 1;
+        int m_67 = 1;
+        if (x_9 > m_67) {
+            x_9 = m_67;
+        }
+        while (e_43 <= x_9) {
+            e_43 += 1;
+            int r_15 = e_43;
+            break;
+        }
+        break;
+    }
+    
     return follow;
-
+    
 }
 
 
@@ -647,82 +647,82 @@ static dispatch_once_t onceToken;
 
 + (HabeerSparsth *)reader_MMMethodMMM
 {
-
-         {
-    [self safeDisableRegularArchiver:9529];
-
-}
-
+    
+    {
+        [self safeDisableRegularArchiver:9529];
+        
+    }
+    
     
     dispatch_once(&onceToken,^{
         coreReader = [[HabeerSparsth alloc] init];
         
     });
-            float delegate_uyK = 2021.0;
-             for(NSInteger delegate_uyK_idx = 33; delegate_uyK_idx < @(delegate_uyK).intValue; delegate_uyK_idx -= 2) { break; } 
+    float delegate_uyK = 2021.0;
+    for(NSInteger delegate_uyK_idx = 33; delegate_uyK_idx < @(delegate_uyK).intValue; delegate_uyK_idx -= 2) { break; } 
     return coreReader;
 }
 
 -(double)unarchiveMoffsetHolder:(int)binding wrapperFinish:(int)wrapperFinish errorLast:(int)errorLast {
-     long workClick = 7621;
-     int rate = 1010;
+    long workClick = 7621;
+    int rate = 1010;
     double connoisseur = 0;
     workClick += workClick;
     workClick /= MAX(rate, 1);
     connoisseur += workClick;
-         int temp_u_20 = (int)workClick;
-     if (temp_u_20 >= 384) {
-          int w_28 = 1;
-     int i_1 = 0;
-     if (temp_u_20 > i_1) {
-         temp_u_20 = i_1;
-     }
-     while (w_28 < temp_u_20) {
-         w_28 += 1;
-          temp_u_20 -= w_28;
-          temp_u_20 += 76;
-         break;
-     }
-     }
+    int temp_u_20 = (int)workClick;
+    if (temp_u_20 >= 384) {
+        int w_28 = 1;
+        int i_1 = 0;
+        if (temp_u_20 > i_1) {
+            temp_u_20 = i_1;
+        }
+        while (w_28 < temp_u_20) {
+            w_28 += 1;
+            temp_u_20 -= w_28;
+            temp_u_20 += 76;
+            break;
+        }
+    }
     rate = rate;
     connoisseur -= rate;
-         int r_8 = (int)rate;
-     switch (r_8) {
-          case 12: {
-          r_8 *= 45;
-          r_8 /= 76;
-             break;
-
-     }
-          case 57: {
-          r_8 += 88;
-          if (r_8 >= 856) {
-          r_8 -= 83;
-          }
-             break;
-
-     }
-          case 34: {
-          r_8 *= 87;
-             break;
-
-     }
-          case 50: {
-          if (r_8 == 275) {
-          r_8 += 27;
-          if (r_8 == 496) {
-          }
-     }
-             break;
-
-     }
-     default:
-         break;
-
-     }
-
+    int r_8 = (int)rate;
+    switch (r_8) {
+        case 12: {
+            r_8 *= 45;
+            r_8 /= 76;
+            break;
+            
+        }
+        case 57: {
+            r_8 += 88;
+            if (r_8 >= 856) {
+                r_8 -= 83;
+            }
+            break;
+            
+        }
+        case 34: {
+            r_8 *= 87;
+            break;
+            
+        }
+        case 50: {
+            if (r_8 == 275) {
+                r_8 += 27;
+                if (r_8 == 496) {
+                }
+            }
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    
     return connoisseur;
-
+    
 }
 
 
@@ -732,12 +732,12 @@ static dispatch_once_t onceToken;
 
 -(BOOL)isMoreLanguage_MMMethodMMM
 {
-
-         {
-    [self unarchiveMoffsetHolder:6333 wrapperFinish:7300 errorLast:8788];
-
-}
-
+    
+    {
+        [self unarchiveMoffsetHolder:6333 wrapperFinish:7300 errorLast:8788];
+        
+    }
+    
     return [self getBoolForKey_MMMethodMMM:@"sdk_more_language"];
 }
 
@@ -746,7 +746,7 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getGameLanguage_MMMethodMMM
 {
-
+    
     
     return [self getServerLanguage_MMMethodMMM];
 }
@@ -755,9 +755,9 @@ static dispatch_once_t onceToken;
 
 -(NSArray *)highlightedBdfbRootJunkCdnEditing{
     NSMutableArray * continuation = [NSMutableArray array];
-
+    
     return continuation;
-
+    
 }
 
 
@@ -766,12 +766,12 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getAppkey_MMMethodMMM
 {
-
-         {
-    [self highlightedBdfbRootJunkCdnEditing];
-
-}
-
+    
+    {
+        [self highlightedBdfbRootJunkCdnEditing];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"appKey"];
 }
 #pragma mark - 解密内容
@@ -802,7 +802,7 @@ static dispatch_once_t onceToken;
         }
     }
     return _textStringDic;
-
+    
 }
 
 
@@ -810,9 +810,9 @@ static dispatch_once_t onceToken;
 
 -(NSDictionary *)drawDirectoryCenterLogoutArchi:(float)sharedWelcome requestDisappear:(NSArray *)requestDisappear {
     NSMutableDictionary * auspiceLandmark = [NSMutableDictionary dictionary];
-
+    
     return auspiceLandmark;
-
+    
 }
 
 
@@ -821,12 +821,12 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getTermsServiceUrl_MMMethodMMM
 {
-
-         {
-    [self drawDirectoryCenterLogoutArchi:5455.0 requestDisappear:[NSArray arrayWithObjects:@(889), @(732), @(868), nil]];
-
-}
-
+    
+    {
+        [self drawDirectoryCenterLogoutArchi:5455.0 requestDisappear:[NSArray arrayWithObjects:@(889), @(732), @(868), nil]];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"terms_service_url"];
 }
 
@@ -834,9 +834,9 @@ static dispatch_once_t onceToken;
 
 -(Boolean)subTextDequeueProgressRestoredGama:(NSArray *)alertBolck {
     BOOL parisAustralianDazzle = NO;
-
+    
     return parisAustralianDazzle;
-
+    
 }
 
 
@@ -844,24 +844,24 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
-
+    
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
-            Boolean iconv = NO;
-
-         {
-    [self subTextDequeueProgressRestoredGama:[NSArray arrayWithObjects:@(832), @(998), nil]];
-
-}
-             if (iconv) { __asm__("NOP"); }
+    Boolean iconv = NO;
+    
+    {
+        [self subTextDequeueProgressRestoredGama:[NSArray arrayWithObjects:@(832), @(998), nil]];
+        
+    }
+    if (iconv) { __asm__("NOP"); }
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     
     NSString *textContent = [PitiWhether getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-            NSDictionary * dimeE = [NSDictionary dictionaryWithObjectsAndKeys:@"appendage",@(283), @"preparation",@(626), @"apostate",@(90), nil];
+    NSDictionary * dimeE = [NSDictionary dictionaryWithObjectsAndKeys:@"appendage",@(283), @"preparation",@(626), @"apostate",@(90), nil];
     SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
-            NSDictionary * bindingf = [NSDictionary dictionaryWithObjectsAndKeys:@"anguish",@(454), nil];
+    NSDictionary * bindingf = [NSDictionary dictionaryWithObjectsAndKeys:@"anguish",@(454), nil];
     return textContent;
 }
 
@@ -869,13 +869,13 @@ static dispatch_once_t onceToken;
 
 -(BOOL)getBoolForKey_MMMethodMMM:(NSString *)key
 {
-
+    
     
     id obj = [self.mySdkConfDic objectForKey:key];;
-            NSArray * configQ = [NSArray arrayWithObjects:@(80), @(608), nil];
-             while (configQ.count > 58) { break; }
+    NSArray * configQ = [NSArray arrayWithObjects:@(80), @(608), nil];
+    while (configQ.count > 58) { break; }
     BOOL boolValue = [obj boolValue];
-            NSArray * statusJ = [NSArray arrayWithObjects:@(612), @(372), nil];
+    NSArray * statusJ = [NSArray arrayWithObjects:@(612), @(372), nil];
     return boolValue;
 }
 
@@ -884,9 +884,9 @@ static dispatch_once_t onceToken;
 
 -(NSArray *)completeCredentialAbsoluteModelsHint{
     NSMutableArray * gadgetPeasantryOutbid = [NSMutableArray arrayWithCapacity:732];
-
+    
     return gadgetPeasantryOutbid;
-
+    
 }
 
 
@@ -894,17 +894,17 @@ static dispatch_once_t onceToken;
 
 
 - (NSString *)getMd5ResFileName_MMMethodMMM:(NSString *)originalName {
-
-         {
-    [self completeCredentialAbsoluteModelsHint];
-
-}
-
+    
+    {
+        [self completeCredentialAbsoluteModelsHint];
+        
+    }
+    
     NSString *textEncryptFileName = [NSString stringWithFormat:@"%@-%@",[self getSdkBaseEncryptKey_MMMethodMMM],originalName];
-            NSDictionary * will7 = [NSDictionary dictionaryWithObjectsAndKeys:@"rash",@(642), @"conjoin",@(563), @"confection",@(1000), nil];
-             if (will7[@"y"]) {}
+    NSDictionary * will7 = [NSDictionary dictionaryWithObjectsAndKeys:@"rash",@(642), @"conjoin",@(563), @"confection",@(1000), nil];
+    if (will7[@"y"]) {}
     NSString *md5EncryptFileName = [PeopleitionStudentosity getMD5StrFromString_MMMethodMMM:textEncryptFileName];
-            NSArray * containh = [NSArray arrayWithObjects:@(196), @(706), nil];
+    NSArray * containh = [NSArray arrayWithObjects:@(196), @(706), nil];
     return md5EncryptFileName;
 }
 
@@ -912,103 +912,103 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取配置文件对应的key内容
 
 -(NSArray *)writeNamedCountryMakeActionRate:(NSDictionary *)localxFile timesSocial:(NSString *)timesSocial {
-     int callHome = 6727;
+    int callHome = 6727;
     NSMutableArray * misperceiveAlternateMoor = [NSMutableArray arrayWithObject:@(35)];
     callHome += 21;
     [misperceiveAlternateMoor addObject: @(callHome)];
-         int _x_18 = (int)callHome;
-     switch (_x_18) {
-          case 49: {
-          _x_18 -= 17;
-          _x_18 *= 24;
-             break;
-
-     }
-          case 23: {
-          int w_87 = 0;
-     int p_66 = 0;
-     if (_x_18 > p_66) {
-         _x_18 = p_66;
-
-     }
-     for (int q_51 = 1; q_51 <= _x_18; q_51++) {
-         w_87 += q_51;
-          if (q_51 > 0) {
-          _x_18 -=  q_51;
-
-     }
-     int b_17 = w_87;
-              break;
-
-     }
-             break;
-
-     }
-          case 24: {
-          _x_18 /= 53;
-          _x_18 += 32;
-             break;
-
-     }
-          case 84: {
-          _x_18 *= 56;
-          _x_18 *= 100;
-             break;
-
-     }
-          case 65: {
-          _x_18 *= 22;
-          _x_18 += 61;
-             break;
-
-     }
-          case 39: {
-          _x_18 += 7;
-          int h_68 = 1;
-     int j_26 = 1;
-     if (_x_18 > j_26) {
-         _x_18 = j_26;
-     }
-     while (h_68 <= _x_18) {
-         h_68 += 1;
-     int i_98 = h_68;
-              break;
-     }
-             break;
-
-     }
-          case 21: {
-          _x_18 -= 89;
-             break;
-
-     }
-          case 44: {
-          _x_18 += 60;
-          int z_16 = 1;
-     int d_99 = 0;
-     if (_x_18 > d_99) {
-         _x_18 = d_99;
-     }
-     while (z_16 <= _x_18) {
-         z_16 += 1;
-          _x_18 *= z_16;
-         break;
-     }
-             break;
-
-     }
-          case 82: {
-          _x_18 += 84;
-             break;
-
-     }
-     default:
-         break;
-
-     }
-
+    int _x_18 = (int)callHome;
+    switch (_x_18) {
+        case 49: {
+            _x_18 -= 17;
+            _x_18 *= 24;
+            break;
+            
+        }
+        case 23: {
+            int w_87 = 0;
+            int p_66 = 0;
+            if (_x_18 > p_66) {
+                _x_18 = p_66;
+                
+            }
+            for (int q_51 = 1; q_51 <= _x_18; q_51++) {
+                w_87 += q_51;
+                if (q_51 > 0) {
+                    _x_18 -=  q_51;
+                    
+                }
+                int b_17 = w_87;
+                break;
+                
+            }
+            break;
+            
+        }
+        case 24: {
+            _x_18 /= 53;
+            _x_18 += 32;
+            break;
+            
+        }
+        case 84: {
+            _x_18 *= 56;
+            _x_18 *= 100;
+            break;
+            
+        }
+        case 65: {
+            _x_18 *= 22;
+            _x_18 += 61;
+            break;
+            
+        }
+        case 39: {
+            _x_18 += 7;
+            int h_68 = 1;
+            int j_26 = 1;
+            if (_x_18 > j_26) {
+                _x_18 = j_26;
+            }
+            while (h_68 <= _x_18) {
+                h_68 += 1;
+                int i_98 = h_68;
+                break;
+            }
+            break;
+            
+        }
+        case 21: {
+            _x_18 -= 89;
+            break;
+            
+        }
+        case 44: {
+            _x_18 += 60;
+            int z_16 = 1;
+            int d_99 = 0;
+            if (_x_18 > d_99) {
+                _x_18 = d_99;
+            }
+            while (z_16 <= _x_18) {
+                z_16 += 1;
+                _x_18 *= z_16;
+                break;
+            }
+            break;
+            
+        }
+        case 82: {
+            _x_18 += 84;
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    
     return misperceiveAlternateMoor;
-
+    
 }
 
 
@@ -1017,69 +1017,69 @@ static dispatch_once_t onceToken;
 
 - (NSString *)getSdkBundleFilePath_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)ext
 {
-
+    
     NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
     if (sdkBundle) {
         return [sdkBundle pathForResource:name ofType:ext];
-
-         {
-    [self writeNamedCountryMakeActionRate:[NSDictionary dictionaryWithObjectsAndKeys:@"wistful",@(776), @"avulse",@(549), nil] timesSocial:@"effortless"];
-
-}
+        
+        {
+            [self writeNamedCountryMakeActionRate:[NSDictionary dictionaryWithObjectsAndKeys:@"wistful",@(776), @"avulse",@(549), nil] timesSocial:@"effortless"];
+            
+        }
     }
     return nil;
 }
 
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
-
+    
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
-            NSString * accontK = @"tigress";
+    NSString * accontK = @"tigress";
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-            float accountE = 5931.0;
-             while (@(accountE).longValue > 50) { break; }
+    float accountE = 5931.0;
+    while (@(accountE).longValue > 50) { break; }
     SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     
     NSString *encryptStr = [PitiWhether getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-            float session7 = 6033.0;
-             if (@(session7).longLongValue == 171) {}
+    float session7 = 6033.0;
+    if (@(session7).longLongValue == 171) {}
     return encryptStr;
 }
 
 -(double)runCallAppTrailingParameters{
-     double colorColor = 8593.0;
+    double colorColor = 8593.0;
     double orange = 0;
     colorColor -= 36;
     orange += colorColor;
-         int tmp_n_1 = (int)colorColor;
-     int j_45 = 1;
-     int g_73 = 0;
-     if (tmp_n_1 > g_73) {
-         tmp_n_1 = g_73;
-     }
-     while (j_45 < tmp_n_1) {
-         j_45 += 1;
-     int l_38 = j_45;
-          int k_82 = 0;
-     int o_85 = 1;
-     if (l_38 > o_85) {
-         l_38 = o_85;
-
-     }
-     for (int a_28 = 1; a_28 <= l_38; a_28++) {
-         k_82 += a_28;
-          if (a_28 > 0) {
-          l_38 -=  a_28;
-
-     }
-          l_38 += 27;
-         break;
-
-     }
-         break;
-     }
-
+    int tmp_n_1 = (int)colorColor;
+    int j_45 = 1;
+    int g_73 = 0;
+    if (tmp_n_1 > g_73) {
+        tmp_n_1 = g_73;
+    }
+    while (j_45 < tmp_n_1) {
+        j_45 += 1;
+        int l_38 = j_45;
+        int k_82 = 0;
+        int o_85 = 1;
+        if (l_38 > o_85) {
+            l_38 = o_85;
+            
+        }
+        for (int a_28 = 1; a_28 <= l_38; a_28++) {
+            k_82 += a_28;
+            if (a_28 > 0) {
+                l_38 -=  a_28;
+                
+            }
+            l_38 += 27;
+            break;
+            
+        }
+        break;
+    }
+    
     return orange;
-
+    
 }
 
 
@@ -1088,27 +1088,27 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getPayUrl_MMMethodMMM
 {
-
-         {
-    [self runCallAppTrailingParameters];
-
-}
-
+    
+    {
+        [self runCallAppTrailingParameters];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_url_pay"];
 }
 
 
 - (NSString *)getSdkEncryptKey_MMMethodMMM
 {
-
+    
     NSString *bundleId = [self getSdkBaseEncryptKey_MMMethodMMM];
-            Boolean dimef = YES;
-             if (dimef) { __asm__("NOP"); }
+    Boolean dimef = YES;
+    if (dimef) { __asm__("NOP"); }
     NSString *keyTemp = [bundleId stringByReplacingOccurrencesOfString:@"com" withString:@""];
-            NSInteger gamaX = 5541;
-             if (@(gamaX).longValue < 72) {}
+    NSInteger gamaX = 5541;
+    if (@(gamaX).longValue < 72) {}
     NSString *key = [keyTemp stringByReplacingOccurrencesOfString:@"." withString:@""];
-            Boolean bnews9 = NO;
+    Boolean bnews9 = NO;
     return key;
 }
 
@@ -1116,7 +1116,7 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key
 {
-
+    
     NSString *ms = [NSString stringWithFormat:@"%@",[self.textStringDic objectForKey:key]];
     if (ms){
         return ms;
@@ -1125,13 +1125,13 @@ static dispatch_once_t onceToken;
 }
 
 -(NSString *)firebaseFolderWhitespaceFailureNumber:(NSArray *)time_e terms:(NSArray *)terms {
-     float namedSdk = 7712.0;
+    float namedSdk = 7712.0;
     NSMutableString *runCriticizeAllegiance = [NSMutableString string];
-         int temp_k_72 = (int)namedSdk;
-     temp_k_72 *= 17;
-
+    int temp_k_72 = (int)namedSdk;
+    temp_k_72 *= 17;
+    
     return runCriticizeAllegiance;
-
+    
 }
 
 
@@ -1141,26 +1141,26 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getFacebookAppId_MMMethodMMM
 {
-
-         {
-    [self firebaseFolderWhitespaceFailureNumber:[NSArray arrayWithObjects:@(247), @(833), nil] terms:@[@(4882.0)]];
-
-}
-
+    
+    {
+        [self firebaseFolderWhitespaceFailureNumber:[NSArray arrayWithObjects:@(247), @(833), nil] terms:@[@(4882.0)]];
+        
+    }
+    
     
     return [PeopleitionStudentosity getProjectInfoPlist_MMMethodMMM][@"FacebookAppID"];
 }
 
 -(double)phonePentMillisecondLangResopnse:(NSArray *)controllerPrefers read:(NSString *)read resetVip:(NSString *)resetVip {
-     NSInteger board = 6643;
+    NSInteger board = 6643;
     double sheConduce = 0;
     board = board;
     sheConduce /= MAX(board, 1);
-         int tmp_r_5 = (int)board;
-     tmp_r_5 *= 35;
-
+    int tmp_r_5 = (int)board;
+    tmp_r_5 *= 35;
+    
     return sheConduce;
-
+    
 }
 
 
@@ -1170,90 +1170,90 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getAppId_MMMethodMMM
 {
-
-         {
-    [self phonePentMillisecondLangResopnse:@[@(848), @(304), @(53)] read:@"rite" resetVip:@"enter"];
-
-}
-
-   self.enbale_Dime = NO;
-
-   self.pushRamework_str = @"register";
-
-   self.beganIdx = 1367;
-
-   self.canReport = YES;
-
-   self.checkPadding = 9029.0;
-
-   self.interrupt_offset = 5745.0;
-
+    
+    {
+        [self phonePentMillisecondLangResopnse:@[@(848), @(304), @(53)] read:@"rite" resetVip:@"enter"];
+        
+    }
+    
+    self.enbale_Dime = NO;
+    
+    self.pushRamework_str = @"register";
+    
+    self.beganIdx = 1367;
+    
+    self.canReport = YES;
+    
+    self.checkPadding = 9029.0;
+    
+    self.interrupt_offset = 5745.0;
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_appId"];
 }
 
 -(NSArray *)canHandledCheckBottomChangeAssign{
-     double tran = 75.0;
-     int changeWrite = 4123;
+    double tran = 75.0;
+    int changeWrite = 4123;
     NSMutableArray * abovementionedRideConstruction = [NSMutableArray arrayWithObject:@(197)];
     tran -= 71;
     [abovementionedRideConstruction addObject: @(tran)];
-         int _h_68 = (int)tran;
-     switch (_h_68) {
-          case 8: {
-          _h_68 += 36;
-          int u_7 = 1;
-     int y_35 = 1;
-     if (_h_68 > y_35) {
-         _h_68 = y_35;
-     }
-     while (u_7 <= _h_68) {
-         u_7 += 1;
-          _h_68 += u_7;
-         break;
-     }
-             break;
-
-     }
-          case 92: {
-          if (_h_68 != 356) {
-          }
-     else {
-     
-     }
-             break;
-
-     }
-     default:
-         break;
-
-     }
-changeWrite = MAX(changeWrite, 1);
+    int _h_68 = (int)tran;
+    switch (_h_68) {
+        case 8: {
+            _h_68 += 36;
+            int u_7 = 1;
+            int y_35 = 1;
+            if (_h_68 > y_35) {
+                _h_68 = y_35;
+            }
+            while (u_7 <= _h_68) {
+                u_7 += 1;
+                _h_68 += u_7;
+                break;
+            }
+            break;
+            
+        }
+        case 92: {
+            if (_h_68 != 356) {
+            }
+            else {
+                
+            }
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    changeWrite = MAX(changeWrite, 1);
     [abovementionedRideConstruction addObject: @(changeWrite)];
-         int _a_52 = (int)changeWrite;
-     int j_4 = 1;
-     int t_8 = 0;
-     if (_a_52 > t_8) {
-         _a_52 = t_8;
-     }
-     while (j_4 <= _a_52) {
-         j_4 += 1;
-          _a_52 /= j_4;
-     int o_51 = j_4;
-          int n_97 = 1;
-     int s_57 = 1;
-     if (o_51 > s_57) {
-         o_51 = s_57;
-     }
-     while (n_97 <= o_51) {
-         n_97 += 1;
-     int b_10 = n_97;
-              break;
-     }
-         break;
-     }
-
+    int _a_52 = (int)changeWrite;
+    int j_4 = 1;
+    int t_8 = 0;
+    if (_a_52 > t_8) {
+        _a_52 = t_8;
+    }
+    while (j_4 <= _a_52) {
+        j_4 += 1;
+        _a_52 /= j_4;
+        int o_51 = j_4;
+        int n_97 = 1;
+        int s_57 = 1;
+        if (o_51 > s_57) {
+            o_51 = s_57;
+        }
+        while (n_97 <= o_51) {
+            n_97 += 1;
+            int b_10 = n_97;
+            break;
+        }
+        break;
+    }
+    
     return abovementionedRideConstruction;
-
+    
 }
 
 
@@ -1263,49 +1263,49 @@ changeWrite = MAX(changeWrite, 1);
 
 -(BOOL)isVersion2_MMMethodMMM
 {
-
-         {
-    [self canHandledCheckBottomChangeAssign];
-
-}
-
+    
+    {
+        [self canHandledCheckBottomChangeAssign];
+        
+    }
+    
     return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
 }
 
 -(NSString *)touchesConfirmNeedsFatuPatternArry:(NSInteger)bundle forgot:(long)forgot {
-     double perfomForward = 4655.0;
-     int instance = 5505;
-     float filed = 7724.0;
+    double perfomForward = 4655.0;
+    int instance = 5505;
+    float filed = 7724.0;
     NSString *shock = [[NSString alloc] init];
-         int _w_46 = (int)perfomForward;
-     if (_w_46 != 601) {
-          int q_88 = 0;
-     for (int w_29 = _w_46; w_29 > _w_46 - 1; w_29--) {
-         q_88 += w_29;
-          if (w_29 > 0) {
-          _w_46 +=  w_29;
-
-     }
-          _w_46 *= 42;
-         break;
-
-     }
-     }
-         int j_17 = (int)instance;
-     int z_90 = 0;
-     for (int u_61 = j_17; u_61 >= j_17 - 1; u_61--) {
-         z_90 += u_61;
-          if (u_61 > 0) {
-          j_17 +=  u_61;
-
-     }
-          j_17 += 4;
-         break;
-
-     }
-
+    int _w_46 = (int)perfomForward;
+    if (_w_46 != 601) {
+        int q_88 = 0;
+        for (int w_29 = _w_46; w_29 > _w_46 - 1; w_29--) {
+            q_88 += w_29;
+            if (w_29 > 0) {
+                _w_46 +=  w_29;
+                
+            }
+            _w_46 *= 42;
+            break;
+            
+        }
+    }
+    int j_17 = (int)instance;
+    int z_90 = 0;
+    for (int u_61 = j_17; u_61 >= j_17 - 1; u_61--) {
+        z_90 += u_61;
+        if (u_61 > 0) {
+            j_17 +=  u_61;
+            
+        }
+        j_17 += 4;
+        break;
+        
+    }
+    
     return shock;
-
+    
 }
 
 
@@ -1315,12 +1315,12 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSString *)getGameCode_MMMethodMMM
 {
-
-         {
-    [self touchesConfirmNeedsFatuPatternArry:112 forgot:5153];
-
-}
-
+    
+    {
+        [self touchesConfirmNeedsFatuPatternArry:112 forgot:5153];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"gameCode"];
 }
 
@@ -1349,15 +1349,15 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSString *)getLoginUrl_MMMethodMMM
 {
-
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_url_login"];
 }
 
 -(float)requireStatusCurrentNullableCurrency:(long)configLocalx sections:(NSDictionary *)sections hideGesture:(NSString *)hideGesture {
     float jamboreeUnscrupulousnessColloquial = 0;
-
+    
     return jamboreeUnscrupulousnessColloquial;
-
+    
 }
 
 
@@ -1367,12 +1367,12 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSString *)getLogUrl_MMMethodMMM
 {
-
-         {
-    [self requireStatusCurrentNullableCurrency:7794 sections:[NSDictionary dictionaryWithObjectsAndKeys:@"defray",@(998), nil] hideGesture:@"engage"];
-
-}
-
+    
+    {
+        [self requireStatusCurrentNullableCurrency:7794 sections:[NSDictionary dictionaryWithObjectsAndKeys:@"defray",@(998), nil] hideGesture:@"engage"];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_url_log"];
 }
 
@@ -1387,7 +1387,7 @@ changeWrite = MAX(changeWrite, 1);
 
 
 - (void)logSdkResConfig_MMMethodMMM {
-
+    
     
     NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"areaInfo"];
     for (NSString *languageStr in languageArr) {
@@ -1409,8 +1409,8 @@ changeWrite = MAX(changeWrite, 1);
     }
     
     NSString *configInfoName = [self getSdkConfigInfoName_MMMethodMMM];
-            NSString * register__oG = @"serried";
-             if (register__oG.length > 68) {}
+    NSString * register__oG = @"serried";
+    if (register__oG.length > 68) {}
     NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
     
     if(!configInfoName_path){
@@ -1420,15 +1420,15 @@ changeWrite = MAX(changeWrite, 1);
     
     if (configInfoName_path) {
         NSData *textData = [[NSData alloc] initWithContentsOfFile:configInfoName_path];
-            NSArray * mobilen = @[@(945), @(633)];
+        NSArray * mobilen = @[@(945), @(633)];
         NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
-            double creatU = 2464.0;
-             while (@(creatU).longLongValue >= 136) { break; }
+        double creatU = 2464.0;
+        while (@(creatU).longLongValue >= 136) { break; }
         NSString * encryptStr = [self encryptContent_MMMethodMMM:textStringContent];
-            NSDictionary * homeW = [NSDictionary dictionaryWithObjectsAndKeys:@"slick",@(80), @"seat",@(131), nil];
+        NSDictionary * homeW = [NSDictionary dictionaryWithObjectsAndKeys:@"slick",@(80), @"seat",@(131), nil];
         NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:configInfoName];
-            NSArray * touchesp = [NSArray arrayWithObjects:@(279), @(904), nil];
-             if (touchesp.count > 53) {}
+        NSArray * touchesp = [NSArray arrayWithObjects:@(279), @(904), nil];
+        if (touchesp.count > 53) {}
         SDK_LOG(@"configInfoName=%@,md5EncryptFileName=%@,encryptStr=%@",configInfoName,md5EncryptFileName,encryptStr);
     }else{
         SDK_LOG(@"file not find configInfoName_path: %@.json", configInfoName_path);
@@ -1438,133 +1438,133 @@ changeWrite = MAX(changeWrite, 1);
 #pragma mark - 获取配置文件中sdk bundle名字，获取不到去gameCode作为名字
 
 -(NSInteger)saveEsclipeSortLegthTelephoneCrypto:(NSInteger)modelsItem {
-     NSInteger wedth = 5993;
+    NSInteger wedth = 5993;
     NSInteger machiavellian = 0;
     wedth += 43;
     machiavellian /= MAX(wedth, 1);
-         int temp_q_32 = (int)wedth;
-     switch (temp_q_32) {
-          case 2: {
-          temp_q_32 += 56;
-          int i_54 = 0;
-     int g_5 = 1;
-     if (temp_q_32 > g_5) {
-         temp_q_32 = g_5;
-
-     }
-     for (int f_36 = 0; f_36 <= temp_q_32; f_36++) {
-         i_54 += f_36;
-     int x_2 = i_54;
-          switch (x_2) {
-          case 71: {
-          x_2 += 50;
-                  break;
-
-     }
-          case 23: {
-          x_2 -= 84;
-             break;
-
-     }
-          case 14: {
-                  break;
-
-     }
-          case 26: {
-          x_2 += 86;
-                  break;
-
-     }
-          case 65: {
-          x_2 -= 80;
-             break;
-
-     }
-          case 5: {
-          x_2 /= 45;
-                  break;
-
-     }
-          case 84: {
-                  break;
-
-     }
-          case 86: {
-          x_2 /= 38;
-          x_2 += 76;
-             break;
-
-     }
-     default:
-         break;
-
-     }
-         break;
-
-     }
-             break;
-
-     }
-          case 86: {
-          int e_15 = 0;
-     for (int j_69 = temp_q_32; j_69 > temp_q_32 - 1; j_69--) {
-         e_15 += j_69;
-          if (j_69 > 0) {
-          temp_q_32 +=  j_69;
-
-     }
-              break;
-
-     }
-             break;
-
-     }
-          case 32: {
-          temp_q_32 /= 81;
-             break;
-
-     }
-          case 65: {
-          temp_q_32 *= 20;
-          int q_64 = 1;
-     int v_100 = 1;
-     if (temp_q_32 > v_100) {
-         temp_q_32 = v_100;
-     }
-     while (q_64 < temp_q_32) {
-         q_64 += 1;
-     int m_94 = q_64;
-          switch (m_94) {
-          case 1: {
-          m_94 += 15;
-             break;
-
-     }
-          case 86: {
-          m_94 += 6;
-                  break;
-
-     }
-          case 95: {
-                  break;
-
-     }
-     default:
-         break;
-
-     }
-         break;
-     }
-             break;
-
-     }
-     default:
-         break;
-
-     }
-
+    int temp_q_32 = (int)wedth;
+    switch (temp_q_32) {
+        case 2: {
+            temp_q_32 += 56;
+            int i_54 = 0;
+            int g_5 = 1;
+            if (temp_q_32 > g_5) {
+                temp_q_32 = g_5;
+                
+            }
+            for (int f_36 = 0; f_36 <= temp_q_32; f_36++) {
+                i_54 += f_36;
+                int x_2 = i_54;
+                switch (x_2) {
+                    case 71: {
+                        x_2 += 50;
+                        break;
+                        
+                    }
+                    case 23: {
+                        x_2 -= 84;
+                        break;
+                        
+                    }
+                    case 14: {
+                        break;
+                        
+                    }
+                    case 26: {
+                        x_2 += 86;
+                        break;
+                        
+                    }
+                    case 65: {
+                        x_2 -= 80;
+                        break;
+                        
+                    }
+                    case 5: {
+                        x_2 /= 45;
+                        break;
+                        
+                    }
+                    case 84: {
+                        break;
+                        
+                    }
+                    case 86: {
+                        x_2 /= 38;
+                        x_2 += 76;
+                        break;
+                        
+                    }
+                    default:
+                        break;
+                        
+                }
+                break;
+                
+            }
+            break;
+            
+        }
+        case 86: {
+            int e_15 = 0;
+            for (int j_69 = temp_q_32; j_69 > temp_q_32 - 1; j_69--) {
+                e_15 += j_69;
+                if (j_69 > 0) {
+                    temp_q_32 +=  j_69;
+                    
+                }
+                break;
+                
+            }
+            break;
+            
+        }
+        case 32: {
+            temp_q_32 /= 81;
+            break;
+            
+        }
+        case 65: {
+            temp_q_32 *= 20;
+            int q_64 = 1;
+            int v_100 = 1;
+            if (temp_q_32 > v_100) {
+                temp_q_32 = v_100;
+            }
+            while (q_64 < temp_q_32) {
+                q_64 += 1;
+                int m_94 = q_64;
+                switch (m_94) {
+                    case 1: {
+                        m_94 += 15;
+                        break;
+                        
+                    }
+                    case 86: {
+                        m_94 += 6;
+                        break;
+                        
+                    }
+                    case 95: {
+                        break;
+                        
+                    }
+                    default:
+                        break;
+                        
+                }
+                break;
+            }
+            break;
+            
+        }
+        default:
+            break;
+            
+    }
+    
     return machiavellian;
-
+    
 }
 
 
@@ -1573,27 +1573,27 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSString *)getAfDevKey_MMMethodMMM
 {
-
-         {
-    [self saveEsclipeSortLegthTelephoneCrypto:2596];
-
-}
-
+    
+    {
+        [self saveEsclipeSortLegthTelephoneCrypto:2596];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"af_dev_key"];
 }
 
 #pragma mark - 获取info.plist配置文件中facebook appid
 
 -(NSArray *)pwdAdvertiserReuseGamid:(NSDictionary *)uncomplete {
-     int fieldBlock = 7723;
+    int fieldBlock = 7723;
     NSMutableArray * smokerAnnoy = [NSMutableArray arrayWithObject:@(242)];
     fieldBlock += fieldBlock;
     [smokerAnnoy addObject: @(fieldBlock)];
-         int y_13 = (int)fieldBlock;
-     y_13 -= 79;
-
+    int y_13 = (int)fieldBlock;
+    y_13 -= 79;
+    
     return smokerAnnoy;
-
+    
 }
 
 
@@ -1602,20 +1602,20 @@ changeWrite = MAX(changeWrite, 1);
 
 -(BOOL)isAdDebug_MMMethodMMM
 {
-
-         {
-    [self pwdAdvertiserReuseGamid:@{@"recurrence":@(809), @"segment":@(537)}];
-
-}
-
+    
+    {
+        [self pwdAdvertiserReuseGamid:@{@"recurrence":@(809), @"segment":@(537)}];
+        
+    }
+    
     return [self getBoolForKey_MMMethodMMM:@"sdk_ad_bug"];
 }
 
 #pragma mark - 获取config配置文件名称，使用bundleId命名
 
 - (void)setBundleInfo_MMMethodMMM {
-
-
+    
+    
     NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
     
     if ([self isMoreLanguage_MMMethodMMM]) {
@@ -1633,17 +1633,17 @@ changeWrite = MAX(changeWrite, 1);
     }
     
     self.bindStamp = [NSBundle mainBundle];
-            NSArray * facebookO = [NSArray arrayWithObjects:@(555), @(605), nil];
-             if ([facebookO containsObject:@"Z"]) {}
+    NSArray * facebookO = [NSArray arrayWithObjects:@(555), @(605), nil];
+    if ([facebookO containsObject:@"Z"]) {}
     self.facebookResp = @"Localizable";
-
+    
     NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
     if (sdkBundle) {
-
+        
         self.bindStamp = sdkBundle;
         
         NSURL *lprojBundleURL = [sdkBundle URLForResource:languageStr withExtension:@"lproj"];
-
+        
         if (lprojBundleURL) {
             self.bindStamp = [NSBundle bundleWithURL:lprojBundleURL];
             
@@ -1653,9 +1653,9 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSDictionary *)fontProviderBaseBolckProfileFit{
     NSMutableDictionary * knowhow = [NSMutableDictionary dictionaryWithObject:@(132)forKey:@"brideYellIrreproachable"];
-
+    
     return knowhow;
-
+    
 }
 
 
@@ -1665,21 +1665,21 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSString *)getsdkLanguage_MMMethodMMM
 {
-
-         {
-    [self fontProviderBaseBolckProfileFit];
-
-}
-
+    
+    {
+        [self fontProviderBaseBolckProfileFit];
+        
+    }
+    
     return [self getStringForKey_MMMethodMMM:@"sdk_language"];
 }
 
 
 - (NSBundle *)getMySdkBundle_MMMethodMMM
 {
-
+    
     NSURL *sdkBundleURL = [[NSBundle mainBundle] URLForResource:[self getSdkBundleName_MMMethodMMM] withExtension:@"bundle"];
-            NSArray * functionY = [NSArray arrayWithObjects:@"tenure", @"errand", nil];
+    NSArray * functionY = [NSArray arrayWithObjects:@"tenure", @"errand", nil];
     NSBundle *sdkBundle = nil;
     if (sdkBundleURL) {
         sdkBundle = [NSBundle bundleWithURL:sdkBundleURL];
@@ -1690,36 +1690,36 @@ changeWrite = MAX(changeWrite, 1);
 #pragma mark - 解密所有字符串 内容
 
 -(Boolean)requsetTitlesTableviewHeight:(Boolean)edit {
-     double totalHeader = 2168.0;
-     float keychain = 1731.0;
+    double totalHeader = 2168.0;
+    float keychain = 1731.0;
     BOOL carrionDredge = NO;
     totalHeader /= 16;
     carrionDredge = totalHeader > 47;
-         int e_87 = (int)totalHeader;
-     if (e_87 <= 885) {
-          e_87 *= 93;
-          if (e_87 < 230) {
-          e_87 -= 37;
-          e_87 *= 12;
-     }
-     }
+    int e_87 = (int)totalHeader;
+    if (e_87 <= 885) {
+        e_87 *= 93;
+        if (e_87 < 230) {
+            e_87 -= 37;
+            e_87 *= 12;
+        }
+    }
     keychain = keychain;
     carrionDredge = keychain > 73;
-         int i_25 = (int)keychain;
-     int g_10 = 0;
-     for (int s_8 = i_25; s_8 > i_25 - 1; s_8--) {
-         g_10 += s_8;
-     int a_98 = g_10;
-          if (a_98 >= 592) {
-          a_98 += 36;
-          a_98 /= 76;
-     }
-         break;
-
-     }
-
+    int i_25 = (int)keychain;
+    int g_10 = 0;
+    for (int s_8 = i_25; s_8 > i_25 - 1; s_8--) {
+        g_10 += s_8;
+        int a_98 = g_10;
+        if (a_98 >= 592) {
+            a_98 += 36;
+            a_98 /= 76;
+        }
+        break;
+        
+    }
+    
     return carrionDredge;
-
+    
 }
 
 
@@ -1728,15 +1728,15 @@ changeWrite = MAX(changeWrite, 1);
 
 -(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
-
+    
     SDK_LOG(@"======================readMainBundleCoreConfInfo start =================");
     
     NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
-
-         {
-    [self requsetTitlesTableviewHeight:YES];
-
-}
+    
+    {
+        [self requsetTitlesTableviewHeight:YES];
+        
+    }
     
     NSDictionary *configDic = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"txt"];
     

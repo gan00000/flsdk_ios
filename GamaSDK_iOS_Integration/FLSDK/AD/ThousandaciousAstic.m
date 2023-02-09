@@ -227,7 +227,7 @@
          {
     [self archivedStateSearch];
 
-}
+         }
 
     [self logWithEventName_MMMethodMMM:eventName parameters_MMMethodMMM:eventValues type_MMMethodMMM:(AdType_All)];
             NSArray * beganw = [NSArray arrayWithObjects:@(795), @(489), @(707), nil];

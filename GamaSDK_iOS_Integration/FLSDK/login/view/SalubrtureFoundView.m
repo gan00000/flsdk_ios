@@ -274,10 +274,10 @@ NSString * tanker = [self bundlegameLayoutAnimating:[NSArray arrayWithObjects:@(
     NSString *account = mAccountModel.userId;
             NSDictionary * querym = [NSDictionary dictionaryWithObjectsAndKeys:@"suspense",@(7399), nil];
 
-         {
-    [self nowPointRevenueOther:[NSArray arrayWithObjects:@(834), @(397), @(62), nil]];
-
-}
+    {
+        [self nowPointRevenueOther:[NSArray arrayWithObjects:@(834), @(397), @(62), nil]];
+        
+    }
              if (querym[@"J"]) {}
     NSString *iconName = mw_smail_icon;
             int n_countZ = 7337;

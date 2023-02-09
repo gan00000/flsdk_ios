@@ -73,10 +73,10 @@
 
 + (void)signOut_MMMethodMMM {
 
-         {
-    [self whiteArchiNoticeMonthsDomainsRegular:@[@(548), @(798)] began:[NSArray arrayWithObjects:@(746), @(489), @(753), nil]];
+                 {
+            [self whiteArchiNoticeMonthsDomainsRegular:@[@(548), @(798)] began:[NSArray arrayWithObjects:@(746), @(489), @(753), nil]];
 
-}
+        }
 
     
     

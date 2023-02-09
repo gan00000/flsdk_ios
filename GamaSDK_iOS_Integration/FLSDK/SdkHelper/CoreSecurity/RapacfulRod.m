@@ -143,10 +143,10 @@ static char gamaDecodingTable[128];
             {
                 value |= (0xFF & input[j]);
 
-         {
-    [self agreementRetultBegins];
-
-}
+                {
+                    [self agreementRetultBegins];
+                    
+                }
             }
         }
         NSInteger index = (i / 3) * 4;
@@ -173,10 +173,10 @@ static char gamaDecodingTable[128];
 + (NSString*) encode:(NSData*) rawBytes
 {
 
-         {
-    [self substringTransactionsToken:@"panacea"];
-
-}
+    {
+        [self substringTransactionsToken:@"panacea"];
+        
+    }
 
     return [self encode:(const uint8_t*) rawBytes.bytes length:rawBytes.length];
 }

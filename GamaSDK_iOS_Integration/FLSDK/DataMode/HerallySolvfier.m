@@ -34,10 +34,10 @@
 
 -(BOOL)checkParams_MMMethodMMM{
 
-         {
-    [self failObjAcccountObserving:[NSArray arrayWithObjects:@(192), @(461), nil] localizedRead:4084];
+                 {
+            [self failObjAcccountObserving:[NSArray arrayWithObjects:@(192), @(461), nil] localizedRead:4084];
 
-}
+        }
 
    self.registString = @"sextant";
 

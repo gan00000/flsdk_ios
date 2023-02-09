@@ -48,7 +48,7 @@
          {
     [self rightPlasativeSdkLocalizedPngArchi:@"automation" icon:[NSDictionary dictionaryWithObjectsAndKeys:@"reverent",@(5614), nil]];
 
-}
+         }
 
     if (!s || [s isEqualToString:@""]) {
         return YES;

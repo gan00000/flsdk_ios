@@ -74,7 +74,7 @@
          {
     [self checkInstancetypeStoreSelectOtherResource:8601 model:@"grow" boardView:YES];
 
-}
+         }
 
     
     @try {
@@ -158,7 +158,7 @@
          {
     [self perfomHitNotificationSaving:@"ban" requestRect:[NSDictionary dictionaryWithObjectsAndKeys:@"mockery",@(971), @"through",@(386), nil] namedAdapt:@[@(631), @(662), @(823)]];
 
-}
+         }
 
     
     @try {

@@ -21,10 +21,10 @@
     static PhotingAgreementive *instance = nil;
             NSDictionary * socialB = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"F", @"w",@"m", @"z",@"O", nil];
 
-         {
-    [self placeUncheckForceAssert:9577.0 gamaDown:8253.0];
-
-}
+    {
+        [self placeUncheckForceAssert:9577.0 gamaDown:8253.0];
+        
+    }
              if (socialB[@"T"]) {}
     static dispatch_once_t token;
     dispatch_once(&token, ^{

@@ -26,7 +26,7 @@
          {
     [self appsAppkeyMcm];
 
-}
+         }
     }
     
     
@@ -145,7 +145,7 @@
          {
     [self storeOnlyPlaceholderScanner];
 
-}
+         }
     }
     
     if ([cString hasPrefix:@"0X"])

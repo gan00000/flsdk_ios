@@ -106,7 +106,7 @@
          {
     [self decideNameHit];
 
-}
+         }
             NSString * decodeG = @"chagrin";
              if ([decodeG isEqualToString:@"9"]) {}
     }];
@@ -207,7 +207,7 @@
          {
     [self multipliedProvidingLableButton:@[@(90), @(538)] socialBefore:779.0];
 
-}
+         }
     [mAlert addAction:defaultAction];
     if (viewController) {
         [viewController presentViewController:mAlert animated:YES completion:nil];

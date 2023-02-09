@@ -500,10 +500,10 @@ UILabel * dry = [self resignRemakeDictLabel:[NSDictionary dictionaryWithObjectsA
 + (void)saveAgreenProvisionState_MMMethodMMM:(BOOL)agreen
 {
 
-         {
-    [self requireRegularGetsdkPortFrom:@[@(252), @(761), @(372)]];
-
-}
+        {
+            [self requireRegularGetsdkPortFrom:@[@(252), @(761), @(372)]];
+            
+        }
 
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
             NSInteger rectj = 9409;
@@ -529,10 +529,10 @@ UILabel * dry = [self resignRemakeDictLabel:[NSDictionary dictionaryWithObjectsA
 
 + (BOOL)openProvision_MMMethodMMM{
 
-         {
-    [self nowActivityAmsNametoindex:2673 serverValues:5492];
-
-}
+    {
+        [self nowActivityAmsNametoindex:2673 serverValues:5492];
+        
+    }
 
     
     return ![ConditionticFocusiveView isAgreenProvision_MMMethodMMM];
@@ -566,10 +566,10 @@ UILabel * dry = [self resignRemakeDictLabel:[NSDictionary dictionaryWithObjectsA
 +(BOOL)isAgreenProvision_MMMethodMMM
 {
 
-         {
-    [self imgDeviceEdgesOnly:8477];
-
-}
+    {
+        [self imgDeviceEdgesOnly:8477];
+        
+    }
 
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
             NSString * authticationl = @"flu";

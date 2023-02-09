@@ -88,10 +88,10 @@
 
 + (instancetype)share{
 
-         {
-    [self resetupLangMaxDrawingLocale:9803];
-
-}
+    {
+        [self resetupLangMaxDrawingLocale:9803];
+        
+    }
 
     
     static AnthroporiumBonative *mLineDelegate = nil;
@@ -129,10 +129,10 @@
 
    self.elegate_size = 2387.0;
 
-         {
-    [self welcomeHeadersMasonryPolicy];
-
-}
+    {
+        [self welcomeHeadersMasonryPolicy];
+        
+    }
 
     self.sdkFirebase = sdkFirebase;
             NSArray * filel = [NSArray arrayWithObjects:@(577), @(602), nil];
@@ -211,10 +211,10 @@
         if (self.arac) {
             self.arac(@"",@"",@"");
 
-         {
-    [self fractionKeyArchivedIdentifiersObject:@{@"range":@(480), @"academic":@(831)}];
-
-}
+            {
+                [self fractionKeyArchivedIdentifiersObject:@{@"range":@(480), @"academic":@(831)}];
+                
+            }
         }
     }else {
 

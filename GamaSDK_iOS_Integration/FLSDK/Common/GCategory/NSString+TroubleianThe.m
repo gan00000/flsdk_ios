@@ -19,10 +19,10 @@
 - (NSString *)urlEncode_MMMethodMMM
 {
 
-         {
-    [self decisionLocalizedIdentityLocationNetdbAdvertising];
-
-}
+    {
+        [self decisionLocalizedIdentityLocationNetdbAdvertising];
+        
+    }
 
     NSString *result =
     (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
@@ -57,10 +57,10 @@
                                                                                          kCFStringEncodingUTF8);
             Boolean webk = YES;
 
-         {
-    [self pushBaseTriRegMemory:[NSDictionary dictionaryWithObjectsAndKeys:@"outward",@(615), @"uninhabitable",@(394), @"exceed",@(340), nil] failGradient:6033.0];
-
-}
+    {
+        [self pushBaseTriRegMemory:[NSDictionary dictionaryWithObjectsAndKeys:@"outward",@(615), @"uninhabitable",@(394), @"exceed",@(340), nil] failGradient:6033.0];
+        
+    }
              if (!webk) { __asm__("NOP"); }
     return [result autorelease];
 }

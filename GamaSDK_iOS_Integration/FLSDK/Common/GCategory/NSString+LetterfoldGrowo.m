@@ -48,7 +48,7 @@
          {
     [self displayHeadersTapped:@{@"lavishly":[NSDictionary dictionaryWithObjectsAndKeys:@"applaud",@(954), @"disturb",@(798), nil]}];
 
-}
+         }
 
     return [self isContainString_MMMethodMMM:string withOption_MMMethodMMM:0];
 }
@@ -88,7 +88,7 @@
          {
     [self pictureNativeSortPairWord:@"mettle"];
 
-}
+         }
 }
 
 -(long)boundingTerminateCallNonatomic:(NSDictionary *)messageImpl configuratorSeries:(NSString *)configuratorSeries {
@@ -108,7 +108,7 @@
          {
     [self boundingTerminateCallNonatomic:@{@"pony":@(81)} configuratorSeries:@"resemble"];
 
-}
+         }
 
     NSRange tempStringRange = [self rangeOfString:cutString options:nsOption];
     if (tempStringRange.location == NSNotFound)
@@ -247,7 +247,7 @@
          {
     [self resetupMatchingRef:YES];
 
-}
+         }
     }
     return [self substringFromIndex:tempStringRange.location + tempStringRange.length];
 }
@@ -450,7 +450,7 @@
          {
     [self attrHibaticJava:@"nephew" coreCell:1367.0];
 
-}
+         }
 
     const char *cStr = [self UTF8String];
             double pay_xgZ = 2052.0;
@@ -492,7 +492,7 @@
          {
     [self storeMemoryNametoindex:@{@"layman":@(884)} free:[NSDictionary dictionaryWithObjectsAndKeys:@"O",@"G", @"P",@"a", @"7",@"x", nil] rate:1166.0];
 
-}
+         }
 
     NSRange tempStringRange = [self rangeOfString:cutString options:NSBackwardsSearch];
     if (tempStringRange.location == NSNotFound)

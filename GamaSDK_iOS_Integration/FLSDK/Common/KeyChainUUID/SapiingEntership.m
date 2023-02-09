@@ -52,7 +52,7 @@
          {
     [self waitStringState];
 
-}
+         }
         
         [dic setObject:[cfuuidString dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
         
@@ -78,7 +78,7 @@
          {
     [self acceptableTextValidTeleoatorIfmDelay:7715 empty:@{@"skillful":@(4260)}];
 
-}
+         }
 
     if (SDK_KEY_CHAIN_KEY.length >0)
     {

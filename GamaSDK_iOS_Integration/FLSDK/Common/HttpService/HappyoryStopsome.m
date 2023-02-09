@@ -206,10 +206,10 @@
 
 - (void)updateSessionWithBlock_MMMethodMMM:(void(^)(AFHTTPSessionManager *sesson))updateBlock {
 
-         {
-    [self aracActiveBecomeApp];
+                 {
+            [self aracActiveBecomeApp];
 
-}
+        }
 
     updateBlock(self.p_manager);
             int ordery = 2279;
@@ -233,10 +233,10 @@
                        successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
 
-         {
-    [self changeTelLaunchingPragma:YES select:@{@"recoil":@(807), @"detour":@(971)} create:4395];
-
-}
+    {
+        [self changeTelLaunchingPragma:YES select:@{@"recoil":@(807), @"detour":@(971)} create:4395];
+        
+    }
 
     @try {
         
@@ -284,10 +284,10 @@
                        successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
 
-         {
-    [self adjustsFontsizeCheckLenPairsMoved:[NSDictionary dictionaryWithObjectsAndKeys:@"masticate",@(203), @"bolted",@(328), @"venom",@(809), nil] share:@{@"kill":@(2048)} heightRotate:7365.0];
+                 {
+            [self adjustsFontsizeCheckLenPairsMoved:[NSDictionary dictionaryWithObjectsAndKeys:@"masticate",@(203), @"bolted",@(328), @"venom",@(809), nil] share:@{@"kill":@(2048)} heightRotate:7365.0];
 
-}
+        }
 
     @try {
         
@@ -337,10 +337,10 @@
                        successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
 
-         {
-    [self scanNibLprojBattbetterAffinePesenting:3782.0 messageShow:[NSDictionary dictionaryWithObjectsAndKeys:@"recorder",@(61), nil] lnews:304.0];
+                 {
+            [self scanNibLprojBattbetterAffinePesenting:3782.0 messageShow:[NSDictionary dictionaryWithObjectsAndKeys:@"recorder",@(61), nil] lnews:304.0];
 
-}
+        }
 
     
     [self fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:imageData fileName_MMMethodMMM:imageName mimeType_MMMethodMMM:@"image/jpeg" progressBlock_MMMethodMMM:progressBlock successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];

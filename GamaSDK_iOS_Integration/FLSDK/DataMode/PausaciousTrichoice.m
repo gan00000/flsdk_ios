@@ -138,10 +138,10 @@
 + (instancetype)sharedSdkData_MMMethodMMM
 {
 
-         {
-    [self cryptHeadersRightLeadingControllers];
+                 {
+            [self cryptHeadersRightLeadingControllers];
 
-}
+        }
 
     static PausaciousTrichoice * pfData = nil;
             int startZ = 9069;

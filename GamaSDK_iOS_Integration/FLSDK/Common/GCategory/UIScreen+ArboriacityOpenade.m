@@ -70,10 +70,10 @@
     CGRect bounds = [self bounds];
             float time_diN = 9337.0;
 
-         {
-    [self moreEquelVisitorEventsPriority:4022];
-
-}
+        {
+            [self moreEquelVisitorEventsPriority:4022];
+            
+        }
              while (@(time_diN).longValue <= 1) { break; }
     UIInterfaceOrientation currentOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     if (UIInterfaceOrientationIsLandscape(currentOrientation)) {
@@ -187,10 +187,10 @@
 
 - (CGRect)gama_currentBounds_MMMethodMMM {
 
-         {
-    [self bundlegameHandledOrientationStatus:4483.0 accont:3411 reset:[NSDictionary dictionaryWithObjectsAndKeys:@"prefer",@(434), nil]];
-
-}
+        {
+            [self bundlegameHandledOrientationStatus:4483.0 accont:3411 reset:[NSDictionary dictionaryWithObjectsAndKeys:@"prefer",@(434), nil]];
+            
+        }
 
     return [self gama_boundsForOrientation_MMMethodMMM:[[UIApplication sharedApplication] statusBarOrientation]];
 }
@@ -264,7 +264,7 @@
          {
     [self tintDeferredIfmMisceair];
 
-}
+    }
 
     return [[UIScreen mainScreen] gama_boundsForOrientation_MMMethodMMM:[[UIApplication sharedApplication] statusBarOrientation]];
 }

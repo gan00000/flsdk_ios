@@ -54,10 +54,10 @@
 
 +(CAGradientLayer *)createGradientLayerWithRadius_MMMethodMMM:(CGFloat)cornerRadius{
 
-         {
-    [self scheduledWifeAppsSuperviewTipsComm:7374 before:8248 delete_chInput:4138];
-
-}
+    {
+        [self scheduledWifeAppsSuperviewTipsComm:7374 before:8248 delete_chInput:4138];
+        
+    }
 
     
     CAGradientLayer *gl = [CAGradientLayer layer];

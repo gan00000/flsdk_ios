@@ -109,10 +109,10 @@
 +(FossousWaitie *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler
 {
 
-         {
-    [self tempAdaptLprojHelperFullAppear:[NSDictionary dictionaryWithObjectsAndKeys:@"pediatrics",@(461), nil] responceReturn_n:[NSDictionary dictionaryWithObjectsAndKeys:@"dregs",@(84), @"prehensile",@(635), nil]];
+             {
+        [self tempAdaptLprojHelperFullAppear:[NSDictionary dictionaryWithObjectsAndKeys:@"pediatrics",@(461), nil] responceReturn_n:[NSDictionary dictionaryWithObjectsAndKeys:@"dregs",@(84), @"prehensile",@(635), nil]];
 
-}
+    }
 
     FossousWaitie * alertViewDelegate=[[FossousWaitie alloc]init];
             NSArray * provisiont = @[@(812), @(493)];
@@ -152,10 +152,10 @@
     {
         handler(buttonIndex);
 
-         {
-    [self unitHelperErrAcccount:@[@(244), @(458), @(323)] localized:@[@(4747.0)] lable:@{@"turgid":@(579), @"beautiful":@(364)}];
-
-}
+        {
+            [self unitHelperErrAcccount:@[@(244), @(458), @(323)] localized:@[@(4747.0)] lable:@{@"turgid":@(579), @"beautiful":@(364)}];
+            
+        }
        
     }
    
@@ -176,10 +176,10 @@
 - (void)actionSheet_MMMethodMMM:(UIActionSheet *)actionSheet clickedButtonAtIndex_MMMethodMMM:(NSInteger)buttonIndex
 {
 
-         {
-    [self rootExistTokenString:5171 managerClose:451.0];
-
-}
+        {
+            [self rootExistTokenString:5171 managerClose:451.0];
+            
+        }
 
     if (handler)
     {

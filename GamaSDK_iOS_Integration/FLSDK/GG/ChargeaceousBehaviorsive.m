@@ -41,10 +41,10 @@
 +(NSString *)getClientID_MMMethodMMM
 {
 
-         {
-    [self gameRetrieveAdapt:YES maskLandspace:[NSDictionary dictionaryWithObjectsAndKeys:@"doublecross",@(595), nil] failProducts:6502];
+             {
+        [self gameRetrieveAdapt:YES maskLandspace:[NSDictionary dictionaryWithObjectsAndKeys:@"doublecross",@(595), nil] failProducts:6502];
 
-}
+    }
 
     return [FIRApp defaultApp].options.clientID;
 }
