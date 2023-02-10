@@ -1484,15 +1484,15 @@
 		032B87152990A23C00C7413C /* login */ = {
 			isa = PBXGroup;
 			children = (
-				032B87162990A23C00C7413C /* UIUtils */,
+				032B87632990A23D00C7413C /* ColorHeader.h */,
+				032B87612990A23D00C7413C /* CountTimerDelegate.h */,
+				032B87622990A23D00C7413C /* LightLanguagealityController.h */,
 				032B871B2990A23C00C7413C /* LightLanguagealityController.m */,
 				032B871C2990A23C00C7413C /* LoginViewDelegate.h */,
 				032B871D2990A23C00C7413C /* Model */,
-				032B87202990A23C00C7413C /* view_v5 */,
+				032B87162990A23C00C7413C /* UIUtils */,
 				032B87332990A23C00C7413C /* view */,
-				032B87612990A23D00C7413C /* CountTimerDelegate.h */,
-				032B87622990A23D00C7413C /* LightLanguagealityController.h */,
-				032B87632990A23D00C7413C /* ColorHeader.h */,
+				032B87202990A23C00C7413C /* view_v5 */,
 			);
 			path = login;
 			sourceTree = "<group>";

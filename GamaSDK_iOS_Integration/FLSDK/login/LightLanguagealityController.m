@@ -1609,7 +1609,7 @@ NSDictionary * ragged = [self requsetParametersOutput];
 }
 
 
--(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) pageType;
+-(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) pageType
 {
     [self goPageView_MMMethodMMM:pageType from_MMMethodMMM:CURRENT_PAGE_TYPE_NULL param_MMMethodMMM:@(0)];
     
