@@ -336,6 +336,7 @@
 //    NSString *ppppp1_ppppp = @"";
 //    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
 //        ppppp1_ppppp = @"ppppp3_ppppp";
+//        NSLog(ppppp1_ppppp);
 //    }
 //    
 //    if([var_temp isEqualToString:@"ppppp2_ppppp"]){
@@ -506,23 +507,11 @@
 //    }
 //    
 //    
-//    int var_temp_int = 0;
-//    int iiiiii1_iiiii = iiiiii2_iiiii;
-//    switch (var_temp_int) {
+//    int ppppp1_ppppp = iiiii1_iiiii;
+//    int case_value_case = iiiii188_iiiii
+//    switch (ppppp1_ppppp) {
 //            
-//        case iiiiii3_iiiii:
-//            iiiiii1_iiiii = iiiiii4_iiiii ooooo1_ooooo iiiiii5_iiiii
-//            break;
-//        case iiiiii6_iiiii:
-//            iiiiii1_iiiii = iiiiii7_iiiii ooooo1_ooooo iiiiii8_iiiii
-//            break;
-//            
-//        case iiiiii9_iiiii:
-//            iiiiii1_iiiii = iiiiii10_iiiii ooooo1_ooooo iiiiii11_iiiii
-//            break;
-//        case iiiiii12_iiiii:
-//            iiiiii1_iiiii = iiiiii13_iiiii ooooo1_ooooo iiiiii14_iiiii
-//            break;
+//        case_content_case
 //            
 //        default:
 //            break;

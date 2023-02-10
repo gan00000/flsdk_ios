@@ -55,6 +55,8 @@
 	<string>9457e9f00d7e1c0a9869c451326b15a9</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
+	<key>GIDClientID</key>
+	<string>503664990056-pvdp09io2bnoekk59cta1sro1kf9kkkt.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -71,8 +73,6 @@
 		<key>ChannelID</key>
 		<string>1657186918</string>
 	</dict>
-	<key>GIDClientID</key>
-	<string>503664990056-pvdp09io2bnoekk59cta1sro1kf9kkkt.apps.googleusercontent.com</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
