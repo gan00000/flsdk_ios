@@ -454,9 +454,7 @@
 #define btnClickAction_MMMethodMMM   legalistSerpence_MMMethodMMM
 #define showTermsView_MMMethodMMM   januSolenite_MMMethodMMM
 #define showTermsViewForAccountLoginView_MMMethodMMM   kindainCheirowhiteion_MMMethodMMM
-
 #define getSdkEncryptKey_MMMethodMMM sxxesqandPlayOli
-
 #define getSdkConfigInfoName_MMMethodMMM  getJJSCinfugName
 #define getMySdkBundle_MMMethodMMM getMyMDSSdkBundle
 #define getSdkBundleFilePath_MMMethodMMM  getSdkKAFHEUFBundleFilePath
@@ -466,9 +464,9 @@
 #define logSdkResConfig_MMMethodMMM     logSdkResConfigWird
 #define getSdkBaseEncryptKey_MMMethodMMM    getSdkBaseEncryptKeyahheqDy
 #define decryptAllStringContent_MMMethodMMM   decryptAllStringContentfssz
-
 #define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
 #define reissue_MMMethodMMM reissue
+#define logServerWithEventName_MMMethodMMM          jabberSimplification
 
 
 #endif  /* codeObfuscation_h */
