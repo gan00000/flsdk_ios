@@ -466,7 +466,8 @@
 #define decryptAllStringContent_MMMethodMMM   decryptAllStringContentfssz
 #define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
 #define reissue_MMMethodMMM reissue
-#define logServerWithEventName_MMMethodMMM          jabberSimplification
+#define logServerWithEventName_MMMethodMMM          logServerWithEventName_MMMethodMMM
+#define logServerWithEventName_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
 
 
 #endif  /* codeObfuscation_h */
