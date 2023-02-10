@@ -85,6 +85,8 @@
 	<true/>
 	<key>FacebookDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
+	<key>GIDClientID</key>
+   <string>clientID此值对接时候提供</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
