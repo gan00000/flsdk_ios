@@ -464,7 +464,7 @@
                                        days_MMMethodMMM:(NSUInteger)days
                                       hours_MMMethodMMM:(NSUInteger)hours
                                     minutes_MMMethodMMM:(NSUInteger)minutes
-                                    seconds_MMMethodMMM:(NSUInteger)seconds;
+                                    seconds_MMMethodMMM:(NSUInteger)seconds
 {
     if (event.length <= 0) {
         return NO;
