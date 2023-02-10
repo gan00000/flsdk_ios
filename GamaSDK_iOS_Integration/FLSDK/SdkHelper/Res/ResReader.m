@@ -83,6 +83,11 @@ static dispatch_once_t onceToken;
         if (areaInfo_arry) {
             [_areaInfoArray addObjectsFromArray:areaInfo_arry];
         }
+        
+        areaInfo_arry = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"json"];
+        if (areaInfo_arry) {
+            [_areaInfoArray addObjectsFromArray:areaInfo_arry];
+        }
     }
     return _areaInfoArray;
 }
@@ -132,6 +137,13 @@ static dispatch_once_t onceToken;
     if(configDic){
         return configDic;
     }
+    
+    configDic =[self getJsonContentWithBundle_MMMethodMMM:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"json"];
+    
+    if(configDic){
+        return configDic;
+    }
+    
     //读取自定义的 plist文件的写法
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
     
@@ -165,8 +177,9 @@ static dispatch_once_t onceToken;
 
 -(NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key
 {
-    NSString *ms = [NSString stringWithFormat:@"%@",[self.textStringDic objectForKey:key]];
-    if (ms){
+    id mValue = [self.textStringDic objectForKey:key];
+    if (mValue){
+        NSString *ms = [NSString stringWithFormat:@"%@",mValue];
         return ms;
     }
     return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
@@ -224,7 +237,7 @@ static dispatch_once_t onceToken;
             SDK_LOG(@"file not find : %@.json", languageStr);
         }
     }
-    
+    //打印主配置
     NSString *configInfoName = [self getSdkConfigInfoName_MMMethodMMM];
     NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
     
@@ -264,14 +277,32 @@ static dispatch_once_t onceToken;
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
+        //获取加密文本内容
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
-        }else{
-            SDK_LOG(@"language = %@ not exist",languageStr);
-            dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"txt"];
+            return _textStringDic;
+        }
+        //获取未加密json文本内容
+        dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
+        if(dicTemp){
+            [_textStringDic addEntriesFromDictionary:dicTemp];
+            return _textStringDic;
+        }
+        
+        SDK_LOG(@"language = %@ not exist",languageStr);
+        dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"txt"];
+        if (dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
             SDK_LOG(@"set language str = %@ ",languageStr_temp);
+            return _textStringDic;
         }
+        
+        dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"json"];
+        if(dicTemp){
+            [_textStringDic addEntriesFromDictionary:dicTemp];
+            return _textStringDic;
+        }
+        
     }
     return _textStringDic;
 
@@ -290,6 +321,27 @@ static dispatch_once_t onceToken;
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
         SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+        if(textContent){
+            NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
+            // 对数据进行JSON格式化并返回字典形式
+            NSError *error = nil;
+            id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+            return resultTemp;
+        }
+    }
+    return nil;
+}
+
+#pragma mark - 获取未加密的josn文本内容
+-(id)getJsonContentWithBundle_MMMethodMMM:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
+{
+    
+    NSString *textFilePath = [bundle pathForResource:name ofType:type];
+    
+    if(textFilePath){
+        // 将文件数据化
+        NSData *textData = [[NSData alloc] initWithContentsOfFile:textFilePath];
+        NSString *textContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
             // 对数据进行JSON格式化并返回字典形式
