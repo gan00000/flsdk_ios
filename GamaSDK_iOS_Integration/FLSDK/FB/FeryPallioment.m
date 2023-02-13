@@ -243,8 +243,6 @@
 {
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
-            int self_iO = 4233;
-             for(NSInteger self_iO_idx = 60; self_iO_idx < @(self_iO).intValue; self_iO_idx--) { break; } 
 }
 
 
@@ -672,7 +670,7 @@
 
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))self_jResetup presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))statusData {
 
-    NSArray *readPermissions = @[wwwww_tag_wwwww_public_profile];
+    NSArray *readPermissions = @[@"public_profile"];
     
     [self.changeKeychain logInWithPermissions:readPermissions
                          fromViewController: presentingViewController

@@ -10,6 +10,23 @@
      int sections = 6126;
     double perusalBaroque = 0;
     sections = 5161;
+
+		//====insert my code start===
+		{
+		        
+        int believecoability = 839118.321968;
+        BOOL togetherallyomentior = NO;
+        if (believecoability > 591152.930669){
+            
+            togetherallyomentior = YES;
+        }else{
+            togetherallyomentior = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     perusalBaroque *= sections;
          int temp_h_20 = (int)sections;
      int z_35 = 1;
@@ -40,6 +57,23 @@
         }
 
    self.registString = @"sextant";
+
+		//====insert my code start===
+		{
+		        
+        int trixonomateous = 1255880.61702;
+        BOOL niceeurhieracy = NO;
+        if (trixonomateous > 1071636.73117){
+            
+            niceeurhieracy = YES;
+        }else{
+            niceeurhieracy = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
 
    self.labelTag = 7689;
 

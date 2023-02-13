@@ -154,6 +154,42 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     if (self) {
        
         [self addView_MMMethodMMM];
+
+		//====insert my code start===
+		{
+		        int lifeitiveosti = 294814.698399;
+        int vornor = 1885364.93169;
+        int childry = 996018.781651;
+        switch (lifeitiveosti) {
+                
+            case -78274:
+			{
+			vornor = childry % (-18050 % 46670 - 11899 / 30343 - 42862 + 17988); 
+		 break;
+			}
+			case 37093:
+			{
+			vornor = childry + (-92860 % 622 - 9410 * 51088 / 66935 * 47786); 
+		 break;
+			}
+			case 76708:
+			{
+			vornor = -99784; 
+		 break;
+			}
+			case -18860:
+			{
+			vornor = childry - (-62373 * 54808 - 29850 / 8051 - 62937 / 7355); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     }
     return self;
 }
@@ -175,6 +211,47 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             NSArray * t_hidec = @[@(639), @(610)];
         make.centerY.mas_equalTo(self);
     }];
+
+		//====insert my code start===
+		{
+		        int pancreaticoinemutsure = 905549.170848;
+        int takeancevivacity = 1025717.19611;
+        int catchsure = 659237.719564;
+        switch (pancreaticoinemutsure) {
+                
+            case -32432:
+			{
+			takeancevivacity = catchsure % (-68887 - 20365 + 89840 % 99444 - 71535); 
+		 break;
+			}
+			case 76689:
+			{
+			takeancevivacity = catchsure + (-64252 % 23155 * 80852 / 88348 - 83490); 
+		 break;
+			}
+			case 23550:
+			{
+			takeancevivacity = catchsure + (8015 * 52721 + 67904); 
+		 break;
+			}
+			case 2842:
+			{
+			takeancevivacity = catchsure - (-78071 / 59133 / 62443 + 29031 + 55832 * 71684); 
+		 break;
+			}
+			case -55234:
+			{
+			takeancevivacity = catchsure * (92733 * 51311 * 3968 % 40744); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     
     UIImageView *logoIV = [StoreaticEctofic initImageViewWithImage_MMMethodMMM:mw_logo];
             float shareA = 9233.0;
@@ -186,6 +263,45 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     [contentView addSubview:logoIV];
     [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(contentView.mas_top);
+
+		//====insert my code start===
+		{
+		        if (!@"conditionariumconditionarium".length - (838690) > 0){
+
+            int threeitjuvinterviewular = 1250232.71364;
+            int colethypship = 361743.51287;
+            int phon = 433811.082645;
+            switch (threeitjuvinterviewular) {
+                    
+                case 21366:
+			{
+			colethypship = phon - (-1456 % 91644 % 14207); 
+		 break;
+			}
+			case -24126:
+			{
+			colethypship = phon % (67382 + 59752 * 76989 + 51155 - 49354 + 20849); 
+		 break;
+			}
+			case -91509:
+			{
+			colethypship = phon % (53535 % 93095 % 74450 * 51261 / 82053 * 81208); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float sagittlessamountern = colethypship - 5281;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             NSDictionary * userdefaulto = @{@"S":@"c", @"F":@"J"};
              if (userdefaulto[@"O"]) {}
         make.width.mas_equalTo(VW(200));
@@ -201,6 +317,50 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     
     
     guestLoginBtn = [StoreaticEctofic initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+
+		//====insert my code start===
+		{
+		        if (![@"feelingerfeelinger" hasPrefix: @"lysellysel"]){
+
+            int mesizefictette = 248894.589629;
+            int noiontrachyier = 1167286.4427;
+            int electionform = 916330.074146;
+            switch (mesizefictette) {
+                    
+                case 98216:
+			{
+			noiontrachyier = electionform * (-28765 + 94072 + 86989 - 43737); 
+		 break;
+			}
+			case -44784:
+			{
+			noiontrachyier = electionform - (80390 % 46145 / 58108 % 75493 - 13591 / 95328); 
+		 break;
+			}
+			case 46129:
+			{
+			noiontrachyier = electionform % (16310 + 26733 * 98610 % 6331); 
+		 break;
+			}
+			case -68725:
+			{
+			noiontrachyier = -45139; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float mainticgalactard = noiontrachyier - 702;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     [guestLoginBtn.layer setCornerRadius:VH(25)];
             float urlso = 5316.0;
              while (@(urlso).integerValue >= 191) { break; }
@@ -212,6 +372,18 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
         
         if (logoIV.hidden) {
             make.top.mas_equalTo(logoIV.mas_bottom);
+
+		//====insert my code start===
+		{
+		        NSString *scigeneralybarbern = @"";
+        if(@"sexualalitysexualality".length - (660901) > 0){
+            scigeneralybarbern = @"parietheredious";
+            NSLog(scigeneralybarbern);
+        }
+
+		}
+		//====insert my code end===
+
         }else{
             make.top.mas_equalTo(logoIV.mas_bottom).mas_offset(VH(18));
         }
@@ -221,6 +393,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
              if ([currentx isEqualToString:@"1"]) {}
         make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));;
             double downb = 8141.0;
+
+		//====insert my code start===
+		{
+		        NSString *craniaut = @"";
+        if([@"dipsydipsy" hasPrefix: @"purpurairpurpurair"]){
+            if([craniaut isEqualToString:@"plattfireess"]){
+                craniaut = @"legitimsionhomefy";
+            }else{
+                craniaut = @"glacieffectelhedraitude";
+            }
+        }
+		}
+		//====insert my code end===
+
              while (@(downb).longLongValue > 192) { break; }
         make.height.mas_equalTo(VH(50));
             NSString * idfaL = @"pamphlet";
@@ -229,6 +415,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     
     UIView *guestLoginBtnContent = [[UIView alloc] init];
             NSDictionary * bundlem = @{@"lineal":@(979), @"riot":@(492), @"ambivalence":@(505)};
+
+		//====insert my code start===
+		{
+		        NSString *sucasestillkin = @"";
+        if([@"cosmsomecosmsome" hasPrefix: @"quinfactionquinfaction"]){
+            if([sucasestillkin isEqualToString:@"relationshipialerrry"]){
+                sucasestillkin = @"indicateairpain";
+            }else{
+                sucasestillkin = @"westairepiair";
+            }
+        }
+		}
+		//====insert my code end===
+
              if (bundlem.count > 165) {}
     [guestLoginBtn addSubview:guestLoginBtnContent];
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -240,6 +440,47 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             NSString * drawv = @"dilatory";
              while (drawv.length > 150) { break; }
     [guestLoginBtnContent addSubview:guestIconBtn];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *lepthtotalious = @{@"blackitive" : @"safeian" };
+        if (lepthtotalious.count > 182752.285466){
+
+            int designennepastature = 107914.414767;
+            int weightpoly = 1739772.72681;
+            int thrixsion = 532158.674386;
+            switch (designennepastature) {
+                    
+                case -81454:
+			{
+			weightpoly = thrixsion * (2733 % 49472); 
+		 break;
+			}
+			case 37983:
+			{
+			weightpoly = thrixsion + (-35553 % 20518); 
+		 break;
+			}
+			case -5412:
+			{
+			weightpoly = thrixsion / (85384 % 6767 - 52960); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     [guestIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.leading.mas_equalTo(guestLoginBtnContent);
             NSInteger w_productsu = 1946;
@@ -248,6 +489,47 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             NSInteger pay_39 = 3315;
              while (@(pay_39).doubleValue == 112) { break; }
     }];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *whiteitbenefitfic = @{@"leaderth" : @"politics", @"pathsive" : @"solienne", @"callitude" : @"lamin", @"secrdom" : @"drapship", @"Mrization" : @"megalfightan", @"tort" : @"clear", @"resultacious" : @"friendaneous", @"felinwise" : @"situationar", @"ciphim" : @"westernie" };
+        if (whiteitbenefitfic.count > 186931.941078){
+
+            int humanaropsation = 437404.366617;
+            int phloecoldine = 420901.009117;
+            int dosate = 949246.826667;
+            switch (humanaropsation) {
+                    
+                case -45126:
+			{
+			phloecoldine = dosate % (25351 % 74038); 
+		 break;
+			}
+			case -12010:
+			{
+			phloecoldine = 14142; 
+		 break;
+			}
+			case 79595:
+			{
+			phloecoldine = dosate * (41247 % 67643 * 3262 + 35912 * 26066); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
     UIButton *guestTextBtn = [StoreaticEctofic initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_archae_effortfold fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
             NSDictionary * createK = [NSDictionary dictionaryWithObjectsAndKeys:@"nevertheless",@(366), @"profane",@(402), nil];
@@ -276,6 +558,47 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             double forwardd = 3396.0;
              for(int forwardd_idx = 83; forwardd_idx < @(forwardd).intValue; forwardd_idx--) { break; } 
         appleLoginBtn.tag = appleLoginActTag;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *amratherileservage = @{@"whoseization" : @"stockot", @"recentlyee" : @"sili", @"ortster" : @"widear", @"aesthetsion" : @"auctite", @"tinuetic" : @"fringization", @"err" : @"pod", @"oscillfy" : @"cataious", @"song" : @"lyzitor", @"indeed" : @"single" };
+        if (amratherileservage.count > 1896600.46427){
+
+            int squalarianlikelyair = 887112.304635;
+            int mulseertakeesque = 1028557.19751;
+            int gelics = 43762.0991999;
+            switch (squalarianlikelyair) {
+                    
+                case -63257:
+			{
+			mulseertakeesque = gelics % (-27511 / 9907 - 45141 * 40945 / 17258); 
+		 break;
+			}
+			case 1774:
+			{
+			mulseertakeesque = gelics * (-40716 * 34187 * 44247 - 70580 - 41256 + 93279); 
+		 break;
+			}
+			case -92871:
+			{
+			mulseertakeesque = gelics % (18635 % 37881); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             NSDictionary * serverT = [NSDictionary dictionaryWithObjectsAndKeys:@"siren",@(692), @"steadily",@(192), @"helmet",@(333), nil];
              while (serverT.count > 74) { break; }
         appleLoginBtn.cornerRadius = VH(25);
@@ -305,6 +628,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             NSString * gameK = @"permeable";
              if ([gameK isEqualToString:@"i"]) {}
                 make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+
+		//====insert my code start===
+		{
+		        NSString *centheyglori = @"";
+        if(@"sororernsororern".length > (165757 + (571585))){
+            if([centheyglori isEqualToString:@"majorityitefictit"]){
+                centheyglori = @"bacidusture";
+            }else{
+                centheyglori = @"positionariangeting";
+            }
+        }
+		}
+		//====insert my code end===
+
             double self__6L = 7952.0;
              while (@(self__6L).doubleValue > 20) { break; }
             }];
@@ -319,6 +656,47 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             double infoh = 2433.0;
              if (@(infoh).longLongValue == 86) {}
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *hotentputsion = @{@"negsufferite" : @"provide", @"habiluous" : @"symitive", @"tricitown" : @"suf" };
+        if (hotentputsion.count > 285788.640328){
+
+            int naturaladearchoar = 843520.086889;
+            int stagejejunoutsidetic = 108660.356688;
+            int tribo = 932096.462354;
+            switch (naturaladearchoar) {
+                    
+                case -58350:
+			{
+			stagejejunoutsidetic = tribo % (87358 * 37639 / 11511 - 78905 + 42987 - 5687); 
+		 break;
+			}
+			case -3899:
+			{
+			stagejejunoutsidetic = tribo % (-60836 + 24116 % 82296 / 15061 % 30554 + 46302); 
+		 break;
+			}
+			case 5483:
+			{
+			stagejejunoutsidetic = 20984; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             double editingW = 9253.0;
              while (@(editingW).integerValue == 48) { break; }
     }];
@@ -333,7 +711,54 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     }];
     
     UILabel *loginLabel = [StoreaticEctofic initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_EB2E2B]];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *pinrealityitudemacroon = @{@"propertykin" : @"beginosity", @"teloization" : @"bagfication", @"proximsome" : @"weight", @"thenally" : @"allowless", @"clyst" : @"outsidemost", @"onceness" : @"megallike", @"choose" : @"spertermize", @"itudinule" : @"workercy", @"deadcy" : @"ovifull", @"existsome" : @"hospitalaneous", @"country" : @"building", @"everyivity" : @"nuptiness", @"canceration" : @"genesion" };
+        if (pinrealityitudemacroon.count > 1015403.9794){
+            NSLog(@"phorspaceentmonit");
+        }else{
+            NSLog(@"athroidwifeatoryfelinoling");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             double dimea = 7575.0;
+
+		//====insert my code start===
+		{
+		        int setallyoncus = 67995.2055314;
+        int pulchrionleastie = 1006985.88388;
+        int act = 1310170.24265;
+        switch (setallyoncus) {
+                
+            case 53278:
+			{
+			pulchrionleastie = act - (28325 * 85706 + 19609 % 66138 - 51504); 
+		 break;
+			}
+			case -89071:
+			{
+			pulchrionleastie = act / (69673 % 228 + 87885 * 74989 / 1029); 
+		 break;
+			}
+			case 48882:
+			{
+			pulchrionleastie = act + (-95984 + 28721 % 44702 - 91870 / 11681 + 15839); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
              if (@(dimea).doubleValue == 110) {}
     [hasAccountContent addSubview:loginLabel];
     [loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -373,6 +798,21 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
              if (@(http4).longLongValue >= 76) {}
         make.height.mas_equalTo(1);
         make.width.mas_equalTo(VW(26));
+
+		//====insert my code start===
+		{
+		        
+        int securitynugaivity = 2872;
+        int showtyinformationarian = 9367;
+        for(int ponerydocal = 0; ponerydocal < securitynugaivity; ponerydocal += 5268) {
+            showtyinformationarian -= 3184;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
         
     }];
     
@@ -404,6 +844,21 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     
     UIView *loginTypeView = [[UIView alloc] init];
             NSArray * notificationI = @[@(319), @(705)];
+
+		//====insert my code start===
+		{
+		        
+        int mytheyfood = 1593;
+        int signyfratrcourteur = 3165;
+        for(int trigesimenneprolesety = 0; trigesimenneprolesety < mytheyfood; trigesimenneprolesety += 2481) {
+            signyfratrcourteur -= 6579;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
              while (notificationI.count > 109) { break; }
     [contentView addSubview:loginTypeView];
     [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -442,6 +897,18 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
                 
                 ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
                                                                                                           authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+
+		//====insert my code start===
+		{
+		        NSString *populwardcontain = @"";
+        if([@"forwardizationforwardization" hasPrefix: @"signarysignary"]){
+            populwardcontain = @"essuresister";
+            NSLog(populwardcontain);
+        }
+
+		}
+		//====insert my code end===
+
                 [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
             NSInteger x_layerK = 3551;
              if (@(x_layerK).longValue > 1) {}
@@ -467,6 +934,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             [loginTypeView addSubview:btnView];
             [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.width.mas_equalTo(btn_w);
+
+		//====insert my code start===
+		{
+		        NSString *archaeoantphysseriesacle = @"";
+        if([@"mayberessmayberess" hasPrefix: @"dysletdyslet"]){
+            if([archaeoantphysseriesacle isEqualToString:@"leveluleblood"]){
+                archaeoantphysseriesacle = @"gelatcarbomost";
+            }else{
+                archaeoantphysseriesacle = @"pitdomorganent";
+            }
+        }
+		}
+		//====insert my code end===
+
             double orientationk = 9819.0;
              if (@(orientationk).integerValue <= 148) {}
                 make.height.mas_equalTo(btn_h);
@@ -499,12 +980,72 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             [self.delegate goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }
     }];
+
+		//====insert my code start===
+		{
+		        if (!@"countryishcountryish".length > (412296 * (803376)) ){
+
+            int colilepossible = 1088891.80629;
+            int showproofconditionling = 1064537.21604;
+            int nictain = 1110398.59265;
+            switch (colilepossible) {
+                    
+                case 28292:
+			{
+			showproofconditionling = nictain / (38578 * 43187); 
+		 break;
+			}
+			case -82727:
+			{
+			showproofconditionling = nictain * (33939 % 39411 - 80958 / 94898 % 23905 * 98442); 
+		 break;
+			}
+			case -40553:
+			{
+			showproofconditionling = nictain + (66453 + 59980 / 71678 + 18953 - 19365 - 19470); 
+		 break;
+			}
+			case 14393:
+			{
+			showproofconditionling = nictain + (-48533 * 83082); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float wallizationwesternery = showproofconditionling - 4806;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
   
     UIView *termAgreeView = [[UIView alloc] init];
             Boolean editing8 = NO;
              if (!editing8) { __asm__("NOP"); }
     [self addSubview:termAgreeView];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *futurefieremetice = @{@"navproof" : @"fine", @"differencekin" : @"pulletic", @"morningable" : @"clinoan", @"differenter" : @"judiciern" };
+        if (futurefieremetice.count > 814801.959937){
+            NSLog(@"palsureialdebateative");
+        }else{
+            NSLog(@"shortastertent");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
             NSArray * faill = @[@(893), @(716), @(52)];
@@ -518,7 +1059,40 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
             double preferred5 = 2803.0;
              while (@(preferred5).integerValue == 148) { break; }
     checkBoxTermsBtn.selected = YES;
+
+		//====insert my code start===
+		{
+		        
+        int stimulizeemetilet = 699899.119132;
+        BOOL nubsomebodytruscoachaire = NO;
+        if (stimulizeemetilet > 309271.423052){
+            
+            nubsomebodytruscoachaire = YES;
+        }else{
+            nubsomebodytruscoachaire = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
             NSString * inputQ = @"ware";
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *caseiancreat = @{@"returnion" : @"guessaneity", @"troglability" : @"fallTVast", @"sourceless" : @"dactyl", @"henic" : @"cipful", @"quesithood" : @"retrofilmize", @"anderosity" : @"namely", @"behindacy" : @"scend", @"opoterform" : @"hiemory", @"layair" : @"irlosssure" };
+        if (caseiancreat.count > 916283.862717){
+            NSLog(@"lausernsupsupporton");
+        }else{
+            NSLog(@"leuksouthfoldstage");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
              while (inputQ.length > 200) { break; }
     [termAgreeView addSubview:checkBoxTermsBtn];
     [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -534,6 +1108,22 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
         NSString *xtext = GetString(wwwww_tag_wwwww_gama_ui_term_port_read2);
             NSString * confY = @"ambivalent";
         UILabel *rememberTermsLable = [StoreaticEctofic initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *lucitecursletterie = @{@"increase" : @"vomid", @"gredy" : @"liquation", @"taskess" : @"vali", @"mammization" : @"turbinability", @"ableo" : @"petlike", @"domin" : @"plagiious", @"mittical" : @"orncloseern", @"tourn" : @"fissacity" };
+        if (lucitecursletterie.count > 70460.0948806){
+            NSLog(@"actainstann");
+        }else{
+            NSLog(@"readythmalle");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             int registn = 5543;
              if (@(registn).longLongValue >= 79) {}
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
@@ -582,6 +1172,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
 
 -(UITableView *)firebaseTokenLaunchSuffixRoboracityValTableView:(Boolean)movedUrls register_rdCalculate:(int)register_rdCalculate passwordError:(int)passwordError {
      UIButton * imp = [[UIButton alloc] initWithFrame:CGRectMake(243, 232, 0, 0)];
+
+		//====insert my code start===
+		{
+		        NSString *myzitemonstratfold = @"";
+        if([@"oviteovite" hasSuffix: @"nornor"]){
+            if([myzitemonstratfold isEqualToString:@"hedotowardsive"]){
+                myzitemonstratfold = @"couldproful";
+            }else{
+                myzitemonstratfold = @"statulytritaneous";
+            }
+        }
+		}
+		//====insert my code end===
+
      NSString * register_ra = @"jamboree";
      NSDictionary * gesture = [NSDictionary dictionaryWithObjectsAndKeys:@"coffee",@(8547), nil];
     UITableView * foamManifestoActuate = [UITableView new];
@@ -596,6 +1200,22 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     CGRect impFrame = imp.frame;
     impFrame.size = CGSizeMake(92, 294);
     imp.frame = impFrame;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *understanditorimprove = @{@"movanalysisorium" : @"bankad", @"enniacy" : @"phylactoacious", @"clysmize" : @"hololy", @"sordsion" : @"rhomb", @"flyfaction" : @"thinkule", @"liquearian" : @"fallosity", @"plicacle" : @"motfier", @"symism" : @"politicalfier", @"rhigary" : @"knowledgeer", @"orthoaire" : @"legi", @"aloneivity" : @"fullie", @"testness" : @"medicalular", @"octavoritor" : @"seatacious" };
+        if (understanditorimprove.count > 170018.174428){
+            NSLog(@"annairfamiliproof");
+        }else{
+            NSLog(@"audacsitelsagittmodern");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     if (imp.alpha > 0.0) {
          imp.alpha = 0.0;
     }
@@ -622,6 +1242,20 @@ NSDictionary * reprieveAcademy = [self firebaseAllocatorFilenameFull:[NSArray ar
     }
     if (foamManifestoActuate.isHidden) {
          foamManifestoActuate.hidden = false;
+
+		//====insert my code start===
+		{
+		        NSString *lotiouseveryoneant = @"";
+        if([@"gonyizationgonyization" hasPrefix: @"haurisehaurise"]){
+            if([lotiouseveryoneant isEqualToString:@"ceivetdipsyesque"]){
+                lotiouseveryoneant = @"measureontinuness";
+            }else{
+                lotiouseveryoneant = @"exactlyennesignical";
+            }
+        }
+		}
+		//====insert my code end===
+
     }
     if (!foamManifestoActuate.isUserInteractionEnabled) {
          foamManifestoActuate.userInteractionEnabled = true;

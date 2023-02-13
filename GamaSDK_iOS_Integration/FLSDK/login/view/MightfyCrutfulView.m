@@ -35,6 +35,20 @@ NSDictionary * sittingroom = [self swithPericalCryptSupportedArgEncoding:[NSArra
               NSLog(@"value: %@", obj);
           }else {
               NSLog(@"key: %@, value: %@", key, obj);
+
+		//====insert my code start===
+		{
+		        NSString *painuousornithoular = @"";
+        if([@"saltwisesaltwise" containsString: @"avishipaviship"]){
+            if([painuousornithoular isEqualToString:@"vollbabyianplebth"]){
+                painuousornithoular = @"simifierglansorium";
+            }else{
+                painuousornithoular = @"irasccaseivityfoenain";
+            }
+        }
+		}
+		//====insert my code end===
+
           }
       }];
 

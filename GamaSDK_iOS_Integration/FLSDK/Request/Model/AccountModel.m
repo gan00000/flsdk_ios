@@ -18,12 +18,42 @@
     self.userId = @"";
     self.token = @"";
     self.timestamp = @"";
+
+		//====insert my code start===
+		{
+		        NSString *athlablyeverybodyoon = @"";
+        if([@"lubricsceneizationlubricsceneization" containsString: @"engyitorengyitor"]){
+            if([athlablyeverybodyoon isEqualToString:@"learnletticably"]){
+                athlablyeverybodyoon = @"homoishiptend";
+            }else{
+                athlablyeverybodyoon = @"jupossiblelinency";
+            }
+        }
+		}
+		//====insert my code end===
+
     
     self.thirdId = @"";
     self.thirdAccount = @"";
     self.isBind = NO;
     self.isBindPhone = NO;
     self.loginType = @"";
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *androieopert = @{@"security" : @"fantness", @"tomel" : @"novendecial" };
+        if (androieopert.count > 1458549.15612){
+            NSLog(@"animeurvicesimfic");
+        }else{
+            NSLog(@"cursialculturalot");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
     self.sign = @"";
     self.telephone = @"";
@@ -33,6 +63,23 @@
 - (instancetype)init
 {
     self = [super init];
+
+		//====insert my code start===
+		{
+		        
+        int diehoodheartosity = 2339.7520112;
+        BOOL cenaneityhold = NO;
+        if (diehoodheartosity > 197289.156703){
+            
+            cenaneityhold = YES;
+        }else{
+            cenaneityhold = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     if (self) {
         NSLog(@"AccountModel init");
         [self initData_MMMethodMMM];
@@ -45,6 +92,37 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder //system_method
 {
     NSLog(@"AccountModel encodeWithCoder");
+
+		//====insert my code start===
+		{
+		        int villiaseative = 1337169.91789;
+        int audaconhomehood = 981868.84719;
+        int lower = 1520777.71197;
+        switch (villiaseative) {
+                
+            case 82661:
+			{
+			audaconhomehood = lower % (-8144 + 11836 * 90074 * 68292); 
+		 break;
+			}
+			case 73691:
+			{
+			audaconhomehood = lower % (32237 - 71471 / 1457 * 6597 - 82482); 
+		 break;
+			}
+			case -56292:
+			{
+			audaconhomehood = lower * (-98036 % 15982 + 58189 / 41028); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     [aCoder encodeObject:self.account forKey:wwwww_tag_wwwww_accountName];
     [aCoder encodeObject:self.password forKey:wwwww_tag_wwwww_accountPwd];
     [aCoder encodeObject:self.lastLoginTime forKey:wwwww_tag_wwwww_lastLoginTimemobile];
@@ -62,6 +140,40 @@
     [aCoder encodeObject:self.sign forKey:wwwww_tag_wwwww_sign];
     [aCoder encodeObject:self.telephone forKey:wwwww_tag_wwwww_telephone];
     [aCoder encodeObject:self.loginId forKey:wwwww_tag_wwwww_loginId];
+
+		//====insert my code start===
+		{
+		        if (!aCoder){
+
+            int centereousserveward = 1528981.6177;
+            int calofireularscensive = 1773207.97709;
+            int vaser = 659939.543712;
+            switch (centereousserveward) {
+                    
+                case 16732:
+			{
+			calofireularscensive = vaser / (97935 + 60772); 
+		 break;
+			}
+			case 47015:
+			{
+			calofireularscensive = vaser % (-82651 - 13000 * 77521); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float employeeingwaitment = calofireularscensive - 1506;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     [aCoder encodeBool:self.isBindPhone forKey:wwwww_tag_wwwww_isBindPhone];
 
 }

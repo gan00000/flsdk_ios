@@ -18,6 +18,22 @@
 {
 
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *septimlikereport = @{@"phryn" : @"phanast", @"soucioon" : @"protetic", @"dinnereous" : @"kinembloodry", @"theseel" : @"pam", @"lamnlamellic" : @"thusward", @"decafinancialcy" : @"venerartist", @"scrupdiseasearium" : @"fallsure", @"positionity" : @"crepian", @"privateward" : @"bariose", @"individualair" : @"claimth", @"nihil" : @"signency" };
+        if (septimlikereport.count > 375384.40459){
+            NSLog(@"growbuildingain");
+        }else{
+            NSLog(@"tacatorfluth");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
     
     if ([cString length] < 6) {
@@ -62,6 +78,22 @@
     
     
     range.location = 4;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *spondylformthreatal = @{@"stegmedia" : @"phatcollectionproof", @"styleitor" : @"generationform", @"quintcy" : @"desise", @"typeward" : @"kinemfication", @"necessaryify" : @"whoseacle", @"wellaire" : @"leiage", @"authordom" : @"sperlotence", @"photot" : @"askitious", @"majnextics" : @"treatmentmost", @"pancreatico" : @"coverature", @"modernie" : @"degreety", @"squamform" : @"canit", @"exo" : @"ptych" };
+        if (spondylformthreatal.count > 343172.464353){
+            NSLog(@"throughoutproofsacrable");
+        }else{
+            NSLog(@"treatjocyearad");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             int paramx = 4677;
              for(NSInteger paramx_idx = 35; paramx_idx < @(paramx).intValue; paramx_idx -= 10) { break; } 
     NSString *bString = [cString substringWithRange:range];
@@ -86,6 +118,20 @@
      NSInteger times = 8526;
     NSString *holocaustHustle = [[NSString alloc] init];
          int c_71 = (int)authtication;
+
+		//====insert my code start===
+		{
+		        NSString *followacynesia = @"";
+        if(@"amplpullosityamplpullosity".length > (648267 + (11027))){
+            if([followacynesia isEqualToString:@"readileincreaseade"]){
+                followacynesia = @"respondenpur";
+            }else{
+                followacynesia = @"signidtooice";
+            }
+        }
+		}
+		//====insert my code end===
+
      switch (c_71) {
           case 81: {
           int r_98 = 1;
@@ -121,6 +167,20 @@
           }
      else {
           _s_100 += 50;
+
+		//====insert my code start===
+		{
+		        NSString *pygitydolori = @"";
+        if([@"hairibilityhairibility" hasPrefix: @"sentiaceoussentiaceous"]){
+            if([pygitydolori isEqualToString:@"judicisewomanarium"]){
+                pygitydolori = @"remembersometimes";
+            }else{
+                pygitydolori = @"knowablebitwise";
+            }
+        }
+		}
+		//====insert my code end===
+
      
      }
 
@@ -157,17 +217,84 @@
     
     NSRange range;
     range.location = 0;
+
+		//====insert my code start===
+		{
+		        if (!@"goalgoal".length - (881429) > 0){
+
+            int nonagenentstopia = 1221466.1383;
+            int allelousfallator = 1075752.81292;
+            int runature = 219446.718779;
+            switch (nonagenentstopia) {
+                    
+                case 50440:
+			{
+			allelousfallator = -85209; 
+		 break;
+			}
+			case -91502:
+			{
+			allelousfallator = runature - (72787 / 97903 - 98302 * 48233); 
+		 break;
+			}
+			case 5927:
+			{
+			allelousfallator = runature / (-58077 % 72505 - 80109 * 5423 * 22782); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float beatfactionpudeible = allelousfallator - 1518;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     range.length = 2;
     
     NSString *rString = [cString substringWithRange:range];
     range.location = 2;
     NSString *gString = [cString substringWithRange:range];
     range.location = 4;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *hibernusuallyacle = @{@"siluseular" : @"carboel", @"yourselfibility" : @"sagitt", @"skillatic" : @"palustrine", @"sponsine" : @"pull", @"purposeator" : @"improveency", @"opert" : @"management", @"feelaneous" : @"veh", @"vectaire" : @"mean" };
+        if (hibernusuallyacle.count > 571834.62859){
+            NSLog(@"oramierclaustrotax");
+        }else{
+            NSLog(@"fidelingsoldier");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     NSString *bString = [cString substringWithRange:range];
     
     unsigned int r, g, b;
     [[NSScanner scannerWithString:rString] scanHexInt:&r];
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
+
+		//====insert my code start===
+		{
+		        NSString *volitdomtelevisionment = @"";
+        if(@"participantallyparticipantally".length > (566670 * (323720)) ){
+            volitdomtelevisionment = @"administrationtionpallioment";
+            NSLog(volitdomtelevisionment);
+        }
+
+		}
+		//====insert my code end===
+
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];

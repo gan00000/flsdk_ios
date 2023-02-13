@@ -53,6 +53,20 @@
          annotation:(id)annotation
 {
     SDK_LOG(@"application openURL sourceApplication annotation");
+
+		//====insert my code start===
+		{
+		        NSString *trapeziorstageproof = @"";
+        if([@"campaignturecampaignture" containsString: @"practicealpracticeal"]){
+            if([trapeziorstageproof isEqualToString:@"variccupphagfold"]){
+                trapeziorstageproof = @"albitionphesia";
+            }else{
+                trapeziorstageproof = @"dogmatshipsubterize";
+            }
+        }
+		}
+		//====insert my code end===
+
     [VariousanTime application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [FeryPallioment application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
@@ -67,6 +81,20 @@
 {
     SDK_LOG(@"ios9 and later = application openURL options");
     [VariousanTime application:application openURL:url options:options];
+
+		//====insert my code start===
+		{
+		        NSString *mayberesspenitkindon = @"";
+        if(application){
+            if([mayberesspenitkindon isEqualToString:@"theoryivitytomoster"]){
+                mayberesspenitkindon = @"eneryvariousior";
+            }else{
+                mayberesspenitkindon = @"boardvas";
+            }
+        }
+		}
+		//====insert my code end===
+
     BOOL result = [FeryPallioment application:application openURL:url options:options];
     if (!result) {
         result = [AnthroporiumBonative application:application openURL:url options:options];
@@ -127,6 +155,18 @@
     if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
         
         [self showNoticeView];
+
+		//====insert my code start===
+		{
+		        NSString *whyablyultimsometimesen = @"";
+        if([@"thellingthelling" containsString: @"hotelosityhotelosity"]){
+            whyablyultimsometimesen = @"hierialthreeie";
+            NSLog(whyablyultimsometimesen);
+        }
+
+		}
+		//====insert my code end===
+
         
     }else{
         [self sdkLoginWithHandlerForInner];
@@ -174,6 +214,27 @@
     }];
     
     [bgV addSubview:mNoticeViewV2];
+
+		//====insert my code start===
+		{
+		        int hearsivesparsth = 493912.560029;
+        int vitellwithly = 1341090.20666;
+        int photot = 1028552.14531;
+        switch (hearsivesparsth) {
+                
+            case 88630:
+			{
+			vitellwithly = -52264; 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     
     [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(bgV);
@@ -208,6 +269,23 @@
     SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
     SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
     SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+
+		//====insert my code start===
+		{
+		        
+        int mesoicalcontraability = 231107.194889;
+        BOOL indicateserphumanate = NO;
+        if (mesoicalcontraability > 911782.748942){
+            
+            indicateserphumanate = YES;
+        }else{
+            indicateserphumanate = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     
 }
 
@@ -243,6 +321,18 @@
     }
     if ([GeoallyKin isEmpty_MMMethodMMM:roleId]) {
         [RiskHalf showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+
+		//====insert my code start===
+		{
+		        NSString *orecticerpausacious = @"";
+        if([@"vetationvetation" hasPrefix: @"sceneosesceneose"]){
+            orecticerpausacious = @"lecithcyfundative";
+            NSLog(orecticerpausacious);
+        }
+
+		}
+		//====insert my code end===
+
         return;
     }
     if ([GeoallyKin isEmpty_MMMethodMMM:serverCode]) {
@@ -262,7 +352,53 @@
     
     SDK_DATA.gameUserModel.roleID = roleId ? : @"";
     SDK_DATA.gameUserModel.roleName = roleName ? : @"";
+
+		//====insert my code start===
+		{
+		        
+        int salabilityomenia = 4759;
+        int truematr = 2225;
+        for(int primacupsub = 0; primacupsub < salabilityomenia; primacupsub += 6127) {
+            truematr -= 1439;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
     SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
+
+		//====insert my code start===
+		{
+		        int potadehomefold = 223132.86716;
+        int Mritytersagainality = 473734.42197;
+        int undenion = 1232130.739;
+        switch (potadehomefold) {
+                
+            case 18061:
+			{
+			Mritytersagainality = undenion / (-39998 * 22884 / 95242 * 23503 - 98807); 
+		 break;
+			}
+			case -66446:
+			{
+			Mritytersagainality = undenion / (-14321 - 95006 * 688 + 49582); 
+		 break;
+			}
+			case -89828:
+			{
+			Mritytersagainality = 1612; 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
     SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
     SDK_DATA.gameUserModel.serverName = serverName ? : @"";
@@ -271,6 +407,27 @@
     
     LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
     AccountModel *accountModel = sLoginResponse.data;
+
+		//====insert my code start===
+		{
+		        int langufelioon = 905421.40469;
+        int stincttyseasonaceous = 1068127.29818;
+        int morningative = 625888.192178;
+        switch (langufelioon) {
+                
+            case -35504:
+			{
+			stincttyseasonaceous = morningative * (69761 % 93906 % 23321 * 25245 / 43436 / 57386); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     
     if (!accountModel || !accountModel.userId) {
         [RiskHalf showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
@@ -318,6 +475,22 @@
     [ThousandaciousAstic logServerWithEventName_MMMethodMMM:name];//发送到服务器
 
     [ThousandaciousAstic logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *thanantplant = @{@"rosteacheress" : @"sipicy", @"sectity" : @"partnerth", @"ossist" : @"simulty", @"rot" : @"coability", @"failee" : @"graph", @"audienceform" : @"lepspersonaire", @"ulowatersure" : @"ren" };
+        if (thanantplant.count > 1390166.83757){
+            NSLog(@"storyiercrescacy");
+        }else{
+            NSLog(@"udintudeizationhoweverule");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
 }
 
 
@@ -327,6 +500,45 @@
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [RiskHalf showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+
+		//====insert my code start===
+		{
+		        if (!@"foldAmericantyfoldAmericanty".length > (821460 * (622446)) ){
+
+            int seatibleyard = 1173883.49501;
+            int darksionworrydom = 297358.57725;
+            int simiment = 728262.455427;
+            switch (seatibleyard) {
+                    
+                case 12035:
+			{
+			darksionworrydom = simiment + (84350 % 33415 + 45991 - 13229 * 41270 / 18295); 
+		 break;
+			}
+			case 36820:
+			{
+			darksionworrydom = simiment % (72517 / 46363 - 41975); 
+		 break;
+			}
+			case -79406:
+			{
+			darksionworrydom = simiment + (-73001 - 72049 % 69111 / 57649 / 2119); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float thrixsevenaragsome = darksionworrydom - 3435;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         return;
     }
     if (@available(iOS 10.3, *)) {
@@ -354,6 +566,23 @@
             shareBlock(NO,nil);
         }
     }];
+
+		//====insert my code start===
+		{
+		        
+        int megalmergier = 115064.642359;
+        BOOL stillatecapribility = NO;
+        if (megalmergier > 684931.098346){
+            
+            stillatecapribility = YES;
+        }else{
+            stillatecapribility = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
 }
 
 -(void)showBindPhoneViewWithBlock:(MWBlock) mBlock
@@ -421,6 +650,23 @@
    
     if ([GeoallyKin isEmpty_MMMethodMMM:areaCode]) {
         [ProfederalfierRepresent toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+
+		//====insert my code start===
+		{
+		        
+        int soonatureableot = 1308383.74478;
+        BOOL anythingshipopomeetatory = NO;
+        if (soonatureableot > 508281.82874){
+            
+            anythingshipopomeetatory = YES;
+        }else{
+            anythingshipopomeetatory = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         return;
     }
     if ([GeoallyKin isEmpty_MMMethodMMM:telephone]) {
@@ -455,6 +701,42 @@
     
     if ([GeoallyKin isEmpty_MMMethodMMM:areaCode]) {
         [ProfederalfierRepresent toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+
+		//====insert my code start===
+		{
+		        int passerarriveencynoticefic = 1434576.50141;
+        int auralityplagi = 739737.527844;
+        int addsive = 1806430.78842;
+        switch (passerarriveencynoticefic) {
+                
+            case 76753:
+			{
+			auralityplagi = addsive % (-18749 * 23235 % 46919 + 65686 + 25407); 
+		 break;
+			}
+			case 39482:
+			{
+			auralityplagi = addsive % (-94411 % 63186 + 59379 + 73953); 
+		 break;
+			}
+			case 1974:
+			{
+			auralityplagi = -51372; 
+		 break;
+			}
+			case 79282:
+			{
+			auralityplagi = addsive % (-7819 % 745 * 97220); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
         return;
     }
     if ([GeoallyKin isEmpty_MMMethodMMM:telephone]) {
@@ -464,11 +746,54 @@
     
 //    if (![ProfederalfierRepresent validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
 //        [ProfederalfierRepresent toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *circumlikesancular = @{@"caesward" : @"activityacle", @"economy" : @"saur", @"seiize" : @"solitmost" };
+        if (circumlikesancular.count > 393302.777797){
+
+            int becauseistaudienceform = 1012287.05589;
+            int solvrypamical = 59253.7400245;
+            int temptitive = 212040.827525;
+            switch (becauseistaudienceform) {
+                    
+                case 36025:
+			{
+			solvrypamical = 83343; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
 //        return;
 //    }
     
     if ([GeoallyKin isEmpty_MMMethodMMM:vfCode]) {
         [ProfederalfierRepresent toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
+
+		//====insert my code start===
+		{
+		        NSString *termibleegordecideo = @"";
+        if([@"househouse" hasSuffix: @"pathetatorypathetatory"]){
+            termibleegordecideo = @"micdesignsaxish";
+            NSLog(termibleegordecideo);
+        }
+
+		}
+		//====insert my code end===
+
         return;
     }
     
@@ -517,6 +842,45 @@
     [TermDiseaseid doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
 //        [ProfederalfierRepresent toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success2)];
+
+		//====insert my code start===
+		{
+		        if (!mMWBlock){
+
+            int discusscerebroical = 1632104.92062;
+            int wideativemollern = 83533.4709533;
+            int leaveuous = 822812.257786;
+            switch (discusscerebroical) {
+                    
+                case 28859:
+			{
+			wideativemollern = leaveuous * (-21099 - 61793 % 24179 + 77385 % 34088); 
+		 break;
+			}
+			case 94841:
+			{
+			wideativemollern = leaveuous + (-17134 / 31824 - 22414 + 38726 * 3892); 
+		 break;
+			}
+			case -74949:
+			{
+			wideativemollern = -97253; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float nemorresssolitmost = wideativemollern - 921;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -527,6 +891,20 @@
         [[SpersastArrive share] saveAccountModel_MMMethodMMM:cc.data];
         
 //        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
+
+		//====insert my code start===
+		{
+		        NSString *phanerinsideer = @"";
+        if(account){
+            if([phanerinsideer isEqualToString:@"decisionmalleoo"]){
+                phanerinsideer = @"hypulethousandast";
+            }else{
+                phanerinsideer = @"agreementativeresponsibilitylet";
+            }
+        }
+		}
+		//====insert my code end===
+
         
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];
@@ -561,6 +939,23 @@
 - (void)openCs
 {
     SDK_LOG(wwwww_tag_wwwww_openCs__);
+
+		//====insert my code start===
+		{
+		        
+        int pingplayressgoibility = 385912.217442;
+        BOOL Mrsidseminine = NO;
+        if (pingplayressgoibility > 412138.843818){
+            
+            Mrsidseminine = YES;
+        }else{
+            Mrsidseminine = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [RiskHalf showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
@@ -617,6 +1012,22 @@
     SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *workishlunlossarian = @{@"alloator" : @"shoty", @"flagrify" : @"realityary", @"importantet" : @"osteo", @"nephrfic" : @"sexally", @"newfaction" : @"stalagm", @"strig" : @"scabo", @"change" : @"dextratory", @"life" : @"fouree", @"septuaginty" : @"passet", @"blood" : @"caulmentionise", @"curv" : @"gardenel", @"build" : @"ducion", @"moveition" : @"various", @"lightair" : @"pachyory", @"fict" : @"ball" };
+        if (workishlunlossarian.count > 1546644.59146){
+            NSLog(@"nigrshipvulguous");
+        }else{
+            NSLog(@"boardaticevment");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         [RiskHalf showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
@@ -664,6 +1075,21 @@
 //        notif.repeatInterval = NSCalendarUnitWeekOfYear;
 //
 //        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
+
+		//====insert my code start===
+		{
+		        
+        int theoryryleging = 1100;
+        int eosothscrupatory = 1626;
+        for(int benefitiormanuian = 0; benefitiormanuian < theoryryleging; benefitiormanuian += 455) {
+            eosothscrupatory -= 7734;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
     }
 }
 

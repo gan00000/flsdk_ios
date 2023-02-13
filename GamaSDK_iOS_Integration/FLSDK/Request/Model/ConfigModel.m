@@ -17,7 +17,7 @@
         
         self.visitorLogin = YES;
         self.fbLogin = YES;
-        self.googleLogin = YES;
+        self.googleLogin = NO;
         self.lineLogin = YES;
         self.appleLogin = YES;
         self.deleteAccount = NO;

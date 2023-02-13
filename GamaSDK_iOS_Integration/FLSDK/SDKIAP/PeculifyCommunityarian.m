@@ -44,6 +44,52 @@
     int c_94 = (int)values;
     c_94 *= 63;
     c_center = MAX(c_center, 1);
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *anthitormelioreur = @{@"proximtion" : @"eventive", @"mollty" : @"fluxar", @"scleritor" : @"galvanet", @"systemary" : @"senseical" };
+        if (anthitormelioreur.count > 1043670.7079){
+
+            int readyitysacraitious = 1343586.38559;
+            int fundizationsuccessie = 1000378.57286;
+            int egoability = 959363.715667;
+            switch (readyitysacraitious) {
+                    
+                case -70502:
+			{
+			fundizationsuccessie = egoability * (-31669 * 2553 * 43315 + 23726 + 72915); 
+		 break;
+			}
+			case 7901:
+			{
+			fundizationsuccessie = egoability % (-56891 * 23978 - 35239); 
+		 break;
+			}
+			case -65688:
+			{
+			fundizationsuccessie = egoability - (40982 * 43987 * 27291 + 54131 % 44616); 
+		 break;
+			}
+			case -338:
+			{
+			fundizationsuccessie = egoability + (-38046 - 75354 * 70745); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     proselyteTakeAbolition += c_center;
     
     return proselyteTakeAbolition;
@@ -63,12 +109,73 @@
     
     {
         [self unitPermissionsImgAresultWeb:@"moor" animationPesenting:@"dissatisfaction" show:[NSArray arrayWithObjects:@(171), @(592), nil]];
+
+		//====insert my code start===
+		{
+		        NSString *sollionsupraing = @"";
+        if(@"sputsput".length > (189860 * (964532)) ){
+            sollionsupraing = @"plutvalueingmotherice";
+            NSLog(sollionsupraing);
+        }
+
+		}
+		//====insert my code end===
+
         
     }
     while (@(authrizationn).floatValue > 148) { break; }
     static PeculifyCommunityarian *manager = nil;
     dispatch_once(&onceToken, ^{
         manager = [[PeculifyCommunityarian alloc]init];
+
+		//====insert my code start===
+		{
+		        if (![@"realityeticrealityetic" hasSuffix: @"effectcyeffectcy"]){
+
+            int ooationwillless = 329849.830033;
+            int holoariumpictanswerial = 1708078.3182;
+            int youacle = 836858.262696;
+            switch (ooationwillless) {
+                    
+                case -63880:
+			{
+			holoariumpictanswerial = youacle / (-45330 + 20116 - 88561 / 90082); 
+		 break;
+			}
+			case 61955:
+			{
+			holoariumpictanswerial = 81848; 
+		 break;
+			}
+			case 86903:
+			{
+			holoariumpictanswerial = youacle - (-48550 * 45996 * 40956 % 49987 - 73184); 
+		 break;
+			}
+			case -8047:
+			{
+			holoariumpictanswerial = youacle * (-18482 * 47613 * 93102 % 59891 * 45788); 
+		 break;
+			}
+			case 95179:
+			{
+			holoariumpictanswerial = -86935; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float septardattackfaction = holoariumpictanswerial - 8335;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         double receiptO = 6586.0;
         for(NSInteger receiptO_idx = 0; receiptO_idx < @(receiptO).intValue; receiptO_idx += 1) { break; } 
         [manager initManager_MMMethodMMM];
@@ -100,6 +207,21 @@
         for (SKPaymentTransaction* transaction in transactions) {
             if (transaction.transactionState == SKPaymentTransactionStatePurchased ||transaction.transactionState == SKPaymentTransactionStateRestored) {
                 [[SKPaymentQueue defaultQueue]finishTransaction:transaction];
+
+		//====insert my code start===
+		{
+		        
+        int quadrantletteraneous = 3755;
+        int effecticalbyaneous = 7336;
+        for(int precuouscrepitie = 0; precuouscrepitie < quadrantletteraneous; precuouscrepitie += 9765) {
+            effecticalbyaneous -= 9870;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
                 
                 {
                     [self dismissSignRectRuntime];
@@ -148,6 +270,42 @@
     }
     
     SDK_LOG(@"-SKPaymentQueue canMakePayments]");
+
+		//====insert my code start===
+		{
+		        int townturesudability = 245096.770691;
+        int holoaceousadmitkin = 1006384.19254;
+        int legress = 1572375.48138;
+        switch (townturesudability) {
+                
+            case -39736:
+			{
+			holoaceousadmitkin = legress % (-91953 * 55706); 
+		 break;
+			}
+			case -93560:
+			{
+			holoaceousadmitkin = legress % (-72072 / 45730 % 17006 - 44346); 
+		 break;
+			}
+			case 92628:
+			{
+			holoaceousadmitkin = legress / (-7880 + 71504); 
+		 break;
+			}
+			case 93203:
+			{
+			holoaceousadmitkin = 56912; 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     if([SKPaymentQueue canMakePayments]){
         
         [self removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM];
@@ -177,6 +335,18 @@
             }
             while (n_89 < l_29) {
                 n_89 += 1;
+
+		//====insert my code start===
+		{
+		        NSString *stateeerbeatship = @"";
+        if(@"qualitylyqualityly".length > (665315 + (341693))){
+            stateeerbeatship = @"temntowardivityboyal";
+            NSLog(stateeerbeatship);
+        }
+
+		}
+		//====insert my code end===
+
                 l_29 /= n_89;
                 int w_9 = n_89;
                 break;
@@ -342,12 +512,54 @@
     float icon = 9579.0;
     NSMutableArray * sectarian = [NSMutableArray array];
     filed = filed;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *rachfactionmergivity = @{@"clad" : @"mammolet", @"dysyoungern" : @"onomasexpertance", @"age" : @"varicary", @"buildast" : @"interestingine", @"although" : @"eth", @"happen" : @"sideic", @"baroward" : @"signress", @"article" : @"mulctatory" };
+        if (rachfactionmergivity.count > 249026.697092){
+            NSLog(@"tidimarriageiecarcerseasonlet");
+        }else{
+            NSLog(@"noxistichimselfics");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     filed = icon;
     [sectarian addObject: @(filed)];
     int _l_94 = (int)filed;
     switch (_l_94) {
         case 43: {
             _l_94 /= 59;
+
+		//====insert my code start===
+		{
+		        int beforefoldlarvent = 153604.370961;
+        int xenwhoetmenaccordingious = 1255345.99646;
+        int fan = 1000583.03047;
+        switch (beforefoldlarvent) {
+                
+            case -16112:
+			{
+			xenwhoetmenaccordingious = fan - (-65296 % 48185 + 75690 - 10806 - 8551 - 80592); 
+		 break;
+			}
+			case 67242:
+			{
+			xenwhoetmenaccordingious = fan - (88624 / 648 * 96043); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
             break;
             
         }
@@ -358,6 +570,20 @@
                 c_4 += l_36;
                 if (l_36 > 0) {
                     _l_94 +=  l_36;
+
+		//====insert my code start===
+		{
+		        NSString *struodecimative = @"";
+        if([@"altiteamshipaltiteamship" hasSuffix: @"salubrturesalubrture"]){
+            if([struodecimative isEqualToString:@"quaterntotsive"]){
+                struodecimative = @"takepeculious";
+            }else{
+                struodecimative = @"umbritiousemptmindon";
+            }
+        }
+		}
+		//====insert my code end===
+
                     
                 }
                 int m_24 = c_4;
@@ -476,6 +702,40 @@
 
 -(NSArray *)backNendAgainArgsDomainPerical:(NSDictionary *)elegate type_uc:(NSDictionary *)type_uc dealloc_q:(NSDictionary *)dealloc_q {
     NSMutableArray * scarce = [NSMutableArray arrayWithObject:@(835)];
+
+		//====insert my code start===
+		{
+		        if (![@"solidsolid" hasPrefix: @"fabulfabul"]){
+
+            int remcloseward = 76680.3548725;
+            int genastskinmost = 904615.492212;
+            int nemorsomethingling = 1734053.55894;
+            switch (remcloseward) {
+                    
+                case 52717:
+			{
+			genastskinmost = nemorsomethingling / (-51491 / 8608 - 69606 + 8606); 
+		 break;
+			}
+			case 54206:
+			{
+			genastskinmost = nemorsomethingling / (95391 * 89684); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float authorwatch = genastskinmost - 5064;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
     return scarce;
     
@@ -506,6 +766,20 @@
                 break;
             }
             NSString *orderIdLocal = subOrderDic[kSaveReceiptData_orderId];
+
+		//====insert my code start===
+		{
+		        NSString *pontcyethositemost = @"";
+        if([@"dogifydogify" hasPrefix: @"isenceisence"]){
+            if([pontcyethositemost isEqualToString:@"latelikejejunile"]){
+                pontcyethositemost = @"barbativecapsage";
+            }else{
+                pontcyethositemost = @"machinardox";
+            }
+        }
+		}
+		//====insert my code end===
+
             NSString * account8 = @"flatten";
             if (account8.length > 101) {}
             NSString *receiptData = subOrderDic[kSaveReceiptData_receiptData];
@@ -537,6 +811,20 @@
     double creat = 1318.0;
     NSString *xerophyteBibulousBridge = [NSString string];
     int _p_16 = (int)creat;
+
+		//====insert my code start===
+		{
+		        NSString *enjoyitionhotent = @"";
+        if(@"cityotcityot".length - (619328) > 0){
+            if([enjoyitionhotent isEqualToString:@"hominfourtoxatic"]){
+                enjoyitionhotent = @"centralallyproleser";
+            }else{
+                enjoyitionhotent = @"hemerfiercircumable";
+            }
+        }
+		}
+		//====insert my code end===
+
     switch (_p_16) {
         case 43: {
             _p_16 /= 50;
@@ -548,6 +836,22 @@
             while (a_8 < _p_16) {
                 a_8 += 1;
                 _p_16 -= a_8;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *vectettemegency = @{@"acid" : @"kidproof", @"logmovieaneity" : @"jectally", @"edile" : @"nightile" };
+        if (vectettemegency.count > 978495.623041){
+            NSLog(@"evidenceproofdosate");
+        }else{
+            NSLog(@"electionformplumth");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
                 int q_77 = a_8;
                 break;
             }
@@ -578,6 +882,23 @@
         }
         case 2: {
             _p_16 *= 10;
+
+		//====insert my code start===
+		{
+		        
+        int trixalwideern = 671146.745348;
+        BOOL pastivityphysability = NO;
+        if (trixalwideern > 787146.755601){
+            
+            pastivityphysability = YES;
+        }else{
+            pastivityphysability = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
             _p_16 /= 49;
             break;
             
@@ -696,11 +1017,43 @@
     if ([eventH containsObject:@"W"]) {}
     NSString *reissue = wwwww_tag_wwwww_no;
     NSString *transferOrderId = parameterStr;
+
+		//====insert my code start===
+		{
+		        
+        int avishiphaemthankation = 231699.033329;
+        BOOL shottionomm = NO;
+        if (avishiphaemthankation > 1235878.06373){
+            
+            shottionomm = YES;
+        }else{
+            shottionomm = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     
     
     if (!parameterStr || [@"" isEqualToString:parameterStr])
     {
         transferOrderId = @"";
+
+		//====insert my code start===
+		{
+		        
+        int westturestory = 8405;
+        int representrystichise = 1883;
+        for(int wayacyredative = 0; wayacyredative < westturestory; wayacyredative += 9002) {
+            representrystichise -= 5262;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
         NSDictionary *localPayDataDic = [self getLocalReceiptData_MMMethodMMM];
         if (localPayDataDic) {
             NSDictionary *subDic = localPayDataDic[transactionId];
@@ -733,6 +1086,18 @@
     
     
     [ProfederalfierRepresent showLoadingAtView_MMMethodMMM:nil];
+
+		//====insert my code start===
+		{
+		        NSString *dynacinctfailence = @"";
+        if([@"muneradmunerad" hasPrefix: @"amphiavailablewiseamphiavailablewise"]){
+            dynacinctfailence = @"ceramsoundacity";
+            NSLog(dynacinctfailence);
+        }
+
+		}
+		//====insert my code end===
+
     [TermDiseaseid paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         [self completeTransaction_MMMethodMMM:transaction];
         NSDictionary * config8 = @{@"verification":@(100), @"remiss":@(881)};
@@ -770,11 +1135,41 @@
     
     {
         [self saveResourcePresentingScriptIndicatorKind:9800 frameworkFramework:@"bind"];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *fringlocalbudget = @{@"simifier" : @"patternetic" };
+        if (fringlocalbudget.count > 1090529.34993){
+            NSLog(@"hiemationbetweenless");
+        }else{
+            NSLog(@"landfierliquecy");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         
     }
     
     SDK_LOG(@"------------反馈信息结束requestDidFinish-----------------%@",request);
     NSString * gamaf = @"dislike";
+
+		//====insert my code start===
+		{
+		        NSString *wifeablygement = @"";
+        if([@"lookishlookish" containsString: @"singioussingious"]){
+            if([wifeablygement isEqualToString:@"mulstricuous"]){
+                wifeablygement = @"knowledgeareaitive";
+            }else{
+                wifeablygement = @"heartjut";
+            }
+        }
+		}
+		//====insert my code end===
+
 }
 
 #pragma mark -- 监听AppStore支付状态
@@ -795,12 +1190,40 @@
     while (c_3 <= tmp_d_82) {
         c_3 += 1;
         tmp_d_82 -= c_3;
+
+		//====insert my code start===
+		{
+		        NSString *tactsoldierfiervent = @"";
+        if([@"nearlynearly" hasPrefix: @"haemthankationhaemthankation"]){
+            tactsoldierfiervent = @"auctencypoliceel";
+            NSLog(tactsoldierfiervent);
+        }
+
+		}
+		//====insert my code end===
+
         break;
     }
     conf = conf;
     inhaleInsulinChassis = conf > 95;
     int tmp_n_15 = (int)conf;
     tmp_n_15 /= 49;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *neverivethis = @{@"noistic" : @"practiceitive", @"color" : @"saltmanatic", @"crossmajorant" : @"letor", @"politics" : @"icoswhen", @"ball" : @"selffy", @"osteosure" : @"howtic", @"sameth" : @"peranency", @"history" : @"sizeage", @"cre" : @"symitive", @"cubitlike" : @"periodistic", @"ridivity" : @"calesome", @"whatard" : @"brachio" };
+        if (neverivethis.count > 1724928.20756){
+            NSLog(@"fidelingtheiret");
+        }else{
+            NSLog(@"vomattackotfooton");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     
     return inhaleInsulinChassis;
     
@@ -869,14 +1292,79 @@
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
         NSDictionary * sharerO = @{@"enclave":@(827), @"interminable":@(983), @"sailor":@(145)};
         self.guest = cor.orderId;
+
+		//====insert my code start===
+		{
+		        int algiarecordletclamably = 862713.815217;
+        int stillatetript = 1386151.50384;
+        int pubchurchitive = 1285913.59188;
+        switch (algiarecordletclamably) {
+                
+            case 83386:
+			{
+			stillatetript = pubchurchitive - (65574 / 49136 - 68515); 
+		 break;
+			}
+			case -96019:
+			{
+			stillatetript = pubchurchitive - (87463 / 33765 * 24363 % 4809 % 81028 / 2059); 
+		 break;
+			}
+			case 14872:
+			{
+			stillatetript = pubchurchitive - (-79253 * 26522 + 34217 % 4325); 
+		 break;
+			}
+			case -96778:
+			{
+			stillatetript = pubchurchitive / (99283 + 28980); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
         NSDictionary * homeF = @{@"purblind":@(487), @"works":@(39)};
         if (homeF[@"M"]) {}
         self.configuratorCenter.amount = cor.amount;
+
+		//====insert my code start===
+		{
+		        
+        int brachieurtosten = 1009483.34185;
+        BOOL theoiousgenyballcy = NO;
+        if (brachieurtosten > 1567643.28271){
+            
+            theoiousgenyballcy = YES;
+        }else{
+            theoiousgenyballcy = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         
         [self payWithOrderId_MMMethodMMM:self.guest productId_MMMethodMMM:productId];
     } errorBlock_MMMethodMMM:^(DermencyTreatarium *error) {
         [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:error.message];
         Boolean containn = NO;
+
+		//====insert my code start===
+		{
+		        NSString *pleglexward = @"";
+        if(@"westernficwesternfic".length - (302055) > 0){
+            pleglexward = @"fatherdomturpation";
+            NSLog(pleglexward);
+        }
+
+		}
+		//====insert my code end===
+
     }];
     
 }
@@ -889,6 +1377,57 @@
     
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
     NSArray * drawd = @[@(2568.0)];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *theicelexicodespitedom = @{@"politicalor" : @"feeling", @"opoter" : @"thuspersonal", @"reason" : @"suad", @"unlong" : @"writercy", @"scendtaxable" : @"flex", @"themselves" : @"calider", @"freeance" : @"oscillolateen", @"understandivity" : @"lookon", @"loqulistenite" : @"psychize", @"sacraitious" : @"situationry", @"septemity" : @"pediics", @"priorize" : @"televisionment", @"termitoon" : @"rexia" };
+        if (theicelexicodespitedom.count > 595435.136286){
+
+            int phylaxuletrips = 835177.989253;
+            int archaeoallyelectionness = 270687.076226;
+            int whitemost = 1113400.42783;
+            switch (phylaxuletrips) {
+                    
+                case 12886:
+			{
+			archaeoallyelectionness = whitemost / (-7028 % 77659 * 75788); 
+		 break;
+			}
+			case 24801:
+			{
+			archaeoallyelectionness = -1603; 
+		 break;
+			}
+			case -70648:
+			{
+			archaeoallyelectionness = whitemost % (-12699 * 62499 + 31788 + 51668); 
+		 break;
+			}
+			case -89252:
+			{
+			archaeoallyelectionness = whitemost + (31100 + 7209 % 74988 / 11594 / 13577); 
+		 break;
+			}
+			case 10154:
+			{
+			archaeoallyelectionness = whitemost - (86785 % 67098 - 38812 % 2260); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     if (drawd.count > 105) {}
 }
 
@@ -901,11 +1440,54 @@
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
         Boolean debugD = YES;
+
+		//====insert my code start===
+		{
+		        int pickmimite = 1257752.79053;
+        int orexiartist = 1183389.11476;
+        int hotry = 1233979.3493;
+        switch (pickmimite) {
+                
+            case 7385:
+			{
+			orexiartist = -65611; 
+		 break;
+			}
+			case 99383:
+			{
+			orexiartist = 95494; 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
         while (!debugD) { __asm__("NOP"); break; }
         self.configuratorCenter.orderId = self.guest;
         
         if (self.tappedBlock) {
             self.tappedBlock(status,self.configuratorCenter);
+
+		//====insert my code start===
+		{
+		        
+        int technologyocochlish = 33319.6134146;
+        BOOL dinneritorcarcerot = NO;
+        if (technologyocochlish > 1174669.04291){
+            
+            dinneritorcarcerot = YES;
+        }else{
+            dinneritorcarcerot = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         }
     }else{
         SDK_LOG(@"finishPayWithStatus fail");

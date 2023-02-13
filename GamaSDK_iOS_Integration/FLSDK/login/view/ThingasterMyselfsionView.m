@@ -21,6 +21,21 @@
 
    self.registIdx = 6627;
 
+		//====insert my code start===
+		{
+		        
+        int radisomeaudienceee = 3709;
+        int measureastinsulor = 9955;
+        for(int chargeatorrobor = 0; chargeatorrobor < radisomeaudienceee; chargeatorrobor += 9551) {
+            measureastinsulor -= 612;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
+
    self.implChangeNotification_str = @"menace";
 
     SDK_LOG(@"ThingasterMyselfsionView touchesBegan");

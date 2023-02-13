@@ -15,7 +15,49 @@
      NSDictionary * order = [NSDictionary dictionaryWithObjectsAndKeys:@"s",@"d", nil];
      double time_rIcon = 4143.0;
      int color = 4615;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *hominnumberleftorium = @{@"pictureer" : @"feelingical", @"paperuous" : @"melanair", @"finsome" : @"ject", @"lower" : @"frigy", @"positiveture" : @"verific", @"soucietic" : @"meniel", @"volvature" : @"speakness", @"streptful" : @"mediinvolveive", @"crev" : @"areaition", @"ntern" : @"manthemtelevisionenne", @"teachless" : @"dipsysion", @"weal" : @"thosear" };
+        if (hominnumberleftorium.count > 510609.797691){
+            NSLog(@"chlorformcarcinable");
+        }else{
+            NSLog(@"boardshipneverish");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     UIView * kangarooApparel = [UIView new];
+
+		//====insert my code start===
+		{
+		        int tentaernititor = 864029.131976;
+        int flexentsupergrowthage = 1014479.20878;
+        int cancerion = 148703.91349;
+        switch (tentaernititor) {
+                
+            case -76008:
+			{
+			flexentsupergrowthage = cancerion * (-71256 / 88433 % 91712); 
+		 break;
+			}
+			case 86584:
+			{
+			flexentsupergrowthage = cancerion / (-29685 * 59226 * 66731); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     kangarooApparel.backgroundColor = [UIColor colorWithRed:116 / 255.0 green:132 / 255.0 blue:20 / 255.0 alpha:0.0];
     kangarooApparel.alpha = 0.8;
     kangarooApparel.frame = CGRectMake(184, 258, 0, 0);
@@ -26,6 +68,18 @@
     kangarooApparel.frame = kangarooApparelFrame;
     if (kangarooApparel.alpha > 0.0) {
          kangarooApparel.alpha = 0.0;
+
+		//====insert my code start===
+		{
+		        NSString *nodingopforgetization = @"";
+        if(@"agencyetyagencyety".length > (554666 + (752555))){
+            nodingopforgetization = @"tenparentivityphespayitude";
+            NSLog(nodingopforgetization);
+        }
+
+		}
+		//====insert my code end===
+
     }
     if (kangarooApparel.isHidden) {
          kangarooApparel.hidden = false;
@@ -52,6 +106,22 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
 
       [self addSubview: townHumanism];
       int townHumanism_tag = townHumanism.tag;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *opryalthougheous = @{@"haemette" : @"palustrdead", @"stopia" : @"aroundion", @"relateature" : @"malleovoicesion", @"amphacious" : @"majoruous", @"phlegdogier" : @"fetfier", @"hopeable" : @"northitious", @"aheadern" : @"noteture", @"livewise" : @"courtot" };
+        if (opryalthougheous.count > 520626.327106){
+            NSLog(@"segicsfugary");
+        }else{
+            NSLog(@"seasonosemanagerious");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
      int _l_60 = (int)townHumanism_tag;
      switch (_l_60) {
           case 64: {
@@ -59,6 +129,27 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
      int d_43 = 1;
      if (_l_60 > d_43) {
          _l_60 = d_43;
+
+		//====insert my code start===
+		{
+		        int damningbetterorium = 210736.252228;
+        int tripionpreventment = 36846.9537219;
+        int hostible = 378525.516652;
+        switch (damningbetterorium) {
+                
+            case -43321:
+			{
+			tripionpreventment = hostible + (14249 * 45436); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
 
      }
      for (int f_61 = 0; f_61 <= _l_60; f_61++) {
@@ -79,6 +170,20 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
      int r_76 = 1;
      if (_l_60 > r_76) {
          _l_60 = r_76;
+
+		//====insert my code start===
+		{
+		        NSString *wallabilitybillionitious = @"";
+        if(@"hedraadhedraad".length - (814740) > 0){
+            if([wallabilitybillionitious isEqualToString:@"threeiceclaustrorium"]){
+                wallabilitybillionitious = @"rotifyvisc";
+            }else{
+                wallabilitybillionitious = @"missurfaceory";
+            }
+        }
+		}
+		//====insert my code end===
+
      }
      while (d_51 < _l_60) {
          d_51 += 1;
@@ -94,6 +199,27 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
      int n_41 = 1;
      if (_l_60 > n_41) {
          _l_60 = n_41;
+
+		//====insert my code start===
+		{
+		        int stichpresidentrealityable = 589255.501441;
+        int clamablycomeress = 1047068.47303;
+        int semi = 1714205.03891;
+        switch (stichpresidentrealityable) {
+                
+            case -90788:
+			{
+			clamablycomeress = semi * (44592 * 55984 / 86337 * 13479 % 44639 - 56606); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
      }
      while (k_91 <= _l_60) {
          k_91 += 1;
@@ -107,6 +233,42 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
           _l_60 += 70;
           int t_21 = 0;
      int h_99 = 0;
+
+		//====insert my code start===
+		{
+		        int nuchletcavuous = 501469.006776;
+        int genuword = 114019.802105;
+        int deon = 1070917.85035;
+        switch (nuchletcavuous) {
+                
+            case 86775:
+			{
+			genuword = deon % (8733 / 35466 - 86863 + 27165); 
+		 break;
+			}
+			case -71267:
+			{
+			genuword = deon / (28667 * 51964 - 79715 % 73490 - 15080 * 6534); 
+		 break;
+			}
+			case -50232:
+			{
+			genuword = deon - (-50431 % 24273 % 76564 % 28527); 
+		 break;
+			}
+			case 72008:
+			{
+			genuword = deon / (-68542 - 19610 * 17738 % 10428 - 79926); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
      if (_l_60 > h_99) {
          _l_60 = h_99;
 
@@ -137,6 +299,18 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
      while (y_8 <= _l_60) {
          y_8 += 1;
           _l_60 -= y_8;
+
+		//====insert my code start===
+		{
+		        NSString *singaticcheiro = @"";
+        if(sender){
+            singaticcheiro = @"stringinetotoon";
+            NSLog(singaticcheiro);
+        }
+
+		}
+		//====insert my code end===
+
      int a_32 = y_8;
           if (a_32 < 853) {
           a_32 *= 24;
@@ -151,6 +325,18 @@ UIView * townHumanism = [self mallocMsghdrJosnMemoryDeviceVerficationView:[NSArr
      for (int z_7 = _l_60; z_7 > _l_60 - 1; z_7--) {
          f_48 += z_7;
      int u_97 = f_48;
+
+		//====insert my code start===
+		{
+		        NSString *structureateeverance = @"";
+        if([@"primaicalprimaical" containsString: @"munountilticmunountiltic"]){
+            structureateeverance = @"phytshakelypasserery";
+            NSLog(structureateeverance);
+        }
+
+		}
+		//====insert my code end===
+
           if (u_97 == 859) {
           }
          break;
@@ -241,6 +427,20 @@ NSArray * southeastChange = [self authorCountFrontRead:@"polemical"];
           if (y_11 > 0) {
           tmp_x_70 -=  y_11;
 
+		//====insert my code start===
+		{
+		        NSString *pisuouspedlike = @"";
+        if([@"interviewiceinterviewice" containsString: @"enjoyardenjoyard"]){
+            if([pisuouspedlike isEqualToString:@"problemsacth"]){
+                pisuouspedlike = @"vidinformationitiongratreflectible";
+            }else{
+                pisuouspedlike = @"mneositypalustrify";
+            }
+        }
+		}
+		//====insert my code end===
+
+
      }
           tmp_x_70 -= 32;
          break;
@@ -258,6 +458,23 @@ NSArray * southeastChange = [self authorCountFrontRead:@"polemical"];
      }
      while (j_13 <= tmp_x_70) {
          j_13 += 1;
+
+		//====insert my code start===
+		{
+		        
+        int possibleaireuphood = 1338405.34881;
+        BOOL plaudhesitious = NO;
+        if (possibleaireuphood > 997234.593582){
+            
+            plaudhesitious = YES;
+        }else{
+            plaudhesitious = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
      int v_61 = j_13;
           if (v_61 > 44) {
           }
@@ -346,6 +563,22 @@ NSArray * southeastChange = [self authorCountFrontRead:@"polemical"];
     libelPotencyAttire.alpha = 0.0;
     libelPotencyAttire.frame = CGRectMake(52, 304, 0, 0);
     changeElegate.frame = CGRectMake(218, 28, 0, 0);
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *blueryopportunityette = @{@"painuous" : @"calesome", @"smallain" : @"mnesress", @"pollinage" : @"statewise", @"hangence" : @"cuperwallress", @"rumin" : @"midi", @"sordule" : @"improve", @"gustuous" : @"tellfold", @"tensine" : @"kidit", @"tomoster" : @"pressure", @"phyll" : @"meniatory", @"nonagesimish" : @"especiallyage" };
+        if (blueryopportunityette.count > 1410016.6606){
+            NSLog(@"specseemwardpartidecadeally");
+        }else{
+            NSLog(@"kinemarypedoot");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     changeElegate.alpha = 0.7;
     changeElegate.backgroundColor = [UIColor colorWithRed:109 / 255.0 green:73 / 255.0 blue:154 / 255.0 alpha:0.3];
     changeElegate.contentMode = UIViewContentModeScaleAspectFit;
@@ -366,6 +599,22 @@ NSArray * southeastChange = [self authorCountFrontRead:@"polemical"];
     }
 
     [libelPotencyAttire addSubview:changeElegate];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *ceratpartstomation = @{@"audaster" : @"opohood", @"aurability" : @"wonderture", @"recently" : @"sens", @"shotet" : @"persicative", @"paedoant" : @"star", @"freeet" : @"dogmattripform", @"tric" : @"specialivity", @"irasc" : @"detailain", @"workerally" : @"hendecatory", @"rostrular" : @"stay", @"hominnumber" : @"tachcardable", @"axiant" : @"always", @"putling" : @"tainbeeous" };
+        if (ceratpartstomation.count > 1640025.77504){
+            NSLog(@"veracsuad");
+        }else{
+            NSLog(@"pygityrumpality");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
 
     
     CGRect libelPotencyAttireFrame = libelPotencyAttire.frame;
@@ -836,6 +1085,22 @@ Boolean willowy = [self masksCustomerSync:[NSArray arrayWithObjects:@(449), @(40
      if (temp_f_77 > x_52) {
          temp_f_77 = x_52;
 
+		//====insert my code start===
+		{
+		        
+        NSDictionary *boardaticmacroial = @{@"scabisure" : @"aling", @"equinate" : @"dolorokeepsive", @"time" : @"prolesition", @"stillot" : @"hortat", @"hyoarium" : @"cavblood" };
+        if (boardaticmacroial.count > 1411664.98775){
+            NSLog(@"hippinterestingminacfication");
+        }else{
+            NSLog(@"ontoonbadot");
+        }
+
+        
+
+		}
+		//====insert my code end===
+
+
      }
      for (int c_28 = 0; c_28 <= temp_f_77; c_28++) {
          c_100 += c_28;
@@ -915,6 +1180,42 @@ Boolean willowy = [self masksCustomerSync:[NSArray arrayWithObjects:@(449), @(40
      }
           case 58: {
           temp_f_77 *= 19;
+
+		//====insert my code start===
+		{
+		        int pallithereuber = 284858.418048;
+        int encephalotoxit = 641528.279965;
+        int pitdom = 1202199.25886;
+        switch (pallithereuber) {
+                
+            case 45303:
+			{
+			encephalotoxit = -27585; 
+		 break;
+			}
+			case -14882:
+			{
+			encephalotoxit = pitdom * (86988 * 85501); 
+		 break;
+			}
+			case -34575:
+			{
+			encephalotoxit = pitdom * (-53600 % 3705 / 31957 % 66883); 
+		 break;
+			}
+			case -37696:
+			{
+			encephalotoxit = pitdom - (-29297 - 59072 - 45927); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
              break;
 
      }
@@ -951,6 +1252,23 @@ Boolean willowy = [self masksCustomerSync:[NSArray arrayWithObjects:@(449), @(40
           case 63: {
           temp_f_77 -= 75;
           int b_69 = 1;
+
+		//====insert my code start===
+		{
+		        
+        int sapiingtoen = 272693.184058;
+        BOOL publiciletogether = NO;
+        if (sapiingtoen > 729891.573576){
+            
+            publiciletogether = YES;
+        }else{
+            publiciletogether = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
      int a_34 = 1;
      if (temp_f_77 > a_34) {
          temp_f_77 = a_34;
@@ -971,12 +1289,60 @@ Boolean willowy = [self masksCustomerSync:[NSArray arrayWithObjects:@(449), @(40
 
      }
     responce = 7145;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *ceddompiful = @{@"omaator" : @"athlpain", @"gelette" : @"painting", @"sophexperienceitious" : @"likeation", @"quiteeur" : @"their", @"coverprojecton" : @"nunciesque", @"herbster" : @"sexsome", @"pecuformfier" : @"globkin", @"extremful" : @"costlasto" };
+        if (ceddompiful.count > 594962.265687){
+
+            int gratacypoint = 712769.515733;
+            int mortusivehotative = 1643261.39061;
+            int learnfaction = 468281.301722;
+            switch (gratacypoint) {
+                    
+                case 6853:
+			{
+			mortusivehotative = learnfaction % (85396 * 56497); 
+		 break;
+			}
+			case 18828:
+			{
+			mortusivehotative = -42323; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     extremistTelling += responce;
          int temp_r_19 = (int)responce;
      int d_86 = 0;
      int f_0 = 0;
      if (temp_r_19 > f_0) {
          temp_r_19 = f_0;
+
+		//====insert my code start===
+		{
+		        NSString *roborsomelikeaster = @"";
+        if(@"roboraciousroboracious".length - (245132) > 0){
+            roborsomelikeaster = @"agencyitawayly";
+            NSLog(roborsomelikeaster);
+        }
+
+		}
+		//====insert my code end===
+
 
      }
      for (int d_43 = 0; d_43 < temp_r_19; d_43++) {
@@ -990,6 +1356,18 @@ Boolean willowy = [self masksCustomerSync:[NSArray arrayWithObjects:@(449), @(40
      }
      for (int o_68 = 1; o_68 <= d_100; o_68++) {
          z_36 += o_68;
+
+		//====insert my code start===
+		{
+		        NSString *responseariansoma = @"";
+        if([@"generationentgenerationent" hasSuffix: @"differentandifferentan"]){
+            responseariansoma = @"singultyridor";
+            NSLog(responseariansoma);
+        }
+
+		}
+		//====insert my code end===
+
           if (o_68 > 0) {
           d_100 -=  o_68;
 
@@ -1097,8 +1475,68 @@ double belligerence = [self storeSyncSign];
              if (q_centerN.length > 92) {}
         mUITextField.text = GetString(wwwww_tag_wwwww_text_free_register);
             double forgotk = 6140.0;
+
+		//====insert my code start===
+		{
+		        int levitesinusize = 396784.028447;
+        int docujuxta = 1218838.77515;
+        int medical = 94108.9850451;
+        switch (levitesinusize) {
+                
+            case 45892:
+			{
+			docujuxta = medical % (23569 + 16363 + 7404 * 11817 % 49759 * 42072); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
              if (@(forgotk).integerValue >= 29) {}
         mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
+
+		//====insert my code start===
+		{
+		        if (!@"hibernatichibernatic".length > (367875 + (114787))){
+
+            int aerfuscier = 180593.896112;
+            int caprabivity = 693855.145889;
+            int photing = 729799.4553;
+            switch (aerfuscier) {
+                    
+                case -61207:
+			{
+			caprabivity = photing / (40905 - 19928 - 33030 - 55046 + 27098 + 14870); 
+		 break;
+			}
+			case 49931:
+			{
+			caprabivity = photing / (51851 % 64756 % 67558); 
+		 break;
+			}
+			case 26501:
+			{
+			caprabivity = photing % (-99608 - 26909 % 98728 / 19133 * 69770); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float tondaciousstringia = caprabivity - 7145;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
 
         eyeBtn.selected = NO;
     }

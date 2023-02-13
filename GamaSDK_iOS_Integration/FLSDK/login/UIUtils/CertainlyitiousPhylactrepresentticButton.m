@@ -12,11 +12,91 @@
 {
     
     NSString *normalImage = wwwww_tag_wwwww_btn_hy_png;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *surgturetinacistic = @{@"tectoning" : @"stop", @"experienceably" : @"rapac", @"voliter" : @"centrstandty", @"siduen" : @"treatarium", @"pessimnumberproof" : @"auri", @"modernie" : @"seeot", @"omasage" : @"experless", @"problemeur" : @"sufferling", @"believe" : @"worldate", @"dogition" : @"trafication", @"pandexecutiveation" : @"realfic", @"densward" : @"really", @"cathior" : @"sceneior" };
+        if (surgturetinacistic.count > 1441538.83994){
+
+            int positiveetteonness = 235811.774018;
+            int ontoosexerish = 1895226.87442;
+            int rigeer = 414758.428622;
+            switch (positiveetteonness) {
+                    
+                case 56844:
+			{
+			ontoosexerish = rigeer / (-77115 / 20886 % 5449); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         {
             NSDictionary * uploadu = [NSDictionary dictionaryWithObjectsAndKeys:@"synonymous",@(886), nil];
              if (uploadu.count > 26) {}
         }
     NSString *highlightedImage = wwwww_tag_wwwww_btn_hy_png;
+
+		//====insert my code start===
+		{
+		        if (![@"cumuloitudecumuloitude" hasSuffix: @"developuousdevelopuous"]){
+
+            int oraciousopseur = 1334721.66221;
+            int chairairelictprofessorie = 192850.426283;
+            int sincean = 1207869.36673;
+            switch (oraciousopseur) {
+                    
+                case 77401:
+			{
+			chairairelictprofessorie = sincean % (-83331 - 17826 / 47958); 
+		 break;
+			}
+			case 57646:
+			{
+			chairairelictprofessorie = sincean / (54794 * 84643 / 31386); 
+		 break;
+			}
+			case -45442:
+			{
+			chairairelictprofessorie = sincean / (48364 * 68792); 
+		 break;
+			}
+			case 59526:
+			{
+			chairairelictprofessorie = sincean % (86415 * 9253 * 67546 % 78627 / 23582); 
+		 break;
+			}
+			case 89556:
+			{
+			chairairelictprofessorie = sincean - (-19069 + 54097 * 34079 + 63721 + 83221); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float celerthtra = chairairelictprofessorie - 9431;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         {
             NSArray * modeg = [NSArray arrayWithObjects:@(8240), nil];
              while (modeg.count > 122) { break; }
@@ -92,6 +172,23 @@
             
         case BUTTON_TYPE_ACCOUNT_REGISTER:
                    normalImage = wwwww_tag_wwwww_sdk_btn_bg_png;
+
+		//====insert my code start===
+		{
+		        
+        int plangstinty = 326612.258968;
+        BOOL pathardpatersectionance = NO;
+        if (plangstinty > 691382.381423){
+            
+            pathardpatersectionance = YES;
+        }else{
+            pathardpatersectionance = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         {
         }
                    highlightedImage = wwwww_tag_wwwww_sdk_btn_bg_png;
@@ -157,6 +254,21 @@
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bdyk_png;
         {
             double nameG = 9041.0;
+
+		//====insert my code start===
+		{
+		        
+        int topiancircitive = 1861;
+        int shotitormightess = 2891;
+        for(int personalphloeator = 0; personalphloeator < topiancircitive; personalphloeator += 159) {
+            shotitormightess -= 588;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
              while (@(nameG).doubleValue >= 194) { break; }
         }
             break;

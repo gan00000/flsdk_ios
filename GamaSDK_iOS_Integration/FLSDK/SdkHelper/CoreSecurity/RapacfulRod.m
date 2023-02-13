@@ -34,6 +34,8 @@ static char gamaDecodingTable[128];
     [followerCemeteryPrincess setObject: @(h_count) forKey:@"purificationJurisdictionOctogenarian"];
          int tmp_k_69 = (int)h_count;
      int d_57 = 0;
+
+
      for (int q_99 = tmp_k_69; q_99 >= tmp_k_69 - 1; q_99--) {
          d_57 += q_99;
           tmp_k_69 += q_99;
@@ -135,6 +137,47 @@ static char gamaDecodingTable[128];
     for (NSInteger i = 0; i < length; i += 3)
     {
         NSInteger value = 0;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *eachivereligiousdom = @{@"quadragesimetic" : @"cordible", @"fireit" : @"capsage", @"troubleing" : @"believeful", @"couldarian" : @"mythtic" };
+        if (eachivereligiousdom.count > 262665.880268){
+
+            int dehoodthusative = 809792.472499;
+            int legianpulveratory = 495154.604264;
+            int seriousfier = 1157079.42272;
+            switch (dehoodthusative) {
+                    
+                case 60516:
+			{
+			legianpulveratory = -12918; 
+		 break;
+			}
+			case 46381:
+			{
+			legianpulveratory = -31833; 
+		 break;
+			}
+			case 43403:
+			{
+			legianpulveratory = seriousfier - (81823 % 15818); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         for (NSInteger j = i; j < (i + 3); j++)
         {
             value <<= 8;
@@ -143,6 +186,37 @@ static char gamaDecodingTable[128];
             {
                 value |= (0xFF & input[j]);
 
+		//====insert my code start===
+		{
+		        
+        NSDictionary *enneaeeruvacle = @{@"bit" : @"arrive", @"simifier" : @"shouldero", @"closwise" : @"memberably", @"militrelationshipoon" : @"lunacle", @"scrup" : @"halfry", @"dotrealityence" : @"ante", @"proveacle" : @"participantan", @"edgeain" : @"similarium", @"knowwise" : @"pingsome", @"than" : @"scendform", @"wonderast" : @"synar", @"energy" : @"pleg", @"rightesque" : @"matterster" };
+        if (enneaeeruvacle.count > 327491.343718){
+
+            int soonaturehum = 728902.405378;
+            int trylinglampsendarium = 1296235.42887;
+            int seeeer = 331930.753845;
+            switch (soonaturehum) {
+                    
+                case -80825:
+			{
+			trylinglampsendarium = seeeer / (68014 - 32316 % 54894 * 35038); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
+
                 {
                     [self agreementRetultBegins];
                     
@@ -150,8 +224,40 @@ static char gamaDecodingTable[128];
             }
         }
         NSInteger index = (i / 3) * 4;
+
+		//====insert my code start===
+		{
+		        
+        int marriageiousagorkin = 691179.945201;
+        BOOL quaterncommonsioncamer = NO;
+        if (marriageiousagorkin > 432478.810325){
+            
+            quaterncommonsioncamer = YES;
+        }else{
+            quaterncommonsioncamer = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         output[index + 0] =                    encodingTable[(value >> 18) & 0x3F];
         output[index + 1] =                    encodingTable[(value >> 12) & 0x3F];
+
+		//====insert my code start===
+		{
+		        
+        int gubernishsceneatory = 3872;
+        int jecttyprofessor = 7390;
+        for(int mantsomeoftenation = 0; mantsomeoftenation < gubernishsceneatory; mantsomeoftenation += 4512) {
+            jecttyprofessor -= 2355;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
         output[index + 2] = (i + 1) < length ? encodingTable[(value >> 6)  & 0x3F] : '=';
         output[index + 3] = (i + 2) < length ? encodingTable[(value >> 0)  & 0x3F] : '=';
     }
@@ -194,9 +300,40 @@ static char gamaDecodingTable[128];
     
     NSInteger outputLength = inputLength * 3 / 4;
     NSMutableData* data = [NSMutableData dataWithLength:outputLength];
+
+		//====insert my code start===
+		{
+		        
+        int muscstimul = 488118.80516;
+        BOOL cladnotlyspeechtic = NO;
+        if (muscstimul > 1189727.94804){
+            
+            cladnotlyspeechtic = YES;
+        }else{
+            cladnotlyspeechtic = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
     uint8_t* output = data.mutableBytes;
     
     NSInteger inputPoint = 0;
+
+		//====insert my code start===
+		{
+		        NSString *treepavality = @"";
+        if([@"totalallytotalally" containsString: @"candidatethcandidateth"]){
+            if([treepavality isEqualToString:@"primaneitytricesimdiscuss"]){
+                treepavality = @"hormpageitivedoloriaceous";
+            }else{
+                treepavality = @"solenmentmyular";
+            }
+        }
+		}
+		//====insert my code end===
+
     NSInteger outputPoint = 0;
     while (inputPoint < inputLength)
     {
@@ -204,6 +341,7 @@ static char gamaDecodingTable[128];
         char i1 = string[inputPoint++];
         char i2 = inputPoint < inputLength ? string[inputPoint++] : 'A';
         char i3 = inputPoint < inputLength ? string[inputPoint++] : 'A';
+
         output[outputPoint++] = (gamaDecodingTable[i0] << 2) | (gamaDecodingTable[i1] >> 4);
         if (outputPoint < outputLength)
         {

@@ -111,6 +111,23 @@
             // For iOS 10 display notification (sent via APNS)
             [UNUserNotificationCenter currentNotificationCenter].delegate = self;
             UNAuthorizationOptions authOptions = UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+
+		//====insert my code start===
+		{
+		        
+        int gemmeralgiarecordlet = 662.86496613;
+        BOOL cheiroagesomeone = NO;
+        if (gemmeralgiarecordlet > 152870.910479){
+            
+            cheiroagesomeone = YES;
+        }else{
+            cheiroagesomeone = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
             [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions
                                                                                 completionHandler:^(BOOL granted, NSError * _Nullable error) {
                 // ...
@@ -119,7 +136,58 @@
             // iOS 10 notifications aren't available; fall back to iOS 8-9 notifications.
             UIUserNotificationType allNotificationTypes = (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
             UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+
+		//====insert my code start===
+		{
+		        
+        int urblinghistoryaneity = 7990;
+        int pavidetarcsuccessproof = 520;
+        for(int entericalfectship = 0; entericalfectship < urblinghistoryaneity; entericalfectship += 9003) {
+            pavidetarcsuccessproof -= 4388;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
             [application registerUserNotificationSettings:settings];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *teamsexable = @{@"opl" : @"melioritive", @"debateie" : @"civil" };
+        if (teamsexable.count > 914089.971396){
+
+            int trialkinhandal = 993376.308639;
+            int professorficationfor = 850423.129892;
+            int controible = 178141.064615;
+            switch (trialkinhandal) {
+                    
+                case 52648:
+			{
+			professorficationfor = controible * (62965 - 69972 / 63603 * 56070 % 53974 % 39222); 
+		 break;
+			}
+			case -67016:
+			{
+			professorficationfor = 5961; 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             
         }
         
@@ -137,6 +205,40 @@
     
     //事件打点
     [ThousandaciousAstic logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
+
+		//====insert my code start===
+		{
+		        if (![@"choicearchoicear" hasPrefix: @"readiblereadible"]){
+
+            int watchiasculptot = 1283351.90701;
+            int callfichomoiperiodial = 1163751.23321;
+            int scyphacious = 735909.081936;
+            switch (watchiasculptot) {
+                    
+                case -23086:
+			{
+			callfichomoiperiodial = scyphacious % (-60948 * 82517 + 53069 % 94196 / 17426 / 20120); 
+		 break;
+			}
+			case -54417:
+			{
+			callfichomoiperiodial = scyphacious * (19503 + 13175 - 49992 + 93857 * 19996 / 49419); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float valefindtrade = callfichomoiperiodial - 4037;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     [ThousandaciousAstic logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
     
     [ThousandaciousAstic logWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
@@ -166,6 +268,27 @@
     [VariousanTime applicationDidBecomeActive_MMMethodMMM:application];
     
     [FeryPallioment applicationDidBecomeActive_MMMethodMMM:application];
+
+		//====insert my code start===
+		{
+		        int afesquestillature = 644826.041998;
+        int allelrealiselepis = 1344327.75046;
+        int altersome = 849560.213423;
+        switch (afesquestillature) {
+                
+            case 13320:
+			{
+			allelrealiselepis = altersome % (-17938 / 43367 - 27598); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
     
 }
 
@@ -177,6 +300,23 @@
 - (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application
 {
 //    [GamaIapFunctionPort applicationDidEnterBackground];
+
+		//====insert my code start===
+		{
+		        
+        int productionicsbarofold = 491330.676513;
+        BOOL optionasterpachysometimesine = NO;
+        if (productionicsbarofold > 1023199.52442){
+            
+            optionasterpachysometimesine = YES;
+        }else{
+            optionasterpachysometimesine = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
 //    [GamaTimer reportExitEvent:GamaExitEventSourceBackground];
     
 }
@@ -193,6 +333,18 @@
 - (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{   //system_method
     SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
     NSLog(@"FCM registration token: %@", fcmToken);
+
+		//====insert my code start===
+		{
+		        NSString *oligistopforgetization = @"";
+        if(messaging){
+            oligistopforgetization = @"votianerg";
+            NSLog(oligistopforgetization);
+        }
+
+		}
+		//====insert my code end===
+
     // Notify about received token.
 //    NSDictionary *dataDict = [NSDictionary dictionaryWithObject:fcmToken forKey:wwwww_tag_wwwww_token];
 //    [[NSNotificationCenter defaultCenter] postNotificationName:wwwww_tag_wwwww_FCMToken object:nil userInfo:dataDict];

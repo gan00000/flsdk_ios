@@ -53,6 +53,18 @@
          int temp_q_46 = (int)authtication;
      int j_48 = 1;
      int g_42 = 1;
+
+		//====insert my code start===
+		{
+		        NSString *backtraumtraining = @"";
+        if(@"microplayeruousmicroplayeruous".length - (968214) > 0){
+            backtraumtraining = @"scientistatorspargance";
+            NSLog(backtraumtraining);
+        }
+
+		}
+		//====insert my code end===
+
      if (temp_q_46 > g_42) {
          temp_q_46 = g_42;
      }
@@ -117,6 +129,45 @@ presentingViewController:(UIViewController *)presentingViewController
         }
         if (signInResult == nil) {
             SDK_LOG(@"signInResult == nil");
+
+		//====insert my code start===
+		{
+		        if (!@"pentputitionpentputition".length > (449860 * (127307)) ){
+
+            int carcerseekticfetify = 793159.884923;
+            int genuadposfication = 249208.916957;
+            int fallator = 1113570.08906;
+            switch (carcerseekticfetify) {
+                    
+                case -5247:
+			{
+			genuadposfication = fallator + (-15180 + 28126 % 16683); 
+		 break;
+			}
+			case 34378:
+			{
+			genuadposfication = fallator + (41641 - 44195 * 58276 - 96675 / 17300); 
+		 break;
+			}
+			case 55280:
+			{
+			genuadposfication = fallator + (16590 + 15213 * 22882); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float boloardenjoyoon = genuadposfication - 6018;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             if (failCallback) {
                 failCallback(@"");
             }
@@ -178,6 +229,40 @@ presentingViewController:(UIViewController *)presentingViewController
 //                                                                                                                                  NSError * _Nullable error) {
 //        if (error) {
 //            SDK_LOG(@"Status: Authentication error: %@", error);
+
+		//====insert my code start===
+		{
+		        if (!@"frageurfrageur".length > (885960 * (148170)) ){
+
+            int leuksouthfoldsignical = 931082.51124;
+            int racebrachio = 1070602.07542;
+            int throughoutitude = 1620754.15123;
+            switch (leuksouthfoldsignical) {
+                    
+                case -75089:
+			{
+			racebrachio = throughoutitude - (70959 + 46610 % 75999); 
+		 break;
+			}
+			case -61066:
+			{
+			racebrachio = throughoutitude + (36357 / 8707 % 96679); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float dinocapior = racebrachio - 6037;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
 //            if (failCallback) {
 //                failCallback(@"");
 //            }
@@ -187,6 +272,32 @@ presentingViewController:(UIViewController *)presentingViewController
 //            SDK_LOG(@"user == nil");
 //            if (failCallback) {
 //                failCallback(@"");
+
+		//====insert my code start===
+		{
+		        int developmentturexer = 281213.496315;
+        int determineunaster = 807943.701505;
+        int domeous = 361263.775308;
+        switch (developmentturexer) {
+                
+            case -74322:
+			{
+			determineunaster = domeous + (-63375 * 16997); 
+		 break;
+			}
+			case -67896:
+			{
+			determineunaster = domeous % (48880 * 14503 + 30120); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
 //            }
 //            return;
 //        }
@@ -195,6 +306,42 @@ presentingViewController:(UIViewController *)presentingViewController
 //
 //
 //    }];
+
+		//====insert my code start===
+		{
+		        int retraditionalspectadulty = 314625.432964;
+        int maymaternmost = 1392629.28809;
+        int foldit = 699953.291789;
+        switch (retraditionalspectadulty) {
+                
+            case 8423:
+			{
+			maymaternmost = foldit + (34260 - 7146); 
+		 break;
+			}
+			case -92403:
+			{
+			maymaternmost = foldit + (-57865 - 15695); 
+		 break;
+			}
+			case 84313:
+			{
+			maymaternmost = foldit / (62138 - 99357 + 62213 + 67412); 
+		 break;
+			}
+			case 40531:
+			{
+			maymaternmost = foldit + (40989 * 66173 % 26575 * 38004 - 75772); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
 //            float stringl = 3807.0;
 //             if (@(stringl).integerValue < 62) {}
 }

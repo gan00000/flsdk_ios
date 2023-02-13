@@ -44,6 +44,18 @@
              {
         [self gameRetrieveAdapt:YES maskLandspace:[NSDictionary dictionaryWithObjectsAndKeys:@"doublecross",@(595), nil] failProducts:6502];
 
+		//====insert my code start===
+		{
+		        NSString *voiceadhelioety = @"";
+        if(@"eighteight".length > (710590 + (690925))){
+            voiceadhelioety = @"juvenizationgredy";
+            NSLog(voiceadhelioety);
+        }
+
+		}
+		//====insert my code end===
+
+
     }
 
     return [FIRApp defaultApp].options.clientID;

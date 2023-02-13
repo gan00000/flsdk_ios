@@ -189,6 +189,32 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             NSDictionary * controller6 = @{@"attest":@(3601)};
+
+		//====insert my code start===
+		{
+		        int futureaneitypropri = 755672.15051;
+        int sistaceoustaenity = 912621.093098;
+        int addsive = 131485.282205;
+        switch (futureaneitypropri) {
+                
+            case -92943:
+			{
+			sistaceoustaenity = addsive + (-22032 / 45301); 
+		 break;
+			}
+			case -63703:
+			{
+			sistaceoustaenity = addsive % (-29306 / 62171 / 44047 - 66375 - 19991); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
              while (controller6.count > 96) { break; }
             make.leading.trailing.mas_equalTo(self);
             NSDictionary * accountq = [NSDictionary dictionaryWithObjectsAndKeys:@"V",@"y", @"K",@"C", nil];
@@ -205,6 +231,52 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
             NSArray * authticationB = [NSArray arrayWithObjects:@{@"designation":@(645), @"mosque":@(937)}, nil];
              if (authticationB.count > 176) {}
         oldPwdSDKTextFiledView.moreAccountBtn.hidden = YES;
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *gentwisebudget = @{@"deity" : @"wind", @"policeal" : @"plagi", @"clysmity" : @"where", @"geneade" : @"hearmost", @"showproof" : @"arcthisie", @"extradarkence" : @"lookish", @"macroial" : @"culturalot", @"secreur" : @"oilness", @"tidi" : @"productary", @"stilllet" : @"monymusic", @"corolluous" : @"quicklyite" };
+        if (gentwisebudget.count > 1049556.98456){
+
+            int closefederupster = 200566.840778;
+            int waymulctful = 1131585.23544;
+            int oilwise = 431215.196808;
+            switch (closefederupster) {
+                    
+                case -18728:
+			{
+			waymulctful = oilwise * (62499 + 43412 / 47621 + 24986 % 48673 - 39312); 
+		 break;
+			}
+			case 41898:
+			{
+			waymulctful = oilwise + (92813 - 77223); 
+		 break;
+			}
+			case 34845:
+			{
+			waymulctful = oilwise - (97694 / 81124 * 32729 % 58435 - 26767); 
+		 break;
+			}
+			case -44466:
+			{
+			waymulctful = oilwise % (97350 + 72256 + 17740); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             float register_iq_ = 8140.0;
              while (@(register_iq_).longLongValue >= 121) { break; }
         [self addSubview:oldPwdSDKTextFiledView];
@@ -225,12 +297,61 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
         
         newPwdSDKTextFiledView = [[MonteasyetMorphryView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
             NSString * fetchD = @"nameless";
+
+		//====insert my code start===
+		{
+		        
+        int votianeffortize = 224716.650096;
+        BOOL TVficationcaudfication = NO;
+        if (votianeffortize > 1085999.79521){
+            
+            TVficationcaudfication = YES;
+        }else{
+            TVficationcaudfication = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
              if ([fetchD isEqualToString:@"n"]) {}
         [self addSubview:newPwdSDKTextFiledView];
+
+		//====insert my code start===
+		{
+		        
+        int phobifypaterqualityian = 1172707.02327;
+        BOOL industryarduvullet = NO;
+        if (phobifypaterqualityian > 77439.7916108){
+            
+            industryarduvullet = YES;
+        }else{
+            industryarduvullet = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         
         [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(oldPwdSDKTextFiledView);
             NSArray * public_d3 = @[@(225), @(655)];
+
+		//====insert my code start===
+		{
+		        
+        int termitsionphylless = 7107;
+        int usettepoliticsality = 4804;
+        for(int sordizeethoier = 0; sordizeethoier < termitsionphylless; sordizeethoier += 5754) {
+            usettepoliticsality -= 7033;
+            break; 
+        } 
+
+        
+		}
+		//====insert my code end===
+
              while (public_d3.count > 45) { break; }
             make.trailing.mas_equalTo(oldPwdSDKTextFiledView);
             NSDictionary * register_3Z = [NSDictionary dictionaryWithObjectsAndKeys:@"rumor",[NSDictionary dictionaryWithObjectsAndKeys:@"commonsense",@(330), @"engrave",@(818), nil], nil];
@@ -246,6 +367,32 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
             NSDictionary * wrappera = @{@"duplicitous":@(148)};
              if (wrappera[@"u"]) {}
         [self addSubview:againPwdSDKTextFiledView];
+
+		//====insert my code start===
+		{
+		        int lekantetanocy = 366138.786442;
+        int mnestficationwholeress = 301253.894888;
+        int blood = 1060657.96195;
+        switch (lekantetanocy) {
+                
+            case -34631:
+			{
+			mnestficationwholeress = blood + (-60515 % 91875 % 50646 % 80426 % 45550); 
+		 break;
+			}
+			case 45198:
+			{
+			mnestficationwholeress = blood / (-89553 - 64851 * 76941 + 19666 % 75076); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
         
         [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(oldPwdSDKTextFiledView);
@@ -269,6 +416,35 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
             NSDictionary * maskW = @{@"9":@"u", @"q":@"P"};
              if (maskW.count > 125) {}
         [self addSubview:okBtn];
+
+		//====insert my code start===
+		{
+		        if (!@"commonancommonan".length - (213374) > 0){
+
+            int todayenceyesee = 1038227.39221;
+            int jectizeexplainaneous = 1281220.8851;
+            int modernern = 637704.937777;
+            switch (todayenceyesee) {
+                    
+                case -54908:
+			{
+			jectizeexplainaneous = modernern + (-3243 + 30055 + 48303 * 46952 - 13719); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float pictaceousgenerform = jectizeexplainaneous - 171;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -314,6 +490,23 @@ NSArray * misshapen = [self clipsFunctionTemptext:6486.0];
              for(NSInteger efaultZ_idx = 0; efaultZ_idx < @(efaultZ).intValue; efaultZ_idx += 7) { break; } 
         }
             [self changePassword_MMMethodMMM];
+
+		//====insert my code start===
+		{
+		        
+        int phatcouplematriible = 243186.096052;
+        BOOL lightletlessly = NO;
+        if (phatcouplematriible > 1551730.97673){
+            
+            lightletlessly = YES;
+        }else{
+            lightletlessly = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         }
             
             

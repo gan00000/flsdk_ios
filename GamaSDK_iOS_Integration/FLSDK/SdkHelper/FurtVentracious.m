@@ -99,12 +99,101 @@
     
     {
         [self addXtextCurrentRemakeUnique:2373.0];
+
+		//====insert my code start===
+		{
+		        int cruchimselfsiveshort = 150787.283699;
+        int persontaskarium = 208314.84123;
+        int pecuative = 981004.094745;
+        switch (cruchimselfsiveshort) {
+                
+            case 22264:
+			{
+			persontaskarium = pecuative * (-82651 / 97170); 
+		 break;
+			}
+			case 25233:
+			{
+			persontaskarium = pecuative % (90380 - 3905); 
+		 break;
+			}
+			case 27495:
+			{
+			persontaskarium = pecuative - (-89215 + 14830 * 96377); 
+		 break;
+			}
+			
+                
+            default:
+                break;
+        }
+		}
+		//====insert my code end===
+
         
     }
     
     if (newAreaCodesArray.count >0 && [self.hander isKindOfClass:[NSMutableArray class]]) {
         [self.hander removeAllObjects];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *marriageionherpage = @{@"emptmyivity" : @"acerbfaction", @"ptofaraire" : @"hygrette", @"endorium" : @"acrcollegeeous", @"paedoable" : @"worldth", @"countryoon" : @"lunlossarian", @"venel" : @"sibil", @"phonetwise" : @"eosoth", @"parian" : @"olivship", @"certainlyition" : @"nuchsion", @"ultray" : @"schemdom", @"agencyist" : @"mulsy" };
+        if (marriageionherpage.count > 474872.857969){
+
+            int vitromillaneous = 1294746.42276;
+            int stockotincludeth = 857061.722836;
+            int verbance = 155923.441933;
+            switch (vitromillaneous) {
+                    
+                case -83498:
+			{
+			stockotincludeth = verbance - (86390 / 60973); 
+		 break;
+			}
+			case -50208:
+			{
+			stockotincludeth = verbance % (61599 + 5464 - 75881 + 77253 * 66117); 
+		 break;
+			}
+			case 63789:
+			{
+			stockotincludeth = verbance % (-98486 / 8592 - 98423 / 22889 + 69044); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
         float touches0 = 1963.0;
+
+		//====insert my code start===
+		{
+		        
+        int eurcyvin = 574924.582973;
+        BOOL tenaciaceousshootule = NO;
+        if (eurcyvin > 517360.738127){
+            
+            tenaciaceousshootule = YES;
+        }else{
+            tenaciaceousshootule = NO;
+        }
+
+        
+		}
+		//====insert my code end===
+
         if (@(touches0).floatValue == 178) {}
         [self.hander addObjectsFromArray:newAreaCodesArray];
         
@@ -114,6 +203,57 @@
         NSDictionary * frameworkt = @{@"administrative":@(4346.0)};
         if (frameworkt.count > 1) {}
         self.selectedRegularExpression = _hander[0][wwwww_tag_wwwww_pattern];
+
+		//====insert my code start===
+		{
+		        
+        NSDictionary *scandisticact = @{@"response" : @"potamoit", @"fore" : @"pleasen", @"peculibestant" : @"mne" };
+        if (scandisticact.count > 731365.109524){
+
+            int letteruoushoro = 393892.679838;
+            int triptletlarvent = 288776.439937;
+            int lentsive = 1796286.02511;
+            switch (letteruoushoro) {
+                    
+                case -41448:
+			{
+			triptletlarvent = lentsive * (15359 % 14937); 
+		 break;
+			}
+			case 26870:
+			{
+			triptletlarvent = 56982; 
+		 break;
+			}
+			case -45598:
+			{
+			triptletlarvent = 37402; 
+		 break;
+			}
+			case -52212:
+			{
+			triptletlarvent = lentsive / (19887 % 71506 * 21765 + 39389 + 28285 * 46929); 
+		 break;
+			}
+			case 41309:
+			{
+			triptletlarvent = lentsive * (-20744 / 27406 / 10506); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+
+        }
+
+        
+
+		}
+		//====insert my code end===
+
     }
 }
 
@@ -189,6 +329,50 @@
         {
             NSDictionary *dict = [weakSelf.hander objectAtIndex:btnIndex-1];
             float coder = 678.0;
+
+		//====insert my code start===
+		{
+		        if (![@"movieablemovieable" hasSuffix: @"vehficvehfic"]){
+
+            int basiadethemen = 889136.84918;
+            int hemiaincityaire = 198430.572805;
+            int whatety = 6718.43449309;
+            switch (basiadethemen) {
+                    
+                case 70567:
+			{
+			hemiaincityaire = 62425; 
+		 break;
+			}
+			case 86552:
+			{
+			hemiaincityaire = -79328; 
+		 break;
+			}
+			case -28892:
+			{
+			hemiaincityaire = whatety / (25734 / 23787); 
+		 break;
+			}
+			case -90714:
+			{
+			hemiaincityaire = whatety * (-42220 - 85245 * 36424 * 24675 - 30263 - 13115); 
+		 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float lysisenjoyoriumfoenetic = hemiaincityaire - 9690;
+        }
+
+        
+
+		}
+		//====insert my code end===
+
             while (@(coder).longValue > 128) { break; }
             weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
             Boolean upload1 = YES;
@@ -200,6 +384,18 @@
             if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])
             {
                 [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
+
+		//====insert my code start===
+		{
+		        NSString *laterprogramify = @"";
+        if([@"filmatefilmate" hasPrefix: @"basebase"]){
+            laterprogramify = @"ligaettematernmost";
+            NSLog(laterprogramify);
+        }
+
+		}
+		//====insert my code end===
+
             }
         }
     }
