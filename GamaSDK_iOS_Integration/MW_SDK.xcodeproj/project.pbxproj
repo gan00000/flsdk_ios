@@ -34,7 +34,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */ = {isa = PBXBuildFile; fileRef = 030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */; };
+		030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt */; };
 		030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */ = {isa = PBXBuildFile; fileRef = 030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */; };
 		030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */; };
 		030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
@@ -1202,7 +1202,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5bdd7061f32dc87dc093306cee6ec846.txt; sourceTree = "<group>"; };
+		030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5bdd7061f32dc87dc093306cee6ec846-1.txt"; sourceTree = "<group>"; };
 		030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_xinhai_chmxt.json; sourceTree = "<group>"; };
 		030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030D36092999F437001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -2845,7 +2845,7 @@
 		E9150D282383E6640003F1FB /* V4 */ = {
 			isa = PBXGroup;
 			children = (
-				030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */,
+				030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt */,
 				030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */,
 				030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */,
 				03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */,
@@ -3319,7 +3319,7 @@
 			files = (
 				030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */,
 				032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */,
-				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */,
+				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt in Resources */,
 				03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */,
 				033DBCD2298D0BA7004F28E4 /* NOTICES in Resources */,
 				033DBD0E298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,

@@ -55,6 +55,8 @@
 	<string>bb38401adb12a4615d1a0c8dad838e61</string>
 	<key>FacebookDisplayName</key>
 	<string>Mushroom &amp; Heroes RPG</string>
+    <key>GIDClientID</key>
+    <string>811342040239-561aids5fejlna0klohef7djuuaq1m0n.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>line</string>
