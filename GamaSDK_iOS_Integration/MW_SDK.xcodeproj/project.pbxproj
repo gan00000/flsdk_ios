@@ -34,6 +34,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */ = {isa = PBXBuildFile; fileRef = 030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */; };
+		030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */ = {isa = PBXBuildFile; fileRef = 030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */; };
+		030D36072999F3DE001AAFC0 /* chmxtios-res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */; };
+		030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */; };
+		030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
 		030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */; };
 		030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
 		030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
@@ -837,7 +842,6 @@
 		039B2692298B557400045C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		039B2693298B557400045C53 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		039B2694298B557400045C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		039B2699298B557400045C53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
 		039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		039B269D298B557400045C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		039B26A0298B557400045C53 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -942,10 +946,7 @@
 		03F542BA2940BC5D00F75F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		03F542BB2940BC5D00F75F51 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		03F542BC2940BC5D00F75F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		03F542BE2940BC5D00F75F51 /* com_mplay_wlzhs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */; };
 		03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */; };
-		03F542C02940BC5D00F75F51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
-		03F542C22940BC5D00F75F51 /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */; };
 		03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -1203,6 +1204,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5bdd7061f32dc87dc093306cee6ec846.txt; sourceTree = "<group>"; };
+		030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_xinhai_chmxt.json; sourceTree = "<group>"; };
+		030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "chmxtios-res.bundle"; sourceTree = "<group>"; };
+		030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		030D36092999F437001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
 		030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewV2.m; sourceTree = "<group>"; };
 		030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithRegViewV2.h; sourceTree = "<group>"; };
@@ -2000,6 +2006,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030D35FF2999F1E0001AAFC0 /* V5 */ = {
+			isa = PBXGroup;
+			children = (
+				030D36092999F437001AAFC0 /* GoogleService-Info.plist */,
+				03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */,
+				03554A74299651E20078EFFB /* com_miaoou_gwsg.json */,
+				0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */,
+			);
+			path = V5;
+			sourceTree = "<group>";
+		};
+		030D36002999F21E001AAFC0 /* V2 */ = {
+			isa = PBXGroup;
+			children = (
+				32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */,
+				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */,
+				03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */,
+				03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */,
+				E9150D292383E6640003F1FB /* SDKResources.bundle */,
+				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
+				0386139D293897C900CC9C44 /* SDKResourcesV3.bundle */,
+			);
+			path = V2;
+			sourceTree = "<group>";
+		};
 		030FAA0028A0FA7C00709536 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2818,27 +2849,21 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
-		E9150D282383E6640003F1FB /* GOT */ = {
+		E9150D282383E6640003F1FB /* V4 */ = {
 			isa = PBXGroup;
 			children = (
-				03554A74299651E20078EFFB /* com_miaoou_gwsg.json */,
-				03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */,
-				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */,
-				03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */,
-				03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */,
-				E9150D292383E6640003F1FB /* SDKResources.bundle */,
-				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
-				0386139D293897C900CC9C44 /* SDKResourcesV3.bundle */,
+				030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */,
+				030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */,
+				030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */,
+				030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */,
 				03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */,
-				0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */,
 			);
-			path = GOT;
+			path = V4;
 			sourceTree = "<group>";
 		};
 		E97411C320874A170018E1A6 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */,
 				E97411C420874A170018E1A6 /* AppDelegate.h */,
 				E97411C520874A170018E1A6 /* AppDelegate.m */,
 				E97411C820874A170018E1A6 /* IAP_ViewController.h */,
@@ -2858,7 +2883,9 @@
 			isa = PBXGroup;
 			children = (
 				32506C1924F920F900010D7B /* ThirkLib */,
-				E9150D282383E6640003F1FB /* GOT */,
+				030D36002999F21E001AAFC0 /* V2 */,
+				E9150D282383E6640003F1FB /* V4 */,
+				030D35FF2999F1E0001AAFC0 /* V5 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -3284,7 +3311,7 @@
 			files = (
 				03554A77299651E20078EFFB /* com_miaoou_gwsg.plist in Resources */,
 				03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */,
-				039B2699298B557400045C53 /* GoogleService-Info.plist in Resources */,
+				030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */,
 				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
 				033DBCD3298D0BA7004F28E4 /* NOTICES in Resources */,
 				033DBD0F298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,
@@ -3298,14 +3325,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */,
 				032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */,
-				03F542BE2940BC5D00F75F51 /* com_mplay_wlzhs.plist in Resources */,
+				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */,
 				03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */,
-				03F542C02940BC5D00F75F51 /* GoogleService-Info.plist in Resources */,
 				033DBCD2298D0BA7004F28E4 /* NOTICES in Resources */,
-				03F542C22940BC5D00F75F51 /* com_mplay_wlzhs.json in Resources */,
+				030D36072999F3DE001AAFC0 /* chmxtios-res.bundle in Resources */,
 				033DBD0E298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,
 				033DBCD6298D0BA7004F28E4 /* README.md in Resources */,
+				030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */,
 				03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */,
 				03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */,
 			);
@@ -5031,7 +5059,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RA4K92S7FF;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5ZWQQ6MZ65;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5063,11 +5091,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mplay.wlzhs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhai.chmxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "wlzhs-dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "snmxw-dev";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -5101,7 +5129,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RA4K92S7FF;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5ZWQQ6MZ65;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5133,11 +5161,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mplay.wlzhs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhai.chmxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "wlzhs-dis";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "snmxw-dis";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
