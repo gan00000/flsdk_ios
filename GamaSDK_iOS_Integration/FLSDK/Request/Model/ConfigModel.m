@@ -17,7 +17,7 @@
         
         self.visitorLogin = YES;
         self.fbLogin = YES;
-        self.googleLogin = YES;
+        self.googleLogin = NO;//苹果登录默认隐藏，Android端默认显示
         self.lineLogin = YES;
         self.appleLogin = YES;
         self.deleteAccount = NO;

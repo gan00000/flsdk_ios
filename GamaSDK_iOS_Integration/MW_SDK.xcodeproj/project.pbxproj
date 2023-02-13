@@ -944,7 +944,6 @@
 		03F542BA2940BC5D00F75F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		03F542BB2940BC5D00F75F51 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		03F542BC2940BC5D00F75F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */; };
 		03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -3320,7 +3319,6 @@
 				030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */,
 				032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */,
 				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt in Resources */,
-				03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */,
 				033DBCD2298D0BA7004F28E4 /* NOTICES in Resources */,
 				033DBD0E298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,
 				033DBCD6298D0BA7004F28E4 /* README.md in Resources */,

@@ -467,7 +467,7 @@
 #define getsdkLanguage_MMMethodMMM getsdkLanguage_MMMethodMMM
 #define reissue_MMMethodMMM reissue
 #define logServerWithEventName_MMMethodMMM          logServerWithEventName_MMMethodMMM
-#define logServerWithEventName_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
+#define getJsonContentWithBundle_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
 
 
 #endif  /* codeObfuscation_h */
