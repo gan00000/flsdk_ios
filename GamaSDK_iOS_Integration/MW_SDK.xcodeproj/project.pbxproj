@@ -36,7 +36,6 @@
 /* Begin PBXBuildFile section */
 		030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */ = {isa = PBXBuildFile; fileRef = 030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */; };
 		030D36062999F3DE001AAFC0 /* com_xinhai_chmxt.json in Resources */ = {isa = PBXBuildFile; fileRef = 030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */; };
-		030D36072999F3DE001AAFC0 /* chmxtios-res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */; };
 		030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */; };
 		030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
 		030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */; };
@@ -897,7 +896,6 @@
 		039B26E5298B557400045C53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		039B26E6298B557400045C53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 030FAA6328A1142900709536 /* SDKResourcesV2.bundle */; };
 		03B5F46E2903ECEA00D1F03E /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */; };
 		03B5F46F2903ECEA00D1F03E /* com_mplay_wlzhs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
@@ -1206,7 +1204,6 @@
 /* Begin PBXFileReference section */
 		030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5bdd7061f32dc87dc093306cee6ec846.txt; sourceTree = "<group>"; };
 		030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_xinhai_chmxt.json; sourceTree = "<group>"; };
-		030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "chmxtios-res.bundle"; sourceTree = "<group>"; };
 		030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030D36092999F437001AAFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
@@ -1219,7 +1216,6 @@
 		030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
 		030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
-		030FAA6328A1142900709536 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
 		030FAA6528A1FE5800709536 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
 		030FAA6628A1FE5800709536 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
 		030FAA6A28A2619500709536 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
@@ -1616,7 +1612,6 @@
 		CEE6B9601A149944009E77FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEF6E9291A35B45500CFFE2F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E90A13AE208ECED2007BC6A9 /* libGamaIAP_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaIAP_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9150D292383E6640003F1FB /* SDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResources.bundle; sourceTree = "<group>"; };
 		E92B434F2355D36400D45BF9 /* libGamaAD_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAD_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C238920CA665A00C27B2C /* libGamaCoreFunc_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaCoreFunc_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C23A420CE51CE00C27B2C /* libGamaAccountLogin_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAccountLogin_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2024,8 +2019,6 @@
 				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */,
 				03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */,
 				03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */,
-				E9150D292383E6640003F1FB /* SDKResources.bundle */,
-				030FAA6328A1142900709536 /* SDKResourcesV2.bundle */,
 				0386139D293897C900CC9C44 /* SDKResourcesV3.bundle */,
 			);
 			path = V2;
@@ -2853,7 +2846,6 @@
 			isa = PBXGroup;
 			children = (
 				030D36012999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt */,
-				030D36032999F3DE001AAFC0 /* chmxtios-res.bundle */,
 				030D36022999F3DE001AAFC0 /* com_xinhai_chmxt.json */,
 				030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */,
 				03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */,
@@ -3330,7 +3322,6 @@
 				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846.txt in Resources */,
 				03F542BF2940BC5D00F75F51 /* demoInfo.plist in Resources */,
 				033DBCD2298D0BA7004F28E4 /* NOTICES in Resources */,
-				030D36072999F3DE001AAFC0 /* chmxtios-res.bundle in Resources */,
 				033DBD0E298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,
 				033DBCD6298D0BA7004F28E4 /* README.md in Resources */,
 				030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */,
@@ -3343,7 +3334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A0CD5628AF6EEF0092CDE0 /* SDKResourcesV2.bundle in Resources */,
 				03B5F46F2903ECEA00D1F03E /* com_mplay_wlzhs.plist in Resources */,
 				033DBD0C298D0BA8004F28E4 /* GoogleSignIn.bundle in Resources */,
 				033DBCD4298D0BA7004F28E4 /* README.md in Resources */,
