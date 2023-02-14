@@ -76,7 +76,9 @@
 - (NSString *)selectedAreaCodeKey
 {
     if (!_selectedAreaCodeKey) {
-        if(self.hander.count > 0) self.selectedAreaCodeKey = [_hander[0] objectForKey:wwwww_tag_wwwww_key];
+        if(self.hander.count > 0) {
+            self.selectedAreaCodeKey = [_hander[0] objectForKey:wwwww_tag_wwwww_key];
+        }
     }
     return _selectedAreaCodeKey;
 }

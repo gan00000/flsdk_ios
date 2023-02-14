@@ -294,9 +294,14 @@
              while (@(drawC).floatValue < 61) { break; }
     OSStatus status = SecItemCopyMatching((CFDictionaryRef)query, (CFTypeRef *)&result);
     if (status == errSecItemNotFound)
+    {
         status = SecItemAdd((CFDictionaryRef)query, (CFTypeRef *)&result);
+    }
     if (status != errSecSuccess)
+    {
         return nil;
+    }
+        
     NSString *accessGroup = [(NSDictionary *)result objectForKey:kSecAttrAccessGroup];
             NSDictionary * fromL = @{@"y":@"G", @"K":@"t", @"A":@"2"};
              if (fromL.count > 176) {}

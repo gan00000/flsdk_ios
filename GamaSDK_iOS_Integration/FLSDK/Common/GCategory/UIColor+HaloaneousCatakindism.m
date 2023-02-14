@@ -209,11 +209,17 @@
     }
     
     if ([cString hasPrefix:@"0X"])
+    {
         cString = [cString substringFromIndex:2];
+    }
     if ([cString hasPrefix:@"#"])
+    {
         cString = [cString substringFromIndex:1];
+    }
     if ([cString length] != 6)
+    {
         return [UIColor clearColor];
+    }
     
     NSRange range;
     range.location = 0;
