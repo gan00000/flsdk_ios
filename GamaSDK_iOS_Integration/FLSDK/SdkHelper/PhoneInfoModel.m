@@ -102,7 +102,9 @@
 - (NSString *)selectedAreaCodeKey
 {
     if (!_selectedAreaCodeKey) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
+        if(self.gamaAreaCodesArray.count > 0){
+            self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
+        }
     }
     return _selectedAreaCodeKey;
 }
@@ -110,7 +112,9 @@
 - (NSString *)selectedAreaCodeValue
 {
     if (!_selectedAreaCodeValue) {
-        if(self.gamaAreaCodesArray.count > 0) self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
+        if(self.gamaAreaCodesArray.count > 0){
+            self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
+        }
     }
     return _selectedAreaCodeValue;
 }

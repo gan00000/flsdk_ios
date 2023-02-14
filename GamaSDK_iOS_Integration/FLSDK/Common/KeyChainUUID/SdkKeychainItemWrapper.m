@@ -174,7 +174,9 @@ Keychain API expects as a validly constructed container class.
 
 - (void)setObject:(id)inObject forKey:(id)key 
 {
-    if (inObject == nil) return;
+    if (inObject == nil) {
+        return;
+    }
     id currentObject = [keychainItemData objectForKey:key];
     if (![currentObject isEqual:inObject])
     {

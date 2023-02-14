@@ -27,10 +27,14 @@
                            nil];
     CFDictionaryRef result = nil;
     OSStatus status = SecItemCopyMatching((CFDictionaryRef)query, (CFTypeRef *)&result);
-    if (status == errSecItemNotFound)
+    if (status == errSecItemNotFound){
         status = SecItemAdd((CFDictionaryRef)query, (CFTypeRef *)&result);
-    if (status != errSecSuccess)
+    }
+        
+    if (status != errSecSuccess){
         return nil;
+    }
+        
     NSString *accessGroup = [(NSDictionary *)result objectForKey:kSecAttrAccessGroup];
     NSArray *components = [accessGroup componentsSeparatedByString:@"."];
     NSString *bundleSeedID = [[components objectEnumerator] nextObject];
@@ -52,8 +56,7 @@
     //通过wrapper获取纪录再keychain中的cfUUID
     savedgetGamaCfUUID = [wrapper objectForKey:(id)kSecValueData];
     //如果获取值不是空
-    if (savedgetGamaCfUUID != nil&&
-        ![savedgetGamaCfUUID isEqualToString:@""])
+    if (savedgetGamaCfUUID != nil&& ![savedgetGamaCfUUID isEqualToString:@""])
     {
         result = savedgetGamaCfUUID;
     }

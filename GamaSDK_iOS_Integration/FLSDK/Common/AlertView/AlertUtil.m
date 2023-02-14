@@ -98,7 +98,9 @@ static NSArray<UIViewController *> *presentViewControllers;
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction *action)
                                          {
-                                             if (handler) handler(index);
+                                            if (handler) {
+                                                handler(index);
+                                            }
                                          }];
                 
                 index++;
