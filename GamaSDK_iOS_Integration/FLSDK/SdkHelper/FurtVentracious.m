@@ -18,7 +18,9 @@
 - (NSString *)selectedAreaCodeValue
 {
     if (!_selectedAreaCodeValue) {
-        if(self.hander.count > 0) self.selectedAreaCodeValue = [_hander[0] objectForKey:wwwww_tag_wwwww_value];
+        if(self.hander.count > 0) {
+            self.selectedAreaCodeValue = [_hander[0] objectForKey:wwwww_tag_wwwww_value];
+        }
     }
     return _selectedAreaCodeValue;
 }
