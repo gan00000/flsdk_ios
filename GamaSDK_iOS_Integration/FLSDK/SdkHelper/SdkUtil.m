@@ -110,10 +110,10 @@
         return NO;
     }
     
-    accountName = [accountName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+//    accountName = [accountName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
 
-    accountName = [accountName stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString *regex_email = @"^.+@\\w+\\..+"; //邮箱格式，客户端放得比较宽
+//    accountName = [accountName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *regex_email = @"^.+@\\w+\\..+$"; //邮箱格式，客户端放得比较宽
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex_email];
     
     BOOL isOk = [pred evaluateWithObject:accountName];
@@ -142,27 +142,21 @@
         return NO;
     }
     return YES;
-    
-//    NSString *triStr = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-//    NSString *regex = @"^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\\W]).{8,16}$";//^(?=.*[a-zA-Z])(?=.*[0-9])(?!.*[\W]).{8,16}$
-//
-//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
-//    return [pred evaluateWithObject:triStr];
 }
 
-+ (BOOL)validEmail_MMMethodMMM:(NSString *)email
-{
-    NSString *triStr = [email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
-    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    return [emailPred evaluateWithObject:triStr];
-}
+//+ (BOOL)validEmail_MMMethodMMM:(NSString *)email
+//{
+//    NSString *triStr = [email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+//    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+//    NSPredicate *emailPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+//    return [emailPred evaluateWithObject:triStr];
+//}
 
 + (BOOL)validPhone_MMMethodMMM:(NSString *)phone phoneRegex_MMMethodMMM:(NSString *)regex
 {
-    NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+//    NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSPredicate *phonePred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    return [phonePred evaluateWithObject:triStr];
+    return [phonePred evaluateWithObject:phone];
 }
 
 #pragma mark - Toast

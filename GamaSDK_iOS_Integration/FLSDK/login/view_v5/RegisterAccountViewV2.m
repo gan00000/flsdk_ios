@@ -254,8 +254,8 @@
         case kRegisterAccountActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
-            NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
-            NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;
+            NSString *accountName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *pwd = [passwordSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
 //            NSString *areaCode = [mPhoneView getPhoneAreaCode_MMMethodMMM];
 //            NSString *phoneNum = [mPhoneView getPhoneNumber_MMMethodMMM];
 //            NSString *vfCode = vfCodeFiledView.inputUITextField.text;

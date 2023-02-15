@@ -24,6 +24,7 @@
 #import "DimeUtil.h"
 #import "SdkUtil.h"
 #import "NSString+Local.h"
+#import "NSString+Common.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h

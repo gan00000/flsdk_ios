@@ -213,7 +213,7 @@
         case kGetVfCodeActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
-            NSString *account = accountSDKTextFiledView.inputUITextField.text;
+            NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
             if (![SdkUtil validUserName_MMMethodMMM:account]) {
                 return;
             }
@@ -238,13 +238,13 @@
 
 -(void)findPassword_MMMethodMMM
 {
-    NSString *userName = accountSDKTextFiledView.inputUITextField.text;
+    NSString *userName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
     
     NSString *areaCode = @"";//[mPhoneView getPhoneAreaCode_MMMethodMMM];
     NSString *phoneNum = @"";//[mPhoneView getPhoneNumber_MMMethodMMM];
-    NSString *vfCode = vfCodeFiledView.inputUITextField.text;
+    NSString *vfCode = [vfCodeFiledView.inputUITextField.text trim_MMMethodMMM];
     
-    NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
+    NSString *newPwd = [newPwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
 //    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
     if (![SdkUtil validUserName_MMMethodMMM:userName]) {

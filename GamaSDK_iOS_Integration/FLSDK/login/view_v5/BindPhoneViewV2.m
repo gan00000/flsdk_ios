@@ -317,7 +317,11 @@
         case kGetVfCodeActTag:
         {
             NSString *tel = phoneNumFiled.inputTextField.text;
+            tel = [tel trim_MMMethodMMM];
+            
             NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            areaCode = [areaCode trim_MMMethodMMM];
+            
             //NSString *vfCode = vfCodeFiled.inputTextField.text;
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
@@ -363,8 +367,13 @@
                 return;
             }
             NSString *tel = phoneNumFiled.inputTextField.text;
+            tel = [tel trim_MMMethodMMM];
+            
             NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            areaCode = [areaCode trim_MMMethodMMM];
+            
             NSString *vfCode = vfCodeFiled.inputTextField.text;
+            vfCode = [vfCode trim_MMMethodMMM];
             
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];

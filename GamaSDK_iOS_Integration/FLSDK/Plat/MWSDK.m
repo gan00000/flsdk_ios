@@ -417,7 +417,9 @@
 
 - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
 {
-   
+    areaCode = [areaCode trim_MMMethodMMM];
+    telephone = [telephone trim_MMMethodMMM];
+
     if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
         [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
         return;
@@ -451,6 +453,10 @@
 }
 
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
+    
+    areaCode = [areaCode trim_MMMethodMMM];
+    telephone = [telephone trim_MMMethodMMM];
+    vfCode = [vfCode trim_MMMethodMMM];
     
     if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
         [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
@@ -497,11 +503,12 @@
 
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
 {
+    account = [account trim_MMMethodMMM];
     if (![SdkUtil validUserName_MMMethodMMM:account]) {
         return;
     }
 
-
+    password = [password trim_MMMethodMMM];
     if (![SdkUtil validPwd_MMMethodMMM:password]) {
         return;
     }

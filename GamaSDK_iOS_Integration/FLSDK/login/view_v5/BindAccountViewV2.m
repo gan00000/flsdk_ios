@@ -277,8 +277,8 @@
 {
     
     
-    NSString *account = accountSDKTextFiledView.inputUITextField.text;
-    NSString *password = pwdSDKTextFiledView.inputUITextField.text;
+    NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *password = [pwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
   
     
 //    if ([StringUtil isEmpty_MMMethodMMM:]) {
