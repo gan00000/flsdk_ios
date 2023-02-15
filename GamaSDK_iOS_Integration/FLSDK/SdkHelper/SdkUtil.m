@@ -103,24 +103,30 @@
 #pragma mark - Text Rule
 + (BOOL)validUserName_MMMethodMMM:(NSString *)accountName
 {
-//    return [userName containsString:@"@"];
-//    NSString *triStr = [userName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
-//
-//    NSString  *regex = @"@";
-//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-//
-//    return [pred evaluateWithObject:triStr];
-    
+
+
     if (!accountName || [accountName isEqualToString:@""]) {
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_account_empty)];
         return NO;
     }
     
-    if (![accountName containsString:@"@"]) {
+    accountName = [accountName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+
+    accountName = [accountName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *regex_email = @"^.+@\\w+\\..+"; //邮箱格式，客户端放得比较宽
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex_email];
+    
+    BOOL isOk = [pred evaluateWithObject:accountName];
+    if(!isOk){
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
-        return NO;
     }
-    return YES;
+    return isOk;
+    
+//    if (![accountName containsString:@"@"]) {
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
+//        return NO;
+//    }
+//    return YES;
     
 }
 
