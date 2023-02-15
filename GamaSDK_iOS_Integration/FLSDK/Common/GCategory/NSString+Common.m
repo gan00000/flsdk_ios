@@ -105,4 +105,11 @@
     
     return [self urlEncode_MMMethodMMM];
 }
+
+- (NSString *)trim_MMMethodMMM
+{
+    NSString *triStr = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    return triStr;
+}
+
 @end

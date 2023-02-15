@@ -468,6 +468,6 @@
 #define reissue_MMMethodMMM reissue
 #define logServerWithEventName_MMMethodMMM          logServerWithEventName_MMMethodMMM
 #define getJsonContentWithBundle_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
-
+#define trim_MMMethodMMM                        trim_MMMethodMMM
 
 #endif  /* codeObfuscation_h */
