@@ -46,7 +46,7 @@
 // 字符验证
 + (BOOL)validUserName_MMMethodMMM:(NSString *)accountName;
 + (BOOL)validPwd_MMMethodMMM:(NSString *)pwd;
-+ (BOOL)validEmail_MMMethodMMM:(NSString *)email;
+//+ (BOOL)validEmail_MMMethodMMM:(NSString *)email;
 + (BOOL)validPhone_MMMethodMMM:(NSString *)phone phoneRegex_MMMethodMMM:(NSString *)regex;
 
 #pragma mark - 整合部分
@@ -55,8 +55,8 @@
 //+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView;
 
 //----账号密码的保存
-+ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName;
-+ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName;
+//+ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName;
+//+ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName;
 
 + (NSString *)loginEncryptFromString_MMMethodMMM:(NSString *)aString;
 + (NSString *)loginDecryptFromString_MMMethodMMM:(NSString *)aString;

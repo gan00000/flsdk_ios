@@ -424,47 +424,47 @@
 
 #pragma mark -
 
-+ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSString *path = [paths objectAtIndex:0];
-    NSString *filename = [path stringByAppendingPathComponent:fileName];
-    
-    NSString *encryptPwd = [self loginEncryptFromString_MMMethodMMM:password];
-    
-    NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  userName,encryptPwd,// user name 不需要加密，加密密码即可
-                                  nil];
-    [userInfoDic writeToFile:filename atomically:YES];
-}
-
-+ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSString *path = [paths objectAtIndex:0];
-    NSString *filename = [path stringByAppendingPathComponent:fileName];
-    
-    NSDictionary * userInfodic = [NSDictionary dictionaryWithContentsOfFile:filename];
-    if (userInfodic.count > 0 || userInfodic!=nil) {
-        if (userName != nil)  {
-            @try {
-                *userName = [[userInfodic allValues]objectAtIndex:0];
-            }
-            @catch(NSException* exp) {
-                *userName = @"";
-            }
-        }
-        if (password != nil) {
-            @try {
-                *password = [[userInfodic allKeys]objectAtIndex:0];
-            }
-            @catch(NSException* exp) {
-                *password = @"";
-            }
-        }
-    }
-//    [userInfodic release];
-}
+//+ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName
+//{
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+//    NSString *path = [paths objectAtIndex:0];
+//    NSString *filename = [path stringByAppendingPathComponent:fileName];
+//    
+//    NSString *encryptPwd = [self loginEncryptFromString_MMMethodMMM:password];
+//    
+//    NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                  userName,encryptPwd,// user name 不需要加密，加密密码即可
+//                                  nil];
+//    [userInfoDic writeToFile:filename atomically:YES];
+//}
+//
+//+ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName
+//{
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+//    NSString *path = [paths objectAtIndex:0];
+//    NSString *filename = [path stringByAppendingPathComponent:fileName];
+//    
+//    NSDictionary * userInfodic = [NSDictionary dictionaryWithContentsOfFile:filename];
+//    if (userInfodic.count > 0 || userInfodic!=nil) {
+//        if (userName != nil)  {
+//            @try {
+//                *userName = [[userInfodic allValues]objectAtIndex:0];
+//            }
+//            @catch(NSException* exp) {
+//                *userName = @"";
+//            }
+//        }
+//        if (password != nil) {
+//            @try {
+//                *password = [[userInfodic allKeys]objectAtIndex:0];
+//            }
+//            @catch(NSException* exp) {
+//                *password = @"";
+//            }
+//        }
+//    }
+////    [userInfodic release];
+//}
 
 +(NSMutableArray *)getShowBtnDatas_MMMethodMMM:(ConfigModel *)mConfigModel appleBtn_MMMethodMMM:(BOOL) appleBtn guestBtn_MMMethodMMM:(BOOL) guestBtn
 {
