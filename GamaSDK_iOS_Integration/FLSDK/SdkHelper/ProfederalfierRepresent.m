@@ -408,12 +408,14 @@
         return NO;
     }
     
-    if (![accountName containsString:@"@"]) {
+    NSString *regex_email = @"^.+@\\w+\\..+$"; //邮箱格式，客户端放得比较宽
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex_email];
+    
+    BOOL isOk = [pred evaluateWithObject:accountName];
+    if(!isOk){
         [ProfederalfierRepresent toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
-        NSDictionary * existinga = [NSDictionary dictionaryWithObjectsAndKeys:@"not",@(398), @"video",@(958), nil];
-        return NO;
     }
-    return YES;
+    return isOk;
     
 }
 
