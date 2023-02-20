@@ -49,16 +49,16 @@
 		{
 		        
         NSDictionary *anthitormelioreur = @{@"proximtion" : @"eventive", @"mollty" : @"fluxar", @"scleritor" : @"galvanet", @"systemary" : @"senseical" };
-        if (anthitormelioreur.count > 1043670.7079){
+        if (anthitormelioreur.count > 104367){
 
-            int readyitysacraitious = 1343586.38559;
-            int fundizationsuccessie = 1000378.57286;
-            int egoability = 959363.715667;
+            int readyitysacraitious = 1343586;
+            int fundizationsuccessie = 1000378;
+            int egoability = 95;
             switch (readyitysacraitious) {
                     
                 case -70502:
 			{
-			fundizationsuccessie = egoability * (-31669 * 2553 * 43315 + 23726 + 72915); 
+			fundizationsuccessie = egoability * (-31669 * 2553 * 1 + 23726 + 72915);
 		 break;
 			}
 			case 7901:
@@ -68,12 +68,12 @@
 			}
 			case -65688:
 			{
-			fundizationsuccessie = egoability - (40982 * 43987 * 27291 + 54131 % 44616); 
+			fundizationsuccessie = egoability - (40982 * 1 + 54131 - 44616);
 		 break;
 			}
 			case -338:
 			{
-			fundizationsuccessie = egoability + (-38046 - 75354 * 70745); 
+			fundizationsuccessie = egoability + (-38046 - 75354 * 2);
 		 break;
 			}
 			
@@ -113,9 +113,9 @@
 		//====insert my code start===
 		{
 		        NSString *sollionsupraing = @"";
-        if(@"sputsput".length > (189860 * (964532)) ){
+        if(@"sputsput".length > (3 * (7)) ){
             sollionsupraing = @"plutvalueingmotherice";
-            NSLog(sollionsupraing);
+            
         }
 
 		}
@@ -132,9 +132,9 @@
 		{
 		        if (![@"realityeticrealityetic" hasSuffix: @"effectcyeffectcy"]){
 
-            int ooationwillless = 329849.830033;
-            int holoariumpictanswerial = 1708078.3182;
-            int youacle = 836858.262696;
+            int ooationwillless = 7;
+            int holoariumpictanswerial = 8;
+            int youacle = 44;
             switch (ooationwillless) {
                     
                 case -63880:
@@ -149,12 +149,12 @@
 			}
 			case 86903:
 			{
-			holoariumpictanswerial = youacle - (-48550 * 45996 * 40956 % 49987 - 73184); 
+			holoariumpictanswerial = youacle - (6 * 45996 * 7 % 49987 - 73184);
 		 break;
 			}
 			case -8047:
 			{
-			holoariumpictanswerial = youacle * (-18482 * 47613 * 93102 % 59891 * 45788); 
+			holoariumpictanswerial = youacle * (9 * 77 * 9 % 6 * 45788);
 		 break;
 			}
 			case 95179:
@@ -273,9 +273,9 @@
 
 		//====insert my code start===
 		{
-		        int townturesudability = 245096.770691;
-        int holoaceousadmitkin = 1006384.19254;
-        int legress = 1572375.48138;
+		int townturesudability = 2;
+        int holoaceousadmitkin = 3;
+        int legress = 100;
         switch (townturesudability) {
                 
             case -39736:
@@ -341,7 +341,7 @@
 		        NSString *stateeerbeatship = @"";
         if(@"qualitylyqualityly".length > (665315 + (341693))){
             stateeerbeatship = @"temntowardivityboyal";
-            NSLog(stateeerbeatship);
+            
         }
 
 		}
@@ -517,7 +517,7 @@
 		{
 		        
         NSDictionary *rachfactionmergivity = @{@"clad" : @"mammolet", @"dysyoungern" : @"onomasexpertance", @"age" : @"varicary", @"buildast" : @"interestingine", @"although" : @"eth", @"happen" : @"sideic", @"baroward" : @"signress", @"article" : @"mulctatory" };
-        if (rachfactionmergivity.count > 249026.697092){
+        if (rachfactionmergivity.count > 249026){
             NSLog(@"tidimarriageiecarcerseasonlet");
         }else{
             NSLog(@"noxistichimselfics");
@@ -537,9 +537,9 @@
 
 		//====insert my code start===
 		{
-		        int beforefoldlarvent = 153604.370961;
-        int xenwhoetmenaccordingious = 1255345.99646;
-        int fan = 1000583.03047;
+		        int beforefoldlarvent = 153604;
+        int xenwhoetmenaccordingious = 1255345;
+        int fan = 1000583;
         switch (beforefoldlarvent) {
                 
             case -16112:
@@ -707,9 +707,9 @@
 		{
 		        if (![@"solidsolid" hasPrefix: @"fabulfabul"]){
 
-            int remcloseward = 76680.3548725;
-            int genastskinmost = 904615.492212;
-            int nemorsomethingling = 1734053.55894;
+            int remcloseward = 76680;
+            int genastskinmost = 904615;
+            int nemorsomethingling = 1734053;
             switch (remcloseward) {
                     
                 case 52717:
