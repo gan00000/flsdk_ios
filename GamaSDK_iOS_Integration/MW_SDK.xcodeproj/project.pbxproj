@@ -257,6 +257,11 @@
 		032CB5662940BCFE0013185B /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V5.framework */; };
 		03554A712996405D0078EFFB /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */; };
 		03554A73299642E10078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A702996405D0078EFFB /* com_miaoou_gwsg.json */; };
+		0355A50829A353CD0084FB93 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */; };
+		0355A50A29A353CD0084FB93 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */; };
+		0355A50B29A353CD0084FB93 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50529A353CD0084FB93 /* FBSDKLoginKit.xcframework */; };
+		0355A50C29A353CD0084FB93 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50629A353CD0084FB93 /* FBAEMKit.xcframework */; };
+		0355A50D29A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */; };
 		03773CDF29925AF8007B118D /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B86882990A23C00C7413C /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03773CE029925AF8007B118D /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B867E2990A23C00C7413C /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03773CE129925AF8007B118D /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B867F2990A23C00C7413C /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -533,7 +538,6 @@
 		03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03F542C92940BC5D00F75F51 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
-		03F542CA2940BC5D00F75F51 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55628C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework */; };
 		03F542CC2940BC5D00F75F51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
 		03F542CD2940BC5D00F75F51 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
 		03F542CE2940BC5D00F75F51 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */; };
@@ -541,8 +545,6 @@
 		03F542D02940BC5D00F75F51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4D964244EFFD900937AD5 /* Foundation.framework */; };
 		03F542D12940BC5D00F75F51 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E98E851F23825AB700257BDE /* libc++.tbd */; };
 		03F542D22940BC5D00F75F51 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
-		03F542D32940BC5D00F75F51 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55328C5B44C00B7A99F /* FBSDKCoreKit.xcframework */; };
-		03F542D62940BC5D00F75F51 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55428C5B44C00B7A99F /* FBSDKLoginKit.xcframework */; };
 		03F542D72940BC5D00F75F51 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */; };
 		03F542D82940BC5D00F75F51 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D2C7CA1E20D41500E85015 /* WebKit.framework */; };
 		03F542D92940BC5D00F75F51 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92C7CF021193CFB00C65C81 /* iAd.framework */; };
@@ -550,7 +552,6 @@
 		03F542DB2940BC5D00F75F51 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		03F542DD2940BC5D00F75F51 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		03F542DF2940BC5D00F75F51 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24966D961D5894C9005BE6EB /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03F542E02940BC5D00F75F51 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55228C5B44C00B7A99F /* FBSDKShareKit.xcframework */; };
 		03F542E12940BC5D00F75F51 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490083B1D2646CA00331AB0 /* libz.tbd */; };
 		03F542E22940BC5D00F75F51 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
 		03F542E42940BC5D00F75F51 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */; };
@@ -564,7 +565,6 @@
 		03F542F12940BC5D00F75F51 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9601A149944009E77FF /* libxml2.dylib */; };
 		03F542F22940BC5D00F75F51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93A1A1498AF009E77FF /* Security.framework */; };
 		03F542F32940BC5D00F75F51 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF6E9291A35B45500CFFE2F /* CFNetwork.framework */; };
-		03F542F52940BC5D00F75F51 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55528C5B44C00B7A99F /* FBAEMKit.xcframework */; };
 		03F542F62940BC5D00F75F51 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95E1A14993E009E77FF /* ImageIO.framework */; };
 		03F542F72940BC5D00F75F51 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95C1A14992F009E77FF /* CoreMedia.framework */; };
 		03F542F82940BC5D00F75F51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95A1A149929009E77FF /* CoreData.framework */; };
@@ -846,17 +846,17 @@
 		032B87612990A23D00C7413C /* CountTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
 		032B87622990A23D00C7413C /* LightLanguagealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightLanguagealityController.h; sourceTree = "<group>"; };
 		032B87632990A23D00C7413C /* ColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
-		0332F55228C5B44C00B7A99F /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
-		0332F55328C5B44C00B7A99F /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
-		0332F55428C5B44C00B7A99F /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
-		0332F55528C5B44C00B7A99F /* FBAEMKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBAEMKit.xcframework; sourceTree = "<group>"; };
-		0332F55628C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		0332F55828C5B44C00B7A99F /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		03554A702996405D0078EFFB /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
+		0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
+		0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		0355A50529A353CD0084FB93 /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
+		0355A50629A353CD0084FB93 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBAEMKit.xcframework; sourceTree = "<group>"; };
+		0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		03773DD329925AF8007B118D /* GwsgSdkV5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GwsgSdkV5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0381EC7E298B73A2006D6100 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
@@ -1016,18 +1016,18 @@
 				032CB5662940BCFE0013185B /* MWSDK_V5.framework in Frameworks */,
 				03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */,
 				032B863A29909D2100C7413C /* GTMSessionFetcher.xcframework in Frameworks */,
+				0355A50D29A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				03F542C92940BC5D00F75F51 /* AdServices.framework in Frameworks */,
-				03F542CA2940BC5D00F75F51 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				03F542CC2940BC5D00F75F51 /* MapKit.framework in Frameworks */,
 				03F542CD2940BC5D00F75F51 /* CoreText.framework in Frameworks */,
 				03F542CE2940BC5D00F75F51 /* AppsFlyerLib.framework in Frameworks */,
 				03F542CF2940BC5D00F75F51 /* CoreFoundation.framework in Frameworks */,
 				03F542D02940BC5D00F75F51 /* Foundation.framework in Frameworks */,
 				03F542D12940BC5D00F75F51 /* libc++.tbd in Frameworks */,
+				0355A50A29A353CD0084FB93 /* FBSDKCoreKit.xcframework in Frameworks */,
 				03F542D22940BC5D00F75F51 /* Accelerate.framework in Frameworks */,
-				03F542D32940BC5D00F75F51 /* FBSDKCoreKit.xcframework in Frameworks */,
-				03F542D62940BC5D00F75F51 /* FBSDKLoginKit.xcframework in Frameworks */,
 				032B864029909D2100C7413C /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
+				0355A50B29A353CD0084FB93 /* FBSDKLoginKit.xcframework in Frameworks */,
 				03F542D72940BC5D00F75F51 /* AuthenticationServices.framework in Frameworks */,
 				03F542D82940BC5D00F75F51 /* WebKit.framework in Frameworks */,
 				03F542D92940BC5D00F75F51 /* iAd.framework in Frameworks */,
@@ -1035,9 +1035,9 @@
 				03F542DB2940BC5D00F75F51 /* AdSupport.framework in Frameworks */,
 				03F542DD2940BC5D00F75F51 /* JavaScriptCore.framework in Frameworks */,
 				03F542DF2940BC5D00F75F51 /* ReplayKit.framework in Frameworks */,
-				03F542E02940BC5D00F75F51 /* FBSDKShareKit.xcframework in Frameworks */,
 				03F542E12940BC5D00F75F51 /* libz.tbd in Frameworks */,
 				03F542E22940BC5D00F75F51 /* SafariServices.framework in Frameworks */,
+				0355A50829A353CD0084FB93 /* FBSDKShareKit.xcframework in Frameworks */,
 				03F542E42940BC5D00F75F51 /* libc++abi.tbd in Frameworks */,
 				032B864129909D2100C7413C /* FirebaseInstallations.xcframework in Frameworks */,
 				03F542E52940BC5D00F75F51 /* Social.framework in Frameworks */,
@@ -1052,13 +1052,13 @@
 				03F542F12940BC5D00F75F51 /* libxml2.dylib in Frameworks */,
 				03F542F22940BC5D00F75F51 /* Security.framework in Frameworks */,
 				03F542F32940BC5D00F75F51 /* CFNetwork.framework in Frameworks */,
-				03F542F52940BC5D00F75F51 /* FBAEMKit.xcframework in Frameworks */,
 				03F542F62940BC5D00F75F51 /* ImageIO.framework in Frameworks */,
 				032B864B29909D2100C7413C /* GoogleSignIn.xcframework in Frameworks */,
 				032B864429909D2100C7413C /* FirebaseCoreInternal.xcframework in Frameworks */,
 				03F542F72940BC5D00F75F51 /* CoreMedia.framework in Frameworks */,
 				03F542F82940BC5D00F75F51 /* CoreData.framework in Frameworks */,
 				03F542F92940BC5D00F75F51 /* CoreTelephony.framework in Frameworks */,
+				0355A50C29A353CD0084FB93 /* FBAEMKit.xcframework in Frameworks */,
 				03F542FA2940BC5D00F75F51 /* CoreMotion.framework in Frameworks */,
 				03F542FC2940BC5D00F75F51 /* MediaPlayer.framework in Frameworks */,
 				03F543002940BC5D00F75F51 /* EventKitUI.framework in Frameworks */,
@@ -1602,18 +1602,6 @@
 			path = widget;
 			sourceTree = "<group>";
 		};
-		0332F55128C5B44C00B7A99F /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				0332F55228C5B44C00B7A99F /* FBSDKShareKit.xcframework */,
-				0332F55328C5B44C00B7A99F /* FBSDKCoreKit.xcframework */,
-				0332F55428C5B44C00B7A99F /* FBSDKLoginKit.xcframework */,
-				0332F55528C5B44C00B7A99F /* FBAEMKit.xcframework */,
-				0332F55628C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
 		0332F55728C5B44C00B7A99F /* AF */ = {
 			isa = PBXGroup;
 			children = (
@@ -1629,6 +1617,18 @@
 				0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */,
 			);
 			path = LineSDK;
+			sourceTree = "<group>";
+		};
+		0355A50129A353CD0084FB93 /* FacebookV16.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */,
+				0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */,
+				0355A50529A353CD0084FB93 /* FBSDKLoginKit.xcframework */,
+				0355A50629A353CD0084FB93 /* FBAEMKit.xcframework */,
+				0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */,
+			);
+			path = FacebookV16.0.0;
 			sourceTree = "<group>";
 		};
 		03B918ED2860AECB0029AE6A /* Masonry */ = {
@@ -1740,9 +1740,9 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
+				0355A50129A353CD0084FB93 /* FacebookV16.0.0 */,
 				032B861D29909D2100C7413C /* Firebase */,
 				0332F55728C5B44C00B7A99F /* AF */,
-				0332F55128C5B44C00B7A99F /* Facebook */,
 				0332F55928C5B44C00B7A99F /* LineSDK */,
 				03B918ED2860AECB0029AE6A /* Masonry */,
 				03B919072860AECB0029AE6A /* SDWebImage */,
@@ -2573,7 +2573,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2648,7 +2648,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2747,7 +2747,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2809,7 +2809,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
@@ -2822,7 +2822,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
@@ -2888,7 +2888,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
@@ -2958,7 +2958,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
 					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
+					"$(PROJECT_DIR)/Resources/ThirkLib/FacebookV16.0.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 				);
