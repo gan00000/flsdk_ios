@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>万灵召唤师demo</string>
+	<string>test demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -30,7 +30,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>wlzhsios</string>
-				<string>fb1137481690478934</string>
+				<string>fb1579764119125351</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -39,7 +39,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.503664990056-pvdp09io2bnoekk59cta1sro1kf9kkkt</string>
+				<string>com.googleusercontent.apps.568527028568-on35gvgf9q0v9t5ehaau48g1aobhrg8g</string>
 			</array>
 		</dict>
 	</array>
@@ -48,11 +48,11 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>1137481690478934</string>
+	<string>1579764119125351</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>9457e9f00d7e1c0a9869c451326b15a9</string>
+	<string>6bcdce136dafb7381c5d80d3d4f67d7e</string>
 	<key>FacebookDisplayName</key>
 	<string>哈哈我的</string>
 	<key>LSApplicationQueriesSchemes</key>
