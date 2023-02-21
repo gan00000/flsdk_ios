@@ -208,6 +208,7 @@
 		035EDC2029A499F7009092F0 /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1B29A499F7009092F0 /* com_mplay_wlzhs.json */; };
 		035EDC2129A499F7009092F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */; };
 		035EDC2229A499F7009092F0 /* SDKResourcesV3.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1D29A499F7009092F0 /* SDKResourcesV3.bundle */; };
+		035EDC2429A49BF5009092F0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0386139D293897C900CC9C44 /* SDKResourcesV2.bundle */; };
 		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
@@ -3353,6 +3354,7 @@
 				03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */,
 				0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
+				035EDC2429A49BF5009092F0 /* SDKResourcesV2.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
