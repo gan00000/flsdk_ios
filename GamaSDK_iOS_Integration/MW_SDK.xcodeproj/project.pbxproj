@@ -255,7 +255,6 @@
 		032B88372990A23D00C7413C /* LightLanguagealityController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B87622990A23D00C7413C /* LightLanguagealityController.h */; };
 		032B88382990A23D00C7413C /* ColorHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B87632990A23D00C7413C /* ColorHeader.h */; };
 		032CB5662940BCFE0013185B /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V5.framework */; };
-		03554A712996405D0078EFFB /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */; };
 		03554A73299642E10078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A702996405D0078EFFB /* com_miaoou_gwsg.json */; };
 		0355A50829A353CD0084FB93 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */; };
 		0355A50A29A353CD0084FB93 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */; };
@@ -269,10 +268,8 @@
 		035EDC2D29A4A7D5009092F0 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		035EDC2E29A4A7D5009092F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
 		035EDC3029A4A7D5009092F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
-		035EDC3129A4A7D5009092F0 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A702996405D0078EFFB /* com_miaoou_gwsg.json */; };
 		035EDC3229A4A7D5009092F0 /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 032B862229909D2100C7413C /* NOTICES */; };
 		035EDC3329A4A7D5009092F0 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0381EC7E298B73A2006D6100 /* SDKResourcesV5.bundle */; };
-		035EDC3429A4A7D5009092F0 /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */; };
 		035EDC3529A4A7D5009092F0 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 032B863629909D2100C7413C /* GoogleSignIn.bundle */; };
 		035EDC3629A4A7D5009092F0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 032B862329909D2100C7413C /* README.md */; };
 		035EDC3729A4A7D5009092F0 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
@@ -347,6 +344,7 @@
 		035EDC7D29A4A7D5009092F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		035EDC7E29A4A7D5009092F0 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B862529909D2100C7413C /* nanopb.xcframework */; };
 		035EDC7F29A4A7D5009092F0 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B863129909D2100C7413C /* GoogleDataTransport.xcframework */; };
+		035EDC8729A4A9F2009092F0 /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC8629A4A9F2009092F0 /* com_wantang_xlzsg.json */; };
 		03773CDF29925AF8007B118D /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B86882990A23C00C7413C /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03773CE029925AF8007B118D /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B867E2990A23C00C7413C /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03773CE129925AF8007B118D /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 032B867F2990A23C00C7413C /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -952,7 +950,6 @@
 		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
-		03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		03554A702996405D0078EFFB /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
 		0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
@@ -961,6 +958,7 @@
 		0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		035EDC8429A4A7D5009092F0 /* SDK_DEMO_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035EDC8529A4A7D5009092F0 /* SDK_DEMO_V2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V2-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios_v55/GamaSDK_iOS_Integration/SDK_DEMO_V2-Info.plist"; sourceTree = "<absolute>"; };
+		035EDC8629A4A9F2009092F0 /* com_wantang_xlzsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wantang_xlzsg.json; sourceTree = "<group>"; };
 		03773DD329925AF8007B118D /* GwsgSdkV5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GwsgSdkV5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0381EC7E298B73A2006D6100 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
@@ -968,8 +966,6 @@
 		0387BA6E291B8C9E001BACA8 /* MWSDK_V5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
-		03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
-		03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_mplay_wlzhs.plist; sourceTree = "<group>"; };
 		03B918EE2860AECB0029AE6A /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		03B918F02860AECB0029AE6A /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -2008,11 +2004,9 @@
 		E9150D282383E6640003F1FB /* GOT */ = {
 			isa = PBXGroup;
 			children = (
+				035EDC8629A4A9F2009092F0 /* com_wantang_xlzsg.json */,
 				03554A702996405D0078EFFB /* com_miaoou_gwsg.json */,
-				03554A6F2996405D0078EFFB /* com_miaoou_gwsg.plist */,
 				03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */,
-				03B5F46C2903ECEA00D1F03E /* com_mplay_wlzhs.json */,
-				03B5F46D2903ECEA00D1F03E /* com_mplay_wlzhs.plist */,
 				0381EC7E298B73A2006D6100 /* SDKResourcesV5.bundle */,
 			);
 			path = GOT;
@@ -2409,10 +2403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				035EDC3029A4A7D5009092F0 /* GoogleService-Info.plist in Resources */,
-				035EDC3129A4A7D5009092F0 /* com_miaoou_gwsg.json in Resources */,
 				035EDC3229A4A7D5009092F0 /* NOTICES in Resources */,
+				035EDC8729A4A9F2009092F0 /* com_wantang_xlzsg.json in Resources */,
 				035EDC3329A4A7D5009092F0 /* SDKResourcesV5.bundle in Resources */,
-				035EDC3429A4A7D5009092F0 /* com_miaoou_gwsg.plist in Resources */,
 				035EDC3529A4A7D5009092F0 /* GoogleSignIn.bundle in Resources */,
 				035EDC3629A4A7D5009092F0 /* README.md in Resources */,
 				035EDC3729A4A7D5009092F0 /* LineSDKResource.bundle in Resources */,
@@ -2442,7 +2435,6 @@
 				03554A73299642E10078EFFB /* com_miaoou_gwsg.json in Resources */,
 				032B863B29909D2100C7413C /* NOTICES in Resources */,
 				0381EC7F298B73A2006D6100 /* SDKResourcesV5.bundle in Resources */,
-				03554A712996405D0078EFFB /* com_miaoou_gwsg.plist in Resources */,
 				032B864A29909D2100C7413C /* GoogleSignIn.bundle in Resources */,
 				032B863C29909D2100C7413C /* README.md in Resources */,
 				03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */,
