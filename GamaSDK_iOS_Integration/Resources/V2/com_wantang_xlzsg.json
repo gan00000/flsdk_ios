@@ -1,0 +1,17 @@
+{   "af_dev_key" : "QtrxWJpdhQVov9F8hwKD3o",
+    "appKey" : "f4b3ecb3bca7bb37e6410c21819e6743",
+    "gameCode" : "xlzsgios",
+    "gameLanguage" : "zh_TW",
+    "sdk_language" : "zh-Hant",
+    "sdk_ad_bug" : "0",
+    "sdk_appId" : "1661248816",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "SDKResourcesV2",
+    "sdk_url_cdn" : "https://cdn-download.mmplaygame.com/",
+    "sdk_url_log" : "https://log.mmplaygame.com/",
+    "sdk_url_login" : "https://login.mmplaygame.com/",
+    "sdk_url_pay" : "https://pay.mmplaygame.com/",
+    "sdk_v_version" : "v2",
+    "terms_service_url" : "https://member.mmplaygame.com/sdk/agreement/%@_agreement.html"
+    
+}

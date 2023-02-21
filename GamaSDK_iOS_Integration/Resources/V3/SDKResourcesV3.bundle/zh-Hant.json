@@ -1,0 +1,126 @@
+{"py_old_pwd"     :   "舊密碼",
+"py_new_pwd"     :   "新密碼",
+"py_phone"     :   "電話",
+"py_vfcode"     :   "驗證碼",
+"guest_login_btn"     :   "遊客登入",
+"tips_have_account"     :   "已有帳號？",
+
+"text_register"     :   "註冊",
+"text_login_other"     :   "其他登入",
+"text_reg_tips"     :   "*帳號信箱將會作為您找回密碼的驗證信箱，請謹慎輸入",
+"text_get_vfcode"     :   "發送驗證碼",
+
+"py_register_account_hit"     :   "請輸入您的常用信箱",
+"py_register_password_hit"     :   "請輸入6-20字元",
+"py_msg_vfcode_hint"     :   "請輸入驗證碼",
+"text_input_new_pwd"     :   "請輸入新密碼",
+"text_input_new_pwd_confire"     :   "確認新密碼",
+"text_update_account_tips"     :   "建議升級帳號，提升帳號安全性",
+"text_has_update_account_tips"     :   "該帳號已升級為平台帳號",
+"text_delete_account"     :   "刪除該帳號",
+"text_confire_change"     :   "確認修改",
+"text_confire_update"     :   "確認升級",
+"text_change_pwd"     :   "修改密码",
+"text_bind_account_tips"     :   "*帳號信箱將會作為您找回密碼的驗證信箱，請謹慎輸入",
+
+"text_forgot_pwd"     :   "忘記密碼",
+"text_welcome_back"     :   "歡迎回來",
+"text_go_game"     :   "繼續遊戲",
+"text_update_account"     :   "升級帳號",
+
+"text_term_not_read"   :   "請先同意「定型化契約」",
+"text_confire_reg"     :   "確認註冊",
+"text_pwd_format"     :   "密碼只支持6~20字元",
+"text_account_format"     :   "信箱格式異常，請重新輸入",
+
+"py_error_occur"     :   "網路異常，請檢查重試",
+"text_i_agree_tips"     :   "我已閱讀並同意",
+"text_term_moqie"     :   "<u>定型化契約</u>",
+"sdk_terms_title"     :   "定型化契約",
+"text_switch_account"     :   "切換帳號",
+"text_update_account_bind"     :   "升級帳號",
+"text_pwd_not_equel"     :   "兩次密碼不一致",
+"py_input_old_password"     :   "請輸入舊密碼",
+"text_free_register"     :   "免註冊登入",
+"text_old_new_pwd_same"     :   "新密碼不能與舊密碼相同",
+"text_cancel"     :   "取消",
+"text_confire"     :   "確認",
+"text_delete_account_tips"     :   "請注意，刪除帳號將會將您的帳號從平台中徹底刪除，如果確認刪除，請點擊“確認”",
+"text_account_bind_success"     :   "升級會員帳號成功，正在登入...",
+"text_account_change_pwd_success"     :   "修改成功，正在登入...",
+"text_account_reg_success"   :   "註冊成功，正在登入...",
+"text_send_vf_code_success"     :   "驗證碼已發送，請注意查收",
+"text_finish_pay"     :   "支付完成",
+"text_account_not_exist"     :   "帳號不存在",
+
+"text_ui_term_port_read2"      :   "我已閱讀並同意定型化契約",
+
+"py_login_save_account"      :   "記住帳號",
+"py_findpwd"      :   "忘記密碼?",
+"py_register_account"      :   "註冊帳號",
+"py_register_account_phone"      :   "請輸入手機門號",
+
+"py_login_page_change_pwd"      :   "修改密碼",
+
+
+"py_login_page_account_bind"      :   "綁定會員帳號",
+"py_btn_bind"      :   "綁定會員",
+
+"account_bind"      :   "帳號綁定",
+
+"py_account_empty"      :   "帳號不能為空",
+"py_password_empty"      :   "密碼不能為空",
+"py_vfcode_empty"      :   "請輸入驗證碼",
+
+"py_auto_login_change"      :   "切換帳號",
+
+"py_login_autologin_tips"      :   "帳號 %1$s 正在登入",
+
+"py_msg_account_hint"      :   "請輸入您的帳號",
+
+"py_confire"      :   "確 認",
+"gama_toast_msg_app_not_install"      :   "由於您沒有安裝%s，請先裝APP後再進行分享",
+
+"py_register_success"      :   "註冊成功",
+
+"py_login_mac_tips"      :   "你登入 %1$s 的帳號和密碼如下:\n帳號: %2$s 密碼: %3$s",
+"py_login_mac_saveimage_tips"      :   "你的帳號密碼已經保存到相簿中",
+"py_login_autologin_logining_tips"      :   "帳號正在登入",
+
+"py_account_login"      :   "帳號登入",
+
+"py_login_success"      :   "登入成功",
+"py_account"      :   "帳號",
+"py_password"      :   "密碼",
+
+"py_login_fb"     :   "Facebook登入",
+"py_login_fb_1"     :   "FB登入",
+"py_login_google"     :   "Google登入",
+
+"text_select_account" :   "請先選擇帳號",
+"text_input_account" :   "請輸入帳號",
+"text_input_pwd" :   "請輸入密碼",
+"text_login"     :   "登入",
+"text_close"     :   "關閉",
+"text_agree_read_tips"     :   "閱讀並同意",
+"text_title_notice"     :   "公告",
+"text_area_code"     :   "區號",
+"text_please_input_phone"      :   "請輸入手機號碼",
+"text_phone_bind"      :   "手機綁定",
+"text_has_phone_bind_tips"      :   "您已經成功綁定，這是您當前綁定的手機號碼",
+"text_select_phone_area_title"      :   "請選擇移動電話的區號",
+
+"text_area_code_not_empty"     :   "手機區號不能為空",
+"text_phone_not_empty"     :   "手機號碼不能為空",
+"text_phone_not_match"     :   "手機號碼格式不正確",
+"text_vfcode_has_send"     :   "驗證碼已發送",
+"text_phone_bind_success"     :   "手機綁定成功",
+"text_has_bind_tips_google"     :   "Google已升級為會員帳號",
+"text_has_bind_tips_fb"     :   "Facebook已升級為會員帳號",
+"text_has_bind_tips_guest"     :   "遊客已升級為會員帳號",
+"text_has_bind_tips_line"     :   "LINE已升級為會員帳號",
+"text_has_bind_tips_apple"     :   "Apple已升級為會員帳號",
+"text_has_bind_tips_mw"     :   "會員帳號",
+"text_account_bind_success2"     :   "升級會員帳號成功",
+"text_account_not_login"  :  "當前沒有帳號，請先登入"
+}
