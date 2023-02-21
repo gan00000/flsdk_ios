@@ -64,7 +64,7 @@
 //system version is ios9 and later
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
-    SDK_LOG(@"ios9 and later = application openURL options");
+    SDK_LOG(@"ios9 and later = application openURL options，openURL:%@", [url absoluteString]);
     [AdDelegate application:application openURL:url options:options];
     BOOL result = [FBDelegate application:application openURL:url options:options];
     if (!result) {
