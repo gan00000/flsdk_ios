@@ -21,6 +21,8 @@
 #import <FirebaseAuth/FirebaseAuth.h>
 #import  <FirebaseMessaging/FIRMessaging.h>
 
+#import "AFNetworkReachabilityManager.h"
+
 @interface JustformJureer()<FIRMessagingDelegate, UNUserNotificationCenterDelegate>
 
 @end
@@ -94,6 +96,47 @@
     return _share_sdk;
 }
 
+#pragma mark - AFN提供的方法
+- (void)afnReachability_MMMethodMMM {
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        // 一共有四种状态  主线程
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:
+                SDK_LOG(@"AFNetworkReachability Not Reachable");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                SDK_LOG(@"AFNetworkReachability Reachable via WWAN");
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                SDK_LOG(@"AFNetworkReachability Reachable via WiFi");
+            case AFNetworkReachabilityStatusUnknown:
+            default:
+                SDK_LOG(@"AFNetworkReachability Unknown");
+            {
+                //事件打点
+                [ThousandaciousAstic logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
+                [ThousandaciousAstic logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+                
+                [TermDiseaseid getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+                    
+                } errorBlock_MMMethodMMM:^(DermencyTreatarium *error) {
+                    
+                }];
+                
+                [TermDiseaseid getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+
+                } errorBlock_MMMethodMMM:^(DermencyTreatarium *error) {
+
+                }];
+            }
+                break;
+        }
+    }];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
 
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -255,6 +298,7 @@
 
     }];
 
+    [self afnReachability_MMMethodMMM];
 }
 
 
@@ -332,7 +376,7 @@
 //如需在每次令牌更新时获得通知，请提供符合消息委托协议的委托。以下示例注册了此类委托，并添加了合适的委托方法
 - (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{   //system_method
     SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
-    NSLog(@"FCM registration token: %@", fcmToken);
+    SDK_LOG(@"FCM registration token: %@", fcmToken);
 
 		//====insert my code start===
 		{

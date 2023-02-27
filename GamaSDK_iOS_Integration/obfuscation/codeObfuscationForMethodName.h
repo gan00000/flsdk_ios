@@ -467,5 +467,5 @@
 #define getsdkLanguage_MMMethodMMM          bidWeedkiller
 #define reissue_MMMethodMMM          enjoyBack
 #define logServerWithEventName_MMMethodMMM          jabberSimplification
-
+#define afnReachability_MMMethodMMM          afnReachability
 #endif  /* codeObfuscation_h */
