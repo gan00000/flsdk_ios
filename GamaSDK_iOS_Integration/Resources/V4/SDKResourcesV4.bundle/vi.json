@@ -9,7 +9,7 @@
     "text_register"     :  "Đăng ký",
     "text_login_other"     :  "Cách khác",
     "text_reg_tips"     :  "*Email tài khoản chỉ dùng làm email xác minh giúp tìm lại mật mã, hãy điền thận trọng",
-    "text_get_vfcode"     :  "Gửi mã xác minh",
+    "text_get_vfcode"     :  "Gửi mã",
 
     "py_register_account_hit"     :  "Hãy nhập email bạn thường dùng",
     "py_register_password_hit"     :  "Hãy nhập 6-20 ký tự",
@@ -117,10 +117,10 @@
     "text_vfcode_has_send"     :  "Đã gửi mã xác minh",
     "text_phone_bind_success"     :  "Liên kết điện thoại thành công",
     "text_has_bind_tips_google"     :  "Google đã nâng cấp thành tài khoản hội viên",
-    "text_has_bind_tips_fb"     :  "Facebook đã nâng cấp thành tài khoản hội viên",
-    "text_has_bind_tips_guest"     :  "Khách đã nâng cấp thành tài khoản hội viên",
-    "text_has_bind_tips_line"     :  "LINE đã nâng cấp thành tài khoản hội viên",
-    "text_has_bind_tips_apple"     :  "Apple đã nâng cấp thành tài khoản hội viên",
+    "text_has_bind_tips_fb"     :  "Tài khoản đã nâng cấp",
+    "text_has_bind_tips_guest"     :  "Tài khoản đã nâng cấp",
+    "text_has_bind_tips_line"     :  "Tài khoản đã nâng cấp",
+    "text_has_bind_tips_apple"     :  "Tài khoản đã nâng cấp",
     "text_has_bind_tips_mw"     :  "Tài khoản hội viên",
     "text_account_bind_success2"     :  "Nâng cấp tài khoản hội viên thành công",
     "text_account_not_login"     :  "Chưa có tài khoản, hãy đăng nhập trước"
