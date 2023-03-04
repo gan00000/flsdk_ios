@@ -2248,6 +2248,33 @@
 			path = FB;
 			sourceTree = "<group>";
 		};
+		034682C429B2F44600DD16A1 /* view_v1 */ = {
+			isa = PBXGroup;
+			children = (
+				322CBC2824C589A5000D6B20 /* AccountLoginView.h */,
+				322CBC3624C589A5000D6B20 /* AccountLoginView.m */,
+				03EA36072850986F00723340 /* BindAccountView.h */,
+				03EA36062850986F00723340 /* BindAccountView.m */,
+				322CBC3024C589A5000D6B20 /* ChangePasswordView.h */,
+				322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */,
+				322CBC1B24C589A5000D6B20 /* FindPasswordView.h */,
+				322CBC2E24C589A5000D6B20 /* FindPasswordView.m */,
+				32CDA790253FD43100D3969F /* LoginWithRegView.h */,
+				32CDA791253FD43100D3969F /* LoginWithRegView.m */,
+				03EA360A2850989900723340 /* MainHomeView.h */,
+				03EA36092850989900723340 /* MainHomeView.m */,
+				322CBC2924C589A5000D6B20 /* RegisterAccountView.h */,
+				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
+				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
+				322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */,
+				32D790EB24D55D69006A2F69 /* TermsView.h */,
+				32D790EC24D55D69006A2F69 /* TermsView.m */,
+				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
+				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
+			);
+			path = view_v1;
+			sourceTree = "<group>";
+		};
 		035EDC1929A499F7009092F0 /* V3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2662,6 +2689,7 @@
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
 				322CBC1024C589A5000D6B20 /* UIUtils */,
 				322CBC1924C589A5000D6B20 /* view */,
+				034682C429B2F44600DD16A1 /* view_v1 */,
 				030FAA0028A0FA7C00709536 /* view_v2 */,
 				038613752938906000CC9C44 /* view_v3 */,
 				0387B9D2291B8BBB001BACA8 /* view_v4 */,
@@ -2686,28 +2714,8 @@
 			children = (
 				030FAA7928A39F0800709536 /* BaseCountTimerView.h */,
 				030FAA7A28A39F0800709536 /* BaseCountTimerView.m */,
-				322CBC2824C589A5000D6B20 /* AccountLoginView.h */,
-				322CBC3624C589A5000D6B20 /* AccountLoginView.m */,
-				03EA36072850986F00723340 /* BindAccountView.h */,
-				03EA36062850986F00723340 /* BindAccountView.m */,
-				322CBC3024C589A5000D6B20 /* ChangePasswordView.h */,
-				322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */,
-				322CBC1B24C589A5000D6B20 /* FindPasswordView.h */,
-				322CBC2E24C589A5000D6B20 /* FindPasswordView.m */,
-				32CDA790253FD43100D3969F /* LoginWithRegView.h */,
-				32CDA791253FD43100D3969F /* LoginWithRegView.m */,
-				03EA360A2850989900723340 /* MainHomeView.h */,
-				03EA36092850989900723340 /* MainHomeView.m */,
-				322CBC2924C589A5000D6B20 /* RegisterAccountView.h */,
-				322CBC3524C589A5000D6B20 /* RegisterAccountView.m */,
 				03650193285C761600578028 /* SDKBaseView.h */,
 				03650194285C761600578028 /* SDKBaseView.m */,
-				322CBC3124C589A5000D6B20 /* SelectBindTypeView.h */,
-				322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */,
-				32D790EB24D55D69006A2F69 /* TermsView.h */,
-				32D790EC24D55D69006A2F69 /* TermsView.m */,
-				03FA12D22853565200BBBEB4 /* WelcomeBackView.h */,
-				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
 				322CBC1F24C589A5000D6B20 /* widget */,
 				03C05CA628AE5F6B0060F4CD /* BasePopupView.h */,
 				03C05CA728AE5F6B0060F4CD /* BasePopupView.m */,
