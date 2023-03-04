@@ -643,7 +643,7 @@
     
     
     
-    [[AnthroporiumBonative share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+    [[AnthroporiumBonative share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName, NSError* _Nullable error) {
         
         NSDictionary *otherParamsDic = nil;
         @try {
@@ -669,7 +669,11 @@
         }];
         
         
-    } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+    } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName, NSError* _Nullable error) {
+        
+        if (error && error.description) {
+            [RiskHalf showAlertWithMessage_MMMethodMMM:error.localizedDescription];
+        }
         
     }];
     NSInteger selectedI = 6900;
@@ -689,6 +693,7 @@
 		//====insert my code end===
 
     while (@(selectedI).integerValue < 121) { break; }
+    
 }
 
 

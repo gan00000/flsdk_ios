@@ -261,7 +261,7 @@
         
         NSLog(@"Error: %@", error.localizedDescription);
         if (self.arac) {
-            self.arac(@"",@"",@"");
+            self.arac(@"",@"",@"", error);
 
             {
                 [self fractionKeyArchivedIdentifiersObject:@{@"range":@(480), @"academic":@(831)}];
@@ -290,7 +290,7 @@
         }
         SDK_LOG(@"accessToken=%@,userID=%@,displayName=%@",accessToken,userID,displayName);
         if (self.sdkFirebase) {
-            self.sdkFirebase(accessToken, userID, displayName);
+            self.sdkFirebase(accessToken, userID, displayName, nil);
         }
 
     }
