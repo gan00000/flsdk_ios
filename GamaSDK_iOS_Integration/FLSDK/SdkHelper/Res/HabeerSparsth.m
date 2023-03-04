@@ -2254,6 +2254,17 @@ static dispatch_once_t onceToken;
         return configDic;
     }
     
+    NSString *configInfoName_json_path = [[NSBundle mainBundle] pathForResource:[[PeopleitionStudentosity getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"] ofType:@"json"];
+    if(configInfoName_json_path){
+        NSData *jsonData = [[NSData alloc] initWithContentsOfFile:configInfoName_json_path];
+        NSError *error = nil;
+        configDic = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+        if(configDic){
+            return configDic;
+        }
+    }
+    
+    
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
     if(!infoPlistPath){
         infoPlistPath = [[NSBundle mainBundle] pathForResource:[[PeopleitionStudentosity getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"] ofType:@"plist"];
