@@ -8,6 +8,7 @@
 
 #import "ResHeader.h"
 #import "MWSDK.h"
+#import "AFNetworkReachabilityManager.h"
 
 @interface AppDelegate ()
 
@@ -52,7 +53,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
     
   
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    
+    [self afnReachabilityTest];
     [[MWSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
     
@@ -112,4 +113,30 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 //    [super dealloc];
 //}
 
+#pragma mark - AFN提供的方法
+- (void)afnReachabilityTest {
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"AFNetworkReachability thread%@",[NSThread currentThread]);
+        // 一共有四种状态
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"AFNetworkReachability Not Reachable");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"AFNetworkReachability Reachable via WWAN");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"AFNetworkReachability Reachable via WiFi");
+                break;
+            case AFNetworkReachabilityStatusUnknown:
+            default:
+                NSLog(@"AFNetworkReachability Unknown");
+                break;
+        }
+    }];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
 @end
