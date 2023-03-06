@@ -298,7 +298,18 @@
 
     }];
 
-    [self afnReachability_MMMethodMMM];
+    
+    //定制了延时执行的任务，不会阻塞线程，在主线程和子线程中都可以，效率较高（推荐使用）。
+    //此方式在可以在参数中选择执行的线程。 是一种非阻塞的执行方式， 没有找到取消执行的方法。
+    SDK_LOG(@"dispatch_after afnReachability start");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        SDK_LOG(@"time to afnReachability start");
+        [self afnReachability_MMMethodMMM];
+        
+     });
+    
+ 
 }
 
 
