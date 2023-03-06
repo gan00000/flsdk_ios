@@ -21,6 +21,8 @@
 #import <FirebaseAuth/FirebaseAuth.h>
 #import  <FirebaseMessaging/FIRMessaging.h>
 
+#import "AFNetworkReachabilityManager.h"
+
 @interface BaseSDK()<FIRMessagingDelegate, UNUserNotificationCenterDelegate>
 
 @end
@@ -94,6 +96,47 @@
     return _share_sdk;
 }
 
+#pragma mark - AFN提供的方法
+- (void)afnReachability_MMMethodMMM {
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        // 一共有四种状态  主线程
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:
+                SDK_LOG(@"AFNetworkReachability Not Reachable");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                SDK_LOG(@"AFNetworkReachability Reachable via WWAN");
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                SDK_LOG(@"AFNetworkReachability Reachable via WiFi");
+            case AFNetworkReachabilityStatusUnknown:
+            default:
+                SDK_LOG(@"AFNetworkReachability Unknown");
+            {
+                //事件打点
+                [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
+                [AdLogger logServerWithEventName_Install_MMMethodMMM];//发送事件到日志服务器
+                
+                [SDKRequest getSdkConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+                    
+                } errorBlock_MMMethodMMM:^(BJError *error) {
+                    
+                }];
+                
+                [SDKRequest getAreaInfoWithSuccessBlock_MMMethodMMM:^(id responseData) {
+
+                } errorBlock_MMMethodMMM:^(BJError *error) {
+
+                }];
+            }
+                break;
+        }
+    }];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
 
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -152,6 +195,16 @@
     } errorBlock_MMMethodMMM:^(BJError *error) {
 
     }];
+    
+    //定制了延时执行的任务，不会阻塞线程，在主线程和子线程中都可以，效率较高（推荐使用）。
+    //此方式在可以在参数中选择执行的线程。 是一种非阻塞的执行方式， 没有找到取消执行的方法。
+    SDK_LOG(@"dispatch_after afnReachability start");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        SDK_LOG(@"time to afnReachability start");
+        [self afnReachability_MMMethodMMM];
+        
+     });
 
 }
 

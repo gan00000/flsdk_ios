@@ -469,5 +469,6 @@
 #define logServerWithEventName_MMMethodMMM          logServerWithEventName_MMMethodMMM
 #define getJsonContentWithBundle_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
 #define trim_MMMethodMMM                        trim_MMMethodMMM
+#define afnReachability_MMMethodMMM          afnReachability
 
 #endif  /* codeObfuscation_h */
