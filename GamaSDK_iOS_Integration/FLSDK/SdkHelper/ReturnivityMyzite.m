@@ -671,7 +671,7 @@
         
     } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName, NSError* _Nullable error) {
         
-        if (error && error.description) {
+        if (error && error.code != 3 && error.description) {
             [RiskHalf showAlertWithMessage_MMMethodMMM:error.localizedDescription];
         }
         
