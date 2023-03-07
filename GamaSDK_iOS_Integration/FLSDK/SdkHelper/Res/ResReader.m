@@ -144,6 +144,12 @@ static dispatch_once_t onceToken;
         return configDic;
     }
     
+    configDic =[self getJsonContentWithBundle_MMMethodMMM:[NSBundle mainBundle] name_MMMethodMMM:[[SUtil getBundleIdentifier_MMMethodMMM] stringByReplacingOccurrencesOfString:@"." withString:@"_"] ofType_MMMethodMMM:@"json"];
+    
+    if(configDic){
+        return configDic;
+    }
+    
     //读取自定义的 plist文件的写法
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
     
