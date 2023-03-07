@@ -87,7 +87,7 @@
 		0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
 		0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
 		03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
-		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
+		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
 		032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
@@ -204,6 +204,8 @@
 		0352F7112927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
 		03554A77299651E20078EFFB /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */; };
+		03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		035EDC1F29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */; };
 		035EDC2029A499F7009092F0 /* com_mplay_wlzhs.json in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1B29A499F7009092F0 /* com_mplay_wlzhs.json */; };
 		035EDC2129A499F7009092F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */; };
@@ -845,7 +847,7 @@
 		039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		039B269D298B557400045C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		039B26A0298B557400045C53 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
-		039B26A1298B557400045C53 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
+		039B26A1298B557400045C53 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		039B26A2298B557400045C53 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55628C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework */; };
 		039B26A4298B557400045C53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
 		039B26A5298B557400045C53 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
@@ -897,6 +899,7 @@
 		039B26E5298B557400045C53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		039B26E6298B557400045C53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
 		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
 		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
@@ -947,7 +950,7 @@
 		03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
-		03F542C92940BC5D00F75F51 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; };
+		03F542C92940BC5D00F75F51 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03F542CA2940BC5D00F75F51 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55628C5B44C00B7A99F /* FBSDKCoreKit_Basics.xcframework */; };
 		03F542CC2940BC5D00F75F51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
 		03F542CD2940BC5D00F75F51 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
@@ -1405,6 +1408,7 @@
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
+		03AB50DE29B757F900D86AE6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wantang_xlzsg.json; sourceTree = "<group>"; };
 		03B918DC286029050029AE6A /* ConfigResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigResponse.h; sourceTree = "<group>"; };
@@ -1766,6 +1770,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */,
 				0381EC7B298B5703006D6100 /* MWSDK_V5.framework in Frameworks */,
 				039B26A0298B557400045C53 /* AppTrackingTransparency.framework in Frameworks */,
 				033DBCCF298D0BA7004F28E4 /* GTMSessionFetcher.xcframework in Frameworks */,
@@ -1843,6 +1848,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */,
 				032CB5662940BCFE0013185B /* MWSDK_V4.framework in Frameworks */,
 				03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */,
 				033DBCCE298D0BA7004F28E4 /* GTMSessionFetcher.xcframework in Frameworks */,
@@ -1927,6 +1933,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */,
 				032CB56A2940BEBD0013185B /* MWSDK_V2.framework in Frameworks */,
 				0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */,
 				033DBCCC298D0BA7004F28E4 /* GTMSessionFetcher.xcframework in Frameworks */,
@@ -2504,6 +2511,7 @@
 		220B859D1E572CD000505690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03AB50DE29B757F900D86AE6 /* SwiftUI.framework */,
 				0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */,
 				0320293A286B08E000E8D5A5 /* AdServices.framework */,
 				E940F2432477D14700C9A6DC /* CoreText.framework */,
@@ -5431,7 +5439,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0306;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
