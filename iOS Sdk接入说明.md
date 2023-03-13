@@ -25,7 +25,7 @@
 
 *	**系统库导入**
 
-	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、AdServices.framework、ApptrackingTransparency.framework、AuthenticationServices.framework
+	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、AdServices.framework(Optional)、ApptrackingTransparency.framework、AuthenticationServices.framework、SwiftUI.framework(Optional)
 	
 * **添加Sign in with Apple**
 
