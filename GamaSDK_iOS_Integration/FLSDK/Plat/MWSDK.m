@@ -136,6 +136,7 @@
 
 - (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
+    SDK_LOG(@"switchLoginWithHandler");
     [self sdkLoginWithHandler:cmopleteHandler];
 }
 

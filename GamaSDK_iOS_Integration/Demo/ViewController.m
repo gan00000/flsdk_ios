@@ -26,7 +26,7 @@
 @end
 
 @implementation ViewController
-@synthesize buttonsTable = _buttonsTable, buttonsArray = _buttonsArray;
+@synthesize buttonsTable = _buttonsTable;
 
 - (void)dealloc
 {
@@ -49,6 +49,43 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    /*********************************************
+     SDK测试项目
+     ***********************************************/
+//    self.btnsDic = @{@"0": @"登入",
+//                     @"12": @"切换账号",
+//                     @"1": @"保存/更新角色信息（进入游戏得到角色信息后调用）",
+//                     @"2": @"充值com.fzzh.tw.1usd",
+//                     @"3": @"充值com.fzzh.tw.2usd",
+//                     @"4": @"事件追踪",
+//                     @"5": @"fb分享url",
+//                     @"6": @"显示手机绑定页面",
+//                     @"7": @"显示账号升级页面",
+//                     @"8": @"line分享",
+//                     @"9": @"客服",
+//                     @"10": @"本地定时通知",
+//                     @"11": @"本地定期通知",
+//    };
+//
+//    self.keyArray = self.btnsDic.allKeys;
+//    self.valueArray = self.btnsDic.allValues;
+    self.valueArray = @[@"登入",
+                        @"切换账号",
+                          @"保存/更新角色信息（进入游戏得到角色信息后调用）",
+                          @"充值com.fzzh.tw.1usd",
+                          @"充值com.fzzh.tw.2usd",
+                          @"事件追踪",
+                          @"fb分享url",
+                          @"显示手机绑定页面",
+                          @"显示账号升级页面",
+                          @"line分享",
+                          @"客服",
+                          @"本地定时通知",
+                          @"本地定期通知",
+                          ];
+    
+    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11];
 
     
     // iOS 获取设备当前语言的代码
@@ -64,35 +101,6 @@
     _buttonsTable.delegate = self;
     _buttonsTable.dataSource = self;
     [self.view addSubview:_buttonsTable];
-
-    /*********************************************
-     SDK测试项目
-     ***********************************************/
-    self.buttonsArray = @[@"登入",
-                          @"保存/更新角色信息（进入游戏得到角色信息后调用）",
-                          @"充值com.fzzh.tw.1usd",
-                          @"充值com.fzzh.tw.2usd",
-                          @"事件追踪",
-                          @"fb分享url",
-                          @"显示手机绑定页面",
-                          @"显示账号升级页面",
-                          @"line分享",
-                          @"客服",
-                          @"本地定时通知",
-                          @"本地定期通知",
-                          ];
-    
-    /*********************************************
-     添加Notification 让客服端监听通知
-     *********************************************/
-    
-  
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userSharingResult:) name:GAMA_SHARE_RESULT object:nil];
-//
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gamaPhchaSesuccessFul:) name:GAMA_PAY_SUCCUESS object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gamaPhchaFail:) name:GAMA_PAY_FAIL object:nil];
-//
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gamaPuchessing:) name:GAMA_PAY_PUCHESSING object:nil];
 }
 
 
@@ -100,7 +108,7 @@
 #pragma mark - TableView DataSource and Delegate Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _buttonsArray.count;
+    return self.valueArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,7 +121,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indetity];
     }
     
-    cell.textLabel.text = [_buttonsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.valueArray objectAtIndex:indexPath.row];
     
     return cell ;
 }
@@ -122,7 +130,8 @@
 //点击选中表格行
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
+    int index = [self.keyArray[indexPath.row] intValue];
+    switch (index) {
             
             /*********************************************
              登入
@@ -130,6 +139,25 @@
         case 0:
         {
             [[MWSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
+                NSString * userId = loginData.userId;
+                NSString * accessToken = loginData.accessToken;
+                NSString * timestamp = loginData.timestamp;
+                BOOL isBind = loginData.isBind; //是否绑定账号
+                BOOL isBindPhone = loginData.isBindPhone;//是否绑定手机
+                NSString *telephone = loginData.telephone;//绑定的手机号码
+                
+                //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
+            }];
+            
+
+        }
+            break;
+            
+        case 12:
+        {
+            [[MWSDK share] switchLoginWithHandler:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
