@@ -265,6 +265,7 @@
 		03588C3F29B98B9600D9CF84 /* gamesdkv5v5v5.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A702996405D0078EFFB /* gamesdkv5v5v5.json */; };
 		03588C4129B98C8900D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03588C4029B98C8900D9CF84 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03588C4229B98CA900D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03588C4029B98C8900D9CF84 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03588C4529BED8C100D9CF84 /* GwsgSdkV5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03773DD329925AF8007B118D /* GwsgSdkV5.framework */; };
 		035EDC2929A4A7D5009092F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		035EDC2A29A4A7D5009092F0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		035EDC2B29A4A7D5009092F0 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -278,7 +279,6 @@
 		035EDC3629A4A7D5009092F0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 032B862329909D2100C7413C /* README.md */; };
 		035EDC3729A4A7D5009092F0 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		035EDC3829A4A7D5009092F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		035EDC3A29A4A7D5009092F0 /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V5.framework */; };
 		035EDC3B29A4A7D5009092F0 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		035EDC3C29A4A7D5009092F0 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B862029909D2100C7413C /* GTMSessionFetcher.xcframework */; };
 		035EDC3D29A4A7D5009092F0 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */; };
@@ -678,12 +678,12 @@
 			remoteGlobalIDString = 0387B9D5291B8C9E001BACA8;
 			remoteInfo = MWSDK_V4;
 		};
-		035EDC2729A4A7D5009092F0 /* PBXContainerItemProxy */ = {
+		03588C4329BED8B200D9CF84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0387B9D5291B8C9E001BACA8;
-			remoteInfo = MWSDK_V4;
+			remoteGlobalIDString = 03773CDD29925AF8007B118D;
+			remoteInfo = GwsgSdkV5;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1100,8 +1100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03588C4529BED8C100D9CF84 /* GwsgSdkV5.framework in Frameworks */,
 				03588C4229B98CA900D9CF84 /* SwiftUI.framework in Frameworks */,
-				035EDC3A29A4A7D5009092F0 /* MWSDK_V5.framework in Frameworks */,
 				035EDC3B29A4A7D5009092F0 /* AppTrackingTransparency.framework in Frameworks */,
 				035EDC3C29A4A7D5009092F0 /* GTMSessionFetcher.xcframework in Frameworks */,
 				035EDC3D29A4A7D5009092F0 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
@@ -2297,7 +2297,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				035EDC2629A4A7D5009092F0 /* PBXTargetDependency */,
+				03588C4429BED8B200D9CF84 /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_V2;
 			packageProductDependencies = (
@@ -2766,10 +2766,10 @@
 			target = 0387B9D5291B8C9E001BACA8 /* MWSDK_V5 */;
 			targetProxy = 032CB5682940BE740013185B /* PBXContainerItemProxy */;
 		};
-		035EDC2629A4A7D5009092F0 /* PBXTargetDependency */ = {
+		03588C4429BED8B200D9CF84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0387B9D5291B8C9E001BACA8 /* MWSDK_V5 */;
-			targetProxy = 035EDC2729A4A7D5009092F0 /* PBXContainerItemProxy */;
+			target = 03773CDD29925AF8007B118D /* GwsgSdkV5 */;
+			targetProxy = 03588C4329BED8B200D9CF84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

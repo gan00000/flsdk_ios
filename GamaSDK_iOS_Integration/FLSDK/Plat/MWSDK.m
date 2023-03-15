@@ -174,6 +174,14 @@
     
 }
 
+- (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
+{
+    SDK_LOG(@"switchLoginWithHandler");
+    [self sdkLoginWithHandler:cmopleteHandler];
+}
+
+
+#pragma mark - 内部方法
 - (void)sdkLoginWithHandlerForInner
 {
 
