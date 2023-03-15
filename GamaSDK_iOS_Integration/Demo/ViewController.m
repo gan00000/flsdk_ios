@@ -80,6 +80,7 @@
                           @"客服",
                           @"本地定时通知",
                           @"本地定期通知",
+                          @"切换账号登入",
                           ];
     
     /*********************************************
@@ -278,7 +279,22 @@
         }
             break;
 
-       
+        case 12:{
+            
+            [[MWSDK share] switchLoginWithHandler:^(LoginData *loginData) {
+                NSString * userId = loginData.userId;
+                NSString * accessToken = loginData.accessToken;
+                NSString * timestamp = loginData.timestamp;
+                BOOL isBind = loginData.isBind; //是否绑定账号
+                BOOL isBindPhone = loginData.isBindPhone;//是否绑定手机
+                NSString *telephone = loginData.telephone;//绑定的手机号码
+                
+                //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                [RiskHalf showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
+            }];
+        }
+            break;
     }
 }
 
