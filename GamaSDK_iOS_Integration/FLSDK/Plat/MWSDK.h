@@ -95,6 +95,9 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 /// @param cmopleteHandler 登录回调block
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
 
+/// 切换登录接口
+/// @param cmopleteHandler 登录回调block
+- (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
 
 /// 每次登录或者切换账号的时候获得角色信息的时候调用
 /// @param roleId 角色id，必传

@@ -134,6 +134,12 @@
     
 }
 
+- (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
+{
+    [self sdkLoginWithHandler:cmopleteHandler];
+}
+
+#pragma mark - 内部方法
 - (void)sdkLoginWithHandlerForInner
 {
 
@@ -672,17 +678,5 @@
     }
 }
 
-
-#pragma mark - 内部方法
-
-- (void)gama_showPlatformToView:(UIView *)view
-{
-    
-}
-
-- (void)gama_hiddenPlatform
-{
-    
-}
 
 @end
