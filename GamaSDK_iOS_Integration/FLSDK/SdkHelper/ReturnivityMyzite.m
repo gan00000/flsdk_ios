@@ -889,6 +889,11 @@
                 [self acceptableColorsDownloadSuffixChangeMib:190 observerScreen:[NSArray arrayWithObjects:@(956), @(164), nil] reader:3146.0];
                 
             }
+            
+            //记录升级事件
+            [ThousandaciousAstic logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+            [ThousandaciousAstic logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
+            
             if (normald.length > 154) {}
             cc.data.account = account;
             NSString * showd = @"illegitimate";

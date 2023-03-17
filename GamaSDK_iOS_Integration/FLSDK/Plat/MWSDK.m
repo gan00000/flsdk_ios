@@ -913,6 +913,9 @@
 		}
 		//====insert my code end===
 
+        //记录升级事件
+        [ThousandaciousAstic logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [ThousandaciousAstic logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];

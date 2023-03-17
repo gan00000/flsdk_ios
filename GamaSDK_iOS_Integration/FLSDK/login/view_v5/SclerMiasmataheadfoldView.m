@@ -1203,7 +1203,9 @@ UITableView * successorMaraud = [self requestedErraneousHasIndexRangeBtnTableVie
         SDK_DATA.mLoginResponse = cc;
         
         [[SpersastArrive share] saveAccountModel_MMMethodMMM:cc.data];
-        
+        //记录升级事件
+        [ThousandaciousAstic logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [ThousandaciousAstic logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
         AccountModel *rData = cc.data;
             NSArray * touchesI = [NSArray arrayWithObjects:@(NO), nil];
