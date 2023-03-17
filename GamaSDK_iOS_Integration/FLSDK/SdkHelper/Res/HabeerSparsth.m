@@ -1194,8 +1194,8 @@ static dispatch_once_t onceToken;
     
     
     NSString *textContent = [PitiWhether getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    NSDictionary * dimeE = [NSDictionary dictionaryWithObjectsAndKeys:@"appendage",@(283), @"preparation",@(626), @"apostate",@(90), nil];
-    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+//    NSDictionary * dimeE = [NSDictionary dictionaryWithObjectsAndKeys:@"appendage",@(283), @"preparation",@(626), @"apostate",@(90), nil];
+    //SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
     NSDictionary * bindingf = [NSDictionary dictionaryWithObjectsAndKeys:@"anguish",@(454), nil];
     return textContent;
 }

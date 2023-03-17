@@ -145,6 +145,7 @@
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
     
+    SDK_LOG(@"sdkLoginWithHandler");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [RiskHalf showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
@@ -184,7 +185,7 @@
 #pragma mark - 内部方法
 - (void)sdkLoginWithHandlerForInner
 {
-
+    SDK_LOG(@"sdkLoginWithHandlerForInner");
     LightLanguagealityController *controller = [[LightLanguagealityController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
     //        controller.definesPresentationContext = YES;
 #ifdef __IPHONE_8_0
