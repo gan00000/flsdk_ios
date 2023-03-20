@@ -1382,7 +1382,6 @@
 		038613872938906000CC9C44 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
 		0386139D293897C900CC9C44 /* SDKResourcesV2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV2.bundle; sourceTree = "<group>"; };
 		038614062938981100CC9C44 /* SDK_DEMO_V3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		038614072938981200CC9C44 /* SDK_TEST copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_TEST copy-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_TEST copy-Info.plist"; sourceTree = "<absolute>"; };
 		0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
 		0387B9D4291B8BBB001BACA8 /* AccountLoginViewV2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginViewV2.m; sourceTree = "<group>"; };
 		0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1617,10 +1616,6 @@
 		CEE6B95E1A14993E009E77FF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		CEE6B9601A149944009E77FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CEF6E9291A35B45500CFFE2F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		E90A13AE208ECED2007BC6A9 /* libGamaIAP_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaIAP_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B434F2355D36400D45BF9 /* libGamaAD_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAD_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92C238920CA665A00C27B2C /* libGamaCoreFunc_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaCoreFunc_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92C23A420CE51CE00C27B2C /* libGamaAccountLogin_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaAccountLogin_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C7CF021193CFB00C65C81 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		E940F2412477D13400C9A6DC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -1633,7 +1628,6 @@
 		E956BC79211D768F006D9E4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GamaSDK_iOS/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		E95BCED3237D4A2A004A08B1 /* PhoneInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfoModel.h; sourceTree = "<group>"; };
 		E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneInfoModel.m; sourceTree = "<group>"; };
-		E95BCED9237EAD0D004A08B1 /* libGamaGamecenter_DotA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGamaGamecenter_DotA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97411C420874A170018E1A6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E97411C520874A170018E1A6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E97411C820874A170018E1A6 /* IAP_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAP_ViewController.h; sourceTree = "<group>"; };
@@ -2521,14 +2515,9 @@
 				E98E852023825BCD00257BDE /* libc++.1.tbd */,
 				E98E851F23825AB700257BDE /* libc++.tbd */,
 				E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */,
-				E95BCED9237EAD0D004A08B1 /* libGamaGamecenter_DotA.a */,
 				E94EE4812362CF72007D3A93 /* CloudKit.framework */,
 				E9FDBBE221EDDB8000500CA7 /* MapKit.framework */,
 				E92C7CF021193CFB00C65C81 /* iAd.framework */,
-				E92C238920CA665A00C27B2C /* libGamaCoreFunc_DotA.a */,
-				E92C23A420CE51CE00C27B2C /* libGamaAccountLogin_DotA.a */,
-				E92B434F2355D36400D45BF9 /* libGamaAD_DotA.a */,
-				E90A13AE208ECED2007BC6A9 /* libGamaIAP_DotA.a */,
 				22AA03201F308AB4001C8B51 /* GameKit.framework */,
 			);
 			name = Frameworks;
@@ -2805,7 +2794,6 @@
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
-				038614072938981200CC9C44 /* SDK_TEST copy-Info.plist */,
 				03DD67E4294AE17200C1D307 /* SDK_DEMO_V4-Info.plist */,
 				039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */,
 			);
