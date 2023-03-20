@@ -116,7 +116,7 @@
 
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
-    
+    SDK_LOG(@"sdkLoginWithHandler");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
@@ -143,7 +143,7 @@
 #pragma mark - 内部方法
 - (void)sdkLoginWithHandlerForInner
 {
-
+    SDK_LOG(@"sdkLoginWithHandlerForInner");
     SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
     //        controller.definesPresentationContext = YES;
 #ifdef __IPHONE_8_0
@@ -540,6 +540,10 @@
         [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
         
 //        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
+        
+        //记录升级事件
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];

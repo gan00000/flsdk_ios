@@ -24,6 +24,7 @@
 #define AD_EVENT_START_GUIDE  wwwww_tag_wwwww_START_GUIDE
 #define AD_EVENT_COMPLETE_GUIDE  wwwww_tag_wwwww_COMPLETE_GUIDE
 
+#define AD_EVENT_UPGRADE_ACCOUNT  wwwww_tag_wwwww_Upgrade_Account
 
 // 充值回调
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)

@@ -316,6 +316,10 @@
         
 //        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         
+        //记录升级事件
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
+        
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;

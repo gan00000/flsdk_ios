@@ -11,6 +11,7 @@
 #import "SDKRequest.h"
 #import "FBDelegate.h"
 #import "LineDelegate.h"
+#import "MWSDK.h"
 
 @implementation LoginHelper
 
@@ -337,6 +338,11 @@
             cc.data.account = account;
             cc.data.password = password;
             cc.data.loginType = LOGIN_TYPE_SELF;
+            
+            //记录升级事件
+            [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+            [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
+            
             [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
         
