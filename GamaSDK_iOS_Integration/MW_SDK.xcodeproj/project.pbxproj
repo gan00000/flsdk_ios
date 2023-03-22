@@ -203,7 +203,6 @@
 		0352F7102927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		0352F7112927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
-		03554A77299651E20078EFFB /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */; };
 		03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		035EDC1F29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */; };
@@ -3318,7 +3317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03554A77299651E20078EFFB /* com_miaoou_gwsg.plist in Resources */,
 				03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */,
 				030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */,
 				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
