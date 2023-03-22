@@ -85,13 +85,20 @@
     NSArray* transactions = [SKPaymentQueue defaultQueue].transactions;
     
     if (transactions.count >= 1) {
+        SDK_LOG(@"Array of unfinished SKPaymentTransactions:%d", transactions.count);
         SDK_LOG(wwwww_tag_wwwww_radio_tenyesator);
         for (SKPaymentTransaction* transaction in transactions) {
             if (transaction.transactionState == SKPaymentTransactionStatePurchased ||transaction.transactionState == SKPaymentTransactionStateRestored) {//此处是否做个补发好一点...
+                
+//                NSString *transactionId = transaction.transactionIdentifier;
+//
 //                NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
 //                NSData *receiptData = [NSData dataWithContentsOfURL:receiptUrl];
 //                NSString *receiptString = [SUtil encode:(uint8_t *)receiptData.bytes length:receiptData.length];
-                [[SKPaymentQueue defaultQueue]finishTransaction:transaction];
+//
+//                NSString *applicationUsername = transaction.payment.applicationUsername;//此处applicationUsername会为nil
+                
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
             }
         }
         
