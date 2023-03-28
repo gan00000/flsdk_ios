@@ -115,6 +115,7 @@
             wwwww_tag_wwwww_eventName        :eventName,
             wwwww_tag_wwwww_appTime          :timeStamp,
             wwwww_tag_wwwww_gameCode         :[NSString stringWithFormat:@"%@", GAME_CODE],
+            wwwww_tag_wwwww_userId          : SDK_DATA.mLoginResponse.data.userId ? : @"",
         };
         [params addEntriesFromDictionary:dic];
         
