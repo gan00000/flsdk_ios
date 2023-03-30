@@ -88,6 +88,10 @@
 		033B32F029D56AEE00AE9F96 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32DE29D56AEE00AE9F96 /* BindAccountViewV2.m */; };
 		033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */; };
 		033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */; };
+		033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */; };
+		033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */; };
+		033B32FB29D56E3200AE9F96 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */; };
+		033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CA72B729D5698400098979 /* MWSDK_VN.framework */; };
 		033DBCC8298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCC9298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCCA298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
@@ -1002,16 +1006,12 @@
 		03CA72BF29D5699600098979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		03CA72C029D5699600098979 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		03CA72C129D5699600098979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		03CA72C329D5699600098979 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
-		03CA72C429D5699600098979 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
-		03CA72C529D5699600098979 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */; };
 		03CA72C629D5699600098979 /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 033DBCB0298D0BA7004F28E4 /* NOTICES */; };
 		03CA72C729D5699600098979 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033DBCC4298D0BA7004F28E4 /* GoogleSignIn.bundle */; };
 		03CA72C829D5699600098979 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 033DBCB1298D0BA7004F28E4 /* README.md */; };
 		03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03CA72CA29D5699600098979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03CA72CC29D5699600098979 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03CA72CD29D5699600098979 /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B268A298B555300045C53 /* MWSDK_V5.framework */; };
 		03CA72CE29D5699600098979 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03CA72CF29D5699600098979 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAE298D0BA7004F28E4 /* GTMSessionFetcher.xcframework */; };
 		03CA72D029D5699600098979 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -1402,6 +1402,10 @@
 		033B32DE29D56AEE00AE9F96 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
 		033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
 		033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
+		033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesVN.bundle; sourceTree = "<group>"; };
+		033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
+		033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
 		033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		033DBCAE298D0BA7004F28E4 /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		033DBCAF298D0BA7004F28E4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -1960,8 +1964,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */,
 				03CA72CC29D5699600098979 /* SwiftUI.framework in Frameworks */,
-				03CA72CD29D5699600098979 /* MWSDK_V5.framework in Frameworks */,
 				03CA72CE29D5699600098979 /* AppTrackingTransparency.framework in Frameworks */,
 				03CA72CF29D5699600098979 /* GTMSessionFetcher.xcframework in Frameworks */,
 				03CA72D029D5699600098979 /* AdServices.framework in Frameworks */,
@@ -2363,26 +2367,37 @@
 		033B32CE29D56AEE00AE9F96 /* view_vn */ = {
 			isa = PBXGroup;
 			children = (
-				033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */,
-				033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */,
-				033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */,
-				033B32D229D56AEE00AE9F96 /* NoticeViewV2.m */,
-				033B32D329D56AEE00AE9F96 /* BindAccountViewV2.h */,
-				033B32D429D56AEE00AE9F96 /* TermsViewV2.h */,
 				033B32D529D56AEE00AE9F96 /* AccountLoginViewV2.h */,
-				033B32D629D56AEE00AE9F96 /* MainHomeViewV2.m */,
-				033B32D729D56AEE00AE9F96 /* BindPhoneViewV2.m */,
-				033B32D829D56AEE00AE9F96 /* FindPasswordViewV2.m */,
-				033B32D929D56AEE00AE9F96 /* LoginWithRegViewV2.h */,
-				033B32DA29D56AEE00AE9F96 /* NoticeViewV2.h */,
-				033B32DB29D56AEE00AE9F96 /* RegisterAccountViewV2.m */,
 				033B32DC29D56AEE00AE9F96 /* AccountLoginViewV2.m */,
-				033B32DD29D56AEE00AE9F96 /* TermsViewV2.m */,
+				033B32D329D56AEE00AE9F96 /* BindAccountViewV2.h */,
 				033B32DE29D56AEE00AE9F96 /* BindAccountViewV2.m */,
 				033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */,
+				033B32D729D56AEE00AE9F96 /* BindPhoneViewV2.m */,
+				033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */,
+				033B32D829D56AEE00AE9F96 /* FindPasswordViewV2.m */,
+				033B32D929D56AEE00AE9F96 /* LoginWithRegViewV2.h */,
+				033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */,
 				033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */,
+				033B32D629D56AEE00AE9F96 /* MainHomeViewV2.m */,
+				033B32DA29D56AEE00AE9F96 /* NoticeViewV2.h */,
+				033B32D229D56AEE00AE9F96 /* NoticeViewV2.m */,
+				033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */,
+				033B32DB29D56AEE00AE9F96 /* RegisterAccountViewV2.m */,
+				033B32D429D56AEE00AE9F96 /* TermsViewV2.h */,
+				033B32DD29D56AEE00AE9F96 /* TermsViewV2.m */,
 			);
 			path = view_vn;
+			sourceTree = "<group>";
+		};
+		033B32F329D56E3200AE9F96 /* VN */ = {
+			isa = PBXGroup;
+			children = (
+				033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */,
+				033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */,
+				033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */,
+				033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */,
+			);
+			path = VN;
 			sourceTree = "<group>";
 		};
 		033DBCAB298D0BA7004F28E4 /* Firebase */ = {
@@ -3112,6 +3127,7 @@
 				035EDC1929A499F7009092F0 /* V3 */,
 				E9150D282383E6640003F1FB /* V4 */,
 				030D35FF2999F1E0001AAFC0 /* V5 */,
+				033B32F329D56E3200AE9F96 /* VN */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -3598,12 +3614,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CA72C329D5699600098979 /* com_miaoou_gwsg.json in Resources */,
-				03CA72C429D5699600098979 /* GoogleService-Info.plist in Resources */,
-				03CA72C529D5699600098979 /* SDKResourcesV5.bundle in Resources */,
+				033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */,
 				03CA72C629D5699600098979 /* NOTICES in Resources */,
 				03CA72C729D5699600098979 /* GoogleSignIn.bundle in Resources */,
+				033B32FB29D56E3200AE9F96 /* com_mwgame_sdkzycs.json in Resources */,
 				03CA72C829D5699600098979 /* README.md in Resources */,
+				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
 			);
@@ -5493,7 +5509,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5525,11 +5541,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

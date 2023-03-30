@@ -33,6 +33,12 @@
 #define C_BUTTON_START  wwwww_tag_wwwww__CC_FC676F
 #define C_BUTTON_END  wwwww_tag_wwwww__CC_FF9944
 
+#elif SDK_VN
+
+#define BaseColor  @"#FE621D"
+#define C_BUTTON_START  wwwww_tag_wwwww__CC_FC676F
+#define C_BUTTON_END  wwwww_tag_wwwww__CC_FF9944
+
 #else
 
 #define BaseColor  wwwww_tag_wwwww__CC_FF892E

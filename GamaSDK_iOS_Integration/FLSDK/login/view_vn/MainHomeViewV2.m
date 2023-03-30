@@ -76,9 +76,16 @@
 {
     
     //test
-//    SDK_DATA.mConfigModel.appleLogin = YES;
-//    SDK_DATA.mConfigModel.appPassCheck = NO;
+    SDK_DATA.mConfigModel.appleLogin = YES;
+    SDK_DATA.mConfigModel.appPassCheck = YES;
 //    SDK_DATA.mConfigModel.showLogo = YES;
+    
+    //设置图片bg
+    UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_view];
+    [self addSubview:bgIV];
+    [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
     
     UIView *contentView = [[UIView alloc] init];
     [self addSubview:contentView];
@@ -87,29 +94,29 @@
         make.centerY.mas_equalTo(self);
     }];
     
-    UIImageView *logoIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_logo];
-    logoIV.hidden = YES;
-    if (SDK_DATA.mConfigModel.showLogo) {
-        logoIV.hidden = NO;
-    }
-    [contentView addSubview:logoIV];
-    [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        CGFloat hx = VH(MARGIN_TOP);
-//        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
-        make.top.mas_equalTo(contentView.mas_top);
-        make.width.mas_equalTo(VW(200));
-        if (SDK_DATA.mConfigModel.showLogo) {
-            make.height.mas_equalTo(VH(50));
-        }else{
-            make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
-        }
-        make.centerX.mas_equalTo(contentView);
-    }];
+//    UIImageView *logoIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_logo];
+//    logoIV.hidden = YES;
+//    if (SDK_DATA.mConfigModel.showLogo) {
+//        logoIV.hidden = NO;
+//    }
+//    [contentView addSubview:logoIV];
+//    [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
+////        CGFloat hx = VH(MARGIN_TOP);
+////        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
+//        make.top.mas_equalTo(contentView.mas_top);
+//        make.width.mas_equalTo(VW(200));
+//        if (SDK_DATA.mConfigModel.showLogo) {
+//            make.height.mas_equalTo(VH(50));
+//        }else{
+//            make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
+//        }
+//        make.centerX.mas_equalTo(contentView);
+//    }];
     
     
     //游客登录
     guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [guestLoginBtn.layer setCornerRadius:VH(25)];
+    [guestLoginBtn.layer setCornerRadius:VH(5)];
 //    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
     guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     
@@ -117,14 +124,11 @@
     
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        if (logoIV.hidden) {
-            make.top.mas_equalTo(logoIV.mas_bottom);
-        }else{
-            make.top.mas_equalTo(logoIV.mas_bottom).mas_offset(VH(18));
-        }
-        
-        make.leading.mas_equalTo(contentView).mas_offset(VH(38));
-        make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));;
+        make.top.mas_equalTo(contentView);
+//        make.leading.mas_equalTo(contentView).mas_offset(VH(38));
+//        make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));
+        make.centerX.mas_equalTo(contentView);
+        make.width.mas_equalTo(VW(300));
         make.height.mas_equalTo(VH(50));
     }];
     
@@ -146,7 +150,8 @@
     UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:guse_login_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtnContent addSubview:guestIconBtn];
     [guestIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.mas_equalTo(guestLoginBtnContent);
+        make.top.bottom.leading.mas_equalTo(guestLoginBtnContent);
+        make.centerY.mas_equalTo(guestLoginBtnContent);
         make.width.height.mas_equalTo(VW(30));
     }];
     
@@ -154,6 +159,7 @@
     [guestLoginBtnContent addSubview:guestTextBtn];
     [guestTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
+        make.centerY.mas_equalTo(guestLoginBtnContent);
         make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
     }];
     if (!SDK_DATA.mConfigModel.visitorLogin) {
@@ -168,10 +174,10 @@
     
     if (@available(iOS 13.0, *)) {
         ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                    authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+                                    authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
         [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
         appleLoginBtn.tag = appleLoginActTag;
-        appleLoginBtn.cornerRadius = VH(25);
+        appleLoginBtn.cornerRadius = VH(5);
         [contentView addSubview:appleLoginBtn];
 
         topView = appleLoginBtn;
@@ -187,7 +193,7 @@
         }else{
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.trailing.height.mas_equalTo(guestLoginBtn);
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(10));
             }];
         }
         
@@ -197,10 +203,10 @@
     [contentView addSubview:hasAccountContent];
     [hasAccountContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(contentView);
-        make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(27));
+        make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(18));
     }];
     
-    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor whiteColor]];
+    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#656565"]];
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
@@ -215,38 +221,38 @@
     }];
     
     
-    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login_other.localx fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
-    [contentView addSubview:otherLoginLabel];
-    [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
-        make.centerX.mas_equalTo(contentView);
-    }];
-    
-    UIView *lineView1 = [[UIView alloc] init];
-    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-    [contentView addSubview:lineView1];
-    [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        //make.width.mas_equalTo(0.5);
-        make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
-        make.centerY.mas_equalTo(otherLoginLabel);
-        make.height.mas_equalTo(1);
-        make.width.mas_equalTo(VW(26));
-        
-    }];
-    
-    UIView *lineView2 = [[UIView alloc] init];
-    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-    [contentView addSubview:lineView2];
-    [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        //make.width.mas_equalTo(0.5);
-        make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
-        make.centerY.mas_equalTo(otherLoginLabel);
-        make.height.mas_equalTo(1);
-        make.width.mas_equalTo(VW(26));
-        
-    }];
+//    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login_other.localx fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
+//    [contentView addSubview:otherLoginLabel];
+//    [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
+//        make.centerX.mas_equalTo(contentView);
+//    }];
+//
+//    UIView *lineView1 = [[UIView alloc] init];
+//    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
+//    [contentView addSubview:lineView1];
+//    [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//        //make.width.mas_equalTo(0.5);
+//        make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
+//        make.centerY.mas_equalTo(otherLoginLabel);
+//        make.height.mas_equalTo(1);
+//        make.width.mas_equalTo(VW(26));
+//
+//    }];
+//
+//    UIView *lineView2 = [[UIView alloc] init];
+//    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
+//    [contentView addSubview:lineView2];
+//    [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//        //make.width.mas_equalTo(0.5);
+//        make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
+//        make.centerY.mas_equalTo(otherLoginLabel);
+//        make.height.mas_equalTo(1);
+//        make.width.mas_equalTo(VW(26));
+//
+//    }];
     
     
     //登录方式
@@ -255,7 +261,7 @@
     [contentView addSubview:loginTypeView];
     [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(contentView);
-        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
+        make.top.mas_equalTo(hasAccountContent.mas_bottom).mas_offset(VH(24));
         
         make.bottom.mas_equalTo(contentView.mas_bottom);
     }];
@@ -263,7 +269,7 @@
     
     CGFloat btn_w = VW(34);
     CGFloat btn_h = btn_w;
-    CGFloat margin_leading = VW(27);
+    CGFloat margin_leading = VW(35);
     
     NSMutableArray *loginBtnDatas;
     if (SDK_DATA.mConfigModel.appPassCheck) {
@@ -283,10 +289,10 @@
             if (@available(iOS 13.0, *)) {
                 
                 ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
                 [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
                 appleLoginBtn.tag = lbd.tag;
-                appleLoginBtn.cornerRadius = btn_w / 2.0;
+                appleLoginBtn.cornerRadius = 4;
                 btnView = appleLoginBtn;
             }
             
@@ -335,7 +341,7 @@
     [self addSubview:termAgreeView];
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-18));
 //        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     

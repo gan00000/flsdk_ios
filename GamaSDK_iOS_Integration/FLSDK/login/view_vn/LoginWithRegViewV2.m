@@ -45,6 +45,11 @@
 //    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //    self.layer.cornerRadius = 10; //设置圆角
 //    self.layer.masksToBounds = YES;
+    UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_page];
+    [self addSubview:bgIV];
+    [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
     
     UIView *tabView = [[UIView alloc] init];
 //    tabView.layer.cornerRadius = 4; //设置圆角
@@ -59,7 +64,7 @@
 //        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
         make.centerX.mas_equalTo(self);
 //        make.width.mas_equalTo(self).offset(-VW(102));
-        make.top.mas_equalTo(VH(MARGIN_TOP));
+        make.top.mas_equalTo(VH(14));
 //        make.height.mas_equalTo(VH(40));
     }];
     
