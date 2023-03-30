@@ -78,20 +78,29 @@
     //test
     SDK_DATA.mConfigModel.appleLogin = YES;
     SDK_DATA.mConfigModel.appPassCheck = YES;
+    SDK_DATA.mConfigModel.deleteAccount = YES;
 //    SDK_DATA.mConfigModel.showLogo = YES;
+    
+    UIView *myView = [[UIView alloc] init];
+    [self addSubview:myView];
+    [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self);
+        make.width.mas_equalTo(VW(340));
+        make.height.mas_equalTo(VH(286));
+    }];
     
     //设置图片bg
     UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_view];
-    [self addSubview:bgIV];
+    [myView addSubview:bgIV];
     [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self);
+        make.edges.mas_equalTo(myView);
     }];
     
     UIView *contentView = [[UIView alloc] init];
-    [self addSubview:contentView];
+    [myView addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.mas_equalTo(self);
-        make.centerY.mas_equalTo(self);
+        make.leading.trailing.mas_equalTo(myView);
+        make.centerY.mas_equalTo(myView);
     }];
     
 //    UIImageView *logoIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_logo];
@@ -133,7 +142,7 @@
     }];
     
     // gradient
-    CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+    CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
     
     [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
@@ -206,7 +215,7 @@
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(18));
     }];
     
-    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#656565"]];
+    UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
@@ -292,12 +301,13 @@
                                                                                                           authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
                 [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
                 appleLoginBtn.tag = lbd.tag;
-                appleLoginBtn.cornerRadius = 4;
+                appleLoginBtn.cornerRadius = 5;
                 btnView = appleLoginBtn;
+                btn_w = VW(34-6);
             }
             
         }else{
-            
+            btn_w = VW(34);
             LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
             
             btnView = mBtn;
@@ -305,13 +315,14 @@
        
         
         if (btnView) {
-            
+            btn_h = btn_w;
             [loginTypeView addSubview:btnView];
             [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.width.mas_equalTo(btn_w);
                 make.height.mas_equalTo(btn_h);
-                make.top.mas_equalTo(loginTypeView);
-                make.bottom.mas_equalTo(loginTypeView);
+                make.centerY.mas_equalTo(loginTypeView);
+//                make.top.mas_equalTo(loginTypeView);
+//                make.bottom.mas_equalTo(loginTypeView);
                 
                 if (i == 0) {
                     make.leading.mas_equalTo(leadingView);
@@ -320,6 +331,8 @@
                 }
                 if (i == loginBtnDatas.count - 1) {
                     make.trailing.mas_equalTo(loginTypeView);
+                    make.top.mas_equalTo(loginTypeView);
+                    make.bottom.mas_equalTo(loginTypeView);
                 }
             }];
             
@@ -338,10 +351,10 @@
     
   
     UIView *termAgreeView = [[UIView alloc] init];
-    [self addSubview:termAgreeView];
+    [myView addSubview:termAgreeView];
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self);
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-18));
+        make.centerX.mas_equalTo(myView);
+        make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-18));
 //        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     
@@ -358,13 +371,13 @@
         NSString *xtext = GetString(wwwww_tag_wwwww_text_ui_term_port_read2);
     NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
     
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
         
     
-         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
+         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:BaseColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
          };
          NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
         [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
@@ -393,7 +406,7 @@
          
             [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
                 if(IS_PORTRAIT){
-                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
+                    make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
                     make.centerX.mas_equalTo(self);
                 }else{
                     make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-12));
@@ -562,7 +575,7 @@
 {
     deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(14);
+    deleteView.layer.cornerRadius = 2;
     
     UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
     [deleteView addSubview:deleteIV];
