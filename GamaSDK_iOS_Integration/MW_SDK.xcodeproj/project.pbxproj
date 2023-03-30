@@ -19,18 +19,6 @@
 			name = XCFrameworkMake;
 			productName = Framework;
 		};
-		24C7583D1D65B3520088A176 /* Framework */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 24C7583E1D65B3520088A176 /* Build configuration list for PBXAggregateTarget "Framework" */;
-			buildPhases = (
-				24C758451D65B36B0088A176 /* Run Script */,
-			);
-			dependencies = (
-				22DF6AE61EADA5600003610E /* PBXTargetDependency */,
-			);
-			name = Framework;
-			productName = Framework;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -39,70 +27,37 @@
 		030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36042999F3DE001AAFC0 /* GoogleService-Info.plist */; };
 		030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
 		030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA0128A0FA7C00709536 /* FindPasswordViewV2.h */; };
-		030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
 		030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA0328A0FA7C00709536 /* MainHomeViewV2.m */; };
 		030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1628A0FA7C00709536 /* LoginWithRegViewV2.h */; };
 		030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA1728A0FA7C00709536 /* AccountLoginViewV2.h */; };
-		030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */; };
 		030FAA4D28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA1B28A0FA7C00709536 /* FindPasswordViewV2.m */; };
 		030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA2028A0FA7C00709536 /* MainHomeViewV2.h */; };
-		030FAA5528A0FA7C00709536 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */; };
 		030FAA5628A0FA7C00709536 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2228A0FA7C00709536 /* AccountLoginViewV2.m */; };
-		030FAA5728A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */; };
 		030FAA5828A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA2328A0FA7C00709536 /* LoginWithRegViewV2.m */; };
 		030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA5C28A0FC8600709536 /* RegisterAccountViewV2.h */; };
-		030FAA5F28A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
 		030FAA6028A0FC8600709536 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA5D28A0FC8600709536 /* RegisterAccountViewV2.m */; };
-		030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6528A1FE5800709536 /* TermsViewV2.m */; };
 		030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6628A1FE5800709536 /* TermsViewV2.h */; };
 		030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6A28A2619500709536 /* NoticeViewV2.h */; };
-		030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
 		030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA6B28A2619500709536 /* NoticeViewV2.m */; };
 		030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA6F28A27F0600709536 /* BindPhoneViewV2.h */; };
-		030FAA7228A27F0600709536 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7028A27F0600709536 /* BindPhoneViewV2.m */; };
 		030FAA7328A27F0600709536 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7028A27F0600709536 /* BindPhoneViewV2.m */; };
-		030FAA7628A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
 		030FAA7728A362E200709536 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
 		030FAA7828A362E200709536 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
 		030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
-		030FAA7C28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
 		030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
 		030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
-		030FAA8428A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
 		030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8228A4B07900709536 /* BindAccountViewV2.m */; };
 		030FAA9128A6571900709536 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
-		030FAA9228A6571900709536 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
 		030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
 		030FAA9428A6571900709536 /* GamaThirdSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* GamaThirdSocial.h */; };
-		030FAA9528A6571900709536 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
 		030FAA9628A6571900709536 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
 		030FAB3528A66ED300709536 /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
-		030FAB3628A66ED300709536 /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
 		030FAB3728A66ED300709536 /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
 		031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
-		0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
-		03202921286958FB00E8D5A5 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
-		0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
-		0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
-		03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
-		032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
-		032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
-		032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		032AB8BB285A006600F1FD3B /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		032AB8BC285A006600F1FD3B /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
-		032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
-		032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
-		032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
-		032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C2285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */; };
-		032ACA4128729E5D00644568 /* USDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 032ACA4028729E5D00644568 /* USDefault.m */; };
 		032CB5662940BCFE0013185B /* MWSDK_V4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */; };
 		032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */; };
 		032CB56A2940BEBD0013185B /* MWSDK_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */; };
@@ -195,11 +150,8 @@
 		033DBD15298D0BA8004F28E4 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCC6298D0BA7004F28E4 /* GTMAppAuth.xcframework */; };
 		033DBD16298D0BA8004F28E4 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCC6298D0BA7004F28E4 /* GTMAppAuth.xcframework */; };
 		033DBD17298D0BA8004F28E4 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCC6298D0BA7004F28E4 /* GTMAppAuth.xcframework */; };
-		034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
-		034558D3285C25210025EFB2 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0352F70D2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
-		0352F70F2927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		0352F7102927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		0352F7112927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
@@ -210,12 +162,6 @@
 		035EDC2129A499F7009092F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */; };
 		035EDC2229A499F7009092F0 /* SDKResourcesV3.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1D29A499F7009092F0 /* SDKResourcesV3.bundle */; };
 		035EDC2429A49BF5009092F0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0386139D293897C900CC9C44 /* SDKResourcesV2.bundle */; };
-		03650195285C761600578028 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		03669949285E26890008EB50 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
-		0369B35928647256002F4B2F /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
-		0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
-		0376480B286178D600CAD034 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		037C6EF92875AC790041EC34 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
 		037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
@@ -705,7 +651,6 @@
 		0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
 		0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */; };
 		0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387B9D4291B8BBB001BACA8 /* AccountLoginViewV2.m */; };
-		0389B3192861B7B30024E62E /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
 		039B25F0298B555300045C53 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		039B25F2298B555300045C53 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		039B25F3298B555300045C53 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
@@ -900,35 +845,7 @@
 		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
-		03B918DE286029050029AE6A /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
-		03B918E1286029670029AE6A /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
-		03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918F82860AECB0029AE6A /* ViewController+MASAdditions.m */; };
-		03B919292860AECB0029AE6A /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FC2860AECB0029AE6A /* MASCompositeConstraint.m */; };
-		03B9192A2860AECB0029AE6A /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FD2860AECB0029AE6A /* MASConstraintMaker.m */; };
-		03B9192B2860AECB0029AE6A /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FE2860AECB0029AE6A /* MASLayoutConstraint.m */; };
-		03B9192C2860AECB0029AE6A /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FF2860AECB0029AE6A /* NSArray+MASAdditions.m */; };
-		03B9192D2860AECB0029AE6A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919002860AECB0029AE6A /* View+MASAdditions.m */; };
-		03B9192E2860AECB0029AE6A /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919032860AECB0029AE6A /* MASConstraint.m */; };
-		03B9192F2860AECB0029AE6A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919052860AECB0029AE6A /* MASViewConstraint.m */; };
-		03B919302860AECB0029AE6A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919062860AECB0029AE6A /* MASViewAttribute.m */; };
-		03B919312860AECB0029AE6A /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919082860AECB0029AE6A /* UIImage+WebP.m */; };
-		03B919322860AECB0029AE6A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190B2860AECB0029AE6A /* SDWebImageManager.m */; };
-		03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190C2860AECB0029AE6A /* SDWebImageDecoder.m */; };
-		03B919342860AECB0029AE6A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190E2860AECB0029AE6A /* UIImageView+HighlightedWebCache.m */; };
-		03B919352860AECB0029AE6A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919102860AECB0029AE6A /* SDWebImageDownloader.m */; };
-		03B919362860AECB0029AE6A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919112860AECB0029AE6A /* UIImage+GIF.m */; };
-		03B919372860AECB0029AE6A /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919132860AECB0029AE6A /* UIImage+MultiFormat.m */; };
-		03B919382860AECB0029AE6A /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919142860AECB0029AE6A /* SDWebImageCompat.m */; };
-		03B919392860AECB0029AE6A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919152860AECB0029AE6A /* SDWebImagePrefetcher.m */; };
-		03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919182860AECB0029AE6A /* SDImageCache.m */; };
-		03B9193B2860AECB0029AE6A /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191A2860AECB0029AE6A /* SDWebImageDownloaderOperation.m */; };
-		03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191D2860AECB0029AE6A /* NSData+ImageContentType.m */; };
-		03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
-		03B9193E2860AECB0029AE6A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
-		03B9193F2860AECB0029AE6A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
 		03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
-		03C05CA928AE5F6B0060F4CD /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
 		03C05CAA28AE5F6B0060F4CD /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
 		03CA721C29D5698400098979 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
@@ -1164,16 +1081,6 @@
 		03CA731029D5699600098979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		03CA731129D5699600098979 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCB3298D0BA7004F28E4 /* nanopb.xcframework */; };
 		03CA731229D5699600098979 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCBF298D0BA7004F28E4 /* GoogleDataTransport.xcframework */; };
-		03D97DDB286EE281008D0B3A /* BaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* BaseSDK.m */; };
-		03D97DDC286EE281008D0B3A /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
-		03D97DDD286EE281008D0B3A /* BaseSDKImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* BaseSDKImpl.m */; };
-		03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
-		03D97DE1286EE422008D0B3A /* PayData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; };
-		03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; };
-		03E076682861E73C00B81B65 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
-		03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
-		03EA36082850986F00723340 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		03EA360B2850989900723340 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		03F542B72940BC5D00F75F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03F542B82940BC5D00F75F51 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03F542B92940BC5D00F75F51 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -1234,8 +1141,6 @@
 		03F5430C2940BC5D00F75F51 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93C1A1498B5009E77FF /* Accounts.framework */; };
 		03F5430D2940BC5D00F75F51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		03F5430E2940BC5D00F75F51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
-		03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
-		03FA12D42853565200BBBEB4 /* WelcomeBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* WelcomeBackView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		2227ACB41E69933B00667DB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		22AA03211F308AB4001C8B51 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AA03201F308AB4001C8B51 /* GameKit.framework */; };
 		242CE86B1CFEF1C700E3C747 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */; };
@@ -1247,47 +1152,9 @@
 		24A4B6691DD5BA7A003AF6F0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		24B144401D10FCB900256411 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
 		24D2C7CB1E20D41500E85015 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D2C7CA1E20D41500E85015 /* WebKit.framework */; };
-		3295E2E424DAEDDE00B85976 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E524DAEDDE00B85976 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E624DAEDDE00B85976 /* HttpServiceEngineLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* HttpServiceEngineLogin.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E724DAEDDE00B85976 /* BJServiceConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* BJServiceConfigurator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E824DAEDDE00B85976 /* SDKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* SDKRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2E924DAEDDE00B85976 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2EA24DAEDDE00B85976 /* UIColor+HexStringToColorTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2EB24DAEDDE00B85976 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* UIUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE724C589A5000D6B20 /* YYClassInfo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2EE24DAEDDE00B85976 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEE24C589A5000D6B20 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2EF24DAEDDE00B85976 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEF24C589A5000D6B20 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F024DAEDDE00B85976 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF124C589A5000D6B20 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF224C589A5000D6B20 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF424C589A5000D6B20 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF524C589A5000D6B20 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* LoginButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FB24DAEDDE00B85976 /* AccountLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3624C589A5000D6B20 /* AccountLoginView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3295E32A24DAF13200B85976 /* MWSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; };
-		32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* HttpServiceEngineAd.m */; };
 		32BE13DD24FB6154000BDFBE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		32BE13DE24FB6365000BDFBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
 		32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7424DC44F50021CC46 /* GoogleService-Info.plist */; };
-		32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* LoginWithRegView.m */; };
-		32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
-		32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		32D790EE24D55D69006A2F69 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		32F9BED525020F1C004E9727 /* demoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */; };
 		CE4F11641A6792A400780524 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9581A149924009E77FF /* libsqlite3.0.dylib */; };
 		CE4F11691A6796E400780524 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93E1A1498BA009E77FF /* Social.framework */; };
@@ -1318,21 +1185,14 @@
 		E92D51CA23668CE70071A0E3 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */; };
 		E940F2422477D13400C9A6DC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2412477D13400C9A6DC /* CoreFoundation.framework */; };
 		E940F2442477D14700C9A6DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
-		E947D351221ED75F00490C35 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
 		E94EE4822362CF72007D3A93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
 		E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		E95BCED6237D4B87004A08B1 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
 		E974128B20874A170018E1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		E974128D20874A170018E1A6 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		E974128F20874A170018E1A6 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
 		E974129020874A170018E1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		E974129520874A170018E1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		E97412FA208858260018E1A6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E991437D238288ED00E37E3F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
-		E9DC839721BF9F720035F8CA /* MWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* MWWebViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E9DC839821BF9F750035F8CA /* UIScreen+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Sdk.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E9F4D965244EFFD900937AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4D964244EFFD900937AD5 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -1378,13 +1238,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 03CA721A29D5698400098979;
 			remoteInfo = MWSDK_VN;
-		};
-		22DF6AE51EADA5600003610E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22DF6AB01EAD9A4C0003610E;
-			remoteInfo = SPSDK;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1437,18 +1290,6 @@
 			files = (
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22DF6AAF1EAD9A4C0003610E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				03D97DE1286EE422008D0B3A /* PayData.h in CopyFiles */,
-				03D97DE2286EE422008D0B3A /* LoginData.h in CopyFiles */,
-				3295E32A24DAF13200B85976 /* MWSDK.h in CopyFiles */,
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1750,7 +1591,6 @@
 		03FA12D22853565200BBBEB4 /* WelcomeBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeBackView.h; sourceTree = "<group>"; };
 		03FA12D32853565200BBBEB4 /* WelcomeBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeBackView.m; sourceTree = "<group>"; };
 		22AA03201F308AB4001C8B51 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		22DF6AB11EAD9A4C0003610E /* libFLSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFLSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		244537411C2E9D6D00260D4C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		246455571BB8F905009E785B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -2251,13 +2091,6 @@
 				03F5430E2940BC5D00F75F51 /* CoreGraphics.framework in Frameworks */,
 				033DBCDA298D0BA7004F28E4 /* nanopb.xcframework in Frameworks */,
 				033DBD06298D0BA8004F28E4 /* GoogleDataTransport.xcframework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22DF6AAE1EAD9A4C0003610E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3143,7 +2976,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE6B3711A148B1E009E77FF /* SDK_DEMO_V2.app */,
-				22DF6AB11EAD9A4C0003610E /* libFLSDK.a */,
 				037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */,
 				0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */,
 				0386137429388F8900CC9C44 /* MWSDK_V3.framework */,
@@ -3565,25 +3397,6 @@
 			productReference = 03F543132940BC5D00F75F51 /* SDK_DEMO_V4.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22DF6AB01EAD9A4C0003610E /* FLSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22DF6AB71EAD9A4D0003610E /* Build configuration list for PBXNativeTarget "FLSDK" */;
-			buildPhases = (
-				22DF6AAD1EAD9A4C0003610E /* Sources */,
-				22DF6AAE1EAD9A4C0003610E /* Frameworks */,
-				22DF6AAF1EAD9A4C0003610E /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FLSDK;
-			packageProductDependencies = (
-			);
-			productName = SPSDK;
-			productReference = 22DF6AB11EAD9A4C0003610E /* libFLSDK.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		CEE6B3701A148B1E009E77FF /* SDK_DEMO_V2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEE6B3941A148B1E009E77FF /* Build configuration list for PBXNativeTarget "SDK_DEMO_V2" */;
@@ -3616,14 +3429,6 @@
 				TargetAttributes = {
 					037C6EDA2875A97B0041EC34 = {
 						CreatedOnToolsVersion = 13.4.1;
-					};
-					22DF6AB01EAD9A4C0003610E = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-					};
-					24C7583D1D65B3520088A176 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4HYH86MJ29;
 					};
 					CEE6B3701A148B1E009E77FF = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -3667,8 +3472,6 @@
 				03F542B32940BC5D00F75F51 /* SDK_DEMO_V4 */,
 				039B268B298B557400045C53 /* SDK_DEMO_V5 */,
 				03CA72B829D5699600098979 /* SDK_DEMO_VN */,
-				22DF6AB01EAD9A4C0003610E /* FLSDK */,
-				24C7583D1D65B3520088A176 /* Framework */,
 				037C6EDA2875A97B0041EC34 /* MWSDK_V2 */,
 				038612D729388F8900CC9C44 /* MWSDK_V3 */,
 				0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */,
@@ -3810,20 +3613,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "chmod 755 \"$PROJECT_DIR/XCFrameworkScript.sh\"\n\"$PROJECT_DIR/XCFrameworkScript.sh\"\n";
-		};
-		24C758451D65B36B0088A176 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "chmod 755 \"$PROJECT_DIR/FrameworkScript.sh\"\n\"$PROJECT_DIR/FrameworkScript.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -4549,138 +4338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22DF6AAD1EAD9A4C0003610E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3295E2E424DAEDDE00B85976 /* BJBaseResponceModel.m in Sources */,
-				030FAA8428A4B07900709536 /* BindAccountViewV2.m in Sources */,
-				03B919322860AECB0029AE6A /* SDWebImageManager.m in Sources */,
-				032AB8B8285A006600F1FD3B /* SecurityUtil.m in Sources */,
-				3295E2E524DAEDDE00B85976 /* BJError.m in Sources */,
-				3295E2E624DAEDDE00B85976 /* HttpServiceEngineLogin.m in Sources */,
-				3295E2E724DAEDDE00B85976 /* BJServiceConfigurator.m in Sources */,
-				03FA12D42853565200BBBEB4 /* WelcomeBackView.m in Sources */,
-				3295E2E824DAEDDE00B85976 /* SDKRequest.m in Sources */,
-				032AB8BC285A006600F1FD3B /* SUtil.m in Sources */,
-				03B919282860AECB0029AE6A /* ViewController+MASAdditions.m in Sources */,
-				032AB8BA285A006600F1FD3B /* GameUserModel.m in Sources */,
-				3295E2E924DAEDDE00B85976 /* MWSDK.m in Sources */,
-				030FAB3628A66ED300709536 /* UrlMode.m in Sources */,
-				03E076682861E73C00B81B65 /* LineDelegate.m in Sources */,
-				0352F70F2927671F00160A67 /* TouchEventInterruptView.m in Sources */,
-				03E076812862C07700B81B65 /* FirebaseDelegate.m in Sources */,
-				03C05CA928AE5F6B0060F4CD /* BasePopupView.m in Sources */,
-				03B9193E2860AECB0029AE6A /* UIView+WebCacheOperation.m in Sources */,
-				0376480B286178D600CAD034 /* GIDDelegate.m in Sources */,
-				3295E2EA24DAEDDE00B85976 /* UIColor+HexStringToColorTW.m in Sources */,
-				3295E2EB24DAEDDE00B85976 /* UIUtil.m in Sources */,
-				03EA36082850986F00723340 /* BindAccountView.m in Sources */,
-				03650195285C761600578028 /* SDKBaseView.m in Sources */,
-				032AB8C5285A006600F1FD3B /* SdkKeychainItemWrapper.m in Sources */,
-				03B9192B2860AECB0029AE6A /* MASLayoutConstraint.m in Sources */,
-				03B919342860AECB0029AE6A /* UIImageView+HighlightedWebCache.m in Sources */,
-				03D97DDD286EE281008D0B3A /* BaseSDKImpl.m in Sources */,
-				0320291E28694D6300E8D5A5 /* MWApplePayManager.m in Sources */,
-				3295E2EC24DAEDDE00B85976 /* NSObject+YYModel.m in Sources */,
-				03B918DE286029050029AE6A /* ConfigResponse.m in Sources */,
-				030FAA7C28A39F0800709536 /* BaseCountTimerView.m in Sources */,
-				03EA360B2850989900723340 /* MainHomeView.m in Sources */,
-				3295E2ED24DAEDDE00B85976 /* YYClassInfo.m in Sources */,
-				030FAA4C28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
-				03B919302860AECB0029AE6A /* MASViewAttribute.m in Sources */,
-				030FAA5528A0FA7C00709536 /* AccountLoginViewV2.m in Sources */,
-				3295E2EE24DAEDDE00B85976 /* AFURLResponseSerialization.m in Sources */,
-				03B9192A2860AECB0029AE6A /* MASConstraintMaker.m in Sources */,
-				3295E2EF24DAEDDE00B85976 /* AFHTTPSessionManager.m in Sources */,
-				3295E2F024DAEDDE00B85976 /* AFURLSessionManager.m in Sources */,
-				3295E2F124DAEDDE00B85976 /* AFURLRequestSerialization.m in Sources */,
-				03B918E1286029670029AE6A /* ConfigModel.m in Sources */,
-				3295E2F224DAEDDE00B85976 /* AFNetworkReachabilityManager.m in Sources */,
-				030FAA9228A6571900709536 /* GamaThirdSocial.m in Sources */,
-				3295E2F324DAEDDE00B85976 /* AFSecurityPolicy.m in Sources */,
-				03B919352860AECB0029AE6A /* SDWebImageDownloader.m in Sources */,
-				030FAA7628A362E200709536 /* MyTextFiled.m in Sources */,
-				3295E2F424DAEDDE00B85976 /* BJBaseHTTPEngine.m in Sources */,
-				32B79163254159FC008C4365 /* HttpServiceEngineAd.m in Sources */,
-				3295E2F524DAEDDE00B85976 /* AccountModel.m in Sources */,
-				03B919312860AECB0029AE6A /* UIImage+WebP.m in Sources */,
-				032ACA4128729E5D00644568 /* USDefault.m in Sources */,
-				03B919362860AECB0029AE6A /* UIImage+GIF.m in Sources */,
-				3295E2F624DAEDDE00B85976 /* CCSDKDATA.m in Sources */,
-				030FAA2928A0FA7C00709536 /* MainHomeViewV2.m in Sources */,
-				3295E2F724DAEDDE00B85976 /* LoginResponse.m in Sources */,
-				03B919392860AECB0029AE6A /* SDWebImagePrefetcher.m in Sources */,
-				3295E2F824DAEDDE00B85976 /* ConfigCoreUtil.m in Sources */,
-				3295E2F924DAEDDE00B85976 /* SDKLoginViewController.m in Sources */,
-				032AB8C2285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m in Sources */,
-				3295E2FA24DAEDDE00B85976 /* LoginButton.m in Sources */,
-				3295E2FB24DAEDDE00B85976 /* AccountLoginView.m in Sources */,
-				03B9192F2860AECB0029AE6A /* MASViewConstraint.m in Sources */,
-				3295E2FC24DAEDDE00B85976 /* ChangePasswordView.m in Sources */,
-				3295E2FD24DAEDDE00B85976 /* FindPasswordView.m in Sources */,
-				3295E2FE24DAEDDE00B85976 /* RegisterAccountView.m in Sources */,
-				032AB8C6285A006600F1FD3B /* UIImage+ResBundle.m in Sources */,
-				03669949285E26890008EB50 /* StringUtil.m in Sources */,
-				030FAA5F28A0FC8600709536 /* RegisterAccountViewV2.m in Sources */,
-				032AB8C0285A006600F1FD3B /* AlertUtil.m in Sources */,
-				03B9193A2860AECB0029AE6A /* SDImageCache.m in Sources */,
-				03B919272860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				03B919372860AECB0029AE6A /* UIImage+MultiFormat.m in Sources */,
-				030FAA9528A6571900709536 /* GamaSDK+Social.m in Sources */,
-				0369B35D28655669002F4B2F /* LoginButtonData.m in Sources */,
-				3295E30124DAEDDE00B85976 /* SelectBindTypeView.m in Sources */,
-				03B9193C2860AECB0029AE6A /* NSData+ImageContentType.m in Sources */,
-				32CDA7952540371A00D3969F /* LoginTypeButton.m in Sources */,
-				03202921286958FB00E8D5A5 /* ApplePay.m in Sources */,
-				3295E30324DAEDDE00B85976 /* AccountListViewCell.m in Sources */,
-				3295E30424DAEDDE00B85976 /* LoginTitleView.m in Sources */,
-				03202939286B02D900E8D5A5 /* AdDelegate.m in Sources */,
-				3295E30524DAEDDE00B85976 /* PhoneView.m in Sources */,
-				034558BF285B0B120025EFB2 /* FBDelegate.m in Sources */,
-				3295E30624DAEDDE00B85976 /* SDKTextFiledView.m in Sources */,
-				030FAA6D28A2619500709536 /* NoticeViewV2.m in Sources */,
-				E95BCED6237D4B87004A08B1 /* PhoneInfoModel.m in Sources */,
-				E97412FA208858260018E1A6 /* SdkUtil.m in Sources */,
-				032AB8C3285A006600F1FD3B /* SdkCfUUID.m in Sources */,
-				03D97DE0286EE3A3008D0B3A /* PayData.m in Sources */,
-				030FAA6728A1FE5800709536 /* TermsViewV2.m in Sources */,
-				03669946285DBF3A0008EB50 /* NSString+Common.m in Sources */,
-				03B9193F2860AECB0029AE6A /* UIButton+WebCache.m in Sources */,
-				E9DC839821BF9F750035F8CA /* UIScreen+Sdk.m in Sources */,
-				03B919292860AECB0029AE6A /* MASCompositeConstraint.m in Sources */,
-				03D97DDB286EE281008D0B3A /* BaseSDK.m in Sources */,
-				032AB8BF285A006600F1FD3B /* UIAlertController+Sdk.m in Sources */,
-				03B9192C2860AECB0029AE6A /* NSArray+MASAdditions.m in Sources */,
-				03B919382860AECB0029AE6A /* SDWebImageCompat.m in Sources */,
-				0320292B28698F1800E8D5A5 /* CreateOrderResp.m in Sources */,
-				03B9193D2860AECB0029AE6A /* UIImageView+WebCache.m in Sources */,
-				32D790EE24D55D69006A2F69 /* TermsView.m in Sources */,
-				E9741302208858260018E1A6 /* UIColor+HexColor.m in Sources */,
-				03B9192E2860AECB0029AE6A /* MASConstraint.m in Sources */,
-				032AB8BB285A006600F1FD3B /* ResReader.m in Sources */,
-				32CDA792253FD43100D3969F /* LoginWithRegView.m in Sources */,
-				03B919332860AECB0029AE6A /* SDWebImageDecoder.m in Sources */,
-				03D97DDC286EE281008D0B3A /* LoginData.m in Sources */,
-				03B9192D2860AECB0029AE6A /* View+MASAdditions.m in Sources */,
-				0369B35928647256002F4B2F /* DimeUtil.m in Sources */,
-				032AB8BE285A006600F1FD3B /* SAlertViewDelegate.m in Sources */,
-				0389B3192861B7B30024E62E /* LoginHelper.m in Sources */,
-				E947D351221ED75F00490C35 /* AdLogger.m in Sources */,
-				0320292428695BD200E8D5A5 /* HttpServiceEnginePay.m in Sources */,
-				030FAA5728A0FA7C00709536 /* LoginWithRegViewV2.m in Sources */,
-				032AB8B7285A006600F1FD3B /* SdkSecurityFunction.m in Sources */,
-				E9DC839721BF9F720035F8CA /* MWWebViewController.m in Sources */,
-				03B9193B2860AECB0029AE6A /* SDWebImageDownloaderOperation.m in Sources */,
-				32D790EA24D51EBE006A2F69 /* SDKIconTitleButton.m in Sources */,
-				030FAA7228A27F0600709536 /* BindPhoneViewV2.m in Sources */,
-				03F59A4B285776730062B6EE /* UIView+BlockGesture.m in Sources */,
-				034558D3285C25210025EFB2 /* AccountListView.m in Sources */,
-				E95BCEDD237EBC39004A08B1 /* SAppleLogin.m in Sources */,
-				032AB8C1285A006600F1FD3B /* NSString+URLEncoding.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEE6B36D1A148B1E009E77FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4726,11 +4383,6 @@
 			isa = PBXTargetDependency;
 			target = 03CA721A29D5698400098979 /* MWSDK_VN */;
 			targetProxy = 03CA731929D569B400098979 /* PBXContainerItemProxy */;
-		};
-		22DF6AE61EADA5600003610E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22DF6AB01EAD9A4C0003610E /* FLSDK */;
-			targetProxy = 22DF6AE51EADA5600003610E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -6057,106 +5709,6 @@
 			};
 			name = Release;
 		};
-		22DF6AB81EAD9A4D0003610E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_MODULES_AUTOLINK = NO;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 arm64e x86_64 ";
-			};
-			name = Debug;
-		};
-		22DF6AB91EAD9A4D0003610E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_MODULES_AUTOLINK = NO;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/FBFrameworks/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/FLSDK/Resources/ThirkLib/AF",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 arm64e x86_64 ";
-			};
-			name = Release;
-		};
-		24C7583F1D65B3520088A176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_MODULES_AUTOLINK = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 arm64e x86_64";
-			};
-			name = Debug;
-		};
-		24C758401D65B3520088A176 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_MODULES_AUTOLINK = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 arm64e x86_64";
-			};
-			name = Release;
-		};
 		CEE6B3921A148B1E009E77FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6471,24 +6023,6 @@
 			buildConfigurations = (
 				03F543112940BC5D00F75F51 /* Debug */,
 				03F543122940BC5D00F75F51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22DF6AB71EAD9A4D0003610E /* Build configuration list for PBXNativeTarget "FLSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22DF6AB81EAD9A4D0003610E /* Debug */,
-				22DF6AB91EAD9A4D0003610E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24C7583E1D65B3520088A176 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24C7583F1D65B3520088A176 /* Debug */,
-				24C758401D65B3520088A176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
