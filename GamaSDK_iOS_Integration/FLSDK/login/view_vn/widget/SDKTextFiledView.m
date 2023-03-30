@@ -172,7 +172,7 @@
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
-                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
+                                                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:C_TEXT_HINT]}];
     mUITextField.attributedPlaceholder = attrStr;
     //mUITextField.placeholder = placeholderText;
     

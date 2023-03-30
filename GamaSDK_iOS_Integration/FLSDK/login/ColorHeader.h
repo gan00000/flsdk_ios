@@ -40,6 +40,7 @@
 #define C_BUTTON_END  @"#FE504F"
 #define C_TEXT_NORMAL    @"#656565"
 #define C_TEXT_NORMAL_2   @"#414141"
+#define C_TEXT_HINT    @"#C0C0C0"
 
 #else
 
