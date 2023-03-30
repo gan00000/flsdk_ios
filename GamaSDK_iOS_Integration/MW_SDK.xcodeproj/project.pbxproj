@@ -2429,24 +2429,24 @@
 		033B32FD29D5C4BC00AE9F96 /* widget */ = {
 			isa = PBXGroup;
 			children = (
-				033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */,
-				033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */,
-				033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */,
-				033B330129D5C4BC00AE9F96 /* SDKIconTitleButton.m */,
-				033B330229D5C4BC00AE9F96 /* PhoneView.m */,
-				033B330329D5C4BC00AE9F96 /* AccountListViewCell.h */,
 				033B330429D5C4BC00AE9F96 /* AccountListView.h */,
-				033B330529D5C4BC00AE9F96 /* TouchEventInterruptView.m */,
-				033B330629D5C4BC00AE9F96 /* LoginTypeButton.m */,
-				033B330729D5C4BC00AE9F96 /* PhoneView.h */,
-				033B330829D5C4BC00AE9F96 /* SDKIconTitleButton.h */,
-				033B330929D5C4BC00AE9F96 /* SDKTextFiledView.h */,
-				033B330A29D5C4BC00AE9F96 /* LoginTitleView.h */,
-				033B330B29D5C4BC00AE9F96 /* MyTextFiled.m */,
 				033B330C29D5C4BC00AE9F96 /* AccountListView.m */,
+				033B330329D5C4BC00AE9F96 /* AccountListViewCell.h */,
 				033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */,
+				033B330A29D5C4BC00AE9F96 /* LoginTitleView.h */,
+				033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */,
 				033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */,
+				033B330629D5C4BC00AE9F96 /* LoginTypeButton.m */,
+				033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */,
+				033B330B29D5C4BC00AE9F96 /* MyTextFiled.m */,
+				033B330729D5C4BC00AE9F96 /* PhoneView.h */,
+				033B330229D5C4BC00AE9F96 /* PhoneView.m */,
+				033B330829D5C4BC00AE9F96 /* SDKIconTitleButton.h */,
+				033B330129D5C4BC00AE9F96 /* SDKIconTitleButton.m */,
+				033B330929D5C4BC00AE9F96 /* SDKTextFiledView.h */,
+				033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */,
 				033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */,
+				033B330529D5C4BC00AE9F96 /* TouchEventInterruptView.m */,
 			);
 			path = widget;
 			sourceTree = "<group>";
