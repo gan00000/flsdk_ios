@@ -194,7 +194,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.mplay.wlzhs.tqlb2";
+            NSString *aProductID = @"com.miaoou.6jin";
             [self pay:aProductID];
         }
             break;
@@ -204,7 +204,7 @@
         case 3:
         {
 //            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
-            NSString *aProductID = @"com.mplay.wlzhs.tqlb1";
+            NSString *aProductID = @"com.miaoou.30jin";
             [self pay:aProductID];
         }
             break;
