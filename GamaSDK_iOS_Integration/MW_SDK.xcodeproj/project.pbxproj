@@ -92,6 +92,24 @@
 		033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */; };
 		033B32FB29D56E3200AE9F96 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */; };
 		033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CA72B729D5698400098979 /* MWSDK_VN.framework */; };
+		033B331029D5C4BC00AE9F96 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */; };
+		033B331129D5C4BC00AE9F96 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */; };
+		033B331229D5C4BC00AE9F96 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */; };
+		033B331329D5C4BC00AE9F96 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330129D5C4BC00AE9F96 /* SDKIconTitleButton.m */; };
+		033B331429D5C4BC00AE9F96 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330229D5C4BC00AE9F96 /* PhoneView.m */; };
+		033B331529D5C4BC00AE9F96 /* AccountListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330329D5C4BC00AE9F96 /* AccountListViewCell.h */; };
+		033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330429D5C4BC00AE9F96 /* AccountListView.h */; };
+		033B331729D5C4BC00AE9F96 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330529D5C4BC00AE9F96 /* TouchEventInterruptView.m */; };
+		033B331829D5C4BC00AE9F96 /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330629D5C4BC00AE9F96 /* LoginTypeButton.m */; };
+		033B331929D5C4BC00AE9F96 /* PhoneView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330729D5C4BC00AE9F96 /* PhoneView.h */; };
+		033B331A29D5C4BC00AE9F96 /* SDKIconTitleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330829D5C4BC00AE9F96 /* SDKIconTitleButton.h */; };
+		033B331B29D5C4BC00AE9F96 /* SDKTextFiledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330929D5C4BC00AE9F96 /* SDKTextFiledView.h */; };
+		033B331C29D5C4BC00AE9F96 /* LoginTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330A29D5C4BC00AE9F96 /* LoginTitleView.h */; };
+		033B331D29D5C4BC00AE9F96 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330B29D5C4BC00AE9F96 /* MyTextFiled.m */; };
+		033B331E29D5C4BC00AE9F96 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330C29D5C4BC00AE9F96 /* AccountListView.m */; };
+		033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */; };
+		033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */; };
+		033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */; };
 		033DBCC8298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCC9298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCCA298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
@@ -872,10 +890,8 @@
 		03CA721C29D5698400098979 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		03CA721E29D5698400098979 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
-		03CA721F29D5698400098979 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
 		03CA722329D5698400098979 /* GamaThirdSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* GamaThirdSocial.h */; };
 		03CA722629D5698400098979 /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
-		03CA722729D5698400098979 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		03CA722829D5698400098979 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
 		03CA722A29D5698400098979 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03CA722B29D5698400098979 /* ViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 03315B98291BA16000A92FBE /* ViewUtil.h */; };
@@ -923,7 +939,6 @@
 		03CA725C29D5698400098979 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; };
 		03CA725D29D5698400098979 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; };
 		03CA725E29D5698400098979 /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
-		03CA725F29D5698400098979 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
 		03CA726029D5698400098979 /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		03CA726129D5698400098979 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
 		03CA726229D5698400098979 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; };
@@ -972,7 +987,6 @@
 		03CA729029D5698400098979 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
 		03CA729129D5698400098979 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; };
 		03CA729229D5698400098979 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
-		03CA729329D5698400098979 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		03CA729529D5698400098979 /* MWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* MWWebViewController.m */; };
 		03CA729729D5698400098979 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
 		03CA729829D5698400098979 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; };
@@ -992,14 +1006,7 @@
 		03CA72A629D5698400098979 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; };
 		03CA72A729D5698400098979 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; };
 		03CA72A829D5698400098979 /* WelcomeBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* WelcomeBackView.m */; };
-		03CA72A929D5698400098979 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; };
 		03CA72AA29D5698400098979 /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
-		03CA72AB29D5698400098979 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; };
-		03CA72AC29D5698400098979 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; };
-		03CA72AD29D5698400098979 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; };
-		03CA72AE29D5698400098979 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; };
-		03CA72AF29D5698400098979 /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
-		03CA72B029D5698400098979 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; };
 		03CA72BC29D5699600098979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03CA72BD29D5699600098979 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03CA72BE29D5699600098979 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -1406,6 +1413,24 @@
 		033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
+		033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
+		033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTitleView.m; sourceTree = "<group>"; };
+		033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKTextFiledView.m; sourceTree = "<group>"; };
+		033B330129D5C4BC00AE9F96 /* SDKIconTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKIconTitleButton.m; sourceTree = "<group>"; };
+		033B330229D5C4BC00AE9F96 /* PhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneView.m; sourceTree = "<group>"; };
+		033B330329D5C4BC00AE9F96 /* AccountListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountListViewCell.h; sourceTree = "<group>"; };
+		033B330429D5C4BC00AE9F96 /* AccountListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
+		033B330529D5C4BC00AE9F96 /* TouchEventInterruptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventInterruptView.m; sourceTree = "<group>"; };
+		033B330629D5C4BC00AE9F96 /* LoginTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTypeButton.m; sourceTree = "<group>"; };
+		033B330729D5C4BC00AE9F96 /* PhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneView.h; sourceTree = "<group>"; };
+		033B330829D5C4BC00AE9F96 /* SDKIconTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKIconTitleButton.h; sourceTree = "<group>"; };
+		033B330929D5C4BC00AE9F96 /* SDKTextFiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKTextFiledView.h; sourceTree = "<group>"; };
+		033B330A29D5C4BC00AE9F96 /* LoginTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTitleView.h; sourceTree = "<group>"; };
+		033B330B29D5C4BC00AE9F96 /* MyTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextFiled.m; sourceTree = "<group>"; };
+		033B330C29D5C4BC00AE9F96 /* AccountListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountListView.m; sourceTree = "<group>"; };
+		033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountListViewCell.m; sourceTree = "<group>"; };
+		033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTypeButton.h; sourceTree = "<group>"; };
+		033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventInterruptView.h; sourceTree = "<group>"; };
 		033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		033DBCAE298D0BA7004F28E4 /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		033DBCAF298D0BA7004F28E4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -2385,6 +2410,7 @@
 				033B32DB29D56AEE00AE9F96 /* RegisterAccountViewV2.m */,
 				033B32D429D56AEE00AE9F96 /* TermsViewV2.h */,
 				033B32DD29D56AEE00AE9F96 /* TermsViewV2.m */,
+				033B32FD29D5C4BC00AE9F96 /* widget */,
 			);
 			path = view_vn;
 			sourceTree = "<group>";
@@ -2398,6 +2424,31 @@
 				033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */,
 			);
 			path = VN;
+			sourceTree = "<group>";
+		};
+		033B32FD29D5C4BC00AE9F96 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */,
+				033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */,
+				033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */,
+				033B330129D5C4BC00AE9F96 /* SDKIconTitleButton.m */,
+				033B330229D5C4BC00AE9F96 /* PhoneView.m */,
+				033B330329D5C4BC00AE9F96 /* AccountListViewCell.h */,
+				033B330429D5C4BC00AE9F96 /* AccountListView.h */,
+				033B330529D5C4BC00AE9F96 /* TouchEventInterruptView.m */,
+				033B330629D5C4BC00AE9F96 /* LoginTypeButton.m */,
+				033B330729D5C4BC00AE9F96 /* PhoneView.h */,
+				033B330829D5C4BC00AE9F96 /* SDKIconTitleButton.h */,
+				033B330929D5C4BC00AE9F96 /* SDKTextFiledView.h */,
+				033B330A29D5C4BC00AE9F96 /* LoginTitleView.h */,
+				033B330B29D5C4BC00AE9F96 /* MyTextFiled.m */,
+				033B330C29D5C4BC00AE9F96 /* AccountListView.m */,
+				033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */,
+				033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */,
+				033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */,
+			);
+			path = widget;
 			sourceTree = "<group>";
 		};
 		033DBCAB298D0BA7004F28E4 /* Firebase */ = {
@@ -3255,28 +3306,35 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033B331B29D5C4BC00AE9F96 /* SDKTextFiledView.h in Headers */,
+				033B331A29D5C4BC00AE9F96 /* SDKIconTitleButton.h in Headers */,
 				033B32EB29D56AEE00AE9F96 /* LoginWithRegViewV2.h in Headers */,
+				033B331C29D5C4BC00AE9F96 /* LoginTitleView.h in Headers */,
 				033B32E529D56AEE00AE9F96 /* BindAccountViewV2.h in Headers */,
 				03CA721C29D5698400098979 /* NSString+Local.h in Headers */,
 				033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */,
 				03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */,
 				033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */,
 				03CA721E29D5698400098979 /* GamaSDK+Social.h in Headers */,
-				03CA721F29D5698400098979 /* MyTextFiled.h in Headers */,
 				033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */,
 				033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */,
 				03CA722329D5698400098979 /* GamaThirdSocial.h in Headers */,
+				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
 				03CA722629D5698400098979 /* UrlMode.h in Headers */,
-				03CA722729D5698400098979 /* TouchEventInterruptView.h in Headers */,
 				03CA722829D5698400098979 /* CountTimerDelegate.h in Headers */,
 				03CA722A29D5698400098979 /* PayData.h in Headers */,
+				033B331029D5C4BC00AE9F96 /* MyTextFiled.h in Headers */,
+				033B331529D5C4BC00AE9F96 /* AccountListViewCell.h in Headers */,
 				033B32EC29D56AEE00AE9F96 /* NoticeViewV2.h in Headers */,
 				03CA722B29D5698400098979 /* ViewUtil.h in Headers */,
+				033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */,
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
 				03CA722E29D5698400098979 /* BasePopupView.h in Headers */,
+				033B331929D5C4BC00AE9F96 /* PhoneView.h in Headers */,
 				03CA723029D5698400098979 /* MWSDK.h in Headers */,
+				033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4249,10 +4307,12 @@
 				03CA723729D5698400098979 /* MASLayoutConstraint.m in Sources */,
 				033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */,
 				03CA723829D5698400098979 /* NSArray+MASAdditions.m in Sources */,
+				033B331829D5C4BC00AE9F96 /* LoginTypeButton.m in Sources */,
 				03CA723929D5698400098979 /* View+MASAdditions.m in Sources */,
 				03CA723A29D5698400098979 /* MASConstraint.m in Sources */,
 				03CA723B29D5698400098979 /* MASViewConstraint.m in Sources */,
 				03CA723C29D5698400098979 /* MASViewAttribute.m in Sources */,
+				033B331729D5C4BC00AE9F96 /* TouchEventInterruptView.m in Sources */,
 				03CA723D29D5698400098979 /* UIImage+WebP.m in Sources */,
 				03CA723E29D5698400098979 /* SDWebImageManager.m in Sources */,
 				03CA723F29D5698400098979 /* SDWebImageDecoder.m in Sources */,
@@ -4278,6 +4338,7 @@
 				03CA725429D5698400098979 /* MWApplePayManager.m in Sources */,
 				033B32E929D56AEE00AE9F96 /* BindPhoneViewV2.m in Sources */,
 				033B32ED29D56AEE00AE9F96 /* RegisterAccountViewV2.m in Sources */,
+				033B331E29D5C4BC00AE9F96 /* AccountListView.m in Sources */,
 				03CA725629D5698400098979 /* ApplePay.m in Sources */,
 				033B32EA29D56AEE00AE9F96 /* FindPasswordViewV2.m in Sources */,
 				03CA725729D5698400098979 /* LineDelegate.m in Sources */,
@@ -4288,7 +4349,6 @@
 				03CA725C29D5698400098979 /* AccountModel.m in Sources */,
 				03CA725D29D5698400098979 /* LoginResponse.m in Sources */,
 				03CA725E29D5698400098979 /* ConfigResponse.m in Sources */,
-				03CA725F29D5698400098979 /* MyTextFiled.m in Sources */,
 				03CA726029D5698400098979 /* ConfigModel.m in Sources */,
 				03CA726129D5698400098979 /* CreateOrderResp.m in Sources */,
 				03CA726229D5698400098979 /* BJBaseResponceModel.m in Sources */,
@@ -4302,6 +4362,7 @@
 				03CA726A29D5698400098979 /* BaseSDKImpl.m in Sources */,
 				03CA726B29D5698400098979 /* PayData.m in Sources */,
 				03CA726C29D5698400098979 /* LoginData.m in Sources */,
+				033B331229D5C4BC00AE9F96 /* SDKTextFiledView.m in Sources */,
 				03CA726D29D5698400098979 /* MWSDK.m in Sources */,
 				03CA726F29D5698400098979 /* SdkCfUUID.m in Sources */,
 				03CA727029D5698400098979 /* GamaSDK+Social.m in Sources */,
@@ -4314,6 +4375,7 @@
 				03CA727829D5698400098979 /* UIColor+HexStringToColorTW.m in Sources */,
 				03CA727929D5698400098979 /* UIScreen+Sdk.m in Sources */,
 				03CA727A29D5698400098979 /* NSString+URLEncoding.m in Sources */,
+				033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */,
 				03CA727B29D5698400098979 /* UIView+BlockGesture.m in Sources */,
 				03CA727C29D5698400098979 /* NSString+Common.m in Sources */,
 				03CA727D29D5698400098979 /* SUtil.m in Sources */,
@@ -4323,6 +4385,7 @@
 				03CA728129D5698400098979 /* StringUtil.m in Sources */,
 				03CA728229D5698400098979 /* USDefault.m in Sources */,
 				03CA728329D5698400098979 /* NSObject+YYModel.m in Sources */,
+				033B331D29D5C4BC00AE9F96 /* MyTextFiled.m in Sources */,
 				03CA728429D5698400098979 /* YYClassInfo.m in Sources */,
 				03CA728529D5698400098979 /* AFURLResponseSerialization.m in Sources */,
 				03CA728629D5698400098979 /* AFHTTPSessionManager.m in Sources */,
@@ -4336,9 +4399,9 @@
 				03CA728D29D5698400098979 /* ResReader.m in Sources */,
 				03CA728F29D5698400098979 /* SecurityUtil.m in Sources */,
 				03CA729029D5698400098979 /* SdkSecurityFunction.m in Sources */,
+				033B331329D5C4BC00AE9F96 /* SDKIconTitleButton.m in Sources */,
 				03CA729129D5698400098979 /* PhoneInfoModel.m in Sources */,
 				03CA729229D5698400098979 /* SAppleLogin.m in Sources */,
-				03CA729329D5698400098979 /* TouchEventInterruptView.m in Sources */,
 				03CA729529D5698400098979 /* MWWebViewController.m in Sources */,
 				03CA729729D5698400098979 /* SdkUtil.m in Sources */,
 				03CA729829D5698400098979 /* ConfigCoreUtil.m in Sources */,
@@ -4359,16 +4422,11 @@
 				03CA72A529D5698400098979 /* SDKBaseView.m in Sources */,
 				03CA72A629D5698400098979 /* SelectBindTypeView.m in Sources */,
 				03CA72A729D5698400098979 /* TermsView.m in Sources */,
+				033B331429D5C4BC00AE9F96 /* PhoneView.m in Sources */,
 				03CA72A829D5698400098979 /* WelcomeBackView.m in Sources */,
-				03CA72A929D5698400098979 /* AccountListViewCell.m in Sources */,
 				03CA72AA29D5698400098979 /* NSString+Local.m in Sources */,
-				03CA72AB29D5698400098979 /* LoginTitleView.m in Sources */,
-				03CA72AC29D5698400098979 /* PhoneView.m in Sources */,
-				03CA72AD29D5698400098979 /* SDKIconTitleButton.m in Sources */,
+				033B331129D5C4BC00AE9F96 /* LoginTitleView.m in Sources */,
 				033B32F029D56AEE00AE9F96 /* BindAccountViewV2.m in Sources */,
-				03CA72AE29D5698400098979 /* SDKTextFiledView.m in Sources */,
-				03CA72AF29D5698400098979 /* LoginTypeButton.m in Sources */,
-				03CA72B029D5698400098979 /* AccountListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

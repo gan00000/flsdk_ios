@@ -79,8 +79,8 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
            // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(-VW(40));
+            make.leading.mas_equalTo(self).mas_offset(VW(18));
+            make.trailing.mas_equalTo(self).mas_offset(-VW(18));
             make.height.mas_equalTo(VH(40));
         }];
         
@@ -91,7 +91,7 @@
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
@@ -196,17 +196,17 @@
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_confire_reg.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        [regAccountBtn.layer setCornerRadius:VH(25)];
+        [regAccountBtn.layer setCornerRadius:VH(5)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:regAccountBtn];
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.equalTo(accountSDKTextFiledView);
-            make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(34));
-            make.height.mas_equalTo(VH(50));
+            make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(38));
+            make.height.mas_equalTo(VH(40));
         }];
         
-        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
         [regAccountBtn.layer addSublayer:gl];
         [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             gl.frame = regAccountBtn.bounds;

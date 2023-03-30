@@ -111,8 +111,8 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(-VW(40));
+            make.leading.mas_equalTo(self).mas_offset(VW(18));
+            make.trailing.mas_equalTo(self).mas_offset(-VW(18));
             make.height.mas_equalTo(VH(40));
         }];
         
@@ -134,7 +134,7 @@
         
         //找回密碼
         
-        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_py_findpwd) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_py_findpwd) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -163,7 +163,7 @@
         }];
         
         NSString *xtext = GetString(wwwww_tag_wwwww_sdk_terms_title);
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
         //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         //            rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
@@ -196,17 +196,17 @@
         
         accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-        [accountLoginBtn.layer setCornerRadius:VH(20)];
+        [accountLoginBtn.layer setCornerRadius:VH(5)];
         accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:accountLoginBtn];
         
-        loginGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
+        loginGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
         [accountLoginBtn.layer addSublayer:loginGl];
 
         
         [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(25));
+            make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(20));
             make.width.mas_equalTo(accountSDKTextFiledView);
             make.height.mas_equalTo(VH(40));
         }];
@@ -221,31 +221,32 @@
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(accountSDKTextFiledView);
             //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(16));
+            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(12));
+//            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-18));
             //            make.centerX.mas_equalTo(self);
 //            make.height.mas_equalTo(btn_h);
         }];
         
        
-        UILabel *otherLabelTips = [[UILabel alloc] init];
-        otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = wwwww_tag_wwwww_text_login_other.localx;
-        otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-        
-        [loginTypeView addSubview:otherLabelTips];
-        [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(loginTypeView.mas_leading);
-            make.centerY.mas_equalTo(loginTypeView);
-            
-        }];
+//        UILabel *otherLabelTips = [[UILabel alloc] init];
+//        otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
+//        otherLabelTips.text = wwwww_tag_wwwww_text_login_other.localx;
+//        otherLabelTips.numberOfLines = 1; //0为多行
+//        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
+//
+//        [loginTypeView addSubview:otherLabelTips];
+//        [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.leading.mas_equalTo(loginTypeView.mas_leading);
+//            make.centerY.mas_equalTo(loginTypeView);
+//
+//        }];
         
         CGFloat btn_w = VW(34);
         CGFloat btn_h = btn_w;
         CGFloat margin_leading = VW(24);
         
         NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:YES];
-        UIView *leadingView = otherLabelTips;
+        UIView *leadingView = loginTypeView;
        
         for (int i = 0; i < loginBtnDatas.count; i++) {
             
@@ -257,10 +258,10 @@
                 if (@available(iOS 13.0, *)) {
                     
                     ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                              authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
+                                                                                                              authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
                     [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
                     appleLoginBtn.tag = lbd.tag;
-                    appleLoginBtn.cornerRadius = btn_w / 2.0;
+                    appleLoginBtn.cornerRadius = VW(4);
                     btnView = appleLoginBtn;
                 }
                 
@@ -281,7 +282,7 @@
                     make.bottom.mas_equalTo(loginTypeView);
                     
                     if (i == 0) {
-                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
+                        make.leading.mas_equalTo(leadingView.mas_leading);
                     }else{
                         make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
                     }
@@ -751,12 +752,12 @@
 {
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(14);
+    deleteView.layer.cornerRadius = VW(5);
     
     [self addSubview:deleteView];
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.mas_bottom);
+        make.top.mas_equalTo(self.mas_bottom).mas_offset(VH(40));
 //        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
         make.centerX.equalTo(self);
 //        make.height.mas_equalTo(VH(28));

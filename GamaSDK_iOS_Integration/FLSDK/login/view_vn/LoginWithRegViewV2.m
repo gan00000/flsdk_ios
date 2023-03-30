@@ -45,11 +45,23 @@
 //    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
 //    self.layer.cornerRadius = 10; //设置圆角
 //    self.layer.masksToBounds = YES;
-    UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_page];
-    [self addSubview:bgIV];
-    [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self);
+    
+    UIView *myView = [[UIView alloc] init];
+//    myView.backgroundColor = UIColor.lightGrayColor;
+    [self addSubview:myView];
+    [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self);
+        make.width.mas_equalTo(VW(340));
+        make.height.mas_equalTo(VH(326));
     }];
+    
+    //设置图片bg
+    UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_page];
+    [myView addSubview:bgIV];
+    [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(myView);
+    }];
+    
     
     UIView *tabView = [[UIView alloc] init];
 //    tabView.layer.cornerRadius = 4; //设置圆角
@@ -58,11 +70,11 @@
 //    tabView.layer.masksToBounds = YES;
     
     
-    [self addSubview:tabView];
+    [myView addSubview:tabView];
     [tabView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.leading.mas_equalTo(self).mas_offset(VW(102));
 //        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
-        make.centerX.mas_equalTo(self);
+        make.centerX.mas_equalTo(myView);
 //        make.width.mas_equalTo(self).offset(-VW(102));
         make.top.mas_equalTo(VH(14));
 //        make.height.mas_equalTo(VH(40));
@@ -70,19 +82,19 @@
     
     
     
-    loginTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    loginTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL] tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [loginTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:loginTabBtn];
     [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
-        make.centerX.mas_equalTo(self.mas_leading).mas_offset(VW(100+16));
+        make.centerX.mas_equalTo(myView.mas_leading).mas_offset(VW(100+16));
 //        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
     }];
     
     
-    regTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_register.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    regTabBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_register.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL] tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
     [tabView addSubview:regTabBtn];
@@ -91,7 +103,7 @@
         make.top.bottom.mas_equalTo(tabView);
 //        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
         make.trailing.mas_equalTo(tabView);
-        make.centerX.mas_equalTo(self.mas_trailing).mas_offset(-VW(100+16));
+        make.centerX.mas_equalTo(myView.mas_trailing).mas_offset(-VW(100+16));
 
     }];
     
@@ -102,7 +114,7 @@
         
         make.leading.trailing.mas_equalTo(loginTabBtn);
 //        make.centerX.mas_equalTo(loginTabBtn);
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.top.mas_equalTo(loginTabBtn.mas_bottom);
         make.height.mas_equalTo(2);
 
     }];
@@ -115,7 +127,7 @@
         
         make.leading.trailing.mas_equalTo(regTabBtn);
 //        make.centerX.mas_equalTo(regTabBtn);
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.top.mas_equalTo(loginTabBtn.mas_bottom);
         make.height.mas_equalTo(2);
 
     }];
@@ -128,7 +140,7 @@
         
         make.centerY.mas_equalTo(tabView);
 //        make.trailing.mas_equalTo(tabView.mas_leading).mas_offset(VW(82));
-        make.leading.mas_equalTo(self).mas_offset(VW(34));
+        make.leading.mas_equalTo(myView).mas_offset(VW(18));
         
         make.width.height.mas_equalTo(VW(25));
     }];
@@ -144,16 +156,16 @@
     self.mAccountLoginView = [[AccountLoginViewV2 alloc] initView_MMMethodMMM];
     [self addSubview:self.mAccountLoginView];
     [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.leading.bottom.trailing.mas_equalTo(myView);
+        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(20));
 
     }];
     
     self.mRegisterAccountView = [[RegisterAccountViewV2 alloc] initView_MMMethodMMM];
     [self addSubview:self.mRegisterAccountView];
     [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.leading.bottom.trailing.mas_equalTo(myView);
+        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(20));
     }];
     
     self.mRegisterAccountView.hidden = YES;
