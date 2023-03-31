@@ -76,9 +76,9 @@
 {
     
     //test
-    SDK_DATA.mConfigModel.appleLogin = YES;
-    SDK_DATA.mConfigModel.appPassCheck = YES;
-    SDK_DATA.mConfigModel.deleteAccount = YES;
+//    SDK_DATA.mConfigModel.appleLogin = YES;
+//    SDK_DATA.mConfigModel.appPassCheck = YES;
+//    SDK_DATA.mConfigModel.deleteAccount = YES;
 //    SDK_DATA.mConfigModel.showLogo = YES;
     
     UIView *myView = [[UIView alloc] init];
