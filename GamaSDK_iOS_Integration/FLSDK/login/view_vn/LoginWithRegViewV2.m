@@ -325,7 +325,7 @@
 {
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(5);
+    deleteView.layer.cornerRadius = 2;
     
     [self addSubview:deleteView];
     
