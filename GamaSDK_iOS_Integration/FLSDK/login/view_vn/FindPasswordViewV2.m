@@ -46,6 +46,22 @@
         //        self.layer.borderWidth = 2;
         //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
+        UIView *myView = [[UIView alloc] init];
+    //    myView.backgroundColor = UIColor.lightGrayColor;
+        [self addSubview:myView];
+        [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self);
+            make.width.mas_equalTo(VW(340));
+            make.height.mas_equalTo(VH(326));
+        }];
+        
+        //设置图片bg
+        UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_page];
+        [myView addSubview:bgIV];
+        [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(myView);
+        }];
+        
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
@@ -53,10 +69,10 @@
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
-        [self addSubview:mLoginTitleView];
+        [myView addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
-            make.leading.trailing.mas_equalTo(self);
+            make.top.mas_equalTo(myView.mas_top).mas_offset(VH(14));
+            make.leading.trailing.mas_equalTo(myView);
 //            make.width.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
         }];
@@ -66,11 +82,11 @@
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:accountSDKTextFiledView];
+        [myView addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(VW(-40));
+            make.leading.mas_equalTo(myView).mas_offset(VW(18));
+            make.trailing.mas_equalTo(myView).mas_offset(VW(-18));
             make.height.mas_equalTo(VH(40));
 
             make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
@@ -79,7 +95,7 @@
         
         //新密码
         newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPwdSDKTextFiledView];
+        [myView addSubview:newPwdSDKTextFiledView];
         
         [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(accountSDKTextFiledView);
@@ -92,15 +108,15 @@
         
         
         //獲取驗證碼
-        getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-        
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-        getVfCodeBtn.layer.borderWidth = 1;
-        getVfCodeBtn.layer.cornerRadius = VH(20);
+        getVfCodeBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
+//        getVfCodeBtn.layer.borderWidth = 1;
+        getVfCodeBtn.layer.cornerRadius = VH(5);
 //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
 //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
-        [self addSubview:getVfCodeBtn];
+        [myView addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
@@ -111,23 +127,10 @@
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
-//        UIView *lineView1 = [[UIView alloc] init];
-//        lineView1.hidden = YES;
-//        lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-//        [self addSubview:lineView1];
-//        [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//            make.width.mas_equalTo(0.5);
-//            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading);
-//            make.centerY.mas_equalTo(getVfCodeBtn);
-//            make.height.mas_equalTo(VH(14));
-//
-//        }];
-        
         //驗證碼输入框
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
-        [self addSubview:vfCodeFiledView];
+        [myView addSubview:vfCodeFiledView];
         [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(getVfCodeBtn);
             make.bottom.equalTo(getVfCodeBtn);
@@ -137,54 +140,26 @@
             make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
         }];
         
-        //下划线
-        UIView *vfCodeFiledView_bottom_line = [[UIView alloc] init];
-        vfCodeFiledView_bottom_line.hidden = YES;
-        vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-        [self addSubview:vfCodeFiledView_bottom_line];
-        [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            //make.width.mas_equalTo(0.5);
-            make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.bottom.mas_equalTo(vfCodeFiledView);
-            
-            make.height.mas_equalTo(1);
-
-        }];
-        
-
-        //确认密码
-//        againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
-//        [self addSubview:againPwdSDKTextFiledView];
-//
-//        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.leading.mas_equalTo(accountSDKTextFiledView);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView);
-//            make.height.mas_equalTo(accountSDKTextFiledView);
-//            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
-//
-//        }];
-        
         
         //確認
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
-        [okBtn.layer setCornerRadius:VH(25)];
+        [okBtn.layer setCornerRadius:VH(5)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-        [self addSubview:okBtn];
+        [myView addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.top.equalTo(getVfCodeBtn.mas_bottom).mas_offset(VH(30));
             make.width.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(VH(50));
+            make.height.mas_equalTo(VH(40));
         }];
         
         
         [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-            CAGradientLayer *glLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
+            CAGradientLayer *glLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
             glLayer.frame = okBtn.bounds;
             [okBtn.layer addSublayer:glLayer];
             
