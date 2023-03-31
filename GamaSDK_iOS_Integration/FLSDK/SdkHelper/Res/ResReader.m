@@ -264,7 +264,7 @@ static dispatch_once_t onceToken;
     if(!_textStringDic){
         _textStringDic = [NSMutableDictionary dictionary];
         
-        NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
+        NSString *languageStr = [self getsdkLanguage_MMMethodMMM]; //指定的默认语言
         NSString *languageStr_temp = languageStr;
         
         if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
