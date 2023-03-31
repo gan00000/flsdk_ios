@@ -221,8 +221,8 @@
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(accountSDKTextFiledView);
             //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(12));
-//            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-18));
+//            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(12));
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
             //            make.centerX.mas_equalTo(self);
 //            make.height.mas_equalTo(btn_h);
         }];

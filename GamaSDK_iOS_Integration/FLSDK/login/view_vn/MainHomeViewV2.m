@@ -80,6 +80,7 @@
 //    SDK_DATA.mConfigModel.appPassCheck = YES;
 //    SDK_DATA.mConfigModel.deleteAccount = YES;
 //    SDK_DATA.mConfigModel.showLogo = YES;
+//    SDK_DATA.mConfigModel.showContract = YES;
     
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
@@ -96,31 +97,147 @@
         make.edges.mas_equalTo(myView);
     }];
     
-    UIView *contentView = [[UIView alloc] init];
-    [myView addSubview:contentView];
-    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.mas_equalTo(myView);
-        make.centerY.mas_equalTo(myView);
+    
+    UIView *termAgreeView = [[UIView alloc] init];
+    [myView addSubview:termAgreeView];
+    [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(myView);
+        make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-18));
+//        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     
-//    UIImageView *logoIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_logo];
-//    logoIV.hidden = YES;
-//    if (SDK_DATA.mConfigModel.showLogo) {
-//        logoIV.hidden = NO;
-//    }
-//    [contentView addSubview:logoIV];
-//    [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
-////        CGFloat hx = VH(MARGIN_TOP);
-////        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
-//        make.top.mas_equalTo(contentView.mas_top);
-//        make.width.mas_equalTo(VW(200));
-//        if (SDK_DATA.mConfigModel.showLogo) {
-//            make.height.mas_equalTo(VH(50));
-//        }else{
-//            make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
-//        }
-//        make.centerX.mas_equalTo(contentView);
-//    }];
+    checkBoxTermsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    checkBoxTermsBtn.selected = YES;
+    [termAgreeView addSubview:checkBoxTermsBtn];
+    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(termAgreeView);
+        make.centerY.mas_equalTo(termAgreeView);
+        make.width.height.mas_equalTo(VH(15));
+       
+    }];
+    
+        NSString *xtext = GetString(wwwww_tag_wwwww_text_ui_term_port_read2);
+    NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
+    
+        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
+        rememberTermsLable.textAlignment = NSTextAlignmentLeft;
+        rememberTermsLable.backgroundColor = [UIColor clearColor];
+        rememberTermsLable.numberOfLines = 1;
+        
+    
+         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:BaseColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
+         };
+         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
+        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
+         //赋值
+        rememberTermsLable.attributedText = attribtStr;
+        
+        [termAgreeView addSubview:rememberTermsLable];
+        [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.bottom.mas_equalTo(termAgreeView);
+            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.trailing.mas_equalTo(termAgreeView.mas_trailing);
+        }];
+        rememberTermsLable.userInteractionEnabled=YES;
+        [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+            [self showTermsView_MMMethodMMM];
+            
+        }];
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    termAgreeView.hidden = !mConfigModel.showContract;
+    
+    //登录方式
+    UIView *loginTypeView = [[UIView alloc] init];
+    [myView addSubview:loginTypeView];
+    [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(myView);
+        make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-30));
+        
+        //make.bottom.mas_equalTo(contentView.mas_bottom);
+    }];
+    
+    
+    CGFloat btn_w = VW(34);
+    CGFloat btn_h = btn_w;
+    CGFloat margin_leading = VW(35);
+    
+    NSMutableArray *loginBtnDatas;
+    if (SDK_DATA.mConfigModel.appPassCheck) {
+        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:NO];
+    }else{
+        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:NO guestBtn_MMMethodMMM:NO];
+    }
+    UIView *leadingView = loginTypeView;
+  
+    for (int i = 0; i < loginBtnDatas.count; i++) {
+        
+        LoginButtonData *lbd = loginBtnDatas[i];
+        UIView *btnView;
+        
+        if ([lbd.btnType isEqualToString:LOGIN_TYPE_APPLE]) {
+            
+            if (@available(iOS 13.0, *)) {
+                
+                ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
+                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
+                [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
+                appleLoginBtn.tag = lbd.tag;
+                appleLoginBtn.cornerRadius = 5;
+                btnView = appleLoginBtn;
+                //btn_w = VW(34-6);
+            }
+            
+        }else{
+            //btn_w = VW(34);
+            LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+            
+            btnView = mBtn;
+        }
+       
+        
+        if (btnView) {
+            btn_h = btn_w;
+            [loginTypeView addSubview:btnView];
+            [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.width.mas_equalTo(btn_w);
+                make.height.mas_equalTo(btn_h);
+                //make.centerY.mas_equalTo(loginTypeView);
+                make.top.mas_equalTo(loginTypeView);
+                make.bottom.mas_equalTo(loginTypeView);
+                
+                if (i == 0) {
+                    make.leading.mas_equalTo(leadingView);
+                }else{
+                    make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
+                }
+                if (i == loginBtnDatas.count - 1) {
+                    make.trailing.mas_equalTo(loginTypeView);
+//                    make.top.mas_equalTo(loginTypeView);
+//                    make.bottom.mas_equalTo(loginTypeView);
+                }
+            }];
+            
+            leadingView = btnView;
+            
+        }
+
+    }
+    
+    //----------
+    
+    UIView *contentView_parent = [[UIView alloc] init];
+    [myView addSubview:contentView_parent];
+    [contentView_parent mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.top.mas_equalTo(myView);
+        make.bottom.mas_equalTo(loginTypeView.mas_top);
+    }];
+    
+    UIView *contentView = [[UIView alloc] init];
+    [contentView_parent addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.mas_equalTo(contentView_parent);
+        make.centerY.mas_equalTo(contentView_parent);
+    }];
     
     
     //游客登录
@@ -213,6 +330,8 @@
     [hasAccountContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(contentView);
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(VH(18));
+        
+        make.bottom.mas_equalTo(contentView.mas_bottom);
     }];
     
     UILabel *hasAccountLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_tips_have_account.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
@@ -229,174 +348,11 @@
         make.leading.mas_equalTo(hasAccountLabel.mas_trailing);
     }];
     
-    
-//    UILabel *otherLoginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login_other.localx fontSize_MMMethodMMM:FS(11) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
-//    [contentView addSubview:otherLoginLabel];
-//    [otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(hasAccountLabel.mas_bottom).mas_offset(VH(22));
-//        make.centerX.mas_equalTo(contentView);
-//    }];
-//
-//    UIView *lineView1 = [[UIView alloc] init];
-//    lineView1.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-//    [contentView addSubview:lineView1];
-//    [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//        //make.width.mas_equalTo(0.5);
-//        make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
-//        make.centerY.mas_equalTo(otherLoginLabel);
-//        make.height.mas_equalTo(1);
-//        make.width.mas_equalTo(VW(26));
-//
-//    }];
-//
-//    UIView *lineView2 = [[UIView alloc] init];
-//    lineView2.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-//    [contentView addSubview:lineView2];
-//    [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//        //make.width.mas_equalTo(0.5);
-//        make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
-//        make.centerY.mas_equalTo(otherLoginLabel);
-//        make.height.mas_equalTo(1);
-//        make.width.mas_equalTo(VW(26));
-//
-//    }];
-    
-    
-    //登录方式
-    
-    UIView *loginTypeView = [[UIView alloc] init];
-    [contentView addSubview:loginTypeView];
-    [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(contentView);
-        make.top.mas_equalTo(hasAccountContent.mas_bottom).mas_offset(VH(24));
-        
-        make.bottom.mas_equalTo(contentView.mas_bottom);
-    }];
-    
-    
-    CGFloat btn_w = VW(34);
-    CGFloat btn_h = btn_w;
-    CGFloat margin_leading = VW(35);
-    
-    NSMutableArray *loginBtnDatas;
-    if (SDK_DATA.mConfigModel.appPassCheck) {
-        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:NO];
-    }else{
-        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:NO guestBtn_MMMethodMMM:NO];
-    }
-    UIView *leadingView = loginTypeView;
-  
-    for (int i = 0; i < loginBtnDatas.count; i++) {
-        
-        LoginButtonData *lbd = loginBtnDatas[i];
-        UIView *btnView;
-        
-        if ([lbd.btnType isEqualToString:LOGIN_TYPE_APPLE]) {
-            
-            if (@available(iOS 13.0, *)) {
-                
-                ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                          authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleBlack];
-                [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
-                appleLoginBtn.tag = lbd.tag;
-                appleLoginBtn.cornerRadius = 5;
-                btnView = appleLoginBtn;
-                btn_w = VW(34-6);
-            }
-            
-        }else{
-            btn_w = VW(34);
-            LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-            
-            btnView = mBtn;
-        }
-       
-        
-        if (btnView) {
-            btn_h = btn_w;
-            [loginTypeView addSubview:btnView];
-            [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.width.mas_equalTo(btn_w);
-                make.height.mas_equalTo(btn_h);
-                make.centerY.mas_equalTo(loginTypeView);
-//                make.top.mas_equalTo(loginTypeView);
-//                make.bottom.mas_equalTo(loginTypeView);
-                
-                if (i == 0) {
-                    make.leading.mas_equalTo(leadingView);
-                }else{
-                    make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-                }
-                if (i == loginBtnDatas.count - 1) {
-                    make.trailing.mas_equalTo(loginTypeView);
-                    make.top.mas_equalTo(loginTypeView);
-                    make.bottom.mas_equalTo(loginTypeView);
-                }
-            }];
-            
-            leadingView = btnView;
-            
-        }
-
-    }
-    
-    
     [hasAccountContent addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         if (self.delegate) {
             [self.delegate goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) from_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME param_MMMethodMMM:@1];
         }
     }];
-    
-  
-    UIView *termAgreeView = [[UIView alloc] init];
-    [myView addSubview:termAgreeView];
-    [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(myView);
-        make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-18));
-//        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
-    }];
-    
-    checkBoxTermsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    checkBoxTermsBtn.selected = YES;
-    [termAgreeView addSubview:checkBoxTermsBtn];
-    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(termAgreeView);
-        make.centerY.mas_equalTo(termAgreeView);
-        make.width.height.mas_equalTo(VH(15));
-       
-    }];
-    
-        NSString *xtext = GetString(wwwww_tag_wwwww_text_ui_term_port_read2);
-    NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
-    
-        UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:C_TEXT_NORMAL]];
-        rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-        rememberTermsLable.backgroundColor = [UIColor clearColor];
-        rememberTermsLable.numberOfLines = 1;
-        
-    
-         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:BaseColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
-         };
-         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
-         //赋值
-        rememberTermsLable.attributedText = attribtStr;
-        
-        [termAgreeView addSubview:rememberTermsLable];
-        [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.bottom.mas_equalTo(termAgreeView);
-            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
-            make.trailing.mas_equalTo(termAgreeView.mas_trailing);
-        }];
-        rememberTermsLable.userInteractionEnabled=YES;
-        [rememberTermsLable addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-            [self showTermsView_MMMethodMMM];
-            
-        }];
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    termAgreeView.hidden = !mConfigModel.showContract;
     
     
     if (mConfigModel.deleteAccount) {
