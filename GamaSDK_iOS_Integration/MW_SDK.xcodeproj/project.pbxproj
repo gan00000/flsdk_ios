@@ -110,6 +110,7 @@
 		033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */; };
 		033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */; };
 		033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */; };
+		033B332629D6BEBC00AE9F96 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */; };
 		033DBCC8298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCC9298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
 		033DBCCA298D0BA7004F28E4 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */; };
@@ -1431,6 +1432,7 @@
 		033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountListViewCell.m; sourceTree = "<group>"; };
 		033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTypeButton.h; sourceTree = "<group>"; };
 		033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventInterruptView.h; sourceTree = "<group>"; };
+		033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
 		033DBCAD298D0BA7004F28E4 /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
 		033DBCAE298D0BA7004F28E4 /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
 		033DBCAF298D0BA7004F28E4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
@@ -2418,6 +2420,7 @@
 		033B32F329D56E3200AE9F96 /* VN */ = {
 			isa = PBXGroup;
 			children = (
+				033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */,
 				033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */,
 				033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */,
 				033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */,
@@ -3680,6 +3683,7 @@
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
+				033B332629D6BEBC00AE9F96 /* com_miaoou_gwsg.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5567,7 +5571,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5599,11 +5603,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

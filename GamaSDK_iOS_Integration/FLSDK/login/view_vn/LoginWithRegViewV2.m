@@ -7,6 +7,7 @@
 //
 
 #import "LoginWithRegViewV2.h"
+#import "UIView+BlockGesture.h"
 
 @interface LoginWithRegViewV2()
 
@@ -25,6 +26,7 @@
     
     UIButton *backBtn;
     
+    UIView *deleteBtnView;
 }
 
 
@@ -170,6 +172,11 @@
     
     self.mRegisterAccountView.hidden = YES;
     
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if (mConfigModel.deleteAccount) {
+        [self addDeleteAccountView_MMMethodMMM];
+    }
+    
 }
 
 - (void)drawRect:(CGRect)rect  //system_method
@@ -269,14 +276,17 @@
             self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, self.frame.size.width, 0);
             
         } completion:^(BOOL finished) {
-//            self.mAccountLoginView.hidden = NO;
-//            self.mRegisterAccountView.hidden = YES;
+            
+            if (deleteBtnView && SDK_DATA.mConfigModel.deleteAccount) {
+                deleteBtnView.hidden = NO;
+            }
+            
         }];
         
 //        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
 //        [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] forState:(UIControlStateNormal)];
         
-        
+
     }else{
     
         
@@ -303,6 +313,56 @@
 //            self.mRegisterAccountView.hidden = NO;
         }];
         
+        if (deleteBtnView) {
+            deleteBtnView.hidden = YES;
+        }
+        
     }
 }
+
+
+-(void)addDeleteAccountView_MMMethodMMM
+{
+    UIView *deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView.layer.cornerRadius = VW(5);
+    
+    [self addSubview:deleteView];
+    
+    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+//        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+        make.centerX.equalTo(self);
+//        make.height.mas_equalTo(VH(28));
+    }];
+    
+    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
+    [deleteView addSubview:deleteIV];
+    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView);
+        make.width.height.mas_equalTo(VW(15));
+    }];
+    
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    [deleteView addSubview:delLabel];
+    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView);
+       
+    }];
+    
+    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [self.mAccountLoginView addDeleteAccountConfireView_MMMethodMMM];
+       
+    }];
+    
+    deleteBtnView = deleteView;
+}
+
+
 @end

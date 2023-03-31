@@ -298,9 +298,9 @@
             
         }
         
-        if (mConfigModel.deleteAccount) {
-            [self addDeleteAccountView_MMMethodMMM];
-        }
+//        if (mConfigModel.deleteAccount) {
+//            [self addDeleteAccountView_MMMethodMMM];
+//        }
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
@@ -680,6 +680,10 @@
 
 -(UIView *)addDeleteAccountConfireView_MMMethodMMM
 {
+    if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
+        return nil;
+    }
     
     if (deleteAccountConfireView) {
         [deleteAccountConfireView removeFromSuperview];

@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView;
 
+-(UIView *)addDeleteAccountConfireView_MMMethodMMM;
+
 @end
 
 NS_ASSUME_NONNULL_END

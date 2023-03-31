@@ -117,7 +117,7 @@
     
     UIButton *closeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_close.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    closeBtn.layer.cornerRadius = VH(32) / 2;
+    closeBtn.layer.cornerRadius = VH(5);
     closeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
     closeBtn.layer.borderWidth = 0.5;
     
@@ -132,7 +132,7 @@
     
     UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_agree_read_tips.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    okBtn.layer.cornerRadius = VH(16);
+    okBtn.layer.cornerRadius = VH(5);
     okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
 //    okBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
 //    okBtn.layer.borderWidth = 0.5;
@@ -146,7 +146,7 @@
         make.height.mas_equalTo(VH(32));
     }];
     
-    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(16)];
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [okBtn.layer addSublayer:gl];
     [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         gl.frame = okBtn.bounds;
