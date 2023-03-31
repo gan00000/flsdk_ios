@@ -131,7 +131,7 @@
     UIView *phoneAreaCodeView = [[UIView alloc] init];
     phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneAreaCodeView.layer.borderWidth = 0.5;
-    phoneAreaCodeView.layer.cornerRadius = VH(20);
+    phoneAreaCodeView.layer.cornerRadius = VH(5);
     [phoneContentView addSubview:phoneAreaCodeView];
     [phoneAreaCodeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(phoneContentView);
@@ -166,7 +166,7 @@
     
     phoneNumFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneNumFiled.layer.borderWidth = 0.5;
-    phoneNumFiled.layer.cornerRadius = VH(20);
+    phoneNumFiled.layer.cornerRadius = VH(5);
     phoneNumFiled.inputTextField.keyboardType = UIKeyboardTypePhonePad;
     
     [phoneContentView addSubview:phoneNumFiled];
@@ -196,7 +196,7 @@
     
     vfCodeFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     vfCodeFiled.layer.borderWidth = 0.5;
-    vfCodeFiled.layer.cornerRadius = VH(20);
+    vfCodeFiled.layer.cornerRadius = VH(5);
     vfCodeFiled.inputTextField.keyboardType = UIKeyboardTypeNumberPad;
     vfCodeFiled.inputTextField.textAlignment = NSTextAlignmentCenter;
     
@@ -211,12 +211,12 @@
     }];
     
     //獲取驗證碼
-    getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+    getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    
-    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-    getVfCodeBtn.layer.borderWidth = 0.5;
-    getVfCodeBtn.layer.cornerRadius = VH(20);
+    getVfCodeBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+//    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
+//    getVfCodeBtn.layer.borderWidth = 0.5;
+    getVfCodeBtn.layer.cornerRadius = VH(5);
     //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
     //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
     [vfInfoView addSubview:getVfCodeBtn];
@@ -232,7 +232,7 @@
     
     okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [okBtn.layer setCornerRadius:VH(20)];
+    [okBtn.layer setCornerRadius:VH(5)];
     okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     [contentView addSubview:okBtn];
     
@@ -242,7 +242,7 @@
         make.height.mas_equalTo(VH(40));
     }];
     
-    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
+    CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [okBtn.layer addSublayer:gl];
     [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         gl.frame = okBtn.bounds;

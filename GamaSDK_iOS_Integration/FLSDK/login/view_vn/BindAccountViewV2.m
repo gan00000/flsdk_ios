@@ -207,7 +207,7 @@
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
-        [okBtn.layer setCornerRadius:VH(20)];
+        [okBtn.layer setCornerRadius:VH(5)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [contentView addSubview:okBtn];
@@ -220,7 +220,7 @@
         }];
         
       
-        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
+        CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
         [okBtn.layer addSublayer:gl];
         [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             gl.frame = okBtn.bounds;
