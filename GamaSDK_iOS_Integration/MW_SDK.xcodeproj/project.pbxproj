@@ -786,11 +786,9 @@
 		039B26E5298B557400045C53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		039B26E6298B557400045C53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		039E6EAB29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6EAC29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6EAD29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6EAE29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
-		039E6EAF29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6EB029D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
 		039E6EB129D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
 		039E6EB229D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
@@ -916,6 +914,13 @@
 		039E6F2A29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2B29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2C29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
+		039E6F3329D996A200890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		039E6F3429D996C100890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
+		039E6F3629D996CC00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		039E6F3729D996E000890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
+		039E6F3829D996E400890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		039E6F3929D996F900890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
 		03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
@@ -1867,6 +1872,7 @@
 				039E6EE329D9900300890B3B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 				039E6F1A29D9900300890B3B /* AppAuth.xcframework in Frameworks */,
 				038613F72938981100CC9C44 /* CoreLocation.framework in Frameworks */,
+				039E6F3929D996F900890B3B /* LineSDK.framework in Frameworks */,
 				039E6EFC29D9900300890B3B /* FirebaseCore.xcframework in Frameworks */,
 				039E6EC529D9900300890B3B /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				038613F82938981100CC9C44 /* MobileCoreServices.framework in Frameworks */,
@@ -1929,6 +1935,7 @@
 				039B26B3298B557400045C53 /* AdSupport.framework in Frameworks */,
 				039B26B5298B557400045C53 /* JavaScriptCore.framework in Frameworks */,
 				039B26B7298B557400045C53 /* ReplayKit.framework in Frameworks */,
+				039E6F3329D996A200890B3B /* LineSDK.framework in Frameworks */,
 				039E6F1729D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
 				039B26B9298B557400045C53 /* libz.tbd in Frameworks */,
 				039B26BA298B557400045C53 /* SafariServices.framework in Frameworks */,
@@ -1991,7 +1998,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039E6EAF29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6ECD29D9900300890B3B /* FirebaseAuth.xcframework in Frameworks */,
 				033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */,
 				03CA72CC29D5699600098979 /* SwiftUI.framework in Frameworks */,
@@ -2015,6 +2021,7 @@
 				03CA72E129D5699600098979 /* JavaScriptCore.framework in Frameworks */,
 				03CA72E229D5699600098979 /* ReplayKit.framework in Frameworks */,
 				039E6F1829D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
+				039E6F3629D996CC00890B3B /* LineSDK.framework in Frameworks */,
 				03CA72E429D5699600098979 /* libz.tbd in Frameworks */,
 				03CA72E529D5699600098979 /* SafariServices.framework in Frameworks */,
 				03CA72E629D5699600098979 /* libc++abi.tbd in Frameworks */,
@@ -2032,6 +2039,7 @@
 				039E6EF529D9900300890B3B /* FirebaseInstallations.xcframework in Frameworks */,
 				039E6F2729D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */,
 				03CA72F129D5699600098979 /* libxml2.dylib in Frameworks */,
+				039E6F3429D996C100890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6EBE29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				03CA72F229D5699600098979 /* Security.framework in Frameworks */,
 				03CA72F329D5699600098979 /* CFNetwork.framework in Frameworks */,
@@ -2092,6 +2100,7 @@
 				03F542DB2940BC5D00F75F51 /* AdSupport.framework in Frameworks */,
 				03F542DD2940BC5D00F75F51 /* JavaScriptCore.framework in Frameworks */,
 				03F542DF2940BC5D00F75F51 /* ReplayKit.framework in Frameworks */,
+				039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */,
 				039E6F1629D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
 				03F542E12940BC5D00F75F51 /* libz.tbd in Frameworks */,
 				03F542E22940BC5D00F75F51 /* SafariServices.framework in Frameworks */,
@@ -2147,7 +2156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039E6EAB29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6EC929D9900300890B3B /* FirebaseAuth.xcframework in Frameworks */,
 				03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */,
 				032CB56A2940BEBD0013185B /* MWSDK_V2.framework in Frameworks */,
@@ -2171,6 +2179,7 @@
 				24A4B6691DD5BA7A003AF6F0 /* JavaScriptCore.framework in Frameworks */,
 				24966D971D5894C9005BE6EB /* ReplayKit.framework in Frameworks */,
 				039E6F1429D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
+				039E6F3829D996E400890B3B /* LineSDK.framework in Frameworks */,
 				2490083C1D2646CA00331AB0 /* libz.tbd in Frameworks */,
 				24B144401D10FCB900256411 /* SafariServices.framework in Frameworks */,
 				242CE86B1CFEF1C700E3C747 /* libc++abi.tbd in Frameworks */,
@@ -2188,6 +2197,7 @@
 				039E6EF129D9900300890B3B /* FirebaseInstallations.xcframework in Frameworks */,
 				039E6F2329D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */,
 				CEE6B9611A149944009E77FF /* libxml2.dylib in Frameworks */,
+				039E6F3729D996E000890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6EBA29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				CE4F116A1A6797BA00780524 /* Security.framework in Frameworks */,
 				CEF6E92A1A35B45500CFFE2F /* CFNetwork.framework in Frameworks */,
@@ -4542,12 +4552,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4617,12 +4623,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4716,12 +4718,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4791,12 +4789,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4853,13 +4847,8 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -4924,13 +4913,8 @@
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -5004,13 +4988,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -5079,13 +5059,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -5153,11 +5129,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5228,11 +5200,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5290,13 +5258,8 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -5361,13 +5324,8 @@
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -5442,12 +5400,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -5517,12 +5471,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseMessaging/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -5579,13 +5529,8 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -5650,13 +5595,8 @@
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -5720,12 +5660,7 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -5791,12 +5726,7 @@
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -5948,13 +5878,8 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -6019,13 +5944,8 @@
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
