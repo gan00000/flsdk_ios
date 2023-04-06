@@ -80,7 +80,7 @@
 //    SDK_DATA.mConfigModel.appPassCheck = YES;
 //    SDK_DATA.mConfigModel.deleteAccount = YES;
 //    SDK_DATA.mConfigModel.showLogo = YES;
-//    SDK_DATA.mConfigModel.showContract = YES;
+    SDK_DATA.mConfigModel.showContract = YES;
     
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
@@ -362,18 +362,11 @@
          
             [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
                 if(IS_PORTRAIT){
-                    make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+                    make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
                     make.centerX.mas_equalTo(self);
                 }else{
-                    make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-12));
-                    make.centerX.mas_equalTo(self);
-//                    if(device_is_iPhoneX){
-//                        make.top.mas_equalTo(self).mas_offset(VH(15));
-//                        make.trailing.mas_equalTo(self).mas_offset(VW(-(44+15)));
-//                    }else{
-//                        make.top.mas_equalTo(self).mas_offset(VH(15));
-//                        make.trailing.mas_equalTo(self).mas_offset(VW(-15));
-//                    }
+                    make.top.mas_equalTo(self).mas_offset(VH(20));
+                    make.trailing.mas_equalTo(self).mas_offset(VW(-25));
                 }
             }];
             

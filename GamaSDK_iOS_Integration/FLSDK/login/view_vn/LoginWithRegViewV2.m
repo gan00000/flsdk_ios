@@ -350,10 +350,15 @@
     [self addSubview:deleteView];
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
-//        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
-        make.centerX.equalTo(self);
-//        make.height.mas_equalTo(VH(28));
+        
+        if(IS_PORTRAIT){
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
+            make.centerX.mas_equalTo(self);
+        }else{
+            make.top.mas_equalTo(self).mas_offset(VH(20));
+            make.trailing.mas_equalTo(self).mas_offset(VW(-25));
+        }
+
     }];
     
     UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];

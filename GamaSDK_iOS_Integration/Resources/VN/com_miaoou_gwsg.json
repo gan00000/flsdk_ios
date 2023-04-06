@@ -11,7 +11,7 @@
     "sdk_url_log" : "https://log.dustyx.com/",
     "sdk_url_login" : "https://login.dustyx.com/",
     "sdk_url_pay" : "https://pay.dustyx.com/",
-    "sdk_v_version" : "v3",
+    "sdk_v_version" : "v_vn",
     "terms_service_url" : "https://member.dustyx.com/sdk/agreement/%@_agreement.html"
     
 }
