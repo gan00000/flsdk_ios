@@ -203,17 +203,25 @@
         //        sdkContentView.backgroundColor = [UIColor redColor];
         [self.view addSubview:_sdkContentView];
         [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(@(0));
-            make.centerY.equalTo(@(0));
-            if (IS_PORTRAIT) {
-                make.width.mas_equalTo(VW(375));
-                make.height.mas_equalTo(VH(667));
-            }else{
-//                make.width.mas_equalTo(VW(667));
-//                make.height.mas_equalTo(VH(375));
+            
+            if([@"v_vn" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
                 
-                make.width.mas_equalTo(VW(380));
-                make.height.mas_equalTo(VH(375));
+                make.edges.mas_equalTo(self.view);
+                
+            }else{
+                
+                make.centerX.equalTo(@(0));
+                make.centerY.equalTo(@(0));
+                if (IS_PORTRAIT) {
+                    make.width.mas_equalTo(VW(375));
+                    make.height.mas_equalTo(VH(667));
+                }else{
+    //                make.width.mas_equalTo(VW(667));
+    //                make.height.mas_equalTo(VH(375));
+                    
+                    make.width.mas_equalTo(VW(380));
+                    make.height.mas_equalTo(VH(375));
+                }
             }
            
         }];

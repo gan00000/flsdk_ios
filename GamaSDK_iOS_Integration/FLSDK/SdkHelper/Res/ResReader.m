@@ -493,9 +493,15 @@ static dispatch_once_t onceToken;
     return [self getBoolForKey_MMMethodMMM:@"sdk_ad_bug"];
 }
 
--(BOOL)isVersion2_MMMethodMMM
+-(BOOL)isVersion2_MMMethodMMM //是否是第二版本或以上
 {
-    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+//    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+    return YES;
+}
+
+-(NSString *)getSdkVersion_MMMethodMMM //SDK 版本
+{
+    return [self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString;
 }
 
 -(BOOL)isMoreLanguage_MMMethodMMM

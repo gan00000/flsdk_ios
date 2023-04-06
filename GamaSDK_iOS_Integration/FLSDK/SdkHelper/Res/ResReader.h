@@ -52,6 +52,8 @@
 
 -(BOOL)isVersion2_MMMethodMMM;
 
+-(NSString *)getSdkVersion_MMMethodMMM;
+
 -(BOOL)isMoreLanguage_MMMethodMMM;
 - (NSString *)getSdkBundleName_MMMethodMMM;
 
