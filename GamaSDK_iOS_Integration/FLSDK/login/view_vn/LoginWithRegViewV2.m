@@ -176,6 +176,26 @@
     if (mConfigModel.deleteAccount) {
         [self addDeleteAccountView_MMMethodMMM];
     }
+    //test code start
+    //mConfigModel.showRegPage = YES;
+    //test code end
+    if (mConfigModel.showRegPage) {//是否隐藏注册
+        
+        [loginTabBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.bottom.mas_equalTo(tabView);
+            make.leading.trailing.mas_equalTo(tabView);
+            make.centerX.mas_equalTo(myView);
+        }];
+        
+        regTabBtn.hidden = YES;
+        [regTabBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+            
+            make.edges.mas_equalTo(loginTabBtn);
+
+        }];
+        
+    }
     
 }
 

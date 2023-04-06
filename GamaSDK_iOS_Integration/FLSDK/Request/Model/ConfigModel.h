@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL showNotice;
 @property (nonatomic, copy) NSString *platform;
 
+@property (nonatomic, assign) BOOL showRegPage;
+
 @end
 
 NS_ASSUME_NONNULL_END
