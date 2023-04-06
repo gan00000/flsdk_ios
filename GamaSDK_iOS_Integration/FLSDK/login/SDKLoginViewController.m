@@ -166,6 +166,19 @@
     //         [self addMainLoginView];
     //    }
     
+    //test code start
+//    SDK_DATA.mConfigModel.appleLogin = NO;
+//    SDK_DATA.mConfigModel.visitorLogin = NO;
+//    SDK_DATA.mConfigModel.fbLogin = NO;
+//    SDK_DATA.mConfigModel.lineLogin = NO;
+    //test code end
+    
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if (!mConfigModel.visitorLogin && !mConfigModel.appleLogin && !mConfigModel.fbLogin && !mConfigModel.lineLogin) {
+        [self addLoginWithRegView_MMMethodMMM];
+        return;
+    }
+    
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
         
