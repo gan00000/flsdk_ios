@@ -84,7 +84,7 @@
 		033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */; };
 		033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */; };
 		033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */; };
-		033B32FB29D56E3200AE9F96 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */; };
+		033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */; };
 		033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CA72B729D5698400098979 /* MWSDK_VN.framework */; };
 		033B331029D5C4BC00AE9F96 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */; };
 		033B331129D5C4BC00AE9F96 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */; };
@@ -1410,9 +1410,8 @@
 		033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
 		033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
 		033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesVN.bundle; sourceTree = "<group>"; };
-		033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
+		033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_snmxw_vntest.json; sourceTree = "<group>"; };
 		033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
 		033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTitleView.m; sourceTree = "<group>"; };
 		033B330029D5C4BC00AE9F96 /* SDKTextFiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKTextFiledView.m; sourceTree = "<group>"; };
@@ -2412,9 +2411,8 @@
 			children = (
 				033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */,
 				033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */,
-				033B32F529D56E3200AE9F96 /* com_miaoou_gwsg.plist */,
 				033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */,
-				033B32F729D56E3200AE9F96 /* com_mwgame_sdkzycs.json */,
+				033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */,
 			);
 			path = VN;
 			sourceTree = "<group>";
@@ -3687,7 +3685,7 @@
 			files = (
 				039E6ED729D9900300890B3B /* NOTICES in Resources */,
 				033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */,
-				033B32FB29D56E3200AE9F96 /* com_mwgame_sdkzycs.json in Resources */,
+				033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
 				03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */,
@@ -5525,7 +5523,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5553,11 +5551,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snmxw.vntest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dev_1;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

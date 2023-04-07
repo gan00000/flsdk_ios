@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>699960485995-tibu5s1hslsuj3i143disgr74t86gaq7.apps.googleusercontent.com</string>
+	<string>255382194723-p2jtcq6qdrrpr3r95t3c9c5krdrpupq3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.699960485995-tibu5s1hslsuj3i143disgr74t86gaq7</string>
+	<string>com.googleusercontent.apps.255382194723-p2jtcq6qdrrpr3r95t3c9c5krdrpupq3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>255382194723-i1l65stu290i2a7159n9toelp4n4bk5k.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB8W84aKeopOcnPzN05NUMi_e_AuWLhZ5U</string>
+	<string>AIzaSyAUALjpyzB2aD4DOBS4x-cVcUHMmM6GZp0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>699960485995</string>
+	<string>255382194723</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.miaoou.gwsg</string>
+	<string>com.snmxw.vntest</string>
 	<key>PROJECT_ID</key>
-	<string>tw-xlzsg-ios-85958</string>
+	<string>kdzq-202210</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tw-xlzsg-ios-85958.appspot.com</string>
+	<string>kdzq-202210.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:699960485995:ios:5e0d9c9088fa8cfae7292e</string>
+	<string>1:255382194723:ios:aa4e0733e5b6d5b1623f96</string>
+	<key>DATABASE_URL</key>
+	<string>https://kdzq-202210.firebaseio.com</string>
 </dict>
 </plist>

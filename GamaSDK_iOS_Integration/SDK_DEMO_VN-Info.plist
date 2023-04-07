@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>虛靈子三國demo</string>
+	<string>vn-demo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>虛靈子三國demo</string>
+	<string>vn-demo</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>gwsgios</string>
-				<string>fb1362551254507553</string>
+				<string>vnmxwios</string>
+				<string>fb948331946321316</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -39,7 +39,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.699960485995-tibu5s1hslsuj3i143disgr74t86gaq7</string>
+				<string>com.googleusercontent.apps.255382194723-p2jtcq6qdrrpr3r95t3c9c5krdrpupq3</string>
 			</array>
 		</dict>
 	</array>
@@ -48,15 +48,15 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>1362551254507553</string>
+	<string>948331946321316</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>0a8e2080cba4d5aa1fe9d9dd65c04e58</string>
+	<string>544fc9b2685b5ed2e7ce7235a50ea268</string>
 	<key>FacebookDisplayName</key>
-	<string>虛靈子三國demo</string>
+	<string>vn-demo</string>
 	<key>GIDClientID</key>
-	<string>699960485995-tibu5s1hslsuj3i143disgr74t86gaq7.apps.googleusercontent.com</string>
+	<string>255382194723-p2jtcq6qdrrpr3r95t3c9c5krdrpupq3.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>line</string>
@@ -71,7 +71,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1657882064</string>
+		<string>1660819297</string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
