@@ -26,7 +26,7 @@
         self.showLogo = NO;
         self.showForgetPwd = YES;
         self.showNotice = NO;
-        self.showRegPage = NO;
+        self.showRegPage = YES;
         
     }
     return self;

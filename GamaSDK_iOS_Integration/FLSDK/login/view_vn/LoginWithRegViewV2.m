@@ -177,9 +177,9 @@
         [self addDeleteAccountView_MMMethodMMM];
     }
     //test code start
-    //mConfigModel.showRegPage = YES;
+    //mConfigModel.showRegPage = NO;
     //test code end
-    if (mConfigModel.showRegPage) {//是否隐藏注册
+    if (!mConfigModel.showRegPage) {//是否隐藏注册
         
         [loginTabBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
             
