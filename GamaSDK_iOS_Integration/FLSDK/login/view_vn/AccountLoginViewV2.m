@@ -397,14 +397,14 @@
     }];
     
     accountListView = [[AccountListView alloc] init];
-    accountListView.layer.cornerRadius = 2.5f;
-    accountListView.layer.masksToBounds = YES;
+//    accountListView.layer.cornerRadius = 2.5f;
+//    accountListView.layer.masksToBounds = YES;
     [accountMaskView addSubview:accountListView];
     [accountListView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
         make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
         make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(4);
-        make.height.mas_equalTo(VH(200));
+        make.height.mas_equalTo(VH(180));
         //        make.edges.mas_equalTo(self);
         
     }];

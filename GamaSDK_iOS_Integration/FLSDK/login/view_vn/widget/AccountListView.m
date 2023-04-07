@@ -49,10 +49,18 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //    if (!self.accountDataList) {
 //        self.accountDataList = [NSMutableArray array];
 //    }
+    //
+
+    self.layer.cornerRadius = 2.5;
+    self.layer.shadowColor = UIColor.blackColor.CGColor;
+    self.layer.shadowOffset = CGSizeMake(0,2);
+    self.layer.shadowOpacity = 0.8;//阴影透明度，默认为0，如果不设置的话看不到阴影，切记，这是个大坑
+    self.layer.shadowRadius = 2.5;
 
     //账号下拉列表
     _accountListTableView = [[UITableView alloc] init];
     _accountListTableView.backgroundColor = [UIColor whiteColor];
+    _accountListTableView.layer.cornerRadius = 2.5;
     _accountListTableView.delegate = self;
     _accountListTableView.dataSource = self;
     _accountListTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
