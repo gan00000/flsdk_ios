@@ -470,5 +470,6 @@
 #define getJsonContentWithBundle_MMMethodMMM          getJsonContentWithBundle_MMMethodMMM
 #define trim_MMMethodMMM                        trim_MMMethodMMM
 #define afnReachability_MMMethodMMM          afnReachability
+#define getSdkVersion_MMMethodMMM           getSdkVersion_MMMethodMMM
 
 #endif  /* codeObfuscation_h */
