@@ -206,7 +206,11 @@
             
             if([@"v_vn" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
                 
-                make.edges.mas_equalTo(self.view);
+                //make.edges.mas_equalTo(self.view);
+                make.centerX.equalTo(@(0));
+                make.centerY.equalTo(@(0));
+                make.width.mas_equalTo(SCREEN_WIDTH);
+                make.height.mas_equalTo(SCREEN_HEIGHT);
                 
             }else{
                 
@@ -625,7 +629,7 @@
         kWeakSelf
         [UIView animateWithDuration:0.3 animations:^{
             //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [self.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.equalTo(@(0)).mas_offset(-(offSet + 15));
             }];
         }];
