@@ -166,10 +166,51 @@
     [self toastMsg_MMMethodMMM:msg atView_MMMethodMMM:nil];
 }
 
++ (UIView *)findKeyWindow {
+
+    //UIApplication *app = [UIApplication sharedApplication];
+    return [UIApplication sharedApplication].keyWindow;
+    
+}
+
+#pragma mark 获取键盘window的HostView
++ (UIView *)getTextEffectsWindowHostView{
+    
+    @try {
+        UIWindow *keyboardWindow = [[[UIApplication sharedApplication] windows] lastObject];
+        UIView *keyboardContainerView;
+        UIView *keyboardHostView;
+     
+        for(int i = 0; i < [keyboardWindow.subviews count]; i++) {
+            keyboardContainerView = [keyboardWindow.subviews objectAtIndex:i];
+            UIViewController *nextResponder = (UIViewController*)[keyboardContainerView nextResponder];
+            //寻找keyboardWindow层的UIInputWindowController
+            if ([nextResponder isKindOfClass:NSClassFromString(@"UIInputWindowController")]) {
+                for(int y = 0; y < [nextResponder.view.subviews count]; y++) {
+                    //寻找UIInputWindowController层的UIInputSetContainerView
+                    if([[keyboardContainerView description] hasPrefix:@"<UIInputSetContainerView"] == YES){
+                        for(int t = 0; t < [keyboardContainerView.subviews count]; t++) {
+                            keyboardHostView = [keyboardContainerView.subviews objectAtIndex:y];
+                            //寻找UIInputSetContainerView层的UIInputSetHostView
+                            if([[keyboardHostView description] hasPrefix:@"<UIInputSetHostView"] == YES){
+                                return keyboardHostView;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } @catch (NSException *exception) {
+        
+    }
+    return nil;
+    
+}
+
 + (void)toastMsg_MMMethodMMM:(NSString *)msg atView_MMMethodMMM:(UIView *)baseView
 {
     if (!baseView) {
-        baseView = [UIApplication sharedApplication].keyWindow;//windows[0];
+        baseView = [self findKeyWindow];//[UIApplication sharedApplication].keyWindow;//windows[0];
 //        baseView = [SUtil getCurrentWindow_MMMethodMMM];
     }
     
@@ -216,11 +257,26 @@
         [aler setFrame:CGRectMake(0, 0, _width, _height)];
         
         CGPoint b_c = baseView.center;
-//        CGFloat keyBoardHeight = SDK_DATA.keyBoardHeight;
+
         if (SDK_DATA.keyBoardHeight > 10) {
             aler.center = CGPointMake( b_c.x, baseView.frame.size.height - SDK_DATA.keyBoardHeight - _height);
         }else{
-            aler.center = CGPointMake( b_c.x,b_c.y + b_c.y / 2);
+            
+            CGFloat toastView_y = b_c.y + b_c.y / 2;
+            
+            UIView *inputSetHostView = [self getTextEffectsWindowHostView];
+            if(inputSetHostView){
+                
+                if(toastView_y + _height > inputSetHostView.frame.origin.y){
+                    toastView_y = inputSetHostView.frame.origin.y - _height;
+                }
+                
+                aler.center = CGPointMake( b_c.x, toastView_y);
+                
+            }else{
+                aler.center = CGPointMake( b_c.x, toastView_y);
+            }
+            
         }
         
         [toastLabel setFrame:CGRectMake( 0, 0, tempStringSize.width *2 , _tempHeight)];
@@ -232,7 +288,7 @@
         toastLabel = nil;
         
         // animation
-        [UIView animateWithDuration:1.5f
+        [UIView animateWithDuration:1.0f
                          animations:^{
                              aler.alpha = 1.0f;
                          } completion:^(BOOL finished) {
@@ -468,8 +524,7 @@
 
 +(NSMutableArray *)getShowBtnDatas_MMMethodMMM:(ConfigModel *)mConfigModel appleBtn_MMMethodMMM:(BOOL) appleBtn guestBtn_MMMethodMMM:(BOOL) guestBtn
 {
-//    mConfigModel.googleLogin = NO;
-//    mConfigModel.lineLogin = NO;
+
     NSMutableArray *loginBtnDatas = [NSMutableArray array];
     if (mConfigModel.appleLogin && appleBtn) {
         
