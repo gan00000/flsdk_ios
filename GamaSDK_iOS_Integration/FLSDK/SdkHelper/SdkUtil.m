@@ -267,7 +267,8 @@
             UIView *inputSetHostView = [self getTextEffectsWindowHostView];
             if(inputSetHostView){
                 
-                if(toastView_y + _height > inputSetHostView.frame.origin.y){
+                CGRect inputSetHostView_frame = inputSetHostView.frame;
+                if(toastView_y + _height > inputSetHostView_frame.origin.y){
                     toastView_y = inputSetHostView.frame.origin.y - _height;
                 }
                 
