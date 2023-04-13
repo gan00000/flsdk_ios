@@ -137,7 +137,7 @@
     //返回按钮
     backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [self addSubview:backBtn];
+    [myView addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerY.mas_equalTo(tabView);
@@ -156,7 +156,7 @@
     [regTabBtn setSelected:NO];
     
     self.mAccountLoginView = [[AccountLoginViewV2 alloc] initView_MMMethodMMM];
-    [self addSubview:self.mAccountLoginView];
+    [myView addSubview:self.mAccountLoginView];
     [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
         make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(20));
@@ -164,7 +164,7 @@
     }];
     
     self.mRegisterAccountView = [[RegisterAccountViewV2 alloc] initView_MMMethodMMM];
-    [self addSubview:self.mRegisterAccountView];
+    [myView addSubview:self.mRegisterAccountView];
     [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
         make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(20));
