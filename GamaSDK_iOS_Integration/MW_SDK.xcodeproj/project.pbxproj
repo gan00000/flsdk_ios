@@ -104,7 +104,6 @@
 		033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */; };
 		033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */; };
 		033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */; };
-		033B332629D6BEBC00AE9F96 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */; };
 		0352F70D2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0352F7102927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
@@ -3691,7 +3690,6 @@
 				03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
 				039E6EDC29D9900300890B3B /* README.md in Resources */,
-				033B332629D6BEBC00AE9F96 /* com_miaoou_gwsg.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5589,7 +5587,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5617,11 +5615,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snmxw.vntest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dis_gwsg_0206;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dis_1;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
