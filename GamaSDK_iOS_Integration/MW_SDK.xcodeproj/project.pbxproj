@@ -118,7 +118,6 @@
 		03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
 		03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03509C3D29F91C8100C840DA /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B268A298B555300045C53 /* MWSDK_V5.framework */; };
 		03509C3E29F91C8100C840DA /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03509C3F29F91C8100C840DA /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03509C4029F91C8100C840DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
@@ -831,10 +830,10 @@
 		039AC1F629F91DD700B416D8 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1E429F91DD700B416D8 /* BindAccountViewV2.m */; };
 		039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */; };
 		039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */; };
-		039AC1FE29F91E3600B416D8 /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */; };
 		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
 		039AC20029F91E3600B416D8 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */; };
-		039AC20129F91E3600B416D8 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */; };
+		039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */; };
+		039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
 		039B25F0298B555300045C53 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		039B25F2298B555300045C53 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		039B25F3298B555300045C53 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
@@ -1452,13 +1451,6 @@
 			remoteGlobalIDString = 0387B9D5291B8C9E001BACA8;
 			remoteInfo = MWSDK_V4;
 		};
-		03509C2829F91C8100C840DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 039B25ED298B555300045C53;
-			remoteInfo = MWSDK_V5;
-		};
 		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -1486,6 +1478,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 038612D729388F8900CC9C44;
 			remoteInfo = MWSDK_V3;
+		};
+		039AC20229F9231100B416D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03509C8829F91C8C00C840DA;
+			remoteInfo = MWSDK_V6;
 		};
 		03CA731929D569B400098979 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1792,10 +1791,9 @@
 		039AC1E429F91DD700B416D8 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
 		039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
 		039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
-		039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
-		039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
+		039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV6.bundle; sourceTree = "<group>"; };
 		039B268A298B555300045C53 /* MWSDK_V5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
@@ -2082,10 +2080,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */,
 				03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */,
 				03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */,
 				03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */,
-				03509C3D29F91C8100C840DA /* MWSDK_V5.framework in Frameworks */,
 				03509C3E29F91C8100C840DA /* AppTrackingTransparency.framework in Frameworks */,
 				03509C3F29F91C8100C840DA /* AdServices.framework in Frameworks */,
 				03509C4029F91C8100C840DA /* MapKit.framework in Frameworks */,
@@ -2975,10 +2973,9 @@
 		039AC1F929F91E3600B416D8 /* V6 */ = {
 			isa = PBXGroup;
 			children = (
-				039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */,
-				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
 				039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */,
-				039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */,
+				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
+				039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */,
 			);
 			path = V6;
 			sourceTree = "<group>";
@@ -3797,7 +3794,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				03509C2729F91C8100C840DA /* PBXTargetDependency */,
+				039AC20329F9231100B416D8 /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_V6;
 			packageProductDependencies = (
@@ -4092,10 +4089,9 @@
 			files = (
 				03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */,
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
-				039AC1FE29F91E3600B416D8 /* com_miaoou_gwsg.plist in Resources */,
 				039AC20029F91E3600B416D8 /* com_miaoou_gwsg.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
-				039AC20129F91E3600B416D8 /* SDKResourcesV5.bundle in Resources */,
+				039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */,
 				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
 				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
@@ -5132,11 +5128,6 @@
 			target = 0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */;
 			targetProxy = 032CB5682940BE740013185B /* PBXContainerItemProxy */;
 		};
-		03509C2729F91C8100C840DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 039B25ED298B555300045C53 /* MWSDK_V5 */;
-			targetProxy = 03509C2829F91C8100C840DA /* PBXContainerItemProxy */;
-		};
 		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
@@ -5156,6 +5147,11 @@
 			isa = PBXTargetDependency;
 			target = 038612D729388F8900CC9C44 /* MWSDK_V3 */;
 			targetProxy = 038613A12938981100CC9C44 /* PBXContainerItemProxy */;
+		};
+		039AC20329F9231100B416D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03509C8829F91C8C00C840DA /* MWSDK_V6 */;
+			targetProxy = 039AC20229F9231100B416D8 /* PBXContainerItemProxy */;
 		};
 		03CA731A29D569B400098979 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5183,7 +5179,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5211,11 +5207,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

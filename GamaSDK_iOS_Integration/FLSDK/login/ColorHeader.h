@@ -44,9 +44,9 @@
 
 #elif SDK_V6
 
-#define BaseColor  wwwww_tag_wwwww__CC_FC676F
-#define C_BUTTON_START  wwwww_tag_wwwww__CC_FC676F
-#define C_BUTTON_END  wwwww_tag_wwwww__CC_FF9944
+#define BaseColor  @"#8FDB99"
+#define C_BUTTON_START  @"#D4FC79"
+#define C_BUTTON_END  @"#8FDB99"
 
 #else
 
