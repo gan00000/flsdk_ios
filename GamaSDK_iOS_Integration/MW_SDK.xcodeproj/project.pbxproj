@@ -112,10 +112,7 @@
 		03509C2F29F91C8100C840DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
 		03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
 		03509C3229F91C8100C840DA /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9429D9900200890B3B /* NOTICES */; };
-		03509C3329F91C8100C840DA /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
-		03509C3429F91C8100C840DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
 		03509C3529F91C8100C840DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
-		03509C3629F91C8100C840DA /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */; };
 		03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03509C3829F91C8100C840DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
@@ -816,6 +813,28 @@
 		0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
 		0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */; };
 		0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387B9D4291B8BBB001BACA8 /* AccountLoginViewV2.m */; };
+		039AC1E729F91DD700B416D8 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1D529F91DD700B416D8 /* LoginWithRegViewV2.m */; };
+		039AC1E829F91DD700B416D8 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D629F91DD700B416D8 /* FindPasswordViewV2.h */; };
+		039AC1E929F91DD700B416D8 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D729F91DD700B416D8 /* RegisterAccountViewV2.h */; };
+		039AC1EA29F91DD700B416D8 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1D829F91DD700B416D8 /* NoticeViewV2.m */; };
+		039AC1EB29F91DD700B416D8 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D929F91DD700B416D8 /* BindAccountViewV2.h */; };
+		039AC1EC29F91DD700B416D8 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1DA29F91DD700B416D8 /* TermsViewV2.h */; };
+		039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1DB29F91DD700B416D8 /* AccountLoginViewV2.h */; };
+		039AC1EE29F91DD700B416D8 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1DC29F91DD700B416D8 /* MainHomeViewV2.m */; };
+		039AC1EF29F91DD700B416D8 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1DD29F91DD700B416D8 /* BindPhoneViewV2.m */; };
+		039AC1F029F91DD700B416D8 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1DE29F91DD700B416D8 /* FindPasswordViewV2.m */; };
+		039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1DF29F91DD700B416D8 /* LoginWithRegViewV2.h */; };
+		039AC1F229F91DD700B416D8 /* NoticeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E029F91DD700B416D8 /* NoticeViewV2.h */; };
+		039AC1F329F91DD700B416D8 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1E129F91DD700B416D8 /* RegisterAccountViewV2.m */; };
+		039AC1F429F91DD700B416D8 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1E229F91DD700B416D8 /* AccountLoginViewV2.m */; };
+		039AC1F529F91DD700B416D8 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1E329F91DD700B416D8 /* TermsViewV2.m */; };
+		039AC1F629F91DD700B416D8 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1E429F91DD700B416D8 /* BindAccountViewV2.m */; };
+		039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */; };
+		039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */; };
+		039AC1FE29F91E3600B416D8 /* com_miaoou_gwsg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */; };
+		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
+		039AC20029F91E3600B416D8 /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */; };
+		039AC20129F91E3600B416D8 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */; };
 		039B25F0298B555300045C53 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		039B25F2298B555300045C53 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
 		039B25F3298B555300045C53 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
@@ -1755,6 +1774,28 @@
 		0387BA80291B8DA5001BACA8 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
+		039AC1D529F91DD700B416D8 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
+		039AC1D629F91DD700B416D8 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
+		039AC1D729F91DD700B416D8 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
+		039AC1D829F91DD700B416D8 /* NoticeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewV2.m; sourceTree = "<group>"; };
+		039AC1D929F91DD700B416D8 /* BindAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountViewV2.h; sourceTree = "<group>"; };
+		039AC1DA29F91DD700B416D8 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
+		039AC1DB29F91DD700B416D8 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
+		039AC1DC29F91DD700B416D8 /* MainHomeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewV2.m; sourceTree = "<group>"; };
+		039AC1DD29F91DD700B416D8 /* BindPhoneViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneViewV2.m; sourceTree = "<group>"; };
+		039AC1DE29F91DD700B416D8 /* FindPasswordViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewV2.m; sourceTree = "<group>"; };
+		039AC1DF29F91DD700B416D8 /* LoginWithRegViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithRegViewV2.h; sourceTree = "<group>"; };
+		039AC1E029F91DD700B416D8 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
+		039AC1E129F91DD700B416D8 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
+		039AC1E229F91DD700B416D8 /* AccountLoginViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLoginViewV2.m; sourceTree = "<group>"; };
+		039AC1E329F91DD700B416D8 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
+		039AC1E429F91DD700B416D8 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
+		039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
+		039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
+		039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
+		039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
+		039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
 		039B268A298B555300045C53 /* MWSDK_V5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
@@ -2906,6 +2947,42 @@
 			path = view_v4;
 			sourceTree = "<group>";
 		};
+		039AC1D429F91DD700B416D8 /* view_v6 */ = {
+			isa = PBXGroup;
+			children = (
+				039AC1DB29F91DD700B416D8 /* AccountLoginViewV2.h */,
+				039AC1E229F91DD700B416D8 /* AccountLoginViewV2.m */,
+				039AC1D929F91DD700B416D8 /* BindAccountViewV2.h */,
+				039AC1E429F91DD700B416D8 /* BindAccountViewV2.m */,
+				039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */,
+				039AC1DD29F91DD700B416D8 /* BindPhoneViewV2.m */,
+				039AC1D629F91DD700B416D8 /* FindPasswordViewV2.h */,
+				039AC1DE29F91DD700B416D8 /* FindPasswordViewV2.m */,
+				039AC1DF29F91DD700B416D8 /* LoginWithRegViewV2.h */,
+				039AC1D529F91DD700B416D8 /* LoginWithRegViewV2.m */,
+				039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */,
+				039AC1DC29F91DD700B416D8 /* MainHomeViewV2.m */,
+				039AC1E029F91DD700B416D8 /* NoticeViewV2.h */,
+				039AC1D829F91DD700B416D8 /* NoticeViewV2.m */,
+				039AC1D729F91DD700B416D8 /* RegisterAccountViewV2.h */,
+				039AC1E129F91DD700B416D8 /* RegisterAccountViewV2.m */,
+				039AC1DA29F91DD700B416D8 /* TermsViewV2.h */,
+				039AC1E329F91DD700B416D8 /* TermsViewV2.m */,
+			);
+			path = view_v6;
+			sourceTree = "<group>";
+		};
+		039AC1F929F91E3600B416D8 /* V6 */ = {
+			isa = PBXGroup;
+			children = (
+				039AC1FA29F91E3600B416D8 /* com_miaoou_gwsg.plist */,
+				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
+				039AC1FC29F91E3600B416D8 /* com_miaoou_gwsg.json */,
+				039AC1FD29F91E3600B416D8 /* SDKResourcesV5.bundle */,
+			);
+			path = V6;
+			sourceTree = "<group>";
+		};
 		039E6E8729D9900200890B3B /* AF-v6.7.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3304,6 +3381,7 @@
 				038613752938906000CC9C44 /* view_v3 */,
 				0387B9D2291B8BBB001BACA8 /* view_v4 */,
 				0381EC54298B5677006D6100 /* view_v5 */,
+				039AC1D429F91DD700B416D8 /* view_v6 */,
 				033B32CE29D56AEE00AE9F96 /* view_vn */,
 			);
 			path = login;
@@ -3514,6 +3592,7 @@
 				035EDC1929A499F7009092F0 /* V3 */,
 				E9150D282383E6640003F1FB /* V4 */,
 				030D35FF2999F1E0001AAFC0 /* V5 */,
+				039AC1F929F91E3600B416D8 /* V6 */,
 				033B32F329D56E3200AE9F96 /* VN */,
 			);
 			path = Resources;
@@ -3530,15 +3609,24 @@
 				03509C8B29F91C8C00C840DA /* BaseCountTimerView.h in Headers */,
 				03509C8C29F91C8C00C840DA /* GamaSDK+Social.h in Headers */,
 				03509C8D29F91C8C00C840DA /* MyTextFiled.h in Headers */,
+				039AC1EC29F91DD700B416D8 /* TermsViewV2.h in Headers */,
+				039AC1F229F91DD700B416D8 /* NoticeViewV2.h in Headers */,
+				039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */,
 				03509C9129F91C8C00C840DA /* GamaThirdSocial.h in Headers */,
+				039AC1E829F91DD700B416D8 /* FindPasswordViewV2.h in Headers */,
+				039AC1EB29F91DD700B416D8 /* BindAccountViewV2.h in Headers */,
 				03509C9429F91C8C00C840DA /* UrlMode.h in Headers */,
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
+				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
+				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
 				03509C9C29F91C8C00C840DA /* BasePopupView.h in Headers */,
+				039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */,
 				03509C9E29F91C8C00C840DA /* MWSDK.h in Headers */,
+				039AC1E929F91DD700B416D8 /* RegisterAccountViewV2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4004,12 +4092,13 @@
 			files = (
 				03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */,
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
-				03509C3329F91C8100C840DA /* com_miaoou_gwsg.json in Resources */,
-				03509C3429F91C8100C840DA /* GoogleService-Info.plist in Resources */,
+				039AC1FE29F91E3600B416D8 /* com_miaoou_gwsg.plist in Resources */,
+				039AC20029F91E3600B416D8 /* com_miaoou_gwsg.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
-				03509C3629F91C8100C840DA /* SDKResourcesV5.bundle in Resources */,
+				039AC20129F91E3600B416D8 /* SDKResourcesV5.bundle in Resources */,
 				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
+				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4201,8 +4290,11 @@
 				03509CBC29F91C8C00C840DA /* AdLogger.m in Sources */,
 				03509CBD29F91C8C00C840DA /* AdDelegate.m in Sources */,
 				03509CBE29F91C8C00C840DA /* CCSDKDATA.m in Sources */,
+				039AC1EA29F91DD700B416D8 /* NoticeViewV2.m in Sources */,
+				039AC1F329F91DD700B416D8 /* RegisterAccountViewV2.m in Sources */,
 				03509CC129F91C8C00C840DA /* GameUserModel.m in Sources */,
 				03509CC229F91C8C00C840DA /* MWApplePayManager.m in Sources */,
+				039AC1E729F91DD700B416D8 /* LoginWithRegViewV2.m in Sources */,
 				03509CC429F91C8C00C840DA /* ApplePay.m in Sources */,
 				03509CC529F91C8C00C840DA /* LineDelegate.m in Sources */,
 				03509CC629F91C8C00C840DA /* GIDDelegate.m in Sources */,
@@ -4227,6 +4319,7 @@
 				03509CD929F91C8C00C840DA /* PayData.m in Sources */,
 				03509CDA29F91C8C00C840DA /* LoginData.m in Sources */,
 				03509CDB29F91C8C00C840DA /* MWSDK.m in Sources */,
+				039AC1EE29F91DD700B416D8 /* MainHomeViewV2.m in Sources */,
 				03509CDD29F91C8C00C840DA /* SdkCfUUID.m in Sources */,
 				03509CDE29F91C8C00C840DA /* GamaSDK+Social.m in Sources */,
 				03509CDF29F91C8C00C840DA /* SdkKeychainItemWrapper.m in Sources */,
@@ -4235,6 +4328,7 @@
 				03509CE229F91C8C00C840DA /* SAlertViewDelegate.m in Sources */,
 				03509CE329F91C8C00C840DA /* UIAlertController+Sdk.m in Sources */,
 				03509CE429F91C8C00C840DA /* UIColor+HexColor.m in Sources */,
+				039AC1F429F91DD700B416D8 /* AccountLoginViewV2.m in Sources */,
 				03509CE629F91C8C00C840DA /* UIColor+HexStringToColorTW.m in Sources */,
 				03509CE729F91C8C00C840DA /* UIScreen+Sdk.m in Sources */,
 				03509CE829F91C8C00C840DA /* NSString+URLEncoding.m in Sources */,
@@ -4257,12 +4351,15 @@
 				03509CF929F91C8C00C840DA /* BJBaseHTTPEngine.m in Sources */,
 				03509CFA29F91C8C00C840DA /* UIImage+ResBundle.m in Sources */,
 				03509CFB29F91C8C00C840DA /* ResReader.m in Sources */,
+				039AC1F629F91DD700B416D8 /* BindAccountViewV2.m in Sources */,
 				03509CFD29F91C8C00C840DA /* SecurityUtil.m in Sources */,
 				03509CFE29F91C8C00C840DA /* SdkSecurityFunction.m in Sources */,
 				03509CFF29F91C8C00C840DA /* PhoneInfoModel.m in Sources */,
 				03509D0029F91C8C00C840DA /* SAppleLogin.m in Sources */,
 				03509D0129F91C8C00C840DA /* TouchEventInterruptView.m in Sources */,
+				039AC1EF29F91DD700B416D8 /* BindPhoneViewV2.m in Sources */,
 				03509D0329F91C8C00C840DA /* MWWebViewController.m in Sources */,
+				039AC1F529F91DD700B416D8 /* TermsViewV2.m in Sources */,
 				03509D0529F91C8C00C840DA /* SdkUtil.m in Sources */,
 				03509D0629F91C8C00C840DA /* ConfigCoreUtil.m in Sources */,
 				03509D0729F91C8C00C840DA /* LoginHelper.m in Sources */,
@@ -4289,6 +4386,7 @@
 				03509D1C29F91C8C00C840DA /* SDKTextFiledView.m in Sources */,
 				03509D1D29F91C8C00C840DA /* LoginTypeButton.m in Sources */,
 				03509D1E29F91C8C00C840DA /* AccountListView.m in Sources */,
+				039AC1F029F91DD700B416D8 /* FindPasswordViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
