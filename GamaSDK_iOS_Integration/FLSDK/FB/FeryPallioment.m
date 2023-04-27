@@ -672,6 +672,12 @@
 
     NSArray *readPermissions = @[@"public_profile"];
     
+    if ([FBSDKAccessToken currentAccessToken]) {
+//        NSString *appID = [FBSDKAccessToken currentAccessToken].appID;
+//        NSString *appID2 = FBSDKSettings.sharedSettings.appID;
+        [self.changeKeychain logOut];
+    }
+    
     [self.changeKeychain logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
