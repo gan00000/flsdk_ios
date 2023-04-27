@@ -39,12 +39,13 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-        //        self.backgroundColor = color;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+        UIView *myView = [[UIView alloc] init];
+        [self addSubview:myView];
+        [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self);
+            make.width.mas_equalTo(VW(374));
+            make.height.mas_equalTo(VH(375));
+        }];
         
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
@@ -53,10 +54,10 @@
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
-        [self addSubview:mLoginTitleView];
+        [myView addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
-            make.leading.trailing.mas_equalTo(self);
+            make.top.mas_equalTo(myView.mas_top).mas_offset(VH(46));
+            make.leading.trailing.mas_equalTo(myView);
 //            make.width.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
         }];
@@ -66,20 +67,20 @@
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:accountSDKTextFiledView];
+        [myView addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(VW(-40));
+            make.leading.mas_equalTo(myView).mas_offset(VW(34));
+            make.trailing.mas_equalTo(myView).mas_offset(VW(-34));
             make.height.mas_equalTo(VH(40));
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
+            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(30));
             
         }];
         
         //新密码
         newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPwdSDKTextFiledView];
+        [myView addSubview:newPwdSDKTextFiledView];
         
         [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(accountSDKTextFiledView);
@@ -100,7 +101,7 @@
         getVfCodeBtn.layer.cornerRadius = VH(20);
 //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
 //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
-        [self addSubview:getVfCodeBtn];
+        [myView addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
@@ -127,7 +128,7 @@
         //驗證碼输入框
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
-        [self addSubview:vfCodeFiledView];
+        [myView addSubview:vfCodeFiledView];
         [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(getVfCodeBtn);
             make.bottom.equalTo(getVfCodeBtn);
@@ -141,7 +142,7 @@
         UIView *vfCodeFiledView_bottom_line = [[UIView alloc] init];
         vfCodeFiledView_bottom_line.hidden = YES;
         vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-        [self addSubview:vfCodeFiledView_bottom_line];
+        [myView addSubview:vfCodeFiledView_bottom_line];
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             
             //make.width.mas_equalTo(0.5);
@@ -170,16 +171,16 @@
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
 //        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
-        [okBtn.layer setCornerRadius:VH(25)];
+        [okBtn.layer setCornerRadius:VH(20)];
 //        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-        [self addSubview:okBtn];
+        [myView addSubview:okBtn];
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.top.equalTo(getVfCodeBtn.mas_bottom).mas_offset(VH(30));
             make.width.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(VH(50));
+            make.height.mas_equalTo(VH(40));
         }];
         
         

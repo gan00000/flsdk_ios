@@ -683,15 +683,20 @@
     if (deleteAccountConfireView) {
         [deleteAccountConfireView removeFromSuperview];
     }
+    UIView *delBgView = [[UIView alloc] init];
+    [self.superview addSubview:delBgView];
+    [delBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.superview);
+    }];
     
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.85];
     deleteView.layer.cornerRadius = VW(10);
     
-    [self addSubview:deleteView];
+    [delBgView addSubview:deleteView];
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self);
+        make.center.equalTo(delBgView);
         make.width.mas_equalTo(VW(272));
     }];
     
@@ -741,7 +746,7 @@
         make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
     }];
     
-    deleteAccountConfireView = deleteView;
+    deleteAccountConfireView = delBgView;
     return deleteAccountConfireView;
     
 }
