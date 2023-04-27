@@ -209,7 +209,7 @@
         }
             break;
         case 4:
-            [[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
+            [[MWSDK share] trackEventWithEventName:@"CHECK_UPDATE"];
             break;
 
         case 5:{

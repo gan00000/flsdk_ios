@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		03346E5229FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */; };
 		03509C2A29F91C8100C840DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03509C2B29F91C8100C840DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03509C2C29F91C8100C840DA /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -341,6 +342,7 @@
 		03315B98291BA16000A92FBE /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
+		03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 79a6fc9c9c51ba3ec52a4ce472a285cd.txt; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
@@ -934,6 +936,7 @@
 		039AC1F929F91E3600B416D8 /* V6 */ = {
 			isa = PBXGroup;
 			children = (
+				03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */,
 				039AC1FC29F91E3600B416D8 /* SdkV6202304.json */,
 				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
 				039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */,
@@ -1639,6 +1642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */,
+				03346E5229FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt in Resources */,
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
 				039AC20029F91E3600B416D8 /* SdkV6202304.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
