@@ -567,7 +567,7 @@ static dispatch_once_t onceToken;
 //    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
     
     NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+//    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
     return textContent;
 }
 

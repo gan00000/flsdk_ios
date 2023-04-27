@@ -94,7 +94,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
-        _shareSP.sdkBaseEncryptKey = @"SeaSdkV6-20230427";
+        _shareSP.sdkBaseEncryptKey = @"SdkV6202304";
     });
     
     return _shareSP;
@@ -682,6 +682,12 @@
 //
 //        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
     }
+}
+
+
+- (NSString *)decryptMsString:(NSString *)data
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:data];
 }
 
 

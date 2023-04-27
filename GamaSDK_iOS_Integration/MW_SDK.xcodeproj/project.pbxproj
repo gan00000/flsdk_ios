@@ -253,7 +253,7 @@
 		039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */; };
 		039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */; };
 		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
-		039AC20029F91E3600B416D8 /* SeaSdkV6-20230427.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* SeaSdkV6-20230427.json */; };
+		039AC20029F91E3600B416D8 /* SdkV6202304.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* SdkV6202304.json */; };
 		039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */; };
 		039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
 /* End PBXBuildFile section */
@@ -386,7 +386,7 @@
 		039AC1E529F91DD700B416D8 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
 		039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
 		039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		039AC1FC29F91E3600B416D8 /* SeaSdkV6-20230427.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "SeaSdkV6-20230427.json"; sourceTree = "<group>"; };
+		039AC1FC29F91E3600B416D8 /* SdkV6202304.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SdkV6202304.json; sourceTree = "<group>"; };
 		039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV6.bundle; sourceTree = "<group>"; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
@@ -934,7 +934,7 @@
 		039AC1F929F91E3600B416D8 /* V6 */ = {
 			isa = PBXGroup;
 			children = (
-				039AC1FC29F91E3600B416D8 /* SeaSdkV6-20230427.json */,
+				039AC1FC29F91E3600B416D8 /* SdkV6202304.json */,
 				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
 				039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */,
 			);
@@ -1640,7 +1640,7 @@
 			files = (
 				03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */,
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
-				039AC20029F91E3600B416D8 /* SeaSdkV6-20230427.json in Resources */,
+				039AC20029F91E3600B416D8 /* SdkV6202304.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
 				039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */,
 				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
@@ -1852,7 +1852,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1880,11 +1880,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
