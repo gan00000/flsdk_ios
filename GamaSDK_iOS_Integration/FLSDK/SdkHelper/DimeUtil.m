@@ -97,8 +97,8 @@
         if (w_rate > 1.4) {
             w_rate = 1.4;
         }
-        _viewAdaptRate = w_rate;
-        
+        _viewAdaptRate = floor(w_rate * 100) / 100;
+
     }else{
         
 //        CGFloat designRate = 667.0/375.0;
@@ -115,6 +115,7 @@
             sdkHeight = 500.0;
         }
         CGFloat deviceRate = sdkHeight / 375.0 * 0.9;
+        deviceRate = floor(deviceRate * 100) / 100;
         _viewAdaptRate = deviceRate;
     }
     return _viewAdaptRate;
