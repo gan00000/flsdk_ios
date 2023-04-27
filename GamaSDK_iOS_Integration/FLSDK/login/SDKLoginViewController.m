@@ -204,7 +204,8 @@
         [self.view addSubview:_sdkContentView];
         [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            if([@"v_vn" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
+            if([@"v_vn" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
+               [@"v6" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
                 
                 //make.edges.mas_equalTo(self.view);
                 make.centerX.equalTo(@(0));

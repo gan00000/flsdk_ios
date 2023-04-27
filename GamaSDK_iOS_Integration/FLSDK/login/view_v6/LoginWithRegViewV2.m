@@ -7,6 +7,7 @@
 //
 
 #import "LoginWithRegViewV2.h"
+#import "UIView+BlockGesture.h"
 
 @interface LoginWithRegViewV2()
 
@@ -25,6 +26,7 @@
     
     UIButton *backBtn;
     
+    UIView *deleteBtnView;
 }
 
 
@@ -41,25 +43,34 @@
 
 -(void)addView_MMMethodMMM
 {
-//    UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-//    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-//    self.layer.cornerRadius = 10; //设置圆角
-//    self.layer.masksToBounds = YES;
+    
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if (mConfigModel.deleteAccount) {
+        [self addDeleteAccountView_MMMethodMMM];
+    }
+
+    UIView *myView = [[UIView alloc] init];
+    [self addSubview:myView];
+    [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if(deleteBtnView && !deleteBtnView.isHidden){
+            make.centerX.mas_equalTo(self);
+            make.centerY.mas_equalTo(self).mas_offset(VH(-12));
+        }else{
+            make.center.mas_equalTo(self);
+        }
+        
+        make.width.mas_equalTo(VW(374));
+        make.height.mas_equalTo(VH(375));
+    }];
     
     UIView *tabView = [[UIView alloc] init];
-//    tabView.layer.cornerRadius = 4; //设置圆角
-//    tabView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww_ff3a3b].CGColor;
-//    tabView.layer.borderWidth = 0.8;
-//    tabView.layer.masksToBounds = YES;
-    
-    
-    [self addSubview:tabView];
+    [myView addSubview:tabView];
     [tabView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(self).mas_offset(VW(102));
-//        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
-        make.centerX.mas_equalTo(self);
+//        make.leading.mas_equalTo(self).mas_offset(VW(34));
+//        make.trailing.mas_equalTo(self).mas_offset(VW(-34));
+        make.centerX.mas_equalTo(myView);
 //        make.width.mas_equalTo(self).offset(-VW(102));
-        make.top.mas_equalTo(VH(MARGIN_TOP));
+        make.top.mas_equalTo(VH(20));
 //        make.height.mas_equalTo(VH(40));
     }];
     
@@ -72,8 +83,8 @@
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
-        make.centerX.mas_equalTo(self.mas_leading).mas_offset(VW(100+16));
-//        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
+//        make.centerX.mas_equalTo(tabView.mas_leading).mas_offset(VW(100+16));
+//        make.trailing.mas_equalTo(tabView.mas_centerX);
     }];
     
     
@@ -84,9 +95,9 @@
     [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
-//        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
+        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(50));
         make.trailing.mas_equalTo(tabView);
-        make.centerX.mas_equalTo(self.mas_trailing).mas_offset(-VW(100+16));
+//        make.centerX.mas_equalTo(tabView.mas_trailing).mas_offset(-VW(100+16));
 
     }];
     
@@ -110,7 +121,7 @@
         
         make.leading.trailing.mas_equalTo(regTabBtn);
 //        make.centerX.mas_equalTo(regTabBtn);
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.top.mas_equalTo(regTabBtn.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
     }];
@@ -118,12 +129,12 @@
     //返回按钮
     backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [self addSubview:backBtn];
+    [myView addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerY.mas_equalTo(tabView);
 //        make.trailing.mas_equalTo(tabView.mas_leading).mas_offset(VW(82));
-        make.leading.mas_equalTo(self).mas_offset(VW(34));
+        make.leading.mas_equalTo(myView).mas_offset(VW(34));
         
         make.width.height.mas_equalTo(VW(25));
     }];
@@ -137,18 +148,18 @@
     [regTabBtn setSelected:NO];
     
     self.mAccountLoginView = [[AccountLoginViewV2 alloc] initView_MMMethodMMM];
-    [self addSubview:self.mAccountLoginView];
+    [myView addSubview:self.mAccountLoginView];
     [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.leading.bottom.trailing.mas_equalTo(myView);
+        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
 
     }];
     
     self.mRegisterAccountView = [[RegisterAccountViewV2 alloc] initView_MMMethodMMM];
-    [self addSubview:self.mRegisterAccountView];
+    [myView addSubview:self.mRegisterAccountView];
     [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.leading.bottom.trailing.mas_equalTo(myView);
+        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
     }];
     
     self.mRegisterAccountView.hidden = YES;
@@ -242,6 +253,10 @@
         self.mAccountLoginView.hidden = NO;
         self.mRegisterAccountView.hidden = NO;
         
+        if(deleteBtnView){
+            deleteBtnView.hidden = NO;
+        }
+        
 //        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(-self.frame.size.width, 0);
 //        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(0, 0);
         
@@ -272,7 +287,9 @@
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
         
-
+        if(deleteBtnView){
+            deleteBtnView.hidden = YES;
+        }
 //        self.mAccountLoginView.transform = CGAffineTransformMakeTranslation(0, 0);
 //        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
         [UIView animateWithDuration:0.6 animations:^{
@@ -288,4 +305,47 @@
         
     }
 }
+
+-(void)addDeleteAccountView_MMMethodMMM
+{
+    UIView *deleteView = [[UIView alloc] init];
+    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView.layer.cornerRadius = VW(14);
+    
+    [self addSubview:deleteView];
+    
+    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.mas_equalTo(self.mas_bottom);
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+        make.centerX.equalTo(self);
+//        make.height.mas_equalTo(VH(28));
+    }];
+    
+    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
+    [deleteView addSubview:deleteIV];
+    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView);
+        make.width.height.mas_equalTo(VW(15));
+    }];
+    
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    [deleteView addSubview:delLabel];
+    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView);
+       
+    }];
+    
+    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [self.mAccountLoginView addDeleteAccountConfireView_MMMethodMMM];
+    }];
+    
+    deleteBtnView = deleteView;
+}
+
 @end

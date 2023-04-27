@@ -111,8 +111,8 @@
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             // make.centerX.mas_equalTo(self);
             make.top.equalTo(self);
-            make.leading.mas_equalTo(self).mas_offset(VW(40));
-            make.trailing.mas_equalTo(self).mas_offset(-VW(40));
+            make.leading.mas_equalTo(self).mas_offset(VW(34));
+            make.trailing.mas_equalTo(self).mas_offset(-VW(34));
             make.height.mas_equalTo(VH(40));
         }];
         
@@ -139,7 +139,7 @@
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(7));
+            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(8));
             //            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
             //            make.width.mas_equalTo(VW(140));
         }];
@@ -242,7 +242,7 @@
         
         CGFloat btn_w = VW(34);
         CGFloat btn_h = btn_w;
-        CGFloat margin_leading = VW(24);
+        CGFloat margin_leading = VW(35);
         
         NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:YES];
         UIView *leadingView = otherLabelTips;
@@ -281,7 +281,7 @@
                     make.bottom.mas_equalTo(loginTypeView);
                     
                     if (i == 0) {
-                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(8));
+                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(12));
                     }else{
                         make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
                     }
@@ -297,9 +297,9 @@
             
         }
         
-        if (mConfigModel.deleteAccount) {
-            [self addDeleteAccountView_MMMethodMMM];
-        }
+//        if (mConfigModel.deleteAccount) {
+//            [self addDeleteAccountView_MMMethodMMM];
+//        }
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
@@ -747,56 +747,56 @@
 }
 
 
--(void)addDeleteAccountView_MMMethodMMM
-{
-    UIView *deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(14);
-    
-    [self addSubview:deleteView];
-    
-    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.mas_bottom);
-//        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
-        make.centerX.equalTo(self);
-//        make.height.mas_equalTo(VH(28));
-    }];
-    
-    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
-    [deleteView addSubview:deleteIV];
-    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
-        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
-        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
-        make.centerY.equalTo(deleteView);
-        make.width.height.mas_equalTo(VW(15));
-    }];
-    
-    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
-    [deleteView addSubview:delLabel];
-    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
-        make.centerY.equalTo(deleteView);
-       
-    }];
-    
-    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        
-        if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
-            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
-            return;
-        }
-        [self addDeleteAccountConfireView_MMMethodMMM];
-       
-    }];
-    
-    deleteBtnView = deleteView;
-}
+//-(void)addDeleteAccountView_MMMethodMMM
+//{
+//    UIView *deleteView = [[UIView alloc] init];
+//    deleteView.backgroundColor = UIColor.whiteColor;
+//    deleteView.layer.cornerRadius = VW(14);
+//
+//    [self addSubview:deleteView];
+//
+//    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.mas_equalTo(self.mas_bottom);
+////        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+//        make.centerX.equalTo(self);
+////        make.height.mas_equalTo(VH(28));
+//    }];
+//
+//    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
+//    [deleteView addSubview:deleteIV];
+//    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+//        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+//        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+//        make.centerY.equalTo(deleteView);
+//        make.width.height.mas_equalTo(VW(15));
+//    }];
+//
+//    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+//    [deleteView addSubview:delLabel];
+//    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
+//        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+//        make.centerY.equalTo(deleteView);
+//
+//    }];
+//
+//    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+//
+//        if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+//            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
+//            return;
+//        }
+//        [self addDeleteAccountConfireView_MMMethodMMM];
+//
+//    }];
+//
+//    deleteBtnView = deleteView;
+//}
 
 - (void)doDeleteAccount_MMMethodMMM {
     
-    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+    if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
         [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
         return;
     }
