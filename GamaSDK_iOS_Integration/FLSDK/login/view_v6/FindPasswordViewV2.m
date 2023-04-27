@@ -56,7 +56,7 @@
         
         [myView addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(myView.mas_top).mas_offset(VH(46));
+            make.top.mas_equalTo(myView.mas_top).mas_offset(VH(20));
             make.leading.trailing.mas_equalTo(myView);
 //            make.width.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
