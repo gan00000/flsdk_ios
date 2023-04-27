@@ -94,6 +94,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
+        _shareSP.sdkBaseEncryptKey = @"SeaSdkV6-20230427";
     });
     
     return _shareSP;
