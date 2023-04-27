@@ -1,4 +1,4 @@
-{   "af_dev_key" : "NvC8XhFCMEkhSnriXG4jjL",
+{   "af_dev_key" : "a",
     "sdk_ad_bug" : "0",
     "appKey" : "f4c597bf11c5359fe60459b51435f359",
     "gameCode" : "gwsgios",
@@ -11,7 +11,7 @@
     "sdk_url_log" : "https://log.dustyx.com/",
     "sdk_url_login" : "https://login.dustyx.com/",
     "sdk_url_pay" : "https://pay.dustyx.com/",
-    "sdk_v_version" : "v3",
+    "sdk_v_version" : "v6",
     "terms_service_url" : "https://member.dustyx.com/sdk/agreement/%@_agreement.html"
     
 }
