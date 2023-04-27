@@ -86,6 +86,12 @@
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
     NSArray *readPermissions = @[wwwww_tag_wwwww_public_profile];
     
+    if ([FBSDKAccessToken currentAccessToken]) {
+//        NSString *appID = [FBSDKAccessToken currentAccessToken].appID;
+//        NSString *appID2 = FBSDKSettings.sharedSettings.appID;
+        [self.loginManager logOut];
+    }
+    
     [self.loginManager logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
