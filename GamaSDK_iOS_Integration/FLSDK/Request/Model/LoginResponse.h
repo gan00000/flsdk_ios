@@ -7,12 +7,12 @@
 
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "InformationicAttackaceous.h"
 #import "AccountModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : InformationicAttackaceous
 
 
 
