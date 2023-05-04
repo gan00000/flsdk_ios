@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wlzhsios</string>
-				<string>fb1579764119125351</string>
+				<string>sshxios</string>
+				<string>fb958518928627930</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -39,7 +39,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.568527028568-on35gvgf9q0v9t5ehaau48g1aobhrg8g</string>
+				<string>com.googleusercontent.apps.267037747590-aou57ianef41ct87vaigq3fphqh235bj</string>
 			</array>
 		</dict>
 	</array>
@@ -48,13 +48,13 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>1579764119125351</string>
+	<string>958518928627930</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>6bcdce136dafb7381c5d80d3d4f67d7e</string>
+	<string>70dee7e2899286d3b410c2af8530b899</string>
 	<key>FacebookDisplayName</key>
-	<string>哈哈我的</string>
+	<string>游戏名字</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -69,7 +69,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1657186918</string>
+		<string>1661039753</string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>

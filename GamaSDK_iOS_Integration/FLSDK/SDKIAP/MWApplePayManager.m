@@ -231,7 +231,7 @@
          }
           [stinguineHenunderstandarium enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
               if (idx <= 5076) {
-                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
+//                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
             }
           }];
 		}
