@@ -256,6 +256,13 @@
 		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
 		039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */; };
 		039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
+		03E01A652A03ABAA002E752F /* ReceivesivePhosstateful.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* ReceivesivePhosstateful.m */; };
+		03E01A702A03AD72002E752F /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
+		03E01A712A03AD74002E752F /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8B29D9900200890B3B /* FBSDKCoreKit.xcframework */; };
+		03E01A722A03AD78002E752F /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8C29D9900200890B3B /* FBSDKLoginKit.xcframework */; };
+		03E01A732A03AD7A002E752F /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8D29D9900200890B3B /* FBAEMKit.xcframework */; };
+		03E01A742A03AD7C002E752F /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8E29D9900200890B3B /* FBSDKCoreKit_Basics.xcframework */; };
+		03E01AC52A03B2A2002E752F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F5210E2A03A2B700DDFA8E /* NSString+EveryoneeerPravnetworkior.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+EveryoneeerPravnetworkior.h */; };
 		03F5210F2A03A2B700DDFA8E /* ServialServeaceousView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* ServialServeaceousView.h */; };
 		03F521102A03A2B700DDFA8E /* GamaSDK+ThalasspushastChildcy.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+ThalasspushastChildcy.h */; };
@@ -317,7 +324,6 @@
 		03F521492A03A2B700DDFA8E /* TheoryeerMulctitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* TheoryeerMulctitive.m */; };
 		03F5214A2A03A2B700DDFA8E /* WallaturePavidacious.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* WallaturePavidacious.m */; };
 		03F5214B2A03A2B700DDFA8E /* TrecentlingGreatfication.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* TrecentlingGreatfication.m */; };
-		03F5214C2A03A2B700DDFA8E /* ReceivesivePhosstateful.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* ReceivesivePhosstateful.m */; };
 		03F5214D2A03A2B700DDFA8E /* CarboallyCondi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* CarboallyCondi.m */; };
 		03F5214E2A03A2B700DDFA8E /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; };
 		03F5214F2A03A2B700DDFA8E /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; };
@@ -901,6 +907,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E01A712A03AD74002E752F /* FBSDKCoreKit.xcframework in Frameworks */,
+				03E01A722A03AD78002E752F /* FBSDKLoginKit.xcframework in Frameworks */,
+				03E01A732A03AD7A002E752F /* FBAEMKit.xcframework in Frameworks */,
+				03E01A702A03AD72002E752F /* FBSDKShareKit.xcframework in Frameworks */,
+				03E01A742A03AD7C002E752F /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1722,6 +1733,7 @@
 				03F5210E2A03A2B700DDFA8E /* NSString+EveryoneeerPravnetworkior.h in Headers */,
 				03F5210F2A03A2B700DDFA8E /* ServialServeaceousView.h in Headers */,
 				03F521102A03A2B700DDFA8E /* GamaSDK+ThalasspushastChildcy.h in Headers */,
+				03E01AC52A03B2A2002E752F /* MWStringHeaders.h in Headers */,
 				03F521112A03A2B700DDFA8E /* DesHalfryTextFiled.h in Headers */,
 				03F521122A03A2B700DDFA8E /* CoachManageView.h in Headers */,
 				03F521132A03A2B700DDFA8E /* LegalfierWideitorView.h in Headers */,
@@ -2065,6 +2077,7 @@
 				03F5213B2A03A2B700DDFA8E /* NSData+ImageContentType.m in Sources */,
 				03F5213C2A03A2B700DDFA8E /* UrlMode.m in Sources */,
 				03F5213D2A03A2B700DDFA8E /* UIImageView+WebCache.m in Sources */,
+				03E01A652A03ABAA002E752F /* ReceivesivePhosstateful.m in Sources */,
 				03F5213E2A03A2B700DDFA8E /* UIView+WebCacheOperation.m in Sources */,
 				03F5213F2A03A2B700DDFA8E /* UIButton+WebCache.m in Sources */,
 				03F521402A03A2B700DDFA8E /* HerselfativeElsefold.m in Sources */,
@@ -2079,7 +2092,6 @@
 				03F521492A03A2B700DDFA8E /* TheoryeerMulctitive.m in Sources */,
 				03F5214A2A03A2B700DDFA8E /* WallaturePavidacious.m in Sources */,
 				03F5214B2A03A2B700DDFA8E /* TrecentlingGreatfication.m in Sources */,
-				03F5214C2A03A2B700DDFA8E /* ReceivesivePhosstateful.m in Sources */,
 				03F5214D2A03A2B700DDFA8E /* CarboallyCondi.m in Sources */,
 				03F5214E2A03A2B700DDFA8E /* AccountModel.m in Sources */,
 				03F5214F2A03A2B700DDFA8E /* LoginResponse.m in Sources */,
@@ -2199,12 +2211,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HV58YUG5XP;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -2227,11 +2240,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wxgy.sshx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "sshx-dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2271,6 +2284,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -2347,6 +2361,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2418,6 +2433,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2513,6 +2529,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2584,6 +2601,7 @@
 					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/Firebase-v10.4.0/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
