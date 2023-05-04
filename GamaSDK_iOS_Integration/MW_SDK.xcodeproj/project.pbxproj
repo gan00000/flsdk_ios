@@ -255,7 +255,7 @@
 		039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */; };
 		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
 		039AC20029F91E3600B416D8 /* SdkV6202304.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* SdkV6202304.json */; };
-		039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */; };
+		039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */; };
 		039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
 /* End PBXBuildFile section */
 
@@ -389,7 +389,7 @@
 		039AC1E629F91DD700B416D8 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
 		039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		039AC1FC29F91E3600B416D8 /* SdkV6202304.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SdkV6202304.json; sourceTree = "<group>"; };
-		039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV6.bundle; sourceTree = "<group>"; };
+		039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SSHXRESV6.bundle; sourceTree = "<group>"; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
 		039E6E8829D9900200890B3B /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
@@ -939,7 +939,7 @@
 				03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */,
 				039AC1FC29F91E3600B416D8 /* SdkV6202304.json */,
 				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
-				039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */,
+				039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */,
 			);
 			path = V6;
 			sourceTree = "<group>";
@@ -1646,7 +1646,7 @@
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
 				039AC20029F91E3600B416D8 /* SdkV6202304.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
-				039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */,
+				039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */,
 				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
 				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
