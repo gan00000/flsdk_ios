@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray<ConfigModel *> *subVersion;
 
 @property (nonatomic,strong) UrlMode *url;
+@property (nonatomic, strong) NSData *platymilitaryernCandidateization;//===insert my property===
+
+@property (nonatomic, strong) NSDictionary *forgetisticBehaviory;//===insert my property===
+
 @end
 
 NS_ASSUME_NONNULL_END

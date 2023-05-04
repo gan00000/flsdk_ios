@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIButton *)initBtnWithType_MMMethodMMM:(BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target;
 
++ (BOOL)figPar:(NSInteger)fig_1 formantSacchar:(NSDictionary *)formant_2;//insert method def
++ (UIButton *)carboallyMostary:(float)carboally_1 centuryierMediaage:(NSObject *)centuryier_2 rhombentCommonan:(UIButton *)rhombent_3 salubrLysisoon:(long)salubr_4 heredetySevenier:(NSString *)heredety_5 oramerMachinful:(NSString *)oramer_6 upidFratrence:(NSData *)upid_7;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

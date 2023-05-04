@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initView_MMMethodMMM;
 
+- (NSInteger)nightitionFamily;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

@@ -179,5 +179,9 @@ completionHandler:(SDKPayBlock) handler;
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
 - (NSString *)decryptMsString:(NSString *)data;
+- (NSObject *)minindeedPolicyness:(CGFloat)minindeed_1 airaireAvoidacle:(NSInteger)airaire_2 momentanFoldivity:(CGFloat)momentan_3 sistdealacyCurr:(BOOL)sistdealacy_4 effortistTenaciism:(NSObject *)effortist_5 dooralityTers:(long)doorality_6;//insert method def
+- (void)pictHerselfty:(NSString *)pict_1 wayastStigive:(NSMutableDictionary *)wayast_2 fulminOwnfold:(NSDictionary *)fulmin_3 efwiseAgonation:(NSData *)efwise_4;//insert method def
+- (NSInteger)buildingianFabpeacefic:(BOOL)buildingian_1 agrVororium:(NSMutableDictionary *)agr_2 mouthTherinearosity:(long)mouth_3 caesitudeMatterery:(NSMutableDictionary *)caesitude_4 internationalalityPrimocandidate:(CGFloat)internationalality_5;//insert method def
+- (NSInteger)economicardCaulimomentful:(NSString *)economicard_1 periodisticArcha:(float)periodistic_2 nutriCantth:(UIApplication *)nutri_3;//insert method def
 @end
 

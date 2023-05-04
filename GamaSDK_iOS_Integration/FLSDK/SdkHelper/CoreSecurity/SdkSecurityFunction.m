@@ -66,6 +66,20 @@ static char gamaDecodingTable[128];
 {
     
     if ((string == NULL) || (inputLength % 4 != 0)) {
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		      int consideralSerot = 6418;
+      NSMutableDictionary *federaldomAcetolike = [NSMutableDictionary dictionaryWithCapacity:4260];
+      consideralSerot += 4820;
+      [federaldomAcetolike setObject: @(consideralSerot) forKey:@"cidtyEightture"];
+      int nomintionNoctuous = (int)consideralSerot;
+      if (nomintionNoctuous > 8693) {
+            nomintionNoctuous *= 3346;
+      }
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
         return nil;
     }
     
@@ -74,18 +88,117 @@ static char gamaDecodingTable[128];
     }
     
     NSInteger outputLength = inputLength * 3 / 4;
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		        
+        double mellicSoliization = 119.0;
+        if (@(mellicSoliization).doubleValue >= 8088) {}
+        
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
     NSMutableData* data = [NSMutableData dataWithLength:outputLength];
     uint8_t* output = data.mutableBytes;
     
     NSInteger inputPoint = 0;
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		        NSArray * idemostSeteer = [NSArray arrayWithObjects:@(6350), @(1052), @"militaryessCostlasto", @"cardirealyEightsive", nil];
+        if ([idemostSeteer containsObject:@"cyanticVidinformationition"]) {
+            BOOL loteryPsychruntilsive = YES;
+            if (loteryPsychruntilsive){
+                idemostSeteer = [NSMutableArray array];
+            }
+        }
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
     NSInteger outputPoint = 0;
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		        
+        NSArray *annsystemlingWatchness = @[@"keyible_spons", @"bloodable_nuncial", @"everism_suddenly", @"cellture_benefitless", @"vollence_ideivity", @"caulimomentful_caldair", @"bookity_recognizeitious", @"lenidebateian_gonoer", @"blastition_towardsive", @"soldier_nigrature" ];
+        for (NSString *supportnessModelics in annsystemlingWatchness){
+            break;
+        }
+
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
     while (inputPoint < inputLength)
     {
         char i0 = string[inputPoint++];
         char i1 = string[inputPoint++];
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		        
+        NSArray *taxnessSalic = @[@"stultiproof_rigdatafold", @"applyier_monilious", @"ordlike_duraneity", @"alongacious_cataose", @"weaponate_amplpullosity", @"lineair_throughoutfic", @"monstrateur_simibest", @"cubfewy_despiteety", @"ideivity_allic", @"rumpcy_pteryweaponuous", @"corollation_western", @"atist_pectoral", @"adulteur_sup", @"felinless_subia", @"sellist_crevanysion" ];
+        for (NSString *coldernPaindom in taxnessSalic){
+            break;
+        }
+
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
         char i2 = inputPoint < inputLength ? string[inputPoint++] : 'A';
         char i3 = inputPoint < inputLength ? string[inputPoint++] : 'A';
         output[outputPoint++] = (gamaDecodingTable[i0] << 2) | (gamaDecodingTable[i1] >> 4);
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		        if (!(outputPoint)){
+
+            int sequabilityLinency = 5539;
+            int idiGelatdetailment = 3373;
+            int deadion = 313;
+            switch (sequabilityLinency) {
+                    
+                case 408:
+			{
+				idiGelatdetailment = deadion - 649 + 494; 
+			 break;
+			}
+			case 919:
+			{
+				idiGelatdetailment = deadion - 639 * 262 - 96 - 873; 
+			 break;
+			}
+			case 370:
+			{
+				idiGelatdetailment = deadion + 314 + 252 - 643 - 102 * 305 + 308; 
+			 break;
+			}
+			case -62:
+			{
+				idiGelatdetailment = deadion - 808 / 860 + 585 * 262 / 305; 
+			 break;
+			}
+			case 686:
+			{
+				idiGelatdetailment = deadion - 544 + 989 - 170 - 14 * 199; 
+			 break;
+			}
+			case 33:
+			{
+				idiGelatdetailment = deadion * 856 + 80; 
+			 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float solenPlodish = idiGelatdetailment - 764;
+        }
+
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
         if (outputPoint < outputLength)
         {
             output[outputPoint++] = ((gamaDecodingTable[i1] & 0xf) << 4) | (gamaDecodingTable[i2] >> 2);
@@ -129,6 +242,20 @@ static char gamaDecodingTable[128];
     NSUInteger dataLength = [self length];
     
     size_t bufferSize = dataLength + kCCBlockSizeAES128;
+
+		//====insert my code start===  2023-05-04 15:54:51
+		{
+		      int tremaibilityPiteeer = 1563;
+      NSMutableDictionary *anxificationDebateenne = [NSMutableDictionary dictionaryWithCapacity:8090];
+      tremaibilityPiteeer += 6056;
+      [anxificationDebateenne setObject: @(tremaibilityPiteeer) forKey:@"thalasspushastBisen"];
+      int treatfactionSeptuagener = (int)tremaibilityPiteeer;
+      if (treatfactionSeptuagener <= 8085) {
+            treatfactionSeptuagener *= 1145;
+      }
+		}
+		//====insert my code end===  2023-05-04 15:54:51
+
     
     void * buffer = malloc(bufferSize);
     

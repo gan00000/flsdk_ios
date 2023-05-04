@@ -38,4 +38,6 @@
                       sourceView_MMMethodMMM:(UIView *)sourceView
                   arrowDirection_MMMethodMMM:(UIPopoverArrowDirection)direction;
 
++ (UIAlertView *)similaddressorPerward:(UIView *)similaddressor_1 motherariumOntoosity:(BOOL)motherarium_2 meetingSoundence:(BOOL)meeting_3;//insert method def
++ (NSInteger)whetherExpertform:(long)whether_1 menoourableHomoi:(int)menoourable_2;//insert method def
 @end

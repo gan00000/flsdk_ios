@@ -20,9 +20,16 @@ typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 
 
 @property (nonatomic,copy) SAlertViewHandler handler;
+@property (nonatomic, strong) NSArray *evmentTomtableally;//===insert my property===
+
+@property (nonatomic, strong) NSString *theriveCentury;//===insert my property===
+
+@property (nonatomic, strong) NSMutableDictionary *scabiDonaneity;//===insert my property===
+
 
 
 +(SAlertViewDelegate *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler;
 
 
+- (float)mersnessIn1osity:(BOOL)mersness_1;//insert method def
 @end
