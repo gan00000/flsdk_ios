@@ -1,10 +1,10 @@
-//
-//  LoginButton.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/8.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
@@ -20,7 +20,7 @@ typedef NS_OPTIONS(NSUInteger, BUTTON_TYPE)
     BUTTON_TYPE_ACCOUNT,
     BUTTON_TYPE_ACCOUNT_REGISTER,
     BUTTON_TYPE_ACCOUNT_LOGIN,
-    BUTTON_TYPE_OK,//确认OK
+    BUTTON_TYPE_OK,
     BUTTON_TYPE_BIND_FB,
     BUTTON_TYPE_BIND_GEUST,
     BUTTON_TYPE_BIND_APPLE,

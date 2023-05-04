@@ -1,10 +1,10 @@
-//
-//  TermsView.m
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "TermsViewV2.h"
 #import "SdkUtil.h"
@@ -21,14 +21,14 @@
 
 @implementation TermsViewV2
 {
-//    UIButton *serverTermsBtn;
-//    UIButton *privacyPolicyBtn;
-//    UIButton *agreeBtn;
 
-//    UIButton *agreeBtn2;
+
+
+
+
     
     WKWebView *provisionWebView;
-//    BOOL isAgree;
+
     
 }
 
@@ -47,10 +47,10 @@
     self = [super init];
     if (self) {
         
-//        UIColor *color = [UIColor whiteColor];
-//        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-//        self.layer.cornerRadius = 10; //设置圆角
-//        self.layer.masksToBounds = YES;
+
+
+
+
         
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.1];
         
@@ -68,8 +68,8 @@
     UIView *contentView = [[UIView alloc] init];
     
     UIColor *color = [UIColor whiteColor];
-    contentView.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-    contentView.layer.cornerRadius = 10; //设置圆角
+    contentView.backgroundColor = color;
+    contentView.layer.cornerRadius = 10; 
     contentView.layer.masksToBounds = YES;
     
     [self addSubview:contentView];
@@ -86,8 +86,8 @@
         make.top.mas_equalTo(contentView.mas_top).mas_offset(VH(10));
         make.leading.mas_equalTo(contentView).mas_offset(VW(15));
         make.trailing.mas_equalTo(contentView).mas_offset(VW(-15));
-//        make.width.mas_equalTo(self);
-//        make.height.mas_equalTo(VH(40));
+
+
     }];
     
     UIView *tagView = [[UIView alloc] init];
@@ -98,7 +98,7 @@
         make.leading.mas_equalTo(titleView);
         make.width.mas_equalTo(VW(4));
         make.height.mas_equalTo(VH(14));
-//        make.top.mas_equalTo(titleView);
+
         make.bottom.mas_equalTo(titleView);
     }];
     
@@ -108,7 +108,7 @@
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(titleView);
+
         make.leading.mas_equalTo(titleView).mas_offset(6);
         make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView);
@@ -123,7 +123,7 @@
     
     [contentView addSubview:closeBtn];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(titleView);
+
         make.leading.mas_equalTo(contentView).mas_offset(VW(15));;
         make.bottom.mas_equalTo(contentView.mas_bottom).mas_offset(-VH(10));
         make.width.mas_equalTo(VW(94));
@@ -134,12 +134,12 @@
     
     okBtn.layer.cornerRadius = VH(16);
     okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-//    okBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-//    okBtn.layer.borderWidth = 0.5;
+
+
     
     [contentView addSubview:okBtn];
     [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(titleView);
+
         make.trailing.mas_equalTo(contentView).mas_offset(-VW(15));
         make.bottom.mas_equalTo(closeBtn.mas_bottom);
         make.width.mas_equalTo(VW(190));
@@ -154,7 +154,7 @@
     
     
     UIView *xView = [[UIView alloc] init];
-    //xView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_E4E4E4];
+    
     xView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_DEDEDE].CGColor;
     xView.layer.borderWidth = 0.6;
     [contentView addSubview:xView];
@@ -166,17 +166,17 @@
     }];
 
 
-//    UIView *contentView = [[UIView alloc] init];
-//    contentView.backgroundColor = [UIColor whiteColor];
-//    contentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_545454].CGColor;
-//    contentView.layer.borderWidth = 0.8;
-//    [xView addSubview:contentView];
-//    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(xView);
-//    }];
 
-    //        https://member.flyfungame.com/sdk/archive.html   服務條款
-    //        https://member.flyfungame.com/sdk/privacy.html   隱私政策
+
+
+
+
+
+
+
+
+    
+    
     
     NSString * url = SDK_DATA.urls.agreementUrl;
     if (!url || [@"" isEqualToString:url]) {
@@ -188,7 +188,7 @@
     [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     [provisionWebView.scrollView setBounces:YES];
     [provisionWebView.scrollView setScrollEnabled:YES];
-//    [provisionWebView setUserInteractionEnabled:YES];
+
     [xView addSubview:provisionWebView];
     [provisionWebView mas_makeConstraints:^(MASConstraintMaker *make) {
 
@@ -202,7 +202,7 @@
 {
    
     switch (sender.tag) {
-        case 11://點擊服務條款
+        case 11:
             break;
         case TAG_CLOSE:
             [self removeFromSuperview];

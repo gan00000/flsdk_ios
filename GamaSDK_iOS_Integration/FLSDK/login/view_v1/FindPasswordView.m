@@ -1,10 +1,10 @@
-//
-//  FindPasswordView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "FindPasswordView.h"
 #import "SdkHeader.h"
@@ -23,7 +23,7 @@
     SDKTextFiledView *againPwdSDKTextFiledView;
     
     SDKTextFiledView *vfCodeFiledView;
-    //    PhoneView *mPhoneView;
+    
     
     LoginTitleView   *mLoginTitleView;
     UIButton *getVfCodeBtn;
@@ -38,31 +38,31 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-        //        self.backgroundColor = color;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        //title
+        
+        
+        
+        
+        
+        
+        
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
-        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
+        
         
         [self addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             make.leading.trailing.mas_equalTo(self);
-//            make.width.mas_equalTo(self);
+
             make.height.mas_equalTo(VH(40));
         }];
         
         
         
-        //账号
+        
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
@@ -77,15 +77,15 @@
         }];
         
         
-        //獲取驗證碼
+        
         getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         
-//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_ff3e37].CGColor;
-//        getVfCodeBtn.layer.borderWidth = 1;
-//        getVfCodeBtn.layer.cornerRadius = 10;
-//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-//        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
+
+
+
+
+
         [self addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
@@ -109,7 +109,7 @@
 
         }];
         
-        //驗證碼输入框
+        
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
         [self addSubview:vfCodeFiledView];
@@ -118,17 +118,17 @@
             make.bottom.equalTo(getVfCodeBtn);
             
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
+
             make.trailing.mas_equalTo(lineView1.mas_leading);
         }];
         
-        //下划线
+        
         UIView *vfCodeFiledView_bottom_line = [[UIView alloc] init];
         vfCodeFiledView_bottom_line.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
         [self addSubview:vfCodeFiledView_bottom_line];
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            //make.width.mas_equalTo(0.5);
+            
             make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
             make.bottom.mas_equalTo(vfCodeFiledView);
             
@@ -136,7 +136,7 @@
 
         }];
         
-        //新密码
+        
         newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
         [self addSubview:newPwdSDKTextFiledView];
         
@@ -150,7 +150,7 @@
         }];
         
         
-        //确认密码
+        
         againPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
         [self addSubview:againPwdSDKTextFiledView];
         
@@ -163,12 +163,12 @@
         }];
         
         
-        //確認
+        
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"確  認" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
+
         [okBtn.layer setCornerRadius:VH(25)];
-//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:okBtn];
         
@@ -180,15 +180,15 @@
         }];
         
         
-//        UIButton *okBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_OK) tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
-//        [self addSubview:okBtn];
-//
-//        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.equalTo(self);
-//            make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(60));
-//            make.width.mas_equalTo(accountSDKTextFiledView);
-//            make.height.mas_equalTo(VH(70));
-//        }];
+
+
+
+
+
+
+
+
+
         
     }
     return self;
@@ -230,8 +230,8 @@
 {
     NSString *userName = accountSDKTextFiledView.inputUITextField.text;
     
-    NSString *areaCode = @"";//[mPhoneView getPhoneAreaCode_MMMethodMMM];
-    NSString *phoneNum = @"";//[mPhoneView getPhoneNumber_MMMethodMMM];
+    NSString *areaCode = @"";
+    NSString *phoneNum = @"";
     NSString *vfCode = vfCodeFiledView.inputUITextField.text;
     
     NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
@@ -280,7 +280,7 @@
             cc.data.loginType = LOGIN_TYPE_SELF;
             [weakSelf.delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
-//        [self removeFromSuperview];//返回登录界面
+
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
@@ -288,21 +288,21 @@
     
 }
 
-//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber_MMMethodMMM:(NSString *)phoneN
-//{
-//
-//
-//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-//
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
-//
-//        [self downTime_MMMethodMMM];
-//
-//    } errorBlock_MMMethodMMM:^(BJError *error) {
-//        [self resetVfCodeBtnStatue_MMMethodMMM];
-//        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-//    }];
-//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
 {
@@ -316,15 +316,15 @@
     }];
 }
 
-//倒计时
+
 -(void)downTime_MMMethodMMM{
     
     phoneCountdown = 60;
     getVfCodeBtn.userInteractionEnabled = NO;
     [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
-    //getVfCodeBtn.layer.masksToBounds = YES;
-    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
+    
+    
     if (downTimer) {
         [downTimer invalidate];
         downTimer = nil;

@@ -1,10 +1,10 @@
-//
-//  UIUtil.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -55,10 +55,10 @@ NS_ASSUME_NONNULL_BEGIN
                           fontSize_MMMethodMMM:(CGFloat)size
                          textColor_MMMethodMMM:(UIColor *)textColor;
 
-//+ (UIButton *)initTabBtnWithTitle:(NSString *)titleText
-//                           tag_MMMethodMMM:(NSUInteger)tag
-//                      selector:(SEL)selector
-//                           target_MMMethodMMM:(id)target;
+
+
+
+
 
 +(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg;
 +(void)showAlertTips_MMMethodMMM:(UIViewController *)viewController msg_MMMethodMMM:(NSString *)msg okHandler_MMMethodMMM:(void (^ __nullable)(UIAlertAction *action))handler;

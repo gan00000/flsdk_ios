@@ -1,10 +1,10 @@
-//
-//  FBDelegate.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/16.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "FBDelegate.h"
 
@@ -12,9 +12,9 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
-//@import FBSDKCoreKit;
-//@import FBSDKLoginKit;
-//@import FBSDKShareKit;
+
+
+
 
 @interface FBDelegate() <FBSDKSharingDelegate>
 
@@ -67,12 +67,12 @@
 
 + (void)applicationWillTerminate_MMMethodMMM:(UIApplication *)application
 {
-    // do nothing
+    
 }
 
 + (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application
 {
-//    [FBSDKAppEvents activateApp];
+
 }
 
 -(FBSDKLoginManager *)loginManager
@@ -87,8 +87,8 @@
     NSArray *readPermissions = @[wwwww_tag_wwwww_public_profile];
     
     if ([FBSDKAccessToken currentAccessToken]) {
-//        NSString *appID = [FBSDKAccessToken currentAccessToken].appID;
-//        NSString *appID2 = FBSDKSettings.sharedSettings.appID;
+
+
         [self.loginManager logOut];
     }
     
@@ -188,7 +188,7 @@
     }
     
     
-//     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+
     [self loginWithPerssion_MMMethodMMM:cancelBlock failBlock_MMMethodMMM:failBlock presentingViewController:presentingViewController successBlock_MMMethodMMM:successBlock];
 }
 
@@ -196,12 +196,12 @@
 - (BOOL)isFacebookLogined_MMMethodMMM
 {
     BOOL retResult = NO;
-    //注释掉，不判断accessToken,直接每次调用登录
-//    if (nil == [self currentAccessToken_MMMethodMMM] || [[self currentAccessToken_MMMethodMMM] isExpired]) {
-//        retResult = NO;
-//    } else {
-//        retResult = YES;
-//    }
+    
+
+
+
+
+
     
     return retResult;
 }
@@ -214,9 +214,9 @@
 - (void)facebookLogout_MMMethodMMM
 {
     [self.loginManager logOut];
-//
-//    ws.facebookId = @"";
-//    ws.facebookName = @"";
+
+
+
 }
 
 -(void)shareWithTag_MMMethodMMM:(NSString *)hashTag message_MMMethodMMM:(NSString *)message url_MMMethodMMM:(NSString *)url
@@ -245,16 +245,16 @@
     }
     
     BOOL ok = [shareDialog show];
-    SDK_LOG(@"FBSDKShareDialogModeNative not ok");
+   // SDK_LOG(@"FBSDKShareDialogModeNative not ok");
   
-//    [FBSDKShareDialog showFromViewController:presentingViewController withContent:xFBSDKShareLinkContent delegate:self];
+
     
 }
 
 
-/// Sent to the delegate when sharing completes without error or cancellation.
-/// @param sharer The sharer that completed.
-/// @param results The results from the sharer.  This may be nil or empty.
+
+
+
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
     
     SDK_LOG(@"share didCompleteWithResults");
@@ -262,18 +262,18 @@
         self.successBlock(@"", 1, nil);
     }
 }
-/// Sent to the delegate when the sharer encounters an error.
-/// @param sharer The sharer that completed.
-/// @param error The error.
-///
+
+
+
+
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
     if (self.failBlock) {
         self.failBlock(wwwww_tag_wwwww_error, 0, nil);
     }
 }
-/// Sent to the delegate when the sharer is cancelled.
-/// @param sharer The sharer that completed.
+
+
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
     SDK_LOG(wwwww_tag_wwwww_sharerDidCancel);
     if (self.failBlock) {

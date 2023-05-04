@@ -1,10 +1,10 @@
-//
-//  MainLoginView.m
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "LoginWithRegView.h"
 
@@ -39,26 +39,26 @@
 
 -(void)addView_MMMethodMMM
 {
-//    UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-//    self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-//    self.layer.cornerRadius = 10; //设置圆角
-//    self.layer.masksToBounds = YES;
+
+
+
+
     
     UIView *tabView = [[UIView alloc] init];
-//    tabView.layer.cornerRadius = 4; //设置圆角
-//    tabView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww_ff3a3b].CGColor;
-//    tabView.layer.borderWidth = 0.8;
-//    tabView.layer.masksToBounds = YES;
+
+
+
+
     
     
     [self addSubview:tabView];
     [tabView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(self).mas_offset(VW(102));
-//        make.trailing.mas_equalTo(self).mas_offset(VW(-94));
+
+
         make.centerX.mas_equalTo(self);
-//        make.width.mas_equalTo(self).offset(-VW(102));
+
         make.top.mas_equalTo(VH(MARGIN_TOP));
-//        make.height.mas_equalTo(VH(40));
+
     }];
     
     
@@ -70,7 +70,7 @@
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
-//        make.trailing.mas_equalTo(tabView).multipliedBy(0.5);
+
     }];
     
     
@@ -111,22 +111,22 @@
 
     }];
     
-    //返回按钮
+    
     UIButton *backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     [self addSubview:backBtn];
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerY.mas_equalTo(tabView);
-//        make.trailing.mas_equalTo(tabView.mas_leading).mas_offset(VW(82));
+
         make.leading.mas_equalTo(self).mas_offset(VW(34));
         
         make.width.height.mas_equalTo(VW(25));
     }];
     
     
-//    loginTabBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww_ff3a3b];
-//    regTabBtn.backgroundColor = [UIColor whiteColor];
+
+
     
     currentClickTab = 1;
     [loginTabBtn setSelected:YES];
@@ -152,7 +152,7 @@
 
 
 
-- (void)drawRect:(CGRect)rect   //system_method
+- (void)drawRect:(CGRect)rect   
 {
     [super drawRect:rect];
     self.mAccountLoginView.delegate = self.delegate;
@@ -172,7 +172,7 @@
             
             [self makeTabStatus_MMMethodMMM:YES];
             if (self.delegate) {
-                //[self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1];
+                
             }
             break;
             
@@ -185,7 +185,7 @@
             }
             currentClickTab = 2;
             
-           // [self requestAccountLogin_MMMethodMMM];
+           
             [self makeTabStatus_MMMethodMMM:NO];
             break;
             
@@ -229,8 +229,8 @@
         loginBottomLine.hidden = NO;
         regBottomLine.hidden = YES;
         
-//        [loginTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-//        [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] forState:(UIControlStateNormal)];
+
+
         
     }else{
     
@@ -244,8 +244,8 @@
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
         
-//        [regTabBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-//        [loginTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] forState:(UIControlStateNormal)];
+
+
     }
 }
 @end

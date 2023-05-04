@@ -1,10 +1,10 @@
-//
-//  BasePopupView.h
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2022/8/18.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "SDKBaseView.h"
 #import "CComHeader.h"

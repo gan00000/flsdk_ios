@@ -1,10 +1,10 @@
-//
-//  ConfigCoreUtil.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <Foundation/Foundation.h>
 #import "AccountModel.h"
@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (ConfigCoreUtil *)share;
 
-//@property (nonatomic) BOOL isSaveAccountInfo;
 
-//-(void)saveAccount:(NSString *) mAccount password_MMMethodMMM:(NSString *) password updateTime:(BOOL) updateTime;
+
+
 
 -(void)saveAccountModel_MMMethodMMM:(AccountModel*) mAccountModel;
 -(void)removeAccountByUserId_MMMethodMMM:(NSString *) userId;

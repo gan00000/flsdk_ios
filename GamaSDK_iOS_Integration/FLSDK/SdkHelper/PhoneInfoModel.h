@@ -1,10 +1,10 @@
-//
-//  GamaPhoneModel.h
-//  GamaModule
-//
-//  Created by wind on 2019/11/14.
-//  Copyright © 2019年 james. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -25,7 +25,7 @@
 @property (nonatomic, assign) id<PhoneInfoModelDelegate> delegate;
 
 - (void)showAreaCodesActionSheetFromView_MMMethodMMM:(UIButton *)view;
-//- (void)requestSendSecurityCodeToMobilePhoneNumber:(NSString *)phoneNumber;
-//+ (void)requestPhoneNumberAreaCodes;
+
+
 
 @end

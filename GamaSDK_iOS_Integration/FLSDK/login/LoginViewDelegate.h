@@ -1,10 +1,10 @@
-//
-//  LoginViewDelegate.h
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/30.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <Foundation/Foundation.h>
 #import "SdkHeader.h"

@@ -1,10 +1,10 @@
-//
-//  PhoneView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/12.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "PhoneView.h"
 #import "SdkHeader.h"
@@ -60,7 +60,7 @@
     }];
     
     UILabel *tipsUILabel = [[UILabel alloc] init];
-//    tipsUILabel.font = [UIFont systemFontOfSize:16];
+
     if (device_is_iPhoneX || !IS_PORTRAIT) {
            tipsUILabel.font = [UIFont systemFontOfSize:16];
        }else{
@@ -69,8 +69,8 @@
     tipsUILabel.text = lableName;
     tipsUILabel.textAlignment = NSTextAlignmentCenter;
     tipsUILabel.backgroundColor = [UIColor clearColor];
-    tipsUILabel.numberOfLines = 1; //0为多行
-    //tipsUILabel.textColor = [UIColor blackColor];
+    tipsUILabel.numberOfLines = 1; 
+    
     tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF3E37];
     
     [areaCodeContentView addSubview:tipsUILabel];
@@ -83,12 +83,12 @@
     }];
     
     
-    self.aracCodeUILabel = [[UILabel alloc] init];//区号
+    self.aracCodeUILabel = [[UILabel alloc] init];
     self.aracCodeUILabel.font = [UIFont systemFontOfSize:14];
     self.aracCodeUILabel.text = wwwww_tag_wwwww_886;
     self.aracCodeUILabel.textAlignment = NSTextAlignmentCenter;
     self.aracCodeUILabel.backgroundColor = [UIColor clearColor];
-    self.aracCodeUILabel.numberOfLines = 1; //0为多行
+    self.aracCodeUILabel.numberOfLines = 1; 
     self.aracCodeUILabel.textColor = [UIColor blackColor];
     
     [areaCodeContentView addSubview:self.aracCodeUILabel];
@@ -114,17 +114,17 @@
         make.leading.equalTo(self.aracCodeUILabel.mas_trailing).mas_offset(2);
         make.centerY.mas_equalTo(areaCodeContentView);
         make.height.mas_equalTo(10);
-        //make.width.mas_equalTo(10);
+        
         make.trailing.mas_equalTo(areaCodeContentView.mas_trailing);
     }];
     
-    self.aracCodeUILabel.userInteractionEnabled = YES; // 可以理解为设置label可被点击
+    self.aracCodeUILabel.userInteractionEnabled = YES; 
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped_MMMethodMMM:)];
     [self.aracCodeUILabel addGestureRecognizer:tapGr];
     
-    //============
     
-    //电话号码输入框
+    
+    
     UIView *phoneInputContentView = [[UIView alloc] init];
     
     phoneInputContentView.layer.cornerRadius = 4;
@@ -180,7 +180,7 @@
 
 -(void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue{
     self.aracCodeUILabel.text = selectedAreaCodeValue;
-    //    [self.mobile_area_tf setTitle:selectedAreaCodeValue forState:UIControlStateNormal];
+    
 }
 
 -(void)viewTapped_MMMethodMMM:(UITapGestureRecognizer*)tapGr

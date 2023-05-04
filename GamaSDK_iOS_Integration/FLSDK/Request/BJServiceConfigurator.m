@@ -1,10 +1,10 @@
-//
-//  BJServiceConfigurator.m
-//  BenjiaPro
-//
-//  Created by Marco on 2017/6/1.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #define BJ_DEBUG NO
 
@@ -19,9 +19,9 @@
         instance = [[BJServiceConfigurator alloc] init];
         
         if (BJ_DEBUG) {
-           // [[NSUserDefaults standardUserDefaults] registerDefaults:@{kServiceUrlTypeKey:@1}];
+           
         } else {
-           // [[NSUserDefaults standardUserDefaults] registerDefaults:@{kServiceUrlTypeKey:@0}];
+           
         }
         
     });

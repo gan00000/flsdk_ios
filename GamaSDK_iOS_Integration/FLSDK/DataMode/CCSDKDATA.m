@@ -1,10 +1,10 @@
-//
-//  R2SDKDATA.m
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "CCSDKDATA.h"
 
@@ -23,7 +23,7 @@
 - (instancetype)initSDKDATA_MMMethodMMM
 {
     if (self = [super init]) {
-//        [self releaseData];
+
         [self initData_MMMethodMMM];
          
     }

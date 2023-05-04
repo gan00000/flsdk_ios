@@ -1,10 +1,10 @@
-//
-//  GamaAppleLogin.h
-//  GamaSDK_iOS
-//
-//  Created by coke on 2019/10/21.
-//  Copyright © 2019 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -24,7 +24,7 @@ typedef void(^AppleCompleteHandler)(NSError * __nullable error, NSDictionary * _
 
 - (void)makeAppleCallbackSuccessBlock_MMMethodMMM:(AppleLoginSuccess)successBlock andErrorBlock_MMMethodMMM:(AppleLoginError)errorBlock;
 
-//- (void)gama_appleLoginRequestWithThirdID:(NSString *)thirdID thirdPlate_MMMethodMMM:(NSString *)thirdPlate;
+
 
 - (void)autoLoginAppleAccountWithInformation_MMMethodMMM;
 

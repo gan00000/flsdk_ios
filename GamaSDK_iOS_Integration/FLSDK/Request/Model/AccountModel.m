@@ -1,10 +1,10 @@
-//
-//  AccountModel.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "AccountModel.h"
 
@@ -42,7 +42,7 @@
 }
 
 
-- (void)encodeWithCoder:(NSCoder *)aCoder //system_method
+- (void)encodeWithCoder:(NSCoder *)aCoder 
 {
     NSLog(@"AccountModel encodeWithCoder");
     [aCoder encodeObject:self.account forKey:wwwww_tag_wwwww_accountName];
@@ -67,7 +67,7 @@
 }
 
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder //system_method
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder 
 {
     NSLog(@"AccountModel initWithCoder");
     if (self = [super init]) {

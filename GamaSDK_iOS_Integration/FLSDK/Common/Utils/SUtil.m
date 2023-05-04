@@ -4,8 +4,8 @@
 #import "SdkHeader.h"
 #import "netdb.h"
 #import <CommonCrypto/CommonCrypto.h>
-#import <AdSupport/AdSupport.h>//idfa用的类库
-#import "SdkCfUUID.h"//获取keychain中uuid用的自己的类
+#import <AdSupport/AdSupport.h>
+#import "SdkCfUUID.h"
 #import "NSString+URLEncoding.h"
 
 #import <sys/socket.h>
@@ -18,7 +18,7 @@
 #pragma mark - 获取GamaCfUUID
 + (NSString *)getGamaUUID_MMMethodMMM
 {
-//    ([[GamaFunction getSystemVersion_MMMethodMMM] intValue]) >= 7 ? [GamaFunction getGamaUUID_MMMethodMMM] : [GamaFunction getMacaddress_MMMethodMMM];
+
     NSString * gamaUUid = [[SdkCfUUID getCustomCfUUID_MMMethodMMM] lowercaseString];
     return gamaUUid;
 }
@@ -163,7 +163,7 @@
 {
     
     UIWindow *keyWindow = [self getCurrentWindow_MMMethodMMM];
-    // SDK expects a key window at this point, if it is not, make it one
+    
     if (keyWindow !=  nil && !keyWindow.isKeyWindow) {
         SDK_LOG(@"Unable to obtain a key window, markingas keyWindow");
         [keyWindow makeKeyWindow];
@@ -179,7 +179,7 @@
     return topController;
 }
 
-/* *****如果keyWindow获取不到；windows获取不到；最后去delegate window获取****/
+
 + (UIWindow *)getCurrentWindow_MMMethodMMM
 {
     UIWindow* window = nil;
@@ -208,7 +208,7 @@
 +(CGRect)getCurrentScreenFrame_MMMethodMMM
 {
     CGRect currentScreenSize;
-    if (!IS_PORTRAIT)//如果是横屏幕的游戏
+    if (!IS_PORTRAIT)
     {
         currentScreenSize = [self rectFromWinSize_Landscape_MMMethodMMM];
     }
@@ -216,10 +216,10 @@
     {
         currentScreenSize = [self rectFromWinSize_Portrait_MMMethodMMM];
     }
-    //判断全打印
-//    NSString * systemlog=[NSString stringWithFormat:@" screen_frame:w%f_h%f",
-//                          currentScreenSize.size.width,currentScreenSize.size.height];
-//    Gama_FUNCTION_LOG(systemlog)
+    
+
+
+
     return currentScreenSize;
 }
 
@@ -370,32 +370,32 @@
 #pragma mark - 获取当前系统语言（与服务器的语言并不一样，请注意使用
 + (NSString*)getPreferredLanguage_MMMethodMMM
 {
-    // 获取系统语言
+    
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
     if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
         NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
         NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
-        // zh-Hans   zh-HK   zh-TW
+        
         preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@_%@",languageCode,countryCode] : languageCode;
     }
     return preferredLang;
 }
 
 
-// Value暂添加NSString、NSDictionary两种类型的支持
+
 + (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier
 {
     static NSDictionary *infoDic = nil;
     static NSArray *urlTypes = nil;
-    // 配置检测结果
+    
     BOOL infoResult = YES, urlSchemeResult = YES, identifierResult = YES;
-    // 配置异常时的提示
+    
     NSString *showTips = nil, *externalTip = @"", *identifierTip = @"", *urlSchemeTip = @"";
-    // 获得Info.plist文件对应字典对象
+    
     infoDic = [[NSBundle mainBundle] infoDictionary];
     
-    // 检查Info.plist最外层自定义配置
+    
     if (value && key) {
         if ([value isKindOfClass:[NSString class]]) {
             if ([infoDic[key] isEqualToString:value]) {
@@ -414,10 +414,10 @@
         }
     }
     
-    // 检查CFBundleURLTypes内部的相关配置
+    
     urlTypes = [infoDic valueForKey:@"CFBundleURLTypes"];
     for (NSDictionary *urlType in urlTypes) {
-        // 传入CFBundleURLName，则需要进行校验
+        
         if (identifier && ![identifier isEqualToString:@""]) {
             NSString *cfBundleURLName = urlType[@"CFBundleURLName"];
             if (![identifier isEqualToString:cfBundleURLName]) {
@@ -429,7 +429,7 @@
             }
         }
         
-        // 传入CFBundleURLSchemes，则需要进行校验
+        
         if (urlScheme && ![urlScheme isEqualToString:@""]) {
             NSArray *urlSchemes = [urlType valueForKey:@"CFBundleURLSchemes"];
             if (![urlSchemes containsObject:urlScheme]) {
@@ -445,11 +445,11 @@
             break;
         }
     }
-    // 配置正常
+    
     if (infoResult && urlSchemeResult && identifierResult) {
         return YES;
     }
-    // 配置异常
+    
     showTips = [NSString stringWithFormat:@"Info.plist文件配置不完整：%@%@%@；\n请同时参考SDK配置文档！",externalTip,identifierTip,urlSchemeTip];
     dispatch_async(dispatch_get_main_queue(), ^{
         [AlertUtil showAlertWithMessage_MMMethodMMM:showTips];
@@ -511,14 +511,14 @@
     return iPhoneXSeries;
 }
 
-//+(BOOL)deviceIsPortrait
-//{
-//    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-//    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
-//        return YES;
-//    }else {
-//         return NO;
-//    }
-//}
+
+
+
+
+
+
+
+
+
 
 @end

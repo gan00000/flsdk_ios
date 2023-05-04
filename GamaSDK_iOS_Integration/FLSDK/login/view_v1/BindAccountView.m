@@ -1,10 +1,10 @@
-//
-//  FindPasswordView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "BindAccountView.h"
 #import "SdkHeader.h"
@@ -23,15 +23,15 @@
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *pwdSDKTextFiledView;
     
-//    SDKTextFiledView *vfCodeFiledView;
-    //    PhoneView *mPhoneView;
+
+    
     
     LoginTitleView   *mLoginTitleView;
-//    UIButton *getVfCodeBtn;
+
     
     
-//    int phoneCountdown;
-//    NSTimer *downTimer;
+
+
 }
 
 - (instancetype)initView_MMMethodMMM
@@ -39,25 +39,25 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-        //        self.backgroundColor = color;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        //title
+        
+        
+        
+        
+        
+        
+        
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_update_account) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
-        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
+        
         
         [self addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             make.leading.trailing.mas_equalTo(self);
-//            make.width.mas_equalTo(self);
+
             make.height.mas_equalTo(VH(40));
         }];
         
@@ -90,7 +90,7 @@
         }];
         
         
-        //密码
+        
         pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         [self addSubview:pwdSDKTextFiledView];
         
@@ -113,12 +113,12 @@
         }];
         
         
-        //確認
+        
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire_update) fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
+
         [okBtn.layer setCornerRadius:VH(25)];
-//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
         [self addSubview:okBtn];
         
@@ -173,16 +173,16 @@
     }
     
     AccountModel * currentAccountModel = (AccountModel *)self.fromPageParam;
-    //NSString *userName = mAccountModel.account;
+    
     
     NSString *account = accountSDKTextFiledView.inputUITextField.text;
     NSString *pasword = pwdSDKTextFiledView.inputUITextField.text;
   
     
-//    if ([StringUtil isEmpty_MMMethodMMM:]) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
-//        return;
-//    }
+
+
+
+
  
     if (![SdkUtil validUserName_MMMethodMMM:account]) {
         return;

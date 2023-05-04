@@ -1,10 +1,10 @@
-//
-//  MainLoginView.m
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
+
+
+
+
+
+
 
 #import "MainHomeView.h"
 #import "UIUtil.H"
@@ -43,10 +43,10 @@
 -(void)addView_MMMethodMMM
 {
     
-    //test
-//    SDK_DATA.mConfigModel.appleLogin = YES;
-//    SDK_DATA.mConfigModel.appPassCheck = NO;
-//    SDK_DATA.mConfigModel.showLogo = YES;
+    
+
+
+
     
     UIView *contentView = [[UIView alloc] init];
     [self addSubview:contentView];
@@ -62,23 +62,23 @@
     }
     [contentView addSubview:logoIV];
     [logoIV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        CGFloat hx = VH(MARGIN_TOP);
-//        make.top.mas_equalTo(self.mas_top).mas_offset(hx);
+
+
         make.top.mas_equalTo(contentView.mas_top);
         make.width.mas_equalTo(VW(200));
         if (SDK_DATA.mConfigModel.showLogo) {
             make.height.mas_equalTo(VH(50));
         }else{
-            make.height.mas_equalTo(VH(2));//不显示设置高度小 make.height.mas_equalTo(VH(50));
+            make.height.mas_equalTo(VH(2));
         }
         make.centerX.mas_equalTo(contentView);
     }];
     
     
-    //游客登录
+    
     guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtn.layer setCornerRadius:VH(25)];
-//    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
+
     guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
     
     [contentView addSubview:guestLoginBtn];
@@ -100,7 +100,7 @@
     [guestLoginBtn addSubview:guestLoginBtnContent];
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(guestLoginBtn);
-//        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
+
     }];
     
     UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:guse_login_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
@@ -122,7 +122,7 @@
     
     
     UIView *topView = guestLoginBtn;
-    //游客登录 end
+    
     
     
     if (@available(iOS 13.0, *)) {
@@ -163,7 +163,7 @@
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
-//        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+
     }];
     
     UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_EB2E2B]];
@@ -186,7 +186,7 @@
     [contentView addSubview:lineView1];
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        //make.width.mas_equalTo(0.5);
+        
         make.trailing.mas_equalTo(otherLoginLabel.mas_leading).mas_offset(VW(-22));
         make.centerY.mas_equalTo(otherLoginLabel);
         make.height.mas_equalTo(1);
@@ -199,7 +199,7 @@
     [contentView addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        //make.width.mas_equalTo(0.5);
+        
         make.leading.mas_equalTo(otherLoginLabel.mas_trailing).mas_offset(VW(22));
         make.centerY.mas_equalTo(otherLoginLabel);
         make.height.mas_equalTo(1);
@@ -208,7 +208,7 @@
     }];
     
     
-    //登录方式
+    
     
     UIView *loginTypeView = [[UIView alloc] init];
     [contentView addSubview:loginTypeView];
@@ -295,7 +295,7 @@
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
         make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
-//        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
+
     }];
     
     checkBoxTermsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
@@ -319,7 +319,7 @@
          };
          NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
         [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length-5, 5)];
-         //赋值
+         
         rememberTermsLable.attributedText = attribtStr;
         
         [termAgreeView addSubview:rememberTermsLable];
@@ -409,7 +409,7 @@
         return YES;
     }
     [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
-//    [AlertUtil showAlertWithMessage_MMMethodMMM:];
+
     return NO;
 }
 
