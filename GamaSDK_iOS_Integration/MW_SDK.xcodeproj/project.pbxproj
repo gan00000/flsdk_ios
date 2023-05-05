@@ -543,7 +543,6 @@
 		039AC1E629F91DD700B416D8 /* IssuesureDextratoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesureDextratoryView.h; sourceTree = "<group>"; };
 		039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SSHXRESV6.bundle; sourceTree = "<group>"; };
-		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
 		039E6E8829D9900200890B3B /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 		039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
@@ -636,7 +635,6 @@
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		03C05CA628AE5F6B0060F4CD /* ChanceVolatyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChanceVolatyView.h; sourceTree = "<group>"; };
 		03C05CA728AE5F6B0060F4CD /* ChanceVolatyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChanceVolatyView.m; sourceTree = "<group>"; };
-		03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_VN-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_VN-Info.plist"; sourceTree = "<absolute>"; };
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -647,7 +645,6 @@
 		03D97DDA286EE281008D0B3A /* FieldRheform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldRheform.m; sourceTree = "<group>"; };
 		03D97DDE286EE3A3008D0B3A /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
 		03D97DDF286EE3A3008D0B3A /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
-		03DD67E4294AE17200C1D307 /* SDK_DEMO_V4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK_DEMO_V4-Info.plist"; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* TheoryeerMulctitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheoryeerMulctitive.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* TheoryeerMulctitive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheoryeerMulctitive.m; sourceTree = "<group>"; };
 		03E0767F2862C07700B81B65 /* TrecentlingGreatfication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrecentlingGreatfication.h; sourceTree = "<group>"; };
@@ -743,7 +740,6 @@
 		32BE13DC24FB6154000BDFBE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = Demo/File.swift; sourceTree = "<group>"; };
 		32C9BC5324C5EA0800B3D704 /* ArchaeessRuptality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchaeessRuptality.h; sourceTree = "<group>"; };
 		32C9BC5424C5EA0800B3D704 /* ArchaeessRuptality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchaeessRuptality.m; sourceTree = "<group>"; };
-		32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoInfo.plist; sourceTree = "<group>"; };
 		32CDA790253FD43100D3969F /* MegayourselfMeanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MegayourselfMeanView.h; sourceTree = "<group>"; };
 		32CDA791253FD43100D3969F /* MegayourselfMeanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MegayourselfMeanView.m; sourceTree = "<group>"; };
 		32CDA7932540371A00D3969F /* PrehenskinRatheriseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrehenskinRatheriseButton.h; sourceTree = "<group>"; };
@@ -1607,9 +1603,6 @@
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
-				03DD67E4294AE17200C1D307 /* SDK_DEMO_V4-Info.plist */,
-				039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */,
-				03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */,
 				03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */,
 			);
 			sourceTree = "<group>";
@@ -1675,7 +1668,6 @@
 				E97411C820874A170018E1A6 /* IAP_ViewController.h */,
 				E97411C920874A170018E1A6 /* IAP_ViewController.m */,
 				E956BC79211D768F006D9E4C /* Images.xcassets */,
-				32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */,
 				E97411DA20874A170018E1A6 /* main.m */,
 				E97411CB20874A170018E1A6 /* UserModel.h */,
 				E97411CC20874A170018E1A6 /* UserModel.m */,
@@ -2211,7 +2203,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HV58YUG5XP;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2240,11 +2232,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxgy.sshx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "sshx-dev";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
