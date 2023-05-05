@@ -504,7 +504,6 @@
 		034558D1285C25210025EFB2 /* EgorwithinEnjoyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EgorwithinEnjoyView.h; sourceTree = "<group>"; };
 		034558D2285C25210025EFB2 /* EgorwithinEnjoyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EgorwithinEnjoyView.m; sourceTree = "<group>"; };
 		03509C8629F91C8100C840DA /* SDK_DEMO_V6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V6.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V6-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V6-Info.plist"; sourceTree = "<absolute>"; };
 		03509D2529F91C8C00C840DA /* MWSDK_V6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0352F70B2927671F00160A67 /* SomeoneaceousOrtetyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeoneaceousOrtetyView.h; sourceTree = "<group>"; };
 		0352F70C2927671F00160A67 /* SomeoneaceousOrtetyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeoneaceousOrtetyView.m; sourceTree = "<group>"; };
@@ -525,6 +524,8 @@
 		0389B3172861B7B30024E62E /* PropriatorPavsome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropriatorPavsome.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* PropriatorPavsome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropriatorPavsome.m; sourceTree = "<group>"; };
 		039954022A04F23500D48BA2 /* SdkV6202304.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SdkV6202304.json; sourceTree = "<group>"; };
+		039954292A050CBD00D48BA2 /* GamaSDK_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GamaSDK_iOS.entitlements; sourceTree = "<group>"; };
+		0399542A2A050CBD00D48BA2 /* SDK_DEMO_V6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK_DEMO_V6-Info.plist"; sourceTree = "<group>"; };
 		039AC1D529F91DD700B416D8 /* AloneivityOctavmovieileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AloneivityOctavmovieileView.m; sourceTree = "<group>"; };
 		039AC1D629F91DD700B416D8 /* SeptiessTownaceousView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeptiessTownaceousView.h; sourceTree = "<group>"; };
 		039AC1D729F91DD700B416D8 /* MeanRaucaneityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeanRaucaneityView.h; sourceTree = "<group>"; };
@@ -1595,6 +1596,8 @@
 		CEE6B3681A148B1E009E77FF = {
 			isa = PBXGroup;
 			children = (
+				039954292A050CBD00D48BA2 /* GamaSDK_iOS.entitlements */,
+				0399542A2A050CBD00D48BA2 /* SDK_DEMO_V6-Info.plist */,
 				03D5F35B28D3183D00C3855E /* obfuscation */,
 				037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */,
 				24C7588E1D66F98D0088A176 /* FrameworkScript.sh */,
@@ -1606,7 +1609,6 @@
 				CEE6B3721A148B1E009E77FF /* Products */,
 				220B859D1E572CD000505690 /* Frameworks */,
 				32BE13DB24FB6154000BDFBE /* SDK_TEST-Bridging-Header.h */,
-				03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 0;
