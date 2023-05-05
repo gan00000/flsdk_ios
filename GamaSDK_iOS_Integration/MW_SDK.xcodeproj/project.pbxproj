@@ -235,6 +235,7 @@
 		03509D1C29F91C8C00C840DA /* TaxryFinishlikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* TaxryFinishlikeView.m */; };
 		03509D1D29F91C8C00C840DA /* PrehenskinRatheriseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* PrehenskinRatheriseButton.m */; };
 		03509D1E29F91C8C00C840DA /* EgorwithinEnjoyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* EgorwithinEnjoyView.m */; };
+		039954032A04F23500D48BA2 /* SdkV6202304.json in Resources */ = {isa = PBXBuildFile; fileRef = 039954022A04F23500D48BA2 /* SdkV6202304.json */; };
 		039AC1E729F91DD700B416D8 /* AloneivityOctavmovieileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1D529F91DD700B416D8 /* AloneivityOctavmovieileView.m */; };
 		039AC1E829F91DD700B416D8 /* SeptiessTownaceousView.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D629F91DD700B416D8 /* SeptiessTownaceousView.h */; };
 		039AC1E929F91DD700B416D8 /* MeanRaucaneityView.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D729F91DD700B416D8 /* MeanRaucaneityView.h */; };
@@ -523,6 +524,7 @@
 		037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCFrameworkScript.sh; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* PropriatorPavsome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropriatorPavsome.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* PropriatorPavsome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropriatorPavsome.m; sourceTree = "<group>"; };
+		039954022A04F23500D48BA2 /* SdkV6202304.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SdkV6202304.json; sourceTree = "<group>"; };
 		039AC1D529F91DD700B416D8 /* AloneivityOctavmovieileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AloneivityOctavmovieileView.m; sourceTree = "<group>"; };
 		039AC1D629F91DD700B416D8 /* SeptiessTownaceousView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeptiessTownaceousView.h; sourceTree = "<group>"; };
 		039AC1D729F91DD700B416D8 /* MeanRaucaneityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeanRaucaneityView.h; sourceTree = "<group>"; };
@@ -1098,6 +1100,7 @@
 		039AC1F929F91E3600B416D8 /* V6 */ = {
 			isa = PBXGroup;
 			children = (
+				039954022A04F23500D48BA2 /* SdkV6202304.json */,
 				03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */,
 				039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */,
 				039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */,
@@ -1853,6 +1856,7 @@
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
 				039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */,
+				039954032A04F23500D48BA2 /* SdkV6202304.json in Resources */,
 				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
 				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
