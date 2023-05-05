@@ -1,0 +1,17 @@
+{   "af_dev_key" : "YsmYNc7biK7j5Hz6c64Fgi",
+    "sdk_ad_bug" : "0",
+    "appKey" : "e894c83b52528d5e7dfd6f46e8fd85cc",
+    "gameCode" : "sshxios",
+    "gameLanguage" : "en_US",
+    "sdk_language" : "en",
+    "sdk_appId" : "6448770568",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "SSHXRESV6",
+    "sdk_url_cdn" : "https://cdn-download.hwxgame.com/",
+    "sdk_url_log" : "https://log.hwxgame.com/",
+    "sdk_url_login" : "https://login.hwxgame.com/",
+    "sdk_url_pay" : "https://pay.hwxgame.com/",
+    "sdk_v_version" : "v6",
+    "terms_service_url" : "https://member.hwxgame.com/sdk/agreement/%@_agreement.html"
+    
+}
