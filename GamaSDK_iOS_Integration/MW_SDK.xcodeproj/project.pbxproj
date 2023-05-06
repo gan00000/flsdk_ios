@@ -613,6 +613,11 @@
 		0387BA06291B8C9E001BACA8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
 		0387BA07291B8C9E001BACA8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
 		0387BA08291B8C9E001BACA8 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
+		039953FD2A04B05400D48BA2 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50229A353CD0084FB93 /* FBSDKShareKit.xcframework */; };
+		039953FE2A04B05700D48BA2 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50429A353CD0084FB93 /* FBSDKCoreKit.xcframework */; };
+		039953FF2A04B05B00D48BA2 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50629A353CD0084FB93 /* FBAEMKit.xcframework */; };
+		039954002A04B05E00D48BA2 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50529A353CD0084FB93 /* FBSDKLoginKit.xcframework */; };
+		039954012A04B06000D48BA2 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0355A50729A353CD0084FB93 /* FBSDKCoreKit_Basics.xcframework */; };
 		03F542B72940BC5D00F75F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03F542B82940BC5D00F75F51 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03F542B92940BC5D00F75F51 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -1178,6 +1183,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039953FF2A04B05B00D48BA2 /* FBAEMKit.xcframework in Frameworks */,
+				039953FE2A04B05700D48BA2 /* FBSDKCoreKit.xcframework in Frameworks */,
+				039953FD2A04B05400D48BA2 /* FBSDKShareKit.xcframework in Frameworks */,
+				039954002A04B05E00D48BA2 /* FBSDKLoginKit.xcframework in Frameworks */,
+				039954012A04B06000D48BA2 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
