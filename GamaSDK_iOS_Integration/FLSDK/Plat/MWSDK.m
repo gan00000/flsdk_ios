@@ -505,14 +505,14 @@
 
 - (void)requestStoreReview
 {
-    
+    SDK_LOG(@"requestStoreReview");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
         [RiskHalf showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
 
 		//====insert my code start===
 		{
-		        if (!@"foldAmericantyfoldAmericanty".length > (821460 * (622446)) ){
+		        if (!(@"foldAmericantyfoldAmericanty".length > (821460 * (622446)))){
 
             int seatibleyard = 1173883.49501;
             int darksionworrydom = 297358.57725;
