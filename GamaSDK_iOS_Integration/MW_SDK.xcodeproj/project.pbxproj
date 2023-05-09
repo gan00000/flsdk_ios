@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		031463E92A09FC65003B470B /* SSHXSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F521A92A03A2B700DDFA8E /* SSHXSDK_V6.framework */; };
+		031CC1B82A0A1ED200C2EAB4 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		031CC1B92A0A1ED500C2EAB4 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03346E5229FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03346E5129FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt */; };
 		03509C2A29F91C8100C840DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03509C2B29F91C8100C840DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
@@ -31,7 +34,6 @@
 		03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
 		03509C3229F91C8100C840DA /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9429D9900200890B3B /* NOTICES */; };
 		03509C3529F91C8100C840DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
-		03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03509C3829F91C8100C840DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
@@ -55,7 +57,6 @@
 		03509C4E29F91C8100C840DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		03509C4F29F91C8100C840DA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		03509C5029F91C8100C840DA /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24966D961D5894C9005BE6EB /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03509C5129F91C8100C840DA /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		03509C5229F91C8100C840DA /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA329D9900200890B3B /* GoogleDataTransport.xcframework */; };
 		03509C5329F91C8100C840DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490083B1D2646CA00331AB0 /* libz.tbd */; };
 		03509C5429F91C8100C840DA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
@@ -256,7 +257,6 @@
 		039AC1F829F91DD700B416D8 /* IssuesureDextratoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1E629F91DD700B416D8 /* IssuesureDextratoryView.h */; };
 		039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
 		039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SSHXRESV6.bundle */; };
-		039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
 		03E01A652A03ABAA002E752F /* ReceivesivePhosstateful.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* ReceivesivePhosstateful.m */; };
 		03E01A702A03AD72002E752F /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
 		03E01A712A03AD74002E752F /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8B29D9900200890B3B /* FBSDKCoreKit.xcframework */; };
@@ -415,17 +415,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		039AC20229F9231100B416D8 /* PBXContainerItemProxy */ = {
+		031463E72A09FC54003B470B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 03509C8829F91C8C00C840DA;
-			remoteInfo = MWSDK_V6;
+			remoteGlobalIDString = 03F5210C2A03A2B700DDFA8E;
+			remoteInfo = SSHXSDK_V6;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		03509C8229F91C8100C840DA /* Embed Frameworks */ = {
+		039AC0912A0A040500FDE774 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -820,7 +820,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */,
+				031463E92A09FC65003B470B /* SSHXSDK_V6.framework in Frameworks */,
 				03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */,
 				03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */,
 				03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */,
@@ -843,7 +843,7 @@
 				03509C4E29F91C8100C840DA /* AdSupport.framework in Frameworks */,
 				03509C4F29F91C8100C840DA /* JavaScriptCore.framework in Frameworks */,
 				03509C5029F91C8100C840DA /* ReplayKit.framework in Frameworks */,
-				03509C5129F91C8100C840DA /* LineSDK.framework in Frameworks */,
+				031CC1B82A0A1ED200C2EAB4 /* LineSDK.framework in Frameworks */,
 				03509C5229F91C8100C840DA /* GoogleDataTransport.xcframework in Frameworks */,
 				03509C5329F91C8100C840DA /* libz.tbd in Frameworks */,
 				03509C5429F91C8100C840DA /* SafariServices.framework in Frameworks */,
@@ -1763,12 +1763,12 @@
 				03509C2929F91C8100C840DA /* Sources */,
 				03509C3029F91C8100C840DA /* Resources */,
 				03509C3929F91C8100C840DA /* Frameworks */,
-				03509C8229F91C8100C840DA /* Embed Frameworks */,
+				039AC0912A0A040500FDE774 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				039AC20329F9231100B416D8 /* PBXTargetDependency */,
+				031463E82A09FC54003B470B /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_V6;
 			packageProductDependencies = (
@@ -1857,9 +1857,9 @@
 				03346E5229FA758300F4AF2C /* 79a6fc9c9c51ba3ec52a4ce472a285cd.txt in Resources */,
 				03509C3229F91C8100C840DA /* NOTICES in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
+				031CC1B92A0A1ED500C2EAB4 /* LineSDKResource.bundle in Resources */,
 				039AC20129F91E3600B416D8 /* SSHXRESV6.bundle in Resources */,
 				039954032A04F23500D48BA2 /* SdkV6202304.json in Resources */,
-				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
 				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -2183,10 +2183,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		039AC20329F9231100B416D8 /* PBXTargetDependency */ = {
+		031463E82A09FC54003B470B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 03509C8829F91C8C00C840DA /* MWSDK_V6 */;
-			targetProxy = 039AC20229F9231100B416D8 /* PBXContainerItemProxy */;
+			target = 03F5210C2A03A2B700DDFA8E /* SSHXSDK_V6 */;
+			targetProxy = 031463E72A09FC54003B470B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
