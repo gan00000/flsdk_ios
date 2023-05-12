@@ -697,6 +697,33 @@
     
     self.mRegisterAccountView.hidden = YES;
     
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            //====insert my code start===  2023-05-04 15:54:51
+            {
+            
+        CGFloat l_11 = [self visccatchThe:@"pointularCould" allelaciousPlatt:nil ];
+        if(l_11){}
+
+            if(self.traganeityFewine){}
+            if(self.againibleVictimage){}
+        self.seianeousNotoule = 5356;
+        if(self.seianeousNotoule * 326 + 530 * 216 - 660 <= 4241){}
+            if(self.majiveDignture){}
+                float candidateizationTent = 8341.0;
+                if (@(candidateizationTent).doubleValue == 9275) {}
+            }
+            //====insert my code end===  2023-05-04 15:54:51
+
+        self.mAccountLoginView.delegate = self.delegate;
+        self.mRegisterAccountView.delegate = self.delegate;
+        
+        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+        
+        if (!self.fromPage) {
+            backBtn.hidden = YES;
+        }
+    }];
+    
 }
 
 
@@ -830,35 +857,6 @@
 	return v_21;
 }
 //===insert my method end=== 2023-05-04 15:54:51
-- (void)drawRect:(CGRect)rect  
-{
-    [super drawRect:rect];
-
-		//====insert my code start===  2023-05-04 15:54:51
-		{
-		
-	CGFloat l_11 = [self visccatchThe:@"pointularCould" allelaciousPlatt:nil ];
-	if(l_11){}
-
-		if(self.traganeityFewine){}
-		if(self.againibleVictimage){}
-	self.seianeousNotoule = 5356;
-	if(self.seianeousNotoule * 326 + 530 * 216 - 660 <= 4241){}
-		if(self.majiveDignture){}
-            float candidateizationTent = 8341.0;
-            if (@(candidateizationTent).doubleValue == 9275) {}
-		}
-		//====insert my code end===  2023-05-04 15:54:51
-
-    self.mAccountLoginView.delegate = self.delegate;
-    self.mRegisterAccountView.delegate = self.delegate;
-    
-    self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
-    
-    if (!self.fromPage) {
-        backBtn.hidden = YES;
-    }
-}
 
 
 //===insert my method start=== 2023-05-04 15:54:51

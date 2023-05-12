@@ -9,6 +9,10 @@
 #import "CalidabilityMemoryaticView.h"
 
 @implementation CalidabilityMemoryaticView
+{
+    BOOL isDrawRect;
+    
+}
 
 
 //===insert my method start=== 2023-05-04 15:54:51
@@ -347,12 +351,14 @@
 		}
 		//====insert my code end===  2023-05-04 15:54:51
 
-    
-    for (CCallBack  callback in self.drawBlockArray) {
-        
-        callback(wwwww_tag_wwwww_drawRect,0,nil);
+    if(!isDrawRect){//只执行一次
+        isDrawRect = YES;
+        for (CCallBack  callback in self.drawBlockArray) {
+            
+            callback(wwwww_tag_wwwww_drawRect,0,nil);
+        }
     }
-    
+   
 }
 
 -(void)removeFromGameView{
