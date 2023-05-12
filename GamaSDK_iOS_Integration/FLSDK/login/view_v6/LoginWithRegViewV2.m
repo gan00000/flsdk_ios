@@ -164,20 +164,18 @@
     
     self.mRegisterAccountView.hidden = YES;
     
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.mAccountLoginView.delegate = self.delegate;
+        self.mRegisterAccountView.delegate = self.delegate;
+        
+        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+        
+        if (!self.fromPage) {
+            backBtn.hidden = YES;
+        }
+    }];
 }
 
-- (void)drawRect:(CGRect)rect  //system_method
-{
-    [super drawRect:rect];
-    self.mAccountLoginView.delegate = self.delegate;
-    self.mRegisterAccountView.delegate = self.delegate;
-    
-    self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
-    
-    if (!self.fromPage) {
-        backBtn.hidden = YES;
-    }
-}
 
 - (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {

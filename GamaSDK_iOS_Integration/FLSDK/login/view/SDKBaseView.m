@@ -9,6 +9,11 @@
 #import "SDKBaseView.h"
 
 @implementation SDKBaseView
+{
+    BOOL isDrawRect;
+    
+}
+
 
 - (void)initData_MMMethodMMM{
     
@@ -52,9 +57,13 @@
     
     [super drawRect:rect];
     
-    for (CCallBack  callback in self.drawBlockArray) {
+    if(!isDrawRect){//只执行一次
+        isDrawRect = YES;
+        for (CCallBack  callback in self.drawBlockArray) {
+
+            callback(wwwww_tag_wwwww_drawRect,0,nil);
+        }
         
-        callback(wwwww_tag_wwwww_drawRect,0,nil);
     }
     
 }
