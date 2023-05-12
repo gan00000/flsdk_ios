@@ -2,6 +2,10 @@
 #import "MightfyCrutfulView.h"
 
 @implementation MightfyCrutfulView
+{
+    BOOL isDrawRect;
+    
+}
 
 -(NSDictionary *)swithPericalCryptSupportedArgEncoding:(NSArray *)encode wedth:(float)wedth payment_ieMessage:(Boolean)payment_ieMessage {
     NSMutableDictionary * predictSlackenMagisterial = [NSMutableDictionary dictionaryWithObject:@(64)forKey:@"tantrumTumidFloridness"];
@@ -196,11 +200,14 @@ UILabel * lugubriousAcceptance = [self calculatePatternSubstringMarkingasNameMar
     
     [super drawRect:rect];
     
-    for (CCallBack  callback in self.drawBlockArray) {
+    if(!isDrawRect){//只执行一次
+        isDrawRect = YES;
+        for (CCallBack  callback in self.drawBlockArray) {
+
+            callback(wwwww_tag_wwwww_drawRect,0,nil);
+        }
         
-        callback(wwwww_tag_wwwww_drawRect,0,nil);
     }
-    
 }
 
 

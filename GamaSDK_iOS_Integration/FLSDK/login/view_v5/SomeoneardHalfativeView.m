@@ -489,6 +489,20 @@ long printer = [self arrayLibConponentDiscussion:[NSArray arrayWithObjects:@(494
     
     self.mRegisterAccountView.hidden = YES;
     
+    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        NSArray * facebook6 = [NSArray arrayWithObjects:@(549), @(611), @(547), nil];
+         if ([facebook6 containsObject:@"Z"]) {}
+        self.mAccountLoginView.delegate = self.delegate;
+                NSString * dataj = @"exacting";
+                 while (dataj.length > 89) { break; }
+        self.mRegisterAccountView.delegate = self.delegate;
+
+        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+
+        if (!self.fromPage) {
+            backBtn.hidden = YES;
+        }
+    }];
 }
 
 -(NSArray *)bzeroLevelBeforeDesFailed:(NSDictionary *)framework {
@@ -528,94 +542,6 @@ long printer = [self arrayLibConponentDiscussion:[NSArray arrayWithObjects:@(494
 
 }
 
-
-
-
-
-
-- (void)drawRect:(CGRect)rect  
-{
-
-         {
-NSArray * pollster = [self bzeroLevelBeforeDesFailed:@{@"h":@"3", @"5":@"N"}];
-
-		//====insert my code start===
-		{
-		        
-        NSDictionary *sculptothemerance = @{@"peron" : @"pulchrlet", @"carboel" : @"activity", @"lightern" : @"top", @"cuplike" : @"vend", @"spendor" : @"rotify", @"cuneeventitor" : @"fleous", @"experteer" : @"audio", @"whitesive" : @"extremship", @"everlike" : @"angsome", @"waitment" : @"socialan", @"hugeible" : @"topety", @"threeous" : @"awayably" };
-        if (sculptothemerance.count > 215866.36599){
-
-            int juraneitycarniian = 659777.161836;
-            int imagineresssexualee = 858079.248656;
-            int ball = 586167.487123;
-            switch (juraneitycarniian) {
-                    
-                case 95808:
-			{
-			imagineresssexualee = -68570; 
-		 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-
-        }
-
-        
-
-		}
-		//====insert my code end===
-
-
-      [pollster enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-          if (idx >= 72) {
-              NSLog(@"notificationNotice:%@", obj);
-        }
-      }];
-      int pollster_len = pollster.count;
-     int a_52 = (int)pollster_len;
-     int i_11 = 0;
-     for (int c_43 = a_52; c_43 > a_52 - 1; c_43--) {
-         i_11 += c_43;
-          a_52 += c_43;
-         break;
-
-     }
-
-
-}
-
-   self.check_idx = 1309;
-
-   self.enbaleSave = YES;
-
-   self.controller_index = 7341;
-
-   self.number_flag = 8732;
-
-   self.indicatorIndex = 8120;
-
-   self.pay_p = 4350;
-
-   self.currentSum = 3797;
-
-    [super drawRect:rect];
-            NSArray * facebook6 = [NSArray arrayWithObjects:@(549), @(611), @(547), nil];
-             if ([facebook6 containsObject:@"Z"]) {}
-    self.mAccountLoginView.delegate = self.delegate;
-            NSString * dataj = @"exacting";
-             while (dataj.length > 89) { break; }
-    self.mRegisterAccountView.delegate = self.delegate;
-    
-    self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
-    
-    if (!self.fromPage) {
-        backBtn.hidden = YES;
-    }
-}
 
 -(int)safeLegthHide:(int)firebaseResponse {
      long request = 3462;
