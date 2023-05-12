@@ -24,7 +24,6 @@
     UIView *regBottomLine;
     
     UIButton *backBtn;
-    BOOL isDrawRect;
     
 }
 
