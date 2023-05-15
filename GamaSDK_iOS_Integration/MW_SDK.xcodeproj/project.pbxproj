@@ -321,7 +321,6 @@
 		0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0352F7102927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		0352F7112927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
-		03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03554A74299651E20078EFFB /* com_miaoou_gwsg.json */; };
 		03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		035EDC1F29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */; };
@@ -1157,6 +1156,7 @@
 		039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
+		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
 		03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
 		03C05CAA28AE5F6B0060F4CD /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
 		03CA721C29D5698400098979 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
@@ -1691,8 +1691,6 @@
 		03509D2529F91C8C00C840DA /* MWSDK_V6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0352F70B2927671F00160A67 /* TouchEventInterruptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchEventInterruptView.h; sourceTree = "<group>"; };
 		0352F70C2927671F00160A67 /* TouchEventInterruptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventInterruptView.m; sourceTree = "<group>"; };
-		03554A74299651E20078EFFB /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
-		03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com_miaoou_gwsg.plist; sourceTree = "<group>"; };
 		035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		035EDC1B29A499F7009092F0 /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
 		035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -1889,6 +1887,7 @@
 		03B919242860AECB0029AE6A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		03B919252860AECB0029AE6A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		03BB67A52A122A630027185C /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
 		03C05CA628AE5F6B0060F4CD /* BasePopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePopupView.h; sourceTree = "<group>"; };
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		03CA72B729D5698400098979 /* MWSDK_VN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_VN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2597,9 +2596,8 @@
 		030D35FF2999F1E0001AAFC0 /* V5 */ = {
 			isa = PBXGroup;
 			children = (
+				03BB67A52A122A630027185C /* com_miaoou_gwsg.json */,
 				030D36092999F437001AAFC0 /* GoogleService-Info.plist */,
-				03554A75299651E20078EFFB /* com_miaoou_gwsg.plist */,
-				03554A74299651E20078EFFB /* com_miaoou_gwsg.json */,
 				0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */,
 			);
 			path = V5;
@@ -4156,8 +4154,8 @@
 			files = (
 				039E6F2129D9900300890B3B /* GoogleSignIn.bundle in Resources */,
 				039E6ED629D9900300890B3B /* NOTICES in Resources */,
-				03554A76299651E20078EFFB /* com_miaoou_gwsg.json in Resources */,
 				030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */,
+				03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */,
 				039E6EDB29D9900300890B3B /* README.md in Resources */,
 				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
 				039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */,
@@ -6167,7 +6165,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6195,11 +6193,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_gwsg_0206;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
