@@ -95,6 +95,9 @@
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error || [result isCancelled]) {
             
+            //            更改手机时间系统时钟会出现下面的错误
+            //            Error Domain=com.facebook.sdk.core Code=309 "(null)" UserInfo={com.facebook.sdk:FBSDKErrorDeveloperMessageKey=Invalid ID token from login response.}
+            
             if ([result isCancelled]) {
                 NSLog(@"fb login isCancelled");
                 !cancelBlock ? : cancelBlock(error);
