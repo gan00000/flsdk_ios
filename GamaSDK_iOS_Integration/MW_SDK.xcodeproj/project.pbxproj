@@ -3137,6 +3137,17 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		03BB67A72A122AEB0027185C /* ThirdSrc */ = {
+			isa = PBXGroup;
+			children = (
+				03B918ED2860AECB0029AE6A /* Masonry */,
+				03B919072860AECB0029AE6A /* SDWebImage */,
+				322CBBE924C589A5000D6B20 /* AFNetworking */,
+				322CBBE324C589A5000D6B20 /* YYModel */,
+			);
+			path = ThirdSrc;
+			sourceTree = "<group>";
+		};
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3248,8 +3259,6 @@
 				03F59A48285776460062B6EE /* GCategory */,
 				322CBBBA24C589A5000D6B20 /* CComHeader.h */,
 				322CBBD524C589A5000D6B20 /* Utils */,
-				322CBBE324C589A5000D6B20 /* YYModel */,
-				322CBBE924C589A5000D6B20 /* AFNetworking */,
 				322CBBF824C589A5000D6B20 /* HttpService */,
 			);
 			path = Common;
@@ -3439,8 +3448,6 @@
 				039E6E8929D9900200890B3B /* Facebook-v16.0.0 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
 				0332F55928C5B44C00B7A99F /* LineSDK */,
-				03B918ED2860AECB0029AE6A /* Masonry */,
-				03B919072860AECB0029AE6A /* SDWebImage */,
 			);
 			path = ThirkLib;
 			sourceTree = "<group>";
@@ -3476,6 +3483,7 @@
 				32BE13DC24FB6154000BDFBE /* File.swift */,
 				E974121820874A170018E1A6 /* Resources */,
 				E97411C320874A170018E1A6 /* Demo */,
+				03BB67A72A122AEB0027185C /* ThirdSrc */,
 				322CBB9C24C589A5000D6B20 /* FLSDK */,
 				CEE6B9621A1499CB009E77FF /* Framework */,
 				CEE6B3721A148B1E009E77FF /* Products */,
