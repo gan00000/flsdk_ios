@@ -472,4 +472,7 @@
 #define afnReachability_MMMethodMMM          afnReachability
 #define getSdkVersion_MMMethodMMM           getSdkVersion_MMMethodMMM
 
+#define getPhoneAreaInfo_MMMethodMMM       getPhoneAreaInfo_MMMethodMMM
+#define getPhoneInfoByAreaCode_MMMethodMMM        getPhoneInfoByAreaCode_MMMethodMMM
+
 #endif  /* codeObfuscation_h */

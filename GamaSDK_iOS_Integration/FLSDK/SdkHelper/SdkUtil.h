@@ -72,6 +72,9 @@
 + (void)savePhoneAreaInfo_MMMethodMMM:(NSArray *)numberAry;
 + (NSArray *)fetchPhoneAreaInfo_MMMethodMMM;
 
++ (NSArray *)getPhoneAreaInfo_MMMethodMMM;
++ (NSDictionary *)getPhoneInfoByAreaCode_MMMethodMMM:(NSString *)areaCode;
+
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName;
 + (BOOL)isReportEventName_MMMethodMMM:(NSString *)eventName;
 @end

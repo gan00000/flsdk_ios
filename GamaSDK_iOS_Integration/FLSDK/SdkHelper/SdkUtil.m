@@ -574,11 +574,39 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+#pragma mark -服务端加载的手机区号信息
 + (NSArray *)fetchPhoneAreaInfo_MMMethodMMM
 {
     NSArray *tempAry = [[NSUserDefaults standardUserDefaults] objectForKey:SDK_PHONE_AREA_CODE];
     return tempAry;
 }
+
++ (NSArray *)getPhoneAreaInfo_MMMethodMMM
+{
+    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
+    if (serverInfo) {
+        return serverInfo;
+    }else{
+        return SDKRES.areaInfoArray;
+    }
+}
+
++ (NSDictionary *)getPhoneInfoByAreaCode_MMMethodMMM:(NSString *)areaCode
+{
+    areaCode = [[areaCode trim_MMMethodMMM] stringByReplacingOccurrencesOfString:@"+" withString:@""];
+    NSArray *phoneArry = [self getPhoneAreaInfo_MMMethodMMM];
+    for (NSDictionary *pInfo in phoneArry) {
+//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
+        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
+//        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
+        
+        if([areaCodeValue isEqualToString:areaCode]){
+            return pInfo;
+        }
+    }
+    return nil;
+}
+
 
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName
 {

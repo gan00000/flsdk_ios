@@ -429,12 +429,34 @@
 
     if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
         [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_area_code_not_empty.localx);
+        }
         return;
     }
     if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
         [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_empty.localx);
+        }
         return;
     }
+    
+    NSDictionary *pInfo = [SdkUtil getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
+    if(pInfo){
+        
+        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
+        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
+        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
+        if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
+            [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
+            if (mMWBlock) {
+                mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_match.localx);
+            }
+            return;
+        }
+    }
+    
 //    if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
 //        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
 //        return;

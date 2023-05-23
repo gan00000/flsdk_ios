@@ -17,12 +17,16 @@
 @implementation PhoneInfoModel
 
 - (void)setData {
-    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
-    if (serverInfo) {
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
-    }else{
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
-    }
+    
+//    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
+//    if (serverInfo) {
+//        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
+//    }else{
+//        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
+//    }
+    
+    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[SdkUtil getPhoneAreaInfo_MMMethodMMM]];
+    
 }
 
 - (id)init

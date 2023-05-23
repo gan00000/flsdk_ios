@@ -73,7 +73,7 @@ static dispatch_once_t onceToken;
     return nil;
 }
 
-#pragma mark -手机区号信息
+#pragma mark -本地bundle手机区号信息
 - (NSMutableArray *)areaInfoArray
 {
     if(!_areaInfoArray){
