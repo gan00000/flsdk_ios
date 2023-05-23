@@ -445,8 +445,8 @@
     NSDictionary *pInfo = [SdkUtil getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
     if(pInfo){
         
-        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
-        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
+//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
+//        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
         NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
         if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
             [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
