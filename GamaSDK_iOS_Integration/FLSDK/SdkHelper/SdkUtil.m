@@ -583,7 +583,7 @@
 
 + (NSArray *)getPhoneAreaInfo_MMMethodMMM
 {
-    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
+    NSArray *serverInfo = [self fetchPhoneAreaInfo_MMMethodMMM];
     if (serverInfo) {
         return serverInfo;
     }else{
