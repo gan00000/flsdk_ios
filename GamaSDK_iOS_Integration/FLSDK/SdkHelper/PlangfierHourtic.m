@@ -17,7 +17,10 @@
 @implementation PlangfierHourtic
 
 - (void)setData {
-    NSArray *serverInfo = [CulturalaceousPasserproof fetchPhoneAreaInfo_MMMethodMMM];
+    
+    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[CulturalaceousPasserproof getPhoneAreaInfo_MMMethodMMM]];
+    
+//    NSArray *serverInfo = [CulturalaceousPasserproof fetchPhoneAreaInfo_MMMethodMMM];
 
 		//====insert my code start===  2023-05-04 15:54:50
 		{
@@ -42,33 +45,6 @@
 		}
 		//====insert my code end===  2023-05-04 15:54:50
 
-    if (serverInfo) {
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
-    }else{
-        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
-
-		//====insert my code start===  2023-05-04 15:54:50
-		{
-		
-	NSMutableArray * l_11 = [self twoistPagier:nil phlegorTaliance:4228 saccthHeardom:nil monytureAll:6709 carryAuthordom:nil joceurNorthal:nil feelingOminency:nil ];
-	if(l_11){}
-
-		if(self.hypoaciousEsit){}
-		if(self.soncommunityaciousInsulian){}
-		if(self.sanguinSeeot){}
-		if(self.orecticaciousDolortoday){}
-	self.judicivityMeetingty = 6290;
-	if(self.judicivityMeetingty + 969 / 349 * 749 * 899 * 232 * 729 != 21424){}
-		if(self.necessaryesqueAngty){}
-		if(self.sentioonNumerbitard){}
-            float developmentetDominitor = 7907.0;
-            if (@(developmentetDominitor).intValue == 617) {
-                developmentetDominitor = developmentetDominitor - 1760;
-            }
-		}
-		//====insert my code end===  2023-05-04 15:54:50
-
-    }
 }
 
 - (id)init

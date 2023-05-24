@@ -1806,6 +1806,33 @@
     return tempAry;
 }
 
++ (NSArray *)getPhoneAreaInfo_MMMethodMMM
+{
+    NSArray *serverInfo = [self fetchPhoneAreaInfo_MMMethodMMM];
+    if (serverInfo) {
+        return serverInfo;
+    }else{
+        return SDKRES.areaInfoArray;
+    }
+}
+
++ (NSDictionary *)getPhoneInfoByAreaCode_MMMethodMMM:(NSString *)areaCode
+{
+    areaCode = [[areaCode trim_MMMethodMMM] stringByReplacingOccurrencesOfString:@"+" withString:@""];
+    NSArray *phoneArry = [self getPhoneAreaInfo_MMMethodMMM];
+    for (NSDictionary *pInfo in phoneArry) {
+//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
+        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
+//        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
+        
+        if([areaCodeValue isEqualToString:areaCode]){
+            return pInfo;
+        }
+    }
+    return nil;
+}
+
+
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName
 {
     [[NSUserDefaults standardUserDefaults] setObject:eventName forKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];

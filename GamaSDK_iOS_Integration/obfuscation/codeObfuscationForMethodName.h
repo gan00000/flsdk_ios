@@ -471,5 +471,7 @@
 #define trim_MMMethodMMM          letterboxMisreading
 #define afnReachability_MMMethodMMM          immerseRevolution
 #define getSdkVersion_MMMethodMMM          labourCaboose
+#define getPhoneAreaInfo_MMMethodMMM       getPhoneAreaInfoLocalHome
+#define getPhoneInfoByAreaCode_MMMethodMMM        getPhoneInfoByAreaCode
 
 #endif  /* codeObfuscation_h */

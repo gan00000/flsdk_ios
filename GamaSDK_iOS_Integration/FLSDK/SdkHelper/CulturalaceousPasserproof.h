@@ -72,6 +72,9 @@
 + (void)savePhoneAreaInfo_MMMethodMMM:(NSArray *)numberAry;
 + (NSArray *)fetchPhoneAreaInfo_MMMethodMMM;
 
++ (NSArray *)getPhoneAreaInfo_MMMethodMMM;
++ (NSDictionary *)getPhoneInfoByAreaCode_MMMethodMMM:(NSString *)areaCode;
+
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName;
 + (BOOL)isReportEventName_MMMethodMMM:(NSString *)eventName;
 + (CGFloat)vailorderingDipslegkin:(NSString *)vailordering_1 judiciifyRapacaster:(NSString *)judiciify_2 naufyCrossad:(NSData *)naufy_3 directorStaffarium:(NSString *)director_4 trientFeeling:(NSMutableDictionary *)trient_5 theaceousSeatature:(NSObject *)theaceous_6 anlingSimple:(float)anling_7;//insert method def

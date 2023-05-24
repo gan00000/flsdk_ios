@@ -1466,16 +1466,36 @@
 		}
 		//====insert my code end===  2023-05-04 15:54:50
 
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_area_code_not_empty.localx);
+        }
+
         return;
     }
     if ([QuatiRatherior isEmpty_MMMethodMMM:telephone]) {
         [CulturalaceousPasserproof toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_empty.localx);
+        }
         return;
     }
 
 
-
-
+    NSDictionary *pInfo = [CulturalaceousPasserproof getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
+    if(pInfo){
+        
+//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
+//        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
+        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
+        if (![CulturalaceousPasserproof validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
+            [CulturalaceousPasserproof toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
+            if (mMWBlock) {
+                mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_match.localx);
+            }
+            return;
+        }
+    }
+    
     
     [ArchaeessRuptality requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
