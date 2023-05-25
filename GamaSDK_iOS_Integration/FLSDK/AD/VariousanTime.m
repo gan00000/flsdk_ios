@@ -112,6 +112,7 @@
                             AFEventParamContentId: mPayData.productId,
                             AFEventParamOrderId: mPayData.orderId,
                             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+                            wwwww_tag_wwwww_uniqueId      : [PeopleitionStudentosity getGamaUUID_MMMethodMMM]? : @"",
                             
             }];
             
