@@ -70,7 +70,7 @@
 //        case GamaThirdPartyTypeLine:
 //        {
 //            if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
-//                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https:itunes.apple.com/app/line/id443904275"]];
+//                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/line/id443904275"]];
 //                return;
 //            }
 //            [GamaThirdSocial social_shareByLineWithParam:par success:success failure:failure];
