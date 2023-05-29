@@ -1,4 +1,4 @@
-//
+
 #import "BindPhoneViewV2.h"
 #import "SdkUtil.h"
 #import "UIColor+HexStringToColorTW.h"
@@ -36,10 +36,10 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor whiteColor];
-        //        self.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.masksToBounds = YES;
+        
+        
+        
+        
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
         mPhoneInfoModel = [[PhoneInfoModel alloc] init];
@@ -59,8 +59,8 @@
     UIView *contentView = [[UIView alloc] init];
     
     UIColor *color = [UIColor whiteColor];
-    contentView.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-    contentView.layer.cornerRadius = 10; //设置圆角
+    contentView.backgroundColor = color;
+    contentView.layer.cornerRadius = 10; 
     contentView.layer.masksToBounds = YES;
     
     [self addSubview:contentView];
@@ -77,8 +77,8 @@
         make.top.mas_equalTo(contentView.mas_top).mas_offset(VH(15));
         make.leading.mas_equalTo(contentView).mas_offset(VW(15));
         make.trailing.mas_equalTo(contentView).mas_offset(VW(-15));
-        //        make.width.mas_equalTo(self);
-        //        make.height.mas_equalTo(VH(40));
+        
+        
     }];
     
     UIView *tagView = [[UIView alloc] init];
@@ -89,7 +89,7 @@
         make.leading.mas_equalTo(titleView);
         make.width.mas_equalTo(VW(4));
         make.height.mas_equalTo(VH(14));
-        //        make.top.mas_equalTo(titleView);
+        
         make.bottom.mas_equalTo(titleView);
     }];
     
@@ -99,7 +99,7 @@
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.center.mas_equalTo(titleView);
+        
         make.leading.mas_equalTo(titleView).mas_offset(6);
         make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView);
@@ -110,7 +110,7 @@
     
     [titleView addSubview:closeBtn];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.center.mas_equalTo(titleView);
+        
         make.trailing.mas_equalTo(titleView);
         make.centerY.mas_equalTo(titleView);
         make.width.mas_equalTo(VH(22));
@@ -178,13 +178,13 @@
     
     
     
-    //==============
+    
     
     
     UIView *vfInfoView = [[UIView alloc] init];
-    //    vfInfoView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
-    //    vfInfoView.layer.borderWidth = 0.5;
-    //    vfInfoView.layer.cornerRadius = VH(20);
+    
+    
+    
     [contentView addSubview:vfInfoView];
     [vfInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.mas_equalTo(titleView);
@@ -209,15 +209,15 @@
         
     }];
     
-    //獲取驗證碼
+    
     getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     
     getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     getVfCodeBtn.layer.borderWidth = 0.5;
     getVfCodeBtn.layer.cornerRadius = VH(20);
-    //        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-    //        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
+    
+    
     [vfInfoView addSubview:getVfCodeBtn];
     [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -253,9 +253,7 @@
     }];
     
     self.countTimerDelegate = self;
-//    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
     
-//    AccountModel *xx = SDK_DATA.mLoginResponse.data;
     
     if (SDK_DATA.mLoginResponse.data.isBindPhone) {
         
@@ -278,16 +276,9 @@
             
             [areaCodeLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.center.mas_equalTo(phoneAreaCodeView);
-//                make.leading.mas_equalTo(phoneAreaCodeView).mas_offset(VW(15));
                 
             }];
             
-//            [areaMoreBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
-//                make.leading.mas_equalTo(areaCodeLabel.mas_trailing).mas_offset(VW(10));
-//                make.centerY.mas_equalTo(phoneAreaCodeView);
-//                make.width.height.mas_equalTo(VH(16));
-//
-//            }];
         }
         
     }else{
@@ -311,8 +302,8 @@
         case kGetVfCodeActTag:
         {
             NSString *tel = phoneNumFiled.inputTextField.text;
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
-            //NSString *vfCode = vfCodeFiled.inputTextField.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;
+            
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
                 return;
@@ -351,13 +342,13 @@
         case kOkActTag:
             
         {
-            if(SDK_DATA.mLoginResponse.data.isBindPhone) //已经绑定的状态
+            if(SDK_DATA.mLoginResponse.data.isBindPhone) 
             {
                 [self removeFromGameView];
                 return;
             }
             NSString *tel = phoneNumFiled.inputTextField.text;
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;
             NSString *vfCode = vfCodeFiled.inputTextField.text;
             
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {

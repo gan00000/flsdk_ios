@@ -1,10 +1,4 @@
-//
-//  MainLoginView.m
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/21.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
 
 #import "MainHomeViewV2.h"
 #import "UIUtil.H"
@@ -44,9 +38,9 @@
 
 - (void)showTermsView_MMMethodMMM {
     SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
-    //            if (self.delegate) {
-    //                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME) param_MMMethodMMM:0];
-    //            }
+    
+    
+    
     
     TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
         checkBoxTermsBtn.selected = YES;
@@ -75,13 +69,7 @@
 -(void)addView_MMMethodMMM
 {
     
-    //test
-//    SDK_DATA.mConfigModel.appleLogin = YES;
-//    SDK_DATA.mConfigModel.appPassCheck = YES;
-//    SDK_DATA.mConfigModel.deleteAccount = YES;
-//    SDK_DATA.mConfigModel.showLogo = YES;
-//    SDK_DATA.mConfigModel.googleLogin = YES;
-//    SDK_DATA.mConfigModel.showContract = YES;
+    
     
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
@@ -91,7 +79,7 @@
         make.height.mas_equalTo(VH(286));
     }];
     
-    //设置图片bg
+    
     UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_view];
     [myView addSubview:bgIV];
     [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -104,7 +92,6 @@
     [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(myView);
         make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-18));
-//        make.top.mas_equalTo(loginTypeView.mas_bottom).mas_offset(VH(25));
     }];
     
     checkBoxTermsBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
@@ -130,7 +117,7 @@
          };
          NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
         [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
-         //赋值
+         
         rememberTermsLable.attributedText = attribtStr;
         
         [termAgreeView addSubview:rememberTermsLable];
@@ -147,14 +134,14 @@
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     termAgreeView.hidden = !mConfigModel.showContract;
     
-    //登录方式
+    
     UIView *loginTypeView = [[UIView alloc] init];
     [myView addSubview:loginTypeView];
     [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(myView);
         make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-30));
         
-        //make.bottom.mas_equalTo(contentView.mas_bottom);
+        
     }];
     
     
@@ -185,11 +172,11 @@
                 appleLoginBtn.tag = lbd.tag;
                 appleLoginBtn.cornerRadius = 5;
                 btnView = appleLoginBtn;
-                //btn_w = VW(34-6);
+                
             }
             
         }else{
-            //btn_w = VW(34);
+            
             LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
             
             btnView = mBtn;
@@ -202,7 +189,7 @@
             [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.width.mas_equalTo(btn_w);
                 make.height.mas_equalTo(btn_h);
-                //make.centerY.mas_equalTo(loginTypeView);
+                
                 make.top.mas_equalTo(loginTypeView);
                 make.bottom.mas_equalTo(loginTypeView);
                 
@@ -213,8 +200,6 @@
                 }
                 if (i == loginBtnDatas.count - 1) {
                     make.trailing.mas_equalTo(loginTypeView);
-//                    make.top.mas_equalTo(loginTypeView);
-//                    make.bottom.mas_equalTo(loginTypeView);
                 }
             }];
             
@@ -224,7 +209,7 @@
 
     }
     
-    //----------
+    
     
     UIView *contentView_parent = [[UIView alloc] init];
     [myView addSubview:contentView_parent];
@@ -241,10 +226,9 @@
     }];
     
     
-    //游客登录
+    
     guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     [guestLoginBtn.layer setCornerRadius:VH(5)];
-//    guestLoginBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
     guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     
     [contentView addSubview:guestLoginBtn];
@@ -252,14 +236,12 @@
     [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.mas_equalTo(contentView);
-//        make.leading.mas_equalTo(contentView).mas_offset(VH(38));
-//        make.trailing.mas_equalTo(contentView).mas_offset(VH(-38));
         make.centerX.mas_equalTo(contentView);
         make.width.mas_equalTo(VW(300));
         make.height.mas_equalTo(VH(50));
     }];
     
-    // gradient
+    
     CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
     
@@ -271,7 +253,6 @@
     [guestLoginBtn addSubview:guestLoginBtnContent];
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(guestLoginBtn);
-//        make.top.mas_equalTo(otherLoginLabel.mas_bottom).mas_offset(VH(24));
     }];
     
     UIButton *guestIconBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:guse_login_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
@@ -290,13 +271,12 @@
         make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
     }];
     if (!SDK_DATA.mConfigModel.visitorLogin) {
-//        guestLoginBtnContent.hidden = YES;
         guestLoginBtn.hidden = YES;
     }
     
     
     UIView *topView = guestLoginBtn;
-    //游客登录 end
+    
     
     
     if (@available(iOS 13.0, *)) {
@@ -339,7 +319,6 @@
     [hasAccountContent addSubview:hasAccountLabel];
     [hasAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.top.mas_equalTo(hasAccountContent);
-//        make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
     }];
     
     UILabel *loginLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
@@ -444,81 +423,12 @@
         return YES;
     }
     [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
-//    [AlertUtil showAlertWithMessage_MMMethodMMM:];
     [self showTermsView_MMMethodMMM];
     return NO;
 }
 
 #pragma mark - 删除账号按钮
 
-//-(UIView *)addDeleteAccountConfireView_MMMethodMMM
-//{
-//
-//    if (deleteAccountConfireView) {
-//        [deleteAccountConfireView removeFromSuperview];
-//    }
-//
-//    UIView *deleteView = [[UIView alloc] init];
-//    deleteView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.85];
-//    deleteView.layer.cornerRadius = VW(10);
-//
-//    [self addSubview:deleteView];
-//
-//    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self);
-//        make.width.mas_equalTo(VW(272));
-//    }];
-//
-//    UIImageView *deleteWarmIV = [UIUtil initImageViewWithImage_MMMethodMMM:nend_update_account_bg];
-//    [deleteView addSubview:deleteWarmIV];
-//    [deleteWarmIV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(deleteView).mas_offset(VH(12));
-//        make.centerX.equalTo(self);
-//        make.height.width.mas_equalTo(VW(25));
-//    }];
-//
-//    UILabel *deleteWarmLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account_tips) fontSize_MMMethodMMM:FS(13) textColor_MMMethodMMM:[UIColor whiteColor]];
-//    [deleteView addSubview:deleteWarmLabel];
-//    deleteWarmLabel.numberOfLines = 0;
-//    [deleteWarmLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(deleteWarmIV.mas_bottom).mas_offset(VH(10));
-//        make.leading.mas_equalTo(deleteView).mas_offset(VW(14));
-//        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-14));
-//    }];
-//
-//    UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_cancel) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-////    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
-//    cancelBtn.layer.cornerRadius = VW(16);
-//    cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
-//    cancelBtn.layer.borderWidth = 1;
-//
-//    [deleteView addSubview:cancelBtn];
-//    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(deleteWarmLabel.mas_bottom).mas_offset(VH(18));
-//        make.bottom.mas_equalTo(deleteView).mas_offset(VH(-18));
-//        make.height.mas_equalTo(VW(32));
-//        make.width.mas_equalTo(VW(108));
-//        make.trailing.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(-11));
-//    }];
-//
-//    UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
-//    sureBtn.layer.cornerRadius = VW(16);
-////    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
-////    sureBtn.layer.borderWidth = 1;
-//
-//    [deleteView addSubview:sureBtn];
-//    [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(cancelBtn);
-//        make.bottom.mas_equalTo(cancelBtn);
-//        make.width.mas_equalTo(cancelBtn);
-//        make.leading.mas_equalTo(deleteView.mas_centerX).mas_offset(VW(11));
-//    }];
-//
-//    deleteAccountConfireView = deleteView;
-//    return deleteAccountConfireView;
-//
-//}
 
 
 -(void)addDeleteAccountView_MMMethodMMM
@@ -548,44 +458,10 @@
     
     [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-//        [self addDeleteAccountConfireView_MMMethodMMM];
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
         
     }];
     
-//    deleteBtnView = deleteView;
 }
 
-//- (void)doDeleteAccount_MMMethodMMM {
-//
-//    if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
-//        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
-//        return;
-//    }
-//    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
-//
-//        [deleteAccountConfireView removeFromSuperview];
-//        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
-//        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
-//            currentAccountModel = mAccountArray[0];
-//
-//            [accountDataList removeAllObjects];
-//            [accountDataList addObjectsFromArray:mAccountArray];
-//
-//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
-//
-////            [self setViewStatue_MMMethodMMM];
-//
-//        }else{
-//            AccountModel *tempA = [[AccountModel alloc] init];
-//            tempA.loginType = LOGIN_TYPE_SELF;
-//            tempA.account = @"";
-//            tempA.password = @"";
-//            currentAccountModel = tempA;
-//            [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempA accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
-//
-//        }
-//
-//    }];
-//}
 @end

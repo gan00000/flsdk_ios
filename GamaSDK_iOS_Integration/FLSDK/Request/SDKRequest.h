@@ -1,14 +1,7 @@
-//
-//  SDKRequest.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/7/20.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 #import "HttpServiceEngineLogin.h"
-//#import "HttpServiceEngineAd.h"
 #import "HttpServiceEnginePay.h"
 #import "SdkHeader.h"
 #import "LoginResponse.h"
@@ -40,7 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
            successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
              errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//用户登录
 +(void)doLoginWithAccount_MMMethodMMM:(NSString *)userName
               andPassword_MMMethodMMM:(NSString *)password
                  otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
@@ -79,7 +71,6 @@ NS_ASSUME_NONNULL_BEGIN
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//修改密码
 +(void)doChangePasswordWithUserName_MMMethodMMM:(NSString *)userName
                      andOldPassword_MMMethodMMM:(NSString *)oldPassword
                      andNewPassword_MMMethodMMM:(NSString *)newPassword
@@ -87,7 +78,6 @@ NS_ASSUME_NONNULL_BEGIN
                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
-//找回密码
 +(void)doForgotPasswordWithUserName_MMMethodMMM:(NSString *)userName
                       phoneAreaCode_MMMethodMMM:(NSString *)phoneAreaCode
                         phoneNumber_MMMethodMMM:(NSString *)phoneN

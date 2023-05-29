@@ -1,10 +1,4 @@
-//
-//  FindPasswordView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "FindPasswordViewV2.h"
 #import "SdkHeader.h"
@@ -21,10 +15,9 @@
 {
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *newPwdSDKTextFiledView;
-//    SDKTextFiledView *againPwdSDKTextFiledView;
     
     SDKTextFiledView *vfCodeFiledView;
-    //    PhoneView *mPhoneView;
+    
     
     LoginTitleView   *mLoginTitleView;
     UIButton *getVfCodeBtn;
@@ -39,15 +32,15 @@
     self = [super init];
     if (self) {
         
-        //        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-        //        self.backgroundColor = color;// 底图透明，控件不透明
-        //        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-        //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
+        
+        
+        
+        
+        
+        
         
         UIView *myView = [[UIView alloc] init];
-    //    myView.backgroundColor = UIColor.lightGrayColor;
+    
         [self addSubview:myView];
         [myView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(self);
@@ -55,31 +48,30 @@
             make.height.mas_equalTo(VH(326));
         }];
         
-        //设置图片bg
+        
         UIImageView *bgIV = [UIUtil initImageViewWithImage_MMMethodMMM:sdk_bg_page];
         [myView addSubview:bgIV];
         [bgIV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(myView);
         }];
         
-        //title
+        
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
-        //          mLoginTitleView.delegate = self.delegate;//此处不起作用
+        
         
         [myView addSubview:mLoginTitleView];
         [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(myView.mas_top).mas_offset(VH(14));
             make.leading.trailing.mas_equalTo(myView);
-//            make.width.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
         }];
         
         
         
-        //账号
+        
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn.hidden = YES;
         [myView addSubview:accountSDKTextFiledView];
@@ -93,7 +85,7 @@
             
         }];
         
-        //新密码
+        
         newPwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
         [myView addSubview:newPwdSDKTextFiledView];
         
@@ -107,15 +99,11 @@
         }];
         
         
-        //獲取驗證碼
+        
         getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         getVfCodeBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-//        getVfCodeBtn.layer.borderWidth = 1;
         getVfCodeBtn.layer.cornerRadius = VH(5);
-//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-//        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
         [myView addSubview:getVfCodeBtn];
         [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
@@ -127,7 +115,7 @@
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
-        //驗證碼输入框
+        
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
         [myView addSubview:vfCodeFiledView];
@@ -136,17 +124,14 @@
             make.bottom.equalTo(getVfCodeBtn);
             
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
             make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
         }];
         
         
-        //確認
+        
         UIButton *okBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-//        [okBtn setTitleColor:[UIColor whiteColor] forState:0];
         [okBtn.layer setCornerRadius:VH(5)];
-//        okBtn.titleLabel.font = [UIFont systemFontOfSize:FS(17)];
         okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [myView addSubview:okBtn];
         
@@ -166,15 +151,6 @@
         }];
 
         
-//        UIButton *okBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_OK) tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
-//        [self addSubview:okBtn];
-//
-//        [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.equalTo(self);
-//            make.top.equalTo(vfCodeFiledView.mas_bottom).mas_offset(VH(60));
-//            make.width.mas_equalTo(accountSDKTextFiledView);
-//            make.height.mas_equalTo(VH(70));
-//        }];
         
     }
     return self;
@@ -215,12 +191,11 @@
 {
     NSString *userName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
     
-    NSString *areaCode = @"";//[mPhoneView getPhoneAreaCode_MMMethodMMM];
-    NSString *phoneNum = @"";//[mPhoneView getPhoneNumber_MMMethodMMM];
+    NSString *areaCode = @"";
+    NSString *phoneNum = @"";
     NSString *vfCode = [vfCodeFiledView.inputUITextField.text trim_MMMethodMMM];
     
     NSString *newPwd = [newPwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
-//    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
     if (![SdkUtil validUserName_MMMethodMMM:userName]) {
         return;
@@ -237,11 +212,6 @@
         return;
     }
     
-//    if (![newPwd isEqualToString:againPwd]) {
-//
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_pwd_not_equel)];
-//        return;
-//    }
     
     NSDictionary *otherParamsDic = nil;
     @try {
@@ -265,7 +235,6 @@
             cc.data.loginType = LOGIN_TYPE_SELF;
             [weakSelf.delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
-//        [self removeFromSuperview];//返回登录界面
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
@@ -273,21 +242,6 @@
     
 }
 
-//- (void)requestVfCodeByPhone:(NSString *)phoneArea phoneNumber_MMMethodMMM:(NSString *)phoneN
-//{
-//
-//
-//    [SDKRequest requestVfCode_MMMethodMMM:phoneArea phoneNumber_MMMethodMMM:phoneN email_MMMethodMMM:@"" interfaces_MMMethodMMM:wwwww_tag_wwwww_4 otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-//
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
-//
-//        [self downTime_MMMethodMMM];
-//
-//    } errorBlock_MMMethodMMM:^(BJError *error) {
-//        [self resetVfCodeBtnStatue_MMMethodMMM];
-//        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-//    }];
-//}
 
 - (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
 {
@@ -301,15 +255,14 @@
     }];
 }
 
-//倒计时
 -(void)downTime_MMMethodMMM{
     
     phoneCountdown = 60;
     getVfCodeBtn.userInteractionEnabled = NO;
     [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
-    //getVfCodeBtn.layer.masksToBounds = YES;
-    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
+    
+    
     if (downTimer) {
         [downTimer invalidate];
         downTimer = nil;

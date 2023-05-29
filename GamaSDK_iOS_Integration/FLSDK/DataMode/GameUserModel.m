@@ -1,4 +1,4 @@
-//
+
 
 
 #import "GameUserModel.h"
@@ -7,7 +7,6 @@
 
 @implementation GameUserModel
 
-//初始化参数
 - (instancetype)init
 {
     self = [super init];
