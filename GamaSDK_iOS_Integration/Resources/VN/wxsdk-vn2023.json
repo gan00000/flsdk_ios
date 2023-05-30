@@ -1,0 +1,17 @@
+{   "af_dev_key" : "MR7SSD9836MbJCLQrsfzt7",
+    "appKey" : "872b5e6f89a0ed0ec1be6bae801acb60",
+    "gameCode" : "mxwvnios",
+    "gameLanguage" : "vi_VN",
+    "sdk_language" : "vi",
+    "sdk_ad_bug" : "0",
+    "sdk_appId" : "6449520792",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "mxwvnios_res",
+    "sdk_url_cdn" : "https://cdn-download.tthplay.com/",
+    "sdk_url_log" : "https://log.tthplay.com/",
+    "sdk_url_login" : "https://login.tthplay.com/",
+    "sdk_url_pay" : "https://pay.tthplay.com/",
+    "sdk_v_version" : "v_vn",
+    "terms_service_url" : "https://member.tthplay.com/sdk/agreement/%@_agreement.html"
+    
+}

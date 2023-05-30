@@ -93,7 +93,7 @@
 		//====insert my code end===  2023-05-30 11:20:43
 
     });
-    
+    _shareSP.sdkBaseEncryptKey = @"wxsdk-vn2023";
     return _shareSP;
 }
 
