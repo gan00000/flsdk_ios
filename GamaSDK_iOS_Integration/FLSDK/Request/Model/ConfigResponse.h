@@ -1,13 +1,13 @@
 
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "PersonaliaSacra.h"
 #import "ConfigModel.h"
 #import "UrlMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ConfigResponse : BJBaseResponceModel
+@interface ConfigResponse : PersonaliaSacra
 
 @property (nonatomic, strong) NSArray<ConfigModel *> *allVersion;
 @property (nonatomic, strong) NSArray *opiniaExperdom;//===insert my property===

@@ -3,22 +3,22 @@
 #import "Masonry.h"
 #import "CComHeader.h" 
 
-#import "USDefault.h"
-#import "UIImage+ResBundle.h"
-#import "UIColor+HexStringToColorTW.h"
-#import "UIUtil.h"
-#import "CCSDKDATA.h"
-#import "ConfigCoreUtil.h"
+#import "MarriageiousSpecial.h"
+#import "UIImage+LepouleAgreementics.h"
+#import "UIColor+HibularVehness.h"
+#import "LinguPhylactrepresenttic.h"
+#import "ActurnessKnowledgeesque.h"
+#import "TruthineFaci.h"
 #import "LoginResponse.h"
 
-#import "SUtil.h"  
+#import "CenturyiaGraphic.h"  
 #import "ResHeader.h" 
-#import "AdLogger.h"
-#import "StringUtil.h"
-#import "DimeUtil.h"
-#import "SdkUtil.h"
-#import "NSString+Local.h"
-#import "NSString+Common.h"
+#import "MalsortableChoiceer.h"
+#import "DrugfulMediic.h"
+#import "OverismEducationatory.h"
+#import "AmphressCytoacy.h"
+#import "NSString+OpularianLexicoesque.h"
+#import "NSString+OftenasterArtular.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -33,18 +33,18 @@
 #define ContentViewBgColor                    wwwww_tag_wwwww__CC_f4f4f5
 #define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
 
-#define SDK_DATA                           [CCSDKDATA sharedSdkData_MMMethodMMM]
+#define SDK_DATA                           [ActurnessKnowledgeesque sharedSdkData_MMMethodMMM]
 
 #define GetImage(imageName)     [UIImage res_imageNamed_MMMethodMMM:imageName]
 
-#define appTopViewController    [SUtil getCurrentViewController_MMMethodMMM]
+#define appTopViewController    [CenturyiaGraphic getCurrentViewController_MMMethodMMM]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-#define device_is_iPhoneX   [SUtil isIPhoneXSeries_MMMethodMMM]
+#define device_is_iPhoneX   [CenturyiaGraphic isIPhoneXSeries_MMMethodMMM]
 
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[DimeUtil share] getViewHeight_MMMethodMMM:h]
-#define VW(w)  [[DimeUtil share] getViewWidth_MMMethodMMM:w]
-#define FS(size)  [[DimeUtil share] getFontSize_MMMethodMMM:size]
+#define VH(h)  [[OverismEducationatory share] getViewHeight_MMMethodMMM:h]
+#define VW(w)  [[OverismEducationatory share] getViewWidth_MMMethodMMM:w]
+#define FS(size)  [[OverismEducationatory share] getFontSize_MMMethodMMM:size]
 
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)

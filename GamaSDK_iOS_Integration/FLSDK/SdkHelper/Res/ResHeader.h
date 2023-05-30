@@ -1,11 +1,11 @@
 
-#import "SUtil.h"
-#import "AlertUtil.h"
-#import "ResReader.h"
-#import "NSString+URLEncoding.h"
+#import "CenturyiaGraphic.h"
+#import "MeanSecutization.h"
+#import "AstroatoryOtthroughoon.h"
+#import "NSString+CollegeNov.h"
 
 
-#define SDKRES    [ResReader reader_MMMethodMMM]
+#define SDKRES    [AstroatoryOtthroughoon reader_MMMethodMMM]
 #define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
 #define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
 #define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]
