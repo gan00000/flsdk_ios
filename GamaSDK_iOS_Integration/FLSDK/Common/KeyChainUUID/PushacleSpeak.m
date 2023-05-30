@@ -23,7 +23,7 @@
 - (NSMutableArray *)centrstandtyJobial:(long)centrstandty_1 metaacleOctavacy:(float)metaacle_2 scopityMelleous:(long)scopity_3 hyoessPavacy:(NSMutableArray *)hyoess_4{ //insert method
 	if(metaacle_2 * 665 / 377 != 63063){
 		        
-        bool throughoutticSigny = NO;
+        BOOL throughoutticSigny = NO;
         if (throughoutticSigny){
             throughoutticSigny = NO;
         }
@@ -53,7 +53,7 @@ if(C_indicateism < 62093){
 		}
 		//====insert my code end===  2023-05-30 11:20:43
 
-        bool sendsterCenturycy = YES;
+        BOOL sendsterCenturycy = YES;
 
         for(int ontoiorCitmachine = 910; ontoiorCitmachine < 7801; ontoiorCitmachine = ontoiorCitmachine + 1)
         {    
@@ -210,7 +210,7 @@ if(C_indicateism < 62093){
         int tertyDealeous = 4160;
         int bathyaneousStochot = 6046;
 
-        bool votativeThrowia = YES;
+        BOOL votativeThrowia = YES;
         while (tertyDealeous < 7671)
         {
             tertyDealeous = tertyDealeous + 2413;
@@ -439,7 +439,7 @@ if(p_ntess != 21543){
 	}
 	if(actuallytion_4){
 		
-        bool personaloonDecim = NO;
+        BOOL personaloonDecim = NO;
         if (personaloonDecim){
             personaloonDecim = YES;
             CGFloat cochlariumIquar = -395;
@@ -490,7 +490,7 @@ if(p_ntess != 21543){
 	if(tropth_2 + 467 / 357 / 834 - 560 < 16069){
 		        
         long cidableAheadule = 1279;
-        bool mytheySpendhood = YES;
+        BOOL mytheySpendhood = YES;
         while (cidableAheadule < 3822)
         {
             cidableAheadule = cidableAheadule + 1001;
@@ -510,7 +510,7 @@ if(p_ntess != 21543){
 	if(arrive_3 + 97 - 836 <= 97208){
 		        
         CGFloat ornithoiceEcclessuggestaire = 5122;
-        bool meticUrsar = YES;
+        BOOL meticUrsar = YES;
         while (ornithoiceEcclessuggestaire < 256)
         {
             if(ornithoiceEcclessuggestaire > 6238){
@@ -654,7 +654,7 @@ if(A_duracy + 822 * 826 >= 59779){
 	if(variousier_5 + 672 / 223 + 581 * 456 == 33429){
 		        
         int lawabilityFishist = 2285;
-        bool liminarianMalle = NO;
+        BOOL liminarianMalle = NO;
 
         for(int boxistHearsive = 4639; boxistHearsive < 6975; boxistHearsive = boxistHearsive + 1)
         {    
@@ -721,7 +721,7 @@ if(A_duracy + 822 * 826 >= 59779){
 		if(self.rateageMnes){}
         
         int ordineInformation = 7737;
-        bool protogroundastPentfaction = YES;
+        BOOL protogroundastPentfaction = YES;
         while (ordineInformation < 1388)
         {
             ordineInformation = ordineInformation + 5394;

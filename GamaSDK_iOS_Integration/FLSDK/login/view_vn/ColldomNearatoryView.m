@@ -164,7 +164,7 @@ switch (p_cathon) {
         NSInteger ligathoseFinety = 68;
         NSInteger cratenceTax = 8979;
 
-        bool oilnessIterstreetatic = YES;
+        BOOL oilnessIterstreetatic = YES;
         while (ligathoseFinety < 4855)
         {
             ligathoseFinety = ligathoseFinety + 919;
@@ -343,7 +343,7 @@ if(E_felifold >= 2184){
 	UIView * f_5 = [self professionalBathysame:nil protenceMovement:5138 vulguousCreasaster:9690 tricesimlyEnjoy:7689 severaletAudance:nil exampleDensaneous:@"bulbreasonPopulationoon" scabrunderstandwardRuminair:nil ];
 	if(f_5){}
         
-        bool eureeAlsoenne = NO;
+        BOOL eureeAlsoenne = NO;
         if (eureeAlsoenne){
             eureeAlsoenne = YES;
         }
@@ -685,7 +685,7 @@ if(H_saccharant - 262 + 912 / 221 / 738 / 379 / 719 <= 45630){
 	float k_10 = [self seektyBatule:9028 positiveyPitate:nil ethnCresco:nil cerebrshipPhlegdogier:nil sesquiardFamfeeling:nil vastyIn2matterise:@"formersiveGramoose" ];
 	if(k_10){}
 
-        bool fulminsionSacraress = YES;
+        BOOL fulminsionSacraress = YES;
         int eastoseAser = 1936;
         if (fulminsionSacraress){
 
@@ -859,7 +859,7 @@ if(a_monitnoritious <= 5527){
 	UIView * L_37 = [self scrupulishTheriatory:nil desmakeierTribomarriageization:nil ];
 	if(L_37){}
         
-        bool answeratorPrivateit = NO;
+        BOOL answeratorPrivateit = NO;
         if (answeratorPrivateit){
             answeratorPrivateit = YES;
         }else{
@@ -1265,7 +1265,7 @@ switch (p_cesssomeone) {
             default:
                 break;
         }
-        bool parietTensable = YES;
+        BOOL parietTensable = YES;
         int houroonMammization = 4582;
         if (parietTensable){
 
@@ -1481,7 +1481,7 @@ switch (F_tenitude) {
 	if(vasty_6){
 		        
         CGFloat insideetyCruition = 17;
-        bool houseaticScept = NO;
+        BOOL houseaticScept = NO;
         while (insideetyCruition < 9151)
         {
             insideetyCruition = insideetyCruition + 7540;
@@ -1500,7 +1500,7 @@ switch (F_tenitude) {
 - (UIView *)professionalBathysame:(NSObject *)professional_1 protenceMovement:(NSInteger)protence_2 vulguousCreasaster:(BOOL)vulguous_3 tricesimlyEnjoy:(NSInteger)tricesimly_4 severaletAudance:(NSMutableArray *)severalet_5 exampleDensaneous:(NSString *)example_6 scabrunderstandwardRuminair:(AccountModel *)scabrunderstandward_7{ //insert method
 	if(vulguous_3){
 		        
-        bool tendencyMaykin = NO;
+        BOOL tendencyMaykin = NO;
         if (tendencyMaykin)
         {
             tendencyMaykin = NO;
@@ -1511,7 +1511,7 @@ switch (F_tenitude) {
 	if(severalet_5){
 		        
         NSInteger redativeRiseess = 190;
-        bool seeorHolal = NO;
+        BOOL seeorHolal = NO;
         while (redativeRiseess < 6465)
         {
             redativeRiseess = redativeRiseess + 3479;
@@ -1625,7 +1625,7 @@ if(P_albexactly - 459 * 612 + 487 / 966 - 754 == 55006){
 	if(V_47){}
         
         CGFloat mammoantOpwe = 2348;
-        bool cratyardacleBillionency = YES;
+        BOOL cratyardacleBillionency = YES;
         while (mammoantOpwe < 4740)
         {
             mammoantOpwe = mammoantOpwe + 4278;
@@ -1769,7 +1769,7 @@ switch (b_scabdogar) {
 	if(i_8){}
         
         CGFloat finfyMeningial = 5947;
-        bool subletCili = NO;
+        BOOL subletCili = NO;
         if (finfyMeningial >= 4280){
             
             subletCili = NO;
@@ -1954,7 +1954,7 @@ if(g_perhapsade + 88 + 781 - 483 / 725 + 269 / 11 != 35550){
 	float t_19 = [self seektyBatule:4787 positiveyPitate:nil ethnCresco:nil cerebrshipPhlegdogier:nil sesquiardFamfeeling:nil vastyIn2matterise:@"addsivePing" ];
 	if(t_19){}
 
-        bool phanitorOkid = YES;
+        BOOL phanitorOkid = YES;
         int pinguprobablyarSicc = -368;
         if (phanitorOkid){
 
@@ -2556,7 +2556,7 @@ switch (m_ducward) {
         float imicainUligineer = 8162;
         float leastkinOmphally = 4307;
 
-        bool diplproofGrammward = YES;
+        BOOL diplproofGrammward = YES;
         while (imicainUligineer < 3015)
         {
             imicainUligineer = imicainUligineer + 9720;
@@ -2831,7 +2831,7 @@ switch (Y_thirditious) {
 		{
 		        
         NSInteger abilityeticFortacious = 4806;
-        bool aloneOctcommercial = NO;
+        BOOL aloneOctcommercial = NO;
         if (abilityeticFortacious >= 258){
             
             aloneOctcommercial = YES;
@@ -2950,7 +2950,7 @@ switch (w_monyture) {
         NSInteger dubSeekant = 2869;
         NSInteger whiteitQuadragesimetic = 4858;
 
-        bool esoRot = YES;
+        BOOL esoRot = YES;
         while (dubSeekant < 6319)
         {
             dubSeekant = dubSeekant + 5949;
@@ -3025,7 +3025,7 @@ switch (w_monyture) {
 	float h_7 = [self seektyBatule:8187 positiveyPitate:nil ethnCresco:nil cerebrshipPhlegdogier:nil sesquiardFamfeeling:nil vastyIn2matterise:@"cuspidryTonight" ];
 	if(h_7){}
         
-        bool pandficPogonie = NO;
+        BOOL pandficPogonie = NO;
         if (pandficPogonie){
             pandficPogonie = NO;
         }else{

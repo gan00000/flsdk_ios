@@ -77,7 +77,7 @@ if(s_movement + 787 - 96 + 632 - 224 - 938 == 10418){
 		
 	[self seatibleReportfic:7153 bromMillion:@"esthCardator" nodingSaveetic:nil finishacyWestern:@"dinoitudeKakolegal" clementiousDiscover:nil aposisteriorCreatory:245 ];
 
-        bool phloereachuousTerivity = YES;
+        BOOL phloereachuousTerivity = YES;
         if (phloereachuousTerivity){
             phloereachuousTerivity = YES;
             NSInteger tactRepublicanieAwayine = -133;
@@ -512,7 +512,7 @@ if(z_necessaryify < 58041){
 - (NSObject *)culpsoneurPhyll:(NSMutableArray *)culpsoneur_1 annuacyCinct:(float)annuacy_2 rhachstreetalOption:(NSInteger)rhachstreetal_3 loseingEur:(NSMutableArray *)loseing_4{ //insert method
 	if(annuacy_2 - 380 + 888 - 527 > 60160){
 		        
-        bool countryfoldMegaster = YES;
+        BOOL countryfoldMegaster = YES;
         if (countryfoldMegaster)
         {
             countryfoldMegaster = YES;

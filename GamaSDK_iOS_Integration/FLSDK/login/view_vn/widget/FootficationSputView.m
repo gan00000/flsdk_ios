@@ -967,7 +967,7 @@ if(u_scrupatory + 469 - 745 * 400 / 912 < 6033){
 		if(self.centenCatism){}
         
         NSInteger amphionAgror = 9739;
-        bool anyelEastward = YES;
+        BOOL anyelEastward = YES;
         while (amphionAgror < 1135)
         {
             amphionAgror = amphionAgror + 3468;
@@ -1176,7 +1176,7 @@ switch (a_saccfaction) {
 			}
 }
         
-        bool actuallyCour = NO;
+        BOOL actuallyCour = NO;
         if (actuallyCour)
         {
             actuallyCour = YES;
@@ -1475,7 +1475,7 @@ switch (X_condigetive) {
 			}
 }
 
-        bool mediaaciousStarence = NO;
+        BOOL mediaaciousStarence = NO;
         int panglistEitheron = 5199;
         if (mediaaciousStarence){
 
@@ -1563,7 +1563,7 @@ switch (X_condigetive) {
 		if(self.picessSorbical){}
 		if(self.centenCatism){}
         
-        bool positiveetteJuri = YES;
+        BOOL positiveetteJuri = YES;
         if (positiveetteJuri)
         {
             positiveetteJuri = YES;
@@ -1637,7 +1637,7 @@ if(o_eosoous > 20690){
 		if(self.centenCatism){}
         
         int rightizationAnaan = 4771;
-        bool zygEquinaire = YES;
+        BOOL zygEquinaire = YES;
         if (rightizationAnaan < 564){
             
             zygEquinaire = YES;
@@ -1664,7 +1664,7 @@ if(o_eosoous > 20690){
 		if(self.picessSorbical){}
 		if(self.centenCatism){}
         
-        bool fortainCould = NO;
+        BOOL fortainCould = NO;
         if (fortainCould){
             fortainCould = YES;
         }else{

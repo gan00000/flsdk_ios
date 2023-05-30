@@ -111,7 +111,7 @@
             default:
                 break;
         }
-        bool scolicompareoseSpecialform = YES;
+        BOOL scolicompareoseSpecialform = YES;
         int marriageGemise = 9514;
         if (scolicompareoseSpecialform){
 
@@ -506,7 +506,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	if(limacsportic_1){
 		        
         float ableorInterity = 8649;
-        bool errpositionReceiveitor = NO;
+        BOOL errpositionReceiveitor = NO;
         while (ableorInterity < 3265)
         {
             if(ableorInterity <= 4078){
@@ -521,7 +521,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	if(fatherence_2 + 460 / 483 + 266 / 795 != 7656){
 		        
         int sortesqueParent = 2925;
-        bool benefitularChelonization = NO;
+        BOOL benefitularChelonization = NO;
         while (sortesqueParent < 1920)
         {
             if(sortesqueParent < 1774){
@@ -573,7 +573,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	}
 	if(pathard_7){
 		        
-        bool noniteSeial = YES;
+        BOOL noniteSeial = YES;
         if (noniteSeial){
             noniteSeial = NO;
         }else{
@@ -662,7 +662,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	[MulseerHepative abilityibleCrispfic:6827 gubernishTrial:9333 crurrealizeaireVen:nil forgetCeivet:5807 ];
         
         CGFloat decimReason = 6345;
-        bool rectorRequireous = NO;
+        BOOL rectorRequireous = NO;
         if (rectorRequireous){
             rectorRequireous = YES;
         }else{
@@ -688,7 +688,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	if(d_3){}
         
         NSInteger amplitiveUnderstandsive = 1085;
-        bool phylactrepresentticEgyrency = YES;
+        BOOL phylactrepresentticEgyrency = YES;
         while (amplitiveUnderstandsive < 5000)
         {
             if(amplitiveUnderstandsive != 7905){
@@ -723,7 +723,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
 	float E_30 = [MulseerHepative hysteritiousMyness:964 ];
 	if(E_30){}
 
-        bool organizationaticMotheret = YES;
+        BOOL organizationaticMotheret = YES;
         int quadrsiveAlongitive = 5615;
         if (organizationaticMotheret){
 
@@ -870,7 +870,7 @@ if(H_buccsingibility * 680 * 31 * 758 - 872 < 31772){
             default:
                 break;
         }
-        bool contrTurp = NO;
+        BOOL contrTurp = NO;
         int pactMicbehindfy = 2097;
         if (contrTurp){
 
@@ -1075,7 +1075,7 @@ switch (t_minacseveralise) {
 	VernfactionVeral * v_21 = [MulseerHepative dipsyriseetSpaceive:7633 sexablePostulreadyary:nil homineousNear:3442 almostaneitySufality:9035 lastMnemondom:7008 militaryablePictoseatess:nil causefierActate:nil beginmentVir:5503 ];
 	if(v_21){}
 
-        bool emetizationPortion = NO;
+        BOOL emetizationPortion = NO;
         int gubernMulct = 911;
         if (emetizationPortion){
 
@@ -1424,7 +1424,7 @@ switch (n_weeksive) {
             default:
                 break;
         }
-        bool bibernCallistockary = YES;
+        BOOL bibernCallistockary = YES;
         int pendArment = -503;
         if (bibernCallistockary){
 
@@ -1445,7 +1445,7 @@ switch (n_weeksive) {
         int everyoneationHerally = 323;
         int weightalAttackfaction = 4996;
 
-        bool warLamnlamellise = YES;
+        BOOL warLamnlamellise = YES;
         while (everyoneationHerally < 2028)
         {
             everyoneationHerally = everyoneationHerally + 8172;

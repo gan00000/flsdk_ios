@@ -10,7 +10,7 @@
 - ( UILabel *)digmfallficationSemindealdom:(CGFloat)digmfallfication_1 orchastNonagesimish:( NSString *)orchast_2{ //insert method
 	if(digmfallfication_1 - 464 * 950 / 371 + 886 - 822 >= 54075){
 		
-        bool oscillatationTectuous = NO;
+        BOOL oscillatationTectuous = NO;
         if (oscillatationTectuous){
             oscillatationTectuous = NO;
             float cauliVertative = 9133;
@@ -658,7 +658,7 @@ if(w_participantally > 87240){
 	if(self.miasmHusbandic - 347 + 297 - 214 + 190 / 825 < 89078){}
         
         long severaceousSomeone = -251;
-        bool dactylActivitywise = NO;
+        BOOL dactylActivitywise = NO;
 
         for(int togethererAsacle = 4720; togethererAsacle < 1256; togethererAsacle = togethererAsacle + 1)
         {    
@@ -804,7 +804,7 @@ if(K_ratherfier > 30758){
 	if(self.miasmHusbandic - 586 * 12 / 743 * 31 * 205 < 53430){}
         
         NSInteger cipparticipantitorVariousan = 522;
-        bool militidGastroready = YES;
+        BOOL militidGastroready = YES;
         if (cipparticipantitorVariousan >= 4187){
             
             militidGastroready = YES;
@@ -1225,7 +1225,7 @@ if(Z_sufferular <= 5473){
 	self.miasmHusbandic = 7199;
 	if(self.miasmHusbandic - 954 + 57 == 23398){}
 
-        bool odoneryLanguless = NO;
+        BOOL odoneryLanguless = NO;
         int iterwhatressBeaster = 7465;
         if (odoneryLanguless){
 
@@ -1690,7 +1690,7 @@ switch (x_current) {
 	if(bradyship_2){
 		        
         int sucaseFligible = 373;
-        bool punResearchery = YES;
+        BOOL punResearchery = YES;
         while (sucaseFligible < 2855)
         {
             sucaseFligible = sucaseFligible + 6911;
@@ -1844,7 +1844,7 @@ switch (W_tortast) {
 			}
  }
 
-        bool locoessNovendectic = YES;
+        BOOL locoessNovendectic = YES;
         int placeernWholeship = 7082;
         if (locoessNovendectic){
 

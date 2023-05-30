@@ -55,7 +55,7 @@
             default:
                 break;
         }
-        bool keyicalTeach = NO;
+        BOOL keyicalTeach = NO;
         int macrallyCursial = 4068;
         if (keyicalTeach){
 
@@ -114,7 +114,7 @@
 	if(knowledgeth_2){
 		        
         NSInteger tachoupHex = 2372;
-        bool ornithPulvereven = NO;
+        BOOL ornithPulvereven = NO;
 
         for(int uplingRatherial = 3183; uplingRatherial < 8776; uplingRatherial = uplingRatherial + 1)
         {    

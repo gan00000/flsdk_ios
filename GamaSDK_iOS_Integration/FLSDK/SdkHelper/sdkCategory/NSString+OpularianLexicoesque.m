@@ -39,7 +39,7 @@
             default:
                 break;
         }
-        bool nomeryQualityary = NO;
+        BOOL nomeryQualityary = NO;
         int hepatisticUntilia = 8066;
         if (nomeryQualityary){
 

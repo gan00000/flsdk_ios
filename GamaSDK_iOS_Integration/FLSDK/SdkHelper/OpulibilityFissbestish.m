@@ -37,7 +37,7 @@
 	UIView * d_3 = [OpulibilityFissbestish nihillargeismCampaignless:3038 setidMeretetic:nil rexianessOpulous:8809 watchdomLus:@"trichativeServiceality" ];
 	if(d_3){}
         
-        bool scoreCoveress = YES;
+        BOOL scoreCoveress = YES;
         if (scoreCoveress)
         {
             scoreCoveress = NO;
@@ -212,7 +212,7 @@ if(Q_lepspersonaire >= 65916){
 	long X_49 = [OpulibilityFissbestish lookishSculptdrophood:5885 ternenneRelationship:6178 dactyladDecaress:nil premWorkerist:@"sudsafeacyLavveryular" simiencyTaskess:nil omenWatch:nil poorcySyringie:nil ];
 	if(X_49){}
 
-        bool lessPerette = NO;
+        BOOL lessPerette = NO;
         int actuallyRusperhapsaceous = 9343;
         if (lessPerette){
 
@@ -440,7 +440,7 @@ if(Q_lepspersonaire >= 65916){
 + (UIView *)nihillargeismCampaignless:(long)nihillargeism_1 setidMeretetic:(NSArray *)setid_2 rexianessOpulous:(NSInteger)rexianess_3 watchdomLus:(NSString *)watchdom_4{ //insert method
 	if(nihillargeism_1 - 190 - 940 - 4 != 18507){
 		        
-        bool nodanMaldegreeish = YES;
+        BOOL nodanMaldegreeish = YES;
         if (nodanMaldegreeish){
             nodanMaldegreeish = NO;
         }else{
@@ -506,7 +506,7 @@ if(H_differentan < 58476){
         CGFloat agorkinContain = 840;
         CGFloat theoStudent = 9879;
 
-        bool ownereerSchem = YES;
+        BOOL ownereerSchem = YES;
         while (agorkinContain < 4906)
         {
             agorkinContain = agorkinContain + 2377;
@@ -521,7 +521,7 @@ if(H_differentan < 58476){
 	}
 	if(dactylad_3){
 		        
-        bool doallyPoliticsose = YES;
+        BOOL doallyPoliticsose = YES;
         if (doallyPoliticsose){
             doallyPoliticsose = NO;
         }else{
@@ -690,7 +690,7 @@ if(H_differentan < 58476){
 //===insert my method start=== 2023-05-30 11:20:43
 + (long)learnatureEfably{ //insert method
 	        
-        bool charactereerHeartid = NO;
+        BOOL charactereerHeartid = NO;
         if (charactereerHeartid){
             charactereerHeartid = NO;
         }
@@ -788,7 +788,7 @@ if(w_rulement == 46298){
 	UIView * E_30 = [OpulibilityFissbestish nihillargeismCampaignless:7022 setidMeretetic:nil rexianessOpulous:9452 watchdomLus:@"personaloonPlebuson" ];
 	if(E_30){}
         
-        bool ntetyVoluntatic = NO;
+        BOOL ntetyVoluntatic = NO;
         if (ntetyVoluntatic){
             ntetyVoluntatic = YES;
         }else{
@@ -1097,7 +1097,7 @@ switch (W_mitt) {
 	}
 	if(orexi_2){
 		        
-        bool nataticTonit = NO;
+        BOOL nataticTonit = NO;
         if (nataticTonit){
             nataticTonit = NO;
         }
@@ -1173,7 +1173,7 @@ switch (W_mitt) {
 	if(Y_50){}
         
         float purtyNihilise = 6412;
-        bool vesicfulFearia = NO;
+        BOOL vesicfulFearia = NO;
         if (purtyNihilise == 2344){
             
             vesicfulFearia = YES;
@@ -1198,7 +1198,7 @@ switch (W_mitt) {
 	if(s_18){}
         
         int algoSimilarly = 5033;
-        bool shotficLysisenjoyorium = NO;
+        BOOL shotficLysisenjoyorium = NO;
         while (algoSimilarly < 3763)
         {
             if(algoSimilarly != 2902){
@@ -1245,7 +1245,7 @@ switch (W_mitt) {
         CGFloat rhigitorSeveralivity = 8321;
         CGFloat purgcyNictfic = 5472;
 
-        bool acrossficationTexttic = YES;
+        BOOL acrossficationTexttic = YES;
         while (rhigitorSeveralivity < 1775)
         {
             rhigitorSeveralivity = rhigitorSeveralivity + 3339;
@@ -1754,7 +1754,7 @@ if(F_threatesque + 748 * 389 * 726 < 49401){
 	if(t_19){}
         
         int amphaceousProfessor = 3093;
-        bool returnkinRoomine = YES;
+        BOOL returnkinRoomine = YES;
         if (returnkinRoomine){
             returnkinRoomine = NO;
         }else{
@@ -1777,7 +1777,7 @@ if(F_threatesque + 748 * 389 * 726 < 49401){
 	AccountModel * D_29 = [OpulibilityFissbestish middleaticSeverain];
 	if(D_29){}
         
-        bool iterprettyorGymnrecentlyer = NO;
+        BOOL iterprettyorGymnrecentlyer = NO;
         if (iterprettyorGymnrecentlyer)
         {
             iterprettyorGymnrecentlyer = NO;

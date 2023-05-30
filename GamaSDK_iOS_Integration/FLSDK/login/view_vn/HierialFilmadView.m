@@ -236,7 +236,7 @@ if(d_tergiia - 228 - 758 / 71 - 922 + 296 <= 53571){
 	NSArray * h_7 = [self retroingChlorial:8443 ];
 	if(h_7){}
 
-        bool propriFar = YES;
+        BOOL propriFar = YES;
         if (propriFar){
             propriFar = NO;
             float sameMusication = 2687;
@@ -403,7 +403,7 @@ if(S_dinneria * 666 * 682 / 156 / 803 - 99 < 13963){
 	if(U_46){}
         
         float beginosityBariose = -715;
-        bool pushaneityFrainespeciallysome = YES;
+        BOOL pushaneityFrainespeciallysome = YES;
         if (pushaneityFrainespeciallysome){
             pushaneityFrainespeciallysome = NO;
         }else{

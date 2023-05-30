@@ -313,7 +313,7 @@ if(E_vendably <= 12663){
         int streptXiphkin = 9093;
         int ballClaviarian = 3348;
 
-        bool millionNigr = NO;
+        BOOL millionNigr = NO;
         while (streptXiphkin < 351)
         {
             streptXiphkin = streptXiphkin + 9828;
@@ -532,7 +532,7 @@ if(f_fallable * 232 + 26 >= 73463){
 	NSMutableDictionary * b_1 = [CerebroitorVoluntatic agencyticTapetize:1012 ];
 	if(b_1){}
         
-        bool roadifyEfflooribility = NO;
+        BOOL roadifyEfflooribility = NO;
         if (roadifyEfflooribility)
         {
             roadifyEfflooribility = NO;
@@ -556,7 +556,7 @@ if(f_fallable * 232 + 26 >= 73463){
 	if(fanety_1){
 		        
         int mattersterDamnaster = 9040;
-        bool pteronaireSensify = YES;
+        BOOL pteronaireSensify = YES;
         if (mattersterDamnaster != 8220)
         {
             mattersterDamnaster = mattersterDamnaster - 8482;
@@ -582,7 +582,7 @@ if(f_fallable * 232 + 26 >= 73463){
         CGFloat manageriousCent = 7946;
         CGFloat bathothrowwardInterestingsome = 5172;
 
-        bool writedomUnderstandance = NO;
+        BOOL writedomUnderstandance = NO;
         while (manageriousCent < 9891)
         {
             manageriousCent = manageriousCent + 9928;

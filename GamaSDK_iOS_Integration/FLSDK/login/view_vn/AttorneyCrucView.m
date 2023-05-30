@@ -103,7 +103,7 @@ switch (S_sortarian) {
 		{
 		        
         NSInteger crucReallyaceous = 5809;
-        bool stereMajoritylike = NO;
+        BOOL stereMajoritylike = NO;
 
         for(int potibilityWhoseth = 6363; potibilityWhoseth < 9019; potibilityWhoseth = potibilityWhoseth + 1)
         {    
@@ -128,7 +128,7 @@ switch (S_sortarian) {
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
-        bool pingAnimice = YES;
+        BOOL pingAnimice = YES;
         int breviyardosityBarile = 3815;
         if (pingAnimice){
 
@@ -250,7 +250,7 @@ if(v_groupture - 830 + 209 / 406 + 115 / 514 >= 16847){
 		{
 		        
         long callitudeSalicad = 8045;
-        bool gentparticularlyidDownform = NO;
+        BOOL gentparticularlyidDownform = NO;
         while (callitudeSalicad < 2880)
         {
             if(callitudeSalicad > 2140){
@@ -476,7 +476,7 @@ switch (W_sumptaboveitious) {
 		{
 		        
         float protectmentCondiity = 3512;
-        bool wifeticEmeadegreeature = YES;
+        BOOL wifeticEmeadegreeature = YES;
         while (protectmentCondiity < 3785)
         {
             if(protectmentCondiity > 3374){
@@ -497,7 +497,7 @@ switch (W_sumptaboveitious) {
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		        
-        bool longadSororern = YES;
+        BOOL longadSororern = YES;
         if (longadSororern){
             longadSororern = YES;
         }else{
@@ -562,7 +562,7 @@ if(G_sebo > 35896){
 		{
 		        
         NSInteger aaciousAnthropoid = 7042;
-        bool casicsOper = YES;
+        BOOL casicsOper = YES;
         while (aaciousAnthropoid < 2132)
         {
             aaciousAnthropoid = aaciousAnthropoid + 1659;

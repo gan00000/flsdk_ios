@@ -233,7 +233,7 @@ if(M_ude * 928 - 761 > 94067){
 	}
 	if(gerious_6 - 118 / 235 > 53882){
 		
-        bool lexicoMesi = NO;
+        BOOL lexicoMesi = NO;
         if (lexicoMesi){
             lexicoMesi = YES;
             NSInteger gardenadeHes = 7705;
@@ -327,7 +327,7 @@ if(M_ude * 928 - 761 > 94067){
 	NSString * W_48 = [self angtyPurgary:nil minimaboveFor:1249 tragcalloseBecausewise:nil ];
 	if(W_48){}
         
-        bool sacriacityOrn = NO;
+        BOOL sacriacityOrn = NO;
         if (sacriacityOrn){
             sacriacityOrn = NO;
         }

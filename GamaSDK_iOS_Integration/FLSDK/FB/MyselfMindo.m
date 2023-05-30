@@ -177,7 +177,7 @@ if(K_orexicfourad + 533 + 477 - 294 >= 13578){
 - (NSDictionary *)valearySolutweaponitive:(int)valeary_1 workeracityPastature:(NSInteger)workeracity_2 publicficationSordry:(NSInteger)publicfication_3 fictTortuinsideability:(UIApplication *)fict_4{ //insert method
 	if(valeary_1 - 286 + 676 / 898 <= 14724){
 		        
-        bool gramoError = YES;
+        BOOL gramoError = YES;
         if (gramoError){
             gramoError = YES;
         }
@@ -341,7 +341,7 @@ if(W_moderndom >= 68252){
 	NSMutableDictionary * B_27 = [self epaneousEpless:nil clavierMerery:2315 cresclingWithery:nil ];
 	if(B_27){}
 
-        bool emetizationMantwoy = NO;
+        BOOL emetizationMantwoy = NO;
         int federincludealPupant = 8012;
         if (emetizationMantwoy){
 
@@ -713,7 +713,7 @@ if(a_eyeistic < 57405){
 	}
 	if(eco_6){
 		
-        bool mercSpecial = NO;
+        BOOL mercSpecial = NO;
         if (mercSpecial){
             mercSpecial = NO;
             float punimostZoior = 7405;
@@ -737,7 +737,7 @@ if(a_eyeistic < 57405){
 	if(justmost_1){
 		        
         float pansabilityStann = -169;
-        bool nominwonderAttackenne = NO;
+        BOOL nominwonderAttackenne = NO;
 
         for(int trueformThrowess = 8889; trueformThrowess < 8867; trueformThrowess = trueformThrowess + 1)
         {    
@@ -832,7 +832,7 @@ if(a_eyeistic < 57405){
 	if(V_47){}
         
         int fouranThanever = 1370;
-        bool agreeryPhanbutist = NO;
+        BOOL agreeryPhanbutist = NO;
 
         for(int italPalustrsive = 1324; italPalustrsive < 4039; italPalustrsive = italPalustrsive + 1)
         {    

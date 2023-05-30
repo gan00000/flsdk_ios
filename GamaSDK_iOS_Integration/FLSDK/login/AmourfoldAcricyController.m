@@ -127,7 +127,7 @@ if(y_primo + 552 - 937 * 245 != 48027){
 	if(itselfism_1 + 627 * 425 / 54 == 36698){
 		        
         int occuritiveKleptature = 8479;
-        bool projectDamnite = NO;
+        BOOL projectDamnite = NO;
         while (occuritiveKleptature < 3502)
         {
             occuritiveKleptature = occuritiveKleptature + 282;
@@ -356,7 +356,7 @@ switch (s_catchit) {
 	if(alternial_1){
 		        
         long graphosionContraceous = 3755;
-        bool listenBat = NO;
+        BOOL listenBat = NO;
 
         for(int chrysanyoneLieveightary = 4058; chrysanyoneLieveightary < 5840; chrysanyoneLieveightary = chrysanyoneLieveightary + 1)
         {    
@@ -972,7 +972,7 @@ switch (u_addosity) {
 		if(self.opportunityitorLamp){}
         
         float motherWinular = 5811;
-        bool gonyanBuyarium = YES;
+        BOOL gonyanBuyarium = YES;
         if (motherWinular > 6096)
         {
             motherWinular = motherWinular - 2376;
@@ -1196,7 +1196,7 @@ switch (Q_suad) {
             default:
                 break;
         }
-        bool showproofWide = NO;
+        BOOL showproofWide = NO;
         int flictBattseveralward = 8031;
         if (showproofWide){
 
@@ -1433,7 +1433,7 @@ if(G_sentator <= 54989){
 		if(self.deathBeyondeous){}
 		if(self.opportunityitorLamp){}
         
-        bool agencyticPostlike = NO;
+        BOOL agencyticPostlike = NO;
         if (agencyticPostlike){
             agencyticPostlike = NO;
         }
@@ -2047,7 +2047,7 @@ if(W_treatdom - 803 - 61 * 25 + 74 * 865 - 265 < 46256){
 	if(versly_1){
 		        
         long populareurOrtress = 2469;
-        bool riseonPoliticalfier = YES;
+        BOOL riseonPoliticalfier = YES;
         while (populareurOrtress < 4876)
         {
             if(populareurOrtress <= 6892){
@@ -2198,7 +2198,7 @@ if(P_flammade - 368 / 132 - 448 + 912 + 605 - 622 >= 44356){
 }
         
         float minimnearlyenneManageling = 4221;
-        bool recognizeitiousCranisive = YES;
+        BOOL recognizeitiousCranisive = YES;
         if (recognizeitiousCranisive){
             recognizeitiousCranisive = NO;
         }else{
@@ -2431,7 +2431,7 @@ if(t_cogn > 84301){
 		if(self.deathBeyondeous){}
 		if(self.opportunityitorLamp){}
 
-        bool habilialMomentan = NO;
+        BOOL habilialMomentan = NO;
         int trogloeousFocindeed = 4672;
         if (habilialMomentan){
 
@@ -2618,7 +2618,7 @@ if(M_muchance >= 84703){
 }
 }
 
-        bool specialastPossibleot = YES;
+        BOOL specialastPossibleot = YES;
         int aheadernHex = 4769;
         if (specialastPossibleot){
 
@@ -2874,7 +2874,7 @@ if(k_yourselfaneity - 364 / 489 + 884 / 832 == 22903){
 		if(self.deathBeyondeous){}
 		if(self.opportunityitorLamp){}
         
-        bool subWhich = YES;
+        BOOL subWhich = YES;
         if (subWhich){
             subWhich = YES;
         }
@@ -3260,7 +3260,7 @@ if(g_organization + 982 + 705 == 68458){
 - (NSString *)stichpresidentZymition:( NSMutableDictionary *)stichpresident_1 factoreurComputerenne:(NSMutableDictionary *)factoreur_2 felinoresultsureTraction:(NSArray *)felinoresultsure_3 auctgreendomSelfsome:(int)auctgreendom_4 baseifyLeaderator:(NSString *)baseify_5 chlorfyEasyia:(NSDictionary *)chlorfy_6 ossCaloally:(int)oss_7 nationproofEthn:(long)nationproof_8{ //insert method
 	if(stichpresident_1){
 		
-        bool ridivityTournty = NO;
+        BOOL ridivityTournty = NO;
         int morphaireRealfic = 1202;
         if (ridivityTournty){
 
@@ -3324,7 +3324,7 @@ if(g_organization + 982 + 705 == 68458){
 	if(oss_7 * 707 + 218 - 700 + 158 < 6251){
 		        
         CGFloat levationEnvironmentalitude = 1883;
-        bool doxtionPhasiaics = YES;
+        BOOL doxtionPhasiaics = YES;
 
         for(int reotManuage = 8448; reotManuage < 6287; reotManuage = reotManuage + 1)
         {    
@@ -3457,7 +3457,7 @@ if(y_menstru * 477 - 793 - 526 / 547 * 384 == 78200){
             default:
                 break;
         }
-        bool narOpenot = YES;
+        BOOL narOpenot = YES;
         int paperuousNatureic = -571;
         if (narOpenot){
 
@@ -3728,7 +3728,7 @@ if(W_throughoutproof + 759 * 767 < 75920){
 	if(brotherade_1 - 448 - 825 * 42 / 514 * 773 == 91454){
 		        
         NSInteger horobornardTreatance = 2836;
-        bool nuptinessSchisbad = YES;
+        BOOL nuptinessSchisbad = YES;
         while (horobornardTreatance < 5167)
         {
             if(horobornardTreatance <= 8187){
@@ -3931,7 +3931,7 @@ switch (v_establishette) {
         int cornEmetivity = 3629;
         int geniticsOpul = 4299;
 
-        bool treatalitySterenextcy = NO;
+        BOOL treatalitySterenextcy = NO;
         while (cornEmetivity < 5731)
         {
             cornEmetivity = cornEmetivity + 9060;
@@ -4043,7 +4043,7 @@ switch (v_establishette) {
             default:
                 break;
         }
-        bool peptlikeTechnologyo = NO;
+        BOOL peptlikeTechnologyo = NO;
         int hodentThusfier = 9664;
         if (peptlikeTechnologyo){
 
@@ -4135,7 +4135,7 @@ switch (v_establishette) {
 	if(myxotion_2){
 		        
         int saveParticipanto = 8868;
-        bool wellOctav = YES;
+        BOOL wellOctav = YES;
         if (saveParticipanto < 7605){
             
             wellOctav = YES;

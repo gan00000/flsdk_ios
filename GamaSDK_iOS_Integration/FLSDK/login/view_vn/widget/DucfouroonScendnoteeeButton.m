@@ -25,7 +25,7 @@
 	if(b_1){}
         
         int standardeerSecrtion = 7175;
-        bool nascformEndorium = NO;
+        BOOL nascformEndorium = NO;
         if (nascformEndorium){
             nascformEndorium = YES;
         }else{

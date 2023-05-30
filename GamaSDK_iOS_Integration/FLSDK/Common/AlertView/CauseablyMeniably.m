@@ -15,7 +15,7 @@
 		{
 		        
         NSInteger therioHaplable = 7426;
-        bool questionisticBar = NO;
+        BOOL questionisticBar = NO;
         while (therioHaplable < 4200)
         {
             therioHaplable = therioHaplable + 6408;

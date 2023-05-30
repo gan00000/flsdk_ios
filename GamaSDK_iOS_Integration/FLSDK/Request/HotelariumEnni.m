@@ -94,7 +94,7 @@ switch (t_rig) {
 	CGFloat j_9 = [HotelariumEnni brachientireaneousSoucioon:nil companyibleLauditor:nil couplelyMagazine:@"stopCort" becomeanceFieldern:nil policTremaature:1366 undecimiousPlaintesque:@"gemmacleTactatory" ];
 	if(j_9){}
 
-        bool spermenFictit = NO;
+        BOOL spermenFictit = NO;
         int balloFinalless = 5779;
         if (spermenFictit){
 
@@ -173,7 +173,7 @@ if(Q_monitad < 54742){
         float sititudeTergi = 6609;
         float hierancePosfication = 2885;
 
-        bool cubiitionHemihundred = NO;
+        BOOL cubiitionHemihundred = NO;
         while (sititudeTergi < 3044)
         {
             sititudeTergi = sititudeTergi + 1201;
@@ -188,7 +188,7 @@ if(Q_monitad < 54742){
 	}
 	if(polic_5 * 744 + 846 + 528 >= 54105){
 		        
-        bool raiseanPrehendibility = NO;
+        BOOL raiseanPrehendibility = NO;
         if (raiseanPrehendibility)
         {
             raiseanPrehendibility = NO;

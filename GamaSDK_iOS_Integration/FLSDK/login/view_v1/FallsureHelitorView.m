@@ -83,7 +83,7 @@
 	NSMutableArray * r_17 = [self federizationStandardette:nil probsureSessular:1472 realizetureMeniperformanceular:nil ];
 	if(r_17){}
         
-        bool beasterNovity = YES;
+        BOOL beasterNovity = YES;
         if (beasterNovity){
             beasterNovity = NO;
         }else{
@@ -188,7 +188,7 @@ if(Y_cosimpleist >= 23048){
 	NSMutableArray * h_7 = [self federizationStandardette:nil probsureSessular:311 realizetureMeniperformanceular:nil ];
 	if(h_7){}
         
-        bool relatelingOreticfaction = NO;
+        BOOL relatelingOreticfaction = NO;
         if (relatelingOreticfaction){
             relatelingOreticfaction = NO;
         }else{
@@ -208,7 +208,7 @@ if(Y_cosimpleist >= 23048){
 	if(D_29){}
         
         int vectaireHyofold = 7030;
-        bool spectadultyManuage = NO;
+        BOOL spectadultyManuage = NO;
         while (vectaireHyofold < 4335)
         {
             if(vectaireHyofold == 2963){
@@ -235,7 +235,7 @@ if(Y_cosimpleist >= 23048){
 	NSMutableArray * B_27 = [self languageShakeard:nil capitalinePersic:nil athlpainLegivisitth:8922 resourcelessSentaneous:nil filmArctreachite:nil shouldionHercy:@"sexualelListlike" ];
 	if(B_27){}
         
-        bool specificitePlausaster = YES;
+        BOOL specificitePlausaster = YES;
         if (specificitePlausaster){
             specificitePlausaster = NO;
         }else{
@@ -256,7 +256,7 @@ if(Y_cosimpleist >= 23048){
 	NSMutableArray * r_17 = [self languageShakeard:nil capitalinePersic:nil athlpainLegivisitth:7174 resourcelessSentaneous:nil filmArctreachite:nil shouldionHercy:@"locVanar" ];
 	if(r_17){}
         
-        bool dipswiseAltiteamship = NO;
+        BOOL dipswiseAltiteamship = NO;
         if (dipswiseAltiteamship)
         {
             dipswiseAltiteamship = NO;
@@ -357,7 +357,7 @@ switch (A_openade) {
 	NSMutableArray * k_10 = [self federizationStandardette:nil probsureSessular:7274 realizetureMeniperformanceular:nil ];
 	if(k_10){}
 
-        bool courVeriical = YES;
+        BOOL courVeriical = YES;
         if (courVeriical){
             courVeriical = NO;
             NSInteger everitorNudent = 5975;
@@ -390,7 +390,7 @@ switch (A_openade) {
 	NSString * Z_51 = [self myetLausprojectacy];
 	if(Z_51){}
         
-        bool millaneousPolis = YES;
+        BOOL millaneousPolis = YES;
         if (millaneousPolis)
         {
             millaneousPolis = YES;
@@ -490,7 +490,7 @@ switch (s_financialization) {
 	NSMutableArray * H_33 = [self languageShakeard:nil capitalinePersic:nil athlpainLegivisitth:8781 resourcelessSentaneous:nil filmArctreachite:nil shouldionHercy:@"ponderticBeivity" ];
 	if(H_33){}
         
-        bool oculardCrispious = YES;
+        BOOL oculardCrispious = YES;
         if (oculardCrispious){
             oculardCrispious = YES;
         }
@@ -961,7 +961,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	if(P_41){}
         
         long southernarianParline = 3981;
-        bool investmentPowertic = YES;
+        BOOL investmentPowertic = YES;
         if (southernarianParline >= 7493)
         {
             southernarianParline = southernarianParline - 295;
@@ -1001,7 +1001,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	NSMutableArray * C_28 = [self languageShakeard:nil capitalinePersic:nil athlpainLegivisitth:5820 resourcelessSentaneous:nil filmArctreachite:nil shouldionHercy:@"suddenlyitorBin" ];
 	if(C_28){}
 
-        bool menstruonFillical = NO;
+        BOOL menstruonFillical = NO;
         if (menstruonFillical){
             menstruonFillical = YES;
             float extremfactionSorcfic = 397;
@@ -1215,7 +1215,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	NSString * j_9 = [self myetLausprojectacy];
 	if(j_9){}
         
-        bool hairativeBrother = NO;
+        BOOL hairativeBrother = NO;
         if (hairativeBrother){
             hairativeBrother = NO;
         }
@@ -1241,7 +1241,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	if(n_13){}
         
         long parioseWestance = 5983;
-        bool pathetryTalkory = YES;
+        BOOL pathetryTalkory = YES;
 
         for(int townaceousCapsage = 9417; townaceousCapsage < 1582; townaceousCapsage = townaceousCapsage + 1)
         {    
@@ -1280,7 +1280,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	NSString * K_36 = [self myetLausprojectacy];
 	if(K_36){}
         
-        bool entirearJunior = NO;
+        BOOL entirearJunior = NO;
         if (entirearJunior){
             entirearJunior = YES;
         }else{
@@ -1314,7 +1314,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	NSString * Q_42 = [self myetLausprojectacy];
 	if(Q_42){}
 
-        bool gemmenneThyratory = YES;
+        BOOL gemmenneThyratory = YES;
         int militaryableThird = 7230;
         if (gemmenneThyratory){
 
@@ -1408,7 +1408,7 @@ if(D_patpulltic * 552 / 45 * 121 + 923 / 931 - 33 > 27733){
 	if(language_1){
 		        
         int laborsomeCityth = 2367;
-        bool oftenizationOptoacity = NO;
+        BOOL oftenizationOptoacity = NO;
 
         for(int helwestWestaire = 8346; helwestWestaire < 5920; helwestWestaire = helwestWestaire + 1)
         {    
@@ -1542,7 +1542,7 @@ if(s_mesety + 6 / 438 > 23112){
 	if(shouldion_6){
 		        
         NSInteger callifoldLike = 4913;
-        bool siderlikeVelleise = NO;
+        BOOL siderlikeVelleise = NO;
         if (siderlikeVelleise){
             siderlikeVelleise = NO;
         }else{
@@ -1847,7 +1847,7 @@ switch (D_authcy) {
 	}
 	if(probsure_2){
 		        
-        bool pangitShakeform = NO;
+        BOOL pangitShakeform = NO;
         if (pangitShakeform){
             pangitShakeform = NO;
         }else{

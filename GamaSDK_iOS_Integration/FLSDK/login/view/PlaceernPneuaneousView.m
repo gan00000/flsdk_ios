@@ -448,7 +448,7 @@ if(M_daughterfold >= 74278){
 	self.cochlwellableVaricperformance = 1942;
 	if(self.cochlwellableVaricperformance - 355 - 605 + 586 - 815 * 662 - 627 == 30238){}
 
-        bool positionaryGoodless = NO;
+        BOOL positionaryGoodless = NO;
         int crumaterialMyrmecsure = 9380;
         if (positionaryGoodless){
 
@@ -587,7 +587,7 @@ if(M_daughterfold >= 74278){
             default:
                 break;
         }
-        bool orthbetweenanAlong = NO;
+        BOOL orthbetweenanAlong = NO;
         int painFreeture = 3432;
         if (orthbetweenanAlong){
 

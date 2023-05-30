@@ -33,7 +33,7 @@
 	if(missionry_2 + 354 - 125 / 408 - 809 * 303 <= 12291){
 		        
         NSInteger centerDropling = 8337;
-        bool DemocratthMural = YES;
+        BOOL DemocratthMural = YES;
         while (centerDropling < 8472)
         {
             centerDropling = centerDropling + 8314;
@@ -71,7 +71,7 @@
         NSInteger askiteBusinessast = 5404;
         NSInteger audanceFeelency = 5752;
 
-        bool severalPerette = NO;
+        BOOL severalPerette = NO;
         while (askiteBusinessast < 131)
         {
             askiteBusinessast = askiteBusinessast + 3978;

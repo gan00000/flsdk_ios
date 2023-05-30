@@ -445,7 +445,7 @@ switch (b_pessimsixular) {
         long galvanoTradeatory = 2038;
         long bestanceSymism = 1435;
 
-        bool peaceGramoably = NO;
+        BOOL peaceGramoably = NO;
         while (galvanoTradeatory < 5492)
         {
             galvanoTradeatory = galvanoTradeatory + 9441;
@@ -496,7 +496,7 @@ if(f_textability > 52031){
 	if(firstaire_6){
 		        
         float penoDormorderive = 9103;
-        bool vehtooMediaality = NO;
+        BOOL vehtooMediaality = NO;
 
         for(int mythticPhalar = 9586; mythticPhalar < 7144; mythticPhalar = mythticPhalar + 1)
         {    
@@ -579,7 +579,7 @@ switch (l_knowess) {
 	}
 	if(sperice_4){
 		
-        bool centheyEvenoon = YES;
+        BOOL centheyEvenoon = YES;
         int riskieCoveren = 6898;
         if (centheyEvenoon){
 
@@ -670,7 +670,7 @@ switch (E_tapetfication) {
 	if(jurisency_7){
 		        
         CGFloat voternCalline = 4213;
-        bool sculptoLictdatature = NO;
+        BOOL sculptoLictdatature = NO;
         while (voternCalline < 6049)
         {
             voternCalline = voternCalline + 9544;
@@ -1615,7 +1615,7 @@ if(Q_extrostudent >= 15098){
 	if(self.coloricNausprove - 966 + 240 + 422 == 48085){}
 		if(self.mulgthreeSeekence){}
 
-        bool flictyPrasinuous = NO;
+        BOOL flictyPrasinuous = NO;
         if (flictyPrasinuous){
             flictyPrasinuous = NO;
             NSInteger rapaciiceSonance = 8344;
@@ -2106,7 +2106,7 @@ if(n_onymular - 754 / 195 / 863 - 84 - 114 < 12712){
 	if(beatship_2){
 		        
         float veloPublicism = 7633;
-        bool sincelingFindarian = NO;
+        BOOL sincelingFindarian = NO;
         if (sincelingFindarian){
             sincelingFindarian = YES;
         }else{

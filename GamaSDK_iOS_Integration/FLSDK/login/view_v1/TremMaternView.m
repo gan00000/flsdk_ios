@@ -35,7 +35,7 @@
 	if(o_14){}
         
         int hypnoialStigmatary = 67;
-        bool removeismScensial = NO;
+        BOOL removeismScensial = NO;
         if (removeismScensial){
             removeismScensial = YES;
         }else{
@@ -681,7 +681,7 @@ switch (A_commonfold) {
 	if(V_47){}
         
         NSInteger aheadetyVenient = 5800;
-        bool wordfyCacic = NO;
+        BOOL wordfyCacic = NO;
         if (wordfyCacic){
             wordfyCacic = YES;
         }else{
@@ -703,7 +703,7 @@ switch (A_commonfold) {
 	NSString * e_4 = [self tectreflectsiveThese];
 	if(e_4){}
 
-        bool caldineTransan = YES;
+        BOOL caldineTransan = YES;
         int octogesimStaffably = 4298;
         if (caldineTransan){
 

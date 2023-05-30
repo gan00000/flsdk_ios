@@ -140,7 +140,7 @@ if(d_sorcarian - 910 / 168 * 543 + 989 / 467 < 61717){
 	if(ton_2){
 		        
         NSInteger goodibilitySchooline = 6971;
-        bool heuretyPhoneior = YES;
+        BOOL heuretyPhoneior = YES;
         if (goodibilitySchooline > 7297)
         {
             goodibilitySchooline = goodibilitySchooline - -403;
@@ -321,7 +321,7 @@ if(e_clysm >= 70334){
 - (float)protmyaticPiousic{ //insert method
 	        
         CGFloat geluousParline = 593;
-        bool tentaPaperite = YES;
+        BOOL tentaPaperite = YES;
         while (geluousParline < 6368)
         {
             geluousParline = geluousParline + 5231;
@@ -913,7 +913,7 @@ switch (H_proctconsumerist) {
 	if(septuaginty_3){
 		        
         NSInteger aheadetyCurrent = -733;
-        bool omphallyWorlddom = NO;
+        BOOL omphallyWorlddom = NO;
         if (aheadetyCurrent > 945){
             
             omphallyWorlddom = NO;

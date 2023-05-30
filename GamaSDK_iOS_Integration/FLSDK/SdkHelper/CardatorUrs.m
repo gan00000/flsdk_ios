@@ -1148,7 +1148,7 @@ switch (I_xanthster) {
 	if(agencyist_5 * 802 - 794 - 174 + 262 - 975 >= 52033){
 		        
         CGFloat plebTenitude = 9119;
-        bool geniablySei = YES;
+        BOOL geniablySei = YES;
         if (plebTenitude == 9757){
             
             geniablySei = NO;
@@ -1194,7 +1194,7 @@ if(X_anthatic + 696 / 78 + 571 * 369 * 391 * 781 != 4785){
 }
 		if(self.eurressStern){}
 
-        bool institutioniaDucress = YES;
+        BOOL institutioniaDucress = YES;
         if (institutioniaDucress){
             institutioniaDucress = YES;
             NSInteger ceptadeHaurcollection = 6188;
@@ -1388,7 +1388,7 @@ if(l_oreticfaction + 900 / 697 * 297 / 651 + 540 - 189 != 15076){
 	if(pecultechnologyics_8 + 342 + 278 >= 47493){
 		        
         float suavFlexel = 4950;
-        bool pecuexperienceairFirstless = YES;
+        BOOL pecuexperienceairFirstless = YES;
 
         for(int caldficEstablish = 1730; caldficEstablish < 7934; caldficEstablish = caldficEstablish + 1)
         {    

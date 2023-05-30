@@ -146,7 +146,7 @@ if(S_withery * 37 + 535 + 407 >= 34799){
 	if(retroality_2){
 		        
         int hedroseEntremajority = 1424;
-        bool flavetOfence = YES;
+        BOOL flavetOfence = YES;
         if (hedroseEntremajority == 4962)
         {
             hedroseEntremajority = hedroseEntremajority - 2219;
@@ -327,7 +327,7 @@ if(u_tergiing < 14848){
             default:
                 break;
         }
-        bool pointsionPingumost = YES;
+        BOOL pointsionPingumost = YES;
         int compareoSeasonose = 9276;
         if (pointsionPingumost){
 

@@ -87,7 +87,7 @@ if(X_wall - 919 + 496 * 157 - 305 + 961 - 481 < 26468){
 	if(indeedlet_1){
 		        
         long zellessAuct = 1990;
-        bool talioseAllelary = NO;
+        BOOL talioseAllelary = NO;
         if (zellessAuct > 7437)
         {
             zellessAuct = zellessAuct - 9504;
@@ -192,7 +192,7 @@ if(X_wall - 919 + 496 * 157 - 305 + 961 - 481 < 26468){
 	}
 	if(visitality_7){
 		
-        bool checkApot = NO;
+        BOOL checkApot = NO;
         int fascFoenain = 859;
         if (checkApot){
 
@@ -268,7 +268,7 @@ if(d_meretitive < 57490){
 	if(among_6){
 		        
         CGFloat planileWhichier = 2137;
-        bool centheyPoiery = YES;
+        BOOL centheyPoiery = YES;
         if (planileWhichier >= 6940){
             
             centheyPoiery = YES;
@@ -592,7 +592,7 @@ switch (R_uxoriwise) {
             default:
                 break;
         }
-        bool glansseniorkinPeculisummerible = YES;
+        BOOL glansseniorkinPeculisummerible = YES;
         int justuousDyt = 6834;
         if (glansseniorkinPeculisummerible){
 
@@ -790,7 +790,7 @@ if(b_lenttrueaneity - 920 / 698 < 66170){
 	CGFloat O_40 = [self varichoodJunctatory:nil indeedDeuter:nil maternColorproof:@"fricotAcrial" salariumSexhood:@"temporanMalleary" colorGenitics:6002 leaderularRecentlytion:9816 ];
 	if(O_40){}
 
-        bool pecttionRespondfication = YES;
+        BOOL pecttionRespondfication = YES;
         int dictitionAddate = 1959;
         if (pecttionRespondfication){
 
@@ -1094,7 +1094,7 @@ if(j_gardenade * 553 * 590 - 634 > 67752){
 	AccountModel * E_30 = [self menstruonCathior:nil vapPulspropertyial:nil rectticSilkin:nil nutrirySpargsixan:nil archaeentLiminaire:nil amongPracticeular:nil ];
 	if(E_30){}
         
-        bool enneaicsSequoraneity = NO;
+        BOOL enneaicsSequoraneity = NO;
         if (enneaicsSequoraneity)
         {
             enneaicsSequoraneity = NO;
@@ -1324,7 +1324,7 @@ if(t_meterwhether == 3388){
 	NSMutableDictionary * d_3 = [self whenIncreaseal:nil ];
 	if(d_3){}
 
-        bool sopholingSpondylform = NO;
+        BOOL sopholingSpondylform = NO;
         int fligfyGuttaway = 5755;
         if (sopholingSpondylform){
 
@@ -1600,7 +1600,7 @@ switch (M_intraesque) {
 		
 	[self modPhrynaudience:@"doctorierPositiveant" tertiicProbability:nil heparessThelive:nil senkinDys:2573 hysteretyCulp:nil technologyaciousBlasteur:nil ];
         
-        bool necracleCaesitude = NO;
+        BOOL necracleCaesitude = NO;
         if (necracleCaesitude){
             necracleCaesitude = NO;
         }else{
@@ -1919,7 +1919,7 @@ switch (I_bin) {
 - (void)modPhrynaudience:(NSString *)mod_1 tertiicProbability:(AccountModel *)tertiic_2 heparessThelive:(NSMutableArray *)heparess_3 senkinDys:(long)senkin_4 hysteretyCulp:(NSArray *)hysterety_5 technologyaciousBlasteur:(NSMutableArray *)technologyacious_6{ //insert method
 	if(mod_1){
 		        
-        bool saccharthJuri = NO;
+        BOOL saccharthJuri = NO;
         if (saccharthJuri){
             saccharthJuri = NO;
         }else{
@@ -2118,7 +2118,7 @@ switch (I_bin) {
 - (NSMutableDictionary *)handTakeion:(NSMutableDictionary *)hand_1{ //insert method
 	        
         int ballenneHoroive = 293;
-        bool scienceonBudget = YES;
+        BOOL scienceonBudget = YES;
         while (ballenneHoroive < 6333)
         {
             ballenneHoroive = ballenneHoroive + 9838;
@@ -2196,7 +2196,7 @@ switch (N_actuallyish) {
 	NSMutableDictionary * q_16 = [self whenIncreaseal:nil ];
 	if(q_16){}
         
-        bool likeationSalability = YES;
+        BOOL likeationSalability = YES;
         if (likeationSalability)
         {
             likeationSalability = YES;
@@ -2256,7 +2256,7 @@ switch (L_signary) {
 	}
 	if(matern_3){
 		        
-        bool pepscySerrelationshiplet = NO;
+        BOOL pepscySerrelationshiplet = NO;
         if (pepscySerrelationshiplet){
             pepscySerrelationshiplet = NO;
         }
@@ -2306,7 +2306,7 @@ switch (L_signary) {
 	NSArray * n_13 = [self luminaireSeptuagennationalise:74 ];
 	if(n_13){}
         
-        bool suteousHeredety = NO;
+        BOOL suteousHeredety = NO;
         if (suteousHeredety)
         {
             suteousHeredety = NO;
@@ -2384,7 +2384,7 @@ if(L_fingerair * 53 - 242 > 7653){
 	if(when_1){
 		        
         long menoshipCipitdifferenting = 2520;
-        bool marriageIquacle = YES;
+        BOOL marriageIquacle = YES;
 
         for(int toiveScopify = 134; toiveScopify < 8701; toiveScopify = toiveScopify + 1)
         {    
@@ -2473,7 +2473,7 @@ if(I_letteruous < 32031){
 		{
 		        
         NSInteger anderiorFacious = -515;
-        bool kinoismMeriition = NO;
+        BOOL kinoismMeriition = NO;
         if (anderiorFacious < 8365){
             
             kinoismMeriition = YES;
@@ -2524,7 +2524,7 @@ if(I_letteruous < 32031){
 		{
 		        
         CGFloat createsomeStrong = 8398;
-        bool agreementerVillbankot = NO;
+        BOOL agreementerVillbankot = NO;
         if (createsomeStrong > 6241)
         {
             createsomeStrong = createsomeStrong - 7239;
@@ -2542,7 +2542,7 @@ if(I_letteruous < 32031){
 		{
 		        
         NSInteger heparessEmeitious = 4783;
-        bool foreosityDiscussionitude = YES;
+        BOOL foreosityDiscussionitude = YES;
         if (foreosityDiscussionitude){
             foreosityDiscussionitude = NO;
         }else{

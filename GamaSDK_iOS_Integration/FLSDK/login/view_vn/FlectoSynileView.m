@@ -128,7 +128,7 @@ if(T_stitufication + 826 * 924 / 951 - 433 / 736 - 557 > 34491){
 	self.aroundEventive = 2952;
 	if(self.aroundEventive * 429 + 298 - 263 + 537 / 264 / 900 <= 11080){}
 
-        bool nationalfulNewment = YES;
+        BOOL nationalfulNewment = YES;
         int wateruleMicroous = 2240;
         if (nationalfulNewment){
 
@@ -249,7 +249,7 @@ switch (r_emeti) {
 	if(self.aroundEventive - 740 * 960 + 373 + 955 + 310 == 98560){}
         
         int phylactanceAgencyess = 7213;
-        bool herselfanSend = YES;
+        BOOL herselfanSend = YES;
 
         for(int civHydration = 6940; civHydration < 5046; civHydration = civHydration + 1)
         {    
@@ -298,7 +298,7 @@ switch (r_emeti) {
 	self.aroundEventive = 638;
 	if(self.aroundEventive + 186 - 477 + 792 / 499 >= 15501){}
 
-        bool agrorOldess = YES;
+        BOOL agrorOldess = YES;
         int strigSolenlet = 686;
         if (agrorOldess){
 
@@ -523,7 +523,7 @@ if(Q_ratherior + 196 * 22 + 825 + 721 * 65 + 988 != 24776){
 	self.aroundEventive = 3022;
 	if(self.aroundEventive - 55 + 124 <= 18900){}
         
-        bool mammaciousNoc = YES;
+        BOOL mammaciousNoc = YES;
         if (mammaciousNoc){
             mammaciousNoc = YES;
         }else{
@@ -1147,7 +1147,7 @@ if(A_quasiaster < 24243){
 	if(self.aroundEventive + 130 / 283 - 512 * 766 / 376 - 199 == 24939){}
         
         NSInteger isentSquamquicklyal = 4108;
-        bool levincreaseficNomading = YES;
+        BOOL levincreaseficNomading = YES;
 
         for(int agreementExpectition = 2295; agreementExpectition < 5233; agreementExpectition = agreementExpectition + 1)
         {    
@@ -1249,7 +1249,7 @@ switch (O_larvsion) {
 	self.aroundEventive = 9177;
 	if(self.aroundEventive * 619 - 663 < 15350){}
 
-        bool wayiseHabilial = YES;
+        BOOL wayiseHabilial = YES;
         if (wayiseHabilial){
             wayiseHabilial = YES;
             long jejunoWalk = 3873;
@@ -1655,7 +1655,7 @@ if(R_movementation == 65827){
 	if(self.aroundEventive + 816 - 226 < 72491){}
         
         CGFloat trichbeautifuleurFeelain = 1996;
-        bool totoonSizemost = NO;
+        BOOL totoonSizemost = NO;
         if (totoonSizemost){
             totoonSizemost = NO;
         }else{
@@ -1871,7 +1871,7 @@ if(n_sancsingitude != 87247){
         float hominficUxordataast = 8970;
         float balliorMentist = 6693;
 
-        bool squamMrsoseEndolayer = YES;
+        BOOL squamMrsoseEndolayer = YES;
         while (hominficUxordataast < 6454)
         {
             hominficUxordataast = hominficUxordataast + 7426;
@@ -2498,7 +2498,7 @@ switch (R_easyite) {
  }
         
         NSInteger phylaxformBenefititude = 1466;
-        bool surgkinHippoar = NO;
+        BOOL surgkinHippoar = NO;
         if (phylaxformBenefititude > 9761){
             
             surgkinHippoar = NO;
@@ -2578,7 +2578,7 @@ if(p_pavesque <= 10284){
  }
         
         CGFloat ursshipFollowacle = 2357;
-        bool voluntaticLossable = YES;
+        BOOL voluntaticLossable = YES;
         while (ursshipFollowacle < 2800)
         {
             if(ursshipFollowacle > 6210){

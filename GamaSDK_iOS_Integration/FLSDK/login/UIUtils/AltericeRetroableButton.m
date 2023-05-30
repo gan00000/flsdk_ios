@@ -33,7 +33,7 @@
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
-        bool fictfulQuotreachular = YES;
+        BOOL fictfulQuotreachular = YES;
         if (fictfulQuotreachular){
             fictfulQuotreachular = NO;
             float readyaneityFlyad = 6680;
@@ -122,7 +122,7 @@ switch (h_whosion) {
 		{
 		        
         NSInteger nothaddshipExpectious = 1639;
-        bool dogPtyalable = NO;
+        BOOL dogPtyalable = NO;
 
         for(int barbSpeechosity = 3967; barbSpeechosity < 6033; barbSpeechosity = barbSpeechosity + 1)
         {    

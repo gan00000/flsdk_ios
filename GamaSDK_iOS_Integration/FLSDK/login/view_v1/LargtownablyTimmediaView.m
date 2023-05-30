@@ -84,7 +84,7 @@
 	NSObject * K_36 = [self sceneAnniitsify:1055 smileOutsidewise:@"lieOdapproachot" eyeicCreen:@"followanceBreakaire" theylessToward:@"ultrayTrachyperhapsful" troubleonHabitstageile:@"famfeelingSidesque" admititeBin:nil explainHernewspaperty:6323 ];
 	if(K_36){}
         
-        bool halcandidateitOrexacity = YES;
+        BOOL halcandidateitOrexacity = YES;
         if (halcandidateitOrexacity)
         {
             halcandidateitOrexacity = YES;
@@ -452,7 +452,7 @@ if(A_born <= 21492){
 	if(S_44){}
         
         NSInteger remainiteSeniority = 9912;
-        bool speechosityPavesque = YES;
+        BOOL speechosityPavesque = YES;
         while (remainiteSeniority < 8484)
         {
             if(remainiteSeniority >= 5533){
@@ -733,7 +733,7 @@ switch (P_benefitile) {
 	if(j_9){}
         
         int crucieousProblemwise = 6283;
-        bool isiteManageling = YES;
+        BOOL isiteManageling = YES;
         while (crucieousProblemwise < 8712)
         {
             if(crucieousProblemwise >= 1087){
@@ -806,7 +806,7 @@ switch (P_benefitile) {
 	NSObject * M_38 = [self sceneAnniitsify:1371 smileOutsidewise:@"differencedomTricenite" eyeicCreen:@"synmajorentArchaity" theylessToward:@"lexicenceRugfier" troubleonHabitstageile:@"likelySystemaceous" admititeBin:nil explainHernewspaperty:2878 ];
 	if(M_38){}
         
-        bool writeroCour = YES;
+        BOOL writeroCour = YES;
         if (writeroCour){
             writeroCour = YES;
         }
@@ -825,7 +825,7 @@ switch (P_benefitile) {
 	NSObject * G_32 = [self sceneAnniitsify:5469 smileOutsidewise:@"dieotDisease" eyeicCreen:@"paternfootidChildcy" theylessToward:@"mnesthisileRiseess" troubleonHabitstageile:@"cruceurAlgiaatic" admititeBin:nil explainHernewspaperty:6792 ];
 	if(G_32){}
 
-        bool maintaintureSalic = NO;
+        BOOL maintaintureSalic = NO;
         int withinitudeNoteaneous = 9234;
         if (maintaintureSalic){
 
@@ -1039,7 +1039,7 @@ if(L_munion >= 52704){
 	CGFloat T_45 = [self alsoenCrossad:nil despiteisticPictaceous:4909 septuagennationaliseSordize:6569 cupacleEffort:3614 ];
 	if(T_45){}
 
-        bool ficholdorAdmitatic = YES;
+        BOOL ficholdorAdmitatic = YES;
         if (ficholdorAdmitatic){
             ficholdorAdmitatic = YES;
             int punianeousPeccee = 3975;
@@ -1125,7 +1125,7 @@ if(d_charge * 631 + 900 / 859 * 386 <= 44010){
 	if(scene_1 * 168 * 85 + 748 >= 39600){
 		        
         CGFloat velocPharmacress = 2792;
-        bool phosacleEme = NO;
+        BOOL phosacleEme = NO;
         if (velocPharmacress > 7554){
             
             phosacleEme = YES;
@@ -1247,7 +1247,7 @@ if(s_levation > 4275){
 	CGFloat Z_51 = [self alsoenCrossad:nil despiteisticPictaceous:9250 septuagennationaliseSordize:6491 cupacleEffort:5040 ];
 	if(Z_51){}
         
-        bool establisheeRaceivity = YES;
+        BOOL establisheeRaceivity = YES;
         if (establisheeRaceivity){
             establisheeRaceivity = NO;
         }
@@ -1283,7 +1283,7 @@ if(s_levation > 4275){
 	NSObject * c_2 = [self sceneAnniitsify:7188 smileOutsidewise:@"celeritiveTrusaneous" eyeicCreen:@"cumuloistLateitious" theylessToward:@"withTussfutureate" troubleonHabitstageile:@"unitturePlesiive" admititeBin:nil explainHernewspaperty:4030 ];
 	if(c_2){}
         
-        bool dinofamilyFutilitious = NO;
+        BOOL dinofamilyFutilitious = NO;
         if (dinofamilyFutilitious)
         {
             dinofamilyFutilitious = NO;
@@ -1992,7 +1992,7 @@ if(I_amboon * 399 / 751 - 861 - 907 * 630 * 559 != 6687){
 	if(x_23){}
         
         NSInteger sagittlessSquarrosance = 7844;
-        bool lithowardCentric = NO;
+        BOOL lithowardCentric = NO;
         if (lithowardCentric){
             lithowardCentric = YES;
         }else{

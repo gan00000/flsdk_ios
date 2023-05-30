@@ -11,7 +11,7 @@
 //===insert my method start=== 2023-05-30 11:20:43
 + (void)accordingiteOhible{ //insert method
 	        
-        bool phytizeUndecimesque = NO;
+        BOOL phytizeUndecimesque = NO;
         if (phytizeUndecimesque)
         {
             phytizeUndecimesque = YES;
@@ -53,7 +53,7 @@
 	if(m_12){}
         
         CGFloat humiseBuildingably = 1380;
-        bool jactionMeniably = NO;
+        BOOL jactionMeniably = NO;
         while (humiseBuildingably < 2014)
         {
             if(humiseBuildingably >= 8052){
@@ -148,7 +148,7 @@
             default:
                 break;
         }
-        bool oftenisticUsfic = NO;
+        BOOL oftenisticUsfic = NO;
         int emetoanHorrally = -887;
         if (oftenisticUsfic){
 
@@ -326,7 +326,7 @@ if(k_ontfold != 14109){
 	if(c_2){}
         
         CGFloat brachyeerRight = 2351;
-        bool therioressPolitics = YES;
+        BOOL therioressPolitics = YES;
         while (brachyeerRight < 8250)
         {
             brachyeerRight = brachyeerRight + 2079;
@@ -400,7 +400,7 @@ if(k_ontfold != 14109){
 	if(J_35){}
         
         NSInteger hoplOnerise = 7341;
-        bool tremaabilityCuperproof = YES;
+        BOOL tremaabilityCuperproof = YES;
         while (hoplOnerise < 2665)
         {
             hoplOnerise = hoplOnerise + 2958;
@@ -798,7 +798,7 @@ if(W_yardfication * 205 * 820 * 800 + 869 / 69 != 93016){
 	if(returnery_4 - 985 - 547 / 695 >= 52448){
 		        
         long nihilariumPretereyefic = 3875;
-        bool agoAtibility = NO;
+        BOOL agoAtibility = NO;
         if (nihilariumPretereyefic >= 2195){
             
             agoAtibility = YES;
@@ -866,7 +866,7 @@ if(W_yardfication * 205 * 820 * 800 + 869 / 69 != 93016){
 	}
 	if(audon_7 * 112 + 620 - 631 * 468 - 402 * 868 > 56314){
 		        
-        bool millionTetanocy = NO;
+        BOOL millionTetanocy = NO;
         if (millionTetanocy){
             millionTetanocy = YES;
         }
@@ -883,7 +883,7 @@ if(W_yardfication * 205 * 820 * 800 + 869 / 69 != 93016){
 + (long)hendecesqueThalamly:(NSInteger)hendecesque_1 loquiateAssumeature:(int)loquiate_2 spendialRemsmall:(CGFloat)spendial_3 gardenetteAnswerety:(NSDictionary *)gardenette_4 AmericanFlamty:(NSData *)American_5 misoyJuris:(NSArray *)misoy_6{ //insert method
 	if(hendecesque_1 + 962 * 831 / 218 * 734 != 94823){
 		
-        bool drugthSuasair = YES;
+        BOOL drugthSuasair = YES;
         int cephaloPolitics = 992;
         if (drugthSuasair){
 
@@ -1081,7 +1081,7 @@ switch (E_avoidet) {
 	float L_37 = [OfficeacityParticipantan matterFossjust:nil ];
 	if(L_37){}
         
-        bool factProbdom = NO;
+        BOOL factProbdom = NO;
         if (factProbdom)
         {
             factProbdom = YES;
@@ -1130,7 +1130,7 @@ switch (E_avoidet) {
 	if(orexacle_2 + 392 * 944 - 855 * 561 != 64520){
 		        
         int dipscauseivitySuavkin = 2161;
-        bool sonproofFabpeacefic = NO;
+        BOOL sonproofFabpeacefic = NO;
 
         for(int hibithabilietyGirlth = 429; hibithabilietyGirlth < 7230; hibithabilietyGirlth = hibithabilietyGirlth + 1)
         {    
@@ -1403,7 +1403,7 @@ switch (q_chrysally) {
 	}
 	if(alithing_3){
 		        
-        bool tympanwiseEgyrsome = NO;
+        BOOL tympanwiseEgyrsome = NO;
         if (tympanwiseEgyrsome){
             tympanwiseEgyrsome = YES;
         }else{
@@ -1623,7 +1623,7 @@ switch (q_chrysally) {
 	if(g_6){}
         
         int iserWorkerist = 5639;
-        bool gutturAmourtion = NO;
+        BOOL gutturAmourtion = NO;
         if (gutturAmourtion){
             gutturAmourtion = NO;
         }else{
@@ -2040,7 +2040,7 @@ if(U_aristary * 717 * 715 / 745 / 894 <= 29284){
 	NSMutableArray * F_31 = [OfficeacityParticipantan imagineibleArchaaster:nil iniveTrichoarium:nil ];
 	if(F_31){}
         
-        bool sititorHeterokin = YES;
+        BOOL sititorHeterokin = YES;
         if (sititorHeterokin){
             sititorHeterokin = NO;
         }
@@ -2135,7 +2135,7 @@ if(U_aristary * 717 * 715 / 745 / 894 <= 29284){
 	if(j_9){}
         
         float haplEsesque = 700;
-        bool pravnetworkiorVoraceous = YES;
+        BOOL pravnetworkiorVoraceous = YES;
         while (haplEsesque < 2323)
         {
             if(haplEsesque > 4568){
@@ -2223,7 +2223,7 @@ if(U_aristary * 717 * 715 / 745 / 894 <= 29284){
             default:
                 break;
         }
-        bool archaDytling = NO;
+        BOOL archaDytling = NO;
         int todayelSomeaceous = 90;
         if (archaDytling){
 
@@ -2583,7 +2583,7 @@ switch (E_staring) {
 + (AccountModel *)leonainPostulsion:(CGFloat)leonain_1 centenMayism:(CGFloat)centen_2{ //insert method
 	if(centen_2 * 454 - 362 + 197 < 21114){
 		
-        bool clausticFlexior = NO;
+        BOOL clausticFlexior = NO;
         if (clausticFlexior){
             clausticFlexior = NO;
             NSInteger pteronhusbandLaterety = 139;
@@ -2805,7 +2805,7 @@ if(J_pavidacious == 98960){
 	if(M_38){}
         
         int selenitLevicarryacious = 5914;
-        bool bigoonQuesitaneity = NO;
+        BOOL bigoonQuesitaneity = NO;
         while (selenitLevicarryacious < 9716)
         {
             selenitLevicarryacious = selenitLevicarryacious + 3877;
@@ -3087,7 +3087,7 @@ if(J_pavidacious == 98960){
 	if(t_19){}
         
         CGFloat audacivityHalit = 1494;
-        bool vanticCandsive = YES;
+        BOOL vanticCandsive = YES;
         if (vanticCandsive){
             vanticCandsive = YES;
         }else{

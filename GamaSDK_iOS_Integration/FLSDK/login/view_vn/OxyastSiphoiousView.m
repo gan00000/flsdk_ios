@@ -343,7 +343,7 @@ switch (M_ofosity) {
 - (NSMutableArray *)reflectmostMesuous:(NSString *)reflectmost_1{ //insert method
 	        
         NSInteger placageStalactid = 2882;
-        bool authordomProtoly = YES;
+        BOOL authordomProtoly = YES;
 
         for(int sometimesHerbuous = 3093; sometimesHerbuous < 1247; sometimesHerbuous = sometimesHerbuous + 1)
         {    
@@ -558,7 +558,7 @@ switch (R_uber) {
             default:
                 break;
         }
-        bool velleicMnes = NO;
+        BOOL velleicMnes = NO;
         int crepitarNesspecific = 4799;
         if (velleicMnes){
 
@@ -627,7 +627,7 @@ switch (R_uber) {
 	if(O_40){}
         
         CGFloat testalVect = 643;
-        bool fectismTry = YES;
+        BOOL fectismTry = YES;
         while (testalVect < 7487)
         {
             if(testalVect < 4529){
@@ -679,7 +679,7 @@ if(f_narcair <= 95395){
 	if(j_9){}
         
         int fraterablyHostpictureic = 2239;
-        bool darkficPerform = YES;
+        BOOL darkficPerform = YES;
         while (fraterablyHostpictureic < 6100)
         {
             if(fraterablyHostpictureic > 4761){
@@ -1452,7 +1452,7 @@ switch (d_deadite) {
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
-        bool physalidYourselfhood = NO;
+        BOOL physalidYourselfhood = NO;
         int pondousDoing = 8120;
         if (physalidYourselfhood){
 
@@ -1508,7 +1508,7 @@ switch (d_deadite) {
 //===insert my method start=== 2023-05-30 11:20:43
 - (NSString *)patriantDay:(NSString *)patriant_1{ //insert method
 	        
-        bool gentantSubjectform = NO;
+        BOOL gentantSubjectform = NO;
         if (gentantSubjectform){
             gentantSubjectform = YES;
         }
@@ -1529,7 +1529,7 @@ switch (d_deadite) {
 - (CGFloat)utoLabious:(NSInteger)uto_1{ //insert method
 	if(uto_1 - 141 / 999 != 88898){
 		
-        bool knowledgefulCurs = YES;
+        BOOL knowledgefulCurs = YES;
         int pletexperienceableLegiitious = 6334;
         if (knowledgefulCurs){
 

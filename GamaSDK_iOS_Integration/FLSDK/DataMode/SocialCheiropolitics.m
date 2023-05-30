@@ -366,7 +366,7 @@ if(d_effortee > 15305){
 }
  }
 
-        bool movanalysisoriumDifficultuous = NO;
+        BOOL movanalysisoriumDifficultuous = NO;
         if (movanalysisoriumDifficultuous){
             movanalysisoriumDifficultuous = YES;
             CGFloat mattereryPrasinling = 9834;

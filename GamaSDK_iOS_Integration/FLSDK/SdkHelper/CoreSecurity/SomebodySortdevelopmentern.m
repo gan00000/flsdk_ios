@@ -112,7 +112,7 @@ if(Z_gymn + 424 * 617 - 827 / 872 * 901 / 892 <= 90396){
 	if(prehendical_3){
 		        
         NSInteger niceabilityTinacitic = 527;
-        bool everyoneetHelike = YES;
+        BOOL everyoneetHelike = YES;
         if (everyoneetHelike){
             everyoneetHelike = YES;
         }else{
@@ -434,7 +434,7 @@ if(M_despiteacious + 667 * 230 - 240 / 5 / 197 / 724 == 39763){
 + (BOOL)lamnlamellingEveryoneant:(NSArray *)lamnlamelling_1 internationaloryPassate:(int)internationalory_2 xerationSub:(NSInteger)xeration_3 nameTotoon:(NSMutableDictionary *)name_4 tentaiteCatchical:(long)tentaite_5 pectorwrongieMulta:(NSString *)pectorwrongie_6 ticousCauseably:(NSDictionary *)ticous_7 sumthiswiseThrixsion:(NSDictionary *)sumthiswise_8{ //insert method
 	if(xeration_3 * 453 + 712 != 68984){
 		
-        bool fabulKitchendom = NO;
+        BOOL fabulKitchendom = NO;
         if (fabulKitchendom){
             fabulKitchendom = YES;
             int darkLubric = 9734;
@@ -640,7 +640,7 @@ if(X_ethm == 27448){
 //===insert my method start=== 2023-05-30 11:20:43
 + (int)ultimtionScendic:(CGFloat)ultimtion_1 uvifyHenunderstandarium:(CGFloat)uvify_2{ //insert method
 	        
-        bool censialEnnistic = NO;
+        BOOL censialEnnistic = NO;
         if (censialEnnistic)
         {
             censialEnnistic = NO;

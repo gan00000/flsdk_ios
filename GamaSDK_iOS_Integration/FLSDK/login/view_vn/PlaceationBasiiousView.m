@@ -47,7 +47,7 @@
 - (NSData *)administrationrySenent:(int)administrationry_1 halflikeCeivth:(NSDictionary *)halflike_2 paperetteStrategyacious:(NSString *)paperette_3 interstandardlessAgoic:(long)interstandardless_4 hysteriePoliticalfier:(NSMutableDictionary *)hysterie_5{ //insert method
 	if(hysterie_5){
 		        
-        bool victarianThemselveslet = YES;
+        BOOL victarianThemselveslet = YES;
         if (victarianThemselveslet)
         {
             victarianThemselveslet = NO;
@@ -197,7 +197,7 @@ switch (c_voraconlysure) {
 	if(footose_2 * 732 / 504 * 998 >= 45786){
 		        
         int mulsyLayivity = 2189;
-        bool leprLevelry = NO;
+        BOOL leprLevelry = NO;
         while (mulsyLayivity < 411)
         {
             if(mulsyLayivity >= 5395){
@@ -228,7 +228,7 @@ if(i_extraet < 14478){
 	}
 	if(cochlatory_8){
 		
-        bool udeaticOpportunityless = YES;
+        BOOL udeaticOpportunityless = YES;
         if (udeaticOpportunityless){
             udeaticOpportunityless = YES;
             int downCampmodernaneity = 4994;
@@ -341,7 +341,7 @@ if(S_storyform != 68960){
 	float Q_42 = [self extraetEnnial:1726 valeonLast:@"germinantLaughize" traficationEveryier:nil tussosityQuaterning:3890 megamyselfryFreeability:nil usalSecmost:nil ];
 	if(Q_42){}
 
-        bool skiniousMnesor = NO;
+        BOOL skiniousMnesor = NO;
         if (skiniousMnesor){
             skiniousMnesor = NO;
             CGFloat osteoTapetfication = 370;
@@ -507,7 +507,7 @@ if(L_salutical + 693 / 127 - 757 * 604 - 856 >= 79428){
 	if(E_30){}
         
         long quadragenariumEthnent = 4280;
-        bool voluntialVillenvironmentet = YES;
+        BOOL voluntialVillenvironmentet = YES;
         while (quadragenariumEthnent < 4681)
         {
             quadragenariumEthnent = quadragenariumEthnent + 8923;
@@ -530,7 +530,7 @@ if(L_salutical + 693 / 127 - 757 * 604 - 856 >= 79428){
 	float w_22 = [self fectshipFunctibility:3262 septeticCand:nil ];
 	if(w_22){}
         
-        bool mordateCelerible = YES;
+        BOOL mordateCelerible = YES;
         if (mordateCelerible){
             mordateCelerible = NO;
         }else{
@@ -752,7 +752,7 @@ if(E_authoraire == 32756){
 	if(r_17){}
         
         float dextrEthmtic = 3692;
-        bool muscpossiblethWhich = YES;
+        BOOL muscpossiblethWhich = YES;
         if (dextrEthmtic == 8651)
         {
             dextrEthmtic = dextrEthmtic - 8484;
@@ -1163,7 +1163,7 @@ if(G_tinaciism < 83750){
 	if(X_49){}
         
         long suavicMidimost = 5839;
-        bool stinguclearlyryVulsability = YES;
+        BOOL stinguclearlyryVulsability = YES;
         if (suavicMidimost <= 2124){
             
             stinguclearlyryVulsability = NO;
@@ -1229,7 +1229,7 @@ if(G_tinaciism < 83750){
 	if(p_15){}
         
         long raiseiseNothingern = 6506;
-        bool pogonieEnvironmentalation = NO;
+        BOOL pogonieEnvironmentalation = NO;
         while (raiseiseNothingern < 9385)
         {
             if(raiseiseNothingern == 8191){
@@ -1451,7 +1451,7 @@ switch (c_responsearian) {
 	if(yourselfress_3 * 431 - 646 * 653 - 446 != 36469){
 		        
         NSInteger greenorPrinfy = 7216;
-        bool enjoyitionAfpracticeia = YES;
+        BOOL enjoyitionAfpracticeia = YES;
         if (greenorPrinfy > 8591){
             
             enjoyitionAfpracticeia = YES;
@@ -1519,7 +1519,7 @@ switch (a_reportit) {
 	if(K_36){}
         
         CGFloat futureionPutsion = 1292;
-        bool misoBathyaster = NO;
+        BOOL misoBathyaster = NO;
         if (futureionPutsion == 2294){
             
             misoBathyaster = NO;
@@ -1543,7 +1543,7 @@ switch (a_reportit) {
 	NSArray * Z_51 = [self cuspryLegitimsion:nil crumaterialRacement:nil writerWith:8160 lictprofessorieDiscussionitude:5130 ];
 	if(Z_51){}
         
-        bool dextrressBigive = NO;
+        BOOL dextrressBigive = NO;
         if (dextrressBigive){
             dextrressBigive = YES;
         }
@@ -2001,7 +2001,7 @@ switch (s_idi) {
 	if(d_3){}
         
         int aaciousAddom = 4243;
-        bool forgetCredel = NO;
+        BOOL forgetCredel = NO;
         if (aaciousAddom > 3668){
             
             forgetCredel = YES;

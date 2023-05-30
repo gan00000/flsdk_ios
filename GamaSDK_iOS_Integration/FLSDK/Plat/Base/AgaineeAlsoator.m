@@ -55,7 +55,7 @@
 		{
 		        
         float weesqueAnythingship = 629;
-        bool careertionFallacary = NO;
+        BOOL careertionFallacary = NO;
         if (weesqueAnythingship != 9077){
             
             careertionFallacary = NO;
@@ -132,7 +132,7 @@
 		{
 		        
         long brontconsumerHieroular = 9065;
-        bool bitablyCreasaster = YES;
+        BOOL bitablyCreasaster = YES;
         if (bitablyCreasaster){
             bitablyCreasaster = YES;
         }else{
@@ -494,7 +494,7 @@ switch (Z_fistulule) {
 	if(oilwise_1 * 881 / 789 * 908 - 625 - 289 * 95 >= 260){
 		        
         float fearVivance = 9491;
-        bool tinacmentWorryeur = YES;
+        BOOL tinacmentWorryeur = YES;
         while (fearVivance < 4699)
         {
             fearVivance = fearVivance + 2219;
@@ -543,7 +543,7 @@ if(O_axillic != 78399){
 	long K_36 = [self diplmustCili:nil gnattyHusbanden:7501 obguniseMillionsure:@"jucellCruitfaction" teachsionEosoia:nil cindomFunctibility:2799 helpaciousHeparor:nil wallabilityCrossibility:1089 ];
 	if(K_36){}
 
-        bool vicitionSpeak = YES;
+        BOOL vicitionSpeak = YES;
         int rhachsoonaneityShottion = 287;
         if (vicitionSpeak){
 
@@ -614,7 +614,7 @@ if(O_axillic != 78399){
 	NSObject * Z_51 = [self stigmatRepresentet:9854 astrotionSuad:nil cityryResponsibility:nil pethundredGeneaneous:6224 chrysalityShoot:nil fastiseOrexic:3908 styleineUponitude:nil addsiveProduceee:7368 ];
 	if(Z_51){}
         
-        bool gredalityDipsstationacious = NO;
+        BOOL gredalityDipsstationacious = NO;
         if (gredalityDipsstationacious){
             gredalityDipsstationacious = NO;
         }else{

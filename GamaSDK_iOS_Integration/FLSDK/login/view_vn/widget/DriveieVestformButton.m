@@ -204,7 +204,7 @@ switch (r_kindify) {
 		{
 		        
         int manageisticClausy = 1223;
-        bool coverprojectonLoqufollowor = YES;
+        BOOL coverprojectonLoqufollowor = YES;
 
         for(int worlddomQuintful = 4356; worlddomQuintful < 7462; worlddomQuintful = worlddomQuintful + 1)
         {    
@@ -290,7 +290,7 @@ if(A_ravise - 536 * 505 + 190 * 429 * 175 > 8661){
 		{
 		        
         CGFloat yearastFootose = 850;
-        bool sidemostSebiform = YES;
+        BOOL sidemostSebiform = YES;
         while (yearastFootose < 7867)
         {
             yearastFootose = yearastFootose + 850;
@@ -340,7 +340,7 @@ if(C_motical == 60383){
 		//====insert my code start===  2023-05-30 11:20:44
 		{
 		        
-        bool phylageAlhelpative = YES;
+        BOOL phylageAlhelpative = YES;
         if (phylageAlhelpative){
             phylageAlhelpative = NO;
         }
@@ -408,7 +408,7 @@ if(C_motical == 60383){
             default:
                 break;
         }
-        bool counterlistenThalassern = YES;
+        BOOL counterlistenThalassern = YES;
         int halineLeaveling = 8235;
         if (counterlistenThalassern){
 

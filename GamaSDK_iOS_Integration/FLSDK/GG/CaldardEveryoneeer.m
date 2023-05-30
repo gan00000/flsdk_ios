@@ -55,7 +55,7 @@ if(u_gamb * 90 / 444 + 622 - 431 + 516 >= 44818){
 	if(letterfold_6 * 344 - 547 / 941 * 477 / 204 != 8929){
 		        
         NSInteger chrysacityRecentlytion = 6703;
-        bool fallacleSipiwise = YES;
+        BOOL fallacleSipiwise = YES;
 
         for(int exoiseDrop = 568; exoiseDrop < 6718; exoiseDrop = exoiseDrop + 1)
         {    
@@ -125,7 +125,7 @@ switch (u_thaner) {
 	if(perhapsty_1 + 116 * 473 + 87 + 715 + 824 * 2 >= 54951){
 		        
         long dactylMicritude = 2904;
-        bool cursyJut = NO;
+        BOOL cursyJut = NO;
 
         for(int southifyDevelopment = 977; southifyDevelopment < 2159; southifyDevelopment = southifyDevelopment + 1)
         {    
@@ -196,7 +196,7 @@ if(X_tangite < 79168){
 	if(spherose_4 * 684 * 581 - 647 * 38 + 95 >= 81543){
 		        
         float cortinterestanLocalous = -928;
-        bool involvenessServial = YES;
+        BOOL involvenessServial = YES;
         if (cortinterestanLocalous < 4971)
         {
             cortinterestanLocalous = cortinterestanLocalous - 3959;
@@ -256,7 +256,7 @@ if(L_stylearian * 114 - 423 / 199 * 271 >= 73406){
 	if(sort_8){
 		        
         NSInteger horoBlackaster = 4967;
-        bool tribyUsuallyet = NO;
+        BOOL tribyUsuallyet = NO;
         if (tribyUsuallyet){
             tribyUsuallyet = NO;
         }else{

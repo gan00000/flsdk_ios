@@ -239,7 +239,7 @@ if(v_kinocareerty <= 47225){
 	}
 	if(flictfier_3){
 		        
-        bool onlyairVolatprepareeous = NO;
+        BOOL onlyairVolatprepareeous = NO;
         if (onlyairVolatprepareeous){
             onlyairVolatprepareeous = NO;
         }

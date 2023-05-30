@@ -250,7 +250,7 @@ switch (W_unlong) {
 		if(self.boniorVentrauthoritor){}
         
         int recentlyaticSecrior = 9693;
-        bool afteritorPrin = YES;
+        BOOL afteritorPrin = YES;
 
         for(int bywardNupticolor = 3482; bywardNupticolor < 6077; bywardNupticolor = bywardNupticolor + 1)
         {    
@@ -408,7 +408,7 @@ if(V_husband - 164 - 76 + 564 / 285 * 716 == 29183){
 }
         
         long guttMovementmost = 1252;
-        bool imicrelationshipiorPun = YES;
+        BOOL imicrelationshipiorPun = YES;
         if (guttMovementmost >= 3356){
             
             imicrelationshipiorPun = NO;
@@ -510,7 +510,7 @@ switch (n_zel) {
 	if(self.orderiorFormer - 822 - 134 + 372 <= 54933){}
 		if(self.boniorVentrauthoritor){}
 
-        bool economicMayator = NO;
+        BOOL economicMayator = NO;
         if (economicMayator){
             economicMayator = YES;
             long whethericsSource = 9495;
@@ -1716,7 +1716,7 @@ switch (I_polilay) {
 		if(self.boniorVentrauthoritor){}
         
         CGFloat lossistThymally = 7311;
-        bool habilticParentacity = YES;
+        BOOL habilticParentacity = YES;
         while (lossistThymally < 9955)
         {
             lossistThymally = lossistThymally + 6595;
@@ -1913,7 +1913,7 @@ switch (I_polilay) {
             default:
                 break;
         }
-        bool phlegorHygrist = YES;
+        BOOL phlegorHygrist = YES;
         int heterageGnsive = -878;
         if (phlegorHygrist){
 

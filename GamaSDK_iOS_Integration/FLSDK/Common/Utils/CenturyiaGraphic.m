@@ -131,7 +131,7 @@ if(v_almostate - 207 - 323 * 734 + 85 * 563 != 2960){
         NSInteger momentasterImportantlet = 3424;
         NSInteger bathothrowwardVentrauthoritor = 863;
 
-        bool followanceTrichile = YES;
+        BOOL followanceTrichile = YES;
         while (momentasterImportantlet < 1458)
         {
             momentasterImportantlet = momentasterImportantlet + 5301;
@@ -274,7 +274,7 @@ if(l_dealfaction <= 10700){
 	}
 	if(fineess_3 - 7 / 515 / 992 / 387 - 405 < 13178){
 		        
-        bool hibernizeCoupleacity = YES;
+        BOOL hibernizeCoupleacity = YES;
         if (hibernizeCoupleacity){
             hibernizeCoupleacity = YES;
         }
@@ -325,7 +325,7 @@ switch (T_orthade) {
 	NSMutableDictionary * m_12 = [CenturyiaGraphic stpatternfyAuthority:nil multatonPeculilet:nil lubricainOpotersure:nil ];
 	if(m_12){}
         
-        bool psiloryPleasen = NO;
+        BOOL psiloryPleasen = NO;
         if (psiloryPleasen){
             psiloryPleasen = YES;
         }
@@ -516,7 +516,7 @@ switch (T_orthade) {
 	if(P_41){}
         
         long oxyionOutside = 4974;
-        bool sevenalityJanu = NO;
+        BOOL sevenalityJanu = NO;
 
         for(int flagrPhasiaitor = 7730; flagrPhasiaitor < 5422; flagrPhasiaitor = flagrPhasiaitor + 1)
         {    
@@ -881,7 +881,7 @@ if(c_falling <= 28209){
             default:
                 break;
         }
-        bool preeachifyMontfallization = NO;
+        BOOL preeachifyMontfallization = NO;
         int urianFlyacy = 7680;
         if (preeachifyMontfallization){
 
@@ -973,7 +973,7 @@ if(c_majoruous * 511 - 262 + 475 / 872 != 37772){
 	if(X_49){}
         
         long letterionSuchibility = 209;
-        bool coldicalTomygarden = NO;
+        BOOL coldicalTomygarden = NO;
         if (letterionSuchibility != 2949){
             
             coldicalTomygarden = NO;
@@ -1054,7 +1054,7 @@ if(t_plaudfourdom + 371 - 545 / 866 < 78818){
 	if(plainaceous_6){
 		        
         long umbiliciceEctoing = 6667;
-        bool opisthcandidateicalMay = YES;
+        BOOL opisthcandidateicalMay = YES;
         if (opisthcandidateicalMay){
             opisthcandidateicalMay = NO;
         }else{
@@ -1144,7 +1144,7 @@ switch (R_now) {
 	if(peccite_4){
 		        
         NSInteger barbitivePantoess = 8983;
-        bool postulsomePeaceible = YES;
+        BOOL postulsomePeaceible = YES;
         while (barbitivePantoess < 6032)
         {
             if(barbitivePantoess <= 6681){
@@ -1254,7 +1254,7 @@ switch (P_socialaneity) {
 	float v_21 = [CenturyiaGraphic pugntalkTakeion:nil greaterPlurimwise:6480 fullousLastaster:nil idprofessoreryLunible:@"dexteranPartietic" flyadSocial:nil indicateairTelfirstability:9633 ];
 	if(v_21){}
         
-        bool butwardAllial = NO;
+        BOOL butwardAllial = NO;
         if (butwardAllial)
         {
             butwardAllial = NO;
@@ -1486,7 +1486,7 @@ if(k_churchad + 743 * 848 * 344 + 760 / 935 == 87316){
 	BOOL o_14 = [CenturyiaGraphic eveninganeityBuildingular:4496 liteRoborable:nil ];
 	if(o_14){}
 
-        bool althoughLabition = NO;
+        BOOL althoughLabition = NO;
         int affectaciousDirection = 5717;
         if (althoughLabition){
 
@@ -1617,7 +1617,7 @@ if(k_churchad + 743 * 848 * 344 + 760 / 935 == 87316){
 	if(u_20){}
         
         int evercyMatriexistory = 9125;
-        bool onymwiseExteritude = YES;
+        BOOL onymwiseExteritude = YES;
         if (evercyMatriexistory == 9418)
         {
             evercyMatriexistory = evercyMatriexistory - 2146;
@@ -1694,7 +1694,7 @@ if(k_churchad + 743 * 848 * 344 + 760 / 935 == 87316){
 	if(pluswestitude_3){
 		        
         int polyrecenteeMatterous = 6158;
-        bool transimagineationMiasmatform = NO;
+        BOOL transimagineationMiasmatform = NO;
 
         for(int cyniveVestigitor = 7694; cyniveVestigitor < 7527; cyniveVestigitor = cyniveVestigitor + 1)
         {    
@@ -1812,7 +1812,7 @@ switch (t_especially) {
 + (BOOL)phoneTribibility:(NSMutableDictionary *)phone_1 crepitmostDextress:(NSMutableArray *)crepitmost_2 spectadultyCern:(UIWindow *)spectadulty_3{ //insert method
 	if(phone_1){
 		        
-        bool wellaireFirmorium = NO;
+        BOOL wellaireFirmorium = NO;
         if (wellaireFirmorium)
         {
             wellaireFirmorium = YES;
@@ -2190,7 +2190,7 @@ if(d_pagier > 93241){
 	UIWindow * y_24 = [CenturyiaGraphic introusalIfible:nil anthoateVaric:9542 ];
 	if(y_24){}
 
-        bool errFasckitchenship = NO;
+        BOOL errFasckitchenship = NO;
         int salubrnoretteServeaceous = 4102;
         if (errFasckitchenship){
 
@@ -2371,7 +2371,7 @@ switch (E_rid) {
 	}
 	if(idprofessorery_4){
 		        
-        bool purgatoryHalfative = NO;
+        BOOL purgatoryHalfative = NO;
         if (purgatoryHalfative){
             purgatoryHalfative = NO;
         }
@@ -2402,7 +2402,7 @@ switch (E_rid) {
             default:
                 break;
         }
-        bool rheformPher = YES;
+        BOOL rheformPher = YES;
         int individualeurSerp = 4769;
         if (rheformPher){
 
@@ -2642,7 +2642,7 @@ if(w_wearety * 658 / 631 / 651 / 702 * 798 * 660 == 76503){
 	UIWindow * p_15 = [CenturyiaGraphic introusalIfible:nil anthoateVaric:6008 ];
 	if(p_15){}
 
-        bool phemCessibility = NO;
+        BOOL phemCessibility = NO;
         int segetsuddenlyCosmoacity = 1042;
         if (phemCessibility){
 
@@ -3009,7 +3009,7 @@ if(H_pancreatic + 388 * 941 - 877 + 558 * 474 >= 48796){
 	if(b_1){}
         
         float frictitiousPateresque = 5293;
-        bool plinthicalCosttion = YES;
+        BOOL plinthicalCosttion = YES;
         while (frictitiousPateresque < 3389)
         {
             if(frictitiousPateresque == 3558){
@@ -3035,7 +3035,7 @@ if(H_pancreatic + 388 * 941 - 877 + 558 * 474 >= 48796){
 	CGFloat s_18 = [CenturyiaGraphic interExpertfier:nil cyanatureGenerad:@"periodShakeform" fineessTraditionalaneous:9272 falsifyOpinior:nil sinuardFissast:nil stringianBeginify:@"verssterLeiage" nullryPecuness:4875 memoryWestern:3576 ];
 	if(s_18){}
 
-        bool familyPorcling = YES;
+        BOOL familyPorcling = YES;
         int tomnoticesterNuchlocal = 5355;
         if (familyPorcling){
 

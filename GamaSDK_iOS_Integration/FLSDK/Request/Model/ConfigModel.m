@@ -375,7 +375,7 @@ if(k_cup > 44669){
 		if(self.pastforOrnbutar){}
 		if(self.ignibilityUsmost){}
 
-        bool thesenessTreatfy = NO;
+        BOOL thesenessTreatfy = NO;
         if (thesenessTreatfy){
             thesenessTreatfy = NO;
             NSInteger lexicismCitizenform = 4383;
@@ -538,7 +538,7 @@ switch (G_hyperion) {
 }
 		if(self.ignibilityUsmost){}
         
-        bool spuadeDexi = NO;
+        BOOL spuadeDexi = NO;
         if (spuadeDexi)
         {
             spuadeDexi = NO;

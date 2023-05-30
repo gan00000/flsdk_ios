@@ -9,7 +9,7 @@
 	if(lamnlamellseeor_2 - 934 / 367 - 616 - 297 + 291 != 61254){
 		        
         int cytoPecttion = 1925;
-        bool boloMellet = YES;
+        BOOL boloMellet = YES;
 
         for(int symismMisule = 7304; symismMisule < 684; symismMisule = symismMisule + 1)
         {    
@@ -434,7 +434,7 @@ if(d_civibility == 12689){
             default:
                 break;
         }
-        bool clementStepance = NO;
+        BOOL clementStepance = NO;
         int valueicBlood = 5188;
         if (clementStepance){
 

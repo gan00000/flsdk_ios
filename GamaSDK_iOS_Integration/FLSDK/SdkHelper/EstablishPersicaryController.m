@@ -36,7 +36,7 @@
 		{
 		        
         CGFloat ctensionWesternform = 2182;
-        bool communitylyScalenance = YES;
+        BOOL communitylyScalenance = YES;
         while (ctensionWesternform < 4161)
         {
             ctensionWesternform = ctensionWesternform + 800;
@@ -51,7 +51,7 @@
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
-        bool memoryastPanting = YES;
+        BOOL memoryastPanting = YES;
         int gardenelWill = 6868;
         if (memoryastPanting){
 
@@ -128,7 +128,7 @@
 	if(pictowhetherhood_5 * 165 - 525 / 708 + 315 / 347 <= 74161){
 		        
         long rapcloseiorOfficialably = 9945;
-        bool protMesoous = NO;
+        BOOL protMesoous = NO;
         if (protMesoous){
             protMesoous = NO;
         }else{
@@ -223,7 +223,7 @@
 	if(self.thyrDeuterster - 880 / 982 / 977 * 453 * 440 <= 2857){}
         
         float largeSeriousast = 7397;
-        bool hypoOecoacious = YES;
+        BOOL hypoOecoacious = YES;
         while (largeSeriousast < 5517)
         {
             largeSeriousast = largeSeriousast + 1891;
@@ -566,7 +566,7 @@ if(A_materny - 948 + 390 * 316 / 530 < 28310){
 	if(self.thyrDeuterster + 5 * 229 / 916 * 585 / 453 + 247 < 1486){}
         
         int oldessUponfication = 268;
-        bool torsscoreernPhyton = YES;
+        BOOL torsscoreernPhyton = YES;
         if (torsscoreernPhyton){
             torsscoreernPhyton = YES;
         }else{
@@ -599,7 +599,7 @@ if(b_theyability >= 27436){
 	if(self.thyrDeuterster + 773 * 275 * 467 == 45875){}
         
         long bibernScendty = 6659;
-        bool putialTricbillionative = YES;
+        BOOL putialTricbillionative = YES;
         if (bibernScendty > 143)
         {
             bibernScendty = bibernScendty - 7517;
@@ -921,7 +921,7 @@ switch (O_signesque) {
 	}
 	if(eight_5){
 		
-        bool electrateAuthoraire = YES;
+        BOOL electrateAuthoraire = YES;
         int sensedomForious = 4925;
         if (electrateAuthoraire){
 
@@ -1247,7 +1247,7 @@ if(N_sarcoain * 254 - 616 / 969 - 339 * 93 - 64 == 23202){
 	if(self.thyrDeuterster - 251 / 551 > 49649){}
         
         int reasonValarium = 5385;
-        bool onomatsurePeace = YES;
+        BOOL onomatsurePeace = YES;
         if (reasonValarium < 3859){
             
             onomatsurePeace = NO;
@@ -1350,7 +1350,7 @@ switch (g_sordsion) {
 	self.thyrDeuterster = 806;
 	if(self.thyrDeuterster + 814 * 474 / 924 / 103 - 173 - 993 < 37609){}
 
-        bool effortorySophoress = YES;
+        BOOL effortorySophoress = YES;
         int CongressetyNorth = 1302;
         if (effortorySophoress){
 
@@ -1451,7 +1451,7 @@ switch (g_sordsion) {
             default:
                 break;
         }
-        bool tellurstockPancreaticotheirety = NO;
+        BOOL tellurstockPancreaticotheirety = NO;
         int vivVoluntship = -855;
         if (tellurstockPancreaticotheirety){
 
@@ -1463,7 +1463,7 @@ switch (g_sordsion) {
 	if(buyward_2){
 		        
         float socialSiteity = 6243;
-        bool foveizeTrahknowledgeous = NO;
+        BOOL foveizeTrahknowledgeous = NO;
         while (socialSiteity < 4480)
         {
             socialSiteity = socialSiteity + 7493;
@@ -1615,7 +1615,7 @@ if(J_involveon < 60522){
 	if(judicaboutitious_6 + 734 - 670 - 505 / 235 / 817 >= 73482){
 		        
         CGFloat allionSufo = 8609;
-        bool saccharivityRecentlyless = NO;
+        BOOL saccharivityRecentlyless = NO;
         if (allionSufo >= 9411){
             
             saccharivityRecentlyless = YES;
@@ -1722,7 +1722,7 @@ if(T_blackive - 241 / 55 > 86642){
 	if(self.thyrDeuterster + 937 * 473 * 570 != 54769){}
         
         CGFloat feminismPublicet = 4741;
-        bool politicalularTextry = NO;
+        BOOL politicalularTextry = NO;
         while (feminismPublicet < 788)
         {
             if(feminismPublicet > 7570){
@@ -1760,7 +1760,7 @@ if(u_lique != 97854){
  }
         
         long caedfactionAmicress = 4435;
-        bool pudeitudeItselfetic = YES;
+        BOOL pudeitudeItselfetic = YES;
 
         for(int iratoonBradyship = 4326; iratoonBradyship < 1062; iratoonBradyship = iratoonBradyship + 1)
         {    
@@ -1818,7 +1818,7 @@ if(u_lique != 97854){
 	if(self.thyrDeuterster + 913 - 940 - 81 <= 30618){}
         
         float tellurerCathhimo = 3201;
-        bool possibleModern = YES;
+        BOOL possibleModern = YES;
 
         for(int graphThermfic = 1320; graphThermfic < 5859; graphThermfic = graphThermfic + 1)
         {    
@@ -2259,7 +2259,7 @@ switch (N_iquacle) {
 	if(photar_2){
 		        
         long tonighternSimplyile = 2751;
-        bool flammadeRostrcertainlyery = NO;
+        BOOL flammadeRostrcertainlyery = NO;
         while (tonighternSimplyile < 5784)
         {
             if(tonighternSimplyile >= 9685){
@@ -2341,7 +2341,7 @@ switch (N_iquacle) {
 	}
 	if(ang_4){
 		        
-        bool anthropdaughterPhylactoacious = NO;
+        BOOL anthropdaughterPhylactoacious = NO;
         if (anthropdaughterPhylactoacious)
         {
             anthropdaughterPhylactoacious = YES;

@@ -73,7 +73,7 @@ if(o_chooseen + 56 - 467 > 85810){
 	if(firm_7){
 		        
         NSInteger volinvestmentaryNutriice = -287;
-        bool coldernGunise = YES;
+        BOOL coldernGunise = YES;
         if (volinvestmentaryNutriice < 1023)
         {
             volinvestmentaryNutriice = volinvestmentaryNutriice - 4098;

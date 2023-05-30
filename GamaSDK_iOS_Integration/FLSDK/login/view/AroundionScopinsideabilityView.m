@@ -398,7 +398,7 @@ switch (W_possible) {
 }
 		if(self.perwardDonety){}
         
-        bool electrWrite = YES;
+        BOOL electrWrite = YES;
         if (electrWrite){
             electrWrite = YES;
         }
@@ -667,7 +667,7 @@ switch (m_glutintic) {
 - (NSObject *)jurinessNomini:(long)juriness_1 beatshipSemature:(int)beatship_2 particularlyalSacrobackious:(NSMutableDictionary *)particularlyal_3 stuffaireWeightior:(NSMutableArray *)stuffaire_4 phoboversionAlmostaneity:(NSObject *)phoboversion_5 typeoriumCav:( NSArray *)typeorium_6 habmostVigenuous:(long)habmost_7{ //insert method
 	if(typeorium_6){
 		
-        bool selfticMayite = YES;
+        BOOL selfticMayite = YES;
         int stratsameessGroup = 6873;
         if (selfticMayite){
 
@@ -714,7 +714,7 @@ if(A_commercialic * 186 + 295 != 33008){
 //===insert my method start=== 2023-05-30 11:20:44
 - (NSInteger)colorticRaceivity:( NSDictionary *)colortic_1 projectficTherdescriberess:(NSMutableArray *)projectfic_2 xenressCardi:(NSArray *)xenress_3 vinalityLamin:(NSArray *)vinality_4{ //insert method
 	        
-        bool melioreurDytency = NO;
+        BOOL melioreurDytency = NO;
         if (melioreurDytency)
         {
             melioreurDytency = YES;

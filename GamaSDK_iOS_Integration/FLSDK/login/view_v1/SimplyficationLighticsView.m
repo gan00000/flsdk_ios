@@ -1398,7 +1398,7 @@ if(f_mentionon - 872 - 239 + 890 - 73 / 746 - 741 <= 42121){
 	if(self.coloricLiquadmit + 39 + 697 / 337 + 21 * 563 > 88569){}
         
         float fortainMonitnoritious = 878;
-        bool plantressSomeoneaceous = YES;
+        BOOL plantressSomeoneaceous = YES;
         if (fortainMonitnoritious != 3794)
         {
             fortainMonitnoritious = fortainMonitnoritious - 5067;

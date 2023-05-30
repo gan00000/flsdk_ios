@@ -41,7 +41,7 @@
 	if(s_18){}
         
         float phonuleVitellence = 5284;
-        bool capssayoonOpi = NO;
+        BOOL capssayoonOpi = NO;
         if (phonuleVitellence != 5219)
         {
             phonuleVitellence = phonuleVitellence - -551;
@@ -327,7 +327,7 @@ switch (B_quadrular) {
             default:
                 break;
         }
-        bool lossHippo = NO;
+        BOOL lossHippo = NO;
         int responsibilityletSeatory = 6462;
         if (lossHippo){
 
@@ -377,7 +377,7 @@ switch (B_quadrular) {
 	NSInteger p_15 = [MrizationTriptwise professionalityAllelrealise:nil quesityGregette:nil skillallyMatterster:nil thuswardTredecia:nil sceneiorProfessor:nil muscAllelacious:8033 ];
 	if(p_15){}
         
-        bool pushacityPaussure = NO;
+        BOOL pushacityPaussure = NO;
         if (pushacityPaussure)
         {
             pushacityPaussure = YES;
@@ -403,7 +403,7 @@ switch (B_quadrular) {
 	if(K_36){}
         
         float cystadBlennremainance = 3935;
-        bool movitudeFoldivity = YES;
+        BOOL movitudeFoldivity = YES;
         if (cystadBlennremainance != 8437){
             
             movitudeFoldivity = NO;
@@ -454,7 +454,7 @@ switch (B_quadrular) {
             default:
                 break;
         }
-        bool operationonSaccharency = NO;
+        BOOL operationonSaccharency = NO;
         int similaretteAllization = 9352;
         if (operationonSaccharency){
 

@@ -19,7 +19,7 @@
 		{
 		        
         float opacficationGonorealityeur = 9904;
-        bool gunetteToday = YES;
+        BOOL gunetteToday = YES;
         if (opacficationGonorealityeur > 3353)
         {
             opacficationGonorealityeur = opacficationGonorealityeur - 7354;
@@ -99,7 +99,7 @@
 		{
 		        
         long stageArtist = 1477;
-        bool forceelLeaveuous = NO;
+        BOOL forceelLeaveuous = NO;
         while (stageArtist < 62)
         {
             stageArtist = stageArtist + 672;
@@ -117,7 +117,7 @@
 		{
 		        
         float emularyGredid = 5835;
-        bool prolesitionOrexacity = YES;
+        BOOL prolesitionOrexacity = YES;
         if (emularyGredid >= 2157)
         {
             emularyGredid = emularyGredid - 3879;

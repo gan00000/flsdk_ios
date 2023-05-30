@@ -99,7 +99,7 @@
 	}
 	if(bulbatic_3){
 		
-        bool yesanRecordality = NO;
+        BOOL yesanRecordality = NO;
         int mirbillionorStimulal = 9183;
         if (yesanRecordality){
 
@@ -317,7 +317,7 @@
 	if(trogloization_1 + 363 * 794 * 794 / 544 + 264 >= 21017){
 		        
         CGFloat cursletterieShefic = 5327;
-        bool uvularianPhyll = YES;
+        BOOL uvularianPhyll = YES;
 
         for(int locoishFormerarium = 5074; locoishFormerarium < 1152; locoishFormerarium = locoishFormerarium + 1)
         {    

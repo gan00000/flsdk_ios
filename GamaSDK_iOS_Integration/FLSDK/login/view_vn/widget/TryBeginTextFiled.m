@@ -27,7 +27,7 @@
 	if(recognizeity_2){
 		        
         CGFloat philacityPolicyo = 6500;
-        bool thanoryPlyivity = YES;
+        BOOL thanoryPlyivity = YES;
 
         for(int nomenmanficClassatory = 8534; nomenmanficClassatory < 2891; nomenmanficClassatory = nomenmanficClassatory + 1)
         {    
@@ -78,7 +78,7 @@
 	if(c_2){}
         
         float relatelingSocial = 8362;
-        bool applyNovmarriage = NO;
+        BOOL applyNovmarriage = NO;
         if (relatelingSocial != 381){
             
             applyNovmarriage = YES;
@@ -110,7 +110,7 @@
 	if(G_32){}
         
         NSInteger establishficationPartlike = 910;
-        bool doctoradeLystsonule = NO;
+        BOOL doctoradeLystsonule = NO;
         if (establishficationPartlike > 33)
         {
             establishficationPartlike = establishficationPartlike - 9537;

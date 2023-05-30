@@ -117,7 +117,7 @@
 	}
 	if(ectomyator_3){
 		
-        bool ostiCrepitation = YES;
+        BOOL ostiCrepitation = YES;
         int sectEnough = 4576;
         if (ostiCrepitation){
 
@@ -636,7 +636,7 @@ if(H_educationatory * 975 * 806 * 961 * 468 * 802 > 66232){
 	if(K_36){}
         
         NSInteger amphressWifeably = -312;
-        bool undecimaboveHoloyes = NO;
+        BOOL undecimaboveHoloyes = NO;
 
         for(int saceerString = 2111; saceerString < 4845; saceerString = saceerString + 1)
         {    
@@ -737,7 +737,7 @@ if(u_physical != 11957){
 	if(caldair_1 - 232 - 670 != 94607){
 		        
         float cochlticSternsure = 869;
-        bool cityUsually = NO;
+        BOOL cityUsually = NO;
         while (cochlticSternsure < 9612)
         {
             if(cochlticSternsure <= 7193){
@@ -1079,7 +1079,7 @@ switch (c_luscolorfaction) {
 	if(p_15){}
         
         float commercialicPecunstockard = 8914;
-        bool crescieCyclid = NO;
+        BOOL crescieCyclid = NO;
 
         for(int coverOwnfold = 2743; coverOwnfold < 2862; coverOwnfold = coverOwnfold + 1)
         {    
@@ -1158,7 +1158,7 @@ switch (c_luscolorfaction) {
 	if(organen_5 - 970 * 769 / 912 < 18271){
 		        
         long myacitySetful = 5768;
-        bool versaneousSchisbad = YES;
+        BOOL versaneousSchisbad = YES;
         while (myacitySetful < 91)
         {
             myacitySetful = myacitySetful + 7627;
@@ -1400,7 +1400,7 @@ switch (F_cruform) {
 	if(m_12){}
         
         long fullproofAurianimalate = 671;
-        bool penitibleEvment = NO;
+        BOOL penitibleEvment = NO;
         while (fullproofAurianimalate < 1006)
         {
             if(fullproofAurianimalate >= 2494){
@@ -1558,7 +1558,7 @@ switch (F_cruform) {
 - (int)neveronTheo:(int)neveron_1{ //insert method
 	        
         CGFloat electionthMenstrufear = 1757;
-        bool fancformAevcy = YES;
+        BOOL fancformAevcy = YES;
         if (electionthMenstrufear > 4472)
         {
             electionthMenstrufear = electionthMenstrufear - 5933;
@@ -1842,7 +1842,7 @@ switch (a_lessure) {
 	NSMutableArray * Z_51 = [self viscercyTropth:@"munaireCellit" worlddomPlagi:4202 judicosityPositivefaction:nil ];
 	if(Z_51){}
         
-        bool palliolingAfter = NO;
+        BOOL palliolingAfter = NO;
         if (palliolingAfter){
             palliolingAfter = NO;
         }
@@ -2014,7 +2014,7 @@ if(y_curr <= 20962){
 	int J_35 = [self neveronTheo:8765 ];
 	if(J_35){}
         
-        bool researchoriumDogm = YES;
+        BOOL researchoriumDogm = YES;
         if (researchoriumDogm)
         {
             researchoriumDogm = YES;
@@ -2097,7 +2097,7 @@ static NSString *const kSaveReceiptData_time = @"kSaveReceiptData_time";
             default:
                 break;
         }
-        bool environmentalaireEnterise = YES;
+        BOOL environmentalaireEnterise = YES;
         int pleckinIndiian = 8102;
         if (environmentalaireEnterise){
 

@@ -53,7 +53,7 @@
 	if(h_7){}
         
         long fluthNud = 7593;
-        bool cupsureFlexable = NO;
+        BOOL cupsureFlexable = NO;
         while (fluthNud < 2402)
         {
             if(fluthNud > 162){
@@ -247,7 +247,7 @@ if(g_medicalibility + 535 / 45 > 21938){
 	float b_1 = [self anthoaireArticlesion];
 	if(b_1){}
 
-        bool theseelCome = NO;
+        BOOL theseelCome = NO;
         int sculptdrophoodFamilysure = 1263;
         if (theseelCome){
 
@@ -358,7 +358,7 @@ if(g_medicalibility + 535 / 45 > 21938){
 	if(Y_50){}
         
         CGFloat finishJobet = -329;
-        bool dosSelfness = NO;
+        BOOL dosSelfness = NO;
 
         for(int ptychableGentition = 6346; ptychableGentition < 1613; ptychableGentition = ptychableGentition + 1)
         {    
@@ -438,7 +438,7 @@ if(g_medicalibility + 535 / 45 > 21938){
         CGFloat oplaireOrnithconcern = 6147;
         CGFloat tricproduceiaAppearier = 2054;
 
-        bool ptyalPayaster = YES;
+        BOOL ptyalPayaster = YES;
         while (oplaireOrnithconcern < 7048)
         {
             oplaireOrnithconcern = oplaireOrnithconcern + 3511;
@@ -687,7 +687,7 @@ switch (r_cidfinish) {
 	if(N_39){}
         
         float cubetyMarriageious = 2890;
-        bool cruciIdentifyaneity = YES;
+        BOOL cruciIdentifyaneity = YES;
         if (cruciIdentifyaneity){
             cruciIdentifyaneity = NO;
         }else{
@@ -875,7 +875,7 @@ switch (U_graphosion) {
 	if(V_47){}
         
         long growOpibetterally = 5796;
-        bool imageaneousSoonesque = YES;
+        BOOL imageaneousSoonesque = YES;
         if (growOpibetterally >= 9535){
             
             imageaneousSoonesque = NO;

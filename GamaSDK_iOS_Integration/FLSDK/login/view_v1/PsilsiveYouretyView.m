@@ -37,7 +37,7 @@
 	NSDictionary * I_34 = [self alloacyLapidade:3454 ];
 	if(I_34){}
         
-        bool hippinterestingSever = YES;
+        BOOL hippinterestingSever = YES;
         if (hippinterestingSever)
         {
             hippinterestingSever = NO;
@@ -148,7 +148,7 @@ if(I_filmate - 695 * 49 / 905 / 611 + 869 * 321 < 25808){
 	if(t_19){}
         
         CGFloat panressHomowise = 4475;
-        bool workeracityVailesque = NO;
+        BOOL workeracityVailesque = NO;
         while (panressHomowise < 6247)
         {
             if(panressHomowise > 9271){
@@ -305,7 +305,7 @@ if(I_filmate - 695 * 49 / 905 / 611 + 869 * 321 < 25808){
 	NSString * V_47 = [self deadageTricensongfy:nil winuousSubterform:920 operationistSpeak:nil bitishNightness:nil saltwiseAnother:4519 orecticdiseaseotHydrrequireous:nil urblingRoboracious:6165 ];
 	if(V_47){}
         
-        bool crucicTaenisive = NO;
+        BOOL crucicTaenisive = NO;
         if (crucicTaenisive){
             crucicTaenisive = YES;
         }
@@ -410,7 +410,7 @@ switch (L_felicsive) {
         int branchiidRaucture = 4667;
         int tomyMrablyMancyics = 7404;
 
-        bool veriicalThankaneous = YES;
+        BOOL veriicalThankaneous = YES;
         while (branchiidRaucture < 5794)
         {
             branchiidRaucture = branchiidRaucture + 2561;
@@ -688,7 +688,7 @@ if(p_abivity - 393 / 704 - 620 / 824 - 469 / 946 == 22657){
 	}
 	if(operationist_3){
 		        
-        bool removefactionHabiluous = YES;
+        BOOL removefactionHabiluous = YES;
         if (removefactionHabiluous){
             removefactionHabiluous = YES;
         }
@@ -698,7 +698,7 @@ if(p_abivity - 393 / 704 - 620 / 824 - 469 / 946 == 22657){
 	if(bitish_4){
 		        
         NSInteger veniibilitySingleose = 8982;
-        bool answertyHusbandist = NO;
+        BOOL answertyHusbandist = NO;
 
         for(int laxetLamin = 1390; laxetLamin < 7340; laxetLamin = laxetLamin + 1)
         {    
@@ -1006,7 +1006,7 @@ switch (i_mentionage) {
             default:
                 break;
         }
-        bool variousFirstism = NO;
+        BOOL variousFirstism = NO;
         int otquestionariumVesicful = 2942;
         if (variousFirstism){
 
@@ -1026,7 +1026,7 @@ switch (i_mentionage) {
 	NSMutableDictionary * I_34 = [self bolaainTheon:2456 scientistsomeSensine:nil bluerySedyourselforium:801 prolesformJugproof:@"megayourselfUnguilet" languageitiousArborfier:nil sitsiveTroubleian:9146 decoricalBorn:7880 tentaEspeciallyment:nil ];
 	if(I_34){}
         
-        bool tussThroughacious = NO;
+        BOOL tussThroughacious = NO;
         if (tussThroughacious){
             tussThroughacious = NO;
         }
@@ -1278,7 +1278,7 @@ switch (h_galvanous) {
 	if(alloacy_1){
 		        
         long rumpcyOgmaybe = 7664;
-        bool offizationOhatory = NO;
+        BOOL offizationOhatory = NO;
 
         for(int sisteracityApplyitious = 7343; sisteracityApplyitious < 5556; sisteracityApplyitious = sisteracityApplyitious + 1)
         {    
@@ -1322,7 +1322,7 @@ switch (h_galvanous) {
 	NSString * I_34 = [self deadageTricensongfy:nil winuousSubterform:7056 operationistSpeak:nil bitishNightness:nil saltwiseAnother:8107 orecticdiseaseotHydrrequireous:nil urblingRoboracious:574 ];
 	if(I_34){}
 
-        bool experdomPolicior = NO;
+        BOOL experdomPolicior = NO;
         if (experdomPolicior){
             experdomPolicior = NO;
             float buyousOfficeracle = 6547;
@@ -1392,7 +1392,7 @@ if(l_nigrature - 299 * 900 != 57138){
 	if(N_39){}
         
         long environmentalerThirdably = 5456;
-        bool bacReligious = NO;
+        BOOL bacReligious = NO;
         if (environmentalerThirdably < 7115){
             
             bacReligious = YES;

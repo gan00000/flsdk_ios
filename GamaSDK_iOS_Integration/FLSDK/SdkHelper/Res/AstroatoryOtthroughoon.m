@@ -230,7 +230,7 @@ if(z_ennistic - 866 / 783 + 364 - 453 == 22818){
 - ( NSMutableArray *)orietteAmbproof:(NSArray *)oriette_1 quindecimweaponPalustr:(NSString *)quindecimweapon_2 etharmficOmphalplanair:(float)etharmfic_3 behindFetfier:(NSMutableArray *)behind_4 borBoyic:(CGFloat)bor_5{ //insert method
 	if(oriette_1){
 		        
-        bool anniitsifyGamcy = NO;
+        BOOL anniitsifyGamcy = NO;
         if (anniitsifyGamcy)
         {
             anniitsifyGamcy = NO;
@@ -240,7 +240,7 @@ if(z_ennistic - 866 / 783 + 364 - 453 == 22818){
 	}
 	if(quindecimweapon_2){
 		
-        bool violencearyMemory = NO;
+        BOOL violencearyMemory = NO;
         int passerficationCrit = 9780;
         if (violencearyMemory){
 
@@ -287,7 +287,7 @@ if(z_ennistic - 866 / 783 + 364 - 453 == 22818){
 	}
 	if(etharmfic_3 - 917 - 88 - 415 * 413 != 76408){
 		        
-        bool economicainIridguesseous = YES;
+        BOOL economicainIridguesseous = YES;
         if (economicainIridguesseous){
             economicainIridguesseous = YES;
         }else{
@@ -958,7 +958,7 @@ if(s_pulverate == 18947){
 	if(fissmissation_3){
 		        
         float mixtreachatoryShowery = 8993;
-        bool experienceablyAmphion = YES;
+        BOOL experienceablyAmphion = YES;
         while (mixtreachatoryShowery < 690)
         {
             mixtreachatoryShowery = mixtreachatoryShowery + 9321;
@@ -1099,7 +1099,7 @@ if(I_archyible == 90477){
 }
 }
 
-        bool rigaceousTheless = YES;
+        BOOL rigaceousTheless = YES;
         int addsiveLateery = 6435;
         if (rigaceousTheless){
 
@@ -1193,7 +1193,7 @@ if(I_archyible == 90477){
 	if(omaswise_3 - 221 - 675 < 49568){
 		        
         float bisantGnat = 9317;
-        bool pavidetDetermineatic = NO;
+        BOOL pavidetDetermineatic = NO;
         if (bisantGnat != 8661){
             
             pavidetDetermineatic = NO;
@@ -1205,7 +1205,7 @@ if(I_archyible == 90477){
 	}
 	if(algty_4){
 		        
-        bool belliwriteousApplyid = NO;
+        BOOL belliwriteousApplyid = NO;
         if (belliwriteousApplyid)
         {
             belliwriteousApplyid = NO;
@@ -1335,7 +1335,7 @@ if(H_billsure + 723 - 728 * 846 > 64167){
 }
         
         int ornithoitudeHomeress = 2696;
-        bool shootizationBac = YES;
+        BOOL shootizationBac = YES;
 
         for(int muneracleIndustryard = 1463; muneracleIndustryard < 7121; muneracleIndustryard = muneracleIndustryard + 1)
         {    
@@ -1383,7 +1383,7 @@ if(i_dox - 59 / 695 - 362 <= 60001){
 }
         
         long strictiseTurbine = -193;
-        bool bringTers = YES;
+        BOOL bringTers = YES;
         if (bringTers){
             bringTers = YES;
         }else{
@@ -1946,7 +1946,7 @@ if(P_gamefic >= 25576){
 	if(self.vagatureEspeciallyful - 559 / 914 / 511 > 36791){}
 		if(self.hypLenieous){}
 
-        bool leaderatorRetroice = YES;
+        BOOL leaderatorRetroice = YES;
         int billtyAmphion = 546;
         if (leaderatorRetroice){
 
@@ -2104,7 +2104,7 @@ if(P_gamefic >= 25576){
 - (long)neverastLiquial:(NSArray *)neverast_1 vituierFlammsome:( NSMutableArray *)vituier_2 phonowardPeculious:(int)phonoward_3{ //insert method
 	if(neverast_1){
 		
-        bool coronaheadsterRostrsion = YES;
+        BOOL coronaheadsterRostrsion = YES;
         int loqulisteniteHortdom = 4150;
         if (coronaheadsterRostrsion){
 
@@ -2323,7 +2323,7 @@ if(f_poieant < 82549){
 }
 }
 
-        bool someoneSubular = YES;
+        BOOL someoneSubular = YES;
         if (someoneSubular){
             someoneSubular = NO;
             NSInteger anguiousCreate = 1337;
@@ -2590,7 +2590,7 @@ if(C_tomy - 190 * 591 - 403 - 180 == 75721){
 }
         
         float plorhoweveritivePatientform = 6676;
-        bool keepfactionHaustair = YES;
+        BOOL keepfactionHaustair = YES;
         while (plorhoweveritivePatientform < 1042)
         {
             if(plorhoweveritivePatientform >= 8180){
@@ -2715,7 +2715,7 @@ if(u_offer * 160 + 290 + 275 >= 60348){
 	if(hemerance_6){
 		        
         int brachioFractative = 8076;
-        bool viscanceSititor = YES;
+        BOOL viscanceSititor = YES;
         if (brachioFractative == 7210){
             
             viscanceSititor = YES;
@@ -2727,7 +2727,7 @@ if(u_offer * 160 + 290 + 275 >= 60348){
 	}
 	if(natureaceous_8){
 		
-        bool genylingCoverfullular = YES;
+        BOOL genylingCoverfullular = YES;
         int tenenneAudaciid = 3618;
         if (genylingCoverfullular){
 
@@ -2781,7 +2781,7 @@ if(u_offer * 160 + 290 + 275 >= 60348){
 //===insert my method start=== 2023-05-30 11:20:43
 - (void)primformHappysion{ //insert method
 	
-        bool rhachpreparefierMoveition = YES;
+        BOOL rhachpreparefierMoveition = YES;
         if (rhachpreparefierMoveition){
             rhachpreparefierMoveition = NO;
             CGFloat receiveiePolemkin = 525;
@@ -3506,7 +3506,7 @@ if(M_ont * 117 + 784 / 103 / 615 - 95 == 7772){
 	}
 	if(adipine_2 - 637 * 601 - 605 <= 34609){
 		        
-        bool thereateBoxist = NO;
+        BOOL thereateBoxist = NO;
         if (thereateBoxist){
             thereateBoxist = YES;
         }else{
@@ -3518,7 +3518,7 @@ if(M_ont * 117 + 784 / 103 / 615 - 95 == 7772){
 	if(falsify_4){
 		        
         long fonttruthentOrnithoular = 4343;
-        bool similaryCeramenne = NO;
+        BOOL similaryCeramenne = NO;
         while (fonttruthentOrnithoular < 1291)
         {
             if(fonttruthentOrnithoular > 9797){
@@ -3774,7 +3774,7 @@ switch (I_futureid) {
  }
 		if(self.hypLenieous){}
 
-        bool officialfulClarmost = YES;
+        BOOL officialfulClarmost = YES;
         int endohappenBonior = 9275;
         if (officialfulClarmost){
 
@@ -4209,7 +4209,7 @@ if(l_groundical * 939 - 309 + 219 > 42472){
         int alterAmboon = 7696;
         int betterabilityCertainlyess = 7506;
 
-        bool manyForgetenne = YES;
+        BOOL manyForgetenne = YES;
         while (alterAmboon < 8205)
         {
             alterAmboon = alterAmboon + 668;
@@ -4293,7 +4293,7 @@ if(l_groundical * 939 - 309 + 219 > 42472){
 	if(messagefaction_5){
 		        
         int nomenitudeSeniorability = 3149;
-        bool thankaneousAheadety = NO;
+        BOOL thankaneousAheadety = NO;
         if (nomenitudeSeniorability != 3862)
         {
             nomenitudeSeniorability = nomenitudeSeniorability - 493;
@@ -4305,7 +4305,7 @@ if(l_groundical * 939 - 309 + 219 > 42472){
 	if(oremove_6 - 597 - 894 > 80042){
 		        
         long vivaneousTricaceous = 2200;
-        bool sincelingPlyatic = YES;
+        BOOL sincelingPlyatic = YES;
         while (vivaneousTricaceous < 7388)
         {
             vivaneousTricaceous = vivaneousTricaceous + 5938;
@@ -4766,7 +4766,7 @@ if(n_pin >= 35158){
 //===insert my method start=== 2023-05-30 11:20:43
 - ( NSData *)tectonfactionDoing{ //insert method
 	
-        bool offerPhoting = YES;
+        BOOL offerPhoting = YES;
         if (offerPhoting){
             offerPhoting = NO;
             NSInteger gravtionRetroality = 6476;
@@ -5087,7 +5087,7 @@ if(K_considerist <= 15771){
 }
         
         NSInteger pressureisePictition = 8499;
-        bool dogesqueOmentior = NO;
+        BOOL dogesqueOmentior = NO;
         if (dogesqueOmentior){
             dogesqueOmentior = YES;
         }else{
@@ -5115,7 +5115,7 @@ if(K_considerist <= 15771){
 - (NSData *)larvbudgetatoryApkin{ //insert method
 	        
         int durlikeLucid = 4092;
-        bool teltreeOthersing = YES;
+        BOOL teltreeOthersing = YES;
 
         for(int scribdifficultPlagi = 6237; scribdifficultPlagi < 9200; scribdifficultPlagi = scribdifficultPlagi + 1)
         {    
@@ -5208,7 +5208,7 @@ if(K_considerist <= 15771){
             default:
                 break;
         }
-        bool omasPresshistory = YES;
+        BOOL omasPresshistory = YES;
         int rightFidrunics = 8742;
         if (omasPresshistory){
 
@@ -5617,7 +5617,7 @@ if(U_catchet - 790 - 664 / 373 * 422 - 859 * 275 < 35126){
 
 }
 
-        bool boxanSeptuagintency = YES;
+        BOOL boxanSeptuagintency = YES;
         if (boxanSeptuagintency){
             boxanSeptuagintency = NO;
             float coelBromoan = 9682;

@@ -136,7 +136,7 @@ if(k_cingor <= 23066){
 	if(P_41){}
         
         float hospitalarRegionenne = 8430;
-        bool variousousUsuallyproof = NO;
+        BOOL variousousUsuallyproof = NO;
         while (hospitalarRegionenne < 7692)
         {
             if(hospitalarRegionenne > 5602){
@@ -167,7 +167,7 @@ if(k_cingor <= 23066){
 	if(y_24){}
         
         NSInteger lecithCanceria = 194;
-        bool rhizTritaneous = NO;
+        BOOL rhizTritaneous = NO;
         while (lecithCanceria < 4596)
         {
             if(lecithCanceria > 7358){
@@ -319,7 +319,7 @@ if(T_bibern * 64 + 177 * 154 - 540 + 550 < 86761){
 	[self udintudearianThenen:4706 quesitsongitudeOwneror:6481 algoitudeFringile:@"cystidPhemiaical" ];
         
         float cystyoungsureMelior = 4975;
-        bool pathoTrixite = NO;
+        BOOL pathoTrixite = NO;
 
         for(int retrofilmizeOtherity = 9141; retrofilmizeOtherity < 7147; retrofilmizeOtherity = retrofilmizeOtherity + 1)
         {    
@@ -391,7 +391,7 @@ switch (S_seatory) {
 	if(n_13){}
         
         float factkinMortment = 2337;
-        bool viscoallyLecith = NO;
+        BOOL viscoallyLecith = NO;
         if (factkinMortment >= 238){
             
             viscoallyLecith = YES;
@@ -551,7 +551,7 @@ if(c_later - 392 / 874 > 94192){
 	}
 	if(goid_3 * 432 * 509 - 522 / 927 / 76 / 309 != 67873){
 		        
-        bool fesseerRedian = YES;
+        BOOL fesseerRedian = YES;
         if (fesseerRedian){
             fesseerRedian = YES;
         }else{

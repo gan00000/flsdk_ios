@@ -37,7 +37,7 @@
 - (NSDictionary *)itselfQuickly:(BOOL)itself_1 civilHost:(int)civil_2 nasousMaintainization:(int)nasous_3 cumbRiskuous:(long)cumb_4 supereticOnomasator:(NSObject *)superetic_5{ //insert method
 	if(civil_2 * 953 / 140 / 622 == 50270){
 		
-        bool polemkinInstead = NO;
+        BOOL polemkinInstead = NO;
         int happyotHugedom = 4396;
         if (polemkinInstead){
 
@@ -80,7 +80,7 @@
 	if(cumb_4 - 801 + 729 * 117 / 855 != 64102){
 		        
         float texGymnize = 9523;
-        bool riskularMenaccordingious = YES;
+        BOOL riskularMenaccordingious = YES;
 
         for(int anthoasterKaken = 3863; anthoasterKaken < 8045; anthoasterKaken = anthoasterKaken + 1)
         {    
@@ -319,7 +319,7 @@ if(H_hibular * 210 + 374 + 911 > 25052){
         NSInteger alongaciousVasety = 4580;
         NSInteger formerariumApplyier = 8776;
 
-        bool damneryThree = NO;
+        BOOL damneryThree = NO;
         while (alongaciousVasety < 9867)
         {
             alongaciousVasety = alongaciousVasety + 9250;
@@ -1123,7 +1123,7 @@ switch (X_scendform) {
 	NSDictionary * v_21 = [self itselfQuickly:292 civilHost:653 nasousMaintainization:9119 cumbRiskuous:3158 supereticOnomasator:nil ];
 	if(v_21){}
 
-        bool federcauseatoryVaricproof = YES;
+        BOOL federcauseatoryVaricproof = YES;
         int bookistNasous = 697;
         if (federcauseatoryVaricproof){
 
@@ -1177,7 +1177,7 @@ switch (X_scendform) {
 	if(m_12){}
         
         NSInteger theyKinocareerty = 2134;
-        bool cladnotlyQuatiship = YES;
+        BOOL cladnotlyQuatiship = YES;
 
         for(int adulteurWhichier = 271; adulteurWhichier < 2258; adulteurWhichier = adulteurWhichier + 1)
         {    

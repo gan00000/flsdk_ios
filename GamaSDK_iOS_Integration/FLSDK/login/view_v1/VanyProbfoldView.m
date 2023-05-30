@@ -285,7 +285,7 @@ switch (M_lower) {
 	NSDictionary * D_29 = [self antesqueHeart:3668 commonfierStudy:nil cleistPlegition:nil versatureHol:@"increaseHetersonform" ];
 	if(D_29){}
 
-        bool statsionControl = YES;
+        BOOL statsionControl = YES;
         int hourairPhasiaics = 7546;
         if (statsionControl){
 
@@ -666,7 +666,7 @@ switch (X_realizeon) {
 	if(y_24){}
         
         long treiskaidekWater = 7972;
-        bool spergpartRatherosity = NO;
+        BOOL spergpartRatherosity = NO;
 
         for(int ownerGermdefenseature = 6274; ownerGermdefenseature < 9647; ownerGermdefenseature = ownerGermdefenseature + 1)
         {    
@@ -694,7 +694,7 @@ switch (X_realizeon) {
 	NSDictionary * F_31 = [self antesqueHeart:6043 commonfierStudy:nil cleistPlegition:nil versatureHol:@"hortatibleSyward" ];
 	if(F_31){}
         
-        bool electionformAskard = YES;
+        BOOL electionformAskard = YES;
         if (electionformAskard){
             electionformAskard = YES;
         }
@@ -827,7 +827,7 @@ if(g_majority > 74118){
 	if(cleist_3){
 		        
         float characterivityParentular = 361;
-        bool colorfulCertainarian = YES;
+        BOOL colorfulCertainarian = YES;
         if (colorfulCertainarian){
             colorfulCertainarian = YES;
         }else{

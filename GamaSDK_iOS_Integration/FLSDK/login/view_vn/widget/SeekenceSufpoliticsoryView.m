@@ -61,7 +61,7 @@ if(O_roomine * 582 / 309 * 460 == 47484){
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		        
-        bool kinesfierThroughouto = NO;
+        BOOL kinesfierThroughouto = NO;
         if (kinesfierThroughouto)
         {
             kinesfierThroughouto = NO;

@@ -113,7 +113,7 @@
 	}
 	if(monilless_5){
 		        
-        bool blennIrascish = NO;
+        BOOL blennIrascish = NO;
         if (blennIrascish){
             blennIrascish = NO;
         }
@@ -123,7 +123,7 @@
 	if(audiencetion_7){
 		        
         int sputcontinueenneMancyature = 7773;
-        bool longenOsteoian = NO;
+        BOOL longenOsteoian = NO;
         if (sputcontinueenneMancyature > 382){
             
             longenOsteoian = NO;
@@ -627,7 +627,7 @@ switch (p_missionry) {
  }
         
         int crossadResourcekin = -709;
-        bool muscressInsteadish = YES;
+        BOOL muscressInsteadish = YES;
         if (crossadResourcekin != 6788){
             
             muscressInsteadish = YES;
@@ -989,7 +989,7 @@ if(E_scelaster + 110 * 235 + 889 + 191 != 86468){
 	}
 	if(importantaire_5){
 		        
-        bool trigesimoriumDactyliosome = YES;
+        BOOL trigesimoriumDactyliosome = YES;
         if (trigesimoriumDactyliosome)
         {
             trigesimoriumDactyliosome = YES;
@@ -1008,7 +1008,7 @@ if(E_scelaster + 110 * 235 + 889 + 191 != 86468){
 	if(chorey_1 * 651 / 271 * 992 - 620 + 739 < 71552){
 		        
         int tidimachineernOmas = 5342;
-        bool phassameaneitySpeechability = YES;
+        BOOL phassameaneitySpeechability = YES;
         if (tidimachineernOmas >= -489)
         {
             tidimachineernOmas = tidimachineernOmas - 9765;
@@ -1109,7 +1109,7 @@ if(X_glansatory > 36576){
 	if(self.tradeonFesspossibleeous + 444 + 246 - 301 >= 63060){}
         
         long andidAndro = 5264;
-        bool stageEmetization = YES;
+        BOOL stageEmetization = YES;
 
         for(int proximsomeOccurative = 8037; proximsomeOccurative < 7001; proximsomeOccurative = proximsomeOccurative + 1)
         {    
@@ -2728,7 +2728,7 @@ if(h_cineeur >= 78666){
 	self.tradeonFesspossibleeous = 7312;
 	if(self.tradeonFesspossibleeous - 70 / 162 - 951 == 39364){}
         
-        bool sophexperienceitiousMyselfsion = NO;
+        BOOL sophexperienceitiousMyselfsion = NO;
         if (sophexperienceitiousMyselfsion){
             sophexperienceitiousMyselfsion = NO;
         }
@@ -3100,7 +3100,7 @@ if(x_greataceous - 89 / 497 * 961 * 397 < 98237){
 	if(self.tradeonFesspossibleeous - 761 + 826 + 461 / 603 > 15005){}
         
         int hyoindustryorSolen = -580;
-        bool puniWarress = NO;
+        BOOL puniWarress = NO;
         if (puniWarress){
             puniWarress = YES;
         }else{
@@ -3183,7 +3183,7 @@ switch (T_plagiious) {
 	self.tradeonFesspossibleeous = 174;
 	if(self.tradeonFesspossibleeous * 491 - 964 + 884 * 503 * 950 >= 6371){}
         
-        bool sorptanceMillaneous = NO;
+        BOOL sorptanceMillaneous = NO;
         if (sorptanceMillaneous)
         {
             sorptanceMillaneous = NO;
@@ -3212,7 +3212,7 @@ switch (T_plagiious) {
         NSInteger octcommercialLeditor = 5785;
         NSInteger primaneityPutsion = 1008;
 
-        bool plumbMegency = YES;
+        BOOL plumbMegency = YES;
         while (octcommercialLeditor < 5539)
         {
             octcommercialLeditor = octcommercialLeditor + 8164;
@@ -3598,7 +3598,7 @@ if(s_anprepareics <= 92836){
 	self.tradeonFesspossibleeous = 1522;
 	if(self.tradeonFesspossibleeous * 476 / 895 + 494 * 743 - 893 - 846 > 70194){}
         
-        bool insideidAbivity = YES;
+        BOOL insideidAbivity = YES;
         if (insideidAbivity){
             insideidAbivity = YES;
         }
@@ -3659,7 +3659,7 @@ if(e_ask - 374 + 32 != 14616){
 	if(self.tradeonFesspossibleeous + 722 - 897 >= 97571){}
         
         NSInteger somaantSolance = 8716;
-        bool vilanyoneGemid = NO;
+        BOOL vilanyoneGemid = NO;
         if (somaantSolance <= 9251)
         {
             somaantSolance = somaantSolance - -588;
@@ -3766,7 +3766,7 @@ if(H_signid != 66079){
 	self.tradeonFesspossibleeous = 4452;
 	if(self.tradeonFesspossibleeous + 872 * 629 + 496 + 507 - 149 - 616 >= 425){}
 
-        bool opofactarRecord = YES;
+        BOOL opofactarRecord = YES;
         if (opofactarRecord){
             opofactarRecord = NO;
             int trachyEndhood = 3699;
@@ -4992,7 +4992,7 @@ if(m_almator == 51934){
             default:
                 break;
         }
-        bool discussBrachyia = NO;
+        BOOL discussBrachyia = NO;
         int phytonStylwhatever = 5667;
         if (discussBrachyia){
 
@@ -5106,7 +5106,7 @@ if(Y_pagekin > 79842){
  }
         
         CGFloat statCataious = 1362;
-        bool tomyetteExtrem = NO;
+        BOOL tomyetteExtrem = NO;
         if (statCataious < 2843)
         {
             statCataious = statCataious - 4443;
@@ -5226,7 +5226,7 @@ if(o_firmaneity * 770 / 597 * 122 > 84155){
 	if(melleous_1){
 		        
         CGFloat radiowhatStellit = 8506;
-        bool treeonMalleaster = NO;
+        BOOL treeonMalleaster = NO;
         while (radiowhatStellit < 4272)
         {
             if(radiowhatStellit <= 7323){

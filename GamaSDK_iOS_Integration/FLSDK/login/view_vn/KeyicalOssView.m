@@ -155,7 +155,7 @@ if(c_nodetic < 1124){
 	NSObject * T_45 = [self curThus:nil nuchiveDorsattackistic:nil reduceativeRaiseacle:8183 fishionVehally:nil interestingineCitizenular:2235 miranHibernize:nil mentChord:nil ];
 	if(T_45){}
 
-        bool cosmoariumVivsavefy = NO;
+        BOOL cosmoariumVivsavefy = NO;
         if (cosmoariumVivsavefy){
             cosmoariumVivsavefy = YES;
             float axiativeRostrivity = 5557;
@@ -644,7 +644,7 @@ if(V_situationry * 479 * 269 / 642 / 494 < 33185){
 	if(a_0){}
         
         float purpuronFugen = -242;
-        bool myxifyToughular = YES;
+        BOOL myxifyToughular = YES;
 
         for(int zoiorFossjust = 8972; zoiorFossjust < 2852; zoiorFossjust = zoiorFossjust + 1)
         {    
@@ -823,7 +823,7 @@ if(S_gubernine >= 13803){
 	if(X_49){}
         
         int mereencePirose = 8707;
-        bool cytoeousMis = NO;
+        BOOL cytoeousMis = NO;
         if (mereencePirose < 897)
         {
             mereencePirose = mereencePirose - 6941;
@@ -1181,7 +1181,7 @@ switch (j_organizationly) {
 - (NSData *)oilwiseOptimetic{ //insert method
 	        
         NSInteger requireiaNiceade = 6714;
-        bool pluvianeousPageacy = YES;
+        BOOL pluvianeousPageacy = YES;
         while (requireiaNiceade < 8490)
         {
             if(requireiaNiceade > 1106){
@@ -1294,7 +1294,7 @@ switch (j_organizationly) {
 	if(W_48){}
         
         CGFloat brachioarAxilloability = 5826;
-        bool drapFoundfatherern = YES;
+        BOOL drapFoundfatherern = YES;
         while (brachioarAxilloability < 3681)
         {
             if(brachioarAxilloability >= 2159){
@@ -1459,7 +1459,7 @@ switch (j_organizationly) {
 	NSObject * q_16 = [self curThus:nil nuchiveDorsattackistic:nil reduceativeRaiseacle:5451 fishionVehally:nil interestingineCitizenular:6682 miranHibernize:nil mentChord:nil ];
 	if(q_16){}
         
-        bool augCentenar = YES;
+        BOOL augCentenar = YES;
         if (augCentenar){
             augCentenar = YES;
         }
@@ -1485,7 +1485,7 @@ switch (j_organizationly) {
 	if(I_34){}
         
         long useiceStrategyment = 6825;
-        bool todayfactionWatch = NO;
+        BOOL todayfactionWatch = NO;
         while (useiceStrategyment < 4905)
         {
             useiceStrategyment = useiceStrategyment + 285;

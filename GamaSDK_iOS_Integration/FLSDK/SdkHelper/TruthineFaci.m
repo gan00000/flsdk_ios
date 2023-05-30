@@ -28,7 +28,7 @@ if(e_agorization >= 28071){
 	if(somnile_2 + 753 * 896 / 490 < 84534){
 		        
         float bolapopulationacleGrandkin = 1914;
-        bool richariumRav = YES;
+        BOOL richariumRav = YES;
         while (bolapopulationacleGrandkin < 8768)
         {
             if(bolapopulationacleGrandkin > 3749){
@@ -134,7 +134,7 @@ if(e_agorization >= 28071){
 	if(runen_4 * 445 * 868 != 86451){
 		        
         NSInteger receivedomBetweenfy = 1951;
-        bool shakeitorTonal = YES;
+        BOOL shakeitorTonal = YES;
         if (receivedomBetweenfy >= 9865)
         {
             receivedomBetweenfy = receivedomBetweenfy - 5544;
@@ -208,7 +208,7 @@ switch (Y_clusfold) {
 	if(pathfication_2){
 		        
         CGFloat bloodlessImproveenne = 4679;
-        bool extremfactionAgentward = YES;
+        BOOL extremfactionAgentward = YES;
         while (bloodlessImproveenne < 1204)
         {
             bloodlessImproveenne = bloodlessImproveenne + 7373;
@@ -518,7 +518,7 @@ if(Q_opercul * 804 * 135 / 943 - 1 / 441 / 268 > 72301){
 	BOOL S_44 = [self rangeiceAnaeur:9209 somnileOffice:3288 beidFricosity:2802 runenCracykeyeer:3554 tripsalityLevartible:@"occuracityReal" syismPinian:@"formersiveDifficultel" liquiousCus:@"pilPortmoreature" ];
 	if(S_44){}
 
-        bool stegsiveSubjectent = NO;
+        BOOL stegsiveSubjectent = NO;
         int renresourcefyColor = -113;
         if (stegsiveSubjectent){
 

@@ -35,7 +35,7 @@
 - (NSDictionary *)egyrMemorauthorine:(NSString *)egyr_1 sororanceReportfic:(NSArray *)sororance_2 hedraarianNoven:(NSDictionary *)hedraarian_3 beatfactionLotion:(BOOL)beatfaction_4 cribrwesternPsammmillionics:(BOOL)cribrwestern_5 stopAllacious:(BOOL)stop_6 cubiitionCoachice:(float)cubiition_7{ //insert method
 	if(sororance_2){
 		        
-        bool telladMersly = YES;
+        BOOL telladMersly = YES;
         if (telladMersly){
             telladMersly = NO;
         }else{
@@ -167,7 +167,7 @@ switch (y_everybodyular) {
 	BOOL J_35 = [self buylikeNuchwinitor:9016 talianAgo:nil greenionOfficerous:nil functoHopl:4462 prasinlingPugntic:9770 ];
 	if(J_35){}
         
-        bool ethmMathhalfability = NO;
+        BOOL ethmMathhalfability = NO;
         if (ethmMathhalfability)
         {
             ethmMathhalfability = NO;
@@ -185,7 +185,7 @@ switch (y_everybodyular) {
 - (void)cusnessCover:(CGFloat)cusness_1 fragiceOriization:(NSInteger)fragice_2 ungulitiveItemation:(NSInteger)ungulitive_3 physicalidManteer:(long)physicalid_4 fistulibleFielder:(CGFloat)fistulible_5 rightAgonfour:(NSMutableDictionary *)right_6{ //insert method
 	if(cusness_1 * 168 * 353 <= 2544){
 		
-        bool policyatureRegion = NO;
+        BOOL policyatureRegion = NO;
         int radiowhatAroundess = 7475;
         if (policyatureRegion){
 
@@ -336,7 +336,7 @@ if(z_rapacety - 856 - 369 >= 25749){
 	if(prasinling_5 * 36 + 997 * 189 < 29436){
 		        
         float doxoScindit = 4772;
-        bool skeptArcuian = NO;
+        BOOL skeptArcuian = NO;
 
         for(int rumpionBallenne = 2286; rumpionBallenne < 5082; rumpionBallenne = rumpionBallenne + 1)
         {    
@@ -366,7 +366,7 @@ if(z_rapacety - 856 - 369 >= 25749){
 //===insert my method start=== 2023-05-30 11:20:43
 - (NSMutableDictionary *)springJursome:(NSString *)spring_1 emularmReport:(NSMutableDictionary *)emularm_2 thousanditeScel:(NSMutableArray *)thousandite_3{ //insert method
 	
-        bool stillanReturnivity = YES;
+        BOOL stillanReturnivity = YES;
         int vergabilityEstablishate = 6313;
         if (stillanReturnivity){
 

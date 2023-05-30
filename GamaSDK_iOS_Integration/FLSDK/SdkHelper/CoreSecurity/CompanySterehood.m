@@ -85,7 +85,7 @@ switch (h_therioture) {
 		{
 		        
         long weekateOpulan = 8427;
-        bool carcerotCant = YES;
+        BOOL carcerotCant = YES;
         if (carcerotCant){
             carcerotCant = YES;
         }else{
@@ -170,7 +170,7 @@ switch (h_therioture) {
 		{
 		        
         int opsessLiqueling = 5714;
-        bool tripsitionCretial = YES;
+        BOOL tripsitionCretial = YES;
 
         for(int sebiidStageant = 2787; sebiidStageant < 6798; sebiidStageant = sebiidStageant + 1)
         {    
@@ -430,7 +430,7 @@ if(Y_militdescribesion == 7884){
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		        
-        bool malleoFeelally = NO;
+        BOOL malleoFeelally = NO;
         if (malleoFeelally)
         {
             malleoFeelally = NO;

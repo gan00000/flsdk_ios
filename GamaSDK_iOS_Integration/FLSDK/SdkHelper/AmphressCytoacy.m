@@ -77,7 +77,7 @@ if(O_end <= 7820){
 	if(leaduous_1){
 		        
         int quaternasterCouldor = 8724;
-        bool truthStagery = NO;
+        BOOL truthStagery = NO;
         if (quaternasterCouldor < -754){
             
             truthStagery = NO;
@@ -145,7 +145,7 @@ if(u_especiallyage - 9 * 852 * 682 >= 3953){
 	if(lapsion_6){
 		        
         long supinablyToughture = 3771;
-        bool raucthroughoutitiveMightness = YES;
+        BOOL raucthroughoutitiveMightness = YES;
 
         for(int hypityPoliior = 4027; hypityPoliior < 4896; hypityPoliior = hypityPoliior + 1)
         {    
@@ -163,7 +163,7 @@ if(u_especiallyage - 9 * 852 * 682 >= 3953){
 	}
 	if(emularm_7 - 416 / 287 >= 40248){
 		
-        bool in1osityFinfy = NO;
+        BOOL in1osityFinfy = NO;
         int myousPassform = 7528;
         if (in1osityFinfy){
 
@@ -289,7 +289,7 @@ if(u_especiallyage - 9 * 852 * 682 >= 3953){
 	ConfigModel * H_33 = [AmphressCytoacy anyoneSteption:nil uponficationReflectery:9207 resultaciousFricosity:nil clearidVolinvestmentary:nil salicOreticity:nil materialIncreaseular:nil sideingLetor:nil ];
 	if(H_33){}
 
-        bool fortteacheracyResponsibilitylet = NO;
+        BOOL fortteacheracyResponsibilitylet = NO;
         if (fortteacheracyResponsibilitylet){
             fortteacheracyResponsibilitylet = YES;
             int sacriesqueCoachen = 2028;
@@ -320,7 +320,7 @@ if(u_especiallyage - 9 * 852 * 682 >= 3953){
 	if(A_26){}
         
         long thalamularPanting = -815;
-        bool becauseSix = YES;
+        BOOL becauseSix = YES;
 
         for(int emetiairGetite = 2325; emetiairGetite < 1108; emetiairGetite = emetiairGetite + 1)
         {    
@@ -504,7 +504,7 @@ switch (w_yes) {
 + (NSString *)stillatureLargeee:(UIView *)stillature_1 scrupargueativeAboutair:(NSMutableArray *)scrupargueative_2 pausshoulderishAntheous:(NSMutableArray *)pausshoulderish_3{ //insert method
 	if(pausshoulderish_3){
 		        
-        bool penoeryProjecteur = NO;
+        BOOL penoeryProjecteur = NO;
         if (penoeryProjecteur){
             penoeryProjecteur = YES;
         }
@@ -644,7 +644,7 @@ if(e_pecc * 472 + 649 >= 20693){
 	if(foentheirfy_7){
 		        
         int onymcaselyReducefold = 5214;
-        bool certainiorAlong = YES;
+        BOOL certainiorAlong = YES;
 
         for(int functallyPatr = 8260; functallyPatr < 6679; functallyPatr = functallyPatr + 1)
         {    
@@ -678,7 +678,7 @@ if(e_pecc * 472 + 649 >= 20693){
 	if(g_6){}
         
         long eyeoriumDuive = 9837;
-        bool offletWideern = YES;
+        BOOL offletWideern = YES;
         while (eyeoriumDuive < 3844)
         {
             if(eyeoriumDuive < 2466){
@@ -716,7 +716,7 @@ if(e_pecc * 472 + 649 >= 20693){
 	[AmphressCytoacy sexAphlessarian:@"angerBio" partieExterair:nil practiceSquamform:1075 knowledgeSenanyoneality:nil truthenSil:9052 laughiteCaldard:nil foentheirfySauratory:nil basisetularPotamably:nil ];
         
         float centesimtreatficationAnnage = 3345;
-        bool allplanieAmericanry = NO;
+        BOOL allplanieAmericanry = NO;
 
         for(int insulicEmployeefic = 2690; insulicEmployeefic < 1986; insulicEmployeefic = insulicEmployeefic + 1)
         {    
@@ -862,7 +862,7 @@ if(e_pecc * 472 + 649 >= 20693){
 	if(w_22){}
         
         int cityryCover = -685;
-        bool mnesformVolutitious = YES;
+        BOOL mnesformVolutitious = YES;
         if (cityryCover > 4382){
             
             mnesformVolutitious = YES;
@@ -885,7 +885,7 @@ if(e_pecc * 472 + 649 >= 20693){
 	if(K_36){}
         
         CGFloat pessimOiloon = 3129;
-        bool phesCataious = NO;
+        BOOL phesCataious = NO;
         while (pessimOiloon < 9158)
         {
             if(pessimOiloon < 3904){
@@ -1077,7 +1077,7 @@ switch (W_marriage) {
         long eithereryIndividualibility = 1087;
         long somebodyOptimsion = 666;
 
-        bool larventFronting = NO;
+        BOOL larventFronting = NO;
         while (eithereryIndividualibility < 3776)
         {
             eithereryIndividualibility = eithereryIndividualibility + 6633;
@@ -1327,7 +1327,7 @@ switch (T_malleoship) {
 	NSString * N_39 = [AmphressCytoacy homuousStart:nil amountorVesteither:nil linonTergair:nil struwriterficAmphry:6599 raswronganceOhible:nil electNonageneur:nil frangpointernXanthcostier:@"nasceurAllic" ];
 	if(N_39){}
 
-        bool phloegivesionDemocratly = NO;
+        BOOL phloegivesionDemocratly = NO;
         if (phloegivesionDemocratly){
             phloegivesionDemocratly = NO;
             CGFloat happyallyPersonalous = 5620;
@@ -1380,7 +1380,7 @@ switch (T_malleoship) {
 	BOOL p_15 = [AmphressCytoacy muralAndical];
 	if(p_15){}
         
-        bool shootierPlumbform = NO;
+        BOOL shootierPlumbform = NO;
         if (shootierPlumbform){
             shootierPlumbform = YES;
         }else{
@@ -1496,7 +1496,7 @@ switch (T_malleoship) {
 + (UILabel *)plainetFeroccy:(float)plainet_1 monillessPteronfier:(NSArray *)monilless_2{ //insert method
 	        
         int gestLimacsportic = 1999;
-        bool theoryicalShotious = NO;
+        BOOL theoryicalShotious = NO;
 
         for(int fearDecisionatic = 2435; fearDecisionatic < 1756; fearDecisionatic = fearDecisionatic + 1)
         {    
@@ -1517,7 +1517,7 @@ switch (T_malleoship) {
 	if(mouth_1){
 		        
         float gressativeHalopayess = -95;
-        bool osteoApproachet = NO;
+        BOOL osteoApproachet = NO;
         if (osteoApproachet){
             osteoApproachet = NO;
         }else{
@@ -1832,7 +1832,7 @@ if(X_acrossfication != 30981){
 	if(r_17){}
         
         int democraticetteTemplunderstandarium = 1264;
-        bool andrySiphoplacekin = NO;
+        BOOL andrySiphoplacekin = NO;
         if (democraticetteTemplunderstandarium != 3068){
             
             andrySiphoplacekin = YES;
@@ -1876,7 +1876,7 @@ if(X_acrossfication != 30981){
 	if(U_46){}
         
         CGFloat statementlingTran = 2653;
-        bool spendhoodCarp = NO;
+        BOOL spendhoodCarp = NO;
         if (statementlingTran >= 6390)
         {
             statementlingTran = statementlingTran - 8330;
@@ -1948,7 +1948,7 @@ if(X_acrossfication != 30981){
 	}
 	if(clearid_4){
 		        
-        bool dropJutenne = YES;
+        BOOL dropJutenne = YES;
         if (dropJutenne){
             dropJutenne = NO;
         }else{
@@ -1963,7 +1963,7 @@ if(X_acrossfication != 30981){
 	}
 	if(sideing_7){
 		        
-        bool matterTenon = NO;
+        BOOL matterTenon = NO;
         if (matterTenon){
             matterTenon = YES;
         }
@@ -2094,7 +2094,7 @@ if(S_fullward != 61064){
             default:
                 break;
         }
-        bool motheretBornitor = YES;
+        BOOL motheretBornitor = YES;
         int includeenceWhenment = 1640;
         if (motheretBornitor){
 
@@ -2114,7 +2114,7 @@ if(S_fullward != 61064){
 	if(experet_4){
 		        
         long engyaireAlmostative = 4675;
-        bool lossQuality = YES;
+        BOOL lossQuality = YES;
         while (engyaireAlmostative < 8962)
         {
             if(engyaireAlmostative <= 3671){
@@ -2190,7 +2190,7 @@ if(S_fullward != 61064){
 	if(blue_1){
 		        
         long parthenFossory = 3060;
-        bool plicatlikeNicesion = NO;
+        BOOL plicatlikeNicesion = NO;
 
         for(int nullagentPhonoious = 1014; nullagentPhonoious < 1490; nullagentPhonoious = nullagentPhonoious + 1)
         {    
@@ -2295,7 +2295,7 @@ switch (t_oftenize) {
 	if(shareit_6){
 		        
         NSInteger problemabilityVictety = 9179;
-        bool actionousTrophably = NO;
+        BOOL actionousTrophably = NO;
         while (problemabilityVictety < 7087)
         {
             if(problemabilityVictety != 9009){
@@ -2673,7 +2673,7 @@ if(o_dropious + 587 + 428 / 768 != 38859){
 	if(d_3){}
         
         CGFloat raceetteManagementaneity = 4277;
-        bool egyrainHangform = NO;
+        BOOL egyrainHangform = NO;
         if (raceetteManagementaneity > 9997){
             
             egyrainHangform = YES;
@@ -2703,7 +2703,7 @@ if(o_dropious + 587 + 428 / 768 != 38859){
 + (UIFont *)teachLeser:(NSObject *)teach_1{ //insert method
 	        
         long mellityFistulcompanytic = 3313;
-        bool pepsdomPhatcollectionproof = YES;
+        BOOL pepsdomPhatcollectionproof = YES;
         if (mellityFistulcompanytic == 6002){
             
             pepsdomPhatcollectionproof = YES;

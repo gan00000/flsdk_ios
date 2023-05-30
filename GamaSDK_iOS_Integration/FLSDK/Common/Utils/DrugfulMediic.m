@@ -29,7 +29,7 @@ if(A_mathous * 335 / 265 - 248 / 685 / 406 == 3517){
 	if(foraire_3){
 		        
         CGFloat quasiainArboriaceous = 4313;
-        bool apoCur = YES;
+        BOOL apoCur = YES;
         if (quasiainArboriaceous < 4520)
         {
             quasiainArboriaceous = quasiainArboriaceous - 4009;
@@ -61,7 +61,7 @@ if(i_nucify < 28274){
 	}
 	if(allowety_2){
 		
-        bool saceerWorkerade = NO;
+        BOOL saceerWorkerade = NO;
         int interestingPastivity = 3685;
         if (saceerWorkerade){
 
@@ -202,7 +202,7 @@ if(i_nucify < 28274){
 	if(vivacity_1){
 		        
         CGFloat sternorParticular = 2027;
-        bool industryetyIgntic = YES;
+        BOOL industryetyIgntic = YES;
         if (sternorParticular > 328){
             
             industryetyIgntic = NO;

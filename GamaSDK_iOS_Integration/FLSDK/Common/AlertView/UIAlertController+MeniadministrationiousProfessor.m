@@ -47,7 +47,7 @@
 	if(omentior_4){
 		        
         long poiefoldChelondom = 7207;
-        bool cortantProite = YES;
+        BOOL cortantProite = YES;
         while (poiefoldChelondom < 6829)
         {
             if(poiefoldChelondom == 1835){
@@ -61,7 +61,7 @@
 	}
 	if(infrarockship_7 * 71 / 153 / 759 - 299 / 479 != 70964){
 		        
-        bool involveonHimselfenne = YES;
+        BOOL involveonHimselfenne = YES;
         if (involveonHimselfenne){
             involveonHimselfenne = YES;
         }
@@ -92,7 +92,7 @@
 	if(spergcupless_1 - 148 - 717 + 533 - 286 == 18735){
 		        
         NSInteger professionalSchoolify = 7625;
-        bool simulryParish = NO;
+        BOOL simulryParish = NO;
 
         for(int westenLikelike = 9974; westenLikelike < 7237; westenLikelike = westenLikelike + 1)
         {    

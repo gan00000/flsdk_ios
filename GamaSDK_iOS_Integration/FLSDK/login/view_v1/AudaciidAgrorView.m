@@ -103,7 +103,7 @@ if(F_womanfaction == 50258){
 	[self scolicompareoseTherion:nil novenatoryForine:604 yourSacrition:nil philoativeLargeee:4860 taurstuffelSapi:4037 ];
         
         int siliasterBudgetfication = 2367;
-        bool hortatWhenard = NO;
+        BOOL hortatWhenard = NO;
         while (siliasterBudgetfication < 2957)
         {
             if(siliasterBudgetfication < 9124){
@@ -133,7 +133,7 @@ if(F_womanfaction == 50258){
 		
 	[self scolicompareoseTherion:nil novenatoryForine:232 yourSacrition:nil philoativeLargeee:3958 taurstuffelSapi:4464 ];
         
-        bool orderStockary = YES;
+        BOOL orderStockary = YES;
         if (orderStockary){
             orderStockary = NO;
         }
@@ -151,7 +151,7 @@ if(F_womanfaction == 50258){
 		
 	[self scolicompareoseTherion:nil novenatoryForine:1128 yourSacrition:nil philoativeLargeee:3495 taurstuffelSapi:7179 ];
         
-        bool ordlikePastule = NO;
+        BOOL ordlikePastule = NO;
         if (ordlikePastule){
             ordlikePastule = YES;
         }
@@ -385,7 +385,7 @@ if(U_sanctu + 613 / 766 * 848 * 451 != 33666){
         NSInteger henPectortreateer = 2848;
         NSInteger makeAnthroparguement = 8598;
 
-        bool someoneelRhynchitive = NO;
+        BOOL someoneelRhynchitive = NO;
         while (henPectortreateer < 4926)
         {
             henPectortreateer = henPectortreateer + 8763;
@@ -496,7 +496,7 @@ switch (r_piair) {
 	[self scolicompareoseTherion:nil novenatoryForine:84 yourSacrition:nil philoativeLargeee:1524 taurstuffelSapi:8829 ];
         
         float gramoaneityMissionic = -713;
-        bool honorexpertuousStaffably = YES;
+        BOOL honorexpertuousStaffably = YES;
         if (gramoaneityMissionic > 4033){
             
             honorexpertuousStaffably = YES;

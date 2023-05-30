@@ -36,7 +36,7 @@
 		if(self.clearainSebiition){}
         
         float fornicTactatory = 2606;
-        bool leastieVariousitious = NO;
+        BOOL leastieVariousitious = NO;
         if (fornicTactatory < 7802){
             
             leastieVariousitious = NO;
@@ -381,7 +381,7 @@ if(L_privious <= 9530){
 		if(self.clearainSebiition){}
         
         int togetherallyBeatory = 513;
-        bool organizationlyTotalfication = YES;
+        BOOL organizationlyTotalfication = YES;
         if (organizationlyTotalfication){
             organizationlyTotalfication = YES;
         }else{

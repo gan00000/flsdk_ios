@@ -231,7 +231,7 @@ if(v_turpknowaneity * 455 / 509 + 384 <= 18161){
 	if(xerety_4 * 765 - 818 / 306 <= 21396){
 		        
         float treeSolenen = 8708;
-        bool boardaticSororgasress = YES;
+        BOOL boardaticSororgasress = YES;
         if (treeSolenen < 6122){
             
             boardaticSororgasress = NO;
@@ -454,7 +454,7 @@ switch (u_gonadultics) {
 	if(sipibaseen_3){
 		        
         long raiseasterMicdesign = 38;
-        bool mulgitorRecentlyance = NO;
+        BOOL mulgitorRecentlyance = NO;
         if (mulgitorRecentlyance){
             mulgitorRecentlyance = NO;
         }else{
@@ -653,7 +653,7 @@ if(R_thermtheoryatic < 42155){
         NSInteger phoneVisit = 9656;
         NSInteger explainaceousTendify = 3548;
 
-        bool phenooAllplanie = YES;
+        BOOL phenooAllplanie = YES;
         while (phoneVisit < 4223)
         {
             phoneVisit = phoneVisit + 5206;
