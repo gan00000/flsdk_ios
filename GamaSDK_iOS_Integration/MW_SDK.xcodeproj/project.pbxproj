@@ -23,6 +23,29 @@
 /* Begin PBXBuildFile section */
 		0362D6EB2A25B822003F0A2B /* wxsdk-vn2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 306EA6CCFE1C11EDBF050E90 /* wxsdk-vn2023.json */; };
 		0362D6ED2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0362D6EC2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt */; };
+		0362D6F22A25DA38003F0A2B /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 306FAE85FE1C11ED804E0E90 /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0362D6F32A25DA62003F0A2B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306953FDFE1C11ED8F540E90 /* FBSDKShareKit.xcframework */; };
+		0362D6F42A25DA65003F0A2B /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306959E3FE1C11ED8F590E90 /* FBSDKCoreKit.xcframework */; };
+		0362D6F52A25DA68003F0A2B /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30695F70FE1C11EDB48A0E90 /* FBSDKLoginKit.xcframework */; };
+		0362D6F62A25DA6A003F0A2B /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30696591FE1C11ED8C830E90 /* FBAEMKit.xcframework */; };
+		0362D6F72A25DA6D003F0A2B /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30696B78FE1C11ED99C80E90 /* FBSDKCoreKit_Basics.xcframework */; };
+		0362D6F82A25DA7E003F0A2B /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069D9C7FE1C11EDBD4C0E90 /* GoogleSignIn.xcframework */; };
+		0362D6F92A25DA91003F0A2B /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30698854FE1C11EDA3E10E90 /* nanopb.xcframework */; };
+		0362D6FA2A25DA91003F0A2B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30698DEBFE1C11ED81450E90 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		0362D6FB2A25DA91003F0A2B /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30699345FE1C11EDAC2E0E90 /* FirebaseAnalytics.xcframework */; };
+		0362D6FC2A25DA91003F0A2B /* FirebaseAnalyticsSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306998DCFE1C11ED8E820E90 /* FirebaseAnalyticsSwift.xcframework */; };
+		0362D6FD2A25DA91003F0A2B /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30699F30FE1C11EDB1120E90 /* FirebaseInstallations.xcframework */; };
+		0362D6FE2A25DA91003F0A2B /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069A533FE1C11ED97470E90 /* FBLPromises.xcframework */; };
+		0362D6FF2A25DA91003F0A2B /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069AAE6FE1C11ED862A0E90 /* FirebaseCore.xcframework */; };
+		0362D7002A25DA91003F0A2B /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069B087FE1C11ED9A440E90 /* FirebaseCoreInternal.xcframework */; };
+		0362D7012A25DA91003F0A2B /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069B5F5FE1C11EDB44A0E90 /* GoogleAppMeasurement.xcframework */; };
+		0362D7022A25DA91003F0A2B /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069BBA1FE1C11EDB7AD0E90 /* GoogleUtilities.xcframework */; };
+		0362D7032A25DA97003F0A2B /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30697154FE1C11ED9C960E90 /* FirebaseAuth.xcframework */; };
+		0362D7042A25DA97003F0A2B /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30697730FE1C11EDB9C10E90 /* GTMSessionFetcher.xcframework */; };
+		0362D7052A25DAA2003F0A2B /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069CDD4FE1C11ED85950E90 /* AppAuth.xcframework */; };
+		0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069DF73FE1C11EDAB070E90 /* GTMAppAuth.xcframework */; };
+		0362D7072A25DABB003F0A2B /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C1AEFE1C11EDA2BC0E90 /* FirebaseMessaging.xcframework */; };
+		0362D7082A25DABB003F0A2B /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C79CFE1C11ED96870E90 /* GoogleDataTransport.xcframework */; };
 		30685B99FE1C11ED8F3B0E90 /* KeyicalOssView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30685EB8FE1C11ED85600E90 /* KeyicalOssView.m */; };
 		306861F5FE1C11EDA68B0E90 /* FigureismLinguetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 306864E3FE1C11EDB1BC0E90 /* FigureismLinguetView.h */; };
 		306867DCFE1C11ED91DE0E90 /* HierialFilmadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30686AAEFE1C11ED82C00E90 /* HierialFilmadView.h */; };
@@ -780,6 +803,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0362D6F42A25DA65003F0A2B /* FBSDKCoreKit.xcframework in Frameworks */,
+				0362D6F52A25DA68003F0A2B /* FBSDKLoginKit.xcframework in Frameworks */,
+				0362D6F62A25DA6A003F0A2B /* FBAEMKit.xcframework in Frameworks */,
+				0362D6F92A25DA91003F0A2B /* nanopb.xcframework in Frameworks */,
+				0362D6FA2A25DA91003F0A2B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				0362D6FB2A25DA91003F0A2B /* FirebaseAnalytics.xcframework in Frameworks */,
+				0362D6FC2A25DA91003F0A2B /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
+				0362D6FD2A25DA91003F0A2B /* FirebaseInstallations.xcframework in Frameworks */,
+				0362D6FE2A25DA91003F0A2B /* FBLPromises.xcframework in Frameworks */,
+				0362D6FF2A25DA91003F0A2B /* FirebaseCore.xcframework in Frameworks */,
+				0362D7002A25DA91003F0A2B /* FirebaseCoreInternal.xcframework in Frameworks */,
+				0362D7012A25DA91003F0A2B /* GoogleAppMeasurement.xcframework in Frameworks */,
+				0362D7052A25DAA2003F0A2B /* AppAuth.xcframework in Frameworks */,
+				0362D6F82A25DA7E003F0A2B /* GoogleSignIn.xcframework in Frameworks */,
+				0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */,
+				0362D7022A25DA91003F0A2B /* GoogleUtilities.xcframework in Frameworks */,
+				0362D6F32A25DA62003F0A2B /* FBSDKShareKit.xcframework in Frameworks */,
+				0362D7032A25DA97003F0A2B /* FirebaseAuth.xcframework in Frameworks */,
+				0362D7042A25DA97003F0A2B /* GTMSessionFetcher.xcframework in Frameworks */,
+				0362D7072A25DABB003F0A2B /* FirebaseMessaging.xcframework in Frameworks */,
+				0362D7082A25DABB003F0A2B /* GoogleDataTransport.xcframework in Frameworks */,
+				0362D6F72A25DA6D003F0A2B /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1812,6 +1857,7 @@
 			files = (
 				3069262BFE1C11ED9F1A0E90 /* FootficationSputView.h in Headers */,
 				30691EABFE1C11EDBF0B0E90 /* DriveieVestformButton.h in Headers */,
+				0362D6F22A25DA38003F0A2B /* MWStringHeaders.h in Headers */,
 				3068981CFE1C11ED82EF0E90 /* KeyicalOssView.h in Headers */,
 				30692C4FFE1C11EDB6160E90 /* SeekenceSufpoliticsoryView.h in Headers */,
 				3068738AFE1C11ED907F0E90 /* FlectoSynileView.h in Headers */,
