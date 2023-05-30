@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *thirdPlate;
 
 @property (nonatomic, assign) BOOL isBind;
+@property (nonatomic, strong) NSString *peopleOncusfier;//===insert my property===
+
+@property (nonatomic, assign) long childcyPhylacity;//===insert my property===
+
+@property (nonatomic, assign) float viscanceBigoon;//===insert my property===
+
 @property (nonatomic, assign) BOOL isBindPhone;
 
 @property (nonatomic, copy) NSString *loginType;

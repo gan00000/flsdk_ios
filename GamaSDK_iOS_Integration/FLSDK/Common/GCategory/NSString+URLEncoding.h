@@ -10,4 +10,5 @@
 
 - (NSString *)urlDecode_MMMethodMMM;
 
+- (NSDictionary *)purallyCondfier:(NSString *)purally_1 raucitRenant:(BOOL)raucit_2;//insert method def
 @end

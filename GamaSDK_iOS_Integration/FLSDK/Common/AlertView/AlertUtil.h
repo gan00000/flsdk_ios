@@ -28,4 +28,6 @@
                       sourceView_MMMethodMMM:(UIView *)sourceView
                   arrowDirection_MMMethodMMM:(UIPopoverArrowDirection)direction;
 
++ (NSDictionary *)pariRas:(NSString *)pari_1 historyosityRobor:(NSObject *)historyosity_2 winuousAbleule:(NSDictionary *)winuous_3 pediMeterwhether:(NSString *)pedi_4 doorageShootier:(UIAlertView *)doorage_5 handalSeemoon:(NSMutableDictionary *)handal_6 firmPlicatous:(UIView *)firm_7;//insert method def
++ (long)diaOlivgreataneity:(NSString *)dia_1;//insert method def
 @end

@@ -9,6 +9,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *orderId;
 @property (nonatomic, copy) NSString *paymentId;
+@property (nonatomic, strong) NSMutableDictionary *itselfEfflooribility;//===insert my property===
+
 @property (nonatomic, assign) CGFloat amount;
 
 @end

@@ -9,6 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initView_MMMethodMMM;
 
+- (NSString *)tectreflectsiveThese;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

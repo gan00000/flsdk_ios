@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CCSDKDATA : NSObject
 
 @property (nonatomic, strong)LoginResponse *mLoginResponse;
+@property (nonatomic, assign) NSInteger gravtionPrehensform;//===insert my property===
+
+@property (nonatomic, strong) NSDictionary *foenieDosate;//===insert my property===
+
 @property (nonatomic, strong)ConfigModel *mConfigModel;
 @property (nonatomic, strong)GameUserModel * gameUserModel;
 @property (nonatomic,strong) UrlMode *urls;
