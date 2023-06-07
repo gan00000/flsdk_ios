@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>zh_TW</string>
+	<string>vi_VN</string>
 	<key>CFBundleDisplayName</key>
 	<string>vn-demo</string>
 	<key>CFBundleExecutable</key>
@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vnmxwios</string>
-				<string>fb948331946321316</string>
+				<string>mxwvnios</string>
+				<string>fb1372835859958438</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -48,11 +48,11 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>948331946321316</string>
+	<string>1372835859958438</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>544fc9b2685b5ed2e7ce7235a50ea268</string>
+	<string>4c7d1e1d2ad407d5e092d51df0265346</string>
 	<key>FacebookDisplayName</key>
 	<string>vn-demo</string>
 	<key>GIDClientID</key>
@@ -71,7 +71,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1660819297</string>
+		<string></string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>

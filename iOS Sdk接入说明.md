@@ -191,14 +191,14 @@
 	[[MWSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
 	
 	                NSString * userId = loginData.userId;//获得用户uid
-	                NSString * accessToken = loginData.accessToken;
+	                NSString * sign = loginData.sign;
 	                NSString * timestamp = loginData.timestamp;
 	                
 	                BOOL isBind = loginData.isBind; //是否绑定账号
                 	BOOL isBindPhone = loginData.isBindPhone;//是否绑定手机
                 	NSString *telephone = loginData.telephone;//绑定的手机号码
 	                
-	                NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
+	                NSLog(@"userId:%@, sign:%@, timestamp:%@", userId, sign, timestamp);
 	            }];
             
 
