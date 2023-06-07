@@ -840,6 +840,8 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
                             AFEventParamOrderId: mPayData.orderId,
                             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                             wwwww_tag_wwwww_uniqueId      :  [CenturyiaGraphic getGamaUUID_MMMethodMMM]? : @"",
+                            wwwww_tag_wwwww_time         :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
+                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
                             
             }];
             
