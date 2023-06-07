@@ -233,6 +233,11 @@
     xFBSDKShareLinkContent.contentURL = mUrl;
     xFBSDKShareLinkContent.quote = message;
     if (hashTag) {
+        
+        if(![hashTag hasPrefix:@"#"]){
+            hashTag = [NSString stringWithFormat:@"#%@", hashTag];
+        }
+
         xFBSDKShareLinkContent.hashtag = [[FBSDKHashtag alloc] initWithString:hashTag];
     }
     
