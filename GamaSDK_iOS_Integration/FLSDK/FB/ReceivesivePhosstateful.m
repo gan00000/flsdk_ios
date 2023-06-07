@@ -757,6 +757,9 @@
 		//====insert my code end===  2023-05-04 15:54:50
 
     if (hashTag) {
+        if(![hashTag hasPrefix:@"#"]){
+            hashTag = [NSString stringWithFormat:@"#%@", hashTag];
+        }
         xFBSDKShareLinkContent.hashtag = [[FBSDKHashtag alloc] initWithString:hashTag];
     }
     
