@@ -701,6 +701,8 @@
                             AFEventParamOrderId: mPayData.orderId,
                             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                             wwwww_tag_wwwww_uniqueId         :    [OctavsubjectmostRepresentling getGamaUUID_MMMethodMMM]? : @"",
+                            wwwww_tag_wwwww_time         :[OctavsubjectmostRepresentling getTimeStamp_MMMethodMMM],
+                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
                             
             }];
             
