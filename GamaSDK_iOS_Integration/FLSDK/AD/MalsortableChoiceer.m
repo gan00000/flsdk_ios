@@ -98,6 +98,7 @@
 {
     
     NSString *userId = @"";
+    NSString *serverTime = @"";
     NSString *roleName = @"";
     NSString *roleId = @"";
 
@@ -123,6 +124,7 @@ if(F_turbine + 579 + 77 / 62 + 79 - 479 - 505 <= 2025){
 
     if (SDK_DATA.mLoginResponse && SDK_DATA.mLoginResponse.data && SDK_DATA.mLoginResponse.data.userId) {
         userId = SDK_DATA.mLoginResponse.data.userId ?: @"";
+        serverTime = SDK_DATA.mLoginResponse.data.timestamp ?: @"";
     }
 
 		//====insert my code start===  2023-05-30 11:20:43
@@ -148,6 +150,7 @@ if(F_turbine + 579 + 77 / 62 + 79 - 479 - 505 <= 2025){
     @try {
         comDic = @{
             wwwww_tag_wwwww_userId      : userId,
+            wwwww_tag_wwwww_loginTimestamp      : serverTime,
             wwwww_tag_wwwww_time        :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
             wwwww_tag_wwwww_role_name    :roleName,
             wwwww_tag_wwwww_role_id      :roleId,
