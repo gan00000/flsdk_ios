@@ -21,10 +21,12 @@
 {
     
     NSString *userId = @"";
+    NSString *serverTime = @"";//serverTime
     NSString *roleName = @"";
     NSString *roleId = @"";
     if (SDK_DATA.mLoginResponse && SDK_DATA.mLoginResponse.data && SDK_DATA.mLoginResponse.data.userId) {
         userId = SDK_DATA.mLoginResponse.data.userId ?: @"";
+        serverTime = SDK_DATA.mLoginResponse.data.timestamp ?: @"";
     }
     if (SDK_DATA.gameUserModel) {
         roleId = SDK_DATA.gameUserModel.roleID ?: @"";
@@ -35,6 +37,7 @@
     @try {
         comDic = @{
             wwwww_tag_wwwww_userId      : userId,
+            wwwww_tag_wwwww_loginTimestamp      : serverTime,
             wwwww_tag_wwwww_time        :[SUtil getTimeStamp_MMMethodMMM],
             wwwww_tag_wwwww_role_name    :roleName,
             wwwww_tag_wwwww_role_id      :roleId,

@@ -142,6 +142,7 @@
                             wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
                             wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
                             wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                            wwwww_tag_wwwww_loginTimestamp      : SDK_DATA.mLoginResponse.data.timestamp ?: @"",
                             
             }];
             
