@@ -11,6 +11,7 @@
 
 #import "MWSDK.h"
 
+#define wwwww_tag_wwwww_serverTimestamp        @"serverTimestamp"  //@"serverTimestamp"
 #define wwwww_tag_wwwww_install        Decrypt_AllStringContent(@"bZApPGl05uBr956e45RxQQ==")  //@"install"
 #define wwwww_tag_wwwww_userId        Decrypt_AllStringContent(@"aNRyRlCFr5IJNuYsSBuVHg==")  //@"userId"
 #define wwwww_tag_wwwww_time        Decrypt_AllStringContent(@"EZvwzH7zHZl0CjnBJTPFHA==")  //@"time"
