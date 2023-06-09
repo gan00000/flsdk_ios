@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *cpOrderId;
 @property (nonatomic, assign) CGFloat amount; //金额
 
+@property (nonatomic, copy) NSString *timestamp;//服务端发货时间
+
 @end
 
 NS_ASSUME_NONNULL_END

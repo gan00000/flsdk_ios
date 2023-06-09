@@ -9,6 +9,7 @@
 #ifndef Headers_h
 #define Headers_h
 
+#define wwwww_tag_wwwww_serverTimestamp        @"serverTimestamp"  //@"serverTimestamp"
 #define wwwww_tag_wwwww_install        @"install"  //@"install"
 #define wwwww_tag_wwwww_userId        @"userId"  //@"userId"
 #define wwwww_tag_wwwww_time        @"time"  //@"time"

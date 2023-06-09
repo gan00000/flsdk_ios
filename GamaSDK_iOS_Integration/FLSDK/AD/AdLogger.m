@@ -37,7 +37,7 @@
     @try {
         comDic = @{
             wwwww_tag_wwwww_userId      : userId,
-            wwwww_tag_wwwww_loginTimestamp      : serverTime,
+            wwwww_tag_wwwww_serverTimestamp      : serverTime,
             wwwww_tag_wwwww_time        :[SUtil getTimeStamp_MMMethodMMM],
             wwwww_tag_wwwww_role_name    :roleName,
             wwwww_tag_wwwww_role_id      :roleId,
