@@ -115,6 +115,7 @@
                             wwwww_tag_wwwww_uniqueId      : [PeopleitionStudentosity getGamaUUID_MMMethodMMM]? : @"",
                             wwwww_tag_wwwww_time         :[PeopleitionStudentosity getTimeStamp_MMMethodMMM],
                             wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                            wwwww_tag_wwwww_loginTimestamp      : SDK_DATA.mLoginResponse.data.timestamp ?: @"",
                             
             }];
             
