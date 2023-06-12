@@ -796,6 +796,18 @@
                 Boolean interfaceo = NO;
                 while (!interfaceo) { __asm__("NOP"); break; }
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
+                
+                CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                
+                PayData *xxPayData = [[PayData alloc] init];
+                xxPayData.orderId = cor.orderId;
+                xxPayData.timestamp = cor.timestamp;
+                xxPayData.amount = cor.amount;
+                xxPayData.productId = cor.productId;
+                xxPayData.transactionId = transactionId;
+                
+                [VariousanTime logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+
             } errorBlock_MMMethodMMM:^(DermencyTreatarium *error) {
                 SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
                 NSInteger changedc = 8078;
@@ -1099,6 +1111,10 @@
 		//====insert my code end===
 
     [TermDiseaseid paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+        
+        CreateOrderResp *cor = (CreateOrderResp *)responseData;
+        self.configuratorCenter.timestamp = cor.timestamp;
+
         [self completeTransaction_MMMethodMMM:transaction];
         NSDictionary * config8 = @{@"verification":@(100), @"remiss":@(881)};
         if (config8.count > 116) {}
