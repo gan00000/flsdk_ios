@@ -150,7 +150,7 @@ if(F_turbine + 579 + 77 / 62 + 79 - 479 - 505 <= 2025){
     @try {
         comDic = @{
             wwwww_tag_wwwww_userId      : userId,
-            wwwww_tag_wwwww_loginTimestamp      : serverTime,
+            wwwww_tag_wwwww_serverTimestamp      : serverTime,
             wwwww_tag_wwwww_time        :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
             wwwww_tag_wwwww_role_name    :roleName,
             wwwww_tag_wwwww_role_id      :roleId,

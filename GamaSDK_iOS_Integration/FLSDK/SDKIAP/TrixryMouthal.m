@@ -658,6 +658,18 @@ if(H_educationatory * 975 * 806 * 961 * 468 * 802 > 66232){
             [OfficeacityParticipantan paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderIdLocal reissue_MMMethodMMM:wwwww_tag_wwwww_yes gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
+                
+                CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                
+                PayData *xxPayData = [[PayData alloc] init];
+                xxPayData.orderId = cor.orderId;
+                xxPayData.timestamp = cor.timestamp;
+                xxPayData.amount = cor.amount;
+                xxPayData.productId = cor.productId;
+                xxPayData.transactionId = transactionId;
+                
+                [DekaspecialeurBursly logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                
             } errorBlock_MMMethodMMM:^(VernfactionVeral *error) {
                 SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
             }];
@@ -1877,6 +1889,10 @@ switch (a_lessure) {
     
     [AmphressCytoacy showLoadingAtView_MMMethodMMM:nil];
     [OfficeacityParticipantan paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+        
+        CreateOrderResp *cor = (CreateOrderResp *)responseData;
+        self.mPayData.timestamp = cor.timestamp;
+        
         [self completeTransaction_MMMethodMMM:transaction];
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;

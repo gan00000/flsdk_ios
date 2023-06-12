@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableDictionary *itselfEfflooribility;//===insert my property===
 
 @property (nonatomic, assign) CGFloat amount;
+//服务端发货时间
+@property (nonatomic, copy) NSString *timestamp;
+
+@property (nonatomic, copy) NSString *productId;
 
 @end
 
