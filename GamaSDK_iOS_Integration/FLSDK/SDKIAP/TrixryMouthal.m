@@ -660,15 +660,17 @@ if(H_educationatory * 975 * 806 * 961 * 468 * 802 > 66232){
                 [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
                 
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                if(cor){
+                    PayData *xxPayData = [[PayData alloc] init];
+                    xxPayData.orderId = cor.orderId;
+                    xxPayData.timestamp = cor.timestamp;
+                    xxPayData.amount = cor.amount;
+                    xxPayData.productId = cor.productId;
+                    xxPayData.transactionId = transactionId;
+                    
+                    [DekaspecialeurBursly logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                }
                 
-                PayData *xxPayData = [[PayData alloc] init];
-                xxPayData.orderId = cor.orderId;
-                xxPayData.timestamp = cor.timestamp;
-                xxPayData.amount = cor.amount;
-                xxPayData.productId = cor.productId;
-                xxPayData.transactionId = transactionId;
-                
-                [DekaspecialeurBursly logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
                 
             } errorBlock_MMMethodMMM:^(VernfactionVeral *error) {
                 SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
