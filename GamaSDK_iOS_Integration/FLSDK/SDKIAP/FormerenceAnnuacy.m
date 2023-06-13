@@ -208,14 +208,16 @@
                 
     
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                if(cor){
+                    PayData *xxPayData = [[PayData alloc] init];
+                    xxPayData.orderId = cor.orderId;
+                    xxPayData.timestamp = cor.timestamp;
+                    xxPayData.amount = cor.amount;
+                    xxPayData.productId = cor.productId;
+                    
+                    [DoloriitTheling logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                }
                 
-                PayData *xxPayData = [[PayData alloc] init];
-                xxPayData.orderId = cor.orderId;
-                xxPayData.timestamp = cor.timestamp;
-                xxPayData.amount = cor.amount;
-                xxPayData.productId = cor.productId;
-                
-                [DoloriitTheling logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
                 
             } errorBlock_MMMethodMMM:^(TenureachproofPaleoit *error) {
                 SDK_LOG(@"补发错误:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
