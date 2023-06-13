@@ -128,6 +128,10 @@
 
 + (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
     
+    if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){//判断orderId存在才上报
+        return;
+    }
+    
     @try {
         
         if (type & AdType_Appflyer) {

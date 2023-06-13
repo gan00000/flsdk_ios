@@ -75,14 +75,17 @@
                 
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
                 
-                PayData *xxPayData = [[PayData alloc] init];
-                xxPayData.orderId = cor.orderId;
-                xxPayData.timestamp = cor.timestamp;
-                xxPayData.amount = cor.amount;
-                xxPayData.productId = cor.productId;
-                xxPayData.transactionId = transactionId;
-                
-                [AdDelegate logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                if(cor){//判断cor(data)不为nil才上报
+                    
+                    PayData *xxPayData = [[PayData alloc] init];
+                    xxPayData.orderId = cor.orderId;
+                    xxPayData.timestamp = cor.timestamp;
+                    xxPayData.amount = cor.amount;
+                    xxPayData.productId = cor.productId;
+                    xxPayData.transactionId = transactionId;
+                    
+                    [AdDelegate logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                }
                 
                 
             } errorBlock_MMMethodMMM:^(BJError *error) {
