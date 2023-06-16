@@ -427,6 +427,8 @@
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
         self.mPayData.timestamp = cor.timestamp;
+        self.mPayData.orderId = cor.orderId;
+        
         [self completeTransaction_MMMethodMMM:transaction];// 结束订单
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
         self.mPayData.transactionId = transactionId;
@@ -446,7 +448,7 @@
     
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
-        self.mPayData.orderId = self.currentOrderId;
+//        self.mPayData.orderId = self.currentOrderId;
         
         if (self.payStatusBlock) {
             self.payStatusBlock(status,self.mPayData);
