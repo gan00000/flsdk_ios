@@ -377,8 +377,9 @@
     NSString * parameterStr = transaction.payment.applicationUsername;
     NSString *reissue = wwwww_tag_wwwww_no;
     NSString *transferOrderId = parameterStr;
+    NSString *localRecord = @"0000";
     
-    if (!parameterStr || [@"" isEqualToString:parameterStr])//applicationUsername为空值
+    if (!parameterStr || [@"" isEqualToString:parameterStr])//applicationUsername为空值，一般是apple丢单情况
     {
         transferOrderId = @"";
         //此时去找历史订单，找到transactionId相同的记录，把orderId赋值
@@ -392,8 +393,19 @@
                 SDK_LOG(@"transactionId=%@本地记录存在,记录的orderId=%@",transactionId,orderIdTemp);
                 parameterStr = orderIdTemp;
                 reissue = wwwww_tag_wwwww_no_2;
+                localRecord = @"1000";
+            }else{
+                //applicationUsername无值(一般是购买掉单情况)且本地无记录，即本地没有接收到apple的反馈
+                reissue = wwwww_tag_wwwww_no_3;
+                localRecord = @"1001";
             }
+        }else{
+            //applicationUsername无值(一般是购买掉单情况)且本地无记录，即本地没有接收到apple的反馈
+            reissue = wwwww_tag_wwwww_no_3;
+            localRecord = @"1001";
         }
+        
+        
         //如果此处仍为空值，把当前生成的订单赋值（该笔订单可能为不是对应该笔成功的充值的）
         if([StringUtil isEmpty_MMMethodMMM:parameterStr]){
             parameterStr = self.currentOrderId;
@@ -407,6 +419,7 @@
         @"currentOrderId"       :  self.currentOrderId ? : @"",
         @"transferOrderId"      :  transferOrderId ? : @"",
         @"isOnPaying"            :   @"true",
+        @"payEnv"            :   localRecord,
     };
     
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
