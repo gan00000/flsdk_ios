@@ -2986,7 +2986,7 @@
 			path = "AF-v6.7.0";
 			sourceTree = "<group>";
 		};
-		039E6E8929D9900200890B3B /* Facebook-v16.0.0 */ = {
+		039E6E8929D9900200890B3B /* Facebook-v16.1.1 */ = {
 			isa = PBXGroup;
 			children = (
 				039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */,
@@ -2995,7 +2995,7 @@
 				039E6E8D29D9900200890B3B /* FBAEMKit.xcframework */,
 				039E6E8E29D9900200890B3B /* FBSDKCoreKit_Basics.xcframework */,
 			);
-			path = "Facebook-v16.0.0";
+			path = "Facebook-v16.1.1";
 			sourceTree = "<group>";
 		};
 		039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */ = {
@@ -3445,7 +3445,7 @@
 			isa = PBXGroup;
 			children = (
 				039E6E8729D9900200890B3B /* AF-v6.7.0 */,
-				039E6E8929D9900200890B3B /* Facebook-v16.0.0 */,
+				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
 				0332F55928C5B44C00B7A99F /* LineSDK */,
 			);
