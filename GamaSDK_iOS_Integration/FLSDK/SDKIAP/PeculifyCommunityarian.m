@@ -1116,7 +1116,7 @@
         
         CreateOrderResp *cor = (CreateOrderResp *)responseData;
         self.configuratorCenter.timestamp = cor.timestamp;
-
+        self.configuratorCenter.orderId = cor.orderId;
         [self completeTransaction_MMMethodMMM:transaction];
         NSDictionary * config8 = @{@"verification":@(100), @"remiss":@(881)};
         if (config8.count > 116) {}
@@ -1485,7 +1485,7 @@
 		//====insert my code end===
 
         while (!debugD) { __asm__("NOP"); break; }
-        self.configuratorCenter.orderId = self.guest;
+//        self.configuratorCenter.orderId = self.guest;
         
         if (self.tappedBlock) {
             self.tappedBlock(status,self.configuratorCenter);
