@@ -25,14 +25,15 @@
 
 *	**系统库导入**
 
-	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、AdServices.framework(Optional)、ApptrackingTransparency.framework、AuthenticationServices.framework、SwiftUI.framework(Optional)
+> 	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、ApptrackingTransparency.framework、AuthenticationServices.framework、
+> 	<font color=red>SwiftUI.framework(Optional)、AdServices.framework(Optional)</font>
 	
 * **添加Sign in with Apple**
 
-	在 Targets -> Signing&Capabilities 下，添加Sign in with Apple、Push Notifications.
+	在 Targets -> Signing&Capabilities 下，添加<font color=red>Sign in with Apple、Push Notifications.</font>
 	
 * **创建objcetc swift的桥接文件**, 即直接创建一个swift文件按xcode提示即可
-* **项目other linker flags添加 -ObjC**
+* **项目other linker flags添加 <font color=red>-ObjC</font>**
 
 
 * <h2 id="100">App Info.plist配置</h2> 
@@ -42,7 +43,7 @@
 
 	```
 	<key>CFBundleDevelopmentRegion</key>
-	<string>zh_TW</string>   繁体设置为zh_TW，英文版设置为en_US
+	<string>zh_TW</string>   繁体设置为zh_TW，英文版设置为en_US等，设置为游戏本地化语言的语言标识
 	<key>CFBundleDisplayName</key>
 	<string>此值为游戏名字</string>
 	<key>CFBundleName</key>
@@ -97,10 +98,11 @@
 		<string>line</string>
 	</array>
 	line配置
-	<dict>
-		<key>ChannelID</key>
-		<string>此值对接时候提供</string>
-	</dict>
+	<key>LineSDKConfig</key>
+    <dict>
+        <key>ChannelID</key>
+        <string>此值对接时候提供</string>
+    </dict>
 	
 	其他
 	<key>NSAppTransportSecurity</key>
@@ -109,7 +111,7 @@
 		<true/>
 	</dict>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>我們需要使用您的廣告追蹤許可權來優化您的使用體驗</string>
+	<string>我們需要使用您的廣告追蹤許可權來優化您的使用體驗</string>  这句只是示例，需要翻译为对应的本地语言
 	
 	```
 
@@ -294,7 +296,7 @@
  
 	/// fb分享接口
 /// @param hashTag  话题
-/// @param message  引文
+/// @param message  引文内容
 /// @param url  分享的url
 /// @param shareBlock 分享的回调
 -(void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock;

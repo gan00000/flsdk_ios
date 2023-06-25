@@ -101,6 +101,10 @@
     _buttonsTable.delegate = self;
     _buttonsTable.dataSource = self;
     [self.view addSubview:_buttonsTable];
+    
+    NSLog(@"getBundleVersion=%@", [SUtil getBundleVersion_MMMethodMMM]? : @"");
+    NSLog(@"getBundleShortVersionString=%@", [SUtil getBundleShortVersionString_MMMethodMMM]? : @"");
+    
 }
 
 
