@@ -310,7 +310,6 @@
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFailNavigation:withError:)]) {
         [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
     }
-    _closeBtn.hidden = NO;
 }
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
