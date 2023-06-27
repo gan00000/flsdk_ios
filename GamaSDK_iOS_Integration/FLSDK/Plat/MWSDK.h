@@ -68,6 +68,10 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 @property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
 
 /**
+ * 是否允许转向
+ */
+@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
+/**
  单例
  
  @return MWSDK 单例对象
@@ -90,7 +94,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
-
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 /// 登录接口
 /// @param cmopleteHandler 登录回调block

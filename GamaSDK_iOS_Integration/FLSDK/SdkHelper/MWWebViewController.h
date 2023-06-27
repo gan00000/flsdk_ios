@@ -13,18 +13,24 @@
 #import "UIScreen+Sdk.h"
 
 typedef void(^MWWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
-typedef void(^MWWebCloseHandler)(void);
+
 typedef void(^MWWebConfirmHandler)(BOOL confirmResult);
 typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmHandler);
 
 
 @interface MWWebViewController : UIViewController
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
-@property (nonatomic,copy) MWWebCloseHandler closeHandler;
+
 @property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
 @property (nonatomic) BOOL shouldRotate;
 @property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
 @property (nonatomic) UIInterfaceOrientation interfaceOrientation;
+
+@property (nonatomic,copy) CCallBack viewDidLoadCompletion;
+@property (nonatomic,copy) CCallBack willDismissCallback;
+@property (nonatomic,copy) CCallBack2 didDismissCallback;
+
+@property (nonatomic, strong)NSURLRequest *webRequest;
 
 /**
  webView后退

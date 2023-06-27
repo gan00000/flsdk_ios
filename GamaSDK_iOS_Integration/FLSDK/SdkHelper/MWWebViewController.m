@@ -26,14 +26,14 @@
 @property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic) BOOL animation;
-@property (nonatomic, strong)NSURLRequest *webRequest;
+@property (nonatomic, strong) UIButton *closeBtn;
+
 @end
 
 @implementation MWWebViewController
 
 +(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request layoutHandler_MMMethodMMM:(id)handler animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
 {
-    UIViewController *containerVC = appTopViewController;
 //    if(device_is_iPhoneX){
 //        SDK_LOG(wwwww_tag_wwwww_device_is_iPhoneX);
 //        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
@@ -47,7 +47,7 @@
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
     webVC.webRequest = request;
     //[webVC webLoadURLRequest_MMMethodMMM:request];
-    [containerVC presentViewController:webVC animated:animation completion:nil];
+   
     return webVC;
 }
 - (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation
@@ -66,6 +66,7 @@
         self.footView = [[UIView alloc] init];
         
         self.shouldRotate = NO;
+        
         self.interfaceOrientationMask = UIInterfaceOrientationMaskAll;// 设备支持方向
         self.interfaceOrientation = UIInterfaceOrientationPortrait;
     }
@@ -102,15 +103,15 @@
 - (void)viewDidLoad { //system_method
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    UIView *statueView = [[UIView alloc] init];
-    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
-    [self.view addSubview:statueView];
-    [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.leading.trailing.mas_equalTo(self.view);
-        make.height.mas_equalTo(60);
-    }];
+    SDK_LOG(@"MWWebViewController viewDidLoad");
+//    UIView *statueView = [[UIView alloc] init];
+//    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+//    [self.view addSubview:statueView];
+//    [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        
+//        make.top.leading.trailing.mas_equalTo(self.view);
+//        make.height.mas_equalTo(60);
+//    }];
     
     self.backgroundView = [[UIView alloc] init];
     
@@ -122,6 +123,18 @@
     
     [self.backgroundView addSubview:self.wkwebView];
 //    [self.backgroundView addSubview:self.footView];
+    
+    _closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    _closeBtn.hidden = YES;
+    [self.view addSubview:_closeBtn];
+    [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        //        make.center.mas_equalTo(titleView);
+        
+        make.top.mas_equalTo(self.view).mas_offset(VH(25));
+        make.trailing.mas_equalTo(self.view).mas_offset(-VH(30));
+        make.width.mas_equalTo(VH(30));
+        make.height.mas_equalTo(VH(30));
+    }];
     
     self.view.backgroundColor = UIColor.clearColor;
     //custom layout or not
@@ -178,11 +191,16 @@
     
     //设置状态栏是否隐藏
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    if(self.viewDidLoadCompletion){
+        self.viewDidLoadCompletion(@"",0, nil);
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{  //system_method
     [self setNeedsStatusBarAppearanceUpdate];
 }
+
 
 - (BOOL)prefersStatusBarHidden  //system_method
 {
@@ -243,8 +261,13 @@
 
 - (void)webClose_MMMethodMMM
 {
-    [self dismissViewControllerAnimated:self.animation completion:^{
-        !_closeHandler?:_closeHandler();
+  
+    if(self.willDismissCallback){
+        self.willDismissCallback(@"",0, nil);
+    }
+    [self dismissViewControllerAnimated:NO completion:^{
+        SDK_LOG(@"userContentController dismissViewControllerAnimated");
+        !_didDismissCallback ?: _didDismissCallback();
     }];
 }
 
@@ -267,16 +290,19 @@
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
+    SDK_LOG(@"didFinishNavigation");
     [_indicatorView stopAnimating];
     
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
         [_webViewDelegate webView:webView didFinishNavigation:navigation];
     }
+    _closeBtn.hidden = YES;
 }
 
 //当Web视图正在加载内容时发生错误时调用;
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
 {
+    SDK_LOG(@"didFailNavigation withError");
     [_indicatorView stopAnimating];
     
     !_alertHandler?:_alertHandler(error.description, nil);
@@ -284,9 +310,11 @@
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFailNavigation:withError:)]) {
         [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
     }
+    _closeBtn.hidden = NO;
 }
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
+    SDK_LOG(@"decidePolicyForNavigationAction decisionHandler");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {
@@ -300,11 +328,22 @@
 //1、当Web视图收到服务器重定向时调用；
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
 {
+    SDK_LOG(@"didReceiveServerRedirectForProvisionalNavigation");
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
         [_webViewDelegate webView:webView didReceiveServerRedirectForProvisionalNavigation:navigation];
     }
 }
+
+//服务器返回200以外的状态码时，都调用请求失败的方法。
+//- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
+//
+//    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
+//        decisionHandler (WKNavigationResponsePolicyAllow);
+//    }else {
+//        decisionHandler(WKNavigationResponsePolicyCancel);
+//    }
+//}
 
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
@@ -345,9 +384,7 @@
     SDK_LOG(@"userContentController message=%@", message.name);
     if ([message.name isEqualToString:js_close]) {
         
-        [self dismissViewControllerAnimated:NO completion:^{
-            
-        }];
+        [self webClose_MMMethodMMM];
     }
 }
 
@@ -375,16 +412,27 @@
 }
 
 #pragma mark - Orientation Override
+
+//决定界面最后支持的屏幕方向的是 target&plist ∩ AppDeleagte中window设置 ∩ 视图控制器设置 这三个位置的交集。如果这个交集为空，就会抛出UIApplicationInvalidInterfaceOrientation异常崩溃
+
+
+//设置决定当前页面是否可以自动旋转，YES为支持旋转，NO为不支持旋转；如果返回NO,则其他转屏相关方法将不会再被调用。
+//如果将shouldAutorotate设置为YES,setStatusBarOrientation方法设置无效，只有shouldAutorotate设置为NO,才会起作用
 - (BOOL)shouldAutorotate    //system_method
 {
+    SDK_LOG(@"shouldAutorotate");
     return _shouldRotate;
 }
-
+//设置页面支持的旋转方向。
+//iPhone上默认返回UIInterfaceOrientationMaskAllButUpsideDown；
+//iPad上默认返回UIInterfaceOrientationMaskAll；
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations    //system_method
 {
+    SDK_LOG(@"supportedInterfaceOrientations");
     return _interfaceOrientationMask;
 }
 
+//设置进入页面时默认显示的方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation  //system_method
 {
 //    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
@@ -398,7 +446,9 @@
 //    } else {
 //        return _interfaceOrientation;
 //    }
+    SDK_LOG(@"preferredInterfaceOrientationForPresentation");
     return self.interfaceOrientation;
+;
 }
 
 
@@ -407,4 +457,17 @@
     [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
 }
 
+- (void)btnClickAction_MMMethodMMM:(UIButton *)sender
+{
+   
+    switch (sender.tag) {
+        case TAG_CLOSE:
+            [self webClose_MMMethodMMM];
+            break;
+                        
+        default:
+            break;
+    }
+    
+}
 @end
