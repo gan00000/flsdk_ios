@@ -309,6 +309,8 @@
 {
     
     NSString *transactionId = transaction.transactionIdentifier;
+    //获取product_id
+    NSString *product_id = transaction.payment.productIdentifier;
     
     if ([StringUtil isEmpty_MMMethodMMM:transactionId]) {
         
