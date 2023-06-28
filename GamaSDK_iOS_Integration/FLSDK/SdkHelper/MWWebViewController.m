@@ -347,16 +347,16 @@
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:wwwww_tag_wwwww_diplive_clinoful message_MMMethodMMM:message preferredStyle:UIAlertControllerStyleAlert];
-//    [alert addAction:[UIAlertAction actionWithTitle:wwwww_tag_wwwww_matraeur_ampl style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//        completionHandler();
-//    }]];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }]];
 //
-//    [self presentViewController:alert animated:YES completion:NULL];
+    [self presentViewController:alert animated:YES completion:NULL];
 //    !_alertHandler?:_alertHandler(message, nil);
 ////    completionHandler();
-    !_alertHandler?:_alertHandler(message, nil);
-    completionHandler();
+//    !_alertHandler?:_alertHandler(message, nil);
+//    completionHandler();
 
 }
 
