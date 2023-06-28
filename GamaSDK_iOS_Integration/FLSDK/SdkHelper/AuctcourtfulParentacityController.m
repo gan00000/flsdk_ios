@@ -27,27 +27,21 @@
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic) BOOL animation;
 @property (nonatomic, strong)NSURLRequest *webRequest;
+
+@property (nonatomic, strong) UIButton *closeBtn;
+
 @end
 
 @implementation AuctcourtfulParentacityController
 
 +(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request layoutHandler_MMMethodMMM:(id)handler animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
 {
-    UIViewController *containerVC = appTopViewController;
-
-
-
-
-
-
-
 
     AuctcourtfulParentacityController *webVC = [[AuctcourtfulParentacityController alloc] initWithWebLayoutHandler_MMMethodMMM:handler animation_MMMethodMMM:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;
     webVC.webRequest = request;
     
-    [containerVC presentViewController:webVC animated:animation completion:nil];
     return webVC;
 }
 - (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation
@@ -296,6 +290,18 @@
     
     [self.backgroundView addSubview:self.wkwebView];
 
+    _closeBtn = [DynaKnoweer initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    _closeBtn.hidden = YES;
+    [self.view addSubview:_closeBtn];
+    [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        //        make.center.mas_equalTo(titleView);
+        
+        make.top.mas_equalTo(self.view).mas_offset(VH(25));
+        make.trailing.mas_equalTo(self.view).mas_offset(-VH(30));
+        make.width.mas_equalTo(VH(30));
+        make.height.mas_equalTo(VH(30));
+    }];
+
     
     self.view.backgroundColor = UIColor.clearColor;
     
@@ -405,7 +411,9 @@
     }
     [self webLoadURLRequest_MMMethodMMM:self.webRequest];
     
-    
+    if(self.viewDidLoadCompletion){
+        self.viewDidLoadCompletion(@"",0, nil);
+    }
 
 }
 
@@ -953,8 +961,13 @@
 
 - (void)webClose_MMMethodMMM
 {
-    [self dismissViewControllerAnimated:self.animation completion:^{
-        !_closeHandler?:_closeHandler();
+  
+    if(self.willDismissCallback){
+        self.willDismissCallback(@"",0, nil);
+    }
+    [self dismissViewControllerAnimated:NO completion:^{
+        SDK_LOG(@"userContentController dismissViewControllerAnimated");
+        !_didDismissCallback ?: _didDismissCallback();
     }];
 }
 
@@ -1216,6 +1229,7 @@
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
         [_webViewDelegate webView:webView didFinishNavigation:navigation];
     }
+    _closeBtn.hidden = YES;
 }
 
 
@@ -1378,13 +1392,8 @@
 {
 
 
-
-
-
-
-
-
-    !_alertHandler?:_alertHandler(message, nil);
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
+    
 
 		//====insert my code start===  2023-05-04 15:54:50
 		{
@@ -1403,7 +1412,11 @@
 		}
 		//====insert my code end===  2023-05-04 15:54:50
 
-    completionHandler();
+  
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }]];
+    [self presentViewController:alert animated:YES completion:NULL];
 
 }
 
@@ -1572,9 +1585,7 @@
 
     if ([message.name isEqualToString:js_close]) {
         
-        [self dismissViewControllerAnimated:NO completion:^{
-            
-        }];
+        [self webClose_MMMethodMMM];
     }
 }
 
@@ -1913,4 +1924,20 @@
 	}
  }
 //===insert my method end=== 2023-05-04 15:54:50
+
+- (void)btnClickAction_MMMethodMMM:(UIButton *)sender
+{
+   
+    switch (sender.tag) {
+        case TAG_CLOSE:
+            [self webClose_MMMethodMMM];
+            break;
+                        
+        default:
+            break;
+    }
+    
+}
+
+
 @end

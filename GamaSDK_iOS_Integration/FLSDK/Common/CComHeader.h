@@ -37,5 +37,6 @@ typedef void (^CCallBack)(NSString* msg, NSInteger m, NSDictionary *dic);
 
 typedef void (^ItemViewClickHander)(NSInteger);
 
+typedef void(^CCallBack2)(void);
 
 #endif 

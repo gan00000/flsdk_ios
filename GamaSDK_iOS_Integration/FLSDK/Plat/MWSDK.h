@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      @"1.1.5"
+#define FL_SDK_VERSION      @"1.1.8"
 #define Decrypt_AllStringContent(text)  [[MWSDK share] decryptMsString:text]
 
 
@@ -44,22 +44,6 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @interface MWSDK : NSObject
 
 @property (nonatomic) SDKPayBlock payHandler;
@@ -67,8 +51,11 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;
 @property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
 
+@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
 
 + (instancetype)share;
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 
 - (BOOL)application:(UIApplication *)application

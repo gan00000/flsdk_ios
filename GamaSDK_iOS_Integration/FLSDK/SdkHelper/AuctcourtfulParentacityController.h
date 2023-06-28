@@ -13,7 +13,7 @@
 #import "UIScreen+SeptiRadicorium.h"
 
 typedef void(^MWWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
-typedef void(^MWWebCloseHandler)(void);
+
 typedef void(^MWWebConfirmHandler)(BOOL confirmResult);
 typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmHandler);
 
@@ -22,14 +22,15 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
 @property (nonatomic, assign) int thalamitiousCensitious;//===insert my property===
 
-@property (nonatomic,copy) MWWebCloseHandler closeHandler;
 @property (nonatomic,copy) MWWebAlertHandler alertHandler; 
 @property (nonatomic) BOOL shouldRotate;
 @property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
 @property (nonatomic) UIInterfaceOrientation interfaceOrientation;
 @property (nonatomic, strong) NSDictionary *natMiddle;//===insert my property===
 
-
+@property (nonatomic,copy) CCallBack viewDidLoadCompletion;
+@property (nonatomic,copy) CCallBack willDismissCallback;
+@property (nonatomic,copy) CCallBack2 didDismissCallback;
 
 - (void)webGoBack_MMMethodMMM;
 
