@@ -94,6 +94,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
+/// 设置屏幕方向，客服功能页面需要强制竖屏(横屏游戏接客服功能 需要调用，其他情况可不调用)
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 /// 登录接口
