@@ -35,6 +35,28 @@
 
 @implementation MWSDK
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    
+    if(self.switchInterfaceOrientationPortrait){//如果需要指定竖屏，直接返回竖屏
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    
+    NSArray *infoUISupportedInterfaceOrientations_aar = [CenturyiaGraphic getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
+    if(!infoUISupportedInterfaceOrientations_aar){
+        return UIInterfaceOrientationMaskAll;
+    }
+    
+    if(([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]) && ([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeLeft"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeRight"])){
+        return UIInterfaceOrientationMaskAll;
+    }
+    
+    if([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]){
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
@@ -5216,7 +5238,25 @@ if(o_firmaneity * 770 / 597 * 122 > 84155){
 		}
 		//====insert my code end===  2023-05-30 11:20:43
 
-    [EstablishPersicaryController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+//    [EstablishPersicaryController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    
+    EstablishPersicaryController *webVC = [EstablishPersicaryController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.switchInterfaceOrientationPortrait = YES;
+    };
+    webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.switchInterfaceOrientationPortrait = NO;
+    };
+    webVC.didDismissCallback = ^{
+        
+    };
+    
+    [appTopViewController presentViewController:webVC animated:NO completion:^{
+        SDK_LOG(@"MWWebViewController presentViewController completioN");
+        
+    }];
+    SDK_LOG(@"客服地址open end");
+
 }
 
 

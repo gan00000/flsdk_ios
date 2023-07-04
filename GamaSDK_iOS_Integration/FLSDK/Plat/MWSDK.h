@@ -55,10 +55,11 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 @property (nonatomic, assign) CGFloat tradeonFesspossibleeous;//===insert my property===
 
-
+@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
 
 + (instancetype)share;
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url

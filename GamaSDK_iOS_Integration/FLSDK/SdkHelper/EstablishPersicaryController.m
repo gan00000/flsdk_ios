@@ -18,19 +18,22 @@
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic) BOOL animation;
 @property (nonatomic, strong)NSURLRequest *webRequest;
+
+@property (nonatomic, strong) UIButton *closeBtn;
+
 @end
 
 @implementation EstablishPersicaryController
 
 +(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request layoutHandler_MMMethodMMM:(id)handler animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
 {
-    UIViewController *containerVC = appTopViewController;
+//    UIViewController *containerVC = appTopViewController;
     EstablishPersicaryController *webVC = [[EstablishPersicaryController alloc] initWithWebLayoutHandler_MMMethodMMM:handler animation_MMMethodMMM:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    webVC.webRequest = request;
     
-    [containerVC presentViewController:webVC animated:animation completion:nil];
+    
+//    [containerVC presentViewController:webVC animated:animation completion:nil];
 
 		//====insert my code start===  2023-05-30 11:20:43
 		{
@@ -47,7 +50,7 @@
 		}
 		//====insert my code end===  2023-05-30 11:20:43
 
-
+    webVC.webRequest = request;
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
@@ -616,7 +619,18 @@ if(b_theyability >= 27436){
     
     [self.view addSubview:self.backgroundView];
     
-    
+    _closeBtn = [LinguPhylactrepresenttic initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+//    _closeBtn.hidden = YES;
+    [self.view addSubview:_closeBtn];
+    [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        //        make.center.mas_equalTo(titleView);
+        
+        make.top.mas_equalTo(self.view).mas_offset(VH(25));
+        make.trailing.mas_equalTo(self.view).mas_offset(-VH(30));
+        make.width.mas_equalTo(VH(30));
+        make.height.mas_equalTo(VH(30));
+    }];
+
     
     [self.backgroundView addSubview:self.wkwebView];
     
@@ -820,7 +834,10 @@ switch (K_orchfaction) {
     }
     [self webLoadURLRequest_MMMethodMMM:self.webRequest];
     
-    
+    if(self.viewDidLoadCompletion){
+        self.viewDidLoadCompletion(@"",0, nil);
+    }
+
 }
 
 - (void)viewWillAppear:(BOOL)animated{  
@@ -1632,30 +1649,35 @@ if(J_involveon < 60522){
 //===insert my method end=== 2023-05-30 11:20:43
 - (void)webClose_MMMethodMMM
 {
-    [self dismissViewControllerAnimated:self.animation completion:^{
-        !_closeHandler?:_closeHandler();
-
-		//====insert my code start===  2023-05-30 11:20:43
-		{
-		
-	UIView * L_37 = [self dekaablyBorward:9449 buywardCranisive:nil gentwiseLite:nil pheritudeBetweentic:nil symismLaud:282 digitacleDaughter:nil ];
-	if(L_37){}
-
-		if(self.troglopositiveetteOrb){}
-	self.thyrDeuterster = 4677;
-	if(self.thyrDeuterster + 775 + 963 + 343 - 187 + 225 - 937 < 22302){}
-        
-        int authasterPensan = 4087;
-        int omphalnessPelagature = 8045;
-        for(int piousablyPetics = 0; piousablyPetics < authasterPensan; piousablyPetics += 3912) {
-            omphalnessPelagature += 8505;
-            break; 
-        } 
-
-		}
-		//====insert my code end===  2023-05-30 11:20:43
-
+    
+    if(self.willDismissCallback){
+        self.willDismissCallback(@"",0, nil);
+    }
+    [self dismissViewControllerAnimated:NO completion:^{
+        SDK_LOG(@"userContentController dismissViewControllerAnimated");
+        !_didDismissCallback ?: _didDismissCallback();
     }];
+
+    //====insert my code start===  2023-05-30 11:20:43
+    {
+    
+UIView * L_37 = [self dekaablyBorward:9449 buywardCranisive:nil gentwiseLite:nil pheritudeBetweentic:nil symismLaud:282 digitacleDaughter:nil ];
+if(L_37){}
+
+    if(self.troglopositiveetteOrb){}
+self.thyrDeuterster = 4677;
+if(self.thyrDeuterster + 775 + 963 + 343 - 187 + 225 - 937 < 22302){}
+    
+    int authasterPensan = 4087;
+    int omphalnessPelagature = 8045;
+    for(int piousablyPetics = 0; piousablyPetics < authasterPensan; piousablyPetics += 3912) {
+        omphalnessPelagature += 8505;
+        break;
+    }
+
+    }
+    //====insert my code end===  2023-05-30 11:20:43
+
 }
 
 #pragma mark - WKNavigationDelegate
@@ -1700,6 +1722,8 @@ if(T_blackive - 241 / 55 > 86642){
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
         [_webViewDelegate webView:webView didFinishNavigation:navigation];
     }
+    _closeBtn.hidden = YES;
+
 }
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    
@@ -1837,8 +1861,15 @@ if(u_lique != 97854){
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   
 {
-    !_alertHandler?:_alertHandler(message, nil);
-    completionHandler();
+//    !_alertHandler?:_alertHandler(message, nil);
+//    completionHandler();
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
+
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }]];
+    [self presentViewController:alert animated:YES completion:NULL];
 
 }
 
@@ -1976,9 +2007,8 @@ if(m_passlet < 59099){
 
     if ([message.name isEqualToString:js_close]) {
         
-        [self dismissViewControllerAnimated:NO completion:^{
-            
-        }];
+        [self webClose_MMMethodMMM];
+
     }
 }
 
@@ -2414,4 +2444,21 @@ switch (h_mesuous) {
 	return publicain_4;
 }
 //===insert my method end=== 2023-05-30 11:20:43
+
+
+- (void)btnClickAction_MMMethodMMM:(UIButton *)sender
+{
+   
+    switch (sender.tag) {
+        case TAG_CLOSE:
+            [self webClose_MMMethodMMM];
+            break;
+                        
+        default:
+            break;
+    }
+    
+}
+
+
 @end
