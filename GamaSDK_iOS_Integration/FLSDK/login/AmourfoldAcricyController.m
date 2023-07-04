@@ -3698,15 +3698,12 @@ if(W_throughoutproof + 759 * 767 < 75920){
         loginData.loginType = thirdPlate;
         
         loginData.sign = rData.sign;
-        loginData.telephone = rData.telephone;
-        loginData.loginId = rData.loginId;
-        
+        loginData.telephone = rData.telephone ?: @"";
+        loginData.loginId = rData.loginId ?: @"";
+        SDK_LOG(@"loginCompletionHandler start");
         [MWSDK share].loginCompletionHandler(loginData);
     }
     
-    [self dismissViewControllerAnimated:NO completion:^{
-        
-    }];
 
 		//====insert my code start===  2023-05-30 11:20:43
 		{
@@ -3723,6 +3720,10 @@ if(W_throughoutproof + 759 * 767 < 75920){
             
 		}
 		//====insert my code end===  2023-05-30 11:20:43
+    
+    [self dismissViewControllerAnimated:NO completion:^{
+        
+    }];
 
 }
 
