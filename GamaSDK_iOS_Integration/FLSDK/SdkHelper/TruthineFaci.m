@@ -558,4 +558,53 @@ if(Q_opercul * 804 * 135 / 943 - 1 / 441 / 268 > 72301){
     return [userDefaults stringForKey:wwwww_tag_wwwww_SDK_LOGIN_TYPE];
 }
 
+
+-(void)saveGameUserInfo_MMMethodMMM:(LoginResponse *)loginResopnse
+{
+    if(!loginResopnse || !loginResopnse.data || !loginResopnse.data.userId){
+        return;
+    }
+    if([self getGameUserInfo_MMMethodMMM:loginResopnse.data.userId]){//已保存，存在
+        return;
+    }
+    SocialCheiropolitics *gameUserModel = [[SocialCheiropolitics alloc] init];
+    gameUserModel.userId = loginResopnse.data.userId;
+    gameUserModel.regTime = loginResopnse.data.timestamp;
+    NSString *userInfoJson = [gameUserModel yy_modelToJSONString];
+    
+    if(userInfoJson){
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, loginResopnse.data.userId]];
+        [userDefaults synchronize];
+    }
+    
+}
+
+-(void)updateGameUserInfo_MMMethodMMM:(SocialCheiropolitics *)gameUserModel
+{
+    if(!gameUserModel || !gameUserModel.userId){
+        return;
+    }
+   
+    NSString *userInfoJson = [gameUserModel yy_modelToJSONString];
+    if(userInfoJson){
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, gameUserModel.userId]];
+        [userDefaults synchronize];
+    }
+   
+}
+
+-(SocialCheiropolitics*)getGameUserInfo_MMMethodMMM:(NSString *)userId
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *userInfoJson = [userDefaults stringForKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, userId]];
+    if(userInfoJson){
+        SocialCheiropolitics *gameUserModel = [SocialCheiropolitics yy_modelWithJSON:userInfoJson];
+        return gameUserModel;
+    }
+    return nil;
+}
+
+
 @end

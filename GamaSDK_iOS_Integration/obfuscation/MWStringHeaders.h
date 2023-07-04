@@ -416,5 +416,6 @@
 #define wwwww_tag_wwwww__CC_FF9944      @"#FF9944"  //@"#FF9944"
 
 #define wwwww_tag_wwwww_Upgrade_Account      @"Upgrade_Account"  //@"Upgrade_Account"
+#define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 
 #endif /* Headers_h */

@@ -899,6 +899,74 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
             [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
 
         }
+        
+        SocialCheiropolitics *gGameUserModel = [[TruthineFaci share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
+        if(gGameUserModel){
+            if(gGameUserModel.isPay){
+                
+                if(gGameUserModel.isSecondPay){
+                    //NOT TO DO
+                }else{//第二次充值上报
+                    gGameUserModel.isSecondPay = YES;
+                    [[TruthineFaci share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
+                    //上报
+                    SDK_LOG(@"logEvent firebase second_purchase");
+                    [FIRAnalytics logEventWithName:@"second_purchase" parameters:@{
+                        kFIRParameterItemID : mPayData.productId,
+                        //kFIRParameterPrice : @(mPayData.amount),
+                        kFIRParameterValue : @(mPayData.amount),
+                        kFIRParameterCurrency : wwwww_tag_wwwww_USD,
+                        kFIRParameterTransactionID : mPayData.orderId,
+                        wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                        wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+                        
+                    }];
+                    
+                    //AF和FB不上报金额
+                    
+                    SDK_LOG(@"logEvent af second_purchase");
+                    [[AppsFlyerLib shared] logEvent:@"second_purchase" withValues: @{
+//                                    AFEventParamRevenue  : @(mPayData.amount),
+//                                    AFEventParamCurrency : wwwww_tag_wwwww_USD,
+                                    AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                    AFEventParamContentId: mPayData.productId ?: @"",
+                                    AFEventParamOrderId: mPayData.orderId ?: @"",
+                                    wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+                                    wwwww_tag_wwwww_uniqueId      :  [CenturyiaGraphic getGamaUUID_MMMethodMMM]? : @"",
+                                    wwwww_tag_wwwww_time         :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
+                                    wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                    wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+                                    
+                    }];
+                    
+                    SDK_LOG(@"logEvent fb second_purchase");
+                    [[FBSDKAppEvents shared] logEvent:@"second_purchase" parameters: @{
+//                                                            AFEventParamCurrency : wwwww_tag_wwwww_USD,
+                                                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                                            AFEventParamContentId: mPayData.productId ?: @"",
+                                                            AFEventParamOrderId: mPayData.orderId ?: @"",
+                                                            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+                                                            wwwww_tag_wwwww_uniqueId      :  [CenturyiaGraphic getGamaUUID_MMMethodMMM]? : @"",
+                                                            wwwww_tag_wwwww_time         :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
+                                                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                                            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+                                                            
+                                            }];
+                    
+                }
+                
+            }else{
+                gGameUserModel.isPay = YES;
+                gGameUserModel.firstPayTime = [CenturyiaGraphic getTimeStamp_MMMethodMMM];
+                if([[CenturyiaGraphic getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[CenturyiaGraphic getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日付费玩家
+                    gGameUserModel.isRegDayPay = YES;
+                }else{
+                    gGameUserModel.isRegDayPay = NO;
+                }
+                [[TruthineFaci share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
+            }
+        }
+
        
         
     } @catch (NSException *exception) {

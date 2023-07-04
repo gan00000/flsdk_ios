@@ -474,4 +474,11 @@
 #define getPhoneAreaInfo_MMMethodMMM          spreadDistributor
 #define getPhoneInfoByAreaCode_MMMethodMMM          puttRecipe
 
+#define saveGameUserInfo_MMMethodMMM        saveGameUserInfo
+#define getGameUserInfo_MMMethodMMM         getGameUserInfo
+#define updateGameUserInfo_MMMethodMMM         updateGameUserInfo
+#define getDateStringWithTimeStr_MMMethodMMM    getDateStringWithTimeStr
+#define dateFormat_MMMethodMMM                  dateFormat
+#define getYesterdayDateWithTimeStr_MMMethodMMM         getYesterdayDateWithTimeStr
+
 #endif  /* codeObfuscation_h */
