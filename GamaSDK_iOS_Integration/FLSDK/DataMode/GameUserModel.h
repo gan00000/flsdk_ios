@@ -12,6 +12,13 @@
 @property (copy, nonatomic) NSString *serverName; //服务器名
 @property (copy, nonatomic) NSString *roleVipLevel; //vip等级
 
+@property (copy, nonatomic) NSString *userId;
+@property (assign, nonatomic) BOOL isPay;//是否付费
+@property (assign, nonatomic) BOOL isSecondPay;//是否二次付费
+@property (copy, nonatomic) NSString *regTime;//注册时间
+@property (copy, nonatomic) NSString *firstPayTime;//第一次付费
+
+@property (assign, nonatomic) BOOL isRegDayPay;//注册日是否付费
 
 -(BOOL)checkParams_MMMethodMMM;
 @end
