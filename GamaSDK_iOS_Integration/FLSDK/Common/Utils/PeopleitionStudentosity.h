@@ -106,7 +106,8 @@
  
 +(NSString *)getTimeDate_MMMethodMMM;
 +(NSString *)getTodayInfo_MMMethodMMM;
-
++ (NSString *)getDateStringWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat;
++ (NSString *)getYesterdayDateWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat;
  
 +(NSDictionary *)getProjectInfoPlist_MMMethodMMM;
 

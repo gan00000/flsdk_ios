@@ -415,6 +415,7 @@
 #define wwwww_tag_wwwww_touchesBegan___        Decrypt_AllStringContent(@"FpOsiAv3z99b3Vhzx+Beug==")  //@"touchesBegan..."
 #define wwwww_tag_wwwww__CC_FC676F      Decrypt_AllStringContent(@"Ahn0Y9QzSUGj2kAob3D//A==")  //@"#FC676F"
 #define wwwww_tag_wwwww__CC_FF9944      Decrypt_AllStringContent(@"pkBZov2/+8bUCRSl1ewTOQ==")  //@"#FF9944"
+#define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 
 
 #endif /* Headers_h */

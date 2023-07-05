@@ -1,6 +1,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AccountModel.h"
+#import "HerallySolvfier.h"
+#import "LoginResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,6 +45,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)saveLoginType_MMMethodMMM:(NSString *)thirdPlate;
 
 -(NSString *)loginType_MMMethodMMM;
+
+-(void)saveGameUserInfo_MMMethodMMM:(LoginResponse *)loginResopnse;
+-(HerallySolvfier*)getGameUserInfo_MMMethodMMM:(NSString *)userId;
+-(void)updateGameUserInfo_MMMethodMMM:(HerallySolvfier *)gameUserModel;
+
 
 @end
 

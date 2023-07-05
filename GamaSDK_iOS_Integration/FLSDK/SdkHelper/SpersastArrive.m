@@ -805,4 +805,54 @@ static dispatch_once_t onceToken;
     return configUtil;
 }
 
+
+-(void)saveGameUserInfo_MMMethodMMM:(LoginResponse *)loginResopnse
+{
+    if(!loginResopnse || !loginResopnse.data || !loginResopnse.data.userId){
+        return;
+    }
+    if([self getGameUserInfo_MMMethodMMM:loginResopnse.data.userId]){//已保存，存在
+        return;
+    }
+    HerallySolvfier *gameUserModel = [[HerallySolvfier alloc] init];
+    gameUserModel.userId = loginResopnse.data.userId;
+    gameUserModel.regTime = loginResopnse.data.timestamp;
+    NSString *userInfoJson = [gameUserModel yy_modelToJSONString];
+    
+    if(userInfoJson){
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, loginResopnse.data.userId]];
+        [userDefaults synchronize];
+    }
+    
+}
+
+-(void)updateGameUserInfo_MMMethodMMM:(HerallySolvfier *)gameUserModel
+{
+    if(!gameUserModel || !gameUserModel.userId){
+        return;
+    }
+   
+    NSString *userInfoJson = [gameUserModel yy_modelToJSONString];
+    if(userInfoJson){
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, gameUserModel.userId]];
+        [userDefaults synchronize];
+    }
+   
+}
+
+-(HerallySolvfier*)getGameUserInfo_MMMethodMMM:(NSString *)userId
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *userInfoJson = [userDefaults stringForKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, userId]];
+    if(userInfoJson){
+        HerallySolvfier *gameUserModel = [HerallySolvfier yy_modelWithJSON:userInfoJson];
+        return gameUserModel;
+    }
+    return nil;
+}
+
+
+
 @end
