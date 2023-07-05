@@ -468,4 +468,12 @@
 #define reissue_MMMethodMMM          enjoyBack
 #define logServerWithEventName_MMMethodMMM          jabberSimplification
 #define afnReachability_MMMethodMMM          afnReachability
+
+#define saveGameUserInfo_MMMethodMMM          updateChairlift
+#define getGameUserInfo_MMMethodMMM          ovulateIllustration
+#define updateGameUserInfo_MMMethodMMM          lambWound
+#define getDateStringWithTimeStr_MMMethodMMM          scrummageProbe
+#define dateFormat_MMMethodMMM          causeTax
+#define getYesterdayDateWithTimeStr_MMMethodMMM          civilizeMaracas
+
 #endif  /* codeObfuscation_h */
