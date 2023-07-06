@@ -1645,7 +1645,8 @@ static dispatch_once_t onceToken;
         
     }
     
-    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+//    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+    return YES;
 }
 
 -(NSString *)touchesConfirmNeedsFatuPatternArry:(NSInteger)bundle forgot:(long)forgot {
