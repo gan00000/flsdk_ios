@@ -481,4 +481,7 @@
 #define dateFormat_MMMethodMMM                  dateFormat_MMMethodMMM
 #define getYesterdayDateWithTimeStr_MMMethodMMM         getYesterdayDateWithTimeStr_MMMethodMMM
 
+#define addAgeQuaView_MMMethodMMM       addAgeQuaView
+#define saveAlready14Age_MMMethodMMM    saveAlready14Age_MMMethodMMM
+#define isAlready14Age_MMMethodMMM      isAlready14Age_MMMethodMMM
 #endif  /* codeObfuscation_h */
