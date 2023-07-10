@@ -48,6 +48,12 @@
 #define C_BUTTON_START  @"#D4FC79"
 #define C_BUTTON_END  @"#8FDB99"
 
+#elif SDK_KR
+
+#define BaseColor  @"#FF948B"
+#define C_BUTTON_START  @"#FF948B"
+#define C_BUTTON_END  @"#FE3D82"
+
 #else
 
 #define BaseColor  wwwww_tag_wwwww__CC_FF892E

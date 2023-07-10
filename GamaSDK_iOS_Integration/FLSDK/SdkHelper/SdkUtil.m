@@ -624,5 +624,16 @@
     return NO;
 }
 
++ (void)saveAlready14Age_MMMethodMMM:(BOOL)isAge14
+{
+    [[NSUserDefaults standardUserDefaults]  setBool:isAge14 forKey:@"sdk_is14age"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (BOOL)isAlready14Age_MMMethodMMM
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:@"sdk_is14age"];
+}
+
 
 @end

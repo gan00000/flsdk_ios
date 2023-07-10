@@ -122,5 +122,8 @@
 "text_has_bind_tips_apple"     :   "Apple已升级为会员账号",
 "text_has_bind_tips_mw"     :   "会员账号",
 "text_account_bind_success2" :   "升级会员账号成功",
-"text_account_not_login"  :  "当前没有账号，请先登录"
+"text_account_not_login"  :  "当前没有账号，请先登录",
+"text_age_is14"  :  "你是否已满14周岁",
+"text_age_not14_logout"  :  "注：如果您未满14周岁，请尽快退出，该应用不对14周岁以下用户开放",
+"text_age_already_14"  :  "已满14周岁"
 }

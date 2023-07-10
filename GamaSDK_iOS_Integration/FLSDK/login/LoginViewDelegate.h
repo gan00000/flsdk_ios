@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol LoginViewDelegate <NSObject>
 
+-(void)showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE) page;
 -(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) toPage;
 -(void)goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE) toPage from_MMMethodMMM:(CURRENT_PAGE_TYPE)fromPage param_MMMethodMMM:(id) obj;
 

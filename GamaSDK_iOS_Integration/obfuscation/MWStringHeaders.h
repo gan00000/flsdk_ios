@@ -419,4 +419,8 @@
 #define wwwww_tag_wwwww_Upgrade_Account      @"Upgrade_Account"  //@"Upgrade_Account"
 #define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 
+#define wwwww_tag_wwwww_text_age_is14        @"text_age_is14"  //@"text_age_is14"
+#define wwwww_tag_wwwww_text_age_not14_logout        @"text_age_not14_logout"  //@"text_age_not14_logout"
+#define wwwww_tag_wwwww_text_age_already_14        @"text_age_already_14"  //@"text_age_already_14"
+
 #endif /* Headers_h */

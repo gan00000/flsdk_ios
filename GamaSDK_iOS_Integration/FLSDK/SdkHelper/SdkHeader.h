@@ -73,6 +73,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
     CURRENT_PAGE_TYPE_MAIN_HOME,
     CURRENT_PAGE_TYPE_WELCOME_BACK,
     CURRENT_PAGE_TYPE_LOGIN_WITH_REG,
+    CURRENT_PAGE_TYPE_AGE14_QUA,
     CURRENT_PAGE_TYPE_NULL,
 };
 
@@ -140,6 +141,13 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 
 #define api_sendMobileVcode  (@"api/vcode/sendMobileVcode")
 #define api_bind_phone  (@"api/mobile/bind")
+
+#pragma mark - sdk版本
+#define SDK_VERSION_V4   @"v4"  //东南亚
+#define SDK_VERSION_V5   @"v5"  //港台
+#define SDK_VERSION_V6   @"v6"  //东南亚
+#define SDK_VERSION_VN   @"v_vn"
+#define SDK_VERSION_KR   @"kr"
 
 #endif /* CCSkyHourHeader_h */
 

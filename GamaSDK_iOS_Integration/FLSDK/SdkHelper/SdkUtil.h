@@ -77,4 +77,7 @@
 
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName;
 + (BOOL)isReportEventName_MMMethodMMM:(NSString *)eventName;
+
++ (void)saveAlready14Age_MMMethodMMM:(BOOL)isAge14;
++ (BOOL)isAlready14Age_MMMethodMMM;
 @end

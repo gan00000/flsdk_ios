@@ -30,6 +30,10 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+#ifdef SDK_KR
+#import "AgeQuaView.h"
+#endif
+
 @interface SDKLoginViewController()
 
 @property (nonatomic,strong)UIView *sdkContentView;
@@ -81,7 +85,7 @@
     switch (sdkPageType) {
         case SDKPage_Login:
         {
-            [self showLoginPageOrAutoLogin_MMMethodMMM];
+            [self showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_NULL)];
         }
             break;
             
@@ -119,7 +123,7 @@
 }
 
 
--(void)showLoginPageOrAutoLogin_MMMethodMMM
+-(void)showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE) page
 {
     
     //    if ([TermsView openProvision_MMMethodMMM]) {//是否打开服务条款页面，没同意过需要打开
@@ -173,6 +177,20 @@
 //    SDK_DATA.mConfigModel.lineLogin = NO;
     //test code end
     
+#ifdef SDK_KR
+    
+    if(page != CURRENT_PAGE_TYPE_AGE14_QUA){
+        
+        if([SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] && ![SdkUtil isAlready14Age_MMMethodMMM]){
+            [self addAgeQuaView_MMMethodMMM];
+            return;
+        }
+    }
+    
+    
+#endif
+    
+    
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     if (!mConfigModel.visitorLogin && !mConfigModel.appleLogin && !mConfigModel.fbLogin && !mConfigModel.lineLogin) {
         [self addLoginWithRegView_MMMethodMMM];
@@ -196,6 +214,7 @@
     
 }
 
+
 -(UIView *)sdkContentView
 {
     if (!_sdkContentView) {
@@ -204,8 +223,9 @@
         [self.view addSubview:_sdkContentView];
         [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            if([@"v_vn" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
-               [@"v6" isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
+            if([SDK_VERSION_VN isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
+               [SDK_VERSION_V6 isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
+               [SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]]){
                 
                 //make.edges.mas_equalTo(self.view);
                 make.centerX.equalTo(@(0));
@@ -235,6 +255,21 @@
 }
 
 #pragma mark -頁面添加部分
+
+-(SDKBaseView *)addAgeQuaView_MMMethodMMM
+{
+    SDKBaseView *ageQuaView = nil;
+#ifdef SDK_KR
+    
+    for (UIView *subView in [self sdkContentView].subviews) {
+        [subView removeFromSuperview];
+    }
+    ageQuaView = [[AgeQuaView alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:ageQuaView];
+    
+#endif
+    return ageQuaView;
+}
 
 -(SDKBaseView *)addLoginWithRegView_MMMethodMMM
 {
@@ -590,6 +625,11 @@
                 [AdLogger logWithEventName_MMMethodMMM:@"Paid_D2Login" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
             }
         }
+    }
+    
+    if([SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] && ![SdkUtil isAlready14Age_MMMethodMMM]){
+        [self showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_NULL)];
+        return;
     }
     
     if ([MWSDK share].loginCompletionHandler) {
