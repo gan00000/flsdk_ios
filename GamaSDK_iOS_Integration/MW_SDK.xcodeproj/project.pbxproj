@@ -811,6 +811,241 @@
 		0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8328A4B07900709536 /* BindAccountViewV2.h */; };
 		0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387B9D3291B8BBB001BACA8 /* AccountLoginViewV2.h */; };
 		0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387B9D4291B8BBB001BACA8 /* AccountLoginViewV2.m */; };
+		0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
+		0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
+		0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
+		0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
+		0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* GamaThirdSocial.h */; };
+		0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
+		0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
+		0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
+		0392B1C32A5BA8DC00A3E2D6 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DDE286EE3A3008D0B3A /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0392B1C42A5BA8DC00A3E2D6 /* ViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 03315B98291BA16000A92FBE /* ViewUtil.h */; };
+		0392B1C52A5BA8DC00A3E2D6 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D97DD5286EE281008D0B3A /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
+		0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E974126A20874A170018E1A6 /* MWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0392B1CC2A5BA8DC00A3E2D6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918EF2860AECB0029AE6A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		0392B1CD2A5BA8DC00A3E2D6 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918F82860AECB0029AE6A /* ViewController+MASAdditions.m */; };
+		0392B1CE2A5BA8DC00A3E2D6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FC2860AECB0029AE6A /* MASCompositeConstraint.m */; };
+		0392B1CF2A5BA8DC00A3E2D6 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FD2860AECB0029AE6A /* MASConstraintMaker.m */; };
+		0392B1D02A5BA8DC00A3E2D6 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FE2860AECB0029AE6A /* MASLayoutConstraint.m */; };
+		0392B1D12A5BA8DC00A3E2D6 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918FF2860AECB0029AE6A /* NSArray+MASAdditions.m */; };
+		0392B1D22A5BA8DC00A3E2D6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919002860AECB0029AE6A /* View+MASAdditions.m */; };
+		0392B1D32A5BA8DC00A3E2D6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919032860AECB0029AE6A /* MASConstraint.m */; };
+		0392B1D42A5BA8DC00A3E2D6 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919052860AECB0029AE6A /* MASViewConstraint.m */; };
+		0392B1D52A5BA8DC00A3E2D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919062860AECB0029AE6A /* MASViewAttribute.m */; };
+		0392B1D62A5BA8DC00A3E2D6 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919082860AECB0029AE6A /* UIImage+WebP.m */; };
+		0392B1D72A5BA8DC00A3E2D6 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190B2860AECB0029AE6A /* SDWebImageManager.m */; };
+		0392B1D82A5BA8DC00A3E2D6 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190C2860AECB0029AE6A /* SDWebImageDecoder.m */; };
+		0392B1D92A5BA8DC00A3E2D6 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9190E2860AECB0029AE6A /* UIImageView+HighlightedWebCache.m */; };
+		0392B1DA2A5BA8DC00A3E2D6 /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
+		0392B1DB2A5BA8DC00A3E2D6 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919102860AECB0029AE6A /* SDWebImageDownloader.m */; };
+		0392B1DC2A5BA8DC00A3E2D6 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919112860AECB0029AE6A /* UIImage+GIF.m */; };
+		0392B1DD2A5BA8DC00A3E2D6 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919132860AECB0029AE6A /* UIImage+MultiFormat.m */; };
+		0392B1DE2A5BA8DC00A3E2D6 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919142860AECB0029AE6A /* SDWebImageCompat.m */; };
+		0392B1DF2A5BA8DC00A3E2D6 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919152860AECB0029AE6A /* SDWebImagePrefetcher.m */; };
+		0392B1E02A5BA8DC00A3E2D6 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919182860AECB0029AE6A /* SDImageCache.m */; };
+		0392B1E12A5BA8DC00A3E2D6 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191A2860AECB0029AE6A /* SDWebImageDownloaderOperation.m */; };
+		0392B1E22A5BA8DC00A3E2D6 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191D2860AECB0029AE6A /* NSData+ImageContentType.m */; };
+		0392B1E32A5BA8DC00A3E2D6 /* UrlMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAB3428A66ED300709536 /* UrlMode.m */; };
+		0392B1E42A5BA8DC00A3E2D6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9191E2860AECB0029AE6A /* UIImageView+WebCache.m */; };
+		0392B1E52A5BA8DC00A3E2D6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919212860AECB0029AE6A /* UIView+WebCacheOperation.m */; };
+		0392B1E62A5BA8DC00A3E2D6 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B919252860AECB0029AE6A /* UIButton+WebCache.m */; };
+		0392B1E72A5BA8DC00A3E2D6 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
+		0392B1E82A5BA8DC00A3E2D6 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
+		0392B1E92A5BA8DC00A3E2D6 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
+		0392B1EC2A5BA8DC00A3E2D6 /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; };
+		0392B1ED2A5BA8DC00A3E2D6 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
+		0392B1EF2A5BA8DC00A3E2D6 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
+		0392B1F02A5BA8DC00A3E2D6 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
+		0392B1F12A5BA8DC00A3E2D6 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
+		0392B1F22A5BA8DC00A3E2D6 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
+		0392B1F32A5BA8DC00A3E2D6 /* FBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558BE285B0B120025EFB2 /* FBDelegate.m */; };
+		0392B1F42A5BA8DC00A3E2D6 /* HttpServiceEnginePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */; };
+		0392B1F52A5BA8DC00A3E2D6 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0A24C589A5000D6B20 /* AccountModel.m */; };
+		0392B1F62A5BA8DC00A3E2D6 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0524C589A5000D6B20 /* LoginResponse.m */; };
+		0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918DD286029050029AE6A /* ConfigResponse.m */; };
+		0392B1F82A5BA8DC00A3E2D6 /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7428A362E200709536 /* MyTextFiled.m */; };
+		0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
+		0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
+		0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; };
+		0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
+		0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; };
+		0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* HttpServiceEngineLogin.m */; };
+		0392B1FF2A5BA8DC00A3E2D6 /* BJServiceConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* BJServiceConfigurator.m */; };
+		0392B2002A5BA8DC00A3E2D6 /* SDKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C9BC5424C5EA0800B3D704 /* SDKRequest.m */; };
+		0392B2012A5BA8DC00A3E2D6 /* HttpServiceEngineAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B79162254159FC008C4365 /* HttpServiceEngineAd.m */; };
+		0392B2022A5BA8DC00A3E2D6 /* BaseSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD6286EE281008D0B3A /* BaseSDK.m */; };
+		0392B2032A5BA8DC00A3E2D6 /* BaseSDKImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDA286EE281008D0B3A /* BaseSDKImpl.m */; };
+		0392B2042A5BA8DC00A3E2D6 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DDF286EE3A3008D0B3A /* PayData.m */; };
+		0392B2052A5BA8DC00A3E2D6 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
+		0392B2062A5BA8DC00A3E2D6 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; };
+		0392B2082A5BA8DC00A3E2D6 /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0392B2092A5BA8DC00A3E2D6 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
+		0392B20A2A5BA8DC00A3E2D6 /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0392B20B2A5BA8DC00A3E2D6 /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0392B20C2A5BA8DC00A3E2D6 /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
+		0392B20D2A5BA8DC00A3E2D6 /* SAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A0285A006600F1FD3B /* SAlertViewDelegate.m */; };
+		0392B20E2A5BA8DC00A3E2D6 /* UIAlertController+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A2285A006600F1FD3B /* UIAlertController+Sdk.m */; };
+		0392B20F2A5BA8DC00A3E2D6 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E974127F20874A170018E1A6 /* UIColor+HexColor.m */; };
+		0392B2112A5BA8DC00A3E2D6 /* UIColor+HexStringToColorTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC7C24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.m */; };
+		0392B2122A5BA8DC00A3E2D6 /* UIScreen+Sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28921BE5633004FF8B5 /* UIScreen+Sdk.m */; };
+		0392B2132A5BA8DC00A3E2D6 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A8285A006600F1FD3B /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0392B2142A5BA8DC00A3E2D6 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F59A4A285776730062B6EE /* UIView+BlockGesture.m */; };
+		0392B2152A5BA8DC00A3E2D6 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669945285DBF3A0008EB50 /* NSString+Common.m */; };
+		0392B2162A5BA8DC00A3E2D6 /* SUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89D285A006600F1FD3B /* SUtil.m */; };
+		0392B2172A5BA8DC00A3E2D6 /* BaseCountTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA7A28A39F0800709536 /* BaseCountTimerView.m */; };
+		0392B2182A5BA8DC00A3E2D6 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBDA24C589A5000D6B20 /* UIUtil.m */; };
+		0392B2192A5BA8DC00A3E2D6 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03315B97291BA16000A92FBE /* ViewUtil.m */; };
+		0392B21A2A5BA8DC00A3E2D6 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03669948285E26890008EB50 /* StringUtil.m */; };
+		0392B21B2A5BA8DC00A3E2D6 /* USDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 032ACA4028729E5D00644568 /* USDefault.m */; };
+		0392B21C2A5BA8DC00A3E2D6 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE624C589A5000D6B20 /* NSObject+YYModel.m */; };
+		0392B21D2A5BA8DC00A3E2D6 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBE724C589A5000D6B20 /* YYClassInfo.m */; };
+		0392B21E2A5BA8DC00A3E2D6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEE24C589A5000D6B20 /* AFURLResponseSerialization.m */; };
+		0392B21F2A5BA8DC00A3E2D6 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBEF24C589A5000D6B20 /* AFHTTPSessionManager.m */; };
+		0392B2202A5BA8DC00A3E2D6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF124C589A5000D6B20 /* AFURLSessionManager.m */; };
+		0392B2212A5BA8DC00A3E2D6 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF224C589A5000D6B20 /* AFURLRequestSerialization.m */; };
+		0392B2222A5BA8DC00A3E2D6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF424C589A5000D6B20 /* AFNetworkReachabilityManager.m */; };
+		0392B2232A5BA8DC00A3E2D6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBF524C589A5000D6B20 /* AFSecurityPolicy.m */; };
+		0392B2242A5BA8DC00A3E2D6 /* BJBaseHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0324C589A5000D6B20 /* BJBaseHTTPEngine.m */; };
+		0392B2252A5BA8DC00A3E2D6 /* UIImage+ResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */; };
+		0392B2262A5BA8DC00A3E2D6 /* ResReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB89B285A006600F1FD3B /* ResReader.m */; };
+		0392B2282A5BA8DC00A3E2D6 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB892285A006600F1FD3B /* SecurityUtil.m */; };
+		0392B2292A5BA8DC00A3E2D6 /* SdkSecurityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB891285A006600F1FD3B /* SdkSecurityFunction.m */; };
+		0392B22A2A5BA8DC00A3E2D6 /* PhoneInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BCED4237D4A2A004A08B1 /* PhoneInfoModel.m */; };
+		0392B22B2A5BA8DC00A3E2D6 /* SAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E94EE47E235D8D3B007D3A93 /* SAppleLogin.m */; };
+		0392B22C2A5BA8DC00A3E2D6 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
+		0392B22E2A5BA8DC00A3E2D6 /* MWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EB28621BE4E9E004FF8B5 /* MWWebViewController.m */; };
+		0392B2302A5BA8DC00A3E2D6 /* SdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126D20874A170018E1A6 /* SdkUtil.m */; };
+		0392B2312A5BA8DC00A3E2D6 /* ConfigCoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0E24C589A5000D6B20 /* ConfigCoreUtil.m */; };
+		0392B2322A5BA8DC00A3E2D6 /* LoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0389B3182861B7B30024E62E /* LoginHelper.m */; };
+		0392B2332A5BA8DC00A3E2D6 /* DimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35828647256002F4B2F /* DimeUtil.m */; };
+		0392B2342A5BA8DC00A3E2D6 /* LoginButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369B35C28655669002F4B2F /* LoginButtonData.m */; };
+		0392B2352A5BA8DC00A3E2D6 /* SDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */; };
+		0392B2362A5BA8DC00A3E2D6 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1224C589A5000D6B20 /* LoginButton.m */; };
+		0392B2372A5BA8DC00A3E2D6 /* AccountLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3624C589A5000D6B20 /* AccountLoginView.m */; };
+		0392B2382A5BA8DC00A3E2D6 /* BindAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36062850986F00723340 /* BindAccountView.m */; };
+		0392B2392A5BA8DC00A3E2D6 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1E24C589A5000D6B20 /* ChangePasswordView.m */; };
+		0392B23A2A5BA8DC00A3E2D6 /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2E24C589A5000D6B20 /* FindPasswordView.m */; };
+		0392B23B2A5BA8DC00A3E2D6 /* LoginWithRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA791253FD43100D3969F /* LoginWithRegView.m */; };
+		0392B23C2A5BA8DC00A3E2D6 /* MainHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA36092850989900723340 /* MainHomeView.m */; };
+		0392B23D2A5BA8DC00A3E2D6 /* RegisterAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC3524C589A5000D6B20 /* RegisterAccountView.m */; };
+		0392B23E2A5BA8DC00A3E2D6 /* SDKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03650194285C761600578028 /* SDKBaseView.m */; };
+		0392B23F2A5BA8DC00A3E2D6 /* SelectBindTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC1D24C589A5000D6B20 /* SelectBindTypeView.m */; };
+		0392B2402A5BA8DC00A3E2D6 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790EC24D55D69006A2F69 /* TermsView.m */; };
+		0392B2412A5BA8DC00A3E2D6 /* WelcomeBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA12D32853565200BBBEB4 /* WelcomeBackView.m */; };
+		0392B2422A5BA8DC00A3E2D6 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2724C589A5000D6B20 /* AccountListViewCell.m */; };
+		0392B2432A5BA8DC00A3E2D6 /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
+		0392B2442A5BA8DC00A3E2D6 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2024C589A5000D6B20 /* LoginTitleView.m */; };
+		0392B2452A5BA8DC00A3E2D6 /* PhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2224C589A5000D6B20 /* PhoneView.m */; };
+		0392B2462A5BA8DC00A3E2D6 /* SDKIconTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D790E824D51EBE006A2F69 /* SDKIconTitleButton.m */; };
+		0392B2472A5BA8DC00A3E2D6 /* SDKTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC2124C589A5000D6B20 /* SDKTextFiledView.m */; };
+		0392B2482A5BA8DC00A3E2D6 /* LoginTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA7942540371A00D3969F /* LoginTypeButton.m */; };
+		0392B2492A5BA8DC00A3E2D6 /* AccountListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034558D2285C25210025EFB2 /* AccountListView.m */; };
+		0392B2642A5BA99900A3E2D6 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2522A5BA99900A3E2D6 /* LoginWithRegViewV2.m */; };
+		0392B2652A5BA99900A3E2D6 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2532A5BA99900A3E2D6 /* FindPasswordViewV2.h */; };
+		0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2542A5BA99900A3E2D6 /* RegisterAccountViewV2.h */; };
+		0392B2672A5BA99900A3E2D6 /* NoticeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2552A5BA99900A3E2D6 /* NoticeViewV2.m */; };
+		0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2562A5BA99900A3E2D6 /* BindAccountViewV2.h */; };
+		0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2572A5BA99900A3E2D6 /* TermsViewV2.h */; };
+		0392B26A2A5BA99900A3E2D6 /* AccountLoginViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2582A5BA99900A3E2D6 /* AccountLoginViewV2.h */; };
+		0392B26B2A5BA99900A3E2D6 /* MainHomeViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2592A5BA99900A3E2D6 /* MainHomeViewV2.m */; };
+		0392B26C2A5BA99900A3E2D6 /* BindPhoneViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B25A2A5BA99900A3E2D6 /* BindPhoneViewV2.m */; };
+		0392B26D2A5BA99900A3E2D6 /* FindPasswordViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B25B2A5BA99900A3E2D6 /* FindPasswordViewV2.m */; };
+		0392B26E2A5BA99900A3E2D6 /* LoginWithRegViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B25C2A5BA99900A3E2D6 /* LoginWithRegViewV2.h */; };
+		0392B26F2A5BA99900A3E2D6 /* NoticeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B25D2A5BA99900A3E2D6 /* NoticeViewV2.h */; };
+		0392B2702A5BA99900A3E2D6 /* RegisterAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B25E2A5BA99900A3E2D6 /* RegisterAccountViewV2.m */; };
+		0392B2712A5BA99900A3E2D6 /* AccountLoginViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B25F2A5BA99900A3E2D6 /* AccountLoginViewV2.m */; };
+		0392B2722A5BA99900A3E2D6 /* TermsViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2602A5BA99900A3E2D6 /* TermsViewV2.m */; };
+		0392B2732A5BA99900A3E2D6 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2612A5BA99900A3E2D6 /* BindAccountViewV2.m */; };
+		0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2622A5BA99900A3E2D6 /* BindPhoneViewV2.h */; };
+		0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2632A5BA99900A3E2D6 /* MainHomeViewV2.h */; };
+		0392B27A2A5BA9F600A3E2D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
+		0392B27B2A5BA9F600A3E2D6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
+		0392B27C2A5BA9F600A3E2D6 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
+		0392B27D2A5BA9F600A3E2D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
+		0392B27E2A5BA9F600A3E2D6 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
+		0392B27F2A5BA9F600A3E2D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
+		0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
+		0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9429D9900200890B3B /* NOTICES */; };
+		0392B2832A5BA9F600A3E2D6 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FC29F91E3600B416D8 /* com_mwgame_sdkzycs.json */; };
+		0392B2842A5BA9F600A3E2D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
+		0392B2852A5BA9F600A3E2D6 /* SDKResourcesV6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */; };
+		0392B2862A5BA9F600A3E2D6 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
+		0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
+		0392B2882A5BA9F600A3E2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039AC1FB29F91E3600B416D8 /* GoogleService-Info.plist */; };
+		0392B28A2A5BA9F600A3E2D6 /* MWSDK_V6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03509D2529F91C8C00C840DA /* MWSDK_V6.framework */; };
+		0392B28B2A5BA9F600A3E2D6 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
+		0392B28C2A5BA9F600A3E2D6 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
+		0392B28D2A5BA9F600A3E2D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0392B28E2A5BA9F600A3E2D6 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
+		0392B28F2A5BA9F600A3E2D6 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0392B2902A5BA9F600A3E2D6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FDBBE221EDDB8000500CA7 /* MapKit.framework */; };
+		0392B2912A5BA9F600A3E2D6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2432477D14700C9A6DC /* CoreText.framework */; };
+		0392B2922A5BA9F600A3E2D6 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8E29D9900200890B3B /* FBSDKCoreKit_Basics.xcframework */; };
+		0392B2932A5BA9F600A3E2D6 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA629D9900200890B3B /* AppAuth.xcframework */; };
+		0392B2942A5BA9F600A3E2D6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E940F2412477D13400C9A6DC /* CoreFoundation.framework */; };
+		0392B2952A5BA9F600A3E2D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4D964244EFFD900937AD5 /* Foundation.framework */; };
+		0392B2962A5BA9F600A3E2D6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E98E851F23825AB700257BDE /* libc++.tbd */; };
+		0392B2972A5BA9F600A3E2D6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991437C238288ED00E37E3F /* Accelerate.framework */; };
+		0392B2982A5BA9F600A3E2D6 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D51C923668CE60071A0E3 /* AuthenticationServices.framework */; };
+		0392B2992A5BA9F600A3E2D6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D2C7CA1E20D41500E85015 /* WebKit.framework */; };
+		0392B29A2A5BA9F600A3E2D6 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
+		0392B29B2A5BA9F600A3E2D6 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9F29D9900200890B3B /* GoogleAppMeasurement.xcframework */; };
+		0392B29C2A5BA9F600A3E2D6 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92C7CF021193CFB00C65C81 /* iAd.framework */; };
+		0392B29D2A5BA9F600A3E2D6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AA03201F308AB4001C8B51 /* GameKit.framework */; };
+		0392B29E2A5BA9F600A3E2D6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
+		0392B29F2A5BA9F600A3E2D6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
+		0392B2A02A5BA9F600A3E2D6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24966D961D5894C9005BE6EB /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0392B2A12A5BA9F600A3E2D6 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
+		0392B2A22A5BA9F600A3E2D6 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA329D9900200890B3B /* GoogleDataTransport.xcframework */; };
+		0392B2A32A5BA9F600A3E2D6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490083B1D2646CA00331AB0 /* libz.tbd */; };
+		0392B2A42A5BA9F600A3E2D6 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
+		0392B2A52A5BA9F600A3E2D6 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CE86A1CFEF1C700E3C747 /* libc++abi.tbd */; };
+		0392B2A62A5BA9F600A3E2D6 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
+		0392B2A72A5BA9F600A3E2D6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93E1A1498BA009E77FF /* Social.framework */; };
+		0392B2A82A5BA9F600A3E2D6 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9229D9900200890B3B /* GTMSessionFetcher.xcframework */; };
+		0392B2A92A5BA9F600A3E2D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9421A1498C9009E77FF /* AVFoundation.framework */; };
+		0392B2AA2A5BA9F600A3E2D6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244537411C2E9D6D00260D4C /* AddressBook.framework */; };
+		0392B2AB2A5BA9F600A3E2D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9521A149908009E77FF /* QuartzCore.framework */; };
+		0392B2AC2A5BA9F600A3E2D6 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246455591BB8F90F009E785B /* Photos.framework */; };
+		0392B2AD2A5BA9F600A3E2D6 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8B29D9900200890B3B /* FBSDKCoreKit.xcframework */; };
+		0392B2AE2A5BA9F600A3E2D6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246455571BB8F905009E785B /* AssetsLibrary.framework */; };
+		0392B2AF2A5BA9F600A3E2D6 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9929D9900200890B3B /* FirebaseAnalytics.xcframework */; };
+		0392B2B02A5BA9F600A3E2D6 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9581A149924009E77FF /* libsqlite3.0.dylib */; };
+		0392B2B12A5BA9F600A3E2D6 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9B29D9900200890B3B /* FirebaseInstallations.xcframework */; };
+		0392B2B22A5BA9F600A3E2D6 /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA929D9900200890B3B /* GoogleSignIn.xcframework */; };
+		0392B2B32A5BA9F600A3E2D6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9601A149944009E77FF /* libxml2.dylib */; };
+		0392B2B42A5BA9F600A3E2D6 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8C29D9900200890B3B /* FBSDKLoginKit.xcframework */; };
+		0392B2B52A5BA9F600A3E2D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93A1A1498AF009E77FF /* Security.framework */; };
+		0392B2B62A5BA9F600A3E2D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF6E9291A35B45500CFFE2F /* CFNetwork.framework */; };
+		0392B2B72A5BA9F600A3E2D6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95E1A14993E009E77FF /* ImageIO.framework */; };
+		0392B2B82A5BA9F600A3E2D6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95C1A14992F009E77FF /* CoreMedia.framework */; };
+		0392B2B92A5BA9F600A3E2D6 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9729D9900200890B3B /* nanopb.xcframework */; };
+		0392B2BA2A5BA9F600A3E2D6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B95A1A149929009E77FF /* CoreData.framework */; };
+		0392B2BB2A5BA9F600A3E2D6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9541A149913009E77FF /* CoreTelephony.framework */; };
+		0392B2BC2A5BA9F600A3E2D6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9501A1498FC009E77FF /* CoreMotion.framework */; };
+		0392B2BD2A5BA9F600A3E2D6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B94E1A1498F1009E77FF /* MediaPlayer.framework */; };
+		0392B2BE2A5BA9F600A3E2D6 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B94C1A1498EB009E77FF /* EventKitUI.framework */; };
+		0392B2BF2A5BA9F600A3E2D6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EE4812362CF72007D3A93 /* CloudKit.framework */; };
+		0392B2C02A5BA9F600A3E2D6 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B94A1A1498E6009E77FF /* EventKit.framework */; };
+		0392B2C12A5BA9F600A3E2D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9481A1498DF009E77FF /* CoreLocation.framework */; };
+		0392B2C22A5BA9F600A3E2D6 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA229D9900200890B3B /* FirebaseMessaging.xcframework */; };
+		0392B2C32A5BA9F600A3E2D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9461A1498D8009E77FF /* MobileCoreServices.framework */; };
+		0392B2C42A5BA9F600A3E2D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9441A1498CF009E77FF /* AudioToolbox.framework */; };
+		0392B2C52A5BA9F600A3E2D6 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9C29D9900200890B3B /* FBLPromises.xcframework */; };
+		0392B2C62A5BA9F600A3E2D6 /* FirebaseAnalyticsSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9A29D9900200890B3B /* FirebaseAnalyticsSwift.xcframework */; };
+		0392B2C72A5BA9F600A3E2D6 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8D29D9900200890B3B /* FBAEMKit.xcframework */; };
+		0392B2C82A5BA9F600A3E2D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9321A14988C009E77FF /* UIKit.framework */; };
+		0392B2C92A5BA9F600A3E2D6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9341A149895009E77FF /* MessageUI.framework */; };
+		0392B2CA2A5BA9F600A3E2D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9381A1498A5009E77FF /* StoreKit.framework */; };
+		0392B2CB2A5BA9F600A3E2D6 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA029D9900200890B3B /* GoogleUtilities.xcframework */; };
+		0392B2CC2A5BA9F600A3E2D6 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9D29D9900200890B3B /* FirebaseCore.xcframework */; };
+		0392B2CD2A5BA9F600A3E2D6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93C1A1498B5009E77FF /* Accounts.framework */; };
+		0392B2CE2A5BA9F600A3E2D6 /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9E29D9900200890B3B /* FirebaseCoreInternal.xcframework */; };
+		0392B2CF2A5BA9F600A3E2D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
+		0392B2D02A5BA9F600A3E2D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
+		0392B2D12A5BA9F600A3E2D6 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9829D9900200890B3B /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		039AC1E729F91DD700B416D8 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 039AC1D529F91DD700B416D8 /* LoginWithRegViewV2.m */; };
 		039AC1E829F91DD700B416D8 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D629F91DD700B416D8 /* FindPasswordViewV2.h */; };
 		039AC1E929F91DD700B416D8 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 039AC1D729F91DD700B416D8 /* RegisterAccountViewV2.h */; };
@@ -1479,6 +1714,13 @@
 			remoteGlobalIDString = 038612D729388F8900CC9C44;
 			remoteInfo = MWSDK_V3;
 		};
+		0392B2782A5BA9F600A3E2D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03509C8829F91C8C00C840DA;
+			remoteInfo = MWSDK_V6;
+		};
 		039AC20229F9231100B416D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -1517,6 +1759,16 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		038614022938981100CC9C44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B2D22A5BA9F600A3E2D6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -1771,6 +2023,27 @@
 		0387BA80291B8DA5001BACA8 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
+		0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_KR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0392B2522A5BA99900A3E2D6 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
+		0392B2532A5BA99900A3E2D6 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
+		0392B2542A5BA99900A3E2D6 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
+		0392B2552A5BA99900A3E2D6 /* NoticeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewV2.m; sourceTree = "<group>"; };
+		0392B2562A5BA99900A3E2D6 /* BindAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountViewV2.h; sourceTree = "<group>"; };
+		0392B2572A5BA99900A3E2D6 /* TermsViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewV2.h; sourceTree = "<group>"; };
+		0392B2582A5BA99900A3E2D6 /* AccountLoginViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewV2.h; sourceTree = "<group>"; };
+		0392B2592A5BA99900A3E2D6 /* MainHomeViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewV2.m; sourceTree = "<group>"; };
+		0392B25A2A5BA99900A3E2D6 /* BindPhoneViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneViewV2.m; sourceTree = "<group>"; };
+		0392B25B2A5BA99900A3E2D6 /* FindPasswordViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewV2.m; sourceTree = "<group>"; };
+		0392B25C2A5BA99900A3E2D6 /* LoginWithRegViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithRegViewV2.h; sourceTree = "<group>"; };
+		0392B25D2A5BA99900A3E2D6 /* NoticeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewV2.h; sourceTree = "<group>"; };
+		0392B25E2A5BA99900A3E2D6 /* RegisterAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountViewV2.m; sourceTree = "<group>"; };
+		0392B25F2A5BA99900A3E2D6 /* AccountLoginViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLoginViewV2.m; sourceTree = "<group>"; };
+		0392B2602A5BA99900A3E2D6 /* TermsViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewV2.m; sourceTree = "<group>"; };
+		0392B2612A5BA99900A3E2D6 /* BindAccountViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindAccountViewV2.m; sourceTree = "<group>"; };
+		0392B2622A5BA99900A3E2D6 /* BindPhoneViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneViewV2.h; sourceTree = "<group>"; };
+		0392B2632A5BA99900A3E2D6 /* MainHomeViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewV2.h; sourceTree = "<group>"; };
+		0392B2D62A5BA9F600A3E2D6 /* SDK_DEMO_KR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_KR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0392B2D72A5BA9F600A3E2D6 /* SDK_DEMO_KR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_KR-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_KR-Info.plist"; sourceTree = "<absolute>"; };
 		039AC1D529F91DD700B416D8 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		039AC1D629F91DD700B416D8 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
 		039AC1D729F91DD700B416D8 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
@@ -2257,6 +2530,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B24B2A5BA8DC00A3E2D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B2892A5BA9F600A3E2D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392B28A2A5BA9F600A3E2D6 /* MWSDK_V6.framework in Frameworks */,
+				0392B28B2A5BA9F600A3E2D6 /* AppsFlyerLib.framework in Frameworks */,
+				0392B28C2A5BA9F600A3E2D6 /* FirebaseAuth.xcframework in Frameworks */,
+				0392B28D2A5BA9F600A3E2D6 /* SwiftUI.framework in Frameworks */,
+				0392B28E2A5BA9F600A3E2D6 /* AppTrackingTransparency.framework in Frameworks */,
+				0392B28F2A5BA9F600A3E2D6 /* AdServices.framework in Frameworks */,
+				0392B2902A5BA9F600A3E2D6 /* MapKit.framework in Frameworks */,
+				0392B2912A5BA9F600A3E2D6 /* CoreText.framework in Frameworks */,
+				0392B2922A5BA9F600A3E2D6 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				0392B2932A5BA9F600A3E2D6 /* AppAuth.xcframework in Frameworks */,
+				0392B2942A5BA9F600A3E2D6 /* CoreFoundation.framework in Frameworks */,
+				0392B2952A5BA9F600A3E2D6 /* Foundation.framework in Frameworks */,
+				0392B2962A5BA9F600A3E2D6 /* libc++.tbd in Frameworks */,
+				0392B2972A5BA9F600A3E2D6 /* Accelerate.framework in Frameworks */,
+				0392B2982A5BA9F600A3E2D6 /* AuthenticationServices.framework in Frameworks */,
+				0392B2992A5BA9F600A3E2D6 /* WebKit.framework in Frameworks */,
+				0392B29A2A5BA9F600A3E2D6 /* FBSDKShareKit.xcframework in Frameworks */,
+				0392B29B2A5BA9F600A3E2D6 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				0392B29C2A5BA9F600A3E2D6 /* iAd.framework in Frameworks */,
+				0392B29D2A5BA9F600A3E2D6 /* GameKit.framework in Frameworks */,
+				0392B29E2A5BA9F600A3E2D6 /* AdSupport.framework in Frameworks */,
+				0392B29F2A5BA9F600A3E2D6 /* JavaScriptCore.framework in Frameworks */,
+				0392B2A02A5BA9F600A3E2D6 /* ReplayKit.framework in Frameworks */,
+				0392B2A12A5BA9F600A3E2D6 /* LineSDK.framework in Frameworks */,
+				0392B2A22A5BA9F600A3E2D6 /* GoogleDataTransport.xcframework in Frameworks */,
+				0392B2A32A5BA9F600A3E2D6 /* libz.tbd in Frameworks */,
+				0392B2A42A5BA9F600A3E2D6 /* SafariServices.framework in Frameworks */,
+				0392B2A52A5BA9F600A3E2D6 /* libc++abi.tbd in Frameworks */,
+				0392B2A62A5BA9F600A3E2D6 /* GTMAppAuth.xcframework in Frameworks */,
+				0392B2A72A5BA9F600A3E2D6 /* Social.framework in Frameworks */,
+				0392B2A82A5BA9F600A3E2D6 /* GTMSessionFetcher.xcframework in Frameworks */,
+				0392B2A92A5BA9F600A3E2D6 /* AVFoundation.framework in Frameworks */,
+				0392B2AA2A5BA9F600A3E2D6 /* AddressBook.framework in Frameworks */,
+				0392B2AB2A5BA9F600A3E2D6 /* QuartzCore.framework in Frameworks */,
+				0392B2AC2A5BA9F600A3E2D6 /* Photos.framework in Frameworks */,
+				0392B2AD2A5BA9F600A3E2D6 /* FBSDKCoreKit.xcframework in Frameworks */,
+				0392B2AE2A5BA9F600A3E2D6 /* AssetsLibrary.framework in Frameworks */,
+				0392B2AF2A5BA9F600A3E2D6 /* FirebaseAnalytics.xcframework in Frameworks */,
+				0392B2B02A5BA9F600A3E2D6 /* libsqlite3.0.dylib in Frameworks */,
+				0392B2B12A5BA9F600A3E2D6 /* FirebaseInstallations.xcframework in Frameworks */,
+				0392B2B22A5BA9F600A3E2D6 /* GoogleSignIn.xcframework in Frameworks */,
+				0392B2B32A5BA9F600A3E2D6 /* libxml2.dylib in Frameworks */,
+				0392B2B42A5BA9F600A3E2D6 /* FBSDKLoginKit.xcframework in Frameworks */,
+				0392B2B52A5BA9F600A3E2D6 /* Security.framework in Frameworks */,
+				0392B2B62A5BA9F600A3E2D6 /* CFNetwork.framework in Frameworks */,
+				0392B2B72A5BA9F600A3E2D6 /* ImageIO.framework in Frameworks */,
+				0392B2B82A5BA9F600A3E2D6 /* CoreMedia.framework in Frameworks */,
+				0392B2B92A5BA9F600A3E2D6 /* nanopb.xcframework in Frameworks */,
+				0392B2BA2A5BA9F600A3E2D6 /* CoreData.framework in Frameworks */,
+				0392B2BB2A5BA9F600A3E2D6 /* CoreTelephony.framework in Frameworks */,
+				0392B2BC2A5BA9F600A3E2D6 /* CoreMotion.framework in Frameworks */,
+				0392B2BD2A5BA9F600A3E2D6 /* MediaPlayer.framework in Frameworks */,
+				0392B2BE2A5BA9F600A3E2D6 /* EventKitUI.framework in Frameworks */,
+				0392B2BF2A5BA9F600A3E2D6 /* CloudKit.framework in Frameworks */,
+				0392B2C02A5BA9F600A3E2D6 /* EventKit.framework in Frameworks */,
+				0392B2C12A5BA9F600A3E2D6 /* CoreLocation.framework in Frameworks */,
+				0392B2C22A5BA9F600A3E2D6 /* FirebaseMessaging.xcframework in Frameworks */,
+				0392B2C32A5BA9F600A3E2D6 /* MobileCoreServices.framework in Frameworks */,
+				0392B2C42A5BA9F600A3E2D6 /* AudioToolbox.framework in Frameworks */,
+				0392B2C52A5BA9F600A3E2D6 /* FBLPromises.xcframework in Frameworks */,
+				0392B2C62A5BA9F600A3E2D6 /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
+				0392B2C72A5BA9F600A3E2D6 /* FBAEMKit.xcframework in Frameworks */,
+				0392B2C82A5BA9F600A3E2D6 /* UIKit.framework in Frameworks */,
+				0392B2C92A5BA9F600A3E2D6 /* MessageUI.framework in Frameworks */,
+				0392B2CA2A5BA9F600A3E2D6 /* StoreKit.framework in Frameworks */,
+				0392B2CB2A5BA9F600A3E2D6 /* GoogleUtilities.xcframework in Frameworks */,
+				0392B2CC2A5BA9F600A3E2D6 /* FirebaseCore.xcframework in Frameworks */,
+				0392B2CD2A5BA9F600A3E2D6 /* Accounts.framework in Frameworks */,
+				0392B2CE2A5BA9F600A3E2D6 /* FirebaseCoreInternal.xcframework in Frameworks */,
+				0392B2CF2A5BA9F600A3E2D6 /* SystemConfiguration.framework in Frameworks */,
+				0392B2D02A5BA9F600A3E2D6 /* CoreGraphics.framework in Frameworks */,
+				0392B2D12A5BA9F600A3E2D6 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2943,6 +3302,31 @@
 			path = view_v4;
 			sourceTree = "<group>";
 		};
+		0392B2512A5BA99900A3E2D6 /* view_kr */ = {
+			isa = PBXGroup;
+			children = (
+				0392B2522A5BA99900A3E2D6 /* LoginWithRegViewV2.m */,
+				0392B2532A5BA99900A3E2D6 /* FindPasswordViewV2.h */,
+				0392B2542A5BA99900A3E2D6 /* RegisterAccountViewV2.h */,
+				0392B2552A5BA99900A3E2D6 /* NoticeViewV2.m */,
+				0392B2562A5BA99900A3E2D6 /* BindAccountViewV2.h */,
+				0392B2572A5BA99900A3E2D6 /* TermsViewV2.h */,
+				0392B2582A5BA99900A3E2D6 /* AccountLoginViewV2.h */,
+				0392B2592A5BA99900A3E2D6 /* MainHomeViewV2.m */,
+				0392B25A2A5BA99900A3E2D6 /* BindPhoneViewV2.m */,
+				0392B25B2A5BA99900A3E2D6 /* FindPasswordViewV2.m */,
+				0392B25C2A5BA99900A3E2D6 /* LoginWithRegViewV2.h */,
+				0392B25D2A5BA99900A3E2D6 /* NoticeViewV2.h */,
+				0392B25E2A5BA99900A3E2D6 /* RegisterAccountViewV2.m */,
+				0392B25F2A5BA99900A3E2D6 /* AccountLoginViewV2.m */,
+				0392B2602A5BA99900A3E2D6 /* TermsViewV2.m */,
+				0392B2612A5BA99900A3E2D6 /* BindAccountViewV2.m */,
+				0392B2622A5BA99900A3E2D6 /* BindPhoneViewV2.h */,
+				0392B2632A5BA99900A3E2D6 /* MainHomeViewV2.h */,
+			);
+			path = view_kr;
+			sourceTree = "<group>";
+		};
 		039AC1D429F91DD700B416D8 /* view_v6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3380,6 +3764,7 @@
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
 				322CBC1024C589A5000D6B20 /* UIUtils */,
 				322CBC1924C589A5000D6B20 /* view */,
+				0392B2512A5BA99900A3E2D6 /* view_kr */,
 				034682C429B2F44600DD16A1 /* view_v1 */,
 				030FAA0028A0FA7C00709536 /* view_v2 */,
 				038613752938906000CC9C44 /* view_v3 */,
@@ -3493,6 +3878,7 @@
 				039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */,
 				03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */,
 				03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */,
+				0392B2D72A5BA9F600A3E2D6 /* SDK_DEMO_KR-Info.plist */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 0;
@@ -3512,6 +3898,8 @@
 				03CA731729D5699600098979 /* SDK_DEMO_VN.app */,
 				03509C8629F91C8100C840DA /* SDK_DEMO_V6.app */,
 				03509D2529F91C8C00C840DA /* MWSDK_V6.framework */,
+				0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */,
+				0392B2D62A5BA9F600A3E2D6 /* SDK_DEMO_KR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3720,6 +4108,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0392B1B42A5BA8DC00A3E2D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
+				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
+				0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */,
+				0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */,
+				0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */,
+				0392B26F2A5BA99900A3E2D6 /* NoticeViewV2.h in Headers */,
+				0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */,
+				0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */,
+				0392B2652A5BA99900A3E2D6 /* FindPasswordViewV2.h in Headers */,
+				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
+				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
+				0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */,
+				0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */,
+				0392B26A2A5BA99900A3E2D6 /* AccountLoginViewV2.h in Headers */,
+				0392B1C32A5BA8DC00A3E2D6 /* PayData.h in Headers */,
+				0392B1C42A5BA8DC00A3E2D6 /* ViewUtil.h in Headers */,
+				0392B1C52A5BA8DC00A3E2D6 /* LoginData.h in Headers */,
+				0392B26E2A5BA99900A3E2D6 /* LoginWithRegViewV2.h in Headers */,
+				0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */,
+				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
+				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
+				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		039B25EE298B555300045C53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3902,6 +4319,45 @@
 			productReference = 0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0392B1B32A5BA8DC00A3E2D6 /* MWSDK_KR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0392B24D2A5BA8DC00A3E2D6 /* Build configuration list for PBXNativeTarget "MWSDK_KR" */;
+			buildPhases = (
+				0392B1B42A5BA8DC00A3E2D6 /* Headers */,
+				0392B1CB2A5BA8DC00A3E2D6 /* Sources */,
+				0392B24B2A5BA8DC00A3E2D6 /* Frameworks */,
+				0392B24C2A5BA8DC00A3E2D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWSDK_KR;
+			productName = MWSDK;
+			productReference = 0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0392B2762A5BA9F600A3E2D6 /* SDK_DEMO_KR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0392B2D32A5BA9F600A3E2D6 /* Build configuration list for PBXNativeTarget "SDK_DEMO_KR" */;
+			buildPhases = (
+				0392B2792A5BA9F600A3E2D6 /* Sources */,
+				0392B2802A5BA9F600A3E2D6 /* Resources */,
+				0392B2892A5BA9F600A3E2D6 /* Frameworks */,
+				0392B2D22A5BA9F600A3E2D6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0392B2772A5BA9F600A3E2D6 /* PBXTargetDependency */,
+			);
+			name = SDK_DEMO_KR;
+			packageProductDependencies = (
+			);
+			productName = EfunSDK_iOS_KR;
+			productReference = 0392B2D62A5BA9F600A3E2D6 /* SDK_DEMO_KR.app */;
+			productType = "com.apple.product-type.application";
+		};
 		039B25ED298B555300045C53 /* MWSDK_V5 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 039B2687298B555300045C53 /* Build configuration list for PBXNativeTarget "MWSDK_V5" */;
@@ -4077,12 +4533,14 @@
 				039B268B298B557400045C53 /* SDK_DEMO_V5 */,
 				03509C2629F91C8100C840DA /* SDK_DEMO_V6 */,
 				03CA72B829D5699600098979 /* SDK_DEMO_VN */,
+				0392B2762A5BA9F600A3E2D6 /* SDK_DEMO_KR */,
 				037C6EDA2875A97B0041EC34 /* MWSDK_V2 */,
 				038612D729388F8900CC9C44 /* MWSDK_V3 */,
 				0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */,
 				039B25ED298B555300045C53 /* MWSDK_V5 */,
 				03509C8829F91C8C00C840DA /* MWSDK_V6 */,
 				03CA721A29D5698400098979 /* MWSDK_VN */,
+				0392B1B32A5BA8DC00A3E2D6 /* MWSDK_KR */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
 			);
 		};
@@ -4146,6 +4604,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B24C2A5BA8DC00A3E2D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B2802A5BA9F600A3E2D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
+				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
+				0392B2832A5BA9F600A3E2D6 /* com_mwgame_sdkzycs.json in Resources */,
+				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
+				0392B2852A5BA9F600A3E2D6 /* SDKResourcesV6.bundle in Resources */,
+				0392B2862A5BA9F600A3E2D6 /* LineSDKResource.bundle in Resources */,
+				0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */,
+				0392B2882A5BA9F600A3E2D6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4806,6 +5286,153 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0392B1CB2A5BA8DC00A3E2D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392B1CC2A5BA8DC00A3E2D6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0392B1CD2A5BA8DC00A3E2D6 /* ViewController+MASAdditions.m in Sources */,
+				0392B1CE2A5BA8DC00A3E2D6 /* MASCompositeConstraint.m in Sources */,
+				0392B1CF2A5BA8DC00A3E2D6 /* MASConstraintMaker.m in Sources */,
+				0392B1D02A5BA8DC00A3E2D6 /* MASLayoutConstraint.m in Sources */,
+				0392B1D12A5BA8DC00A3E2D6 /* NSArray+MASAdditions.m in Sources */,
+				0392B1D22A5BA8DC00A3E2D6 /* View+MASAdditions.m in Sources */,
+				0392B1D32A5BA8DC00A3E2D6 /* MASConstraint.m in Sources */,
+				0392B1D42A5BA8DC00A3E2D6 /* MASViewConstraint.m in Sources */,
+				0392B1D52A5BA8DC00A3E2D6 /* MASViewAttribute.m in Sources */,
+				0392B1D62A5BA8DC00A3E2D6 /* UIImage+WebP.m in Sources */,
+				0392B1D72A5BA8DC00A3E2D6 /* SDWebImageManager.m in Sources */,
+				0392B1D82A5BA8DC00A3E2D6 /* SDWebImageDecoder.m in Sources */,
+				0392B1D92A5BA8DC00A3E2D6 /* UIImageView+HighlightedWebCache.m in Sources */,
+				0392B1DA2A5BA8DC00A3E2D6 /* BasePopupView.m in Sources */,
+				0392B1DB2A5BA8DC00A3E2D6 /* SDWebImageDownloader.m in Sources */,
+				0392B1DC2A5BA8DC00A3E2D6 /* UIImage+GIF.m in Sources */,
+				0392B1DD2A5BA8DC00A3E2D6 /* UIImage+MultiFormat.m in Sources */,
+				0392B1DE2A5BA8DC00A3E2D6 /* SDWebImageCompat.m in Sources */,
+				0392B1DF2A5BA8DC00A3E2D6 /* SDWebImagePrefetcher.m in Sources */,
+				0392B1E02A5BA8DC00A3E2D6 /* SDImageCache.m in Sources */,
+				0392B1E12A5BA8DC00A3E2D6 /* SDWebImageDownloaderOperation.m in Sources */,
+				0392B1E22A5BA8DC00A3E2D6 /* NSData+ImageContentType.m in Sources */,
+				0392B1E32A5BA8DC00A3E2D6 /* UrlMode.m in Sources */,
+				0392B1E42A5BA8DC00A3E2D6 /* UIImageView+WebCache.m in Sources */,
+				0392B1E52A5BA8DC00A3E2D6 /* UIView+WebCacheOperation.m in Sources */,
+				0392B1E62A5BA8DC00A3E2D6 /* UIButton+WebCache.m in Sources */,
+				0392B1E72A5BA8DC00A3E2D6 /* AdLogger.m in Sources */,
+				0392B1E82A5BA8DC00A3E2D6 /* AdDelegate.m in Sources */,
+				0392B1E92A5BA8DC00A3E2D6 /* CCSDKDATA.m in Sources */,
+				0392B2672A5BA99900A3E2D6 /* NoticeViewV2.m in Sources */,
+				0392B2702A5BA99900A3E2D6 /* RegisterAccountViewV2.m in Sources */,
+				0392B1EC2A5BA8DC00A3E2D6 /* GameUserModel.m in Sources */,
+				0392B1ED2A5BA8DC00A3E2D6 /* MWApplePayManager.m in Sources */,
+				0392B2642A5BA99900A3E2D6 /* LoginWithRegViewV2.m in Sources */,
+				0392B1EF2A5BA8DC00A3E2D6 /* ApplePay.m in Sources */,
+				0392B1F02A5BA8DC00A3E2D6 /* LineDelegate.m in Sources */,
+				0392B1F12A5BA8DC00A3E2D6 /* GIDDelegate.m in Sources */,
+				0392B1F22A5BA8DC00A3E2D6 /* FirebaseDelegate.m in Sources */,
+				0392B1F32A5BA8DC00A3E2D6 /* FBDelegate.m in Sources */,
+				0392B1F42A5BA8DC00A3E2D6 /* HttpServiceEnginePay.m in Sources */,
+				0392B1F52A5BA8DC00A3E2D6 /* AccountModel.m in Sources */,
+				0392B1F62A5BA8DC00A3E2D6 /* LoginResponse.m in Sources */,
+				0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */,
+				0392B1F82A5BA8DC00A3E2D6 /* MyTextFiled.m in Sources */,
+				0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */,
+				0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */,
+				0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */,
+				0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */,
+				0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */,
+				0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */,
+				0392B1FF2A5BA8DC00A3E2D6 /* BJServiceConfigurator.m in Sources */,
+				0392B2002A5BA8DC00A3E2D6 /* SDKRequest.m in Sources */,
+				0392B2012A5BA8DC00A3E2D6 /* HttpServiceEngineAd.m in Sources */,
+				0392B2022A5BA8DC00A3E2D6 /* BaseSDK.m in Sources */,
+				0392B2032A5BA8DC00A3E2D6 /* BaseSDKImpl.m in Sources */,
+				0392B2042A5BA8DC00A3E2D6 /* PayData.m in Sources */,
+				0392B2052A5BA8DC00A3E2D6 /* LoginData.m in Sources */,
+				0392B2062A5BA8DC00A3E2D6 /* MWSDK.m in Sources */,
+				0392B26B2A5BA99900A3E2D6 /* MainHomeViewV2.m in Sources */,
+				0392B2082A5BA8DC00A3E2D6 /* SdkCfUUID.m in Sources */,
+				0392B2092A5BA8DC00A3E2D6 /* GamaSDK+Social.m in Sources */,
+				0392B20A2A5BA8DC00A3E2D6 /* SdkKeychainItemWrapper.m in Sources */,
+				0392B20B2A5BA8DC00A3E2D6 /* SdkPrivateKeychainCfUUID.m in Sources */,
+				0392B20C2A5BA8DC00A3E2D6 /* AlertUtil.m in Sources */,
+				0392B20D2A5BA8DC00A3E2D6 /* SAlertViewDelegate.m in Sources */,
+				0392B20E2A5BA8DC00A3E2D6 /* UIAlertController+Sdk.m in Sources */,
+				0392B20F2A5BA8DC00A3E2D6 /* UIColor+HexColor.m in Sources */,
+				0392B2712A5BA99900A3E2D6 /* AccountLoginViewV2.m in Sources */,
+				0392B2112A5BA8DC00A3E2D6 /* UIColor+HexStringToColorTW.m in Sources */,
+				0392B2122A5BA8DC00A3E2D6 /* UIScreen+Sdk.m in Sources */,
+				0392B2132A5BA8DC00A3E2D6 /* NSString+URLEncoding.m in Sources */,
+				0392B2142A5BA8DC00A3E2D6 /* UIView+BlockGesture.m in Sources */,
+				0392B2152A5BA8DC00A3E2D6 /* NSString+Common.m in Sources */,
+				0392B2162A5BA8DC00A3E2D6 /* SUtil.m in Sources */,
+				0392B2172A5BA8DC00A3E2D6 /* BaseCountTimerView.m in Sources */,
+				0392B2182A5BA8DC00A3E2D6 /* UIUtil.m in Sources */,
+				0392B2192A5BA8DC00A3E2D6 /* ViewUtil.m in Sources */,
+				0392B21A2A5BA8DC00A3E2D6 /* StringUtil.m in Sources */,
+				0392B21B2A5BA8DC00A3E2D6 /* USDefault.m in Sources */,
+				0392B21C2A5BA8DC00A3E2D6 /* NSObject+YYModel.m in Sources */,
+				0392B21D2A5BA8DC00A3E2D6 /* YYClassInfo.m in Sources */,
+				0392B21E2A5BA8DC00A3E2D6 /* AFURLResponseSerialization.m in Sources */,
+				0392B21F2A5BA8DC00A3E2D6 /* AFHTTPSessionManager.m in Sources */,
+				0392B2202A5BA8DC00A3E2D6 /* AFURLSessionManager.m in Sources */,
+				0392B2212A5BA8DC00A3E2D6 /* AFURLRequestSerialization.m in Sources */,
+				0392B2222A5BA8DC00A3E2D6 /* AFNetworkReachabilityManager.m in Sources */,
+				0392B2232A5BA8DC00A3E2D6 /* AFSecurityPolicy.m in Sources */,
+				0392B2242A5BA8DC00A3E2D6 /* BJBaseHTTPEngine.m in Sources */,
+				0392B2252A5BA8DC00A3E2D6 /* UIImage+ResBundle.m in Sources */,
+				0392B2262A5BA8DC00A3E2D6 /* ResReader.m in Sources */,
+				0392B2732A5BA99900A3E2D6 /* BindAccountViewV2.m in Sources */,
+				0392B2282A5BA8DC00A3E2D6 /* SecurityUtil.m in Sources */,
+				0392B2292A5BA8DC00A3E2D6 /* SdkSecurityFunction.m in Sources */,
+				0392B22A2A5BA8DC00A3E2D6 /* PhoneInfoModel.m in Sources */,
+				0392B22B2A5BA8DC00A3E2D6 /* SAppleLogin.m in Sources */,
+				0392B22C2A5BA8DC00A3E2D6 /* TouchEventInterruptView.m in Sources */,
+				0392B26C2A5BA99900A3E2D6 /* BindPhoneViewV2.m in Sources */,
+				0392B22E2A5BA8DC00A3E2D6 /* MWWebViewController.m in Sources */,
+				0392B2722A5BA99900A3E2D6 /* TermsViewV2.m in Sources */,
+				0392B2302A5BA8DC00A3E2D6 /* SdkUtil.m in Sources */,
+				0392B2312A5BA8DC00A3E2D6 /* ConfigCoreUtil.m in Sources */,
+				0392B2322A5BA8DC00A3E2D6 /* LoginHelper.m in Sources */,
+				0392B2332A5BA8DC00A3E2D6 /* DimeUtil.m in Sources */,
+				0392B2342A5BA8DC00A3E2D6 /* LoginButtonData.m in Sources */,
+				0392B2352A5BA8DC00A3E2D6 /* SDKLoginViewController.m in Sources */,
+				0392B2362A5BA8DC00A3E2D6 /* LoginButton.m in Sources */,
+				0392B2372A5BA8DC00A3E2D6 /* AccountLoginView.m in Sources */,
+				0392B2382A5BA8DC00A3E2D6 /* BindAccountView.m in Sources */,
+				0392B2392A5BA8DC00A3E2D6 /* ChangePasswordView.m in Sources */,
+				0392B23A2A5BA8DC00A3E2D6 /* FindPasswordView.m in Sources */,
+				0392B23B2A5BA8DC00A3E2D6 /* LoginWithRegView.m in Sources */,
+				0392B23C2A5BA8DC00A3E2D6 /* MainHomeView.m in Sources */,
+				0392B23D2A5BA8DC00A3E2D6 /* RegisterAccountView.m in Sources */,
+				0392B23E2A5BA8DC00A3E2D6 /* SDKBaseView.m in Sources */,
+				0392B23F2A5BA8DC00A3E2D6 /* SelectBindTypeView.m in Sources */,
+				0392B2402A5BA8DC00A3E2D6 /* TermsView.m in Sources */,
+				0392B2412A5BA8DC00A3E2D6 /* WelcomeBackView.m in Sources */,
+				0392B2422A5BA8DC00A3E2D6 /* AccountListViewCell.m in Sources */,
+				0392B2432A5BA8DC00A3E2D6 /* NSString+Local.m in Sources */,
+				0392B2442A5BA8DC00A3E2D6 /* LoginTitleView.m in Sources */,
+				0392B2452A5BA8DC00A3E2D6 /* PhoneView.m in Sources */,
+				0392B2462A5BA8DC00A3E2D6 /* SDKIconTitleButton.m in Sources */,
+				0392B2472A5BA8DC00A3E2D6 /* SDKTextFiledView.m in Sources */,
+				0392B2482A5BA8DC00A3E2D6 /* LoginTypeButton.m in Sources */,
+				0392B2492A5BA8DC00A3E2D6 /* AccountListView.m in Sources */,
+				0392B26D2A5BA99900A3E2D6 /* FindPasswordViewV2.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0392B2792A5BA9F600A3E2D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392B27A2A5BA9F600A3E2D6 /* AppDelegate.m in Sources */,
+				0392B27B2A5BA9F600A3E2D6 /* File.swift in Sources */,
+				0392B27C2A5BA9F600A3E2D6 /* UserModel.m in Sources */,
+				0392B27D2A5BA9F600A3E2D6 /* ViewController.m in Sources */,
+				0392B27E2A5BA9F600A3E2D6 /* IAP_ViewController.m in Sources */,
+				0392B27F2A5BA9F600A3E2D6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		039B2605298B555300045C53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5153,6 +5780,11 @@
 			isa = PBXTargetDependency;
 			target = 038612D729388F8900CC9C44 /* MWSDK_V3 */;
 			targetProxy = 038613A12938981100CC9C44 /* PBXContainerItemProxy */;
+		};
+		0392B2772A5BA9F600A3E2D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03509C8829F91C8C00C840DA /* MWSDK_V6 */;
+			targetProxy = 0392B2782A5BA9F600A3E2D6 /* PBXContainerItemProxy */;
 		};
 		039AC20329F9231100B416D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6012,6 +6644,277 @@
 				VALID_ARCHS = "arm64  x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0392B24E2A5BA8DC00A3E2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0392B24F2A5BA8DC00A3E2D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK/**",
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Gama. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0392B2D42A5BA9F600A3E2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = A99DKAL476;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "SDK_DEMO_KR-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwgame.sdkzycs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
+				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.mwgame.sdkzycs_dev_0307_1;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 arm64e x86_64 ";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-objc-method-access",
+					"-Wno-deprecated-declarations",
+				);
+			};
+			name = Debug;
+		};
+		0392B2D52A5BA9F600A3E2D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = A99DKAL476;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8P9VL9B3DQ;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
+					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "SDK_DEMO_KR-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoou.gwsg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
+				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dis_gwsg_0206;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 arm64e x86_64 ";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-objc-method-access",
+					"-Wno-deprecated-declarations",
+				);
 			};
 			name = Release;
 		};
@@ -6967,6 +7870,24 @@
 			buildConfigurations = (
 				0387BA6C291B8C9E001BACA8 /* Debug */,
 				0387BA6D291B8C9E001BACA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0392B24D2A5BA8DC00A3E2D6 /* Build configuration list for PBXNativeTarget "MWSDK_KR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0392B24E2A5BA8DC00A3E2D6 /* Debug */,
+				0392B24F2A5BA8DC00A3E2D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0392B2D32A5BA9F600A3E2D6 /* Build configuration list for PBXNativeTarget "SDK_DEMO_KR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0392B2D42A5BA9F600A3E2D6 /* Debug */,
+				0392B2D52A5BA9F600A3E2D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
