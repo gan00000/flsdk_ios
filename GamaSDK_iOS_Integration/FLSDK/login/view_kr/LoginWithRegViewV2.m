@@ -308,7 +308,7 @@
 {
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(14);
+    deleteView.layer.cornerRadius = VW(4);
     
     [self addSubview:deleteView];
     
@@ -322,18 +322,18 @@
     UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
     [deleteView addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(20));
         make.top.mas_equalTo(deleteView).mas_offset(VW(6));
         make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
         make.centerY.equalTo(deleteView);
         make.width.height.mas_equalTo(VW(15));
     }];
     
-    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
+    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF0000]];
     [deleteView addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-20));
         make.centerY.equalTo(deleteView);
        
     }];
