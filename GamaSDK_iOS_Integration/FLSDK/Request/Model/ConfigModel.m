@@ -152,7 +152,7 @@ switch (L_lowth) {
         self.visitorLogin = YES;
         self.fbLogin = YES;
         self.googleLogin = NO;
-        self.lineLogin = YES;
+        self.lineLogin = NO;
 
 		//====insert my code start===  2023-05-30 11:20:43
 		{
