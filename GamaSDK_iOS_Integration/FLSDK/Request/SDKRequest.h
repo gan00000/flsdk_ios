@@ -13,6 +13,7 @@
 #import "SdkHeader.h"
 #import "LoginResponse.h"
 #import "ConfigResponse.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

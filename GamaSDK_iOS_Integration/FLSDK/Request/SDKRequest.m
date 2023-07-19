@@ -387,7 +387,7 @@
         wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
-//        wwwww_tag_wwwww_spy_advertiser     :   GetConfigString(wwwww_tag_wwwww_spy_advertiser)? :@"",
+        wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
         
     };
     
