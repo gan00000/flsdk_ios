@@ -3,7 +3,7 @@
 
 #import "OfficeacityParticipantan.h"
 #import "ActurnessKnowledgeesque.h"
-
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 @implementation OfficeacityParticipantan
 
@@ -2030,6 +2030,7 @@ if(U_aristary * 717 * 715 / 745 / 894 <= 29284){
         wwwww_tag_wwwww_uniqueId         :     [[CenturyiaGraphic getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
+        wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
         
     };
     
