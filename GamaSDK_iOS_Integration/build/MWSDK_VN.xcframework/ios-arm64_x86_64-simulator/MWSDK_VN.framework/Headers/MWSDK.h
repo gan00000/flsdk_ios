@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      @"1.0.9"
+#define FL_SDK_VERSION      @"1.1.2"
 
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
 #define AD_EVENT_LOGIN_SUCCESS  wwwww_tag_wwwww_LOGIN_SUCCESS
@@ -55,10 +55,11 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 @property (nonatomic, assign) CGFloat tradeonFesspossibleeous;//===insert my property===
 
-
+@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
 
 + (instancetype)share;
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url

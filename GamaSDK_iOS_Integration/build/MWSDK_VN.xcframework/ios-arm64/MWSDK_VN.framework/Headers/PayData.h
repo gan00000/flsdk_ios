@@ -29,7 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *clinmostFuscty;//===insert my property===
 
-@property (nonatomic, assign) CGFloat amount; 
+@property (nonatomic, assign) CGFloat amount;
+
+@property (nonatomic, copy) NSString *timestamp;//服务端发货时间
 
 @end
 

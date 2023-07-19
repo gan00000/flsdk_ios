@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/MWSDK.h</key>
 		<data>
-		XyIJzMgscZZVu4be4vmhzK+dFLY=
+		CHZLaLxlwPj7/bvbHBeHI2M76oI=
 		</data>
 		<key>Headers/MWStringHeaders.h</key>
 		<data>
-		ge4dOFXjdksaOBV5No2qdpGCo/o=
+		fO4ALiHF4OPSBc/iqPmjt+V/a30=
 		</data>
 		<key>Headers/PayData.h</key>
 		<data>
-		mJcOqEX0+ktDQvQfa3th+eW9krs=
+		qz8SJey6AzT+oo+/H+DHBGP7FPc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -42,33 +42,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XyIJzMgscZZVu4be4vmhzK+dFLY=
+			CHZLaLxlwPj7/bvbHBeHI2M76oI=
 			</data>
 			<key>hash2</key>
 			<data>
-			KjEis1jJ9fyX/SPsUTzaB4m/IJNWgw80LGCUETVl2z8=
+			cbzjvZLWFJh/eTNvyXCxXH8vNtVWiDeltQpewQF4dSE=
 			</data>
 		</dict>
 		<key>Headers/MWStringHeaders.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ge4dOFXjdksaOBV5No2qdpGCo/o=
+			fO4ALiHF4OPSBc/iqPmjt+V/a30=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yp1KINBbq8YWxitAkM58tV/hvCrmjr05A9zx00Z4SWc=
+			4BRC9/mBmyeCqFgC2QOXmk/MXSvKvxDYnRw4CfucGGM=
 			</data>
 		</dict>
 		<key>Headers/PayData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJcOqEX0+ktDQvQfa3th+eW9krs=
+			qz8SJey6AzT+oo+/H+DHBGP7FPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			HHzafIrSHXrBW2KQ852vfen+Y4uXjRPPDbxRQCzOy18=
+			DXuuhUAQP+qCe3cHqfjN5k34sH+YELEVma+B0tGQkU4=
 			</data>
 		</dict>
 	</dict>

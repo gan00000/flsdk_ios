@@ -9,6 +9,7 @@
 #ifndef Headers_h
 #define Headers_h
 
+#define wwwww_tag_wwwww_serverTimestamp        @"serverTimestamp"  //@"serverTimestamp"
 #define wwwww_tag_wwwww_install        @"install"  //@"install"
 #define wwwww_tag_wwwww_userId        @"userId"  //@"userId"
 #define wwwww_tag_wwwww_time        @"time"  //@"time"
@@ -104,7 +105,7 @@
 #define wwwww_tag_wwwww_osLanguage        @"osLanguage"  //@"osLanguage"
 #define wwwww_tag_wwwww_loginTimestamp        @"loginTimestamp"  //@"loginTimestamp"
 #define wwwww_tag_wwwww_accessToken        @"accessToken"  //@"accessToken"
-#define wwwww_tag_wwwww_spy_advertiser        @"spy_advertiser"  //@"spy_advertiser"
+#define wwwww_tag_wwwww_appsflyerId        @"appsflyerId"  //@"appsflyerId"
 #define wwwww_tag_wwwww_loginAccessToken        @"loginAccessToken"  //@"loginAccessToken"
 #define wwwww_tag_wwwww_serverCode        @"serverCode"  //@"serverCode"
 #define wwwww_tag_wwwww_serverName        @"serverName"  //@"serverName"
@@ -415,5 +416,6 @@
 #define wwwww_tag_wwwww__CC_FF9944      @"#FF9944"  //@"#FF9944"
 
 #define wwwww_tag_wwwww_Upgrade_Account      @"Upgrade_Account"  //@"Upgrade_Account"
+#define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 
 #endif /* Headers_h */
