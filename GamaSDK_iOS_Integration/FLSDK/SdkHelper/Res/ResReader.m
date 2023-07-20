@@ -10,8 +10,8 @@
 #import "MWSDK.h"
 
 @interface ResReader ()
-@property (nonatomic, copy) NSString *m_stringsName;
-@property (nonatomic, strong) NSBundle *m_stringsBundle;
+//@property (nonatomic, copy) NSString *m_stringsName;
+//@property (nonatomic, strong) NSBundle *m_stringsBundle;
 @end
 
 @implementation ResReader
@@ -188,7 +188,8 @@ static dispatch_once_t onceToken;
         NSString *ms = [NSString stringWithFormat:@"%@",mValue];
         return ms;
     }
-    return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
+    return key;
+//    return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
 }
 
 
@@ -365,41 +366,41 @@ static dispatch_once_t onceToken;
 #pragma mark - 初始化 Bundle
 - (void)setBundleInfo_MMMethodMMM {
 
-    NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
-    
-    if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
-        
-        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
-            
-            languageStr = @"zh-Hans";
-            
-        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-            languageStr = @"zh-Hant";
-        }else if ([preferredLang hasPrefix:@"en"]){
-            languageStr = @"en";
-        }else if ([preferredLang hasPrefix:@"vi"]){
-            languageStr = @"vi";
-        }else if ([preferredLang hasPrefix:@"ko"]){
-            languageStr = @"ko";
-        }
-    }
-    
-    self.m_stringsBundle = [NSBundle mainBundle];
-    self.m_stringsName = @"Localizable";
-
-    NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
-    if (sdkBundle) {
-
-        self.m_stringsBundle = sdkBundle;
-        
-        NSURL *lprojBundleURL = [sdkBundle URLForResource:languageStr withExtension:@"lproj"];
-
-        if (lprojBundleURL) {
-            self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
-            //self.m_stringsName = @"Localizable";
-        }
-    }
+//    NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
+//
+//    if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
+//
+//        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
+//        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
+//
+//            languageStr = @"zh-Hans";
+//
+//        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+//            languageStr = @"zh-Hant";
+//        }else if ([preferredLang hasPrefix:@"en"]){
+//            languageStr = @"en";
+//        }else if ([preferredLang hasPrefix:@"vi"]){
+//            languageStr = @"vi";
+//        }else if ([preferredLang hasPrefix:@"ko"]){
+//            languageStr = @"ko";
+//        }
+//    }
+//
+//    self.m_stringsBundle = [NSBundle mainBundle];
+//    self.m_stringsName = @"Localizable";
+//
+//    NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
+//    if (sdkBundle) {
+//
+//        self.m_stringsBundle = sdkBundle;
+//
+//        NSURL *lprojBundleURL = [sdkBundle URLForResource:languageStr withExtension:@"lproj"];
+//
+//        if (lprojBundleURL) {
+//            self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
+//            //self.m_stringsName = @"Localizable";
+//        }
+//    }
 }
 
 
