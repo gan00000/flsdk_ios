@@ -226,7 +226,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 打印配置文件加密内容
 - (void)logSdkResConfig_MMMethodMMM {
     
-    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"vi", @"areaInfo"];
+    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"vi",@"ko", @"areaInfo"];
     for (NSString *languageStr in languageArr) {
         
         NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
@@ -280,6 +280,8 @@ static dispatch_once_t onceToken;
                 languageStr = @"en";
             }else if ([preferredLang hasPrefix:@"vi"]){
                 languageStr = @"vi";
+            }else if ([preferredLang hasPrefix:@"ko"]){
+                languageStr = @"ko";
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
@@ -378,6 +380,8 @@ static dispatch_once_t onceToken;
             languageStr = @"en";
         }else if ([preferredLang hasPrefix:@"vi"]){
             languageStr = @"vi";
+        }else if ([preferredLang hasPrefix:@"ko"]){
+            languageStr = @"ko";
         }
     }
     
@@ -439,6 +443,8 @@ static dispatch_once_t onceToken;
             
         }else if ([preferredLang hasPrefix:@"vi"]){
             languageStr = @"vi_VN";
+        }else if ([preferredLang hasPrefix:@"ko"]){
+            languageStr = @"ko_KR";
         }
     }
     if ([StringUtil isNotEmpty_MMMethodMMM:languageStr]) {

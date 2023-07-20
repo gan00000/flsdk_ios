@@ -123,7 +123,7 @@
 "text_has_bind_tips_mw"     :  "Member Account",
 "text_account_bind_success2"  :  "Upgrade member account successfully",
 "text_account_not_login"  :  "You do not have an account, please login first！",
-"text_age_is14"  :  "你是否已满14周岁",
-"text_age_not14_logout"  :  "注：如果您未满14周岁，请尽快退出，该应用不对14周岁以下用户开放",
-"text_age_already_14"  :  "已满14周岁"
+"text_age_is14"  :  "Are you over 14 years old",
+"text_age_not14_logout"  :  "Note: If you are under the age of 14, please exit as soon as possible, this application is not open to users under the age of 14",
+"text_age_already_14"  :  "over 14 years old"
 }

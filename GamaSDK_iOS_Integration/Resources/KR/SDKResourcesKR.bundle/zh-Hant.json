@@ -123,7 +123,7 @@
 "text_has_bind_tips_mw"     :   "會員帳號",
 "text_account_bind_success2"     :   "升級會員帳號成功",
 "text_account_not_login"  :  "當前沒有帳號，請先登入",
-"text_age_is14"  :  "你是否已满14周岁",
-"text_age_not14_logout"  :  "注：如果您未满14周岁，请尽快退出，该应用不对14周岁以下用户开放",
-"text_age_already_14"  :  "已满14周岁"
+"text_age_is14"  :  "你是否已滿14周歲",
+"text_age_not14_logout"  :  "注：如果您未滿14周歲，請盡快退出，該應用不對14周歲以下用戶開放",
+"text_age_already_14"  :  "已滿14周歲"
 }
