@@ -2,7 +2,7 @@
 
 #import "TermDiseaseid.h"
 #import "PausaciousTrichoice.h"
-
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 @implementation TermDiseaseid
 
@@ -1760,6 +1760,7 @@
             wwwww_tag_wwwww_uniqueId         :     [[PeopleitionStudentosity getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
             
             wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
+            wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
             
         };
         
