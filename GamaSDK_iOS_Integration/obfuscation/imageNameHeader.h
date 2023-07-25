@@ -84,6 +84,7 @@
 #define mw_arr_left    @"capnessteacherise"
 #define mw_arr_right    @"successfulletsteareous"
 #define mw_logo         @"mw_logo"
+#define mw_naver_icon    @"icon_naver"
 
 #elif SDK_V4
 
@@ -122,6 +123,7 @@
 #define mw_arr_left    @"mmplaygame_arr_left"
 #define mw_arr_right    @"mmplaygame_arr_right"
 #define mw_logo         @"mmplaygame_logo"
+#define mw_naver_icon    @"icon_naver"
 
 #elif SDK_V5
 
@@ -160,6 +162,7 @@
 #define mw_arr_left    @"wrongain_sendlike_img"
 #define mw_arr_right    @"patternaster_cruraceous_img"
 #define mw_logo         @"patternaster_haha_img"
+#define mw_naver_icon    @"icon_naver"
 
 #elif SDK_VN
 
@@ -200,6 +203,7 @@
 #define mw_logo         @"patternaster_haha_img"
 #define sdk_bg_view     @"sdk_bg_view"
 #define sdk_bg_page         @"sdk_bg_page"
+#define mw_naver_icon    @"icon_naver"
 
 #elif SDK_V6
 
@@ -238,6 +242,7 @@
 #define mw_arr_left    @"wrongain_sendlike_img"
 #define mw_arr_right    @"patternaster_cruraceous_img"
 #define mw_logo         @"patternaster_haha_img"
+#define mw_naver_icon    @"icon_naver"
 
 #elif SDK_KR
 
