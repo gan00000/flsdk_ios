@@ -66,6 +66,13 @@
 		03315B99291BA16000A92FBE /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03315B97291BA16000A92FBE /* ViewUtil.m */; };
 		03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 03315B98291BA16000A92FBE /* ViewUtil.h */; };
 		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
+		03349EC92A700E42004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECA2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECB2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECC2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECD2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECE2A700E4A004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */; };
 		033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */; };
 		033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */; };
@@ -117,7 +124,6 @@
 		03509C3529F91C8100C840DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
 		03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03509C3829F91C8100C840DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
 		03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03509C3E29F91C8100C840DA /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -973,7 +979,6 @@
 		0392B2842A5BA9F600A3E2D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
 		0392B2862A5BA9F600A3E2D6 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
-		0392B28B2A5BA9F600A3E2D6 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		0392B28C2A5BA9F600A3E2D6 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
 		0392B28D2A5BA9F600A3E2D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0392B28E2A5BA9F600A3E2D6 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -1259,9 +1264,6 @@
 		039B26E5298B557400045C53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		039B26E6298B557400045C53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
 		039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		039E6EAC29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
-		039E6EAD29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
-		039E6EAE29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6EB029D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
 		039E6EB129D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
 		039E6EB229D9900200890B3B /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */; };
@@ -1388,9 +1390,7 @@
 		039E6F2B29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2C29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F3329D996A200890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3429D996C100890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6F3629D996CC00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3729D996E000890B3B /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8829D9900200890B3B /* AppsFlyerLib.framework */; };
 		039E6F3829D996E400890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		039E6F3929D996F900890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
@@ -1902,6 +1902,7 @@
 		03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV4.bundle; sourceTree = "<group>"; };
 		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
+		03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppsFlyerLib.xcframework; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
@@ -2084,7 +2085,6 @@
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
-		039E6E8829D9900200890B3B /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 		039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		039E6E8B29D9900200890B3B /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
 		039E6E8C29D9900200890B3B /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
@@ -2371,7 +2371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				039AC20429F9233900B416D8 /* MWSDK_V6.framework in Frameworks */,
-				03509C3A29F91C8100C840DA /* AppsFlyerLib.framework in Frameworks */,
 				03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */,
 				03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */,
 				03509C3E29F91C8100C840DA /* AppTrackingTransparency.framework in Frameworks */,
@@ -2414,6 +2413,7 @@
 				03509C6329F91C8100C840DA /* libxml2.dylib in Frameworks */,
 				03509C6429F91C8100C840DA /* FBSDKLoginKit.xcframework in Frameworks */,
 				03509C6529F91C8100C840DA /* Security.framework in Frameworks */,
+				03349ECD2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				03509C6629F91C8100C840DA /* CFNetwork.framework in Frameworks */,
 				03509C6729F91C8100C840DA /* ImageIO.framework in Frameworks */,
 				03509C6829F91C8100C840DA /* CoreMedia.framework in Frameworks */,
@@ -2498,6 +2498,7 @@
 				038613DB2938981100CC9C44 /* AddressBook.framework in Frameworks */,
 				039E6EF229D9900300890B3B /* FirebaseInstallations.xcframework in Frameworks */,
 				038613DC2938981100CC9C44 /* QuartzCore.framework in Frameworks */,
+				03349ECA2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				038613DF2938981100CC9C44 /* Photos.framework in Frameworks */,
 				038613E02938981100CC9C44 /* AssetsLibrary.framework in Frameworks */,
 				038613E32938981100CC9C44 /* libsqlite3.0.dylib in Frameworks */,
@@ -2508,7 +2509,6 @@
 				038613E62938981100CC9C44 /* CFNetwork.framework in Frameworks */,
 				038613E92938981100CC9C44 /* ImageIO.framework in Frameworks */,
 				038613EA2938981100CC9C44 /* CoreMedia.framework in Frameworks */,
-				039E6EAC29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */,
 				038613EB2938981100CC9C44 /* CoreData.framework in Frameworks */,
 				038613EC2938981100CC9C44 /* CoreTelephony.framework in Frameworks */,
 				039E6F2429D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */,
@@ -2564,13 +2564,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0392B2D82A5BAAC300A3E2D6 /* MWSDK_KR.framework in Frameworks */,
-				0392B28B2A5BA9F600A3E2D6 /* AppsFlyerLib.framework in Frameworks */,
 				0392B28C2A5BA9F600A3E2D6 /* FirebaseAuth.xcframework in Frameworks */,
 				0392B28D2A5BA9F600A3E2D6 /* SwiftUI.framework in Frameworks */,
 				0392B28E2A5BA9F600A3E2D6 /* AppTrackingTransparency.framework in Frameworks */,
 				0392B28F2A5BA9F600A3E2D6 /* AdServices.framework in Frameworks */,
 				0392B2902A5BA9F600A3E2D6 /* MapKit.framework in Frameworks */,
 				0392B2912A5BA9F600A3E2D6 /* CoreText.framework in Frameworks */,
+				03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				0392B2922A5BA9F600A3E2D6 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				0392B2932A5BA9F600A3E2D6 /* AppAuth.xcframework in Frameworks */,
 				0392B2942A5BA9F600A3E2D6 /* CoreFoundation.framework in Frameworks */,
@@ -2650,7 +2650,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039E6EAE29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6ECC29D9900300890B3B /* FirebaseAuth.xcframework in Frameworks */,
 				03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */,
 				0381EC7B298B5703006D6100 /* MWSDK_V5.framework in Frameworks */,
@@ -2694,6 +2693,7 @@
 				039B26C9298B557400045C53 /* libxml2.dylib in Frameworks */,
 				039E6EBD29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				039B26CA298B557400045C53 /* Security.framework in Frameworks */,
+				03349ECC2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				039B26CB298B557400045C53 /* CFNetwork.framework in Frameworks */,
 				039B26CE298B557400045C53 /* ImageIO.framework in Frameworks */,
 				039B26CF298B557400045C53 /* CoreMedia.framework in Frameworks */,
@@ -2777,9 +2777,9 @@
 				039E6EF529D9900300890B3B /* FirebaseInstallations.xcframework in Frameworks */,
 				039E6F2729D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */,
 				03CA72F129D5699600098979 /* libxml2.dylib in Frameworks */,
-				039E6F3429D996C100890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6EBE29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				03CA72F229D5699600098979 /* Security.framework in Frameworks */,
+				03349ECE2A700E4A004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				03CA72F329D5699600098979 /* CFNetwork.framework in Frameworks */,
 				03CA72F529D5699600098979 /* ImageIO.framework in Frameworks */,
 				03CA72F829D5699600098979 /* CoreMedia.framework in Frameworks */,
@@ -2815,7 +2815,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039E6EAD29D9900200890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6ECB29D9900300890B3B /* FirebaseAuth.xcframework in Frameworks */,
 				03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */,
 				032CB5662940BCFE0013185B /* MWSDK_V4.framework in Frameworks */,
@@ -2859,6 +2858,7 @@
 				03F542F12940BC5D00F75F51 /* libxml2.dylib in Frameworks */,
 				039E6EBC29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				03F542F22940BC5D00F75F51 /* Security.framework in Frameworks */,
+				03349ECB2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				03F542F32940BC5D00F75F51 /* CFNetwork.framework in Frameworks */,
 				03F542F62940BC5D00F75F51 /* ImageIO.framework in Frameworks */,
 				03F542F72940BC5D00F75F51 /* CoreMedia.framework in Frameworks */,
@@ -2935,9 +2935,9 @@
 				039E6EF129D9900300890B3B /* FirebaseInstallations.xcframework in Frameworks */,
 				039E6F2329D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */,
 				CEE6B9611A149944009E77FF /* libxml2.dylib in Frameworks */,
-				039E6F3729D996E000890B3B /* AppsFlyerLib.framework in Frameworks */,
 				039E6EBA29D9900200890B3B /* FBSDKLoginKit.xcframework in Frameworks */,
 				CE4F116A1A6797BA00780524 /* Security.framework in Frameworks */,
+				03349EC92A700E42004ECF5E /* AppsFlyerLib.xcframework in Frameworks */,
 				CEF6E92A1A35B45500CFFE2F /* CFNetwork.framework in Frameworks */,
 				CEE6B95F1A14993E009E77FF /* ImageIO.framework in Frameworks */,
 				CEE6B95D1A14992F009E77FF /* CoreMedia.framework in Frameworks */,
@@ -3116,6 +3116,14 @@
 				0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */,
 			);
 			path = LineSDK;
+			sourceTree = "<group>";
+		};
+		03349EC72A700E42004ECF5E /* AF-v6.12.1 */ = {
+			isa = PBXGroup;
+			children = (
+				03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */,
+			);
+			path = "AF-v6.12.1";
 			sourceTree = "<group>";
 		};
 		033B32CE29D56AEE00AE9F96 /* view_vn */ = {
@@ -3393,14 +3401,6 @@
 				039AC1FD29F91E3600B416D8 /* SDKResourcesV6.bundle */,
 			);
 			path = V6;
-			sourceTree = "<group>";
-		};
-		039E6E8729D9900200890B3B /* AF-v6.7.0 */ = {
-			isa = PBXGroup;
-			children = (
-				039E6E8829D9900200890B3B /* AppsFlyerLib.framework */,
-			);
-			path = "AF-v6.7.0";
 			sourceTree = "<group>";
 		};
 		039E6E8929D9900200890B3B /* Facebook-v16.1.1 */ = {
@@ -3880,8 +3880,8 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
+				03349EC72A700E42004ECF5E /* AF-v6.12.1 */,
 				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
-				039E6E8729D9900200890B3B /* AF-v6.7.0 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
 				0332F55928C5B44C00B7A99F /* LineSDK */,
@@ -6865,7 +6865,6 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
