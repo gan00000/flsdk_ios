@@ -517,6 +517,16 @@
             [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
         }
             break;
+            
+        case naverLoginActTag:
+        {
+            if (![self checkAgreeTerm_MMMethodMMM]) {
+                return;
+            }
+            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        }
+            break;
+            
         case kAgreeTermsCheckBoxBtnTag:
         {
             if (checkBoxTermsBtn.isSelected) {

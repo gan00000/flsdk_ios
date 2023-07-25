@@ -314,7 +314,7 @@
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.bottom.mas_equalTo(self.mas_bottom);
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-20));
         make.centerX.equalTo(self);
 //        make.height.mas_equalTo(VH(28));
     }];

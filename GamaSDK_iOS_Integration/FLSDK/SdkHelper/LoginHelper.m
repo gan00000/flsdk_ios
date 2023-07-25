@@ -88,7 +88,7 @@
         @try {
             otherParamsDic = @{
                 wwwww_tag_wwwww_fbOauthToken        :fbIdToken,
-                
+                wwwww_tag_wwwww_thirdAccessToken        :fbIdToken,
             };
             
         } @catch (NSException *exception) {
@@ -147,7 +147,7 @@
             otherParamsDic = @{
                 wwwww_tag_wwwww_googleIdToken        :idToken,
                 wwwww_tag_wwwww_googleClientId       :kClientID,
-                
+                wwwww_tag_wwwww_thirdAccessToken        :idToken,
             };
             
         } @catch (NSException *exception) {
@@ -184,6 +184,7 @@
         @try {
             otherParamsDic = @{
                 wwwww_tag_wwwww_lineAccessToken        :accessToken,
+                wwwww_tag_wwwww_thirdAccessToken        :accessToken,
                 
             };
             
@@ -213,6 +214,29 @@
     
 #ifdef SDK_KR
     [[NaverDelegate share] startLoginWithKey_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_key") consumerSecret_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_secret") appName_MMMethodMMM:[SUtil getDisplayName_MMMethodMMM] callback_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        
+        
+        NSDictionary *otherParamsDic = nil;
+        @try {
+            otherParamsDic = @{
+                wwwww_tag_wwwww_thirdAccessToken        :accessToken,
+            };
+            
+        } @catch (NSException *exception) {
+            
+        }
+        
+        [SDKRequest thirdLoginOrReg_MMMethodMMM:userID andThirdPlate_MMMethodMMM:LOGIN_TYPE_NAVER addOtherParams_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
+            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_login_success)];
+            if (delegate) {
+                [delegate handleLoginOrRegSuccess_MMMethodMMM:responseData thirdPlate_MMMethodMMM:LOGIN_TYPE_NAVER];
+            }
+            
+        } errorBlock_MMMethodMMM:^(BJError *error) {
+            if (error && error.message) {
+                [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
+            }
+        }];
         
     }];
 #endif

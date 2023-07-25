@@ -200,6 +200,7 @@
 #define wwwww_tag_wwwww_googleIdToken        @"googleIdToken"  //@"googleIdToken"
 #define wwwww_tag_wwwww_googleClientId        @"googleClientId"  //@"googleClientId"
 #define wwwww_tag_wwwww_lineAccessToken        @"lineAccessToken"  //@"lineAccessToken"
+#define wwwww_tag_wwwww_thirdAccessToken        @"thirdAccessToken"  //@"thirdAccessToken"
 #define wwwww_tag_wwwww_text_account_bind_success        @"text_account_bind_success"  //@"text_account_bind_success"
 #define wwwww_tag_wwwww_close        @"close"  //@"close"
 #define wwwww_tag_wwwww_estimatedProgress        @"estimatedProgress"  //@"estimatedProgress"
