@@ -41,6 +41,7 @@
     mNaverCallBack = callback;
     if(!_thirdPartyLoginConn){
         _thirdPartyLoginConn = [NaverThirdPartyLoginConnection getSharedInstance];
+//        [_thirdPartyLoginConn setIsNaverAppOauthEnable:YES];
         _thirdPartyLoginConn.delegate = self;
     }
     SDK_LOG(@"requestThirdpartyLogin");
@@ -56,7 +57,7 @@
     [tlogin setConsumerKey:consumerKey];
     [tlogin setConsumerSecret:consumerSecret];
     [tlogin setAppName:appName];
-    [tlogin setServiceUrlScheme:kServiceAppUrlScheme];
+    [tlogin setServiceUrlScheme:GAME_CODE];
     [tlogin requestThirdPartyLogin];
 }
 
@@ -86,8 +87,31 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error) {
                 SDK_LOG(@"Error happened - %@", [error description]);
+                [SdkUtil toastMsg_MMMethodMMM:[error description]];
             } else {
                 SDK_LOG(@"recevied data - %@", decodingString);
+                
+                if(decodingString){
+                    NSData *jsonData = [decodingString dataUsingEncoding:NSUTF8StringEncoding];
+                    // 对数据进行JSON格式化并返回字典形式
+                    NSError *error = nil;
+                    id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+                    if(!resultTemp){
+                        return;
+                    }
+                    NSString *resultcode = resultTemp[@"resultcode"];
+                    NSString *message = resultTemp[@"message"];
+                    id response = resultTemp[@"response"];
+                    if(!response){
+                        return;
+                    }
+                    NSString *uid = response[@"id"];
+                    NSString *nickname = response[@"nickname"];
+                    
+                    if(mNaverCallBack){
+                        mNaverCallBack(_thirdPartyLoginConn.accessToken, uid, nickname);
+                    }
+                }
             }
         });
     }] resume];
@@ -102,6 +126,7 @@
 
 - (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFailWithError:(NSError *)error {
     //    NSLog(@"%s=[%@]", __FUNCTION__, error);
+    //登录失败时
     SDK_LOG(@"oauth20Connection didFailWithError %@", error);
 }
 
@@ -111,8 +136,10 @@
 }
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithRefreshToken {
-    
+    //登录成功时
     SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithRefreshToken Refresh Success!\n\nAccess Token - %@\n\nAccess sToken ExpireDate- %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate);
+    
+    [self getUserProfile];
     
 }
 - (void)oauth20ConnectionDidFinishDeleteToken {
@@ -126,7 +153,7 @@
 
 - (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFailAuthorizationWithReceiveType:(THIRDPARTYLOGIN_RECEIVE_TYPE)receiveType
 {
-    SDK_LOG(@"oauth20Connection didFailAuthorizationWithReceiveType NaverApp login fail handler");
+    SDK_LOG(@"oauth20Connection didFailAuthorizationWithReceiveType NaverApp login fail handler receiveType=%d", receiveType);
 }
 
 

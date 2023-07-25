@@ -29,7 +29,7 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sshxios</string>
+				<string>gwsgios</string>
 				<string>fb958518928627930</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
@@ -65,6 +65,8 @@
 		<string>fbshareextension</string>
 		<string>lineauth2</string>
 		<string>line</string>
+        <string>naversearchapp</string>
+        <string>naversearchthirdlogin</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
