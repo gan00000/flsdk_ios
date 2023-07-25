@@ -116,6 +116,8 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
         iconName = apple_smail_icon;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = line_smail_icon;
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]){
+        iconName = mw_naver_icon;
     }
     cell.accountUILabel.text = account;
     cell.iconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];

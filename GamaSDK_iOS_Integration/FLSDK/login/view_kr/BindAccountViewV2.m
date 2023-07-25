@@ -392,6 +392,10 @@
         iconName = line_smail_icon;
         pwdEnable = NO;
         account_tips = wwwww_tag_wwwww_text_has_bind_tips_line.localx;
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]){
+        iconName = mw_naver_icon;
+        pwdEnable = NO;
+        account_tips = wwwww_tag_wwwww_text_has_upgrade_account.localx;
     }
     
 //    accountFiledView.inputUITextField.text = account;

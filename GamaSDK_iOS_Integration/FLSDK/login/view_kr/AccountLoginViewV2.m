@@ -592,6 +592,8 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
+    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]) {
+        [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
     }
 }
 
@@ -652,6 +654,9 @@
         pwdEnable = NO;
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]){
         iconName = line_smail_icon;
+        pwdEnable = NO;
+    }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]){
+        iconName = mw_naver_icon;
         pwdEnable = NO;
     }
     
