@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleDisplayName</key>
-	<string>v6demo</string>
+	<string>krdemo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>gwsgios</string>
-				<string>fb958518928627930</string>
+				<string>vnmxwios</string>
+				<string>fb948331946321316</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -48,13 +48,13 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>958518928627930</string>
+	<string>948331946321316</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
 	<string>70dee7e2899286d3b410c2af8530b899</string>
 	<key>FacebookDisplayName</key>
-	<string>v6demo</string>
+	<string>krdemo</string>
 	<key>GIDClientID</key>
 	<string>267037747590-aou57ianef41ct87vaigq3fphqh235bj.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -65,8 +65,8 @@
 		<string>fbshareextension</string>
 		<string>lineauth2</string>
 		<string>line</string>
-        <string>naversearchapp</string>
-        <string>naversearchthirdlogin</string>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
