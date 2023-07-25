@@ -266,7 +266,7 @@ static dispatch_once_t onceToken;
         _textStringDic = [NSMutableDictionary dictionary];
         
         NSString *languageStr = [self getsdkLanguage_MMMethodMMM]; //指定的默认语言
-        NSString *languageStr_temp = languageStr;
+        NSString *languageStr_defalut = languageStr;
         
         if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
             
@@ -297,16 +297,16 @@ static dispatch_once_t onceToken;
             [_textStringDic addEntriesFromDictionary:dicTemp];
             return _textStringDic;
         }
-        
+        //使用默认语言
         SDK_LOG(@"language = %@ not exist",languageStr);
-        dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"txt"];
+        dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"txt"];
         if (dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
-            SDK_LOG(@"set language str = %@ ",languageStr_temp);
+            SDK_LOG(@"set language str = %@ ",languageStr_defalut);
             return _textStringDic;
         }
         
-        dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_temp ofType_MMMethodMMM:@"json"];
+        dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"json"];
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
             return _textStringDic;
