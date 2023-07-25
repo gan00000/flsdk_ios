@@ -27,6 +27,7 @@
 + (NSString *)getBundleIdentifier_MMMethodMMM;
 + (NSString *)getBundleShortVersionString_MMMethodMMM;
 + (NSString *)getBundleVersion_MMMethodMMM;
++ (NSString *)getDisplayName_MMMethodMMM;
 
 /**
  *	@brief	获取时间戳

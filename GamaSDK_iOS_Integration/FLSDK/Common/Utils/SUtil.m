@@ -49,6 +49,11 @@
     return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleVersion"];
 }
 
++ (NSString *)getDisplayName_MMMethodMMM
+{
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleDisplayName"];
+}
+
 #pragma mark - 获取时间戳
 +(NSString *)getTimeStamp_MMMethodMMM
 {
