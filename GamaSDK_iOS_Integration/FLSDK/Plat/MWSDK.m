@@ -59,9 +59,9 @@
     SDK_LOG(@"application openURL sourceApplication annotation");
     [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    if (!result) {
-        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    }
+//    if (!result) {
+//        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+//    }
     
     return result;
 }

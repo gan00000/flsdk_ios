@@ -7,14 +7,14 @@
 //
 
 #import "LineDelegate.h"
-#import "LineSDK/LineSDK.h"
+//#import "LineSDK/LineSDK.h"
 
 //@import LineSDK;
 //@import LineSDKObjC;
 
 #import "CComHeader.h"
 
-@interface LineDelegate() <LineSDKLoginDelegate>
+@interface LineDelegate() //<LineSDKLoginDelegate>
 
 @property (nonatomic) LineCallBack successCallBack;
 @property (nonatomic) LineCallBack failCallBack;
@@ -34,25 +34,26 @@
 }
 
 
-+ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    return YES;
-}
-
-+ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-//    [[LineSDKLoginManager sharedManager] application:application open:url options:<#(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)#>];
+//+ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    return YES;
+//}
+//
+//+ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+//{
+////    [[LineSDKLoginManager sharedManager] application:application open:url options:<#(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)#>];
 //    return NO;
-    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
-
-}
+////    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+//
+//}
 
 
 +(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
 //    return [[LineSDKLoginManager sharedManager] application:application open:url options:options];
     
-    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+//    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+    return NO;
 }
 
 -(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
@@ -60,50 +61,14 @@
     self.successCallBack = successCallBack;
     self.failCallBack = failCallBack;
     
-    [LineSDKLogin sharedInstance].delegate = self;
-    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
-    
-//    NSSet *permissions = [NSSet setWithObjects:
-//                              [LineSDKLoginPermission profile],
-//                              [LineSDKLoginPermission openID],
-//                              nil];
-//    [[LineSDKLoginManager sharedManager] loginWithPermissions:permissions
-//            inViewController:nil
-//                  parameters_MMMethodMMM:nil
-//           completionHandler:^(LineSDKLoginResult *result, NSError *error) {
-//               if (result) {
-//                   NSLog(@"User Name: %@", result.userProfile.displayName);
-//                   [LineSDKAPI getProfileWithCompletionHandler:^(LineSDKUserProfile * _Nullable profile, NSError * _Nullable error) {
-//
-//                       if (profile) {
-//                           NSLog(@"getProfile User Name: %@", profile.displayName);
-//                       } else {
-//                           NSLog(@"getProfile Error: %@", error);
-//                       }
-//
-//                   }];
-//
-//               } else {
-//                   NSLog(@"loginWithPermissions Error: %@", error);
-//                   if ([error.domain isEqualToString:[LineSDKErrorConstant errorDomain]]) {
-//                       // SDK Error
-//                       if (error.code == 2004) {
-//                           // invalidHTTPStatusAPIError
-//                           NSNumber *statusCode = error.userInfo[[LineSDKErrorConstant userInfoKeyStatusCode]];
-//                           if ([statusCode integerValue] == 403) {
-//                               // Permission granting issue. Ask for authorization with enough permission again.
-//                           }
-//                       }
-//
-//                   }
-//               }
-//           }
-//     ];
+//    [LineSDKLogin sharedInstance].delegate = self;
+//    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
     
 }
 
 
-
+/**
+ 
 - (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
 
 
@@ -136,5 +101,5 @@
     }
 
 }
-
+ */
 @end

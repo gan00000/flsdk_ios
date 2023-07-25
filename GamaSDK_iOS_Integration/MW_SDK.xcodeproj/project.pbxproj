@@ -65,7 +65,6 @@
 		032CB56A2940BEBD0013185B /* MWSDK_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */; };
 		03315B99291BA16000A92FBE /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03315B97291BA16000A92FBE /* ViewUtil.m */; };
 		03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 03315B98291BA16000A92FBE /* ViewUtil.h */; };
-		0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03349EC92A700E42004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECA2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECB2A700E47004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
@@ -122,7 +121,6 @@
 		03509C3129F91C8100C840DA /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
 		03509C3229F91C8100C840DA /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9429D9900200890B3B /* NOTICES */; };
 		03509C3529F91C8100C840DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
-		03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03509C3829F91C8100C840DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03509C3B29F91C8100C840DA /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
 		03509C3C29F91C8100C840DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -145,7 +143,6 @@
 		03509C4E29F91C8100C840DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		03509C4F29F91C8100C840DA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		03509C5029F91C8100C840DA /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24966D961D5894C9005BE6EB /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03509C5129F91C8100C840DA /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		03509C5229F91C8100C840DA /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA329D9900200890B3B /* GoogleDataTransport.xcframework */; };
 		03509C5329F91C8100C840DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490083B1D2646CA00331AB0 /* libz.tbd */; };
 		03509C5429F91C8100C840DA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
@@ -624,7 +621,6 @@
 		038613AB2938981100CC9C44 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		038613AC2938981100CC9C44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
 		038613B02938981100CC9C44 /* demoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */; };
-		038613B42938981100CC9C44 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		038613B72938981100CC9C44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		038613BA2938981100CC9C44 /* MWSDK_V3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0386137429388F8900CC9C44 /* MWSDK_V3.framework */; };
 		038613BB2938981100CC9C44 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -977,7 +973,6 @@
 		0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
 		0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9429D9900200890B3B /* NOTICES */; };
 		0392B2842A5BA9F600A3E2D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 039E6E9529D9900200890B3B /* README.md */; };
-		0392B2862A5BA9F600A3E2D6 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		0392B28C2A5BA9F600A3E2D6 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9129D9900200890B3B /* FirebaseAuth.xcframework */; };
 		0392B28D2A5BA9F600A3E2D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -1000,7 +995,6 @@
 		0392B29E2A5BA9F600A3E2D6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9401A1498C1009E77FF /* AdSupport.framework */; };
 		0392B29F2A5BA9F600A3E2D6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4B6681DD5BA7A003AF6F0 /* JavaScriptCore.framework */; };
 		0392B2A02A5BA9F600A3E2D6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24966D961D5894C9005BE6EB /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		0392B2A12A5BA9F600A3E2D6 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		0392B2A22A5BA9F600A3E2D6 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA329D9900200890B3B /* GoogleDataTransport.xcframework */; };
 		0392B2A32A5BA9F600A3E2D6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2490083B1D2646CA00331AB0 /* libz.tbd */; };
 		0392B2A42A5BA9F600A3E2D6 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B1443F1D10FCB900256411 /* SafariServices.framework */; };
@@ -1215,7 +1209,6 @@
 		039B2692298B557400045C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		039B2693298B557400045C53 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		039B2694298B557400045C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		039B269D298B557400045C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		039B26A0298B557400045C53 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		039B26A1298B557400045C53 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -1389,11 +1382,6 @@
 		039E6F2A29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2B29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2C29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
-		039E6F3329D996A200890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3629D996CC00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3829D996E400890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3929D996F900890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
-		039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332F55A28C5B44C00B7A99F /* LineSDK.framework */; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
 		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
@@ -1525,7 +1513,6 @@
 		03CA72BF29D5699600098979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		03CA72C029D5699600098979 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		03CA72C129D5699600098979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03CA72CA29D5699600098979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03CA72CC29D5699600098979 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03CA72CE29D5699600098979 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
@@ -1583,7 +1570,6 @@
 		03F542BA2940BC5D00F75F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CE20874A170018E1A6 /* ViewController.m */; };
 		03F542BB2940BC5D00F75F51 /* IAP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C920874A170018E1A6 /* IAP_ViewController.m */; };
 		03F542BC2940BC5D00F75F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411DA20874A170018E1A6 /* main.m */; };
-		03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */; };
 		03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956BC79211D768F006D9E4C /* Images.xcassets */; };
 		03F542C82940BC5D00F75F51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
 		03F542C92940BC5D00F75F51 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -1900,8 +1886,6 @@
 		03315B97291BA16000A92FBE /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
 		03315B98291BA16000A92FBE /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV4.bundle; sourceTree = "<group>"; };
-		0332F55A28C5B44C00B7A99F /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
-		0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineSDKResource.bundle; sourceTree = "<group>"; };
 		03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppsFlyerLib.xcframework; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
@@ -2392,7 +2376,6 @@
 				03509C4E29F91C8100C840DA /* AdSupport.framework in Frameworks */,
 				03509C4F29F91C8100C840DA /* JavaScriptCore.framework in Frameworks */,
 				03509C5029F91C8100C840DA /* ReplayKit.framework in Frameworks */,
-				03509C5129F91C8100C840DA /* LineSDK.framework in Frameworks */,
 				03509C5229F91C8100C840DA /* GoogleDataTransport.xcframework in Frameworks */,
 				03509C5329F91C8100C840DA /* libz.tbd in Frameworks */,
 				03509C5429F91C8100C840DA /* SafariServices.framework in Frameworks */,
@@ -2522,7 +2505,6 @@
 				039E6EE329D9900300890B3B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 				039E6F1A29D9900300890B3B /* AppAuth.xcframework in Frameworks */,
 				038613F72938981100CC9C44 /* CoreLocation.framework in Frameworks */,
-				039E6F3929D996F900890B3B /* LineSDK.framework in Frameworks */,
 				039E6EFC29D9900300890B3B /* FirebaseCore.xcframework in Frameworks */,
 				039E6EC529D9900300890B3B /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				038613F82938981100CC9C44 /* MobileCoreServices.framework in Frameworks */,
@@ -2586,7 +2568,6 @@
 				0392B29E2A5BA9F600A3E2D6 /* AdSupport.framework in Frameworks */,
 				0392B29F2A5BA9F600A3E2D6 /* JavaScriptCore.framework in Frameworks */,
 				0392B2A02A5BA9F600A3E2D6 /* ReplayKit.framework in Frameworks */,
-				0392B2A12A5BA9F600A3E2D6 /* LineSDK.framework in Frameworks */,
 				0392B2A22A5BA9F600A3E2D6 /* GoogleDataTransport.xcframework in Frameworks */,
 				0392B2A32A5BA9F600A3E2D6 /* libz.tbd in Frameworks */,
 				0392B2A42A5BA9F600A3E2D6 /* SafariServices.framework in Frameworks */,
@@ -2672,7 +2653,6 @@
 				039B26B3298B557400045C53 /* AdSupport.framework in Frameworks */,
 				039B26B5298B557400045C53 /* JavaScriptCore.framework in Frameworks */,
 				039B26B7298B557400045C53 /* ReplayKit.framework in Frameworks */,
-				039E6F3329D996A200890B3B /* LineSDK.framework in Frameworks */,
 				039E6F1729D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
 				039B26B9298B557400045C53 /* libz.tbd in Frameworks */,
 				039B26BA298B557400045C53 /* SafariServices.framework in Frameworks */,
@@ -2759,7 +2739,6 @@
 				03CA72E129D5699600098979 /* JavaScriptCore.framework in Frameworks */,
 				03CA72E229D5699600098979 /* ReplayKit.framework in Frameworks */,
 				039E6F1829D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
-				039E6F3629D996CC00890B3B /* LineSDK.framework in Frameworks */,
 				03CA72E429D5699600098979 /* libz.tbd in Frameworks */,
 				03CA72E529D5699600098979 /* SafariServices.framework in Frameworks */,
 				03CA72E629D5699600098979 /* libc++abi.tbd in Frameworks */,
@@ -2837,7 +2816,6 @@
 				03F542DB2940BC5D00F75F51 /* AdSupport.framework in Frameworks */,
 				03F542DD2940BC5D00F75F51 /* JavaScriptCore.framework in Frameworks */,
 				03F542DF2940BC5D00F75F51 /* ReplayKit.framework in Frameworks */,
-				039E6F3A29D9970B00890B3B /* LineSDK.framework in Frameworks */,
 				039E6F1629D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
 				03F542E12940BC5D00F75F51 /* libz.tbd in Frameworks */,
 				03F542E22940BC5D00F75F51 /* SafariServices.framework in Frameworks */,
@@ -2917,7 +2895,6 @@
 				24A4B6691DD5BA7A003AF6F0 /* JavaScriptCore.framework in Frameworks */,
 				24966D971D5894C9005BE6EB /* ReplayKit.framework in Frameworks */,
 				039E6F1429D9900300890B3B /* GoogleDataTransport.xcframework in Frameworks */,
-				039E6F3829D996E400890B3B /* LineSDK.framework in Frameworks */,
 				2490083C1D2646CA00331AB0 /* libz.tbd in Frameworks */,
 				24B144401D10FCB900256411 /* SafariServices.framework in Frameworks */,
 				242CE86B1CFEF1C700E3C747 /* libc++abi.tbd in Frameworks */,
@@ -3107,15 +3084,6 @@
 				032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */,
 			);
 			path = KeyChainUUID;
-			sourceTree = "<group>";
-		};
-		0332F55928C5B44C00B7A99F /* LineSDK */ = {
-			isa = PBXGroup;
-			children = (
-				0332F55A28C5B44C00B7A99F /* LineSDK.framework */,
-				0332F55B28C5B44C00B7A99F /* LineSDKResource.bundle */,
-			);
-			path = LineSDK;
 			sourceTree = "<group>";
 		};
 		03349EC72A700E42004ECF5E /* AF-v6.12.1 */ = {
@@ -3884,7 +3852,6 @@
 				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
-				0332F55928C5B44C00B7A99F /* LineSDK */,
 			);
 			path = ThirkLib;
 			sourceTree = "<group>";
@@ -4611,7 +4578,6 @@
 				039AC20029F91E3600B416D8 /* com_mwgame_sdkzycs.json in Resources */,
 				03509C3529F91C8100C840DA /* README.md in Resources */,
 				039AC20129F91E3600B416D8 /* SDKResourcesV6.bundle in Resources */,
-				03509C3729F91C8100C840DA /* LineSDKResource.bundle in Resources */,
 				03509C3829F91C8100C840DA /* Images.xcassets in Resources */,
 				039AC1FF29F91E3600B416D8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -4645,7 +4611,6 @@
 				038613B02938981100CC9C44 /* demoInfo.plist in Resources */,
 				035EDC2129A499F7009092F0 /* GoogleService-Info.plist in Resources */,
 				035EDC2229A499F7009092F0 /* SDKResourcesV3.bundle in Resources */,
-				038613B42938981100CC9C44 /* LineSDKResource.bundle in Resources */,
 				039E6ED429D9900300890B3B /* NOTICES in Resources */,
 				035EDC2029A499F7009092F0 /* com_mplay_wlzhs.json in Resources */,
 				039E6F1F29D9900300890B3B /* GoogleSignIn.bundle in Resources */,
@@ -4678,7 +4643,6 @@
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
 				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
-				0392B2862A5BA9F600A3E2D6 /* LineSDKResource.bundle in Resources */,
 				0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */,
 				0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */,
 				0392B2DE2A5BAADA00A3E2D6 /* GoogleService-Info.plist in Resources */,
@@ -4702,7 +4666,6 @@
 				03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */,
 				039E6EDB29D9900300890B3B /* README.md in Resources */,
 				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
-				039B269C298B557400045C53 /* LineSDKResource.bundle in Resources */,
 				039B269D298B557400045C53 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4723,7 +4686,6 @@
 				033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
-				03CA72C929D5699600098979 /* LineSDKResource.bundle in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
 				039E6EDC29D9900300890B3B /* README.md in Resources */,
 			);
@@ -4739,7 +4701,6 @@
 				030D36052999F3DE001AAFC0 /* 5bdd7061f32dc87dc093306cee6ec846-1.txt in Resources */,
 				039E6F2029D9900300890B3B /* GoogleSignIn.bundle in Resources */,
 				030D36082999F3DE001AAFC0 /* GoogleService-Info.plist in Resources */,
-				03F542C32940BC5D00F75F51 /* LineSDKResource.bundle in Resources */,
 				039E6EDA29D9900300890B3B /* README.md in Resources */,
 				03F542C42940BC5D00F75F51 /* Images.xcassets in Resources */,
 			);
@@ -4754,7 +4715,6 @@
 				32CD1D7524DC44F50021CC46 /* GoogleService-Info.plist in Resources */,
 				03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */,
 				039E6F1E29D9900300890B3B /* GoogleSignIn.bundle in Resources */,
-				0332F57728C5B44C00B7A99F /* LineSDKResource.bundle in Resources */,
 				E956BC7A211D768F006D9E4C /* Images.xcassets in Resources */,
 				039E6ED829D9900300890B3B /* README.md in Resources */,
 				035EDC2429A49BF5009092F0 /* SDKResourcesV2.bundle in Resources */,
