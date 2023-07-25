@@ -81,6 +81,7 @@
 //    SDK_DATA.mConfigModel.showLogo = YES;
 //    SDK_DATA.mConfigModel.showContract = YES;
 //    SDK_DATA.mConfigModel.deleteAccount = YES;
+//    SDK_DATA.mConfigModel.naverLogin = YES;
     
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
