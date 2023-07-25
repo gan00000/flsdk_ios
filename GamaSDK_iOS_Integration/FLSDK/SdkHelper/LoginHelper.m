@@ -13,6 +13,11 @@
 #import "LineDelegate.h"
 #import "MWSDK.h"
 
+#ifdef SDK_KR
+#import "NaverDelegate.h"
+#endif
+
+
 @implementation LoginHelper
 
 
@@ -202,6 +207,16 @@
     } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
     }];
+}
+
++ (void)naverLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate{
+    
+#ifdef SDK_KR
+    [[NaverDelegate share] startLoginWithKey_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_key") consumerSecret_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_secret") appName_MMMethodMMM:[SUtil getDisplayName_MMMethodMMM] callback_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+        
+    }];
+#endif
+    
 }
 
 + (void)selfLoginAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password

@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)lineLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
 
++ (void)naverLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate;
+
 + (void)selfLoginAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate account_MMMethodMMM:(NSString *)account pwd_MMMethodMMM:(NSString *)password;
 
 

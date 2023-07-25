@@ -25,6 +25,11 @@
 #import <StoreKit/StoreKit.h>
 #import "GIDDelegate.h"
 
+#ifdef SDK_KR
+#import "NaverDelegate.h"
+#endif
+
+
 // 通知类型
 //NSString *const SDK_LOGIN_SUCCUESS    = wwwww_tag_wwwww_SDK_LOGIN_SUCCUESS;
 
@@ -74,6 +79,12 @@
     if (!result) {//google sign in
         result = [GIDDelegate application:application openURL:url options:options];
     }
+    
+#ifdef SDK_KR
+    if (!result) {//naver
+        result = [[NaverDelegate share] application:application openURL:url options:options];
+    }
+#endif
     return result;
 }
 

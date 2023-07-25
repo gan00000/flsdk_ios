@@ -113,6 +113,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define accountLoginActTag    2003
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
+#define naverLoginActTag    2006
 
 #define TAG_CLOSE    90
 
@@ -125,6 +126,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define LOGIN_TYPE_TWITTER        (wwwww_tag_wwwww_twitter)
 #define LOGIN_TYPE_APPLE          (wwwww_tag_wwwww_apple)
 #define LOGIN_TYPE_LINE          (wwwww_tag_wwwww_line)
+#define LOGIN_TYPE_NAVER          (wwwww_tag_wwwww_naver)
 
 #pragma mark - api请求接口
 #define api_login_guest     (@"api/user/visitorLogin")

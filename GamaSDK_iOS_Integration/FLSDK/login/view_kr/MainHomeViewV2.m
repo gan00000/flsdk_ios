@@ -395,6 +395,7 @@
 
 - (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
+    SDK_LOG(@"sender.tag=%d", sender.tag);
     switch (sender.tag) {
        
         case kAgreeTermsCheckBoxBtnTag:
@@ -447,6 +448,13 @@
                 return;
             }
             [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            break;
+        case naverLoginActTag:
+
+            if (![self checkAgreeTerm_MMMethodMMM]) {
+                return;
+            }
+            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
             break;
         default:
             break;

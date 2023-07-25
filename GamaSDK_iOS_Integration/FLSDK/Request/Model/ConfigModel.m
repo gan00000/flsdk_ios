@@ -19,6 +19,7 @@
         self.fbLogin = YES;
         self.googleLogin = NO;//苹果登录默认隐藏，Android端默认显示
         self.lineLogin = NO;
+        self.naverLogin = NO;
         self.appleLogin = YES;
         self.deleteAccount = NO;
         self.appPassCheck = NO;

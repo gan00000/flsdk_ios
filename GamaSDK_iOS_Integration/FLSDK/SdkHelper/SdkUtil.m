@@ -565,6 +565,17 @@
         lbds.image = mw_line_icon;
         [loginBtnDatas addObject:lbds];
     }
+    
+#ifdef SDK_KR
+    if (mConfigModel.naverLogin) {
+        LoginButtonData *lbds = [[LoginButtonData alloc] init];
+        lbds.tag = naverLoginActTag;
+        lbds.btnType = LOGIN_TYPE_NAVER;
+        lbds.image = mw_naver_icon;
+        [loginBtnDatas addObject:lbds];
+    }
+#endif
+    
     return loginBtnDatas;
 }
 

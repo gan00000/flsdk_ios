@@ -174,6 +174,7 @@
 #define wwwww_tag_wwwww_fb        @"fb"  //@"fb"
 #define wwwww_tag_wwwww_google        @"google"  //@"google"
 #define wwwww_tag_wwwww_twitter        @"twitter"  //@"twitter"
+#define wwwww_tag_wwwww_naver        @"naver"  //@"naver"
 #define wwwww_tag_wwwww_line        @"line"  //@"line"
 #define wwwww_tag_wwwww_GamaAppleCurrentIdentifier        @"GamaAppleCurrentIdentifier"  //@"GamaAppleCurrentIdentifier"
 #define wwwww_tag_wwwww_appleThirdID        @"appleThirdID"  //@"appleThirdID"

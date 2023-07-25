@@ -277,6 +277,7 @@
 #define mw_arr_right    @"patternaster_cruraceous_img"
 #define mw_logo         @"patternaster_haha_img"
 #define age_14_warn         @"age_14_warn"
+#define mw_naver_icon    @"icon_naver"
 
 #else
 

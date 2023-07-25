@@ -1572,6 +1572,9 @@
 		03CA730C29D5699600098979 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93C1A1498B5009E77FF /* Accounts.framework */; };
 		03CA730E29D5699600098979 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		03CA731029D5699600098979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
+		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
+		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
+		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
 		03F542B72940BC5D00F75F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03F542B82940BC5D00F75F51 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03F542B92940BC5D00F75F51 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -2175,6 +2178,9 @@
 		03CA72B729D5698400098979 /* MWSDK_VN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_VN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CA731729D5699600098979 /* SDK_DEMO_VN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_VN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_VN-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_VN-Info.plist"; sourceTree = "<absolute>"; };
+		03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaverDelegate.h; sourceTree = "<group>"; };
+		03D302A02A6EAF0B00ED990B /* NaverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaverDelegate.m; sourceTree = "<group>"; };
+		03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NaverThirdPartyLogin.xcframework; sourceTree = "<group>"; };
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -2546,6 +2552,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3554,6 +3561,23 @@
 			path = ThirdSrc;
 			sourceTree = "<group>";
 		};
+		03D3029E2A6EADE700ED990B /* Naver */ = {
+			isa = PBXGroup;
+			children = (
+				03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */,
+				03D302A02A6EAF0B00ED990B /* NaverDelegate.m */,
+			);
+			path = Naver;
+			sourceTree = "<group>";
+		};
+		03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */,
+			);
+			path = "Naver-v4.1.5";
+			sourceTree = "<group>";
+		};
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3628,6 +3652,7 @@
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03D3029E2A6EADE700ED990B /* Naver */,
 				03202936286B02AD00E8D5A5 /* AD */,
 				03202925286962CB00E8D5A5 /* DataMode */,
 				032028F128694B7D00E8D5A5 /* SDKIAP */,
@@ -3851,6 +3876,7 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
+				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
 				039E6E8729D9900200890B3B /* AF-v6.7.0 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
@@ -4147,6 +4173,7 @@
 				0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
 				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
+				03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */,
 				0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */,
 				0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */,
 				0392B26A2A5BA99900A3E2D6 /* AccountLoginViewV2.h in Headers */,
@@ -5390,6 +5417,7 @@
 				0392B2142A5BA8DC00A3E2D6 /* UIView+BlockGesture.m in Sources */,
 				0392B2152A5BA8DC00A3E2D6 /* NSString+Common.m in Sources */,
 				0392B2162A5BA8DC00A3E2D6 /* SUtil.m in Sources */,
+				03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */,
 				0392B2172A5BA8DC00A3E2D6 /* BaseCountTimerView.m in Sources */,
 				0392B2182A5BA8DC00A3E2D6 /* UIUtil.m in Sources */,
 				0392B2192A5BA8DC00A3E2D6 /* ViewUtil.m in Sources */,

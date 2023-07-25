@@ -192,7 +192,7 @@
     
     
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if (!mConfigModel.visitorLogin && !mConfigModel.appleLogin && !mConfigModel.fbLogin && !mConfigModel.lineLogin) {
+    if (!mConfigModel.visitorLogin && !mConfigModel.appleLogin && !mConfigModel.fbLogin && !mConfigModel.lineLogin && !mConfigModel.naverLogin) {
         [self addLoginWithRegView_MMMethodMMM];
         return;
     }

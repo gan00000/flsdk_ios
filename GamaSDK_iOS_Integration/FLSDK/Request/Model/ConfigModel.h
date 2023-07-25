@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL googleLogin;
 @property (nonatomic, assign) BOOL lineLogin;
 @property (nonatomic, assign) BOOL appleLogin;
+@property (nonatomic, assign) BOOL naverLogin;
 
 //是否显示定型化契约
 @property (nonatomic, assign) BOOL showContract;
