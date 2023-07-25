@@ -41,7 +41,7 @@
     mNaverCallBack = callback;
     if(!_thirdPartyLoginConn){
         _thirdPartyLoginConn = [NaverThirdPartyLoginConnection getSharedInstance];
-//        [_thirdPartyLoginConn setIsNaverAppOauthEnable:YES];
+        [_thirdPartyLoginConn setIsNaverAppOauthEnable:YES];
         _thirdPartyLoginConn.delegate = self;
     }
     SDK_LOG(@"requestThirdpartyLogin");
@@ -133,6 +133,8 @@
 - (void)oauth20ConnectionDidFinishRequestACTokenWithAuthCode {
     
     SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithAuthCode OAuth Success!\n\nAccess Token - %@\n\nAccess Token Expire Date- %@\n\nRefresh Token - %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate, _thirdPartyLoginConn.refreshToken);
+    //第一次从认证(didFinishAuthorizationWithResult)到这里
+    [self getUserProfile];
 }
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithRefreshToken {
