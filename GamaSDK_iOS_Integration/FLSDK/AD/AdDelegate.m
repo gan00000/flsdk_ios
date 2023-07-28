@@ -105,9 +105,9 @@
 + (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type{
     
     @try {
-        
+        SDK_LOG(@"logEventWithEventName=%@", eventName);
         if (type & AdType_Appflyer) {
-            [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
+            [[AppsFlyerLib shared] logEvent:eventName withValues:eventValues];
         }
         if (type & AdType_Firebase) {
             //firebase
