@@ -19,6 +19,7 @@
 #import <AppsFlyerLib/AppsFlyerLib.h>
 
 #import "SdkHeader.h"
+#import "AdjustDelegate.h"
 
 @implementation AdDelegate
 
@@ -36,6 +37,8 @@
         [[AppsFlyerLib shared] setAppleAppID:appId];
         
     }
+    //adjust
+    [[AdjustDelegate share] application:application didFinishLaunchingWithOptions:launchOptions];
    
     return YES;
 }
@@ -119,6 +122,8 @@
             [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
         }
        
+        //adjust
+        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventValues];
         
     } @catch (NSException *exception) {
         //[self _presentAlertWithException:exception andDictionary:dic];
@@ -179,6 +184,21 @@
             [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
 
         }
+        
+        //adjust
+        NSDictionary *eventValues = @{
+            @"usdPrice"  : @(mPayData.amount),
+            @"currency" : wwwww_tag_wwwww_USD,
+            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
+            wwwww_tag_wwwww_userId: mPayData.orderId ?: @"",
+            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+            wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
+            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+            
+        };
+        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"AJ_Purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
        
         GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
         if(gGameUserModel){
@@ -232,6 +252,8 @@
                                                             wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
                                                             
                                             }];
+                    
+                    [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"second_purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
                     
                 }
                 
