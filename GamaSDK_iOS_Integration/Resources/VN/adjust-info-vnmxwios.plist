@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AJ_Purchase</key>
+    <string>mguuo7</string>
+    <key>APP_OPEN</key>
+    <string>mo6w6n</string>
+    <key>CHECK_PERMISSIONS</key>
+    <string>l7rtmx</string>
+    <key>CHECK_RESOURCES</key>
+    <string>euk614</string>
+    <key>CHECK_UPDATE</key>
+    <string>m57qru</string>
+    <key>COMPLETE_GUIDE</key>
+    <string>vk7ihw</string>
+    <key>CREATE_ROLE</key>
+    <string>7dk1tk</string>
+    
+	<key>LOGIN_SUCCESS</key>
+	<string>ndsm59</string>
+	<key>OPEN_LOGIN_SCREEN</key>
+	<string>34pbos</string>
+	<key>Paid_D2Login</key>
+	<string>ajwfil</string>
+	<key>REGISTER_SUCCESS</key>
+	<string>338dwm</string>
+	<key>second_purchase</key>
+	<string>lpgkjw</string>
+	<key>SELECT_SERVER</key>
+	<string>ylr8uv</string>
+	<key>START_GUIDE</key>
+	<string>3jaw6c</string>
+	<key>Upgrade_Account</key>
+	<string>1rifiu</string>
+	
+</dict>
+</plist>

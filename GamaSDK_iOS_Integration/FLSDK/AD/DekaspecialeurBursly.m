@@ -13,6 +13,7 @@
 #import <AppsFlyerLib/AppsFlyerLib.h>
 
 #import "SdkHeader.h"
+#import "AdjustDelegate.h"
 
 @implementation DekaspecialeurBursly
 
@@ -31,6 +32,9 @@
         
     }
    
+    //adjust
+    [[AdjustDelegate share] application:application didFinishLaunchingWithOptions:launchOptions];
+
     return YES;
 }
 
@@ -819,6 +823,9 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
             [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
         }
        
+        //adjust
+        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventValues];
+
         
     } @catch (NSException *exception) {
         
@@ -900,6 +907,22 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
 
         }
         
+        //adjust
+        NSDictionary *eventValues = @{
+            @"usdPrice"  : @(mPayData.amount),
+            @"currency" : wwwww_tag_wwwww_USD,
+            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
+            wwwww_tag_wwwww_userId: mPayData.orderId ?: @"",
+            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+            wwwww_tag_wwwww_uniqueId      :  [CenturyiaGraphic getGamaUUID_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_time         :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
+            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+            
+        };
+        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"AJ_Purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
+
+        
         SocialCheiropolitics *gGameUserModel = [[TruthineFaci share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
         if(gGameUserModel){
             if(gGameUserModel.isPay){
@@ -952,6 +975,9 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
                                                             wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
                                                             
                                             }];
+                    
+                    [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"second_purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
+
                     
                 }
                 

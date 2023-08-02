@@ -46,6 +46,11 @@
 		0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069DF73FE1C11EDAB070E90 /* GTMAppAuth.xcframework */; };
 		0362D7072A25DABB003F0A2B /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C1AEFE1C11EDA2BC0E90 /* FirebaseMessaging.xcframework */; };
 		0362D7082A25DABB003F0A2B /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C79CFE1C11ED96870E90 /* GoogleDataTransport.xcframework */; };
+		03C91BB62A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */; };
+		03C91BB72A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */; };
+		03C91BBB2A7A5C3000289870 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BB92A7A5C3000289870 /* AdjustDelegate.m */; };
+		03C91BBC2A7A5C3000289870 /* AdjustDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C91BBA2A7A5C3000289870 /* AdjustDelegate.h */; };
+		03C91BBE2A7A5E5D00289870 /* adjust-info-vnmxwios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C91BBD2A7A5E5D00289870 /* adjust-info-vnmxwios.plist */; };
 		30685B99FE1C11ED8F3B0E90 /* KeyicalOssView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30685EB8FE1C11ED85600E90 /* KeyicalOssView.m */; };
 		306861F5FE1C11EDA68B0E90 /* FigureismLinguetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 306864E3FE1C11EDB1BC0E90 /* FigureismLinguetView.h */; };
 		306867DCFE1C11ED91DE0E90 /* HierialFilmadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30686AAEFE1C11ED82C00E90 /* HierialFilmadView.h */; };
@@ -314,6 +319,10 @@
 
 /* Begin PBXFileReference section */
 		0362D6EC2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 82c5e764d725666c38d50ea8abd5372f.txt; sourceTree = "<group>"; };
+		03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
+		03C91BB92A7A5C3000289870 /* AdjustDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustDelegate.m; sourceTree = "<group>"; };
+		03C91BBA2A7A5C3000289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
+		03C91BBD2A7A5E5D00289870 /* adjust-info-vnmxwios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "adjust-info-vnmxwios.plist"; sourceTree = "<group>"; };
 		30685EB8FE1C11ED85600E90 /* KeyicalOssView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyicalOssView.m; sourceTree = "<group>"; };
 		306864E3FE1C11EDB1BC0E90 /* FigureismLinguetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FigureismLinguetView.h; sourceTree = "<group>"; };
 		30686AAEFE1C11ED82C00E90 /* HierialFilmadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HierialFilmadView.h; sourceTree = "<group>"; };
@@ -815,6 +824,7 @@
 				0362D6FF2A25DA91003F0A2B /* FirebaseCore.xcframework in Frameworks */,
 				0362D7002A25DA91003F0A2B /* FirebaseCoreInternal.xcframework in Frameworks */,
 				0362D7012A25DA91003F0A2B /* GoogleAppMeasurement.xcframework in Frameworks */,
+				03C91BB72A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */,
 				0362D7052A25DAA2003F0A2B /* AppAuth.xcframework in Frameworks */,
 				0362D6F82A25DA7E003F0A2B /* GoogleSignIn.xcframework in Frameworks */,
 				0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */,
@@ -863,6 +873,7 @@
 				306D76A1FE1C11ED955C0E90 /* Social.framework in Frameworks */,
 				30697475FE1C11EDB23A0E90 /* GTMSessionFetcher.xcframework in Frameworks */,
 				306D7D11FE1C11EDB7470E90 /* AVFoundation.framework in Frameworks */,
+				03C91BB62A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */,
 				306D8351FE1C11EDAB3D0E90 /* AddressBook.framework in Frameworks */,
 				306D8923FE1C11ED99C20E90 /* QuartzCore.framework in Frameworks */,
 				306D9019FE1C11ED85660E90 /* Photos.framework in Frameworks */,
@@ -910,6 +921,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C91BB42A7A5BD700289870 /* AdjustSdk-4.33.6 */ = {
+			isa = PBXGroup;
+			children = (
+				03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */,
+			);
+			path = "AdjustSdk-4.33.6";
+			sourceTree = "<group>";
+		};
+		03C91BB82A7A5C3000289870 /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				03C91BB92A7A5C3000289870 /* AdjustDelegate.m */,
+				03C91BBA2A7A5C3000289870 /* AdjustDelegate.h */,
+			);
+			path = Adjust;
+			sourceTree = "<group>";
+		};
 		3071004AFE1C11EDA7130E90 /* view_v2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1089,6 +1117,7 @@
 		307122DCFE1C11ED9C4E0E90 /* VN */ = {
 			isa = PBXGroup;
 			children = (
+				03C91BBD2A7A5E5D00289870 /* adjust-info-vnmxwios.plist */,
 				0362D6EC2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt */,
 				306EA6CCFE1C11EDBF050E90 /* wxsdk-vn2023.json */,
 				3068C863FE1C11ED9C750E90 /* mxwvnios_res.bundle */,
@@ -1531,6 +1560,7 @@
 		30717259FE1C11ED823B0E90 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03C91BB82A7A5C3000289870 /* Adjust */,
 				30710C8FFE1C11EDB94C0E90 /* AD */,
 				307109B5FE1C11ED9B010E90 /* DataMode */,
 				3071061CFE1C11ED8E360E90 /* SDKIAP */,
@@ -1742,6 +1772,7 @@
 		307194D9FE1C11ED97D50E90 /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
+				03C91BB42A7A5BD700289870 /* AdjustSdk-4.33.6 */,
 				30713D8AFE1C11ED89800E90 /* AF-v6.7.0 */,
 				3071405CFE1C11EDA0000E90 /* Facebook-v16.0.0 */,
 				3071430CFE1C11EDA8540E90 /* Firebase-v10.4.0 */,
@@ -1864,6 +1895,7 @@
 				3069EE40FE1C11EDAAC40E90 /* NSString+OpularianLexicoesque.h in Headers */,
 				3068BF85FE1C11ED9F9D0E90 /* PlaceationBasiiousView.h in Headers */,
 				3069F533FE1C11EDA8140E90 /* PlaceernPneuaneousView.h in Headers */,
+				03C91BBC2A7A5C3000289870 /* AdjustDelegate.h in Headers */,
 				306867DCFE1C11ED91DE0E90 /* HierialFilmadView.h in Headers */,
 				3069FB91FE1C11EDB1A20E90 /* GamaSDK+PessimbudgetoBibitosity.h in Headers */,
 				306861F5FE1C11EDA68B0E90 /* FigureismLinguetView.h in Headers */,
@@ -1969,6 +2001,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C91BBE2A7A5E5D00289870 /* adjust-info-vnmxwios.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2061,6 +2094,7 @@
 				306B2328FE1C11ED918E0E90 /* AccountModel.m in Sources */,
 				306B2999FE1C11EDBAF10E90 /* LoginResponse.m in Sources */,
 				306B2FBDFE1C11EDA0CE0E90 /* ConfigResponse.m in Sources */,
+				03C91BBB2A7A5C3000289870 /* AdjustDelegate.m in Sources */,
 				306B364CFE1C11EDA1A70E90 /* ConfigModel.m in Sources */,
 				306B3C4FFE1C11EDB7050E90 /* CreateOrderResp.m in Sources */,
 				306B42AEFE1C11ED871E0E90 /* PersonaliaSacra.m in Sources */,
