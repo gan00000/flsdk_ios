@@ -52,6 +52,12 @@
 		03C91BCA2A7B4E1500289870 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC32A7B4E1500289870 /* FBAEMKit.xcframework */; };
 		03C91BCB2A7B4E1500289870 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC42A7B4E1500289870 /* FBSDKCoreKit_Basics.xcframework */; };
 		03C91BCC2A7B4E1500289870 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC62A7B4E1500289870 /* AppsFlyerLib.xcframework */; };
+		03C91C0E2A7B51AC00289870 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC62A7B4E1500289870 /* AppsFlyerLib.xcframework */; };
+		03C91C0F2A7B51BE00289870 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC02A7B4E1500289870 /* FBSDKShareKit.xcframework */; };
+		03C91C102A7B51C100289870 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC12A7B4E1500289870 /* FBSDKCoreKit.xcframework */; };
+		03C91C112A7B51C400289870 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC22A7B4E1500289870 /* FBSDKLoginKit.xcframework */; };
+		03C91C122A7B51C700289870 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC32A7B4E1500289870 /* FBAEMKit.xcframework */; };
+		03C91C132A7B51C900289870 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC42A7B4E1500289870 /* FBSDKCoreKit_Basics.xcframework */; };
 		30685B99FE1C11ED8F3B0E90 /* KeyicalOssView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30685EB8FE1C11ED85600E90 /* KeyicalOssView.m */; };
 		306861F5FE1C11EDA68B0E90 /* FigureismLinguetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 306864E3FE1C11EDB1BC0E90 /* FigureismLinguetView.h */; };
 		306867DCFE1C11ED91DE0E90 /* HierialFilmadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30686AAEFE1C11ED82C00E90 /* HierialFilmadView.h */; };
@@ -808,13 +814,19 @@
 				0362D6FB2A25DA91003F0A2B /* FirebaseAnalytics.xcframework in Frameworks */,
 				0362D6FC2A25DA91003F0A2B /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
 				0362D6FD2A25DA91003F0A2B /* FirebaseInstallations.xcframework in Frameworks */,
+				03C91C122A7B51C700289870 /* FBAEMKit.xcframework in Frameworks */,
 				0362D6FE2A25DA91003F0A2B /* FBLPromises.xcframework in Frameworks */,
 				0362D6FF2A25DA91003F0A2B /* FirebaseCore.xcframework in Frameworks */,
 				0362D7002A25DA91003F0A2B /* FirebaseCoreInternal.xcframework in Frameworks */,
+				03C91C0E2A7B51AC00289870 /* AppsFlyerLib.xcframework in Frameworks */,
 				0362D7012A25DA91003F0A2B /* GoogleAppMeasurement.xcframework in Frameworks */,
 				03C91BB72A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */,
+				03C91C112A7B51C400289870 /* FBSDKLoginKit.xcframework in Frameworks */,
+				03C91C132A7B51C900289870 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				0362D7052A25DAA2003F0A2B /* AppAuth.xcframework in Frameworks */,
+				03C91C102A7B51C100289870 /* FBSDKCoreKit.xcframework in Frameworks */,
 				0362D6F82A25DA7E003F0A2B /* GoogleSignIn.xcframework in Frameworks */,
+				03C91C0F2A7B51BE00289870 /* FBSDKShareKit.xcframework in Frameworks */,
 				0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */,
 				0362D7022A25DA91003F0A2B /* GoogleUtilities.xcframework in Frameworks */,
 				0362D7032A25DA97003F0A2B /* FirebaseAuth.xcframework in Frameworks */,
@@ -2231,11 +2243,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -2302,11 +2310,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/Facebook-v16.0/**",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -2361,10 +2365,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3G7N2YA85H;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -2427,10 +2428,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3G7N2YA85H;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";

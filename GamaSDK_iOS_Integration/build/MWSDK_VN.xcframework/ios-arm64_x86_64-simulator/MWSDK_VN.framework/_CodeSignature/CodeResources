@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/MWSDK.h</key>
 		<data>
-		CHZLaLxlwPj7/bvbHBeHI2M76oI=
+		YGlSqazbGHk4F4ETR3q0rS5qWyY=
 		</data>
 		<key>Headers/MWStringHeaders.h</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Info.plist</key>
 		<data>
 		Tks17gjRUaI4c43QAHOg23hVntw=
+		</data>
+		<key>adjust-info-vnmxwios.plist</key>
+		<data>
+		uiqcxuxl3fwlEZDdj5ck1jCLhlY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -42,11 +46,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CHZLaLxlwPj7/bvbHBeHI2M76oI=
+			YGlSqazbGHk4F4ETR3q0rS5qWyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cbzjvZLWFJh/eTNvyXCxXH8vNtVWiDeltQpewQF4dSE=
+			YR4UOi5RM+ENWrVhoXAi2UVlsMMkUt1O3VdwzwSTB/c=
 			</data>
 		</dict>
 		<key>Headers/MWStringHeaders.h</key>
@@ -69,6 +73,17 @@
 			<key>hash2</key>
 			<data>
 			DXuuhUAQP+qCe3cHqfjN5k34sH+YELEVma+B0tGQkU4=
+			</data>
+		</dict>
+		<key>adjust-info-vnmxwios.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uiqcxuxl3fwlEZDdj5ck1jCLhlY=
+			</data>
+			<key>hash2</key>
+			<data>
+			wLnLKxaA+UWBEkFZiJIwIHfYoLaBuNzzczFRN+mFDb4=
 			</data>
 		</dict>
 	</dict>
