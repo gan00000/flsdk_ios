@@ -67,7 +67,7 @@
     [DekaspecialeurBursly application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [MyselfMindo application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     if (!result) {
-        result = [MrizationTriptwise application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+//        result = [MrizationTriptwise application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }
     
     return result;
@@ -78,9 +78,9 @@
     SDK_LOG(@"ios9 and later = application openURL options，openURL:%@", [url absoluteString]);
     [DekaspecialeurBursly application:application openURL:url options:options];
     BOOL result = [MyselfMindo application:application openURL:url options:options];
-    if (!result) {
-        result = [MrizationTriptwise application:application openURL:url options:options];
-    }
+//    if (!result) {
+//        result = [MrizationTriptwise application:application openURL:url options:options];
+//    }
     
     if (!result) {
         result = [CerebroitorVoluntatic application:application openURL:url options:options];

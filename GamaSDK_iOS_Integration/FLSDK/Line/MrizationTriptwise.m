@@ -1,12 +1,12 @@
 
 
 #import "MrizationTriptwise.h"
-#import "LineSDK/LineSDK.h"
+//#import "LineSDK/LineSDK.h"
 
 
 #import "CComHeader.h"
 
-@interface MrizationTriptwise() <LineSDKLoginDelegate>
+@interface MrizationTriptwise() //<LineSDKLoginDelegate>
 
 @property (nonatomic) LineCallBack successCallBack;
 @property (nonatomic) LineCallBack failCallBack;
@@ -220,18 +220,18 @@ switch (B_quadrular) {
     return YES;
 }
 
-+ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+//+ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+//{
+//    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+//
+//}
 
-}
 
-
-+(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
-{
-    
-    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
-}
+//+(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
+//{
+//
+//    return [[LineSDKLogin sharedInstance] handleOpenURL:url];
+//}
 
 -(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
 {
@@ -254,8 +254,8 @@ switch (B_quadrular) {
 
     self.failCallBack = failCallBack;
     
-    [LineSDKLogin sharedInstance].delegate = self;
-    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
+//    [LineSDKLogin sharedInstance].delegate = self;
+//    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];
 
 		//====insert my code start===  2023-05-30 11:20:43
 		{
@@ -343,87 +343,87 @@ switch (B_quadrular) {
 }
 
 
-
-- (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
-
-
-    if (error) {
-        
-        NSLog(@"Error: %@", error.localizedDescription);
-
-		//====insert my code start===  2023-05-30 11:20:43
-		{
-		
-	NSInteger k_10 = [MrizationTriptwise professionalityAllelrealise:nil quesityGregette:nil skillallyMatterster:nil thuswardTredecia:nil sceneiorProfessor:nil muscAllelacious:6494 ];
-	if(k_10){}
-            float graphicCrispid = 1995.0;
-            if (@(graphicCrispid).doubleValue < 2843) {}
-		}
-		//====insert my code end===  2023-05-30 11:20:43
-
-        if (self.failCallBack) {
-            self.failCallBack(@"",@"",@"");
-        }
-    }else {
-
-        
-        NSString * accessToken = credential.accessToken.accessToken;
-        NSString * userID = profile.userID;
-        NSString * displayName = profile.displayName;
-
-		//====insert my code start===  2023-05-30 11:20:43
-		{
-		
-	NSInteger p_15 = [MrizationTriptwise professionalityAllelrealise:nil quesityGregette:nil skillallyMatterster:nil thuswardTredecia:nil sceneiorProfessor:nil muscAllelacious:8033 ];
-	if(p_15){}
-        
-        BOOL pushacityPaussure = NO;
-        if (pushacityPaussure)
-        {
-            pushacityPaussure = YES;
-        }
-
-        
-		}
-		//====insert my code end===  2023-05-30 11:20:43
-
-        NSString * statusMessage = profile.statusMessage;
-        NSURL * pictureURL = profile.pictureURL;
-
-        NSString * pictureUrlString;
-
-        
-        if (pictureURL) {
-            pictureUrlString = profile.pictureURL.absoluteString;
-
-		//====insert my code start===  2023-05-30 11:20:43
-		{
-		
-	NSString * K_36 = [MrizationTriptwise tricuousFilmster:8004 nugacidirectionenClystable:8540 frainkinCalory:5591 wifeibilityOesophagfy:1809 pulchrionWindowize:nil jejunoenOramesque:1781 pressureerPyrshouldhood:@"partfierMetaacle" ];
-	if(K_36){}
-        
-        float cystadBlennremainance = 3935;
-        BOOL movitudeFoldivity = YES;
-        if (cystadBlennremainance != 8437){
-            
-            movitudeFoldivity = NO;
-        }else{
-            movitudeFoldivity = YES;
-        }
-
-        
-		}
-		//====insert my code end===  2023-05-30 11:20:43
-
-        }
-        SDK_LOG(@"accessToken=%@,userID=%@,displayName=%@",accessToken,userID,displayName);
-        if (self.successCallBack) {
-            self.successCallBack(accessToken, userID, displayName);
-        }
-
-    }
-
-}
+//
+//- (void)didLogin:(LineSDKLogin *)login credential:(nullable LineSDKCredential *)credential profile:(nullable LineSDKProfile *)profile error:(nullable NSError *)error {
+//
+//
+//    if (error) {
+//
+//        NSLog(@"Error: %@", error.localizedDescription);
+//
+//		//====insert my code start===  2023-05-30 11:20:43
+//		{
+//
+//	NSInteger k_10 = [MrizationTriptwise professionalityAllelrealise:nil quesityGregette:nil skillallyMatterster:nil thuswardTredecia:nil sceneiorProfessor:nil muscAllelacious:6494 ];
+//	if(k_10){}
+//            float graphicCrispid = 1995.0;
+//            if (@(graphicCrispid).doubleValue < 2843) {}
+//		}
+//		//====insert my code end===  2023-05-30 11:20:43
+//
+//        if (self.failCallBack) {
+//            self.failCallBack(@"",@"",@"");
+//        }
+//    }else {
+//
+//
+//        NSString * accessToken = credential.accessToken.accessToken;
+//        NSString * userID = profile.userID;
+//        NSString * displayName = profile.displayName;
+//
+//		//====insert my code start===  2023-05-30 11:20:43
+//		{
+//
+//	NSInteger p_15 = [MrizationTriptwise professionalityAllelrealise:nil quesityGregette:nil skillallyMatterster:nil thuswardTredecia:nil sceneiorProfessor:nil muscAllelacious:8033 ];
+//	if(p_15){}
+//
+//        BOOL pushacityPaussure = NO;
+//        if (pushacityPaussure)
+//        {
+//            pushacityPaussure = YES;
+//        }
+//
+//
+//		}
+//		//====insert my code end===  2023-05-30 11:20:43
+//
+//        NSString * statusMessage = profile.statusMessage;
+//        NSURL * pictureURL = profile.pictureURL;
+//
+//        NSString * pictureUrlString;
+//
+//
+//        if (pictureURL) {
+//            pictureUrlString = profile.pictureURL.absoluteString;
+//
+//		//====insert my code start===  2023-05-30 11:20:43
+//		{
+//
+//	NSString * K_36 = [MrizationTriptwise tricuousFilmster:8004 nugacidirectionenClystable:8540 frainkinCalory:5591 wifeibilityOesophagfy:1809 pulchrionWindowize:nil jejunoenOramesque:1781 pressureerPyrshouldhood:@"partfierMetaacle" ];
+//	if(K_36){}
+//
+//        float cystadBlennremainance = 3935;
+//        BOOL movitudeFoldivity = YES;
+//        if (cystadBlennremainance != 8437){
+//
+//            movitudeFoldivity = NO;
+//        }else{
+//            movitudeFoldivity = YES;
+//        }
+//
+//
+//		}
+//		//====insert my code end===  2023-05-30 11:20:43
+//
+//        }
+//        SDK_LOG(@"accessToken=%@,userID=%@,displayName=%@",accessToken,userID,displayName);
+//        if (self.successCallBack) {
+//            self.successCallBack(accessToken, userID, displayName);
+//        }
+//
+//    }
+//
+//}
 
 
 //===insert my method start=== 2023-05-30 11:20:43
