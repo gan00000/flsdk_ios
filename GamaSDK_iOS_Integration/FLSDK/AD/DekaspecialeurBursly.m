@@ -686,7 +686,7 @@ if(R_thermtheoryatic < 42155){
     
     @try {
         
-
+        SDK_LOG(@"logEvent start eventName=%@",eventName);
 		//====insert my code start===  2023-05-30 11:20:43
 		{
 		
@@ -701,6 +701,7 @@ if(R_thermtheoryatic < 42155){
 		//====insert my code end===  2023-05-30 11:20:43
 
         if (type & AdType_Appflyer) {
+            SDK_LOG(@"logEvent af eventName=%@",eventName);
             [[AppsFlyerLib shared]  logEvent:eventName withValues:eventValues];
 
 		//====insert my code start===  2023-05-30 11:20:43
@@ -784,7 +785,7 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
 
         }
         if (type & AdType_Firebase) {
-            
+            SDK_LOG(@"logEvent firebase eventName=%@",eventName);
             [FIRAnalytics logEventWithName:eventName parameters:eventValues];
 
 		//====insert my code start===  2023-05-30 11:20:43
@@ -819,9 +820,10 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
         }
         if (type & AdType_FB) {
             
-             
+            SDK_LOG(@"logEvent fb eventName=%@",eventName);
             [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
         }
+        SDK_LOG(@"logEvent end eventName=%@",eventName);
        
         //adjust
         [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventValues];
