@@ -12,6 +12,7 @@
     "sdk_url_login" : "https://login.tthplay.com/",
     "sdk_url_pay" : "https://pay.tthplay.com/",
     "sdk_v_version" : "v_vn",
-    "terms_service_url" : "https://member.tthplay.com/sdk/agreement/%@_agreement.html"
+    "terms_service_url" : "https://member.tthplay.com/sdk/agreement/%@_agreement.html",
+    "adjust_app_token" : "50vj3536d1j4"
     
 }
