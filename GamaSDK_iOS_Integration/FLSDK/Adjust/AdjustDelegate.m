@@ -71,6 +71,7 @@
         NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
         
         if (!adjustEventPlistPath) {
+            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
             return;
         }
         eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
