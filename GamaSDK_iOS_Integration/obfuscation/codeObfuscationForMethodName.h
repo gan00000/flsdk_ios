@@ -474,4 +474,11 @@
 #define getPhoneAreaInfo_MMMethodMMM       getPhoneAreaInfoLocalHome
 #define getPhoneInfoByAreaCode_MMMethodMMM        getPhoneInfoByAreaCode
 
+#define saveGameUserInfo_MMMethodMMM        saveTheRoleMsg
+#define getGameUserInfo_MMMethodMMM         getTheRoleMsg
+#define updateGameUserInfo_MMMethodMMM         updateTheRoleMsg
+#define getDateStringWithTimeStr_MMMethodMMM    getLocalDateSTimeStr
+#define dateFormat_MMMethodMMM                  dFormatStr
+#define getYesterdayDateWithTimeStr_MMMethodMMM         getYdayDateString
+
 #endif  /* codeObfuscation_h */

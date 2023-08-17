@@ -1495,6 +1495,37 @@
     return  nsDateString;
 }
 
+// 时间戳转时间,时间戳为13位是精确到毫秒的，10位精确到秒
++(NSString *)getDateStringWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat{
+    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+    NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
+    //设定时间格式,这里可以设置成自己需要的格式
+    if([QuatiRatherior isEmpty_MMMethodMMM:dateFormat]){
+        dateFormat = @"yyyy-MM-dd HH:mm:ss SS";
+    }
+    [dateFormatter setDateFormat:dateFormat];
+    NSString *currentDateStr = [dateFormatter stringFromDate: detailDate];
+    return currentDateStr;
+}
+//获取给定时间的前一天时间
++ (NSString *)getYesterdayDateWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat{
+    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+    NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
+    
+    NSDate *yesterDay = [NSDate dateWithTimeInterval:-24*60*60 sinceDate:detailDate];//前一天
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
+    //设定时间格式,这里可以设置成自己需要的格式
+    if([QuatiRatherior isEmpty_MMMethodMMM:dateFormat]){
+        dateFormat = @"yyyy-MM-dd HH:mm:ss SS";
+    }
+    [dateFormatter setDateFormat:dateFormat];
+    NSString *mDateStr = [dateFormatter stringFromDate:yesterDay];
+    return mDateStr;
+}
+
+
 #pragma mark - 获取项目配置信息
 
 //===insert my method start=== 2023-05-04 15:54:50

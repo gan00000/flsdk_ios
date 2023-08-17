@@ -416,7 +416,7 @@
 #define wwwww_tag_wwwww__CC_FC676F      Decrypt_AllStringContent(@"yURGvKQYf7n0pZ3dAH6IeQ==")  //@"#FC676F"
 #define wwwww_tag_wwwww__CC_FF9944      Decrypt_AllStringContent(@"KEDaAOqWt55vAfkfsFY+LQ==")  //@"#FF9944"
 #define wwwww_tag_wwwww_Upgrade_Account      Decrypt_AllStringContent(@"BjTOYelFEKDJ7ZlqsRJ4KA==")  //@"Upgrade_Account"
-
+#define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 
 
 #endif /* Headers_h */

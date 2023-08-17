@@ -1522,10 +1522,27 @@
         [HerselfativeElsefold logServerWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS];
         [HerselfativeElsefold logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
         
+        [[SimplyaticCar share] saveGameUserInfo_MMMethodMMM:loginResopnse];//记录，后面广告时间追踪使用
+        
     }else {
         
         [HerselfativeElsefold logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
         [HerselfativeElsefold logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        
+        
+        StochosityAposisterior *xxGameUserModel = [[SimplyaticCar share] getGameUserInfo_MMMethodMMM:loginResopnse.data.userId];
+        if(xxGameUserModel && xxGameUserModel.isRegDayPay){
+            
+            NSString *yesterDate = [OctavsubjectmostRepresentling getYesterdayDateWithTimeStr_MMMethodMMM:loginResopnse.data.timestamp dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
+            NSString *regDate = [OctavsubjectmostRepresentling getDateStringWithTimeStr_MMMethodMMM:xxGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
+            SDK_LOG(@"yesterDate=%@, regDate=%@", yesterDate, regDate);
+            if([yesterDate isEqualToString:regDate] && xxGameUserModel.isRegDayPay){
+                //注册首日付费玩家第二天登录上报
+                SDK_LOG(@"log event Paid_D2Login start");
+                [HerselfativeElsefold logWithEventName_MMMethodMMM:@"Paid_D2Login" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
+            }
+        }
+
     }
     
 

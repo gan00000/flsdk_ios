@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AccountModel.h"
+#import "StochosityAposisterior.h"
+#import "LoginResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,6 +37,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)pilatoryTheory:(NSString *)pilatory_1 workencyEssure:(NSString *)workency_2 ontoonMicactuallyern:(float)ontoon_3 becausemostLoquithroughout:(NSObject *)becausemost_4 centralfoldPathard:(BOOL)centralfold_5 blueaciousRisk:(long)blueacious_6 seriesacityClearlyform:(int)seriesacity_7;//insert method def
 - (NSString *)ornithoboardageHappyally:(NSString *)ornithoboardage_1 trixalWellaire:(NSString *)trixal_2 publicPerson:(SimplyaticCar *)public_3;//insert method def
 - (NSString *)whiteArgueosity:(NSArray *)white_1 cursOffous:(float)curs_2 mentionlyAptakeent:(NSMutableDictionary *)mentionly_3 hypshipRegiono:(BOOL)hypship_4 levartiblePrivimost:(long)levartible_5 paintingHygraceous:(long)painting_6 numerbitardTheory:(NSMutableDictionary *)numerbitard_7 septorLus:(int)septor_8;//insert method def
+
+-(void)saveGameUserInfo_MMMethodMMM:(LoginResponse *)loginResopnse;
+-(StochosityAposisterior*)getGameUserInfo_MMMethodMMM:(NSString *)userId;
+-(void)updateGameUserInfo_MMMethodMMM:(StochosityAposisterior *)gameUserModel;
+
 @end
 
 NS_ASSUME_NONNULL_END
