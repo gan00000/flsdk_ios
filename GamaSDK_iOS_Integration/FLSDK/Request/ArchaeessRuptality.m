@@ -1,13 +1,6 @@
-
-
-
-
-
-
-
-
 #import "ArchaeessRuptality.h"
 #import "DifficultAtibility.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 
 @implementation ArchaeessRuptality
@@ -1285,6 +1278,7 @@
         wwwww_tag_wwwww_uniqueId         :     [[OctavsubjectmostRepresentling getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
+        wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
 
         
     };
