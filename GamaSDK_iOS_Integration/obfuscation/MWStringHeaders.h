@@ -287,6 +287,7 @@
 #define wwwww_tag_wwwww__CC_C0C0C0        @"#C0C0C0"  //@"#C0C0C0"
 #define wwwww_tag_wwwww_text_ui_term_port_read2        @"text_ui_term_port_read2"  //@"text_ui_term_port_read2"
 #define wwwww_tag_wwwww_sdk_terms_title        @"sdk_terms_title"  //@"sdk_terms_title"
+#define wwwww_tag_wwwww_text_personal_clause_and_privacy_policy     @"text_personal_clause_and_privacy_policy"  //@"text_personal_clause_and_privacy_policy"
 #define wwwww_tag_wwwww_kAgreeTermsCheckBoxBtnTag        @"kAgreeTermsCheckBoxBtnTag"  //@"kAgreeTermsCheckBoxBtnTag"
 #define wwwww_tag_wwwww_appleLoginActTag        @"appleLoginActTag"  //@"appleLoginActTag"
 #define wwwww_tag_wwwww_guestLoginActTag        @"guestLoginActTag"  //@"guestLoginActTag"

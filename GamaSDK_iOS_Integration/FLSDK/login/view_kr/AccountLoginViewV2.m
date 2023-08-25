@@ -162,7 +162,7 @@
             
         }];
         
-        NSString *xtext = GetString(wwwww_tag_wwwww_sdk_terms_title);
+        NSString *xtext = GetString(wwwww_tag_wwwww_text_personal_clause_and_privacy_policy);
         UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         //            rememberTermsLable.backgroundColor = [UIColor clearColor];

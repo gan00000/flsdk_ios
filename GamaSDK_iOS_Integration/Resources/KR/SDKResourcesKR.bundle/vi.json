@@ -128,5 +128,6 @@
     "text_age_already_14"  :  "trên 14 tuổi",
     "text_has_upgrade_account"     :  "Tài khoản đã nâng cấp",
     "text_privacy_policy"  :  "Chính sách bảo mật",
-    "text_personal_clause"  :  "Khế ước định hình hóa"
+    "text_personal_clause"  :  "Khế ước định hình hóa",
+    "text_personal_clause_and_privacy_policy"  :  "Chính sách bảo mật&Khế ước định hình hóa"
 }

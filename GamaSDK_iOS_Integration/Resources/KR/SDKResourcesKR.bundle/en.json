@@ -128,5 +128,6 @@
 "text_age_already_14"  :  "over 14 years old",
 "text_has_upgrade_account"     :  "Account has been upgraded",
 "text_privacy_policy"  :  "Privacy policy",
-"text_personal_clause"  :  "personal clause"
+"text_personal_clause"  :  "Personal clause",
+"text_personal_clause_and_privacy_policy"  :  "Privacy policy&Personal clause"
 }

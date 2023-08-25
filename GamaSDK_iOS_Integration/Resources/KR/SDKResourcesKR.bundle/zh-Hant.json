@@ -128,6 +128,7 @@
 "text_age_already_14"  :  "已滿14周歲",
 "text_has_upgrade_account"     :  "已升級為會員帳號",
 "text_privacy_policy"  :  "隱私政策",
-"text_personal_clause"  :  "個人條款"
+"text_personal_clause"  :  "個人條款",
+"text_personal_clause_and_privacy_policy"  :  "隱私政策&個人條款"
 
 }

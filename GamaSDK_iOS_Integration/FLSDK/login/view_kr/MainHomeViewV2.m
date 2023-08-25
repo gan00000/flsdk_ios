@@ -336,19 +336,20 @@
        
     }];
     
-        NSString *xtext = GetString(wwwww_tag_wwwww_text_ui_term_port_read2);
-    NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
+        NSString *xtext = GetString(wwwww_tag_wwwww_text_personal_clause_and_privacy_policy);
+//    NSString *temptext = GetString(wwwww_tag_wwwww_sdk_terms_title);
     
         UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
         rememberTermsLable.textAlignment = NSTextAlignmentLeft;
         rememberTermsLable.backgroundColor = [UIColor clearColor];
         rememberTermsLable.numberOfLines = 1;
         
+        NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
     
-         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
-         };
-         NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
+//         NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:FS(10)]
+//         };
+         
+//        [attribtStr addAttributes:attribtDic range: NSMakeRange(xtext.length- temptext.length, temptext.length)];
          //赋值
         rememberTermsLable.attributedText = attribtStr;
         
