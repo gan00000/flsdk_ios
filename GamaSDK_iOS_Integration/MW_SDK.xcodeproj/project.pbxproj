@@ -1387,10 +1387,11 @@
 		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
 		03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
 		03C05CAA28AE5F6B0060F4CD /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
+		03C3FB1D2A98A73000DF4DA7 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
+		03C3FB1E2A98A73500DF4DA7 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C91BA82A7A377100289870 /* AdjustDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C91BA62A7A377100289870 /* AdjustDelegate.h */; };
 		03C91BA92A7A377100289870 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
 		03C91BAF2A7A389700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
-		03C91BB02A7A389700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C91BB22A7A415000289870 /* adjust-info-vnmxwios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */; };
 		03CA721C29D5698400098979 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
@@ -2585,6 +2586,7 @@
 				0392B2A72A5BA9F600A3E2D6 /* Social.framework in Frameworks */,
 				0392B2A82A5BA9F600A3E2D6 /* GTMSessionFetcher.xcframework in Frameworks */,
 				0392B2A92A5BA9F600A3E2D6 /* AVFoundation.framework in Frameworks */,
+				03C3FB1E2A98A73500DF4DA7 /* AdjustSdk.xcframework in Frameworks */,
 				0392B2AA2A5BA9F600A3E2D6 /* AddressBook.framework in Frameworks */,
 				0392B2AB2A5BA9F600A3E2D6 /* QuartzCore.framework in Frameworks */,
 				0392B2AC2A5BA9F600A3E2D6 /* Photos.framework in Frameworks */,
@@ -2718,7 +2720,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C91BB02A7A389700289870 /* AdjustSdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5366,6 +5367,7 @@
 				0392B1E42A5BA8DC00A3E2D6 /* UIImageView+WebCache.m in Sources */,
 				0392B1E52A5BA8DC00A3E2D6 /* UIView+WebCacheOperation.m in Sources */,
 				0392B1E62A5BA8DC00A3E2D6 /* UIButton+WebCache.m in Sources */,
+				03C3FB1D2A98A73000DF4DA7 /* AdjustDelegate.m in Sources */,
 				0392B1E72A5BA8DC00A3E2D6 /* AdLogger.m in Sources */,
 				0392B1E82A5BA8DC00A3E2D6 /* AdDelegate.m in Sources */,
 				0392B1E92A5BA8DC00A3E2D6 /* CCSDKDATA.m in Sources */,
@@ -5871,7 +5873,6 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
@@ -6859,10 +6860,7 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -6925,10 +6923,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
-					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -7129,7 +7124,6 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
@@ -7402,7 +7396,6 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
@@ -7533,7 +7526,6 @@
 				DEVELOPMENT_TEAM = A99DKAL476;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5ZWQQ6MZ65;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Resources/ThirkLib/LineSDK",
 					"$(PROJECT_DIR)/Resources/ThirkLib/AF-v6.7.0",
