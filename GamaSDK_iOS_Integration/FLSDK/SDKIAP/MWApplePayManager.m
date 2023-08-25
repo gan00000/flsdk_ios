@@ -213,7 +213,6 @@
         payment.applicationUsername = self.currentOrderId;//[NSString stringWithFormat:@"%@",[[AAUserManager shareManager_MMMethodMMM] getUID]];
     }
     SDK_LOG(@"发起付款-addPayment");
-    [AdLogger logWithEventName_MMMethodMMM:wwwww_tag_wwwww_Initiate_Checkout parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
 
