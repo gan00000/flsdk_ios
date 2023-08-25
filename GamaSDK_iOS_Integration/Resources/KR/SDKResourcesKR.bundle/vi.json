@@ -126,5 +126,7 @@
     "text_age_is14"  :  "bạn trên 14 tuổi",
     "text_age_not14_logout"  :  "Lưu ý: Nếu bạn dưới 14 tuổi, vui lòng thoát ra càng sớm càng tốt, ứng dụng này không dành cho người dùng dưới 14 tuổi",
     "text_age_already_14"  :  "trên 14 tuổi",
-    "text_has_upgrade_account"     :  "Tài khoản đã nâng cấp"
+    "text_has_upgrade_account"     :  "Tài khoản đã nâng cấp",
+    "text_privacy_policy"  :  "Chính sách bảo mật",
+    "text_personal_clause"  :  "Khế ước định hình hóa"
 }

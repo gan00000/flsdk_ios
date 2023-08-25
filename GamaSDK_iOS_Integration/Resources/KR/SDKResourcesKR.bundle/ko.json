@@ -126,5 +126,7 @@
 "text_age_is14" :  "14세 미만입니까?",
 "text_age_not14_logout" :  "주의: 14세 미만이라면 빠르게 로그아웃하세요. 14세 미만 사용자는 이 앱을 사용할 수 없습니다.",
 "text_age_already_14" :  "14세 이상입니다.",
-"text_has_upgrade_account"     :  "회원 계정으로 업그레이드됨"
+"text_has_upgrade_account"     :  "회원 계정으로 업그레이드됨",
+"text_privacy_policy"  :  "개인정보",
+"text_personal_clause"  :  "이용약관"
 }

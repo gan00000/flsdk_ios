@@ -54,6 +54,8 @@
 #define C_BUTTON_START  @"#FF948B"
 #define C_BUTTON_END  @"#FE3D82"
 
+#define term_title_unselect     @"#B1B1B1"
+
 #else
 
 #define BaseColor  wwwww_tag_wwwww__CC_FF892E

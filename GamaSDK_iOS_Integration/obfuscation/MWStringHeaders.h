@@ -426,5 +426,7 @@
 #define wwwww_tag_wwwww_text_age_not14_logout        @"text_age_not14_logout"  //@"text_age_not14_logout"
 #define wwwww_tag_wwwww_text_age_already_14        @"text_age_already_14"  //@"text_age_already_14"
 #define wwwww_tag_wwwww__CC_FF0000        @"#FF0000"  //@"#FF0000"
+#define wwwww_tag_wwwww_text_privacy_policy        @"text_privacy_policy"  //@"text_privacy_policy"
+#define wwwww_tag_wwwww_text_personal_clause        @"text_personal_clause"  //@"text_personal_clause"
 
 #endif /* Headers_h */

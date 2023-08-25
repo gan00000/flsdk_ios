@@ -114,6 +114,8 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define appleLoginActTag    2004
 #define lineLoginActTag    2005
 #define naverLoginActTag    2006
+#define privacyPolicyActTag   2007
+#define personalClauseActTag    2008
 
 #define TAG_CLOSE    90
 

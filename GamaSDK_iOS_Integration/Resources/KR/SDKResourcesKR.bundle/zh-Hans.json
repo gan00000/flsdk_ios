@@ -126,5 +126,7 @@
 "text_age_is14"  :  "你是否已满14周岁",
 "text_age_not14_logout"  :  "注：如果您未满14周岁，请尽快退出，该应用不对14周岁以下用户开放",
 "text_age_already_14"  :  "已满14周岁",
-"text_has_upgrade_account"     :  "已升级为会员账号"
+"text_has_upgrade_account"     :  "已升级为会员账号",
+"text_privacy_policy"  :  "隐私政策",
+"text_personal_clause"  :  "个人条款"
 }
