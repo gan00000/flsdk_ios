@@ -137,7 +137,7 @@
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
     }
-    
+    self.sdkBaseEncryptKey = @"mwsdk-kr-0828";
     return self;
 }
 
