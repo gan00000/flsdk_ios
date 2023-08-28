@@ -1,0 +1,136 @@
+
+
+#import "DurlikeThingatorView.h"
+#import "SdkHeader.h"
+#import "TarsasterLipiseView.h"
+#import "MulctfulHemeresqueView.h"
+#import "LaterhoodCortView.h"
+#import "EquinsexageChoiceitudeButton.h"
+#import "ScienceonOmenonceacy.h"
+#import "PointsionValueain.h"
+#import "CorticoalityHormship.h"
+
+@implementation DurlikeThingatorView
+
+{
+    
+    UIButton *closeBtn;
+    UIButton *age14AlreadyBtn;
+    
+    
+}
+
+- (instancetype)initView_MMMethodMMM
+{
+    self = [super init];
+    if (self) {
+        
+        UIView *myView = [[UIView alloc] init];
+        myView.backgroundColor = UIColor.whiteColor;
+        myView.layer.cornerRadius = VH(6);
+        [self addSubview:myView];
+        [myView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self);
+            make.width.mas_equalTo(VW(284));
+            make.height.mas_equalTo(VH(184));
+        }];
+        UIImageView *ageWarnView = [LaughelArborthattion initImageViewWithImage_MMMethodMMM:age_14_warn];
+        [myView addSubview:ageWarnView];
+        [ageWarnView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(myView).mas_offset(VH(12));
+            make.centerX.mas_equalTo(myView);
+            make.width.mas_equalTo(VH(40));
+            make.height.mas_equalTo(VH(40));
+            
+        }];
+        
+        UILabel *age14Lable = [LaughelArborthattion initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_age_is14) fontSize_MMMethodMMM:FS(16) textColor_MMMethodMMM:[UIColor blackColor]];
+        age14Lable.numberOfLines = 1;
+        [myView addSubview:age14Lable];
+        [age14Lable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(ageWarnView.mas_bottom).mas_offset(VH(9));
+            make.centerX.mas_equalTo(myView);
+        }];
+        
+        UILabel *ageNot14LogoutLable = [LaughelArborthattion initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_age_not14_logout) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#FF0000"]];
+        ageNot14LogoutLable.numberOfLines = 0;
+        [myView addSubview:ageNot14LogoutLable];
+        [ageNot14LogoutLable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(age14Lable.mas_bottom).mas_offset(VH(16));
+            make.leading.mas_equalTo(myView).mas_offset(12);
+            make.trailing.mas_equalTo(myView).mas_offset(-12);;
+        }];
+        
+        
+        closeBtn = [LaughelArborthattion initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_close) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor blackColor] tag_MMMethodMMM:TAG_CLOSE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+
+        closeBtn.layer.borderColor = [UIColor blackColor].CGColor;
+        closeBtn.layer.borderWidth = 0.5;
+        closeBtn.layer.cornerRadius = VH(15);
+        [myView addSubview:closeBtn];
+        [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-14));
+            make.trailing.mas_equalTo(myView.mas_centerX).mas_offset(-5);
+            make.width.mas_equalTo(VW(110));
+            make.height.mas_equalTo(VH(30));
+
+        }];
+        
+        age14AlreadyBtn = [LaughelArborthattion initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_age_already_14) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+
+        age14AlreadyBtn.layer.cornerRadius = VH(15);
+        
+        CAGradientLayer *mGl = [CorticoalityHormship createGradientLayerWithRadius_MMMethodMMM:VH(15)];
+        [age14AlreadyBtn.layer addSublayer:mGl];
+
+        
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            mGl.frame = age14AlreadyBtn.bounds;
+        }];
+        
+        [myView addSubview:age14AlreadyBtn];
+        [age14AlreadyBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(myView.mas_bottom).mas_offset(VH(-14));
+            make.leading.mas_equalTo(myView.mas_centerX).mas_offset(5);
+            make.width.mas_equalTo(VW(110));
+            make.height.mas_equalTo(VH(30));
+
+        }];
+        
+        
+    }
+    return self;
+}
+
+
+- (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
+{
+    switch (sender.tag) {
+            
+        case kOkActTag:
+        {
+            [PointsionValueain saveAlready14Age_MMMethodMMM:YES];
+            if(self.delegate){
+                [self.delegate showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_AGE14_QUA)];
+            }
+        }
+            break;
+            
+        case TAG_CLOSE:
+        {
+            if(self.delegate){
+                [self.delegate showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_AGE14_QUA)];
+            }
+        }
+            
+            
+            break;
+            
+            
+        default:
+            break;
+    }
+}
+
+
+@end

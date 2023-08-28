@@ -1,32 +1,32 @@
 #import "MWSDK.h"
 
-#import "AdLogger.h"
-#import "SDKLoginViewController.h"
-#import "SUtil.h"
-#import "StringUtil.h"
+#import "PavidaciousCentenity.h"
+#import "CapitalaticPartnerenController.h"
+#import "BreviVincy.h"
+#import "PentadeWhole.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-#import "SDKRequest.h"
+#import "ScienceonOmenonceacy.h"
 
-#import "FBDelegate.h"
-#import "LineDelegate.h"
-#import "MWApplePayManager.h"
-#import "AdLogger.h"
+#import "MoneyierExpectity.h"
+#import "BucciteActivity.h"
+#import "EitherfactionPatriant.h"
+#import "PavidaciousCentenity.h"
 
-#import "NoticeViewV2.h"
-#import "BindPhoneViewV2.h"
-#import "BindAccountViewV2.h"
+#import "ArgentariumElectrateView.h"
+#import "LithaneousGramitorView.h"
+#import "CracyletFringcyView.h"
 
-#import "AdDelegate.h"
-#import "MWWebViewController.h"
-#import "TouchEventInterruptView.h"
+#import "TegDealfaction.h"
+#import "PamosityDevelopuousController.h"
+#import "PtyaluponFrictView.h"
 #import <StoreKit/StoreKit.h>
-#import "GIDDelegate.h"
+#import "LaborsomeClearly.h"
 
 #ifdef SDK_KR
-#import "NaverDelegate.h"
+#import "MeasureastCulp.h"
 #endif
 
 
@@ -47,8 +47,8 @@
          annotation:(id)annotation
 {
     SDK_LOG(@"application openURL sourceApplication annotation");
-    [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    [TegDealfaction application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    BOOL result = [MoneyierExpectity application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     
     return result;
 }
@@ -56,19 +56,19 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
     SDK_LOG(@"ios9 and later = application openURL options，openURL:%@", [url absoluteString]);
-    [AdDelegate application:application openURL:url options:options];
-    BOOL result = [FBDelegate application:application openURL:url options:options];
+    [TegDealfaction application:application openURL:url options:options];
+    BOOL result = [MoneyierExpectity application:application openURL:url options:options];
     if (!result) {
-        result = [LineDelegate application:application openURL:url options:options];
+        result = [BucciteActivity application:application openURL:url options:options];
     }
     
     if (!result) {
-        result = [GIDDelegate application:application openURL:url options:options];
+        result = [LaborsomeClearly application:application openURL:url options:options];
     }
     
 #ifdef SDK_KR
     if (!result) {
-        result = [[NaverDelegate share] application:application openURL:url options:options];
+        result = [[MeasureastCulp share] application:application openURL:url options:options];
     }
 #endif
     return result;
@@ -85,7 +85,7 @@
         return UIInterfaceOrientationMaskPortrait;
     }
     
-    NSArray *infoUISupportedInterfaceOrientations_aar = [SUtil getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
+    NSArray *infoUISupportedInterfaceOrientations_aar = [BreviVincy getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
     if(!infoUISupportedInterfaceOrientations_aar){
         return UIInterfaceOrientationMaskAll;
     }
@@ -133,7 +133,7 @@
     SDK_LOG(@"sdkLoginWithHandler");
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -158,7 +158,7 @@
 - (void)sdkLoginWithHandlerForInner
 {
     SDK_LOG(@"sdkLoginWithHandlerForInner");
-    SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
+    CapitalaticPartnerenController *controller = [[CapitalaticPartnerenController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
     
 #ifdef __IPHONE_8_0
     if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
@@ -172,7 +172,7 @@
     SDK_LOG(@"not def __IPHONE_8_0");
 #endif
     
-    [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
+    [[BreviVincy getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
         
     }];
     
@@ -181,13 +181,13 @@
 
 -(void)showNoticeView
 {
-    NoticeViewV2 *mNoticeViewV2 = [[NoticeViewV2 alloc] initWithCompleter_MMMethodMMM:^{
+    ArgentariumElectrateView *mNoticeViewV2 = [[ArgentariumElectrateView alloc] initWithCompleter_MMMethodMMM:^{
         
         [self sdkLoginWithHandlerForInner];
     }];
     
     UIView *superView = appTopViewController.view;
-    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    UIView *bgV = [[PtyaluponFrictView alloc] init];
     [superView addSubview:bgV];
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
@@ -213,12 +213,12 @@
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     
-    if ([StringUtil isEmpty_MMMethodMMM:roleId] || [StringUtil isEmpty_MMMethodMMM:roleName] ||
-        [StringUtil isEmpty_MMMethodMMM:roleLevel] ||
-        [StringUtil isEmpty_MMMethodMMM:serverCode])
+    if ([PentadeWhole isEmpty_MMMethodMMM:roleId] || [PentadeWhole isEmpty_MMMethodMMM:roleName] ||
+        [PentadeWhole isEmpty_MMMethodMMM:roleLevel] ||
+        [PentadeWhole isEmpty_MMMethodMMM:serverCode])
     {
         
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
         return;
     }
     
@@ -246,27 +246,27 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
     
-    if ([StringUtil isEmpty_MMMethodMMM:productId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
+    if ([PentadeWhole isEmpty_MMMethodMMM:productId]) {
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:roleId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+    if ([PentadeWhole isEmpty_MMMethodMMM:roleId]) {
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:serverCode]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+    if ([PentadeWhole isEmpty_MMMethodMMM:serverCode]) {
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:cpOrderId]) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
+    if ([PentadeWhole isEmpty_MMMethodMMM:cpOrderId]) {
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
         return;
     }
     
@@ -289,26 +289,26 @@
     AccountModel *accountModel = sLoginResponse.data;
     
     if (!accountModel || !accountModel.userId) {
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
         self.isPaying = NO;
         return;
     }
     
     [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
     
-    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+    [[EitherfactionPatriant shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
         
         self.isPaying = NO;
         
         if (self.payHandler) {
             if (success) {
                
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [TreatmentianOrecticsion _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
                 if (!havePay) {
                 }
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [TreatmentianOrecticsion _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
                 
-                [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
+                [TegDealfaction logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
                 self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 
@@ -329,11 +329,11 @@
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
-    [AdLogger logServerWithEventName_MMMethodMMM:name];
-    [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
+    [PavidaciousCentenity logServerWithEventName_MMMethodMMM:name];
+    [PavidaciousCentenity logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 
 
@@ -342,7 +342,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if (@available(iOS 10.3, *)) {
@@ -356,11 +356,11 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
-    [[FBDelegate share] shareWithTag_MMMethodMMM:hashTag message_MMMethodMMM:message url_MMMethodMMM:url presentingViewController:appTopViewController successBlock_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [[MoneyierExpectity share] shareWithTag_MMMethodMMM:hashTag message_MMMethodMMM:message url_MMMethodMMM:url presentingViewController:appTopViewController successBlock_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         
         if (shareBlock) {
             shareBlock(YES,dic);
@@ -377,18 +377,18 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if (!is_Version2) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
         return;
     }
-    BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
+    LithaneousGramitorView *mBindPhoneViewV2 = [[LithaneousGramitorView alloc] init];
     mBindPhoneViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
     
-    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    UIView *bgV = [[PtyaluponFrictView alloc] init];
     [superView addSubview:bgV];
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
@@ -406,19 +406,19 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     if (!is_Version2) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
         return;
     }
-    BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView_MMMethodMMM];
+    CracyletFringcyView *mBindAccountViewV2 = [[CracyletFringcyView alloc] initView_MMMethodMMM];
     mBindAccountViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
     
-    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    UIView *bgV = [[PtyaluponFrictView alloc] init];
     [superView addSubview:bgV];
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
@@ -437,27 +437,27 @@
     areaCode = [areaCode trim_MMMethodMMM];
     telephone = [telephone trim_MMMethodMMM];
 
-    if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+    if ([PentadeWhole isEmpty_MMMethodMMM:areaCode]) {
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
         if (mMWBlock) {
             mMWBlock(NO, wwwww_tag_wwwww_text_area_code_not_empty.localx);
         }
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
+    if ([PentadeWhole isEmpty_MMMethodMMM:telephone]) {
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
         if (mMWBlock) {
             mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_empty.localx);
         }
         return;
     }
     
-    NSDictionary *pInfo = [SdkUtil getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
+    NSDictionary *pInfo = [PointsionValueain getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
     if(pInfo){
         
         NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
-        if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
-            [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
+        if (![PointsionValueain validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
+            [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
             if (mMWBlock) {
                 mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_match.localx);
             }
@@ -466,13 +466,13 @@
     }
     
     
-    [SDKRequest requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [ScienceonOmenonceacy requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
         
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BallfySibil *error) {
         
         if (mMWBlock) {
             mMWBlock(NO, error.message);
@@ -487,22 +487,22 @@
     telephone = [telephone trim_MMMethodMMM];
     vfCode = [vfCode trim_MMMethodMMM];
     
-    if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+    if ([PentadeWhole isEmpty_MMMethodMMM:areaCode]) {
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
         return;
     }
-    if ([StringUtil isEmpty_MMMethodMMM:telephone]) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
-        return;
-    }
-    
-    
-    if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
-        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
+    if ([PentadeWhole isEmpty_MMMethodMMM:telephone]) {
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
         return;
     }
     
-    [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    
+    if ([PentadeWhole isEmpty_MMMethodMMM:vfCode]) {
+        [PointsionValueain toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
+        return;
+    }
+    
+    [ScienceonOmenonceacy bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
         SDK_DATA.mLoginResponse.data.isBindPhone = YES;
@@ -511,7 +511,7 @@
             mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
         }
         
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BallfySibil *error) {
         
         if (mMWBlock) {
             mMWBlock(NO, error.message);
@@ -525,12 +525,12 @@
 - (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
 {
     account = [account trim_MMMethodMMM];
-    if (![SdkUtil validUserName_MMMethodMMM:account]) {
+    if (![PointsionValueain validUserName_MMMethodMMM:account]) {
         return;
     }
 
     password = [password trim_MMMethodMMM];
-    if (![SdkUtil validPwd_MMMethodMMM:password]) {
+    if (![PointsionValueain validPwd_MMMethodMMM:password]) {
         return;
     }
     
@@ -540,7 +540,7 @@
         return;
     }
     
-    [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [ScienceonOmenonceacy doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         
         LoginResponse *cc = (LoginResponse *)responseData;
@@ -549,12 +549,12 @@
         cc.data.loginType = LOGIN_TYPE_SELF;
         SDK_DATA.mLoginResponse = cc;
         
-        [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
+        [[PhaeyounghoodFutil share] saveAccountModel_MMMethodMMM:cc.data];
         
         
         
-        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
-        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
+        [PavidaciousCentenity logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [PavidaciousCentenity logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
         AccountModel *rData = cc.data;
         LoginData *loginData = [[LoginData alloc] init];
@@ -574,7 +574,7 @@
             mMWBlock(YES, loginData);
         }
         
-    } errorBlock_MMMethodMMM:^(BJError *error) {
+    } errorBlock_MMMethodMMM:^(BallfySibil *error) {
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -588,18 +588,18 @@
     SDK_LOG(wwwww_tag_wwwww_openCs__);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     NSString * csurl = SDK_DATA.urls.csUrl;
-    if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
+    if ([PentadeWhole isEmpty_MMMethodMMM:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
     }
-    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl];
+    NSString *resultURL = [ScienceonOmenonceacy createSdkUrl_MMMethodMMM:csurl];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
-    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    PamosityDevelopuousController *webVC = [PamosityDevelopuousController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
@@ -611,7 +611,7 @@
     };
     
     [appTopViewController presentViewController:webVC animated:NO completion:^{
-        SDK_LOG(@"MWWebViewController presentViewController completioN");
+        SDK_LOG(@"PamosityDevelopuousController presentViewController completioN");
         
     }];
     SDK_LOG(@"客服地址open end");
@@ -623,7 +623,7 @@
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
@@ -652,7 +652,7 @@
     SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [ColdicalProsly showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
@@ -671,8 +671,8 @@
         
         
         
-        if ([StringUtil isEmpty_MMMethodMMM:notifyId]) {
-            notifyId = [SUtil getMD5StrFromString_MMMethodMMM:title];
+        if ([PentadeWhole isEmpty_MMMethodMMM:notifyId]) {
+            notifyId = [BreviVincy getMD5StrFromString_MMMethodMMM:title];
         }
         
         UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
