@@ -29,6 +29,7 @@
 		03C3FB562A9C8F8900DF4DA7 /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A7B6CF457311EEABAF0E90 /* GoogleSignIn.xcframework */; };
 		03C3FB572A9C8F9100DF4DA7 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A7751C457311EE93410E90 /* GTMAppAuth.xcframework */; };
 		03C3FB582A9C8F9400DF4DA7 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A71040457311EEBA700E90 /* AppAuth.xcframework */; };
+		03DCB8DF2A9C9295003EC395 /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A9A06B457311EEA05E0E90 /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A3494C457311EEA6AF0E90 /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A34C6B457311EEA81E0E90 /* NaverThirdPartyLogin.xcframework */; };
 		F0A34F75457311EEBA3F0E90 /* NaverThirdPartyLogin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0A34C6B457311EEA81E0E90 /* NaverThirdPartyLogin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0A35266457311EEB8EC0E90 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A3555E457311EE9D7B0E90 /* AppsFlyerLib.xcframework */; };
@@ -1625,6 +1626,7 @@
 				F0A8AE45457311EEA94C0E90 /* GenitDifferentoView.h in Headers */,
 				F0A35842457311EE88350E90 /* NSString+WhyablyPlaceern.h in Headers */,
 				F0A35ED1457311EE82CD0E90 /* ShotetStalactistView.h in Headers */,
+				03DCB8DF2A9C9295003EC395 /* MWStringHeaders.h in Headers */,
 				F0A36507457311EE9E120E90 /* GamaSDK+GenerationChantfier.h in Headers */,
 				F0A8DF9C457311EE9CD70E90 /* OrtSiliView.h in Headers */,
 				F0A36B85457311EEAE2B0E90 /* OxyabilityNewanTextFiled.h in Headers */,
