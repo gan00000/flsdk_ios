@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en_US</string>
+	<string>ko_KR</string>
 	<key>CFBundleDisplayName</key>
 	<string>krdemo</string>
 	<key>CFBundleExecutable</key>
@@ -29,8 +29,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vnmxwios</string>
-				<string>fb948331946321316</string>
+				<string>tgswios</string>
+				<string>fb812990310317949</string>
 				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
@@ -39,7 +39,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.267037747590-aou57ianef41ct87vaigq3fphqh235bj</string>
+				<string>com.googleusercontent.apps.110542588551-9j5lm1jkdvl257akenosvrlogk1sbnil</string>
 			</array>
 		</dict>
 	</array>
@@ -48,15 +48,15 @@
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>948331946321316</string>
+	<string>812990310317949</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>70dee7e2899286d3b410c2af8530b899</string>
+	<string>5d9f338ab935730c7c190cd0210c712a</string>
 	<key>FacebookDisplayName</key>
 	<string>krdemo</string>
 	<key>GIDClientID</key>
-	<string>267037747590-aou57ianef41ct87vaigq3fphqh235bj.apps.googleusercontent.com</string>
+	<string>110542588551-9j5lm1jkdvl257akenosvrlogk1sbnil.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -73,7 +73,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1661047084</string>
+		<string></string>
 	</dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
