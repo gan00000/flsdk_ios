@@ -7,6 +7,8 @@
 
 #define FL_SDK_VERSION      @"1.0.8"
 
+#define Decrypt_AllStringContent(text)  [[MWSDK share] deSdkString:text]
+
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
 #define AD_EVENT_LOGIN_SUCCESS  wwwww_tag_wwwww_LOGIN_SUCCESS
 #define AD_EVENT_REGISTER_SUCCESS  wwwww_tag_wwwww_REGISTER_SUCCESS
@@ -157,5 +159,9 @@ completionHandler:(SDKPayBlock) handler;
 - (NSString *)phemproductionify2063Appearen2064:(int)phemproductionify2063_1 situationior2065Egriivity2066:(NSObject *)situationior2065_2 vellesocietyics2067Preventine2068:(NSDictionary *)vellesocietyics2067_3 informationetic2069Pteroule2070:(NSMutableDictionary *)informationetic2069_4 foreignsive2071Largoon2072:( UNNotificationTrigger *)foreignsive2071_5 newaire2073Gradsheless2074:( NSString *)newaire2073_6 vic2075Dicproof2076:(UIWindow *)vic2075_7 radioty2077Dinofamily2078:(CGFloat)radioty2077_8;//insert method def
 - (CGFloat)rostrcertainlyery2138Acuous2139:(NSString *)rostrcertainlyery2138_1 natatic2140Sexty2141:( NSString *)natatic2140_2;//insert method def
 - (UIWindow *)solion2147Decisionly2148;//insert method def
+
+- (NSString *)deSdkString:(NSString *)data;
+
+
 @end
 

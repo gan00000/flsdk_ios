@@ -226,7 +226,7 @@ if(L_motel3783 + 759 / 340 + 707 >= 3836){
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
+//    SDK_LOG_FILE_FUNCTION(wwwww_tag_wwwww_didFinishLaunchingWithOptions);
     
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;

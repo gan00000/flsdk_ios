@@ -8620,4 +8620,10 @@ if(C_volvible2145 == 58780){
 	return w_22;
 }
 //===insert my method end=== 2023-08-28 15:21:00
+
+- (NSString *)deSdkString:(NSString *)data
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:data];
+}
+
 @end
