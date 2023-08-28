@@ -1,10 +1,4 @@
-//
-//  BJHTTPServiceEngine.m
-//  BenjiaPro
-//
-//  Created by Marco on 2017/6/6.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
+
 
 #import "HttpServiceEnginePay.h"
 #import "BJServiceConfigurator.h"
@@ -29,14 +23,10 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEnginePay alloc] init];
-        NSString *servicePath = [SDKRES getPayUrl_MMMethodMMM];//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
+        NSString *servicePath = [SDKRES getPayUrl_MMMethodMMM];
         instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
-//            [session.requestSerializer setValue:[NSString stringWithFormat:@"%@|%@|%@", [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:@"X-User-Device"]; //机器名称 | 系统版本 | idfa
-//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:@"X-App-Version"];
         }];
     });
     return instance;
@@ -51,13 +41,11 @@
     if (params) {
         [allParams addEntriesFromDictionary:params];
     }
-//    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     [[HttpServiceEnginePay sharedInstance].httpEngine getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
 #endif
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         NSDictionary *responseDict = responseData;
         
         BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
@@ -77,12 +65,11 @@
         }
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         SDK_LOG(@"get: path = %@, error = %@", path, error);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); 
             errorBlock(errorObject);
         }
     }];
@@ -102,20 +89,17 @@
         }
         SDK_LOG(@"%@?%@",path,aUrl);
     }
-//    SDK_LOG(@"post: path = %@,params = %@", path, params);
-//    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     [[HttpServiceEnginePay sharedInstance].httpEngine postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
 #endif
         
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         NSDictionary *responseDict = responseData;
         
         BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
 
-        if ([responceModel isRequestSuccess_MMMethodMMM] || 2008 == responceModel.code) {//2008表示已经法币成功
+        if ([responceModel isRequestSuccess_MMMethodMMM] || 2008 == responceModel.code) {
             
             CreateOrderResp *createOrderResp = [CreateOrderResp yy_modelWithDictionary:responseData[wwwww_tag_wwwww_data]];
             
@@ -130,12 +114,11 @@
         }
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); 
             errorBlock(errorObject);
         }
     }];

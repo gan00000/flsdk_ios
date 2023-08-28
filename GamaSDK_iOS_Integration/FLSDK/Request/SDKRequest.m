@@ -1,10 +1,5 @@
-//
-//  SDKRequest.m
 
-//
-//  Created by ganyuanrong on 2020/7/20.
-//  Copyright © 2020 . All rights reserved.
-//
+
 
 #import "SDKRequest.h"
 #import "CCSDKDATA.h"
@@ -12,7 +7,6 @@
 
 @implementation SDKRequest
 
-//手机区号获取
 +(void)getAreaInfoWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
@@ -34,7 +28,6 @@
 }
 
 
-//https://www.meowplayer.com/sdk/config/jjcs/v1/version.json
 #pragma mark - 获取登录配置
 +(void)getSdkConfigWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
@@ -44,12 +37,10 @@
         
         NSDictionary *responseDict = responseData;
         SDK_LOG(@"sdk config:%@",responseDict);
-//        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];//需要分开解析
         NSArray<ConfigModel *> *allVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_allVersion]];
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_subVersion]];
         UrlMode *urls = [UrlMode yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_url]];
         
-//        ConfigResponse *mCr = [ConfigResponse yy_modelWithDictionary:responseDict];
         
         ConfigResponse *mCr = [[ConfigResponse alloc] init];
         mCr.subVersion = subVersion;
@@ -65,22 +56,19 @@
                 
                 for (ConfigModel *cm in mCr.subVersion) {
                     
-                    if ([cm.version isEqualToString:[SUtil getBundleVersion_MMMethodMMM]] && [cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
+                    if ([cm.version isEqualToString:[SUtil getBundleVersion_MMMethodMMM]] && [cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {
                         SDK_DATA.mConfigModel = cm;
                         return;
                     }
                 }
             }
             
-//            if (mCr.allVersion && [mCr.allVersion.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//先匹配所有版本开关
-//                SDK_DATA.mConfigModel = mCr.allVersion;
-//            }
             
             if (mCr.allVersion){
                 
                 for (ConfigModel *cm in mCr.allVersion) {
                     
-                    if ([cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
+                    if ([cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {
                         SDK_DATA.mConfigModel = cm;
                         return;
                     }
@@ -88,7 +76,6 @@
             }
             
         }else {
-//            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
             if (errorBlock) {
                 errorBlock(nil);
             }
@@ -120,7 +107,7 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        //[self _presentAlertWithException:exception andDictionary:dic];
+        
     }
     
     SDK_LOG(@"reportSdkEvent start EventName:%@", eventName);
@@ -167,23 +154,22 @@
         [params addEntriesFromDictionary:otherParams];
     }
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     
     BOOL isGuestLogin = [thirdPlate isEqualToString:LOGIN_TYPE_GUEST];
-    // 签名顺序不能变
+    
     NSMutableString * md5str= [[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",thirdId]; //用户名
-    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
-//    isGuestLogin ? : [md5str appendFormat:@"%@",thirdPlate];
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
+    [md5str appendFormat:@"%@",thirdId]; 
+    [md5str appendFormat:@"%@",GAME_CODE];
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     
     NSDictionary *dic = nil;
     
-    // NSArray *expectDictArr = nil;
+    
     @try {
         dic = @{
             wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
@@ -197,7 +183,7 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        //[self _presentAlertWithException:exception andDictionary:dic];
+        
     }
     
     
@@ -225,13 +211,12 @@
     }
     userName = [userName lowercaseString];
     NSString *timestamp = [SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值
+    
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timestamp]; //时间戳
-    [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
-    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timestamp]; 
+    [md5str appendFormat:@"%@",userName]; 
+    [md5str appendFormat:@"%@",GAME_CODE];
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
@@ -257,7 +242,7 @@
 + (void)requestVfCode_MMMethodMMM:(NSString *)phoneArea
                                  phoneNumber_MMMethodMMM:(NSString *)phoneN
                                  email_MMMethodMMM:(NSString *)email
-                                  interfaces_MMMethodMMM:(NSString *)interfaces  //注册1 绑定2
+                                  interfaces_MMMethodMMM:(NSString *)interfaces  
                                     otherDic_MMMethodMMM:(NSDictionary *)otherParamsDic
                                 successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                                   errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
@@ -275,14 +260,14 @@
     
     NSString *timeStamp = [SUtil getTimeStamp_MMMethodMMM];
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
     [md5str appendFormat:@"%@",vf_acccount];
-    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
+    [md5str appendFormat:@"%@",GAME_CODE];
     
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
-    //字典未能设置nil
+    
     NSDictionary *dic = @{wwwww_tag_wwwww_phone:phoneN,
                           wwwww_tag_wwwww_phoneAreaCode:phoneArea,
                           wwwww_tag_wwwww_email:email,
@@ -316,16 +301,8 @@
         vf_acccount = email;
     }
     
-//    NSString *timeStamp = [SUtil getTimeStamp_MMMethodMMM];
-//    NSMutableString * md5str=[[NSMutableString alloc]init];
-//    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-//    [md5str appendFormat:@"%@",timeStamp]; //时间戳
-//    [md5str appendFormat:@"%@",vf_acccount];
-//    [md5str appendFormat:@"%@",GAME_CODE];//gamecode
-//
-//    NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
-    //字典未能设置nil
+    
     NSDictionary *dic = @{wwwww_tag_wwwww_telephone:phoneN,
                           wwwww_tag_wwwww_areaCode:phoneArea,
                           wwwww_tag_wwwww_email:email,
@@ -350,7 +327,7 @@
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    //字典不能设置nil
+    
     NSDictionary *dic = @{wwwww_tag_wwwww_telephone:phoneN ? : @"",
                           wwwww_tag_wwwww_areaCode:phoneArea ? : @"",
                           wwwww_tag_wwwww_vCode:vCode ? : @"",
@@ -368,7 +345,7 @@
 {
     NSDictionary * _commDic =
     @{
-        // 公共的参数拼接
+        
         wwwww_tag_wwwww_packageName      :     [SUtil getBundleIdentifier_MMMethodMMM],
         wwwww_tag_wwwww_adId             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
         wwwww_tag_wwwww_idfa             :     [[SUtil getIdfa_MMMethodMMM]       lowercaseString]? : @"",
@@ -378,12 +355,12 @@
         wwwww_tag_wwwww_systemVersion    :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
         wwwww_tag_wwwww_osVersion        :     [SUtil getSystemVersion_MMMethodMMM]? : @"",
         wwwww_tag_wwwww_deviceType       :     [SUtil getDeviceType_MMMethodMMM]? : @"",
-        wwwww_tag_wwwww_os               :     wwwww_tag_wwwww_ios, //os=ios
+        wwwww_tag_wwwww_os               :     wwwww_tag_wwwww_ios, 
         wwwww_tag_wwwww_gameLanguage     :     GAME_LANGUAGE? : @"",
         wwwww_tag_wwwww_osLanguage       :     [SUtil getPreferredLanguage_MMMethodMMM]? : @"",
         
-        //      wwwww_tag_wwwww_loginTimestamp   :     [GamaUserInfoModel shareInfoModel].timestamp ? : @"",
-        //      wwwww_tag_wwwww_accessToken      :     [GamaUserInfoModel shareInfoModel].accessToken ? : @"",
+        
+        
         wwwww_tag_wwwww_uniqueId         :     [[SUtil getGamaUUID_MMMethodMMM] lowercaseString]? : @"",
         
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
@@ -411,11 +388,7 @@
             wwwww_tag_wwwww_userId           :accountModel.userId ? : @"",
             wwwww_tag_wwwww_loginAccessToken  :accountModel.token ? : @"",
             wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp ? : @"",
-//            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
-//            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
             
-//            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
-//            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
             
             wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode ? : @"",
             wwwww_tag_wwwww_serverName           : [serverNameTemp urlEncode_MMMethodMMM],
@@ -454,14 +427,13 @@
     
     userName = !userName?@"":userName;
     userName = [userName lowercaseString];
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值
+    
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
+    [md5str appendFormat:@"%@",userName]; 
     [md5str appendFormat:@"%@",GAME_CODE];
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
@@ -503,18 +475,16 @@
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     userName = [userName lowercaseString];
     
-    //获取md5加密的值gamesPojo.getAppKey() + timestamp + name + pwd + newPwd + gameCode;
+    
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendString:APP_KEY]; //AppKey
-    [md5str appendString:timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendString:[[GamaFunction getMD5StrFromString_MMMethodMMM:oldPassword] lowercaseString]]; //用户密码
-//    [md5str appendString:[[GamaFunction getMD5StrFromString_MMMethodMMM:newPassword] lowercaseString]]; //新密码
-    [md5str appendString:GAME_CODE]; //gamecode
+    [md5str appendString:APP_KEY]; 
+    [md5str appendString:timeStamp]; 
+    [md5str appendFormat:@"%@",userName]; 
+    [md5str appendString:GAME_CODE]; 
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
@@ -559,18 +529,18 @@
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    /*-----------获取参数----------*/
-    //获取时间戳
+    
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
     userName = userName?userName:@"";
     userName = [userName lowercaseString];
     email = [email lowercaseString];
     
     NSMutableString * md5str=[[NSMutableString alloc]init];
-    [md5str appendString:APP_KEY]; //AppKey
-    [md5str appendString:timeStamp]; //时间戳
-    [md5str appendString:email]; //用户名
-    [md5str appendString: GAME_CODE]; //gamecode
+    [md5str appendString:APP_KEY]; 
+    [md5str appendString:timeStamp]; 
+    [md5str appendString:email]; 
+    [md5str appendString: GAME_CODE]; 
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
     NSDictionary *dic = nil;
@@ -612,7 +582,7 @@
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
@@ -620,17 +590,14 @@
     
     userName = [userName lowercaseString];
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",userName]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
+    [md5str appendFormat:@"%@",userName]; 
     [md5str appendFormat:@"%@",GAME_CODE];
-//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
-//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
@@ -669,23 +636,20 @@
                         successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
-    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
-    [md5str appendFormat:@"%@",accountMode.userId]; //用户名
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
+    [md5str appendFormat:@"%@",APP_KEY]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
+    [md5str appendFormat:@"%@",accountMode.userId]; 
     [md5str appendFormat:@"%@",GAME_CODE];
-//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
-//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
@@ -729,25 +693,22 @@
                         successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
-    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",APP_KEY]; 
     [md5str appendFormat:@"%@",GAME_CODE];
-    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    [md5str appendFormat:@"%@",accountModel.userId]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
     
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     
-//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
-//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
     NSString *md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     NSString *roleNameTemp = gameUserModel.roleName ? : @"";
@@ -768,7 +729,7 @@
             wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
             
             wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
-            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,
             wwwww_tag_wwwww_productId           :productId,
             wwwww_tag_wwwww_extra           :extra ? : @"",
             wwwww_tag_wwwww_cpOrderId         :cpOrderId,
@@ -801,25 +762,22 @@
                         successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                           errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock
 {
-    //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
     
-    //获取时间戳
+    
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
-    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    
     NSMutableString * md5str=[[NSMutableString alloc] init];
-    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",APP_KEY]; 
     [md5str appendFormat:@"%@",GAME_CODE];
-    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
-    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    [md5str appendFormat:@"%@",accountModel.userId]; 
+    [md5str appendFormat:@"%@",timeStamp]; 
     
-//    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
     
-//    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
-//    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
     
     NSString * md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
     
@@ -838,8 +796,8 @@
             wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp,
             
             wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
-            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
-            wwwww_tag_wwwww_reissue             :reissue,//是否是补发调用
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,
+            wwwww_tag_wwwww_reissue             :reissue,
 
         };
         

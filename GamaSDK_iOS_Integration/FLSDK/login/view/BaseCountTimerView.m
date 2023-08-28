@@ -1,10 +1,4 @@
-//
-//  FindPasswordView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "BaseCountTimerView.h"
 #import "SdkHeader.h"
@@ -23,7 +17,6 @@
 
 
 
-//倒计时
 -(void)startCountTimer_MMMethodMMM{
     
     if (self.countTimerDelegate) {

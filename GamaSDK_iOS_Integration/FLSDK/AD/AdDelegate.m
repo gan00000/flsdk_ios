@@ -1,10 +1,4 @@
-//
-//  AFDelegate.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/28.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
 
 #import "AdDelegate.h"
 #import <AdSupport/AdSupport.h>
@@ -30,28 +24,25 @@
     SDK_LOG(@"afDevKey:%@,appId=%@",afDevKey,appId);
     if ([StringUtil isNotEmpty_MMMethodMMM:afDevKey] && [StringUtil isNotEmpty_MMMethodMMM:appId]) {
         
-        if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
+        if ([SDKRES isAdDebug_MMMethodMMM]) {
             [AppsFlyerLib shared].isDebug = YES;
         }
-        [[AppsFlyerLib shared] setAppsFlyerDevKey:afDevKey];//QtrxWJpdhQVov9F8hwKD3o
+        [[AppsFlyerLib shared] setAppsFlyerDevKey:afDevKey];
         [[AppsFlyerLib shared] setAppleAppID:appId];
         
     }
-    //adjust
+    
     [[AdjustDelegate share] application:application didFinishLaunchingWithOptions:launchOptions];
    
     return YES;
 }
 
-// Deep linking
 
-// Open URI-scheme for iOS 9 and above
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options{
     [[AppsFlyerLib shared] handleOpenUrl:url options:options];
     return YES;
 }
 
-// Open URI-scheme for iOS 8 and below
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     [[AppsFlyerLib shared] handleOpenURL:url sourceApplication:sourceApplication];
     return YES;
@@ -70,17 +61,16 @@
         }
         
         [[AppsFlyerLib shared] start];
-        // iOS14及以上版本需要先请求权限
+        
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            // 获取到权限后，依然使用老方法获取idfa
+            
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
                 NSLog(@"idfa=%@",idfa);
                 
-                //FB 从 iOS 14.5 开始，您需要设置 isAdvertiserTrackingEnabled，并在每次为设备授予与 Facebook 分享数据的权限时，做好记录。
+                
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:YES];
                 
-//                [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
                 
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
@@ -91,13 +81,12 @@
         }];
         
     } else {
-        // iOS14以下版本依然使用老方法
-        // 判断在设置-隐私里用户是否打开了广告跟踪
+        
+        
         [[AppsFlyerLib shared] start];
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
             NSLog(@"idfa=%@",idfa);
-//            [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
         }
@@ -113,27 +102,27 @@
             [[AppsFlyerLib shared] logEvent:eventName withValues:eventValues];
         }
         if (type & AdType_Firebase) {
-            //firebase
+            
             [FIRAnalytics logEventWithName:eventName parameters:eventValues];
         }
         if (type & AdType_FB) {
             
-             //fb
+             
             [[FBSDKAppEvents shared] logEvent:eventName parameters:eventValues];
         }
        
-        //adjust
+        
         [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventValues];
         
     } @catch (NSException *exception) {
-        //[self _presentAlertWithException:exception andDictionary:dic];
+        
     }
    
 }
 
 + (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
     
-    if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){//判断orderId存在才上报
+    if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){
         return;
     }
     
@@ -157,11 +146,11 @@
             
         }
         if (type & AdType_Firebase) {
-            //firebase
+            
             SDK_LOG(@"logEventPurchaseValues firebase");
             [FIRAnalytics logEventWithName:kFIREventPurchase parameters:@{
                 kFIRParameterItemID : mPayData.productId,
-                //kFIRParameterPrice : @(mPayData.amount),
+                
                 kFIRParameterValue : @(mPayData.amount),
                 kFIRParameterCurrency : wwwww_tag_wwwww_USD,
                 kFIRParameterTransactionID : mPayData.orderId,
@@ -172,20 +161,14 @@
         }
         if (type & AdType_FB) {
             
-             //fb
+             
             SDK_LOG(@"logEventPurchaseValues fb");
-//            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD parameters:@{
-//                FBSDKAppEventParameterNameCurrency : wwwww_tag_wwwww_USD,
-//                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
-//                FBSDKAppEventParameterNameContentID : mPayData.productId,
-//                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
-//            }];
             
             [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
 
         }
         
-        //adjust
+        
         NSDictionary *eventValues = @{
             @"usdPrice"  : @(mPayData.amount),
             @"currency" : wwwww_tag_wwwww_USD,
@@ -205,15 +188,15 @@
             if(gGameUserModel.isPay){
                 
                 if(gGameUserModel.isSecondPay){
-                    //NOT TO DO
-                }else{//第二次充值上报
+                    
+                }else{
                     gGameUserModel.isSecondPay = YES;
                     [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
-                    //上报
+                    
                     SDK_LOG(@"logEvent firebase second_purchase");
                     [FIRAnalytics logEventWithName:@"second_purchase" parameters:@{
                         kFIRParameterItemID : mPayData.productId,
-                        //kFIRParameterPrice : @(mPayData.amount),
+                        
                         kFIRParameterValue : @(mPayData.amount),
                         kFIRParameterCurrency : wwwww_tag_wwwww_USD,
                         kFIRParameterTransactionID : mPayData.orderId,
@@ -222,12 +205,10 @@
                         
                     }];
                     
-                    //AF和FB不上报金额
+                    
                     
                     SDK_LOG(@"logEvent af second_purchase");
                     [[AppsFlyerLib shared] logEvent:@"second_purchase" withValues: @{
-//                                    AFEventParamRevenue  : @(mPayData.amount),
-//                                    AFEventParamCurrency : wwwww_tag_wwwww_USD,
                                     AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
                                     AFEventParamContentId: mPayData.productId ?: @"",
                                     AFEventParamOrderId: mPayData.orderId ?: @"",
@@ -241,7 +222,6 @@
                     
                     SDK_LOG(@"logEvent fb second_purchase");
                     [[FBSDKAppEvents shared] logEvent:@"second_purchase" parameters: @{
-//                                                            AFEventParamCurrency : wwwww_tag_wwwww_USD,
                                                             AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
                                                             AFEventParamContentId: mPayData.productId ?: @"",
                                                             AFEventParamOrderId: mPayData.orderId ?: @"",
@@ -260,7 +240,7 @@
             }else{
                 gGameUserModel.isPay = YES;
                 gGameUserModel.firstPayTime = [SUtil getTimeStamp_MMMethodMMM];
-                if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日付费玩家
+                if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){
                     gGameUserModel.isRegDayPay = YES;
                 }else{
                     gGameUserModel.isRegDayPay = NO;
@@ -270,23 +250,12 @@
         }
         
     } @catch (NSException *exception) {
-        //[self _presentAlertWithException:exception andDictionary:dic];
+        
     }
    
 }
 
 
 
-//+ (void)logEventForFBWithEventName:(NSString *)eventName eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues{
-//
-//    @try {
-//        //fb
-//        [[FBSDKAppEvents shared] logEvent: eventName parameters:eventValues];
-//
-//    } @catch (NSException *exception) {
-//        //[self _presentAlertWithException:exception andDictionary:dic];
-//    }
-//
-//}
 
 @end

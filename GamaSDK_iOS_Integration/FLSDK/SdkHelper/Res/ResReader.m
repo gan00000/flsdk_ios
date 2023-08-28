@@ -1,5 +1,4 @@
 
-//
 #import <malloc/malloc.h>
 #import <objc/runtime.h>
 #import "ResReader.h"
@@ -10,8 +9,6 @@
 #import "MWSDK.h"
 
 @interface ResReader ()
-//@property (nonatomic, copy) NSString *m_stringsName;
-//@property (nonatomic, strong) NSBundle *m_stringsBundle;
 @end
 
 @implementation ResReader
@@ -30,13 +27,6 @@ static dispatch_once_t onceToken;
     return coreReader;
 }
 
-//+ (void)releaseReader
-//{
-//    SDK_LOG(@"releaseReader");
-//    onceToken = 0;
-//    [coreReader release];
-//    coreReader = nil;
-//}
 
 - (instancetype)init
 {
@@ -44,7 +34,6 @@ static dispatch_once_t onceToken;
     if (self)
     {
         SDK_LOG(@"reader init");
-//        self.areaCodeDic = [NSMutableDictionary dictionary];
         
         [self setBundleInfo_MMMethodMMM];
         [self logSdkResConfig_MMMethodMMM];
@@ -95,12 +84,8 @@ static dispatch_once_t onceToken;
 #pragma mark -配置属性信息
 -(NSDictionary *)mySdkConfDic{
     if (!_mySdkConfDic) {
-        //1.先读取main bundle
+        
         _mySdkConfDic = self.mainBundleConfDic;
-//        if(!_mySdkConfDic)
-//        {   //2.再去读sdk bundle
-//            _mySdkConfDic = [self readSdkBundleCoreConfInfo_MMMethodMMM];
-//        }
     }
     return _mySdkConfDic;
 }
@@ -112,24 +97,11 @@ static dispatch_once_t onceToken;
     return _mainBundleConfDic;
 }
 
-//#pragma mark -从sdk bundle配置文件中读取配置信息
-//-(NSDictionary *)readSdkBundleCoreConfInfo_MMMethodMMM
-//{
-//    NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
-//    NSString *infoPlistPath= [self getSdkBundleFilePath_MMMethodMMM:configName ofType_MMMethodMMM:@"plist"];
-//    if (infoPlistPath) {
-//        NSDictionary * infoDic=[NSDictionary dictionaryWithContentsOfFile:infoPlistPath];
-//        if (infoDic) {
-//            return infoDic;
-//        }
-//    }
-//    return nil;
-//}
 #pragma mark -从main bundle配置文件中读取配置信息
 -(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
     SDK_LOG(@"======================readMainBundleCoreConfInfo start =================");
-    //获取配置文件名字
+    
     NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
     
     NSDictionary *configDic = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[NSBundle mainBundle] name_MMMethodMMM:configName ofType_MMMethodMMM:@"txt"];
@@ -150,7 +122,7 @@ static dispatch_once_t onceToken;
         return configDic;
     }
     
-    //读取自定义的 plist文件的写法
+    
     NSString *infoPlistPath = [[NSBundle mainBundle] pathForResource:configName ofType:@"plist"];
     
     if (infoPlistPath) {
@@ -189,7 +161,6 @@ static dispatch_once_t onceToken;
         return ms;
     }
     return key;
-//    return NSLocalizedStringFromTableInBundle(key, _m_stringsName, _m_stringsBundle, nil);
 }
 
 
@@ -205,7 +176,7 @@ static dispatch_once_t onceToken;
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
-    //加密后的密文
+    
     NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return encryptStr;
 }
@@ -214,10 +185,9 @@ static dispatch_once_t onceToken;
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
     SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
-    // 去掉首尾的空白字符
+    
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    // 去除掉控制字符
-//    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
+    
     
     NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return textContent;
@@ -236,7 +206,7 @@ static dispatch_once_t onceToken;
             NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
             NSString * encryptStr = [self encryptContent_MMMethodMMM:textStringContent];
             
-            //文件名称md5后添加到resbundle
+            
             NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:languageStr];
             
             SDK_LOG(@"languageStr=%@,md5EncryptFileName=%@,encryptStr=%@",languageStr,md5EncryptFileName,encryptStr);
@@ -244,7 +214,7 @@ static dispatch_once_t onceToken;
             SDK_LOG(@"file not find : %@.json", languageStr);
         }
     }
-    //打印主配置
+    
     NSString *configInfoName = [self getSdkConfigInfoName_MMMethodMMM];
     NSString *configInfoName_path = [[NSBundle mainBundle] pathForResource:configInfoName ofType:@"json"];
     
@@ -265,17 +235,17 @@ static dispatch_once_t onceToken;
     if(!_textStringDic){
         _textStringDic = [NSMutableDictionary dictionary];
         
-        NSString *languageStr = [self getsdkLanguage_MMMethodMMM]; //指定的默认语言
+        NSString *languageStr = [self getsdkLanguage_MMMethodMMM]; 
         NSString *languageStr_defalut = languageStr;
         
-        if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
+        if ([self isMoreLanguage_MMMethodMMM]) {
             
             NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-            if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
+            if ([preferredLang hasPrefix:@"zh-Hans"]) {
                 
                 languageStr = @"zh-Hans";
                 
-            }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+            }else if ([preferredLang hasPrefix:@"zh-Hant"]){
                 languageStr = @"zh-Hant";
             }else if ([preferredLang hasPrefix:@"en"]){
                 languageStr = @"en";
@@ -286,18 +256,18 @@ static dispatch_once_t onceToken;
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
-        //获取加密文本内容
+        
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
             return _textStringDic;
         }
-        //获取未加密json文本内容
+        
         dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
         if(dicTemp){
             [_textStringDic addEntriesFromDictionary:dicTemp];
             return _textStringDic;
         }
-        //使用默认语言
+        
         SDK_LOG(@"language = %@ not exist",languageStr);
         dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"txt"];
         if (dicTemp){
@@ -325,14 +295,14 @@ static dispatch_once_t onceToken;
     NSString *textEncryptFilePath = [bundle pathForResource:md5EncryptFileName ofType:type];
     
     if(textEncryptFilePath){
-        // 将文件数据化
+        
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
         SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
-            // 对数据进行JSON格式化并返回字典形式
+            
             NSError *error = nil;
             id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
             return resultTemp;
@@ -348,12 +318,12 @@ static dispatch_once_t onceToken;
     NSString *textFilePath = [bundle pathForResource:name ofType:type];
     
     if(textFilePath){
-        // 将文件数据化
+        
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textFilePath];
         NSString *textContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
-            // 对数据进行JSON格式化并返回字典形式
+            
             NSError *error = nil;
             id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
             return resultTemp;
@@ -366,41 +336,6 @@ static dispatch_once_t onceToken;
 #pragma mark - 初始化 Bundle
 - (void)setBundleInfo_MMMethodMMM {
 
-//    NSString *languageStr = [self getsdkLanguage_MMMethodMMM];
-//
-//    if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
-//
-//        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-//        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
-//
-//            languageStr = @"zh-Hans";
-//
-//        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-//            languageStr = @"zh-Hant";
-//        }else if ([preferredLang hasPrefix:@"en"]){
-//            languageStr = @"en";
-//        }else if ([preferredLang hasPrefix:@"vi"]){
-//            languageStr = @"vi";
-//        }else if ([preferredLang hasPrefix:@"ko"]){
-//            languageStr = @"ko";
-//        }
-//    }
-//
-//    self.m_stringsBundle = [NSBundle mainBundle];
-//    self.m_stringsName = @"Localizable";
-//
-//    NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
-//    if (sdkBundle) {
-//
-//        self.m_stringsBundle = sdkBundle;
-//
-//        NSURL *lprojBundleURL = [sdkBundle URLForResource:languageStr withExtension:@"lproj"];
-//
-//        if (lprojBundleURL) {
-//            self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
-//            //self.m_stringsName = @"Localizable";
-//        }
-//    }
 }
 
 
@@ -415,13 +350,6 @@ static dispatch_once_t onceToken;
 }
 -(NSString *)getGameLanguage_MMMethodMMM
 {
-//    if ([self isMoreLanguage_MMMethodMMM]) {
-//        return [SUtil getServerLanguage_MMMethodMMM];
-//    }
-//    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
-//        return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
-//    }
-//    return @"zh_TW";
     
     return [self getServerLanguage_MMMethodMMM];
 }
@@ -429,14 +357,14 @@ static dispatch_once_t onceToken;
 - (NSString *)getServerLanguage_MMMethodMMM{
     
     NSString *languageStr = @"";
-    if ([self isMoreLanguage_MMMethodMMM]) {//多语言版本才根据下列情况取值，非多语言版本默认繁体
+    if ([self isMoreLanguage_MMMethodMMM]) {
         
         NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+        if ([preferredLang hasPrefix:@"zh-Hans"]) {
             
             languageStr = @"zh_CN";
             
-        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
+        }else if ([preferredLang hasPrefix:@"zh-Hant"]){
             languageStr = @"zh_TW";
             
         }else if ([preferredLang hasPrefix:@"en"]){
@@ -500,13 +428,12 @@ static dispatch_once_t onceToken;
     return [self getBoolForKey_MMMethodMMM:@"sdk_ad_bug"];
 }
 
--(BOOL)isVersion2_MMMethodMMM //是否是第二版本或以上
+-(BOOL)isVersion2_MMMethodMMM 
 {
-//    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
     return YES;
 }
 
--(NSString *)getSdkVersion_MMMethodMMM //SDK 版本
+-(NSString *)getSdkVersion_MMMethodMMM 
 {
     return [self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString;
 }
@@ -534,10 +461,6 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取info.plist配置文件中facebook appid
 -(NSString *)getFacebookAppId_MMMethodMMM
 {
-//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-//    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
-//    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
-//    return facebookAppID;
     
     return [SUtil getProjectInfoPlist_MMMethodMMM][@"FacebookAppID"];
 }
@@ -567,11 +490,9 @@ static dispatch_once_t onceToken;
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-//    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
-    // 去掉首尾的空白字符
+    
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    // 去除掉控制字符
-//    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
+    
     
     NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);

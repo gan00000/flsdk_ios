@@ -1,10 +1,4 @@
-//
-//  AdjustDelegate.m
-//  MWSDK_VN
-//
-//  Created by Gan Yuanrong on 2023/8/2.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "AdjustDelegate.h"
 #import <AdjustSdk/Adjust.h>
@@ -28,13 +22,13 @@
 
 - (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
-    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
+    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
         SDK_LOG(@"adjustAppToken is empty");
         return ;
     }
     NSString *environment = ADJEnvironmentProduction;
-    if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
+    if ([SDKRES isAdDebug_MMMethodMMM]) {
         environment = ADJEnvironmentSandbox;
     }
     ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
@@ -55,7 +49,7 @@
 
 - (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> *)eventValues revenue:(double)revenue transactionId:(NSString *)transactionId
 {
-    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
+    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
         SDK_LOG(@"adjustAppToken is empty");
         return ;

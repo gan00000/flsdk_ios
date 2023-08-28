@@ -1,10 +1,4 @@
-//
-//  NaverDelegate.h
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/7/24.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 #import <NaverThirdPartyLogin/NaverThirdPartyLogin.h>

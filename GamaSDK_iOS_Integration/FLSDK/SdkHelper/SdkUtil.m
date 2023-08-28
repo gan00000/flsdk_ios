@@ -1,10 +1,4 @@
-//
-//  HelloUtils.m
-//
-//
-//  Created by Sunny on 17/2/6.
-//  Copyright © 2017年 sunn. All rights reserved.
-//
+
 
 #import "SdkUtil.h"
 #import "SdkHeader.h"
@@ -20,8 +14,6 @@
 
 #pragma mark - loading alert用到
 
-//#define winWidth        [SUtil getCurrentScreenFrame_MMMethodMMM].size.width//[UIScreen mainScreen].bounds.size.width
-//#define winHeight       [SUtil getCurrentScreenFrame_MMMethodMMM].size.height//[UIScreen mainScreen].bounds.size.height
 #define FONT_Helvetica_BOLD      @"Helvetica-Bold"
 #define FONT_Helvetica           wwwww_tag_wwwww_Helvetica
 #define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
@@ -53,9 +45,6 @@
     wkWebConfig.userContentController = wkUController;
     resultWebView = [[WKWebView alloc] initWithFrame:rect configuration:wkWebConfig];
 
-//    resultWebView = [[WKWebView alloc] initWithFrame:rect];
-//    resultWebView.scalesPageToFit = YES;
-//    resultWebView.delegate = delegate;
     resultWebView.UIDelegate = delegate;
 
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
@@ -86,7 +75,7 @@
 
 
     CGSize resultSize = [labelStr boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                                               options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading //NSStringDrawingTruncatesLastVisibleLine
+                                               options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading 
                                             attributes:@{NSFontAttributeName:label.font,NSParagraphStyleAttributeName:style}
                                                context:nil].size;
     
@@ -97,7 +86,7 @@
 
 + (NSString *)triString_MMMethodMMM:(NSString *)aStr
 {
-    return [aStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
+    return [aStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
 #pragma mark - Text Rule
@@ -110,10 +99,8 @@
         return NO;
     }
     
-//    accountName = [accountName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
 
-//    accountName = [accountName stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString *regex_email = @"^.+@\\w+\\..+$"; //邮箱格式，客户端放得比较宽
+    NSString *regex_email = @"^.+@\\w+\\..+$"; 
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex_email];
     
     BOOL isOk = [pred evaluateWithObject:accountName];
@@ -122,11 +109,6 @@
     }
     return isOk;
     
-//    if (![accountName containsString:@"@"]) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_format)];
-//        return NO;
-//    }
-//    return YES;
     
 }
 
@@ -144,17 +126,9 @@
     return YES;
 }
 
-//+ (BOOL)validEmail_MMMethodMMM:(NSString *)email
-//{
-//    NSString *triStr = [email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
-//    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-//    NSPredicate *emailPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-//    return [emailPred evaluateWithObject:triStr];
-//}
 
 + (BOOL)validPhone_MMMethodMMM:(NSString *)phone phoneRegex_MMMethodMMM:(NSString *)regex
 {
-//    NSString *triStr = [phone stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];// 去掉左右两边的空格
     NSPredicate *phonePred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [phonePred evaluateWithObject:phone];
 }
@@ -168,7 +142,7 @@
 
 + (UIView *)findKeyWindow {
 
-    //UIApplication *app = [UIApplication sharedApplication];
+    
     return [UIApplication sharedApplication].keyWindow;
     
 }
@@ -184,14 +158,14 @@
         for(int i = 0; i < [keyboardWindow.subviews count]; i++) {
             keyboardContainerView = [keyboardWindow.subviews objectAtIndex:i];
             UIViewController *nextResponder = (UIViewController*)[keyboardContainerView nextResponder];
-            //寻找keyboardWindow层的UIInputWindowController
+            
             if ([nextResponder isKindOfClass:NSClassFromString(@"UIInputWindowController")]) {
                 for(int y = 0; y < [nextResponder.view.subviews count]; y++) {
-                    //寻找UIInputWindowController层的UIInputSetContainerView
+                    
                     if([[keyboardContainerView description] hasPrefix:@"<UIInputSetContainerView"] == YES){
                         for(int t = 0; t < [keyboardContainerView.subviews count]; t++) {
                             keyboardHostView = [keyboardContainerView.subviews objectAtIndex:y];
-                            //寻找UIInputSetContainerView层的UIInputSetHostView
+                            
                             if([[keyboardHostView description] hasPrefix:@"<UIInputSetHostView"] == YES){
                                 return keyboardHostView;
                             }
@@ -210,13 +184,12 @@
 + (void)toastMsg_MMMethodMMM:(NSString *)msg atView_MMMethodMMM:(UIView *)baseView
 {
     if (!baseView) {
-        baseView = [self findKeyWindow];//[UIApplication sharedApplication].keyWindow;//windows[0];
-//        baseView = [SUtil getCurrentWindow_MMMethodMMM];
+        baseView = [self findKeyWindow];
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        // bottom view
+        
         UIView *aler = [[UIView alloc] initWithFrame:CGRectZero];
 
         aler.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.7];
@@ -233,7 +206,7 @@
         }
 
         NSString *toastString = insertStr;
-        // toast text
+        
         UILabel *toastLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         toastLabel.text = toastString;
         toastLabel.backgroundColor = [UIColor clearColor];
@@ -243,7 +216,6 @@
         toastLabel.font = [UIFont fontWithName:FONT_Helvetica_BOLD size:FONTSIZE(16)];
         toastLabel.textAlignment = NSTextAlignmentCenter;
         toastLabel.numberOfLines = 0;
-//        toastLabel.lineBreakMode = NSLineBreakByWordWrapping;
         
         CGSize tempStringSize = [SdkUtil calculateSizeOfLabel_MMMethodMMM:toastLabel];
         CGFloat _width = tempStringSize.width + 60;
@@ -288,7 +260,7 @@
        
         toastLabel = nil;
         
-        // animation
+        
         [UIView animateWithDuration:1.0f
                          animations:^{
                              aler.alpha = 1.0f;
@@ -309,7 +281,7 @@
     UIView *bgV = [[TouchEventInterruptView alloc] initWithFrame:CGRectZero];
     bgV.backgroundColor = [UIColor clearColor];
     bgV.tag = kLoadingTag;
-    //bgV.userInteractionEnabled = YES;
+    
     
     [baseView addSubview:bgV];
     
@@ -373,7 +345,6 @@
     [maxTextView setFont:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)]];
     [titleView addSubview:maxTextView];
     [maxTextView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.height.equalTo(titleView).multipliedBy(0.5);
         make.height.equalTo(titleView);
         make.left.bottom.equalTo(titleView);
         make.width.equalTo(@(maxTextSize.width));
@@ -388,10 +359,9 @@
     [minTextView setTextAlignment:NSTextAlignmentLeft];
     [titleView addSubview:minTextView];
     [minTextView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.height.equalTo(titleView);
         make.bottom.equalTo(titleView);
         make.left.equalTo(maxTextView.mas_right);
-        make.width.equalTo(@(minTextSize.width+3));//標題小文字不+3則可能出現部分內容不可見...
+        make.width.equalTo(@(minTextSize.width+3));
     }];
     return titleView;
 }
@@ -412,34 +382,8 @@
 }
 
 
-//#pragma mark 保存免注册账号密码至相册
-//+ (void)gama_saveGuestAccountToPhoto:(UIView *)curView
-//{
-//    // to do
-//    NSLog(wwwww_tag_wwwww_auct_conditionit);
-//    // create image
-//    UIGraphicsBeginImageContext(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height));
-//    [curView.layer renderInContext:UIGraphicsGetCurrentContext()];
-//    UIImage *extractImage = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    NSData *imageData = UIImagePNGRepresentation(extractImage);
-//    UIImage *img = [UIImage imageWithData:imageData];
-//    
-//    // 根据英文版本审核时通常因为相册问题被拒绝
-////    [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(wwwww_tag_wwwww_TXT_GUEST_SAVE_IMAGE_OR_NOT)
-////                           completion:^(NSInteger clickedBtnIndex) {
-////                               if (clickedBtnIndex == 1) {
-////                                   // save img to photo
-//                                   UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
-////                               }
-////                           } andButtonTitles_MMMethodMMM:GetString(wwwww_tag_wwwww_BTN_TITLE_TXT_CANCEL),GetString(wwwww_tag_wwwww_BTN_TITLE_TXT_COMFIRM), nil];
-//    
-//    // save img to photo
-//    //    UIImageWriteToSavedPhotosAlbum(img, self, @selector(_image:didFinishSavingWithError:contextInfo:), NULL);
-//}
 
 #pragma mark - self
-//纪录登陆玩家信息
 + (void)_updataLastLoginUserInfoWithNewInfo_MMMethodMMM:(NSDictionary *)loginUserInfo
 {
     NSDictionary * lastUserInfoDic=
@@ -464,7 +408,6 @@
     return [SecurityUtil getDecryptStringFromString_MMMethodMMM:aString withKey_MMMethodMMM:kEncryKey iv_MMMethodMMM:kEncryIv];
 }
 
-// 保存图片到相册后的结果
 + (void)_image_MMMethodMMM: (UIImage *) image didFinishSavingWithError_MMMethodMMM: (NSError *) error contextInfo_MMMethodMMM: (void *) contextInfo
 {
     NSString *msg = nil ;
@@ -481,47 +424,6 @@
 
 #pragma mark -
 
-//+ (void)saveUserInfo_MMMethodMMM:(NSString *)userName andPassword_MMMethodMMM:(NSString *)password toFile_MMMethodMMM:(NSString*)fileName
-//{
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-//    NSString *path = [paths objectAtIndex:0];
-//    NSString *filename = [path stringByAppendingPathComponent:fileName];
-//    
-//    NSString *encryptPwd = [self loginEncryptFromString_MMMethodMMM:password];
-//    
-//    NSDictionary * userInfoDic = [NSDictionary dictionaryWithObjectsAndKeys:
-//                                  userName,encryptPwd,// user name 不需要加密，加密密码即可
-//                                  nil];
-//    [userInfoDic writeToFile:filename atomically:YES];
-//}
-//
-//+ (void)getUserInfo_MMMethodMMM:(NSString **)userName andPassword_MMMethodMMM:(NSString **)password fromFile_MMMethodMMM:(NSString*)fileName
-//{
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-//    NSString *path = [paths objectAtIndex:0];
-//    NSString *filename = [path stringByAppendingPathComponent:fileName];
-//    
-//    NSDictionary * userInfodic = [NSDictionary dictionaryWithContentsOfFile:filename];
-//    if (userInfodic.count > 0 || userInfodic!=nil) {
-//        if (userName != nil)  {
-//            @try {
-//                *userName = [[userInfodic allValues]objectAtIndex:0];
-//            }
-//            @catch(NSException* exp) {
-//                *userName = @"";
-//            }
-//        }
-//        if (password != nil) {
-//            @try {
-//                *password = [[userInfodic allKeys]objectAtIndex:0];
-//            }
-//            @catch(NSException* exp) {
-//                *password = @"";
-//            }
-//        }
-//    }
-////    [userInfodic release];
-//}
 
 +(NSMutableArray *)getShowBtnDatas_MMMethodMMM:(ConfigModel *)mConfigModel appleBtn_MMMethodMMM:(BOOL) appleBtn guestBtn_MMMethodMMM:(BOOL) guestBtn
 {
@@ -607,9 +509,7 @@
     areaCode = [[areaCode trim_MMMethodMMM] stringByReplacingOccurrencesOfString:@"+" withString:@""];
     NSArray *phoneArry = [self getPhoneAreaInfo_MMMethodMMM];
     for (NSDictionary *pInfo in phoneArry) {
-//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
         NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
-//        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
         
         if([areaCodeValue isEqualToString:areaCode]){
             return pInfo;
