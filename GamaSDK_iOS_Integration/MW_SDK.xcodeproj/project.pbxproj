@@ -245,10 +245,8 @@
 		0392B2D82A5BAAC300A3E2D6 /* MWSDK_KR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */; };
 		0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */; };
 		0392B2DE2A5BAADA00A3E2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */; };
-		0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */; };
 		0392B2E22A5BB28300A3E2D6 /* AgeQuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2E02A5BB28300A3E2D6 /* AgeQuaView.m */; };
 		0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2E12A5BB28300A3E2D6 /* AgeQuaView.h */; };
-		0392B2E52A5BED6E00A3E2D6 /* mwsdk-kr-0828.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2E42A5BED6E00A3E2D6 /* mwsdk-kr-0828.json */; };
 		03C3FB1D2A98A73000DF4DA7 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
 		03C3FB1E2A98A73500DF4DA7 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C3FB342A98E5FA00DF4DA7 /* FindPasswordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C3FB202A98E5FA00DF4DA7 /* FindPasswordView.h */; };
@@ -278,6 +276,7 @@
 		03C3FB4C2A98E75F00DF4DA7 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8E29D9900200890B3B /* FBSDKCoreKit_Basics.xcframework */; };
 		03C3FB4D2A98E76700DF4DA7 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03C3FB4E2A98E76900DF4DA7 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
+		03C3FB502A9C759500DF4DA7 /* 62a72ff29125bce4d73533d160a9a21c.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03C3FB4F2A9C759500DF4DA7 /* 62a72ff29125bce4d73533d160a9a21c.txt */; };
 		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
 		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
 		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
@@ -527,6 +526,7 @@
 		03C3FB312A98E5FA00DF4DA7 /* LoginWithRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegView.m; sourceTree = "<group>"; };
 		03C3FB322A98E5FA00DF4DA7 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03C3FB332A98E5FA00DF4DA7 /* TermsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsView.m; sourceTree = "<group>"; };
+		03C3FB4F2A9C759500DF4DA7 /* 62a72ff29125bce4d73533d160a9a21c.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 62a72ff29125bce4d73533d160a9a21c.txt; sourceTree = "<group>"; };
 		03C91BA62A7A377100289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
 		03C91BA72A7A377100289870 /* AdjustDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustDelegate.m; sourceTree = "<group>"; };
 		03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
@@ -946,6 +946,7 @@
 		0392B2D92A5BAADA00A3E2D6 /* KR */ = {
 			isa = PBXGroup;
 			children = (
+				03C3FB4F2A9C759500DF4DA7 /* 62a72ff29125bce4d73533d160a9a21c.txt */,
 				0392B2E42A5BED6E00A3E2D6 /* mwsdk-kr-0828.json */,
 				0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */,
 				0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */,
@@ -1731,11 +1732,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */,
-				0392B2E52A5BED6E00A3E2D6 /* mwsdk-kr-0828.json in Resources */,
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
+				03C3FB502A9C759500DF4DA7 /* 62a72ff29125bce4d73533d160a9a21c.txt in Resources */,
 				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
-				0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */,
 				0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */,
 				0392B2DE2A5BAADA00A3E2D6 /* GoogleService-Info.plist in Resources */,
 			);
