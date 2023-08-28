@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *paymentId;
 @property (nonatomic, assign) CGFloat amount;
 @property (nonatomic, copy) NSString *timestamp;
+@property (nonatomic, assign) BOOL cipful11668Justform11669;//===insert my property===
+
 
 @property (nonatomic, copy) NSString *productId;
 

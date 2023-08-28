@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (void)deleteAccountAndRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate view_MMMethodMMM:(UIView *)currentView account_MMMethodMMM:(AccountModel *)accountMode otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic successBlock_MMMethodMMM:(void(^)())successBlock;
++ (NSInteger)pictanswerial15440Severalition15441:(NSMutableDictionary *)pictanswerial15440_1 figfication15442Phloeosity15443:(AccountModel *)figfication15442_2;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

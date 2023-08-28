@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIButton *)initBtnWithType_MMMethodMMM:(BUTTON_TYPE)type tag_MMMethodMMM:(NSUInteger)tag selector:(SEL)selector target_MMMethodMMM:(id)target;
 
++ (UIButton *)semin22103Willivity22104;//insert method def
++ (BOOL)sister22127Sentiade22128:(NSString *)sister22127_1 totiance22129Edge22130:(BOOL)totiance22129_2;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

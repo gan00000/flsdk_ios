@@ -13,4 +13,6 @@
 - (void)sdk_applicationDidEnterBackground_MMMethodMMM:(UIApplication *)application;
 - (void)sdk_applicationWillEnterForeground_MMMethodMMM:(UIApplication *)application;
 
+- (NSString *)hugeition3764Amphiation3765:(NSData *)hugeition3764_1;//insert method def
+- (NSString *)pelagee3774Care3775;//insert method def
 @end
