@@ -248,7 +248,7 @@
 		0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */; };
 		0392B2E22A5BB28300A3E2D6 /* AgeQuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2E02A5BB28300A3E2D6 /* AgeQuaView.m */; };
 		0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2E12A5BB28300A3E2D6 /* AgeQuaView.h */; };
-		0392B2E52A5BED6E00A3E2D6 /* com_snmxw_vntest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */; };
+		0392B2E52A5BED6E00A3E2D6 /* mwsdk-kr-0828.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2E42A5BED6E00A3E2D6 /* mwsdk-kr-0828.json */; };
 		03C3FB1D2A98A73000DF4DA7 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
 		03C3FB1E2A98A73500DF4DA7 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C3FB342A98E5FA00DF4DA7 /* FindPasswordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C3FB202A98E5FA00DF4DA7 /* FindPasswordView.h */; };
@@ -415,7 +415,7 @@
 		0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
 		0392B2E02A5BB28300A3E2D6 /* AgeQuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeQuaView.m; sourceTree = "<group>"; };
 		0392B2E12A5BB28300A3E2D6 /* AgeQuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeQuaView.h; sourceTree = "<group>"; };
-		0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_snmxw_vntest.json; sourceTree = "<group>"; };
+		0392B2E42A5BED6E00A3E2D6 /* mwsdk-kr-0828.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mwsdk-kr-0828.json"; sourceTree = "<group>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
 		039E6E8A29D9900200890B3B /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		039E6E8B29D9900200890B3B /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
@@ -621,7 +621,6 @@
 		32BE13DC24FB6154000BDFBE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = Demo/File.swift; sourceTree = "<group>"; };
 		32C9BC5324C5EA0800B3D704 /* SDKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKRequest.h; sourceTree = "<group>"; };
 		32C9BC5424C5EA0800B3D704 /* SDKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKRequest.m; sourceTree = "<group>"; };
-		32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoInfo.plist; sourceTree = "<group>"; };
 		32CDA7932540371A00D3969F /* LoginTypeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTypeButton.h; sourceTree = "<group>"; };
 		32CDA7942540371A00D3969F /* LoginTypeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTypeButton.m; sourceTree = "<group>"; };
 		32D790E724D51EBE006A2F69 /* SDKIconTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKIconTitleButton.h; sourceTree = "<group>"; };
@@ -947,7 +946,7 @@
 		0392B2D92A5BAADA00A3E2D6 /* KR */ = {
 			isa = PBXGroup;
 			children = (
-				0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */,
+				0392B2E42A5BED6E00A3E2D6 /* mwsdk-kr-0828.json */,
 				0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */,
 				0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */,
 				0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */,
@@ -1581,7 +1580,6 @@
 				E97411C820874A170018E1A6 /* IAP_ViewController.h */,
 				E97411C920874A170018E1A6 /* IAP_ViewController.m */,
 				E956BC79211D768F006D9E4C /* Images.xcassets */,
-				32CD1D7124DC3C2B0021CC46 /* demoInfo.plist */,
 				E97411DA20874A170018E1A6 /* main.m */,
 				E97411CB20874A170018E1A6 /* UserModel.h */,
 				E97411CC20874A170018E1A6 /* UserModel.m */,
@@ -1733,7 +1731,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */,
-				0392B2E52A5BED6E00A3E2D6 /* com_snmxw_vntest.json in Resources */,
+				0392B2E52A5BED6E00A3E2D6 /* mwsdk-kr-0828.json in Resources */,
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
 				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
@@ -2108,7 +2106,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q5A23TB559;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -2132,11 +2130,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.snmxw.vntest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgswkr.koda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dev_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "tgswkr-dev";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2170,7 +2168,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q5A23TB559;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -2195,11 +2193,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.snmxw.vntest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgswkr.koda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dis_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "tgswkr-dis";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

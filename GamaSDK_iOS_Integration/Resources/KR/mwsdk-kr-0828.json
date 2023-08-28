@@ -1,0 +1,19 @@
+{   "af_dev_key" : "458Np6FY5hvp29Abcdogvc",
+    "sdk_ad_bug" : "0",
+    "appKey" : "0990e662f62887cfc317d8a74b588691",
+    "gameCode" : "tgswios",
+    "gameLanguage" : "ko_KR",
+    "sdk_language" : "ko",
+    "sdk_appId" : "6463200461",
+    "sdk_more_language" : "1",
+    "sdk_res_bundle_name" : "SDKResourcesKR",
+    "sdk_url_cdn" : "https://cdn-download.kodaduck.com/",
+    "sdk_url_log" : "https://log.kodaduck.com/",
+    "sdk_url_login" : "https://login.kodaduck.com/",
+    "sdk_url_pay" : "https://pay.kodaduck.com/",
+    "sdk_v_version" : "kr",
+    "terms_service_url" : "https://member.kodaduck.com/sdk/agreement/%@_agreement.html",
+    "sdk_naver_consumer_key" : "QJErv0qFAdSfJ14QDRpA",
+    "sdk_naver_consumer_secret" : "IV8BGmeW14"
+    
+}
