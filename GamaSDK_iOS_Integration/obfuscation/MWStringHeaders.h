@@ -349,7 +349,7 @@
 #define wwwww_tag_wwwww_text_has_bind_tips_guest        @"text_has_bind_tips_guest"  //@"text_has_bind_tips_guest"
 #define wwwww_tag_wwwww_text_has_bind_tips_apple        @"text_has_bind_tips_apple"  //@"text_has_bind_tips_apple"
 #define wwwww_tag_wwwww_text_has_bind_tips_line        @"text_has_bind_tips_line"  //@"text_has_bind_tips_line"
-#define wwwww_tag_wwwww_text_has_upgrade_account        @"text_has_upgrade_account"  
+#define wwwww_tag_wwwww_text_has_upgrade_account        @"text_has_upgrade_account"  //@"text_has_upgrade_account"
 #define wwwww_tag_wwwww_drawRect        @"drawRect"  //@"drawRect"
 #define wwwww_tag_wwwww__CC_F94925        @"#F94925"  //@"#F94925"
 #define wwwww_tag_wwwww_archae_effortfold        @"遊客登入"  //@"遊客登入"
