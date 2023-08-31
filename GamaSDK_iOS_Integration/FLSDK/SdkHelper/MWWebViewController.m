@@ -276,44 +276,48 @@
 //2、当WebView开始加载Web内容时触发；
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   //system_method
 {
+    SDK_LOG(@"页面开始加载webView didStartProvisionalNavigation");
     [_indicatorView startAnimating];
     
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didStartProvisionalNavigation:)]) {
-        [_webViewDelegate webView:webView didStartProvisionalNavigation:navigation];
-    }
+//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didStartProvisionalNavigation:)]) {
+//        [_webViewDelegate webView:webView didStartProvisionalNavigation:navigation];
+//    }
 }
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
 {
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didCommitNavigation:)]) {
-        [_webViewDelegate webView:webView didCommitNavigation:navigation];
-    }
+    SDK_LOG(@"页面开始返回webView didCommitNavigation");
+//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didCommitNavigation:)]) {
+//        [_webViewDelegate webView:webView didCommitNavigation:navigation];
+//    }
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
-    SDK_LOG(@"didFinishNavigation");
+    SDK_LOG(@"页面完成加载webView didFinishNavigation");
     [_indicatorView stopAnimating];
     
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
-        [_webViewDelegate webView:webView didFinishNavigation:navigation];
-    }
-    _closeBtn.hidden = YES;
+//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
+//        [_webViewDelegate webView:webView didFinishNavigation:navigation];
+//    }
+//    _closeBtn.hidden = YES;
 }
 
 //当Web视图正在加载内容时发生错误时调用;
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
 {
-    SDK_LOG(@"didFailNavigation withError");
+    SDK_LOG(@"webView didFailNavigation withError");
     [_indicatorView stopAnimating];
     
-    !_alertHandler?:_alertHandler(error.description, nil);
-    
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFailNavigation:withError:)]) {
-        [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
-    }
+//    !_alertHandler?:_alertHandler(error.description, nil);
+//
+//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFailNavigation:withError:)]) {
+//        [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
+//    }
 }
+
+//在发送请求之前，决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
-    SDK_LOG(@"decidePolicyForNavigationAction decisionHandler");
+    SDK_LOG(@"webView decidePolicyForNavigationAction decisionHandler");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {
@@ -329,24 +333,27 @@
 {
     SDK_LOG(@"didReceiveServerRedirectForProvisionalNavigation");
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
-        [_webViewDelegate webView:webView didReceiveServerRedirectForProvisionalNavigation:navigation];
-    }
+//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
+//        [_webViewDelegate webView:webView didReceiveServerRedirectForProvisionalNavigation:navigation];
+//    }
 }
 
-//服务器返回200以外的状态码时，都调用请求失败的方法。
-//- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-//
-//    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
-//        decisionHandler (WKNavigationResponsePolicyAllow);
-//    }else {
-//        decisionHandler(WKNavigationResponsePolicyCancel);
-//    }
-//}
+//服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
+    SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
+    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
+        decisionHandler (WKNavigationResponsePolicyAllow);
+        _closeBtn.hidden = YES;
+    }else {
+        decisionHandler(WKNavigationResponsePolicyAllow);
+        _closeBtn.hidden = NO;
+    }
+}
 
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
+    SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
@@ -362,14 +369,16 @@
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  //system_method
 {
-    !_alertHandler?:_alertHandler(message, ^(BOOL confirmResult) {
-        !completionHandler?:completionHandler(confirmResult);
-    });
+    SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
+//    !_alertHandler?:_alertHandler(message, ^(BOOL confirmResult) {
+//        !completionHandler?:completionHandler(confirmResult);
+//    });
 }
 
 
 -(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures  //system_method
 {
+    SDK_LOG(@"completionHandler createWebViewWithConfiguration windowFeatures");
     WKFrameInfo *frameInfo = navigationAction.targetFrame;
     if (![frameInfo isMainFrame]) {
         [webView loadRequest:navigationAction.request];
