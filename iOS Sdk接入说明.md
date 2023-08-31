@@ -96,6 +96,8 @@
 		<string>fbshareextension</string>
 		<string>lineauth2</string>
 		<string>line</string>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
 	</array>
 	line配置
 	<key>LineSDKConfig</key>
