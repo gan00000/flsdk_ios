@@ -129,5 +129,6 @@
 "text_has_upgrade_account"     :  "회원 계정으로 업그레이드됨",
 "text_privacy_policy"  :  "개인정보",
 "text_personal_clause"  :  "이용약관",
-"text_personal_clause_and_privacy_policy"  :  "개인정보&이용약관"
+"text_personal_clause_and_privacy_policy"  :  "개인정보&이용약관",
+"text_customer" :   "고객센터"
 }

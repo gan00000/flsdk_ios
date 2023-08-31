@@ -17,6 +17,7 @@
 #import "SAppleLogin.h"
 #import "TermsViewV2.h"
 #import "ViewUtil.h"
+#import "MWSDK.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -82,6 +83,65 @@
 //    SDK_DATA.mConfigModel.showContract = YES;
 //    SDK_DATA.mConfigModel.deleteAccount = YES;
 //    SDK_DATA.mConfigModel.naverLogin = YES;
+    
+    //添加客服按钮
+    UIView *csContentView = [[UIView alloc] init];
+    csContentView.backgroundColor = UIColor.whiteColor;
+    csContentView.layer.cornerRadius = VH(12);
+    [self addSubview:csContentView];
+    [csContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self).mas_offset(VH(20));
+        make.leading.mas_equalTo(self).mas_offset(VW(22));
+        make.height.mas_equalTo(VH(25));
+        
+    }];
+    
+    if (@available(iOS 11.0, *)) {
+        
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+           
+                if(self.safeAreaInsets.top > 0){
+                    [csContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                        make.top.mas_equalTo(self).mas_offset(VH(20 + self.safeAreaInsets.top));
+                        make.leading.mas_equalTo(self).mas_offset(VW(22));
+                        make.height.mas_equalTo(VH(25));
+                        
+                    }];
+                }
+        }];
+    }
+    
+    UIImageView *csIconIV = [UIUtil initImageViewWithImage_MMMethodMMM:icon_customer];
+    [csContentView addSubview:csIconIV];
+    [csIconIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(csContentView);
+        make.leading.mas_equalTo(csContentView).mas_offset(VW(14));
+        make.width.height.mas_equalTo(VW(20));
+    }];
+    csContentView.userInteractionEnabled = YES;
+    [csContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        [[MWSDK share] openCs];
+    }];
+        
+    UILabel *csLable = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_customer.localx fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
+    [csContentView addSubview:csLable];
+//    csLable.textAlignment = NSTextAlignmentLeft;
+//    csLable.backgroundColor = [UIColor clearColor];
+    csLable.numberOfLines = 1;
+    [csLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(csContentView);
+        make.leading.mas_equalTo(csIconIV.mas_trailing).mas_offset(VW(4));
+        make.trailing.mas_equalTo(csContentView).mas_offset(VW(-14));
+    }];
+    
+    if(SDK_DATA.mConfigModel.showSdkCsCenter){
+        csContentView.hidden = NO;
+    }else{
+        csContentView.hidden = YES;
+    }
+    
+    //===========cs end==========
+
     
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];

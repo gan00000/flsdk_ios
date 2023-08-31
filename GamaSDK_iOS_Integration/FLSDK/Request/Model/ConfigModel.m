@@ -28,6 +28,7 @@
         self.showForgetPwd = YES;
         self.showNotice = NO;
         self.showRegPage = YES;
+        self.showSdkCsCenter = YES;
         
     }
     return self;

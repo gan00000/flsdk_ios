@@ -430,5 +430,6 @@
 #define wwwww_tag_wwwww__CC_FF0000        @"#FF0000"  //@"#FF0000"
 #define wwwww_tag_wwwww_text_privacy_policy        @"text_privacy_policy"  //@"text_privacy_policy"
 #define wwwww_tag_wwwww_text_personal_clause        @"text_personal_clause"  //@"text_personal_clause"
+#define wwwww_tag_wwwww_text_customer               @"text_customer"    //@"text_customer"
 
 #endif /* Headers_h */

@@ -283,6 +283,7 @@
 #define mw_logo         @"patternaster_haha_img"
 #define age_14_warn         @"age_14_warn"
 #define mw_naver_icon    @"icon_naver"
+#define icon_customer       @"icon_customer"
 
 #else
 
