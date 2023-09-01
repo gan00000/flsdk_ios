@@ -3717,7 +3717,7 @@ if(F_credlowal13605 * 595 * 265 / 298 + 472 >= 38612){
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
         [_webViewDelegate webView:webView didFinishNavigation:navigation];
     }
-    _closeBtn.hidden = YES;
+//    _closeBtn.hidden = YES;
 }
 
 
@@ -4068,6 +4068,18 @@ if(w_askcy13617 > 58839){
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
         [_webViewDelegate webView:webView didReceiveServerRedirectForProvisionalNavigation:navigation];
+    }
+}
+
+//服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
+    SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
+    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
+        decisionHandler (WKNavigationResponsePolicyAllow);
+        _closeBtn.hidden = YES;
+    }else {
+        decisionHandler(WKNavigationResponsePolicyAllow);
+        _closeBtn.hidden = NO;
     }
 }
 
