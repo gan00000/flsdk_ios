@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      @"1.1.8"
+#define FL_SDK_VERSION      @"1.1.9"
 #define Decrypt_AllStringContent(text)  [[MWSDK share] decryptMsString:text]
 
 
@@ -27,6 +27,7 @@
 
 #define AD_EVENT_UPGRADE_ACCOUNT  wwwww_tag_wwwww_Upgrade_Account
 #define AD_EVENT_Initiate_Checkout  wwwww_tag_wwwww_Initiate_Checkout
+#define AD_EVENT_purchase_over4  wwwww_tag_wwwww_purchase_over4
 
 
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
