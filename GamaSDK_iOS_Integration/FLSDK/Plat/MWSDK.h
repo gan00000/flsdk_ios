@@ -26,6 +26,7 @@
 #define AD_EVENT_COMPLETE_GUIDE  wwwww_tag_wwwww_COMPLETE_GUIDE
 
 #define AD_EVENT_UPGRADE_ACCOUNT  wwwww_tag_wwwww_Upgrade_Account
+#define AD_EVENT_Initiate_Checkout  wwwww_tag_wwwww_Initiate_Checkout
 
 
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
