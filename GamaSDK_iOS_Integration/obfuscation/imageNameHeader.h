@@ -46,6 +46,7 @@
 #define mw_logo         @"patternaster_haha_img"
 #define age_14_warn         @"irid_claviet_img"
 #define mw_naver_icon    @"fallade_geoal_img"
+#define icon_customer       @"icon_customer"
 
 
 #endif /* imageNameHeader_h */

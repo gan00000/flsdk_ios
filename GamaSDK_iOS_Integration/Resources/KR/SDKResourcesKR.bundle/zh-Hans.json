@@ -129,5 +129,7 @@
 "text_has_upgrade_account"     :  "已升级为会员账号",
 "text_privacy_policy"  :  "隐私政策",
 "text_personal_clause"  :  "个人条款",
-"text_personal_clause_and_privacy_policy"  :  "隐私政策&个人条款"
+"text_personal_clause_and_privacy_policy"  :  "隐私政策&个人条款",
+"text_customer" :   "客诉中心"
+
 }

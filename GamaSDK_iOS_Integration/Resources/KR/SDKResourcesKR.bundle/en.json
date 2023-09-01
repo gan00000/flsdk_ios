@@ -129,5 +129,7 @@
 "text_has_upgrade_account"     :  "Account has been upgraded",
 "text_privacy_policy"  :  "Privacy policy",
 "text_personal_clause"  :  "Personal clause",
-"text_personal_clause_and_privacy_policy"  :  "Privacy policy&Personal clause"
+"text_personal_clause_and_privacy_policy"  :  "Privacy policy&Personal clause",
+"text_customer" :   "CS Center"
+
 }

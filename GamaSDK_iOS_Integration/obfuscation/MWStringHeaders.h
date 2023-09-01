@@ -429,5 +429,6 @@
 #define wwwww_tag_wwwww__CC_FF0000        Decrypt_AllStringContent(@"rzx5SWK5isP/v0cEgLlFdQ==")  //@"#FF0000"
 #define wwwww_tag_wwwww_text_privacy_policy        Decrypt_AllStringContent(@"gQRMDrWjQZ4x9LSQE4JdlyA8XaHemjf3uhMdsapnIoA=")  //@"text_privacy_policy"
 #define wwwww_tag_wwwww_text_personal_clause        Decrypt_AllStringContent(@"ECPxdSrNMAqUl4DruEZRrRXU2xPTD2GiIu2HBhZTSj8=")  //@"text_personal_clause"
+#define wwwww_tag_wwwww_text_customer               @"text_customer"    //@"text_customer"
 
 #endif /* Headers_h */

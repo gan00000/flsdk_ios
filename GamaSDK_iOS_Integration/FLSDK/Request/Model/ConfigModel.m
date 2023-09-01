@@ -11,6 +11,8 @@
         
         self.visitorLogin = YES;
 
+        self.showSdkCsCenter = YES;
+
 		//====insert my code start===  2023-08-28 15:21:00
 		{
 		

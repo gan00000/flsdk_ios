@@ -66,6 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) float camerafic11710Therioaneity11711;//===insert my property===
 
+@property (nonatomic, assign) BOOL showSdkCsCenter;
+
 
 - (CGFloat)opportunityitor11712Setry11713:( NSArray *)opportunityitor11712_1 veryial11714Workern11715:(int)veryial11714_2 senanyoneality11716Microule11717:(NSData *)senanyoneality11716_3 cesssure11718Patersectionance11719:( NSArray *)cesssure11718_4 electy11720Maintain11721:( NSData *)electy11720_5 short11722Pullal11723:(CGFloat)short11722_6 receiveitude11724War11725:(BOOL)receiveitude11724_7;//insert method def
 - (float)centgasant11843Mother11844;//insert method def
