@@ -21,6 +21,8 @@
 #import "SdkHeader.h"
 #import "AdjustDelegate.h"
 
+#import "MWSDK.h"
+
 @implementation AdDelegate
 
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
@@ -202,7 +204,7 @@
        
         GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
         if(gGameUserModel){
-            if(gGameUserModel.isPay){
+            if(gGameUserModel.isPay){//除了第一次
                 
                 if(gGameUserModel.isSecondPay){
                     //NOT TO DO
@@ -257,7 +259,7 @@
                     
                 }
                 
-            }else{
+            }else{//第一次充值
                 gGameUserModel.isPay = YES;
                 gGameUserModel.firstPayTime = [SUtil getTimeStamp_MMMethodMMM];
                 if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日付费玩家
@@ -267,6 +269,16 @@
                 }
                 [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
             }
+            
+            if(mPayData.amount > 4){
+                
+                NSString *curTime = [SUtil getTimeStamp_MMMethodMMM];
+                if([[SUtil getDateStringWithTimeStr_MMMethodMMM:curTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日玩家
+                    
+                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_purchase_over4 parameters_MMMethodMMM:eventValues];
+                }
+            }
+            
         }
         
     } @catch (NSException *exception) {

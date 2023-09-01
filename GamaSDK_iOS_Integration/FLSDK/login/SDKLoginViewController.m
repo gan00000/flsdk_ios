@@ -613,12 +613,12 @@
         [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
         
         GameUserModel *xxGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:loginResopnse.data.userId];
-        if(xxGameUserModel && xxGameUserModel.isRegDayPay){
+        if(xxGameUserModel && xxGameUserModel.isRegDayPay){//注册首日付费用户
             
             NSString *yesterDate = [SUtil getYesterdayDateWithTimeStr_MMMethodMMM:loginResopnse.data.timestamp dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
             NSString *regDate = [SUtil getDateStringWithTimeStr_MMMethodMMM:xxGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
             SDK_LOG(@"yesterDate=%@, regDate=%@", yesterDate, regDate);
-            if([yesterDate isEqualToString:regDate] && xxGameUserModel.isRegDayPay){
+            if([yesterDate isEqualToString:regDate] && xxGameUserModel.isRegDayPay){//玩家第二天登录上报
                 //注册首日付费玩家第二天登录上报
                 SDK_LOG(@"log event Paid_D2Login start");
                 [AdLogger logWithEventName_MMMethodMMM:@"Paid_D2Login" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];

@@ -432,4 +432,6 @@
 #define wwwww_tag_wwwww_text_personal_clause        @"text_personal_clause"  //@"text_personal_clause"
 #define wwwww_tag_wwwww_text_customer               @"text_customer"    //@"text_customer"
 
+#define wwwww_tag_wwwww_purchase_over4          @"purchase_over4"   //@"purchase_over4"
+
 #endif /* Headers_h */
