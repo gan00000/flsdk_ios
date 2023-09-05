@@ -417,6 +417,7 @@
 #define wwwww_tag_wwwww__CC_FF9944      Decrypt_AllStringContent(@"pkBZov2/+8bUCRSl1ewTOQ==")  //@"#FF9944"
 #define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 #define wwwww_tag_wwwww_Initiate_Checkout       @"Initiate_Checkout"  //@"Initiate_Checkout"
+#define wwwww_tag_wwwww_purchase_over4          @"purchase_over4"   //@"purchase_over4"
 
 
 #endif /* Headers_h */

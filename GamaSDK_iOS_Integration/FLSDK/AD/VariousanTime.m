@@ -12,6 +12,8 @@
 #import <AppsFlyerLib/AppsFlyerLib.h>
 
 #import "SdkHeader.h"
+#import "MWSDK.h"
+
 
 @implementation VariousanTime
 
@@ -190,6 +192,19 @@
 
         }
         
+        NSDictionary *eventValues = @{
+            @"usdPrice"  : @(mPayData.amount),
+            @"currency" : wwwww_tag_wwwww_USD,
+            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
+            wwwww_tag_wwwww_userId: mPayData.orderId ?: @"",
+            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+            wwwww_tag_wwwww_uniqueId      :  [PeopleitionStudentosity getGamaUUID_MMMethodMMM]? : @"",
+            wwwww_tag_wwwww_time         :[PeopleitionStudentosity getTimeStamp_MMMethodMMM],
+            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+            
+        };
+
         
         HerallySolvfier *gGameUserModel = [[SpersastArrive share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
         if(gGameUserModel){
@@ -256,6 +271,18 @@
                 }
                 [[SpersastArrive share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
             }
+            
+            
+            if(mPayData.amount > 4){
+                
+                NSString *curTime = [PeopleitionStudentosity getTimeStamp_MMMethodMMM];
+                if([[PeopleitionStudentosity getDateStringWithTimeStr_MMMethodMMM:curTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[PeopleitionStudentosity getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日玩家
+                    
+                    [ThousandaciousAstic logWithEventName_MMMethodMMM:AD_EVENT_purchase_over4 parameters_MMMethodMMM:eventValues];
+                }
+            }
+
+
         }
 
 

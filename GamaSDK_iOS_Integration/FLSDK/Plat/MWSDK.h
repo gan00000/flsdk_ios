@@ -28,6 +28,8 @@
 
 #define AD_EVENT_UPGRADE_ACCOUNT  @"Upgrade_Account"
 #define AD_EVENT_Initiate_Checkout  wwwww_tag_wwwww_Initiate_Checkout
+#define AD_EVENT_purchase_over4  wwwww_tag_wwwww_purchase_over4
+
 
 // 充值回调
 typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
