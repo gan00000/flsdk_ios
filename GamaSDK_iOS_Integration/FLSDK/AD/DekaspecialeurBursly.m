@@ -14,6 +14,8 @@
 
 #import "SdkHeader.h"
 #import "AdjustDelegate.h"
+#import "MWSDK.h"
+
 
 @implementation DekaspecialeurBursly
 
@@ -914,7 +916,7 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
             @"usdPrice"  : @(mPayData.amount),
             @"currency" : wwwww_tag_wwwww_USD,
             wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
-            wwwww_tag_wwwww_userId: mPayData.orderId ?: @"",
+            wwwww_tag_wwwww_orderId: mPayData.orderId ?: @"",
             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
             wwwww_tag_wwwww_uniqueId      :  [CenturyiaGraphic getGamaUUID_MMMethodMMM]? : @"",
             wwwww_tag_wwwww_time         :[CenturyiaGraphic getTimeStamp_MMMethodMMM],
@@ -993,6 +995,16 @@ if(U_personal - 166 - 10 + 949 / 728 - 99 < 3813){
                 }
                 [[TruthineFaci share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
             }
+            
+            if(mPayData.amount > 4){
+                
+                NSString *curTime = [CenturyiaGraphic getTimeStamp_MMMethodMMM];
+                if([[CenturyiaGraphic getDateStringWithTimeStr_MMMethodMMM:curTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[CenturyiaGraphic getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日玩家
+                    
+                    [MalsortableChoiceer logWithEventName_MMMethodMMM:AD_EVENT_purchase_over4 parameters_MMMethodMMM:eventValues];
+                }
+            }
+
         }
 
        
