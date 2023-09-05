@@ -1764,6 +1764,9 @@ switch (l_pher) {
         return;
     }
     
+    //添加点击支付上报
+    [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
+    
     [[TrixryMouthal shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
         
         self.isPaying = NO;
