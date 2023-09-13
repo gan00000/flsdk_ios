@@ -15,6 +15,7 @@
 #import "ViewUtil.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE wwwww_tag_wwwww_sdk_provisions_first_enble
+#define sdk_is_show_term  @"sdk_is_show_term"
 @interface TermsViewV2 ()
 @property (copy,nonatomic) void (^completer)(void);
 @end
@@ -60,7 +61,7 @@
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.1];
         
         [self landspaceView_MMMethodMMM];
-        
+        [TermsViewV2 setShowTerm_MMMethodMMM:YES];
         
     }
     return self;
@@ -251,6 +252,9 @@
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
+            if (self.mCCallBack) {
+                self.mCCallBack(@"false", 0, nil);
+            }
             [self removeFromSuperview];
             break;
             
@@ -259,7 +263,9 @@
             if (self.completer) {
                 self.completer();
             }
-            
+            if (self.mCCallBack) {
+                self.mCCallBack(@"true",1, nil);
+            }
             [self removeFromSuperview];
             
             break;
@@ -306,6 +312,19 @@
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];
+}
+
++(BOOL)isShowTerm_MMMethodMMM
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    return [saveDefault boolForKey:sdk_is_show_term];
+}
+
++ (void)setShowTerm_MMMethodMMM:(BOOL)value
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    [saveDefault setBool:value forKey:sdk_is_show_term];
+    [saveDefault synchronize];
 }
 
 @end

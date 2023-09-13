@@ -151,7 +151,7 @@ completionHandler:(SDKPayBlock) handler;
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
 - (void)openCs;
-
+- (void)openCsWithParams:(NSDictionary *)paramDic;
 
 /// 事件追踪
 /// @param name 事件名称

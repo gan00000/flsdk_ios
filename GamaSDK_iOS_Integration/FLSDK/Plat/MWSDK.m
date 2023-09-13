@@ -25,6 +25,7 @@
 #import <StoreKit/StoreKit.h>
 #import "GIDDelegate.h"
 #import "CreateOrderResp.h"
+#import "TermsViewV2.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -157,6 +158,26 @@
     }
     
     self.loginCompletionHandler = cmopleteHandler;
+    
+#ifdef SDK_KR
+    
+    if([TermsViewV2 isShowTerm_MMMethodMMM]){
+        
+        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+            
+            [self showNoticeView];
+            
+        }else{
+            [self sdkLoginWithHandlerForInner];
+        }
+        
+    }else{
+        [self showTermViewWithBlock];
+    }
+   
+
+#else
+    
     if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
         
         [self showNoticeView];
@@ -164,6 +185,9 @@
     }else{
         [self sdkLoginWithHandlerForInner];
     }
+    
+#endif
+    
     
 }
 
@@ -195,7 +219,6 @@
         
     }];
     
-//    [AdUtil requestIDFA]
 }
 
 
@@ -723,12 +746,16 @@
         return;
     }
     
+    [self openCsWithParams:nil];
+}
+
+- (void)openCsWithParams:(NSDictionary *)paramDic {
     NSString * csurl = SDK_DATA.urls.csUrl;
     if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
     }
-    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:nil];
+    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
@@ -747,7 +774,6 @@
     }];
     SDK_LOG(@"客服地址open end");
 }
-
 
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
 {
@@ -837,5 +863,41 @@
     }
 }
 
+-(void)showTermViewWithBlock
+{
+
+#ifdef SDK_KR
+    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
+        
+    }];
+    
+    UIView *superView = appTopViewController.view;
+    
+    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:aTermsViewV2];
+    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
+    }];
+    
+    aTermsViewV2.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {//弹出登录
+        
+        [bgV removeFromSuperview];
+        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+            
+            [self showNoticeView];
+            
+        }else{
+            [self sdkLoginWithHandlerForInner];
+        }
+        
+    };
+    
+#endif
+}
 
 @end
