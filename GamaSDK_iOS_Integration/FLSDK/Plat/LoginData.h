@@ -38,7 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *dreamship3750End3751;//===insert my property===
 
 @property (nonatomic, assign) NSInteger strigic3752Miasmataheadfold3753;//===insert my property===
- 
+@property (nonatomic, copy) NSString *gameCode;
+
 
 @end
 

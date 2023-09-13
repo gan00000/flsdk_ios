@@ -483,4 +483,8 @@
 #define saveAlready14Age_MMMethodMMM          indictVenue
 #define isAlready14Age_MMMethodMMM          urinateSilica
 
+#define     isShowTerm_MMMethodMMM      isShowTerm
+#define     setShowTerm_MMMethodMMM     setShowTerm
+#define    showTermViewWithBlock_MMMethodMMM    showTermViewWithBlock
+
 #endif  /* codeObfuscation_h */

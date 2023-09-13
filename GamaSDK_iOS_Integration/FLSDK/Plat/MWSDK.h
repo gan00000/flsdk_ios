@@ -112,6 +112,7 @@ completionHandler:(SDKPayBlock) handler;
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
 - (void)openCs;
+- (void)openCsWithParams:(NSDictionary *)paramDic;
 
 
 - (void)trackEventWithEventName:(NSString *)name;

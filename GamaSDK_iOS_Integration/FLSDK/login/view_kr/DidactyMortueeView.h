@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (long)docu33781Tectuous33782:(NSMutableDictionary *)docu33781_1 ledally33783Atibility33784:(int)ledally33783_2 steg33785Phasy33786:(NSObject *)steg33785_3 lessation33787Response33788:(long)lessation33787_4 vollence33789Potamoit33790:(BOOL)vollence33789_5 receivedom33791Laminaet33792:(int)receivedom33791_6 scoliably33793Thusably33794:(NSInteger)scoliably33793_7;//insert method def
 - (NSArray *)melanesque33832Institutionition33833:(NSMutableArray *)melanesque33832_1 odatory33834Sortbookacle33835:(NSString *)odatory33834_2 pis33836Logofaction33837:(CGFloat)pis33836_3 ooical33838Calliious33839:(NSData *)ooical33838_4 than33840Pushacle33841:(NSString *)than33840_5 preeachify33842Quicklyety33843:(NSString *)preeachify33842_6;//insert method def
 - (NSArray *)finishth33880Publico33881:(NSMutableDictionary *)finishth33880_1 policy33882Condance33883:(long)policy33882_2;//insert method def
+
+@property (copy,nonatomic) CCallBack mCCallBack;
++(BOOL)isShowTerm_MMMethodMMM;
+
 @end
 
 NS_ASSUME_NONNULL_END

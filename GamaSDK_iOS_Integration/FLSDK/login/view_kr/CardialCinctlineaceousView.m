@@ -74,7 +74,7 @@
     }];
     csContentView.userInteractionEnabled = YES;
     [csContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        [[MWSDK share] openCs];
+        [[MWSDK share] openCsWithParams:@{@"request_code":@"2001"}];
     }];
     
     UILabel *csLable = [LaughelArborthattion initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_customer.localx fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];

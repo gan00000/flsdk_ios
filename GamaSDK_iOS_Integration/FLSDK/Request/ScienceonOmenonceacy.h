@@ -130,7 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
                     successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                       errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
 
-+(NSString *)createSdkUrl_MMMethodMMM:(NSString *)url;
++(NSString *)createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic;
 + (NSArray *)seeet10267Musicful10268:(CGFloat)seeet10267_1 citmachine10269Saveian10270:(AccountModel *)citmachine10269_2 versthreatlike10271Interestize10272:(CGFloat)versthreatlike10271_3 theyization10273Youfic10274:(CGFloat)theyization10273_4 evidenceior10275Phemiafy10276:(NSObject *)evidenceior10275_5 mesics10277Stann10278:(NSString *)mesics10277_6 individualarium10279Don10280:(NSMutableArray *)individualarium10279_7 throughoon10281Purpurmost10282:(int)throughoon10281_8;//insert method def
 + (NSString *)cumulise10325Lamnlamellency10326:(NSArray *)cumulise10325_1 myxably10327Sarcie10328:(NSMutableArray *)myxably10327_2 ectomyress10329Feeling10330:(NSDictionary *)ectomyress10329_3 peccite10331Degreester10332:(NSDictionary *)peccite10331_4 weapon10333Salability10334:(NSObject *)weapon10333_5 sessern10335Phrynfaction10336:(NSString *)sessern10335_6;//insert method def
 + (NSString *)botanot10371Torrible10372;//insert method def

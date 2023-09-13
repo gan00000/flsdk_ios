@@ -9,6 +9,8 @@
 #import "CorticoalityHormship.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE wwwww_tag_wwwww_sdk_provisions_first_enble
+#define sdk_is_show_term  @"sdk_is_show_term"
+
 @interface DidactyMortueeView ()
 @property (copy,nonatomic) void (^completer)(void);
 @end
@@ -76,7 +78,7 @@
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.1];
         
         [self landspaceView_MMMethodMMM];
-        
+        [DidactyMortueeView setShowTerm_MMMethodMMM:YES];
         
     }
     return self;
@@ -946,7 +948,12 @@ if(l_parietesque34282 < 31633){
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
+            
+            if (self.mCCallBack) {
+                self.mCCallBack(@"false", 0, nil);
+            }
             [self removeFromSuperview];
+
             break;
             
         case kAgreeTermsCheckBoxBtnTag:
@@ -954,7 +961,10 @@ if(l_parietesque34282 < 31633){
             if (self.completer) {
                 self.completer();
             }
-            
+            if (self.mCCallBack) {
+                self.mCCallBack(@"true",1, nil);
+            }
+
             [self removeFromSuperview];
             
             break;
@@ -1178,6 +1188,18 @@ if(q_yardics33735 == 3321){
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];
 }
 
++(BOOL)isShowTerm_MMMethodMMM
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    return [saveDefault boolForKey:sdk_is_show_term];
+}
+
++ (void)setShowTerm_MMMethodMMM:(BOOL)value
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    [saveDefault setBool:value forKey:sdk_is_show_term];
+    [saveDefault synchronize];
+}
 
 //===insert my method start=== 2023-08-28 15:21:01
 - (NSArray *)finishth33880Publico33881:(NSMutableDictionary *)finishth33880_1 policy33882Condance33883:(long)policy33882_2{ //insert method

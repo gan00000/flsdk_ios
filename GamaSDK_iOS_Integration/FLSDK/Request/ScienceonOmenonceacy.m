@@ -1682,7 +1682,7 @@ switch (e_tragcallose11124) {
 }
 
 #pragma mark - sdk基本参数 + 角色相关数值参数
-+ (NSDictionary *)appendGameParamsDic_MMMethodMMM
++ (NSMutableDictionary *)appendGameParamsDic_MMMethodMMM
 {
     
     NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic_MMMethodMMM]];
@@ -3050,9 +3050,12 @@ if(m_mainative11356 < 35598){
 
 
 #pragma mark - 通過url創建通用參數鏈接
-+(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url{
++(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic{
     
-    NSDictionary *temDic = [self appendGameParamsDic_MMMethodMMM];
+    NSMutableDictionary *temDic = [self appendGameParamsDic_MMMethodMMM];
+    if(otherDic){
+        [temDic addEntriesFromDictionary:otherDic];
+    }
     NSString *tempParams = @"";
    
     for (NSString * key in temDic) {
