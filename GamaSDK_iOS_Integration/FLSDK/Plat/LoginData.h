@@ -24,7 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *telephone;
 @property (nonatomic, copy) NSString *loginId;
-@property (nonatomic, copy) NSString *sign; 
+@property (nonatomic, copy) NSString *sign;
+@property (nonatomic, copy) NSString *gameCode;
 
 @end
 
