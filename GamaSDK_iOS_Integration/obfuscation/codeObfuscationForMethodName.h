@@ -484,4 +484,9 @@
 #define addAgeQuaView_MMMethodMMM       addAgeQuaView
 #define saveAlready14Age_MMMethodMMM    saveAlready14Age_MMMethodMMM
 #define isAlready14Age_MMMethodMMM      isAlready14Age_MMMethodMMM
+#define checkPayChannelWithSuccessBlock_MMMethodMMM     checkPayChannelWithSuccessBlock
+#define startMySdkPay_MMMethodMMM     startMySdkPay
+#define startIapPay_MMMethodMMM     startIapPay
+
+
 #endif  /* codeObfuscation_h */

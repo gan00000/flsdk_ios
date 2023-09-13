@@ -140,7 +140,16 @@ NS_ASSUME_NONNULL_BEGIN
                     successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                       errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
 
-+(NSString *)createSdkUrl_MMMethodMMM:(NSString *)url;
++ (void)checkPayChannelWithSuccessBlock_MMMethodMMM:(NSString *)productId
+                              cpOrderId_MMMethodMMM:(NSString *)cpOrderId
+                                  extra_MMMethodMMM:(NSString *)extra
+                               gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
+                           accountModel_MMMethodMMM:(AccountModel*) accountModel
+                         otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                             errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
+
++(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic;
 @end
 
 NS_ASSUME_NONNULL_END

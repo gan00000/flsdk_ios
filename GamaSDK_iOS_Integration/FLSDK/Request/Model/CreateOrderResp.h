@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *productId;
 
+@property (nonatomic, assign) BOOL isTogglePay;
+@property (nonatomic, assign) BOOL hideSelectChannel;
+
 @end
 
 NS_ASSUME_NONNULL_END

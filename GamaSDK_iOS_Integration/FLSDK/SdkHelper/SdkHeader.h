@@ -142,6 +142,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define api_delete_account     (@"api/cancel/account")
 #define api_order_create     (@"api/order/create")
 #define api_payment         (@"api/apple/payment")
+#define api_check_payment_channel         (@"api/payment/channel")
 
 #define api_sendMobileVcode  (@"api/vcode/sendMobileVcode")
 #define api_bind_phone  (@"api/mobile/bind")

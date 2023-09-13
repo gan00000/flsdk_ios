@@ -24,6 +24,7 @@
 #import "TouchEventInterruptView.h"
 #import <StoreKit/StoreKit.h>
 #import "GIDDelegate.h"
+#import "CreateOrderResp.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -250,6 +251,84 @@
     
 }
 
+- (void)startIapPay_MMMethodMMM:(AccountModel *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
+    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+        
+        self.isPaying = NO;
+        
+        if (self.payHandler) {
+            if (success) {
+                
+                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                if (!havePay) {
+                    //                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_FIRST_PURCHASE parameters_MMMethodMMM:nil];
+                }
+                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                
+                [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
+                self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
+                
+                
+            }else{
+                self.payHandler(SDK_PAY_STATUS_FAIL, nil);
+            }
+        }
+        
+    }];
+}
+
+- (void)startMySdkPay_MMMethodMMM:(AccountModel *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId
+{
+    SDK_LOG(@"startMySdkPay...");
+    
+    NSString * myPayUrl = GetConfigString(@"sdk_my_pay_url");
+    if ([StringUtil isEmpty_MMMethodMMM:myPayUrl]) {
+        SDK_LOG(@"startMySdkPay myPayUrl=%@",myPayUrl);
+        return;
+    }
+    
+    NSDictionary *dic;
+    @try {
+         dic = @{
+//            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
+            
+            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
+            
+            wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_productId           :productId,
+            wwwww_tag_wwwww_extra           :extra ? : @"",
+            wwwww_tag_wwwww_cpOrderId         :cpOrderId,
+
+        };
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:myPayUrl otherDic_MMMethodMMM:dic];
+    SDK_LOG(@"startMySdkPay myPayUrl=%@",resultURL);
+    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.switchInterfaceOrientationPortrait = YES;
+    };
+    webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.switchInterfaceOrientationPortrait = NO;
+    };
+    webVC.didDismissCallback = ^{
+        
+    };
+    
+    [appTopViewController presentViewController:webVC animated:NO completion:^{
+        SDK_LOG(@"MWWebViewController presentViewController completioN");
+        
+    }];
+    SDK_LOG(@"startMySdkPay open end");
+}
+
 /**
  充值
  
@@ -319,29 +398,33 @@
     //添加点击支付上报
     [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
     
-    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+    if(SDK_DATA.mConfigModel.togglePay){//是否需要切换第三方支付
         
-        self.isPaying = NO;
-        
-        if (self.payHandler) {
-            if (success) {
-               
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
-                if (!havePay) {
-//                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_FIRST_PURCHASE parameters_MMMethodMMM:nil];
+        [SDKRequest checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+            
+            if(responseData){
+                CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                if(cor.isTogglePay){
+                    //切换第三方
+                    if(cor.hideSelectChannel){
+                        
+                        [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
+                    }else{
+                        
+                    }
+                    return;
                 }
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
-                
-                [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
-                self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
-                
-                
-            }else{
-                self.payHandler(SDK_PAY_STATUS_FAIL, nil);
             }
-        }
-        
-    }];
+            
+            [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
+            
+        } errorBlock_MMMethodMMM:^(BJError *error) {
+            [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
+        }];
+        return;
+    }
+    
+    [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
     
 }
 
@@ -645,7 +728,7 @@
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
     }
-    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl];
+    NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:nil];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {

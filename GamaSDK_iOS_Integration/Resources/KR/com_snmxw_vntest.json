@@ -14,6 +14,7 @@
     "sdk_v_version" : "kr",
     "terms_service_url" : "https://member.hwxgame.com/sdk/agreement/%@_agreement.html",
     "sdk_naver_consumer_key" : "rax8xuw2CP1HFvQsdIJC",
-    "sdk_naver_consumer_secret" : "2hzM7vADCF"
+    "sdk_naver_consumer_secret" : "2hzM7vADCF",
+    "sdk_my_pay_url" : ""
     
 }

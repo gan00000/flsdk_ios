@@ -306,7 +306,7 @@
                                   errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -345,7 +345,7 @@
                                   errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -395,7 +395,7 @@
 }
 
 #pragma mark - sdk基本参数 + 角色相关数值参数
-+ (NSDictionary *)appendGameParamsDic_MMMethodMMM
++ (NSMutableDictionary *)appendGameParamsDic_MMMethodMMM
 {
     
     NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic_MMMethodMMM]];
@@ -613,7 +613,7 @@
                           errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     //@{wwwww_tag_wwwww_vfCode: vfCode,wwwww_tag_wwwww_phone: phoneNum,wwwww_tag_wwwww_phoneAreaCode: areaCode}
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendGameParamsDic_MMMethodMMM]];
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
@@ -853,11 +853,84 @@
     
 }
 
++ (void)checkPayChannelWithSuccessBlock_MMMethodMMM:(NSString *)productId
+                              cpOrderId_MMMethodMMM:(NSString *)cpOrderId
+                                  extra_MMMethodMMM:(NSString *)extra
+                               gameInfo_MMMethodMMM:(GameUserModel*)gameUserModel
+                           accountModel_MMMethodMMM:(AccountModel*) accountModel
+                         otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                             errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[self appendCommParamsDic_MMMethodMMM]];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",GAME_CODE];
+    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    
+    //    [md5str appendFormat:@"%@",[[GamaFunction getMD5StrFromString_MMMethodMMM:password] lowercaseString]]; //用户密码
+    
+    //    [md5str appendFormat:@"%@",[thirdId lowercaseString]];//thirdid
+    //    [md5str appendFormat:@"%@",[thirdPlate lowercaseString]];//thirdplatform
+    
+    NSString *md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
+    NSString *roleNameTemp = gameUserModel.roleName ? : @"";
+    NSString *serverNameTemp = gameUserModel.serverName ? : @"";
+    
+    @try {
+        NSDictionary *dic = @{
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_gameCode         :GAME_CODE,
+            wwwww_tag_wwwww_userId           :accountModel.userId,
+            wwwww_tag_wwwww_loginAccessToken  :accountModel.token ? : @"",
+            wwwww_tag_wwwww_loginTimestamp   :accountModel.timestamp ? : @"",
+            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
+            
+            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
+            
+            wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_productId           :productId,
+            wwwww_tag_wwwww_extra           :extra ? : @"",
+            wwwww_tag_wwwww_cpOrderId         :cpOrderId,
+            wwwww_tag_wwwww_serverCode           :gameUserModel.serverCode,
+            wwwww_tag_wwwww_serverName           :[serverNameTemp urlEncode_MMMethodMMM],
+            wwwww_tag_wwwww_roleId           :gameUserModel.roleID,
+            wwwww_tag_wwwww_roleName           : [roleNameTemp urlEncode_MMMethodMMM],
+            wwwww_tag_wwwww_roleLevel           :gameUserModel.roleLevel ? : @"",
+            wwwww_tag_wwwww_roleVipLevel           :gameUserModel.roleVipLevel ? : @"",
+            
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_check_payment_channel params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
+    
+}
 
 #pragma mark - 通過url創建通用參數鏈接
-+(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url{
++(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic{
     
-    NSDictionary *temDic = [self appendGameParamsDic_MMMethodMMM];
+    NSMutableDictionary *temDic = [self appendGameParamsDic_MMMethodMMM];
+    if(otherDic){
+        [temDic addEntriesFromDictionary:otherDic];
+    }
+    
     NSString *tempParams = @"";
    
     for (NSString * key in temDic) {
