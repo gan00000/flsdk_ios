@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0340F2B82AB16B8B00475C43 /* adjust-info-vnmxwios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C91BBD2A7A5E5D00289870 /* adjust-info-vnmxwios.plist */; };
 		0362D6EB2A25B822003F0A2B /* wxsdk-vn2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 306EA6CCFE1C11EDBF050E90 /* wxsdk-vn2023.json */; };
 		0362D6ED2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0362D6EC2A25C53B003F0A2B /* 82c5e764d725666c38d50ea8abd5372f.txt */; };
 		0362D6F22A25DA38003F0A2B /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 306FAE85FE1C11ED804E0E90 /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,11 +42,8 @@
 		0362D7062A25DAA2003F0A2B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069DF73FE1C11EDAB070E90 /* GTMAppAuth.xcframework */; };
 		0362D7072A25DABB003F0A2B /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C1AEFE1C11EDA2BC0E90 /* FirebaseMessaging.xcframework */; };
 		0362D7082A25DABB003F0A2B /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C79CFE1C11ED96870E90 /* GoogleDataTransport.xcframework */; };
-		03C91BB62A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */; };
-		03C91BB72A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BB52A7A5BD700289870 /* AdjustSdk.xcframework */; };
 		03C91BBB2A7A5C3000289870 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BB92A7A5C3000289870 /* AdjustDelegate.m */; };
 		03C91BBC2A7A5C3000289870 /* AdjustDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C91BBA2A7A5C3000289870 /* AdjustDelegate.h */; };
-		03C91BBE2A7A5E5D00289870 /* adjust-info-vnmxwios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C91BBD2A7A5E5D00289870 /* adjust-info-vnmxwios.plist */; };
 		03C91BC72A7B4E1500289870 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC02A7B4E1500289870 /* FBSDKShareKit.xcframework */; };
 		03C91BC82A7B4E1500289870 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC12A7B4E1500289870 /* FBSDKCoreKit.xcframework */; };
 		03C91BC92A7B4E1500289870 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BC22A7B4E1500289870 /* FBSDKLoginKit.xcframework */; };
@@ -820,7 +818,6 @@
 				0362D7002A25DA91003F0A2B /* FirebaseCoreInternal.xcframework in Frameworks */,
 				03C91C0E2A7B51AC00289870 /* AppsFlyerLib.xcframework in Frameworks */,
 				0362D7012A25DA91003F0A2B /* GoogleAppMeasurement.xcframework in Frameworks */,
-				03C91BB72A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */,
 				03C91C112A7B51C400289870 /* FBSDKLoginKit.xcframework in Frameworks */,
 				03C91C132A7B51C900289870 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				0362D7052A25DAA2003F0A2B /* AppAuth.xcframework in Frameworks */,
@@ -873,7 +870,6 @@
 				306D76A1FE1C11ED955C0E90 /* Social.framework in Frameworks */,
 				30697475FE1C11EDB23A0E90 /* GTMSessionFetcher.xcframework in Frameworks */,
 				306D7D11FE1C11EDB7470E90 /* AVFoundation.framework in Frameworks */,
-				03C91BB62A7A5BD700289870 /* AdjustSdk.xcframework in Frameworks */,
 				306D8351FE1C11EDAB3D0E90 /* AddressBook.framework in Frameworks */,
 				306D8923FE1C11ED99C20E90 /* QuartzCore.framework in Frameworks */,
 				306D9019FE1C11ED85660E90 /* Photos.framework in Frameworks */,
@@ -1988,7 +1984,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C91BBE2A7A5E5D00289870 /* adjust-info-vnmxwios.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1997,6 +1992,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				306979EBFE1C11EDA7190E90 /* NOTICES in Resources */,
+				0340F2B82AB16B8B00475C43 /* adjust-info-vnmxwios.plist in Resources */,
 				3068C52EFE1C11EDAA130E90 /* mxwvnios_res.bundle in Resources */,
 				3068CB63FE1C11EDA1650E90 /* GoogleService-Info.plist in Resources */,
 				3069D0DEFE1C11EDB0FE0E90 /* GoogleSignIn.bundle in Resources */,

@@ -7,7 +7,7 @@
 //
 
 #import "AdjustDelegate.h"
-#import <AdjustSdk/Adjust.h>
+//#import <AdjustSdk/Adjust.h>
 #import "SdkHeader.h"
 
 @implementation AdjustDelegate
@@ -33,14 +33,14 @@
         SDK_LOG(@"adjustAppToken is empty");
         return ;
     }
-    NSString *environment = ADJEnvironmentProduction;
-    if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
-        environment = ADJEnvironmentSandbox;
-    }
-    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
-    [adjustConfig setLogLevel:ADJLogLevelVerbose];
-    [Adjust appDidLaunch:adjustConfig];
-    SDK_LOG(@"adjustAppToken init finish");
+//    NSString *environment = ADJEnvironmentProduction;
+//    if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
+//        environment = ADJEnvironmentSandbox;
+//    }
+//    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
+//    [adjustConfig setLogLevel:ADJLogLevelVerbose];
+//    [Adjust appDidLaunch:adjustConfig];
+//    SDK_LOG(@"adjustAppToken init finish");
     
 }
 
@@ -61,47 +61,47 @@
         return ;
     }
     SDK_LOG(@"adjust track event start eventName=%@",eventName);
-    NSString *eventToken = @"";
-    if(eventsDic){
-        eventToken = eventsDic[eventName];
-    }
-    
-    if([DrugfulMediic isEmpty_MMMethodMMM:eventToken]){
-        NSString *adjustEventFileName = [NSString stringWithFormat:@"adjust-info-%@", GAME_CODE];
-        NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
-        
-        if (!adjustEventPlistPath) {
-            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
-            return;
-        }
-        eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
-        if(eventsDic){
-            eventToken = eventsDic[eventName];
-        }
-    }
-    
-    if([DrugfulMediic isEmpty_MMMethodMMM:eventToken]){
-        SDK_LOG(@"adjust track event eventToken is empty, eventName=%@",eventName);
-        return;
-    }
-    
-    ADJEvent *event = [ADJEvent eventWithEventToken:eventToken];
-    if(revenue > 0){
-        [event setRevenue:revenue currency:@"USD"];
-        if([DrugfulMediic isNotEmpty_MMMethodMMM:transactionId]){
-            [event setTransactionId:transactionId];
-        }
-    }
-    
-    if(eventValues){
-        
-        [eventValues enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-            NSString *value2 = [NSString stringWithFormat:@"%@", obj];
-            [event addCallbackParameter:key value:value2];
-        }];
-    }
-    
-    [Adjust trackEvent:event];
+//    NSString *eventToken = @"";
+//    if(eventsDic){
+//        eventToken = eventsDic[eventName];
+//    }
+//
+//    if([DrugfulMediic isEmpty_MMMethodMMM:eventToken]){
+//        NSString *adjustEventFileName = [NSString stringWithFormat:@"adjust-info-%@", GAME_CODE];
+//        NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
+//
+//        if (!adjustEventPlistPath) {
+//            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
+//            return;
+//        }
+//        eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
+//        if(eventsDic){
+//            eventToken = eventsDic[eventName];
+//        }
+//    }
+//
+//    if([DrugfulMediic isEmpty_MMMethodMMM:eventToken]){
+//        SDK_LOG(@"adjust track event eventToken is empty, eventName=%@",eventName);
+//        return;
+//    }
+//
+//    ADJEvent *event = [ADJEvent eventWithEventToken:eventToken];
+//    if(revenue > 0){
+//        [event setRevenue:revenue currency:@"USD"];
+//        if([DrugfulMediic isNotEmpty_MMMethodMMM:transactionId]){
+//            [event setTransactionId:transactionId];
+//        }
+//    }
+//
+//    if(eventValues){
+//
+//        [eventValues enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//            NSString *value2 = [NSString stringWithFormat:@"%@", obj];
+//            [event addCallbackParameter:key value:value2];
+//        }];
+//    }
+//
+//    [Adjust trackEvent:event];
     SDK_LOG(@"adjust track event finish, eventName=%@",eventName);
 }
 
