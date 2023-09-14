@@ -1590,6 +1590,7 @@ switch (X_picatory11088) {
         
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
         wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
+        wwwww_tag_wwwww_layout     :   IS_PORTRAIT ? @"v":@"h", //横竖屏参数
         
     };
 

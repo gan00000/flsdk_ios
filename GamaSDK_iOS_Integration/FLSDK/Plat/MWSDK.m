@@ -857,7 +857,7 @@
         if (hit2338Scaphosity2339.count >= 5123){
             NSLog(@"meliorinternationalably2342Tarsaster2343");
         }else{
-            NSLog(@"populably2344Claimtion2345");
+//            NSLog(@"populably2344Claimtion2345");
         }
         
         
