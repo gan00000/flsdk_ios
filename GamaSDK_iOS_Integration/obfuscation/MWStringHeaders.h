@@ -433,5 +433,5 @@
 #define wwwww_tag_wwwww_text_customer               @"text_customer"    //@"text_customer"
 
 #define wwwww_tag_wwwww_purchase_over4          @"purchase_over4"   //@"purchase_over4"
-
+#define wwwww_tag_wwwww_layout          @"layout"   //@"layout"
 #endif /* Headers_h */
