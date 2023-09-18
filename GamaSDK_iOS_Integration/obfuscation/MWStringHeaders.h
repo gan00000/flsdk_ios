@@ -419,5 +419,6 @@
 #define wwwww_tag_wwwww_Key_GameUserMode        @"Key_GameUserMode"  //@"Key_GameUserMode"
 #define wwwww_tag_wwwww_Initiate_Checkout       @"Initiate_Checkout"  //@"Initiate_Checkout"
 #define wwwww_tag_wwwww_purchase_over4          @"purchase_over4"   //@"purchase_over4"
+#define wwwww_tag_wwwww_layout          @"layout"   //@"layout"
 
 #endif /* Headers_h */
