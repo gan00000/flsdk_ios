@@ -1077,12 +1077,11 @@ if(E_scelaster + 110 * 235 + 889 + 191 != 86468){
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     
-    if ([DrugfulMediic isEmpty_MMMethodMMM:roleId] || [DrugfulMediic isEmpty_MMMethodMMM:roleName] ||
-        [DrugfulMediic isEmpty_MMMethodMMM:roleLevel] ||
-        [DrugfulMediic isEmpty_MMMethodMMM:serverCode])
+    if ([DrugfulMediic isEmpty_MMMethodMMM:roleId] || [DrugfulMediic isEmpty_MMMethodMMM:serverCode])
     {
         
-        [MeanSecutization showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+//        [MeanSecutization showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
 
 		//====insert my code start===  2023-05-30 11:20:43
 		{
