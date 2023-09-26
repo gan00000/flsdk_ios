@@ -2739,13 +2739,12 @@
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
-    
-    if ([PentadeWhole isEmpty_MMMethodMMM:roleId] || [PentadeWhole isEmpty_MMMethodMMM:roleName] ||
-        [PentadeWhole isEmpty_MMMethodMMM:roleLevel] ||
+    if ([PentadeWhole isEmpty_MMMethodMMM:roleId] ||
         [PentadeWhole isEmpty_MMMethodMMM:serverCode])
     {
         
-        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+//        [ColdicalProsly showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
         return;
     }
     
@@ -4062,7 +4061,7 @@
 - (void)requestStoreReview
 {
     
-    
+    SDK_LOG(@"sdk requestStoreReview");
     //====insert my code start===  2023-08-28 15:21:00
     {
         
