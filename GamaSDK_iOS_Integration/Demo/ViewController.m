@@ -198,7 +198,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.miaoou.6jin";
+            NSString *aProductID = @"com_wanxi_mxwvn_4p";
             [self pay:aProductID];
         }
             break;
