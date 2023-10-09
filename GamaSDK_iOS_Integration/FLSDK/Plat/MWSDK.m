@@ -130,7 +130,7 @@
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
     });
-    
+    _shareSP.sdkBaseEncryptKey = @"wxsdk-vn2023";
     return _shareSP;
 }
 
