@@ -15,7 +15,7 @@
 #define SDK_LOG_FILE_FUNCTION(format, ...) (NSLog)((@"MW_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 #endif
 
-#define SDK_LOG(format, ...) (NSLog)((@"MW_SDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
+#define SDK_LOG(format, ...) (NSLog)((@"MWSDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 
 #define kWeakSelf __weak typeof(self) weakSelf = self;
 

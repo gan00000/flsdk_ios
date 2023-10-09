@@ -205,6 +205,12 @@
 #define sdk_bg_page         @"sdk_bg_page"
 #define mw_naver_icon    @"icon_naver"
 
+#define bg_select_pay_channel   @"bg_select_pay_channel"
+#define bg_select_channel_close   @"bg_select_channel_close"
+#define icon_back_webview       @"icon_back_webview"
+#define icon_close_white       @"icon_close_white"
+#define icon_apple_pay       @"icon_apple_pay"
+
 #elif SDK_V6
 
 //第6套

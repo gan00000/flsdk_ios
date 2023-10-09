@@ -7,6 +7,7 @@
 //
 
 #define js_close    wwwww_tag_wwwww_close
+#define js_onPayFinish    wwwww_tag_wwwww_onPayFinish
 
 #import "MWWebViewController.h"
 #import <SafariServices/SafariServices.h>
@@ -18,55 +19,50 @@
 //2）只有 Status bar is initially hidden 设置为 YES 的时候， View controller-based status bar appearance 才生效，这个要注意一下。
 
 @interface MWWebViewController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
-@property (nonatomic, copy) MWWebLayoutHandler layoutHandler;
+//@property (nonatomic, copy) MWWebLayoutHandler layoutHandler;
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) WKWebView *wkwebView;
 @property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UIView *footView;
+//@property (nonatomic, strong) UIView *footView;
 @property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic, strong) UIProgressView *progressView;
-@property (nonatomic) BOOL animation;
+//@property (nonatomic) BOOL animation;
+
 @property (nonatomic, strong) UIButton *closeBtn;
+@property (nonatomic, strong) UIButton *backBtn;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
 @implementation MWWebViewController
 
-+(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request layoutHandler_MMMethodMMM:(id)handler animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
++(instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request
+                                             isShowTitle_MMMethodMMM:(BOOL)isShowTitle
+                                               animation_MMMethodMMM:(BOOL)animation animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle
 {
-//    if(device_is_iPhoneX){
-//        SDK_LOG(wwwww_tag_wwwww_device_is_iPhoneX);
-//        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
-////        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
-//        [containerVC presentViewController:safariVC animated:animation completion:handler];
-//        return nil;
-//    }
-//    SDK_LOG(@"not device_is_iPhoneX");
-    MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutHandler_MMMethodMMM:handler animation_MMMethodMMM:animation];
+    //    if(device_is_iPhoneX){
+    //        SDK_LOG(wwwww_tag_wwwww_device_is_iPhoneX);
+    //        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:request.URL];
+    ////        safariVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    //        [containerVC presentViewController:safariVC animated:animation completion:handler];
+    //        return nil;
+    //    }
+    //    SDK_LOG(@"not device_is_iPhoneX");
+    MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutIsShowTitle_MMMethodMMM:isShowTitle animation_MMMethodMMM:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
     webVC.webRequest = request;
     //[webVC webLoadURLRequest_MMMethodMMM:request];
-   
+    
     return webVC;
 }
-- (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation
+- (instancetype)initWithWebLayoutIsShowTitle_MMMethodMMM:(BOOL)isShowTitle animation_MMMethodMMM:(BOOL)animation
 {
     if (self = [super initWithNibName:nil bundle:nil]) {
-        self.layoutHandler = handler;
-        self.animation = animation;
-        self.backgroundView = [[UIView alloc] init];
-        self.headerView = [[UIView alloc] init];
         
-        
-        self.progressView = [[UIProgressView alloc] init];
-        self.progressView.progressViewStyle = UIProgressViewStyleDefault;
-        self.progressView.progress = 0.0;
-
-        self.footView = [[UIView alloc] init];
+        self.isShowTitle = isShowTitle;
         
         self.shouldRotate = NO;
-        
         self.interfaceOrientationMask = UIInterfaceOrientationMaskAll;// 设备支持方向
         self.interfaceOrientation = UIInterfaceOrientationPortrait;
     }
@@ -77,120 +73,124 @@
     
     if (!_wkwebView) {
         
+        kWeakSelf
+        __weak id<WKScriptMessageHandler> scriptDelegate = weakSelf;
         WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
         configuration.userContentController = [[WKUserContentController alloc] init];
-        [configuration.userContentController addScriptMessageHandler:self name:js_close];
-
+        [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_close];
+        [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_onPayFinish];
+        
         _wkwebView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
         
-//        _wkwebView = [[WKWebView alloc] init];
-        
-//        _wkwebView.configuration = configuration;
         _wkwebView.navigationDelegate = self;
         _wkwebView.UIDelegate = self;
-        [_wkwebView addObserver:self forKeyPath:wwwww_tag_wwwww_estimatedProgress options:NSKeyValueObservingOptionNew context:nil];
+        [_wkwebView addObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS options:NSKeyValueObservingOptionNew context:nil];
+        [_wkwebView addObserver:self forKeyPath:wwwww_tag_wwwww_title options:NSKeyValueObservingOptionNew context:NULL];
+
     }
     
     return _wkwebView;
-
+    
 }
 
-- (void)loadView //system_method
-{
-    self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] gama_currentBounds_MMMethodMMM]];
-}
 
 - (void)viewDidLoad { //system_method
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     SDK_LOG(@"MWWebViewController viewDidLoad");
-//    UIView *statueView = [[UIView alloc] init];
-//    statueView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
-//    [self.view addSubview:statueView];
-//    [statueView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.top.leading.trailing.mas_equalTo(self.view);
-//        make.height.mas_equalTo(60);
-//    }];
-    
     self.backgroundView = [[UIView alloc] init];
-    
     [self.view addSubview:self.backgroundView];
-//    self.backgroundView.frame = self.view.bounds;
-    
-    //backgroundView add subviews
-//    [self.backgroundView addSubview:self.headerView];
-    
-    [self.backgroundView addSubview:self.wkwebView];
-//    [self.backgroundView addSubview:self.footView];
-    
-    _closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    _closeBtn.hidden = YES;
-    [self.view addSubview:_closeBtn];
-    [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.center.mas_equalTo(titleView);
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+    [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(self.view).mas_offset(VH(25));
-        make.trailing.mas_equalTo(self.view).mas_offset(-VH(30));
-        make.width.mas_equalTo(VH(30));
-        make.height.mas_equalTo(VH(30));
+        if (@available(iOS 11.0, *)) {
+            make.leading.trailing.mas_equalTo(self.view);
+            make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
+            make.bottom.mas_equalTo(self.view);
+            //                make.edges.mas_equalTo(self.view);
+        } else {
+            // Fallback on earlier versions
+            make.edges.mas_equalTo(self.view);
+        }
     }];
     
-    self.view.backgroundColor = UIColor.clearColor;
-    //custom layout or not
-    if (_layoutHandler) {
-        _layoutHandler(self.backgroundView, self.headerView, self.wkwebView, self.footView);
-    } else {
-        [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            if (@available(iOS 11.0, *)) {
-                make.leading.trailing.mas_equalTo(self.view);
-                make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
-                make.bottom.mas_equalTo(self.view);
-//                make.edges.mas_equalTo(self.view);
-            } else {
-                // Fallback on earlier versions
-                make.edges.mas_equalTo(self.view);
-            }
-        }];
-        
-//        [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.leading.trailing.mas_equalTo(self.backgroundView);
-//            make.height.mas_equalTo(self.backgroundView).multipliedBy(0.08);
-//        }];
-        
-//        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target_MMMethodMMM:self action:@selector(webClose)];
-//        UIBarButtonItem *reloadBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target_MMMethodMMM:self action:@selector(webReload)];
-//        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target_MMMethodMMM:nil action:nil];
-//        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target_MMMethodMMM:self action:@selector(webGoBack)];
-//        UIBarButtonItem *forwardBtn = [[UIBarButtonItem alloc] initWithTitle:@">" style:UIBarButtonItemStylePlain target_MMMethodMMM:self action:@selector(webGoForward)];
-//        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target_MMMethodMMM:nil action:nil];
-//        CGFloat screenWidth = [[UIScreen mainScreen] gama_currentBounds_MMMethodMMM].size.width;
-//        fixedSpace.width = screenWidth * 0.05;
-//
-//        UIToolbar *toolBar = [[UIToolbar alloc] init];
-//        [toolBar setItems:@[backBtn,fixedSpace,forwardBtn,space,reloadBtn,fixedSpace,closeBtn] animated:YES];
-//        [self.headerView addSubview:toolBar];
-//        [toolBar mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.edges.equalTo(self.headerView);
-//        }];
-        
-        [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(self.backgroundView);
-        }];
-    }
     
-    if (self.wkwebView && _progressView) {
-        [self.wkwebView addSubview:_progressView];
-        [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.leading.trailing.mas_equalTo(self.wkwebView);
-            make.height.equalTo(@(3));
+    //=============顶部标题=========
+    
+    if(self.isShowTitle){
+        
+        self.headerView = [[UIView alloc] init];
+        self.headerView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+        [self.backgroundView addSubview:self.headerView];
+        [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.leading.trailing.mas_equalTo(self.backgroundView);
+            make.height.mas_equalTo(VH(46));
         }];
+        
+        self.backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_back_webview highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_WEB_VIEW_BACK selector:@selector(webGoBack_MMMethodMMM) target_MMMethodMMM:self];
+        [self.headerView addSubview:self.backBtn];
+        [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.headerView);
+            make.leading.mas_equalTo(self.headerView).mas_offset(VW(20));
+            make.height.width.mas_equalTo(VH(22));
+        }];
+        
+        self.closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_white highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+        [self.headerView addSubview:self.closeBtn];
+        [self.closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.headerView);
+            make.trailing.mas_equalTo(self.headerView).mas_offset(VW(-20));
+            make.height.width.mas_equalTo(VH(22));
+        }];
+        
+        self.titleLabel = [UIUtil initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(18) textColor_MMMethodMMM:UIColor.whiteColor];
+        [self.headerView addSubview:self.titleLabel];
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self.headerView);
+        }];
+        
     }
+    //==============
+    
+    
+    [self.backgroundView addSubview:self.wkwebView];
+    [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if(self.headerView){
+            make.top.mas_equalTo(self.headerView.mas_bottom);
+            make.trailing.leading.bottom.mas_equalTo(self.backgroundView);
+        }else{
+            make.edges.mas_equalTo(self.backgroundView);
+        }
+    }];
+    
+    self.progressView = [[UIProgressView alloc] init];
+    self.progressView.progressViewStyle = UIProgressViewStyleDefault;
+    self.progressView.progress = 0.0;
+    
+    [self.wkwebView addSubview:_progressView];
+    [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.trailing.mas_equalTo(self.wkwebView);
+        make.height.equalTo(@(3));
+    }];
+    
+    
     [self webLoadURLRequest_MMMethodMMM:self.webRequest];
     
+    if(!self.isShowTitle){
+        
+        self.closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+        self.closeBtn.hidden = YES;
+        [self.backgroundView addSubview:self.closeBtn];
+        [self.closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.backgroundView);
+            make.centerY.mas_equalTo(self.wkwebView).mas_offset(20);
+            make.height.width.mas_equalTo(VH(30));
+        }];
+            
+    }
+    
     //设置状态栏是否隐藏
-//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     if(self.viewDidLoadCompletion){
         self.viewDidLoadCompletion(@"",0, nil);
@@ -205,7 +205,7 @@
 - (BOOL)prefersStatusBarHidden  //system_method
 {
     return YES;  //状态栏隐藏
-//    return NO; //状态栏显示, 默认值
+    //    return NO; //状态栏显示, 默认值
 }
 
 
@@ -221,14 +221,14 @@
     if (@available(iOS 11.0, *)) {
         //获取到安全区域，更新安全区域
         [self.backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
-
+            
             make.leading.trailing.mas_equalTo(self.view);
             make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
             make.bottom.mas_equalTo(self.view);
-
+            
         }];
     }
-  
+    
     
 }
 
@@ -261,7 +261,7 @@
 
 - (void)webClose_MMMethodMMM
 {
-  
+    
     if(self.willDismissCallback){
         self.willDismissCallback(@"",0, nil);
     }
@@ -269,6 +269,7 @@
         SDK_LOG(@"userContentController dismissViewControllerAnimated");
         !_didDismissCallback ?: _didDismissCallback();
     }];
+    [self releaseAll];
 }
 
 #pragma mark - WKNavigationDelegate
@@ -279,26 +280,16 @@
     SDK_LOG(@"页面开始加载webView didStartProvisionalNavigation");
     [_indicatorView startAnimating];
     
-//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didStartProvisionalNavigation:)]) {
-//        [_webViewDelegate webView:webView didStartProvisionalNavigation:navigation];
-//    }
 }
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
 {
     SDK_LOG(@"页面开始返回webView didCommitNavigation");
-//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didCommitNavigation:)]) {
-//        [_webViewDelegate webView:webView didCommitNavigation:navigation];
-//    }
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
     SDK_LOG(@"页面完成加载webView didFinishNavigation");
     [_indicatorView stopAnimating];
     
-//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFinishNavigation:)]) {
-//        [_webViewDelegate webView:webView didFinishNavigation:navigation];
-//    }
-//    _closeBtn.hidden = YES;
 }
 
 //当Web视图正在加载内容时发生错误时调用;
@@ -307,11 +298,6 @@
     SDK_LOG(@"webView didFailNavigation withError");
     [_indicatorView stopAnimating];
     
-//    !_alertHandler?:_alertHandler(error.description, nil);
-//
-//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didFailNavigation:withError:)]) {
-//        [_webViewDelegate webView:webView didFailNavigation:navigation withError:error];
-//    }
 }
 
 //在发送请求之前，决定是否跳转
@@ -333,9 +319,6 @@
 {
     SDK_LOG(@"didReceiveServerRedirectForProvisionalNavigation");
     NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
-//    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:didReceiveServerRedirectForProvisionalNavigation:)]) {
-//        [_webViewDelegate webView:webView didReceiveServerRedirectForProvisionalNavigation:navigation];
-//    }
 }
 
 //服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
@@ -343,10 +326,14 @@
     SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
     if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
         decisionHandler (WKNavigationResponsePolicyAllow);
-        _closeBtn.hidden = YES;
+        if(!self.isShowTitle){
+            self.closeBtn.hidden = YES;
+        }
     }else {
         decisionHandler(WKNavigationResponsePolicyAllow);
-        _closeBtn.hidden = NO;
+        if(!self.isShowTitle){
+            self.closeBtn.hidden = NO;
+        }
     }
 }
 
@@ -358,21 +345,14 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
     }]];
-//
+    //
     [self presentViewController:alert animated:YES completion:NULL];
-//    !_alertHandler?:_alertHandler(message, nil);
-////    completionHandler();
-//    !_alertHandler?:_alertHandler(message, nil);
-//    completionHandler();
-
+    
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  //system_method
 {
     SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
-//    !_alertHandler?:_alertHandler(message, ^(BOOL confirmResult) {
-//        !completionHandler?:completionHandler(confirmResult);
-//    });
 }
 
 
@@ -393,6 +373,9 @@
     if ([message.name isEqualToString:js_close]) {
         
         [self webClose_MMMethodMMM];
+    }else if ([message.name isEqualToString:js_onPayFinish]) {
+        
+        //        [self webClose_MMMethodMMM];
     }
 }
 
@@ -401,7 +384,9 @@
     
     if ([wwwww_tag_wwwww_loading isEqualToString:keyPath]) {
         
-    } else if ([wwwww_tag_wwwww_title isEqualToString:keyPath]) {
+    } else if (object == self.wkwebView && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
+        
+        self.titleLabel.text = self.wkwebView.title;
         
     } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
@@ -443,36 +428,53 @@
 //设置进入页面时默认显示的方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation  //system_method
 {
-//    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
-//        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-//
-//        if (UIInterfaceOrientationIsLandscape(orientation)) {
-//            return orientation;
-//        } else {
-//            return UIInterfaceOrientationPortrait;
-//        }
-//    } else {
-//        return _interfaceOrientation;
-//    }
+    //    if (_interfaceOrientation == UIInterfaceOrientationUnknown) {
+    //        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    //
+    //        if (UIInterfaceOrientationIsLandscape(orientation)) {
+    //            return orientation;
+    //        } else {
+    //            return UIInterfaceOrientationPortrait;
+    //        }
+    //    } else {
+    //        return _interfaceOrientation;
+    //    }
     SDK_LOG(@"preferredInterfaceOrientationForPresentation");
     return self.interfaceOrientation;
-;
+    ;
 }
 
 
+- (void)releaseAll {
+    SDK_LOG(@"MWWebViewController releaseAll");
+    @try {
+        
+        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_close];
+        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
+        [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
+        [self.wkwebView removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+}
+
 - (void)dealloc
 {
-    [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
+    SDK_LOG(@"MWWebViewController dealloc");
+//    [self releaseAll];
 }
 
 - (void)btnClickAction_MMMethodMMM:(UIButton *)sender
 {
-   
+    
     switch (sender.tag) {
         case TAG_CLOSE:
             [self webClose_MMMethodMMM];
             break;
-                        
+            
         default:
             break;
     }

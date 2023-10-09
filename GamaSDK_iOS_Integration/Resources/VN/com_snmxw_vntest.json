@@ -1,6 +1,6 @@
 {   "af_dev_key" : "Qtrx111",
     "appKey" : "8b778d641656e6b9cb566acf57c0144a",
-    "gameCode" : "vnmxwios",
+    "gameCode" : "mxwvnios",
     "gameLanguage" : "vi_VN",
     "sdk_language" : "vi",
     "sdk_ad_bug" : "0",
@@ -13,6 +13,7 @@
     "sdk_url_pay" : "https://pay.tthplay.com/",
     "sdk_v_version" : "v_vn",
     "terms_service_url" : "https://member.tthplay.com/sdk/agreement/%@_agreement.html",
-    "adjust_app_token" : "50vj3536d1j4"
+    "adjust_app_token" : "50vj3536d1j4",
+    "sdk_other_ppp_url" : "https://pay.tthplay.com/api/web/vn-payment.page"
     
 }

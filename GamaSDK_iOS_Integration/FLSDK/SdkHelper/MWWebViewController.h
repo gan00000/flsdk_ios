@@ -21,7 +21,7 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 @interface MWWebViewController : UIViewController
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
 
-@property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
+//@property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
 @property (nonatomic) BOOL shouldRotate;
 @property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
 @property (nonatomic) UIInterfaceOrientation interfaceOrientation;
@@ -31,6 +31,8 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 @property (nonatomic,copy) CCallBack2 didDismissCallback;
 
 @property (nonatomic, strong)NSURLRequest *webRequest;
+
+@property (nonatomic, assign)BOOL isShowTitle;
 
 /**
  webView后退
@@ -61,7 +63,7 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
  
  @return 初始化完毕的实例化对象。
  */
-- (instancetype)initWithWebLayoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler animation_MMMethodMMM:(BOOL)animation NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithWebLayoutIsShowTitle_MMMethodMMM:(BOOL)isShowTitle animation_MMMethodMMM:(BOOL)animation NS_DESIGNATED_INITIALIZER;
 
 /**
  @description 生成一个WebViewController并且使用rootViewController上的顶层presentedViewController来present出来。注意：webView在iOS8或以上采用WKWebView，其它版本采用xxWebView，且不要直接在EFWebLayoutHandler返回的webView上操作。
@@ -77,7 +79,7 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
  @return 实例化对象。
  */
 + (instancetype)webViewControllerPresentingWithURLRequest_MMMethodMMM:(NSURLRequest *)request
-                                            layoutHandler_MMMethodMMM:(MWWebLayoutHandler)handler
+                                            isShowTitle_MMMethodMMM:(BOOL)isShowTitle
                                                 animation_MMMethodMMM:(BOOL)animation
                                            animationStyle_MMMethodMMM:(UIModalTransitionStyle)animationStyle;
 

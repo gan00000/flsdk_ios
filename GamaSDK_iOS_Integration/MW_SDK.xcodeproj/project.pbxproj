@@ -326,6 +326,22 @@
 		0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0352F7102927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
 		0352F7112927671F00160A67 /* TouchEventInterruptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0352F70C2927671F00160A67 /* TouchEventInterruptView.m */; };
+		0356591E2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		0356591F2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659202AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659212AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659222AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659232AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */; };
+		035659252AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		035659262AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		035659272AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		035659282AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		035659292AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		0356592A2AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		0356592B2AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
+		0356592C2AD2B8F4007B0C6A /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
+		0356592D2AD2B8F4007B0C6A /* AdjustSdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03588C3D29B75FFF00D9CF84 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		035EDC1F29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */; };
@@ -1391,7 +1407,6 @@
 		03C3FB1E2A98A73500DF4DA7 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C91BA82A7A377100289870 /* AdjustDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C91BA62A7A377100289870 /* AdjustDelegate.h */; };
 		03C91BA92A7A377100289870 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
-		03C91BAF2A7A389700289870 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */; };
 		03C91BB22A7A415000289870 /* adjust-info-vnmxwios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */; };
 		03CA721C29D5698400098979 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
@@ -1795,6 +1810,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0356592D2AD2B8F4007B0C6A /* AdjustSdk.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1943,6 +1959,8 @@
 		03509D2529F91C8C00C840DA /* MWSDK_V6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0352F70B2927671F00160A67 /* TouchEventInterruptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchEventInterruptView.h; sourceTree = "<group>"; };
 		0352F70C2927671F00160A67 /* TouchEventInterruptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventInterruptView.m; sourceTree = "<group>"; };
+		0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectPayChannelView.h; sourceTree = "<group>"; };
+		0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectPayChannelView.m; sourceTree = "<group>"; };
 		035EDC1A29A499F7009092F0 /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		035EDC1B29A499F7009092F0 /* com_mplay_wlzhs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mplay_wlzhs.json; sourceTree = "<group>"; };
 		035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -2760,7 +2778,7 @@
 				03CA72EA29D5699600098979 /* AddressBook.framework in Frameworks */,
 				03CA72EB29D5699600098979 /* QuartzCore.framework in Frameworks */,
 				03CA72EC29D5699600098979 /* Photos.framework in Frameworks */,
-				03C91BAF2A7A389700289870 /* AdjustSdk.xcframework in Frameworks */,
+				0356592C2AD2B8F4007B0C6A /* AdjustSdk.xcframework in Frameworks */,
 				039E6EB929D9900200890B3B /* FBSDKCoreKit.xcframework in Frameworks */,
 				03CA72ED29D5699600098979 /* AssetsLibrary.framework in Frameworks */,
 				039E6EEB29D9900300890B3B /* FirebaseAnalytics.xcframework in Frameworks */,
@@ -3872,6 +3890,8 @@
 				034558D2285C25210025EFB2 /* AccountListView.m */,
 				0352F70B2927671F00160A67 /* TouchEventInterruptView.h */,
 				0352F70C2927671F00160A67 /* TouchEventInterruptView.m */,
+				0356591C2AD253C0007B0C6A /* SelectPayChannelView.h */,
+				0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -4057,6 +4077,7 @@
 				039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */,
 				03509C9129F91C8C00C840DA /* GamaThirdSocial.h in Headers */,
 				039AC1E829F91DD700B416D8 /* FindPasswordViewV2.h in Headers */,
+				035659222AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				039AC1EB29F91DD700B416D8 /* BindAccountViewV2.h in Headers */,
 				03509C9429F91C8C00C840DA /* UrlMode.h in Headers */,
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
@@ -4089,6 +4110,7 @@
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
+				0356591E2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
 				0352F70D2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
@@ -4123,6 +4145,7 @@
 				038612E529388F8900CC9C44 /* PayData.h in Headers */,
 				038612E629388F8900CC9C44 /* ViewUtil.h in Headers */,
 				038612E929388F8900CC9C44 /* LoginData.h in Headers */,
+				0356591F2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				038613922938906000CC9C44 /* LoginWithRegViewV2.h in Headers */,
 				038612EC29388F8900CC9C44 /* BasePopupView.h in Headers */,
 				038613992938906000CC9C44 /* MainHomeViewV2.h in Headers */,
@@ -4144,6 +4167,7 @@
 				0387B9DC291B8C9E001BACA8 /* MyTextFiled.h in Headers */,
 				0387B9DE291B8C9E001BACA8 /* GamaThirdSocial.h in Headers */,
 				0387B9DF291B8C9E001BACA8 /* UrlMode.h in Headers */,
+				035659202AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0387BA82291B8DA5001BACA8 /* BindPhoneViewV2.h in Headers */,
 				0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
 				0387B9E0291B8C9E001BACA8 /* CountTimerDelegate.h in Headers */,
@@ -4175,6 +4199,7 @@
 				0392B2652A5BA99900A3E2D6 /* FindPasswordViewV2.h in Headers */,
 				0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
+				035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
 				03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */,
 				0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */,
@@ -4204,6 +4229,7 @@
 				0381EC77298B5677006D6100 /* BindPhoneViewV2.h in Headers */,
 				039B25F6298B555300045C53 /* GamaThirdSocial.h in Headers */,
 				0381EC68298B5677006D6100 /* FindPasswordViewV2.h in Headers */,
+				035659212AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0381EC6B298B5677006D6100 /* BindAccountViewV2.h in Headers */,
 				039B25F7298B555300045C53 /* UrlMode.h in Headers */,
 				039B25F9298B555300045C53 /* TouchEventInterruptView.h in Headers */,
@@ -4237,6 +4263,7 @@
 				033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */,
 				033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */,
 				03CA722329D5698400098979 /* GamaThirdSocial.h in Headers */,
+				035659232AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
 				03CA722629D5698400098979 /* UrlMode.h in Headers */,
@@ -4807,6 +4834,7 @@
 				03509CAD29F91C8C00C840DA /* SDWebImageDecoder.m in Sources */,
 				03509CAE29F91C8C00C840DA /* UIImageView+HighlightedWebCache.m in Sources */,
 				03509CAF29F91C8C00C840DA /* BasePopupView.m in Sources */,
+				035659292AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				03509CB029F91C8C00C840DA /* SDWebImageDownloader.m in Sources */,
 				03509CB129F91C8C00C840DA /* UIImage+GIF.m in Sources */,
 				03509CB229F91C8C00C840DA /* UIImage+MultiFormat.m in Sources */,
@@ -5017,6 +5045,7 @@
 				037C6F2A2875AC790041EC34 /* AFNetworkReachabilityManager.m in Sources */,
 				037C6F2B2875AC790041EC34 /* AFSecurityPolicy.m in Sources */,
 				037C6F2C2875AC790041EC34 /* BJBaseHTTPEngine.m in Sources */,
+				035659252AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				037C6F2D2875AC790041EC34 /* UIImage+ResBundle.m in Sources */,
 				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
 				037C6F2F2875AC790041EC34 /* SecurityUtil.m in Sources */,
@@ -5074,6 +5103,7 @@
 				038612FD29388F8900CC9C44 /* SDWebImageDecoder.m in Sources */,
 				038612FE29388F8900CC9C44 /* UIImageView+HighlightedWebCache.m in Sources */,
 				038612FF29388F8900CC9C44 /* BasePopupView.m in Sources */,
+				035659262AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				0386130029388F8900CC9C44 /* SDWebImageDownloader.m in Sources */,
 				0386130129388F8900CC9C44 /* UIImage+GIF.m in Sources */,
 				0386130229388F8900CC9C44 /* UIImage+MultiFormat.m in Sources */,
@@ -5221,6 +5251,7 @@
 				0387B9F8291B8C9E001BACA8 /* SDWebImageManager.m in Sources */,
 				0387B9F9291B8C9E001BACA8 /* SDWebImageDecoder.m in Sources */,
 				0387B9FA291B8C9E001BACA8 /* UIImageView+HighlightedWebCache.m in Sources */,
+				035659272AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				0387B9FB291B8C9E001BACA8 /* BasePopupView.m in Sources */,
 				0387B9FC291B8C9E001BACA8 /* SDWebImageDownloader.m in Sources */,
 				0387B9FD291B8C9E001BACA8 /* UIImage+GIF.m in Sources */,
@@ -5380,6 +5411,7 @@
 				0392B1F02A5BA8DC00A3E2D6 /* LineDelegate.m in Sources */,
 				0392B1F12A5BA8DC00A3E2D6 /* GIDDelegate.m in Sources */,
 				0392B1F22A5BA8DC00A3E2D6 /* FirebaseDelegate.m in Sources */,
+				0356592B2AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				0392B1F32A5BA8DC00A3E2D6 /* FBDelegate.m in Sources */,
 				0392B1F42A5BA8DC00A3E2D6 /* HttpServiceEnginePay.m in Sources */,
 				0392B1F52A5BA8DC00A3E2D6 /* AccountModel.m in Sources */,
@@ -5505,6 +5537,7 @@
 				039B2613298B555300045C53 /* SDWebImageDecoder.m in Sources */,
 				039B2614298B555300045C53 /* UIImageView+HighlightedWebCache.m in Sources */,
 				039B2615298B555300045C53 /* BasePopupView.m in Sources */,
+				035659282AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				039B2616298B555300045C53 /* SDWebImageDownloader.m in Sources */,
 				039B2617298B555300045C53 /* UIImage+GIF.m in Sources */,
 				039B2618298B555300045C53 /* UIImage+MultiFormat.m in Sources */,
@@ -5752,6 +5785,7 @@
 				033B32E829D56AEE00AE9F96 /* MainHomeViewV2.m in Sources */,
 				03CA729F29D5698400098979 /* BindAccountView.m in Sources */,
 				033B32EF29D56AEE00AE9F96 /* TermsViewV2.m in Sources */,
+				0356592A2AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				03CA72A029D5698400098979 /* ChangePasswordView.m in Sources */,
 				03CA72A129D5698400098979 /* FindPasswordView.m in Sources */,
 				03CA72A229D5698400098979 /* LoginWithRegView.m in Sources */,

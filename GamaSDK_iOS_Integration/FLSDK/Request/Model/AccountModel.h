@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountModel : NSObject<NSCoding>  //iOS对象序列化与反序列化
 
-@property (nonatomic, copy) NSString *lastLoginTime;
+@property (nonatomic, copy) NSString *lastLoginTime; //客户端时间
 
 @property (nonatomic, assign) BOOL isBind;//是否绑定平台账号
 

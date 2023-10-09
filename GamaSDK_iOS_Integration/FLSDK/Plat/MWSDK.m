@@ -26,6 +26,7 @@
 #import "GIDDelegate.h"
 #import "CreateOrderResp.h"
 #import "TermsViewV2.h"
+#import "SelectPayChannelView.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -256,12 +257,10 @@
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     // 对必要参数进行检查
-    if ([StringUtil isEmpty_MMMethodMMM:roleId] || [StringUtil isEmpty_MMMethodMMM:roleName] ||
-        [StringUtil isEmpty_MMMethodMMM:roleLevel] ||
+    if ([StringUtil isEmpty_MMMethodMMM:roleId]  ||
         [StringUtil isEmpty_MMMethodMMM:serverCode])
     {
-        //NSLog(@"角色重要信息为空,请检查参数中 key-value 是否都有值，key 为 GAMA_PRM_ROLE_ID、GAMA_PRM_ROLE_NAME、GAMA_PRM_ROLE_LEVEL、GAMA_PRM_ROLE_SERVER_ID， 均是 SDK 定义的宏");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值"];
+        SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
         return;
     }
     
@@ -304,7 +303,7 @@
 {
     SDK_LOG(@"startMySdkPay...");
     
-    NSString * myPayUrl = GetConfigString(@"sdk_my_pay_url");
+    NSString * myPayUrl = GetConfigString(@"sdk_other_ppp_url");//其他充值
     if ([StringUtil isEmpty_MMMethodMMM:myPayUrl]) {
         SDK_LOG(@"startMySdkPay myPayUrl=%@",myPayUrl);
         return;
@@ -334,7 +333,7 @@
     
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:myPayUrl otherDic_MMMethodMMM:dic];
     SDK_LOG(@"startMySdkPay myPayUrl=%@",resultURL);
-    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
@@ -420,19 +419,56 @@
     }
     //添加点击支付上报
     [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
-    
+    self.isPaying = NO;
+//    SDK_DATA.mConfigModel.togglePay = YES;
     if(SDK_DATA.mConfigModel.togglePay){//是否需要切换第三方支付
         
         [SDKRequest checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
             
             if(responseData){
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
+//                cor.isTogglePay = YES;
                 if(cor.isTogglePay){
                     //切换第三方
                     if(cor.hideSelectChannel){
                         
                         [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
                     }else{
+                        
+                        UIView *superView = appTopViewController.view;
+                        UIView *bgV = [[TouchEventInterruptView alloc] init];
+                        [superView addSubview:bgV];
+                        [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.edges.mas_equalTo(superView);
+                        }];
+                        
+                        SelectPayChannelView *mSelectPayChannelView = [[SelectPayChannelView alloc] init];
+                        mSelectPayChannelView.mCallBack = ^(NSString *msg, NSInteger tag, NSDictionary *dic) {
+                            
+                            switch (tag) {
+                               
+                                case TAG_PAY_CHANNEL_OTHER:
+                                    [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
+                                    [self trackEventWithEventName:AD_EVENT_SELECT_OTHER];
+                                    break;
+                                    
+                                case TAG_PAY_CHANNEL_APPLE:
+                                    [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
+                                    [self trackEventWithEventName:AD_EVENT_SELECT_APPLE];
+                                    break;
+                                    
+                                case TAG_CLOSE:
+                                    break;
+                                default:
+                                    break;
+                            }
+                            [bgV removeFromSuperview];
+                        };
+                        
+                        [bgV addSubview:mSelectPayChannelView];
+                        [mSelectPayChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.edges.mas_equalTo(bgV);
+                        }];
                         
                     }
                     return;
@@ -757,7 +793,7 @@
     }
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
-    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] layoutHandler_MMMethodMMM:nil animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };

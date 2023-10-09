@@ -123,5 +123,7 @@
     "text_has_bind_tips_apple"     :  "Tài khoản đã nâng cấp",
     "text_has_bind_tips_mw"     :  "Tài khoản hội viên",
     "text_account_bind_success2"     :  "Nâng cấp tài khoản hội viên thành công",
-    "text_account_not_login"     :  "Chưa có tài khoản, hãy đăng nhập trước"
+    "text_account_not_login"     :  "Chưa có tài khoản, hãy đăng nhập trước",
+    "text_select_pay_channel"   :   "Chọn phương thức thanh toán",
+    "text_pay_pay"      :   "Nạp tiền"
 }

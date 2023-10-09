@@ -122,5 +122,7 @@
 "text_has_bind_tips_apple"     :   "Apple已升级为会员账号",
 "text_has_bind_tips_mw"     :   "会员账号",
 "text_account_bind_success2" :   "升级会员账号成功",
-"text_account_not_login"  :  "当前没有账号，请先登录"
+"text_account_not_login"  :  "当前没有账号，请先登录",
+"text_select_pay_channel"   :   "选择付款方式",
+"text_pay_pay"      :   "储值"
 }

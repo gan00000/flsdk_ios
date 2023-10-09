@@ -118,6 +118,9 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define personalClauseActTag    2008
 
 #define TAG_CLOSE    90
+#define TAG_PAY_CHANNEL_OTHER    91
+#define TAG_PAY_CHANNEL_APPLE    92
+#define TAG_WEB_VIEW_BACK    93
 
 #pragma mark - login type登录方式
 

@@ -434,4 +434,10 @@
 
 #define wwwww_tag_wwwww_purchase_over4          @"purchase_over4"   //@"purchase_over4"
 #define wwwww_tag_wwwww_layout          @"layout"   //@"layout"
+#define wwwww_tag_wwwww_text_select_pay_channel     @"text_select_pay_channel"   //@"text_select_pay_channel"
+#define wwwww_tag_wwwww_text_pay_pay     @"text_pay_pay"   //@"text_pay_pay"
+#define wwwww_tag_wwwww_onPayFinish      @"onPayFinish"   //@"onPayFinish"
+#define wwwww_tag_wwwww_select_apple      @"select_apple"   //@"select_apple"
+#define wwwww_tag_wwwww_select_other      @"select_other"   //@"select_other"
+
 #endif /* Headers_h */
