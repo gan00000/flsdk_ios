@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) UIImageView *lableIconImageView;
 
+- (NSInteger)wifeie43086Aviexplainfy43087:( UIButton *)wifeie43086_1 thrixot43088Landature43089:(NSObject *)thrixot43088_2;//insert method def
+- (NSString *)experless43097Amicary43098:( UIImageView *)experless43097_1 officialful43099Asature43100:(NSMutableArray *)officialful43099_2 seb43101Orth43102:(NSArray *)seb43101_3;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

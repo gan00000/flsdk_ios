@@ -17,10 +17,15 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
 
 
 @property (nonatomic, assign) NSInteger code;
+@property (nonatomic, strong) NSDictionary *endoior11219Demn11220;//===insert my property===
+
+@property (nonatomic, strong) NSMutableArray *treat11221Globence11222;//===insert my property===
+
 
 
 @property (nonatomic, copy) NSString *message;
 
 - (BOOL)isRequestSuccess_MMMethodMMM;
+- (NSArray *)naturaloon11223Tomyel11224;//insert method def
 @end
 
