@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "037C6F6C287686B10041EC34"
+               BlueprintIdentifier = "FB52E1CF669911EEAFED0E90"
                BuildableName = "XCFrameworkMake"
                BlueprintName = "XCFrameworkMake"
                ReferencedContainer = "container:MW_SDK.xcodeproj">
@@ -50,7 +50,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "037C6F6C287686B10041EC34"
+            BlueprintIdentifier = "FB52E1CF669911EEAFED0E90"
             BuildableName = "XCFrameworkMake"
             BlueprintName = "XCFrameworkMake"
             ReferencedContainer = "container:MW_SDK.xcodeproj">
