@@ -1,7 +1,7 @@
 
 
 #import "StpatternfyInsideuous.h"
-#import <AdjustSdk/Adjust.h>
+//#import <AdjustSdk/Adjust.h>
 #import "SdkHeader.h"
 
 @implementation StpatternfyInsideuous
@@ -288,99 +288,99 @@ if(C_fireess145 * 390 * 785 <= 52907){
         SDK_LOG(@"adjustAppToken is empty");
         return ;
     }
-    NSString *environment = ADJEnvironmentProduction;
-
-		//====insert my code start===  2023-10-09 19:45:34
-		{
-		
-	NSData * T_45 = [self nav87Coronwhetherize88:5802 capit89Hospitise90:3641 script91Scaphatic92:nil whyably93Niceeur94:3599 itselfion95Xenty96:8289 dinnerenne97Nugacitor98:nil forel99Maribility100:nil ];
-	if(T_45){}
-
-        BOOL treatmentar179Branchimost180 = NO;  //commontemple18
-        int specialast181Especiallyia182 = 73;
-        if (treatmentar179Branchimost180){
-
-            specialast181Especiallyia182 = specialast181Especiallyia182 + 9425;
-
-            int jurisstorester189Gustally190 = 7463;
-            int establishery193Scrupatory194 = 9475;
-            int cankin195 = 3878;
-            switch (jurisstorester189Gustally190) {
-                    
-                case 254:
-			{
-				establishery193Scrupatory194 = cankin195 + 587 / 946; 
-			 break;
-			}
-			case -92:
-			{
-				establishery193Scrupatory194 = cankin195 - 605 * 318 - 282; 
-			 break;
-			}
-			case 647:
-			{
-				establishery193Scrupatory194 = cankin195 - 728 - 22 / 391 - 893 + 596; 
-			 break;
-			}
-			case 583:
-			{
-				establishery193Scrupatory194 = cankin195 * 744 * 858 / 55; 
-			 break;
-			}
-			case 142:
-			{
-				establishery193Scrupatory194 = cankin195 - 268 - 194; 
-			 break;
-			}
-			case 629:
-			{
-				establishery193Scrupatory194 = cankin195 - 23 + 725 + 220 - 515; 
-			 break;
-			}
-			case 194:
-			{
-				establishery193Scrupatory194 = cankin195 - 60 + 658 + 6 - 406; 
-			 break;
-			}
-			case 841:
-			{
-				establishery193Scrupatory194 = cankin195 + 975 - 571 / 394 * 432 / 963 + 964; 
-			 break;
-			}
-			case 315:
-			{
-				establishery193Scrupatory194 = cankin195 - 418 + 681 + 379 * 133 - 712 * 148; 
-			 break;
-			}
-			case 199:
-			{
-				establishery193Scrupatory194 = cankin195 * 834 - 341 * 913 + 252 * 156; 
-			 break;
-			}
-			case 448:
-			{
-				establishery193Scrupatory194 = cankin195 * 935 + 944 / 445 + 39 / 150 + 287; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-        }
-        
-        
-
-        
-		}
-		//====insert my code end===  2023-10-09 19:45:34
-
-    if ([SDKRES isAdDebug_MMMethodMMM]) {
-        environment = ADJEnvironmentSandbox;
-    }
-    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
-    [adjustConfig setLogLevel:ADJLogLevelVerbose];
-    [Adjust appDidLaunch:adjustConfig];
+//    NSString *environment = ADJEnvironmentProduction;
+//
+//		//====insert my code start===  2023-10-09 19:45:34
+//		{
+//
+//	NSData * T_45 = [self nav87Coronwhetherize88:5802 capit89Hospitise90:3641 script91Scaphatic92:nil whyably93Niceeur94:3599 itselfion95Xenty96:8289 dinnerenne97Nugacitor98:nil forel99Maribility100:nil ];
+//	if(T_45){}
+//
+//        BOOL treatmentar179Branchimost180 = NO;  //commontemple18
+//        int specialast181Especiallyia182 = 73;
+//        if (treatmentar179Branchimost180){
+//
+//            specialast181Especiallyia182 = specialast181Especiallyia182 + 9425;
+//
+//            int jurisstorester189Gustally190 = 7463;
+//            int establishery193Scrupatory194 = 9475;
+//            int cankin195 = 3878;
+//            switch (jurisstorester189Gustally190) {
+//
+//                case 254:
+//			{
+//				establishery193Scrupatory194 = cankin195 + 587 / 946;
+//			 break;
+//			}
+//			case -92:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 605 * 318 - 282;
+//			 break;
+//			}
+//			case 647:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 728 - 22 / 391 - 893 + 596;
+//			 break;
+//			}
+//			case 583:
+//			{
+//				establishery193Scrupatory194 = cankin195 * 744 * 858 / 55;
+//			 break;
+//			}
+//			case 142:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 268 - 194;
+//			 break;
+//			}
+//			case 629:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 23 + 725 + 220 - 515;
+//			 break;
+//			}
+//			case 194:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 60 + 658 + 6 - 406;
+//			 break;
+//			}
+//			case 841:
+//			{
+//				establishery193Scrupatory194 = cankin195 + 975 - 571 / 394 * 432 / 963 + 964;
+//			 break;
+//			}
+//			case 315:
+//			{
+//				establishery193Scrupatory194 = cankin195 - 418 + 681 + 379 * 133 - 712 * 148;
+//			 break;
+//			}
+//			case 199:
+//			{
+//				establishery193Scrupatory194 = cankin195 * 834 - 341 * 913 + 252 * 156;
+//			 break;
+//			}
+//			case 448:
+//			{
+//				establishery193Scrupatory194 = cankin195 * 935 + 944 / 445 + 39 / 150 + 287;
+//			 break;
+//			}
+//
+//
+//                default:
+//                    break;
+//            }
+//        }
+//
+//
+//
+//
+//		}
+//		//====insert my code end===  2023-10-09 19:45:34
+//
+//    if ([SDKRES isAdDebug_MMMethodMMM]) {
+//        environment = ADJEnvironmentSandbox;
+//    }
+//    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
+//    [adjustConfig setLogLevel:ADJLogLevelVerbose];
+//    [Adjust appDidLaunch:adjustConfig];
     SDK_LOG(@"adjustAppToken init finish");
     
 }
@@ -552,158 +552,158 @@ if(C_fireess145 * 390 * 785 <= 52907){
 
         return ;
     }
-    SDK_LOG(@"adjust track event start eventName=%@",eventName);
-    NSString *eventToken = @"";
-
-		//====insert my code start===  2023-10-09 19:45:34
-		{
-		
-	NSData * w_22 = [self nav87Coronwhetherize88:764 capit89Hospitise90:1225 script91Scaphatic92:nil whyably93Niceeur94:8318 itselfion95Xenty96:1017 dinnerenne97Nugacitor98:nil forel99Maribility100:nil ];
-	if(w_22){}
-int R_word223 = 7390;
-
-int N_siphoarium224 = 700;
-if(R_word223 + 723 / 468 + 597 / 424 * 898 > 96733){
-	N_siphoarium224 = R_word223 * 596 - 941 + 18;
-}
-
-int e_betweenine225 = 418;
-if(N_siphoarium224 + 239 + 116 * 78 == 62906){
-	e_betweenine225 = N_siphoarium224 - 310 + 229 / 855 * 531;
-}else{
-	e_betweenine225 = N_siphoarium224 - 320 - 968 * 554 + 778 * 835;
-}
-
-float k_fict226 = 906;
-if(e_betweenine225 + 130 / 532 - 336 + 309 * 510 - 540 != 93620){
-	k_fict226 = e_betweenine225 * 966 / 188 - 727 - 184;
-}
-
-double W_class227 = 317;
-if(k_fict226 * 279 + 642 * 570 + 636 < 38212){
-	W_class227 = k_fict226 - 367 * 714 * 778;
-}else{
-	W_class227 = k_fict226 + 686 + 768 * 298 - 668 / 455;
-}
-
-float y_pollin228 = 93;
-if(W_class227 - 294 * 975 + 402 / 255 + 166 == 70528){
-	y_pollin228 = W_class227 * 537 + 599 - 767;
-}else{
-	y_pollin228 = W_class227 * 257 * 246;
-}
-
-double O_felinar229 = 389;
-if(y_pollin228 + 623 * 982 != 62730){
-	O_felinar229 = y_pollin228 * 714 + 739;
-}
-
-float n_myacity230 = 339;
-if(O_felinar229 * 843 - 786 <= 81605){
-	n_myacity230 = O_felinar229 * 626 - 419 / 366;
-}else{
-	n_myacity230 = O_felinar229 * 447 / 820 / 753;
-}
-
-double b_blennry231 = 827;
-if(n_myacity230 + 879 / 675 - 484 * 863 * 355 != 48475){
-	b_blennry231 = n_myacity230 + 311 / 403;
-}else{
-	b_blennry231 = n_myacity230 + 280 - 337 + 826 / 629 * 497;
-}
-
-double i_agentward232 = 171;
-if(b_blennry231 * 137 - 520 - 326 - 461 + 369 <= 89791){
-	i_agentward232 = b_blennry231 - 475 / 719 / 218 - 226 * 99 - 604;
-}else{
-	i_agentward232 = b_blennry231 * 930 * 649 + 440 * 768 / 632 + 786;
-}
-
-		}
-		//====insert my code end===  2023-10-09 19:45:34
-
-    if(eventsDic){
-        eventToken = eventsDic[eventName];
-    }
-    
-
-		//====insert my code start===  2023-10-09 19:45:34
-		{
-		
-	NSDictionary * r_17 = [self tonit33Phosian34:nil everyone35Pariet36:nil valueic37Cort38:@"fanade239Very240" ];
-	if(r_17){}
-double w_oligo233 = 2906;
-
-float Q_askard234 = 203;
-if(w_oligo233 - 550 * 991 + 944 <= 50533){
-	Q_askard234 = w_oligo233 + 710 - 533 * 473;
-}else{
-	Q_askard234 = w_oligo233 + 73 + 964 - 295 - 896;
-}
-
-double Y_mysuccessine235 = 448;
-if(Q_askard234 - 835 + 825 * 280 / 961 / 227 / 422 != 99485){
-	Y_mysuccessine235 = Q_askard234 * 144 - 868 / 548 * 366;
-}
-
-float Y_spergfireless236 = 967;
-if(Y_mysuccessine235 + 405 / 696 == 87738){
-	Y_spergfireless236 = Y_mysuccessine235 + 790 - 986 - 545 / 618;
-}else{
-	Y_spergfireless236 = Y_mysuccessine235 * 529 / 197;
-}
-
-float V_nothingfold237 = 264;
-if(Y_spergfireless236 * 277 * 646 + 778 + 289 * 923 * 293 >= 91602){
-	V_nothingfold237 = Y_spergfireless236 - 756 + 1;
-}else{
-	V_nothingfold237 = Y_spergfireless236 - 450 / 141 / 217;
-}
-
-int q_polyile238 = 501;
-if(V_nothingfold237 - 790 + 827 + 27 == 30473){
-	q_polyile238 = V_nothingfold237 + 898 + 660 / 219 - 920 / 573 * 907;
-}
-
-		}
-		//====insert my code end===  2023-10-09 19:45:34
-
-    if([PietCircumthanklike isEmpty_MMMethodMMM:eventToken]){
-        NSString *adjustEventFileName = [NSString stringWithFormat:@"adjust-info-%@", GAME_CODE];
-        NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
-        
-        if (!adjustEventPlistPath) {
-            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
-            return;
-        }
-        eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
-        if(eventsDic){
-            eventToken = eventsDic[eventName];
-        }
-    }
-    
-    if([PietCircumthanklike isEmpty_MMMethodMMM:eventToken]){
-        SDK_LOG(@"adjust track event eventToken is empty, eventName=%@",eventName);
-        return;
-    }
-    
-    ADJEvent *event = [ADJEvent eventWithEventToken:eventToken];
-    if(revenue > 0){
-        [event setRevenue:revenue currency:@"USD"];
-        if([PietCircumthanklike isNotEmpty_MMMethodMMM:transactionId]){
-            [event setTransactionId:transactionId];
-        }
-    }
-    
-    if(eventValues){
-        
-        [eventValues enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-            NSString *value2 = [NSString stringWithFormat:@"%@", obj];
-            [event addCallbackParameter:key value:value2];
-        }];
-    }
-    
-    [Adjust trackEvent:event];
+//    SDK_LOG(@"adjust track event start eventName=%@",eventName);
+//    NSString *eventToken = @"";
+//
+//		//====insert my code start===  2023-10-09 19:45:34
+//		{
+//		
+//	NSData * w_22 = [self nav87Coronwhetherize88:764 capit89Hospitise90:1225 script91Scaphatic92:nil whyably93Niceeur94:8318 itselfion95Xenty96:1017 dinnerenne97Nugacitor98:nil forel99Maribility100:nil ];
+//	if(w_22){}
+//int R_word223 = 7390;
+//
+//int N_siphoarium224 = 700;
+//if(R_word223 + 723 / 468 + 597 / 424 * 898 > 96733){
+//	N_siphoarium224 = R_word223 * 596 - 941 + 18;
+//}
+//
+//int e_betweenine225 = 418;
+//if(N_siphoarium224 + 239 + 116 * 78 == 62906){
+//	e_betweenine225 = N_siphoarium224 - 310 + 229 / 855 * 531;
+//}else{
+//	e_betweenine225 = N_siphoarium224 - 320 - 968 * 554 + 778 * 835;
+//}
+//
+//float k_fict226 = 906;
+//if(e_betweenine225 + 130 / 532 - 336 + 309 * 510 - 540 != 93620){
+//	k_fict226 = e_betweenine225 * 966 / 188 - 727 - 184;
+//}
+//
+//double W_class227 = 317;
+//if(k_fict226 * 279 + 642 * 570 + 636 < 38212){
+//	W_class227 = k_fict226 - 367 * 714 * 778;
+//}else{
+//	W_class227 = k_fict226 + 686 + 768 * 298 - 668 / 455;
+//}
+//
+//float y_pollin228 = 93;
+//if(W_class227 - 294 * 975 + 402 / 255 + 166 == 70528){
+//	y_pollin228 = W_class227 * 537 + 599 - 767;
+//}else{
+//	y_pollin228 = W_class227 * 257 * 246;
+//}
+//
+//double O_felinar229 = 389;
+//if(y_pollin228 + 623 * 982 != 62730){
+//	O_felinar229 = y_pollin228 * 714 + 739;
+//}
+//
+//float n_myacity230 = 339;
+//if(O_felinar229 * 843 - 786 <= 81605){
+//	n_myacity230 = O_felinar229 * 626 - 419 / 366;
+//}else{
+//	n_myacity230 = O_felinar229 * 447 / 820 / 753;
+//}
+//
+//double b_blennry231 = 827;
+//if(n_myacity230 + 879 / 675 - 484 * 863 * 355 != 48475){
+//	b_blennry231 = n_myacity230 + 311 / 403;
+//}else{
+//	b_blennry231 = n_myacity230 + 280 - 337 + 826 / 629 * 497;
+//}
+//
+//double i_agentward232 = 171;
+//if(b_blennry231 * 137 - 520 - 326 - 461 + 369 <= 89791){
+//	i_agentward232 = b_blennry231 - 475 / 719 / 218 - 226 * 99 - 604;
+//}else{
+//	i_agentward232 = b_blennry231 * 930 * 649 + 440 * 768 / 632 + 786;
+//}
+//
+//		}
+//		//====insert my code end===  2023-10-09 19:45:34
+//
+//    if(eventsDic){
+//        eventToken = eventsDic[eventName];
+//    }
+//    
+//
+//		//====insert my code start===  2023-10-09 19:45:34
+//		{
+//		
+//	NSDictionary * r_17 = [self tonit33Phosian34:nil everyone35Pariet36:nil valueic37Cort38:@"fanade239Very240" ];
+//	if(r_17){}
+//double w_oligo233 = 2906;
+//
+//float Q_askard234 = 203;
+//if(w_oligo233 - 550 * 991 + 944 <= 50533){
+//	Q_askard234 = w_oligo233 + 710 - 533 * 473;
+//}else{
+//	Q_askard234 = w_oligo233 + 73 + 964 - 295 - 896;
+//}
+//
+//double Y_mysuccessine235 = 448;
+//if(Q_askard234 - 835 + 825 * 280 / 961 / 227 / 422 != 99485){
+//	Y_mysuccessine235 = Q_askard234 * 144 - 868 / 548 * 366;
+//}
+//
+//float Y_spergfireless236 = 967;
+//if(Y_mysuccessine235 + 405 / 696 == 87738){
+//	Y_spergfireless236 = Y_mysuccessine235 + 790 - 986 - 545 / 618;
+//}else{
+//	Y_spergfireless236 = Y_mysuccessine235 * 529 / 197;
+//}
+//
+//float V_nothingfold237 = 264;
+//if(Y_spergfireless236 * 277 * 646 + 778 + 289 * 923 * 293 >= 91602){
+//	V_nothingfold237 = Y_spergfireless236 - 756 + 1;
+//}else{
+//	V_nothingfold237 = Y_spergfireless236 - 450 / 141 / 217;
+//}
+//
+//int q_polyile238 = 501;
+//if(V_nothingfold237 - 790 + 827 + 27 == 30473){
+//	q_polyile238 = V_nothingfold237 + 898 + 660 / 219 - 920 / 573 * 907;
+//}
+//
+//		}
+//		//====insert my code end===  2023-10-09 19:45:34
+//
+//    if([PietCircumthanklike isEmpty_MMMethodMMM:eventToken]){
+//        NSString *adjustEventFileName = [NSString stringWithFormat:@"adjust-info-%@", GAME_CODE];
+//        NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
+//        
+//        if (!adjustEventPlistPath) {
+//            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
+//            return;
+//        }
+//        eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
+//        if(eventsDic){
+//            eventToken = eventsDic[eventName];
+//        }
+//    }
+//    
+//    if([PietCircumthanklike isEmpty_MMMethodMMM:eventToken]){
+//        SDK_LOG(@"adjust track event eventToken is empty, eventName=%@",eventName);
+//        return;
+//    }
+//    
+//    ADJEvent *event = [ADJEvent eventWithEventToken:eventToken];
+//    if(revenue > 0){
+//        [event setRevenue:revenue currency:@"USD"];
+//        if([PietCircumthanklike isNotEmpty_MMMethodMMM:transactionId]){
+//            [event setTransactionId:transactionId];
+//        }
+//    }
+//    
+//    if(eventValues){
+//        
+//        [eventValues enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//            NSString *value2 = [NSString stringWithFormat:@"%@", obj];
+//            [event addCallbackParameter:key value:value2];
+//        }];
+//    }
+//    
+//    [Adjust trackEvent:event];
     SDK_LOG(@"adjust track event finish, eventName=%@",eventName);
 }
 
