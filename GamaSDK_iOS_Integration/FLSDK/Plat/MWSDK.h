@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      @"1.0.8"
+#define FL_SDK_VERSION      @"1.1.7"
 
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
 #define AD_EVENT_LOGIN_SUCCESS  wwwww_tag_wwwww_LOGIN_SUCCESS
