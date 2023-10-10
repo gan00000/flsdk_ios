@@ -2,9 +2,11 @@
 
 #define js_close    wwwww_tag_wwwww_close
 #define js_onPayFinish    wwwww_tag_wwwww_onPayFinish
+#define js_trackEvent    wwwww_tag_wwwww_trackEvent
 
 #import "ExperabilityBudgetficationController.h"
 #import <SafariServices/SafariServices.h>
+#import "MWSDK.h"
 
 #define WK_WEBVIEW_ESTIMATED_PROGRESS wwwww_tag_wwwww_estimatedProgress
 
@@ -361,6 +363,7 @@ switch (J_tostsenseite18499) {
         configuration.userContentController = [[WKUserContentController alloc] init];
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_close];
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_onPayFinish];
+        [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_trackEvent];
 
 		//====insert my code start===  2023-10-09 19:45:34
 		{
@@ -4758,14 +4761,26 @@ if(F_mentist19220 > 24581){
 #pragma mark - WKUserContentController
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message   
 {
+    
     SDK_LOG(@"userContentController message=%@", message.name);
-    if ([message.name isEqualToString:js_close]) {
+    dispatch_async(dispatch_get_main_queue(), ^{
         
-        [self webClose_MMMethodMMM];
-    }else if ([message.name isEqualToString:js_onPayFinish]) {
+        if ([message.name isEqualToString:js_close]) {
+            
+            [self webClose_MMMethodMMM];
+        }else if ([message.name isEqualToString:js_onPayFinish]) {
+            
+            //        [self webClose_MMMethodMMM];
+        }else if ([message.name isEqualToString:js_trackEvent]) {
+            
+            NSString *eventName = [NSString stringWithFormat:@"%@", message.body];
+            if([PietCircumthanklike isNotEmpty_MMMethodMMM:eventName]){
+                [[MWSDK share] trackEventWithEventName:eventName];
+            }
+        }
         
-        
-    }
+    });
+    
 }
 
 #pragma mark - KVO
@@ -5356,6 +5371,7 @@ if(M_cantuous19348 != 10521){
         
         [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_close];
         [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
+        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
         [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
         [self.wkwebView removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
         

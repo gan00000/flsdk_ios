@@ -439,5 +439,6 @@
 #define wwwww_tag_wwwww_onPayFinish      @"onPayFinish"   //@"onPayFinish"
 #define wwwww_tag_wwwww_select_apple      @"select_apple"   //@"select_apple"
 #define wwwww_tag_wwwww_select_other      @"select_other"   //@"select_other"
+#define wwwww_tag_wwwww_trackEvent      @"trackEvent"   //@"trackEvent"
 
 #endif /* Headers_h */
