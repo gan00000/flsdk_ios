@@ -423,7 +423,10 @@
 //    SDK_DATA.mConfigModel.togglePay = YES;
     if(SDK_DATA.mConfigModel.togglePay){//是否需要切换第三方支付
         
+        [SdkUtil showLoadingAtView_MMMethodMMM:nil];
         [SDKRequest checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+            
+            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
             
             if(responseData){
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
@@ -478,6 +481,9 @@
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
             
         } errorBlock_MMMethodMMM:^(BJError *error) {
+            
+            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+            
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
         }];
         return;
