@@ -60,7 +60,6 @@
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
-		032BE76F2AD69023001106E1 /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
 		032BE7702AD69023001106E1 /* ExposureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032BE76E2AD69023001106E1 /* ExposureController.xib */; };
 		032CB5662940BCFE0013185B /* MWSDK_V4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */; };
 		032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */; };
@@ -128,6 +127,50 @@
 		0349F8B92AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
 		0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
 		0349F8BB2AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8BF2AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C02AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C42AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C52AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */; };
+		0349F8C62AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8C72AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8C82AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8C92AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8CA2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8CB2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8CC2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */; };
+		0349F8D42AD7E29F0015750A /* ExposureHorControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8BE2AD7E27B0015750A /* ExposureHorControllerViewController.xib */; };
+		0349F8D92AD7F3860015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8DA2AD7F3860015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8DB2AD7F3860015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8DC2AD7F3860015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8DD2AD7F3860015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8DE2AD7F3860015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8DF2AD7F3860015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8E02AD7F3860015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8E12AD7F3860015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8E22AD7F3860015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8E82AD7F9320015750A /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8D82AD7F3860015750A /* MenuCell.xib */; };
+		0349F8E92AD7F94B0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8EA2AD7F94C0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8EB2AD7F94D0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8EC2AD7F94D0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8ED2AD7F94E0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8EE2AD7F94F0015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8EF2AD7F9500015750A /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		0349F8F02AD7F9570015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F12AD7F9580015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F22AD7F9580015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F32AD7F9590015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F42AD7F95A0015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F52AD7F95A0015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F62AD7F95B0015750A /* ExposureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 032BE76C2AD69023001106E1 /* ExposureController.h */; };
+		0349F8F72AD7F9630015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8F82AD7F9630015750A /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8D62AD7F3860015750A /* MenuCell.h */; };
+		0349F8F92AD7F9670015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
+		0349F8FA2AD7F9670015750A /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8D72AD7F3860015750A /* MenuCell.m */; };
 		03509C2A29F91C8100C840DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03509C2B29F91C8100C840DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03509C2C29F91C8100C840DA /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -1975,6 +2018,12 @@
 		034558D2285C25210025EFB2 /* AccountListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountListView.m; sourceTree = "<group>"; };
 		0349F8AC2AD7A1190015750A /* ExpoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpoModel.h; sourceTree = "<group>"; };
 		0349F8AD2AD7A1190015750A /* ExpoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpoModel.m; sourceTree = "<group>"; };
+		0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExposureHorControllerViewController.h; sourceTree = "<group>"; };
+		0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExposureHorControllerViewController.m; sourceTree = "<group>"; };
+		0349F8BE2AD7E27B0015750A /* ExposureHorControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposureHorControllerViewController.xib; sourceTree = "<group>"; };
+		0349F8D62AD7F3860015750A /* MenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		0349F8D72AD7F3860015750A /* MenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		0349F8D82AD7F3860015750A /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		03509C8629F91C8100C840DA /* SDK_DEMO_V6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V6-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V6-Info.plist"; sourceTree = "<absolute>"; };
 		03509D2529F91C8C00C840DA /* MWSDK_V6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3140,19 +3189,23 @@
 		032BE76A2AD68EDF001106E1 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
-				032BE76B2AD68F1D001106E1 /* One */,
+				0349F8D52AD7F34B0015750A /* view */,
+				032BE76B2AD68F1D001106E1 /* controller */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
 		};
-		032BE76B2AD68F1D001106E1 /* One */ = {
+		032BE76B2AD68F1D001106E1 /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				032BE76C2AD69023001106E1 /* ExposureController.h */,
 				032BE76D2AD69023001106E1 /* ExposureController.m */,
 				032BE76E2AD69023001106E1 /* ExposureController.xib */,
+				0349F8BC2AD7E27B0015750A /* ExposureHorControllerViewController.h */,
+				0349F8BD2AD7E27B0015750A /* ExposureHorControllerViewController.m */,
+				0349F8BE2AD7E27B0015750A /* ExposureHorControllerViewController.xib */,
 			);
-			path = One;
+			path = controller;
 			sourceTree = "<group>";
 		};
 		03349EC72A700E42004ECF5E /* AF-v6.12.1 */ = {
@@ -3260,6 +3313,16 @@
 				03FA12D32853565200BBBEB4 /* WelcomeBackView.m */,
 			);
 			path = view_v1;
+			sourceTree = "<group>";
+		};
+		0349F8D52AD7F34B0015750A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0349F8D62AD7F3860015750A /* MenuCell.h */,
+				0349F8D72AD7F3860015750A /* MenuCell.m */,
+				0349F8D82AD7F3860015750A /* MenuCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		035EDC1929A499F7009092F0 /* V3 */ = {
@@ -4113,8 +4176,10 @@
 				03509C8A29F91C8C00C840DA /* NSString+Local.h in Headers */,
 				03509C8B29F91C8C00C840DA /* BaseCountTimerView.h in Headers */,
 				03509C8C29F91C8C00C840DA /* GamaSDK+Social.h in Headers */,
+				0349F8F22AD7F9580015750A /* ExposureController.h in Headers */,
 				03509C8D29F91C8C00C840DA /* MyTextFiled.h in Headers */,
 				039AC1EC29F91DD700B416D8 /* TermsViewV2.h in Headers */,
+				0349F8DB2AD7F3860015750A /* MenuCell.h in Headers */,
 				039AC1F229F91DD700B416D8 /* NoticeViewV2.h in Headers */,
 				039AC1F729F91DD700B416D8 /* BindPhoneViewV2.h in Headers */,
 				03509C9129F91C8C00C840DA /* GamaThirdSocial.h in Headers */,
@@ -4130,6 +4195,7 @@
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
 				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
+				0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03509C9C29F91C8C00C840DA /* BasePopupView.h in Headers */,
 				039AC1F829F91DD700B416D8 /* MainHomeViewV2.h in Headers */,
 				03509C9E29F91C8C00C840DA /* MWSDK.h in Headers */,
@@ -4143,7 +4209,10 @@
 			files = (
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
+				0349F8BF2AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */,
+				0349F8F62AD7F95B0015750A /* ExposureController.h in Headers */,
+				0349F8F82AD7F9630015750A /* MenuCell.h in Headers */,
 				030FAA9128A6571900709536 /* GamaSDK+Social.h in Headers */,
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
 				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
@@ -4174,6 +4243,7 @@
 				0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
+				0349F8F52AD7F95A0015750A /* ExposureController.h in Headers */,
 				038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */,
 				039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */,
 				038612DF29388F8900CC9C44 /* MyTextFiled.h in Headers */,
@@ -4189,7 +4259,9 @@
 				0386138E2938906000CC9C44 /* AccountLoginViewV2.h in Headers */,
 				038612E529388F8900CC9C44 /* PayData.h in Headers */,
 				038612E629388F8900CC9C44 /* ViewUtil.h in Headers */,
+				0349F8C02AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				038612E929388F8900CC9C44 /* LoginData.h in Headers */,
+				0349F8F72AD7F9630015750A /* MenuCell.h in Headers */,
 				0356591F2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				038613922938906000CC9C44 /* LoginWithRegViewV2.h in Headers */,
 				038612EC29388F8900CC9C44 /* BasePopupView.h in Headers */,
@@ -4206,8 +4278,10 @@
 				0387BA89291B8DA5001BACA8 /* BindAccountViewV2.h in Headers */,
 				0387B9D8291B8C9E001BACA8 /* NSString+Local.h in Headers */,
 				0387BA90291B8DA5001BACA8 /* LoginWithRegViewV2.h in Headers */,
+				0349F8F42AD7F95A0015750A /* ExposureController.h in Headers */,
 				0387B9D9291B8C9E001BACA8 /* BaseCountTimerView.h in Headers */,
 				0387B9DA291B8C9E001BACA8 /* GamaSDK+Social.h in Headers */,
+				0349F8D92AD7F3860015750A /* MenuCell.h in Headers */,
 				0387BA91291B8DA5001BACA8 /* MainHomeViewV2.h in Headers */,
 				0387B9DC291B8C9E001BACA8 /* MyTextFiled.h in Headers */,
 				0387B9DE291B8C9E001BACA8 /* GamaThirdSocial.h in Headers */,
@@ -4223,6 +4297,7 @@
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
 				0387B9E5291B8C9E001BACA8 /* LoginData.h in Headers */,
 				0387BA85291B8DA5001BACA8 /* TermsViewV2.h in Headers */,
+				0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */,
 				0387B9E6291B8C9E001BACA8 /* BasePopupView.h in Headers */,
 				0387BA84291B8DA5001BACA8 /* RegisterAccountViewV2.h in Headers */,
@@ -4239,6 +4314,7 @@
 				0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */,
 				0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */,
 				0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */,
+				0349F8C52AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				0392B26F2A5BA99900A3E2D6 /* NoticeViewV2.h in Headers */,
 				0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */,
 				0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */,
@@ -4247,6 +4323,7 @@
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
 				035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
+				0349F8F02AD7F9570015750A /* ExposureController.h in Headers */,
 				03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */,
 				0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */,
 				0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */,
@@ -4254,6 +4331,7 @@
 				0392B1C32A5BA8DC00A3E2D6 /* PayData.h in Headers */,
 				0392B1C42A5BA8DC00A3E2D6 /* ViewUtil.h in Headers */,
 				0392B1C52A5BA8DC00A3E2D6 /* LoginData.h in Headers */,
+				0349F8DD2AD7F3860015750A /* MenuCell.h in Headers */,
 				0392B26E2A5BA99900A3E2D6 /* LoginWithRegViewV2.h in Headers */,
 				0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */,
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
@@ -4270,8 +4348,10 @@
 				039B25F0298B555300045C53 /* NSString+Local.h in Headers */,
 				039B25F2298B555300045C53 /* BaseCountTimerView.h in Headers */,
 				039B25F3298B555300045C53 /* GamaSDK+Social.h in Headers */,
+				0349F8F32AD7F9590015750A /* ExposureController.h in Headers */,
 				039B25F5298B555300045C53 /* MyTextFiled.h in Headers */,
 				0381EC6C298B5677006D6100 /* TermsViewV2.h in Headers */,
+				0349F8DA2AD7F3860015750A /* MenuCell.h in Headers */,
 				0381EC72298B5677006D6100 /* NoticeViewV2.h in Headers */,
 				0381EC77298B5677006D6100 /* BindPhoneViewV2.h in Headers */,
 				039B25F6298B555300045C53 /* GamaThirdSocial.h in Headers */,
@@ -4287,6 +4367,7 @@
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
 				039B25FF298B555300045C53 /* LoginData.h in Headers */,
 				0381EC71298B5677006D6100 /* LoginWithRegViewV2.h in Headers */,
+				0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				039B2602298B555300045C53 /* BasePopupView.h in Headers */,
 				0381EC78298B5677006D6100 /* MainHomeViewV2.h in Headers */,
 				039B2604298B555300045C53 /* MWSDK.h in Headers */,
@@ -4303,6 +4384,7 @@
 				033B32EB29D56AEE00AE9F96 /* LoginWithRegViewV2.h in Headers */,
 				033B331C29D5C4BC00AE9F96 /* LoginTitleView.h in Headers */,
 				033B32E529D56AEE00AE9F96 /* BindAccountViewV2.h in Headers */,
+				0349F8C42AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03CA721C29D5698400098979 /* NSString+Local.h in Headers */,
 				033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */,
 				03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */,
@@ -4326,6 +4408,8 @@
 				033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */,
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
+				0349F8F12AD7F9580015750A /* ExposureController.h in Headers */,
+				0349F8DC2AD7F3860015750A /* MenuCell.h in Headers */,
 				03CA722E29D5698400098979 /* BasePopupView.h in Headers */,
 				033B331929D5C4BC00AE9F96 /* PhoneView.h in Headers */,
 				03CA723029D5698400098979 /* MWSDK.h in Headers */,
@@ -4748,9 +4832,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */,
+				0349F8D42AD7E29F0015750A /* ExposureHorControllerViewController.xib in Resources */,
 				032BE7702AD69023001106E1 /* ExposureController.xib in Resources */,
 				0392B2E52A5BED6E00A3E2D6 /* com_snmxw_vntest.json in Resources */,
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
+				0349F8E82AD7F9320015750A /* MenuCell.xib in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
 				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
 				0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */,
@@ -4915,6 +5001,7 @@
 				03509CCB29F91C8C00C840DA /* LoginResponse.m in Sources */,
 				03509CCC29F91C8C00C840DA /* ConfigResponse.m in Sources */,
 				03509CCD29F91C8C00C840DA /* MyTextFiled.m in Sources */,
+				0349F8EB2AD7F94D0015750A /* ExposureController.m in Sources */,
 				03509CCE29F91C8C00C840DA /* ConfigModel.m in Sources */,
 				03509CCF29F91C8C00C840DA /* CreateOrderResp.m in Sources */,
 				03509CD029F91C8C00C840DA /* BJBaseResponceModel.m in Sources */,
@@ -4957,6 +5044,7 @@
 				03509CF529F91C8C00C840DA /* AFURLSessionManager.m in Sources */,
 				03509CF629F91C8C00C840DA /* AFURLRequestSerialization.m in Sources */,
 				03509CF729F91C8C00C840DA /* AFNetworkReachabilityManager.m in Sources */,
+				0349F8E02AD7F3860015750A /* MenuCell.m in Sources */,
 				03509CF829F91C8C00C840DA /* AFSecurityPolicy.m in Sources */,
 				03509CF929F91C8C00C840DA /* BJBaseHTTPEngine.m in Sources */,
 				03509CFA29F91C8C00C840DA /* UIImage+ResBundle.m in Sources */,
@@ -4974,6 +5062,7 @@
 				03509D0629F91C8C00C840DA /* ConfigCoreUtil.m in Sources */,
 				03509D0729F91C8C00C840DA /* LoginHelper.m in Sources */,
 				03509D0829F91C8C00C840DA /* DimeUtil.m in Sources */,
+				0349F8CA2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				03509D0929F91C8C00C840DA /* LoginButtonData.m in Sources */,
 				03509D0A29F91C8C00C840DA /* SDKLoginViewController.m in Sources */,
 				03509D0B29F91C8C00C840DA /* LoginButton.m in Sources */,
@@ -5093,10 +5182,12 @@
 				037C6F262875AC790041EC34 /* AFURLResponseSerialization.m in Sources */,
 				037C6F272875AC790041EC34 /* AFHTTPSessionManager.m in Sources */,
 				037C6F282875AC790041EC34 /* AFURLSessionManager.m in Sources */,
+				0349F8FA2AD7F9670015750A /* MenuCell.m in Sources */,
 				037C6F292875AC790041EC34 /* AFURLRequestSerialization.m in Sources */,
 				037C6F2A2875AC790041EC34 /* AFNetworkReachabilityManager.m in Sources */,
 				037C6F2B2875AC790041EC34 /* AFSecurityPolicy.m in Sources */,
 				037C6F2C2875AC790041EC34 /* BJBaseHTTPEngine.m in Sources */,
+				0349F8C62AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				035659252AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				037C6F2D2875AC790041EC34 /* UIImage+ResBundle.m in Sources */,
 				037C6F2E2875AC790041EC34 /* ResReader.m in Sources */,
@@ -5118,6 +5209,7 @@
 				037C6F402875AC790041EC34 /* FindPasswordView.m in Sources */,
 				037C6F412875AC790041EC34 /* LoginWithRegView.m in Sources */,
 				030FAA4D28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
+				0349F8EF2AD7F9500015750A /* ExposureController.m in Sources */,
 				037C6F422875AC790041EC34 /* MainHomeView.m in Sources */,
 				037C6F432875AC790041EC34 /* RegisterAccountView.m in Sources */,
 				037C6F442875AC790041EC34 /* SDKBaseView.m in Sources */,
@@ -5166,6 +5258,7 @@
 				0386130729388F8900CC9C44 /* NSData+ImageContentType.m in Sources */,
 				0386130829388F8900CC9C44 /* UrlMode.m in Sources */,
 				0386130929388F8900CC9C44 /* UIImageView+WebCache.m in Sources */,
+				0349F8F92AD7F9670015750A /* MenuCell.m in Sources */,
 				0386130B29388F8900CC9C44 /* UIView+WebCacheOperation.m in Sources */,
 				0386130C29388F8900CC9C44 /* UIButton+WebCache.m in Sources */,
 				0386130D29388F8900CC9C44 /* AdLogger.m in Sources */,
@@ -5227,6 +5320,7 @@
 				0386134229388F8900CC9C44 /* AFHTTPSessionManager.m in Sources */,
 				0386134329388F8900CC9C44 /* AFURLSessionManager.m in Sources */,
 				0386134529388F8900CC9C44 /* AFURLRequestSerialization.m in Sources */,
+				0349F8EE2AD7F94F0015750A /* ExposureController.m in Sources */,
 				0386134629388F8900CC9C44 /* AFNetworkReachabilityManager.m in Sources */,
 				0386134729388F8900CC9C44 /* AFSecurityPolicy.m in Sources */,
 				0386134829388F8900CC9C44 /* BJBaseHTTPEngine.m in Sources */,
@@ -5245,6 +5339,7 @@
 				0386135229388F8900CC9C44 /* ConfigCoreUtil.m in Sources */,
 				0386135329388F8900CC9C44 /* LoginHelper.m in Sources */,
 				0386135429388F8900CC9C44 /* DimeUtil.m in Sources */,
+				0349F8C72AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				0386135529388F8900CC9C44 /* LoginButtonData.m in Sources */,
 				0386135629388F8900CC9C44 /* SDKLoginViewController.m in Sources */,
 				0386135729388F8900CC9C44 /* LoginButton.m in Sources */,
@@ -5335,6 +5430,7 @@
 				0387BA18291B8C9E001BACA8 /* ConfigResponse.m in Sources */,
 				0387BA88291B8DA5001BACA8 /* RegisterAccountViewV2.m in Sources */,
 				0387BA1A291B8C9E001BACA8 /* MyTextFiled.m in Sources */,
+				0349F8ED2AD7F94E0015750A /* ExposureController.m in Sources */,
 				0387BA1B291B8C9E001BACA8 /* ConfigModel.m in Sources */,
 				0387BA1C291B8C9E001BACA8 /* CreateOrderResp.m in Sources */,
 				0387BA1D291B8C9E001BACA8 /* BJBaseResponceModel.m in Sources */,
@@ -5377,6 +5473,7 @@
 				0387BA83291B8DA5001BACA8 /* FindPasswordViewV2.m in Sources */,
 				0387BA42291B8C9E001BACA8 /* AFURLRequestSerialization.m in Sources */,
 				0387BA43291B8C9E001BACA8 /* AFNetworkReachabilityManager.m in Sources */,
+				0349F8DE2AD7F3860015750A /* MenuCell.m in Sources */,
 				0387BA44291B8C9E001BACA8 /* AFSecurityPolicy.m in Sources */,
 				0387BA45291B8C9E001BACA8 /* BJBaseHTTPEngine.m in Sources */,
 				0387BA46291B8C9E001BACA8 /* UIImage+ResBundle.m in Sources */,
@@ -5394,6 +5491,7 @@
 				0387BA51291B8C9E001BACA8 /* LoginButtonData.m in Sources */,
 				0387BA52291B8C9E001BACA8 /* SDKLoginViewController.m in Sources */,
 				0387BA53291B8C9E001BACA8 /* LoginButton.m in Sources */,
+				0349F8C82AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				0387BA54291B8C9E001BACA8 /* AccountLoginView.m in Sources */,
 				0387BA55291B8C9E001BACA8 /* BindAccountView.m in Sources */,
 				0387BA56291B8C9E001BACA8 /* ChangePasswordView.m in Sources */,
@@ -5434,6 +5532,7 @@
 				0392B1D22A5BA8DC00A3E2D6 /* View+MASAdditions.m in Sources */,
 				0392B1D32A5BA8DC00A3E2D6 /* MASConstraint.m in Sources */,
 				0392B1D42A5BA8DC00A3E2D6 /* MASViewConstraint.m in Sources */,
+				0349F8CC2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				0392B1D52A5BA8DC00A3E2D6 /* MASViewAttribute.m in Sources */,
 				0392B1D62A5BA8DC00A3E2D6 /* UIImage+WebP.m in Sources */,
 				0392B1D72A5BA8DC00A3E2D6 /* SDWebImageManager.m in Sources */,
@@ -5494,6 +5593,7 @@
 				0392B20C2A5BA8DC00A3E2D6 /* AlertUtil.m in Sources */,
 				0392B20D2A5BA8DC00A3E2D6 /* SAlertViewDelegate.m in Sources */,
 				0392B20E2A5BA8DC00A3E2D6 /* UIAlertController+Sdk.m in Sources */,
+				0349F8E22AD7F3860015750A /* MenuCell.m in Sources */,
 				0392B20F2A5BA8DC00A3E2D6 /* UIColor+HexColor.m in Sources */,
 				0392B2712A5BA99900A3E2D6 /* AccountLoginViewV2.m in Sources */,
 				0392B2112A5BA8DC00A3E2D6 /* UIColor+HexStringToColorTW.m in Sources */,
@@ -5532,6 +5632,7 @@
 				0392B2312A5BA8DC00A3E2D6 /* ConfigCoreUtil.m in Sources */,
 				0392B2322A5BA8DC00A3E2D6 /* LoginHelper.m in Sources */,
 				0392B2332A5BA8DC00A3E2D6 /* DimeUtil.m in Sources */,
+				0349F8E92AD7F94B0015750A /* ExposureController.m in Sources */,
 				0392B2342A5BA8DC00A3E2D6 /* LoginButtonData.m in Sources */,
 				0392B2352A5BA8DC00A3E2D6 /* SDKLoginViewController.m in Sources */,
 				0392B2362A5BA8DC00A3E2D6 /* LoginButton.m in Sources */,
@@ -5569,7 +5670,6 @@
 				0392B27C2A5BA9F600A3E2D6 /* UserModel.m in Sources */,
 				0392B27D2A5BA9F600A3E2D6 /* ViewController.m in Sources */,
 				0392B27E2A5BA9F600A3E2D6 /* IAP_ViewController.m in Sources */,
-				032BE76F2AD69023001106E1 /* ExposureController.m in Sources */,
 				0392B27F2A5BA9F600A3E2D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5624,6 +5724,7 @@
 				039B262F298B555300045C53 /* LoginResponse.m in Sources */,
 				039B2630298B555300045C53 /* ConfigResponse.m in Sources */,
 				039B2632298B555300045C53 /* MyTextFiled.m in Sources */,
+				0349F8EC2AD7F94D0015750A /* ExposureController.m in Sources */,
 				039B2633298B555300045C53 /* ConfigModel.m in Sources */,
 				039B2634298B555300045C53 /* CreateOrderResp.m in Sources */,
 				039B2635298B555300045C53 /* BJBaseResponceModel.m in Sources */,
@@ -5666,6 +5767,7 @@
 				039B2659298B555300045C53 /* AFURLSessionManager.m in Sources */,
 				039B265B298B555300045C53 /* AFURLRequestSerialization.m in Sources */,
 				039B265C298B555300045C53 /* AFNetworkReachabilityManager.m in Sources */,
+				0349F8DF2AD7F3860015750A /* MenuCell.m in Sources */,
 				039B265D298B555300045C53 /* AFSecurityPolicy.m in Sources */,
 				039B265E298B555300045C53 /* BJBaseHTTPEngine.m in Sources */,
 				039B265F298B555300045C53 /* UIImage+ResBundle.m in Sources */,
@@ -5683,6 +5785,7 @@
 				039B2668298B555300045C53 /* ConfigCoreUtil.m in Sources */,
 				039B2669298B555300045C53 /* LoginHelper.m in Sources */,
 				039B266A298B555300045C53 /* DimeUtil.m in Sources */,
+				0349F8C92AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				039B266B298B555300045C53 /* LoginButtonData.m in Sources */,
 				039B266C298B555300045C53 /* SDKLoginViewController.m in Sources */,
 				039B266D298B555300045C53 /* LoginButton.m in Sources */,
@@ -5732,6 +5835,7 @@
 				03CA723529D5698400098979 /* MASCompositeConstraint.m in Sources */,
 				03CA723629D5698400098979 /* MASConstraintMaker.m in Sources */,
 				03CA723729D5698400098979 /* MASLayoutConstraint.m in Sources */,
+				0349F8EA2AD7F94C0015750A /* ExposureController.m in Sources */,
 				033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */,
 				03CA723829D5698400098979 /* NSArray+MASAdditions.m in Sources */,
 				033B331829D5C4BC00AE9F96 /* LoginTypeButton.m in Sources */,
@@ -5753,6 +5857,7 @@
 				03CA724629D5698400098979 /* SDWebImagePrefetcher.m in Sources */,
 				03CA724729D5698400098979 /* SDImageCache.m in Sources */,
 				03CA724829D5698400098979 /* SDWebImageDownloaderOperation.m in Sources */,
+				0349F8E12AD7F3860015750A /* MenuCell.m in Sources */,
 				03CA724929D5698400098979 /* NSData+ImageContentType.m in Sources */,
 				03CA724A29D5698400098979 /* UrlMode.m in Sources */,
 				03CA724B29D5698400098979 /* UIImageView+WebCache.m in Sources */,
@@ -5824,6 +5929,7 @@
 				03CA728929D5698400098979 /* AFNetworkReachabilityManager.m in Sources */,
 				03CA728A29D5698400098979 /* AFSecurityPolicy.m in Sources */,
 				03CA728B29D5698400098979 /* BJBaseHTTPEngine.m in Sources */,
+				0349F8CB2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				03CA728C29D5698400098979 /* UIImage+ResBundle.m in Sources */,
 				03CA728D29D5698400098979 /* ResReader.m in Sources */,
 				03CA728F29D5698400098979 /* SecurityUtil.m in Sources */,

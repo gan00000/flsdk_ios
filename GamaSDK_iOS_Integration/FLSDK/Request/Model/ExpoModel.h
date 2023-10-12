@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL isContentLoad;
 
+@property (nonatomic, assign) BOOL isClick;
+
 @end
 
 NS_ASSUME_NONNULL_END
