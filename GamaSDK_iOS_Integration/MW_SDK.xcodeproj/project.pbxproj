@@ -60,6 +60,8 @@
 		031B9FBE2897D81600D35EFB /* NSString+Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B9FBC2897D81600D35EFB /* NSString+Local.m */; };
 		0320293B286B08E000E8D5A5 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293A286B08E000E8D5A5 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0320293D286B0D9F00E8D5A5 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320293C286B0D9F00E8D5A5 /* AppTrackingTransparency.framework */; };
+		032BE76F2AD69023001106E1 /* ExposureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BE76D2AD69023001106E1 /* ExposureController.m */; };
+		032BE7702AD69023001106E1 /* ExposureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032BE76E2AD69023001106E1 /* ExposureController.xib */; };
 		032CB5662940BCFE0013185B /* MWSDK_V4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387BA6E291B8C9E001BACA8 /* MWSDK_V4.framework */; };
 		032CB5672940BD220013185B /* SDKResourcesV4.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */; };
 		032CB56A2940BEBD0013185B /* MWSDK_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037C6EDB2875A97B0041EC34 /* MWSDK_V2.framework */; };
@@ -112,6 +114,20 @@
 		033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B330D29D5C4BC00AE9F96 /* AccountListViewCell.m */; };
 		033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330E29D5C4BC00AE9F96 /* LoginTypeButton.h */; };
 		033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B330F29D5C4BC00AE9F96 /* TouchEventInterruptView.h */; };
+		0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B32AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349F8AC2AD7A1190015750A /* ExpoModel.h */; };
+		0349F8B52AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8B62AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8B72AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8B82AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8B92AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
+		0349F8BB2AD7A1190015750A /* ExpoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F8AD2AD7A1190015750A /* ExpoModel.m */; };
 		03509C2A29F91C8100C840DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03509C2B29F91C8100C840DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03509C2C29F91C8100C840DA /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -1905,6 +1921,9 @@
 		032AB8B3285A006600F1FD3B /* UIImage+ResBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResBundle.m"; sourceTree = "<group>"; };
 		032ACA3F28729E5D00644568 /* USDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USDefault.h; sourceTree = "<group>"; };
 		032ACA4028729E5D00644568 /* USDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USDefault.m; sourceTree = "<group>"; };
+		032BE76C2AD69023001106E1 /* ExposureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExposureController.h; sourceTree = "<group>"; };
+		032BE76D2AD69023001106E1 /* ExposureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExposureController.m; sourceTree = "<group>"; };
+		032BE76E2AD69023001106E1 /* ExposureController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposureController.xib; sourceTree = "<group>"; };
 		03315B97291BA16000A92FBE /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
 		03315B98291BA16000A92FBE /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV4.bundle; sourceTree = "<group>"; };
@@ -1954,6 +1973,8 @@
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
 		034558D2285C25210025EFB2 /* AccountListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountListView.m; sourceTree = "<group>"; };
+		0349F8AC2AD7A1190015750A /* ExpoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpoModel.h; sourceTree = "<group>"; };
+		0349F8AD2AD7A1190015750A /* ExpoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpoModel.m; sourceTree = "<group>"; };
 		03509C8629F91C8100C840DA /* SDK_DEMO_V6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03509C8729F91C8200C840DA /* SDK_DEMO_V6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V6-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V6-Info.plist"; sourceTree = "<absolute>"; };
 		03509D2529F91C8C00C840DA /* MWSDK_V6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3116,6 +3137,24 @@
 			path = KeyChainUUID;
 			sourceTree = "<group>";
 		};
+		032BE76A2AD68EDF001106E1 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				032BE76B2AD68F1D001106E1 /* One */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		032BE76B2AD68F1D001106E1 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				032BE76C2AD69023001106E1 /* ExposureController.h */,
+				032BE76D2AD69023001106E1 /* ExposureController.m */,
+				032BE76E2AD69023001106E1 /* ExposureController.xib */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
 		03349EC72A700E42004ECF5E /* AF-v6.12.1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3672,6 +3711,7 @@
 		322CBB9C24C589A5000D6B20 /* FLSDK */ = {
 			isa = PBXGroup;
 			children = (
+				032BE76A2AD68EDF001106E1 /* Activity */,
 				03C91BA52A7A372F00289870 /* Adjust */,
 				03D3029E2A6EADE700ED990B /* Naver */,
 				03202936286B02AD00E8D5A5 /* AD */,
@@ -3788,6 +3828,8 @@
 				0320292A28698F1800E8D5A5 /* CreateOrderResp.m */,
 				030FAB3328A66ED300709536 /* UrlMode.h */,
 				030FAB3428A66ED300709536 /* UrlMode.m */,
+				0349F8AC2AD7A1190015750A /* ExpoModel.h */,
+				0349F8AD2AD7A1190015750A /* ExpoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4082,6 +4124,7 @@
 				03509C9429F91C8C00C840DA /* UrlMode.h in Headers */,
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
+				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
@@ -4118,6 +4161,7 @@
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
 				03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */,
 				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
+				0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
 			);
@@ -4127,6 +4171,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
 				038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */,
@@ -4172,6 +4217,7 @@
 				0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
 				0387B9E0291B8C9E001BACA8 /* CountTimerDelegate.h in Headers */,
 				0387B9E2291B8C9E001BACA8 /* PayData.h in Headers */,
+				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
@@ -4210,6 +4256,7 @@
 				0392B1C52A5BA8DC00A3E2D6 /* LoginData.h in Headers */,
 				0392B26E2A5BA99900A3E2D6 /* LoginWithRegViewV2.h in Headers */,
 				0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */,
+				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
 				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
@@ -4234,6 +4281,7 @@
 				039B25F7298B555300045C53 /* UrlMode.h in Headers */,
 				039B25F9298B555300045C53 /* TouchEventInterruptView.h in Headers */,
 				039B25FA298B555300045C53 /* CountTimerDelegate.h in Headers */,
+				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
@@ -4264,6 +4312,7 @@
 				033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */,
 				03CA722329D5698400098979 /* GamaThirdSocial.h in Headers */,
 				035659232AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
+				0349F8B32AD7A1190015750A /* ExpoModel.h in Headers */,
 				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
 				03CA722629D5698400098979 /* UrlMode.h in Headers */,
@@ -4699,6 +4748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */,
+				032BE7702AD69023001106E1 /* ExposureController.xib in Resources */,
 				0392B2E52A5BED6E00A3E2D6 /* com_snmxw_vntest.json in Resources */,
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
@@ -4932,6 +4982,7 @@
 				03509D0E29F91C8C00C840DA /* ChangePasswordView.m in Sources */,
 				03509D0F29F91C8C00C840DA /* FindPasswordView.m in Sources */,
 				03509D1029F91C8C00C840DA /* LoginWithRegView.m in Sources */,
+				0349F8B92AD7A1190015750A /* ExpoModel.m in Sources */,
 				03509D1129F91C8C00C840DA /* MainHomeView.m in Sources */,
 				03509D1229F91C8C00C840DA /* RegisterAccountView.m in Sources */,
 				03509D1329F91C8C00C840DA /* SDKBaseView.m in Sources */,
@@ -5005,6 +5056,7 @@
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
 				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
+				0349F8B52AD7A1190015750A /* ExpoModel.m in Sources */,
 				030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */,
 				037C6F0A2875AC790041EC34 /* BJError.m in Sources */,
 				037C6F0B2875AC790041EC34 /* HttpServiceEngineLogin.m in Sources */,
@@ -5201,6 +5253,7 @@
 				0386135A29388F8900CC9C44 /* ChangePasswordView.m in Sources */,
 				0386135B29388F8900CC9C44 /* FindPasswordView.m in Sources */,
 				0386135C29388F8900CC9C44 /* LoginWithRegView.m in Sources */,
+				0349F8B62AD7A1190015750A /* ExpoModel.m in Sources */,
 				0386135F29388F8900CC9C44 /* MainHomeView.m in Sources */,
 				0386136029388F8900CC9C44 /* RegisterAccountView.m in Sources */,
 				0386136129388F8900CC9C44 /* SDKBaseView.m in Sources */,
@@ -5349,6 +5402,7 @@
 				0387BA86291B8DA5001BACA8 /* LoginWithRegViewV2.m in Sources */,
 				0387BA8F291B8DA5001BACA8 /* TermsViewV2.m in Sources */,
 				0387BA5A291B8C9E001BACA8 /* MainHomeView.m in Sources */,
+				0349F8B72AD7A1190015750A /* ExpoModel.m in Sources */,
 				0387BA5B291B8C9E001BACA8 /* RegisterAccountView.m in Sources */,
 				0387BA5C291B8C9E001BACA8 /* SDKBaseView.m in Sources */,
 				0387BA5D291B8C9E001BACA8 /* SelectBindTypeView.m in Sources */,
@@ -5502,6 +5556,7 @@
 				0392B2482A5BA8DC00A3E2D6 /* LoginTypeButton.m in Sources */,
 				0392B2492A5BA8DC00A3E2D6 /* AccountListView.m in Sources */,
 				0392B26D2A5BA99900A3E2D6 /* FindPasswordViewV2.m in Sources */,
+				0349F8BB2AD7A1190015750A /* ExpoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5514,6 +5569,7 @@
 				0392B27C2A5BA9F600A3E2D6 /* UserModel.m in Sources */,
 				0392B27D2A5BA9F600A3E2D6 /* ViewController.m in Sources */,
 				0392B27E2A5BA9F600A3E2D6 /* IAP_ViewController.m in Sources */,
+				032BE76F2AD69023001106E1 /* ExposureController.m in Sources */,
 				0392B27F2A5BA9F600A3E2D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5635,6 +5691,7 @@
 				039B2670298B555300045C53 /* ChangePasswordView.m in Sources */,
 				039B2671298B555300045C53 /* FindPasswordView.m in Sources */,
 				039B2672298B555300045C53 /* LoginWithRegView.m in Sources */,
+				0349F8B82AD7A1190015750A /* ExpoModel.m in Sources */,
 				039B2675298B555300045C53 /* MainHomeView.m in Sources */,
 				039B2676298B555300045C53 /* RegisterAccountView.m in Sources */,
 				039B2677298B555300045C53 /* SDKBaseView.m in Sources */,
@@ -5745,6 +5802,7 @@
 				03CA727629D5698400098979 /* UIColor+HexColor.m in Sources */,
 				03CA727829D5698400098979 /* UIColor+HexStringToColorTW.m in Sources */,
 				03CA727929D5698400098979 /* UIScreen+Sdk.m in Sources */,
+				0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */,
 				03CA727A29D5698400098979 /* NSString+URLEncoding.m in Sources */,
 				033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */,
 				03CA727B29D5698400098979 /* UIView+BlockGesture.m in Sources */,
