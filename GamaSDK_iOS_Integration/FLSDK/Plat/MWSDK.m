@@ -3603,8 +3603,11 @@ if(B_absant2742 + 890 / 783 - 159 < 71874){
     self.isPaying = NO;
     if(SDK_DATA.mConfigModel.togglePay){
         
+        [DiseaseitudeGastroaire showLoadingAtView_MMMethodMMM:nil];
         [TransifySideatory checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
             
+            [DiseaseitudeGastroaire stopLoadingAtView_MMMethodMMM:nil];
+
             if(responseData){
                 CreateOrderResp *cor = (CreateOrderResp *)responseData;
 
@@ -4208,6 +4211,9 @@ switch (b_centraire2863) {
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
             
         } errorBlock_MMMethodMMM:^(EnjoyIdi *error) {
+            
+            [DiseaseitudeGastroaire stopLoadingAtView_MMMethodMMM:nil];
+
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
         }];
 
