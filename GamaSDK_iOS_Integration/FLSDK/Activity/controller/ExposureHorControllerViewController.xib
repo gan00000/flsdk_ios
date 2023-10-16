@@ -82,7 +82,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="tUR-9K-PNR" firstAttribute="centerX" secondItem="JL3-Ov-PBx" secondAttribute="centerX" id="EBr-lh-006"/>
                                         <constraint firstItem="tUR-9K-PNR" firstAttribute="centerY" secondItem="JL3-Ov-PBx" secondAttribute="centerY" id="FXt-SE-XTz"/>
