@@ -27,6 +27,7 @@
 #import "CreateOrderResp.h"
 #import "TermsViewV2.h"
 #import "SelectPayChannelView.h"
+#import "SocialBannerView.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -953,34 +954,12 @@
         make.edges.mas_equalTo(superView);
     }];
     
-    UIView *contentView = [[UIView alloc] init];
-    contentView.backgroundColor = UIColor.blackColor;
-    contentView.layer.cornerRadius = 10;
-    [bgV addSubview:contentView];
-    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        if(IS_PORTRAIT){
-            make.width.mas_equalTo(VW(334));
-            make.height.mas_equalTo(VH(625));
-        }else{
-            make.width.mas_equalTo(VW(625));
-            make.height.mas_equalTo(VH(334));
-        }
-       
-        make.center.mas_equalTo(bgV);
+    SocialBannerView *mSocialBannerView = [[SocialBannerView alloc] init];
+    [bgV addSubview:mSocialBannerView];
+    [mSocialBannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
     }];
     
-//    [UIUtil INI];
-    
-    NSString *resultURL = @"https://member.kodaduck.com/sdk/social/index.html";
-    SDK_LOG(@"showSocialView url=%@",resultURL);
-    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
-  
-    [contentView addSubview:webVC.view];
-    [webVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.mas_equalTo(contentView).offset(10);
-        make.trailing.bottom.mas_equalTo(contentView).offset(-10);
-    }];
 }
 
 @end

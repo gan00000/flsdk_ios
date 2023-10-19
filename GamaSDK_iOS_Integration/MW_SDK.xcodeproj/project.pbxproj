@@ -73,6 +73,20 @@
 		03349ECD2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECE2A700E4A004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E0172AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E0182AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E0192AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E01A2AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
+		0337E01B2AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E01C2AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E01D2AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E01E2AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E01F2AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E0202AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
+		0337E0212AE104CC00F171B1 /* SocialBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337E0132AE104CC00F171B1 /* SocialBannerView.m */; };
 		033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */; };
 		033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */; };
 		033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */; };
@@ -1971,6 +1985,8 @@
 		03315B98291BA16000A92FBE /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV4.bundle; sourceTree = "<group>"; };
 		03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppsFlyerLib.xcframework; sourceTree = "<group>"; };
+		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
+		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
 		033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
@@ -3954,6 +3970,8 @@
 				03650193285C761600578028 /* SDKBaseView.h */,
 				03650194285C761600578028 /* SDKBaseView.m */,
 				322CBC1F24C589A5000D6B20 /* widget */,
+				0337E0122AE104CC00F171B1 /* SocialBannerView.h */,
+				0337E0132AE104CC00F171B1 /* SocialBannerView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4177,6 +4195,7 @@
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
+				0337E0182AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
 				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4217,6 +4236,7 @@
 				0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
+				0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4252,6 +4272,7 @@
 				038613992938906000CC9C44 /* MainHomeViewV2.h in Headers */,
 				038612EE29388F8900CC9C44 /* MWSDK.h in Headers */,
 				0386138A2938906000CC9C44 /* RegisterAccountViewV2.h in Headers */,
+				0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4279,6 +4300,7 @@
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
+				0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				0387B9E5291B8C9E001BACA8 /* LoginData.h in Headers */,
 				0387BA85291B8DA5001BACA8 /* TermsViewV2.h in Headers */,
 				0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4295,6 +4317,7 @@
 			files = (
 				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
 				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
+				0337E01A2AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */,
 				0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */,
 				0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */,
@@ -4349,6 +4372,7 @@
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
+				0337E0172AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				039B25FF298B555300045C53 /* LoginData.h in Headers */,
 				0381EC71298B5677006D6100 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4371,6 +4395,7 @@
 				0349F8C42AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03CA721C29D5698400098979 /* NSString+Local.h in Headers */,
 				033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */,
+				0337E0192AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */,
 				033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */,
 				03CA721E29D5698400098979 /* GamaSDK+Social.h in Headers */,
@@ -4983,6 +5008,7 @@
 				03509CC929F91C8C00C840DA /* HttpServiceEnginePay.m in Sources */,
 				03509CCA29F91C8C00C840DA /* AccountModel.m in Sources */,
 				03509CCB29F91C8C00C840DA /* LoginResponse.m in Sources */,
+				0337E01F2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				03509CCC29F91C8C00C840DA /* ConfigResponse.m in Sources */,
 				03509CCD29F91C8C00C840DA /* MyTextFiled.m in Sources */,
 				0349F8EB2AD7F94D0015750A /* ExposureController.m in Sources */,
@@ -5207,6 +5233,7 @@
 				037C6F4A2875AC790041EC34 /* PhoneView.m in Sources */,
 				037C6F4B2875AC790041EC34 /* SDKIconTitleButton.m in Sources */,
 				037C6F4C2875AC790041EC34 /* SDKTextFiledView.m in Sources */,
+				0337E01B2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				037C6F4D2875AC790041EC34 /* LoginTypeButton.m in Sources */,
 				037C6F4E2875AC790041EC34 /* AccountListView.m in Sources */,
 			);
@@ -5260,6 +5287,7 @@
 				0386131629388F8900CC9C44 /* FBDelegate.m in Sources */,
 				0386131729388F8900CC9C44 /* HttpServiceEnginePay.m in Sources */,
 				0386131829388F8900CC9C44 /* AccountModel.m in Sources */,
+				0337E01C2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				0386131929388F8900CC9C44 /* LoginResponse.m in Sources */,
 				0386131A29388F8900CC9C44 /* ConfigResponse.m in Sources */,
 				0386131C29388F8900CC9C44 /* MyTextFiled.m in Sources */,
@@ -5412,6 +5440,7 @@
 				0387BA16291B8C9E001BACA8 /* AccountModel.m in Sources */,
 				0387BA17291B8C9E001BACA8 /* LoginResponse.m in Sources */,
 				0387BA18291B8C9E001BACA8 /* ConfigResponse.m in Sources */,
+				0337E01D2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				0387BA88291B8DA5001BACA8 /* RegisterAccountViewV2.m in Sources */,
 				0387BA1A291B8C9E001BACA8 /* MyTextFiled.m in Sources */,
 				0349F8ED2AD7F94E0015750A /* ExposureController.m in Sources */,
@@ -5620,6 +5649,7 @@
 				0392B2342A5BA8DC00A3E2D6 /* LoginButtonData.m in Sources */,
 				0392B2352A5BA8DC00A3E2D6 /* SDKLoginViewController.m in Sources */,
 				0392B2362A5BA8DC00A3E2D6 /* LoginButton.m in Sources */,
+				0337E0212AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				0392B2372A5BA8DC00A3E2D6 /* AccountLoginView.m in Sources */,
 				0392B2382A5BA8DC00A3E2D6 /* BindAccountView.m in Sources */,
 				0392B2392A5BA8DC00A3E2D6 /* ChangePasswordView.m in Sources */,
@@ -5706,6 +5736,7 @@
 				039B262D298B555300045C53 /* HttpServiceEnginePay.m in Sources */,
 				039B262E298B555300045C53 /* AccountModel.m in Sources */,
 				039B262F298B555300045C53 /* LoginResponse.m in Sources */,
+				0337E01E2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				039B2630298B555300045C53 /* ConfigResponse.m in Sources */,
 				039B2632298B555300045C53 /* MyTextFiled.m in Sources */,
 				0349F8EC2AD7F94D0015750A /* ExposureController.m in Sources */,
@@ -5893,6 +5924,7 @@
 				03CA727929D5698400098979 /* UIScreen+Sdk.m in Sources */,
 				0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */,
 				03CA727A29D5698400098979 /* NSString+URLEncoding.m in Sources */,
+				0337E0202AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */,
 				03CA727B29D5698400098979 /* UIView+BlockGesture.m in Sources */,
 				03CA727C29D5698400098979 /* NSString+Common.m in Sources */,
