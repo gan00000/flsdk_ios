@@ -34,6 +34,8 @@
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UILabel *titleLabel;
 
+@property (nonatomic, strong) UIButton *defalutCloseBtn;
+
 @end
 
 @implementation MWWebViewController
@@ -70,6 +72,7 @@
     }
     return self;
 }
+
 
 - (WKWebView*)wkwebView{
     
@@ -179,12 +182,12 @@
     
     [self webLoadURLRequest_MMMethodMMM:self.webRequest];
     
-    if(!self.isShowTitle){
+    if(self.isShowDefulatCloseBtn){
         
-        self.closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
-        self.closeBtn.hidden = YES;
-        [self.backgroundView addSubview:self.closeBtn];
-        [self.closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        self.defalutCloseBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+        self.defalutCloseBtn.hidden = YES;
+        [self.backgroundView addSubview:self.defalutCloseBtn];
+        [self.defalutCloseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.backgroundView);
             make.centerY.mas_equalTo(self.wkwebView).mas_offset(20);
             make.height.width.mas_equalTo(VH(30));
@@ -329,13 +332,13 @@
     SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
     if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
         decisionHandler (WKNavigationResponsePolicyAllow);
-        if(!self.isShowTitle){
-            self.closeBtn.hidden = YES;
+        if(self.defalutCloseBtn && self.isShowDefulatCloseBtn){
+            self.defalutCloseBtn.hidden = YES;
         }
     }else {
         decisionHandler(WKNavigationResponsePolicyAllow);
-        if(!self.isShowTitle){
-            self.closeBtn.hidden = NO;
+        if(self.defalutCloseBtn && self.isShowDefulatCloseBtn){
+            self.defalutCloseBtn.hidden = NO;
         }
     }
 }

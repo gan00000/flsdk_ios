@@ -33,6 +33,7 @@ typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmH
 @property (nonatomic, strong)NSURLRequest *webRequest;
 
 @property (nonatomic, assign)BOOL isShowTitle;
+@property (nonatomic, assign)BOOL isShowDefulatCloseBtn;
 
 /**
  webView后退

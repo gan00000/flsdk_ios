@@ -800,6 +800,7 @@
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    webVC.isShowDefulatCloseBtn = YES;
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
@@ -940,6 +941,46 @@
     };
     
 #endif
+}
+
+-(void)showSocialView{
+    
+    UIView *superView = appTopViewController.view;
+    
+    UIView *bgV = [[TouchEventInterruptView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+    
+    UIView *contentView = [[UIView alloc] init];
+    contentView.backgroundColor = UIColor.blackColor;
+    contentView.layer.cornerRadius = 10;
+    [bgV addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        if(IS_PORTRAIT){
+            make.width.mas_equalTo(VW(334));
+            make.height.mas_equalTo(VH(625));
+        }else{
+            make.width.mas_equalTo(VW(625));
+            make.height.mas_equalTo(VH(334));
+        }
+       
+        make.center.mas_equalTo(bgV);
+    }];
+    
+//    [UIUtil INI];
+    
+    NSString *resultURL = @"https://member.kodaduck.com/sdk/social/index.html";
+    SDK_LOG(@"showSocialView url=%@",resultURL);
+    MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+  
+    [contentView addSubview:webVC.view];
+    [webVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.mas_equalTo(contentView).offset(10);
+        make.trailing.bottom.mas_equalTo(contentView).offset(-10);
+    }];
 }
 
 @end
