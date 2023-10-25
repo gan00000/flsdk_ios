@@ -401,12 +401,7 @@
     }
     self.isPaying = YES;
     
-    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
-    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
-    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
-    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
-    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
-    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+    [self setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
     self.payHandler = handler;
     
@@ -779,6 +774,28 @@
     
 }
 
+- (void)openCsWithRoleId:(NSString *)roleId
+                 roleName:(NSString *)roleName
+                roleLevel:(NSString *)roleLevel
+             roleVipLevel:(NSString *)roleVipLevel
+               serverCode:(NSString *)serverCode
+               serverName:(NSString *)serverName
+{
+    
+    if ([StringUtil isEmpty_MMMethodMMM:roleId]) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty_MMMethodMMM:serverCode]) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+        return;
+    }
+    
+    [self setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    
+    [self openCs];
+    
+}
 
 - (void)openCs
 {

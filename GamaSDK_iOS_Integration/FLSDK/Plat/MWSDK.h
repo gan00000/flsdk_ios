@@ -152,6 +152,14 @@ completionHandler:(SDKPayBlock) handler;
  */
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
+- (void)openCsWithRoleId:(NSString *)roleId
+                 roleName:(NSString *)roleName
+                roleLevel:(NSString *)roleLevel
+             roleVipLevel:(NSString *)roleVipLevel
+               serverCode:(NSString *)serverCode
+              serverName:(NSString *)serverName;
+
+#pragma mark -【弃用】
 - (void)openCs;
 - (void)openCsWithParams:(NSDictionary *)paramDic;
 
