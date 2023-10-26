@@ -211,6 +211,8 @@
 #define icon_close_white       @"icon_close_white"
 #define icon_apple_pay       @"icon_apple_pay"
 
+#define icon_close_social   @"icon_close_social"
+
 #elif SDK_V6
 
 //第6套

@@ -10,6 +10,7 @@
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
+#import "UIView+BlockGesture.h"
 
 #define VIEW_CONTENT_HEIGHT 360
 #define VIEW_CONTENT_WIDTH 340
@@ -22,13 +23,9 @@
 
 @implementation ExposureController
 
-- (IBAction)backBtnAction:(id)sender {
-    
-    WKWebView *indexWebView = self.mWebViewArry[self.currentIndex];
-    if([indexWebView canGoBack]){
-        [indexWebView goBack];
-    }
-}
+
+
+
 
 - (IBAction)closeBtAction:(id)sender {
     
@@ -41,30 +38,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
-    self.expoModelArry = [NSMutableArray array];
-    self.mWebViewArry = [NSMutableArray array];
-    for (int i =0; i<6; i++) {
-        
-        ExpoModel *em = [[ExpoModel alloc] init];
-        em.title = [NSString stringWithFormat:@"title=%d", i];
-        em.contentUrl = @"https://www.baidu.com/";
-        
-        [self.expoModelArry addObject:em];
-        
+    if (!self.expoModelArry) {
+        self.expoModelArry = [NSMutableArray array];
     }
+    self.mWebViewArry = [NSMutableArray array];
+//    for (int i =0; i<6; i++) {
+//
+//        ExpoModel *em = [[ExpoModel alloc] init];
+//        em.title = [NSString stringWithFormat:@"title=%d", i];
+//        em.contentUrl = @"https://www.baidu.com/";
+//
+//        [self.expoModelArry addObject:em];
+//
+//    }
     self.view.backgroundColor = UIColor.lightGrayColor;
     
     int mSize = self.expoModelArry.count;
     self.currentIndex = 0;
     
-    [self.backBtn setTitle:@"" forState:(UIControlStateNormal)];
-    [self.closeBtn setTitle:@"" forState:(UIControlStateNormal)];
     
-    
-    [self.backBtn setImage:GetImage(@"activity_img_back") forState:(UIControlStateNormal)];
-    [self.closeBtn setImage:GetImage(@"activity_img_close") forState:(UIControlStateNormal)];
+    [self.backIV setImage:GetImage(@"activity_img_back")];
+    [self.closeIV setImage:GetImage(@"activity_img_close")];
     [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    
+    self.backIV.userInteractionEnabled = YES;
+    self.closeIV.userInteractionEnabled = YES;
+    
+    [self.backIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        WKWebView *indexWebView = self.mWebViewArry[self.currentIndex];
+        if([indexWebView canGoBack]){
+            [indexWebView goBack];
+        }
+        
+    }];
+    [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [self dismissViewControllerAnimated:NO completion:^{
+            
+        }];
+    }];
     
     
     self.pageControl.pageIndicatorTintColor = [UIColor whiteColor]; // 未选中的点的颜色
@@ -150,8 +163,8 @@
     self.titleLabel.text = em.title;
     [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
     
-    [self.backBtn sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl] forState:(UIControlStateNormal) placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeBtn sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] forState:(UIControlStateNormal) placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl] placeholderImage:GetImage(@"activity_img_back")];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl]  placeholderImage:GetImage(@"activity_img_close")];
     
     if(em.isContentLoad){
         return;

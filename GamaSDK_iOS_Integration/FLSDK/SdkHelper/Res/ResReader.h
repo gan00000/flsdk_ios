@@ -42,6 +42,7 @@
 -(NSString *)getPayUrl_MMMethodMMM;
 -(NSString *)getCdnUrl_MMMethodMMM;
 -(NSString *)getLogUrl_MMMethodMMM;
+-(NSString *)getPlatUrl_MMMethodMMM;
 -(NSString *)getTermsServiceUrl_MMMethodMMM;
 
 -(NSString *)getFacebookAppId_MMMethodMMM;

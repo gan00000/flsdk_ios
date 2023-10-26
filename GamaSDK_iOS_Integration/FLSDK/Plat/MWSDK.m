@@ -29,6 +29,9 @@
 #import "SelectPayChannelView.h"
 #import "SocialBannerView.h"
 
+#import "ExposureController.h"
+#import "ExposureHorControllerViewController.h"
+
 #ifdef SDK_KR
 #import "NaverDelegate.h"
 #endif
@@ -978,5 +981,48 @@
     }];
     
 }
+
+- (void)showActView
+{
+    SDK_LOG(@"showActView");
+    
+  
+    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
+    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+        [SDKRequest getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+            
+            UIViewController *actController;
+            if(IS_PORTRAIT){
+                ExposureController *mExposureController = [[ExposureController alloc] init];
+                mExposureController.expoModelArry = responseData;
+                actController = mExposureController;
+            }else{
+                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] init];
+                actController = mExposureHorControllerViewController;
+            }
+            
+            SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
+            [actController setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以odalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+            [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
+                
+            }];
+            
+        } errorBlock_MMMethodMMM:^(BJError *error) {
+            
+            [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+        }];
+        
+        
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        
+        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+    }];
+    
+}
+
 
 @end

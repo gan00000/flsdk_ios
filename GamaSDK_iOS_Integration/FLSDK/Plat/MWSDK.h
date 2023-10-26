@@ -197,6 +197,8 @@ completionHandler:(SDKPayBlock) handler;
 
 -(void)showSocialView;
 
+- (void)showActView;
+
 - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
 
 - (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;

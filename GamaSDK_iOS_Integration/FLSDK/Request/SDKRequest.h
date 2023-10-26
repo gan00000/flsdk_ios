@@ -14,7 +14,7 @@
 #import "LoginResponse.h"
 #import "ConfigResponse.h"
 #import <AppsFlyerLib/AppsFlyerLib.h>
-
+#import "ExpoModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -148,6 +148,15 @@ NS_ASSUME_NONNULL_BEGIN
                          otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
                            successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
                              errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
+
++ (void)checkActSwitchWithSuccessBlock_MMMethodMMM:(NSString *)xxx
+                         otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                            errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock;
+
+
++(void)getActConfigWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 +(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic;
 @end

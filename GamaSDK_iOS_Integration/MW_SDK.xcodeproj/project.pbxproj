@@ -73,6 +73,23 @@
 		03349ECD2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECE2A700E4A004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
+		033774F82AE9005C00D19EF5 /* ExposureHorControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8BE2AD7E27B0015750A /* ExposureHorControllerViewController.xib */; };
+		033774F92AE9006100D19EF5 /* ExposureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032BE76E2AD69023001106E1 /* ExposureController.xib */; };
+		033774FA2AE9006B00D19EF5 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8D82AD7F3860015750A /* MenuCell.xib */; };
+		033774FD2AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033774FE2AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033774FF2AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033775012AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033775022AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
+		033775042AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		033775052AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		033775062AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		033775072AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		033775082AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		033775092AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
 		0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
@@ -1985,6 +2002,8 @@
 		03315B98291BA16000A92FBE /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		03315B9D291DFB7B00A92FBE /* SDKResourcesV4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV4.bundle; sourceTree = "<group>"; };
 		03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppsFlyerLib.xcframework; sourceTree = "<group>"; };
+		033774FB2AE9080E00D19EF5 /* SwitchResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchResp.h; sourceTree = "<group>"; };
+		033774FC2AE9080E00D19EF5 /* SwitchResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchResp.m; sourceTree = "<group>"; };
 		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
 		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
@@ -3905,6 +3924,8 @@
 				030FAB3428A66ED300709536 /* UrlMode.m */,
 				0349F8AC2AD7A1190015750A /* ExpoModel.h */,
 				0349F8AD2AD7A1190015750A /* ExpoModel.m */,
+				033774FB2AE9080E00D19EF5 /* SwitchResp.h */,
+				033774FC2AE9080E00D19EF5 /* SwitchResp.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4192,6 +4213,7 @@
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
 				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
+				033775012AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
@@ -4236,6 +4258,7 @@
 				0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
+				033774FD2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4252,6 +4275,7 @@
 				039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */,
 				038612DF29388F8900CC9C44 /* MyTextFiled.h in Headers */,
 				0386138D2938906000CC9C44 /* TermsViewV2.h in Headers */,
+				033774FE2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				038613932938906000CC9C44 /* NoticeViewV2.h in Headers */,
 				038613982938906000CC9C44 /* BindPhoneViewV2.h in Headers */,
 				038612E029388F8900CC9C44 /* GamaThirdSocial.h in Headers */,
@@ -4297,6 +4321,7 @@
 				0387B9E0291B8C9E001BACA8 /* CountTimerDelegate.h in Headers */,
 				0387B9E2291B8C9E001BACA8 /* PayData.h in Headers */,
 				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
+				033774FF2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
@@ -4326,6 +4351,7 @@
 				0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */,
 				0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */,
 				0392B2652A5BA99900A3E2D6 /* FindPasswordViewV2.h in Headers */,
+				033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
 				035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
@@ -4369,6 +4395,7 @@
 				039B25F9298B555300045C53 /* TouchEventInterruptView.h in Headers */,
 				039B25FA298B555300045C53 /* CountTimerDelegate.h in Headers */,
 				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
+				033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
@@ -4420,6 +4447,7 @@
 				0349F8F12AD7F9580015750A /* ExposureController.h in Headers */,
 				0349F8DC2AD7F3860015750A /* MenuCell.h in Headers */,
 				03CA722E29D5698400098979 /* BasePopupView.h in Headers */,
+				033775022AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				033B331929D5C4BC00AE9F96 /* PhoneView.h in Headers */,
 				03CA723029D5698400098979 /* MWSDK.h in Headers */,
 				033B332129D5C4BD00AE9F96 /* TouchEventInterruptView.h in Headers */,
@@ -4891,8 +4919,11 @@
 				033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
+				033774FA2AE9006B00D19EF5 /* MenuCell.xib in Resources */,
+				033774F82AE9005C00D19EF5 /* ExposureHorControllerViewController.xib in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
 				039E6EDC29D9900300890B3B /* README.md in Resources */,
+				033774F92AE9006100D19EF5 /* ExposureController.xib in Resources */,
 				03C91BB22A7A415000289870 /* adjust-info-vnmxwios.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4981,6 +5012,7 @@
 				03509CAF29F91C8C00C840DA /* BasePopupView.m in Sources */,
 				035659292AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				03509CB029F91C8C00C840DA /* SDWebImageDownloader.m in Sources */,
+				033775082AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				03509CB129F91C8C00C840DA /* UIImage+GIF.m in Sources */,
 				03509CB229F91C8C00C840DA /* UIImage+MultiFormat.m in Sources */,
 				03509CB329F91C8C00C840DA /* SDWebImageCompat.m in Sources */,
@@ -5154,6 +5186,7 @@
 				030FAA7728A362E200709536 /* MyTextFiled.m in Sources */,
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
+				033775042AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
 				0349F8B52AD7A1190015750A /* ExpoModel.m in Sources */,
 				030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */,
@@ -5260,6 +5293,7 @@
 				038612FF29388F8900CC9C44 /* BasePopupView.m in Sources */,
 				035659262AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				0386130029388F8900CC9C44 /* SDWebImageDownloader.m in Sources */,
+				033775052AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0386130129388F8900CC9C44 /* UIImage+GIF.m in Sources */,
 				0386130229388F8900CC9C44 /* UIImage+MultiFormat.m in Sources */,
 				0386130329388F8900CC9C44 /* SDWebImageCompat.m in Sources */,
@@ -5413,6 +5447,7 @@
 				0387B9FA291B8C9E001BACA8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				035659272AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				0387B9FB291B8C9E001BACA8 /* BasePopupView.m in Sources */,
+				033775062AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0387B9FC291B8C9E001BACA8 /* SDWebImageDownloader.m in Sources */,
 				0387B9FD291B8C9E001BACA8 /* UIImage+GIF.m in Sources */,
 				0387B9FF291B8C9E001BACA8 /* UIImage+MultiFormat.m in Sources */,
@@ -5585,6 +5620,7 @@
 				0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */,
 				0392B1F82A5BA8DC00A3E2D6 /* MyTextFiled.m in Sources */,
 				0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */,
+				0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */,
 				0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */,
 				0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */,
@@ -5709,6 +5745,7 @@
 				039B2615298B555300045C53 /* BasePopupView.m in Sources */,
 				035659282AD253C0007B0C6A /* SelectPayChannelView.m in Sources */,
 				039B2616298B555300045C53 /* SDWebImageDownloader.m in Sources */,
+				033775072AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				039B2617298B555300045C53 /* UIImage+GIF.m in Sources */,
 				039B2618298B555300045C53 /* UIImage+MultiFormat.m in Sources */,
 				039B2619298B555300045C53 /* SDWebImageCompat.m in Sources */,
@@ -5938,6 +5975,7 @@
 				033B331D29D5C4BC00AE9F96 /* MyTextFiled.m in Sources */,
 				03CA728429D5698400098979 /* YYClassInfo.m in Sources */,
 				03CA728529D5698400098979 /* AFURLResponseSerialization.m in Sources */,
+				033775092AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				03CA728629D5698400098979 /* AFHTTPSessionManager.m in Sources */,
 				03CA728729D5698400098979 /* AFURLSessionManager.m in Sources */,
 				03CA728829D5698400098979 /* AFURLRequestSerialization.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "SDKRequest.h"
 #import "CCSDKDATA.h"
-
+#import "SwitchResp.h"
 
 @implementation SDKRequest
 
@@ -923,6 +923,114 @@
     [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_check_payment_channel params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
+
+#pragma mark  - 活动开关
++ (void)checkActSwitchWithSuccessBlock_MMMethodMMM:(NSString *)xxx
+                         otherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(PayServiceSuccessBlock)successBlock
+                             errorBlock_MMMethodMMM:(PayServiceErrorBlock)errorBlock{
+    
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",GAME_CODE];
+    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    
+    NSString *md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
+    
+    @try {
+        NSDictionary *dic = @{
+            
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
+            
+            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
+            
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    if (params) {
+        NSString *aUrl = @"";
+        for (NSString *key in params) {
+            NSString *value = params[key];
+            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+        }
+        SDK_LOG(@"%@",aUrl);
+    }
+    
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getPlatUrl_MMMethodMMM]];
+    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:@"sdk/api/market/switch"
+                                           params_MMMethodMMM:params
+                                     successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+        
+        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        
+        NSDictionary *responseDict = responseData;
+        BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
+        
+        if ([responceModel isRequestSuccess_MMMethodMMM]) {
+            
+            SwitchResp *mSwitchResp = [SwitchResp yy_modelWithDictionary:responseData[wwwww_tag_wwwww_data]];
+            
+            if (successBlock) {
+                successBlock(mSwitchResp);
+            }
+        } else {
+            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
+            if (errorBlock) {
+                errorBlock(errorObject);
+            }
+        }
+        
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
++(void)getActConfigWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
+{
+//    https://cdn-download.tthplay.com/sdk/config/vnmxw/v1/market.json
+
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/%@/v1/market.json?t=%@", GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+        
+        NSDictionary *responseDict = responseData;
+        SDK_LOG(@"sdk config:%@",responseDict);
+        NSArray<ExpoModel *> *expoModeArr = [NSArray yy_modelArrayWithClass:[ExpoModel class] json:responseDict];
+        if (successBlock) {
+            successBlock(expoModeArr);
+        }
+        
+        
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
 
 #pragma mark - 通過url創建通用參數鏈接
 +(NSString *) createSdkUrl_MMMethodMMM:(NSString *)url otherDic_MMMethodMMM:(NSDictionary *) otherDic{

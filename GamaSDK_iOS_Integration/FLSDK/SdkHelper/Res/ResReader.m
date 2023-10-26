@@ -480,6 +480,11 @@ static dispatch_once_t onceToken;
     return [self getStringForKey_MMMethodMMM:@"sdk_url_log"];
 }
 
+-(NSString *)getPlatUrl_MMMethodMMM
+{
+    return [self getStringForKey_MMMethodMMM:@"sdk_url_plat"];
+}
+
 -(NSString *)getTermsServiceUrl_MMMethodMMM
 {
     return [self getStringForKey_MMMethodMMM:@"terms_service_url"];
