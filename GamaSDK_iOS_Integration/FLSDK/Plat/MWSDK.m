@@ -1001,6 +1001,7 @@
                 actController = mExposureController;
             }else{
                 ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] init];
+                mExposureHorControllerViewController.expoModelArry = responseData;
                 actController = mExposureHorControllerViewController;
             }
             

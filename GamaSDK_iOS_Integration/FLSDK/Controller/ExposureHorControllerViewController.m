@@ -11,6 +11,8 @@
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
 #import "SdkHeader.h"
+#import "UIView+BlockGesture.h"
+
 
 #define XXMenuCell    @"MenuCell"
 
@@ -65,26 +67,31 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    self.expoModelArry = [NSMutableArray array];
-    for (int i =0; i<6; i++) {
-        
-        ExpoModel *em = [[ExpoModel alloc] init];
-        em.title = [NSString stringWithFormat:@"title=%d", i];
-        em.contentUrl = @"https://www.baidu.com/";
-        
-        [self.expoModelArry addObject:em];
-        
+    if (!self.expoModelArry) {
+        self.expoModelArry = [NSMutableArray array];
     }
     
     
-    self.view.backgroundColor = UIColor.lightGrayColor;
-    
-    [self.backBtn setTitle:@"" forState:(UIControlStateNormal)];
-    [self.closeBtn setTitle:@"" forState:(UIControlStateNormal)];
-    
-    [self.backBtn setImage:GetImage(@"activity_img_back") forState:(UIControlStateNormal)];
-    [self.closeBtn setImage:GetImage(@"activity_img_close") forState:(UIControlStateNormal)];
+    [self.backIV setImage:GetImage(@"activity_img_back")];
+    [self.closeIV setImage:GetImage(@"activity_img_close")];
     [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    
+    self.backIV.userInteractionEnabled = YES;
+    self.closeIV.userInteractionEnabled = YES;
+    
+    [self.backIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        if([self.cWebView canGoBack]){
+            [self.cWebView  goBack];
+        }
+        
+    }];
+    [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        
+        [self dismissViewControllerAnimated:NO completion:^{
+            
+        }];
+    }];
     
     ExpoModel *em = self.expoModelArry[0];
     em.isClick = YES;
@@ -111,7 +118,7 @@
         [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_bg")];
         
     }else{
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_unselect_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(@"act_menu_unselect_bg")];
     }
     
     return cell;
@@ -135,8 +142,8 @@
     self.titleLabel.text = em.title;
     [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
     
-    [self.backBtn sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl] forState:(UIControlStateNormal) placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeBtn sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] forState:(UIControlStateNormal) placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(@"activity_img_back")];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
     
     
     [self.cWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:em.contentUrl]]];

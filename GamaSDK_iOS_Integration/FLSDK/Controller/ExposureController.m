@@ -24,9 +24,6 @@
 @implementation ExposureController
 
 
-
-
-
 - (IBAction)closeBtAction:(id)sender {
     
     [self dismissViewControllerAnimated:NO completion:^{
