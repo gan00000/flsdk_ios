@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL showSdkCsCenter;
 @property (nonatomic, assign) BOOL togglePay;//是否开启第三方支付
 
+@property (nonatomic, assign) BOOL showMarket;//是否开启活动
+
 @end
 
 NS_ASSUME_NONNULL_END

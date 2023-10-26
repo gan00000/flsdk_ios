@@ -90,7 +90,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Xxr-ZH-el3" secondAttribute="trailing" id="3DN-hr-Zm0"/>
                         <constraint firstAttribute="trailing" secondItem="BLa-Oz-Bz1" secondAttribute="trailing" id="8nM-OC-KWE"/>
@@ -111,7 +111,7 @@
                 </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vRM-qR-adx" firstAttribute="trailing" secondItem="4NH-hG-DY7" secondAttribute="trailing" id="Yrh-a8-WkT"/>
                 <constraint firstItem="vRM-qR-adx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bN6-2p-2fu"/>

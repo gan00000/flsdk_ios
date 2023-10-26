@@ -986,7 +986,12 @@
 {
     SDK_LOG(@"showActView");
     
-  
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
+        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+        return;
+    }
+    
     [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         

@@ -56,7 +56,7 @@
 //        [self.expoModelArry addObject:em];
 //
 //    }
-    self.view.backgroundColor = UIColor.lightGrayColor;
+    self.view.backgroundColor = UIColor.clearColor;
     
     int mSize = self.expoModelArry.count;
     self.currentIndex = 0;
