@@ -85,6 +85,7 @@
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_close];
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_onPayFinish];
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_trackEvent];
+        [configuration.userContentController addScriptMessageHandler:scriptDelegate name:wwwww_tag_wwwww_openSysBrowser];
         
         _wkwebView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
         
@@ -379,7 +380,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         
         if ([message.name isEqualToString:js_close]) {
-            
+        
             [self webClose_MMMethodMMM];
         }else if ([message.name isEqualToString:js_onPayFinish]) {
             
@@ -390,6 +391,12 @@
             if([StringUtil isNotEmpty_MMMethodMMM:eventName]){
                 [[MWSDK share] trackEventWithEventName:eventName];
             }
+        }else if ([message.name isEqualToString:wwwww_tag_wwwww_openSysBrowser]){
+            
+            NSString *xurl = [NSString stringWithFormat:@"%@", message.body];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:xurl] options:@{} completionHandler:^(BOOL success) {
+                
+            }];
         }
         
     });
@@ -469,6 +476,7 @@
         [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_close];
         [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
         [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
+        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:wwwww_tag_wwwww_openSysBrowser];
         [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
         [self.wkwebView removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
         

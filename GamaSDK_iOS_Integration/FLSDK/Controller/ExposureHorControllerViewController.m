@@ -22,19 +22,6 @@
 
 @implementation ExposureHorControllerViewController
 
-- (IBAction)backClickAction:(id)sender {
-    
-    if([self.cWebView canGoBack]){
-        [self.cWebView  goBack];
-    }
-}
-- (IBAction)closeClickAction:(id)sender {
-    
-    [self dismissViewControllerAnimated:NO completion:^{
-        
-    }];
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -81,13 +68,14 @@
     
     [self.backIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        if([self.cWebView canGoBack]){
-            [self.cWebView  goBack];
+        if([self.mwWebView.wkwebView canGoBack]){
+            [self.mwWebView.wkwebView  goBack];
         }
         
     }];
     [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
+        [self.mwWebView releaseAll];
         [self dismissViewControllerAnimated:NO completion:^{
             
         }];
@@ -146,7 +134,7 @@
     [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
     
     
-    [self.cWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:em.contentUrl]]];
+    [self.mwWebView loadRequest:em.contentUrl];
     em.isContentLoad = YES;
     
     for (int i = 0; i < self.expoModelArry.count; i++) {

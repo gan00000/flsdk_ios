@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ExpoModel.h"
 #import <WebKit/WebKit.h>
+#import "MWWebView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
-@property (weak, nonatomic) IBOutlet WKWebView *cWebView;
+//@property (weak, nonatomic) IBOutlet WKWebView *cWebView;
+@property (weak, nonatomic) IBOutlet MWWebView *mwWebView;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 

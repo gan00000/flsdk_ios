@@ -12,10 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExposureHorControllerViewController">
             <connections>
                 <outlet property="backIV" destination="XtO-GU-BVS" id="pOb-pA-NMy"/>
-                <outlet property="cWebView" destination="Z5N-Zv-B8f" id="0p8-l3-0eb"/>
                 <outlet property="closeIV" destination="rRn-tb-0pB" id="IaX-4s-iTf"/>
                 <outlet property="contentView" destination="xmd-6Q-hip" id="6h4-rp-j8L"/>
                 <outlet property="menuTableView" destination="1xa-Cm-112" id="6a4-CS-Egl"/>
+                <outlet property="mwWebView" destination="LpO-EX-T4k" id="Yqe-Ce-M3v"/>
                 <outlet property="titleBgIV" destination="Lmn-0C-80t" id="KXa-CI-FSX"/>
                 <outlet property="titleLabel" destination="tUR-9K-PNR" id="P2z-6i-Brk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -85,21 +85,17 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-6Q-hip" userLabel="contentView">
                                     <rect key="frame" x="0.0" y="35" width="430" height="255"/>
                                     <subviews>
-                                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-Zv-B8f">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LpO-EX-T4k" customClass="MWWebView">
                                             <rect key="frame" x="0.0" y="0.0" width="430" height="255"/>
-                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <wkWebViewConfiguration key="configuration">
-                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                                <wkPreferences key="preferences"/>
-                                            </wkWebViewConfiguration>
-                                        </wkWebView>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Z5N-Zv-B8f" secondAttribute="trailing" id="EWr-vX-39g"/>
-                                        <constraint firstItem="Z5N-Zv-B8f" firstAttribute="top" secondItem="xmd-6Q-hip" secondAttribute="top" id="JLk-kp-dmA"/>
-                                        <constraint firstItem="Z5N-Zv-B8f" firstAttribute="leading" secondItem="xmd-6Q-hip" secondAttribute="leading" id="M6y-eJ-AFu"/>
-                                        <constraint firstAttribute="bottom" secondItem="Z5N-Zv-B8f" secondAttribute="bottom" id="OWa-iT-ZGJ"/>
+                                        <constraint firstItem="LpO-EX-T4k" firstAttribute="top" secondItem="xmd-6Q-hip" secondAttribute="top" id="Hw9-7n-O1g"/>
+                                        <constraint firstAttribute="bottom" secondItem="LpO-EX-T4k" secondAttribute="bottom" id="hsq-wj-pwk"/>
+                                        <constraint firstItem="LpO-EX-T4k" firstAttribute="leading" secondItem="xmd-6Q-hip" secondAttribute="leading" id="nIc-wq-GUQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="LpO-EX-T4k" secondAttribute="trailing" id="ybB-XK-DTX"/>
                                     </constraints>
                                 </view>
                             </subviews>

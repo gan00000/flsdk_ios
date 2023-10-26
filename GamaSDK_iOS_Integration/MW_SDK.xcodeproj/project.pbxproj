@@ -90,6 +90,20 @@
 		033775082AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
 		033775092AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
 		0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
+		0337750D2AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		0337750E2AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		0337750F2AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		033775102AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		033775112AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		033775122AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337750B2AEA51DA00D19EF5 /* MWWebView.h */; };
+		033775142AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775152AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775162AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775172AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775182AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775192AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		0337751A2AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
 		0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
@@ -2004,6 +2018,8 @@
 		03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppsFlyerLib.xcframework; sourceTree = "<group>"; };
 		033774FB2AE9080E00D19EF5 /* SwitchResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchResp.h; sourceTree = "<group>"; };
 		033774FC2AE9080E00D19EF5 /* SwitchResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchResp.m; sourceTree = "<group>"; };
+		0337750B2AEA51DA00D19EF5 /* MWWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWWebView.h; sourceTree = "<group>"; };
+		0337750C2AEA51DA00D19EF5 /* MWWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWWebView.m; sourceTree = "<group>"; };
 		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
 		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
@@ -3993,6 +4009,8 @@
 				322CBC1F24C589A5000D6B20 /* widget */,
 				0337E0122AE104CC00F171B1 /* SocialBannerView.h */,
 				0337E0132AE104CC00F171B1 /* SocialBannerView.m */,
+				0337750B2AEA51DA00D19EF5 /* MWWebView.h */,
+				0337750C2AEA51DA00D19EF5 /* MWWebView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4218,6 +4236,7 @@
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
 				0337E0182AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				033775112AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
 				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4247,6 +4266,7 @@
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
+				0337750D2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				0356591E2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
@@ -4282,6 +4302,7 @@
 				038613892938906000CC9C44 /* FindPasswordViewV2.h in Headers */,
 				0386138C2938906000CC9C44 /* BindAccountViewV2.h in Headers */,
 				038612E129388F8900CC9C44 /* UrlMode.h in Headers */,
+				0337750E2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				038612E329388F8900CC9C44 /* TouchEventInterruptView.h in Headers */,
 				038612E429388F8900CC9C44 /* CountTimerDelegate.h in Headers */,
 				0386138E2938906000CC9C44 /* AccountLoginViewV2.h in Headers */,
@@ -4326,6 +4347,7 @@
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
 				0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				0337750F2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				0387B9E5291B8C9E001BACA8 /* LoginData.h in Headers */,
 				0387BA85291B8DA5001BACA8 /* TermsViewV2.h in Headers */,
 				0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4370,6 +4392,7 @@
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
+				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4400,6 +4423,7 @@
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
 				0337E0172AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				033775102AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				039B25FF298B555300045C53 /* LoginData.h in Headers */,
 				0381EC71298B5677006D6100 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4414,6 +4438,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033775122AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				033B331B29D5C4BC00AE9F96 /* SDKTextFiledView.h in Headers */,
 				033B331A29D5C4BC00AE9F96 /* SDKIconTitleButton.h in Headers */,
 				033B32EB29D56AEE00AE9F96 /* LoginWithRegViewV2.h in Headers */,
@@ -5032,6 +5057,7 @@
 				03509CC129F91C8C00C840DA /* GameUserModel.m in Sources */,
 				03509CC229F91C8C00C840DA /* MWApplePayManager.m in Sources */,
 				039AC1E729F91DD700B416D8 /* LoginWithRegViewV2.m in Sources */,
+				033775182AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				03509CC429F91C8C00C840DA /* ApplePay.m in Sources */,
 				03509CC529F91C8C00C840DA /* LineDelegate.m in Sources */,
 				03509CC629F91C8C00C840DA /* GIDDelegate.m in Sources */,
@@ -5179,6 +5205,7 @@
 				030FAA2A28A0FA7C00709536 /* MainHomeViewV2.m in Sources */,
 				037C6F022875AC790041EC34 /* FBDelegate.m in Sources */,
 				037C6F032875AC790041EC34 /* HttpServiceEnginePay.m in Sources */,
+				033775142AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				037C6F042875AC790041EC34 /* AccountModel.m in Sources */,
 				037C6F052875AC790041EC34 /* LoginResponse.m in Sources */,
 				037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */,
@@ -5313,6 +5340,7 @@
 				038613942938906000CC9C44 /* RegisterAccountViewV2.m in Sources */,
 				0386131029388F8900CC9C44 /* GameUserModel.m in Sources */,
 				0386131129388F8900CC9C44 /* MWApplePayManager.m in Sources */,
+				033775152AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				038613882938906000CC9C44 /* LoginWithRegViewV2.m in Sources */,
 				0386131229388F8900CC9C44 /* ApplePay.m in Sources */,
 				0386131329388F8900CC9C44 /* LineDelegate.m in Sources */,
@@ -5467,6 +5495,7 @@
 				0387BA0D291B8C9E001BACA8 /* GameUserModel.m in Sources */,
 				0387BA0E291B8C9E001BACA8 /* MWApplePayManager.m in Sources */,
 				0387BA0F291B8C9E001BACA8 /* ApplePay.m in Sources */,
+				033775162AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				0387BA10291B8C9E001BACA8 /* LineDelegate.m in Sources */,
 				0387BA11291B8C9E001BACA8 /* GIDDelegate.m in Sources */,
 				0387BA12291B8C9E001BACA8 /* FirebaseDelegate.m in Sources */,
@@ -5680,6 +5709,7 @@
 				0392B2302A5BA8DC00A3E2D6 /* SdkUtil.m in Sources */,
 				0392B2312A5BA8DC00A3E2D6 /* ConfigCoreUtil.m in Sources */,
 				0392B2322A5BA8DC00A3E2D6 /* LoginHelper.m in Sources */,
+				0337751A2AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				0392B2332A5BA8DC00A3E2D6 /* DimeUtil.m in Sources */,
 				0349F8E92AD7F94B0015750A /* ExposureController.m in Sources */,
 				0392B2342A5BA8DC00A3E2D6 /* LoginButtonData.m in Sources */,
@@ -5765,6 +5795,7 @@
 				039B2626298B555300045C53 /* GameUserModel.m in Sources */,
 				039B2627298B555300045C53 /* MWApplePayManager.m in Sources */,
 				0381EC67298B5677006D6100 /* LoginWithRegViewV2.m in Sources */,
+				033775172AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				039B2628298B555300045C53 /* ApplePay.m in Sources */,
 				039B2629298B555300045C53 /* LineDelegate.m in Sources */,
 				039B262A298B555300045C53 /* GIDDelegate.m in Sources */,
@@ -5941,6 +5972,7 @@
 				03CA726429D5698400098979 /* BJError.m in Sources */,
 				03CA726529D5698400098979 /* HttpServiceEngineLogin.m in Sources */,
 				03CA726629D5698400098979 /* BJServiceConfigurator.m in Sources */,
+				033775192AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				03CA726729D5698400098979 /* SDKRequest.m in Sources */,
 				03CA726829D5698400098979 /* HttpServiceEngineAd.m in Sources */,
 				03CA726929D5698400098979 /* BaseSDK.m in Sources */,

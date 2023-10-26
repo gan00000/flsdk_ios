@@ -11,24 +11,32 @@
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
 #import "UIView+BlockGesture.h"
+#import "MWWebView.h"
 
 #define VIEW_CONTENT_HEIGHT 360
 #define VIEW_CONTENT_WIDTH 340
 
 @interface ExposureController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray<WKWebView *> *mWebViewArry;
+@property (nonatomic, strong) NSMutableArray<MWWebView *> *mWebViewArry;
 @property (nonatomic, assign) NSInteger currentIndex;
 @end
 
 @implementation ExposureController
 
 
-- (IBAction)closeBtAction:(id)sender {
+- (void)closeBtAction{
     
+    for (MWWebView *mMWWebView in self.mWebViewArry) {
+        [mMWWebView releaseAll];
+    }
     [self dismissViewControllerAnimated:NO completion:^{
         
     }];
+}
+
+- (void)dealloc{
+    
 }
 
 - (void)viewDidLoad {
@@ -63,17 +71,16 @@
     
     [self.backIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        WKWebView *indexWebView = self.mWebViewArry[self.currentIndex];
-        if([indexWebView canGoBack]){
-            [indexWebView goBack];
+        MWWebView *indexWebView = self.mWebViewArry[self.currentIndex];
+        
+        if([indexWebView.wkwebView canGoBack]){
+            [indexWebView.wkwebView goBack];
         }
         
     }];
     [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [self dismissViewControllerAnimated:NO completion:^{
-            
-        }];
+        [self closeBtAction];
     }];
     
     
@@ -92,9 +99,11 @@
     if(mSize > 0){
         [self.mScrollView setContentSize:CGSizeMake(mSize * VIEW_CONTENT_WIDTH, VIEW_CONTENT_HEIGHT)];
     //    [self.mScrollView setContentOffset:CGPointMake(340, 0)];
-        WKWebView *firstWebView;
+        MWWebView *firstWebView;
         for (int i = 0; i < mSize; i ++) {
-            WKWebView *mWebView = [[WKWebView alloc] initWithFrame: CGRectMake(i * VIEW_CONTENT_WIDTH, 0, VIEW_CONTENT_WIDTH, VIEW_CONTENT_HEIGHT)];
+//            WKWebView *mWebView = [[WKWebView alloc] initWithFrame: CGRectMake(i * VIEW_CONTENT_WIDTH, 0, VIEW_CONTENT_WIDTH, VIEW_CONTENT_HEIGHT)];
+            
+            MWWebView *mWebView = [[MWWebView alloc] initWithFrame: CGRectMake(i * VIEW_CONTENT_WIDTH, 0, VIEW_CONTENT_WIDTH, VIEW_CONTENT_HEIGHT)];
 //            if(i % 2 == 1){
 //                mView.backgroundColor = UIColor.blackColor;
 //            }else{
@@ -166,8 +175,8 @@
     if(em.isContentLoad){
         return;
     }
-    WKWebView *indexWebView = self.mWebViewArry[self.currentIndex];
-    [indexWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:em.contentUrl]]];
+    MWWebView *indexWebView = self.mWebViewArry[self.currentIndex];
+    [indexWebView loadRequest:em.contentUrl];
     em.isContentLoad = YES;
 }
 
