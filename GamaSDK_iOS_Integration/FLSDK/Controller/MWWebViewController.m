@@ -276,7 +276,7 @@
         SDK_LOG(@"userContentController dismissViewControllerAnimated");
         !_didDismissCallback ?: _didDismissCallback();
     }];
-    [self releaseAll];
+    [self releaseAll_MMMethodMMM];
 }
 
 #pragma mark - WKNavigationDelegate
@@ -469,7 +469,7 @@
 }
 
 
-- (void)releaseAll {
+- (void)releaseAll_MMMethodMMM {
     SDK_LOG(@"MWWebViewController releaseAll");
     @try {
         

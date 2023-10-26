@@ -996,11 +996,11 @@
             
             UIViewController *actController;
             if(IS_PORTRAIT){
-                ExposureController *mExposureController = [[ExposureController alloc] init];
+                ExposureController *mExposureController = [[ExposureController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
                 mExposureController.expoModelArry = responseData;
                 actController = mExposureController;
             }else{
-                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] init];
+                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
                 mExposureHorControllerViewController.expoModelArry = responseData;
                 actController = mExposureHorControllerViewController;
             }

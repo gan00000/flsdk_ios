@@ -104,6 +104,10 @@
 		033775182AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
 		033775192AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
 		0337751A2AEA51DA00D19EF5 /* MWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0337750C2AEA51DA00D19EF5 /* MWWebView.m */; };
+		033775232AEA67A200D19EF5 /* ExposureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032BE76E2AD69023001106E1 /* ExposureController.xib */; };
+		033775242AEA67A200D19EF5 /* ExposureHorControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8BE2AD7E27B0015750A /* ExposureHorControllerViewController.xib */; };
+		033775252AEA67A200D19EF5 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349F8D82AD7F3860015750A /* MenuCell.xib */; };
+		033775282AEA6CE100D19EF5 /* SDKResourcesVN.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */; };
 		0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
 		0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0337E0122AE104CC00F171B1 /* SocialBannerView.h */; };
@@ -136,7 +140,6 @@
 		033B32F029D56AEE00AE9F96 /* BindAccountViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32DE29D56AEE00AE9F96 /* BindAccountViewV2.m */; };
 		033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */; };
 		033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */; };
-		033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */; };
 		033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */; };
 		033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */; };
 		033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CA72B729D5698400098979 /* MWSDK_VN.framework */; };
@@ -1812,6 +1815,13 @@
 			remoteGlobalIDString = 0387B9D5291B8C9E001BACA8;
 			remoteInfo = MWSDK_V4;
 		};
+		033775262AEA67BD00D19EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0337751E2AEA675D00D19EF5;
+			remoteInfo = MWRES;
+		};
 		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -2020,6 +2030,7 @@
 		033774FC2AE9080E00D19EF5 /* SwitchResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchResp.m; sourceTree = "<group>"; };
 		0337750B2AEA51DA00D19EF5 /* MWWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWWebView.h; sourceTree = "<group>"; };
 		0337750C2AEA51DA00D19EF5 /* MWWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWWebView.m; sourceTree = "<group>"; };
+		0337751F2AEA675D00D19EF5 /* MWRES.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWRES.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
 		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
@@ -2499,6 +2510,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0337751C2AEA675D00D19EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03509C3929F91C8100C840DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4117,6 +4135,7 @@
 				03509D2529F91C8C00C840DA /* MWSDK_V6.framework */,
 				0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */,
 				0392B2D62A5BA9F600A3E2D6 /* SDK_DEMO_KR.app */,
+				0337751F2AEA675D00D19EF5 /* MWRES.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4482,6 +4501,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0337751E2AEA675D00D19EF5 /* MWRES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033775222AEA675D00D19EF5 /* Build configuration list for PBXNativeTarget "MWRES" */;
+			buildPhases = (
+				0337751B2AEA675D00D19EF5 /* Sources */,
+				0337751C2AEA675D00D19EF5 /* Frameworks */,
+				0337751D2AEA675D00D19EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWRES;
+			productName = MWRES;
+			productReference = 0337751F2AEA675D00D19EF5 /* MWRES.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		03509C2629F91C8100C840DA /* SDK_DEMO_V6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03509C8329F91C8100C840DA /* Build configuration list for PBXNativeTarget "SDK_DEMO_V6" */;
@@ -4704,6 +4740,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				033775272AEA67BD00D19EF5 /* PBXTargetDependency */,
 				03CA731A29D569B400098979 /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_VN;
@@ -4764,6 +4801,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Gama;
 				TargetAttributes = {
+					0337751E2AEA675D00D19EF5 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					037C6EDA2875A97B0041EC34 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -4819,11 +4859,22 @@
 				03CA721A29D5698400098979 /* MWSDK_VN */,
 				0392B1B32A5BA8DC00A3E2D6 /* MWSDK_KR */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
+				0337751E2AEA675D00D19EF5 /* MWRES */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0337751D2AEA675D00D19EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033775232AEA67A200D19EF5 /* ExposureController.xib in Resources */,
+				033775242AEA67A200D19EF5 /* ExposureHorControllerViewController.xib in Resources */,
+				033775252AEA67A200D19EF5 /* MenuCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03509C3029F91C8100C840DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4939,8 +4990,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033775282AEA6CE100D19EF5 /* SDKResourcesVN.bundle in Resources */,
 				039E6ED729D9900300890B3B /* NOTICES in Resources */,
-				033B32F829D56E3200AE9F96 /* SDKResourcesVN.bundle in Resources */,
 				033B32FB29D56E3200AE9F96 /* com_snmxw_vntest.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
@@ -5003,6 +5054,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0337751B2AEA675D00D19EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03509C2929F91C8100C840DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6104,6 +6162,11 @@
 			target = 0387B9D5291B8C9E001BACA8 /* MWSDK_V4 */;
 			targetProxy = 032CB5682940BE740013185B /* PBXContainerItemProxy */;
 		};
+		033775272AEA67BD00D19EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0337751E2AEA675D00D19EF5 /* MWRES */;
+			targetProxy = 033775262AEA67BD00D19EF5 /* PBXContainerItemProxy */;
+		};
 		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
@@ -6137,6 +6200,92 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		033775202AEA675D00D19EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Gama. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWRES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		033775212AEA675D00D19EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Gama. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.sdk.MWRES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		03509C8429F91C8100C840DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8140,6 +8289,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		033775222AEA675D00D19EF5 /* Build configuration list for PBXNativeTarget "MWRES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033775202AEA675D00D19EF5 /* Debug */,
+				033775212AEA675D00D19EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03509C8329F91C8100C840DA /* Build configuration list for PBXNativeTarget "SDK_DEMO_V6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

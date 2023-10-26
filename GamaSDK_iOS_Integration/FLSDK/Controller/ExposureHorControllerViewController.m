@@ -13,9 +13,6 @@
 #import "SdkHeader.h"
 #import "UIView+BlockGesture.h"
 
-
-#define XXMenuCell    @"MenuCell"
-
 @interface ExposureHorControllerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -34,8 +31,8 @@
     self.menuTableView.estimatedRowHeight = 16;
     self.menuTableView.estimatedSectionFooterHeight = 0;
     self.menuTableView.estimatedSectionHeaderHeight = 0;
-    [self.menuTableView registerNib:[UINib nibWithNibName:XXMenuCell bundle:nil]
-         forCellReuseIdentifier:XXMenuCell];
+    [self.menuTableView registerNib:[UINib nibWithNibName:XIB_MenuCell bundle:SDK_BUNDLE]
+         forCellReuseIdentifier:XIB_MenuCell];
     
     
 
@@ -75,15 +72,18 @@
     }];
     [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [self.mwWebView releaseAll];
+        [self.mwWebView releaseAll_MMMethodMMM];
         [self dismissViewControllerAnimated:NO completion:^{
             
         }];
     }];
     
-    ExpoModel *em = self.expoModelArry[0];
-    em.isClick = YES;
-    [self updateUI:0];
+    if(self.expoModelArry && self.expoModelArry.count > 0){
+        ExpoModel *em = self.expoModelArry[0];
+        em.isClick = YES;
+        [self updateUI_MMMethodMMM:0];
+    }
+    
     
 }
 
@@ -100,7 +100,7 @@
     
     NSLog(@"indexPath.section:%ld  indexPath.row:%ld", indexPath.section, indexPath.row);
     ExpoModel *mExpoModel = self.expoModelArry[indexPath.row];
-    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:XXMenuCell];
+    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:XIB_MenuCell];
     
     if(mExpoModel.isClick){
         [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_bg")];
@@ -120,10 +120,10 @@
     
 //    ExpoModel *mExpoModel = self.expoModelArry[indexPath.row];
     
-    [self updateUI:indexPath.row];
+    [self updateUI_MMMethodMMM:indexPath.row];
 }
 
-- (void)updateUI:(NSInteger)index {
+- (void)updateUI_MMMethodMMM:(NSInteger)index {
     
     ExpoModel *em = self.expoModelArry[index];
     
@@ -134,7 +134,7 @@
     [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
     
     
-    [self.mwWebView loadRequest:em.contentUrl];
+    [self.mwWebView loadRequest_MMMethodMMM:em.contentUrl];
     em.isContentLoad = YES;
     
     for (int i = 0; i < self.expoModelArry.count; i++) {

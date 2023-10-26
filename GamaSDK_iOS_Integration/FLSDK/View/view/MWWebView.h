@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SafariServices/SafariServices.h>
 #import "SdkHeader.h"
+#import "SDKRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
 
-- (void)loadRequest:(NSString *)mUrl;
-- (void)releaseAll;
+- (void)loadRequest_MMMethodMMM:(NSString *)mUrl;
+- (void)releaseAll_MMMethodMMM;
 
 @end
 

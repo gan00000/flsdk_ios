@@ -25,10 +25,10 @@
 @implementation ExposureController
 
 
-- (void)closeBtAction{
+- (void)closeBtAction_MMMethodMMM{
     
     for (MWWebView *mMWWebView in self.mWebViewArry) {
-        [mMWWebView releaseAll];
+        [mMWWebView releaseAll_MMMethodMMM];
     }
     [self dismissViewControllerAnimated:NO completion:^{
         
@@ -80,7 +80,7 @@
     }];
     [self.closeIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [self closeBtAction];
+        [self closeBtAction_MMMethodMMM];
     }];
     
     
@@ -121,7 +121,7 @@
 //            [firstWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.expoModelArry[0].contentUrl]]];
 //        }
         ExpoModel *em = self.expoModelArry[self.currentIndex];
-        [self updateUI:em];
+        [self updateUI_MMMethodMMM:em];
     }
    
 }
@@ -154,7 +154,7 @@
                                  animated:YES];
         
         ExpoModel *em = self.expoModelArry[self.currentIndex];
-        [self updateUI:em];
+        [self updateUI_MMMethodMMM:em];
         
     }
     
@@ -164,7 +164,7 @@
 }
 
 
-- (void)updateUI:(ExpoModel *)em {
+- (void)updateUI_MMMethodMMM:(ExpoModel *)em {
     
     self.titleLabel.text = em.title;
     [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
@@ -176,7 +176,7 @@
         return;
     }
     MWWebView *indexWebView = self.mWebViewArry[self.currentIndex];
-    [indexWebView loadRequest:em.contentUrl];
+    [indexWebView loadRequest_MMMethodMMM:em.contentUrl];
     em.isContentLoad = YES;
 }
 

@@ -487,6 +487,10 @@
 #define checkPayChannelWithSuccessBlock_MMMethodMMM     checkPayChannelWithSuccessBlock
 #define startMySdkPay_MMMethodMMM     startMySdkPay
 #define startIapPay_MMMethodMMM     startIapPay
-
+#define updateUI_MMMethodMMM        updateUI
+#define releaseAll_MMMethodMMM      releaseAll
+#define getPlatUrl_MMMethodMMM      getPlatUrl
+#define checkActSwitchWithSuccessBlock_MMMethodMMM      checkActSwitchWithSuccessBlock
+#define getActConfigWithSuccessBlock_MMMethodMMM        getActConfigWithSuccessBlock
 
 #endif  /* codeObfuscation_h */

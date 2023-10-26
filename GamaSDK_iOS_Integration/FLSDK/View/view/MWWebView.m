@@ -37,7 +37,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         SDK_LOG(@"initWithFrame");
-        [self addView];
+        [self addView_MMMethodMMM];
     }
     return self;
 }
@@ -47,7 +47,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         SDK_LOG(@"initWithCoder");
-        [self addView];
+        [self addView_MMMethodMMM];
     }
     return self;
 }
@@ -57,17 +57,18 @@
     self = [super init];
     if (self) {
         SDK_LOG(@"init");
-        [self addView];
+        [self addView_MMMethodMMM];
     }
     return self;
 }
 
 
--(void)loadRequest:(NSString *)mUrl{
+-(void)loadRequest_MMMethodMMM:(NSString *)mUrl{
+    mUrl = [SDKRequest createSdkUrl_MMMethodMMM:mUrl otherDic_MMMethodMMM:nil];
     [self.wkwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:mUrl]]];
 }
 
--(void)addView{
+-(void)addView_MMMethodMMM{
     
     self.backgroundView = [[UIView alloc] init];
     [self addSubview:self.backgroundView];
@@ -263,7 +264,7 @@
 }
 
 
-- (void)releaseAll {
+- (void)releaseAll_MMMethodMMM {
     SDK_LOG(@"MWWebView releaseAll");
     @try {
         

@@ -7,6 +7,7 @@
  并且提供一个接口“getStringForKey：”方法，供其他需要的地方获取。*/
 
 #define SDK_DEFAULT_BUNDLE_NAME  [[ResReader reader_MMMethodMMM] getSdkBundleName_MMMethodMMM]
+#define SDK_BUNDLE  [[ResReader reader_MMMethodMMM] getMySdkBundle_MMMethodMMM]
 
 #import <Foundation/Foundation.h>
 
@@ -62,4 +63,7 @@
 - (NSString *)getSdkEncryptKey_MMMethodMMM;
 
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent;
+
+- (NSBundle *)getMySdkBundle_MMMethodMMM;
+
 @end

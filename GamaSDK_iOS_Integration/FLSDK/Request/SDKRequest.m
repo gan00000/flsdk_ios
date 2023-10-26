@@ -1084,10 +1084,20 @@
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
         
         NSDictionary *responseDict = responseData;
-        SDK_LOG(@"sdk config:%@",responseDict);
-        NSArray<ExpoModel *> *expoModeArr = [NSArray yy_modelArrayWithClass:[ExpoModel class] json:responseDict];
-        if (successBlock) {
-            successBlock(expoModeArr);
+        SDK_LOG(@"market/articles:%@",responseDict);
+        BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
+        if(responceModel && responceModel.isRequestSuccess_MMMethodMMM){
+            NSArray<ExpoModel *> *expoModeArr = [NSArray yy_modelArrayWithClass:[ExpoModel class] json:responseDict[wwwww_tag_wwwww_data]];
+            if(expoModeArr && expoModeArr.count > 0){
+                if (successBlock) {
+                    successBlock(expoModeArr);
+                }
+                return;
+            }
+            
+        }
+        if (errorBlock) {
+            errorBlock(nil);
         }
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
