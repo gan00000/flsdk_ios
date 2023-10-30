@@ -57,6 +57,7 @@
 		03381BE92AEF5A00008F8B57 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9729D9900200890B3B /* nanopb.xcframework */; };
 		03381BEB2AEF5A05008F8B57 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9229D9900200890B3B /* GTMSessionFetcher.xcframework */; };
 		03381BEF2AEF8CC8008F8B57 /* wxsdk-vn2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 03381BEE2AEF8CC8008F8B57 /* wxsdk-vn2023.json */; };
+		03381BF02AEFACB5008F8B57 /* 82c5e764d725666c38d50ea8abd5372f.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03381BEC2AEF8A8B008F8B57 /* 82c5e764d725666c38d50ea8abd5372f.txt */; };
 		033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */; };
 		033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */; };
 		033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */; };
@@ -1912,6 +1913,7 @@
 				03381BEF2AEF8CC8008F8B57 /* wxsdk-vn2023.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
+				03381BF02AEFACB5008F8B57 /* 82c5e764d725666c38d50ea8abd5372f.txt in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
 				039E6EDC29D9900300890B3B /* README.md in Resources */,
 				03C91BB22A7A415000289870 /* adjust-info-vnmxwios.plist in Resources */,
