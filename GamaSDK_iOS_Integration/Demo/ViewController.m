@@ -83,12 +83,13 @@
     
     _tData = [[NSMutableData alloc] init];
     
-    [self.view setBackgroundColor:[UIColor clearColor]];
+//    [self.view setBackgroundColor:[UIColor grayColor]];
     
     self.buttonsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     _buttonsTable.delegate = self;
     _buttonsTable.dataSource = self;
     [self.view addSubview:_buttonsTable];
+//    [_buttonsTable setBackgroundColor:[UIColor grayColor]];
     
     NSLog(@"getBundleVersion=%@", [SUtil getBundleVersion_MMMethodMMM]? : @"");
     NSLog(@"getBundleShortVersionString=%@", [SUtil getBundleShortVersionString_MMMethodMMM]? : @"");
@@ -111,6 +112,7 @@
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indetity];
+        cell.backgroundColor = [UIColor grayColor];
     }
     
     cell.textLabel.text = [self.valueArray objectAtIndex:indexPath.row];

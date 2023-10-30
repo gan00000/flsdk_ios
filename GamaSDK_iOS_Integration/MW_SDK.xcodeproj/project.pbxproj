@@ -310,13 +310,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		033775262AEA67BD00D19EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0337751E2AEA675D00D19EF5;
-			remoteInfo = MWRES;
-		};
 		03CA731929D569B400098979 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -1839,7 +1832,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				033775272AEA67BD00D19EF5 /* PBXTargetDependency */,
 				03CA731A29D569B400098979 /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_VN;
@@ -2108,11 +2100,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		033775272AEA67BD00D19EF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0337751E2AEA675D00D19EF5 /* MWRES */;
-			targetProxy = 033775262AEA67BD00D19EF5 /* PBXContainerItemProxy */;
-		};
 		03CA731A29D569B400098979 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 03CA721A29D5698400098979 /* MWSDK_VN */;
@@ -2393,7 +2380,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SDK_DEMO_VN-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				INFOPLIST_KEY_CFBundleDisplayName = "mxwvn demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2459,7 +2446,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SDK_DEMO_VN-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				INFOPLIST_KEY_CFBundleDisplayName = "mxwvn demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
