@@ -490,5 +490,6 @@
 #define getPlatUrl_MMMethodMMM          reclaimStick
 #define checkActSwitchWithSuccessBlock_MMMethodMMM          advocateDisplay
 #define getActConfigWithSuccessBlock_MMMethodMMM          enunciateScissors
+#define isFirstLoad_MMMethodMMM     isFirstLoad
 
 #endif  /* codeObfuscation_h */
