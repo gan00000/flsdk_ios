@@ -56,6 +56,7 @@
 		03381BE72AEF59FC008F8B57 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9829D9900200890B3B /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		03381BE92AEF5A00008F8B57 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9729D9900200890B3B /* nanopb.xcframework */; };
 		03381BEB2AEF5A05008F8B57 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9229D9900200890B3B /* GTMSessionFetcher.xcframework */; };
+		03381BEF2AEF8CC8008F8B57 /* wxsdk-vn2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 03381BEE2AEF8CC8008F8B57 /* wxsdk-vn2023.json */; };
 		033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */; };
 		033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */; };
 		033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */; };
@@ -75,7 +76,6 @@
 		033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32DF29D56AEE00AE9F96 /* BindPhoneViewV2.h */; };
 		033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32E029D56AEE00AE9F96 /* MainHomeViewV2.h */; };
 		033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */; };
-		033B32FB29D56E3200AE9F96 /* com_wanxi_mxwvn.json in Resources */ = {isa = PBXBuildFile; fileRef = 033B32F729D56E3200AE9F96 /* com_wanxi_mxwvn.json */; };
 		033B32FC29D5767100AE9F96 /* MWSDK_VN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CA72B729D5698400098979 /* MWSDK_VN.framework */; };
 		033B331029D5C4BC00AE9F96 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B32FE29D5C4BC00AE9F96 /* MyTextFiled.h */; };
 		033B331129D5C4BC00AE9F96 /* LoginTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033B32FF29D5C4BC00AE9F96 /* LoginTitleView.m */; };
@@ -402,6 +402,8 @@
 		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
 		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
+		03381BEC2AEF8A8B008F8B57 /* 82c5e764d725666c38d50ea8abd5372f.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 82c5e764d725666c38d50ea8abd5372f.txt; sourceTree = "<group>"; };
+		03381BEE2AEF8CC8008F8B57 /* wxsdk-vn2023.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wxsdk-vn2023.json"; sourceTree = "<group>"; };
 		033B32CF29D56AEE00AE9F96 /* LoginWithRegViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithRegViewV2.m; sourceTree = "<group>"; };
 		033B32D029D56AEE00AE9F96 /* FindPasswordViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewV2.h; sourceTree = "<group>"; };
 		033B32D129D56AEE00AE9F96 /* RegisterAccountViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountViewV2.h; sourceTree = "<group>"; };
@@ -1028,6 +1030,8 @@
 		033B32F329D56E3200AE9F96 /* VN */ = {
 			isa = PBXGroup;
 			children = (
+				03381BEE2AEF8CC8008F8B57 /* wxsdk-vn2023.json */,
+				03381BEC2AEF8A8B008F8B57 /* 82c5e764d725666c38d50ea8abd5372f.txt */,
 				03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */,
 				033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */,
 				033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */,
@@ -1905,7 +1909,7 @@
 			files = (
 				033775282AEA6CE100D19EF5 /* SDKResourcesVN.bundle in Resources */,
 				039E6ED729D9900300890B3B /* NOTICES in Resources */,
-				033B32FB29D56E3200AE9F96 /* com_wanxi_mxwvn.json in Resources */,
+				03381BEF2AEF8CC8008F8B57 /* wxsdk-vn2023.json in Resources */,
 				033B32FA29D56E3200AE9F96 /* GoogleService-Info.plist in Resources */,
 				039E6F2229D9900300890B3B /* GoogleSignIn.bundle in Resources */,
 				03CA72CA29D5699600098979 /* Images.xcassets in Resources */,
