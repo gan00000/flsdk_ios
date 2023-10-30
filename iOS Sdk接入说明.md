@@ -446,7 +446,12 @@
 * <h3 id="15">客服接口</h3>
 
  ```
- - (void)openCs;
+ - (void)openCsWithRoleId:(NSString *)roleId
+                 roleName:(NSString *)roleName
+                roleLevel:(NSString *)roleLevel
+             roleVipLevel:(NSString *)roleVipLevel
+               serverCode:(NSString *)serverCode
+              serverName:(NSString *)serverName;
              
  ```
  

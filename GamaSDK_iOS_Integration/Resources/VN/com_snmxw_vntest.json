@@ -18,6 +18,6 @@
     "terms_service_url" : "https://member.tthplay.com/sdk/agreement/%@_agreement.html",
     "adjust_app_token" : "50vj3536d1j4",
     "sdk_other_ppp_url" : "https://pay.tthplay.com/api/web/vn-payment.page",
-    "sdk_social_banner_url"  :   "https://member.kodaduck.com/sdk/social/%@/index.html"
+    "sdk_social_banner_url"  :   "https://member.tthplay.com/sdk/social/%@/index.html"
     
 }

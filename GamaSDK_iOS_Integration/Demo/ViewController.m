@@ -9,6 +9,9 @@
 
 #import "AlertUtil.h"
 
+#import "ExposureController.h"
+#import "ExposureHorControllerViewController.h"
+
 #import <UserNotifications/UserNotifications.h>
 
 @interface ViewController () <UITextFieldDelegate,NSURLConnectionDelegate, NSURLSessionDelegate>
@@ -83,9 +86,10 @@
                           @"客服",
                           @"本地定时通知",
                           @"本地定期通知",
+                            @"显示社群banner",
                           ];
     
-    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11];
+    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13];
 
     
     // iOS 获取设备当前语言的代码
@@ -198,7 +202,7 @@
 //            com.fzzh.tw.1usd
 //            com.fzzh.tw.2usd
             
-            NSString *aProductID = @"com.miaoou.6jin";
+            NSString *aProductID = @"com_wanxi_mxwvn_4p";
             [self pay:aProductID];
         }
             break;
@@ -207,9 +211,7 @@
              *********************************************/
         case 3:
         {
-//            [[FLSDK share] pay:(SDK_PAY_TYPE_WEB) productId:@"" cpOrderId:@"" extra:@""];
-            NSString *aProductID = @"com.miaoou.30jin";
-            [self pay:aProductID];
+            [[MWSDK share] showActView];
         }
             break;
         case 4:
@@ -307,6 +309,9 @@
             break;
         case 11:{
             [self addLocalNotificationForDateComponents];
+        }
+        case 13:{
+            [[MWSDK share] showSocialView];
         }
             break;
 
