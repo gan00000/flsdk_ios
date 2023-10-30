@@ -7,7 +7,7 @@
 //
 
 #import "AdjustDelegate.h"
-#import <AdjustSdk/Adjust.h>
+//#import <AdjustSdk/Adjust.h>
 #import "SdkHeader.h"
 
 @implementation AdjustDelegate
@@ -28,6 +28,7 @@
 
 - (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
+    /**
     NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
         SDK_LOG(@"adjustAppToken is empty");
@@ -41,7 +42,7 @@
     [adjustConfig setLogLevel:ADJLogLevelVerbose];
     [Adjust appDidLaunch:adjustConfig];
     SDK_LOG(@"adjustAppToken init finish");
-    
+     */
 }
 
 - (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName{
@@ -55,6 +56,7 @@
 
 - (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> *)eventValues revenue:(double)revenue transactionId:(NSString *)transactionId
 {
+    /**
     NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
         SDK_LOG(@"adjustAppToken is empty");
@@ -103,6 +105,8 @@
     
     [Adjust trackEvent:event];
     SDK_LOG(@"adjust track event finish, eventName=%@",eventName);
+     
+     */
 }
 
 @end
