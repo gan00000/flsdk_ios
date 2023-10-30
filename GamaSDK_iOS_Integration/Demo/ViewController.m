@@ -56,23 +56,6 @@
     /*********************************************
      SDK测试项目
      ***********************************************/
-//    self.btnsDic = @{@"0": @"登入",
-//                     @"12": @"切换账号",
-//                     @"1": @"保存/更新角色信息（进入游戏得到角色信息后调用）",
-//                     @"2": @"充值com.fzzh.tw.1usd",
-//                     @"3": @"充值com.fzzh.tw.2usd",
-//                     @"4": @"事件追踪",
-//                     @"5": @"fb分享url",
-//                     @"6": @"显示手机绑定页面",
-//                     @"7": @"显示账号升级页面",
-//                     @"8": @"line分享",
-//                     @"9": @"客服",
-//                     @"10": @"本地定时通知",
-//                     @"11": @"本地定期通知",
-//    };
-//
-//    self.keyArray = self.btnsDic.allKeys;
-//    self.valueArray = self.btnsDic.allValues;
     self.valueArray = @[@"登入",
                         @"切换账号",
                           @"保存/更新角色信息（进入游戏得到角色信息后调用）",
@@ -86,10 +69,11 @@
                           @"客服",
                           @"本地定时通知",
                           @"本地定期通知",
-                            @"显示社群banner",
+                        @"显示社群banner",
+                        @"打开活动页弹窗",
                           ];
     
-    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13];
+    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13, @14];
 
     
     // iOS 获取设备当前语言的代码
@@ -154,7 +138,8 @@
                 BOOL isBindPhone = loginData.isBindPhone;//是否绑定手机
                 NSString *telephone = loginData.telephone;//绑定的手机号码
                 
-                //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
+                [[MWSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+                
                 [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
             }];
@@ -211,7 +196,7 @@
              *********************************************/
         case 3:
         {
-            [[MWSDK share] showActView];
+            
         }
             break;
         case 4:
@@ -310,9 +295,18 @@
         case 11:{
             [self addLocalNotificationForDateComponents];
         }
+            break;
         case 13:{
             [[MWSDK share] showSocialView];
         }
+            break;
+        case 14:
+        {
+            [[MWSDK share] showActView];
+        }
+            break;
+            
+        default:
             break;
 
        
