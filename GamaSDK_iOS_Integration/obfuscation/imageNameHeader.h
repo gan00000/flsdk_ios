@@ -57,9 +57,9 @@
 
 #define icon_close_social   @"put_coriative_img"
 
-#define XIB_ExposureController   @"ExposureController"
-#define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
-#define XIB_MenuCell   @"MenuCell"
+#define XIB_ExposureController   @"MissfoldPitcourseardController"
+#define XIB_ExposureHorControllerViewController   @"WeightObsressController"
+#define XIB_MenuCell   @"AllimproveicalMemberCell"
 
 
 #endif /* imageNameHeader_h */

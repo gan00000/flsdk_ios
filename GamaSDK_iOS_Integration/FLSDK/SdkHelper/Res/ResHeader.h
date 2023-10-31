@@ -1,11 +1,11 @@
 
-#import "SUtil.h"
-#import "AlertUtil.h"
-#import "ResReader.h"
-#import "NSString+URLEncoding.h"
+#import "SchemOnymen.h"
+#import "HalioTractless.h"
+#import "InsteadEnergyo.h"
+#import "NSString+MercOkeur.h"
 
 
-#define SDKRES    [ResReader reader_MMMethodMMM]
+#define SDKRES    [InsteadEnergyo reader_MMMethodMMM]
 #define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
 #define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
 #define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]

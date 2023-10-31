@@ -1,12 +1,12 @@
 
 
 #import <Foundation/Foundation.h>
-#import "BJBaseResponceModel.h"
+#import "SheCraniality.h"
 #import "AccountModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginResponse : BJBaseResponceModel
+@interface LoginResponse : SheCraniality
 
 @property (nonatomic, strong) AccountModel *data;
 @end
