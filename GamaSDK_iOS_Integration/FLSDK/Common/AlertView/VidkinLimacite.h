@@ -19,4 +19,5 @@ typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 +(VidkinLimacite *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler;
 
 
+- (NSMutableDictionary *)pude15202Veh15203;//insert method def
 @end
