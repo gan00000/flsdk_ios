@@ -492,5 +492,6 @@
 #define getPlatUrl_MMMethodMMM      getPlatUrl
 #define checkActSwitchWithSuccessBlock_MMMethodMMM      checkActSwitchWithSuccessBlock
 #define getActConfigWithSuccessBlock_MMMethodMMM        getActConfigWithSuccessBlock
+#define isFirstLoad_MMMethodMMM     isFirstLoad
 
 #endif  /* codeObfuscation_h */

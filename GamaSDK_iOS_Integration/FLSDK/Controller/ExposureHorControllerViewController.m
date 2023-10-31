@@ -82,7 +82,7 @@
     if(self.expoModelArry && self.expoModelArry.count > 0){
         ExpoModel *em = self.expoModelArry[0];
         em.isClick = YES;
-        [self updateUI_MMMethodMMM:0];
+        [self updateUI_MMMethodMMM:0 isFirstLoad_MMMethodMMM:YES];
     }
     
     
@@ -121,12 +121,16 @@
     
 //    ExpoModel *mExpoModel = self.expoModelArry[indexPath.row];
     
-    [self updateUI_MMMethodMMM:indexPath.row];
+    [self updateUI_MMMethodMMM:indexPath.row isFirstLoad_MMMethodMMM:NO];
 }
 
-- (void)updateUI_MMMethodMMM:(NSInteger)index {
+- (void)updateUI_MMMethodMMM:(NSInteger)index isFirstLoad_MMMethodMMM:(BOOL)isFirstLoad{
     
     ExpoModel *em = self.expoModelArry[index];
+    
+    if(!isFirstLoad && em.isClick){
+        return;
+    }
     
     self.titleLabel.text = em.title;
     [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
