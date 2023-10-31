@@ -17,6 +17,8 @@
 14. [显示SDK内部升级账号页面](#152)
 15. [客服接口](#15)
 16. [添加本地推送接口](#16)
+17. [打开活动弹窗页面](#17)
+18. [打开社群(banner)展示页面](#18)
 
 ----------------
 
@@ -487,6 +489,20 @@
     UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
     [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
+             
+ ```
+ 
+* <h3 id="17">打开活动弹窗页面</h3>
+
+ ```
+- (void)showActView;
+             
+ ```
+ 
+* <h3 id="18">打开社群(banner)展示页面</h3>
+
+ ```
+-(void)showSocialView;
              
  ```
 
