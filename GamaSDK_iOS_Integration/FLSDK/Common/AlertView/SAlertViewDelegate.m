@@ -1,10 +1,4 @@
-//
-//
-//
-//
-//
-//
-//
+
 
 #import "SAlertViewDelegate.h"
 
@@ -13,7 +7,6 @@
 @synthesize handler;
 
 
-//创建一个代理对象，设置回调方法
 +(SAlertViewDelegate *)creatDelegateWithBack_MMMethodMMM:(SAlertViewHandler)oneHandler
 {
     SAlertViewDelegate * alertViewDelegate=[[SAlertViewDelegate alloc]init];
@@ -21,7 +14,6 @@
     return alertViewDelegate;
 }
 
-//用户点击了按钮以后
 -(void)alertView_MMMethodMMM:(UIAlertView *)alertView clickedButtonAtIndex_MMMethodMMM:(NSInteger)buttonIndex
 {
     if (handler)

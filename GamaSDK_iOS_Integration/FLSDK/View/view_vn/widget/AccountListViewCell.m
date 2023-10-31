@@ -1,10 +1,4 @@
-//
-//  AccountListViewCell.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/13.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "AccountListViewCell.h"
 #import "SdkHeader.h"
@@ -13,7 +7,7 @@
 @implementation AccountListViewCell
 
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{ //system_method
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{ 
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
        if (self) {
@@ -33,16 +27,13 @@
         make.top.mas_equalTo(self.contentView).offset(2);
         make.bottom.mas_equalTo(self.contentView).offset(-2);
         make.width.mas_equalTo(delContentView.mas_height);
-       // make.centerY.mas_equalTo(self);
+       
     }];
     
     self.deleteAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:delete_icon highlightedImage_MMMethodMMM:delete_icon tag_MMMethodMMM:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick_MMMethodMMM:) target_MMMethodMMM:self];
     self.deleteAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [delContentView addSubview:self.deleteAccountBtn];
     [self.deleteAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.trailing.equalTo(self.contentView.mas_trailing).mas_offset(VW(-10));
-//        make.top.mas_equalTo(self.contentView).offset(2);
-//        make.bottom.mas_equalTo(self.contentView).offset(-2);
         make.width.height.mas_equalTo(VW(14));
         make.center.mas_equalTo(delContentView);
     }];
@@ -55,7 +46,7 @@
         
     }];
     
-    //icon
+    
    
     [self.contentView addSubview:self.iconImageView];
     [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,9 +60,7 @@
     self.accountUILabel = [[UILabel alloc] init];
     self.accountUILabel.font = [UIFont systemFontOfSize:FS(12)];
     self.accountUILabel.text = @"";
-//    self.accountUILabel.textAlignment = NSTextAlignmentCenter;
-//    self.accountUILabel.backgroundColor = [UIColor clearColor]xX;
-    self.accountUILabel.numberOfLines = 1; //0为多行
+    self.accountUILabel.numberOfLines = 1; 
     self.accountUILabel.textColor = [UIColor blackColor];
     
     [self.contentView addSubview:self.accountUILabel];
@@ -100,10 +89,10 @@
     }
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated { //system_method
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated { 
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+    
 }
 
 @end

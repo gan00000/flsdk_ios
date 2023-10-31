@@ -1,10 +1,4 @@
-//
-//  ExposureController.h
-//  SDK_DEMO_KR
-//
-//  Created by Gan Yuanrong on 2023/10/11.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
@@ -24,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
-//@property (weak, nonatomic) IBOutlet WKWebView *wkWebView;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 

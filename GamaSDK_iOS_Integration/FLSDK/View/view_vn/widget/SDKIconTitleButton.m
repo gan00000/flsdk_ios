@@ -1,10 +1,4 @@
-//
-//  SDKIconTitleButton.m
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
 
 #import "SDKIconTitleButton.h"
 #import "Masonry.h"
@@ -23,7 +17,7 @@
     if (self) {
         if(type == SDK_ICON_TITLE_BUTTON_TYPE_FB || type == SDK_ICON_TITLE_BUTTON_TYPE_BIND_FB)
         {
-            //self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_3D5C9A];
+            
             self.layer.contents = (id)(GetImage(wwwww_tag_wwwww_sdk_btn_fb_bg_png).CGImage);
         }else{
              self.layer.contents = (id)(GetImage(wwwww_tag_wwwww_sdk_btn_bg_png).CGImage);
@@ -96,8 +90,8 @@
             make.trailing.mas_equalTo(self);
         }];
               
-        //账号
-        UIButton *mButton = [UIUtil initBtnWithTitleText_MMMethodMMM:nil fontSize_MMMethodMMM:14 textColor_MMMethodMMM:nil tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];//[SdkUtil initBtnWithTag:tag selector:selector target_MMMethodMMM:target];
+        
+        UIButton *mButton = [UIUtil initBtnWithTitleText_MMMethodMMM:nil fontSize_MMMethodMMM:14 textColor_MMMethodMMM:nil tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
         mButton.backgroundColor = [UIColor clearColor];
         [self addSubview:mButton];
           

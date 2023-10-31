@@ -1,10 +1,4 @@
-//
-//  BJBaseHTTPEngine.m
-//  BenjiaPro
-//
-//  Created by Marco on 2017/5/23.
-//  Copyright © 2017年 Benjia. All rights reserved.
-//
+
 
 #import "BJBaseHTTPEngine.h"
 #import "AFNetworking.h"
@@ -92,23 +86,13 @@
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
-       // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{@"Content-Type" : @"application/json", @"charset":@"UTF-8"}
+       
         [self.sessionManager POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
           
-//            BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseObject];
-//            if (mBJBaseResponceModel && mBJBaseResponceModel.code != 1000) {
-//
-//                if (errorBlock) {
-//                    errorBlock(task, error);
-//                }
-//            }else{
-//
-//
-//            }
             
             if (successBlock) {
                 successBlock(task, responseObject);
