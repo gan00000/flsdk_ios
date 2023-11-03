@@ -114,8 +114,19 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	
+	SDK权限示例，需要翻译为对应的本地语言
 	<key>NSUserTrackingUsageDescription</key>
-	<string>我們需要使用您的廣告追蹤許可權來優化您的使用體驗</string>  这句只是示例，需要翻译为对应的本地语言
+	<string>我們需要使用您的廣告追蹤許可權來優化您的使用體驗</string>
+	<key>NSCameraUsageDescription</key>
+	<string>为了给您提供更好的客户服务，App需要获取您相机的访问权限</string>
+	<key>NSMicrophoneUsageDescription</key>
+   <string>为了给您提供更好的客户服务，App需要获取您麦克风的访问权限</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>为了给您提供更好的客户服务，App需要获取您照片的访问权限</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>为了给您提供更好的客户服务，App需要获取您相冊的访问权限</string>
+
 	
 	```
 
