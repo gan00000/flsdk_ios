@@ -821,6 +821,8 @@
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
+    
     webVC.isShowDefulatCloseBtn = YES;
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
@@ -848,7 +850,7 @@
         return;
     }
     if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https:itunes.apple.com/app/line/id443904275"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/line/id443904275"]];
         return;
     }
     

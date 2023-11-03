@@ -107,7 +107,7 @@
     SDK_LOG(@"MWWebViewController viewDidLoad");
     self.backgroundView = [[UIView alloc] init];
     [self.view addSubview:self.backgroundView];
-    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+    
     [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         if (@available(iOS 11.0, *)) {
@@ -125,6 +125,7 @@
     //=============顶部标题=========
     
     if(self.isShowTitle){
+        self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
         
         self.headerView = [[UIView alloc] init];
         self.headerView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
