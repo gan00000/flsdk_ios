@@ -308,6 +308,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03326D672AFCCBD200279A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A53F38B07ED211EEAE120E90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A542384C7ED211EE8CE70E90;
+			remoteInfo = MWRES;
+		};
 		A53F35517ED211EEA2150E90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A53F38B07ED211EEAE120E90 /* Project object */;
@@ -1801,6 +1808,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				03326D682AFCCBD200279A37 /* PBXTargetDependency */,
 				A54262617ED211EE810B0E90 /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_KR;
@@ -2070,6 +2078,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		03326D682AFCCBD200279A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A542384C7ED211EE8CE70E90 /* MWRES */;
+			targetProxy = 03326D672AFCCBD200279A37 /* PBXContainerItemProxy */;
+		};
 		A54262617ED211EE810B0E90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A53F3C5C7ED211EE8C2E0E90 /* MWSDK_KR */;
