@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initView_MMMethodMMM;
 
+- (int)urgably16888Centricing16889:(NSMutableDictionary *)urgably16888_1;
 @end
 
 NS_ASSUME_NONNULL_END

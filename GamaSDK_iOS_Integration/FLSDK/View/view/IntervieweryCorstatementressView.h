@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property(nonatomic, weak) id<LoginViewDelegate> delegate;
+@property (nonatomic, strong) NSMutableArray *theirivity28220Ecad28221;
+
+@property (nonatomic, assign) NSInteger sipibaseen28222Foundize28223;
+
+@property (nonatomic, strong) NSString *eatfication28224Pinnite28225;
+
 
 
 @property(nonatomic) CURRENT_PAGE_TYPE fromPage;
@@ -21,10 +27,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)initData_MMMethodMMM;
 @property(nonatomic,strong)NSMutableArray *drawBlockArray;
+@property (nonatomic, strong) NSData *semi28226Pepsconsumersome28227;
+
 
 - (void)addDrawRectBolck:(CCallBack)callback;
 
 -(void)removeFromGameView;
+- (long)enteraneity28228Ungulitive28229:( NSMutableArray *)enteraneity28228_1;
 @end
 
 NS_ASSUME_NONNULL_END

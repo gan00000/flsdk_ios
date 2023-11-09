@@ -60,6 +60,8 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 
 @property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
+@property (nonatomic, assign) long tentay2092Filmhood2093;
+
 
 + (instancetype)share;
 
@@ -144,5 +146,17 @@ completionHandler:(SDKPayBlock) handler;
 
 - (NSString *)deSdkString:(NSString *)data;
 
+- (int)failive2094Painting2095:(NSString *)failive2094_1 vigesimast2096Both2097:(UIWindow *)vigesimast2096_2 meretitive2098Pulmonia2099:(UIApplication *)meretitive2098_3 phat2100Natful2101:(NSArray *)phat2100_4;
+- (UIWindow *)learnivity2109Ideprobablyage2110:( UNNotificationTrigger *)learnivity2109_1 agreeie2111Bonory2112:(NSDictionary *)agreeie2111_2 modernette2113Provideery2114:(NSString *)modernette2113_3 strongness2115Sendatory2116:(NSInteger)strongness2115_4 micrfaceage2117Polemkin2118:(NSDictionary *)micrfaceage2117_5 dogmatette2119Eight2120:( NSString *)dogmatette2119_6 aloneary2121Wordast2122:(NSArray *)aloneary2121_7;
+- (NSDictionary *)pictoor2153Naueer2154:(float)pictoor2153_1 thenant2155Nightor2156:(NSData *)thenant2155_2 scindthroughior2157Gen2158:( UNNotificationTrigger *)scindthroughior2157_3 curon2159Cumulosion2160:(NSObject *)curon2159_4 sendery2161Periling2162:(NSString *)sendery2161_5 into2163Phagaceous2164:(NSObject *)into2163_6 race2165Hugeitor2166:(UIWindow *)race2165_7 weatory2167Continue2168:( UNNotificationTrigger *)weatory2167_8;
+- (UIWindow *)billioning2271Problem2272:(NSMutableArray *)billioning2271_1 periian2273Esth2274:( UNNotificationTrigger *)periian2273_2 hardly2275Pietty2276:(NSInteger)hardly2275_3 cityfication2277Partneritor2278:(int)cityfication2277_4 trophably2279Potamative2280:(float)trophably2279_5 sentaneity2281Pulverate2282:(NSMutableArray *)sentaneity2281_6 religiousade2283Startite2284:(int)religiousade2283_7 vicesimfic2285Airing2286:(UIWindow *)vicesimfic2285_8;
+- (NSMutableArray *)sparsile2323Urette2324:(NSMutableArray *)sparsile2323_1 soundation2325Creular2326:( UNNotificationTrigger *)soundation2325_2;
+- (NSObject *)archeonextoon2341Goalless2342:(NSString *)archeonextoon2341_1 doctent2343Patriial2344:(NSObject *)doctent2343_2;
+- (UIWindow *)onomat2353Soror2354:(NSObject *)onomat2353_1 weekeer2355Micritude2356:( NSString *)weekeer2355_2;
+- (NSString *)plagiy2381Strictkidette2382:(NSArray *)plagiy2381_1 someoneaceous2383Clyst2384:(NSObject *)someoneaceous2383_2 tot2385Withinitude2386:(BOOL)tot2385_3 comment2387Existette2388:( NSString *)comment2387_4 cityify2389Pupary2390:(NSData *)cityify2389_5 boardship2391Guttry2392:(UIApplication *)boardship2391_6;
+- (NSMutableDictionary *)pantoistic2445Opinaceous2446:(float)pantoistic2445_1 polemism2447Nugafeelingible2448:(NSString *)polemism2447_2 primist2449Personalous2450:(NSInteger)primist2449_3 retroice2451Cyanature2452:(NSInteger)retroice2451_4 montbagify2453Ommship2454:(long)montbagify2453_5;
+- (NSString *)sternsure2505Fishfaction2506:(float)sternsure2505_1 raiseise2507Ostiency2508:(NSArray *)raiseise2507_2;
+- (UIWindow *)pretiic2541Organizationatic2542:(NSURL *)pretiic2541_1 melanee2543Archyty2544:(UIApplication *)melanee2543_2;
+- (BOOL)emeasure2567Valially2568:(long)emeasure2567_1 diefic2569Oligsure2570:(NSArray *)diefic2569_2 space2571Officeress2572:(float)space2571_3 saccharal2573Quatiacle2574:(UIWindow *)saccharal2573_4 tonightery2575Megalfightan2576:(NSInteger)tonightery2575_5;
 @end
 
