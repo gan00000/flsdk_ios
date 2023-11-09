@@ -1,4 +1,5 @@
-{   "py_old_pwd"     :  "Mật mã cũ",
+{
+    "py_old_pwd"     :  "Mật mã cũ",
     "py_new_pwd"     :  "Mật mã mới",
     "py_phone"     :  "Điện thoại",
     "py_vfcode"     :  "Mã xác minh",
@@ -130,5 +131,7 @@
     "text_privacy_policy"  :  "Chính sách bảo mật",
     "text_personal_clause"  :  "Khế ước định hình hóa",
     "text_personal_clause_and_privacy_policy"  :  "Chính sách bảo mật&Khế ước định hình hóa",
-    "text_customer" :   "CS Center"
+    "text_customer" :   "CS Center",
+    "text_select_pay_channel"   :   "Chọn phương thức thanh toán",
+    "text_pay_pay"      :   "Nạp tiền"
 }

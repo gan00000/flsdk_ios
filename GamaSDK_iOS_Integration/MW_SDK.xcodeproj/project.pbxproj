@@ -296,7 +296,6 @@
 		0392B2D82A5BAAC300A3E2D6 /* MWSDK_KR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0392B2502A5BA8DC00A3E2D6 /* MWSDK_KR.framework */; };
 		0392B2DD2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */; };
 		0392B2DE2A5BAADA00A3E2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */; };
-		0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */; };
 		0392B2E22A5BB28300A3E2D6 /* AgeQuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392B2E02A5BB28300A3E2D6 /* AgeQuaView.m */; };
 		0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0392B2E12A5BB28300A3E2D6 /* AgeQuaView.h */; };
 		0392B2E52A5BED6E00A3E2D6 /* com_snmxw_vntest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */; };
@@ -460,7 +459,6 @@
 		0392B2D72A5BA9F600A3E2D6 /* SDK_DEMO_KR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_KR-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_KR-Info.plist"; sourceTree = "<absolute>"; };
 		0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesKR.bundle; sourceTree = "<group>"; };
 		0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
 		0392B2E02A5BB28300A3E2D6 /* AgeQuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeQuaView.m; sourceTree = "<group>"; };
 		0392B2E12A5BB28300A3E2D6 /* AgeQuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeQuaView.h; sourceTree = "<group>"; };
 		0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_snmxw_vntest.json; sourceTree = "<group>"; };
@@ -558,7 +556,6 @@
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		03C91BA62A7A377100289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
 		03C91BA72A7A377100289870 /* AdjustDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustDelegate.m; sourceTree = "<group>"; };
-		03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
 		03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "adjust-info-vnmxwios.plist"; sourceTree = "<group>"; };
 		03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_VN-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_VN-Info.plist"; sourceTree = "<absolute>"; };
 		03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaverDelegate.h; sourceTree = "<group>"; };
@@ -1083,7 +1080,6 @@
 				0392B2E42A5BED6E00A3E2D6 /* com_snmxw_vntest.json */,
 				0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */,
 				0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */,
-				0392B2DC2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json */,
 			);
 			path = KR;
 			sourceTree = "<group>";
@@ -1257,14 +1253,6 @@
 				03C91BA72A7A377100289870 /* AdjustDelegate.m */,
 			);
 			path = Adjust;
-			sourceTree = "<group>";
-		};
-		03C91BAD2A7A389700289870 /* AdjustSdk-4.33.6 */ = {
-			isa = PBXGroup;
-			children = (
-				03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */,
-			);
-			path = "AdjustSdk-4.33.6";
 			sourceTree = "<group>";
 		};
 		03D3029E2A6EADE700ED990B /* Naver */ = {
@@ -1583,7 +1571,6 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
-				03C91BAD2A7A389700289870 /* AdjustSdk-4.33.6 */,
 				03349EC72A700E42004ECF5E /* AF-v6.12.1 */,
 				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
@@ -1886,7 +1873,6 @@
 				0392B2812A5BA9F600A3E2D6 /* GoogleSignIn.bundle in Resources */,
 				0392B2822A5BA9F600A3E2D6 /* NOTICES in Resources */,
 				0392B2842A5BA9F600A3E2D6 /* README.md in Resources */,
-				0392B2DF2A5BAADA00A3E2D6 /* com_mwgame_sdkzycs.json in Resources */,
 				0392B2872A5BA9F600A3E2D6 /* Images.xcassets in Resources */,
 				0392B2DE2A5BAADA00A3E2D6 /* GoogleService-Info.plist in Resources */,
 			);
