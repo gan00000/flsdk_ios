@@ -2817,8 +2817,7 @@ switch (p_cret7887) {
 		//====insert my code end===  2023-10-31 15:39:03
 
     [self.view addSubview:self.backgroundView];
-    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
-
+    
 		//====insert my code start===  2023-10-31 15:39:03
 		{
 		
@@ -2975,7 +2974,8 @@ switch (X_cubiwise7954) {
     
     
     if(self.isShowTitle){
-        
+        self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+
         self.headerView = [[UIView alloc] init];
         self.headerView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
         [self.backgroundView addSubview:self.headerView];
