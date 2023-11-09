@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		03326D632AFCC68300279A37 /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = A53FD5177ED211EE91F50E90 /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03326D642AFCC96100279A37 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53712FA7ED211EE98C10E90 /* AppsFlyerLib.xcframework */; };
 		A53704237ED211EEBC3B0E90 /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53707F87ED211EEAEE30E90 /* NaverThirdPartyLogin.xcframework */; };
 		A5370BAE7ED211EEA7FE0E90 /* NaverThirdPartyLogin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A53707F87ED211EEAEE30E90 /* NaverThirdPartyLogin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5370F457ED211EE82BC0E90 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53712FA7ED211EE98C10E90 /* AppsFlyerLib.xcframework */; };
@@ -756,6 +757,7 @@
 				A537A4057ED211EE99B50E90 /* GTMAppAuth.xcframework in Frameworks */,
 				A53761577ED211EE8F360E90 /* FBSDKCoreKit.xcframework in Frameworks */,
 				A537CB1E7ED211EEB4410E90 /* FirebaseCoreInternal.xcframework in Frameworks */,
+				03326D642AFCC96100279A37 /* AppsFlyerLib.xcframework in Frameworks */,
 				A53777EE7ED211EEA1580E90 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
 				A537F5337ED211EE80470E90 /* GTMSessionFetcher.xcframework in Frameworks */,
 				A537B4597ED211EE9FC30E90 /* GoogleDataTransport.xcframework in Frameworks */,
