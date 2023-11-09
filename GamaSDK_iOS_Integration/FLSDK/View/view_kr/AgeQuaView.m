@@ -1,10 +1,4 @@
-//
-//  FindPasswordView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/14.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "AgeQuaView.h"
 #import "SdkHeader.h"
@@ -56,8 +50,6 @@
         [age14Lable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(ageWarnView.mas_bottom).mas_offset(VH(9));
             make.centerX.mas_equalTo(myView);
-//            make.leading.mas_equalTo(myView).mas_offset(4);
-//            make.trailing.mas_equalTo(myView);
         }];
         
         UILabel *ageNot14LogoutLable = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_age_not14_logout) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:@"#FF0000"]];
@@ -83,15 +75,10 @@
             make.height.mas_equalTo(VH(30));
 
         }];
-//        [closeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         age14AlreadyBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_age_already_14) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
-//        age14AlreadyBtn.layer.borderColor = [UIColor blackColor].CGColor;
-//        age14AlreadyBtn.layer.borderWidth = 1;
         age14AlreadyBtn.layer.cornerRadius = VH(15);
-////        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:FS(14)];
-////        [getVfCodeBtn setTitleColor:UIColor.whiteColor forState:0];
         
         CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(15)];
         [age14AlreadyBtn.layer addSublayer:mGl];
@@ -109,7 +96,6 @@
             make.height.mas_equalTo(VH(30));
 
         }];
-//        [age14AlreadyBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
     }

@@ -1,10 +1,4 @@
-//
-//  SDKIconTitleButton.h
-//  GamaSDK_iOS
-//
-//  Created by ganyuanrong on 2020/8/1.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

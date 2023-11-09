@@ -1,9 +1,7 @@
-//
-//
+
 
 #import "UIAlertController+Sdk.h"
 #import <objc/runtime.h>
-//#import "gamaCenter.h"
 
 @interface UIAlertController (Sdk)
 
@@ -44,11 +42,8 @@
         self.popoverPresentationController.sourceView = self.alertWindow.rootViewController.view;
         self.popoverPresentationController.sourceRect = [sourceView convertRect:sourceView.bounds toView:self.alertWindow.rootViewController.view];
         self.popoverPresentationController.permittedArrowDirections = direction;
-//        [self.alertWindow.rootViewController presentModalViewController:self animated:YES];
-//    } else {
     }
         [self.alertWindow.rootViewController presentViewController:self animated:YES completion:nil];
-//    }
 }
 
 - (void)config
@@ -57,13 +52,13 @@
     self.alertWindow.rootViewController = [[UIViewController alloc] init];
     
     id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
-    // Applications that does not load with UIMainStoryboardFile might not have a window property:
+    
     if ([delegate respondsToSelector:@selector(window)]) {
-        // we inherit the main window's tintColor
+        
         self.alertWindow.tintColor = delegate.window.tintColor;
     }
     
-    // window level is above the top window (this makes the alert, if it's a sheet, show over the keyboard)
+    
     UIWindow *topWindow = [UIApplication sharedApplication].windows.lastObject;
     self.alertWindow.windowLevel = topWindow.windowLevel + 1;
     
@@ -73,7 +68,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
-    // precaution to insure window gets destroyed
+    
     self.alertWindow.hidden = YES;
     [self.alertWindow resignKeyWindow];
     self.alertWindow = nil;
@@ -83,12 +78,5 @@
     return NO;
 }
 
-//- (NSUInteger)supportedInterfaceOrientations {
-////    if ([GetConfigString(GAMA_GAME_IS_INTERFACE_THWARTWISE) isEqualToString:@"YES"]) {
-////        return UIInterfaceOrientationMaskPortrait;
-////    }else{
-//        return UIInterfaceOrientationMaskLandscapeLeft;
-////    }
-//}
 
 @end

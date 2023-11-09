@@ -1,10 +1,4 @@
-//
-//  LoginButton.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/8.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "LoginButton.h"
 #import "UIUtil.h"
@@ -21,7 +15,7 @@
     NSString *highlightedImage = wwwww_tag_wwwww_btn_hy_png;
     NSString *titleText = @"";
     switch (type) {
-        case BUTTON_TYPE_ACCOUNT: //會員賬號登入
+        case BUTTON_TYPE_ACCOUNT: 
             normalImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             titleText = wwwww_tag_wwwww_beautifulaire_sisterary;
@@ -53,12 +47,12 @@
                    titleText = wwwww_tag_wwwww_nattion_pecc;
                    break;
             
-        case BUTTON_TYPE_OK: //確認
+        case BUTTON_TYPE_OK: 
             normalImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             titleText = @"確   認";
             break;
-        case BUTTON_TYPE_BIND_FB: //綁定
+        case BUTTON_TYPE_BIND_FB: 
             normalImage = wwwww_tag_wwwww_sdk_btn_bdfb_png;
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bdfb_png;
             break;
@@ -73,7 +67,7 @@
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bdyk_png;
             break;
             
-        case BUTTON_TYPE_CHANGE_ACCOUNT:  //切換帳號
+        case BUTTON_TYPE_CHANGE_ACCOUNT:  
             normalImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             titleText = wwwww_tag_wwwww_sexfy_egorary;
@@ -88,20 +82,16 @@
             break;
     }
     
-    //UIButton *mButton = [UIUtil initBtnWithNormalImage_MMMethodMMM:normalImage highlightedImage_MMMethodMMM:highlightedImage tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-//    UIButton *mButton = [UIUtil initBtnWithNormalImage_MMMethodMMM:normalImage highlightedImage_MMMethodMMM:highlightedImage titleText_MMMethodMMM:titleText tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
+    
     
     UIButton *mButton = [UIUtil initBtnWithTitleText_MMMethodMMM:titleText fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-//    [UIUtil initBtnWithTitle:titleText tag_MMMethodMMM:tag selector:selector target_MMMethodMMM:target];
     
-//    [mButton setTitleColor:[UIColor whiteColor] forState:0];
     [mButton.layer setCornerRadius:20.0f];
     
-    //closeImageView.backgroundColor = [UIColor clearColor];
-//    [mButton.layer setCornerRadius:kR2BtnCornerRadius];
-    //mButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    
     
     return mButton;
 }

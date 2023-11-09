@@ -1,10 +1,4 @@
-//
-//  GamaPhoneModel.m
-//  GamaModule
-//
-//  Created by wind on 2019/11/14.
-//  Copyright © 2019年 james. All rights reserved.
-//
+
 
 #import "PhoneInfoModel.h"
 #import "AlertUtil.h"
@@ -18,12 +12,6 @@
 
 - (void)setData {
     
-//    NSArray *serverInfo = [SdkUtil fetchPhoneAreaInfo_MMMethodMMM];
-//    if (serverInfo) {
-//        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:serverInfo];
-//    }else{
-//        [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
-//    }
     
     [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[SdkUtil getPhoneAreaInfo_MMMethodMMM]];
     
@@ -44,12 +32,8 @@
 {
     NSMutableArray *tempArray = [NSMutableArray array];
 
-//    [self.gamaAreaCodesArray removeAllObjects];
-//    [self.gamaAreaCodesArray addObjectsFromArray:[GamaPhoneModel fetchPhoneNumber]];
-//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:[PhoneInfoModel fetchPhoneNumber]];
     
-    //将sheet设置为默认的港台区号
-//    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
+    
     
     for (NSDictionary *dict in self.gamaAreaCodesArray)
     {
@@ -63,11 +47,11 @@
                               callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
                                   if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
                                   {
-                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];//因0為cancel
+                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];
                                       weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
                                       weakSelf.selectedAreaCodeKey = [dict objectForKey:wwwww_tag_wwwww_key];
                                       weakSelf.selectedRegularExpression = [dict objectForKey:wwwww_tag_wwwww_pattern];
-                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
+                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])
                                       {
                                           [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
                                       }
@@ -80,7 +64,6 @@
                              arrowDirection_MMMethodMMM:UIPopoverArrowDirectionLeft];
 }
 
-//有两个地方调用这个方法，一个是一开始只有两个默认地区，另一个是经过访问服务器后得到的地区区号
 - (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
 
 {

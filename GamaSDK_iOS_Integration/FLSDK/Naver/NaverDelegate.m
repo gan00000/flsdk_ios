@@ -1,10 +1,4 @@
-//
-//  NaverDelegate.m
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/7/24.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "NaverDelegate.h"
 #import "SdkHeader.h"
@@ -51,7 +45,7 @@
 
 - (void)requestThirdpartyLogin:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret appName:(NSString *)appName
 {
-    // NaverThirdPartyLoginConnection의 인스턴스에 서비스앱의 url scheme와 consumer key, consumer secret, 그리고 appName을 파라미터로 전달하여 3rd party OAuth 인증을 요청한다.
+    
     
     NaverThirdPartyLoginConnection *tlogin = [NaverThirdPartyLoginConnection getSharedInstance];
     [tlogin setConsumerKey:consumerKey];
@@ -67,9 +61,9 @@
         return;
     }
     
-    //xml
-    //NSString *urlString = @"https://openapi.naver.com/v1/nid/getUserProfile.xml";  //  사용자 프로필 호출
-    //json
+    
+    
+    
     NSString *urlString = @"https://openapi.naver.com/v1/nid/me";
     SDK_LOG(@"getUserProfile");
     [self sendRequestWithUrlString:urlString];
@@ -93,7 +87,7 @@
                 
                 if(decodingString){
                     NSData *jsonData = [decodingString dataUsingEncoding:NSUTF8StringEncoding];
-                    // 对数据进行JSON格式化并返回字典形式
+                    
                     NSError *error = nil;
                     id resultTemp = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
                     if(!resultTemp){
@@ -125,20 +119,20 @@
 #pragma mark - OAuth20 deleagate
 
 - (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFailWithError:(NSError *)error {
-    //    NSLog(@"%s=[%@]", __FUNCTION__, error);
-    //登录失败时
+    
+    
     SDK_LOG(@"oauth20Connection didFailWithError %@", error);
 }
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithAuthCode {
     
     SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithAuthCode OAuth Success!\n\nAccess Token - %@\n\nAccess Token Expire Date- %@\n\nRefresh Token - %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate, _thirdPartyLoginConn.refreshToken);
-    //第一次从认证(didFinishAuthorizationWithResult)到这里
+    
     [self getUserProfile];
 }
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithRefreshToken {
-    //登录成功时
+    
     SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithRefreshToken Refresh Success!\n\nAccess Token - %@\n\nAccess sToken ExpireDate- %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate);
     
     [self getUserProfile];

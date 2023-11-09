@@ -1,10 +1,4 @@
-//
-//  SelectPayChannelView.m
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/10/8.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "SelectPayChannelView.h"
 #import "ViewUtil.h"
@@ -32,8 +26,8 @@
     UIView *contentView = [[UIView alloc] init];
     
     UIColor *color = [UIColor whiteColor];
-    contentView.backgroundColor = color;//UIColor.lightGrayColor;// 底图透明，控件不透明
-    contentView.layer.cornerRadius = 6; //设置圆角
+    contentView.backgroundColor = color;
+    contentView.layer.cornerRadius = 6; 
     contentView.layer.masksToBounds = YES;
     
     [self addSubview:contentView];
@@ -104,9 +98,6 @@
     }];
     
     UIButton *appleChannelBtn2 = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_apple_pay highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_PAY_CHANNEL_APPLE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    appleChannelBtn2.layer.cornerRadius = 2;
-//    appleChannelBtn2.layer.borderColor = UIColor.blackColor.CGColor;
-//    appleChannelBtn2.layer.borderWidth = 0.5;
     [appleChannelBtn addSubview:appleChannelBtn2];
     [appleChannelBtn2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(VH(24));

@@ -1,10 +1,4 @@
-//
-//  ExposureHorControllerViewController.m
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/10/12.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "ExposureHorControllerViewController.h"
 #import "MenuCell.h"
@@ -22,12 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 
     self.view.backgroundColor = UIColor.clearColor;
     self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
-//    self.menuTableView.tableFooterView = [[UIView alloc] init];
     self.menuTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.menuTableView.estimatedRowHeight = 16;
     self.menuTableView.estimatedSectionFooterHeight = 0;
@@ -37,15 +30,6 @@
     
     
 
-//    kWeakSelf
-//    self.tableView.mj_header = [YeYeeMJRefreshGenerator bj_headerWithRefreshingBlock:^{
-//        weakSelf.tableView.mj_footer.hidden = YES;
-//        [weakSelf loadData];
-//    }];
-//    self.tableView.mj_footer = [YeYeeMJRefreshGenerator bj_foorterWithRefreshingBlock:^{
-//        weakSelf.tableView.mj_header.hidden = YES;
-//        [weakSelf loadNextPage];
-//    }];
     if (@available(iOS 11.0, *)) {
         self.menuTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -119,7 +103,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    ExpoModel *mExpoModel = self.expoModelArry[indexPath.row];
     
     [self updateUI_MMMethodMMM:indexPath.row isFirstLoad_MMMethodMMM:NO];
 }
