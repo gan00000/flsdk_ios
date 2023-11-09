@@ -66,6 +66,8 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 @interface MWSDK : NSObject
 
+@property (nonatomic, assign) BOOL showAct;
+
 @property (nonatomic) SDKPayBlock payHandler;
 @property (nonatomic)  SDKLogoutBlock logoutHandler;
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;
