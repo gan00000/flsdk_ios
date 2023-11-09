@@ -191,7 +191,7 @@ if(T_sagitt8580 > 42250){
     }
     
     
-    [self.backIV setImage:GetImage(@"activity_img_back")];
+    [self.backIV setImage:GetImage(activity_img_back)];
 
 		
 		{
@@ -301,8 +301,8 @@ if(F_causeably8607 * 858 + 682 - 89 / 307 / 279 - 347 <= 42261){
 		}
 		
 
-    [self.closeIV setImage:GetImage(@"activity_img_close")];
-    [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    [self.closeIV setImage:GetImage(activity_img_close)];
+    [self.titleBgIV setImage:GetImage(activity_img_title)];
     
     self.backIV.userInteractionEnabled = YES;
     self.closeIV.userInteractionEnabled = YES;
@@ -996,10 +996,10 @@ if(o_magnCongressot8452 <= 54390){
 
     
     if(mExpoModel.isClick){
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(act_menu_bg)];
         
     }else{
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(@"act_menu_unselect_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(act_menu_unselect_bg)];
     }
     
     return cell;
@@ -1535,10 +1535,10 @@ if(n_centriclay8842 * 905 * 213 - 936 + 702 / 211 == 73519){
     }
     
     self.titleLabel.text = em.title;
-    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
+    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(activity_img_title)];
     
-    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(activity_img_back)];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(activity_img_close)];
     
     
     [self.mwWebView loadRequest_MMMethodMMM:em.contentUrl];

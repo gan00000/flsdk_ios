@@ -538,7 +538,7 @@ if(k_himselfenne6267 != 16799){
     self.currentIndex = 0;
     
     
-    [self.backIV setImage:GetImage(@"activity_img_back")];
+    [self.backIV setImage:GetImage(activity_img_back)];
 
 		
 		{
@@ -748,8 +748,8 @@ if(k_funct6327 * 892 - 918 + 986 * 442 <= 4456){
 		}
 		
 
-    [self.closeIV setImage:GetImage(@"activity_img_close")];
-    [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    [self.closeIV setImage:GetImage(activity_img_close)];
+    [self.titleBgIV setImage:GetImage(activity_img_title)];
     
     self.backIV.userInteractionEnabled = YES;
     self.closeIV.userInteractionEnabled = YES;
@@ -2909,10 +2909,10 @@ if(a_equinchildon5940 != 3362){
 - (void)updateUI_MMMethodMMM:(ExpoModel *)em {
     
     self.titleLabel.text = em.title;
-    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
+    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(activity_img_title)];
     
-    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl] placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl]  placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl] placeholderImage:GetImage(activity_img_back)];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl]  placeholderImage:GetImage(activity_img_close)];
     
     if(em.isContentLoad){
         return;
