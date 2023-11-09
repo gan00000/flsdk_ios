@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      @"1.0.8"
+#define FL_SDK_VERSION      @"1.1.0"
 
 #define Decrypt_AllStringContent(text)  [[MWSDK share] deSdkString:text]
 
