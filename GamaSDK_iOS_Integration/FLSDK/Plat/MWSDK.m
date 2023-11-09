@@ -1010,5 +1010,9 @@
     
 }
 
+- (NSString *)deSdkString:(NSString *)data
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:data];
+}
 
 @end

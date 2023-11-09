@@ -7,6 +7,8 @@
 
 #define FL_SDK_VERSION      @"1.0.8"
 
+#define Decrypt_AllStringContent(text)  [[MWSDK share] deSdkString:text]
+
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
 #define AD_EVENT_LOGIN_SUCCESS  wwwww_tag_wwwww_LOGIN_SUCCESS
 #define AD_EVENT_REGISTER_SUCCESS  wwwww_tag_wwwww_REGISTER_SUCCESS
@@ -139,6 +141,8 @@ completionHandler:(SDKPayBlock) handler;
 
 
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
+
+- (NSString *)deSdkString:(NSString *)data;
 
 @end
 
