@@ -57,9 +57,9 @@
     }
     
     
-    [self.backIV setImage:GetImage(@"activity_img_back")];
-    [self.closeIV setImage:GetImage(@"activity_img_close")];
-    [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    [self.backIV setImage:GetImage(activity_img_back)];
+    [self.closeIV setImage:GetImage(activity_img_close)];
+    [self.titleBgIV setImage:GetImage(activity_img_title)];
     
     self.backIV.userInteractionEnabled = YES;
     self.closeIV.userInteractionEnabled = YES;
@@ -104,10 +104,10 @@
     MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:XIB_MenuCell];
     
     if(mExpoModel.isClick){
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(act_menu_bg)];
         
     }else{
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(@"act_menu_unselect_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(act_menu_unselect_bg)];
     }
     
     return cell;
@@ -133,10 +133,10 @@
     }
     
     self.titleLabel.text = em.title;
-    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
+    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(activity_img_title)];
     
-    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(activity_img_back)];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(activity_img_close)];
     
     
     [self.mwWebView loadRequest_MMMethodMMM:em.contentUrl];

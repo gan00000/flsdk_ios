@@ -212,6 +212,12 @@
 #define icon_apple_pay       @"icon_apple_pay"
 
 #define icon_close_social   @"icon_close_social"
+#define activity_img_back   @"activity_img_back"
+#define activity_img_close   @"activity_img_close"
+#define act_menu_bg   @"act_menu_bg"
+#define act_menu_unselect_bg   @"act_menu_unselect_bg"
+#define activity_img_title   @"activity_img_title"
+
 #define XIB_ExposureController   @"ExposureController"
 #define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
 #define XIB_MenuCell   @"MenuCell"
@@ -303,6 +309,15 @@
 #define icon_apple_pay       @"icon_apple_pay"
 
 #define icon_close_social   @"icon_close_social"
+#define activity_img_back   @"activity_img_back"
+#define activity_img_close   @"activity_img_close"
+#define act_menu_bg   @"act_menu_bg"
+#define act_menu_unselect_bg   @"act_menu_unselect_bg"
+#define activity_img_title   @"activity_img_title"
+
+#define XIB_ExposureController   @"ExposureController"
+#define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
+#define XIB_MenuCell   @"MenuCell"
 
 #else
 
