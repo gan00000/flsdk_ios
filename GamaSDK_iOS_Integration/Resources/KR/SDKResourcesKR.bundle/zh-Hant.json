@@ -130,6 +130,7 @@
 "text_privacy_policy"  :  "隱私政策",
 "text_personal_clause"  :  "個人條款",
 "text_personal_clause_and_privacy_policy"  :  "隱私政策&個人條款",
-"text_customer" :   "客訴中心"
-
+"text_customer" :   "客訴中心",
+"text_select_pay_channel"   :   "選擇付款方式",
+"text_pay_pay"      :   "储值"
 }

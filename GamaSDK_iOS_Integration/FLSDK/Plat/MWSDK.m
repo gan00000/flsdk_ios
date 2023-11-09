@@ -177,7 +177,7 @@
         }
         
     }else{
-        [self showTermViewWithBlock];
+        [self showTermViewWithBlock_MMMethodMMM];
     }
    
 
@@ -963,7 +963,7 @@
     }
 }
 
--(void)showTermViewWithBlock
+-(void)showTermViewWithBlock_MMMethodMMM
 {
 
 #ifdef SDK_KR

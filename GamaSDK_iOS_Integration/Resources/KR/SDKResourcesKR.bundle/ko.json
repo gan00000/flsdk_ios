@@ -130,5 +130,8 @@
 "text_privacy_policy"  :  "개인정보",
 "text_personal_clause"  :  "이용약관",
 "text_personal_clause_and_privacy_policy"  :  "개인정보&이용약관",
-"text_customer" :   "고객센터"
+"text_customer" :   "고객센터",
+"text_select_pay_channel"   :   "Select payment method",
+"text_pay_pay"      :   "top up"
+
 }
