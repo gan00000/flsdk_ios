@@ -55,8 +55,8 @@
 #define icon_apple_pay       @"temptalongmost_mesiibility_img"
 
 #define icon_close_social   @"describeial_apable_img"
-#define XIB_ExposureController   @"ExposureController"
-#define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
-#define XIB_MenuCell   @"MenuCell"
+#define XIB_ExposureController   @"VerticGoalialController"
+#define XIB_ExposureHorControllerViewController   @"CommonPhloeatorController"
+#define XIB_MenuCell   @"SomeoneFamicCell"
 
 #endif /* imageNameHeader_h */
