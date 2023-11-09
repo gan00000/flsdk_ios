@@ -268,6 +268,40 @@
         return;
     }
     
+//    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
+//    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
+//    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
+//    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
+//    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
+//    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+    
+    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    
+    if(!self.showAct){
+        [self requestShowActView];
+    }
+    
+}
+
+- (void)setRoleInfoWithRoleId_Inner:(NSString *)roleId
+                     roleName:(NSString *)roleName
+                    roleLevel:(NSString *)roleLevel
+                 roleVipLevel:(NSString *)roleVipLevel
+                   serverCode:(NSString *)serverCode
+                   serverName:(NSString *)serverName
+{
+    
+    SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
+            roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
+    
+    // 对必要参数进行检查
+    if ([StringUtil isEmpty_MMMethodMMM:roleId]  ||
+        [StringUtil isEmpty_MMMethodMMM:serverCode])
+    {
+        SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
+        return;
+    }
+    
     SDK_DATA.gameUserModel.roleID = roleId ? : @"";
     SDK_DATA.gameUserModel.roleName = roleName ? : @"";
     SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
@@ -404,7 +438,7 @@
     }
     self.isPaying = YES;
     
-    [self setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
     self.payHandler = handler;
     
@@ -794,7 +828,7 @@
         return;
     }
     
-    [self setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
     [self openCs];
     
@@ -1028,6 +1062,26 @@
         
         [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+    }];
+    
+}
+
+- (void)requestShowActView
+{
+    SDK_LOG(@"requestShowActView");
+    
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
+        self.showAct = NO;
+        return;
+    }
+    
+    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        self.showAct = YES;
+                
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        self.showAct = NO;
     }];
     
 }
