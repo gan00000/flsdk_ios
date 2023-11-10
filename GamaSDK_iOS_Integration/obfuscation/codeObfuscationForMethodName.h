@@ -491,5 +491,8 @@
 #define checkActSwitchWithSuccessBlock_MMMethodMMM          advocateDisplay
 #define getActConfigWithSuccessBlock_MMMethodMMM          enunciateScissors
 #define isFirstLoad_MMMethodMMM     isFirstLoad
+#define isShowTerm_MMMethodMMM          isShowTerm
+#define setShowTerm_MMMethodMMM          setShowTerm
+#define showTermViewWithBlock_MMMethodMMM          showTermViewWithBlock
 
 #endif  /* codeObfuscation_h */

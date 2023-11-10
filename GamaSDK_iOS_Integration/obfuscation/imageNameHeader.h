@@ -56,6 +56,11 @@
 #define icon_apple_pay       @"policior_sessism_img"
 
 #define icon_close_social   @"put_coriative_img"
+#define activity_img_back   @"littleization_yard_img"
+#define activity_img_close   @"opportunitykin_boardship_img"
+#define act_menu_bg   @"saponenne_threeier_img"
+#define act_menu_unselect_bg   @"populationous_actionitor_img"
+#define activity_img_title   @"tetrel_partit_img"
 
 #define XIB_ExposureController   @"MissfoldPitcourseardController"
 #define XIB_ExposureHorControllerViewController   @"WeightObsressController"

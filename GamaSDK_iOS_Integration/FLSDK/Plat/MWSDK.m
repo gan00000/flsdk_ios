@@ -1561,7 +1561,7 @@ if(j_decorical2408 * 584 - 133 - 278 + 829 / 394 - 189 <= 56953){
         }
         
     }else{
-        [self showTermViewWithBlock];
+        [self showTermViewWithBlock_MMMethodMMM];
     }
    
 
@@ -10792,8 +10792,8 @@ switch (B_campaignship4217) {
     NSString *resultURL = [SpringSecond createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     EtharmficCauliileController *webVC = [EtharmficCauliileController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
-    webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
     webVC.isShowDefulatCloseBtn = YES;
+    webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
@@ -12654,7 +12654,7 @@ if(T_scab1874 < 80638){
 	return Y_50;
 }
 //===insert my method end=== 2023-10-31 15:39:03
--(void)showTermViewWithBlock
+-(void)showTermViewWithBlock_MMMethodMMM
 {
 
 #ifdef SDK_KR

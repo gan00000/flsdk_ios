@@ -295,7 +295,7 @@ switch (y_babyive11023) {
     }
     
     
-    [self.backIV setImage:GetImage(@"activity_img_back")];
+    [self.backIV setImage:GetImage(activity_img_back)];
 
 		//====insert my code start===  2023-10-31 15:39:03
 		{
@@ -390,8 +390,8 @@ if(G_strigosarium11054 > 78007){
 		}
 		//====insert my code end===  2023-10-31 15:39:03
 
-    [self.closeIV setImage:GetImage(@"activity_img_close")];
-    [self.titleBgIV setImage:GetImage(@"activity_img_title")];
+    [self.closeIV setImage:GetImage(activity_img_close)];
+    [self.titleBgIV setImage:GetImage(activity_img_title)];
     
     self.backIV.userInteractionEnabled = YES;
 
@@ -978,10 +978,10 @@ switch (d_behindacy11019) {
     AllimproveicalMemberCell *cell = [tableView dequeueReusableCellWithIdentifier:XIB_MenuCell];
     
     if(mExpoModel.isClick){
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(@"act_menu_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuSelectImgUrl] placeholderImage:GetImage(act_menu_bg)];
         
     }else{
-        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(@"act_menu_unselect_bg")];
+        [cell.menuBgIV sd_setImageWithURL:[NSURL URLWithString:mExpoModel.menuUnSelectImgUrl] placeholderImage:GetImage(act_menu_unselect_bg)];
     }
     
 
@@ -1286,10 +1286,10 @@ switch (s_cinersion11195) {
     }
     
     self.titleLabel.text = em.title;
-    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(@"activity_img_title")];
+    [self.titleBgIV sd_setImageWithURL:[NSURL URLWithString:em.titleImgUrl] placeholderImage:GetImage(activity_img_title)];
     
-    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(@"activity_img_back")];
-    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(@"activity_img_close")];
+    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(activity_img_back)];
+    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(activity_img_close)];
     
     
     [self.mwWebView loadRequest_MMMethodMMM:em.contentUrl];
