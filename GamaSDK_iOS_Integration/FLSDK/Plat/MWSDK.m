@@ -5074,9 +5074,9 @@ switch (k_proli4034) {
 
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     TenenneWeekController *webVC = [TenenneWeekController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    webVC.isShowDefulatCloseBtn = YES;
     webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
     
-    webVC.isShowDefulatCloseBtn = YES;
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
