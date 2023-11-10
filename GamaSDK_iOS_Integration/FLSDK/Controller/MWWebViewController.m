@@ -26,7 +26,7 @@
 @property (nonatomic, strong) WKWebView *wkwebView;
 @property (nonatomic, strong) UIView *headerView;
 //@property (nonatomic, strong) UIView *footView;
-@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
+//@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic, strong) UIProgressView *progressView;
 //@property (nonatomic) BOOL animation;
 
@@ -282,36 +282,44 @@
 
 #pragma mark - WKNavigationDelegate
 
-//2、当WebView开始加载Web内容时触发；
+//页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   //system_method
 {
-    SDK_LOG(@"页面开始加载webView didStartProvisionalNavigation");
-    [_indicatorView startAnimating];
+    SDK_LOG(@"页面开始加载 webView didStartProvisionalNavigation");
+//    [_indicatorView startAnimating];
     
 }
+
+// 页面加载失败时调用
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    SDK_LOG(@"页面加载失败时调用 webView didFailProvisionalNavigation");
+}
+
+// 当内容开始返回时调用
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
 {
     SDK_LOG(@"页面开始返回webView didCommitNavigation");
 }
+// 页面加载完成之后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
     SDK_LOG(@"页面完成加载webView didFinishNavigation");
-    [_indicatorView stopAnimating];
+//    [_indicatorView stopAnimating];
     
 }
 
-//当Web视图正在加载内容时发生错误时调用;
+//提交发生错误时调用
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
 {
-    SDK_LOG(@"webView didFailNavigation withError");
-    [_indicatorView stopAnimating];
+    SDK_LOG(@"提交发生错误时调 webView didFailNavigation withError");
+//    [_indicatorView stopAnimating];
     
 }
 
-//在发送请求之前，决定是否跳转
+//根据WebView对于即将跳转的HTTP请求头信息和相关信息来决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
-    SDK_LOG(@"webView decidePolicyForNavigationAction decisionHandler");
+    SDK_LOG(@"决定是否跳转 webView decidePolicyForNavigationAction decisionHandler");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {
@@ -322,17 +330,17 @@
     }
 }
 
-//1、当Web视图收到服务器重定向时调用；
+//1、当Web视图收到服务器重定向时调用
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
 {
-    SDK_LOG(@"didReceiveServerRedirectForProvisionalNavigation");
-    NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
+    SDK_LOG(@"收到服务器重定 didReceiveServerRedirectForProvisionalNavigation");
 }
 
+//根据客户端受到的服务器响应头以及response相关信息来决定是否可以跳转
 //服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
-    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
+    if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) { //200以外的状态码时，都调用请求失败的方法
         decisionHandler (WKNavigationResponsePolicyAllow);
         if(self.defalutCloseBtn && self.isShowDefulatCloseBtn){
             self.defalutCloseBtn.hidden = YES;

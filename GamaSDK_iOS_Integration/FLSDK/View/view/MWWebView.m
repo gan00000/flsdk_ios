@@ -163,8 +163,7 @@
 //1、当Web视图收到服务器重定向时调用；
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
 {
-    SDK_LOG(@"didReceiveServerRedirectForProvisionalNavigation");
-    NSLog(@"WKWebView didReceiveServerRedirect 重定向中");
+    SDK_LOG(@"服务器重定向 didReceiveServerRedirectForProvisionalNavigation");
 }
 
 //服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
