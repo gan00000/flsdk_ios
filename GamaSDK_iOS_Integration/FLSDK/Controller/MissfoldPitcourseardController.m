@@ -476,7 +476,7 @@ switch (V_oblet8937) {
         self.expoModelArry = [NSMutableArray array];
     }
     self.mWebViewArry = [NSMutableArray array];
-    self.view.backgroundColor = UIColor.clearColor;
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.3];
     
     int mSize = self.expoModelArry.count;
     self.currentIndex = 0;
