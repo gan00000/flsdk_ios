@@ -24,7 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    self.view.backgroundColor = UIColor.clearColor;
+//    self.view.backgroundColor = UIColor.clearColor;
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.3];
     self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
 //    self.menuTableView.tableFooterView = [[UIView alloc] init];

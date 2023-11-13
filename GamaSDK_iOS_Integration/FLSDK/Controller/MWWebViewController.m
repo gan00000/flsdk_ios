@@ -290,7 +290,7 @@
     
 }
 
-// 页面加载失败时调用
+// 页面加载失败时调用        (请求返回的是403、404时，webView不认为这是请求失败，不调用此代理方法)
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
     SDK_LOG(@"页面加载失败时调用 webView didFailProvisionalNavigation");
 }
