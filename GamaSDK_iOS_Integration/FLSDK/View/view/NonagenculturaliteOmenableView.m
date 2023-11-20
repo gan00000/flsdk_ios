@@ -4,7 +4,7 @@
 #import "ProtectialWeaponate.h"
 #import "TenenneWeekController.h"
 
-@interface NonagenculturaliteOmenableView ()
+@interface NonagenculturaliteOmenableView ()<WKNavigationDelegate>
 @property (copy,nonatomic) void (^completer)(void);
 @end
 
@@ -204,7 +204,9 @@ switch (p_anyone29238) {
             
             SDK_LOG(@"showSocialView url=%@",resultURL);
             TenenneWeekController *webVC = [TenenneWeekController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
-          
+            
+            webVC.webViewDelegate = self;
+
             [contentView addSubview:webVC.view];
             [webVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.leading.mas_equalTo(contentView).offset(10);
@@ -366,5 +368,14 @@ if(Q_noneade29336 <= 11060){
     
 }
 
+
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+{
+    
+    [[UIApplication sharedApplication] openURL:navigationAction.request.URL options:@{} completionHandler:nil];
+    
+    decisionHandler(WKNavigationActionPolicyCancel);
+}
 
 @end
