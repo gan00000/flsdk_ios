@@ -12,10 +12,10 @@
 #import "SdkHeader.h"
 #import "UIScreen+Sdk.h"
 
-typedef void(^MWWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
+//typedef void(^MWWebLayoutHandler)(UIView *containerView, UIView *headerView, UIView *webView, UIView *footView);
 
-typedef void(^MWWebConfirmHandler)(BOOL confirmResult);
-typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmHandler);
+//typedef void(^MWWebConfirmHandler)(BOOL confirmResult);
+//typedef void(^MWWebAlertHandler)(NSString *message, MWWebConfirmHandler confirmHandler);
 
 
 @interface MWWebViewController : UIViewController

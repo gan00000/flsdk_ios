@@ -10,7 +10,7 @@
 #import "SDKRequest.h"
 #import "MWWebViewController.h"
 
-@interface SocialBannerView ()
+@interface SocialBannerView ()<WKNavigationDelegate>
 @property (copy,nonatomic) void (^completer)(void);
 @end
 
@@ -63,6 +63,7 @@
             SDK_LOG(@"showSocialView url=%@",resultURL);
             MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
           
+            webVC.webViewDelegate = self;
             [contentView addSubview:webVC.view];
             [webVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.leading.mas_equalTo(contentView).offset(10);
@@ -102,6 +103,15 @@
             break;
     }
     
+}
+
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+{
+    
+    [[UIApplication sharedApplication] openURL:navigationAction.request.URL options:@{} completionHandler:nil];
+    
+    decisionHandler(WKNavigationActionPolicyCancel);
 }
 
 
