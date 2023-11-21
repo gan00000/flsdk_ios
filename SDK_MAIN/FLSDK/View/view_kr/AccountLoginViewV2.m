@@ -19,7 +19,6 @@
 #import "LoginTypeButton.h"
 #import <AuthenticationServices/AuthenticationServices.h>
 #import "SAppleLogin.h"
-#import "TermsView.h"
 #import "AccountListView.h"
 #import "UIView+BlockGesture.h"
 #import "LoginButtonData.h"

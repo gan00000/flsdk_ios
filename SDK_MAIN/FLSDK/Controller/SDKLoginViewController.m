@@ -8,19 +8,10 @@
 
 #import "SDKLoginViewController.h"
 
-#import "AccountLoginView.h"
-#import "RegisterAccountView.h"
-#import "ChangePasswordView.h"
-#import "SelectBindTypeView.h"
-#import "FindPasswordView.h"
 #import "YYModel.h"
 #import "LoginResponse.h"
 #import "AccountModel.h"
 #import "Masonry.h"
-#import "TermsView.h"
-#import "LoginWithRegView.h"
-#import "MainHomeView.h"
-#import "BindAccountView.h"
 
 #import "MainHomeViewV2.h"
 #import "LoginWithRegViewV2.h"
@@ -52,7 +43,7 @@
 //    SdkAutoLoginView *mAutoLoginView;
     SDKBaseView *mLoginWithRegView;
     SDKBaseView *mMainHomeView;
-    SDKBaseView *mWelcomeBackView;
+//    SDKBaseView *mWelcomeBackView;
     
 }
 
@@ -79,7 +70,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(wwwww_tag_wwwww_viewDidLoad);
-    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];//[UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.7];//[UIColor clearColor];
     
     SDK_DATA.mUITextFieldDelegate = self;
     switch (sdkPageType) {
@@ -199,13 +190,7 @@
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
         
-        if (is_Version2) {
-            
-            [self addLoginWithRegView_MMMethodMMM];
-            
-        }else{
-            [self addWelcomeView_MMMethodMMM];
-        }
+        [self addLoginWithRegView_MMMethodMMM];
         
     }else{
         [self addHomeView_MMMethodMMM];
@@ -275,40 +260,17 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    if (is_Version2) {
-        mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView_MMMethodMMM];
-    }else{
-        mLoginWithRegView = [[LoginWithRegView alloc] initView_MMMethodMMM];
-    }
+    mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView_MMMethodMMM];
     
     [self addSubSdkLoginView_MMMethodMMM:mLoginWithRegView];
     return mLoginWithRegView;
 }
 
--(void)addWelcomeView_MMMethodMMM
-{
-    //移除所有子视图
-//    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    for (UIView *subView in [self sdkContentView].subviews) {
-        [subView removeFromSuperview];
-    }
-    mWelcomeBackView = [[WelcomeBackView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:mWelcomeBackView];
-}
 
 
--(SDKBaseView *)addTermsView_MMMethodMMM//服務條款
-{
-    TermsView *mTermsView = [[TermsView alloc] initWithCompleter_MMMethodMMM:^{
-        //[self addMainLoginView];//同意之后打开登录页面
-        
-    }];
-    
-    mTermsView.delegate = self;
-    [self addSubSdkLoginView_MMMethodMMM:mTermsView];
-    
-    return mTermsView;
-}
+//-(SDKBaseView *)addTermsView_MMMethodMMM//服務條款
+//{
+//}
 
 //-(void)addAutoLoginView //自动登录中界面
 //{
@@ -340,40 +302,32 @@
 //    [self addSubSdkLoginView_MMMethodMMM:mRegisterAccountView];
 //}
 
--(SDKBaseView *)addBindAccountView_MMMethodMMM
-{
-    BindAccountView *view = [[BindAccountView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:view];
-    return view;
-}
+//-(SDKBaseView *)addBindAccountView_MMMethodMMM
+//{
+//    BindAccountView *view = [[BindAccountView alloc] initView_MMMethodMMM];
+//    [self addSubSdkLoginView_MMMethodMMM:view];
+//    return view;
+//}
+//
+//-(SDKBaseView *)addChangePasswordView_MMMethodMMM
+//{
+//
+//    ChangePasswordView *view = [[ChangePasswordView alloc] initView_MMMethodMMM];
+//    [self addSubSdkLoginView_MMMethodMMM:view];
+//    return view;
+//}
 
--(SDKBaseView *)addChangePasswordView_MMMethodMMM
-{
-    
-    ChangePasswordView *view = [[ChangePasswordView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:view];
-    return view;
-}
-
--(void)addSelectBindTypeView_MMMethodMMM
-{
-    
-    SelectBindTypeView *view = [[SelectBindTypeView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:view];
-}
+//-(void)addSelectBindTypeView_MMMethodMMM
+//{
+//
+//    SelectBindTypeView *view = [[SelectBindTypeView alloc] initView_MMMethodMMM];
+//    [self addSubSdkLoginView_MMMethodMMM:view];
+//}
 
 -(void)addFindPasswordView_MMMethodMMM
 {
-    if (is_Version2) {
-        
-        FindPasswordViewV2 *view = [[FindPasswordViewV2 alloc] initView_MMMethodMMM];
-        [self addSubSdkLoginView_MMMethodMMM:view];
-        
-    }else{
-        FindPasswordView *view = [[FindPasswordView alloc] initView_MMMethodMMM];
-        [self addSubSdkLoginView_MMMethodMMM:view];
-    }
-   
+    FindPasswordViewV2 *view = [[FindPasswordViewV2 alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:view];
 }
 
 -(void)addHomeView_MMMethodMMM
@@ -383,12 +337,7 @@
     for (UIView *subView in [self sdkContentView].subviews) {
         [subView removeFromSuperview];
     }
-    if (is_Version2) {
-        mMainHomeView = [[MainHomeViewV2 alloc] initView_MMMethodMMM];
-    }else{
-        mMainHomeView = [[MainHomeView alloc] initView_MMMethodMMM];
-    }
-    
+    mMainHomeView = [[MainHomeViewV2 alloc] initView_MMMethodMMM];
     [self addSubSdkLoginView_MMMethodMMM:mMainHomeView];
 }
 
@@ -470,23 +419,23 @@
         }
             break;
             
-        case CURRENT_PAGE_TYPE_CHANGE_PWD:
-            mView = [self addChangePasswordView_MMMethodMMM];
-            break;
-            
-        case CURRENT_PAGE_TYPE_SELECT_BIND_TYPE:
-            [self addSelectBindTypeView_MMMethodMMM];//選擇綁定方式頁面
-            break;
-            
-        case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
-            mView = [self addBindAccountView_MMMethodMMM];//綁定賬號頁面
-            break;
-            
-        case CURRENT_PAGE_TYPE_TEARMS:
-        {
-            mView = [self addTermsView_MMMethodMMM];//服务条款頁面
-        }
-            break;
+//        case CURRENT_PAGE_TYPE_CHANGE_PWD:
+//            mView = [self addChangePasswordView_MMMethodMMM];
+//            break;
+//
+//        case CURRENT_PAGE_TYPE_SELECT_BIND_TYPE:
+//            [self addSelectBindTypeView_MMMethodMMM];//選擇綁定方式頁面
+//            break;
+//
+//        case CURRENT_PAGE_TYPE_BIND_ACCOUNT:
+//            mView = [self addBindAccountView_MMMethodMMM];//綁定賬號頁面
+//            break;
+//
+//        case CURRENT_PAGE_TYPE_TEARMS:
+//        {
+//            mView = [self addTermsView_MMMethodMMM];//服务条款頁面
+//        }
+//            break;
         default:
             break;
     }
@@ -516,11 +465,11 @@
             break;
             
         case CURRENT_PAGE_TYPE_WELCOME_BACK:
-            if (mWelcomeBackView) {
-                mWelcomeBackView.hidden = NO;
-            }else{
-                [self addWelcomeView_MMMethodMMM];
-            }
+//            if (mWelcomeBackView) {
+//                mWelcomeBackView.hidden = NO;
+//            }else{
+//                [self addWelcomeView_MMMethodMMM];
+//            }
             break;
             
         default:

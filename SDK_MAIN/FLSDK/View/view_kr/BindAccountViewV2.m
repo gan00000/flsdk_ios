@@ -14,9 +14,9 @@
 #import "LoginButton.h"
 #import "LoginHelper.h"
 #import "SdkUtil.h"
-#import "AccountLoginView.h"
 #import "SDKRequest.h"
 #import "ViewUtil.h"
+#import "AccountLoginViewV2.h"
 
 @implementation BindAccountViewV2
 
@@ -234,7 +234,7 @@
 {
     [super initData_MMMethodMMM];
     AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
-    [AccountLoginView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
+    [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
     thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
 }
 
