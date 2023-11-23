@@ -197,9 +197,9 @@ completionHandler:(SDKPayBlock) handler;
 /// @param mBlock
 -(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
 
--(void)showSocialView;
-
-- (void)showActView;
+//-(void)showSocialView;
+//
+//- (void)showActView;
 
 - (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
 

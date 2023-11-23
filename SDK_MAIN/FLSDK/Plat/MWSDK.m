@@ -164,36 +164,36 @@
     
     self.loginCompletionHandler = cmopleteHandler;
     
-#ifdef SDK_KR
+//#ifdef SDK_KR
+//
+//    if([TermsViewV2 isShowTerm_MMMethodMMM]){
+//
+//        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+//
+//            [self showNoticeView];
+//
+//        }else{
+//            [self sdkLoginWithHandlerForInner];
+//        }
+//
+//    }else{
+//        [self showTermViewWithBlock_MMMethodMMM];
+//    }
+//
+//
+//#else
+//
+//    if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+//
+//        [self showNoticeView];
+//
+//    }else{
+//        [self sdkLoginWithHandlerForInner];
+//    }
+//
+//#endif
     
-    if([TermsViewV2 isShowTerm_MMMethodMMM]){
-        
-        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-            
-            [self showNoticeView];
-            
-        }else{
-            [self sdkLoginWithHandlerForInner];
-        }
-        
-    }else{
-        [self showTermViewWithBlock_MMMethodMMM];
-    }
-   
-
-#else
-    
-    if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-        
-        [self showNoticeView];
-        
-    }else{
-        [self sdkLoginWithHandlerForInner];
-    }
-    
-#endif
-    
-    
+    [self sdkLoginWithHandlerForInner];
 }
 
 - (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
@@ -1001,71 +1001,71 @@
 #endif
 }
 
--(void)showSocialView{
-    
-    UIView *superView = appTopViewController.view;
-    
-    UIView *bgV = [[TouchEventInterruptView alloc] init];
-    [superView addSubview:bgV];
-    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(superView);
-    }];
-    
-    SocialBannerView *mSocialBannerView = [[SocialBannerView alloc] init];
-    [bgV addSubview:mSocialBannerView];
-    [mSocialBannerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(bgV);
-    }];
-    
-}
+//-(void)showSocialView{
+//
+//    UIView *superView = appTopViewController.view;
+//
+//    UIView *bgV = [[TouchEventInterruptView alloc] init];
+//    [superView addSubview:bgV];
+//    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(superView);
+//    }];
+//
+//    SocialBannerView *mSocialBannerView = [[SocialBannerView alloc] init];
+//    [bgV addSubview:mSocialBannerView];
+//    [mSocialBannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(bgV);
+//    }];
+//
+//}
 
-- (void)showActView
-{
-    SDK_LOG(@"showActView");
-    
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
-        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
-        return;
-    }
-    
-    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        
-        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-        [SDKRequest getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
-            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-            
-            UIViewController *actController;
-            if(IS_PORTRAIT){
-                ExposureController *mExposureController = [[ExposureController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
-                mExposureController.expoModelArry = responseData;
-                actController = mExposureController;
-            }else{
-                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
-                mExposureHorControllerViewController.expoModelArry = responseData;
-                actController = mExposureHorControllerViewController;
-            }
-            
-            SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
-            [actController setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以odalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
-            [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
-                
-            }];
-            
-        } errorBlock_MMMethodMMM:^(BJError *error) {
-            
-            [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
-        }];
-        
-        
-    } errorBlock_MMMethodMMM:^(BJError *error) {
-        
-        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
-    }];
-    
-}
+//- (void)showActView
+//{
+//    SDK_LOG(@"showActView");
+//    
+//    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+//    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
+//        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+//        return;
+//    }
+//    
+//    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
+//    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+//        
+//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+//        [SDKRequest getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+//            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+//            
+//            UIViewController *actController;
+//            if(IS_PORTRAIT){
+//                ExposureController *mExposureController = [[ExposureController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
+//                mExposureController.expoModelArry = responseData;
+//                actController = mExposureController;
+//            }else{
+//                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
+//                mExposureHorControllerViewController.expoModelArry = responseData;
+//                actController = mExposureHorControllerViewController;
+//            }
+//            
+//            SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
+//            [actController setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以odalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+//            [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
+//                
+//            }];
+//            
+//        } errorBlock_MMMethodMMM:^(BJError *error) {
+//            
+//            [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+//        }];
+//        
+//        
+//    } errorBlock_MMMethodMMM:^(BJError *error) {
+//        
+//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
+//        [SdkUtil toastMsg_MMMethodMMM:@"This feature is not turned on"];
+//    }];
+//    
+//}
 
 - (void)requestShowActView
 {

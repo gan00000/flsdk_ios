@@ -211,7 +211,7 @@
              *********************************************/
         case 3:
         {
-            [[MWSDK share] showActView];
+//            [[MWSDK share] showActView];
         }
             break;
         case 4:
@@ -311,7 +311,7 @@
             [self addLocalNotificationForDateComponents];
         }
         case 13:{
-            [[MWSDK share] showSocialView];
+//            [[MWSDK share] showSocialView];
         }
             break;
 

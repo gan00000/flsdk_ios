@@ -12,7 +12,6 @@
 typedef NS_OPTIONS(NSUInteger, SDKPage)
 {
     SDKPage_Login,
-    SDKPage_LoginType,
     SDKPage_UnBind,
     SDKPage_Find_Pwd
 };

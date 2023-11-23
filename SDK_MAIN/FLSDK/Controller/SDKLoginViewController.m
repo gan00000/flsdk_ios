@@ -21,9 +21,6 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-#ifdef SDK_KR
-#import "AgeQuaView.h"
-#endif
 
 @interface SDKLoginViewController()
 
@@ -70,7 +67,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     SDK_LOG(wwwww_tag_wwwww_viewDidLoad);
-    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.7];//[UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];//[UIColor clearColor];
     
     SDK_DATA.mUITextFieldDelegate = self;
     switch (sdkPageType) {
@@ -80,10 +77,6 @@
         }
             break;
             
-        case SDKPage_LoginType:
-        {
-        }
-            break;
         default:
             break;
     }
@@ -182,18 +175,14 @@
     
     
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if (!mConfigModel.visitorLogin && !mConfigModel.appleLogin && !mConfigModel.fbLogin && !mConfigModel.lineLogin && !mConfigModel.naverLogin) {
-        [self addLoginWithRegView_MMMethodMMM];
-        return;
-    }
-    
+   
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
         
-        [self addLoginWithRegView_MMMethodMMM];
+        [self addLoginWithRegView_MMMethodMMM];//自动登录
         
     }else{
-        [self addHomeView_MMMethodMMM];
+        [self addLoginWithRegView_MMMethodMMM];//跳到注册
     }
     
 }
@@ -240,25 +229,16 @@
 
 #pragma mark -頁面添加部分
 
--(SDKBaseView *)addAgeQuaView_MMMethodMMM
-{
-    SDKBaseView *ageQuaView = nil;
-#ifdef SDK_KR
-    
-    for (UIView *subView in [self sdkContentView].subviews) {
-        [subView removeFromSuperview];
-    }
-    ageQuaView = [[AgeQuaView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:ageQuaView];
-    
-#endif
-    return ageQuaView;
-}
 
+//这里是第一个页面
 -(SDKBaseView *)addLoginWithRegView_MMMethodMMM
 {
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    for (UIView *subView in [self sdkContentView].subviews) {
+        [subView removeFromSuperview];
+    }
     
     mLoginWithRegView = [[LoginWithRegViewV2 alloc] initView_MMMethodMMM];
     
