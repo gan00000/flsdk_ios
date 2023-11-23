@@ -44,6 +44,7 @@
 
 -(void)addView_MMMethodMMM
 {
+    /**
     //添加客服按钮
     UIView *csContentView = [[UIView alloc] init];
     csContentView.backgroundColor = UIColor.whiteColor;
@@ -99,6 +100,8 @@
     }else{
         csContentView.hidden = YES;
     }
+    
+    */
     
     //===========cs end==========
     

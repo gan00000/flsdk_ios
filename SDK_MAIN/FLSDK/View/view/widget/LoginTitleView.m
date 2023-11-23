@@ -22,45 +22,59 @@
     mhander = hander;
     self.backgroundColor = [UIColor clearColor];
     
-    //标题
-    self.titleLable = [[UILabel alloc] init];
-    self.titleLable.text = title;
-    self.titleLable.font = [UIFont systemFontOfSize:FS(24)];
-    self.titleLable.textAlignment = NSTextAlignmentCenter;
-    //   self.titleLable.backgroundColor = [UIColor clearColor];
-    self.titleLable.numberOfLines = 1;
-    self.titleLable.textColor = [UIColor whiteColor];
-    //    self.titleLable.adjustsFontSizeToFitWidth = YES;
-    [self addSubview:self.titleLable];
-    [self.titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.top.mas_equalTo(self);
-        //        make.bottom.mas_equalTo(self);
-        //        make.left.mas_equalTo(self).mas_offset(VW(40));
-        //        make.right.mas_equalTo(self).mas_offset(VW(-40));
-        make.center.mas_equalTo(self);
+    UIView *titleView = [[UIView alloc] init];
+    [self addSubview:titleView];
+    [titleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.mas_equalTo(self);
+        make.top.mas_equalTo(self);
     }];
     
-    //    UIView *backView = [[UIView alloc] init];
-    //    backView.userInteractionEnabled = YES;
-    //    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backUIView:)];
-    //    [backView addGestureRecognizer:tapGesture];
-    //
-    //    [self addSubview:backView];
-    //    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.leading.mas_equalTo(self).mas_offset(VW(34));
-    //        make.top.mas_equalTo(self);
-    //        make.width.mas_equalTo(VW(25));
-    //        make.height.mas_equalTo(self);
-    //    }];
+    UIView *tagView = [[UIView alloc] init];
+    tagView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [titleView addSubview:tagView];
+    [tagView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(titleView).mas_offset(VH(4));
+        make.bottom.mas_equalTo(titleView);
+        make.leading.mas_equalTo(titleView);
+        make.width.mas_equalTo(VW(6));
+    }];
     
-    _backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(backBtnView_MMMethodMMM:) target_MMMethodMMM:self];
-    [self addSubview:_backBtn];
+    
+    UILabel *titleLabel = [UIUtil initLabelWithText_MMMethodMMM:title fontSize_MMMethodMMM:FS(28) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
+    
+    [titleView addSubview:titleLabel];
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        //        make.center.mas_equalTo(titleView);
+        make.leading.mas_equalTo(tagView.mas_trailing).mas_offset(VW(14));
+//        make.trailing.mas_equalTo(titleView);
+        make.top.mas_equalTo(titleView);
+//        make.bottom.mas_equalTo(titleView);
+    }];
+    
+    UIView *lineLableView = [[UIView alloc] init];
+    lineLableView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [titleView addSubview:lineLableView];
+    [lineLableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(titleLabel.mas_bottom).mas_offset(VH(4));
+        make.height.mas_equalTo(2);
+        make.leading.mas_equalTo(titleLabel);
+        make.trailing.mas_equalTo(titleLabel);
+        
+        make.bottom.mas_equalTo(titleView);
+    }];
+    
+    
+    _backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:kBackBtnActTag selector:@selector(backBtnView_MMMethodMMM:) target_MMMethodMMM:self];
+    
+    [titleView addSubview:_backBtn];
     [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(self).mas_offset(VW(34));
-        make.width.mas_equalTo(VH(25));
-        make.centerY.equalTo(self);
-        make.height.mas_equalTo(VH(25));
+        //        make.center.mas_equalTo(titleView);
+        make.trailing.mas_equalTo(titleView);
+        make.centerY.mas_equalTo(titleView);
+        make.width.mas_equalTo(VH(22));
+        make.height.mas_equalTo(VH(22));
     }];
+    
     
     return self;
 }

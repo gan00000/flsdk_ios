@@ -50,9 +50,9 @@
 
 #elif SDK_KR
 
-#define BaseColor  @"#FF948B"
-#define C_BUTTON_START  @"#FF948B"
-#define C_BUTTON_END  @"#FE3D82"
+#define BaseColor  @"#02F0FE"
+#define C_BUTTON_START  @"#4FACFE"
+#define C_BUTTON_END  @"#00F2FE"
 
 #define term_title_unselect     @"#B1B1B1"
 
