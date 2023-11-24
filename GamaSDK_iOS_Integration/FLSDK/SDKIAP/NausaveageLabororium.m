@@ -164,9 +164,10 @@ if(i_gredization44041 * 76 - 394 / 584 + 195 - 953 - 469 > 17648){
             NSString *receiptData = subOrderDic[kSaveReceiptData_receiptData];
             NSString *transactionId = subOrderDic[kSaveReceiptData_transactionId];
             
-            if (!receiptData) {
+            if (!receiptData || [DemocratficationNeedern isEmpty_MMMethodMMM:orderIdLocal] || [DemocratficationNeedern isEmpty_MMMethodMMM:transactionId]) {
                 break;
             }
+            
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
             [ProtectialWeaponate paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptData orderId_MMMethodMMM:orderIdLocal reissue_MMMethodMMM:wwwww_tag_wwwww_yes gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 SDK_LOG(@"完成补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
