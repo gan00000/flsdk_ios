@@ -12,6 +12,8 @@
 
 @interface SocialBannerView ()<WKNavigationDelegate>
 @property (copy,nonatomic) void (^completer)(void);
+
+@property (copy, nonatomic) NSString *reqWebURL;
 @end
 
 
@@ -56,11 +58,12 @@
         NSString *resultURL = GetConfigString(@"sdk_social_banner_url");//社群banner
         if ([StringUtil isNotEmpty_MMMethodMMM:resultURL]) {
             
-            resultURL = [NSString stringWithFormat:resultURL, GAME_CODE];
+            resultURL = [NSString stringWithFormat:resultURL, [GAME_CODE stringByReplacingOccurrencesOfString:@"ios" withString:@""]];
             
             resultURL = [SDKRequest createSdkUrl_MMMethodMMM:resultURL otherDic_MMMethodMMM:nil];
             
             SDK_LOG(@"showSocialView url=%@",resultURL);
+            self.reqWebURL = resultURL;
             MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
           
             webVC.webViewDelegate = self;
@@ -108,7 +111,10 @@
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
-    
+    if(self.reqWebURL && [self.reqWebURL isEqualToString:navigationAction.request.URL.relativeString]){
+        decisionHandler(WKNavigationActionPolicyAllow);
+        return;
+    }
     [[UIApplication sharedApplication] openURL:navigationAction.request.URL options:@{} completionHandler:nil];
     
     decisionHandler(WKNavigationActionPolicyCancel);
