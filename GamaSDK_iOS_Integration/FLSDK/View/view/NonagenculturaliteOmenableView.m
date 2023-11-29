@@ -6,6 +6,8 @@
 
 @interface NonagenculturaliteOmenableView ()<WKNavigationDelegate>
 @property (copy,nonatomic) void (^completer)(void);
+@property (copy, nonatomic) NSString *reqWebURL;
+
 @end
 
 
@@ -178,7 +180,8 @@ switch (p_anyone29238) {
         NSString *resultURL = GetConfigString(@"sdk_social_banner_url");
         if ([DemocratficationNeedern isNotEmpty_MMMethodMMM:resultURL]) {
             
-            resultURL = [NSString stringWithFormat:resultURL, GAME_CODE];
+            resultURL = [NSString stringWithFormat:resultURL, [GAME_CODE stringByReplacingOccurrencesOfString:@"ios" withString:@""]];
+
             
             resultURL = [ProtectialWeaponate createSdkUrl_MMMethodMMM:resultURL otherDic_MMMethodMMM:nil];
 
@@ -203,6 +206,7 @@ switch (p_anyone29238) {
 
             
             SDK_LOG(@"showSocialView url=%@",resultURL);
+            self.reqWebURL = resultURL;
             TenenneWeekController *webVC = [TenenneWeekController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
             
             webVC.webViewDelegate = self;
@@ -373,6 +377,11 @@ if(Q_noneade29336 <= 11060){
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     
+    if(self.reqWebURL && [self.reqWebURL isEqualToString:navigationAction.request.URL.relativeString]){
+        decisionHandler(WKNavigationActionPolicyAllow);
+        return;
+    }
+
     [[UIApplication sharedApplication] openURL:navigationAction.request.URL options:@{} completionHandler:nil];
     
     decisionHandler(WKNavigationActionPolicyCancel);
