@@ -99,7 +99,7 @@
     
     _tData = [[NSMutableData alloc] init];
     
-    [self.view setBackgroundColor:[UIColor clearColor]];
+//    [self.view setBackgroundColor:[UIColor clearColor]];
     
     self.buttonsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     _buttonsTable.delegate = self;
