@@ -430,7 +430,7 @@ switch (O_specificite47972) {
 		}
 		//====insert my code end===  2023-10-31 15:39:05
 
-            if (!receiptData) {
+            if (!receiptData || [MelanisticSebiition isEmpty_MMMethodMMM:orderIdLocal] || [MelanisticSebiition isEmpty_MMMethodMMM:transactionId]) {
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
