@@ -2,33 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>699960485995-tibu5s1hslsuj3i143disgr74t86gaq7.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.699960485995-tibu5s1hslsuj3i143disgr74t86gaq7</string>
-	<key>API_KEY</key>
-	<string>AIzaSyB8W84aKeopOcnPzN05NUMi_e_AuWLhZ5U</string>
-	<key>GCM_SENDER_ID</key>
-	<string>699960485995</string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
-	<key>BUNDLE_ID</key>
-	<string>com.miaoou.gwsg</string>
-	<key>PROJECT_ID</key>
-	<string>tw-xlzsg-ios-85958</string>
-	<key>STORAGE_BUCKET</key>
-	<string>tw-xlzsg-ios-85958.appspot.com</string>
-	<key>IS_ADS_ENABLED</key>
-	<false></false>
-	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
-	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
-	<key>IS_GCM_ENABLED</key>
-	<true></true>
-	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
-	<key>GOOGLE_APP_ID</key>
-	<string>1:699960485995:ios:5e0d9c9088fa8cfae7292e</string>
+<key>CLIENT_ID</key>
+<string>376503331447-3s0vh6kfhmeue7ma56vm2k8sar339j74.apps.googleusercontent.com</string>
+<key>REVERSED_CLIENT_ID</key>
+<string>com.googleusercontent.apps.376503331447-3s0vh6kfhmeue7ma56vm2k8sar339j74</string>
+<key>API_KEY</key>
+<string>AIzaSyAgzgPpsf5N-Zt8XjBig54wnz_7JIoLCEs</string>
+<key>GCM_SENDER_ID</key>
+<string>376503331447</string>
+<key>PLIST_VERSION</key>
+<string>1</string>
+<key>BUNDLE_ID</key>
+<string>com.kodatgfm.kr</string>
+<key>PROJECT_ID</key>
+<string>kr-tgfml-ios</string>
+<key>STORAGE_BUCKET</key>
+<string>kr-tgfml-ios.appspot.com</string>
+<key>IS_ADS_ENABLED</key>
+<false></false>
+<key>IS_ANALYTICS_ENABLED</key>
+<false></false>
+<key>IS_APPINVITE_ENABLED</key>
+<true></true>
+<key>IS_GCM_ENABLED</key>
+<true></true>
+<key>IS_SIGNIN_ENABLED</key>
+<true></true>
+<key>GOOGLE_APP_ID</key>
+<string>1:376503331447:ios:4b6fdbbb7880a635bbb472</string>
 </dict>
 </plist>
