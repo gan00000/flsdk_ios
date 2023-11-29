@@ -65,7 +65,7 @@
             NSString *receiptData = subOrderDic[kSaveReceiptData_receiptData];
             NSString *transactionId = subOrderDic[kSaveReceiptData_transactionId];
             
-            if (!receiptData) {
+            if (!receiptData || [StringUtil isEmpty_MMMethodMMM:orderIdLocal] || [StringUtil isEmpty_MMMethodMMM:transactionId]) {
                 break;
             }
             SDK_LOG(@"开始补发:transactionId=%@,orderId=%@",transactionId,orderIdLocal);
