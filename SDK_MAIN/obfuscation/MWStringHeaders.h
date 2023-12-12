@@ -441,5 +441,8 @@
 #define wwwww_tag_wwwww_select_other      @"select_other"   //@"select_other"
 #define wwwww_tag_wwwww_trackEvent      @"trackEvent"   //@"trackEvent"
 #define wwwww_tag_wwwww_openSysBrowser      @"openSysBrowser"   //@"openSysBrowser"
+#define wwwww_tag_wwwww_text_waiting         @"text_waiting" //@"text_waiting"
+#define wwwww_tag_wwwww_text_change_account       @"text_change_account" //@"text_change_account"
+
 
 #endif /* Headers_h */

@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0306AFE92B283EB700CD3184 /* AutoLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0306AFE72B283EB700CD3184 /* AutoLoginView.h */; };
+		0306AFEA2B283EB700CD3184 /* AutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306AFE82B283EB700CD3184 /* AutoLoginView.m */; };
 		031533A22A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
 		031533A32A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
@@ -310,6 +312,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0306AFE72B283EB700CD3184 /* AutoLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLoginView.h; sourceTree = "<group>"; };
+		0306AFE82B283EB700CD3184 /* AutoLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLoginView.m; sourceTree = "<group>"; };
 		030FAA7428A362E200709536 /* MyTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextFiled.m; sourceTree = "<group>"; };
 		030FAA7528A362E200709536 /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
 		030FAA7928A39F0800709536 /* BaseCountTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCountTimerView.h; sourceTree = "<group>"; };
@@ -968,6 +972,8 @@
 				0392B25E2A5BA99900A3E2D6 /* RegisterAccountViewV2.m */,
 				0392B2572A5BA99900A3E2D6 /* TermsViewV2.h */,
 				0392B2602A5BA99900A3E2D6 /* TermsViewV2.m */,
+				0306AFE72B283EB700CD3184 /* AutoLoginView.h */,
+				0306AFE82B283EB700CD3184 /* AutoLoginView.m */,
 			);
 			path = view_kr;
 			sourceTree = "<group>";
@@ -1640,6 +1646,7 @@
 				0392B26E2A5BA99900A3E2D6 /* LoginWithRegViewV2.h in Headers */,
 				0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */,
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
+				0306AFE92B283EB700CD3184 /* AutoLoginView.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
 				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -1892,6 +1899,7 @@
 				0392B21A2A5BA8DC00A3E2D6 /* StringUtil.m in Sources */,
 				0392B21B2A5BA8DC00A3E2D6 /* USDefault.m in Sources */,
 				0392B21C2A5BA8DC00A3E2D6 /* NSObject+YYModel.m in Sources */,
+				0306AFEA2B283EB700CD3184 /* AutoLoginView.m in Sources */,
 				0392B21D2A5BA8DC00A3E2D6 /* YYClassInfo.m in Sources */,
 				0392B21E2A5BA8DC00A3E2D6 /* AFURLResponseSerialization.m in Sources */,
 				0392B21F2A5BA8DC00A3E2D6 /* AFHTTPSessionManager.m in Sources */,

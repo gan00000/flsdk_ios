@@ -15,11 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)openProvision_MMMethodMMM;
 +(BOOL)isAgreenProvision_MMMethodMMM;
-+(BOOL)isShowTerm_MMMethodMMM;
-
 + (void)saveAgreenProvisionState_MMMethodMMM:(BOOL)agreen;
-@property (copy,nonatomic) CCallBack mCCallBack;
-
 @end
 
 NS_ASSUME_NONNULL_END

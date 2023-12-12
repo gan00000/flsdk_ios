@@ -421,7 +421,7 @@
 #define doDeleteAccount_MMMethodMMM   ennacyVesicid_MMMethodMMM
 #define initViewWithBindType_MMMethodMMM   initRoboraneitySclereous_MMMethodMMM
 #define startCountTimer_MMMethodMMM   cardinizationPoliticsency_MMMethodMMM
-#define finishCountTimer_MMMethodMMM   fornicMegalo_MMMethodMMM
+#define onFinishCountTimer_MMMethodMMM   fornicMegalo_MMMethodMMM
 #define isAgreenProvision_MMMethodMMM   secondiseMonititude_MMMethodMMM
 #define saveAgreenProvisionState_MMMethodMMM   producehoodHyoial_MMMethodMMM
 #define bindAccount_MMMethodMMM   industryencySureain_MMMethodMMM
@@ -497,5 +497,8 @@
 #define     isShowTerm_MMMethodMMM      isShowTerm
 #define     setShowTerm_MMMethodMMM     setShowTerm
 #define    showTermViewWithBlock_MMMethodMMM    showTermViewWithBlock
+#define     addAutoLoginView_MMMethodMMM    addAutoLoginView_MMMethodMMM
+#define     cancelCountTimer_MMMethodMMM    cancelCountTimer_MMMethodMMM
+#define     onCancelTimer_MMMethodMMM    onCancelTimer_MMMethodMMM
 
 #endif  /* codeObfuscation_h */

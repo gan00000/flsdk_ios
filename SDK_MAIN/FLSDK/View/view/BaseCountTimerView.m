@@ -51,7 +51,7 @@
     
     self.totalCount--;
     if (self.totalCount < 0) {
-        [self finishCountTimer_MMMethodMMM];
+        [self onFinishCountTimer_MMMethodMMM];
     }else{
         
         if (self.countTimerDelegate) {
@@ -62,7 +62,7 @@
     
 }
 
--(void)finishCountTimer_MMMethodMMM
+-(void)onFinishCountTimer_MMMethodMMM
 {
     if (downTimer) {
         [downTimer invalidate];
@@ -71,6 +71,17 @@
     
     if (self.countTimerDelegate) {
         [self.countTimerDelegate finishTimer_MMMethodMMM];
+    }
+}
+
+-(void)cancelCountTimer_MMMethodMMM
+{
+    if (downTimer) {
+        [downTimer invalidate];
+        downTimer = nil;
+    }
+    if (self.countTimerDelegate) {
+        [self.countTimerDelegate onCancelTimer_MMMethodMMM];
     }
 }
 

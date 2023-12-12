@@ -16,6 +16,7 @@
 #import "MainHomeViewV2.h"
 #import "LoginWithRegViewV2.h"
 #import "FindPasswordViewV2.h"
+#import "AutoLoginView.h"
 
 #import "AccountModel.h"
 
@@ -37,7 +38,7 @@
     SDKPage sdkPageType;
     
     //    AccountLoginView *mAccountLoginView;
-//    SdkAutoLoginView *mAutoLoginView;
+    SDKBaseView *mAutoLoginView;
     SDKBaseView *mLoginWithRegView;
     SDKBaseView *mMainHomeView;
 //    SDKBaseView *mWelcomeBackView;
@@ -110,76 +111,14 @@
 -(void)showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE) page
 {
     
-    //    if ([TermsView openProvision_MMMethodMMM]) {//是否打开服务条款页面，没同意过需要打开
-    //        [self showTramsView];
-    //    }else{
-    //
-    //        NSString *loginType = [ConfigCoreUtil share].loginType;
-    //        if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-    //            if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {//自動登錄
-    //                NSArray *accounts = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
-    //               if (!accounts || accounts.count == 0) {
-    //                   [self addMainLoginView];
-    //                   return;
-    //               }
-    //            }else if ([loginType isEqualToString:LOGIN_TYPE_GUEST])
-    //            {
-    //                [self addMainLoginView];
-    //                return;
-    //            }
-    //             [self addAutoLoginView];
-    //
-    //        }else{
-    //             [self addMainLoginView];
-    //        }
-    //
-    //    }
-    
-    //    NSString *loginType = [ConfigCoreUtil share].loginType;
-    //    if (SDK_DATA.isNeedAutoLogin && loginType && ![loginType isEqualToString:@""]) {//是否需要自动登录
-    //        if ([loginType isEqualToString:LOGIN_TYPE_SELF]) {//自動登錄
-    //            NSArray *accounts = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
-    //           if (!accounts || accounts.count == 0) {
-    //               [self addMainLoginView];
-    //               return;
-    //           }
-    //        }else if ([loginType isEqualToString:LOGIN_TYPE_GUEST])
-    //        {
-    //            [self addMainLoginView];
-    //            return;
-    //        }
-    //         [self addAutoLoginView];
-    //
-    //    }else{
-    //         [self addMainLoginView];
-    //    }
-    
-    //test code start
-//    SDK_DATA.mConfigModel.appleLogin = NO;
-//    SDK_DATA.mConfigModel.visitorLogin = NO;
-//    SDK_DATA.mConfigModel.fbLogin = NO;
-//    SDK_DATA.mConfigModel.lineLogin = NO;
-    //test code end
-    
-//#ifdef SDK_KR
-//    
-//    if(page != CURRENT_PAGE_TYPE_AGE14_QUA){
-//
-//        if([SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] && ![SdkUtil isAlready14Age_MMMethodMMM]){
-//            [self addAgeQuaView_MMMethodMMM];
-//            return;
-//        }
-//    }
-//    
-//#endif
-    
     
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
    
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
         
-        [self addLoginWithRegView_MMMethodMMM];//自动登录
+        [self addAutoLoginView_MMMethodMMM];//自动登录
+        
         
     }else{
         [self addLoginWithRegView_MMMethodMMM];//跳到注册
@@ -252,21 +191,16 @@
 //{
 //}
 
-//-(void)addAutoLoginView //自动登录中界面
-//{
-//
-//    mAutoLoginView = [[SdkAutoLoginView alloc] initView_MMMethodMMM];
-//    mAutoLoginView.delegate = self;
-//    mAutoLoginView.theViewUIViewController = self;
-//    [self.view addSubview:mAutoLoginView];
-//
-//    [mAutoLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerX.equalTo(@(0));
-//        make.centerY.equalTo(@(0));
-//        make.width.equalTo(@(kBgWidth - 20));
-//        make.height.equalTo(@(kBgHeight * 0.5));
-//    }];
-//}
+-(void)addAutoLoginView_MMMethodMMM //自动登录中界面
+{
+
+    
+    for (UIView *subView in [self sdkContentView].subviews) {
+        [subView removeFromSuperview];
+    }
+    mAutoLoginView = [[AutoLoginView alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:mAutoLoginView];
+}
 
 //-(void)addAccountLoginView
 //{

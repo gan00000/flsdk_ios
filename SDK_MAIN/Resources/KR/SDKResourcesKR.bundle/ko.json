@@ -1,4 +1,5 @@
-{"py_old_pwd"     :   "기존 비밀번호",
+{
+"py_old_pwd"     :   "기존 비밀번호",
 "py_new_pwd" :   "새로운 비밀번호",
 "py_phone" :   "전화번호",
 "py_vfcode" :   "인증번호",

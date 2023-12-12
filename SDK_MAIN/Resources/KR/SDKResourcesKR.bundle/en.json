@@ -1,4 +1,5 @@
-{"py_old_pwd"     :  "Old Password",
+{
+"py_old_pwd"     :  "Old Password",
 "py_new_pwd"     :  "New Password",
 "py_phone"     :  "Phone number",
 "py_vfcode"     :  "Code",

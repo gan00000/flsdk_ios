@@ -343,7 +343,7 @@
                 
             } errorBlock_MMMethodMMM:^(BJError *error) {
                 
-                [self finishCountTimer_MMMethodMMM];
+                [self cancelCountTimer_MMMethodMMM];
                 [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
                 
             }];
@@ -434,6 +434,11 @@
 
 - (void)finishTimer_MMMethodMMM {
     
+    getVfCodeBtn.userInteractionEnabled = YES;
+    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+}
+
+- (void)onCancelTimer_MMMethodMMM{
     getVfCodeBtn.userInteractionEnabled = YES;
     [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }

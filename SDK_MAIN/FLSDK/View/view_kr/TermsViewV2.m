@@ -15,7 +15,6 @@
 #import "ViewUtil.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE wwwww_tag_wwwww_sdk_provisions_first_enble
-#define sdk_is_show_term  @"sdk_is_show_term"
 @interface TermsViewV2 ()
 @property (copy,nonatomic) void (^completer)(void);
 @end
@@ -31,11 +30,6 @@
     WKWebView *provisionWebView;
 //    BOOL isAgree;
     
-    UIButton *policyUrlBtn2;
-    UIButton *serviceUrlBtn2;
-    
-    NSString *policyUrl;
-    NSString *serviceUrl;
 }
 
 - (instancetype)initWithCompleter_MMMethodMMM:(void (^)(void))completer
@@ -61,7 +55,7 @@
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.1];
         
         [self landspaceView_MMMethodMMM];
-        [TermsViewV2 setShowTerm_MMMethodMMM:YES];
+        
         
     }
     return self;
@@ -95,7 +89,7 @@
 //        make.width.mas_equalTo(self);
 //        make.height.mas_equalTo(VH(40));
     }];
-    /**
+    
     UIView *tagView = [[UIView alloc] init];
     tagView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     [titleView addSubview:tagView];
@@ -104,6 +98,7 @@
         make.leading.mas_equalTo(titleView);
         make.width.mas_equalTo(VW(4));
         make.height.mas_equalTo(VH(14));
+//        make.top.mas_equalTo(titleView);
         make.bottom.mas_equalTo(titleView);
     }];
     
@@ -114,42 +109,11 @@
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.center.mas_equalTo(titleView);
-        make.leading.mas_equalTo(titleView).mas_offset(6);
+        make.leading.mas_equalTo(titleView).mas_offset(10);
         make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView);
         make.bottom.mas_equalTo(titleView);
     }];
-     */
-    
-    UIView *tagView = [[UIView alloc] init];
-    tagView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#707070"];
-    [titleView addSubview:tagView];
-    [tagView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(titleView);
-        make.width.mas_equalTo(VW(2));
-        make.height.mas_equalTo(VH(14));
-    }];
-    
-    UIButton *policyUrlBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_privacy_policy.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:privacyPolicyActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [titleView addSubview:policyUrlBtn];
-    [policyUrlBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(titleView).mas_offset(6);
-        make.trailing.mas_equalTo(titleView.mas_centerX);
-        make.top.mas_equalTo(titleView);
-        make.bottom.mas_equalTo(titleView);
-    }];
-    policyUrlBtn2 = policyUrlBtn;
-
-    UIButton *serviceUrlBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_personal_clause.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:term_title_unselect] tag_MMMethodMMM:personalClauseActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [titleView addSubview:serviceUrlBtn];
-    [serviceUrlBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(titleView.mas_centerX);
-        make.trailing.mas_equalTo(titleView).mas_offset(-6);;
-        make.top.mas_equalTo(titleView);
-        make.bottom.mas_equalTo(titleView);
-    }];
-    serviceUrlBtn2 = serviceUrlBtn;
-    
     
     UIButton *closeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_close.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
@@ -219,20 +183,9 @@
         url = [NSString stringWithFormat:TERMS_SERVICE_URL,GAME_CODE];
     }
     
-    if([url containsString:@","]){
-        NSArray *arrayUrls = [url componentsSeparatedByString:@","];
-        if(arrayUrls && arrayUrls.count > 1){
-            policyUrl = arrayUrls[1];
-            serviceUrl = arrayUrls[0];
-        }
-    }else{
-        serviceUrl = url;
-        policyUrl = url;
-    }
-    
     SDK_LOG(@"termsUrl=%@",url);
     provisionWebView = [[WKWebView alloc] init];
-    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: policyUrl]]];
+    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     [provisionWebView.scrollView setBounces:YES];
     [provisionWebView.scrollView setScrollEnabled:YES];
 //    [provisionWebView setUserInteractionEnabled:YES];
@@ -252,9 +205,6 @@
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
-            if (self.mCCallBack) {
-                self.mCCallBack(@"false", 0, nil);
-            }
             [self removeFromSuperview];
             break;
             
@@ -263,32 +213,10 @@
             if (self.completer) {
                 self.completer();
             }
-            if (self.mCCallBack) {
-                self.mCCallBack(@"true",1, nil);
-            }
+            
             [self removeFromSuperview];
             
             break;
-            
-        case privacyPolicyActTag:
-        {
-            [serviceUrlBtn2 setTitleColor:[UIColor colorWithHexString_MMMethodMMM:term_title_unselect] forState:UIControlStateNormal];
-            [policyUrlBtn2 setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateNormal];
-            
-            [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: policyUrl]]];
-            
-            break;
-        }
-        case personalClauseActTag:
-        {
-            [serviceUrlBtn2 setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateNormal];
-            [policyUrlBtn2 setTitleColor:[UIColor colorWithHexString_MMMethodMMM:term_title_unselect] forState:UIControlStateNormal];
-            
-            [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: serviceUrl]]];
-            
-            break;
-        }
-            
             
         default:
             break;
@@ -312,19 +240,6 @@
 {
     NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];
-}
-
-+(BOOL)isShowTerm_MMMethodMMM
-{
-    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
-    return [saveDefault boolForKey:sdk_is_show_term];
-}
-
-+ (void)setShowTerm_MMMethodMMM:(BOOL)value
-{
-    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
-    [saveDefault setBool:value forKey:sdk_is_show_term];
-    [saveDefault synchronize];
 }
 
 @end

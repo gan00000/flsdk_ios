@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak) id<CountTimerDelegate> countTimerDelegate;
 
 -(void)startCountTimer_MMMethodMMM;
--(void)finishCountTimer_MMMethodMMM;
+-(void)cancelCountTimer_MMMethodMMM;
 
 @end
 

@@ -249,6 +249,10 @@
 
         }];
         
+        if(!mConfigModel.visitorLogin){
+            guestLoginBtn.hidden = YES;
+        }
+        
         //免注册按钮end
         
         accountDataList = [NSMutableArray array];//账号列表数据
