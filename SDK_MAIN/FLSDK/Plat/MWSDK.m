@@ -29,8 +29,6 @@
 #import "SelectPayChannelView.h"
 #import "SocialBannerView.h"
 
-#import "ExposureController.h"
-#import "ExposureHorControllerViewController.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -277,9 +275,6 @@
     
     [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
-    if(!self.showAct){
-        [self requestShowActView];
-    }
     
 }
 
@@ -1067,25 +1062,6 @@
 //    
 //}
 
-- (void)requestShowActView
-{
-    SDK_LOG(@"requestShowActView");
-    
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
-        self.showAct = NO;
-        return;
-    }
-    
-    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        
-        self.showAct = YES;
-                
-    } errorBlock_MMMethodMMM:^(BJError *error) {
-        self.showAct = NO;
-    }];
-    
-}
 
 
 @end

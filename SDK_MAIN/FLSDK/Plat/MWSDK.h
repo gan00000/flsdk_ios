@@ -66,7 +66,6 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 @interface MWSDK : NSObject
 
-@property (nonatomic, assign) BOOL showAct;
 
 @property (nonatomic) SDKPayBlock payHandler;
 @property (nonatomic)  SDKLogoutBlock logoutHandler;
@@ -201,11 +200,11 @@ completionHandler:(SDKPayBlock) handler;
 //
 //- (void)showActView;
 
-- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
-
-- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
-
-- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
+//- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock;
+//
+//- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock;
+//
+//- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock;
 
 
 /// <#Description#>  添加本地推送通知
