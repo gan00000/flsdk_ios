@@ -489,15 +489,6 @@
         }
     }
     
-//#ifdef SDK_KR
-//
-//    if([SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] && ![SdkUtil isAlready14Age_MMMethodMMM]){
-//        [self showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_NULL)];
-//        return;
-//    }
-//
-//#endif
-    
     
     if ([MWSDK share].loginCompletionHandler) {
         LoginData *loginData = [[LoginData alloc] init];

@@ -23,8 +23,6 @@
 /* Begin PBXBuildFile section */
 		0306AFE92B283EB700CD3184 /* AutoLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0306AFE72B283EB700CD3184 /* AutoLoginView.h */; };
 		0306AFEA2B283EB700CD3184 /* AutoLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306AFE82B283EB700CD3184 /* AutoLoginView.m */; };
-		031533A22A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
-		031533A32A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03349ECF2A700E4B004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
 		0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 033774FC2AE9080E00D19EF5 /* SwitchResp.m */; };
@@ -284,7 +282,6 @@
 		03C3FB1D2A98A73000DF4DA7 /* AdjustDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C91BA72A7A377100289870 /* AdjustDelegate.m */; };
 		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
 		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
-		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -304,7 +301,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				031533A32A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,11 +522,9 @@
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		03C91BA62A7A377100289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
 		03C91BA72A7A377100289870 /* AdjustDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustDelegate.m; sourceTree = "<group>"; };
-		03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
 		03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_VN-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_VN-Info.plist"; sourceTree = "<absolute>"; };
 		03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaverDelegate.h; sourceTree = "<group>"; };
 		03D302A02A6EAF0B00ED990B /* NaverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaverDelegate.m; sourceTree = "<group>"; };
-		03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NaverThirdPartyLogin.xcframework; sourceTree = "<group>"; };
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -711,7 +705,6 @@
 				03381BE22AEF59F1008F8B57 /* FirebaseInstallations.xcframework in Frameworks */,
 				03381BDA2AEF59E0008F8B57 /* GoogleUtilities.xcframework in Frameworks */,
 				03381BDC2AEF59E4008F8B57 /* GoogleAppMeasurement.xcframework in Frameworks */,
-				03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */,
 				03381BCA2AEF594F008F8B57 /* GoogleSignIn.xcframework in Frameworks */,
 				03381BE42AEF59F4008F8B57 /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
 				03381BCE2AEF597E008F8B57 /* FirebaseCore.xcframework in Frameworks */,
@@ -773,7 +766,6 @@
 				0392B2B22A5BA9F600A3E2D6 /* GoogleSignIn.xcframework in Frameworks */,
 				0392B2B32A5BA9F600A3E2D6 /* libxml2.dylib in Frameworks */,
 				0392B2B42A5BA9F600A3E2D6 /* FBSDKLoginKit.xcframework in Frameworks */,
-				031533A22A6FB157008041CC /* NaverThirdPartyLogin.xcframework in Frameworks */,
 				0392B2B52A5BA9F600A3E2D6 /* Security.framework in Frameworks */,
 				0392B2B62A5BA9F600A3E2D6 /* CFNetwork.framework in Frameworks */,
 				0392B2B72A5BA9F600A3E2D6 /* ImageIO.framework in Frameworks */,
@@ -1160,14 +1152,6 @@
 			path = Adjust;
 			sourceTree = "<group>";
 		};
-		03C91BAD2A7A389700289870 /* AdjustSdk-4.33.6 */ = {
-			isa = PBXGroup;
-			children = (
-				03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */,
-			);
-			path = "AdjustSdk-4.33.6";
-			sourceTree = "<group>";
-		};
 		03D3029E2A6EADE700ED990B /* Naver */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,14 +1159,6 @@
 				03D302A02A6EAF0B00ED990B /* NaverDelegate.m */,
 			);
 			path = Naver;
-			sourceTree = "<group>";
-		};
-		03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */ = {
-			isa = PBXGroup;
-			children = (
-				03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */,
-			);
-			path = "Naver-v4.1.5";
 			sourceTree = "<group>";
 		};
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
@@ -1481,9 +1457,7 @@
 		32506C1924F920F900010D7B /* ThirkLib */ = {
 			isa = PBXGroup;
 			children = (
-				03C91BAD2A7A389700289870 /* AdjustSdk-4.33.6 */,
 				03349EC72A700E42004ECF5E /* AF-v6.12.1 */,
-				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
 			);

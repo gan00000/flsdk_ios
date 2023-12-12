@@ -85,11 +85,6 @@
         result = [GIDDelegate application:application openURL:url options:options];
     }
     
-#ifdef SDK_KR
-    if (!result) {//naver
-        result = [[NaverDelegate share] application:application openURL:url options:options];
-    }
-#endif
     return result;
 }
 
@@ -964,35 +959,35 @@
 //
 //#ifdef SDK_KR
 //    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
-//        
+//
 //    }];
-//    
+//
 //    UIView *superView = appTopViewController.view;
-//    
+//
 //    UIView *bgV = [[TouchEventInterruptView alloc] init];
 //    [superView addSubview:bgV];
 //    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.mas_equalTo(superView);
 //    }];
-//    
+//
 //    [bgV addSubview:aTermsViewV2];
 //    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.mas_equalTo(bgV);
 //    }];
-//    
+//
 //    aTermsViewV2.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {//弹出登录
-//        
+//
 //        [bgV removeFromSuperview];
 //        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-//            
+//
 //            [self showNoticeView];
-//            
+//
 //        }else{
 //            [self sdkLoginWithHandlerForInner];
 //        }
-//        
+//
 //    };
-//    
+//
 //#endif
 //}
 
