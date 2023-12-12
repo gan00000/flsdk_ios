@@ -196,14 +196,14 @@
 //        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_confire_reg.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        [regAccountBtn.layer setCornerRadius:VH(20)];
+        [regAccountBtn.layer setCornerRadius:VH(25)];
         regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
         [self addSubview:regAccountBtn];
         
         [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.equalTo(accountSDKTextFiledView);
             make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(40));
-            make.height.mas_equalTo(VH(40));
+            make.height.mas_equalTo(VH(50));
         }];
         
         CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
