@@ -107,7 +107,7 @@
     
     ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
     if (mConfigModel.deleteAccount) {
-        [self addDeleteAccountView_MMMethodMMM];
+//        [self addDeleteAccountView_MMMethodMMM];
     }
 
     UIView *myView = [[UIView alloc] init];

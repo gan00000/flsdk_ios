@@ -38,6 +38,8 @@
     SDKTextFiledView *accountSDKTextFiledView;
     //    UIButton *checkBoxBtn;
     UIButton *accountLoginBtn;
+    UIButton *guestLoginBtn;
+    
     UIButton *backBtn;
     
     NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
@@ -214,91 +216,40 @@
             loginGl.frame = accountLoginBtn.bounds;
         }];
 
+        //免注册按钮start
+        guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        [guestLoginBtn.layer setCornerRadius:VH(20)];
+        [self addSubview:guestLoginBtn];
         
-        UIView *loginTypeView = [[UIView alloc] init];
-        [self addSubview:loginTypeView];
-        [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(accountSDKTextFiledView);
-            //            make.bottom.mas_equalTo(self).mas_offset(VH(-10));
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(16));
-            //            make.centerX.mas_equalTo(self);
-//            make.height.mas_equalTo(btn_h);
+        CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
+        [guestLoginBtn.layer addSublayer:mGl];
+        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+            mGl.frame = guestLoginBtn.bounds;
         }];
         
-       
-        UILabel *otherLabelTips = [[UILabel alloc] init];
-        otherLabelTips.font = [UIFont systemFontOfSize:FS(11)];
-        otherLabelTips.text = wwwww_tag_wwwww_text_login_other.localx;
-        otherLabelTips.numberOfLines = 1; //0为多行
-        otherLabelTips.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-        
-        [loginTypeView addSubview:otherLabelTips];
-        [otherLabelTips mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(loginTypeView.mas_leading);
-            make.centerY.mas_equalTo(loginTypeView);
-            
+        [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(10));
+            make.leading.trailing.mas_equalTo(accountLoginBtn);
+            make.height.mas_equalTo(accountLoginBtn);
         }];
         
-        CGFloat btn_w = VW(34);
-        CGFloat btn_h = btn_w;
-        CGFloat margin_leading = VW(35);
+        UILabel *guestLable = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_guest_login_btn.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:UIColor.whiteColor];
+        [guestLoginBtn addSubview:guestLable];
+        [guestLable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(guestLoginBtn);
+        }];
         
-        NSMutableArray *loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:YES];
-        UIView *leadingView = otherLabelTips;
-       
-        for (int i = 0; i < loginBtnDatas.count; i++) {
-            
-            LoginButtonData *lbd = loginBtnDatas[i];
-            UIView *btnView;
-            
-            if ([lbd.btnType isEqualToString:LOGIN_TYPE_APPLE]) {
-                
-                if (@available(iOS 13.0, *)) {
-                    
-                    ASAuthorizationAppleIDButton *appleLoginBtn = [[ASAuthorizationAppleIDButton alloc]initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn
-                                                                                                              authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
-                    [appleLoginBtn addTarget:self action:@selector(registerViewBtnAction_MMMethodMMM:) forControlEvents:(UIControlEventTouchUpInside)];
-                    appleLoginBtn.tag = lbd.tag;
-                    appleLoginBtn.cornerRadius = btn_w / 2.0;
-                    btnView = appleLoginBtn;
-                }
-                
-            }else{
-                
-                LoginTypeButton *mBtn = [[LoginTypeButton alloc] initWithType_MMMethodMMM:lbd.tag title_MMMethodMMM:@"" image_MMMethodMMM:lbd.image selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-                
-                btnView = mBtn;
-            }
-            
-            if (btnView) {
-                
-                [loginTypeView addSubview:btnView];
-                [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
-                    make.width.mas_equalTo(btn_w);
-                    make.height.mas_equalTo(btn_h);
-                    make.top.mas_equalTo(loginTypeView);
-                    make.bottom.mas_equalTo(loginTypeView);
-                    
-                    if (i == 0) {
-                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(VW(12));
-                    }else{
-                        make.leading.mas_equalTo(leadingView.mas_trailing).mas_offset(margin_leading);
-                    }
-                    if (i == loginBtnDatas.count - 1) {
-                        make.trailing.mas_equalTo(loginTypeView);
-                    }
-                }];
-                
-                leadingView = btnView;
-                
-            }
-            
-            
-        }
         
-//        if (mConfigModel.deleteAccount) {
-//            [self addDeleteAccountView_MMMethodMMM];
-//        }
+        UIImageView *guestIconIv = [UIUtil initImageViewWithImage_MMMethodMMM:image_guest_iocn];
+        [guestLoginBtn addSubview:guestIconIv];
+        [guestIconIv mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.mas_equalTo(guestLable.mas_leading).mas_offset(VH(-10));
+            make.centerY.mas_equalTo(guestLoginBtn);
+            make.height.width.mas_equalTo(VH(18));
+
+        }];
+        
+        //免注册按钮end
         
         accountDataList = [NSMutableArray array];//账号列表数据
         
