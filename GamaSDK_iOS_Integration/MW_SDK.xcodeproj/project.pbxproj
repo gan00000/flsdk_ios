@@ -66,6 +66,7 @@
 		0306B0322B29C5E300CD3184 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		0306B0332B29C5E300CD3184 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9229D9900200890B3B /* GTMSessionFetcher.xcframework */; };
 		0306B0342B29C5E300CD3184 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9729D9900200890B3B /* nanopb.xcframework */; };
+		0306B0392B29C6F800CD3184 /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030D36092999F437001AAFC0 /* GoogleService-Info.plist */; };
 		03349ECC2A700E49004ECF5E /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */; };
 		033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 033774FB2AE9080E00D19EF5 /* SwitchResp.h */; };
@@ -106,7 +107,7 @@
 		0381EC76298B5677006D6100 /* TableacityErrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381EC64298B5677006D6100 /* TableacityErrView.m */; };
 		0381EC77298B5677006D6100 /* PictaceousDieotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0381EC65298B5677006D6100 /* PictaceousDieotView.h */; };
 		0381EC78298B5677006D6100 /* UponNihiliseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0381EC66298B5677006D6100 /* UponNihiliseView.h */; };
-		0381EC7B298B5703006D6100 /* MWSDK_V5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B268A298B555300045C53 /* MWSDK_V5.framework */; };
+		0381EC7B298B5703006D6100 /* MWSDK_TW5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B268A298B555300045C53 /* MWSDK_TW5.framework */; };
 		0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */; };
 		039B25F0298B555300045C53 /* NSString+StaticeDegreeit.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+StaticeDegreeit.h */; };
 		039B25F2298B555300045C53 /* ProsuleNominileView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* ProsuleNominileView.h */; };
@@ -482,7 +483,7 @@
 		0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* AudaciitLiquecy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudaciitLiquecy.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* AudaciitLiquecy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudaciitLiquecy.m; sourceTree = "<group>"; };
-		039B268A298B555300045C53 /* MWSDK_V5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039B268A298B555300045C53 /* MWSDK_TW5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_TW5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
 		039DBCB529419C00007EAD2F /* MWStringHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWStringHeaders.h; sourceTree = "<group>"; };
@@ -782,7 +783,7 @@
 			files = (
 				039E6ECC29D9900300890B3B /* FirebaseAuth.xcframework in Frameworks */,
 				03588C3C29B75FDD00D9CF84 /* SwiftUI.framework in Frameworks */,
-				0381EC7B298B5703006D6100 /* MWSDK_V5.framework in Frameworks */,
+				0381EC7B298B5703006D6100 /* MWSDK_TW5.framework in Frameworks */,
 				039B26A0298B557400045C53 /* AppTrackingTransparency.framework in Frameworks */,
 				039B26A1298B557400045C53 /* AdServices.framework in Frameworks */,
 				039B26A4298B557400045C53 /* MapKit.framework in Frameworks */,
@@ -1599,7 +1600,7 @@
 		CEE6B3721A148B1E009E77FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				039B268A298B555300045C53 /* MWSDK_V5.framework */,
+				039B268A298B555300045C53 /* MWSDK_TW5.framework */,
 				039B26EB298B557400045C53 /* SDK_DEMO_V5.app */,
 				0337751F2AEA675D00D19EF5 /* MWRES.bundle */,
 			);
@@ -1685,6 +1686,7 @@
 				039B25F0298B555300045C53 /* NSString+StaticeDegreeit.h in Headers */,
 				0306B0042B29ABA500CD3184 /* PterficationOnlyaneousView.h in Headers */,
 				0306B00C2B29ABA500CD3184 /* DesRhombentView.h in Headers */,
+				0306B0392B29C6F800CD3184 /* MWStringHeaders.h in Headers */,
 				039B25F2298B555300045C53 /* ProsuleNominileView.h in Headers */,
 				039B25F3298B555300045C53 /* GamaSDK+FishBety.h in Headers */,
 				0349F8F32AD7F9590015750A /* OctavileFieldController.h in Headers */,
@@ -1746,9 +1748,9 @@
 			productReference = 0337751F2AEA675D00D19EF5 /* MWRES.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		039B25ED298B555300045C53 /* MWSDK_V5 */ = {
+		039B25ED298B555300045C53 /* MWSDK_TW5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 039B2687298B555300045C53 /* Build configuration list for PBXNativeTarget "MWSDK_V5" */;
+			buildConfigurationList = 039B2687298B555300045C53 /* Build configuration list for PBXNativeTarget "MWSDK_TW5" */;
 			buildPhases = (
 				039B25EE298B555300045C53 /* Headers */,
 				039B2605298B555300045C53 /* Sources */,
@@ -1759,9 +1761,9 @@
 			);
 			dependencies = (
 			);
-			name = MWSDK_V5;
+			name = MWSDK_TW5;
 			productName = MWSDK;
-			productReference = 039B268A298B555300045C53 /* MWSDK_V5.framework */;
+			productReference = 039B268A298B555300045C53 /* MWSDK_TW5.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		039B268B298B557400045C53 /* SDK_DEMO_V5 */ = {
@@ -1819,7 +1821,7 @@
 			projectRoot = "";
 			targets = (
 				039B268B298B557400045C53 /* SDK_DEMO_V5 */,
-				039B25ED298B555300045C53 /* MWSDK_V5 */,
+				039B25ED298B555300045C53 /* MWSDK_TW5 */,
 				037C6F6C287686B10041EC34 /* XCFrameworkMake */,
 				0337751E2AEA675D00D19EF5 /* MWRES */,
 			);
@@ -2051,7 +2053,7 @@
 		};
 		0381EC7A298B56E1006D6100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 039B25ED298B555300045C53 /* MWSDK_V5 */;
+			target = 039B25ED298B555300045C53 /* MWSDK_TW5 */;
 			targetProxy = 0381EC79298B56E1006D6100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2557,7 +2559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		039B2687298B555300045C53 /* Build configuration list for PBXNativeTarget "MWSDK_V5" */ = {
+		039B2687298B555300045C53 /* Build configuration list for PBXNativeTarget "MWSDK_TW5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039B2688298B555300045C53 /* Debug */,
