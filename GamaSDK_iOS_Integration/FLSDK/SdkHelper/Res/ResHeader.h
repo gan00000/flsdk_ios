@@ -1,11 +1,11 @@
 
-#import "SUtil.h"
-#import "AlertUtil.h"
-#import "ResReader.h"
-#import "NSString+URLEncoding.h"
+#import "PuteeDamnsive.h"
+#import "AsacleChronible.h"
+#import "MinacparticulariorArctreachite.h"
+#import "NSString+ArgentousCameraaceous.h"
 
 
-#define SDKRES    [ResReader reader_MMMethodMMM]
+#define SDKRES    [MinacparticulariorArctreachite reader_MMMethodMMM]
 #define GetConfigString(key) [SDKRES getStringForKey_MMMethodMMM:key]
 #define GetConfigBool(key) [SDKRES getBoolForKey_MMMethodMMM:key]
 #define GetString(key) [SDKRES getLocalizedStringForKey_MMMethodMMM:key]

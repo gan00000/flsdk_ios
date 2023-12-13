@@ -59,9 +59,9 @@
 #define act_menu_unselect_bg   @"certainlyess_telagainstose_img"
 #define activity_img_title   @"stageal_humoftenit_img"
 
-#define XIB_ExposureController   @"ExposureController"
-#define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
-#define XIB_MenuCell   @"MenuCell"
+#define XIB_ExposureController   @"OctavileFieldController"
+#define XIB_ExposureHorControllerViewController   @"LithowardTenenneController"
+#define XIB_MenuCell   @"InvestmentibilityExperiencementCell"
 
 
 #endif /* imageNameHeader_h */
