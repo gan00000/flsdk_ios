@@ -1,10 +1,4 @@
-//
-//  MWWebView.m
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/10/26.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "MWWebView.h"
 #import "MWSDK.h"
@@ -24,13 +18,7 @@
 
 @implementation MWWebView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -72,7 +60,6 @@
     
     self.backgroundView = [[UIView alloc] init];
     [self addSubview:self.backgroundView];
-//    self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
     [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
     }];
@@ -123,31 +110,28 @@
 
 #pragma mark - WKNavigationDelegate
 
-//2、当WebView开始加载Web内容时触发；
-- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   //system_method
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   
 {
     SDK_LOG(@"页面开始加载webView didStartProvisionalNavigation");
     
 }
-- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation 
 {
     SDK_LOG(@"页面开始返回webView didCommitNavigation");
 }
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation 
 {
     SDK_LOG(@"页面完成加载webView didFinishNavigation");
     
 }
 
-//当Web视图正在加载内容时发生错误时调用;
-- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    
 {
     SDK_LOG(@"webView didFailNavigation withError");
     
 }
 
-//在发送请求之前，决定是否跳转
--(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  
 {
     SDK_LOG(@"webView decidePolicyForNavigationAction decisionHandler");
     if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
@@ -160,13 +144,11 @@
     }
 }
 
-//1、当Web视图收到服务器重定向时调用；
-- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    
 {
     SDK_LOG(@"服务器重定向 didReceiveServerRedirectForProvisionalNavigation");
 }
 
-//服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
     if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) {
@@ -177,25 +159,25 @@
 }
 
 #pragma mark - WKUIDelegate
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   
 {
     SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
     }]];
-    //
+    
     [appTopViewController presentViewController:alert animated:YES completion:NULL];
     
 }
 
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  //system_method
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  
 {
     SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
 }
 
 
--(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures  //system_method
+-(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures  
 {
     SDK_LOG(@"completionHandler createWebViewWithConfiguration windowFeatures");
     WKFrameInfo *frameInfo = navigationAction.targetFrame;
@@ -206,7 +188,7 @@
 }
 
 #pragma mark - WKUserContentController
-- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message   //system_method
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message   
 {
     SDK_LOG(@"userContentController message=%@", message.name);
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -238,13 +220,12 @@
 }
 
 #pragma mark - KVO
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change  context:(void *)context {  //system_method
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change  context:(void *)context {  
     
     if ([wwwww_tag_wwwww_loading isEqualToString:keyPath]) {
         
     } else if (object == self.wkwebView && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
         
-//        self.titleLabel.text = self.wkwebView.title;
         
     } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
@@ -284,7 +265,6 @@
 - (void)dealloc
 {
     SDK_LOG(@"MWWebView dealloc");
-//    [self releaseAll];
 }
 
 @end

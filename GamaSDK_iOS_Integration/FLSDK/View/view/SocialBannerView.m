@@ -1,10 +1,4 @@
-//
-//  SocialBannerView.m
-//  MW_SDK
-//
-//  Created by Gan Yuanrong on 2023/10/19.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "SocialBannerView.h"
 #import "SDKRequest.h"
@@ -55,7 +49,7 @@
         }];
         
         
-        NSString *resultURL = GetConfigString(@"sdk_social_banner_url");//社群banner
+        NSString *resultURL = GetConfigString(@"sdk_social_banner_url");
         if ([StringUtil isNotEmpty_MMMethodMMM:resultURL]) {
             
             resultURL = [NSString stringWithFormat:resultURL, [GAME_CODE stringByReplacingOccurrencesOfString:@"ios" withString:@""]];

@@ -1,9 +1,4 @@
-//
-//  NSString+Local.m
-//  MWSDK
-//
-//  Created by Gan Yuanrong on 2022/8/1.
-//
+
 
 #import "NSString+Local.h"
 #import "ResHeader.h"

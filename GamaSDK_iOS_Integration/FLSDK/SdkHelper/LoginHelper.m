@@ -1,10 +1,4 @@
-//
-//  LoginHelper.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/21.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
 
 #import "LoginHelper.h"
 #import "SAppleLogin.h"
@@ -72,8 +66,8 @@
         }];
         
     } andErrorBlock_MMMethodMMM:^(NSError * _Nullable error) {
-        //           [GamaUtils gamaStopLoadingAtView:self.view];
-        //        [GamaAlertView showAlertWithMessage_MMMethodMMM:GetString(error?GAMA_TEXT_NO_NET:GAMA_TEXT_SERVER_RETURN_NULL)];
+        
+        
     }];
     [[SAppleLogin share] handleAuthrization:currentView];
 }
@@ -81,7 +75,7 @@
 
 +(void)fbLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate
 {
-    //    FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+    
     [[FBDelegate share] loginWithPesentingViewController_MMMethodMMM:nil isForceInappLogin_MMMethodMMM:NO andIsForceReAuthorize_MMMethodMMM:NO andSuccessBlock_MMMethodMMM:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
         
         NSDictionary *otherParamsDic = nil;
@@ -176,7 +170,7 @@
 
 
 + (void)lineLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate{
-    //    LineDelegate *mLineDelegate = [[LineDelegate alloc] init];
+    
     
     [[LineDelegate share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
@@ -275,7 +269,7 @@
     }
     if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
-        //        FBDelegate *mFBDelegate = [[FBDelegate alloc] init];
+        
         [[FBDelegate share] loginWithPesentingViewController_MMMethodMMM:nil isForceInappLogin_MMMethodMMM:NO andIsForceReAuthorize_MMMethodMMM:NO andSuccessBlock_MMMethodMMM:^(NSString * _Nonnull fbUserId, NSString * _Nonnull fbUserName, NSString * _Nonnull fbIdToken) {
             
             NSMutableDictionary *fbParamsDic = nil;
@@ -336,25 +330,25 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         
-        //        [[LineDelegate share] startLoginWithCallBack_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-        //
-        //            NSDictionary *otherParamsDic = nil;
-        //            @try {
-        //                otherParamsDic = @{
-        //                    wwwww_tag_wwwww_lineAccessToken        :accessToken,
-        //
-        //                };
-        //
-        //            } @catch (NSException *exception) {
-        //
-        //            }
-        //
-        //            [self bindAccountAndRequest_MMMethodMMM:delegate view_MMMethodMMM:currentView account_MMMethodMMM:account pwd_MMMethodMMM:password thirdId_MMMethodMMM:userID thirdPlate_MMMethodMMM:LOGIN_TYPE_LINE otherParamsDic_MMMethodMMM:otherParamsDic];
-        //
-        //
-        //        } fail_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
-        //
-        //        }];
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         if ([StringUtil isEmpty_MMMethodMMM:currentAccountModel.thirdId]) {
             return;
@@ -378,7 +372,7 @@
             cc.data.password = password;
             cc.data.loginType = LOGIN_TYPE_SELF;
             
-            //记录升级事件
+            
             [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
             [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
             

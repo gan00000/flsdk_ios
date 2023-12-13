@@ -1,10 +1,4 @@
-//
-//  SDKTextFiledView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "SDKTextFiledView.h"
 #import "UIUtil.h"
@@ -59,8 +53,8 @@
 - (void) addContentView_MMMethodMMM:(SDKTextFiledView_Type) type
 {
     
-    //    self.backgroundColor = [UIColor whiteColor];
-    //    self.layer.cornerRadius = 4;
+    
+    
     
     NSString *iconName;
     NSString *lableName;
@@ -105,13 +99,13 @@
         case SDKTextFiledView_Type_Password_New:
             iconName = mw_passowrd_icon;
             lableName = wwwww_tag_wwwww_scientist_misceair;
-            placeholderText = wwwww_tag_wwwww_scientist_misceair;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_NEW);
+            placeholderText = wwwww_tag_wwwww_scientist_misceair;
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
             lableName = wwwww_tag_wwwww_fontmentionry_labor;
-            placeholderText = wwwww_tag_wwwww_fontmentionry_labor;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_OLD);
+            placeholderText = wwwww_tag_wwwww_fontmentionry_labor;
             showEye = YES;
             break;
             
@@ -125,7 +119,7 @@
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading);
         make.centerY.mas_equalTo(self);
-        make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
+        make.height.mas_equalTo(VH(21));
         make.width.mas_equalTo(self.lableIconImageView.mas_height);
     }];
     
@@ -162,17 +156,16 @@
         mUITextField.delegate = SDK_DATA.mUITextFieldDelegate;
     }
     
-//    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
     
-    // 设置placeholder文字大小和居中显示
-    //    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
-    //    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
+    
+    
+    
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
     mUITextField.attributedPlaceholder = attrStr;
-    //mUITextField.placeholder = placeholderText;
+    
     
     [self addSubview:mUITextField];
     [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -186,7 +179,7 @@
     if (addMoreAccountBtn) {
         
         self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
-        //        self.moreAccountBtn.hidden = YES;
+        
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
         [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -205,7 +198,7 @@
     if (showEye) {
         mUITextField.secureTextEntry = NO;
         eyeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        eyeBtn.selected = YES;//设置为选择
+        eyeBtn.selected = YES;
         mUITextField.secureTextEntry = YES;
         
         eyeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -227,7 +220,7 @@
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        //make.width.mas_equalTo(0.5);
+        
         make.leading.trailing.mas_equalTo(self);
         make.bottom.mas_equalTo(self);
         
@@ -250,13 +243,12 @@
 - (void) addContentView_v2_MMMethodMMM:(SDKTextFiledView_Type) type
 {
     
-    //    self.backgroundColor = [UIColor whiteColor];
+    
     self.layer.cornerRadius = VH(20);
     self.layer.borderWidth = 0.5;
     self.layer.borderColor = [UIColor whiteColor].CGColor;
     
     NSString *iconName;
-//    NSString *lableName;
     BOOL showEye = NO;
     BOOL addMoreAccountBtn = NO;
     UIKeyboardType mUIKeyboardType = UIKeyboardTypeDefault;
@@ -298,13 +290,13 @@
         case SDKTextFiledView_Type_Password_New:
             iconName = mw_passowrd_icon;
             
-            placeholderText = wwwww_tag_wwwww_text_input_new_pwd.localx;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_NEW);
+            placeholderText = wwwww_tag_wwwww_text_input_new_pwd.localx;
             showEye = YES;
             break;
         case SDKTextFiledView_Type_Password_Old:
             iconName = mw_passowrd_icon;
             
-            placeholderText = wwwww_tag_wwwww_py_input_old_password.localx;//GetString(wwwww_tag_wwwww_TXT_PH_ACCOUNT_INPUT_PWD_OLD);
+            placeholderText = wwwww_tag_wwwww_py_input_old_password.localx;
             showEye = YES;
             break;
             
@@ -318,7 +310,7 @@
     [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading).mas_offset(VW(18));
         make.centerY.mas_equalTo(self);
-        make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
+        make.height.mas_equalTo(VH(21));
         make.width.mas_equalTo(self.lableIconImageView.mas_height);
     }];
     
@@ -355,17 +347,16 @@
         mUITextField.delegate = SDK_DATA.mUITextFieldDelegate;
     }
     
-//    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
     
-    // 设置placeholder文字大小和居中显示
-    //    NSMutableParagraphStyle *style = [mUITextField.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
-    //    style.minimumLineHeight = mUITextField.font.lineHeight - (mUITextField.font.lineHeight - [UIFont systemFontOfSize:14.0].lineHeight) / 2.0;
+    
+    
+    
     
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
     mUITextField.attributedPlaceholder = attrStr;
-    //mUITextField.placeholder = placeholderText;
+    
     
     [self addSubview:mUITextField];
     [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -379,7 +370,7 @@
     if (addMoreAccountBtn) {
         
         self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
-        //        self.moreAccountBtn.hidden = YES;
+        
         self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.moreAccountBtn];
         [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -398,7 +389,7 @@
     if (showEye) {
         mUITextField.secureTextEntry = NO;
         eyeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        eyeBtn.selected = YES;//设置为选择
+        eyeBtn.selected = YES;
         mUITextField.secureTextEntry = YES;
         
         eyeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -421,7 +412,7 @@
     [self addSubview:lineView2];
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        //make.width.mas_equalTo(0.5);
+        
         make.leading.trailing.mas_equalTo(self);
         make.bottom.mas_equalTo(self);
         
@@ -444,25 +435,24 @@
 - (void)eyeViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     
-    if (sender.selected) { // 按下去了就是明文
+    if (sender.selected) { 
         
         NSString *tempPwdStr = mUITextField.text;
-        mUITextField.text = @""; // 这句代码可以防止切换的时候光标偏移
+        mUITextField.text = @""; 
         mUITextField.secureTextEntry = NO;
         mUITextField.text = tempPwdStr;
         
-    } else { // 暗文
+    } else { 
         
         NSString *tempPwdStr = mUITextField.text;
         mUITextField.text = @"";
         mUITextField.secureTextEntry = YES;
         mUITextField.text = tempPwdStr;
     }
-    // 切换按钮的状态
+    
     sender.selected = !sender.selected;
 }
 
-//点击账号记录下拉列表
 - (void)clickItemBtn_MMMethodMMM:(UIButton *)sender
 {
     if (self.clickAccountListItem) {
@@ -470,14 +460,12 @@
     }
 }
 
-////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者wwwww_tag_wwwww_lubricite_nearaceous都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
-///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
     SDK_LOG(@"textChanged=>%@",sender.text);
     
     if (sender.text && [sender.text containsString:@" "]) {
-        NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格
+        NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];
         self.inputUITextField.text = tempStr;
     }
     

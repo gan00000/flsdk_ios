@@ -1,10 +1,4 @@
-//
-//
-//
-//
-//
-//
-//
+
 
 #import "AlertUtil.h"
 #import "UIAlertController+Sdk.h"
@@ -17,7 +11,6 @@
 static NSArray<UIViewController *> *presentViewControllers;
 
 #pragma mark - Alert
-//简单显示Alert的方法
 +(void)showAlertWithMessage_MMMethodMMM:(NSString *)message
 {
     NSString *tmp = @"OK";
@@ -27,7 +20,6 @@ static NSArray<UIViewController *> *presentViewControllers;
                       andButtonTitles_MMMethodMMM:tmp, nil];
 }
 
-//显示允许更多定制的方法
 +(UIAlertView *)showAlertWithMessage_MMMethodMMM:(NSString *)message
                           completion:(SAlertViewHandler)handler
                      andButtonTitles_MMMethodMMM:(NSString *)buttonTitles,...
@@ -51,7 +43,6 @@ static NSArray<UIViewController *> *presentViewControllers;
                               completion:handler];
 }
 
-//yao: 显示定制的alertView
 + (UIAlertView *)showAlertViewWithTitle_MMMethodMMM:(NSString *)title
                                 message_MMMethodMMM:(NSString *)message
                              completion:(SAlertViewHandler)handler
@@ -82,7 +73,7 @@ static NSArray<UIViewController *> *presentViewControllers;
                             buttonTitles_MMMethodMMM:(NSArray *)buttonTitles
                               completion:(SAlertViewHandler)handler
 {
-    if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 8)//yao: 用alertController方法
+    if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 8)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             
@@ -91,7 +82,7 @@ static NSArray<UIViewController *> *presentViewControllers;
                                                                               preferredStyle:UIAlertControllerStyleAlert];
             
             NSInteger index = 0;
-            //yao: 添加各種按鈕actions
+            
             for (NSString *str in buttonTitles)
             {
                 UIAlertAction *action = [UIAlertAction actionWithTitle:str
@@ -113,7 +104,7 @@ static NSArray<UIViewController *> *presentViewControllers;
         
         return nil;
     }
-    else//yao: 用alertView方法
+    else
     {
         UIAlertView * alert=[[UIAlertView alloc]initWithTitle:title
                                                       message:message
@@ -121,7 +112,7 @@ static NSArray<UIViewController *> *presentViewControllers;
                              [SAlertViewDelegate creatDelegateWithBack_MMMethodMMM:handler]
                                             cancelButtonTitle:nil
                                             otherButtonTitles:nil];
-        //添加各種按鈕
+        
         for (NSString *str in buttonTitles)
         {
             [alert addButtonWithTitle:str];
@@ -148,7 +139,7 @@ static NSArray<UIViewController *> *presentViewControllers;
     {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
         
-        //添加按钮
+        
         if (destructiveBtnTitle) {
             UIAlertAction *destructiveAction = [UIAlertAction actionWithTitle:destructiveBtnTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
                 block(0);
@@ -186,7 +177,7 @@ static NSArray<UIViewController *> *presentViewControllers;
             [alertController show:YES];
         }
         
-        //如果没有按钮，自动延迟消失
+        
         if (cancelBtnTitle == nil && destructiveBtnTitle == nil && otherButtonTitles == nil) {
             [self performSelector:@selector(dismissAlertController_MMMethodMMM:) withObject:alertController afterDelay:GamaAlertViewShowTime];
         }
@@ -206,7 +197,7 @@ static NSArray<UIViewController *> *presentViewControllers;
         
         [actionSheet showInView:[SUtil getCurrentViewController_MMMethodMMM].view];
         
-        //如果没有按钮，自动延迟消失
+        
         if (cancelBtnTitle == nil && otherButtonTitles == nil) {
             [self performSelector:@selector(dismissActionSheet_MMMethodMMM:) withObject:actionSheet afterDelay:GamaAlertViewShowTime];
         }
