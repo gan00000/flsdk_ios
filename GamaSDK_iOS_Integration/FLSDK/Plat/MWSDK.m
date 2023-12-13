@@ -54,6 +54,12 @@
 
 @implementation MWSDK
 
+- (NSString *) decodeSdkContent:(NSString *)data
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:data];
+}
+
+
 /**
  应用间跳转
  
@@ -134,7 +140,7 @@
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
     });
-    
+    _shareSP.sdkBaseEncryptKey = @"smw-tw5-1213";
     return _shareSP;
 }
 

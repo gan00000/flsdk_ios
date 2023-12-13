@@ -7,6 +7,8 @@
 
 #define FL_SDK_VERSION      @"1.0.8"
 
+#define Decrypt_AllStringContent(text)  [[MWSDK share] decodeSdkContent:text]
+
 // 追踪事件名称
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
 #define AD_EVENT_LOGIN_SUCCESS  wwwww_tag_wwwww_LOGIN_SUCCESS
@@ -83,6 +85,8 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
  @return MWSDK 单例对象
  */
 + (instancetype)share;
+
+- (NSString *) decodeSdkContent:(NSString *)data;
 
 /**
  应用跳转回调（适用于 iOS 8 及以下）
