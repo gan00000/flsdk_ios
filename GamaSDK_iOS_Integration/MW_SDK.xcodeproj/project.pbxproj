@@ -401,10 +401,6 @@
 		0337E0122AE104CC00F171B1 /* SocialBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialBannerView.h; sourceTree = "<group>"; };
 		0337E0132AE104CC00F171B1 /* SocialBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBannerView.m; sourceTree = "<group>"; };
 		0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscationForMethodName.h; sourceTree = "<group>"; };
-		033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesVN.bundle; sourceTree = "<group>"; };
-		033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_snmxw_vntest.json; sourceTree = "<group>"; };
-		033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
 		034558BD285B0B120025EFB2 /* FBDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDelegate.h; sourceTree = "<group>"; };
 		034558BE285B0B120025EFB2 /* FBDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDelegate.m; sourceTree = "<group>"; };
 		034558D1285C25210025EFB2 /* AccountListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountListView.h; sourceTree = "<group>"; };
@@ -456,9 +452,6 @@
 		0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesV5.bundle; sourceTree = "<group>"; };
 		0389B3172861B7B30024E62E /* LoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHelper.h; sourceTree = "<group>"; };
 		0389B3182861B7B30024E62E /* LoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHelper.m; sourceTree = "<group>"; };
-		0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesKR.bundle; sourceTree = "<group>"; };
-		0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0392B2E42A5BED6E00A3E2D6 /* com_kodatgfm_kr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_kodatgfm_kr.json; sourceTree = "<group>"; };
 		039B268A298B555300045C53 /* MWSDK_V5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_V5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EB298B557400045C53 /* SDK_DEMO_V5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B26EC298B557400045C53 /* SDK_DEMO_V5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_V5-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_V5-Info.plist"; sourceTree = "<absolute>"; };
@@ -557,7 +550,6 @@
 		03C91BA62A7A377100289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
 		03C91BA72A7A377100289870 /* AdjustDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustDelegate.m; sourceTree = "<group>"; };
 		03C91BAE2A7A389700289870 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
-		03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "adjust-info-vnmxwios.plist"; sourceTree = "<group>"; };
 		03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaverDelegate.h; sourceTree = "<group>"; };
 		03D302A02A6EAF0B00ED990B /* NaverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaverDelegate.m; sourceTree = "<group>"; };
 		03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NaverThirdPartyLogin.xcframework; sourceTree = "<group>"; };
@@ -980,18 +972,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		033B32F329D56E3200AE9F96 /* VN */ = {
-			isa = PBXGroup;
-			children = (
-				03C91BB12A7A415000289870 /* adjust-info-vnmxwios.plist */,
-				033B332529D6BEBC00AE9F96 /* com_miaoou_gwsg.json */,
-				033B32F429D56E3200AE9F96 /* SDKResourcesVN.bundle */,
-				033B32F629D56E3200AE9F96 /* GoogleService-Info.plist */,
-				033B32F729D56E3200AE9F96 /* com_snmxw_vntest.json */,
-			);
-			path = VN;
-			sourceTree = "<group>";
-		};
 		034558BC285B0AEA0025EFB2 /* FB */ = {
 			isa = PBXGroup;
 			children = (
@@ -1035,16 +1015,6 @@
 				0381EC63298B5677006D6100 /* TermsViewV2.m */,
 			);
 			path = view_v5;
-			sourceTree = "<group>";
-		};
-		0392B2D92A5BAADA00A3E2D6 /* KR */ = {
-			isa = PBXGroup;
-			children = (
-				0392B2E42A5BED6E00A3E2D6 /* com_kodatgfm_kr.json */,
-				0392B2DA2A5BAADA00A3E2D6 /* SDKResourcesKR.bundle */,
-				0392B2DB2A5BAADA00A3E2D6 /* GoogleService-Info.plist */,
-			);
-			path = KR;
 			sourceTree = "<group>";
 		};
 		039E6E8929D9900200890B3B /* Facebook-v16.1.1 */ = {
@@ -1666,10 +1636,8 @@
 		E974121820874A170018E1A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0392B2D92A5BAADA00A3E2D6 /* KR */,
 				32506C1924F920F900010D7B /* ThirkLib */,
 				030D35FF2999F1E0001AAFC0 /* V5 */,
-				033B32F329D56E3200AE9F96 /* VN */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2340,7 +2308,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SDK_DEMO_V5-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				INFOPLIST_KEY_CFBundleDisplayName = v5demo;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2406,7 +2374,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SDK_DEMO_V5-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "放置动画demo";
+				INFOPLIST_KEY_CFBundleDisplayName = v5demo;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
