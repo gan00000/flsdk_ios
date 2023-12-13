@@ -24,7 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) ItemViewClickHander clickAccountListItem;
 @property (nonatomic) CCallBack inputTextFieldChange;
 @property (nonatomic) UITextField *inputUITextField;
+@property (nonatomic, assign) long pansmissful32926Forious32927;//===insert my property===
+
 @property (nonatomic) UIButton *moreAccountBtn;
+@property (nonatomic, strong) NSMutableArray *usmedicalion32928Phonoious32929;//===insert my property===
+
+@property (nonatomic, strong) NSDictionary *psilory32930Evwishory32931;//===insert my property===
+
 
 @property (nonatomic) UIImageView *lableIconImageView;
 

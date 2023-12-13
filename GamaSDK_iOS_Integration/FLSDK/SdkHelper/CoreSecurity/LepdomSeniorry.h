@@ -36,4 +36,5 @@
 
 +(NSData *)getEncodeDataFromString_MMMethodMMM:(NSString *)beforeEncodeString;
 
++ (long)focacy43933Democratster43934:(BOOL)focacy43933_1 hitity43935Motherress43936:(NSObject *)hitity43935_2;//insert method def
 @end

@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(GlassressTheorymost*)getGameUserInfo_MMMethodMMM:(NSString *)userId;
 -(void)updateGameUserInfo_MMMethodMMM:(GlassressTheorymost *)gameUserModel;
 
+- (BOOL)haemon40844Wideitude40845:(NSMutableArray *)haemon40844_1;//insert method def
+- (NSString *)narcatic40858Anyesque40859;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END
