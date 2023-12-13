@@ -284,7 +284,7 @@
 		039E6F2129D9900300890B3B /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039E6EA829D9900200890B3B /* GoogleSignIn.bundle */; };
 		039E6F2629D9900300890B3B /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA929D9900200890B3B /* GoogleSignIn.xcframework */; };
 		039E6F2B29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
-		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
+		03BB67A62A122A630027185C /* smw-tw5-1213.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* smw-tw5-1213.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -544,7 +544,7 @@
 		03B919242860AECB0029AE6A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		03B919252860AECB0029AE6A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		03B919262860AECB0029AE6A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		03BB67A52A122A630027185C /* com_miaoou_gwsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_miaoou_gwsg.json; sourceTree = "<group>"; };
+		03BB67A52A122A630027185C /* smw-tw5-1213.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "smw-tw5-1213.json"; sourceTree = "<group>"; };
 		03C05CA628AE5F6B0060F4CD /* BasePopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePopupView.h; sourceTree = "<group>"; };
 		03C05CA728AE5F6B0060F4CD /* BasePopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		03C91BA62A7A377100289870 /* AdjustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustDelegate.h; sourceTree = "<group>"; };
@@ -836,7 +836,7 @@
 		030D35FF2999F1E0001AAFC0 /* V5 */ = {
 			isa = PBXGroup;
 			children = (
-				03BB67A52A122A630027185C /* com_miaoou_gwsg.json */,
+				03BB67A52A122A630027185C /* smw-tw5-1213.json */,
 				030D36092999F437001AAFC0 /* GoogleService-Info.plist */,
 				0381EC7C298B5AE4006D6100 /* SDKResourcesV5.bundle */,
 			);
@@ -1817,7 +1817,7 @@
 				039E6F2129D9900300890B3B /* GoogleSignIn.bundle in Resources */,
 				039E6ED629D9900300890B3B /* NOTICES in Resources */,
 				030D360A2999F437001AAFC0 /* GoogleService-Info.plist in Resources */,
-				03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */,
+				03BB67A62A122A630027185C /* smw-tw5-1213.json in Resources */,
 				039E6EDB29D9900300890B3B /* README.md in Resources */,
 				0381EC7D298B5AE4006D6100 /* SDKResourcesV5.bundle in Resources */,
 				039B269D298B557400045C53 /* Images.xcassets in Resources */,
