@@ -21,7 +21,7 @@
 
 #import "MWStringHeaders.h"
 #import "imageNameHeader.h"
-//#import "codeObfuscationForMethodName.h"
+#import "codeObfuscationForMethodName.h"
 
 #import "ColorHeader.h"
 
