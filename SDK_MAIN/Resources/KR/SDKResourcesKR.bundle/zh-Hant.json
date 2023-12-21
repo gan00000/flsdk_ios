@@ -75,17 +75,12 @@
 
 "py_auto_login_change"      :   "切換帳號",
 
-"py_login_autologin_tips"      :   "帳號 %1$s 正在登入",
-
 "py_msg_account_hint"      :   "請輸入您的帳號",
 
 "py_confire"      :   "確 認",
-"gama_toast_msg_app_not_install"      :   "由於您沒有安裝%s，請先裝APP後再進行分享",
 
 "py_register_success"      :   "註冊成功",
 
-"py_login_mac_tips"      :   "你登入 %1$s 的帳號和密碼如下:\n帳號: %2$s 密碼: %3$s",
-"py_login_mac_saveimage_tips"      :   "你的帳號密碼已經保存到相簿中",
 "py_login_autologin_logining_tips"      :   "帳號正在登入",
 
 "py_account_login"      :   "帳號登入",
@@ -124,9 +119,6 @@
 "text_has_bind_tips_mw"     :   "會員帳號",
 "text_account_bind_success2"     :   "升級會員帳號成功",
 "text_account_not_login"  :  "當前沒有帳號，請先登入",
-"text_age_is14"  :  "你是否已滿14周歲",
-"text_age_not14_logout"  :  "注：如果您未滿14周歲，請盡快退出，該應用不對14周歲以下用戶開放",
-"text_age_already_14"  :  "已滿14周歲",
 "text_has_upgrade_account"     :  "已升級為會員帳號",
 "text_privacy_policy"  :  "隱私政策",
 "text_personal_clause"  :  "個人條款",

@@ -75,17 +75,12 @@
 
 "py_auto_login_change"      :  "Switching accounts",
 
-"py_login_autologin_tips"      :  "Account %1$s Loging",
-
 "py_msg_account_hint"      :  "Enter your account number",
 
 "py_confire"      :  "Confirmation",
-"gama_toast_msg_app_not_install"      :  "Since you do not have %s installed, please install the app first and then share",
 
 "py_register_success"      :  "successful",
 
-"py_login_mac_tips"      :  "You are logged in %1$s the account number and password are as follows:\n account: %2$s password: %3$s",
-"py_login_mac_saveimage_tips"      :  "Your account password has been saved to the album",
 "py_login_autologin_logining_tips"      :  "Account is logging in",
 
 "py_account_login"      :  "Account Login",
@@ -124,9 +119,6 @@
 "text_has_bind_tips_mw"     :  "Member Account",
 "text_account_bind_success2"  :  "Upgrade member account successfully",
 "text_account_not_login"  :  "You do not have an account, please login first！",
-"text_age_is14"  :  "Are you over 14 years old",
-"text_age_not14_logout"  :  "Note: If you are under the age of 14, please exit as soon as possible, this application is not open to users under the age of 14",
-"text_age_already_14"  :  "over 14 years old",
 "text_has_upgrade_account"     :  "Account has been upgraded",
 "text_privacy_policy"  :  "Privacy policy",
 "text_personal_clause"  :  "Personal clause",

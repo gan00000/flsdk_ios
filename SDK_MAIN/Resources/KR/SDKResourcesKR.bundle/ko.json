@@ -75,17 +75,12 @@
 
 "py_auto_login_change" :   "계정 변경",
 
-"py_login_autologin_tips" :   "%1$s 계정으로 로그인 중",
-
 "py_msg_account_hint" :   "계정을 입력하세요.",
 
 "py_confire" :   "확 인",
-"gama_toast_msg_app_not_install" :   "%s 앱이 설치되어 있지 않습니다. 앱을 설치한 후 다시 공유하세요.",
 
 "py_register_success" :   "회원가입 성공",
 
-"py_login_mac_tips" :   "%1$s에 로그인한 계정과 비밀번호는 다음과 같습니다.\n계정: %2$s 비밀번호: %3$s",
-"py_login_mac_saveimage_tips" :   "계정과 비밀번호를 앨범에 저장했습니다.",
 "py_login_autologin_logining_tips" :   "계정 로그인 중",
 
 "py_account_login" :   "계정 로그인",
@@ -124,9 +119,6 @@
 "text_has_bind_tips_mw" :   "회원 계정",
 "text_account_bind_success2" :   "회원 계정으로 업그레이드 성공했습니다.",
 "text_account_not_login" :  "현재 계정이 없습니다. 먼저 로그인하세요.",
-"text_age_is14" :  "14세 미만입니까?",
-"text_age_not14_logout" :  "주의: 14세 미만이라면 빠르게 로그아웃하세요. 14세 미만 사용자는 이 앱을 사용할 수 없습니다.",
-"text_age_already_14" :  "14세 이상입니다.",
 "text_has_upgrade_account"     :  "회원 계정으로 업그레이드됨",
 "text_privacy_policy"  :  "개인정보",
 "text_personal_clause"  :  "이용약관",

@@ -1,0 +1,132 @@
+{
+"py_old_pwd"     :   "รหัสผ่านเก่า",
+"py_new_pwd"     :   "รหัสผ่านใหม่",
+"py_phone"     :   "โทรศัพท์",
+"py_vfcode"     :   "รหัสยืนยัน",
+"guest_login_btn"     :   "เข้าสู่ระบบของแขก",
+"tips_have_account"     :   "มีบัญชีอยู่แล้ว?",
+
+"text_register"     :   "ลงทะเบียน",
+"text_login_other"     :   "เข้าสู่ระบบอื่นๆ",
+"text_reg_tips"     :   "*กล่องจดหมายของบัญชีจะถูกใช้เป็นกล่องจดหมายยืนยันในการรับรหัสผ่านของคุณ โปรดป้อนอย่างระมัดระวัง",
+"text_get_vfcode"     :   "ส่งรหัสยืนยัน",
+
+"py_register_account_hit"     :   "กรุณากรอกที่อยู่อีเมลปกติของคุณ",
+"py_register_password_hit"     :   "กรุณากรอก 6–20 ตัวอักษร",
+"py_msg_vfcode_hint"     :   "กรุณากรอกรหัสยืนยัน",
+"text_input_new_pwd"     :   "กรุณากรอกรหัสผ่านใหม่",
+"text_input_new_pwd_confire"     :   "ยืนยันรหัสผ่านใหม่",
+"text_update_account_tips"     :   "ขอแนะนำให้อัปเกรดบัญชีของคุณเพื่อปรับปรุงความปลอดภัยของบัญชี",
+"text_has_update_account_tips"     :   "บัญชีนี้ได้รับการอัปเกรดเป็นบัญชีแพลตฟอร์มแล้ว",
+"text_delete_account"     :   "ลบบัญชีนี้",
+"text_confire_change"     :   "ยืนยันการเปลี่ยนแปลง",
+"text_confire_update"     :   "ยืนยันการอัพเกรด",
+"text_change_pwd"     :   "เปลี่ยนรหัสผ่าน",
+"text_bind_account_tips"     :   "*กล่องจดหมายของบัญชีจะถูกใช้เป็นกล่องจดหมายยืนยันในการรับรหัสผ่านของคุณ โปรดป้อนอย่างระมัดระวัง",
+
+"text_forgot_pwd"     :   "ลืมรหัสผ่าน",
+"text_welcome_back"     :   "ยินดีต้อนรับกลับ",
+"text_go_game"     :   "เล่นเกมต่อ",
+"text_update_account"     :   "อัปเกรดบัญชี",
+
+"text_term_not_read"   :   "โปรดยอมรับ \"สัญญาตายตัว\" ก่อน",
+"text_confire_reg"     :   "ยืนยันการลงทะเบียน",
+"text_pwd_format"     :   "รหัสผ่านรองรับเพียง 6~20 ตัวอักษรเท่านั้น",
+"text_account_format"     :   "รูปแบบกล่องจดหมายไม่ปกติ โปรดป้อนใหม่",
+
+"py_error_occur"     :   "เครือข่ายผิดปกติ โปรดตรวจสอบและลองอีกครั้ง",
+"text_i_agree_tips"     :   "ฉันได้อ่านและเห็นด้วย",
+"text_term_moqie"     :   "<u>สัญญาตายตัว</u>",
+"sdk_terms_title"     :   "สัญญาตายตัว",
+"text_switch_account"     :   "สลับบัญชี",
+"text_update_account_bind"     :   "อัปเกรดบัญชี",
+"text_pwd_not_equel"     :   "รหัสผ่านสองตัวไม่สอดคล้องกัน",
+"py_input_old_password"     :   "กรุณากรอกรหัสผ่านเก่า",
+"text_free_register"     :   "เข้าสู่ระบบโดยไม่ต้องลงทะเบียน",
+"text_old_new_pwd_same"     :   "รหัสผ่านใหม่ต้องไม่เหมือนกับรหัสผ่านเก่า",
+"text_cancel"     :   "ยกเลิก",
+"text_confire"     :   "ยืนยัน",
+"text_delete_account_tips"     :   "โปรดทราบว่าการลบบัญชีของคุณจะเป็นการลบบัญชีของคุณออกจากแพลตฟอร์มอย่างสมบูรณ์ หากคุณยืนยันการลบ โปรดคลิก \"ยืนยัน\"",
+"text_account_bind_success"     :   "อัปเกรดบัญชีสมาชิกสำเร็จ เข้าสู่ระบบ..",
+"text_account_change_pwd_success"     :   "แก้ไขสำเร็จ กำลังเข้าสู่ระบบ...",
+"text_account_reg_success"   :   "註冊成功，正在登入...",
+"text_send_vf_code_success"     :   "รหัสยืนยันถูกส่งไปแล้ว โปรดตรวจสอบอย่างละเอียด",
+"text_finish_pay"     :   "ชำระเงินเรียบร้อยแล้ว",
+"text_account_not_exist"     :   "บัญชีไม่มีอยู่",
+
+"text_ui_term_port_read2"      :   "ฉันได้อ่านและเห็นด้วย",
+
+"py_login_save_account"      :   "จำบัญชี",
+"py_findpwd"      :   "ลืมรหัสผ่านเหรอ?",
+"py_register_account"      :   "ลงทะเบียนบัญชี",
+"py_register_account_phone"      :   "กรุณากรอกหมายเลขโทรศัพท์มือถือของคุณ",
+
+"py_login_page_change_pwd"      :   "เปลี่ยนรหัสผ่าน",
+
+
+"py_login_page_account_bind"      :   "ผูกบัญชีสมาชิก",
+"py_btn_bind"      :   "ผูกมัดสมาชิกภาพ",
+
+"account_bind"      :   "การผูกบัญชี",
+
+"py_account_empty"      :   "บัญชีต้องไม่ว่างเปล่า",
+"py_password_empty"      :   "รหัสผ่านต้องไม่เว้นว่าง",
+"py_vfcode_empty"      :   "กรุณากรอกรหัสยืนยัน",
+
+"py_auto_login_change"      :   "สลับบัญชี",
+
+"py_msg_account_hint"      :   "กรุณากรอกบัญชีของคุณ",
+
+"py_confire"      :   "ยืนยัน",
+
+"py_register_success"      :   "ความสำเร็จในการลงทะเบียน",
+
+"py_login_autologin_logining_tips"      :   "บัญชีกำลังเข้าสู่ระบบ",
+
+"py_account_login"      :   "ลงชื่อเข้าใช้",
+
+"py_login_success"      :   "ลงชื่อเข้าใช้สำเร็จ",
+"py_account"      :   "หมายเลขบัญชี",
+"py_password"      :   "รหัสผ่าน",
+
+"py_login_fb"     :   "เข้าสู่ระบบ Facebook",
+"py_login_fb_1"     :   "เข้าสู่ระบบ FB",
+"py_login_google"     :   "เข้าสู่ระบบ Google",
+
+"text_select_account" :   "โปรดเลือกบัญชีก่อน",
+"text_input_account" :   "กรุณากรอกบัญชีของคุณ",
+"text_input_pwd" :   "กรุณากรอกรหัสผ่าน",
+"text_login"     :   "เข้าสู่ระบบ",
+"text_close"     :   "ปิด",
+"text_agree_read_tips"     :   "อ่านแล้วเห็นด้วย",
+"text_title_notice"     :   "ประกาศ",
+"text_area_code"     :   "รหัสพื้นที่",
+"text_please_input_phone"      :   "กรุณากรอกหมายเลขโทรศัพท์",
+"text_phone_bind"      :   "การผูกโทรศัพท์มือถือ",
+"text_has_phone_bind_tips"      :   "คุณถูกผูกมัดเรียบร้อยแล้ว นี่คือหมายเลขโทรศัพท์มือถือที่คุณผูกไว้ในปัจจุบัน",
+"text_select_phone_area_title"      :   "กรุณาเลือกรหัสพื้นที่ของโทรศัพท์มือถือของคุณ",
+
+"text_area_code_not_empty"     :   "รหัสพื้นที่โทรศัพท์มือถือต้องไม่เว้นว่าง",
+"text_phone_not_empty"     :   "หมายเลขโทรศัพท์ต้องไม่เว้นว่าง",
+"text_phone_not_match"     :   "รูปแบบหมายเลขโทรศัพท์มือถือไม่ถูกต้อง",
+"text_vfcode_has_send"     :   "ส่งรหัสยืนยันแล้ว",
+"text_phone_bind_success"     :   "ผูกโทรศัพท์มือถือสำเร็จ",
+"text_has_bind_tips_google"     :   "Google ได้รับการอัปเกรดเป็นบัญชีสมาชิกแล้ว",
+"text_has_bind_tips_fb"     :   "Facebook ได้รับการอัปเกรดเป็นบัญชีสมาชิกแล้ว",
+"text_has_bind_tips_guest"     :   "ผู้เยี่ยมชมได้รับการอัปเกรดเป็นบัญชีสมาชิกแล้ว",
+"text_has_bind_tips_line"     :   "LINE ได้รับการอัปเกรดเป็นบัญชีสมาชิกแล้ว",
+"text_has_bind_tips_apple"     :   "Apple ได้รับการอัปเกรดเป็นบัญชีสมาชิกแล้ว",
+"text_has_bind_tips_mw"     :   "บัญชีสมาชิก",
+"text_account_bind_success2"     :   "อัปเกรดบัญชีสมาชิกสำเร็จแล้ว",
+"text_account_not_login"  :  "ขณะนี้คุณไม่มีบัญชี กรุณาเข้าสู่ระบบก่อน",
+"text_has_upgrade_account"     :  "บัญชีสมาชิกถูกผูกมัด",
+"text_privacy_policy"  :  "นโยบายความเป็นส่วนตัว",
+"text_personal_clause"  :  "เงื่อนไขส่วนบุคคล",
+"text_personal_clause_and_privacy_policy"  :  "สัญญาตายตัว",
+"text_customer" :   "ศูนย์รับเรื่องร้องเรียนลูกค้า",
+"text_select_pay_channel"   :   "เลือกวิธีการชำระเงิน",
+"text_pay_pay"      :   "มูลค่าที่เก็บไว้",
+"text_waiting"      :   "ซึ่งรอคอย...",
+"text_change_account"      :   "สลับบัญชี"
+
+}
