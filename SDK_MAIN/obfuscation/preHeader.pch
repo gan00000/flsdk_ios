@@ -11,6 +11,8 @@
 
 #define SDK_CODE_OBFUSCATION   1  //是否开启方法混淆
 
+#define SDK_FOR_APP      1
+
 //#define SDK_V2      1
 //#define SDK_V3      1
 //#define SDK_V4      1

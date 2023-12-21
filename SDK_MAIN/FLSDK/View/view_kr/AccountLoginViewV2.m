@@ -327,6 +327,10 @@
         };
     }
     
+#ifdef SDK_FOR_APP
+    guestLoginBtn.hidden = YES;
+#endif
+    
     return self;
 }
 
@@ -399,6 +403,7 @@
         }
         
     };
+    
 }
 
 

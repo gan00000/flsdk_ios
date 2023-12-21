@@ -23,12 +23,13 @@
     SDKTextFiledView *accountSDKTextFiledView;
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *passwordAgainSDKTextFiledView;
-//    SDKTextFiledView *vfCodeFiledView;
+    SDKTextFiledView *vfCodeFiledView;
     UIButton *regAccountBtn; //確定按鈕
     LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
-//    NSTimer *downTimer;
-//    UIButton *getVfCodeBtn;
+    NSTimer *downTimer;
+    
+    UIButton *getVfCodeBtn;
     
 //    PhoneView *mPhoneView;
     
@@ -91,11 +92,42 @@
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
+            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
         }];
+        
+#ifdef SDK_FOR_APP
+        getVfCodeBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+
+        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
+        getVfCodeBtn.layer.borderWidth = 1;
+        getVfCodeBtn.layer.cornerRadius = VH(20);
+        [self addSubview:getVfCodeBtn];
+        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+            make.width.mas_equalTo(VW(100));
+            make.height.mas_equalTo(accountSDKTextFiledView);
+            
+        }];
+        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        
+        //驗證碼输入框
+        vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
+        
+        [self addSubview:vfCodeFiledView];
+        [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(getVfCodeBtn);
+            make.bottom.equalTo(getVfCodeBtn);
+            
+            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+//            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
+            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
+        }];
+        
+#endif
         
         UILabel *tipsUILabel = [[UILabel alloc] init];
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
@@ -108,92 +140,15 @@
         [self addSubview:tipsUILabel];
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.equalTo(accountSDKTextFiledView);
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).offset(8);
+            if(vfCodeFiledView){
+                make.top.mas_equalTo(vfCodeFiledView.mas_bottom).offset(8);
+            }else{
+                make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).offset(8);
+            }
     
         }];
         
-//        //账号
-//        accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-//
-//        [self addSubview:accountSDKTextFiledView];
-//
-//        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.mas_equalTo(self);
-//            //make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(kInputTextFiledTopMargin * 1.2);
-//            make.width.mas_equalTo(self).mas_offset(-VW(55));
-//            make.height.mas_equalTo(VH(56));
-//            if (self.bindType == 0) {
-//                make.top.equalTo(self);
-//            }else{
-//                make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(24));
-//            }
-//        }];
-//
-//
-//        //密碼
-//        passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-//
-//        [self addSubview:passwordSDKTextFiledView];
-//
-//        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-//        }];
-//
-//
-//        //再次輸入密碼
-//        passwordAgainSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
-//
-//        [self addSubview:passwordAgainSDKTextFiledView];
-//
-//        [passwordAgainSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//            make.top.equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-//        }];
-//
-//
-//        mPhoneView = [[PhoneView alloc] initView_MMMethodMMM];
-//
-//        [self addSubview:mPhoneView];
-//        [mPhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(passwordAgainSDKTextFiledView.mas_bottom).mas_offset(VH(10));
-//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-//        }];
-//
-//        //验证码
-//        vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
-//
-//        [self addSubview:vfCodeFiledView];
-//        [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(mPhoneView.mas_bottom).mas_offset(VH(10));
-//            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
-//            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-//        }];
-//
-//        getVfCodeBtn = [UIUtil initBtnWithTitle2:wwwww_tag_wwwww_cipitite_stateain tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//
-//        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_ff3e37].CGColor;
-//        getVfCodeBtn.layer.borderWidth = 1;
-//        getVfCodeBtn.layer.cornerRadius = 10;
-//        getVfCodeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-//        [getVfCodeBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_ff3e37] forState:0];
-//        [self addSubview:getVfCodeBtn];
-//        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.bottom.equalTo(vfCodeFiledView);
-//            make.leading.mas_equalTo(vfCodeFiledView.mas_trailing).offset(6);
-//            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing).offset(-4);
-//
-//        }];
-//        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        
         
         regAccountBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_confire_reg.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [regAccountBtn.layer setCornerRadius:VH(25)];
@@ -212,44 +167,77 @@
             gl.frame = regAccountBtn.bounds;
         }];
 
-        
-        
-//        UILabel *loginTipsLable = [[UILabel alloc] init];
-//        loginTipsLable.text = wwwww_tag_wwwww_quintial_determineie;
-//        loginTipsLable.font = [UIFont systemFontOfSize:10];
-//        loginTipsLable.textAlignment = NSTextAlignmentCenter;
-//        loginTipsLable.backgroundColor = [UIColor clearColor];
-//        loginTipsLable.numberOfLines = 1;
-//        loginTipsLable.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF3E37];
-//        loginTipsLable.adjustsFontSizeToFitWidth = YES;
-//
-//        [self addSubview:loginTipsLable];
-//        [loginTipsLable mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.centerX.mas_equalTo(self);
-//            make.top.mas_equalTo(regAccountBtn.mas_bottom).mas_offset(VH(10));
-//            make.height.mas_equalTo(VH(20));
-//            make.width.mas_equalTo(self).mas_offset(-VW(10));
-//
-//        }];
-//
-//        if ( self.bindType == 0) {
-//            mLoginTitleView.hidden = YES;
-//        }else{
-//            mLoginTitleView.titleLable.text = GetString(wwwww_tag_wwwww_BTN_TITLE_BIND_ACCOUNT);
-//            //    [registorAccountBtn setImage:GetImage(wwwww_tag_wwwww_btn_bind_account_png) forState:UIControlStateNormal];
-//            //    [registorAccountBtn setImage:GetImage(wwwww_tag_wwwww_btn_bind_account_png) forState:UIControlStateHighlighted];
-//
-//            [regAccountBtn setTitle:GetString(wwwww_tag_wwwww_GAMA_REGISTER_BIND_CONFIRM_TEXT) forState:(UIControlStateNormal)];
-//        }
     }
     return self;
 }
+
+//倒计时
+-(void)downTime_MMMethodMMM{
+    
+    phoneCountdown = 60;
+    getVfCodeBtn.userInteractionEnabled = NO;
+    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
+    //getVfCodeBtn.layer.masksToBounds = YES;
+    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    if (downTimer) {
+        [downTimer invalidate];
+        downTimer = nil;
+    }
+    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                 target:self
+                                               selector:@selector(phoneFireTimer_MMMethodMMM)
+                                               userInfo:nil
+                                                repeats:YES];
+    
+    
+}
+
+- (void)phoneFireTimer_MMMethodMMM {
+    phoneCountdown--;
+    if (phoneCountdown < 0) {
+        [self resetVfCodeBtnStatue_MMMethodMMM];
+    }else{
+        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+    }
+    
+}
+
+-(void)resetVfCodeBtnStatue_MMMethodMMM
+{
+    if (downTimer) {
+        [downTimer invalidate];
+        downTimer = nil;
+    }
+    getVfCodeBtn.userInteractionEnabled = YES;
+    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+}
+
+- (void)dealloc
+{
+    
+    if (downTimer) {
+        [downTimer invalidate];
+        downTimer = nil;
+    }
+}
+
 
 
 - (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
     switch (sender.tag) {
             
+        case kGetVfCodeActTag:
+        {
+            SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
+            NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            if (![SdkUtil validUserName_MMMethodMMM:account]) {
+                return;
+            }
+            [self requestVfCodeByEmail_MMMethodMMM:account];
+        }
+            break;
             
         case kRegisterAccountActTag:
         {
@@ -270,8 +258,19 @@
             if (![SdkUtil validPwd_MMMethodMMM:pwd]) {
                 return;
             }
+            
+            NSString *vfCode = @"";
+#ifdef SDK_FOR_APP
+            
+            vfCode = vfCodeFiledView.inputUITextField.text;
+            if([StringUtil isEmpty_MMMethodMMM:vfCode]){
+                [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_vfcode_empty)];
+                return;
+            }
+            
+#endif
           
-            [LoginHelper accountRegister_MMMethodMMM:self.delegate view_MMMethodMMM:self areaCode_MMMethodMMM:@"" name:accountName password_MMMethodMMM:pwd phoneNum_MMMethodMMM:@"" vfCode_MMMethodMMM:@""];
+            [LoginHelper accountRegister_MMMethodMMM:self.delegate view_MMMethodMMM:self areaCode_MMMethodMMM:@"" name:accountName password_MMMethodMMM:pwd phoneNum_MMMethodMMM:@"" vfCode_MMMethodMMM:vfCode];
             
         }
             break;
@@ -279,6 +278,19 @@
         default:
             break;
     }
+}
+
+
+- (void)requestVfCodeByEmail_MMMethodMMM:(NSString *)email
+{
+    
+    [SDKRequest requestVfCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@""  email_MMMethodMMM:email interfaces_MMMethodMMM:@"1" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_send_vf_code_success)];
+        [self downTime_MMMethodMMM];
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [self resetVfCodeBtnStatue_MMMethodMMM];
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
+    }];
 }
 
 @end

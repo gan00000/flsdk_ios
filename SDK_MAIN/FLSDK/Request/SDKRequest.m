@@ -479,6 +479,7 @@
             wwwww_tag_wwwww_phone            :phoneN,
             wwwww_tag_wwwww_vfCode           :vfCode,
             wwwww_tag_wwwww_registPlatform   :LOGIN_TYPE_SELF,
+//            wwwww_tag_wwwww_interfaces       :interfaces,
         };
         [params addEntriesFromDictionary:dic];
     } @catch (NSException *exception) {
@@ -587,7 +588,7 @@
             wwwww_tag_wwwww_vfCode           :vfCode,
             wwwww_tag_wwwww_verifyCode       :vfCode,
             wwwww_tag_wwwww_email            :email,
-            wwwww_tag_wwwww_interfaces       :interfaces,
+//            wwwww_tag_wwwww_interfaces       :interfaces,
         };
         
         [params addEntriesFromDictionary:dic];
@@ -649,7 +650,7 @@
             wwwww_tag_wwwww_registPlatform   :thirdPlate,
             wwwww_tag_wwwww_loginMode        :thirdPlate,
             
-            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
+//            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
             wwwww_tag_wwwww_phoneAreaCode    :phoneAreaCode,
             wwwww_tag_wwwww_phone            :phoneN,
             wwwww_tag_wwwww_vfCode           :vfCode,
@@ -704,7 +705,7 @@
             wwwww_tag_wwwww_registPlatform   :accountMode.loginType,
             wwwww_tag_wwwww_loginMode        :accountMode.loginType,
             
-            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
+//            wwwww_tag_wwwww_interfaces       :wwwww_tag_wwwww_2,
             wwwww_tag_wwwww_phoneAreaCode    :@"",
             wwwww_tag_wwwww_phone            :@"",
             wwwww_tag_wwwww_vfCode           :@"",

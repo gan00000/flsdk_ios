@@ -9,8 +9,6 @@
 
 #import "AlertUtil.h"
 
-#import "ExposureController.h"
-#import "ExposureHorControllerViewController.h"
 
 #import <UserNotifications/UserNotifications.h>
 
