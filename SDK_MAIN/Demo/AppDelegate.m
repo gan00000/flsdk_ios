@@ -61,17 +61,17 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 }
 
 
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-   
-    return [[MWSDK share]application:application
-                        openURL:url
-            sourceApplication:sourceApplication
-                    annotation:annotation];
-}
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation
+//{
+//   
+//    return [[MWSDK share]application:application
+//                        openURL:url
+//            sourceApplication:sourceApplication
+//                    annotation:annotation];
+//}
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
@@ -101,10 +101,10 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-    NSLog(@"AppDelegate supportedInterfaceOrientationsForWindow");
-    return [[MWSDK share] application:application supportedInterfaceOrientationsForWindow:window];
-}
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+//    NSLog(@"AppDelegate supportedInterfaceOrientationsForWindow");
+//    return [[MWSDK share] application:application supportedInterfaceOrientationsForWindow:window];
+//}
 
 //- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
 //    // Called when a new scene session is being created.

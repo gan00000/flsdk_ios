@@ -144,7 +144,7 @@
              *********************************************/
         case 0:
         {
-            [[MWSDK share] sdkLoginWithHandler:^(LoginData *loginData) {
+            [[MWSDK share] dyLoginWithBlock:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -163,7 +163,7 @@
             
         case 12:
         {
-            [[MWSDK share] switchLoginWithHandler:^(LoginData *loginData) {
+            [[MWSDK share] dySwitchLoginWithBlock:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -186,7 +186,7 @@
         case 1:
         {
             
-            [[MWSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[MWSDK share] dySetRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
             
             
         }
@@ -213,7 +213,7 @@
         }
             break;
         case 4:
-            [[MWSDK share] trackEventWithEventName:AD_EVENT_CHECK_UPDATE];
+            [[MWSDK share] dyTrackWithEventName:AD_EVENT_CHECK_UPDATE];
             break;
 
         case 5:{
@@ -230,16 +230,16 @@
         }
             break;
         case 6:{
-            [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
-                
-                if (success) {
-                    NSLog(@"绑定手机成功");
-                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码 格式：区号-号码
-                }else{
-                    NSLog(@"绑定手机失败");
-                }
-                
-            }];
+//            [[MWSDK share] showBindPhoneViewWithBlock:^(BOOL success, id  _Nullable result) {
+//
+//                if (success) {
+//                    NSLog(@"绑定手机成功");
+//                    NSString *tel = [NSString stringWithFormat:@"%@",result]; //绑定的手机号码 格式：区号-号码
+//                }else{
+//                    NSLog(@"绑定手机失败");
+//                }
+//
+//            }];
             
 //            NSString *areaCode = @"";//区号，不用添加”+“
 //            NSString *telephone = @"";//号码
@@ -277,7 +277,7 @@
         }
             break;
         case 7:{
-            [[MWSDK share] showUpgradeAccountViewWithBlock:^(BOOL success, id  _Nullable result) {
+            [[MWSDK share] dyBindAccountWithBlock:^(BOOL success, id  _Nullable result) {
                 
                 if (success) {
                     NSLog(@"账号升级成功");
@@ -298,7 +298,7 @@
         }
             break;
         case 9:{
-            [[MWSDK share] openCs];
+//            [[MWSDK share] openCs];
         }
             break;
         case 10:{
@@ -323,7 +323,7 @@
     NSString *cpOrderId = [SUtil getTimeStamp_MMMethodMMM];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[MWSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[MWSDK share] dyPayWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {
@@ -349,7 +349,7 @@
     // repeats，是否重复，如果重复的话时间必须大于60s，要不会报错
     UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
     
-    [[MWSDK share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
+//    [[MWSDK share] addLocalNotificationWithTitle:@"我是定时通知" subtitle:@"我是副title" body:@"定时通知内容" trigger:trigger notifyId:@"notifyId_1"];
  
 }
 
@@ -364,7 +364,7 @@
     components.minute = 50;
     UNCalendarNotificationTrigger *calendarTrigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
-    [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
+//    [[MWSDK share] addLocalNotificationWithTitle:@"我是定期通知" subtitle:@"哈哈哈" body:@"啦啦啦游戏" trigger:calendarTrigger notifyId:@"notifyId_2"];
    
 }
 

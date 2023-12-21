@@ -500,5 +500,6 @@
 #define     addAutoLoginView_MMMethodMMM    addAutoLoginView_MMMethodMMM
 #define     cancelCountTimer_MMMethodMMM    cancelCountTimer_MMMethodMMM
 #define     onCancelTimer_MMMethodMMM    onCancelTimer_MMMethodMMM
+#define     openCsWithParams_MMMethodMMM   jacOpeka
 
 #endif  /* codeObfuscation_h */

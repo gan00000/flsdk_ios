@@ -907,7 +907,7 @@
 			children = (
 				322CBC1024C589A5000D6B20 /* UIUtils */,
 				322CBC1924C589A5000D6B20 /* view */,
-				0392B2512A5BA99900A3E2D6 /* view_kr */,
+				0392B2512A5BA99900A3E2D6 /* view_th */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -943,7 +943,7 @@
 			path = GG;
 			sourceTree = "<group>";
 		};
-		0392B2512A5BA99900A3E2D6 /* view_kr */ = {
+		0392B2512A5BA99900A3E2D6 /* view_th */ = {
 			isa = PBXGroup;
 			children = (
 				0392B2582A5BA99900A3E2D6 /* AccountLoginViewV2.h */,
@@ -967,7 +967,7 @@
 				0306AFE72B283EB700CD3184 /* AutoLoginView.h */,
 				0306AFE82B283EB700CD3184 /* AutoLoginView.m */,
 			);
-			path = view_kr;
+			path = view_th;
 			sourceTree = "<group>";
 		};
 		0392B2D92A5BAADA00A3E2D6 /* KR */ = {

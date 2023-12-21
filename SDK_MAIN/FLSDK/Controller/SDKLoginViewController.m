@@ -490,7 +490,7 @@
     }
     
     
-    if ([MWSDK share].loginCompletionHandler) {
+    if ([MWSDK share].dySDKLoginBlock) {
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
@@ -504,7 +504,7 @@
         loginData.telephone = rData.telephone;
         loginData.loginId = rData.loginId;
         
-        [MWSDK share].loginCompletionHandler(loginData);
+        [MWSDK share].dySDKLoginBlock(loginData);
     }
     
     [self dismissViewControllerAnimated:NO completion:^{

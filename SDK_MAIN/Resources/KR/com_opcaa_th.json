@@ -5,7 +5,7 @@
     "gameLanguage" : "th_TH",
     "sdk_language" : "th",
     "sdk_appId" : "1",
-    "sdk_more_language" : "1",
+    "sdk_more_language" : "0",
     "sdk_res_bundle_name" : "SDKResourcesKR",
     "sdk_url_cdn" : "https://cdn-download.tiangwl.com/",
     "sdk_url_log" : "https://log.tiangwl.com/",

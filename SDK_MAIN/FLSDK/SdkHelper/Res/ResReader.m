@@ -554,8 +554,8 @@ static dispatch_once_t onceToken;
 }
 
 - (NSString *)getSdkBaseEncryptKey_MMMethodMMM{
-    if([MWSDK share].sdkBaseEncryptKey){
-        return [MWSDK share].sdkBaseEncryptKey;
+    if([MWSDK share].dyMMMBaseEncryptKey){
+        return [MWSDK share].dyMMMBaseEncryptKey;
     }
     return [SUtil getBundleIdentifier_MMMethodMMM];
 }

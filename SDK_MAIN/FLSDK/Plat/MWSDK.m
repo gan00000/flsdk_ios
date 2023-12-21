@@ -93,27 +93,27 @@
     return YES;
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-    
-    if(self.switchInterfaceOrientationPortrait){//如果需要指定竖屏，直接返回竖屏
-        return UIInterfaceOrientationMaskPortrait;
-    }
-    
-    NSArray *infoUISupportedInterfaceOrientations_aar = [SUtil getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
-    if(!infoUISupportedInterfaceOrientations_aar){
-        return UIInterfaceOrientationMaskAll;
-    }
-    
-    if(([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]) && ([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeLeft"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeRight"])){
-        return UIInterfaceOrientationMaskAll;
-    }
-    
-    if([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]){
-        return UIInterfaceOrientationMaskPortrait;
-    }
-    
-    return UIInterfaceOrientationMaskLandscape;
-}
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+//
+//    if(self.switchInterfaceOrientationPortrait){//如果需要指定竖屏，直接返回竖屏
+//        return UIInterfaceOrientationMaskPortrait;
+//    }
+//
+//    NSArray *infoUISupportedInterfaceOrientations_aar = [SUtil getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
+//    if(!infoUISupportedInterfaceOrientations_aar){
+//        return UIInterfaceOrientationMaskAll;
+//    }
+//
+//    if(([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]) && ([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeLeft"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeRight"])){
+//        return UIInterfaceOrientationMaskAll;
+//    }
+//
+//    if([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]){
+//        return UIInterfaceOrientationMaskPortrait;
+//    }
+//
+//    return UIInterfaceOrientationMaskLandscape;
+//}
 
 /**
  应用单例
@@ -146,7 +146,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
+- (void)dyLoginWithBlock:(SDKLoginBlock)cmopleteHandler
 {
     SDK_LOG(@"sdkLoginWithHandler");
     if (![[NSThread currentThread] isMainThread]) {
@@ -155,7 +155,7 @@
         return;
     }
     
-    self.loginCompletionHandler = cmopleteHandler;
+    self.dySDKLoginBlock = cmopleteHandler;
     
 //#ifdef SDK_KR
 //
@@ -189,10 +189,10 @@
     [self sdkLoginWithHandlerForInner];
 }
 
-- (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
+- (void)dySwitchLoginWithBlock:(SDKLoginBlock)cmopleteHandler
 {
     SDK_LOG(@"switchLoginWithHandler");
-    [self sdkLoginWithHandler:cmopleteHandler];
+    [self dyLoginWithBlock:cmopleteHandler];
 }
 
 #pragma mark - 内部方法
@@ -242,7 +242,7 @@
     
 }
 
-- (void)setRoleInfoWithRoleId:(NSString *)roleId
+- (void)dySetRoleInfoWithRoleId:(NSString *)roleId
                      roleName:(NSString *)roleName
                     roleLevel:(NSString *)roleLevel
                  roleVipLevel:(NSString *)roleVipLevel
@@ -306,7 +306,7 @@
         
         self.isPaying = NO;
         
-        if (self.payHandler) {
+        if (self.dySDKPayBlock) {
             if (success) {
                 
                 BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
@@ -316,11 +316,11 @@
                 [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
                 
                 [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
-                self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
+                self.dySDKPayBlock(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 
             }else{
-                self.payHandler(SDK_PAY_STATUS_FAIL, nil);
+                self.dySDKPayBlock(SDK_PAY_STATUS_FAIL, nil);
             }
         }
         
@@ -363,10 +363,10 @@
     SDK_LOG(@"startMySdkPay myPayUrl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        self.switchInterfaceOrientationPortrait = YES;
+//        self.switchInterfaceOrientationPortrait = YES;
     };
     webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        self.switchInterfaceOrientationPortrait = NO;
+//        self.switchInterfaceOrientationPortrait = NO;
     };
     webVC.didDismissCallback = ^{
         
@@ -384,7 +384,7 @@
  
  @param payParms 充值参数
  */
-- (void)payWithRoleId:(NSString *)roleId
+- (void)dyPayWithRoleId:(NSString *)roleId
              roleName:(NSString *)roleName
             roleLevel:(NSString *)roleLevel
          roleVipLevel:(NSString *)roleVipLevel
@@ -430,7 +430,7 @@
     
     [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
-    self.payHandler = handler;
+    self.dySDKPayBlock = handler;
     
     LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
     AccountModel *accountModel = sLoginResponse.data;
@@ -441,86 +441,18 @@
         return;
     }
     //添加点击支付上报
-    [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
+    [self dyTrackWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
     self.isPaying = NO;
-//    SDK_DATA.mConfigModel.togglePay = YES;
-    if(SDK_DATA.mConfigModel.togglePay){//是否需要切换第三方支付
-        
-        [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-        [SDKRequest checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-            
-            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-            
-            if(responseData){
-                CreateOrderResp *cor = (CreateOrderResp *)responseData;
-//                cor.isTogglePay = YES;
-                if(cor.isTogglePay){
-                    //切换第三方
-                    if(cor.hideSelectChannel){
-                        
-                        [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
-                    }else{
-                        
-                        UIView *superView = appTopViewController.view;
-                        UIView *bgV = [[TouchEventInterruptView alloc] init];
-                        [superView addSubview:bgV];
-                        [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-                            make.edges.mas_equalTo(superView);
-                        }];
-                        
-                        SelectPayChannelView *mSelectPayChannelView = [[SelectPayChannelView alloc] init];
-                        mSelectPayChannelView.mCallBack = ^(NSString *msg, NSInteger tag, NSDictionary *dic) {
-                            
-                            switch (tag) {
-                               
-                                case TAG_PAY_CHANNEL_OTHER:
-                                    [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
-                                    [self trackEventWithEventName:AD_EVENT_SELECT_OTHER];
-                                    break;
-                                    
-                                case TAG_PAY_CHANNEL_APPLE:
-                                    [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
-                                    [self trackEventWithEventName:AD_EVENT_SELECT_APPLE];
-                                    break;
-                                    
-                                case TAG_CLOSE:
-                                    break;
-                                default:
-                                    break;
-                            }
-                            [bgV removeFromSuperview];
-                        };
-                        
-                        [bgV addSubview:mSelectPayChannelView];
-                        [mSelectPayChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
-                            make.edges.mas_equalTo(bgV);
-                        }];
-                        
-                    }
-                    return;
-                }
-            }
-            
-            [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
-            
-        } errorBlock_MMMethodMMM:^(BJError *error) {
-            
-            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-            
-            [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
-        }];
-        return;
-    }
     
     [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
     
 }
 
-- (void)trackEventWithEventName:(NSString *)name{
-    [self trackEventWithEventName:name eventValues:nil];
+- (void)dyTrackWithEventName:(NSString *)name{
+    [self dyTrackWithEventName:name eventValues:nil];
 }
 
-- (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
+- (void)dyTrackWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
@@ -532,20 +464,20 @@
 }
 
 
-- (void)requestStoreReview
-{
-    
-    if (![[NSThread currentThread] isMainThread]) {
-        SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-        return;
-    }
-    if (@available(iOS 10.3, *)) {
-        [SKStoreReviewController requestReview];
-    } else {
-        // Fallback on earlier versions
-    }
-}
+//- (void)requestStoreReview
+//{
+//    
+//    if (![[NSThread currentThread] isMainThread]) {
+//        SDK_LOG(@"currentThread is not main thread");
+//        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+//        return;
+//    }
+//    if (@available(iOS 10.3, *)) {
+//        [SKStoreReviewController requestReview];
+//    } else {
+//        // Fallback on earlier versions
+//    }
+//}
 
 - (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     
@@ -596,7 +528,7 @@
     
 }
 
-- (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
+- (void)dyBindAccountWithBlock:(MWBlock)mBlock
 {
     
     if (![[NSThread currentThread] isMainThread]) {
@@ -801,7 +733,7 @@
     
 }
 
-- (void)openCsWithRoleId:(NSString *)roleId
+- (void)dyCsWithRoleId:(NSString *)roleId
                  roleName:(NSString *)roleName
                 roleLevel:(NSString *)roleLevel
              roleVipLevel:(NSString *)roleVipLevel
@@ -833,10 +765,10 @@
         return;
     }
     
-    [self openCsWithParams:nil];
+    [self openCsWithParams_MMMethodMMM:nil];
 }
 
-- (void)openCsWithParams:(NSDictionary *)paramDic {
+- (void)openCsWithParams_MMMethodMMM:(NSDictionary *)paramDic {
     NSString * csurl = SDK_DATA.urls.csUrl;
     if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
@@ -850,10 +782,10 @@
     webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
     
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        self.switchInterfaceOrientationPortrait = YES;
+//        self.switchInterfaceOrientationPortrait = YES;
     };
     webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        self.switchInterfaceOrientationPortrait = NO;
+//        self.switchInterfaceOrientationPortrait = NO;
     };
     webVC.didDismissCallback = ^{
         
@@ -899,60 +831,60 @@
 //UNCalendarNotificationTrigger //（本地通知） 一定日期之后，重复或者不重复推送通知 例如，你每天8点推送一个通知，只要dateComponents为8，如果你想每天8点都推送这个通知，只要repeats为YES就可以了
 //UNLocationNotificationTrigger // （本地通知）地理位置的一种通知，当用户进入或离开一个地理区域来通知
 
-- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
-   
-    SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
-    if (![[NSThread currentThread] isMainThread]) {
-        SDK_LOG(@"currentThread is not main thread");
-        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-        return;
-    }
-    
-    if (@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-        // 标题
-        content.title = title;
-        content.subtitle = subtitle;
-        // 内容
-        content.body = body;
-        // 声音
-       // 默认声音
-        content.sound = [UNNotificationSound defaultSound];
-     // 添加自定义声音
-//       content.sound = [UNNotificationSound soundNamed:wwwww_tag_wwwww_Alert_ActivityGoalAttained_Salient_Haptic_caf];
-        // 角标，桌面icon 小红标数量
-//        content.badge = @(1);
-        
-        // 添加通知的标识符，可以用于移除，更新等操作
-        if ([StringUtil isEmpty_MMMethodMMM:notifyId]) {
-            notifyId = [SUtil getMD5StrFromString_MMMethodMMM:title];
-        }
-        
-        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
-        
-        [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {
-            SDK_LOG(@"addLocalNotificationWithTitle 成功添加推送");
-        }];
-        
-    }else {
-//        UILocalNotification *notif = [[UILocalNotification alloc] init];
-//        // 发出推送的日期
-//        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
-//        // 推送的内容
-//        notif.alertBody = wwwww_tag_wwwww_octogesimserveation_cause;
-//        // 可以添加特定信息
-//        notif.userInfo = @{wwwww_tag_wwwww_noticeId:wwwww_tag_wwwww_00001};
-//        // 角标
-//        notif.applicationIconBadgeNumber = 1;
-//        // 提示音
-//        notif.soundName = UILocalNotificationDefaultSoundName;
-//        // 每周循环提醒
-//        notif.repeatInterval = NSCalendarUnitWeekOfYear;
+//- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
 //
-//        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
-    }
-}
+//    SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
+//    if (![[NSThread currentThread] isMainThread]) {
+//        SDK_LOG(@"currentThread is not main thread");
+//        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+//        return;
+//    }
+//
+//    if (@available(iOS 10.0, *)) {
+//        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+//        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+//        // 标题
+//        content.title = title;
+//        content.subtitle = subtitle;
+//        // 内容
+//        content.body = body;
+//        // 声音
+//       // 默认声音
+//        content.sound = [UNNotificationSound defaultSound];
+//     // 添加自定义声音
+////       content.sound = [UNNotificationSound soundNamed:wwwww_tag_wwwww_Alert_ActivityGoalAttained_Salient_Haptic_caf];
+//        // 角标，桌面icon 小红标数量
+////        content.badge = @(1);
+//
+//        // 添加通知的标识符，可以用于移除，更新等操作
+//        if ([StringUtil isEmpty_MMMethodMMM:notifyId]) {
+//            notifyId = [SUtil getMD5StrFromString_MMMethodMMM:title];
+//        }
+//
+//        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
+//
+//        [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {
+//            SDK_LOG(@"addLocalNotificationWithTitle 成功添加推送");
+//        }];
+//
+//    }else {
+////        UILocalNotification *notif = [[UILocalNotification alloc] init];
+////        // 发出推送的日期
+////        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+////        // 推送的内容
+////        notif.alertBody = wwwww_tag_wwwww_octogesimserveation_cause;
+////        // 可以添加特定信息
+////        notif.userInfo = @{wwwww_tag_wwwww_noticeId:wwwww_tag_wwwww_00001};
+////        // 角标
+////        notif.applicationIconBadgeNumber = 1;
+////        // 提示音
+////        notif.soundName = UILocalNotificationDefaultSoundName;
+////        // 每周循环提醒
+////        notif.repeatInterval = NSCalendarUnitWeekOfYear;
+////
+////        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
+//    }
+//}
 
 //-(void)showTermViewWithBlock_MMMethodMMM
 //{

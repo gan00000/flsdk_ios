@@ -67,15 +67,15 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 @interface MWSDK : NSObject
 
 
-@property (nonatomic) SDKPayBlock payHandler;
-@property (nonatomic)  SDKLogoutBlock logoutHandler;
-@property (nonatomic)  SDKLoginBlock loginCompletionHandler;
-@property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
+@property (nonatomic) SDKPayBlock dySDKPayBlock;
+@property (nonatomic)  SDKLogoutBlock dySDKLogoutBlock;
+@property (nonatomic)  SDKLoginBlock dySDKLoginBlock;
+@property (nonatomic,strong)  NSString *dyMMMBaseEncryptKey;
 
 /**
  * 是否允许转向
  */
-@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
+//@property(nonatomic,assign)BOOL switchInterfaceOrientationPortrait;
 /**
  单例
  
@@ -87,10 +87,10 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
  应用跳转回调（适用于 iOS 8 及以下）
  
  */
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation;
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation;
 
 /**
  应用跳转回调（适用于 iOS 9 及以上）
@@ -100,15 +100,15 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 /// 设置屏幕方向，客服功能页面需要强制竖屏(横屏游戏接客服功能 需要调用，其他情况可不调用)
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 
 /// 登录接口
 /// @param cmopleteHandler 登录回调block
-- (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
+- (void)dyLoginWithBlock:(SDKLoginBlock)cmopleteHandler;
 
 /// 切换登录接口
 /// @param cmopleteHandler 登录回调block
-- (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler;
+- (void)dySwitchLoginWithBlock:(SDKLoginBlock)cmopleteHandler;
 
 /// 每次登录或者切换账号的时候获得角色信息的时候调用
 /// @param roleId 角色id，必传
@@ -117,7 +117,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 /// @param roleVipLevel 等色vip等级，没有传@""
 /// @param serverCode 伺服器id，必传
 /// @param serverName 伺服器名称，没有传@""
-- (void)setRoleInfoWithRoleId:(NSString *)roleId
+- (void)dySetRoleInfoWithRoleId:(NSString *)roleId
            roleName:(NSString *)roleName
           roleLevel:(NSString *)roleLevel
        roleVipLevel:(NSString *)roleVipLevel
@@ -136,7 +136,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 /// @param cpOrderId 厂商订单号，必传，该值通过服务端接口返回给厂商
 /// @param extra 预留值，可选，该值通过服务端接口返回给厂商
 /// @param handler 充值回调，成功是否成功请以服务端回调为准
-- (void)payWithRoleId:(NSString *)roleId
+- (void)dyPayWithRoleId:(NSString *)roleId
    roleName:(NSString *)roleName
   roleLevel:(NSString *)roleLevel
 roleVipLevel:(NSString *)roleVipLevel
@@ -153,20 +153,20 @@ completionHandler:(SDKPayBlock) handler;
  */
 - (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock;
 
-- (void)openCsWithRoleId:(NSString *)roleId
+- (void)dyCsWithRoleId:(NSString *)roleId
                  roleName:(NSString *)roleName
                 roleLevel:(NSString *)roleLevel
              roleVipLevel:(NSString *)roleVipLevel
                serverCode:(NSString *)serverCode
               serverName:(NSString *)serverName;
 
-#pragma mark -【弃用】
-- (void)openCs;
-- (void)openCsWithParams:(NSDictionary *)paramDic;
+//#pragma mark -【弃用】
+//- (void)openCs;
+- (void)openCsWithParams_MMMethodMMM:(NSDictionary *)paramDic;
 
 /// 事件追踪
 /// @param name 事件名称
-- (void)trackEventWithEventName:(NSString *)name;
+- (void)dyTrackWithEventName:(NSString *)name;
 
 /**
  事件上报
@@ -174,9 +174,9 @@ completionHandler:(SDKPayBlock) handler;
  @param name 事件名
  @param eventValues 事件参数
  */
-- (void)trackEventWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
+- (void)dyTrackWithEventName:(NSString *)name eventValues:(NSDictionary<NSString * , id> * _Nullable)eventValues;
 
-- (void)requestStoreReview;
+//- (void)requestStoreReview;
 
 
 /// fb分享接口
@@ -189,12 +189,12 @@ completionHandler:(SDKPayBlock) handler;
 
 /// 显示SDK内部绑定手机界面
 /// @param mBlock mBlock description
--(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
+//-(void)showBindPhoneViewWithBlock:(MWBlock) mBlock;
 
 
 /// 显示SDK内部升级账号界面
 /// @param mBlock
--(void)showUpgradeAccountViewWithBlock:(MWBlock) mBlock;
+-(void)dyBindAccountWithBlock:(MWBlock) mBlock;
 
 //-(void)showSocialView;
 //
@@ -213,7 +213,7 @@ completionHandler:(SDKPayBlock) handler;
 /// @param body 通知内容
 /// @param trigger 通知的触发条件
 /// @param notifyId  通知标识 id，用于更新、删除
-- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
+//- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
 @end
 

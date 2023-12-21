@@ -398,7 +398,7 @@
             
             NSString *eventName = [NSString stringWithFormat:@"%@", message.body];
             if([StringUtil isNotEmpty_MMMethodMMM:eventName]){
-                [[MWSDK share] trackEventWithEventName:eventName];
+                [[MWSDK share] dyTrackWithEventName:eventName];
             }
         }else if ([message.name isEqualToString:wwwww_tag_wwwww_openSysBrowser]){
             
