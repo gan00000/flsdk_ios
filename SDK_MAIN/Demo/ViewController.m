@@ -74,21 +74,21 @@
     self.valueArray = @[@"登入",
                         @"切换账号",
                           @"保存/更新角色信息（进入游戏得到角色信息后调用）",
-                          @"充值com.fzzh.tw.1usd",
-                          @"充值com.fzzh.tw.2usd",
-                          @"事件追踪",
-                          @"fb分享url",
-                          @"显示手机绑定页面",
-                          @"显示账号升级页面",
-                          @"line分享",
-                          @"客服",
-                          @"本地定时通知",
-                          @"本地定期通知",
-                            @"显示社群banner",
+//                          @"充值com.fzzh.tw.1usd",
+//                          @"充值com.fzzh.tw.2usd",
+//                          @"事件追踪",
+//                          @"fb分享url",
+//                          @"显示手机绑定页面",
+//                          @"显示账号升级页面",
+//                          @"line分享",
+//                          @"客服",
+//                          @"本地定时通知",
+//                          @"本地定期通知",
+//                            @"显示社群banner",
                           ];
     
-    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13];
-
+//    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13];
+    self.keyArray = @[@0, @12, @1];
     
     // iOS 获取设备当前语言的代码
     NSString *preferredLanguage = [[[NSBundle mainBundle] preferredLocalizations] firstObject];

@@ -58,9 +58,7 @@
 		0356592B2AD253C0007B0C6A /* SelectPayChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356591D2AD253C0007B0C6A /* SelectPayChannelView.m */; };
 		0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */ = {isa = PBXBuildFile; fileRef = 031B9FBB2897D81600D35EFB /* NSString+Local.h */; };
 		0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7928A39F0800709536 /* BaseCountTimerView.h */; };
-		0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8D28A6571900709536 /* GamaSDK+Social.h */; };
 		0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7528A362E200709536 /* MyTextFiled.h */; };
-		0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA8F28A6571900709536 /* GamaThirdSocial.h */; };
 		0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAB3328A66ED300709536 /* UrlMode.h */; };
 		0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0352F70B2927671F00160A67 /* TouchEventInterruptView.h */; };
 		0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */; };
@@ -114,7 +112,6 @@
 		0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B918E0286029670029AE6A /* ConfigModel.m */; };
 		0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320292A28698F1800E8D5A5 /* CreateOrderResp.m */; };
 		0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0124C589A5000D6B20 /* BJBaseResponceModel.m */; };
-		0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA8E28A6571900709536 /* GamaThirdSocial.m */; };
 		0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFB24C589A5000D6B20 /* BJError.m */; };
 		0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFF24C589A5000D6B20 /* HttpServiceEngineLogin.m */; };
 		0392B1FF2A5BA8DC00A3E2D6 /* BJServiceConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBBFE24C589A5000D6B20 /* BJServiceConfigurator.m */; };
@@ -126,7 +123,6 @@
 		0392B2052A5BA8DC00A3E2D6 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D97DD9286EE281008D0B3A /* LoginData.m */; };
 		0392B2062A5BA8DC00A3E2D6 /* MWSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E974126B20874A170018E1A6 /* MWSDK.m */; };
 		0392B2082A5BA8DC00A3E2D6 /* SdkCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B0285A006600F1FD3B /* SdkCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0392B2092A5BA8DC00A3E2D6 /* GamaSDK+Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FAA9028A6571900709536 /* GamaSDK+Social.m */; };
 		0392B20A2A5BA8DC00A3E2D6 /* SdkKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8B2285A006600F1FD3B /* SdkKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0392B20B2A5BA8DC00A3E2D6 /* SdkPrivateKeychainCfUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8AB285A006600F1FD3B /* SdkPrivateKeychainCfUUID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0392B20C2A5BA8DC00A3E2D6 /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB8A5285A006600F1FD3B /* AlertUtil.m */; };
@@ -266,7 +262,6 @@
 		0392B2C72A5BA9F600A3E2D6 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E8D29D9900200890B3B /* FBAEMKit.xcframework */; };
 		0392B2C82A5BA9F600A3E2D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9321A14988C009E77FF /* UIKit.framework */; };
 		0392B2C92A5BA9F600A3E2D6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9341A149895009E77FF /* MessageUI.framework */; };
-		0392B2CA2A5BA9F600A3E2D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9381A1498A5009E77FF /* StoreKit.framework */; };
 		0392B2CB2A5BA9F600A3E2D6 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EA029D9900200890B3B /* GoogleUtilities.xcframework */; };
 		0392B2CC2A5BA9F600A3E2D6 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6E9D29D9900200890B3B /* FirebaseCore.xcframework */; };
 		0392B2CD2A5BA9F600A3E2D6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93C1A1498B5009E77FF /* Accounts.framework */; };
@@ -315,10 +310,6 @@
 		030FAA7928A39F0800709536 /* BaseCountTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCountTimerView.h; sourceTree = "<group>"; };
 		030FAA7A28A39F0800709536 /* BaseCountTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCountTimerView.m; sourceTree = "<group>"; };
 		030FAA7E28A3A2C600709536 /* CountTimerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
-		030FAA8D28A6571900709536 /* GamaSDK+Social.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamaSDK+Social.h"; sourceTree = "<group>"; };
-		030FAA8E28A6571900709536 /* GamaThirdSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamaThirdSocial.m; sourceTree = "<group>"; };
-		030FAA8F28A6571900709536 /* GamaThirdSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamaThirdSocial.h; sourceTree = "<group>"; };
-		030FAA9028A6571900709536 /* GamaSDK+Social.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamaSDK+Social.m"; sourceTree = "<group>"; };
 		030FAB3328A66ED300709536 /* UrlMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlMode.h; sourceTree = "<group>"; };
 		030FAB3428A66ED300709536 /* UrlMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlMode.m; sourceTree = "<group>"; };
 		031B9FB92897D2CD00D35EFB /* ColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
@@ -535,6 +526,7 @@
 		03D97DDA286EE281008D0B3A /* BaseSDKImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSDKImpl.m; sourceTree = "<group>"; };
 		03D97DDE286EE3A3008D0B3A /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
 		03D97DDF286EE3A3008D0B3A /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
+		03DC03562B3427A1004A2AED /* SDK_DEMO_KRDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDK_DEMO_KRDebug.entitlements; sourceTree = "<group>"; };
 		03DD67E4294AE17200C1D307 /* SDK_DEMO_V4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK_DEMO_V4-Info.plist"; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* LineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineDelegate.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* LineDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineDelegate.m; sourceTree = "<group>"; };
@@ -623,7 +615,6 @@
 		CEE6B9321A14988C009E77FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEE6B9341A149895009E77FF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		CEE6B9381A1498A5009E77FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CEE6B93A1A1498AF009E77FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CEE6B93C1A1498B5009E77FF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CEE6B93E1A1498BA009E77FF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -787,7 +778,6 @@
 				0392B2C72A5BA9F600A3E2D6 /* FBAEMKit.xcframework in Frameworks */,
 				0392B2C82A5BA9F600A3E2D6 /* UIKit.framework in Frameworks */,
 				0392B2C92A5BA9F600A3E2D6 /* MessageUI.framework in Frameworks */,
-				0392B2CA2A5BA9F600A3E2D6 /* StoreKit.framework in Frameworks */,
 				0392B2CB2A5BA9F600A3E2D6 /* GoogleUtilities.xcframework in Frameworks */,
 				0392B2CC2A5BA9F600A3E2D6 /* FirebaseCore.xcframework in Frameworks */,
 				0392B2CD2A5BA9F600A3E2D6 /* Accounts.framework in Frameworks */,
@@ -1364,10 +1354,6 @@
 		322CBC0B24C589A5000D6B20 /* SdkHelper */ = {
 			isa = PBXGroup;
 			children = (
-				030FAA8D28A6571900709536 /* GamaSDK+Social.h */,
-				030FAA9028A6571900709536 /* GamaSDK+Social.m */,
-				030FAA8F28A6571900709536 /* GamaThirdSocial.h */,
-				030FAA8E28A6571900709536 /* GamaThirdSocial.m */,
 				031B9FBA2897D4FA00D35EFB /* sdkCategory */,
 				032AB889285A006600F1FD3B /* Res */,
 				032AB890285A006600F1FD3B /* CoreSecurity */,
@@ -1489,6 +1475,7 @@
 		CEE6B3681A148B1E009E77FF = {
 			isa = PBXGroup;
 			children = (
+				03DC03562B3427A1004A2AED /* SDK_DEMO_KRDebug.entitlements */,
 				03D5F35B28D3183D00C3855E /* obfuscation */,
 				037C6F6B287686A30041EC34 /* XCFrameworkScript.sh */,
 				24C7588E1D66F98D0088A176 /* FrameworkScript.sh */,
@@ -1553,7 +1540,6 @@
 				CEE6B93E1A1498BA009E77FF /* Social.framework */,
 				CEE6B93C1A1498B5009E77FF /* Accounts.framework */,
 				CEE6B93A1A1498AF009E77FF /* Security.framework */,
-				CEE6B9381A1498A5009E77FF /* StoreKit.framework */,
 				CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */,
 				CEE6B9341A149895009E77FF /* MessageUI.framework */,
 				CEE6B9321A14988C009E77FF /* UIKit.framework */,
@@ -1599,12 +1585,10 @@
 				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
 				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
 				0337E01A2AE104CC00F171B1 /* SocialBannerView.h in Headers */,
-				0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */,
 				0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */,
 				0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */,
 				0392B26F2A5BA99900A3E2D6 /* NoticeViewV2.h in Headers */,
 				0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */,
-				0392B1BC2A5BA8DC00A3E2D6 /* GamaThirdSocial.h in Headers */,
 				0392B2652A5BA99900A3E2D6 /* FindPasswordViewV2.h in Headers */,
 				033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
@@ -1839,7 +1823,6 @@
 				0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */,
 				0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */,
-				0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */,
 				0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */,
 				0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */,
 				0392B1FF2A5BA8DC00A3E2D6 /* BJServiceConfigurator.m in Sources */,
@@ -1852,7 +1835,6 @@
 				0392B2062A5BA8DC00A3E2D6 /* MWSDK.m in Sources */,
 				0392B26B2A5BA99900A3E2D6 /* MainHomeViewV2.m in Sources */,
 				0392B2082A5BA8DC00A3E2D6 /* SdkCfUUID.m in Sources */,
-				0392B2092A5BA8DC00A3E2D6 /* GamaSDK+Social.m in Sources */,
 				0392B20A2A5BA8DC00A3E2D6 /* SdkKeychainItemWrapper.m in Sources */,
 				0392B20B2A5BA8DC00A3E2D6 /* SdkPrivateKeychainCfUUID.m in Sources */,
 				0392B20C2A5BA8DC00A3E2D6 /* AlertUtil.m in Sources */,
@@ -2212,7 +2194,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_MODULES_AUTOLINK = NO;
-				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SDK_DEMO_KRDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -2220,7 +2202,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HJ6WP4SRK4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/obfuscation/preHeader.pch";
@@ -2248,7 +2230,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3fd5b84c-0c11-4276-bd33-5300a709a871";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dev";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dev_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = test_dev;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2276,13 +2258,13 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_ENTITLEMENTS = GamaSDK_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = A99DKAL476;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q35NHT68ZA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = HJ6WP4SRK4;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -2307,11 +2289,11 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
-				PRODUCT_BUNDLE_IDENTIFIER = com.snmxw.vntest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opcaa.th;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "25930866-1362-4dd5-a6da-3de45d522505";
 				PROVISIONING_PROFILE_SPECIFIER = "fszhl-dis";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.snmxw.vntest_dis_1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = test_dev;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDK_TEST-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
