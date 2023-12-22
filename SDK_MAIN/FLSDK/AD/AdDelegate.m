@@ -146,13 +146,13 @@
             [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
                             AFEventParamRevenue  : @(mPayData.amount),
                             AFEventParamCurrency : wwwww_tag_wwwww_USD,
-                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                             AFEventParamContentId: mPayData.productId ?: @"",
                             AFEventParamOrderId: mPayData.orderId ?: @"",
                             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                             wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
                             wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                             wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
                             
             }];
@@ -167,7 +167,7 @@
                 kFIRParameterValue : @(mPayData.amount),
                 kFIRParameterCurrency : wwwww_tag_wwwww_USD,
                 kFIRParameterTransactionID : mPayData.orderId,
-                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                 wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                 
             }];
@@ -196,13 +196,13 @@
             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
             wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
             wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
             wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
             
         };
         [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"AJ_Purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
        
-        GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
+        GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
         if(gGameUserModel){
             if(gGameUserModel.isPay){//除了第一次
                 
@@ -219,7 +219,7 @@
                         kFIRParameterValue : @(mPayData.amount),
                         kFIRParameterCurrency : wwwww_tag_wwwww_USD,
                         kFIRParameterTransactionID : mPayData.orderId,
-                        wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                        wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                         wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                         
                     }];
@@ -230,13 +230,13 @@
                     [[AppsFlyerLib shared] logEvent:@"second_purchase" withValues: @{
 //                                    AFEventParamRevenue  : @(mPayData.amount),
 //                                    AFEventParamCurrency : wwwww_tag_wwwww_USD,
-                                    AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                    AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                                     AFEventParamContentId: mPayData.productId ?: @"",
                                     AFEventParamOrderId: mPayData.orderId ?: @"",
                                     wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                                     wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
                                     wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-                                    wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                    wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                                     wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
                                     
                     }];
@@ -244,13 +244,13 @@
                     SDK_LOG(@"logEvent fb second_purchase");
                     [[FBSDKAppEvents shared] logEvent:@"second_purchase" parameters: @{
 //                                                            AFEventParamCurrency : wwwww_tag_wwwww_USD,
-                                                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                                                             AFEventParamContentId: mPayData.productId ?: @"",
                                                             AFEventParamOrderId: mPayData.orderId ?: @"",
                                                             wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                                                             wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
                                                             wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-                                                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
+                                                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
                                                             wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
                                                             
                                             }];

@@ -105,7 +105,7 @@
     
     //===========cs end==========
     
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
     if (mConfigModel.deleteAccount) {
 //        [self addDeleteAccountView_MMMethodMMM];
     }
@@ -208,30 +208,30 @@
     [loginTabBtn setSelected:YES];
     [regTabBtn setSelected:NO];
     
-    self.mAccountLoginView = [[AccountLoginViewV2 alloc] initView_MMMethodMMM];
-    [myView addSubview:self.mAccountLoginView];
-    [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.mAccountLoginView_MMMPRO = [[AccountLoginViewV2 alloc] initView_MMMethodMMM];
+    [myView addSubview:self.mAccountLoginView_MMMPRO];
+    [self.mAccountLoginView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
         make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
 
     }];
     
-    self.mRegisterAccountView = [[RegisterAccountViewV2 alloc] initView_MMMethodMMM];
-    [myView addSubview:self.mRegisterAccountView];
-    [self.mRegisterAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.mRegisterAccountView_MMMPRO = [[RegisterAccountViewV2 alloc] initView_MMMethodMMM];
+    [myView addSubview:self.mRegisterAccountView_MMMPRO];
+    [self.mRegisterAccountView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
         make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
     }];
     
-    self.mRegisterAccountView.hidden = YES;
+    self.mRegisterAccountView_MMMPRO.hidden = YES;
     
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        self.mAccountLoginView.delegate = self.delegate;
-        self.mRegisterAccountView.delegate = self.delegate;
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        self.mAccountLoginView_MMMPRO.loginDelegate_MMMPRO = self.loginDelegate_MMMPRO;
+        self.mRegisterAccountView_MMMPRO.loginDelegate_MMMPRO = self.loginDelegate_MMMPRO;
         
-        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
+        self.mRegisterAccountView_MMMPRO.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
         
-        if (!self.fromPage) {
+        if (!self.fromPage_MMMPRO) {
             backBtn.hidden = YES;
         }
     }];
@@ -250,7 +250,7 @@
             currentClickTab = 1;
             
             [self makeTabStatus_MMMethodMMM:YES];
-            if (self.delegate) {
+            if (self.loginDelegate_MMMPRO) {
                 //[self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1];
             }
             break;
@@ -270,7 +270,7 @@
             
         case kBackBtnActTag:
             
-            if (self.delegate) {
+            if (self.loginDelegate_MMMPRO) {
                 
 //                NSArray<AccountModel *> *ams = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
 //
@@ -283,7 +283,7 @@
 //
 //                    [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME];
 //                }
-                [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME];
+                [self.loginDelegate_MMMPRO goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME];
                
                
             }
@@ -309,8 +309,8 @@
         loginBottomLine.hidden = NO;
         regBottomLine.hidden = YES;
         
-        self.mAccountLoginView.hidden = NO;
-        self.mRegisterAccountView.hidden = NO;
+        self.mAccountLoginView_MMMPRO.hidden = NO;
+        self.mRegisterAccountView_MMMPRO.hidden = NO;
         
         if(deleteBtnView){
             deleteBtnView.hidden = NO;
@@ -321,9 +321,9 @@
         
         [UIView animateWithDuration:0.6 animations:^{
             
-            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,self.frame.size.width, 0);
+            self.mAccountLoginView_MMMPRO.transform = CGAffineTransformTranslate(self.mAccountLoginView_MMMPRO.transform,self.frame.size.width, 0);
             
-            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, self.frame.size.width, 0);
+            self.mRegisterAccountView_MMMPRO.transform = CGAffineTransformTranslate(self.mRegisterAccountView_MMMPRO.transform, self.frame.size.width, 0);
             
         } completion:^(BOOL finished) {
 //            self.mAccountLoginView.hidden = NO;
@@ -340,8 +340,8 @@
         [loginTabBtn setSelected:NO];
         [regTabBtn setSelected:YES];
     
-        self.mAccountLoginView.hidden = NO;
-        self.mRegisterAccountView.hidden = NO;
+        self.mAccountLoginView_MMMPRO.hidden = NO;
+        self.mRegisterAccountView_MMMPRO.hidden = NO;
         
         loginBottomLine.hidden = YES;
         regBottomLine.hidden = NO;
@@ -353,9 +353,9 @@
 //        self.mRegisterAccountView.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
         [UIView animateWithDuration:0.6 animations:^{
             
-            self.mAccountLoginView.transform = CGAffineTransformTranslate(self.mAccountLoginView.transform,-self.frame.size.width, 0);
+            self.mAccountLoginView_MMMPRO.transform = CGAffineTransformTranslate(self.mAccountLoginView_MMMPRO.transform,-self.frame.size.width, 0);
             
-            self.mRegisterAccountView.transform = CGAffineTransformTranslate(self.mRegisterAccountView.transform, -self.frame.size.width, 0);
+            self.mRegisterAccountView_MMMPRO.transform = CGAffineTransformTranslate(self.mRegisterAccountView_MMMPRO.transform, -self.frame.size.width, 0);
             
         } completion:^(BOOL finished) {
 //            self.mAccountLoginView.hidden = YES;
@@ -401,7 +401,7 @@
     
     [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        [self.mAccountLoginView addDeleteAccountConfireView_MMMethodMMM];
+        [self.mAccountLoginView_MMMPRO addDeleteAccountConfireView_MMMethodMMM];
     }];
     
     deleteBtnView = deleteView;

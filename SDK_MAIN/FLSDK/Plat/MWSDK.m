@@ -292,28 +292,28 @@
         return;
     }
     
-    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
-    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
-    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
-    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
-    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
-    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.roleID = roleId ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.roleName = roleName ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.roleLevel = roleLevel ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.roleVipLevel = roleVipLevel ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.serverCode = serverCode ? : @"";
+    SDK_DATA.gameUserModel_MMMPRO.serverName = serverName ? : @"";
     
 }
 
 - (void)startIapPay_MMMethodMMM:(AccountModel *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
-    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+    [[MWApplePayManager shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel_MMMPRO accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
         
         self.isPaying = NO;
         
         if (self.dySDKPayBlock) {
             if (success) {
                 
-                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
                 if (!havePay) {
                     //                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_FIRST_PURCHASE parameters_MMMethodMMM:nil];
                 }
-                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
                 
                 [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
                 self.dySDKPayBlock(SDK_PAY_STATUS_SUCCESS, payData);
@@ -362,13 +362,13 @@
     NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:myPayUrl otherDic_MMMethodMMM:dic];
     SDK_LOG(@"startMySdkPay myPayUrl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
-    webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    webVC.viewDidLoadCompletion_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
 //        self.switchInterfaceOrientationPortrait = YES;
     };
-    webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    webVC.willDismissCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
 //        self.switchInterfaceOrientationPortrait = NO;
     };
-    webVC.didDismissCallback = ^{
+    webVC.didDismissCallback_MMMPRO = ^{
         
     };
     
@@ -432,7 +432,7 @@
     
     self.dySDKPayBlock = handler;
     
-    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
+    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse_MMMPRO;
     AccountModel *accountModel = sLoginResponse.data;
     
     if (!accountModel || !accountModel.userId) {
@@ -512,7 +512,7 @@
         return;
     }
     BindPhoneViewV2 *mBindPhoneViewV2 = [[BindPhoneViewV2 alloc] init];
-    mBindPhoneViewV2.mMWBlock = mBlock;
+    mBindPhoneViewV2.mMWBlock_MMMPRO = mBlock;
     UIView *superView = appTopViewController.view;
     
     UIView *bgV = [[TouchEventInterruptView alloc] init];
@@ -542,7 +542,7 @@
         return;
     }
     BindAccountViewV2 *mBindAccountViewV2 = [[BindAccountViewV2 alloc] initView_MMMethodMMM];
-    mBindAccountViewV2.mMWBlock = mBlock;
+    mBindAccountViewV2.mMWBlock_MMMPRO = mBlock;
     UIView *superView = appTopViewController.view;
     
     UIView *bgV = [[TouchEventInterruptView alloc] init];
@@ -646,11 +646,11 @@
     [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
 //        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_bind_success.localx];
-        SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
-        SDK_DATA.mLoginResponse.data.isBindPhone = YES;
+        SDK_DATA.mLoginResponse_MMMPRO.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
+        SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone = YES;
         
         if (mMWBlock) {
-            mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
+            mMWBlock(YES, SDK_DATA.mLoginResponse_MMMPRO.data.telephone);
         }
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
@@ -679,7 +679,7 @@
         return;
     }
     
-    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
+    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     if (!currentAccountModel) {
 //        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
@@ -694,7 +694,7 @@
         cc.data.account = account;
         cc.data.password = password;
         cc.data.loginType = LOGIN_TYPE_SELF;
-        SDK_DATA.mLoginResponse = cc;
+        SDK_DATA.mLoginResponse_MMMPRO = cc;
         
         [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
         
@@ -769,7 +769,7 @@
 }
 
 - (void)openCsWithParams_MMMethodMMM:(NSDictionary *)paramDic {
-    NSString * csurl = SDK_DATA.urls.csUrl;
+    NSString * csurl = SDK_DATA.urls_MMMPRO.csUrl;
     if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);
         return;
@@ -778,16 +778,16 @@
     SDK_LOG(@"客服地址csurl=%@",resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     
-    webVC.isShowDefulatCloseBtn = YES;
+    webVC.isShowDefulatCloseBtn_MMMPRO = YES;
     webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
     
-    webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    webVC.viewDidLoadCompletion_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
 //        self.switchInterfaceOrientationPortrait = YES;
     };
-    webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    webVC.willDismissCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
 //        self.switchInterfaceOrientationPortrait = NO;
     };
-    webVC.didDismissCallback = ^{
+    webVC.didDismissCallback_MMMPRO = ^{
         
     };
     

@@ -63,7 +63,7 @@
             SDK_LOG(@"showSocialView url=%@",resultURL);
             MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
           
-            webVC.webViewDelegate = self;
+            webVC.webViewDelegate_MMMPRO = self;
             [contentView addSubview:webVC.view];
             [webVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.leading.mas_equalTo(contentView).offset(10);
@@ -93,7 +93,7 @@
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
-            [self removeFromGameView];
+            [self removeFromGameView_MMMethodMMM];
             if (self.completer) {
                 self.completer();
             }

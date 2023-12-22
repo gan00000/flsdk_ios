@@ -36,10 +36,10 @@
        // make.centerY.mas_equalTo(self);
     }];
     
-    self.deleteAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:delete_icon highlightedImage_MMMethodMMM:delete_icon tag_MMMethodMMM:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick_MMMethodMMM:) target_MMMethodMMM:self];
-    self.deleteAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [delContentView addSubview:self.deleteAccountBtn];
-    [self.deleteAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.deleteAccountBtn_MMMPRO = [UIUtil initBtnWithNormalImage_MMMethodMMM:delete_icon highlightedImage_MMMethodMMM:delete_icon tag_MMMethodMMM:kMoreAccountDeleteActTag selector:@selector(deleteAccontClick_MMMethodMMM:) target_MMMethodMMM:self];
+    self.deleteAccountBtn_MMMPRO.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [delContentView addSubview:self.deleteAccountBtn_MMMPRO];
+    [self.deleteAccountBtn_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.trailing.equalTo(self.contentView.mas_trailing).mas_offset(VW(-10));
 //        make.top.mas_equalTo(self.contentView).offset(2);
 //        make.bottom.mas_equalTo(self.contentView).offset(-2);
@@ -49,16 +49,16 @@
     delContentView.userInteractionEnabled = YES;
     [delContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        if (self.mItemViewClickHander) {
-            self.mItemViewClickHander(kMoreAccountDeleteActTag);
+        if (self.mItemViewClickHander_MMMPRO) {
+            self.mItemViewClickHander_MMMPRO(kMoreAccountDeleteActTag);
         }
         
     }];
     
     //icon
    
-    [self.contentView addSubview:self.iconImageView];
-    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.contentView addSubview:self.iconImageView_MMMPRO];
+    [self.iconImageView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.centerY.mas_equalTo(self);
         make.leading.mas_equalTo(self).mas_offset(VW(15));
@@ -66,17 +66,17 @@
         
     }];
     
-    self.accountUILabel = [[UILabel alloc] init];
-    self.accountUILabel.font = [UIFont systemFontOfSize:FS(12)];
-    self.accountUILabel.text = @"";
+    self.accountUILabel_MMMPRO = [[UILabel alloc] init];
+    self.accountUILabel_MMMPRO.font = [UIFont systemFontOfSize:FS(12)];
+    self.accountUILabel_MMMPRO.text = @"";
 //    self.accountUILabel.textAlignment = NSTextAlignmentCenter;
 //    self.accountUILabel.backgroundColor = [UIColor clearColor]xX;
-    self.accountUILabel.numberOfLines = 1; //0为多行
-    self.accountUILabel.textColor = [UIColor blackColor];
+    self.accountUILabel_MMMPRO.numberOfLines = 1; //0为多行
+    self.accountUILabel_MMMPRO.textColor = [UIColor blackColor];
     
-    [self.contentView addSubview:self.accountUILabel];
-    [self.accountUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.iconImageView.mas_trailing).mas_offset(VW(15));
+    [self.contentView addSubview:self.accountUILabel_MMMPRO];
+    [self.accountUILabel_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.iconImageView_MMMPRO.mas_trailing).mas_offset(VW(15));
         make.top.mas_equalTo(self.contentView).offset(2);
         make.bottom.mas_equalTo(self.contentView).offset(-2);
         make.trailing.mas_equalTo(delContentView.mas_leading).mas_offset(VW(-15));
@@ -84,19 +84,19 @@
     }];
 }
 
--(UIImageView*)iconImageView
+-(UIImageView*)iconImageView_MMMPRO
 {
-    if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:mw_smail_icon]];
-        _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (!_iconImageView_MMMPRO) {
+        _iconImageView_MMMPRO = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:mw_smail_icon]];
+        _iconImageView_MMMPRO.contentMode = UIViewContentModeScaleAspectFit;
     }
-    return _iconImageView;
+    return _iconImageView_MMMPRO;
 }
 
 - (void)deleteAccontClick_MMMethodMMM:(UIButton *)sender
 {
-    if (self.mItemViewClickHander) {
-        self.mItemViewClickHander(sender.tag);
+    if (self.mItemViewClickHander_MMMPRO) {
+        self.mItemViewClickHander_MMMPRO(sender.tag);
     }
 }
 

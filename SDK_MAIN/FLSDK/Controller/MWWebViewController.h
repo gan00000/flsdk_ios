@@ -19,21 +19,21 @@
 
 
 @interface MWWebViewController : UIViewController
-@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
+@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate_MMMPRO;
 
 //@property (nonatomic,copy) MWWebAlertHandler alertHandler; //自定义WK web的提示弹框，若web与app的方向不一致则必须要自定义提示弹框。
-@property (nonatomic) BOOL shouldRotate;
-@property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask;
-@property (nonatomic) UIInterfaceOrientation interfaceOrientation;
+@property (nonatomic) BOOL shouldRotate_MMMPRO;
+@property (nonatomic) UIInterfaceOrientationMask interfaceOrientationMask_MMMPRO;
+@property (nonatomic) UIInterfaceOrientation interfaceOrientation_MMMPRO;
 
-@property (nonatomic,copy) CCallBack viewDidLoadCompletion;
-@property (nonatomic,copy) CCallBack willDismissCallback;
-@property (nonatomic,copy) CCallBack2 didDismissCallback;
+@property (nonatomic,copy) CCallBack viewDidLoadCompletion_MMMPRO;
+@property (nonatomic,copy) CCallBack willDismissCallback_MMMPRO;
+@property (nonatomic,copy) CCallBack2 didDismissCallback_MMMPRO;
 
-@property (nonatomic, strong)NSURLRequest *webRequest;
+@property (nonatomic, strong)NSURLRequest *webRequest_MMMPRO;
 
-@property (nonatomic, assign)BOOL isShowTitle;
-@property (nonatomic, assign)BOOL isShowDefulatCloseBtn;
+@property (nonatomic, assign)BOOL isShowTitle_MMMPRO;
+@property (nonatomic, assign)BOOL isShowDefulatCloseBtn_MMMPRO;
 
 /**
  webView后退

@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CCSDKDATA : NSObject
 
-@property (nonatomic, strong)LoginResponse *mLoginResponse;
-@property (nonatomic, strong)ConfigModel *mConfigModel;
-@property (nonatomic, strong)GameUserModel * gameUserModel;
-@property (nonatomic,strong) UrlMode *urls;
+@property (nonatomic, strong)LoginResponse *mLoginResponse_MMMPRO;
+@property (nonatomic, strong)ConfigModel *mConfigModel_MMMPRO;
+@property (nonatomic, strong)GameUserModel * gameUserModel_MMMPRO;
+@property (nonatomic,strong) UrlMode *urls_MMMPRO;
 
-@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
+@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate_MMMPRO;
 
-@property (nonatomic, assign)CGFloat keyBoardHeight;
+@property (nonatomic, assign)CGFloat keyBoardHeight_MMMPRO;
 
 + (instancetype)sharedSdkData_MMMethodMMM;
 

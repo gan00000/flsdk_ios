@@ -39,10 +39,10 @@
 - (void)initData_MMMethodMMM
 {
     ConfigModel *mcm = [[ConfigModel alloc] init];
-    self.mConfigModel = mcm;
+    self.mConfigModel_MMMPRO = mcm;
     
     GameUserModel *mGameUserModel = [[GameUserModel alloc] init];
-    self.gameUserModel = mGameUserModel;
+    self.gameUserModel_MMMPRO = mGameUserModel;
 }
 
 

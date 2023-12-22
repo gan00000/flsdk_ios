@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PhoneView : SDKBaseView <PhoneInfoModelDelegate>
 
-@property (nonatomic, strong) PhoneInfoModel *phoneModel;
-@property (nonatomic) UILabel *aracCodeUILabel;
+@property (nonatomic, strong) PhoneInfoModel *phoneModel_MMMPRO;
+@property (nonatomic) UILabel *aracCodeUILabel_MMMPRO;
 
-@property (nonatomic) UITextField *mUITextField;
+@property (nonatomic) UITextField *mUITextField_MMMPRO;
 
 - (instancetype)initView_MMMethodMMM;
 

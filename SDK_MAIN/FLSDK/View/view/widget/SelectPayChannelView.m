@@ -76,7 +76,7 @@
     
     CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [otherChannelBtn.layer addSublayer:mGl];
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         mGl.frame = otherChannelBtn.bounds;
     }];
     
@@ -152,7 +152,7 @@
         
     }];
     
-    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
+    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse_MMMPRO;
     AccountModel *accountModel = sLoginResponse.data;
     
     NSString *mUrlString = [NSString stringWithFormat:@"%@image/sdk/%@/rebate_%@.png?t=%@", [SDKRES getCdnUrl_MMMethodMMM], [GAME_CODE stringByReplacingOccurrencesOfString:@"ios" withString:@""], @"ios", accountModel.timestamp];
@@ -168,21 +168,21 @@
     switch (sender.tag) {
        
         case TAG_PAY_CHANNEL_OTHER:
-            if(self.mCallBack){
-                self.mCallBack(@"TAG_PAY_CHANNEL_OTHER", TAG_PAY_CHANNEL_OTHER, nil);
+            if(self.mCallBack_MMMPRO){
+                self.mCallBack_MMMPRO(@"TAG_PAY_CHANNEL_OTHER", TAG_PAY_CHANNEL_OTHER, nil);
             }
             break;
             
         case TAG_PAY_CHANNEL_APPLE:
-            if(self.mCallBack){
-                self.mCallBack(@"TAG_PAY_CHANNEL_APPLE", TAG_PAY_CHANNEL_APPLE, nil);
+            if(self.mCallBack_MMMPRO){
+                self.mCallBack_MMMPRO(@"TAG_PAY_CHANNEL_APPLE", TAG_PAY_CHANNEL_APPLE, nil);
             }
             break;
             
         case TAG_CLOSE:
             
-            if(self.mCallBack){
-                self.mCallBack(@"TAG_CLOSE", TAG_CLOSE, nil);
+            if(self.mCallBack_MMMPRO){
+                self.mCallBack_MMMPRO(@"TAG_CLOSE", TAG_CLOSE, nil);
             }
             
             break;

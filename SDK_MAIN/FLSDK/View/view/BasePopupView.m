@@ -17,8 +17,8 @@
 //        [contentView ]
 //    }
     SDK_LOG(@"BasePopupView touchesBegan");
-    if (self.touchesBeganCallback) {
-        self.touchesBeganCallback(@"",0,nil);
+    if (self.touchesBeganCallback_MMMPRO) {
+        self.touchesBeganCallback_MMMPRO(@"",0,nil);
     }
     
     //把事件交给上一个响应者处理

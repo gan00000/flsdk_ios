@@ -16,8 +16,8 @@
 
 @interface LineDelegate() //<LineSDKLoginDelegate>
 
-@property (nonatomic) LineCallBack successCallBack;
-@property (nonatomic) LineCallBack failCallBack;
+@property (nonatomic) LineCallBack successCallBack_MMMPRO;
+@property (nonatomic) LineCallBack failCallBack_MMMPRO;
 
 @end
 @implementation LineDelegate
@@ -58,8 +58,8 @@
 
 -(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
 {
-    self.successCallBack = successCallBack;
-    self.failCallBack = failCallBack;
+    self.successCallBack_MMMPRO = successCallBack;
+    self.failCallBack_MMMPRO = failCallBack;
     
 //    [LineSDKLogin sharedInstance].delegate = self;
 //    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[wwwww_tag_wwwww_profile]];

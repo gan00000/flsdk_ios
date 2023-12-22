@@ -55,7 +55,7 @@
         mCr.subVersion = subVersion;
         mCr.allVersion = allVersion;
         mCr.url = urls;
-        SDK_DATA.urls = urls;
+        SDK_DATA.urls_MMMPRO = urls;
         if (mCr) {
             if (successBlock) {
                 successBlock(mCr);
@@ -66,7 +66,7 @@
                 for (ConfigModel *cm in mCr.subVersion) {
                     
                     if ([cm.version isEqualToString:[SUtil getBundleVersion_MMMethodMMM]] && [cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
-                        SDK_DATA.mConfigModel = cm;
+                        SDK_DATA.mConfigModel_MMMPRO = cm;
                         return;
                     }
                 }
@@ -81,7 +81,7 @@
                 for (ConfigModel *cm in mCr.allVersion) {
                     
                     if ([cm.packageName isEqualToString:[SUtil getBundleIdentifier_MMMethodMMM]]) {//匹配子版本开关
-                        SDK_DATA.mConfigModel = cm;
+                        SDK_DATA.mConfigModel_MMMPRO = cm;
                         return;
                     }
                 }
@@ -115,7 +115,7 @@
             wwwww_tag_wwwww_eventName        :eventName,
             wwwww_tag_wwwww_appTime          :timeStamp,
             wwwww_tag_wwwww_gameCode         :[NSString stringWithFormat:@"%@", GAME_CODE],
-            wwwww_tag_wwwww_userId          : SDK_DATA.mLoginResponse.data.userId ? : @"",
+            wwwww_tag_wwwww_userId          : SDK_DATA.mLoginResponse_MMMPRO.data.userId ? : @"",
         };
         [params addEntriesFromDictionary:dic];
         
@@ -402,8 +402,8 @@
     NSMutableDictionary *wDic = [[NSMutableDictionary alloc] initWithDictionary: [self appendCommParamsDic_MMMethodMMM]];
     @try {
         
-        AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
-        GameUserModel *gameUserModel = SDK_DATA.gameUserModel;
+        AccountModel *accountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
+        GameUserModel *gameUserModel = SDK_DATA.gameUserModel_MMMPRO;
         NSString *roleNameTemp = gameUserModel.roleName ? : @"";
         NSString *serverNameTemp = gameUserModel.serverName ? : @"";
         NSDictionary *dic = @{
@@ -935,7 +935,7 @@
     if (otherParamsDic) {
         [params addEntriesFromDictionary:otherParamsDic];
     }
-    AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+    AccountModel *accountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     
     //获取时间戳
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
@@ -1036,7 +1036,7 @@
 //    if (otherParamsDic) {
 //        [params addEntriesFromDictionary:otherParamsDic];
 //    }
-    AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+    AccountModel *accountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     
     //获取时间戳
     NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];

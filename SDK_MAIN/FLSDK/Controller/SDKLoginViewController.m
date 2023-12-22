@@ -25,7 +25,7 @@
 
 @interface SDKLoginViewController()
 
-@property (nonatomic,strong)UIView *sdkContentView;
+@property (nonatomic,strong)UIView *sdkContentView_MMMPRO;
 
 //@property (nonatomic,strong)UIView *mLoginWithRegView;
 //@property (nonatomic,strong)UIView *mMainHomeView;
@@ -60,7 +60,7 @@
 - (void)dealloc //system_method
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    SDK_DATA.mUITextFieldDelegate = nil;
+    SDK_DATA.mUITextFieldDelegate_MMMPRO = nil;
     SDK_LOG(wwwww_tag_wwwww_roboracity_starety);
 }
 
@@ -70,7 +70,7 @@
     SDK_LOG(wwwww_tag_wwwww_viewDidLoad);
     self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];//[UIColor clearColor];
     
-    SDK_DATA.mUITextFieldDelegate = self;
+    SDK_DATA.mUITextFieldDelegate_MMMPRO = self;
     switch (sdkPageType) {
         case SDKPage_Login:
         {
@@ -112,7 +112,7 @@
 {
     
     
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
    
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
@@ -127,13 +127,13 @@
 }
 
 
--(UIView *)sdkContentView
+-(UIView *)sdkContentView_MMMPRO
 {
-    if (!_sdkContentView) {
-        _sdkContentView = [[UIView alloc]init];
+    if (!_sdkContentView_MMMPRO) {
+        _sdkContentView_MMMPRO = [[UIView alloc]init];
         //        sdkContentView.backgroundColor = [UIColor redColor];
-        [self.view addSubview:_sdkContentView];
-        [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.view addSubview:_sdkContentView_MMMPRO];
+        [_sdkContentView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
             
             if([SDK_VERSION_VN isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
                [SDK_VERSION_V6 isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
@@ -163,7 +163,7 @@
            
         }];
     }
-    return _sdkContentView;
+    return _sdkContentView_MMMPRO;
 }
 
 #pragma mark -頁面添加部分
@@ -175,7 +175,7 @@
     //移除所有子视图
     //    [[self sdkContentView].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_MMMPRO].subviews) {
         [subView removeFromSuperview];
     }
     
@@ -195,7 +195,7 @@
 {
 
     
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_MMMPRO].subviews) {
         [subView removeFromSuperview];
     }
     mAutoLoginView = [[AutoLoginView alloc] initView_MMMethodMMM];
@@ -248,7 +248,7 @@
 {
     //移除所有子视图
 //    [[self sdkContentView_MMMethodMMM].subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_MMMPRO].subviews) {
         [subView removeFromSuperview];
     }
     mMainHomeView = [[MainHomeViewV2 alloc] initView_MMMethodMMM];
@@ -260,7 +260,7 @@
 -(void)addSubSdkLoginView_MMMethodMMM:(SDKBaseView *)mSDKBaseView
 {
     
-    mSDKBaseView.delegate = self;
+    mSDKBaseView.loginDelegate_MMMPRO = self;
 //    mSDKBaseView.theViewUIViewController = self;
 //    mSDKBaseView.mUITextFieldDelegate = self;
     
@@ -269,15 +269,15 @@
     
 //    [self.sdkContentView.subviews makeObjectsPerformSelector:@selector(setHidden:) withObject:@YES];
     
-    for (UIView *subView in self.sdkContentView.subviews) {
+    for (UIView *subView in self.sdkContentView_MMMPRO.subviews) {
         subView.hidden = YES;
     }
     
-    [self.sdkContentView addSubview:mSDKBaseView];
+    [self.sdkContentView_MMMPRO addSubview:mSDKBaseView];
     
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo([self sdkContentView]);
-        make.center.mas_equalTo([self sdkContentView]);
+        make.size.mas_equalTo([self sdkContentView_MMMPRO]);
+        make.center.mas_equalTo([self sdkContentView_MMMPRO]);
     }];
 }
 
@@ -355,8 +355,8 @@
     }
     
     if (mView && fromPage && fromPage != CURRENT_PAGE_TYPE_NULL) {
-        mView.fromPage = fromPage;
-        mView.fromPageParam = obj;
+        mView.fromPage_MMMPRO = fromPage;
+        mView.fromPageParam_MMMPRO = obj;
         [mView initData_MMMethodMMM];
     }
 }
@@ -428,7 +428,7 @@
 -(void) handleLoginOrRegSuccess_MMMethodMMM:(id)responseData thirdPlate_MMMethodMMM:(NSString *)thirdPlate
 {
     LoginResponse *loginResopnse = (LoginResponse *)responseData;
-    SDK_DATA.mLoginResponse = loginResopnse;
+    SDK_DATA.mLoginResponse_MMMPRO = loginResopnse;
     
     AccountModel *rData = loginResopnse.data;
     rData.loginType = thirdPlate;
@@ -529,21 +529,21 @@
 #pragma mark --键盘弹出收起管理
 -(void)keyboardWillShow_MMMethodMMM:(NSNotification *)note{
     SDK_LOG(wwwww_tag_wwwww_keyboardWillShow);
-    if (self.currentEditingTextViewFrame.origin.y == 0) {//为0返回
+    if (self.currentEditingTextViewFrame_MMMPRO.origin.y == 0) {//为0返回
         return;
     }
     
     //获取键盘高度
     NSDictionary* info = [note userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    SDK_DATA.keyBoardHeight = kbSize.height;
-    CGFloat offSet = self.currentEditingTextViewFrame.origin.y + self.currentEditingTextViewFrame.size.height - (self.view.frame.size.height - kbSize.height);
+    SDK_DATA.keyBoardHeight_MMMPRO = kbSize.height;
+    CGFloat offSet = self.currentEditingTextViewFrame_MMMPRO.origin.y + self.currentEditingTextViewFrame_MMMPRO.size.height - (self.view.frame.size.height - kbSize.height);
     //将试图的Y坐标向上移动offset个单位，以使界面腾出开的地方用于软键盘的显示
     if (offSet > 0.01) {
         kWeakSelf
         [UIView animateWithDuration:0.3 animations:^{
             //weakSelf.tableView.contentOffset = CGPointMake(0, offSet);
-            [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [weakSelf.sdkContentView_MMMPRO mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.equalTo(@(0)).mas_offset(-(offSet + 15));
             }];
         }];
@@ -565,12 +565,12 @@
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
         
-        [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        [weakSelf.sdkContentView_MMMPRO mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(@(0));
         }];
     }];
-    self.currentEditingTextViewFrame = CGRectMake(0, 0, 0, 0);//设置为0
-    SDK_DATA.keyBoardHeight = 0;
+    self.currentEditingTextViewFrame_MMMPRO = CGRectMake(0, 0, 0, 0);//设置为0
+    SDK_DATA.keyBoardHeight_MMMPRO = 0;
     
 }
 #pragma mark - UITextField Delegate
@@ -586,7 +586,7 @@
 {
     SDK_LOG(wwwww_tag_wwwww_textFieldShouldBeginEditing);
     //获取当前输入文本框相对于当前view的位置
-    self.currentEditingTextViewFrame = [textField convertRect:textField.frame toView:self.view];
+    self.currentEditingTextViewFrame_MMMPRO = [textField convertRect:textField.frame toView:self.view];
     return YES;
 }
 

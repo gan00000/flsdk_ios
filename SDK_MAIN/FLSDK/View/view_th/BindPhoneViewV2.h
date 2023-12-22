@@ -5,7 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BindPhoneViewV2 : BaseCountTimerView
 
-@property (copy,nonatomic) MWBlock mMWBlock;
+@property (copy,nonatomic) MWBlock mMWBlock_MMMPRO;
 
 @end
 

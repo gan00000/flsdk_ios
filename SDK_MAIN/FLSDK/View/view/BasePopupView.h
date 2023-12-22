@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BasePopupView : SDKBaseView
 
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) CCallBack touchesBeganCallback;
+@property (nonatomic,strong) UIView *contentView_MMMPRO;
+@property (nonatomic,strong) CCallBack touchesBeganCallback_MMMPRO;
 
 @end
 

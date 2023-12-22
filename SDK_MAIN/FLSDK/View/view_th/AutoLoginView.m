@@ -87,7 +87,7 @@
     
     CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
     [changeAccountBtn.layer addSublayer:mGl];
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         mGl.frame = changeAccountBtn.bounds;
     }];
     
@@ -118,9 +118,9 @@
             //[self requestAccountLogin_MMMethodMMM:mAccountModel];
             accountTips = mAccountModel.account;
         }
-        self.totalCount = 3;
+        self.totalCount_MMMPRO = 3;
         
-        self.countTimerDelegate = self;
+        self.countTimerDelegate_MMMPRO = self;
         [self startCountTimer_MMMethodMMM];
     }
     
@@ -148,14 +148,14 @@
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return;
     }
-    [LoginHelper selfLoginAndRequest_MMMethodMMM:self.delegate account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
+    [LoginHelper selfLoginAndRequest_MMMethodMMM:self.loginDelegate_MMMPRO account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
 }
 
 
 - (void)beforeStartTimer_MMMethodMMM{
     
     if(mAccountModel){
-        accountLable.text = STR_FORMAT(@"%@(%d)", accountTips, self.totalCount);
+        accountLable.text = STR_FORMAT(@"%@(%d)", accountTips, self.totalCount_MMMPRO);
     }
     
 }
@@ -171,7 +171,7 @@
 - (void)finishTimer_MMMethodMMM
 {
     if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel.loginType]){
-        [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         
     }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel.loginType]){
         [self requestAccountLogin_MMMethodMMM:mAccountModel];
@@ -190,8 +190,8 @@
             
         case kSwitchAccountActTag:
             [self cancelCountTimer_MMMethodMMM];
-            if (self.delegate) {
-                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_LOGIN_WITH_REG];
+            if (self.loginDelegate_MMMPRO) {
+                [self.loginDelegate_MMMPRO goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_LOGIN_WITH_REG];
             }
             break;
             

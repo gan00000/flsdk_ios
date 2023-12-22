@@ -27,12 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initViewWithType_MMMethodMMM:(SDKTextFiledView_Type) type;
 -(void)setPwdFiledView_MMMethodMMM:(BOOL)enable;
 
-@property (nonatomic) ItemViewClickHander clickAccountListItem;
-@property (nonatomic) CCallBack inputTextFieldChange;
-@property (nonatomic) UITextField *inputUITextField;
-@property (nonatomic) UIButton *moreAccountBtn;
+@property (nonatomic) ItemViewClickHander clickAccountListItem_MMMPRO;
+@property (nonatomic) CCallBack inputTextFieldChange_MMMPRO;
+@property (nonatomic) UITextField *inputUITextField_MMMPRO;
+@property (nonatomic) UIButton *moreAccountBtn_MMMPRO;
 
-@property (nonatomic) UIImageView *lableIconImageView;
+@property (nonatomic) UIImageView *lableIconImageView_MMMPRO;
 
 @end
 

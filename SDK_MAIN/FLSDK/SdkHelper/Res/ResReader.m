@@ -74,42 +74,42 @@ static dispatch_once_t onceToken;
 }
 
 #pragma mark -本地bundle手机区号信息
-- (NSMutableArray *)areaInfoArray
+- (NSMutableArray *)areaInfoArray_MMMPRO
 {
-    if(!_areaInfoArray){
-        _areaInfoArray = [NSMutableArray array];
+    if(!_areaInfoArray_MMMPRO){
+        _areaInfoArray_MMMPRO = [NSMutableArray array];
         
         NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"txt"];
         if (areaInfo_arry) {
-            [_areaInfoArray addObjectsFromArray:areaInfo_arry];
+            [_areaInfoArray_MMMPRO addObjectsFromArray:areaInfo_arry];
         }
         
         areaInfo_arry = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"json"];
         if (areaInfo_arry) {
-            [_areaInfoArray addObjectsFromArray:areaInfo_arry];
+            [_areaInfoArray_MMMPRO addObjectsFromArray:areaInfo_arry];
         }
     }
-    return _areaInfoArray;
+    return _areaInfoArray_MMMPRO;
 }
 
 #pragma mark -配置属性信息
--(NSDictionary *)mySdkConfDic{
-    if (!_mySdkConfDic) {
+-(NSDictionary *)mySdkConfDic_MMMPRO{
+    if (!_mySdkConfDic_MMMPRO) {
         //1.先读取main bundle
-        _mySdkConfDic = self.mainBundleConfDic;
+        _mySdkConfDic_MMMPRO = self.mainBundleConfDic_MMMPRO;
 //        if(!_mySdkConfDic)
 //        {   //2.再去读sdk bundle
 //            _mySdkConfDic = [self readSdkBundleCoreConfInfo_MMMethodMMM];
 //        }
     }
-    return _mySdkConfDic;
+    return _mySdkConfDic_MMMPRO;
 }
 
--(NSDictionary *)mainBundleConfDic{
-    if (!_mainBundleConfDic) {
-        _mainBundleConfDic = [self readMainBundleCoreConfInfo_MMMethodMMM];
+-(NSDictionary *)mainBundleConfDic_MMMPRO{
+    if (!_mainBundleConfDic_MMMPRO) {
+        _mainBundleConfDic_MMMPRO = [self readMainBundleCoreConfInfo_MMMethodMMM];
     }
-    return _mainBundleConfDic;
+    return _mainBundleConfDic_MMMPRO;
 }
 
 //#pragma mark -从sdk bundle配置文件中读取配置信息
@@ -166,7 +166,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取某个key对应的确定的配置值
 -(NSString *)getStringForKey_MMMethodMMM:(NSString *)key
 {
-    id aresult = [self.mySdkConfDic objectForKey:key];
+    id aresult = [self.mySdkConfDic_MMMPRO objectForKey:key];
     if (aresult) {
         return [NSString stringWithFormat:@"%@", aresult];
     }
@@ -176,14 +176,14 @@ static dispatch_once_t onceToken;
 -(BOOL)getBoolForKey_MMMethodMMM:(NSString *)key
 {
     
-    id obj = [self.mySdkConfDic objectForKey:key];;
+    id obj = [self.mySdkConfDic_MMMPRO objectForKey:key];;
     BOOL boolValue = [obj boolValue];
     return boolValue;
 }
 
 -(NSString *)getLocalizedStringForKey_MMMethodMMM:(NSString *)key
 {
-    id mValue = [self.textStringDic objectForKey:key];
+    id mValue = [self.textStringDic_MMMPRO objectForKey:key];
     if (mValue){
         NSString *ms = [NSString stringWithFormat:@"%@",mValue];
         return ms;
@@ -260,10 +260,10 @@ static dispatch_once_t onceToken;
 }
 
 #pragma mark - 初始化加密json文本
--(NSMutableDictionary *)textStringDic
+-(NSMutableDictionary *)textStringDic_MMMPRO
 {
-    if(!_textStringDic){
-        _textStringDic = [NSMutableDictionary dictionary];
+    if(!_textStringDic_MMMPRO){
+        _textStringDic_MMMPRO = [NSMutableDictionary dictionary];
         
         NSString *languageStr = [self getsdkLanguage_MMMethodMMM]; //指定的默认语言
         NSString *languageStr_defalut = languageStr;
@@ -288,32 +288,32 @@ static dispatch_once_t onceToken;
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
         //获取加密文本内容
         if(dicTemp){
-            [_textStringDic addEntriesFromDictionary:dicTemp];
-            return _textStringDic;
+            [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
+            return _textStringDic_MMMPRO;
         }
         //获取未加密json文本内容
         dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
         if(dicTemp){
-            [_textStringDic addEntriesFromDictionary:dicTemp];
-            return _textStringDic;
+            [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
+            return _textStringDic_MMMPRO;
         }
         //使用默认语言
         SDK_LOG(@"language = %@ not exist",languageStr);
         dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"txt"];
         if (dicTemp){
-            [_textStringDic addEntriesFromDictionary:dicTemp];
+            [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
             SDK_LOG(@"set language str = %@ ",languageStr_defalut);
-            return _textStringDic;
+            return _textStringDic_MMMPRO;
         }
         
         dicTemp = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"json"];
         if(dicTemp){
-            [_textStringDic addEntriesFromDictionary:dicTemp];
-            return _textStringDic;
+            [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
+            return _textStringDic_MMMPRO;
         }
         
     }
-    return _textStringDic;
+    return _textStringDic_MMMPRO;
 
 }
 
@@ -529,7 +529,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取配置文件中sdk bundle名字，获取不到去gameCode作为名字
 - (NSString *)getSdkBundleName_MMMethodMMM
 {
-    NSString * bundleName = self.mainBundleConfDic[@"sdk_res_bundle_name"];
+    NSString * bundleName = self.mainBundleConfDic_MMMPRO[@"sdk_res_bundle_name"];
     if (bundleName && ![bundleName isEqualToString:@""]) {
         return bundleName;
     }

@@ -17,7 +17,7 @@
 
 @interface HttpServiceEnginePay()
 
-@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
+@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine_MMMPRO;
 
 @end
 
@@ -30,8 +30,8 @@
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEnginePay alloc] init];
         NSString *servicePath = [SDKRES getPayUrl_MMMethodMMM];//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
-        instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
-        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
+        instance.httpEngine_MMMPRO = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
+        [instance.httpEngine_MMMPRO updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
 //            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
 //            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
@@ -52,7 +52,7 @@
         [allParams addEntriesFromDictionary:params];
     }
 //    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [[HttpServiceEnginePay sharedInstance].httpEngine getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEnginePay sharedInstance].httpEngine_MMMPRO getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
@@ -104,7 +104,7 @@
     }
 //    SDK_LOG(@"post: path = %@,params = %@", path, params);
 //    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-    [[HttpServiceEnginePay sharedInstance].httpEngine postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEnginePay sharedInstance].httpEngine_MMMPRO postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);

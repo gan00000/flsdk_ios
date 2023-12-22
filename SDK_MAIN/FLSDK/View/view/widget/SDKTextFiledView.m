@@ -38,14 +38,14 @@
     eyeBtn.hidden = !enable;
     mUITextField.enabled = enable;
     if (enable) {
-        self.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon];
+        self.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon];
         mUITextField.secureTextEntry = YES;
         mUITextField.text = @"";
         eyeBtn.selected = YES;
         mUITextField.textColor = [UIColor whiteColor];
         
     }else{
-        self.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_disable_icon];
+        self.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_disable_icon];
         mUITextField.secureTextEntry = NO;
         mUITextField.text = GetString(wwwww_tag_wwwww_text_free_register);
         mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
@@ -119,14 +119,14 @@
             break;
     }
     
-    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
-    self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:self.lableIconImageView];
-    [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.lableIconImageView_MMMPRO = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
+    self.lableIconImageView_MMMPRO.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:self.lableIconImageView_MMMPRO];
+    [self.lableIconImageView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading);
         make.centerY.mas_equalTo(self);
         make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
-        make.width.mas_equalTo(self.lableIconImageView.mas_height);
+        make.width.mas_equalTo(self.lableIconImageView_MMMPRO.mas_height);
     }];
     
     
@@ -136,7 +136,7 @@
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.width.mas_equalTo(0.5);
-        make.leading.mas_equalTo(self.lableIconImageView.mas_trailing).mas_offset(VW(8));
+        make.leading.mas_equalTo(self.lableIconImageView_MMMPRO.mas_trailing).mas_offset(VW(8));
         make.centerY.mas_equalTo(self);
         
         make.height.mas_equalTo(VH(14));
@@ -150,7 +150,7 @@
     }
     
     mUITextField = [[UITextField alloc] init];
-    self.inputUITextField = mUITextField;
+    self.inputUITextField_MMMPRO = mUITextField;
     if (mUIKeyboardType) {
         [mUITextField setKeyboardType:mUIKeyboardType];
     }
@@ -158,8 +158,8 @@
     
     mUITextField.font = [UIFont systemFontOfSize:FS(14)];
     
-    if (SDK_DATA.mUITextFieldDelegate) {
-        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate;
+    if (SDK_DATA.mUITextFieldDelegate_MMMPRO) {
+        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
     }
     
 //    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
@@ -185,11 +185,11 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
+        self.moreAccountBtn_MMMPRO = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
         //        self.moreAccountBtn.hidden = YES;
-        self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:self.moreAccountBtn];
-        [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        self.moreAccountBtn_MMMPRO.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:self.moreAccountBtn_MMMPRO];
+        [self.moreAccountBtn_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.trailing.mas_equalTo(self).mas_offset(VW(-8));;
             make.centerY.mas_equalTo(self);
@@ -236,13 +236,13 @@
     }];
     
     if (!showLableIcon) {
-        self.lableIconImageView.hidden = YES;
+        self.lableIconImageView_MMMPRO.hidden = YES;
         lineView1.hidden = YES;
         lineView2.hidden = YES;
     }
     
-    if (self.inputUITextField) {
-        [self.inputUITextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
+    if (self.inputUITextField_MMMPRO) {
+        [self.inputUITextField_MMMPRO addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
     }
     
 }
@@ -312,14 +312,14 @@
             break;
     }
     
-    self.lableIconImageView = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
-    self.lableIconImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:self.lableIconImageView];
-    [self.lableIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.lableIconImageView_MMMPRO = [[UIImageView alloc] initWithImage:[UIImage res_imageNamed_MMMethodMMM:iconName]];
+    self.lableIconImageView_MMMPRO.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:self.lableIconImageView_MMMPRO];
+    [self.lableIconImageView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.mas_leading).mas_offset(VW(18));
         make.centerY.mas_equalTo(self);
         make.height.mas_equalTo(VH(21));//icon,字体需要使用高度比
-        make.width.mas_equalTo(self.lableIconImageView.mas_height);
+        make.width.mas_equalTo(self.lableIconImageView_MMMPRO.mas_height);
     }];
     
     
@@ -329,7 +329,7 @@
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.width.mas_equalTo(0.5);
-        make.leading.mas_equalTo(self.lableIconImageView.mas_trailing).mas_offset(VW(8));
+        make.leading.mas_equalTo(self.lableIconImageView_MMMPRO.mas_trailing).mas_offset(VW(8));
         make.centerY.mas_equalTo(self);
         
         make.height.mas_equalTo(VH(14));
@@ -343,7 +343,7 @@
     }
     
     mUITextField = [[UITextField alloc] init];
-    self.inputUITextField = mUITextField;
+    self.inputUITextField_MMMPRO = mUITextField;
     if (mUIKeyboardType) {
         [mUITextField setKeyboardType:mUIKeyboardType];
     }
@@ -351,8 +351,8 @@
     
     mUITextField.font = [UIFont systemFontOfSize:FS(14)];
     
-    if (SDK_DATA.mUITextFieldDelegate) {
-        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate;
+    if (SDK_DATA.mUITextFieldDelegate_MMMPRO) {
+        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
     }
     
 //    mUITextField.adjustsFontSizeToFitWidth = YES;//文字大小适配宽度大小n
@@ -378,11 +378,11 @@
     
     if (addMoreAccountBtn) {
         
-        self.moreAccountBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
+        self.moreAccountBtn_MMMPRO = [UIUtil initBtnWithNormalImage_MMMethodMMM:sdk_list_down highlightedImage_MMMethodMMM:sdk_list_down selectedImageName_MMMethodMMM:sdk_list_up tag_MMMethodMMM:kMoreAccountListActTag selector:@selector(clickItemBtn_MMMethodMMM:) target_MMMethodMMM:self];
         //        self.moreAccountBtn.hidden = YES;
-        self.moreAccountBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:self.moreAccountBtn];
-        [self.moreAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        self.moreAccountBtn_MMMPRO.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:self.moreAccountBtn_MMMPRO];
+        [self.moreAccountBtn_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.trailing.mas_equalTo(self).mas_offset(VW(-15));;
             make.centerY.mas_equalTo(self);
@@ -430,13 +430,13 @@
     }];
     
     if (!showLableIcon) {
-        self.lableIconImageView.hidden = YES;
+        self.lableIconImageView_MMMPRO.hidden = YES;
         lineView1.hidden = YES;
         lineView2.hidden = YES;
     }
     
-    if (self.inputUITextField) {
-        [self.inputUITextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
+    if (self.inputUITextField_MMMPRO) {
+        [self.inputUITextField_MMMPRO addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
     }
     
 }
@@ -465,8 +465,8 @@
 //点击账号记录下拉列表
 - (void)clickItemBtn_MMMethodMMM:(UIButton *)sender
 {
-    if (self.clickAccountListItem) {
-        self.clickAccountListItem(sender.tag);
+    if (self.clickAccountListItem_MMMPRO) {
+        self.clickAccountListItem_MMMPRO(sender.tag);
     }
 }
 
@@ -478,11 +478,11 @@
     
     if (sender.text && [sender.text containsString:@" "]) {
         NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格
-        self.inputUITextField.text = tempStr;
+        self.inputUITextField_MMMPRO.text = tempStr;
     }
     
-    if (self.inputTextFieldChange) {
-        self.inputTextFieldChange(self.inputUITextField.text,0,nil);
+    if (self.inputTextFieldChange_MMMPRO) {
+        self.inputTextFieldChange_MMMPRO(self.inputUITextField_MMMPRO.text,0,nil);
     }
     
 }

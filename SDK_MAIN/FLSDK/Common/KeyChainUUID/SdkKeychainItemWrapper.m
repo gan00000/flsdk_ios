@@ -89,7 +89,7 @@ Keychain API expects as a validly constructed container class.
 
 @implementation SdkKeychainItemWrapper
 
-@synthesize keychainItemData, genericPasswordQuery;
+@synthesize keychainItemData_MMMPRO, genericPasswordQuery_MMMPRO;
 
 - (id)initWithIdentifier_MMMethodMMM: (NSString *)identifier accessGroup_MMMethodMMM:(NSString *) accessGroup
 {
@@ -98,10 +98,10 @@ Keychain API expects as a validly constructed container class.
         // Begin Keychain search setup. The genericPasswordQuery leverages the special user
         // defined attribute kSecAttrGeneric to distinguish itself between other generic Keychain
         // items which may be included by the same application.
-        genericPasswordQuery = [[NSMutableDictionary alloc] init];
+        genericPasswordQuery_MMMPRO = [[NSMutableDictionary alloc] init];
         
-		[genericPasswordQuery setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
-        [genericPasswordQuery setObject:identifier forKey:(id)kSecAttrGeneric];
+		[genericPasswordQuery_MMMPRO setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+        [genericPasswordQuery_MMMPRO setObject:identifier forKey:(id)kSecAttrGeneric];
 		
 		// The keychain access group attribute determines if this item can be shared
 		// amongst multiple apps whose code signing entitlements contain the same keychain access group.
@@ -117,15 +117,15 @@ Keychain API expects as a validly constructed container class.
 			// If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
 			// simulator will return -25243 (errSecNoAccessForItem).
 #else			
-			[genericPasswordQuery setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
+			[genericPasswordQuery_MMMPRO setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
 #endif
 		}
 		
 		// Use the proper search constants, return only the attributes of the first match.
-        [genericPasswordQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
-        [genericPasswordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+        [genericPasswordQuery_MMMPRO setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+        [genericPasswordQuery_MMMPRO setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
         
-        NSDictionary *tempQuery = [NSDictionary dictionaryWithDictionary:genericPasswordQuery];
+        NSDictionary *tempQuery = [NSDictionary dictionaryWithDictionary:genericPasswordQuery_MMMPRO];
         
         NSMutableDictionary *outDictionary = nil;
         
@@ -135,7 +135,7 @@ Keychain API expects as a validly constructed container class.
             [self resetKeychainItem_MMMethodMMM];
 			
 			// Add the generic attribute and the keychain access group.
-			[keychainItemData setObject:identifier forKey:(id)kSecAttrGeneric];
+			[keychainItemData_MMMPRO setObject:identifier forKey:(id)kSecAttrGeneric];
 			if (accessGroup != nil)
 			{
 #if TARGET_IPHONE_SIMULATOR
@@ -148,14 +148,14 @@ Keychain API expects as a validly constructed container class.
 				// If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
 				// simulator will return -25243 (errSecNoAccessForItem).
 #else			
-				[keychainItemData setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
+				[keychainItemData_MMMPRO setObject:accessGroup forKey:(id)kSecAttrAccessGroup];
 #endif
 			}
 		}
         else
         {
             // load the saved data from Keychain.
-            self.keychainItemData = [self secItemFormatToDictionary_MMMethodMMM:outDictionary];
+            self.keychainItemData_MMMPRO = [self secItemFormatToDictionary_MMMethodMMM:outDictionary];
         }
        
 		[outDictionary release];
@@ -166,8 +166,8 @@ Keychain API expects as a validly constructed container class.
 
 - (void)dealloc
 {
-    [keychainItemData release];
-    [genericPasswordQuery release];
+    [keychainItemData_MMMPRO release];
+    [genericPasswordQuery_MMMPRO release];
     
 	[super dealloc];
 }
@@ -177,40 +177,40 @@ Keychain API expects as a validly constructed container class.
     if (inObject == nil) {
         return;
     }
-    id currentObject = [keychainItemData objectForKey:key];
+    id currentObject = [keychainItemData_MMMPRO objectForKey:key];
     if (![currentObject isEqual:inObject])
     {
-        [keychainItemData setObject:inObject forKey:key];
+        [keychainItemData_MMMPRO setObject:inObject forKey:key];
         [self writeToKeychain_MMMethodMMM];
     }
 }
 
 - (id)objectForKey:(id)key
 {
-    return [keychainItemData objectForKey:key];
+    return [keychainItemData_MMMPRO objectForKey:key];
 }
 
 - (void)resetKeychainItem_MMMethodMMM
 {
 	OSStatus junk = noErr;
-    if (!keychainItemData) 
+    if (!keychainItemData_MMMPRO) 
     {
-        self.keychainItemData = [[[NSMutableDictionary alloc] init] autorelease];
+        self.keychainItemData_MMMPRO = [[[NSMutableDictionary alloc] init] autorelease];
     }
-    else if (keychainItemData)
+    else if (keychainItemData_MMMPRO)
     {
-        NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
+        NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData_MMMPRO];
 		junk = SecItemDelete((CFDictionaryRef)tempDictionary);
         NSAssert( junk == noErr || junk == errSecItemNotFound, @"Problem deleting current dictionary." );
     }
     
     // Default attributes for keychain item.
-    [keychainItemData setObject:@"" forKey:(id)kSecAttrAccount];
-    [keychainItemData setObject:@"" forKey:(id)kSecAttrLabel];
-    [keychainItemData setObject:@"" forKey:(id)kSecAttrDescription];
+    [keychainItemData_MMMPRO setObject:@"" forKey:(id)kSecAttrAccount];
+    [keychainItemData_MMMPRO setObject:@"" forKey:(id)kSecAttrLabel];
+    [keychainItemData_MMMPRO setObject:@"" forKey:(id)kSecAttrDescription];
     
 	// Default data for keychain item.
-    [keychainItemData setObject:@"" forKey:(id)kSecValueData];
+    [keychainItemData_MMMPRO setObject:@"" forKey:(id)kSecValueData];
 }
 
 - (NSMutableDictionary *)dictionaryToSecItemFormat_MMMethodMMM:(NSDictionary *)dictionaryToConvert
@@ -274,15 +274,15 @@ Keychain API expects as a validly constructed container class.
     NSMutableDictionary *updateItem = NULL;
 	OSStatus result;
     
-    if (SecItemCopyMatching((CFDictionaryRef)genericPasswordQuery, (CFTypeRef *)&attributes) == noErr)
+    if (SecItemCopyMatching((CFDictionaryRef)genericPasswordQuery_MMMPRO, (CFTypeRef *)&attributes) == noErr)
     {
         // First we need the attributes from the Keychain.
         updateItem = [NSMutableDictionary dictionaryWithDictionary:attributes];
         // Second we need to add the appropriate search key/values.
-        [updateItem setObject:[genericPasswordQuery objectForKey:(id)kSecClass] forKey:(id)kSecClass];
+        [updateItem setObject:[genericPasswordQuery_MMMPRO objectForKey:(id)kSecClass] forKey:(id)kSecClass];
         
         // Lastly, we need to set up the updated attribute list being careful to remove the class.
-        NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData];
+        NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData_MMMPRO];
         [tempCheck removeObjectForKey:(id)kSecClass];
 		
 #if TARGET_IPHONE_SIMULATOR
@@ -312,7 +312,7 @@ Keychain API expects as a validly constructed container class.
     else
     {
         // No previous item found; add the new one.
-        result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData], NULL);
+        result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData_MMMPRO], NULL);
 //		NSAssert( result == noErr, @"Couldn't add the Keychain Item." );
 //        NSLog(@"Adding the Keychain Item. result: %d",(int)result);
         if (result != noErr) {

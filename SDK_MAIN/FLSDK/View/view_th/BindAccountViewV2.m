@@ -107,15 +107,15 @@
         }];
     
         
-        AccountModel *currentAccount = SDK_DATA.mLoginResponse.data;
+        AccountModel *currentAccount = SDK_DATA.mLoginResponse_MMMPRO.data;
         if (currentAccount.isBind) {
             
             thirdAccountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
+            thirdAccountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
             thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            thirdAccountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
+            thirdAccountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
             [contentView addSubview:thirdAccountSDKTextFiledView];
             
             [thirdAccountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -131,10 +131,10 @@
             
             hasBind_accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
             hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            hasBind_accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            hasBind_accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            hasBind_accountSDKTextFiledView.inputUITextField.enabled = NO;
+            hasBind_accountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            hasBind_accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
+            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
             
             [contentView addSubview:hasBind_accountSDKTextFiledView];
             
@@ -148,15 +148,15 @@
                 
             }];
             
-            hasBind_accountSDKTextFiledView.inputUITextField.text = currentAccount.loginId;
+            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.text = currentAccount.loginId;
             
         }else{
             
             accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+            accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
             accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            accountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            accountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
             [contentView addSubview:accountSDKTextFiledView];
             
             [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -172,9 +172,9 @@
             
             //密码
             pwdSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
+            pwdSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
             pwdSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
+            pwdSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
             [contentView addSubview:pwdSDKTextFiledView];
             
             [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -222,7 +222,7 @@
       
         CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
         [okBtn.layer addSublayer:gl];
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             gl.frame = okBtn.bounds;
         }];
 
@@ -233,9 +233,9 @@
 - (void)initData_MMMethodMMM
 {
     [super initData_MMMethodMMM];
-    AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam;
+    AccountModel *tempAccountModel = (AccountModel *)self.fromPageParam_MMMPRO;
     [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
-    thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
+    thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
 }
 
 
@@ -244,7 +244,7 @@
     switch (sender.tag) {
             
         case TAG_CLOSE:
-            [self removeFromGameView];
+            [self removeFromGameView_MMMethodMMM];
 //            if (self.mMWBlock) {
 //                self.mMWBlock(NO, nil);
 //            }
@@ -256,7 +256,7 @@
             if (accountSDKTextFiledView) {
                 [self bindAccount_MMMethodMMM];
             }else{
-                [self removeFromGameView];
+                [self removeFromGameView_MMMethodMMM];
 //                if (self.mMWBlock) {
 //                    self.mMWBlock(NO, nil);
 //                }
@@ -277,8 +277,8 @@
 {
     
     
-    NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
-    NSString *password = [pwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *account = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *password = [pwdSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
   
     
 //    if ([StringUtil isEmpty_MMMethodMMM:]) {
@@ -295,7 +295,7 @@
         return;
     }
     
-    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
+    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     if (!currentAccountModel) {
 //        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
@@ -310,7 +310,7 @@
         cc.data.account = account;
         cc.data.password = password;
         cc.data.loginType = currentAccountModel.loginType;
-        SDK_DATA.mLoginResponse = cc;
+        SDK_DATA.mLoginResponse_MMMPRO = cc;
         
         [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
         
@@ -334,11 +334,11 @@
         loginData.telephone = rData.telephone;
         loginData.loginId = rData.loginId;
         
-        if (self.mMWBlock) {
-            self.mMWBlock(YES, loginData);
+        if (self.mMWBlock_MMMPRO) {
+            self.mMWBlock_MMMPRO(YES, loginData);
         }
         
-        [self removeFromGameView];
+        [self removeFromGameView_MMMethodMMM];
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
@@ -399,15 +399,15 @@
     }
     
 //    accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
-    accountFiledView.inputUITextField.text = account_tips;
+    accountFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
+    accountFiledView.inputUITextField_MMMPRO.text = account_tips;
     
     if (pwdFiledView) {
 //        [pwdFiledView setPwdFiledView_MMMethodMMM:pwdEnable];
        
         if (pwdEnable) {
             pwdFiledView.hidden = NO;
-            pwdFiledView.inputUITextField.text = pwdText;
+            pwdFiledView.inputUITextField_MMMPRO.text = pwdText;
             
             [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
                 
@@ -416,7 +416,7 @@
             
             
         }else{
-            pwdFiledView.inputUITextField.text = @"";
+            pwdFiledView.inputUITextField_MMMPRO.text = @"";
             pwdFiledView.hidden = YES;
             [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.mas_equalTo(1);

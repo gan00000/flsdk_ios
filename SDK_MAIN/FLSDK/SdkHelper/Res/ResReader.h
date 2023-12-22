@@ -13,13 +13,13 @@
 
 @interface ResReader : NSObject
 
-@property (nonatomic,strong) NSDictionary * mySdkConfDic;//配置文件不放在bundle，以前是放在bundle
+@property (nonatomic,strong) NSDictionary * mySdkConfDic_MMMPRO;//配置文件不放在bundle，以前是放在bundle
 
-@property (nonatomic,strong) NSDictionary * mainBundleConfDic;//配置文件不放在bundle，以前是放在bundle
+@property (nonatomic,strong) NSDictionary * mainBundleConfDic_MMMPRO;//配置文件不放在bundle，以前是放在bundle
 //@property (nonatomic, strong) NSMutableDictionary *areaCodeDic;
-@property (nonatomic, strong) NSMutableArray *areaInfoArray;
+@property (nonatomic, strong) NSMutableArray *areaInfoArray_MMMPRO;
 
-@property (nonatomic,strong) NSMutableDictionary * textStringDic;
+@property (nonatomic,strong) NSMutableDictionary * textStringDic_MMMPRO;
 
 + (ResReader *)reader_MMMethodMMM;
 //+ (void)releaseReader;

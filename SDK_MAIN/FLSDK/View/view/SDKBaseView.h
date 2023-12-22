@@ -20,19 +20,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 //@property(nonatomic, weak) UIViewController * theViewUIViewController;
 
-@property(nonatomic, weak) id<LoginViewDelegate> delegate;
+@property(nonatomic, weak) id<LoginViewDelegate> loginDelegate_MMMPRO;
 
 //@property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
-@property(nonatomic) CURRENT_PAGE_TYPE fromPage;
-@property(nonatomic,assign) id fromPageParam;
+@property(nonatomic) CURRENT_PAGE_TYPE fromPage_MMMPRO;
+@property(nonatomic,assign) id fromPageParam_MMMPRO;
 
 -(void)initData_MMMethodMMM;
-@property(nonatomic,strong)NSMutableArray *drawBlockArray;
+@property(nonatomic,strong)NSMutableArray *drawBlockArray_MMMPRO;
 
-- (void)addDrawRectBolck:(CCallBack)callback;
+- (void)addDrawRectBolck_MMMethodMMM:(CCallBack)callback;
 
--(void)removeFromGameView;
+-(void)removeFromGameView_MMMethodMMM;
 @end
 
 NS_ASSUME_NONNULL_END

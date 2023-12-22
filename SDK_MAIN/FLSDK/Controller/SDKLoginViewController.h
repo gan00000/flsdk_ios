@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithPageType_MMMethodMMM:(SDKPage) pageType;
 
 
-@property (nonatomic)CGRect currentEditingTextViewFrame;
+@property (nonatomic)CGRect currentEditingTextViewFrame_MMMPRO;
 
 @end
 

@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountListViewCell : UITableViewCell
 
-@property (nonatomic, strong) UILabel *accountUILabel;
-@property (nonatomic, strong) UIButton *deleteAccountBtn;
-@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *accountUILabel_MMMPRO;
+@property (nonatomic, strong) UIButton *deleteAccountBtn_MMMPRO;
+@property (nonatomic, strong) UIImageView *iconImageView_MMMPRO;
 
-@property (nonatomic, strong) ItemViewClickHander mItemViewClickHander;
+@property (nonatomic, strong) ItemViewClickHander mItemViewClickHander_MMMPRO;
 
 @end
 

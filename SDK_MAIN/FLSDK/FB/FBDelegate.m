@@ -18,10 +18,10 @@
 
 @interface FBDelegate() <FBSDKSharingDelegate>
 
-@property (nonatomic,strong) FBSDKLoginManager *loginManager;
+@property (nonatomic,strong) FBSDKLoginManager *loginManager_MMMPRO;
 
-@property (nonatomic,strong) CCallBack successBlock;
-@property (nonatomic,strong) CCallBack failBlock;
+@property (nonatomic,strong) CCallBack successBlock_MMMPRO;
+@property (nonatomic,strong) CCallBack failBlock_MMMPRO;
 
 @end
 
@@ -75,12 +75,12 @@
 //    [FBSDKAppEvents activateApp];
 }
 
--(FBSDKLoginManager *)loginManager
+-(FBSDKLoginManager *)loginManager_MMMPRO
 {
-    if (!_loginManager) {
-        _loginManager = [[FBSDKLoginManager alloc] init];
+    if (!_loginManager_MMMPRO) {
+        _loginManager_MMMPRO = [[FBSDKLoginManager alloc] init];
     }
-    return _loginManager;
+    return _loginManager_MMMPRO;
 }
 
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
@@ -88,9 +88,9 @@
     if ([FBSDKAccessToken currentAccessToken]) {
 //        NSString *appID = [FBSDKAccessToken currentAccessToken].appID;
 //        NSString *appID2 = FBSDKSettings.sharedSettings.appID;
-        [self.loginManager logOut];
+        [self.loginManager_MMMPRO logOut];
     }
-    [self.loginManager logInWithPermissions:readPermissions
+    [self.loginManager_MMMPRO logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error || [result isCancelled]) {
@@ -214,7 +214,7 @@
 
 - (void)facebookLogout_MMMethodMMM
 {
-    [self.loginManager logOut];
+    [self.loginManager_MMMPRO logOut];
 //
 //    ws.facebookId = @"";
 //    ws.facebookName = @"";
@@ -225,8 +225,8 @@
     successBlock_MMMethodMMM:(CCallBack)successBlock
     failBlock_MMMethodMMM:(CCallBack)failBlock
 {
-    self.successBlock = successBlock;
-    self.failBlock = failBlock;
+    self.successBlock_MMMPRO = successBlock;
+    self.failBlock_MMMPRO = failBlock;
     
     NSURL *mUrl = [NSURL URLWithString:url];
     FBSDKShareLinkContent *xFBSDKShareLinkContent = [[FBSDKShareLinkContent alloc] init];
@@ -264,8 +264,8 @@
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
     
     SDK_LOG(@"share didCompleteWithResults");
-    if (self.successBlock) {
-        self.successBlock(@"", 1, nil);
+    if (self.successBlock_MMMPRO) {
+        self.successBlock_MMMPRO(@"", 1, nil);
     }
 }
 /// Sent to the delegate when the sharer encounters an error.
@@ -274,16 +274,16 @@
 ///
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
-    if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_error, 0, nil);
+    if (self.failBlock_MMMPRO) {
+        self.failBlock_MMMPRO(wwwww_tag_wwwww_error, 0, nil);
     }
 }
 /// Sent to the delegate when the sharer is cancelled.
 /// @param sharer The sharer that completed.
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
     SDK_LOG(wwwww_tag_wwwww_sharerDidCancel);
-    if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_cancel, 0, nil);
+    if (self.failBlock_MMMPRO) {
+        self.failBlock_MMMPRO(wwwww_tag_wwwww_cancel, 0, nil);
     }
 }
 

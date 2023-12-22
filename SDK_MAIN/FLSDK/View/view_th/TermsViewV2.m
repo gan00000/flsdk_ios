@@ -148,7 +148,7 @@
     
     CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(16)];
     [okBtn.layer addSublayer:gl];
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         gl.frame = okBtn.bounds;
     }];
     
@@ -178,7 +178,7 @@
     //        https://member.flyfungame.com/sdk/archive.html   服務條款
     //        https://member.flyfungame.com/sdk/privacy.html   隱私政策
     
-    NSString * url = SDK_DATA.urls.agreementUrl;
+    NSString * url = SDK_DATA.urls_MMMPRO.agreementUrl;
     if (!url || [@"" isEqualToString:url]) {
         url = [NSString stringWithFormat:TERMS_SERVICE_URL,GAME_CODE];
     }

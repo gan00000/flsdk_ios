@@ -258,8 +258,8 @@
         
         CGPoint b_c = baseView.center;
 
-        if (SDK_DATA.keyBoardHeight > 10) {
-            aler.center = CGPointMake( b_c.x, baseView.frame.size.height - SDK_DATA.keyBoardHeight - _height);
+        if (SDK_DATA.keyBoardHeight_MMMPRO > 10) {
+            aler.center = CGPointMake( b_c.x, baseView.frame.size.height - SDK_DATA.keyBoardHeight_MMMPRO - _height);
         }else{
             
             CGFloat toastView_y = b_c.y + b_c.y / 2;
@@ -598,7 +598,7 @@
     if (serverInfo) {
         return serverInfo;
     }else{
-        return SDKRES.areaInfoArray;
+        return SDKRES.areaInfoArray_MMMPRO;
     }
 }
 

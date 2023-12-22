@@ -50,7 +50,7 @@
         //title
         mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
-            [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
+            [self.loginDelegate_MMMPRO goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
         //          mLoginTitleView.delegate = self.delegate;//此处不起作用
         
@@ -66,7 +66,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+        accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
         [myView addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -184,7 +184,7 @@
         }];
         
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             CAGradientLayer *glLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
             glLayer.frame = okBtn.bounds;
             [okBtn.layer addSublayer:glLayer];
@@ -214,7 +214,7 @@
         case kGetVfCodeActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
-            NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *account = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
             if (![SdkUtil validUserName_MMMethodMMM:account]) {
                 return;
             }
@@ -239,13 +239,13 @@
 
 -(void)findPassword_MMMethodMMM
 {
-    NSString *userName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *userName = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
     
     NSString *areaCode = @"";//[mPhoneView getPhoneAreaCode_MMMethodMMM];
     NSString *phoneNum = @"";//[mPhoneView getPhoneNumber_MMMethodMMM];
-    NSString *vfCode = [vfCodeFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *vfCode = [vfCodeFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
     
-    NSString *newPwd = [newPwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *newPwd = [newPwdSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
 //    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
     
     if (![SdkUtil validUserName_MMMethodMMM:userName]) {
@@ -284,12 +284,12 @@
         
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_change_pwd_success)];
 
-        if (weakSelf.delegate) {
+        if (weakSelf.loginDelegate_MMMPRO) {
             LoginResponse *cc = (LoginResponse *)responseData;
             cc.data.account = userName;
             cc.data.password = newPwd;
             cc.data.loginType = LOGIN_TYPE_SELF;
-            [weakSelf.delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
+            [weakSelf.loginDelegate_MMMPRO handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         }
 //        [self removeFromSuperview];//返回登录界面
         

@@ -29,7 +29,7 @@ typedef void (^SAlertViewHandler)(NSInteger clickedBtnIndex);
 /**
  *	@brief	代理对象自己保存的black，用于回调。
  */
-@property (nonatomic,copy) SAlertViewHandler handler;
+@property (nonatomic,copy) SAlertViewHandler alertHandler_MMMPRO;
 
 /**
  *	@brief	创建一个AlertView代理对象，并且为该代理对象传递一个回调函数：

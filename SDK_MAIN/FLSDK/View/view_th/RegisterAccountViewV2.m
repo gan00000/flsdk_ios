@@ -58,7 +58,7 @@
         //        self.layer.borderWidth = 2;
 //        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        self.bindType = bindType;//綁定賬號
+        self.bindType_MMMPRO = bindType;//綁定賬號
         //title
 //        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_nattion_pecc];
 //        mLoginTitleView.delegate = self.delegate;
@@ -74,7 +74,7 @@
        
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+        accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -163,7 +163,7 @@
         
         CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
         [regAccountBtn.layer addSublayer:gl];
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             gl.frame = regAccountBtn.bounds;
         }];
 
@@ -231,7 +231,7 @@
         case kGetVfCodeActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
-            NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *account = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
             if (![SdkUtil validUserName_MMMethodMMM:account]) {
                 return;
             }
@@ -242,8 +242,8 @@
         case kRegisterAccountActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
-            NSString *accountName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
-            NSString *pwd = [passwordSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *accountName = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+            NSString *pwd = [passwordSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
 //            NSString *areaCode = [mPhoneView getPhoneAreaCode_MMMethodMMM];
 //            NSString *phoneNum = [mPhoneView getPhoneNumber_MMMethodMMM];
 //            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
@@ -262,7 +262,7 @@
             NSString *vfCode = @"";
 #ifdef SDK_FOR_APP
             
-            vfCode = vfCodeFiledView.inputUITextField.text;
+            vfCode = vfCodeFiledView.inputUITextField_MMMPRO.text;
             if([StringUtil isEmpty_MMMethodMMM:vfCode]){
                 [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_vfcode_empty)];
                 return;
@@ -270,7 +270,7 @@
             
 #endif
           
-            [LoginHelper accountRegister_MMMethodMMM:self.delegate view_MMMethodMMM:self areaCode_MMMethodMMM:@"" name:accountName password_MMMethodMMM:pwd phoneNum_MMMethodMMM:@"" vfCode_MMMethodMMM:vfCode];
+            [LoginHelper accountRegister_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self areaCode_MMMethodMMM:@"" name:accountName password_MMMethodMMM:pwd phoneNum_MMMethodMMM:@"" vfCode_MMMethodMMM:vfCode];
             
         }
             break;

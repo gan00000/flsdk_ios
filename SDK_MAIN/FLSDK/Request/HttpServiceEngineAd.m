@@ -16,7 +16,7 @@
 
 @interface HttpServiceEngineAd ()
 
-@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine;
+@property (nonatomic, strong) BJBaseHTTPEngine *httpEngine_MMMPRO;
 
 @end
 
@@ -29,8 +29,8 @@
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEngineAd alloc] init];
         NSString *servicePath = @"";//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
-        instance.httpEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
-        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
+        instance.httpEngine_MMMPRO = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
+        [instance.httpEngine_MMMPRO updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
 //            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
 //            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
@@ -52,7 +52,7 @@
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     //[GamaUtils gamaStarLoadingAtView:nil];
-    [[HttpServiceEngineAd sharedInstance].httpEngine postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[HttpServiceEngineAd sharedInstance].httpEngine_MMMPRO postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);

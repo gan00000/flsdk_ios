@@ -98,7 +98,7 @@
     
     if (@available(iOS 11.0, *)) {
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
            
                 if(self.safeAreaInsets.top > 0){
                     [csContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -134,7 +134,7 @@
         make.trailing.mas_equalTo(csContentView).mas_offset(VW(-14));
     }];
     
-    if(SDK_DATA.mConfigModel.showSdkCsCenter){
+    if(SDK_DATA.mConfigModel_MMMPRO.showSdkCsCenter){
         csContentView.hidden = NO;
     }else{
         csContentView.hidden = YES;
@@ -179,7 +179,7 @@
     CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
     [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
     
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         guestBtnGradientLayer.frame = guestLoginBtn.bounds;
     }];
     
@@ -203,7 +203,7 @@
         make.top.bottom.trailing.mas_equalTo(guestLoginBtnContent);
         make.leading.mas_equalTo(guestIconBtn.mas_trailing).mas_offset(VW(12));
     }];
-    if (!SDK_DATA.mConfigModel.visitorLogin) {
+    if (!SDK_DATA.mConfigModel_MMMPRO.visitorLogin) {
 //        guestLoginBtnContent.hidden = YES;
         guestLoginBtn.hidden = YES;
     }
@@ -223,7 +223,7 @@
 
         topView = appleLoginBtn;
         
-        if (!SDK_DATA.mConfigModel.appleLogin || SDK_DATA.mConfigModel.appPassCheck) {
+        if (!SDK_DATA.mConfigModel_MMMPRO.appleLogin || SDK_DATA.mConfigModel_MMMPRO.appPassCheck) {
             appleLoginBtn.hidden = YES;
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.trailing.mas_equalTo(guestLoginBtn);
@@ -313,10 +313,10 @@
     CGFloat margin_leading = VW(35);
     
     NSMutableArray *loginBtnDatas;
-    if (SDK_DATA.mConfigModel.appPassCheck) {
-        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:NO];
+    if (SDK_DATA.mConfigModel_MMMPRO.appPassCheck) {
+        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel_MMMPRO appleBtn_MMMethodMMM:YES guestBtn_MMMethodMMM:NO];
     }else{
-        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel appleBtn_MMMethodMMM:NO guestBtn_MMMethodMMM:NO];
+        loginBtnDatas = [SdkUtil getShowBtnDatas_MMMethodMMM:SDK_DATA.mConfigModel_MMMPRO appleBtn_MMMethodMMM:NO guestBtn_MMMethodMMM:NO];
     }
     UIView *leadingView = loginTypeView;
   
@@ -372,8 +372,8 @@
     
     
     [hasAccountContent addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        if (self.delegate) {
-            [self.delegate goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) from_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME param_MMMethodMMM:@1];
+        if (self.loginDelegate_MMMPRO) {
+            [self.loginDelegate_MMMPRO goPageView_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) from_MMMethodMMM:CURRENT_PAGE_TYPE_MAIN_HOME param_MMMethodMMM:@1];
         }
     }];
     
@@ -424,7 +424,7 @@
             [self showTermsView_MMMethodMMM];
             
         }];
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    ConfigModel *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
     termAgreeView.hidden = !mConfigModel.showContract;
     
     
@@ -475,7 +475,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
+            [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self];
             break;
             
         case guestLoginActTag:
@@ -484,7 +484,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
             
             }
             break;
@@ -494,7 +494,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
             
             break;
         case googleLoginActTag:
@@ -502,21 +502,21 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
             break;
         case lineLoginActTag:
             SDK_LOG(wwwww_tag_wwwww_lineLoginActTag);
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
             break;
         case naverLoginActTag:
 
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
             break;
         default:
             break;

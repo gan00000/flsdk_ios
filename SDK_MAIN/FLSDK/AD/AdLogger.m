@@ -24,13 +24,13 @@
     NSString *serverTime = @"";//serverTime
     NSString *roleName = @"";
     NSString *roleId = @"";
-    if (SDK_DATA.mLoginResponse && SDK_DATA.mLoginResponse.data && SDK_DATA.mLoginResponse.data.userId) {
-        userId = SDK_DATA.mLoginResponse.data.userId ?: @"";
-        serverTime = SDK_DATA.mLoginResponse.data.timestamp ?: @"";
+    if (SDK_DATA.mLoginResponse_MMMPRO && SDK_DATA.mLoginResponse_MMMPRO.data && SDK_DATA.mLoginResponse_MMMPRO.data.userId) {
+        userId = SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"";
+        serverTime = SDK_DATA.mLoginResponse_MMMPRO.data.timestamp ?: @"";
     }
-    if (SDK_DATA.gameUserModel) {
-        roleId = SDK_DATA.gameUserModel.roleID ?: @"";
-        roleName = SDK_DATA.gameUserModel.roleName ?: @"";
+    if (SDK_DATA.gameUserModel_MMMPRO) {
+        roleId = SDK_DATA.gameUserModel_MMMPRO.roleID ?: @"";
+        roleName = SDK_DATA.gameUserModel_MMMPRO.roleName ?: @"";
     }
     
     NSDictionary *comDic = nil;

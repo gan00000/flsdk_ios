@@ -12,7 +12,7 @@
 
 @interface BJBaseHTTPEngine ()
 
-@property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
+@property (nonatomic, strong) AFHTTPSessionManager *sessionManager_MMMPRO;
 
 @end
 
@@ -21,14 +21,14 @@
 - (instancetype)initWithBasePath_MMMethodMMM:(NSString *)basePath {
     self = [super init];
     if (self) {
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
-        self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", @"text/json" ,@"text/javascript", nil];
+        self.sessionManager_MMMPRO = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
+        self.sessionManager_MMMPRO.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", @"text/json" ,@"text/javascript", nil];
     }
     return self;
 }
 
 - (void)updateSessionWithBlock_MMMethodMMM:(void(^)(AFHTTPSessionManager *sesson))updateBlock {
-    updateBlock(self.sessionManager);
+    updateBlock(self.sessionManager_MMMPRO);
 }
 
 - (void)getRequestWithFunctionPath_MMMethodMMM:(NSString *)path
@@ -37,7 +37,7 @@
                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
-        [self.sessionManager GET:path parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        [self.sessionManager_MMMPRO GET:path parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -65,7 +65,7 @@
     @try {
         
         
-        [self.sessionManager POST:path parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [self.sessionManager_MMMPRO POST:path parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -93,7 +93,7 @@
     @try {
         
        // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{@"Content-Type" : @"application/json", @"charset":@"UTF-8"}
-        [self.sessionManager POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [self.sessionManager_MMMPRO POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -135,15 +135,15 @@
                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     
-    NSString *path = [self.sessionManager.baseURL.absoluteString stringByAppendingPathComponent:functionPath];
-    NSMutableURLRequest *request = [self.sessionManager.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSString *path = [self.sessionManager_MMMPRO.baseURL.absoluteString stringByAppendingPathComponent:functionPath];
+    NSMutableURLRequest *request = [self.sessionManager_MMMPRO.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         [formData appendPartWithFileData:fileData name:fileName fileName:fileName mimeType:mimeType];
         
     } error:nil];
     
     __block NSURLSessionUploadTask *uploadTask =
-    [self.sessionManager uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
+    [self.sessionManager_MMMPRO uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
         
         if (progressBlock) {
             progressBlock(uploadProgress.fractionCompleted);

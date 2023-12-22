@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BindAccountViewV2 : SDKBaseView
 
-@property (copy,nonatomic) MWBlock mMWBlock;
+@property (copy,nonatomic) MWBlock mMWBlock_MMMPRO;
 
 - (instancetype)initView_MMMethodMMM;
 

@@ -22,27 +22,27 @@
     if (self) {
         
         
-        self.inputTextField = [[UITextField alloc] init];
+        self.inputTextField_MMMPRO = [[UITextField alloc] init];
         
-        self.inputTextField.textColor = textColor;
-        self.inputTextField.font = [UIFont systemFontOfSize:size];
+        self.inputTextField_MMMPRO.textColor = textColor;
+        self.inputTextField_MMMPRO.font = [UIFont systemFontOfSize:size];
         
         NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholder
                                                                       attributes:@{
             NSFontAttributeName:[UIFont systemFontOfSize:size],
             NSForegroundColorAttributeName: placeColor}];
         
-        self.inputTextField.attributedPlaceholder = attrStr;
+        self.inputTextField_MMMPRO.attributedPlaceholder = attrStr;
         
         
-        if (SDK_DATA.mUITextFieldDelegate) {
-            self.inputTextField.delegate = SDK_DATA.mUITextFieldDelegate;
+        if (SDK_DATA.mUITextFieldDelegate_MMMPRO) {
+            self.inputTextField_MMMPRO.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
         }
         
-        [self.inputTextField addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
+        [self.inputTextField_MMMPRO addTarget:self action:@selector(textChanged_MMMethodMMM:) forControlEvents:(UIControlEventEditingChanged)];
         
-        [self addSubview:self.inputTextField];
-        [self.inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self addSubview:self.inputTextField_MMMPRO];
+        [self.inputTextField_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.top.bottom.mas_equalTo(self);
             make.leading.mas_equalTo(self).mas_offset(VW(12));
@@ -62,7 +62,7 @@
     
     if (sender.text && [sender.text containsString:@" "]) {
         NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格
-        self.inputTextField.text = tempStr;
+        self.inputTextField_MMMPRO.text = tempStr;
     }
     
 //    if (self.inputTextFieldChange) {

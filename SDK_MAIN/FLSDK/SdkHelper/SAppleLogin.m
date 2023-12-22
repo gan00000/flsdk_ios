@@ -12,8 +12,8 @@
 #import "AlertUtil.h"
 
 @interface SAppleLogin()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
-@property (copy, atomic) AppleLoginSuccess impSuccess;
-@property (copy, atomic) AppleLoginError impError;
+@property (copy, atomic) AppleLoginSuccess impSuccess_MMMPRO;
+@property (copy, atomic) AppleLoginError impError_MMMPRO;
 @end
 
 //sign in with apple 工具类设成全局变量，或使用单例类，如果使用局部变量，和IAP工具类一样苹果的回调不会执行。
@@ -21,7 +21,7 @@
 {
     UIView *presentView;
 }
-@synthesize appleThirdID = _appleThirdID;
+@synthesize appleLoginId = _appleLoginId;
 
 + (instancetype)share{
     
@@ -100,7 +100,7 @@
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""}];
-            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""});
+            self.impSuccess_MMMPRO(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""});
         });
     } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
         // 用户登录使用现有的密码凭证
@@ -115,7 +115,7 @@
         NSLog(@"mStr：%@", mStr);
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""}];
-            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
+            self.impSuccess_MMMPRO(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
         });
 
     } else {
@@ -123,7 +123,7 @@
         mStr = [wwwww_tag_wwwww_follow_hibatic mutableCopy];
         NSError *error = nil;
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.impError(error);
+            self.impError_MMMPRO(error);
         });
         [AlertUtil showAlertWithMessage_MMMethodMMM:mStr];
 
@@ -136,7 +136,7 @@
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"错误信息：%@", error);
     NSString *errorMsg = nil;
-    self.impError(error);
+    self.impError_MMMPRO(error);
     switch (error.code) {
         case ASAuthorizationErrorCanceled:
 //            errorMsg = GetString(wwwww_tag_wwwww_GAMA_APPLE_DEAUTHORIZATION_FAILED_TEXT);
@@ -306,8 +306,8 @@
                                 andErrorBlock_MMMethodMMM:(AppleLoginError)errorBlock
 {
 //    SAppleLogin *temp = [[SAppleLogin alloc] init];
-    self.impSuccess = successBlock;
-    self.impError = errorBlock;
+    self.impSuccess_MMMPRO = successBlock;
+    self.impError_MMMPRO = errorBlock;
     
 }
 

@@ -44,7 +44,7 @@
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
         mPhoneInfoModel = [[PhoneInfoModel alloc] init];
-        mPhoneInfoModel.delegate = self;
+        mPhoneInfoModel.phoneDelegate_MMMPRO = self;
         
         [self addView_MMMethodMMM];
         
@@ -141,7 +141,7 @@
     }];
     
     areaCodeLabel = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_area_code.localx fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:UIColor.blackColor];
-    areaCodeLabel.text = mPhoneInfoModel.selectedAreaCodeValue;
+    areaCodeLabel.text = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;
     
     [phoneAreaCodeView addSubview:areaCodeLabel];
     [areaCodeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,7 +167,7 @@
     phoneNumFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneNumFiled.layer.borderWidth = 0.5;
     phoneNumFiled.layer.cornerRadius = VH(20);
-    phoneNumFiled.inputTextField.keyboardType = UIKeyboardTypePhonePad;
+    phoneNumFiled.inputTextField_MMMPRO.keyboardType = UIKeyboardTypePhonePad;
     
     [phoneContentView addSubview:phoneNumFiled];
     [phoneNumFiled mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -197,8 +197,8 @@
     vfCodeFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     vfCodeFiled.layer.borderWidth = 0.5;
     vfCodeFiled.layer.cornerRadius = VH(20);
-    vfCodeFiled.inputTextField.keyboardType = UIKeyboardTypeNumberPad;
-    vfCodeFiled.inputTextField.textAlignment = NSTextAlignmentCenter;
+    vfCodeFiled.inputTextField_MMMPRO.keyboardType = UIKeyboardTypeNumberPad;
+    vfCodeFiled.inputTextField_MMMPRO.textAlignment = NSTextAlignmentCenter;
     
     [vfInfoView addSubview:vfCodeFiled];
     [vfCodeFiled mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -244,7 +244,7 @@
     
     CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
     [okBtn.layer addSublayer:gl];
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         gl.frame = okBtn.bounds;
     }];
     
@@ -258,12 +258,12 @@
         make.leading.trailing.mas_equalTo(vfInfoView);
     }];
     
-    self.countTimerDelegate = self;
+    self.countTimerDelegate_MMMPRO = self;
 //    SDK_DATA.mLoginResponse.data.isBindPhone = YES;//test
     
 //    AccountModel *xx = SDK_DATA.mLoginResponse.data;
     
-    if (SDK_DATA.mLoginResponse.data.isBindPhone) {
+    if (SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone) {
         
         hasBindPhoneTips.hidden = NO;
         vfInfoView.hidden = YES;
@@ -272,14 +272,14 @@
             make.top.mas_equalTo(titleView.mas_bottom).mas_offset(VH(46));
             
         }];
-        NSString *tel = SDK_DATA.mLoginResponse.data.telephone;
+        NSString *tel = SDK_DATA.mLoginResponse_MMMPRO.data.telephone;
         NSArray *pairs = [tel componentsSeparatedByString:@"-"];
         if (pairs && pairs.count >=2) {
             NSString *areaCode = pairs[0];
             NSString *telNum = pairs[1];
             areaCodeLabel.text = areaCode;
-            phoneNumFiled.inputTextField.text = telNum;
-            phoneNumFiled.inputTextField.enabled = NO;
+            phoneNumFiled.inputTextField_MMMPRO.text = telNum;
+            phoneNumFiled.inputTextField_MMMPRO.enabled = NO;
             areaMoreBtn.hidden = YES;
             
             [areaCodeLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -309,17 +309,17 @@
     switch (sender.tag) {
             
         case TAG_CLOSE:
-            [self removeFromGameView];
-            if (self.mMWBlock) {
-                self.mMWBlock(NO, nil);
+            [self removeFromGameView_MMMethodMMM];
+            if (self.mMWBlock_MMMPRO) {
+                self.mMWBlock_MMMPRO(NO, nil);
             }
             break;
         case kGetVfCodeActTag:
         {
-            NSString *tel = phoneNumFiled.inputTextField.text;
+            NSString *tel = phoneNumFiled.inputTextField_MMMPRO.text;
             tel = [tel trim_MMMethodMMM];
             
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;//areaCodeLabel.text;
             areaCode = [areaCode trim_MMMethodMMM];
             
             //NSString *vfCode = vfCodeFiled.inputTextField.text;
@@ -331,7 +331,7 @@
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
                 return;
             }
-            if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
+            if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression_MMMPRO]) {
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
                 return;
             }
@@ -361,18 +361,18 @@
         case kOkActTag:
             
         {
-            if(SDK_DATA.mLoginResponse.data.isBindPhone) //已经绑定的状态
+            if(SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone) //已经绑定的状态
             {
-                [self removeFromGameView];
+                [self removeFromGameView_MMMethodMMM];
                 return;
             }
-            NSString *tel = phoneNumFiled.inputTextField.text;
+            NSString *tel = phoneNumFiled.inputTextField_MMMPRO.text;
             tel = [tel trim_MMMethodMMM];
             
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue;//areaCodeLabel.text;
+            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;//areaCodeLabel.text;
             areaCode = [areaCode trim_MMMethodMMM];
             
-            NSString *vfCode = vfCodeFiled.inputTextField.text;
+            NSString *vfCode = vfCodeFiled.inputTextField_MMMPRO.text;
             vfCode = [vfCode trim_MMMethodMMM];
             
             if ([StringUtil isEmpty_MMMethodMMM:areaCode]) {
@@ -384,7 +384,7 @@
                 return;
             }
             
-            if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
+            if (![SdkUtil validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression_MMMPRO]) {
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
                 return;
             }
@@ -397,13 +397,13 @@
             [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:tel vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
                 
                 [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_bind_success.localx];
-                SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,tel];
-                SDK_DATA.mLoginResponse.data.isBindPhone = YES;
+                SDK_DATA.mLoginResponse_MMMPRO.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,tel];
+                SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone = YES;
                 
-                if (self.mMWBlock) {
-                    self.mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
+                if (self.mMWBlock_MMMPRO) {
+                    self.mMWBlock_MMMPRO(YES, SDK_DATA.mLoginResponse_MMMPRO.data.telephone);
                 }
-                [self removeFromGameView];
+                [self removeFromGameView_MMMethodMMM];
                 
             } errorBlock_MMMethodMMM:^(BJError *error) {
                 
@@ -426,9 +426,9 @@
 }
 
 - (void)beforeStartTimer_MMMethodMMM {
-    self.totalCount = 60;
+    self.totalCount_MMMPRO = 60;
     getVfCodeBtn.userInteractionEnabled = NO;
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%ld", self.totalCount] forState:UIControlStateNormal];
+    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%ld", self.totalCount_MMMPRO] forState:UIControlStateNormal];
     
 }
 

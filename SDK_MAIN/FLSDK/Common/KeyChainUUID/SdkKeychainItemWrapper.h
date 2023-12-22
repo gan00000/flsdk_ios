@@ -56,12 +56,12 @@
 */
 @interface SdkKeychainItemWrapper : NSObject
 {
-    NSMutableDictionary *keychainItemData;		// The actual keychain item data backing store.
-    NSMutableDictionary *genericPasswordQuery;	// A placeholder for the generic keychain item query used to locate the item.
+    NSMutableDictionary *keychainItemData_MMMPRO;		// The actual keychain item data backing store.
+    NSMutableDictionary *genericPasswordQuery_MMMPRO;	// A placeholder for the generic keychain item query used to locate the item.
 }
 
-@property (nonatomic, retain) NSMutableDictionary *keychainItemData;
-@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
+@property (nonatomic, retain) NSMutableDictionary *keychainItemData_MMMPRO;
+@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery_MMMPRO;
 
 // Designated initializer.
 - (id)initWithIdentifier_MMMethodMMM: (NSString *)identifier accessGroup_MMMethodMMM:(NSString *) accessGroup;

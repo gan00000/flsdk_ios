@@ -527,6 +527,7 @@
 		03D97DDE286EE3A3008D0B3A /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
 		03D97DDF286EE3A3008D0B3A /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
 		03DC03562B3427A1004A2AED /* SDK_DEMO_KRDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDK_DEMO_KRDebug.entitlements; sourceTree = "<group>"; };
+		03DC03572B35843A004A2AED /* proNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proNameHeader.h; sourceTree = "<group>"; };
 		03DD67E4294AE17200C1D307 /* SDK_DEMO_V4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK_DEMO_V4-Info.plist"; sourceTree = "<group>"; };
 		03E076662861E73C00B81B65 /* LineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineDelegate.h; sourceTree = "<group>"; };
 		03E076672861E73C00B81B65 /* LineDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineDelegate.m; sourceTree = "<group>"; };
@@ -1154,6 +1155,7 @@
 		03D5F35B28D3183D00C3855E /* obfuscation */ = {
 			isa = PBXGroup;
 			children = (
+				03DC03572B35843A004A2AED /* proNameHeader.h */,
 				039DBCB529419C00007EAD2F /* MWStringHeaders.h */,
 				0337F4A928F2BDB400F0A4A9 /* codeObfuscationForMethodName.h */,
 				03D5F35C28D3187F00C3855E /* imageNameHeader.h */,

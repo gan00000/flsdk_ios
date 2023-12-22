@@ -15,11 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MWWebView : UIView
 
-@property (nonatomic, copy) CCallBack webCallBack;
+@property (nonatomic, copy) CCallBack webCallBack_MMMPRO;
 
-@property (nonatomic, strong) WKWebView *wkwebView;
+@property (nonatomic, strong) WKWebView *wkwebView_MMMPRO;
 
-@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate;
+@property (nonatomic,weak) id<WKNavigationDelegate> webViewDelegate_MMMPRO;
 
 - (void)loadRequest_MMMethodMMM:(NSString *)mUrl;
 - (void)releaseAll_MMMethodMMM;

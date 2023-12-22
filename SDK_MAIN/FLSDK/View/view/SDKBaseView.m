@@ -44,12 +44,12 @@
 //-(void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent*)event
 
 
-- (void)addDrawRectBolck:(CCallBack)callback
+- (void)addDrawRectBolck_MMMethodMMM:(CCallBack)callback
 {
-    if (!self.drawBlockArray) {
-        self.drawBlockArray = [NSMutableArray array];
+    if (!self.drawBlockArray_MMMPRO) {
+        self.drawBlockArray_MMMPRO = [NSMutableArray array];
     }
-    [self.drawBlockArray addObject:callback];
+    [self.drawBlockArray_MMMPRO addObject:callback];
     
 }
 
@@ -59,7 +59,7 @@
     
     if(!isDrawRect){//只执行一次
         isDrawRect = YES;
-        for (CCallBack  callback in self.drawBlockArray) {
+        for (CCallBack  callback in self.drawBlockArray_MMMPRO) {
 
             callback(wwwww_tag_wwwww_drawRect,0,nil);
         }
@@ -68,7 +68,7 @@
     
 }
 
--(void)removeFromGameView{
+-(void)removeFromGameView_MMMethodMMM{
     
     if([self.superview isKindOfClass:[TouchEventInterruptView class]]){
         [self.superview removeFromSuperview];

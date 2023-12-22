@@ -64,10 +64,10 @@
     }];
     
     
-    _backBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:kBackBtnActTag selector:@selector(backBtnView_MMMethodMMM:) target_MMMethodMMM:self];
+    _backBtn_MMMPRO = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:icon_close_3 tag_MMMethodMMM:kBackBtnActTag selector:@selector(backBtnView_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [titleView addSubview:_backBtn];
-    [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [titleView addSubview:_backBtn_MMMPRO];
+    [_backBtn_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         //        make.center.mas_equalTo(titleView);
         make.trailing.mas_equalTo(titleView);
         make.centerY.mas_equalTo(titleView);

@@ -10,7 +10,7 @@
 
 
 @interface DimeUtil()
-@property (nonatomic,assign) CGFloat viewAdaptRate;
+@property (nonatomic,assign) CGFloat viewAdaptRate_MMMPRO;
 @end
 
 @implementation DimeUtil
@@ -55,25 +55,25 @@
 //h = 582 w = 608
 -(CGFloat)getViewHeight_MMMethodMMM:(CGFloat)height
 {
-    return height * self.viewAdaptRate;
+    return height * self.viewAdaptRate_MMMPRO;
     
 }
 
 -(CGFloat)getViewWidth_MMMethodMMM:(CGFloat)width
 {
-    return width * self.viewAdaptRate;
+    return width * self.viewAdaptRate_MMMPRO;
 }
 
 -(CGFloat)getFontSize_MMMethodMMM:(CGFloat)size{
-    return size * self.viewAdaptRate;
+    return size * self.viewAdaptRate_MMMPRO;
 }
 
 
 
--(CGFloat)viewAdaptRate
+-(CGFloat)viewAdaptRate_MMMPRO
 {
-    if (_viewAdaptRate) {
-        return _viewAdaptRate;
+    if (_viewAdaptRate_MMMPRO) {
+        return _viewAdaptRate_MMMPRO;
     }
     
     NSLog(@"SCREEN_WIDTH:%f,SCREEN_HEIGHT:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
@@ -97,7 +97,7 @@
         if (w_rate > 1.4) {
             w_rate = 1.4;
         }
-        _viewAdaptRate = floor(w_rate * 100) / 100;
+        _viewAdaptRate_MMMPRO = floor(w_rate * 100) / 100;
 
     }else{
         
@@ -116,9 +116,9 @@
         }
         CGFloat deviceRate = sdkHeight / 375.0 * 0.9;
         deviceRate = floor(deviceRate * 100) / 100;
-        _viewAdaptRate = deviceRate;
+        _viewAdaptRate_MMMPRO = deviceRate;
     }
-    return _viewAdaptRate;
+    return _viewAdaptRate_MMMPRO;
 }
     
 

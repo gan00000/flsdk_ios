@@ -51,18 +51,18 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 //    }
 
     //账号下拉列表
-    _accountListTableView = [[UITableView alloc] init];
-    _accountListTableView.backgroundColor = [UIColor whiteColor];
-    _accountListTableView.delegate = self;
-    _accountListTableView.dataSource = self;
-    _accountListTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    _accountListTableView_MMMPRO = [[UITableView alloc] init];
+    _accountListTableView_MMMPRO.backgroundColor = [UIColor whiteColor];
+    _accountListTableView_MMMPRO.delegate = self;
+    _accountListTableView_MMMPRO.dataSource = self;
+    _accountListTableView_MMMPRO.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     //    accountListTableView.estimatedRowHeight = 0;
     //    accountListTableView.estimatedSectionFooterHeight = 0;
     //    accountListTableView.estimatedSectionHeaderHeight = 0;
     
-    [_accountListTableView registerClass:[AccountListViewCell class] forCellReuseIdentifier:AccountListViewCellID];
-    [self addSubview:_accountListTableView];
-    [_accountListTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_accountListTableView_MMMPRO registerClass:[AccountListViewCell class] forCellReuseIdentifier:AccountListViewCellID];
+    [self addSubview:_accountListTableView_MMMPRO];
+    [_accountListTableView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
 //        make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
 //        make.top.equalTo(accountSDKTextFiledView.mas_bottom);
@@ -81,10 +81,10 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //system_method
 {
-    if (!self.accountDataList) {
+    if (!self.accountDataList_MMMPRO) {
         return 0;
     }
-    return self.accountDataList.count;
+    return self.accountDataList_MMMPRO.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
@@ -92,7 +92,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
     
-    AccountModel *mAccountModel = self.accountDataList[indexPath.row];
+    AccountModel *mAccountModel = self.accountDataList_MMMPRO[indexPath.row];
     AccountListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccountListViewCellID forIndexPath:indexPath];
     
     NSString *account = mAccountModel.userId;
@@ -119,23 +119,23 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     }else if ([mAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]){
         iconName = mw_naver_icon;
     }
-    cell.accountUILabel.text = account;
-    cell.iconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
+    cell.accountUILabel_MMMPRO.text = account;
+    cell.iconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     
     kWeakSelf
-    cell.mItemViewClickHander = ^(NSInteger tag) {
+    cell.mItemViewClickHander_MMMPRO = ^(NSInteger tag) {
                 
         if (tag == kMoreAccountDeleteActTag) {
 //            [self.accountDataList removeObject:mAccountModel];
             [[ConfigCoreUtil share] removeAccountByUserId_MMMethodMMM:mAccountModel.userId];
             
-            [self.accountDataList removeAllObjects];
-            [self.accountDataList addObjectsFromArray:[[ConfigCoreUtil share] getAccountModels_MMMethodMMM]];
+            [self.accountDataList_MMMPRO removeAllObjects];
+            [self.accountDataList_MMMPRO addObjectsFromArray:[[ConfigCoreUtil share] getAccountModels_MMMethodMMM]];
             
             [tableView reloadData];
             
-            if (self.mAccountModelClickHander) {
-                self.mAccountModelClickHander(YES, mAccountModel, self.accountDataList);
+            if (self.mAccountModelClickHander_MMMPRO) {
+                self.mAccountModelClickHander_MMMPRO(YES, mAccountModel, self.accountDataList_MMMPRO);
             }
             
 //            [[ConfigCoreUtil share] saveAccountModels_MMMethodMMM:self.accountDataList];//保存
@@ -148,12 +148,12 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
     SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
-    AccountModel *mAccountModel = self.accountDataList[indexPath.row];
+    AccountModel *mAccountModel = self.accountDataList_MMMPRO[indexPath.row];
 //    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;
 //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
 //    [self setTableViewHiden:YES];
-    if (self.mAccountModelClickHander) {
-        self.mAccountModelClickHander(NO,mAccountModel, self.accountDataList);
+    if (self.mAccountModelClickHander_MMMPRO) {
+        self.mAccountModelClickHander_MMMPRO(NO,mAccountModel, self.accountDataList_MMMPRO);
     }
 //    self.hidden = YES;
 }

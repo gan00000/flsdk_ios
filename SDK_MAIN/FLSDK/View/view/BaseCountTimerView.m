@@ -26,12 +26,12 @@
 //倒计时
 -(void)startCountTimer_MMMethodMMM{
     
-    if (self.countTimerDelegate) {
-        [self.countTimerDelegate beforeStartTimer_MMMethodMMM];
+    if (self.countTimerDelegate_MMMPRO) {
+        [self.countTimerDelegate_MMMPRO beforeStartTimer_MMMethodMMM];
     }
     
-    if (!self.totalCount || self.totalCount <= 0) {
-        self.totalCount = 60;
+    if (!self.totalCount_MMMPRO || self.totalCount_MMMPRO <= 0) {
+        self.totalCount_MMMPRO = 60;
     }
     
     if (downTimer) {
@@ -49,13 +49,13 @@
 
 - (void)doTiming_MMMethodMMM {
     
-    self.totalCount--;
-    if (self.totalCount < 0) {
+    self.totalCount_MMMPRO--;
+    if (self.totalCount_MMMPRO < 0) {
         [self onFinishCountTimer_MMMethodMMM];
     }else{
         
-        if (self.countTimerDelegate) {
-            [self.countTimerDelegate timing_MMMethodMMM:[NSString stringWithFormat:@"%ld", self.totalCount]];
+        if (self.countTimerDelegate_MMMPRO) {
+            [self.countTimerDelegate_MMMPRO timing_MMMethodMMM:[NSString stringWithFormat:@"%ld", self.totalCount_MMMPRO]];
         }
         
     }
@@ -69,8 +69,8 @@
         downTimer = nil;
     }
     
-    if (self.countTimerDelegate) {
-        [self.countTimerDelegate finishTimer_MMMethodMMM];
+    if (self.countTimerDelegate_MMMPRO) {
+        [self.countTimerDelegate_MMMPRO finishTimer_MMMethodMMM];
     }
 }
 
@@ -80,8 +80,8 @@
         [downTimer invalidate];
         downTimer = nil;
     }
-    if (self.countTimerDelegate) {
-        [self.countTimerDelegate onCancelTimer_MMMethodMMM];
+    if (self.countTimerDelegate_MMMPRO) {
+        [self.countTimerDelegate_MMMPRO onCancelTimer_MMMethodMMM];
     }
 }
 

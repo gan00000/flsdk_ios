@@ -16,9 +16,9 @@
 
 @interface MWWebView ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
 
-@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) UIView *backgroundView_MMMPRO;
 
-@property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) UIProgressView *progressView_MMMPRO;
 
 @end
 
@@ -65,38 +65,38 @@
 
 -(void)loadRequest_MMMethodMMM:(NSString *)mUrl{
     mUrl = [SDKRequest createSdkUrl_MMMethodMMM:mUrl otherDic_MMMethodMMM:nil];
-    [self.wkwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:mUrl]]];
+    [self.wkwebView_MMMPRO loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:mUrl]]];
 }
 
 -(void)addView_MMMethodMMM{
     
-    self.backgroundView = [[UIView alloc] init];
-    [self addSubview:self.backgroundView];
+    self.backgroundView_MMMPRO = [[UIView alloc] init];
+    [self addSubview:self.backgroundView_MMMPRO];
 //    self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
-    [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.backgroundView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
     }];
     
-    [self.backgroundView addSubview:self.wkwebView];
-    [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.backgroundView);
+    [self.backgroundView_MMMPRO addSubview:self.wkwebView_MMMPRO];
+    [self.wkwebView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.backgroundView_MMMPRO);
     }];
     
-    self.progressView = [[UIProgressView alloc] init];
-    self.progressView.progressViewStyle = UIProgressViewStyleDefault;
-    self.progressView.progress = 0.0;
+    self.progressView_MMMPRO = [[UIProgressView alloc] init];
+    self.progressView_MMMPRO.progressViewStyle = UIProgressViewStyleDefault;
+    self.progressView_MMMPRO.progress = 0.0;
     
-    [self.wkwebView addSubview:_progressView];
-    [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.trailing.mas_equalTo(self.wkwebView);
+    [self.wkwebView_MMMPRO addSubview:_progressView_MMMPRO];
+    [_progressView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.trailing.mas_equalTo(self.wkwebView_MMMPRO);
         make.height.equalTo(@(3));
     }];
     
 }
 
-- (WKWebView*)wkwebView{
+- (WKWebView*)wkwebView_MMMPRO{
     
-    if (!_wkwebView) {
+    if (!_wkwebView_MMMPRO) {
         
         kWeakSelf
         __weak id<WKScriptMessageHandler> scriptDelegate = weakSelf;
@@ -107,16 +107,16 @@
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:js_trackEvent];
         [configuration.userContentController addScriptMessageHandler:scriptDelegate name:wwwww_tag_wwwww_openSysBrowser];
         
-        _wkwebView = [[WKWebView alloc] initWithFrame:self.frame configuration:configuration];
+        _wkwebView_MMMPRO = [[WKWebView alloc] initWithFrame:self.frame configuration:configuration];
         
-        _wkwebView.navigationDelegate = self;
-        _wkwebView.UIDelegate = self;
-        [_wkwebView addObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS options:NSKeyValueObservingOptionNew context:nil];
-        [_wkwebView addObserver:self forKeyPath:wwwww_tag_wwwww_title options:NSKeyValueObservingOptionNew context:NULL];
+        _wkwebView_MMMPRO.navigationDelegate = self;
+        _wkwebView_MMMPRO.UIDelegate = self;
+        [_wkwebView_MMMPRO addObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS options:NSKeyValueObservingOptionNew context:nil];
+        [_wkwebView_MMMPRO addObserver:self forKeyPath:wwwww_tag_wwwww_title options:NSKeyValueObservingOptionNew context:NULL];
 
     }
     
-    return _wkwebView;
+    return _wkwebView_MMMPRO;
     
 }
 
@@ -150,8 +150,8 @@
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
     SDK_LOG(@"webView decidePolicyForNavigationAction decisionHandler");
-    if (_webViewDelegate && [_webViewDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
-        [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
+    if (_webViewDelegate_MMMPRO && [_webViewDelegate_MMMPRO respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
+        [_webViewDelegate_MMMPRO webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {
         if (navigationAction.targetFrame == nil) {
             [webView loadRequest:navigationAction.request];
@@ -213,8 +213,8 @@
         
         if ([message.name isEqualToString:js_close]) {
             
-            if(self.webCallBack){
-                self.webCallBack(@"close", TAG_CLOSE, nil);
+            if(self.webCallBack_MMMPRO){
+                self.webCallBack_MMMPRO(@"close", TAG_CLOSE, nil);
             }
             
         }else if ([message.name isEqualToString:js_onPayFinish]) {
@@ -242,22 +242,22 @@
     
     if ([wwwww_tag_wwwww_loading isEqualToString:keyPath]) {
         
-    } else if (object == self.wkwebView && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
+    } else if (object == self.wkwebView_MMMPRO && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
         
 //        self.titleLabel.text = self.wkwebView.title;
         
     } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
-    } else if (object == self.wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
-        _progressView.progress = self.wkwebView.estimatedProgress;
+    } else if (object == self.wkwebView_MMMPRO && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
+        _progressView_MMMPRO.progress = self.wkwebView_MMMPRO.estimatedProgress;
         
         CGFloat newProgress = [change[NSKeyValueChangeNewKey] doubleValue];
         if (newProgress == 1) {
-            _progressView.hidden = YES;
-            [_progressView setProgress:0 animated:NO];
+            _progressView_MMMPRO.hidden = YES;
+            [_progressView_MMMPRO setProgress:0 animated:NO];
         } else {
-            _progressView.hidden = NO;
-            [_progressView setProgress:newProgress animated:YES];
+            _progressView_MMMPRO.hidden = NO;
+            [_progressView_MMMPRO setProgress:newProgress animated:YES];
         }
     }
 }
@@ -267,12 +267,12 @@
     SDK_LOG(@"MWWebView releaseAll");
     @try {
         
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_close];
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:wwwww_tag_wwwww_openSysBrowser];
-        [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
-        [self.wkwebView removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
+        [self.wkwebView_MMMPRO.configuration.userContentController removeScriptMessageHandlerForName:js_close];
+        [self.wkwebView_MMMPRO.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
+        [self.wkwebView_MMMPRO.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
+        [self.wkwebView_MMMPRO.configuration.userContentController removeScriptMessageHandlerForName:wwwww_tag_wwwww_openSysBrowser];
+        [self.wkwebView_MMMPRO removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
+        [self.wkwebView_MMMPRO removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
         
     } @catch (NSException *exception) {
         

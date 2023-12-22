@@ -163,7 +163,7 @@
         make.bottom.trailing.mas_equalTo(xView).mas_offset(-VH(10));
     }];
     
-    NSString * url = SDK_DATA.urls.noticeUrl;
+    NSString * url = SDK_DATA.urls_MMMPRO.noticeUrl;
     SDK_LOG(@"notice Url=%@",url);
     if(url){
         [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
@@ -178,7 +178,7 @@
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
-            [self removeFromGameView];
+            [self removeFromGameView_MMMethodMMM];
             if (self.completer) {
                 self.completer();
             }

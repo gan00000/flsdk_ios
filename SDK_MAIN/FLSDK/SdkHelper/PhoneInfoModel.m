@@ -11,7 +11,7 @@
 #import "SdkHeader.h"
 
 @interface PhoneInfoModel()
-@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;
+@property (nonatomic, strong) NSMutableArray *areaCodesArray_MMMPRO;
 @end
 
 @implementation PhoneInfoModel
@@ -51,7 +51,7 @@
     //将sheet设置为默认的港台区号
 //    [self resetupAreaCodesAndActionSheetWith_MMMethodMMM:SDKRES.areaInfoArray];
     
-    for (NSDictionary *dict in self.gamaAreaCodesArray)
+    for (NSDictionary *dict in self.areaCodesArray_MMMPRO)
     {
         [tempArray addObject:[dict objectForKey:wwwww_tag_wwwww_text]];
     }
@@ -61,15 +61,15 @@
     [AlertUtil showActionSheetWithTitle_MMMethodMMM:wwwww_tag_wwwww_text_select_phone_area_title.localx
                                     message_MMMethodMMM:@""
                               callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
-                                  if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
+                                  if (btnIndex > 0 && btnIndex <= weakSelf.areaCodesArray_MMMPRO.count)
                                   {
-                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];//因0為cancel
-                                      weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
-                                      weakSelf.selectedAreaCodeKey = [dict objectForKey:wwwww_tag_wwwww_key];
-                                      weakSelf.selectedRegularExpression = [dict objectForKey:wwwww_tag_wwwww_pattern];
-                                      if ([weakSelf.delegate respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
+                                      NSDictionary *dict = [weakSelf.areaCodesArray_MMMPRO objectAtIndex:btnIndex-1];//因0為cancel
+                                      weakSelf.selectedAreaCodeValue_MMMPRO = [dict objectForKey:wwwww_tag_wwwww_value];
+                                      weakSelf.selectedAreaCodeKey_MMMPRO = [dict objectForKey:wwwww_tag_wwwww_key];
+                                      weakSelf.selectedRegularExpression_MMMPRO = [dict objectForKey:wwwww_tag_wwwww_pattern];
+                                      if ([weakSelf.phoneDelegate_MMMPRO respondsToSelector:@selector(showSelectedAreaCodeValue_MMMethodMMM:)])// 保险
                                       {
-                                          [weakSelf.delegate showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue];
+                                          [weakSelf.phoneDelegate_MMMPRO showSelectedAreaCodeValue_MMMethodMMM:weakSelf.selectedAreaCodeValue_MMMPRO];
                                       }
                                   }
                               }
@@ -84,43 +84,43 @@
 - (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
 
 {
-    if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray isKindOfClass:[NSMutableArray class]]) {
-        [self.gamaAreaCodesArray removeAllObjects];
-        [self.gamaAreaCodesArray addObjectsFromArray:newAreaCodesArray];
+    if (newAreaCodesArray.count >0 && [self.areaCodesArray_MMMPRO isKindOfClass:[NSMutableArray class]]) {
+        [self.areaCodesArray_MMMPRO removeAllObjects];
+        [self.areaCodesArray_MMMPRO addObjectsFromArray:newAreaCodesArray];
         
-        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][wwwww_tag_wwwww_key];
-        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][wwwww_tag_wwwww_value];
-        self.selectedRegularExpression = _gamaAreaCodesArray[0][wwwww_tag_wwwww_pattern];
+        self.selectedAreaCodeKey_MMMPRO = _areaCodesArray_MMMPRO[0][wwwww_tag_wwwww_key];
+        self.selectedAreaCodeValue_MMMPRO = _areaCodesArray_MMMPRO[0][wwwww_tag_wwwww_value];
+        self.selectedRegularExpression_MMMPRO = _areaCodesArray_MMMPRO[0][wwwww_tag_wwwww_pattern];
     }
 }
 
 #pragma mark - Getter&Setter
-- (NSMutableArray *)gamaAreaCodesArray
+- (NSMutableArray *)areaCodesArray_MMMPRO
 {
-    if (!_gamaAreaCodesArray) {
-        _gamaAreaCodesArray = [NSMutableArray array];
+    if (!_areaCodesArray_MMMPRO) {
+        _areaCodesArray_MMMPRO = [NSMutableArray array];
     }
-    return _gamaAreaCodesArray;
+    return _areaCodesArray_MMMPRO;
 }
 
-- (NSString *)selectedAreaCodeKey
+- (NSString *)selectedAreaCodeKey_MMMPRO
 {
-    if (!_selectedAreaCodeKey) {
-        if(self.gamaAreaCodesArray.count > 0){
-            self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
+    if (!_selectedAreaCodeKey_MMMPRO) {
+        if(self.areaCodesArray_MMMPRO.count > 0){
+            self.selectedAreaCodeKey_MMMPRO = [_areaCodesArray_MMMPRO[0] objectForKey:wwwww_tag_wwwww_key];
         }
     }
-    return _selectedAreaCodeKey;
+    return _selectedAreaCodeKey_MMMPRO;
 }
 
-- (NSString *)selectedAreaCodeValue
+- (NSString *)selectedAreaCodeValue_MMMPRO
 {
-    if (!_selectedAreaCodeValue) {
-        if(self.gamaAreaCodesArray.count > 0){
-            self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
+    if (!_selectedAreaCodeValue_MMMPRO) {
+        if(self.areaCodesArray_MMMPRO.count > 0){
+            self.selectedAreaCodeValue_MMMPRO = [_areaCodesArray_MMMPRO[0] objectForKey:wwwww_tag_wwwww_value];
         }
     }
-    return _selectedAreaCodeValue;
+    return _selectedAreaCodeValue_MMMPRO;
 }
 
 @end

@@ -106,7 +106,7 @@
         
         //账号
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
+        accountSDKTextFiledView.inputUITextField_MMMPRO.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -120,7 +120,7 @@
         
         //密码
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
+        passwordSDKTextFiledView.inputUITextField_MMMPRO.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
         [self addSubview:passwordSDKTextFiledView];
         
         [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -188,7 +188,7 @@
             [self showTermsViewForAccountLoginView_MMMethodMMM];
             
         }];
-        ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+        ConfigModel *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
         termAgreeView.hidden = !mConfigModel.showContract;
         findPasswordBtn.hidden = !mConfigModel.showForgetPwd;
         
@@ -212,7 +212,7 @@
             make.height.mas_equalTo(VH(40));
         }];
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             loginGl.frame = accountLoginBtn.bounds;
         }];
 
@@ -223,7 +223,7 @@
         
         CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
         [guestLoginBtn.layer addSublayer:mGl];
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             mGl.frame = guestLoginBtn.bounds;
         }];
         
@@ -273,7 +273,7 @@
         
         //添加账号显示列表
         kWeakSelf
-        accountSDKTextFiledView.clickAccountListItem = ^(NSInteger tag) {
+        accountSDKTextFiledView.clickAccountListItem_MMMPRO = ^(NSInteger tag) {
             
             if (accountMaskView && accountListView) {
                 //设置点击显示、隐藏
@@ -281,34 +281,34 @@
                 
                 if (accountMaskView.isHidden) {
                     
-                    accountSDKTextFiledView.moreAccountBtn.selected = YES;
+                    accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = YES;
                     accountMaskView.hidden = NO;
                     NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
                     [accountDataList removeAllObjects];
                     [accountDataList addObjectsFromArray:mAccountArray];
-                    accountListView.accountDataList = accountDataList;
-                    [accountListView.accountListTableView reloadData];
+                    accountListView.accountDataList_MMMPRO = accountDataList;
+                    [accountListView.accountListTableView_MMMPRO reloadData];
                     
                 }else{
                     
-                    accountSDKTextFiledView.moreAccountBtn.selected = NO;
+                    accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = NO;
                     accountMaskView.hidden = YES;
                     
                 }
                 
             }else{//第一次点击显示
-                accountSDKTextFiledView.moreAccountBtn.selected = YES;
+                accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = YES;
                 [self addAccountListView_MMMethodMMM];
                 NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
                 [accountDataList removeAllObjects];
                 [accountDataList addObjectsFromArray:mAccountArray];
-                accountListView.accountDataList = accountDataList;
-                [accountListView.accountListTableView reloadData];
+                accountListView.accountDataList_MMMPRO = accountDataList;
+                [accountListView.accountListTableView_MMMPRO reloadData];
             }
             
         };
         
-        accountSDKTextFiledView.inputTextFieldChange = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        accountSDKTextFiledView.inputTextFieldChange_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
             
             if (currentAccountModel && ![currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 
@@ -338,10 +338,10 @@
     
     accountMaskView = [[BasePopupView alloc] init];
 //    accountMaskView.backgroundColor = UIColor.blueColor;
-    accountMaskView.touchesBeganCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    accountMaskView.touchesBeganCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         if (!accountMaskView.isHidden) {
             
-            accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = NO;
             accountMaskView.hidden = YES;
         }
         
@@ -367,7 +367,7 @@
     }];
     kWeakSelf
     kBlockSelf
-    accountListView.mAccountModelClickHander = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
+    accountListView.mAccountModelClickHander_MMMPRO = ^(BOOL isDelete, AccountModel * _Nullable aModel, NSMutableArray<AccountModel *> *accountDataList) {
         
         if (isDelete) {
             
@@ -386,7 +386,7 @@
                 resetAm.password = @"";
                 currentAccountModel = resetAm;
                 [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
-                accountSDKTextFiledView.moreAccountBtn.selected = NO;
+                accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = NO;
                 accountMaskView.hidden = YES;
                 
                 if (deleteBtnView) {
@@ -397,7 +397,7 @@
         }else{//选择
             currentAccountModel = aModel;
             [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
-            accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = NO;
             accountMaskView.hidden = YES;
             
         }
@@ -413,15 +413,15 @@
             
         case kFindPwdActTag:
             SDK_LOG(wwwww_tag_wwwww_kFindPwdActTag);
-            if (self.delegate) {
-                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_FIND_PWD];
+            if (self.loginDelegate_MMMPRO) {
+                [self.loginDelegate_MMMPRO goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_FIND_PWD];
             }
             break;
             
         case kBackBtnActTag:
             SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
-            if (self.delegate) {
-                [self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+            if (self.loginDelegate_MMMPRO) {
+                [self.loginDelegate_MMMPRO goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
@@ -440,7 +440,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         }
             break;
         case appleLoginActTag:
@@ -448,7 +448,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
+            [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self];
         }
             break;
             
@@ -457,7 +457,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         }
             break;
         case googleLoginActTag:
@@ -465,7 +465,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         }
             break;
         case lineLoginActTag:
@@ -473,7 +473,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         }
             break;
             
@@ -482,7 +482,7 @@
             if (![self checkAgreeTerm_MMMethodMMM]) {
                 return;
             }
-            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         }
             break;
             
@@ -535,32 +535,32 @@
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
-        [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper fbLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
-        [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
+        [LoginHelper appleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         
-        [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
-        [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper googleLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
-        [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper lineLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
     }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_NAVER]) {
-        [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.delegate];
+        [LoginHelper naverLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
     }
 }
 
 -(void)requestAccountLogin_MMMethodMMM
 {
     
-    NSString *accountName = [SdkUtil triString_MMMethodMMM:accountSDKTextFiledView.inputUITextField.text];
-    NSString *pwd = [SdkUtil triString_MMMethodMMM:passwordSDKTextFiledView.inputUITextField.text];
+    NSString *accountName = [SdkUtil triString_MMMethodMMM:accountSDKTextFiledView.inputUITextField_MMMPRO.text];
+    NSString *pwd = [SdkUtil triString_MMMethodMMM:passwordSDKTextFiledView.inputUITextField_MMMPRO.text];
     
     
     if (!accountName || [accountName isEqualToString:@""]) {
@@ -577,7 +577,7 @@
         [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
         return;
     }
-    [LoginHelper selfLoginAndRequest_MMMethodMMM:self.delegate account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
+    [LoginHelper selfLoginAndRequest_MMMethodMMM:self.loginDelegate_MMMPRO account_MMMethodMMM:accountName pwd_MMMethodMMM:pwd];
 }
 
 
@@ -619,15 +619,15 @@
         pwdEnable = NO;
     }
     
-    accountFiledView.inputUITextField.text = account;
-    accountFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
+    accountFiledView.inputUITextField_MMMPRO.text = account;
+    accountFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     
     if (pwdFiledView) {
 //        [pwdFiledView setPwdFiledView_MMMethodMMM:pwdEnable];
        
         if (pwdEnable) {
             pwdFiledView.hidden = NO;
-            pwdFiledView.inputUITextField.text = pwdText;
+            pwdFiledView.inputUITextField_MMMPRO.text = pwdText;
             
             [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
                 
@@ -636,7 +636,7 @@
             
             
         }else{
-            pwdFiledView.inputUITextField.text = @"";
+            pwdFiledView.inputUITextField_MMMPRO.text = @"";
             pwdFiledView.hidden = YES;
             [pwdFiledView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.mas_equalTo(1);
@@ -779,7 +779,7 @@
         [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
         return;
     }
-    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
+    [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
         
         [deleteAccountConfireView removeFromSuperview];
         NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
