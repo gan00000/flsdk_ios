@@ -489,11 +489,11 @@
 #define startIapPay_MMMethodMMM     startIapPay
 #define updateUI_MMMethodMMM        updateUI
 #define releaseAll_MMMethodMMM      releaseAll
+#define loadRequest_MMMethodMMM      loadRequest
 #define getPlatUrl_MMMethodMMM      getPlatUrl
 #define checkActSwitchWithSuccessBlock_MMMethodMMM      checkActSwitchWithSuccessBlock
 #define getActConfigWithSuccessBlock_MMMethodMMM        getActConfigWithSuccessBlock
 #define isFirstLoad_MMMethodMMM     isFirstLoad
-
 #define     isShowTerm_MMMethodMMM      isShowTerm
 #define     setShowTerm_MMMethodMMM     setShowTerm
 #define    showTermViewWithBlock_MMMethodMMM    showTermViewWithBlock
@@ -501,5 +501,7 @@
 #define     cancelCountTimer_MMMethodMMM    cancelCountTimer_MMMethodMMM
 #define     onCancelTimer_MMMethodMMM    onCancelTimer_MMMethodMMM
 #define     openCsWithParams_MMMethodMMM   jacOpeka
+#define     addDrawRectBolck_MMMethodMMM    addDrawRectBolckx
+#define     removeFromGameView_MMMethodMMM      removeFromGameViewx
 
 #endif  /* codeObfuscation_h */
