@@ -99,7 +99,6 @@
 		0392B1E92A5BA8DC00A3E2D6 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
 		0392B1EC2A5BA8DC00A3E2D6 /* GameUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AB898285A006600F1FD3B /* GameUserModel.m */; };
 		0392B1ED2A5BA8DC00A3E2D6 /* MWApplePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320291D28694D6300E8D5A5 /* MWApplePayManager.m */; };
-		0392B1EF2A5BA8DC00A3E2D6 /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202920286958FB00E8D5A5 /* ApplePay.m */; };
 		0392B1F02A5BA8DC00A3E2D6 /* LineDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076672861E73C00B81B65 /* LineDelegate.m */; };
 		0392B1F12A5BA8DC00A3E2D6 /* GIDDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376480A286178D600CAD034 /* GIDDelegate.m */; };
 		0392B1F22A5BA8DC00A3E2D6 /* FirebaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E076802862C07700B81B65 /* FirebaseDelegate.m */; };
@@ -317,8 +316,6 @@
 		031B9FBC2897D81600D35EFB /* NSString+Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Local.m"; sourceTree = "<group>"; };
 		0320291C28694D6300E8D5A5 /* MWApplePayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApplePayManager.h; sourceTree = "<group>"; };
 		0320291D28694D6300E8D5A5 /* MWApplePayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWApplePayManager.m; sourceTree = "<group>"; };
-		0320291F286958FB00E8D5A5 /* ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePay.h; sourceTree = "<group>"; };
-		03202920286958FB00E8D5A5 /* ApplePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePay.m; sourceTree = "<group>"; };
 		0320292228695BD200E8D5A5 /* HttpServiceEnginePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpServiceEnginePay.h; sourceTree = "<group>"; };
 		0320292328695BD200E8D5A5 /* HttpServiceEnginePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpServiceEnginePay.m; sourceTree = "<group>"; };
 		0320292928698F1800E8D5A5 /* CreateOrderResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateOrderResp.h; sourceTree = "<group>"; };
@@ -806,8 +803,6 @@
 			children = (
 				0320291C28694D6300E8D5A5 /* MWApplePayManager.h */,
 				0320291D28694D6300E8D5A5 /* MWApplePayManager.m */,
-				0320291F286958FB00E8D5A5 /* ApplePay.h */,
-				03202920286958FB00E8D5A5 /* ApplePay.m */,
 			);
 			path = SDKIAP;
 			sourceTree = "<group>";
@@ -1810,7 +1805,6 @@
 				0392B1EC2A5BA8DC00A3E2D6 /* GameUserModel.m in Sources */,
 				0392B1ED2A5BA8DC00A3E2D6 /* MWApplePayManager.m in Sources */,
 				0392B2642A5BA99900A3E2D6 /* LoginWithRegViewV2.m in Sources */,
-				0392B1EF2A5BA8DC00A3E2D6 /* ApplePay.m in Sources */,
 				0392B1F02A5BA8DC00A3E2D6 /* LineDelegate.m in Sources */,
 				0392B1F12A5BA8DC00A3E2D6 /* GIDDelegate.m in Sources */,
 				0392B1F22A5BA8DC00A3E2D6 /* FirebaseDelegate.m in Sources */,
