@@ -133,7 +133,8 @@
    
 }
 
-+ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
+//如果有传入了额外的eventName，就是用eventName，否则就是用第三方默认的
++ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type name_MMMethodMMM:(NSString *)eventName{
     
     if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){//判断orderId存在才上报
         return;
@@ -142,8 +143,14 @@
     @try {
         
         if (type & AdType_Appflyer) {
-            SDK_LOG(@"logEventPurchaseValues af");
-            [[AppsFlyerLib shared] logEvent:AFEventPurchase withValues: @{
+            
+            if([StringUtil isEmpty_MMMethodMMM:eventName]){
+                eventName = AFEventPurchase;
+            }
+            
+            SDK_LOG(@"logEventPurchaseValues af name=%@", eventName);
+            
+            [[AppsFlyerLib shared] logEvent:eventName withValues: @{
                             AFEventParamRevenue  : @(mPayData.amount),
                             AFEventParamCurrency : wwwww_tag_wwwww_USD,
                             AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
@@ -159,9 +166,12 @@
             
         }
         if (type & AdType_Firebase) {
-            //firebase
-            SDK_LOG(@"logEventPurchaseValues firebase");
-            [FIRAnalytics logEventWithName:kFIREventPurchase parameters:@{
+            
+            if([StringUtil isEmpty_MMMethodMMM:eventName]){
+                eventName = kFIREventPurchase;
+            }
+            SDK_LOG(@"logEventPurchaseValues firebase name=%@", eventName);
+            [FIRAnalytics logEventWithName:eventName parameters:@{
                 kFIRParameterItemID : mPayData.productId,
                 //kFIRParameterPrice : @(mPayData.amount),
                 kFIRParameterValue : @(mPayData.amount),
@@ -171,6 +181,7 @@
                 wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
                 
             }];
+            
         }
         if (type & AdType_FB) {
             
@@ -183,103 +194,27 @@
 //                wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse.data.userId ?: @"",
 //            }];
             
-            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
+//            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD];
 
         }
         
         //adjust
-        NSDictionary *eventValues = @{
-            @"usdPrice"  : @(mPayData.amount),
-            @"currency" : wwwww_tag_wwwww_USD,
-            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
-            wwwww_tag_wwwww_orderId: mPayData.orderId ?: @"",
-            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
-            wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
-            wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
-            
-        };
-        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"AJ_Purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
-       
-        GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
-        if(gGameUserModel){
-            if(gGameUserModel.isPay){//除了第一次
-                
-                if(gGameUserModel.isSecondPay){
-                    //NOT TO DO
-                }else{//第二次充值上报
-                    gGameUserModel.isSecondPay = YES;
-                    [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
-                    //上报
-                    SDK_LOG(@"logEvent firebase second_purchase");
-                    [FIRAnalytics logEventWithName:@"second_purchase" parameters:@{
-                        kFIRParameterItemID : mPayData.productId,
-                        //kFIRParameterPrice : @(mPayData.amount),
-                        kFIRParameterValue : @(mPayData.amount),
-                        kFIRParameterCurrency : wwwww_tag_wwwww_USD,
-                        kFIRParameterTransactionID : mPayData.orderId,
-                        wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-                        wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
-                        
-                    }];
-                    
-                    //AF和FB不上报金额
-                    
-                    SDK_LOG(@"logEvent af second_purchase");
-                    [[AppsFlyerLib shared] logEvent:@"second_purchase" withValues: @{
-//                                    AFEventParamRevenue  : @(mPayData.amount),
-//                                    AFEventParamCurrency : wwwww_tag_wwwww_USD,
-                                    AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-                                    AFEventParamContentId: mPayData.productId ?: @"",
-                                    AFEventParamOrderId: mPayData.orderId ?: @"",
-                                    wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
-                                    wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
-                                    wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-                                    wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-                                    wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
-                                    
-                    }];
-                    
-                    SDK_LOG(@"logEvent fb second_purchase");
-                    [[FBSDKAppEvents shared] logEvent:@"second_purchase" parameters: @{
-//                                                            AFEventParamCurrency : wwwww_tag_wwwww_USD,
-                                                            AFEventParamCustomerUserId : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-                                                            AFEventParamContentId: mPayData.productId ?: @"",
-                                                            AFEventParamOrderId: mPayData.orderId ?: @"",
-                                                            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
-                                                            wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
-                                                            wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
-                                                            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
-                                                            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
-                                                            
-                                            }];
-                    
-                    [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:@"second_purchase" eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
-                    
-                }
-                
-            }else{//第一次充值
-                gGameUserModel.isPay = YES;
-                gGameUserModel.firstPayTime = [SUtil getTimeStamp_MMMethodMMM];
-                if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日付费玩家
-                    gGameUserModel.isRegDayPay = YES;
-                }else{
-                    gGameUserModel.isRegDayPay = NO;
-                }
-                [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
-            }
-            
-            if(mPayData.amount > 4){
-                
-                NSString *curTime = [SUtil getTimeStamp_MMMethodMMM];
-                if([[SUtil getDateStringWithTimeStr_MMMethodMMM:curTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日玩家
-                    
-                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_purchase_over4 parameters_MMMethodMMM:eventValues];
-                }
-            }
-            
-        }
+//        if([StringUtil isEmpty_MMMethodMMM:eventName]){
+//            return;
+//        }
+//        NSDictionary *eventValues = @{
+//            @"usdPrice"  : @(mPayData.amount),
+//            @"currency" : wwwww_tag_wwwww_USD,
+//            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
+//            wwwww_tag_wwwww_orderId: mPayData.orderId ?: @"",
+//            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,
+//            wwwww_tag_wwwww_uniqueId      :  [SUtil getGamaUUID_MMMethodMMM]? : @"",
+//            wwwww_tag_wwwww_time         :[SUtil getTimeStamp_MMMethodMMM],
+//            wwwww_tag_wwwww_userId      : SDK_DATA.mLoginResponse_MMMPRO.data.userId ?: @"",
+//            wwwww_tag_wwwww_serverTimestamp      : mPayData.timestamp ?: @"",
+//
+//        };
+//        [[AdjustDelegate share] logEventWithEventName_MMMethodMMM:eventName eventValues_MMMethodMMM:eventValues revenue:mPayData.amount transactionId:mPayData.transactionId];
         
     } @catch (NSException *exception) {
         //[self _presentAlertWithException:exception andDictionary:dic];

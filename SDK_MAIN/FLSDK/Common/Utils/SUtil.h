@@ -112,6 +112,8 @@
 
 + (NSString *)getDateStringWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat;
 + (NSString *)getYesterdayDateWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat;
+
++(NSInteger)daysBetween_MMMethodMMM:(NSString *)startTimestamp endDate_MMMethodMMM:(NSString *)endTimestamp;
 /**
  *	@brief	获取项目配置文件的配置信息
  *

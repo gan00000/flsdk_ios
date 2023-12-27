@@ -18,7 +18,12 @@
 @property (copy, nonatomic) NSString *regTime;//注册时间
 @property (copy, nonatomic) NSString *firstPayTime;//第一次付费
 
+@property (copy, nonatomic) NSString *lastLoginTime;
+
 @property (assign, nonatomic) BOOL isRegDayPay;//注册日是否付费
+
+@property (assign, nonatomic) CGFloat payAmount;//总储值额度
+@property (assign, nonatomic) int payCount;
 
 -(BOOL)checkParams_MMMethodMMM;
 @end

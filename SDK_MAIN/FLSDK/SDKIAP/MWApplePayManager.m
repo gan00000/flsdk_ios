@@ -84,7 +84,7 @@
                     xxPayData.productId = cor.productId;
                     xxPayData.transactionId = transactionId;
                     
-                    [AdDelegate logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
+                    [AdLogger logEventPurchaseValues_MMMethodMMM:xxPayData type_MMMethodMMM:(AdType_All)];
                 }
                 
                 

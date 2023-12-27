@@ -315,7 +315,7 @@
                 }
                 [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
                 
-                [AdDelegate logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
+                [AdLogger logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
                 self.dySDKPayBlock(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 

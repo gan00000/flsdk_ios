@@ -458,35 +458,80 @@
     
     
     if (loginResopnse.code == BJResponseCode_OK_Register) {//注册
-        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        //注册
+        [AdLogger logWithEventName_MMMethodMMM:@"af_complete_registration_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer];
+        [AdLogger logWithEventName_MMMethodMMM:@"sign_up_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Firebase];
         
-        [AdLogger logWithEventName_MMMethodMMM:FBSDKAppEventNameCompletedRegistration parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_FB];
-        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_COMPLETE_REGISTRATION_IOS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_FB];
+        //注册成功也是登录成功
+        [AdLogger logWithEventName_MMMethodMMM:@"af_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer];
+        [AdLogger logWithEventName_MMMethodMMM:@"login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Firebase];
         
-        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];//注册成功也是登录成功
-
-        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS];
-        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
+        
+        if ([LOGIN_TYPE_SELF isEqualToString:thirdPlate]) {
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"sign_up_account_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"login_account_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+            
+        }else if([LOGIN_TYPE_GUEST isEqualToString:thirdPlate]){
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"sign_up_visitor_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"login_visitor_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        }
+        
+//        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_REGISTER_SUCCESS];
+//        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
         
         [[ConfigCoreUtil share] saveGameUserInfo_MMMethodMMM:loginResopnse];//记录，后面广告时间追踪使用
         
     }else {//登录
         
-        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS];
-        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_LOGIN_SUCCESS parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        [AdLogger logWithEventName_MMMethodMMM:@"af_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer];//注册成功也是登录成功
+        [AdLogger logWithEventName_MMMethodMMM:@"login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Firebase];
+        
+        if ([LOGIN_TYPE_SELF isEqualToString:thirdPlate]) {
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"login_account_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+            
+        }else if([LOGIN_TYPE_GUEST isEqualToString:thirdPlate]){
+            
+            [AdLogger logWithEventName_MMMethodMMM:@"login_visitor_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_Appflyer|AdType_Firebase];
+        }
         
         GameUserModel *xxGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:loginResopnse.data.userId];
-        if(xxGameUserModel && xxGameUserModel.isRegDayPay){//注册首日付费用户
-            
-            NSString *yesterDate = [SUtil getYesterdayDateWithTimeStr_MMMethodMMM:loginResopnse.data.timestamp dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
-            NSString *regDate = [SUtil getDateStringWithTimeStr_MMMethodMMM:xxGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
-            SDK_LOG(@"yesterDate=%@, regDate=%@", yesterDate, regDate);
-            if([yesterDate isEqualToString:regDate] && xxGameUserModel.isRegDayPay){//玩家第二天登录上报
-                //注册首日付费玩家第二天登录上报
-                SDK_LOG(@"log event Paid_D2Login start");
-                [AdLogger logWithEventName_MMMethodMMM:@"Paid_D2Login" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
+//        if(xxGameUserModel && xxGameUserModel.isRegDayPay){//注册首日付费用户
+//
+//            NSString *yesterDate = [SUtil getYesterdayDateWithTimeStr_MMMethodMMM:loginResopnse.data.timestamp dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
+//            NSString *regDate = [SUtil getDateStringWithTimeStr_MMMethodMMM:xxGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"];
+//            SDK_LOG(@"yesterDate=%@, regDate=%@", yesterDate, regDate);
+//            if([yesterDate isEqualToString:regDate] && xxGameUserModel.isRegDayPay){//玩家第二天登录上报
+//                //注册首日付费玩家第二天登录上报
+//                SDK_LOG(@"log event Paid_D2Login start");
+//                [AdLogger logWithEventName_MMMethodMMM:@"Paid_D2Login" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All];
+//            }
+//        }
+        
+        if (xxGameUserModel) {
+            NSInteger days = [SUtil daysBetween_MMMethodMMM:xxGameUserModel.regTime endDate_MMMethodMMM:loginResopnse.data.timestamp];
+            if(days == 2){
+                [AdLogger logWithEventName_MMMethodMMM:@"complete_2nd_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All isOnce:YES];
             }
+            if(days == 3){
+                [AdLogger logWithEventName_MMMethodMMM:@"complete_3nd_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All isOnce:YES];
+            }
+            if(days == 5){
+                [AdLogger logWithEventName_MMMethodMMM:@"complete_5nd_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All isOnce:YES];
+            }
+            if(days == 7){
+                [AdLogger logWithEventName_MMMethodMMM:@"complete_7nd_login_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:AdType_All isOnce:YES];
+            }
+            
+            xxGameUserModel.lastLoginTime = loginResopnse.data.timestamp;
+            [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:xxGameUserModel];
         }
+        
+        
     }
     
     

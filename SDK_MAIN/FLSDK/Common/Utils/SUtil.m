@@ -330,6 +330,40 @@
     return mDateStr;
 }
 
++(NSInteger)daysBetween_MMMethodMMM:(NSString *)startTimestamp endDate_MMMethodMMM:(NSString *)endTimestamp
+{
+    
+    // 日期格式化
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+//
+//    // 定义起始日期和结束日期
+//    NSString *startDateString = @"2023-12-20";
+//    NSString *endDateString = @"2023-12-27";
+
+//    NSDate *startDate = [dateFormatter dateFromString:startDateString];
+//    NSDate *endDate = [dateFormatter dateFromString:endDateString];
+
+    NSTimeInterval start_time = [startTimestamp doubleValue]/1000;
+    NSTimeInterval end_time = [endTimestamp doubleValue]/1000;
+
+    // 将时间戳转换为NSDate对象
+    NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:start_time];
+    NSDate *endDate =   [NSDate dateWithTimeIntervalSince1970:end_time];
+
+    // 创建日历
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+
+    // 获取起始日期和结束日期之间的天数差
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay
+                                               fromDate:startDate
+                                                 toDate:endDate
+                                                options:0];
+
+    NSInteger daysBetween = [components day];
+    
+    return daysBetween;
+}
 
 #pragma mark - 获取项目配置信息
 +(NSDictionary *)getProjectInfoPlist_MMMethodMMM
