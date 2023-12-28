@@ -302,7 +302,7 @@ static dispatch_once_t onceToken;
         dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"txt"];
         if (dicTemp){
             [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
-            SDK_LOG(@"set language str = %@ ",languageStr_defalut);
+            SDK_LOG(@"set language str = %@",languageStr_defalut);
             return _textStringDic_MMMPRO;
         }
         

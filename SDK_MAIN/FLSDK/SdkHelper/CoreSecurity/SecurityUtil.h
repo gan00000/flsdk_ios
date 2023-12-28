@@ -4,8 +4,8 @@
 #import <Foundation/Foundation.h>
 
 
-#define GAMA_CONF_DEFAULT_KEY    @"GAMA128KEY"                  //文件加密时候使用的Key参数
-#define GAMA_CONF_DEFAULT_IV     @"GAMA128IV"                   //文件加密时候使用的iv参数
+#define GAMA_CONF_DEFAULT_KEY    @"DYDY128KEY"                  //文件加密时候使用的Key参数
+#define GAMA_CONF_DEFAULT_IV     @"DYDY128IV"                   //文件加密时候使用的iv参数
 
 /*
  GAMA的保密类,主要进行：加密，解密，转码等职能。
