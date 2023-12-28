@@ -20,10 +20,11 @@
 //#define SDK_KR      1
 #define SDK_TH      1
 
-#import "MWStringHeaders.h"
 #import "imageNameHeader.h"
-//#import "codeObfuscationForMethodName.h"
-//#import "proNameHeader.h"
+#import "codeObfuscationForMethodName.h"
+#import "proNameHeader.h"
+
+#import "MWStringHeaders.h"
 #import "ColorHeader.h"
 
 #endif /* preHeader_h */
