@@ -32,10 +32,10 @@
         instance.httpEngine_MMMPRO = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine_MMMPRO updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
-//            [session.requestSerializer setValue:[NSString stringWithFormat:@"%@|%@|%@", [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:@"X-User-Device"]; //机器名称 | 系统版本 | idfa
-//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:@"X-App-Version"];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:wwwww_tag_wwwww_X_User_AppId];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:wwwww_tag_wwwww_X_User_Platform];
+//            [session.requestSerializer setValue:[NSString stringWithFormat:wwwww_tag_wwwww_donible_vorac, [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:wwwww_tag_wwwww_X_User_Device]; //机器名称 | 系统版本 | idfa
+//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:wwwww_tag_wwwww_X_App_Version];
         }];
     });
     return instance;
@@ -50,12 +50,12 @@
     if (params) {
         [allParams addEntriesFromDictionary:params];
     }
-    SDK_LOG(@"post: path = %@,params = %@", path, params);
+    SDK_LOG(wwwww_tag_wwwww_iratesque_ambi, path, params);
     //[GamaUtils gamaStarLoadingAtView:nil];
     [[HttpServiceEngineAd sharedInstance].httpEngine_MMMPRO postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
-        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        SDK_LOG(wwwww_tag_wwwww_phorcontainuous_glabrety, task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
 #endif
         
           //[GamaUtils gamaStopLoadingAtView:nil];
@@ -76,7 +76,7 @@
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         
-        SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
+        SDK_LOG(wwwww_tag_wwwww_findfy_brevability, path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;

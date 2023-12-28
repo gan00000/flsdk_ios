@@ -32,7 +32,7 @@ static dispatch_once_t onceToken;
 
 //+ (void)releaseReader
 //{
-//    SDK_LOG(@"releaseReader");
+//    SDK_LOG(wwwww_tag_wwwww_releaseReader);
 //    onceToken = 0;
 //    [coreReader release];
 //    coreReader = nil;
@@ -43,7 +43,7 @@ static dispatch_once_t onceToken;
     self=[super init];
     if (self)
     {
-        SDK_LOG(@"reader init");
+        SDK_LOG(wwwww_tag_wwwww_reader_init);
 //        self.areaCodeDic = [NSMutableDictionary dictionary];
         
         [self setBundleInfo_MMMethodMMM];
@@ -79,12 +79,12 @@ static dispatch_once_t onceToken;
     if(!_areaInfoArray_MMMPRO){
         _areaInfoArray_MMMPRO = [NSMutableArray array];
         
-        NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"txt"];
+        NSArray *areaInfo_arry = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:wwwww_tag_wwwww_areaInfo ofType_MMMethodMMM:@"txt"];
         if (areaInfo_arry) {
             [_areaInfoArray_MMMPRO addObjectsFromArray:areaInfo_arry];
         }
         
-        areaInfo_arry = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:@"areaInfo" ofType_MMMethodMMM:@"json"];
+        areaInfo_arry = [self getJsonContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:wwwww_tag_wwwww_areaInfo ofType_MMMethodMMM:@"json"];
         if (areaInfo_arry) {
             [_areaInfoArray_MMMPRO addObjectsFromArray:areaInfo_arry];
         }
@@ -128,7 +128,7 @@ static dispatch_once_t onceToken;
 #pragma mark -从main bundle配置文件中读取配置信息
 -(NSDictionary *)readMainBundleCoreConfInfo_MMMethodMMM
 {
-    SDK_LOG(@"======================readMainBundleCoreConfInfo start =================");
+    SDK_LOG(wwwww_tag_wwwww_irative_argentfaction);
     //获取配置文件名字
     NSString *configName = [self getSdkConfigInfoName_MMMethodMMM];
     
@@ -202,18 +202,18 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 加密内容
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
-    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], wwwww_tag_wwwww_KEY);
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
     //加密后的密文
     NSString *encryptStr = [SecurityUtil getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
     return encryptStr;
 }
 #pragma mark - 解密内容
 - (NSString *)decryptContent_MMMethodMMM:(NSString *)textEncrypContent {
-    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], wwwww_tag_wwwww_KEY);
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
@@ -227,7 +227,7 @@ static dispatch_once_t onceToken;
 #pragma mark - 打印配置文件加密内容
 - (void)logSdkResConfig_MMMethodMMM {
     
-    NSArray *languageArr = @[@"zh-Hant",@"zh-Hans",@"en", @"vi",@"ko", @"areaInfo"];
+    NSArray *languageArr = @[wwwww_tag_wwwww_zh_Hant,wwwww_tag_wwwww_zh_Hans,@"en", @"vi",@"ko", wwwww_tag_wwwww_areaInfo];
     for (NSString *languageStr in languageArr) {
         
         NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
@@ -239,9 +239,9 @@ static dispatch_once_t onceToken;
             //文件名称md5后添加到resbundle
             NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:languageStr];
             
-            SDK_LOG(@"languageStr=%@,md5EncryptFileName=%@,encryptStr=%@",languageStr,md5EncryptFileName,encryptStr);
+            SDK_LOG(wwwww_tag_wwwww_analysisenne_prolesar,languageStr,md5EncryptFileName,encryptStr);
         }else{
-            SDK_LOG(@"file not find : %@.json", languageStr);
+            SDK_LOG(wwwww_tag_wwwww_deictsex_far, languageStr);
         }
     }
     //打印主配置
@@ -253,9 +253,9 @@ static dispatch_once_t onceToken;
         NSString *textStringContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * encryptStr = [self encryptContent_MMMethodMMM:textStringContent];
         NSString * md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:configInfoName];
-        SDK_LOG(@"configInfoName=%@,md5EncryptFileName=%@,encryptStr=%@",configInfoName,md5EncryptFileName,encryptStr);
+        SDK_LOG(wwwww_tag_wwwww_phobet_calletic,configInfoName,md5EncryptFileName,encryptStr);
     }else{
-        SDK_LOG(@"file not find : %@.json", configInfoName);
+        SDK_LOG(wwwww_tag_wwwww_deictsex_far, configInfoName);
     }
 }
 
@@ -271,12 +271,12 @@ static dispatch_once_t onceToken;
         if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
             
             NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-            if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
+            if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hans]) {//简体中文
                 
-                languageStr = @"zh-Hans";
+                languageStr = wwwww_tag_wwwww_zh_Hans;
                 
-            }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-                languageStr = @"zh-Hant";
+            }else if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hant]){//繁体
+                languageStr = wwwww_tag_wwwww_zh_Hant;
             }else if ([preferredLang hasPrefix:@"en"]){
                 languageStr = @"en";
             }else if ([preferredLang hasPrefix:@"vi"]){
@@ -298,11 +298,11 @@ static dispatch_once_t onceToken;
             return _textStringDic_MMMPRO;
         }
         //使用默认语言
-        SDK_LOG(@"language = %@ not exist",languageStr);
+        SDK_LOG(wwwww_tag_wwwww_pantetic_pathoably,languageStr);
         dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr_defalut ofType_MMMethodMMM:@"txt"];
         if (dicTemp){
             [_textStringDic_MMMPRO addEntriesFromDictionary:dicTemp];
-            SDK_LOG(@"set language str = %@",languageStr_defalut);
+            SDK_LOG(wwwww_tag_wwwww_plodon_septi,languageStr_defalut);
             return _textStringDic_MMMPRO;
         }
         
@@ -321,7 +321,7 @@ static dispatch_once_t onceToken;
 -(id)getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:(NSBundle *)bundle name_MMMethodMMM:(nullable NSString *)name ofType_MMMethodMMM:(nullable NSString *)type
 {
     NSString *md5EncryptFileName = [self getMd5ResFileName_MMMethodMMM:name];
-    SDK_LOG(@"md5EncryptFileName=%@",md5EncryptFileName);
+    SDK_LOG(wwwww_tag_wwwww_claudad_laceracy,md5EncryptFileName);
     NSString *textEncryptFilePath = [bundle pathForResource:md5EncryptFileName ofType:type];
     
     if(textEncryptFilePath){
@@ -329,7 +329,7 @@ static dispatch_once_t onceToken;
         NSData *textData = [[NSData alloc] initWithContentsOfFile:textEncryptFilePath];
         NSString *textEncrypContent = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
         NSString * textContent = [self decryptContent_MMMethodMMM:textEncrypContent];
-        SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+        SDK_LOG(wwwww_tag_wwwww_cordavailableacle_sequty,textEncrypContent,textContent);
         if(textContent){
             NSData *jsonData = [textContent dataUsingEncoding:NSUTF8StringEncoding];
             // 对数据进行JSON格式化并返回字典形式
@@ -371,12 +371,12 @@ static dispatch_once_t onceToken;
 //    if ([self isMoreLanguage_MMMethodMMM]) {//是否使用多语言
 //
 //        NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-//        if ([preferredLang hasPrefix:@"zh-Hans"]) {//简体中文
+//        if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hans]) {//简体中文
 //
-//            languageStr = @"zh-Hans";
+//            languageStr = wwwww_tag_wwwww_zh_Hans;
 //
-//        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-//            languageStr = @"zh-Hant";
+//        }else if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hant]){//繁体
+//            languageStr = wwwww_tag_wwwww_zh_Hant;
 //        }else if ([preferredLang hasPrefix:@"en"]){
 //            languageStr = @"en";
 //        }else if ([preferredLang hasPrefix:@"vi"]){
@@ -387,7 +387,7 @@ static dispatch_once_t onceToken;
 //    }
 //
 //    self.m_stringsBundle = [NSBundle mainBundle];
-//    self.m_stringsName = @"Localizable";
+//    self.m_stringsName = wwwww_tag_wwwww_Localizable;
 //
 //    NSBundle *sdkBundle = [self getMySdkBundle_MMMethodMMM];
 //    if (sdkBundle) {
@@ -398,7 +398,7 @@ static dispatch_once_t onceToken;
 //
 //        if (lprojBundleURL) {
 //            self.m_stringsBundle = [NSBundle bundleWithURL:lprojBundleURL];
-//            //self.m_stringsName = @"Localizable";
+//            //self.m_stringsName = wwwww_tag_wwwww_Localizable;
 //        }
 //    }
 }
@@ -407,21 +407,21 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取配置文件对应的key内容
 -(NSString *)getGameCode_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"gameCode"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_gameCode];
 }
 -(NSString *)getAppkey_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"appKey"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_appKey];
 }
 -(NSString *)getGameLanguage_MMMethodMMM
 {
 //    if ([self isMoreLanguage_MMMethodMMM]) {
 //        return [SUtil getServerLanguage_MMMethodMMM];
 //    }
-//    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
-//        return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
+//    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_gameLanguage]]) {
+//        return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_gameLanguage];
 //    }
-//    return @"zh_TW";
+//    return wwwww_tag_wwwww_zh_TW;
     
     return [self getServerLanguage_MMMethodMMM];
 }
@@ -432,104 +432,104 @@ static dispatch_once_t onceToken;
     if ([self isMoreLanguage_MMMethodMMM]) {//多语言版本才根据下列情况取值，非多语言版本默认繁体
         
         NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
-        if ([preferredLang hasPrefix:@"zh-Hans"]) {//中文
+        if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hans]) {//中文
             
-            languageStr = @"zh_CN";
+            languageStr = wwwww_tag_wwwww_zh_CN;
             
-        }else if ([preferredLang hasPrefix:@"zh-Hant"]){//繁体
-            languageStr = @"zh_TW";
+        }else if ([preferredLang hasPrefix:wwwww_tag_wwwww_zh_Hant]){//繁体
+            languageStr = wwwww_tag_wwwww_zh_TW;
             
         }else if ([preferredLang hasPrefix:@"en"]){
-            languageStr = @"en_US";
+            languageStr = wwwww_tag_wwwww_en_US;
             
         }else if ([preferredLang hasPrefix:@"vi"]){
-            languageStr = @"vi_VN";
+            languageStr = wwwww_tag_wwwww_vi_VN;
         }else if ([preferredLang hasPrefix:@"ko"]){
-            languageStr = @"ko_KR";
+            languageStr = wwwww_tag_wwwww_ko_KR;
         }
     }
     if ([StringUtil isNotEmpty_MMMethodMMM:languageStr]) {
         return languageStr;
     }
     
-    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:@"gameLanguage"]]) {
-        return [self getStringForKey_MMMethodMMM:@"gameLanguage"];
+    if ([StringUtil isNotEmpty_MMMethodMMM:[self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_gameLanguage]]) {
+        return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_gameLanguage];
     }
-    return @"zh_TW";
+    return wwwww_tag_wwwww_zh_TW;
 
 }
 
 
 -(NSString *)getLoginUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_url_login"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_url_login];
 }
 
 -(NSString *)getPayUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_url_pay"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_url_pay];
 }
 
 -(NSString *)getCdnUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_url_cdn"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_url_cdn];
 }
 
 -(NSString *)getLogUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_url_log"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_url_log];
 }
 
 -(NSString *)getPlatUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_url_plat"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_url_plat];
 }
 
 -(NSString *)getTermsServiceUrl_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"terms_service_url"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_terms_service_url];
 }
 
 -(NSString *)getAfDevKey_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"af_dev_key"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_af_dev_key];
 }
 
 -(NSString *)getAppId_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_appId"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_appId];
 }
 
 -(BOOL)isAdDebug_MMMethodMMM
 {
-    return [self getBoolForKey_MMMethodMMM:@"sdk_ad_bug"];
+    return [self getBoolForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_ad_bug];
 }
 
 -(BOOL)isVersion2_MMMethodMMM //是否是第二版本或以上
 {
-//    return [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString isEqualToString:@"v3"];
+//    return [[self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_v_version].lowercaseString isEqualToString:@"v2"] || [[self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_v_version].lowercaseString isEqualToString:@"v3"];
     return YES;
 }
 
 -(NSString *)getSdkVersion_MMMethodMMM //SDK 版本
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_v_version"].lowercaseString;
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_v_version].lowercaseString;
 }
 
 -(BOOL)isMoreLanguage_MMMethodMMM
 {
-    return [self getBoolForKey_MMMethodMMM:@"sdk_more_language"];
+    return [self getBoolForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_more_language];
 }
 
 -(NSString *)getsdkLanguage_MMMethodMMM
 {
-    return [self getStringForKey_MMMethodMMM:@"sdk_language"];
+    return [self getStringForKey_MMMethodMMM:wwwww_tag_wwwww_sdk_language];
 }
 
 #pragma mark - 获取配置文件中sdk bundle名字，获取不到去gameCode作为名字
 - (NSString *)getSdkBundleName_MMMethodMMM
 {
-    NSString * bundleName = self.mainBundleConfDic_MMMPRO[@"sdk_res_bundle_name"];
+    NSString * bundleName = self.mainBundleConfDic_MMMPRO[wwwww_tag_wwwww_sdk_res_bundle_name];
     if (bundleName && ![bundleName isEqualToString:@""]) {
         return bundleName;
     }
@@ -539,12 +539,12 @@ static dispatch_once_t onceToken;
 #pragma mark - 获取info.plist配置文件中facebook appid
 -(NSString *)getFacebookAppId_MMMethodMMM
 {
-//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:wwwww_tag_wwwww_Info ofType:@"plist"];
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:bundlePath];
-//    NSString *facebookAppID = [dict objectForKey:@"FacebookAppID"];
+//    NSString *facebookAppID = [dict objectForKey:wwwww_tag_wwwww_FacebookAppID];
 //    return facebookAppID;
     
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"FacebookAppID"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_FacebookAppID];
 }
 
 #pragma mark - 获取config配置文件名称，使用bundleId命名
@@ -570,16 +570,16 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 解密所有字符串 内容
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
-    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], wwwww_tag_wwwww_KEY);
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-//    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
+//    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
 //    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
     
     NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+    SDK_LOG(wwwww_tag_wwwww_cordavailableacle_sequty,textEncrypContent,textContent);
     return textContent;
 }
 

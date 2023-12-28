@@ -147,7 +147,7 @@ static  NSString *AccountListViewCellID = @"AccountListViewCellID";
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath { //system_method
-    SDK_LOG(@"didSelectRowAtIndexPath %ld", indexPath.row);
+    SDK_LOG(wwwww_tag_wwwww_milit_individual, indexPath.row);
     AccountModel *mAccountModel = self.accountDataList_MMMPRO[indexPath.row];
 //    accountSDKTextFiledView.inputUITextField.text = mAccountModel.account;
 //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;

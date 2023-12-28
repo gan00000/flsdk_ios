@@ -28,7 +28,7 @@
     mLable.font = [UIFont systemFontOfSize:size];
 //    mLable.textAlignment = NSTextAlignmentLeft;
     mLable.numberOfLines = 1;
-    mLable.textColor = textColor;//[UIColor colorWithHexString_MMMethodMMM:@"#C0C0C0"];
+    mLable.textColor = textColor;//[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     
     return mLable;
     
@@ -122,7 +122,7 @@
 //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
 //    [btn setTitle:titleText forState:0];
 //    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-//    [btn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:@"#777777"] forState:0];
+//    [btn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_777777] forState:0];
 //    [btn setTag:tag];
 //    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
 //    //[btn.layer setBorderWidth:1.5f];
@@ -166,7 +166,7 @@
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
         //响应事件
-        SDK_LOG(@"action = %@", action);
+        SDK_LOG(wwwww_tag_wwwww_ventrization_asfic, action);
     }];
     [mAlert addAction:defaultAction];
     if (viewController) {

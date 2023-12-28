@@ -29,7 +29,7 @@
     
     NSString *afDevKey = [SDKRES getAfDevKey_MMMethodMMM];
     NSString *appId = [SDKRES getAppId_MMMethodMMM];
-    SDK_LOG(@"afDevKey:%@,appId=%@",afDevKey,appId);
+    SDK_LOG(wwwww_tag_wwwww_trus_oligo,afDevKey,appId);
     if ([StringUtil isNotEmpty_MMMethodMMM:afDevKey] && [StringUtil isNotEmpty_MMMethodMMM:appId]) {
         
         if ([SDKRES isAdDebug_MMMethodMMM]) {//是否开启debug
@@ -77,15 +77,15 @@
             // 获取到权限后，依然使用老方法获取idfa
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-                NSLog(@"idfa=%@",idfa);
+                NSLog(wwwww_tag_wwwww_precice_putenne,idfa);
                 
                 //FB 从 iOS 14.5 开始，您需要设置 isAdvertiserTrackingEnabled，并在每次为设备授予与 Facebook 分享数据的权限时，做好记录。
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:YES];
                 
-//                [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
+//                [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:wwwww_tag_wwwww_precice_putenne,idfa]];
                 
             } else {
-                NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
+                NSLog(wwwww_tag_wwwww_hortoon_nuptianeity);
                 [FBSDKSettings.sharedSettings setAdvertiserTrackingEnabled:NO];
                 
             }
@@ -98,10 +98,10 @@
         [[AppsFlyerLib shared] start];
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-            NSLog(@"idfa=%@",idfa);
-//            [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"idfa=%@",idfa]];
+            NSLog(wwwww_tag_wwwww_precice_putenne,idfa);
+//            [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:wwwww_tag_wwwww_precice_putenne,idfa]];
         } else {
-            NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
+            NSLog(wwwww_tag_wwwww_florium_notise);
         }
     }
     
@@ -110,7 +110,7 @@
 + (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type{
     
     @try {
-        SDK_LOG(@"logEventWithEventName=%@", eventName);
+        SDK_LOG(wwwww_tag_wwwww_relationship_ostiist, eventName);
         if (type & AdType_Appflyer) {
             [[AppsFlyerLib shared] logEvent:eventName withValues:eventValues];
         }
@@ -148,7 +148,7 @@
                 eventName = AFEventPurchase;
             }
             
-            SDK_LOG(@"logEventPurchaseValues af name=%@", eventName);
+            SDK_LOG(wwwww_tag_wwwww_quesitwindowence_tendaceous, eventName);
             
             [[AppsFlyerLib shared] logEvent:eventName withValues: @{
                             AFEventParamRevenue  : @(mPayData.amount),
@@ -170,7 +170,7 @@
             if([StringUtil isEmpty_MMMethodMMM:eventName]){
                 eventName = kFIREventPurchase;
             }
-            SDK_LOG(@"logEventPurchaseValues firebase name=%@", eventName);
+            SDK_LOG(wwwww_tag_wwwww_blood_mic, eventName);
             [FIRAnalytics logEventWithName:eventName parameters:@{
                 kFIRParameterItemID : mPayData.productId,
                 //kFIRParameterPrice : @(mPayData.amount),
@@ -186,7 +186,7 @@
         if (type & AdType_FB) {
             
              //fb
-            SDK_LOG(@"logEventPurchaseValues fb");
+            SDK_LOG(wwwww_tag_wwwww_logEventPurchaseValues_fb);
 //            [[FBSDKAppEvents shared] logPurchase:mPayData.amount currency:wwwww_tag_wwwww_USD parameters:@{
 //                FBSDKAppEventParameterNameCurrency : wwwww_tag_wwwww_USD,
 //                FBSDKAppEventParameterNameOrderID : mPayData.orderId,
@@ -203,8 +203,8 @@
 //            return;
 //        }
 //        NSDictionary *eventValues = @{
-//            @"usdPrice"  : @(mPayData.amount),
-//            @"currency" : wwwww_tag_wwwww_USD,
+//            wwwww_tag_wwwww_usdPrice  : @(mPayData.amount),
+//            wwwww_tag_wwwww_currency : wwwww_tag_wwwww_USD,
 //            wwwww_tag_wwwww_productId: mPayData.productId ?: @"",
 //            wwwww_tag_wwwww_orderId: mPayData.orderId ?: @"",
 //            wwwww_tag_wwwww_platform      : wwwww_tag_wwwww_ios,

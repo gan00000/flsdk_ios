@@ -34,7 +34,7 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"AccountModel init");
+        NSLog(wwwww_tag_wwwww_AccountModel_init);
         [self initData_MMMethodMMM];
         
     }
@@ -44,7 +44,7 @@
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder //system_method
 //{
-//    NSLog(@"AccountModel encodeWithCoder");
+//    NSLog(wwwww_tag_wwwww_AccountModel_encodeWithCoder);
 //    [aCoder encodeObject:self.account forKey:wwwww_tag_wwwww_accountName];
 //    [aCoder encodeObject:self.password forKey:wwwww_tag_wwwww_accountPwd];
 //    [aCoder encodeObject:self.lastLoginTime forKey:wwwww_tag_wwwww_lastLoginTimemobile];
@@ -69,7 +69,7 @@
 //
 //- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder //system_method
 //{
-//    NSLog(@"AccountModel initWithCoder");
+//    NSLog(wwwww_tag_wwwww_AccountModel_initWithCoder);
 //    if (self = [super init]) {
 //        
 //        self.account = [aDecoder decodeObjectForKey:wwwww_tag_wwwww_accountName] ? : @"";

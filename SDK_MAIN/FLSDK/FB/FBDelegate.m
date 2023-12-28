@@ -99,7 +99,7 @@
             //            Error Domain=com.facebook.sdk.core Code=309 "(null)" UserInfo={com.facebook.sdk:FBSDKErrorDeveloperMessageKey=Invalid ID token from login response.}
             
             if ([result isCancelled]) {
-                NSLog(@"fb login isCancelled");
+                NSLog(wwwww_tag_wwwww_fb_login_isCancelled);
                 !cancelBlock ? : cancelBlock(error);
             }else{
                 !failBlock ? : failBlock(error);
@@ -119,7 +119,7 @@
                     dispatch_async(dispatch_get_main_queue(), ^{
                         
                         if (fbUserId && ![fbUserId isEqualToString:@""]) {
-                            NSLog(@"fb login success");
+                            NSLog(wwwww_tag_wwwww_fb_login_success);
                             !successBlock ? : successBlock( fbUserId, fbUserName, facebookTokenStr);
                         }else{
                             !failBlock ? : failBlock(error);
@@ -131,9 +131,9 @@
                 
             }else{
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"fb login error:%@",error);
+                    NSLog(wwwww_tag_wwwww_stanndaughtersion_organizationsion,error);
                     if ([result isCancelled]) {
-                        NSLog(@"fb login isCancelled");
+                        NSLog(wwwww_tag_wwwww_fb_login_isCancelled);
                         !cancelBlock ? : cancelBlock(error);
                     }else{
                         !failBlock ? : failBlock(error);
@@ -170,7 +170,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 if (fbUserId && ![fbUserId isEqualToString:@""]) {
-                    NSLog(@"fb login success");
+                    NSLog(wwwww_tag_wwwww_fb_login_success);
                     !successBlock ? : successBlock( fbUserId, fbUserName, facebookTokenStr);
                     return;
                 }else{
@@ -235,7 +235,7 @@
     if (hashTag) {
         
         if(![hashTag hasPrefix:@"#"]){
-            hashTag = [NSString stringWithFormat:@"#%@", hashTag];
+            hashTag = [NSString stringWithFormat:wwwww_tag_wwwww_provideory_pollicry, hashTag];
         }
 
         xFBSDKShareLinkContent.hashtag = [[FBSDKHashtag alloc] initWithString:hashTag];
@@ -243,7 +243,7 @@
     
     FBSDKShareDialog *shareDialog = [[FBSDKShareDialog alloc] initWithViewController:presentingViewController content:xFBSDKShareLinkContent delegate:self];
     
-    BOOL fbExist = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fbapi://"]]; //判断fb是否安装
+    BOOL fbExist = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:wwwww_tag_wwwww_fbapi___]]; //判断fb是否安装
     if (fbExist) {
         shareDialog.mode = FBSDKShareDialogModeNative;
     }else{
@@ -251,7 +251,7 @@
     }
     
     BOOL ok = [shareDialog show];
-    SDK_LOG(@"FBSDKShareDialogModeNative not ok");
+    SDK_LOG(wwwww_tag_wwwww_FBSDKShareDialogModeNative_not_ok);
   
 //    [FBSDKShareDialog showFromViewController:presentingViewController withContent:xFBSDKShareLinkContent delegate:self];
     
@@ -263,7 +263,7 @@
 /// @param results The results from the sharer.  This may be nil or empty.
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
     
-    SDK_LOG(@"share didCompleteWithResults");
+    SDK_LOG(wwwww_tag_wwwww_share_didCompleteWithResults);
     if (self.successBlock_MMMPRO) {
         self.successBlock_MMMPRO(@"", 1, nil);
     }
@@ -273,7 +273,7 @@
 /// @param error The error.
 ///
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
-    SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
+    SDK_LOG(wwwww_tag_wwwww_scrupar_cinctaster,error);
     if (self.failBlock_MMMPRO) {
         self.failBlock_MMMPRO(wwwww_tag_wwwww_error, 0, nil);
     }

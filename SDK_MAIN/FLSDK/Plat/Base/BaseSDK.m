@@ -103,15 +103,15 @@
         // 一共有四种状态  主线程
         switch (status) {
             case AFNetworkReachabilityStatusNotReachable:
-                SDK_LOG(@"AFNetworkReachability Not Reachable");
+                SDK_LOG(wwwww_tag_wwwww_AFNetworkReachability_Not_Reachable);
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                SDK_LOG(@"AFNetworkReachability Reachable via WWAN");
+                SDK_LOG(wwwww_tag_wwwww_AFNetworkReachability_Reachable_via_WWAN);
             case AFNetworkReachabilityStatusReachableViaWiFi:
-                SDK_LOG(@"AFNetworkReachability Reachable via WiFi");
+                SDK_LOG(wwwww_tag_wwwww_AFNetworkReachability_Reachable_via_WiFi);
             case AFNetworkReachabilityStatusUnknown:
             default:
-                SDK_LOG(@"AFNetworkReachability Unknown");
+                SDK_LOG(wwwww_tag_wwwww_AFNetworkReachability_Unknown);
             {
                 //事件打点
                 [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_APP_OPEN];
@@ -197,10 +197,10 @@
     
     //定制了延时执行的任务，不会阻塞线程，在主线程和子线程中都可以，效率较高（推荐使用）。
     //此方式在可以在参数中选择执行的线程。 是一种非阻塞的执行方式， 没有找到取消执行的方法。
-    SDK_LOG(@"dispatch_after afnReachability start");
+    SDK_LOG(wwwww_tag_wwwww_dispatch_after_afnReachability_start);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        SDK_LOG(@"time to afnReachability start");
+        SDK_LOG(wwwww_tag_wwwww_time_to_afnReachability_start);
         [self afnReachability_MMMethodMMM];
         
      });
@@ -243,8 +243,8 @@
 //监控令牌刷新
 //如需在每次令牌更新时获得通知，请提供符合消息委托协议的委托。以下示例注册了此类委托，并添加了合适的委托方法
 - (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken{   //system_method
-    SDK_LOG(@"didReceiveRegistrationToken fcmToken = %@",fcmToken);
-    NSLog(@"FCM registration token: %@", fcmToken);
+    SDK_LOG(wwwww_tag_wwwww_latafter_liveern,fcmToken);
+    NSLog(wwwww_tag_wwwww_tra_hortative, fcmToken);
     // Notify about received token.
 //    NSDictionary *dataDict = [NSDictionary dictionaryWithObject:fcmToken forKey:wwwww_tag_wwwww_token];
 //    [[NSNotificationCenter defaultCenter] postNotificationName:wwwww_tag_wwwww_FCMToken object:nil userInfo:dataDict];
@@ -267,7 +267,7 @@
       // ...
 
       // Print full message.
-    SDK_LOG(@"willPresentNotification = %@", userInfo);
+    SDK_LOG(wwwww_tag_wwwww_tournious_migrist, userInfo);
 
       // Change this to your preferred presentation option
       completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionAlert);
@@ -281,7 +281,7 @@
     NSString *kGCMMessageIDKey = wwwww_tag_wwwww_gcm_message_id;
     
       if (userInfo[kGCMMessageIDKey]) {
-        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+        NSLog(wwwww_tag_wwwww_ponddrawability_narrcentralette, userInfo[kGCMMessageIDKey]);
       }
 
       // With swizzling disabled you must let Messaging know about the message, for Analytics

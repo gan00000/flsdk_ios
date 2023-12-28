@@ -183,7 +183,7 @@
         url = [NSString stringWithFormat:TERMS_SERVICE_URL,GAME_CODE];
     }
     
-    SDK_LOG(@"termsUrl=%@",url);
+    SDK_LOG(wwwww_tag_wwwww_movieaster_mulctious,url);
     provisionWebView = [[WKWebView alloc] init];
     [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     [provisionWebView.scrollView setBounces:YES];

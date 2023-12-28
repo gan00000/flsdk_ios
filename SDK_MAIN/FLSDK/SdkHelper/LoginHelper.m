@@ -213,7 +213,7 @@
 + (void)naverLoginAndThirdRequest_MMMethodMMM:(id<LoginViewDelegate>)delegate{
     
 #ifdef SDK_KR
-    [[NaverDelegate share] startLoginWithKey_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_key") consumerSecret_MMMethodMMM:GetConfigString(@"sdk_naver_consumer_secret") appName_MMMethodMMM:[SUtil getDisplayName_MMMethodMMM] callback_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
+    [[NaverDelegate share] startLoginWithKey_MMMethodMMM:GetConfigString(wwwww_tag_wwwww_sdk_naver_consumer_key) consumerSecret_MMMethodMMM:GetConfigString(wwwww_tag_wwwww_sdk_naver_consumer_secret) appName_MMMethodMMM:[SUtil getDisplayName_MMMethodMMM] callback_MMMethodMMM:^(NSString * _Nullable accessToken, NSString * _Nullable userID, NSString * _Nullable displayName) {
         
         
         NSDictionary *otherParamsDic = nil;

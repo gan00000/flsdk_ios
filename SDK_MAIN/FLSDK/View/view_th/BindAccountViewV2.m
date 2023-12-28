@@ -298,7 +298,7 @@
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     if (!currentAccountModel) {
 //        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
-        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
+        SDK_LOG(wwwww_tag_wwwww_deal_veterose);
         return;
     }
   

@@ -163,7 +163,7 @@
 - (void)timing_MMMethodMMM:(NSString *)count
 {
     if(mAccountModel){
-        accountLable.text = STR_FORMAT(@"%@(%@)", accountTips, count);
+        accountLable.text = STR_FORMAT(wwwww_tag_wwwww_respondfaction_offeracy, accountTips, count);
     }
     
 }

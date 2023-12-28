@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         self.sessionManager_MMMPRO = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
-        self.sessionManager_MMMPRO.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", @"text/json" ,@"text/javascript", nil];
+        self.sessionManager_MMMPRO.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:wwwww_tag_wwwww_text_plain,wwwww_tag_wwwww_text_html,wwwww_tag_wwwww_application_json, wwwww_tag_wwwww_text_json ,wwwww_tag_wwwww_text_javascript, nil];
     }
     return self;
 }
@@ -44,14 +44,14 @@
             if (successBlock) {
                 successBlock(task, responseObject);
             }
-            NSLog(@"MW_SDK get: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseObject);
+            NSLog(wwwww_tag_wwwww_startfy_seget, task.originalRequest.URL,task.originalRequest.HTTPBody, responseObject);
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
             if (errorBlock) {
                 errorBlock(task, error);
             }
-            NSLog(@"MW_SDK get: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, error);
+            NSLog(wwwww_tag_wwwww_startfy_seget, task.originalRequest.URL,task.originalRequest.HTTPBody, error);
         }];
     } @catch (NSException *exception) {
         
@@ -92,8 +92,8 @@
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
-       // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{@"Content-Type" : @"application/json", @"charset":@"UTF-8"}
-        [self.sessionManager_MMMPRO POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+       // self.sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];//@{wwwww_tag_wwwww_Content_Type : wwwww_tag_wwwww_application_json, wwwww_tag_wwwww_charset:@"UTF-8"}
+        [self.sessionManager_MMMPRO POST:path parameters:params headers:@{wwwww_tag_wwwww_Content_Type : wwwww_tag_wwwww_application_json} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -175,7 +175,7 @@
                        successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     
-    [self fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:imageData fileName_MMMethodMMM:imageName mimeType_MMMethodMMM:@"image/jpeg" progressBlock_MMMethodMMM:progressBlock successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
+    [self fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:imageData fileName_MMMethodMMM:imageName mimeType_MMMethodMMM:wwwww_tag_wwwww_image_jpeg progressBlock_MMMethodMMM:progressBlock successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
     
 }
 

@@ -31,27 +31,27 @@
 
 + (NSString *)getBundleName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleName"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleName];
 }
 
 + (NSString *)getBundleIdentifier_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleIdentifier"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleIdentifier];
 }
 
 + (NSString *)getBundleShortVersionString_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleShortVersionString"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleShortVersionString];
 }
 
 + (NSString *)getBundleVersion_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleVersion"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleVersion];
 }
 
 + (NSString *)getDisplayName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleDisplayName"];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleDisplayName];
 }
 
 #pragma mark - 获取时间戳
@@ -170,7 +170,7 @@
     UIWindow *keyWindow = [self getCurrentWindow_MMMethodMMM];
     // SDK expects a key window at this point, if it is not, make it one
     if (keyWindow !=  nil && !keyWindow.isKeyWindow) {
-        SDK_LOG(@"Unable to obtain a key window, markingas keyWindow");
+        SDK_LOG(wwwww_tag_wwwww_vericollegeety_uran);
         [keyWindow makeKeyWindow];
     }
     
@@ -179,7 +179,7 @@
         topController = topController.presentedViewController;
     }
     if (!topController) {
-        SDK_LOG(@"topController nil,Unable to obtain topController");
+        SDK_LOG(wwwww_tag_wwwww_manthemability_phildecide);
     }
     return topController;
 }
@@ -204,7 +204,7 @@
         }
     }
     if (window == nil) {
-        SDK_LOG(@"Unable to find a valid UIWindow");
+        SDK_LOG(wwwww_tag_wwwww_Unable_to_find_a_valid_UIWindow);
     }
     return window;
 }
@@ -222,7 +222,7 @@
         currentScreenSize = [self rectFromWinSize_Portrait_MMMethodMMM];
     }
     //判断全打印
-//    NSString * systemlog=[NSString stringWithFormat:@" screen_frame:w%f_h%f",
+//    NSString * systemlog=[NSString stringWithFormat:wwwww_tag_wwwww_introkillety_hopeery,
 //                          currentScreenSize.size.width,currentScreenSize.size.height];
 //    Gama_FUNCTION_LOG(systemlog)
     return currentScreenSize;
@@ -284,7 +284,7 @@
 {
     NSDate * nowDate=[NSDate date];
     NSDateFormatter * dateFormatter= [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd_HH:mm"];
+    [dateFormatter setDateFormat:wwwww_tag_wwwww_yyyy_MM_dd_HH_mm];
     NSString *  locationString=[dateFormatter stringFromDate:nowDate];
     return locationString;
 }
@@ -307,7 +307,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
     //设定时间格式,这里可以设置成自己需要的格式
     if([StringUtil isEmpty_MMMethodMMM:dateFormat]){
-        dateFormat = @"yyyy-MM-dd HH:mm:ss SS";
+        dateFormat = wwwww_tag_wwwww_yyyy_MM_dd_HH_mm_ss_SS;
     }
     [dateFormatter setDateFormat:dateFormat];
     NSString *currentDateStr = [dateFormatter stringFromDate: detailDate];
@@ -323,7 +323,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
     //设定时间格式,这里可以设置成自己需要的格式
     if([StringUtil isEmpty_MMMethodMMM:dateFormat]){
-        dateFormat = @"yyyy-MM-dd HH:mm:ss SS";
+        dateFormat = wwwww_tag_wwwww_yyyy_MM_dd_HH_mm_ss_SS;
     }
     [dateFormatter setDateFormat:dateFormat];
     NSString *mDateStr = [dateFormatter stringFromDate:yesterDay];
@@ -338,8 +338,8 @@
 //    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
 //
 //    // 定义起始日期和结束日期
-//    NSString *startDateString = @"2023-12-20";
-//    NSString *endDateString = @"2023-12-27";
+//    NSString *startDateString = wwwww_tag_wwwww_2023_12_20;
+//    NSString *endDateString = wwwww_tag_wwwww_2023_12_27;
 
 //    NSDate *startDate = [dateFormatter dateFromString:startDateString];
 //    NSDate *endDate = [dateFormatter dateFromString:endDateString];
@@ -444,10 +444,10 @@
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
     if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
-        NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
-        NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
+        NSString *countryCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleCountryCodeKey];
+        NSString *languageCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleLanguageCodeKey];
         // zh-Hans   zh-HK   zh-TW
-        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@_%@",languageCode,countryCode] : languageCode;
+        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty,languageCode,countryCode] : languageCode;
     }
     return preferredLang;
 }
@@ -472,27 +472,27 @@
                 infoResult = YES;
             } else {
                 infoResult = NO;
-                externalTip = [NSString stringWithFormat:@" %@配置项缺少或错误，值应为：%@",key,value];
+                externalTip = [NSString stringWithFormat:wwwww_tag_wwwww_card_micrlet,key,value];
             }
         } else if ([value isKindOfClass:[NSDictionary class]]) {
             if ([infoDic[key] isEqualToDictionary:value]) {
                 infoResult = YES;
             } else {
                 infoResult = NO;
-                externalTip = [NSString stringWithFormat:@" %@配置项缺少或错误，值应为：%@",key,value];
+                externalTip = [NSString stringWithFormat:wwwww_tag_wwwww_card_micrlet,key,value];
             }
         }
     }
     
     // 检查CFBundleURLTypes内部的相关配置
-    urlTypes = [infoDic valueForKey:@"CFBundleURLTypes"];
+    urlTypes = [infoDic valueForKey:wwwww_tag_wwwww_CFBundleURLTypes];
     for (NSDictionary *urlType in urlTypes) {
         // 传入CFBundleURLName，则需要进行校验
         if (identifier && ![identifier isEqualToString:@""]) {
-            NSString *cfBundleURLName = urlType[@"CFBundleURLName"];
+            NSString *cfBundleURLName = urlType[wwwww_tag_wwwww_CFBundleURLName];
             if (![identifier isEqualToString:cfBundleURLName]) {
                 identifierResult = NO;
-                identifierTip = [NSString stringWithFormat:@" CFBundleURLName配置项缺少或错误，值应为：%@",identifier];
+                identifierTip = [NSString stringWithFormat:wwwww_tag_wwwww_menoess_becomeitor,identifier];
             } else {
                 identifierResult = YES;
                 identifierTip = @"";
@@ -501,10 +501,10 @@
         
         // 传入CFBundleURLSchemes，则需要进行校验
         if (urlScheme && ![urlScheme isEqualToString:@""]) {
-            NSArray *urlSchemes = [urlType valueForKey:@"CFBundleURLSchemes"];
+            NSArray *urlSchemes = [urlType valueForKey:wwwww_tag_wwwww_CFBundleURLSchemes];
             if (![urlSchemes containsObject:urlScheme]) {
                 urlSchemeResult = NO;
-                urlSchemeTip = [NSString stringWithFormat:@" CFBundleURLSchemes配置项缺少或错误，应包含：%@",urlScheme];
+                urlSchemeTip = [NSString stringWithFormat:wwwww_tag_wwwww_xenation_logy,urlScheme];
             } else {
                 urlSchemeResult = YES;
                 urlSchemeTip = @"";
@@ -520,7 +520,7 @@
         return YES;
     }
     // 配置异常
-    showTips = [NSString stringWithFormat:@"Info.plist文件配置不完整：%@%@%@；\n请同时参考SDK配置文档！",externalTip,identifierTip,urlSchemeTip];
+    showTips = [NSString stringWithFormat:wwwww_tag_wwwww_PMture_leasteer,externalTip,identifierTip,urlSchemeTip];
     dispatch_async(dispatch_get_main_queue(), ^{
         [AlertUtil showAlertWithMessage_MMMethodMMM:showTips];
     });

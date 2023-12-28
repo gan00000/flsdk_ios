@@ -193,17 +193,17 @@
 ////
 ////+ (void)Gama_application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 ////{
-////    NSLog(@"push token:%@",[NSString stringWithFormat:@"%@",deviceToken]);
+////    NSLog(wwwww_tag_wwwww_amphfic_sacrship,[NSString stringWithFormat:@"%@",deviceToken]);
 //////    [GamaAdPort adjust_application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 //////    [[AppsFlyerTracker sharedTracker] registerUninstall:deviceToken];
 //////    if ([NSClassFromString(wwwww_tag_wwwww_AppsFlyerTracker) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_sharedTracker)]) {
 //////        Class AppsFlyerCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_AppsFlyerTracker),NSSelectorFromString(wwwww_tag_wwwww_sharedTracker));
-//////        ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(@"registerUninstall:"),deviceToken);
+//////        ((void(*)(Class,SEL,id))objc_msgSend)(AppsFlyerCls,NSSelectorFromString(wwwww_tag_wwwww_registerUninstall_),deviceToken);
 //////    }
 //////    if (GetConfigBool(GAMA_GAME_IS_INITIALIZE_AD) || GetConfigString(GAMA_GAME_IS_INITIALIZE_AD).length == 0) {
 //////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
 //////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
-//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"setAPNSToken:"),deviceToken);
+//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(wwwww_tag_wwwww_setAPNSToken_),deviceToken);
 //////        }
 //////    }
 ////
@@ -221,12 +221,12 @@
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
 //////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
 //////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
-//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(wwwww_tag_wwwww_appDidReceiveMessage_),userInfo);
 //////        }
 //////    }
 ////    // Print message ID.
 //////    if (userInfo[kGCMMessageIDKey]) {
-//////        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//////        NSLog(wwwww_tag_wwwww_ponddrawability_narrcentralette, userInfo[kGCMMessageIDKey]);
 //////    }
 //////
 //////    // Print full message.
@@ -246,13 +246,13 @@
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
 //////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
 //////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
-//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(wwwww_tag_wwwww_appDidReceiveMessage_),userInfo);
 //////        }
 //////    }
 ////
 ////    // Print message ID.
 //////    if (userInfo[kGCMMessageIDKey]) {
-//////        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//////        NSLog(wwwww_tag_wwwww_ponddrawability_narrcentralette, userInfo[kGCMMessageIDKey]);
 //////    }
 //////    // Print full message.
 //////    NSLog(@"%@", userInfo);
@@ -275,13 +275,13 @@
 //////        ///[[FIRMessaging messaging] appDidReceiveMessage:userInfo];
 //////        if ([NSClassFromString(wwwww_tag_wwwww_FIRMessaging) respondsToSelector:NSSelectorFromString(wwwww_tag_wwwww_messaging)]) {
 //////            Class FirCls = ((Class(*)(Class, SEL))objc_msgSend)(NSClassFromString(wwwww_tag_wwwww_FIRMessaging),NSSelectorFromString(wwwww_tag_wwwww_messaging));
-//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(@"appDidReceiveMessage:"),userInfo);
+//////            ((void(*)(Class, SEL ,id))objc_msgSend)(FirCls,NSSelectorFromString(wwwww_tag_wwwww_appDidReceiveMessage_),userInfo);
 //////        }
 //////    }
 ////
 ////    // Print message ID.
 //////    if (userInfo[kGCMMessageIDKey]) {
-//////        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//////        NSLog(wwwww_tag_wwwww_ponddrawability_narrcentralette, userInfo[kGCMMessageIDKey]);
 //////    }
 //////    // Print full message.
 //////    NSLog(@"%@", userInfo);
@@ -297,7 +297,7 @@
 ////              withCompletionHandler:(void(^)(void))completionHandler {
 //////    NSDictionary *userInfo = response.notification.request.content.userInfo;
 //////    if (userInfo[kGCMMessageIDKey]) {
-//////        NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
+//////        NSLog(wwwww_tag_wwwww_ponddrawability_narrcentralette, userInfo[kGCMMessageIDKey]);
 //////    }
 //////
 //////    // Print full message.

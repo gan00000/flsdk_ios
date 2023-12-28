@@ -33,10 +33,10 @@
         instance.httpEngine_MMMPRO = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine_MMMPRO updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:@"X-User-AppId"];
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:@"X-User-Platform"];
-//            [session.requestSerializer setValue:[NSString stringWithFormat:@"%@|%@|%@", [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:@"X-User-Device"]; //机器名称 | 系统版本 | idfa
-//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:@"X-App-Version"];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:wwwww_tag_wwwww_X_User_AppId];
+//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:wwwww_tag_wwwww_X_User_Platform];
+//            [session.requestSerializer setValue:[NSString stringWithFormat:wwwww_tag_wwwww_donible_vorac, [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:wwwww_tag_wwwww_X_User_Device]; //机器名称 | 系统版本 | idfa
+//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:wwwww_tag_wwwww_X_App_Version];
         }];
     });
     return instance;
@@ -55,7 +55,7 @@
     [[HttpServiceEnginePay sharedInstance].httpEngine_MMMPRO getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
-        SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
+        SDK_LOG(wwwww_tag_wwwww_almot_locoture, task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
 #endif
 //        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
         NSDictionary *responseDict = responseData;
@@ -78,7 +78,7 @@
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
 //        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-        SDK_LOG(@"get: path = %@, error = %@", path, error);
+        SDK_LOG(wwwww_tag_wwwww_exampleery_pubon, path, error);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
@@ -98,16 +98,16 @@
         NSString *aUrl = @"";
         for (NSString *key in params) {
             NSString *value = params[key];
-            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+            aUrl = [NSString stringWithFormat:wwwww_tag_wwwww_languageize_attackitive,aUrl,key,value];
         }
-        SDK_LOG(@"%@?%@",path,aUrl);
+        SDK_LOG(wwwww_tag_wwwww_finditious_threatence,path,aUrl);
     }
-//    SDK_LOG(@"post: path = %@,params = %@", path, params);
+//    SDK_LOG(wwwww_tag_wwwww_iratesque_ambi, path, params);
 //    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
     [[HttpServiceEnginePay sharedInstance].httpEngine_MMMPRO postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
-        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        SDK_LOG(wwwww_tag_wwwww_phorcontainuous_glabrety, task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
 #endif
         
 //        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
@@ -131,7 +131,7 @@
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
 //        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-        SDK_LOG(@"post: path = %@, error = %@,requsetHeader = %@", path, error,task.originalRequest.HTTPBody);
+        SDK_LOG(wwwww_tag_wwwww_findfy_brevability, path, error,task.originalRequest.HTTPBody);
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;

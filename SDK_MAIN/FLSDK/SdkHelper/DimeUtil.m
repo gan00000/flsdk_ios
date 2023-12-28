@@ -76,7 +76,7 @@
         return _viewAdaptRate_MMMPRO;
     }
     
-    NSLog(@"SCREEN_WIDTH:%f,SCREEN_HEIGHT:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
+    NSLog(wwwww_tag_wwwww_also_quass,SCREEN_WIDTH,SCREEN_HEIGHT);
 
     if (IS_PORTRAIT) {
         

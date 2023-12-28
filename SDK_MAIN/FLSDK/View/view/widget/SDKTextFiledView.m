@@ -90,7 +90,7 @@
             
             iconName = mw_passowrd_icon;
             lableName = wwwww_tag_wwwww_almostive_penotic;
-            placeholderText = @"請輸入6-20字元";
+            placeholderText = wwwww_tag_wwwww_genesory_clinist;
             showEye = YES;
             break;
             
@@ -474,7 +474,7 @@
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
-    SDK_LOG(@"textChanged=>%@",sender.text);
+    SDK_LOG(wwwww_tag_wwwww_fluxization_imagelet,sender.text);
     
     if (sender.text && [sender.text containsString:@" "]) {
         NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格

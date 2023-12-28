@@ -30,13 +30,13 @@
 //        NSString *idToken = googleUser.authentication.idToken;
 //        NSString *accessToken = googleUser.authentication.accessToken;
 //
-//        SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
+//        SDK_LOG( wwwww_tag_wwwww_manthade_ableenne, userID,name,email,idToken,accessToken);
 //        if (successCallback) {
 //            successCallback(userID,name,email,idToken,accessToken,kClientID);
 //        }
 //    } else {
 //        // To authenticate, use Google Sign-In button.
-//        SDK_LOG(@"Status: Not authenticated");
+//        SDK_LOG(wwwww_tag_wwwww_Status__Not_authenticated);
 //        if (failCallback) {
 //            failCallback(@"");
 //        }
@@ -44,7 +44,7 @@
 //}
 
 + (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    SDK_LOG(@"GIDDelegate application openURL options");
+    SDK_LOG(wwwww_tag_wwwww_GIDDelegate_application_openURL_options);
     return [GIDSignIn.sharedInstance handleURL:url];
 }
 
@@ -60,25 +60,25 @@ presentingViewController:(UIViewController *)presentingViewController
     }
     
     if ([StringUtil isEmpty_MMMethodMMM:kClientID]) {
-        SDK_LOG(@"kClientID is empty");
+        SDK_LOG(wwwww_tag_wwwww_kClientID_is_empty);
         if (failCallback) {
             failCallback(@"");
         }
         return;
     }
-    SDK_LOG(@"google kClientID = %@",kClientID);
+    SDK_LOG(wwwww_tag_wwwww_althoughatic_phono,kClientID);
     
     [GIDSignIn.sharedInstance signInWithPresentingViewController:presentingViewController completion:^(GIDSignInResult * _Nullable signInResult, NSError * _Nullable error) {
     
         if (error) {
-            SDK_LOG(@"gid signInWithPresentingViewController error: %@", error);
+            SDK_LOG(wwwww_tag_wwwww_agent_basivisitite, error);
             if (failCallback) {
                 failCallback(@"");
             }
             return;
         }
         if (signInResult == nil) {
-            SDK_LOG(@"signInResult == nil");
+            SDK_LOG(wwwww_tag_wwwww_icosity_pungar);
             if (failCallback) {
                 failCallback(@"");
             }
@@ -100,7 +100,7 @@ presentingViewController:(UIViewController *)presentingViewController
         
 //        NSURL *profilePic = [user.profile imageURLWithDimension:320];
         
-        SDK_LOG( @"Status: Authenticated:userID=%@,name=%@,email=%@,,idToken=%@,,accessToken=%@", userID,name,email,idToken,accessToken);
+        SDK_LOG( wwwww_tag_wwwww_manthade_ableenne, userID,name,email,idToken,accessToken);
         if (successCallback) {
             successCallback(userID,name,email,idToken,accessToken,kClientID);
         }
@@ -117,9 +117,9 @@ presentingViewController:(UIViewController *)presentingViewController
 //    [GIDSignIn.sharedInstance disconnectWithCallback:^(NSError * _Nullable error) {
 //        if (error) {
 //
-//            SDK_LOG(@"Status: Failed to disconnect: %@",error);
+//            SDK_LOG(wwwww_tag_wwwww_gamb_sign,error);
 //        } else {
-//            SDK_LOG(@"Status: Disconnected");
+//            SDK_LOG(wwwww_tag_wwwww_Status__Disconnected);
 //        }
 //
 //    }];

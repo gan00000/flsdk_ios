@@ -1,6 +1,6 @@
 //
 
-#define SDK_KEY_CHAIN_KEY @"DY_UID"
+#define SDK_KEY_CHAIN_KEY wwwww_tag_wwwww_DY_UID
 
 #import <Foundation/Foundation.h>
 

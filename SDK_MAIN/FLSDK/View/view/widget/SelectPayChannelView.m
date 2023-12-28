@@ -119,7 +119,7 @@
     
     UIView *tipsLabelContentView = [[UIView alloc] init];
     tipsLabelContentView.layer.cornerRadius = 4;
-    tipsLabelContentView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#E2E2E2"];
+    tipsLabelContentView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_E2E2E2];
     [myContentView addSubview:tipsLabelContentView];
     [tipsLabelContentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(myContentView).mas_offset(VH(18));
@@ -155,8 +155,8 @@
     LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse_MMMPRO;
     AccountModel *accountModel = sLoginResponse.data;
     
-    NSString *mUrlString = [NSString stringWithFormat:@"%@image/sdk/%@/rebate_%@.png?t=%@", [SDKRES getCdnUrl_MMMethodMMM], [GAME_CODE stringByReplacingOccurrencesOfString:@"ios" withString:@""], @"ios", accountModel.timestamp];
-    SDK_LOG(@"mUrlString = %@", mUrlString);
+    NSString *mUrlString = [NSString stringWithFormat:wwwww_tag_wwwww_officeraneity_accountern, [SDKRES getCdnUrl_MMMethodMMM], [GAME_CODE stringByReplacingOccurrencesOfString:wwwww_tag_wwwww_ios withString:@""], wwwww_tag_wwwww_ios, accountModel.timestamp];
+    SDK_LOG(wwwww_tag_wwwww_kin_telaceous, mUrlString);
     NSURL *imageURL = [NSURL URLWithString:mUrlString];
     [handselIV sd_setImageWithURL:imageURL];
     
@@ -164,25 +164,25 @@
 
 - (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
-    SDK_LOG(@"sender.tag=%d", sender.tag);
+    SDK_LOG(wwwww_tag_wwwww_chantmemberly_ambiate, sender.tag);
     switch (sender.tag) {
        
         case TAG_PAY_CHANNEL_OTHER:
             if(self.mCallBack_MMMPRO){
-                self.mCallBack_MMMPRO(@"TAG_PAY_CHANNEL_OTHER", TAG_PAY_CHANNEL_OTHER, nil);
+                self.mCallBack_MMMPRO(wwwww_tag_wwwww_TAG_PAY_CHANNEL_OTHER, TAG_PAY_CHANNEL_OTHER, nil);
             }
             break;
             
         case TAG_PAY_CHANNEL_APPLE:
             if(self.mCallBack_MMMPRO){
-                self.mCallBack_MMMPRO(@"TAG_PAY_CHANNEL_APPLE", TAG_PAY_CHANNEL_APPLE, nil);
+                self.mCallBack_MMMPRO(wwwww_tag_wwwww_TAG_PAY_CHANNEL_APPLE, TAG_PAY_CHANNEL_APPLE, nil);
             }
             break;
             
         case TAG_CLOSE:
             
             if(self.mCallBack_MMMPRO){
-                self.mCallBack_MMMPRO(@"TAG_CLOSE", TAG_CLOSE, nil);
+                self.mCallBack_MMMPRO(wwwww_tag_wwwww_TAG_CLOSE, TAG_CLOSE, nil);
             }
             
             break;
