@@ -21,7 +21,7 @@
 {
     NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:
                            kSecClassGenericPassword, kSecClass,
-                           @"com.mw.bundleSeedID", kSecAttrAccount,
+                           @"com.dy.bundleSeedID", kSecAttrAccount,
                            @"", kSecAttrService,
                            (id)kCFBooleanTrue, kSecReturnAttributes,
                            nil];
@@ -52,7 +52,7 @@
     //获取itemWrapper
     SdkKeychainItemWrapper *wrapper =
     [[SdkKeychainItemWrapper alloc] initWithIdentifier_MMMethodMMM:SDK_KEY_CHAIN_KEY
-                                           accessGroup_MMMethodMMM:[NSString stringWithFormat:@"%@.com.mwKeyChainGroup", [SdkCfUUID bundleSeedID_MMMethodMMM]]];
+                                           accessGroup_MMMethodMMM:[NSString stringWithFormat:@"%@.com.dyKeyChainGroup", [SdkCfUUID bundleSeedID_MMMethodMMM]]];
     //通过wrapper获取纪录再keychain中的cfUUID
     savedgetGamaCfUUID = [wrapper objectForKey:(id)kSecValueData];
     //如果获取值不是空
