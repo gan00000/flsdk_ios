@@ -127,7 +127,7 @@
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
     });
-    
+    _shareSP.dyMMMBaseEncryptKey = @"ldy-sdk-1228";
     return _shareSP;
 }
 
