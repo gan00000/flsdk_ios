@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack;
 
++ (NSDictionary *)juriivity13086Passerdom13087;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

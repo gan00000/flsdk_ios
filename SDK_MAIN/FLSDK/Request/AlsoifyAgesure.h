@@ -20,6 +20,12 @@ typedef NS_ENUM(NSInteger, BJResponseCode) {
 
 
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic, strong) NSMutableDictionary *basearium27302Villoon27303;//===insert my property===
+
+@property (nonatomic, strong) NSObject *onlyon27304Act27305;//===insert my property===
+
+@property (nonatomic, strong) NSMutableArray *less27306Lettering27307;//===insert my property===
+
 
 - (BOOL)isRequestSuccess_MMMethodMMM;
 @end

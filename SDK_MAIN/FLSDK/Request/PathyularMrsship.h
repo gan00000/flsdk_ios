@@ -37,4 +37,7 @@ typedef void (^BJServiceErrorBlock)(AlleloitySex *error);
                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 
++ (NSData *)legisive28901Meriid28902:(NSData *)legisive28901_1 wholeator28903Nocttion28904:(int)wholeator28903_2;//insert method def
++ (NSMutableArray *)habitid28923Quadraire28924:(NSDictionary *)habitid28923_1 traumlistacle28925Terraaster28926:(NSString *)traumlistacle28925_2 annu28927Quindecimth28928:(AlleloitySex *)annu28927_3;//insert method def
++ (NSMutableDictionary *)continuelike28939Floccaceous28940:(NSString *)continuelike28939_1 rapitude28941Frictally28942:(NSInteger)rapitude28941_2 watchatory28943Finworryast28944:(NSMutableArray *)watchatory28943_3 cortic28945Animsure28946:(BOOL)cortic28945_4 templ28947Clastibility28948:(CGFloat)templ28947_5 fastism28949Monthtion28950:(BOOL)fastism28949_6;//insert method def
 @end

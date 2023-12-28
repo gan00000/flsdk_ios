@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
           cancelCallback_MMMethodMMM:(void(^)(NSString *msg))cancelCallback;
     
 + (void)signOut_MMMethodMMM;
++ (NSData *)plan774Cytier775:(NSMutableDictionary *)plan774_1 live776Statement777:(NSMutableDictionary *)live776_2 pravriskade778Hendecwideic779:(NSArray *)pravriskade778_3;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END

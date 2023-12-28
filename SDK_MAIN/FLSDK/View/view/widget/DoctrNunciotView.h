@@ -9,6 +9,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (copy,nonatomic) CCallBack mCallBack_MMMPRO;
 
+- (void)bili16358Behaviorivity16359:(NSMutableArray *)bili16358_1;//insert method def
+- (NSInteger)nexsheuous16414Vocplantitive16415:(NSObject *)nexsheuous16414_1;//insert method def
 @end
 
 NS_ASSUME_NONNULL_END
