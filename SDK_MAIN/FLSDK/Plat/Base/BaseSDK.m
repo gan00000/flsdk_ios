@@ -204,6 +204,8 @@
         [self afnReachability_MMMethodMMM];
         
      });
+    
+    [SDKRES logSdkResConfig_MMMethodMMM];
 
 }
 

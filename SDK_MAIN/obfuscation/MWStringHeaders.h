@@ -9,6 +9,7 @@
 #ifndef Headers_h
 #define Headers_h
 
+
 #define wwwww_tag_wwwww_serverTimestamp        @"serverTimestamp"  //@"serverTimestamp"
 #define wwwww_tag_wwwww_install        @"install"  //@"install"
 #define wwwww_tag_wwwww_userId        @"userId"  //@"userId"
@@ -555,7 +556,6 @@
 #define wwwww_tag_wwwww_gression_decision        @"addLocalNotificationWithTitle 成功添加推送"  //@"addLocalNotificationWithTitle 成功添加推送"
 #define wwwww_tag_wwwww_showActView        @"showActView"  //@"showActView"
 #define wwwww_tag_wwwww_This_feature_is_not_turned_on        @"This feature is not turned on"  //@"This feature is not turned on"
-#define wwwww_tag_wwwww_1_0_8        @"1.0.8"  //@"1.0.8"
 #define wwwww_tag_wwwww_AFNetworkReachability_Not_Reachable        @"AFNetworkReachability Not Reachable"  //@"AFNetworkReachability Not Reachable"
 #define wwwww_tag_wwwww_AFNetworkReachability_Reachable_via_WWAN        @"AFNetworkReachability Reachable via WWAN"  //@"AFNetworkReachability Reachable via WWAN"
 #define wwwww_tag_wwwww_AFNetworkReachability_Reachable_via_WiFi        @"AFNetworkReachability Reachable via WiFi"  //@"AFNetworkReachability Reachable via WiFi"

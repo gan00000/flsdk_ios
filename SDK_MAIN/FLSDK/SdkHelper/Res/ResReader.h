@@ -66,4 +66,5 @@
 
 - (NSBundle *)getMySdkBundle_MMMethodMMM;
 
+- (void)logSdkResConfig_MMMethodMMM;
 @end

@@ -135,7 +135,7 @@
 {
     if (self = [super init]) {
         
-        SDK_LOG(wwwww_tag_wwwww_leonenne_pressure, FL_SDK_VERSION);
+        SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
     }
     
     return self;
@@ -989,6 +989,9 @@
 //    
 //}
 
-
+-(NSString *)dyDecodeStr:(NSString *)text
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:text];
+}
 
 @end

@@ -5,7 +5,9 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define FL_SDK_VERSION      wwwww_tag_wwwww_1_0_8
+#define Decrypt_AllStringContent(text)  [[MWSDK share] dyDecodeStr:text]
+
+#define FL_SDK_VERSION      @"1.0.8"
 
 // 追踪事件名称
 #define AD_EVENT_APP_OPEN  wwwww_tag_wwwww_APP_OPEN
@@ -215,5 +217,6 @@ completionHandler:(SDKPayBlock) handler;
 /// @param notifyId  通知标识 id，用于更新、删除
 //- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
+-(NSString *)dyDecodeStr:(NSString *)text;
 @end
 

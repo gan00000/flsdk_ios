@@ -31,27 +31,27 @@
 
 + (NSString *)getBundleName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleName];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleName"];
 }
 
 + (NSString *)getBundleIdentifier_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleIdentifier];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleIdentifier"];
 }
 
 + (NSString *)getBundleShortVersionString_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleShortVersionString];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleShortVersionString"];
 }
 
 + (NSString *)getBundleVersion_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleVersion];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleVersion"];
 }
 
 + (NSString *)getDisplayName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleDisplayName];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleDisplayName"];
 }
 
 #pragma mark - 获取时间戳
@@ -444,10 +444,10 @@
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
     if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
-        NSString *countryCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleCountryCodeKey];
-        NSString *languageCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleLanguageCodeKey];
+        NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
+        NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
         // zh-Hans   zh-HK   zh-TW
-        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty,languageCode,countryCode] : languageCode;
+        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@_%@",languageCode,countryCode] : languageCode;
     }
     return preferredLang;
 }

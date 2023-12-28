@@ -15,7 +15,7 @@
 //#define SDK_LOG_FILE_FUNCTION(format, ...) (NSLog)((wwwww_tag_wwwww_suf_wholehood), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 //#endif
 
-#define SDK_LOG(format, ...) (NSLog)((wwwww_tag_wwwww_hoursive_scindile), [NSString stringWithFormat:(format), ##__VA_ARGS__])
+#define SDK_LOG(format, ...) (NSLog)((@"DYSDK:%@"), [NSString stringWithFormat:(format), ##__VA_ARGS__])
 
 #define kWeakSelf __weak typeof(self) weakSelf = self;
 
@@ -28,8 +28,8 @@
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
-#define STRING_COMBIN(note,content)   ([NSString stringWithFormat:wwwww_tag_wwwww_bat_bacair,note,content])
-#define STRING_CLASS_COMBIN(content)  ([NSString stringWithFormat:wwwww_tag_wwwww_last_aesthetature,object_getClassName(self),content])
+#define STRING_COMBIN(note,content)   ([NSString stringWithFormat:@"%@%@",note,content])
+#define STRING_CLASS_COMBIN(content)  ([NSString stringWithFormat:@"-%s-:%@",object_getClassName(self),content])
 #define STR_FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
 
 

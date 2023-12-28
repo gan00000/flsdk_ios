@@ -32,7 +32,7 @@ static dispatch_once_t onceToken;
 
 //+ (void)releaseReader
 //{
-//    SDK_LOG(wwwww_tag_wwwww_releaseReader);
+//    SDK_LOG(@"releaseReader");
 //    onceToken = 0;
 //    [coreReader release];
 //    coreReader = nil;
@@ -43,11 +43,8 @@ static dispatch_once_t onceToken;
     self=[super init];
     if (self)
     {
-        SDK_LOG(wwwww_tag_wwwww_reader_init);
-//        self.areaCodeDic = [NSMutableDictionary dictionary];
-        
-        [self setBundleInfo_MMMethodMMM];
-        [self logSdkResConfig_MMMethodMMM];
+//        [self setBundleInfo_MMMethodMMM];
+//        [self logSdkResConfig_MMMethodMMM];
     }
     return self;
 }
@@ -570,16 +567,16 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 解密所有字符串 内容
 - (NSString *)decryptAllStringContent_MMMethodMMM:(NSString *)textEncrypContent {
-    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], wwwww_tag_wwwww_KEY);
+    NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"KEY");
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-//    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
+//    SDK_LOG(@"decryptContent eKey=%@,eIV=%@",eKey,eIV);
     // 去掉首尾的空白字符
     textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     // 去除掉控制字符
 //    textEncrypContent = [textEncrypContent stringByTrimmingCharactersInSet:[NSCharacterSet controlCharacterSet]];
     
     NSString *textContent = [SecurityUtil getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    SDK_LOG(wwwww_tag_wwwww_cordavailableacle_sequty,textEncrypContent,textContent);
+    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
     return textContent;
 }
 
