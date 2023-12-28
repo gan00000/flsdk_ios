@@ -9,7 +9,7 @@
 #ifndef preHeader_h
 #define preHeader_h
 
-#define SDK_FOR_APP      1
+//#define SDK_FOR_APP      1
 
 //#define SDK_V2      1
 //#define SDK_V3      1
