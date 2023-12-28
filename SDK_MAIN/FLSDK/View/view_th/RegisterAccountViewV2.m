@@ -1,10 +1,4 @@
-//
-//  RegisterAccountView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/12.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "RegisterAccountViewV2.h"
 #import "SdkHeader.h"
@@ -24,19 +18,17 @@
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *passwordAgainSDKTextFiledView;
     SDKTextFiledView *vfCodeFiledView;
-    UIButton *regAccountBtn; //確定按鈕
+    UIButton *regAccountBtn; 
     LoginTitleView   *mLoginTitleView;
     int phoneCountdown;
     NSTimer *downTimer;
     
     UIButton *getVfCodeBtn;
     
-//    PhoneView *mPhoneView;
     
 }
 
 
-//- (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType
 - (instancetype)initView_MMMethodMMM
 {
     self = [self initViewWithBindType_MMMethodMMM:0];
@@ -45,40 +37,24 @@
     }
     return self;
 }
-//- (instancetype)initView_MMMethodMMM
 - (instancetype)initViewWithBindType_MMMethodMMM:(NSInteger) bindType
 {
     self = [super init];
     if (self) {
         
-//        UIColor *color = [UIColor colorWithHexString_MMMethodMMM:ContentViewBgColor];
-//        self.backgroundColor = color;// 底图透明，控件不透明
-//        self.layer.cornerRadius = 10; //设置圆角
-        //        self.layer.backgroundColor = [UIColor blackColor].CGColor;
-        //        self.layer.borderWidth = 2;
-//        self.layer.masksToBounds = YES; //不设置这里会不生成圆角，原因查找中
         
-        self.bindType_MMMPRO = bindType;//綁定賬號
-        //title
-//        mLoginTitleView = [[LoginTitleView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_nattion_pecc];
-//        mLoginTitleView.delegate = self.delegate;
-//
-//
-//        [self addSubview:mLoginTitleView];
-//        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
-//            make.centerX.mas_equalTo(self);
-//            make.width.mas_equalTo(self).mas_offset(-VW(55));;
-//            make.height.mas_equalTo(VH(56));
-//        }];
+        
+        
+        self.bindType_MMMPRO = bindType;
+        
        
-        //账号
+        
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-           // make.centerX.mas_equalTo(self);
+           
             make.top.equalTo(self);
             make.leading.mas_equalTo(self).mas_offset(VW(34));
             make.trailing.mas_equalTo(self).mas_offset(-VW(34));
@@ -86,7 +62,7 @@
         }];
         
         
-        //密码
+        
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         [self addSubview:passwordSDKTextFiledView];
         
@@ -114,7 +90,7 @@
         }];
         [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
-        //驗證碼输入框
+        
         vfCodeFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
         [self addSubview:vfCodeFiledView];
@@ -123,7 +99,6 @@
             make.bottom.equalTo(getVfCodeBtn);
             
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-//            make.width.mas_equalTo(accountSDKTextFiledView.mas_width).multipliedBy(0.65);
             make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
         }];
         
@@ -133,8 +108,7 @@
         tipsUILabel.font = [UIFont systemFontOfSize:FS(10)];
         tipsUILabel.text = wwwww_tag_wwwww_text_reg_tips.localx;
         tipsUILabel.textAlignment = NSTextAlignmentLeft;
-//        tipsUILabel.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
-        tipsUILabel.numberOfLines = 0; //0为多行
+        tipsUILabel.numberOfLines = 0; 
         tipsUILabel.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0];
     
         [self addSubview:tipsUILabel];
@@ -171,15 +145,14 @@
     return self;
 }
 
-//倒计时
 -(void)downTime_MMMethodMMM{
     
     phoneCountdown = 60;
     getVfCodeBtn.userInteractionEnabled = NO;
     [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
-    //getVfCodeBtn.backgroundColor  = RGB(211, 211, 211);
-    //getVfCodeBtn.layer.masksToBounds = YES;
-    //getVfCodeBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
+    
+    
     if (downTimer) {
         [downTimer invalidate];
         downTimer = nil;
@@ -244,11 +217,7 @@
             SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
             NSString *accountName = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
             NSString *pwd = [passwordSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
-//            NSString *areaCode = [mPhoneView getPhoneAreaCode_MMMethodMMM];
-//            NSString *phoneNum = [mPhoneView getPhoneNumber_MMMethodMMM];
-//            NSString *vfCode = vfCodeFiledView.inputUITextField.text;
             
-//            NSString *newPassword = passwordAgainSDKTextFiledView.inputUITextField.text;
             
             if (![SdkUtil validUserName_MMMethodMMM:accountName]) {
                 

@@ -1,10 +1,4 @@
-//
-//  NSString+Util.m
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/18.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
 
 #import "NSString+Common.h"
 #import "NSString+URLEncoding.h"
@@ -96,12 +90,6 @@
 
 - (NSString *)urlEncodeString_MMMethodMMM
 {
-//    NSString *result = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
-//                                                                           (CFStringRef)self,
-//                                                                           NULL,
-//                                                                           (CFStringRef)@";/?:@&=$+{}<>,",
-//                                                                           kCFStringEncodingUTF8);
-//    return result;
     
     return [self urlEncode_MMMethodMMM];
 }

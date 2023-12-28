@@ -4,8 +4,8 @@
 #import "SdkHeader.h"
 #import "netdb.h"
 #import <CommonCrypto/CommonCrypto.h>
-#import <AdSupport/AdSupport.h>//idfa用的类库
-#import "SdkCfUUID.h"//获取keychain中uuid用的自己的类
+#import <AdSupport/AdSupport.h>
+#import "SdkCfUUID.h"
 #import "NSString+URLEncoding.h"
 
 #import <sys/socket.h>
@@ -18,7 +18,6 @@
 #pragma mark - 获取GamaCfUUID
 + (NSString *)getGamaUUID_MMMethodMMM
 {
-//    ([[GamaFunction getSystemVersion_MMMethodMMM] intValue]) >= 7 ? [GamaFunction getGamaUUID_MMMethodMMM] : [GamaFunction getMacaddress_MMMethodMMM];
     NSString * gamaUUid = [[SdkCfUUID getCustomCfUUID_MMMethodMMM] lowercaseString];
     return gamaUUid;
 }
@@ -31,27 +30,27 @@
 
 + (NSString *)getBundleName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleName];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleName"];
 }
 
 + (NSString *)getBundleIdentifier_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleIdentifier];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleIdentifier"];
 }
 
 + (NSString *)getBundleShortVersionString_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleShortVersionString];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleShortVersionString"];
 }
 
 + (NSString *)getBundleVersion_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleVersion];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleVersion"];
 }
 
 + (NSString *)getDisplayName_MMMethodMMM
 {
-    return [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_CFBundleDisplayName];
+    return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleDisplayName"];
 }
 
 #pragma mark - 获取时间戳
@@ -168,7 +167,7 @@
 {
     
     UIWindow *keyWindow = [self getCurrentWindow_MMMethodMMM];
-    // SDK expects a key window at this point, if it is not, make it one
+    
     if (keyWindow !=  nil && !keyWindow.isKeyWindow) {
         SDK_LOG(wwwww_tag_wwwww_vericollegeety_uran);
         [keyWindow makeKeyWindow];
@@ -184,7 +183,7 @@
     return topController;
 }
 
-/* *****如果keyWindow获取不到；windows获取不到；最后去delegate window获取****/
+
 + (UIWindow *)getCurrentWindow_MMMethodMMM
 {
     UIWindow* window = nil;
@@ -213,7 +212,7 @@
 +(CGRect)getCurrentScreenFrame_MMMethodMMM
 {
     CGRect currentScreenSize;
-    if (!IS_PORTRAIT)//如果是横屏幕的游戏
+    if (!IS_PORTRAIT)
     {
         currentScreenSize = [self rectFromWinSize_Landscape_MMMethodMMM];
     }
@@ -221,10 +220,7 @@
     {
         currentScreenSize = [self rectFromWinSize_Portrait_MMMethodMMM];
     }
-    //判断全打印
-//    NSString * systemlog=[NSString stringWithFormat:wwwww_tag_wwwww_introkillety_hopeery,
-//                          currentScreenSize.size.width,currentScreenSize.size.height];
-//    Gama_FUNCTION_LOG(systemlog)
+    
     return currentScreenSize;
 }
 
@@ -300,12 +296,11 @@
     return  nsDateString;
 }
 
-// 时间戳转时间,时间戳为13位是精确到毫秒的，10位精确到秒
 +(NSString *)getDateStringWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat{
-    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+    NSTimeInterval time=[str doubleValue]/1000;
     NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
-    //设定时间格式,这里可以设置成自己需要的格式
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
+    
     if([StringUtil isEmpty_MMMethodMMM:dateFormat]){
         dateFormat = wwwww_tag_wwwww_yyyy_MM_dd_HH_mm_ss_SS;
     }
@@ -313,15 +308,14 @@
     NSString *currentDateStr = [dateFormatter stringFromDate: detailDate];
     return currentDateStr;
 }
-//获取给定时间的前一天时间
 + (NSString *)getYesterdayDateWithTimeStr_MMMethodMMM:(NSString *)str dateFormat_MMMethodMMM:(NSString *)dateFormat{
-    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+    NSTimeInterval time=[str doubleValue]/1000;
     NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
     
-    NSDate *yesterDay = [NSDate dateWithTimeInterval:-24*60*60 sinceDate:detailDate];//前一天
+    NSDate *yesterDay = [NSDate dateWithTimeInterval:-24*60*60 sinceDate:detailDate];
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
-    //设定时间格式,这里可以设置成自己需要的格式
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
+    
     if([StringUtil isEmpty_MMMethodMMM:dateFormat]){
         dateFormat = wwwww_tag_wwwww_yyyy_MM_dd_HH_mm_ss_SS;
     }
@@ -333,28 +327,20 @@
 +(NSInteger)daysBetween_MMMethodMMM:(NSString *)startTimestamp endDate_MMMethodMMM:(NSString *)endTimestamp
 {
     
-    // 日期格式化
-//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-//
-//    // 定义起始日期和结束日期
-//    NSString *startDateString = wwwww_tag_wwwww_2023_12_20;
-//    NSString *endDateString = wwwww_tag_wwwww_2023_12_27;
+    
 
-//    NSDate *startDate = [dateFormatter dateFromString:startDateString];
-//    NSDate *endDate = [dateFormatter dateFromString:endDateString];
 
     NSTimeInterval start_time = [startTimestamp doubleValue]/1000;
     NSTimeInterval end_time = [endTimestamp doubleValue]/1000;
 
-    // 将时间戳转换为NSDate对象
+    
     NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:start_time];
     NSDate *endDate =   [NSDate dateWithTimeIntervalSince1970:end_time];
 
-    // 创建日历
+    
     NSCalendar *calendar = [NSCalendar currentCalendar];
 
-    // 获取起始日期和结束日期之间的天数差
+    
     NSDateComponents *components = [calendar components:NSCalendarUnitDay
                                                fromDate:startDate
                                                  toDate:endDate
@@ -440,32 +426,31 @@
 #pragma mark - 获取当前系统语言（与服务器的语言并不一样，请注意使用
 + (NSString*)getPreferredLanguage_MMMethodMMM
 {
-    // 获取系统语言
+    
     NSString *preferredLang = [[NSLocale preferredLanguages] firstObject];
     if ([SUtil getSystemVersion_MMMethodMMM].intValue >= 9.0) {
         NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:preferredLang];
-        NSString *countryCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleCountryCodeKey];
-        NSString *languageCode = [languageDic objectForKey:wwwww_tag_wwwww_kCFLocaleLanguageCodeKey];
-        // zh-Hans   zh-HK   zh-TW
-        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty,languageCode,countryCode] : languageCode;
+        NSString *countryCode = [languageDic objectForKey:@"kCFLocaleCountryCodeKey"];
+        NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
+        
+        preferredLang = [languageCode isEqualToString:@"zh"] ? [NSString stringWithFormat:@"%@_%@",languageCode,countryCode] : languageCode;
     }
     return preferredLang;
 }
 
 
-// Value暂添加NSString、NSDictionary两种类型的支持
 + (BOOL)checkValue_MMMethodMMM:(id)value key_MMMethodMMM:(NSString *)key andURLScheme_MMMethodMMM:(NSString *)urlScheme andURLIdentifier_MMMethodMMM:(NSString *)identifier
 {
     static NSDictionary *infoDic = nil;
     static NSArray *urlTypes = nil;
-    // 配置检测结果
+    
     BOOL infoResult = YES, urlSchemeResult = YES, identifierResult = YES;
-    // 配置异常时的提示
+    
     NSString *showTips = nil, *externalTip = @"", *identifierTip = @"", *urlSchemeTip = @"";
-    // 获得Info.plist文件对应字典对象
+    
     infoDic = [[NSBundle mainBundle] infoDictionary];
     
-    // 检查Info.plist最外层自定义配置
+    
     if (value && key) {
         if ([value isKindOfClass:[NSString class]]) {
             if ([infoDic[key] isEqualToString:value]) {
@@ -484,10 +469,10 @@
         }
     }
     
-    // 检查CFBundleURLTypes内部的相关配置
+    
     urlTypes = [infoDic valueForKey:wwwww_tag_wwwww_CFBundleURLTypes];
     for (NSDictionary *urlType in urlTypes) {
-        // 传入CFBundleURLName，则需要进行校验
+        
         if (identifier && ![identifier isEqualToString:@""]) {
             NSString *cfBundleURLName = urlType[wwwww_tag_wwwww_CFBundleURLName];
             if (![identifier isEqualToString:cfBundleURLName]) {
@@ -499,7 +484,7 @@
             }
         }
         
-        // 传入CFBundleURLSchemes，则需要进行校验
+        
         if (urlScheme && ![urlScheme isEqualToString:@""]) {
             NSArray *urlSchemes = [urlType valueForKey:wwwww_tag_wwwww_CFBundleURLSchemes];
             if (![urlSchemes containsObject:urlScheme]) {
@@ -515,11 +500,11 @@
             break;
         }
     }
-    // 配置正常
+    
     if (infoResult && urlSchemeResult && identifierResult) {
         return YES;
     }
-    // 配置异常
+    
     showTips = [NSString stringWithFormat:wwwww_tag_wwwww_PMture_leasteer,externalTip,identifierTip,urlSchemeTip];
     dispatch_async(dispatch_get_main_queue(), ^{
         [AlertUtil showAlertWithMessage_MMMethodMMM:showTips];
@@ -581,14 +566,5 @@
     return iPhoneXSeries;
 }
 
-//+(BOOL)deviceIsPortrait
-//{
-//    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-//    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
-//        return YES;
-//    }else {
-//         return NO;
-//    }
-//}
 
 @end

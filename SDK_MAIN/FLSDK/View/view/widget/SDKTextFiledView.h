@@ -1,10 +1,4 @@
-//
-//  SDKTextFiledView.h
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "SDKBaseView.h"
 #import "SdkHeader.h"

@@ -1,10 +1,4 @@
-//
-//  HttpServiceEngineAd.m
-//  FLSDK
-//
-//  Created by ganyuanrong on 2020/10/22.
-//  Copyright © 2020 Gama. All rights reserved.
-//
+
 
 #import "HttpServiceEngineAd.h"
 #import "BJServiceConfigurator.h"
@@ -28,14 +22,10 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[HttpServiceEngineAd alloc] init];
-        NSString *servicePath = @"";//[[BJServiceConfigurator sharedInstance] serverBaseUrl];
+        NSString *servicePath = @"";
         instance.httpEngine_MMMPRO = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:servicePath];
         [instance.httpEngine_MMMPRO updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_89bc52ca5b forHTTPHeaderField:wwwww_tag_wwwww_X_User_AppId];
-//            [session.requestSerializer setValue:wwwww_tag_wwwww_1 forHTTPHeaderField:wwwww_tag_wwwww_X_User_Platform];
-//            [session.requestSerializer setValue:[NSString stringWithFormat:wwwww_tag_wwwww_donible_vorac, [BJUtility modelName], [BJUtility systemVersion], [BJUtility idfa]] forHTTPHeaderField:wwwww_tag_wwwww_X_User_Device]; //机器名称 | 系统版本 | idfa
-//            [session.requestSerializer setValue:[BJUtility appVersion] forHTTPHeaderField:wwwww_tag_wwwww_X_App_Version];
         }];
     });
     return instance;
@@ -51,17 +41,17 @@
         [allParams addEntriesFromDictionary:params];
     }
     SDK_LOG(wwwww_tag_wwwww_iratesque_ambi, path, params);
-    //[GamaUtils gamaStarLoadingAtView:nil];
+    
     [[HttpServiceEngineAd sharedInstance].httpEngine_MMMPRO postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(wwwww_tag_wwwww_phorcontainuous_glabrety, task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
 #endif
         
-          //[GamaUtils gamaStopLoadingAtView:nil];
+          
             NSDictionary *responseDict = responseData;
             
-    //        BJBaseResponceModel *mBJBaseResponceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
+    
             LoginResponse *mCCSDKResponse = [LoginResponse yy_modelWithDictionary:responseData];
             if ([mCCSDKResponse isRequestSuccess_MMMethodMMM]) {
                 if (successBlock) {
@@ -80,7 +70,7 @@
         if (errorBlock) {
             BJError *errorObject = [[BJError alloc] init];
             errorObject.code = error.code;
-            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); //TODO:获取NSError里面的描述信息
+            errorObject.message = GetString(wwwww_tag_wwwww_py_error_occur); 
             errorBlock(errorObject);
         }
     }];

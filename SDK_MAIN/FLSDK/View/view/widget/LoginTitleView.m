@@ -1,10 +1,4 @@
-//
-//  LoginTitleView.m
-//  CCSkyHourSDK
-//
-//  Created by ganyuanrong on 2019/5/29.
-//  Copyright © 2019 ganyuanrong. All rights reserved.
-//
+
 
 #import "LoginTitleView.h"
 
@@ -44,11 +38,9 @@
     
     [titleView addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.center.mas_equalTo(titleView);
+        
         make.leading.mas_equalTo(tagView.mas_trailing).mas_offset(VW(14));
-//        make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView);
-//        make.bottom.mas_equalTo(titleView);
     }];
     
     UIView *lineLableView = [[UIView alloc] init];
@@ -68,7 +60,7 @@
     
     [titleView addSubview:_backBtn_MMMPRO];
     [_backBtn_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        make.center.mas_equalTo(titleView);
+        
         make.trailing.mas_equalTo(titleView);
         make.centerY.mas_equalTo(titleView);
         make.width.mas_equalTo(VH(22));
@@ -83,17 +75,11 @@
 -(void)backUIView_MMMethodMMM:(UITapGestureRecognizer *)gesture
 {
     SDK_LOG(wwwww_tag_wwwww_backUIView_gesture);
-    // [appTopViewController dismissViewControllerAnimated:NO completion:nil];
-//    if (self.delegate) {
-//        [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 sdkPage:<#(SDKPage)#>];
-//    }
+    
 }
 -(void)backBtnView_MMMethodMMM:(UIButton *) btn{
     SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
-    // [appTopViewController dismissViewControllerAnimated:NO completion:nil];
-//    if (self.delegate) {
-//        [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 sdkPage:<#(SDKPage)#>];
-//    }
+    
     
     if (mhander) {
         mhander(1);

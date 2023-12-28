@@ -35,14 +35,7 @@
 #endif
 
 
-// 通知类型
-//NSString *const SDK_LOGIN_SUCCUESS    = wwwww_tag_wwwww_SDK_LOGIN_SUCCUESS;
 
-//NSString *const GAMA_PAY_SUCCUESS      = wwwww_tag_wwwww_GAMAPHCHASESUCCESSFUL;
-//NSString *const GAMA_PAY_FAIL          = wwwww_tag_wwwww_GAMAPHCHASEFAIL;
-//NSString *const GAMA_PAY_PUCHESSING    = wwwww_tag_wwwww_GAMAPHCHASING;
-//NSString *const GAMA_SHARE_RESULT      = wwwww_tag_wwwww_CONST_GAMA_SHARE_RESULT;
-//NSString *const GAMA_NOTICE_CLOSE      = wwwww_tag_wwwww_GAMA_NOTICE_CLOSE;
 
 @interface MWSDK()
 
@@ -52,10 +45,7 @@
 
 @implementation MWSDK
 
-/**
- 应用间跳转
- 
- */
+
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
@@ -64,14 +54,10 @@
     SDK_LOG(wwwww_tag_wwwww_application_openURL_sourceApplication_annotation);
     [AdDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     BOOL result = [FBDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-//    if (!result) {
-//        result = [LineDelegate application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-//    }
     
     return result;
 }
 
-//system version is ios9 and later
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
     SDK_LOG(wwwww_tag_wwwww_ornithoress_missast, [url absoluteString]);
@@ -81,7 +67,7 @@
         result = [LineDelegate application:application openURL:url options:options];
     }
     
-    if (!result) {//google sign in
+    if (!result) {
         result = [GIDDelegate application:application openURL:url options:options];
     }
     
@@ -93,33 +79,8 @@
     return YES;
 }
 
-//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-//
-//    if(self.switchInterfaceOrientationPortrait){//如果需要指定竖屏，直接返回竖屏
-//        return UIInterfaceOrientationMaskPortrait;
-//    }
-//
-//    NSArray *infoUISupportedInterfaceOrientations_aar = [SUtil getProjectInfoPlist_MMMethodMMM][wwwww_tag_wwwww_UISupportedInterfaceOrientations];
-//    if(!infoUISupportedInterfaceOrientations_aar){
-//        return UIInterfaceOrientationMaskAll;
-//    }
-//
-//    if(([infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationPortrait] || [infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationPortraitUpsideDown]) && ([infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationLandscapeLeft] || [infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationLandscapeRight])){
-//        return UIInterfaceOrientationMaskAll;
-//    }
-//
-//    if([infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationPortrait] || [infoUISupportedInterfaceOrientations_aar containsObject:wwwww_tag_wwwww_UIInterfaceOrientationPortraitUpsideDown]){
-//        return UIInterfaceOrientationMaskPortrait;
-//    }
-//
-//    return UIInterfaceOrientationMaskLandscape;
-//}
 
-/**
- 应用单例
- 
- @return 单例对象
- */
+
 + (instancetype)share
 {
     static MWSDK *_shareSP = nil;
@@ -135,7 +96,7 @@
 {
     if (self = [super init]) {
         
-        SDK_LOG(wwwww_tag_wwwww_leonenne_pressure, FL_SDK_VERSION);
+        SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
     }
     
     return self;
@@ -157,34 +118,6 @@
     
     self.dySDKLoginBlock = cmopleteHandler;
     
-//#ifdef SDK_KR
-//
-//    if([TermsViewV2 isShowTerm_MMMethodMMM]){
-//
-//        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-//
-//            [self showNoticeView];
-//
-//        }else{
-//            [self sdkLoginWithHandlerForInner];
-//        }
-//
-//    }else{
-//        [self showTermViewWithBlock_MMMethodMMM];
-//    }
-//
-//
-//#else
-//
-//    if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-//
-//        [self showNoticeView];
-//
-//    }else{
-//        [self sdkLoginWithHandlerForInner];
-//    }
-//
-//#endif
     
     [self sdkLoginWithHandlerForInner];
 }
@@ -200,19 +133,19 @@
 {
     SDK_LOG(wwwww_tag_wwwww_sdkLoginWithHandlerForInner);
     SDKLoginViewController *controller = [[SDKLoginViewController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
-    //        controller.definesPresentationContext = YES;
+    
 #ifdef __IPHONE_8_0
     if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
         SDK_LOG(wwwww_tag_wwwww_mensar_failier);
     }
     else {
         SDK_LOG(wwwww_tag_wwwww_controller_setModalPresentationStyle_UIModalPresentationOverCurrentContext);
-        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以
+        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];
     }
 #else
     SDK_LOG(wwwww_tag_wwwww_not_def___IPHONE_8_0);
 #endif
-    //        controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
+    
     [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
         
     }];
@@ -253,7 +186,7 @@
     SDK_LOG(wwwww_tag_wwwww_last_stultiarium,
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
-    // 对必要参数进行检查
+    
     if ([StringUtil isEmpty_MMMethodMMM:roleId]  ||
         [StringUtil isEmpty_MMMethodMMM:serverCode])
     {
@@ -261,12 +194,6 @@
         return;
     }
     
-//    SDK_DATA.gameUserModel.roleID = roleId ? : @"";
-//    SDK_DATA.gameUserModel.roleName = roleName ? : @"";
-//    SDK_DATA.gameUserModel.roleLevel = roleLevel ? : @"";
-//    SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
-//    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
-//    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
     
     [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
@@ -284,7 +211,7 @@
     SDK_LOG(wwwww_tag_wwwww_last_stultiarium,
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
-    // 对必要参数进行检查
+    
     if ([StringUtil isEmpty_MMMethodMMM:roleId]  ||
         [StringUtil isEmpty_MMMethodMMM:serverCode])
     {
@@ -311,7 +238,7 @@
                 
                 BOOL havePay = [USDefault _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
                 if (!havePay) {
-                    //                    [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_FIRST_PURCHASE parameters_MMMethodMMM:nil];
+                    
                 }
                 [USDefault _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
                 
@@ -331,7 +258,7 @@
 {
     SDK_LOG(wwwww_tag_wwwww_startMySdkPay___);
     
-    NSString * myPayUrl = GetConfigString(wwwww_tag_wwwww_sdk_other_ppp_url);//其他充值
+    NSString * myPayUrl = GetConfigString(wwwww_tag_wwwww_sdk_other_ppp_url);
     if ([StringUtil isEmpty_MMMethodMMM:myPayUrl]) {
         SDK_LOG(wwwww_tag_wwwww_dower_pollicitude,myPayUrl);
         return;
@@ -340,7 +267,6 @@
     NSDictionary *dic;
     @try {
          dic = @{
-//            wwwww_tag_wwwww_timestamp        :timeStamp,
             wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
             wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
             
@@ -348,7 +274,7 @@
             wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
             
             wwwww_tag_wwwww_payType          :wwwww_tag_wwwww_apple,
-            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,//支付方式
+            wwwww_tag_wwwww_mode             :wwwww_tag_wwwww_apple,
             wwwww_tag_wwwww_productId           :productId,
             wwwww_tag_wwwww_extra           :extra ? : @"",
             wwwww_tag_wwwww_cpOrderId         :cpOrderId,
@@ -363,10 +289,8 @@
     SDK_LOG(wwwww_tag_wwwww_dower_pollicitude,resultURL);
     MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-//        self.switchInterfaceOrientationPortrait = YES;
     };
     webVC.willDismissCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-//        self.switchInterfaceOrientationPortrait = NO;
     };
     webVC.didDismissCallback_MMMPRO = ^{
         
@@ -379,11 +303,7 @@
     SDK_LOG(wwwww_tag_wwwww_startMySdkPay_open_end);
 }
 
-/**
- 充值
- 
- @param payParms 充值参数
- */
+
 - (void)dyPayWithRoleId:(NSString *)roleId
              roleName:(NSString *)roleName
             roleLevel:(NSString *)roleLevel
@@ -422,7 +342,7 @@
         return;
     }
     
-    if (self.isPaying) {//是否正在充值中
+    if (self.isPaying) {
         SDK_LOG(wwwww_tag_wwwww_gloriistic_diamisslike);
         return;
     }
@@ -440,7 +360,7 @@
         self.isPaying = NO;
         return;
     }
-    //添加点击支付上报
+    
     [self dyTrackWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
     self.isPaying = NO;
     
@@ -459,25 +379,11 @@
         [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
-    [AdLogger logServerWithEventName_MMMethodMMM:name];//发送到服务器
+    [AdLogger logServerWithEventName_MMMethodMMM:name];
     [AdLogger logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 }
 
 
-//- (void)requestStoreReview
-//{
-//    
-//    if (![[NSThread currentThread] isMainThread]) {
-//        SDK_LOG(wwwww_tag_wwwww_currentThread_is_not_main_thread);
-//        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-//        return;
-//    }
-//    if (@available(iOS 10.3, *)) {
-//        [SKStoreReviewController requestReview];
-//    } else {
-//        // Fallback on earlier versions
-//    }
-//}
 
 - (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
     
@@ -582,8 +488,6 @@
     NSDictionary *pInfo = [SdkUtil getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
     if(pInfo){
         
-//        NSString *areaCodeKey = pInfo[wwwww_tag_wwwww_key];
-//        NSString *areaCodeValue = pInfo[wwwww_tag_wwwww_value];
         NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
         if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
             [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
@@ -594,23 +498,15 @@
         }
     }
     
-//    if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
-//        return;
-//    }
     
     [SDKRequest requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_vfcode_has_send.localx];
         if (mMWBlock) {
             mMWBlock(YES, nil);
         }
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         
-//        if (error.message) {
-//            [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-//        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -633,10 +529,6 @@
         return;
     }
     
-//    if (![SdkUtil validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression]) {
-//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
-//        return;
-//    }
     
     if ([StringUtil isEmpty_MMMethodMMM:vfCode]) {
         [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
@@ -645,7 +537,6 @@
     
     [SDKRequest bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_bind_success.localx];
         SDK_DATA.mLoginResponse_MMMPRO.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
         SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone = YES;
         
@@ -655,9 +546,6 @@
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         
-//        if (error.message) {
-//            [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-//        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -681,14 +569,12 @@
     
     AccountModel *currentAccountModel = SDK_DATA.mLoginResponse_MMMPRO.data;
     if (!currentAccountModel) {
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
         SDK_LOG(wwwww_tag_wwwww_deal_veterose);
         return;
     }
     
     [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
-//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success2)];
         
         LoginResponse *cc = (LoginResponse *)responseData;
         cc.data.account = account;
@@ -698,9 +584,8 @@
         
         [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
         
-//        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
         
-        //记录升级事件
+        
         [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
         [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
@@ -723,9 +608,6 @@
         }
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
-//        if (error.message) {
-//            [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
-//        }
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -782,10 +664,8 @@
     webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_3EB2FF];
     
     webVC.viewDidLoadCompletion_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-//        self.switchInterfaceOrientationPortrait = YES;
     };
     webVC.willDismissCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-//        self.switchInterfaceOrientationPortrait = NO;
     };
     webVC.didDismissCallback_MMMPRO = ^{
         
@@ -826,169 +706,14 @@
 }
 
 
-//推送类型:
-//UNTimeIntervalNotificationTrigger // （本地通知） 一定时间之后，重复或者不重复推送通知。我们可以设置timeInterval（时间间隔）和repeats（是否重复）
-//UNCalendarNotificationTrigger //（本地通知） 一定日期之后，重复或者不重复推送通知 例如，你每天8点推送一个通知，只要dateComponents为8，如果你想每天8点都推送这个通知，只要repeats为YES就可以了
-//UNLocationNotificationTrigger // （本地通知）地理位置的一种通知，当用户进入或离开一个地理区域来通知
-
-//- (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId{
-//
-//    SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
-//    if (![[NSThread currentThread] isMainThread]) {
-//        SDK_LOG(wwwww_tag_wwwww_currentThread_is_not_main_thread);
-//        [AlertUtil showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-//        return;
-//    }
-//
-//    if (@available(iOS 10.0, *)) {
-//        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-//        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-//        // 标题
-//        content.title = title;
-//        content.subtitle = subtitle;
-//        // 内容
-//        content.body = body;
-//        // 声音
-//       // 默认声音
-//        content.sound = [UNNotificationSound defaultSound];
-//     // 添加自定义声音
-////       content.sound = [UNNotificationSound soundNamed:wwwww_tag_wwwww_Alert_ActivityGoalAttained_Salient_Haptic_caf];
-//        // 角标，桌面icon 小红标数量
-////        content.badge = @(1);
-//
-//        // 添加通知的标识符，可以用于移除，更新等操作
-//        if ([StringUtil isEmpty_MMMethodMMM:notifyId]) {
-//            notifyId = [SUtil getMD5StrFromString_MMMethodMMM:title];
-//        }
-//
-//        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
-//
-//        [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {
-//            SDK_LOG(wwwww_tag_wwwww_gression_decision);
-//        }];
-//
-//    }else {
-////        UILocalNotification *notif = [[UILocalNotification alloc] init];
-////        // 发出推送的日期
-////        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
-////        // 推送的内容
-////        notif.alertBody = wwwww_tag_wwwww_octogesimserveation_cause;
-////        // 可以添加特定信息
-////        notif.userInfo = @{wwwww_tag_wwwww_noticeId:wwwww_tag_wwwww_00001};
-////        // 角标
-////        notif.applicationIconBadgeNumber = 1;
-////        // 提示音
-////        notif.soundName = UILocalNotificationDefaultSoundName;
-////        // 每周循环提醒
-////        notif.repeatInterval = NSCalendarUnitWeekOfYear;
-////
-////        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
-//    }
-//}
-
-//-(void)showTermViewWithBlock_MMMethodMMM
-//{
-//
-//#ifdef SDK_KR
-//    TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
-//
-//    }];
-//
-//    UIView *superView = appTopViewController.view;
-//
-//    UIView *bgV = [[TouchEventInterruptView alloc] init];
-//    [superView addSubview:bgV];
-//    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(superView);
-//    }];
-//
-//    [bgV addSubview:aTermsViewV2];
-//    [aTermsViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(bgV);
-//    }];
-//
-//    aTermsViewV2.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {//弹出登录
-//
-//        [bgV removeFromSuperview];
-//        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
-//
-//            [self showNoticeView];
-//
-//        }else{
-//            [self sdkLoginWithHandlerForInner];
-//        }
-//
-//    };
-//
-//#endif
-//}
-
-//-(void)showSocialView{
-//
-//    UIView *superView = appTopViewController.view;
-//
-//    UIView *bgV = [[TouchEventInterruptView alloc] init];
-//    [superView addSubview:bgV];
-//    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(superView);
-//    }];
-//
-//    SocialBannerView *mSocialBannerView = [[SocialBannerView alloc] init];
-//    [bgV addSubview:mSocialBannerView];
-//    [mSocialBannerView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(bgV);
-//    }];
-//
-//}
-
-//- (void)showActView
-//{
-//    SDK_LOG(wwwww_tag_wwwww_showActView);
-//    
-//    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-//    if(!mConfigModel.showMarket){//判断总开关，活动是否开启
-//        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_This_feature_is_not_turned_on];
-//        return;
-//    }
-//    
-//    [SdkUtil showLoadingAtView_MMMethodMMM:nil];
-//    [SDKRequest checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-//        
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-//        [SDKRequest getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
-//            [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-//            
-//            UIViewController *actController;
-//            if(IS_PORTRAIT){
-//                ExposureController *mExposureController = [[ExposureController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
-//                mExposureController.expoModelArry = responseData;
-//                actController = mExposureController;
-//            }else{
-//                ExposureHorControllerViewController *mExposureHorControllerViewController = [[ExposureHorControllerViewController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
-//                mExposureHorControllerViewController.expoModelArry = responseData;
-//                actController = mExposureHorControllerViewController;
-//            }
-//            
-//            SDK_LOG(wwwww_tag_wwwww_controller_setModalPresentationStyle_UIModalPresentationOverCurrentContext);
-//            [actController setModalPresentationStyle:UIModalPresentationOverFullScreen];//UIModalPresentationFullScreen不能背景透明、UIModalPresentationOverFullScreen可以odalPresentationStyle = UIModalPresentationOverCurrentContext;//关键语句，必须有
-//            [[SUtil getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
-//                
-//            }];
-//            
-//        } errorBlock_MMMethodMMM:^(BJError *error) {
-//            
-//            [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_This_feature_is_not_turned_on];
-//        }];
-//        
-//        
-//    } errorBlock_MMMethodMMM:^(BJError *error) {
-//        
-//        [SdkUtil stopLoadingAtView_MMMethodMMM:nil];
-//        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_This_feature_is_not_turned_on];
-//    }];
-//    
-//}
 
 
+
+
+
+-(NSString *)dyDecodeStr:(NSString *)text
+{
+    return [SDKRES decryptAllStringContent_MMMethodMMM:text];
+}
 
 @end

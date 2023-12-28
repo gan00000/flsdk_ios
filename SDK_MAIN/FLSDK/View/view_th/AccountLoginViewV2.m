@@ -1,10 +1,4 @@
-//
-//  AccountLoginView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "AccountLoginViewV2.h"
 #import "LoginTitleView.h"
@@ -31,18 +25,17 @@
 
 @end
 
-//会员登入view
 @implementation AccountLoginViewV2
 {
     SDKTextFiledView *passwordSDKTextFiledView;
     SDKTextFiledView *accountSDKTextFiledView;
-    //    UIButton *checkBoxBtn;
+    
     UIButton *accountLoginBtn;
     UIButton *guestLoginBtn;
     
     UIButton *backBtn;
     
-    NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
+    NSMutableArray<AccountModel *>  *accountDataList;
     
     UIButton *checkBoxTermsBtn;
     
@@ -71,9 +64,9 @@
 
 - (void)showTermsViewForAccountLoginView_MMMethodMMM {
     SDK_LOG(wwwww_tag_wwwww_rememberTermsLableTapped);
-    //            if (self.delegate) {
-    //                [self.delegate goPageView_MMMethodMMM:CURRENT_PAGE_TYPE_TEARMS from_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) param_MMMethodMMM:0];
-    //            }
+    
+    
+    
     TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
         checkBoxTermsBtn.selected = YES;
     }];
@@ -104,13 +97,13 @@
     self = [super init];
     if (self) {
         
-        //账号
+        
         accountSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
         accountSDKTextFiledView.inputUITextField_MMMPRO.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
         [self addSubview:accountSDKTextFiledView];
         
         [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            // make.centerX.mas_equalTo(self);
+            
             make.top.equalTo(self);
             make.leading.mas_equalTo(self).mas_offset(VW(34));
             make.trailing.mas_equalTo(self).mas_offset(-VW(34));
@@ -118,7 +111,7 @@
         }];
         
         
-        //密码
+        
         passwordSDKTextFiledView = [[SDKTextFiledView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
         passwordSDKTextFiledView.inputUITextField_MMMPRO.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
         [self addSubview:passwordSDKTextFiledView];
@@ -129,11 +122,10 @@
             make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.height.mas_equalTo(VH(40));
-//            make.height.mas_equalTo();
         }];
         
         
-        //找回密碼
+        
         
         UIButton *findPasswordBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_py_findpwd) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0] tag_MMMethodMMM:kFindPwdActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
@@ -141,11 +133,11 @@
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
             make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(8));
-            //            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
-            //            make.width.mas_equalTo(VW(140));
+            
+            
         }];
         
-        //条款
+        
         UIView *termAgreeView = [[UIView alloc] init];
         [self addSubview:termAgreeView];
         [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -165,16 +157,16 @@
         
         NSString *xtext = GetString(wwwww_tag_wwwww_text_personal_clause_and_privacy_policy);
         UILabel *rememberTermsLable = [UIUtil initLabelWithText_MMMethodMMM:xtext fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
-        //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-        //            rememberTermsLable.backgroundColor = [UIColor clearColor];
+        
+        
         rememberTermsLable.numberOfLines = 1;
         
         
-        //             NSDictionary *attribtDic = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-        //             NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:xtext];
-        //            [attribtStr addAttributes:attribtDic range: NSMakeRange(0,xtext.length-1)];
-        //             //赋值
-        //            rememberTermsLable.attributedText = attribtStr;
+        
+        
+        
+        
+        
         
         [termAgreeView addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -192,8 +184,8 @@
         termAgreeView.hidden = !mConfigModel.showContract;
         findPasswordBtn.hidden = !mConfigModel.showForgetPwd;
         
-        //账号登入
-        //        accountLoginBtn = [LoginButton initBtnWithType_MMMethodMMM:(BUTTON_TYPE_ACCOUNT_LOGIN) tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:)  target_MMMethodMMM:self];
+        
+        
         
         accountLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
@@ -216,7 +208,7 @@
             loginGl.frame = accountLoginBtn.bounds;
         }];
 
-        //免注册按钮start
+        
         guestLoginBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         [guestLoginBtn.layer setCornerRadius:VH(20)];
         [self addSubview:guestLoginBtn];
@@ -253,12 +245,12 @@
             guestLoginBtn.hidden = YES;
         }
         
-        //免注册按钮end
         
-        accountDataList = [NSMutableArray array];//账号列表数据
         
-        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
-        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+        accountDataList = [NSMutableArray array];
+        
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
+        if (mAccountArray.count > 0){
             
             currentAccountModel = mAccountArray[0];
             [accountDataList addObjectsFromArray:mAccountArray];
@@ -266,24 +258,23 @@
             [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
         }else{
             if (deleteBtnView) {
-//                deleteBtnView.hidden = YES;
             }
         }
         
         
-        //添加账号显示列表
+        
         kWeakSelf
         accountSDKTextFiledView.clickAccountListItem_MMMPRO = ^(NSInteger tag) {
             
             if (accountMaskView && accountListView) {
-                //设置点击显示、隐藏
+                
                 
                 
                 if (accountMaskView.isHidden) {
                     
                     accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = YES;
                     accountMaskView.hidden = NO;
-                    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
+                    NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
                     [accountDataList removeAllObjects];
                     [accountDataList addObjectsFromArray:mAccountArray];
                     accountListView.accountDataList_MMMPRO = accountDataList;
@@ -296,10 +287,10 @@
                     
                 }
                 
-            }else{//第一次点击显示
+            }else{
                 accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = YES;
                 [self addAccountListView_MMMethodMMM];
-                NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
+                NSArray *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
                 [accountDataList removeAllObjects];
                 [accountDataList addObjectsFromArray:mAccountArray];
                 accountListView.accountDataList_MMMPRO = accountDataList;
@@ -312,12 +303,11 @@
             
             if (currentAccountModel && ![currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 
-                if (![msg isEqualToString:currentAccountModel.userId]) {//修改则变为平台用户登录方式
+                if (![msg isEqualToString:currentAccountModel.userId]) {
                     AccountModel *tempAccountModel = [[AccountModel alloc] init];
                     tempAccountModel.loginType = LOGIN_TYPE_SELF;
                     tempAccountModel.account = msg;
                     tempAccountModel.password = @"";
-//                    [passwordSDKTextFiledView setPwdFiledView_MMMethodMMM:YES];
                     [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
                     currentAccountModel = tempAccountModel;
                 }
@@ -337,7 +327,6 @@
 -(void)addAccountListView_MMMethodMMM{
     
     accountMaskView = [[BasePopupView alloc] init];
-//    accountMaskView.backgroundColor = UIColor.blueColor;
     accountMaskView.touchesBeganCallback_MMMPRO = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         if (!accountMaskView.isHidden) {
             
@@ -362,7 +351,7 @@
         make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
         make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(4);
         make.height.mas_equalTo(VH(200));
-        //        make.edges.mas_equalTo(self);
+        
         
     }];
     kWeakSelf
@@ -374,12 +363,11 @@
             if (accountDataList.count > 0) {
                 currentAccountModel = accountDataList[0];
                 
-    //            [blockSelf->accountDataList removeAllObjects];
-    //            [blockSelf->accountDataList addObjectsFromArray:list];
+    
+    
                 
                 [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
             }else{
-//                currentAccountModel = nil;
                 AccountModel *resetAm = [[AccountModel alloc] init];
                 resetAm.loginType = LOGIN_TYPE_SELF;
                 resetAm.account = @"";
@@ -390,11 +378,10 @@
                 accountMaskView.hidden = YES;
                 
                 if (deleteBtnView) {
-//                    deleteBtnView.hidden = YES;
                 }
             }
             
-        }else{//选择
+        }else{
             currentAccountModel = aModel;
             [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
             accountSDKTextFiledView.moreAccountBtn_MMMPRO.selected = NO;
@@ -434,7 +421,7 @@
             [self goGame_MMMethodMMM];
             break;
             
-            //新加
+            
         case fbLoginActTag:
         {
             if (![self checkAgreeTerm_MMMethodMMM]) {
@@ -518,7 +505,7 @@
         return YES;
     }
     [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
-    //    [AlertUtil showAlertWithMessage_MMMethodMMM:];
+    
     [self showTermsViewForAccountLoginView_MMMethodMMM];
     return NO;
 }
@@ -584,7 +571,7 @@
 +(void)makeAccountFiledViewStatus_MMMethodMMM:(AccountModel *)mAccountModel accountView_MMMethodMMM:(SDKTextFiledView *)accountFiledView pwdView_MMMethodMMM:(SDKTextFiledView *)pwdFiledView{
     
     
-    //    passwordSDKTextFiledView.inputUITextField.text = mAccountModel.password;
+    
     
     NSString *account = mAccountModel.userId;
     NSString *iconName = mw_smail_icon;
@@ -623,7 +610,6 @@
     accountFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:iconName];
     
     if (pwdFiledView) {
-//        [pwdFiledView setPwdFiledView_MMMethodMMM:pwdEnable];
        
         if (pwdEnable) {
             pwdFiledView.hidden = NO;
@@ -692,7 +678,6 @@
     }];
     
     UIButton *cancelBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_cancel) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kCancelDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-//    cancelBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     cancelBtn.layer.cornerRadius = VW(16);
     cancelBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelBtn.layer.borderWidth = 1;
@@ -709,8 +694,6 @@
     UIButton *sureBtn = [UIUtil initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_confire) fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kSureDeleteAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     sureBtn.layer.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12].CGColor;
     sureBtn.layer.cornerRadius = VW(16);
-//    sureBtn.layer.borderColor = [UIColor whiteColor].CGColor;
-//    sureBtn.layer.borderWidth = 1;
     
     [deleteView addSubview:sureBtn];
     [sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -726,52 +709,6 @@
 }
 
 
-//-(void)addDeleteAccountView_MMMethodMMM
-//{
-//    UIView *deleteView = [[UIView alloc] init];
-//    deleteView.backgroundColor = UIColor.whiteColor;
-//    deleteView.layer.cornerRadius = VW(14);
-//
-//    [self addSubview:deleteView];
-//
-//    [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.mas_equalTo(self.mas_bottom);
-////        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-10));
-//        make.centerX.equalTo(self);
-////        make.height.mas_equalTo(VH(28));
-//    }];
-//
-//    UIImageView *deleteIV = [UIUtil initImageViewWithImage_MMMethodMMM:mw_delete_icon];
-//    [deleteView addSubview:deleteIV];
-//    [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
-//        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
-//        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
-//        make.centerY.equalTo(deleteView);
-//        make.width.height.mas_equalTo(VW(15));
-//    }];
-//
-//    UILabel *delLabel = [UIUtil initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
-//    [deleteView addSubview:delLabel];
-//    [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-//        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
-//        make.centerY.equalTo(deleteView);
-//
-//    }];
-//
-//    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-//
-//        if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
-//            [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
-//            return;
-//        }
-//        [self addDeleteAccountConfireView_MMMethodMMM];
-//
-//    }];
-//
-//    deleteBtnView = deleteView;
-//}
 
 - (void)doDeleteAccount_MMMethodMMM {
     
@@ -782,8 +719,8 @@
     [LoginHelper deleteAccountAndRequest_MMMethodMMM:self.loginDelegate_MMMPRO view_MMMethodMMM:self account_MMMethodMMM:currentAccountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
         
         [deleteAccountConfireView removeFromSuperview];
-        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];//获取保存的数据
-        if (mAccountArray.count > 0){//设置默认显示第一个，即按照时间排序最后登录的一个账号
+        NSArray<AccountModel *> *mAccountArray = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
+        if (mAccountArray.count > 0){
             currentAccountModel = mAccountArray[0];
             
             [accountDataList removeAllObjects];
@@ -791,7 +728,6 @@
             
             [AccountLoginViewV2 makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
             
-//            [self setViewStatue_MMMethodMMM];
             
         }else{
             AccountModel *tempA = [[AccountModel alloc] init];

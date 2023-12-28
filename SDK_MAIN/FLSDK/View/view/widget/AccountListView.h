@@ -1,10 +1,4 @@
-//
-//  AccountListView.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/17.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import "SDKBaseView.h"
@@ -18,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AccountListView : SDKBaseView
 
 @property (nonatomic,strong) AccountModelHander mAccountModelClickHander_MMMPRO;
-@property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList_MMMPRO;//账号列表数据
+@property (nonatomic,strong)NSMutableArray<AccountModel *>  *accountDataList_MMMPRO;
 @property (nonatomic,strong) UITableView *accountListTableView_MMMPRO;
 @end
 

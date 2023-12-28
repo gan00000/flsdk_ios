@@ -1,10 +1,4 @@
-//
-//  AutoLoginView.m
-//  MWSDK_KR
-//
-//  Created by Gan Yuanrong on 2023/12/12.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import "AutoLoginView.h"
 #import "SdkUtil.h"
@@ -38,13 +32,13 @@
 -(void)addView_MMMethodMMM
 {
     
-    //test
-    //    SDK_DATA.mConfigModel.appleLogin = YES;
-    //    SDK_DATA.mConfigModel.appPassCheck = YES;
-    //    SDK_DATA.mConfigModel.showLogo = YES;
-    //    SDK_DATA.mConfigModel.showContract = YES;
-    //    SDK_DATA.mConfigModel.deleteAccount = YES;
-    //    SDK_DATA.mConfigModel.naverLogin = YES;
+    
+    
+    
+    
+    
+    
+    
     
  
     UIView *contentView = [[UIView alloc] init];
@@ -55,8 +49,8 @@
     
     
     accountLable = [UIUtil initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
-    //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-    //            rememberTermsLable.backgroundColor = [UIColor clearColor];
+    
+    
     accountLable.numberOfLines = 1;
     
     [contentView addSubview:accountLable];
@@ -68,8 +62,8 @@
     
     
     UILabel *waitLable = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_waiting.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
-    //            rememberTermsLable.textAlignment = NSTextAlignmentLeft;
-    //            rememberTermsLable.backgroundColor = [UIColor clearColor];
+    
+    
     waitLable.numberOfLines = 1;
     
     [contentView addSubview:waitLable];
@@ -106,16 +100,16 @@
     NSArray<AccountModel *> *accountModels = [[ConfigCoreUtil share] getAccountModels_MMMethodMMM];
     if (accountModels && accountModels.count > 0) {
         
-        //[self addLoginWithRegView_MMMethodMMM];//自动登录
+        
         mAccountModel = [accountModels firstObject];
         if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel.loginType]){
             accountLable.text = mAccountModel.userId;
             accountTips = mAccountModel.userId;
-            //[LoginHelper guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
+            
             
         }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel.loginType]){
             accountLable.text = mAccountModel.account;
-            //[self requestAccountLogin_MMMethodMMM:mAccountModel];
+            
             accountTips = mAccountModel.account;
         }
         self.totalCount_MMMPRO = 3;

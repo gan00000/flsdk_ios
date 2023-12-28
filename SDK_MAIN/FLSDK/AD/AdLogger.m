@@ -1,10 +1,4 @@
-//
-//  GamaAdInterface.m
-//  GamaSDK_iOS
-//
-//  Created by coke on 2018/8/6.
-//  Copyright © 2018年 starpy. All rights reserved.
-//
+
 
 #import "AdLogger.h"
 #import "SdkHeader.h"
@@ -21,7 +15,7 @@
 {
     
     NSString *userId = @"";
-    NSString *serverTime = @"";//serverTime
+    NSString *serverTime = @"";
     NSString *roleName = @"";
     NSString *roleId = @"";
     if (SDK_DATA.mLoginResponse_MMMPRO && SDK_DATA.mLoginResponse_MMMPRO.data && SDK_DATA.mLoginResponse_MMMPRO.data.userId) {
@@ -75,7 +69,7 @@
 
 + (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
     
-    if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){//判断orderId存在才上报
+    if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){
         return;
     }
     
@@ -84,38 +78,28 @@
     
     GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
     if(gGameUserModel){
-        if(gGameUserModel.isPay){//已经充值过
+        if(gGameUserModel.isPay){
             
             if(gGameUserModel.isSecondPay){
-                //NOT TO DO
-            }else{//第二次充值上报
+                
+            }else{
                 gGameUserModel.isSecondPay = YES;
-//                [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
-                //上报
+                
                 
             }
             
-        }else{//该用户第一次充值
+        }else{
             gGameUserModel.isPay = YES;
             gGameUserModel.firstPayTime = [SUtil getTimeStamp_MMMethodMMM];
-            if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日付费玩家
+            if([[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.firstPayTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){
                 gGameUserModel.isRegDayPay = YES;
             }else{
                 gGameUserModel.isRegDayPay = NO;
             }
-//            [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
             
             [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:type name_MMMethodMMM:wwwww_tag_wwwww_purchase_first_charge_hf];
         }
         
-//        if(mPayData.amount > 4){
-//
-//            NSString *curTime = [SUtil getTimeStamp_MMMethodMMM];
-//            if([[SUtil getDateStringWithTimeStr_MMMethodMMM:curTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"] isEqualToString:[SUtil getDateStringWithTimeStr_MMMethodMMM:gGameUserModel.regTime dateFormat_MMMethodMMM:@"yyyy-MM-dd"]]){//是否注册首日玩家
-//
-//                [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_purchase_over4 parameters_MMMethodMMM:eventValues];
-//            }
-//        }
         
         if(mPayData.amount > 99){
             [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_purchase_99_single_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
@@ -124,7 +108,7 @@
         gGameUserModel.payAmount = gGameUserModel.payAmount + mPayData.amount;
         gGameUserModel.payCount = gGameUserModel.payCount + 1;
         
-        [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];//更新数据
+        [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
         
         if(gGameUserModel.payAmount >= 50){
             [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_50_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];

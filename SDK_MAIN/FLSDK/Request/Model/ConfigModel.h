@@ -1,10 +1,4 @@
-//
-//  ConfigModel.h
-//  FLSDK
-//
-//  Created by Gan Yuanrong on 2022/6/20.
-//  Copyright © 2022 Gama. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 
@@ -22,11 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL appleLogin;
 @property (nonatomic, assign) BOOL naverLogin;
 
-//是否显示定型化契约
 @property (nonatomic, assign) BOOL showContract;
 @property (nonatomic, assign) BOOL deleteAccount;
 
-//是否过审状态
 @property (nonatomic, assign) BOOL appPassCheck;
 
 @property (nonatomic, assign) BOOL showLogo;
@@ -38,9 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL showRegPage;
 
 @property (nonatomic, assign) BOOL showSdkCsCenter;
-@property (nonatomic, assign) BOOL togglePay;//是否开启第三方支付
+@property (nonatomic, assign) BOOL togglePay;
 
-@property (nonatomic, assign) BOOL showMarket;//是否开启活动
+@property (nonatomic, assign) BOOL showMarket;
 
 @end
 

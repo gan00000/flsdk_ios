@@ -1,10 +1,4 @@
-//
-//  AdjustDelegate.h
-//  MWSDK_VN
-//
-//  Created by Gan Yuanrong on 2023/8/2.
-//  Copyright © 2023 Gama. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -16,7 +10,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)share;
 
 - (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-//- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options;
 
 - (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName;
 

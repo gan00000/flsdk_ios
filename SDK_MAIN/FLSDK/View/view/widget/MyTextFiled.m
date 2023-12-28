@@ -1,10 +1,4 @@
-//
-//  SDKTextFiledView.m
-//  R2DSDK
-//
-//  Created by ganyuanrong on 2020/7/9.
-//  Copyright © 2020 ganyuanrong. All rights reserved.
-//
+
 
 #import "MyTextFiled.h"
 #import "UIUtil.h"
@@ -54,20 +48,15 @@
 }
 
 
-////监听输入框文字变化  手动设置UITextField.text=nil或者@""或者wwwww_tag_wwwww_lubricite_nearaceous都不会触发这个通知，在输入框输入/删除文字、剪切/粘贴输入框文字、输入中文拼音、
-///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
     SDK_LOG(wwwww_tag_wwwww_managerster_ratherage,sender.text);
     
     if (sender.text && [sender.text containsString:@" "]) {
-        NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格
+        NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];
         self.inputTextField_MMMPRO.text = tempStr;
     }
     
-//    if (self.inputTextFieldChange) {
-//        self.inputTextFieldChange(self.inputUITextField.text,0,nil);
-//    }
     
 }
 @end
