@@ -16,7 +16,7 @@
 //    if (self.contentView) {
 //        [contentView ]
 //    }
-    SDK_LOG(@"BasePopupView touchesBegan");
+    SDK_LOG(wwwww_tag_wwwww_BasePopupView_touchesBegan);
     if (self.touchesBeganCallback_MMMPRO) {
         self.touchesBeganCallback_MMMPRO(@"",0,nil);
     }

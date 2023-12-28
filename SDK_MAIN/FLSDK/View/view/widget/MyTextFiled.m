@@ -58,7 +58,7 @@
 ///点击自带的clearButton清空文字时会触发（点击输入键盘上方的待选文字时会触发两次）
 - (void)textChanged_MMMethodMMM:(UITextField *)sender
 {
-    SDK_LOG(@"MyTextFiled textChanged=>%@",sender.text);
+    SDK_LOG(wwwww_tag_wwwww_managerster_ratherage,sender.text);
     
     if (sender.text && [sender.text containsString:@" "]) {
         NSString *tempStr = [sender.text stringByReplacingOccurrencesOfString:@" " withString:@""];//不允许输入空格

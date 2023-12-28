@@ -32,7 +32,7 @@
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options{
-    SDK_LOG(@"application openURL options");
+    SDK_LOG(wwwww_tag_wwwww_application_openURL_options);
     return YES;//[[NaverThirdPartyLoginConnection getSharedInstance] application:app openURL:url options:options];
 }
 
@@ -44,7 +44,7 @@
 //        [_thirdPartyLoginConn setIsNaverAppOauthEnable:YES];
 //        _thirdPartyLoginConn.delegate = self;
 //    }
-//    SDK_LOG(@"requestThirdpartyLogin");
+//    SDK_LOG(wwwww_tag_wwwww_requestThirdpartyLogin);
 //    [self requestThirdpartyLogin:consumerKey consumerSecret:consumerSecret appName:appName];
     
 }
@@ -63,33 +63,33 @@
 
 - (void)getUserProfile{
 //    if (NO == [_thirdPartyLoginConn isValidAccessTokenExpireTimeNow]) {
-//        SDK_LOG(@"isValidAccessTokenExpireTimeNow NO");
+//        SDK_LOG(wwwww_tag_wwwww_isValidAccessTokenExpireTimeNow_NO);
 //        return;
 //    }
 //
 //    //xml
-//    //NSString *urlString = @"https://openapi.naver.com/v1/nid/getUserProfile.xml";  //  사용자 프로필 호출
+//    //NSString *urlString = wwwww_tag_wwwww_https___openapi_naver_com_v1_nid_getUserProfile_xml;  //  사용자 프로필 호출
 //    //json
-//    NSString *urlString = @"https://openapi.naver.com/v1/nid/me";
-//    SDK_LOG(@"getUserProfile");
+//    NSString *urlString = wwwww_tag_wwwww_https___openapi_naver_com_v1_nid_me;
+//    SDK_LOG(wwwww_tag_wwwww_getUserProfile);
 //    [self sendRequestWithUrlString:urlString];
 }
 
 - (void)sendRequestWithUrlString:(NSString *)urlString {
 //    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
 //
-//    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", _thirdPartyLoginConn.accessToken];
+//    NSString *authValue = [NSString stringWithFormat:wwwww_tag_wwwww_conferencean_growaneity, _thirdPartyLoginConn.accessToken];
 //
-//    [urlRequest setValue:authValue forHTTPHeaderField:@"Authorization"];
+//    [urlRequest setValue:authValue forHTTPHeaderField:wwwww_tag_wwwww_Authorization];
 //
 //    [[[NSURLSession sharedSession] dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 //        NSString *decodingString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 //        dispatch_async(dispatch_get_main_queue(), ^{
 //            if (error) {
-//                SDK_LOG(@"Error happened - %@", [error description]);
+//                SDK_LOG(wwwww_tag_wwwww_octavarian_leaveless, [error description]);
 //                [SdkUtil toastMsg_MMMethodMMM:[error description]];
 //            } else {
-//                SDK_LOG(@"recevied data - %@", decodingString);
+//                SDK_LOG(wwwww_tag_wwwww_querward_billics, decodingString);
 //
 //                if(decodingString){
 //                    NSData *jsonData = [decodingString dataUsingEncoding:NSUTF8StringEncoding];
@@ -99,14 +99,14 @@
 //                    if(!resultTemp){
 //                        return;
 //                    }
-//                    NSString *resultcode = resultTemp[@"resultcode"];
-//                    NSString *message = resultTemp[@"message"];
-//                    id response = resultTemp[@"response"];
+//                    NSString *resultcode = resultTemp[wwwww_tag_wwwww_resultcode];
+//                    NSString *message = resultTemp[wwwww_tag_wwwww_message];
+//                    id response = resultTemp[wwwww_tag_wwwww_response];
 //                    if(!response){
 //                        return;
 //                    }
 //                    NSString *uid = response[@"id"];
-//                    NSString *nickname = response[@"nickname"];
+//                    NSString *nickname = response[wwwww_tag_wwwww_nickname];
 //
 //                    if(mNaverCallBack){
 //                        mNaverCallBack(_thirdPartyLoginConn.accessToken, uid, nickname);
@@ -125,37 +125,37 @@
 //#pragma mark - OAuth20 deleagate
 //
 //- (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFailWithError:(NSError *)error {
-//    //    NSLog(@"%s=[%@]", __FUNCTION__, error);
+//    //    NSLog(wwwww_tag_wwwww_lith_nomful, __FUNCTION__, error);
 //    //登录失败时
-//    SDK_LOG(@"oauth20Connection didFailWithError %@", error);
+//    SDK_LOG(wwwww_tag_wwwww_phrynain_beginization, error);
 //}
 //
 //- (void)oauth20ConnectionDidFinishRequestACTokenWithAuthCode {
 //
-//    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithAuthCode OAuth Success!\n\nAccess Token - %@\n\nAccess Token Expire Date- %@\n\nRefresh Token - %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate, _thirdPartyLoginConn.refreshToken);
+//    SDK_LOG(wwwww_tag_wwwww_closeid_exoate, _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate, _thirdPartyLoginConn.refreshToken);
 //    //第一次从认证(didFinishAuthorizationWithResult)到这里
 //    [self getUserProfile];
 //}
 //
 //- (void)oauth20ConnectionDidFinishRequestACTokenWithRefreshToken {
 //    //登录成功时
-//    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithRefreshToken Refresh Success!\n\nAccess Token - %@\n\nAccess sToken ExpireDate- %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate);
+//    SDK_LOG(wwwww_tag_wwwww_nice_themselvesit, _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate);
 //
 //    [self getUserProfile];
 //
 //}
 //- (void)oauth20ConnectionDidFinishDeleteToken {
-//    SDK_LOG(@"oauth20ConnectionDidFinishDeleteToken");
+//    SDK_LOG(wwwww_tag_wwwww_oauth20ConnectionDidFinishDeleteToken);
 //}
 //
 //- (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFinishAuthorizationWithResult:(THIRDPARTYLOGIN_RECEIVE_TYPE)receiveType
 //{
-//    SDK_LOG(@"oauth20Connection didFinishAuthorizationWithResult Getting auth code from NaverApp success!");
+//    SDK_LOG(wwwww_tag_wwwww_oscillitious_ducthrowid);
 //}
 //
 //- (void)oauth20Connection:(NaverThirdPartyLoginConnection *)oauthConnection didFailAuthorizationWithReceiveType:(THIRDPARTYLOGIN_RECEIVE_TYPE)receiveType
 //{
-//    SDK_LOG(@"oauth20Connection didFailAuthorizationWithReceiveType NaverApp login fail handler receiveType=%d", receiveType);
+//    SDK_LOG(wwwww_tag_wwwww_volaform_uponity, receiveType);
 //}
 
 

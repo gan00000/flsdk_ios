@@ -120,7 +120,7 @@
     }];
     csContentView.userInteractionEnabled = YES;
     [csContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        [[MWSDK share] openCsWithParams_MMMethodMMM:@{@"request_code":@"2001"}];
+        [[MWSDK share] openCsWithParams_MMMethodMMM:@{wwwww_tag_wwwww_request_code:wwwww_tag_wwwww_2001}];
     }];
         
     UILabel *csLable = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_customer.localx fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
@@ -457,7 +457,7 @@
 
 - (void)registerViewBtnAction_MMMethodMMM:(UIButton *)sender
 {
-    SDK_LOG(@"sender.tag=%d", sender.tag);
+    SDK_LOG(wwwww_tag_wwwww_chantmemberly_ambiate, sender.tag);
     switch (sender.tag) {
        
         case kAgreeTermsCheckBoxBtnTag:

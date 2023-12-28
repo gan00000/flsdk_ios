@@ -201,7 +201,7 @@ Keychain API expects as a validly constructed container class.
     {
         NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData_MMMPRO];
 		junk = SecItemDelete((CFDictionaryRef)tempDictionary);
-        NSAssert( junk == noErr || junk == errSecItemNotFound, @"Problem deleting current dictionary." );
+        NSAssert( junk == noErr || junk == errSecItemNotFound, wwwww_tag_wwwww_Problem_deleting_current_dictionary_ );
     }
     
     // Default attributes for keychain item.
@@ -260,7 +260,7 @@ Keychain API expects as a validly constructed container class.
     else
     {
         // Don't do anything if nothing is found.
-        NSAssert(NO, @"Serious error, no matching item found in the keychain.\n");
+        NSAssert(NO, wwwww_tag_wwwww_liveel_impact);
     }
     
     [passwordData release];
@@ -303,20 +303,20 @@ Keychain API expects as a validly constructed container class.
         // An implicit assumption is that you can only update a single item at a time.
 		
         result = SecItemUpdate((CFDictionaryRef)updateItem, (CFDictionaryRef)tempCheck);
-//		NSAssert( result == noErr, @"Couldn't update the Keychain Item." );
-//        NSLog(@"Updating the Keychain Item. result: %d",(int)result);
+//		NSAssert( result == noErr, wwwww_tag_wwwww_headate_thoughtard );
+//        NSLog(wwwww_tag_wwwww_eye_dinner,(int)result);
         if (result != noErr) {
-            NSLog(@"Dangerous!!! Couldn't update the Keychain Item. result: %d",(int)result);
+            NSLog(wwwww_tag_wwwww_archeoally_nuern,(int)result);
         }
     }
     else
     {
         // No previous item found; add the new one.
         result = SecItemAdd((CFDictionaryRef)[self dictionaryToSecItemFormat_MMMethodMMM:keychainItemData_MMMPRO], NULL);
-//		NSAssert( result == noErr, @"Couldn't add the Keychain Item." );
-//        NSLog(@"Adding the Keychain Item. result: %d",(int)result);
+//		NSAssert( result == noErr, wwwww_tag_wwwww_largeory_ourie );
+//        NSLog(wwwww_tag_wwwww_behindproof_taskee,(int)result);
         if (result != noErr) {
-            NSLog(@"Dangerous!!! Couldn't add the Keychain Item. result: %d",(int)result);
+            NSLog(wwwww_tag_wwwww_pylent_mandeous,(int)result);
         }
     }
 }

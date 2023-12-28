@@ -164,7 +164,7 @@
     }];
     
     NSString * url = SDK_DATA.urls_MMMPRO.noticeUrl;
-    SDK_LOG(@"notice Url=%@",url);
+    SDK_LOG(wwwww_tag_wwwww_sarcage_stigmat,url);
     if(url){
         [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     }

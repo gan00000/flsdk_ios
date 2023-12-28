@@ -36,12 +36,12 @@
         switch (type) {
             case SDK_ICON_TITLE_BUTTON_TYPE_FB:
                 iconName = wwwww_tag_wwwww_sdk_btn_icon_fb_png;
-                titleName = @"Sign in with Facebook";
+                titleName = wwwww_tag_wwwww_Sign_in_with_Facebook;
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_APPLE:
                 
                 iconName = wwwww_tag_wwwww_sdk_btn_icon_apple_png;
-                titleName = @"Sign in with Apple";
+                titleName = wwwww_tag_wwwww_Sign_in_with_Apple;
                 
                 break;
             case SDK_ICON_TITLE_BUTTON_TYPE_GEUST:

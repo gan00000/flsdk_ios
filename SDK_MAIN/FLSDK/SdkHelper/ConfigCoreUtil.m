@@ -232,7 +232,7 @@ static dispatch_once_t onceToken;
     
     if(userInfoJson){
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, loginResopnse.data.userId]];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty, wwwww_tag_wwwww_Key_GameUserMode, loginResopnse.data.userId]];
         [userDefaults synchronize];
     }
     
@@ -247,7 +247,7 @@ static dispatch_once_t onceToken;
     NSString *userInfoJson = [gameUserModel yy_modelToJSONString];
     if(userInfoJson){
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, gameUserModel.userId]];
+        [userDefaults setObject:userInfoJson forKey:[NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty, wwwww_tag_wwwww_Key_GameUserMode, gameUserModel.userId]];
         [userDefaults synchronize];
     }
    
@@ -256,7 +256,7 @@ static dispatch_once_t onceToken;
 -(GameUserModel*)getGameUserInfo_MMMethodMMM:(NSString *)userId
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *userInfoJson = [userDefaults stringForKey:[NSString stringWithFormat:@"%@_%@", wwwww_tag_wwwww_Key_GameUserMode, userId]];
+    NSString *userInfoJson = [userDefaults stringForKey:[NSString stringWithFormat:wwwww_tag_wwwww_hysterfier_throughouty, wwwww_tag_wwwww_Key_GameUserMode, userId]];
     if(userInfoJson){
         GameUserModel *gameUserModel = [GameUserModel yy_modelWithJSON:userInfoJson];
         return gameUserModel;

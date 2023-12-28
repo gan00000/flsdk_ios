@@ -82,7 +82,7 @@
 
 -(void)backUIView_MMMethodMMM:(UITapGestureRecognizer *)gesture
 {
-    SDK_LOG(@"backUIView gesture");
+    SDK_LOG(wwwww_tag_wwwww_backUIView_gesture);
     // [appTopViewController dismissViewControllerAnimated:NO completion:nil];
 //    if (self.delegate) {
 //        [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 sdkPage:<#(SDKPage)#>];

@@ -56,7 +56,7 @@
         case BUTTON_TYPE_OK: //確認
             normalImage = wwwww_tag_wwwww_sdk_btn_bg_png;
             highlightedImage = wwwww_tag_wwwww_sdk_btn_bg_png;
-            titleText = @"確   認";
+            titleText = wwwww_tag_wwwww_sportsome_pilfaction;
             break;
         case BUTTON_TYPE_BIND_FB: //綁定
             normalImage = wwwww_tag_wwwww_sdk_btn_bdfb_png;

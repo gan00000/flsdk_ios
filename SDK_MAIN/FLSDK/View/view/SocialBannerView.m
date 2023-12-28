@@ -53,14 +53,14 @@
         }];
         
         
-        NSString *resultURL = GetConfigString(@"sdk_social_banner_url");//社群banner
+        NSString *resultURL = GetConfigString(wwwww_tag_wwwww_sdk_social_banner_url);//社群banner
         if ([StringUtil isNotEmpty_MMMethodMMM:resultURL]) {
             
             resultURL = [NSString stringWithFormat:resultURL, GAME_CODE];
             
             resultURL = [SDKRequest createSdkUrl_MMMethodMMM:resultURL otherDic_MMMethodMMM:nil];
             
-            SDK_LOG(@"showSocialView url=%@",resultURL);
+            SDK_LOG(wwwww_tag_wwwww_dichfollow_cultureorium,resultURL);
             MWWebViewController *webVC = [MWWebViewController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
           
             webVC.webViewDelegate_MMMPRO = self;
@@ -70,7 +70,7 @@
                 make.trailing.bottom.mas_equalTo(contentView).offset(-10);
             }];
         }else{
-            SDK_LOG(@"showSocialView url is empty");
+            SDK_LOG(wwwww_tag_wwwww_showSocialView_url_is_empty);
         }
         
         UIButton *closeBtn = [UIUtil initBtnWithNormalImage_MMMethodMMM:icon_close_social highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];

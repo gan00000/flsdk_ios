@@ -59,12 +59,12 @@
 + (void)logWithEventName_MMMethodMMM:(NSString *)eventName parameters_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type isOnce:(BOOL) isOnce{
     
     if(isOnce){
-        NSString *eventNameTag = STR_FORMAT(@"%@_%@", eventName, SDK_DATA.mLoginResponse_MMMPRO.data.userId);
+        NSString *eventNameTag = STR_FORMAT(wwwww_tag_wwwww_hysterfier_throughouty, eventName, SDK_DATA.mLoginResponse_MMMPRO.data.userId);
         if ([SdkUtil isReportEventName_MMMethodMMM: eventNameTag]) {
-            SDK_LOG(@"log event exist, eventName=%@",eventName);
+            SDK_LOG(wwwww_tag_wwwww_purposeon_commercialsive,eventName);
             return;
         }
-        SDK_LOG(@"log event, eventName=%@",eventName);
+        SDK_LOG(wwwww_tag_wwwww_notopatientacity_sperm,eventName);
         [self logWithEventName_MMMethodMMM:eventName parameters_MMMethodMMM:eventValues type_MMMethodMMM:type];
         [SdkUtil saveReportEventName_MMMethodMMM:eventNameTag];
     }else{
@@ -80,7 +80,7 @@
     }
     
     [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:type name_MMMethodMMM:nil];
-    [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:AdType_Firebase name_MMMethodMMM:@"purchase_hf"];
+    [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:AdType_Firebase name_MMMethodMMM:wwwww_tag_wwwww_purchase_hf];
     
     GameUserModel *gGameUserModel = [[ConfigCoreUtil share] getGameUserInfo_MMMethodMMM:SDK_DATA.mLoginResponse_MMMPRO.data.userId];
     if(gGameUserModel){
@@ -105,7 +105,7 @@
             }
 //            [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];
             
-            [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:type name_MMMethodMMM:@"purchase_first_charge_hf"];
+            [AdDelegate logEventPurchaseValues_MMMethodMMM:mPayData type_MMMethodMMM:type name_MMMethodMMM:wwwww_tag_wwwww_purchase_first_charge_hf];
         }
         
 //        if(mPayData.amount > 4){
@@ -118,7 +118,7 @@
 //        }
         
         if(mPayData.amount > 99){
-            [self logWithEventName_MMMethodMMM:@"purchase_99_single_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_purchase_99_single_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         
         gGameUserModel.payAmount = gGameUserModel.payAmount + mPayData.amount;
@@ -127,29 +127,29 @@
         [[ConfigCoreUtil share] updateGameUserInfo_MMMethodMMM:gGameUserModel];//更新数据
         
         if(gGameUserModel.payAmount >= 50){
-            [self logWithEventName_MMMethodMMM:@"continuous_50_dollars_recharege_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_50_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payAmount >= 100){
-            [self logWithEventName_MMMethodMMM:@"continuous_100_dollars_recharege_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_100_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payAmount >= 500){
-            [self logWithEventName_MMMethodMMM:@"continuous_500_dollars_recharege_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_500_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payAmount >= 1000){
-            [self logWithEventName_MMMethodMMM:@"continuous_1000_dollars_recharege_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_1000_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payAmount >= 3000){
-            [self logWithEventName_MMMethodMMM:@"continuous_3000_dollars_recharege_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_continuous_3000_dollars_recharege_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         
         if(gGameUserModel.payCount == 2){
-            [self logWithEventName_MMMethodMMM:@"purchase_2rd_charge_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_purchase_2rd_charge_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payCount == 3){
-            [self logWithEventName_MMMethodMMM:@"purchase_3rd_charge_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_purchase_3rd_charge_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         if(gGameUserModel.payCount == 10){
-            [self logWithEventName_MMMethodMMM:@"purchase_10rd_charge_hf" parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
+            [self logWithEventName_MMMethodMMM:wwwww_tag_wwwww_purchase_10rd_charge_hf parameters_MMMethodMMM:nil type_MMMethodMMM:type isOnce:YES];
         }
         
     }
@@ -172,13 +172,13 @@
 {
     
     if ([SdkUtil isReportEventName_MMMethodMMM:eventName]) {
-        SDK_LOG(@"send event to sever exist, eventName=%@",eventName);
+        SDK_LOG(wwwww_tag_wwwww_pungic_vulgindeeder,eventName);
         return;
     }
-    SDK_LOG(@"send event to sever, eventName=%@",eventName);
+    SDK_LOG(wwwww_tag_wwwww_privify_volunttion,eventName);
     [SDKRequest reportSdkEventWithEventName_MMMethodMMM:eventName successBlock_MMMethodMMM:^(id responseData) {
         [SdkUtil saveReportEventName_MMMethodMMM:eventName];
-        SDK_LOG(@"send event to sever success, eventName=%@",eventName);
+        SDK_LOG(wwwww_tag_wwwww_fishain_comacy,eventName);
     } errorBlock_MMMethodMMM:^(BJError *error) {
         
     }];

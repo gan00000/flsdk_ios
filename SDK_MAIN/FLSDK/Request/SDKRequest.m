@@ -17,10 +17,10 @@
                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
-    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/areaCode/areaInfo.json?t=%@", [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:wwwww_tag_wwwww_curseer_sternitude, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
         NSArray *responseArray = responseData;
-        SDK_LOG(@"sdk areaCode info:%@",responseArray);
+        SDK_LOG(wwwww_tag_wwwww_vivness_botanlegalance,responseArray);
         if (responseArray) {
             [SdkUtil savePhoneAreaInfo_MMMethodMMM:responseArray];
         }
@@ -40,10 +40,10 @@
                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
 {
     BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
-    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/%@/v1/version.json?t=%@", GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:wwwww_tag_wwwww_environmentalatory_alteratfication, GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
         NSDictionary *responseDict = responseData;
-        SDK_LOG(@"sdk config:%@",responseDict);
+        SDK_LOG(wwwww_tag_wwwww_boardress_stationally,responseDict);
 //        ConfigModel *allVersion = [ConfigModel yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_allVersion]];//需要分开解析
         NSArray<ConfigModel *> *allVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_allVersion]];
         NSArray<ConfigModel *> *subVersion = [NSArray yy_modelArrayWithClass:[ConfigModel class] json:responseDict[wwwww_tag_wwwww_subVersion]];
@@ -123,12 +123,12 @@
         //[self _presentAlertWithException:exception andDictionary:dic];
     }
     
-    SDK_LOG(@"reportSdkEvent start EventName:%@", eventName);
+    SDK_LOG(wwwww_tag_wwwww_standmost_palplaytion, eventName);
     BJBaseHTTPEngine *logHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getLogUrl_MMMethodMMM]];
     
-    [logHTTPEngine getRequestWithFunctionPath_MMMethodMMM:@"sdk/event/log" params_MMMethodMMM:params successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [logHTTPEngine getRequestWithFunctionPath_MMMethodMMM:wwwww_tag_wwwww_sdk_event_log params_MMMethodMMM:params successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
-        SDK_LOG(@"reportSdkEvent finish success EventName:%@", eventName);
+        SDK_LOG(wwwww_tag_wwwww_presidentacy_clausaneity, eventName);
         
         if (successBlock) {
             successBlock(responseData);
@@ -136,7 +136,7 @@
         
     } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
         
-        SDK_LOG(@"reportSdkEvent finish error EventName:%@, errorMsg:%@", eventName, error.description);
+        SDK_LOG(wwwww_tag_wwwww_condiweightenne_director, eventName, error.description);
         if (errorBlock) {
             errorBlock(nil);
         }
@@ -430,7 +430,7 @@
         [wDic addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     return wDic;
     
@@ -786,7 +786,7 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     
     [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_order_create params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
@@ -848,7 +848,7 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     
     [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_payment params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
@@ -918,7 +918,7 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     
     [HttpServiceEnginePay postRequestWithFunctionPath_MMMethodMMM:api_check_payment_channel params_MMMethodMMM:params successBlock_MMMethodMMM:successBlock errorBlock_MMMethodMMM:errorBlock];
@@ -964,24 +964,24 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     
     if (params) {
         NSString *aUrl = @"";
         for (NSString *key in params) {
             NSString *value = params[key];
-            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+            aUrl = [NSString stringWithFormat:wwwww_tag_wwwww_languageize_attackitive,aUrl,key,value];
         }
         SDK_LOG(@"%@",aUrl);
     }
     
     BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getPlatUrl_MMMethodMMM]];
-    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:@"sdk/api/market/switch"
+    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:wwwww_tag_wwwww_sdk_api_market_switch
                                            params_MMMethodMMM:params
                                      successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
-        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        SDK_LOG(wwwww_tag_wwwww_phorcontainuous_glabrety, task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
         
         NSDictionary *responseDict = responseData;
         BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
@@ -1015,10 +1015,10 @@
     //sdk/api/market/articles
 
 //    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
-//    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/%@/v1/market.json?t=%@", GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+//    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:wwwww_tag_wwwww_availableary_insteadism, GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
 //
 //        NSDictionary *responseDict = responseData;
-//        SDK_LOG(@"sdk config:%@",responseDict);
+//        SDK_LOG(wwwww_tag_wwwww_boardress_stationally,responseDict);
 //        NSArray<ExpoModel *> *expoModeArr = [NSArray yy_modelArrayWithClass:[ExpoModel class] json:responseDict];
 //        if (successBlock) {
 //            successBlock(expoModeArr);
@@ -1065,27 +1065,27 @@
         [params addEntriesFromDictionary:dic];
         
     } @catch (NSException *exception) {
-        NSLog(@"exception:%@",exception.description);
+        NSLog(wwwww_tag_wwwww_tainpage_lepid,exception.description);
     }
     
     if (params) {
         NSString *aUrl = @"";
         for (NSString *key in params) {
             NSString *value = params[key];
-            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+            aUrl = [NSString stringWithFormat:wwwww_tag_wwwww_languageize_attackitive,aUrl,key,value];
         }
         SDK_LOG(@"%@",aUrl);
     }
     
     BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getPlatUrl_MMMethodMMM]];
-    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:@"sdk/api/market/articles"
+    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:wwwww_tag_wwwww_sdk_api_market_articles
                                            params_MMMethodMMM:params
                                      successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
-        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        SDK_LOG(wwwww_tag_wwwww_phorcontainuous_glabrety, task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
         
         NSDictionary *responseDict = responseData;
-        SDK_LOG(@"market/articles:%@",responseDict);
+        SDK_LOG(wwwww_tag_wwwww_seato_especiallyise,responseDict);
         BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
         if(responceModel && responceModel.isRequestSuccess_MMMethodMMM){
             NSArray<ExpoModel *> *expoModeArr = [NSArray yy_modelArrayWithClass:[ExpoModel class] json:responseDict[wwwww_tag_wwwww_data]];
@@ -1124,23 +1124,23 @@
     for (NSString * key in temDic) {
     
         NSString * value = [NSString stringWithFormat:@"%@", temDic[key]];
-        tempParams = [NSString stringWithFormat:@"%@%@=%@&", tempParams, key, value];
+        tempParams = [NSString stringWithFormat:wwwww_tag_wwwww_languageize_attackitive, tempParams, key, value];
         
     }
     
     if ([tempParams hasSuffix:@"&"]){
-        tempParams = [NSString stringWithFormat:@"%@aKey=1", tempParams];
+        tempParams = [NSString stringWithFormat:wwwww_tag_wwwww_uloproof_heartess, tempParams];
     }
     
     if ([url hasSuffix:@"?"]) {
-        return [NSString stringWithFormat:@"%@%@", url, tempParams];
+        return [NSString stringWithFormat:wwwww_tag_wwwww_bat_bacair, url, tempParams];
     }
     
     if ([url containsString:@"?"]){
-        return [NSString stringWithFormat:@"%@&%@", url, tempParams];
+        return [NSString stringWithFormat:wwwww_tag_wwwww_daughterless_pitair, url, tempParams];
     }
     
-    return [NSString stringWithFormat:@"%@?%@", url, tempParams];;
+    return [NSString stringWithFormat:wwwww_tag_wwwww_finditious_threatence, url, tempParams];;
 }
 
 @end

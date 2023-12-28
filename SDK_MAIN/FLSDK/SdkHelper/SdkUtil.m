@@ -22,7 +22,7 @@
 
 //#define winWidth        [SUtil getCurrentScreenFrame_MMMethodMMM].size.width//[UIScreen mainScreen].bounds.size.width
 //#define winHeight       [SUtil getCurrentScreenFrame_MMMethodMMM].size.height//[UIScreen mainScreen].bounds.size.height
-#define FONT_Helvetica_BOLD      @"Helvetica-Bold"
+#define FONT_Helvetica_BOLD      wwwww_tag_wwwww_Helvetica_Bold
 #define FONT_Helvetica           wwwww_tag_wwwww_Helvetica
 #define FONTSIZE(fontsize)  IS_IPAD ? fontsize+7.0f : fontsize
 
@@ -363,14 +363,14 @@
     UIView *titleView = [[UIView alloc] init];
     [titleView setBackgroundColor:[UIColor clearColor]];
 
-    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxTitle font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minTitle font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxTitle font_MMMethodMMM:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minTitle font_MMMethodMMM:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
     
     UITextField *maxTextView = [[UITextField alloc] init];
     [maxTextView setEnabled:NO];
     [maxTextView setText:maxTitle];
     [maxTextView setTextColor:RGB(84, 149, 223)];
-    [maxTextView setFont:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)]];
+    [maxTextView setFont:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMaxFontSize)]];
     [titleView addSubview:maxTextView];
     [maxTextView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.height.equalTo(titleView).multipliedBy(0.5);
@@ -384,7 +384,7 @@
     [minTextView setEnabled:NO];
     [minTextView setAdjustsFontSizeToFitWidth:NO];
     [minTextView setTextColor:[UIColor whiteColor]];
-    [minTextView setFont:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)]];
+    [minTextView setFont:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMinFontSize)]];
     [minTextView setTextAlignment:NSTextAlignmentLeft];
     [titleView addSubview:minTextView];
     [minTextView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -405,8 +405,8 @@
 
 + (CGFloat)titleFontWedthWithMaxStr_MMMethodMMM:(NSString *)maxStr minStr_MMMethodMMM:(NSString *)minStr
 {
-    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxStr font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minStr font_MMMethodMMM:[UIFont fontWithName:@"Helvetica-Bold" size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize maxTextSize = [self sizeWithText_MMMethodMMM:maxStr font_MMMethodMMM:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMaxFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    CGSize minTextSize = [self sizeWithText_MMMethodMMM:minStr font_MMMethodMMM:[UIFont fontWithName:wwwww_tag_wwwww_Helvetica_Bold size:FONTSIZE(titleMinFontSize)] maxSize_MMMethodMMM:CGSizeMake(MAXFLOAT, MAXFLOAT)];
     
     return maxTextSize.width+minTextSize.width;
 }
@@ -621,13 +621,13 @@
 
 + (void)saveReportEventName_MMMethodMMM:(NSString *)eventName
 {
-    [[NSUserDefaults standardUserDefaults] setObject:eventName forKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
+    [[NSUserDefaults standardUserDefaults] setObject:eventName forKey:[NSString stringWithFormat:wwwww_tag_wwwww_sit_minditor,eventName]];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (BOOL)isReportEventName_MMMethodMMM:(NSString *)eventName
 {
-    NSString *saveName = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"sdk_event_%@",eventName]];
+    NSString *saveName = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:wwwww_tag_wwwww_sit_minditor,eventName]];
     
     if (saveName) {
         return YES;
@@ -637,13 +637,13 @@
 
 + (void)saveAlready14Age_MMMethodMMM:(BOOL)isAge14
 {
-    [[NSUserDefaults standardUserDefaults]  setBool:isAge14 forKey:@"sdk_is14age"];
+    [[NSUserDefaults standardUserDefaults]  setBool:isAge14 forKey:wwwww_tag_wwwww_sdk_is14age];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (BOOL)isAlready14Age_MMMethodMMM
 {
-    return [[NSUserDefaults standardUserDefaults] boolForKey:@"sdk_is14age"];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:wwwww_tag_wwwww_sdk_is14age];
 }
 
 

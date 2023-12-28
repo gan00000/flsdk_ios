@@ -9,10 +9,10 @@
 #ifndef ColorHeader_h
 #define ColorHeader_h
 
-#define BaseColor  @"#02F0FE"
-#define C_BUTTON_START  @"#4FACFE"
-#define C_BUTTON_END  @"#00F2FE"
+#define BaseColor  wwwww_tag_wwwww__CC_02F0FE
+#define C_BUTTON_START  wwwww_tag_wwwww__CC_4FACFE
+#define C_BUTTON_END  wwwww_tag_wwwww__CC_00F2FE
 
-#define term_title_unselect     @"#B1B1B1"
+#define term_title_unselect     wwwww_tag_wwwww__CC_B1B1B1
 
 #endif /* ColorHeader_h */

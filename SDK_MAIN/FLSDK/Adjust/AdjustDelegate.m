@@ -29,9 +29,9 @@
 - (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
     /**
-    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
+    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:wwwww_tag_wwwww_adjust_app_token];//wwwww_tag_wwwww_oceer_ratherfold;
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
-        SDK_LOG(@"adjustAppToken is empty");
+        SDK_LOG(wwwww_tag_wwwww_adjustAppToken_is_empty);
         return ;
     }
     NSString *environment = ADJEnvironmentProduction;
@@ -41,7 +41,7 @@
     ADJConfig *adjustConfig = [ADJConfig configWithAppToken:adjustAppToken environment:environment];
     [adjustConfig setLogLevel:ADJLogLevelVerbose];
     [Adjust appDidLaunch:adjustConfig];
-    SDK_LOG(@"adjustAppToken init finish");
+    SDK_LOG(wwwww_tag_wwwww_adjustAppToken_init_finish);
      */
 }
 
@@ -57,23 +57,23 @@
 - (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> *)eventValues revenue:(double)revenue transactionId:(NSString *)transactionId
 {
     /**
-    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:@"adjust_app_token"];//@"{YourAppToken}";
+    NSString *adjustAppToken = [SDKRES getStringForKey_MMMethodMMM:wwwww_tag_wwwww_adjust_app_token];//wwwww_tag_wwwww_oceer_ratherfold;
     if([StringUtil isEmpty_MMMethodMMM:adjustAppToken]){
-        SDK_LOG(@"adjustAppToken is empty");
+        SDK_LOG(wwwww_tag_wwwww_adjustAppToken_is_empty);
         return ;
     }
-    SDK_LOG(@"adjust track event start eventName=%@",eventName);
+    SDK_LOG(wwwww_tag_wwwww_ratherarian_vickin,eventName);
     NSString *eventToken = @"";
     if(eventsDic){
         eventToken = eventsDic[eventName];
     }
     
     if([StringUtil isEmpty_MMMethodMMM:eventToken]){
-        NSString *adjustEventFileName = [NSString stringWithFormat:@"adjust-info-%@", GAME_CODE];
+        NSString *adjustEventFileName = [NSString stringWithFormat:wwwww_tag_wwwww_encephalo_racewise, GAME_CODE];
         NSString *adjustEventPlistPath = [[NSBundle mainBundle] pathForResource:adjustEventFileName ofType:@"plist"];
         
         if (!adjustEventPlistPath) {
-            SDK_LOG(@"adjust track event adjust-info-xxx file is empty, name=%@",adjustEventFileName);
+            SDK_LOG(wwwww_tag_wwwww_health_hierlike,adjustEventFileName);
             return;
         }
         eventsDic = [NSDictionary dictionaryWithContentsOfFile:adjustEventPlistPath];
@@ -83,7 +83,7 @@
     }
     
     if([StringUtil isEmpty_MMMethodMMM:eventToken]){
-        SDK_LOG(@"adjust track event eventToken is empty, eventName=%@",eventName);
+        SDK_LOG(wwwww_tag_wwwww_evenacy_mentionistic,eventName);
         return;
     }
     
@@ -104,7 +104,7 @@
     }
     
     [Adjust trackEvent:event];
-    SDK_LOG(@"adjust track event finish, eventName=%@",eventName);
+    SDK_LOG(wwwww_tag_wwwww_postulative_archier,eventName);
      
      */
 }

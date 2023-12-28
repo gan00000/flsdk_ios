@@ -74,7 +74,7 @@
 
     if (error) {
         // Login failed with an error. Use the error parameter to identify the problem.
-        NSLog(@"Error: %@", error.localizedDescription);
+        NSLog(wwwww_tag_wwwww_pleious_sinistrbrotherally, error.localizedDescription);
         if (self.failCallBack) {
             self.failCallBack(@"",@"",@"");
         }
@@ -93,7 +93,7 @@
         if (pictureURL) {
             pictureUrlString = profile.pictureURL.absoluteString;
         }
-        SDK_LOG(@"accessToken=%@,userID=%@,displayName=%@",accessToken,userID,displayName);
+        SDK_LOG(wwwww_tag_wwwww_fusarian_answership,accessToken,userID,displayName);
         if (self.successCallBack) {
             self.successCallBack(accessToken, userID, displayName);
         }

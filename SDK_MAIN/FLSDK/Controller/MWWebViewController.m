@@ -51,7 +51,7 @@
     //        [containerVC presentViewController:safariVC animated:animation completion:handler];
     //        return nil;
     //    }
-    //    SDK_LOG(@"not device_is_iPhoneX");
+    //    SDK_LOG(wwwww_tag_wwwww_not_device_is_iPhoneX);
     MWWebViewController *webVC = [[MWWebViewController alloc] initWithWebLayoutIsShowTitle_MMMethodMMM:isShowTitle animation_MMMethodMMM:animation];
     webVC.modalTransitionStyle = animationStyle;
     webVC.modalPresentationStyle = UIModalPresentationFullScreen;//不添加这句选择图片会崩溃
@@ -104,7 +104,7 @@
 - (void)viewDidLoad { //system_method
     [super viewDidLoad];
     
-    SDK_LOG(@"MWWebViewController viewDidLoad");
+    SDK_LOG(wwwww_tag_wwwww_MWWebViewController_viewDidLoad);
     self.backgroundView_MMMPRO = [[UIView alloc] init];
     [self.view addSubview:self.backgroundView_MMMPRO];
     
@@ -274,7 +274,7 @@
         self.willDismissCallback_MMMPRO(@"",0, nil);
     }
     [self dismissViewControllerAnimated:NO completion:^{
-        SDK_LOG(@"userContentController dismissViewControllerAnimated");
+        SDK_LOG(wwwww_tag_wwwww_userContentController_dismissViewControllerAnimated);
         !_didDismissCallback_MMMPRO ?: _didDismissCallback_MMMPRO();
     }];
     [self releaseAll_MMMethodMMM];
@@ -285,25 +285,25 @@
 //页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation   //system_method
 {
-    SDK_LOG(@"页面开始加载 webView didStartProvisionalNavigation");
+    SDK_LOG(wwwww_tag_wwwww_state_furc);
 //    [_indicatorView startAnimating];
     
 }
 
 // 页面加载失败时调用        (请求返回的是403、404时，webView不认为这是请求失败，不调用此代理方法)
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
-    SDK_LOG(@"页面加载失败时调用 webView didFailProvisionalNavigation");
+    SDK_LOG(wwwww_tag_wwwww_word_fanior);
 }
 
 // 当内容开始返回时调用
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation //system_method
 {
-    SDK_LOG(@"页面开始返回webView didCommitNavigation");
+    SDK_LOG(wwwww_tag_wwwww_avi_revealfier);
 }
 // 页面加载完成之后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation //system_method
 {
-    SDK_LOG(@"页面完成加载webView didFinishNavigation");
+    SDK_LOG(wwwww_tag_wwwww_awayency_nonelike);
 //    [_indicatorView stopAnimating];
     
 }
@@ -311,7 +311,7 @@
 //提交发生错误时调用
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error    //system_method
 {
-    SDK_LOG(@"提交发生错误时调 webView didFailNavigation withError");
+    SDK_LOG(wwwww_tag_wwwww_herbibility_largistic);
 //    [_indicatorView stopAnimating];
     
 }
@@ -319,7 +319,7 @@
 //根据WebView对于即将跳转的HTTP请求头信息和相关信息来决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler  //system_method
 {
-    SDK_LOG(@"决定是否跳转 webView decidePolicyForNavigationAction decisionHandler");
+    SDK_LOG(wwwww_tag_wwwww_parti_coldsure);
     if (_webViewDelegate_MMMPRO && [_webViewDelegate_MMMPRO respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate_MMMPRO webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {
@@ -333,13 +333,13 @@
 //1、当Web视图收到服务器重定向时调用
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation    //system_method
 {
-    SDK_LOG(@"收到服务器重定 didReceiveServerRedirectForProvisionalNavigation");
+    SDK_LOG(wwwww_tag_wwwww_sten_edgeian);
 }
 
 //根据客户端受到的服务器响应头以及response相关信息来决定是否可以跳转
 //服务器返回200以外的状态码时，都调用请求失败的方法。 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-    SDK_LOG(@"webView decidePolicyForNavigationResponse statusCode = %d", ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
+    SDK_LOG(wwwww_tag_wwwww_pictoify_anyone, ((NSHTTPURLResponse *)navigationResponse.response).statusCode);
     if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) { //200以外的状态码时，都调用请求失败的方法
         decisionHandler (WKNavigationResponsePolicyAllow);
         if(self.defalutCloseBtn_MMMPRO && self.isShowDefulatCloseBtn_MMMPRO){
@@ -356,7 +356,7 @@
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler   //system_method
 {
-    SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
+    SDK_LOG(wwwww_tag_wwwww_completionHandler_runJavaScriptAlertPanelWithMessage);
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
@@ -368,13 +368,13 @@
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler  //system_method
 {
-    SDK_LOG(@"completionHandler runJavaScriptAlertPanelWithMessage");
+    SDK_LOG(wwwww_tag_wwwww_completionHandler_runJavaScriptAlertPanelWithMessage);
 }
 
 
 -(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures  //system_method
 {
-    SDK_LOG(@"completionHandler createWebViewWithConfiguration windowFeatures");
+    SDK_LOG(wwwww_tag_wwwww_completionHandler_createWebViewWithConfiguration_windowFeatures);
     WKFrameInfo *frameInfo = navigationAction.targetFrame;
     if (![frameInfo isMainFrame]) {
         [webView loadRequest:navigationAction.request];
@@ -385,7 +385,7 @@
 #pragma mark - WKUserContentController
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message   //system_method
 {
-    SDK_LOG(@"userContentController message=%@", message.name);
+    SDK_LOG(wwwww_tag_wwwww_gemperiodain_crepitical, message.name);
     dispatch_async(dispatch_get_main_queue(), ^{
         
         if ([message.name isEqualToString:js_close]) {
@@ -446,7 +446,7 @@
 //如果将shouldAutorotate设置为YES,setStatusBarOrientation方法设置无效，只有shouldAutorotate设置为NO,才会起作用
 - (BOOL)shouldAutorotate    //system_method
 {
-    SDK_LOG(@"shouldAutorotate");
+    SDK_LOG(wwwww_tag_wwwww_shouldAutorotate);
     return _shouldRotate_MMMPRO;
 }
 //设置页面支持的旋转方向。
@@ -454,7 +454,7 @@
 //iPad上默认返回UIInterfaceOrientationMaskAll；
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations    //system_method
 {
-    SDK_LOG(@"supportedInterfaceOrientations");
+    SDK_LOG(wwwww_tag_wwwww_supportedInterfaceOrientations);
     return _interfaceOrientationMask_MMMPRO;
 }
 
@@ -472,14 +472,14 @@
     //    } else {
     //        return _interfaceOrientation;
     //    }
-    SDK_LOG(@"preferredInterfaceOrientationForPresentation");
+    SDK_LOG(wwwww_tag_wwwww_preferredInterfaceOrientationForPresentation);
     return self.interfaceOrientation_MMMPRO;
     ;
 }
 
 
 - (void)releaseAll_MMMethodMMM {
-    SDK_LOG(@"MWWebViewController releaseAll");
+    SDK_LOG(wwwww_tag_wwwww_MWWebViewController_releaseAll);
     @try {
         
         [self.wkwebView_MMMPRO.configuration.userContentController removeScriptMessageHandlerForName:js_close];
@@ -498,7 +498,7 @@
 
 - (void)dealloc
 {
-    SDK_LOG(@"MWWebViewController dealloc");
+    SDK_LOG(wwwww_tag_wwwww_MWWebViewController_dealloc);
 //    [self releaseAll];
 }
 

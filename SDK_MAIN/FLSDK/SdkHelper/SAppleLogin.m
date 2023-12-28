@@ -75,7 +75,7 @@
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", controller);
     NSLog(@"%@", authorization);
-    NSLog(@"authorization.credential：%@", authorization.credential);
+    NSLog(wwwww_tag_wwwww_pathyety_multamethoddom, authorization.credential);
 
     NSMutableString *mStr = [NSMutableString string];
 //    mStr = [_appleIDInfoTextView.text mutableCopy];
@@ -96,7 +96,7 @@
         [mStr appendString:givenName?:@""];
         NSString *email = appleIDCredential.email;
         [mStr appendString:email?:@""];
-        NSLog(@"mStr：%@", mStr);
+        NSLog(wwwww_tag_wwwww_necessary_altiory, mStr);
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""}];
@@ -112,7 +112,7 @@
         [mStr appendString:user?:@""];
         [mStr appendString:password?:@""];
         [mStr appendString:@"\n"];
-        NSLog(@"mStr：%@", mStr);
+        NSLog(wwwww_tag_wwwww_necessary_altiory, mStr);
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""}];
             self.impSuccess_MMMPRO(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
@@ -134,7 +134,7 @@
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  API_AVAILABLE(ios(13.0)){    //system_method
 
     NSLog(@"%s", __FUNCTION__);
-    NSLog(@"错误信息：%@", error);
+    NSLog(wwwww_tag_wwwww_ok_rotrateproof, error);
     NSString *errorMsg = nil;
     self.impError_MMMPRO(error);
     switch (error.code) {
@@ -172,7 +172,7 @@
 //        [AlertUtil showAlertWithMessage_MMMethodMMM:mStr];
 //
 //    }
-//    NSLog(@"controller requests：%@", controller.authorizationRequests);
+//    NSLog(wwwww_tag_wwwww_highability_hirsutard, controller.authorizationRequests);
     /* // 取消授权的时候也会调用这里
      ((ASAuthorizationAppleIDRequest *)(controller.authorizationRequests[0])).requestedScopes
      <__NSArrayI 0x2821e2520>(
@@ -187,7 +187,7 @@
 //! 告诉代理应该在哪个window 展示内容给用户
 - (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller API_AVAILABLE(ios(13.0)){  //system_method
 
-    NSLog(@"调用展示window方法：%s", __FUNCTION__);
+    NSLog(wwwww_tag_wwwww_violenceative_pointsome, __FUNCTION__);
     // 返回window
     if (presentView) {
         return presentView.window;
