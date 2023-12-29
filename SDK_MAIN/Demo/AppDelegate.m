@@ -7,7 +7,7 @@
 #import "UserModel.h"
 
 #import "ResHeader.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 #import "AFNetworkReachabilityManager.h"
 
 @interface AppDelegate ()
@@ -54,7 +54,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
   
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     [self afnReachabilityTest];
-    [[MWSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
+    [[DYSDK share]application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
     
     /// TO DO
@@ -76,7 +76,7 @@ NSLog(@"Stack Trace: %@",[exception callStackSymbols]);
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
 
-     [[MWSDK share] application:app
+     [[DYSDK share] application:app
                   openURL:url
                   options:options];
     return YES;

@@ -2,7 +2,7 @@
 
 #import "OldlikeUdintudeeousView.h"
 #import "UIView+TripseousServiceit.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 @interface OldlikeUdintudeeousView()
 

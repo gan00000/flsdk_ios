@@ -1,0 +1,17 @@
+{   "af_dev_key" : "a",
+    "sdk_ad_bug" : "0",
+    "appKey" : "e8e345190cc688e36318ee1f53c033e9",
+    "gameCode" : "opcaaios",
+    "gameLanguage" : "th_TH",
+    "sdk_language" : "th",
+    "sdk_appId" : "1",
+    "sdk_more_language" : "0",
+    "sdk_res_bundle_name" : "SDKResourcesKR",
+    "sdk_url_cdn" : "https://cdn-download.tiangwl.com/",
+    "sdk_url_log" : "https://log.tiangwl.com/",
+    "sdk_url_login" : "https://login.tiangwl.com/",
+    "sdk_url_pay" : "https://pay.tiangwl.com/",
+    "sdk_v_version" : "kr",
+    "terms_service_url" : "https://member.tiangwl.com/sdk/agreement/%@_agreement.html",
+    
+}

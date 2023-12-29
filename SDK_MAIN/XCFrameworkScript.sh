@@ -8,7 +8,7 @@
 #取输出的地址，并赋值给BIN_FOLDER：BIN_FOLDER = $(cd "$(dirname "$0")";pwd)
 
 # 需要编译的 scheme
-scheme="MWSDK_VN"
+scheme="YDSDK"
 
 if [ -z "$scheme" ] || [ "$scheme" = "" ]; then
      echo "请填入 scheme 名称"

@@ -1,6 +1,6 @@
 
 #import "AuctierContainView.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FederlingTheseitiousView : AuctierContainView

@@ -5,7 +5,7 @@
 #import "UserModel.h"
 #import "IAP_ViewController.h"
 #import "ResHeader.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #import "FearicalVoracwise.h"
 
@@ -144,7 +144,7 @@
              *********************************************/
         case 0:
         {
-            [[MWSDK share] dyLoginWithBlock:^(LoginData *loginData) {
+            [[DYSDK share] dyLoginWithBlock:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -163,7 +163,7 @@
             
         case 12:
         {
-            [[MWSDK share] dySwitchLoginWithBlock:^(LoginData *loginData) {
+            [[DYSDK share] dySwitchLoginWithBlock:^(LoginData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -186,7 +186,7 @@
         case 1:
         {
             
-            [[MWSDK share] dySetRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[DYSDK share] dySetRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
             
             
         }
@@ -213,12 +213,12 @@
         }
             break;
         case 4:
-            [[MWSDK share] dyTrackWithEventName:AD_EVENT_CHECK_UPDATE];
+            [[DYSDK share] dyTrackWithEventName:AD_EVENT_CHECK_UPDATE];
             break;
 
         case 5:{
             
-            [[MWSDK share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
+            [[DYSDK share] shareWithTag:@"#萬靈召喚師" message:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明的羈絆，從神族到魔族的對抗，一段奇妙的神仙冒險之旅就此展開！" url:@"https://share.leyouye.com/aedzj/1.html" successBlock:^(BOOL success, NSDictionary * _Nullable result) {
                 
                 if (success) {
                     [FearicalVoracwise showAlertWithMessage_MMMethodMMM:@"分享成功"];
@@ -277,7 +277,7 @@
         }
             break;
         case 7:{
-            [[MWSDK share] dyBindAccountWithBlock:^(BOOL success, id  _Nullable result) {
+            [[DYSDK share] dyBindAccountWithBlock:^(BOOL success, id  _Nullable result) {
                 
                 if (success) {
                     NSLog(@"账号升级成功");
@@ -291,7 +291,7 @@
         }
             break;
         case 8:{
-            [[MWSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
+            [[DYSDK share] shareLineWithContent:@"2022首款卡牌大作【萬靈召喚師】，爆笑來襲！從東方文明到西方文明 https://share.leyouye.com/aedzj/1.html" block:^(BOOL success, id  _Nullable result) {
                 NSLog(@"shareLineWithContent finish");
             }];
             
@@ -323,7 +323,7 @@
     NSString *cpOrderId = [CollectionDoloroant getTimeStamp_MMMethodMMM];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[MWSDK share] dyPayWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[DYSDK share] dyPayWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {

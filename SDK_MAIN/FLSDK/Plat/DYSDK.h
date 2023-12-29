@@ -5,7 +5,7 @@
 #import "PayData.h"
 #import "MWStringHeaders.h"
 
-#define Decrypt_AllStringContent(text)  [[MWSDK share] dyDecodeStr:text]
+#define Decrypt_AllStringContent(text)  [[DYSDK share] dyDecodeStr:text]
 
 #define FL_SDK_VERSION      @"1.0.8"
 
@@ -49,7 +49,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 
 
 
-@interface MWSDK : NSObject
+@interface DYSDK : NSObject
 
 
 @property (nonatomic) SDKPayBlock dySDKPayBlock;

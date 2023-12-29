@@ -9,7 +9,7 @@
 #ifndef Headers_h
 #define Headers_h
 
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #define wwwww_tag_wwwww_serverTimestamp        Decrypt_AllStringContent(@"iGx0dk0CKOR7HderSw5S3A==")      //@"serverTimestamp"
 #define wwwww_tag_wwwww_install        Decrypt_AllStringContent(@"QiSNMvTzUrZEui45AV1CFg==")      //@"install"

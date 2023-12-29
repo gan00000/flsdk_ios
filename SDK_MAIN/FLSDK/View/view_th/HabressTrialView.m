@@ -11,7 +11,7 @@
 #import "GnarficMeter.h"
 #import "RestGravView.h"
 #import "FloorariumRect.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #import <AuthenticationServices/AuthenticationServices.h>
 
@@ -844,7 +844,7 @@ if(p_theorithere20301 - 261 * 115 / 732 - 645 / 92 == 51301){
     }];
     csContentView.userInteractionEnabled = YES;
     [csContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        [[MWSDK share] openCsWithParams_MMMethodMMM:@{wwwww_tag_wwwww_request_code:wwwww_tag_wwwww_2001}];
+        [[DYSDK share] openCsWithParams_MMMethodMMM:@{wwwww_tag_wwwww_request_code:wwwww_tag_wwwww_2001}];
     }];
         
     UILabel *csLable = [LeukastBetweenate initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_customer.localx fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];

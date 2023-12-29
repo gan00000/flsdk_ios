@@ -6,7 +6,7 @@
 #import "SdkHeader.h"
 #import "GamwhateverwardDendresque.h"
 #import "CollectionDoloroant.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 @interface HumaneerEgdayeur ()
 @end
@@ -1888,7 +1888,7 @@ if(I_meter35396 < 91914){
 - (NSString *)encryptContent_MMMethodMMM:(NSString *)textStringContent {
     NSString *eKey = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], wwwww_tag_wwwww_KEY);
     NSString *eIV = STRING_COMBIN([self getSdkEncryptKey_MMMethodMMM], @"IV");
-    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
+//    SDK_LOG(wwwww_tag_wwwww_ovile_punsive,eKey,eIV);
     
     NSString *encryptStr = [GamwhateverwardDendresque getEncryptStringFromString_MMMethodMMM:textStringContent WithKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
 
@@ -2304,7 +2304,7 @@ switch (f_becomeal34292) {
 //===insert my method end=== 2023-12-28 22:54:25
 - (void)logSdkResConfig_MMMethodMMM {
     
-    NSArray *languageArr = @[wwwww_tag_wwwww_zh_Hant,wwwww_tag_wwwww_zh_Hans,@"en", @"vi",@"ko", wwwww_tag_wwwww_areaInfo];
+    NSArray *languageArr = @[wwwww_tag_wwwww_zh_Hant,wwwww_tag_wwwww_zh_Hans,@"en", @"vi",@"ko", @"th", wwwww_tag_wwwww_areaInfo];
     for (NSString *languageStr in languageArr) {
         
         NSString *textStringPath = [self getSdkBundleFilePath_MMMethodMMM:languageStr ofType_MMMethodMMM:@"json"];
@@ -2752,6 +2752,8 @@ if(y_statementive35483 - 410 * 620 * 307 * 313 >= 7382){
                 languageStr = @"vi";
             }else if ([preferredLang hasPrefix:@"ko"]){
                 languageStr = @"ko";
+            }else if ([preferredLang hasPrefix:@"th"]){
+                languageStr = @"th";
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
@@ -4353,6 +4355,8 @@ if(H_earlyition35682 >= 23963){
             languageStr = wwwww_tag_wwwww_vi_VN;
         }else if ([preferredLang hasPrefix:@"ko"]){
             languageStr = wwwww_tag_wwwww_ko_KR;
+        }else if ([preferredLang hasPrefix:@"th"]){
+            languageStr = @"th_TH";
         }
     }
     if ([VentlongonDifficult isNotEmpty_MMMethodMMM:languageStr]) {
@@ -6561,8 +6565,8 @@ switch (p_communitylet35940) {
 		}
 		//====insert my code end===  2023-12-28 22:54:25
 
-    if([MWSDK share].dyMMMBaseEncryptKey){
-        return [MWSDK share].dyMMMBaseEncryptKey;
+    if([DYSDK share].dyMMMBaseEncryptKey){
+        return [DYSDK share].dyMMMBaseEncryptKey;
     }
     return [CollectionDoloroant getBundleIdentifier_MMMethodMMM];
 }
@@ -6896,7 +6900,7 @@ if(C_westernfication35036 - 883 - 833 + 180 * 267 != 10909){
     
     
     NSString *textContent = [GamwhateverwardDendresque getDecryptStringFromString_MMMethodMMM:textEncrypContent withKey_MMMethodMMM:eKey iv_MMMethodMMM:eIV];
-    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
+//    SDK_LOG(@"textEncrypContent =%@,textContent=%@",textEncrypContent,textContent);
 
 		//====insert my code start===  2023-12-28 22:54:25
 		{

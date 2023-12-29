@@ -2,7 +2,7 @@
 
 
 #import "DulcryCase.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 #import "ResHeader.h"
 #import "CollectionDoloroant.h"
 #import "SacerdomUnderstandfic.h"

@@ -1,7 +1,7 @@
 
 
 #import "PluviressVersaciousView.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #define js_close    wwwww_tag_wwwww_close
 #define js_onPayFinish    wwwww_tag_wwwww_onPayFinish
@@ -1382,7 +1382,7 @@ if(y_temnmost13745 * 246 * 923 + 59 + 537 - 570 != 12812){
             
             NSString *eventName = [NSString stringWithFormat:@"%@", message.body];
             if([VentlongonDifficult isNotEmpty_MMMethodMMM:eventName]){
-                [[MWSDK share] dyTrackWithEventName:eventName];
+                [[DYSDK share] dyTrackWithEventName:eventName];
             }
         }else if ([message.name isEqualToString:wwwww_tag_wwwww_openSysBrowser]){
             

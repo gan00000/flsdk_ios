@@ -6,7 +6,7 @@
 
 #import "TownsterPlyateController.h"
 #import <SafariServices/SafariServices.h>
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #define WK_WEBVIEW_ESTIMATED_PROGRESS wwwww_tag_wwwww_estimatedProgress
 
@@ -4626,7 +4626,7 @@ switch (D_cant5927) {
 		//====insert my code end===  2023-12-28 22:54:24
 
             if([VentlongonDifficult isNotEmpty_MMMethodMMM:eventName]){
-                [[MWSDK share] dyTrackWithEventName:eventName];
+                [[DYSDK share] dyTrackWithEventName:eventName];
             }
         }else if ([message.name isEqualToString:wwwww_tag_wwwww_openSysBrowser]){
             

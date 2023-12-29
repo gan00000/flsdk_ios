@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LatadeClosView.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

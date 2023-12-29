@@ -1,4 +1,4 @@
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 #import "SacerdomUnderstandfic.h"
 #import "FlationVidformController.h"
@@ -37,13 +37,13 @@
 
 
 
-@interface MWSDK()
+@interface DYSDK()
 
 @property (nonatomic, assign) BOOL isPaying;
 
 @end
 
-@implementation MWSDK
+@implementation DYSDK
 
 
 - (BOOL)application:(UIApplication *)application
@@ -295,10 +295,10 @@ if(x_may1296 * 268 / 206 + 992 >= 10729){
 //===insert my method end=== 2023-12-28 22:54:24
 + (instancetype)share
 {
-    static MWSDK *_shareSP = nil;
+    static DYSDK *_shareSP = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _shareSP = [[MWSDK alloc] init];
+        _shareSP = [[DYSDK alloc] init];
     });
     _shareSP.dyMMMBaseEncryptKey = @"ldy-sdk-1228";
     return _shareSP;

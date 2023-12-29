@@ -3126,7 +3126,7 @@ if(A_gambroom7052 < 57927){
     }
     
     
-    if ([MWSDK share].dySDKLoginBlock) {
+    if ([DYSDK share].dySDKLoginBlock) {
         LoginData *loginData = [[LoginData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
@@ -3301,7 +3301,7 @@ if(e_cent7166 - 650 / 226 / 860 + 883 * 736 - 812 != 90241){
 		//====insert my code end===  2023-12-28 22:54:24
 
         
-        [MWSDK share].dySDKLoginBlock(loginData);
+        [DYSDK share].dySDKLoginBlock(loginData);
     }
     
     [self dismissViewControllerAnimated:NO completion:^{

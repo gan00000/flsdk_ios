@@ -15,7 +15,7 @@
 #import "SdkHeader.h"
 #import "PickLithard.h"
 
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 @implementation TinacificationHapltion
 

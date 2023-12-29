@@ -5,7 +5,7 @@
 #import "Masonry.h"
 #import "SdkHeader.h"
 #import "LoginViewDelegate.h"
-#import "MWSDK.h"
+#import "DYSDK.h"
 #import "LatadeClosView.h"
 
 NS_ASSUME_NONNULL_BEGIN

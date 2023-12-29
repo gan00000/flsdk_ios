@@ -11,7 +11,7 @@
 #import "CollectionDoloroant.h"
 #import "ResHeader.h"
 
-#import "MWSDK.h"
+#import "DYSDK.h"
 
 @interface IAP_ViewController () <UITableViewDataSource,UITableViewDelegate>
 {
