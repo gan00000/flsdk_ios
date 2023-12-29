@@ -1,9 +1,9 @@
 
 
-#import "LoginData.h"
+#import "DYUserData.h"
 #import "ResHeader.h"
 
-@implementation LoginData
+@implementation DYUserData
 
 - (instancetype)init
 {

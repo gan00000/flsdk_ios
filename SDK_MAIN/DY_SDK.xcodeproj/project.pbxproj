@@ -64,9 +64,9 @@
 		D734B694A59011EE8A3E0E90 /* ThrougharyMethodsiveMode.h in Headers */ = {isa = PBXBuildFile; fileRef = D734BD8AA59011EE95730E90 /* ThrougharyMethodsiveMode.h */; };
 		D734C0F8A59011EEAA640E90 /* HomewiseVentrView.h in Headers */ = {isa = PBXBuildFile; fileRef = D734C499A59011EE9F910E90 /* HomewiseVentrView.h */; };
 		D734C77DA59011EE9E160E90 /* CountTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D734CB0CA59011EEA5960E90 /* CountTimerDelegate.h */; };
-		D734CE05A59011EEB5310E90 /* PayData.h in Headers */ = {isa = PBXBuildFile; fileRef = D734D15EA59011EE9A1D0E90 /* PayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D734CE05A59011EEB5310E90 /* DYPayData.h in Headers */ = {isa = PBXBuildFile; fileRef = D734D15EA59011EE9A1D0E90 /* DYPayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D734D445A59011EE9F7B0E90 /* FloorariumRect.h in Headers */ = {isa = PBXBuildFile; fileRef = D734D7E6A59011EE8DFC0E90 /* FloorariumRect.h */; };
-		D734DAFAA59011EEBFD90E90 /* LoginData.h in Headers */ = {isa = PBXBuildFile; fileRef = D734DE4FA59011EEBD2A0E90 /* LoginData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D734DAFAA59011EEBFD90E90 /* DYUserData.h in Headers */ = {isa = PBXBuildFile; fileRef = D734DE4FA59011EEBD2A0E90 /* DYUserData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D734E151A59011EEB37D0E90 /* EachitorGeniitiousView.h in Headers */ = {isa = PBXBuildFile; fileRef = D734E4CAA59011EE96180E90 /* EachitorGeniitiousView.h */; };
 		D734E7CCA59011EEB3610E90 /* DYSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D734EB14A59011EE9EBA0E90 /* DYSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D734ED9EA59011EEB4960E90 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D734F0E6A59011EE835D0E90 /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -120,8 +120,8 @@
 		D7362268A59011EE853D0E90 /* DarkFanandette.m in Sources */ = {isa = PBXBuildFile; fileRef = D73625C2A59011EEA3F60E90 /* DarkFanandette.m */; };
 		D7362880A59011EEB0BD0E90 /* DulcryCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7362B82A59011EEA3720E90 /* DulcryCase.m */; };
 		D7362E70A59011EE9E9C0E90 /* CollectionoryEuier.m in Sources */ = {isa = PBXBuildFile; fileRef = D7363166A59011EEB9A10E90 /* CollectionoryEuier.m */; };
-		D7363457A59011EEB2A10E90 /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = D736378AA59011EE91830E90 /* PayData.m */; };
-		D7363A6EA59011EE8FAF0E90 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = D7363D70A59011EE9EA50E90 /* LoginData.m */; };
+		D7363457A59011EEB2A10E90 /* DYPayData.m in Sources */ = {isa = PBXBuildFile; fileRef = D736378AA59011EE91830E90 /* DYPayData.m */; };
+		D7363A6EA59011EE8FAF0E90 /* DYUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D7363D70A59011EE9EA50E90 /* DYUserData.m */; };
 		D736404AA59011EEA17B0E90 /* DYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D7364354A59011EEAD530E90 /* DYSDK.m */; };
 		D7364607A59011EE81710E90 /* NugfierSacie.m in Sources */ = {isa = PBXBuildFile; fileRef = D7364900A59011EE9E2D0E90 /* NugfierSacie.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D7364BA8A59011EE93630E90 /* MattertyTerra.m in Sources */ = {isa = PBXBuildFile; fileRef = D7364EA1A59011EEA4030E90 /* MattertyTerra.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -347,9 +347,9 @@
 		D734BD8AA59011EE95730E90 /* ThrougharyMethodsiveMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThrougharyMethodsiveMode.h; sourceTree = "<group>"; };
 		D734C499A59011EE9F910E90 /* HomewiseVentrView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomewiseVentrView.h; sourceTree = "<group>"; };
 		D734CB0CA59011EEA5960E90 /* CountTimerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountTimerDelegate.h; sourceTree = "<group>"; };
-		D734D15EA59011EE9A1D0E90 /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
+		D734D15EA59011EE9A1D0E90 /* DYPayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPayData.h; sourceTree = "<group>"; };
 		D734D7E6A59011EE8DFC0E90 /* FloorariumRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorariumRect.h; sourceTree = "<group>"; };
-		D734DE4FA59011EEBD2A0E90 /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
+		D734DE4FA59011EEBD2A0E90 /* DYUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYUserData.h; sourceTree = "<group>"; };
 		D734E4CAA59011EE96180E90 /* EachitorGeniitiousView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EachitorGeniitiousView.h; sourceTree = "<group>"; };
 		D734EB14A59011EE9EBA0E90 /* DYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSDK.h; sourceTree = "<group>"; };
 		D734F0E6A59011EE835D0E90 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
@@ -403,8 +403,8 @@
 		D73625C2A59011EEA3F60E90 /* DarkFanandette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkFanandette.m; sourceTree = "<group>"; };
 		D7362B82A59011EEA3720E90 /* DulcryCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DulcryCase.m; sourceTree = "<group>"; };
 		D7363166A59011EEB9A10E90 /* CollectionoryEuier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionoryEuier.m; sourceTree = "<group>"; };
-		D736378AA59011EE91830E90 /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
-		D7363D70A59011EE9EA50E90 /* LoginData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginData.m; sourceTree = "<group>"; };
+		D736378AA59011EE91830E90 /* DYPayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPayData.m; sourceTree = "<group>"; };
+		D7363D70A59011EE9EA50E90 /* DYUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYUserData.m; sourceTree = "<group>"; };
 		D7364354A59011EEAD530E90 /* DYSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSDK.m; sourceTree = "<group>"; };
 		D7364900A59011EE9E2D0E90 /* NugfierSacie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NugfierSacie.m; sourceTree = "<group>"; };
 		D7364EA1A59011EEA4030E90 /* MattertyTerra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MattertyTerra.m; sourceTree = "<group>"; };
@@ -1335,10 +1335,10 @@
 			isa = PBXGroup;
 			children = (
 				D73B70E1A59011EEB53D0E90 /* Base */,
-				D734D15EA59011EE9A1D0E90 /* PayData.h */,
-				D736378AA59011EE91830E90 /* PayData.m */,
-				D734DE4FA59011EEBD2A0E90 /* LoginData.h */,
-				D7363D70A59011EE9EA50E90 /* LoginData.m */,
+				D734D15EA59011EE9A1D0E90 /* DYPayData.h */,
+				D736378AA59011EE91830E90 /* DYPayData.m */,
+				D734DE4FA59011EEBD2A0E90 /* DYUserData.h */,
+				D7363D70A59011EE9EA50E90 /* DYUserData.m */,
 				D734EB14A59011EE9EBA0E90 /* DYSDK.h */,
 				D7364354A59011EEAD530E90 /* DYSDK.m */,
 			);
@@ -1601,9 +1601,9 @@
 				D734C0F8A59011EEAA640E90 /* HomewiseVentrView.h in Headers */,
 				D734C77DA59011EE9E160E90 /* CountTimerDelegate.h in Headers */,
 				D7379D45A59011EE95430E90 /* CitizeniaFoundsiveView.h in Headers */,
-				D734CE05A59011EEB5310E90 /* PayData.h in Headers */,
+				D734CE05A59011EEB5310E90 /* DYPayData.h in Headers */,
 				D734D445A59011EE9F7B0E90 /* FloorariumRect.h in Headers */,
-				D734DAFAA59011EEBFD90E90 /* LoginData.h in Headers */,
+				D734DAFAA59011EEBFD90E90 /* DYUserData.h in Headers */,
 				D737B361A59011EE9A460E90 /* OldlikeUdintudeeousView.h in Headers */,
 				D734E151A59011EEB37D0E90 /* EachitorGeniitiousView.h in Headers */,
 				D7348A6EA59011EE8A570E90 /* ScyphPhantmyselfsion.h in Headers */,
@@ -1834,8 +1834,8 @@
 				D7362268A59011EE853D0E90 /* DarkFanandette.m in Sources */,
 				D7362880A59011EEB0BD0E90 /* DulcryCase.m in Sources */,
 				D7362E70A59011EE9E9C0E90 /* CollectionoryEuier.m in Sources */,
-				D7363457A59011EEB2A10E90 /* PayData.m in Sources */,
-				D7363A6EA59011EE8FAF0E90 /* LoginData.m in Sources */,
+				D7363457A59011EEB2A10E90 /* DYPayData.m in Sources */,
+				D7363A6EA59011EE8FAF0E90 /* DYUserData.m in Sources */,
 				D736404AA59011EEA17B0E90 /* DYSDK.m in Sources */,
 				D737A297A59011EE80F00E90 /* HabressTrialView.m in Sources */,
 				D7364607A59011EE81710E90 /* NugfierSacie.m in Sources */,

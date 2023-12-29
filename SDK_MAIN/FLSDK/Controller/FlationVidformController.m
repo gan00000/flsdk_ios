@@ -3127,7 +3127,7 @@ if(A_gambroom7052 < 57927){
     
     
     if ([DYSDK share].dySDKLoginBlock) {
-        LoginData *loginData = [[LoginData alloc] init];
+        DYUserData *loginData = [[DYUserData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
         loginData.timestamp = rData.timestamp;

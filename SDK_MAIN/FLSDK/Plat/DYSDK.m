@@ -1227,7 +1227,7 @@ if(b_volatette2090 >= 79310){
 }
 
 - (void)startIapPay_MMMethodMMM:(TvadeRhigant *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
-    [[OleotRule shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel_MMMPRO accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+    [[OleotRule shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel_MMMPRO accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, DYPayData * _Nullable payData) {
         
         self.isPaying = NO;
         
@@ -5040,7 +5040,7 @@ switch (e_candidatelet3063) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        LoginData *loginData = [[LoginData alloc] init];
+        DYUserData *loginData = [[DYUserData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
         loginData.timestamp = rData.timestamp;

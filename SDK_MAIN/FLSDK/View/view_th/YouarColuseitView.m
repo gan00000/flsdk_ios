@@ -1876,7 +1876,7 @@ if(I_benous21718 < 23318){
         [SacerdomUnderstandfic logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
         TvadeRhigant *rData = cc.data;
-        LoginData *loginData = [[LoginData alloc] init];
+        DYUserData *loginData = [[DYUserData alloc] init];
         loginData.accessToken = rData.token;
         loginData.userId = rData.userId;
 

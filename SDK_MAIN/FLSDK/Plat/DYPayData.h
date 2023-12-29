@@ -5,7 +5,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PayData : NSObject
+@interface DYPayData : NSObject
 
 @property (nonatomic, copy) NSString *orderId;
 @property (nonatomic, copy) NSString *transactionId;

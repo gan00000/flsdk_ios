@@ -271,7 +271,7 @@ if(p_motfold571 < 93189){
 	return h_7;
 }
 //===insert my method end=== 2023-12-28 22:54:24
-+ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type{
++ (void)logEventPurchaseValues_MMMethodMMM:(DYPayData *)mPayData type_MMMethodMMM:(AdType) type{
     
     if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){
         return;
@@ -704,7 +704,7 @@ switch (z_clementAmericanling772) {
 //===insert my method end=== 2023-12-28 22:54:24
 
 //===insert my method start=== 2023-12-28 22:54:24
-+ (float)flexless573Tricesimasate574:(PayData *)flexless573_1{ //insert method
++ (float)flexless573Tricesimasate574:(DYPayData *)flexless573_1{ //insert method
 	int u_ab577 = 5213;
 
 double f_hydrfaction578 = 324;

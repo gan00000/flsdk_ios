@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
-#import "LoginData.h"
-#import "PayData.h"
+#import "DYUserData.h"
+#import "DYPayData.h"
 #import "MWStringHeaders.h"
 
 #define Decrypt_AllStringContent(text)  [[DYSDK share] dyDecodeStr:text]
@@ -38,9 +38,9 @@ typedef NS_OPTIONS(NSUInteger, SDK_PAY_STATUS)
     SDK_PAY_STATUS_PUCHESSING,
 };
 
-typedef void (^SDKLoginBlock)(LoginData * _Nullable loginData);
+typedef void (^SDKLoginBlock)(DYUserData * _Nullable loginData);
 typedef void (^SDKLogoutBlock)(NSInteger logout);
-typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,PayData * _Nullable mPayData);
+typedef void (^SDKPayBlock)(SDK_PAY_STATUS status,DYPayData * _Nullable mPayData);
 typedef void (^ShareBlock)(BOOL success, NSDictionary * _Nullable result);
 
 typedef void (^MWBlock)(BOOL success, id _Nullable result);

@@ -11,7 +11,7 @@
 
 @property (nonatomic, copy) NSString *currentOrderId_MMMPRO;
 
-@property (nonatomic, strong) PayData *mPayData_MMMPRO;
+@property (nonatomic, strong) DYPayData *mPayData_MMMPRO;
 @property (nonatomic)PayStatusBlock payStatusBlock_MMMPRO;
 
 @end
@@ -766,7 +766,7 @@ if(K_brachiofootetic37498 - 674 + 81 + 995 * 538 >= 34584){
                 
                 if(cor){
                     
-                    PayData *xxPayData = [[PayData alloc] init];
+                    DYPayData *xxPayData = [[DYPayData alloc] init];
                     xxPayData.orderId = cor.orderId;
                     xxPayData.timestamp = cor.timestamp;
                     xxPayData.amount = cor.amount;
@@ -904,7 +904,7 @@ switch (q_retroitious37516) {
 		}
 		//====insert my code end===  2023-12-28 22:54:25
 
-    self.mPayData_MMMPRO = [[PayData alloc] init];
+    self.mPayData_MMMPRO = [[DYPayData alloc] init];
     
     if (!cpOrderId || !productId) {
         [self finishPayWithStatus_MMMethodMMM:NO msg_MMMethodMMM:wwwww_tag_wwwww_error_cpOrderId_productId_empty];

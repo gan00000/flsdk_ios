@@ -144,7 +144,7 @@
              *********************************************/
         case 0:
         {
-            [[DYSDK share] dyLoginWithBlock:^(LoginData *loginData) {
+            [[DYSDK share] dyLoginWithBlock:^(DYUserData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -163,7 +163,7 @@
             
         case 12:
         {
-            [[DYSDK share] dySwitchLoginWithBlock:^(LoginData *loginData) {
+            [[DYSDK share] dySwitchLoginWithBlock:^(DYUserData *loginData) {
                 NSString * userId = loginData.userId;
                 NSString * accessToken = loginData.accessToken;
                 NSString * timestamp = loginData.timestamp;
@@ -281,7 +281,7 @@
                 
                 if (success) {
                     NSLog(@"账号升级成功");
-                    LoginData *data = (LoginData*)result;
+                    DYUserData *data = (DYUserData*)result;
                 }else{
                     NSLog(@"账号升级失败");
                 }
@@ -323,7 +323,7 @@
     NSString *cpOrderId = [CollectionDoloroant getTimeStamp_MMMethodMMM];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[DYSDK share] dyPayWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[DYSDK share] dyPayWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, DYPayData *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {

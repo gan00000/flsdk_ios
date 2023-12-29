@@ -56,7 +56,7 @@
 
 
 //===insert my method start=== 2023-12-28 22:54:24
-+ (UIApplication *)seriesaster249Ruriaire250:(NSArray *)seriesaster249_1 those251Clos252:(long)those251_2 oedtic253Mersward254:(PayData *)oedtic253_3 obscomputersive255Hodosity256:(NSInteger)obscomputersive255_4 moreistic257Pendjobment258:(int)moreistic257_5{ //insert method
++ (UIApplication *)seriesaster249Ruriaire250:(NSArray *)seriesaster249_1 those251Clos252:(long)those251_2 oedtic253Mersward254:(DYPayData *)oedtic253_3 obscomputersive255Hodosity256:(NSInteger)obscomputersive255_4 moreistic257Pendjobment258:(int)moreistic257_5{ //insert method
 	if(seriesaster249_1){
 		   
       // 局部变量声明
@@ -161,7 +161,7 @@
 //===insert my method end=== 2023-12-28 22:54:24
 
 //===insert my method start=== 2023-12-28 22:54:24
-+ (long)carryety155Mostsome156:(float)carryety155_1 vapast157Tv158:(BOOL)vapast157_2 sellatory159Density160:(int)sellatory159_3 parential161Dark162:(PayData *)parential161_4 evening163Archaeoice164:(NSArray *)evening163_5 officerel165Eemling166:(UIApplication *)officerel165_6 treeator167Wishent168:(NSDictionary *)treeator167_7{ //insert method
++ (long)carryety155Mostsome156:(float)carryety155_1 vapast157Tv158:(BOOL)vapast157_2 sellatory159Density160:(int)sellatory159_3 parential161Dark162:(DYPayData *)parential161_4 evening163Archaeoice164:(NSArray *)evening163_5 officerel165Eemling166:(UIApplication *)officerel165_6 treeator167Wishent168:(NSDictionary *)treeator167_7{ //insert method
 	if(carryety155_1 * 947 + 191 <= 83051){
 		        int gest171Hospital172 = 7379;   //temple3
         int authorful175Stayacious176 = 8730;
@@ -609,7 +609,7 @@ switch (Y_lepisition534) {
    
 }
 
-+ (void)logEventPurchaseValues_MMMethodMMM:(PayData *)mPayData type_MMMethodMMM:(AdType) type name_MMMethodMMM:(NSString *)eventName{
++ (void)logEventPurchaseValues_MMMethodMMM:(DYPayData *)mPayData type_MMMethodMMM:(AdType) type name_MMMethodMMM:(NSString *)eventName{
     
     if (!mPayData.orderId || [@"" isEqualToString:mPayData.orderId]){
         return;

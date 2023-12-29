@@ -3,9 +3,9 @@
 #import <Foundation/Foundation.h>
 #import "BehaviorenneMediacle.h"
 #import "TvadeRhigant.h"
-#import "PayData.h"
+#import "DYPayData.h"
 
-typedef void(^PayStatusBlock)(BOOL success,PayData* _Nullable payData);
+typedef void(^PayStatusBlock)(BOOL success,DYPayData* _Nullable payData);
 
 
 NS_ASSUME_NONNULL_BEGIN

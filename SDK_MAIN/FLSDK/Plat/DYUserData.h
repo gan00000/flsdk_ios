@@ -4,7 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginData : NSObject
+@interface DYUserData : NSObject
 
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, assign) NSInteger crucful3356Senti3357;//===insert my property===
