@@ -280,6 +280,8 @@ static dispatch_once_t onceToken;
                 languageStr = @"vi";
             }else if ([preferredLang hasPrefix:@"ko"]){
                 languageStr = @"ko";
+            }else if ([preferredLang hasPrefix:@"th"]){
+                languageStr = @"th";
             }
         }
         NSDictionary *dicTemp = [self getEncryptFileAndEncryptContentWithBundle_MMMethodMMM:[self getMySdkBundle_MMMethodMMM] name_MMMethodMMM:languageStr ofType_MMMethodMMM:@"txt"];
@@ -443,6 +445,8 @@ static dispatch_once_t onceToken;
             languageStr = wwwww_tag_wwwww_vi_VN;
         }else if ([preferredLang hasPrefix:@"ko"]){
             languageStr = wwwww_tag_wwwww_ko_KR;
+        }else if ([preferredLang hasPrefix:@"th"]){
+            languageStr = @"th_TH";
         }
     }
     if ([StringUtil isNotEmpty_MMMethodMMM:languageStr]) {
