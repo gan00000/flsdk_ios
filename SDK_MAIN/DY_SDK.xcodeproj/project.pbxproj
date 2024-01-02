@@ -14,6 +14,7 @@
 				D733D1E6A59011EE96BE0E90 /* Run Script */,
 			);
 			dependencies = (
+				035F10C82B43B23D00FE7382 /* PBXTargetDependency */,
 			);
 			name = XCFrameworkMake;
 			productName = Framework;
@@ -23,6 +24,8 @@
 /* Begin PBXBuildFile section */
 		034D78602B3DC9EF00316AEA /* ldy-sdk-1228.json in Resources */ = {isa = PBXBuildFile; fileRef = 034D785F2B3DC9EF00316AEA /* ldy-sdk-1228.json */; };
 		034D78622B3DCA8700316AEA /* 5935df548e3e4d3bf3e5c650a24ea6b7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 034D78612B3DCA8700316AEA /* 5935df548e3e4d3bf3e5c650a24ea6b7.txt */; };
+		035F10C62B43B1AD00FE7382 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D733E461A59011EEBE0B0E90 /* AppsFlyerLib.xcframework */; };
+		035F10C92B43B28A00FE7382 /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = D739F3FAA59011EEA0D80E90 /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D733D4C2A59011EE9FD00E90 /* LeproorSuantView.h in Headers */ = {isa = PBXBuildFile; fileRef = D733D880A59011EE9F550E90 /* LeproorSuantView.h */; };
 		D733DB82A59011EE99200E90 /* LeproorSuantView.m in Sources */ = {isa = PBXBuildFile; fileRef = D733DE73A59011EEA85E0E90 /* LeproorSuantView.m */; };
 		D733E173A59011EEAD600E90 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D733E461A59011EEBE0B0E90 /* AppsFlyerLib.xcframework */; };
@@ -270,7 +273,7 @@
 		D7394C0CA59011EE8EF50E90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394EC0A59011EE88A00E90 /* SystemConfiguration.framework */; };
 		D73951A3A59011EEB0940E90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D739544CA59011EEAC960E90 /* CoreGraphics.framework */; };
 		D739572EA59011EEA03E0E90 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7347D8AA59011EEB2510E90 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
-		D7395A4FA59011EE91E10E90 /* YDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7395D00A59011EE9C0C0E90 /* YDSDK.framework */; };
+		D7395A4FA59011EE91E10E90 /* DYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7395D00A59011EE9C0C0E90 /* DYSDK.framework */; };
 		D7395FBDA59011EEB6FE0E90 /* SDKResourcesKR.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D739623DA59011EEBDD00E90 /* SDKResourcesKR.bundle */; };
 		D73964C7A59011EE85FA0E90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7396751A59011EEA01C0E90 /* GoogleService-Info.plist */; };
 		D73969DCA59011EEABFF0E90 /* com_mwgame_sdkzycs.json in Resources */ = {isa = PBXBuildFile; fileRef = D7396C82A59011EEB1EE0E90 /* com_mwgame_sdkzycs.json */; };
@@ -281,6 +284,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		035F10C72B43B23D00FE7382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D739865EA59011EEA9B50E90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7398957A59011EE85300E90;
+			remoteInfo = YDSDK;
+		};
 		D73983AEA59011EEB9B30E90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D739865EA59011EEA9B50E90 /* Project object */;
@@ -531,7 +541,7 @@
 		D73945D7A59011EE94720E90 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D7394EC0A59011EE88A00E90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D739544CA59011EEAC960E90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D7395D00A59011EE9C0C0E90 /* YDSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7395D00A59011EE9C0C0E90 /* DYSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D739623DA59011EEBDD00E90 /* SDKResourcesKR.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKResourcesKR.bundle; sourceTree = "<group>"; };
 		D7396751A59011EEA01C0E90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7396C82A59011EEB1EE0E90 /* com_mwgame_sdkzycs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_mwgame_sdkzycs.json; sourceTree = "<group>"; };
@@ -696,6 +706,7 @@
 				D7348570A59011EE84700E90 /* GTMSessionFetcher.xcframework in Frameworks */,
 				D7345257A59011EE8D830E90 /* GoogleDataTransport.xcframework in Frameworks */,
 				D7346F54A59011EEA84D0E90 /* FirebaseInstallations.xcframework in Frameworks */,
+				035F10C62B43B1AD00FE7382 /* AppsFlyerLib.xcframework in Frameworks */,
 				D7345828A59011EEB53B0E90 /* GoogleUtilities.xcframework in Frameworks */,
 				D7345DE8A59011EE91790E90 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				D734268FA59011EE923D0E90 /* GoogleSignIn.xcframework in Frameworks */,
@@ -717,7 +728,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7395A4FA59011EE91E10E90 /* YDSDK.framework in Frameworks */,
+				D7395A4FA59011EE91E10E90 /* DYSDK.framework in Frameworks */,
 				D738165EA59011EE9F840E90 /* FirebaseAuth.xcframework in Frameworks */,
 				D7381954A59011EEB9D00E90 /* SwiftUI.framework in Frameworks */,
 				D7381F4FA59011EEB0780E90 /* AppTrackingTransparency.framework in Frameworks */,
@@ -1571,7 +1582,7 @@
 		D73BA59CA59011EE94E70E90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7395D00A59011EE9C0C0E90 /* YDSDK.framework */,
+				D7395D00A59011EE9C0C0E90 /* DYSDK.framework */,
 				D739EC0FA59011EE800B0E90 /* SDK_DEMO_KR.app */,
 				D739C6E8A59011EEB3C00E90 /* MWRES.bundle */,
 			);
@@ -1586,6 +1597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D734A3ABA59011EE81480E90 /* NSString+AndrbagtionVirize.h in Headers */,
+				035F10C92B43B28A00FE7382 /* MWStringHeaders.h in Headers */,
 				D734AA3DA59011EEA6C70E90 /* AuctierContainView.h in Headers */,
 				D733FE1EA59011EE88800E90 /* HypoitionPollinproductionoryView.h in Headers */,
 				D734B05EA59011EEB6D00E90 /* OculfierSpargkinTextFiled.h in Headers */,
@@ -1618,9 +1630,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7398957A59011EE85300E90 /* YDSDK */ = {
+		D7398957A59011EE85300E90 /* DYSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D73BB8AEA59011EEAFF80E90 /* Build configuration list for PBXNativeTarget "YDSDK" */;
+			buildConfigurationList = D73BB8AEA59011EEAFF80E90 /* Build configuration list for PBXNativeTarget "DYSDK" */;
 			buildPhases = (
 				D73BA8C7A59011EEB4540E90 /* Headers */,
 				D73BBB73A59011EEBEE10E90 /* Sources */,
@@ -1631,9 +1643,9 @@
 			);
 			dependencies = (
 			);
-			name = YDSDK;
+			name = DYSDK;
 			productName = MWSDK;
-			productReference = D7395D00A59011EE9C0C0E90 /* YDSDK.framework */;
+			productReference = D7395D00A59011EE9C0C0E90 /* DYSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D73BAC57A59011EEB9840E90 /* MWRES */ = {
@@ -1707,7 +1719,7 @@
 			projectRoot = "";
 			targets = (
 				D73BC1D1A59011EE8B780E90 /* SDK_DEMO_KR */,
-				D7398957A59011EE85300E90 /* YDSDK */,
+				D7398957A59011EE85300E90 /* DYSDK */,
 				D72EE1B0A59011EEB4960E90 /* XCFrameworkMake */,
 				D73BAC57A59011EEB9840E90 /* MWRES */,
 			);
@@ -1918,9 +1930,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		035F10C82B43B23D00FE7382 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7398957A59011EE85300E90 /* DYSDK */;
+			targetProxy = 035F10C72B43B23D00FE7382 /* PBXContainerItemProxy */;
+		};
 		D73BCCAEA59011EE8F900E90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7398957A59011EE85300E90 /* YDSDK */;
+			target = D7398957A59011EE85300E90 /* DYSDK */;
 			targetProxy = D73983AEA59011EEB9B30E90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2420,7 +2437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D73BB8AEA59011EEAFF80E90 /* Build configuration list for PBXNativeTarget "YDSDK" */ = {
+		D73BB8AEA59011EEAFF80E90 /* Build configuration list for PBXNativeTarget "DYSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D73BDD0CA59011EEB8C40E90 /* Debug */,
