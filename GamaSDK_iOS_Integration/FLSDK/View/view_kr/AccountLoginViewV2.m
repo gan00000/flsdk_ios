@@ -211,7 +211,7 @@
             make.height.mas_equalTo(VH(40));
         }];
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             loginGl.frame = accountLoginBtn.bounds;
         }];
 

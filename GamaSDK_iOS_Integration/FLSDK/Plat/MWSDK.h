@@ -163,7 +163,7 @@ completionHandler:(SDKPayBlock) handler;
 
 #pragma mark -【弃用】
 - (void)openCs;
-- (void)openCsWithParams:(NSDictionary *)paramDic;
+- (void)openCsWithParams_MMMethodMMM:(NSDictionary *)paramDic;
 
 /// 事件追踪
 /// @param name 事件名称

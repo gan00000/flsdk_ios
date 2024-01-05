@@ -58,7 +58,7 @@
     
     if (@available(iOS 11.0, *)) {
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
            
                 if(self.safeAreaInsets.top > 0){
                     [csContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -80,7 +80,7 @@
     }];
     csContentView.userInteractionEnabled = YES;
     [csContentView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
-        [[MWSDK share] openCsWithParams:@{@"request_code":@"2001"}];
+        [[MWSDK share] openCsWithParams_MMMethodMMM:@{@"request_code":@"2001"}];
     }];
     
     UILabel *csLable = [UIUtil initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_customer.localx fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor]];
@@ -222,7 +222,7 @@
     
     self.mRegisterAccountView.hidden = YES;
     
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.mAccountLoginView.delegate = self.delegate;
         self.mRegisterAccountView.delegate = self.delegate;
         

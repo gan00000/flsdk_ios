@@ -30,9 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)initData_MMMethodMMM;
 @property(nonatomic,strong)NSMutableArray *drawBlockArray;
 
-- (void)addDrawRectBolck:(CCallBack)callback;
+- (void)addDrawRectBolck_MMMethodMMM:(CCallBack)callback;
 
--(void)removeFromGameView;
+-(void)removeFromGameView_MMMethodMMM;
 @end
 
 NS_ASSUME_NONNULL_END

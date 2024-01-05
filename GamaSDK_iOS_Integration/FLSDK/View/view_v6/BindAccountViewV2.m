@@ -222,7 +222,7 @@
       
         CAGradientLayer *gl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(20)];
         [okBtn.layer addSublayer:gl];
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             gl.frame = okBtn.bounds;
         }];
 
@@ -244,7 +244,7 @@
     switch (sender.tag) {
             
         case TAG_CLOSE:
-            [self removeFromGameView];
+            [self removeFromGameView_MMMethodMMM];
 //            if (self.mMWBlock) {
 //                self.mMWBlock(NO, nil);
 //            }
@@ -256,7 +256,7 @@
             if (accountSDKTextFiledView) {
                 [self bindAccount_MMMethodMMM];
             }else{
-                [self removeFromGameView];
+                [self removeFromGameView_MMMethodMMM];
 //                if (self.mMWBlock) {
 //                    self.mMWBlock(NO, nil);
 //                }
@@ -338,7 +338,7 @@
             self.mMWBlock(YES, loginData);
         }
         
-        [self removeFromGameView];
+        [self removeFromGameView_MMMethodMMM];
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];

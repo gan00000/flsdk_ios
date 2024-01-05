@@ -97,7 +97,7 @@
         [age14AlreadyBtn.layer addSublayer:mGl];
 
         
-        [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
             mGl.frame = age14AlreadyBtn.bounds;
         }];
         

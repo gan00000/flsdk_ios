@@ -153,7 +153,7 @@
     
     self.mRegisterAccountView.hidden = YES;
     
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.mAccountLoginView.delegate = self.delegate;
         self.mRegisterAccountView.delegate = self.delegate;
         

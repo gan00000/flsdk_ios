@@ -178,7 +178,7 @@
         case 11://點擊服務條款
             break;
         case TAG_CLOSE:
-            [self removeFromGameView];
+            [self removeFromGameView_MMMethodMMM];
             if (self.completer) {
                 self.completer();
             }

@@ -843,10 +843,10 @@
         return;
     }
     
-    [self openCsWithParams:nil];
+    [self openCsWithParams_MMMethodMMM:nil];
 }
 
-- (void)openCsWithParams:(NSDictionary *)paramDic {
+- (void)openCsWithParams_MMMethodMMM:(NSDictionary *)paramDic {
     NSString * csurl = SDK_DATA.urls.csUrl;
     if ([StringUtil isEmpty_MMMethodMMM:csurl]) {
         SDK_LOG(@"客服地址错误 csurl=%@",csurl);

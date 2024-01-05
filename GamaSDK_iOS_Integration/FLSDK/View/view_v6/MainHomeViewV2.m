@@ -118,7 +118,7 @@
     CAGradientLayer *guestBtnGradientLayer = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(25)];
     [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
     
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         guestBtnGradientLayer.frame = guestLoginBtn.bounds;
     }];
     

@@ -76,7 +76,7 @@
     
     CAGradientLayer *mGl = [ViewUtil createGradientLayerWithRadius_MMMethodMMM:VH(5)];
     [otherChannelBtn.layer addSublayer:mGl];
-    [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
+    [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
         mGl.frame = otherChannelBtn.bounds;
     }];
     

@@ -44,7 +44,7 @@
 //-(void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent*)event
 
 
-- (void)addDrawRectBolck:(CCallBack)callback
+- (void)addDrawRectBolck_MMMethodMMM:(CCallBack)callback
 {
     if (!self.drawBlockArray) {
         self.drawBlockArray = [NSMutableArray array];
@@ -68,7 +68,7 @@
     
 }
 
--(void)removeFromGameView{
+-(void)removeFromGameView_MMMethodMMM{
     
     if([self.superview isKindOfClass:[TouchEventInterruptView class]]){
         [self.superview removeFromSuperview];
