@@ -18,11 +18,7 @@
 > 	SystemConfiguration.framework、WebKit.framework、JavaScriptCore.framework、CoreTelephony.framework、MobileCoreServices.framework、SafariServices.framework、CoreData.framework、CoreGraphics.framework、CoreFoundation.framework、QuartzCore.framework、Security.framework、Accelerate.framework、iAd.framework、AdSupport.framework、ApptrackingTransparency.framework、AuthenticationServices.framework、
 > 	<font color=red>SwiftUI.framework(Optional)、AdServices.framework(Optional)</font>
 	
-* **添加Sign in with Apple**
 
-	在 Targets -> Signing&Capabilities 下，添加<font color=red>Sign in with Apple、Push Notifications.</font>
-	
-* **创建objcetc swift的桥接文件**, 即直接创建一个swift文件按xcode提示即可
 * **项目other linker flags添加 <font color=red>-ObjC</font>**
 
 
