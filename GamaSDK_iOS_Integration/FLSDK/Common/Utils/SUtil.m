@@ -23,11 +23,11 @@
     return gamaUUid;
 }
 
-+ (NSString *)bundleSeedID_MMMethodMMM
-{
-    NSString * gamaBundleSeedId=[SdkCfUUID bundleSeedID_MMMethodMMM];
-    return gamaBundleSeedId;
-}
+//+ (NSString *)bundleSeedID_MMMethodMMM
+//{
+//    NSString * gamaBundleSeedId=[SdkCfUUID bundleSeedID_MMMethodMMM];
+//    return gamaBundleSeedId;
+//}
 
 + (NSString *)getBundleName_MMMethodMMM
 {
