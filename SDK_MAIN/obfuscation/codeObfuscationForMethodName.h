@@ -502,4 +502,22 @@
 #define     addDrawRectBolck_MMMethodMMM          kidGaffe
 #define     removeFromGameView_MMMethodMMM          delaySpecies
 
+#define closeBtAction_MMMethodMMM             closeBtAction
+#define getDisplayName_MMMethodMMM             getDisplayName
+#define createGradientLayerWithRadius_MMMethodMMM             createGradientLayerWithRadius
+#define decryptContent_MMMethodMMM          decryptContent
+#define encryptContent_MMMethodMMM          encryptContent
+#define getMd5ResFileName_MMMethodMMM          getMd5ResFileName
+#define isShowTitle_MMMethodMMM          isShowTitle
+#define initWithWebLayoutIsShowTitle_MMMethodMMM          initWithWebLayoutIsShowTitle
+#define naverLoginAndThirdRequest_MMMethodMMM          naverLoginAndThirdRequest
+#define daysBetween_MMMethodMMM          daysBetween
+#define endDate_MMMethodMMM          endDate
+#define naverLoginAndThirdRequest_MMMethodMMM          naverLoginAndThirdRequest
+
+#define startLoginWithKey_MMMethodMMM          startLoginWithKey
+#define consumerSecret_MMMethodMMM          consumerSecret
+#define appName_MMMethodMMM          appName
+#define callback_MMMethodMMM          callback
+
 #endif  /* codeObfuscation_h */
