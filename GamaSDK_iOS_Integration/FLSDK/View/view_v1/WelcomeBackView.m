@@ -41,7 +41,7 @@
     UIButton *accountLoginBtn;
   
     
-    UITableView *accountListTableView;
+//    UITableView *accountListTableView;
     NSMutableArray<AccountModel *>  *accountDataList;//账号列表数据
     
     BOOL isSaveAccountInfo;
