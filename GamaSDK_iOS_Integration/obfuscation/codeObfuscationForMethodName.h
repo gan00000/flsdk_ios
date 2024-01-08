@@ -494,6 +494,16 @@
 #define     isShowTerm_MMMethodMMM          behoveWin
 #define     setShowTerm_MMMethodMMM          clamberShipping
 #define    showTermViewWithBlock_MMMethodMMM          blabShaker
+#define loadRequest_MMMethodMMM             loadRequest
+#define closeBtAction_MMMethodMMM             closeBtAction
+#define getDisplayName_MMMethodMMM             getDisplayName
+#define createGradientLayerWithRadius_MMMethodMMM             createGradientLayerWithRadius
+#define decryptContent_MMMethodMMM          decryptContent
+#define encryptContent_MMMethodMMM          encryptContent
+#define getMd5ResFileName_MMMethodMMM          getMd5ResFileName
+#define isShowTitle_MMMethodMMM          isShowTitle
+#define initWithWebLayoutIsShowTitle_MMMethodMMM          initWithWebLayoutIsShowTitle
+#define naverLoginAndThirdRequest_MMMethodMMM          naverLoginAndThirdRequest
 
 
 #endif  /* codeObfuscation_h */
