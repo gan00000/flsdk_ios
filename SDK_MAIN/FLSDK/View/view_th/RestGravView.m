@@ -17,7 +17,7 @@
 {
 
     
-    WKWebView *provisionWebView;
+    WKWebView *provisionWebView_IMPLVAR;
     
 }
 
@@ -1017,12 +1017,12 @@ switch (f_therm22646) {
     }
     
     SDK_LOG(wwwww_tag_wwwww_movieaster_mulctious,url);
-    provisionWebView = [[WKWebView alloc] init];
-    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
-    [provisionWebView.scrollView setBounces:YES];
-    [provisionWebView.scrollView setScrollEnabled:YES];
-    [xView addSubview:provisionWebView];
-    [provisionWebView mas_makeConstraints:^(MASConstraintMaker *make) {
+    provisionWebView_IMPLVAR = [[WKWebView alloc] init];
+    [provisionWebView_IMPLVAR loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    [provisionWebView_IMPLVAR.scrollView setBounces:YES];
+    [provisionWebView_IMPLVAR.scrollView setScrollEnabled:YES];
+    [xView addSubview:provisionWebView_IMPLVAR];
+    [provisionWebView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
 
         make.top.leading.mas_equalTo(xView).mas_offset(VW(8));
         make.bottom.trailing.mas_equalTo(xView).mas_offset(-VW(8));

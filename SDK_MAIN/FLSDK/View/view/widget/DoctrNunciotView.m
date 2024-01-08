@@ -6,8 +6,8 @@
 
 @implementation DoctrNunciotView
 {
-    UIButton *otherChannelBtn;
-    UIButton *appleChannelBtn;
+    UIButton *otherChannelBtn_IMPLVAR;
+    UIButton *appleChannelBtn_IMPLVAR;
 }
 
 
@@ -156,7 +156,7 @@
     }];
     
     
-    otherChannelBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_pay_pay.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:TAG_PAY_CHANNEL_OTHER selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    otherChannelBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_pay_pay.localx fontSize_MMMethodMMM:FS(15) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:TAG_PAY_CHANNEL_OTHER selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -182,8 +182,8 @@ if(y_cis16555 - 740 - 715 - 520 * 611 >= 62523){
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    [otherChannelBtn.layer setCornerRadius:VH(5)];
-    otherChannelBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [otherChannelBtn_IMPLVAR.layer setCornerRadius:VH(5)];
+    otherChannelBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -344,7 +344,7 @@ if(B_water16597 * 896 + 847 * 819 + 836 - 104 < 2313){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [otherChannelBtn.layer addSublayer:mGl];
+    [otherChannelBtn_IMPLVAR.layer addSublayer:mGl];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -362,11 +362,11 @@ if(B_water16597 * 896 + 847 * 819 + 836 - 104 < 2313){
 		//====insert my code end===  2023-12-28 22:54:24
 
     [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        mGl.frame = otherChannelBtn.bounds;
+        mGl.frame = otherChannelBtn_IMPLVAR.bounds;
     }];
     
-    [myContentView addSubview:otherChannelBtn];
-    [otherChannelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [myContentView addSubview:otherChannelBtn_IMPLVAR];
+    [otherChannelBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(VH(35));
         make.bottom.mas_equalTo(myContentView).mas_offset(VH(-12));
         make.leading.mas_equalTo(myContentView).mas_offset(VW(10));
@@ -469,7 +469,7 @@ switch (w_ficacious16651) {
 
     
     
-    appleChannelBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:nil highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_PAY_CHANNEL_APPLE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    appleChannelBtn_IMPLVAR = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:nil highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_PAY_CHANNEL_APPLE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -505,8 +505,8 @@ switch (w_ficacious16651) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    appleChannelBtn.layer.cornerRadius = 2;
-    appleChannelBtn.layer.borderColor = UIColor.blackColor.CGColor;
+    appleChannelBtn_IMPLVAR.layer.cornerRadius = 2;
+    appleChannelBtn_IMPLVAR.layer.borderColor = UIColor.blackColor.CGColor;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -526,10 +526,10 @@ switch (w_ficacious16651) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    appleChannelBtn.layer.borderWidth = 0.5;
-    [myContentView addSubview:appleChannelBtn];
-    [appleChannelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(otherChannelBtn);
+    appleChannelBtn_IMPLVAR.layer.borderWidth = 0.5;
+    [myContentView addSubview:appleChannelBtn_IMPLVAR];
+    [appleChannelBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(otherChannelBtn_IMPLVAR);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -547,9 +547,9 @@ switch (w_ficacious16651) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.bottom.mas_equalTo(otherChannelBtn.mas_top).mas_offset(VH(-10));
-        make.leading.mas_equalTo(otherChannelBtn);
-        make.trailing.mas_equalTo(otherChannelBtn);
+        make.bottom.mas_equalTo(otherChannelBtn_IMPLVAR.mas_top).mas_offset(VH(-10));
+        make.leading.mas_equalTo(otherChannelBtn_IMPLVAR);
+        make.trailing.mas_equalTo(otherChannelBtn_IMPLVAR);
         
     }];
 
@@ -572,11 +572,11 @@ switch (w_ficacious16651) {
 
     
     UIButton *appleChannelBtn2 = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:icon_apple_pay highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_PAY_CHANNEL_APPLE selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [appleChannelBtn addSubview:appleChannelBtn2];
+    [appleChannelBtn_IMPLVAR addSubview:appleChannelBtn2];
     [appleChannelBtn2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(VH(24));
         make.width.mas_equalTo(VH(112));
-        make.center.mas_equalTo(appleChannelBtn);
+        make.center.mas_equalTo(appleChannelBtn_IMPLVAR);
         
     }];
     
@@ -630,7 +630,7 @@ if(T_nonagen16775 <= 90318){
 
     [tipsLabelContentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(myContentView).mas_offset(VH(18));
-        make.bottom.mas_equalTo(appleChannelBtn.mas_top).mas_offset(VH(-10));
+        make.bottom.mas_equalTo(appleChannelBtn_IMPLVAR.mas_top).mas_offset(VH(-10));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -648,8 +648,8 @@ if(T_nonagen16775 <= 90318){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.leading.mas_equalTo(otherChannelBtn);
-        make.trailing.mas_equalTo(otherChannelBtn);
+        make.leading.mas_equalTo(otherChannelBtn_IMPLVAR);
+        make.trailing.mas_equalTo(otherChannelBtn_IMPLVAR);
         
     }];
 
@@ -724,10 +724,10 @@ switch (K_happy16807) {
     handselIV.contentMode = UIViewContentModeScaleAspectFit;
     [myContentView addSubview:handselIV];
     [handselIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(otherChannelBtn);
-        make.bottom.mas_equalTo(otherChannelBtn);
+        make.top.mas_equalTo(otherChannelBtn_IMPLVAR);
+        make.bottom.mas_equalTo(otherChannelBtn_IMPLVAR);
         make.width.mas_equalTo(VW(42));
-        make.trailing.mas_equalTo(otherChannelBtn);
+        make.trailing.mas_equalTo(otherChannelBtn_IMPLVAR);
         
     }];
     

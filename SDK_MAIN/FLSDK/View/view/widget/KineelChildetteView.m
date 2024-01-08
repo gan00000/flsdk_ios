@@ -5,7 +5,7 @@
 @implementation KineelChildetteView
 
 {
-    ItemViewClickHander mhander;
+    ItemViewClickHander mhander_IMPLVAR;
 }
 
 
@@ -307,7 +307,7 @@ switch (o_ruletic15118) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    mhander = hander;
+    mhander_IMPLVAR = hander;
     self.backgroundColor = [UIColor clearColor];
     
     UIView *titleView = [[UIView alloc] init];
@@ -660,8 +660,8 @@ switch (M_butmost15352) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    if (mhander) {
-        mhander(1);
+    if (mhander_IMPLVAR) {
+        mhander_IMPLVAR(1);
     }
 }
 

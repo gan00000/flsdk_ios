@@ -15,15 +15,15 @@
 @implementation YouarColuseitView
 
 {
-    PolicyacyArchaeoibleView *thirdAccountSDKTextFiledView;
-    PolicyacyArchaeoibleView *accountSDKTextFiledView;
-    PolicyacyArchaeoibleView *pwdSDKTextFiledView;
+    PolicyacyArchaeoibleView *thirdAccountSDKTextFiledView_IMPLVAR;
+    PolicyacyArchaeoibleView *accountSDKTextFiledView_IMPLVAR;
+    PolicyacyArchaeoibleView *pwdSDKTextFiledView_IMPLVAR;
     
-    PolicyacyArchaeoibleView *hasBind_accountSDKTextFiledView;
+    PolicyacyArchaeoibleView *hasBind_accountSDKTextFiledView_IMPLVAR;
     
     
     
-    KineelChildetteView   *mLoginTitleView;
+    KineelChildetteView   *mLoginTitleView_IMPLVAR;
     
     
 }
@@ -521,12 +521,12 @@ if(a_carnidom21441 - 580 * 624 + 546 - 490 + 953 - 185 <= 31495){
         TvadeRhigant *currentAccount = SDK_DATA.mLoginResponse_MMMPRO.data;
         if (currentAccount.isBind) {
             
-            thirdAccountSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            thirdAccountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
-            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            thirdAccountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
-            thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
+            thirdAccountSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            thirdAccountSDKTextFiledView_IMPLVAR.moreAccountBtn_MMMPRO.hidden = YES;
+            thirdAccountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            thirdAccountSDKTextFiledView_IMPLVAR.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.enabled = NO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -553,9 +553,9 @@ if(a_carnidom21441 - 580 * 624 + 546 - 490 + 953 - 185 <= 31495){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-            [contentView addSubview:thirdAccountSDKTextFiledView];
+            [contentView addSubview:thirdAccountSDKTextFiledView_IMPLVAR];
             
-            [thirdAccountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [thirdAccountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
                 make.height.mas_equalTo(VH(40));
@@ -564,10 +564,10 @@ if(a_carnidom21441 - 580 * 624 + 546 - 490 + 953 - 185 <= 31495){
                 
             }];
             
-            [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
+            [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:nil];
             
-            hasBind_accountSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            hasBind_accountSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            hasBind_accountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -609,12 +609,12 @@ if(U_jac21470 - 846 * 308 + 494 * 367 / 100 > 99862){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-            hasBind_accountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            hasBind_accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
-            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
-            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
+            hasBind_accountSDKTextFiledView_IMPLVAR.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            hasBind_accountSDKTextFiledView_IMPLVAR.moreAccountBtn_MMMPRO.hidden = YES;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.enabled = NO;
             
-            [contentView addSubview:hasBind_accountSDKTextFiledView];
+            [contentView addSubview:hasBind_accountSDKTextFiledView_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -652,13 +652,13 @@ if(U_jac21470 - 846 * 308 + 494 * 367 / 100 > 99862){
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            [hasBind_accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [hasBind_accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
-                make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+                make.height.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
 
-                make.top.mas_equalTo(thirdAccountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
                 
             }];
 
@@ -733,16 +733,16 @@ switch (P_carniy21536) {
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            hasBind_accountSDKTextFiledView.inputUITextField_MMMPRO.text = currentAccount.loginId;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text = currentAccount.loginId;
             
         }else{
             
-            accountSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
-            accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            accountSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
-            accountSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            [contentView addSubview:accountSDKTextFiledView];
+            accountSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            accountSDKTextFiledView_IMPLVAR.moreAccountBtn_MMMPRO.hidden = YES;
+            accountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            accountSDKTextFiledView_IMPLVAR.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            [contentView addSubview:accountSDKTextFiledView_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -789,7 +789,7 @@ if(m_ethmesque21544 + 367 / 367 * 65 * 762 - 180 == 89795){
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
@@ -801,11 +801,11 @@ if(m_ethmesque21544 + 367 / 367 * 65 * 762 - 180 == 89795){
             
             
             
-            pwdSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-            pwdSDKTextFiledView.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
-            pwdSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            pwdSDKTextFiledView.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
-            [contentView addSubview:pwdSDKTextFiledView];
+            pwdSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+            pwdSDKTextFiledView_IMPLVAR.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
+            pwdSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            pwdSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.textColor = UIColor.blackColor;
+            [contentView addSubview:pwdSDKTextFiledView_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -938,12 +938,12 @@ switch (y_point21572) {
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [pwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
-                make.height.mas_equalTo(accountSDKTextFiledView);
+                make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
-                make.top.mas_equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
                 
             }];
             
@@ -1036,8 +1036,8 @@ switch (M_chrys21608) {
             [contentView addSubview:bindTipLabel];
             
             [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.mas_equalTo(pwdSDKTextFiledView);
-                make.trailing.mas_equalTo(pwdSDKTextFiledView);
+                make.leading.mas_equalTo(pwdSDKTextFiledView_IMPLVAR);
+                make.trailing.mas_equalTo(pwdSDKTextFiledView_IMPLVAR);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1079,7 +1079,7 @@ switch (U_legalise21616) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-                make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
+                make.top.equalTo(pwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(6));
                 
             }];
             
@@ -1612,8 +1612,8 @@ switch (h_vitrad21661) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     TvadeRhigant *tempAccountModel = (TvadeRhigant *)self.fromPageParam_MMMPRO;
-    [CitizeniaFoundsiveView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
-    thirdAccountSDKTextFiledView.inputUITextField_MMMPRO.enabled = NO;
+    [CitizeniaFoundsiveView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:nil];
+    thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.enabled = NO;
 }
 
 
@@ -1628,7 +1628,7 @@ switch (h_vitrad21661) {
         case kOkActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kOkActTag);
-            if (accountSDKTextFiledView) {
+            if (accountSDKTextFiledView_IMPLVAR) {
                 [self bindAccount_MMMethodMMM];
             }else{
                 [self removeFromGameView_MMMethodMMM];
@@ -1754,8 +1754,8 @@ if(j_countryetic21700 * 495 * 509 * 1 + 571 <= 66347){
 {
     
     
-    NSString *account = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
-    NSString *password = [pwdSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *account = [accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *password = [pwdSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
   
     
  

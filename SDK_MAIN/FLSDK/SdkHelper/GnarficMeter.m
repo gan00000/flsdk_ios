@@ -12,7 +12,7 @@
 
 @implementation GnarficMeter
 {
-    UIView *presentView;
+    UIView *presentView_IMPLVAR;
 }
 @synthesize appleLoginId = _appleLoginId;
 
@@ -52,7 +52,7 @@
 //===insert my method end=== 2023-12-28 22:54:25
 - (void)handleAuthrization:(UIView *_Nullable)mView{
     
-    presentView = mView;
+    presentView_IMPLVAR = mView;
     
     if (@available(iOS 13.0, *)) {
         
@@ -745,7 +745,7 @@ switch (I_sorctogetherarium32297) {
 
     NSLog(wwwww_tag_wwwww_violenceative_pointsome, __FUNCTION__);
     
-    if (presentView) {
+    if (presentView_IMPLVAR) {
 
 		//====insert my code start===  2023-12-28 22:54:25
 		{
@@ -861,7 +861,7 @@ switch (I_sorctogetherarium32297) {
 		}
 		//====insert my code end===  2023-12-28 22:54:25
 
-        return presentView.window;
+        return presentView_IMPLVAR.window;
     }
     return appTopViewController.view.window;
 }

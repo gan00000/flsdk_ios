@@ -14,9 +14,9 @@
 
 @implementation LeproorSuantView
 {
-    UILabel *accountLable;
-    TvadeRhigant *mAccountModel;
-    NSString *accountTips;
+    UILabel *accountLable_IMPLVAR;
+    TvadeRhigant *mAccountModel_IMPLVAR;
+    NSString *accountTips_IMPLVAR;
 }
 
 
@@ -179,13 +179,13 @@
     }];
     
     
-    accountLable = [LeukastBetweenate initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
+    accountLable_IMPLVAR = [LeukastBetweenate initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_C0C0C0]];
     
     
-    accountLable.numberOfLines = 1;
+    accountLable_IMPLVAR.numberOfLines = 1;
     
-    [contentView addSubview:accountLable];
-    [accountLable mas_makeConstraints:^(MASConstraintMaker *make) {
+    [contentView addSubview:accountLable_IMPLVAR];
+    [accountLable_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(contentView);
         make.centerX.mas_equalTo(contentView);
 
@@ -216,7 +216,7 @@
     
     [contentView addSubview:waitLable];
     [waitLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(accountLable.mas_bottom).mas_offset(VH(25));
+        make.top.mas_equalTo(accountLable_IMPLVAR.mas_bottom).mas_offset(VH(25));
         make.centerX.mas_equalTo(contentView);
     }];
     
@@ -339,10 +339,10 @@
     if (accountModels && accountModels.count > 0) {
         
         
-        mAccountModel = [accountModels firstObject];
-        if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel.loginType]){
-            accountLable.text = mAccountModel.userId;
-            accountTips = mAccountModel.userId;
+        mAccountModel_IMPLVAR = [accountModels firstObject];
+        if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel_IMPLVAR.loginType]){
+            accountLable_IMPLVAR.text = mAccountModel_IMPLVAR.userId;
+            accountTips_IMPLVAR = mAccountModel_IMPLVAR.userId;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -374,8 +374,8 @@
 
             
             
-        }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel.loginType]){
-            accountLable.text = mAccountModel.account;
+        }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel_IMPLVAR.loginType]){
+            accountLable_IMPLVAR.text = mAccountModel_IMPLVAR.account;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -425,7 +425,7 @@
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            accountTips = mAccountModel.account;
+            accountTips_IMPLVAR = mAccountModel_IMPLVAR.account;
         }
         self.totalCount_MMMPRO = 3;
         
@@ -719,11 +719,11 @@ switch (F_drapess19215) {
 	return H_33;
 }
 //===insert my method end=== 2023-12-28 22:54:24
--(void)requestAccountLogin_MMMethodMMM:(TvadeRhigant *)mAccountModel
+-(void)requestAccountLogin_MMMethodMMM:(TvadeRhigant *)mAccountModel_IMPLVAR
 {
     
-    NSString *accountName = [StinityAsterature triString_MMMethodMMM:mAccountModel.account];
-    NSString *pwd = [StinityAsterature triString_MMMethodMMM:mAccountModel.password];
+    NSString *accountName = [StinityAsterature triString_MMMethodMMM:mAccountModel_IMPLVAR.account];
+    NSString *pwd = [StinityAsterature triString_MMMethodMMM:mAccountModel_IMPLVAR.password];
     
     
     if (!accountName || [accountName isEqualToString:@""]) {
@@ -929,8 +929,8 @@ if(f_olenearster19812 - 919 * 301 * 740 + 433 + 637 - 503 < 34214){
 
 - (void)beforeStartTimer_MMMethodMMM{
     
-    if(mAccountModel){
-        accountLable.text = STR_FORMAT(@"%@(%d)", accountTips, self.totalCount_MMMPRO);
+    if(mAccountModel_IMPLVAR){
+        accountLable_IMPLVAR.text = STR_FORMAT(@"%@(%d)", accountTips_IMPLVAR, self.totalCount_MMMPRO);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1075,19 +1075,19 @@ if(q_figureian19860 <= 72356){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    if(mAccountModel){
-        accountLable.text = STR_FORMAT(wwwww_tag_wwwww_respondfaction_offeracy, accountTips, count);
+    if(mAccountModel_IMPLVAR){
+        accountLable_IMPLVAR.text = STR_FORMAT(wwwww_tag_wwwww_respondfaction_offeracy, accountTips_IMPLVAR, count);
     }
     
 }
 
 - (void)finishTimer_MMMethodMMM
 {
-    if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel.loginType]){
+    if([LOGIN_TYPE_GUEST isEqualToString:mAccountModel_IMPLVAR.loginType]){
         [EitheratorConditionlet guestLoginAndThirdRequest_MMMethodMMM:self.loginDelegate_MMMPRO];
         
-    }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel.loginType]){
-        [self requestAccountLogin_MMMethodMMM:mAccountModel];
+    }else if([LOGIN_TYPE_SELF isEqualToString:mAccountModel_IMPLVAR.loginType]){
+        [self requestAccountLogin_MMMethodMMM:mAccountModel_IMPLVAR];
     }
 }
 

@@ -14,7 +14,7 @@
 @implementation JustScorelyView
 {
     
-    WKWebView *nWebView;
+    WKWebView *nWebView_IMPLVAR;
     
 }
 
@@ -759,11 +759,11 @@ if(K_entersion26405 < 85645){
 
     
     
-    nWebView = [[WKWebView alloc] init];
-    [nWebView.scrollView setBounces:YES];
-    [nWebView.scrollView setScrollEnabled:YES];
-    [xView addSubview:nWebView];
-    [nWebView mas_makeConstraints:^(MASConstraintMaker *make) {
+    nWebView_IMPLVAR = [[WKWebView alloc] init];
+    [nWebView_IMPLVAR.scrollView setBounces:YES];
+    [nWebView_IMPLVAR.scrollView setScrollEnabled:YES];
+    [xView addSubview:nWebView_IMPLVAR];
+    [nWebView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
 
         make.top.leading.mas_equalTo(xView).mas_offset(VH(10));
         make.bottom.trailing.mas_equalTo(xView).mas_offset(-VH(10));
@@ -792,7 +792,7 @@ if(u_animal26511 >= 78731){
     NSString * url = SDK_DATA.urls_MMMPRO.noticeUrl;
     SDK_LOG(wwwww_tag_wwwww_sarcage_stigmat,url);
     if(url){
-        [nWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+        [nWebView_IMPLVAR loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
     }
     
 }

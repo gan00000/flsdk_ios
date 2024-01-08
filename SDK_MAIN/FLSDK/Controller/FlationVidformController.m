@@ -26,12 +26,12 @@
 
 @implementation FlationVidformController{
     
-    SDKPage sdkPageType;
+    SDKPage sdkPageType_IMPLVAR;
     
     
-    LatadeClosView *mAutoLoginView;
-    LatadeClosView *mLoginWithRegView;
-    LatadeClosView *mMainHomeView;
+    LatadeClosView *mAutoLoginView_IMPLVAR;
+    LatadeClosView *mLoginWithRegView_IMPLVAR;
+    LatadeClosView *mMainHomeView_IMPLVAR;
     
 }
 
@@ -144,7 +144,7 @@ switch (v_cortise6107) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     if (self) {
-        sdkPageType = pageType;
+        sdkPageType_IMPLVAR = pageType;
         [self registNotification_MMMethodMMM];
     }
     
@@ -165,7 +165,7 @@ switch (v_cortise6107) {
     self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];
     
     SDK_DATA.mUITextFieldDelegate_MMMPRO = self;
-    switch (sdkPageType) {
+    switch (sdkPageType_IMPLVAR) {
         case SDKPage_Login:
         {
             [self showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_NULL)];
@@ -815,9 +815,9 @@ if(N_mitess6163 * 178 - 801 * 722 * 986 * 824 / 588 == 33274){
         [subView removeFromSuperview];
     }
     
-    mLoginWithRegView = [[OldlikeUdintudeeousView alloc] initView_MMMethodMMM];
+    mLoginWithRegView_IMPLVAR = [[OldlikeUdintudeeousView alloc] initView_MMMethodMMM];
     
-    [self addSubSdkLoginView_MMMethodMMM:mLoginWithRegView];
+    [self addSubSdkLoginView_MMMethodMMM:mLoginWithRegView_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -925,7 +925,7 @@ if(w_opl6709 != 55541){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    return mLoginWithRegView;
+    return mLoginWithRegView_IMPLVAR;
 }
 
 
@@ -938,8 +938,8 @@ if(w_opl6709 != 55541){
     for (UIView *subView in [self sdkContentView_MMMPRO].subviews) {
         [subView removeFromSuperview];
     }
-    mAutoLoginView = [[LeproorSuantView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:mAutoLoginView];
+    mAutoLoginView_IMPLVAR = [[LeproorSuantView alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:mAutoLoginView_IMPLVAR];
 }
 
 
@@ -1247,8 +1247,8 @@ switch (j_lecithic6723) {
     for (UIView *subView in [self sdkContentView_MMMPRO].subviews) {
         [subView removeFromSuperview];
     }
-    mMainHomeView = [[HabressTrialView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:mMainHomeView];
+    mMainHomeView_IMPLVAR = [[HabressTrialView alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:mMainHomeView_IMPLVAR];
 }
 
 
@@ -2005,14 +2005,14 @@ if(X_hopling6843 * 408 - 240 < 20331){
     
     switch (toPage) {
         case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
-            if (mLoginWithRegView) {
-                mLoginWithRegView.hidden = NO;
+            if (mLoginWithRegView_IMPLVAR) {
+                mLoginWithRegView_IMPLVAR.hidden = NO;
             }
             break;
             
         case CURRENT_PAGE_TYPE_MAIN_HOME:
-            if (mMainHomeView) {
-                mMainHomeView.hidden = NO;
+            if (mMainHomeView_IMPLVAR) {
+                mMainHomeView_IMPLVAR.hidden = NO;
             }else{
                 [self addHomeView_MMMethodMMM];
 

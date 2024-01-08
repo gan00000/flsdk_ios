@@ -10,18 +10,18 @@
 
 @implementation OldlikeUdintudeeousView
 {
-    UIButton *loginTabBtn;
-    UIButton *regTabBtn;
+    UIButton *loginTabBtn_IMPLVAR;
+    UIButton *regTabBtn_IMPLVAR;
     
-    NSUInteger currentClickTab;
+    NSUInteger currentClickTab_IMPLVAR;
     
-    UIView *loginBottomLine;
+    UIView *loginBottomLine_IMPLVAR;
     
-    UIView *regBottomLine;
+    UIView *regBottomLine_IMPLVAR;
     
-    UIButton *backBtn;
+    UIButton *backBtn_IMPLVAR;
     
-    UIView *deleteBtnView;
+    UIView *deleteBtnView_IMPLVAR;
 }
 
 
@@ -139,7 +139,7 @@ switch (p_centr26581) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     if (self) {
-        currentClickTab = 1;
+        currentClickTab_IMPLVAR = 1;
         [self addView_MMMethodMMM];
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -297,7 +297,7 @@ if(K_proximably26577 <= 72010){
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
     [myView mas_makeConstraints:^(MASConstraintMaker *make) {
-        if(deleteBtnView && !deleteBtnView.isHidden){
+        if(deleteBtnView_IMPLVAR && !deleteBtnView_IMPLVAR.isHidden){
             make.centerX.mas_equalTo(self);
             make.centerY.mas_equalTo(self).mas_offset(VH(-12));
         }else{
@@ -340,21 +340,21 @@ if(H_stagnety26614 >= 9566){
     
     
     
-    loginTabBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [loginTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
-    [tabView addSubview:loginTabBtn];
-    [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    loginTabBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_login.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    [loginTabBtn_IMPLVAR setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
+    [tabView addSubview:loginTabBtn_IMPLVAR];
+    [loginTabBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
     }];
     
     
-    regTabBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_register.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    regTabBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_register.localx fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:UIColor.whiteColor tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [regTabBtn setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
-    [tabView addSubview:regTabBtn];
-    [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [regTabBtn_IMPLVAR setTitleColor:[UIColor colorWithHexString_MMMethodMMM:BaseColor] forState:UIControlStateSelected];
+    [tabView addSubview:regTabBtn_IMPLVAR];
+    [regTabBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
 
@@ -436,7 +436,7 @@ switch (s_technology26638) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(50));
+        make.leading.mas_equalTo(loginTabBtn_IMPLVAR.mas_trailing).mas_offset(VW(50));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -533,19 +533,19 @@ switch (A_plaino26668) {
 
     }];
     
-    loginBottomLine = [[UIView alloc] init];
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-    [tabView addSubview:loginBottomLine];
-    [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    loginBottomLine_IMPLVAR = [[UIView alloc] init];
+    loginBottomLine_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [tabView addSubview:loginBottomLine_IMPLVAR];
+    [loginBottomLine_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.leading.trailing.mas_equalTo(loginTabBtn);
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.leading.trailing.mas_equalTo(loginTabBtn_IMPLVAR);
+        make.top.mas_equalTo(loginTabBtn_IMPLVAR.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
     }];
     
-    regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    regBottomLine_IMPLVAR = [[UIView alloc] init];
+    regBottomLine_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -637,8 +637,8 @@ if(g_saurarium26700 - 369 * 70 / 891 + 212 + 941 / 804 >= 38980){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    regBottomLine.hidden = YES;
-    [tabView addSubview:regBottomLine];
+    regBottomLine_IMPLVAR.hidden = YES;
+    [tabView addSubview:regBottomLine_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -717,10 +717,10 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    [regBottomLine_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.leading.trailing.mas_equalTo(regTabBtn);
-        make.top.mas_equalTo(regTabBtn.mas_bottom).mas_offset(3);
+        make.leading.trailing.mas_equalTo(regTabBtn_IMPLVAR);
+        make.top.mas_equalTo(regTabBtn_IMPLVAR.mas_bottom).mas_offset(3);
         make.height.mas_equalTo(2);
 
     }];
@@ -747,10 +747,10 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
 
     
     
-    backBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    backBtn_IMPLVAR = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:mw_back_icon highlightedImage_MMMethodMMM:mw_back_icon tag_MMMethodMMM:kBackBtnActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
     
-    [myView addSubview:backBtn];
-    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [myView addSubview:backBtn_IMPLVAR];
+    [backBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerY.mas_equalTo(tabView);
         make.leading.mas_equalTo(myView).mas_offset(VW(34));
@@ -781,8 +781,8 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
     
     
     
-    currentClickTab = 1;
-    [loginTabBtn setSelected:YES];
+    currentClickTab_IMPLVAR = 1;
+    [loginTabBtn_IMPLVAR setSelected:YES];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -810,13 +810,13 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [regTabBtn setSelected:NO];
+    [regTabBtn_IMPLVAR setSelected:NO];
     
     self.mAccountLoginView_MMMPRO = [[CitizeniaFoundsiveView alloc] initView_MMMethodMMM];
     [myView addSubview:self.mAccountLoginView_MMMPRO];
     [self.mAccountLoginView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
+        make.top.mas_equalTo(loginBottomLine_IMPLVAR.mas_bottom).mas_offset(VH(25));
 
     }];
     
@@ -824,7 +824,7 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
     [myView addSubview:self.mRegisterAccountView_MMMPRO];
     [self.mRegisterAccountView_MMMPRO mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(myView);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(25));
+        make.top.mas_equalTo(loginBottomLine_IMPLVAR.mas_bottom).mas_offset(VH(25));
     }];
     
     self.mRegisterAccountView_MMMPRO.hidden = YES;
@@ -836,7 +836,7 @@ if(j_beautifulate26731 * 979 * 108 - 494 / 837 <= 16341){
         self.mRegisterAccountView_MMMPRO.transform = CGAffineTransformMakeTranslation(self.frame.size.width, 0);
         
         if (!self.fromPage_MMMPRO) {
-            backBtn.hidden = YES;
+            backBtn_IMPLVAR.hidden = YES;
         }
     }];
 }
@@ -937,10 +937,10 @@ if(Q_reason26777 + 167 + 391 >= 86841){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-            if (currentClickTab == 1) {
+            if (currentClickTab_IMPLVAR == 1) {
                 return;
             }
-            currentClickTab = 1;
+            currentClickTab_IMPLVAR = 1;
             
             [self makeTabStatus_MMMethodMMM:YES];
             if (self.loginDelegate_MMMPRO) {
@@ -1083,10 +1083,10 @@ switch (m_somnhugeid26783) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-            if (currentClickTab == 2) {
+            if (currentClickTab_IMPLVAR == 2) {
                 return;
             }
-            currentClickTab = 2;
+            currentClickTab_IMPLVAR = 2;
             
            
             [self makeTabStatus_MMMethodMMM:NO];
@@ -1158,10 +1158,10 @@ if(N_oratory26810 > 14424){
 
     if (loginClick) {
         
-        [loginTabBtn setSelected:YES];
-        [regTabBtn setSelected:NO];
+        [loginTabBtn_IMPLVAR setSelected:YES];
+        [regTabBtn_IMPLVAR setSelected:NO];
         
-        loginBottomLine.hidden = NO;
+        loginBottomLine_IMPLVAR.hidden = NO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1214,13 +1214,13 @@ if(B_tertiress26834 * 869 + 984 + 768 * 764 - 896 - 807 != 19806){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        regBottomLine.hidden = YES;
+        regBottomLine_IMPLVAR.hidden = YES;
         
         self.mAccountLoginView_MMMPRO.hidden = NO;
         self.mRegisterAccountView_MMMPRO.hidden = NO;
         
-        if(deleteBtnView){
-            deleteBtnView.hidden = NO;
+        if(deleteBtnView_IMPLVAR){
+            deleteBtnView_IMPLVAR.hidden = NO;
         }
         
         
@@ -1238,7 +1238,7 @@ if(B_tertiress26834 * 869 + 984 + 768 * 764 - 896 - 807 != 19806){
     }else{
     
         
-        [loginTabBtn setSelected:NO];
+        [loginTabBtn_IMPLVAR setSelected:NO];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1290,12 +1290,12 @@ if(B_tertiress26834 * 869 + 984 + 768 * 764 - 896 - 807 != 19806){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        [regTabBtn setSelected:YES];
+        [regTabBtn_IMPLVAR setSelected:YES];
     
         self.mAccountLoginView_MMMPRO.hidden = NO;
         self.mRegisterAccountView_MMMPRO.hidden = NO;
         
-        loginBottomLine.hidden = YES;
+        loginBottomLine_IMPLVAR.hidden = YES;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1407,10 +1407,10 @@ if(i_vivreligioussure26882 >= 68126){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        regBottomLine.hidden = NO;
+        regBottomLine_IMPLVAR.hidden = NO;
         
-        if(deleteBtnView){
-            deleteBtnView.hidden = YES;
+        if(deleteBtnView_IMPLVAR){
+            deleteBtnView_IMPLVAR.hidden = YES;
         }
         [UIView animateWithDuration:0.6 animations:^{
             
@@ -1644,7 +1644,7 @@ if(U_firsten26957 > 12972){
         [self.mAccountLoginView_MMMPRO addDeleteAccountConfireView_MMMethodMMM];
     }];
     
-    deleteBtnView = deleteView;
+    deleteBtnView_IMPLVAR = deleteView;
 }
 
 @end

@@ -7,8 +7,8 @@
 
 @implementation PolicyacyArchaeoibleView
 {
-    UITextField *mUITextField;
-    UIButton *eyeBtn;
+    UITextField *mUITextField_IMPLVAR;
+    UIButton *eyeBtn_IMPLVAR;
 }
 
 
@@ -185,8 +185,8 @@ if(k_recent17112 > 23093){
 //===insert my method end=== 2023-12-28 22:54:24
 -(void)setPwdFiledView_MMMethodMMM:(BOOL)enable{
     
-    eyeBtn.hidden = !enable;
-    mUITextField.enabled = enable;
+    eyeBtn_IMPLVAR.hidden = !enable;
+    mUITextField_IMPLVAR.enabled = enable;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -269,7 +269,7 @@ if(l_maniaize17196 + 928 / 995 - 458 > 80443){
 
     if (enable) {
         self.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon];
-        mUITextField.secureTextEntry = YES;
+        mUITextField_IMPLVAR.secureTextEntry = YES;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -358,7 +358,7 @@ if(G_genuexpectatic17241 + 874 + 749 / 424 == 6191){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        mUITextField.text = @"";
+        mUITextField_IMPLVAR.text = @"";
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -382,13 +382,13 @@ if(G_genuexpectatic17241 + 874 + 749 / 424 == 6191){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        eyeBtn.selected = YES;
-        mUITextField.textColor = [UIColor whiteColor];
+        eyeBtn_IMPLVAR.selected = YES;
+        mUITextField_IMPLVAR.textColor = [UIColor whiteColor];
         
     }else{
         self.lableIconImageView_MMMPRO.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_disable_icon];
-        mUITextField.secureTextEntry = NO;
-        mUITextField.text = GetString(wwwww_tag_wwwww_text_free_register);
+        mUITextField_IMPLVAR.secureTextEntry = NO;
+        mUITextField_IMPLVAR.text = GetString(wwwww_tag_wwwww_text_free_register);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -439,9 +439,9 @@ switch (M_fundibility17315) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        mUITextField.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
+        mUITextField_IMPLVAR.textColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
 
-        eyeBtn.selected = NO;
+        eyeBtn_IMPLVAR.selected = NO;
     }
     
 }
@@ -1306,8 +1306,8 @@ switch (x_opoter17545) {
         trailing_offset = -VW(30);
     }
     
-    mUITextField = [[UITextField alloc] init];
-    self.inputUITextField_MMMPRO = mUITextField;
+    mUITextField_IMPLVAR = [[UITextField alloc] init];
+    self.inputUITextField_MMMPRO = mUITextField_IMPLVAR;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1331,14 +1331,14 @@ switch (x_opoter17545) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     if (mUIKeyboardType) {
-        [mUITextField setKeyboardType:mUIKeyboardType];
+        [mUITextField_IMPLVAR setKeyboardType:mUIKeyboardType];
     }
-    mUITextField.textColor = [UIColor whiteColor];
+    mUITextField_IMPLVAR.textColor = [UIColor whiteColor];
     
-    mUITextField.font = [UIFont systemFontOfSize:FS(14)];
+    mUITextField_IMPLVAR.font = [UIFont systemFontOfSize:FS(14)];
     
     if (SDK_DATA.mUITextFieldDelegate_MMMPRO) {
-        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
+        mUITextField_IMPLVAR.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1375,11 +1375,11 @@ switch (x_opoter17545) {
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
-    mUITextField.attributedPlaceholder = attrStr;
+    mUITextField_IMPLVAR.attributedPlaceholder = attrStr;
     
     
-    [self addSubview:mUITextField];
-    [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self addSubview:mUITextField_IMPLVAR];
+    [mUITextField_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(lineView1.mas_trailing).mas_offset(VW(8));
         make.top.mas_equalTo(self).offset(2);
 
@@ -1881,8 +1881,8 @@ if(P_simildom17730 < 33122){
 		//====insert my code end===  2023-12-28 22:54:24
 
     if (showEye) {
-        mUITextField.secureTextEntry = NO;
-        eyeBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        mUITextField_IMPLVAR.secureTextEntry = NO;
+        eyeBtn_IMPLVAR = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1942,8 +1942,8 @@ if(v_cause17744 - 997 * 870 > 1201){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        eyeBtn.selected = YES;
-        mUITextField.secureTextEntry = YES;
+        eyeBtn_IMPLVAR.selected = YES;
+        mUITextField_IMPLVAR.secureTextEntry = YES;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2023,7 +2023,7 @@ if(V_chiroeer17748 >= 37594){
 		//====insert my code end===  2023-12-28 22:54:24
 
         
-        eyeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        eyeBtn_IMPLVAR.imageView.contentMode = UIViewContentModeScaleAspectFit;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2053,8 +2053,8 @@ if(V_chiroeer17748 >= 37594){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        [self addSubview:eyeBtn];
-        [eyeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self addSubview:eyeBtn_IMPLVAR];
+        [eyeBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.trailing.mas_equalTo(self).mas_offset(VW(-8));
 
@@ -3084,8 +3084,8 @@ if(y_ceratent18021 != 10186){
 
     }
     
-    mUITextField = [[UITextField alloc] init];
-    self.inputUITextField_MMMPRO = mUITextField;
+    mUITextField_IMPLVAR = [[UITextField alloc] init];
+    self.inputUITextField_MMMPRO = mUITextField_IMPLVAR;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3150,7 +3150,7 @@ switch (L_backsion18043) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     if (mUIKeyboardType) {
-        [mUITextField setKeyboardType:mUIKeyboardType];
+        [mUITextField_IMPLVAR setKeyboardType:mUIKeyboardType];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3240,12 +3240,12 @@ if(O_phanform18061 - 116 - 614 != 15966){
 		//====insert my code end===  2023-12-28 22:54:24
 
     }
-    mUITextField.textColor = [UIColor whiteColor];
+    mUITextField_IMPLVAR.textColor = [UIColor whiteColor];
     
-    mUITextField.font = [UIFont systemFontOfSize:FS(14)];
+    mUITextField_IMPLVAR.font = [UIFont systemFontOfSize:FS(14)];
     
     if (SDK_DATA.mUITextFieldDelegate_MMMPRO) {
-        mUITextField.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
+        mUITextField_IMPLVAR.delegate = SDK_DATA.mUITextFieldDelegate_MMMPRO;
     }
     
     
@@ -3256,7 +3256,7 @@ if(O_phanform18061 - 116 - 614 != 15966){
     int placeHolderTextSize = FS(14);
     NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:placeholderText
                                                                   attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:placeHolderTextSize],NSForegroundColorAttributeName: [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484]}];
-    mUITextField.attributedPlaceholder = attrStr;
+    mUITextField_IMPLVAR.attributedPlaceholder = attrStr;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3324,8 +3324,8 @@ switch (l_ableless18084) {
 
     
     
-    [self addSubview:mUITextField];
-    [mUITextField mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self addSubview:mUITextField_IMPLVAR];
+    [mUITextField_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(lineView1.mas_trailing).mas_offset(VW(8));
         make.top.mas_equalTo(self).offset(2);
         make.bottom.mas_equalTo(self).offset(-2);
@@ -3380,7 +3380,7 @@ if(q_operics18088 >= 5907){
     
     
     if (showEye) {
-        mUITextField.secureTextEntry = NO;
+        mUITextField_IMPLVAR.secureTextEntry = NO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3401,12 +3401,12 @@ if(q_operics18088 >= 5907){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        eyeBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        eyeBtn.selected = YES;
-        mUITextField.secureTextEntry = YES;
+        eyeBtn_IMPLVAR = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:fl_sdk_ky highlightedImage_MMMethodMMM:fl_sdk_ky selectedImageName_MMMethodMMM:fl_sdk_by tag_MMMethodMMM:22 selector:@selector(eyeViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        eyeBtn_IMPLVAR.selected = YES;
+        mUITextField_IMPLVAR.secureTextEntry = YES;
         
-        eyeBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:eyeBtn];
+        eyeBtn_IMPLVAR.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:eyeBtn_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3487,7 +3487,7 @@ if(l_anderot18124 - 862 - 938 - 470 / 953 + 782 - 994 < 28974){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        [eyeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        [eyeBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.trailing.mas_equalTo(self).mas_offset(VW(-15));
             make.centerY.mas_equalTo(self);
@@ -3994,9 +3994,9 @@ if(a_mesterapplyfication18261 == 9135){
     
     if (sender.selected) { 
         
-        NSString *tempPwdStr = mUITextField.text;
-        mUITextField.text = @""; 
-        mUITextField.secureTextEntry = NO;
+        NSString *tempPwdStr = mUITextField_IMPLVAR.text;
+        mUITextField_IMPLVAR.text = @""; 
+        mUITextField_IMPLVAR.secureTextEntry = NO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -4050,13 +4050,13 @@ switch (n_car18283) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        mUITextField.text = tempPwdStr;
+        mUITextField_IMPLVAR.text = tempPwdStr;
         
     } else { 
         
-        NSString *tempPwdStr = mUITextField.text;
-        mUITextField.text = @"";
-        mUITextField.secureTextEntry = YES;
+        NSString *tempPwdStr = mUITextField_IMPLVAR.text;
+        mUITextField_IMPLVAR.text = @"";
+        mUITextField_IMPLVAR.secureTextEntry = YES;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -4161,7 +4161,7 @@ switch (U_leavetic18289) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        mUITextField.text = tempPwdStr;
+        mUITextField_IMPLVAR.text = tempPwdStr;
     }
     
     sender.selected = !sender.selected;

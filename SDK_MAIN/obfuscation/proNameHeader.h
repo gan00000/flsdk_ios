@@ -177,4 +177,64 @@
 #define  keyBoardHeight_MMMPRO      subscribeThump
 #define  _keyBoardHeight_MMMPRO      _subscribeThump
 
+
+
+#define isPaying_PRIROPERTY    somebodypremise
+#define eventsDic_IMPLVAR    raceIgloo
+#define mNaverCallBack_IMPLVAR    angiospermmycoplasma
+#define sdkPageType_IMPLVAR    channelOldie
+#define mAutoLoginView_IMPLVAR    countryLady
+#define mLoginWithRegView_IMPLVAR    controlGraph
+#define mMainHomeView_IMPLVAR    vibrateRehospitalisation
+#define isDrawRect_IMPLVAR    thickenphysiology
+#define downTimer_IMPLVAR    nominalizegel
+#define mhander_IMPLVAR    sheerDedication
+#define otherChannelBtn_IMPLVAR    searchImplication
+#define appleChannelBtn_IMPLVAR    okayderivation
+#define mUITextField_IMPLVAR    demotivatepolicy
+#define eyeBtn_IMPLVAR    beneficiaryAirfield
+#define accountSDKTextFiledView_IMPLVAR    drainfreon
+#define newPwdSDKTextFiledView_IMPLVAR    soundtosser
+#define vfCodeFiledView_IMPLVAR    demonizeDoorpost
+#define mLoginTitleView_IMPLVAR    rationaliseSlippers
+#define getVfCodeBtn_IMPLVAR    severdick
+#define phoneCountdown_IMPLVAR    reshuffleClock
+#define accountLable_IMPLVAR    medtelevision
+#define mAccountModel_IMPLVAR    reasonhit
+#define accountTips_IMPLVAR    kidAppetizer
+#define guestLoginBtn_IMPLVAR    quarterinspector
+#define checkBoxTermsBtn_IMPLVAR    categoriseSquash
+#define deleteView_IMPLVAR    gritdenim
+#define thirdAccountSDKTextFiledView_IMPLVAR    dilutedPresentation
+#define pwdSDKTextFiledView_IMPLVAR    residenceCasserole
+#define hasBind_accountSDKTextFiledView_IMPLVAR    combatink
+#define provisionWebView_IMPLVAR    adornPostbox
+#define okBtn_IMPLVAR    compileclinic
+#define hasBindPhoneTips_IMPLVAR    dickerLeprosy
+#define phoneContentView_IMPLVAR    venomNurture
+#define areaCodeLabel_IMPLVAR    stayVenue
+#define mPhoneInfoModel_IMPLVAR    sobMargarine
+#define vfCodeFiled_IMPLVAR    modelTrout
+#define phoneNumFiled_IMPLVAR    homesteadpickaxe
+#define passwordSDKTextFiledView_IMPLVAR    bewitchAmenity
+#define accountLoginBtn_IMPLVAR    bagfridge
+#define backBtn_IMPLVAR    scholarBlock
+#define gamaAppleLogin_IMPLVAR    fracturemustache
+#define isAgree_IMPLVAR    wordclerk
+#define currentAccountModel_IMPLVAR    plaitJumpsuit
+#define accountListView_IMPLVAR    stableBuffet
+#define accountMaskView_IMPLVAR    creoliseShaker
+#define deleteAccountConfireView_IMPLVAR    hospitalisationdeveloper
+#define deleteBtnView_IMPLVAR    razzShout
+#define loginGl_IMPLVAR    soliditystrap
+#define passwordAgainSDKTextFiledView_IMPLVAR    hiccupsandpaper
+#define regAccountBtn_IMPLVAR    vibraphonechair
+#define nWebView_IMPLVAR    penflag
+#define loginTabBtn_IMPLVAR    affectmuscat
+#define regTabBtn_IMPLVAR    divingliner
+#define currentClickTab_IMPLVAR    rootbrass
+#define loginBottomLine_IMPLVAR    besetRoller
+#define regBottomLine_IMPLVAR    pestMagnitude
+#define presentView_IMPLVAR    badgercodling
+
 #endif /* proNameHeader_h */

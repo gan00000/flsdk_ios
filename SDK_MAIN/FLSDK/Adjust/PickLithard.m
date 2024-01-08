@@ -5,7 +5,7 @@
 
 @implementation PickLithard
 {
-    NSDictionary *eventsDic;
+    NSDictionary *eventsDic_IMPLVAR;
 }
 
 

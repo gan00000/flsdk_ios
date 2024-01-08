@@ -21,9 +21,9 @@
 
 @implementation HabressTrialView
 {
-    UIButton *guestLoginBtn;
-    UIButton *checkBoxTermsBtn;
-    UIView *deleteView;
+    UIButton *guestLoginBtn_IMPLVAR;
+    UIButton *checkBoxTermsBtn_IMPLVAR;
+    UIView *deleteView_IMPLVAR;
 }
 
 
@@ -431,7 +431,7 @@ if(U_window20114 <= 21804){
     
     
     RestGravView *aTermsViewV2 = [[RestGravView alloc] initWithCompleter_MMMethodMMM:^{
-        checkBoxTermsBtn.selected = YES;
+        checkBoxTermsBtn_IMPLVAR.selected = YES;
     }];
     
     UIView *superView = appTopViewController.view;
@@ -915,7 +915,7 @@ if(p_theorithere20301 - 261 * 115 / 732 - 645 / 92 == 51301){
     
     
     
-    guestLoginBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    guestLoginBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -933,10 +933,10 @@ if(p_theorithere20301 - 261 * 115 / 732 - 645 / 92 == 51301){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [guestLoginBtn.layer setCornerRadius:VH(25)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [guestLoginBtn_IMPLVAR.layer setCornerRadius:VH(25)];
+    guestLoginBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     
-    [contentView addSubview:guestLoginBtn];
+    [contentView addSubview:guestLoginBtn_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -968,7 +968,7 @@ switch (C_vulgindeeder20423) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [guestLoginBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.mas_equalTo(contentView);
         make.leading.mas_equalTo(contentView).mas_offset(VH(38));
@@ -1072,16 +1072,16 @@ if(k_mixtairtic20459 * 707 + 365 - 880 * 455 - 659 != 4215){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
+    [guestLoginBtn_IMPLVAR.layer addSublayer:guestBtnGradientLayer];
     
     [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        guestBtnGradientLayer.frame = guestLoginBtn.bounds;
+        guestBtnGradientLayer.frame = guestLoginBtn_IMPLVAR.bounds;
     }];
     
     UIView *guestLoginBtnContent = [[UIView alloc] init];
-    [guestLoginBtn addSubview:guestLoginBtnContent];
+    [guestLoginBtn_IMPLVAR addSubview:guestLoginBtnContent];
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(guestLoginBtn);
+        make.center.mas_equalTo(guestLoginBtn_IMPLVAR);
     }];
     
     UIButton *guestIconBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:guse_login_bg highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
@@ -1140,11 +1140,11 @@ if(k_mixtairtic20459 * 707 + 365 - 880 * 455 - 659 != 4215){
 
     }];
     if (!SDK_DATA.mConfigModel_MMMPRO.visitorLogin) {
-        guestLoginBtn.hidden = YES;
+        guestLoginBtn_IMPLVAR.hidden = YES;
     }
     
     
-    UIView *topView = guestLoginBtn;
+    UIView *topView = guestLoginBtn_IMPLVAR;
     
     
     
@@ -1198,7 +1198,7 @@ if(k_mixtairtic20459 * 707 + 365 - 880 * 455 - 659 != 4215){
         if (!SDK_DATA.mConfigModel_MMMPRO.appleLogin || SDK_DATA.mConfigModel_MMMPRO.appPassCheck) {
             appleLoginBtn.hidden = YES;
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.mas_equalTo(guestLoginBtn);
+                make.leading.trailing.mas_equalTo(guestLoginBtn_IMPLVAR);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1234,7 +1234,7 @@ if(k_certainier20518 + 301 / 360 / 880 / 229 / 436 != 10659){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(2);
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(2);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1256,8 +1256,8 @@ if(k_certainier20518 + 301 / 360 / 880 / 229 / 436 != 10659){
             
         }else{
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+                make.leading.trailing.height.mas_equalTo(guestLoginBtn_IMPLVAR);
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(VH(15));
             }];
         }
         
@@ -2005,7 +2005,7 @@ switch (y_alg20829) {
         make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-15));
     }];
     
-    checkBoxTermsBtn = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    checkBoxTermsBtn_IMPLVAR = [LeukastBetweenate initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2116,9 +2116,9 @@ switch (X_igress20865) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    checkBoxTermsBtn.selected = YES;
-    [termAgreeView addSubview:checkBoxTermsBtn];
-    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    checkBoxTermsBtn_IMPLVAR.selected = YES;
+    [termAgreeView addSubview:checkBoxTermsBtn_IMPLVAR];
+    [checkBoxTermsBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(termAgreeView);
         make.centerY.mas_equalTo(termAgreeView);
         make.width.height.mas_equalTo(VH(15));
@@ -2324,7 +2324,7 @@ switch (X_igress20865) {
         [termAgreeView addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.mas_equalTo(termAgreeView);
-            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.leading.mas_equalTo(checkBoxTermsBtn_IMPLVAR.mas_trailing).mas_offset(4);
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
         }];
         rememberTermsLable.userInteractionEnabled=YES;
@@ -2476,10 +2476,10 @@ switch (H_aheadtion20943) {
 
     if (mConfigModel.deleteAccount) {
         [self addDeleteAccountView_MMMethodMMM];
-        if(deleteView){
-            [self addSubview:deleteView];
+        if(deleteView_IMPLVAR){
+            [self addSubview:deleteView_IMPLVAR];
          
-            [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [deleteView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 if(IS_PORTRAIT){
                     make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
                     make.centerX.mas_equalTo(self);
@@ -2519,10 +2519,10 @@ if(a_pudeal20108 - 6 / 58 + 691 - 270 / 518 >= 43253){
         case kAgreeTermsCheckBoxBtnTag:
             
             SDK_LOG(wwwww_tag_wwwww_kAgreeTermsCheckBoxBtnTag);
-            if (checkBoxTermsBtn.selected) {
-                checkBoxTermsBtn.selected = NO;
+            if (checkBoxTermsBtn_IMPLVAR.selected) {
+                checkBoxTermsBtn_IMPLVAR.selected = NO;
             }else{
-                checkBoxTermsBtn.selected = YES;
+                checkBoxTermsBtn_IMPLVAR.selected = YES;
             }
             break;
             
@@ -2774,7 +2774,7 @@ if(v_richette21033 - 893 - 964 == 57197){
 
 -(BOOL)checkAgreeTerm_MMMethodMMM
 {
-    if (checkBoxTermsBtn.selected) {
+    if (checkBoxTermsBtn_IMPLVAR.selected) {
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2806,7 +2806,7 @@ if(v_richette21033 - 893 - 964 == 57197){
 
 -(void)addDeleteAccountView_MMMethodMMM
 {
-    deleteView = [[UIView alloc] init];
+    deleteView_IMPLVAR = [[UIView alloc] init];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2857,8 +2857,8 @@ if(v_richette21033 - 893 - 964 == 57197){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(4);
+    deleteView_IMPLVAR.backgroundColor = UIColor.whiteColor;
+    deleteView_IMPLVAR.layer.cornerRadius = VW(4);
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2900,11 +2900,11 @@ if(v_richette21033 - 893 - 964 == 57197){
 
     
     UIImageView *deleteIV = [LeukastBetweenate initImageViewWithImage_MMMethodMMM:mw_delete_icon];
-    [deleteView addSubview:deleteIV];
+    [deleteView_IMPLVAR addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteView).mas_offset(VW(20));
-        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
-        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.leading.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(20));
+        make.top.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(6));
+        make.bottom.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(-6));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2980,20 +2980,20 @@ if(W_sagacor21152 + 117 + 424 - 354 - 257 > 23324){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.centerY.equalTo(deleteView);
+        make.centerY.equalTo(deleteView_IMPLVAR);
         make.width.height.mas_equalTo(VW(15));
     }];
     
     UILabel *delLabel = [LeukastBetweenate initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_FF0000]];
-    [deleteView addSubview:delLabel];
+    [deleteView_IMPLVAR addSubview:delLabel];
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-20));
-        make.centerY.equalTo(deleteView);
+        make.trailing.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(-20));
+        make.centerY.equalTo(deleteView_IMPLVAR);
        
     }];
     
-    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+    [deleteView_IMPLVAR addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
         [StinityAsterature toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
         

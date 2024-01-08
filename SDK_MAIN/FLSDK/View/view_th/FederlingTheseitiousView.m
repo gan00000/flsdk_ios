@@ -17,17 +17,17 @@
 
 @implementation FederlingTheseitiousView
 {
-    UIButton *getVfCodeBtn;
+    UIButton *getVfCodeBtn_IMPLVAR;
     
-    UIButton *okBtn;
+    UIButton *okBtn_IMPLVAR;
     
-    UILabel *hasBindPhoneTips;
-    UIView *phoneContentView;
-    UILabel *areaCodeLabel;
+    UILabel *hasBindPhoneTips_IMPLVAR;
+    UIView *phoneContentView_IMPLVAR;
+    UILabel *areaCodeLabel_IMPLVAR;
     
-    CenslyPagefaction *mPhoneInfoModel;
-    OculfierSpargkinTextFiled *vfCodeFiled;
-    OculfierSpargkinTextFiled *phoneNumFiled;
+    CenslyPagefaction *mPhoneInfoModel_IMPLVAR;
+    OculfierSpargkinTextFiled *vfCodeFiled_IMPLVAR;
+    OculfierSpargkinTextFiled *phoneNumFiled_IMPLVAR;
     
 }
 
@@ -43,8 +43,8 @@
         
         self.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.15];
         
-        mPhoneInfoModel = [[CenslyPagefaction alloc] init];
-        mPhoneInfoModel.phoneDelegate_MMMPRO = self;
+        mPhoneInfoModel_IMPLVAR = [[CenslyPagefaction alloc] init];
+        mPhoneInfoModel_IMPLVAR.phoneDelegate_MMMPRO = self;
         
         [self addView_MMMethodMMM];
 
@@ -742,9 +742,9 @@ if(n_crission23173 * 147 + 447 - 566 - 561 * 283 / 327 < 58795){
         make.height.mas_equalTo(VH(22));
     }];
     
-    phoneContentView = [[UIView alloc] init];
-    [contentView addSubview:phoneContentView];
-    [phoneContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+    phoneContentView_IMPLVAR = [[UIView alloc] init];
+    [contentView addSubview:phoneContentView_IMPLVAR];
+    [phoneContentView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(titleView);
         make.trailing.mas_equalTo(titleView);
         make.top.mas_equalTo(titleView.mas_bottom).mas_offset(VH(28));
@@ -756,10 +756,10 @@ if(n_crission23173 * 147 + 447 - 566 - 561 * 283 / 327 < 58795){
     phoneAreaCodeView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
     phoneAreaCodeView.layer.borderWidth = 0.5;
     phoneAreaCodeView.layer.cornerRadius = VH(20);
-    [phoneContentView addSubview:phoneAreaCodeView];
+    [phoneContentView_IMPLVAR addSubview:phoneAreaCodeView];
     [phoneAreaCodeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(phoneContentView);
-        make.top.bottom.mas_equalTo(phoneContentView);
+        make.leading.mas_equalTo(phoneContentView_IMPLVAR);
+        make.top.bottom.mas_equalTo(phoneContentView_IMPLVAR);
         make.width.mas_equalTo(VW(85));
         make.height.mas_equalTo(VH(40));
     }];
@@ -900,11 +900,11 @@ switch (b_manuical23225) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    areaCodeLabel = [LeukastBetweenate initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_area_code.localx fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:UIColor.blackColor];
-    areaCodeLabel.text = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;
+    areaCodeLabel_IMPLVAR = [LeukastBetweenate initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_area_code.localx fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:UIColor.blackColor];
+    areaCodeLabel_IMPLVAR.text = mPhoneInfoModel_IMPLVAR.selectedAreaCodeValue_MMMPRO;
     
-    [phoneAreaCodeView addSubview:areaCodeLabel];
-    [areaCodeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [phoneAreaCodeView addSubview:areaCodeLabel_IMPLVAR];
+    [areaCodeLabel_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(phoneAreaCodeView);
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -1050,7 +1050,7 @@ if(d_thousandette23251 - 210 + 685 == 32630){
     
     [phoneAreaCodeView addSubview:areaMoreBtn];
     [areaMoreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(areaCodeLabel.mas_trailing).mas_offset(VW(10));
+        make.leading.mas_equalTo(areaCodeLabel_IMPLVAR.mas_trailing).mas_offset(VW(10));
         make.centerY.mas_equalTo(phoneAreaCodeView);
         make.width.height.mas_equalTo(VH(16));
         
@@ -1058,7 +1058,7 @@ if(d_thousandette23251 - 210 + 685 == 32630){
     
     
     
-    phoneNumFiled = [[OculfierSpargkinTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_text_please_input_phone.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
+    phoneNumFiled_IMPLVAR = [[OculfierSpargkinTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_text_please_input_phone.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1258,8 +1258,8 @@ switch (q_particularly23273) {
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    phoneNumFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
-    phoneNumFiled.layer.borderWidth = 0.5;
+    phoneNumFiled_IMPLVAR.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
+    phoneNumFiled_IMPLVAR.layer.borderWidth = 0.5;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1343,14 +1343,14 @@ switch (n_mont23297) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    phoneNumFiled.layer.cornerRadius = VH(20);
-    phoneNumFiled.inputTextField_MMMPRO.keyboardType = UIKeyboardTypePhonePad;
+    phoneNumFiled_IMPLVAR.layer.cornerRadius = VH(20);
+    phoneNumFiled_IMPLVAR.inputTextField_MMMPRO.keyboardType = UIKeyboardTypePhonePad;
     
-    [phoneContentView addSubview:phoneNumFiled];
-    [phoneNumFiled mas_makeConstraints:^(MASConstraintMaker *make) {
+    [phoneContentView_IMPLVAR addSubview:phoneNumFiled_IMPLVAR];
+    [phoneNumFiled_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.mas_equalTo(phoneAreaCodeView);
         make.leading.mas_equalTo(phoneAreaCodeView.mas_trailing).mas_offset(VW(15));
-        make.trailing.mas_equalTo(phoneContentView);
+        make.trailing.mas_equalTo(phoneContentView_IMPLVAR);
         
     }];
     
@@ -1399,19 +1399,19 @@ if(R_likelyfication23318 != 40599){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(15));
+        make.top.mas_equalTo(phoneContentView_IMPLVAR.mas_bottom).mas_offset(VH(15));
     }];
     
-    vfCodeFiled = [[OculfierSpargkinTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_py_msg_vfcode_hint.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
+    vfCodeFiled_IMPLVAR = [[OculfierSpargkinTextFiled alloc] initWithTextColor_MMMethodMMM:UIColor.blackColor fontOfSize_MMMethodMMM:FS(14) placeholder_MMMethodMMM:wwwww_tag_wwwww_py_msg_vfcode_hint.localx placeColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_B8B8B8]];
     
-    vfCodeFiled.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
-    vfCodeFiled.layer.borderWidth = 0.5;
-    vfCodeFiled.layer.cornerRadius = VH(20);
-    vfCodeFiled.inputTextField_MMMPRO.keyboardType = UIKeyboardTypeNumberPad;
-    vfCodeFiled.inputTextField_MMMPRO.textAlignment = NSTextAlignmentCenter;
+    vfCodeFiled_IMPLVAR.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_606060].CGColor;
+    vfCodeFiled_IMPLVAR.layer.borderWidth = 0.5;
+    vfCodeFiled_IMPLVAR.layer.cornerRadius = VH(20);
+    vfCodeFiled_IMPLVAR.inputTextField_MMMPRO.keyboardType = UIKeyboardTypeNumberPad;
+    vfCodeFiled_IMPLVAR.inputTextField_MMMPRO.textAlignment = NSTextAlignmentCenter;
     
-    [vfInfoView addSubview:vfCodeFiled];
-    [vfCodeFiled mas_makeConstraints:^(MASConstraintMaker *make) {
+    [vfInfoView addSubview:vfCodeFiled_IMPLVAR];
+    [vfCodeFiled_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(vfInfoView);
         make.leading.mas_equalTo(phoneAreaCodeView);
@@ -1581,16 +1581,16 @@ switch (d_leienne23388) {
 
     
     
-    getVfCodeBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+    getVfCodeBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
     
     
-    getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-    getVfCodeBtn.layer.borderWidth = 0.5;
-    getVfCodeBtn.layer.cornerRadius = VH(20);
+    getVfCodeBtn_IMPLVAR.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
+    getVfCodeBtn_IMPLVAR.layer.borderWidth = 0.5;
+    getVfCodeBtn_IMPLVAR.layer.cornerRadius = VH(20);
     
     
-    [vfInfoView addSubview:getVfCodeBtn];
-    [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [vfInfoView addSubview:getVfCodeBtn_IMPLVAR];
+    [getVfCodeBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(vfInfoView);
         make.trailing.mas_equalTo(vfInfoView);
@@ -1631,10 +1631,10 @@ switch (d_leienne23388) {
         make.width.mas_equalTo(VW(100));
         
     }];
-    [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [getVfCodeBtn_IMPLVAR setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     
     
-    okBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+    okBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_py_confire.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kOkActTag selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1654,11 +1654,11 @@ if(U_monycommercialdom23447 > 88641){
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    [okBtn.layer setCornerRadius:VH(20)];
-    okBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-    [contentView addSubview:okBtn];
+    [okBtn_IMPLVAR.layer setCornerRadius:VH(20)];
+    okBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    [contentView addSubview:okBtn_IMPLVAR];
     
-    [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [okBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.mas_equalTo(titleView);
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -1812,7 +1812,7 @@ if(X_signous23474 >= 66335){
 
     
     CAGradientLayer *gl = [FloorariumRect createGradientLayerWithRadius_MMMethodMMM:VH(20)];
-    [okBtn.layer addSublayer:gl];
+    [okBtn_IMPLVAR.layer addSublayer:gl];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1925,7 +1925,7 @@ if(X_signous23474 >= 66335){
 		//====insert my code end===  2023-12-28 22:54:24
 
     [self addDrawRectBolck_MMMethodMMM:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        gl.frame = okBtn.bounds;
+        gl.frame = okBtn_IMPLVAR.bounds;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -2094,13 +2094,13 @@ if(W_pancreaticfaction23590 == 90567){
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    hasBindPhoneTips = [LeukastBetweenate initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_has_phone_bind_tips.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:ColorHex(wwwww_tag_wwwww__CC_4B4B4B)];
-    hasBindPhoneTips.numberOfLines = 0;
-    [contentView addSubview:hasBindPhoneTips];
+    hasBindPhoneTips_IMPLVAR = [LeukastBetweenate initLabelWithText_MMMethodMMM:wwwww_tag_wwwww_text_has_phone_bind_tips.localx fontSize_MMMethodMMM:FS(12) textColor_MMMethodMMM:ColorHex(wwwww_tag_wwwww__CC_4B4B4B)];
+    hasBindPhoneTips_IMPLVAR.numberOfLines = 0;
+    [contentView addSubview:hasBindPhoneTips_IMPLVAR];
     
-    [hasBindPhoneTips mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(phoneContentView);
-        make.top.mas_equalTo(phoneContentView.mas_bottom).mas_offset(VH(8));
+    [hasBindPhoneTips_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(phoneContentView_IMPLVAR);
+        make.top.mas_equalTo(phoneContentView_IMPLVAR.mas_bottom).mas_offset(VH(8));
         make.leading.trailing.mas_equalTo(vfInfoView);
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -2129,9 +2129,9 @@ if(W_pancreaticfaction23590 == 90567){
     
     if (SDK_DATA.mLoginResponse_MMMPRO.data.isBindPhone) {
         
-        hasBindPhoneTips.hidden = NO;
+        hasBindPhoneTips_IMPLVAR.hidden = NO;
         vfInfoView.hidden = YES;
-        [phoneContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        [phoneContentView_IMPLVAR mas_updateConstraints:^(MASConstraintMaker *make) {
             
             make.top.mas_equalTo(titleView.mas_bottom).mas_offset(VH(46));
 
@@ -2226,12 +2226,12 @@ if(d_taurial23678 - 644 + 666 == 36161){
         if (pairs && pairs.count >=2) {
             NSString *areaCode = pairs[0];
             NSString *telNum = pairs[1];
-            areaCodeLabel.text = areaCode;
-            phoneNumFiled.inputTextField_MMMPRO.text = telNum;
-            phoneNumFiled.inputTextField_MMMPRO.enabled = NO;
+            areaCodeLabel_IMPLVAR.text = areaCode;
+            phoneNumFiled_IMPLVAR.inputTextField_MMMPRO.text = telNum;
+            phoneNumFiled_IMPLVAR.inputTextField_MMMPRO.enabled = NO;
             areaMoreBtn.hidden = YES;
             
-            [areaCodeLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            [areaCodeLabel_IMPLVAR mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.center.mas_equalTo(phoneAreaCodeView);
                 
             }];
@@ -2239,7 +2239,7 @@ if(d_taurial23678 - 644 + 666 == 36161){
         }
         
     }else{
-        hasBindPhoneTips.hidden = YES;
+        hasBindPhoneTips_IMPLVAR.hidden = YES;
         vfInfoView.hidden = NO;
     }
 }
@@ -2350,10 +2350,10 @@ if(i_oncoory23708 + 911 + 728 + 674 == 19676){
             break;
         case kGetVfCodeActTag:
         {
-            NSString *tel = phoneNumFiled.inputTextField_MMMPRO.text;
+            NSString *tel = phoneNumFiled_IMPLVAR.inputTextField_MMMPRO.text;
             tel = [tel trim_MMMethodMMM];
             
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;
+            NSString *areaCode = mPhoneInfoModel_IMPLVAR.selectedAreaCodeValue_MMMPRO;
             areaCode = [areaCode trim_MMMethodMMM];
             
             
@@ -2365,7 +2365,7 @@ if(i_oncoory23708 + 911 + 728 + 674 == 19676){
                 [StinityAsterature toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
                 return;
             }
-            if (![StinityAsterature validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression_MMMPRO]) {
+            if (![StinityAsterature validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel_IMPLVAR.selectedRegularExpression_MMMPRO]) {
                 [StinityAsterature toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -2519,7 +2519,7 @@ if(H_lithoar23735 >= 72273){
             
         case kMoreAccountListActTag:
             
-            [mPhoneInfoModel showAreaCodesActionSheetFromView_MMMethodMMM:sender];
+            [mPhoneInfoModel_IMPLVAR showAreaCodesActionSheetFromView_MMMethodMMM:sender];
             
             break;
             
@@ -2531,7 +2531,7 @@ if(H_lithoar23735 >= 72273){
                 [self removeFromGameView_MMMethodMMM];
                 return;
             }
-            NSString *tel = phoneNumFiled.inputTextField_MMMPRO.text;
+            NSString *tel = phoneNumFiled_IMPLVAR.inputTextField_MMMPRO.text;
             tel = [tel trim_MMMethodMMM];
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -2556,7 +2556,7 @@ if(N_orderic23752 - 124 - 316 - 281 * 773 < 68253){
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            NSString *areaCode = mPhoneInfoModel.selectedAreaCodeValue_MMMPRO;
+            NSString *areaCode = mPhoneInfoModel_IMPLVAR.selectedAreaCodeValue_MMMPRO;
             areaCode = [areaCode trim_MMMethodMMM];
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -2616,7 +2616,7 @@ if(L_eosation23779 * 821 / 636 * 83 != 71440){
 		//====insert my code end===  2023-12-28 22:54:24
 
             
-            NSString *vfCode = vfCodeFiled.inputTextField_MMMPRO.text;
+            NSString *vfCode = vfCodeFiled_IMPLVAR.inputTextField_MMMPRO.text;
             vfCode = [vfCode trim_MMMethodMMM];
             
 
@@ -2949,7 +2949,7 @@ if(I_cuspsome23838 + 405 * 389 * 949 / 43 > 46015){
                 return;
             }
             
-            if (![StinityAsterature validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel.selectedRegularExpression_MMMPRO]) {
+            if (![StinityAsterature validPhone_MMMethodMMM:tel phoneRegex_MMMethodMMM:mPhoneInfoModel_IMPLVAR.selectedRegularExpression_MMMPRO]) {
                 [StinityAsterature toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -3408,8 +3408,8 @@ if(g_fectdiscussionen23917 > 2837){
 
 - (void)beforeStartTimer_MMMethodMMM {
     self.totalCount_MMMPRO = 60;
-    getVfCodeBtn.userInteractionEnabled = NO;
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%ld", self.totalCount_MMMPRO] forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = NO;
+    [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%ld", self.totalCount_MMMPRO] forState:UIControlStateNormal];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -3432,8 +3432,8 @@ if(g_fectdiscussionen23917 > 2837){
 
 - (void)finishTimer_MMMethodMMM {
     
-    getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = YES;
+    [getVfCodeBtn_IMPLVAR setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }
 
 
@@ -3685,8 +3685,8 @@ if(g_fectdiscussionen23917 > 2837){
 }
 //===insert my method end=== 2023-12-28 22:54:24
 - (void)onCancelTimer_MMMethodMMM{
-    getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = YES;
+    [getVfCodeBtn_IMPLVAR setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }
 
 
@@ -3784,13 +3784,13 @@ if(g_fectdiscussionen23917 > 2837){
 //===insert my method end=== 2023-12-28 22:54:24
 - (void)timing_MMMethodMMM:(NSString *)count{
     
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%@", count] forState:UIControlStateNormal];
+    [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%@", count] forState:UIControlStateNormal];
     
 }
 
 - (void)showSelectedAreaCodeValue_MMMethodMMM:(NSString *)selectedAreaCodeValue
 {
-    areaCodeLabel.text = selectedAreaCodeValue;
+    areaCodeLabel_IMPLVAR.text = selectedAreaCodeValue;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{

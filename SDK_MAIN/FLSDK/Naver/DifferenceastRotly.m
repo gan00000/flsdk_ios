@@ -5,7 +5,7 @@
 
 @implementation DifferenceastRotly
 {
-    NaverCallBack mNaverCallBack;
+    NaverCallBack mNaverCallBack_IMPLVAR;
 }
 
 + (instancetype)share{

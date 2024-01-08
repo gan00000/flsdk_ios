@@ -4,7 +4,7 @@
 
 @implementation LatadeClosView
 {
-    BOOL isDrawRect;
+    BOOL isDrawRect_IMPLVAR;
     
 }
 
@@ -332,8 +332,8 @@ if(z_archaeoand14802 > 12460){
 		//====insert my code end===  2023-12-28 22:54:24
 
     
-    if(!isDrawRect){
-        isDrawRect = YES;
+    if(!isDrawRect_IMPLVAR){
+        isDrawRect_IMPLVAR = YES;
         for (CCallBack  callback in self.drawBlockArray_MMMPRO) {
 
             callback(wwwww_tag_wwwww_drawRect,0,nil);

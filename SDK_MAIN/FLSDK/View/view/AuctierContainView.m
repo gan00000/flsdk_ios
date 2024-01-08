@@ -12,7 +12,7 @@
 @implementation AuctierContainView
 
 {
-    NSTimer *downTimer;
+    NSTimer *downTimer_IMPLVAR;
 }
 
 
@@ -27,11 +27,11 @@
         self.totalCount_MMMPRO = 60;
     }
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
-    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    downTimer_IMPLVAR = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self
                                                selector:@selector(doTiming_MMMethodMMM)
                                                userInfo:nil
@@ -487,9 +487,9 @@ if(W_donblackity14962 < 13759){
 //===insert my method end=== 2023-12-28 22:54:24
 -(void)onFinishCountTimer_MMMethodMMM
 {
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -532,9 +532,9 @@ if(W_donblackity14962 < 13759){
 
 -(void)cancelCountTimer_MMMethodMMM
 {
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
     if (self.countTimerDelegate_MMMPRO) {
         [self.countTimerDelegate_MMMPRO onCancelTimer_MMMethodMMM];
@@ -544,9 +544,9 @@ if(W_donblackity14962 < 13759){
 - (void)dealloc
 {
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
 }
 

@@ -13,18 +13,18 @@
 @implementation ForceidAsoView
 
 {
-    PolicyacyArchaeoibleView *accountSDKTextFiledView;
-    PolicyacyArchaeoibleView *newPwdSDKTextFiledView;
+    PolicyacyArchaeoibleView *accountSDKTextFiledView_IMPLVAR;
+    PolicyacyArchaeoibleView *newPwdSDKTextFiledView_IMPLVAR;
     
-    PolicyacyArchaeoibleView *vfCodeFiledView;
-    
-    
-    KineelChildetteView   *mLoginTitleView;
-    UIButton *getVfCodeBtn;
+    PolicyacyArchaeoibleView *vfCodeFiledView_IMPLVAR;
     
     
-    int phoneCountdown;
-    NSTimer *downTimer;
+    KineelChildetteView   *mLoginTitleView_IMPLVAR;
+    UIButton *getVfCodeBtn_IMPLVAR;
+    
+    
+    int phoneCountdown_IMPLVAR;
+    NSTimer *downTimer_IMPLVAR;
 }
 
 - (instancetype)initView_MMMethodMMM
@@ -58,14 +58,14 @@
 
         
         
-        mLoginTitleView = [[KineelChildetteView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView_IMPLVAR = [[KineelChildetteView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.loginDelegate_MMMPRO goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
         
         
-        [myView addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [myView addSubview:mLoginTitleView_IMPLVAR];
+        [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(myView).mas_offset(VW(34));
             make.trailing.mas_equalTo(myView).mas_offset(VW(-34));
             make.top.mas_equalTo(myView);
@@ -75,7 +75,7 @@
         
         
         
-        accountSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -121,38 +121,38 @@ switch (s_soning18839) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        accountSDKTextFiledView.moreAccountBtn_MMMPRO.hidden = YES;
-        [myView addSubview:accountSDKTextFiledView];
+        accountSDKTextFiledView_IMPLVAR.moreAccountBtn_MMMPRO.hidden = YES;
+        [myView addSubview:accountSDKTextFiledView_IMPLVAR];
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(myView).mas_offset(VW(34));
             make.trailing.mas_equalTo(myView).mas_offset(VW(-34));
             make.height.mas_equalTo(VH(40));
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(30));
+            make.top.equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(30));
             
         }];
         
         
-        newPwdSDKTextFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
-        [myView addSubview:newPwdSDKTextFiledView];
+        newPwdSDKTextFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
+        [myView addSubview:newPwdSDKTextFiledView_IMPLVAR];
         
-        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(accountSDKTextFiledView);
-            make.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(accountSDKTextFiledView);
+        [newPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
             
         }];
         
         
         
-        getVfCodeBtn = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        getVfCodeBtn_IMPLVAR = [LeukastBetweenate initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:BaseColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         
-        getVfCodeBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
-        getVfCodeBtn.layer.borderWidth = 1;
+        getVfCodeBtn_IMPLVAR.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor].CGColor;
+        getVfCodeBtn_IMPLVAR.layer.borderWidth = 1;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -164,21 +164,21 @@ switch (s_soning18839) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        getVfCodeBtn.layer.cornerRadius = VH(20);
-        [myView addSubview:getVfCodeBtn];
-        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+        getVfCodeBtn_IMPLVAR.layer.cornerRadius = VH(20);
+        [myView addSubview:getVfCodeBtn_IMPLVAR];
+        [getVfCodeBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(newPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
             make.width.mas_equalTo(VW(100));
-            make.height.mas_equalTo(accountSDKTextFiledView);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
             
         }];
-        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        [getVfCodeBtn_IMPLVAR setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
         
         
-        vfCodeFiledView = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
+        vfCodeFiledView_IMPLVAR = [[PolicyacyArchaeoibleView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -200,7 +200,7 @@ switch (s_soning18839) {
 		//====insert my code end===  2023-12-28 22:54:24
 
         
-        [myView addSubview:vfCodeFiledView];
+        [myView addSubview:vfCodeFiledView_IMPLVAR];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -282,12 +282,12 @@ if(n_begin18876 + 914 + 460 - 532 == 76552){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(getVfCodeBtn);
-            make.bottom.equalTo(getVfCodeBtn);
+        [vfCodeFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(getVfCodeBtn_IMPLVAR);
+            make.bottom.equalTo(getVfCodeBtn_IMPLVAR);
             
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading).mas_offset(VW(-16));
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
+            make.trailing.mas_equalTo(getVfCodeBtn_IMPLVAR.mas_leading).mas_offset(VW(-16));
         }];
         
         
@@ -298,8 +298,8 @@ if(n_begin18876 + 914 + 460 - 532 == 76552){
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             
             
-            make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.bottom.mas_equalTo(vfCodeFiledView);
+            make.leading.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.bottom.mas_equalTo(vfCodeFiledView_IMPLVAR);
             
             make.height.mas_equalTo(1);
 
@@ -318,7 +318,7 @@ if(n_begin18876 + 914 + 460 - 532 == 76552){
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(getVfCodeBtn.mas_bottom).mas_offset(VH(30));
+            make.top.equalTo(getVfCodeBtn_IMPLVAR.mas_bottom).mas_offset(VH(30));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -402,7 +402,7 @@ if(s_flwomanar18920 - 144 / 418 + 96 * 111 - 830 + 674 <= 10472){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-            make.width.mas_equalTo(accountSDKTextFiledView);
+            make.width.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
             make.height.mas_equalTo(VH(40));
         }];
         
@@ -479,7 +479,7 @@ if(Q_listature18936 > 42344){
         case kGetVfCodeActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
-            NSString *account = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+            NSString *account = [accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
             if (![StinityAsterature validUserName_MMMethodMMM:account]) {
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -534,13 +534,13 @@ if(U_scand18938 != 34734){
 
 -(void)findPassword_MMMethodMMM
 {
-    NSString *userName = [accountSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *userName = [accountSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
     
     NSString *areaCode = @"";
     NSString *phoneNum = @"";
-    NSString *vfCode = [vfCodeFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *vfCode = [vfCodeFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
     
-    NSString *newPwd = [newPwdSDKTextFiledView.inputUITextField_MMMPRO.text trim_MMMethodMMM];
+    NSString *newPwd = [newPwdSDKTextFiledView_IMPLVAR.inputUITextField_MMMPRO.text trim_MMMethodMMM];
     
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -886,8 +886,8 @@ switch (P_ver18690) {
 //===insert my method end=== 2023-12-28 22:54:24
 -(void)downTime_MMMethodMMM{
     
-    phoneCountdown = 60;
-    getVfCodeBtn.userInteractionEnabled = NO;
+    phoneCountdown_IMPLVAR = 60;
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = NO;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -966,15 +966,15 @@ switch (P_ver18690) {
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+    [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%d", phoneCountdown_IMPLVAR] forState:UIControlStateNormal];
     
     
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
-    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    downTimer_IMPLVAR = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self
                                                selector:@selector(phoneFireTimer_MMMethodMMM)
                                                userInfo:nil
@@ -1123,7 +1123,7 @@ if(q_niceator18777 + 155 * 576 == 24353){
 }
 //===insert my method end=== 2023-12-28 22:54:24
 - (void)phoneFireTimer_MMMethodMMM {
-    phoneCountdown--;
+    phoneCountdown_IMPLVAR--;
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1150,18 +1150,18 @@ if(q_niceator18777 + 155 * 576 == 24353){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-    if (phoneCountdown < 0) {
+    if (phoneCountdown_IMPLVAR < 0) {
         [self resetVfCodeBtnStatue_MMMethodMMM];
     }else{
-        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+        [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%d", phoneCountdown_IMPLVAR] forState:UIControlStateNormal];
     }
     
 }
 
 -(void)resetVfCodeBtnStatue_MMMethodMMM
 {
-    if (downTimer) {
-        [downTimer invalidate];
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1174,18 +1174,18 @@ if(q_niceator18777 + 155 * 576 == 24353){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        downTimer = nil;
+        downTimer_IMPLVAR = nil;
     }
-    getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = YES;
+    [getVfCodeBtn_IMPLVAR setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 }
 
 - (void)dealloc
 {
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
 }
 

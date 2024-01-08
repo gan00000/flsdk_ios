@@ -39,7 +39,7 @@
 
 @interface DYSDK()
 
-@property (nonatomic, assign) BOOL isPaying;
+@property (nonatomic, assign) BOOL isPaying_PRIROPERTY;
 
 @end
 
@@ -1229,7 +1229,7 @@ if(b_volatette2090 >= 79310){
 - (void)startIapPay_MMMethodMMM:(TvadeRhigant *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
     [[OleotRule shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel_MMMPRO accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, DYPayData * _Nullable payData) {
         
-        self.isPaying = NO;
+        self.isPaying_PRIROPERTY = NO;
         
 
 		//====insert my code start===  2023-12-28 22:54:24
@@ -2392,11 +2392,11 @@ switch (H_terraoon2473) {
         return;
     }
     
-    if (self.isPaying) {
+    if (self.isPaying_PRIROPERTY) {
         SDK_LOG(wwwww_tag_wwwww_gloriistic_diamisslike);
         return;
     }
-    self.isPaying = YES;
+    self.isPaying_PRIROPERTY = YES;
     
     [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
 
@@ -2629,12 +2629,12 @@ if(l_greatatic2514 != 72236){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        self.isPaying = NO;
+        self.isPaying_PRIROPERTY = NO;
         return;
     }
     
     [self dyTrackWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
-    self.isPaying = NO;
+    self.isPaying_PRIROPERTY = NO;
     
     [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
     
