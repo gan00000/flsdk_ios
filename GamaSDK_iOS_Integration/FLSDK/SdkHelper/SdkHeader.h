@@ -3,22 +3,22 @@
 #import "Masonry.h"
 #import "CComHeader.h" 
 
-#import "PositiveantContraableie.h"
-#import "UIImage+ThosekinPhagarian.h"
-#import "UIColor+GustthreatPolyile.h"
-#import "OrbOpen.h"
-#import "StringiaSipho.h"
-#import "DreamerSixry.h"
-#import "LoginResponse.h"
+#import "TacizationLoquexistible.h"
+#import "UIImage+BecausefactionVerting.h"
+#import "UIColor+QuindecimelPathetlisteur.h"
+#import "AstrLegalel.h"
+#import "ItselfkinHiskin.h"
+#import "PasteerToughally.h"
+#import "DichtradeitudeTradeuous.h"
 
-#import "PuteeDamnsive.h"  
+#import "PubshipPasserdom.h"  
 #import "ResHeader.h" 
-#import "CheckWifewise.h"
-#import "PharmacatoryExperience.h"
-#import "AlteretySpirarea.h"
-#import "ElsureTraditional.h"
-#import "NSString+StaticeDegreeit.h"
-#import "NSString+SpecialformPathetry.h"
+#import "EspeciallytionOenitious.h"
+#import "LoquiistMulsence.h"
+#import "WallosityEastacious.h"
+#import "BeyondaceousCommunityic.h"
+#import "NSString+NoialEasyfier.h"
+#import "NSString+StreetonMediaally.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h
@@ -33,18 +33,18 @@
 #define ContentViewBgColor                    wwwww_tag_wwwww__CC_f4f4f5
 #define ColorHex(color)  [UIColor colorWithHexString_MMMethodMMM:color]
 
-#define SDK_DATA                           [StringiaSipho sharedSdkData_MMMethodMMM]
+#define SDK_DATA                           [ItselfkinHiskin sharedSdkData_MMMethodMMM]
 
 #define GetImage(imageName)     [UIImage res_imageNamed_MMMethodMMM:imageName]
 
-#define appTopViewController    [PuteeDamnsive getCurrentViewController_MMMethodMMM]
+#define appTopViewController    [PubshipPasserdom getCurrentViewController_MMMethodMMM]
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-#define device_is_iPhoneX   [PuteeDamnsive isIPhoneXSeries_MMMethodMMM]
+#define device_is_iPhoneX   [PubshipPasserdom isIPhoneXSeries_MMMethodMMM]
 
 #pragma mark - 页面字体尺寸适配
-#define VH(h)  [[AlteretySpirarea share] getViewHeight_MMMethodMMM:h]
-#define VW(w)  [[AlteretySpirarea share] getViewWidth_MMMethodMMM:w]
-#define FS(size)  [[AlteretySpirarea share] getFontSize_MMMethodMMM:size]
+#define VH(h)  [[WallosityEastacious share] getViewHeight_MMMethodMMM:h]
+#define VW(w)  [[WallosityEastacious share] getViewWidth_MMMethodMMM:w]
+#define FS(size)  [[WallosityEastacious share] getFontSize_MMMethodMMM:size]
 
 #pragma mark - 页面
 typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)

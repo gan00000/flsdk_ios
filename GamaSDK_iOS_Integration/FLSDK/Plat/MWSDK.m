@@ -1,39 +1,39 @@
 #import "MWSDK.h"
 
-#import "CheckWifewise.h"
-#import "TableasterCingalongativeController.h"
-#import "PuteeDamnsive.h"
-#import "PharmacatoryExperience.h"
+#import "EspeciallytionOenitious.h"
+#import "OrthBrachyController.h"
+#import "PubshipPasserdom.h"
+#import "LoquiistMulsence.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-#import "ValueformVocar.h"
+#import "LampoCisling.h"
 
 #import "DocuerRemainative.h"
-#import "CameraieUrgibility.h"
-#import "TableJuricurrentian.h"
-#import "CheckWifewise.h"
+#import "EpishipPenarian.h"
+#import "FatherNeurad.h"
+#import "EspeciallytionOenitious.h"
 
-#import "EquinnessCommercialView.h"
-#import "PictaceousDieotView.h"
-#import "TableacityErrView.h"
+#import "SameesqueSeiaryView.h"
+#import "RadicaneousQuindecimmeasureressView.h"
+#import "StuffTotalousView.h"
 
-#import "AuthorproofSorb.h"
-#import "TenaciPolicedomController.h"
-#import "LoseionEmeticieView.h"
+#import "LoqucyAmericanar.h"
+#import "MomentialPlutlyController.h"
+#import "FinalasterCinercoupleicView.h"
 #import <StoreKit/StoreKit.h>
-#import "DominotAlternhometic.h"
-#import "CreateOrderResp.h"
-#import "OculenEveninglingView.h"
-#import "CleistitCapitfollowularView.h"
-#import "MyxBuyardView.h"
+#import "AnatoryNewhood.h"
+#import "CupStringics.h"
+#import "ThyrScripttureView.h"
+#import "KeyhoodFireainView.h"
+#import "ManagerwardNomenalView.h"
 
-#import "OctavileFieldController.h"
-#import "LithowardTenenneController.h"
+#import "PiteifyAeribilityController.h"
+#import "TorrnessNarosityController.h"
 
 #ifdef SDK_KR
-#import "CumulosionMythtic.h"
+#import "ReadisticOpllaterable.h"
 #endif
 
 
@@ -50,360 +50,490 @@
 - (NSString *) decodeSdkContent:(NSString *)data
 {
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self patternorium1584Imfewion1585:3297 give1586Scribid1587:nil smalline1588Pancreaticotheirety1589:nil aboutular1590Dekid1591:nil lotose1592Iridot1593:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8790;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 760 * 536 != 87261){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7713;
-	if(self.flat1440Hesless1441 + 326 - 120 * 373 / 675 * 163 > 50703){}
-	self.aristary1442Agoar1443 = 948;
-	if(self.aristary1442Agoar1443 - 614 / 394 * 211 + 908 >= 41276){ 
-int s_stenic2064 = 154;
-float k_myxably2065 = 682;
-switch (s_stenic2064) {
-   case 548:
-			{
-				s_stenic2064 = k_myxably2065 + 959 * 167 - 8 / 603 - 71 - 856; 
-			 break;
-			}
-			case 626:
-			{
-				s_stenic2064 = k_myxably2065 + 891 * 157; 
-			 break;
-			}
-			case 5:
-			{
-				s_stenic2064 = k_myxably2065 - 925 - 466 - 205 - 8; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 8699;
-	if(self.culturalaceous1444Broncher1445 + 203 + 906 - 847 - 772 >= 66725){}
-		if(self.phemwise1446Lowfaction1447){}
-
-        BOOL fontel2046Dictition2047 = NO;  //commontemple14
-        if (fontel2046Dictition2047){
-            fontel2046Dictition2047 = NO;
-            CGFloat individualibility2052Malsortable2053 = 5552;
-            if (individualibility2052Malsortable2053 != 102){
-                individualibility2052Malsortable2053 = individualibility2052Malsortable2053 * 8854;
-            }
-        }else{
-            fontel2046Dictition2047 = !fontel2046Dictition2047;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     return [SDKRES decryptAllStringContent_MMMethodMMM:data];
 }
 
 
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (CGFloat)offing1453Macisive1454:(NSData *)offing1453_1{ //insert method
+	        
+        CGFloat attentiontion1457Necraster1458 = 7056;  //commontemple3
+        BOOL exterine1459Felinator1460 = YES;
+        while (attentiontion1457Necraster1458 < 6077)
+        {
+            if(attentiontion1457Necraster1458 > 2487){
+                break;
+            }
+            attentiontion1457Necraster1458 = attentiontion1457Necraster1458 + 7676;
+            exterine1459Felinator1460 = YES;
+        }
+                  NSString *punctacle1475Scelkin1476 = @"special1477Fract1478";    //temple33
+          NSString *monycommercialdom1479Guttably1480 = @"blackaire1481Safeency1482";
+          NSString *pennship1483Itineress1484 = [NSString stringWithFormat:@"assumefier1485Rangery1486%@",punctacle1475Scelkin1476];
+          if ([pennship1483Itineress1484 length] != 6679) {
+            pennship1483Itineress1484 = [NSString stringWithFormat:@"trochen1493Dogmatist1494%@",monycommercialdom1479Guttably1480];
+          }else{
+            pennship1483Itineress1484 = [NSString stringWithFormat:@"raptth1499Sameform1500%@",monycommercialdom1479Guttably1480];
+          }
+          if(pennship1483Itineress1484){
+            __asm__("NOP");
+          }
+
+
+        
+ 
+	CGFloat B_27 = 92104;
+	return B_27;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (long)cover1436Gonoent1437:(CGFloat)cover1436_1{ //insert method
+	int a_murture1440 = 2704;
+
+int R_phemetic1441 = 699;
+if(a_murture1440 - 488 + 597 / 747 / 42 / 353 > 61958){
+	R_phemetic1441 = a_murture1440 + 468 - 443 / 992 / 10 / 967 * 568;
+}
+
+float O_prob1442 = 538;
+if(R_phemetic1441 + 717 - 727 / 82 != 31769){
+	O_prob1442 = R_phemetic1441 - 402 + 213 * 928 * 922;
+}
+
+int T_finalize1443 = 885;
+if(O_prob1442 - 757 + 348 - 864 * 223 / 716 * 624 <= 7736){
+	T_finalize1443 = O_prob1442 * 746 / 133;
+}
+
+int E_gnarth1444 = 664;
+if(T_finalize1443 - 389 * 906 < 86002){
+	E_gnarth1444 = T_finalize1443 - 8 / 413 * 978 + 463 / 986 / 155;
+}
+
+double g_pausfood1445 = 411;
+if(E_gnarth1444 + 941 / 205 + 494 * 323 * 160 <= 68864){
+	g_pausfood1445 = E_gnarth1444 + 906 + 588 - 176 - 713 + 766 + 499;
+}else{
+	g_pausfood1445 = E_gnarth1444 - 491 - 923;
+}
+
+int Y_venerious1446 = 413;
+if(g_pausfood1445 - 356 / 27 - 232 * 149 * 683 == 26733){
+	Y_venerious1446 = g_pausfood1445 * 376 / 728;
+}else{
+	Y_venerious1446 = g_pausfood1445 * 797 - 812 + 485 + 595 + 728 * 223;
+}
+
+float S_most1447 = 927;
+if(Y_venerious1446 + 891 - 319 > 82244){
+	S_most1447 = Y_venerious1446 + 301 + 827 * 813 / 421 - 819;
+}
+
+int h_rememberive1448 = 426;
+if(S_most1447 * 45 - 118 * 952 >= 19447){
+	h_rememberive1448 = S_most1447 * 9 / 667;
+}
+
+float E_richorium1449 = 839;
+if(h_rememberive1448 * 615 - 206 - 596 * 791 >= 50431){
+	E_richorium1449 = h_rememberive1448 + 308 - 423 / 754 + 756 + 499;
+}
+
+int Y_writeling1450 = 961;
+if(E_richorium1449 * 614 / 952 + 667 != 58564){
+	Y_writeling1450 = E_richorium1449 * 766 - 527 / 274 - 977;
+}
+
+float A_ofify1451 = 826;
+if(Y_writeling1450 - 51 * 150 * 946 / 233 + 901 - 726 <= 72970){
+	A_ofify1451 = Y_writeling1450 - 119 / 803 - 371 / 314;
+}else{
+	A_ofify1451 = Y_writeling1450 - 146 + 28 / 592 - 672;
+}
+
+int E_TVaster1452 = 566;
+if(A_ofify1451 - 724 * 894 == 87103){
+	E_TVaster1452 = A_ofify1451 * 882 + 641 - 859 + 83;
+}
+
+ 
+	long R_43 = 7996;
+	return R_43;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation
 {
     SDK_LOG(@"application openURL sourceApplication annotation");
-    [AuthorproofSorb application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    BOOL result = [DocuerRemainative application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    
-    return result;
-}
+    [LoqucyAmericanar application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSInteger)seeress1522Bareur1523:(UIApplication *)seeress1522_1 piair1524Sufeveningan1525:(long)piair1524_2{ //insert method
-	int f_adrestmost1528 = 4932;
-
-double T_itudin1529 = 49;
-if(f_adrestmost1528 - 225 - 567 / 185 + 230 / 412 != 64064){
-	T_itudin1529 = f_adrestmost1528 + 635 / 75 - 820;
-}else{
-	T_itudin1529 = f_adrestmost1528 - 910 / 360;
-}
-
-int j_fastier1530 = 564;
-if(T_itudin1529 * 936 / 397 * 215 + 431 - 854 > 94676){
-	j_fastier1530 = T_itudin1529 + 633 - 281 / 291;
-}else{
-	j_fastier1530 = T_itudin1529 + 316 * 268 + 914 / 667;
-}
-
-float K_plutard1531 = 283;
-if(j_fastier1530 + 246 / 731 + 904 <= 12778){
-	K_plutard1531 = j_fastier1530 + 718 * 76 - 865 + 412 * 233;
-}
-
-float t_plagiy1532 = 502;
-if(K_plutard1531 - 246 * 559 / 562 - 14 + 417 < 28972){
-	t_plagiy1532 = K_plutard1531 + 207 + 495 / 358;
-}else{
-	t_plagiy1532 = K_plutard1531 - 116 + 30 / 771 / 507;
-}
-
-int z_gustthreat1533 = 540;
-if(t_plagiy1532 - 52 / 176 + 979 == 9994){
-	z_gustthreat1533 = t_plagiy1532 + 576 * 123 + 409;
-}
-
-int J_statewise1534 = 754;
-if(z_gustthreat1533 - 870 - 298 - 546 <= 64394){
-	J_statewise1534 = z_gustthreat1533 * 372 - 630 + 617 * 790 * 292;
-}else{
-	J_statewise1534 = z_gustthreat1533 - 676 + 44 + 998 + 858 + 783;
-}
-
-float q_auctture1535 = 170;
-if(J_statewise1534 - 744 + 294 * 672 + 89 + 578 == 16392){
-	q_auctture1535 = J_statewise1534 * 962 * 606 / 905;
-}
-
- 
-	NSInteger c_2 = 13485;
-	return c_2;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (UIApplication *)raiseaster1448Stocho1449{ //insert method
-	      
-      
-    int celer1456Challengesive1457;   //commontemple23
-    int sutaster1458Priviorium1459 = 7194;
-    int fastot1460Censitious1461 = 3433;
-
-    if (sutaster1458Priviorium1459 >= fastot1460Censitious1461){
-        celer1456Challengesive1457 = sutaster1458Priviorium1459;
-
-        int emularm1470Visitless1471[ celer1456Challengesive1457 ]; 
-
-                
-        NSInteger fast1486Pictoon1487 = 4550;  //commontemple9
-        int cracy1488Trusative1489 = 8751;
-
-        for(int care1490Sitship1491 = 1835; care1490Sitship1491 < 279; care1490Sitship1491 = care1490Sitship1491 + 1)
-        {    
-            fast1486Pictoon1487 = fast1486Pictoon1487 + cracy1488Trusative1489;
-            if (fast1486Pictoon1487 <= care1490Sitship1491){
-                break;
-            }
-            cracy1488Trusative1489 = cracy1488Trusative1489++;
-        }
-        
-
-        
-    
-          // 初始化数组元素          
-          for ( int i = 0; i < celer1456Challengesive1457; i++ )
-          {
-             emularm1470Visitless1471[ i ] = i + 7294; // 设置元素 i 为 i + 100
-             break;
-          }
-    }else{
-        celer1456Challengesive1457 = fastot1460Censitious1461;
-    }
-        
-                
-        NSArray *nephrfic1514Autally1515 = @[@"staffably1518_articleance1519", @"kinemward1520_shotesque1521" ];   //temple16
-        if (nephrfic1514Autally1515.count > 2801){
-        }
-        
-
-
- 
-	UIApplication *F_31 = nil;
-	return F_31;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
-{
-    SDK_LOG(@"ios9 and later = application openURL options，openURL:%@", [url absoluteString]);
-    [AuthorproofSorb application:application openURL:url options:options];
-    BOOL result = [DocuerRemainative application:application openURL:url options:options];
-
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:1451 rach2006Gladiion2007:6359 homoiprobablyarian2008Pactaire2009:225 howeverator2010Opto2011:5747 ];
+	NSString * u_20 = [self xenist1702Pungworkacious1703:7098 okization1704Stimulhit1705:nil officer1706Metertic1707:nil rheule1708Centricaster1709:nil motherster1710Tent1711:nil sacraitor1712Tempthood1713:nil trichinry1714On1715:nil ];
+	if(u_20){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9337;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 591 / 983 + 672 == 81260){ 
-int f_kill2082 = 5534;
+	self.juniorie1426Aevent1427 = 3506;
+	if(self.juniorie1426Aevent1427 - 833 * 124 / 289 > 83763){}
+	self.ctenee1428Buyry1429 = 4981;
+	if(self.ctenee1428Buyry1429 - 803 + 329 + 522 * 339 - 525 - 807 == 72471){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 8674;
+	if(self.civilast1432Stratalongular1433 + 47 * 856 * 562 <= 97209){ 
+double c_ensics2488 = 748;
 
-if(f_kill2082 <= 72490){
-	int w_worryture2083 = f_kill2082 * 131 * 831 - 926 - 189 + 638; 
-if(w_worryture2083 > 17692){
-	int q_bibmost2084 = w_worryture2083 + 562 + 864 - 436 / 297 + 182 + 372; 
-if(q_bibmost2084 >= 86837){
-	int Z_heartosity2085 = q_bibmost2084 + 787 + 244 * 764 / 616 / 451;
-}
+if(c_ensics2488 > 61111){
+	float U_certainlyfier2489 = c_ensics2488 - 730 - 191; 
+if(U_certainlyfier2489 != 5757){
+	int e_causity2490 = U_certainlyfier2489 + 426 + 342 / 126 * 898 - 853;
 }
 }
  }
-		if(self.prior1438Vanist1439){
-int q_governmentior2086 = 694;
-float Y_tellably2087 = 790;
-switch (q_governmentior2086) {
-   case 439:
+		if(self.inad1434Simpleive1435){
+int y_crescally2491 = 3382;
+
+int B_yet2492 = 489;
+if(y_crescally2491 * 370 + 229 < 87004){
+	B_yet2492 = y_crescally2491 + 341 * 833 + 605 / 181;
+}else{
+	B_yet2492 = y_crescally2491 * 366 * 311 - 979 + 815 - 433 / 157;
+}
+
+double i_cyclive2493 = 515;
+if(B_yet2492 - 975 - 295 / 303 < 386){
+	i_cyclive2493 = B_yet2492 - 316 * 273 * 154;
+}
+
+int b_cynformsion2494 = 930;
+if(i_cyclive2493 - 763 * 203 == 65266){
+	b_cynformsion2494 = i_cyclive2493 + 192 * 102 - 129 * 366;
+}else{
+	b_cynformsion2494 = i_cyclive2493 + 354 / 715 + 493 - 303 + 3;
+}
+
+int w_capital2495 = 62;
+if(b_cynformsion2494 + 74 * 104 - 831 - 70 >= 66400){
+	w_capital2495 = b_cynformsion2494 + 546 - 327 - 526 - 798;
+}
+
+int a_actionise2496 = 453;
+if(w_capital2495 + 963 / 561 - 491 * 184 >= 52756){
+	a_actionise2496 = w_capital2495 + 443 * 184 * 272 - 526;
+}
+
+}
+int s_musclike2486 = 890;
+double O_valiule2487 = 178;
+switch (s_musclike2486) {
+   case 508:
 			{
-				q_governmentior2086 = Y_tellably2087 + 748 + 405 * 388 + 846 / 818; 
+				s_musclike2486 = O_valiule2487 + 212 / 947 - 215 - 412; 
 			 break;
 			}
-			case 364:
+			case 702:
 			{
-				q_governmentior2086 = Y_tellably2087 + 503 / 198 - 903 - 582; 
+				s_musclike2486 = O_valiule2487 + 660 * 754 - 318; 
 			 break;
 			}
-			case -95:
+			case -19:
 			{
-				q_governmentior2086 = Y_tellably2087 - 597 - 241 / 55 + 719 + 279; 
+				s_musclike2486 = O_valiule2487 * 713 / 671 + 287 * 907 - 221 / 183; 
 			 break;
 			}
-			case 196:
+			case 470:
 			{
-				q_governmentior2086 = Y_tellably2087 * 985 / 473 - 772 - 203 + 880 * 846; 
+				s_musclike2486 = O_valiule2487 + 356 + 373 + 427 - 452 + 977 + 314; 
 			 break;
 			}
-			case 729:
+			case -54:
 			{
-				q_governmentior2086 = Y_tellably2087 + 577 * 884 * 873 - 286; 
+				s_musclike2486 = O_valiule2487 - 753 + 211; 
 			 break;
 			}
-			case 224:
+			case 207:
 			{
-				q_governmentior2086 = Y_tellably2087 + 414 + 896 + 216; 
+				s_musclike2486 = O_valiule2487 * 517 / 396 + 282; 
 			 break;
 			}
-			case 562:
+			case 529:
 			{
-				q_governmentior2086 = Y_tellably2087 * 394 / 102 + 166; 
+				s_musclike2486 = O_valiule2487 * 187 + 876 * 252 * 16; 
 			 break;
 			}
-			case 737:
+			case 340:
 			{
-				q_governmentior2086 = Y_tellably2087 + 556 - 554; 
+				s_musclike2486 = O_valiule2487 - 745 + 19 + 820; 
+			 break;
+			}
+			case 969:
+			{
+				s_musclike2486 = O_valiule2487 - 30 - 187 + 370 * 891; 
+			 break;
+			}
+			case 687:
+			{
+				s_musclike2486 = O_valiule2487 + 945 - 332 - 1 / 778 / 470 / 776; 
+			 break;
+			}
+			case 696:
+			{
+				s_musclike2486 = O_valiule2487 - 859 * 674 + 521 * 742 - 701 * 225; 
+			 break;
+			}
+			case 662:
+			{
+				s_musclike2486 = O_valiule2487 + 79 - 107 + 710 * 675; 
+			 break;
+			}
+			case 982:
+			{
+				s_musclike2486 = O_valiule2487 + 357 / 250 - 665 / 990 * 657 * 47; 
+			 break;
+			}
+			case 996:
+			{
+				s_musclike2486 = O_valiule2487 + 285 * 709 + 593 / 619 + 121; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-	self.flat1440Hesless1441 = 1986;
-	if(self.flat1440Hesless1441 * 723 * 651 * 264 == 56105){}
-	self.aristary1442Agoar1443 = 121;
-	if(self.aristary1442Agoar1443 - 172 / 216 + 123 / 13 + 5 - 830 == 31586){}
-	self.culturalaceous1444Broncher1445 = 3762;
-	if(self.culturalaceous1444Broncher1445 - 648 * 258 / 310 * 271 - 378 == 42593){ 
-float k_hyalile2088 = 5333;
-
-double u_trachyous2089 = 602;
-if(k_hyalile2088 * 885 / 962 - 708 * 871 - 146 < 13734){
-	u_trachyous2089 = k_hyalile2088 + 888 / 10 * 77 + 295;
-}
-
-double j_shooteer2090 = 673;
-if(u_trachyous2089 + 732 / 505 / 640 < 73843){
-	j_shooteer2090 = u_trachyous2089 - 784 * 38 * 429;
-}else{
-	j_shooteer2090 = u_trachyous2089 - 959 * 474 * 151 - 962;
-}
-
-double E_mulctitude2091 = 756;
-if(j_shooteer2090 + 713 / 655 / 288 > 61498){
-	E_mulctitude2091 = j_shooteer2090 * 756 - 447;
-}
-
-float H_sphinctchargeeer2092 = 976;
-if(E_mulctitude2091 + 554 * 907 - 16 * 772 * 71 - 971 <= 70969){
-	H_sphinctchargeeer2092 = E_mulctitude2091 * 814 - 329 * 450 * 558 - 700;
-}
-
-int o_concern2093 = 43;
-if(H_sphinctchargeeer2092 + 617 / 627 + 979 <= 55459){
-	o_concern2093 = H_sphinctchargeeer2092 + 570 + 571 / 513 + 74 / 105 + 535;
-}else{
-	o_concern2093 = H_sphinctchargeeer2092 - 691 - 78 * 945;
-}
-
-float a_behavioraceous2094 = 319;
-if(o_concern2093 + 799 - 200 * 204 / 414 >= 72510){
-	a_behavioraceous2094 = o_concern2093 - 169 - 793 - 504;
-}else{
-	a_behavioraceous2094 = o_concern2093 + 478 - 630 - 637;
-}
-
-int q_roborable2095 = 951;
-if(a_behavioraceous2094 * 812 - 954 <= 43661){
-	q_roborable2095 = a_behavioraceous2094 + 702 + 867 + 498 - 215;
-}else{
-	q_roborable2095 = a_behavioraceous2094 - 488 * 527 / 575 / 162 / 673;
-}
-
-double U_frangsignificantad2096 = 831;
-if(q_roborable2095 - 846 / 481 * 166 * 925 / 190 != 60733){
-	U_frangsignificantad2096 = q_roborable2095 + 136 - 77 * 984 - 926;
-}else{
-	U_frangsignificantad2096 = q_roborable2095 - 546 * 762 - 424;
-}
-
-double Q_felior2097 = 697;
-if(U_frangsignificantad2096 * 176 + 858 * 244 == 50028){
-	Q_felior2097 = U_frangsignificantad2096 + 906 * 684 / 972 - 158 + 735 + 803;
-}else{
-	Q_felior2097 = U_frangsignificantad2096 * 444 - 222 + 4 * 253 - 813;
-}
-
-int L_whomth2098 = 501;
-if(Q_felior2097 + 88 * 386 + 869 - 930 + 376 > 36334){
-	L_whomth2098 = Q_felior2097 * 884 * 287 - 461 + 358 + 221 + 157;
-}
-
-double D_phrynagency2099 = 562;
-if(L_whomth2098 * 185 * 16 + 480 > 99147){
-	D_phrynagency2099 = L_whomth2098 * 988 + 506 - 727 - 696 * 144 - 877;
-}else{
-	D_phrynagency2099 = L_whomth2098 - 933 * 135 / 992 - 183 - 895 * 566;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){}
-   
-      // 局部变量声明
-      int arboriacity2066Shoulderard2067 = 5492;
-      int circade2068Dignsure2069 = 7673;
-      int manageth2070Upon2071;
-      
-      if(circade2068Dignsure2069 > arboriacity2066Shoulderard2067){
-         // 调用函数来获取最大值
-         manageth2070Upon2071 = fmax(circade2068Dignsure2069, arboriacity2066Shoulderard2067);
-      }
-     
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    BOOL result = [DocuerRemainative application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	 NSString * j_9 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"candidateaneous2529Memory2530" directionment2219Lamin2220:nil ];
+	if(j_9){}
+
+	self.juniorie1426Aevent1427 = 3624;
+	if(self.juniorie1426Aevent1427 - 730 * 593 + 866 * 124 + 548 * 939 >= 49622){ 
+int h_stylial2531 = 351;
+double p_reptlandative2532 = 7;
+switch (h_stylial2531) {
+   case 176:
+			{
+				h_stylial2531 = p_reptlandative2532 * 779 / 477 + 40; 
+			 break;
+			}
+			case 596:
+			{
+				h_stylial2531 = p_reptlandative2532 * 49 + 187 * 521 + 60 + 238 - 490; 
+			 break;
+			}
+			case 249:
+			{
+				h_stylial2531 = p_reptlandative2532 * 788 - 852 / 46; 
+			 break;
+			}
+			case 925:
+			{
+				h_stylial2531 = p_reptlandative2532 + 63 * 662 - 131 * 103 / 31 - 38; 
+			 break;
+			}
+			case 338:
+			{
+				h_stylial2531 = p_reptlandative2532 * 372 / 646 / 445 * 841; 
+			 break;
+			}
+			case 220:
+			{
+				h_stylial2531 = p_reptlandative2532 + 655 - 140 * 752; 
+			 break;
+			}
+			case 481:
+			{
+				h_stylial2531 = p_reptlandative2532 * 663 * 751 - 262 * 964 - 725 - 378; 
+			 break;
+			}
+			case 820:
+			{
+				h_stylial2531 = p_reptlandative2532 + 84 / 395 + 827 + 545 - 715; 
+			 break;
+			}
+			case 416:
+			{
+				h_stylial2531 = p_reptlandative2532 + 94 * 305; 
+			 break;
+			}
+			case 783:
+			{
+				h_stylial2531 = p_reptlandative2532 - 542 * 974; 
+			 break;
+			}
+			case 112:
+			{
+				h_stylial2531 = p_reptlandative2532 - 816 + 169 / 375 / 440 / 448 * 510; 
+			 break;
+			}
+			case -97:
+			{
+				h_stylial2531 = p_reptlandative2532 - 994 + 540 + 269; 
+			 break;
+			}
+			   default:
+       break;
+			}
+ }
+	self.ctenee1428Buyry1429 = 8129;
+	if(self.ctenee1428Buyry1429 * 923 + 639 + 454 / 494 - 751 >= 24653){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9832;
+	if(self.civilast1432Stratalongular1433 + 11 * 435 / 430 < 12907){}
+		if(self.inad1434Simpleive1435){
+double F_civilar2533 = 6319;
+
+if(F_civilar2533 < 55524){
+	float Y_thirdfaction2534 = F_civilar2533 * 681 * 542 - 896; 
+if(Y_thirdfaction2534 >= 63296){
+	float q_executiveally2535 = Y_thirdfaction2534 - 520 * 626 / 359 + 76 - 905;
+}
+}
+}
+        
+        NSDictionary *strution2497Scensrespondette2498 = @{@"plinthety2505" : @"available2506", @"salinfic2507" : @(32827), @"writerise2509" : @"sefaction2510", @"emetoism2511" : @"munocandidateuous2512", @"lefting2513" : @"causeess2514", @"fulminit2515" : @"polisableless2516", @"model2517" : @"opacion2518", @"glia2519" : @"gardenative2520", @"scoli2521" : @"gynability2522", @"total2523" : @(13426), @"appearability2525" : @(76079), @"iquive2527" : @"doctitive2528" };  //temple6
+        if (strution2497Scensrespondette2498.count > 9779){
+            NSLog(@"motfication2501Now2502");
+        }else{
+            NSLog(@"approach2503Nomini2504");
+        }
+
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSMutableArray * I_34 = [self quiteuous1897Tainosity1898:@"Democrat2556Maniaen2557" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:8965 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:1402 ];
+	if(I_34){}
+
+	self.juniorie1426Aevent1427 = 4923;
+	if(self.juniorie1426Aevent1427 * 577 + 662 + 454 == 10979){}
+	self.ctenee1428Buyry1429 = 559;
+	if(self.ctenee1428Buyry1429 + 607 * 303 + 126 * 241 + 443 > 33519){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 6502;
+	if(self.civilast1432Stratalongular1433 - 649 + 349 - 761 + 566 - 851 - 864 > 99687){}
+		if(self.inad1434Simpleive1435){}
+
+        BOOL prioritor2538Tripatic2539 = NO;  //commontemple14
+        if (prioritor2538Tripatic2539){
+            prioritor2538Tripatic2539 = YES;
+            NSInteger sentiular2544Tinctareaory2545 = 8647;
+            if (sentiular2544Tinctareaory2545 != 2723){
+                sentiular2544Tinctareaory2545 = sentiular2544Tinctareaory2545 + 2328;
+            }
+        }else{
+            prioritor2538Tripatic2539 = !prioritor2538Tripatic2539;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    return result;
+}
+
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
+{
+    SDK_LOG(@"ios9 and later = application openURL options，openURL:%@", [url absoluteString]);
+    [LoqucyAmericanar application:application openURL:url options:options];
+    BOOL result = [DocuerRemainative application:application openURL:url options:options];
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * S_44 = [self dignacious2384Windia2385:@"capitsive2578Behaviorally2579" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:7329 member2392Standardify2393:nil weaponible2394Noticeacle2395:7574 price2396Hair2397:2499 epfic2398Bed2399:456 ];
+	if(S_44){}
+
+	self.juniorie1426Aevent1427 = 6620;
+	if(self.juniorie1426Aevent1427 - 391 * 74 * 617 * 323 / 100 != 84969){}
+	self.ctenee1428Buyry1429 = 5105;
+	if(self.ctenee1428Buyry1429 + 48 - 732 / 789 + 224 == 38456){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3222;
+	if(self.civilast1432Stratalongular1433 * 215 * 332 != 65966){}
+		if(self.inad1434Simpleive1435){}
+          NSString *venerious2558Theseaneous2559 = @"painitive2560Employee2561";    //temple33
+          NSString *sitacious2562Potnoteally2563 = @"pollicappearuous2564Thymress2565";
+          NSString *pallioit2566Cystet2567 = nil;
+          if ([venerious2558Theseaneous2559 length] >= 1705) {
+            pallioit2566Cystet2567 =[venerious2558Theseaneous2559 stringByReplacingOccurrencesOfString:@"octavence2574Backward2575" withString:sitacious2562Potnoteally2563];
+          }
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     if (!result) {
-        result = [CameraieUrgibility application:application openURL:url options:options];
+        result = [EpishipPenarian application:application openURL:url options:options];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	float K_36 = [self rapacship2092Startid2093:nil fideward2094Createous2095:nil ];
+	if(K_36){}
+
+	self.juniorie1426Aevent1427 = 1550;
+	if(self.juniorie1426Aevent1427 * 898 + 582 == 40806){}
+	self.ctenee1428Buyry1429 = 4804;
+	if(self.ctenee1428Buyry1429 - 223 / 429 / 171 - 807 + 687 + 658 < 37648){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 910;
+	if(self.civilast1432Stratalongular1433 + 494 * 908 + 319 == 35373){}
+		if(self.inad1434Simpleive1435){}
+int M_suiical2580 = 211;
+double l_professortic2581 = 332;
+switch (M_suiical2580) {
+   case 339:
+			{
+				M_suiical2580 = l_professortic2581 + 623 + 791 / 343; 
+			 break;
+			}
+			case 295:
+			{
+				M_suiical2580 = l_professortic2581 - 32 * 512; 
+			 break;
+			}
+			case 303:
+			{
+				M_suiical2580 = l_professortic2581 * 514 + 159 / 826 * 323 - 372; 
+			 break;
+			}
+			case 398:
+			{
+				M_suiical2580 = l_professortic2581 * 964 * 655 + 108; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     }
     
     if (!result) {
-        result = [DominotAlternhometic application:application openURL:url options:options];
+        result = [AnatoryNewhood application:application openURL:url options:options];
     }
     
 #ifdef SDK_KR
     if (!result) {
-        result = [[CumulosionMythtic share] application:application openURL:url options:options];
+        result = [[ReadisticOpllaterable share] application:application openURL:url options:options];
     }
 #endif
     return result;
@@ -412,442 +542,190 @@ if(L_whomth2098 * 185 * 16 + 480 > 99147){
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL V_47 = [self hedrose1566Matterfication1567:nil specific1568Spaceature1569:nil simpleitor1570Yessive1571:9664 tricbelieveie1572Turboality1573:nil ];
-	if(V_47){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9551;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 509 - 816 - 684 / 485 - 269 == 98111){ 
-float I_door2104 = 9830;
-
-double J_foot2105 = 855;
-if(I_door2104 - 796 - 395 * 647 - 854 / 921 - 73 != 26052){
-	J_foot2105 = I_door2104 + 836 + 488;
-}else{
-	J_foot2105 = I_door2104 * 452 - 830 - 312;
-}
-
-double u_strongia2106 = 23;
-if(J_foot2105 - 145 * 661 >= 52426){
-	u_strongia2106 = J_foot2105 - 967 * 148;
-}else{
-	u_strongia2106 = J_foot2105 + 176 + 470 - 860 / 22 + 733;
-}
-
-int g_gamition2107 = 563;
-if(u_strongia2106 - 80 / 66 * 281 * 652 - 968 >= 13863){
-	g_gamition2107 = u_strongia2106 * 720 * 918 + 141 + 643;
-}else{
-	g_gamition2107 = u_strongia2106 - 204 * 512 - 513;
-}
-
-float p_cessibility2108 = 693;
-if(g_gamition2107 * 389 / 589 * 314 + 172 <= 2562){
-	p_cessibility2108 = g_gamition2107 + 118 - 789 * 169 * 772;
-}
-
-int K_businessibility2109 = 942;
-if(p_cessibility2108 + 652 * 579 / 911 - 192 - 375 + 358 > 33294){
-	K_businessibility2109 = p_cessibility2108 * 884 / 625 * 709 * 761 * 948 - 94;
-}else{
-	K_businessibility2109 = p_cessibility2108 - 333 + 573 + 25 + 834 - 887 * 49;
-}
-
-float E_coachular2110 = 730;
-if(K_businessibility2109 - 740 * 207 * 396 > 40913){
-	E_coachular2110 = K_businessibility2109 + 766 - 592 / 75;
-}
-
-float T_anyesque2111 = 451;
-if(E_coachular2110 + 2 * 485 + 364 != 23771){
-	T_anyesque2111 = E_coachular2110 * 665 / 382 - 600 - 596 - 568;
-}
-
-double k_agreemention2112 = 693;
-if(T_anyesque2111 + 7 / 621 / 845 <= 62256){
-	k_agreemention2112 = T_anyesque2111 * 657 / 884 * 159 - 960 - 399 / 114;
-}else{
-	k_agreemention2112 = T_anyesque2111 * 451 - 723 / 556 + 490;
-}
-
-double n_likeaster2113 = 666;
-if(k_agreemention2112 * 256 / 561 * 808 + 928 * 283 == 97140){
-	n_likeaster2113 = k_agreemention2112 + 676 - 994 * 556 * 913;
-}else{
-	n_likeaster2113 = k_agreemention2112 + 943 + 838 / 754 / 195 * 855 - 266;
-}
-
-double e_since2114 = 710;
-if(n_likeaster2113 - 418 / 367 - 338 + 104 / 9 <= 74834){
-	e_since2114 = n_likeaster2113 + 969 + 608 + 392 - 705 * 221;
-}else{
-	e_since2114 = n_likeaster2113 - 850 * 731 / 327 * 622 - 674;
-}
-
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 4369;
-	if(self.flat1440Hesless1441 + 202 - 178 * 640 * 284 * 861 - 584 >= 62619){}
-	self.aristary1442Agoar1443 = 8526;
-	if(self.aristary1442Agoar1443 + 976 + 115 - 57 < 13106){}
-	self.culturalaceous1444Broncher1445 = 487;
-	if(self.culturalaceous1444Broncher1445 + 242 / 77 * 760 / 62 < 90184){}
-		if(self.phemwise1446Lowfaction1447){}
-float E_macrothrowuous2102 = 6841;
-
-float U_marketfic2103 = 154;
-if(E_macrothrowuous2102 * 67 - 511 * 942 > 32456){
-	U_marketfic2103 = E_macrothrowuous2102 * 818 - 935 * 153 - 134 - 363 / 39;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     return YES;
 }
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
     
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self hetertic1713Cunefederal1714:nil vinccarrylike1715Factorance1716:7750 leasttion1717Darksion1718:nil fide1719Platt1720:2813 sophyrestage1721Mechanresponseible1722:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8464;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 601 - 689 - 878 + 468 - 763 > 77302){}
-		if(self.prior1438Vanist1439){
-int g_wellization2133 = 9179;
-
-int a_strategylike2134 = 153;
-if(g_wellization2133 * 737 / 136 - 560 + 654 * 882 * 231 >= 72249){
-	a_strategylike2134 = g_wellization2133 - 520 / 862 - 971 - 772 * 396;
-}else{
-	a_strategylike2134 = g_wellization2133 + 159 * 987 + 323 - 879;
-}
-
-float L_joccarty2135 = 789;
-if(a_strategylike2134 - 547 / 524 <= 995){
-	L_joccarty2135 = a_strategylike2134 * 66 * 389;
-}
-
-float o_lot2136 = 648;
-if(L_joccarty2135 + 58 + 664 * 733 - 105 == 74903){
-	o_lot2136 = L_joccarty2135 - 999 + 78;
-}else{
-	o_lot2136 = L_joccarty2135 * 646 * 896 + 33 * 470;
-}
-
-double y_axitreatmentar2137 = 524;
-if(o_lot2136 - 328 * 467 >= 20010){
-	y_axitreatmentar2137 = o_lot2136 - 725 - 535 + 499 + 386 * 987;
-}else{
-	y_axitreatmentar2137 = o_lot2136 * 876 - 127;
-}
-
-double x_thenious2138 = 680;
-if(y_axitreatmentar2137 + 65 + 210 * 121 <= 27500){
-	x_thenious2138 = y_axitreatmentar2137 + 228 / 817 - 717 / 682;
-}else{
-	x_thenious2138 = y_axitreatmentar2137 - 550 - 249 - 702 + 802 * 462 / 298;
-}
-
-double Z_pensation2139 = 947;
-if(x_thenious2138 * 551 + 3 / 155 * 243 + 752 / 277 >= 89265){
-	Z_pensation2139 = x_thenious2138 + 489 / 21 * 629;
-}
-
-int K_condi2140 = 519;
-if(Z_pensation2139 - 772 * 903 * 906 - 514 + 399 * 597 == 21543){
-	K_condi2140 = Z_pensation2139 * 373 * 402 / 156;
-}else{
-	K_condi2140 = Z_pensation2139 * 713 * 442 - 632 / 717;
-}
-
-}
-	self.flat1440Hesless1441 = 1461;
-	if(self.flat1440Hesless1441 + 664 + 542 * 780 - 636 + 276 <= 31897){}
-	self.aristary1442Agoar1443 = 3483;
-	if(self.aristary1442Agoar1443 + 447 / 376 != 25066){}
-	self.culturalaceous1444Broncher1445 = 7619;
-	if(self.culturalaceous1444Broncher1445 * 52 - 351 - 542 + 567 * 16 - 587 > 98564){}
-		if(self.phemwise1446Lowfaction1447){
-float u_ruminality2141 = 4456;
-
-if(u_ruminality2141 == 11980){
-	double h_ortho2142 = u_ruminality2141 - 289 + 32 - 490 * 505;
-}
-}
-        
-        float blacklet2119Taxment2120 = 517;  //commontemple3
-        BOOL pictogenerationade2121Cubiwise2122 = NO;
-        while (blacklet2119Taxment2120 < 2084)
-        {
-            if(blacklet2119Taxment2120 <= 4589){
-                break;
-            }
-            blacklet2119Taxment2120 = blacklet2119Taxment2120 + 7544;
-            pictogenerationade2121Cubiwise2122 = NO;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     if(self.switchInterfaceOrientationPortrait){
         return UIInterfaceOrientationMaskPortrait;
     }
     
-    NSArray *infoUISupportedInterfaceOrientations_aar = [PuteeDamnsive getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
+    NSArray *infoUISupportedInterfaceOrientations_aar = [PubshipPasserdom getProjectInfoPlist_MMMethodMMM][@"UISupportedInterfaceOrientations"];
     if(!infoUISupportedInterfaceOrientations_aar){
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:2237 rach2006Gladiion2007:5843 homoiprobablyarian2008Pactaire2009:5572 howeverator2010Opto2011:1748 ];
+	NSString * i_8 = [self phonofilmia1652Byule1653:nil rhodivity1654Joclet1655:nil answer1656Dottruthish1657:nil mordfamilyency1658Preparearium1659:nil arriveia1660Aceto1661:nil fligquality1662Maintain1663:nil scensship1664Stalactular1665:2152 ];
+	if(i_8){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8968;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 718 * 249 * 423 - 402 < 77266){ 
-float g_pinnative2147 = 9420;
+	self.juniorie1426Aevent1427 = 3375;
+	if(self.juniorie1426Aevent1427 - 505 - 42 + 556 > 33273){}
+	self.ctenee1428Buyry1429 = 8131;
+	if(self.ctenee1428Buyry1429 - 336 * 162 + 476 + 41 - 152 < 87596){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9704;
+	if(self.civilast1432Stratalongular1433 + 406 + 601 * 215 - 187 + 951 / 540 < 38234){}
+		if(self.inad1434Simpleive1435){
+double O_postulitselfot2596 = 8678;
 
-double b_serp2148 = 854;
-if(g_pinnative2147 * 890 + 999 + 802 * 916 - 364 <= 59556){
-	b_serp2148 = g_pinnative2147 - 569 * 338 + 470;
+if(O_postulitselfot2596 < 45152){
+	int a_raswatchery2597 = O_postulitselfot2596 + 384 * 224 * 255 * 335 / 400 * 686; 
+if(a_raswatchery2597 >= 95718){
+	float H_girlling2598 = a_raswatchery2597 - 454 + 603 * 565 + 71 - 818 * 924; 
+if(H_girlling2598 < 37804){
+	float N_stinsion2599 = H_girlling2598 + 295 - 511;
 }
+}
+}
+}
+        
+        int hostant2582Teleoon2583 = 6525;  //commontemple3
+        BOOL stigprovedom2584Caldile2585 = YES;
+        while (hostant2582Teleoon2583 < 3040)
+        {
+            if(hostant2582Teleoon2583 >= 8838){
+                break;
+            }
+            hostant2582Teleoon2583 = hostant2582Teleoon2583 + 8741;
+            stigprovedom2584Caldile2585 = NO;
+        }
 
-double r_sophyon2149 = 923;
-if(b_serp2148 * 683 + 976 + 928 / 209 > 11636){
-	r_sophyon2149 = b_serp2148 + 673 / 783;
-}else{
-	r_sophyon2149 = b_serp2148 * 472 * 583 - 458 * 813 * 190 * 639;
-}
-
-float D_seiism2150 = 381;
-if(r_sophyon2149 * 539 / 342 * 79 < 65933){
-	D_seiism2150 = r_sophyon2149 + 658 + 525 / 906 + 689 * 505 / 808;
-}
-
-float J_oldaneity2151 = 999;
-if(D_seiism2150 + 166 - 626 - 609 * 325 > 70896){
-	J_oldaneity2151 = D_seiism2150 * 517 + 76 * 754;
-}
-
-float q_hirsutchooseorium2152 = 314;
-if(J_oldaneity2151 + 210 * 902 / 915 + 565 * 804 == 52355){
-	q_hirsutchooseorium2152 = J_oldaneity2151 * 720 + 613 + 308 / 516 + 822 / 545;
-}
-
-double S_versade2153 = 152;
-if(q_hirsutchooseorium2152 * 37 - 806 + 685 - 915 - 20 < 44972){
-	S_versade2153 = q_hirsutchooseorium2152 + 101 * 226 - 256 * 524 * 277;
-}else{
-	S_versade2153 = q_hirsutchooseorium2152 + 844 / 649 / 317 / 466 / 454;
-}
-
-float a_udeaceous2154 = 649;
-if(S_versade2153 + 666 + 671 + 173 / 780 <= 93846){
-	a_udeaceous2154 = S_versade2153 - 479 - 152 + 749 - 473 / 235 - 669;
-}
-
-int p_positiveward2155 = 779;
-if(a_udeaceous2154 + 95 * 132 * 325 * 402 - 611 * 149 >= 99833){
-	p_positiveward2155 = a_udeaceous2154 - 274 / 503;
-}
-
-double w_canaire2156 = 975;
-if(p_positiveward2155 + 650 + 959 - 353 == 23860){
-	w_canaire2156 = p_positiveward2155 * 169 + 375 / 795 / 958;
-}else{
-	w_canaire2156 = p_positiveward2155 * 184 + 566 + 597 + 298;
-}
-
-double W_fistulcompanytic2157 = 588;
-if(w_canaire2156 * 44 + 95 / 322 * 109 < 77733){
-	W_fistulcompanytic2157 = w_canaire2156 * 808 + 324 * 431 + 724 * 163 * 231;
-}else{
-	W_fistulcompanytic2157 = w_canaire2156 + 936 + 605 / 714;
-}
-
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5822;
-	if(self.flat1440Hesless1441 + 88 + 548 + 33 / 378 / 111 + 129 < 17071){}
-	self.aristary1442Agoar1443 = 901;
-	if(self.aristary1442Agoar1443 - 180 / 497 + 270 * 209 / 389 == 70330){ 
-double T_rhachstreetal2158 = 7307;
-
-if(T_rhachstreetal2158 < 11813){
-	float t_pyllet2159 = T_rhachstreetal2158 - 527 / 41 + 811 / 232;
-}
- }
-	self.culturalaceous1444Broncher1445 = 9817;
-	if(self.culturalaceous1444Broncher1445 + 574 - 351 + 9 * 846 * 2 == 44680){}
-		if(self.phemwise1446Lowfaction1447){
-float o_beatism2160 = 2073;
-
-if(o_beatism2160 > 38433){
-	int p_better2161 = o_beatism2160 * 321 - 807 - 832 * 384 + 243 / 911; 
-if(p_better2161 > 24262){
-	int u_whiteit2162 = p_better2161 + 103 - 612 / 164 - 979; 
-if(u_whiteit2162 <= 54305){
-	int n_vinccarrylike2163 = u_whiteit2162 * 499 - 267 - 479 + 378; 
-if(n_vinccarrylike2163 != 20159){
-	int p_paus2164 = n_vinccarrylike2163 * 413 * 534 * 997 / 437 / 363 * 904;
-}
-}
-}
-}
-}
-int c_annsystemling2145 = 252;
-double e_jurisstorester2146 = 446;
-switch (c_annsystemling2145) {
-   case 845:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 * 867 - 632 / 673; 
-			 break;
-			}
-			case -52:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 - 431 - 890 - 422 + 20 - 625; 
-			 break;
-			}
-			case 867:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 + 527 - 682 + 251 * 849 - 810; 
-			 break;
-			}
-			case 451:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 + 611 / 704 - 826 / 793; 
-			 break;
-			}
-			case 570:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 * 742 - 320; 
-			 break;
-			}
-			case 965:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 * 587 + 638 - 277 / 102; 
-			 break;
-			}
-			case 52:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 - 136 + 421; 
-			 break;
-			}
-			case 219:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 * 276 / 650 - 262; 
-			 break;
-			}
-			case 668:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 + 906 - 132 + 948 / 578 + 461 * 334; 
-			 break;
-			}
-			case 658:
-			{
-				c_annsystemling2145 = e_jurisstorester2146 + 109 - 811 + 844; 
-			 break;
-			}
-			   default:
-       break;
-			}
+        
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return UIInterfaceOrientationMaskAll;
     }
     
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSArray * x_23 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:148 plaud1671Past1672:7581 ];
-	if(x_23){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-double o_positive2183 = 6036;
-
-if(o_positive2183 >= 28221){
-	int W_anythingan2184 = o_positive2183 * 297 * 629 - 680 - 532; 
-if(W_anythingan2184 >= 87561){
-	double w_primaneity2185 = W_anythingan2184 + 644 - 311; 
-if(w_primaneity2185 < 30859){
-	int g_idi2186 = w_primaneity2185 + 582 * 632 - 554; 
-if(g_idi2186 <= 58670){
-	int u_villia2187 = g_idi2186 - 635 - 29 * 853; 
-if(u_villia2187 >= 55277){
-	float j_hipp2188 = u_villia2187 - 673 - 109 * 997;
-}
-}
-}
-}
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 5888;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 722 + 213 + 456 - 253 - 190 + 856 <= 26506){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7318;
-	if(self.flat1440Hesless1441 - 474 + 550 + 562 + 812 != 58515){}
-	self.aristary1442Agoar1443 = 9645;
-	if(self.aristary1442Agoar1443 - 182 + 476 + 845 * 618 * 654 / 158 > 13354){ 
-int P_hourtic2189 = 223;
-float o_scigeneraly2190 = 106;
-switch (P_hourtic2189) {
-   case 205:
-			{
-				P_hourtic2189 = o_scigeneraly2190 + 94 / 489 * 241; 
-			 break;
-			}
-			case 601:
-			{
-				P_hourtic2189 = o_scigeneraly2190 - 127 - 421 - 835 * 673; 
-			 break;
-			}
-			case 821:
-			{
-				P_hourtic2189 = o_scigeneraly2190 * 779 / 642; 
-			 break;
-			}
-			case 313:
-			{
-				P_hourtic2189 = o_scigeneraly2190 + 235 + 207 - 2 / 520 - 854; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 6690;
-	if(self.culturalaceous1444Broncher1445 + 829 + 529 / 861 * 913 * 322 + 47 > 46043){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        float telagainstose2165Panion2166 = 7962;  //commontemple11
-        BOOL particularoon2167Gentation2168 = NO;
-
-        for(int akin2169Queran2170 = 2269; akin2169Queran2170 < 9631; akin2169Queran2170 = akin2169Queran2170 + 1)
-        {    
-            if (particularoon2167Gentation2168){
-                break;
-            }
-            telagainstose2165Panion2166 = telagainstose2165Panion2166 / 9927;
-        }
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     if(([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]) && ([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeLeft"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationLandscapeRight"])){
         return UIInterfaceOrientationMaskAll;
     }
     
     if([infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortrait"] || [infoUISupportedInterfaceOrientations_aar containsObject:@"UIInterfaceOrientationPortraitUpsideDown"]){
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int T_45 = [self trade2470Among2471];
+	if(T_45){}
+
+	self.juniorie1426Aevent1427 = 6458;
+	if(self.juniorie1426Aevent1427 * 694 / 166 + 292 - 376 - 200 - 702 > 44125){ 
+float L_consumerture2604 = 5574;
+
+double Q_vorally2605 = 991;
+if(L_consumerture2604 + 112 + 793 > 62656){
+	Q_vorally2605 = L_consumerture2604 + 532 * 201 * 458 + 126 - 753;
+}
+
+float h_safe2606 = 688;
+if(Q_vorally2605 * 15 / 973 - 700 + 947 * 216 != 49822){
+	h_safe2606 = Q_vorally2605 * 933 * 864 - 97 / 806 - 908;
+}
+
+float h_stillacity2607 = 743;
+if(h_safe2606 * 490 + 86 == 330){
+	h_stillacity2607 = h_safe2606 * 117 + 316 / 795 / 646 * 144;
+}
+
+float Q_createile2608 = 916;
+if(h_stillacity2607 * 340 + 68 - 193 * 428 > 46284){
+	Q_createile2608 = h_stillacity2607 * 564 + 667;
+}
+
+double s_ason2609 = 20;
+if(Q_createile2608 * 658 - 979 * 894 * 58 * 926 * 16 <= 92166){
+	s_ason2609 = Q_createile2608 + 224 - 41 * 893 + 36 + 383 + 453;
+}
+
+int b_putlet2610 = 304;
+if(s_ason2609 * 771 / 754 - 480 > 92186){
+	b_putlet2610 = s_ason2609 * 176 - 739 * 442 - 16;
+}else{
+	b_putlet2610 = s_ason2609 + 832 / 928 - 804 * 892 / 914;
+}
+
+float B_dolhotelal2611 = 547;
+if(b_putlet2610 + 837 + 953 * 709 + 209 * 30 - 349 != 67126){
+	B_dolhotelal2611 = b_putlet2610 - 386 - 189 + 933 * 595;
+}else{
+	B_dolhotelal2611 = b_putlet2610 + 881 + 154 * 97 / 964 * 913;
+}
+
+int K_anthic2612 = 469;
+if(B_dolhotelal2611 + 990 * 612 / 759 * 570 - 221 <= 28767){
+	K_anthic2612 = B_dolhotelal2611 + 232 + 132 / 24 + 735 / 424 * 584;
+}
+
+int w_mereality2613 = 464;
+if(K_anthic2612 * 951 / 86 + 457 / 167 * 589 - 895 > 66036){
+	w_mereality2613 = K_anthic2612 * 113 / 923;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 7748;
+	if(self.ctenee1428Buyry1429 * 198 * 99 / 748 - 853 != 89915){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 8941;
+	if(self.civilast1432Stratalongular1433 - 176 / 969 * 988 + 138 / 791 > 86537){ 
+int K_irasc2614 = 2107;
+
+double m_soporel2615 = 397;
+if(K_irasc2614 * 157 - 36 == 40097){
+	m_soporel2615 = K_irasc2614 * 503 * 945 * 131 / 735;
+}else{
+	m_soporel2615 = K_irasc2614 - 998 - 572 * 728 - 664;
+}
+
+double o_sexagesimad2616 = 830;
+if(m_soporel2615 * 968 - 813 * 998 == 72612){
+	o_sexagesimad2616 = m_soporel2615 * 128 / 698 + 695;
+}else{
+	o_sexagesimad2616 = m_soporel2615 + 144 + 849 * 308 / 165 * 444 / 126;
+}
+
+float r_lossaire2617 = 252;
+if(o_sexagesimad2616 - 799 - 887 + 658 - 814 <= 92447){
+	r_lossaire2617 = o_sexagesimad2616 * 92 - 181 + 494 + 392;
+}else{
+	r_lossaire2617 = o_sexagesimad2616 + 958 + 961 + 265 / 194 + 596;
+}
+
+int L_rexiaform2618 = 929;
+if(r_lossaire2617 + 798 - 265 >= 42092){
+	L_rexiaform2618 = r_lossaire2617 - 334 - 638 - 394;
+}
+
+float n_skill2619 = 972;
+if(L_rexiaform2618 - 305 * 256 / 903 > 64603){
+	n_skill2619 = L_rexiaform2618 - 985 / 187 - 575 / 91 - 331 * 926;
+}
+
+ }
+		if(self.inad1434Simpleive1435){
+int Y_nausprogramify2620 = 5052;
+
+if(Y_nausprogramify2620 <= 34060){
+	float a_personalory2621 = Y_nausprogramify2620 - 542 * 305 / 682 - 490 / 455 / 207; 
+if(a_personalory2621 < 68033){
+	int W_hemikitchenie2622 = a_personalory2621 + 841 + 519 / 519;
+}
+}
+}
+          BOOL rhynchety2600Glansule2601 = YES;    ////temple31
+          if (rhynchety2600Glansule2601) { __asm__("NOP"); }
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         return UIInterfaceOrientationMaskPortrait;
     }
     
@@ -855,223 +733,205 @@ switch (P_hourtic2189) {
 }
 
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (UIApplication *)phasycoldian1586Particularlyair1587{ //insert method
+	        
+        int school1592Januatory1593 = -42;  //commontemple4
+        BOOL surfacedom1594Nutriuous1595 = YES;
+        if (school1592Januatory1593 <= -965)
+        {
+            school1592Januatory1593 = school1592Januatory1593 - -804;
+            surfacedom1594Nutriuous1595 = NO;
+        }
+
+        
+ 
+	UIApplication *M_38 = nil;
+	return M_38;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (void)oviization1505Respondty1506:(NSMutableArray *)oviization1505_1 remaire1507Countryery1508:(NSObject *)remaire1507_2 menssoldierette1509Erg1510:(NSInteger)menssoldierette1509_3 member1511Listship1512:(NSInteger)member1511_4 haliinterviewform1513Musc1514:(CGFloat)haliinterviewform1513_5 nationalize1515Eurmost1516:(NSString *)nationalize1515_6{ //insert method
+	if(oviization1505_1){
+		        
+        double anyoneie1517Macro1518 = 1843.0;   //temple18
+        if (@(anyoneie1517Macro1518).doubleValue >= 8476) {}
+        
+	}
+	if(menssoldierette1509_3 + 324 - 246 * 411 + 484 < 69979){
+		        
+        float awayfaction1521Pancreaticular1522 = 1158;  //commontemple2
+        float rogation1523Faceth1524 = 2584;
+
+        BOOL flaccic1525Nt1526 = YES;
+        while (awayfaction1521Pancreaticular1522 < 4200)
+        {
+            awayfaction1521Pancreaticular1522 = awayfaction1521Pancreaticular1522 + 5169;
+            flaccic1525Nt1526 = YES;
+            if(flaccic1525Nt1526){
+                break;
+            }
+        }
+
+        awayfaction1521Pancreaticular1522 = rogation1523Faceth1524 + 9497 ;
+        flaccic1525Nt1526 = NO;
+                
+        float aersure1545Palliostationlet1546 = 4051;  //commontemple2
+        float auridiscussionast1547Mayer1548 = 7361;
+
+        BOOL putall1549Leniical1550 = YES;
+        while (aersure1545Palliostationlet1546 < 8068)
+        {
+            aersure1545Palliostationlet1546 = aersure1545Palliostationlet1546 + 565;
+            putall1549Leniical1550 = YES;
+            if(putall1549Leniical1550){
+                break;
+            }
+        }
+
+        aersure1545Palliostationlet1546 = auridiscussionast1547Mayer1548 + 3040 ;
+        putall1549Leniical1550 = YES;
+	}
+	if(member1511_4 - 57 + 97 / 588 - 46 > 13306){
+		   
+      // 局部变量声明
+      int militaryern1567State1568 = 6356;
+      int jocably1569Nu1570 = 9508;
+      int group1571Littleaster1572;
+      
+      if(jocably1569Nu1570 > militaryern1567State1568){
+         // 调用函数来获取最大值
+         group1571Littleaster1572 = fmax(jocably1569Nu1570, militaryern1567State1568);
+      }
+     
+	}
+	if(nationalize1515_6){
+		float i_adultair1583 = 7815;
+
+if(i_adultair1583 <= 21430){
+	double l_nephrior1584 = i_adultair1583 + 793 + 40 + 884; 
+if(l_nephrior1584 <= 15127){
+	int y_fab1585 = l_nephrior1584 + 381 / 769 - 419;
+}
+}
+	}
+ }
+// 2024-01-12 12:51:44 ===insert my method end===
 + (instancetype)share
 {
     static MWSDK *_shareSP = nil;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		      
+      
+    int pecunless2627Dens2628;   //commontemple20
+    int summerhood2629Challengety2630 = 5563;
+    int usless2631Ficiian2632 = 6991;
+
+    if (summerhood2629Challengety2630 >= usless2631Ficiian2632){
+        pecunless2627Dens2628 = summerhood2629Challengety2630;
+        double r_sacchar2649 = 3642;
+
+if(r_sacchar2649 < 94659){
+	int V_wordization2650 = r_sacchar2649 * 282 - 656; 
+if(V_wordization2650 <= 17746){
+	double W_noibility2651 = V_wordization2650 - 823 * 299 * 176 + 239 - 908;
+}
+}
+    }else{
+        pecunless2627Dens2628 = usless2631Ficiian2632;
+                
+        BOOL operculical2656Securityory2657 = NO;  //commontemple6
+        if (operculical2656Securityory2657){
+            operculical2656Securityory2657 = YES;
+        }
+
+        
+    }
+        
+
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shareSP = [[MWSDK alloc] init];
     });
-    _shareSP.sdkBaseEncryptKey = @"smw-tw5-1213";
+    _shareSP.sdkBaseEncryptKey = @"sdk-tw5-0108";
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		        
+        BOOL minacfier2666Liquaneity2667 = YES;  //commontemple8
+        if (minacfier2666Liquaneity2667){
+            minacfier2666Liquaneity2667 = YES;
+        }else{
+            
+            minacfier2666Liquaneity2667 = !minacfier2666Liquaneity2667;
+        }
+        
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     return _shareSP;
 }
 
-- (instancetype)init
-{
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	long K_36 = [self firstular1951Arcsuccessproof1952:nil cephaloular1953Hardety1954:@"whomish2231Sometimesling2232" policior1955Syor1956:2269 vulnerity1957Sendise1958:nil ];
-	if(K_36){}
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSObject *)trichin1604Lifeial1605:( NSString *)trichin1604_1 nudratheracle1606Operation1607:(CGFloat)nudratheracle1606_2 doxling1608Geneion1609:(NSData *)doxling1608_3 condiimagine1610Density1611:(UIApplication *)condiimagine1610_4{ //insert method
+	if(trichin1604_1){
+		      
+      
+    int memberitious1614Vocplantitive1615;   //commontemple20
+    int archprepareate1616Plinthment1617 = 8146;
+    int sellacle1618Capital1619 = 2685;
 
-		if(self.pentecost1434Kinanythingenne1435){
-float b_baseless2233 = 3419;
-
-int B_future2234 = 512;
-if(b_baseless2233 - 66 / 443 + 983 - 62 - 710 / 95 > 66875){
-	B_future2234 = b_baseless2233 - 458 * 358 / 333 - 221;
-}else{
-	B_future2234 = b_baseless2233 - 217 / 451 / 648 / 652 / 127;
-}
-
-double P_machinewise2235 = 222;
-if(B_future2234 - 741 * 910 - 795 / 558 * 465 + 942 >= 18737){
-	P_machinewise2235 = B_future2234 + 598 / 981 * 428 - 242;
-}
-
-double s_thosear2236 = 567;
-if(P_machinewise2235 * 274 * 3 / 451 / 702 / 779 + 764 >= 5161){
-	s_thosear2236 = P_machinewise2235 + 149 + 619;
-}else{
-	s_thosear2236 = P_machinewise2235 - 869 / 520 + 413 * 395;
-}
-
-float C_tenaciaceous2237 = 821;
-if(s_thosear2236 + 623 * 667 - 410 * 745 / 641 / 479 == 18963){
-	C_tenaciaceous2237 = s_thosear2236 + 255 / 364 / 508 / 275;
-}
-
-float e_gust2238 = 638;
-if(C_tenaciaceous2237 + 664 * 566 >= 13764){
-	e_gust2238 = C_tenaciaceous2237 * 6 - 77 / 654 + 96;
-}
-
-int E_cubia2239 = 187;
-if(e_gust2238 * 236 * 342 * 91 * 266 == 64121){
-	E_cubia2239 = e_gust2238 - 865 + 539;
-}else{
-	E_cubia2239 = e_gust2238 - 636 + 458 * 874 - 469 - 820;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 4828;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 933 * 792 / 639 - 961 * 878 >= 50501){ 
-double Y_passeria2240 = 6997;
-
-float k_ilally2241 = 650;
-if(Y_passeria2240 - 152 * 727 * 944 <= 36665){
-	k_ilally2241 = Y_passeria2240 * 723 - 941 - 35 - 701 - 668 + 660;
-}
-
-float K_southernious2242 = 199;
-if(k_ilally2241 * 995 + 166 / 994 * 134 <= 53076){
-	K_southernious2242 = k_ilally2241 + 711 + 14 + 465 + 503 / 220 * 295;
-}
-
-int I_unitie2243 = 775;
-if(K_southernious2242 - 984 * 799 + 641 / 712 + 456 > 34751){
-	I_unitie2243 = K_southernious2242 + 822 / 260 / 867 + 715 - 924;
-}else{
-	I_unitie2243 = K_southernious2242 + 264 + 409;
-}
-
-double v_telfirstability2244 = 380;
-if(I_unitie2243 - 226 - 362 > 57695){
-	v_telfirstability2244 = I_unitie2243 - 876 + 231 * 455 + 10 / 421 / 803;
-}else{
-	v_telfirstability2244 = I_unitie2243 + 671 + 994 / 454;
-}
-
-double b_causeitor2245 = 833;
-if(v_telfirstability2244 * 778 - 327 == 33472){
-	b_causeitor2245 = v_telfirstability2244 + 199 * 469 + 101 + 360 / 520 - 651;
-}
-
-float s_schemacity2246 = 511;
-if(b_causeitor2245 * 684 - 688 / 512 / 41 > 61329){
-	s_schemacity2246 = b_causeitor2245 + 167 - 309 * 616 / 783;
-}else{
-	s_schemacity2246 = b_causeitor2245 + 197 + 848 * 576 - 142 + 677;
-}
-
-int s_fantness2247 = 767;
-if(s_schemacity2246 + 355 + 273 * 263 / 548 / 182 / 15 <= 79904){
-	s_fantness2247 = s_schemacity2246 * 376 / 275;
-}else{
-	s_fantness2247 = s_schemacity2246 * 941 * 231 * 758 + 339 - 396 / 112;
-}
-
-double m_sorptine2248 = 901;
-if(s_fantness2247 * 935 / 375 / 542 + 274 <= 90657){
-	m_sorptine2248 = s_fantness2247 + 825 - 227 * 373 - 613 / 35 - 688;
-}
-
- }
-		if(self.prior1438Vanist1439){
-int M_houroon2249 = 892;
-int N_televisionic2250 = 30;
-switch (M_houroon2249) {
-   case -55:
-			{
-				M_houroon2249 = N_televisionic2250 + 347 - 261 - 139; 
-			 break;
-			}
-			case 826:
-			{
-				M_houroon2249 = N_televisionic2250 - 517 - 590 + 530; 
-			 break;
-			}
-			case 332:
-			{
-				M_houroon2249 = N_televisionic2250 + 296 * 233 * 769 - 265; 
-			 break;
-			}
-			case 935:
-			{
-				M_houroon2249 = N_televisionic2250 - 927 / 342; 
-			 break;
-			}
-			case -28:
-			{
-				M_houroon2249 = N_televisionic2250 - 844 + 680 / 234 * 801 + 666 / 86; 
-			 break;
-			}
-			case 212:
-			{
-				M_houroon2249 = N_televisionic2250 + 936 - 200 / 16 - 722 / 813 * 310; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 3597;
-	if(self.flat1440Hesless1441 + 62 * 686 != 85579){ 
-int v_ectomyit2251 = 2049;
-
-if(v_ectomyit2251 > 59153){
-	double S_ortho2252 = v_ectomyit2251 * 119 + 17 - 601 - 809 - 670 / 238;
-}
- }
-	self.aristary1442Agoar1443 = 2476;
-	if(self.aristary1442Agoar1443 * 752 + 712 / 124 / 502 / 998 - 416 > 87277){}
-	self.culturalaceous1444Broncher1445 = 1729;
-	if(self.culturalaceous1444Broncher1445 - 795 / 741 * 614 / 746 != 8055){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSDictionary *style2195Materaster2196 = @{@"downform2207" : @(97952), @"galactsure2209" : @"habmost2210", @"scientistproof2211" : @(35295), @"weekeer2213" : @"specificably2214", @"kindsure2215" : @(47380), @"eyeistic2217" : @(32020), @"velocglass2219" : @"plagi2220", @"suddenlywise2221" : @(4965), @"claring2223" : @"multture2224", @"sedecade2225" : @"animal2226", @"scab2227" : @"lossid2228", @"malleoship2229" : @"fumaire2230" };  //temple5
-       if (style2195Materaster2196.count > 6484){
-
-            int lingu2199Barose2200 = 3839;
-            int cancerty2203Valueible2204 = 4080;
-            int degreety2205 = 7343;
-            switch (lingu2199Barose2200) {
-                    
-                case 844:
-			{
-				cancerty2203Valueible2204 = degreety2205 * 593 + 560; 
-			 break;
-			}
-			case 508:
-			{
-				cancerty2203Valueible2204 = degreety2205 * 428 - 791 + 981 / 2 * 354; 
-			 break;
-			}
-			case 336:
-			{
-				cancerty2203Valueible2204 = degreety2205 * 498 + 811 - 750 * 449; 
-			 break;
-			}
-			case -20:
-			{
-				cancerty2203Valueible2204 = degreety2205 - 204 + 523 - 700 / 95 / 765; 
-			 break;
-			}
-			case 469:
-			{
-				cancerty2203Valueible2204 = degreety2205 - 322 + 188; 
-			 break;
-			}
-			case 317:
-			{
-				cancerty2203Valueible2204 = degreety2205 - 231 / 678 - 410 / 477; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-
+    if (archprepareate1616Plinthment1617 != sellacle1618Capital1619){
+        memberitious1614Vocplantitive1615 = archprepareate1616Plinthment1617;
+                
+        float trixstopster1634Ego1635 = 6319;  //commontemple4
+        BOOL underor1636Mixtairtic1637 = YES;
+        if (trixstopster1634Ego1635 < 1851)
+        {
+            trixstopster1634Ego1635 = trixstopster1634Ego1635 - 6817;
+            underor1636Mixtairtic1637 = NO;
         }
 
         
+    }else{
+        memberitious1614Vocplantitive1615 = sellacle1618Capital1619;
+        
+    }
+        
 
-		}
-		//====insert my code end===  2023-12-13 18:35:09
 
+	}
+	if(doxling1608_3){
+		        
+        BOOL sagittarian1646Coursesive1647 = YES;  //commontemple5
+        if (sagittarian1646Coursesive1647)
+        {
+            
+            sagittarian1646Coursesive1647 = YES;
+        }
+
+        
+	}
+ 
+	NSObject *r_17 = nil;
+	return r_17;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+- (instancetype)init
+{
+
+		
     if (self = [super init]) {
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
@@ -1080,263 +940,602 @@ if(v_ectomyit2251 > 59153){
     return self;
 }
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSString *)phonofilmia1652Byule1653:( UNNotificationTrigger *)phonofilmia1652_1 rhodivity1654Joclet1655:(NSURL *)rhodivity1654_2 answer1656Dottruthish1657:(NSData *)answer1656_3 mordfamilyency1658Preparearium1659:(NSDictionary *)mordfamilyency1658_4 arriveia1660Aceto1661:( NSData *)arriveia1660_5 fligquality1662Maintain1663:( UNNotificationTrigger *)fligquality1662_6 scensship1664Stalactular1665:(float)scensship1664_7{ //insert method
+	if(rhodivity1654_2){
+		int O_highability1668 = 160;
+float K_levelacity1669 = 645;
+switch (O_highability1668) {
+   case 673:
+			{
+				O_highability1668 = K_levelacity1669 * 698 - 188 + 424 / 294 + 633 - 291; 
+			 break;
+			}
+			case 751:
+			{
+				O_highability1668 = K_levelacity1669 - 55 + 134 / 123 + 618 * 349; 
+			 break;
+			}
+			case 482:
+			{
+				O_highability1668 = K_levelacity1669 + 655 * 671 - 486 * 56 + 761; 
+			 break;
+			}
+			case 807:
+			{
+				O_highability1668 = K_levelacity1669 + 101 + 833 * 505 - 249; 
+			 break;
+			}
+			case 11:
+			{
+				O_highability1668 = K_levelacity1669 * 660 - 339; 
+			 break;
+			}
+			case 250:
+			{
+				O_highability1668 = K_levelacity1669 - 956 - 903; 
+			 break;
+			}
+			case -87:
+			{
+				O_highability1668 = K_levelacity1669 - 864 * 956 * 598 / 181 - 413 / 818; 
+			 break;
+			}
+			case 812:
+			{
+				O_highability1668 = K_levelacity1669 * 734 + 318 / 647 / 508 * 69; 
+			 break;
+			}
+			case 700:
+			{
+				O_highability1668 = K_levelacity1669 - 795 - 424 - 105; 
+			 break;
+			}
+			case 353:
+			{
+				O_highability1668 = K_levelacity1669 - 675 * 959 / 142 * 146; 
+			 break;
+			}
+			case 106:
+			{
+				O_highability1668 = K_levelacity1669 * 794 / 261 + 663 + 962; 
+			 break;
+			}
+			case 971:
+			{
+				O_highability1668 = K_levelacity1669 - 49 + 586; 
+			 break;
+			}
+			case 121:
+			{
+				O_highability1668 = K_levelacity1669 * 895 / 608 - 477; 
+			 break;
+			}
+			case 270:
+			{
+				O_highability1668 = K_levelacity1669 * 515 + 979 + 653 + 862 * 508; 
+			 break;
+			}
+			case 777:
+			{
+				O_highability1668 = K_levelacity1669 * 482 - 590 * 625 * 15 - 899; 
+			 break;
+			}
+			case 186:
+			{
+				O_highability1668 = K_levelacity1669 * 474 - 387 + 483 * 603; 
+			 break;
+			}
+			   default:
+       break;
+			}
+	}
+	if(answer1656_3){
+		            float eufold1670Terraoon1671 = 3574.0;  //temple25
+            if (@(eufold1670Terraoon1671).doubleValue == 2174) {}
+	}
+	if(scensship1664_7 + 69 * 673 + 935 >= 21687){
+		        
+        long towardish1674Followosity1675 = 5904;  //commontemple2
+        long productionast1676Segetitious1677 = 4764;
+
+        BOOL redature1678Republicanivity1679 = YES;
+        while (towardish1674Followosity1675 < 1629)
+        {
+            towardish1674Followosity1675 = towardish1674Followosity1675 + 6101;
+            redature1678Republicanivity1679 = YES;
+            if(redature1678Republicanivity1679){
+                break;
+            }
+        }
+
+        towardish1674Followosity1675 = productionast1676Segetitious1677 + 3518 ;
+        redature1678Republicanivity1679 = YES;
+              
+      
+      int minacfier1698Heartion1699[ 5118 ]; //commontemple21
+    
+      // 初始化数组元素          
+      for ( int i = 0; i < 5118; i++ )
+      {
+         minacfier1698Heartion1699[ i ] = i + 1603; // 设置元素 i 为 i + 100
+         
+      }
+
+	}
+ 
+	NSString *Y_50 = @"kudoregionant1667punctsome1666";
+	return Y_50;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long G_32 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:3030 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:3510 ];
+	if(G_32){}
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSObject *)findfaction1554Less1555{ //insert method
-	double M_cant1560 = 991;
-
-if(M_cant1560 != 79646){
-	double L_saveative1561 = M_cant1560 - 695 - 91 - 648 + 509; 
-if(L_saveative1561 > 16581){
-	float M_turn1562 = L_saveative1561 - 304 / 392 / 197 * 236 + 951; 
-if(M_turn1562 == 87777){
-	float X_olepatternine1563 = M_turn1562 + 333 - 759 + 328 * 63 / 960 + 781; 
-if(X_olepatternine1563 >= 6699){
-	double x_vicesimfic1564 = X_olepatternine1563 + 696 - 55 / 42; 
-if(x_vicesimfic1564 <= 64030){
-	float d_furtee1565 = x_vicesimfic1564 + 362 * 376 - 899 + 669 / 582;
-}
-}
-}
-}
-}
- 
-	NSObject *m_12 = nil;
-	return m_12;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (BOOL)hardly1536Archaeoally1537:(NSDictionary *)hardly1536_1{ //insert method
-	if(hardly1536_1){
-		        NSString *keyise1540Myrmecard1541 = @"";   //temple1
-        if(hardly1536_1){
-            if([keyise1540Myrmecard1541 isEqualToString:@"plumfy1544Mater1545"]){
-                keyise1540Myrmecard1541 = @"ras1548Appearitive1549";
-            }else{
-                keyise1540Myrmecard1541 = @"pellonceion1552Hope1553";
-            }
+	self.juniorie1426Aevent1427 = 4249;
+	if(self.juniorie1426Aevent1427 * 256 * 235 <= 8937){}
+	self.ctenee1428Buyry1429 = 8722;
+	if(self.ctenee1428Buyry1429 + 454 + 732 * 975 == 36627){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7425;
+	if(self.civilast1432Stratalongular1433 + 509 / 412 > 12507){}
+		if(self.inad1434Simpleive1435){}
+        
+        BOOL pennacity2678Putality2679 = YES;//commontemple19
+        while (!pennacity2678Putality2679)
+        {
+            pennacity2678Putality2679 = YES;
+            break;
         }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+}
+
+
+
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSString *)xenist1702Pungworkacious1703:(long)xenist1702_1 okization1704Stimulhit1705:( NSArray *)okization1704_2 officer1706Metertic1707:( NSString *)officer1706_3 rheule1708Centricaster1709:( NSData *)rheule1708_4 motherster1710Tent1711:(UIWindow *)motherster1710_5 sacraitor1712Tempthood1713:(UIApplication *)sacraitor1712_6 trichinry1714On1715:( UNNotificationTrigger *)trichinry1714_7{ //insert method
+	if(xenist1702_1 * 86 - 21 - 650 + 47 - 153 / 6 < 12085){
+		        
+        float maintain1718Navan1719 = 5904;  //commontemple11
+        BOOL harder1720Omasacity1721 = YES;
+
+        for(int scindward1722Hesinformationeous1723 = 1114; scindward1722Hesinformationeous1723 < 8665; scindward1722Hesinformationeous1723 = scindward1722Hesinformationeous1723 + 1)
+        {    
+            if (harder1720Omasacity1721){
+            
+                          NSString *veryaceous1738Effectward1739 = @"frain1740Pathouous1741";    //temple33
+          NSString *mere1742Party1743 = @"arcary1744Siderain1745";
+          NSString *noneducationid1746Cumuloaneous1747 = [NSString stringWithFormat:@"parietaster1748Caud1749%@",veryaceous1738Effectward1739];
+          if ([noneducationid1746Cumuloaneous1747 length] < 3401) {
+            noneducationid1746Cumuloaneous1747 = [NSString stringWithFormat:@"paucacious1756Tars1757%@",mere1742Party1743];
+          }else{
+            noneducationid1746Cumuloaneous1747 = [NSString stringWithFormat:@"poieful1762Hot1763%@",mere1742Party1743];
+          }
+          if(noneducationid1746Cumuloaneous1747){
+            __asm__("NOP");
+          }
+
+
+                break;
+            }
+            maintain1718Navan1719 = maintain1718Navan1719 * 1513;
+        }
+        
+	}
+	if(officer1706_3){
+		    NSArray *arch1768Seatuous1769 = @[@"longety1804_corteur1805", @"big1806_omentlike1807", @"thousand1808_pleasyouetic1809", @"bronchation1810_foreign1811", @"cosmoit1812_figant1813", @"dreamie1814_suchsive1815", @"damneasysion1816_bathyety1817", @"suavness1818_elseable1819", @"piousage1820_aheadoon1821", @"allelcy1822_menoon1823", @"beforeatory1824_cacoate1825", @"technpayster1826_gamb1827", @"certainlyier1828_menacoon1829", @"resourceing1830_remarium1831" ]; //temple28
+
+          int hirsutty1770Cubitard1771 = arch1768Seatuous1769.count;
+         int seemsion1774Get1775 = (int)hirsutty1770Cubitard1771;
+         int tradeern1778Nutri1779 = 5864;
+         int oecoosity1780Scienne1781 = 9669;
+         if (seemsion1774Get1775 >= oecoosity1780Scienne1781) {
+             seemsion1774Get1775 = oecoosity1780Scienne1781;
+         }
+         while (tradeern1778Nutri1779 <= seemsion1774Get1775) {
+            tradeern1778Nutri1779 += 1;
+            seemsion1774Get1775 /= tradeern1778Nutri1779;
+            seemsion1774Get1775 += 2040;
+            break;
+         }
+          [arch1768Seatuous1769 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+              if (idx <= 9350) {
+                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
+            }
+          }];
+	}
+	if(rheule1708_4){
+		      int new1832Filmability1833 = 8144;  //temple24
+      NSMutableDictionary *researchfic1834Stasisious1835 = [NSMutableDictionary dictionaryWithCapacity:6591];
+      new1832Filmability1833 += 8427;
+      [researchfic1834Stasisious1835 setObject: @(new1832Filmability1833) forKey:@"scabiosion1842Support1843"];
+      int humanel1844Night1845 = (int)new1832Filmability1833;
+      if (humanel1844Night1845 <= 4200) {
+            humanel1844Night1845 *= 8331;
+      }
 	}
  
-	BOOL s_18 = 89096;
-	return s_18;
+	NSString *q_16 = @"palinsocialtic1717blueacle1716";
+	return q_16;
 }
-//===insert my method end=== 2023-12-13 18:35:09
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)sdkLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
     SDK_LOG(@"sdkLoginWithHandler");
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * o_14 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(o_14){}
+
+	self.juniorie1426Aevent1427 = 5266;
+	if(self.juniorie1426Aevent1427 * 441 / 398 + 789 < 65038){}
+	self.ctenee1428Buyry1429 = 8579;
+	if(self.ctenee1428Buyry1429 - 786 - 519 != 8587){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4486;
+	if(self.civilast1432Stratalongular1433 * 319 + 228 - 627 - 629 - 779 - 805 >= 75213){}
+		if(self.inad1434Simpleive1435){}
+int G_cheirgrowth2686 = 159;
+float j_mony2687 = 151;
+switch (G_cheirgrowth2686) {
+   case 869:
+			{
+				G_cheirgrowth2686 = j_mony2687 - 216 * 132 - 47 - 31; 
+			 break;
+			}
+			case 855:
+			{
+				G_cheirgrowth2686 = j_mony2687 - 8 / 432 + 807; 
+			 break;
+			}
+			case 893:
+			{
+				G_cheirgrowth2686 = j_mony2687 - 558 * 121; 
+			 break;
+			}
+			case 80:
+			{
+				G_cheirgrowth2686 = j_mony2687 + 496 / 135; 
+			 break;
+			}
+			case 514:
+			{
+				G_cheirgrowth2686 = j_mony2687 + 64 * 244 * 789 * 576 * 57 + 607; 
+			 break;
+			}
+			case 355:
+			{
+				G_cheirgrowth2686 = j_mony2687 - 944 - 946 - 671 / 557 * 350 - 287; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	 NSString * b_1 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"pancreatickin2700Naturalative2701" directionment2219Lamin2220:nil ];
+	if(b_1){}
+
+	self.juniorie1426Aevent1427 = 3896;
+	if(self.juniorie1426Aevent1427 * 604 + 903 + 287 * 796 * 155 / 371 == 75694){}
+	self.ctenee1428Buyry1429 = 5193;
+	if(self.ctenee1428Buyry1429 - 500 / 988 >= 31639){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4448;
+	if(self.civilast1432Stratalongular1433 + 680 * 43 * 155 / 748 >= 16558){}
+		if(self.inad1434Simpleive1435){
+int q_fluist2702 = 3068;
+
+double B_data2703 = 733;
+if(q_fluist2702 + 671 + 466 * 469 / 973 / 32 <= 33646){
+	B_data2703 = q_fluist2702 - 299 - 308 * 536 - 378 / 977 / 447;
+}else{
+	B_data2703 = q_fluist2702 + 945 - 675 * 171 * 976 * 181;
+}
+
+int R_sorcexist2704 = 157;
+if(B_data2703 * 760 / 443 + 464 * 734 + 318 / 897 != 30661){
+	R_sorcexist2704 = B_data2703 - 634 / 847;
+}else{
+	R_sorcexist2704 = B_data2703 - 543 / 826 * 619 - 928 - 354;
+}
+
+float F_carni2705 = 107;
+if(R_sorcexist2704 + 286 * 316 * 82 * 27 / 585 < 75960){
+	F_carni2705 = R_sorcexist2704 - 726 - 371 - 253;
+}
+
+int j_septfier2706 = 862;
+if(F_carni2705 * 972 * 314 - 579 != 51869){
+	j_septfier2706 = F_carni2705 - 753 / 388 - 871 * 157 / 739 - 711;
+}else{
+	j_septfier2706 = F_carni2705 * 502 / 880;
+}
+
+float r_meninglaytion2707 = 134;
+if(j_septfier2706 * 202 - 936 * 985 >= 90382){
+	r_meninglaytion2707 = j_septfier2706 - 876 + 634 + 263;
+}
+
+int d_studentast2708 = 689;
+if(r_meninglaytion2707 - 340 * 189 / 493 >= 36091){
+	d_studentast2708 = r_meninglaytion2707 * 88 * 550 / 415 - 288 / 449 + 998;
+}else{
+	d_studentast2708 = r_meninglaytion2707 - 293 - 523;
+}
+
+}
+double V_gelatid2690 = 3214;
+
+int Z_gustary2691 = 802;
+if(V_gelatid2690 + 164 + 491 >= 4972){
+	Z_gustary2691 = V_gelatid2690 * 182 + 754 - 983 + 940 / 205 * 695;
+}
+
+int f_environmentaltic2692 = 267;
+if(Z_gustary2691 + 737 + 343 - 207 < 36006){
+	f_environmentaltic2692 = Z_gustary2691 * 140 + 662 * 361;
+}else{
+	f_environmentaltic2692 = Z_gustary2691 - 372 * 672 - 336 - 116 - 575;
+}
+
+float b_somethingie2693 = 812;
+if(f_environmentaltic2692 - 245 + 52 + 351 + 700 / 572 <= 39048){
+	b_somethingie2693 = f_environmentaltic2692 - 887 / 415;
+}else{
+	b_somethingie2693 = f_environmentaltic2692 * 975 / 342 / 766 + 740 - 398;
+}
+
+int U_thing2694 = 638;
+if(b_somethingie2693 + 757 / 468 * 638 - 200 * 917 <= 40856){
+	U_thing2694 = b_somethingie2693 * 434 - 797 * 897 - 168 + 232 / 407;
+}
+
+float E_methodfy2695 = 972;
+if(U_thing2694 * 746 + 824 / 823 - 292 / 776 != 49738){
+	E_methodfy2695 = U_thing2694 * 531 - 153 - 415 / 602 / 207 + 407;
+}else{
+	E_methodfy2695 = U_thing2694 + 998 * 704 + 102 - 497 + 897;
+}
+
+float N_ecty2696 = 268;
+if(E_methodfy2695 - 173 / 353 - 310 >= 27928){
+	N_ecty2696 = E_methodfy2695 - 562 + 815 * 573 / 562 * 758 * 828;
+}
+
+int G_legitious2697 = 779;
+if(N_ecty2696 * 689 + 672 - 770 - 387 + 638 != 10755){
+	G_legitious2697 = N_ecty2696 + 898 - 428 * 390;
+}
+
+float K_largistic2698 = 603;
+if(G_legitious2697 - 973 + 477 - 36 - 667 <= 84995){
+	K_largistic2698 = G_legitious2697 - 351 / 683 * 501 - 481 * 645;
+}else{
+	K_largistic2698 = G_legitious2697 - 552 - 947 * 451 / 919 + 212 / 66;
+}
+
+float i_able2699 = 751;
+if(K_largistic2698 - 244 + 545 >= 43453){
+	i_able2699 = K_largistic2698 - 978 - 602;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSString * d_3 = [self phonofilmia1652Byule1653:nil rhodivity1654Joclet1655:nil answer1656Dottruthish1657:nil mordfamilyency1658Preparearium1659:nil arriveia1660Aceto1661:nil fligquality1662Maintain1663:nil scensship1664Stalactular1665:1045 ];
+	if(d_3){}
+
+	self.juniorie1426Aevent1427 = 7424;
+	if(self.juniorie1426Aevent1427 * 580 - 244 / 484 - 440 > 41521){}
+	self.ctenee1428Buyry1429 = 7348;
+	if(self.ctenee1428Buyry1429 - 79 + 965 + 431 + 776 / 254 != 4819){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 35;
+	if(self.civilast1432Stratalongular1433 - 691 + 436 * 741 - 88 > 33200){ 
+int f_zelaneity2714 = 8941;
+
+float v_sphinctsitivity2715 = 985;
+if(f_zelaneity2714 * 252 + 626 >= 22412){
+	v_sphinctsitivity2715 = f_zelaneity2714 * 792 / 130 * 176 - 86 + 514;
+}
+
+int D_serve2716 = 321;
+if(v_sphinctsitivity2715 + 785 + 105 + 183 - 486 / 484 >= 94904){
+	D_serve2716 = v_sphinctsitivity2715 - 344 * 868 * 383;
+}else{
+	D_serve2716 = v_sphinctsitivity2715 - 737 + 608 + 830 + 712 / 75 - 558;
+}
+
+int J_myzate2717 = 296;
+if(D_serve2716 - 359 - 955 - 810 - 455 - 642 * 6 > 97046){
+	J_myzate2717 = D_serve2716 + 746 + 882;
+}
+
+float R_preventization2718 = 628;
+if(J_myzate2717 * 985 / 995 + 739 / 58 + 114 < 34209){
+	R_preventization2718 = J_myzate2717 + 810 / 345 - 960 / 97;
+}else{
+	R_preventization2718 = J_myzate2717 - 493 / 193;
+}
+
+int g_currentite2719 = 654;
+if(R_preventization2718 * 982 * 202 * 657 * 590 + 358 * 657 <= 22733){
+	g_currentite2719 = R_preventization2718 + 791 - 75 + 837 - 80 + 341 - 220;
+}else{
+	g_currentite2719 = R_preventization2718 - 328 + 338 - 70;
+}
+
+int S_processel2720 = 484;
+if(g_currentite2719 - 254 / 422 < 35976){
+	S_processel2720 = g_currentite2719 + 735 - 461;
+}
+
+float q_gliaacy2721 = 283;
+if(S_processel2720 * 273 / 66 * 608 - 733 > 14816){
+	q_gliaacy2721 = S_processel2720 + 399 / 645 / 235;
+}
+
+double O_oilosity2722 = 179;
+if(q_gliaacy2721 - 487 / 732 <= 59066){
+	O_oilosity2722 = q_gliaacy2721 * 969 / 52;
+}else{
+	O_oilosity2722 = q_gliaacy2721 + 504 / 911 + 975 / 963 + 426 / 943;
+}
+
+int G_futilhistoryry2723 = 258;
+if(O_oilosity2722 * 505 * 445 - 422 / 244 + 39 / 700 == 5469){
+	G_futilhistoryry2723 = O_oilosity2722 * 918 / 389 - 379 - 948 + 310;
+}
+
+float B_subject2724 = 224;
+if(G_futilhistoryry2723 - 367 - 729 / 402 * 373 / 788 <= 83097){
+	B_subject2724 = G_futilhistoryry2723 * 525 - 865 * 489 / 454 / 338 + 466;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+float i_nuimportantization2711 = 8138;
+
+double I_compareice2712 = 352;
+if(i_nuimportantization2711 * 74 - 933 - 540 - 597 * 312 * 807 >= 24167){
+	I_compareice2712 = i_nuimportantization2711 - 837 * 648 + 801 + 794 * 446;
+}else{
+	I_compareice2712 = i_nuimportantization2711 - 862 + 974 - 898 - 570;
+}
+
+double R_American2713 = 972;
+if(I_compareice2712 * 218 - 204 / 9 - 221 >= 93424){
+	R_American2713 = I_compareice2712 * 241 / 587 * 727 / 897 + 56 * 387;
+}else{
+	R_American2713 = I_compareice2712 * 952 - 944 - 685;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         return;
     }
     
     self.loginCompletionHandler = cmopleteHandler;
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL h_7 = [self hedrose1566Matterfication1567:nil specific1568Spaceature1569:nil simpleitor1570Yessive1571:5492 tricbelieveie1572Turboality1573:nil ];
-	if(h_7){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2678;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 991 + 71 - 599 * 323 != 44911){ 
-int Q_tentaite2263 = 171;
-float P_pullie2264 = 925;
-switch (Q_tentaite2263) {
-   case 544:
-			{
-				Q_tentaite2263 = P_pullie2264 - 236 * 722 + 186 * 915; 
-			 break;
-			}
-			case 254:
-			{
-				Q_tentaite2263 = P_pullie2264 + 591 / 484 * 586 * 646 + 876 * 251; 
-			 break;
-			}
-			case 975:
-			{
-				Q_tentaite2263 = P_pullie2264 * 525 * 55 - 168 / 865; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 4138;
-	if(self.flat1440Hesless1441 - 950 / 854 / 615 - 137 + 87 <= 53270){ 
-double x_septuagensure2265 = 1838;
-
-if(x_septuagensure2265 < 98391){
-	double n_during2266 = x_septuagensure2265 * 220 / 906; 
-if(n_during2266 > 40110){
-	float P_guessaneity2267 = n_during2266 - 639 + 635 - 117 * 517 - 397 - 581;
-}
-}
- }
-	self.aristary1442Agoar1443 = 1979;
-	if(self.aristary1442Agoar1443 + 615 / 855 + 264 / 415 < 5326){}
-	self.culturalaceous1444Broncher1445 = 7759;
-	if(self.culturalaceous1444Broncher1445 - 782 * 538 * 424 * 926 / 979 != 88197){}
-		if(self.phemwise1446Lowfaction1447){}
-int A_valeon2257 = 9503;
-
-float p_moneyster2258 = 400;
-if(A_valeon2257 + 141 / 753 > 27108){
-	p_moneyster2258 = A_valeon2257 * 717 + 577 * 344 * 431 + 102 + 722;
-}
-
-double o_systemaceous2259 = 323;
-if(p_moneyster2258 * 667 + 62 != 55812){
-	o_systemaceous2259 = p_moneyster2258 - 675 + 108 + 312 * 713 - 971;
-}else{
-	o_systemaceous2259 = p_moneyster2258 + 699 - 415;
-}
-
-double r_totiast2260 = 49;
-if(o_systemaceous2259 - 398 / 303 + 466 / 498 + 111 < 75501){
-	r_totiast2260 = o_systemaceous2259 + 154 - 8;
-}
-
-double T_typoably2261 = 993;
-if(r_totiast2260 * 751 + 42 + 53 / 87 - 920 * 774 != 19561){
-	T_typoably2261 = r_totiast2260 + 294 - 530;
-}else{
-	T_typoably2261 = r_totiast2260 - 886 * 717 * 501 - 669 / 551;
-}
-
-int d_babyary2262 = 534;
-if(T_typoably2261 - 584 / 777 / 727 - 582 == 89929){
-	d_babyary2262 = T_typoably2261 + 352 - 621 * 86 + 770 - 95 - 315;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     
 #ifdef SDK_KR
     
-    if([OculenEveninglingView isShowTerm_MMMethodMMM]){
+    if([ThyrScripttureView isShowTerm_MMMethodMMM]){
         
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long D_29 = [self indeedtion1645Anthropdaughter1646:@"emes2280Task2281" fallacy1647Seriesator1648:390 ];
-	if(D_29){}
+	float u_20 = [self rapacship2092Startid2093:nil fideward2094Createous2095:nil ];
+	if(u_20){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-double n_bety2282 = 2517;
+	self.juniorie1426Aevent1427 = 6090;
+	if(self.juniorie1426Aevent1427 * 533 / 432 - 189 * 357 * 920 < 31575){}
+	self.ctenee1428Buyry1429 = 5238;
+	if(self.ctenee1428Buyry1429 + 860 - 782 < 67642){ 
+float e_odonster2732 = 1260;
 
-if(n_bety2282 <= 53910){
-	int z_statad2283 = n_bety2282 - 923 * 657; 
-if(z_statad2283 > 50317){
-	double N_all2284 = z_statad2283 + 552 * 211 + 736 - 522 + 670;
+double z_conferenceical2733 = 155;
+if(e_odonster2732 + 593 + 683 / 183 + 234 + 91 <= 14455){
+	z_conferenceical2733 = e_odonster2732 + 773 * 663 + 92 * 130 / 647;
 }
+
+int o_dark2734 = 3;
+if(z_conferenceical2733 * 189 * 551 + 223 < 10420){
+	o_dark2734 = z_conferenceical2733 - 415 - 695;
 }
+
+int g_fearproof2735 = 184;
+if(o_dark2734 - 397 / 368 * 227 * 921 + 191 + 335 <= 70490){
+	g_fearproof2735 = o_dark2734 + 312 * 347 / 374 / 68;
 }
-	self.mechanoit1436Lamnlamellaneity1437 = 9240;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 554 / 922 / 322 * 37 + 627 + 631 > 85441){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2944;
-	if(self.flat1440Hesless1441 - 667 * 608 - 106 + 287 - 905 == 6876){}
-	self.aristary1442Agoar1443 = 7301;
-	if(self.aristary1442Agoar1443 - 844 + 701 >= 64938){ 
-int q_coupleality2285 = 359;
-float P_philo2286 = 210;
-switch (q_coupleality2285) {
-   case 537:
+
+ }
+		if(self.opacization1430Knowledgeform1431){
+int M_vovesque2736 = 91;
+double s_stenlet2737 = 439;
+switch (M_vovesque2736) {
+   case 159:
 			{
-				q_coupleality2285 = P_philo2286 - 306 * 194 * 506 * 113 - 801 + 42; 
+				M_vovesque2736 = s_stenlet2737 - 719 - 283 * 313; 
 			 break;
 			}
-			case -20:
+			case 952:
 			{
-				q_coupleality2285 = P_philo2286 + 385 / 884 - 89 / 228; 
+				M_vovesque2736 = s_stenlet2737 - 507 - 671 - 410 + 391; 
 			 break;
 			}
-			case 861:
+			case 444:
 			{
-				q_coupleality2285 = P_philo2286 + 215 * 801 - 703 * 587; 
-			 break;
-			}
-			case -87:
-			{
-				q_coupleality2285 = P_philo2286 * 78 / 311 - 131 - 147 + 485; 
+				M_vovesque2736 = s_stenlet2737 - 166 * 996; 
 			 break;
 			}
 			   default:
        break;
 			}
- }
-	self.culturalaceous1444Broncher1445 = 4411;
-	if(self.culturalaceous1444Broncher1445 + 717 - 207 * 875 > 16528){}
-		if(self.phemwise1446Lowfaction1447){}
-float Z_logofy2270 = 8451;
+}
+	self.civilast1432Stratalongular1433 = 1310;
+	if(self.civilast1432Stratalongular1433 + 458 / 150 / 397 - 567 + 279 - 149 <= 81602){}
+		if(self.inad1434Simpleive1435){}
+double c_penn2727 = 6358;
 
-double V_responsibilityivity2271 = 408;
-if(Z_logofy2270 + 61 + 510 / 380 > 90011){
-	V_responsibilityivity2271 = Z_logofy2270 - 940 + 606 * 223 * 693;
+float I_aperatory2728 = 1;
+if(c_penn2727 + 713 / 35 == 31702){
+	I_aperatory2728 = c_penn2727 * 105 * 164 + 436;
 }
 
-int s_itudinreceive2272 = 800;
-if(V_responsibilityivity2271 - 136 * 587 * 731 * 708 - 69 < 35336){
-	s_itudinreceive2272 = V_responsibilityivity2271 - 864 - 406 + 457 - 732 + 81;
+float T_everybody2729 = 890;
+if(I_aperatory2728 - 372 * 795 < 75988){
+	T_everybody2729 = I_aperatory2728 * 516 / 137;
+}
+
+double f_thesecy2730 = 635;
+if(T_everybody2729 - 677 - 127 - 810 == 71461){
+	f_thesecy2730 = T_everybody2729 * 518 * 201 + 618 / 13 * 995 - 57;
 }else{
-	s_itudinreceive2272 = V_responsibilityivity2271 + 808 / 909 - 12 / 929 / 146;
+	f_thesecy2730 = T_everybody2729 - 650 / 474;
 }
 
-double N_phaneraffectative2273 = 827;
-if(s_itudinreceive2272 + 685 / 509 / 263 - 547 / 300 * 591 == 30936){
-	N_phaneraffectative2273 = s_itudinreceive2272 - 297 - 700 + 802;
-}
-
-double q_nearly2274 = 383;
-if(N_phaneraffectative2273 * 655 / 946 > 78044){
-	q_nearly2274 = N_phaneraffectative2273 + 895 - 962 - 254 + 452;
+double n_pallidom2731 = 962;
+if(f_thesecy2730 - 794 - 140 / 624 + 226 - 481 == 76284){
+	n_pallidom2731 = f_thesecy2730 - 137 + 489 / 356 / 799 * 594 / 693;
 }else{
-	q_nearly2274 = N_phaneraffectative2273 * 250 / 910;
-}
-
-double d_sedeceur2275 = 604;
-if(q_nearly2274 * 326 / 478 + 127 > 82333){
-	d_sedeceur2275 = q_nearly2274 * 729 - 144 / 192 - 632;
-}
-
-int i_host2276 = 498;
-if(d_sedeceur2275 + 946 - 971 + 364 != 16330){
-	i_host2276 = d_sedeceur2275 + 691 - 285 + 659;
-}else{
-	i_host2276 = d_sedeceur2275 + 722 * 69 / 644 - 620;
-}
-
-double S_strategyably2277 = 875;
-if(i_host2276 + 809 * 103 * 195 - 300 != 52412){
-	S_strategyably2277 = i_host2276 - 361 - 695;
-}else{
-	S_strategyably2277 = i_host2276 * 887 * 209 - 495 + 202 / 485 - 831;
-}
-
-double m_administrationeous2278 = 347;
-if(S_strategyably2277 - 536 - 427 + 757 - 7 - 276 - 196 >= 38505){
-	m_administrationeous2278 = S_strategyably2277 * 198 * 916 - 453 - 641;
-}
-
-int n_treesome2279 = 266;
-if(m_administrationeous2278 * 460 * 169 / 253 + 133 - 666 == 26903){
-	n_treesome2279 = m_administrationeous2278 - 544 - 182;
+	n_pallidom2731 = f_thesecy2730 - 570 * 483 - 190 * 15 / 346 * 377;
 }
 
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
             
@@ -1366,94 +1565,238 @@ if(m_administrationeous2278 * 460 * 169 / 253 + 133 - 666 == 26903){
     
 }
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (long)moveule1852Siphoior1853:(long)moveule1852_1 petrator1854Religiousling1855:(CGFloat)petrator1854_2 viress1856Middle1857:( NSString *)viress1856_3 visitster1858Hiem1859:(NSObject *)visitster1858_4 pub1860Ponderdreammost1861:(BOOL)pub1860_5 patternacity1862Firmtion1863:(NSObject *)patternacity1862_6 treiskaidekie1864Highproof1865:(BOOL)treiskaidekie1864_7{ //insert method
+	if(moveule1852_1 + 503 * 837 + 103 >= 12988){
+		        
+        int tablesure1866Seatture1867 = -492;  //temple7
+        BOOL concernical1868Plausal1869 = NO;
+        if (tablesure1866Seatture1867 == 2220){
+            
+            concernical1868Plausal1869 = YES;
+        }else{
+            concernical1868Plausal1869 = NO;
+        }
+
+        
+	}
+	if(visitster1858_4){
+		float H_tuss1876 = 8553;
+
+if(H_tuss1876 >= 65676){
+	double H_glabr1877 = H_tuss1876 + 403 + 679; 
+if(H_glabr1877 == 85738){
+	int C_misoaster1878 = H_glabr1877 - 156 - 621 * 305 - 789 * 718 + 82; 
+if(C_misoaster1878 != 60264){
+	float V_evth1879 = C_misoaster1878 * 50 * 672 * 883; 
+if(V_evth1879 <= 15250){
+	double h_cosm1880 = V_evth1879 * 131 + 447 * 449 / 597 + 336;
+}
+}
+}
+}
+	}
+	if(pub1860_5){
+		        if (!(treiskaidekie1864_7)){   //temple4
+
+            int beyondlike1881Loc1882 = -951;
+            int suber1887Machinesion1888 = 5678;
+            int free1889 = 2015;
+            switch (beyondlike1881Loc1882) {
+                    
+                case 16:
+			{
+				suber1887Machinesion1888 = free1889 * 514 + 126; 
+			 break;
+			}
+			case 958:
+			{
+				suber1887Machinesion1888 = free1889 - 26 * 668; 
+			 break;
+			}
+			case 457:
+			{
+				suber1887Machinesion1888 = free1889 * 274 - 341 * 336 / 222 / 78 + 382; 
+			 break;
+			}
+			case 471:
+			{
+				suber1887Machinesion1888 = free1889 - 842 / 465 + 756 - 790 - 281; 
+			 break;
+			}
+			case 235:
+			{
+				suber1887Machinesion1888 = free1889 + 76 / 31 - 214 / 308 * 946; 
+			 break;
+			}
+			case 981:
+			{
+				suber1887Machinesion1888 = free1889 * 637 + 719; 
+			 break;
+			}
+			case 868:
+			{
+				suber1887Machinesion1888 = free1889 * 328 + 381 / 231 + 293; 
+			 break;
+			}
+			case 65:
+			{
+				suber1887Machinesion1888 = free1889 + 210 - 554 / 571; 
+			 break;
+			}
+			case -40:
+			{
+				suber1887Machinesion1888 = free1889 + 901 - 857 / 911; 
+			 break;
+			}
+			case 925:
+			{
+				suber1887Machinesion1888 = free1889 - 997 + 93 / 294 * 776 - 605; 
+			 break;
+			}
+			case 772:
+			{
+				suber1887Machinesion1888 = free1889 * 166 * 609 / 823 / 449 / 926 / 919; 
+			 break;
+			}
+			case 279:
+			{
+				suber1887Machinesion1888 = free1889 - 982 - 533 - 866 - 41 / 492 - 698; 
+			 break;
+			}
+			case 892:
+			{
+				suber1887Machinesion1888 = free1889 - 30 - 165 + 642 * 523 + 577; 
+			 break;
+			}
+			case 642:
+			{
+				suber1887Machinesion1888 = free1889 - 16 * 595 + 93 * 682 * 962; 
+			 break;
+			}
+			case 963:
+			{
+				suber1887Machinesion1888 = free1889 + 940 / 997 * 656; 
+			 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
+
+            float restad1885Rheate1886 = suber1887Machinesion1888 - 2503;
+        }
+
+	}
+	if(patternacity1862_6){
+		        
+        BOOL multshare1891Nearistic1892 = YES;  //commontemple6
+        if (multshare1891Nearistic1892){
+            multshare1891Nearistic1892 = NO;
+        }
+
+        
+	}
+ 
+	return moveule1852_1;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)switchLoginWithHandler:(SDKLoginBlock)cmopleteHandler
 {
     SDK_LOG(@"switchLoginWithHandler");
     [self sdkLoginWithHandler:cmopleteHandler];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	long B_27 = [self firstular1951Arcsuccessproof1952:nil cephaloular1953Hardety1954:@"trachyier2301Okain2302" policior1955Syor1956:9151 vulnerity1957Sendise1958:nil ];
-	if(B_27){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 5359;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 676 * 406 * 257 <= 33654){}
-		if(self.prior1438Vanist1439){
-int i_mightably2303 = 361;
-float e_manialongair2304 = 551;
-switch (i_mightably2303) {
-   case -86:
-			{
-				i_mightably2303 = e_manialongair2304 + 103 * 428 * 721 + 147 + 884 + 605; 
-			 break;
-			}
-			case 69:
-			{
-				i_mightably2303 = e_manialongair2304 + 854 - 159 * 489 + 665 / 847 - 335; 
-			 break;
-			}
-			case 394:
-			{
-				i_mightably2303 = e_manialongair2304 - 52 + 372 * 445 - 97 - 37 - 560; 
-			 break;
-			}
-			case 933:
-			{
-				i_mightably2303 = e_manialongair2304 * 886 / 948 - 262 - 939 * 476 - 757; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 1980;
-	if(self.flat1440Hesless1441 - 155 / 957 == 56711){}
-	self.aristary1442Agoar1443 = 5635;
-	if(self.aristary1442Agoar1443 - 484 - 477 * 341 * 582 - 956 + 806 <= 38827){}
-	self.culturalaceous1444Broncher1445 = 6606;
-	if(self.culturalaceous1444Broncher1445 - 477 + 591 >= 93421){}
-		if(self.phemwise1446Lowfaction1447){
-float K_whitesive2305 = 1838;
-
-if(K_whitesive2305 < 63865){
-	float u_exter2306 = K_whitesive2305 - 893 + 71 - 223 * 912;
-}
-}
-        
-        BOOL includeress2291Variousature2292 = YES;  //commontemple8
-        if (includeress2291Variousature2292){
-            includeress2291Variousature2292 = NO;
-        }else{
-            includeress2291Variousature2292 = !includeress2291Variousature2292;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
 }
 
 #pragma mark - 内部方法
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (BOOL)hedrose1566Matterfication1567:( UNNotificationTrigger *)hedrose1566_1 specific1568Spaceature1569:(UIWindow *)specific1568_2 simpleitor1570Yessive1571:(int)simpleitor1570_3 tricbelieveie1572Turboality1573:(NSURL *)tricbelieveie1572_4{ //insert method
-	if(tricbelieveie1572_4){
-		            float cardirealy1576Jejuno1577 = 4246.0;  //temple22
-            if (@(cardirealy1576Jejuno1577).intValue != 4704) {
-                cardirealy1576Jejuno1577 = cardirealy1576Jejuno1577 - 5144;
-            }
-	}
- 
-	BOOL O_40 = 49527;
-	return O_40;
-}
-//===insert my method end=== 2023-12-13 18:35:09
 - (void)sdkLoginWithHandlerForInner
 {
     SDK_LOG(@"sdkLoginWithHandlerForInner");
-    TableasterCingalongativeController *controller = [[TableasterCingalongativeController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * b_1 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:8360 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(b_1){}
+
+	self.juniorie1426Aevent1427 = 3919;
+	if(self.juniorie1426Aevent1427 - 165 * 446 - 949 * 617 != 15628){}
+	self.ctenee1428Buyry1429 = 7056;
+	if(self.ctenee1428Buyry1429 + 55 + 2 - 371 / 906 - 52 + 920 < 25017){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 5082;
+	if(self.civilast1432Stratalongular1433 + 805 + 15 * 890 * 318 / 165 / 234 <= 25478){}
+		if(self.inad1434Simpleive1435){}
+float U_howeverar2742 = 9393;
+
+int j_absthreeior2743 = 516;
+if(U_howeverar2742 + 433 * 77 >= 83793){
+	j_absthreeior2743 = U_howeverar2742 + 495 - 35 + 584 / 734;
+}else{
+	j_absthreeior2743 = U_howeverar2742 - 208 - 548;
+}
+
+double U_officerite2744 = 427;
+if(j_absthreeior2743 + 831 - 236 - 726 * 791 >= 93140){
+	U_officerite2744 = j_absthreeior2743 - 138 / 859 - 323 * 584 * 69 / 539;
+}else{
+	U_officerite2744 = j_absthreeior2743 - 213 - 882 * 104 + 406 / 535;
+}
+
+double s_governmentlike2745 = 217;
+if(U_officerite2744 + 553 - 229 * 944 - 943 + 949 * 593 >= 72924){
+	s_governmentlike2745 = U_officerite2744 - 839 - 729 * 938 + 491 / 95 * 893;
+}
+
+float P_nauballate2746 = 252;
+if(s_governmentlike2745 * 426 / 104 * 745 != 29067){
+	P_nauballate2746 = s_governmentlike2745 - 478 + 742;
+}else{
+	P_nauballate2746 = s_governmentlike2745 + 537 + 805 + 792 + 890 + 244 - 59;
+}
+
+double Q_scelist2747 = 407;
+if(P_nauballate2746 * 505 / 973 - 198 + 100 - 427 + 100 < 55849){
+	Q_scelist2747 = P_nauballate2746 * 692 - 454 - 184;
+}else{
+	Q_scelist2747 = P_nauballate2746 - 8 * 361 / 30 * 212 / 518;
+}
+
+double v_munerability2748 = 678;
+if(Q_scelist2747 - 21 - 706 / 902 != 96088){
+	v_munerability2748 = Q_scelist2747 * 762 + 506;
+}
+
+int V_agrel2749 = 352;
+if(v_munerability2748 * 738 / 711 - 685 / 371 - 932 == 38926){
+	V_agrel2749 = v_munerability2748 - 612 * 290 - 448 * 93 + 987;
+}else{
+	V_agrel2749 = v_munerability2748 * 827 / 933 - 6 - 662 * 17;
+}
+
+double K_nauto2750 = 981;
+if(V_agrel2749 * 184 + 354 + 864 * 449 - 491 != 6732){
+	K_nauto2750 = V_agrel2749 + 309 - 988 / 17 - 685 + 574 * 23;
+}
+
+double l_mother2751 = 352;
+if(K_nauto2750 - 535 / 107 != 17512){
+	l_mother2751 = K_nauto2750 * 492 * 309 - 208 * 145 + 92;
+}
+
+float O_while2752 = 905;
+if(l_mother2751 + 862 + 355 <= 28017){
+	O_while2752 = l_mother2751 * 131 / 866 - 744 + 196;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    OrthBrachyController *controller = [[OrthBrachyController alloc] initWithPageType_MMMethodMMM:(SDKPage_Login)];
     
 #ifdef __IPHONE_8_0
     if ([[UIDevice currentDevice] systemVersion].intValue < 8) {
@@ -1462,226 +1805,535 @@ if(K_whitesive2305 < 63865){
     else {
         SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];
+    }
+#else
+    SDK_LOG(@"not def __IPHONE_8_0");
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long m_12 = [self firstular1951Arcsuccessproof1952:nil cephaloular1953Hardety1954:@"whitecy2311Candidateance2312" policior1955Syor1956:2187 vulnerity1957Sendise1958:nil ];
-	if(m_12){}
+	[self oviization1505Respondty1506:nil remaire1507Countryery1508:nil menssoldierette1509Erg1510:1200 member1511Listship1512:7397 haliinterviewform1513Musc1514:1919 nationalize1515Eurmost1516:@"environmentosity2758Expertability2759" ];
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 11;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 827 / 543 / 859 - 127 - 459 == 47565){ 
-int B_dogition2313 = 4153;
+	self.juniorie1426Aevent1427 = 8942;
+	if(self.juniorie1426Aevent1427 - 794 - 831 - 392 * 857 != 28778){ 
+int d_withaneity2760 = 6565;
 
-if(B_dogition2313 != 89921){
-	float A_reportfic2314 = B_dogition2313 * 256 + 408 / 295 + 233 + 704 / 669; 
-if(A_reportfic2314 == 9042){
-	int J_fortain2315 = A_reportfic2314 + 505 + 827 * 200; 
-if(J_fortain2315 < 25398){
-	double S_action2316 = J_fortain2315 - 759 + 626 + 452;
+if(d_withaneity2760 > 55934){
+	int d_executively2761 = d_withaneity2760 * 947 / 540 * 946 + 437; 
+if(d_executively2761 == 54111){
+	double h_nuchice2762 = d_executively2761 - 194 * 581 / 280; 
+if(h_nuchice2762 < 47479){
+	float B_oligism2763 = h_nuchice2762 - 46 * 728 * 657 / 755 * 27 / 253; 
+if(B_oligism2763 < 72139){
+	int s_seniorster2764 = B_oligism2763 + 61 / 993 + 627 + 282;
+}
 }
 }
 }
  }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 1221;
-	if(self.flat1440Hesless1441 - 646 - 524 - 794 / 164 + 387 > 92655){}
-	self.aristary1442Agoar1443 = 4845;
-	if(self.aristary1442Agoar1443 + 81 + 38 - 92 > 4191){}
-	self.culturalaceous1444Broncher1445 = 7650;
-	if(self.culturalaceous1444Broncher1445 * 354 / 600 + 419 * 253 <= 81062){ 
-double v_posly2317 = 8664;
+	self.ctenee1428Buyry1429 = 6402;
+	if(self.ctenee1428Buyry1429 + 843 - 534 * 554 != 28544){}
+		if(self.opacization1430Knowledgeform1431){
+int w_branchi2765 = 1591;
 
-if(v_posly2317 == 78076){
-	float d_manage2318 = v_posly2317 - 458 / 911; 
-if(d_manage2318 <= 4887){
-	int n_volatitude2319 = d_manage2318 + 146 + 115 - 764 + 83 / 570;
+if(w_branchi2765 > 89331){
+	int S_cernite2766 = w_branchi2765 * 22 * 857 / 606 * 460 + 915; 
+if(S_cernite2766 > 81457){
+	double B_central2767 = S_cernite2766 + 366 - 293 * 625 + 722 * 607 - 627;
 }
 }
- }
-		if(self.phemwise1446Lowfaction1447){
-float d_plumenne2320 = 1871;
-
-int n_newary2321 = 517;
-if(d_plumenne2320 - 669 - 469 - 418 + 304 + 517 - 413 == 46814){
-	n_newary2321 = d_plumenne2320 * 807 - 507 - 863 * 766 / 108;
 }
+	self.civilast1432Stratalongular1433 = 2668;
+	if(self.civilast1432Stratalongular1433 - 245 + 417 / 308 * 597 / 795 / 641 >= 4026){}
+		if(self.inad1434Simpleive1435){
+float Z_pmence2768 = 6580;
 
-float V_clearlyan2322 = 893;
-if(n_newary2321 * 425 * 317 - 420 + 363 + 656 * 910 > 30337){
-	V_clearlyan2322 = n_newary2321 * 117 + 107 / 561;
-}else{
-	V_clearlyan2322 = n_newary2321 * 897 / 453 + 494;
+if(Z_pmence2768 != 75140){
+	float d_platt2769 = Z_pmence2768 + 618 + 439 / 853; 
+if(d_platt2769 == 14607){
+	float M_oct2770 = d_platt2769 - 97 * 173 - 114;
 }
+}
+}
+int e_whetherist2755 = 5340;
 
-int T_getular2323 = 948;
-if(V_clearlyan2322 * 593 / 325 / 446 * 184 - 505 >= 99231){
-	T_getular2323 = V_clearlyan2322 * 365 * 585 / 844 - 61 + 951 + 483;
+float r_cerebrery2756 = 173;
+if(e_whetherist2755 * 91 * 204 * 353 < 67330){
+	r_cerebrery2756 = e_whetherist2755 * 481 + 250;
 }
 
+float p_animably2757 = 138;
+if(r_cerebrery2756 * 24 + 470 + 893 / 793 != 93375){
+	p_animably2757 = r_cerebrery2756 + 541 / 718;
 }
-int o_agoral2309 = 709;
-double t_mean2310 = 660;
-switch (o_agoral2309) {
-   case -66:
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+#endif
+    
+    [[PubshipPasserdom getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
+        
+    }];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long J_35 = [self cover1436Gonoent1437:2056 ];
+	if(J_35){}
+
+	self.juniorie1426Aevent1427 = 4614;
+	if(self.juniorie1426Aevent1427 - 570 + 637 * 501 < 79365){}
+	self.ctenee1428Buyry1429 = 3078;
+	if(self.ctenee1428Buyry1429 + 713 - 486 * 415 + 367 + 689 - 858 > 55554){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4710;
+	if(self.civilast1432Stratalongular1433 + 833 * 970 / 256 >= 23290){}
+		if(self.inad1434Simpleive1435){}
+int D_soletistic2775 = 790;
+int W_volvfree2776 = 617;
+switch (D_soletistic2775) {
+   case 689:
 			{
-				o_agoral2309 = t_mean2310 + 247 - 531 * 494; 
+				D_soletistic2775 = W_volvfree2776 * 394 / 49; 
 			 break;
 			}
-			case 305:
+			case 593:
 			{
-				o_agoral2309 = t_mean2310 + 701 * 236 + 831; 
+				D_soletistic2775 = W_volvfree2776 * 664 + 653; 
 			 break;
 			}
-			case 212:
+			case 678:
 			{
-				o_agoral2309 = t_mean2310 * 380 * 757; 
+				D_soletistic2775 = W_volvfree2776 - 761 * 397 - 85; 
 			 break;
 			}
-			case 193:
+			case 180:
 			{
-				o_agoral2309 = t_mean2310 - 716 - 556 / 453 + 256 + 407 / 16; 
+				D_soletistic2775 = W_volvfree2776 * 800 * 290 / 159; 
+			 break;
+			}
+			case 608:
+			{
+				D_soletistic2775 = W_volvfree2776 - 508 + 363; 
 			 break;
 			}
 			   default:
        break;
 			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];
-    }
-#else
-    SDK_LOG(@"not def __IPHONE_8_0");
-#endif
-    
-    [[PuteeDamnsive getCurrentViewController_MMMethodMMM] presentViewController: controller animated:NO completion:^{
-        
-    }];
     
 }
 
 
 -(void)showNoticeView
 {
-    EquinnessCommercialView *mNoticeViewV2 = [[EquinnessCommercialView alloc] initWithCompleter_MMMethodMMM:^{
+    SameesqueSeiaryView *mNoticeViewV2 = [[SameesqueSeiaryView alloc] initWithCompleter_MMMethodMMM:^{
         
         [self sdkLoginWithHandlerForInner];
     }];
     
     UIView *superView = appTopViewController.view;
-    UIView *bgV = [[LoseionEmeticieView alloc] init];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSString * E_30 = [self fatherfier1988Script1989:@"platymilitaryern2336Share2337" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(E_30){}
+	int x_23 = [self trade2470Among2471];
+	if(x_23){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6747;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 693 * 815 - 141 - 408 == 41670){ 
-int k_crescie2338 = 9827;
+	self.juniorie1426Aevent1427 = 6081;
+	if(self.juniorie1426Aevent1427 + 307 - 242 < 23393){}
+	self.ctenee1428Buyry1429 = 8503;
+	if(self.ctenee1428Buyry1429 - 543 / 608 + 951 == 62431){ 
+float y_primi2783 = 9358;
 
-if(k_crescie2338 <= 52391){
-	double V_amable2339 = k_crescie2338 - 650 * 760; 
-if(V_amable2339 == 26817){
-	float X_bulbship2340 = V_amable2339 - 296 / 810 + 953 * 760 * 731; 
-if(X_bulbship2340 != 630){
-	double O_longency2341 = X_bulbship2340 - 610 / 567 - 79 - 433;
+if(y_primi2783 != 54327){
+	float K_addward2784 = y_primi2783 - 742 + 787 - 191 / 654 * 161; 
+if(K_addward2784 > 96707){
+	double t_cracyfaction2785 = K_addward2784 + 569 / 291 - 631 * 451 - 163 + 432; 
+if(t_cracyfaction2785 != 81781){
+	float b_scoreics2786 = t_cracyfaction2785 * 457 - 805 * 406 - 567;
 }
 }
 }
  }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5995;
-	if(self.flat1440Hesless1441 - 756 * 317 * 120 / 637 * 694 >= 67837){}
-	self.aristary1442Agoar1443 = 5298;
-	if(self.aristary1442Agoar1443 - 191 * 552 / 971 >= 93261){}
-	self.culturalaceous1444Broncher1445 = 5263;
-	if(self.culturalaceous1444Broncher1445 - 632 / 788 + 924 + 453 > 13585){}
-		if(self.phemwise1446Lowfaction1447){
-double F_navlet2342 = 4654;
-
-double I_serparium2343 = 205;
-if(F_navlet2342 - 994 / 736 - 955 * 879 + 838 - 218 <= 27123){
-	I_serparium2343 = F_navlet2342 - 78 / 161 / 121 * 754;
-}
-
-double C_pejorarian2344 = 512;
-if(I_serparium2343 + 401 + 57 + 436 <= 8612){
-	C_pejorarian2344 = I_serparium2343 * 260 + 410 * 38 - 718 * 96;
-}
-
-float L_miasmaist2345 = 248;
-if(C_pejorarian2344 - 640 - 431 / 30 - 456 - 317 < 5414){
-	L_miasmaist2345 = C_pejorarian2344 * 946 + 649 / 809;
-}else{
-	L_miasmaist2345 = C_pejorarian2344 * 956 - 797 * 980 * 933 + 377 - 639;
-}
-
-float t_seboaneity2346 = 194;
-if(L_miasmaist2345 * 183 * 651 / 85 != 71913){
-	t_seboaneity2346 = L_miasmaist2345 + 49 / 524 * 651 + 263;
-}
-
-double v_archae2347 = 433;
-if(t_seboaneity2346 + 62 * 549 + 259 / 516 * 413 <= 72895){
-	v_archae2347 = t_seboaneity2346 * 295 + 236;
-}
-
-float D_bromature2348 = 998;
-if(v_archae2347 - 534 + 168 + 948 + 451 <= 6914){
-	D_bromature2348 = v_archae2347 * 32 + 112 * 750 + 34 - 189;
-}
-
-}
-
-        int cultureose2328Retroess2329 = 4909;  //commontemple17
-        int idiee2332Fissast2333 = -629;
-        int optiondom2334 = 9301;
-        switch (cultureose2328Retroess2329) {
-                
-            case 365:
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3895;
+	if(self.civilast1432Stratalongular1433 + 765 * 396 * 531 + 171 - 365 >= 36129){}
+		if(self.inad1434Simpleive1435){}
+int h_tradeade2781 = 997;
+float U_periodtic2782 = 421;
+switch (h_tradeade2781) {
+   case 983:
 			{
-				idiee2332Fissast2333 = optiondom2334 * 879 * 874 / 458 * 62 * 75; 
+				h_tradeade2781 = U_periodtic2782 + 409 * 596 - 852 / 868 - 236; 
 			 break;
 			}
-			case 706:
+			case 634:
 			{
-				idiee2332Fissast2333 = optiondom2334 + 140 + 614 - 62; 
+				h_tradeade2781 = U_periodtic2782 + 929 * 336 - 520 + 91 + 703; 
 			 break;
 			}
-			case 141:
+			case 799:
 			{
-				idiee2332Fissast2333 = optiondom2334 - 892 / 150 - 551 * 239 + 677 - 118; 
+				h_tradeade2781 = U_periodtic2782 * 264 / 544 / 860 / 170; 
 			 break;
 			}
-			case 171:
+			case 256:
 			{
-				idiee2332Fissast2333 = optiondom2334 * 943 + 712; 
+				h_tradeade2781 = U_periodtic2782 * 493 + 525 * 539 * 171 / 491; 
 			 break;
 			}
-			
-                
-            default:
-                break;
-        }
-        
-
-        
+			case 529:
+			{
+				h_tradeade2781 = U_periodtic2782 - 952 / 635 / 65 - 181; 
+			 break;
+			}
+			case 996:
+			{
+				h_tradeade2781 = U_periodtic2782 * 422 / 912 * 675 / 178; 
+			 break;
+			}
+			   default:
+       break;
+			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+    UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
+
+		
     [superView addSubview:bgV];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSArray * D_29 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:7485 professor1968Budget1969:nil passition1970Cupard1971:2593 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(D_29){}
+
+	self.juniorie1426Aevent1427 = 4387;
+	if(self.juniorie1426Aevent1427 + 593 - 192 * 857 + 89 - 924 * 618 == 73678){}
+	self.ctenee1428Buyry1429 = 7768;
+	if(self.ctenee1428Buyry1429 - 190 / 870 + 119 / 948 <= 57306){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1867;
+	if(self.civilast1432Stratalongular1433 * 311 * 41 - 883 <= 37863){}
+		if(self.inad1434Simpleive1435){}
+        
+        int enjoyain2789Nationoon2790 = 9991;    //temple12
+        NSString *cernvoice2791Particularsion2792 = @"nationalaneity2793Tetanobaseatic2794";
+        while(cernvoice2791Particularsion2792.length > enjoyain2789Nationoon2790) {
+            break; 
+        } 
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
     }];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	CGFloat G_32 = [self offing1453Macisive1454:nil ];
+	if(G_32){}
+
+	self.juniorie1426Aevent1427 = 3353;
+	if(self.juniorie1426Aevent1427 * 878 * 264 < 71094){ 
+double M_buccmovietic2813 = 5022;
+
+if(M_buccmovietic2813 > 20371){
+	float e_uvulsion2814 = M_buccmovietic2813 - 654 + 483 / 272 + 107; 
+if(e_uvulsion2814 > 97323){
+	float H_supraaneous2815 = e_uvulsion2814 * 212 / 281 * 325 * 442; 
+if(H_supraaneous2815 < 63329){
+	float K_entireible2816 = H_supraaneous2815 - 672 + 639 + 549 - 302 + 816 / 811; 
+if(K_entireible2816 == 30256){
+	double L_love2817 = K_entireible2816 + 818 * 636; 
+if(L_love2817 > 412){
+	int z_treiskaidekitious2818 = L_love2817 * 675 / 335 * 87 + 666 / 301;
+}
+}
+}
+}
+}
+ }
+	self.ctenee1428Buyry1429 = 4286;
+	if(self.ctenee1428Buyry1429 + 534 + 903 + 281 != 85396){ 
+int F_germdoorical2819 = 35;
+int T_gutturorium2820 = 584;
+switch (F_germdoorical2819) {
+   case 566:
+			{
+				F_germdoorical2819 = T_gutturorium2820 + 768 * 497 - 151 + 87 / 803; 
+			 break;
+			}
+			case 719:
+			{
+				F_germdoorical2819 = T_gutturorium2820 + 607 / 439; 
+			 break;
+			}
+			case -26:
+			{
+				F_germdoorical2819 = T_gutturorium2820 - 202 * 930 / 747 * 259 * 645; 
+			 break;
+			}
+			case 262:
+			{
+				F_germdoorical2819 = T_gutturorium2820 - 318 * 602; 
+			 break;
+			}
+			case 115:
+			{
+				F_germdoorical2819 = T_gutturorium2820 * 438 * 249 + 478 - 32; 
+			 break;
+			}
+			case 51:
+			{
+				F_germdoorical2819 = T_gutturorium2820 * 306 + 301; 
+			 break;
+			}
+			case 519:
+			{
+				F_germdoorical2819 = T_gutturorium2820 + 709 + 773 - 687; 
+			 break;
+			}
+			case 9:
+			{
+				F_germdoorical2819 = T_gutturorium2820 - 33 / 654 * 483; 
+			 break;
+			}
+			   default:
+       break;
+			}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7671;
+	if(self.civilast1432Stratalongular1433 * 637 * 450 * 477 + 469 / 729 + 960 >= 78634){ 
+int o_topward2821 = 15;
+
+float C_curacle2822 = 245;
+if(o_topward2821 * 987 - 470 == 77272){
+	C_curacle2822 = o_topward2821 + 722 * 938;
+}
+
+double V_hypno2823 = 501;
+if(C_curacle2822 + 954 / 997 > 84611){
+	V_hypno2823 = C_curacle2822 * 48 / 186 * 23;
+}else{
+	V_hypno2823 = C_curacle2822 * 520 / 710 / 396 + 530 * 308 - 706;
+}
+
+double D_aboutast2824 = 844;
+if(V_hypno2823 - 108 / 799 - 207 > 55023){
+	D_aboutast2824 = V_hypno2823 - 479 / 221 * 842 / 296 / 301;
+}else{
+	D_aboutast2824 = V_hypno2823 + 378 * 138;
+}
+
+double b_certainitious2825 = 90;
+if(D_aboutast2824 - 539 - 520 - 860 > 7308){
+	b_certainitious2825 = D_aboutast2824 - 857 + 517 * 430 + 129 * 694;
+}
+
+double n_sitesome2826 = 712;
+if(b_certainitious2825 * 934 - 560 / 378 <= 59164){
+	n_sitesome2826 = b_certainitious2825 - 398 + 209 / 64;
+}
+
+int a_serveery2827 = 638;
+if(n_sitesome2826 + 52 + 288 * 919 * 745 <= 30010){
+	a_serveery2827 = n_sitesome2826 * 947 / 128;
+}else{
+	a_serveery2827 = n_sitesome2826 - 721 * 709 / 351 - 52 - 838;
+}
+
+double V_hippoous2828 = 357;
+if(a_serveery2827 * 687 - 203 < 6009){
+	V_hippoous2828 = a_serveery2827 + 160 + 251 - 931 + 697;
+}else{
+	V_hippoous2828 = a_serveery2827 + 105 / 939 - 54;
+}
+
+double o_machineette2829 = 376;
+if(V_hippoous2828 - 550 * 948 == 26372){
+	o_machineette2829 = V_hippoous2828 * 719 - 314;
+}else{
+	o_machineette2829 = V_hippoous2828 * 794 * 733 - 736 / 756 + 774 + 659;
+}
+
+float r_trigesimty2830 = 41;
+if(o_machineette2829 + 535 - 661 * 793 + 374 >= 31451){
+	r_trigesimty2830 = o_machineette2829 * 322 - 832 / 538;
+}else{
+	r_trigesimty2830 = o_machineette2829 + 13 + 692 * 895 - 160 * 168;
+}
+
+int s_pharmacclearlyine2831 = 162;
+if(r_trigesimty2830 * 770 - 814 * 502 + 320 + 753 - 292 != 69939){
+	s_pharmacclearlyine2831 = r_trigesimty2830 * 344 - 193 * 984 - 17 * 577;
+}else{
+	s_pharmacclearlyine2831 = r_trigesimty2830 * 749 / 881;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+        
+        int secrance2803Stellniceance2804 = 498;    //temple11
+        int pressureette2805Passesque2806 = 1966;
+        while(pressureette2805Passesque2806 > secrance2803Stellniceance2804) {
+            pressureette2805Passesque2806 += 1;
+            break; 
+        } 
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     
     [bgV addSubview:mNoticeViewV2];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * o_14 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:7290 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(o_14){}
+
+	self.juniorie1426Aevent1427 = 1400;
+	if(self.juniorie1426Aevent1427 + 745 - 170 * 575 * 32 > 7421){ 
+double r_soonate2834 = 4980;
+
+float P_stigdifficultress2835 = 747;
+if(r_soonate2834 - 95 * 213 * 414 == 16405){
+	P_stigdifficultress2835 = r_soonate2834 + 328 * 715 / 80 + 989 - 235;
+}
+
+float N_plicwhateverory2836 = 657;
+if(P_stigdifficultress2835 * 790 - 160 - 320 * 702 - 911 * 986 <= 62981){
+	N_plicwhateverory2836 = P_stigdifficultress2835 - 638 * 956;
+}else{
+	N_plicwhateverory2836 = P_stigdifficultress2835 - 165 * 253 + 324 - 892 + 981;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 9302;
+	if(self.ctenee1428Buyry1429 + 739 - 782 == 24330){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 589;
+	if(self.civilast1432Stratalongular1433 + 11 / 709 * 828 / 614 + 150 > 43583){}
+		if(self.inad1434Simpleive1435){}
+int h_goish2832 = 799;
+double u_tenable2833 = 473;
+switch (h_goish2832) {
+   case 716:
+			{
+				h_goish2832 = u_tenable2833 - 44 * 905 - 420 / 700 - 561 + 639; 
+			 break;
+			}
+			case -14:
+			{
+				h_goish2832 = u_tenable2833 * 337 + 40 / 210 - 131; 
+			 break;
+			}
+			case 913:
+			{
+				h_goish2832 = u_tenable2833 * 631 - 754 + 316 / 137 - 631; 
+			 break;
+			}
+			case 172:
+			{
+				h_goish2832 = u_tenable2833 * 260 / 289 / 8; 
+			 break;
+			}
+			case 525:
+			{
+				h_goish2832 = u_tenable2833 + 350 - 592 * 869; 
+			 break;
+			}
+			case 154:
+			{
+				h_goish2832 = u_tenable2833 - 478 / 888 / 7; 
+			 break;
+			}
+			case 983:
+			{
+				h_goish2832 = u_tenable2833 - 841 - 721 * 100; 
+			 break;
+			}
+			case 910:
+			{
+				h_goish2832 = u_tenable2833 + 692 / 106; 
+			 break;
+			}
+			case 946:
+			{
+				h_goish2832 = u_tenable2833 + 15 * 327 + 840 / 569 / 704; 
+			 break;
+			}
+			case 463:
+			{
+				h_goish2832 = u_tenable2833 - 957 / 241 * 57 - 420 / 96; 
+			 break;
+			}
+			case 48:
+			{
+				h_goish2832 = u_tenable2833 - 122 * 254 / 439 * 377; 
+			 break;
+			}
+			case 127:
+			{
+				h_goish2832 = u_tenable2833 * 45 * 227; 
+			 break;
+			}
+			case 217:
+			{
+				h_goish2832 = u_tenable2833 - 429 + 88; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     
     [mNoticeViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(bgV);
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSArray * W_48 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:9645 professor1968Budget1969:nil passition1970Cupard1971:3514 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(W_48){}
+
+	self.juniorie1426Aevent1427 = 8214;
+	if(self.juniorie1426Aevent1427 - 266 / 654 * 9 * 388 * 937 != 97683){}
+	self.ctenee1428Buyry1429 = 3531;
+	if(self.ctenee1428Buyry1429 * 21 / 54 * 234 - 861 + 156 + 650 < 76506){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 5435;
+	if(self.civilast1432Stratalongular1433 - 980 / 707 - 863 <= 11587){}
+		if(self.inad1434Simpleive1435){}
+        
+        BOOL sisterty2839Sputid2840 = NO;  //commontemple5
+        if (sisterty2839Sputid2840)
+        {
+                    
+        NSArray *soli2847Bitistic2848 = @[@"pugnan2851_sesqui2852", @"ego2853_morningibility2854", @"sendast2855_operationness2856" ];   //temple14
+        if (soli2847Bitistic2848){
+        }
+
+            sisterty2839Sputid2840 = YES;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     }];
     
 }
@@ -1696,10 +2348,37 @@ if(v_archae2347 - 534 + 168 + 948 + 451 <= 6914){
     
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * B_27 = [self dignacious2384Windia2385:@"catharant2891Plurimarium2892" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:3908 member2392Standardify2393:nil weaponible2394Noticeacle2395:5055 price2396Hair2397:3497 epfic2398Bed2399:3205 ];
+	if(B_27){}
+
+	self.juniorie1426Aevent1427 = 1486;
+	if(self.juniorie1426Aevent1427 * 198 - 385 > 28905){ 
+int J_breakature2893 = 6916;
+
+if(J_breakature2893 > 72302){
+	float Y_pitiature2894 = J_breakature2893 - 969 / 770 - 951 / 705;
+}
+ }
+	self.ctenee1428Buyry1429 = 477;
+	if(self.ctenee1428Buyry1429 - 747 - 131 != 50108){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 524;
+	if(self.civilast1432Stratalongular1433 + 644 + 721 + 446 - 274 + 394 <= 1248){}
+		if(self.inad1434Simpleive1435){}
+            NSDictionary *filion2859Lekanfication2860 = @{@"diasome2863" : @"phemiaproof2864", @"flavence2865" : @(53214), @"peptant2867" : @(57328), @"capitade2869" : @"citizenice2870", @"fund2871" : @(60611), @"executivement2873" : @"ficianeity2874", @"dactylio2875" : @"uliginsome2876", @"in1aire2877" : @(64319), @"staff2879" : @(91601), @"born2881" : @(84378), @"especiallyess2883" : @(17416), @"sportor2885" : @"squamwear2886", @"deal2887" : @"measureability2888", @"seniorster2889" : @"nigrization2890" };  //temple19
+            if (filion2859Lekanfication2860.count > 3174){}
+            
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     
     
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:roleId]  ||
-        [PharmacatoryExperience isEmpty_MMMethodMMM:serverCode])
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:roleId]  ||
+        [LoquiistMulsence isEmpty_MMMethodMMM:serverCode])
     {
         SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
         return;
@@ -1726,160 +2405,12 @@ if(v_archae2347 - 534 + 168 + 948 + 451 <= 6914){
             roleId,roleName,roleLevel,roleVipLevel,serverCode,serverName);
     
     
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:roleId]  ||
-        [PharmacatoryExperience isEmpty_MMMethodMMM:serverCode])
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:roleId]  ||
+        [LoquiistMulsence isEmpty_MMMethodMMM:serverCode])
     {
         SDK_LOG(@"角色重要信息为空,请检查参数中 roleId roleName roleLevel serverCode是否有值");
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	long M_38 = [self firstular1951Arcsuccessproof1952:nil cephaloular1953Hardety1954:@"rhachition2353Histrihardary2354" policior1955Syor1956:5187 vulnerity1957Sendise1958:nil ];
-	if(M_38){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6681;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 273 - 468 / 201 + 151 * 929 != 41839){}
-		if(self.prior1438Vanist1439){
-int e_shootacy2355 = 675;
-double p_determineism2356 = 993;
-switch (e_shootacy2355) {
-   case 109:
-			{
-				e_shootacy2355 = p_determineism2356 - 569 * 863 * 937 + 351 + 743 - 28; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 7449;
-	if(self.flat1440Hesless1441 + 531 + 453 / 354 * 768 / 910 == 83773){}
-	self.aristary1442Agoar1443 = 5592;
-	if(self.aristary1442Agoar1443 - 247 - 640 + 581 + 521 < 36602){ 
-float X_commercialative2357 = 7557;
-
-int o_genyling2358 = 304;
-if(X_commercialative2357 - 54 / 906 * 365 - 432 - 340 >= 58730){
-	o_genyling2358 = X_commercialative2357 + 207 * 595 - 611;
-}
-
-int K_quadrsive2359 = 88;
-if(o_genyling2358 - 671 + 595 * 737 / 548 / 781 + 127 != 44057){
-	K_quadrsive2359 = o_genyling2358 + 986 * 820 / 44;
-}
-
-float W_sapiistic2360 = 417;
-if(K_quadrsive2359 - 134 * 603 <= 37387){
-	W_sapiistic2360 = K_quadrsive2359 - 274 * 977;
-}
-
-double j_eyeitive2361 = 919;
-if(W_sapiistic2360 * 72 / 992 > 6300){
-	j_eyeitive2361 = W_sapiistic2360 - 251 + 2 + 149;
-}else{
-	j_eyeitive2361 = W_sapiistic2360 - 133 * 674 + 795 / 212;
-}
-
-float x_drawaneity2362 = 804;
-if(j_eyeitive2361 - 57 - 834 + 622 == 23265){
-	x_drawaneity2362 = j_eyeitive2361 + 612 + 171 / 909;
-}
-
-double K_segbuild2363 = 51;
-if(x_drawaneity2362 * 117 / 683 <= 31131){
-	K_segbuild2363 = x_drawaneity2362 + 761 * 873 / 348;
-}
-
-float m_try2364 = 347;
-if(K_segbuild2363 - 305 + 339 >= 19205){
-	m_try2364 = K_segbuild2363 * 606 / 934 + 858 + 523 / 883 / 160;
-}
-
-float r_hospit2365 = 594;
-if(m_try2364 * 772 + 449 > 15904){
-	r_hospit2365 = m_try2364 - 247 / 55 + 937 / 889;
-}
-
-int j_esoary2366 = 305;
-if(r_hospit2365 - 227 - 680 - 299 - 422 >= 49782){
-	j_esoary2366 = r_hospit2365 - 352 + 93 * 2;
-}else{
-	j_esoary2366 = r_hospit2365 + 902 / 300 * 590;
-}
-
-double n_greenion2367 = 521;
-if(j_esoary2366 - 861 * 129 + 152 * 537 - 839 / 855 <= 52614){
-	n_greenion2367 = j_esoary2366 - 426 / 30;
-}else{
-	n_greenion2367 = j_esoary2366 * 322 - 957 - 11;
-}
-
-float T_unclike2368 = 424;
-if(n_greenion2367 * 705 / 346 * 856 - 199 + 771 != 72368){
-	T_unclike2368 = n_greenion2367 + 554 - 762 / 222 - 429 / 813 / 150;
-}else{
-	T_unclike2368 = n_greenion2367 * 57 + 561 * 75 / 696;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 1241;
-	if(self.culturalaceous1444Broncher1445 + 666 - 917 / 970 <= 75912){}
-		if(self.phemwise1446Lowfaction1447){}
-int E_pantate2351 = 3;
-double Y_opisthworkerty2352 = 55;
-switch (E_pantate2351) {
-   case 518:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 + 28 + 494 + 795 * 524; 
-			 break;
-			}
-			case 529:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 - 841 * 596 * 71 * 856 * 802; 
-			 break;
-			}
-			case 223:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 + 407 - 674 + 73 / 206 + 139 * 313; 
-			 break;
-			}
-			case 74:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 * 240 - 873 * 373 + 374; 
-			 break;
-			}
-			case 52:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 * 503 * 986 * 210 - 759 - 746 - 885; 
-			 break;
-			}
-			case 210:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 - 35 * 907; 
-			 break;
-			}
-			case 538:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 - 573 + 817 * 252; 
-			 break;
-			}
-			case -78:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 * 455 + 427 - 293; 
-			 break;
-			}
-			case 317:
-			{
-				E_pantate2351 = Y_opisthworkerty2352 - 611 - 954 + 110; 
-			 break;
-			}
-			   default:
-       break;
-			}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         return;
     }
     
@@ -1889,1035 +2420,324 @@ switch (E_pantate2351) {
     SDK_DATA.gameUserModel.roleVipLevel = roleVipLevel ? : @"";
     SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long C_28 = [self indeedtion1645Anthropdaughter1646:@"catharapproachship2395Gliaine2396" fallacy1647Seriesator1648:4228 ];
-	if(C_28){}
+	 NSString * A_26 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"lepisship2903Musicitor2904" directionment2219Lamin2220:nil ];
+	if(A_26){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 195;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 195 - 317 / 266 / 570 + 646 == 29318){}
-		if(self.prior1438Vanist1439){
-float T_missprobablyition2397 = 7399;
+	self.juniorie1426Aevent1427 = 9090;
+	if(self.juniorie1426Aevent1427 + 946 * 324 / 383 >= 45462){}
+	self.ctenee1428Buyry1429 = 7035;
+	if(self.ctenee1428Buyry1429 * 216 * 565 + 170 / 996 < 71534){ 
+float q_sentiory2905 = 9364;
 
-double J_generalism2398 = 47;
-if(T_missprobablyition2397 - 120 + 124 * 610 - 28 + 358 != 63272){
-	J_generalism2398 = T_missprobablyition2397 + 779 + 58 + 363;
-}else{
-	J_generalism2398 = T_missprobablyition2397 + 974 - 784 / 503;
+if(q_sentiory2905 >= 84511){
+	float B_dealade2906 = q_sentiory2905 * 983 * 229; 
+if(B_dealade2906 != 44886){
+	double e_lamnlamellette2907 = B_dealade2906 * 509 * 454 * 999 / 54 - 654; 
+if(e_lamnlamellette2907 > 69196){
+	int v_enougharian2908 = e_lamnlamellette2907 + 574 - 718 / 449 - 975; 
+if(v_enougharian2908 == 79977){
+	float E_comsouthit2909 = v_enougharian2908 * 184 - 915 + 974;
 }
+}
+}
+}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9841;
+	if(self.civilast1432Stratalongular1433 * 930 - 790 * 584 + 219 == 56735){ 
+double Q_zonightosity2910 = 3137;
 
+if(Q_zonightosity2910 > 16180){
+	float h_oftenet2911 = Q_zonightosity2910 - 678 * 486 + 156 + 980 + 35; 
+if(h_oftenet2911 >= 90624){
+	float x_arct2912 = h_oftenet2911 - 734 * 764 * 906 * 697 / 332;
 }
-	self.flat1440Hesless1441 = 268;
-	if(self.flat1440Hesless1441 * 621 - 467 * 513 + 838 - 197 > 86626){}
-	self.aristary1442Agoar1443 = 8569;
-	if(self.aristary1442Agoar1443 - 526 * 426 / 35 * 392 + 842 / 887 >= 65617){}
-	self.culturalaceous1444Broncher1445 = 8517;
-	if(self.culturalaceous1444Broncher1445 - 497 - 248 * 375 / 595 != 5313){}
-		if(self.phemwise1446Lowfaction1447){
-float M_cuprecordeur2399 = 1772;
+}
+ }
+		if(self.inad1434Simpleive1435){}
+int r_darkatic2899 = 707;
 
-if(M_cuprecordeur2399 < 35600){
-	int B_labeous2400 = M_cuprecordeur2399 + 344 - 291 * 788; 
-if(B_labeous2400 > 48155){
-	float O_tosten2401 = B_labeous2400 + 487 / 981 / 584 - 242 / 202 * 59; 
-if(O_tosten2401 <= 48367){
-	int A_child2402 = O_tosten2401 + 375 + 388 / 278 - 344 / 161; 
-if(A_child2402 != 43776){
-	float p_torrarian2403 = A_child2402 + 92 + 416 / 953 / 254 + 636 / 282;
+if(r_darkatic2899 > 66722){
+	double b_sclerer2900 = r_darkatic2899 * 921 - 381 * 457 / 558 - 68 + 566; 
+if(b_sclerer2900 != 23680){
+	double k_no2901 = b_sclerer2900 + 390 + 757 - 753; 
+if(k_no2901 == 91350){
+	double m_dekmodelature2902 = k_no2901 - 936 * 878 / 998 - 440 - 286 / 649;
 }
 }
 }
-}
-}
-   
-      // 局部变量声明
-      int ternenne2373Agreementative2374 = 5488;
-      int expertfic2375Withless2376 = 3056;
-      int chair2377Pachoy2378;
-      
-      if(expertfic2375Withless2376 > ternenne2373Agreementative2374){
-         // 调用函数来获取最大值
-         chair2377Pachoy2378 = fmax(expertfic2375Withless2376, ternenne2373Agreementative2374);
-      }else{
-         chair2377Pachoy2378 = fmin(expertfic2375Withless2376, ternenne2373Agreementative2374);
-      }
-     
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+
+		
     SDK_DATA.gameUserModel.serverName = serverName ? : @"";
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long c_2 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:9184 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:180 ];
+	if(c_2){}
+
+	self.juniorie1426Aevent1427 = 6285;
+	if(self.juniorie1426Aevent1427 * 971 / 181 < 61348){}
+	self.ctenee1428Buyry1429 = 2285;
+	if(self.ctenee1428Buyry1429 * 199 / 946 != 20409){}
+		if(self.opacization1430Knowledgeform1431){
+double l_singletion2919 = 9925;
+
+if(l_singletion2919 != 73036){
+	double H_tradeality2920 = l_singletion2919 * 249 * 898 * 689 - 754 + 169 + 913; 
+if(H_tradeality2920 < 5502){
+	int Q_Congress2921 = H_tradeality2920 * 154 - 369 + 839 - 688 + 251;
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 6501;
+	if(self.civilast1432Stratalongular1433 + 485 / 80 - 747 * 792 * 281 >= 60487){ 
+float p_acidee2922 = 6051;
+
+if(p_acidee2922 <= 93906){
+	double I_lucidon2923 = p_acidee2922 + 641 * 19; 
+if(I_lucidon2923 < 21733){
+	double v_oscillatier2924 = I_lucidon2923 + 306 * 545 - 904 / 959 / 921 + 605;
+}
+}
+ }
+		if(self.inad1434Simpleive1435){
+float o_doctruelike2925 = 787;
+
+int Y_carfication2926 = 633;
+if(o_doctruelike2925 + 514 / 534 / 755 * 131 >= 75658){
+	Y_carfication2926 = o_doctruelike2925 * 772 + 401 + 503 * 878;
+}else{
+	Y_carfication2926 = o_doctruelike2925 * 85 + 251 / 152;
+}
+
+}
+          BOOL PMdom2915Meetingile2916 = NO;    ////temple31
+          if (PMdom2915Meetingile2916) { __asm__("NOP"); }
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     
 }
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (void)patternorium1584Imfewion1585:(long)patternorium1584_1 give1586Scribid1587:(UIWindow *)give1586_2 smalline1588Pancreaticotheirety1589:(NSArray *)smalline1588_3 aboutular1590Dekid1591:(NSURL *)aboutular1590_4 lotose1592Iridot1593:(NSArray *)lotose1592_5{ //insert method
-	if(patternorium1584_1 + 339 * 330 + 765 < 13467){
-		            NSDictionary *trusular1594Postulwallory1595 = @{@"third1598" : @"runeer1599", @"creditude1600" : @(77959), @"cosmcitizenacle1602" : @(2244), @"religiousally1604" : @(55826), @"doctorish1606" : @"canit1607", @"rurast1608" : @"treiskaidek1609" };  //temple19
-            if (trusular1594Postulwallory1595.count > 1855){}
-            
-	}
-	if(give1586_2){
-		double u_rus1610 = 7427;
-
-if(u_rus1610 > 37700){
-	float i_drivewise1611 = u_rus1610 * 353 - 143 - 475; 
-if(i_drivewise1611 > 39243){
-	double V_studard1612 = i_drivewise1611 * 566 + 223 * 377 + 420 + 1 / 334;
-}
-}
-	}
-	if(aboutular1590_4){
-		int S_hum1613 = 351;
-
-if(S_hum1613 > 83858){
-	float x_viewably1614 = S_hum1613 * 562 / 326; 
-if(x_viewably1614 > 31058){
-	int m_education1615 = x_viewably1614 + 397 / 816 * 685; 
-if(m_education1615 < 24663){
-	int c_controlatic1616 = m_education1615 + 827 / 472 / 544 / 238 * 944 * 753;
-}
-}
-}
-	}
-	if(lotose1592_5){
-		        
-        int vagatic1617Handmost1618 = 7295;    //temple17
-        int geoior1619Personalie1620 = 5391;
-        int acrossor1621Tellurics1622 = 1130;
-        int feelose1623Hiement1624 = 1253;
-        int improve1625Lateric1626 = 8495;
-        int punmaterialuous1627Cordcomputer1628 = 277;
-
-        if (vagatic1617Handmost1618 >= 3493){
-
-            geoior1619Personalie1620 -= 1;
-            acrossor1621Tellurics1622 += geoior1619Personalie1620;
-            improve1625Lateric1626 -= vagatic1617Handmost1618;
-            feelose1623Hiement1624 += 1;
-            punmaterialuous1627Cordcomputer1628 += 10;
-        }
-
-	}
- }
-//===insert my method end=== 2023-12-13 18:35:09
-- (void)startIapPay_MMMethodMMM:(AccountModel *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
-    [[TableJuricurrentian shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
+- (void)startIapPay_MMMethodMMM:(NihilativeFederalless *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
+    [[FatherNeurad shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
         
         self.isPaying = NO;
         
         if (self.payHandler) {
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self hetertic1713Cunefederal1714:nil vinccarrylike1715Factorance1716:7350 leasttion1717Darksion1718:nil fide1719Platt1720:8447 sophyrestage1721Mechanresponseible1722:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 5956;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 7 + 55 + 548 / 667 - 777 - 12 <= 92249){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7699;
-	if(self.flat1440Hesless1441 * 705 * 893 + 784 <= 73690){ 
-int W_urbeous2448 = 187;
-float r_better2449 = 244;
-switch (W_urbeous2448) {
-   case 162:
-			{
-				W_urbeous2448 = r_better2449 + 563 / 895 + 977 + 533 * 997 + 687; 
-			 break;
-			}
-			case 866:
-			{
-				W_urbeous2448 = r_better2449 * 921 - 50 / 224 * 797 + 593 * 67; 
-			 break;
-			}
-			case 770:
-			{
-				W_urbeous2448 = r_better2449 - 552 - 43 / 710 - 451 / 35 * 384; 
-			 break;
-			}
-			case 174:
-			{
-				W_urbeous2448 = r_better2449 * 693 / 646; 
-			 break;
-			}
-			case 403:
-			{
-				W_urbeous2448 = r_better2449 + 791 * 576 * 360 + 956; 
-			 break;
-			}
-			case 809:
-			{
-				W_urbeous2448 = r_better2449 - 52 * 899 * 434 / 357 * 252 - 294; 
-			 break;
-			}
-			case 967:
-			{
-				W_urbeous2448 = r_better2449 + 645 / 70 + 721 / 24; 
-			 break;
-			}
-			case 843:
-			{
-				W_urbeous2448 = r_better2449 + 323 / 280 * 489 / 901; 
-			 break;
-			}
-			case 599:
-			{
-				W_urbeous2448 = r_better2449 * 597 * 199 + 726; 
-			 break;
-			}
-			case -13:
-			{
-				W_urbeous2448 = r_better2449 - 76 - 939 * 252 / 800; 
-			 break;
-			}
-			case 292:
-			{
-				W_urbeous2448 = r_better2449 + 662 / 374 * 999; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.aristary1442Agoar1443 = 2743;
-	if(self.aristary1442Agoar1443 + 398 / 622 - 521 / 200 - 811 * 537 <= 70617){}
-	self.culturalaceous1444Broncher1445 = 3015;
-	if(self.culturalaceous1444Broncher1445 - 323 / 90 == 20193){ 
-double t_udintudearian2450 = 7090;
-
-int W_oss2451 = 45;
-if(t_udintudearian2450 - 449 - 264 + 998 + 384 / 229 <= 37651){
-	W_oss2451 = t_udintudearian2450 * 460 + 444 * 114;
-}
-
-float J_strategyet2452 = 15;
-if(W_oss2451 * 538 - 407 + 896 * 557 > 43072){
-	J_strategyet2452 = W_oss2451 - 579 - 867 - 567;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){}
-
-        BOOL gramic2406Despiteial2407 = NO;  //commontemple15
-        int significantor2408Protoly2409 = 7530;
-        if (gramic2406Despiteial2407){
-
-            int osteo2418Ornithoitious2419 = 3810;
-            int administrationry2420 = 9686;
-            switch (significantor2408Protoly2409) {
-                    
-                case 923:
-			{
-				osteo2418Ornithoitious2419 = administrationry2420 + 518 - 142 / 444 + 129 - 639 / 269; 
-			 break;
-			}
-			case 8:
-			{
-				osteo2418Ornithoitious2419 = administrationry2420 * 896 - 36; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-        }else{
-            gramic2406Despiteial2407 = !gramic2406Despiteial2407;
-                    
-        NSInteger phenofier2426Greater2427 = 1764;  //commontemple12
-        BOOL ced2428Cyclify2429 = NO;
-
-        for(int opportunity2430Tot2431 = 9163; opportunity2430Tot2431 < 1587; opportunity2430Tot2431 = opportunity2430Tot2431 + 1)
-        {    
-            if (ced2428Cyclify2429){
-                break;
-            }
-            phenofier2426Greater2427 = phenofier2426Greater2427 - 1587;
-        }
-        if (phenofier2426Greater2427)
-        {
-            ced2428Cyclify2429 = YES;
-            
-        }
-
-        
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
             if (success) {
                 
-                BOOL havePay = [PositiveantContraableie _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
+                BOOL havePay = [TacizationLoquexistible _userdefaultGetBoolForKey:SDK_DATA.mLoginResponse.data.userId];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL V_47 = [self hardly1536Archaeoally1537:nil ];
-	if(V_47){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int b_maj2461 = 7607;
-
-double S_like2462 = 510;
-if(b_maj2461 + 92 / 923 * 876 != 10957){
-	S_like2462 = b_maj2461 - 229 / 367 / 485 + 326 + 898;
-}
-
-float G_pentics2463 = 186;
-if(S_like2462 * 830 - 954 + 307 / 900 - 323 < 70534){
-	G_pentics2463 = S_like2462 + 776 - 50 - 196;
-}
-
-double u_legis2464 = 910;
-if(G_pentics2463 + 241 * 689 / 123 >= 93603){
-	u_legis2464 = G_pentics2463 - 270 + 585;
-}else{
-	u_legis2464 = G_pentics2463 - 117 / 958 - 770;
-}
-
-double t_dog2465 = 828;
-if(u_legis2464 - 770 / 445 + 669 + 909 * 529 / 82 > 94141){
-	t_dog2465 = u_legis2464 + 305 - 343 + 919 / 563 * 32 / 538;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 9710;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 197 + 639 < 11885){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 1364;
-	if(self.flat1440Hesless1441 - 287 - 971 * 611 + 391 - 283 * 387 > 49671){ 
-int h_jejunit2466 = 868;
-float u_mnes2467 = 574;
-switch (h_jejunit2466) {
-   case 124:
-			{
-				h_jejunit2466 = u_mnes2467 * 585 / 34 * 558; 
-			 break;
-			}
-			case 784:
-			{
-				h_jejunit2466 = u_mnes2467 * 719 - 649 + 828; 
-			 break;
-			}
-			case 667:
-			{
-				h_jejunit2466 = u_mnes2467 * 625 / 840 - 968; 
-			 break;
-			}
-			case 893:
-			{
-				h_jejunit2466 = u_mnes2467 * 643 + 962 + 595; 
-			 break;
-			}
-			case 334:
-			{
-				h_jejunit2466 = u_mnes2467 * 267 * 548 / 659; 
-			 break;
-			}
-			case -42:
-			{
-				h_jejunit2466 = u_mnes2467 + 58 + 383; 
-			 break;
-			}
-			case 209:
-			{
-				h_jejunit2466 = u_mnes2467 * 624 / 858 * 598; 
-			 break;
-			}
-			case 314:
-			{
-				h_jejunit2466 = u_mnes2467 * 456 - 79 + 493 / 472 / 899; 
-			 break;
-			}
-			case 990:
-			{
-				h_jejunit2466 = u_mnes2467 + 743 * 941 + 846 - 905 + 757; 
-			 break;
-			}
-			case 598:
-			{
-				h_jejunit2466 = u_mnes2467 - 924 / 449 - 191 / 237; 
-			 break;
-			}
-			case 367:
-			{
-				h_jejunit2466 = u_mnes2467 + 117 - 87 - 542; 
-			 break;
-			}
-			case 770:
-			{
-				h_jejunit2466 = u_mnes2467 + 653 / 282 - 5 + 577; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.aristary1442Agoar1443 = 6122;
-	if(self.aristary1442Agoar1443 * 846 - 222 - 618 - 773 + 477 / 346 >= 53241){ 
-int P_fanety2468 = 200;
-double Z_movitude2469 = 158;
-switch (P_fanety2468) {
-   case 284:
-			{
-				P_fanety2468 = Z_movitude2469 * 586 * 292 + 742 * 775 - 580 * 319; 
-			 break;
-			}
-			case 942:
-			{
-				P_fanety2468 = Z_movitude2469 - 177 / 336 / 757 / 335; 
-			 break;
-			}
-			case -2:
-			{
-				P_fanety2468 = Z_movitude2469 - 38 + 759 * 189 / 53 + 940 / 93; 
-			 break;
-			}
-			case 68:
-			{
-				P_fanety2468 = Z_movitude2469 + 406 + 20 * 942 / 249 - 824 - 206; 
-			 break;
-			}
-			case 491:
-			{
-				P_fanety2468 = Z_movitude2469 + 106 * 711; 
-			 break;
-			}
-			case 899:
-			{
-				P_fanety2468 = Z_movitude2469 * 95 + 197 + 354 + 627 * 411; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 4644;
-	if(self.culturalaceous1444Broncher1445 * 867 * 936 - 583 >= 95171){}
-		if(self.phemwise1446Lowfaction1447){
-float F_larger2470 = 8690;
-
-double e_herselfence2471 = 994;
-if(F_larger2470 - 108 / 82 * 620 >= 21950){
-	e_herselfence2471 = F_larger2470 - 889 - 192 * 862;
-}else{
-	e_herselfence2471 = F_larger2470 - 427 * 965 * 532 * 139;
-}
-
-float p_aloneuous2472 = 780;
-if(e_herselfence2471 * 760 / 511 * 898 - 304 >= 22367){
-	p_aloneuous2472 = e_herselfence2471 - 680 / 783 * 327;
-}
-
-double z_limacsportic2473 = 841;
-if(p_aloneuous2472 * 870 - 70 < 24311){
-	z_limacsportic2473 = p_aloneuous2472 - 391 / 113 / 8 * 343 / 746 / 374;
-}else{
-	z_limacsportic2473 = p_aloneuous2472 - 87 - 876 - 93;
-}
-
-double Q_paternaire2474 = 81;
-if(z_limacsportic2473 * 989 + 245 / 656 - 354 * 5 == 87222){
-	Q_paternaire2474 = z_limacsportic2473 + 129 - 875 + 170 / 705;
-}else{
-	Q_paternaire2474 = z_limacsportic2473 + 664 + 545 * 945 - 797;
-}
-
-double Y_wonderit2475 = 599;
-if(Q_paternaire2474 * 931 + 676 * 906 >= 71868){
-	Y_wonderit2475 = Q_paternaire2474 + 411 + 266;
-}else{
-	Y_wonderit2475 = Q_paternaire2474 - 527 * 729 * 656 / 389;
-}
-
-float U_cyanity2476 = 981;
-if(Y_wonderit2475 * 945 / 971 * 805 / 498 + 353 + 161 > 61128){
-	U_cyanity2476 = Y_wonderit2475 - 756 / 138;
-}
-
-float X_lepidwork2477 = 868;
-if(U_cyanity2476 * 129 / 530 == 30844){
-	X_lepidwork2477 = U_cyanity2476 - 412 / 906 - 496 + 45 * 742 / 205;
-}else{
-	X_lepidwork2477 = U_cyanity2476 + 253 / 299 + 641;
-}
-
-double m_every2478 = 704;
-if(X_lepidwork2477 + 770 * 363 * 583 * 703 / 130 - 686 == 10955){
-	m_every2478 = X_lepidwork2477 * 678 + 698 + 421 - 589 - 289 / 685;
-}else{
-	m_every2478 = X_lepidwork2477 - 162 + 289 + 376 + 233;
-}
-
-int X_juriness2479 = 88;
-if(m_every2478 + 335 * 949 / 573 * 571 + 32 - 258 >= 37926){
-	X_juriness2479 = m_every2478 * 794 - 104 + 259 + 412 / 928;
-}else{
-	X_juriness2479 = m_every2478 + 635 + 246;
-}
-
-}
-double i_sarcature2455 = 2362;
-
-if(i_sarcature2455 != 55040){
-	float z_buyably2456 = i_sarcature2455 + 399 * 569; 
-if(z_buyably2456 <= 26999){
-	float S_scept2457 = z_buyably2456 + 917 + 946 * 265 * 1; 
-if(S_scept2457 == 65747){
-	int J_holosity2458 = S_scept2457 + 402 / 392 + 299; 
-if(J_holosity2458 >= 81636){
-	float I_surfacely2459 = J_holosity2458 * 193 * 470; 
-if(I_surfacely2459 == 42695){
-	double P_mentionence2460 = I_surfacely2459 - 369 * 989 / 994 / 403 * 652;
-}
-}
-}
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                 if (!havePay) {
                     
                 }
-                [PositiveantContraableie _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
+                [TacizationLoquexistible _userdefaultSetBool:YES forKey:SDK_DATA.mLoginResponse.data.userId];
                 
-                [AuthorproofSorb logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
+                [LoqucyAmericanar logEventPurchaseValues_MMMethodMMM:payData type_MMMethodMMM:(AdType_All)];
                 self.payHandler(SDK_PAY_STATUS_SUCCESS, payData);
                 
                 
             }else{
                 self.payHandler(SDK_PAY_STATUS_FAIL, nil);
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL N_39 = [self hedrose1566Matterfication1567:nil specific1568Spaceature1569:nil simpleitor1570Yessive1571:7539 tricbelieveie1572Turboality1573:nil ];
-	if(N_39){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int M_argent2490 = 564;
-double z_piousballty2491 = 560;
-switch (M_argent2490) {
-   case 672:
-			{
-				M_argent2490 = z_piousballty2491 - 50 + 129; 
-			 break;
-			}
-			case 164:
-			{
-				M_argent2490 = z_piousballty2491 + 948 - 575 * 777 * 973 * 603 + 14; 
-			 break;
-			}
-			case 122:
-			{
-				M_argent2490 = z_piousballty2491 + 563 / 215 + 657 - 518; 
-			 break;
-			}
-			case 678:
-			{
-				M_argent2490 = z_piousballty2491 + 460 + 23 + 723 - 499 + 104 / 142; 
-			 break;
-			}
-			case -38:
-			{
-				M_argent2490 = z_piousballty2491 - 269 / 866 / 842 / 703 - 571 + 493; 
-			 break;
-			}
-			case 649:
-			{
-				M_argent2490 = z_piousballty2491 * 365 / 54 - 223 - 260; 
-			 break;
-			}
-			case 661:
-			{
-				M_argent2490 = z_piousballty2491 + 763 + 219; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 2636;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 901 - 505 == 19892){}
-		if(self.prior1438Vanist1439){
-int c_colorproof2492 = 995;
-int W_teamaceous2493 = 252;
-switch (c_colorproof2492) {
-   case 800:
-			{
-				c_colorproof2492 = W_teamaceous2493 - 118 - 423 + 260 * 290 + 176 / 938; 
-			 break;
-			}
-			case 325:
-			{
-				c_colorproof2492 = W_teamaceous2493 + 861 + 969 * 837 * 782 - 936 + 329; 
-			 break;
-			}
-			case 656:
-			{
-				c_colorproof2492 = W_teamaceous2493 * 979 / 954 * 227 * 282; 
-			 break;
-			}
-			case 397:
-			{
-				c_colorproof2492 = W_teamaceous2493 + 484 / 552 * 19 * 205 / 920; 
-			 break;
-			}
-			case 56:
-			{
-				c_colorproof2492 = W_teamaceous2493 * 518 / 600 * 361 * 295 - 38 + 905; 
-			 break;
-			}
-			case 230:
-			{
-				c_colorproof2492 = W_teamaceous2493 - 174 - 907 + 530; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 7765;
-	if(self.flat1440Hesless1441 - 831 * 356 * 672 - 747 * 49 * 491 != 40318){}
-	self.aristary1442Agoar1443 = 7829;
-	if(self.aristary1442Agoar1443 - 587 - 29 + 229 * 859 * 664 != 50435){}
-	self.culturalaceous1444Broncher1445 = 579;
-	if(self.culturalaceous1444Broncher1445 * 220 * 187 + 758 - 572 / 590 / 214 != 16221){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        int lepidorium2480Troglowise2481 = 2728;  //temple7
-        BOOL hepat2482Reportit2483 = NO;
-        if (lepidorium2480Troglowise2481 > 8892){
-            
-            hepat2482Reportit2483 = YES;
-        }else{
-            hepat2482Reportit2483 = NO;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
             }
         }
         
     }];
 }
 
-- (void)startMySdkPay_MMMethodMMM:(AccountModel *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId
+- (void)startMySdkPay_MMMethodMMM:(NihilativeFederalless *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId
 {
     SDK_LOG(@"startMySdkPay...");
     
     NSString * myPayUrl = GetConfigString(@"sdk_other_ppp_url");
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:6281 rach2006Gladiion2007:733 homoiprobablyarian2008Pactaire2009:5236 howeverator2010Opto2011:1212 ];
+	[self goalan2239Pun2240:nil claring2241Clinment2242:nil lastial2243Thyrry2244:nil thalam2245Coite2246:3625 foreant2247Abory2248:nil saliatory2249Semicolorization2250:nil vania2251Sociability2252:@"chrys2933Conditionade2934" arthrose2253Coveret2254:@"phasiaior2935Headial2936" ];
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9014;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 892 / 156 + 278 * 657 < 57257){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6449;
-	if(self.flat1440Hesless1441 * 765 - 286 - 869 <= 48833){}
-	self.aristary1442Agoar1443 = 7395;
-	if(self.aristary1442Agoar1443 * 916 * 391 >= 6964){ 
-double P_lyststatement2556 = 9462;
-
-double b_cleithro2557 = 674;
-if(P_lyststatement2556 + 596 / 510 + 463 != 61215){
-	b_cleithro2557 = P_lyststatement2556 + 260 / 791;
-}else{
-	b_cleithro2557 = P_lyststatement2556 * 495 / 266 - 789 * 820;
-}
-
-double J_planaster2558 = 118;
-if(b_cleithro2557 + 840 / 182 - 280 * 853 == 15324){
-	J_planaster2558 = b_cleithro2557 + 860 + 693 - 520 * 389;
-}else{
-	J_planaster2558 = b_cleithro2557 * 291 - 171 / 191;
-}
-
-int Z_pessimnumberproof2559 = 434;
-if(J_planaster2558 - 155 * 693 + 960 == 85406){
-	Z_pessimnumberproof2559 = J_planaster2558 * 618 - 811;
-}else{
-	Z_pessimnumberproof2559 = J_planaster2558 + 730 - 157 + 220 * 944 + 868;
-}
-
-double U_pyl2560 = 139;
-if(Z_pessimnumberproof2559 - 362 / 983 * 15 - 459 < 92351){
-	U_pyl2560 = Z_pessimnumberproof2559 - 107 / 594;
-}else{
-	U_pyl2560 = Z_pessimnumberproof2559 + 826 + 736;
-}
-
-double n_palliform2561 = 414;
-if(U_pyl2560 - 973 / 767 > 59885){
-	n_palliform2561 = U_pyl2560 + 795 + 234 - 313 / 98;
-}else{
-	n_palliform2561 = U_pyl2560 + 863 / 908 / 276;
-}
-
-int j_salarium2562 = 27;
-if(n_palliform2561 - 705 - 998 + 460 - 254 >= 7229){
-	j_salarium2562 = n_palliform2561 + 484 - 714 - 210 + 258 * 960 * 890;
-}
-
-float B_phylacitious2563 = 815;
-if(j_salarium2562 * 464 + 679 - 511 != 81200){
-	B_phylacitious2563 = j_salarium2562 - 35 / 176 - 403 + 666 / 11 * 459;
-}
-
-double U_betteree2564 = 60;
-if(B_phylacitious2563 + 505 / 467 - 887 < 39929){
-	U_betteree2564 = B_phylacitious2563 * 732 / 682 - 997 - 611;
-}else{
-	U_betteree2564 = B_phylacitious2563 + 911 + 482 - 140 * 610;
-}
-
-int S_musparticularture2565 = 205;
-if(U_betteree2564 + 134 + 56 + 748 / 164 > 85696){
-	S_musparticularture2565 = U_betteree2564 - 765 / 926 + 937;
-}
-
-int A_menosay2566 = 591;
-if(S_musparticularture2565 * 75 + 845 - 854 + 468 - 793 < 50715){
-	A_menosay2566 = S_musparticularture2565 - 857 + 557 * 804;
-}
-
-double L_walkproof2567 = 308;
-if(A_menosay2566 * 572 - 3 - 863 - 154 * 388 >= 62647){
-	L_walkproof2567 = A_menosay2566 * 893 / 344 / 210 * 485;
-}
-
-int y_rate2568 = 914;
-if(L_walkproof2567 + 889 / 281 <= 89207){
-	y_rate2568 = L_walkproof2567 + 466 + 962 + 277 / 509 - 781 * 833;
-}else{
-	y_rate2568 = L_walkproof2567 - 669 - 869 * 195 * 290 / 866 - 669;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 4908;
-	if(self.culturalaceous1444Broncher1445 + 226 / 69 * 903 + 755 - 926 >= 47619){}
-		if(self.phemwise1446Lowfaction1447){
-float d_tentism2569 = 6625;
-
-if(d_tentism2569 >= 94930){
-	int I_thereate2570 = d_tentism2569 + 167 - 820; 
-if(I_thereate2570 == 58900){
-	int g_tergirealizeage2571 = I_thereate2570 - 564 - 39;
-}
-}
-}
-    NSArray *spersot2494Readyitude2495 = @[@"halolet2530_between2531", @"capitfier2532_central2533", @"everyo2534_everyoneuous2535", @"minimstaffize2536_optimpresentmost2537", @"onlyitive2538_they2539", @"orchacy2540_debateie2541", @"pinncityfic2542_paginive2543", @"ann2544_sorptot2545", @"memory2546_tetro2547", @"unc2548_enjoy2549", @"microsive2550_enjoy2551", @"usative2552_sceneel2553", @"fearsure2554_kidit2555" ]; //temple28
-
-          int thousandast2496Rightship2497 = spersot2494Readyitude2495.count;
-         int structice2500Schisbad2501 = (int)thousandast2496Rightship2497;
-         int parline2504Lig2505 = 1238;
-         int gardenel2506North2507 = 3287;
-         if (structice2500Schisbad2501 < gardenel2506North2507) {
-             structice2500Schisbad2501 = gardenel2506North2507;
-         }
-         while (parline2504Lig2505 <= structice2500Schisbad2501) {
-            parline2504Lig2505 += 1;
-            structice2500Schisbad2501 /= parline2504Lig2505;
-            structice2500Schisbad2501 += 7854;
-            break;
-         }
-          [spersot2494Readyitude2495 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-              if (idx <= 2320) {
-                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
-            }
-          }];
+	self.juniorie1426Aevent1427 = 4522;
+	if(self.juniorie1426Aevent1427 * 91 - 706 <= 5280){}
+	self.ctenee1428Buyry1429 = 7939;
+	if(self.ctenee1428Buyry1429 * 568 + 658 / 890 / 277 <= 93424){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1241;
+	if(self.civilast1432Stratalongular1433 + 68 - 730 + 219 + 620 <= 90445){}
+		if(self.inad1434Simpleive1435){}
+int K_representenne2931 = 182;
+int z_sorcaceous2932 = 231;
+switch (K_representenne2931) {
+   case 483:
+			{
+				K_representenne2931 = z_sorcaceous2932 * 774 + 381 - 844 * 288; 
+			 break;
+			}
+			case 96:
+			{
+				K_representenne2931 = z_sorcaceous2932 - 139 + 789; 
+			 break;
+			}
+			case 100:
+			{
+				K_representenne2931 = z_sorcaceous2932 * 643 * 609 + 891 * 632 - 55; 
+			 break;
+			}
+			case 537:
+			{
+				K_representenne2931 = z_sorcaceous2932 + 171 * 13 + 231 + 709 + 805 / 82; 
+			 break;
+			}
+			   default:
+       break;
+			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long d_3 = [self indeedtion1645Anthropdaughter1646:@"sinar2575Speecher2576" fallacy1647Seriesator1648:2849 ];
-	if(d_3){}
+	int l_11 = [self trade2470Among2471];
+	if(l_11){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-int B_pastaster2577 = 2295;
-
-double U_bety2578 = 563;
-if(B_pastaster2577 - 124 / 917 <= 69679){
-	U_bety2578 = B_pastaster2577 + 876 - 468 / 932;
-}else{
-	U_bety2578 = B_pastaster2577 * 974 + 825;
-}
-
-float a_orexiery2579 = 324;
-if(U_bety2578 + 585 / 691 * 302 * 974 <= 30711){
-	a_orexiery2579 = U_bety2578 + 767 * 342 + 602 / 444 / 641 + 74;
-}else{
-	a_orexiery2579 = U_bety2578 + 904 - 412;
-}
-
-float K_senminuteward2580 = 115;
-if(a_orexiery2579 - 816 + 688 - 366 / 454 >= 79590){
-	K_senminuteward2580 = a_orexiery2579 * 609 * 367 + 670;
-}
-
-float b_septuagenmost2581 = 363;
-if(K_senminuteward2580 - 411 * 365 == 38669){
-	b_septuagenmost2581 = K_senminuteward2580 * 612 - 79 - 310 - 498 * 992;
-}
-
-double p_solettradeify2582 = 486;
-if(b_septuagenmost2581 * 965 + 283 - 709 - 521 / 846 + 546 >= 29450){
-	p_solettradeify2582 = b_septuagenmost2581 * 713 / 333 / 749 + 156 - 920;
-}
-
-int w_nullature2583 = 908;
-if(p_solettradeify2582 * 602 + 519 / 655 + 778 + 634 <= 54081){
-	w_nullature2583 = p_solettradeify2582 + 997 + 767 + 95 + 959 / 563 - 673;
-}else{
-	w_nullature2583 = p_solettradeify2582 - 398 + 980 - 116;
-}
-
-float c_finalform2584 = 886;
-if(w_nullature2583 + 448 / 394 - 778 - 32 * 619 / 265 >= 7123){
-	c_finalform2584 = w_nullature2583 + 116 * 359;
-}else{
-	c_finalform2584 = w_nullature2583 * 637 * 314;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 4607;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 49 + 259 > 34994){ 
-int M_priorwhatevercy2585 = 87;
-float f_pect2586 = 268;
-switch (M_priorwhatevercy2585) {
-   case 448:
+	self.juniorie1426Aevent1427 = 7045;
+	if(self.juniorie1426Aevent1427 - 763 * 168 != 12957){}
+	self.ctenee1428Buyry1429 = 978;
+	if(self.ctenee1428Buyry1429 * 522 - 13 - 407 != 42432){ 
+int X_vergorium2971 = 622;
+float E_neverose2972 = 1;
+switch (X_vergorium2971) {
+   case 162:
 			{
-				M_priorwhatevercy2585 = f_pect2586 + 963 + 251; 
+				X_vergorium2971 = E_neverose2972 + 378 + 588 + 545; 
 			 break;
 			}
-			case 56:
+			case -66:
 			{
-				M_priorwhatevercy2585 = f_pect2586 - 477 * 522 + 281 * 940 * 963 * 797; 
+				X_vergorium2971 = E_neverose2972 - 863 / 245 / 779 - 877; 
 			 break;
 			}
-			case 295:
+			case 402:
 			{
-				M_priorwhatevercy2585 = f_pect2586 + 641 + 290 + 216; 
+				X_vergorium2971 = E_neverose2972 + 956 + 733 - 159 * 871 - 586; 
 			 break;
 			}
-			case -15:
+			case 482:
 			{
-				M_priorwhatevercy2585 = f_pect2586 + 594 * 52 - 998 / 419; 
+				X_vergorium2971 = E_neverose2972 - 404 * 295 / 632 / 197 / 988 * 244; 
 			 break;
 			}
-			case 490:
+			case 274:
 			{
-				M_priorwhatevercy2585 = f_pect2586 + 518 / 210 * 79 * 891; 
+				X_vergorium2971 = E_neverose2972 + 446 - 593; 
 			 break;
 			}
-			case 173:
+			case 509:
 			{
-				M_priorwhatevercy2585 = f_pect2586 * 242 - 522 - 978; 
+				X_vergorium2971 = E_neverose2972 * 25 / 898 / 718 - 148 / 720 - 682; 
+			 break;
+			}
+			case 894:
+			{
+				X_vergorium2971 = E_neverose2972 - 841 - 38 / 96 + 11 * 153; 
+			 break;
+			}
+			case -94:
+			{
+				X_vergorium2971 = E_neverose2972 - 798 - 712 / 737 * 915 - 859; 
+			 break;
+			}
+			case 907:
+			{
+				X_vergorium2971 = E_neverose2972 * 386 / 182 / 698 * 73 - 150 * 390; 
 			 break;
 			}
 			   default:
        break;
 			}
  }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2606;
-	if(self.flat1440Hesless1441 + 173 / 998 - 869 / 857 > 29061){}
-	self.aristary1442Agoar1443 = 6335;
-	if(self.aristary1442Agoar1443 - 707 * 966 * 942 + 620 <= 45873){ 
-int y_disoon2587 = 4893;
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 2541;
+	if(self.civilast1432Stratalongular1433 - 103 / 417 - 522 / 436 >= 59807){}
+		if(self.inad1434Simpleive1435){
+float A_quaternel2973 = 5292;
 
-if(y_disoon2587 < 44550){
-	int M_agogship2588 = y_disoon2587 + 289 - 375 - 777 * 281; 
-if(M_agogship2588 <= 37870){
-	float U_fissdownar2589 = M_agogship2588 * 956 * 284 * 906 * 712;
-}
-}
- }
-	self.culturalaceous1444Broncher1445 = 2268;
-	if(self.culturalaceous1444Broncher1445 * 293 / 388 / 702 - 26 / 708 >= 3602){ 
-double g_pausibility2590 = 1162;
-
-int K_falc2591 = 541;
-if(g_pausibility2590 * 42 / 333 <= 69277){
-	K_falc2591 = g_pausibility2590 + 909 - 37;
+int s_cineage2974 = 648;
+if(A_quaternel2973 - 887 * 517 / 412 == 62628){
+	s_cineage2974 = A_quaternel2973 - 589 * 186 / 206 + 348 + 545;
 }else{
-	K_falc2591 = g_pausibility2590 * 684 / 92 / 924 + 927 + 903 + 462;
+	s_cineage2974 = A_quaternel2973 + 110 / 109 - 897;
 }
 
-double N_talicourtcy2592 = 104;
-if(K_falc2591 * 999 * 494 / 973 + 84 / 756 >= 26141){
-	N_talicourtcy2592 = K_falc2591 + 587 / 433 / 825 + 352;
 }
+        
+        BOOL whetherfier2937Plicion2938 = NO;  //commontemple6
+        if (whetherfier2937Plicion2938){
+            whetherfier2937Plicion2938 = NO;
+                    
+        NSInteger uniitor2945Iridation2946 = 8949;  //commontemple9
+        int crimehood2947Tomouous2948 = 6403;
 
-int Q_representry2593 = 423;
-if(N_talicourtcy2592 - 455 + 64 * 757 * 602 + 664 >= 82468){
-	Q_representry2593 = N_talicourtcy2592 * 905 * 158;
-}
+        for(int standardarium2949Concernful2950 = 2209; standardarium2949Concernful2950 < 2774; standardarium2949Concernful2950 = standardarium2949Concernful2950 + 1)
+        {    
+            uniitor2945Iridation2946 = uniitor2945Iridation2946 + crimehood2947Tomouous2948;
+            if (uniitor2945Iridation2946 != standardarium2949Concernful2950){
+                break;
+            }
+            crimehood2947Tomouous2948 = crimehood2947Tomouous2948++;
+        }
+        
 
-float A_torsrisement2594 = 241;
-if(Q_representry2593 + 760 + 255 + 829 + 628 < 14280){
-	A_torsrisement2594 = Q_representry2593 * 986 - 999 / 801;
-}
+        
+        }
 
-double C_furtlike2595 = 893;
-if(A_torsrisement2594 * 759 - 448 + 654 / 740 - 444 * 557 == 55385){
-	C_furtlike2595 = A_torsrisement2594 * 930 / 118 + 476;
-}else{
-	C_furtlike2595 = A_torsrisement2594 + 708 * 465 - 654 * 235;
-}
-
-int W_simply2596 = 112;
-if(C_furtlike2595 - 60 / 196 + 715 + 858 + 730 * 683 <= 15661){
-	W_simply2596 = C_furtlike2595 - 847 / 644 * 198 / 656 + 732;
-}else{
-	W_simply2596 = C_furtlike2595 * 466 / 680 - 874 + 684 + 954 - 984;
-}
-
-double p_onlyitious2597 = 68;
-if(W_simply2596 * 594 / 179 <= 62824){
-	p_onlyitious2597 = W_simply2596 + 187 * 811 * 960 / 559 * 3 - 331;
-}
-
-double R_upfold2598 = 736;
-if(p_onlyitious2597 * 206 * 895 * 620 / 159 < 10130){
-	R_upfold2598 = p_onlyitious2597 + 849 + 502 - 494;
-}
-
-float Y_oramier2599 = 272;
-if(R_upfold2598 + 496 * 308 + 657 / 962 != 44670){
-	Y_oramier2599 = R_upfold2598 - 436 - 429 - 179;
-}else{
-	Y_oramier2599 = R_upfold2598 - 733 / 913 + 865;
-}
-
-int D_serr2600 = 32;
-if(Y_oramier2599 + 120 / 861 < 87505){
-	D_serr2600 = Y_oramier2599 - 105 + 607;
-}else{
-	D_serr2600 = Y_oramier2599 * 138 * 339 / 726 * 292;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){}
-int c_trically2572 = 351;
-
-if(c_trically2572 <= 20018){
-	double j_sophoability2573 = c_trically2572 - 241 + 613 * 105 - 41; 
-if(j_sophoability2573 < 82427){
-	int r_brachiaceous2574 = j_sophoability2573 * 835 - 73 / 828;
-}
-}
+        
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:myPayUrl]) {
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:myPayUrl]) {
         SDK_LOG(@"startMySdkPay myPayUrl=%@",myPayUrl);
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSArray * P_41 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:7171 plaud1671Past1672:3954 ];
-	if(P_41){}
+	NSArray * O_40 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:2148 professor1968Budget1969:nil passition1970Cupard1971:4259 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(O_40){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 7387;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 540 + 384 + 179 + 387 < 16336){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 4940;
-	if(self.flat1440Hesless1441 - 58 - 263 - 440 <= 58103){ 
-int r_hedoar2613 = 9475;
-
-if(r_hedoar2613 < 10833){
-	int p_jocaneity2614 = r_hedoar2613 + 915 * 951; 
-if(p_jocaneity2614 != 76308){
-	double T_decimator2615 = p_jocaneity2614 - 268 - 864 / 127 * 519 * 156 * 941;
-}
-}
- }
-	self.aristary1442Agoar1443 = 3141;
-	if(self.aristary1442Agoar1443 + 337 + 49 / 20 * 509 - 558 * 929 > 47582){ 
-double k_dener2616 = 2412;
-
-int G_ternindeedetic2617 = 276;
-if(k_dener2616 - 195 - 27 * 307 * 961 / 541 >= 61371){
-	G_ternindeedetic2617 = k_dener2616 * 362 * 438 * 162 * 511 + 420;
-}else{
-	G_ternindeedetic2617 = k_dener2616 - 38 + 29 - 20;
-}
-
-float X_flectsive2618 = 736;
-if(G_ternindeedetic2617 + 709 - 966 / 665 == 7360){
-	X_flectsive2618 = G_ternindeedetic2617 * 317 - 950 / 38;
-}else{
-	X_flectsive2618 = G_ternindeedetic2617 + 930 + 42 - 855;
-}
-
-int k_docuad2619 = 689;
-if(X_flectsive2618 + 573 / 293 + 319 <= 23126){
-	k_docuad2619 = X_flectsive2618 + 230 * 310;
-}
-
-double F_baseality2620 = 908;
-if(k_docuad2619 * 192 - 677 <= 48961){
-	F_baseality2620 = k_docuad2619 * 203 - 913 * 101 + 165 * 658;
-}else{
-	F_baseality2620 = k_docuad2619 - 904 - 615 * 219 * 457;
-}
-
-float H_letacle2621 = 467;
-if(F_baseality2620 * 39 + 32 / 693 * 24 >= 5622){
-	H_letacle2621 = F_baseality2620 - 982 * 547 + 304 - 289 / 761;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 6918;
-	if(self.culturalaceous1444Broncher1445 + 338 - 639 - 387 >= 63283){ 
-int X_knowwise2622 = 8591;
-
-if(X_knowwise2622 <= 62864){
-	int j_blast2623 = X_knowwise2622 + 696 - 397 + 784 + 917 * 386; 
-if(j_blast2623 != 159){
-	float y_hierowomanfication2624 = j_blast2623 - 102 - 680 / 442 * 653 - 597; 
-if(y_hierowomanfication2624 > 44133){
-	double t_cephaloally2625 = y_hierowomanfication2624 - 942 * 867; 
-if(t_cephaloally2625 != 28320){
-	float H_votelike2626 = t_cephaloally2625 - 407 - 681 / 154; 
-if(H_votelike2626 == 98719){
-	double Z_seeular2627 = H_votelike2626 - 643 - 965 * 183;
-}
-}
-}
-}
-}
- }
-		if(self.phemwise1446Lowfaction1447){}
-        
-        int levisixics2601Letitor2602 = 6817;  //temple9
-        int balldom2603Weightfication2604 = 3512;
-        for(int psychral2605Dorsattackistic2606 = 0; psychral2605Dorsattackistic2606 < levisixics2601Letitor2602; psychral2605Dorsattackistic2606 += 9904) {
-            break; 
-        } 
-
-        
+	self.juniorie1426Aevent1427 = 1713;
+	if(self.juniorie1426Aevent1427 - 260 / 776 <= 36265){}
+	self.ctenee1428Buyry1429 = 2714;
+	if(self.ctenee1428Buyry1429 + 41 * 714 * 608 * 566 >= 97919){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4834;
+	if(self.civilast1432Stratalongular1433 * 932 * 92 == 44444){}
+		if(self.inad1434Simpleive1435){}
+            float nareur2975Sidusitsive2976 = 9163.0;  //temple22
+            if (@(nareur2975Sidusitsive2976).intValue >= 9093) {
+                nareur2975Sidusitsive2976 = nareur2975Sidusitsive2976 - 7528;
+            }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
@@ -2943,9 +2763,9 @@ if(H_votelike2626 == 98719){
         NSLog(@"exception:%@",exception.description);
     }
     
-    NSString *resultURL = [ValueformVocar createSdkUrl_MMMethodMMM:myPayUrl otherDic_MMMethodMMM:dic];
+    NSString *resultURL = [LampoCisling createSdkUrl_MMMethodMMM:myPayUrl otherDic_MMMethodMMM:dic];
     SDK_LOG(@"startMySdkPay myPayUrl=%@",resultURL);
-    TenaciPolicedomController *webVC = [TenaciPolicedomController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    MomentialPlutlyController *webVC = [MomentialPlutlyController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:YES animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
@@ -2953,95 +2773,13 @@ if(H_votelike2626 == 98719){
         self.switchInterfaceOrientationPortrait = NO;
     };
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	long Q_42 = [self firstular1951Arcsuccessproof1952:nil cephaloular1953Hardety1954:@"calliism2668Headorium2669" policior1955Syor1956:5387 vulnerity1957Sendise1958:nil ];
-	if(Q_42){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 3271;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 227 + 744 - 20 == 94640){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 4417;
-	if(self.flat1440Hesless1441 * 815 / 64 * 695 * 721 / 846 != 23450){}
-	self.aristary1442Agoar1443 = 896;
-	if(self.aristary1442Agoar1443 + 273 + 257 - 372 > 79463){}
-	self.culturalaceous1444Broncher1445 = 6765;
-	if(self.culturalaceous1444Broncher1445 * 670 + 852 + 540 != 67917){}
-		if(self.phemwise1446Lowfaction1447){
-float v_felicit2670 = 6861;
-
-if(v_felicit2670 >= 25437){
-	double T_trogloeer2671 = v_felicit2670 - 669 - 567 + 997 - 157 * 228; 
-if(T_trogloeer2671 > 21327){
-	float f_cipship2672 = T_trogloeer2671 - 366 * 462 + 416 / 630 + 290; 
-if(f_cipship2672 == 26012){
-	double A_stereile2673 = f_cipship2672 + 121 * 973 * 909 * 650 - 599; 
-if(A_stereile2673 <= 89413){
-	float k_tetrel2674 = A_stereile2673 * 696 * 911 + 264 + 518 + 412 / 200; 
-if(k_tetrel2674 != 73790){
-	int v_surden2675 = k_tetrel2674 - 471 - 288 * 494 / 291 - 443 - 343;
-}
-}
-}
-}
-}
-}
-        
-        NSDictionary *suaditive2632Pausistic2633 = @{@"pamhimern2644" : @(40011), @"xerety2646" : @"stannfic2647", @"papereur2648" : @"politicalor2649", @"quitehood2650" : @"menstrufear2651", @"oncus2652" : @"speechally2653", @"stichess2654" : @"macroenne2655", @"sizeern2656" : @"sinceative2657", @"centraire2658" : @"safeator2659", @"weid2660" : @"colorproof2661", @"nationalenne2662" : @"preditive2663", @"sophoelectionile2664" : @(65090), @"acceptmost2666" : @(49165) };  //temple5
-       if (suaditive2632Pausistic2633.count != 9989){
-
-            int treiskaidekaneity2636Largeical2637 = -99;
-            int menaci2640Dooror2641 = -937;
-            int capr2642 = 2263;
-            switch (treiskaidekaneity2636Largeical2637) {
-                    
-                case 83:
-			{
-				menaci2640Dooror2641 = capr2642 - 170 / 702; 
-			 break;
-			}
-			case -5:
-			{
-				menaci2640Dooror2641 = capr2642 - 724 * 140; 
-			 break;
-			}
-			case 207:
-			{
-				menaci2640Dooror2641 = capr2642 * 269 * 911 + 36 / 698 * 504; 
-			 break;
-			}
-			case 570:
-			{
-				menaci2640Dooror2641 = capr2642 - 888 / 558 / 387; 
-			 break;
-			}
-			case 262:
-			{
-				menaci2640Dooror2641 = capr2642 - 924 / 83; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-
-        }
-
-        
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     webVC.didDismissCallback = ^{
         
     };
     
     [appTopViewController presentViewController:webVC animated:NO completion:^{
-        SDK_LOG(@"TenaciPolicedomController presentViewController completioN");
+        SDK_LOG(@"MomentialPlutlyController presentViewController completioN");
         
     }];
     SDK_LOG(@"startMySdkPay open end");
@@ -3049,67 +2787,7 @@ if(k_tetrel2674 != 73790){
 
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSArray *)thymally1665Sacriesque1666:(UIApplication *)thymally1665_1 susacious1667Quadragenular1668:( NSArray *)susacious1667_2 currentetic1669Pointfaction1670:(long)currentetic1669_3 plaud1671Past1672:(float)plaud1671_4{ //insert method
-	if(thymally1665_1){
-		        
-        int sipiwise1675Hedraly1676 = 554;    //temple11
-        int leadertic1677Psilic1678 = 6323;
-        while(leadertic1677Psilic1678 > sipiwise1675Hedraly1676) {
-            leadertic1677Psilic1678 += 1;
-            break; 
-        } 
 
-	}
-	if(susacious1667_2){
-		        
-        int crepitess1685Porcling1686 = 9471;    //temple17
-        int chairacious1687Participantan1688 = 2045;
-        int minimdegreeibility1689Sectchange1690 = 4300;
-        int sideeer1691Sevenence1692 = 6398;
-        int plaintsion1693Scansant1694 = 9542;
-        int archoar1695Volness1696 = 8863;
-
-        if (crepitess1685Porcling1686 == 6404){
-
-            chairacious1687Participantan1688 -= 1;
-            minimdegreeibility1689Sectchange1690 += chairacious1687Participantan1688;
-            plaintsion1693Scansant1694 -= crepitess1685Porcling1686;
-            sideeer1691Sevenence1692 += 1;
-            archoar1695Volness1696 += 10;
-        }
-
-	}
- 
-	NSArray *C_28 = nil;
-	return C_28;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (long)indeedtion1645Anthropdaughter1646:(NSString *)indeedtion1645_1 fallacy1647Seriesator1648:(BOOL)fallacy1647_2{ //insert method
-	if(indeedtion1645_1){
-		        
-        int monilenne1651Medicalibility1652 = -838;  //temple7
-        BOOL activity1653Cret1654 = NO;
-        if (monilenne1651Medicalibility1652 <= 6169){
-            
-            activity1653Cret1654 = YES;
-        }else{
-            activity1653Cret1654 = NO;
-        }
-
-        
-	}
-	if(fallacy1647_2){
-		          BOOL roborwithaneity1661Lenist1662 = YES;    ////temple31
-          if (roborwithaneity1661Lenist1662) { __asm__("NOP"); }
-	}
- 
-	long B_27 = 65169;
-	return B_27;
-}
-//===insert my method end=== 2023-12-13 18:35:09
 - (void)payWithRoleId:(NSString *)roleId
              roleName:(NSString *)roleName
             roleLevel:(NSString *)roleLevel
@@ -3124,439 +2802,350 @@ if(k_tetrel2674 != 73790){
     
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     SDK_LOG(@"储值接口传入的参数 ：roleId : %@ , serverCode : %@ , roleName : %@",roleId,serverCode,roleName);
     SDK_LOG(@"储值接口传入的参数 ：productid : %@ , cpOrderId : %@ , extra : %@",productId,cpOrderId,extra);
     
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:productId]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:productId]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"productId must be not empty"];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	 UNNotificationTrigger * x_23 = [self buildingian1927Themselvesette1928:@"quiria2686Lookon2687" smalline1929Oscillolateen1930:nil quadragenivity1931Throughoutid1932:@"inard2688Thingaster2689" orexiular1933Fidise1934:nil claim1935Ofivity1936:2255 triptarium1937Muniish1938:6240 ];
-	if(x_23){}
+	UIApplication * X_49 = [self phasycoldian1586Particularlyair1587];
+	if(X_49){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8640;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 405 - 993 + 908 == 49668){}
-		if(self.prior1438Vanist1439){
-double I_velless2690 = 7378;
+	self.juniorie1426Aevent1427 = 2923;
+	if(self.juniorie1426Aevent1427 - 225 - 653 + 300 == 95740){}
+	self.ctenee1428Buyry1429 = 8486;
+	if(self.ctenee1428Buyry1429 * 147 - 553 - 481 * 666 * 399 * 654 > 4609){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 5518;
+	if(self.civilast1432Stratalongular1433 + 198 / 803 - 775 != 16187){}
+		if(self.inad1434Simpleive1435){}
+    NSArray *needee2987Pudead2988 = @[@"northcy3023_septem3024", @"psammive3025_plebress3026", @"ecodeadian3027_utose3028", @"couldsive3029_phant3030", @"reach3031_mostent3032", @"difficult3033_oneical3034", @"cubit3035_eco3036", @"orchator3037_lepisfic3038", @"legiite3039_theirary3040", @"betweenacious3041_legalel3042", @"pallitarium3043_argentpressureitor3044", @"nuptisenseitor3045_vic3046", @"rhig3047_saliition3048", @"acet3049_odontise3050", @"capt3051_in2entire3052" ]; //temple28
 
-int R_privateition2691 = 265;
-if(I_velless2690 + 57 / 976 / 436 < 31729){
-	R_privateition2691 = I_velless2690 + 164 - 318 + 333;
-}else{
-	R_privateition2691 = I_velless2690 - 550 / 219 / 774 - 747 - 633;
-}
-
-double q_insideette2692 = 52;
-if(R_privateition2691 - 231 / 584 - 186 + 23 - 224 != 50200){
-	q_insideette2692 = R_privateition2691 - 114 - 392 - 116;
-}
-
-float T_matr2693 = 738;
-if(q_insideette2692 - 81 - 273 * 854 - 340 <= 90512){
-	T_matr2693 = q_insideette2692 * 324 - 830 - 297 / 453 + 73;
-}
-
-float f_hippitious2694 = 234;
-if(T_matr2693 * 254 * 832 * 286 - 573 + 849 < 7840){
-	f_hippitious2694 = T_matr2693 - 599 / 226 * 392 * 97 - 58 + 206;
-}
-
-int q_leaveee2695 = 569;
-if(f_hippitious2694 * 447 * 817 >= 52062){
-	q_leaveee2695 = f_hippitious2694 - 482 + 999 * 746;
-}else{
-	q_leaveee2695 = f_hippitious2694 + 132 * 262 + 574 + 262;
-}
-
-float g_future2696 = 682;
-if(q_leaveee2695 - 843 / 367 / 10 <= 34638){
-	g_future2696 = q_leaveee2695 - 453 + 851 - 686 + 903;
-}else{
-	g_future2696 = q_leaveee2695 * 359 + 894;
-}
-
-int h_thoughtsure2697 = 226;
-if(g_future2696 - 702 / 659 / 977 - 907 <= 94175){
-	h_thoughtsure2697 = g_future2696 - 455 / 122;
-}else{
-	h_thoughtsure2697 = g_future2696 - 566 - 104;
-}
-
-int S_field2698 = 129;
-if(h_thoughtsure2697 + 135 / 739 / 37 - 481 / 626 - 690 >= 56866){
-	S_field2698 = h_thoughtsure2697 - 404 * 930 / 436 - 36;
-}else{
-	S_field2698 = h_thoughtsure2697 + 925 - 464;
-}
-
-float J_claviet2699 = 694;
-if(S_field2698 * 107 + 679 * 647 / 20 > 2956){
-	J_claviet2699 = S_field2698 + 525 - 267;
-}else{
-	J_claviet2699 = S_field2698 - 569 + 806 + 610;
-}
-
-float D_lepress2700 = 858;
-if(J_claviet2699 - 178 + 76 / 319 <= 77458){
-	D_lepress2700 = J_claviet2699 - 54 - 849 - 428;
-}else{
-	D_lepress2700 = J_claviet2699 + 178 * 263 / 184 / 324 + 636;
-}
-
-float k_livery2701 = 395;
-if(D_lepress2700 + 109 + 954 == 81774){
-	k_livery2701 = D_lepress2700 * 895 * 299;
-}
-
-}
-	self.flat1440Hesless1441 = 8474;
-	if(self.flat1440Hesless1441 - 247 * 582 > 22903){}
-	self.aristary1442Agoar1443 = 770;
-	if(self.aristary1442Agoar1443 * 250 / 715 + 321 * 430 <= 21903){ 
-float c_stultard2702 = 5108;
-
-int h_materialette2703 = 651;
-if(c_stultard2702 + 439 * 250 * 764 < 50640){
-	h_materialette2703 = c_stultard2702 + 559 * 124 / 983 + 10;
-}
-
-double f_becausemost2704 = 526;
-if(h_materialette2703 - 642 - 661 >= 6103){
-	f_becausemost2704 = h_materialette2703 + 614 - 271 - 329 + 605 / 200 * 243;
-}else{
-	f_becausemost2704 = h_materialette2703 * 209 / 347;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 5801;
-	if(self.culturalaceous1444Broncher1445 + 880 - 310 / 189 + 412 != 47867){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        int statutic2676Not2677 = 5400;    //temple11
-        int mater2678Institutionary2679 = 9012;
-        while(mater2678Institutionary2679 > statutic2676Not2677) {
-            mater2678Institutionary2679 += 1;
-            break; 
-        } 
-
+          int furtan2989Primasure2990 = needee2987Pudead2988.count;
+         int dolor2993Skillard2994 = (int)furtan2989Primasure2990;
+         int citizenfic2997Belliy2998 = 8575;
+         int director2999Aliness3000 = 6766;
+         if (dolor2993Skillard2994 < director2999Aliness3000) {
+             dolor2993Skillard2994 = director2999Aliness3000;
+         }
+         while (citizenfic2997Belliy2998 <= dolor2993Skillard2994) {
+            citizenfic2997Belliy2998 += 1;
+            dolor2993Skillard2994 /= citizenfic2997Belliy2998;
+            dolor2993Skillard2994 += 3344;
+            break;
+         }
+          [needee2987Pudead2988 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+              if (idx <= 306) {
+                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
+            }
+          }];
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+
+		
         return;
     }
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:roleId]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:roleId]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
         return;
     }
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:serverCode]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:serverCode]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	UIApplication * U_46 = [self raiseaster1448Stocho1449];
-	if(U_46){}
+	long z_25 = [self moveule1852Siphoior1853:8789 petrator1854Religiousling1855:556 viress1856Middle1857:nil visitster1858Hiem1859:nil pub1860Ponderdreammost1861:4813 patternacity1862Firmtion1863:nil treiskaidekie1864Highproof1865:7903 ];
+	if(z_25){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-int i_dekaably2714 = 7042;
+	self.juniorie1426Aevent1427 = 8773;
+	if(self.juniorie1426Aevent1427 + 125 * 577 - 839 < 82391){}
+	self.ctenee1428Buyry1429 = 4484;
+	if(self.ctenee1428Buyry1429 + 474 * 827 - 175 - 799 - 193 >= 51700){ 
+float C_sacrreach3059 = 9155;
 
-if(i_dekaably2714 <= 58098){
-	int A_professor2715 = i_dekaably2714 + 649 + 323 + 272; 
-if(A_professor2715 != 87418){
-	int J_novaceous2716 = A_professor2715 * 547 * 115; 
-if(J_novaceous2716 < 64078){
-	int j_dataful2717 = J_novaceous2716 - 868 / 373 / 475 - 148; 
-if(j_dataful2717 <= 50021){
-	double h_reallyaceous2718 = j_dataful2717 - 433 * 97; 
-if(h_reallyaceous2718 >= 81427){
-	double k_eth2719 = h_reallyaceous2718 + 336 - 692 / 577 - 84 + 647;
+if(C_sacrreach3059 == 37832){
+	float w_fulgitor3060 = C_sacrreach3059 - 355 * 251 * 946 / 453; 
+if(w_fulgitor3060 < 9538){
+	float L_veryible3061 = w_fulgitor3060 + 726 + 181 * 608; 
+if(L_veryible3061 >= 46490){
+	int b_odonresultade3062 = L_veryible3061 * 526 / 41;
 }
-}
-}
-}
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 322;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 979 + 279 / 691 == 84338){ 
-double R_felinoresultsure2720 = 7819;
-
-float q_sess2721 = 934;
-if(R_felinoresultsure2720 * 526 - 258 - 797 / 883 <= 97823){
-	q_sess2721 = R_felinoresultsure2720 + 565 * 989 / 705 * 361 / 62;
-}
-
-double z_aesthetpolicyistic2722 = 185;
-if(q_sess2721 + 275 - 733 * 582 - 746 == 864){
-	z_aesthetpolicyistic2722 = q_sess2721 - 365 / 919 - 743 / 721;
-}
-
-float E_hairacity2723 = 322;
-if(z_aesthetpolicyistic2722 * 226 / 320 / 145 * 422 - 886 + 12 < 90463){
-	E_hairacity2723 = z_aesthetpolicyistic2722 - 809 - 928;
-}
-
-int C_viscoee2724 = 161;
-if(E_hairacity2723 * 120 * 734 - 956 * 235 + 896 < 88698){
-	C_viscoee2724 = E_hairacity2723 * 385 * 901 * 821 / 257;
-}
-
-int I_chrysality2725 = 396;
-if(C_viscoee2724 * 18 * 378 > 74878){
-	I_chrysality2725 = C_viscoee2724 * 697 - 53 * 588;
-}else{
-	I_chrysality2725 = C_viscoee2724 * 452 - 598 - 242 * 792;
-}
-
-int O_spondfy2726 = 802;
-if(I_chrysality2725 * 157 - 477 / 682 != 32730){
-	O_spondfy2726 = I_chrysality2725 - 589 * 720 + 822 + 179;
-}
-
-float B_orexiery2727 = 410;
-if(O_spondfy2726 * 563 + 923 != 85501){
-	B_orexiery2727 = O_spondfy2726 + 250 + 932;
-}else{
-	B_orexiery2727 = O_spondfy2726 - 435 * 187 + 558 / 324;
-}
-
-double Z_plusoftenade2728 = 930;
-if(B_orexiery2727 + 187 / 21 >= 94492){
-	Z_plusoftenade2728 = B_orexiery2727 - 281 / 980 + 746 / 110;
-}else{
-	Z_plusoftenade2728 = B_orexiery2727 - 467 / 814 + 395 - 341;
-}
-
-int R_hisization2729 = 242;
-if(Z_plusoftenade2728 + 301 * 926 > 86776){
-	R_hisization2729 = Z_plusoftenade2728 + 730 + 81;
-}
-
-double p_quinard2730 = 8;
-if(R_hisization2729 - 298 * 512 - 768 / 464 - 811 < 89939){
-	p_quinard2730 = R_hisization2729 * 1 * 671 * 642;
-}
-
-float Y_teachless2731 = 355;
-if(p_quinard2730 - 380 + 91 + 453 - 65 != 72019){
-	Y_teachless2731 = p_quinard2730 + 455 / 63;
-}else{
-	Y_teachless2731 = p_quinard2730 - 226 - 23 + 381 + 350 + 17 / 167;
-}
-
-double U_how2732 = 625;
-if(Y_teachless2731 * 545 / 912 <= 33871){
-	U_how2732 = Y_teachless2731 + 677 - 82 + 177 / 533 + 47;
-}
-
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7368;
-	if(self.flat1440Hesless1441 + 31 / 426 != 10811){}
-	self.aristary1442Agoar1443 = 11;
-	if(self.aristary1442Agoar1443 + 681 / 66 > 13394){ 
-int q_ceasess2733 = 7879;
-
-if(q_ceasess2733 <= 54910){
-	float l_lexicence2734 = q_ceasess2733 + 807 + 75 * 650 - 912; 
-if(l_lexicence2734 < 19173){
-	int o_includeion2735 = l_lexicence2734 + 955 - 812;
 }
 }
  }
-	self.culturalaceous1444Broncher1445 = 6533;
-	if(self.culturalaceous1444Broncher1445 + 337 * 614 * 246 / 809 * 35 > 45283){}
-		if(self.phemwise1446Lowfaction1447){
-int r_tinacitic2736 = 136;
-float b_ifible2737 = 917;
-switch (r_tinacitic2736) {
-   case 485:
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7192;
+	if(self.civilast1432Stratalongular1433 * 660 + 708 * 647 > 3679){}
+		if(self.inad1434Simpleive1435){}
+int N_orexieer3057 = 195;
+int l_love3058 = 289;
+switch (N_orexieer3057) {
+   case 252:
 			{
-				r_tinacitic2736 = b_ifible2737 - 640 * 763 * 175; 
+				N_orexieer3057 = l_love3058 + 193 + 689 + 765 + 309 * 2; 
 			 break;
 			}
-			case 130:
+			case 344:
 			{
-				r_tinacitic2736 = b_ifible2737 * 188 + 975 / 869 - 447 + 466; 
+				N_orexieer3057 = l_love3058 * 78 + 406 * 458 + 638 + 841; 
 			 break;
 			}
-			case 381:
+			case 929:
 			{
-				r_tinacitic2736 = b_ifible2737 + 408 * 5 + 546; 
+				N_orexieer3057 = l_love3058 * 296 / 225 / 193 * 393 * 459; 
+			 break;
+			}
+			case 421:
+			{
+				N_orexieer3057 = l_love3058 - 870 - 454 + 15 + 841; 
+			 break;
+			}
+			case 463:
+			{
+				N_orexieer3057 = l_love3058 - 355 - 507 + 181 * 752; 
+			 break;
+			}
+			case 410:
+			{
+				N_orexieer3057 = l_love3058 - 104 / 439 - 698 + 606 + 950; 
+			 break;
+			}
+			case 78:
+			{
+				N_orexieer3057 = l_love3058 + 290 / 716 - 70; 
+			 break;
+			}
+			case 544:
+			{
+				N_orexieer3057 = l_love3058 - 111 - 73 / 771 * 137 - 401 - 987; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-double V_despiteability2709 = 1881;
-
-if(V_despiteability2709 < 20283){
-	int T_ageice2710 = V_despiteability2709 + 128 * 358; 
-if(T_ageice2710 != 48149){
-	double K_religiousfold2711 = T_ageice2710 * 637 + 775 * 798 * 276 * 54 * 654; 
-if(K_religiousfold2711 < 9933){
-	int N_mission2712 = K_religiousfold2711 * 628 / 675 / 1 + 407 - 272 / 864; 
-if(N_mission2712 <= 74880){
-	int M_oohelpivity2713 = N_mission2712 * 775 / 994 / 95 - 425 - 700;
-}
-}
-}
-}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:cpOrderId]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSInteger G_32 = [self opoard1745Tenitude1746:8507 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:1402 statutic1751Rurative1752:5441 hangform1753Containia1754:4228 opage1755Levose1756:3391 consumer1757Tussance1758:nil ];
-	if(G_32){}
+	NSURL * n_13 = [self dignacious2384Windia2385:@"unit3079Homeer3080" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:1573 member2392Standardify2393:nil weaponible2394Noticeacle2395:6140 price2396Hair2397:5125 epfic2398Bed2399:5671 ];
+	if(n_13){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-float A_watchule2746 = 2708;
+	self.juniorie1426Aevent1427 = 7148;
+	if(self.juniorie1426Aevent1427 + 266 + 337 >= 63681){}
+	self.ctenee1428Buyry1429 = 5827;
+	if(self.ctenee1428Buyry1429 * 233 - 358 * 709 / 595 != 84156){}
+		if(self.opacization1430Knowledgeform1431){
+float f_septenfewtic3081 = 6525;
 
-int s_equive2747 = 778;
-if(A_watchule2746 * 665 + 704 * 266 >= 57032){
-	s_equive2747 = A_watchule2746 - 366 - 193;
-}else{
-	s_equive2747 = A_watchule2746 + 288 - 906 * 314 / 385 - 909;
+if(f_septenfewtic3081 == 23485){
+	int K_chirmost3082 = f_septenfewtic3081 + 81 * 828 / 714 / 694 - 827 - 438;
 }
-
-double r_densask2748 = 720;
-if(s_equive2747 * 121 / 416 / 774 == 88393){
-	r_densask2748 = s_equive2747 * 135 / 30 - 140 * 772;
-}else{
-	r_densask2748 = s_equive2747 * 495 + 90 * 571 * 53 + 542;
 }
+	self.civilast1432Stratalongular1433 = 5034;
+	if(self.civilast1432Stratalongular1433 - 870 + 781 * 544 == 56533){}
+		if(self.inad1434Simpleive1435){}
+            float music3065Imicdecadeify3066 = 3620.0;  //temple26
+            int commercialable3075Fly3076 = 6898;
+            int pter3077 = 1191;
 
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 2330;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 926 / 400 * 305 <= 88626){ 
-int L_oviarian2749 = 474;
-float h_pastfy2750 = 373;
-switch (L_oviarian2749) {
-   case 986:
+            if (@(music3065Imicdecadeify3066).doubleValue == 690) {
+
+                int pennship3069Everythingfier3070 = @(music3065Imicdecadeify3066).intValue;
+                switch (pennship3069Everythingfier3070) {
+                    
+                    case 564:
 			{
-				L_oviarian2749 = h_pastfy2750 - 830 + 246 / 383; 
+				commercialable3075Fly3076 = pter3077 * 912 * 71; 
 			 break;
 			}
-			case 200:
+			case 846:
 			{
-				L_oviarian2749 = h_pastfy2750 - 123 - 686 - 249 / 494 * 790 / 566; 
-			 break;
-			}
-			case 731:
-			{
-				L_oviarian2749 = h_pastfy2750 * 255 + 663 + 93 + 182 - 600 * 191; 
-			 break;
-			}
-			case 768:
-			{
-				L_oviarian2749 = h_pastfy2750 - 303 - 958 / 922 / 735; 
-			 break;
-			}
-			case 376:
-			{
-				L_oviarian2749 = h_pastfy2750 + 27 - 910 - 76 + 899 / 782; 
+				commercialable3075Fly3076 = pter3077 * 933 * 592 * 441 / 672 * 54; 
 			 break;
 			}
 			case 646:
 			{
-				L_oviarian2749 = h_pastfy2750 + 843 / 942; 
+				commercialable3075Fly3076 = pter3077 * 60 + 261 / 168 + 607 - 705; 
 			 break;
 			}
-			case 777:
+			case 601:
 			{
-				L_oviarian2749 = h_pastfy2750 - 894 / 810 - 508 * 634 / 21; 
+				commercialable3075Fly3076 = pter3077 + 90 / 455 - 215 / 275; 
 			 break;
 			}
-			case -14:
+			case 906:
 			{
-				L_oviarian2749 = h_pastfy2750 - 591 * 901; 
+				commercialable3075Fly3076 = pter3077 * 642 / 714; 
 			 break;
 			}
-			case 293:
+			case -1:
 			{
-				L_oviarian2749 = h_pastfy2750 * 216 - 107 + 920 / 151 * 48 * 932; 
+				commercialable3075Fly3076 = pter3077 - 912 * 268 - 231; 
 			 break;
 			}
-			case 220:
+			case -3:
 			{
-				L_oviarian2749 = h_pastfy2750 + 927 / 363 + 868 / 294 + 984; 
+				commercialable3075Fly3076 = pter3077 * 924 + 108 * 180 + 7; 
 			 break;
 			}
-			case 405:
+			case -59:
 			{
-				L_oviarian2749 = h_pastfy2750 + 361 - 202; 
+				commercialable3075Fly3076 = pter3077 - 984 - 33 + 50 / 456; 
 			 break;
 			}
-			case 209:
+			case 6:
 			{
-				L_oviarian2749 = h_pastfy2750 + 413 + 761 * 566; 
+				commercialable3075Fly3076 = pter3077 * 945 * 806 / 359 - 640 + 980 * 765; 
 			 break;
 			}
-			case 945:
+			case 975:
 			{
-				L_oviarian2749 = h_pastfy2750 - 341 * 601 * 120 * 823; 
+				commercialable3075Fly3076 = pter3077 + 128 - 951 / 100 - 355; 
 			 break;
 			}
-			case 304:
+			case 526:
 			{
-				L_oviarian2749 = h_pastfy2750 * 494 * 661 / 838 - 39 - 778 + 849; 
+				commercialable3075Fly3076 = pter3077 - 584 + 807 * 42 - 985 / 782 / 897; 
 			 break;
 			}
-			   default:
-       break;
+			case 541:
+			{
+				commercialable3075Fly3076 = pter3077 * 913 / 455 / 935 - 504; 
+			 break;
 			}
- }
-		if(self.prior1438Vanist1439){
-float r_cidyeahesque2751 = 7155;
+			
+                        
+                    default:
+                        break;
+                }
 
-if(r_cidyeahesque2751 >= 91746){
-	int F_safefy2752 = r_cidyeahesque2751 + 671 + 390 / 739; 
-if(F_safefy2752 > 46102){
-	float A_hypoous2753 = F_safefy2752 + 82 - 68 * 835 + 391 / 686 + 339; 
-if(A_hypoous2753 == 69683){
-	double M_fillize2754 = A_hypoous2753 - 944 + 193 - 858 + 180 - 123; 
-if(M_fillize2754 < 93535){
-	double P_gemmi2755 = M_fillize2754 * 938 + 231 - 392 - 155 + 253 / 785;
-}
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 5357;
-	if(self.flat1440Hesless1441 + 713 + 766 / 899 / 227 * 525 == 41797){}
-	self.aristary1442Agoar1443 = 9090;
-	if(self.aristary1442Agoar1443 * 364 + 148 == 69152){}
-	self.culturalaceous1444Broncher1445 = 3926;
-	if(self.culturalaceous1444Broncher1445 + 333 + 991 - 82 / 482 - 821 < 82465){}
-		if(self.phemwise1446Lowfaction1447){}
+            }
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        int gravpositionular2738These2739 = -327;  //commontemple17
-        int mountette2742Term2743 = 3986;
-        int region2744 = -808;
-        switch (gravpositionular2738These2739) {
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:cpOrderId]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"cpOrderId must be not empty"];
+
+		
+        return;
+    }
+    
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * v_21 = [self antitic2163Cinctonative2164:@"deadation3101Hundred3102" hangacious2165Newise2166:8294 tostaneity2167Palliian2168:nil crescion2169Nephrbabyly2170:nil longization2171Plor2172:nil ];
+	if(v_21){}
+
+	self.juniorie1426Aevent1427 = 4129;
+	if(self.juniorie1426Aevent1427 - 680 / 972 / 189 + 157 > 225){}
+	self.ctenee1428Buyry1429 = 8791;
+	if(self.ctenee1428Buyry1429 + 136 - 621 + 462 - 985 / 133 > 39379){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9868;
+	if(self.civilast1432Stratalongular1433 * 797 * 419 / 991 < 97606){}
+		if(self.inad1434Simpleive1435){}
+        int strophfinish3083Hospitheadate3084 = 9931;  //commontemple16
+        int girlress3097Believeity3098 = 2691;
+        int threatia3099 = 1390;
+        switch (strophfinish3083Hospitheadate3084) {
                 
-            case 504:
+            case 309:
 			{
-				mountette2742Term2743 = region2744 - 870 * 820 / 203; 
+				girlress3097Believeity3098 = threatia3099 + 999 / 370 * 904; 
 			 break;
 			}
-			case 763:
+			case 734:
 			{
-				mountette2742Term2743 = region2744 * 783 * 878 + 601 / 313 / 720 + 844; 
+				girlress3097Believeity3098 = threatia3099 - 808 / 629; 
+			 break;
+			}
+			case 180:
+			{
+				girlress3097Believeity3098 = threatia3099 * 210 + 285 / 405 - 821; 
+			 break;
+			}
+			case 905:
+			{
+				girlress3097Believeity3098 = threatia3099 - 688 + 591 / 544 - 309 * 884 / 136; 
+			 break;
+			}
+			case -5:
+			{
+				girlress3097Believeity3098 = threatia3099 - 211 * 872; 
+			 break;
+			}
+			case 869:
+			{
+				girlress3097Believeity3098 = threatia3099 - 908 + 274 + 306; 
+			 break;
+			}
+			case 88:
+			{
+				girlress3097Believeity3098 = threatia3099 + 781 - 41 + 367 + 610 + 93; 
+			 break;
+			}
+			case -38:
+			{
+				girlress3097Believeity3098 = threatia3099 - 803 + 342 * 2 + 318; 
+			 break;
+			}
+			case 207:
+			{
+				girlress3097Believeity3098 = threatia3099 + 758 / 725 + 718 * 359; 
+			 break;
+			}
+			case 344:
+			{
+				girlress3097Believeity3098 = threatia3099 - 950 * 166 + 541 / 721 / 115; 
+			 break;
+			}
+			case 918:
+			{
+				girlress3097Believeity3098 = threatia3099 + 166 + 271 * 557 - 662 / 423; 
+			 break;
+			}
+			case 902:
+			{
+				girlress3097Believeity3098 = threatia3099 * 228 - 984 * 785 * 780 - 992; 
+			 break;
+			}
+			case 781:
+			{
+				girlress3097Believeity3098 = threatia3099 * 605 * 668 - 194; 
+			 break;
+			}
+			case 158:
+			{
+				girlress3097Believeity3098 = threatia3099 + 179 + 562 * 332 - 518 + 214 / 791; 
+			 break;
+			}
+			case 666:
+			{
+				girlress3097Believeity3098 = threatia3099 + 864 / 669 / 266 - 259 + 983; 
+			 break;
+			}
+			case 252:
+			{
+				girlress3097Believeity3098 = threatia3099 - 20 / 962 + 418 - 668 / 205 * 645; 
 			 break;
 			}
 			
@@ -3564,250 +3153,21 @@ if(M_fillize2754 < 93535){
             default:
                 break;
         }
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        return;
-    }
-    
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSInteger U_46 = [self opoard1745Tenitude1746:7092 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:4517 statutic1751Rurative1752:4030 hangform1753Containia1754:6499 opage1755Levose1756:9721 consumer1757Tussance1758:nil ];
-	if(U_46){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 4497;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 867 / 933 != 10772){}
-		if(self.prior1438Vanist1439){
-int P_doxo2786 = 828;
-int K_discover2787 = 823;
-switch (P_doxo2786) {
-   case 857:
-			{
-				P_doxo2786 = K_discover2787 - 373 / 141 + 141 / 81; 
-			 break;
-			}
-			case 872:
-			{
-				P_doxo2786 = K_discover2787 + 572 - 965 * 529; 
-			 break;
-			}
-			case -38:
-			{
-				P_doxo2786 = K_discover2787 + 424 + 11 + 220 * 209; 
-			 break;
-			}
-			case 988:
-			{
-				P_doxo2786 = K_discover2787 * 71 - 559 / 913 * 283 - 151; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 7631;
-	if(self.flat1440Hesless1441 + 984 / 951 * 453 > 84287){}
-	self.aristary1442Agoar1443 = 9977;
-	if(self.aristary1442Agoar1443 + 959 - 405 * 241 + 751 + 872 > 48115){}
-	self.culturalaceous1444Broncher1445 = 3545;
-	if(self.culturalaceous1444Broncher1445 - 172 / 465 - 32 / 850 != 97156){}
-		if(self.phemwise1446Lowfaction1447){}
-
-        BOOL sufferial2756Fur2757 = NO;  //commontemple15
-        int tussfutureate2758Greater2759 = 1682;
-        if (sufferial2756Fur2757){
-
-            int acriful2768Putial2769 = 3103;
-            int myseemsion2770 = -332;
-            switch (tussfutureate2758Greater2759) {
-                    
-                case 436:
-			{
-				acriful2768Putial2769 = myseemsion2770 * 639 + 775 - 860 - 57 / 404; 
-			 break;
-			}
-			case 601:
-			{
-				acriful2768Putial2769 = myseemsion2770 - 774 - 928 / 465 * 182; 
-			 break;
-			}
-			case 453:
-			{
-				acriful2768Putial2769 = myseemsion2770 * 865 / 618 + 216 * 294; 
-			 break;
-			}
-			case 712:
-			{
-				acriful2768Putial2769 = myseemsion2770 - 324 * 409 + 241 / 685; 
-			 break;
-			}
-			case 795:
-			{
-				acriful2768Putial2769 = myseemsion2770 - 903 + 391 / 752; 
-			 break;
-			}
-			case 228:
-			{
-				acriful2768Putial2769 = myseemsion2770 * 890 + 609 / 107 - 920 / 235; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-        }else{
-            sufferial2756Fur2757 = !sufferial2756Fur2757;
-                    
-        int clusfold2774Longuous2775 = 7826;  //temple9
-        int pend2776Major2777 = 9143;
-        for(int mediaacious2778Duization2779 = 0; mediaacious2778Duization2779 < clusfold2774Longuous2775; mediaacious2778Duization2779 += 8482) {
-            break; 
-        } 
-
-        
+        BOOL technologyarium3087Torquist3088 = NO;
+        int trueish3089Coversure3090 = 9931;
+        if (technologyarium3087Torquist3088){
+            
+            trueish3089Coversure3090 = trueish3089Coversure3090 + girlress3097Believeity3098;
         }
-
+        
         
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     if (self.isPaying) {
         SDK_LOG(wwwww_tag_wwwww_gloriistic_diamisslike);
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	 UNNotificationTrigger * D_29 = [self buildingian1927Themselvesette1928:@"mentsion2808Every2809" smalline1929Oscillolateen1930:nil quadragenivity1931Throughoutid1932:@"roborable2810Reporttic2811" orexiular1933Fidise1934:nil claim1935Ofivity1936:4505 triptarium1937Muniish1938:4626 ];
-	if(D_29){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6778;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 224 * 179 / 180 != 20845){ 
-float I_dactylauthorth2812 = 3216;
-
-int b_largacy2813 = 22;
-if(I_dactylauthorth2812 - 657 - 694 * 879 == 52831){
-	b_largacy2813 = I_dactylauthorth2812 - 498 + 687 - 172 / 593;
-}else{
-	b_largacy2813 = I_dactylauthorth2812 + 743 - 287 / 489 * 296 / 159 - 819;
-}
-
-double O_expectarian2814 = 749;
-if(b_largacy2813 + 755 * 639 * 457 + 294 != 49350){
-	O_expectarian2814 = b_largacy2813 * 648 / 135 / 397 * 651;
-}
-
-float k_dynaid2815 = 96;
-if(O_expectarian2814 - 897 / 348 - 641 * 700 / 24 <= 83570){
-	k_dynaid2815 = O_expectarian2814 * 451 * 238 - 607 - 570 / 555;
-}else{
-	k_dynaid2815 = O_expectarian2814 + 708 - 276 / 636 / 736;
-}
-
-double a_seekty2816 = 612;
-if(k_dynaid2815 + 516 - 868 / 501 - 410 < 93418){
-	a_seekty2816 = k_dynaid2815 * 793 / 809 / 235 + 702 + 683 / 990;
-}
-
-double i_sistdealacy2817 = 581;
-if(a_seekty2816 + 720 / 652 + 918 * 678 * 399 >= 6204){
-	i_sistdealacy2817 = a_seekty2816 + 482 - 914 * 44;
-}else{
-	i_sistdealacy2817 = a_seekty2816 * 274 / 589 + 560 / 776 - 207 * 63;
-}
-
-double j_naturaloon2818 = 674;
-if(i_sistdealacy2817 * 265 / 960 != 48270){
-	j_naturaloon2818 = i_sistdealacy2817 * 693 / 125 - 95 * 116 / 17 / 344;
-}else{
-	j_naturaloon2818 = i_sistdealacy2817 - 104 + 369 * 792;
-}
-
-int r_dogmatkin2819 = 903;
-if(j_naturaloon2818 - 970 + 671 - 491 / 405 / 831 + 617 <= 44906){
-	r_dogmatkin2819 = j_naturaloon2818 * 805 / 706;
-}
-
-int V_opisthcandidateical2820 = 705;
-if(r_dogmatkin2819 + 208 / 416 / 542 / 993 < 25641){
-	V_opisthcandidateical2820 = r_dogmatkin2819 + 702 - 44;
-}
-
-double X_meragainstard2821 = 220;
-if(V_opisthcandidateical2820 + 527 / 597 / 705 < 28526){
-	X_meragainstard2821 = V_opisthcandidateical2820 + 295 + 793 * 426 + 477;
-}else{
-	X_meragainstard2821 = V_opisthcandidateical2820 * 579 * 982 + 948;
-}
-
-double f_leave2822 = 664;
-if(X_meragainstard2821 - 251 - 843 - 647 / 166 <= 63867){
-	f_leave2822 = X_meragainstard2821 * 180 - 870;
-}else{
-	f_leave2822 = X_meragainstard2821 + 140 + 435 * 191 - 940;
-}
-
-int D_liminan2823 = 860;
-if(f_leave2822 + 268 - 121 + 604 * 392 / 177 * 319 == 44441){
-	D_liminan2823 = f_leave2822 * 762 - 918;
-}else{
-	D_liminan2823 = f_leave2822 * 393 * 14 + 972 * 235 + 799;
-}
-
-double f_felici2824 = 126;
-if(D_liminan2823 - 131 + 115 / 300 == 62504){
-	f_felici2824 = D_liminan2823 + 987 * 217 - 61 / 757;
-}else{
-	f_felici2824 = D_liminan2823 * 154 / 707;
-}
-
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2995;
-	if(self.flat1440Hesless1441 - 99 * 861 == 99357){}
-	self.aristary1442Agoar1443 = 8408;
-	if(self.aristary1442Agoar1443 * 141 * 856 + 546 + 833 < 72155){}
-	self.culturalaceous1444Broncher1445 = 2494;
-	if(self.culturalaceous1444Broncher1445 * 514 / 98 * 903 == 38742){}
-		if(self.phemwise1446Lowfaction1447){}
-
-        BOOL agoic2790Terrwise2791 = YES;  //commontemple18
-        int mortesque2792Chargeant2793 = 6596;
-        if (agoic2790Terrwise2791){
-
-            mortesque2792Chargeant2793 = mortesque2792Chargeant2793 / 7796;
-
-            int theyistic2800Cardi2801 = 5064;
-            int stud2804Vitror2805 = 8199;
-            int Mrsproof2806 = 4172;
-            switch (theyistic2800Cardi2801) {
-                    
-                case 700:
-			{
-				stud2804Vitror2805 = Mrsproof2806 + 701 + 883; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-        }
-        
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         return;
     }
     self.isPaying = YES;
@@ -3816,630 +3176,281 @@ if(D_liminan2823 - 131 + 115 / 300 == 62504){
     
     self.payHandler = handler;
     
-    LoginResponse *sLoginResponse = SDK_DATA.mLoginResponse;
-    AccountModel *accountModel = sLoginResponse.data;
+    DichtradeitudeTradeuous *sLoginResponse = SDK_DATA.mLoginResponse;
+    NihilativeFederalless *accountModel = sLoginResponse.data;
     
     if (!accountModel || !accountModel.userId) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
         self.isPaying = NO;
         return;
     }
     
     [self trackEventWithEventName:wwwww_tag_wwwww_Initiate_Checkout];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long d_3 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:7805 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:8376 ];
+	if(d_3){}
+
+	self.juniorie1426Aevent1427 = 30;
+	if(self.juniorie1426Aevent1427 * 47 - 870 + 182 + 575 * 860 / 993 >= 22629){ 
+int X_hotent3132 = 8773;
+
+float k_hyalaneity3133 = 275;
+if(X_hotent3132 * 975 * 827 * 194 * 800 != 83308){
+	k_hyalaneity3133 = X_hotent3132 + 947 / 374 + 446 * 163 + 729 / 965;
+}else{
+	k_hyalaneity3133 = X_hotent3132 * 805 * 999 - 230 * 437 + 325 * 72;
+}
+
+float c_mainkin3134 = 529;
+if(k_hyalaneity3133 - 322 + 217 + 945 > 60710){
+	c_mainkin3134 = k_hyalaneity3133 * 972 + 580;
+}
+
+int w_coverless3135 = 593;
+if(c_mainkin3134 + 354 / 613 / 231 * 785 / 979 <= 53655){
+	w_coverless3135 = c_mainkin3134 + 36 + 711 + 2;
+}
+
+float N_montify3136 = 842;
+if(w_coverless3135 - 241 / 90 < 74446){
+	N_montify3136 = w_coverless3135 + 219 * 287;
+}
+
+float Z_heptance3137 = 255;
+if(N_montify3136 + 82 - 720 / 717 - 964 < 93497){
+	Z_heptance3137 = N_montify3136 - 846 - 22 * 444 * 393 * 44;
+}
+
+int b_really3138 = 843;
+if(Z_heptance3137 - 871 - 1 - 224 * 519 * 240 <= 64899){
+	b_really3138 = Z_heptance3137 + 195 + 368;
+}
+
+float h_rock3139 = 43;
+if(b_really3138 * 466 + 86 * 597 / 460 - 873 <= 83549){
+	h_rock3139 = b_really3138 - 367 / 456;
+}else{
+	h_rock3139 = b_really3138 + 654 * 440 / 320 - 530;
+}
+
+double D_atade3140 = 108;
+if(h_rock3139 - 952 + 265 + 557 != 90631){
+	D_atade3140 = h_rock3139 + 221 + 847 + 636 - 957 + 554 - 594;
+}else{
+	D_atade3140 = h_rock3139 * 308 - 831 / 934 * 923;
+}
+
+int r_feelon3141 = 734;
+if(D_atade3140 + 670 - 536 - 174 / 437 - 334 + 397 != 54669){
+	r_feelon3141 = D_atade3140 - 530 / 413;
+}else{
+	r_feelon3141 = D_atade3140 * 505 / 577;
+}
+
+double k_uxoriize3142 = 970;
+if(r_feelon3141 - 294 * 615 == 75815){
+	k_uxoriize3142 = r_feelon3141 + 54 * 490;
+}else{
+	k_uxoriize3142 = r_feelon3141 + 545 - 629;
+}
+
+double B_osdecadeo3143 = 624;
+if(k_uxoriize3142 + 354 * 737 * 180 == 32283){
+	B_osdecadeo3143 = k_uxoriize3142 * 265 / 472 + 814;
+}else{
+	B_osdecadeo3143 = k_uxoriize3142 - 440 - 49 + 584;
+}
+
+float j_mulctfold3144 = 705;
+if(B_osdecadeo3143 - 882 / 629 + 794 != 6625){
+	j_mulctfold3144 = B_osdecadeo3143 * 994 / 462 * 778 / 682 + 407 * 23;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 8686;
+	if(self.ctenee1428Buyry1429 * 995 - 89 - 896 + 614 <= 21257){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4617;
+	if(self.civilast1432Stratalongular1433 - 353 - 344 - 505 + 637 == 18055){}
+		if(self.inad1434Simpleive1435){}
+        
+        long volvmuchcy3107Purpuret3108 = 914;  //commontemple4
+        BOOL vola3109Vacal3110 = NO;
+        if (volvmuchcy3107Purpuret3108 >= 3724)
+        {
+            volvmuchcy3107Purpuret3108 = volvmuchcy3107Purpuret3108 - 2101;
+            vola3109Vacal3110 = NO;
+
+            double x_momentacious3121 = 1523;
+
+float x_mordstayfaction3122 = 654;
+if(x_momentacious3121 * 45 / 713 + 602 + 15 + 183 * 52 != 85313){
+	x_mordstayfaction3122 = x_momentacious3121 - 518 * 844 + 625 * 688 / 79 / 925;
+}
+
+double L_lifeability3123 = 22;
+if(x_mordstayfaction3122 + 556 / 875 - 886 * 956 >= 55331){
+	L_lifeability3123 = x_mordstayfaction3122 * 139 + 97 / 427 + 946 * 280 / 449;
+}else{
+	L_lifeability3123 = x_mordstayfaction3122 * 54 / 63;
+}
+
+int m_furtdefense3124 = 749;
+if(L_lifeability3123 * 980 / 435 <= 51689){
+	m_furtdefense3124 = L_lifeability3123 - 134 + 915 + 415;
+}else{
+	m_furtdefense3124 = L_lifeability3123 * 748 + 496 - 639 + 477;
+}
+
+double c_supportot3125 = 636;
+if(m_furtdefense3124 - 161 + 913 + 670 > 87319){
+	c_supportot3125 = m_furtdefense3124 + 482 * 754 - 743 * 620;
+}else{
+	c_supportot3125 = m_furtdefense3124 + 653 + 190 + 782 - 467 / 565 / 568;
+}
+
+double h_monwomanen3126 = 492;
+if(c_supportot3125 + 859 - 710 / 212 * 752 > 86064){
+	h_monwomanen3126 = c_supportot3125 * 197 - 612 / 836 * 560 / 683 - 820;
+}
+
+double p_worldism3127 = 410;
+if(h_monwomanen3126 * 264 / 73 - 624 > 32293){
+	p_worldism3127 = h_monwomanen3126 + 408 * 231 * 788;
+}else{
+	p_worldism3127 = h_monwomanen3126 * 734 + 193 + 222 / 31;
+}
+
+double T_staffesque3128 = 899;
+if(p_worldism3127 * 370 - 316 - 913 - 748 + 414 * 708 <= 81539){
+	T_staffesque3128 = p_worldism3127 * 49 * 770;
+}
+
+float s_certainule3129 = 766;
+if(T_staffesque3128 - 885 + 31 != 5553){
+	s_certainule3129 = T_staffesque3128 + 683 - 560 * 941 * 732 - 135 - 736;
+}else{
+	s_certainule3129 = T_staffesque3128 + 869 + 894 * 333 - 685 * 419 - 833;
+}
+
+double Q_pell3130 = 776;
+if(s_certainule3129 * 865 / 272 + 364 - 33 * 11 * 206 == 75740){
+	Q_pell3130 = s_certainule3129 * 3 - 403 * 573 + 750 - 974 + 675;
+}else{
+	Q_pell3130 = s_certainule3129 + 942 / 174 * 155 / 447 * 15 / 593;
+}
+
+double L_gelattoo3131 = 406;
+if(Q_pell3130 - 706 * 137 + 493 - 549 + 872 == 21692){
+	L_gelattoo3131 = Q_pell3130 * 532 / 523;
+}
+
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     self.isPaying = NO;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int P_41 = [self likely2018Argueory2019:562 daughterling2020Movian2021:@"decisionative3154Volat3155" obeer2022Corister2023:nil waitie2024Threeety2025:nil ];
+	if(P_41){}
+
+	self.juniorie1426Aevent1427 = 1084;
+	if(self.juniorie1426Aevent1427 + 757 - 991 + 475 - 38 <= 69573){}
+	self.ctenee1428Buyry1429 = 2031;
+	if(self.ctenee1428Buyry1429 + 299 / 856 >= 12580){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 6763;
+	if(self.civilast1432Stratalongular1433 + 39 + 376 * 814 + 382 * 671 + 735 > 66568){}
+		if(self.inad1434Simpleive1435){}
+float T_leader3149 = 2708;
+
+if(T_leader3149 < 63521){
+	int l_actth3150 = T_leader3149 * 907 / 69 - 526 - 60; 
+if(l_actth3150 == 97346){
+	float j_narr3151 = l_actth3150 * 221 * 656 * 221; 
+if(j_narr3151 >= 12228){
+	float s_inter3152 = j_narr3151 * 135 / 346 / 928 - 489 / 460 + 651; 
+if(s_inter3152 <= 38753){
+	double b_dark3153 = s_inter3152 + 550 - 529 / 64 / 679 / 539 + 407;
+}
+}
+}
+}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     if(SDK_DATA.mConfigModel.togglePay){
         
-        [ElsureTraditional showLoadingAtView_MMMethodMMM:nil];
-        [ValueformVocar checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [BeyondaceousCommunityic showLoadingAtView_MMMethodMMM:nil];
+        [LampoCisling checkPayChannelWithSuccessBlock_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
             
-            [ElsureTraditional stopLoadingAtView_MMMethodMMM:nil];
+            [BeyondaceousCommunityic stopLoadingAtView_MMMethodMMM:nil];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long r_17 = [self moveule1852Siphoior1853:7270 petrator1854Religiousling1855:6506 viress1856Middle1857:nil visitster1858Hiem1859:nil pub1860Ponderdreammost1861:2725 patternacity1862Firmtion1863:nil treiskaidekie1864Highproof1865:8158 ];
+	if(r_17){}
+
+	self.juniorie1426Aevent1427 = 2217;
+	if(self.juniorie1426Aevent1427 + 962 + 236 / 992 <= 1307){}
+	self.ctenee1428Buyry1429 = 5219;
+	if(self.ctenee1428Buyry1429 * 572 / 739 * 897 == 91862){ 
+int R_pausation3162 = 2659;
+
+if(R_pausation3162 == 85657){
+	double E_phetaster3163 = R_pausation3162 + 891 * 422; 
+if(E_phetaster3163 >= 529){
+	float Q_nascless3164 = E_phetaster3163 - 637 + 487 / 211; 
+if(Q_nascless3164 >= 62552){
+	float B_enjoy3165 = Q_nascless3164 + 386 / 241;
+}
+}
+}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1245;
+	if(self.civilast1432Stratalongular1433 - 664 / 864 + 215 * 767 / 178 + 878 > 20639){}
+		if(self.inad1434Simpleive1435){}
+        NSDictionary *learnan3156Ordsupportast3157 = [NSDictionary dictionaryWithObjectsAndKeys:@"versacious3158Notoo3159",@(543), nil]; //temple29
+             if (learnan3156Ordsupportast3157.count > 3966) {}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
             
             if(responseData){
-                CreateOrderResp *cor = (CreateOrderResp *)responseData;
+                CupStringics *cor = (CupStringics *)responseData;
                 if(cor.isTogglePay){
                     
                     if(cor.hideSelectChannel){
                         
                         [self startMySdkPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSInteger O_40 = [self seeress1522Bareur1523:nil piair1524Sufeveningan1525:3866 ];
-	if(O_40){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2715;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 151 - 254 - 808 / 229 * 905 < 24250){}
-		if(self.prior1438Vanist1439){
-double A_sanguinent2835 = 3884;
-
-double z_pag2836 = 998;
-if(A_sanguinent2835 * 270 + 983 + 738 - 790 / 563 >= 56393){
-	z_pag2836 = A_sanguinent2835 + 11 + 722 * 511 * 958 * 277;
-}
-
-float i_whomuous2837 = 193;
-if(z_pag2836 - 810 + 904 != 82846){
-	i_whomuous2837 = z_pag2836 + 910 + 601 - 586 + 137;
-}
-
-float g_ord2838 = 698;
-if(i_whomuous2837 - 933 * 73 - 884 + 855 * 649 / 903 <= 84745){
-	g_ord2838 = i_whomuous2837 - 723 / 73 + 729;
-}
-
-float P_malleary2839 = 811;
-if(g_ord2838 * 205 / 75 == 86680){
-	P_malleary2839 = g_ord2838 * 709 / 451 * 312 / 249;
-}
-
-int l_not2840 = 56;
-if(P_malleary2839 + 581 + 895 / 32 / 521 / 362 / 850 < 48168){
-	l_not2840 = P_malleary2839 * 143 * 209 / 469;
-}
-
-int G_capt2841 = 306;
-if(l_not2840 - 567 - 518 * 470 + 641 * 511 - 678 < 89081){
-	G_capt2841 = l_not2840 - 175 + 897 + 162 + 945 * 412;
-}else{
-	G_capt2841 = l_not2840 - 327 * 823 + 57;
-}
-
-int T_orexfy2842 = 481;
-if(G_capt2841 * 14 - 207 + 404 < 99673){
-	T_orexfy2842 = G_capt2841 + 706 - 988;
-}
-
-double Z_frigy2843 = 354;
-if(T_orexfy2842 + 426 * 995 + 963 == 16934){
-	Z_frigy2843 = T_orexfy2842 + 155 + 597 + 474 * 118;
-}else{
-	Z_frigy2843 = T_orexfy2842 + 783 + 226 + 209 * 352;
-}
-
-double g_patersectionance2844 = 278;
-if(Z_frigy2843 - 165 * 337 * 671 + 120 * 714 < 10132){
-	g_patersectionance2844 = Z_frigy2843 - 563 - 688 + 752 / 993 + 21 + 643;
-}else{
-	g_patersectionance2844 = Z_frigy2843 * 787 + 353 + 768 - 861 + 315 * 497;
-}
-
-int I_necessaryesque2845 = 297;
-if(g_patersectionance2844 * 255 / 182 - 869 * 205 + 284 > 60277){
-	I_necessaryesque2845 = g_patersectionance2844 * 287 + 533 - 237 + 56 / 582;
-}
-
-int l_wayist2846 = 358;
-if(I_necessaryesque2845 + 965 - 508 / 439 * 308 * 195 >= 670){
-	l_wayist2846 = I_necessaryesque2845 * 103 / 347 / 991;
-}else{
-	l_wayist2846 = I_necessaryesque2845 * 649 * 899;
-}
-
-int s_heliistic2847 = 883;
-if(l_wayist2846 + 493 * 743 + 845 * 621 - 227 * 93 < 4333){
-	s_heliistic2847 = l_wayist2846 * 351 + 886 + 902;
-}
-
-}
-	self.flat1440Hesless1441 = 8175;
-	if(self.flat1440Hesless1441 - 429 + 39 * 94 + 363 < 98583){}
-	self.aristary1442Agoar1443 = 3710;
-	if(self.aristary1442Agoar1443 + 694 / 412 + 226 > 5482){}
-	self.culturalaceous1444Broncher1445 = 5893;
-	if(self.culturalaceous1444Broncher1445 + 13 * 810 / 888 * 222 == 17273){ 
-int a_foreigno2848 = 489;
-int O_cinctfailence2849 = 978;
-switch (a_foreigno2848) {
-   case 811:
-			{
-				a_foreigno2848 = O_cinctfailence2849 * 469 - 278 / 828; 
-			 break;
-			}
-			case 588:
-			{
-				a_foreigno2848 = O_cinctfailence2849 * 749 / 677 + 884 + 872 * 861 / 569; 
-			 break;
-			}
-			case 929:
-			{
-				a_foreigno2848 = O_cinctfailence2849 + 689 + 185 / 892; 
-			 break;
-			}
-			case -57:
-			{
-				a_foreigno2848 = O_cinctfailence2849 - 712 - 68 - 768 / 31 / 864; 
-			 break;
-			}
-			case 154:
-			{
-				a_foreigno2848 = O_cinctfailence2849 * 490 - 982 * 994; 
-			 break;
-			}
-			case 573:
-			{
-				a_foreigno2848 = O_cinctfailence2849 - 952 * 76 - 395 * 753 / 673 / 623; 
-			 break;
-			}
-			case 998:
-			{
-				a_foreigno2848 = O_cinctfailence2849 + 117 * 566 / 251 + 237; 
-			 break;
-			}
-			case 33:
-			{
-				a_foreigno2848 = O_cinctfailence2849 + 61 * 436 / 756 - 288 + 610; 
-			 break;
-			}
-			case 156:
-			{
-				a_foreigno2848 = O_cinctfailence2849 * 410 + 303 - 270 / 671; 
-			 break;
-			}
-			case 209:
-			{
-				a_foreigno2848 = O_cinctfailence2849 + 945 + 384 + 233; 
-			 break;
-			}
-			case 53:
-			{
-				a_foreigno2848 = O_cinctfailence2849 + 766 - 318 - 865; 
-			 break;
-			}
-			case 285:
-			{
-				a_foreigno2848 = O_cinctfailence2849 * 382 * 14 * 445 + 981 * 357 / 852; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){
-double T_laxment2850 = 7979;
-
-if(T_laxment2850 == 8344){
-	float p_bursly2851 = T_laxment2850 * 802 + 615 - 243 * 112; 
-if(p_bursly2851 != 43473){
-	float X_longen2852 = p_bursly2851 + 793 / 105 / 867 + 718; 
-if(X_longen2852 > 29469){
-	double Y_hydrospeakkin2853 = X_longen2852 - 851 + 919 + 829 - 506 / 453;
-}
-}
-}
-}
-        
-        int tainatic2825Mancy2826 = 2649;    //temple12
-        NSString *paperette2827Inter2828 = @"ballaster2829Shortaster2830";
-        while(paperette2827Inter2828.length > tainatic2825Mancy2826) {
-            break; 
-        } 
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                     }else{
                         
                         UIView *superView = appTopViewController.view;
-                        UIView *bgV = [[LoseionEmeticieView alloc] init];
+                        UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self patternorium1584Imfewion1585:6919 give1586Scribid1587:nil smalline1588Pancreaticotheirety1589:nil aboutular1590Dekid1591:nil lotose1592Iridot1593:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 7248;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 78 + 114 * 770 * 436 != 47149){}
-		if(self.prior1438Vanist1439){
-double V_emetiian2866 = 3596;
-
-if(V_emetiian2866 == 11839){
-	int z_algiaveryent2867 = V_emetiian2866 * 998 * 169 - 461 - 202; 
-if(z_algiaveryent2867 >= 77320){
-	double l_tensaneous2868 = z_algiaveryent2867 + 280 - 249; 
-if(l_tensaneous2868 != 25429){
-	float S_frangoon2869 = l_tensaneous2868 - 49 * 754 + 506 / 997; 
-if(S_frangoon2869 < 82982){
-	float H_quiteion2870 = S_frangoon2869 + 523 * 740 * 956 / 895 + 41 - 251; 
-if(H_quiteion2870 < 80463){
-	float Z_freeability2871 = H_quiteion2870 * 726 / 709 / 408 * 275 / 400 - 897;
-}
-}
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 8250;
-	if(self.flat1440Hesless1441 * 60 - 862 < 2937){ 
-int b_response2872 = 8966;
-
-double a_beforeite2873 = 156;
-if(b_response2872 + 856 / 529 != 16048){
-	a_beforeite2873 = b_response2872 + 236 + 727;
-}else{
-	a_beforeite2873 = b_response2872 * 138 - 245 + 730 / 855 + 200 - 126;
-}
-
-double F_pickling2874 = 244;
-if(a_beforeite2873 * 268 - 738 * 239 - 785 < 49878){
-	F_pickling2874 = a_beforeite2873 - 799 + 981 + 953 * 961 * 751;
-}
-
-int e_haloaneous2875 = 912;
-if(F_pickling2874 * 616 - 971 - 860 * 306 * 97 + 934 >= 60140){
-	e_haloaneous2875 = F_pickling2874 - 128 / 763 + 60;
-}
-
-int h_uxoracity2876 = 896;
-if(e_haloaneous2875 * 394 - 696 >= 45890){
-	h_uxoracity2876 = e_haloaneous2875 * 531 * 239 / 502 + 41 + 757;
-}else{
-	h_uxoracity2876 = e_haloaneous2875 * 906 / 830;
-}
-
-float y_plutress2877 = 196;
-if(h_uxoracity2876 + 871 - 371 + 822 + 732 * 816 + 170 >= 63651){
-	y_plutress2877 = h_uxoracity2876 * 323 + 779 * 962 / 572 / 904 + 568;
-}
-
-int K_polemice2878 = 650;
-if(y_plutress2877 * 561 - 796 - 343 / 926 + 989 == 75294){
-	K_polemice2878 = y_plutress2877 - 555 * 593 * 905;
-}else{
-	K_polemice2878 = y_plutress2877 * 410 * 994 + 750 / 827 / 934 - 310;
-}
-
-int Y_ontoing2879 = 93;
-if(K_polemice2878 - 603 - 646 * 677 / 521 * 629 <= 98152){
-	Y_ontoing2879 = K_polemice2878 - 344 / 444 / 248 + 885 - 386;
-}
-
- }
-	self.aristary1442Agoar1443 = 4327;
-	if(self.aristary1442Agoar1443 + 948 + 657 / 933 * 476 == 56767){ 
-double k_leviable2880 = 3474;
-
-int C_cribrsome2881 = 133;
-if(k_leviable2880 - 315 - 506 + 898 - 47 * 335 >= 15067){
-	C_cribrsome2881 = k_leviable2880 * 937 * 200;
-}else{
-	C_cribrsome2881 = k_leviable2880 * 369 + 844;
-}
-
-double a_effortture2882 = 388;
-if(C_cribrsome2881 * 40 * 402 * 29 / 571 - 610 * 515 >= 12265){
-	a_effortture2882 = C_cribrsome2881 - 450 + 730;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 9562;
-	if(self.culturalaceous1444Broncher1445 + 580 / 132 < 15424){}
-		if(self.phemwise1446Lowfaction1447){}
-        int awayation2858Tenta2859 = 5633;   //temple3
-        int arboriaceous2862Sculptish2863 = 5776;
-        int psammrateeur2864 = 3243;
-        switch (awayation2858Tenta2859) {
-                
-            case 533:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 - 553 + 196 / 27; 
-			 break;
-			}
-			case 970:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 380 * 218 * 758 + 749 * 382 * 162; 
-			 break;
-			}
-			case 522:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 459 + 988 - 417 * 941 * 964; 
-			 break;
-			}
-			case 169:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 + 714 * 26 - 111 * 703 * 982 - 28; 
-			 break;
-			}
-			case 49:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 - 896 / 340 / 659 / 692 + 261 - 468; 
-			 break;
-			}
-			case -77:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 652 - 680 / 942; 
-			 break;
-			}
-			case -6:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 - 909 / 607 / 461 * 848 + 836; 
-			 break;
-			}
-			case -5:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 24 / 463; 
-			 break;
-			}
-			case 550:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 970 - 858 + 604 / 116 / 685; 
-			 break;
-			}
-			case 462:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 + 108 + 926 + 369 * 444; 
-			 break;
-			}
-			case 566:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 182 + 697 / 6 * 262 + 113; 
-			 break;
-			}
-			case 741:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 - 620 + 574 - 207; 
-			 break;
-			}
-			case 299:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 424 * 249 - 45 / 191 / 391 * 21; 
-			 break;
-			}
-			case -34:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 + 858 + 761 + 311 / 835 - 499; 
-			 break;
-			}
-			case 86:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 - 146 * 946 - 468 + 419 - 920; 
-			 break;
-			}
-			case 688:
-			{
-				arboriaceous2862Sculptish2863 = psammrateeur2864 * 759 + 923 * 839; 
-			 break;
-			}
-			
-                
-            default:
-                break;
-        }
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                         [superView addSubview:bgV];
                         [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
                             make.edges.mas_equalTo(superView);
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL u_20 = [self hedrose1566Matterfication1567:nil specific1568Spaceature1569:nil simpleitor1570Yessive1571:2250 tricbelieveie1572Turboality1573:nil ];
-	if(u_20){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9448;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 579 / 480 * 664 - 434 - 158 <= 80439){}
-		if(self.prior1438Vanist1439){
-int W_thingator2895 = 5383;
-
-if(W_thingator2895 <= 54286){
-	int M_statementfication2896 = W_thingator2895 - 54 + 521 + 968 / 17 * 704;
-}
-}
-	self.flat1440Hesless1441 = 1455;
-	if(self.flat1440Hesless1441 * 630 + 238 + 677 * 137 < 45591){}
-	self.aristary1442Agoar1443 = 9460;
-	if(self.aristary1442Agoar1443 + 648 - 295 + 867 > 3936){}
-	self.culturalaceous1444Broncher1445 = 2476;
-	if(self.culturalaceous1444Broncher1445 - 455 + 337 + 100 + 190 + 436 / 738 <= 55078){}
-		if(self.phemwise1446Lowfaction1447){}
-
-        int hit2887Fuso2888 = 9187;  //commontemple17
-        int fandaneous2891Callior2892 = 8777;
-        int bibinsteadoon2893 = 882;
-        switch (hit2887Fuso2888) {
-                
-            case -20:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 + 583 - 647 - 936 / 518 + 619; 
-			 break;
-			}
-			case 194:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 854 * 444 - 762 / 60 + 603; 
-			 break;
-			}
-			case 136:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 322 + 566; 
-			 break;
-			}
-			case -25:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 * 492 / 591; 
-			 break;
-			}
-			case 285:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 967 + 837 / 813 / 540 - 417 - 3; 
-			 break;
-			}
-			case 86:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 828 / 661 / 610 - 672; 
-			 break;
-			}
-			case 546:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 * 526 * 951; 
-			 break;
-			}
-			case 53:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 611 / 248; 
-			 break;
-			}
-			case 375:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 737 * 91 + 680 / 950 - 64; 
-			 break;
-			}
-			case 515:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 * 415 - 34; 
-			 break;
-			}
-			case 357:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 * 784 / 442; 
-			 break;
-			}
-			case 573:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 + 3 * 834 / 828; 
-			 break;
-			}
-			case 677:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 * 177 * 675; 
-			 break;
-			}
-			case 403:
-			{
-				fandaneous2891Callior2892 = bibinsteadoon2893 - 886 / 88 * 449 + 537 / 260; 
-			 break;
-			}
-			
-                
-            default:
-                break;
-        }
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                         }];
                         
-                        CleistitCapitfollowularView *mSelectPayChannelView = [[CleistitCapitfollowularView alloc] init];
+                        KeyhoodFireainView *mSelectPayChannelView = [[KeyhoodFireainView alloc] init];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSInteger q_16 = [self seeress1522Bareur1523:nil piair1524Sufeveningan1525:1112 ];
-	if(q_16){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8258;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 293 / 70 == 45997){}
-		if(self.prior1438Vanist1439){
-double V_solenor2910 = 2117;
-
-if(V_solenor2910 <= 6324){
-	float m_whenion2911 = V_solenor2910 + 301 / 237 / 111 / 290; 
-if(m_whenion2911 > 50977){
-	double f_firstety2912 = m_whenion2911 - 968 - 254 + 718 + 975 / 498; 
-if(f_firstety2912 <= 17563){
-	int A_melanacy2913 = f_firstety2912 + 972 * 322 - 340; 
-if(A_melanacy2913 <= 68178){
-	double K_opacfication2914 = A_melanacy2913 * 420 / 471; 
-if(K_opacfication2914 != 6885){
-	double z_fielder2915 = K_opacfication2914 * 718 / 212 * 967 - 952;
-}
-}
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 516;
-	if(self.flat1440Hesless1441 - 936 / 507 / 247 == 67360){}
-	self.aristary1442Agoar1443 = 4368;
-	if(self.aristary1442Agoar1443 - 226 / 455 / 508 == 7053){}
-	self.culturalaceous1444Broncher1445 = 9228;
-	if(self.culturalaceous1444Broncher1445 * 27 + 456 <= 45309){}
-		if(self.phemwise1446Lowfaction1447){}
-int T_receiveitor2897 = 1128;
-
-double f_bagia2898 = 568;
-if(T_receiveitor2897 + 378 - 934 / 128 * 202 - 88 == 86136){
-	f_bagia2898 = T_receiveitor2897 - 730 - 470 + 863 * 197 - 654;
-}
-
-double N_junctature2899 = 859;
-if(f_bagia2898 - 628 - 886 - 584 + 104 + 108 * 592 == 66274){
-	N_junctature2899 = f_bagia2898 + 45 - 614 + 436 - 561 - 81 - 673;
-}
-
-float F_thirdious2900 = 611;
-if(N_junctature2899 * 432 * 340 - 56 / 301 <= 3016){
-	F_thirdious2900 = N_junctature2899 - 511 * 319 + 299 + 647;
-}
-
-int D_kitchenical2901 = 165;
-if(F_thirdious2900 - 595 - 976 / 29 + 670 - 648 >= 26181){
-	D_kitchenical2901 = F_thirdious2900 - 714 - 501 * 623 / 791 * 252 * 888;
-}
-
-float j_sectionad2902 = 174;
-if(D_kitchenical2901 + 630 + 420 >= 76947){
-	j_sectionad2902 = D_kitchenical2901 + 663 / 462 - 925 - 940 / 247 * 754;
-}
-
-float Z_collectiono2903 = 394;
-if(j_sectionad2902 * 454 * 252 + 44 / 414 / 654 == 61674){
-	Z_collectiono2903 = j_sectionad2902 - 549 / 596 * 643 * 733;
-}else{
-	Z_collectiono2903 = j_sectionad2902 + 970 - 795;
-}
-
-int O_multat2904 = 516;
-if(Z_collectiono2903 * 375 + 82 / 848 <= 41467){
-	O_multat2904 = Z_collectiono2903 - 606 / 73 - 796 * 118 - 68 * 102;
-}else{
-	O_multat2904 = Z_collectiono2903 * 122 / 995;
-}
-
-int B_deltinterview2905 = 35;
-if(O_multat2904 + 531 / 236 != 73014){
-	B_deltinterview2905 = O_multat2904 + 921 - 864 + 587 - 527;
-}
-
-double K_matteress2906 = 468;
-if(B_deltinterview2905 - 986 * 34 + 194 / 605 >= 9528){
-	K_matteress2906 = B_deltinterview2905 - 957 - 82 - 569 + 925 + 936;
-}else{
-	K_matteress2906 = B_deltinterview2905 + 511 / 89 * 276 * 863;
-}
-
-int m_choicecy2907 = 935;
-if(K_matteress2906 - 666 - 461 - 729 * 393 * 940 - 993 > 93676){
-	m_choicecy2907 = K_matteress2906 - 108 + 690 - 555 + 909 * 349;
-}else{
-	m_choicecy2907 = K_matteress2906 * 82 + 540 + 861 - 882;
-}
-
-int o_ominance2908 = 21;
-if(m_choicecy2907 + 27 + 856 + 512 * 190 - 754 >= 43423){
-	o_ominance2908 = m_choicecy2907 + 132 - 681;
-}else{
-	o_ominance2908 = m_choicecy2907 + 30 - 15 + 612;
-}
-
-int d_tent2909 = 433;
-if(o_ominance2908 - 21 - 857 * 33 == 99686){
-	d_tent2909 = o_ominance2908 - 572 - 571 + 705;
-}else{
-	d_tent2909 = o_ominance2908 - 549 - 833 * 477 + 779;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                         mSelectPayChannelView.mCallBack = ^(NSString *msg, NSInteger tag, NSDictionary *dic) {
                             
                             switch (tag) {
@@ -4474,9 +3485,9 @@ if(o_ominance2908 - 21 - 857 * 33 == 99686){
             
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
             
-        } errorBlock_MMMethodMMM:^(HardMere *error) {
+        } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
             
-            [ElsureTraditional stopLoadingAtView_MMMethodMMM:nil];
+            [BeyondaceousCommunityic stopLoadingAtView_MMMethodMMM:nil];
             
             [self startIapPay_MMMethodMMM:accountModel cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra productId_MMMethodMMM:productId];
         }];
@@ -4488,28 +3499,6 @@ if(o_ominance2908 - 21 - 857 * 33 == 99686){
 }
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (void)hetertic1713Cunefederal1714:(NSObject *)hetertic1713_1 vinccarrylike1715Factorance1716:(NSInteger)vinccarrylike1715_2 leasttion1717Darksion1718:(NSDictionary *)leasttion1717_3 fide1719Platt1720:(NSInteger)fide1719_4 sophyrestage1721Mechanresponseible1722:( UNNotificationTrigger *)sophyrestage1721_5{ //insert method
-	if(vinccarrylike1715_2 + 688 / 889 / 369 / 283 - 332 * 25 > 89191){
-		        
-        float dotsion1723Penous1724 = 6731;  //commontemple2
-        float mostit1725Vend1726 = 9159;
-
-        BOOL bodyuous1727Cultureture1728 = YES;
-        while (dotsion1723Penous1724 < 537)
-        {
-            dotsion1723Penous1724 = dotsion1723Penous1724 + 967;
-            bodyuous1727Cultureture1728 = NO;
-            if(bodyuous1727Cultureture1728){
-                break;
-            }
-        }
-
-        dotsion1723Penous1724 = mostit1725Vend1726 + 837 ;
-        bodyuous1727Cultureture1728 = YES;
-	}
- }
-//===insert my method end=== 2023-12-13 18:35:09
 - (void)trackEventWithEventName:(NSString *)name{
     [self trackEventWithEventName:name eventValues:nil];
 }
@@ -4518,163 +3507,13 @@ if(o_ominance2908 - 21 - 857 * 33 == 99686){
 {
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
-    [CheckWifewise logServerWithEventName_MMMethodMMM:name];
-    [CheckWifewise logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
+    [EspeciallytionOenitious logServerWithEventName_MMMethodMMM:name];
+    [EspeciallytionOenitious logWithEventName_MMMethodMMM:name parameters_MMMethodMMM:eventValues];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self hetertic1713Cunefederal1714:nil vinccarrylike1715Factorance1716:456 leasttion1717Darksion1718:nil fide1719Platt1720:200 sophyrestage1721Mechanresponseible1722:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){
-int n_pheno2930 = 704;
-int Y_fulminconsumerence2931 = 310;
-switch (n_pheno2930) {
-   case 204:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 692 / 651; 
-			 break;
-			}
-			case 241:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 713 / 637; 
-			 break;
-			}
-			case 88:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 + 3 - 326 - 689 * 276; 
-			 break;
-			}
-			case 85:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 * 45 - 605; 
-			 break;
-			}
-			case 798:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 + 127 + 96 - 829; 
-			 break;
-			}
-			case 196:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 + 321 / 289 / 301 * 808; 
-			 break;
-			}
-			case -45:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 611 * 462 + 403 - 294; 
-			 break;
-			}
-			case 662:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 * 398 * 716 + 595 - 234; 
-			 break;
-			}
-			case 343:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 344 * 737 / 974; 
-			 break;
-			}
-			case -66:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 735 - 700 + 539 - 918 / 670 * 237; 
-			 break;
-			}
-			case 849:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 + 816 - 687 / 32 * 503 - 716 / 872; 
-			 break;
-			}
-			case -76:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 80 / 127 * 724 * 449 / 231; 
-			 break;
-			}
-			case 209:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 * 38 * 889 - 238; 
-			 break;
-			}
-			case 323:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 * 408 / 474 * 33 / 379 + 83; 
-			 break;
-			}
-			case 601:
-			{
-				n_pheno2930 = Y_fulminconsumerence2931 - 732 + 812 + 603 * 193 * 334; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 2699;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 166 * 432 / 947 > 97399){ 
-int k_gnclassarium2932 = 3723;
-
-if(k_gnclassarium2932 == 1852){
-	double n_researchitive2933 = k_gnclassarium2932 - 657 - 7 - 216; 
-if(n_researchitive2933 <= 19522){
-	double F_people2934 = n_researchitive2933 * 385 + 900 / 965 / 450 / 551; 
-if(F_people2934 >= 91633){
-	float y_right2935 = F_people2934 * 222 + 571; 
-if(y_right2935 <= 10148){
-	double N_kiloosity2936 = y_right2935 + 59 - 130 + 190 - 614;
-}
-}
-}
-}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5528;
-	if(self.flat1440Hesless1441 + 837 + 86 / 984 - 42 - 865 + 111 != 4000){}
-	self.aristary1442Agoar1443 = 9308;
-	if(self.aristary1442Agoar1443 * 881 * 739 * 654 - 856 - 459 / 500 < 86743){}
-	self.culturalaceous1444Broncher1445 = 1058;
-	if(self.culturalaceous1444Broncher1445 - 584 * 390 + 677 / 764 != 486){}
-		if(self.phemwise1446Lowfaction1447){
-int i_emetoance2937 = 3121;
-
-double Y_pector2938 = 111;
-if(i_emetoance2937 - 541 + 811 <= 75287){
-	Y_pector2938 = i_emetoance2937 - 859 * 715;
-}else{
-	Y_pector2938 = i_emetoance2937 - 855 - 392 - 179;
-}
-
-double M_characterably2939 = 984;
-if(Y_pector2938 - 808 - 598 >= 67035){
-	M_characterably2939 = Y_pector2938 - 904 - 129 * 793 / 68 * 564 / 976;
-}
-
-double d_sincelet2940 = 370;
-if(M_characterably2939 * 680 - 659 - 996 - 330 - 988 != 8110){
-	d_sincelet2940 = M_characterably2939 * 787 * 74 * 93 / 584;
-}else{
-	d_sincelet2940 = M_characterably2939 * 513 / 805 * 280 + 9 + 161 / 283;
-}
-
-}
-        
-        long genyballcy2916Bronchability2917 = 7947;  //commontemple3
-        BOOL plangibility2918Hex2919 = YES;
-        while (genyballcy2916Bronchability2917 < 7807)
-        {
-            if(genyballcy2916Bronchability2917 < 5998){
-                break;
-            }
-            genyballcy2916Bronchability2917 = genyballcy2916Bronchability2917 + 1378;
-            plangibility2918Hex2919 = YES;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
 }
 
 
@@ -4682,706 +3521,232 @@ if(M_characterably2939 * 680 - 659 - 996 - 330 - 988 != 8110){
 {
     
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	BOOL C_28 = [self hardly1536Archaeoally1537:nil ];
-	if(C_28){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int n_oftenization2966 = 261;
-double H_doorress2967 = 114;
-switch (n_oftenization2966) {
-   case 483:
-			{
-				n_oftenization2966 = H_doorress2967 + 915 + 953 - 765 * 519; 
-			 break;
-			}
-			case 628:
-			{
-				n_oftenization2966 = H_doorress2967 - 288 + 100 - 584 + 28; 
-			 break;
-			}
-			case 872:
-			{
-				n_oftenization2966 = H_doorress2967 + 430 - 743 - 693 * 956 + 333; 
-			 break;
-			}
-			case 323:
-			{
-				n_oftenization2966 = H_doorress2967 + 307 - 343 + 656 * 462; 
-			 break;
-			}
-			case 899:
-			{
-				n_oftenization2966 = H_doorress2967 - 139 + 336 / 459; 
-			 break;
-			}
-			case 257:
-			{
-				n_oftenization2966 = H_doorress2967 * 956 - 368 + 488 + 497 - 325 - 670; 
-			 break;
-			}
-			case 951:
-			{
-				n_oftenization2966 = H_doorress2967 * 189 - 241 / 473 * 956 - 265 / 258; 
-			 break;
-			}
-			case 85:
-			{
-				n_oftenization2966 = H_doorress2967 + 568 - 886; 
-			 break;
-			}
-			case 439:
-			{
-				n_oftenization2966 = H_doorress2967 + 81 * 139 - 446; 
-			 break;
-			}
-			case 565:
-			{
-				n_oftenization2966 = H_doorress2967 - 623 * 514 * 8 - 424; 
-			 break;
-			}
-			case 732:
-			{
-				n_oftenization2966 = H_doorress2967 + 42 - 26; 
-			 break;
-			}
-			case 645:
-			{
-				n_oftenization2966 = H_doorress2967 - 348 - 458; 
-			 break;
-			}
-			case -34:
-			{
-				n_oftenization2966 = H_doorress2967 - 856 - 976 * 138; 
-			 break;
-			}
-			case 589:
-			{
-				n_oftenization2966 = H_doorress2967 - 655 + 603 / 784 - 254; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 8485;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 757 * 616 < 67614){}
-		if(self.prior1438Vanist1439){
-double E_physalidly2968 = 349;
-
-int A_shootier2969 = 469;
-if(E_physalidly2968 - 717 * 450 > 90755){
-	A_shootier2969 = E_physalidly2968 - 476 - 687;
-}
-
-float j_heartion2970 = 519;
-if(A_shootier2969 * 528 - 95 < 75759){
-	j_heartion2970 = A_shootier2969 + 642 / 904 - 499 + 86 - 513 + 123;
-}
-
-int y_example2971 = 81;
-if(j_heartion2970 - 230 * 160 * 942 > 25480){
-	y_example2971 = j_heartion2970 * 434 * 327 / 824 - 750 / 950 / 533;
-}
-
-float z_variousitious2972 = 164;
-if(y_example2971 - 619 / 809 * 56 - 46 / 14 * 856 >= 25311){
-	z_variousitious2972 = y_example2971 * 232 / 532;
-}
-
-float Q_roseous2973 = 558;
-if(z_variousitious2972 * 686 / 820 + 935 > 35879){
-	Q_roseous2973 = z_variousitious2972 + 960 - 925 * 817 / 986 / 722;
-}
-
-int C_removekin2974 = 726;
-if(Q_roseous2973 - 485 / 464 != 40747){
-	C_removekin2974 = Q_roseous2973 * 236 * 639 / 469;
-}else{
-	C_removekin2974 = Q_roseous2973 + 554 + 91 - 927 / 294 * 919;
-}
-
-double Z_hippitious2975 = 753;
-if(C_removekin2974 + 322 / 523 + 973 - 723 - 858 * 276 != 99366){
-	Z_hippitious2975 = C_removekin2974 - 438 + 953 * 902 - 81;
-}else{
-	Z_hippitious2975 = C_removekin2974 - 900 - 780 * 217 * 341;
-}
-
-int z_enery2976 = 272;
-if(Z_hippitious2975 * 237 + 948 + 370 != 95991){
-	z_enery2976 = Z_hippitious2975 + 477 - 596;
-}
-
-double L_squalproof2977 = 130;
-if(z_enery2976 - 339 - 86 * 600 * 271 <= 25694){
-	L_squalproof2977 = z_enery2976 * 809 + 815;
-}
-
-}
-	self.flat1440Hesless1441 = 116;
-	if(self.flat1440Hesless1441 + 336 / 591 - 415 / 551 / 936 != 17476){}
-	self.aristary1442Agoar1443 = 1053;
-	if(self.aristary1442Agoar1443 + 80 - 535 - 116 / 38 * 43 + 185 >= 97635){}
-	self.culturalaceous1444Broncher1445 = 9809;
-	if(self.culturalaceous1444Broncher1445 * 243 + 713 + 410 * 121 == 1310){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSInteger macrothrowuous2943Nupticapitalice2944 = 3883;  //commontemple13
-        BOOL imicain2945Onlyad2946 = NO;
-        if (imicain2945Onlyad2946){
-            imicain2945Onlyad2946 = YES;
-        }else{
-            imicain2945Onlyad2946 = !imicain2945Onlyad2946;
-            int L_hangence2961 = 8265;
-
-if(L_hangence2961 == 83241){
-	float z_matterality2962 = L_hangence2961 * 672 + 470; 
-if(z_matterality2962 > 84802){
-	double F_omphalplanair2963 = z_matterality2962 + 802 + 527 + 358 * 524 * 151; 
-if(F_omphalplanair2963 < 6300){
-	float W_scrupulaceous2964 = F_omphalplanair2963 * 13 * 79 / 522 + 102 - 785 + 610; 
-if(W_scrupulaceous2964 >= 44447){
-	int u_during2965 = W_scrupulaceous2964 * 995 * 555;
-}
-}
-}
-}
-        }
-
-        if (imicain2945Onlyad2946){
-            macrothrowuous2943Nupticapitalice2944 = 4035;
-            
-        }
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSString * x_23 = [self fatherfier1988Script1989:@"coverprojecton2984Industry2985" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(x_23){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-double C_taxful2986 = 3274;
-
-if(C_taxful2986 == 40928){
-	double j_opoterance2987 = C_taxful2986 * 853 - 674 / 687 / 785;
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 6266;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 939 / 559 + 44 != 4947){}
-		if(self.prior1438Vanist1439){
-double t_opulibility2988 = 1633;
-
-float c_nascie2989 = 781;
-if(t_opulibility2988 - 824 + 680 + 453 / 432 - 935 + 199 < 23520){
-	c_nascie2989 = t_opulibility2988 - 805 + 518 * 549 / 355 * 168 / 380;
-}
-
-float W_lithhood2990 = 457;
-if(c_nascie2989 + 23 - 317 / 26 == 75393){
-	W_lithhood2990 = c_nascie2989 * 598 * 855 * 232 + 196;
-}else{
-	W_lithhood2990 = c_nascie2989 * 881 * 651 / 917 + 718 - 124;
-}
-
-float G_joination2991 = 401;
-if(W_lithhood2990 - 501 / 937 + 217 + 982 * 250 + 342 <= 30248){
-	G_joination2991 = W_lithhood2990 * 210 + 497 - 368;
-}else{
-	G_joination2991 = W_lithhood2990 * 139 / 508 * 985 + 850 + 684 + 281;
-}
-
-double B_flexior2992 = 380;
-if(G_joination2991 - 915 * 428 + 317 * 888 - 202 <= 17587){
-	B_flexior2992 = G_joination2991 * 190 - 311 + 739;
-}
-
-double h_boleer2993 = 491;
-if(B_flexior2992 + 173 * 798 >= 87829){
-	h_boleer2993 = B_flexior2992 + 552 - 17 / 833 / 705 - 392 + 501;
-}
-
-int z_asaccountature2994 = 516;
-if(h_boleer2993 - 146 - 959 / 444 * 133 * 454 / 603 != 16610){
-	z_asaccountature2994 = h_boleer2993 * 6 / 313 * 891 * 154 / 531;
-}
-
-float A_tachibility2995 = 438;
-if(z_asaccountature2994 * 323 - 975 / 529 + 723 / 846 * 27 >= 37018){
-	A_tachibility2995 = z_asaccountature2994 * 722 / 282 + 109 * 481 / 160 + 644;
-}
-
-int N_dogfold2996 = 636;
-if(A_tachibility2995 - 278 * 254 < 24724){
-	N_dogfold2996 = A_tachibility2995 + 254 + 848 - 912 * 942 / 480 + 279;
-}else{
-	N_dogfold2996 = A_tachibility2995 - 737 / 194 * 875 / 988 / 608;
-}
-
-float k_molile2997 = 996;
-if(N_dogfold2996 - 169 + 319 * 287 - 717 / 695 + 657 < 39790){
-	k_molile2997 = N_dogfold2996 - 196 / 804;
-}
-
-double H_operationary2998 = 918;
-if(k_molile2997 + 426 / 264 < 34438){
-	H_operationary2998 = k_molile2997 - 23 * 227 / 247 * 88 - 795 * 401;
-}
-
-}
-	self.flat1440Hesless1441 = 6618;
-	if(self.flat1440Hesless1441 * 902 * 349 * 359 / 317 / 676 * 567 != 63295){}
-	self.aristary1442Agoar1443 = 4931;
-	if(self.aristary1442Agoar1443 - 467 - 296 * 126 + 126 + 502 / 139 != 22275){ 
-double w_during2999 = 6120;
-
-float W_notocentralaceous3000 = 870;
-if(w_during2999 - 792 + 595 / 494 * 16 <= 72851){
-	W_notocentralaceous3000 = w_during2999 + 210 + 766 / 52;
-}else{
-	W_notocentralaceous3000 = w_during2999 * 481 + 7;
-}
-
-double o_plicatsive3001 = 610;
-if(W_notocentralaceous3000 * 755 * 691 / 565 == 18906){
-	o_plicatsive3001 = W_notocentralaceous3000 + 330 / 887 - 946 + 772 - 640 * 924;
-}else{
-	o_plicatsive3001 = W_notocentralaceous3000 * 191 - 360;
-}
-
-int z_figureence3002 = 993;
-if(o_plicatsive3001 * 927 * 235 - 42 == 89981){
-	z_figureence3002 = o_plicatsive3001 - 623 / 454 - 223;
-}
-
-int F_mouthoon3003 = 289;
-if(z_figureence3002 - 315 - 83 * 850 - 975 + 809 == 10476){
-	F_mouthoon3003 = z_figureence3002 * 262 * 613;
-}else{
-	F_mouthoon3003 = z_figureence3002 - 487 / 692 + 508 + 888 * 386;
-}
-
-float h_historyosity3004 = 91;
-if(F_mouthoon3003 * 328 + 548 + 564 * 582 + 271 != 58266){
-	h_historyosity3004 = F_mouthoon3003 - 11 * 644 / 718 * 655 - 415;
-}
-
-float B_heurfaction3005 = 38;
-if(h_historyosity3004 * 5 + 155 - 286 + 901 - 28 / 902 < 6013){
-	B_heurfaction3005 = h_historyosity3004 + 929 - 340 * 245;
-}
-
- }
-	self.culturalaceous1444Broncher1445 = 106;
-	if(self.culturalaceous1444Broncher1445 - 207 / 347 * 534 / 697 == 68308){ 
-int A_cratproof3006 = 757;
-double F_stultain3007 = 183;
-switch (A_cratproof3006) {
-   case 167:
-			{
-				A_cratproof3006 = F_stultain3007 * 557 * 387 * 911 - 224 * 9; 
-			 break;
-			}
-			case 754:
-			{
-				A_cratproof3006 = F_stultain3007 + 451 - 121 / 479; 
-			 break;
-			}
-			case 421:
-			{
-				A_cratproof3006 = F_stultain3007 - 127 * 784 / 902 * 516; 
-			 break;
-			}
-			case 149:
-			{
-				A_cratproof3006 = F_stultain3007 + 542 * 304 - 574 / 538 * 166 / 216; 
-			 break;
-			}
-			case 90:
-			{
-				A_cratproof3006 = F_stultain3007 - 137 - 488; 
-			 break;
-			}
-			case 517:
-			{
-				A_cratproof3006 = F_stultain3007 - 195 - 466; 
-			 break;
-			}
-			case 253:
-			{
-				A_cratproof3006 = F_stultain3007 * 110 / 686; 
-			 break;
-			}
-			case 897:
-			{
-				A_cratproof3006 = F_stultain3007 - 718 - 894 * 291; 
-			 break;
-			}
-			case 825:
-			{
-				A_cratproof3006 = F_stultain3007 * 44 * 998; 
-			 break;
-			}
-			case 689:
-			{
-				A_cratproof3006 = F_stultain3007 - 956 * 156 * 814 / 73 / 475 / 838; 
-			 break;
-			}
-			case 686:
-			{
-				A_cratproof3006 = F_stultain3007 * 933 - 912; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){}
-int M_phasiaitor2982 = 1878;
-
-int b_pecc2983 = 756;
-if(M_phasiaitor2982 * 734 * 466 + 816 * 480 == 32124){
-	b_pecc2983 = M_phasiaitor2982 * 342 * 625;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         return;
     }
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self patternorium1584Imfewion1585:9993 give1586Scribid1587:nil smalline1588Pancreaticotheirety1589:nil aboutular1590Dekid1591:nil lotose1592Iridot1593:nil ];
+	long g_6 = [self moveule1852Siphoior1853:2118 petrator1854Religiousling1855:4812 viress1856Middle1857:nil visitster1858Hiem1859:nil pub1860Ponderdreammost1861:3335 patternacity1862Firmtion1863:nil treiskaidekie1864Highproof1865:4491 ];
+	if(g_6){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6869;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 849 * 492 / 121 * 122 * 618 / 290 != 68032){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7858;
-	if(self.flat1440Hesless1441 * 337 / 229 / 367 - 416 >= 82857){}
-	self.aristary1442Agoar1443 = 9325;
-	if(self.aristary1442Agoar1443 - 604 / 123 + 817 * 442 + 674 >= 6984){}
-	self.culturalaceous1444Broncher1445 = 2095;
-	if(self.culturalaceous1444Broncher1445 * 894 * 390 * 386 / 833 * 810 / 978 < 48085){ 
-int X_roadate3024 = 157;
-int b_rhagfication3025 = 590;
-switch (X_roadate3024) {
-   case 926:
+	self.juniorie1426Aevent1427 = 82;
+	if(self.juniorie1426Aevent1427 + 347 * 443 / 416 * 802 * 861 * 331 != 54545){}
+	self.ctenee1428Buyry1429 = 2786;
+	if(self.ctenee1428Buyry1429 + 851 * 766 - 85 + 812 < 77426){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 2333;
+	if(self.civilast1432Stratalongular1433 * 81 - 541 >= 44402){ 
+int M_philworkerative3174 = 848;
+int C_ficiary3175 = 653;
+switch (M_philworkerative3174) {
+   case 706:
 			{
-				X_roadate3024 = b_rhagfication3025 + 229 - 43 + 152 + 212 * 418 / 122; 
+				M_philworkerative3174 = C_ficiary3175 + 429 * 88; 
 			 break;
 			}
-			case -5:
+			case -36:
 			{
-				X_roadate3024 = b_rhagfication3025 + 195 + 166 + 411 / 820 / 210; 
-			 break;
-			}
-			case 132:
-			{
-				X_roadate3024 = b_rhagfication3025 + 386 - 114 + 153; 
-			 break;
-			}
-			case 907:
-			{
-				X_roadate3024 = b_rhagfication3025 * 556 + 292 / 674; 
-			 break;
-			}
-			case 507:
-			{
-				X_roadate3024 = b_rhagfication3025 - 993 + 146 * 672 + 378; 
-			 break;
-			}
-			case 441:
-			{
-				X_roadate3024 = b_rhagfication3025 - 932 - 642 + 616 * 602; 
-			 break;
-			}
-			case 995:
-			{
-				X_roadate3024 = b_rhagfication3025 - 543 * 370 * 174 - 538; 
-			 break;
-			}
-			case -60:
-			{
-				X_roadate3024 = b_rhagfication3025 * 358 - 381 - 499 * 266; 
-			 break;
-			}
-			case 478:
-			{
-				X_roadate3024 = b_rhagfication3025 * 172 * 282 * 873; 
-			 break;
-			}
-			case 421:
-			{
-				X_roadate3024 = b_rhagfication3025 * 27 + 887; 
-			 break;
-			}
-			case 331:
-			{
-				X_roadate3024 = b_rhagfication3025 - 190 - 234 - 758 + 895; 
-			 break;
-			}
-			case 238:
-			{
-				X_roadate3024 = b_rhagfication3025 - 320 - 391 + 748 / 857 * 305 - 344; 
+				M_philworkerative3174 = C_ficiary3175 * 239 / 925; 
 			 break;
 			}
 			   default:
        break;
 			}
  }
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSInteger certain3012Marriage3013 = 8150;  //commontemple4
-        BOOL handatic3014Figice3015 = NO;
-        if (certain3012Marriage3013 <= 8985)
-        {
-            certain3012Marriage3013 = certain3012Marriage3013 - 9102;
-            handatic3014Figice3015 = NO;
-        }
+		if(self.inad1434Simpleive1435){
+int C_sancize3176 = 4260;
 
-        
+if(C_sancize3176 > 90948){
+	double d_drawade3177 = C_sancize3176 - 252 / 320 / 121 * 126;
+}
+}
+float d_vidior3168 = 5320;
+
+if(d_vidior3168 < 11141){
+	float x_monstrship3169 = d_vidior3168 + 323 * 489; 
+if(x_monstrship3169 <= 91441){
+	int N_goalality3170 = x_monstrship3169 * 709 / 420 - 83 / 297; 
+if(N_goalality3170 >= 92309){
+	double t_vitrety3171 = N_goalality3170 - 949 + 577 + 144; 
+if(t_vitrety3171 > 16936){
+	double R_standardade3172 = t_vitrety3171 - 621 * 687 * 35 * 98; 
+if(R_standardade3172 <= 61558){
+	double k_teleoheavyenne3173 = R_standardade3172 * 199 / 696 / 326 / 521;
+}
+}
+}
+}
+}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if (@available(iOS 10.3, *)) {
-        [SKStoreReviewController requestReview];
     } else {
         
     }
 }
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSInteger)opoard1745Tenitude1746:(NSInteger)opoard1745_1 kinetant1747Technunit1748:(NSObject *)kinetant1747_2 rostrsion1749Pachise1750:(NSInteger)rostrsion1749_3 statutic1751Rurative1752:(NSInteger)statutic1751_4 hangform1753Containia1754:(NSInteger)hangform1753_5 opage1755Levose1756:(NSInteger)opage1755_6 consumer1757Tussance1758:(NSURL *)consumer1757_7{ //insert method
-	if(kinetant1747_2){
+- (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
+    
+
 		
-        BOOL fishress1759Cribracious1760 = YES;  //commontemple18
-        int nud1761Protoality1762 = -519;
-        if (fishress1759Cribracious1760){
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
 
-            nud1761Protoality1762 = nud1761Protoality1762 - 8908;
+		
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
 
-            int imicaceous1769Toti1770 = 8074;
-            int aling1773Platinoably1774 = 121;
-            int fallreachfic1775 = 7586;
-            switch (imicaceous1769Toti1770) {
-                    
-                case 170:
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSMutableArray * L_37 = [self quiteuous1897Tainosity1898:@"tripproof3206Policeen3207" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:4260 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:4323 ];
+	if(L_37){}
+
+	self.juniorie1426Aevent1427 = 6362;
+	if(self.juniorie1426Aevent1427 + 760 - 787 - 3 + 541 - 573 - 412 >= 13227){}
+	self.ctenee1428Buyry1429 = 1994;
+	if(self.ctenee1428Buyry1429 * 605 - 814 / 217 * 678 - 765 * 252 < 9480){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 8838;
+	if(self.civilast1432Stratalongular1433 + 24 - 195 / 425 != 44589){}
+		if(self.inad1434Simpleive1435){
+int A_partysure3208 = 837;
+double L_temn3209 = 890;
+switch (A_partysure3208) {
+   case 163:
 			{
-				aling1773Platinoably1774 = fallreachfic1775 - 842 / 719; 
+				A_partysure3208 = L_temn3209 * 808 - 262; 
 			 break;
 			}
-			case 596:
+			case 887:
 			{
-				aling1773Platinoably1774 = fallreachfic1775 + 803 * 298 / 877 - 724 / 989 - 897; 
+				A_partysure3208 = L_temn3209 + 87 - 69 + 366 + 991; 
 			 break;
 			}
-			case 994:
+			case 316:
 			{
-				aling1773Platinoably1774 = fallreachfic1775 + 931 + 957 - 264; 
+				A_partysure3208 = L_temn3209 * 889 - 328 + 486 + 67 / 605; 
+			 break;
+			}
+			case 691:
+			{
+				A_partysure3208 = L_temn3209 + 167 - 174 + 547 * 685; 
+			 break;
+			}
+			case 798:
+			{
+				A_partysure3208 = L_temn3209 - 218 / 666 + 384; 
+			 break;
+			}
+			case 469:
+			{
+				A_partysure3208 = L_temn3209 * 532 - 540 * 373 / 484 + 275; 
+			 break;
+			}
+			case -73:
+			{
+				A_partysure3208 = L_temn3209 - 252 - 517 * 763 - 758; 
+			 break;
+			}
+			case 393:
+			{
+				A_partysure3208 = L_temn3209 + 788 - 183 * 103 - 888; 
+			 break;
+			}
+			case 148:
+			{
+				A_partysure3208 = L_temn3209 + 360 + 404 - 638 * 169 * 610 + 518; 
+			 break;
+			}
+			case 48:
+			{
+				A_partysure3208 = L_temn3209 + 904 + 184 * 102 + 655; 
 			 break;
 			}
 			case 151:
 			{
-				aling1773Platinoably1774 = fallreachfic1775 * 980 * 868 * 820; 
-			 break;
-			}
-			case 433:
-			{
-				aling1773Platinoably1774 = fallreachfic1775 - 862 + 612 * 690; 
-			 break;
-			}
-			case 26:
-			{
-				aling1773Platinoably1774 = fallreachfic1775 * 109 - 843 - 129 + 552 * 795 - 428; 
-			 break;
-			}
-			case 248:
-			{
-				aling1773Platinoably1774 = fallreachfic1775 - 385 + 115 / 437 + 269 / 34; 
-			 break;
-			}
-			
-                    
-                default:
-                    break;
-            }
-
-            
-        }
-        
-        
-
-        
-	}
-	if(rostrsion1749_3 - 936 * 324 * 442 + 392 >= 17661){
-		
-        BOOL joc1777Treeular1778 = YES;  //commontemple14
-        if (joc1777Treeular1778){
-            joc1777Treeular1778 = YES;
-            int community1783Baroial1784 = 9771;
-            if (community1783Baroial1784 <= 6423){
-                community1783Baroial1784 = community1783Baroial1784 * 6567;
-            }
-                    
-        long againee1799Manialisten1800 = 51;  //commontemple4
-        BOOL education1801Fourary1802 = YES;
-        if (againee1799Manialisten1800 > 542)
-        {
-            againee1799Manialisten1800 = againee1799Manialisten1800 - 3226;
-            education1801Fourary1802 = NO;
-
-            
-        }
-
-        
-        }else{
-            joc1777Treeular1778 = !joc1777Treeular1778;
-                    
-        NSDictionary *sarcosive1813Radicorium1814 = @{@"hyoyard1821" : @(20468), @"introusal1823" : @"acricy1824", @"cubify1825" : @(83680), @"nationit1827" : @(40968) };  //temple6
-        if (sarcosive1813Radicorium1814.count != 5258){
-            NSLog(@"citizenular1817Dinnerry1818");
-        }else{
-            NSLog(@"nothaddship1819Closefier1820");
-        }
-
-        
-
-        }
-
-        
-	}
-	if(hangform1753_5 * 720 / 601 != 71253){
-		int y_pantoess1829 = 58;
-float n_mararium1830 = 66;
-switch (y_pantoess1829) {
-   case 342:
-			{
-				y_pantoess1829 = n_mararium1830 + 925 + 487 * 118; 
-			 break;
-			}
-			case -72:
-			{
-				y_pantoess1829 = n_mararium1830 - 305 - 522 - 862; 
+				A_partysure3208 = L_temn3209 + 666 / 627 / 93 - 896 / 166; 
 			 break;
 			}
 			   default:
        break;
 			}
-	}
- 
-	return opoard1745_1;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-- (void)shareWithTag:(NSString *)hashTag message:(NSString *)message url:(NSString *)url successBlock:(ShareBlock)shareBlock{
-    
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	long N_39 = [self indeedtion1645Anthropdaughter1646:@"numberacle3050Colortion3051" fallacy1647Seriesator1648:1185 ];
-	if(N_39){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 1289;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 759 + 890 > 80267){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 614;
-	if(self.flat1440Hesless1441 + 823 / 104 / 951 <= 94969){}
-	self.aristary1442Agoar1443 = 1823;
-	if(self.aristary1442Agoar1443 - 221 - 389 / 587 - 381 * 622 > 70599){}
-	self.culturalaceous1444Broncher1445 = 476;
-	if(self.culturalaceous1444Broncher1445 * 957 + 838 + 402 / 22 > 43217){}
-		if(self.phemwise1446Lowfaction1447){
-float S_fascess3052 = 5153;
-
-float Z_Congressair3053 = 825;
-if(S_fascess3052 * 885 - 993 / 628 * 891 / 170 > 19535){
-	Z_Congressair3053 = S_fascess3052 * 66 - 757 - 227 + 494 * 313 + 849;
-}else{
-	Z_Congressair3053 = S_fascess3052 + 759 * 286 / 603;
-}
-
-double L_democraticacle3054 = 913;
-if(Z_Congressair3053 * 425 + 876 * 579 > 439){
-	L_democraticacle3054 = Z_Congressair3053 + 303 + 777 * 84 - 670 / 292;
-}else{
-	L_democraticacle3054 = Z_Congressair3053 + 117 - 932 * 445 * 496 - 336 * 79;
-}
-
 }
         
-        BOOL villenvironmentet3030Coveren3031 = YES;  //commontemple8
-        if (villenvironmentet3030Coveren3031){
-            villenvironmentet3030Coveren3031 = NO;
-        }else{
-                    
-        BOOL scyph3044Exteritude3045 = YES;  //commontemple6
-        if (scyph3044Exteritude3045){
-            scyph3044Exteritude3045 = YES;
-        }
-
-        
-            villenvironmentet3030Coveren3031 = !villenvironmentet3030Coveren3031;
-        }
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    if (![[NSThread currentThread] isMainThread]) {
-        SDK_LOG(@"currentThread is not main thread");
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	BOOL h_7 = [self hardly1536Archaeoally1537:nil ];
-	if(h_7){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 3640;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 451 - 903 + 666 - 126 - 820 == 54865){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7790;
-	if(self.flat1440Hesless1441 * 974 * 961 + 265 + 189 <= 89656){}
-	self.aristary1442Agoar1443 = 9056;
-	if(self.aristary1442Agoar1443 + 357 / 996 - 877 - 104 - 851 < 67933){}
-	self.culturalaceous1444Broncher1445 = 9225;
-	if(self.culturalaceous1444Broncher1445 + 840 / 390 < 75660){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        BOOL mustior3055Psammrateeur3056 = YES;  //commontemple6
-        if (mustior3055Psammrateeur3056){
-            mustior3055Psammrateeur3056 = NO;
-                    
-        BOOL privateward3065Artistivity3066 = NO;//commontemple19
-        while (!privateward3065Artistivity3066)
-        {
-            privateward3065Artistivity3066 = NO;
+        NSDictionary *homeism3182Beataster3183 = @{@"indiery3188" : @"matern3189", @"still3190" : @(82317), @"provideon3192" : @"bilaneous3193", @"plur3194" : @"stituacy3195", @"muchage3196" : @"cumb3197", @"downorium3198" : @(90074), @"spermess3200" : @"sulcster3201", @"room3202" : @"haplen3203", @"songary3204" : @"trochile3205" };  //temple13
+        for (NSString *oncusel3184Fellprivate3185 in homeism3182Beataster3183){
             break;
         }
 
-        
-        }
-
-        
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSString * p_15 = [self phonofilmia1652Byule1653:nil rhodivity1654Joclet1655:nil answer1656Dottruthish1657:nil mordfamilyency1658Preparearium1659:nil arriveia1660Aceto1661:nil fligquality1662Maintain1663:nil scensship1664Stalactular1665:6036 ];
+	if(p_15){}
+
+	self.juniorie1426Aevent1427 = 5400;
+	if(self.juniorie1426Aevent1427 - 989 - 486 > 26667){ 
+double E_nothingry3216 = 4599;
+
+float a_safeern3217 = 463;
+if(E_nothingry3216 + 18 + 855 <= 66931){
+	a_safeern3217 = E_nothingry3216 + 764 - 883 + 117 - 938 - 914 / 653;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 1818;
+	if(self.ctenee1428Buyry1429 + 574 / 109 < 32292){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9405;
+	if(self.civilast1432Stratalongular1433 * 443 * 439 >= 83716){}
+		if(self.inad1434Simpleive1435){
+float A_kino3218 = 4781;
+
+if(A_kino3218 == 87162){
+	double O_becomeent3219 = A_kino3218 - 501 + 560; 
+if(O_becomeent3219 <= 30731){
+	float o_bedian3220 = O_becomeent3219 * 83 * 471 - 826; 
+if(o_bedian3220 >= 47894){
+	float w_notitive3221 = o_bedian3220 * 259 - 595;
+}
+}
+}
+}
+double q_calan3212 = 4351;
+
+float Y_rogress3213 = 215;
+if(q_calan3212 * 786 + 464 / 473 >= 24955){
+	Y_rogress3213 = q_calan3212 * 546 - 642 - 450 / 679 + 5 * 738;
+}
+
+double X_secrel3214 = 191;
+if(Y_rogress3213 * 742 + 840 / 39 - 565 - 141 * 891 >= 94802){
+	X_secrel3214 = Y_rogress3213 + 261 * 303 / 914 / 754 + 506 - 342;
+}
+
+float w_teacherot3215 = 879;
+if(X_secrel3214 * 933 * 485 - 842 == 94592){
+	w_teacherot3215 = X_secrel3214 - 489 * 841 * 938;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         return;
     }
     
@@ -5403,2007 +3768,412 @@ if(Z_Congressair3053 * 425 + 876 * 579 > 439){
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSArray * q_16 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:2017 plaud1671Past1672:4078 ];
-	if(q_16){}
+	UIApplication * B_27 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(B_27){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9944;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 381 * 206 + 510 != 99526){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3225;
-	if(self.flat1440Hesless1441 - 132 / 77 + 193 - 536 * 52 - 910 != 35512){ 
-int l_phemiafeeling3079 = 6907;
-
-if(l_phemiafeeling3079 > 43521){
-	float n_pulletic3080 = l_phemiafeeling3079 * 539 / 105 / 389 - 614; 
-if(n_pulletic3080 == 77209){
-	double v_new3081 = n_pulletic3080 + 275 / 148 - 765 - 546;
-}
-}
- }
-	self.aristary1442Agoar1443 = 8935;
-	if(self.aristary1442Agoar1443 * 945 - 483 / 446 * 624 + 599 * 642 != 17059){}
-	self.culturalaceous1444Broncher1445 = 4327;
-	if(self.culturalaceous1444Broncher1445 + 174 * 524 != 78429){ 
-int f_phosress3082 = 629;
-float i_cantpressurey3083 = 162;
-switch (f_phosress3082) {
-   case 740:
+	self.juniorie1426Aevent1427 = 5561;
+	if(self.juniorie1426Aevent1427 + 131 * 932 / 68 > 9764){ 
+int m_onomatarriveive3227 = 541;
+double b_tergrangey3228 = 707;
+switch (m_onomatarriveive3227) {
+   case 664:
 			{
-				f_phosress3082 = i_cantpressurey3083 * 398 + 269; 
-			 break;
-			}
-			case 138:
-			{
-				f_phosress3082 = i_cantpressurey3083 * 995 + 547 + 398 / 605 - 404 / 413; 
-			 break;
-			}
-			case 763:
-			{
-				f_phosress3082 = i_cantpressurey3083 * 663 - 425 - 983 / 154 + 534; 
-			 break;
-			}
-			case 553:
-			{
-				f_phosress3082 = i_cantpressurey3083 + 658 - 636; 
-			 break;
-			}
-			case 947:
-			{
-				f_phosress3082 = i_cantpressurey3083 * 704 + 522 / 197 / 134; 
-			 break;
-			}
-			case 491:
-			{
-				f_phosress3082 = i_cantpressurey3083 - 327 / 494 / 393 - 461; 
+				m_onomatarriveive3227 = b_tergrangey3228 - 178 / 511 + 824 / 304 / 104 / 578; 
 			 break;
 			}
 			case 429:
 			{
-				f_phosress3082 = i_cantpressurey3083 + 226 / 998 / 261; 
+				m_onomatarriveive3227 = b_tergrangey3228 * 144 + 877 + 922 / 337 * 121; 
 			 break;
 			}
-			case -10:
+			case 998:
 			{
-				f_phosress3082 = i_cantpressurey3083 - 447 * 953 * 709 / 638 * 796; 
+				m_onomatarriveive3227 = b_tergrangey3228 - 624 / 597 / 188; 
 			 break;
 			}
-			case 917:
+			case 813:
 			{
-				f_phosress3082 = i_cantpressurey3083 * 652 + 568; 
+				m_onomatarriveive3227 = b_tergrangey3228 * 24 - 392 * 772 / 39 / 987 / 966; 
 			 break;
 			}
-			case 872:
+			case 131:
 			{
-				f_phosress3082 = i_cantpressurey3083 * 836 / 477 + 843 / 863; 
-			 break;
-			}
-			case 845:
-			{
-				f_phosress3082 = i_cantpressurey3083 * 910 * 209 - 262 / 679 - 469 / 644; 
-			 break;
-			}
-			case 994:
-			{
-				f_phosress3082 = i_cantpressurey3083 * 519 - 655 + 477 / 405 / 139 + 882; 
-			 break;
-			}
-			case 400:
-			{
-				f_phosress3082 = i_cantpressurey3083 + 948 + 60 / 965; 
-			 break;
-			}
-			case 970:
-			{
-				f_phosress3082 = i_cantpressurey3083 - 978 * 610 + 492 - 293 / 874; 
-			 break;
-			}
-			case -82:
-			{
-				f_phosress3082 = i_cantpressurey3083 + 999 / 832 + 64 / 215; 
-			 break;
-			}
-			case 394:
-			{
-				f_phosress3082 = i_cantpressurey3083 + 614 + 655 - 739; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){
-int L_beyond3084 = 8805;
-
-double L_hospittreatmentless3085 = 515;
-if(L_beyond3084 + 656 / 188 - 686 == 75495){
-	L_hospittreatmentless3085 = L_beyond3084 + 600 * 659 * 10;
-}
-
-int O_strictery3086 = 499;
-if(L_hospittreatmentless3085 + 984 - 955 + 528 + 19 == 55607){
-	O_strictery3086 = L_hospittreatmentless3085 - 214 + 564 - 125 - 993 + 87;
-}
-
-int J_meliorfier3087 = 880;
-if(O_strictery3086 - 701 / 989 + 955 == 22074){
-	J_meliorfier3087 = O_strictery3086 * 55 - 150;
-}else{
-	J_meliorfier3087 = O_strictery3086 * 795 / 608;
-}
-
-float q_moneyster3088 = 950;
-if(J_meliorfier3087 - 697 + 280 - 667 >= 99714){
-	q_moneyster3088 = J_meliorfier3087 - 299 - 462 * 825 * 754 / 253;
-}
-
-double Y_naueer3089 = 242;
-if(q_moneyster3088 * 487 + 281 - 311 > 96045){
-	Y_naueer3089 = q_moneyster3088 + 743 * 763;
-}else{
-	Y_naueer3089 = q_moneyster3088 + 729 + 931 + 148;
-}
-
-int E_aesthetsion3090 = 29;
-if(Y_naueer3089 * 733 / 31 - 960 - 853 - 837 / 63 < 33994){
-	E_aesthetsion3090 = Y_naueer3089 * 145 / 27 - 875 - 941 - 334;
-}
-
-double H_coverally3091 = 409;
-if(E_aesthetsion3090 * 94 - 311 / 562 - 56 != 36288){
-	H_coverally3091 = E_aesthetsion3090 + 714 + 541;
-}else{
-	H_coverally3091 = E_aesthetsion3090 - 728 + 713 - 837;
-}
-
-float N_lateics3092 = 487;
-if(H_coverally3091 + 91 / 759 / 531 + 558 >= 50063){
-	N_lateics3092 = H_coverally3091 * 235 * 558;
-}else{
-	N_lateics3092 = H_coverally3091 + 975 + 402 - 600 - 754 / 702 * 274;
-}
-
-int y_defenseproof3093 = 409;
-if(N_lateics3092 + 135 * 262 * 520 > 48631){
-	y_defenseproof3093 = N_lateics3092 - 809 - 986 * 945 + 16 / 891;
-}
-
-float v_amor3094 = 834;
-if(y_defenseproof3093 - 843 + 321 > 63908){
-	v_amor3094 = y_defenseproof3093 - 381 * 73 - 775 + 402;
-}else{
-	v_amor3094 = y_defenseproof3093 - 599 * 620 / 392 / 734 * 901 / 583;
-}
-
-double N_pachyact3095 = 534;
-if(v_amor3094 * 175 / 248 + 207 + 810 - 508 * 959 > 46959){
-	N_pachyact3095 = v_amor3094 + 205 / 655 - 529;
-}else{
-	N_pachyact3095 = v_amor3094 - 855 / 959 * 674;
-}
-
-}
-int h_kitchenth3073 = 1897;
-
-if(h_kitchenth3073 >= 93219){
-	int A_riseate3074 = h_kitchenth3073 + 715 - 10 * 310 - 157; 
-if(A_riseate3074 < 85398){
-	float O_prav3075 = A_riseate3074 + 396 * 755; 
-if(O_prav3075 != 1163){
-	int v_ceiven3076 = O_prav3075 - 847 - 323 + 145; 
-if(v_ceiven3076 > 34607){
-	float i_improve3077 = v_ceiven3076 * 658 / 447 - 65 - 883; 
-if(i_improve3077 > 28844){
-	float P_northitious3078 = i_improve3077 * 765 + 231;
-}
-}
-}
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:3340 rach2006Gladiion2007:3150 homoiprobablyarian2008Pactaire2009:119 howeverator2010Opto2011:2453 ];
-
-		if(self.pentecost1434Kinanythingenne1435){
-float U_juxtafold3106 = 4655;
-
-float u_jectize3107 = 266;
-if(U_juxtafold3106 * 939 - 784 + 19 + 333 + 62 / 767 != 46335){
-	u_jectize3107 = U_juxtafold3106 + 949 - 415 * 770 - 94 - 501 - 142;
-}
-
-int n_sortform3108 = 714;
-if(u_jectize3107 - 558 / 724 / 745 / 768 * 723 == 27913){
-	n_sortform3108 = u_jectize3107 * 660 + 608 / 34 / 762 + 105 / 582;
-}
-
-double C_electionad3109 = 678;
-if(n_sortform3108 + 885 * 433 / 192 / 929 / 154 <= 8324){
-	C_electionad3109 = n_sortform3108 * 245 / 556 / 211 - 118;
-}else{
-	C_electionad3109 = n_sortform3108 + 459 / 71 - 509 + 173;
-}
-
-double L_certainlyior3110 = 141;
-if(C_electionad3109 + 529 - 677 * 728 - 387 + 102 > 6957){
-	L_certainlyior3110 = C_electionad3109 - 924 - 378 + 745;
-}
-
-int R_kinemary3111 = 275;
-if(L_certainlyior3110 - 82 / 341 + 994 / 96 - 252 == 83925){
-	R_kinemary3111 = L_certainlyior3110 - 882 / 585;
-}
-
-float W_takeship3112 = 921;
-if(R_kinemary3111 - 395 + 840 - 502 * 803 - 488 <= 43020){
-	W_takeship3112 = R_kinemary3111 - 214 * 480 * 861 - 342 / 297;
-}
-
-int a_megallike3113 = 498;
-if(W_takeship3112 - 200 / 163 - 505 + 482 * 845 * 522 <= 96595){
-	a_megallike3113 = W_takeship3112 * 855 - 346;
-}
-
-int F_literaneous3114 = 314;
-if(a_megallike3113 + 730 - 377 * 796 * 541 / 271 < 29956){
-	F_literaneous3114 = a_megallike3113 * 746 * 943;
-}
-
-int X_opul3115 = 476;
-if(F_literaneous3114 * 394 * 569 + 441 - 372 < 4819){
-	X_opul3115 = F_literaneous3114 + 832 / 519;
-}else{
-	X_opul3115 = F_literaneous3114 - 777 * 386 - 516 - 831;
-}
-
-int V_agencyarium3116 = 757;
-if(X_opul3115 + 415 / 985 - 392 * 516 != 64401){
-	V_agencyarium3116 = X_opul3115 * 108 * 503;
-}else{
-	V_agencyarium3116 = X_opul3115 + 323 * 98;
-}
-
-double S_pallist3117 = 516;
-if(V_agencyarium3116 + 961 - 394 / 222 >= 82469){
-	S_pallist3117 = V_agencyarium3116 + 355 / 464;
-}else{
-	S_pallist3117 = V_agencyarium3116 * 974 + 902;
-}
-
-double s_psilality3118 = 118;
-if(S_pallist3117 + 696 * 859 * 617 * 685 < 87403){
-	s_psilality3118 = S_pallist3117 * 787 / 620 / 151 - 174 / 996 / 385;
-}else{
-	s_psilality3118 = S_pallist3117 - 550 - 727 - 305 / 933 + 810;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 8918;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 538 + 132 / 1 / 347 * 560 < 82399){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3523;
-	if(self.flat1440Hesless1441 * 382 / 592 + 677 <= 44995){}
-	self.aristary1442Agoar1443 = 6103;
-	if(self.aristary1442Agoar1443 + 229 + 226 - 822 + 151 != 42315){}
-	self.culturalaceous1444Broncher1445 = 3188;
-	if(self.culturalaceous1444Broncher1445 + 209 * 90 != 84519){}
-		if(self.phemwise1446Lowfaction1447){
-int X_fantian3119 = 9825;
-
-int d_callior3120 = 78;
-if(X_fantian3119 + 819 - 708 - 211 * 280 - 743 * 632 > 73899){
-	d_callior3120 = X_fantian3119 + 613 * 660 - 458 + 574 + 530 - 734;
-}else{
-	d_callior3120 = X_fantian3119 - 333 / 568 / 781 * 543;
-}
-
-int d_brachio3121 = 537;
-if(d_callior3120 - 51 * 200 + 386 / 224 + 613 + 295 == 67251){
-	d_brachio3121 = d_callior3120 - 662 + 141 / 818 + 487 * 854 + 112;
-}else{
-	d_brachio3121 = d_callior3120 + 360 + 611 - 690;
-}
-
-int w_uponel3122 = 663;
-if(d_brachio3121 * 764 - 832 / 405 + 361 / 414 / 499 < 14673){
-	w_uponel3122 = d_brachio3121 * 634 + 572 * 212 + 566 + 940 / 973;
-}else{
-	w_uponel3122 = d_brachio3121 - 213 - 406 * 628 * 499 + 766 - 43;
-}
-
-int X_ofmonth3123 = 468;
-if(w_uponel3122 * 76 - 675 <= 31053){
-	X_ofmonth3123 = w_uponel3122 * 722 / 962;
-}
-
-double q_comsive3124 = 2;
-if(X_ofmonth3123 * 510 - 23 * 837 + 452 == 81114){
-	q_comsive3124 = X_ofmonth3123 + 788 + 921 / 401 + 12;
-}
-
-int o_courite3125 = 341;
-if(q_comsive3124 - 660 / 989 * 43 / 937 / 928 * 155 != 71590){
-	o_courite3125 = q_comsive3124 - 228 - 641;
-}else{
-	o_courite3125 = q_comsive3124 - 967 * 151 * 564;
-}
-
-float t_pontile3126 = 676;
-if(o_courite3125 + 161 - 792 > 55372){
-	t_pontile3126 = o_courite3125 * 28 * 651;
-}else{
-	t_pontile3126 = o_courite3125 * 339 - 554 + 907;
-}
-
-float Y_terraness3127 = 382;
-if(t_pontile3126 * 680 + 996 >= 62067){
-	Y_terraness3127 = t_pontile3126 - 785 * 813 + 954 * 163 - 661 + 788;
-}else{
-	Y_terraness3127 = t_pontile3126 + 996 - 356 * 302;
-}
-
-}
-        NSDictionary *particularally3100Des3101 = [NSDictionary dictionaryWithObjectsAndKeys:@"whitefy3102Saltain3103",@(4757), nil]; //temple29
-             if (particularally3100Des3101.count > 6200) {}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        return;
-    }
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:4459 rach2006Gladiion2007:4740 homoiprobablyarian2008Pactaire2009:1400 howeverator2010Opto2011:2549 ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 1655;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 584 / 224 * 502 >= 85294){ 
-int t_appearory3136 = 3537;
-
-if(t_appearory3136 != 89549){
-	float B_proctmost3137 = t_appearory3136 + 302 - 206 / 55 - 769 - 197 / 871; 
-if(B_proctmost3137 > 57588){
-	float c_pyllet3138 = B_proctmost3137 + 659 + 408 * 961; 
-if(c_pyllet3138 != 81882){
-	double i_musviewize3139 = c_pyllet3138 * 821 / 26;
-}
-}
-}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6437;
-	if(self.flat1440Hesless1441 - 102 * 982 <= 8750){}
-	self.aristary1442Agoar1443 = 1445;
-	if(self.aristary1442Agoar1443 * 980 + 424 + 949 * 880 * 387 < 9647){}
-	self.culturalaceous1444Broncher1445 = 9177;
-	if(self.culturalaceous1444Broncher1445 + 876 - 399 + 945 + 447 * 561 * 190 == 31451){}
-		if(self.phemwise1446Lowfaction1447){
-float p_setics3140 = 3365;
-
-float Z_boyite3141 = 703;
-if(p_setics3140 - 489 - 632 / 322 + 302 + 692 != 65942){
-	Z_boyite3141 = p_setics3140 + 295 - 835 / 249 + 162 - 407;
-}
-
-double i_hendecling3142 = 770;
-if(Z_boyite3141 * 165 - 877 <= 17582){
-	i_hendecling3142 = Z_boyite3141 * 618 / 983 + 3 - 834 / 295 * 399;
-}
-
-float B_drawsure3143 = 921;
-if(i_hendecling3142 * 226 - 494 != 49853){
-	B_drawsure3143 = i_hendecling3142 + 454 + 778;
-}
-
-int X_merc3144 = 766;
-if(B_drawsure3143 + 322 / 148 - 918 / 725 + 744 > 45610){
-	X_merc3144 = B_drawsure3143 - 1 / 373 / 475 * 327 / 213;
-}else{
-	X_merc3144 = B_drawsure3143 + 846 + 904;
-}
-
-int o_amour3145 = 102;
-if(X_merc3144 - 101 / 325 - 556 + 890 * 195 * 172 < 71086){
-	o_amour3145 = X_merc3144 - 33 + 246;
-}else{
-	o_amour3145 = X_merc3144 + 508 / 184 + 269 - 833 * 471 - 958;
-}
-
-int H_plainile3146 = 759;
-if(o_amour3145 * 296 * 542 / 658 / 495 / 913 * 475 != 83990){
-	H_plainile3146 = o_amour3145 + 486 / 894;
-}
-
-double l_she3147 = 821;
-if(H_plainile3146 * 273 / 807 - 25 * 569 < 79020){
-	l_she3147 = H_plainile3146 - 829 / 842 + 547 / 868 - 132 / 41;
-}
-
-int V_calliism3148 = 972;
-if(l_she3147 - 304 - 640 < 28864){
-	V_calliism3148 = l_she3147 * 372 * 506 / 622 - 521 + 252 - 901;
-}
-
-int z_polemic3149 = 171;
-if(V_calliism3148 - 394 + 147 >= 27418){
-	z_polemic3149 = V_calliism3148 * 967 / 255 - 883 / 567 * 697;
-}else{
-	z_polemic3149 = V_calliism3148 * 336 * 158 * 226 + 652 - 223;
-}
-
-}
-            float oscillowise3132Similaristic3133 = 7200.0;  //temple25
-            if (@(oscillowise3132Similaristic3133).doubleValue > 4281) {}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    if (!is_Version2) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSString * G_32 = [self fatherfier1988Script1989:@"megalbeaire3155Homuous3156" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(G_32){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8387;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 886 * 594 - 852 - 488 / 93 / 712 != 90758){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2817;
-	if(self.flat1440Hesless1441 * 331 - 391 * 318 - 373 / 693 + 265 == 81042){}
-	self.aristary1442Agoar1443 = 8756;
-	if(self.aristary1442Agoar1443 * 142 + 903 + 329 < 69558){ 
-int X_remern3157 = 107;
-double L_andry3158 = 893;
-switch (X_remern3157) {
-   case 51:
-			{
-				X_remern3157 = L_andry3158 + 469 + 498 / 430; 
-			 break;
-			}
-			case 540:
-			{
-				X_remern3157 = L_andry3158 - 169 - 947 + 246 * 67; 
-			 break;
-			}
-			case 734:
-			{
-				X_remern3157 = L_andry3158 + 2 + 12; 
-			 break;
-			}
-			case 237:
-			{
-				X_remern3157 = L_andry3158 - 794 - 510 * 901 * 340 + 171; 
-			 break;
-			}
-			case 231:
-			{
-				X_remern3157 = L_andry3158 + 421 + 517 / 385 - 82 + 136; 
-			 break;
-			}
-			case 369:
-			{
-				X_remern3157 = L_andry3158 - 93 / 233 + 166; 
-			 break;
-			}
-			case 7:
-			{
-				X_remern3157 = L_andry3158 + 441 * 74 + 206; 
-			 break;
-			}
-			case 181:
-			{
-				X_remern3157 = L_andry3158 + 580 / 175 + 278 + 121 / 657 * 615; 
-			 break;
-			}
-			case 680:
-			{
-				X_remern3157 = L_andry3158 - 977 + 306 * 692 + 660; 
-			 break;
-			}
-			case 498:
-			{
-				X_remern3157 = L_andry3158 - 463 * 472 / 818 / 785; 
-			 break;
-			}
-			case 358:
-			{
-				X_remern3157 = L_andry3158 - 529 + 294 - 936 * 827 / 151; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 7794;
-	if(self.culturalaceous1444Broncher1445 - 921 + 926 - 852 / 548 * 821 / 204 == 50679){}
-		if(self.phemwise1446Lowfaction1447){
-float W_psilic3159 = 6890;
-
-if(W_psilic3159 != 86272){
-	int b_megalstillel3160 = W_psilic3159 - 278 * 585 / 321 + 929 + 625 * 852; 
-if(b_megalstillel3160 < 32198){
-	int z_reality3161 = b_megalstillel3160 - 428 - 115; 
-if(z_reality3161 != 87360){
-	int r_obs3162 = z_reality3161 - 428 * 530 * 220 - 280 / 573 + 581;
-}
-}
-}
-}
-double A_esowise3152 = 4523;
-
-if(A_esowise3152 > 56735){
-	int C_listenhood3153 = A_esowise3152 + 594 + 40 - 964 * 246; 
-if(C_listenhood3153 >= 80630){
-	double J_coen3154 = C_listenhood3153 + 961 / 377 + 507 / 904 + 127;
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:9957 rach2006Gladiion2007:4552 homoiprobablyarian2008Pactaire2009:3565 howeverator2010Opto2011:2683 ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8864;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 655 * 955 >= 59823){ 
-double g_treeent3167 = 7790;
-
-if(g_treeent3167 > 96241){
-	int M_hedobuildingair3168 = g_treeent3167 - 308 * 890 + 651 / 594; 
-if(M_hedobuildingair3168 > 1443){
-	double G_string3169 = M_hedobuildingair3168 + 683 - 5; 
-if(G_string3169 >= 78839){
-	float Z_usit3170 = G_string3169 - 229 / 307 * 37 * 710 - 477 / 866; 
-if(Z_usit3170 < 57676){
-	double n_choose3171 = Z_usit3170 + 855 - 706 - 329; 
-if(n_choose3171 > 78808){
-	float l_nascance3172 = n_choose3171 - 953 * 663 / 515 / 973 - 946 / 13;
-}
-}
-}
-}
-}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3016;
-	if(self.flat1440Hesless1441 - 998 / 850 * 59 <= 33653){}
-	self.aristary1442Agoar1443 = 4876;
-	if(self.aristary1442Agoar1443 + 357 / 784 - 46 - 270 > 27260){ 
-int V_kinemfication3173 = 802;
-float S_vigesimfier3174 = 144;
-switch (V_kinemfication3173) {
-   case 413:
-			{
-				V_kinemfication3173 = S_vigesimfier3174 + 686 / 371 * 598; 
-			 break;
-			}
-			case 92:
-			{
-				V_kinemfication3173 = S_vigesimfier3174 + 926 / 412; 
-			 break;
-			}
-			case -55:
-			{
-				V_kinemfication3173 = S_vigesimfier3174 - 952 + 611; 
-			 break;
-			}
-			case 253:
-			{
-				V_kinemfication3173 = S_vigesimfier3174 * 309 / 78 - 436; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 8849;
-	if(self.culturalaceous1444Broncher1445 + 521 + 703 + 851 + 282 >= 75797){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        double eightsive3163Sendproof3164 = 3931.0;   //temple18
-        if (@(eightsive3163Sendproof3164).doubleValue >= 5373) {}
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        return;
-    }
-    PictaceousDieotView *mBindPhoneViewV2 = [[PictaceousDieotView alloc] init];
-    mBindPhoneViewV2.mMWBlock = mBlock;
-    UIView *superView = appTopViewController.view;
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSInteger W_48 = [self opoard1745Tenitude1746:885 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:2087 statutic1751Rurative1752:5570 hangform1753Containia1754:1206 opage1755Levose1756:1115 consumer1757Tussance1758:nil ];
-	if(W_48){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6681;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 223 * 427 - 830 - 274 - 468 / 629 == 63249){}
-		if(self.prior1438Vanist1439){
-double W_atant3178 = 5055;
-
-double b_someful3179 = 532;
-if(W_atant3178 + 721 / 28 >= 87683){
-	b_someful3179 = W_atant3178 - 604 + 912 * 112 + 278;
-}
-
-int X_alreadyitive3180 = 55;
-if(b_someful3179 + 467 / 446 + 362 - 237 - 219 + 382 >= 63441){
-	X_alreadyitive3180 = b_someful3179 - 148 - 848;
-}else{
-	X_alreadyitive3180 = b_someful3179 + 579 + 456 - 500 - 368 + 948;
-}
-
-}
-	self.flat1440Hesless1441 = 8934;
-	if(self.flat1440Hesless1441 + 350 * 784 / 263 + 560 >= 30402){ 
-int E_locutth3181 = 13;
-int R_aboutaceous3182 = 839;
-switch (E_locutth3181) {
-   case 170:
-			{
-				E_locutth3181 = R_aboutaceous3182 + 636 / 718 / 993 + 574 * 739 / 199; 
-			 break;
-			}
-			case -73:
-			{
-				E_locutth3181 = R_aboutaceous3182 + 595 - 823 * 86 - 807 / 822; 
-			 break;
-			}
-			case 171:
-			{
-				E_locutth3181 = R_aboutaceous3182 - 679 + 359 + 801 + 650; 
-			 break;
-			}
-			case -99:
-			{
-				E_locutth3181 = R_aboutaceous3182 - 597 - 257 / 230 - 601 + 823; 
-			 break;
-			}
-			case 150:
-			{
-				E_locutth3181 = R_aboutaceous3182 - 794 + 245 / 330 * 167 * 367 * 336; 
-			 break;
-			}
-			case -80:
-			{
-				E_locutth3181 = R_aboutaceous3182 * 88 * 533 * 434 * 45; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.aristary1442Agoar1443 = 6020;
-	if(self.aristary1442Agoar1443 + 266 * 411 * 959 + 465 + 941 - 950 == 26098){ 
-int S_everyoneal3183 = 7235;
-
-if(S_everyoneal3183 == 82354){
-	int U_thoughtic3184 = S_everyoneal3183 * 955 - 549 * 729 + 308; 
-if(U_thoughtic3184 >= 52434){
-	float q_cryptfier3185 = U_thoughtic3184 - 85 + 86 - 225 / 787; 
-if(q_cryptfier3185 < 64002){
-	float q_torslet3186 = q_cryptfier3185 * 598 - 620 - 974 * 40 / 616;
-}
-}
-}
- }
-	self.culturalaceous1444Broncher1445 = 858;
-	if(self.culturalaceous1444Broncher1445 * 486 - 279 / 223 * 211 / 190 <= 3338){}
-		if(self.phemwise1446Lowfaction1447){}
-float g_temnfaction3175 = 9106;
-
-int F_scutfromly3176 = 620;
-if(g_temnfaction3175 - 74 + 782 + 699 - 6 - 766 + 566 >= 23627){
-	F_scutfromly3176 = g_temnfaction3175 * 363 / 869;
-}
-
-double J_pallithere3177 = 330;
-if(F_scutfromly3176 - 344 / 12 * 173 / 492 <= 93943){
-	J_pallithere3177 = F_scutfromly3176 * 185 + 260 / 55 + 216;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    
-    UIView *bgV = [[LoseionEmeticieView alloc] init];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	[self patternorium1584Imfewion1585:5740 give1586Scribid1587:nil smalline1588Pancreaticotheirety1589:nil aboutular1590Dekid1591:nil lotose1592Iridot1593:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 4552;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 917 + 961 == 56605){ 
-int f_arm3193 = 6856;
-
-int T_writey3194 = 608;
-if(f_arm3193 * 596 + 674 == 9639){
-	T_writey3194 = f_arm3193 - 504 * 242 - 579 - 430 * 849;
-}else{
-	T_writey3194 = f_arm3193 + 981 / 204 - 456 / 180 * 108;
-}
-
-float r_sideose3195 = 984;
-if(T_writey3194 + 566 + 255 - 631 * 863 * 904 <= 77397){
-	r_sideose3195 = T_writey3194 - 194 + 669 + 850;
-}
-
-float V_varicenne3196 = 318;
-if(r_sideose3195 * 120 - 674 + 912 * 278 / 51 >= 5556){
-	V_varicenne3196 = r_sideose3195 * 601 - 238 - 438 + 138;
-}else{
-	V_varicenne3196 = r_sideose3195 * 850 + 667 / 71 / 977;
-}
-
-float o_ungulibility3197 = 211;
-if(V_varicenne3196 + 22 + 173 == 48830){
-	o_ungulibility3197 = V_varicenne3196 - 502 / 960;
-}else{
-	o_ungulibility3197 = V_varicenne3196 - 935 - 888 + 90 - 470;
-}
-
-float s_hortity3198 = 423;
-if(o_ungulibility3197 * 486 - 795 + 281 + 871 >= 72651){
-	s_hortity3198 = o_ungulibility3197 - 6 - 558 * 563 / 147;
-}else{
-	s_hortity3198 = o_ungulibility3197 * 920 * 676 - 540 - 80 + 602 / 302;
-}
-
-float V_itudinice3199 = 690;
-if(s_hortity3198 + 993 + 81 / 920 > 39651){
-	V_itudinice3199 = s_hortity3198 - 592 * 249 - 472;
-}
-
-float f_imwise3200 = 513;
-if(V_itudinice3199 * 437 + 552 == 93778){
-	f_imwise3200 = V_itudinice3199 - 653 + 739 / 82;
-}
-
-float F_denfinallyaire3201 = 240;
-if(f_imwise3200 - 151 / 664 - 88 - 52 != 26586){
-	F_denfinallyaire3201 = f_imwise3200 - 900 - 59 * 35 - 678 - 628;
-}else{
-	F_denfinallyaire3201 = f_imwise3200 * 576 * 553 - 924;
-}
-
-double F_careify3202 = 18;
-if(F_denfinallyaire3201 + 572 / 743 - 236 / 205 + 552 / 64 == 68439){
-	F_careify3202 = F_denfinallyaire3201 - 723 * 18 / 800 * 232;
-}else{
-	F_careify3202 = F_denfinallyaire3201 - 283 - 727 + 748 + 158 + 133 / 828;
-}
-
-float i_gnar3203 = 391;
-if(F_careify3202 + 879 - 861 - 120 + 298 / 652 - 248 < 64039){
-	i_gnar3203 = F_careify3202 + 610 + 753;
-}else{
-	i_gnar3203 = F_careify3202 * 482 / 385 + 730 * 796 / 793 * 938;
-}
-
-double F_sidefold3204 = 977;
-if(i_gnar3203 + 656 / 361 - 585 < 95967){
-	F_sidefold3204 = i_gnar3203 + 761 + 81;
-}
-
-double o_eachly3205 = 751;
-if(F_sidefold3204 - 205 + 219 / 105 > 8616){
-	o_eachly3205 = F_sidefold3204 * 251 / 733 * 183 / 130 - 296;
-}else{
-	o_eachly3205 = F_sidefold3204 - 282 - 130 + 197 / 703 - 171 + 360;
-}
-
- }
-		if(self.prior1438Vanist1439){
-float z_siderconferencely3206 = 2069;
-
-int O_yardics3207 = 955;
-if(z_siderconferencely3206 + 542 - 729 + 410 / 190 < 65356){
-	O_yardics3207 = z_siderconferencely3206 - 760 - 347 - 333 - 911 / 233 / 248;
-}else{
-	O_yardics3207 = z_siderconferencely3206 + 104 - 778 / 943 + 178 / 267 / 100;
-}
-
-double K_almostish3208 = 268;
-if(O_yardics3207 * 664 * 871 + 344 == 44656){
-	K_almostish3208 = O_yardics3207 - 304 - 480 / 621 - 681 - 844;
-}
-
-float X_wideling3209 = 889;
-if(K_almostish3208 - 609 / 188 / 593 + 219 != 45128){
-	X_wideling3209 = K_almostish3208 + 250 * 56 / 777 / 280 / 887 * 495;
-}
-
-float A_leg3210 = 895;
-if(X_wideling3209 * 723 - 649 / 937 / 674 * 262 < 46290){
-	A_leg3210 = X_wideling3209 * 824 + 166 * 339 / 847 + 307 + 718;
-}
-
-float W_hugedom3211 = 129;
-if(A_leg3210 * 332 - 274 * 300 + 867 / 19 - 372 <= 27455){
-	W_hugedom3211 = A_leg3210 * 28 * 952;
-}else{
-	W_hugedom3211 = A_leg3210 + 673 * 888 * 166 - 621 / 116;
-}
-
-int i_secory3212 = 525;
-if(W_hugedom3211 * 441 - 164 / 487 - 622 - 80 != 78066){
-	i_secory3212 = W_hugedom3211 + 733 + 462 / 280 + 790 / 592 * 708;
-}else{
-	i_secory3212 = W_hugedom3211 * 616 / 757;
-}
-
-double Z_dos3213 = 619;
-if(i_secory3212 + 493 - 724 - 136 <= 97415){
-	Z_dos3213 = i_secory3212 * 639 / 417 / 62 * 639;
-}
-
-int r_establishesque3214 = 809;
-if(Z_dos3213 * 555 * 186 - 339 < 82232){
-	r_establishesque3214 = Z_dos3213 - 843 / 102 * 834;
-}else{
-	r_establishesque3214 = Z_dos3213 * 747 * 553;
-}
-
-double h_thusian3215 = 396;
-if(r_establishesque3214 - 930 - 382 - 364 * 642 * 254 * 370 > 61593){
-	h_thusian3215 = r_establishesque3214 + 555 / 21 - 974 * 851;
-}else{
-	h_thusian3215 = r_establishesque3214 * 774 / 638;
-}
-
-}
-	self.flat1440Hesless1441 = 541;
-	if(self.flat1440Hesless1441 - 181 - 562 <= 31837){}
-	self.aristary1442Agoar1443 = 6475;
-	if(self.aristary1442Agoar1443 * 82 * 454 - 417 * 120 != 49506){}
-	self.culturalaceous1444Broncher1445 = 3597;
-	if(self.culturalaceous1444Broncher1445 - 770 * 962 - 202 / 884 - 769 != 28555){}
-		if(self.phemwise1446Lowfaction1447){}
-int V_althoughacy3191 = 690;
-double v_hostory3192 = 813;
-switch (V_althoughacy3191) {
-   case -6:
-			{
-				V_althoughacy3191 = v_hostory3192 + 239 / 176 / 449 / 768; 
-			 break;
-			}
-			case 234:
-			{
-				V_althoughacy3191 = v_hostory3192 + 302 / 405 + 228 - 553 + 671 / 253; 
-			 break;
-			}
-			case -89:
-			{
-				V_althoughacy3191 = v_hostory3192 + 591 * 248 / 361 * 924 + 499 + 113; 
-			 break;
-			}
-			case 695:
-			{
-				V_althoughacy3191 = v_hostory3192 * 316 / 278 / 880 / 500 - 230 + 660; 
-			 break;
-			}
-			case 399:
-			{
-				V_althoughacy3191 = v_hostory3192 - 442 / 308 / 579 / 842; 
-			 break;
-			}
-			case 852:
-			{
-				V_althoughacy3191 = v_hostory3192 + 671 + 316 + 131 - 621 + 544; 
-			 break;
-			}
-			case 949:
-			{
-				V_althoughacy3191 = v_hostory3192 * 36 + 638 + 262 / 794 * 24 - 493; 
-			 break;
-			}
-			case 657:
-			{
-				V_althoughacy3191 = v_hostory3192 - 19 + 849 + 439 * 547; 
-			 break;
-			}
-			case -35:
-			{
-				V_althoughacy3191 = v_hostory3192 + 589 - 109 / 677; 
-			 break;
-			}
-			case 869:
-			{
-				V_althoughacy3191 = v_hostory3192 + 484 - 870 + 53 + 57; 
-			 break;
-			}
-			case 331:
-			{
-				V_althoughacy3191 = v_hostory3192 * 764 + 858 / 65 / 587 + 787; 
-			 break;
-			}
-			case 921:
-			{
-				V_althoughacy3191 = v_hostory3192 + 242 - 971; 
-			 break;
-			}
-			case 12:
-			{
-				V_althoughacy3191 = v_hostory3192 - 811 - 696 - 179 - 532 / 808 - 318; 
-			 break;
-			}
-			case 85:
-			{
-				V_althoughacy3191 = v_hostory3192 - 212 + 581 / 790 - 722 - 6 / 797; 
-			 break;
-			}
-			case 424:
-			{
-				V_althoughacy3191 = v_hostory3192 * 795 * 270 - 431 / 699 - 548 / 328; 
-			 break;
-			}
-			case 151:
-			{
-				V_althoughacy3191 = v_hostory3192 - 269 * 622 - 720 / 560 + 585; 
-			 break;
-			}
-			   default:
-       break;
-			}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    [superView addSubview:bgV];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	BOOL i_8 = [self hardly1536Archaeoally1537:nil ];
-	if(i_8){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2720;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 864 * 665 / 740 / 115 * 486 == 85501){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2321;
-	if(self.flat1440Hesless1441 - 980 * 466 >= 1154){}
-	self.aristary1442Agoar1443 = 6210;
-	if(self.aristary1442Agoar1443 * 252 * 338 * 711 * 816 < 83848){}
-	self.culturalaceous1444Broncher1445 = 9027;
-	if(self.culturalaceous1444Broncher1445 + 731 * 727 / 280 <= 79668){ 
-int l_juvinterviewular3224 = 891;
-
-if(l_juvinterviewular3224 == 80304){
-	int q_customer3225 = l_juvinterviewular3224 * 584 / 922; 
-if(q_customer3225 <= 71521){
-	float D_myth3226 = q_customer3225 * 703 + 107; 
-if(D_myth3226 != 65141){
-	float J_dreamism3227 = D_myth3226 - 633 - 309 * 640 * 875 * 510; 
-if(J_dreamism3227 <= 7843){
-	float o_globture3228 = J_dreamism3227 * 319 + 75 + 508 + 736 * 342 - 234;
-}
-}
-}
-}
- }
-		if(self.phemwise1446Lowfaction1447){
-int K_lect3229 = 866;
-float n_ceram3230 = 304;
-switch (K_lect3229) {
-   case 572:
-			{
-				K_lect3229 = n_ceram3230 - 543 * 254 * 390 / 381 * 900; 
+				m_onomatarriveive3227 = b_tergrangey3228 * 328 - 751 - 198 - 199; 
 			 break;
 			}
 			case 250:
 			{
-				K_lect3229 = n_ceram3230 * 464 - 187 * 725; 
+				m_onomatarriveive3227 = b_tergrangey3228 + 868 * 14 + 885 * 812 * 675 - 440; 
 			 break;
 			}
-			case 138:
+			case 997:
 			{
-				K_lect3229 = n_ceram3230 + 973 - 303 * 992 + 258 * 215; 
+				m_onomatarriveive3227 = b_tergrangey3228 * 670 - 273 * 418; 
+			 break;
+			}
+			case 745:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 + 363 + 560 - 743 + 211 - 593 - 93; 
+			 break;
+			}
+			case 380:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 - 814 / 542 + 932 + 399; 
+			 break;
+			}
+			case 519:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 - 666 - 426 + 283; 
+			 break;
+			}
+			case 698:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 - 9 / 239 + 115 + 601 * 467 / 286; 
+			 break;
+			}
+			case 221:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 - 322 + 845 + 226; 
+			 break;
+			}
+			case 413:
+			{
+				m_onomatarriveive3227 = b_tergrangey3228 + 170 + 265 - 563; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-        
-        BOOL platino3218Semblot3219 = NO;//commontemple19
-        while (!platino3218Semblot3219)
-        {
-            platino3218Semblot3219 = YES;
-            break;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(superView);
-    }];
-    
-    [bgV addSubview:mBindPhoneViewV2];
-    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(bgV);
-    }];
-    
-}
-
-- (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
-{
-    
-    if (![[NSThread currentThread] isMainThread]) {
-        SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	 UNNotificationTrigger * N_39 = [self buildingian1927Themselvesette1928:@"better3277Locwise3278" smalline1929Oscillolateen1930:nil quadragenivity1931Throughoutid1932:@"fand3279Hypoous3280" orexiular1933Fidise1934:nil claim1935Ofivity1936:4715 triptarium1937Muniish1938:8276 ];
-	if(N_39){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int l_astroan3281 = 3911;
-
-if(l_astroan3281 < 85665){
-	int J_site3282 = l_astroan3281 * 657 + 16 + 359 / 382; 
-if(J_site3282 < 17108){
-	float z_geoal3283 = J_site3282 + 894 / 672 / 642 / 718 + 945;
-}
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 525;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 543 - 354 / 251 / 403 != 80760){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2633;
-	if(self.flat1440Hesless1441 - 230 + 30 + 672 - 60 * 871 > 12862){}
-	self.aristary1442Agoar1443 = 209;
-	if(self.aristary1442Agoar1443 - 98 - 547 / 924 * 177 > 63115){ 
-double S_densform3284 = 618;
-
-double c_loqufollowor3285 = 738;
-if(S_densform3284 * 355 - 678 - 644 + 373 + 320 > 45247){
-	c_loqufollowor3285 = S_densform3284 * 48 + 379 * 827 * 535 * 360 + 574;
-}
-
-int N_veniibility3286 = 505;
-if(c_loqufollowor3285 + 468 - 983 / 673 <= 7946){
-	N_veniibility3286 = c_loqufollowor3285 - 503 - 743;
-}else{
-	N_veniibility3286 = c_loqufollowor3285 - 415 - 321 + 600 / 230;
-}
-
-float N_errpowerfic3287 = 366;
-if(N_veniibility3286 * 691 / 97 + 526 == 63684){
-	N_errpowerfic3287 = N_veniibility3286 * 898 * 768 + 437 / 559 * 744;
-}else{
-	N_errpowerfic3287 = N_veniibility3286 - 757 - 860 * 50 / 806 / 574 + 560;
-}
-
-int U_salubrable3288 = 840;
-if(N_errpowerfic3287 + 857 + 763 + 22 + 879 < 84951){
-	U_salubrable3288 = N_errpowerfic3287 * 987 / 601 / 369 / 632 - 559 + 345;
-}
-
-float r_choiceability3289 = 932;
-if(U_salubrable3288 + 166 + 940 <= 24463){
-	r_choiceability3289 = U_salubrable3288 - 951 - 772 * 360 + 934 + 389;
-}else{
-	r_choiceability3289 = U_salubrable3288 - 702 + 828;
-}
-
-int Q_blennheartical3290 = 787;
-if(r_choiceability3289 * 174 - 812 + 638 / 768 >= 92149){
-	Q_blennheartical3290 = r_choiceability3289 * 805 / 344 * 870 / 538 + 486;
-}else{
-	Q_blennheartical3290 = r_choiceability3289 - 40 * 900 / 549;
-}
-
-double v_septtion3291 = 777;
-if(Q_blennheartical3290 - 350 / 849 + 420 == 98868){
-	v_septtion3291 = Q_blennheartical3290 * 241 - 149 + 424 + 526 - 23;
-}
-
-int X_tragcallose3292 = 302;
-if(v_septtion3291 * 742 / 623 + 835 * 831 < 45795){
-	X_tragcallose3292 = v_septtion3291 * 564 * 218 - 109 - 996 / 252 / 453;
-}else{
-	X_tragcallose3292 = v_septtion3291 - 482 * 510;
-}
-
-double Y_subture3293 = 947;
-if(X_tragcallose3292 - 711 - 113 + 699 / 103 == 14009){
-	Y_subture3293 = X_tragcallose3292 - 541 + 81 + 927 * 714;
-}
-
-int m_gambism3294 = 408;
-if(Y_subture3293 - 143 * 858 - 721 + 150 - 742 <= 75521){
-	m_gambism3294 = Y_subture3293 - 782 / 347 * 459;
-}
-
  }
-	self.culturalaceous1444Broncher1445 = 7706;
-	if(self.culturalaceous1444Broncher1445 + 256 + 883 * 455 / 766 * 418 * 70 < 3404){}
-		if(self.phemwise1446Lowfaction1447){}
-      
-      
-    int junctature3233Circade3234;   //commontemple23
-    int osstion3235Eurress3236 = 8468;
-    int floorosity3237Duular3238 = 6820;
+	self.ctenee1428Buyry1429 = 7666;
+	if(self.ctenee1428Buyry1429 - 423 - 32 / 940 - 638 / 549 / 724 != 75243){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1514;
+	if(self.civilast1432Stratalongular1433 * 314 / 430 * 149 * 485 + 634 + 733 > 72560){}
+		if(self.inad1434Simpleive1435){
+float m_love3229 = 5223;
 
-    if (osstion3235Eurress3236 < floorosity3237Duular3238){
-        junctature3233Circade3234 = osstion3235Eurress3236;
+int D_underant3230 = 203;
+if(m_love3229 - 974 / 763 * 3 - 179 != 25255){
+	D_underant3230 = m_love3229 * 784 / 251 - 378 / 387 * 735 * 16;
+}
 
-        int ordinise3247Wrongine3248[ junctature3233Circade3234 ]; 
+double o_trachyform3231 = 460;
+if(D_underant3230 * 528 - 493 > 10764){
+	o_trachyform3231 = D_underant3230 * 675 - 929;
+}
 
-        
-    
-          // 初始化数组元素          
-          for ( int i = 0; i < junctature3233Circade3234; i++ )
-          {
-             ordinise3247Wrongine3248[ i ] = i + 578; // 设置元素 i 为 i + 100
-             break;
-          }
-    }else{
-        junctature3233Circade3234 = floorosity3237Duular3238;
-    }
-        
-                
-        long filmard3263Pessimexactlyitious3264 = 269;  //commontemple3
-        BOOL plagi3265Modernie3266 = NO;
-        while (filmard3263Pessimexactlyitious3264 < 6360)
-        {
-            if(filmard3263Pessimexactlyitious3264 > 7734){
-                break;
-            }
-            filmard3263Pessimexactlyitious3264 = filmard3263Pessimexactlyitious3264 + 1321;
-            plagi3265Modernie3266 = YES;
-        }
+float L_rect3232 = 24;
+if(o_trachyform3231 * 547 / 580 * 171 / 243 * 319 == 85719){
+	L_rect3232 = o_trachyform3231 + 676 * 773 + 661 * 64 * 403;
+}else{
+	L_rect3232 = o_trachyform3231 + 245 / 597 * 615 * 625;
+}
 
-        
+}
+int n_topian3224 = 4858;
 
-
+if(n_topian3224 >= 63288){
+	double H_solorium3225 = n_topian3224 + 930 + 388 * 934 / 567; 
+if(H_solorium3225 > 9883){
+	int L_Mrsy3226 = H_solorium3225 - 635 * 520 - 489 / 186;
+}
+}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSString * u_20 = [self fatherfier1988Script1989:@"plutless3331Cuspfy3332" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(u_20){}
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 4569;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 154 / 751 + 101 - 44 / 256 == 36604){}
-		if(self.prior1438Vanist1439){
-int w_vendent3333 = 1775;
-
-float R_euraneous3334 = 358;
-if(w_vendent3333 * 170 * 526 + 63 / 208 - 529 - 344 > 80115){
-	R_euraneous3334 = w_vendent3333 - 755 / 592 * 399 * 675;
-}else{
-	R_euraneous3334 = w_vendent3333 - 862 * 593 / 555 - 359;
-}
-
-float M_organization3335 = 532;
-if(R_euraneous3334 * 248 * 843 - 480 == 36901){
-	M_organization3335 = R_euraneous3334 * 902 + 134 / 109 * 322;
-}
-
-float x_stand3336 = 871;
-if(M_organization3335 * 112 * 532 - 962 - 779 * 639 < 13349){
-	x_stand3336 = M_organization3335 * 38 / 167 - 46 / 55;
-}
-
-}
-	self.flat1440Hesless1441 = 8263;
-	if(self.flat1440Hesless1441 - 177 / 504 + 813 + 156 - 162 - 241 != 13420){ 
-int K_increaseade3337 = 8259;
-
-double c_psammistic3338 = 597;
-if(K_increaseade3337 * 862 * 144 / 194 < 74370){
-	c_psammistic3338 = K_increaseade3337 - 964 * 756 - 641 + 206 - 872 * 672;
-}
-
-double n_upivity3339 = 776;
-if(c_psammistic3338 + 204 - 773 + 31 >= 80159){
-	n_upivity3339 = c_psammistic3338 * 397 - 367;
-}
-
-double F_thousandast3340 = 727;
-if(n_upivity3339 * 762 / 418 >= 55504){
-	F_thousandast3340 = n_upivity3339 + 28 + 766 * 193;
-}else{
-	F_thousandast3340 = n_upivity3339 * 862 / 68 / 942 + 67;
-}
-
-int B_homesive3341 = 785;
-if(F_thousandast3340 + 12 * 515 + 766 < 86684){
-	B_homesive3341 = F_thousandast3340 - 74 - 623 + 200 + 338 / 217;
-}else{
-	B_homesive3341 = F_thousandast3340 + 925 + 581 / 430 + 123 / 118;
-}
-
-int I_aphspeecho3342 = 502;
-if(B_homesive3341 - 978 / 942 + 12 / 367 - 916 / 29 < 72090){
-	I_aphspeecho3342 = B_homesive3341 * 401 * 234 - 413 + 746 * 120;
-}
-
-int U_testness3343 = 973;
-if(I_aphspeecho3342 - 555 + 415 / 220 == 53996){
-	U_testness3343 = I_aphspeecho3342 * 92 + 593 / 607;
-}
-
-double M_bisard3344 = 155;
-if(U_testness3343 - 193 * 817 - 941 * 731 - 679 + 828 > 80700){
-	M_bisard3344 = U_testness3343 + 142 * 324 * 556;
-}
-
-float v_egoatic3345 = 692;
-if(M_bisard3344 - 16 * 661 / 962 >= 57520){
-	v_egoatic3345 = M_bisard3344 - 761 * 610;
-}
-
-float Z_begin3346 = 799;
-if(v_egoatic3345 * 135 - 785 <= 10107){
-	Z_begin3346 = v_egoatic3345 + 275 - 893 * 909 - 122 / 662;
-}
-
-double b_scendular3347 = 875;
-if(Z_begin3346 * 968 / 235 >= 26288){
-	b_scendular3347 = Z_begin3346 + 31 + 102 + 364 + 365;
-}else{
-	b_scendular3347 = Z_begin3346 - 640 - 783 * 664 / 377 + 528;
-}
-
-float t_gest3348 = 741;
-if(b_scendular3347 * 134 + 512 == 25211){
-	t_gest3348 = b_scendular3347 * 825 + 164 * 489;
-}
-
- }
-	self.aristary1442Agoar1443 = 6343;
-	if(self.aristary1442Agoar1443 + 158 - 267 + 488 - 596 - 187 >= 15639){}
-	self.culturalaceous1444Broncher1445 = 3536;
-	if(self.culturalaceous1444Broncher1445 + 153 * 903 - 48 + 172 * 250 <= 92758){}
-		if(self.phemwise1446Lowfaction1447){
-double R_condiant3349 = 6884;
-
-if(R_condiant3349 != 62126){
-	float e_solhood3350 = R_condiant3349 - 158 / 699 + 530 + 234 / 832; 
-if(e_solhood3350 != 51796){
-	int X_rhabdacy3351 = e_solhood3350 + 614 / 875 - 853 + 530 + 858; 
-if(X_rhabdacy3351 < 61344){
-	int R_senanyoneality3352 = X_rhabdacy3351 * 748 * 118 / 806 / 677 * 48; 
-if(R_senanyoneality3352 == 76470){
-	float l_turpitise3353 = R_senanyoneality3352 + 305 - 384 + 898;
-}
-}
-}
-}
-}
-   
-      // 局部变量声明
-      int cineian3299Plor3300 = 3161;
-      int young3301Sincelet3302 = 460;
-      int veracition3303Bromature3304;
-      
-      if(young3301Sincelet3302 != cineian3299Plor3300){
-         // 调用函数来获取最大值
-         veracition3303Bromature3304 = fmax(young3301Sincelet3302, cineian3299Plor3300);
-                 
-        BOOL roseous3325Ititor3326 = NO;  //commontemple5
-        if (roseous3325Ititor3326)
-        {
-            roseous3325Ititor3326 = NO;
-        }
-
-        
-      }else{
-         veracition3303Bromature3304 = fmin(young3301Sincelet3302, cineian3299Plor3300);
-      }
-     
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
+		
         return;
     }
-    
+
+		
     if (!is_Version2) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:157 rach2006Gladiion2007:6444 homoiprobablyarian2008Pactaire2009:184 howeverator2010Opto2011:5084 ];
+	NSMutableArray * n_13 = [self quiteuous1897Tainosity1898:@"sign3237Cauloty3238" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:7507 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:6709 ];
+	if(n_13){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 3708;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 399 + 985 / 142 / 443 != 21988){}
-		if(self.prior1438Vanist1439){
-int n_armty3364 = 500;
-double e_signatory3365 = 118;
-switch (n_armty3364) {
-   case 990:
-			{
-				n_armty3364 = e_signatory3365 + 496 + 934 + 619 - 638 / 241 + 921; 
-			 break;
-			}
-			case 979:
-			{
-				n_armty3364 = e_signatory3365 - 16 * 796 / 297 * 817 / 668 - 495; 
-			 break;
-			}
-			case 176:
-			{
-				n_armty3364 = e_signatory3365 * 871 / 393 * 985 / 920 - 41; 
-			 break;
-			}
-			case 751:
-			{
-				n_armty3364 = e_signatory3365 * 715 - 775 + 983 * 287; 
-			 break;
-			}
-			case 360:
-			{
-				n_armty3364 = e_signatory3365 - 597 + 410 / 730; 
-			 break;
-			}
-			case 434:
-			{
-				n_armty3364 = e_signatory3365 * 399 - 287 - 549 - 18 + 525 + 847; 
-			 break;
-			}
-			case 541:
-			{
-				n_armty3364 = e_signatory3365 - 763 + 331 / 438 * 313 - 789 / 875; 
-			 break;
-			}
-			case 539:
-			{
-				n_armty3364 = e_signatory3365 * 521 / 861 - 50 / 23 + 755; 
-			 break;
-			}
-			case 325:
-			{
-				n_armty3364 = e_signatory3365 * 520 / 49; 
-			 break;
-			}
-			case 941:
-			{
-				n_armty3364 = e_signatory3365 + 964 + 762 / 872 + 614; 
-			 break;
-			}
-			   default:
-       break;
-			}
+	self.juniorie1426Aevent1427 = 6291;
+	if(self.juniorie1426Aevent1427 - 777 - 268 > 87886){}
+	self.ctenee1428Buyry1429 = 1932;
+	if(self.ctenee1428Buyry1429 * 870 / 769 - 215 * 154 < 72234){ 
+int w_stenhood3239 = 3363;
+
+if(w_stenhood3239 < 42394){
+	int q_nothing3240 = w_stenhood3239 * 798 + 963 + 179 / 652; 
+if(q_nothing3240 != 1908){
+	int H_stellule3241 = q_nothing3240 - 795 - 428 / 921 - 790 + 97; 
+if(H_stellule3241 >= 83511){
+	float I_absmindic3242 = H_stellule3241 * 542 + 46 - 508 * 74 / 298;
 }
-	self.flat1440Hesless1441 = 8878;
-	if(self.flat1440Hesless1441 + 386 - 815 / 891 - 970 * 889 * 26 > 22418){}
-	self.aristary1442Agoar1443 = 6003;
-	if(self.aristary1442Agoar1443 + 505 * 945 + 815 < 76515){ 
-int x_easyeur3366 = 3782;
-
-float S_almosty3367 = 576;
-if(x_easyeur3366 - 957 + 478 * 957 - 59 * 213 / 979 != 862){
-	S_almosty3367 = x_easyeur3366 - 890 - 374 * 72 - 71;
 }
-
-int n_tonightitude3368 = 282;
-if(S_almosty3367 * 18 - 774 < 38255){
-	n_tonightitude3368 = S_almosty3367 - 318 * 902 / 521;
-}else{
-	n_tonightitude3368 = S_almosty3367 + 303 + 350 + 519 / 713;
 }
-
-double l_teachero3369 = 133;
-if(n_tonightitude3368 + 718 - 814 * 859 == 57555){
-	l_teachero3369 = n_tonightitude3368 + 828 - 249 + 687 / 556 - 981 / 446;
-}
-
-int D_gnat3370 = 977;
-if(l_teachero3369 * 638 - 197 * 477 + 531 / 456 + 543 <= 77432){
-	D_gnat3370 = l_teachero3369 + 347 + 814 - 877 / 710 * 688;
-}
-
-float N_pausition3371 = 582;
-if(D_gnat3370 + 850 / 702 + 433 == 57195){
-	N_pausition3371 = D_gnat3370 - 297 * 617 * 990 / 348 * 877 / 390;
-}else{
-	N_pausition3371 = D_gnat3370 * 855 * 526 * 352 * 800;
-}
-
-int r_ficsure3372 = 527;
-if(N_pausition3371 + 677 * 974 - 262 + 274 * 945 != 79390){
-	r_ficsure3372 = N_pausition3371 * 170 / 878;
-}
-
-float V_uvulspendfication3373 = 175;
-if(r_ficsure3372 * 617 - 412 < 80058){
-	V_uvulspendfication3373 = r_ficsure3372 * 410 / 144;
-}
-
-float y_lateal3374 = 788;
-if(V_uvulspendfication3373 * 317 / 905 <= 25){
-	y_lateal3374 = V_uvulspendfication3373 + 545 / 475;
-}else{
-	y_lateal3374 = V_uvulspendfication3373 - 965 / 799;
-}
-
  }
-	self.culturalaceous1444Broncher1445 = 5671;
-	if(self.culturalaceous1444Broncher1445 - 525 * 348 + 318 - 320 <= 47596){}
-		if(self.phemwise1446Lowfaction1447){}
-int l_judic3358 = 2705;
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3869;
+	if(self.civilast1432Stratalongular1433 + 284 - 651 - 728 + 478 - 732 * 642 == 66087){}
+		if(self.inad1434Simpleive1435){}
+double D_pessimfocusice3235 = 5465;
 
-if(l_judic3358 < 33997){
-	double I_functia3359 = l_judic3358 - 921 * 193; 
-if(I_functia3359 < 16365){
-	float d_gastrbecauseistic3360 = I_functia3359 * 806 - 662 - 637; 
-if(d_gastrbecauseistic3360 == 61030){
-	int K_scelical3361 = d_gastrbecauseistic3360 + 525 + 79; 
-if(K_scelical3361 <= 19178){
-	int p_administration3362 = K_scelical3361 + 443 * 226 * 842 - 363; 
-if(p_administration3362 <= 43009){
-	double U_tainad3363 = p_administration3362 * 522 - 788 / 99;
-}
-}
-}
-}
+if(D_pessimfocusice3235 == 21519){
+	double Z_culturehood3236 = D_pessimfocusice3235 + 157 - 900;
 }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSArray * c_2 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:7983 plaud1671Past1672:5479 ];
-	if(c_2){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6539;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 516 + 105 - 710 / 165 + 352 - 847 > 57588){ 
-float k_fact3391 = 4328;
-
-double y_lateical3392 = 243;
-if(k_fact3391 * 430 / 286 / 638 + 130 - 242 / 681 != 3697){
-	y_lateical3392 = k_fact3391 * 899 * 893;
-}
-
-double j_futurefier3393 = 596;
-if(y_lateical3392 - 371 / 115 / 31 * 31 + 846 != 58973){
-	j_futurefier3393 = y_lateical3392 * 544 - 713;
-}
-
-float x_omaswise3394 = 320;
-if(j_futurefier3393 - 964 + 680 * 562 - 17 * 662 / 411 < 8059){
-	x_omaswise3394 = j_futurefier3393 * 37 - 505 / 755 + 817;
-}
-
-float k_plumery3395 = 406;
-if(x_omaswise3394 * 596 + 202 - 662 - 918 * 840 == 16125){
-	k_plumery3395 = x_omaswise3394 - 899 - 410 / 725;
-}else{
-	k_plumery3395 = x_omaswise3394 * 704 * 777;
-}
-
-double s_jectally3396 = 765;
-if(k_plumery3395 * 525 - 618 * 644 / 358 / 526 * 606 > 78802){
-	s_jectally3396 = k_plumery3395 + 840 / 750 * 139 / 433;
-}
-
-float q_filmate3397 = 615;
-if(s_jectally3396 - 54 + 358 - 474 * 164 * 493 != 77689){
-	q_filmate3397 = s_jectally3396 - 393 / 835;
-}else{
-	q_filmate3397 = s_jectally3396 * 626 + 502 * 166 * 137;
-}
-
-double q_polisile3398 = 968;
-if(q_filmate3397 - 828 / 443 >= 14076){
-	q_polisile3398 = q_filmate3397 + 128 * 948 / 133 - 808 * 852;
-}else{
-	q_polisile3398 = q_filmate3397 * 61 / 681 + 36 - 399 * 662 / 562;
-}
-
-double n_abilityive3399 = 251;
-if(q_polisile3398 - 656 - 544 / 498 * 707 != 21516){
-	n_abilityive3399 = q_polisile3398 * 87 + 612 / 122;
-}else{
-	n_abilityive3399 = q_polisile3398 + 210 - 912 / 485;
-}
-
-double N_don3400 = 682;
-if(n_abilityive3399 * 550 * 467 + 5 > 15214){
-	N_don3400 = n_abilityive3399 * 918 / 692 * 126 + 554;
-}else{
-	N_don3400 = n_abilityive3399 * 224 * 908;
-}
-
- }
-		if(self.prior1438Vanist1439){
-double j_improveency3401 = 160;
-
-if(j_improveency3401 == 64910){
-	double l_pancreatofier3402 = j_improveency3401 + 720 * 541 * 858; 
-if(l_pancreatofier3402 > 31601){
-	float V_hypoite3403 = l_pancreatofier3402 + 569 / 123 * 48 / 514; 
-if(V_hypoite3403 <= 47321){
-	double Q_flaccism3404 = V_hypoite3403 - 62 * 91 + 449;
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 9201;
-	if(self.flat1440Hesless1441 + 518 * 778 == 93582){ 
-int F_claustration3405 = 392;
-int V_raptoon3406 = 833;
-switch (F_claustration3405) {
-   case 139:
-			{
-				F_claustration3405 = V_raptoon3406 * 799 * 508 + 655 + 89 / 238; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.aristary1442Agoar1443 = 1803;
-	if(self.aristary1442Agoar1443 * 743 * 399 - 822 / 446 + 607 >= 48744){}
-	self.culturalaceous1444Broncher1445 = 859;
-	if(self.culturalaceous1444Broncher1445 * 468 + 495 / 629 / 533 > 34863){ 
-double f_waitar3407 = 5204;
-
-if(f_waitar3407 > 30851){
-	float R_alreadyward3408 = f_waitar3407 - 295 * 543 - 577 - 105 * 99; 
-if(R_alreadyward3408 > 66046){
-	float x_sorbical3409 = R_alreadyward3408 * 162 + 571 + 704 / 529 + 640 + 441; 
-if(x_sorbical3409 >= 93462){
-	float V_figfication3410 = x_sorbical3409 - 404 * 857 / 746; 
-if(V_figfication3410 > 26774){
-	float l_costade3411 = V_figfication3410 + 334 * 814 + 685 - 391 - 525;
-}
-}
-}
-}
- }
-		if(self.phemwise1446Lowfaction1447){
-float J_coraire3412 = 7741;
-
-int Q_terivity3413 = 476;
-if(J_coraire3412 * 866 - 431 + 700 >= 26273){
-	Q_terivity3413 = J_coraire3412 * 940 / 987 / 293;
-}
-
-double w_fragward3414 = 820;
-if(Q_terivity3413 + 751 / 107 + 426 + 437 >= 506){
-	w_fragward3414 = Q_terivity3413 - 366 * 204 + 188 * 830;
-}else{
-	w_fragward3414 = Q_terivity3413 - 279 * 616 * 782;
-}
-
-float c_audacio3415 = 178;
-if(w_fragward3414 + 319 / 453 * 763 + 975 - 493 - 860 >= 39377){
-	c_audacio3415 = w_fragward3414 + 395 - 795 - 667 / 119 - 185 / 165;
-}else{
-	c_audacio3415 = w_fragward3414 * 729 - 985 - 94 * 651;
-}
-
-int U_tortast3416 = 477;
-if(c_audacio3415 + 483 + 316 >= 27374){
-	U_tortast3416 = c_audacio3415 - 831 + 842 * 977;
-}else{
-	U_tortast3416 = c_audacio3415 + 932 + 678 + 9 + 999;
-}
-
-float s_oktic3417 = 976;
-if(U_tortast3416 + 534 * 338 * 93 - 482 > 56293){
-	s_oktic3417 = U_tortast3416 + 828 / 966 - 857 * 845 - 919 * 618;
-}
-
-double V_praeics3418 = 940;
-if(s_oktic3417 - 508 + 22 * 975 + 384 >= 21361){
-	V_praeics3418 = s_oktic3417 - 454 + 654 - 930;
-}else{
-	V_praeics3418 = s_oktic3417 + 425 + 8 - 151 - 230 / 976;
-}
-
-double l_votian3419 = 713;
-if(V_praeics3418 - 493 * 530 / 852 == 47359){
-	l_votian3419 = V_praeics3418 * 855 * 650 + 525 - 546;
-}else{
-	l_votian3419 = V_praeics3418 + 790 * 441 + 702 - 841 - 911 * 552;
-}
-
-float p_vicen3420 = 680;
-if(l_votian3419 - 87 / 299 / 859 + 229 <= 24417){
-	p_vicen3420 = l_votian3419 + 213 * 47;
-}
-
-int T_meritence3421 = 910;
-if(p_vicen3420 - 335 * 9 >= 13154){
-	T_meritence3421 = p_vicen3420 + 939 * 113 / 258 / 618 * 515 - 558;
-}
-
-int c_agemost3422 = 76;
-if(T_meritence3421 * 668 * 793 + 405 / 734 < 28348){
-	c_agemost3422 = T_meritence3421 - 845 - 615 - 627;
-}
-
-}
-int q_lacerth3379 = 5948;
-
-float D_attorney3380 = 251;
-if(q_lacerth3379 * 821 + 737 * 357 * 542 * 110 * 168 >= 46051){
-	D_attorney3380 = q_lacerth3379 + 13 + 358;
-}else{
-	D_attorney3380 = q_lacerth3379 * 396 + 788 / 945 - 798 * 623;
-}
-
-float G_tortuinsideability3381 = 193;
-if(D_attorney3380 * 741 * 241 * 727 >= 89014){
-	G_tortuinsideability3381 = D_attorney3380 + 486 / 866;
-}
-
-int J_sophyrestage3382 = 516;
-if(G_tortuinsideability3381 - 26 / 121 - 19 * 934 >= 29651){
-	J_sophyrestage3382 = G_tortuinsideability3381 + 997 * 797 / 278 + 709 / 548 * 801;
-}else{
-	J_sophyrestage3382 = G_tortuinsideability3381 - 296 / 54 / 551 * 132 * 919 * 1;
-}
-
-float Z_san3383 = 657;
-if(J_sophyrestage3382 + 655 * 768 / 397 / 972 + 691 / 397 == 49722){
-	Z_san3383 = J_sophyrestage3382 + 601 + 70 - 945 - 965;
-}else{
-	Z_san3383 = J_sophyrestage3382 * 795 * 924 / 573 / 439;
-}
-
-float H_primaacle3384 = 250;
-if(Z_san3383 * 82 * 645 + 883 - 722 * 438 + 306 >= 30409){
-	H_primaacle3384 = Z_san3383 * 578 + 535 * 431;
-}else{
-	H_primaacle3384 = Z_san3383 * 18 / 98 - 919 - 741;
-}
-
-float E_ternindeedetic3385 = 73;
-if(H_primaacle3384 + 160 / 36 * 570 + 8 / 656 + 945 < 57462){
-	E_ternindeedetic3385 = H_primaacle3384 - 761 - 64;
-}
-
-float s_monstric3386 = 255;
-if(E_ternindeedetic3385 + 950 / 58 + 581 / 662 / 868 / 391 >= 45300){
-	s_monstric3386 = E_ternindeedetic3385 + 205 * 456 + 450 * 126 / 971;
-}else{
-	s_monstric3386 = E_ternindeedetic3385 - 571 / 989 + 954 * 702 / 140 / 491;
-}
-
-double A_differentance3387 = 144;
-if(s_monstric3386 - 201 - 349 - 659 <= 26381){
-	A_differentance3387 = s_monstric3386 - 161 + 342 - 319 + 106 / 735;
-}
-
-double i_quesitaneity3388 = 147;
-if(A_differentance3387 - 768 + 124 + 141 * 196 > 42303){
-	i_quesitaneity3388 = A_differentance3387 + 118 * 61 * 430;
-}
-
-int B_myness3389 = 653;
-if(i_quesitaneity3388 + 14 + 97 * 412 + 318 / 499 * 485 > 27963){
-	B_myness3389 = i_quesitaneity3388 * 413 * 150 + 621;
-}else{
-	B_myness3389 = i_quesitaneity3388 - 713 / 175 * 803 * 758;
-}
-
-double v_lawyer3390 = 520;
-if(B_myness3389 - 196 + 86 / 310 * 171 - 484 * 612 == 26131){
-	v_lawyer3390 = B_myness3389 * 486 + 728 * 607 + 473 + 623;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
-    TableacityErrView *mBindAccountViewV2 = [[TableacityErrView alloc] initView_MMMethodMMM];
-    mBindAccountViewV2.mMWBlock = mBlock;
+    RadicaneousQuindecimmeasureressView *mBindPhoneViewV2 = [[RadicaneousQuindecimmeasureressView alloc] init];
+    mBindPhoneViewV2.mMWBlock = mBlock;
     UIView *superView = appTopViewController.view;
-    
-    UIView *bgV = [[LoseionEmeticieView alloc] init];
-    [superView addSubview:bgV];
-    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(superView);
-    }];
-    
-    [bgV addSubview:mBindAccountViewV2];
-    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(bgV);
-    }];
-    
-}
 
-
-- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
-{
-    areaCode = [areaCode trim_MMMethodMMM];
-    telephone = [telephone trim_MMMethodMMM];
-
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:areaCode]) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
-        if (mMWBlock) {
-            mMWBlock(NO, wwwww_tag_wwwww_text_area_code_not_empty.localx);
-        }
-        return;
-    }
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:telephone]) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
-        if (mMWBlock) {
-            mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_empty.localx);
-
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	UIApplication * Q_42 = [self raiseaster1448Stocho1449];
-	if(Q_42){}
+	 NSString * k_10 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"little3259Hearar3260" directionment2219Lamin2220:nil ];
+	if(k_10){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 7132;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 192 - 60 + 891 * 45 == 88010){ 
-int l_cratpublicty3441 = 5410;
+	self.juniorie1426Aevent1427 = 1592;
+	if(self.juniorie1426Aevent1427 - 294 - 345 + 947 / 260 * 946 + 921 >= 97681){}
+	self.ctenee1428Buyry1429 = 8634;
+	if(self.ctenee1428Buyry1429 + 100 - 199 / 666 - 1 == 66677){}
+		if(self.opacization1430Knowledgeform1431){
+double m_egormost3261 = 1923;
 
-float u_theroor3442 = 575;
-if(l_cratpublicty3441 + 6 * 823 / 298 < 76092){
-	u_theroor3442 = l_cratpublicty3441 + 814 / 364 - 685 / 137;
-}else{
-	u_theroor3442 = l_cratpublicty3441 - 660 + 970 - 5 * 228;
+if(m_egormost3261 <= 93275){
+	int v_gonyation3262 = m_egormost3261 - 374 / 838 / 692;
 }
-
-float s_withoutling3443 = 825;
-if(u_theroor3442 + 741 - 880 / 536 / 207 + 647 * 274 <= 88699){
-	s_withoutling3443 = u_theroor3442 * 474 / 460 / 441 + 773 * 956;
-}else{
-	s_withoutling3443 = u_theroor3442 - 386 + 942;
 }
+	self.civilast1432Stratalongular1433 = 1416;
+	if(self.civilast1432Stratalongular1433 - 872 * 427 == 57159){}
+		if(self.inad1434Simpleive1435){}
 
-float Q_camerhood3444 = 206;
-if(s_withoutling3443 - 776 + 136 + 49 + 278 - 898 == 21812){
-	Q_camerhood3444 = s_withoutling3443 * 837 - 181 + 428 + 416 - 894 * 533;
-}else{
-	Q_camerhood3444 = s_withoutling3443 - 238 * 526;
-}
+        BOOL yearity3243Polisless3244 = YES;  //commontemple15
+        int unit3245Picency3246 = 234;
+        if (yearity3243Polisless3244){
 
-float m_sing3445 = 542;
-if(Q_camerhood3444 - 346 / 805 + 972 - 68 + 194 != 68288){
-	m_sing3445 = Q_camerhood3444 - 965 + 725 * 404 - 196;
-}
-
-float e_sexhood3446 = 707;
-if(m_sing3445 - 708 / 82 + 591 / 211 <= 51227){
-	e_sexhood3446 = m_sing3445 + 959 / 592;
-}
-
-double t_cratuous3447 = 429;
-if(e_sexhood3446 - 949 - 122 - 984 >= 11755){
-	t_cratuous3447 = e_sexhood3446 - 392 * 287 + 287 * 454 * 914;
-}
-
-float X_limaccameraile3448 = 101;
-if(t_cratuous3447 * 512 / 676 - 647 - 662 * 677 >= 58591){
-	X_limaccameraile3448 = t_cratuous3447 + 920 / 456 * 683 - 830 / 923 + 61;
-}else{
-	X_limaccameraile3448 = t_cratuous3447 + 343 - 567 - 871 + 629 / 514 / 15;
-}
-
-double A_loveize3449 = 883;
-if(X_limaccameraile3448 + 68 - 660 + 813 == 61829){
-	A_loveize3449 = X_limaccameraile3448 + 719 + 237;
-}
-
-int M_habosity3450 = 865;
-if(A_loveize3449 - 121 - 704 - 562 >= 10923){
-	M_habosity3450 = A_loveize3449 + 586 + 953 / 209 / 225 / 422;
-}else{
-	M_habosity3450 = A_loveize3449 + 341 / 132 + 218 - 640 * 49;
-}
-
-double F_ceterator3451 = 76;
-if(M_habosity3450 - 795 + 742 - 448 + 26 * 342 + 511 < 15355){
-	F_ceterator3451 = M_habosity3450 + 598 + 610 - 417 / 762;
-}else{
-	F_ceterator3451 = M_habosity3450 + 483 / 855 + 879;
-}
-
- }
-		if(self.prior1438Vanist1439){
-int C_antad3452 = 6204;
-
-float N_lauscy3453 = 25;
-if(C_antad3452 * 659 + 732 < 13738){
-	N_lauscy3453 = C_antad3452 - 708 - 827 / 246 + 759 - 972 / 274;
-}else{
-	N_lauscy3453 = C_antad3452 - 72 - 430 / 462 + 228 / 204;
-}
-
-double m_nothing3454 = 465;
-if(N_lauscy3453 * 860 + 458 + 578 / 714 + 63 != 67495){
-	m_nothing3454 = N_lauscy3453 + 762 - 251 + 175 / 632;
-}
-
-float x_clyso3455 = 172;
-if(m_nothing3454 + 210 - 260 - 525 / 755 - 323 + 493 == 72474){
-	x_clyso3455 = m_nothing3454 * 856 / 654 * 858 - 515 * 177 - 380;
-}else{
-	x_clyso3455 = m_nothing3454 + 223 - 391 / 717 + 643 - 633;
-}
-
-}
-	self.flat1440Hesless1441 = 4635;
-	if(self.flat1440Hesless1441 + 49 * 92 - 190 == 24114){ 
-float L_duringot3456 = 3732;
-
-if(L_duringot3456 <= 59645){
-	double n_modernie3457 = L_duringot3456 - 373 * 194 - 923 / 263 - 220;
-}
- }
-	self.aristary1442Agoar1443 = 5529;
-	if(self.aristary1442Agoar1443 * 97 + 971 + 655 / 1 - 95 != 86400){}
-	self.culturalaceous1444Broncher1445 = 533;
-	if(self.culturalaceous1444Broncher1445 * 506 * 116 - 815 * 466 > 66445){ 
-int u_pickling3458 = 739;
-double s_helature3459 = 973;
-switch (u_pickling3458) {
-   case 853:
-			{
-				u_pickling3458 = s_helature3459 - 272 + 683 / 732 + 311; 
-			 break;
-			}
-			case 602:
-			{
-				u_pickling3458 = s_helature3459 + 252 - 387 / 735 * 19 * 767; 
-			 break;
-			}
-			case 859:
-			{
-				u_pickling3458 = s_helature3459 + 522 / 270 * 643 + 496; 
-			 break;
-			}
-			case 225:
-			{
-				u_pickling3458 = s_helature3459 - 401 - 432 / 996 - 548 + 460 / 503; 
-			 break;
-			}
-			case -20:
-			{
-				u_pickling3458 = s_helature3459 + 154 * 941 + 262 * 318; 
-			 break;
-			}
-			case 322:
-			{
-				u_pickling3458 = s_helature3459 * 558 - 650; 
-			 break;
-			}
-			case 240:
-			{
-				u_pickling3458 = s_helature3459 - 15 / 942 - 952 + 422; 
-			 break;
-			}
-			case 259:
-			{
-				u_pickling3458 = s_helature3459 * 227 / 795 * 981 * 507; 
-			 break;
-			}
-			case 417:
-			{
-				u_pickling3458 = s_helature3459 - 929 * 956 - 922; 
-			 break;
-			}
-			case 818:
-			{
-				u_pickling3458 = s_helature3459 + 229 - 344 - 219 * 488 - 230 + 645; 
-			 break;
-			}
-			case 305:
-			{
-				u_pickling3458 = s_helature3459 - 23 * 147 / 287 / 629 / 723 + 107; 
-			 break;
-			}
-			case 660:
-			{
-				u_pickling3458 = s_helature3459 - 982 - 892 + 350 / 405; 
-			 break;
-			}
-			case -18:
-			{
-				u_pickling3458 = s_helature3459 + 141 - 288 + 616 * 910; 
-			 break;
-			}
-			case 554:
-			{
-				u_pickling3458 = s_helature3459 * 98 * 493 + 231 * 692 / 16 - 451; 
-			 break;
-			}
-			case 464:
-			{
-				u_pickling3458 = s_helature3459 * 899 * 380 / 357 / 353 - 831; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){}
-            float sharear3427Lossid3428 = 9234.0;  //temple26
-            int bromoot3437Nihillargeism3438 = 3002;
-            int ossward3439 = 996;
-
-            if (@(sharear3427Lossid3428).doubleValue < 737) {
-
-                int sperability3431Sponsacy3432 = @(sharear3427Lossid3428).intValue;
-                switch (sperability3431Sponsacy3432) {
+            int rubrie3255Caedence3256 = 1826;
+            int nauistic3257 = 7346;
+            switch (unit3245Picency3246) {
                     
-                    case 569:
+                case 233:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 - 838 + 881 * 224; 
+				rubrie3255Caedence3256 = nauistic3257 * 355 / 160 - 791 - 56 * 530 + 935; 
 			 break;
 			}
-			case 769:
+			case 441:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 * 412 - 85 * 773 + 228 + 922; 
+				rubrie3255Caedence3256 = nauistic3257 - 726 - 686 * 108 - 620 + 994; 
 			 break;
 			}
-			case 255:
+			case 519:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 + 415 - 83 * 984 + 544; 
+				rubrie3255Caedence3256 = nauistic3257 * 859 / 730 + 366 - 293 * 632; 
 			 break;
 			}
-			case 86:
+			case -44:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 * 985 * 632; 
+				rubrie3255Caedence3256 = nauistic3257 - 669 + 275; 
 			 break;
 			}
-			case 748:
+			case -10:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 + 833 * 410; 
+				rubrie3255Caedence3256 = nauistic3257 - 106 + 515 - 292 / 815 / 517; 
 			 break;
 			}
-			case 480:
+			case 768:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 * 531 * 219 + 440 / 354 * 170 * 468; 
+				rubrie3255Caedence3256 = nauistic3257 * 904 - 753 - 627; 
 			 break;
 			}
-			case -75:
+			case 429:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 * 156 / 911 * 465 - 889 + 732 * 246; 
+				rubrie3255Caedence3256 = nauistic3257 - 798 + 993 - 973 * 369; 
 			 break;
 			}
-			case 853:
+			
+                    
+                default:
+                    break;
+            }
+
+        }else{
+            yearity3243Polisless3244 = !yearity3243Polisless3244;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+
+		
+    
+    UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSArray * A_26 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:175 professor1968Budget1969:nil passition1970Cupard1971:8682 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(A_26){}
+
+	self.juniorie1426Aevent1427 = 1834;
+	if(self.juniorie1426Aevent1427 + 861 - 907 - 594 * 921 + 861 / 309 != 24469){ 
+double t_floor3279 = 6614;
+
+if(t_floor3279 == 14080){
+	int m_thuscy3280 = t_floor3279 - 128 / 781 + 20 + 517; 
+if(m_thuscy3280 <= 39994){
+	float v_hot3281 = m_thuscy3280 - 978 / 273 / 578 + 260 * 155 / 529; 
+if(v_hot3281 != 82994){
+	float a_spatiant3282 = v_hot3281 * 374 + 633 / 903; 
+if(a_spatiant3282 >= 46706){
+	float Q_dexterproblemette3283 = a_spatiant3282 * 651 / 234; 
+if(Q_dexterproblemette3283 >= 75729){
+	int J_pontorium3284 = Q_dexterproblemette3283 + 290 + 709 / 311;
+}
+}
+}
+}
+}
+ }
+	self.ctenee1428Buyry1429 = 3612;
+	if(self.ctenee1428Buyry1429 + 515 + 319 + 855 - 70 / 49 / 100 > 35321){}
+		if(self.opacization1430Knowledgeform1431){
+float G_westernable3285 = 7192;
+
+float h_studyenne3286 = 165;
+if(G_westernable3285 + 893 * 227 + 406 * 842 - 773 + 197 >= 78654){
+	h_studyenne3286 = G_westernable3285 - 166 / 798 / 281 - 413 - 853 + 924;
+}
+
+int U_sagittrate3287 = 587;
+if(h_studyenne3286 - 26 + 160 + 364 * 985 * 381 < 98636){
+	U_sagittrate3287 = h_studyenne3286 * 30 - 280 - 167 - 866;
+}else{
+	U_sagittrate3287 = h_studyenne3286 - 123 + 620;
+}
+
+double m_manageproof3288 = 471;
+if(U_sagittrate3287 - 962 / 667 / 154 / 521 * 671 < 27770){
+	m_manageproof3288 = U_sagittrate3287 - 897 / 121 * 833 / 421;
+}
+
+float G_opoterprobablyair3289 = 649;
+if(m_manageproof3288 - 169 - 341 - 64 - 87 + 492 + 526 > 62092){
+	G_opoterprobablyair3289 = m_manageproof3288 * 346 * 732 + 124;
+}
+
+int D_vivo3290 = 959;
+if(G_opoterprobablyair3289 + 262 - 271 - 21 >= 21403){
+	D_vivo3290 = G_opoterprobablyair3289 - 854 + 574 - 625 - 136 - 195;
+}else{
+	D_vivo3290 = G_opoterprobablyair3289 * 586 / 429 + 593 + 865 + 516;
+}
+
+double Y_tingar3291 = 427;
+if(D_vivo3290 + 237 * 204 <= 66639){
+	Y_tingar3291 = D_vivo3290 * 355 + 36;
+}
+
+double F_pneuule3292 = 111;
+if(Y_tingar3291 * 610 * 692 * 771 * 861 > 41252){
+	F_pneuule3292 = Y_tingar3291 * 673 + 810 * 117 - 268 * 646 + 39;
+}else{
+	F_pneuule3292 = Y_tingar3291 * 110 - 66 - 750 + 627;
+}
+
+double O_almature3293 = 432;
+if(F_pneuule3292 * 603 - 982 == 87834){
+	O_almature3293 = F_pneuule3292 + 631 + 293;
+}else{
+	O_almature3293 = F_pneuule3292 - 126 / 400 + 355 - 411 / 291;
+}
+
+}
+	self.civilast1432Stratalongular1433 = 3780;
+	if(self.civilast1432Stratalongular1433 - 933 + 823 - 884 > 9947){}
+		if(self.inad1434Simpleive1435){}
+            float byation3265Thoughtard3266 = 6767.0;  //temple26
+            int hibvictimacious3275Orthoress3276 = 5748;
+            int opmakeine3277 = 10;
+
+            if (@(byation3265Thoughtard3266).doubleValue != 2347) {
+
+                int rockivity3269Posal3270 = @(byation3265Thoughtard3266).intValue;
+                switch (rockivity3269Posal3270) {
+                    
+                    case 449:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 + 883 * 495 + 248 * 736 * 341; 
+				hibvictimacious3275Orthoress3276 = opmakeine3277 * 980 * 714 / 499 - 847; 
 			 break;
 			}
-			case 933:
+			case 299:
 			{
-				bromoot3437Nihillargeism3438 = ossward3439 - 919 + 47 * 189 * 708 - 408 - 38; 
+				hibvictimacious3275Orthoress3276 = opmakeine3277 * 270 / 946 * 541 * 929 - 751 * 625; 
+			 break;
+			}
+			case 863:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 691 / 763 * 927; 
+			 break;
+			}
+			case 320:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 - 689 * 141 * 611 / 240 / 885; 
+			 break;
+			}
+			case 85:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 - 841 + 423 / 835 * 669 / 60; 
+			 break;
+			}
+			case 415:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 979 * 29; 
+			 break;
+			}
+			case 787:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 205 + 735 - 623 * 526; 
+			 break;
+			}
+			case 948:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 49 * 33 / 166 / 682 - 700 * 225; 
+			 break;
+			}
+			case 109:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 160 * 753 + 436 / 170 + 836; 
+			 break;
+			}
+			case 74:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 * 679 + 789 + 650 / 1 / 953 * 375; 
+			 break;
+			}
+			case 574:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 - 186 / 46 * 885 + 571 + 691 * 523; 
+			 break;
+			}
+			case 98:
+			{
+				hibvictimacious3275Orthoress3276 = opmakeine3277 + 540 * 131 / 664; 
 			 break;
 			}
 			
@@ -7414,907 +4184,281 @@ switch (u_pickling3458) {
 
             }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        }
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSInteger W_48 = [self seeress1522Bareur1523:nil piair1524Sufeveningan1525:3947 ];
-	if(W_48){}
+    [superView addSubview:bgV];
 
-		if(self.pentecost1434Kinanythingenne1435){
-int q_durlike3487 = 4504;
-
-if(q_durlike3487 != 8584){
-	double Y_pietee3488 = q_durlike3487 + 843 + 732 - 125;
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 3669;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 895 - 688 / 580 / 734 != 40666){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7723;
-	if(self.flat1440Hesless1441 + 324 - 358 * 881 / 756 / 357 + 717 > 82150){ 
-int Y_movementy3489 = 828;
-int V_peptan3490 = 731;
-switch (Y_movementy3489) {
-   case 871:
-			{
-				Y_movementy3489 = V_peptan3490 - 609 * 745; 
-			 break;
-			}
-			case 408:
-			{
-				Y_movementy3489 = V_peptan3490 + 853 * 838; 
-			 break;
-			}
-			case 941:
-			{
-				Y_movementy3489 = V_peptan3490 + 946 + 32 + 518 - 189 + 240 / 228; 
-			 break;
-			}
-			case 90:
-			{
-				Y_movementy3489 = V_peptan3490 * 93 - 358; 
-			 break;
-			}
-			case 121:
-			{
-				Y_movementy3489 = V_peptan3490 - 471 - 948 / 45 / 900; 
-			 break;
-			}
-			case 717:
-			{
-				Y_movementy3489 = V_peptan3490 * 666 - 414 * 813; 
-			 break;
-			}
-			case 881:
-			{
-				Y_movementy3489 = V_peptan3490 - 436 + 384; 
-			 break;
-			}
-			case 638:
-			{
-				Y_movementy3489 = V_peptan3490 - 500 * 227 + 5; 
-			 break;
-			}
-			case 660:
-			{
-				Y_movementy3489 = V_peptan3490 * 483 * 566 * 180; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.aristary1442Agoar1443 = 809;
-	if(self.aristary1442Agoar1443 * 564 - 177 < 40313){}
-	self.culturalaceous1444Broncher1445 = 8627;
-	if(self.culturalaceous1444Broncher1445 * 120 * 936 + 537 != 57939){}
-		if(self.phemwise1446Lowfaction1447){
-int c_secthroughoutsure3491 = 696;
-float J_sarcoain3492 = 696;
-switch (c_secthroughoutsure3491) {
-   case 233:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 * 789 * 30 - 495 / 222; 
-			 break;
-			}
-			case 813:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 + 907 / 355; 
-			 break;
-			}
-			case 979:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 + 966 / 186 + 222 + 165 - 851; 
-			 break;
-			}
-			case 237:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 * 200 - 528 * 483 - 180 / 41 / 414; 
-			 break;
-			}
-			case -6:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 - 162 / 141 + 738 - 347 * 383; 
-			 break;
-			}
-			case 258:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 * 640 - 352 / 513; 
-			 break;
-			}
-			case 945:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 - 767 - 685 / 719; 
-			 break;
-			}
-			case 867:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 * 723 / 113 / 887 + 600 + 292; 
-			 break;
-			}
-			case 177:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 * 423 - 714 - 547 - 547; 
-			 break;
-			}
-			case 496:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 + 749 * 298 - 665 / 532 / 684; 
-			 break;
-			}
-			case 790:
-			{
-				c_secthroughoutsure3491 = J_sarcoain3492 + 127 + 269 + 312; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-        
-        int shakeless3462Section3463 = 5089;  //commontemple7
-        BOOL believe3464Meniperformanceular3465 = NO;
-        if (shakeless3462Section3463 < 686){
-            
-            believe3464Meniperformanceular3465 = NO;
-            float F_foenie3476 = 6253;
-
-float r_phalar3477 = 815;
-if(F_foenie3476 * 531 / 900 * 548 - 390 - 903 / 136 != 66575){
-	r_phalar3477 = F_foenie3476 - 970 - 805;
-}else{
-	r_phalar3477 = F_foenie3476 - 269 - 512 * 24 * 523 * 853 + 757;
-}
-
-float b_phrynade3478 = 820;
-if(r_phalar3477 - 417 / 179 + 729 + 932 / 856 < 56838){
-	b_phrynade3478 = r_phalar3477 + 601 * 19 / 137 * 563 - 940 * 319;
-}else{
-	b_phrynade3478 = r_phalar3477 * 88 * 451 - 267;
-}
-
-int V_serviceior3479 = 671;
-if(b_phrynade3478 - 632 * 815 <= 74571){
-	V_serviceior3479 = b_phrynade3478 * 774 + 176;
-}
-
-float J_tomoence3480 = 428;
-if(V_serviceior3479 + 94 + 383 / 544 / 858 < 98202){
-	J_tomoence3480 = V_serviceior3479 * 971 - 692 / 57 * 636;
-}
-
-float g_bullifier3481 = 180;
-if(J_tomoence3480 * 212 + 517 / 763 / 679 * 281 + 257 != 13281){
-	g_bullifier3481 = J_tomoence3480 + 493 + 705 / 422 * 618;
-}
-
-int Y_girlful3482 = 143;
-if(g_bullifier3481 + 585 + 873 * 562 > 30299){
-	Y_girlful3482 = g_bullifier3481 - 477 / 389 + 388;
-}
-
-double V_easyably3483 = 926;
-if(Y_girlful3482 * 196 * 910 * 234 * 239 != 76534){
-	V_easyably3483 = Y_girlful3482 * 322 - 443 * 695 * 941;
-}else{
-	V_easyably3483 = Y_girlful3482 * 873 / 162 + 423 + 174 * 497;
-}
-
-int i_epiargueet3484 = 636;
-if(V_easyably3483 + 628 - 272 == 65247){
-	i_epiargueet3484 = V_easyably3483 * 831 / 642 + 207 / 416 - 498 / 20;
-}else{
-	i_epiargueet3484 = V_easyably3483 * 382 - 82 * 89 + 188;
-}
-
-double C_artkin3485 = 238;
-if(i_epiargueet3484 + 765 / 228 / 118 > 32466){
-	C_artkin3485 = i_epiargueet3484 * 999 + 12 / 996 * 351;
-}else{
-	C_artkin3485 = i_epiargueet3484 - 175 / 151 / 998 * 913 + 672 + 823;
-}
-
-float e_chooseen3486 = 870;
-if(C_artkin3485 - 760 + 193 - 892 / 722 / 238 * 800 > 54902){
-	e_chooseen3486 = C_artkin3485 - 78 + 589;
-}else{
-	e_chooseen3486 = C_artkin3485 + 265 / 274;
-}
-
-        }else{
-            believe3464Meniperformanceular3465 = NO;
-        }
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        return;
-    }
+		
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
     
-    NSDictionary *pInfo = [ElsureTraditional getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
-    if(pInfo){
-        
-        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
-        if (![ElsureTraditional validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
-            [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
-            if (mMWBlock) {
-                mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_match.localx);
-            }
+    [bgV addSubview:mBindPhoneViewV2];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long x_23 = [self indeedtion1645Anthropdaughter1646:@"nomin3504Personalality3505" fallacy1647Seriesator1648:8076 ];
+	[self goalan2239Pun2240:nil claring2241Clinment2242:nil lastial2243Thyrry2244:nil thalam2245Coite2246:5892 foreant2247Abory2248:nil saliatory2249Semicolorization2250:nil vania2251Sociability2252:@"feelingence3298Dogm3299" arthrose2253Coveret2254:@"patcertainly3300Drawwise3301" ];
+
+	self.juniorie1426Aevent1427 = 8934;
+	if(self.juniorie1426Aevent1427 * 26 + 935 / 607 + 852 >= 30062){}
+	self.ctenee1428Buyry1429 = 3514;
+	if(self.ctenee1428Buyry1429 * 930 / 515 * 997 * 629 + 393 != 41377){}
+		if(self.opacization1430Knowledgeform1431){
+int s_general3302 = 803;
+float x_tardgrowform3303 = 873;
+switch (s_general3302) {
+   case 23:
+			{
+				s_general3302 = x_tardgrowform3303 + 585 / 230 / 596; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+	self.civilast1432Stratalongular1433 = 3932;
+	if(self.civilast1432Stratalongular1433 * 740 - 575 / 239 + 437 * 69 * 260 == 38256){}
+		if(self.inad1434Simpleive1435){}
+int k_item3296 = 590;
+float Q_partiite3297 = 795;
+switch (k_item3296) {
+   case 267:
+			{
+				k_item3296 = Q_partiite3297 + 737 / 233 / 675; 
+			 break;
+			}
+			case 843:
+			{
+				k_item3296 = Q_partiite3297 - 69 * 415 + 320 * 886 - 977 / 122; 
+			 break;
+			}
+			case 991:
+			{
+				k_item3296 = Q_partiite3297 - 958 - 788 - 194 * 102; 
+			 break;
+			}
+			case 124:
+			{
+				k_item3296 = Q_partiite3297 * 388 + 710 / 465; 
+			 break;
+			}
+			case 37:
+			{
+				k_item3296 = Q_partiite3297 - 755 / 252; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    [mBindPhoneViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
+    }];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int x_23 = [self likely2018Argueory2019:5463 daughterling2020Movian2021:@"manuability3314Maniafold3315" obeer2022Corister2023:nil waitie2024Threeety2025:nil ];
 	if(x_23){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 4835;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 57 / 609 + 975 - 552 < 34189){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2664;
-	if(self.flat1440Hesless1441 - 71 * 436 - 14 + 813 / 689 * 339 > 88244){}
-	self.aristary1442Agoar1443 = 4392;
-	if(self.aristary1442Agoar1443 + 624 + 582 > 55718){ 
-int T_whetherarian3506 = 736;
-int x_facy3507 = 106;
-switch (T_whetherarian3506) {
-   case 797:
+	self.juniorie1426Aevent1427 = 2876;
+	if(self.juniorie1426Aevent1427 * 939 - 176 - 567 + 178 < 88142){}
+	self.ctenee1428Buyry1429 = 4104;
+	if(self.ctenee1428Buyry1429 + 33 * 564 * 751 - 673 <= 122){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3333;
+	if(self.civilast1432Stratalongular1433 + 270 + 485 >= 30868){ 
+int t_ordinan3316 = 163;
+int d_phleglike3317 = 247;
+switch (t_ordinan3316) {
+   case 646:
 			{
-				T_whetherarian3506 = x_facy3507 + 12 / 979 * 534 + 459; 
+				t_ordinan3316 = d_phleglike3317 + 988 / 848 / 895 - 480; 
 			 break;
 			}
-			case 504:
+			case 452:
 			{
-				T_whetherarian3506 = x_facy3507 * 709 - 437 / 685 - 129 * 892; 
+				t_ordinan3316 = d_phleglike3317 * 971 + 405; 
 			 break;
 			}
-			case 669:
+			case 919:
 			{
-				T_whetherarian3506 = x_facy3507 * 187 + 582 + 221; 
+				t_ordinan3316 = d_phleglike3317 - 429 - 181 + 953 / 304 / 409 + 812; 
 			 break;
 			}
-			case 979:
+			case 362:
 			{
-				T_whetherarian3506 = x_facy3507 - 928 + 188 + 786 + 895 / 458 / 891; 
+				t_ordinan3316 = d_phleglike3317 - 877 * 722 * 780 + 615; 
 			 break;
 			}
-			case 262:
+			case 332:
 			{
-				T_whetherarian3506 = x_facy3507 - 565 - 802 + 511; 
+				t_ordinan3316 = d_phleglike3317 * 753 / 789 / 591 + 788 + 932; 
 			 break;
 			}
-			case 697:
+			case 168:
 			{
-				T_whetherarian3506 = x_facy3507 - 328 * 664 * 833 - 21 / 200; 
+				t_ordinan3316 = d_phleglike3317 - 4 - 660; 
 			 break;
 			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 1051;
-	if(self.culturalaceous1444Broncher1445 - 634 * 858 / 899 / 301 <= 82842){ 
-int h_pubertry3508 = 8323;
-
-double K_citizenfication3509 = 47;
-if(h_pubertry3508 - 570 * 344 / 758 * 752 <= 17224){
-	K_citizenfication3509 = h_pubertry3508 - 891 * 914 - 147;
-}else{
-	K_citizenfication3509 = h_pubertry3508 * 984 + 535 * 815 * 243 / 550;
-}
-
-float y_fishfaction3510 = 950;
-if(K_citizenfication3509 - 781 + 572 * 141 + 984 >= 98882){
-	y_fishfaction3510 = K_citizenfication3509 - 91 * 549 * 615;
-}
-
-float K_riseon3511 = 307;
-if(y_fishfaction3510 * 424 - 17 - 396 + 891 != 33721){
-	K_riseon3511 = y_fishfaction3510 + 213 / 312 - 553 - 719;
-}
-
-double V_biosong3512 = 931;
-if(K_riseon3511 + 811 / 500 * 162 + 95 * 159 != 21384){
-	V_biosong3512 = K_riseon3511 + 167 * 188 * 245;
-}
-
-float F_certainlyition3513 = 366;
-if(V_biosong3512 + 889 / 826 / 134 > 52532){
-	F_certainlyition3513 = V_biosong3512 - 277 - 782 - 666 / 883;
-}else{
-	F_certainlyition3513 = V_biosong3512 - 39 + 597 + 798;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){}
-double I_pathomotherlet3495 = 6667;
-
-int j_opl3496 = 869;
-if(I_pathomotherlet3495 + 552 - 562 - 933 > 82915){
-	j_opl3496 = I_pathomotherlet3495 + 183 * 423 * 305;
-}else{
-	j_opl3496 = I_pathomotherlet3495 + 913 * 841 + 72 * 940;
-}
-
-int G_clearatic3497 = 695;
-if(j_opl3496 - 595 * 639 != 49631){
-	G_clearatic3497 = j_opl3496 - 964 + 850 * 30 * 734 * 589;
-}else{
-	G_clearatic3497 = j_opl3496 * 943 / 548 - 372;
-}
-
-int L_worldacy3498 = 710;
-if(G_clearatic3497 + 824 + 551 - 566 == 7105){
-	L_worldacy3498 = G_clearatic3497 + 446 + 798 / 34 + 448 - 146;
-}
-
-double E_seiize3499 = 595;
-if(L_worldacy3498 + 705 * 295 <= 16179){
-	E_seiize3499 = L_worldacy3498 + 838 + 172 + 855 - 854;
-}else{
-	E_seiize3499 = L_worldacy3498 + 182 * 415 / 476 - 526 + 713 / 587;
-}
-
-float J_seriousair3500 = 933;
-if(E_seiize3499 + 579 - 262 / 966 + 638 < 16243){
-	J_seriousair3500 = E_seiize3499 - 56 * 689 + 649;
-}else{
-	J_seriousair3500 = E_seiize3499 + 648 - 703 - 499 / 357 - 847;
-}
-
-float L_rhagfication3501 = 491;
-if(J_seriousair3500 - 656 / 527 - 284 / 647 <= 55926){
-	L_rhagfication3501 = J_seriousair3500 - 106 / 615;
-}
-
-float C_equindom3502 = 443;
-if(L_rhagfication3501 + 330 / 699 + 221 / 766 - 22 > 29173){
-	C_equindom3502 = L_rhagfication3501 - 99 - 886;
-}else{
-	C_equindom3502 = L_rhagfication3501 + 755 * 806 / 424 - 321 + 897;
-}
-
-float s_onchopoliticsfication3503 = 602;
-if(C_equindom3502 - 167 - 63 / 359 + 387 - 967 < 84677){
-	s_onchopoliticsfication3503 = C_equindom3502 + 37 - 469;
-}else{
-	s_onchopoliticsfication3503 = C_equindom3502 * 37 + 912 - 698 - 921;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-            return;
-        }
-    }
-    
-    
-    [ValueformVocar requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSString * q_16 = [self fatherfier1988Script1989:@"societyee3566Atant3567" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(q_16){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 1792;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 179 * 589 * 783 + 829 <= 45846){}
-		if(self.prior1438Vanist1439){
-int r_gemmacle3568 = 1942;
-
-int O_noticead3569 = 187;
-if(r_gemmacle3568 * 404 * 100 * 464 != 94259){
-	O_noticead3569 = r_gemmacle3568 * 711 / 425 - 242 - 663 / 954 - 227;
-}else{
-	O_noticead3569 = r_gemmacle3568 + 556 * 147 * 735 + 287 - 460 * 690;
-}
-
-}
-	self.flat1440Hesless1441 = 1276;
-	if(self.flat1440Hesless1441 + 954 - 518 + 820 != 71089){}
-	self.aristary1442Agoar1443 = 4331;
-	if(self.aristary1442Agoar1443 + 737 + 733 / 45 - 986 * 459 == 16178){}
-	self.culturalaceous1444Broncher1445 = 618;
-	if(self.culturalaceous1444Broncher1445 - 104 - 846 + 57 * 202 != 6439){}
-		if(self.phemwise1446Lowfaction1447){}
-          int goodon3514Primize3515 = 2432; //temple23
-          int stronganeous3516Angarian3517 = 7649;
-          NSMutableDictionary * tidimachineern3518Dooristic3519 = [[NSMutableDictionary alloc] init];
-
-          [tidimachineern3518Dooristic3519 setObject: @(goodon3514Primize3515) forKey:@"metrior3524Spendhood3525"];
-          int lytsellsive3526Credar3527 = (int)goodon3514Primize3515;
-          int faci3530Bag3531 = 0;
-          for (int emes3532Yes3533 = faci3530Bag3531; emes3532Yes3533 > lytsellsive3526Credar3527 - 1; emes3532Yes3533--) {
-              faci3530Bag3531 += emes3532Yes3533;
-               int caloaster3546Successie3547 = faci3530Bag3531;
-               if (caloaster3546Successie3547 >= 1593) {
-               }
-              break;
-
-          }
-          stronganeous3516Angarian3517 += 1856;
-          [tidimachineern3518Dooristic3519 setObject: @(stronganeous3516Angarian3517) forKey:@"osaceous3558Nationalfication3559"];
-             
-          if (stronganeous3516Angarian3517 < 4767) {
-              stronganeous3516Angarian3517 = goodon3514Primize3515;
-          }
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        if (mMWBlock) {
-            mMWBlock(YES, nil);
-        }
-        
-    } errorBlock_MMMethodMMM:^(HardMere *error) {
-        
-        if (mMWBlock) {
-            mMWBlock(NO, error.message);
-        }
-        
-    }];
-}
-
-
-//===insert my method start=== 2023-12-13 18:35:09
-- ( UNNotificationTrigger *)buildingian1927Themselvesette1928:(NSString *)buildingian1927_1 smalline1929Oscillolateen1930:(NSData *)smalline1929_2 quadragenivity1931Throughoutid1932:(NSString *)quadragenivity1931_3 orexiular1933Fidise1934:(UIWindow *)orexiular1933_4 claim1935Ofivity1936:(BOOL)claim1935_5 triptarium1937Muniish1938:(int)triptarium1937_6{ //insert method
-	if(buildingian1927_1){
-		        
-        float startment1941Glandcarryfier1942 = 6880;  //commontemple7
-        BOOL seb1943Arcia1944 = NO;
-        if (startment1941Glandcarryfier1942 != 6842){
-            
-            seb1943Arcia1944 = NO;
-        }else{
-            seb1943Arcia1944 = YES;
-        }
-
-        
-	}
- 
-	 UNNotificationTrigger *y_24 = nil;
-	return y_24;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSMutableArray *)onization1831Sometimesie1832:(NSData *)onization1831_1 tors1833Amphacious1834:(NSDictionary *)tors1833_2 menslike1835Gymnrecentlyer1836:(NSDictionary *)menslike1835_3 acttic1837Large1838:(NSInteger)acttic1837_4 remember1839Fruct1840:(BOOL)remember1839_5 includingar1841Millen1842:( NSArray *)includingar1841_6 natatic1843Mortment1844:(float)natatic1843_7 sacrition1845Current1846:(NSString *)sacrition1845_8{ //insert method
-	if(onization1831_1){
-		int P_prevent1849 = 252;
-float W_flammade1850 = 794;
-switch (P_prevent1849) {
-   case 773:
+			case 139:
 			{
-				P_prevent1849 = W_flammade1850 + 306 - 954 / 178 * 628; 
+				t_ordinan3316 = d_phleglike3317 * 81 * 559; 
 			 break;
 			}
-			case 719:
+			case 381:
 			{
-				P_prevent1849 = W_flammade1850 + 387 - 351 / 318 - 228 / 930; 
+				t_ordinan3316 = d_phleglike3317 * 641 * 385 * 690; 
 			 break;
 			}
-			case 981:
+			case 798:
 			{
-				P_prevent1849 = W_flammade1850 + 349 - 635; 
+				t_ordinan3316 = d_phleglike3317 * 89 - 481 / 336 + 559; 
 			 break;
 			}
-			case 472:
+			case 648:
 			{
-				P_prevent1849 = W_flammade1850 * 248 + 805 / 40 + 614 * 165 * 268; 
+				t_ordinan3316 = d_phleglike3317 + 949 * 258 / 912 * 47 + 986; 
 			 break;
 			}
-			case 295:
+			case 22:
 			{
-				P_prevent1849 = W_flammade1850 - 545 - 973 * 204 / 317 / 249 + 588; 
-			 break;
-			}
-			case 882:
-			{
-				P_prevent1849 = W_flammade1850 + 968 - 294 + 776 - 733; 
-			 break;
-			}
-			case 246:
-			{
-				P_prevent1849 = W_flammade1850 - 579 - 918 - 916 - 694 * 491 + 323; 
-			 break;
-			}
-			   default:
-       break;
-			}
-	}
-	if(tors1833_2){
-		        
-        int levty1851Workish1852 = 6829;  //temple7
-        BOOL candidateization1853Mandant1854 = NO;
-        if (levty1851Workish1852 > -661){
-            
-            candidateization1853Mandant1854 = YES;
-        }else{
-            candidateization1853Mandant1854 = NO;
-        }
-
-        
-	}
-	if(remember1839_5){
-		int S_fodfearture1861 = 423;
-int g_policior1862 = 901;
-switch (S_fodfearture1861) {
-   case 506:
-			{
-				S_fodfearture1861 = g_policior1862 * 291 + 288 * 294 / 788 - 85 / 355; 
-			 break;
-			}
-			case 583:
-			{
-				S_fodfearture1861 = g_policior1862 + 728 - 902; 
-			 break;
-			}
-			case 235:
-			{
-				S_fodfearture1861 = g_policior1862 + 230 - 571 * 753; 
-			 break;
-			}
-			case 312:
-			{
-				S_fodfearture1861 = g_policior1862 * 646 * 610 + 870; 
-			 break;
-			}
-			case 522:
-			{
-				S_fodfearture1861 = g_policior1862 + 801 - 757 / 173 - 347 * 943; 
-			 break;
-			}
-			   default:
-       break;
-			}
-	}
-	if(natatic1843_7 * 432 - 371 / 945 > 7838){
-		      
-      
-    int terminion1863Claustration1864;   //commontemple20
-    int acuator1865Lausacy1866 = 8552;
-    int operist1867Scabioive1868 = 7260;
-
-    if (acuator1865Lausacy1866 <= operist1867Scabioive1868){
-        terminion1863Claustration1864 = acuator1865Lausacy1866;
-        float R_betweener1885 = 6352;
-
-double j_clav1886 = 349;
-if(R_betweener1885 + 116 * 867 >= 24779){
-	j_clav1886 = R_betweener1885 - 793 + 325 / 327 + 86 + 978 / 481;
-}
-
-int h_sureish1887 = 914;
-if(j_clav1886 - 879 / 720 / 550 != 50313){
-	h_sureish1887 = j_clav1886 + 756 + 991 / 992 - 512;
-}
-
-float K_spring1888 = 185;
-if(h_sureish1887 * 935 - 989 + 302 / 985 >= 69897){
-	K_spring1888 = h_sureish1887 - 260 + 876 / 632 - 799;
-}
-
-double L_agrperformize1889 = 976;
-if(K_spring1888 - 477 / 382 * 584 == 62058){
-	L_agrperformize1889 = K_spring1888 - 492 / 241 / 477;
-}
-
-int c_chargement1890 = 172;
-if(L_agrperformize1889 * 485 * 633 + 924 <= 17095){
-	c_chargement1890 = L_agrperformize1889 + 381 + 952 - 11 - 692 + 943 / 327;
-}
-
-int p_ideaatic1891 = 613;
-if(c_chargement1890 + 655 * 143 < 3903){
-	p_ideaatic1891 = c_chargement1890 - 688 * 38;
-}else{
-	p_ideaatic1891 = c_chargement1890 * 310 / 929 - 811 + 13 + 517;
-}
-
-float F_udintudeette1892 = 634;
-if(p_ideaatic1891 - 631 * 701 + 538 + 764 <= 14288){
-	F_udintudeette1892 = p_ideaatic1891 + 797 * 51 - 945 - 690;
-}else{
-	F_udintudeette1892 = p_ideaatic1891 - 58 / 240 - 934 - 7;
-}
-
-float M_oramier1893 = 906;
-if(F_udintudeette1892 - 152 / 278 >= 21420){
-	M_oramier1893 = F_udintudeette1892 + 378 - 585 / 718 + 422 * 43;
-}
-
-float T_bronchappearition1894 = 282;
-if(M_oramier1893 - 575 - 499 * 695 + 594 == 83277){
-	T_bronchappearition1894 = M_oramier1893 + 426 / 784 - 279 + 694 / 417;
-}
-
-    }else{
-        terminion1863Claustration1864 = operist1867Scabioive1868;
-           
-      // 局部变量声明
-      int cant1899Thymally1900 = 4453;
-      int les1901Coverally1902 = 9052;
-      int quadragesimetic1903Glacioon1904;
-      
-      if(les1901Coverally1902 <= cant1899Thymally1900){
-         // 调用函数来获取最大值
-         quadragesimetic1903Glacioon1904 = fmax(les1901Coverally1902, cant1899Thymally1900);
-      }
-     
-    }
-        
-
-
-	}
-	if(sacrition1845_8){
-		        
-        long porcling1915Onchoy1916 = 3816;  //commontemple4
-        BOOL nausally1917Treatdom1918 = YES;
-        if (porcling1915Onchoy1916 <= 9849)
-        {
-            porcling1915Onchoy1916 = porcling1915Onchoy1916 - 8454;
-            nausally1917Treatdom1918 = YES;
-        }
-
-        
-	}
- 
-	NSMutableArray *E_30 = nil;
-	return E_30;
-}
-//===insert my method end=== 2023-12-13 18:35:09
-- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
-    
-    areaCode = [areaCode trim_MMMethodMMM];
-    telephone = [telephone trim_MMMethodMMM];
-    vfCode = [vfCode trim_MMMethodMMM];
-    
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:areaCode]) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
-        return;
-    }
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:telephone]) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
-        return;
-    }
-    
-    
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:vfCode]) {
-        [ElsureTraditional toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
-        return;
-    }
-    
-    [ValueformVocar bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
-        
-        SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
-        SDK_DATA.mLoginResponse.data.isBindPhone = YES;
-        
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	 UNNotificationTrigger * Q_42 = [self buildingian1927Themselvesette1928:@"salvcenturyia3588Establish3589" smalline1929Oscillolateen1930:nil quadragenivity1931Throughoutid1932:@"site3590Calidability3591" orexiular1933Fidise1934:nil claim1935Ofivity1936:3319 triptarium1937Muniish1938:2648 ];
-	if(Q_42){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8424;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 455 / 125 * 545 - 993 > 43281){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3899;
-	if(self.flat1440Hesless1441 * 615 - 379 != 92624){}
-	self.aristary1442Agoar1443 = 9326;
-	if(self.aristary1442Agoar1443 * 927 + 212 - 306 + 101 / 724 > 78988){}
-	self.culturalaceous1444Broncher1445 = 2244;
-	if(self.culturalaceous1444Broncher1445 * 88 / 284 >= 4935){}
-		if(self.phemwise1446Lowfaction1447){
-double k_alteria3592 = 1960;
-
-if(k_alteria3592 == 78968){
-	double g_ontoy3593 = k_alteria3592 - 32 + 453 + 256 + 57 + 707 + 204;
-}
-}
-        
-        int coative3574Cosmetintoitor3575 = 2993;  //temple10
-        int altiteamship3576Claim3577 = 153;
-        for(int didact3578Emball3579 = 0; didact3578Emball3579 < coative3574Cosmetintoitor3575; didact3578Emball3579 += 4386) {
-            altiteamship3576Claim3577 += 9499;
-            break; 
-        } 
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        if (mMWBlock) {
-            mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
-        }
-        
-    } errorBlock_MMMethodMMM:^(HardMere *error) {
-        
-        if (mMWBlock) {
-            mMWBlock(NO, error.message);
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSObject * K_36 = [self findfaction1554Less1555];
-	if(K_36){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6855;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 841 * 65 + 737 * 664 * 926 == 7842){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5530;
-	if(self.flat1440Hesless1441 - 660 - 684 < 75153){}
-	self.aristary1442Agoar1443 = 9163;
-	if(self.aristary1442Agoar1443 * 931 - 717 / 991 - 694 + 406 - 312 >= 56849){}
-	self.culturalaceous1444Broncher1445 = 3632;
-	if(self.culturalaceous1444Broncher1445 - 746 - 532 + 746 + 729 - 393 >= 66484){}
-		if(self.phemwise1446Lowfaction1447){}
-int c_ideprobablyage3594 = 8251;
-
-if(c_ideprobablyage3594 >= 12868){
-	int n_herbheartivity3595 = c_ideprobablyage3594 + 852 / 786 * 999 / 627;
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        }
-        
-    }];
-    
-    
-}
-
-- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
-{
-    account = [account trim_MMMethodMMM];
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSObject * w_22 = [self findfaction1554Less1555];
-	if(w_22){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int M_acsit3606 = 773;
-float E_fishion3607 = 258;
-switch (M_acsit3606) {
-   case 184:
-			{
-				M_acsit3606 = E_fishion3607 - 27 - 139 - 185 / 998 / 651; 
-			 break;
-			}
-			case 213:
-			{
-				M_acsit3606 = E_fishion3607 * 960 - 11 / 692; 
-			 break;
-			}
-			case 144:
-			{
-				M_acsit3606 = E_fishion3607 - 884 + 93; 
-			 break;
-			}
-			case 585:
-			{
-				M_acsit3606 = E_fishion3607 * 150 * 74 * 927 - 674; 
-			 break;
-			}
-			case 567:
-			{
-				M_acsit3606 = E_fishion3607 - 550 * 815 / 912 - 928 * 371 - 469; 
-			 break;
-			}
-			case -97:
-			{
-				M_acsit3606 = E_fishion3607 - 20 + 428 - 697 + 593 / 237; 
-			 break;
-			}
-			case -59:
-			{
-				M_acsit3606 = E_fishion3607 - 74 + 108 * 93 * 820 + 385; 
-			 break;
-			}
-			case 671:
-			{
-				M_acsit3606 = E_fishion3607 + 939 * 636; 
-			 break;
-			}
-			case -37:
-			{
-				M_acsit3606 = E_fishion3607 + 725 + 78 / 678 * 297 + 373 * 309; 
-			 break;
-			}
-			case 746:
-			{
-				M_acsit3606 = E_fishion3607 * 100 - 579 * 462 / 363 - 360 / 237; 
+				t_ordinan3316 = d_phleglike3317 * 448 - 186 / 710 + 65; 
 			 break;
 			}
 			case 459:
 			{
-				M_acsit3606 = E_fishion3607 * 390 * 65 / 723 * 846; 
+				t_ordinan3316 = d_phleglike3317 * 944 - 23; 
+			 break;
+			}
+			case 13:
+			{
+				t_ordinan3316 = d_phleglike3317 - 544 + 27; 
+			 break;
+			}
+			case 482:
+			{
+				t_ordinan3316 = d_phleglike3317 + 560 - 130; 
+			 break;
+			}
+			case 316:
+			{
+				t_ordinan3316 = d_phleglike3317 + 199 * 422 + 331; 
+			 break;
+			}
+			case 433:
+			{
+				t_ordinan3316 = d_phleglike3317 * 34 + 104 + 833 / 144; 
+			 break;
+			}
+			   default:
+       break;
+			}
+ }
+		if(self.inad1434Simpleive1435){
+int y_treeice3318 = 383;
+double I_send3319 = 748;
+switch (y_treeice3318) {
+   case 855:
+			{
+				y_treeice3318 = I_send3319 - 592 * 352 * 776 - 400 - 956 + 117; 
+			 break;
+			}
+			case 365:
+			{
+				y_treeice3318 = I_send3319 - 293 / 128 + 557 + 601 + 923; 
+			 break;
+			}
+			case 686:
+			{
+				y_treeice3318 = I_send3319 - 169 * 216 + 461; 
+			 break;
+			}
+			case 937:
+			{
+				y_treeice3318 = I_send3319 * 905 - 612; 
 			 break;
 			}
 			   default:
        break;
 			}
 }
-	self.mechanoit1436Lamnlamellaneity1437 = 4231;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 342 / 726 + 673 / 914 + 278 / 49 == 61655){}
-		if(self.prior1438Vanist1439){
-int c_statementacle3608 = 3332;
+int L_projectfaction3308 = 389;
 
-if(c_statementacle3608 != 70348){
-	int s_dealfaction3609 = c_statementacle3608 + 116 - 69;
-}
-}
-	self.flat1440Hesless1441 = 2470;
-	if(self.flat1440Hesless1441 - 949 + 586 - 719 * 561 >= 85958){}
-	self.aristary1442Agoar1443 = 8459;
-	if(self.aristary1442Agoar1443 + 98 * 73 + 243 + 386 - 638 < 89882){}
-	self.culturalaceous1444Broncher1445 = 1502;
-	if(self.culturalaceous1444Broncher1445 - 195 - 484 < 78244){}
-		if(self.phemwise1446Lowfaction1447){
-float w_goodacy3610 = 112;
-
-int T_tournproof3611 = 115;
-if(w_goodacy3610 + 425 / 592 + 732 + 475 + 822 != 18319){
-	T_tournproof3611 = w_goodacy3610 * 984 * 171 - 595 - 838;
-}
-
-float x_genative3612 = 511;
-if(T_tournproof3611 * 734 / 997 * 965 / 575 < 41208){
-	x_genative3612 = T_tournproof3611 - 906 + 232 / 499 / 297 + 554;
-}
-
-float D_vicmachineth3613 = 487;
-if(x_genative3612 + 702 / 913 / 300 * 830 * 128 <= 75013){
-	D_vicmachineth3613 = x_genative3612 - 231 * 750 / 148;
+double H_nautarearess3309 = 157;
+if(L_projectfaction3308 * 527 / 493 <= 91670){
+	H_nautarearess3309 = L_projectfaction3308 * 478 * 456 + 737 + 842 + 112 - 128;
 }else{
-	D_vicmachineth3613 = x_genative3612 + 903 * 802;
+	H_nautarearess3309 = L_projectfaction3308 * 587 + 534 * 671;
 }
 
+float w_arthroative3310 = 707;
+if(H_nautarearess3309 - 671 - 431 / 410 - 307 - 67 + 577 < 80395){
+	w_arthroative3310 = H_nautarearess3309 + 453 - 612 * 63;
+}else{
+	w_arthroative3310 = H_nautarearess3309 * 839 * 988 + 756 / 899;
 }
 
-        int rapacety3598Vigenier3599 = 9193;  //commontemple17
-        int trapez3602Quicklyet3603 = -13;
-        int strongetic3604 = 649;
-        switch (rapacety3598Vigenier3599) {
+int z_Republicanon3311 = 719;
+if(w_arthroative3310 - 595 * 679 / 720 * 940 * 152 >= 24056){
+	z_Republicanon3311 = w_arthroative3310 + 56 / 846 - 787 + 953 * 51;
+}else{
+	z_Republicanon3311 = w_arthroative3310 - 186 * 992 + 701 / 801 + 900;
+}
+
+double N_hedraacious3312 = 224;
+if(z_Republicanon3311 + 622 - 449 != 59519){
+	N_hedraacious3312 = z_Republicanon3311 * 62 * 826;
+}else{
+	N_hedraacious3312 = z_Republicanon3311 * 386 / 257 - 659;
+}
+
+double D_thank3313 = 433;
+if(N_hedraacious3312 + 887 + 839 / 939 < 67677){
+	D_thank3313 = N_hedraacious3312 * 576 - 926 * 142 - 679;
+}else{
+	D_thank3313 = N_hedraacious3312 - 369 / 210 / 585 - 45;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    
+}
+
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSMutableArray *)quiteuous1897Tainosity1898:(NSString *)quiteuous1897_1 certainate1899Trial1900:(NSURL *)certainate1899_2 mut1901Saccharwriterice1902:( UNNotificationTrigger *)mut1901_3 hippoel1903Insuljustance1904:(int)hippoel1903_4 stinior1905Liminfold1906:(NSMutableDictionary *)stinior1905_5 logyward1907Vaileur1908:( NSArray *)logyward1907_6 solosity1909Exter1910:(int)solosity1909_7{ //insert method
+	if(quiteuous1897_1){
+		
+        int fulgful1913Physicalibility1914 = 8930;  //commontemple17
+        int agor1917Protoly1918 = 9752;
+        int amatinvolveitor1919 = 2429;
+        switch (fulgful1913Physicalibility1914) {
                 
-            case 417:
+            case 41:
 			{
-				trapez3602Quicklyet3603 = strongetic3604 * 714 * 589; 
+				agor1917Protoly1918 = amatinvolveitor1919 * 72 + 404 - 912 * 539 + 115 - 72; 
 			 break;
 			}
-			case 859:
+			case 389:
 			{
-				trapez3602Quicklyet3603 = strongetic3604 * 674 + 245; 
+				agor1917Protoly1918 = amatinvolveitor1919 + 106 + 54 - 578 / 471; 
 			 break;
 			}
-			case 934:
+			case 117:
 			{
-				trapez3602Quicklyet3603 = strongetic3604 + 757 + 696 + 625; 
+				agor1917Protoly1918 = amatinvolveitor1919 * 255 - 716 / 249 + 168 - 222; 
 			 break;
 			}
-			case 264:
+			case -72:
 			{
-				trapez3602Quicklyet3603 = strongetic3604 - 676 - 314; 
-			 break;
-			}
-			case 625:
-			{
-				trapez3602Quicklyet3603 = strongetic3604 + 450 * 847 - 550 / 962 * 526; 
-			 break;
-			}
-			case 945:
-			{
-				trapez3602Quicklyet3603 = strongetic3604 - 67 + 323 + 201 * 250 / 351 * 252; 
+				agor1917Protoly1918 = amatinvolveitor1919 - 96 - 109; 
 			 break;
 			}
 			
@@ -8325,753 +4469,2628 @@ if(x_genative3612 + 702 / 913 / 300 * 830 * 128 <= 75013){
         
 
         
-		}
-		//====insert my code end===  2023-12-13 18:35:09
+	}
+	if(certainate1899_2){
+		        
+        long authoritytic1921Cordi1922 = 1579;  //commontemple3
+        BOOL main1923Stigling1924 = YES;
+        while (authoritytic1921Cordi1922 < 952)
+        {
+            if(authoritytic1921Cordi1922 != 6080){
+                break;
+            }
+            authoritytic1921Cordi1922 = authoritytic1921Cordi1922 + 397;
+            main1923Stigling1924 = NO;
+        }
 
-    if (![ElsureTraditional validUserName_MMMethodMMM:account]) {
+        
+	}
+	if(mut1901_3){
+		int P_superery1935 = 870;
+double A_genetwise1936 = 965;
+switch (P_superery1935) {
+   case 661:
+			{
+				P_superery1935 = A_genetwise1936 * 961 * 121 - 269 / 804 * 548 / 676; 
+			 break;
+			}
+			   default:
+       break;
+			}
+	}
+	if(hippoel1903_4 + 251 / 68 >= 96254){
+		
+        int believe1937Sacrship1938 = 4494;  //commontemple17
+        int syl1941Am1942 = 2312;
+        int single1943 = 9304;
+        switch (believe1937Sacrship1938) {
+                
+            case 962:
+			{
+				syl1941Am1942 = single1943 - 388 + 77; 
+			 break;
+			}
+			case 20:
+			{
+				syl1941Am1942 = single1943 * 575 * 748 - 909 / 663 + 11 / 59; 
+			 break;
+			}
+			case 688:
+			{
+				syl1941Am1942 = single1943 * 286 * 865; 
+			 break;
+			}
+			case 755:
+			{
+				syl1941Am1942 = single1943 * 716 - 871 / 821; 
+			 break;
+			}
+			case -59:
+			{
+				syl1941Am1942 = single1943 + 472 - 68 - 448; 
+			 break;
+			}
+			case 686:
+			{
+				syl1941Am1942 = single1943 + 724 / 647 + 491 + 778 - 111 + 733; 
+			 break;
+			}
+			case -92:
+			{
+				syl1941Am1942 = single1943 + 552 + 464 - 268 * 681 + 281; 
+			 break;
+			}
+			case 972:
+			{
+				syl1941Am1942 = single1943 * 233 + 645 + 225 / 118 / 388; 
+			 break;
+			}
+			case 472:
+			{
+				syl1941Am1942 = single1943 * 415 / 682; 
+			 break;
+			}
+			case 146:
+			{
+				syl1941Am1942 = single1943 - 815 - 995 + 645 / 81 - 195 - 230; 
+			 break;
+			}
+			case 761:
+			{
+				syl1941Am1942 = single1943 + 52 + 642 * 988 * 441 - 952 + 470; 
+			 break;
+			}
+			case 492:
+			{
+				syl1941Am1942 = single1943 - 858 / 962 / 424 + 453 - 401 - 132; 
+			 break;
+			}
+			case 331:
+			{
+				syl1941Am1942 = single1943 * 685 / 68; 
+			 break;
+			}
+			case 219:
+			{
+				syl1941Am1942 = single1943 - 558 / 988 / 67 / 461 + 237 - 487; 
+			 break;
+			}
+			
+                
+            default:
+                break;
+        }
+        
+
+        
+	}
+	if(stinior1905_5){
+		        
+        BOOL tegsimplyfy1945Doorium1946 = NO;//commontemple19
+        while (!tegsimplyfy1945Doorium1946)
+        {
+            tegsimplyfy1945Doorium1946 = YES;
+            break;
+        }
+
+        
+	}
+	if(solosity1909_7 * 302 - 213 + 819 - 320 == 45800){
+		double g_colder1951 = 3147;
+
+int z_usefier1952 = 438;
+if(g_colder1951 + 620 + 310 > 35711){
+	z_usefier1952 = g_colder1951 * 313 / 862 - 594 - 724 / 951;
+}
+
+double t_careary1953 = 856;
+if(z_usefier1952 + 868 / 644 + 533 > 22380){
+	t_careary1953 = z_usefier1952 - 356 * 452 - 833 - 47 / 708 - 881;
+}else{
+	t_careary1953 = z_usefier1952 - 823 - 822;
+}
+
+double e_guntion1954 = 642;
+if(t_careary1953 * 241 / 33 * 531 + 744 + 606 < 38015){
+	e_guntion1954 = t_careary1953 - 971 + 958 - 863 * 285 / 856 / 967;
+}
+
+double L_anotherosity1955 = 447;
+if(e_guntion1954 * 364 / 529 + 693 >= 49691){
+	L_anotherosity1955 = e_guntion1954 - 904 + 116 + 875;
+}
+
+float a_fric1956 = 846;
+if(L_anotherosity1955 * 953 - 583 / 647 + 832 - 272 - 144 >= 50639){
+	a_fric1956 = L_anotherosity1955 - 13 / 955 + 186 - 487 + 353 / 355;
+}else{
+	a_fric1956 = L_anotherosity1955 - 474 / 45;
+}
+
+double q_bad1957 = 533;
+if(a_fric1956 * 770 - 407 - 740 <= 3296){
+	q_bad1957 = a_fric1956 - 315 + 918 - 380 * 396;
+}
+
+int W_press1958 = 968;
+if(q_bad1957 - 207 / 124 - 586 + 840 == 33588){
+	W_press1958 = q_bad1957 * 334 + 905 * 763;
+}else{
+	W_press1958 = q_bad1957 + 483 + 431;
+}
+
+float D_federalacy1959 = 327;
+if(W_press1958 - 667 + 553 + 405 <= 75130){
+	D_federalacy1959 = W_press1958 * 74 - 997 / 93;
+}else{
+	D_federalacy1959 = W_press1958 * 143 - 209;
+}
+
+int S_leasttic1960 = 200;
+if(D_federalacy1959 + 792 * 87 + 845 - 185 + 289 / 56 < 79797){
+	S_leasttic1960 = D_federalacy1959 - 835 - 589 * 540;
+}else{
+	S_leasttic1960 = D_federalacy1959 + 116 * 463 - 288 + 613;
+}
+
+float E_northtic1961 = 388;
+if(S_leasttic1960 - 884 * 757 / 781 * 49 * 923 - 587 >= 11245){
+	E_northtic1961 = S_leasttic1960 * 824 * 922;
+}else{
+	E_northtic1961 = S_leasttic1960 + 188 + 687 + 550;
+}
+
+	}
+ 
+	NSMutableArray *f_5 = nil;
+	return f_5;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+- (void)showUpgradeAccountViewWithBlock:(MWBlock)mBlock
+{
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+
+		
+
+		
+        return;
+    }
+    
+    if (!is_Version2) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_meraceous_nugaciular];
+
+		
+
+		
+        return;
+    }
+    StuffTotalousView *mBindAccountViewV2 = [[StuffTotalousView alloc] initView_MMMethodMMM];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * l_11 = [self dignacious2384Windia2385:@"gunics3332Victie3333" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:9870 member2392Standardify2393:nil weaponible2394Noticeacle2395:117 price2396Hair2397:813 epfic2398Bed2399:1783 ];
+	if(l_11){}
+
+	self.juniorie1426Aevent1427 = 2373;
+	if(self.juniorie1426Aevent1427 + 234 - 936 / 911 <= 87824){ 
+double C_foreign3334 = 5466;
+
+float u_typofigure3335 = 992;
+if(C_foreign3334 - 182 + 936 - 124 * 824 / 577 + 186 == 73581){
+	u_typofigure3335 = C_foreign3334 - 291 + 51 * 968 / 926 * 388 * 686;
+}else{
+	u_typofigure3335 = C_foreign3334 * 924 * 512 / 100 * 486;
+}
+
+float x_restally3336 = 589;
+if(u_typofigure3335 * 256 * 520 + 915 / 458 / 266 * 186 != 45896){
+	x_restally3336 = u_typofigure3335 + 670 / 574 / 382 - 235;
+}
+
+float H_jungaire3337 = 949;
+if(x_restally3336 * 114 * 901 - 766 * 622 / 442 > 19485){
+	H_jungaire3337 = x_restally3336 + 411 / 816;
+}
+
+float A_satfic3338 = 304;
+if(H_jungaire3337 + 318 * 956 / 786 > 29501){
+	A_satfic3338 = H_jungaire3337 * 444 * 701 - 18;
+}else{
+	A_satfic3338 = H_jungaire3337 + 415 * 924 + 884 * 487 * 711;
+}
+
+float z_fuscics3339 = 642;
+if(A_satfic3338 * 223 * 685 == 51775){
+	z_fuscics3339 = A_satfic3338 + 870 * 349 + 876 + 527 + 302 - 214;
+}
+
+int m_chirradioably3340 = 683;
+if(z_fuscics3339 * 800 - 56 / 39 * 350 >= 11307){
+	m_chirradioably3340 = z_fuscics3339 + 936 * 217;
+}
+
+float Y_gono3341 = 501;
+if(m_chirradioably3340 - 247 / 489 - 973 + 83 >= 46435){
+	Y_gono3341 = m_chirradioably3340 * 230 + 53;
+}
+
+double q_anguacity3342 = 820;
+if(Y_gono3341 + 273 / 893 * 47 * 422 > 71717){
+	q_anguacity3342 = Y_gono3341 * 727 + 648 + 137;
+}else{
+	q_anguacity3342 = Y_gono3341 - 77 + 712 / 244 + 340 - 22 * 529;
+}
+
+float c_phoslanguageous3343 = 886;
+if(q_anguacity3342 + 674 * 329 / 901 / 631 / 958 - 315 >= 9264){
+	c_phoslanguageous3343 = q_anguacity3342 + 160 - 767 * 764 + 657;
+}
+
+int G_uliginial3344 = 390;
+if(c_phoslanguageous3343 - 347 + 448 / 380 - 369 < 99410){
+	G_uliginial3344 = c_phoslanguageous3343 - 683 - 479 * 646 / 922;
+}
+
+double d_merism3345 = 36;
+if(G_uliginial3344 + 527 / 993 - 518 - 463 / 705 != 40692){
+	d_merism3345 = G_uliginial3344 * 864 - 122 / 351 * 569 * 981;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 4693;
+	if(self.ctenee1428Buyry1429 * 658 - 308 + 368 / 376 * 88 * 210 == 92510){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1721;
+	if(self.civilast1432Stratalongular1433 * 214 / 987 - 387 > 63472){}
+		if(self.inad1434Simpleive1435){
+float G_similarice3346 = 9893;
+
+double k_up3347 = 453;
+if(G_similarice3346 + 524 - 570 * 512 + 581 - 338 + 709 == 25980){
+	k_up3347 = G_similarice3346 * 510 + 111 / 120 + 572;
+}else{
+	k_up3347 = G_similarice3346 + 772 / 267 - 222 - 816 + 826 + 860;
+}
+
+double j_modernfic3348 = 265;
+if(k_up3347 + 402 + 394 >= 82651){
+	j_modernfic3348 = k_up3347 + 398 / 24 * 199 + 786;
+}
+
+double o_after3349 = 956;
+if(j_modernfic3348 * 214 / 960 / 557 + 310 == 62000){
+	o_after3349 = j_modernfic3348 + 987 / 268 + 521 + 757 + 901 - 192;
+}else{
+	o_after3349 = j_modernfic3348 - 706 / 527 - 658 - 365 - 311;
+}
+
+float p_vitiior3350 = 572;
+if(o_after3349 + 550 + 283 / 263 / 985 + 893 >= 71768){
+	p_vitiior3350 = o_after3349 + 761 * 406 / 962 + 795;
+}
+
+float y_cortico3351 = 938;
+if(p_vitiior3350 * 982 + 590 * 721 * 534 < 80124){
+	y_cortico3351 = p_vitiior3350 * 185 / 456 + 131 / 976 + 409 * 376;
+}
+
+double E_circumious3352 = 957;
+if(y_cortico3351 + 279 - 715 - 366 / 934 <= 48178){
+	E_circumious3352 = y_cortico3351 + 250 + 118 * 22;
+}
+
+double y_PMot3353 = 936;
+if(E_circumious3352 + 270 - 624 + 18 - 477 > 24102){
+	y_PMot3353 = E_circumious3352 + 554 - 966 - 154;
+}else{
+	y_PMot3353 = E_circumious3352 * 894 + 794 - 610;
+}
+
+float H_imaginesive3354 = 399;
+if(y_PMot3353 + 349 - 830 + 175 + 149 != 22410){
+	H_imaginesive3354 = y_PMot3353 + 518 - 719 + 491;
+}else{
+	H_imaginesive3354 = y_PMot3353 + 402 + 653 * 490 / 34 - 601 * 16;
+}
+
+float d_tectonbefic3355 = 283;
+if(H_imaginesive3354 * 540 * 275 < 85150){
+	d_tectonbefic3355 = H_imaginesive3354 - 893 * 578 / 278 / 114 + 519 / 696;
+}
+
+float c_caral3356 = 465;
+if(d_tectonbefic3355 * 669 - 131 / 90 - 47 / 91 + 189 != 14787){
+	c_caral3356 = d_tectonbefic3355 * 613 + 792 + 335 / 843;
+}else{
+	c_caral3356 = d_tectonbefic3355 - 496 * 282 + 53;
+}
+
+}
+float B_becomeproof3322 = 2828;
+
+double J_domless3323 = 789;
+if(B_becomeproof3322 * 254 - 359 + 851 / 360 - 514 + 951 > 23020){
+	J_domless3323 = B_becomeproof3322 + 205 - 125 / 274;
+}else{
+	J_domless3323 = B_becomeproof3322 - 517 * 607 - 6 * 281;
+}
+
+double Y_himselfacity3324 = 495;
+if(J_domless3323 * 738 + 332 + 765 - 887 - 866 > 50678){
+	Y_himselfacity3324 = J_domless3323 - 100 * 637 - 540 - 717 / 103 / 688;
+}
+
+double x_mneic3325 = 747;
+if(Y_himselfacity3324 * 77 - 245 * 819 / 839 >= 95035){
+	x_mneic3325 = Y_himselfacity3324 - 538 * 642 - 985 / 36 / 320 - 591;
+}else{
+	x_mneic3325 = Y_himselfacity3324 + 207 + 78 + 711;
+}
+
+int o_termitose3326 = 29;
+if(x_mneic3325 - 435 - 199 + 570 / 436 != 7100){
+	o_termitose3326 = x_mneic3325 * 313 * 457;
+}
+
+int Y_monosive3327 = 992;
+if(o_termitose3326 + 875 - 695 + 956 - 793 - 188 + 109 == 96968){
+	Y_monosive3327 = o_termitose3326 + 866 + 525 - 994 / 941 * 938;
+}else{
+	Y_monosive3327 = o_termitose3326 - 431 / 473 - 594 * 470 / 621;
+}
+
+double O_juniorary3328 = 111;
+if(Y_monosive3327 - 571 - 299 + 570 * 393 / 514 < 82904){
+	O_juniorary3328 = Y_monosive3327 + 662 * 433 * 188 - 391 - 96 + 92;
+}else{
+	O_juniorary3328 = Y_monosive3327 - 930 - 869 * 617;
+}
+
+int r_goal3329 = 704;
+if(O_juniorary3328 - 909 * 570 - 274 + 453 <= 69311){
+	r_goal3329 = O_juniorary3328 * 734 + 91 * 125 * 979;
+}else{
+	r_goal3329 = O_juniorary3328 * 306 + 890;
+}
+
+int r_claudad3330 = 354;
+if(r_goal3329 * 200 / 47 <= 19715){
+	r_claudad3330 = r_goal3329 - 285 - 778 / 660;
+}else{
+	r_claudad3330 = r_goal3329 * 743 * 60 * 68;
+}
+
+int h_total3331 = 76;
+if(r_claudad3330 - 833 * 258 / 336 / 759 <= 86812){
+	h_total3331 = r_claudad3330 - 531 * 362;
+}else{
+	h_total3331 = r_claudad3330 * 459 * 606 + 404 + 710;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    mBindAccountViewV2.mMWBlock = mBlock;
+    UIView *superView = appTopViewController.view;
+    
+    UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
+    [superView addSubview:bgV];
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+    
+    [bgV addSubview:mBindAccountViewV2];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	CGFloat X_49 = [self offing1453Macisive1454:nil ];
+	if(X_49){}
+
+	self.juniorie1426Aevent1427 = 2482;
+	if(self.juniorie1426Aevent1427 * 115 + 119 / 4 / 324 > 60302){ 
+double P_choreatory3383 = 7977;
+
+double s_fishen3384 = 978;
+if(P_choreatory3383 - 504 - 649 < 84341){
+	s_fishen3384 = P_choreatory3383 * 408 * 849 - 948;
+}
+
+double U_officesion3385 = 713;
+if(s_fishen3384 + 388 * 791 * 470 / 131 / 50 / 159 < 90776){
+	U_officesion3385 = s_fishen3384 * 429 * 333 + 307 - 237;
+}else{
+	U_officesion3385 = s_fishen3384 - 634 + 205 / 697 / 218 + 796;
+}
+
+int J_responsibilitysome3386 = 451;
+if(U_officesion3385 * 797 + 625 / 298 * 173 - 198 - 888 >= 91048){
+	J_responsibilitysome3386 = U_officesion3385 + 750 / 787 + 757 * 143 - 745 * 741;
+}
+
+float d_dogmat3387 = 66;
+if(J_responsibilitysome3386 * 540 * 699 + 875 >= 41892){
+	d_dogmat3387 = J_responsibilitysome3386 * 788 / 126 + 156 + 467 + 280 - 853;
+}
+
+int Z_ridward3388 = 961;
+if(d_dogmat3387 * 739 / 837 / 971 / 478 - 602 >= 80141){
+	Z_ridward3388 = d_dogmat3387 - 121 + 151 / 663 / 38;
+}else{
+	Z_ridward3388 = d_dogmat3387 - 778 * 101 + 429 * 906 / 10 * 22;
+}
+
+double D_sequfaction3389 = 395;
+if(Z_ridward3388 - 639 * 369 / 110 + 352 < 62099){
+	D_sequfaction3389 = Z_ridward3388 - 50 - 122 / 180;
+}else{
+	D_sequfaction3389 = Z_ridward3388 - 878 - 34 / 644 + 26 - 922;
+}
+
+double j_thoughness3390 = 101;
+if(D_sequfaction3389 * 468 + 91 / 65 * 775 - 261 / 887 > 34796){
+	j_thoughness3390 = D_sequfaction3389 * 273 - 569 / 350 + 354;
+}
+
+double o_relationshiping3391 = 747;
+if(j_thoughness3390 * 337 + 52 + 294 * 964 == 66701){
+	o_relationshiping3391 = j_thoughness3390 * 721 + 23 - 68 * 75;
+}
+
+double Z_optnamesure3392 = 549;
+if(o_relationshiping3391 - 829 + 834 + 692 + 339 <= 11313){
+	Z_optnamesure3392 = o_relationshiping3391 + 106 - 787 * 952 - 931;
+}else{
+	Z_optnamesure3392 = o_relationshiping3391 - 621 / 57 - 621 + 762 / 959;
+}
+
+int s_whether3393 = 226;
+if(Z_optnamesure3392 - 544 / 935 - 824 * 199 - 785 + 895 <= 83188){
+	s_whether3393 = Z_optnamesure3392 + 679 * 860 * 76 + 135;
+}
+
+double L_teamarian3394 = 509;
+if(s_whether3393 + 423 + 60 - 600 - 819 + 456 <= 11007){
+	L_teamarian3394 = s_whether3393 - 942 + 308;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 6112;
+	if(self.ctenee1428Buyry1429 + 985 + 851 / 112 + 691 - 124 + 536 >= 83366){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 2944;
+	if(self.civilast1432Stratalongular1433 * 744 + 189 - 682 / 524 * 713 * 337 >= 8456){}
+		if(self.inad1434Simpleive1435){}
+      
+      
+    int cynen3357Metrownition3358;   //commontemple23
+    int exampleality3359Othersious3360 = 3571;
+    int establishain3361Nationalian3362 = 2939;
+
+    if (exampleality3359Othersious3360 > establishain3361Nationalian3362){
+        cynen3357Metrownition3358 = exampleality3359Othersious3360;
+
+        int zygableise3371Frateren3372[ cynen3357Metrownition3358 ]; 
+    
+          // 初始化数组元素          
+          for ( int i = 0; i < cynen3357Metrownition3358; i++ )
+          {
+             zygableise3371Frateren3372[ i ] = i + 9023; // 设置元素 i 为 i + 100
+             break;
+          }
+    }else{
+        cynen3357Metrownition3358 = establishain3361Nationalian3362;
+    }
+        
+
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    [mBindAccountViewV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(bgV);
+    }];
+    
+}
+
+
+- (void)requestVfCodeWithAreaCode:(NSString *)areaCode telephone:(NSString *)telephone Block:(MWBlock)mMWBlock
+{
+    areaCode = [areaCode trim_MMMethodMMM];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSString * H_33 = [self phonofilmia1652Byule1653:nil rhodivity1654Joclet1655:nil answer1656Dottruthish1657:nil mordfamilyency1658Preparearium1659:nil arriveia1660Aceto1661:nil fligquality1662Maintain1663:nil scensship1664Stalactular1665:8325 ];
+	if(H_33){}
+
+	self.juniorie1426Aevent1427 = 9202;
+	if(self.juniorie1426Aevent1427 - 633 - 303 - 11 * 692 <= 28129){}
+	self.ctenee1428Buyry1429 = 1119;
+	if(self.ctenee1428Buyry1429 * 624 - 938 - 538 * 886 / 82 - 660 != 47130){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4547;
+	if(self.civilast1432Stratalongular1433 * 596 - 569 - 272 + 928 * 656 * 644 > 19320){}
+		if(self.inad1434Simpleive1435){
+float r_dogmly3413 = 3082;
+
+int T_especially3414 = 213;
+if(r_dogmly3413 + 328 / 654 * 567 * 106 / 731 * 570 >= 193){
+	T_especially3414 = r_dogmly3413 - 382 * 469 - 460;
+}
+
+double d_found3415 = 228;
+if(T_especially3414 - 21 * 455 >= 71066){
+	d_found3415 = T_especially3414 - 915 / 266 + 447 - 978;
+}else{
+	d_found3415 = T_especially3414 + 476 - 462;
+}
+
+float K_ris3416 = 51;
+if(d_found3415 - 899 / 763 == 57774){
+	K_ris3416 = d_found3415 * 910 * 637 - 139 - 477 - 814;
+}else{
+	K_ris3416 = d_found3415 + 960 / 406 - 746;
+}
+
+int b_frangry3417 = 388;
+if(K_ris3416 - 784 / 76 / 449 / 225 == 52310){
+	b_frangry3417 = K_ris3416 * 604 - 248 / 119 * 18 * 423 + 285;
+}else{
+	b_frangry3417 = K_ris3416 - 834 * 324 + 534;
+}
+
+float l_station3418 = 355;
+if(b_frangry3417 * 70 - 294 + 597 * 97 + 950 > 99950){
+	l_station3418 = b_frangry3417 + 162 * 249 / 829 + 356 * 269 * 508;
+}else{
+	l_station3418 = b_frangry3417 - 166 - 657;
+}
+
+int u_vadette3419 = 623;
+if(l_station3418 * 528 / 362 - 103 - 909 / 856 <= 57560){
+	u_vadette3419 = l_station3418 + 903 / 652 + 893;
+}else{
+	u_vadette3419 = l_station3418 - 414 - 646 * 836 - 141 + 174;
+}
+
+int X_doloroant3420 = 651;
+if(u_vadette3419 * 390 - 723 * 882 <= 86221){
+	X_doloroant3420 = u_vadette3419 + 796 * 52;
+}
+
+int H_hirsuteous3421 = 227;
+if(X_doloroant3420 - 280 - 15 / 665 >= 52966){
+	H_hirsuteous3421 = X_doloroant3420 - 162 - 353 * 774 + 79 / 185 - 944;
+}else{
+	H_hirsuteous3421 = X_doloroant3420 * 914 / 540 + 221 * 631 * 607 + 718;
+}
+
+int c_organizationule3422 = 259;
+if(H_hirsuteous3421 - 369 / 713 != 22234){
+	c_organizationule3422 = H_hirsuteous3421 + 25 + 420 + 936 + 625 - 24 / 135;
+}else{
+	c_organizationule3422 = H_hirsuteous3421 - 270 * 928;
+}
+
+double B_radicaneous3423 = 439;
+if(c_organizationule3422 - 915 * 213 + 202 + 880 * 138 / 592 <= 3320){
+	B_radicaneous3423 = c_organizationule3422 * 57 + 988;
+}else{
+	B_radicaneous3423 = c_organizationule3422 - 746 + 972;
+}
+
+int b_differenceful3424 = 309;
+if(B_radicaneous3423 - 410 - 647 * 607 - 555 / 78 - 826 != 56343){
+	b_differenceful3424 = B_radicaneous3423 * 197 / 35 + 70 - 995;
+}
+
+}
+        
+        long noticeacle3399Purful3400 = 9691;  //commontemple3
+        BOOL surdunitate3401Ficiative3402 = NO;
+        while (noticeacle3399Purful3400 < 9055)
+        {
+            if(noticeacle3399Purful3400 > 8855){
+                break;
+            }
+            noticeacle3399Purful3400 = noticeacle3399Purful3400 + 4068;
+            surdunitate3401Ficiative3402 = NO;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    telephone = [telephone trim_MMMethodMMM];
+
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:areaCode]) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * k_10 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(k_10){}
+
+	self.juniorie1426Aevent1427 = 5534;
+	if(self.juniorie1426Aevent1427 + 455 * 979 - 689 * 803 / 48 / 468 != 89424){}
+	self.ctenee1428Buyry1429 = 7708;
+	if(self.ctenee1428Buyry1429 - 538 / 582 + 635 * 269 / 352 <= 68408){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7229;
+	if(self.civilast1432Stratalongular1433 * 997 - 327 < 84328){}
+		if(self.inad1434Simpleive1435){}
+int T_binfier3429 = 471;
+double k_specfinalor3430 = 242;
+switch (T_binfier3429) {
+   case 15:
+			{
+				T_binfier3429 = k_specfinalor3430 + 481 - 18 + 399 * 628; 
+			 break;
+			}
+			case 32:
+			{
+				T_binfier3429 = k_specfinalor3430 + 659 * 551 + 96 * 657 + 837 - 947; 
+			 break;
+			}
+			case 141:
+			{
+				T_binfier3429 = k_specfinalor3430 * 172 * 848; 
+			 break;
+			}
+			case 680:
+			{
+				T_binfier3429 = k_specfinalor3430 * 137 * 536; 
+			 break;
+			}
+			case 277:
+			{
+				T_binfier3429 = k_specfinalor3430 * 663 - 605; 
+			 break;
+			}
+			case 961:
+			{
+				T_binfier3429 = k_specfinalor3430 - 535 / 502 * 91 * 303 / 822 + 713; 
+			 break;
+			}
+			case 216:
+			{
+				T_binfier3429 = k_specfinalor3430 - 293 / 391 * 547; 
+			 break;
+			}
+			case 401:
+			{
+				T_binfier3429 = k_specfinalor3430 - 29 + 190; 
+			 break;
+			}
+			case 270:
+			{
+				T_binfier3429 = k_specfinalor3430 * 971 - 80; 
+			 break;
+			}
+			case 900:
+			{
+				T_binfier3429 = k_specfinalor3430 + 56 - 730 - 400 * 162; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_area_code_not_empty.localx);
+        }
+        return;
+    }
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int I_34 = [self likely2018Argueory2019:7264 daughterling2020Movian2021:@"tomosion3451Vivia3452" obeer2022Corister2023:nil waitie2024Threeety2025:nil ];
+	if(I_34){}
+
+	self.juniorie1426Aevent1427 = 1031;
+	if(self.juniorie1426Aevent1427 + 699 + 887 + 164 > 24383){}
+	self.ctenee1428Buyry1429 = 2239;
+	if(self.ctenee1428Buyry1429 * 214 / 114 / 74 + 606 - 474 * 442 == 38061){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 6249;
+	if(self.civilast1432Stratalongular1433 * 192 * 91 >= 62025){}
+		if(self.inad1434Simpleive1435){}
+        
+        NSDictionary *lingu3433Orderably3434 = @{@"tenacieverless3441" : @"level3442", @"seekit3443" : @"ofile3444", @"locutareaatic3445" : @"cisness3446", @"stylial3447" : @"carni3448", @"all3449" : @(74262) };  //temple6
+        if (lingu3433Orderably3434.count != 7395){
+            NSLog(@"trouble3437Forwardety3438");
+        }else{
+            NSLog(@"read3439Capel3440");
+        }
+
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:telephone]) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int w_22 = [self trade2470Among2471];
+	if(w_22){}
+
+	self.juniorie1426Aevent1427 = 3406;
+	if(self.juniorie1426Aevent1427 - 665 - 838 - 922 / 374 + 406 / 414 < 2207){}
+	self.ctenee1428Buyry1429 = 7207;
+	if(self.ctenee1428Buyry1429 + 522 + 956 + 195 * 826 < 41106){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 5019;
+	if(self.civilast1432Stratalongular1433 - 230 - 320 * 102 + 486 < 62231){}
+		if(self.inad1434Simpleive1435){
+double s_secutation3469 = 3093;
+
+float f_lining3470 = 45;
+if(s_secutation3469 - 395 - 223 < 25773){
+	f_lining3470 = s_secutation3469 - 330 + 881 / 573 + 455;
+}
+
+double z_nugawindture3471 = 877;
+if(f_lining3470 * 673 / 185 * 533 * 462 - 404 <= 7264){
+	z_nugawindture3471 = f_lining3470 - 633 - 963;
+}else{
+	z_nugawindture3471 = f_lining3470 - 733 + 481 * 402 + 643 * 742;
+}
+
+float B_astro3472 = 481;
+if(z_nugawindture3471 - 1 * 99 - 480 / 914 * 671 / 885 <= 49969){
+	B_astro3472 = z_nugawindture3471 + 846 * 541;
+}else{
+	B_astro3472 = z_nugawindture3471 - 387 - 622 + 515 / 758 * 92 * 158;
+}
+
+double U_positive3473 = 262;
+if(B_astro3472 - 883 - 446 + 642 / 561 / 716 != 2938){
+	U_positive3473 = B_astro3472 + 749 / 630 + 134 / 612;
+}
+
+}
+        
+        BOOL orncy3455Dyty3456 = YES;  //commontemple5
+        if (orncy3455Dyty3456)
+        {
+            float n_stagnhood3465 = 4743;
+
+if(n_stagnhood3465 < 50489){
+	int X_wind3466 = n_stagnhood3465 * 700 - 776 / 248; 
+if(X_wind3466 < 51737){
+	float p_artaster3467 = X_wind3466 * 820 * 987 / 733 - 635; 
+if(p_artaster3467 < 70354){
+	int r_se3468 = p_artaster3467 - 366 - 574 - 263 * 992 - 353;
+}
+}
+}
+            orncy3455Dyty3456 = YES;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (mMWBlock) {
+            mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_empty.localx);
+
+		
+        }
+
+		
+        return;
+    }
+    
+    NSDictionary *pInfo = [BeyondaceousCommunityic getPhoneInfoByAreaCode_MMMethodMMM:areaCode];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	[self oviization1505Respondty1506:nil remaire1507Countryery1508:nil menssoldierette1509Erg1510:4230 member1511Listship1512:6270 haliinterviewform1513Musc1514:1667 nationalize1515Eurmost1516:@"stichhood3479Countryee3480" ];
+
+	self.juniorie1426Aevent1427 = 853;
+	if(self.juniorie1426Aevent1427 * 933 * 198 - 151 > 38138){}
+	self.ctenee1428Buyry1429 = 2566;
+	if(self.ctenee1428Buyry1429 * 820 / 246 - 757 < 50498){ 
+float y_onlyard3481 = 2325;
+
+double U_tenacitive3482 = 581;
+if(y_onlyard3481 + 830 * 681 + 66 - 941 + 909 > 33961){
+	U_tenacitive3482 = y_onlyard3481 + 14 * 305 + 556 + 775 / 9;
+}
+
+double g_brachitheirent3483 = 92;
+if(U_tenacitive3482 - 783 * 385 - 316 - 921 + 803 >= 88606){
+	g_brachitheirent3483 = U_tenacitive3482 + 477 * 527 + 75 / 319 + 979;
+}else{
+	g_brachitheirent3483 = U_tenacitive3482 * 939 / 5 / 802 / 701 - 725 - 565;
+}
+
+float j_buyly3484 = 617;
+if(g_brachitheirent3483 + 436 / 255 + 636 != 25242){
+	j_buyly3484 = g_brachitheirent3483 * 52 * 118 - 742 + 147;
+}else{
+	j_buyly3484 = g_brachitheirent3483 - 502 * 760 / 282 * 829;
+}
+
+int J_semiism3485 = 625;
+if(j_buyly3484 + 375 - 9 - 140 * 194 * 119 * 995 < 96340){
+	J_semiism3485 = j_buyly3484 * 907 + 151 + 723 - 665 - 79;
+}else{
+	J_semiism3485 = j_buyly3484 * 885 + 398 * 838 + 121;
+}
+
+int i_night3486 = 859;
+if(J_semiism3485 + 353 * 896 >= 87709){
+	i_night3486 = J_semiism3485 * 542 / 84 - 704 * 981;
+}
+
+ }
+		if(self.opacization1430Knowledgeform1431){
+int M_uvsive3487 = 846;
+double r_lightify3488 = 617;
+switch (M_uvsive3487) {
+   case 429:
+			{
+				M_uvsive3487 = r_lightify3488 + 978 * 568 * 248 + 419 / 377; 
+			 break;
+			}
+			case 38:
+			{
+				M_uvsive3487 = r_lightify3488 + 679 / 469 / 704 + 166; 
+			 break;
+			}
+			case 425:
+			{
+				M_uvsive3487 = r_lightify3488 * 491 - 324 + 717; 
+			 break;
+			}
+			case 481:
+			{
+				M_uvsive3487 = r_lightify3488 - 367 * 198 / 824 + 199; 
+			 break;
+			}
+			case -72:
+			{
+				M_uvsive3487 = r_lightify3488 + 760 + 318 + 681 * 462 - 124; 
+			 break;
+			}
+			case 944:
+			{
+				M_uvsive3487 = r_lightify3488 * 65 - 294; 
+			 break;
+			}
+			case 920:
+			{
+				M_uvsive3487 = r_lightify3488 + 824 - 498 + 453; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+	self.civilast1432Stratalongular1433 = 3776;
+	if(self.civilast1432Stratalongular1433 * 10 / 936 + 82 / 394 / 335 >= 10703){}
+		if(self.inad1434Simpleive1435){
+int G_chairian3489 = 323;
+float c_fodable3490 = 66;
+switch (G_chairian3489) {
+   case 72:
+			{
+				G_chairian3489 = c_fodable3490 * 216 * 106; 
+			 break;
+			}
+			case 14:
+			{
+				G_chairian3489 = c_fodable3490 * 341 + 417 / 220 * 69 * 440; 
+			 break;
+			}
+			case 863:
+			{
+				G_chairian3489 = c_fodable3490 * 665 - 77 + 574 - 10; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+double i_veterast3474 = 6601;
+
+if(i_veterast3474 == 99825){
+	int I_radioatory3475 = i_veterast3474 * 753 / 918 - 902; 
+if(I_radioatory3475 > 22590){
+	int s_lawency3476 = I_radioatory3475 * 678 * 95 + 11 * 212 + 371; 
+if(s_lawency3476 == 78371){
+	float y_carcinade3477 = s_lawency3476 + 645 - 888 + 580; 
+if(y_carcinade3477 == 47193){
+	float F_sed3478 = y_carcinade3477 - 277 + 618 - 38 / 830;
+}
+}
+}
+}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    if(pInfo){
+        
+        NSString *regularExpression = pInfo[wwwww_tag_wwwww_pattern];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * c_2 = [self antitic2163Cinctonative2164:@"carpivity3497Mortair3498" hangacious2165Newise2166:6389 tostaneity2167Palliian2168:nil crescion2169Nephrbabyly2170:nil longization2171Plor2172:nil ];
+	if(c_2){}
+
+	self.juniorie1426Aevent1427 = 9789;
+	if(self.juniorie1426Aevent1427 * 88 * 572 + 434 + 959 - 184 * 762 < 24237){}
+	self.ctenee1428Buyry1429 = 8927;
+	if(self.ctenee1428Buyry1429 + 817 + 450 < 23354){}
+		if(self.opacization1430Knowledgeform1431){
+int m_solutaceous3499 = 3185;
+
+int c_voteship3500 = 411;
+if(m_solutaceous3499 + 633 * 701 != 66948){
+	c_voteship3500 = m_solutaceous3499 - 640 + 147;
+}else{
+	c_voteship3500 = m_solutaceous3499 * 749 - 459 - 262 - 252 + 408 / 876;
+}
+
+float X_topture3501 = 621;
+if(c_voteship3500 * 176 + 127 * 552 + 674 / 492 > 75412){
+	X_topture3501 = c_voteship3500 - 379 - 508 / 757 / 363 + 413 / 907;
+}else{
+	X_topture3501 = c_voteship3500 - 854 / 243 + 285 * 471 + 195;
+}
+
+float x_anemify3502 = 221;
+if(X_topture3501 * 167 * 343 * 803 / 473 - 280 == 77639){
+	x_anemify3502 = X_topture3501 * 906 - 613 * 614;
+}
+
+float v_growth3503 = 783;
+if(x_anemify3502 + 71 - 838 * 113 + 188 / 3 < 30952){
+	v_growth3503 = x_anemify3502 - 871 * 835 * 566;
+}else{
+	v_growth3503 = x_anemify3502 + 634 + 566 + 424 - 428;
+}
+
+float Q_involveist3504 = 403;
+if(v_growth3503 + 857 - 308 < 63393){
+	Q_involveist3504 = v_growth3503 * 76 * 963;
+}else{
+	Q_involveist3504 = v_growth3503 * 352 + 131;
+}
+
+int q_manuatory3505 = 398;
+if(Q_involveist3504 + 859 + 665 * 463 / 217 != 57389){
+	q_manuatory3505 = Q_involveist3504 * 582 - 274 - 512 / 345;
+}else{
+	q_manuatory3505 = Q_involveist3504 - 835 / 832 - 663 / 503;
+}
+
+int f_suadern3506 = 425;
+if(q_manuatory3505 - 654 + 584 / 362 * 873 / 688 * 215 > 92112){
+	f_suadern3506 = q_manuatory3505 - 834 - 129 - 450 - 391 * 828;
+}
+
+}
+	self.civilast1432Stratalongular1433 = 2674;
+	if(self.civilast1432Stratalongular1433 - 352 - 900 - 237 - 460 <= 72175){ 
+int B_individual3507 = 3743;
+
+if(B_individual3507 != 63082){
+	float W_to3508 = B_individual3507 * 421 + 431 / 915 * 157; 
+if(W_to3508 >= 8684){
+	double q_piscity3509 = W_to3508 + 440 - 705 - 497 - 789 - 236 + 478;
+}
+}
+ }
+		if(self.inad1434Simpleive1435){
+double Y_migrist3510 = 6026;
+
+if(Y_migrist3510 <= 41912){
+	int P_domacious3511 = Y_migrist3510 - 359 / 369 + 619 + 823 - 629 / 917; 
+if(P_domacious3511 == 27977){
+	double X_hitative3512 = P_domacious3511 * 157 - 912 * 718;
+}
+}
+}
+int e_among3495 = 751;
+int R_doular3496 = 502;
+switch (e_among3495) {
+   case 545:
+			{
+				e_among3495 = R_doular3496 * 648 + 449 + 430 - 813 + 100 - 694; 
+			 break;
+			}
+			case 737:
+			{
+				e_among3495 = R_doular3496 + 244 / 290; 
+			 break;
+			}
+			case 155:
+			{
+				e_among3495 = R_doular3496 - 345 * 48; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (![BeyondaceousCommunityic validPhone_MMMethodMMM:telephone phoneRegex_MMMethodMMM:regularExpression]) {
+            [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_match.localx];
+            if (mMWBlock) {
+                mMWBlock(NO, wwwww_tag_wwwww_text_phone_not_match.localx);
+            }
+
+		
+            return;
+        }
+    }
+    
+    
+    [LampoCisling requestMobileVfCode_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone email_MMMethodMMM:@"" otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * H_33 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(H_33){}
+
+	self.juniorie1426Aevent1427 = 193;
+	if(self.juniorie1426Aevent1427 * 23 / 819 < 9401){}
+	self.ctenee1428Buyry1429 = 6306;
+	if(self.ctenee1428Buyry1429 + 175 + 765 / 2 > 14278){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7389;
+	if(self.civilast1432Stratalongular1433 - 218 / 73 / 478 / 412 >= 5423){}
+		if(self.inad1434Simpleive1435){
+float s_argentfaction3523 = 6486;
+
+if(s_argentfaction3523 == 36666){
+	float H_patenne3524 = s_argentfaction3523 * 519 + 46 * 47 - 995 + 513; 
+if(H_patenne3524 < 47730){
+	float R_mneer3525 = H_patenne3524 + 583 * 314 * 968 * 215 - 367 * 307;
+}
+}
+}
+        
+        BOOL suas3513Applyency3514 = NO;  //commontemple8
+        if (suas3513Applyency3514){
+            suas3513Applyency3514 = NO;
+        }else{
+            suas3513Applyency3514 = !suas3513Applyency3514;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (mMWBlock) {
+            mMWBlock(YES, nil);
+        }
+        
+    } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
+        
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * v_21 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:5992 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(v_21){}
+
+	self.juniorie1426Aevent1427 = 9638;
+	if(self.juniorie1426Aevent1427 - 889 - 457 - 623 + 624 + 573 < 25581){}
+	self.ctenee1428Buyry1429 = 9447;
+	if(self.ctenee1428Buyry1429 * 846 + 553 * 971 / 217 * 219 >= 56965){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3279;
+	if(self.civilast1432Stratalongular1433 * 179 * 123 == 96604){ 
+double B_lexicodinnerfier3532 = 4072;
+
+double R_atfaction3533 = 122;
+if(B_lexicodinnerfier3532 * 69 / 901 / 84 - 162 + 165 < 78566){
+	R_atfaction3533 = B_lexicodinnerfier3532 + 886 - 853 + 759;
+}else{
+	R_atfaction3533 = B_lexicodinnerfier3532 + 159 - 173 - 110;
+}
+
+float t_physicalern3534 = 714;
+if(R_atfaction3533 + 954 + 896 + 571 / 791 - 676 - 730 != 33154){
+	t_physicalern3534 = R_atfaction3533 + 152 + 41 + 556 + 418 * 657 + 59;
+}else{
+	t_physicalern3534 = R_atfaction3533 + 587 * 432 - 110;
+}
+
+double n_issueenne3535 = 242;
+if(t_physicalern3534 * 699 - 80 + 247 != 36485){
+	n_issueenne3535 = t_physicalern3534 * 608 - 101;
+}
+
+double p_caesition3536 = 103;
+if(n_issueenne3535 + 250 - 915 + 766 / 732 * 397 + 384 != 3943){
+	p_caesition3536 = n_issueenne3535 - 860 * 484 * 507;
+}
+
+float n_pitiative3537 = 75;
+if(p_caesition3536 - 992 / 487 - 553 / 780 - 144 + 629 > 501){
+	n_pitiative3537 = p_caesition3536 * 804 / 744 * 868 / 891 / 464 / 988;
+}else{
+	n_pitiative3537 = p_caesition3536 + 464 * 901 + 154 * 656 / 10;
+}
+
+double y_phasiaet3538 = 336;
+if(n_pitiative3537 * 942 / 346 <= 36340){
+	y_phasiaet3538 = n_pitiative3537 * 759 * 713 - 321;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+        
+        double payo3528Tinaciish3529 = 2460.0;   //temple18
+        if (@(payo3528Tinaciish3529).doubleValue >= 4063) {}
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (mMWBlock) {
+            mMWBlock(NO, error.message);
+        }
+        
+    }];
+}
+
+
+
+- (void)requestBindPhoneAreaCode:(NSString *)areaCode telephone:(NSString *)telephone vfCode:(NSString *)vfCode Block:(MWBlock)mMWBlock{
+    
+    areaCode = [areaCode trim_MMMethodMMM];
+    telephone = [telephone trim_MMMethodMMM];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long k_10 = [self moveule1852Siphoior1853:8545 petrator1854Religiousling1855:6216 viress1856Middle1857:nil visitster1858Hiem1859:nil pub1860Ponderdreammost1861:9636 patternacity1862Firmtion1863:nil treiskaidekie1864Highproof1865:4716 ];
+	if(k_10){}
+
+	self.juniorie1426Aevent1427 = 3469;
+	if(self.juniorie1426Aevent1427 + 608 / 491 < 48649){}
+	self.ctenee1428Buyry1429 = 1829;
+	if(self.ctenee1428Buyry1429 + 39 + 990 - 959 - 89 - 317 + 15 > 56630){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9306;
+	if(self.civilast1432Stratalongular1433 - 174 - 899 * 739 + 82 / 241 / 636 != 17233){}
+		if(self.inad1434Simpleive1435){
+int e_electfier3571 = 940;
+double p_ogdoid3572 = 217;
+switch (e_electfier3571) {
+   case 286:
+			{
+				e_electfier3571 = p_ogdoid3572 - 125 - 400; 
+			 break;
+			}
+			case 137:
+			{
+				e_electfier3571 = p_ogdoid3572 + 816 / 684 + 720 + 575 - 411 + 552; 
+			 break;
+			}
+			case 928:
+			{
+				e_electfier3571 = p_ogdoid3572 - 798 + 902; 
+			 break;
+			}
+			case 141:
+			{
+				e_electfier3571 = p_ogdoid3572 + 388 / 227 * 715 + 695 - 374 - 465; 
+			 break;
+			}
+			case 284:
+			{
+				e_electfier3571 = p_ogdoid3572 + 372 / 281; 
+			 break;
+			}
+			case 949:
+			{
+				e_electfier3571 = p_ogdoid3572 * 940 * 404 - 588; 
+			 break;
+			}
+			case 100:
+			{
+				e_electfier3571 = p_ogdoid3572 * 677 + 624 - 35 * 154 * 927 * 415; 
+			 break;
+			}
+			case 339:
+			{
+				e_electfier3571 = p_ogdoid3572 * 566 - 99 * 161; 
+			 break;
+			}
+			case 329:
+			{
+				e_electfier3571 = p_ogdoid3572 + 728 / 353; 
+			 break;
+			}
+			case 235:
+			{
+				e_electfier3571 = p_ogdoid3572 - 693 + 216; 
+			 break;
+			}
+			case 307:
+			{
+				e_electfier3571 = p_ogdoid3572 - 718 + 620; 
+			 break;
+			}
+			case 16:
+			{
+				e_electfier3571 = p_ogdoid3572 + 197 * 690; 
+			 break;
+			}
+			case 366:
+			{
+				e_electfier3571 = p_ogdoid3572 - 655 + 756 / 586 / 611 - 982 + 730; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+          NSString *useast3539Herpfier3540 = @"tidiad3541Vincarium3542";    //temple33
+          NSString *wantator3543Locutward3544 = @"theroo3545Break3546";
+          NSString *moment3547Scopitude3548 = [NSString stringWithFormat:@"volv3549Omphal3550%@",useast3539Herpfier3540];
+          if ([moment3547Scopitude3548 length] < 8886) {
+            moment3547Scopitude3548 = [NSString stringWithFormat:@"triptless3557Epistemster3558%@",wantator3543Locutward3544];
+            if(useast3539Herpfier3540){
+              __asm__("NOP");
+            }
+            
+          }else{
+            moment3547Scopitude3548 = [NSString stringWithFormat:@"size3565Machincertainwise3566%@",wantator3543Locutward3544];
+            if(moment3547Scopitude3548){
+              __asm__("NOP");
+            }
+          }
+          
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    vfCode = [vfCode trim_MMMethodMMM];
+    
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:areaCode]) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_area_code_not_empty.localx];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * d_3 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:4287 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(d_3){}
+
+	self.juniorie1426Aevent1427 = 2209;
+	if(self.juniorie1426Aevent1427 + 811 + 592 / 78 - 50 >= 55518){}
+	self.ctenee1428Buyry1429 = 6736;
+	if(self.ctenee1428Buyry1429 + 399 + 529 - 554 < 56942){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 7961;
+	if(self.civilast1432Stratalongular1433 - 426 + 662 < 39018){}
+		if(self.inad1434Simpleive1435){}
+        
+        BOOL possibleular3573Omaivity3574 = YES;  //commontemple5
+        if (possibleular3573Omaivity3574)
+        {
+                    
+        int wellacle3581Seemsome3582 = 2049;  //temple9
+        int fenestritious3583Soundon3584 = 9708;
+        for(int glutincauseion3585Serve3586 = 0; glutincauseion3585Serve3586 < wellacle3581Seemsome3582; glutincauseion3585Serve3586 += 4533) {
+            break; 
+        } 
+
+        
+            possibleular3573Omaivity3574 = YES;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        return;
+    }
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:telephone]) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_text_phone_not_empty.localx];
+        return;
+    }
+    
+    
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:vfCode]) {
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM: wwwww_tag_wwwww_py_msg_vfcode_hint.localx];
+        return;
+    }
+    
+    [LampoCisling bindAccountPhone_MMMethodMMM:areaCode phoneNumber_MMMethodMMM:telephone vCode_MMMethodMMM:vfCode otherDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        SDK_DATA.mLoginResponse.data.telephone = [NSString stringWithFormat:@"%@-%@",areaCode,telephone];
+        SDK_DATA.mLoginResponse.data.isBindPhone = YES;
+        
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	float r_17 = [self rapacship2092Startid2093:nil fideward2094Createous2095:nil ];
+	if(r_17){}
+
+	self.juniorie1426Aevent1427 = 3546;
+	if(self.juniorie1426Aevent1427 - 625 * 781 / 863 / 660 / 863 + 27 <= 30492){ 
+double r_mentionette3619 = 329;
+
+if(r_mentionette3619 >= 31241){
+	double u_probablyior3620 = r_mentionette3619 + 172 / 486 - 120 / 790; 
+if(u_probablyior3620 > 7643){
+	float Q_pushfication3621 = u_probablyior3620 * 626 / 585 * 178 - 874; 
+if(Q_pushfication3621 == 91363){
+	int K_emesisator3622 = Q_pushfication3621 * 787 - 540 / 366 / 986 * 842 * 797;
+}
+}
+}
+ }
+	self.ctenee1428Buyry1429 = 3593;
+	if(self.ctenee1428Buyry1429 * 757 + 596 == 221){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 5007;
+	if(self.civilast1432Stratalongular1433 * 371 + 178 - 841 + 740 > 40219){}
+		if(self.inad1434Simpleive1435){}
+   
+      // 局部变量声明
+      int cavary3597Visth3598 = 7620;
+      int viscosot3599Note3600 = 4621;
+      int menoess3601Tinacer3602;
+      
+      if(viscosot3599Note3600 == cavary3597Visth3598){
+         // 调用函数来获取最大值
+         menoess3601Tinacer3602 = fmax(viscosot3599Note3600, cavary3597Visth3598);
+      }else{
+         menoess3601Tinacer3602 = fmin(viscosot3599Note3600, cavary3597Visth3598);
+      }
+     
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        if (mMWBlock) {
+            mMWBlock(YES, SDK_DATA.mLoginResponse.data.telephone);
+        }
+        
+    } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
+        
+        if (mMWBlock) {
+            mMWBlock(NO, error.message);
+
+		
+        }
+        
+    }];
+    
+    
+}
+
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (int)likely2018Argueory2019:(long)likely2018_1 daughterling2020Movian2021:(NSString *)daughterling2020_2 obeer2022Corister2023:(NSMutableArray *)obeer2022_3 waitie2024Threeety2025:(UIApplication *)waitie2024_4{ //insert method
+	if(likely2018_1 * 952 * 366 / 52 * 375 * 249 * 622 == 16773){
+		      
+      
+    int peopleary2028Anxiarium2029;   //commontemple20
+    int wordibility2030Fiveage2031 = 4846;
+    int loqu2032Proliose2033 = 9074;
+
+    if (wordibility2030Fiveage2031 >= loqu2032Proliose2033){
+        peopleary2028Anxiarium2029 = wordibility2030Fiveage2031;
+    }else{
+        peopleary2028Anxiarium2029 = loqu2032Proliose2033;
+    }
+        
+
+
+	}
+	if(waitie2024_4){
+		    NSArray *verg2046Governmentical2047 = @[@"scabrture2082_anthropofy2083", @"playeracle2084_listenation2085", @"saxissueee2086_plect2087", @"acactivityical2088_inor2089", @"acet2090_fric2091" ]; //temple28
+
+          int votwide2048Pitith2049 = verg2046Governmentical2047.count;
+         int myic2052Jugious2053 = (int)votwide2048Pitith2049;
+         int feroc2056Sonation2057 = 2196;
+         int perhapstion2058Archebusinessible2059 = 1398;
+         if (myic2052Jugious2053 > perhapstion2058Archebusinessible2059) {
+             myic2052Jugious2053 = perhapstion2058Archebusinessible2059;
+         }
+         while (feroc2056Sonation2057 <= myic2052Jugious2053) {
+            feroc2056Sonation2057 += 1;
+            myic2052Jugious2053 /= feroc2056Sonation2057;
+            myic2052Jugious2053 += 2278;
+            break;
+         }
+          [verg2046Governmentical2047 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+              if (idx <= 2822) {
+                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
+            }
+          }];
+	}
+ 
+	int d_3 = 51257;
+	return d_3;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSArray *)partably1962Halfkin1963:( NSArray *)partably1962_1 payule1964Stacy1965:( UNNotificationTrigger *)payule1964_2 American1966Glutinetic1967:(CGFloat)American1966_3 professor1968Budget1969:( NSArray *)professor1968_4 passition1970Cupard1971:(float)passition1970_5 panuous1972Oidsion1973:(NSMutableArray *)panuous1972_6 polyary1974Ferive1975:( NSData *)polyary1974_7{ //insert method
+	if(payule1964_2){
+		        
+        int popularit1978Agogety1979 = 2604;       //temple8
+        int dinocollectionproof1980Disenvironment1981 = 942;
+        for(int sorbair1982Mollous1983 = 0; sorbair1982Mollous1983 < popularit1978Agogety1979; sorbair1982Mollous1983 += 5549) {
+            dinocollectionproof1980Disenvironment1981 -= 8196;
+            break; 
+        } 
+
+        
+	}
+	if(professor1968_4){
+		int y_anyoneage1992 = 177;
+int W_just1993 = 498;
+switch (y_anyoneage1992) {
+   case 928:
+			{
+				y_anyoneage1992 = W_just1993 - 121 - 312 * 516 / 128; 
+			 break;
+			}
+			case 453:
+			{
+				y_anyoneage1992 = W_just1993 * 292 * 170 - 375; 
+			 break;
+			}
+			case 24:
+			{
+				y_anyoneage1992 = W_just1993 + 730 / 31 + 907 + 748; 
+			 break;
+			}
+			case -81:
+			{
+				y_anyoneage1992 = W_just1993 + 562 + 197 - 56 / 650 / 24; 
+			 break;
+			}
+			case 60:
+			{
+				y_anyoneage1992 = W_just1993 - 773 * 839 + 457 * 224; 
+			 break;
+			}
+			   default:
+       break;
+			}
+	}
+	if(passition1970_5 + 978 + 240 < 24014){
+		          int ableern1994Foot1995 = 7582;    //temple32
+          NSString *olivfication1996Fratereye1997 = @"cephaloory1998Herself1999";
+          int diseasemost2000Ranc2001 = 591;
+          if ([olivfication1996Fratereye1997 length] != ableern1994Foot1995) {
+            diseasemost2000Ranc2001 = 448;
+            __asm__("NOP"); 
+          }
+	}
+	if(panuous1972_6){
+		double D_peopleary2008 = 4199;
+
+int b_dekess2009 = 245;
+if(D_peopleary2008 + 463 / 663 + 636 * 164 >= 21288){
+	b_dekess2009 = D_peopleary2008 + 469 / 163;
+}else{
+	b_dekess2009 = D_peopleary2008 + 914 - 88 + 600;
+}
+
+int E_scissdom2010 = 831;
+if(b_dekess2009 + 630 * 622 / 230 != 96665){
+	E_scissdom2010 = b_dekess2009 - 265 + 235 - 303;
+}
+
+double l_ornitho2011 = 419;
+if(E_scissdom2010 * 980 - 556 > 95193){
+	l_ornitho2011 = E_scissdom2010 + 6 * 963 - 134 + 21 + 694 - 302;
+}
+
+	}
+	if(polyary1974_7){
+		        NSDictionary *opttheseical2012Quasiseveralarium2013 = [NSDictionary dictionaryWithObjectsAndKeys:@"sextfication2014Discusseur2015",@(3097), nil]; //temple29
+             if (opttheseical2012Quasiseveralarium2013.count > 7708) {}
+	}
+ 
+	NSArray *w_22 = nil;
+	return w_22;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+- (void)requestUpgradeWithAccount:(NSString *)account password:(NSString *)password Block:(MWBlock)mMWBlock
+{
+    account = [account trim_MMMethodMMM];
+
+		
+    if (![BeyondaceousCommunityic validUserName_MMMethodMMM:account]) {
         return;
     }
 
     password = [password trim_MMMethodMMM];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+    if (![BeyondaceousCommunityic validPwd_MMMethodMMM:password]) {
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	 UNNotificationTrigger * f_5 = [self buildingian1927Themselvesette1928:@"suddenlywise3620Kidproof3621" smalline1929Oscillolateen1930:nil quadragenivity1931Throughoutid1932:@"experality3622Exreadyo3623" orexiular1933Fidise1934:nil claim1935Ofivity1936:5128 triptarium1937Muniish1938:4826 ];
-	if(f_5){}
+	long J_35 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:3188 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:6886 ];
+	if(J_35){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-int r_verbmyon3624 = 9329;
-
-float A_nav3625 = 758;
-if(r_verbmyon3624 * 691 + 163 - 203 > 66330){
-	A_nav3625 = r_verbmyon3624 + 347 + 629 - 274 * 421 / 250;
-}else{
-	A_nav3625 = r_verbmyon3624 - 581 + 589 - 127 + 707;
-}
-
-float v_gemnecessarywise3626 = 752;
-if(A_nav3625 + 961 + 644 * 489 - 262 * 99 != 95798){
-	v_gemnecessarywise3626 = A_nav3625 - 832 + 156 / 695 / 343;
-}
-
-int O_personalia3627 = 141;
-if(v_gemnecessarywise3626 + 258 + 887 * 987 <= 76477){
-	O_personalia3627 = v_gemnecessarywise3626 + 423 / 604 * 456 / 830 * 664 + 299;
-}
-
-int n_year3628 = 875;
-if(O_personalia3627 + 511 - 624 != 6890){
-	n_year3628 = O_personalia3627 - 664 * 862 - 190 + 350;
-}
-
-double o_sufferular3629 = 542;
-if(n_year3628 + 613 / 879 + 979 + 228 + 392 != 98024){
-	o_sufferular3629 = n_year3628 * 677 / 941 * 837;
-}
-
-float o_gonosellaceous3630 = 500;
-if(o_sufferular3629 + 251 / 747 * 434 + 524 * 798 <= 92779){
-	o_gonosellaceous3630 = o_sufferular3629 - 811 - 263 - 69 / 275;
-}else{
-	o_gonosellaceous3630 = o_sufferular3629 + 237 + 353 * 364 + 258 * 392;
-}
-
-int D_costtion3631 = 557;
-if(o_gonosellaceous3630 - 101 / 868 - 598 != 64666){
-	D_costtion3631 = o_gonosellaceous3630 * 752 - 88 / 932 * 530 * 126;
-}
-
-int M_doctorade3632 = 910;
-if(D_costtion3631 * 90 / 264 * 258 + 182 >= 35540){
-	M_doctorade3632 = D_costtion3631 + 44 + 249;
-}else{
-	M_doctorade3632 = D_costtion3631 + 56 + 839 - 782 - 727 - 345;
-}
-
-float i_multfier3633 = 916;
-if(M_doctorade3632 - 110 + 573 * 640 + 625 * 397 > 29370){
-	i_multfier3633 = M_doctorade3632 - 298 - 329 * 760 - 776 + 264 - 267;
-}
-
-float G_sucheur3634 = 298;
-if(i_multfier3633 * 338 / 248 * 525 * 450 * 766 > 31449){
-	G_sucheur3634 = i_multfier3633 + 831 / 739;
-}else{
-	G_sucheur3634 = i_multfier3633 + 282 / 300 / 643 / 331 / 872 / 876;
-}
-
-float R_tree3635 = 778;
-if(G_sucheur3634 + 93 / 145 * 528 / 165 - 829 > 14327){
-	R_tree3635 = G_sucheur3634 * 458 / 336 + 214 - 671;
-}else{
-	R_tree3635 = G_sucheur3634 * 533 - 555 + 718 + 117 / 934 * 178;
-}
-
-int Y_dorsity3636 = 792;
-if(R_tree3635 + 532 - 681 * 991 / 622 / 261 + 238 >= 83559){
-	Y_dorsity3636 = R_tree3635 - 916 / 834 / 229 + 148 * 319 + 979;
-}else{
-	Y_dorsity3636 = R_tree3635 * 15 - 525 * 535 - 946;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 1556;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 165 / 321 <= 90509){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3889;
-	if(self.flat1440Hesless1441 + 200 + 155 / 803 / 969 * 337 > 88172){}
-	self.aristary1442Agoar1443 = 1850;
-	if(self.aristary1442Agoar1443 + 316 / 763 / 598 + 437 * 342 < 29038){}
-	self.culturalaceous1444Broncher1445 = 4038;
-	if(self.culturalaceous1444Broncher1445 * 470 + 877 != 11508){}
-		if(self.phemwise1446Lowfaction1447){}
-double t_deadern3616 = 3343;
-
-if(t_deadern3616 != 58826){
-	int g_steporium3617 = t_deadern3616 * 344 - 168 + 892 / 628 / 658 + 37; 
-if(g_steporium3617 >= 57592){
-	float j_saxfier3618 = g_steporium3617 * 588 + 801 * 920 - 457 - 222; 
-if(j_saxfier3618 > 38120){
-	float C_givement3619 = j_saxfier3618 + 914 / 850;
-}
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    if (![ElsureTraditional validPwd_MMMethodMMM:password]) {
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSArray * T_45 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:9656 plaud1671Past1672:9549 ];
-	if(T_45){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-double S_cityaire3665 = 8759;
-
-if(S_cityaire3665 < 89987){
-	double C_socialality3666 = S_cityaire3665 * 570 / 124 * 896 / 787 + 158 * 706; 
-if(C_socialality3666 != 35225){
-	int w_jocfic3667 = C_socialality3666 * 622 - 309 * 526 * 530; 
-if(w_jocfic3667 > 58186){
-	double D_electracious3668 = w_jocfic3667 + 522 - 722;
-}
-}
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 4033;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 39 * 415 + 695 + 755 - 459 - 861 == 59907){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7330;
-	if(self.flat1440Hesless1441 - 469 * 499 >= 75428){}
-	self.aristary1442Agoar1443 = 3130;
-	if(self.aristary1442Agoar1443 + 250 * 123 / 326 - 231 / 635 * 707 >= 31731){}
-	self.culturalaceous1444Broncher1445 = 6839;
-	if(self.culturalaceous1444Broncher1445 * 447 * 426 > 21432){}
-		if(self.phemwise1446Lowfaction1447){}
-      
-      
-    int partlike3639Pudeitude3640;   //commontemple23
-    int raucaneity3641Sacraress3642 = 8223;
-    int mercise3643Villenvironmentet3644 = 1014;
-
-    if (raucaneity3641Sacraress3642 <= mercise3643Villenvironmentet3644){
-        partlike3639Pudeitude3640 = raucaneity3641Sacraress3642;
-
-        int claustrfic3653Scab3654[ partlike3639Pudeitude3640 ]; 
-    
-          // 初始化数组元素          
-          for ( int i = 0; i < partlike3639Pudeitude3640; i++ )
-          {
-             claustrfic3653Scab3654[ i ] = i + 6585; // 设置元素 i 为 i + 100
-             break;
-          }
-    }else{
-        partlike3639Pudeitude3640 = mercise3643Villenvironmentet3644;
-    }
-        
-
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-        return;
-    }
-    
-    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
-    if (!currentAccountModel) {
-        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:3617 rach2006Gladiion2007:9060 homoiprobablyarian2008Pactaire2009:8829 howeverator2010Opto2011:1869 ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9929;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 133 / 232 >= 451){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6465;
-	if(self.flat1440Hesless1441 * 967 * 152 - 272 + 573 < 72165){}
-	self.aristary1442Agoar1443 = 1645;
-	if(self.aristary1442Agoar1443 * 323 / 993 * 930 / 817 - 431 == 79301){ 
-int a_thanate3689 = 569;
-float E_saccfloorency3690 = 311;
-switch (a_thanate3689) {
-   case 744:
+	self.juniorie1426Aevent1427 = 2783;
+	if(self.juniorie1426Aevent1427 * 704 - 572 * 374 >= 12385){}
+	self.ctenee1428Buyry1429 = 8517;
+	if(self.ctenee1428Buyry1429 + 56 + 526 - 193 + 613 > 38090){}
+		if(self.opacization1430Knowledgeform1431){
+int M_defenseress3627 = 801;
+int h_fistul3628 = 906;
+switch (M_defenseress3627) {
+   case 718:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 228 - 161 * 199; 
+				M_defenseress3627 = h_fistul3628 * 544 / 364 / 79 / 318; 
 			 break;
 			}
-			case 677:
+			case 960:
 			{
-				a_thanate3689 = E_saccfloorency3690 - 457 * 347; 
+				M_defenseress3627 = h_fistul3628 - 703 + 187 / 465 / 935 - 57; 
 			 break;
 			}
-			case 175:
+			case 396:
 			{
-				a_thanate3689 = E_saccfloorency3690 * 500 / 875 + 118; 
+				M_defenseress3627 = h_fistul3628 - 510 + 947 - 788 + 440 + 314 + 314; 
 			 break;
 			}
-			case 869:
+			case 559:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 663 / 261 * 180 / 35; 
+				M_defenseress3627 = h_fistul3628 - 377 + 567 + 186 / 159 + 22 / 753; 
 			 break;
 			}
-			case 370:
+			case -30:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 499 * 428 - 606 + 570 / 668 - 488; 
+				M_defenseress3627 = h_fistul3628 + 230 + 158 - 164 * 236 - 706 / 897; 
 			 break;
 			}
-			case 252:
+			case 68:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 34 * 19; 
+				M_defenseress3627 = h_fistul3628 * 382 - 248 + 300 / 63; 
 			 break;
 			}
-			case 570:
+			case 903:
 			{
-				a_thanate3689 = E_saccfloorency3690 * 951 / 714 + 339 + 1 - 353; 
+				M_defenseress3627 = h_fistul3628 * 809 - 485 / 488 - 932; 
 			 break;
 			}
-			case 205:
+			case 979:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 450 * 478 + 230 / 381 - 968 - 382; 
+				M_defenseress3627 = h_fistul3628 - 885 * 712 * 737 + 558; 
 			 break;
 			}
-			case 435:
+			case 293:
 			{
-				a_thanate3689 = E_saccfloorency3690 * 362 - 446 / 589 - 208 - 778 + 3; 
+				M_defenseress3627 = h_fistul3628 - 883 + 233 + 511 + 650; 
 			 break;
 			}
-			case 831:
+			case 590:
 			{
-				a_thanate3689 = E_saccfloorency3690 + 826 - 844 - 876 * 89 / 19 - 519; 
+				M_defenseress3627 = h_fistul3628 - 934 * 688 + 967 / 579 + 854 + 4; 
 			 break;
 			}
-			case 872:
+			case 503:
 			{
-				a_thanate3689 = E_saccfloorency3690 * 269 * 623 * 487; 
+				M_defenseress3627 = h_fistul3628 * 470 / 74 / 786 + 242; 
 			 break;
 			}
-			case 443:
+			case 560:
 			{
-				a_thanate3689 = E_saccfloorency3690 - 945 / 754 - 258 - 134 - 42; 
+				M_defenseress3627 = h_fistul3628 * 907 / 195; 
 			 break;
 			}
-			case 748:
+			case 447:
 			{
-				a_thanate3689 = E_saccfloorency3690 * 138 * 331 / 571 + 351 / 739 / 526; 
-			 break;
-			}
-			case 456:
-			{
-				a_thanate3689 = E_saccfloorency3690 * 97 + 244; 
-			 break;
-			}
-			case 372:
-			{
-				a_thanate3689 = E_saccfloorency3690 - 440 + 692 + 482 * 822; 
+				M_defenseress3627 = h_fistul3628 * 649 * 725 - 166; 
 			 break;
 			}
 			   default:
        break;
 			}
- }
-	self.culturalaceous1444Broncher1445 = 3059;
-	if(self.culturalaceous1444Broncher1445 + 55 - 782 * 691 * 452 + 336 != 73131){}
-		if(self.phemwise1446Lowfaction1447){
-float N_subjectry3691 = 1489;
-
-double N_south3692 = 313;
-if(N_subjectry3691 - 950 - 651 * 117 <= 33847){
-	N_south3692 = N_subjectry3691 + 530 * 139 / 679 / 855;
-}else{
-	N_south3692 = N_subjectry3691 * 875 - 719;
 }
-
-double o_biexampleish3693 = 17;
-if(N_south3692 + 887 - 886 + 5 * 670 / 293 + 859 >= 91167){
-	o_biexampleish3693 = N_south3692 * 421 / 604 * 149 * 127 * 357 - 719;
-}else{
-	o_biexampleish3693 = N_south3692 - 500 * 866 * 901 / 612 * 148 / 288;
-}
-
-float L_penitkindon3694 = 8;
-if(o_biexampleish3693 + 991 / 687 * 636 / 936 + 513 + 133 > 14261){
-	L_penitkindon3694 = o_biexampleish3693 - 524 / 59;
-}
-
-int m_ligature3695 = 865;
-if(L_penitkindon3694 - 555 + 518 / 998 + 122 > 60830){
-	m_ligature3695 = L_penitkindon3694 + 65 - 466 * 157 / 513;
-}
-
-double y_contraetic3696 = 217;
-if(m_ligature3695 - 347 * 242 - 612 <= 28637){
-	y_contraetic3696 = m_ligature3695 + 434 + 901 - 623 * 460;
-}
-
-double x_throughout3697 = 809;
-if(y_contraetic3696 * 391 / 185 + 102 - 525 >= 51743){
-	x_throughout3697 = y_contraetic3696 + 209 - 572 + 262 + 843 - 106 - 140;
-}else{
-	x_throughout3697 = y_contraetic3696 * 695 * 830 - 348 * 445 / 228;
-}
-
-}
-
-        BOOL menacipowerery3671Carboel3672 = NO;  //commontemple14
-        if (menacipowerery3671Carboel3672){
-            menacipowerery3671Carboel3672 = YES;
-            NSInteger realeer3677Followible3678 = 3272;
-            if (realeer3677Followible3678 == -153){
-                realeer3677Followible3678 = realeer3677Followible3678 / 8796;
-            }
-        }else{
-            menacipowerery3671Carboel3672 = !menacipowerery3671Carboel3672;
-        }
-
-        
+	self.civilast1432Stratalongular1433 = 1287;
+	if(self.civilast1432Stratalongular1433 - 584 / 359 >= 93289){}
+		if(self.inad1434Simpleive1435){}
+int C_singlesive3625 = 554;
+double N_pelfaceibility3626 = 46;
+switch (C_singlesive3625) {
+   case 150:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 + 783 / 146; 
+			 break;
+			}
+			case 694:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 + 106 - 426; 
+			 break;
+			}
+			case -17:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 902 / 539 - 389 * 285 * 522 / 29; 
+			 break;
+			}
+			case 313:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 662 / 416 - 818 - 761 + 219 * 145; 
+			 break;
+			}
+			case 648:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 + 320 + 919 * 786 + 949; 
+			 break;
+			}
+			case 846:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 200 + 45 + 203 + 574; 
+			 break;
+			}
+			case 366:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 * 942 / 491 + 613; 
+			 break;
+			}
+			case 636:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 + 221 - 153 - 168 / 213 / 960 * 916; 
+			 break;
+			}
+			case 164:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 * 517 + 207 + 590 - 524 * 878; 
+			 break;
+			}
+			case 124:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 * 347 + 53 - 721 / 404 / 513 / 915; 
+			 break;
+			}
+			case 883:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 90 + 123 - 280 + 760 * 103 - 430; 
+			 break;
+			}
+			case 750:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 139 / 701 * 879 * 102 - 709 + 848; 
+			 break;
+			}
+			case 940:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 + 623 + 271 - 864; 
+			 break;
+			}
+			case 374:
+			{
+				C_singlesive3625 = N_pelfaceibility3626 - 770 / 823; 
+			 break;
+			}
+			   default:
+       break;
+			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
     
-    [ValueformVocar doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    NihilativeFederalless *currentAccountModel = SDK_DATA.mLoginResponse.data;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * A_26 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(A_26){}
+
+	self.juniorie1426Aevent1427 = 5706;
+	if(self.juniorie1426Aevent1427 * 844 * 967 - 87 <= 74789){}
+	self.ctenee1428Buyry1429 = 9003;
+	if(self.ctenee1428Buyry1429 * 958 + 604 - 544 / 424 > 13699){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 8031;
+	if(self.civilast1432Stratalongular1433 - 881 / 978 / 894 / 399 - 501 != 19366){}
+		if(self.inad1434Simpleive1435){}
+float h_triptary3631 = 3656;
+
+double L_foreignade3632 = 556;
+if(h_triptary3631 - 978 - 258 - 406 > 4899){
+	L_foreignade3632 = h_triptary3631 * 382 / 453;
+}else{
+	L_foreignade3632 = h_triptary3631 - 847 - 394 + 738;
+}
+
+int j_plectward3633 = 902;
+if(L_foreignade3632 + 657 / 657 / 69 * 325 * 248 * 121 >= 30454){
+	j_plectward3633 = L_foreignade3632 * 223 / 977 * 216 - 541;
+}
+
+float h_laborious3634 = 111;
+if(j_plectward3633 - 369 * 88 * 187 / 757 / 906 + 797 != 98081){
+	h_laborious3634 = j_plectward3633 * 520 / 985 + 445;
+}else{
+	h_laborious3634 = j_plectward3633 - 289 * 641 + 808 - 513;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    if (!currentAccountModel) {
+        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSArray * v_21 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:7702 professor1968Budget1969:nil passition1970Cupard1971:9495 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(v_21){}
+
+	self.juniorie1426Aevent1427 = 1501;
+	if(self.juniorie1426Aevent1427 - 389 + 937 * 891 - 959 != 21965){}
+	self.ctenee1428Buyry1429 = 2981;
+	if(self.ctenee1428Buyry1429 - 893 + 379 - 993 * 940 / 486 - 118 != 57501){ 
+float W_deathacious3647 = 1857;
+
+int V_studentish3648 = 790;
+if(W_deathacious3647 - 446 * 521 / 191 != 64137){
+	V_studentish3648 = W_deathacious3647 * 82 / 615 / 312 + 54 + 173 / 777;
+}else{
+	V_studentish3648 = W_deathacious3647 * 453 - 784 + 546 - 196 - 763 * 969;
+}
+
+float a_career3649 = 710;
+if(V_studentish3648 + 91 - 121 / 5 + 312 > 40911){
+	a_career3649 = V_studentish3648 + 470 * 806;
+}else{
+	a_career3649 = V_studentish3648 - 705 + 375 + 11 - 777;
+}
+
+int k_fall3650 = 964;
+if(a_career3649 * 922 - 757 / 705 == 82406){
+	k_fall3650 = a_career3649 - 158 + 394;
+}
+
+float p_tectonation3651 = 570;
+if(k_fall3650 * 81 - 450 - 83 / 884 - 197 / 290 <= 63844){
+	p_tectonation3651 = k_fall3650 * 827 + 426;
+}else{
+	p_tectonation3651 = k_fall3650 - 724 - 195 * 424 / 903;
+}
+
+int E_poorenne3652 = 580;
+if(p_tectonation3651 - 249 + 759 * 286 * 975 * 477 * 437 > 88405){
+	E_poorenne3652 = p_tectonation3651 * 438 / 786 - 462 - 943 - 754 + 513;
+}
+
+double A_dich3653 = 927;
+if(E_poorenne3652 * 829 - 293 < 62127){
+	A_dich3653 = E_poorenne3652 + 671 + 878 + 853 - 415 + 913 / 44;
+}else{
+	A_dich3653 = E_poorenne3652 * 407 - 848 / 330 - 176;
+}
+
+ }
+		if(self.opacization1430Knowledgeform1431){
+int H_poor3654 = 160;
+
+if(H_poor3654 != 71968){
+	int W_sedecmost3655 = H_poor3654 + 202 / 269 / 447 / 358 / 598; 
+if(W_sedecmost3655 <= 30052){
+	int X_beforeity3656 = W_sedecmost3655 - 999 + 639; 
+if(X_beforeity3656 <= 69983){
+	int j_aperable3657 = X_beforeity3656 + 196 - 63 / 447 * 20 / 170 / 404; 
+if(j_aperable3657 == 45151){
+	float t_againstify3658 = j_aperable3657 + 970 - 515 / 348; 
+if(t_againstify3658 != 17782){
+	float M_radic3659 = t_againstify3658 * 783 - 848 - 362;
+}
+}
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 361;
+	if(self.civilast1432Stratalongular1433 + 162 * 626 + 851 / 84 * 245 > 49170){}
+		if(self.inad1434Simpleive1435){}
+        
+        BOOL arborth3637Ligatory3638 = NO;  //commontemple8
+        if (arborth3637Ligatory3638){
+            arborth3637Ligatory3638 = YES;
+        }else{
+            arborth3637Ligatory3638 = !arborth3637Ligatory3638;
+        }
+
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+
+		
+        return;
+    }
+    
+    [LampoCisling doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         
-        LoginResponse *cc = (LoginResponse *)responseData;
+        DichtradeitudeTradeuous *cc = (DichtradeitudeTradeuous *)responseData;
         cc.data.account = account;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSString * G_32 = [self phonofilmia1652Byule1653:nil rhodivity1654Joclet1655:nil answer1656Dottruthish1657:nil mordfamilyency1658Preparearium1659:nil arriveia1660Aceto1661:nil fligquality1662Maintain1663:nil scensship1664Stalactular1665:7030 ];
+	if(G_32){}
+
+	self.juniorie1426Aevent1427 = 2151;
+	if(self.juniorie1426Aevent1427 * 653 * 109 * 623 + 260 - 562 * 712 >= 1618){}
+	self.ctenee1428Buyry1429 = 9275;
+	if(self.ctenee1428Buyry1429 * 53 / 679 * 613 - 166 >= 23408){}
+		if(self.opacization1430Knowledgeform1431){
+int g_populade3678 = 598;
+float b_end3679 = 358;
+switch (g_populade3678) {
+   case 330:
+			{
+				g_populade3678 = b_end3679 + 156 * 432; 
+			 break;
+			}
+			case 575:
+			{
+				g_populade3678 = b_end3679 - 734 + 356 + 843; 
+			 break;
+			}
+			case -83:
+			{
+				g_populade3678 = b_end3679 - 432 * 358 * 199 + 633 - 658; 
+			 break;
+			}
+			case 711:
+			{
+				g_populade3678 = b_end3679 * 195 + 598 / 475; 
+			 break;
+			}
+			case 267:
+			{
+				g_populade3678 = b_end3679 * 78 + 473; 
+			 break;
+			}
+			case 674:
+			{
+				g_populade3678 = b_end3679 + 993 * 619 - 796 / 747 + 446 + 18; 
+			 break;
+			}
+			case 54:
+			{
+				g_populade3678 = b_end3679 - 682 / 682 + 441 * 147; 
+			 break;
+			}
+			case 961:
+			{
+				g_populade3678 = b_end3679 - 847 / 887 * 194; 
+			 break;
+			}
+			case -36:
+			{
+				g_populade3678 = b_end3679 + 984 + 742 * 195 / 688; 
+			 break;
+			}
+			case 828:
+			{
+				g_populade3678 = b_end3679 - 829 * 626 - 982 - 53 / 467 - 804; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+	self.civilast1432Stratalongular1433 = 2060;
+	if(self.civilast1432Stratalongular1433 + 825 * 14 * 794 < 80939){ 
+float Y_pseud3680 = 1467;
+
+if(Y_pseud3680 < 39877){
+	float V_countryaster3681 = Y_pseud3680 - 172 / 460 + 193 + 609 * 71; 
+if(V_countryaster3681 > 58959){
+	int v_thoughtent3682 = V_countryaster3681 - 766 - 575 - 63 - 713;
+}
+}
+ }
+		if(self.inad1434Simpleive1435){}
+        int feminage3660Heative3661 = 5004;  //commontemple16
+        int strategyel3674Setatory3675 = 9947;
+        int discuss3676 = 1969;
+        switch (feminage3660Heative3661) {
+                
+            case 167:
+			{
+				strategyel3674Setatory3675 = discuss3676 + 934 - 326; 
+			 break;
+			}
+			case 567:
+			{
+				strategyel3674Setatory3675 = discuss3676 + 572 - 684 / 96 - 256 * 834; 
+			 break;
+			}
+			case 338:
+			{
+				strategyel3674Setatory3675 = discuss3676 + 397 + 925 + 60 * 780 / 742 * 670; 
+			 break;
+			}
+			case 907:
+			{
+				strategyel3674Setatory3675 = discuss3676 * 573 / 712 * 841 - 569 - 53; 
+			 break;
+			}
+			case 709:
+			{
+				strategyel3674Setatory3675 = discuss3676 - 362 / 740 - 110 + 709 / 811; 
+			 break;
+			}
+			case 453:
+			{
+				strategyel3674Setatory3675 = discuss3676 - 242 + 821 + 580 * 196 * 979 / 49; 
+			 break;
+			}
+			case 361:
+			{
+				strategyel3674Setatory3675 = discuss3676 * 294 + 910 / 416; 
+			 break;
+			}
+			case 771:
+			{
+				strategyel3674Setatory3675 = discuss3676 + 953 - 797; 
+			 break;
+			}
+			case 253:
+			{
+				strategyel3674Setatory3675 = discuss3676 - 683 + 153 + 30 / 783; 
+			 break;
+			}
+			case 387:
+			{
+				strategyel3674Setatory3675 = discuss3676 - 930 + 245 / 314; 
+			 break;
+			}
+			case 801:
+			{
+				strategyel3674Setatory3675 = discuss3676 * 793 / 64 - 507 - 228 - 947 - 400; 
+			 break;
+			}
+			
+                
+            default:
+                break;
+        }
+        BOOL urgwhom3664Sternette3665 = YES;
+        int mittty3666Bacacity3667 = 5004;
+        if (urgwhom3664Sternette3665){
+
+            mittty3666Bacacity3667 = mittty3666Bacacity3667 * strategyel3674Setatory3675;
+        }
+        
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         cc.data.password = password;
         cc.data.loginType = LOGIN_TYPE_SELF;
         SDK_DATA.mLoginResponse = cc;
         
-        [[DreamerSixry share] saveAccountModel_MMMethodMMM:cc.data];
+        [[PasteerToughally share] saveAccountModel_MMMethodMMM:cc.data];
         
         
         
-        [CheckWifewise logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
-        [CheckWifewise logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
-        
-        AccountModel *rData = cc.data;
+        [EspeciallytionOenitious logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self patternorium1584Imfewion1585:5336 give1586Scribid1587:nil smalline1588Pancreaticotheirety1589:nil aboutular1590Dekid1591:nil lotose1592Iridot1593:nil ];
+	long n_13 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:9663 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:6745 ];
+	if(n_13){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 7056;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 442 * 559 / 93 > 45659){ 
-int f_oxysure3724 = 5109;
+	self.juniorie1426Aevent1427 = 646;
+	if(self.juniorie1426Aevent1427 - 268 / 457 + 942 / 655 >= 98826){ 
+double U_bonule3687 = 4415;
 
-float v_monoical3725 = 540;
-if(f_oxysure3724 + 876 - 562 / 173 - 644 - 976 + 999 >= 57760){
-	v_monoical3725 = f_oxysure3724 - 976 + 611 + 960 * 474 / 637 - 289;
-}
-
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 7347;
-	if(self.flat1440Hesless1441 * 98 + 922 - 807 + 933 > 56971){ 
-float V_deadfication3726 = 1090;
-
-double V_fearition3727 = 455;
-if(V_deadfication3726 + 220 * 373 * 839 * 543 * 864 <= 44418){
-	V_fearition3727 = V_deadfication3726 * 487 / 545 / 619 * 702 + 137 + 850;
+int c_ceneer3688 = 676;
+if(U_bonule3687 * 214 * 390 + 63 - 461 + 342 + 363 == 1604){
+	c_ceneer3688 = U_bonule3687 - 435 - 202 + 427 * 136 / 38;
 }else{
-	V_fearition3727 = V_deadfication3726 + 372 * 652 - 526;
+	c_ceneer3688 = U_bonule3687 - 600 / 213 / 941 - 360 + 345;
+}
+
+double I_necessaryit3689 = 935;
+if(c_ceneer3688 * 896 / 339 + 106 - 687 * 168 < 89206){
+	I_necessaryit3689 = c_ceneer3688 * 228 - 22 * 423;
+}else{
+	I_necessaryit3689 = c_ceneer3688 + 906 + 561;
+}
+
+float J_boloast3690 = 394;
+if(I_necessaryit3689 * 945 + 968 - 742 + 154 <= 9213){
+	J_boloast3690 = I_necessaryit3689 + 702 + 550 + 833;
+}else{
+	J_boloast3690 = I_necessaryit3689 + 248 * 218;
+}
+
+float F_platality3691 = 91;
+if(J_boloast3690 - 214 - 912 + 407 + 447 + 164 - 224 < 86522){
+	F_platality3691 = J_boloast3690 - 581 / 88 / 871;
+}
+
+int Q_qualityal3692 = 960;
+if(F_platality3691 + 216 * 32 / 138 + 510 <= 23371){
+	Q_qualityal3692 = F_platality3691 + 354 + 112 - 5 / 691;
+}
+
+int P_queraster3693 = 896;
+if(Q_qualityal3692 - 741 + 343 * 725 * 946 + 705 >= 62083){
+	P_queraster3693 = Q_qualityal3692 + 751 * 638 / 789 + 94 + 360;
+}else{
+	P_queraster3693 = Q_qualityal3692 * 246 * 838 + 103 - 788 * 847 + 125;
+}
+
+float K_pollicatic3694 = 737;
+if(P_queraster3693 - 901 - 438 > 93410){
+	K_pollicatic3694 = P_queraster3693 + 51 - 274 / 253;
+}else{
+	K_pollicatic3694 = P_queraster3693 * 536 * 887;
 }
 
  }
-	self.aristary1442Agoar1443 = 8894;
-	if(self.aristary1442Agoar1443 - 190 * 950 / 893 - 642 * 724 - 449 > 8542){}
-	self.culturalaceous1444Broncher1445 = 1302;
-	if(self.culturalaceous1444Broncher1445 - 76 - 777 / 107 < 95901){}
-		if(self.phemwise1446Lowfaction1447){
-int y_individualise3728 = 897;
-double n_censain3729 = 735;
-switch (y_individualise3728) {
-   case 358:
-			{
-				y_individualise3728 = n_censain3729 * 403 * 314 / 97 * 189 - 886; 
-			 break;
-			}
-			case 774:
-			{
-				y_individualise3728 = n_censain3729 * 157 * 899 - 577 + 149 + 983 * 230; 
-			 break;
-			}
-			case -15:
-			{
-				y_individualise3728 = n_censain3729 * 217 - 206; 
-			 break;
-			}
-			case 247:
-			{
-				y_individualise3728 = n_censain3729 * 209 - 366 * 840; 
-			 break;
-			}
-			   default:
-       break;
-			}
+	self.ctenee1428Buyry1429 = 3896;
+	if(self.ctenee1428Buyry1429 - 526 + 78 / 683 * 632 / 462 == 55662){ 
+int Q_sparsitive3695 = 171;
+
+float R_nex3696 = 143;
+if(Q_sparsitive3695 - 734 + 274 / 686 > 36345){
+	R_nex3696 = Q_sparsitive3695 + 660 * 410 / 776 / 505 - 348;
+}else{
+	R_nex3696 = Q_sparsitive3695 * 808 * 946 + 417 * 744 * 623 / 441;
 }
-   
-      // 局部变量声明
-      int answerably3702Mollern3703 = 6118;
-      int calidhood3704Theant3705 = 5770;
-      int ossist3706Uponacious3707;
-      
-      if(calidhood3704Theant3705 > answerably3702Mollern3703){
-         // 调用函数来获取最大值
-         ossist3706Uponacious3707 = fmax(calidhood3704Theant3705, answerably3702Mollern3703);
-      }else{
-         ossist3706Uponacious3707 = fmin(calidhood3704Theant3705, answerably3702Mollern3703);
-      }
-     
+
+float c_wear3697 = 42;
+if(R_nex3696 * 120 - 751 - 758 / 800 * 42 != 68219){
+	c_wear3697 = R_nex3696 - 549 / 619 + 915 / 606 + 484 * 812;
+}else{
+	c_wear3697 = R_nex3696 - 222 + 143;
+}
+
+double Y_town3698 = 101;
+if(c_wear3697 - 155 / 726 * 4 <= 11016){
+	Y_town3698 = c_wear3697 * 661 / 617 - 834 - 341;
+}
+
+int E_therioent3699 = 417;
+if(Y_town3698 - 364 - 519 <= 36761){
+	E_therioent3699 = Y_town3698 - 408 / 177 / 188 / 495 + 885;
+}
+
+int L_dicitious3700 = 226;
+if(E_therioent3699 - 987 / 221 / 407 + 565 >= 77724){
+	L_dicitious3700 = E_therioent3699 - 181 - 902 + 966 * 164 * 83;
+}
+
+float E_compareular3701 = 522;
+if(L_dicitious3700 * 848 / 203 + 280 + 79 / 562 * 228 > 51437){
+	E_compareular3701 = L_dicitious3700 - 494 * 587 + 311 + 55 - 53;
+}
+
+int n_identify3702 = 381;
+if(E_compareular3701 + 277 - 390 / 461 / 716 + 108 == 44457){
+	n_identify3702 = E_compareular3701 - 911 + 993 + 10;
+}else{
+	n_identify3702 = E_compareular3701 - 867 - 483;
+}
+
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 8165;
+	if(self.civilast1432Stratalongular1433 - 753 + 189 / 524 * 542 - 621 >= 57354){}
+		if(self.inad1434Simpleive1435){}
+            float rar3683Pieceot3684 = 4628.0;  //temple25
+            if (@(rar3683Pieceot3684).doubleValue > 2984) {}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        LoginData *loginData = [[LoginData alloc] init];
-        loginData.accessToken = rData.token;
-        loginData.userId = rData.userId;
-        loginData.timestamp = rData.timestamp;
+        [EspeciallytionOenitious logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
         
-        loginData.isBind = rData.isBind;
+        NihilativeFederalless *rData = cc.data;
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+        LoginData *loginData = [[LoginData alloc] init];
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long e_4 = [self indeedtion1645Anthropdaughter1646:@"coach3735Juster3736" fallacy1647Seriesator1648:9159 ];
-	if(e_4){}
+	NSURL * U_46 = [self dignacious2384Windia2385:@"isdrawsion3739Prun3740" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:6195 member2392Standardify2393:nil weaponible2394Noticeacle2395:4822 price2396Hair2397:7807 epfic2398Bed2399:5175 ];
+	if(U_46){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-double C_manageretic3737 = 6512;
+	self.juniorie1426Aevent1427 = 160;
+	if(self.juniorie1426Aevent1427 - 6 + 579 * 138 - 107 / 748 * 712 == 69892){}
+	self.ctenee1428Buyry1429 = 5843;
+	if(self.ctenee1428Buyry1429 * 127 - 585 / 472 - 244 != 19496){ 
+float H_economicize3741 = 9229;
 
-float e_plurimling3738 = 557;
-if(C_manageretic3737 + 493 + 361 / 531 - 134 > 79416){
-	e_plurimling3738 = C_manageretic3737 + 68 / 590 - 24 - 107 * 567;
+float D_offing3742 = 992;
+if(H_economicize3741 * 128 / 309 + 810 - 241 / 136 != 23508){
+	D_offing3742 = H_economicize3741 * 364 + 362;
+}
+
+double f_doloro3743 = 812;
+if(D_offing3742 + 629 + 305 == 23813){
+	f_doloro3743 = D_offing3742 * 32 * 461 / 728 - 214 / 215 + 919;
+}
+
+double y_firmfloor3744 = 730;
+if(f_doloro3743 + 496 - 189 - 975 < 18258){
+	y_firmfloor3744 = f_doloro3743 - 942 * 992 * 310 * 862;
+}
+
+float i_felinoitor3745 = 401;
+if(y_firmfloor3744 + 377 + 171 - 833 * 733 + 165 - 375 >= 41865){
+	i_felinoitor3745 = y_firmfloor3744 * 73 / 273 / 639 - 574;
 }else{
-	e_plurimling3738 = C_manageretic3737 - 371 - 751 + 521 - 594 + 953;
+	i_felinoitor3745 = y_firmfloor3744 + 15 + 766 - 233 - 961 + 672 / 953;
 }
 
-int d_pagin3739 = 700;
-if(e_plurimling3738 * 227 / 63 - 908 * 422 != 56845){
-	d_pagin3739 = e_plurimling3738 + 435 * 285 * 18;
+int U_happen3746 = 959;
+if(i_felinoitor3745 * 496 / 370 * 279 * 731 - 598 / 385 > 61331){
+	U_happen3746 = i_felinoitor3745 - 30 * 469;
 }else{
-	d_pagin3739 = e_plurimling3738 + 151 + 523 - 950;
+	U_happen3746 = i_felinoitor3745 + 232 / 282;
 }
 
-float p_central3740 = 895;
-if(d_pagin3739 - 29 + 261 + 706 / 362 * 731 == 83574){
-	p_central3740 = d_pagin3739 + 969 + 489;
+float V_manage3747 = 607;
+if(U_happen3746 - 152 - 228 + 833 > 10734){
+	V_manage3747 = U_happen3746 - 841 + 827 * 301;
 }
 
-double A_varicfaction3741 = 815;
-if(p_central3740 + 435 - 502 * 967 - 983 <= 34386){
-	A_varicfaction3741 = p_central3740 + 519 * 972 / 170 - 834;
-}else{
-	A_varicfaction3741 = p_central3740 + 455 * 130 + 319 - 373 + 781 - 254;
+double w_treatmentfier3748 = 594;
+if(V_manage3747 - 14 / 68 / 312 + 598 / 866 / 44 >= 40598){
+	w_treatmentfier3748 = V_manage3747 * 679 / 38 - 527;
 }
 
-int h_multfier3742 = 393;
-if(A_varicfaction3741 * 991 / 779 / 447 - 353 / 732 + 548 >= 79301){
-	h_multfier3742 = A_varicfaction3741 + 172 - 440 / 750 + 433 - 913;
-}
-
-double z_ducward3743 = 372;
-if(h_multfier3742 * 193 - 67 + 964 >= 44028){
-	z_ducward3743 = h_multfier3742 - 850 / 385;
-}else{
-	z_ducward3743 = h_multfier3742 + 347 - 281 - 205;
-}
-
-double J_askard3744 = 127;
-if(z_ducward3743 - 203 / 438 - 641 == 20627){
-	J_askard3744 = z_ducward3743 - 33 * 194 * 384 / 541 * 943 / 868;
-}else{
-	J_askard3744 = z_ducward3743 + 640 * 755 / 936 - 536 / 689 / 147;
-}
-
-float b_lepido3745 = 8;
-if(J_askard3744 + 68 + 367 / 550 - 632 != 53358){
-	b_lepido3745 = J_askard3744 - 828 * 691 / 465 * 799;
-}else{
-	b_lepido3745 = J_askard3744 - 450 + 124 + 147 * 762 - 978 + 686;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 9590;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 790 + 169 - 701 == 59143){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2528;
-	if(self.flat1440Hesless1441 + 108 + 321 > 85694){ 
-int L_virard3746 = 555;
-int I_bankad3747 = 274;
-switch (L_virard3746) {
-   case 629:
+ }
+		if(self.opacization1430Knowledgeform1431){
+int P_palfill3749 = 650;
+int A_supraaneous3750 = 699;
+switch (P_palfill3749) {
+   case 822:
 			{
-				L_virard3746 = I_bankad3747 - 60 + 47 - 883 + 9; 
+				P_palfill3749 = A_supraaneous3750 - 216 - 605 * 837 + 309 + 47; 
 			 break;
 			}
-			case 557:
+			case -88:
 			{
-				L_virard3746 = I_bankad3747 - 307 + 829 * 587 - 333; 
+				P_palfill3749 = A_supraaneous3750 - 47 + 971 / 627 + 239 - 58; 
+			 break;
+			}
+			case 461:
+			{
+				P_palfill3749 = A_supraaneous3750 * 748 / 944 - 242 / 956 - 621; 
+			 break;
+			}
+			case 481:
+			{
+				P_palfill3749 = A_supraaneous3750 * 598 / 653 * 937 + 102 * 120; 
+			 break;
+			}
+			case 185:
+			{
+				P_palfill3749 = A_supraaneous3750 + 927 + 564 * 97 * 563; 
 			 break;
 			}
 			case -78:
 			{
-				L_virard3746 = I_bankad3747 * 485 / 44 - 453 * 798 + 811; 
+				P_palfill3749 = A_supraaneous3750 * 99 / 852 * 954 - 666 - 157 / 220; 
 			 break;
 			}
-			case 778:
+			case 819:
 			{
-				L_virard3746 = I_bankad3747 - 548 / 857 + 508 * 778 * 539 + 266; 
+				P_palfill3749 = A_supraaneous3750 * 282 * 746 * 603 / 756 + 565 * 242; 
 			 break;
 			}
-			case 342:
+			case 149:
 			{
-				L_virard3746 = I_bankad3747 - 689 / 39 / 733 / 574 + 53; 
+				P_palfill3749 = A_supraaneous3750 + 802 / 874 - 348; 
+			 break;
+			}
+			case 75:
+			{
+				P_palfill3749 = A_supraaneous3750 - 682 / 86 + 951 - 642; 
+			 break;
+			}
+			case 953:
+			{
+				P_palfill3749 = A_supraaneous3750 * 510 - 560 + 176 / 344 - 260 * 378; 
+			 break;
+			}
+			case 166:
+			{
+				P_palfill3749 = A_supraaneous3750 - 415 * 586; 
 			 break;
 			}
 			   default:
        break;
 			}
- }
-	self.aristary1442Agoar1443 = 4086;
-	if(self.aristary1442Agoar1443 * 379 / 604 + 869 != 90469){ 
-int F_publicster3748 = 976;
-float z_quality3749 = 366;
-switch (F_publicster3748) {
-   case 343:
+}
+	self.civilast1432Stratalongular1433 = 5239;
+	if(self.civilast1432Stratalongular1433 * 996 - 603 > 54044){}
+		if(self.inad1434Simpleive1435){
+int w_representule3751 = 773;
+double Y_becausekin3752 = 656;
+switch (w_representule3751) {
+   case 54:
 			{
-				F_publicster3748 = z_quality3749 * 829 - 947 - 479 / 517 / 231 + 44; 
+				w_representule3751 = Y_becausekin3752 * 774 + 693; 
 			 break;
 			}
-			case 690:
+			case 153:
 			{
-				F_publicster3748 = z_quality3749 + 278 / 430 + 327 - 531 / 723 + 941; 
+				w_representule3751 = Y_becausekin3752 * 869 - 197 - 731; 
 			 break;
 			}
-			case 672:
+			case 454:
 			{
-				F_publicster3748 = z_quality3749 - 107 * 859 * 761 - 4 - 789; 
+				w_representule3751 = Y_becausekin3752 * 701 * 945 / 994 / 842 / 425; 
 			 break;
 			}
-			case 141:
+			case 877:
 			{
-				F_publicster3748 = z_quality3749 - 761 - 497; 
-			 break;
-			}
-			case 255:
-			{
-				F_publicster3748 = z_quality3749 * 595 * 777; 
-			 break;
-			}
-			case 812:
-			{
-				F_publicster3748 = z_quality3749 + 467 + 701; 
-			 break;
-			}
-			case 522:
-			{
-				F_publicster3748 = z_quality3749 * 210 * 957 - 867 * 500 / 318; 
-			 break;
-			}
-			case 104:
-			{
-				F_publicster3748 = z_quality3749 + 362 * 200 - 225 - 416 + 833; 
-			 break;
-			}
-			case 506:
-			{
-				F_publicster3748 = z_quality3749 - 797 * 379 * 30 - 358 - 731; 
-			 break;
-			}
-			case 197:
-			{
-				F_publicster3748 = z_quality3749 + 239 * 501 / 619 / 915 * 247; 
-			 break;
-			}
-			case 733:
-			{
-				F_publicster3748 = z_quality3749 - 467 - 480 - 732 + 988; 
+				w_representule3751 = Y_becausekin3752 - 659 * 813 * 844 - 118 * 689; 
 			 break;
 			}
 			   default:
        break;
 			}
- }
-	self.culturalaceous1444Broncher1445 = 8710;
-	if(self.culturalaceous1444Broncher1445 - 587 + 176 * 939 - 504 <= 16974){}
-		if(self.phemwise1446Lowfaction1447){
-int c_aboveive3750 = 1218;
+}
+        
+        NSDictionary *trecentitor3703Againstfic3704 = @{@"spicosity3715" : @"penn3716", @"queritious3717" : @(92240), @"hypocurrentice3719" : @(77926), @"mathemess3721" : @(63221), @"eofaction3723" : @"couldfold3724", @"paucade3725" : @"postulradioior3726", @"oilive3727" : @(57461), @"uvulowriteuous3729" : @"foundance3730", @"phantitude3731" : @"pageless3732", @"statementfy3733" : @"cand3734", @"cordian3735" : @"opulent3736", @"okaneity3737" : @"fulg3738" };  //temple5
+       if (trecentitor3703Againstfic3704.count < -536){
 
-if(c_aboveive3750 < 7747){
-	float k_ligthatior3751 = c_aboveive3750 - 198 - 158 + 313; 
-if(k_ligthatior3751 >= 6463){
-	int u_aser3752 = k_ligthatior3751 + 301 + 67 * 200 + 229; 
-if(u_aser3752 != 44749){
-	double y_volv3753 = u_aser3752 + 124 + 898 / 321 - 47 * 240 / 286;
-}
-}
-}
-}
-float g_passise3730 = 7324;
+            int startette3707Mostory3708 = 5080;
+            int analysis3711Stayit3712 = 7031;
+            int passasitive3713 = 2476;
+            switch (startette3707Mostory3708) {
+                    
+                case 642:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 977 / 899 / 876; 
+			 break;
+			}
+			case -44:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 882 + 34 - 362 + 644 * 401; 
+			 break;
+			}
+			case 84:
+			{
+				analysis3711Stayit3712 = passasitive3713 + 247 - 926; 
+			 break;
+			}
+			case 853:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 753 / 272; 
+			 break;
+			}
+			case 774:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 616 / 95 + 743 - 396 - 145 + 366; 
+			 break;
+			}
+			case 855:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 20 * 273 / 199 * 767; 
+			 break;
+			}
+			case 168:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 451 - 765 + 681 * 498; 
+			 break;
+			}
+			case 436:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 329 / 351 * 993; 
+			 break;
+			}
+			case -85:
+			{
+				analysis3711Stayit3712 = passasitive3713 + 192 - 818 + 241 + 222 - 296; 
+			 break;
+			}
+			case -68:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 147 + 147 * 83 * 543 - 510; 
+			 break;
+			}
+			case 785:
+			{
+				analysis3711Stayit3712 = passasitive3713 * 364 + 552 / 243; 
+			 break;
+			}
+			case 574:
+			{
+				analysis3711Stayit3712 = passasitive3713 - 229 + 447 * 821 / 956 * 895; 
+			 break;
+			}
+			
+                    
+                default:
+                    break;
+            }
 
-if(g_passise3730 < 13043){
-	float W_uligin3731 = g_passise3730 * 453 * 115 + 742 + 927 - 49; 
-if(W_uligin3731 > 1337){
-	float p_fulminitude3732 = W_uligin3731 + 184 - 511 + 331; 
-if(p_fulminitude3732 < 90819){
-	float f_feelingeous3733 = p_fulminitude3732 - 729 - 540 - 270 + 457; 
-if(f_feelingeous3733 == 18723){
-	float V_quickly3734 = f_feelingeous3733 + 311 * 431 - 33;
-}
-}
-}
-}
+
+        }
+
+        
+
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+        loginData.accessToken = rData.token;
+        loginData.userId = rData.userId;
+        loginData.timestamp = rData.timestamp;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	int Q_42 = [self trade2470Among2471];
+	if(Q_42){}
+
+	self.juniorie1426Aevent1427 = 8511;
+	if(self.juniorie1426Aevent1427 - 562 / 408 + 706 == 9206){}
+	self.ctenee1428Buyry1429 = 5872;
+	if(self.ctenee1428Buyry1429 + 987 / 918 < 76899){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1058;
+	if(self.civilast1432Stratalongular1433 * 334 / 917 * 651 == 71620){}
+		if(self.inad1434Simpleive1435){
+float w_allowator3755 = 8454;
+
+if(w_allowator3755 < 58845){
+	int G_beation3756 = w_allowator3755 * 275 - 710 * 102 + 846 * 823;
+}
+}
+int N_doctorose3753 = 684;
+double B_archsome3754 = 954;
+switch (N_doctorose3753) {
+   case 549:
+			{
+				N_doctorose3753 = B_archsome3754 * 97 + 586 - 68; 
+			 break;
+			}
+			case 498:
+			{
+				N_doctorose3753 = B_archsome3754 * 145 / 281 * 664 * 700 / 316; 
+			 break;
+			}
+			case 407:
+			{
+				N_doctorose3753 = B_archsome3754 + 988 * 687 / 362 / 769 + 192; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+        
+        loginData.isBind = rData.isBind;
+
+		
         loginData.isBindPhone = rData.isBindPhone;
         loginData.loginType = rData.loginType;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	float F_31 = [self rapacship2092Startid2093:nil fideward2094Createous2095:nil ];
+	if(F_31){}
+
+	self.juniorie1426Aevent1427 = 2299;
+	if(self.juniorie1426Aevent1427 - 285 / 985 * 221 - 131 / 735 - 938 < 48542){}
+	self.ctenee1428Buyry1429 = 9615;
+	if(self.ctenee1428Buyry1429 + 46 - 975 * 623 - 233 * 777 - 112 < 31546){}
+		if(self.opacization1430Knowledgeform1431){
+float H_legisless3821 = 9244;
+
+if(H_legisless3821 < 25439){
+	int A_revealably3822 = H_legisless3821 * 272 - 806 / 596 * 487 * 374; 
+if(A_revealably3822 <= 38362){
+	int h_terstic3823 = A_revealably3822 - 759 * 391 - 292 - 746 - 453 - 789; 
+if(h_terstic3823 == 77136){
+	double r_todayette3824 = h_terstic3823 * 596 * 42 + 257; 
+if(r_todayette3824 >= 20424){
+	int G_strictlet3825 = r_todayette3824 - 34 + 165; 
+if(G_strictlet3825 <= 59984){
+	int r_technologytion3826 = G_strictlet3825 * 868 / 385 + 11;
+}
+}
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 2206;
+	if(self.civilast1432Stratalongular1433 + 648 + 831 >= 55386){}
+		if(self.inad1434Simpleive1435){
+int z_halise3827 = 875;
+int x_believe3828 = 893;
+switch (z_halise3827) {
+   case 857:
+			{
+				z_halise3827 = x_believe3828 - 732 / 622 / 326 * 203; 
+			 break;
+			}
+			case -56:
+			{
+				z_halise3827 = x_believe3828 * 195 + 299 + 431; 
+			 break;
+			}
+			case 843:
+			{
+				z_halise3827 = x_believe3828 * 631 / 915 * 155 / 523 - 697; 
+			 break;
+			}
+			case 986:
+			{
+				z_halise3827 = x_believe3828 + 800 + 104 + 762 / 520 - 266 + 881; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+    NSArray *modelenne3757Botanpoor3758 = @[@"sparsie3793_cordi3794", @"threat3795_countereur3796", @"tenac3797_gelatain3798", @"furcee3799_pasteer3800", @"anniproof3801_wifeish3802", @"fingerit3803_rapacihotress3804", @"falcivity3805_acceptly3806", @"linqumonthster3807_fancnaturester3808", @"viti3809_juniorster3810", @"scopeic3811_many3812", @"ligaization3813_sac3814", @"carniteachersome3815_mixt3816", @"worldistic3817_cingI3818", @"co3819_pterably3820" ]; //temple28
+
+          int ceasing3759Withoutsion3760 = modelenne3757Botanpoor3758.count;
+         int nextia3763Toughance3764 = (int)ceasing3759Withoutsion3760;
+         int postaire3767Forward3768 = 3960;
+         int primoy3769Merism3770 = 5963;
+         if (nextia3763Toughance3764 < primoy3769Merism3770) {
+             nextia3763Toughance3764 = primoy3769Merism3770;
+         }
+         while (postaire3767Forward3768 <= nextia3763Toughance3764) {
+            postaire3767Forward3768 += 1;
+            nextia3763Toughance3764 /= postaire3767Forward3768;
+            nextia3763Toughance3764 += 924;
+            break;
+         }
+          [modelenne3757Botanpoor3758 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+              if (idx <= 5338) {
+                  NSLog(@"enumerateObjectsUsingBlock:%@", obj);
+            }
+          }];
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         
         loginData.sign = rData.sign;
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSMutableArray * Y_50 = [self onization1831Sometimesie1832:nil tors1833Amphacious1834:nil menslike1835Gymnrecentlyer1836:nil acttic1837Large1838:2009 remember1839Fruct1840:102 includingar1841Millen1842:nil natatic1843Mortment1844:9451 sacrition1845Current1846:@"trichally3757Hitability3758" ];
-	if(Y_50){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-float T_cystad3759 = 8961;
-
-int P_doctorot3760 = 640;
-if(T_cystad3759 - 626 - 867 != 34631){
-	P_doctorot3760 = T_cystad3759 - 485 / 586 / 738 / 972 - 286 / 469;
-}else{
-	P_doctorot3760 = T_cystad3759 + 446 - 180 - 919 / 561 * 555;
-}
-
-double h_findarian3761 = 527;
-if(P_doctorot3760 - 6 + 120 - 370 == 9535){
-	h_findarian3761 = P_doctorot3760 + 764 + 904 / 962;
-}else{
-	h_findarian3761 = P_doctorot3760 - 234 - 787 + 867 * 466;
-}
-
-double y_motherarium3762 = 721;
-if(h_findarian3761 - 159 + 799 + 758 > 79989){
-	y_motherarium3762 = h_findarian3761 + 460 * 472 + 753;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 9648;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 7 - 484 + 54 < 81110){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5873;
-	if(self.flat1440Hesless1441 + 467 + 593 <= 70673){}
-	self.aristary1442Agoar1443 = 8708;
-	if(self.aristary1442Agoar1443 + 699 + 219 * 340 == 88457){}
-	self.culturalaceous1444Broncher1445 = 2445;
-	if(self.culturalaceous1444Broncher1445 - 168 - 341 == 4935){}
-		if(self.phemwise1446Lowfaction1447){}
-float n_hetertoday3754 = 6524;
-
-if(n_hetertoday3754 < 33156){
-	double w_anthropern3755 = n_hetertoday3754 + 23 * 576 / 666; 
-if(w_anthropern3755 > 4994){
-	double u_veryast3756 = w_anthropern3755 + 208 - 399;
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         loginData.telephone = rData.telephone;
         loginData.loginId = rData.loginId;
         
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+        if (mMWBlock) {
+            mMWBlock(YES, loginData);
+        }
+        
+    } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSArray * x_23 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:6011 plaud1671Past1672:4958 ];
-	if(x_23){}
+	NSURL * l_11 = [self antitic2163Cinctonative2164:@"sternfy3833Communityive3834" hangacious2165Newise2166:7893 tostaneity2167Palliian2168:nil crescion2169Nephrbabyly2170:nil longization2171Plor2172:nil ];
+	if(l_11){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8700;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 734 / 338 / 299 + 102 >= 87111){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6075;
-	if(self.flat1440Hesless1441 - 255 - 345 / 345 != 40446){}
-	self.aristary1442Agoar1443 = 9973;
-	if(self.aristary1442Agoar1443 * 209 - 718 <= 60653){}
-	self.culturalaceous1444Broncher1445 = 7110;
-	if(self.culturalaceous1444Broncher1445 * 632 - 528 / 156 != 64789){}
-		if(self.phemwise1446Lowfaction1447){
-int y_piscer3769 = 144;
-int e_firstile3770 = 908;
-switch (y_piscer3769) {
-   case 295:
+	self.juniorie1426Aevent1427 = 1295;
+	if(self.juniorie1426Aevent1427 - 753 * 448 / 741 * 709 != 71212){}
+	self.ctenee1428Buyry1429 = 2509;
+	if(self.ctenee1428Buyry1429 - 61 * 748 / 958 + 54 <= 69784){ 
+int V_timety3835 = 11;
+float x_septuagintcy3836 = 998;
+switch (V_timety3835) {
+   case 437:
 			{
-				y_piscer3769 = e_firstile3770 * 354 + 201 * 834; 
+				V_timety3835 = x_septuagintcy3836 + 89 + 491 + 497 - 456; 
 			 break;
 			}
-			case 176:
+			case 395:
 			{
-				y_piscer3769 = e_firstile3770 * 359 - 35 + 153 + 693 + 509; 
-			 break;
-			}
-			case 668:
-			{
-				y_piscer3769 = e_firstile3770 - 119 / 710 * 575 * 876 * 442; 
+				V_timety3835 = x_septuagintcy3836 * 761 + 591 - 852 * 172 + 355 - 632; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-float E_remainorium3767 = 2217;
-
-float Z_ageaneous3768 = 894;
-if(E_remainorium3767 * 86 * 581 != 17603){
-	Z_ageaneous3768 = E_remainorium3767 + 643 - 429 + 982 + 909;
-}else{
-	Z_ageaneous3768 = E_remainorium3767 * 996 - 194 * 632 + 199 * 7;
-}
-
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4008;
+	if(self.civilast1432Stratalongular1433 - 657 + 899 / 166 / 809 + 253 <= 42891){}
+		if(self.inad1434Simpleive1435){}
+int j_form3831 = 979;
+float V_myance3832 = 429;
+switch (j_form3831) {
+   case 396:
+			{
+				j_form3831 = V_myance3832 * 631 / 659; 
+			 break;
+			}
+			case 947:
+			{
+				j_form3831 = V_myance3832 * 803 - 639; 
+			 break;
+			}
+			case 165:
+			{
+				j_form3831 = V_myance3832 * 393 / 873 + 678 - 197 / 110 / 329; 
+			 break;
+			}
+			case 726:
+			{
+				j_form3831 = V_myance3832 * 646 / 768; 
+			 break;
+			}
+			case 754:
+			{
+				j_form3831 = V_myance3832 - 845 - 863 + 865 - 671 / 160 - 260; 
+			 break;
+			}
+			   default:
+       break;
+			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        if (mMWBlock) {
-            mMWBlock(YES, loginData);
-        }
-        
-    } errorBlock_MMMethodMMM:^(HardMere *error) {
         if (mMWBlock) {
             mMWBlock(NO, error.message);
         }
@@ -9079,6 +7098,25 @@ if(E_remainorium3767 * 86 * 581 != 17603){
     
 }
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (float)rapacship2092Startid2093:(NSURL *)rapacship2092_1 fideward2094Createous2095:(NSURL *)fideward2094_2{ //insert method
+	      
+      
+      int imicible2098Scensful2099[ 7665 ]; //commontemple21
+    
+      // 初始化数组元素          
+      for ( int i = 0; i < 7665; i++ )
+      {
+         imicible2098Scensful2099[ i ] = i + 5455; // 设置元素 i 为 i + 100
+         
+      }
+
+ 
+	float A_26 = 73245;
+	return A_26;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)openCsWithRoleId:(NSString *)roleId
                  roleName:(NSString *)roleName
                 roleLevel:(NSString *)roleLevel
@@ -9088,108 +7126,277 @@ if(E_remainorium3767 * 86 * 581 != 17603){
 {
     
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long g_6 = [self indeedtion1645Anthropdaughter1646:@"phileious3785Cylindery3786" fallacy1647Seriesator1648:2768 ];
-	if(g_6){}
+	NSObject * H_33 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:4226 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(H_33){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8271;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 340 - 111 <= 93258){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2564;
-	if(self.flat1440Hesless1441 * 106 - 180 * 503 - 562 - 961 / 846 >= 26517){}
-	self.aristary1442Agoar1443 = 652;
-	if(self.aristary1442Agoar1443 * 233 / 989 - 115 / 339 <= 83320){}
-	self.culturalaceous1444Broncher1445 = 2406;
-	if(self.culturalaceous1444Broncher1445 + 414 * 454 / 179 - 89 - 580 * 183 != 79244){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSInteger emsion3775Fals3776 = 1012;  //commontemple7
-        BOOL orexience3777Retro3778 = NO;
-        if (emsion3775Fals3776 > 413){
-            
-            orexience3777Retro3778 = NO;
-        }else{
-            orexience3777Retro3778 = NO;
-        }
+	self.juniorie1426Aevent1427 = 4022;
+	if(self.juniorie1426Aevent1427 - 969 * 921 > 33141){}
+	self.ctenee1428Buyry1429 = 5158;
+	if(self.ctenee1428Buyry1429 - 381 * 94 - 818 / 50 + 169 - 540 >= 5323){}
+		if(self.opacization1430Knowledgeform1431){
+double s_biain3861 = 712;
 
-        
+if(s_biain3861 >= 72420){
+	double d_mnemon3862 = s_biain3861 * 601 / 104; 
+if(d_mnemon3862 != 32370){
+	int S_ventenne3863 = d_mnemon3862 + 625 - 567; 
+if(S_ventenne3863 >= 2020){
+	float g_sexaneity3864 = S_ventenne3863 - 62 / 713; 
+if(g_sexaneity3864 > 54705){
+	double u_familyless3865 = g_sexaneity3864 + 157 / 840 - 481; 
+if(u_familyless3865 > 11060){
+	float x_jutmost3866 = u_familyless3865 + 74 - 554 / 907 - 89 * 271;
+}
+}
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 5555;
+	if(self.civilast1432Stratalongular1433 + 999 * 869 > 87867){}
+		if(self.inad1434Simpleive1435){}
+   
+      // 局部变量声明
+      int careeret3839Televisionize3840 = 3134;
+      int trainingics3841Scabrular3842 = 195;
+      int ungulette3843Pachar3844;
+      
+      if(trainingics3841Scabrular3842 > careeret3839Televisionize3840){
+         // 调用函数来获取最大值
+         ungulette3843Pachar3844 = fmax(trainingics3841Scabrular3842, careeret3839Televisionize3840);
+      }else{
+         ungulette3843Pachar3844 = fmin(trainingics3841Scabrular3842, careeret3839Televisionize3840);
+      }
+     
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:roleId]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:roleId]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
         return;
     }
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:serverCode]) {
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSString * g_6 = [self fatherfier1988Script1989:@"leoness3794Maybeing3795" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(g_6){}
+	NSURL * q_16 = [self dignacious2384Windia2385:@"phalarorium3882Trinmediaency3883" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:1100 member2392Standardify2393:nil weaponible2394Noticeacle2395:6966 price2396Hair2397:5871 epfic2398Bed2399:9447 ];
+	if(q_16){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-float Z_personeur3796 = 9236;
+	self.juniorie1426Aevent1427 = 9808;
+	if(self.juniorie1426Aevent1427 + 995 * 840 * 942 * 440 - 268 / 83 != 4156){ 
+double a_selfacious3884 = 1702;
 
-if(Z_personeur3796 <= 23395){
-	int B_dermful3797 = Z_personeur3796 + 451 + 554; 
-if(B_dermful3797 <= 5195){
-	int I_wrongesque3798 = B_dermful3797 * 916 + 330; 
-if(I_wrongesque3798 < 86945){
-	double a_fatia3799 = I_wrongesque3798 * 885 * 791 - 38; 
-if(a_fatia3799 >= 76457){
-	double r_ticel3800 = a_fatia3799 * 939 * 390 + 124 / 617 - 599 - 602; 
-if(r_ticel3800 < 83627){
-	double R_sper3801 = r_ticel3800 * 172 - 281 - 420 / 737 * 813 - 726;
+float b_vectist3885 = 192;
+if(a_selfacious3884 - 896 / 798 - 90 - 722 / 297 == 23046){
+	b_vectist3885 = a_selfacious3884 * 169 * 999 * 363 - 865;
 }
-}
-}
-}
-}
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 4618;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 426 - 233 / 229 / 78 - 281 > 36513){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 438;
-	if(self.flat1440Hesless1441 - 722 - 606 + 404 > 65023){}
-	self.aristary1442Agoar1443 = 6738;
-	if(self.aristary1442Agoar1443 * 981 * 373 - 268 == 12633){}
-	self.culturalaceous1444Broncher1445 = 3376;
-	if(self.culturalaceous1444Broncher1445 + 306 / 574 - 857 * 66 > 48961){}
-		if(self.phemwise1446Lowfaction1447){
-float F_butoon3802 = 6267;
 
-if(F_butoon3802 >= 61528){
-	double S_behindacy3803 = F_butoon3802 + 271 / 542 - 68 * 176 - 853; 
-if(S_behindacy3803 != 49823){
-	int y_fanety3804 = S_behindacy3803 + 71 + 312 + 163 * 965; 
-if(y_fanety3804 >= 23523){
-	float E_nominile3805 = y_fanety3804 + 273 + 709 / 551 / 509;
+int b_pterwindowling3886 = 244;
+if(b_vectist3885 + 991 + 456 / 295 / 351 > 14966){
+	b_pterwindowling3886 = b_vectist3885 * 912 + 146;
 }
-}
-}
-}
-int z_omaful3789 = 7231;
 
-if(z_omaful3789 == 69305){
-	int U_plicarian3790 = z_omaful3789 * 146 + 404; 
-if(U_plicarian3790 >= 31901){
-	double i_homolikeing3791 = U_plicarian3790 * 152 / 721 + 305 * 61; 
-if(i_homolikeing3791 <= 34967){
-	double E_getitude3792 = i_homolikeing3791 + 235 - 442 * 785 + 834; 
-if(E_getitude3792 < 37227){
-	double I_fethood3793 = E_getitude3792 - 417 * 886 / 318;
+int R_opinery3887 = 399;
+if(b_pterwindowling3886 * 159 * 756 / 563 + 395 == 49369){
+	R_opinery3887 = b_pterwindowling3886 + 880 / 403 + 841 + 2 - 782;
 }
+
+int N_vellular3888 = 957;
+if(R_opinery3887 - 452 - 213 / 460 + 601 < 15313){
+	N_vellular3888 = R_opinery3887 - 761 + 927;
+}else{
+	N_vellular3888 = R_opinery3887 - 70 + 922 * 572;
 }
+
+double C_upon3889 = 894;
+if(N_vellular3888 * 256 * 232 * 260 - 848 * 245 * 815 == 56138){
+	C_upon3889 = N_vellular3888 - 977 + 543;
 }
+
+float P_explain3890 = 191;
+if(C_upon3889 + 753 + 10 / 477 * 41 * 979 != 7079){
+	P_explain3890 = C_upon3889 - 688 / 87 / 217;
+}else{
+	P_explain3890 = C_upon3889 + 661 + 246;
 }
+
+double Z_ectomyly3891 = 590;
+if(P_explain3890 + 218 - 365 + 722 + 724 * 559 * 839 <= 12084){
+	Z_ectomyly3891 = P_explain3890 + 785 + 110 * 421;
+}else{
+	Z_ectomyly3891 = P_explain3890 + 745 - 154 + 552 + 17 / 644 + 264;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 8796;
+	if(self.ctenee1428Buyry1429 + 610 / 770 + 677 / 352 / 440 > 20751){}
+		if(self.opacization1430Knowledgeform1431){
+double a_aphator3892 = 7412;
+
+int K_gashood3893 = 363;
+if(a_aphator3892 + 390 + 541 <= 23138){
+	K_gashood3893 = a_aphator3892 + 177 / 786 / 482 * 166;
+}else{
+	K_gashood3893 = a_aphator3892 - 516 * 292 - 988;
+}
+
+int y_supportic3894 = 750;
+if(K_gashood3893 - 87 * 359 > 71046){
+	y_supportic3894 = K_gashood3893 + 850 * 115 / 590 - 994;
+}else{
+	y_supportic3894 = K_gashood3893 - 910 + 349 - 915 - 214 * 780;
+}
+
+int C_genesory3895 = 347;
+if(y_supportic3894 * 700 * 12 * 131 == 63863){
+	C_genesory3895 = y_supportic3894 - 658 / 639;
+}else{
+	C_genesory3895 = y_supportic3894 * 838 * 471;
+}
+
+double R_homscoreade3896 = 190;
+if(C_genesory3895 * 314 - 986 - 566 <= 97033){
+	R_homscoreade3896 = C_genesory3895 * 567 + 855 / 214 * 55 + 515 + 980;
+}else{
+	R_homscoreade3896 = C_genesory3895 - 7 - 628 / 524;
+}
+
+int k_arbor3897 = 283;
+if(R_homscoreade3896 * 870 + 472 > 93670){
+	k_arbor3897 = R_homscoreade3896 * 905 - 90 * 882 - 729 / 336 - 676;
+}else{
+	k_arbor3897 = R_homscoreade3896 - 42 * 839 - 309 / 156 / 150;
+}
+
+double D_centative3898 = 659;
+if(k_arbor3897 + 479 / 800 >= 27130){
+	D_centative3898 = k_arbor3897 - 265 * 703 * 67 - 203 * 7 * 330;
+}
+
+int c_firmety3899 = 354;
+if(D_centative3898 * 521 / 267 + 792 - 782 + 578 + 706 >= 66367){
+	c_firmety3899 = D_centative3898 - 173 - 906 + 192 + 223 + 58 * 177;
+}
+
+int S_pancreatuous3900 = 719;
+if(c_firmety3899 + 569 / 197 / 845 - 399 > 64543){
+	S_pancreatuous3900 = c_firmety3899 + 608 + 181 + 486 - 542;
+}else{
+	S_pancreatuous3900 = c_firmety3899 + 313 + 497 + 469 / 590 + 262;
+}
+
+}
+	self.civilast1432Stratalongular1433 = 601;
+	if(self.civilast1432Stratalongular1433 - 117 / 412 + 435 * 231 / 958 / 250 <= 29980){ 
+double n_solenmyacity3901 = 2399;
+
+int O_apert3902 = 938;
+if(n_solenmyacity3901 * 551 / 361 + 565 * 6 * 537 == 53516){
+	O_apert3902 = n_solenmyacity3901 * 304 / 874 / 553;
+}else{
+	O_apert3902 = n_solenmyacity3901 - 235 - 980 + 81 + 728;
+}
+
+float O_veni3903 = 57;
+if(O_apert3902 - 708 / 827 + 326 != 150){
+	O_veni3903 = O_apert3902 + 740 + 241 + 348 / 52 / 950;
+}else{
+	O_veni3903 = O_apert3902 - 73 - 398 * 361 - 101 / 26 * 943;
+}
+
+float M_oncoment3904 = 917;
+if(O_veni3903 * 600 + 708 > 59888){
+	M_oncoment3904 = O_veni3903 * 377 - 99 - 945 / 686 / 698;
+}else{
+	M_oncoment3904 = O_veni3903 * 348 + 974 * 410 + 49 - 798 - 333;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+float E_sparseducationity3869 = 1850;
+
+int w_predical3870 = 574;
+if(E_sparseducationity3869 - 576 + 333 == 66334){
+	w_predical3870 = E_sparseducationity3869 * 653 + 784 + 441;
+}
+
+float J_caldrighthood3871 = 657;
+if(w_predical3870 - 554 * 999 / 539 + 653 <= 88151){
+	J_caldrighthood3871 = w_predical3870 * 780 / 876;
+}
+
+int J_supraoveraneous3872 = 603;
+if(J_caldrighthood3871 + 187 * 818 + 923 / 912 - 718 + 3 >= 39173){
+	J_supraoveraneous3872 = J_caldrighthood3871 - 487 / 729 * 118 - 415 - 529;
+}
+
+double m_plurimacity3873 = 871;
+if(J_supraoveraneous3872 + 236 * 218 * 467 / 627 + 160 > 32154){
+	m_plurimacity3873 = J_supraoveraneous3872 + 161 - 320;
+}
+
+double d_pedooneal3874 = 461;
+if(m_plurimacity3873 + 466 + 519 - 14 < 71880){
+	d_pedooneal3874 = m_plurimacity3873 * 548 * 33 * 210 * 827 * 992;
+}else{
+	d_pedooneal3874 = m_plurimacity3873 * 736 / 526;
+}
+
+int w_kleptsecurityator3875 = 476;
+if(d_pedooneal3874 - 968 * 579 > 36399){
+	w_kleptsecurityator3875 = d_pedooneal3874 * 476 / 325 + 468;
+}
+
+int x_pictureious3876 = 942;
+if(w_kleptsecurityator3875 * 642 + 681 - 214 >= 81080){
+	x_pictureious3876 = w_kleptsecurityator3875 + 733 * 527 * 949 + 708 - 486;
+}
+
+float A_cinian3877 = 737;
+if(x_pictureious3876 - 523 - 416 >= 76700){
+	A_cinian3877 = x_pictureious3876 * 792 * 496 * 331 / 821;
+}
+
+double t_behindfold3878 = 622;
+if(A_cinian3877 + 874 - 366 < 13724){
+	t_behindfold3878 = A_cinian3877 * 487 - 259 / 317 + 716;
+}else{
+	t_behindfold3878 = A_cinian3877 - 287 + 350 * 981 / 31;
+}
+
+int a_businessature3879 = 483;
+if(t_behindfold3878 - 710 * 569 * 871 / 436 / 142 > 16095){
+	a_businessature3879 = t_behindfold3878 * 544 + 850 / 537;
+}else{
+	a_businessature3879 = t_behindfold3878 - 229 / 90;
+}
+
+float j_everythinguous3880 = 101;
+if(a_businessature3879 + 866 - 171 / 556 / 48 + 174 < 72451){
+	j_everythinguous3880 = a_businessature3879 - 288 * 588 * 291 * 149;
+}else{
+	j_everythinguous3880 = a_businessature3879 + 26 * 680;
+}
+
+int V_theetic3881 = 294;
+if(j_everythinguous3880 * 328 * 548 == 29452){
+	V_theetic3881 = j_everythinguous3880 - 380 - 903 + 566 * 206;
+}else{
+	V_theetic3881 = j_everythinguous3880 + 181 / 570 * 114 / 220 * 353;
+}
+
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:serverCode]) {
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
         return;
     }
     
@@ -9200,226 +7407,272 @@ if(E_getitude3792 < 37227){
 }
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (long)firstular1951Arcsuccessproof1952:(UIApplication *)firstular1951_1 cephaloular1953Hardety1954:(NSString *)cephaloular1953_2 policior1955Syor1956:(int)policior1955_3 vulnerity1957Sendise1958:(NSURL *)vulnerity1957_4{ //insert method
-	if(cephaloular1953_2){
-		int P_quinable1961 = 9783;
 
-if(P_quinable1961 <= 10460){
-	double a_mustechnology1962 = P_quinable1961 + 587 / 935 / 993 * 695 + 918 / 441; 
-if(a_mustechnology1962 == 90182){
-	int q_get1963 = a_mustechnology1962 * 511 / 187 / 399 * 381;
-}
-}
+//===insert my method start=== 2024-01-12 12:51:44
+- (long)exterard2102Menstruize2103:(NSDictionary *)exterard2102_1 falsile2104Spergbenefitish2105:(NSDictionary *)falsile2104_2 tentpressureice2106Parthenness2107:( UNNotificationTrigger *)tentpressureice2106_3 fidel2108Rubrfic2109:(NSURL *)fidel2108_4 viscoist2110Enjoyitude2111:(int)viscoist2110_5 pecuofficialy2112Juvenfy2113:(NSObject *)pecuofficialy2112_6 saluty2114Televisionical2115:(long)saluty2114_7{ //insert method
+	if(exterard2102_1){
+		    
+
+      int aphbodyorium2116Fact2117[ 5542 ]; //commontemple22 // n 是一个包含 10 个整数的数组
+    
+      // 初始化数组元素          
+      for ( int i = 0; i < 5542; i++ )
+      {
+         aphbodyorium2116Fact2117[ i ] = i + 776; // 设置元素 i 为 i + 100
+         if(i < 7140)
+         {
+            
+            break;
+         }
+      }
+
 	}
-	if(vulnerity1957_4){
-		        int heartty1964Powerster1965 = 1401;  //commontemple16
-        int thanward1978Petrfic1979 = 8777;
-        int chanceth1980 = 8409;
-        switch (heartty1964Powerster1965) {
-                
-            case 370:
-			{
-				thanward1978Petrfic1979 = chanceth1980 + 278 * 605 + 414 - 207; 
-			 break;
-			}
-			case 116:
-			{
-				thanward1978Petrfic1979 = chanceth1980 - 65 / 366 * 268 * 166 * 32 * 782; 
-			 break;
-			}
-			case 244:
-			{
-				thanward1978Petrfic1979 = chanceth1980 * 144 + 126; 
-			 break;
-			}
-			case 804:
-			{
-				thanward1978Petrfic1979 = chanceth1980 - 328 / 175 * 109 + 869 / 112; 
-			 break;
-			}
-			case 218:
-			{
-				thanward1978Petrfic1979 = chanceth1980 * 468 - 775 * 741 + 497 - 896 - 719; 
-			 break;
-			}
-			case 49:
-			{
-				thanward1978Petrfic1979 = chanceth1980 + 58 * 503 + 592 + 44 / 73 + 554; 
-			 break;
-			}
-			case 197:
-			{
-				thanward1978Petrfic1979 = chanceth1980 * 557 / 355 - 163 + 967 - 769 / 113; 
-			 break;
-			}
-			case 822:
-			{
-				thanward1978Petrfic1979 = chanceth1980 + 363 + 902 * 925; 
-			 break;
-			}
-			
-                
-            default:
+	if(falsile2104_2){
+		        
+        CGFloat pancreatspeak2120Followive2121 = 7971;  //commontemple2
+        CGFloat responsibilityful2122Thereor2123 = 8375;
+
+        BOOL bluefold2124Cosm2125 = YES;
+        while (pancreatspeak2120Followive2121 < 6653)
+        {
+            pancreatspeak2120Followive2121 = pancreatspeak2120Followive2121 + 1664;
+            bluefold2124Cosm2125 = YES;
+            if(bluefold2124Cosm2125){
                 break;
+            }
         }
-        BOOL liquidshoulderfic1968Pressureise1969 = NO;
-        int leastial1970Intraade1971 = 1401;
-        if (liquidshoulderfic1968Pressureise1969){
-                        float brontious1984Beatit1985 = 9833.0;  //temple25
-            if (@(brontious1984Beatit1985).doubleValue == 4042) {}
-            leastial1970Intraade1971 = leastial1970Intraade1971 + thanward1978Petrfic1979;
-        }
+
+        pancreatspeak2120Followive2121 = responsibilityful2122Thereor2123 + 8465 ;
+        bluefold2124Cosm2125 = NO;
+	}
+	if(tentpressureice2106_3){
+		      
+      
+    int imicatic2142Politicsably2143;   //commontemple20
+    int alsoid2144Tachyhavefic2145 = 3327;
+    int boardress2146Believe2147 = 5612;
+
+    if (alsoid2144Tachyhavefic2145 != boardress2146Believe2147){
+        imicatic2142Politicsably2143 = alsoid2144Tachyhavefic2145;
+    }else{
+        imicatic2142Politicsably2143 = boardress2146Believe2147;
+    }
         
-        
+
+
+	}
+	if(fidel2108_4){
+		float g_however2160 = 5659;
+
+float g_manthemlongkin2161 = 811;
+if(g_however2160 * 366 * 538 - 910 / 138 > 34675){
+	g_manthemlongkin2161 = g_however2160 * 87 * 503 / 805 / 401;
+}else{
+	g_manthemlongkin2161 = g_however2160 * 945 * 100 + 768 - 670;
+}
+
+int T_vehine2162 = 741;
+if(g_manthemlongkin2161 - 272 / 228 - 84 + 45 <= 10978){
+	T_vehine2162 = g_manthemlongkin2161 * 722 - 490 / 120 / 82 + 770 + 994;
+}else{
+	T_vehine2162 = g_manthemlongkin2161 * 349 + 231 / 626;
+}
+
 	}
  
-	long q_16 = 65052;
-	return q_16;
+	return saluty2114_7;
 }
-//===insert my method end=== 2023-12-13 18:35:09
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)openCs
 {
     SDK_LOG(wwwww_tag_wwwww_openCs__);
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSObject * Y_50 = [self findfaction1554Less1555];
-	if(Y_50){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9894;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 373 - 524 / 126 <= 19595){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3639;
-	if(self.flat1440Hesless1441 - 850 - 480 == 22698){}
-	self.aristary1442Agoar1443 = 5900;
-	if(self.aristary1442Agoar1443 * 41 - 334 * 269 + 134 / 552 >= 10945){}
-	self.culturalaceous1444Broncher1445 = 4686;
-	if(self.culturalaceous1444Broncher1445 - 389 * 609 / 298 >= 69051){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSArray *atoon3810Pereur3811 = @[@"purpurar3814_longosity3815", @"pyg3816_lightacious3817", @"agri3818_firstular3819", @"raisearian3820_megess3821", @"sexibility3822_protooon3823", @"treatal3824_alwaysate3825", @"quartier3826_quindenfinallyid3827", @"companyern3828_fornicaire3829", @"humize3830_calliance3831", @"stalagmhood3832_issue3833", @"onlyad3834_writekin3835", @"tachpartner3836_audac3837", @"genitics3838_kudoal3839", @"flamal3840_accordingite3841", @"dotcarfic3842_dolorasast3843" ];   //temple14
-        if (atoon3810Pereur3811){
-        }
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
         return;
     }
     
     [self openCsWithParams:nil];
 }
 
+
+//===insert my method start=== 2024-01-12 12:51:44
+- ( NSString *)getally2215Manianone2216:(NSURL *)getally2215_1 produceical2217Resourcemost2218:(NSString *)produceical2217_2 directionment2219Lamin2220:( UNNotificationTrigger *)directionment2219_3{ //insert method
+	if(directionment2219_3){
+		        
+        NSInteger sagaceverybodyate2223Addressair2224 = -761;  //commontemple10
+        int etymence2225Verbling2226 = 5055;
+
+        for(int riguous2227Chiroee2228 = 194; riguous2227Chiroee2228 < 7450; riguous2227Chiroee2228 = riguous2227Chiroee2228 + 1)
+        {    
+            etymence2225Verbling2226 = etymence2225Verbling2226++;
+        }
+        
+	}
+ 
+	 NSString *f_5 = nil;
+	return f_5;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSURL *)antitic2163Cinctonative2164:(NSString *)antitic2163_1 hangacious2165Newise2166:(float)hangacious2165_2 tostaneity2167Palliian2168:(UIWindow *)tostaneity2167_3 crescion2169Nephrbabyly2170:(NSMutableArray *)crescion2169_4 longization2171Plor2172:( NSString *)longization2171_5{ //insert method
+	if(antitic2163_1){
+		float x_ungulitude2175 = 8960;
+
+if(x_ungulitude2175 < 77472){
+	int M_pterynationalic2176 = x_ungulitude2175 - 736 - 226 - 232 - 236; 
+if(M_pterynationalic2176 == 81264){
+	int B_smileth2177 = M_pterynationalic2176 + 988 - 631 / 257 + 480 - 947; 
+if(B_smileth2177 > 12180){
+	float l_leastetic2178 = B_smileth2177 - 939 * 795 + 51 - 464 / 506; 
+if(l_leastetic2178 < 14038){
+	int z_whoar2179 = l_leastetic2178 - 552 * 273;
+}
+}
+}
+}
+	}
+	if(hangacious2165_2 - 883 + 677 / 102 * 458 < 30002){
+		   
+      // 局部变量声明
+      int withaceous2180Phren2181 = 2338;
+      int still2182Generlaw2183 = 2326;
+      int quadrite2184Deadster2185;
+      
+      if(still2182Generlaw2183 != withaceous2180Phren2181){
+         // 调用函数来获取最大值
+         quadrite2184Deadster2185 = fmax(still2182Generlaw2183, withaceous2180Phren2181);
+      }
+     
+	}
+	if(tostaneity2167_3){
+		float d_tricearly2196 = 2381;
+
+double x_phalarinsive2197 = 385;
+if(d_tricearly2196 - 50 - 26 / 20 - 556 * 813 - 580 != 20944){
+	x_phalarinsive2197 = d_tricearly2196 * 917 * 902;
+}
+
+float U_caesage2198 = 752;
+if(x_phalarinsive2197 * 741 * 196 - 756 != 42009){
+	U_caesage2198 = x_phalarinsive2197 - 771 + 853;
+}else{
+	U_caesage2198 = x_phalarinsive2197 * 765 - 728 + 567 * 574;
+}
+
+double o_sinistrule2199 = 144;
+if(U_caesage2198 * 722 * 595 < 67854){
+	o_sinistrule2199 = U_caesage2198 + 942 - 616 + 652 + 336 + 51 * 763;
+}
+
+float B_mayhood2200 = 704;
+if(o_sinistrule2199 + 392 - 549 - 96 * 214 / 95 >= 44957){
+	B_mayhood2200 = o_sinistrule2199 * 115 * 141 / 538;
+}
+
+	}
+	if(crescion2169_4){
+		          int pennly2201Behaviordom2202 = 2260;    //temple32
+          NSString *coprotherth2203Igsion2204 = @"agreement2205Poordom2206";
+          int payity2207Sist2208 = 2112;
+          if ([coprotherth2203Igsion2204 length] < pennly2201Behaviordom2202) {
+            payity2207Sist2208 = 1792;
+            __asm__("NOP"); 
+          }
+	}
+ 
+	NSURL *J_35 = nil;
+	return J_35;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
 - (void)openCsWithParams:(NSDictionary *)paramDic {
     NSString * csurl = SDK_DATA.urls.csUrl;
-    if ([PharmacatoryExperience isEmpty_MMMethodMMM:csurl]) {
-        SDK_LOG(@"客服地址错误 csurl=%@",csurl);
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	UIApplication * b_1 = [self raiseaster1448Stocho1449];
-	if(b_1){}
+	UIApplication * D_29 = [self phasycoldian1586Particularlyair1587];
+	if(D_29){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 574;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 783 + 797 == 52952){}
-		if(self.prior1438Vanist1439){
-int V_try3850 = 643;
-int m_force3851 = 391;
-switch (V_try3850) {
-   case 639:
-			{
-				V_try3850 = m_force3851 + 802 / 349 + 544 - 233 - 711 - 716; 
-			 break;
-			}
-			   default:
-       break;
-			}
+	self.juniorie1426Aevent1427 = 2240;
+	if(self.juniorie1426Aevent1427 - 875 / 878 >= 87995){}
+	self.ctenee1428Buyry1429 = 4180;
+	if(self.ctenee1428Buyry1429 - 339 / 488 > 7838){}
+		if(self.opacization1430Knowledgeform1431){
+float N_isist3915 = 5340;
+
+if(N_isist3915 > 47158){
+	float y_necrory3916 = N_isist3915 * 250 / 678; 
+if(y_necrory3916 > 47812){
+	float o_militfier3917 = y_necrory3916 - 488 - 221; 
+if(o_militfier3917 != 45551){
+	double W_relateit3918 = o_militfier3917 - 122 - 856 + 382 * 163; 
+if(W_relateit3918 > 89214){
+	float e_covermove3919 = W_relateit3918 - 634 / 939 - 601; 
+if(e_covermove3919 != 5154){
+	int l_lax3920 = e_covermove3919 + 610 - 577 / 917 * 122 + 837;
 }
-	self.flat1440Hesless1441 = 5645;
-	if(self.flat1440Hesless1441 * 983 * 4 > 35925){}
-	self.aristary1442Agoar1443 = 1960;
-	if(self.aristary1442Agoar1443 - 166 * 396 + 960 > 14572){ 
-double y_cort3852 = 5811;
-
-int r_minory3853 = 925;
-if(y_cort3852 + 145 * 540 - 667 * 667 * 290 >= 38774){
-	r_minory3853 = y_cort3852 * 729 + 546 * 726 - 961 + 843;
-}else{
-	r_minory3853 = y_cort3852 * 84 - 319 * 763 * 606;
 }
-
-int g_mediaenne3854 = 473;
-if(r_minory3853 * 913 + 794 - 120 * 67 <= 70951){
-	g_mediaenne3854 = r_minory3853 + 836 / 747 - 552 * 889 + 146;
 }
-
-int S_pudeite3855 = 391;
-if(g_mediaenne3854 - 125 + 529 + 472 - 846 * 686 > 8553){
-	S_pudeite3855 = g_mediaenne3854 * 606 * 348;
-}else{
-	S_pudeite3855 = g_mediaenne3854 - 862 / 819 * 689 / 334 / 524 + 800;
 }
-
-double U_poorast3856 = 78;
-if(S_pudeite3855 + 897 / 263 * 738 - 935 == 95278){
-	U_poorast3856 = S_pudeite3855 + 152 / 420;
-}else{
-	U_poorast3856 = S_pudeite3855 - 513 * 553 - 799;
 }
-
- }
-	self.culturalaceous1444Broncher1445 = 7732;
-	if(self.culturalaceous1444Broncher1445 * 284 / 904 <= 30091){}
-		if(self.phemwise1446Lowfaction1447){}
-int K_cuplike3844 = 1625;
-
-int B_err3845 = 947;
-if(K_cuplike3844 + 788 + 905 - 601 > 99021){
-	B_err3845 = K_cuplike3844 * 936 - 495;
-}else{
-	B_err3845 = K_cuplike3844 + 864 - 108 + 688 - 498 - 499 - 504;
 }
-
-int c_humise3846 = 125;
-if(B_err3845 - 133 - 40 * 830 * 244 * 999 / 4 == 4311){
-	c_humise3846 = B_err3845 - 922 / 402 - 991 - 140;
-}
-
-double q_avoidization3847 = 190;
-if(c_humise3846 + 838 / 968 != 63473){
-	q_avoidization3847 = c_humise3846 - 596 * 114 * 406 * 767 + 747 / 330;
-}else{
-	q_avoidization3847 = c_humise3846 + 126 * 537 - 548 * 780 - 24;
-}
-
-double D_phenoth3848 = 629;
-if(q_avoidization3847 * 862 * 814 / 722 + 997 > 59285){
-	D_phenoth3848 = q_avoidization3847 + 808 * 588;
-}else{
-	D_phenoth3848 = q_avoidization3847 - 343 - 794;
-}
-
-double M_cumb3849 = 479;
-if(D_phenoth3848 * 807 * 292 / 479 * 582 < 67172){
-	M_cumb3849 = D_phenoth3848 - 711 + 816;
-}
+	self.civilast1432Stratalongular1433 = 271;
+	if(self.civilast1432Stratalongular1433 * 121 + 765 - 366 + 64 - 542 < 35877){}
+		if(self.inad1434Simpleive1435){}
+        
+        int changement3905Homalment3906 = 2926;    //temple11
+        int getally3907Mir3908 = 3569;
+        while(getally3907Mir3908 > changement3905Homalment3906) {
+            getally3907Mir3908 += 1;
+            break; 
+        } 
 
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+    if ([LoquiistMulsence isEmpty_MMMethodMMM:csurl]) {
+        SDK_LOG(@"客服地址错误 csurl=%@",csurl);
+
+		
         return;
     }
-    NSString *resultURL = [ValueformVocar createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
+    NSString *resultURL = [LampoCisling createSdkUrl_MMMethodMMM:csurl otherDic_MMMethodMMM:paramDic];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSURL * v_21 = [self dignacious2384Windia2385:@"tinctward3953Courtheseaster3954" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:2841 member2392Standardify2393:nil weaponible2394Noticeacle2395:926 price2396Hair2397:8237 epfic2398Bed2399:9264 ];
+	if(v_21){}
+
+	self.juniorie1426Aevent1427 = 9582;
+	if(self.juniorie1426Aevent1427 + 80 / 886 / 717 - 730 * 2 - 548 >= 88988){}
+	self.ctenee1428Buyry1429 = 443;
+	if(self.ctenee1428Buyry1429 - 264 / 855 / 517 / 749 + 777 / 352 <= 26616){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4127;
+	if(self.civilast1432Stratalongular1433 + 595 + 193 - 193 / 505 == 15428){}
+		if(self.inad1434Simpleive1435){}
+          NSString *oesophag3923Custhen3924 = @"morph3925Radihusbandsive3926";    //temple33
+          NSString *plosarium3927Choiceery3928 = @"andro3929Porcee3930";
+          NSString *baseivity3931Platinoabilityard3932 = [NSString stringWithFormat:@"eemhere3933Leproite3934%@",oesophag3923Custhen3924];
+          if ([baseivity3931Platinoabilityard3932 length] == 3435) {
+            baseivity3931Platinoabilityard3932 = [NSString stringWithFormat:@"subterhood3941What3942%@",plosarium3927Choiceery3928];
+          }else{
+            baseivity3931Platinoabilityard3932 = [NSString stringWithFormat:@"sellile3947Fall3948%@",plosarium3927Choiceery3928];
+          }
+          if(baseivity3931Platinoabilityard3932){
+            __asm__("NOP");
+          }
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     SDK_LOG(@"客服地址csurl=%@",resultURL);
-    TenaciPolicedomController *webVC = [TenaciPolicedomController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
+    MomentialPlutlyController *webVC = [MomentialPlutlyController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
     
     webVC.isShowDefulatCloseBtn = YES;
     webVC.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#3EB2FF"];
@@ -9427,6 +7680,28 @@ if(D_phenoth3848 * 807 * 292 / 479 * 582 < 67172){
     webVC.viewDidLoadCompletion = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = YES;
     };
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	[self goalan2239Pun2240:nil claring2241Clinment2242:nil lastial2243Thyrry2244:nil thalam2245Coite2246:7189 foreant2247Abory2248:nil saliatory2249Semicolorization2250:nil vania2251Sociability2252:@"kakspeakose3991Tornen3992" arthrose2253Coveret2254:@"vesicconference3993Gonoition3994" ];
+
+	self.juniorie1426Aevent1427 = 3031;
+	if(self.juniorie1426Aevent1427 - 766 + 582 - 149 / 718 - 136 < 93001){}
+	self.ctenee1428Buyry1429 = 1688;
+	if(self.ctenee1428Buyry1429 - 645 + 870 + 496 + 722 + 352 >= 24424){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 474;
+	if(self.civilast1432Stratalongular1433 - 983 / 393 - 236 / 472 > 31792){}
+		if(self.inad1434Simpleive1435){}
+        
+        NSArray *genyture3959Efster3960 = @[@"tenoon3963_sexaneity3964", @"panship3965_sphinctite3966", @"dinnerative3967_nudatory3968", @"nonveryfy3969_forature3970", @"creboxfier3971_rapacate3972", @"genesory3973_sepressureard3974", @"animage3975_my3976", @"optimacity3977_algiaity3978", @"existful3979_Americanly3980", @"trah3981_etho3982", @"memberistic3983_imagine3984", @"culturetion3985_grandrevealot3986", @"lexicoics3987_legianeity3988", @"playosity3989_stillitive3990" ];   //temple16
+        if (genyture3959Efster3960.count > 5925){
+        }
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     webVC.willDismissCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         self.switchInterfaceOrientationPortrait = NO;
     };
@@ -9435,342 +7710,692 @@ if(D_phenoth3848 * 807 * 292 / 479 * 582 < 67172){
     };
     
     [appTopViewController presentViewController:webVC animated:NO completion:^{
-        SDK_LOG(@"TenaciPolicedomController presentViewController completioN");
+        SDK_LOG(@"MomentialPlutlyController presentViewController completioN");
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * z_25 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:1851 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(z_25){}
+
+	self.juniorie1426Aevent1427 = 6783;
+	if(self.juniorie1426Aevent1427 - 691 - 411 * 616 != 57270){}
+	self.ctenee1428Buyry1429 = 6546;
+	if(self.ctenee1428Buyry1429 + 772 * 527 + 193 * 861 * 213 + 769 < 90753){}
+		if(self.opacization1430Knowledgeform1431){
+double a_locosend4005 = 9629;
+
+if(a_locosend4005 < 71999){
+	int u_fundel4006 = a_locosend4005 * 351 + 739 / 764 / 409 * 819 + 66;
+}
+}
+	self.civilast1432Stratalongular1433 = 214;
+	if(self.civilast1432Stratalongular1433 - 854 - 984 * 451 * 903 * 47 / 843 < 32335){}
+		if(self.inad1434Simpleive1435){
+int K_orderise4007 = 742;
+double n_mention4008 = 5;
+switch (K_orderise4007) {
+   case 970:
+			{
+				K_orderise4007 = n_mention4008 - 180 * 985; 
+			 break;
+			}
+			case 74:
+			{
+				K_orderise4007 = n_mention4008 + 797 - 881 / 171 + 465 - 90 * 66; 
+			 break;
+			}
+			case -80:
+			{
+				K_orderise4007 = n_mention4008 + 275 + 190 / 647 - 987 * 567; 
+			 break;
+			}
+			case 774:
+			{
+				K_orderise4007 = n_mention4008 + 368 * 797 * 828 / 837 + 256 * 145; 
+			 break;
+			}
+			case 656:
+			{
+				K_orderise4007 = n_mention4008 + 946 / 810 + 819; 
+			 break;
+			}
+			case 401:
+			{
+				K_orderise4007 = n_mention4008 - 787 - 750 * 590; 
+			 break;
+			}
+			case -20:
+			{
+				K_orderise4007 = n_mention4008 + 470 + 553 + 803; 
+			 break;
+			}
+			   default:
+       break;
+			}
+}
+        
+        int radican3995Womanant3996 = 9872;    //temple11
+        int grandarian3997Rhigair3998 = 2201;
+        while(grandarian3997Rhigair3998 > radican3995Womanant3996) {
+            grandarian3997Rhigair3998 += 1;
+            break; 
+        } 
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         
     }];
     SDK_LOG(@"客服地址open end");
-}
 
-- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
-{
-    
-    if (![[NSThread currentThread] isMainThread]) {
-        SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
-
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSMutableArray * q_16 = [self onization1831Sometimesie1832:nil tors1833Amphacious1834:nil menslike1835Gymnrecentlyer1836:nil acttic1837Large1838:5694 remember1839Fruct1840:4428 includingar1841Millen1842:nil natatic1843Mortment1844:2095 sacrition1845Current1846:@"spicatory3887Clusation3888" ];
-	if(q_16){}
+	 NSString * s_18 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"saveling4013Officeron4014" directionment2219Lamin2220:nil ];
+	if(s_18){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8324;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 43 * 677 - 727 * 65 - 137 / 604 < 45094){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 8970;
-	if(self.flat1440Hesless1441 + 877 / 150 - 97 / 147 * 330 == 64730){}
-	self.aristary1442Agoar1443 = 8993;
-	if(self.aristary1442Agoar1443 + 484 / 654 - 605 < 34950){}
-	self.culturalaceous1444Broncher1445 = 4171;
-	if(self.culturalaceous1444Broncher1445 * 559 - 203 / 963 / 684 + 128 != 11874){ 
-int K_cycl3889 = 937;
-int l_chromlet3890 = 771;
-switch (K_cycl3889) {
-   case 441:
+	self.juniorie1426Aevent1427 = 896;
+	if(self.juniorie1426Aevent1427 + 624 / 993 <= 32019){ 
+int A_clysmpeaceency4015 = 915;
+int q_oil4016 = 472;
+switch (A_clysmpeaceency4015) {
+   case 311:
 			{
-				K_cycl3889 = l_chromlet3890 + 286 + 458 / 361; 
+				A_clysmpeaceency4015 = q_oil4016 + 398 * 706 - 862 / 126 - 903; 
 			 break;
 			}
 			   default:
        break;
 			}
  }
-		if(self.phemwise1446Lowfaction1447){}
+	self.ctenee1428Buyry1429 = 2665;
+	if(self.ctenee1428Buyry1429 * 22 / 766 / 535 != 1953){ 
+int J_guessate4017 = 9153;
+
+if(J_guessate4017 <= 92218){
+	int q_paternrock4018 = J_guessate4017 * 597 * 910 / 336 * 919 / 255; 
+if(q_paternrock4018 == 47240){
+	float M_phylac4019 = q_paternrock4018 - 280 + 203 + 793 - 498;
+}
+}
+ }
+		if(self.opacization1430Knowledgeform1431){
+float p_boletic4020 = 4678;
+
+if(p_boletic4020 <= 80686){
+	int R_most4021 = p_boletic4020 * 179 - 927; 
+if(R_most4021 != 58112){
+	int p_fontesque4022 = R_most4021 + 621 * 388; 
+if(p_fontesque4022 != 52903){
+	int B_exactlyward4023 = p_fontesque4022 - 605 * 915 + 761 - 518; 
+if(B_exactlyward4023 <= 57015){
+	float o_standarian4024 = B_exactlyward4023 - 226 / 952 * 27 + 688 + 253 - 249; 
+if(o_standarian4024 > 94177){
+	double k_legisular4025 = o_standarian4024 + 799 * 435 / 223 - 589 * 767;
+}
+}
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 5410;
+	if(self.civilast1432Stratalongular1433 - 12 - 599 / 657 / 548 - 448 * 619 >= 89665){}
+		if(self.inad1434Simpleive1435){}
+            float airfier4009Arthroparticular4010 = 8940.0;  //temple25
+            if (@(airfier4009Arthroparticular4010).doubleValue == 918) {}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+}
+
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (void)goalan2239Pun2240:(NSObject *)goalan2239_1 claring2241Clinment2242:(NSMutableDictionary *)claring2241_2 lastial2243Thyrry2244:( NSData *)lastial2243_3 thalam2245Coite2246:(CGFloat)thalam2245_4 foreant2247Abory2248:( NSData *)foreant2247_5 saliatory2249Semicolorization2250:(NSData *)saliatory2249_6 vania2251Sociability2252:(NSString *)vania2251_7 arthrose2253Coveret2254:(NSString *)arthrose2253_8{ //insert method
+	if(goalan2239_1){
+		float A_artic2255 = 1774;
+
+if(A_artic2255 != 45371){
+	float V_pricewise2256 = A_artic2255 + 728 - 300 / 700 * 239 / 443; 
+if(V_pricewise2256 > 79274){
+	double g_tectonsystem2257 = V_pricewise2256 + 592 + 479 + 213; 
+if(g_tectonsystem2257 > 11232){
+	double c_anotherade2258 = g_tectonsystem2257 + 799 - 632; 
+if(c_anotherade2258 >= 47812){
+	float D_form2259 = c_anotherade2258 + 140 - 245; 
+if(D_form2259 > 95204){
+	double D_hearive2260 = D_form2259 + 605 - 821 + 753 + 621 - 601;
+}
+}
+}
+}
+}
+	}
+	if(claring2241_2){
+		    
+
+      int probablyization2261Pogonbadorium2262[ 6080 ]; //commontemple22 // n 是一个包含 10 个整数的数组
+    
+      // 初始化数组元素          
+      for ( int i = 0; i < 6080; i++ )
+      {
+         probablyization2261Pogonbadorium2262[ i ] = i + 9568; // 设置元素 i 为 i + 100
+         if(i < 8974)
+         {
+                    
+        int court2267Generaleur2268 = 4223;    //temple12
+        NSString *placage2269Radihusbandsive2270 = @"gredule2271Section2272";
+        while(placage2269Radihusbandsive2270.length > court2267Generaleur2268) {
+            break; 
+        } 
+
+            break;
+         }
+      }
+
+	}
+	if(lastial2243_3){
+		        
+        float ravel2277Hort2278 = 1638;  //commontemple12
+        BOOL method2279Lexicoature2280 = NO;
+
+        for(int child2281Tremaid2282 = 3138; child2281Tremaid2282 < 3879; child2281Tremaid2282 = child2281Tremaid2282 + 1)
+        {    
+            if (method2279Lexicoature2280){
+                break;
+            }
+            ravel2277Hort2278 = ravel2277Hort2278 * 3879;
+        }
+        if (ravel2277Hort2278)
+        {
+            method2279Lexicoature2280 = NO;
+                    
+        NSInteger lictably2303Expert2304 = 6333; //commontemple1
+        BOOL ohorium2305Callaceous2306 = NO;
+        while (lictably2303Expert2304 < 511)
+        {
+            lictably2303Expert2304 = lictably2303Expert2304 + 7452;
+            ohorium2305Callaceous2306 = YES;
+        }
         
-        NSArray *community3857Sagachood3858 = @[@"heterokin3861_orexiaor3862", @"astro3863_hibernatic3864", @"rhiz3865_husbandety3866", @"protectian3867_anyone3868", @"stin3869_cruitition3870", @"imagineible3871_chirful3872", @"showery3873_dominitor3874", @"treatseverally3875_serphumanate3876", @"marketule3877_stageant3878", @"generalaire3879_termitular3880", @"skinmost3881_exactlyist3882", @"tooise3883_batation3884", @"imicet3885_prepareal3886" ];   //temple14
-        if (community3857Sagachood3858){
+        
         }
 
+        
+	}
+	if(thalam2245_4 + 42 / 653 * 75 + 212 == 18356){
+		int M_pavaster2315 = 9881;
+
+if(M_pavaster2315 <= 11402){
+	float I_countryast2316 = M_pavaster2315 + 192 / 915 + 30 - 663 + 393 / 60; 
+if(I_countryast2316 > 10746){
+	float L_suition2317 = I_countryast2316 + 922 / 889 / 615 + 724 - 181; 
+if(L_suition2317 == 20350){
+	double i_gener2318 = L_suition2317 - 264 - 976 - 503 / 513; 
+if(i_gener2318 != 53315){
+	double p_momentfold2319 = i_gener2318 - 577 + 408 + 853 - 936;
+}
+}
+}
+}
+	}
+	if(foreant2247_5){
+		        
+        double L_cessosity2350 = 2015;
+
+double M_betterar2351 = 929;
+if(L_cessosity2350 - 329 - 276 >= 48578){
+	M_betterar2351 = L_cessosity2350 * 244 - 511 / 82;
+}else{
+	M_betterar2351 = L_cessosity2350 - 308 / 466 + 992;
+}
+
+float u_junior2352 = 651;
+if(M_betterar2351 * 292 - 740 - 666 + 610 + 463 < 3267){
+	u_junior2352 = M_betterar2351 - 171 * 313;
+}
+
+double Z_widearian2353 = 481;
+if(u_junior2352 + 481 / 788 + 224 - 724 / 86 + 461 > 23832){
+	Z_widearian2353 = u_junior2352 * 146 / 450 / 990;
+}else{
+	Z_widearian2353 = u_junior2352 * 551 / 595 + 190 - 512 / 520;
+}
+
+int K_thankible2354 = 569;
+if(Z_widearian2353 - 470 / 850 - 288 + 297 - 778 * 541 <= 67480){
+	K_thankible2354 = Z_widearian2353 + 124 / 281 + 279 / 532;
+}
+
+float g_ungui2355 = 60;
+if(K_thankible2354 * 388 / 422 >= 29185){
+	g_ungui2355 = K_thankible2354 * 177 + 925 - 421 / 955 / 787;
+}else{
+	g_ungui2355 = K_thankible2354 - 33 + 698 / 730 - 324 + 690;
+}
+
+double y_fishward2356 = 28;
+if(g_ungui2355 + 282 / 77 >= 69697){
+	y_fishward2356 = g_ungui2355 * 991 + 441;
+}else{
+	y_fishward2356 = g_ungui2355 + 978 * 268 - 246 + 266;
+}
+
+float e_localorium2357 = 122;
+if(y_fishward2356 * 788 - 21 / 987 / 103 * 580 / 593 == 87888){
+	e_localorium2357 = y_fishward2356 - 97 + 509;
+}
+
+        long surdaster2320Ligoon2321 = 2460;  //commontemple9
+        int vergain2322Arriveture2323 = 22;
+
+        for(int colorress2324Toughful2325 = 8307; colorress2324Toughful2325 < 3434; colorress2324Toughful2325 = colorress2324Toughful2325 + 1)
+        {    
+            surdaster2320Ligoon2321 = surdaster2320Ligoon2321 + vergain2322Arriveture2323;
+            if (surdaster2320Ligoon2321 > colorress2324Toughful2325){
+                break;
+            }
+            vergain2322Arriveture2323 = vergain2322Arriveture2323++;
+        }
+        int C_cinctture2362 = 86;
+int x_lucidate2363 = 453;
+switch (C_cinctture2362) {
+   case 949:
+			{
+				C_cinctture2362 = x_lucidate2363 + 36 * 839 + 327 * 45; 
+			 break;
+			}
+			case 480:
+			{
+				C_cinctture2362 = x_lucidate2363 * 277 / 59 - 338 * 148 + 352; 
+			 break;
+			}
+			case 346:
+			{
+				C_cinctture2362 = x_lucidate2363 + 774 / 667 * 160 + 798; 
+			 break;
+			}
+			case 263:
+			{
+				C_cinctture2362 = x_lucidate2363 + 559 * 559 - 375 / 363 + 37; 
+			 break;
+			}
+			case 260:
+			{
+				C_cinctture2362 = x_lucidate2363 + 430 / 560 / 875; 
+			 break;
+			}
+			case 962:
+			{
+				C_cinctture2362 = x_lucidate2363 * 967 / 744; 
+			 break;
+			}
+			case 102:
+			{
+				C_cinctture2362 = x_lucidate2363 - 958 - 282; 
+			 break;
+			}
+			case -56:
+			{
+				C_cinctture2362 = x_lucidate2363 - 380 * 684 * 641 * 438 * 3; 
+			 break;
+			}
+			case 909:
+			{
+				C_cinctture2362 = x_lucidate2363 * 74 - 411 + 374 / 414 + 233 - 264; 
+			 break;
+			}
+			case 311:
+			{
+				C_cinctture2362 = x_lucidate2363 * 403 / 894 + 756 - 617 / 881; 
+			 break;
+			}
+			case 401:
+			{
+				C_cinctture2362 = x_lucidate2363 - 763 + 105; 
+			 break;
+			}
+			case 284:
+			{
+				C_cinctture2362 = x_lucidate2363 + 271 - 911 - 376 + 997; 
+			 break;
+			}
+			   default:
+       break;
+			}
+
+        
+	}
+	if(saliatory2249_6){
+		        
+        long vac2364Conan2365 = 8763;  //commontemple10
+        int forgetlike2366Speculture2367 = 3759;
+
+        for(int troglodrive2368Rhagance2369 = 763; troglodrive2368Rhagance2369 < 4348; troglodrive2368Rhagance2369 = troglodrive2368Rhagance2369 + 1)
+        {    
+            forgetlike2366Speculture2367 = forgetlike2366Speculture2367++;
+        }
+        
+	}
+	if(vania2251_7){
+		float c_phloecauseation2380 = 7787;
+
+if(c_phloecauseation2380 >= 23106){
+	float y_gameite2381 = c_phloecauseation2380 + 520 / 796 * 690 - 870; 
+if(y_gameite2381 != 98371){
+	double v_vicability2382 = y_gameite2381 + 565 - 791 * 346 / 735 * 84 * 752; 
+if(v_vicability2382 != 91434){
+	int h_ostikin2383 = v_vicability2382 * 887 + 373 + 851;
+}
+}
+}
+	}
+ }
+// 2024-01-12 12:51:44 ===insert my method end===
+- (void)shareLineWithContent:(NSString *)content block:(MWBlock) bMWBlock
+{
+    
+    if (![[NSThread currentThread] isMainThread]) {
+        SDK_LOG(@"currentThread is not main thread");
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSObject * c_2 = [self trichin1604Lifeial1605:nil nudratheracle1606Operation1607:6695 doxling1608Geneion1609:nil condiimagine1610Density1611:nil ];
+	if(c_2){}
+
+	self.juniorie1426Aevent1427 = 6957;
+	if(self.juniorie1426Aevent1427 * 923 - 53 - 994 == 94417){}
+	self.ctenee1428Buyry1429 = 68;
+	if(self.ctenee1428Buyry1429 + 643 - 407 - 191 / 150 / 173 / 79 != 81103){ 
+double k_ballship4028 = 9808;
+
+if(k_ballship4028 <= 50409){
+	double k_lexise4029 = k_ballship4028 * 855 * 444 + 843; 
+if(k_lexise4029 == 18380){
+	double s_cipitfier4030 = k_lexise4029 * 794 / 550 / 496 + 48; 
+if(s_cipitfier4030 >= 69409){
+	float C_west4031 = s_cipitfier4030 * 457 - 370 + 7;
+}
+}
+}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4324;
+	if(self.civilast1432Stratalongular1433 - 441 / 485 * 477 * 981 - 840 == 50034){}
+		if(self.inad1434Simpleive1435){}
+int C_jumost4026 = 920;
+int z_formworryice4027 = 526;
+switch (C_jumost4026) {
+   case 503:
+			{
+				C_jumost4026 = z_formworryice4027 + 415 / 741 + 468 * 138 - 926 - 45; 
+			 break;
+			}
+			case -10:
+			{
+				C_jumost4026 = z_formworryice4027 - 87 - 91 + 894 / 42 * 828; 
+			 break;
+			}
+			case 467:
+			{
+				C_jumost4026 = z_formworryice4027 * 603 / 637 + 723 * 518 + 885; 
+			 break;
+			}
+			case 589:
+			{
+				C_jumost4026 = z_formworryice4027 + 802 + 931 / 785 + 751; 
+			 break;
+			}
+			case 710:
+			{
+				C_jumost4026 = z_formworryice4027 - 269 + 454 * 463 / 891 - 905; 
+			 break;
+			}
+			case 361:
+			{
+				C_jumost4026 = z_formworryice4027 + 661 / 782 - 318 - 130; 
+			 break;
+			}
+			case 478:
+			{
+				C_jumost4026 = z_formworryice4027 - 688 - 948; 
+			 break;
+			}
+			case 772:
+			{
+				C_jumost4026 = z_formworryice4027 + 844 * 501; 
+			 break;
+			}
+			case 443:
+			{
+				C_jumost4026 = z_formworryice4027 * 140 + 824 - 646 + 303; 
+			 break;
+			}
+			case 452:
+			{
+				C_jumost4026 = z_formworryice4027 + 836 / 836 - 616 + 436 / 384; 
+			 break;
+			}
+			   default:
+       break;
+			}
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
     if(![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"line://"]]){
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/line/id443904275"]];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long V_47 = [self exterard2102Menstruize2103:nil falsile2104Spergbenefitish2105:nil tentpressureice2106Parthenness2107:nil fidel2108Rubrfic2109:nil viscoist2110Enjoyitude2111:7071 pecuofficialy2112Juvenfy2113:nil saluty2114Televisionical2115:3232 ];
+	if(V_47){}
+
+	self.juniorie1426Aevent1427 = 4777;
+	if(self.juniorie1426Aevent1427 + 470 - 962 + 871 / 219 * 513 + 199 <= 88085){}
+	self.ctenee1428Buyry1429 = 2726;
+	if(self.ctenee1428Buyry1429 - 579 / 839 >= 48567){ 
+int X_tenery4035 = 987;
+float o_streptacy4036 = 936;
+switch (X_tenery4035) {
+   case 220:
+			{
+				X_tenery4035 = o_streptacy4036 * 689 + 621; 
+			 break;
+			}
+			case 7:
+			{
+				X_tenery4035 = o_streptacy4036 * 828 * 700; 
+			 break;
+			}
+			case 61:
+			{
+				X_tenery4035 = o_streptacy4036 + 796 / 729 + 178; 
+			 break;
+			}
+			case 245:
+			{
+				X_tenery4035 = o_streptacy4036 + 602 - 407 - 667; 
+			 break;
+			}
+			case 192:
+			{
+				X_tenery4035 = o_streptacy4036 - 671 / 881 * 812; 
+			 break;
+			}
+			case 180:
+			{
+				X_tenery4035 = o_streptacy4036 - 893 + 517 + 429 - 628; 
+			 break;
+			}
+			case 243:
+			{
+				X_tenery4035 = o_streptacy4036 + 501 + 614 - 50 * 986 / 551; 
+			 break;
+			}
+			case 736:
+			{
+				X_tenery4035 = o_streptacy4036 + 427 / 946; 
+			 break;
+			}
+			case 505:
+			{
+				X_tenery4035 = o_streptacy4036 + 379 - 753 + 27 * 355 - 893 - 548; 
+			 break;
+			}
+			case 453:
+			{
+				X_tenery4035 = o_streptacy4036 - 263 - 774; 
+			 break;
+			}
+			case -38:
+			{
+				X_tenery4035 = o_streptacy4036 + 914 / 904 * 783; 
+			 break;
+			}
+			case 236:
+			{
+				X_tenery4035 = o_streptacy4036 + 365 / 717 - 954 / 178 + 852 / 707; 
+			 break;
+			}
+			   default:
+       break;
+			}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 4975;
+	if(self.civilast1432Stratalongular1433 + 136 / 220 / 536 - 200 / 765 + 885 != 44177){ 
+double E_othersarium4037 = 5191;
+
+if(E_othersarium4037 < 8800){
+	float k_churchine4038 = E_othersarium4037 * 958 + 54 * 698; 
+if(k_churchine4038 != 87105){
+	int n_careeraneity4039 = k_churchine4038 - 505 - 613 + 75 * 921; 
+if(n_careeraneity4039 != 65321){
+	float P_cinctalthoughar4040 = n_careeraneity4039 * 483 / 247 + 474 - 140; 
+if(P_cinctalthoughar4040 >= 25791){
+	float B_risior4041 = P_cinctalthoughar4040 - 971 - 322 * 401 * 809; 
+if(B_risior4041 < 91820){
+	float G_ferrwise4042 = B_risior4041 - 975 * 227 + 347;
+}
+}
+}
+}
+}
+ }
+		if(self.inad1434Simpleive1435){}
+float m_etymkind4032 = 9380;
+
+if(m_etymkind4032 != 80388){
+	int m_plicatsupportant4033 = m_etymkind4032 * 58 / 394 * 520; 
+if(m_plicatsupportant4033 > 90720){
+	double r_probion4034 = m_plicatsupportant4033 + 979 / 667 + 71 * 910 * 116;
+}
+}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         return;
     }
     
     NSString *lineUrl = [NSString stringWithFormat:@"line://msg/text/%@",[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lineUrl]];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSObject * k_10 = [self findfaction1554Less1555];
-	if(k_10){}
+	NSURL * U_46 = [self antitic2163Cinctonative2164:@"westation4067Dexi4068" hangacious2165Newise2166:5890 tostaneity2167Palliian2168:nil crescion2169Nephrbabyly2170:nil longization2171Plor2172:nil ];
+	if(U_46){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 3112;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 418 + 93 - 200 / 734 / 423 - 332 > 27635){}
-		if(self.prior1438Vanist1439){
-double a_phrenard3931 = 8229;
+	self.juniorie1426Aevent1427 = 8008;
+	if(self.juniorie1426Aevent1427 * 356 - 407 * 767 + 115 >= 58458){}
+	self.ctenee1428Buyry1429 = 502;
+	if(self.ctenee1428Buyry1429 + 495 - 426 - 272 * 621 < 45350){}
+		if(self.opacization1430Knowledgeform1431){
+int t_chronibility4069 = 6346;
 
-if(a_phrenard3931 >= 22221){
-	double g_takeuous3932 = a_phrenard3931 + 106 / 801 * 919 / 481 * 18 * 620; 
-if(g_takeuous3932 < 7271){
-	float F_mersroleization3933 = g_takeuous3932 + 977 - 806 + 723 / 128 + 102 - 23; 
-if(F_mersroleization3933 > 92591){
-	float h_organizationly3934 = F_mersroleization3933 * 431 / 786 + 557 / 326 - 171;
+if(t_chronibility4069 != 66636){
+	int I_jugcy4070 = t_chronibility4069 + 450 / 416 / 938 / 882 * 971 + 217; 
+if(I_jugcy4070 != 37924){
+	double S_blood4071 = I_jugcy4070 + 289 + 132 + 895; 
+if(S_blood4071 != 21238){
+	double m_protoindividualsome4072 = S_blood4071 * 460 / 386 + 386 + 836; 
+if(m_protoindividualsome4072 > 16708){
+	float h_particularer4073 = m_protoindividualsome4072 - 414 + 217 - 819 + 407 / 472 * 627;
 }
 }
 }
 }
-	self.flat1440Hesless1441 = 9307;
-	if(self.flat1440Hesless1441 + 497 / 674 / 254 - 348 * 482 != 93866){ 
-double X_boardship3935 = 8231;
+}
+	self.civilast1432Stratalongular1433 = 9290;
+	if(self.civilast1432Stratalongular1433 + 866 * 673 == 77237){}
+		if(self.inad1434Simpleive1435){}
+		NSDictionary *triboate4043Careermost4044 = @{@"hominior4059" : @"radioee4060", @"quality4061" : @(94727), @"tediress4063" : @"emetic4064", @"supinfirst4065" : @(82647) };    //temple20
+        NSString *stigmatprofessorosity4045Everally4046 = triboate4043Careermost4044[@"juriauthorityish4049Sisterry4050"];
 
-if(X_boardship3935 == 8176){
-	double d_coel3936 = X_boardship3935 - 938 * 485 - 772 - 373 + 243 / 861; 
-if(d_coel3936 == 71032){
-	float h_firmaneity3937 = d_coel3936 * 690 - 16 / 797 * 163; 
-if(h_firmaneity3937 == 94276){
-	float f_scopable3938 = h_firmaneity3937 * 836 / 89 + 489; 
-if(f_scopable3938 <= 37100){
-	double a_archoful3939 = f_scopable3938 + 869 * 213 + 204 / 4 + 720;
-}
-}
-}
-}
- }
-	self.aristary1442Agoar1443 = 1212;
-	if(self.aristary1442Agoar1443 - 613 - 110 * 631 >= 29284){}
-	self.culturalaceous1444Broncher1445 = 3078;
-	if(self.culturalaceous1444Broncher1445 + 280 * 842 - 117 * 38 - 977 * 725 <= 14019){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSArray *cidfinish3895Red3896 = @[@"teamwise3901_agonmonth3902", @"rhin3903_leastkin3904", @"tactline3905_semin3906", @"scopeeye3907_federfinishair3908", @"resultical3909_decisionid3910", @"scalennoticead3911_pectred3912", @"oneite3913_signical3914", @"magner3915_baby3916", @"nar3917_almostish3918", @"nihil3919_oxysure3920", @"brachiosure3921_stinety3922", @"researchule3923_necessaryary3924", @"plesiety3925_despiteety3926", @"undic3927_anthance3928", @"noxize3929_dermency3930" ];   //temple15
-        for (NSString *strictkidette3897Fantness3898 in cidfinish3895Red3896){
-            break;
+        if (stigmatprofessorosity4045Everally4046 && stigmatprofessorosity4045Everally4046.length > 1134 && [stigmatprofessorosity4045Everally4046 isEqualToString:@"plasor4057Angous4058"]) {
+            
         }
 
 		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSArray * Z_51 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:4864 plaud1671Past1672:7152 ];
-	if(Z_51){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6918;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 999 - 827 == 44556){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 1405;
-	if(self.flat1440Hesless1441 * 230 * 957 + 303 * 916 < 91376){}
-	self.aristary1442Agoar1443 = 6630;
-	if(self.aristary1442Agoar1443 * 608 + 357 > 67548){ 
-float R_metrcollegeship3944 = 613;
-
-if(R_metrcollegeship3944 > 61704){
-	float R_optiondom3945 = R_metrcollegeship3944 - 378 + 927; 
-if(R_optiondom3945 >= 57497){
-	float Q_fensistic3946 = R_optiondom3945 * 382 / 141 / 25 * 789; 
-if(Q_fensistic3946 <= 71805){
-	float P_fearier3947 = Q_fensistic3946 + 447 / 454 - 470;
-}
-}
-}
- }
-	self.culturalaceous1444Broncher1445 = 7731;
-	if(self.culturalaceous1444Broncher1445 * 542 - 906 + 647 / 162 / 73 / 555 < 87466){ 
-int H_amountee3948 = 8548;
-
-double f_placeid3949 = 432;
-if(H_amountee3948 + 876 / 908 - 766 >= 11456){
-	f_placeid3949 = H_amountee3948 + 79 / 480 / 328 * 648 * 630;
-}
-
-int O_thusive3950 = 21;
-if(f_placeid3949 + 834 + 266 - 973 * 631 * 961 <= 61740){
-	O_thusive3950 = f_placeid3949 - 343 / 610;
-}else{
-	O_thusive3950 = f_placeid3949 + 276 * 109 - 26 - 878;
-}
-
-int Z_speakness3951 = 94;
-if(O_thusive3950 * 948 * 592 - 49 / 816 + 775 - 273 >= 34308){
-	Z_speakness3951 = O_thusive3950 - 481 * 416 * 837 + 290 - 54;
-}
-
-float a_carcerseektic3952 = 722;
-if(Z_speakness3951 - 168 * 112 > 18897){
-	a_carcerseektic3952 = Z_speakness3951 - 111 / 168 + 918;
-}else{
-	a_carcerseektic3952 = Z_speakness3951 + 197 * 797 + 18 + 383;
-}
-
-int T_everythingence3953 = 185;
-if(a_carcerseektic3952 - 782 / 506 > 91675){
-	T_everythingence3953 = a_carcerseektic3952 * 323 - 25 + 882;
-}
-
-int x_sentianeity3954 = 727;
-if(T_everythingence3953 + 571 * 576 * 963 - 915 != 11141){
-	x_sentianeity3954 = T_everythingence3953 - 607 * 914 + 930 + 132 + 777;
-}else{
-	x_sentianeity3954 = T_everythingence3953 * 564 - 232;
-}
-
-float b_certainlyability3955 = 545;
-if(x_sentianeity3954 * 43 + 681 * 15 / 35 * 23 * 997 == 57938){
-	b_certainlyability3955 = x_sentianeity3954 * 35 * 246 - 810 * 81 * 780 / 476;
-}
-
-int t_heart3956 = 145;
-if(b_certainlyability3955 + 675 * 691 < 56480){
-	t_heart3956 = b_certainlyability3955 * 613 - 897 - 521 + 428;
-}
-
-double h_letterive3957 = 866;
-if(t_heart3956 - 778 + 572 - 804 * 879 + 760 == 97462){
-	h_letterive3957 = t_heart3956 + 26 / 699 + 181 / 397 + 891 - 634;
-}else{
-	h_letterive3957 = t_heart3956 * 86 + 626;
-}
-
-int B_orbwise3958 = 633;
-if(h_letterive3957 + 833 / 678 * 24 > 56439){
-	B_orbwise3958 = h_letterive3957 + 500 + 817;
-}else{
-	B_orbwise3958 = h_letterive3957 + 489 - 949 - 67;
-}
-
-float X_occuritive3959 = 788;
-if(B_orbwise3958 * 220 - 150 * 191 / 453 * 425 - 620 <= 99963){
-	X_occuritive3959 = B_orbwise3958 + 330 - 628 - 382 - 95 + 413;
-}else{
-	X_occuritive3959 = B_orbwise3958 - 178 - 299 * 756 + 577 / 2 / 270;
-}
-
-double R_pheno3960 = 644;
-if(X_occuritive3959 - 670 + 629 + 517 * 564 > 61234){
-	R_pheno3960 = X_occuritive3959 * 156 + 319;
-}else{
-	R_pheno3960 = X_occuritive3959 * 907 * 40 + 561 * 789 + 154 - 329;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){
-int s_phileaneity3961 = 564;
-int C_syion3962 = 651;
-switch (s_phileaneity3961) {
-   case 427:
-			{
-				s_phileaneity3961 = C_syion3962 - 219 / 547 / 579 - 955; 
-			 break;
-			}
-			case 357:
-			{
-				s_phileaneity3961 = C_syion3962 - 630 + 41; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-    
-
-      int tragclear3940Moment3941[ 8620 ]; //commontemple22 // n 是一个包含 10 个整数的数组
-    
-      // 初始化数组元素          
-      for ( int i = 0; i < 8620; i++ )
-      {
-         tragclear3940Moment3941[ i ] = i + 3340; // 设置元素 i 为 i + 100
-         if(i < 1404)
-         {
-            
-            break;
-         }
-      }
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     if (result) {
         if (bMWBlock) {
             bMWBlock(YES, @"Scheme share succeed");
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSInteger q_16 = [self opoard1745Tenitude1746:6214 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:3168 statutic1751Rurative1752:2197 hangform1753Containia1754:1477 opage1755Levose1756:962 consumer1757Tussance1758:nil ];
-	if(q_16){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6735;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 256 / 214 * 368 / 775 > 70764){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 2268;
-	if(self.flat1440Hesless1441 * 810 - 528 - 840 / 39 / 700 + 182 != 56324){ 
-int W_erythr4019 = 3781;
-
-if(W_erythr4019 > 45623){
-	int K_drawsure4020 = W_erythr4019 + 849 + 184 + 155;
-}
- }
-	self.aristary1442Agoar1443 = 2345;
-	if(self.aristary1442Agoar1443 - 102 - 740 * 405 * 824 - 845 + 807 < 60042){ 
-double d_extraia4021 = 9510;
-
-if(d_extraia4021 > 36147){
-	int C_enjoyesque4022 = d_extraia4021 + 11 + 565 - 962 + 965;
-}
- }
-	self.culturalaceous1444Broncher1445 = 5689;
-	if(self.culturalaceous1444Broncher1445 - 373 * 795 * 316 - 782 + 769 != 33655){ 
-int h_cleistit4023 = 731;
-int h_pecultechnologyics4024 = 550;
-switch (h_cleistit4023) {
-   case -70:
-			{
-				h_cleistit4023 = h_pecultechnologyics4024 - 94 / 381 - 433 / 654 + 385 - 110; 
-			 break;
-			}
-			case 373:
-			{
-				h_cleistit4023 = h_pecultechnologyics4024 * 108 / 599 / 203 * 113 + 299; 
-			 break;
-			}
-			case 770:
-			{
-				h_cleistit4023 = h_pecultechnologyics4024 - 365 / 481 / 531 / 825 * 712 * 516; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){}
-          int trichgrowthitude3967Pelagery3968 = 3543; //temple23
-          int knowty3969Fess3970 = 1050;
-          NSMutableDictionary * glassule3971Bluery3972 = [[NSMutableDictionary alloc] init];
-
-          [glassule3971Bluery3972 setObject: @(trichgrowthitude3967Pelagery3968) forKey:@"halit3977Local3978"];
-          int goodarium3979Prav3980 = (int)trichgrowthitude3967Pelagery3968;
-          int dimodelibility3983Axillolike3984 = 0;
-          for (int foreignar3985Prasinokless3986 = dimodelibility3983Axillolike3984; foreignar3985Prasinokless3986 > goodarium3979Prav3980 - 1; foreignar3985Prasinokless3986--) {
-              dimodelibility3983Axillolike3984 += foreignar3985Prasinokless3986;
-               int untilesque3999Answerety4000 = dimodelibility3983Axillolike3984;
-               if (untilesque3999Answerety4000 <= 8648) {
-               }
-              break;
-
-          }
-          knowty3969Fess3970 += 3205;
-          [glassule3971Bluery3972 setObject: @(knowty3969Fess3970) forKey:@"pingsome4011Sixry4012"];
-             
-          if (knowty3969Fess3970 < 7155) {
-              knowty3969Fess3970 = trichgrowthitude3967Pelagery3968;
-          }
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         }
     } else {
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSArray * Q_42 = [self partably1962Halfkin1963:nil payule1964Stacy1965:nil American1966Glutinetic1967:9599 professor1968Budget1969:nil passition1970Cupard1971:5459 panuous1972Oidsion1973:nil polyary1974Ferive1975:nil ];
+	if(Q_42){}
+
+	self.juniorie1426Aevent1427 = 7494;
+	if(self.juniorie1426Aevent1427 - 998 / 336 / 876 + 666 / 57 >= 86831){}
+	self.ctenee1428Buyry1429 = 8741;
+	if(self.ctenee1428Buyry1429 * 874 * 498 * 189 > 32004){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3478;
+	if(self.civilast1432Stratalongular1433 - 672 / 582 + 449 * 526 / 436 > 29452){}
+		if(self.inad1434Simpleive1435){}
+   
+      // 局部变量声明
+      int expertity4074Rhagacious4075 = 6752;
+      int plicatify4076Doxoth4077 = 2076;
+      int fishent4078Cubth4079;
+      
+      if(plicatify4076Doxoth4077 == expertity4074Rhagacious4075){
+         // 调用函数来获取最大值
+         fishent4078Cubth4079 = fmax(plicatify4076Doxoth4077, expertity4074Rhagacious4075);
+         float n_pedidom4098 = 2612;
+
+if(n_pedidom4098 == 54228){
+	float p_skinfold4099 = n_pedidom4098 * 917 - 483; 
+if(p_skinfold4099 <= 41518){
+	int L_ovorium4100 = p_skinfold4099 * 724 - 196 * 325 - 572;
+}
+}
+      }else{
+         fishent4078Cubth4079 = fmin(plicatify4076Doxoth4077, expertity4074Rhagacious4075);
+      }
+     
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         if (bMWBlock) {
             bMWBlock(NO,nil);
         }
@@ -9785,496 +8410,141 @@ switch (h_cleistit4023) {
     SDK_LOG(wwwww_tag_wwwww_addLocalNotificationWithTitle);
     if (![[NSThread currentThread] isMainThread]) {
         SDK_LOG(@"currentThread is not main thread");
-        [AsacleChronible showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
+        [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:wwwww_tag_wwwww_neg_pretiproof];
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSInteger o_14 = [self opoard1745Tenitude1746:4457 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:6277 statutic1751Rurative1752:913 hangform1753Containia1754:13 opage1755Levose1756:3024 consumer1757Tussance1758:nil ];
-	if(o_14){}
+	 NSString * H_33 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"emesismilitary4113Andrbagtion4114" directionment2219Lamin2220:nil ];
+	if(H_33){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 457;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 732 + 542 / 865 < 13045){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3407;
-	if(self.flat1440Hesless1441 + 341 - 988 <= 2449){}
-	self.aristary1442Agoar1443 = 1060;
-	if(self.aristary1442Agoar1443 + 114 + 104 * 567 + 977 * 136 <= 28225){}
-	self.culturalaceous1444Broncher1445 = 9493;
-	if(self.culturalaceous1444Broncher1445 - 777 - 287 >= 61064){ 
-int U_catchative4079 = 864;
-int V_archaesome4080 = 578;
-switch (U_catchative4079) {
-   case 757:
+	self.juniorie1426Aevent1427 = 9320;
+	if(self.juniorie1426Aevent1427 + 200 / 902 * 252 - 779 - 330 == 58801){}
+	self.ctenee1428Buyry1429 = 1568;
+	if(self.ctenee1428Buyry1429 + 705 - 398 == 50439){}
+		if(self.opacization1430Knowledgeform1431){
+int n_narc4115 = 8907;
+
+if(n_narc4115 <= 89988){
+	float L_turbinise4116 = n_narc4115 * 419 * 727 - 94 - 116 + 157; 
+if(L_turbinise4116 == 44168){
+	float V_direction4117 = L_turbinise4116 + 881 / 643; 
+if(V_direction4117 > 71483){
+	int m_curs4118 = V_direction4117 - 926 / 385 + 143 + 442; 
+if(m_curs4118 != 30517){
+	float c_tond4119 = m_curs4118 - 597 * 19;
+}
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 903;
+	if(self.civilast1432Stratalongular1433 * 224 - 68 > 51055){ 
+int l_coupleain4120 = 134;
+double P_beyondish4121 = 23;
+switch (l_coupleain4120) {
+   case 774:
 			{
-				U_catchative4079 = V_archaesome4080 - 398 - 506 - 372 / 402 - 588; 
+				l_coupleain4120 = P_beyondish4121 + 137 / 651; 
 			 break;
 			}
-			case 7:
+			case 286:
 			{
-				U_catchative4079 = V_archaesome4080 + 299 - 223 - 303 / 623; 
-			 break;
-			}
-			case 480:
-			{
-				U_catchative4079 = V_archaesome4080 + 201 + 122 / 370 + 125 + 306 / 728; 
-			 break;
-			}
-			case 408:
-			{
-				U_catchative4079 = V_archaesome4080 + 418 + 83 - 819 + 923 * 397; 
-			 break;
-			}
-			case -80:
-			{
-				U_catchative4079 = V_archaesome4080 + 915 * 610 / 639 + 317; 
-			 break;
-			}
-			case 765:
-			{
-				U_catchative4079 = V_archaesome4080 - 652 + 454; 
-			 break;
-			}
-			case -79:
-			{
-				U_catchative4079 = V_archaesome4080 + 732 - 998 - 97; 
-			 break;
-			}
-			case 566:
-			{
-				U_catchative4079 = V_archaesome4080 - 147 - 481 * 90 * 771 + 480 + 92; 
-			 break;
-			}
-			case 98:
-			{
-				U_catchative4079 = V_archaesome4080 + 430 + 910; 
-			 break;
-			}
-			case 667:
-			{
-				U_catchative4079 = V_archaesome4080 - 102 + 177 / 202; 
-			 break;
-			}
-			case 630:
-			{
-				U_catchative4079 = V_archaesome4080 + 884 * 944 * 726 - 402; 
-			 break;
-			}
-			case 624:
-			{
-				U_catchative4079 = V_archaesome4080 - 229 - 895 - 431 * 759 / 591; 
-			 break;
-			}
-			case 767:
-			{
-				U_catchative4079 = V_archaesome4080 + 688 / 532; 
-			 break;
-			}
-			case 353:
-			{
-				U_catchative4079 = V_archaesome4080 + 328 - 449 / 748; 
-			 break;
-			}
-			case 572:
-			{
-				U_catchative4079 = V_archaesome4080 * 294 - 889 + 101 - 516 - 886 - 120; 
-			 break;
-			}
-			case 607:
-			{
-				U_catchative4079 = V_archaesome4080 + 24 / 385 * 564 + 525; 
+				l_coupleain4120 = P_beyondish4121 * 722 - 883 + 528 - 180 * 916; 
 			 break;
 			}
 			   default:
        break;
 			}
  }
-		if(self.phemwise1446Lowfaction1447){}
-          int sibilen4027Minuteence4028 = 1969; //temple23
-          int offerization4029Cap4030 = 6907;
-          NSMutableDictionary * fascally4031Ceasess4032 = [[NSMutableDictionary alloc] init];
+		if(self.inad1434Simpleive1435){}
+        
+        int resourcefic4103Cervicuous4104 = 8882;    //temple12
+        NSString *veri4105Sufmuchaneous4106 = @"pleacy4107Actuous4108";
+        while(veri4105Sufmuchaneous4106.length > resourcefic4103Cervicuous4104) {
+            break; 
+        } 
 
-          [fascally4031Ceasess4032 setObject: @(sibilen4027Minuteence4028) forKey:@"insteadish4037Assume4038"];
-          int everyship4039Representety4040 = (int)sibilen4027Minuteence4028;
-          int lifeibility4043Adulteur4044 = 0;
-          for (int mywhenile4045Hospitence4046 = lifeibility4043Adulteur4044; mywhenile4045Hospitence4046 > everyship4039Representety4040 - 1; mywhenile4045Hospitence4046--) {
-              lifeibility4043Adulteur4044 += mywhenile4045Hospitence4046;
-               int phalarhood4059Decoring4060 = lifeibility4043Adulteur4044;
-               if (phalarhood4059Decoring4060 == 4600) {
-               }
-              break;
-
-          }
-          offerization4029Cap4030 += 6079;
-          [fascally4031Ceasess4032 setObject: @(offerization4029Cap4030) forKey:@"less4071Peopleition4072"];
-             
-          if (offerization4029Cap4030 > 1700) {
-              offerization4029Cap4030 = sibilen4027Minuteence4028;
-          }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
     
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	BOOL y_24 = [self hardly1536Archaeoally1537:nil ];
-	if(y_24){}
+	NSURL * X_49 = [self dignacious2384Windia2385:@"brontheation4153Endion4154" tardcy2386Tenacihis2387:nil lav2388Opulen2389:nil systemance2390Tranamerican2391:1253 member2392Standardify2393:nil weaponible2394Noticeacle2395:6159 price2396Hair2397:4802 epfic2398Bed2399:3153 ];
+	if(X_49){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 692;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 555 - 381 * 215 - 182 * 768 + 780 != 16463){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 9460;
-	if(self.flat1440Hesless1441 - 656 * 758 / 886 / 350 * 873 < 32683){}
-	self.aristary1442Agoar1443 = 332;
-	if(self.aristary1442Agoar1443 + 396 + 703 + 363 <= 28927){}
-	self.culturalaceous1444Broncher1445 = 9271;
-	if(self.culturalaceous1444Broncher1445 + 639 / 22 == 37838){ 
-int U_voc4111 = 207;
-double F_sellsure4112 = 357;
-switch (U_voc4111) {
-   case 961:
-			{
-				U_voc4111 = F_sellsure4112 - 157 + 138 + 393 / 412; 
-			 break;
-			}
-			case 274:
-			{
-				U_voc4111 = F_sellsure4112 + 202 - 769 * 254; 
-			 break;
-			}
-			case -36:
-			{
-				U_voc4111 = F_sellsure4112 * 663 + 849; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.phemwise1446Lowfaction1447){
-double d_includingkin4113 = 4732;
+	self.juniorie1426Aevent1427 = 847;
+	if(self.juniorie1426Aevent1427 * 584 - 657 + 597 - 497 - 829 >= 69200){}
+	self.ctenee1428Buyry1429 = 1228;
+	if(self.ctenee1428Buyry1429 - 467 + 666 <= 67464){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3591;
+	if(self.civilast1432Stratalongular1433 - 999 / 959 + 860 * 557 - 918 - 913 == 99820){}
+		if(self.inad1434Simpleive1435){}
 
-int P_claim4114 = 390;
-if(d_includingkin4113 - 205 * 449 < 97780){
-	P_claim4114 = d_includingkin4113 + 520 - 176 + 970 + 827;
-}else{
-	P_claim4114 = d_includingkin4113 - 124 * 508 + 813 * 485;
-}
+        BOOL tree4122Opative4123 = YES;  //commontemple18
+        int phalarence4124Mainfication4125 = 9880;
+        if (tree4122Opative4123){
 
-double g_loqulistenite4115 = 341;
-if(P_claim4114 * 438 - 70 - 947 == 71334){
-	g_loqulistenite4115 = P_claim4114 * 150 - 336 / 913 - 515;
-}else{
-	g_loqulistenite4115 = P_claim4114 + 131 - 637 / 174 / 394 / 236 + 890;
-}
+            phalarence4124Mainfication4125 = phalarence4124Mainfication4125 / 5227;
 
-double j_eitherfaction4116 = 733;
-if(g_loqulistenite4115 * 696 * 57 + 518 * 195 > 26164){
-	j_eitherfaction4116 = g_loqulistenite4115 + 265 + 597 / 635;
-}else{
-	j_eitherfaction4116 = g_loqulistenite4115 - 496 - 846 + 693 * 390 - 359;
-}
-
-double Q_aurality4117 = 432;
-if(j_eitherfaction4116 + 669 + 875 + 941 + 132 / 983 - 860 != 74123){
-	Q_aurality4117 = j_eitherfaction4116 + 414 + 700 / 566 - 717 - 844 - 661;
-}else{
-	Q_aurality4117 = j_eitherfaction4116 - 858 - 869 * 198 - 226 / 224;
-}
-
-int e_populationuous4118 = 882;
-if(Q_aurality4117 - 759 + 194 / 226 == 2504){
-	e_populationuous4118 = Q_aurality4117 + 575 / 800 * 204 / 42;
-}else{
-	e_populationuous4118 = Q_aurality4117 - 549 + 383 * 756;
-}
-
-float V_seminair4119 = 309;
-if(e_populationuous4118 * 826 * 112 * 490 - 705 > 18984){
-	V_seminair4119 = e_populationuous4118 * 925 - 341 * 58 * 225 * 311 * 964;
-}
-
-float q_omphalnearess4120 = 733;
-if(V_seminair4119 - 152 - 985 / 959 / 706 + 95 / 258 >= 532){
-	q_omphalnearess4120 = V_seminair4119 + 494 / 979;
-}
-
-double M_nomadfic4121 = 393;
-if(q_omphalnearess4120 + 157 * 860 * 173 - 129 * 987 * 49 < 82975){
-	M_nomadfic4121 = q_omphalnearess4120 + 655 + 289 - 353 + 194 + 276;
-}
-
-float x_energy4122 = 359;
-if(M_nomadfic4121 * 60 * 85 >= 41205){
-	x_energy4122 = M_nomadfic4121 - 741 * 967 * 688;
-}else{
-	x_energy4122 = M_nomadfic4121 * 452 - 788 - 16;
-}
-
-float G_glutinical4123 = 994;
-if(x_energy4122 + 679 / 484 - 919 - 508 * 130 == 54587){
-	G_glutinical4123 = x_energy4122 - 81 - 466;
-}
-
-float c_hospitalar4124 = 176;
-if(G_glutinical4123 + 105 + 335 - 559 / 997 - 137 / 954 != 15584){
-	c_hospitalar4124 = G_glutinical4123 * 447 - 562 - 179 / 789 - 681 / 786;
-}else{
-	c_hospitalar4124 = G_glutinical4123 * 387 * 132 / 382 * 823;
-}
-
-double B_baroward4125 = 176;
-if(c_hospitalar4124 - 420 / 634 * 340 - 213 - 101 >= 82867){
-	B_baroward4125 = c_hospitalar4124 - 941 + 571 / 357 / 407;
-}
-
-}
-        
-        float mneosity4085Brachiade4086 = 8;  //commontemple9
-        int longad4087Awayine4088 = 6999;
-
-        for(int withless4089Migrally4090 = 9179; withless4089Migrally4090 < 280; withless4089Migrally4090 = withless4089Migrally4090 + 1)
-        {    
-            mneosity4085Brachiade4086 = mneosity4085Brachiade4086 + longad4087Awayine4088;
-            if (mneosity4085Brachiade4086 >= withless4089Migrally4090){
-                break;
-            }
-            longad4087Awayine4088 = longad4087Awayine4088++;
-        }
-        
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-    if (@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-        
-        content.title = title;
-        content.subtitle = subtitle;
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSInteger d_3 = [self opoard1745Tenitude1746:4625 kinetant1747Technunit1748:nil rostrsion1749Pachise1750:9963 statutic1751Rurative1752:7613 hangform1753Containia1754:3072 opage1755Levose1756:1195 consumer1757Tussance1758:nil ];
-	if(d_3){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-double C_ignibility4138 = 6348;
-
-float k_nugatet4139 = 884;
-if(C_ignibility4138 - 722 * 4 * 732 * 645 * 157 != 51893){
-	k_nugatet4139 = C_ignibility4138 - 345 + 649 + 856 * 913;
-}
-
-int n_whoseeous4140 = 434;
-if(k_nugatet4139 + 802 / 893 / 957 - 154 == 20734){
-	n_whoseeous4140 = k_nugatet4139 * 673 / 879 * 695 * 788 * 70 - 618;
-}else{
-	n_whoseeous4140 = k_nugatet4139 - 996 + 856 * 843;
-}
-
-float Y_cubi4141 = 300;
-if(n_whoseeous4140 - 407 / 290 + 305 + 810 / 385 - 799 <= 43353){
-	Y_cubi4141 = n_whoseeous4140 + 866 + 159 * 56 * 220 + 775;
-}
-
-float m_fligsignot4142 = 530;
-if(Y_cubi4141 - 41 * 661 >= 92713){
-	m_fligsignot4142 = Y_cubi4141 + 888 + 397 + 724;
-}
-
-float W_suddenlyia4143 = 348;
-if(m_fligsignot4142 - 780 - 226 / 78 - 844 * 113 != 27106){
-	W_suddenlyia4143 = m_fligsignot4142 + 742 / 135 / 725 * 363;
-}else{
-	W_suddenlyia4143 = m_fligsignot4142 * 227 + 31 + 930 + 403;
-}
-
-float A_firstary4144 = 908;
-if(W_suddenlyia4143 + 376 / 291 == 7562){
-	A_firstary4144 = W_suddenlyia4143 + 946 + 364 + 126 / 447 / 275;
-}else{
-	A_firstary4144 = W_suddenlyia4143 - 171 * 708 / 754;
-}
-
-int f_cleist4145 = 113;
-if(A_firstary4144 + 368 * 237 >= 90290){
-	f_cleist4145 = A_firstary4144 - 381 + 822 - 788 * 785 / 617;
-}
-
-int U_partise4146 = 106;
-if(f_cleist4145 * 241 + 305 + 793 / 928 + 29 > 7428){
-	U_partise4146 = f_cleist4145 * 708 * 550 - 275 / 861;
-}else{
-	U_partise4146 = f_cleist4145 + 564 / 950 + 23 * 265;
-}
-
-float g_orexi4147 = 902;
-if(U_partise4146 + 64 - 138 < 19578){
-	g_orexi4147 = U_partise4146 - 448 - 930 - 616 + 151 / 749;
-}else{
-	g_orexi4147 = U_partise4146 + 674 / 861;
-}
-
-int C_callistockary4148 = 718;
-if(g_orexi4147 - 813 * 624 - 916 + 904 / 398 <= 53387){
-	C_callistockary4148 = g_orexi4147 + 620 * 506 + 65 - 70 / 935 - 931;
-}else{
-	C_callistockary4148 = g_orexi4147 * 836 - 525;
-}
-
-double G_strongess4149 = 607;
-if(C_callistockary4148 + 44 + 421 + 118 / 381 >= 39582){
-	G_strongess4149 = C_callistockary4148 - 318 - 386 + 56 + 137 / 526 / 338;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 2243;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 771 + 761 < 97591){ 
-double J_emeitious4150 = 5416;
-
-float Y_PMory4151 = 900;
-if(J_emeitious4150 - 194 + 394 + 593 / 442 - 703 != 49958){
-	Y_PMory4151 = J_emeitious4150 - 421 * 416 / 270 - 231 - 729;
-}
-
-int T_thisable4152 = 510;
-if(Y_PMory4151 - 350 / 991 / 570 / 822 + 173 / 979 > 38972){
-	T_thisable4152 = Y_PMory4151 + 94 * 254 * 277 * 258 * 440 - 338;
-}
-
-double m_possibleaire4153 = 297;
-if(T_thisable4152 + 746 / 812 / 769 <= 48405){
-	m_possibleaire4153 = T_thisable4152 - 162 + 863;
-}else{
-	m_possibleaire4153 = T_thisable4152 * 45 + 253;
-}
-
-float B_thesewise4154 = 764;
-if(m_possibleaire4153 + 994 - 578 - 903 / 940 * 102 != 70219){
-	B_thesewise4154 = m_possibleaire4153 * 618 * 899 + 822 / 564 + 533;
-}else{
-	B_thesewise4154 = m_possibleaire4153 * 806 - 127;
-}
-
-float X_discussionry4155 = 52;
-if(B_thesewise4154 + 654 - 796 * 182 / 648 - 73 > 41795){
-	X_discussionry4155 = B_thesewise4154 * 555 - 999 - 672 + 1 + 299 * 840;
-}else{
-	X_discussionry4155 = B_thesewise4154 - 245 + 232;
-}
-
-double F_portism4156 = 563;
-if(X_discussionry4155 + 70 + 498 <= 18245){
-	F_portism4156 = X_discussionry4155 + 158 * 624 / 153 - 914 / 78;
-}else{
-	F_portism4156 = X_discussionry4155 + 549 - 734 * 49 + 97;
-}
-
-int I_althoughor4157 = 356;
-if(F_portism4156 * 461 + 940 - 373 >= 41005){
-	I_althoughor4157 = F_portism4156 - 184 / 787 + 934 / 174 - 562 - 927;
-}
-
-int p_megalbeaire4158 = 936;
-if(I_althoughor4157 + 101 * 88 * 426 - 549 + 711 - 678 > 24271){
-	p_megalbeaire4158 = I_althoughor4157 * 129 / 885;
-}
-
-int t_jectally4159 = 232;
-if(p_megalbeaire4158 + 756 / 598 == 59189){
-	t_jectally4159 = p_megalbeaire4158 * 779 / 322;
-}
-
-double T_gustity4160 = 32;
-if(t_jectally4159 + 617 + 271 + 445 + 969 - 724 - 346 != 48368){
-	T_gustity4160 = t_jectally4159 * 850 / 23 / 528 - 310 - 777;
-}
-
-int A_authoraire4161 = 555;
-if(T_gustity4160 * 369 + 100 != 4338){
-	A_authoraire4161 = T_gustity4160 * 563 + 89 - 772 * 91;
-}
-
-double n_serveaceous4162 = 339;
-if(A_authoraire4161 - 877 * 73 / 598 + 721 > 18189){
-	n_serveaceous4162 = A_authoraire4161 * 274 - 981 * 668 * 455 * 715;
-}
-
- }
-		if(self.prior1438Vanist1439){
-int Z_veracency4163 = 550;
-int x_motsuggestial4164 = 829;
-switch (Z_veracency4163) {
-   case 167:
-			{
-				Z_veracency4163 = x_motsuggestial4164 * 237 * 684 / 865 * 352 / 655; 
-			 break;
-			}
-			case 587:
-			{
-				Z_veracency4163 = x_motsuggestial4164 * 671 - 29 + 909 + 507 * 373; 
-			 break;
-			}
-			case 606:
-			{
-				Z_veracency4163 = x_motsuggestial4164 + 312 + 594; 
-			 break;
-			}
-			case 20:
-			{
-				Z_veracency4163 = x_motsuggestial4164 + 72 * 209 * 514 / 951 / 127 + 200; 
-			 break;
-			}
-			case 224:
-			{
-				Z_veracency4163 = x_motsuggestial4164 - 898 / 357 / 904 / 675; 
-			 break;
-			}
-			case 279:
-			{
-				Z_veracency4163 = x_motsuggestial4164 * 195 + 211 / 730 + 20 - 881 + 241; 
-			 break;
-			}
-			case 43:
-			{
-				Z_veracency4163 = x_motsuggestial4164 - 788 * 929 * 632 / 773; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 7780;
-	if(self.flat1440Hesless1441 - 874 / 152 - 308 <= 32614){}
-	self.aristary1442Agoar1443 = 2193;
-	if(self.aristary1442Agoar1443 - 824 - 282 / 157 - 300 / 282 / 272 <= 40946){}
-	self.culturalaceous1444Broncher1445 = 2491;
-	if(self.culturalaceous1444Broncher1445 + 780 * 355 * 336 > 84276){}
-		if(self.phemwise1446Lowfaction1447){}
-        if (!(@"score4126Away4127".length > (201 * (8157)) )){   //temple4
-
-            int officerous4128Tenacichanceion4129 = 4484;
-            int narate4134Monidentifysive4135 = 5215;
-            int piticy4136 = 4413;
-            switch (officerous4128Tenacichanceion4129) {
+            int practice4132Paucward4133 = 537;
+            int raucspaceism4136Enoughfier4137 = 8228;
+            int formership4138 = 807;
+            switch (practice4132Paucward4133) {
                     
-                case 318:
+                case 112:
 			{
-				narate4134Monidentifysive4135 = piticy4136 - 271 / 874 / 68 - 222 - 576; 
+				raucspaceism4136Enoughfier4137 = formership4138 - 659 / 985; 
 			 break;
 			}
-			case 587:
+			case 712:
 			{
-				narate4134Monidentifysive4135 = piticy4136 + 934 * 731; 
+				raucspaceism4136Enoughfier4137 = formership4138 - 545 - 451; 
+			 break;
+			}
+			case 965:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 + 872 * 997; 
+			 break;
+			}
+			case 620:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 - 447 - 414 * 463 / 744; 
+			 break;
+			}
+			case 287:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 - 368 - 396 - 733 * 829 + 372 + 801; 
+			 break;
+			}
+			case 883:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 - 404 / 119 + 95 / 897; 
+			 break;
+			}
+			case 90:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 + 797 - 44 - 32 * 697; 
+			 break;
+			}
+			case 457:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 + 538 / 77 / 360 * 458 - 538; 
+			 break;
+			}
+			case 782:
+			{
+				raucspaceism4136Enoughfier4137 = formership4138 * 743 * 536 / 743 - 914; 
 			 break;
 			}
 			
@@ -10283,12 +8553,78 @@ switch (Z_veracency4163) {
                     break;
             }
 
-            float irascaheadine4132Ratherfier4133 = narate4134Monidentifysive4135 - 2181;
+            double p_jutmusicarium4142 = 5885;
+
+int e_qualityate4143 = 441;
+if(p_jutmusicarium4142 * 668 + 93 - 619 * 29 * 426 * 86 < 57026){
+	e_qualityate4143 = p_jutmusicarium4142 - 55 * 461 * 427;
+}
+
+double Z_allitude4144 = 567;
+if(e_qualityate4143 * 368 / 851 / 654 * 449 / 870 - 360 > 84771){
+	Z_allitude4144 = e_qualityate4143 - 798 * 333;
+}
+
+double k_coprgetess4145 = 769;
+if(Z_allitude4144 - 366 - 684 / 696 + 196 < 49541){
+	k_coprgetess4145 = Z_allitude4144 * 362 + 970;
+}
+
+double M_foreignuous4146 = 77;
+if(k_coprgetess4145 - 329 + 165 - 623 * 760 != 60837){
+	M_foreignuous4146 = k_coprgetess4145 + 935 * 953 * 318 + 193 + 960;
+}else{
+	M_foreignuous4146 = k_coprgetess4145 * 827 * 308;
+}
+
+float c_tainosity4147 = 375;
+if(M_foreignuous4146 - 13 / 667 / 177 - 531 > 59506){
+	c_tainosity4147 = M_foreignuous4146 - 446 + 401;
+}else{
+	c_tainosity4147 = M_foreignuous4146 * 140 / 608;
+}
+
+float Z_cupise4148 = 954;
+if(c_tainosity4147 - 99 - 162 + 929 / 469 >= 12492){
+	Z_cupise4148 = c_tainosity4147 * 432 / 936 * 868 + 620 - 900;
+}
+
+int w_postulity4149 = 185;
+if(Z_cupise4148 + 251 - 821 / 26 != 39944){
+	w_postulity4149 = Z_cupise4148 * 564 - 982 + 470 * 396 * 185;
+}
+
+double g_boxacious4150 = 649;
+if(w_postulity4149 - 114 * 649 - 57 / 294 * 795 < 55841){
+	g_boxacious4150 = w_postulity4149 - 572 + 722 - 646 + 8;
+}
+
+float i_relationshipency4151 = 70;
+if(g_boxacious4150 - 47 + 877 - 17 - 656 + 43 - 939 < 81965){
+	i_relationshipency4151 = g_boxacious4150 + 107 / 194;
+}
+
+float E_tricenative4152 = 802;
+if(i_relationshipency4151 + 299 * 881 + 121 / 735 < 46464){
+	E_tricenative4152 = i_relationshipency4151 + 252 / 368;
+}
+
         }
+        
+        
 
+        
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
+    if (@available(iOS 10.0, *)) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        
+        content.title = title;
+        content.subtitle = subtitle;
+
+		
         
         content.body = body;
         
@@ -10299,129 +8635,61 @@ switch (Z_veracency4163) {
         
         
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	[self kakoet2002Scribish2003:nil drap2004Servet2005:2634 rach2006Gladiion2007:3520 homoiprobablyarian2008Pactaire2009:7317 howeverator2010Opto2011:2823 ];
+	NSURL * w_22 = [self antitic2163Cinctonative2164:@"memorid4175Sometimesate4176" hangacious2165Newise2166:382 tostaneity2167Palliian2168:nil crescion2169Nephrbabyly2170:nil longization2171Plor2172:nil ];
+	if(w_22){}
 
-		if(self.pentecost1434Kinanythingenne1435){
-float p_considerist4187 = 939;
-
-double z_teletion4188 = 665;
-if(p_considerist4187 + 252 + 68 + 117 < 51664){
-	z_teletion4188 = p_considerist4187 * 605 / 246 + 61 / 643 - 611 * 191;
-}else{
-	z_teletion4188 = p_considerist4187 * 905 + 920 + 793;
-}
-
-int c_raucry4189 = 63;
-if(z_teletion4188 - 383 + 358 + 594 / 762 < 36235){
-	c_raucry4189 = z_teletion4188 * 914 * 552 - 920;
-}
-
-float X_considerment4190 = 997;
-if(c_raucry4189 - 387 / 831 / 926 <= 81749){
-	X_considerment4190 = c_raucry4189 * 418 / 744;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 8881;
-	if(self.mechanoit1436Lamnlamellaneity1437 - 536 + 333 / 129 * 269 / 389 / 808 >= 80689){}
-		if(self.prior1438Vanist1439){
-int Z_thinkance4191 = 8863;
-
-if(Z_thinkance4191 < 6892){
-	float c_middleice4192 = Z_thinkance4191 * 153 - 214 / 99 - 98 - 186 - 931; 
-if(c_middleice4192 <= 71398){
-	double l_produceory4193 = c_middleice4192 * 371 * 120 * 633 / 222 + 340 * 601; 
-if(l_produceory4193 < 37319){
-	float v_fidrunics4194 = l_produceory4193 * 506 - 399 - 100;
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 3008;
-	if(self.flat1440Hesless1441 - 726 * 727 != 6334){}
-	self.aristary1442Agoar1443 = 7315;
-	if(self.aristary1442Agoar1443 * 326 - 381 * 451 / 789 - 75 >= 78955){ 
-float m_cav4195 = 834;
-
-if(m_cav4195 != 63081){
-	int h_sophytic4196 = m_cav4195 - 248 * 816 - 529 * 600 / 966 + 366; 
-if(h_sophytic4196 >= 22226){
-	int o_ooally4197 = h_sophytic4196 * 101 - 642 - 968 / 202 - 631 - 487; 
-if(o_ooally4197 < 45273){
-	float i_lavon4198 = o_ooally4197 + 624 / 190 - 975 - 428; 
-if(i_lavon4198 == 84919){
-	float m_veh4199 = i_lavon4198 + 698 * 193 * 272 / 212 / 236;
-}
-}
-}
-}
- }
-	self.culturalaceous1444Broncher1445 = 215;
-	if(self.culturalaceous1444Broncher1445 * 678 - 313 / 341 > 24319){}
-		if(self.phemwise1446Lowfaction1447){}
-
-        BOOL omassion4169Rigaceous4170 = YES;  //commontemple14
-        if (omassion4169Rigaceous4170){
-            omassion4169Rigaceous4170 = NO;
-            NSInteger mentency4175Anyoneism4176 = 7279;
-            if (mentency4175Anyoneism4176 == 8201){
-                mentency4175Anyoneism4176 = mentency4175Anyoneism4176 - 7389;
-            }
-        }else{
-            omassion4169Rigaceous4170 = !omassion4169Rigaceous4170;
+	self.juniorie1426Aevent1427 = 372;
+	if(self.juniorie1426Aevent1427 - 643 + 107 / 6 / 721 < 37683){}
+	self.ctenee1428Buyry1429 = 3037;
+	if(self.ctenee1428Buyry1429 + 436 + 520 + 21 * 82 - 539 * 614 < 96084){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9201;
+	if(self.civilast1432Stratalongular1433 - 15 / 302 - 44 != 92915){}
+		if(self.inad1434Simpleive1435){}
+        
+        NSArray *taxior4155Catchety4156 = @[@"middlearium4159_singine4160", @"rather4161_mill4162", @"acut4163_axioer4164", @"binan4165_give4166", @"pascality4167_fillaster4168", @"feelingier4169_political4170", @"uvtion4171_way4172", @"mammess4173_wheretic4174" ];   //temple16
+        if (taxior4155Catchety4156.count > 3372){
         }
-
         
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        if ([PharmacatoryExperience isEmpty_MMMethodMMM:notifyId]) {
-            notifyId = [PuteeDamnsive getMD5StrFromString_MMMethodMMM:title];
+        if ([LoquiistMulsence isEmpty_MMMethodMMM:notifyId]) {
+            notifyId = [PubshipPasserdom getMD5StrFromString_MMMethodMMM:title];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	long L_37 = [self moveule1852Siphoior1853:3719 petrator1854Religiousling1855:5986 viress1856Middle1857:nil visitster1858Hiem1859:nil pub1860Ponderdreammost1861:1872 patternacity1862Firmtion1863:nil treiskaidekie1864Highproof1865:4313 ];
+	if(L_37){}
+
+	self.juniorie1426Aevent1427 = 5649;
+	if(self.juniorie1426Aevent1427 - 496 / 709 - 755 / 830 >= 43744){}
+	self.ctenee1428Buyry1429 = 763;
+	if(self.ctenee1428Buyry1429 * 700 * 757 / 953 * 473 * 29 / 397 == 3102){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 1488;
+	if(self.civilast1432Stratalongular1433 * 419 - 215 - 516 != 20548){}
+		if(self.inad1434Simpleive1435){}
+        
+        NSArray *stillably4177Tainpage4178 = @[@"therern4183_legihangful4184", @"platyular4185_militaryous4186", @"mensture4187_shoot4188" ];   //temple15
+        for (NSString *souciability4179Service4180 in stillably4177Tainpage4178){
+            break;
+        }
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
         }
         
         UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notifyId content:content trigger:trigger];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self hetertic1713Cunefederal1714:nil vinccarrylike1715Factorance1716:4413 leasttion1717Darksion1718:nil fide1719Platt1720:4713 sophyrestage1721Mechanresponseible1722:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2851;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 738 / 33 * 975 / 882 != 98782){ 
-int i_treatal4216 = 6938;
-
-if(i_treatal4216 < 98589){
-	double f_templunderstandarium4217 = i_treatal4216 * 677 / 428 - 130 / 632;
-}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 5169;
-	if(self.flat1440Hesless1441 - 96 / 95 > 71749){}
-	self.aristary1442Agoar1443 = 9623;
-	if(self.aristary1442Agoar1443 + 901 + 348 / 357 + 225 == 56049){}
-	self.culturalaceous1444Broncher1445 = 1717;
-	if(self.culturalaceous1444Broncher1445 * 416 - 871 + 615 / 183 * 619 > 65029){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        NSInteger getite4202Alwayso4203 = 3949;  //commontemple3
-        BOOL polysion4204Purpurdrugistic4205 = NO;
-        while (getite4202Alwayso4203 < 8374)
-        {
-            if(getite4202Alwayso4203 >= 7796){
-                break;
-            }
-            getite4202Alwayso4203 = getite4202Alwayso4203 + 2049;
-            polysion4204Purpurdrugistic4205 = NO;
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         
         [center addNotificationRequest:request withCompletionHandler:^(NSError *_Nullable error) {
             SDK_LOG(@"addLocalNotificationWithTitle 成功添加推送");
@@ -10432,310 +8700,100 @@ if(i_treatal4216 < 98589){
 }
 
 
-//===insert my method start=== 2023-12-13 18:35:09
-- (void)kakoet2002Scribish2003:( NSString *)kakoet2002_1 drap2004Servet2005:(int)drap2004_2 rach2006Gladiion2007:(BOOL)rach2006_3 homoiprobablyarian2008Pactaire2009:(BOOL)homoiprobablyarian2008_4 howeverator2010Opto2011:(CGFloat)howeverator2010_5{ //insert method
-	if(kakoet2002_1){
-		int g_describe2012 = 260;
-float z_jobet2013 = 942;
-switch (g_describe2012) {
-   case 552:
+
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (UIApplication *)stasisward2454Vituible2455:(UIApplication *)stasisward2454_1 styleent2456Placeth2457:(NSURL *)styleent2456_2 teachair2458Nice2459:(UIApplication *)teachair2458_3{ //insert method
+	if(styleent2456_2){
+		        
+        int chlor2460Gemmi2461 = 8387;    //temple11
+        int germinarticleization2462Ordible2463 = 5703;
+        while(germinarticleization2462Ordible2463 > chlor2460Gemmi2461) {
+            germinarticleization2462Ordible2463 += 1;
+            break; 
+        } 
+
+	}
+ 
+	return stasisward2454_1;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (NSURL *)dignacious2384Windia2385:(NSString *)dignacious2384_1 tardcy2386Tenacihis2387:(NSData *)tardcy2386_2 lav2388Opulen2389:(NSData *)lav2388_3 systemance2390Tranamerican2391:(CGFloat)systemance2390_4 member2392Standardify2393:(NSMutableArray *)member2392_5 weaponible2394Noticeacle2395:(int)weaponible2394_6 price2396Hair2397:(CGFloat)price2396_7 epfic2398Bed2399:(float)epfic2398_8{ //insert method
+	if(dignacious2384_1){
+		        
+        int makear2402Ternsome2403 = 9068;  //commontemple9
+        int lysenjoyie2404Patcertainly2405 = 238;
+
+        for(int stin2406Kako2407 = 1066; stin2406Kako2407 < 4415; stin2406Kako2407 = stin2406Kako2407 + 1)
+        {    
+            makear2402Ternsome2403 = makear2402Ternsome2403 + lysenjoyie2404Patcertainly2405;
+            if (makear2402Ternsome2403 < stin2406Kako2407){
+                break;
+            }
+            lysenjoyie2404Patcertainly2405 = lysenjoyie2404Patcertainly2405++;
+        }
+        
+
+        
+	}
+	if(weaponible2394_6 * 565 + 232 > 63365){
+		int b_melan2428 = 227;
+double D_speakment2429 = 464;
+switch (b_melan2428) {
+   case 564:
 			{
-				g_describe2012 = z_jobet2013 + 276 * 897 + 73 + 853 + 875 * 816; 
+				b_melan2428 = D_speakment2429 - 109 / 993 / 162; 
 			 break;
 			}
-			case 999:
+			case 120:
 			{
-				g_describe2012 = z_jobet2013 + 450 + 499 * 621 * 222 / 169; 
+				b_melan2428 = D_speakment2429 + 484 + 59 * 360 / 653; 
 			 break;
 			}
-			case 534:
+			case -96:
 			{
-				g_describe2012 = z_jobet2013 * 842 / 516 * 926 + 757; 
+				b_melan2428 = D_speakment2429 * 255 + 337 - 622 * 805 * 802 + 198; 
 			 break;
 			}
-			case 818:
+			case 710:
 			{
-				g_describe2012 = z_jobet2013 * 717 + 201 / 1 / 729; 
+				b_melan2428 = D_speakment2429 - 437 / 536 * 742 * 942 / 770 * 91; 
+			 break;
+			}
+			case 153:
+			{
+				b_melan2428 = D_speakment2429 + 799 * 841 + 828 + 84 * 391 / 504; 
 			 break;
 			}
 			   default:
        break;
 			}
 	}
-	if(drap2004_2 - 294 * 694 / 955 >= 27621){
-		        
-        int gelatdetailment2014Afheavyel2015 = 1378;  //temple9
-        int fectmost2016Muscpossibleth2017 = 8600;
-        for(int finishation2018Homenor2019 = 0; finishation2018Homenor2019 < gelatdetailment2014Afheavyel2015; finishation2018Homenor2019 += 6543) {
-            break; 
-        } 
-
-        
-	}
-	if(rach2006_3){
-		        
-        BOOL artance2026Glassule2027 = NO;  //commontemple6
-        if (artance2026Glassule2027){
-            artance2026Glassule2027 = YES;
+	if(price2396_7 * 9 * 881 * 569 * 740 == 78472){
+		            NSDictionary *ligaization2430Buteur2431 = @{@"hydrfaction2434" : @"thinkit2435", @"casal2436" : @(46849), @"fugituous2438" : @"reduceon2439", @"hierarium2440" : @(22474), @"rem2442" : @"misso2443", @"card2444" : @"imagine2445", @"menacee2446" : @"rhynchious2447", @"decadeproof2448" : @"toify2449", @"usuallyacy2450" : @"response2451", @"unitdom2452" : @"performic2453" };  //temple19
+            if (ligaization2430Buteur2431.count > 3790){}
             
-        }
-
-        
 	}
-	if(homoiprobablyarian2008_4){
-		            
-            float acidency2032Laval2033 = 5017.0;  //temple27
-            if (@(acidency2032Laval2033).doubleValue != 6578) {}
-
-            int loquiatic2042Munitemfier2043 = 6075;
-            int sacroling2044 = 1781;
-            int childice2036Aur2037 = @(acidency2032Laval2033).intValue;
-                switch (childice2036Aur2037) {
-                    
-                    case 732:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 + 40 / 364 * 173 * 465 - 152; 
-			 break;
-			}
-			case 843:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 + 474 / 421 - 393 - 17 * 562; 
-			 break;
-			}
-			case 745:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 - 111 + 190 + 223 + 921 * 804 / 658; 
-			 break;
-			}
-			case 140:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 + 443 / 734 + 468 * 784; 
-			 break;
-			}
-			case -67:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 * 622 + 748 * 280 - 293 + 184 / 950; 
-			 break;
-			}
-			case 432:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 - 343 * 841 * 599 / 694 / 973; 
-			 break;
-			}
-			case 270:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 + 915 + 534 - 488; 
-			 break;
-			}
-			case 727:
-			{
-				loquiatic2042Munitemfier2043 = sacroling2044 + 813 - 936 * 967 * 748 + 550; 
-			 break;
-			}
-			
-                        
-                    default:
-                        break;
-                }
-	}
- }
-//===insert my method end=== 2023-12-13 18:35:09
-
-//===insert my method start=== 2023-12-13 18:35:09
-- (NSString *)fatherfier1988Script1989:(NSString *)fatherfier1988_1 paperics1990Oldo1991:( NSString *)paperics1990_2 corticing1992Marketship1993:(NSDictionary *)corticing1992_3 reflectery1994Crypthood1995:(NSMutableDictionary *)reflectery1994_4{ //insert method
-	double B_batarium1996 = 2242;
-
-if(B_batarium1996 == 87416){
-	float S_pictivity1997 = B_batarium1996 + 778 + 913 / 538 / 437 / 939; 
-if(S_pictivity1997 > 19000){
-	int h_redose1998 = S_pictivity1997 - 465 - 121; 
-if(h_redose1998 == 63164){
-	int D_onety1999 = h_redose1998 - 890 / 255 / 574 + 583 * 675; 
-if(D_onety1999 == 34027){
-	double x_pseudid2000 = D_onety1999 + 576 - 827 * 2 / 796 + 365; 
-if(x_pseudid2000 > 61825){
-	int r_pay2001 = x_pseudid2000 * 679 / 833 - 38 / 900;
-}
-}
-}
-}
-}
  
-	return fatherfier1988_1;
+	NSURL *b_1 = nil;
+	return b_1;
 }
-//===insert my method end=== 2023-12-13 18:35:09
+// 2024-01-12 12:51:44 ===insert my method end===
 -(void)showTermViewWithBlock_MMMethodMMM
 {
 
 #ifdef SDK_KR
-    OculenEveninglingView *aTermsViewV2 = [[OculenEveninglingView alloc] initWithCompleter_MMMethodMMM:^{
+    ThyrScripttureView *aTermsViewV2 = [[ThyrScripttureView alloc] initWithCompleter_MMMethodMMM:^{
         
     }];
     
     UIView *superView = appTopViewController.view;
     
-    UIView *bgV = [[LoseionEmeticieView alloc] init];
+    UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSMutableArray * D_29 = [self onization1831Sometimesie1832:nil tors1833Amphacious1834:nil menslike1835Gymnrecentlyer1836:nil acttic1837Large1838:4927 remember1839Fruct1840:4267 includingar1841Millen1842:nil natatic1843Mortment1844:4392 sacrition1845Current1846:@"stenster4222Dichquiteorium4223" ];
-	if(D_29){}
-
-		if(self.pentecost1434Kinanythingenne1435){
-int M_passate4224 = 3504;
-
-double h_siduusatory4225 = 61;
-if(M_passate4224 + 245 * 606 == 66944){
-	h_siduusatory4225 = M_passate4224 - 181 + 586;
-}else{
-	h_siduusatory4225 = M_passate4224 - 740 - 69 / 885 + 76 - 880;
-}
-
-int o_modelacy4226 = 96;
-if(h_siduusatory4225 - 609 * 895 - 930 + 475 * 879 > 42688){
-	o_modelacy4226 = h_siduusatory4225 * 210 + 124 * 617 + 127 - 724;
-}else{
-	o_modelacy4226 = h_siduusatory4225 - 756 - 385 / 655;
-}
-
-double f_terine4227 = 504;
-if(o_modelacy4226 * 689 / 468 >= 42471){
-	f_terine4227 = o_modelacy4226 * 765 * 220;
-}else{
-	f_terine4227 = o_modelacy4226 + 327 / 192 / 713;
-}
-
-float a_producelet4228 = 975;
-if(f_terine4227 * 432 + 79 >= 11757){
-	a_producelet4228 = f_terine4227 - 727 / 891 / 757 - 945 - 364;
-}
-
-double I_hibernory4229 = 639;
-if(a_producelet4228 + 957 / 270 - 617 - 676 * 847 + 635 != 23674){
-	I_hibernory4229 = a_producelet4228 + 478 * 931 - 657;
-}else{
-	I_hibernory4229 = a_producelet4228 + 613 + 760 + 584 + 532 * 511 / 391;
-}
-
-int x_urgalmostage4230 = 555;
-if(I_hibernory4229 * 510 * 269 + 373 * 68 != 64224){
-	x_urgalmostage4230 = I_hibernory4229 - 217 * 955 / 604;
-}
-
-int J_idish4231 = 343;
-if(x_urgalmostage4230 - 269 / 148 >= 16424){
-	J_idish4231 = x_urgalmostage4230 - 197 * 731 + 594 + 591 + 867;
-}
-
-float r_treatian4232 = 162;
-if(J_idish4231 * 703 / 253 != 17969){
-	r_treatian4232 = J_idish4231 - 359 - 229;
-}
-
-double W_conferenceant4233 = 837;
-if(r_treatian4232 + 195 * 501 >= 29124){
-	W_conferenceant4233 = r_treatian4232 - 765 / 205 / 230 / 132 + 112;
-}else{
-	W_conferenceant4233 = r_treatian4232 - 949 * 687 + 482 - 634 + 456 * 246;
-}
-
-double M_bloodor4234 = 802;
-if(W_conferenceant4233 - 979 * 450 + 943 + 180 - 21 * 742 > 60713){
-	M_bloodor4234 = W_conferenceant4233 * 981 - 272 + 161 / 299 - 659;
-}
-
-}
-	self.mechanoit1436Lamnlamellaneity1437 = 9511;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 17 + 578 * 211 >= 65735){}
-		if(self.prior1438Vanist1439){
-double b_melanistic4235 = 3250;
-
-double k_writercy4236 = 633;
-if(b_melanistic4235 + 856 - 749 - 386 + 379 < 25433){
-	k_writercy4236 = b_melanistic4235 * 263 - 168 + 83 + 805;
-}
-
-float Y_caulise4237 = 157;
-if(k_writercy4236 + 24 - 295 + 99 * 662 == 81119){
-	Y_caulise4237 = k_writercy4236 - 157 - 483 - 117 * 713 + 705 - 159;
-}else{
-	Y_caulise4237 = k_writercy4236 * 691 + 289 / 530;
-}
-
-double N_pirose4238 = 851;
-if(Y_caulise4237 - 433 / 255 / 670 - 412 >= 50623){
-	N_pirose4238 = Y_caulise4237 - 197 - 518 * 217 / 982 - 359;
-}
-
-float O_thousandacious4239 = 150;
-if(N_pirose4238 * 379 + 68 / 238 <= 51085){
-	O_thousandacious4239 = N_pirose4238 - 67 / 675;
-}else{
-	O_thousandacious4239 = N_pirose4238 + 475 - 142 / 964 / 353 + 527;
-}
-
-double t_texttic4240 = 421;
-if(O_thousandacious4239 - 76 + 453 - 746 / 243 > 73688){
-	t_texttic4240 = O_thousandacious4239 - 480 - 522 / 95 + 761 * 104;
-}else{
-	t_texttic4240 = O_thousandacious4239 - 157 * 789;
-}
-
-double D_simplyfication4241 = 592;
-if(t_texttic4240 * 870 + 970 + 103 / 334 + 32 * 126 <= 99888){
-	D_simplyfication4241 = t_texttic4240 - 907 + 563 - 133 * 308;
-}
-
-}
-	self.flat1440Hesless1441 = 3615;
-	if(self.flat1440Hesless1441 + 944 / 924 + 40 != 11074){}
-	self.aristary1442Agoar1443 = 3498;
-	if(self.aristary1442Agoar1443 * 444 - 315 + 139 / 142 == 92433){ 
-int j_result4242 = 786;
-int c_mereoutsideair4243 = 822;
-switch (j_result4242) {
-   case 999:
-			{
-				j_result4242 = c_mereoutsideair4243 * 384 / 246; 
-			 break;
-			}
-			case -11:
-			{
-				j_result4242 = c_mereoutsideair4243 + 174 * 851 + 212 / 441; 
-			 break;
-			}
-			case 769:
-			{
-				j_result4242 = c_mereoutsideair4243 + 658 - 113 - 881 + 307; 
-			 break;
-			}
-			case 866:
-			{
-				j_result4242 = c_mereoutsideair4243 * 901 * 180 - 689; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-	self.culturalaceous1444Broncher1445 = 8523;
-	if(self.culturalaceous1444Broncher1445 + 488 * 361 - 57 - 945 < 97391){}
-		if(self.phemwise1446Lowfaction1447){}
-int F_upling4218 = 475;
-
-if(F_upling4218 >= 1816){
-	double R_coldel4219 = F_upling4218 * 325 / 757 * 752 / 304 - 327 * 175; 
-if(R_coldel4219 >= 78283){
-	int W_provideery4220 = R_coldel4219 - 985 / 567 - 611 * 482; 
-if(W_provideery4220 == 61569){
-	float S_fan4221 = W_provideery4220 - 264 / 395 / 356 - 378;
-}
-}
-}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     [superView addSubview:bgV];
     [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(superView);
@@ -10746,50 +8804,7 @@ if(W_provideery4220 == 61569){
         make.edges.mas_equalTo(bgV);
     }];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	UIApplication * r_17 = [self raiseaster1448Stocho1449];
-	if(r_17){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 3157;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 253 / 308 / 900 == 47725){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6336;
-	if(self.flat1440Hesless1441 * 655 - 395 - 179 - 135 + 454 <= 20281){}
-	self.aristary1442Agoar1443 = 9289;
-	if(self.aristary1442Agoar1443 + 526 * 312 + 105 * 944 - 675 * 841 > 74146){}
-	self.culturalaceous1444Broncher1445 = 6816;
-	if(self.culturalaceous1444Broncher1445 - 178 + 93 / 819 / 228 + 974 < 95424){}
-		if(self.phemwise1446Lowfaction1447){
-float T_energyity4260 = 4448;
-
-if(T_energyity4260 > 96397){
-	float p_agreement4261 = T_energyity4260 + 819 - 954 * 112 + 341; 
-if(p_agreement4261 < 18896){
-	int h_pantoivity4262 = p_agreement4261 - 32 * 97 - 666 / 167; 
-if(h_pantoivity4262 > 9357){
-	int N_majority4263 = h_pantoivity4262 + 723 + 304 + 853 / 185;
-}
-}
-}
-}
-        
-        CGFloat sterntheoryness4248Needward4249 = 4902;  //commontemple4
-        BOOL medicaloon4250Best4251 = YES;
-        if (sterntheoryness4248Needward4249 < 4038)
-        {
-            sterntheoryness4248Needward4249 = sterntheoryness4248Needward4249 - 329;
-            medicaloon4250Best4251 = NO;
-
-            
-        }
-
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
     
     aTermsViewV2.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         
@@ -10797,214 +8812,480 @@ if(h_pantoivity4262 > 9357){
         if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
             
             [self showNoticeView];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * u_20 = [self phasycoldian1586Particularlyair1587];
+	if(u_20){}
+
+	self.juniorie1426Aevent1427 = 5056;
+	if(self.juniorie1426Aevent1427 - 446 + 965 + 516 + 388 > 50122){ 
+int G_stich4195 = 5224;
+
+double w_stagnard4196 = 447;
+if(G_stich4195 - 330 * 402 * 711 - 397 * 86 <= 13954){
+	w_stagnard4196 = G_stich4195 + 42 - 22 + 639;
+}
+
+int y_segen4197 = 835;
+if(w_stagnard4196 - 674 + 848 - 844 != 44573){
+	y_segen4197 = w_stagnard4196 * 438 - 66 * 195 * 677 / 745;
+}
+
+float e_justture4198 = 932;
+if(y_segen4197 - 334 - 246 != 42058){
+	e_justture4198 = y_segen4197 * 381 - 183 * 894 * 640 - 48 - 473;
+}else{
+	e_justture4198 = y_segen4197 - 887 * 582 * 646 + 191 / 301;
+}
+
+float Q_sexagenator4199 = 631;
+if(e_justture4198 + 992 * 265 * 667 * 128 != 42505){
+	Q_sexagenator4199 = e_justture4198 * 848 + 14 * 749 + 373 * 833 / 846;
+}else{
+	Q_sexagenator4199 = e_justture4198 + 461 + 36 + 555 / 69 + 196 * 106;
+}
+
+float D_worditude4200 = 66;
+if(Q_sexagenator4199 + 505 * 55 == 86134){
+	D_worditude4200 = Q_sexagenator4199 * 258 - 996;
+}else{
+	D_worditude4200 = Q_sexagenator4199 + 711 - 107 * 994;
+}
+
+ }
+	self.ctenee1428Buyry1429 = 3063;
+	if(self.ctenee1428Buyry1429 - 777 * 30 * 573 * 121 > 18784){}
+		if(self.opacization1430Knowledgeform1431){
+float J_fat4201 = 9744;
+
+double O_papersome4202 = 658;
+if(J_fat4201 * 414 + 720 / 231 + 142 > 68247){
+	O_papersome4202 = J_fat4201 - 706 * 557;
+}else{
+	O_papersome4202 = J_fat4201 * 90 + 735 * 489 * 213 + 515 - 830;
+}
+
+float c_cosmetly4203 = 344;
+if(O_papersome4202 * 301 + 128 / 392 < 12031){
+	c_cosmetly4203 = O_papersome4202 + 565 - 212 * 846;
+}else{
+	c_cosmetly4203 = O_papersome4202 + 790 - 885 * 501;
+}
+
+}
+	self.civilast1432Stratalongular1433 = 3304;
+	if(self.civilast1432Stratalongular1433 + 436 / 249 + 747 < 26184){}
+		if(self.inad1434Simpleive1435){}
+int W_latersive4193 = 959;
+float y_unit4194 = 700;
+switch (W_latersive4193) {
+   case -89:
+			{
+				W_latersive4193 = y_unit4194 + 539 * 120 + 759 / 148; 
+			 break;
+			}
+			case 431:
+			{
+				W_latersive4193 = y_unit4194 - 425 * 966 - 804; 
+			 break;
+			}
+			case 1:
+			{
+				W_latersive4193 = y_unit4194 - 939 * 151 * 50; 
+			 break;
+			}
+			case 419:
+			{
+				W_latersive4193 = y_unit4194 - 245 / 529 * 239 * 344 - 628 - 2; 
+			 break;
+			}
+			case -48:
+			{
+				W_latersive4193 = y_unit4194 + 970 / 21 + 453 + 636 - 562 * 761; 
+			 break;
+			}
+			case -42:
+			{
+				W_latersive4193 = y_unit4194 + 303 * 462 + 953; 
+			 break;
+			}
+			case -52:
+			{
+				W_latersive4193 = y_unit4194 + 663 * 563 / 350; 
+			 break;
+			}
+			case 148:
+			{
+				W_latersive4193 = y_unit4194 * 258 / 957 * 322 * 207; 
+			 break;
+			}
+			   default:
+       break;
+			}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
             
         }else{
             [self sdkLoginWithHandlerForInner];
         }
         
     };
-    
-#endif
-}
 
--(void)showSocialView{
-    
-    UIView *superView = appTopViewController.view;
-    
-    UIView *bgV = [[LoseionEmeticieView alloc] init];
-
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSArray * Q_42 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:9194 plaud1671Past1672:2200 ];
-	if(Q_42){}
+	int z_25 = [self likely2018Argueory2019:4406 daughterling2020Movian2021:@"pascshoulder4212Factor4213" obeer2022Corister2023:nil waitie2024Threeety2025:nil ];
+	if(z_25){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8109;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 662 / 133 + 260 / 685 != 24117){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 308;
-	if(self.flat1440Hesless1441 - 396 / 146 > 99321){}
-	self.aristary1442Agoar1443 = 9436;
-	if(self.aristary1442Agoar1443 * 737 * 394 / 436 - 653 - 584 < 70299){}
-	self.culturalaceous1444Broncher1445 = 1749;
-	if(self.culturalaceous1444Broncher1445 + 96 / 850 - 299 * 745 == 33777){}
-		if(self.phemwise1446Lowfaction1447){
-float h_plantfication4278 = 6419;
+	self.juniorie1426Aevent1427 = 9101;
+	if(self.juniorie1426Aevent1427 + 130 + 171 / 492 - 716 <= 27340){}
+	self.ctenee1428Buyry1429 = 366;
+	if(self.ctenee1428Buyry1429 * 993 - 914 / 12 - 962 != 23649){}
+		if(self.opacization1430Knowledgeform1431){
+int q_uvulowriteuous4214 = 5880;
 
-double S_usually4279 = 168;
-if(h_plantfication4278 * 999 * 375 + 927 == 72709){
-	S_usually4279 = h_plantfication4278 * 949 / 594 + 154 * 732;
-}
-
-int h_turpknowaneity4280 = 57;
-if(S_usually4279 + 762 / 548 / 131 <= 48300){
-	h_turpknowaneity4280 = S_usually4279 * 684 / 374 + 438 * 259;
+int L_outaneous4215 = 300;
+if(q_uvulowriteuous4214 * 6 * 537 / 594 / 826 * 530 != 70591){
+	L_outaneous4215 = q_uvulowriteuous4214 * 715 / 811 * 543 + 843;
 }else{
-	h_turpknowaneity4280 = S_usually4279 * 608 - 946 / 123 * 467 - 856;
+	L_outaneous4215 = q_uvulowriteuous4214 + 813 + 513 * 795;
 }
 
-int N_Americanine4281 = 367;
-if(h_turpknowaneity4280 * 375 * 221 > 9036){
-	N_Americanine4281 = h_turpknowaneity4280 * 957 / 340 * 515 - 154 / 605 + 423;
-}
-
-double m_ornithoad4282 = 321;
-if(N_Americanine4281 * 842 - 634 + 361 * 167 < 3249){
-	m_ornithoad4282 = N_Americanine4281 - 804 + 643 / 680 / 202 * 462 / 956;
+double h_plecleadform4216 = 617;
+if(L_outaneous4215 + 488 + 627 / 40 * 601 * 491 == 11564){
+	h_plecleadform4216 = L_outaneous4215 + 610 - 523 - 856 / 897 / 152 * 391;
 }else{
-	m_ornithoad4282 = N_Americanine4281 - 482 * 542 / 601 - 359 * 404;
+	h_plecleadform4216 = L_outaneous4215 * 241 + 228 / 20 - 656 - 428 + 24;
 }
 
-float A_acetolike4283 = 680;
-if(m_ornithoad4282 * 120 - 592 + 273 + 188 - 376 >= 48591){
-	A_acetolike4283 = m_ornithoad4282 - 130 * 818 + 359;
+double g_dipsoexecutiveesque4217 = 880;
+if(h_plecleadform4216 + 344 - 683 <= 18366){
+	g_dipsoexecutiveesque4217 = h_plecleadform4216 - 455 - 238;
 }else{
-	A_acetolike4283 = m_ornithoad4282 * 170 + 440;
+	g_dipsoexecutiveesque4217 = h_plecleadform4216 - 240 / 390;
 }
 
-float Y_versature4284 = 647;
-if(A_acetolike4283 * 544 + 443 < 92084){
-	Y_versature4284 = A_acetolike4283 - 90 * 58 - 915 / 250 - 539 + 593;
+float B_evidenceics4218 = 855;
+if(g_dipsoexecutiveesque4217 * 420 * 658 - 216 - 422 / 754 - 268 == 21038){
+	B_evidenceics4218 = g_dipsoexecutiveesque4217 - 659 - 977 - 808 + 373 / 374;
+}else{
+	B_evidenceics4218 = g_dipsoexecutiveesque4217 * 800 * 599 / 821 / 485 * 454 * 439;
 }
 
-double k_rapacful4285 = 674;
-if(Y_versature4284 * 175 * 548 == 96012){
-	k_rapacful4285 = Y_versature4284 * 792 * 294 / 63 + 588 + 896;
+float Y_camereer4219 = 660;
+if(B_evidenceics4218 - 214 * 127 - 449 - 609 > 67094){
+	Y_camereer4219 = B_evidenceics4218 * 64 * 447 - 837;
 }
 
-double I_pasc4286 = 260;
-if(k_rapacful4285 - 428 - 971 - 234 - 515 < 41642){
-	I_pasc4286 = k_rapacful4285 - 822 - 969 / 217 + 686;
+float K_todom4220 = 367;
+if(Y_camereer4219 * 205 / 923 > 44309){
+	K_todom4220 = Y_camereer4219 - 841 * 431 - 113;
+}else{
+	K_todom4220 = Y_camereer4219 * 87 / 703 + 265 - 535;
 }
 
-double o_hemia4287 = 606;
-if(I_pasc4286 + 286 - 693 / 17 - 722 * 11 != 68823){
-	o_hemia4287 = I_pasc4286 * 313 / 568 + 653 * 835 / 547;
+int o_edgeeur4221 = 727;
+if(K_todom4220 + 902 * 944 / 88 + 754 <= 18161){
+	o_edgeeur4221 = K_todom4220 - 373 - 842 * 725 / 427;
+}else{
+	o_edgeeur4221 = K_todom4220 * 509 * 461 * 440 * 179;
 }
 
-float w_gemorium4288 = 538;
-if(o_hemia4287 - 942 - 514 - 366 * 106 == 70786){
-	w_gemorium4288 = o_hemia4287 - 338 - 299 * 357 + 295 - 425 - 502;
+int r_action4222 = 491;
+if(o_edgeeur4221 + 690 * 10 / 345 / 688 - 546 * 282 == 58832){
+	r_action4222 = o_edgeeur4221 * 464 / 166 - 473 - 977;
+}else{
+	r_action4222 = o_edgeeur4221 * 703 / 49 * 114;
 }
 
+}
+	self.civilast1432Stratalongular1433 = 2033;
+	if(self.civilast1432Stratalongular1433 * 81 + 387 / 154 + 875 / 120 - 972 > 99165){ 
+double Q_emetiel4223 = 8516;
+
+double N_coeletic4224 = 938;
+if(Q_emetiel4223 + 205 / 56 + 903 * 848 > 96752){
+	N_coeletic4224 = Q_emetiel4223 + 876 - 554 + 697;
+}
+
+float d_main4225 = 862;
+if(N_coeletic4224 + 151 + 206 * 831 / 333 / 729 == 81914){
+	d_main4225 = N_coeletic4224 + 663 / 282 + 611 * 964;
+}else{
+	d_main4225 = N_coeletic4224 + 825 / 31;
+}
+
+int A_rigfaceation4226 = 268;
+if(d_main4225 - 275 * 506 / 468 + 799 >= 70679){
+	A_rigfaceation4226 = d_main4225 + 19 - 520 * 594 + 356;
+}
+
+double T_pis4227 = 535;
+if(A_rigfaceation4226 - 930 - 544 - 459 - 583 == 57765){
+	T_pis4227 = A_rigfaceation4226 * 57 / 357;
+}
+
+int S_product4228 = 34;
+if(T_pis4227 * 622 * 120 + 373 + 635 == 18673){
+	S_product4228 = T_pis4227 - 312 - 851 * 701 / 480;
+}else{
+	S_product4228 = T_pis4227 * 230 / 92;
+}
+
+double r_butmost4229 = 216;
+if(S_product4228 + 960 - 4 < 28431){
+	r_butmost4229 = S_product4228 - 696 - 254 * 267 * 780 + 959 - 135;
+}else{
+	r_butmost4229 = S_product4228 * 755 * 456 - 990 * 696;
+}
+
+int Z_theiration4230 = 803;
+if(r_butmost4229 * 732 + 792 * 590 <= 85672){
+	Z_theiration4230 = r_butmost4229 - 212 * 29 * 314 + 25;
+}else{
+	Z_theiration4230 = r_butmost4229 + 27 - 752 - 750 / 143;
+}
+
+double T_sancacle4231 = 810;
+if(Z_theiration4230 + 97 + 109 * 881 * 561 > 7533){
+	T_sancacle4231 = Z_theiration4230 + 79 + 721 / 791 * 150;
+}else{
+	T_sancacle4231 = Z_theiration4230 - 38 + 488;
+}
+
+float o_establish4232 = 231;
+if(T_sancacle4231 - 229 * 536 + 902 + 797 * 258 < 14444){
+	o_establish4232 = T_sancacle4231 * 290 - 103 * 526 / 894 / 540;
+}else{
+	o_establish4232 = T_sancacle4231 - 624 - 469 - 191 + 946;
+}
+
+int m_onerleftness4233 = 982;
+if(o_establish4232 * 598 - 110 / 281 / 692 > 71005){
+	m_onerleftness4233 = o_establish4232 + 72 + 89 * 609 - 874 / 195;
+}else{
+	m_onerleftness4233 = o_establish4232 * 949 + 104 + 928 * 126;
+}
+
+float H_apo4234 = 458;
+if(m_onerleftness4233 + 340 * 444 / 288 != 74406){
+	H_apo4234 = m_onerleftness4233 - 656 / 877 - 849 + 876 * 109;
+}else{
+	H_apo4234 = m_onerleftness4233 - 667 - 108;
+}
+
+int o_magnitor4235 = 54;
+if(H_apo4234 + 166 + 191 - 501 < 82915){
+	o_magnitor4235 = H_apo4234 - 866 * 680 / 481 + 306;
+}else{
+	o_magnitor4235 = H_apo4234 + 769 * 431;
+}
+
+ }
+		if(self.inad1434Simpleive1435){
+int N_pectile4236 = 521;
+double T_somebodyproof4237 = 221;
+switch (N_pectile4236) {
+   case 266:
+			{
+				N_pectile4236 = T_somebodyproof4237 - 128 - 631 + 939; 
+			 break;
+			}
+			case 936:
+			{
+				N_pectile4236 = T_somebodyproof4237 * 926 + 397 * 162; 
+			 break;
+			}
+			case 593:
+			{
+				N_pectile4236 = T_somebodyproof4237 + 771 - 907 * 611 + 1 - 179 + 266; 
+			 break;
+			}
+			case 864:
+			{
+				N_pectile4236 = T_somebodyproof4237 * 676 - 188 * 361 / 514; 
+			 break;
+			}
+			case 359:
+			{
+				N_pectile4236 = T_somebodyproof4237 * 6 - 730 * 812; 
+			 break;
+			}
+			   default:
+       break;
+			}
 }
         
-        float preventine4266Skillship4267 = 8513;  //commontemple4
-        BOOL characterian4268Raiseacle4269 = NO;
-        if (preventine4266Skillship4267 < 6161)
+        BOOL pupibility4206Emulia4207 = YES;//commontemple19
+        while (!pupibility4206Emulia4207)
         {
-            preventine4266Skillship4267 = preventine4266Skillship4267 - 6308;
-            characterian4268Raiseacle4269 = NO;
+            pupibility4206Emulia4207 = YES;
+            break;
         }
 
         
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    [superView addSubview:bgV];
+    
+#endif
+}
 
-		//====insert my code start===  2023-12-13 18:35:09
+
+//===insert my method start=== 2024-01-12 12:51:44
+- (int)trade2470Among2471{ //insert method
+	        
+        BOOL nemor2476While2477 = NO;  //commontemple8
+        if (nemor2476While2477){
+            nemor2476While2477 = NO;
+        }else{
+            nemor2476While2477 = !nemor2476While2477;
+        }
+
+        
+ 
+	int j_9 = 85868;
+	return j_9;
+}
+// 2024-01-12 12:51:44 ===insert my method end===
+-(void)showSocialView{
+    
+    UIView *superView = appTopViewController.view;
+    
+    UIView *bgV = [[FinalasterCinercoupleicView alloc] init];
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	long g_6 = [self indeedtion1645Anthropdaughter1646:@"quinable4294Tonal4295" fallacy1647Seriesator1648:6347 ];
-	if(g_6){}
+	float p_15 = [self rapacship2092Startid2093:nil fideward2094Createous2095:nil ];
+	if(p_15){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 7532;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 852 * 499 - 839 - 690 > 61573){ 
-int D_eme4296 = 879;
-int s_cheiroaster4297 = 560;
-switch (D_eme4296) {
-   case 592:
+	self.juniorie1426Aevent1427 = 8855;
+	if(self.juniorie1426Aevent1427 * 782 / 356 >= 37686){}
+	self.ctenee1428Buyry1429 = 2991;
+	if(self.ctenee1428Buyry1429 - 548 * 870 / 38 / 896 + 459 + 495 <= 52300){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3741;
+	if(self.civilast1432Stratalongular1433 - 893 * 199 + 252 + 712 == 50224){}
+		if(self.inad1434Simpleive1435){
+double c_supraaneous4240 = 3266;
+
+if(c_supraaneous4240 > 4540){
+	double O_adultair4241 = c_supraaneous4240 + 239 - 351; 
+if(O_adultair4241 != 11576){
+	float G_beatsome4242 = O_adultair4241 - 790 / 585; 
+if(G_beatsome4242 != 51981){
+	float E_utivity4243 = G_beatsome4242 * 877 + 478 + 397; 
+if(E_utivity4243 == 48522){
+	int A_helaire4244 = E_utivity4243 + 825 + 265 + 482 / 588 - 286;
+}
+}
+}
+}
+}
+int r_adip4238 = 5772;
+
+if(r_adip4238 >= 72483){
+	float Z_maleial4239 = r_adip4238 + 985 - 784 * 942 - 554 - 252;
+}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+
+		
+    [superView addSubview:bgV];
+
+		
+    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(superView);
+    }];
+    
+    ManagerwardNomenalView *mSocialBannerView = [[ManagerwardNomenalView alloc] init];
+    [bgV addSubview:mSocialBannerView];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	 NSString * S_44 = [self getally2215Manianone2216:nil produceical2217Resourcemost2218:@"sinceatic4253Getit4254" directionment2219Lamin2220:nil ];
+	if(S_44){}
+
+	self.juniorie1426Aevent1427 = 6550;
+	if(self.juniorie1426Aevent1427 + 979 + 175 + 259 + 563 - 590 * 890 < 93876){ 
+int Y_visitsome4255 = 864;
+double C_single4256 = 251;
+switch (Y_visitsome4255) {
+   case -15:
 			{
-				D_eme4296 = s_cheiroaster4297 - 856 * 252 / 989 * 351 * 643; 
+				Y_visitsome4255 = C_single4256 * 20 * 991 * 502; 
 			 break;
 			}
-			case 617:
+			case 867:
 			{
-				D_eme4296 = s_cheiroaster4297 * 695 * 586 - 928 / 909; 
+				Y_visitsome4255 = C_single4256 * 886 * 515 / 313 / 349 + 310 + 853; 
 			 break;
 			}
-			case 820:
+			case 678:
 			{
-				D_eme4296 = s_cheiroaster4297 - 344 - 369; 
+				Y_visitsome4255 = C_single4256 - 964 / 473 - 665; 
 			 break;
 			}
-			case -67:
+			case 931:
 			{
-				D_eme4296 = s_cheiroaster4297 * 251 + 117 / 501 * 393; 
+				Y_visitsome4255 = C_single4256 - 605 - 549 / 804 / 469 - 670 + 905; 
 			 break;
 			}
-			case 709:
+			case 777:
 			{
-				D_eme4296 = s_cheiroaster4297 * 487 + 628; 
+				Y_visitsome4255 = C_single4256 * 486 + 70 / 489 - 23 / 132; 
 			 break;
 			}
-			case 852:
+			case 575:
 			{
-				D_eme4296 = s_cheiroaster4297 + 577 + 84 + 108; 
-			 break;
-			}
-			case 303:
-			{
-				D_eme4296 = s_cheiroaster4297 * 516 * 471 / 976 / 719; 
-			 break;
-			}
-			case 956:
-			{
-				D_eme4296 = s_cheiroaster4297 - 655 - 503 / 458 + 345 - 754; 
-			 break;
-			}
-			case 162:
-			{
-				D_eme4296 = s_cheiroaster4297 + 475 * 551 * 274; 
-			 break;
-			}
-			case 818:
-			{
-				D_eme4296 = s_cheiroaster4297 * 446 * 939; 
-			 break;
-			}
-			case 231:
-			{
-				D_eme4296 = s_cheiroaster4297 + 159 * 351 + 584 + 993 + 268; 
-			 break;
-			}
-			case 934:
-			{
-				D_eme4296 = s_cheiroaster4297 - 499 - 310 - 296 + 746; 
+				Y_visitsome4255 = C_single4256 - 107 - 188; 
 			 break;
 			}
 			   default:
        break;
 			}
  }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 6014;
-	if(self.flat1440Hesless1441 - 8 - 876 <= 47703){}
-	self.aristary1442Agoar1443 = 7528;
-	if(self.aristary1442Agoar1443 + 573 + 632 <= 79722){}
-	self.culturalaceous1444Broncher1445 = 8170;
-	if(self.culturalaceous1444Broncher1445 - 845 / 109 + 870 / 348 - 335 < 37234){}
-		if(self.phemwise1446Lowfaction1447){}
-int R_officerard4291 = 2073;
+	self.ctenee1428Buyry1429 = 8869;
+	if(self.ctenee1428Buyry1429 * 485 - 110 - 17 > 47743){}
+		if(self.opacization1430Knowledgeform1431){
+double N_pontibility4257 = 3830;
 
-if(R_officerard4291 >= 26067){
-	double p_celerallise4292 = R_officerard4291 - 806 / 299; 
-if(p_celerallise4292 < 47628){
-	double T_ovical4293 = p_celerallise4292 * 524 + 444 / 21;
+if(N_pontibility4257 != 39341){
+	float l_effect4258 = N_pontibility4257 - 245 + 13; 
+if(l_effect4258 < 58996){
+	int M_pancresoonular4259 = l_effect4258 + 547 + 432 / 213 + 500 - 548 * 300;
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 6585;
+	if(self.civilast1432Stratalongular1433 - 354 / 224 - 147 + 587 != 35901){}
+		if(self.inad1434Simpleive1435){}
+float Y_lacerdom4247 = 3878;
+
+if(Y_lacerdom4247 == 65270){
+	double F_dyseur4248 = Y_lacerdom4247 + 463 / 315 + 500; 
+if(F_dyseur4248 > 70794){
+	int A_second4249 = F_dyseur4248 - 198 + 442 + 332 + 976 - 360 + 219; 
+if(A_second4249 <= 23998){
+	float V_viscerel4250 = A_second4249 - 513 * 367 * 6; 
+if(V_viscerel4250 != 85359){
+	int p_brachiimagine4251 = V_viscerel4250 + 989 - 816 + 389; 
+if(p_brachiimagine4251 > 44541){
+	float L_askly4252 = p_brachiimagine4251 - 366 / 281;
+}
+}
+}
 }
 }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    [bgV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(superView);
-    }];
-    
-    MyxBuyardView *mSocialBannerView = [[MyxBuyardView alloc] init];
-    [bgV addSubview:mSocialBannerView];
     [mSocialBannerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(bgV);
     }];
@@ -11015,317 +9296,223 @@ if(p_celerallise4292 < 47628){
 {
     SDK_LOG(@"showActView");
     
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
+    HimuleCrutdom *mConfigModel = SDK_DATA.mConfigModel;
     if(!mConfigModel.showMarket){
-        [ElsureTraditional toastMsg_MMMethodMMM:@"This feature is not turned on"];
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM:@"This feature is not turned on"];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSString * d_3 = [self fatherfier1988Script1989:@"labiive4312Fearia4313" paperics1990Oldo1991:nil corticing1992Marketship1993:nil reflectery1994Crypthood1995:nil ];
-	if(d_3){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 8347;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 242 + 15 + 501 * 578 + 200 == 56053){}
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3549;
-	if(self.flat1440Hesless1441 - 692 + 397 <= 37280){}
-	self.aristary1442Agoar1443 = 8132;
-	if(self.aristary1442Agoar1443 * 656 * 678 - 409 + 63 - 42 == 48921){}
-	self.culturalaceous1444Broncher1445 = 9096;
-	if(self.culturalaceous1444Broncher1445 - 452 / 24 / 443 / 753 + 836 - 804 <= 91745){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        int quicklyeer4298Industryize4299 = 8677;  //temple10
-        int tortast4300Forget4301 = 9926;
-        for(int develop4302Playerite4303 = 0; develop4302Playerite4303 < quicklyeer4298Industryize4299; develop4302Playerite4303 += 991) {
-            tortast4300Forget4301 += 5396;
-            break; 
-        } 
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
         return;
     }
     
-    [ElsureTraditional showLoadingAtView_MMMethodMMM:nil];
-    [ValueformVocar checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [BeyondaceousCommunityic showLoadingAtView_MMMethodMMM:nil];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSMutableArray * p_15 = [self quiteuous1897Tainosity1898:@"directionify4282Endoesque4283" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:2140 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:8590 ];
+	if(p_15){}
+
+	self.juniorie1426Aevent1427 = 5949;
+	if(self.juniorie1426Aevent1427 - 97 / 287 + 814 * 830 / 662 <= 92301){}
+	self.ctenee1428Buyry1429 = 3397;
+	if(self.ctenee1428Buyry1429 + 840 + 150 * 390 - 887 + 637 == 98270){}
+		if(self.opacization1430Knowledgeform1431){
+int T_provideise4284 = 1587;
+
+if(T_provideise4284 <= 32768){
+	float s_supraform4285 = T_provideise4284 - 953 + 157; 
+if(s_supraform4285 > 29257){
+	float b_lead4286 = s_supraform4285 - 157 + 451 - 991; 
+if(b_lead4286 == 60363){
+	float R_fullator4287 = b_lead4286 * 983 - 197;
+}
+}
+}
+}
+	self.civilast1432Stratalongular1433 = 3530;
+	if(self.civilast1432Stratalongular1433 * 878 + 427 * 495 + 634 + 953 * 198 != 73021){}
+		if(self.inad1434Simpleive1435){}
         
-        [ElsureTraditional stopLoadingAtView_MMMethodMMM:nil];
-        [ValueformVocar getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
-            [ElsureTraditional stopLoadingAtView_MMMethodMMM:nil];
+        NSInteger electionproof4264Gelatad4265 = 266;  //commontemple11
+        BOOL lieing4266Drugile4267 = YES;
+
+        for(int jocee4268Pupency4269 = 3450; jocee4268Pupency4269 < 1220; jocee4268Pupency4269 = jocee4268Pupency4269 + 1)
+        {    
+            if (lieing4266Drugile4267){
+                break;
+            }
+            electionproof4264Gelatad4265 = electionproof4264Gelatad4265 * 9454;
+        }
+        
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    [LampoCisling checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        [BeyondaceousCommunityic stopLoadingAtView_MMMethodMMM:nil];
+        [LampoCisling getActConfigWithSuccessBlock_MMMethodMMM:^(id responseData) {
+            [BeyondaceousCommunityic stopLoadingAtView_MMMethodMMM:nil];
             
             UIViewController *actController;
 
-		//====insert my code start===  2023-12-13 18:35:09
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSObject * L_37 = [self findfaction1554Less1555];
-	if(L_37){}
+	UIApplication * H_33 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(H_33){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 9808;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 959 + 328 + 337 < 825){}
-		if(self.prior1438Vanist1439){
-int q_menstruon4328 = 451;
-float T_peranard4329 = 959;
-switch (q_menstruon4328) {
-   case 161:
+	self.juniorie1426Aevent1427 = 1896;
+	if(self.juniorie1426Aevent1427 - 681 + 26 / 861 - 518 == 58426){}
+	self.ctenee1428Buyry1429 = 9635;
+	if(self.ctenee1428Buyry1429 + 873 * 357 / 106 - 720 - 50 + 195 > 93215){}
+		if(self.opacization1430Knowledgeform1431){
+int M_cuspfic4306 = 6782;
+
+if(M_cuspfic4306 < 91377){
+	double J_fullar4307 = M_cuspfic4306 - 13 + 380 + 11 + 483 + 274 + 339;
+}
+}
+	self.civilast1432Stratalongular1433 = 663;
+	if(self.civilast1432Stratalongular1433 + 837 * 205 * 445 / 916 / 432 != 54470){}
+		if(self.inad1434Simpleive1435){
+float I_sus4308 = 8657;
+
+double s_ment4309 = 814;
+if(I_sus4308 + 591 * 505 > 15503){
+	s_ment4309 = I_sus4308 + 663 - 158 * 280 + 282 + 937 + 501;
+}
+
+int L_attackator4310 = 666;
+if(s_ment4309 + 665 * 434 < 28084){
+	L_attackator4310 = s_ment4309 - 391 * 116 - 61 + 514 - 191 * 714;
+}else{
+	L_attackator4310 = s_ment4309 * 422 + 786 + 621 - 486;
+}
+
+int c_cruitwatchory4311 = 533;
+if(L_attackator4310 - 595 * 456 < 31313){
+	c_cruitwatchory4311 = L_attackator4310 + 505 + 97;
+}else{
+	c_cruitwatchory4311 = L_attackator4310 * 21 * 518 * 358;
+}
+
+float I_themlike4312 = 614;
+if(c_cruitwatchory4311 * 275 + 984 / 106 - 215 / 901 + 307 > 32871){
+	I_themlike4312 = c_cruitwatchory4311 - 433 / 362;
+}else{
+	I_themlike4312 = c_cruitwatchory4311 * 4 * 748 - 105;
+}
+
+float H_rule4313 = 802;
+if(I_themlike4312 * 759 / 490 * 68 * 897 / 636 * 806 == 90378){
+	H_rule4313 = I_themlike4312 - 418 / 533 * 751 * 350 / 377 + 788;
+}
+
+}
+        
+        NSArray *rhehistoryfic4292Nephraneous4293 = @[@"jacation4298_causeness4299", @"outward4300_crassstandarian4301", @"altern4302_agencyage4303", @"townot4304_race4305" ];   //temple15
+        for (NSString *environmentalory4294Liminfold4295 in rhehistoryfic4292Nephraneous4293){
+            break;
+        }
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+            if(IS_PORTRAIT){
+                PiteifyAeribilityController *mExposureController = [[PiteifyAeribilityController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSMutableArray * Z_51 = [self quiteuous1897Tainosity1898:@"novenitor4334Intic4335" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:1793 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:626 ];
+	if(Z_51){}
+
+	self.juniorie1426Aevent1427 = 6384;
+	if(self.juniorie1426Aevent1427 * 851 * 745 - 254 * 779 * 878 > 8086){ 
+int W_omenty4336 = 895;
+double b_lithosea4337 = 252;
+switch (W_omenty4336) {
+   case 511:
 			{
-				q_menstruon4328 = T_peranard4329 + 420 * 817 - 35 + 945 - 531 - 942; 
+				W_omenty4336 = b_lithosea4337 + 876 / 240 / 696 + 71 / 671; 
 			 break;
 			}
-			case 287:
+			case 863:
 			{
-				q_menstruon4328 = T_peranard4329 * 755 * 580; 
+				W_omenty4336 = b_lithosea4337 + 691 * 60 + 979; 
 			 break;
 			}
-			case 203:
+			case 899:
 			{
-				q_menstruon4328 = T_peranard4329 - 81 - 815; 
+				W_omenty4336 = b_lithosea4337 * 927 / 710; 
 			 break;
 			}
-			case 996:
+			case 984:
 			{
-				q_menstruon4328 = T_peranard4329 + 944 / 883 - 723 / 970 - 939 - 9; 
+				W_omenty4336 = b_lithosea4337 - 790 / 477; 
 			 break;
 			}
-			case 772:
+			case 96:
 			{
-				q_menstruon4328 = T_peranard4329 * 636 * 16; 
+				W_omenty4336 = b_lithosea4337 + 754 - 217 * 152; 
 			 break;
 			}
-			case 859:
+			case 89:
 			{
-				q_menstruon4328 = T_peranard4329 + 564 * 756; 
+				W_omenty4336 = b_lithosea4337 * 567 * 755 - 151 - 497 / 274; 
 			 break;
 			}
-			case 511:
+			case 916:
 			{
-				q_menstruon4328 = T_peranard4329 + 220 * 710 - 740 / 385 - 664; 
+				W_omenty4336 = b_lithosea4337 - 236 + 315 / 770 - 295 + 144; 
 			 break;
 			}
-			case 674:
+			case 687:
 			{
-				q_menstruon4328 = T_peranard4329 * 950 * 496; 
+				W_omenty4336 = b_lithosea4337 - 464 - 874 * 937 / 656 * 281 * 977; 
 			 break;
 			}
-			case 558:
+			case 811:
 			{
-				q_menstruon4328 = T_peranard4329 * 802 + 602 + 866 / 179; 
-			 break;
-			}
-			case 95:
-			{
-				q_menstruon4328 = T_peranard4329 - 464 * 327 * 325 * 804 - 957 * 97; 
-			 break;
-			}
-			case 658:
-			{
-				q_menstruon4328 = T_peranard4329 * 962 / 139 / 502 - 295; 
-			 break;
-			}
-			case 556:
-			{
-				q_menstruon4328 = T_peranard4329 + 688 * 137 * 294 - 769 * 295; 
-			 break;
-			}
-			case 450:
-			{
-				q_menstruon4328 = T_peranard4329 - 565 + 169 + 550 + 475; 
-			 break;
-			}
-			case 964:
-			{
-				q_menstruon4328 = T_peranard4329 + 198 / 567; 
-			 break;
-			}
-			case 442:
-			{
-				q_menstruon4328 = T_peranard4329 - 957 - 222 * 338 - 695; 
-			 break;
-			}
-			case 983:
-			{
-				q_menstruon4328 = T_peranard4329 - 961 + 939 + 516; 
+				W_omenty4336 = b_lithosea4337 - 360 / 317; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-	self.flat1440Hesless1441 = 5774;
-	if(self.flat1440Hesless1441 + 824 - 64 / 946 * 656 / 584 + 498 <= 55412){}
-	self.aristary1442Agoar1443 = 2686;
-	if(self.aristary1442Agoar1443 + 93 + 648 * 278 - 632 - 543 + 387 < 83739){ 
-double Q_vaser4330 = 9130;
-
-double s_veneous4331 = 536;
-if(Q_vaser4330 + 422 * 604 == 46073){
-	s_veneous4331 = Q_vaser4330 * 802 + 916 + 331;
-}else{
-	s_veneous4331 = Q_vaser4330 + 867 + 555 - 476;
-}
-
-float E_famili4332 = 902;
-if(s_veneous4331 - 304 - 839 - 36 / 109 * 64 >= 84632){
-	E_famili4332 = s_veneous4331 * 270 / 402 - 35 * 382;
-}else{
-	E_famili4332 = s_veneous4331 + 405 - 907 + 456 * 267 * 551;
-}
-
  }
-	self.culturalaceous1444Broncher1445 = 9987;
-	if(self.culturalaceous1444Broncher1445 - 503 / 653 * 32 != 99643){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        BOOL jectture4318When4319 = NO;  //commontemple8
-        if (jectture4318When4319){
-            jectture4318When4319 = NO;
-        }else{
-            jectture4318When4319 = !jectture4318When4319;
-        }
+	self.ctenee1428Buyry1429 = 3580;
+	if(self.ctenee1428Buyry1429 + 67 - 107 - 651 == 78491){}
+		if(self.opacization1430Knowledgeform1431){
+double y_stigmat4338 = 6244;
 
+if(y_stigmat4338 != 52961){
+	double F_natureaster4339 = y_stigmat4338 + 435 + 982 + 990 + 777 + 534 + 105;
+}
+}
+	self.civilast1432Stratalongular1433 = 2309;
+	if(self.civilast1432Stratalongular1433 + 864 / 242 * 96 * 423 / 839 - 394 != 33412){}
+		if(self.inad1434Simpleive1435){}
+        
+        NSInteger pastate4318Juriious4319 = 1074;  //commontemple10
+        int nearlyade4320Menstruize4321 = 5306;
+
+        for(int quinan4322Rurel4323 = 3610; quinan4322Rurel4323 < 8999; quinan4322Rurel4323 = quinan4322Rurel4323 + 1)
+        {    
+            nearlyade4320Menstruize4321 = nearlyade4320Menstruize4321++;
+        }
         
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            if(IS_PORTRAIT){
-                OctavileFieldController *mExposureController = [[OctavileFieldController alloc] initWithNibName:XIB_ExposureController bundle:SDK_BUNDLE];
                 mExposureController.expoModelArry = responseData;
                 actController = mExposureController;
             }else{
-                LithowardTenenneController *mExposureHorControllerViewController = [[LithowardTenenneController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
+                TorrnessNarosityController *mExposureHorControllerViewController = [[TorrnessNarosityController alloc] initWithNibName:XIB_ExposureHorControllerViewController bundle:SDK_BUNDLE];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	[self hetertic1713Cunefederal1714:nil vinccarrylike1715Factorance1716:8922 leasttion1717Darksion1718:nil fide1719Platt1720:7674 sophyrestage1721Mechanresponseible1722:nil ];
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2425;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 165 / 512 * 259 - 283 + 429 - 743 <= 82572){ 
-float N_truthen4349 = 8542;
-
-if(N_truthen4349 != 97){
-	double f_everybodyivity4350 = N_truthen4349 * 403 / 825 + 491 / 263; 
-if(f_everybodyivity4350 != 73229){
-	float s_ovical4351 = f_everybodyivity4350 * 76 - 915 / 32 * 558 - 288; 
-if(s_ovical4351 >= 68683){
-	float M_medi4352 = s_ovical4351 * 307 * 224; 
-if(M_medi4352 == 30497){
-	double Q_preventine4353 = M_medi4352 * 438 / 182 * 477 / 585 / 973; 
-if(Q_preventine4353 < 84779){
-	double h_lamnlamelling4354 = Q_preventine4353 * 929 - 954 * 722;
-}
-}
-}
-}
-}
- }
-		if(self.prior1438Vanist1439){
-float P_militaryaneous4355 = 4956;
-
-if(P_militaryaneous4355 > 85415){
-	float D_phragmule4356 = P_militaryaneous4355 - 227 + 882 * 949; 
-if(D_phragmule4356 != 31689){
-	double N_quiteia4357 = D_phragmule4356 - 656 - 973; 
-if(N_quiteia4357 > 25839){
-	float L_tympanage4358 = N_quiteia4357 + 335 * 719 * 486 - 857;
-}
-}
-}
-}
-	self.flat1440Hesless1441 = 920;
-	if(self.flat1440Hesless1441 + 25 / 439 != 80494){ 
-float U_vigenan4359 = 1749;
-
-double q_catism4360 = 595;
-if(U_vigenan4359 - 268 - 1 * 414 + 835 / 259 <= 81333){
-	q_catism4360 = U_vigenan4359 - 41 / 347 * 384 - 109 - 363 / 924;
-}else{
-	q_catism4360 = U_vigenan4359 + 4 / 175;
-}
-
-double t_present4361 = 986;
-if(q_catism4360 - 416 - 535 / 261 - 685 - 528 > 65617){
-	t_present4361 = q_catism4360 * 679 + 361;
-}else{
-	t_present4361 = q_catism4360 + 49 + 820 + 648 + 135;
-}
-
-double R_sexualel4362 = 411;
-if(t_present4361 - 159 / 520 == 93616){
-	R_sexualel4362 = t_present4361 - 123 * 526 * 177 - 289 + 586 * 88;
-}
-
-float c_lessitor4363 = 710;
-if(R_sexualel4362 * 670 + 700 * 197 + 481 * 492 > 50247){
-	c_lessitor4363 = R_sexualel4362 - 154 / 812 - 483 - 28;
-}
-
-int X_ennealing4364 = 215;
-if(c_lessitor4363 + 78 * 70 + 627 * 447 / 169 < 1820){
-	X_ennealing4364 = c_lessitor4363 + 615 / 494 / 826;
-}
-
-int y_horo4365 = 800;
-if(X_ennealing4364 + 793 / 363 - 681 < 53692){
-	y_horo4365 = X_ennealing4364 * 626 * 449 + 693 / 502 + 829;
-}
-
-double j_returnorium4366 = 451;
-if(y_horo4365 + 26 * 234 - 716 - 319 / 397 + 147 >= 77954){
-	j_returnorium4366 = y_horo4365 * 241 / 721;
-}
-
-float O_surearium4367 = 878;
-if(j_returnorium4366 * 681 + 574 * 339 + 188 * 369 * 308 <= 72384){
-	O_surearium4367 = j_returnorium4366 + 310 + 449;
-}else{
-	O_surearium4367 = j_returnorium4366 + 86 / 452 / 433 / 257 - 683 + 501;
-}
-
-int w_solenment4368 = 631;
-if(O_surearium4367 + 608 - 268 / 581 * 47 * 920 - 807 < 43589){
-	w_solenment4368 = O_surearium4367 - 931 + 535 / 310;
-}
-
-double N_experieven4369 = 801;
-if(w_solenment4368 * 726 - 247 / 635 - 490 * 194 * 260 <= 2675){
-	N_experieven4369 = w_solenment4368 * 966 * 367 - 851 - 738 - 515;
-}else{
-	N_experieven4369 = w_solenment4368 + 909 + 227 - 388 + 406;
-}
-
-double m_represent4370 = 327;
-if(N_experieven4369 * 402 + 884 + 553 / 324 + 767 + 872 < 74254){
-	m_represent4370 = N_experieven4369 * 970 - 9 + 556 - 315 / 493 - 226;
-}else{
-	m_represent4370 = N_experieven4369 + 892 + 182 / 178 + 470 + 920;
-}
-
- }
-	self.aristary1442Agoar1443 = 275;
-	if(self.aristary1442Agoar1443 - 59 - 424 / 136 * 675 - 36 <= 54096){}
-	self.culturalaceous1444Broncher1445 = 6503;
-	if(self.culturalaceous1444Broncher1445 + 82 * 913 > 19437){}
-		if(self.phemwise1446Lowfaction1447){}
-        
-        long reptaire4337Maintainature4338 = 7698; //commontemple1
-        BOOL whiteit4339Fromfier4340 = YES;
-        while (reptaire4337Maintainature4338 < 3110)
-        {
-            reptaire4337Maintainature4338 = reptaire4337Maintainature4338 + 7934;
-            whiteit4339Fromfier4340 = YES;
-        }
-        
-        
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
                 mExposureHorControllerViewController.expoModelArry = responseData;
                 actController = mExposureHorControllerViewController;
             }
@@ -11333,213 +9520,145 @@ if(N_experieven4369 * 402 + 884 + 553 / 324 + 767 + 872 < 74254){
             SDK_LOG(@"controller setModalPresentationStyle:UIModalPresentationOverCurrentContext");
             [actController setModalPresentationStyle:UIModalPresentationOverFullScreen];
 
-		//====insert my code start===  2023-12-13 18:35:09
-		{
 		
-	NSInteger E_30 = [self seeress1522Bareur1523:nil piair1524Sufeveningan1525:1125 ];
-	if(E_30){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 6943;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 491 - 83 / 610 * 651 - 146 + 789 == 85867){ 
-int j_cordaster4377 = 615;
-float y_sacerid4378 = 408;
-switch (j_cordaster4377) {
-   case 2:
-			{
-				j_cordaster4377 = y_sacerid4378 + 462 - 137 - 710 * 849 - 679 + 882; 
-			 break;
-			}
-			case 133:
-			{
-				j_cordaster4377 = y_sacerid4378 - 701 + 966; 
-			 break;
-			}
-			case 131:
-			{
-				j_cordaster4377 = y_sacerid4378 - 388 / 511 * 849; 
-			 break;
-			}
-			case 868:
-			{
-				j_cordaster4377 = y_sacerid4378 - 939 / 43 * 285 * 426; 
-			 break;
-			}
-			case 574:
-			{
-				j_cordaster4377 = y_sacerid4378 + 923 * 39 + 656; 
-			 break;
-			}
-			   default:
-       break;
-			}
- }
-		if(self.prior1438Vanist1439){
-int M_familyship4379 = 965;
-float r_roomo4380 = 787;
-switch (M_familyship4379) {
-   case 686:
-			{
-				M_familyship4379 = r_roomo4380 + 39 - 145 + 585 - 230 - 284 / 93; 
-			 break;
-			}
-			case 975:
-			{
-				M_familyship4379 = r_roomo4380 * 36 * 434; 
-			 break;
-			}
-			case 937:
-			{
-				M_familyship4379 = r_roomo4380 * 754 * 206 * 227 + 8; 
-			 break;
-			}
-			case 898:
-			{
-				M_familyship4379 = r_roomo4380 - 403 - 447 / 620 - 602 + 656 / 125; 
-			 break;
-			}
-			case 749:
-			{
-				M_familyship4379 = r_roomo4380 + 24 - 661 - 12 * 369 - 992; 
-			 break;
-			}
-			case 173:
-			{
-				M_familyship4379 = r_roomo4380 * 272 - 973 - 38; 
-			 break;
-			}
-			case -73:
-			{
-				M_familyship4379 = r_roomo4380 + 97 + 83 - 610 / 777; 
-			 break;
-			}
-			case 705:
-			{
-				M_familyship4379 = r_roomo4380 - 781 / 761 / 726 - 19 + 239 * 103; 
-			 break;
-			}
-			   default:
-       break;
-			}
-}
-	self.flat1440Hesless1441 = 6570;
-	if(self.flat1440Hesless1441 + 324 - 878 * 31 * 627 != 11021){}
-	self.aristary1442Agoar1443 = 5168;
-	if(self.aristary1442Agoar1443 + 184 + 347 - 857 - 709 + 837 >= 38516){}
-	self.culturalaceous1444Broncher1445 = 883;
-	if(self.culturalaceous1444Broncher1445 * 996 - 615 - 15 + 811 - 697 - 196 >= 8144){ 
-float Z_polisfy4381 = 4707;
-
-float n_didactacy4382 = 705;
-if(Z_polisfy4381 - 610 / 787 > 77802){
-	n_didactacy4382 = Z_polisfy4381 + 370 * 139 / 50 * 260 / 216 / 998;
-}
-
-double D_colldom4383 = 896;
-if(n_didactacy4382 - 371 - 470 + 548 >= 86377){
-	D_colldom4383 = n_didactacy4382 + 591 + 999;
-}
-
-float B_minimnearlyenne4384 = 854;
-if(D_colldom4383 * 660 / 912 * 498 - 683 > 28224){
-	B_minimnearlyenne4384 = D_colldom4383 * 792 + 149 / 838 - 197 - 167;
-}else{
-	B_minimnearlyenne4384 = D_colldom4383 * 518 - 437;
-}
-
-float d_cuspossibleile4385 = 877;
-if(B_minimnearlyenne4384 - 33 / 378 * 490 / 863 + 832 + 49 <= 75709){
-	d_cuspossibleile4385 = B_minimnearlyenne4384 + 299 / 521;
-}
-
-double Y_pubertry4386 = 748;
-if(d_cuspossibleile4385 * 268 + 48 * 583 - 912 - 50 - 482 < 20736){
-	Y_pubertry4386 = d_cuspossibleile4385 - 906 * 489 * 930 - 925 / 903;
-}else{
-	Y_pubertry4386 = d_cuspossibleile4385 + 918 * 596 + 534 + 307 - 842;
-}
-
-float w_brady4387 = 414;
-if(Y_pubertry4386 - 690 - 478 * 48 / 877 < 51423){
-	w_brady4387 = Y_pubertry4386 + 591 - 679 * 725 * 647 - 587 * 237;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){}
-int n_roden4375 = 200;
-int w_tarsaster4376 = 212;
-switch (n_roden4375) {
-   case 645:
-			{
-				n_roden4375 = w_tarsaster4376 - 569 - 278; 
-			 break;
-			}
-			case 120:
-			{
-				n_roden4375 = w_tarsaster4376 * 569 / 976 - 389 * 779 + 233; 
-			 break;
-			}
-			case 176:
-			{
-				n_roden4375 = w_tarsaster4376 + 584 - 225; 
-			 break;
-			}
-			case 169:
-			{
-				n_roden4375 = w_tarsaster4376 * 719 + 87 - 549 - 356 / 168; 
-			 break;
-			}
-			case 495:
-			{
-				n_roden4375 = w_tarsaster4376 * 238 * 221 + 59 * 122 * 213 / 568; 
-			 break;
-			}
-			case 84:
-			{
-				n_roden4375 = w_tarsaster4376 - 84 / 769 / 497 / 527 + 701 / 338; 
-			 break;
-			}
-			case 234:
-			{
-				n_roden4375 = w_tarsaster4376 + 435 / 72 - 950 - 898 * 719; 
-			 break;
-			}
-			case 455:
-			{
-				n_roden4375 = w_tarsaster4376 - 562 + 314 * 109 - 448; 
-			 break;
-			}
-			case 988:
-			{
-				n_roden4375 = w_tarsaster4376 + 904 + 306 + 248 * 572 + 354 / 704; 
-			 break;
-			}
-			case 758:
-			{
-				n_roden4375 = w_tarsaster4376 + 704 * 574 * 947 * 220 + 880 / 13; 
-			 break;
-			}
-			   default:
-       break;
-			}
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-            [[PuteeDamnsive getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
+            [[PubshipPasserdom getCurrentViewController_MMMethodMMM] presentViewController: actController animated:NO completion:^{
                 
             }];
             
-        } errorBlock_MMMethodMMM:^(HardMere *error) {
+        } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
             
-            [ElsureTraditional toastMsg_MMMethodMMM:@"This feature is not turned on"];
+            [BeyondaceousCommunityic toastMsg_MMMethodMMM:@"This feature is not turned on"];
         }];
         
         
-    } errorBlock_MMMethodMMM:^(HardMere *error) {
+    } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
         
-        [ElsureTraditional stopLoadingAtView_MMMethodMMM:nil];
-        [ElsureTraditional toastMsg_MMMethodMMM:@"This feature is not turned on"];
+        [BeyondaceousCommunityic stopLoadingAtView_MMMethodMMM:nil];
+        [BeyondaceousCommunityic toastMsg_MMMethodMMM:@"This feature is not turned on"];
     }];
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	UIApplication * h_7 = [self stasisward2454Vituible2455:nil styleent2456Placeth2457:nil teachair2458Nice2459:nil ];
+	if(h_7){}
+
+	self.juniorie1426Aevent1427 = 8912;
+	if(self.juniorie1426Aevent1427 * 468 + 818 * 977 - 792 - 971 + 137 > 35008){}
+	self.ctenee1428Buyry1429 = 5355;
+	if(self.ctenee1428Buyry1429 * 461 - 19 + 727 >= 95465){ 
+int L_hemiarium4351 = 2651;
+
+if(L_hemiarium4351 != 88930){
+	double Y_build4352 = L_hemiarium4351 * 925 + 669 * 951 / 136 + 382 + 550;
+}
+ }
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 2243;
+	if(self.civilast1432Stratalongular1433 + 10 * 606 < 53341){ 
+int M_pteryx4353 = 243;
+double F_gnoreous4354 = 41;
+switch (M_pteryx4353) {
+   case 275:
+			{
+				M_pteryx4353 = F_gnoreous4354 + 357 - 443 * 934 + 286 - 723 / 602; 
+			 break;
+			}
+			case 402:
+			{
+				M_pteryx4353 = F_gnoreous4354 * 98 * 894; 
+			 break;
+			}
+			case 250:
+			{
+				M_pteryx4353 = F_gnoreous4354 + 568 - 219 - 180 / 840 + 659 - 160; 
+			 break;
+			}
+			   default:
+       break;
+			}
+ }
+		if(self.inad1434Simpleive1435){
+double F_trigesimty4355 = 4290;
+
+double s_eatice4356 = 834;
+if(F_trigesimty4355 - 857 / 895 > 21814){
+	s_eatice4356 = F_trigesimty4355 + 220 / 375 + 952 + 313 / 983;
+}
+
+float e_egyritious4357 = 12;
+if(s_eatice4356 + 997 + 537 > 46100){
+	e_egyritious4357 = s_eatice4356 * 62 + 922;
+}else{
+	e_egyritious4357 = s_eatice4356 - 572 - 110;
+}
+
+int F_authmoreism4358 = 712;
+if(e_egyritious4357 + 380 / 267 / 199 / 885 > 57172){
+	F_authmoreism4358 = e_egyritious4357 - 352 / 262 - 122 - 303;
+}
+
+float v_archeoeur4359 = 855;
+if(F_authmoreism4358 + 312 / 354 + 484 / 737 >= 4501){
+	v_archeoeur4359 = F_authmoreism4358 + 711 * 251 + 82 + 223;
+}else{
+	v_archeoeur4359 = F_authmoreism4358 - 960 + 191 + 985 * 737 - 667;
+}
+
+}
+int b_deadaneity4342 = 7206;
+
+int J_trans4343 = 246;
+if(b_deadaneity4342 * 352 / 828 * 571 + 158 >= 30860){
+	J_trans4343 = b_deadaneity4342 - 536 + 57;
+}else{
+	J_trans4343 = b_deadaneity4342 * 795 * 546 * 896 * 294 + 885;
+}
+
+double O_quassible4344 = 627;
+if(J_trans4343 - 6 * 334 + 842 - 202 * 213 == 32523){
+	O_quassible4344 = J_trans4343 - 86 / 43 * 125 / 687 / 297 / 963;
+}
+
+float c_imageule4345 = 255;
+if(O_quassible4344 - 72 + 334 + 635 / 471 < 54456){
+	c_imageule4345 = O_quassible4344 + 559 * 226 / 166 / 675;
+}
+
+float Q_nutrianeous4346 = 779;
+if(c_imageule4345 - 820 + 167 + 907 >= 96627){
+	Q_nutrianeous4346 = c_imageule4345 + 977 * 25;
+}else{
+	Q_nutrianeous4346 = c_imageule4345 + 856 * 207 + 35 * 407 * 481;
+}
+
+int n_love4347 = 593;
+if(Q_nutrianeous4346 + 392 * 941 < 82500){
+	n_love4347 = Q_nutrianeous4346 * 785 + 921 + 451 + 345;
+}else{
+	n_love4347 = Q_nutrianeous4346 + 492 * 740 / 261 * 385 + 528 - 10;
+}
+
+float S_radicarium4348 = 33;
+if(n_love4347 * 20 - 406 + 104 >= 28895){
+	S_radicarium4348 = n_love4347 + 540 / 200 / 755 + 949 - 947;
+}else{
+	S_radicarium4348 = n_love4347 - 814 + 581 * 380 + 315 + 62;
+}
+
+int p_tetrsome4349 = 794;
+if(S_radicarium4348 - 507 - 747 - 406 + 205 * 668 <= 88437){
+	p_tetrsome4349 = S_radicarium4348 + 482 + 285 - 397 + 661;
+}
+
+double h_generationine4350 = 143;
+if(p_tetrsome4349 - 321 - 531 / 710 / 923 > 54099){
+	h_generationine4350 = p_tetrsome4349 + 20 / 356 - 539;
+}
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     
 }
 
@@ -11547,175 +9666,413 @@ switch (n_roden4375) {
 {
     SDK_LOG(@"requestShowActView");
     
-    ConfigModel *mConfigModel = SDK_DATA.mConfigModel;
-    if(!mConfigModel.showMarket){
-        self.showAct = NO;
+    HimuleCrutdom *mConfigModel = SDK_DATA.mConfigModel;
 
-		//====insert my code start===  2023-12-13 18:35:09
+		//===insert my code start===  2024-01-12 12:51:44
 		{
 		
-	NSArray * Z_51 = [self thymally1665Sacriesque1666:nil susacious1667Quadragenular1668:nil currentetic1669Pointfaction1670:9191 plaud1671Past1672:4530 ];
-	if(Z_51){}
+	UIApplication * p_15 = [self phasycoldian1586Particularlyair1587];
+	if(p_15){}
 
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 4258;
-	if(self.mechanoit1436Lamnlamellaneity1437 + 652 * 36 + 749 - 160 + 6 + 962 < 21196){ 
-float c_primory4395 = 6782;
-
-if(c_primory4395 < 14255){
-	float Y_thataire4396 = c_primory4395 + 834 + 295 + 747 / 519 / 55; 
-if(Y_thataire4396 != 86282){
-	int t_saccharaneity4397 = Y_thataire4396 - 556 * 618 / 487 * 387; 
-if(t_saccharaneity4397 >= 55181){
-	int E_polem4398 = t_saccharaneity4397 + 941 - 938 - 74 - 299 / 309 * 155;
-}
-}
-}
- }
-		if(self.prior1438Vanist1439){}
-	self.flat1440Hesless1441 = 3714;
-	if(self.flat1440Hesless1441 * 281 * 170 * 667 < 36068){}
-	self.aristary1442Agoar1443 = 6750;
-	if(self.aristary1442Agoar1443 + 996 + 232 * 766 * 837 * 336 / 933 >= 70874){}
-	self.culturalaceous1444Broncher1445 = 800;
-	if(self.culturalaceous1444Broncher1445 + 122 * 682 * 353 >= 64120){ 
-int I_cuneeventitor4399 = 8318;
-
-double L_media4400 = 138;
-if(I_cuneeventitor4399 + 61 * 149 <= 95313){
-	L_media4400 = I_cuneeventitor4399 - 247 / 573 + 460;
-}
-
-int B_palli4401 = 108;
-if(L_media4400 * 959 - 512 + 553 + 259 / 295 - 92 != 94677){
-	B_palli4401 = L_media4400 * 294 - 92 - 211;
-}else{
-	B_palli4401 = L_media4400 * 387 - 317 * 672 - 805 / 237 / 774;
-}
-
- }
-		if(self.phemwise1446Lowfaction1447){
-float w_hangence4402 = 3537;
-
-if(w_hangence4402 != 12034){
-	double y_versbetter4403 = w_hangence4402 + 541 / 738; 
-if(y_versbetter4403 != 28628){
-	double t_Iible4404 = y_versbetter4403 + 236 * 383 - 483 * 15 * 268 * 594; 
-if(t_Iible4404 <= 9926){
-	float n_heartion4405 = t_Iible4404 - 26 / 838 - 871 + 25; 
-if(n_heartion4405 != 47193){
-	double h_phragmweekar4406 = n_heartion4405 * 240 - 157 + 24 + 343; 
-if(h_phragmweekar4406 <= 27921){
-	float Q_fishress4407 = h_phragmweekar4406 - 385 / 882;
-}
-}
-}
-}
-}
-}
-float u_cruci4392 = 9841;
-
-float d_holochurchality4393 = 563;
-if(u_cruci4392 - 12 * 162 * 365 + 598 - 809 * 710 > 37816){
-	d_holochurchality4393 = u_cruci4392 + 269 - 528 / 102;
-}else{
-	d_holochurchality4393 = u_cruci4392 * 404 - 546 + 514 * 94 / 75 / 991;
-}
-
-int L_thrixain4394 = 487;
-if(d_holochurchality4393 - 548 * 443 / 352 / 701 == 5303){
-	L_thrixain4394 = d_holochurchality4393 - 881 + 736 - 10;
-}
-
-		}
-		//====insert my code end===  2023-12-13 18:35:09
-
-
-		//====insert my code start===  2023-12-13 18:35:09
-		{
-		
-	NSMutableArray * W_48 = [self onization1831Sometimesie1832:nil tors1833Amphacious1834:nil menslike1835Gymnrecentlyer1836:nil acttic1837Large1838:3954 remember1839Fruct1840:9965 includingar1841Millen1842:nil natatic1843Mortment1844:6520 sacrition1845Current1846:@"primaacle4410Trainingy4411" ];
-	if(W_48){}
-
-		if(self.pentecost1434Kinanythingenne1435){}
-	self.mechanoit1436Lamnlamellaneity1437 = 2121;
-	if(self.mechanoit1436Lamnlamellaneity1437 * 570 + 283 <= 21364){}
-		if(self.prior1438Vanist1439){
-int d_paperite4412 = 270;
-int m_tortthreearian4413 = 363;
-switch (d_paperite4412) {
-   case 525:
+	self.juniorie1426Aevent1427 = 9739;
+	if(self.juniorie1426Aevent1427 + 683 + 497 <= 51662){}
+	self.ctenee1428Buyry1429 = 1812;
+	if(self.ctenee1428Buyry1429 * 461 / 421 >= 92978){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 9614;
+	if(self.civilast1432Stratalongular1433 + 125 - 362 * 211 + 166 * 739 > 92703){ 
+int v_long4368 = 332;
+int Y_logyair4369 = 103;
+switch (v_long4368) {
+   case -17:
 			{
-				d_paperite4412 = m_tortthreearian4413 - 119 * 233 * 287 * 425; 
+				v_long4368 = Y_logyair4369 - 848 / 480 + 113 + 293 + 273; 
 			 break;
 			}
-			case 396:
+			case 453:
 			{
-				d_paperite4412 = m_tortthreearian4413 * 817 * 604 / 38 * 252 + 361; 
+				v_long4368 = Y_logyair4369 * 656 / 254 + 768 * 189; 
 			 break;
 			}
-			case 226:
+			case 211:
 			{
-				d_paperite4412 = m_tortthreearian4413 * 365 / 145 - 574; 
+				v_long4368 = Y_logyair4369 + 410 / 897 + 832; 
 			 break;
 			}
-			case 197:
+			case 848:
 			{
-				d_paperite4412 = m_tortthreearian4413 - 865 / 355 + 331 * 114; 
+				v_long4368 = Y_logyair4369 - 844 + 364 + 121 - 663; 
 			 break;
 			}
-			case 815:
+			case 407:
 			{
-				d_paperite4412 = m_tortthreearian4413 * 21 / 731 / 2 - 287 + 255; 
+				v_long4368 = Y_logyair4369 - 14 / 288 - 542 * 194 * 560; 
 			 break;
 			}
-			case 409:
+			case 569:
 			{
-				d_paperite4412 = m_tortthreearian4413 + 714 - 279 + 397 / 498; 
+				v_long4368 = Y_logyair4369 - 455 - 307 / 474 + 315 - 911; 
 			 break;
 			}
-			case 386:
+			case 352:
 			{
-				d_paperite4412 = m_tortthreearian4413 * 301 - 657 / 289 / 409 * 345; 
+				v_long4368 = Y_logyair4369 - 460 - 180 - 369 * 249 + 449; 
 			 break;
 			}
-			case 582:
+			case 141:
 			{
-				d_paperite4412 = m_tortthreearian4413 * 103 + 833 / 625; 
+				v_long4368 = Y_logyair4369 + 49 - 635 - 268 * 45 - 804; 
+			 break;
+			}
+			case 408:
+			{
+				v_long4368 = Y_logyair4369 * 159 * 621 / 594; 
 			 break;
 			}
 			   default:
        break;
 			}
-}
-	self.flat1440Hesless1441 = 3854;
-	if(self.flat1440Hesless1441 + 986 - 328 - 804 <= 8005){}
-	self.aristary1442Agoar1443 = 2261;
-	if(self.aristary1442Agoar1443 + 521 / 753 * 139 + 936 + 351 == 17106){}
-	self.culturalaceous1444Broncher1445 = 9834;
-	if(self.culturalaceous1444Broncher1445 + 255 * 692 / 870 - 948 + 708 < 86694){}
-		if(self.phemwise1446Lowfaction1447){}
-int U_sperability4408 = 4799;
-
-int U_localitor4409 = 336;
-if(U_sperability4408 + 451 - 266 * 49 < 94142){
-	U_localitor4409 = U_sperability4408 - 89 + 926 + 108;
-}else{
-	U_localitor4409 = U_sperability4408 * 44 / 269 / 36 - 272;
-}
-
+ }
+		if(self.inad1434Simpleive1435){}
+          BOOL cumbty4364Bodyity4365 = YES;    ////temple31
+          if (cumbty4364Bodyity4365) { __asm__("NOP"); }
 		}
-		//====insert my code end===  2023-12-13 18:35:09
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
+    if(!mConfigModel.showMarket){
+        self.showAct = NO;
+
+		
+
+		
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	NSMutableArray * s_18 = [self quiteuous1897Tainosity1898:@"salic4377Government4378" certainate1899Trial1900:nil mut1901Saccharwriterice1902:nil hippoel1903Insuljustance1904:6124 stinior1905Liminfold1906:nil logyward1907Vaileur1908:nil solosity1909Exter1910:7873 ];
+	if(s_18){}
+
+	self.juniorie1426Aevent1427 = 9187;
+	if(self.juniorie1426Aevent1427 + 576 + 718 * 564 - 964 / 74 != 4384){}
+	self.ctenee1428Buyry1429 = 7559;
+	if(self.ctenee1428Buyry1429 * 593 * 139 > 74913){}
+		if(self.opacization1430Knowledgeform1431){
+double S_halesque4379 = 9784;
+
+int k_uloture4380 = 337;
+if(S_halesque4379 * 851 * 11 >= 41444){
+	k_uloture4380 = S_halesque4379 - 777 / 522;
+}else{
+	k_uloture4380 = S_halesque4379 * 383 - 860 + 602 / 565 - 120;
+}
+
+}
+	self.civilast1432Stratalongular1433 = 6943;
+	if(self.civilast1432Stratalongular1433 + 694 + 119 + 636 > 69752){ 
+double a_ob4381 = 1156;
+
+int M_riskfication4382 = 234;
+if(a_ob4381 - 264 + 695 * 179 / 727 - 11 != 55562){
+	M_riskfication4382 = a_ob4381 - 54 * 20 + 339 * 306 / 294;
+}else{
+	M_riskfication4382 = a_ob4381 - 928 / 686;
+}
+
+int q_major4383 = 878;
+if(M_riskfication4382 * 798 - 786 * 961 <= 77107){
+	q_major4383 = M_riskfication4382 - 70 * 832 / 667 * 56 - 77;
+}else{
+	q_major4383 = M_riskfication4382 - 840 / 732;
+}
+
+double U_manuator4384 = 932;
+if(q_major4383 + 852 * 101 / 615 + 788 / 534 * 658 != 97410){
+	U_manuator4384 = q_major4383 + 547 * 597;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+float R_textish4374 = 3961;
+
+if(R_textish4374 <= 47238){
+	double d_northeous4375 = R_textish4374 + 471 / 850 / 613 + 773 - 23 + 29; 
+if(d_northeous4375 <= 87356){
+	double U_graphy4376 = d_northeous4375 * 885 / 119 / 970 - 552 / 743;
+}
+}
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         return;
     }
     
-    [ValueformVocar checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+    [LampoCisling checkActSwitchWithSuccessBlock_MMMethodMMM:@"" otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         self.showAct = YES;
                 
-    } errorBlock_MMMethodMMM:^(HardMere *error) {
+    } errorBlock_MMMethodMMM:^(BecomelyBacstandardic *error) {
         self.showAct = NO;
+
+		//===insert my code start===  2024-01-12 12:51:44
+		{
+		
+	[self oviization1505Respondty1506:nil remaire1507Countryery1508:nil menssoldierette1509Erg1510:3139 member1511Listship1512:8009 haliinterviewform1513Musc1514:2618 nationalize1515Eurmost1516:@"bellwheno4433Flexwouldory4434" ];
+
+	self.juniorie1426Aevent1427 = 2395;
+	if(self.juniorie1426Aevent1427 * 990 * 428 > 58946){ 
+double f_collegeeur4435 = 8247;
+
+if(f_collegeeur4435 == 95633){
+	int c_plen4436 = f_collegeeur4435 * 410 + 462; 
+if(c_plen4436 > 23689){
+	int u_meet4437 = c_plen4436 + 189 / 569 + 342 * 163;
+}
+}
+ }
+	self.ctenee1428Buyry1429 = 9302;
+	if(self.ctenee1428Buyry1429 * 967 - 995 * 412 != 56583){}
+		if(self.opacization1430Knowledgeform1431){}
+	self.civilast1432Stratalongular1433 = 3309;
+	if(self.civilast1432Stratalongular1433 * 410 - 88 + 743 - 586 > 62575){ 
+int f_seriousern4438 = 8628;
+
+float o_plexesque4439 = 501;
+if(f_seriousern4438 * 869 - 726 - 448 < 61336){
+	o_plexesque4439 = f_seriousern4438 - 939 + 220 * 317;
+}else{
+	o_plexesque4439 = f_seriousern4438 - 427 - 228 - 170;
+}
+
+float e_domost4440 = 866;
+if(o_plexesque4439 * 429 / 485 / 155 - 339 + 589 < 54571){
+	e_domost4440 = o_plexesque4439 * 922 - 498 - 441 / 162 * 869;
+}
+
+int G_alteribility4441 = 794;
+if(e_domost4440 + 168 + 118 / 828 - 160 / 120 - 151 >= 45137){
+	G_alteribility4441 = e_domost4440 + 814 * 378 / 351 - 985 * 678 - 516;
+}else{
+	G_alteribility4441 = e_domost4440 * 654 + 943 - 162;
+}
+
+int T_stage4442 = 51;
+if(G_alteribility4441 - 874 + 476 - 681 - 705 - 724 / 893 >= 3676){
+	T_stage4442 = G_alteribility4441 - 806 - 605 * 873 + 333 - 898 * 86;
+}else{
+	T_stage4442 = G_alteribility4441 - 951 / 321 / 55 / 817 / 431;
+}
+
+ }
+		if(self.inad1434Simpleive1435){}
+      
+      
+    int radification4385Prepareety4386;   //commontemple20
+    int suddenlysive4387Politicsior4388 = 9545;
+    int volvion4389Noteety4390 = 4905;
+
+    if (suddenlysive4387Politicsior4388 > volvion4389Noteety4390){
+        radification4385Prepareety4386 = suddenlysive4387Politicsior4388;
+        
+        int abouty4405Seatular4406 = 5801;  //commontemple17
+        int pensoon4409Punmost4410 = 7019;
+        int beateur4411 = 5056;
+        switch (abouty4405Seatular4406) {
+                
+            case 54:
+			{
+				pensoon4409Punmost4410 = beateur4411 * 52 / 308; 
+			 break;
+			}
+			case 142:
+			{
+				pensoon4409Punmost4410 = beateur4411 * 278 + 279; 
+			 break;
+			}
+			case 313:
+			{
+				pensoon4409Punmost4410 = beateur4411 + 663 + 72 + 83 / 950; 
+			 break;
+			}
+			case 501:
+			{
+				pensoon4409Punmost4410 = beateur4411 + 954 * 281 / 457 - 147 / 284 - 588; 
+			 break;
+			}
+			case 220:
+			{
+				pensoon4409Punmost4410 = beateur4411 + 21 - 775 - 67 / 144 + 381 + 72; 
+			 break;
+			}
+			case 145:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 527 - 916 + 142; 
+			 break;
+			}
+			case 41:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 354 / 470; 
+			 break;
+			}
+			case 417:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 590 + 49; 
+			 break;
+			}
+			case 766:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 146 / 144 - 471 / 69 * 443 * 930; 
+			 break;
+			}
+			case 360:
+			{
+				pensoon4409Punmost4410 = beateur4411 * 643 * 722 - 26 + 618 * 992 * 250; 
+			 break;
+			}
+			case 300:
+			{
+				pensoon4409Punmost4410 = beateur4411 * 786 + 4 * 552 + 724; 
+			 break;
+			}
+			case 830:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 38 - 425 + 314 + 199 + 930; 
+			 break;
+			}
+			case 678:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 387 * 196 / 217 / 900 - 519 * 22; 
+			 break;
+			}
+			case 134:
+			{
+				pensoon4409Punmost4410 = beateur4411 * 692 / 739; 
+			 break;
+			}
+			case 716:
+			{
+				pensoon4409Punmost4410 = beateur4411 + 43 * 508 + 527 / 537; 
+			 break;
+			}
+			case 820:
+			{
+				pensoon4409Punmost4410 = beateur4411 - 940 + 23 + 624 / 148 * 602; 
+			 break;
+			}
+			
+                
+            default:
+                break;
+        }
+        
+
+        
+    }else{
+        radification4385Prepareety4386 = volvion4389Noteety4390;
+                int furtdefense4415Methodeer4416 = 942;  //commontemple16
+        int trusorium4429Oramel4430 = -697;
+        int marketative4431 = -495;
+        switch (furtdefense4415Methodeer4416) {
+                
+            case 104:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 163 / 602 * 345; 
+			 break;
+			}
+			case 405:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 936 * 357 - 928 / 154 * 990; 
+			 break;
+			}
+			case 83:
+			{
+				trusorium4429Oramel4430 = marketative4431 - 468 / 69 + 929 + 705; 
+			 break;
+			}
+			case 941:
+			{
+				trusorium4429Oramel4430 = marketative4431 - 4 * 507 / 929 + 4 * 927 * 791; 
+			 break;
+			}
+			case 508:
+			{
+				trusorium4429Oramel4430 = marketative4431 * 443 - 366 + 644 - 334 / 566; 
+			 break;
+			}
+			case 205:
+			{
+				trusorium4429Oramel4430 = marketative4431 - 396 - 324; 
+			 break;
+			}
+			case 439:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 488 / 523 + 582; 
+			 break;
+			}
+			case 803:
+			{
+				trusorium4429Oramel4430 = marketative4431 * 772 * 478 - 980; 
+			 break;
+			}
+			case 59:
+			{
+				trusorium4429Oramel4430 = marketative4431 * 351 - 806 / 225 / 847 + 422; 
+			 break;
+			}
+			case 885:
+			{
+				trusorium4429Oramel4430 = marketative4431 * 419 - 597 / 309 / 971; 
+			 break;
+			}
+			case 993:
+			{
+				trusorium4429Oramel4430 = marketative4431 - 542 / 8; 
+			 break;
+			}
+			case 917:
+			{
+				trusorium4429Oramel4430 = marketative4431 - 454 - 23 - 405 * 778 / 519 / 213; 
+			 break;
+			}
+			case 475:
+			{
+				trusorium4429Oramel4430 = marketative4431 * 431 - 467; 
+			 break;
+			}
+			case 53:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 817 / 82 / 939 * 836 + 821 + 661; 
+			 break;
+			}
+			case 921:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 911 + 249 * 523 / 402 - 303 / 13; 
+			 break;
+			}
+			case 825:
+			{
+				trusorium4429Oramel4430 = marketative4431 + 217 - 576 + 796 - 790 / 26 / 248; 
+			 break;
+			}
+			
+                
+            default:
+                break;
+        }
+        BOOL hysterics4419Public4420 = YES;
+        int thingative4421Relatesive4422 = 942;
+        if (hysterics4419Public4420){
+            
+            thingative4421Relatesive4422 = thingative4421Relatesive4422 * trusorium4429Oramel4430;
+        }
+        
+        
+    }
+        
+
+
+		}
+		// 2024-01-12 12:51:44 ===insert my code end=== 
+
     }];
     
 }

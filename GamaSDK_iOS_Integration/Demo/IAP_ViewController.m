@@ -8,7 +8,7 @@
 
 #import "IAP_ViewController.h"
 #import "UserModel.h"
-#import "PuteeDamnsive.h"
+#import "PubshipPasserdom.h"
 #import "ResHeader.h"
 
 #import "MWSDK.h"
@@ -38,7 +38,7 @@
                             @"com.gs.sst.daily1",
                             ];
     _dataSource = [productArr copy];
-//    _iapTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [PuteeDamnsive getCurrentScreenFrame].size.width, [PuteeDamnsive getCurrentScreenFrame].size.height) style:UITableViewStylePlain];
+//    _iapTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [PubshipPasserdom getCurrentScreenFrame].size.width, [PubshipPasserdom getCurrentScreenFrame].size.height) style:UITableViewStylePlain];
     _iapTable.dataSource = self;
     _iapTable.delegate = self;
     [self.view addSubview:_iapTable];
