@@ -12,19 +12,19 @@
 @implementation HeredivityPositiveicsView
 
 {
-    PetoriumExecutiveView *accountSDKTextFiledView;
-    PetoriumExecutiveView *newPwdSDKTextFiledView;
-    PetoriumExecutiveView *againPwdSDKTextFiledView;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *newPwdSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *againPwdSDKTextFiledView_IMPLVAR;
     
-    PetoriumExecutiveView *vfCodeFiledView;
-    
-    
-    LaxlegalantOwneracyView   *mLoginTitleView;
-    UIButton *getVfCodeBtn;
+    PetoriumExecutiveView *vfCodeFiledView_IMPLVAR;
     
     
-    int phoneCountdown;
-    NSTimer *downTimer;
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
+    UIButton *getVfCodeBtn_IMPLVAR;
+    
+    
+    int phoneCountdown_IMPLVAR;
+    NSTimer *downTimer_IMPLVAR;
 }
 
 - (instancetype)initView_MMMethodMMM
@@ -40,16 +40,16 @@
         
         
         
-        mLoginTitleView = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView_IMPLVAR = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_forgot_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_FIND_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG)];
         }];
         
         
-        [self addSubview:mLoginTitleView];
+        [self addSubview:mLoginTitleView_IMPLVAR];
 
 		
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             make.leading.trailing.mas_equalTo(self);
             make.height.mas_equalTo(VH(40));
@@ -58,10 +58,10 @@
         
         
         
-        accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
 
 		
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+        accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -143,7 +143,7 @@ if(l_skinet15610 - 223 / 5 <= 30310){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self addSubview:accountSDKTextFiledView];
+        [self addSubview:accountSDKTextFiledView_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -162,7 +162,7 @@ if(l_skinet15610 - 223 / 5 <= 30310){
 
 		
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(self).mas_offset(40);
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -195,7 +195,7 @@ if(l_skinet15610 - 223 / 5 <= 30310){
             make.trailing.mas_equalTo(self).mas_offset(-40);
             make.height.mas_equalTo(VH(40));
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
+            make.top.equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(25));
             
         }];
 
@@ -203,17 +203,17 @@ if(l_skinet15610 - 223 / 5 <= 30310){
         
         
         
-        getVfCodeBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        getVfCodeBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_get_vfcode) fontSize_MMMethodMMM:FS(14) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kGetVfCodeActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
         
-        [self addSubview:getVfCodeBtn];
-        [getVfCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+        [self addSubview:getVfCodeBtn_IMPLVAR];
+        [getVfCodeBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
 
 		
             make.width.mas_equalTo(VW(100));
-            make.height.mas_equalTo(accountSDKTextFiledView);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -233,7 +233,7 @@ if(l_skinet15610 - 223 / 5 <= 30310){
 
             
         }];
-        [getVfCodeBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        [getVfCodeBtn_IMPLVAR setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         
         
         UIView *lineView1 = [[UIView alloc] init];
@@ -246,27 +246,27 @@ if(l_skinet15610 - 223 / 5 <= 30310){
             make.width.mas_equalTo(0.5);
 
 		
-            make.trailing.mas_equalTo(getVfCodeBtn.mas_leading);
+            make.trailing.mas_equalTo(getVfCodeBtn_IMPLVAR.mas_leading);
 
 		
-            make.centerY.mas_equalTo(getVfCodeBtn);
+            make.centerY.mas_equalTo(getVfCodeBtn_IMPLVAR);
             make.height.mas_equalTo(VH(14));
 
         }];
         
         
-        vfCodeFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
+        vfCodeFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_VfCode)];
         
-        [self addSubview:vfCodeFiledView];
+        [self addSubview:vfCodeFiledView_IMPLVAR];
 
 		
-        [vfCodeFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(getVfCodeBtn);
-            make.bottom.equalTo(getVfCodeBtn);
+        [vfCodeFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(getVfCodeBtn_IMPLVAR);
+            make.bottom.equalTo(getVfCodeBtn_IMPLVAR);
 
 		
             
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
             make.trailing.mas_equalTo(lineView1.mas_leading);
         }];
         
@@ -277,8 +277,8 @@ if(l_skinet15610 - 223 / 5 <= 30310){
         [vfCodeFiledView_bottom_line mas_makeConstraints:^(MASConstraintMaker *make) {
             
             
-            make.leading.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.bottom.mas_equalTo(vfCodeFiledView);
+            make.leading.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.bottom.mas_equalTo(vfCodeFiledView_IMPLVAR);
             
             make.height.mas_equalTo(1);
 
@@ -287,15 +287,15 @@ if(l_skinet15610 - 223 / 5 <= 30310){
         }];
         
         
-        newPwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPwdSDKTextFiledView];
+        newPwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
+        [self addSubview:newPwdSDKTextFiledView_IMPLVAR];
 
 		
         
-        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(accountSDKTextFiledView);
-            make.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(accountSDKTextFiledView);
+        [newPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
             make.top.equalTo(vfCodeFiledView_bottom_line.mas_bottom).mas_offset(VH(15));
 
@@ -344,16 +344,16 @@ if(l_skinet15610 - 223 / 5 <= 30310){
         
         
         
-        againPwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
-        [self addSubview:againPwdSDKTextFiledView];
+        againPwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
+        [self addSubview:againPwdSDKTextFiledView_IMPLVAR];
         
-        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(accountSDKTextFiledView);
+        [againPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
 		
-            make.trailing.mas_equalTo(accountSDKTextFiledView);
-            make.height.mas_equalTo(accountSDKTextFiledView);
-            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.top.equalTo(newPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
             
         }];
         
@@ -415,10 +415,10 @@ if(l_skinet15610 - 223 / 5 <= 30310){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            make.top.equalTo(againPwdSDKTextFiledView.mas_bottom).mas_offset(VH(32));
+            make.top.equalTo(againPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(32));
 
 		
-            make.width.mas_equalTo(accountSDKTextFiledView);
+            make.width.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
             make.height.mas_equalTo(VH(50));
         }];
         
@@ -437,7 +437,7 @@ if(l_skinet15610 - 223 / 5 <= 30310){
         {
             SDK_LOG(wwwww_tag_wwwww_kGetVfCodeActTag);
             [self endEditing:YES];
-            NSString *account = accountSDKTextFiledView.inputUITextField.text;
+            NSString *account = accountSDKTextFiledView_IMPLVAR.inputUITextField.text;
             if (![BeyondaceousCommunityic validUserName_MMMethodMMM:account]) {
                 return;
             }
@@ -647,7 +647,7 @@ if(v_tetrhood15487 > 40543){
 // 2024-01-12 12:51:44 ===insert my method end===
 -(void)findPassword_MMMethodMMM
 {
-    NSString *userName = accountSDKTextFiledView.inputUITextField.text;
+    NSString *userName = accountSDKTextFiledView_IMPLVAR.inputUITextField.text;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -685,10 +685,10 @@ if(v_tetrhood15487 > 40543){
 
 		
     NSString *phoneNum = @"";
-    NSString *vfCode = vfCodeFiledView.inputUITextField.text;
+    NSString *vfCode = vfCodeFiledView_IMPLVAR.inputUITextField.text;
     
-    NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
-    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
+    NSString *newPwd = newPwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
+    NSString *againPwd = againPwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
     
 
 		
@@ -1054,7 +1054,7 @@ if(h_emeswhileative15549 <= 62088){
 // 2024-01-12 12:51:44 ===insert my method end===
 -(void)downTime_MMMethodMMM{
     
-    phoneCountdown = 60;
+    phoneCountdown_IMPLVAR = 60;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1077,16 +1077,16 @@ if(x_centrfication15942 != 61206){
 
 
 		
-    getVfCodeBtn.userInteractionEnabled = NO;
-    [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = NO;
+    [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%d", phoneCountdown_IMPLVAR] forState:UIControlStateNormal];
     
     
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
-    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    downTimer_IMPLVAR = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self
                                                selector:@selector(phoneFireTimer_MMMethodMMM)
                                                userInfo:nil
@@ -1098,11 +1098,11 @@ if(x_centrfication15942 != 61206){
 }
 
 - (void)phoneFireTimer_MMMethodMMM {
-    phoneCountdown--;
-    if (phoneCountdown < 0) {
+    phoneCountdown_IMPLVAR--;
+    if (phoneCountdown_IMPLVAR < 0) {
         [self resetVfCodeBtnStatue_MMMethodMMM];
     }else{
-        [getVfCodeBtn setTitle:[NSString stringWithFormat:@"%d", phoneCountdown] forState:UIControlStateNormal];
+        [getVfCodeBtn_IMPLVAR setTitle:[NSString stringWithFormat:@"%d", phoneCountdown_IMPLVAR] forState:UIControlStateNormal];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1151,9 +1151,9 @@ if(x_centrfication15942 != 61206){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1302,8 +1302,8 @@ if(x_centrfication15942 != 61206){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     }
-    getVfCodeBtn.userInteractionEnabled = YES;
-    [getVfCodeBtn setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
+    getVfCodeBtn_IMPLVAR.userInteractionEnabled = YES;
+    [getVfCodeBtn_IMPLVAR setTitle:GetString(wwwww_tag_wwwww_text_get_vfcode) forState:UIControlStateNormal];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1396,9 +1396,9 @@ if(x_simplyacy16049 - 84 * 952 - 233 < 35735){
 - (void)dealloc
 {
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{

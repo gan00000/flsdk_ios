@@ -13,13 +13,13 @@
 @implementation FinalFissmostView
 
 {
-    PetoriumExecutiveView *thirdAccountSDKTextFiledView;
-    PetoriumExecutiveView *accountSDKTextFiledView;
-    PetoriumExecutiveView *pwdSDKTextFiledView;
+    PetoriumExecutiveView *thirdAccountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *pwdSDKTextFiledView_IMPLVAR;
     
     
     
-    LaxlegalantOwneracyView   *mLoginTitleView;
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
     
     
 }
@@ -55,14 +55,14 @@
         
         
         
-        mLoginTitleView = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_update_account) hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView_IMPLVAR = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_update_account) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_BIND_ACCOUNT) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
         
         
-        [self addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self addSubview:mLoginTitleView_IMPLVAR];
+        [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             make.leading.trailing.mas_equalTo(self);
 
@@ -71,32 +71,32 @@
         }];
         
         
-        thirdAccountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:thirdAccountSDKTextFiledView];
+        thirdAccountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        thirdAccountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+        [self addSubview:thirdAccountSDKTextFiledView_IMPLVAR];
         
-        [thirdAccountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [thirdAccountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(self).mas_offset(40);
             make.trailing.mas_equalTo(self).mas_offset(-40);
             make.height.mas_equalTo(VH(40));
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
+            make.top.equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(25));
             
         }];
         
         
-        accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:accountSDKTextFiledView];
+        accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+        [self addSubview:accountSDKTextFiledView_IMPLVAR];
 
 		
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
 
 		
-            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
-            make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -143,19 +143,19 @@
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
 
-            make.top.equalTo(thirdAccountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.top.equalTo(thirdAccountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
             
         }];
         
         
         
-        pwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        [self addSubview:pwdSDKTextFiledView];
+        pwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+        [self addSubview:pwdSDKTextFiledView_IMPLVAR];
         
-        [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
-            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
-            make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+        [pwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -215,7 +215,7 @@
 
 
 		
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
             
         }];
         
@@ -239,9 +239,9 @@
         [self addSubview:bindTipLabel];
         
         [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(thirdAccountSDKTextFiledView);
-            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView);
-            make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
+            make.leading.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
+            make.trailing.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
+            make.top.equalTo(pwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(6));
             
         }];
 
@@ -410,7 +410,7 @@ switch (w_emeticcommunity17548) {
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.top.equalTo(bindTipLabel.mas_bottom).mas_offset(VH(32));
-            make.width.mas_equalTo(pwdSDKTextFiledView);
+            make.width.mas_equalTo(pwdSDKTextFiledView_IMPLVAR);
             make.height.mas_equalTo(VH(50));
         }];
         
@@ -455,7 +455,7 @@ switch (w_emeticcommunity17548) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
+    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:nil];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -477,7 +477,7 @@ switch (w_emeticcommunity17548) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
+    thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField.enabled = NO;
 }
 
 
@@ -543,10 +543,10 @@ switch (w_emeticcommunity17548) {
     NihilativeFederalless * currentAccountModel = (NihilativeFederalless *)self.fromPageParam;
     
     
-    NSString *account = accountSDKTextFiledView.inputUITextField.text;
+    NSString *account = accountSDKTextFiledView_IMPLVAR.inputUITextField.text;
 
 		
-    NSString *pasword = pwdSDKTextFiledView.inputUITextField.text;
+    NSString *pasword = pwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
   
     
  

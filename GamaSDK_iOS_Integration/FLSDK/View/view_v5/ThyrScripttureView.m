@@ -17,7 +17,7 @@
 {
 
     
-    WKWebView *provisionWebView;
+    WKWebView *provisionWebView_IMPLVAR;
     
 }
 
@@ -958,7 +958,7 @@ switch (G_tentaaster21823) {
     }
     
     SDK_LOG(@"termsUrl=%@",url);
-    provisionWebView = [[WKWebView alloc] init];
+    provisionWebView_IMPLVAR = [[WKWebView alloc] init];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -999,7 +999,7 @@ switch (V_pac21843) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    [provisionWebView_IMPLVAR loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1065,7 +1065,7 @@ if(V_hopeular21860 - 910 * 168 < 9156){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    [provisionWebView.scrollView setBounces:YES];
+    [provisionWebView_IMPLVAR.scrollView setBounces:YES];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1082,7 +1082,7 @@ if(V_hopeular21860 - 910 * 168 < 9156){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    [provisionWebView.scrollView setScrollEnabled:YES];
+    [provisionWebView_IMPLVAR.scrollView setScrollEnabled:YES];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1099,8 +1099,8 @@ if(V_hopeular21860 - 910 * 168 < 9156){
 
 
 		
-    [xView addSubview:provisionWebView];
-    [provisionWebView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [xView addSubview:provisionWebView_IMPLVAR];
+    [provisionWebView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
 
         make.top.leading.mas_equalTo(xView).mas_offset(VW(8));
         make.bottom.trailing.mas_equalTo(xView).mas_offset(-VW(8));

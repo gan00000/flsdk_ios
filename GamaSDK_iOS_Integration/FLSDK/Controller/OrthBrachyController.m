@@ -30,19 +30,19 @@
 
 @interface OrthBrachyController()
 
-@property (nonatomic,strong)UIView *sdkContentView;
+@property (nonatomic,strong)UIView *sdkContentView_PRIROPERTY;
 
 
 @end
 
 @implementation OrthBrachyController{
     
-    SDKPage sdkPageType;
+    SDKPage sdkPageType_IMPLVAR;
     
     
-    CernPhemcurrentarianView *mLoginWithRegView;
-    CernPhemcurrentarianView *mMainHomeView;
-    CernPhemcurrentarianView *mWelcomeBackView;
+    CernPhemcurrentarianView *mLoginWithRegView_IMPLVAR;
+    CernPhemcurrentarianView *mMainHomeView_IMPLVAR;
+    CernPhemcurrentarianView *mWelcomeBackView_IMPLVAR;
     
 }
 
@@ -156,7 +156,7 @@ if(b_nameling5822 != 12290){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     if (self) {
-        sdkPageType = pageType;
+        sdkPageType_IMPLVAR = pageType;
 
 		
         [self registNotification_MMMethodMMM];
@@ -205,7 +205,7 @@ if(b_nameling5822 != 12290){
     self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.9];
     
     SDK_DATA.mUITextFieldDelegate = self;
-    switch (sdkPageType) {
+    switch (sdkPageType_IMPLVAR) {
         case SDKPage_Login:
         {
             [self showLoginPageOrAutoLogin_MMMethodMMM:(CURRENT_PAGE_TYPE_NULL)];
@@ -599,7 +599,7 @@ if(w_osteo6627 * 688 * 418 > 47568){
 }
 
 
--(UIView *)sdkContentView
+-(UIView *)sdkContentView_PRIROPERTY
 {
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -625,11 +625,11 @@ if(w_osteo6627 * 688 * 418 > 47568){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if (!_sdkContentView) {
-        _sdkContentView = [[UIView alloc]init];
+    if (!_sdkContentView_PRIROPERTY) {
+        _sdkContentView_PRIROPERTY = [[UIView alloc]init];
         
-        [self.view addSubview:_sdkContentView];
-        [_sdkContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.view addSubview:_sdkContentView_PRIROPERTY];
+        [_sdkContentView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
             
             if([SDK_VERSION_VN isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
                [SDK_VERSION_V6 isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
@@ -709,7 +709,7 @@ if(w_osteo6627 * 688 * 418 > 47568){
 
 		
     }
-    return _sdkContentView;
+    return _sdkContentView_PRIROPERTY;
 }
 
 #pragma mark -頁面添加部分
@@ -802,7 +802,7 @@ if(c_ofhood5890 >= 10703){
     CernPhemcurrentarianView *ageQuaView = nil;
 #ifdef SDK_KR
     
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_PRIROPERTY].subviews) {
         [subView removeFromSuperview];
     }
     ageQuaView = [[AgeQuaView alloc] initView_MMMethodMMM];
@@ -838,7 +838,7 @@ if(Z_missast6771 == 536){
     
     
     if (is_Version2) {
-        mLoginWithRegView = [[ArboriilePalliuleView alloc] initView_MMMethodMMM];
+        mLoginWithRegView_IMPLVAR = [[ArboriilePalliuleView alloc] initView_MMMethodMMM];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -934,10 +934,10 @@ if(Z_missast6771 == 536){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     }else{
-        mLoginWithRegView = [[VincialVagardView alloc] initView_MMMethodMMM];
+        mLoginWithRegView_IMPLVAR = [[VincialVagardView alloc] initView_MMMethodMMM];
     }
     
-    [self addSubSdkLoginView_MMMethodMMM:mLoginWithRegView];
+    [self addSubSdkLoginView_MMMethodMMM:mLoginWithRegView_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1048,17 +1048,17 @@ switch (X_quindecimosity6807) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    return mLoginWithRegView;
+    return mLoginWithRegView_IMPLVAR;
 }
 
 -(void)addWelcomeView_MMMethodMMM
 {
     
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_PRIROPERTY].subviews) {
         [subView removeFromSuperview];
     }
-    mWelcomeBackView = [[MovementeurComeousView alloc] initView_MMMethodMMM];
-    [self addSubSdkLoginView_MMMethodMMM:mWelcomeBackView];
+    mWelcomeBackView_IMPLVAR = [[MovementeurComeousView alloc] initView_MMMethodMMM];
+    [self addSubSdkLoginView_MMMethodMMM:mWelcomeBackView_IMPLVAR];
 }
 
 
@@ -1783,17 +1783,17 @@ if(H_flagrorium6103 >= 78622){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    for (UIView *subView in [self sdkContentView].subviews) {
+    for (UIView *subView in [self sdkContentView_PRIROPERTY].subviews) {
         [subView removeFromSuperview];
     }
 
 		
     if (is_Version2) {
-        mMainHomeView = [[PositionitudeSedmeanView alloc] initView_MMMethodMMM];
+        mMainHomeView_IMPLVAR = [[PositionitudeSedmeanView alloc] initView_MMMethodMMM];
 
 		
     }else{
-        mMainHomeView = [[SpherPerformView alloc] initView_MMMethodMMM];
+        mMainHomeView_IMPLVAR = [[SpherPerformView alloc] initView_MMMethodMMM];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1860,7 +1860,7 @@ if(S_juvenitive6953 * 150 * 156 - 532 / 976 / 208 / 878 >= 76436){
 
     }
     
-    [self addSubSdkLoginView_MMMethodMMM:mMainHomeView];
+    [self addSubSdkLoginView_MMMethodMMM:mMainHomeView_IMPLVAR];
 }
 
 
@@ -1874,17 +1874,17 @@ if(S_juvenitive6953 * 150 * 156 - 532 / 976 / 208 / 878 >= 76436){
     
     
     
-    for (UIView *subView in self.sdkContentView.subviews) {
+    for (UIView *subView in self.sdkContentView_PRIROPERTY.subviews) {
         subView.hidden = YES;
     }
     
-    [self.sdkContentView addSubview:mSDKBaseView];
+    [self.sdkContentView_PRIROPERTY addSubview:mSDKBaseView];
 
 		
     
     [mSDKBaseView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo([self sdkContentView]);
-        make.center.mas_equalTo([self sdkContentView]);
+        make.size.mas_equalTo([self sdkContentView_PRIROPERTY]);
+        make.center.mas_equalTo([self sdkContentView_PRIROPERTY]);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -2253,8 +2253,8 @@ if(I_westernate7012 > 91647){
     
     switch (toPage) {
         case CURRENT_PAGE_TYPE_LOGIN_WITH_REG:
-            if (mLoginWithRegView) {
-                mLoginWithRegView.hidden = NO;
+            if (mLoginWithRegView_IMPLVAR) {
+                mLoginWithRegView_IMPLVAR.hidden = NO;
 
 		
             }
@@ -2331,8 +2331,8 @@ if(w_opinule7070 * 989 / 853 / 55 <= 90887){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            if (mMainHomeView) {
-                mMainHomeView.hidden = NO;
+            if (mMainHomeView_IMPLVAR) {
+                mMainHomeView_IMPLVAR.hidden = NO;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -2369,8 +2369,8 @@ if(w_opinule7070 * 989 / 853 / 55 <= 90887){
         case CURRENT_PAGE_TYPE_WELCOME_BACK:
 
 		
-            if (mWelcomeBackView) {
-                mWelcomeBackView.hidden = NO;
+            if (mWelcomeBackView_IMPLVAR) {
+                mWelcomeBackView_IMPLVAR.hidden = NO;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -3207,7 +3207,7 @@ if(l_agogmaybe7266 + 519 - 343 * 92 - 768 >= 70367){
         kWeakSelf
         [UIView animateWithDuration:0.3 animations:^{
             
-            [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [weakSelf.sdkContentView_PRIROPERTY mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.equalTo(@(0)).mas_offset(-(offSet + 15));
 
 		
@@ -3224,7 +3224,7 @@ if(l_agogmaybe7266 + 519 - 343 * 92 - 768 >= 70367){
     kWeakSelf
     [UIView animateWithDuration:0.3 animations:^{
         
-        [weakSelf.sdkContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        [weakSelf.sdkContentView_PRIROPERTY mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(@(0));
         }];
 

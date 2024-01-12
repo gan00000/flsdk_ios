@@ -4,7 +4,7 @@
 
 @implementation CernPhemcurrentarianView
 {
-    BOOL isDrawRect;
+    BOOL isDrawRect_IMPLVAR;
     
 }
 
@@ -458,8 +458,8 @@ if(N_usular27297 - 825 / 923 - 489 - 700 * 336 + 252 <= 99557){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    if(!isDrawRect){
-        isDrawRect = YES;
+    if(!isDrawRect_IMPLVAR){
+        isDrawRect_IMPLVAR = YES;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{

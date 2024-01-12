@@ -8,14 +8,14 @@
 
 @implementation VincialVagardView
 {
-    UIButton *loginTabBtn;
-    UIButton *regTabBtn;
+    UIButton *loginTabBtn_IMPLVAR;
+    UIButton *regTabBtn_IMPLVAR;
     
-    NSUInteger currentClickTab;
+    NSUInteger currentClickTab_IMPLVAR;
     
-    UIView *loginBottomLine;
+    UIView *loginBottomLine_IMPLVAR;
     
-    UIView *regBottomLine;
+    UIView *regBottomLine_IMPLVAR;
     
 }
 
@@ -276,7 +276,7 @@ switch (x_sororitude19467) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     if (self) {
-        currentClickTab = 1;
+        currentClickTab_IMPLVAR = 1;
         [self addView_MMMethodMMM];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -363,10 +363,10 @@ if(q_byitive19569 == 2945){
     
     
     
-    loginTabBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [loginTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [tabView addSubview:loginTabBtn];
-    [loginTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    loginTabBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kLoginTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    [loginTabBtn_IMPLVAR setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [tabView addSubview:loginTabBtn_IMPLVAR];
+    [loginTabBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
         make.leading.mas_equalTo(tabView);
@@ -398,20 +398,20 @@ if(q_byitive19569 == 2945){
 
     
     
-    regTabBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_heurice_lithtoo fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    regTabBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_heurice_lithtoo fontSize_MMMethodMMM:FS(24) textColor_MMMethodMMM:[UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484] tag_MMMethodMMM:kRegTabActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		
     
-    [regTabBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [tabView addSubview:regTabBtn];
+    [regTabBtn_IMPLVAR setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [tabView addSubview:regTabBtn_IMPLVAR];
 
 		
-    [regTabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [regTabBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.bottom.mas_equalTo(tabView);
 
 		
-        make.leading.mas_equalTo(loginTabBtn.mas_trailing).mas_offset(VW(82));
+        make.leading.mas_equalTo(loginTabBtn_IMPLVAR.mas_trailing).mas_offset(VW(82));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -493,18 +493,18 @@ if(S_dermfier19630 + 153 + 537 - 604 - 359 - 219 - 642 <= 93289){
 
     }];
     
-    loginBottomLine = [[UIView alloc] init];
+    loginBottomLine_IMPLVAR = [[UIView alloc] init];
 
 		
-    loginBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
+    loginBottomLine_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
 
 		
-    [tabView addSubview:loginBottomLine];
-    [loginBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    [tabView addSubview:loginBottomLine_IMPLVAR];
+    [loginBottomLine_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.width.mas_equalTo(loginTabBtn);
-        make.centerX.mas_equalTo(loginTabBtn);
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.width.mas_equalTo(loginTabBtn_IMPLVAR);
+        make.centerX.mas_equalTo(loginTabBtn_IMPLVAR);
+        make.top.mas_equalTo(loginTabBtn_IMPLVAR.mas_bottom).mas_offset(3);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -531,14 +531,14 @@ if(M_largeatary19634 > 91935){
 
 		
     
-    regBottomLine = [[UIView alloc] init];
-    regBottomLine.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
-    regBottomLine.hidden = YES;
-    [tabView addSubview:regBottomLine];
-    [regBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    regBottomLine_IMPLVAR = [[UIView alloc] init];
+    regBottomLine_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F23B12];
+    regBottomLine_IMPLVAR.hidden = YES;
+    [tabView addSubview:regBottomLine_IMPLVAR];
+    [regBottomLine_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.width.mas_equalTo(regTabBtn);
-        make.centerX.mas_equalTo(regTabBtn);
+        make.width.mas_equalTo(regTabBtn_IMPLVAR);
+        make.centerX.mas_equalTo(regTabBtn_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -568,7 +568,7 @@ if(M_largeatary19634 > 91935){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        make.top.mas_equalTo(loginTabBtn.mas_bottom).mas_offset(3);
+        make.top.mas_equalTo(loginTabBtn_IMPLVAR.mas_bottom).mas_offset(3);
 
 		
         make.height.mas_equalTo(2);
@@ -708,9 +708,9 @@ switch (v_fillile19736) {
     
     
     
-    currentClickTab = 1;
-    [loginTabBtn setSelected:YES];
-    [regTabBtn setSelected:NO];
+    currentClickTab_IMPLVAR = 1;
+    [loginTabBtn_IMPLVAR setSelected:YES];
+    [regTabBtn_IMPLVAR setSelected:NO];
     
     self.mAccountLoginView = [[ScoreaireCountryaneityView alloc] initView_MMMethodMMM];
 
@@ -720,7 +720,7 @@ switch (v_fillile19736) {
 		
     [self.mAccountLoginView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.mas_equalTo(self);
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.top.mas_equalTo(loginBottomLine_IMPLVAR.mas_bottom).mas_offset(VH(23));
 
 		
 
@@ -745,7 +745,7 @@ switch (v_fillile19736) {
 
 
 		
-        make.top.mas_equalTo(loginBottomLine.mas_bottom).mas_offset(VH(23));
+        make.top.mas_equalTo(loginBottomLine_IMPLVAR.mas_bottom).mas_offset(VH(23));
     }];
     
     self.mRegisterAccountView.hidden = YES;
@@ -847,12 +847,12 @@ switch (v_fillile19736) {
             SDK_LOG(wwwww_tag_wwwww_kLoginTabActTag);
 
 		
-            if (currentClickTab == 1) {
+            if (currentClickTab_IMPLVAR == 1) {
 
 		
                 return;
             }
-            currentClickTab = 1;
+            currentClickTab_IMPLVAR = 1;
             
             [self makeTabStatus_MMMethodMMM:YES];
 
@@ -920,7 +920,7 @@ if(v_sacrodreamite19754 - 40 * 998 + 391 - 501 / 755 / 783 < 11402){
             
             
             SDK_LOG(wwwww_tag_wwwww_kRegTabActTag);
-            if (currentClickTab == 2) {
+            if (currentClickTab_IMPLVAR == 2) {
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1029,7 +1029,7 @@ if(v_sacrodreamite19754 - 40 * 998 + 391 - 501 / 755 / 783 < 11402){
 
                 return;
             }
-            currentClickTab = 2;
+            currentClickTab_IMPLVAR = 2;
             
            
             [self makeTabStatus_MMMethodMMM:NO];
@@ -1124,13 +1124,13 @@ if(v_sacrodreamite19754 - 40 * 998 + 391 - 501 / 755 / 783 < 11402){
 
     if (loginClick) {
         
-        [loginTabBtn setSelected:YES];
-        [regTabBtn setSelected:NO];
+        [loginTabBtn_IMPLVAR setSelected:YES];
+        [regTabBtn_IMPLVAR setSelected:NO];
         
         self.mAccountLoginView.hidden = NO;
         self.mRegisterAccountView.hidden = YES;
         
-        loginBottomLine.hidden = NO;
+        loginBottomLine_IMPLVAR.hidden = NO;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1144,21 +1144,21 @@ if(v_sacrodreamite19754 - 40 * 998 + 391 - 501 / 755 / 783 < 11402){
 
 
 		
-        regBottomLine.hidden = YES;
+        regBottomLine_IMPLVAR.hidden = YES;
         
         
     }else{
     
         
-        [loginTabBtn setSelected:NO];
+        [loginTabBtn_IMPLVAR setSelected:NO];
 
 		
-        [regTabBtn setSelected:YES];
+        [regTabBtn_IMPLVAR setSelected:YES];
     
         self.mAccountLoginView.hidden = YES;
         self.mRegisterAccountView.hidden = NO;
         
-        loginBottomLine.hidden = YES;
+        loginBottomLine_IMPLVAR.hidden = YES;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1181,7 +1181,7 @@ if(v_sacrodreamite19754 - 40 * 998 + 391 - 501 / 755 / 783 < 11402){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        regBottomLine.hidden = NO;
+        regBottomLine_IMPLVAR.hidden = NO;
         
     }
 }

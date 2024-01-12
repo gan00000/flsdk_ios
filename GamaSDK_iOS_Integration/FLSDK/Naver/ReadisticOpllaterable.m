@@ -5,8 +5,8 @@
 
 @implementation ReadisticOpllaterable
 {
-    NaverThirdPartyLoginConnection *_thirdPartyLoginConn;
-    NaverCallBack mNaverCallBack;
+    NaverThirdPartyLoginConnection *_thirdPartyLoginConn_IMPLVAR;
+    NaverCallBack mNaverCallBack_IMPLVAR;
 }
 
 
@@ -315,13 +315,13 @@ if(j_victcy1180 + 232 * 939 < 55766){
 // 2024-01-12 12:51:44 ===insert my method end===
 -(void)startLoginWithKey_MMMethodMMM:(NSString *)consumerKey consumerSecret_MMMethodMMM:(NSString *)consumerSecret appName_MMMethodMMM:(NSString *)appName callback_MMMethodMMM:(NaverCallBack)callback{
     
-    mNaverCallBack = callback;
+    mNaverCallBack_IMPLVAR = callback;
 
 		
-    if(!_thirdPartyLoginConn){
-        _thirdPartyLoginConn = [NaverThirdPartyLoginConnection getSharedInstance];
-        [_thirdPartyLoginConn setIsNaverAppOauthEnable:YES];
-        _thirdPartyLoginConn.delegate = self;
+    if(!_thirdPartyLoginConn_IMPLVAR){
+        _thirdPartyLoginConn_IMPLVAR = [NaverThirdPartyLoginConnection getSharedInstance];
+        [_thirdPartyLoginConn_IMPLVAR setIsNaverAppOauthEnable:YES];
+        _thirdPartyLoginConn_IMPLVAR.delegate = self;
     }
     SDK_LOG(@"requestThirdpartyLogin");
 
@@ -389,7 +389,7 @@ if(j_victcy1180 + 232 * 939 < 55766){
 }
 
 - (void)getUserProfile{
-    if (NO == [_thirdPartyLoginConn isValidAccessTokenExpireTimeNow]) {
+    if (NO == [_thirdPartyLoginConn_IMPLVAR isValidAccessTokenExpireTimeNow]) {
         SDK_LOG(@"isValidAccessTokenExpireTimeNow NO");
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -424,7 +424,7 @@ if(j_victcy1180 + 232 * 939 < 55766){
 
 		
 
-    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", _thirdPartyLoginConn.accessToken];
+    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", _thirdPartyLoginConn_IMPLVAR.accessToken];
 
     [urlRequest setValue:authValue forHTTPHeaderField:@"Authorization"];
 
@@ -640,8 +640,8 @@ switch (t_outain1368) {
                     NSString *uid = response[@"id"];
                     NSString *nickname = response[@"nickname"];
                     
-                    if(mNaverCallBack){
-                        mNaverCallBack(_thirdPartyLoginConn.accessToken, uid, nickname);
+                    if(mNaverCallBack_IMPLVAR){
+                        mNaverCallBack_IMPLVAR(_thirdPartyLoginConn_IMPLVAR.accessToken, uid, nickname);
                     }
                 }
             }
@@ -668,7 +668,7 @@ switch (t_outain1368) {
 
 - (void)dealloc
 {
-    _thirdPartyLoginConn.delegate = nil;
+    _thirdPartyLoginConn_IMPLVAR.delegate = nil;
 }
 
 #pragma mark - OAuth20 deleagate
@@ -695,14 +695,14 @@ switch (t_outain1368) {
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithAuthCode {
     
-    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithAuthCode OAuth Success!\n\nAccess Token - %@\n\nAccess Token Expire Date- %@\n\nRefresh Token - %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate, _thirdPartyLoginConn.refreshToken);
+    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithAuthCode OAuth Success!\n\nAccess Token - %@\n\nAccess Token Expire Date- %@\n\nRefresh Token - %@", _thirdPartyLoginConn_IMPLVAR.accessToken, _thirdPartyLoginConn_IMPLVAR.accessTokenExpireDate, _thirdPartyLoginConn_IMPLVAR.refreshToken);
     
     [self getUserProfile];
 }
 
 - (void)oauth20ConnectionDidFinishRequestACTokenWithRefreshToken {
     
-    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithRefreshToken Refresh Success!\n\nAccess Token - %@\n\nAccess sToken ExpireDate- %@", _thirdPartyLoginConn.accessToken, _thirdPartyLoginConn.accessTokenExpireDate);
+    SDK_LOG(@"oauth20ConnectionDidFinishRequestACTokenWithRefreshToken Refresh Success!\n\nAccess Token - %@\n\nAccess sToken ExpireDate- %@", _thirdPartyLoginConn_IMPLVAR.accessToken, _thirdPartyLoginConn_IMPLVAR.accessTokenExpireDate);
     
     [self getUserProfile];
     

@@ -18,8 +18,8 @@
 
 @implementation SpherPerformView
 {
-    UIButton *guestLoginBtn;
-    UIButton *checkBoxTermsBtn;
+    UIButton *guestLoginBtn_IMPLVAR;
+    UIButton *checkBoxTermsBtn_IMPLVAR;
     
 }
 
@@ -349,9 +349,9 @@ if(e_monil20026 <= 40190){
     
     
     
-    guestLoginBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-    [guestLoginBtn.layer setCornerRadius:VH(25)];
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
+    guestLoginBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    [guestLoginBtn_IMPLVAR.layer setCornerRadius:VH(25)];
+    guestLoginBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -367,9 +367,9 @@ if(e_monil20026 <= 40190){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     
-    [contentView addSubview:guestLoginBtn];
+    [contentView addSubview:guestLoginBtn_IMPLVAR];
     
-    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [guestLoginBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -635,9 +635,9 @@ switch (h_networkably20128) {
     }];
     
     UIView *guestLoginBtnContent = [[UIView alloc] init];
-    [guestLoginBtn addSubview:guestLoginBtnContent];
+    [guestLoginBtn_IMPLVAR addSubview:guestLoginBtnContent];
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(guestLoginBtn);
+        make.center.mas_equalTo(guestLoginBtn_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -825,11 +825,11 @@ if(P_windment20207 * 862 - 920 * 531 == 34060){
 
 		
     if (!SDK_DATA.mConfigModel.visitorLogin) {
-        guestLoginBtn.hidden = YES;
+        guestLoginBtn_IMPLVAR.hidden = YES;
     }
     
     
-    UIView *topView = guestLoginBtn;
+    UIView *topView = guestLoginBtn_IMPLVAR;
     
     
     
@@ -874,17 +874,17 @@ if(P_windment20207 * 862 - 920 * 531 == 34060){
         if (!SDK_DATA.mConfigModel.appleLogin || SDK_DATA.mConfigModel.appPassCheck) {
             appleLoginBtn.hidden = YES;
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.mas_equalTo(guestLoginBtn);
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(2);
+                make.leading.trailing.mas_equalTo(guestLoginBtn_IMPLVAR);
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(2);
                 make.height.mas_equalTo(2);
             }];
             
         }else{
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
+                make.leading.trailing.height.mas_equalTo(guestLoginBtn_IMPLVAR);
 
 		
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(VH(15));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1392,7 +1392,7 @@ if(U_sisterial20498 >= 33736){
 		
     }];
     
-    checkBoxTermsBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    checkBoxTermsBtn_IMPLVAR = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1443,9 +1443,9 @@ switch (y_publicitious20506) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    checkBoxTermsBtn.selected = YES;
-    [termAgreeView addSubview:checkBoxTermsBtn];
-    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    checkBoxTermsBtn_IMPLVAR.selected = YES;
+    [termAgreeView addSubview:checkBoxTermsBtn_IMPLVAR];
+    [checkBoxTermsBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(termAgreeView);
         make.centerY.mas_equalTo(termAgreeView);
         make.width.height.mas_equalTo(VH(15));
@@ -1475,7 +1475,7 @@ switch (y_publicitious20506) {
         [termAgreeView addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.mas_equalTo(termAgreeView);
-            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.leading.mas_equalTo(checkBoxTermsBtn_IMPLVAR.mas_trailing).mas_offset(4);
 
 		
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
@@ -1511,12 +1511,12 @@ switch (y_publicitious20506) {
         case kAgreeTermsCheckBoxBtnTag:
             
             SDK_LOG(wwwww_tag_wwwww_kAgreeTermsCheckBoxBtnTag);
-            if (checkBoxTermsBtn.selected) {
-                checkBoxTermsBtn.selected = NO;
+            if (checkBoxTermsBtn_IMPLVAR.selected) {
+                checkBoxTermsBtn_IMPLVAR.selected = NO;
 
 		
             }else{
-                checkBoxTermsBtn.selected = YES;
+                checkBoxTermsBtn_IMPLVAR.selected = YES;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1845,7 +1845,7 @@ switch (D_plosherselfator20591) {
 
 -(BOOL)checkAgreeTerm_MMMethodMMM
 {
-    if (checkBoxTermsBtn.selected) {
+    if (checkBoxTermsBtn_IMPLVAR.selected) {
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{

@@ -10,7 +10,7 @@
 
 @interface NatureallyMollical ()
 
-@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine;
+@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine_PRIROPERTY;
 
 @end
 
@@ -124,10 +124,10 @@ if(z_veraccallment33076 - 528 * 823 + 282 + 547 / 198 - 418 != 12235){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
         NSString *servicePath = @"";
-        instance.httpEngine = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
+        instance.httpEngine_PRIROPERTY = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
 
 		
-        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
+        [instance.httpEngine_PRIROPERTY updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
         }];
     });
@@ -472,7 +472,7 @@ switch (t_errit33132) {
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     
-    [[NatureallyMollical sharedInstance].httpEngine postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[NatureallyMollical sharedInstance].httpEngine_PRIROPERTY postJsonRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);

@@ -41,7 +41,7 @@
 
 @interface MWSDK()
 
-@property (nonatomic, assign) BOOL isPaying;
+@property (nonatomic, assign) BOOL isPaying_PRIROPERTY;
 
 @end
 
@@ -2530,7 +2530,7 @@ if(o_doctruelike2925 + 514 / 534 / 755 * 131 >= 75658){
 - (void)startIapPay_MMMethodMMM:(NihilativeFederalless *)accountModel cpOrderId_MMMethodMMM:(NSString *)cpOrderId extra_MMMethodMMM:(NSString *)extra productId_MMMethodMMM:(NSString *)productId {
     [[FatherNeurad shareManager_MMMethodMMM] startPayWithProductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:accountModel payStatusBlock_MMMethodMMM:^(BOOL success, PayData * _Nullable payData) {
         
-        self.isPaying = NO;
+        self.isPaying_PRIROPERTY = NO;
         
         if (self.payHandler) {
 
@@ -3164,13 +3164,13 @@ if(f_septenfewtic3081 == 23485){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    if (self.isPaying) {
+    if (self.isPaying_PRIROPERTY) {
         SDK_LOG(wwwww_tag_wwwww_gloriistic_diamisslike);
 
 		
         return;
     }
-    self.isPaying = YES;
+    self.isPaying_PRIROPERTY = YES;
     
     [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
     
@@ -3181,7 +3181,7 @@ if(f_septenfewtic3081 == 23485){
     
     if (!accountModel || !accountModel.userId) {
         [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:@"error:請重新登入遊戲進行充值"];
-        self.isPaying = NO;
+        self.isPaying_PRIROPERTY = NO;
         return;
     }
     
@@ -3354,7 +3354,7 @@ if(Q_pell3130 - 706 * 137 + 493 - 549 + 872 == 21692){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    self.isPaying = NO;
+    self.isPaying_PRIROPERTY = NO;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{

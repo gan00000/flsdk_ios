@@ -12,8 +12,8 @@
 
 @interface PiteifyAeribilityController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray<CornairImagineView *> *mWebViewArry;
-@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, strong) NSMutableArray<CornairImagineView *> *mWebViewArry_PRIROPERTY;
+@property (nonatomic, assign) NSInteger currentIndex_PRIROPERTY;
 @end
 
 @implementation PiteifyAeribilityController
@@ -372,7 +372,7 @@ switch (p_plectwantial8012) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    for (CornairImagineView *mMWWebView in self.mWebViewArry) {
+    for (CornairImagineView *mMWWebView in self.mWebViewArry_PRIROPERTY) {
         [mMWWebView releaseAll_MMMethodMMM];
 
 		
@@ -564,13 +564,13 @@ switch (o_homeid7488) {
     if (!self.expoModelArry) {
         self.expoModelArry = [NSMutableArray array];
     }
-    self.mWebViewArry = [NSMutableArray array];
+    self.mWebViewArry_PRIROPERTY = [NSMutableArray array];
 
 		
     self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.3];
     
     int mSize = self.expoModelArry.count;
-    self.currentIndex = 0;
+    self.currentIndex_PRIROPERTY = 0;
     
     
     [self.backIV setImage:GetImage(activity_img_back)];
@@ -582,7 +582,7 @@ switch (o_homeid7488) {
     
     [self.backIV addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
-        CornairImagineView *indexWebView = self.mWebViewArry[self.currentIndex];
+        CornairImagineView *indexWebView = self.mWebViewArry_PRIROPERTY[self.currentIndex_PRIROPERTY];
         
 
 		
@@ -600,7 +600,7 @@ switch (o_homeid7488) {
     self.pageControl.pageIndicatorTintColor = [UIColor whiteColor]; 
     
     self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithHexString_MMMethodMMM:@"#4BACFD"]; 
-    self.pageControl.currentPage = self.currentIndex; 
+    self.pageControl.currentPage = self.currentIndex_PRIROPERTY; 
     self.pageControl.hidesForSinglePage = YES; 
 
     self.pageControl.numberOfPages = mSize; 
@@ -762,7 +762,7 @@ switch (M_prosular8016) {
             if(i == 0){
                 firstWebView = mWebView;
             }
-            [self.mWebViewArry addObject:mWebView];
+            [self.mWebViewArry_PRIROPERTY addObject:mWebView];
             [self.mScrollView addSubview:mWebView];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -818,7 +818,7 @@ if(T_es8037 + 223 * 819 / 650 != 23380){
 
         }
         
-        UseiseVinfold *em = self.expoModelArry[self.currentIndex];
+        UseiseVinfold *em = self.expoModelArry[self.currentIndex_PRIROPERTY];
         [self updateUI_MMMethodMMM:em];
     }
    
@@ -1416,19 +1416,19 @@ if(B_plurimivity8040 >= 16144){
     
     if(scrollView == self.mScrollView){
 
-        self.currentIndex = self.mScrollView.contentOffset.x/VIEW_CONTENT_WIDTH; 
-        SDK_LOG(@"currentIndex=%d", self.currentIndex);
+        self.currentIndex_PRIROPERTY = self.mScrollView.contentOffset.x/VIEW_CONTENT_WIDTH; 
+        SDK_LOG(@"currentIndex=%d", self.currentIndex_PRIROPERTY);
         SDK_LOG(@"self.pageControl.currentPage=%d", self.pageControl.currentPage);
 
 		
-        if(self.pageControl.currentPage == self.currentIndex){
+        if(self.pageControl.currentPage == self.currentIndex_PRIROPERTY){
             return;
         }
         
-        self.pageControl.currentPage = self.currentIndex;
+        self.pageControl.currentPage = self.currentIndex_PRIROPERTY;
 
         
-        [self.mScrollView setContentOffset:CGPointMake(self.currentIndex*VIEW_CONTENT_WIDTH, self.mScrollView.contentOffset.y)
+        [self.mScrollView setContentOffset:CGPointMake(self.currentIndex_PRIROPERTY*VIEW_CONTENT_WIDTH, self.mScrollView.contentOffset.y)
                                  animated:YES];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -1756,7 +1756,7 @@ if(E_health8103 * 402 + 770 + 392 != 64946){
 
 		
         
-        UseiseVinfold *em = self.expoModelArry[self.currentIndex];
+        UseiseVinfold *em = self.expoModelArry[self.currentIndex_PRIROPERTY];
         [self updateUI_MMMethodMMM:em];
 
 		
@@ -2312,7 +2312,7 @@ if(Z_whoid8166 != 2398){
 
         return;
     }
-    CornairImagineView *indexWebView = self.mWebViewArry[self.currentIndex];
+    CornairImagineView *indexWebView = self.mWebViewArry_PRIROPERTY[self.currentIndex_PRIROPERTY];
     [indexWebView loadRequest_MMMethodMMM:em.contentUrl];
     em.isContentLoad = YES;
 }

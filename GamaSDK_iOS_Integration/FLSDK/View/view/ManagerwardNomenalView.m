@@ -7,7 +7,7 @@
 @interface ManagerwardNomenalView ()<WKNavigationDelegate>
 @property (copy,nonatomic) void (^completer)(void);
 
-@property (copy, nonatomic) NSString *reqWebURL;
+@property (copy, nonatomic) NSString *reqWebURL_PRIROPERTY;
 @end
 
 
@@ -391,7 +391,7 @@ if(D_barion28921 <= 93576){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            self.reqWebURL = resultURL;
+            self.reqWebURL_PRIROPERTY = resultURL;
             MomentialPlutlyController *webVC = [MomentialPlutlyController webViewControllerPresentingWithURLRequest_MMMethodMMM:[NSURLRequest requestWithURL:[NSURL URLWithString:resultURL]] isShowTitle_MMMethodMMM:NO animation_MMMethodMMM:NO animationStyle_MMMethodMMM:UIModalTransitionStyleCoverVertical];
 
 		//===insert my code start===  2024-01-12 12:51:45
@@ -803,7 +803,7 @@ switch (t_introhappenosity28741) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    if(self.reqWebURL && [self.reqWebURL isEqualToString:navigationAction.request.URL.relativeString]){
+    if(self.reqWebURL_PRIROPERTY && [self.reqWebURL_PRIROPERTY isEqualToString:navigationAction.request.URL.relativeString]){
         decisionHandler(WKNavigationActionPolicyAllow);
 
 		

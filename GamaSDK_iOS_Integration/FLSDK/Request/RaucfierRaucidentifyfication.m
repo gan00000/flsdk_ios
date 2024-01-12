@@ -10,7 +10,7 @@
 
 @interface RaucfierRaucidentifyfication ()
 
-@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine;
+@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine_PRIROPERTY;
 
 @end
 
@@ -25,8 +25,8 @@
     dispatch_once(&onceToken, ^{
         instance = [[RaucfierRaucidentifyfication alloc] init];
         NSString *servicePath = [SDKRES getLoginUrl_MMMethodMMM];
-        instance.httpEngine = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
-        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
+        instance.httpEngine_PRIROPERTY = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
+        [instance.httpEngine_PRIROPERTY updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
 
 		
@@ -105,7 +105,7 @@ if(J_laminaforming33365 + 490 * 238 + 57 - 635 > 89426){
         [allParams addEntriesFromDictionary:params];
     }
     [BeyondaceousCommunityic showLoadingAtView_MMMethodMMM:nil];
-    [[RaucfierRaucidentifyfication sharedInstance].httpEngine getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[RaucfierRaucidentifyfication sharedInstance].httpEngine_PRIROPERTY getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
@@ -525,7 +525,7 @@ switch (f_performanceose33460) {
     }
     SDK_LOG(@"post: path = %@,params = %@", path, params);
     [BeyondaceousCommunityic showLoadingAtView_MMMethodMMM:nil];
-    [[RaucfierRaucidentifyfication sharedInstance].httpEngine postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[RaucfierRaucidentifyfication sharedInstance].httpEngine_PRIROPERTY postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
@@ -703,7 +703,7 @@ if(I_phasality33627 >= 75928){
                       successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock {
     
-    [[RaucfierRaucidentifyfication sharedInstance].httpEngine fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:fileData fileName_MMMethodMMM:fileName mimeType_MMMethodMMM:mimeType progressBlock_MMMethodMMM:^(float progress) {
+    [[RaucfierRaucidentifyfication sharedInstance].httpEngine_PRIROPERTY fileUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params fileData_MMMethodMMM:fileData fileName_MMMethodMMM:fileName mimeType_MMMethodMMM:mimeType progressBlock_MMMethodMMM:^(float progress) {
         
         if (progressBlock) {
             progressBlock(progress);
@@ -810,7 +810,7 @@ if(I_phasality33627 >= 75928){
                        successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock {
     
-    [[RaucfierRaucidentifyfication sharedInstance].httpEngine imageUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params imageData_MMMethodMMM:imageData imageName_MMMethodMMM:imageName progressBlock_MMMethodMMM:^(float progress) {
+    [[RaucfierRaucidentifyfication sharedInstance].httpEngine_PRIROPERTY imageUploadWithFunctionPath_MMMethodMMM:functionPath params_MMMethodMMM:params imageData_MMMethodMMM:imageData imageName_MMMethodMMM:imageName progressBlock_MMMethodMMM:^(float progress) {
         
 
 		

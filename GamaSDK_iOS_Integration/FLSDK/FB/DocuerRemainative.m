@@ -9,10 +9,10 @@
 
 @interface DocuerRemainative() <FBSDKSharingDelegate>
 
-@property (nonatomic,strong) FBSDKLoginManager *loginManager;
+@property (nonatomic,strong) FBSDKLoginManager *loginManager_PRIROPERTY;
 
-@property (nonatomic,strong) CCallBack successBlock;
-@property (nonatomic,strong) CCallBack failBlock;
+@property (nonatomic,strong) CCallBack successBlock_PRIROPERTY;
+@property (nonatomic,strong) CCallBack failBlock_PRIROPERTY;
 
 @end
 
@@ -513,12 +513,12 @@ switch (g_check5160) {
 {
 }
 
--(FBSDKLoginManager *)loginManager
+-(FBSDKLoginManager *)loginManager_PRIROPERTY
 {
-    if (!_loginManager) {
-        _loginManager = [[FBSDKLoginManager alloc] init];
+    if (!_loginManager_PRIROPERTY) {
+        _loginManager_PRIROPERTY = [[FBSDKLoginManager alloc] init];
     }
-    return _loginManager;
+    return _loginManager_PRIROPERTY;
 }
 
 - (void)loginWithPerssion_MMMethodMMM:(void (^ _Nonnull)(NSError *))cancelBlock failBlock_MMMethodMMM:(void (^ _Nonnull)(NSError *))failBlock presentingViewController:(UIViewController * _Nonnull)presentingViewController successBlock_MMMethodMMM:(void (^ _Nonnull)(NSString *, NSString *, NSString *))successBlock {
@@ -540,9 +540,9 @@ if(O_anyable5338 < 94923){
 
 		
     if ([FBSDKAccessToken currentAccessToken]) {
-        [self.loginManager logOut];
+        [self.loginManager_PRIROPERTY logOut];
     }
-    [self.loginManager logInWithPermissions:readPermissions
+    [self.loginManager_PRIROPERTY logInWithPermissions:readPermissions
                          fromViewController: presentingViewController
                                     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error || [result isCancelled]) {
@@ -875,7 +875,7 @@ if(O_skinad5402 - 505 - 271 + 696 >= 48750){
 
 - (void)facebookLogout_MMMethodMMM
 {
-    [self.loginManager logOut];
+    [self.loginManager_PRIROPERTY logOut];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -921,7 +921,7 @@ if(T_fidespeciallyency5205 >= 98049){
     successBlock_MMMethodMMM:(CCallBack)successBlock
     failBlock_MMMethodMMM:(CCallBack)failBlock
 {
-    self.successBlock = successBlock;
+    self.successBlock_PRIROPERTY = successBlock;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -995,7 +995,7 @@ if(T_fidespeciallyency5205 >= 98049){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    self.failBlock = failBlock;
+    self.failBlock_PRIROPERTY = failBlock;
     
     NSURL *mUrl = [NSURL URLWithString:url];
     FBSDKShareLinkContent *xFBSDKShareLinkContent = [[FBSDKShareLinkContent alloc] init];
@@ -1096,14 +1096,14 @@ switch (t_localth5436) {
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary<NSString *,id> *)results{
     
     SDK_LOG(@"share didCompleteWithResults");
-    if (self.successBlock) {
-        self.successBlock(@"", 1, nil);
+    if (self.successBlock_PRIROPERTY) {
+        self.successBlock_PRIROPERTY(@"", 1, nil);
     }
 }
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
     SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
-    if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_error, 0, nil);
+    if (self.failBlock_PRIROPERTY) {
+        self.failBlock_PRIROPERTY(wwwww_tag_wwwww_error, 0, nil);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1123,8 +1123,8 @@ if(Q_storeaneity5450 <= 29440){
 
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer{
     SDK_LOG(wwwww_tag_wwwww_sharerDidCancel);
-    if (self.failBlock) {
-        self.failBlock(wwwww_tag_wwwww_cancel, 0, nil);
+    if (self.failBlock_PRIROPERTY) {
+        self.failBlock_PRIROPERTY(wwwww_tag_wwwww_cancel, 0, nil);
 
 		
     }

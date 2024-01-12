@@ -5,7 +5,7 @@
 @implementation LaxlegalantOwneracyView
 
 {
-    ItemViewClickHander mhander;
+    ItemViewClickHander mhander_IMPLVAR;
 }
 
 
@@ -15,7 +15,7 @@
     
     self = [super init];
     
-    mhander = hander;
+    mhander_IMPLVAR = hander;
     self.backgroundColor = [UIColor clearColor];
 
 		
@@ -193,8 +193,8 @@ if(V_sexuous30118 <= 91830){
     SDK_LOG(wwwww_tag_wwwww_kBackBtnActTag);
     
     
-    if (mhander) {
-        mhander(1);
+    if (mhander_IMPLVAR) {
+        mhander_IMPLVAR(1);
     }
 }
 

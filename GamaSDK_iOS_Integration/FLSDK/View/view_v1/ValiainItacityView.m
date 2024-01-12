@@ -15,9 +15,9 @@
 @implementation ValiainItacityView
 {
     
-    WKWebView *provisionWebView;
+    WKWebView *provisionWebView_IMPLVAR;
     
-    LaxlegalantOwneracyView *mLoginTitleView;
+    LaxlegalantOwneracyView *mLoginTitleView_IMPLVAR;
 }
 
 
@@ -109,7 +109,7 @@
 - (void)landspaceView_MMMethodMMM {
    
     
-    mLoginTitleView = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_sdk_terms_title) hander_MMMethodMMM:^(NSInteger param) {
+    mLoginTitleView_IMPLVAR = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_sdk_terms_title) hander_MMMethodMMM:^(NSInteger param) {
         
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -136,8 +136,8 @@
         
         
     }];
-    [self addSubview:mLoginTitleView];
-    [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self addSubview:mLoginTitleView_IMPLVAR];
+    [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -167,7 +167,7 @@
     lineView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_848484];
     [self addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(17));
+        make.top.mas_equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(17));
         make.leading.mas_equalTo(self).mas_offset(VW(40));
         make.trailing.mas_equalTo(self).mas_offset(-VW(40));
         make.height.mas_equalTo(1);
@@ -387,8 +387,8 @@ if(s_ovistic17877 - 633 * 162 + 816 - 243 / 708 != 30184){
     }
     
     SDK_LOG(@"termsUrl=%@",url);
-    provisionWebView = [[WKWebView alloc] init];
-    [provisionWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    provisionWebView_IMPLVAR = [[WKWebView alloc] init];
+    [provisionWebView_IMPLVAR loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -400,10 +400,10 @@ if(s_ovistic17877 - 633 * 162 + 816 - 243 / 708 != 30184){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    [provisionWebView.scrollView setBounces:YES];
+    [provisionWebView_IMPLVAR.scrollView setBounces:YES];
 
 		
-    [provisionWebView.scrollView setScrollEnabled:YES];
+    [provisionWebView_IMPLVAR.scrollView setScrollEnabled:YES];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -429,10 +429,10 @@ if(s_ovistic17877 - 633 * 162 + 816 - 243 / 708 != 30184){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    [contentView addSubview:provisionWebView];
+    [contentView addSubview:provisionWebView_IMPLVAR];
 
 		
-    [provisionWebView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [provisionWebView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.leading.mas_equalTo(contentView);
 
@@ -454,7 +454,7 @@ if(s_ovistic17877 - 633 * 162 + 816 - 243 / 708 != 30184){
         make.top.mas_equalTo(contentView);
         make.trailing.mas_equalTo(contentView);
         
-        make.height.mas_equalTo(provisionWebView.mas_width);
+        make.height.mas_equalTo(provisionWebView_IMPLVAR.mas_width);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{

@@ -5,7 +5,7 @@
 
 @implementation SeasonuleFormon
 {
-    NSDictionary *eventsDic;
+    NSDictionary *eventsDic_IMPLVAR;
 }
 
 + (instancetype)share{

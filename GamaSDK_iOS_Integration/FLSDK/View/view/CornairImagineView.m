@@ -10,9 +10,9 @@
 
 @interface CornairImagineView ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
 
-@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) UIView *backgroundView_PRIROPERTY;
 
-@property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) UIProgressView *progressView_PRIROPERTY;
 
 @end
 
@@ -333,7 +333,7 @@ if(Q_wayaceous28263 * 897 + 128 < 78123){
 
 -(void)addView_MMMethodMMM{
     
-    self.backgroundView = [[UIView alloc] init];
+    self.backgroundView_PRIROPERTY = [[UIView alloc] init];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -399,24 +399,24 @@ switch (K_lastarium28365) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    [self addSubview:self.backgroundView];
-    [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self addSubview:self.backgroundView_PRIROPERTY];
+    [self.backgroundView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
 
 		
     }];
     
-    [self.backgroundView addSubview:self.wkwebView];
+    [self.backgroundView_PRIROPERTY addSubview:self.wkwebView];
     [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.backgroundView);
+        make.edges.mas_equalTo(self.backgroundView_PRIROPERTY);
     }];
 
 		
     
-    self.progressView = [[UIProgressView alloc] init];
+    self.progressView_PRIROPERTY = [[UIProgressView alloc] init];
 
 		
-    self.progressView.progressViewStyle = UIProgressViewStyleDefault;
+    self.progressView_PRIROPERTY.progressViewStyle = UIProgressViewStyleDefault;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -485,10 +485,10 @@ if(K_ideical28381 + 396 * 136 / 763 - 313 * 522 + 825 > 67021){
 
 
 		
-    self.progressView.progress = 0.0;
+    self.progressView_PRIROPERTY.progress = 0.0;
     
-    [self.wkwebView addSubview:_progressView];
-    [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.wkwebView addSubview:_progressView_PRIROPERTY];
+    [_progressView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.leading.trailing.mas_equalTo(self.wkwebView);
         make.height.equalTo(@(3));
 
@@ -2024,7 +2024,7 @@ switch (d_physicalably28615) {
     } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
     } else if (object == self.wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
-        _progressView.progress = self.wkwebView.estimatedProgress;
+        _progressView_PRIROPERTY.progress = self.wkwebView.estimatedProgress;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2171,8 +2171,8 @@ switch (F_flamism28625) {
 
 		
         if (newProgress == 1) {
-            _progressView.hidden = YES;
-            [_progressView setProgress:0 animated:NO];
+            _progressView_PRIROPERTY.hidden = YES;
+            [_progressView_PRIROPERTY setProgress:0 animated:NO];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2291,8 +2291,8 @@ if(g_meetingette28664 >= 33490){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
         } else {
-            _progressView.hidden = NO;
-            [_progressView setProgress:newProgress animated:YES];
+            _progressView_PRIROPERTY.hidden = NO;
+            [_progressView_PRIROPERTY setProgress:newProgress animated:YES];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{

@@ -6,13 +6,13 @@
 #import "RoleaneousIdentify.h"
 
 @interface MeliorFallac()<ASAuthorizationControllerPresentationContextProviding,ASAuthorizationControllerDelegate>
-@property (copy, atomic) AppleLoginSuccess impSuccess;
-@property (copy, atomic) AppleLoginError impError;
+@property (copy, atomic) AppleLoginSuccess impSuccess_PRIROPERTY;
+@property (copy, atomic) AppleLoginError impError_PRIROPERTY;
 @end
 
 @implementation MeliorFallac
 {
-    UIView *presentView;
+    UIView *presentView_IMPLVAR;
 }
 @synthesize appleThirdID = _appleThirdID;
 
@@ -173,7 +173,7 @@
 
 - (void)handleAuthrization:(UIView *_Nullable)mView{
     
-    presentView = mView;
+    presentView_IMPLVAR = mView;
 
 		
     
@@ -504,7 +504,7 @@ if(y_murast37267 - 434 * 999 + 534 != 21784){
         [mStr appendString:@"\n"];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""}];
-            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""});
+            self.impSuccess_PRIROPERTY(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleToken:token?:@"",wwwww_tag_wwwww_authorizationCode:authorCodeStr?:@""});
 
 		
         });
@@ -525,7 +525,7 @@ if(y_murast37267 - 434 * 999 + 534 != 21784){
 		
         dispatch_async(dispatch_get_main_queue(), ^{
             [self saveAppleLastLoginSuccessWithInformation_MMMethodMMM:@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""}];
-            self.impSuccess(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
+            self.impSuccess_PRIROPERTY(@{wwwww_tag_wwwww_appleThirdID:user?:@"",wwwww_tag_wwwww_appleVerfication:password?:@""});
         });
 
     } else {
@@ -533,7 +533,7 @@ if(y_murast37267 - 434 * 999 + 534 != 21784){
         mStr = [wwwww_tag_wwwww_follow_hibatic mutableCopy];
         NSError *error = nil;
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.impError(error);
+            self.impError_PRIROPERTY(error);
 
 		
         });
@@ -567,7 +567,7 @@ if(y_murast37267 - 434 * 999 + 534 != 21784){
     NSString *errorMsg = nil;
 
 		
-    self.impError(error);
+    self.impError_PRIROPERTY(error);
 
 		
     switch (error.code) {
@@ -592,8 +592,8 @@ if(y_murast37267 - 434 * 999 + 534 != 21784){
 
     NSLog(@"调用展示window方法：%s", __FUNCTION__);
     
-    if (presentView) {
-        return presentView.window;
+    if (presentView_IMPLVAR) {
+        return presentView_IMPLVAR.window;
     }
 
 		
@@ -1461,8 +1461,8 @@ if(s_matern37456 <= 99763){
 -(void)makeAppleCallbackSuccessBlock_MMMethodMMM:(AppleLoginSuccess)successBlock
                                 andErrorBlock_MMMethodMMM:(AppleLoginError)errorBlock
 {
-    self.impSuccess = successBlock;
-    self.impError = errorBlock;
+    self.impSuccess_PRIROPERTY = successBlock;
+    self.impError_PRIROPERTY = errorBlock;
     
 }
 

@@ -5,7 +5,7 @@
 #import "SdkHeader.h"
 
 @interface PluacityFarition()
-@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray;
+@property (nonatomic, strong) NSMutableArray *gamaAreaCodesArray_PRIROPERTY;
 @end
 
 @implementation PluacityFarition
@@ -77,7 +77,7 @@
     
     
     
-    for (NSDictionary *dict in self.gamaAreaCodesArray)
+    for (NSDictionary *dict in self.gamaAreaCodesArray_PRIROPERTY)
     {
         [tempArray addObject:[dict objectForKey:wwwww_tag_wwwww_text]];
 
@@ -89,9 +89,9 @@
     [RoleaneousIdentify showActionSheetWithTitle_MMMethodMMM:wwwww_tag_wwwww_text_select_phone_area_title.localx
                                     message_MMMethodMMM:@""
                               callbackBlock_MMMethodMMM:^(NSInteger btnIndex) {
-                                  if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray.count)
+                                  if (btnIndex > 0 && btnIndex <= weakSelf.gamaAreaCodesArray_PRIROPERTY.count)
                                   {
-                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray objectAtIndex:btnIndex-1];
+                                      NSDictionary *dict = [weakSelf.gamaAreaCodesArray_PRIROPERTY objectAtIndex:btnIndex-1];
                                       weakSelf.selectedAreaCodeValue = [dict objectForKey:wwwww_tag_wwwww_value];
                                       weakSelf.selectedAreaCodeKey = [dict objectForKey:wwwww_tag_wwwww_key];
                                       weakSelf.selectedRegularExpression = [dict objectForKey:wwwww_tag_wwwww_pattern];
@@ -111,23 +111,23 @@
 - (void)resetupAreaCodesAndActionSheetWith_MMMethodMMM:(NSArray *)newAreaCodesArray
 
 {
-    if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray isKindOfClass:[NSMutableArray class]]) {
-        [self.gamaAreaCodesArray removeAllObjects];
-        [self.gamaAreaCodesArray addObjectsFromArray:newAreaCodesArray];
+    if (newAreaCodesArray.count >0 && [self.gamaAreaCodesArray_PRIROPERTY isKindOfClass:[NSMutableArray class]]) {
+        [self.gamaAreaCodesArray_PRIROPERTY removeAllObjects];
+        [self.gamaAreaCodesArray_PRIROPERTY addObjectsFromArray:newAreaCodesArray];
         
-        self.selectedAreaCodeKey = _gamaAreaCodesArray[0][wwwww_tag_wwwww_key];
-        self.selectedAreaCodeValue = _gamaAreaCodesArray[0][wwwww_tag_wwwww_value];
-        self.selectedRegularExpression = _gamaAreaCodesArray[0][wwwww_tag_wwwww_pattern];
+        self.selectedAreaCodeKey = _gamaAreaCodesArray_PRIROPERTY[0][wwwww_tag_wwwww_key];
+        self.selectedAreaCodeValue = _gamaAreaCodesArray_PRIROPERTY[0][wwwww_tag_wwwww_value];
+        self.selectedRegularExpression = _gamaAreaCodesArray_PRIROPERTY[0][wwwww_tag_wwwww_pattern];
     }
 }
 
 #pragma mark - Getter&Setter
 
 
-- (NSMutableArray *)gamaAreaCodesArray
+- (NSMutableArray *)gamaAreaCodesArray_PRIROPERTY
 {
-    if (!_gamaAreaCodesArray) {
-        _gamaAreaCodesArray = [NSMutableArray array];
+    if (!_gamaAreaCodesArray_PRIROPERTY) {
+        _gamaAreaCodesArray_PRIROPERTY = [NSMutableArray array];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -438,7 +438,7 @@ switch (X_rhizard37659) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    return _gamaAreaCodesArray;
+    return _gamaAreaCodesArray_PRIROPERTY;
 }
 
 
@@ -446,8 +446,8 @@ switch (X_rhizard37659) {
 - (NSString *)selectedAreaCodeKey
 {
     if (!_selectedAreaCodeKey) {
-        if(self.gamaAreaCodesArray.count > 0){
-            self.selectedAreaCodeKey = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_key];
+        if(self.gamaAreaCodesArray_PRIROPERTY.count > 0){
+            self.selectedAreaCodeKey = [_gamaAreaCodesArray_PRIROPERTY[0] objectForKey:wwwww_tag_wwwww_key];
         }
     }
     return _selectedAreaCodeKey;
@@ -458,8 +458,8 @@ switch (X_rhizard37659) {
     if (!_selectedAreaCodeValue) {
 
 		
-        if(self.gamaAreaCodesArray.count > 0){
-            self.selectedAreaCodeValue = [_gamaAreaCodesArray[0] objectForKey:wwwww_tag_wwwww_value];
+        if(self.gamaAreaCodesArray_PRIROPERTY.count > 0){
+            self.selectedAreaCodeValue = [_gamaAreaCodesArray_PRIROPERTY[0] objectForKey:wwwww_tag_wwwww_value];
         }
     }
     return _selectedAreaCodeValue;

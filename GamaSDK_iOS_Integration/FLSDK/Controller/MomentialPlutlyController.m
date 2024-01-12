@@ -12,16 +12,16 @@
 
 
 @interface MomentialPlutlyController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
-@property (nonatomic, strong) UIView *backgroundView;
-@property (nonatomic, strong) WKWebView *wkwebView;
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) UIView *backgroundView_PRIROPERTY;
+@property (nonatomic, strong) WKWebView *wkwebView_PRIROPERTY;
+@property (nonatomic, strong) UIView *headerView_PRIROPERTY;
+@property (nonatomic, strong) UIProgressView *progressView_PRIROPERTY;
 
-@property (nonatomic, strong) UIButton *closeBtn;
-@property (nonatomic, strong) UIButton *backBtn;
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIButton *closeBtn_PRIROPERTY;
+@property (nonatomic, strong) UIButton *backBtn_PRIROPERTY;
+@property (nonatomic, strong) UILabel *titleLabel_PRIROPERTY;
 
-@property (nonatomic, strong) UIButton *defalutCloseBtn;
+@property (nonatomic, strong) UIButton *defalutCloseBtn_PRIROPERTY;
 
 @end
 
@@ -272,11 +272,11 @@ if(r_termular8490 == 58488){
 
 
 
-- (WKWebView*)wkwebView{
+- (WKWebView*)wkwebView_PRIROPERTY{
     
 
 		
-    if (!_wkwebView) {
+    if (!_wkwebView_PRIROPERTY) {
         
         kWeakSelf
         __weak id<WKScriptMessageHandler> scriptDelegate = weakSelf;
@@ -532,10 +532,10 @@ if(y_menister8530 * 755 * 205 + 9 < 30565){
 
 		
         
-        _wkwebView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
+        _wkwebView_PRIROPERTY = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
         
-        _wkwebView.navigationDelegate = self;
-        _wkwebView.UIDelegate = self;
+        _wkwebView_PRIROPERTY.navigationDelegate = self;
+        _wkwebView_PRIROPERTY.UIDelegate = self;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -866,12 +866,12 @@ if(Y_monstrness8630 * 454 / 337 * 271 * 246 / 383 > 82209){
 
 
 		
-        [_wkwebView addObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS options:NSKeyValueObservingOptionNew context:nil];
-        [_wkwebView addObserver:self forKeyPath:wwwww_tag_wwwww_title options:NSKeyValueObservingOptionNew context:NULL];
+        [_wkwebView_PRIROPERTY addObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS options:NSKeyValueObservingOptionNew context:nil];
+        [_wkwebView_PRIROPERTY addObserver:self forKeyPath:wwwww_tag_wwwww_title options:NSKeyValueObservingOptionNew context:NULL];
 
     }
     
-    return _wkwebView;
+    return _wkwebView_PRIROPERTY;
     
 }
 
@@ -884,12 +884,12 @@ if(Y_monstrness8630 * 454 / 337 * 271 * 246 / 383 > 82209){
 		
     
     SDK_LOG(@"MomentialPlutlyController viewDidLoad");
-    self.backgroundView = [[UIView alloc] init];
+    self.backgroundView_PRIROPERTY = [[UIView alloc] init];
 
 		
-    [self.view addSubview:self.backgroundView];
+    [self.view addSubview:self.backgroundView_PRIROPERTY];
     
-    [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.backgroundView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
         
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -1778,7 +1778,7 @@ if(b_culinary8765 * 827 - 493 - 635 + 459 + 828 >= 69460){
     if(self.isShowTitle){
         self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
         
-        self.headerView = [[UIView alloc] init];
+        self.headerView_PRIROPERTY = [[UIView alloc] init];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1891,18 +1891,18 @@ if(y_coulder8797 + 158 / 56 / 181 >= 54565){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        self.headerView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
-        [self.backgroundView addSubview:self.headerView];
-        [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.leading.trailing.mas_equalTo(self.backgroundView);
+        self.headerView_PRIROPERTY.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F13B11];
+        [self.backgroundView_PRIROPERTY addSubview:self.headerView_PRIROPERTY];
+        [self.headerView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.leading.trailing.mas_equalTo(self.backgroundView_PRIROPERTY);
             make.height.mas_equalTo(VH(46));
         }];
         
-        self.backBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_back_webview highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_WEB_VIEW_BACK selector:@selector(webGoBack_MMMethodMMM) target_MMMethodMMM:self];
-        [self.headerView addSubview:self.backBtn];
-        [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(self.headerView);
-            make.leading.mas_equalTo(self.headerView).mas_offset(VW(20));
+        self.backBtn_PRIROPERTY = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_back_webview highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_WEB_VIEW_BACK selector:@selector(webGoBack_MMMethodMMM) target_MMMethodMMM:self];
+        [self.headerView_PRIROPERTY addSubview:self.backBtn_PRIROPERTY];
+        [self.backBtn_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.headerView_PRIROPERTY);
+            make.leading.mas_equalTo(self.headerView_PRIROPERTY).mas_offset(VW(20));
             make.height.width.mas_equalTo(VH(22));
 
 		
@@ -2176,13 +2176,13 @@ if(n_dinnerkin8805 != 28319){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         
-        self.closeBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_close_white highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+        self.closeBtn_PRIROPERTY = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_close_white highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		
-        [self.headerView addSubview:self.closeBtn];
-        [self.closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(self.headerView);
-            make.trailing.mas_equalTo(self.headerView).mas_offset(VW(-20));
+        [self.headerView_PRIROPERTY addSubview:self.closeBtn_PRIROPERTY];
+        [self.closeBtn_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.headerView_PRIROPERTY);
+            make.trailing.mas_equalTo(self.headerView_PRIROPERTY).mas_offset(VW(-20));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -2686,7 +2686,7 @@ switch (x_cant8920) {
 
         }];
         
-        self.titleLabel = [AstrLegalel initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(18) textColor_MMMethodMMM:UIColor.whiteColor];
+        self.titleLabel_PRIROPERTY = [AstrLegalel initLabelWithText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(18) textColor_MMMethodMMM:UIColor.whiteColor];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -2798,7 +2798,7 @@ if(X_pediitive8952 != 30396){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self.headerView addSubview:self.titleLabel];
+        [self.headerView_PRIROPERTY addSubview:self.titleLabel_PRIROPERTY];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -2971,8 +2971,8 @@ if(q_anythingia9016 <= 43749){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.mas_equalTo(self.headerView);
+        [self.titleLabel_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self.headerView_PRIROPERTY);
         }];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -3236,13 +3236,13 @@ if(D_directionish9053 - 933 * 831 >= 49862){
     
     
     
-    [self.backgroundView addSubview:self.wkwebView];
-    [self.wkwebView mas_makeConstraints:^(MASConstraintMaker *make) {
-        if(self.headerView){
-            make.top.mas_equalTo(self.headerView.mas_bottom);
-            make.trailing.leading.bottom.mas_equalTo(self.backgroundView);
+    [self.backgroundView_PRIROPERTY addSubview:self.wkwebView_PRIROPERTY];
+    [self.wkwebView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+        if(self.headerView_PRIROPERTY){
+            make.top.mas_equalTo(self.headerView_PRIROPERTY.mas_bottom);
+            make.trailing.leading.bottom.mas_equalTo(self.backgroundView_PRIROPERTY);
         }else{
-            make.edges.mas_equalTo(self.backgroundView);
+            make.edges.mas_equalTo(self.backgroundView_PRIROPERTY);
         }
     }];
 
@@ -3675,11 +3675,11 @@ switch (O_childory9163) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     
-    self.progressView = [[UIProgressView alloc] init];
-    self.progressView.progressViewStyle = UIProgressViewStyleDefault;
+    self.progressView_PRIROPERTY = [[UIProgressView alloc] init];
+    self.progressView_PRIROPERTY.progressViewStyle = UIProgressViewStyleDefault;
 
 		
-    self.progressView.progress = 0.0;
+    self.progressView_PRIROPERTY.progress = 0.0;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -3792,9 +3792,9 @@ switch (O_ment9176) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     
-    [self.wkwebView addSubview:_progressView];
-    [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.trailing.mas_equalTo(self.wkwebView);
+    [self.wkwebView_PRIROPERTY addSubview:_progressView_PRIROPERTY];
+    [_progressView_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.trailing.mas_equalTo(self.wkwebView_PRIROPERTY);
 
 		
         make.height.equalTo(@(3));
@@ -4095,8 +4095,8 @@ switch (z_postchildkin9242) {
     
     if(self.isShowDefulatCloseBtn){
         
-        self.defalutCloseBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
-        self.defalutCloseBtn.hidden = YES;
+        self.defalutCloseBtn_PRIROPERTY = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:icon_close_3 highlightedImage_MMMethodMMM:nil tag_MMMethodMMM:TAG_CLOSE selector:@selector(btnClickAction_MMMethodMMM:) target_MMMethodMMM:self];
+        self.defalutCloseBtn_PRIROPERTY.hidden = YES;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -4226,10 +4226,10 @@ if(d_liquidkin9277 != 52023){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self.backgroundView addSubview:self.defalutCloseBtn];
-        [self.defalutCloseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self.backgroundView);
-            make.centerY.mas_equalTo(self.wkwebView).mas_offset(20);
+        [self.backgroundView_PRIROPERTY addSubview:self.defalutCloseBtn_PRIROPERTY];
+        [self.defalutCloseBtn_PRIROPERTY mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.backgroundView_PRIROPERTY);
+            make.centerY.mas_equalTo(self.wkwebView_PRIROPERTY).mas_offset(20);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -5125,7 +5125,7 @@ if(t_felinoviewitor8330 < 39284){
     
     if (@available(iOS 11.0, *)) {
         
-        [self.backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+        [self.backgroundView_PRIROPERTY mas_updateConstraints:^(MASConstraintMaker *make) {
             
             make.leading.trailing.mas_equalTo(self.view);
             make.top.mas_equalTo(self.view).mas_offset(self.view.safeAreaInsets.top);
@@ -5142,8 +5142,8 @@ if(t_felinoviewitor8330 < 39284){
 {
 
 		
-    if (self.wkwebView) {
-        [self.wkwebView loadRequest:request];
+    if (self.wkwebView_PRIROPERTY) {
+        [self.wkwebView_PRIROPERTY loadRequest:request];
 
 		
     }
@@ -5153,8 +5153,8 @@ if(t_felinoviewitor8330 < 39284){
 {
 
 		
-    if ([self.wkwebView canGoBack]) {
-        [self.wkwebView goBack];
+    if ([self.wkwebView_PRIROPERTY canGoBack]) {
+        [self.wkwebView_PRIROPERTY goBack];
     }
 }
 
@@ -5162,8 +5162,8 @@ if(t_felinoviewitor8330 < 39284){
 {
 
 		
-    if ([self.wkwebView canGoForward]) {
-        [self.wkwebView goForward];
+    if ([self.wkwebView_PRIROPERTY canGoForward]) {
+        [self.wkwebView_PRIROPERTY goForward];
 
 		
     }
@@ -5171,7 +5171,7 @@ if(t_felinoviewitor8330 < 39284){
 
 - (void)webReload_MMMethodMMM
 {
-    [self.wkwebView reload];
+    [self.wkwebView_PRIROPERTY reload];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -6452,15 +6452,15 @@ switch (e_environmentalatory9583) {
 		
     if (((NSHTTPURLResponse *)navigationResponse.response).statusCode == 200) { 
         decisionHandler (WKNavigationResponsePolicyAllow);
-        if(self.defalutCloseBtn && self.isShowDefulatCloseBtn){
-            self.defalutCloseBtn.hidden = YES;
+        if(self.defalutCloseBtn_PRIROPERTY && self.isShowDefulatCloseBtn){
+            self.defalutCloseBtn_PRIROPERTY.hidden = YES;
         }
     }else {
         decisionHandler(WKNavigationResponsePolicyAllow);
 
 		
-        if(self.defalutCloseBtn && self.isShowDefulatCloseBtn){
-            self.defalutCloseBtn.hidden = NO;
+        if(self.defalutCloseBtn_PRIROPERTY && self.isShowDefulatCloseBtn){
+            self.defalutCloseBtn_PRIROPERTY.hidden = NO;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -8120,26 +8120,26 @@ if(z_canlike9954 != 74229){
     
     if ([wwwww_tag_wwwww_loading isEqualToString:keyPath]) {
         
-    } else if (object == self.wkwebView && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
+    } else if (object == self.wkwebView_PRIROPERTY && [wwwww_tag_wwwww_title isEqualToString:keyPath]) {
         
-        self.titleLabel.text = self.wkwebView.title;
+        self.titleLabel_PRIROPERTY.text = self.wkwebView_PRIROPERTY.title;
 
 		
         
     } else if ([wwwww_tag_wwwww_URL isEqualToString:keyPath]) {
         
-    } else if (object == self.wkwebView && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
-        _progressView.progress = self.wkwebView.estimatedProgress;
+    } else if (object == self.wkwebView_PRIROPERTY && [WK_WEBVIEW_ESTIMATED_PROGRESS isEqualToString:keyPath]) {
+        _progressView_PRIROPERTY.progress = self.wkwebView_PRIROPERTY.estimatedProgress;
         
         CGFloat newProgress = [change[NSKeyValueChangeNewKey] doubleValue];
         if (newProgress == 1) {
-            _progressView.hidden = YES;
-            [_progressView setProgress:0 animated:NO];
+            _progressView_PRIROPERTY.hidden = YES;
+            [_progressView_PRIROPERTY setProgress:0 animated:NO];
 
 		
         } else {
-            _progressView.hidden = NO;
-            [_progressView setProgress:newProgress animated:YES];
+            _progressView_PRIROPERTY.hidden = NO;
+            [_progressView_PRIROPERTY setProgress:newProgress animated:YES];
         }
     }
 }
@@ -8599,8 +8599,8 @@ switch (T_palesome9960) {
     SDK_LOG(@"MomentialPlutlyController releaseAll");
     @try {
         
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_close];
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
+        [self.wkwebView_PRIROPERTY.configuration.userContentController removeScriptMessageHandlerForName:js_close];
+        [self.wkwebView_PRIROPERTY.configuration.userContentController removeScriptMessageHandlerForName:js_onPayFinish];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -8787,7 +8787,7 @@ if(z_efuous10024 + 357 + 253 > 52436){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
+        [self.wkwebView_PRIROPERTY.configuration.userContentController removeScriptMessageHandlerForName:js_trackEvent];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -8963,11 +8963,11 @@ if(A_torsistic10035 - 900 * 857 - 405 * 135 <= 33119){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:wwwww_tag_wwwww_openSysBrowser];
-        [self.wkwebView removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
+        [self.wkwebView_PRIROPERTY.configuration.userContentController removeScriptMessageHandlerForName:wwwww_tag_wwwww_openSysBrowser];
+        [self.wkwebView_PRIROPERTY removeObserver:self forKeyPath:WK_WEBVIEW_ESTIMATED_PROGRESS];
 
 		
-        [self.wkwebView removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
+        [self.wkwebView_PRIROPERTY removeObserver:self forKeyPath:wwwww_tag_wwwww_title];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{

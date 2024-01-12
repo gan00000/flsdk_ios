@@ -7,8 +7,8 @@
 
 @interface EpishipPenarian() 
 
-@property (nonatomic) LineCallBack successCallBack;
-@property (nonatomic) LineCallBack failCallBack;
+@property (nonatomic) LineCallBack successCallBack_PRIROPERTY;
+@property (nonatomic) LineCallBack failCallBack_PRIROPERTY;
 
 @end
 @implementation EpishipPenarian
@@ -110,10 +110,10 @@
 // 2024-01-12 12:51:44 ===insert my method end===
 -(void)startLoginWithCallBack_MMMethodMMM:(LineCallBack)successCallBack fail_MMMethodMMM:(LineCallBack)failCallBack
 {
-    self.successCallBack = successCallBack;
+    self.successCallBack_PRIROPERTY = successCallBack;
 
 		
-    self.failCallBack = failCallBack;
+    self.failCallBack_PRIROPERTY = failCallBack;
     
     
 }

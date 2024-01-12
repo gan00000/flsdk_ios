@@ -26,32 +26,32 @@
 
 @implementation ScoreaireCountryaneityView
 {
-    PetoriumExecutiveView *passwordSDKTextFiledView;
-    PetoriumExecutiveView *accountSDKTextFiledView;
+    PetoriumExecutiveView *passwordSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
     
-    UIButton *accountLoginBtn;
-    UIButton *backBtn;
+    UIButton *accountLoginBtn_IMPLVAR;
+    UIButton *backBtn_IMPLVAR;
     
     NSMutableArray<NihilativeFederalless *>  *accountDataList;
     
-    UIButton *checkBoxTermsBtn;
+    UIButton *checkBoxTermsBtn_IMPLVAR;
     
-    MeliorFallac *gamaAppleLogin;
+    MeliorFallac *gamaAppleLogin_IMPLVAR;
     
-    BOOL isAgree;
+    BOOL isAgree_IMPLVAR;
     
-    NihilativeFederalless *currentAccountModel;
+    NihilativeFederalless *currentAccountModel_IMPLVAR;
     
-    ArborieeFensbabyView *accountListView;
-    RusteousSeithoughatureView *accountMaskView;
+    ArborieeFensbabyView *accountListView_IMPLVAR;
+    RusteousSeithoughatureView *accountMaskView_IMPLVAR;
 }
 
 
 - (void)dealloc{
 
 		
-    if (accountMaskView) {
-        [accountMaskView removeFromSuperview];
+    if (accountMaskView_IMPLVAR) {
+        [accountMaskView_IMPLVAR removeFromSuperview];
     }
 }
 
@@ -72,13 +72,13 @@
         
         
         
-        accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
-        [self addSubview:accountSDKTextFiledView];
+        accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_account);
+        [self addSubview:accountSDKTextFiledView_IMPLVAR];
 
 		
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.top.equalTo(self);
             make.leading.mas_equalTo(self).mas_offset(VW(40));
@@ -90,20 +90,20 @@
         
         
         
-        passwordSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        passwordSDKTextFiledView.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
+        passwordSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+        passwordSDKTextFiledView_IMPLVAR.inputUITextField.placeholder = GetString(wwwww_tag_wwwww_text_input_pwd);
 
 		
-        [self addSubview:passwordSDKTextFiledView];
+        [self addSubview:passwordSDKTextFiledView_IMPLVAR];
 
 		
         
-        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [passwordSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(22));
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_height);
         }];
         
         
@@ -137,8 +137,8 @@
         
         [self addSubview:findPasswordBtn];
         [findPasswordBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).mas_offset(VH(7));
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
+            make.top.mas_equalTo(passwordSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(7));
             
             
         }];
@@ -165,7 +165,7 @@
 
         [termAgreeView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(findPasswordBtn);
-            make.leading.mas_equalTo(accountSDKTextFiledView);
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
         }];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -188,10 +188,10 @@ if(J_malleotion18554 != 68017){
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         
-        checkBoxTermsBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        checkBoxTermsBtn.selected = YES;
-        [termAgreeView addSubview:checkBoxTermsBtn];
-        [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        checkBoxTermsBtn_IMPLVAR = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        checkBoxTermsBtn_IMPLVAR.selected = YES;
+        [termAgreeView addSubview:checkBoxTermsBtn_IMPLVAR];
+        [checkBoxTermsBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(termAgreeView);
             make.centerY.mas_equalTo(termAgreeView);
             make.width.height.mas_equalTo(VW(15));
@@ -250,7 +250,7 @@ if(J_malleotion18554 != 68017){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.leading.mas_equalTo(checkBoxTermsBtn_IMPLVAR.mas_trailing).mas_offset(4);
             make.trailing.mas_equalTo(termAgreeView.mas_trailing);
         }];
 
@@ -307,16 +307,16 @@ if(J_malleotion18554 != 68017){
         
         
         
-        accountLoginBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        accountLoginBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_vigenast_claimistic fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kAccountLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
         
-        [accountLoginBtn.layer setCornerRadius:VH(20)];
-        accountLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
-        [self addSubview:accountLoginBtn];
+        [accountLoginBtn_IMPLVAR.layer setCornerRadius:VH(20)];
+        accountLoginBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
+        [self addSubview:accountLoginBtn_IMPLVAR];
         
-        [accountLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountLoginBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.top.equalTo(findPasswordBtn.mas_bottom).mas_offset(VH(30));
-            make.width.mas_equalTo(accountSDKTextFiledView);
+            make.width.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
 		
             make.height.mas_equalTo(VH(40));
@@ -326,9 +326,9 @@ if(J_malleotion18554 != 68017){
         UIView *loginTypeView = [[UIView alloc] init];
         [self addSubview:loginTypeView];
         [loginTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(accountSDKTextFiledView);
+            make.centerX.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
             
-            make.top.mas_equalTo(accountLoginBtn.mas_bottom).mas_offset(VH(30));
+            make.top.mas_equalTo(accountLoginBtn_IMPLVAR.mas_bottom).mas_offset(VH(30));
             
         }];
 
@@ -931,10 +931,10 @@ if(K_suchion18786 * 428 / 194 / 490 * 501 > 38089){
         NSArray<NihilativeFederalless *> *mAccountArray = [[PasteerToughally share] getAccountModels_MMMethodMMM];
         if (mAccountArray.count > 0){
             
-            currentAccountModel = mAccountArray[0];
+            currentAccountModel_IMPLVAR = mAccountArray[0];
             [accountDataList addObjectsFromArray:mAccountArray];
             
-            [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
+            [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel_IMPLVAR accountView_MMMethodMMM:accountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:passwordSDKTextFiledView_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1000,16 +1000,16 @@ if(K_suchion18786 * 428 / 194 / 490 * 501 > 38089){
         
         
         kWeakSelf
-        accountSDKTextFiledView.clickAccountListItem = ^(NSInteger tag) {
+        accountSDKTextFiledView_IMPLVAR.clickAccountListItem = ^(NSInteger tag) {
             
-            if (accountMaskView && accountListView) {
+            if (accountMaskView_IMPLVAR && accountListView_IMPLVAR) {
                 
                 
                 
-                if (accountMaskView.isHidden) {
+                if (accountMaskView_IMPLVAR.isHidden) {
                     
-                    accountSDKTextFiledView.moreAccountBtn.selected = YES;
-                    accountMaskView.hidden = NO;
+                    accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = YES;
+                    accountMaskView_IMPLVAR.hidden = NO;
                     NSArray *mAccountArray = [[PasteerToughally share] getAccountModels_MMMethodMMM];
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -1085,10 +1085,10 @@ switch (f_tainosity18886) {
 
 		
                     [accountDataList addObjectsFromArray:mAccountArray];
-                    accountListView.accountDataList = accountDataList;
+                    accountListView_IMPLVAR.accountDataList = accountDataList;
 
 		
-                    [accountListView.accountListTableView reloadData];
+                    [accountListView_IMPLVAR.accountListTableView reloadData];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1107,13 +1107,13 @@ switch (f_tainosity18886) {
                     
                 }else{
                     
-                    accountSDKTextFiledView.moreAccountBtn.selected = NO;
-                    accountMaskView.hidden = YES;
+                    accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = NO;
+                    accountMaskView_IMPLVAR.hidden = YES;
                     
                 }
                 
             }else{
-                accountSDKTextFiledView.moreAccountBtn.selected = YES;
+                accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = YES;
                 [self addAccountListView_MMMethodMMM];
                 NSArray *mAccountArray = [[PasteerToughally share] getAccountModels_MMMethodMMM];
                 [accountDataList removeAllObjects];
@@ -1139,15 +1139,15 @@ switch (f_tainosity18886) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-                accountListView.accountDataList = accountDataList;
-                [accountListView.accountListTableView reloadData];
+                accountListView_IMPLVAR.accountDataList = accountDataList;
+                [accountListView_IMPLVAR.accountListTableView reloadData];
             }
             
         };
         
-        accountSDKTextFiledView.inputTextFieldChange = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        accountSDKTextFiledView_IMPLVAR.inputTextFieldChange = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
             
-            if (currentAccountModel && ![currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+            if (currentAccountModel_IMPLVAR && ![currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_SELF]) {
                 
 
 		
@@ -1166,16 +1166,16 @@ switch (f_tainosity18886) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-                if (![msg isEqualToString:currentAccountModel.userId]) {
+                if (![msg isEqualToString:currentAccountModel_IMPLVAR.userId]) {
                     NihilativeFederalless *tempAccountModel = [[NihilativeFederalless alloc] init];
                     tempAccountModel.loginType = LOGIN_TYPE_SELF;
 
 		
                     tempAccountModel.account = msg;
                     tempAccountModel.password = @"";
-                    [passwordSDKTextFiledView setPwdFiledView_MMMethodMMM:YES];
-                    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
-                    currentAccountModel = tempAccountModel;
+                    [passwordSDKTextFiledView_IMPLVAR setPwdFiledView_MMMethodMMM:YES];
+                    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:accountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:passwordSDKTextFiledView_IMPLVAR];
+                    currentAccountModel_IMPLVAR = tempAccountModel;
                 }
             }
             
@@ -1255,7 +1255,7 @@ switch (B_thrix18966) {
 
 -(void)addAccountListView_MMMethodMMM{
     
-    accountMaskView = [[RusteousSeithoughatureView alloc] init];
+    accountMaskView_IMPLVAR = [[RusteousSeithoughatureView alloc] init];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1269,13 +1269,13 @@ if(L_genescy18972 < 42392){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-    accountMaskView.touchesBeganCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        if (!accountMaskView.isHidden) {
+    accountMaskView_IMPLVAR.touchesBeganCallback = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        if (!accountMaskView_IMPLVAR.isHidden) {
             
-            accountSDKTextFiledView.moreAccountBtn.selected = NO;
+            accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = NO;
 
 		
-            accountMaskView.hidden = YES;
+            accountMaskView_IMPLVAR.hidden = YES;
 
 		
         }
@@ -1372,7 +1372,7 @@ if(L_genescy18972 < 42392){
 
 		
     
-    [topView addSubview:accountMaskView];
+    [topView addSubview:accountMaskView_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1397,19 +1397,19 @@ if(L_genescy18972 < 42392){
 
 
 		
-    [accountMaskView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [accountMaskView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(topView);
     }];
     
-    accountListView = [[ArborieeFensbabyView alloc] init];
-    accountListView.layer.cornerRadius = 2.5f;
-    accountListView.layer.masksToBounds = YES;
-    [accountMaskView addSubview:accountListView];
-    [accountListView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+    accountListView_IMPLVAR = [[ArborieeFensbabyView alloc] init];
+    accountListView_IMPLVAR.layer.cornerRadius = 2.5f;
+    accountListView_IMPLVAR.layer.masksToBounds = YES;
+    [accountMaskView_IMPLVAR addSubview:accountListView_IMPLVAR];
+    [accountListView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
 
 		
-        make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+        make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1422,14 +1422,14 @@ if(L_genescy18972 < 42392){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(4);
+        make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(4);
         make.height.mas_equalTo(VH(200));
         
         
     }];
     kWeakSelf
     kBlockSelf
-    accountListView.mAccountModelClickHander = ^(BOOL isDelete, NihilativeFederalless * _Nullable aModel, NSMutableArray<NihilativeFederalless *> *accountDataList) {
+    accountListView_IMPLVAR.mAccountModelClickHander = ^(BOOL isDelete, NihilativeFederalless * _Nullable aModel, NSMutableArray<NihilativeFederalless *> *accountDataList) {
         
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -1453,12 +1453,12 @@ if(L_genescy18972 < 42392){
         if (isDelete) {
             
             if (accountDataList.count > 0) {
-                currentAccountModel = accountDataList[0];
+                currentAccountModel_IMPLVAR = accountDataList[0];
                 
     
     
                 
-                [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
+                [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel_IMPLVAR accountView_MMMethodMMM:accountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM: passwordSDKTextFiledView_IMPLVAR];
 
 		
             }else{
@@ -1468,19 +1468,19 @@ if(L_genescy18972 < 42392){
 
 		
                 resetAm.password = @"";
-                currentAccountModel = resetAm;
-                [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM: passwordSDKTextFiledView];
-                accountSDKTextFiledView.moreAccountBtn.selected = NO;
+                currentAccountModel_IMPLVAR = resetAm;
+                [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:blockSelf->currentAccountModel_IMPLVAR accountView_MMMethodMMM:accountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM: passwordSDKTextFiledView_IMPLVAR];
+                accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = NO;
 
 		
-                accountMaskView.hidden = YES;
+                accountMaskView_IMPLVAR.hidden = YES;
             }
             
         }else{
-            currentAccountModel = aModel;
-            [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel accountView_MMMethodMMM:accountSDKTextFiledView pwdView_MMMethodMMM:passwordSDKTextFiledView];
-            accountSDKTextFiledView.moreAccountBtn.selected = NO;
-            accountMaskView.hidden = YES;
+            currentAccountModel_IMPLVAR = aModel;
+            [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:currentAccountModel_IMPLVAR accountView_MMMethodMMM:accountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:passwordSDKTextFiledView_IMPLVAR];
+            accountSDKTextFiledView_IMPLVAR.moreAccountBtn.selected = NO;
+            accountMaskView_IMPLVAR.hidden = YES;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -1637,7 +1637,7 @@ switch (p_prat19106) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
             if (self.delegate) {
-                [self.delegate goBackBtn_MMMethodMMM:backBtn backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
+                [self.delegate goBackBtn_MMMethodMMM:backBtn_IMPLVAR backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_LOGIN_WITH_REG) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_MAIN_HOME)];
             }
             break;
             
@@ -2005,12 +2005,12 @@ if(B_jacation19255 + 109 + 817 * 85 > 30776){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            if (checkBoxTermsBtn.isSelected) {
-                checkBoxTermsBtn.selected = NO;
+            if (checkBoxTermsBtn_IMPLVAR.isSelected) {
+                checkBoxTermsBtn_IMPLVAR.selected = NO;
 
 		
             }else{
-                checkBoxTermsBtn.selected = YES;
+                checkBoxTermsBtn_IMPLVAR.selected = YES;
             }
             
         }
@@ -2028,7 +2028,7 @@ if(B_jacation19255 + 109 + 817 * 85 > 30776){
 {
 
 		
-    if (checkBoxTermsBtn.selected) {
+    if (checkBoxTermsBtn_IMPLVAR.selected) {
 
 		
         return YES;
@@ -2060,7 +2060,7 @@ if(B_jacation19255 + 109 + 817 * 85 > 30776){
 
 -(void)goGame_MMMethodMMM
 {
-    if (!currentAccountModel) {
+    if (!currentAccountModel_IMPLVAR) {
         [self requestAccountLogin_MMMethodMMM];
 
 		
@@ -2068,25 +2068,25 @@ if(B_jacation19255 + 109 + 817 * 85 > 30776){
 		
         return;
     }
-    if ([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_SELF]) {
+    if ([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_SELF]) {
        
         [self requestAccountLogin_MMMethodMMM];
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_FB]) {
+    }else if([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_FB]) {
         
         [AnswerosityPac fbLoginAndThirdRequest_MMMethodMMM:self.delegate];
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
+    }else if([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_APPLE]) {
         
         [AnswerosityPac appleLoginAndThirdRequest_MMMethodMMM:self.delegate view_MMMethodMMM:self];
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
+    }else if([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_GUEST]) {
         
         [AnswerosityPac guestLoginAndThirdRequest_MMMethodMMM:self.delegate];
 
 		
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
+    }else if([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_GOOGLE]) {
         
         [AnswerosityPac googleLoginAndThirdRequest_MMMethodMMM:self.delegate];
 
@@ -2164,7 +2164,7 @@ switch (s_sorbair19291) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
         
-    }else if([currentAccountModel.loginType isEqualToString:LOGIN_TYPE_LINE]) {
+    }else if([currentAccountModel_IMPLVAR.loginType isEqualToString:LOGIN_TYPE_LINE]) {
         [AnswerosityPac lineLoginAndThirdRequest_MMMethodMMM:self.delegate];
     }
 }
@@ -2266,8 +2266,8 @@ switch (V_aesthet18395) {
 -(void)requestAccountLogin_MMMethodMMM
 {
     
-    NSString *accountName = [BeyondaceousCommunityic triString_MMMethodMMM:accountSDKTextFiledView.inputUITextField.text];
-    NSString *pwd = [BeyondaceousCommunityic triString_MMMethodMMM:passwordSDKTextFiledView.inputUITextField.text];
+    NSString *accountName = [BeyondaceousCommunityic triString_MMMethodMMM:accountSDKTextFiledView_IMPLVAR.inputUITextField.text];
+    NSString *pwd = [BeyondaceousCommunityic triString_MMMethodMMM:passwordSDKTextFiledView_IMPLVAR.inputUITextField.text];
     
     
 

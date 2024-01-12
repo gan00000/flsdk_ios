@@ -9,10 +9,10 @@
 
 @interface FatherNeurad ()<SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
-@property (nonatomic, copy) NSString *currentOrderId;
+@property (nonatomic, copy) NSString *currentOrderId_PRIROPERTY;
 
-@property (nonatomic, strong) PayData *mPayData;
-@property (nonatomic)PayStatusBlock payStatusBlock;
+@property (nonatomic, strong) PayData *mPayData_PRIROPERTY;
+@property (nonatomic)PayStatusBlock payStatusBlock_PRIROPERTY;
 
 @end
 
@@ -638,7 +638,7 @@ switch (s_ballship44575) {
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
     
-    self.payStatusBlock = payStatusBlock;
+    self.payStatusBlock_PRIROPERTY = payStatusBlock;
   
     [self checkOrderStatus_MMMethodMMM];
 
@@ -712,10 +712,10 @@ switch (W_jungeous44581) {
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
     
-    self.currentOrderId = @"";
+    self.currentOrderId_PRIROPERTY = @"";
 
 		
-    self.mPayData = [[PayData alloc] init];
+    self.mPayData_PRIROPERTY = [[PayData alloc] init];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -851,18 +851,18 @@ switch (o_heartior44641) {
 
         return;
     }
-    self.mPayData.productId = productId;
-    self.mPayData.cpOrderId = cpOrderId;
+    self.mPayData_PRIROPERTY.productId = productId;
+    self.mPayData_PRIROPERTY.cpOrderId = cpOrderId;
 
     
     
     [LampoCisling createOrderWithproductId_MMMethodMMM:productId cpOrderId_MMMethodMMM:cpOrderId extra_MMMethodMMM:extra gameInfo_MMMethodMMM:gameUserModel accountModel_MMMethodMMM:accountModel otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
         
         CupStringics *cor = (CupStringics *)responseData;
-        self.currentOrderId = cor.orderId;
-        self.mPayData.amount = cor.amount;
+        self.currentOrderId_PRIROPERTY = cor.orderId;
+        self.mPayData_PRIROPERTY.amount = cor.amount;
         
-        [self payWithOrderId_MMMethodMMM:self.currentOrderId productId_MMMethodMMM:productId];
+        [self payWithOrderId_MMMethodMMM:self.currentOrderId_PRIROPERTY productId_MMMethodMMM:productId];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -915,7 +915,7 @@ if(q_germin44647 != 85384){
     if([SKPaymentQueue canMakePayments]){
         
         [self removeAllUncompleteTransactionsBeforeNewPurchase_MMMethodMMM];
-        self.currentOrderId = orderId;
+        self.currentOrderId_PRIROPERTY = orderId;
         [self requestProductData_MMMethodMMM:productId];
 
 		//===insert my code start===  2024-01-12 12:51:45
@@ -967,7 +967,7 @@ if(q_germin44647 != 85384){
     SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:p];
     
     if ([PubshipPasserdom getSystemVersion_MMMethodMMM].intValue>7){
-        payment.applicationUsername = self.currentOrderId;
+        payment.applicationUsername = self.currentOrderId_PRIROPERTY;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1769,7 +1769,7 @@ switch (X_motfication44740) {
         
         
         if([LoquiistMulsence isEmpty_MMMethodMMM:parameterStr]){
-            parameterStr = self.currentOrderId;
+            parameterStr = self.currentOrderId_PRIROPERTY;
         }
         
     }
@@ -1779,7 +1779,7 @@ switch (X_motfication44740) {
 		
     
     NSDictionary *otherParamsDic = @{
-        @"currentOrderId"       :  self.currentOrderId ? : @"",
+        @"currentOrderId"       :  self.currentOrderId_PRIROPERTY ? : @"",
         @"transferOrderId"      :  transferOrderId ? : @"",
         @"isOnPaying"            :   @"true",
         @"payEnv"            :   localRecord,
@@ -1789,14 +1789,14 @@ switch (X_motfication44740) {
     [LampoCisling paymentWithTransactionId_MMMethodMMM:transactionId receiptData_MMMethodMMM:receiptString orderId_MMMethodMMM:parameterStr reissue_MMMethodMMM:reissue gameInfo_MMMethodMMM:SDK_DATA.gameUserModel accountModel_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:otherParamsDic successBlock_MMMethodMMM:^(id responseData) {
         
         CupStringics *cor = (CupStringics *)responseData;
-        self.mPayData.timestamp = cor.timestamp;
-        self.mPayData.orderId = cor.orderId;
+        self.mPayData_PRIROPERTY.timestamp = cor.timestamp;
+        self.mPayData_PRIROPERTY.orderId = cor.orderId;
 
 		
         
         [self completeTransaction_MMMethodMMM:transaction];
         [self removeLocReceiptDataByTranId_MMMethodMMM:transactionId];
-        self.mPayData.transactionId = transactionId;
+        self.mPayData_PRIROPERTY.transactionId = transactionId;
         [self finishPayWithStatus_MMMethodMMM:YES msg_MMMethodMMM:@""];
 
 		//===insert my code start===  2024-01-12 12:51:45
@@ -1878,8 +1878,8 @@ switch (X_motfication44740) {
     if (status) {
         SDK_LOG(@"finishPayWithStatus success");
         
-        if (self.payStatusBlock) {
-            self.payStatusBlock(status,self.mPayData);
+        if (self.payStatusBlock_PRIROPERTY) {
+            self.payStatusBlock_PRIROPERTY(status,self.mPayData_PRIROPERTY);
         }
     }else{
         SDK_LOG(@"finishPayWithStatus fail");
@@ -1888,8 +1888,8 @@ switch (X_motfication44740) {
         if ([LoquiistMulsence isNotEmpty_MMMethodMMM:msg]) {
             [RoleaneousIdentify showAlertWithMessage_MMMethodMMM:msg];
         }
-        if (self.payStatusBlock) {
-            self.payStatusBlock(status,nil);
+        if (self.payStatusBlock_PRIROPERTY) {
+            self.payStatusBlock_PRIROPERTY(status,nil);
         }
     }
    

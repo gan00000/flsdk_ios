@@ -4,7 +4,7 @@
 
 
 @interface WallosityEastacious()
-@property (nonatomic,assign) CGFloat viewAdaptRate;
+@property (nonatomic,assign) CGFloat viewAdaptRate_PRIROPERTY;
 @end
 
 @implementation WallosityEastacious
@@ -50,7 +50,7 @@
 
 -(CGFloat)getViewHeight_MMMethodMMM:(CGFloat)height
 {
-    return height * self.viewAdaptRate;
+    return height * self.viewAdaptRate_PRIROPERTY;
     
 }
 
@@ -90,7 +90,7 @@ if(Z_crev41374 == 61442){
 // 2024-01-12 12:51:45 ===insert my method end===
 -(CGFloat)getViewWidth_MMMethodMMM:(CGFloat)width
 {
-    return width * self.viewAdaptRate;
+    return width * self.viewAdaptRate_PRIROPERTY;
 }
 
 -(CGFloat)getFontSize_MMMethodMMM:(CGFloat)size{
@@ -136,15 +136,15 @@ if(Z_crev41374 == 61442){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    return size * self.viewAdaptRate;
+    return size * self.viewAdaptRate_PRIROPERTY;
 }
 
 
 
--(CGFloat)viewAdaptRate
+-(CGFloat)viewAdaptRate_PRIROPERTY
 {
-    if (_viewAdaptRate) {
-        return _viewAdaptRate;
+    if (_viewAdaptRate_PRIROPERTY) {
+        return _viewAdaptRate_PRIROPERTY;
     }
     
     NSLog(@"SCREEN_WIDTH:%f,SCREEN_HEIGHT:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
@@ -198,7 +198,7 @@ switch (h_knowledgeproof41424) {
         if (w_rate > 1.4) {
             w_rate = 1.4;
         }
-        _viewAdaptRate = floor(w_rate * 100) / 100;
+        _viewAdaptRate_PRIROPERTY = floor(w_rate * 100) / 100;
 
     }else{
         
@@ -301,9 +301,9 @@ switch (h_knowledgeproof41424) {
 
 
 		
-        _viewAdaptRate = deviceRate;
+        _viewAdaptRate_PRIROPERTY = deviceRate;
     }
-    return _viewAdaptRate;
+    return _viewAdaptRate_PRIROPERTY;
 }
     
 

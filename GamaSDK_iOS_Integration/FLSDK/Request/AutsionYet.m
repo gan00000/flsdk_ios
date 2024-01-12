@@ -11,7 +11,7 @@
 
 @interface AutsionYet()
 
-@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine;
+@property (nonatomic, strong) CirrelectionuleInvestmentivity *httpEngine_PRIROPERTY;
 
 @end
 
@@ -26,8 +26,8 @@
     dispatch_once(&onceToken, ^{
         instance = [[AutsionYet alloc] init];
         NSString *servicePath = [SDKRES getPayUrl_MMMethodMMM];
-        instance.httpEngine = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
-        [instance.httpEngine updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
+        instance.httpEngine_PRIROPERTY = [[CirrelectionuleInvestmentivity alloc] initWithBasePath_MMMethodMMM:servicePath];
+        [instance.httpEngine_PRIROPERTY updateSessionWithBlock_MMMethodMMM:^(AFHTTPSessionManager *session) {
             session.requestSerializer.timeoutInterval = 30;
         }];
     });
@@ -48,7 +48,7 @@
     if (params) {
         [allParams addEntriesFromDictionary:params];
     }
-    [[AutsionYet sharedInstance].httpEngine getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[AutsionYet sharedInstance].httpEngine_PRIROPERTY getRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"get: path = %@,requsetHeader = %@, params = %@, data = %@", task.originalRequest.URL,task.originalRequest.allHTTPHeaderFields,params, responseData);
@@ -238,7 +238,7 @@ switch (T_cancerine32829) {
         }
         SDK_LOG(@"%@?%@",path,aUrl);
     }
-    [[AutsionYet sharedInstance].httpEngine postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+    [[AutsionYet sharedInstance].httpEngine_PRIROPERTY postRequestWithFunctionPath_MMMethodMMM:path params_MMMethodMMM:allParams successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
         
 #if ENABLE_REQUEST_LOG
         SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);

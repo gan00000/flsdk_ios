@@ -9,8 +9,8 @@
 #import <AuthenticationServices/AuthenticationServices.h>
 
 @implementation MollRapacoryView{
-    LaxlegalantOwneracyView *mLoginTitleView;
-    UIView *appleBindView;
+    LaxlegalantOwneracyView *mLoginTitleView_IMPLVAR;
+    UIView *appleBindView_IMPLVAR;
 }
 
 - (instancetype)initView_MMMethodMMM
@@ -77,12 +77,12 @@
         self.layer.masksToBounds = YES; 
         
         
-        mLoginTitleView = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_sureenne_terless hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView_IMPLVAR = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:wwwww_tag_wwwww_sureenne_terless hander_MMMethodMMM:^(NSInteger) {
             
         }];
         
-        [self addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self addSubview:mLoginTitleView_IMPLVAR];
+        [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(32));
             make.centerX.mas_equalTo(self);
             make.width.mas_equalTo(self).mas_offset(-VW(55));
@@ -216,7 +216,7 @@
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(40));
+            make.top.equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(40));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -254,7 +254,7 @@
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            make.width.mas_equalTo(mLoginTitleView);
+            make.width.mas_equalTo(mLoginTitleView_IMPLVAR);
         }];
         
         
@@ -333,10 +333,10 @@
         
         if (@available(iOS 13.0, *)) {
             
-            appleBindView = [[UIView alloc] init];
+            appleBindView_IMPLVAR = [[UIView alloc] init];
 
 		
-            appleBindView.layer.cornerRadius = 4;
+            appleBindView_IMPLVAR.layer.cornerRadius = 4;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -391,21 +391,21 @@ if(n_modelress18227 - 730 / 699 * 829 + 643 * 798 < 18290){
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            appleBindView.tag = kBindAppleActTag;
-            appleBindView.backgroundColor = [UIColor blackColor];
+            appleBindView_IMPLVAR.tag = kBindAppleActTag;
+            appleBindView_IMPLVAR.backgroundColor = [UIColor blackColor];
 
 		
             
-            appleBindView.userInteractionEnabled = YES; 
+            appleBindView_IMPLVAR.userInteractionEnabled = YES; 
             UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(appleViewTapped_MMMethodMMM:)];
-            [appleBindView addGestureRecognizer:tapGr];
+            [appleBindView_IMPLVAR addGestureRecognizer:tapGr];
 
 		
             
-            [self addSubview:appleBindView];
+            [self addSubview:appleBindView_IMPLVAR];
 
 		
-            [appleBindView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [appleBindView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self);
                 make.top.equalTo(fbBindBtn.mas_bottom).mas_offset(20);
                 make.width.mas_equalTo(guestBindBtn);
@@ -425,7 +425,7 @@ if(n_modelress18227 - 730 / 699 * 829 + 643 * 798 < 18290){
 
 		
             appleBindBtn.tag = kBindAppleActTag;
-            [appleBindView addSubview:appleBindBtn];
+            [appleBindView_IMPLVAR addSubview:appleBindBtn];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -470,8 +470,8 @@ if(n_modelress18227 - 730 / 699 * 829 + 643 * 798 < 18290){
 
                
                    [appleBindBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                       make.top.mas_equalTo(appleBindView);
-                       make.leading.mas_equalTo(appleBindView).mas_offset(VW(30));
+                       make.top.mas_equalTo(appleBindView_IMPLVAR);
+                       make.leading.mas_equalTo(appleBindView_IMPLVAR).mas_offset(VW(30));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -566,7 +566,7 @@ if(X_fullaneity18259 < 91635){
 
            titleLable.textColor = [UIColor whiteColor];
             titleLable.adjustsFontSizeToFitWidth = YES;
-            [appleBindView addSubview:titleLable];
+            [appleBindView_IMPLVAR addSubview:titleLable];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -587,14 +587,14 @@ if(X_fullaneity18259 < 91635){
 
 		
             [titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.mas_equalTo(appleBindView);
+                make.top.mas_equalTo(appleBindView_IMPLVAR);
 
 		
-                make.bottom.mas_equalTo(appleBindView);
+                make.bottom.mas_equalTo(appleBindView_IMPLVAR);
                 
                 
                 make.leading.mas_equalTo(appleBindBtn.mas_trailing);
-                make.trailing.mas_equalTo(appleBindView);
+                make.trailing.mas_equalTo(appleBindView_IMPLVAR);
 
 		
             }];

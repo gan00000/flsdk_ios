@@ -14,12 +14,12 @@
 
 @implementation JurisyOfficialsureView
 {
-    PetoriumExecutiveView *accountSDKTextFiledView;
-    PetoriumExecutiveView *passwordSDKTextFiledView;
-    PetoriumExecutiveView *passwordAgainSDKTextFiledView;
-    UIButton *regAccountBtn; 
-    LaxlegalantOwneracyView   *mLoginTitleView;
-    int phoneCountdown;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *passwordSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *passwordAgainSDKTextFiledView_IMPLVAR;
+    UIButton *regAccountBtn_IMPLVAR; 
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
+    int phoneCountdown_IMPLVAR;
     
     
 }
@@ -47,13 +47,13 @@
         
        
         
-        accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:accountSDKTextFiledView];
+        accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+        [self addSubview:accountSDKTextFiledView_IMPLVAR];
 
 		
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.top.equalTo(self);
             make.leading.mas_equalTo(self).mas_offset(VW(40));
@@ -65,17 +65,17 @@
         
         
         
-        passwordSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
-        [self addSubview:passwordSDKTextFiledView];
+        passwordSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+        [self addSubview:passwordSDKTextFiledView_IMPLVAR];
         
-        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [passwordSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(22));
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
 
 		
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_height);
         }];
 
 		
@@ -111,7 +111,7 @@ if(z_gemmiify24741 - 375 * 487 + 504 - 36 + 836 == 97){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.trailing.equalTo(accountSDKTextFiledView);
+            make.leading.trailing.equalTo(accountSDKTextFiledView_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -170,15 +170,15 @@ switch (h_difficultorium24765) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).offset(8);
+            make.top.mas_equalTo(passwordSDKTextFiledView_IMPLVAR.mas_bottom).offset(8);
     
         }];
         
         
-        regAccountBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_confire_reg.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        regAccountBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_text_confire_reg.localx fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		
-        [regAccountBtn.layer setCornerRadius:VH(25)];
+        [regAccountBtn_IMPLVAR.layer setCornerRadius:VH(25)];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -291,8 +291,8 @@ switch (C_shootally24801) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
-        [self addSubview:regAccountBtn];
+        regAccountBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+        [self addSubview:regAccountBtn_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -350,8 +350,8 @@ if(D_pituous24845 == 21857){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
         
-        [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.trailing.equalTo(accountSDKTextFiledView);
+        [regAccountBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.trailing.equalTo(accountSDKTextFiledView_IMPLVAR);
             make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(34));
 
 		//===insert my code start===  2024-01-12 12:51:45
@@ -502,9 +502,9 @@ if(D_urblet24853 - 200 * 808 * 320 / 965 != 57058){
         }];
         
         CAGradientLayer *gl = [NoxardLingusive createGradientLayerWithRadius_MMMethodMMM:VH(25)];
-        [regAccountBtn.layer addSublayer:gl];
+        [regAccountBtn_IMPLVAR.layer addSublayer:gl];
         [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-            gl.frame = regAccountBtn.bounds;
+            gl.frame = regAccountBtn_IMPLVAR.bounds;
         }];
 
         
@@ -526,7 +526,7 @@ if(D_urblet24853 - 200 * 808 * 320 / 965 != 57058){
         case kRegisterAccountActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
-            NSString *accountName = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *accountName = [accountSDKTextFiledView_IMPLVAR.inputUITextField.text trim_MMMethodMMM];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -552,7 +552,7 @@ if(m_hedraant24885 != 15313){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            NSString *pwd = [passwordSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+            NSString *pwd = [passwordSDKTextFiledView_IMPLVAR.inputUITextField.text trim_MMMethodMMM];
 
 		
             

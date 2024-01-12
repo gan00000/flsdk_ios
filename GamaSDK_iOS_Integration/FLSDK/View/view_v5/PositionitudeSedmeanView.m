@@ -20,9 +20,9 @@
 
 @implementation PositionitudeSedmeanView
 {
-    UIButton *guestLoginBtn;
-    UIButton *checkBoxTermsBtn;
-    UIView *deleteView;
+    UIButton *guestLoginBtn_IMPLVAR;
+    UIButton *checkBoxTermsBtn_IMPLVAR;
+    UIView *deleteView_IMPLVAR;
 }
 
 
@@ -64,7 +64,7 @@
     
     
     ThyrScripttureView *aTermsViewV2 = [[ThyrScripttureView alloc] initWithCompleter_MMMethodMMM:^{
-        checkBoxTermsBtn.selected = YES;
+        checkBoxTermsBtn_IMPLVAR.selected = YES;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -476,7 +476,7 @@ switch (h_lateier25933) {
     
     
     
-    guestLoginBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    guestLoginBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:@"" fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:guestLoginActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -511,7 +511,7 @@ switch (h_lateier25933) {
 
 
 		
-    [guestLoginBtn.layer setCornerRadius:VH(25)];
+    [guestLoginBtn_IMPLVAR.layer setCornerRadius:VH(25)];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -523,9 +523,9 @@ switch (h_lateier25933) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    guestLoginBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
+    guestLoginBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:BaseColor];
     
-    [contentView addSubview:guestLoginBtn];
+    [contentView addSubview:guestLoginBtn_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -547,7 +547,7 @@ switch (h_lateier25933) {
 
 		
     
-    [guestLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [guestLoginBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         
         if (logoIV.hidden) {
             make.top.mas_equalTo(logoIV.mas_bottom);
@@ -586,7 +586,7 @@ switch (h_lateier25933) {
     
     
     CAGradientLayer *guestBtnGradientLayer = [NoxardLingusive createGradientLayerWithRadius_MMMethodMMM:VH(25)];
-    [guestLoginBtn.layer addSublayer:guestBtnGradientLayer];
+    [guestLoginBtn_IMPLVAR.layer addSublayer:guestBtnGradientLayer];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -603,7 +603,7 @@ if(Z_genu26089 != 70181){
 
     
     [self addDrawRectBolck:^(NSString *msg, NSInteger m, NSDictionary *dic) {
-        guestBtnGradientLayer.frame = guestLoginBtn.bounds;
+        guestBtnGradientLayer.frame = guestLoginBtn_IMPLVAR.bounds;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -649,11 +649,11 @@ if(Z_genu26089 != 70181){
 
     
     UIView *guestLoginBtnContent = [[UIView alloc] init];
-    [guestLoginBtn addSubview:guestLoginBtnContent];
+    [guestLoginBtn_IMPLVAR addSubview:guestLoginBtnContent];
 
 		
     [guestLoginBtnContent mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(guestLoginBtn);
+        make.center.mas_equalTo(guestLoginBtn_IMPLVAR);
     }];
 
 		//===insert my code start===  2024-01-12 12:51:45
@@ -734,11 +734,11 @@ if(Z_genu26089 != 70181){
 
 		
     if (!SDK_DATA.mConfigModel.visitorLogin) {
-        guestLoginBtn.hidden = YES;
+        guestLoginBtn_IMPLVAR.hidden = YES;
     }
     
     
-    UIView *topView = guestLoginBtn;
+    UIView *topView = guestLoginBtn_IMPLVAR;
     
     
     
@@ -1065,8 +1065,8 @@ if(Z_genu26089 != 70181){
 
 		
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.mas_equalTo(guestLoginBtn);
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(2);
+                make.leading.trailing.mas_equalTo(guestLoginBtn_IMPLVAR);
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(2);
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1117,8 +1117,8 @@ if(S_amphiarium26374 > 82381){
             
         }else{
             [appleLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.trailing.height.mas_equalTo(guestLoginBtn);
-                make.top.mas_equalTo(guestLoginBtn.mas_bottom).mas_offset(VH(15));
+                make.leading.trailing.height.mas_equalTo(guestLoginBtn_IMPLVAR);
+                make.top.mas_equalTo(guestLoginBtn_IMPLVAR.mas_bottom).mas_offset(VH(15));
             }];
         }
         
@@ -1834,12 +1834,12 @@ if(g_lectmeetee26659 == 47028){
 
 		
     
-    checkBoxTermsBtn = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+    checkBoxTermsBtn_IMPLVAR = [AstrLegalel initBtnWithNormalImage_MMMethodMMM:mw_cb_uncheck highlightedImage_MMMethodMMM:nil selectedImageName_MMMethodMMM:mw_cb_check tag_MMMethodMMM:kAgreeTermsCheckBoxBtnTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
 
 		
-    checkBoxTermsBtn.selected = YES;
-    [termAgreeView addSubview:checkBoxTermsBtn];
-    [checkBoxTermsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    checkBoxTermsBtn_IMPLVAR.selected = YES;
+    [termAgreeView addSubview:checkBoxTermsBtn_IMPLVAR];
+    [checkBoxTermsBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(termAgreeView);
         make.centerY.mas_equalTo(termAgreeView);
 
@@ -1965,7 +1965,7 @@ switch (D_lytmiss26765) {
         [termAgreeView addSubview:rememberTermsLable];
         [rememberTermsLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.mas_equalTo(termAgreeView);
-            make.leading.mas_equalTo(checkBoxTermsBtn.mas_trailing).mas_offset(4);
+            make.leading.mas_equalTo(checkBoxTermsBtn_IMPLVAR.mas_trailing).mas_offset(4);
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2044,10 +2044,10 @@ if(o_fliget26775 >= 90177){
     
     if (mConfigModel.deleteAccount) {
         [self addDeleteAccountView_MMMethodMMM];
-        if(deleteView){
-            [self addSubview:deleteView];
+        if(deleteView_IMPLVAR){
+            [self addSubview:deleteView_IMPLVAR];
          
-            [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [deleteView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 if(IS_PORTRAIT){
                     make.bottom.mas_equalTo(termAgreeView.mas_top).mas_offset(VH(-28));
                     make.centerX.mas_equalTo(self);
@@ -2103,12 +2103,12 @@ if(o_fliget26775 >= 90177){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            if (checkBoxTermsBtn.selected) {
-                checkBoxTermsBtn.selected = NO;
+            if (checkBoxTermsBtn_IMPLVAR.selected) {
+                checkBoxTermsBtn_IMPLVAR.selected = NO;
 
 		
             }else{
-                checkBoxTermsBtn.selected = YES;
+                checkBoxTermsBtn_IMPLVAR.selected = YES;
             }
             break;
             
@@ -2528,7 +2528,7 @@ if(m_hydrstanding26951 + 546 - 688 + 510 + 474 / 134 * 787 > 24322){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    if (checkBoxTermsBtn.selected) {
+    if (checkBoxTermsBtn_IMPLVAR.selected) {
         return YES;
     }
     [BeyondaceousCommunityic toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_term_not_read)];
@@ -2581,11 +2581,11 @@ if(m_hydrstanding26951 + 546 - 688 + 510 + 474 / 134 * 787 > 24322){
 // 2024-01-12 12:51:45 ===insert my method end===
 -(void)addDeleteAccountView_MMMethodMMM
 {
-    deleteView = [[UIView alloc] init];
-    deleteView.backgroundColor = UIColor.whiteColor;
+    deleteView_IMPLVAR = [[UIView alloc] init];
+    deleteView_IMPLVAR.backgroundColor = UIColor.whiteColor;
 
 		
-    deleteView.layer.cornerRadius = VW(14);
+    deleteView_IMPLVAR.layer.cornerRadius = VW(14);
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2607,12 +2607,12 @@ if(m_hydrstanding26951 + 546 - 688 + 510 + 474 / 134 * 787 > 24322){
     UIImageView *deleteIV = [AstrLegalel initImageViewWithImage_MMMethodMMM:mw_delete_icon];
 
 		
-    [deleteView addSubview:deleteIV];
+    [deleteView_IMPLVAR addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteView).mas_offset(VW(13));
+        make.leading.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(13));
 
 		
-        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.top.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(6));
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2650,13 +2650,13 @@ if(m_hydrstanding26951 + 546 - 688 + 510 + 474 / 134 * 787 > 24322){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
-        make.centerY.equalTo(deleteView);
+        make.bottom.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(-6));
+        make.centerY.equalTo(deleteView_IMPLVAR);
         make.width.height.mas_equalTo(VW(15));
     }];
     
     UILabel *delLabel = [AstrLegalel initLabelWithText_MMMethodMMM:GetString(wwwww_tag_wwwww_text_delete_account) fontSize_MMMethodMMM:FS(10) textColor_MMMethodMMM:[UIColor blackColor]];
-    [deleteView addSubview:delLabel];
+    [deleteView_IMPLVAR addSubview:delLabel];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -2678,12 +2678,12 @@ if(m_hydrstanding26951 + 546 - 688 + 510 + 474 / 134 * 787 > 24322){
 
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-13));
-        make.centerY.equalTo(deleteView);
+        make.trailing.mas_equalTo(deleteView_IMPLVAR).mas_offset(VW(-13));
+        make.centerY.equalTo(deleteView_IMPLVAR);
        
     }];
     
-    [deleteView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+    [deleteView_IMPLVAR addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         
         [BeyondaceousCommunityic toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_not_login)];
         

@@ -6,7 +6,7 @@
 
 @interface CirrelectionuleInvestmentivity ()
 
-@property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
+@property (nonatomic, strong) AFHTTPSessionManager *sessionManager_PRIROPERTY;
 
 @end
 
@@ -153,8 +153,8 @@ switch (i_aud14785) {
 
 		
     if (self) {
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
-        self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", @"text/json" ,@"text/javascript", nil];
+        self.sessionManager_PRIROPERTY = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:basePath]];
+        self.sessionManager_PRIROPERTY.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", @"text/json" ,@"text/javascript", nil];
     }
 
 		
@@ -435,7 +435,7 @@ if(V_thoseaire14861 * 431 * 512 / 173 * 367 <= 25157){
 }
 // 2024-01-12 12:51:44 ===insert my method end===
 - (void)updateSessionWithBlock_MMMethodMMM:(void(^)(AFHTTPSessionManager *sesson))updateBlock {
-    updateBlock(self.sessionManager);
+    updateBlock(self.sessionManager_PRIROPERTY);
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -461,7 +461,7 @@ if(V_thoseaire14861 * 431 * 512 / 173 * 367 <= 25157){
                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     @try {
         
-        [self.sessionManager GET:path parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        [self.sessionManager_PRIROPERTY GET:path parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -619,7 +619,7 @@ if(V_thoseaire14861 * 431 * 512 / 173 * 367 <= 25157){
     @try {
         
         
-        [self.sessionManager POST:path parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [self.sessionManager_PRIROPERTY POST:path parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -904,7 +904,7 @@ switch (E_tectonfic14969) {
     @try {
         
        
-        [self.sessionManager POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [self.sessionManager_PRIROPERTY POST:path parameters:params headers:@{@"Content-Type" : @"application/json"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
         } progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -1020,17 +1020,17 @@ switch (E_tectonfic14969) {
                       successBlock_MMMethodMMM:(BJHTTPSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJHTTPFailureBlock)errorBlock {
     
-    NSString *path = [self.sessionManager.baseURL.absoluteString stringByAppendingPathComponent:functionPath];
+    NSString *path = [self.sessionManager_PRIROPERTY.baseURL.absoluteString stringByAppendingPathComponent:functionPath];
 
 		
-    NSMutableURLRequest *request = [self.sessionManager.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSMutableURLRequest *request = [self.sessionManager_PRIROPERTY.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         [formData appendPartWithFileData:fileData name:fileName fileName:fileName mimeType:mimeType];
         
     } error:nil];
     
     __block NSURLSessionUploadTask *uploadTask =
-    [self.sessionManager uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
+    [self.sessionManager_PRIROPERTY uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
         
 
 		//===insert my code start===  2024-01-12 12:51:44

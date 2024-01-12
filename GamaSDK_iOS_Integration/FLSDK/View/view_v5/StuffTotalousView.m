@@ -15,15 +15,15 @@
 @implementation StuffTotalousView
 
 {
-    PetoriumExecutiveView *thirdAccountSDKTextFiledView;
-    PetoriumExecutiveView *accountSDKTextFiledView;
-    PetoriumExecutiveView *pwdSDKTextFiledView;
+    PetoriumExecutiveView *thirdAccountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *pwdSDKTextFiledView_IMPLVAR;
     
-    PetoriumExecutiveView *hasBind_accountSDKTextFiledView;
+    PetoriumExecutiveView *hasBind_accountSDKTextFiledView_IMPLVAR;
     
     
     
-    LaxlegalantOwneracyView   *mLoginTitleView;
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
     
     
 }
@@ -563,13 +563,13 @@ if(h_generationatic24158 <= 47808){
 
         if (currentAccount.isBind) {
             
-            thirdAccountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            thirdAccountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            thirdAccountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            thirdAccountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
-            thirdAccountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
-            [contentView addSubview:thirdAccountSDKTextFiledView];
+            thirdAccountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            thirdAccountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+            thirdAccountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            thirdAccountSDKTextFiledView_IMPLVAR.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField.textColor = UIColor.blackColor;
+            thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField.enabled = NO;
+            [contentView addSubview:thirdAccountSDKTextFiledView_IMPLVAR];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -596,7 +596,7 @@ if(b_obise24168 == 83305){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
             
-            [thirdAccountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [thirdAccountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
                 make.height.mas_equalTo(VH(40));
@@ -695,15 +695,15 @@ switch (I_hydroage24176) {
                 
             }];
             
-            [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
+            [self makeAccountFiledViewStatus_MMMethodMMM:currentAccount accountView_MMMethodMMM:thirdAccountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:nil];
 
 		
             
-            hasBind_accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-            hasBind_accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            hasBind_accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            hasBind_accountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
 
 		
-            hasBind_accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            hasBind_accountSDKTextFiledView_IMPLVAR.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -834,9 +834,9 @@ switch (k_sinu24222) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            hasBind_accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-            hasBind_accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            hasBind_accountSDKTextFiledView.inputUITextField.enabled = NO;
+            hasBind_accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField.textColor = UIColor.blackColor;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField.enabled = NO;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -897,15 +897,15 @@ if(f_guy24227 + 991 + 51 - 229 / 964 - 391 + 943 < 96878){
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
             
-            [contentView addSubview:hasBind_accountSDKTextFiledView];
+            [contentView addSubview:hasBind_accountSDKTextFiledView_IMPLVAR];
             
-            [hasBind_accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [hasBind_accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
-                make.height.mas_equalTo(thirdAccountSDKTextFiledView);
+                make.height.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR);
 
-                make.top.mas_equalTo(thirdAccountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(thirdAccountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
 
 		
                 
@@ -913,11 +913,11 @@ if(f_guy24227 + 991 + 51 - 229 / 964 - 391 + 943 < 96878){
 
 		
             
-            hasBind_accountSDKTextFiledView.inputUITextField.text = currentAccount.loginId;
+            hasBind_accountSDKTextFiledView_IMPLVAR.inputUITextField.text = currentAccount.loginId;
             
         }else{
             
-            accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+            accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -966,7 +966,7 @@ if(p_situation24263 > 2391){
 
 
 		
-            accountSDKTextFiledView.moreAccountBtn.hidden = YES;
+            accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -991,14 +991,14 @@ if(p_situation24263 > 2391){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            accountSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            accountSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            accountSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
+            accountSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            accountSDKTextFiledView_IMPLVAR.inputUITextField.textColor = UIColor.blackColor;
+            accountSDKTextFiledView_IMPLVAR.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_smail_icon2];
 
 		
-            [contentView addSubview:accountSDKTextFiledView];
+            [contentView addSubview:accountSDKTextFiledView_IMPLVAR];
             
-            [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
@@ -1039,7 +1039,7 @@ if(p_situation24263 > 2391){
             
             
             
-            pwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+            pwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1058,7 +1058,7 @@ if(W_caudic24315 + 153 + 887 - 6 - 308 - 797 - 153 == 12029){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            pwdSDKTextFiledView.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
+            pwdSDKTextFiledView_IMPLVAR.lableIconImageView.image = [UIImage res_imageNamed_MMMethodMMM:mw_passowrd_icon2];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1093,18 +1093,18 @@ if(A_hisism24325 > 81562){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            pwdSDKTextFiledView.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
-            pwdSDKTextFiledView.inputUITextField.textColor = UIColor.blackColor;
-            [contentView addSubview:pwdSDKTextFiledView];
+            pwdSDKTextFiledView_IMPLVAR.layer.borderColor = ColorHex(wwwww_tag_wwwww__CC_606060).CGColor;
+            pwdSDKTextFiledView_IMPLVAR.inputUITextField.textColor = UIColor.blackColor;
+            [contentView addSubview:pwdSDKTextFiledView_IMPLVAR];
             
-            [pwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [pwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.mas_equalTo(titleView);
                 make.trailing.mas_equalTo(titleView);
 
 		
-                make.height.mas_equalTo(accountSDKTextFiledView);
+                make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR);
 
-                make.top.mas_equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+                make.top.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
                 
             }];
             
@@ -1115,8 +1115,8 @@ if(A_hisism24325 > 81562){
 		
             
             [bindTipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.mas_equalTo(pwdSDKTextFiledView);
-                make.trailing.mas_equalTo(pwdSDKTextFiledView);
+                make.leading.mas_equalTo(pwdSDKTextFiledView_IMPLVAR);
+                make.trailing.mas_equalTo(pwdSDKTextFiledView_IMPLVAR);
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -1194,7 +1194,7 @@ switch (V_caliding24327) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-                make.top.equalTo(pwdSDKTextFiledView.mas_bottom).mas_offset(VH(6));
+                make.top.equalTo(pwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(6));
                 
             }];
             
@@ -1509,10 +1509,10 @@ if(R_toxfundair24409 * 100 + 449 > 12754){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView pwdView_MMMethodMMM:nil];
+    [ScoreaireCountryaneityView makeAccountFiledViewStatus_MMMethodMMM:tempAccountModel accountView_MMMethodMMM:thirdAccountSDKTextFiledView_IMPLVAR pwdView_MMMethodMMM:nil];
 
 		
-    thirdAccountSDKTextFiledView.inputUITextField.enabled = NO;
+    thirdAccountSDKTextFiledView_IMPLVAR.inputUITextField.enabled = NO;
 
 		
 }
@@ -1697,7 +1697,7 @@ switch (D_allan24441) {
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-            if (accountSDKTextFiledView) {
+            if (accountSDKTextFiledView_IMPLVAR) {
                 [self bindAccount_MMMethodMMM];
 
 		
@@ -1720,10 +1720,10 @@ switch (D_allan24441) {
 {
     
     
-    NSString *account = [accountSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *account = [accountSDKTextFiledView_IMPLVAR.inputUITextField.text trim_MMMethodMMM];
 
 		
-    NSString *password = [pwdSDKTextFiledView.inputUITextField.text trim_MMMethodMMM];
+    NSString *password = [pwdSDKTextFiledView_IMPLVAR.inputUITextField.text trim_MMMethodMMM];
 
 		
   

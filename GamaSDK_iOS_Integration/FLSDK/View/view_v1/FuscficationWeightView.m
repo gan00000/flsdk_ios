@@ -13,12 +13,12 @@
 
 @implementation FuscficationWeightView
 {
-    PetoriumExecutiveView *accountSDKTextFiledView;
-    PetoriumExecutiveView *passwordSDKTextFiledView;
-    PetoriumExecutiveView *passwordAgainSDKTextFiledView;
-    UIButton *regAccountBtn; 
-    LaxlegalantOwneracyView   *mLoginTitleView;
-    int phoneCountdown;
+    PetoriumExecutiveView *accountSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *passwordSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *passwordAgainSDKTextFiledView_IMPLVAR;
+    UIButton *regAccountBtn_IMPLVAR; 
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
+    int phoneCountdown_IMPLVAR;
     
     
 }
@@ -200,11 +200,11 @@ if(V_dodecist20727 >= 81298){
         
        
         
-        accountSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
-        accountSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:accountSDKTextFiledView];
+        accountSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Account)];
+        accountSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+        [self addSubview:accountSDKTextFiledView_IMPLVAR];
         
-        [accountSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [accountSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.top.equalTo(self);
 
@@ -234,21 +234,21 @@ if(V_dodecist20727 >= 81298){
         
         
         
-        passwordSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
+        passwordSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password)];
 
 		
-        [self addSubview:passwordSDKTextFiledView];
+        [self addSubview:passwordSDKTextFiledView_IMPLVAR];
 
 		
         
-        [passwordSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [passwordSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(accountSDKTextFiledView.mas_bottom).mas_offset(VH(22));
-            make.leading.mas_equalTo(accountSDKTextFiledView.mas_leading);
+            make.top.equalTo(accountSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(22));
+            make.leading.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_leading);
 
 		
-            make.trailing.mas_equalTo(accountSDKTextFiledView.mas_trailing);
-            make.height.mas_equalTo(accountSDKTextFiledView.mas_height);
+            make.trailing.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_trailing);
+            make.height.mas_equalTo(accountSDKTextFiledView_IMPLVAR.mas_height);
 
 		
         }];
@@ -355,19 +355,19 @@ switch (l_juniorbring20773) {
     
         [self addSubview:tipsUILabel];
         [tipsUILabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.trailing.equalTo(accountSDKTextFiledView);
-            make.top.mas_equalTo(passwordSDKTextFiledView.mas_bottom).offset(8);
+            make.leading.trailing.equalTo(accountSDKTextFiledView_IMPLVAR);
+            make.top.mas_equalTo(passwordSDKTextFiledView_IMPLVAR.mas_bottom).offset(8);
     
         }];
         
         
-        regAccountBtn = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_erraneous_styleward fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
-        [regAccountBtn.layer setCornerRadius:VH(25)];
-        regAccountBtn.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
-        [self addSubview:regAccountBtn];
+        regAccountBtn_IMPLVAR = [AstrLegalel initBtnWithTitleText_MMMethodMMM:wwwww_tag_wwwww_erraneous_styleward fontSize_MMMethodMMM:FS(17) textColor_MMMethodMMM:[UIColor whiteColor] tag_MMMethodMMM:kRegisterAccountActTag selector:@selector(registerViewBtnAction_MMMethodMMM:) target_MMMethodMMM:self];
+        [regAccountBtn_IMPLVAR.layer setCornerRadius:VH(25)];
+        regAccountBtn_IMPLVAR.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_F94925];
+        [self addSubview:regAccountBtn_IMPLVAR];
         
-        [regAccountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.trailing.equalTo(accountSDKTextFiledView);
+        [regAccountBtn_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.trailing.equalTo(accountSDKTextFiledView_IMPLVAR);
             make.top.equalTo(tipsUILabel.mas_bottom).mas_offset(VH(34));
             make.height.mas_equalTo(VH(50));
         }];
@@ -451,7 +451,7 @@ switch (l_juniorbring20773) {
         case kRegisterAccountActTag:
         {
             SDK_LOG(wwwww_tag_wwwww_kRegisterAccountActTag);
-            NSString *accountName = accountSDKTextFiledView.inputUITextField.text;
+            NSString *accountName = accountSDKTextFiledView_IMPLVAR.inputUITextField.text;
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -471,7 +471,7 @@ switch (l_juniorbring20773) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-            NSString *pwd = passwordSDKTextFiledView.inputUITextField.text;
+            NSString *pwd = passwordSDKTextFiledView_IMPLVAR.inputUITextField.text;
             
             [self endEditing:YES];
             if (![BeyondaceousCommunityic validUserName_MMMethodMMM:accountName]) {

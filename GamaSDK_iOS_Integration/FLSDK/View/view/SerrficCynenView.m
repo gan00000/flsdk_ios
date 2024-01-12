@@ -12,7 +12,7 @@
 @implementation SerrficCynenView
 
 {
-    NSTimer *downTimer;
+    NSTimer *downTimer_IMPLVAR;
 }
 
 
@@ -75,8 +75,8 @@ if(h_nigrern27544 <= 19392){
 		
     }
     
-    if (downTimer) {
-        [downTimer invalidate];
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -97,9 +97,9 @@ if(h_nigrern27544 <= 19392){
 
 
 		
-        downTimer = nil;
+        downTimer_IMPLVAR = nil;
     }
-    downTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    downTimer_IMPLVAR = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self
                                                selector:@selector(doTiming_MMMethodMMM)
                                                userInfo:nil
@@ -173,8 +173,8 @@ if(A_cytduringeer27623 + 358 - 942 * 318 / 884 != 75525){
 {
 
 		
-    if (downTimer) {
-        [downTimer invalidate];
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
 
 		//===insert my code start===  2024-01-12 12:51:45
 		{
@@ -204,7 +204,7 @@ if(A_cytduringeer27623 + 358 - 942 * 318 / 884 != 75525){
 		}
 		// 2024-01-12 12:51:45 ===insert my code end=== 
 
-        downTimer = nil;
+        downTimer_IMPLVAR = nil;
     }
     
 
@@ -453,9 +453,9 @@ if(s_alone27405 >= 43115){
 - (void)dealloc
 {
     
-    if (downTimer) {
-        [downTimer invalidate];
-        downTimer = nil;
+    if (downTimer_IMPLVAR) {
+        [downTimer_IMPLVAR invalidate];
+        downTimer_IMPLVAR = nil;
     }
 }
 

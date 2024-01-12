@@ -12,14 +12,14 @@
 @implementation FivewiseFesssiveView
 
 {
-    PetoriumExecutiveView *oldPwdSDKTextFiledView;
-    PetoriumExecutiveView *newPwdSDKTextFiledView;
-    PetoriumExecutiveView *againPwdSDKTextFiledView;
+    PetoriumExecutiveView *oldPwdSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *newPwdSDKTextFiledView_IMPLVAR;
+    PetoriumExecutiveView *againPwdSDKTextFiledView_IMPLVAR;
     
     
     
-    LaxlegalantOwneracyView   *mLoginTitleView;
-    UIButton *getVfCodeBtn;
+    LaxlegalantOwneracyView   *mLoginTitleView_IMPLVAR;
+    UIButton *getVfCodeBtn_IMPLVAR;
     
     
 }
@@ -39,14 +39,14 @@
         
         
         
-        mLoginTitleView = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_change_pwd) hander_MMMethodMMM:^(NSInteger) {
+        mLoginTitleView_IMPLVAR = [[LaxlegalantOwneracyView alloc] initViewWithTitle_MMMethodMMM:GetString(wwwww_tag_wwwww_text_change_pwd) hander_MMMethodMMM:^(NSInteger) {
             
             [self.delegate goBackBtn_MMMethodMMM:self backCount_MMMethodMMM:1 fromPage_MMMethodMMM:(CURRENT_PAGE_TYPE_CHANGE_PWD) toPage_MMMethodMMM:(CURRENT_PAGE_TYPE_WELCOME_BACK)];
         }];
         
         
-        [self addSubview:mLoginTitleView];
-        [mLoginTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self addSubview:mLoginTitleView_IMPLVAR];
+        [mLoginTitleView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.mas_top).mas_offset(VH(MARGIN_TOP));
             make.leading.trailing.mas_equalTo(self);
 
@@ -145,13 +145,13 @@ switch (t_onety16185) {
         
         
         
-        oldPwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Old)];
-        oldPwdSDKTextFiledView.moreAccountBtn.hidden = YES;
-        [self addSubview:oldPwdSDKTextFiledView];
+        oldPwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Old)];
+        oldPwdSDKTextFiledView_IMPLVAR.moreAccountBtn.hidden = YES;
+        [self addSubview:oldPwdSDKTextFiledView_IMPLVAR];
 
 		
         
-        [oldPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [oldPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(self).mas_offset(40);
 
 		//===insert my code start===  2024-01-12 12:51:44
@@ -213,7 +213,7 @@ if(b_viscerseewise16192 - 743 - 707 <= 35856){
 		
             make.height.mas_equalTo(VH(40));
 
-            make.top.equalTo(mLoginTitleView.mas_bottom).mas_offset(VH(25));
+            make.top.equalTo(mLoginTitleView_IMPLVAR.mas_bottom).mas_offset(VH(25));
 
 		
             
@@ -221,25 +221,25 @@ if(b_viscerseewise16192 - 743 - 707 <= 35856){
         
         
         
-        newPwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
-        [self addSubview:newPwdSDKTextFiledView];
+        newPwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_New)];
+        [self addSubview:newPwdSDKTextFiledView_IMPLVAR];
         
-        [newPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(oldPwdSDKTextFiledView);
+        [newPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
 
 		
-            make.trailing.mas_equalTo(oldPwdSDKTextFiledView);
-            make.height.mas_equalTo(oldPwdSDKTextFiledView);
+            make.trailing.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
 
 		
 
-            make.top.equalTo(oldPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+            make.top.equalTo(oldPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
             
         }];
         
         
         
-        againPwdSDKTextFiledView = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
+        againPwdSDKTextFiledView_IMPLVAR = [[PetoriumExecutiveView alloc] initViewWithType_MMMethodMMM:(SDKTextFiledView_Type_Password_Again)];
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -265,13 +265,13 @@ switch (f_deep16208) {
 		}
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
-        [self addSubview:againPwdSDKTextFiledView];
+        [self addSubview:againPwdSDKTextFiledView_IMPLVAR];
         
-        [againPwdSDKTextFiledView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.mas_equalTo(oldPwdSDKTextFiledView);
-            make.trailing.mas_equalTo(oldPwdSDKTextFiledView);
-            make.height.mas_equalTo(oldPwdSDKTextFiledView);
-            make.top.equalTo(newPwdSDKTextFiledView.mas_bottom).mas_offset(VH(15));
+        [againPwdSDKTextFiledView_IMPLVAR mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
+            make.trailing.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
+            make.height.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
+            make.top.equalTo(newPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(15));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -366,7 +366,7 @@ switch (f_deep16208) {
         
         [okBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(againPwdSDKTextFiledView.mas_bottom).mas_offset(VH(32));
+            make.top.equalTo(againPwdSDKTextFiledView_IMPLVAR.mas_bottom).mas_offset(VH(32));
 
 		//===insert my code start===  2024-01-12 12:51:44
 		{
@@ -383,7 +383,7 @@ switch (f_deep16208) {
 
 
 		
-            make.width.mas_equalTo(oldPwdSDKTextFiledView);
+            make.width.mas_equalTo(oldPwdSDKTextFiledView_IMPLVAR);
 
 		
             make.height.mas_equalTo(VH(50));
@@ -641,10 +641,10 @@ switch (a_quadragesimprofessionalfaction16320) {
 		// 2024-01-12 12:51:44 ===insert my code end=== 
 
     
-    NSString *oldPwd = oldPwdSDKTextFiledView.inputUITextField.text;
+    NSString *oldPwd = oldPwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
     
-    NSString *newPwd = newPwdSDKTextFiledView.inputUITextField.text;
-    NSString *againPwd = againPwdSDKTextFiledView.inputUITextField.text;
+    NSString *newPwd = newPwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
+    NSString *againPwd = againPwdSDKTextFiledView_IMPLVAR.inputUITextField.text;
 
 		
     
