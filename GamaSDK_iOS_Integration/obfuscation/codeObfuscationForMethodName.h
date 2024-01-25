@@ -494,5 +494,20 @@
 #define     isShowTerm_MMMethodMMM          consortJustice
 #define     setShowTerm_MMMethodMMM          bawlWay
 #define    showTermViewWithBlock_MMMethodMMM          filmSwine
+#define loadRequest_MMMethodMMM             corkDomeRequest
+#define closeBtAction_MMMethodMMM             corkDomeBtAction
+#define getDisplayName_MMMethodMMM             getDisplayName
+#define createGradientLayerWithRadius_MMMethodMMM             createGradientLayerWithRadius
+#define decryptContent_MMMethodMMM          decryptMsg
+#define encryptContent_MMMethodMMM          encryptMsg
+#define getMd5ResFileName_MMMethodMMM          getMd5ResFileName
+#define isShowTitle_MMMethodMMM          isShowTitle
+#define initWithWebLayoutIsShowTitle_MMMethodMMM          initWithWebLayoutIsShowTitle
+#define naverLoginAndThirdRequest_MMMethodMMM          naverLoginAndThirdRequest
+#define startLoginWithKey_MMMethodMMM   startLoginWithKey
+#define consumerSecret_MMMethodMMM      consumerSecret
+#define appName_MMMethodMMM     appName
+#define callback_MMMethodMMM    callback
+
 
 #endif  /* codeObfuscation_h */

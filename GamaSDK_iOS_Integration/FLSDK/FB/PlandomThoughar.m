@@ -1922,7 +1922,7 @@ if(p_traction5324 * 714 - 985 - 771 < 36680){
 	return s_18;
 }
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
-    SDK_LOG(@"share didFailWithError_MMMethodMMM: %@",error);
+    SDK_LOG(@"share didFailWithError: %@",error);
 
 		
 		{
