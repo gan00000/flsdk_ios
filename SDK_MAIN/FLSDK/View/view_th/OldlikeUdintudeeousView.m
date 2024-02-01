@@ -292,6 +292,8 @@ if(K_proximably26577 <= 72010){
     
     InvestmentlySidsingitude *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
     if (mConfigModel.deleteAccount) {
+        
+        [self addDeleteAccountView_MMMethodMMM];
     }
 
     UIView *myView = [[UIView alloc] init];
@@ -1428,20 +1430,20 @@ if(i_vivreligioussure26882 >= 68126){
 {
     UIView *deleteView = [[UIView alloc] init];
     deleteView.backgroundColor = UIColor.whiteColor;
-    deleteView.layer.cornerRadius = VW(4);
+    deleteView.layer.cornerRadius = VW(8);
     
     [self addSubview:deleteView];
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-20));
+        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
         make.centerX.equalTo(self);
     }];
     
-    UIImageView *deleteIV = [LeukastBetweenate initImageViewWithImage_MMMethodMMM:mw_delete_icon];
+    UIImageView *deleteIV = [LeukastBetweenate initImageViewWithImage_MMMethodMMM:icon_close_3];
     [deleteView addSubview:deleteIV];
     [deleteIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteView).mas_offset(VW(20));
-        make.top.mas_equalTo(deleteView).mas_offset(VW(6));
+        make.leading.mas_equalTo(deleteView).mas_offset(VW(30));
+        make.top.mas_equalTo(deleteView).mas_offset(VW(10));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
@@ -1530,7 +1532,7 @@ if(B_legaire26897 + 595 / 804 * 824 * 869 / 17 > 58068){
 		}
 		//====insert my code end===  2023-12-28 22:54:24
 
-        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-6));
+        make.bottom.mas_equalTo(deleteView).mas_offset(VW(-10));
         make.centerY.equalTo(deleteView);
         make.width.height.mas_equalTo(VW(15));
     }];
@@ -1592,8 +1594,8 @@ if(t_administrationibility26913 < 84688){
 		//====insert my code end===  2023-12-28 22:54:24
 
     [delLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(6));
-        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-20));
+        make.leading.mas_equalTo(deleteIV.mas_trailing).mas_offset(VW(10));
+        make.trailing.mas_equalTo(deleteView).mas_offset(VW(-30));
 
 		//====insert my code start===  2023-12-28 22:54:24
 		{
