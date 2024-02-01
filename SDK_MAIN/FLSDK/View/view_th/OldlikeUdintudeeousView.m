@@ -287,14 +287,6 @@ if(K_proximably26577 <= 72010){
 -(void)addView_MMMethodMMM
 {
     
-    
-    
-    
-    InvestmentlySidsingitude *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
-    if (mConfigModel.deleteAccount) {
-        
-        [self addDeleteAccountView_MMMethodMMM];
-    }
 
     UIView *myView = [[UIView alloc] init];
     [self addSubview:myView];
@@ -309,6 +301,13 @@ if(K_proximably26577 <= 72010){
         make.width.mas_equalTo(VW(374));
         make.height.mas_equalTo(VH(375));
     }];
+    
+    InvestmentlySidsingitude *mConfigModel = SDK_DATA.mConfigModel_MMMPRO;
+//    mConfigModel.visitorLogin = YES;
+    if (mConfigModel.deleteAccount) {
+        
+        [self addDeleteAccountView_MMMethodMMM];
+    }
     
     UIView *tabView = [[UIView alloc] init];
 
@@ -1437,11 +1436,12 @@ if(i_vivreligioussure26882 >= 68126){
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
         if (IS_PORTRAIT) {
             make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
+            make.centerX.equalTo(self);
         }else{
-            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-30));
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
+            make.trailing.mas_equalTo(self.mas_trailing).mas_offset(VH(-80));
         }
         
-        make.centerX.equalTo(self);
     }];
     
     UIImageView *deleteIV = [LeukastBetweenate initImageViewWithImage_MMMethodMMM:icon_close_3];
