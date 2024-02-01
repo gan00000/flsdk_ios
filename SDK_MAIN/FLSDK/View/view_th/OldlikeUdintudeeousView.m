@@ -1435,7 +1435,12 @@ if(i_vivreligioussure26882 >= 68126){
     [self addSubview:deleteView];
     
     [deleteView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
+        if (IS_PORTRAIT) {
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-60));
+        }else{
+            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(VH(-30));
+        }
+        
         make.centerX.equalTo(self);
     }];
     
