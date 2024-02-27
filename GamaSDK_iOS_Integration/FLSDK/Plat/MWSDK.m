@@ -32,6 +32,8 @@
 #import "ExposureController.h"
 #import "ExposureHorControllerViewController.h"
 
+#import "EPFDragView_TW.h"
+
 #ifdef SDK_KR
 #import "NaverDelegate.h"
 #endif
@@ -1087,5 +1089,12 @@
     
 }
 
+-(void)showFloatView{
+    
+    EPFDragView_TW * dragView = [[EPFDragView_TW alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
+//    dragView.gameLandscape = PF_DATA.gameIsLandscape;
+    [dragView showDragViewToBaseView:appTopViewController.view];
+    
+}
 
 @end

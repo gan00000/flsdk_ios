@@ -216,5 +216,7 @@ completionHandler:(SDKPayBlock) handler;
 /// @param notifyId  通知标识 id，用于更新、删除
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
+-(void)showFloatView;
+
 @end
 
