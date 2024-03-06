@@ -117,7 +117,7 @@
             FloatConfigData *xFloatConfigData = [FloatConfigData yy_modelWithDictionary:responseDict];
             if (xFloatConfigData) {
                 
-                NSArray<FloatMenu *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenu class] json:responseDict[@"menuList"]];
+                NSArray<FloatMenuMode *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenuMode class] json:responseDict[@"menuList"]];
                 xFloatConfigData.menuList = xFloatMenuArr;
                 
                 SDK_DATA.floatConfigData = xFloatConfigData;
@@ -197,14 +197,14 @@
             
             FloatMenuResp *xFloatMenuResp = [FloatMenuResp yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data]];
 //            FloatMenu *xFloatMenu = [NSArray yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
-            NSArray<FloatMenu *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenu class] json:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
+            NSArray<FloatMenuMode *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenuMode class] json:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
             xFloatMenuResp.menuList = xFloatMenuArr;
             SDK_DATA.floatShowMenuList = [NSMutableArray array];
             if (xFloatMenuResp && xFloatMenuResp.menuList && SDK_DATA.floatConfigData && SDK_DATA.floatConfigData.menuList) {
-                for (FloatMenu *cfgMenu in SDK_DATA.floatConfigData.menuList) {
-                    for (FloatMenu *mMenu in xFloatMenuResp.menuList) {//以配置文件对象字段为准
+                for (FloatMenuMode *cfgMenu in SDK_DATA.floatConfigData.menuList) {
+                    for (FloatMenuMode *mMenu in xFloatMenuResp.menuList) {//以配置文件对象字段为准
                         if ([cfgMenu.code isEqualToString:mMenu.code]) {
-                            [SDK_DATA.floatShowMenuList addObject:mMenu];
+                            [SDK_DATA.floatShowMenuList addObject:cfgMenu];
                             break;;
                         }
                     }

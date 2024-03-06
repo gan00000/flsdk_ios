@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FloatMenu.h"
+#import "FloatMenuMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *buttonIcon;
 @property (nonatomic, copy) NSString *gameIcon;
 
-@property (nonatomic, strong) NSArray<FloatMenu *> *menuList;
+@property (nonatomic, strong) NSArray<FloatMenuMode *> *menuList;
 
 @end
 

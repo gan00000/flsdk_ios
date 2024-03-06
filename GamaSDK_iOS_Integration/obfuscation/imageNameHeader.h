@@ -319,6 +319,10 @@
 #define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
 #define XIB_MenuCell   @"MenuCell"
 
+#define XIB_FloatContentViewController   @"FloatContentViewController"
+#define XIB_PersionCenterHorViewController   @"PersionCenterHorViewController"
+#define XIB_FloatMenuCell   @"FloatMenuCell"
+
 #else
 
 //第一套

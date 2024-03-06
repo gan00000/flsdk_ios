@@ -11,6 +11,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersionCenterHorViewController">
             <connections>
+                <outlet property="accountValueLabel" destination="IaA-SS-7YG" id="dY6-Po-Wb0"/>
+                <outlet property="changePwdBtn" destination="eBT-U7-GtS" id="D9J-ll-ROd"/>
+                <outlet property="delAccountBtn" destination="ZjY-ag-lCW" id="wp3-B0-qFe"/>
+                <outlet property="gameIconIV" destination="aRo-ib-Xpe" id="tfb-zd-9Ax"/>
+                <outlet property="gameNameValueLabel" destination="DIg-Eb-JFq" id="iP8-rs-gfO"/>
+                <outlet property="roleNameValueLabel" destination="JIs-A6-hXN" id="rMs-e4-iN2"/>
+                <outlet property="serverNameValueLabel" destination="puA-8G-eg5" id="cxv-nb-RAV"/>
+                <outlet property="switchAccountBtn" destination="e14-nx-EHs" id="cVz-CJ-sJN"/>
+                <outlet property="uidValueLabel" destination="Yxj-cK-KSV" id="eLL-Od-KTP"/>
+                <outlet property="updateAccountBtn" destination="KJ6-NF-HZX" id="sWe-p5-LqD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -97,11 +107,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-NF-HZX">
-                            <rect key="frame" x="363" y="134" width="80" height="25"/>
+                            <rect key="frame" x="323" y="134" width="120" height="30"/>
                             <color key="backgroundColor" red="0.23137254901960785" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="S8w-BC-Da7"/>
-                                <constraint firstAttribute="width" constant="80" id="n1Y-sD-M6K"/>
+                                <constraint firstAttribute="height" constant="30" id="S8w-BC-Da7"/>
+                                <constraint firstAttribute="width" constant="120" id="n1Y-sD-M6K"/>
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="升級帳號">

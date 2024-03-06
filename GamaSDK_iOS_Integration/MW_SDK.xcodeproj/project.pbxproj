@@ -1598,20 +1598,20 @@
 		03A19E1F2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
 		03A19E202B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
 		03A19E212B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
-		03A19E242B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E252B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E262B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E272B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E282B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E292B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E2A2B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
-		03A19E2B2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E2C2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E2D2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E2E2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E2F2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E302B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
-		03A19E312B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E242B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E252B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E262B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E272B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E282B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E292B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E2A2B9857AD00F0C146 /* FloatMenuMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenuMode.h */; };
+		03A19E2B2B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E2C2B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E2D2B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E2E2B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E2F2B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E302B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
+		03A19E312B9857AD00F0C146 /* FloatMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenuMode.m */; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
 		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
@@ -1812,6 +1812,30 @@
 		03ED36062B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
 		03ED36072B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
 		03ED36082B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED360C2B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED360D2B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED360E2B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED360F2B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED36102B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED36112B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED36122B9895A10064C9D3 /* FloatMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED36092B9895A10064C9D3 /* FloatMenuCell.h */; };
+		03ED36132B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36142B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36152B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36162B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36172B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36182B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED36192B9895A10064C9D3 /* FloatMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */; };
+		03ED361A2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED361B2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED361C2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED361D2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED361E2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED361F2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED36202B9895A10064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
+		03ED36212B989F700064C9D3 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03ED36222B989F770064C9D3 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03ED36232B989F870064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
 		03F1B7FD2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
 		03F1B7FE2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
 		03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
@@ -2039,6 +2063,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 03CA721A29D5698400098979;
 			remoteInfo = MWSDK_VN;
+		};
+		03ED36242B989FE30064C9D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0337751E2AEA675D00D19EF5;
+			remoteInfo = MWRES;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2434,8 +2465,8 @@
 		03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersionCenterHorViewController.xib; sourceTree = "<group>"; };
 		03A19E122B9855D000F0C146 /* FloatMenuResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenuResp.h; sourceTree = "<group>"; };
 		03A19E132B9855D000F0C146 /* FloatMenuResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenuResp.m; sourceTree = "<group>"; };
-		03A19E222B9857AD00F0C146 /* FloatMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenu.h; sourceTree = "<group>"; };
-		03A19E232B9857AD00F0C146 /* FloatMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenu.m; sourceTree = "<group>"; };
+		03A19E222B9857AD00F0C146 /* FloatMenuMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenuMode.h; sourceTree = "<group>"; };
+		03A19E232B9857AD00F0C146 /* FloatMenuMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenuMode.m; sourceTree = "<group>"; };
 		03AB50DE29B757F900D86AE6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wantang_xlzsg.json; sourceTree = "<group>"; };
@@ -2533,6 +2564,9 @@
 		03EA360A2850989900723340 /* MainHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeView.h; sourceTree = "<group>"; };
 		03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatConfigData.h; sourceTree = "<group>"; };
 		03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatConfigData.m; sourceTree = "<group>"; };
+		03ED36092B9895A10064C9D3 /* FloatMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenuCell.h; sourceTree = "<group>"; };
+		03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenuCell.m; sourceTree = "<group>"; };
+		03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatMenuCell.xib; sourceTree = "<group>"; };
 		03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPFDragView_TW.h; sourceTree = "<group>"; };
 		03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPFDragView_TW.m; sourceTree = "<group>"; };
 		03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropImageTW.m"; sourceTree = "<group>"; };
@@ -4210,8 +4244,8 @@
 				033774FC2AE9080E00D19EF5 /* SwitchResp.m */,
 				03A19E122B9855D000F0C146 /* FloatMenuResp.h */,
 				03A19E132B9855D000F0C146 /* FloatMenuResp.m */,
-				03A19E222B9857AD00F0C146 /* FloatMenu.h */,
-				03A19E232B9857AD00F0C146 /* FloatMenu.m */,
+				03A19E222B9857AD00F0C146 /* FloatMenuMode.h */,
+				03A19E232B9857AD00F0C146 /* FloatMenuMode.m */,
 				03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */,
 				03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */,
 			);
@@ -4285,6 +4319,9 @@
 				0337E0132AE104CC00F171B1 /* SocialBannerView.m */,
 				0337750B2AEA51DA00D19EF5 /* MWWebView.h */,
 				0337750C2AEA51DA00D19EF5 /* MWWebView.m */,
+				03ED36092B9895A10064C9D3 /* FloatMenuCell.h */,
+				03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */,
+				03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4511,8 +4548,9 @@
 				03F1B82C2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775012AE9080E00D19EF5 /* SwitchResp.h in Headers */,
-				03A19E282B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E282B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
+				03ED36102B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
 				03F1B8012B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
@@ -4535,6 +4573,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ED360C2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				0349F8BF2AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
@@ -4563,7 +4602,7 @@
 				030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
 				03A19DFD2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
-				03A19E242B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E242B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */,
 				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
 				0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */,
@@ -4582,7 +4621,7 @@
 			files = (
 				0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */,
 				03F1B8452B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
-				03A19E252B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E252B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
 				03F1B8302B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
@@ -4608,6 +4647,7 @@
 				0386138E2938906000CC9C44 /* AccountLoginViewV2.h in Headers */,
 				038612E529388F8900CC9C44 /* PayData.h in Headers */,
 				038612E629388F8900CC9C44 /* ViewUtil.h in Headers */,
+				03ED360D2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03A19E152B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				0349F8C02AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				038612E929388F8900CC9C44 /* LoginData.h in Headers */,
@@ -4649,8 +4689,9 @@
 				03F1B82A2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
 				033774FF2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
-				03A19E262B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E262B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
+				03ED360E2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
 				03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
@@ -4673,6 +4714,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ED36122B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03A19E032B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
 				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
@@ -4710,7 +4752,7 @@
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
-				03A19E2A2B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E2A2B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				03F1B8032B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
@@ -4743,8 +4785,9 @@
 				03F1B82B2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */,
-				03A19E272B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E272B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
+				03ED360F2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
 				03F1B8002B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
@@ -4781,6 +4824,7 @@
 				03A19E022B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				0337E0192AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				03ED36002B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
+				03ED36112B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */,
 				033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */,
 				03F1B82D2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
@@ -4808,7 +4852,7 @@
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
 				0349F8F12AD7F9580015750A /* ExposureController.h in Headers */,
-				03A19E292B9857AD00F0C146 /* FloatMenu.h in Headers */,
+				03A19E292B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				0349F8DC2AD7F3860015750A /* MenuCell.h in Headers */,
 				03CA722E29D5698400098979 /* BasePopupView.h in Headers */,
 				033775022AE9080E00D19EF5 /* SwitchResp.h in Headers */,
@@ -4982,6 +5026,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				03ED36252B989FE30064C9D3 /* PBXTargetDependency */,
 				031533A02A6FAAF3008041CC /* PBXTargetDependency */,
 			);
 			name = SDK_DEMO_KR;
@@ -5189,9 +5234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ED36212B989F700064C9D3 /* PersionCenterHorViewController.xib in Resources */,
+				03ED36222B989F770064C9D3 /* FloatContentViewController.xib in Resources */,
 				033775232AEA67A200D19EF5 /* ExposureController.xib in Resources */,
 				033775242AEA67A200D19EF5 /* ExposureHorControllerViewController.xib in Resources */,
 				033775252AEA67A200D19EF5 /* MenuCell.xib in Resources */,
+				03ED36232B989F870064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5215,6 +5263,7 @@
 			files = (
 				03A19E0F2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF72B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361E2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5224,6 +5273,7 @@
 			files = (
 				03A19E0B2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF32B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361A2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5233,6 +5283,7 @@
 			files = (
 				03A19E0C2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF42B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361B2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5258,6 +5309,7 @@
 			files = (
 				03A19E0D2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF52B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361C2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5267,6 +5319,7 @@
 			files = (
 				03A19E112B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF92B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED36202B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5290,6 +5343,7 @@
 			files = (
 				03A19E0E2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF62B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361D2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5313,6 +5367,7 @@
 			files = (
 				03A19E102B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF82B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03ED361F2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5408,12 +5463,13 @@
 				03509CA129F91C8C00C840DA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				03509CA229F91C8C00C840DA /* ViewController+MASAdditions.m in Sources */,
 				03509CA329F91C8C00C840DA /* MASCompositeConstraint.m in Sources */,
-				03A19E2F2B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E2F2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				03509CA429F91C8C00C840DA /* MASConstraintMaker.m in Sources */,
 				03509CA529F91C8C00C840DA /* MASLayoutConstraint.m in Sources */,
 				03509CA629F91C8C00C840DA /* NSArray+MASAdditions.m in Sources */,
 				03509CA729F91C8C00C840DA /* View+MASAdditions.m in Sources */,
 				03509CA829F91C8C00C840DA /* MASConstraint.m in Sources */,
+				03ED36172B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				03509CA929F91C8C00C840DA /* MASViewConstraint.m in Sources */,
 				03509CAA29F91C8C00C840DA /* MASViewAttribute.m in Sources */,
 				03509CAB29F91C8C00C840DA /* UIImage+WebP.m in Sources */,
@@ -5566,7 +5622,7 @@
 				037C6F532875ACD70041EC34 /* MASLayoutConstraint.m in Sources */,
 				037C6F542875ACD70041EC34 /* NSArray+MASAdditions.m in Sources */,
 				037C6F552875ACD70041EC34 /* View+MASAdditions.m in Sources */,
-				03A19E2B2B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E2B2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				037C6F562875ACD70041EC34 /* MASConstraint.m in Sources */,
 				037C6F572875ACD70041EC34 /* MASViewConstraint.m in Sources */,
 				03A19DEC2B97048900F0C146 /* FloatContentViewController.m in Sources */,
@@ -5577,6 +5633,7 @@
 				037C6F5B2875ACD70041EC34 /* SDWebImageDecoder.m in Sources */,
 				037C6F5C2875ACD70041EC34 /* UIImageView+HighlightedWebCache.m in Sources */,
 				03C05CAA28AE5F6B0060F4CD /* BasePopupView.m in Sources */,
+				03ED36132B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				037C6F5D2875ACD70041EC34 /* SDWebImageDownloader.m in Sources */,
 				037C6F5E2875ACD70041EC34 /* UIImage+GIF.m in Sources */,
 				030FAA6828A1FE5800709536 /* TermsViewV2.m in Sources */,
@@ -5709,12 +5766,13 @@
 				038612F129388F8900CC9C44 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				038612F229388F8900CC9C44 /* ViewController+MASAdditions.m in Sources */,
 				038612F329388F8900CC9C44 /* MASCompositeConstraint.m in Sources */,
-				03A19E2C2B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E2C2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				038612F429388F8900CC9C44 /* MASConstraintMaker.m in Sources */,
 				038612F529388F8900CC9C44 /* MASLayoutConstraint.m in Sources */,
 				038612F629388F8900CC9C44 /* NSArray+MASAdditions.m in Sources */,
 				038612F729388F8900CC9C44 /* View+MASAdditions.m in Sources */,
 				038612F829388F8900CC9C44 /* MASConstraint.m in Sources */,
+				03ED36142B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				038612F929388F8900CC9C44 /* MASViewConstraint.m in Sources */,
 				038612FA29388F8900CC9C44 /* MASViewAttribute.m in Sources */,
 				038612FB29388F8900CC9C44 /* UIImage+WebP.m in Sources */,
@@ -5873,12 +5931,13 @@
 				0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */,
 				0387B9EC291B8C9E001BACA8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				0387B9ED291B8C9E001BACA8 /* ViewController+MASAdditions.m in Sources */,
-				03A19E2D2B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E2D2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				0387B9EF291B8C9E001BACA8 /* MASCompositeConstraint.m in Sources */,
 				0387B9F0291B8C9E001BACA8 /* MASConstraintMaker.m in Sources */,
 				0387B9F1291B8C9E001BACA8 /* MASLayoutConstraint.m in Sources */,
 				0387B9F2291B8C9E001BACA8 /* NSArray+MASAdditions.m in Sources */,
 				0387B9F3291B8C9E001BACA8 /* View+MASAdditions.m in Sources */,
+				03ED36152B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				0387B9F4291B8C9E001BACA8 /* MASConstraint.m in Sources */,
 				0387B9F5291B8C9E001BACA8 /* MASViewConstraint.m in Sources */,
 				0387B9F6291B8C9E001BACA8 /* MASViewAttribute.m in Sources */,
@@ -6070,13 +6129,14 @@
 				0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */,
 				03F1B83C2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				0392B1F82A5BA8DC00A3E2D6 /* MyTextFiled.m in Sources */,
+				03ED36192B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */,
 				03F1B8432B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				03F1B8272B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */,
 				0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */,
-				03A19E312B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E312B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */,
 				0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */,
 				0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */,
@@ -6191,12 +6251,13 @@
 				039B2607298B555300045C53 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				039B2608298B555300045C53 /* ViewController+MASAdditions.m in Sources */,
 				039B2609298B555300045C53 /* MASCompositeConstraint.m in Sources */,
-				03A19E2E2B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E2E2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				039B260A298B555300045C53 /* MASConstraintMaker.m in Sources */,
 				039B260B298B555300045C53 /* MASLayoutConstraint.m in Sources */,
 				039B260C298B555300045C53 /* NSArray+MASAdditions.m in Sources */,
 				039B260D298B555300045C53 /* View+MASAdditions.m in Sources */,
 				039B260E298B555300045C53 /* MASConstraint.m in Sources */,
+				03ED36162B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				039B260F298B555300045C53 /* MASViewConstraint.m in Sources */,
 				039B2610298B555300045C53 /* MASViewAttribute.m in Sources */,
 				039B2611298B555300045C53 /* UIImage+WebP.m in Sources */,
@@ -6461,12 +6522,13 @@
 				03CA728929D5698400098979 /* AFNetworkReachabilityManager.m in Sources */,
 				03CA728A29D5698400098979 /* AFSecurityPolicy.m in Sources */,
 				03CA728B29D5698400098979 /* BJBaseHTTPEngine.m in Sources */,
+				03ED36182B9895A10064C9D3 /* FloatMenuCell.m in Sources */,
 				0349F8CB2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				03CA728C29D5698400098979 /* UIImage+ResBundle.m in Sources */,
 				03CA728D29D5698400098979 /* ResReader.m in Sources */,
 				03F1B8262B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				03CA728F29D5698400098979 /* SecurityUtil.m in Sources */,
-				03A19E302B9857AD00F0C146 /* FloatMenu.m in Sources */,
+				03A19E302B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				03CA729029D5698400098979 /* SdkSecurityFunction.m in Sources */,
 				033B331329D5C4BC00AE9F96 /* SDKIconTitleButton.m in Sources */,
 				03CA729129D5698400098979 /* PhoneInfoModel.m in Sources */,
@@ -6586,6 +6648,11 @@
 			isa = PBXTargetDependency;
 			target = 03CA721A29D5698400098979 /* MWSDK_VN */;
 			targetProxy = 03CA731929D569B400098979 /* PBXContainerItemProxy */;
+		};
+		03ED36252B989FE30064C9D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0337751E2AEA675D00D19EF5 /* MWRES */;
+			targetProxy = 03ED36242B989FE30064C9D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

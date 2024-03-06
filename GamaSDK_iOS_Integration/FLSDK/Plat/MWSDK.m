@@ -31,6 +31,7 @@
 
 #import "ExposureController.h"
 #import "ExposureHorControllerViewController.h"
+#import "FloatContentViewController.h"
 
 #import "EPFDragView_TW.h"
 
@@ -1103,6 +1104,12 @@
 //    dragView.gameLandscape = PF_DATA.gameIsLandscape;
     [dragView showDragViewToBaseView:appTopViewController.view];
     
+    
+    FloatContentViewController *mFloatContentViewController = [[FloatContentViewController alloc] initWithNibName:XIB_FloatContentViewController bundle:SDK_BUNDLE];
+    
+    [appTopViewController presentViewController:mFloatContentViewController animated:NO completion:^{
+        
+    }];
 }
 
 @end

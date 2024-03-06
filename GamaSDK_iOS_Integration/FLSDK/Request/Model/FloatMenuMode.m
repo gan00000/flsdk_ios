@@ -6,8 +6,8 @@
 //  Copyright © 2024 Gama. All rights reserved.
 //
 
-#import "FloatMenu.h"
+#import "FloatMenuMode.h"
 
-@implementation FloatMenu
+@implementation FloatMenuMode
 
 @end

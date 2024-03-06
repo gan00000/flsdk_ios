@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatContentViewController">
             <connections>
+                <outlet property="menuTableView" destination="j8d-eF-puR" id="pHx-Vl-Y3A"/>
+                <outlet property="mwWebView" destination="zt8-mx-Rz0" id="Irt-I4-HaA"/>
+                <outlet property="rightView" destination="wnb-yw-Az6" id="Chc-Bw-C5O"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,7 +34,19 @@
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnb-yw-Az6" userLabel="RightView">
                             <rect key="frame" x="116" y="0.0" width="352" height="330"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-mx-Rz0" userLabel="mwWeb View" customClass="MWWebView">
+                                    <rect key="frame" x="0.0" y="0.0" width="352" height="330"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="zt8-mx-Rz0" secondAttribute="trailing" id="578-3T-C9D"/>
+                                <constraint firstItem="zt8-mx-Rz0" firstAttribute="top" secondItem="wnb-yw-Az6" secondAttribute="top" id="OKS-on-yVs"/>
+                                <constraint firstAttribute="bottom" secondItem="zt8-mx-Rz0" secondAttribute="bottom" id="mF6-gj-TiV"/>
+                                <constraint firstItem="zt8-mx-Rz0" firstAttribute="leading" secondItem="wnb-yw-Az6" secondAttribute="leading" id="rUd-U1-XK7"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

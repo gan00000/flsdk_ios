@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FloatMenu.h"
+#import "FloatMenuMode.h"
 #import "BJBaseResponceModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *serverCode;
 @property (nonatomic, copy) NSString *serverName;
 
-@property (nonatomic, strong) NSArray<FloatMenu *> *menuList;
+@property (nonatomic, strong) NSArray<FloatMenuMode *> *menuList;
 
 @end
 

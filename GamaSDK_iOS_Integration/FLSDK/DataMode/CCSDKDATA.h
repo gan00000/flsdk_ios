@@ -13,6 +13,7 @@
 #import "GameUserModel.h"
 #import "UrlMode.h"
 #import "FloatConfigData.h"
+#import "FloatMenuResp.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) UrlMode *urls;
 
 @property (nonatomic,strong) FloatConfigData *floatConfigData;
-@property (nonatomic, strong) NSMutableArray<FloatMenu *> *floatShowMenuList;
+@property (nonatomic,strong) FloatMenuResp *floatMenuResp;
+@property (nonatomic, strong) NSMutableArray<FloatMenuMode *> *floatShowMenuList;
 
 @property(nonatomic, weak) id<UITextFieldDelegate> mUITextFieldDelegate;
 
