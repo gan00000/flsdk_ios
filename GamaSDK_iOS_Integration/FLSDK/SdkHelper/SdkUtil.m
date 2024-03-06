@@ -579,6 +579,19 @@
     return loginBtnDatas;
 }
 
++ (void)saveFloatConfigData_MMMethodMMM:(NSString *)cfgData
+{
+    [[NSUserDefaults standardUserDefaults] setObject:cfgData forKey:@"SDK_FloatConfigData"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (NSString *)getFloatConfigData_MMMethodMMM
+{
+    NSString *cfgData = [[NSUserDefaults standardUserDefaults] objectForKey:@"SDK_FloatConfigData"];
+    return cfgData;
+}
+
+
 + (void)savePhoneAreaInfo_MMMethodMMM:(NSArray *)numberAry
 {
     [[NSUserDefaults standardUserDefaults] setObject:numberAry forKey:SDK_PHONE_AREA_CODE];

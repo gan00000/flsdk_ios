@@ -27,6 +27,13 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)getSdkConfigWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                          errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
++(void)getFloatConfigDataWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                               errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+
++ (void)getFloatMenuDataWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                              errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 

@@ -1542,6 +1542,76 @@
 		039E6F2A29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2B29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
 		039E6F2C29D9900300890B3B /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */; };
+		03A19DE52B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DE62B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DE72B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DE82B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DE92B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DEA2B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DEB2B97048900F0C146 /* FloatContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DE22B97048900F0C146 /* FloatContentViewController.h */; };
+		03A19DEC2B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DED2B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DEE2B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DEF2B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DF02B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DF12B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DF22B97048900F0C146 /* FloatContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DE32B97048900F0C146 /* FloatContentViewController.m */; };
+		03A19DF32B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF42B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF52B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF62B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF72B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF82B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DF92B97048900F0C146 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
+		03A19DFD2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19DFE2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19DFF2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19E002B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19E012B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19E022B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19E032B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */; };
+		03A19E042B970E6600F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E052B970E6600F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E062B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E072B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E082B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E092B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E0A2B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */; };
+		03A19E0B2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E0C2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E0D2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E0E2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E0F2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E102B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E112B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
+		03A19E142B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E152B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E162B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E172B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E182B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E192B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E1A2B9855D000F0C146 /* FloatMenuResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E122B9855D000F0C146 /* FloatMenuResp.h */; };
+		03A19E1B2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E1C2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E1D2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E1E2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E1F2B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E202B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E212B9855D000F0C146 /* FloatMenuResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E132B9855D000F0C146 /* FloatMenuResp.m */; };
+		03A19E242B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E252B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E262B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E272B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E282B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E292B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E2A2B9857AD00F0C146 /* FloatMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A19E222B9857AD00F0C146 /* FloatMenu.h */; };
+		03A19E2B2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E2C2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E2D2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E2E2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E2F2B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E302B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
+		03A19E312B9857AD00F0C146 /* FloatMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A19E232B9857AD00F0C146 /* FloatMenu.m */; };
 		03AB50DF29B757F900D86AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB50DE29B757F900D86AE6 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03B5F46E2903ECEA00D1F03E /* com_wantang_xlzsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */; };
 		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
@@ -1728,6 +1798,76 @@
 		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
 		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
 		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
+		03ED35FB2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED35FD2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED35FE2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED35FF2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED36002B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED36012B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
+		03ED36022B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36032B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36042B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36052B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36062B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36072B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03ED36082B9875BC0064C9D3 /* FloatConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */; };
+		03F1B7FD2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B7FE2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B8002B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B8012B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B8022B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B8032B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
+		03F1B8042B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8052B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8062B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8072B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8082B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8092B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B80A2B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B8212B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8222B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8232B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8242B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8252B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8262B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8272B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
+		03F1B8282B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B8292B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82A2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82B2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82C2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82D2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82E2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */; };
+		03F1B82F2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8302B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8312B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8322B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8332B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8342B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8352B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */; };
+		03F1B8362B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B8372B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B8382B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B8392B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B83A2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B83B2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B83C2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */; };
+		03F1B83D2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B83E2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B83F2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B8402B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B8412B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B8422B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B8432B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */; };
+		03F1B8442B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B8452B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B8462B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B8472B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B8482B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B8492B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
+		03F1B84A2B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */; };
 		03F542B72940BC5D00F75F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411C520874A170018E1A6 /* AppDelegate.m */; };
 		03F542B82940BC5D00F75F51 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE13DC24FB6154000BDFBE /* File.swift */; };
 		03F542B92940BC5D00F75F51 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97411CC20874A170018E1A6 /* UserModel.m */; };
@@ -2286,6 +2426,16 @@
 		039E6EA829D9900200890B3B /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		039E6EA929D9900200890B3B /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleSignIn.xcframework; sourceTree = "<group>"; };
 		039E6EAA29D9900200890B3B /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GTMAppAuth.xcframework; sourceTree = "<group>"; };
+		03A19DE22B97048900F0C146 /* FloatContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatContentViewController.h; sourceTree = "<group>"; };
+		03A19DE32B97048900F0C146 /* FloatContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatContentViewController.m; sourceTree = "<group>"; };
+		03A19DE42B97048900F0C146 /* FloatContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatContentViewController.xib; sourceTree = "<group>"; };
+		03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersionCenterHorViewController.h; sourceTree = "<group>"; };
+		03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersionCenterHorViewController.m; sourceTree = "<group>"; };
+		03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersionCenterHorViewController.xib; sourceTree = "<group>"; };
+		03A19E122B9855D000F0C146 /* FloatMenuResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenuResp.h; sourceTree = "<group>"; };
+		03A19E132B9855D000F0C146 /* FloatMenuResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenuResp.m; sourceTree = "<group>"; };
+		03A19E222B9857AD00F0C146 /* FloatMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenu.h; sourceTree = "<group>"; };
+		03A19E232B9857AD00F0C146 /* FloatMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenu.m; sourceTree = "<group>"; };
 		03AB50DE29B757F900D86AE6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		03B5F46A2903D0EE00D1F03E /* 80e6376902b9d3aa81e01d7eecb89ad6-111.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "80e6376902b9d3aa81e01d7eecb89ad6-111.txt"; sourceTree = "<group>"; };
 		03B5F46C2903ECEA00D1F03E /* com_wantang_xlzsg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = com_wantang_xlzsg.json; sourceTree = "<group>"; };
@@ -2381,6 +2531,16 @@
 		03EA36072850986F00723340 /* BindAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindAccountView.h; sourceTree = "<group>"; };
 		03EA36092850989900723340 /* MainHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeView.m; sourceTree = "<group>"; };
 		03EA360A2850989900723340 /* MainHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeView.h; sourceTree = "<group>"; };
+		03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatConfigData.h; sourceTree = "<group>"; };
+		03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatConfigData.m; sourceTree = "<group>"; };
+		03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPFDragView_TW.h; sourceTree = "<group>"; };
+		03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPFDragView_TW.m; sourceTree = "<group>"; };
+		03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropImageTW.m"; sourceTree = "<group>"; };
+		03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RectPositionTW.h"; sourceTree = "<group>"; };
+		03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorToImageTW.h"; sourceTree = "<group>"; };
+		03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorToImageTW.m"; sourceTree = "<group>"; };
+		03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RectPositionTW.m"; sourceTree = "<group>"; };
+		03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropImageTW.h"; sourceTree = "<group>"; };
 		03F543132940BC5D00F75F51 /* SDK_DEMO_V4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_V4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F59A49285776730062B6EE /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		03F59A4A285776730062B6EE /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
@@ -3372,6 +3532,12 @@
 				E99EB28621BE4E9E004FF8B5 /* MWWebViewController.m */,
 				322CBC1624C589A5000D6B20 /* SDKLoginViewController.h */,
 				322CBC1824C589A5000D6B20 /* SDKLoginViewController.m */,
+				03A19DE22B97048900F0C146 /* FloatContentViewController.h */,
+				03A19DE32B97048900F0C146 /* FloatContentViewController.m */,
+				03A19DE42B97048900F0C146 /* FloatContentViewController.xib */,
+				03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */,
+				03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */,
+				03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3874,6 +4040,12 @@
 		03F59A48285776460062B6EE /* GCategory */ = {
 			isa = PBXGroup;
 			children = (
+				03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */,
+				03F1B81E2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m */,
+				03F1B8202B8DCA6C009B6747 /* UIImage+CropImageTW.h */,
+				03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */,
+				03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */,
+				03F1B81F2B8DCA6C009B6747 /* UIView+RectPositionTW.m */,
 				E974127E20874A170018E1A6 /* UIColor+HexColor.h */,
 				E974127F20874A170018E1A6 /* UIColor+HexColor.m */,
 				322CBC7B24C5A1DF000D6B20 /* UIColor+HexStringToColorTW.h */,
@@ -4036,6 +4208,12 @@
 				0349F8AD2AD7A1190015750A /* ExpoModel.m */,
 				033774FB2AE9080E00D19EF5 /* SwitchResp.h */,
 				033774FC2AE9080E00D19EF5 /* SwitchResp.m */,
+				03A19E122B9855D000F0C146 /* FloatMenuResp.h */,
+				03A19E132B9855D000F0C146 /* FloatMenuResp.m */,
+				03A19E222B9857AD00F0C146 /* FloatMenu.h */,
+				03A19E232B9857AD00F0C146 /* FloatMenu.m */,
+				03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */,
+				03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4091,6 +4269,8 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */,
+				03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */,
 				030FAA7928A39F0800709536 /* BaseCountTimerView.h */,
 				030FAA7A28A39F0800709536 /* BaseCountTimerView.m */,
 				03C05CA628AE5F6B0060F4CD /* BasePopupView.h */,
@@ -4311,9 +4491,11 @@
 			files = (
 				03509C8A29F91C8C00C840DA /* NSString+Local.h in Headers */,
 				03509C8B29F91C8C00C840DA /* BaseCountTimerView.h in Headers */,
+				03A19E012B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				03509C8C29F91C8C00C840DA /* GamaSDK+Social.h in Headers */,
 				0349F8F22AD7F9580015750A /* ExposureController.h in Headers */,
 				03509C8D29F91C8C00C840DA /* MyTextFiled.h in Headers */,
+				03A19DE92B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				039AC1EC29F91DD700B416D8 /* TermsViewV2.h in Headers */,
 				0349F8DB2AD7F3860015750A /* MenuCell.h in Headers */,
 				039AC1F229F91DD700B416D8 /* NoticeViewV2.h in Headers */,
@@ -4324,15 +4506,22 @@
 				039AC1EB29F91DD700B416D8 /* BindAccountViewV2.h in Headers */,
 				03509C9429F91C8C00C840DA /* UrlMode.h in Headers */,
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
+				03F1B8482B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
+				03F1B82C2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775012AE9080E00D19EF5 /* SwitchResp.h in Headers */,
+				03A19E282B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
+				03F1B8012B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
 				0337E0182AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				033775112AEA51DA00D19EF5 /* MWWebView.h in Headers */,
+				03A19E182B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
+				03ED35FF2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
+				03F1B8332B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03509C9C29F91C8C00C840DA /* BasePopupView.h in Headers */,
@@ -4349,6 +4538,7 @@
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				0349F8BF2AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
+				03ED35FB2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				030FAA7B28A39F0800709536 /* BaseCountTimerView.h in Headers */,
 				0349F8F62AD7F95B0015750A /* ExposureController.h in Headers */,
 				0349F8F82AD7F9630015750A /* MenuCell.h in Headers */,
@@ -4356,25 +4546,33 @@
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
 				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
 				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
+				03F1B7FD2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				030FAA9428A6571900709536 /* GamaThirdSocial.h in Headers */,
 				030FAB3528A66ED300709536 /* UrlMode.h in Headers */,
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
+				03A19DE52B97048900F0C146 /* FloatContentViewController.h in Headers */,
+				03F1B82F2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				0337750D2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				0356591E2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
+				03F1B8442B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
 				030FAA5228A0FA7C00709536 /* MainHomeViewV2.h in Headers */,
 				0352F70D2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
 				030FAA7128A27F0600709536 /* BindPhoneViewV2.h in Headers */,
 				037C6F692875AD230041EC34 /* LoginData.h in Headers */,
+				03A19DFD2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
+				03A19E242B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */,
 				030FAA6928A1FE5800709536 /* TermsViewV2.h in Headers */,
 				0349F8AE2AD7A1190015750A /* ExpoModel.h in Headers */,
+				03A19E142B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				037C6F6A2875AD230041EC34 /* MWSDK.h in Headers */,
 				030FAA4728A0FA7C00709536 /* AccountLoginViewV2.h in Headers */,
 				033774FD2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0337E0142AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				03F1B8282B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4383,19 +4581,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */,
+				03F1B8452B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
+				03A19E252B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
+				03F1B8302B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
+				03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
 				0349F8F52AD7F95A0015750A /* ExposureController.h in Headers */,
+				03F1B7FE2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */,
 				039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */,
 				038612DF29388F8900CC9C44 /* MyTextFiled.h in Headers */,
 				0386138D2938906000CC9C44 /* TermsViewV2.h in Headers */,
 				033774FE2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				038613932938906000CC9C44 /* NoticeViewV2.h in Headers */,
+				03F1B8292B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				038613982938906000CC9C44 /* BindPhoneViewV2.h in Headers */,
 				038612E029388F8900CC9C44 /* GamaThirdSocial.h in Headers */,
 				038613892938906000CC9C44 /* FindPasswordViewV2.h in Headers */,
 				0386138C2938906000CC9C44 /* BindAccountViewV2.h in Headers */,
+				03A19DE62B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				038612E129388F8900CC9C44 /* UrlMode.h in Headers */,
 				0337750E2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				038612E329388F8900CC9C44 /* TouchEventInterruptView.h in Headers */,
@@ -4403,6 +4608,7 @@
 				0386138E2938906000CC9C44 /* AccountLoginViewV2.h in Headers */,
 				038612E529388F8900CC9C44 /* PayData.h in Headers */,
 				038612E629388F8900CC9C44 /* ViewUtil.h in Headers */,
+				03A19E152B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				0349F8C02AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				038612E929388F8900CC9C44 /* LoginData.h in Headers */,
 				0349F8F72AD7F9630015750A /* MenuCell.h in Headers */,
@@ -4413,6 +4619,7 @@
 				038612EE29388F8900CC9C44 /* MWSDK.h in Headers */,
 				0386138A2938906000CC9C44 /* RegisterAccountViewV2.h in Headers */,
 				0337E0152AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				03A19DFE2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4422,9 +4629,11 @@
 			files = (
 				0387BA89291B8DA5001BACA8 /* BindAccountViewV2.h in Headers */,
 				0387B9D8291B8C9E001BACA8 /* NSString+Local.h in Headers */,
+				03A19DFF2B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				0387BA90291B8DA5001BACA8 /* LoginWithRegViewV2.h in Headers */,
 				0349F8F42AD7F95A0015750A /* ExposureController.h in Headers */,
 				0387B9D9291B8C9E001BACA8 /* BaseCountTimerView.h in Headers */,
+				03A19DE72B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				0387B9DA291B8C9E001BACA8 /* GamaSDK+Social.h in Headers */,
 				0349F8D92AD7F3860015750A /* MenuCell.h in Headers */,
 				0387BA91291B8DA5001BACA8 /* MainHomeViewV2.h in Headers */,
@@ -4435,15 +4644,22 @@
 				0387BA82291B8DA5001BACA8 /* BindPhoneViewV2.h in Headers */,
 				0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
 				0387B9E0291B8C9E001BACA8 /* CountTimerDelegate.h in Headers */,
+				03F1B8462B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				0387B9E2291B8C9E001BACA8 /* PayData.h in Headers */,
+				03F1B82A2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
 				033774FF2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
+				03A19E262B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
+				03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
 				0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				0337750F2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
+				03A19E162B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				0387B9E5291B8C9E001BACA8 /* LoginData.h in Headers */,
+				03ED35FD2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
+				03F1B8312B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				0387BA85291B8DA5001BACA8 /* TermsViewV2.h in Headers */,
 				0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */,
@@ -4457,12 +4673,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E032B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
 				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
+				03F1B8352B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				0337E01A2AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				03F1B84A2B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				0392B1B72A5BA8DC00A3E2D6 /* GamaSDK+Social.h in Headers */,
 				0392B1B82A5BA8DC00A3E2D6 /* MyTextFiled.h in Headers */,
 				0392B2692A5BA99900A3E2D6 /* TermsViewV2.h in Headers */,
+				03F1B82E2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8C52AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				0392B26F2A5BA99900A3E2D6 /* NoticeViewV2.h in Headers */,
 				0392B2742A5BA99900A3E2D6 /* BindPhoneViewV2.h in Headers */,
@@ -4471,12 +4691,15 @@
 				033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
+				03A19E1A2B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
 				0349F8F02AD7F9570015750A /* ExposureController.h in Headers */,
 				03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */,
 				0392B1C02A5BA8DC00A3E2D6 /* TouchEventInterruptView.h in Headers */,
 				0392B1C12A5BA8DC00A3E2D6 /* CountTimerDelegate.h in Headers */,
+				03ED36012B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
+				03A19DEB2B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				0392B26A2A5BA99900A3E2D6 /* AccountLoginViewV2.h in Headers */,
 				0392B1C32A5BA8DC00A3E2D6 /* PayData.h in Headers */,
 				0392B1C42A5BA8DC00A3E2D6 /* ViewUtil.h in Headers */,
@@ -4487,7 +4710,9 @@
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
+				03A19E2A2B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
+				03F1B8032B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4498,9 +4723,11 @@
 			files = (
 				039B25F0298B555300045C53 /* NSString+Local.h in Headers */,
 				039B25F2298B555300045C53 /* BaseCountTimerView.h in Headers */,
+				03A19E002B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				039B25F3298B555300045C53 /* GamaSDK+Social.h in Headers */,
 				0349F8F32AD7F9590015750A /* ExposureController.h in Headers */,
 				039B25F5298B555300045C53 /* MyTextFiled.h in Headers */,
+				03A19DE82B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				0381EC6C298B5677006D6100 /* TermsViewV2.h in Headers */,
 				0349F8DA2AD7F3860015750A /* MenuCell.h in Headers */,
 				0381EC72298B5677006D6100 /* NoticeViewV2.h in Headers */,
@@ -4511,15 +4738,22 @@
 				0381EC6B298B5677006D6100 /* BindAccountViewV2.h in Headers */,
 				039B25F7298B555300045C53 /* UrlMode.h in Headers */,
 				039B25F9298B555300045C53 /* TouchEventInterruptView.h in Headers */,
+				03F1B8472B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				039B25FA298B555300045C53 /* CountTimerDelegate.h in Headers */,
+				03F1B82B2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */,
+				03A19E272B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
+				03F1B8002B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
 				0337E0172AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				033775102AEA51DA00D19EF5 /* MWWebView.h in Headers */,
+				03A19E172B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				039B25FF298B555300045C53 /* LoginData.h in Headers */,
+				03ED35FE2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
+				03F1B8322B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				0381EC71298B5677006D6100 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				039B2602298B555300045C53 /* BasePopupView.h in Headers */,
@@ -4536,6 +4770,7 @@
 				03381BBE2AEF5448008F8B57 /* MWStringHeaders.h in Headers */,
 				033775122AEA51DA00D19EF5 /* MWWebView.h in Headers */,
 				033B331B29D5C4BC00AE9F96 /* SDKTextFiledView.h in Headers */,
+				03F1B8342B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				033B331A29D5C4BC00AE9F96 /* SDKIconTitleButton.h in Headers */,
 				033B32EB29D56AEE00AE9F96 /* LoginWithRegViewV2.h in Headers */,
 				033B331C29D5C4BC00AE9F96 /* LoginTitleView.h in Headers */,
@@ -4543,9 +4778,12 @@
 				0349F8C42AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03CA721C29D5698400098979 /* NSString+Local.h in Headers */,
 				033B32F229D56AEE00AE9F96 /* MainHomeViewV2.h in Headers */,
+				03A19E022B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
 				0337E0192AE104CC00F171B1 /* SocialBannerView.h in Headers */,
+				03ED36002B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				03CA721D29D5698400098979 /* BaseCountTimerView.h in Headers */,
 				033B32E329D56AEE00AE9F96 /* RegisterAccountViewV2.h in Headers */,
+				03F1B82D2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				03CA721E29D5698400098979 /* GamaSDK+Social.h in Headers */,
 				033B32E229D56AEE00AE9F96 /* FindPasswordViewV2.h in Headers */,
 				033B32F129D56AEE00AE9F96 /* BindPhoneViewV2.h in Headers */,
@@ -4553,7 +4791,9 @@
 				035659232AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0349F8B32AD7A1190015750A /* ExpoModel.h in Headers */,
 				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
+				03F1B8022B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
+				03F1B8492B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				03CA722629D5698400098979 /* UrlMode.h in Headers */,
 				03CA722829D5698400098979 /* CountTimerDelegate.h in Headers */,
 				03CA722A29D5698400098979 /* PayData.h in Headers */,
@@ -4563,9 +4803,12 @@
 				03CA722B29D5698400098979 /* ViewUtil.h in Headers */,
 				03C91BA82A7A377100289870 /* AdjustDelegate.h in Headers */,
 				033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */,
+				03A19DEA2B97048900F0C146 /* FloatContentViewController.h in Headers */,
+				03A19E192B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
 				0349F8F12AD7F9580015750A /* ExposureController.h in Headers */,
+				03A19E292B9857AD00F0C146 /* FloatMenu.h in Headers */,
 				0349F8DC2AD7F3860015750A /* MenuCell.h in Headers */,
 				03CA722E29D5698400098979 /* BasePopupView.h in Headers */,
 				033775022AE9080E00D19EF5 /* SwitchResp.h in Headers */,
@@ -4970,6 +5213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E0F2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF72B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4977,6 +5222,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E0B2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF32B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4984,6 +5231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E0C2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF42B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5007,6 +5256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E0D2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF52B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5014,6 +5265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E112B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF92B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5035,6 +5288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E0E2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF62B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5056,6 +5311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A19E102B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03A19DF82B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5151,6 +5408,7 @@
 				03509CA129F91C8C00C840DA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				03509CA229F91C8C00C840DA /* ViewController+MASAdditions.m in Sources */,
 				03509CA329F91C8C00C840DA /* MASCompositeConstraint.m in Sources */,
+				03A19E2F2B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				03509CA429F91C8C00C840DA /* MASConstraintMaker.m in Sources */,
 				03509CA529F91C8C00C840DA /* MASLayoutConstraint.m in Sources */,
 				03509CA629F91C8C00C840DA /* NSArray+MASAdditions.m in Sources */,
@@ -5195,6 +5453,7 @@
 				03509CCA29F91C8C00C840DA /* AccountModel.m in Sources */,
 				03509CCB29F91C8C00C840DA /* LoginResponse.m in Sources */,
 				0337E01F2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03A19E1F2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				03509CCC29F91C8C00C840DA /* ConfigResponse.m in Sources */,
 				03509CCD29F91C8C00C840DA /* MyTextFiled.m in Sources */,
 				0349F8EB2AD7F94D0015750A /* ExposureController.m in Sources */,
@@ -5203,6 +5462,7 @@
 				03509CD029F91C8C00C840DA /* BJBaseResponceModel.m in Sources */,
 				03509CD129F91C8C00C840DA /* GamaThirdSocial.m in Sources */,
 				03509CD229F91C8C00C840DA /* BJError.m in Sources */,
+				03A19DF02B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				03509CD329F91C8C00C840DA /* HttpServiceEngineLogin.m in Sources */,
 				03509CD429F91C8C00C840DA /* BJServiceConfigurator.m in Sources */,
 				03509CD529F91C8C00C840DA /* SDKRequest.m in Sources */,
@@ -5237,6 +5497,7 @@
 				03509CF229F91C8C00C840DA /* YYClassInfo.m in Sources */,
 				03509CF329F91C8C00C840DA /* AFURLResponseSerialization.m in Sources */,
 				03509CF429F91C8C00C840DA /* AFHTTPSessionManager.m in Sources */,
+				03F1B8082B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				03509CF529F91C8C00C840DA /* AFURLSessionManager.m in Sources */,
 				03509CF629F91C8C00C840DA /* AFURLRequestSerialization.m in Sources */,
 				03509CF729F91C8C00C840DA /* AFNetworkReachabilityManager.m in Sources */,
@@ -5254,6 +5515,7 @@
 				039AC1EF29F91DD700B416D8 /* BindPhoneViewV2.m in Sources */,
 				03509D0329F91C8C00C840DA /* MWWebViewController.m in Sources */,
 				039AC1F529F91DD700B416D8 /* TermsViewV2.m in Sources */,
+				03A19E082B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */,
 				03509D0529F91C8C00C840DA /* SdkUtil.m in Sources */,
 				03509D0629F91C8C00C840DA /* ConfigCoreUtil.m in Sources */,
 				03509D0729F91C8C00C840DA /* LoginHelper.m in Sources */,
@@ -5269,9 +5531,11 @@
 				03509D1029F91C8C00C840DA /* LoginWithRegView.m in Sources */,
 				0349F8B92AD7A1190015750A /* ExpoModel.m in Sources */,
 				03509D1129F91C8C00C840DA /* MainHomeView.m in Sources */,
+				03F1B83A2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				03509D1229F91C8C00C840DA /* RegisterAccountView.m in Sources */,
 				03509D1329F91C8C00C840DA /* SDKBaseView.m in Sources */,
 				03509D1429F91C8C00C840DA /* SelectBindTypeView.m in Sources */,
+				03ED36062B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				03509D1529F91C8C00C840DA /* TermsView.m in Sources */,
 				03509D1629F91C8C00C840DA /* WelcomeBackView.m in Sources */,
 				03509D1729F91C8C00C840DA /* AccountListViewCell.m in Sources */,
@@ -5281,7 +5545,9 @@
 				03509D1B29F91C8C00C840DA /* SDKIconTitleButton.m in Sources */,
 				03509D1C29F91C8C00C840DA /* SDKTextFiledView.m in Sources */,
 				03509D1D29F91C8C00C840DA /* LoginTypeButton.m in Sources */,
+				03F1B8412B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				03509D1E29F91C8C00C840DA /* AccountListView.m in Sources */,
+				03F1B8252B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				039AC1F029F91DD700B416D8 /* FindPasswordViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5291,15 +5557,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				037C6F4F2875ACD70041EC34 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				03ED36022B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				037C6F502875ACD70041EC34 /* ViewController+MASAdditions.m in Sources */,
 				030FAA7328A27F0600709536 /* BindPhoneViewV2.m in Sources */,
+				03A19E1B2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				037C6F512875ACD70041EC34 /* MASCompositeConstraint.m in Sources */,
 				037C6F522875ACD70041EC34 /* MASConstraintMaker.m in Sources */,
 				037C6F532875ACD70041EC34 /* MASLayoutConstraint.m in Sources */,
 				037C6F542875ACD70041EC34 /* NSArray+MASAdditions.m in Sources */,
 				037C6F552875ACD70041EC34 /* View+MASAdditions.m in Sources */,
+				03A19E2B2B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				037C6F562875ACD70041EC34 /* MASConstraint.m in Sources */,
 				037C6F572875ACD70041EC34 /* MASViewConstraint.m in Sources */,
+				03A19DEC2B97048900F0C146 /* FloatContentViewController.m in Sources */,
+				03F1B8212B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				037C6F582875ACD70041EC34 /* MASViewAttribute.m in Sources */,
 				037C6F592875ACD70041EC34 /* UIImage+WebP.m in Sources */,
 				037C6F5A2875ACD70041EC34 /* SDWebImageManager.m in Sources */,
@@ -5324,7 +5595,9 @@
 				037C6EF92875AC790041EC34 /* AdLogger.m in Sources */,
 				037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */,
 				037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */,
+				03A19E042B970E6600F0C146 /* PersionCenterHorViewController.m in Sources */,
 				037C6EFC2875AC790041EC34 /* GameUserModel.m in Sources */,
+				03F1B83D2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				037C6EFD2875AC790041EC34 /* MWApplePayManager.m in Sources */,
 				037C6EFE2875AC790041EC34 /* ApplePay.m in Sources */,
 				037C6EFF2875AC790041EC34 /* LineDelegate.m in Sources */,
@@ -5339,6 +5612,7 @@
 				037C6F062875AC790041EC34 /* ConfigResponse.m in Sources */,
 				030FAA8528A4B07900709536 /* BindAccountViewV2.m in Sources */,
 				030FAA7728A362E200709536 /* MyTextFiled.m in Sources */,
+				03F1B8362B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
 				033775042AE9080E00D19EF5 /* SwitchResp.m in Sources */,
@@ -5370,6 +5644,7 @@
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
+				03F1B8042B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */,
 				030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */,
 				037C6F212875AC790041EC34 /* UIUtil.m in Sources */,
@@ -5434,6 +5709,7 @@
 				038612F129388F8900CC9C44 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				038612F229388F8900CC9C44 /* ViewController+MASAdditions.m in Sources */,
 				038612F329388F8900CC9C44 /* MASCompositeConstraint.m in Sources */,
+				03A19E2C2B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				038612F429388F8900CC9C44 /* MASConstraintMaker.m in Sources */,
 				038612F529388F8900CC9C44 /* MASLayoutConstraint.m in Sources */,
 				038612F629388F8900CC9C44 /* NSArray+MASAdditions.m in Sources */,
@@ -5478,6 +5754,7 @@
 				0386131729388F8900CC9C44 /* HttpServiceEnginePay.m in Sources */,
 				0386131829388F8900CC9C44 /* AccountModel.m in Sources */,
 				0337E01C2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03A19E1C2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				0386131929388F8900CC9C44 /* LoginResponse.m in Sources */,
 				0386131A29388F8900CC9C44 /* ConfigResponse.m in Sources */,
 				0386131C29388F8900CC9C44 /* MyTextFiled.m in Sources */,
@@ -5486,6 +5763,7 @@
 				0386131F29388F8900CC9C44 /* BJBaseResponceModel.m in Sources */,
 				0386132029388F8900CC9C44 /* GamaThirdSocial.m in Sources */,
 				0386132129388F8900CC9C44 /* BJError.m in Sources */,
+				03A19DED2B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				0386132229388F8900CC9C44 /* HttpServiceEngineLogin.m in Sources */,
 				0386132329388F8900CC9C44 /* BJServiceConfigurator.m in Sources */,
 				0386132429388F8900CC9C44 /* SDKRequest.m in Sources */,
@@ -5520,6 +5798,7 @@
 				0386134029388F8900CC9C44 /* YYClassInfo.m in Sources */,
 				0386134129388F8900CC9C44 /* AFURLResponseSerialization.m in Sources */,
 				0386134229388F8900CC9C44 /* AFHTTPSessionManager.m in Sources */,
+				03F1B8052B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				0386134329388F8900CC9C44 /* AFURLSessionManager.m in Sources */,
 				0386134529388F8900CC9C44 /* AFURLRequestSerialization.m in Sources */,
 				0349F8EE2AD7F94F0015750A /* ExposureController.m in Sources */,
@@ -5537,6 +5816,7 @@
 				038613902938906000CC9C44 /* BindPhoneViewV2.m in Sources */,
 				0386135029388F8900CC9C44 /* MWWebViewController.m in Sources */,
 				038613962938906000CC9C44 /* TermsViewV2.m in Sources */,
+				03A19E052B970E6600F0C146 /* PersionCenterHorViewController.m in Sources */,
 				0386135129388F8900CC9C44 /* SdkUtil.m in Sources */,
 				0386135229388F8900CC9C44 /* ConfigCoreUtil.m in Sources */,
 				0386135329388F8900CC9C44 /* LoginHelper.m in Sources */,
@@ -5552,9 +5832,11 @@
 				0386135C29388F8900CC9C44 /* LoginWithRegView.m in Sources */,
 				0349F8B62AD7A1190015750A /* ExpoModel.m in Sources */,
 				0386135F29388F8900CC9C44 /* MainHomeView.m in Sources */,
+				03F1B8372B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				0386136029388F8900CC9C44 /* RegisterAccountView.m in Sources */,
 				0386136129388F8900CC9C44 /* SDKBaseView.m in Sources */,
 				0386136229388F8900CC9C44 /* SelectBindTypeView.m in Sources */,
+				03ED36032B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				0386136329388F8900CC9C44 /* TermsView.m in Sources */,
 				0386136429388F8900CC9C44 /* WelcomeBackView.m in Sources */,
 				0386136529388F8900CC9C44 /* AccountListViewCell.m in Sources */,
@@ -5564,7 +5846,9 @@
 				0386136B29388F8900CC9C44 /* SDKIconTitleButton.m in Sources */,
 				0386136C29388F8900CC9C44 /* SDKTextFiledView.m in Sources */,
 				0386136D29388F8900CC9C44 /* LoginTypeButton.m in Sources */,
+				03F1B83E2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				0386136E29388F8900CC9C44 /* AccountListView.m in Sources */,
+				03F1B8222B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				038613912938906000CC9C44 /* FindPasswordViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5589,6 +5873,7 @@
 				0387BA98291B92C9001BACA8 /* AccountLoginViewV2.m in Sources */,
 				0387B9EC291B8C9E001BACA8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				0387B9ED291B8C9E001BACA8 /* ViewController+MASAdditions.m in Sources */,
+				03A19E2D2B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				0387B9EF291B8C9E001BACA8 /* MASCompositeConstraint.m in Sources */,
 				0387B9F0291B8C9E001BACA8 /* MASConstraintMaker.m in Sources */,
 				0387B9F1291B8C9E001BACA8 /* MASLayoutConstraint.m in Sources */,
@@ -5633,6 +5918,7 @@
 				0387BA17291B8C9E001BACA8 /* LoginResponse.m in Sources */,
 				0387BA18291B8C9E001BACA8 /* ConfigResponse.m in Sources */,
 				0337E01D2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03A19E1D2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				0387BA88291B8DA5001BACA8 /* RegisterAccountViewV2.m in Sources */,
 				0387BA1A291B8C9E001BACA8 /* MyTextFiled.m in Sources */,
 				0349F8ED2AD7F94E0015750A /* ExposureController.m in Sources */,
@@ -5641,6 +5927,7 @@
 				0387BA1D291B8C9E001BACA8 /* BJBaseResponceModel.m in Sources */,
 				0387BA1E291B8C9E001BACA8 /* GamaThirdSocial.m in Sources */,
 				0387BA1F291B8C9E001BACA8 /* BJError.m in Sources */,
+				03A19DEE2B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				0387BA20291B8C9E001BACA8 /* HttpServiceEngineLogin.m in Sources */,
 				0387BA21291B8C9E001BACA8 /* BJServiceConfigurator.m in Sources */,
 				0387BA22291B8C9E001BACA8 /* SDKRequest.m in Sources */,
@@ -5675,6 +5962,7 @@
 				0387BA3F291B8C9E001BACA8 /* AFURLResponseSerialization.m in Sources */,
 				0387BA40291B8C9E001BACA8 /* AFHTTPSessionManager.m in Sources */,
 				0387BA41291B8C9E001BACA8 /* AFURLSessionManager.m in Sources */,
+				03F1B8062B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				0387BA83291B8DA5001BACA8 /* FindPasswordViewV2.m in Sources */,
 				0387BA42291B8C9E001BACA8 /* AFURLRequestSerialization.m in Sources */,
 				0387BA43291B8C9E001BACA8 /* AFNetworkReachabilityManager.m in Sources */,
@@ -5692,6 +5980,7 @@
 				0387BA4D291B8C9E001BACA8 /* SdkUtil.m in Sources */,
 				0387BA4E291B8C9E001BACA8 /* ConfigCoreUtil.m in Sources */,
 				0387BA4F291B8C9E001BACA8 /* LoginHelper.m in Sources */,
+				03A19E062B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */,
 				0387BA50291B8C9E001BACA8 /* DimeUtil.m in Sources */,
 				0387BA51291B8C9E001BACA8 /* LoginButtonData.m in Sources */,
 				0387BA52291B8C9E001BACA8 /* SDKLoginViewController.m in Sources */,
@@ -5707,9 +5996,11 @@
 				0387BA5A291B8C9E001BACA8 /* MainHomeView.m in Sources */,
 				0349F8B72AD7A1190015750A /* ExpoModel.m in Sources */,
 				0387BA5B291B8C9E001BACA8 /* RegisterAccountView.m in Sources */,
+				03F1B8382B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				0387BA5C291B8C9E001BACA8 /* SDKBaseView.m in Sources */,
 				0387BA5D291B8C9E001BACA8 /* SelectBindTypeView.m in Sources */,
 				0387BA5F291B8C9E001BACA8 /* TermsView.m in Sources */,
+				03ED36042B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				0387BA60291B8C9E001BACA8 /* WelcomeBackView.m in Sources */,
 				0387BA61291B8C9E001BACA8 /* AccountListViewCell.m in Sources */,
 				0387BA8E291B8DA5001BACA8 /* NoticeViewV2.m in Sources */,
@@ -5719,7 +6010,9 @@
 				0387BA64291B8C9E001BACA8 /* PhoneView.m in Sources */,
 				0387BA65291B8C9E001BACA8 /* SDKIconTitleButton.m in Sources */,
 				0387BA66291B8C9E001BACA8 /* SDKTextFiledView.m in Sources */,
+				03F1B83F2B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				0387BA67291B8C9E001BACA8 /* LoginTypeButton.m in Sources */,
+				03F1B8232B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				0387BA68291B8C9E001BACA8 /* AccountListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5775,11 +6068,15 @@
 				0392B1F52A5BA8DC00A3E2D6 /* AccountModel.m in Sources */,
 				0392B1F62A5BA8DC00A3E2D6 /* LoginResponse.m in Sources */,
 				0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */,
+				03F1B83C2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				0392B1F82A5BA8DC00A3E2D6 /* MyTextFiled.m in Sources */,
 				0392B1F92A5BA8DC00A3E2D6 /* ConfigModel.m in Sources */,
+				03F1B8432B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
+				03F1B8272B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				0337750A2AE9080E00D19EF5 /* SwitchResp.m in Sources */,
 				0392B1FA2A5BA8DC00A3E2D6 /* CreateOrderResp.m in Sources */,
 				0392B1FB2A5BA8DC00A3E2D6 /* BJBaseResponceModel.m in Sources */,
+				03A19E312B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				0392B1FC2A5BA8DC00A3E2D6 /* GamaThirdSocial.m in Sources */,
 				0392B1FD2A5BA8DC00A3E2D6 /* BJError.m in Sources */,
 				0392B1FE2A5BA8DC00A3E2D6 /* HttpServiceEngineLogin.m in Sources */,
@@ -5801,6 +6098,7 @@
 				0392B20E2A5BA8DC00A3E2D6 /* UIAlertController+Sdk.m in Sources */,
 				0349F8E22AD7F3860015750A /* MenuCell.m in Sources */,
 				0392B20F2A5BA8DC00A3E2D6 /* UIColor+HexColor.m in Sources */,
+				03A19DF22B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				0392B2712A5BA99900A3E2D6 /* AccountLoginViewV2.m in Sources */,
 				0392B2112A5BA8DC00A3E2D6 /* UIColor+HexStringToColorTW.m in Sources */,
 				0392B2122A5BA8DC00A3E2D6 /* UIScreen+Sdk.m in Sources */,
@@ -5830,6 +6128,7 @@
 				0392B2292A5BA8DC00A3E2D6 /* SdkSecurityFunction.m in Sources */,
 				0392B22A2A5BA8DC00A3E2D6 /* PhoneInfoModel.m in Sources */,
 				0392B22B2A5BA8DC00A3E2D6 /* SAppleLogin.m in Sources */,
+				03A19E212B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				0392B22C2A5BA8DC00A3E2D6 /* TouchEventInterruptView.m in Sources */,
 				0392B26C2A5BA99900A3E2D6 /* BindPhoneViewV2.m in Sources */,
 				0392B22E2A5BA8DC00A3E2D6 /* MWWebViewController.m in Sources */,
@@ -5837,6 +6136,7 @@
 				0392B2302A5BA8DC00A3E2D6 /* SdkUtil.m in Sources */,
 				0392B2312A5BA8DC00A3E2D6 /* ConfigCoreUtil.m in Sources */,
 				0392B2322A5BA8DC00A3E2D6 /* LoginHelper.m in Sources */,
+				03ED36082B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				0337751A2AEA51DA00D19EF5 /* MWWebView.m in Sources */,
 				0392B2332A5BA8DC00A3E2D6 /* DimeUtil.m in Sources */,
 				0349F8E92AD7F94B0015750A /* ExposureController.m in Sources */,
@@ -5844,6 +6144,7 @@
 				0392B2352A5BA8DC00A3E2D6 /* SDKLoginViewController.m in Sources */,
 				0392B2362A5BA8DC00A3E2D6 /* LoginButton.m in Sources */,
 				0337E0212AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03A19E0A2B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */,
 				0392B2372A5BA8DC00A3E2D6 /* AccountLoginView.m in Sources */,
 				0392B2382A5BA8DC00A3E2D6 /* BindAccountView.m in Sources */,
 				0392B2392A5BA8DC00A3E2D6 /* ChangePasswordView.m in Sources */,
@@ -5860,6 +6161,7 @@
 				0392B2432A5BA8DC00A3E2D6 /* NSString+Local.m in Sources */,
 				0392B2442A5BA8DC00A3E2D6 /* LoginTitleView.m in Sources */,
 				0392B2452A5BA8DC00A3E2D6 /* PhoneView.m in Sources */,
+				03F1B80A2B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				0392B2462A5BA8DC00A3E2D6 /* SDKIconTitleButton.m in Sources */,
 				0392B2472A5BA8DC00A3E2D6 /* SDKTextFiledView.m in Sources */,
 				0392B2482A5BA8DC00A3E2D6 /* LoginTypeButton.m in Sources */,
@@ -5889,6 +6191,7 @@
 				039B2607298B555300045C53 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				039B2608298B555300045C53 /* ViewController+MASAdditions.m in Sources */,
 				039B2609298B555300045C53 /* MASCompositeConstraint.m in Sources */,
+				03A19E2E2B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				039B260A298B555300045C53 /* MASConstraintMaker.m in Sources */,
 				039B260B298B555300045C53 /* MASLayoutConstraint.m in Sources */,
 				039B260C298B555300045C53 /* NSArray+MASAdditions.m in Sources */,
@@ -5933,6 +6236,7 @@
 				039B262E298B555300045C53 /* AccountModel.m in Sources */,
 				039B262F298B555300045C53 /* LoginResponse.m in Sources */,
 				0337E01E2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03A19E1E2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				039B2630298B555300045C53 /* ConfigResponse.m in Sources */,
 				039B2632298B555300045C53 /* MyTextFiled.m in Sources */,
 				0349F8EC2AD7F94D0015750A /* ExposureController.m in Sources */,
@@ -5941,6 +6245,7 @@
 				039B2635298B555300045C53 /* BJBaseResponceModel.m in Sources */,
 				039B2636298B555300045C53 /* GamaThirdSocial.m in Sources */,
 				039B2637298B555300045C53 /* BJError.m in Sources */,
+				03A19DEF2B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				039B2638298B555300045C53 /* HttpServiceEngineLogin.m in Sources */,
 				039B2639298B555300045C53 /* BJServiceConfigurator.m in Sources */,
 				039B263A298B555300045C53 /* SDKRequest.m in Sources */,
@@ -5975,6 +6280,7 @@
 				039B2656298B555300045C53 /* YYClassInfo.m in Sources */,
 				039B2657298B555300045C53 /* AFURLResponseSerialization.m in Sources */,
 				039B2658298B555300045C53 /* AFHTTPSessionManager.m in Sources */,
+				03F1B8072B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				039B2659298B555300045C53 /* AFURLSessionManager.m in Sources */,
 				039B265B298B555300045C53 /* AFURLRequestSerialization.m in Sources */,
 				039B265C298B555300045C53 /* AFNetworkReachabilityManager.m in Sources */,
@@ -5992,6 +6298,7 @@
 				0381EC6F298B5677006D6100 /* BindPhoneViewV2.m in Sources */,
 				039B2666298B555300045C53 /* MWWebViewController.m in Sources */,
 				0381EC75298B5677006D6100 /* TermsViewV2.m in Sources */,
+				03A19E072B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */,
 				039B2667298B555300045C53 /* SdkUtil.m in Sources */,
 				039B2668298B555300045C53 /* ConfigCoreUtil.m in Sources */,
 				039B2669298B555300045C53 /* LoginHelper.m in Sources */,
@@ -6007,9 +6314,11 @@
 				039B2672298B555300045C53 /* LoginWithRegView.m in Sources */,
 				0349F8B82AD7A1190015750A /* ExpoModel.m in Sources */,
 				039B2675298B555300045C53 /* MainHomeView.m in Sources */,
+				03F1B8392B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				039B2676298B555300045C53 /* RegisterAccountView.m in Sources */,
 				039B2677298B555300045C53 /* SDKBaseView.m in Sources */,
 				039B2678298B555300045C53 /* SelectBindTypeView.m in Sources */,
+				03ED36052B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				039B2679298B555300045C53 /* TermsView.m in Sources */,
 				039B267A298B555300045C53 /* WelcomeBackView.m in Sources */,
 				039B267B298B555300045C53 /* AccountListViewCell.m in Sources */,
@@ -6019,7 +6328,9 @@
 				039B2681298B555300045C53 /* SDKIconTitleButton.m in Sources */,
 				039B2682298B555300045C53 /* SDKTextFiledView.m in Sources */,
 				039B2683298B555300045C53 /* LoginTypeButton.m in Sources */,
+				03F1B8402B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				039B2684298B555300045C53 /* AccountListView.m in Sources */,
+				03F1B8242B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				0381EC70298B5677006D6100 /* FindPasswordViewV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6047,6 +6358,7 @@
 				03CA723629D5698400098979 /* MASConstraintMaker.m in Sources */,
 				03CA723729D5698400098979 /* MASLayoutConstraint.m in Sources */,
 				0349F8EA2AD7F94C0015750A /* ExposureController.m in Sources */,
+				03A19E092B970E6700F0C146 /* PersionCenterHorViewController.m in Sources */,
 				033B32E129D56AEE00AE9F96 /* LoginWithRegViewV2.m in Sources */,
 				03CA723829D5698400098979 /* NSArray+MASAdditions.m in Sources */,
 				033B331829D5C4BC00AE9F96 /* LoginTypeButton.m in Sources */,
@@ -6070,6 +6382,7 @@
 				03CA724829D5698400098979 /* SDWebImageDownloaderOperation.m in Sources */,
 				0349F8E12AD7F3860015750A /* MenuCell.m in Sources */,
 				03CA724929D5698400098979 /* NSData+ImageContentType.m in Sources */,
+				03ED36072B9875BC0064C9D3 /* FloatConfigData.m in Sources */,
 				03CA724A29D5698400098979 /* UrlMode.m in Sources */,
 				03CA724B29D5698400098979 /* UIImageView+WebCache.m in Sources */,
 				03CA724C29D5698400098979 /* UIView+WebCacheOperation.m in Sources */,
@@ -6077,7 +6390,9 @@
 				03CA724E29D5698400098979 /* AdLogger.m in Sources */,
 				03CA724F29D5698400098979 /* AdDelegate.m in Sources */,
 				03CA725029D5698400098979 /* CCSDKDATA.m in Sources */,
+				03A19E202B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				03CA725329D5698400098979 /* GameUserModel.m in Sources */,
+				03F1B8422B8DCA6C009B6747 /* UIView+RectPositionTW.m in Sources */,
 				03CA725429D5698400098979 /* MWApplePayManager.m in Sources */,
 				033B32E929D56AEE00AE9F96 /* BindPhoneViewV2.m in Sources */,
 				033B32ED29D56AEE00AE9F96 /* RegisterAccountViewV2.m in Sources */,
@@ -6088,12 +6403,14 @@
 				03CA725829D5698400098979 /* GIDDelegate.m in Sources */,
 				03CA725929D5698400098979 /* FirebaseDelegate.m in Sources */,
 				03CA725A29D5698400098979 /* FBDelegate.m in Sources */,
+				03F1B83B2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
 				03CA725B29D5698400098979 /* HttpServiceEnginePay.m in Sources */,
 				03CA725C29D5698400098979 /* AccountModel.m in Sources */,
 				03CA725D29D5698400098979 /* LoginResponse.m in Sources */,
 				03CA725E29D5698400098979 /* ConfigResponse.m in Sources */,
 				03C91BA92A7A377100289870 /* AdjustDelegate.m in Sources */,
 				03CA726029D5698400098979 /* ConfigModel.m in Sources */,
+				03A19DF12B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				03CA726129D5698400098979 /* CreateOrderResp.m in Sources */,
 				03CA726229D5698400098979 /* BJBaseResponceModel.m in Sources */,
 				03CA726329D5698400098979 /* GamaThirdSocial.m in Sources */,
@@ -6120,6 +6437,7 @@
 				03CA727829D5698400098979 /* UIColor+HexStringToColorTW.m in Sources */,
 				03CA727929D5698400098979 /* UIScreen+Sdk.m in Sources */,
 				0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */,
+				03F1B8092B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
 				03CA727A29D5698400098979 /* NSString+URLEncoding.m in Sources */,
 				0337E0202AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */,
@@ -6146,7 +6464,9 @@
 				0349F8CB2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				03CA728C29D5698400098979 /* UIImage+ResBundle.m in Sources */,
 				03CA728D29D5698400098979 /* ResReader.m in Sources */,
+				03F1B8262B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				03CA728F29D5698400098979 /* SecurityUtil.m in Sources */,
+				03A19E302B9857AD00F0C146 /* FloatMenu.m in Sources */,
 				03CA729029D5698400098979 /* SdkSecurityFunction.m in Sources */,
 				033B331329D5C4BC00AE9F96 /* SDKIconTitleButton.m in Sources */,
 				03CA729129D5698400098979 /* PhoneInfoModel.m in Sources */,

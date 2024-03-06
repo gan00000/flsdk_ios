@@ -80,4 +80,7 @@
 
 + (void)saveAlready14Age_MMMethodMMM:(BOOL)isAge14;
 + (BOOL)isAlready14Age_MMMethodMMM;
+
++ (void)saveFloatConfigData_MMMethodMMM:(NSString *)cfgData;
++ (NSString *)getFloatConfigData_MMMethodMMM;
 @end

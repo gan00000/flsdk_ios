@@ -9,6 +9,8 @@
 #import "SDKRequest.h"
 #import "CCSDKDATA.h"
 #import "SwitchResp.h"
+#import "FloatMenuResp.h"
+#import "FloatConfigData.h"
 
 @implementation SDKRequest
 
@@ -101,7 +103,131 @@
     }];
     
 }
+#pragma mark - 获取悬浮窗配置内容
++(void)getFloatConfigDataWithSuccessBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock
+{
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getCdnUrl_MMMethodMMM]];
+    [configHTTPEngine getRequestWithFunctionPath_MMMethodMMM:[NSString stringWithFormat:@"sdk/config/%@/v1/floatButton.json?t=%@", GAME_CODE, [SUtil getTimeStamp_MMMethodMMM]] params_MMMethodMMM:nil successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+        
+        NSDictionary *responseDict = responseData;
+        
+        SDK_LOG(@"sdk getFloatConfigData:%@",responseDict);
+        if (responseDict) {
+            FloatConfigData *xFloatConfigData = [FloatConfigData yy_modelWithDictionary:responseDict];
+            if (xFloatConfigData) {
+                
+                NSArray<FloatMenu *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenu class] json:responseDict[@"menuList"]];
+                xFloatConfigData.menuList = xFloatMenuArr;
+                
+                SDK_DATA.floatConfigData = xFloatConfigData;
+            }
+//            [SdkUtil saveFloatConfigData_MMMethodMMM:responseStr];
+        }
+        
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
 
+#pragma mark - 获取悬浮窗菜单开关内容
++ (void)getFloatMenuDataWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                             errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock{
+    
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+    
+    //获取时间戳
+    NSString * timeStamp=[SUtil getTimeStamp_MMMethodMMM];
+    //获取md5加密的值  appkey+ts+name+pwd+gamecode+thirdPlatId+thirdPlatform
+    NSMutableString * md5str=[[NSMutableString alloc] init];
+    [md5str appendFormat:@"%@",APP_KEY]; //AppKey
+    [md5str appendFormat:@"%@",GAME_CODE];
+    [md5str appendFormat:@"%@",accountModel.userId]; //用户名
+    [md5str appendFormat:@"%@",timeStamp]; //时间戳
+    
+    NSString *md5SignStr=[SUtil getMD5StrFromString_MMMethodMMM:md5str];
+    
+    @try {
+        NSDictionary *dic = @{
+            
+            wwwww_tag_wwwww_signature        :[md5SignStr lowercaseString],
+            wwwww_tag_wwwww_timestamp        :timeStamp,
+            wwwww_tag_wwwww_thirdPlatId      :accountModel.thirdId ? : @"",
+            wwwww_tag_wwwww_thirdLoginId     :accountModel.thirdId ? : @"",
+            
+            wwwww_tag_wwwww_registPlatform   :accountModel.loginType ? : @"",
+            wwwww_tag_wwwww_loginMode        :accountModel.loginType ? : @"",
+            
+        };
+        
+        [params addEntriesFromDictionary:dic];
+        
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception.description);
+    }
+    
+    if (params) {
+        NSString *aUrl = @"";
+        for (NSString *key in params) {
+            NSString *value = params[key];
+            aUrl = [NSString stringWithFormat:@"%@%@=%@&",aUrl,key,value];
+        }
+        SDK_LOG(@"%@",aUrl);
+    }
+    
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getPlatUrl_MMMethodMMM]];
+    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:@"sdk/api/floatBtn/initMenu"
+                                           params_MMMethodMMM:params
+                                     successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+        
+        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        
+        NSDictionary *responseDict = responseData;
+        BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
+        
+        if (responceModel && [responceModel isRequestSuccess_MMMethodMMM]) {
+            
+            FloatMenuResp *xFloatMenuResp = [FloatMenuResp yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data]];
+//            FloatMenu *xFloatMenu = [NSArray yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
+            NSArray<FloatMenu *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenu class] json:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
+            xFloatMenuResp.menuList = xFloatMenuArr;
+            SDK_DATA.floatShowMenuList = [NSMutableArray array];
+            if (xFloatMenuResp && xFloatMenuResp.menuList && SDK_DATA.floatConfigData && SDK_DATA.floatConfigData.menuList) {
+                for (FloatMenu *cfgMenu in SDK_DATA.floatConfigData.menuList) {
+                    for (FloatMenu *mMenu in xFloatMenuResp.menuList) {//以配置文件对象字段为准
+                        if ([cfgMenu.code isEqualToString:mMenu.code]) {
+                            [SDK_DATA.floatShowMenuList addObject:mMenu];
+                            break;;
+                        }
+                    }
+                }
+            }
+            if (successBlock) {
+                successBlock(xFloatMenuResp);
+            }
+            
+        } else {
+            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
+            if (errorBlock) {
+                errorBlock(errorObject);
+            }
+        }
+        
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
 
 #pragma mark - 上报自己服务器一些事件
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
@@ -389,6 +515,7 @@
         wwwww_tag_wwwww_platform       :   wwwww_tag_wwwww_ios,
         wwwww_tag_wwwww_appsflyerId     :   [[AppsFlyerLib shared] getAppsFlyerUID]? :@"",
         wwwww_tag_wwwww_layout     :   IS_PORTRAIT ? @"v":@"h", //横竖屏参数
+        @"gameName"           : [SUtil getDisplayName_MMMethodMMM] ?: @"",
     
     };
     

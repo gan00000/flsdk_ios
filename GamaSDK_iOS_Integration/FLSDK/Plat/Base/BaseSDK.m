@@ -128,6 +128,12 @@
                 } errorBlock_MMMethodMMM:^(BJError *error) {
 
                 }];
+                
+                [SDKRequest getFloatConfigDataWithSuccessBlock_MMMethodMMM:^(id responseData) {
+                    
+                } errorBlock_MMMethodMMM:^(BJError *error) {
+                    
+                }];
             }
                 break;
         }
@@ -193,6 +199,12 @@
 
     } errorBlock_MMMethodMMM:^(BJError *error) {
 
+    }];
+    
+    [SDKRequest getFloatConfigDataWithSuccessBlock_MMMethodMMM:^(id responseData) {
+        
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        
     }];
     
     //定制了延时执行的任务，不会阻塞线程，在主线程和子线程中都可以，效率较高（推荐使用）。
