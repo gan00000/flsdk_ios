@@ -10,10 +10,20 @@
 #import "SdkHeader.h"
 #import "FloatMenuResp.h"
 #import "FloatConfigData.h"
+#import "NSString+URLEncoding.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
 
 @interface PersionCenterHorViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *gameIconIV;
+
+@property (weak, nonatomic) IBOutlet UILabel *gameNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *serverCodeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *roleNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *uidLabel;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *gameNameValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *serverNameValueLabel;
@@ -32,12 +42,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.changePwdBtn.layer.cornerRadius = 16;
+    self.switchAccountBtn.layer.cornerRadius = 16;
+    self.updateAccountBtn.layer.cornerRadius = 12;
+    
     FloatConfigData *floatConfigData = SDK_DATA.floatConfigData;
+    [self.gameIconIV sd_setImageWithURL:[NSURL URLWithString:floatConfigData.gameIcon] placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
+    
     FloatMenuResp *floatMenuResp = SDK_DATA.floatMenuResp;
     if (floatMenuResp) {
-        self.serverNameValueLabel.text = floatMenuResp.serverName;
-        self.roleNameValueLabel.text = floatMenuResp.roleName;
-        self.gameNameValueLabel.text = floatMenuResp.gameName;
+        self.serverNameValueLabel.text = [floatMenuResp.serverName urlDecode_MMMethodMMM];
+        self.roleNameValueLabel.text = [floatMenuResp.roleName urlDecode_MMMethodMMM];
+        self.gameNameValueLabel.text = [floatMenuResp.gameName urlDecode_MMMethodMMM];
         self.uidValueLabel.text = floatMenuResp.userId;
     }
     
@@ -46,23 +63,30 @@
         if (mLoginResponse.data.isBind) {
             self.accountValueLabel.text = mLoginResponse.data.account;
             self.accountValueLabel.hidden = NO;
+            self.accountLabel.hidden = NO;
+            
             self.updateAccountBtn.hidden = YES;
         }else{
             self.accountValueLabel.hidden = YES;
-            self.accountValueLabel.font = [UIFont systemFontOfSize:2];
+            self.accountLabel.hidden = YES;
+            self.accountLabel.font = [UIFont systemFontOfSize:2];
             self.updateAccountBtn.hidden = NO;
         }
     }
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)goToUpdateAccountPage:(id)sender {
 }
-*/
+
+- (IBAction)goToChangePwdPage:(id)sender {
+}
+
+- (IBAction)switchLoginAccount:(id)sender {
+}
+
+- (IBAction)delAccountAction:(id)sender {
+}
+
 
 @end

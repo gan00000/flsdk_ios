@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,14 +10,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersionCenterHorViewController">
             <connections>
+                <outlet property="accountLabel" destination="Lwd-8g-sm8" id="oxU-7X-8Zi"/>
                 <outlet property="accountValueLabel" destination="IaA-SS-7YG" id="dY6-Po-Wb0"/>
                 <outlet property="changePwdBtn" destination="eBT-U7-GtS" id="D9J-ll-ROd"/>
                 <outlet property="delAccountBtn" destination="ZjY-ag-lCW" id="wp3-B0-qFe"/>
                 <outlet property="gameIconIV" destination="aRo-ib-Xpe" id="tfb-zd-9Ax"/>
+                <outlet property="gameNameLabel" destination="u6G-gS-pCV" id="IJK-15-ZX9"/>
                 <outlet property="gameNameValueLabel" destination="DIg-Eb-JFq" id="iP8-rs-gfO"/>
+                <outlet property="roleNameLabel" destination="esm-tH-teo" id="cpC-eN-fvn"/>
                 <outlet property="roleNameValueLabel" destination="JIs-A6-hXN" id="rMs-e4-iN2"/>
+                <outlet property="serverCodeLabel" destination="Nur-v2-xMC" id="l9b-x7-ZIf"/>
                 <outlet property="serverNameValueLabel" destination="puA-8G-eg5" id="cxv-nb-RAV"/>
                 <outlet property="switchAccountBtn" destination="e14-nx-EHs" id="cVz-CJ-sJN"/>
+                <outlet property="uidLabel" destination="POH-kX-PBE" id="3rq-F7-Iru"/>
                 <outlet property="uidValueLabel" destination="Yxj-cK-KSV" id="eLL-Od-KTP"/>
                 <outlet property="updateAccountBtn" destination="KJ6-NF-HZX" id="sWe-p5-LqD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -30,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ox-3L-gJA">
-                    <rect key="frame" x="59" y="31.666666666666657" width="468" height="330"/>
+                    <rect key="frame" x="59" y="31.666666666666657" width="340" height="330"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-ib-Xpe">
                             <rect key="frame" x="25" y="30" width="72" height="72"/>
@@ -76,7 +80,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYZ-KL-CQz" userLabel="lineView">
-                            <rect key="frame" x="25" y="111.99999999999999" width="418" height="1"/>
+                            <rect key="frame" x="25" y="111.99999999999999" width="290" height="1"/>
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="c1k-hk-Ku2"/>
@@ -107,7 +111,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-NF-HZX">
-                            <rect key="frame" x="323" y="134" width="120" height="30"/>
+                            <rect key="frame" x="195" y="134" width="120" height="30"/>
                             <color key="backgroundColor" red="0.23137254901960785" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="S8w-BC-Da7"/>
@@ -118,9 +122,12 @@
                                 <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="goToUpdateAccountPage:" destination="-1" eventType="touchUpInside" id="lbf-sE-ite"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-U7-GtS">
-                            <rect key="frame" x="90" y="217" width="134" height="33"/>
+                            <rect key="frame" x="26" y="217" width="134" height="33"/>
                             <color key="backgroundColor" red="0.50588235294117645" green="0.83529411764705885" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="33" id="88T-Y9-Eng"/>
@@ -131,9 +138,12 @@
                                 <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="goToChangePwdPage:" destination="-1" eventType="touchUpInside" id="CXI-4O-S4l"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e14-nx-EHs" userLabel="切换账号">
-                            <rect key="frame" x="244" y="217" width="134" height="33"/>
+                            <rect key="frame" x="180" y="217" width="134" height="33"/>
                             <color key="backgroundColor" red="0.93725490196078431" green="0.45098039215686275" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="134" id="Rsu-Wf-CYS"/>
@@ -144,9 +154,12 @@
                                 <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="switchLoginAccount:" destination="-1" eventType="touchUpInside" id="4bE-IL-zNX"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjY-ag-lCW" userLabel="清除账号">
-                            <rect key="frame" x="343" y="275" width="100" height="25"/>
+                            <rect key="frame" x="215" y="275" width="100" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="6nc-X9-ooM"/>
@@ -157,9 +170,12 @@
                                 <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 <color key="baseForegroundColor" red="1" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="delAccountAction:" destination="-1" eventType="touchUpInside" id="9R9-MZ-7ap"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcI-fa-AGT" userLabel="line2View">
-                            <rect key="frame" x="363" y="300" width="60" height="1"/>
+                            <rect key="frame" x="235" y="300" width="60" height="1"/>
                             <color key="backgroundColor" red="1" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="79V-Up-Ohi"/>
@@ -190,7 +206,7 @@
                         <constraint firstItem="POH-kX-PBE" firstAttribute="top" secondItem="Lwd-8g-sm8" secondAttribute="bottom" constant="10" id="aJL-zH-ZnK"/>
                         <constraint firstItem="EcI-fa-AGT" firstAttribute="leading" secondItem="ZjY-ag-lCW" secondAttribute="leading" constant="20" id="anU-1x-9q6"/>
                         <constraint firstAttribute="trailing" secondItem="KJ6-NF-HZX" secondAttribute="trailing" constant="25" id="b9g-fM-6tg"/>
-                        <constraint firstAttribute="width" constant="468" id="cWM-fi-xqE"/>
+                        <constraint firstAttribute="width" constant="340" id="cWM-fi-xqE"/>
                         <constraint firstAttribute="trailing" secondItem="OYZ-KL-CQz" secondAttribute="trailing" constant="25" id="cYW-Vi-f4z"/>
                         <constraint firstItem="puA-8G-eg5" firstAttribute="centerY" secondItem="Nur-v2-xMC" secondAttribute="centerY" id="ege-ot-yxF"/>
                         <constraint firstItem="u6G-gS-pCV" firstAttribute="bottom" secondItem="DIg-Eb-JFq" secondAttribute="bottom" id="f4q-bF-hi6"/>

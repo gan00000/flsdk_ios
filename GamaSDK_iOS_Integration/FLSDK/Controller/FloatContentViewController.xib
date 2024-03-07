@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatContentViewController">
             <connections>
+                <outlet property="backBtn" destination="KyM-FW-LXT" id="HGF-dh-mV9"/>
+                <outlet property="floatContentView" destination="eqF-kp-N3i" id="aP7-uI-kOJ"/>
                 <outlet property="menuTableView" destination="j8d-eF-puR" id="pHx-Vl-Y3A"/>
                 <outlet property="mwWebView" destination="zt8-mx-Rz0" id="Irt-I4-HaA"/>
                 <outlet property="rightView" destination="wnb-yw-Az6" id="Chc-Bw-C5O"/>
@@ -33,25 +34,25 @@
                             </constraints>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnb-yw-Az6" userLabel="RightView">
-                            <rect key="frame" x="116" y="0.0" width="352" height="330"/>
+                            <rect key="frame" x="116" y="0.0" width="327" height="330"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-mx-Rz0" userLabel="mwWeb View" customClass="MWWebView">
-                                    <rect key="frame" x="0.0" y="0.0" width="352" height="330"/>
+                                    <rect key="frame" x="0.0" y="10" width="327" height="310"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="zt8-mx-Rz0" secondAttribute="trailing" id="578-3T-C9D"/>
-                                <constraint firstItem="zt8-mx-Rz0" firstAttribute="top" secondItem="wnb-yw-Az6" secondAttribute="top" id="OKS-on-yVs"/>
-                                <constraint firstAttribute="bottom" secondItem="zt8-mx-Rz0" secondAttribute="bottom" id="mF6-gj-TiV"/>
+                                <constraint firstItem="zt8-mx-Rz0" firstAttribute="top" secondItem="wnb-yw-Az6" secondAttribute="top" constant="10" id="OKS-on-yVs"/>
+                                <constraint firstAttribute="bottom" secondItem="zt8-mx-Rz0" secondAttribute="bottom" constant="10" id="mF6-gj-TiV"/>
                                 <constraint firstItem="zt8-mx-Rz0" firstAttribute="leading" secondItem="wnb-yw-Az6" secondAttribute="leading" id="rUd-U1-XK7"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="wnb-yw-Az6" secondAttribute="trailing" id="4Yh-6Y-XdV"/>
+                        <constraint firstAttribute="trailing" secondItem="wnb-yw-Az6" secondAttribute="trailing" constant="25" id="4Yh-6Y-XdV"/>
                         <constraint firstItem="wnb-yw-Az6" firstAttribute="top" secondItem="eqF-kp-N3i" secondAttribute="top" id="JHB-Jq-0Fb"/>
                         <constraint firstAttribute="height" constant="330" id="Qhg-rX-zvE"/>
                         <constraint firstItem="j8d-eF-puR" firstAttribute="leading" secondItem="eqF-kp-N3i" secondAttribute="leading" id="RnG-qn-qdk"/>
@@ -62,12 +63,21 @@
                         <constraint firstItem="wnb-yw-Az6" firstAttribute="leading" secondItem="j8d-eF-puR" secondAttribute="trailing" id="van-58-ziH"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KyM-FW-LXT">
+                    <rect key="frame" x="527" y="174" width="27" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="ppL-Ep-pc7"/>
+                        <constraint firstAttribute="height" constant="45" id="xgg-60-WTZ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <color key="backgroundColor" systemColor="tintColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="eqF-kp-N3i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4xK-Cs-WsM"/>
                 <constraint firstItem="eqF-kp-N3i" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bgz-Tr-d7Z"/>
+                <constraint firstItem="KyM-FW-LXT" firstAttribute="leading" secondItem="eqF-kp-N3i" secondAttribute="trailing" id="fow-ke-dMV"/>
+                <constraint firstItem="KyM-FW-LXT" firstAttribute="centerY" secondItem="eqF-kp-N3i" secondAttribute="centerY" id="vIJ-If-flh"/>
             </constraints>
             <point key="canvasLocation" x="138" y="20"/>
         </view>
@@ -75,9 +85,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

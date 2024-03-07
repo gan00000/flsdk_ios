@@ -54,6 +54,11 @@
     return [SUtil getProjectInfoPlist_MMMethodMMM][@"CFBundleDisplayName"];
 }
 
++ (UIImage *)getAppIconImage_MMMethodMMM
+{
+    return [UIImage imageNamed:@"AppIcon"];
+}
+
 #pragma mark - 获取时间戳
 +(NSString *)getTimeStamp_MMMethodMMM
 {

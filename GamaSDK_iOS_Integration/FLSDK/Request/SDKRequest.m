@@ -196,6 +196,7 @@
         if (responceModel && [responceModel isRequestSuccess_MMMethodMMM]) {
             
             FloatMenuResp *xFloatMenuResp = [FloatMenuResp yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data]];
+            SDK_DATA.floatMenuResp = xFloatMenuResp;
 //            FloatMenu *xFloatMenu = [NSArray yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
             NSArray<FloatMenuMode *> *xFloatMenuArr = [NSArray yy_modelArrayWithClass:[FloatMenuMode class] json:responseDict[wwwww_tag_wwwww_data][@"menuList"]];
             xFloatMenuResp.menuList = xFloatMenuArr;

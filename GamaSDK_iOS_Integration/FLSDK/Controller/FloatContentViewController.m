@@ -13,14 +13,17 @@
 #import "UIView+BlockGesture.h"
 #import "MWWebView.h"
 #import "PersionCenterHorViewController.h"
+#import "UIView+BlockGesture.h"
 
 @interface FloatContentViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIView *floatContentView;
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 @property (weak, nonatomic) IBOutlet UIView *rightView;
 @property (weak, nonatomic) IBOutlet MWWebView *mwWebView;
 
 @property (strong, nonatomic) UIView *persionCenterView;
+@property (weak, nonatomic) IBOutlet UIImageView *backBtn;
 
 @end
 
@@ -31,6 +34,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.view.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:wwwww_tag_wwwww__CC_000000 andAlpha_MMMethodMMM:0.3];
+    
     self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
 //    self.menuTableView.tableFooterView = [[UIView alloc] init];
@@ -40,6 +44,7 @@
     self.menuTableView.estimatedSectionHeaderHeight = 0;
     [self.menuTableView registerNib:[UINib nibWithNibName:XIB_FloatMenuCell bundle:SDK_BUNDLE]
          forCellReuseIdentifier:XIB_FloatMenuCell];
+    self.menuTableView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#EDEDED"];
     
     if (@available(iOS 11.0, *)) {
         self.menuTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -48,6 +53,9 @@
     }
     
     self.floatShowMenuList = SDK_DATA.floatShowMenuList;
+    if (self.floatShowMenuList.count > 0) {
+        self.floatShowMenuList[0].isClick = YES;
+    }
     
     PersionCenterHorViewController *mPersionCenterHorViewController = [[PersionCenterHorViewController alloc] initWithNibName:XIB_PersionCenterHorViewController bundle:SDK_BUNDLE];
     
@@ -56,6 +64,25 @@
     [self.persionCenterView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.rightView);
     }];
+    
+    [self.backBtn setImage:GetImage(@"float_back_dismiss")];
+    
+    self.backBtn.userInteractionEnabled = YES;
+    [self.backBtn addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
+        [self dismissViewControllerAnimated:NO completion:^{
+            
+        }];
+    }];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.floatContentView.layer.masksToBounds = YES;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.floatContentView.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(25, 25)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.floatContentView.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.floatContentView.layer.mask = maskLayer;
 }
 
 #pragma mark - UITableViewDataSource
@@ -72,15 +99,21 @@
     FloatMenuMode *xFloatMenuMode = self.floatShowMenuList[indexPath.row];
     FloatMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:XIB_FloatMenuCell];
     
-    [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:nil];
+    [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
     cell.menuTitleLabel.text = xFloatMenuMode.name;
+    
+    if (xFloatMenuMode.isClick) {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+    }else{
+        cell.contentView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#EDEDED"];
+    }
     
     return cell;
 }
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
    
-    return 50;
+    return 60;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -106,11 +139,15 @@
     if ([em.code isEqualToString:@"my"]) {
         
         self.mwWebView.hidden = YES;
-        
+        self.persionCenterView.hidden = NO;
         
     }else{
         self.mwWebView.hidden = NO;
-        [self.mwWebView loadRequest_MMMethodMMM:em.url];
+        self.persionCenterView.hidden = YES;
+        if ([StringUtil isNotEmpty_MMMethodMMM:em.url]) {
+            [self.mwWebView loadRequest_MMMethodMMM:em.url];
+        }
+        
     }
     
 //    em.isContentLoad = YES;
