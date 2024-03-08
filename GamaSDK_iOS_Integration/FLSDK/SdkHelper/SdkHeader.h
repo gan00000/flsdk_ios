@@ -25,6 +25,7 @@
 #import "SdkUtil.h"
 #import "NSString+Local.h"
 #import "NSString+Common.h"
+#import "UIView+BlockGesture.h"
 
 #ifndef CCSkyHourHeader_h
 #define CCSkyHourHeader_h

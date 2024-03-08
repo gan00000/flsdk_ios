@@ -14,6 +14,8 @@
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
 
+#import "FloatBindAccountViewController.h"
+
 @interface PersionCenterHorViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *gameIconIV;
@@ -34,6 +36,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *changePwdBtn;
 @property (weak, nonatomic) IBOutlet UIButton *switchAccountBtn;
 @property (weak, nonatomic) IBOutlet UIButton *delAccountBtn;
+
+@property (strong, nonatomic) FloatBindAccountViewController *mFloatBindAccountViewController;
 
 @end
 
@@ -73,10 +77,19 @@
             self.updateAccountBtn.hidden = NO;
         }
     }
+    
 }
 
 
 - (IBAction)goToUpdateAccountPage:(id)sender {
+    
+    self.mFloatBindAccountViewController = [[FloatBindAccountViewController alloc] initWithNibName:XIB_FloatBindAccountViewController bundle:SDK_BUNDLE];
+    
+    UIView *advViwe = self.mFloatBindAccountViewController.view;
+    [self.view addSubview:advViwe];
+    [advViwe mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
 }
 
 - (IBAction)goToChangePwdPage:(id)sender {

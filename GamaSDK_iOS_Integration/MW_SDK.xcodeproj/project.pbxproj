@@ -1795,6 +1795,28 @@
 		03CA730C29D5699600098979 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B93C1A1498B5009E77FF /* Accounts.framework */; };
 		03CA730E29D5699600098979 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9361A14989E009E77FF /* SystemConfiguration.framework */; };
 		03CA731029D5699600098979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE6B9301A149887009E77FF /* CoreGraphics.framework */; };
+		03CC78212B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78222B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78232B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78242B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78252B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78262B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78272B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */; };
+		03CC78282B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC78292B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782A2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782B2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782C2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782D2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782E2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */; };
+		03CC782F2B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78302B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78312B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78322B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78332B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78342B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78352B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
+		03CC78362B9B281100B2DA2D /* FloatBindAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */; };
 		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
 		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
 		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
@@ -2540,6 +2562,9 @@
 		03CA72B729D5698400098979 /* MWSDK_VN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWSDK_VN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CA731729D5699600098979 /* SDK_DEMO_VN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_DEMO_VN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CA731829D5699600098979 /* SDK_DEMO_VN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDK_DEMO_VN-Info.plist"; path = "/Users/ganyuanrong/iOSProject/flsdk_ios/GamaSDK_iOS_Integration/SDK_DEMO_VN-Info.plist"; sourceTree = "<absolute>"; };
+		03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatBindAccountViewController.h; sourceTree = "<group>"; };
+		03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatBindAccountViewController.m; sourceTree = "<group>"; };
+		03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatBindAccountViewController.xib; sourceTree = "<group>"; };
 		03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaverDelegate.h; sourceTree = "<group>"; };
 		03D302A02A6EAF0B00ED990B /* NaverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaverDelegate.m; sourceTree = "<group>"; };
 		03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NaverThirdPartyLogin.xcframework; sourceTree = "<group>"; };
@@ -3572,6 +3597,9 @@
 				03A19DFA2B970E6600F0C146 /* PersionCenterHorViewController.h */,
 				03A19DFB2B970E6600F0C146 /* PersionCenterHorViewController.m */,
 				03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */,
+				03CC781E2B9B03EC00B2DA2D /* FloatBindAccountViewController.h */,
+				03CC781F2B9B03EC00B2DA2D /* FloatBindAccountViewController.m */,
+				03CC78202B9B03EC00B2DA2D /* FloatBindAccountViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4560,6 +4588,7 @@
 				03509C9A29F91C8C00C840DA /* LoginData.h in Headers */,
 				03ED35FF2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				03F1B8332B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
+				03CC78252B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				039AC1F129F91DD700B416D8 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C32AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03509C9C29F91C8C00C840DA /* BasePopupView.h in Headers */,
@@ -4591,6 +4620,7 @@
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
 				03A19DE52B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				03F1B82F2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
+				03CC78212B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				0337750D2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4639,6 +4669,7 @@
 				038612E029388F8900CC9C44 /* GamaThirdSocial.h in Headers */,
 				038613892938906000CC9C44 /* FindPasswordViewV2.h in Headers */,
 				0386138C2938906000CC9C44 /* BindAccountViewV2.h in Headers */,
+				03CC78222B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				03A19DE62B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				038612E129388F8900CC9C44 /* UrlMode.h in Headers */,
 				0337750E2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4701,6 +4732,7 @@
 				0387B9E5291B8C9E001BACA8 /* LoginData.h in Headers */,
 				03ED35FD2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				03F1B8312B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
+				03CC78232B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				0387BA85291B8DA5001BACA8 /* TermsViewV2.h in Headers */,
 				0349F8C12AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				0387BA97291B92C5001BACA8 /* AccountLoginViewV2.h in Headers */,
@@ -4716,6 +4748,7 @@
 			files = (
 				03ED36122B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03A19E032B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
+				03CC78272B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				0392B1B52A5BA8DC00A3E2D6 /* NSString+Local.h in Headers */,
 				0392B1B62A5BA8DC00A3E2D6 /* BaseCountTimerView.h in Headers */,
 				03F1B8352B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
@@ -4797,6 +4830,7 @@
 				039B25FF298B555300045C53 /* LoginData.h in Headers */,
 				03ED35FE2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				03F1B8322B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
+				03CC78242B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				0381EC71298B5677006D6100 /* LoginWithRegViewV2.h in Headers */,
 				0349F8C22AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				039B2602298B555300045C53 /* BasePopupView.h in Headers */,
@@ -4848,6 +4882,7 @@
 				03C91BA82A7A377100289870 /* AdjustDelegate.h in Headers */,
 				033B332029D5C4BC00AE9F96 /* LoginTypeButton.h in Headers */,
 				03A19DEA2B97048900F0C146 /* FloatContentViewController.h in Headers */,
+				03CC78262B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				03A19E192B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
@@ -5235,6 +5270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03ED36212B989F700064C9D3 /* PersionCenterHorViewController.xib in Resources */,
+				03CC78362B9B281100B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED36222B989F770064C9D3 /* FloatContentViewController.xib in Resources */,
 				033775232AEA67A200D19EF5 /* ExposureController.xib in Resources */,
 				033775242AEA67A200D19EF5 /* ExposureHorControllerViewController.xib in Resources */,
@@ -5263,6 +5299,7 @@
 			files = (
 				03A19E0F2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF72B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78332B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361E2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5273,6 +5310,7 @@
 			files = (
 				03A19E0B2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF32B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC782F2B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361A2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5283,6 +5321,7 @@
 			files = (
 				03A19E0C2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF42B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78302B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361B2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5309,6 +5348,7 @@
 			files = (
 				03A19E0D2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF52B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78312B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361C2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5319,6 +5359,7 @@
 			files = (
 				03A19E112B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF92B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78352B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED36202B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5343,6 +5384,7 @@
 			files = (
 				03A19E0E2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF62B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78322B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361D2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5367,6 +5409,7 @@
 			files = (
 				03A19E102B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
 				03A19DF82B97048900F0C146 /* FloatContentViewController.xib in Resources */,
+				03CC78342B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361F2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5578,6 +5621,7 @@
 				03509D0829F91C8C00C840DA /* DimeUtil.m in Sources */,
 				0349F8CA2AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				03509D0929F91C8C00C840DA /* LoginButtonData.m in Sources */,
+				03CC782C2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				03509D0A29F91C8C00C840DA /* SDKLoginViewController.m in Sources */,
 				03509D0B29F91C8C00C840DA /* LoginButton.m in Sources */,
 				03509D0C29F91C8C00C840DA /* AccountLoginView.m in Sources */,
@@ -5625,6 +5669,7 @@
 				03A19E2B2B9857AD00F0C146 /* FloatMenuMode.m in Sources */,
 				037C6F562875ACD70041EC34 /* MASConstraint.m in Sources */,
 				037C6F572875ACD70041EC34 /* MASViewConstraint.m in Sources */,
+				03CC78282B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				03A19DEC2B97048900F0C146 /* FloatContentViewController.m in Sources */,
 				03F1B8212B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */,
 				037C6F582875ACD70041EC34 /* MASViewAttribute.m in Sources */,
@@ -5881,6 +5926,7 @@
 				0386135429388F8900CC9C44 /* DimeUtil.m in Sources */,
 				0349F8C72AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				0386135529388F8900CC9C44 /* LoginButtonData.m in Sources */,
+				03CC78292B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				0386135629388F8900CC9C44 /* SDKLoginViewController.m in Sources */,
 				0386135729388F8900CC9C44 /* LoginButton.m in Sources */,
 				0386135829388F8900CC9C44 /* AccountLoginView.m in Sources */,
@@ -6046,6 +6092,7 @@
 				0387BA53291B8C9E001BACA8 /* LoginButton.m in Sources */,
 				0349F8C82AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				0387BA54291B8C9E001BACA8 /* AccountLoginView.m in Sources */,
+				03CC782A2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				0387BA55291B8C9E001BACA8 /* BindAccountView.m in Sources */,
 				0387BA56291B8C9E001BACA8 /* ChangePasswordView.m in Sources */,
 				0387BA57291B8C9E001BACA8 /* FindPasswordView.m in Sources */,
@@ -6177,6 +6224,7 @@
 				0392B21E2A5BA8DC00A3E2D6 /* AFURLResponseSerialization.m in Sources */,
 				0392B21F2A5BA8DC00A3E2D6 /* AFHTTPSessionManager.m in Sources */,
 				0392B2202A5BA8DC00A3E2D6 /* AFURLSessionManager.m in Sources */,
+				03CC782E2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				0392B2212A5BA8DC00A3E2D6 /* AFURLRequestSerialization.m in Sources */,
 				0392B2222A5BA8DC00A3E2D6 /* AFNetworkReachabilityManager.m in Sources */,
 				0392B2232A5BA8DC00A3E2D6 /* AFSecurityPolicy.m in Sources */,
@@ -6366,6 +6414,7 @@
 				039B266A298B555300045C53 /* DimeUtil.m in Sources */,
 				0349F8C92AD7E27B0015750A /* ExposureHorControllerViewController.m in Sources */,
 				039B266B298B555300045C53 /* LoginButtonData.m in Sources */,
+				03CC782B2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				039B266C298B555300045C53 /* SDKLoginViewController.m in Sources */,
 				039B266D298B555300045C53 /* LoginButton.m in Sources */,
 				039B266E298B555300045C53 /* AccountLoginView.m in Sources */,
@@ -6506,6 +6555,7 @@
 				03CA727C29D5698400098979 /* NSString+Common.m in Sources */,
 				03CA727D29D5698400098979 /* SUtil.m in Sources */,
 				03CA727E29D5698400098979 /* BaseCountTimerView.m in Sources */,
+				03CC782D2B9B03EC00B2DA2D /* FloatBindAccountViewController.m in Sources */,
 				03CA727F29D5698400098979 /* UIUtil.m in Sources */,
 				03CA728029D5698400098979 /* ViewUtil.m in Sources */,
 				03CA728129D5698400098979 /* StringUtil.m in Sources */,

@@ -25,6 +25,8 @@
 @property (strong, nonatomic) UIView *persionCenterView;
 @property (weak, nonatomic) IBOutlet UIImageView *backBtn;
 
+@property (strong, nonatomic) PersionCenterHorViewController *mPersionCenterHorViewController;
+
 @end
 
 @implementation FloatContentViewController
@@ -57,9 +59,9 @@
         self.floatShowMenuList[0].isClick = YES;
     }
     
-    PersionCenterHorViewController *mPersionCenterHorViewController = [[PersionCenterHorViewController alloc] initWithNibName:XIB_PersionCenterHorViewController bundle:SDK_BUNDLE];
+    self.mPersionCenterHorViewController = [[PersionCenterHorViewController alloc] initWithNibName:XIB_PersionCenterHorViewController bundle:SDK_BUNDLE];
     
-    self.persionCenterView = mPersionCenterHorViewController.view;
+    self.persionCenterView = self.mPersionCenterHorViewController.view;
     [self.rightView addSubview:self.persionCenterView];
     [self.persionCenterView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.rightView);
@@ -70,7 +72,7 @@
     self.backBtn.userInteractionEnabled = YES;
     [self.backBtn addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         [self dismissViewControllerAnimated:NO completion:^{
-            
+
         }];
     }];
 }

@@ -321,6 +321,8 @@
 
 #define XIB_FloatContentViewController   @"FloatContentViewController"
 #define XIB_PersionCenterHorViewController   @"PersionCenterHorViewController"
+#define XIB_FloatBindAccountViewController   @"FloatBindAccountViewController"
+
 #define XIB_FloatMenuCell   @"FloatMenuCell"
 
 #else
