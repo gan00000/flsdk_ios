@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,10 +28,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sl6-Ub-pPj">
-                    <rect key="frame" x="59" y="31.666666666666657" width="340" height="330"/>
+                    <rect key="frame" x="281" y="31.666666666666657" width="290" height="330"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="升級帳號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHs-qa-V0Q">
-                            <rect key="frame" x="129.33333333333334" y="16.999999999999996" width="81.666666666666657" height="24.000000000000004"/>
+                            <rect key="frame" x="104.33333333333331" y="16.999999999999996" width="81.666666666666686" height="24.000000000000004"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -45,7 +44,7 @@
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-4F-76W" userLabel="lineView">
-                            <rect key="frame" x="31.666666666666686" y="53" width="277" height="1"/>
+                            <rect key="frame" x="6.6666666666666856" y="53" width="277" height="1"/>
                             <color key="backgroundColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="277" id="KiT-Ch-YVJ"/>
@@ -53,7 +52,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPD-Th-pbw" userLabel="accountView">
-                            <rect key="frame" x="25" y="79" width="290" height="34"/>
+                            <rect key="frame" x="0.0" y="79" width="290" height="34"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHV-IG-1ga" userLabel="account icon Image View">
                                     <rect key="frame" x="16" y="6.3333333333333286" width="21" height="21"/>
@@ -100,7 +99,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uj5-LD-TDI" userLabel="pwdView">
-                            <rect key="frame" x="25" y="121" width="290" height="34"/>
+                            <rect key="frame" x="0.0" y="121" width="290" height="34"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-Bb-JCa" userLabel="pwd icon Image View">
                                     <rect key="frame" x="16" y="6.3333333333333428" width="21" height="21"/>
@@ -147,13 +146,13 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*帳號信箱將會作爲您找回密的驗證信箱，請謹慎輸入" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZU-CJ-UeO" userLabel="warmlabel">
-                            <rect key="frame" x="0.0" y="163" width="340" height="12"/>
+                            <rect key="frame" x="0.0" y="163" width="290" height="12"/>
                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                             <color key="textColor" red="0.69803921568627447" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-n2-FhK" userLabel="confirmBtn">
-                            <rect key="frame" x="25" y="215" width="290" height="40"/>
+                            <rect key="frame" x="0.0" y="215" width="290" height="40"/>
                             <color key="backgroundColor" red="0.93725490196078431" green="0.45098039215686275" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Klk-Qa-rdC"/>
@@ -189,7 +188,7 @@
                         <constraint firstItem="xa4-4F-76W" firstAttribute="top" secondItem="aHs-qa-V0Q" secondAttribute="bottom" constant="12" id="fSI-7l-2y1"/>
                         <constraint firstItem="Uj5-LD-TDI" firstAttribute="centerX" secondItem="Sl6-Ub-pPj" secondAttribute="centerX" id="gl3-Gb-SFi"/>
                         <constraint firstItem="DZU-CJ-UeO" firstAttribute="leading" secondItem="Sl6-Ub-pPj" secondAttribute="leading" id="hYP-bn-4Yn"/>
-                        <constraint firstAttribute="width" constant="340" id="lKc-r0-ckJ"/>
+                        <constraint firstAttribute="width" constant="290" id="lKc-r0-ckJ"/>
                         <constraint firstItem="aHs-qa-V0Q" firstAttribute="centerX" secondItem="Sl6-Ub-pPj" secondAttribute="centerX" id="yCP-1Y-jaY"/>
                         <constraint firstItem="xa4-4F-76W" firstAttribute="centerX" secondItem="Sl6-Ub-pPj" secondAttribute="centerX" id="yWp-lT-PPJ"/>
                         <constraint firstAttribute="height" constant="330" id="zOu-cd-k2a"/>
@@ -200,7 +199,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Sl6-Ub-pPj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="17j-28-uQe"/>
-                <constraint firstItem="Sl6-Ub-pPj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="FJV-cc-XQ9"/>
+                <constraint firstItem="Sl6-Ub-pPj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LF1-sb-DAi"/>
             </constraints>
             <point key="canvasLocation" x="-63.380281690140848" y="19.083969465648853"/>
         </view>

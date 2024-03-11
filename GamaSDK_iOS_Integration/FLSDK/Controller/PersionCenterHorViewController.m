@@ -88,7 +88,8 @@
     UIView *advViwe = self.mFloatBindAccountViewController.view;
     [self.view addSubview:advViwe];
     [advViwe mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view);
+        make.leading.mas_equalTo(self.view);
+        make.top.bottom.trailing.mas_equalTo(self.view);
     }];
 }
 

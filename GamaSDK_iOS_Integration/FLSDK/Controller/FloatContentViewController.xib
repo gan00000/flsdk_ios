@@ -34,10 +34,10 @@
                             </constraints>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnb-yw-Az6" userLabel="RightView">
-                            <rect key="frame" x="116" y="0.0" width="327" height="330"/>
+                            <rect key="frame" x="141" y="0.0" width="302" height="330"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-mx-Rz0" userLabel="mwWeb View" customClass="MWWebView">
-                                    <rect key="frame" x="0.0" y="10" width="327" height="310"/>
+                                    <rect key="frame" x="0.0" y="10" width="302" height="310"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
@@ -60,7 +60,7 @@
                         <constraint firstAttribute="bottom" secondItem="j8d-eF-puR" secondAttribute="bottom" id="osP-00-V1v"/>
                         <constraint firstItem="j8d-eF-puR" firstAttribute="top" secondItem="eqF-kp-N3i" secondAttribute="top" id="pgV-b3-8JV"/>
                         <constraint firstAttribute="width" constant="468" id="unW-in-9D8"/>
-                        <constraint firstItem="wnb-yw-Az6" firstAttribute="leading" secondItem="j8d-eF-puR" secondAttribute="trailing" id="van-58-ziH"/>
+                        <constraint firstItem="wnb-yw-Az6" firstAttribute="leading" secondItem="j8d-eF-puR" secondAttribute="trailing" constant="25" id="van-58-ziH"/>
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KyM-FW-LXT">

@@ -64,7 +64,8 @@
     self.persionCenterView = self.mPersionCenterHorViewController.view;
     [self.rightView addSubview:self.persionCenterView];
     [self.persionCenterView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.rightView);
+        make.leading.mas_equalTo(self.rightView);
+        make.top.bottom.trailing.mas_equalTo(self.rightView);
     }];
     
     [self.backBtn setImage:GetImage(@"float_back_dismiss")];
