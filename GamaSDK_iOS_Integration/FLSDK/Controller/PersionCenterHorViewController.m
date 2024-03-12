@@ -13,6 +13,7 @@
 #import "NSString+URLEncoding.h"
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
+#import "LoginHelper.h"
 
 #import "FloatBindAccountViewController.h"
 #import "FloatChangePwdViewController.h"
@@ -146,7 +147,34 @@
 }
 - (IBAction)confirmDelBtnAction:(id)sender {
     
+    [self doDeleteAccount_MMMethodMMM];
 }
 
+
+- (void)doDeleteAccount_MMMethodMMM {
+    
+//    if (!currentAccountModel || [StringUtil isEmpty_MMMethodMMM:currentAccountModel.userId]) {
+//        [SdkUtil toastMsg_MMMethodMMM:wwwww_tag_wwwww_text_select_account.localx];
+//        return;
+//    }
+//    [LoginHelper deleteAccountAndRequest_MMMethodMMM:nil view_MMMethodMMM:self.view account_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^{
+//
+//        [deleteAccountConfireView removeFromSuperview];
+//
+//
+//    }];
+    
+    [SDKRequest requestDeleteUserAccount_MMMethodMMM:SDK_DATA.mLoginResponse.data otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        LoginResponse *cc = (LoginResponse *)responseData;
+        [SdkUtil toastMsg_MMMethodMMM:cc.message];
+        [[ConfigCoreUtil share] removeAccountByUserId_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
+        self.delContentView.hidden = YES;
+        
+        
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
+    }];
+}
 
 @end
