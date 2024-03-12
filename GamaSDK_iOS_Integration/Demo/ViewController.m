@@ -25,6 +25,13 @@
     UITextField *m_textField_roleID;
     
     NSMutableData *_tData;
+    
+    NSString *roleId;
+    NSString *roleName ;
+    NSString *roleLevel ;
+    NSString *roleVipLevel;
+    NSString *serverCode;
+    NSString *serverName;
 }
 @end
 
@@ -52,6 +59,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    roleId = @"1";
+    roleName = @"aa";
+    roleLevel = @"10";
+    serverCode = @"1";
+    serverName = @"mamd";
+    roleVipLevel = @"100";
     
     /*********************************************
      SDK测试项目
@@ -87,9 +101,10 @@
                           @"本地定时通知",
                           @"本地定期通知",
                             @"显示社群banner",
+                        @"显示悬浮",
                           ];
     
-    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13];
+    self.keyArray = @[@0, @12, @1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@13, @15];
 
     
     // iOS 获取设备当前语言的代码
@@ -157,6 +172,8 @@
                 //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
+                
+                [[MWSDK share] setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
             }];
             
 
@@ -176,6 +193,9 @@
                 //[GamaUtils gamaToastWithMsg:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 [AlertUtil showAlertWithMessage_MMMethodMMM:[NSString stringWithFormat:@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp]];
                 NSLog(@"userId:%@, accessToken:%@, timestamp:%@", userId, accessToken, timestamp);
+                
+                [[MWSDK share] setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+                
             }];
             
 
@@ -188,7 +208,7 @@
         case 1:
         {
             
-            [[MWSDK share] setRoleInfoWithRoleId:@"22006992996306" roleName:@"顶顶顶顶休息下" roleLevel:@"1" roleVipLevel:@"1" serverCode:@"999" serverName:@"xxxx"];
+            [[MWSDK share] setRoleInfoWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
             
             
         }
@@ -314,6 +334,13 @@
             [[MWSDK share] showSocialView];
         }
             break;
+            
+        case 15:{
+            [[MWSDK share] showFloatViewWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName switchAccountBlock:^(BOOL success, id  _Nullable result) {
+                //强制切换账号，退出当前游戏角色，回到登录界面
+            }];
+        }
+            break;
 
        
     }
@@ -325,7 +352,7 @@
     NSString *cpOrderId = [SUtil getTimeStamp_MMMethodMMM];//游戏订单ID
     NSString *extra = [NSString stringWithFormat:@"extra%@",cpOrderId];
     
-    [[MWSDK share] payWithRoleId:@"22006992996306" roleName:@"哈哈下" roleLevel:@"100" roleVipLevel:@"0" serverCode:@"999" serverName:@"无敌服" productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
+    [[MWSDK share] payWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName productId:aProductID cpOrderId:cpOrderId extra:extra completionHandler:^(SDK_PAY_STATUS status, PayData *mPayData) {
         NSLog(@"pay finish");
         
         switch (status) {
