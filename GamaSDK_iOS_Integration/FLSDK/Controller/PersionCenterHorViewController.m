@@ -15,6 +15,7 @@
 #import "UIImageView+WebCache.h"
 
 #import "FloatBindAccountViewController.h"
+#import "FloatChangePwdViewController.h"
 
 @interface PersionCenterHorViewController ()
 
@@ -36,8 +37,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *changePwdBtn;
 @property (weak, nonatomic) IBOutlet UIButton *switchAccountBtn;
 @property (weak, nonatomic) IBOutlet UIButton *delAccountBtn;
+@property (weak, nonatomic) IBOutlet UIView *delContentView;
+@property (weak, nonatomic) IBOutlet UIButton *cancelDelBtn;
+@property (weak, nonatomic) IBOutlet UIButton *confirmDelBtn;
+@property (weak, nonatomic) IBOutlet UILabel *delWarmLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *delWarnIcon;
 
 @property (strong, nonatomic) FloatBindAccountViewController *mFloatBindAccountViewController;
+@property (strong, nonatomic) FloatChangePwdViewController *mFloatChangePwdViewController;
 
 @end
 
@@ -78,6 +85,16 @@
         }
     }
     
+    
+    self.delContentView.hidden = YES;
+    self.delContentView.layer.cornerRadius = 15;
+    
+    self.delWarnIcon.image = GetImage(@"float_del_account_warnings");
+    self.cancelDelBtn.layer.cornerRadius = 16;
+    self.cancelDelBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#DDDDDD"].CGColor;
+    self.cancelDelBtn.layer.borderWidth = 0.5;
+    
+    self.confirmDelBtn.layer.cornerRadius = 16;
 }
 
 
@@ -94,12 +111,31 @@
 }
 
 - (IBAction)goToChangePwdPage:(id)sender {
+    
+    self.mFloatChangePwdViewController = [[FloatChangePwdViewController alloc] initWithNibName:XIB_FloatChangePwdViewController bundle:SDK_BUNDLE];
+    
+    UIView *advViwe = self.mFloatChangePwdViewController.view;
+    [self.view addSubview:advViwe];
+    [advViwe mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(self.view);
+        make.top.bottom.trailing.mas_equalTo(self.view);
+    }];
+    
 }
 
 - (IBAction)switchLoginAccount:(id)sender {
 }
 
 - (IBAction)delAccountAction:(id)sender {
+    
+    self.delContentView.hidden = NO;
+}
+
+- (IBAction)cancelDelBtnAction:(id)sender {
+    self.delContentView.hidden = YES;
+}
+- (IBAction)confirmDelBtnAction:(id)sender {
+    
 }
 
 

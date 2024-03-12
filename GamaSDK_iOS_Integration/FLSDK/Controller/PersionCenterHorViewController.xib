@@ -12,8 +12,13 @@
             <connections>
                 <outlet property="accountLabel" destination="Lwd-8g-sm8" id="oxU-7X-8Zi"/>
                 <outlet property="accountValueLabel" destination="IaA-SS-7YG" id="dY6-Po-Wb0"/>
+                <outlet property="cancelDelBtn" destination="XXv-dC-bzb" id="Ywc-cI-TGJ"/>
                 <outlet property="changePwdBtn" destination="eBT-U7-GtS" id="D9J-ll-ROd"/>
+                <outlet property="confirmDelBtn" destination="f9e-eD-ENZ" id="LKS-gV-CfN"/>
                 <outlet property="delAccountBtn" destination="ZjY-ag-lCW" id="wp3-B0-qFe"/>
+                <outlet property="delContentView" destination="ZBh-oZ-jHy" id="vyO-tA-QJk"/>
+                <outlet property="delWarmLabel" destination="pBc-IR-uoo" id="9AN-2p-Ikf"/>
+                <outlet property="delWarnIcon" destination="VRg-Z9-AJr" id="6Sr-9K-NH4"/>
                 <outlet property="gameIconIV" destination="aRo-ib-Xpe" id="tfb-zd-9Ax"/>
                 <outlet property="gameNameLabel" destination="u6G-gS-pCV" id="IJK-15-ZX9"/>
                 <outlet property="gameNameValueLabel" destination="DIg-Eb-JFq" id="iP8-rs-gfO"/>
@@ -181,6 +186,69 @@
                                 <constraint firstAttribute="height" constant="1" id="79V-Up-Ohi"/>
                             </constraints>
                         </view>
+                        <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-oZ-jHy" userLabel="delAccountWarmView">
+                            <rect key="frame" x="0.0" y="121" width="290" height="160"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-dC-bzb" userLabel="cancelDelBtn">
+                                    <rect key="frame" x="37" y="109.00000000000003" width="100" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="8S5-6r-uXn"/>
+                                        <constraint firstAttribute="height" constant="33" id="VBv-SO-1mH"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="取消">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="cancelDelBtnAction:" destination="-1" eventType="touchUpInside" id="6mn-Ja-2jd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-eD-ENZ" userLabel="confirmDelBtn">
+                                    <rect key="frame" x="153" y="109.00000000000003" width="100" height="33"/>
+                                    <color key="backgroundColor" red="0.85490196078431369" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="SVW-XH-nXu"/>
+                                        <constraint firstAttribute="height" constant="33" id="i3Z-dt-5pn"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="確認">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="confirmDelBtnAction:" destination="-1" eventType="touchUpInside" id="uy5-oI-mEb"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-Z9-AJr">
+                                    <rect key="frame" x="129" y="10" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="K0H-r2-dtC"/>
+                                        <constraint firstAttribute="width" constant="32" id="vD3-Ve-g7J"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請注意，刪除帳號將會將您的帳號從平台中徹底刪除，如果確認刪除，請點擊“確認”" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-IR-uoo" userLabel="delWarmLabel">
+                                    <rect key="frame" x="8" y="48" width="274" height="57"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="f9e-eD-ENZ" firstAttribute="leading" secondItem="XXv-dC-bzb" secondAttribute="trailing" constant="16" id="6ul-NI-zd5"/>
+                                <constraint firstAttribute="bottom" secondItem="XXv-dC-bzb" secondAttribute="bottom" constant="18" id="BXG-iu-Ww2"/>
+                                <constraint firstItem="pBc-IR-uoo" firstAttribute="leading" secondItem="ZBh-oZ-jHy" secondAttribute="leading" constant="8" id="G9K-ih-m5x"/>
+                                <constraint firstItem="XXv-dC-bzb" firstAttribute="trailing" secondItem="ZBh-oZ-jHy" secondAttribute="centerX" constant="-8" id="Uzo-4o-XqN"/>
+                                <constraint firstItem="VRg-Z9-AJr" firstAttribute="centerX" secondItem="ZBh-oZ-jHy" secondAttribute="centerX" id="VGy-f4-tp3"/>
+                                <constraint firstAttribute="height" constant="160" id="b0G-ps-Yix"/>
+                                <constraint firstAttribute="trailing" secondItem="pBc-IR-uoo" secondAttribute="trailing" constant="8" id="dXQ-yR-jkN"/>
+                                <constraint firstAttribute="bottom" secondItem="f9e-eD-ENZ" secondAttribute="bottom" constant="18" id="pYR-VN-jER"/>
+                                <constraint firstItem="VRg-Z9-AJr" firstAttribute="top" secondItem="ZBh-oZ-jHy" secondAttribute="top" constant="10" id="ueM-cb-OP4"/>
+                                <constraint firstItem="XXv-dC-bzb" firstAttribute="top" secondItem="pBc-IR-uoo" secondAttribute="bottom" constant="4" id="vqW-zu-BGA"/>
+                                <constraint firstItem="pBc-IR-uoo" firstAttribute="top" secondItem="VRg-Z9-AJr" secondAttribute="bottom" constant="6" id="xDj-O6-VKa"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -190,6 +258,7 @@
                         <constraint firstAttribute="bottom" secondItem="ZjY-ag-lCW" secondAttribute="bottom" constant="30" id="7U8-lc-CfE"/>
                         <constraint firstItem="Nur-v2-xMC" firstAttribute="leading" secondItem="u6G-gS-pCV" secondAttribute="leading" id="9B4-iX-acb"/>
                         <constraint firstItem="puA-8G-eg5" firstAttribute="leading" secondItem="Nur-v2-xMC" secondAttribute="trailing" constant="2" id="9Ka-ZH-4jv"/>
+                        <constraint firstItem="ZBh-oZ-jHy" firstAttribute="top" secondItem="OYZ-KL-CQz" secondAttribute="bottom" constant="8" id="A5v-n8-NlU"/>
                         <constraint firstItem="ZjY-ag-lCW" firstAttribute="trailing" secondItem="EcI-fa-AGT" secondAttribute="trailing" constant="20" id="Aat-Mo-5Xp"/>
                         <constraint firstItem="Lwd-8g-sm8" firstAttribute="top" secondItem="OYZ-KL-CQz" secondAttribute="bottom" constant="20" id="BLs-nB-oLV"/>
                         <constraint firstItem="Yxj-cK-KSV" firstAttribute="leading" secondItem="POH-kX-PBE" secondAttribute="trailing" constant="2" id="ETI-2I-0hE"/>
@@ -212,6 +281,7 @@
                         <constraint firstItem="u6G-gS-pCV" firstAttribute="bottom" secondItem="DIg-Eb-JFq" secondAttribute="bottom" id="f4q-bF-hi6"/>
                         <constraint firstAttribute="bottom" secondItem="eBT-U7-GtS" secondAttribute="bottom" constant="80" id="fhI-Lw-FMl"/>
                         <constraint firstItem="u6G-gS-pCV" firstAttribute="leading" secondItem="aRo-ib-Xpe" secondAttribute="trailing" constant="10" id="hXN-h0-j5p"/>
+                        <constraint firstItem="ZBh-oZ-jHy" firstAttribute="leading" secondItem="7ox-3L-gJA" secondAttribute="leading" id="i7u-Al-oU8"/>
                         <constraint firstItem="e14-nx-EHs" firstAttribute="centerY" secondItem="eBT-U7-GtS" secondAttribute="centerY" id="ibd-pe-VOE"/>
                         <constraint firstItem="POH-kX-PBE" firstAttribute="leading" secondItem="Lwd-8g-sm8" secondAttribute="leading" id="jOf-iu-Ye2"/>
                         <constraint firstItem="Yxj-cK-KSV" firstAttribute="centerY" secondItem="POH-kX-PBE" secondAttribute="centerY" id="k04-5Z-jW0"/>
@@ -222,6 +292,7 @@
                         <constraint firstItem="IaA-SS-7YG" firstAttribute="centerY" secondItem="Lwd-8g-sm8" secondAttribute="centerY" id="oyk-gC-aM5"/>
                         <constraint firstItem="u6G-gS-pCV" firstAttribute="top" secondItem="aRo-ib-Xpe" secondAttribute="top" id="ppL-s7-JYX"/>
                         <constraint firstItem="esm-tH-teo" firstAttribute="leading" secondItem="u6G-gS-pCV" secondAttribute="leading" id="rlr-M2-qDp"/>
+                        <constraint firstAttribute="trailing" secondItem="ZBh-oZ-jHy" secondAttribute="trailing" id="scR-fJ-KtS"/>
                         <constraint firstAttribute="trailing" secondItem="ZjY-ag-lCW" secondAttribute="trailing" id="udj-Q8-LZQ"/>
                     </constraints>
                 </view>

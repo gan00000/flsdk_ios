@@ -6,7 +6,7 @@
 //  Copyright © 2024 Gama. All rights reserved.
 //
 
-#import "FloatBindAccountViewController.h"
+#import "FloatChangePwdViewController.h"
 
 #import "SdkHeader.h"
 #import "FloatMenuResp.h"
@@ -15,7 +15,7 @@
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
 
-@interface FloatBindAccountViewController ()
+@interface FloatChangePwdViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -30,9 +30,13 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *confirmBtn;
 
+@property (weak, nonatomic) IBOutlet UIView *againPwdContentView;
+@property (weak, nonatomic) IBOutlet UIImageView *againPwdIconImageView;
+@property (weak, nonatomic) IBOutlet UITextField *againPwdTF;
+
 @end
 
-@implementation FloatBindAccountViewController
+@implementation FloatChangePwdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,6 +57,11 @@
     self.pwdContentView.layer.borderWidth = 0.5;
     self.pwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
     self.pwdIconImageView.image = GetImage(@"float_icon_password");
+    
+    self.againPwdContentView.layer.cornerRadius = 16;
+    self.againPwdContentView.layer.borderWidth = 0.5;
+    self.againPwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
+    self.againPwdIconImageView.image = GetImage(@"float_icon_again_pwd");
     
 }
 

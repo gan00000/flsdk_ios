@@ -1820,6 +1820,28 @@
 		03D302A72A6EAF0B00ED990B /* NaverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D3029F2A6EAF0B00ED990B /* NaverDelegate.h */; };
 		03D302AE2A6EAF0B00ED990B /* NaverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D302A02A6EAF0B00ED990B /* NaverDelegate.m */; };
 		03D302B12A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */; };
+		03D95E612B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E622B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E632B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E642B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E652B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E662B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E672B9F440C00643231 /* FloatChangePwdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */; };
+		03D95E682B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E692B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6A2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6B2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6C2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6D2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6E2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */; };
+		03D95E6F2B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E702B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E712B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E722B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E732B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E742B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E752B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
+		03D95E762B9F480600643231 /* FloatChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */; };
 		03ED35FB2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
 		03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
 		03ED35FD2B9875BC0064C9D3 /* FloatConfigData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */; };
@@ -2570,6 +2592,9 @@
 		03D302B02A6EB04F00ED990B /* NaverThirdPartyLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NaverThirdPartyLogin.xcframework; sourceTree = "<group>"; };
 		03D5F35C28D3187F00C3855E /* imageNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageNameHeader.h; sourceTree = "<group>"; };
 		03D5F35E28D3187F00C3855E /* preHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preHeader.pch; sourceTree = "<group>"; };
+		03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatChangePwdViewController.h; sourceTree = "<group>"; };
+		03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatChangePwdViewController.m; sourceTree = "<group>"; };
+		03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatChangePwdViewController.xib; sourceTree = "<group>"; };
 		03D97DD5286EE281008D0B3A /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
 		03D97DD6286EE281008D0B3A /* BaseSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSDK.m; sourceTree = "<group>"; };
 		03D97DD7286EE281008D0B3A /* BaseSDKImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSDKImpl.h; sourceTree = "<group>"; };
@@ -3581,6 +3606,9 @@
 		0337E0112AE101BA00F171B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03D95E5E2B9F440C00643231 /* FloatChangePwdViewController.h */,
+				03D95E5F2B9F440C00643231 /* FloatChangePwdViewController.m */,
+				03D95E602B9F440C00643231 /* FloatChangePwdViewController.xib */,
 				032BE76C2AD69023001106E1 /* ExposureController.h */,
 				032BE76D2AD69023001106E1 /* ExposureController.m */,
 				032BE76E2AD69023001106E1 /* ExposureController.xib */,
@@ -4572,6 +4600,7 @@
 				03509C9429F91C8C00C840DA /* UrlMode.h in Headers */,
 				03509C9529F91C8C00C840DA /* TouchEventInterruptView.h in Headers */,
 				03F1B8482B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
+				03D95E652B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
 				03F1B82C2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
@@ -4604,6 +4633,7 @@
 			files = (
 				03ED360C2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				030FAA4628A0FA7C00709536 /* LoginWithRegViewV2.h in Headers */,
+				03D95E612B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				031B9FBD2897D81600D35EFB /* NSString+Local.h in Headers */,
 				0349F8BF2AD7E27B0015750A /* ExposureHorControllerViewController.h in Headers */,
 				03ED35FB2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
@@ -4653,6 +4683,7 @@
 				03F1B8452B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				03A19E252B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
+				03D95E622B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				03F1B8302B8DCA6C009B6747 /* UIImage+ColorToImageTW.h in Headers */,
 				03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
@@ -4716,6 +4747,7 @@
 				0352F70E2927671F00160A67 /* TouchEventInterruptView.h in Headers */,
 				0387B9E0291B8C9E001BACA8 /* CountTimerDelegate.h in Headers */,
 				03F1B8462B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
+				03D95E632B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				0387B9E2291B8C9E001BACA8 /* PayData.h in Headers */,
 				03F1B82A2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
@@ -4784,6 +4816,7 @@
 				0392B1C72A5BA8DC00A3E2D6 /* BasePopupView.h in Headers */,
 				0349F8B42AD7A1190015750A /* ExpoModel.h in Headers */,
 				0392B2752A5BA99900A3E2D6 /* MainHomeViewV2.h in Headers */,
+				03D95E672B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
 				03A19E2A2B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4814,6 +4847,7 @@
 				039B25F7298B555300045C53 /* UrlMode.h in Headers */,
 				039B25F9298B555300045C53 /* TouchEventInterruptView.h in Headers */,
 				03F1B8472B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
+				03D95E642B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				039B25FA298B555300045C53 /* CountTimerDelegate.h in Headers */,
 				03F1B82B2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
 				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
@@ -4871,6 +4905,7 @@
 				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
 				03F1B8022B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
+				03D95E662B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				03F1B8492B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				03CA722629D5698400098979 /* UrlMode.h in Headers */,
 				03CA722829D5698400098979 /* CountTimerDelegate.h in Headers */,
@@ -5275,6 +5310,7 @@
 				033775232AEA67A200D19EF5 /* ExposureController.xib in Resources */,
 				033775242AEA67A200D19EF5 /* ExposureHorControllerViewController.xib in Resources */,
 				033775252AEA67A200D19EF5 /* MenuCell.xib in Resources */,
+				03D95E762B9F480600643231 /* FloatChangePwdViewController.xib in Resources */,
 				03ED36232B989F870064C9D3 /* FloatMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5298,6 +5334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E0F2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E732B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF72B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78332B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361E2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5309,6 +5346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E0B2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E6F2B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF32B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC782F2B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361A2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5320,6 +5358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E0C2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E702B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF42B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78302B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361B2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5347,6 +5386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E0D2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E712B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF52B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78312B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361C2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5358,6 +5398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E112B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E752B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF92B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78352B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED36202B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5383,6 +5424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E0E2B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E722B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF62B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78322B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361D2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5408,6 +5450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A19E102B970E6700F0C146 /* PersionCenterHorViewController.xib in Resources */,
+				03D95E742B9F440C00643231 /* FloatChangePwdViewController.xib in Resources */,
 				03A19DF82B97048900F0C146 /* FloatContentViewController.xib in Resources */,
 				03CC78342B9B03EC00B2DA2D /* FloatBindAccountViewController.xib in Resources */,
 				03ED361F2B9895A10064C9D3 /* FloatMenuCell.xib in Resources */,
@@ -5552,6 +5595,7 @@
 				03509CCA29F91C8C00C840DA /* AccountModel.m in Sources */,
 				03509CCB29F91C8C00C840DA /* LoginResponse.m in Sources */,
 				0337E01F2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03D95E6C2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				03A19E1F2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				03509CCC29F91C8C00C840DA /* ConfigResponse.m in Sources */,
 				03509CCD29F91C8C00C840DA /* MyTextFiled.m in Sources */,
@@ -5781,6 +5825,7 @@
 				037C6F3D2875AC790041EC34 /* AccountLoginView.m in Sources */,
 				037C6F3E2875AC790041EC34 /* BindAccountView.m in Sources */,
 				037C6F3F2875AC790041EC34 /* ChangePasswordView.m in Sources */,
+				03D95E682B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				037C6F402875AC790041EC34 /* FindPasswordView.m in Sources */,
 				037C6F412875AC790041EC34 /* LoginWithRegView.m in Sources */,
 				030FAA4D28A0FA7C00709536 /* FindPasswordViewV2.m in Sources */,
@@ -5857,6 +5902,7 @@
 				0386131729388F8900CC9C44 /* HttpServiceEnginePay.m in Sources */,
 				0386131829388F8900CC9C44 /* AccountModel.m in Sources */,
 				0337E01C2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03D95E692B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				03A19E1C2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				0386131929388F8900CC9C44 /* LoginResponse.m in Sources */,
 				0386131A29388F8900CC9C44 /* ConfigResponse.m in Sources */,
@@ -6023,6 +6069,7 @@
 				0387BA17291B8C9E001BACA8 /* LoginResponse.m in Sources */,
 				0387BA18291B8C9E001BACA8 /* ConfigResponse.m in Sources */,
 				0337E01D2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03D95E6A2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				03A19E1D2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				0387BA88291B8DA5001BACA8 /* RegisterAccountViewV2.m in Sources */,
 				0387BA1A291B8C9E001BACA8 /* MyTextFiled.m in Sources */,
@@ -6194,6 +6241,7 @@
 				0392B2032A5BA8DC00A3E2D6 /* BaseSDKImpl.m in Sources */,
 				0392B2042A5BA8DC00A3E2D6 /* PayData.m in Sources */,
 				0392B2052A5BA8DC00A3E2D6 /* LoginData.m in Sources */,
+				03D95E6E2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				0392B2062A5BA8DC00A3E2D6 /* MWSDK.m in Sources */,
 				0392B26B2A5BA99900A3E2D6 /* MainHomeViewV2.m in Sources */,
 				0392B2082A5BA8DC00A3E2D6 /* SdkCfUUID.m in Sources */,
@@ -6345,6 +6393,7 @@
 				039B262E298B555300045C53 /* AccountModel.m in Sources */,
 				039B262F298B555300045C53 /* LoginResponse.m in Sources */,
 				0337E01E2AE104CC00F171B1 /* SocialBannerView.m in Sources */,
+				03D95E6B2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				03A19E1E2B9855D000F0C146 /* FloatMenuResp.m in Sources */,
 				039B2630298B555300045C53 /* ConfigResponse.m in Sources */,
 				039B2632298B555300045C53 /* MyTextFiled.m in Sources */,
@@ -6525,6 +6574,7 @@
 				03CA726229D5698400098979 /* BJBaseResponceModel.m in Sources */,
 				03CA726329D5698400098979 /* GamaThirdSocial.m in Sources */,
 				03CA726429D5698400098979 /* BJError.m in Sources */,
+				03D95E6D2B9F440C00643231 /* FloatChangePwdViewController.m in Sources */,
 				03CA726529D5698400098979 /* HttpServiceEngineLogin.m in Sources */,
 				03CA726629D5698400098979 /* BJServiceConfigurator.m in Sources */,
 				033775192AEA51DA00D19EF5 /* MWWebView.m in Sources */,
