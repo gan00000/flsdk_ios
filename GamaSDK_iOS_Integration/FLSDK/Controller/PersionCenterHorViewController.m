@@ -50,6 +50,26 @@
 
 @implementation PersionCenterHorViewController
 
+- (void)makeViewStatus {
+    
+    LoginResponse *mLoginResponse = SDK_DATA.mLoginResponse;
+    if (mLoginResponse && mLoginResponse.data) {
+        if (mLoginResponse.data.isBind) {
+            self.accountValueLabel.text = mLoginResponse.data.loginId;
+            self.accountValueLabel.hidden = NO;
+            self.accountLabel.hidden = NO;
+            self.accountLabel.font = [UIFont systemFontOfSize:11];
+            self.updateAccountBtn.hidden = YES;
+        }else{
+            self.accountValueLabel.hidden = YES;
+            self.accountLabel.hidden = YES;
+            self.accountLabel.font = [UIFont systemFontOfSize:2];
+            self.updateAccountBtn.hidden = NO;
+        }
+        self.uidValueLabel.text = mLoginResponse.data.userId;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -66,24 +86,10 @@
         self.serverNameValueLabel.text = [floatMenuResp.serverName urlDecode_MMMethodMMM];
         self.roleNameValueLabel.text = [floatMenuResp.roleName urlDecode_MMMethodMMM];
         self.gameNameValueLabel.text = [floatMenuResp.gameName urlDecode_MMMethodMMM];
-        self.uidValueLabel.text = floatMenuResp.userId;
+        //self.uidValueLabel.text = floatMenuResp.userId;
     }
     
-    LoginResponse *mLoginResponse = SDK_DATA.mLoginResponse;
-    if (mLoginResponse && mLoginResponse.data) {
-        if (mLoginResponse.data.isBind) {
-            self.accountValueLabel.text = mLoginResponse.data.account;
-            self.accountValueLabel.hidden = NO;
-            self.accountLabel.hidden = NO;
-            
-            self.updateAccountBtn.hidden = YES;
-        }else{
-            self.accountValueLabel.hidden = YES;
-            self.accountLabel.hidden = YES;
-            self.accountLabel.font = [UIFont systemFontOfSize:2];
-            self.updateAccountBtn.hidden = NO;
-        }
-    }
+    [self makeViewStatus];
     
     
     self.delContentView.hidden = YES;
@@ -101,7 +107,11 @@
 - (IBAction)goToUpdateAccountPage:(id)sender {
     
     self.mFloatBindAccountViewController = [[FloatBindAccountViewController alloc] initWithNibName:XIB_FloatBindAccountViewController bundle:SDK_BUNDLE];
-    
+    self.mFloatBindAccountViewController.mMWBlock = ^(BOOL success, id  _Nullable result) {
+        if (success) {
+            [self makeViewStatus];
+        }
+    };
     UIView *advViwe = self.mFloatBindAccountViewController.view;
     [self.view addSubview:advViwe];
     [advViwe mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SdkHeader.h"
+#import "FloatMenuResp.h"
+#import "FloatConfigData.h"
+#import "NSString+URLEncoding.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "SDKRequest.h"
+#import "MWSDK.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FloatChangePwdViewController : UIViewController
+
+@property (copy,nonatomic) MWBlock mMWBlock;
 
 @end
 

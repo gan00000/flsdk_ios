@@ -8,13 +8,6 @@
 
 #import "FloatChangePwdViewController.h"
 
-#import "SdkHeader.h"
-#import "FloatMenuResp.h"
-#import "FloatConfigData.h"
-#import "NSString+URLEncoding.h"
-#import "UIButton+WebCache.h"
-#import "UIImageView+WebCache.h"
-
 @interface FloatChangePwdViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -67,6 +60,69 @@
 
 
 - (IBAction)confirmAction:(id)sender {
+    
+    NSString *userName = SDK_DATA.mLoginResponse.data.loginId;
+    
+    NSString *oldPwd = self.accountTF.text;
+    
+    NSString *newPwd = self.pwdTF.text;
+    NSString *againPwd = self.againPwdTF.text;
+    
+    if (![SdkUtil validUserName_MMMethodMMM:userName]) {
+        return;
+    }
+    
+    if ([StringUtil isEmpty_MMMethodMMM:oldPwd]) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_py_password_empty)];
+        return;
+    }
+ 
+    if (![SdkUtil validPwd_MMMethodMMM:newPwd]) {
+        return;
+    }
+    
+    if (![SdkUtil validPwd_MMMethodMMM:againPwd]) {
+        return;
+    }
+    
+    if (![newPwd isEqualToString:againPwd]) {
+    
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_pwd_not_equel)];
+        return;
+    }
+   
+    kWeakSelf
+    [SDKRequest doChangePasswordWithUserName_MMMethodMMM:userName andOldPassword_MMMethodMMM:oldPwd andNewPassword_MMMethodMMM:newPwd otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_change_pwd_success)];
+//        if (weakSelf.delegate) {
+//            LoginResponse *cc = (LoginResponse *)responseData;
+//            cc.data.account = mAccountModel.account;
+//            cc.data.password = newPwd;
+//            cc.data.loginType = LOGIN_TYPE_SELF;
+//            [weakSelf.delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
+//        }
+        
+        LoginResponse *cc = (LoginResponse *)responseData;
+        cc.data.account = userName;
+        cc.data.password = newPwd;
+        cc.data.loginType = LOGIN_TYPE_SELF;
+        SDK_DATA.mLoginResponse = cc;
+        
+        [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
+        
+        if (self.mMWBlock) {
+            self.mMWBlock(YES, cc);
+        }
+        
+        [self.view removeFromSuperview];
+        
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
+        
+    }];
+    
 }
 
 @end

@@ -8,13 +8,6 @@
 
 #import "FloatBindAccountViewController.h"
 
-#import "SdkHeader.h"
-#import "FloatMenuResp.h"
-#import "FloatConfigData.h"
-#import "NSString+URLEncoding.h"
-#import "UIButton+WebCache.h"
-#import "UIImageView+WebCache.h"
-
 @interface FloatBindAccountViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -58,6 +51,71 @@
 
 
 - (IBAction)confirmAction:(id)sender {
+    
+    NSString *account = [self.accountTF.text trim_MMMethodMMM];
+    NSString *password = [self.pwdTF.text trim_MMMethodMMM];
+  
+    if (![SdkUtil validUserName_MMMethodMMM:account]) {
+        return;
+    }
+    
+    
+    if (![SdkUtil validPwd_MMMethodMMM:password]) {
+        return;
+    }
+    
+    AccountModel *currentAccountModel = SDK_DATA.mLoginResponse.data;
+    if (!currentAccountModel) {
+//        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_select_account)];
+        SDK_LOG(@"用户登录信息不存在 currentAccountModel nil");
+        return;
+    }
+  
+    
+    [SDKRequest doAccountBindingWithUserName_MMMethodMMM:account password_MMMethodMMM:password phoneAreaCode_MMMethodMMM:@"" phoneNumber_MMMethodMMM:@"" vfCode_MMMethodMMM:@"" email_MMMethodMMM:account thirdId_MMMethodMMM:currentAccountModel.thirdId thirdPlate_MMMethodMMM:currentAccountModel.loginType otherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+        [SdkUtil toastMsg_MMMethodMMM:GetString(wwwww_tag_wwwww_text_account_bind_success2)];
+        
+        LoginResponse *cc = (LoginResponse *)responseData;
+        cc.data.account = account;
+        cc.data.password = password;
+        cc.data.loginType = currentAccountModel.loginType;
+        SDK_DATA.mLoginResponse = cc;
+        
+        [[ConfigCoreUtil share] saveAccountModel_MMMethodMMM:cc.data];
+        
+//        [delegate handleLoginOrRegSuccess_MMMethodMMM:cc thirdPlate_MMMethodMMM:LOGIN_TYPE_SELF];
+        
+        //记录升级事件
+        [AdLogger logServerWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT];
+        [AdLogger logWithEventName_MMMethodMMM:AD_EVENT_UPGRADE_ACCOUNT parameters_MMMethodMMM:nil];
+        
+        AccountModel *rData = cc.data;
+        LoginData *loginData = [[LoginData alloc] init];
+        loginData.accessToken = rData.token;
+        loginData.userId = rData.userId;
+        loginData.timestamp = rData.timestamp;
+        
+        loginData.isBind = rData.isBind;
+        loginData.isBindPhone = rData.isBindPhone;
+        loginData.loginType = rData.loginType;
+        
+        loginData.sign = rData.sign;
+        loginData.telephone = rData.telephone;
+        loginData.loginId = rData.loginId;
+        
+        if (self.mMWBlock) {
+            self.mMWBlock(YES, loginData);
+        }
+        
+        [self.view removeFromSuperview];
+        
+    } errorBlock_MMMethodMMM:^(BJError *error) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];
+//        if (self.mMWBlock) {
+//            self.mMWBlock(NO, nil);
+//        }
+    }];
+    
 }
 
 @end
