@@ -1098,8 +1098,29 @@
     
 }
 
--(void)showFloatView{
+-(void)showFloatViewWithRoleId:(NSString *)roleId
+                      roleName:(NSString *)roleName
+                     roleLevel:(NSString *)roleLevel
+                  roleVipLevel:(NSString *)roleVipLevel
+                    serverCode:(NSString *)serverCode
+                   serverName:(NSString *)serverName
+                   switchAccountBlock:(MWBlock)mMWBlock
+{
     
+    if ([StringUtil isEmpty_MMMethodMMM:roleId]) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:@"roleId must be not empty"];
+        return;
+    }
+    if ([StringUtil isEmpty_MMMethodMMM:serverCode]) {
+        [AlertUtil showAlertWithMessage_MMMethodMMM:@"serverCode must be not empty"];
+        return;
+    }
+    
+    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    
+    self.switchAccountBlock = mMWBlock;
+    
+    //start
     EPFDragView_TW * dragView = [[EPFDragView_TW alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
 //    dragView.gameLandscape = PF_DATA.gameIsLandscape;
     [dragView showDragViewToBaseView:appTopViewController.view];

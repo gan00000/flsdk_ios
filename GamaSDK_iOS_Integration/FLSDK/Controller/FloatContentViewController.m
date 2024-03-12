@@ -60,7 +60,7 @@
     }
     
     self.mPersionCenterHorViewController = [[PersionCenterHorViewController alloc] initWithNibName:XIB_PersionCenterHorViewController bundle:SDK_BUNDLE];
-    
+    self.mPersionCenterHorViewController.mFloatContentViewController = self;
     self.persionCenterView = self.mPersionCenterHorViewController.view;
     [self.rightView addSubview:self.persionCenterView];
     [self.persionCenterView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -148,7 +148,8 @@
         self.mwWebView.hidden = NO;
         self.persionCenterView.hidden = YES;
         if ([StringUtil isNotEmpty_MMMethodMMM:em.url]) {
-            [self.mwWebView loadRequest_MMMethodMMM:em.url];
+            NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:em.url otherDic_MMMethodMMM:nil];//添加当前参数
+            [self.mwWebView loadRequest_MMMethodMMM:resultURL];
         }
         
     }

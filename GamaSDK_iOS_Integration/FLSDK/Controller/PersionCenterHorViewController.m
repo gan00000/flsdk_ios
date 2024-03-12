@@ -135,6 +135,14 @@
 }
 
 - (IBAction)switchLoginAccount:(id)sender {
+    
+    [self.mFloatContentViewController dismissViewControllerAnimated:NO completion:^{
+        
+    }];
+    if ([MWSDK share].switchAccountBlock) {
+        [MWSDK share].switchAccountBlock(YES, nil);
+    }
+    
 }
 
 - (IBAction)delAccountAction:(id)sender {
@@ -171,6 +179,7 @@
         [[ConfigCoreUtil share] removeAccountByUserId_MMMethodMMM:SDK_DATA.mLoginResponse.data.userId];
         self.delContentView.hidden = YES;
         
+        [self switchLoginAccount:nil];
         
     } errorBlock_MMMethodMMM:^(BJError *error) {
         [AlertUtil showAlertWithMessage_MMMethodMMM:error.message];

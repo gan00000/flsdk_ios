@@ -73,6 +73,7 @@ typedef void (^MWBlock)(BOOL success, id _Nullable result);
 @property (nonatomic)  SDKLoginBlock loginCompletionHandler;
 @property (nonatomic,strong)  NSString *sdkBaseEncryptKey;
 
+@property (nonatomic) MWBlock switchAccountBlock;
 /**
  * 是否允许转向
  */
@@ -216,7 +217,13 @@ completionHandler:(SDKPayBlock) handler;
 /// @param notifyId  通知标识 id，用于更新、删除
 - (void)addLocalNotificationWithTitle:(NSString *)title subtitle:(NSString *)subtitle body:(NSString *)body trigger:(nullable UNNotificationTrigger *)trigger notifyId:(NSString *)notifyId;
 
--(void)showFloatView;
+-(void)showFloatViewWithRoleId:(NSString *)roleId
+                      roleName:(NSString *)roleName
+                     roleLevel:(NSString *)roleLevel
+                  roleVipLevel:(NSString *)roleVipLevel
+                    serverCode:(NSString *)serverCode
+                   serverName:(NSString *)serverName
+                   switchAccountBlock:(MWBlock)mMWBlock;
 
 @end
 

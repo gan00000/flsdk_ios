@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FloatContentViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersionCenterHorViewController : UIViewController
+
+@property (nonatomic, strong) FloatContentViewController *mFloatContentViewController;
 
 @end
 
