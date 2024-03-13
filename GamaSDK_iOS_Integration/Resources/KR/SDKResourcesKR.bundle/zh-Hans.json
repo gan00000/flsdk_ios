@@ -132,5 +132,11 @@
 "text_personal_clause_and_privacy_policy"  :  "隐私政策&个人条款",
 "text_customer" :   "客诉中心",
 "text_select_pay_channel"   :   "选择付款方式",
-"text_pay_pay"      :   "储值"
+"text_pay_pay"      :   "储值",
+"text_game_name"      :   "遊戲名：",
+"text_server_name"      :   "伺服器：",
+"text_role_name"      :   "角色名：",
+"text_account_name"      :   "帳號：",
+"text_account_uid"      :   "uid：",
+"text_account_del"      :   "刪除帳號"
 }

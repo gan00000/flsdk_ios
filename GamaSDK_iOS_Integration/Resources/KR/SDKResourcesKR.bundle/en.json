@@ -132,5 +132,11 @@
 "text_personal_clause_and_privacy_policy"  :  "Privacy policy&Personal clause",
 "text_customer" :   "CS Center",
 "text_select_pay_channel"   :   "Select payment method",
-"text_pay_pay"      :   "top up"
+"text_pay_pay"      :   "top up",
+"text_game_name"      :   "game name：",
+"text_server_name"      :   "server：",
+"text_role_name"      :   "role name：",
+"text_account_name"      :   "account：",
+"text_account_uid"      :   "uid：",
+"text_account_del"      :   "delete account"
 }

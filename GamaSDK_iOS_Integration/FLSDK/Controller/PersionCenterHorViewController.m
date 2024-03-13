@@ -107,6 +107,13 @@
     self.delWarmLabel.text = wwwww_tag_wwwww_text_delete_account_tips.localx;
     self.delWarmLabel.adjustsFontSizeToFitWidth = YES;
     
+    self.gameNameLabel.text = @"text_game_name".localx;
+    self.serverCodeLabel.text = @"text_server_name".localx;
+    self.roleNameLabel.text = @"text_role_name".localx;
+    self.uidLabel.text = @"text_account_uid".localx;
+    self.accountLabel.text = @"text_account_name".localx;
+    
+    
     [self.cancelDelBtn setTitle:wwwww_tag_wwwww_text_cancel.localx forState:UIControlStateNormal];
     [self.confirmDelBtn setTitle:wwwww_tag_wwwww_text_confire.localx forState:UIControlStateNormal];
 //    [self.cancelDelBtn.titleLabel sizeToFit];
@@ -120,6 +127,8 @@
     [self.updateAccountBtn setTitle:wwwww_tag_wwwww_text_update_account.localx forState:UIControlStateNormal];
     [self.switchAccountBtn setTitle:wwwww_tag_wwwww_text_switch_account.localx forState:UIControlStateNormal];
     [self.changePwdBtn setTitle:wwwww_tag_wwwww_py_login_page_change_pwd.localx forState:UIControlStateNormal];
+    [self.delAccountBtn setTitle:@"text_account_del".localx forState:UIControlStateNormal];
+    
     
 //    [self.updateAccountBtn.titleLabel sizeToFit];
 //    [self.switchAccountBtn.titleLabel sizeToFit];

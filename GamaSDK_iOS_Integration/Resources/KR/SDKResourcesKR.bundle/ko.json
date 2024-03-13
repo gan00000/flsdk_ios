@@ -131,7 +131,13 @@
 "text_personal_clause"  :  "이용약관",
 "text_personal_clause_and_privacy_policy"  :  "개인정보&이용약관",
 "text_customer" :   "고객센터",
-"text_select_pay_channel"   :   "Select payment method",
-"text_pay_pay"      :   "top up"
+"text_select_pay_channel"   :   "결제 방법을 선택하세요",
+"text_pay_pay"      :   "충전하다",
+"text_game_name"      :   "게임 이름：",
+"text_server_name"      :   "서버：",
+"text_role_name"      :   "캐릭터 명：",
+"text_account_name"      :   "계정：",
+"text_account_uid"      :   "uid：",
+"text_account_del"      :   "계정 삭제"
 
 }

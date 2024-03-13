@@ -1,5 +1,4 @@
-{
-    "py_old_pwd"     :  "Mật mã cũ",
+{   "py_old_pwd"     :  "Mật mã cũ",
     "py_new_pwd"     :  "Mật mã mới",
     "py_phone"     :  "Điện thoại",
     "py_vfcode"     :  "Mã xác minh",
@@ -133,5 +132,11 @@
     "text_personal_clause_and_privacy_policy"  :  "Chính sách bảo mật&Khế ước định hình hóa",
     "text_customer" :   "CS Center",
     "text_select_pay_channel"   :   "Chọn phương thức thanh toán",
-    "text_pay_pay"      :   "Nạp tiền"
+    "text_pay_pay"      :   "Nạp tiền",
+    "text_game_name"      :   "Tên trò chơi:",
+    "text_server_name"      :   "Máy chủ:",
+    "text_role_name"      :   "Tên nhân vật:",
+    "text_account_name"      :   "Tài khoản:",
+    "text_account_uid"      :   "uid：",
+    "text_account_del"      :   "Xóa tài khoản"
 }
