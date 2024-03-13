@@ -67,14 +67,6 @@
                                                           [[BaseSDK share] sdk_applicationDidEnterBackground_MMMethodMMM:note.object];
                                                       });
                                                   }];
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification
-                                                      object:nil
-                                                       queue:nil
-                                                  usingBlock:^(NSNotification *note) {
-                                                      dispatch_async(dispatch_get_main_queue(), ^{
-                                                          [[BaseSDK share] sdk_applicationDidEnterBackground_MMMethodMMM:note.object];
-                                                      });
-                                                  }];
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification
                                                       object:nil
                                                        queue:nil
