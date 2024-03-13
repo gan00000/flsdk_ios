@@ -56,6 +56,11 @@
     self.againPwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
     self.againPwdIconImageView.image = GetImage(@"float_icon_again_pwd");
     
+    self.titleLabel.text = wwwww_tag_wwwww_py_login_page_change_pwd.localx;
+    self.accountTF.placeholder = wwwww_tag_wwwww_py_input_old_password.localx;
+    self.pwdTF.placeholder = wwwww_tag_wwwww_text_input_new_pwd.localx;
+    self.againPwdTF.placeholder = wwwww_tag_wwwww_text_input_new_pwd_confire.localx;
+    [self.confirmBtn setTitle:wwwww_tag_wwwww_text_confire_change.localx forState:UIControlStateNormal];
 }
 
 

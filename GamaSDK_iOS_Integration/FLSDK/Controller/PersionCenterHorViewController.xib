@@ -122,27 +122,27 @@
                                 <constraint firstAttribute="height" constant="30" id="S8w-BC-Da7"/>
                                 <constraint firstAttribute="width" constant="120" id="n1Y-sD-M6K"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="升級帳號">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="升級帳號">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="goToUpdateAccountPage:" destination="-1" eventType="touchUpInside" id="lbf-sE-ite"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-U7-GtS">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-U7-GtS">
                             <rect key="frame" x="1" y="217" width="134" height="33"/>
                             <color key="backgroundColor" red="0.50588235294117645" green="0.83529411764705885" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="33" id="88T-Y9-Eng"/>
                                 <constraint firstAttribute="width" constant="134" id="LlV-LS-ruu"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="修改密码">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="修改密碼">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="goToChangePwdPage:" destination="-1" eventType="touchUpInside" id="CXI-4O-S4l"/>
                             </connections>
@@ -154,11 +154,11 @@
                                 <constraint firstAttribute="width" constant="134" id="Rsu-Wf-CYS"/>
                                 <constraint firstAttribute="height" constant="33" id="esF-3q-KOo"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="切换账号">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="切换账号">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="switchLoginAccount:" destination="-1" eventType="touchUpInside" id="4bE-IL-zNX"/>
                             </connections>
@@ -170,11 +170,11 @@
                                 <constraint firstAttribute="height" constant="25" id="6nc-X9-ooM"/>
                                 <constraint firstAttribute="width" constant="100" id="cvI-jo-QgZ"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="清除账号">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
-                                <color key="baseForegroundColor" red="1" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </buttonConfiguration>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="清除账号">
+                                <color key="titleColor" red="1" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="delAccountAction:" destination="-1" eventType="touchUpInside" id="9R9-MZ-7ap"/>
                             </connections>
@@ -186,7 +186,7 @@
                                 <constraint firstAttribute="height" constant="1" id="79V-Up-Ohi"/>
                             </constraints>
                         </view>
-                        <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-oZ-jHy" userLabel="delAccountWarmView">
+                        <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-oZ-jHy" userLabel="delAccountWarmView">
                             <rect key="frame" x="0.0" y="121" width="290" height="160"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-dC-bzb" userLabel="cancelDelBtn">
@@ -195,11 +195,11 @@
                                         <constraint firstAttribute="width" constant="100" id="8S5-6r-uXn"/>
                                         <constraint firstAttribute="height" constant="33" id="VBv-SO-1mH"/>
                                     </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="取消">
-                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </buttonConfiguration>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="cancelDelBtnAction:" destination="-1" eventType="touchUpInside" id="6mn-Ja-2jd"/>
                                     </connections>
@@ -211,11 +211,11 @@
                                         <constraint firstAttribute="width" constant="100" id="SVW-XH-nXu"/>
                                         <constraint firstAttribute="height" constant="33" id="i3Z-dt-5pn"/>
                                     </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="確認">
-                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </buttonConfiguration>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="確認">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="confirmDelBtnAction:" destination="-1" eventType="touchUpInside" id="uy5-oI-mEb"/>
                                     </connections>

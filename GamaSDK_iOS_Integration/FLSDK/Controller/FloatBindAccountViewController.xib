@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatChangePwdViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatBindAccountViewController">
             <connections>
                 <outlet property="accountContentView" destination="zPD-Th-pbw" id="h02-fO-kdn"/>
                 <outlet property="accountIconImageView" destination="wHV-IG-1ga" id="VU8-h9-pxM"/>
@@ -20,6 +20,7 @@
                 <outlet property="pwdTF" destination="NuX-kZ-Pzl" id="q5D-th-CRL"/>
                 <outlet property="titleLabel" destination="aHs-qa-V0Q" id="Owa-Ou-h6C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warmLabel" destination="DZU-CJ-UeO" id="261-M6-ci1"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

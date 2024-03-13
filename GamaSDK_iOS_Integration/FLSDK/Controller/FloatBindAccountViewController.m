@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *pwdTF;
 
 @property (weak, nonatomic) IBOutlet UIButton *confirmBtn;
+@property (weak, nonatomic) IBOutlet UILabel *warmLabel;
 
 @end
 
@@ -46,6 +47,12 @@
     self.pwdContentView.layer.borderWidth = 0.5;
     self.pwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
     self.pwdIconImageView.image = GetImage(@"float_icon_password");
+    
+    self.titleLabel.text = wwwww_tag_wwwww_text_update_account.localx;
+    [self.confirmBtn setTitle:wwwww_tag_wwwww_py_confire.localx forState:UIControlStateNormal];
+    self.accountTF.placeholder = wwwww_tag_wwwww_py_register_account_hit.localx;
+    self.pwdTF.placeholder = wwwww_tag_wwwww_py_register_password_hit.localx;
+    self.warmLabel.text = wwwww_tag_wwwww_text_bind_account_tips.localx;
     
 }
 

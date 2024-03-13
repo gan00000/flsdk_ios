@@ -79,6 +79,7 @@
     self.switchAccountBtn.layer.cornerRadius = 16;
     self.updateAccountBtn.layer.cornerRadius = 12;
     
+   
     FloatConfigData *floatConfigData = SDK_DATA.floatConfigData;
     [self.gameIconIV sd_setImageWithURL:[NSURL URLWithString:floatConfigData.gameIcon] placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
     
@@ -102,6 +103,34 @@
     self.cancelDelBtn.layer.borderWidth = 0.5;
     
     self.confirmDelBtn.layer.cornerRadius = 16;
+    
+    self.delWarmLabel.text = wwwww_tag_wwwww_text_delete_account_tips.localx;
+    self.delWarmLabel.adjustsFontSizeToFitWidth = YES;
+    
+    [self.cancelDelBtn setTitle:wwwww_tag_wwwww_text_cancel.localx forState:UIControlStateNormal];
+    [self.confirmDelBtn setTitle:wwwww_tag_wwwww_text_confire.localx forState:UIControlStateNormal];
+//    [self.cancelDelBtn.titleLabel sizeToFit];
+//    [self.confirmDelBtn.titleLabel sizeToFit];
+//    self.cancelDelBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+//    self.confirmDelBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
+    
+//    int font_size = 134/wwwww_tag_wwwww_py_login_page_change_pwd.localx.length;
+//    self.changePwdBtn.titleLabel.font = [UIFont systemFontOfSize:font_size];
+    [self.updateAccountBtn setTitle:wwwww_tag_wwwww_text_update_account.localx forState:UIControlStateNormal];
+    [self.switchAccountBtn setTitle:wwwww_tag_wwwww_text_switch_account.localx forState:UIControlStateNormal];
+    [self.changePwdBtn setTitle:wwwww_tag_wwwww_py_login_page_change_pwd.localx forState:UIControlStateNormal];
+    
+//    [self.updateAccountBtn.titleLabel sizeToFit];
+//    [self.switchAccountBtn.titleLabel sizeToFit];
+//    [self.changePwdBtn.titleLabel sizeToFit];
+//    self.changePwdBtn.titleLabel.lineBreakMode = NSLineBreakByClipping;
+//    self.changePwdBtn.titleLabel.numberOfLines = 1;
+//
+//    self.updateAccountBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+//    self.switchAccountBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+//    self.changePwdBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
 }
 
 
