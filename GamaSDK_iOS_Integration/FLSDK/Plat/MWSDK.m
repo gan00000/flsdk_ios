@@ -33,7 +33,7 @@
 #import "ExposureHorControllerViewController.h"
 #import "FloatContentViewController.h"
 
-#import "EPFDragView_TW.h"
+#import "MWFloatView.h"
 
 #ifdef SDK_KR
 #import "NaverDelegate.h"
@@ -52,7 +52,7 @@
 @interface MWSDK()
 
 @property (nonatomic, assign) BOOL isPaying;
-
+@property (nonatomic, strong) MWFloatView *dragView;
 @end
 
 @implementation MWSDK
@@ -1121,16 +1121,13 @@
     self.switchAccountBlock = mMWBlock;
     
     //start
-    EPFDragView_TW * dragView = [[EPFDragView_TW alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
+    if (self.dragView) {
+        [self.dragView removeFromSuperview];
+    }
+    self.dragView = [[MWFloatView alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
 //    dragView.gameLandscape = PF_DATA.gameIsLandscape;
-    [dragView showDragViewToBaseView:appTopViewController.view];
+    [self.dragView showDragViewToBaseView:appTopViewController.view];
     
-    
-    FloatContentViewController *mFloatContentViewController = [[FloatContentViewController alloc] initWithNibName:XIB_FloatContentViewController bundle:SDK_BUNDLE];
-    
-    [appTopViewController presentViewController:mFloatContentViewController animated:NO completion:^{
-        
-    }];
 }
 
 @end

@@ -1880,20 +1880,20 @@
 		03ED36212B989F700064C9D3 /* PersionCenterHorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DFC2B970E6600F0C146 /* PersionCenterHorViewController.xib */; };
 		03ED36222B989F770064C9D3 /* FloatContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A19DE42B97048900F0C146 /* FloatContentViewController.xib */; };
 		03ED36232B989F870064C9D3 /* FloatMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */; };
-		03F1B7FD2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B7FE2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B8002B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B8012B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B8022B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B8032B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */; };
-		03F1B8042B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B8052B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B8062B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B8072B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B8082B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B8092B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
-		03F1B80A2B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */; };
+		03F1B7FD2B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B7FE2B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B7FF2B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B8002B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B8012B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B8022B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B8032B8DC7A7009B6747 /* MWFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */; };
+		03F1B8042B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B8052B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B8062B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B8072B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B8082B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B8092B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
+		03F1B80A2B8DC7A7009B6747 /* MWFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */; };
 		03F1B8212B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
 		03F1B8222B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
 		03F1B8232B8DCA6C009B6747 /* UIImage+CropImageTW.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */; };
@@ -2617,8 +2617,8 @@
 		03ED36092B9895A10064C9D3 /* FloatMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatMenuCell.h; sourceTree = "<group>"; };
 		03ED360A2B9895A10064C9D3 /* FloatMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatMenuCell.m; sourceTree = "<group>"; };
 		03ED360B2B9895A10064C9D3 /* FloatMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatMenuCell.xib; sourceTree = "<group>"; };
-		03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPFDragView_TW.h; sourceTree = "<group>"; };
-		03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPFDragView_TW.m; sourceTree = "<group>"; };
+		03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFloatView.h; sourceTree = "<group>"; };
+		03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFloatView.m; sourceTree = "<group>"; };
 		03F1B81B2B8DCA6C009B6747 /* UIImage+CropImageTW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropImageTW.m"; sourceTree = "<group>"; };
 		03F1B81C2B8DCA6C009B6747 /* UIView+RectPositionTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RectPositionTW.h"; sourceTree = "<group>"; };
 		03F1B81D2B8DCA6C009B6747 /* UIImage+ColorToImageTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorToImageTW.h"; sourceTree = "<group>"; };
@@ -4359,8 +4359,8 @@
 		322CBC1924C589A5000D6B20 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				03F1B7FB2B8DC7A7009B6747 /* EPFDragView_TW.h */,
-				03F1B7FC2B8DC7A7009B6747 /* EPFDragView_TW.m */,
+				03F1B7FB2B8DC7A7009B6747 /* MWFloatView.h */,
+				03F1B7FC2B8DC7A7009B6747 /* MWFloatView.m */,
 				030FAA7928A39F0800709536 /* BaseCountTimerView.h */,
 				030FAA7A28A39F0800709536 /* BaseCountTimerView.m */,
 				03C05CA628AE5F6B0060F4CD /* BasePopupView.h */,
@@ -4609,7 +4609,7 @@
 				039AC1ED29F91DD700B416D8 /* AccountLoginViewV2.h in Headers */,
 				03ED36102B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				03509C9829F91C8C00C840DA /* PayData.h in Headers */,
-				03F1B8012B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B8012B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				03509C9929F91C8C00C840DA /* ViewUtil.h in Headers */,
 				0337E0182AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				033775112AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4644,7 +4644,7 @@
 				030FAA5E28A0FC8600709536 /* RegisterAccountViewV2.h in Headers */,
 				030FAA7828A362E200709536 /* MyTextFiled.h in Headers */,
 				030FAA6C28A2619500709536 /* NoticeViewV2.h in Headers */,
-				03F1B7FD2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B7FD2B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				030FAA9428A6571900709536 /* GamaThirdSocial.h in Headers */,
 				030FAB3528A66ED300709536 /* UrlMode.h in Headers */,
 				030FAA7F28A3A2C600709536 /* CountTimerDelegate.h in Headers */,
@@ -4688,7 +4688,7 @@
 				03ED35FC2B9875BC0064C9D3 /* FloatConfigData.h in Headers */,
 				038612DC29388F8900CC9C44 /* BaseCountTimerView.h in Headers */,
 				0349F8F52AD7F95A0015750A /* ExposureController.h in Headers */,
-				03F1B7FE2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B7FE2B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				038612DD29388F8900CC9C44 /* GamaSDK+Social.h in Headers */,
 				039DBCB62941BC0B007EAD2F /* MWStringHeaders.h in Headers */,
 				038612DF29388F8900CC9C44 /* MyTextFiled.h in Headers */,
@@ -4756,7 +4756,7 @@
 				03315B9A291BA16000A92FBE /* ViewUtil.h in Headers */,
 				03ED360E2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				0387BA8D291B8DA5001BACA8 /* FindPasswordViewV2.h in Headers */,
-				03F1B7FF2B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B7FF2B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				0387BA92291B8DA5001BACA8 /* NoticeViewV2.h in Headers */,
 				0337E0162AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				0337750F2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4820,7 +4820,7 @@
 				0392B1C92A5BA8DC00A3E2D6 /* MWSDK.h in Headers */,
 				03A19E2A2B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				033775132AEA51DA00D19EF5 /* MWWebView.h in Headers */,
-				03F1B8032B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B8032B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				0392B2662A5BA99900A3E2D6 /* RegisterAccountViewV2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4856,7 +4856,7 @@
 				0381EC6D298B5677006D6100 /* AccountLoginViewV2.h in Headers */,
 				03ED360F2B9895A10064C9D3 /* FloatMenuCell.h in Headers */,
 				039B25FB298B555300045C53 /* PayData.h in Headers */,
-				03F1B8002B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B8002B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				039B25FC298B555300045C53 /* ViewUtil.h in Headers */,
 				0337E0172AE104CC00F171B1 /* SocialBannerView.h in Headers */,
 				033775102AEA51DA00D19EF5 /* MWWebView.h in Headers */,
@@ -4903,7 +4903,7 @@
 				035659232AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0349F8B32AD7A1190015750A /* ExpoModel.h in Headers */,
 				033B331629D5C4BC00AE9F96 /* AccountListView.h in Headers */,
-				03F1B8022B8DC7A7009B6747 /* EPFDragView_TW.h in Headers */,
+				03F1B8022B8DC7A7009B6747 /* MWFloatView.h in Headers */,
 				033B32E729D56AEE00AE9F96 /* AccountLoginViewV2.h in Headers */,
 				03D95E662B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				03F1B8492B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
@@ -5640,7 +5640,7 @@
 				03509CF229F91C8C00C840DA /* YYClassInfo.m in Sources */,
 				03509CF329F91C8C00C840DA /* AFURLResponseSerialization.m in Sources */,
 				03509CF429F91C8C00C840DA /* AFHTTPSessionManager.m in Sources */,
-				03F1B8082B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8082B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				03509CF529F91C8C00C840DA /* AFURLSessionManager.m in Sources */,
 				03509CF629F91C8C00C840DA /* AFURLRequestSerialization.m in Sources */,
 				03509CF729F91C8C00C840DA /* AFNetworkReachabilityManager.m in Sources */,
@@ -5790,7 +5790,7 @@
 				037C6F1E2875AC790041EC34 /* UIView+BlockGesture.m in Sources */,
 				037C6F1F2875AC790041EC34 /* NSString+Common.m in Sources */,
 				037C6F202875AC790041EC34 /* SUtil.m in Sources */,
-				03F1B8042B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8042B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				030FAA7D28A39F0800709536 /* BaseCountTimerView.m in Sources */,
 				030FAA6E28A2619500709536 /* NoticeViewV2.m in Sources */,
 				037C6F212875AC790041EC34 /* UIUtil.m in Sources */,
@@ -5947,7 +5947,7 @@
 				0386134029388F8900CC9C44 /* YYClassInfo.m in Sources */,
 				0386134129388F8900CC9C44 /* AFURLResponseSerialization.m in Sources */,
 				0386134229388F8900CC9C44 /* AFHTTPSessionManager.m in Sources */,
-				03F1B8052B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8052B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				0386134329388F8900CC9C44 /* AFURLSessionManager.m in Sources */,
 				0386134529388F8900CC9C44 /* AFURLRequestSerialization.m in Sources */,
 				0349F8EE2AD7F94F0015750A /* ExposureController.m in Sources */,
@@ -6114,7 +6114,7 @@
 				0387BA3F291B8C9E001BACA8 /* AFURLResponseSerialization.m in Sources */,
 				0387BA40291B8C9E001BACA8 /* AFHTTPSessionManager.m in Sources */,
 				0387BA41291B8C9E001BACA8 /* AFURLSessionManager.m in Sources */,
-				03F1B8062B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8062B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				0387BA83291B8DA5001BACA8 /* FindPasswordViewV2.m in Sources */,
 				0387BA42291B8C9E001BACA8 /* AFURLRequestSerialization.m in Sources */,
 				0387BA43291B8C9E001BACA8 /* AFNetworkReachabilityManager.m in Sources */,
@@ -6317,7 +6317,7 @@
 				0392B2432A5BA8DC00A3E2D6 /* NSString+Local.m in Sources */,
 				0392B2442A5BA8DC00A3E2D6 /* LoginTitleView.m in Sources */,
 				0392B2452A5BA8DC00A3E2D6 /* PhoneView.m in Sources */,
-				03F1B80A2B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B80A2B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				0392B2462A5BA8DC00A3E2D6 /* SDKIconTitleButton.m in Sources */,
 				0392B2472A5BA8DC00A3E2D6 /* SDKTextFiledView.m in Sources */,
 				0392B2482A5BA8DC00A3E2D6 /* LoginTypeButton.m in Sources */,
@@ -6438,7 +6438,7 @@
 				039B2656298B555300045C53 /* YYClassInfo.m in Sources */,
 				039B2657298B555300045C53 /* AFURLResponseSerialization.m in Sources */,
 				039B2658298B555300045C53 /* AFHTTPSessionManager.m in Sources */,
-				03F1B8072B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8072B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				039B2659298B555300045C53 /* AFURLSessionManager.m in Sources */,
 				039B265B298B555300045C53 /* AFURLRequestSerialization.m in Sources */,
 				039B265C298B555300045C53 /* AFNetworkReachabilityManager.m in Sources */,
@@ -6597,7 +6597,7 @@
 				03CA727829D5698400098979 /* UIColor+HexStringToColorTW.m in Sources */,
 				03CA727929D5698400098979 /* UIScreen+Sdk.m in Sources */,
 				0349F8BA2AD7A1190015750A /* ExpoModel.m in Sources */,
-				03F1B8092B8DC7A7009B6747 /* EPFDragView_TW.m in Sources */,
+				03F1B8092B8DC7A7009B6747 /* MWFloatView.m in Sources */,
 				03CA727A29D5698400098979 /* NSString+URLEncoding.m in Sources */,
 				0337E0202AE104CC00F171B1 /* SocialBannerView.m in Sources */,
 				033B331F29D5C4BC00AE9F96 /* AccountListViewCell.m in Sources */,

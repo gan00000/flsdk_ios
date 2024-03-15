@@ -9,24 +9,27 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SdkHeader.h"
+#import "FloatContentViewController.h"
 
 //#define IS_IPAD  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 
 #define GM_Float_Button_Width     60
 
-@protocol EPFDragView_TWDelegate <NSObject>
+@protocol MWFloatViewDelegate <NSObject>
 
 - (void)didSelectedDragViewAtIndex:(NSInteger)selectedIndex;
 
 @end
 
-@interface EPFDragView_TW : UIView
-@property (nonatomic, weak)id<EPFDragView_TWDelegate>delegate;
-@property (nonatomic, assign, getter=isGameLandscape)BOOL gameLandscape;
+@interface MWFloatView : UIView
+@property (nonatomic, weak)id<MWFloatViewDelegate>delegate;
+//@property (nonatomic, assign, getter=isGameLandscape)BOOL gameLandscape;
+
+@property (nonatomic,strong) FloatContentViewController *mFloatContentViewController;
 
 - (instancetype)initWithFrame:(CGRect)frame parentView:(UIView *)parentView;
 
 - (void)showDragViewToBaseView:(UIView *)baseView;
-- (void)addHiddenAnimation;
+//- (void)addHiddenAnimation;
 - (void)hiddenRedPoint:(BOOL)yesOrNo;
 @end
