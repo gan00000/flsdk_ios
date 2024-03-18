@@ -278,7 +278,7 @@
 //    SDK_DATA.gameUserModel.serverCode = serverCode ? : @"";
 //    SDK_DATA.gameUserModel.serverName = serverName ? : @"";
     
-    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    [self setRoleInfoWithRoleId_Inner_MMMethodMMM:roleId roleName_MMMethodMMM:roleName roleLevel_MMMethodMMM:roleLevel roleVipLevel_MMMethodMMM:roleVipLevel serverCode_MMMethodMMM:serverCode serverName_MMMethodMMM:serverName];
     
     
     
@@ -294,12 +294,12 @@
     
 }
 
-- (void)setRoleInfoWithRoleId_Inner:(NSString *)roleId
-                     roleName:(NSString *)roleName
-                    roleLevel:(NSString *)roleLevel
-                 roleVipLevel:(NSString *)roleVipLevel
-                   serverCode:(NSString *)serverCode
-                   serverName:(NSString *)serverName
+- (void)setRoleInfoWithRoleId_Inner_MMMethodMMM:(NSString *)roleId
+                     roleName_MMMethodMMM:(NSString *)roleName
+                    roleLevel_MMMethodMMM:(NSString *)roleLevel
+                 roleVipLevel_MMMethodMMM:(NSString *)roleVipLevel
+                   serverCode_MMMethodMMM:(NSString *)serverCode
+                   serverName_MMMethodMMM:(NSString *)serverName
 {
     
     SDK_LOG(@"setRoleInfo角色信息：roleID = %@，roleName = %@，roleLevel = %@，roleVipLevel = %@，serverCode = %@，serverName = %@",
@@ -449,7 +449,7 @@
     }
     self.isPaying = YES;
     
-    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    [self setRoleInfoWithRoleId_Inner_MMMethodMMM:roleId roleName_MMMethodMMM:roleName roleLevel_MMMethodMMM:roleLevel roleVipLevel_MMMethodMMM:roleVipLevel serverCode_MMMethodMMM:serverCode serverName_MMMethodMMM:serverName];
     
     self.payHandler = handler;
     
@@ -839,7 +839,7 @@
         return;
     }
     
-    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    [self setRoleInfoWithRoleId_Inner_MMMethodMMM:roleId roleName_MMMethodMMM:roleName roleLevel_MMMethodMMM:roleLevel roleVipLevel_MMMethodMMM:roleVipLevel serverCode_MMMethodMMM:serverCode serverName_MMMethodMMM:serverName];
     
     [self openCs];
     
@@ -1116,7 +1116,17 @@
         return;
     }
     
-    [self setRoleInfoWithRoleId_Inner:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName];
+    if (!SDK_DATA.floatConfigData || !SDK_DATA.floatMenuResp) {
+        SDK_LOG(@"floatConfigData nil");
+        return;
+    }
+    
+    if (!SDK_DATA.floatConfigData.buttonSwitch) {
+        SDK_LOG(@"floatConfigData buttonSwitch no");
+        return;
+    }
+    
+    [self setRoleInfoWithRoleId_Inner_MMMethodMMM:roleId roleName_MMMethodMMM:roleName roleLevel_MMMethodMMM:roleLevel roleVipLevel_MMMethodMMM:roleVipLevel serverCode_MMMethodMMM:serverCode serverName_MMMethodMMM:serverName];
     
     self.switchAccountBlock = mMWBlock;
     
