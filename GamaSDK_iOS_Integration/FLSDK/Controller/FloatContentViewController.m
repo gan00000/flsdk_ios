@@ -169,9 +169,17 @@
         
         if ([em.code isEqualToString:@"cs"]) {
             
-            SDK_DATA.floatMenuResp.redDotRes.cs = NO;
-            if (self.mCCallBack) {
-                self.mCCallBack(em.code, 1, nil);
+            //删除红点
+            if (SDK_DATA.floatMenuResp.redDotRes.cs) {
+                SDK_DATA.floatMenuResp.redDotRes.cs = NO;
+                if (self.mCCallBack) {
+                    self.mCCallBack(em.code, 1, nil);
+                }
+                [SDKRequest deleteFloatReddotWithOtherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData) {
+                    
+                } errorBlock_MMMethodMMM:^(BJError *error) {
+                    
+                }];
             }
             
         }

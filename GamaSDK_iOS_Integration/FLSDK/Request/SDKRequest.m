@@ -277,6 +277,53 @@
     
 }
 
++ (void)deleteFloatReddotWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                             errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock{
+    
+    NSMutableDictionary *params = [self appendGameParamsDic_MMMethodMMM];
+    if (otherParamsDic) {
+        [params addEntriesFromDictionary:otherParamsDic];
+    }
+    //AccountModel *accountModel = SDK_DATA.mLoginResponse.data;
+    
+    BJBaseHTTPEngine *configHTTPEngine = [[BJBaseHTTPEngine alloc] initWithBasePath_MMMethodMMM:[SDKRES getPlatUrl_MMMethodMMM]];
+    [configHTTPEngine postRequestWithFunctionPath_MMMethodMMM:@"sdk/api/floatBtn/deleteFloatBtnRedDot"
+                                           params_MMMethodMMM:params
+                                     successBlock_MMMethodMMM:^(NSURLSessionDataTask *task, id responseData) {
+        
+        SDK_LOG(@"post: path = %@,requsetHeader = %@,data = %@", task.originalRequest.URL,task.originalRequest.HTTPBody, responseData);
+        
+        NSDictionary *responseDict = responseData;
+        BJBaseResponceModel *responceModel = [BJBaseResponceModel yy_modelWithDictionary:responseDict];
+        
+        if (responceModel && [responceModel isRequestSuccess_MMMethodMMM]) {
+            
+//            RedDotRes *nRedDotRes = [RedDotRes yy_modelWithDictionary:responseDict[wwwww_tag_wwwww_data]];
+//
+//            if (SDK_DATA.floatMenuResp && nRedDotRes) {
+//                SDK_DATA.floatMenuResp.redDotRes = nRedDotRes;
+//            }
+            
+            if (successBlock) {
+                successBlock(responceModel);
+            }
+            
+        } else {
+            BJError *errorObject = [BJError yy_modelWithDictionary:responseDict];
+            if (errorBlock) {
+                errorBlock(errorObject);
+            }
+        }
+        
+    } errorBlock_MMMethodMMM:^(NSURLSessionDataTask *task, NSError *error) {
+        if (errorBlock) {
+            errorBlock(nil);
+        }
+    }];
+    
+}
+
 
 #pragma mark - 上报自己服务器一些事件
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock

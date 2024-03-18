@@ -38,6 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
                            successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                                   errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
++ (void)deleteFloatReddotWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                 errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 

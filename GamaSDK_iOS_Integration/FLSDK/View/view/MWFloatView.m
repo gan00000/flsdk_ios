@@ -151,20 +151,20 @@
     }
 }
 
-- (void)hiddenRedPoint_MMMethodMMM:(BOOL)yesOrNo
-{
-    if (!yesOrNo) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAVE_NEW_RED_POINT];
-        self.floatButtonRedPoint.hidden = NO;
-    }else{
-        BOOL haveNewRedPoint = [[NSUserDefaults standardUserDefaults] boolForKey:HAVE_NEW_RED_POINT];
-        if (haveNewRedPoint) {
-            self.floatButtonRedPoint.hidden = NO;
-        }else{
-            self.floatButtonRedPoint.hidden = YES;
-        }
-    }
-}
+//- (void)hiddenRedPoint_MMMethodMMM:(BOOL)yesOrNo
+//{
+//    if (!yesOrNo) {
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAVE_NEW_RED_POINT];
+//        self.floatButtonRedPoint.hidden = NO;
+//    }else{
+//        BOOL haveNewRedPoint = [[NSUserDefaults standardUserDefaults] boolForKey:HAVE_NEW_RED_POINT];
+//        if (haveNewRedPoint) {
+//            self.floatButtonRedPoint.hidden = NO;
+//        }else{
+//            self.floatButtonRedPoint.hidden = YES;
+//        }
+//    }
+//}
 
 #pragma mark -
 #pragma mark - Property Action
