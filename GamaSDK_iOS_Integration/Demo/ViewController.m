@@ -338,6 +338,7 @@
         case 15:{
             [[MWSDK share] showFloatViewWithRoleId:roleId roleName:roleName roleLevel:roleLevel roleVipLevel:roleVipLevel serverCode:serverCode serverName:serverName switchAccountBlock:^(BOOL success, id  _Nullable result) {
                 //强制切换账号，退出当前游戏角色，回到登录界面
+                NSLog(@"强制切换账号，退出当前游戏角色，回到登录界面");
             }];
         }
             break;

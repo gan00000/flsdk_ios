@@ -71,15 +71,15 @@
 {
     if (self = [super initWithFrame:frame]) {
 //        self.delegate = [EPFDragViewManager_TW sharedDragViewManager];
-        [self setConstantData:parentView];
+        [self setConstantData_MMMethodMMM:parentView];
 //        [self resetCurrentPosition];
-        [self addView];
-        [self addNotification];
+        [self addView_MMMethodMMM];
+        [self addNotification_MMMethodMMM];
     }
     return self;
 }
 
-- (void)addNotification {
+- (void)addNotification_MMMethodMMM {
     /**
      *  开始生成 设备旋转 通知
      */
@@ -89,14 +89,14 @@
      *  添加 设备旋转 通知
      */
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleDeviceOrientationDidChange:)
+                                             selector:@selector(handleDeviceOrientationDidChange_MMMethodMMM:)
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
 }
 
 //#pragma mark -
 //#pragma mark - NSNotification Delegate Action
-- (void)handleDeviceOrientationDidChange:(UIInterfaceOrientation)interfaceOrientation
+- (void)handleDeviceOrientationDidChange_MMMethodMMM:(UIInterfaceOrientation)interfaceOrientation
 {
     //1.获取 当前设备 实例
     UIDevice *device = [UIDevice currentDevice] ;
@@ -126,7 +126,7 @@
 
         CGFloat centerY = self.center.y;
 
-        CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:_isLeftSide isLandscape:_isLandscape centerY:centerY isHalfHidden:_isHalfHidden];
+        CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:_isLeftSide isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:centerY isHalfHidden_MMMethodMMM:_isHalfHidden];
 //        if (_isShowMenu) {
 //            if (_isLeftSide) {
 //                if (_deviceOrientation == UIDeviceOrientationLandscapeLeft) {
@@ -151,7 +151,7 @@
     }
 }
 
-- (void)hiddenRedPoint:(BOOL)yesOrNo
+- (void)hiddenRedPoint_MMMethodMMM:(BOOL)yesOrNo
 {
     if (!yesOrNo) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAVE_NEW_RED_POINT];
@@ -180,7 +180,7 @@
 //    return itemBgViewWidth;
 //}
 
-- (void)showDragViewToBaseView:(UIView *)baseView {
+- (void)showDragViewToBaseView_MMMethodMMM:(UIView *)baseView {
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGSize screenSize = screenRect.size;
@@ -192,13 +192,13 @@
     }
     
     [baseView addSubview:self];
-    [self resetCurrentPosition];
+    [self resetCurrentPosition_MMMethodMMM];
 //    [self addHiddenAnimation];
 }
 
 #pragma mark -
 #pragma mark - Private Action
-- (CGPoint)setButtonCenterPositionWithSuperView:(UIView *)baseView isLeft:(BOOL)isLeft isLandscape:(BOOL)isLandscape centerY:(CGFloat)centerY isHalfHidden:(BOOL)isHalfHidden {
+- (CGPoint)setButtonCenterPositionWithSuperView_MMMethodMMM:(UIView *)baseView isLeft_MMMethodMMM:(BOOL)isLeft isLandscape_MMMethodMMM:(BOOL)isLandscape centerY_MMMethodMMM:(CGFloat)centerY isHalfHidden_MMMethodMMM:(BOOL)isHalfHidden {
 
     // 确定按钮的初始位置
     CGFloat superViewWidth = CGRectGetWidth(baseView.bounds);
@@ -228,7 +228,7 @@
     return CGPointMake(centerX, centerY);
 }
 
-- (void)resetCurrentPosition
+- (void)resetCurrentPosition_MMMethodMMM
 {
     
     CGFloat centerY = _superHeight * 0.5;
@@ -254,12 +254,12 @@
         centerY = _superHeight - GM_Float_Button_Width * 0.5f - insetBottom;
     }
 
-    CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:_isLeftSide isLandscape:_isLandscape centerY:centerY isHalfHidden:NO];
+    CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:_isLeftSide isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:centerY isHalfHidden_MMMethodMMM:NO];
     self.backgroundColor = [UIColor clearColor];
     self.center = centerPoint;
 }
 
-- (void)setConstantData:(UIView *)parentView
+- (void)setConstantData_MMMethodMMM:(UIView *)parentView
 {
 //    _isAminating = NO;
     
@@ -293,7 +293,7 @@
     }
 }
 
-- (void)addView
+- (void)addView_MMMethodMMM
 {
     self.clipsToBounds = YES;
     self.backgroundColor = [UIColor clearColor];
@@ -309,13 +309,13 @@
     [_floatButton sd_setBackgroundImageWithURL:[NSURL URLWithString:SDK_DATA.floatConfigData.buttonIcon] forState:UIControlStateNormal placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
     
     [_floatButton addTarget:self action:@selector(flotButtonTouchDown) forControlEvents:UIControlEventTouchDown];
-    [_floatButton addTarget:self action:@selector(dragInsideTheButton:andEvent:) forControlEvents:UIControlEventTouchDragInside | UIControlEventTouchDragOutside];
+    [_floatButton addTarget:self action:@selector(dragInsideTheButton_MMMethodMMM:andEvent_MMMethodMMM:) forControlEvents:UIControlEventTouchDragInside | UIControlEventTouchDragOutside];
     [_floatButton addTarget:self action:@selector(floatButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_floatButton];
     
     [self bringSubviewToFront:_floatButton];
     
-    [self hiddenFloatBtnAnimation];
+    [self hiddenFloatBtnAnimation_MMMethodMMM];
 
     [self addSubview:self.floatButtonRedPoint];
     [self.floatButtonRedPoint mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -409,7 +409,7 @@
 //}
 
 
-- (void)hiddenFloatBtnAnimation
+- (void)hiddenFloatBtnAnimation_MMMethodMMM
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (_isDraging || _isHalfHidden) {
@@ -424,10 +424,10 @@
             }
             _isHalfHidden = YES;
             if (_isLeftSide) {
-                CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:YES isLandscape:_isLandscape centerY:self.center.y isHalfHidden:YES];
+                CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:YES isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:self.center.y isHalfHidden_MMMethodMMM:YES];
                 self.center = centerPoint;
             }else{
-                CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:NO isLandscape:_isLandscape centerY:self.center.y isHalfHidden:YES];
+                CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:NO isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:self.center.y isHalfHidden_MMMethodMMM:YES];
                 self.center = centerPoint;
             }
             
@@ -448,7 +448,7 @@
     
 }
 
-- (CGSize)getSuperSize
+- (CGSize)getSuperSize_MMMethodMMM
 {
     CGSize superViewSize = self.superview.frame.size;
     CGFloat maxValue = MAX(superViewSize.height, superViewSize.width);
@@ -463,14 +463,14 @@
 
 #pragma mark -
 #pragma mark - UIButton Target Action
-- (void)dragInsideTheButton:(UIButton *)button andEvent:(UIEvent *)event
+- (void)dragInsideTheButton_MMMethodMMM:(UIButton *)button andEvent_MMMethodMMM:(UIEvent *)event
 {
     //NSLog(@"dragInsideTheButton...");
     _isDraging = YES;
     _isHalfHidden = NO;
     
     CGPoint point = [[[event allTouches] anyObject] locationInView:self.superview];
-    CGSize buttonSuperSize = [self getSuperSize];
+    CGSize buttonSuperSize = [self getSuperSize_MMMethodMMM];
     
     if (fabs(point.x - self.center.x) < 5 && fabs(point.y - self.center.y) < 5) {
         return;
@@ -543,7 +543,7 @@
 //        self.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
         
         CGPoint buttonCenter = self.center;
-        CGSize superViewSize = [self getSuperSize];
+        CGSize superViewSize = [self getSuperSize_MMMethodMMM];
         if (buttonCenter.x <= superViewSize.width * 0.5f) {
             _isLeftSide = YES;
         }else{
@@ -552,17 +552,17 @@
         
         if (_isLeftSide) {
     //            self.center = CGPointMake(FrameWidth * 0.5f, self.center.y);
-            CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:YES isLandscape:_isLandscape centerY:self.center.y isHalfHidden:NO];
+            CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:YES isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:self.center.y isHalfHidden_MMMethodMMM:NO];
             self.center = centerPoint;
         }
         else
         {
     //            CGSize buttonSuperSize = [self getSuperSize];
     //            self.center = CGPointMake(buttonSuperSize.width - FrameWidth * 0.5f, self.center.y);
-            CGPoint centerPoint = [self setButtonCenterPositionWithSuperView:self.superview isLeft:NO isLandscape:_isLandscape centerY:self.center.y isHalfHidden:NO];
+            CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:NO isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:self.center.y isHalfHidden_MMMethodMMM:NO];
             self.center = centerPoint;
         }
-        [self hiddenFloatBtnAnimation];
+        [self hiddenFloatBtnAnimation_MMMethodMMM];
         return;
     }
     

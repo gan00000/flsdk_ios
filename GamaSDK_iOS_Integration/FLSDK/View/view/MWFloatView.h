@@ -29,7 +29,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame parentView:(UIView *)parentView;
 
-- (void)showDragViewToBaseView:(UIView *)baseView;
+- (void)showDragViewToBaseView_MMMethodMMM:(UIView *)baseView;
 //- (void)addHiddenAnimation;
-- (void)hiddenRedPoint:(BOOL)yesOrNo;
+- (void)hiddenRedPoint_MMMethodMMM:(BOOL)yesOrNo;
 @end

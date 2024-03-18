@@ -51,7 +51,7 @@
 
 @implementation PersionCenterHorViewController
 
-- (void)makeViewStatus {
+- (void)makeViewStatus_MMMethodMMM {
     
     LoginResponse *mLoginResponse = SDK_DATA.mLoginResponse;
     if (mLoginResponse && mLoginResponse.data) {
@@ -91,7 +91,7 @@
         //self.uidValueLabel.text = floatMenuResp.userId;
     }
     
-    [self makeViewStatus];
+    [self makeViewStatus_MMMethodMMM];
     
     
     self.delContentView.hidden = YES;
@@ -148,7 +148,7 @@
     self.mFloatBindAccountViewController = [[FloatBindAccountViewController alloc] initWithNibName:XIB_FloatBindAccountViewController bundle:SDK_BUNDLE];
     self.mFloatBindAccountViewController.mMWBlock = ^(BOOL success, id  _Nullable result) {
         if (success) {
-            [self makeViewStatus];
+            [self makeViewStatus_MMMethodMMM];
         }
     };
     UIView *advViwe = self.mFloatBindAccountViewController.view;

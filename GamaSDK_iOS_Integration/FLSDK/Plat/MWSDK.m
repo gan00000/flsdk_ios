@@ -1126,7 +1126,7 @@
     }
     self.dragView = [[MWFloatView alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
 //    dragView.gameLandscape = PF_DATA.gameIsLandscape;
-    [self.dragView showDragViewToBaseView:appTopViewController.view];
+    [self.dragView showDragViewToBaseView_MMMethodMMM:appTopViewController.view];
     
 }
 
