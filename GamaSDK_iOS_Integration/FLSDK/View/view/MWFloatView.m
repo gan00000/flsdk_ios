@@ -213,25 +213,28 @@
     CGFloat superViewWidth = CGRectGetWidth(baseView.bounds);
 
     CGFloat centerX = GM_Float_Button_Width * 0.5f;
+    CGFloat centerX_m = GM_Float_Button_Width * 2.0f / 3;//40
+    CGFloat centerX_n = GM_Float_Button_Width * 1.0f / 3;//20
+    
     if (device_is_iPhoneX && _isLandscape && _isFullScreen) {
-        if (isLeft && _deviceOrientation == UIDeviceOrientationLandscapeLeft && centerY > 80.0f && centerY < 295.0f) {
+        if (isLeft && _deviceOrientation == UIDeviceOrientationLandscapeLeft && centerY > 80.0f && centerY < 295.0f) {//在刘海出单独处理
             centerX = isHalfHidden ? 30 : GM_Float_Button_Width * 0.5f + 30.0f;
         }
         else if (!isLeft && _deviceOrientation == UIDeviceOrientationLandscapeRight && centerY > 80.0f && centerY < 295.0f) {
             centerX = isHalfHidden ? superViewWidth - 30 : superViewWidth - GM_Float_Button_Width * 0.5f - 30.0f;
         }
         else if (!isLeft) {
-            centerX = isHalfHidden ? superViewWidth : superViewWidth - GM_Float_Button_Width * 0.5f;
+            centerX = isHalfHidden ? superViewWidth - centerX + centerX_m : superViewWidth - centerX;
         }
         else if (isLeft) {
-            centerX = isHalfHidden ? 0 : GM_Float_Button_Width * 0.5f;
+            centerX = isHalfHidden ? 0 + centerX - centerX_m : centerX;
         }
     }
     else {
         if (isLeft) {
-            centerX = isHalfHidden ? 0 : GM_Float_Button_Width * 0.5f;
+            centerX = isHalfHidden ? 0 + centerX - centerX_m : centerX;
         } else {
-            centerX = isHalfHidden ? superViewWidth : superViewWidth - GM_Float_Button_Width * 0.5f;
+            centerX = isHalfHidden ? superViewWidth - centerX + centerX_m : superViewWidth - centerX;
         }
     }
     return CGPointMake(centerX, centerY);
@@ -434,7 +437,7 @@
 
 - (void)hiddenFloatBtnAnimation_MMMethodMMM
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (_isDraging || _isHalfHidden) {
             return;
         }
@@ -599,6 +602,9 @@
     self.mFloatContentViewController.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
         //红掉消失
         self.floatButtonRedPoint.hidden = YES;
+        if (m == 100) {//选按钮消失
+            [self destoryDragView_MMMethodMMM];
+        }
     };
     [appTopViewController presentViewController:self.mFloatContentViewController animated:NO completion:^{
         

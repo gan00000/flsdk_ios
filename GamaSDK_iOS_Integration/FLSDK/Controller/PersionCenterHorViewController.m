@@ -174,11 +174,20 @@
 
 - (IBAction)switchLoginAccount:(id)sender {
     
-    [self.mFloatContentViewController dismissViewControllerAnimated:NO completion:^{
-        
-    }];
+    
     if ([MWSDK share].switchAccountBlock) {
         [MWSDK share].switchAccountBlock(YES, nil);
+    }
+    
+//    [self.mFloatContentViewController dismissViewControllerAnimated:NO completion:^{
+//
+//    }];
+    if (self.mFloatContentViewController && self.mFloatContentViewController.mCCallBack) {
+        
+        if (self.mFloatContentViewController.mCCallBack) {
+            self.mFloatContentViewController.mCCallBack(@"", 100, nil);
+        }
+        
     }
     
 }
