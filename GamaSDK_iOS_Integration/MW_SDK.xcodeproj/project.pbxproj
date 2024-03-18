@@ -494,6 +494,20 @@
 		035EDC2129A499F7009092F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1C29A499F7009092F0 /* GoogleService-Info.plist */; };
 		035EDC2229A499F7009092F0 /* SDKResourcesV3.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 035EDC1D29A499F7009092F0 /* SDKResourcesV3.bundle */; };
 		035EDC2429A49BF5009092F0 /* SDKResourcesV2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0386139D293897C900CC9C44 /* SDKResourcesV2.bundle */; };
+		036540B32BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B42BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B52BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B62BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B72BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B82BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540B92BA826AB007CAE19 /* RedDotRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036540B12BA826AB007CAE19 /* RedDotRes.h */; };
+		036540BA2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540BB2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540BC2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540BD2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540BE2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540BF2BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
+		036540C02BA826AB007CAE19 /* RedDotRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 036540B22BA826AB007CAE19 /* RedDotRes.m */; };
 		037C6EF92875AC790041EC34 /* AdLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E947D321221D73CE00490C35 /* AdLogger.m */; };
 		037C6EFA2875AC790041EC34 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03202938286B02D900E8D5A5 /* AdDelegate.m */; };
 		037C6EFB2875AC790041EC34 /* CCSDKDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CBC0924C589A5000D6B20 /* CCSDKDATA.m */; };
@@ -2350,6 +2364,8 @@
 		03650193285C761600578028 /* SDKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBaseView.h; sourceTree = "<group>"; };
 		03650194285C761600578028 /* SDKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKBaseView.m; sourceTree = "<group>"; };
 		03650196285C768300578028 /* SdkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkHeader.h; sourceTree = "<group>"; };
+		036540B12BA826AB007CAE19 /* RedDotRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedDotRes.h; sourceTree = "<group>"; };
+		036540B22BA826AB007CAE19 /* RedDotRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedDotRes.m; sourceTree = "<group>"; };
 		03669944285DBF3A0008EB50 /* NSString+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
 		03669945285DBF3A0008EB50 /* NSString+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		03669947285E26890008EB50 /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
@@ -4304,6 +4320,8 @@
 				03A19E232B9857AD00F0C146 /* FloatMenuMode.m */,
 				03ED35F92B9875BC0064C9D3 /* FloatConfigData.h */,
 				03ED35FA2B9875BC0064C9D3 /* FloatConfigData.m */,
+				036540B12BA826AB007CAE19 /* RedDotRes.h */,
+				036540B22BA826AB007CAE19 /* RedDotRes.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4603,6 +4621,7 @@
 				03D95E652B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				03509C9629F91C8C00C840DA /* CountTimerDelegate.h in Headers */,
 				03F1B82C2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
+				036540B72BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				0349F8B22AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775012AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				03A19E282B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
@@ -4654,6 +4673,7 @@
 				0387BA93291B8E5C001BACA8 /* BindAccountViewV2.h in Headers */,
 				030FAA2628A0FA7C00709536 /* FindPasswordViewV2.h in Headers */,
 				0337750D2AEA51DA00D19EF5 /* MWWebView.h in Headers */,
+				036540B32BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				0356591E2AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				03F1B8442B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				037C6F682875AD230041EC34 /* PayData.h in Headers */,
@@ -4680,6 +4700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0349F8AF2AD7A1190015750A /* ExpoModel.h in Headers */,
+				036540B42BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				03F1B8452B8DCA6C009B6747 /* UIImage+CropImageTW.h in Headers */,
 				03A19E252B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
 				038612DA29388F8900CC9C44 /* NSString+Local.h in Headers */,
@@ -4750,6 +4771,7 @@
 				03D95E632B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				0387B9E2291B8C9E001BACA8 /* PayData.h in Headers */,
 				03F1B82A2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
+				036540B52BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				0349F8B02AD7A1190015750A /* ExpoModel.h in Headers */,
 				033774FF2AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				03A19E262B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
@@ -4798,6 +4820,7 @@
 				033775032AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				0392B2E32A5BB28300A3E2D6 /* AgeQuaView.h in Headers */,
 				0392B2682A5BA99900A3E2D6 /* BindAccountViewV2.h in Headers */,
+				036540B92BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				03A19E1A2B9855D000F0C146 /* FloatMenuResp.h in Headers */,
 				035659242AD253C0007B0C6A /* SelectPayChannelView.h in Headers */,
 				0392B1BF2A5BA8DC00A3E2D6 /* UrlMode.h in Headers */,
@@ -4850,6 +4873,7 @@
 				03D95E642B9F440C00643231 /* FloatChangePwdViewController.h in Headers */,
 				039B25FA298B555300045C53 /* CountTimerDelegate.h in Headers */,
 				03F1B82B2B8DCA6C009B6747 /* UIView+RectPositionTW.h in Headers */,
+				036540B62BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				0349F8B12AD7A1190015750A /* ExpoModel.h in Headers */,
 				033775002AE9080E00D19EF5 /* SwitchResp.h in Headers */,
 				03A19E272B9857AD00F0C146 /* FloatMenuMode.h in Headers */,
@@ -4919,6 +4943,7 @@
 				03A19DEA2B97048900F0C146 /* FloatContentViewController.h in Headers */,
 				03CC78262B9B03EC00B2DA2D /* FloatBindAccountViewController.h in Headers */,
 				03A19E192B9855D000F0C146 /* FloatMenuResp.h in Headers */,
+				036540B82BA826AB007CAE19 /* RedDotRes.h in Headers */,
 				03CA722C29D5698400098979 /* LoginData.h in Headers */,
 				033B32E629D56AEE00AE9F96 /* TermsViewV2.h in Headers */,
 				0349F8F12AD7F9580015750A /* ExposureController.h in Headers */,
@@ -5672,6 +5697,7 @@
 				03509D0D29F91C8C00C840DA /* BindAccountView.m in Sources */,
 				03509D0E29F91C8C00C840DA /* ChangePasswordView.m in Sources */,
 				03509D0F29F91C8C00C840DA /* FindPasswordView.m in Sources */,
+				036540BE2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				03509D1029F91C8C00C840DA /* LoginWithRegView.m in Sources */,
 				0349F8B92AD7A1190015750A /* ExpoModel.m in Sources */,
 				03509D1129F91C8C00C840DA /* MainHomeView.m in Sources */,
@@ -5762,6 +5788,7 @@
 				037C6F072875AC790041EC34 /* ConfigModel.m in Sources */,
 				037C6F082875AC790041EC34 /* CreateOrderResp.m in Sources */,
 				033775042AE9080E00D19EF5 /* SwitchResp.m in Sources */,
+				036540BA2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				037C6F092875AC790041EC34 /* BJBaseResponceModel.m in Sources */,
 				0349F8B52AD7A1190015750A /* ExpoModel.m in Sources */,
 				030FAA9328A6571900709536 /* GamaThirdSocial.m in Sources */,
@@ -5979,6 +6006,7 @@
 				0386135929388F8900CC9C44 /* BindAccountView.m in Sources */,
 				0386135A29388F8900CC9C44 /* ChangePasswordView.m in Sources */,
 				0386135B29388F8900CC9C44 /* FindPasswordView.m in Sources */,
+				036540BB2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				0386135C29388F8900CC9C44 /* LoginWithRegView.m in Sources */,
 				0349F8B62AD7A1190015750A /* ExpoModel.m in Sources */,
 				0386135F29388F8900CC9C44 /* MainHomeView.m in Sources */,
@@ -6146,6 +6174,7 @@
 				0387BA58291B8C9E001BACA8 /* LoginWithRegView.m in Sources */,
 				0387BA86291B8DA5001BACA8 /* LoginWithRegViewV2.m in Sources */,
 				0387BA8F291B8DA5001BACA8 /* TermsViewV2.m in Sources */,
+				036540BC2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				0387BA5A291B8C9E001BACA8 /* MainHomeView.m in Sources */,
 				0349F8B72AD7A1190015750A /* ExpoModel.m in Sources */,
 				0387BA5B291B8C9E001BACA8 /* RegisterAccountView.m in Sources */,
@@ -6219,6 +6248,7 @@
 				0392B1F32A5BA8DC00A3E2D6 /* FBDelegate.m in Sources */,
 				0392B1F42A5BA8DC00A3E2D6 /* HttpServiceEnginePay.m in Sources */,
 				0392B1F52A5BA8DC00A3E2D6 /* AccountModel.m in Sources */,
+				036540C02BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				0392B1F62A5BA8DC00A3E2D6 /* LoginResponse.m in Sources */,
 				0392B1F72A5BA8DC00A3E2D6 /* ConfigResponse.m in Sources */,
 				03F1B83C2B8DCA6C009B6747 /* UIImage+ColorToImageTW.m in Sources */,
@@ -6470,6 +6500,7 @@
 				039B266F298B555300045C53 /* BindAccountView.m in Sources */,
 				039B2670298B555300045C53 /* ChangePasswordView.m in Sources */,
 				039B2671298B555300045C53 /* FindPasswordView.m in Sources */,
+				036540BD2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				039B2672298B555300045C53 /* LoginWithRegView.m in Sources */,
 				0349F8B82AD7A1190015750A /* ExpoModel.m in Sources */,
 				039B2675298B555300045C53 /* MainHomeView.m in Sources */,
@@ -6570,6 +6601,7 @@
 				03C91BA92A7A377100289870 /* AdjustDelegate.m in Sources */,
 				03CA726029D5698400098979 /* ConfigModel.m in Sources */,
 				03A19DF12B97048900F0C146 /* FloatContentViewController.m in Sources */,
+				036540BF2BA826AB007CAE19 /* RedDotRes.m in Sources */,
 				03CA726129D5698400098979 /* CreateOrderResp.m in Sources */,
 				03CA726229D5698400098979 /* BJBaseResponceModel.m in Sources */,
 				03CA726329D5698400098979 /* GamaThirdSocial.m in Sources */,

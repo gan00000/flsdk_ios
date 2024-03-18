@@ -56,7 +56,15 @@
     
     self.floatShowMenuList = SDK_DATA.floatShowMenuList;
     if (self.floatShowMenuList.count > 0) {
-        self.floatShowMenuList[0].isClick = YES;
+        
+        for (int i = 0; i < self.floatShowMenuList.count; i++) {
+            FloatMenuMode *em_a = self.floatShowMenuList[i];
+            if ([em_a.code isEqualToString:@"my"]) {
+                em_a.isClick = YES;
+            }else if ([em_a.code isEqualToString:@"cs"]) {
+                em_a.reddot = SDK_DATA.floatMenuResp.redDotRes.cs;
+            }
+        }
     }
     
     self.mPersionCenterHorViewController = [[PersionCenterHorViewController alloc] initWithNibName:XIB_PersionCenterHorViewController bundle:SDK_BUNDLE];
@@ -111,6 +119,12 @@
         cell.contentView.backgroundColor = [UIColor colorWithHexString_MMMethodMMM:@"#EDEDED"];
     }
     
+    if (xFloatMenuMode.reddot) {
+        cell.reddotView.hidden = NO;
+    }else{
+        cell.reddotView.hidden = YES;
+    }
+    
     return cell;
 }
 #pragma mark - UITableViewDelegate
@@ -139,6 +153,7 @@
 //    [self.backIV sd_setImageWithURL:[NSURL URLWithString:em.backImgUrl]  placeholderImage:GetImage(activity_img_back)];
 //    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(activity_img_close)];
     
+    em.reddot = NO;
     if ([em.code isEqualToString:@"my"]) {
         
         self.mwWebView.hidden = YES;
@@ -150,6 +165,15 @@
         if ([StringUtil isNotEmpty_MMMethodMMM:em.url]) {
             NSString *resultURL = [SDKRequest createSdkUrl_MMMethodMMM:em.url otherDic_MMMethodMMM:nil];//添加当前参数
             [self.mwWebView loadRequest_MMMethodMMM:resultURL];
+        }
+        
+        if ([em.code isEqualToString:@"cs"]) {
+            
+            SDK_DATA.floatMenuResp.redDotRes.cs = NO;
+            if (self.mCCallBack) {
+                self.mCCallBack(em.code, 1, nil);
+            }
+            
         }
         
     }

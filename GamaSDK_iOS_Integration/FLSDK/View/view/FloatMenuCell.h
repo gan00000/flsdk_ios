@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FloatMenuCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *menuIconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *menuTitleLabel;
+@property (weak, nonatomic) IBOutlet UIView *reddotView;
 
 @end
 

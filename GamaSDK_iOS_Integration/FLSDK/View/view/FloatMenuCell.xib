@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,6 +30,14 @@
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlw-vQ-BDj" userLabel="reddotView">
+                        <rect key="frame" x="79" y="27" width="6" height="6"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="Shn-L8-FaT"/>
+                            <constraint firstAttribute="height" constant="6" id="kCD-qS-MYA"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
@@ -36,14 +45,22 @@
                     <constraint firstItem="eer-CB-vwa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FVF-Zr-LcA"/>
                     <constraint firstItem="52D-Ul-7Ps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rEa-jc-1e0"/>
                     <constraint firstItem="52D-Ul-7Ps" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rLJ-a1-usJ"/>
+                    <constraint firstItem="Xlw-vQ-BDj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s8v-rW-M9R"/>
+                    <constraint firstItem="Xlw-vQ-BDj" firstAttribute="leading" secondItem="eer-CB-vwa" secondAttribute="trailing" constant="6" id="yhG-JY-nU5"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="menuIconImageView" destination="52D-Ul-7Ps" id="D3g-mg-mcj"/>
                 <outlet property="menuTitleLabel" destination="eer-CB-vwa" id="Pum-xC-zYg"/>
+                <outlet property="reddotView" destination="Xlw-vQ-BDj" id="jrD-Vx-vNa"/>
             </connections>
-            <point key="canvasLocation" x="-63" y="20"/>
+            <point key="canvasLocation" x="-64.122137404580144" y="19.718309859154932"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

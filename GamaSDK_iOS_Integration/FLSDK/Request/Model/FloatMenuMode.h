@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *code;
 @property (nonatomic, assign) BOOL display;
 @property (nonatomic, assign) BOOL isClick;
+@property (nonatomic, assign) BOOL reddot;
 
 @end
 

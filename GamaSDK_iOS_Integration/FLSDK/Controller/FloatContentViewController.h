@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FloatContentViewController : UIViewController
 
-
+@property (copy,nonatomic) CCallBack mCCallBack;
 @property (nonatomic, strong) NSMutableArray<FloatMenuMode *> *floatShowMenuList;
 
 @end

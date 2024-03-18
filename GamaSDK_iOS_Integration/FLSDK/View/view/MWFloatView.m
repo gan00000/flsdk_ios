@@ -7,7 +7,7 @@
 #import "Masonry.h"
 #import "UIButton+WebCache.h"
 #import "SUtil.h"
-
+#import "SDKRequest.h"
 
 //悬浮按钮
 #define   MW_FloatButton_Identifier         @"__MW_FloatButton_Identifier__"
@@ -70,9 +70,9 @@
 - (instancetype)initWithFrame:(CGRect)frame parentView:(UIView *)parentView
 {
     if (self = [super initWithFrame:frame]) {
-//        self.delegate = [EPFDragViewManager_TW sharedDragViewManager];
+        //        self.delegate = [EPFDragViewManager_TW sharedDragViewManager];
         [self setConstantData_MMMethodMMM:parentView];
-//        [self resetCurrentPosition];
+        //        [self resetCurrentPosition];
         [self addView_MMMethodMMM];
         [self addNotification_MMMethodMMM];
     }
@@ -84,7 +84,7 @@
      *  开始生成 设备旋转 通知
      */
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-
+    
     /**
      *  添加 设备旋转 通知
      */
@@ -103,7 +103,7 @@
     if (!_isLandscape) {
         return;
     }
-
+    
     switch (device.orientation) {
         case UIDeviceOrientationFaceUp:
         case UIDeviceOrientationFaceDown:
@@ -121,33 +121,33 @@
             break;
         }
     }
-
+    
     if (_deviceOrientation == UIDeviceOrientationLandscapeRight || _deviceOrientation == UIDeviceOrientationLandscapeLeft) {
-
+        
         CGFloat centerY = self.center.y;
-
+        
         CGPoint centerPoint = [self setButtonCenterPositionWithSuperView_MMMethodMMM:self.superview isLeft_MMMethodMMM:_isLeftSide isLandscape_MMMethodMMM:_isLandscape centerY_MMMethodMMM:centerY isHalfHidden_MMMethodMMM:_isHalfHidden];
-//        if (_isShowMenu) {
-//            if (_isLeftSide) {
-//                if (_deviceOrientation == UIDeviceOrientationLandscapeLeft) {
-//                    self.center = CGPointMake(self.center.x + 30, self.center.y);
-//                }
-//                else {
-//                    self.center = CGPointMake(self.center.x - 30, self.center.y);
-//                }
-//            }
-//            else {
-//                if (_deviceOrientation == UIDeviceOrientationLandscapeRight) {
-//                    self.center = CGPointMake(self.center.x - 30, self.center.y);
-//                }
-//                else {
-//                    self.center = CGPointMake(self.center.x + 30, self.center.y);
-//                }
-//            }
-//        }
-//        else {
-//            self.center = centerPoint;
-//        }
+        //        if (_isShowMenu) {
+        //            if (_isLeftSide) {
+        //                if (_deviceOrientation == UIDeviceOrientationLandscapeLeft) {
+        //                    self.center = CGPointMake(self.center.x + 30, self.center.y);
+        //                }
+        //                else {
+        //                    self.center = CGPointMake(self.center.x - 30, self.center.y);
+        //                }
+        //            }
+        //            else {
+        //                if (_deviceOrientation == UIDeviceOrientationLandscapeRight) {
+        //                    self.center = CGPointMake(self.center.x - 30, self.center.y);
+        //                }
+        //                else {
+        //                    self.center = CGPointMake(self.center.x + 30, self.center.y);
+        //                }
+        //            }
+        //        }
+        //        else {
+        //            self.center = centerPoint;
+        //        }
     }
 }
 
@@ -157,7 +157,7 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAVE_NEW_RED_POINT];
         self.floatButtonRedPoint.hidden = NO;
     }else{
-       BOOL haveNewRedPoint = [[NSUserDefaults standardUserDefaults] boolForKey:HAVE_NEW_RED_POINT];
+        BOOL haveNewRedPoint = [[NSUserDefaults standardUserDefaults] boolForKey:HAVE_NEW_RED_POINT];
         if (haveNewRedPoint) {
             self.floatButtonRedPoint.hidden = NO;
         }else{
@@ -184,7 +184,7 @@
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGSize screenSize = screenRect.size;
-
+    
     if (CGSizeEqualToSize(baseView.frame.size , screenSize)) {
         _isFullScreen = YES;
     } else {
@@ -193,7 +193,16 @@
     
     [baseView addSubview:self];
     [self resetCurrentPosition_MMMethodMMM];
-//    [self addHiddenAnimation];
+    //    [self addHiddenAnimation];
+}
+
+- (void)destoryDragView_MMMethodMMM {
+    if (self.mFloatContentViewController) {
+        [self.mFloatContentViewController dismissViewControllerAnimated:NO completion:nil];
+    }
+    self.mFloatContentViewController = nil;
+    [self removeFromSuperview];
+    
 }
 
 #pragma mark -
@@ -319,26 +328,40 @@
 
     [self addSubview:self.floatButtonRedPoint];
     [self.floatButtonRedPoint mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(self);
+        make.centerY.mas_equalTo(self);
+        make.trailing.mas_equalTo(self);
         make.width.height.mas_equalTo(8);
     }];
     self.floatButtonRedPoint.hidden = YES;
+    
+    
+    [SDKRequest getFloatReddotDataWithOtherParamsDic_MMMethodMMM:nil successBlock_MMMethodMMM:^(id responseData2) {
+        
+        if (responseData2) {
+            RedDotRes *nRedDotRes = responseData2;
+            if (nRedDotRes.cs) {//显示红点
+                self.floatButtonRedPoint.hidden = NO;
+            }
+        }
+        
+    } errorBlock_MMMethodMMM:^(BJError *error2) {
+        
+    }];
+    
     
 }
 
 -(UIButton *)floatButtonRedPoint
 {
     if (!_floatButtonRedPoint) {
-        
         _floatButtonRedPoint = [UIButton buttonWithType:UIButtonTypeCustom];
         _floatButtonRedPoint.backgroundColor = [UIColor redColor];
         _floatButtonRedPoint.layer.cornerRadius = 4;
         
     }
-    
     return _floatButtonRedPoint;
 }
-//
+
 //-(GSPlatFloatUIView *) gsPlatFloatUIView
 //{
 //
@@ -573,6 +596,10 @@
     }
      self.mFloatContentViewController = [[FloatContentViewController alloc] initWithNibName:XIB_FloatContentViewController bundle:SDK_BUNDLE];
     
+    self.mFloatContentViewController.mCCallBack = ^(NSString *msg, NSInteger m, NSDictionary *dic) {
+        //红掉消失
+        self.floatButtonRedPoint.hidden = YES;
+    };
     [appTopViewController presentViewController:self.mFloatContentViewController animated:NO completion:^{
         
     }];

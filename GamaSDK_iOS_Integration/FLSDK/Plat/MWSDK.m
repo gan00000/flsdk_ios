@@ -1122,7 +1122,8 @@
     
     //start
     if (self.dragView) {
-        [self.dragView removeFromSuperview];
+        [self.dragView destoryDragView_MMMethodMMM];
+        self.dragView = nil;
     }
     self.dragView = [[MWFloatView alloc] initWithFrame:CGRectMake(0, 0, GM_Float_Button_Width, GM_Float_Button_Width) parentView:appTopViewController.view];
 //    dragView.gameLandscape = PF_DATA.gameIsLandscape;

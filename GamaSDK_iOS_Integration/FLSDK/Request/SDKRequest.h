@@ -33,6 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)getFloatMenuDataWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
                            successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                               errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
+//获取悬浮红点
++ (void)getFloatReddotDataWithOtherParamsDic_MMMethodMMM:(NSDictionary *)otherParamsDic
+                           successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
+                                  errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
 
 +(void)reportSdkEventWithEventName_MMMethodMMM:(NSString *)eventName successBlock_MMMethodMMM:(BJServiceSuccessBlock)successBlock
                         errorBlock_MMMethodMMM:(BJServiceErrorBlock)errorBlock;
