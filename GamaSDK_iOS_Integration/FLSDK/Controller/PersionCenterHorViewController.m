@@ -185,7 +185,7 @@
     if (self.mFloatContentViewController && self.mFloatContentViewController.mCCallBack) {
         
         if (self.mFloatContentViewController.mCCallBack) {
-            self.mFloatContentViewController.mCCallBack(@"", 100, nil);
+            self.mFloatContentViewController.mCCallBack(@"", 100, nil);//100去掉悬浮按钮，删除
         }
         
     }
