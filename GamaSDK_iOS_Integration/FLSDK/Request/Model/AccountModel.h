@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *telephone;//用户绑定的手机
 @property (nonatomic, copy) NSString *loginId;//用户账号
 
+@property (nonatomic, copy) NSString *area;//用户地区
+
 @end
 
 NS_ASSUME_NONNULL_END

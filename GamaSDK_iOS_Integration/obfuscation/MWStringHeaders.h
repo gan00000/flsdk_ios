@@ -226,6 +226,7 @@
 #define wwwww_tag_wwwww_pattern        @"pattern"  //@"pattern"
 #define wwwww_tag_wwwww_text_cancel        @"text_cancel"  //@"text_cancel"
 #define wwwww_tag_wwwww_Key_AccountModelArray        @"Key_AccountModelArray"  //@"Key_AccountModelArray"
+#define wwwww_tag_wwwww_Key_AccountModelArray_Json        @"Key_AccountModelArray_Json"  //@"Key_AccountModelArray_Json"
 #define wwwww_tag_wwwww_SDK_LOGIN_TYPE        @"SDK_LOGIN_TYPE"  //@"SDK_LOGIN_TYPE"
 #define wwwww_tag_wwwww_yes        @"yes"  //@"yes"
 #define wwwww_tag_wwwww_radio_tenyesator        @"结束所有apple未消耗订单"  //@"结束所有apple未消耗订单"

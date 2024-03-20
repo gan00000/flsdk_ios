@@ -649,6 +649,7 @@
         loginData.sign = rData.sign;
         loginData.telephone = rData.telephone;
         loginData.loginId = rData.loginId;
+        loginData.area = rData.area;//用户地区
         
         [MWSDK share].loginCompletionHandler(loginData);
     }

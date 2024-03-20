@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *loginId;//用户账号
 @property (nonatomic, copy) NSString *sign; //用于cp验证账号
 @property (nonatomic, copy) NSString *gameCode;
+@property (nonatomic, copy) NSString *area;//用户地区
 
 @end
 
