@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -3594,12 +3594,12 @@
 			path = KeyChainUUID;
 			sourceTree = "<group>";
 		};
-		03349EC72A700E42004ECF5E /* AF-v6.12.1 */ = {
+		03349EC72A700E42004ECF5E /* AF-v6.13.1 */ = {
 			isa = PBXGroup;
 			children = (
 				03349EC82A700E42004ECF5E /* AppsFlyerLib.xcframework */,
 			);
-			path = "AF-v6.12.1";
+			path = "AF-v6.13.1";
 			sourceTree = "<group>";
 		};
 		0337E0102AE1018200F171B1 /* View */ = {
@@ -4431,7 +4431,7 @@
 			isa = PBXGroup;
 			children = (
 				03C91BAD2A7A389700289870 /* AdjustSdk-4.33.6 */,
-				03349EC72A700E42004ECF5E /* AF-v6.12.1 */,
+				03349EC72A700E42004ECF5E /* AF-v6.13.1 */,
 				03D302AF2A6EB04F00ED990B /* Naver-v4.1.5 */,
 				039E6E8929D9900200890B3B /* Facebook-v16.1.1 */,
 				039E6E8F29D9900200890B3B /* Firebase-v10.4.0 */,
