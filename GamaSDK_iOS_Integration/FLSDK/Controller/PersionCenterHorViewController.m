@@ -97,7 +97,7 @@
     self.delContentView.hidden = YES;
     self.delContentView.layer.cornerRadius = 15;
     
-    self.delWarnIcon.image = GetImage(@"float_del_account_warnings");
+    self.delWarnIcon.image = GetImage(float_del_account_warnings);
     self.cancelDelBtn.layer.cornerRadius = 16;
     self.cancelDelBtn.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#DDDDDD"].CGColor;
     self.cancelDelBtn.layer.borderWidth = 0.5;

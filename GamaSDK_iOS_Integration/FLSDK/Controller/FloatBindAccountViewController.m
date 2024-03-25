@@ -33,7 +33,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.backImageView.userInteractionEnabled = YES;
-    self.backImageView.image = GetImage(@"icon_float_return");
+    self.backImageView.image = GetImage(icon_float_return);
     [self.backImageView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         [self.view removeFromSuperview];
     }];
@@ -41,12 +41,12 @@
     self.accountContentView.layer.cornerRadius = 16;
     self.accountContentView.layer.borderWidth = 0.5;
     self.accountContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
-    self.accountIconImageView.image = GetImage(@"float_icon_user");
+    self.accountIconImageView.image = GetImage(float_icon_user);
     
     self.pwdContentView.layer.cornerRadius = 16;
     self.pwdContentView.layer.borderWidth = 0.5;
     self.pwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
-    self.pwdIconImageView.image = GetImage(@"float_icon_password");
+    self.pwdIconImageView.image = GetImage(float_icon_password);
     
     self.titleLabel.text = wwwww_tag_wwwww_text_update_account.localx;
     [self.confirmBtn setTitle:wwwww_tag_wwwww_py_confire.localx forState:UIControlStateNormal];

@@ -15,6 +15,9 @@
 #import "PersionCenterHorViewController.h"
 #import "UIView+BlockGesture.h"
 
+#define FLOAT_MENU_TYPE_MY @"my"
+#define FLOAT_MENU_TYPE_CS @"cs"
+
 @interface FloatContentViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIView *floatContentView;
 
@@ -59,9 +62,9 @@
         
         for (int i = 0; i < self.floatShowMenuList.count; i++) {
             FloatMenuMode *em_a = self.floatShowMenuList[i];
-            if ([em_a.code isEqualToString:@"my"]) {
+            if ([em_a.code isEqualToString:FLOAT_MENU_TYPE_MY]) {
                 em_a.isClick = YES;
-            }else if ([em_a.code isEqualToString:@"cs"]) {
+            }else if ([em_a.code isEqualToString:FLOAT_MENU_TYPE_CS]) {
                 em_a.reddot = SDK_DATA.floatMenuResp.redDotRes.cs;
             }
         }
@@ -76,7 +79,7 @@
         make.top.bottom.trailing.mas_equalTo(self.rightView);
     }];
     
-    [self.backBtn setImage:GetImage(@"float_back_dismiss")];
+    [self.backBtn setImage:GetImage(float_back_dismiss)];
     
     self.backBtn.userInteractionEnabled = YES;
     [self.backBtn addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
@@ -110,7 +113,14 @@
     FloatMenuMode *xFloatMenuMode = self.floatShowMenuList[indexPath.row];
     FloatMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:XIB_FloatMenuCell];
     
-    [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
+    if ([xFloatMenuMode.code isEqualToString:FLOAT_MENU_TYPE_MY]) {
+        [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:GetImage(icon_float_person)];
+    }else if ([xFloatMenuMode.code isEqualToString:FLOAT_MENU_TYPE_CS]){
+        [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:GetImage(icon_float_customer)];
+    }else{
+        [cell.menuIconImageView sd_setImageWithURL:[NSURL URLWithString:xFloatMenuMode.icon] placeholderImage:[SUtil getAppIconImage_MMMethodMMM]];
+    }
+    
     cell.menuTitleLabel.text = xFloatMenuMode.name;
     
     if (xFloatMenuMode.isClick) {
@@ -154,7 +164,7 @@
 //    [self.closeIV sd_setImageWithURL:[NSURL URLWithString:em.closeImgUrl] placeholderImage:GetImage(activity_img_close)];
     
     em.reddot = NO;
-    if ([em.code isEqualToString:@"my"]) {
+    if ([em.code isEqualToString:FLOAT_MENU_TYPE_MY]) {
         
         self.mwWebView.hidden = YES;
         self.persionCenterView.hidden = NO;
@@ -167,7 +177,7 @@
             [self.mwWebView loadRequest_MMMethodMMM:resultURL];
         }
         
-        if ([em.code isEqualToString:@"cs"]) {
+        if ([em.code isEqualToString:FLOAT_MENU_TYPE_CS]) {
             
             //删除红点
             if (SDK_DATA.floatMenuResp.redDotRes.cs) {

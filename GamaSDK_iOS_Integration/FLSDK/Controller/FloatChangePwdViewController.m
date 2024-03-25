@@ -36,7 +36,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.backImageView.userInteractionEnabled = YES;
-    self.backImageView.image = GetImage(@"icon_float_return");
+    self.backImageView.image = GetImage(icon_float_return);
     [self.backImageView addTapActionWithBlock_MMMethodMMM:^(UIGestureRecognizer *gestureRecoginzer) {
         [self.view removeFromSuperview];
     }];
@@ -44,17 +44,17 @@
     self.accountContentView.layer.cornerRadius = 16;
     self.accountContentView.layer.borderWidth = 0.5;
     self.accountContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
-    self.accountIconImageView.image = GetImage(@"float_icon_user");
+    self.accountIconImageView.image = GetImage(float_icon_user);
     
     self.pwdContentView.layer.cornerRadius = 16;
     self.pwdContentView.layer.borderWidth = 0.5;
     self.pwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
-    self.pwdIconImageView.image = GetImage(@"float_icon_password");
+    self.pwdIconImageView.image = GetImage(float_icon_password);
     
     self.againPwdContentView.layer.cornerRadius = 16;
     self.againPwdContentView.layer.borderWidth = 0.5;
     self.againPwdContentView.layer.borderColor = [UIColor colorWithHexString_MMMethodMMM:@"#BABABA"].CGColor;
-    self.againPwdIconImageView.image = GetImage(@"float_icon_again_pwd");
+    self.againPwdIconImageView.image = GetImage(float_icon_again_pwd);
     
     self.titleLabel.text = wwwww_tag_wwwww_py_login_page_change_pwd.localx;
     self.accountTF.placeholder = wwwww_tag_wwwww_py_input_old_password.localx;

@@ -314,6 +314,15 @@
 #define act_menu_bg   @"act_menu_bg"
 #define act_menu_unselect_bg   @"act_menu_unselect_bg"
 #define activity_img_title   @"activity_img_title"
+#define icon_float_person   @"icon_float_person"
+#define icon_float_customer   @"icon_float_customer"
+#define icon_float_return   @"icon_float_return"
+#define float_icon_user   @"float_icon_user"
+#define float_icon_password   @"float_icon_password"
+#define float_icon_again_pwd   @"float_icon_again_pwd"
+#define float_back_dismiss   @"float_back_dismiss"
+#define float_del_account_warnings   @"float_del_account_warnings"
+
 
 #define XIB_ExposureController   @"ExposureController"
 #define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
