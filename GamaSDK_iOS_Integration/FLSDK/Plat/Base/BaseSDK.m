@@ -23,6 +23,10 @@
 
 #import "AFNetworkReachabilityManager.h"
 
+#import <AdSupport/AdSupport.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <AdSupport/ASIdentifierManager.h>
+
 @interface BaseSDK()<FIRMessagingDelegate, UNUserNotificationCenterDelegate>
 
 @end
@@ -139,7 +143,7 @@
 #pragma mark - 生命周期接口（内部监听系统通知处理）
 - (void)sdk_application_MMMethodMMM:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    NSLog(@"didFinishLaunchingWithOptions start");
     [FIRApp configure];
     [FIRMessaging messaging].delegate = self;
     
@@ -209,20 +213,48 @@
         
      });
 
+    NSLog(@"didFinishLaunchingWithOptions end");
 }
 
 
 - (void)sdk_applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application
 {
+    NSLog(@"applicationDidBecomeActive end");
     // 应用每次启动时，将应用icon上的数字减1（前提是原本大于或等于1）
     if ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) {
         --[UIApplication sharedApplication].applicationIconBadgeNumber;
     }
     
     [AdDelegate applicationDidBecomeActive_MMMethodMMM:application];
-    
     [FBDelegate applicationDidBecomeActive_MMMethodMMM:application];
     
+    if (@available(iOS 14, *)) {//请求权限
+        
+        // iOS14及以上版本需要先请求权限
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            // 获取到权限后，依然使用老方法获取idfa
+            if (status == ATTrackingManagerAuthorizationStatusAuthorized) {//模拟器会一直00000000-0000-0000-0000-000000000000
+                NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
+                NSLog(@"idfa=%@",idfa);
+                
+            } else {
+                NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
+            }
+            
+        }];
+        
+    } else {
+        // iOS14以下版本依然使用老方法
+        // 判断在设置-隐私里用户是否打开了广告跟踪
+        if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {//模拟器会一直00000000-0000-0000-0000-000000000000
+            NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
+            NSLog(@"idfa=%@",idfa);
+        } else {
+            NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
+        }
+    }
+    
+    NSLog(@"applicationDidBecomeActive end");
 }
 
 - (void)sdk_applicationWillTerminate_MMMethodMMM:(UIApplication *)application

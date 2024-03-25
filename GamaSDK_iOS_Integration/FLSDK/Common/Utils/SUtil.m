@@ -148,7 +148,7 @@
     NSString *idfaStr = nil;
     if ([[self getSystemVersion_MMMethodMMM] intValue] >= 6)
     {
-        if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
+        if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {//模拟器会一直00000000-0000-0000-0000-000000000000
             idfaStr = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         } else {
             idfaStr = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];

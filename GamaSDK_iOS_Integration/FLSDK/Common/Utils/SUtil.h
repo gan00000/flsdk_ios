@@ -21,7 +21,7 @@
 
 
 /*获取头*/
-+ (NSString *)bundleSeedID_MMMethodMMM;
+//+ (NSString *)bundleSeedID_MMMethodMMM;
 
 + (NSString *)getBundleName_MMMethodMMM;
 + (NSString *)getBundleIdentifier_MMMethodMMM;
