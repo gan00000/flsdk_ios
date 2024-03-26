@@ -167,24 +167,25 @@
     
     self.loginCompletionHandler = cmopleteHandler;
     
-#ifdef SDK_KR
-    
-    if([TermsViewV2 isShowTerm_MMMethodMMM]){
+    if([SDK_VERSION_V6 isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] ||
+       ([SDK_VERSION_KR isEqualToString:[SDKRES getSdkVersion_MMMethodMMM]] && GetConfigBool(@"sdk_release_european"))){//是否发布欧洲地区
         
-        if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+        if([TermsViewV2 isShowTerm_MMMethodMMM]){//先弹出条款
             
-            [self showNoticeView];
+            if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
+                
+                [self showNoticeView];
+                
+            }else{
+                [self sdkLoginWithHandlerForInner];
+            }
             
         }else{
-            [self sdkLoginWithHandlerForInner];
+            [self showTermViewWithBlock_MMMethodMMM];
         }
-        
-    }else{
-        [self showTermViewWithBlock_MMMethodMMM];
+     
+        return;
     }
-   
-
-#else
     
     if (is_Version2 && SDK_DATA.mConfigModel.showNotice) {
         
@@ -193,9 +194,6 @@
     }else{
         [self sdkLoginWithHandlerForInner];
     }
-    
-#endif
-    
     
 }
 
@@ -978,7 +976,6 @@
 -(void)showTermViewWithBlock_MMMethodMMM
 {
 
-#ifdef SDK_KR
     TermsViewV2 *aTermsViewV2 = [[TermsViewV2 alloc] initWithCompleter_MMMethodMMM:^{
         
     }];
@@ -1009,7 +1006,6 @@
         
     };
     
-#endif
 }
 
 -(void)showSocialView{

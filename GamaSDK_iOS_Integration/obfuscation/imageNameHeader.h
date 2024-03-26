@@ -261,6 +261,42 @@
 #define mw_logo         @"patternaster_haha_img"
 #define mw_naver_icon    @"icon_naver"
 
+#define icon_customer       @"icon_customer"
+
+#define bg_select_pay_channel   @"bg_select_pay_channel"
+#define bg_select_channel_close   @"bg_select_channel_close"
+#define icon_back_webview       @"icon_back_webview"
+#define icon_close_white       @"icon_close_white"
+#define icon_apple_pay       @"icon_apple_pay"
+
+#define icon_close_social   @"icon_close_social"
+#define activity_img_back   @"activity_img_back"
+#define activity_img_close   @"activity_img_close"
+#define act_menu_bg   @"act_menu_bg"
+#define act_menu_unselect_bg   @"act_menu_unselect_bg"
+#define activity_img_title   @"activity_img_title"
+#define icon_float_person   @"icon_float_person"
+#define icon_float_customer   @"icon_float_customer"
+#define icon_float_return   @"icon_float_return"
+#define float_icon_user   @"float_icon_user"
+#define float_icon_password   @"float_icon_password"
+#define float_icon_again_pwd   @"float_icon_again_pwd"
+#define float_back_dismiss   @"float_back_dismiss"
+#define float_del_account_warnings   @"float_del_account_warnings"
+
+
+#define XIB_ExposureController   @"ExposureController"
+#define XIB_ExposureHorControllerViewController   @"ExposureHorControllerViewController"
+#define XIB_MenuCell   @"MenuCell"
+
+#define XIB_FloatContentViewController   @"FloatContentViewController"
+#define XIB_PersionCenterHorViewController   @"PersionCenterHorViewController"
+#define XIB_FloatBindAccountViewController   @"FloatBindAccountViewController"
+#define XIB_FloatChangePwdViewController   @"FloatChangePwdViewController"
+
+
+#define XIB_FloatMenuCell   @"FloatMenuCell"
+
 #elif SDK_KR
 
 //kr

@@ -158,5 +158,7 @@ typedef NS_OPTIONS(NSUInteger, CURRENT_PAGE_TYPE)
 #define SDK_VERSION_VN   @"v_vn"
 #define SDK_VERSION_KR   @"kr"
 
+#define sdk_is_show_term  @"sdk_is_show_term"
+
 #endif /* CCSkyHourHeader_h */
 

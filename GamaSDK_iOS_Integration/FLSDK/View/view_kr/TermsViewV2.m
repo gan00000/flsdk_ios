@@ -15,7 +15,7 @@
 #import "ViewUtil.h"
 
 #define SDK_PROVISIONS_FIRST_ENBLE wwwww_tag_wwwww_sdk_provisions_first_enble
-#define sdk_is_show_term  @"sdk_is_show_term"
+
 @interface TermsViewV2 ()
 @property (copy,nonatomic) void (^completer)(void);
 @end

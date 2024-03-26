@@ -242,4 +242,16 @@
     return [saveDefault boolForKey:SDK_PROVISIONS_FIRST_ENBLE];
 }
 
++(BOOL)isShowTerm_MMMethodMMM
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    return [saveDefault boolForKey:sdk_is_show_term];
+}
+
++ (void)setShowTerm_MMMethodMMM:(BOOL)value
+{
+    NSUserDefaults *saveDefault = [NSUserDefaults standardUserDefaults];
+    [saveDefault setBool:value forKey:sdk_is_show_term];
+    [saveDefault synchronize];
+}
 @end
