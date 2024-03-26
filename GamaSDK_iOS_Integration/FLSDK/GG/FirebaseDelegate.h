@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+//@import FirebaseCore;
+//@import FirebaseAuth;
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseAuth/FirebaseAuth.h>
+#import <FirebaseMessaging/FIRMessaging.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FirebaseDelegate : NSObject

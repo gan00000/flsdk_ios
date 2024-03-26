@@ -17,10 +17,6 @@
 #import <UserNotifications/UserNotifications.h>
 #import <StoreKit/StoreKit.h>
 
-#import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseAuth/FirebaseAuth.h>
-#import  <FirebaseMessaging/FIRMessaging.h>
-
 #import "AFNetworkReachabilityManager.h"
 
 #import <AdSupport/AdSupport.h>
@@ -236,9 +232,11 @@
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {//模拟器会一直00000000-0000-0000-0000-000000000000
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
                 NSLog(@"idfa=%@",idfa);
+                [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = YES;
                 
             } else {
                 NSLog(@"请在设置-隐私-跟踪中允许App请求跟踪");
+                [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = NO;
             }
             
         }];
@@ -249,8 +247,10 @@
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {//模拟器会一直00000000-0000-0000-0000-000000000000
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
             NSLog(@"idfa=%@",idfa);
+            [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = YES;
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
+            [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = NO;
         }
     }
     

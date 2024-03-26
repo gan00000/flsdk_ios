@@ -1774,6 +1774,7 @@
 		03B62B252BB27E83002ED811 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B629C22BB27E82002ED811 /* GTMAppAuth.xcframework */; };
 		03B62B262BB27E83002ED811 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B629C22BB27E82002ED811 /* GTMAppAuth.xcframework */; };
 		03B62B272BB27E83002ED811 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B629C22BB27E82002ED811 /* GTMAppAuth.xcframework */; };
+		03B62B2F2BB2B266002ED811 /* MWStringHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DBCB529419C00007EAD2F /* MWStringHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03BB67A62A122A630027185C /* com_miaoou_gwsg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BB67A52A122A630027185C /* com_miaoou_gwsg.json */; };
 		03C05CA828AE5F6B0060F4CD /* BasePopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C05CA628AE5F6B0060F4CD /* BasePopupView.h */; };
 		03C05CAA28AE5F6B0060F4CD /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C05CA728AE5F6B0060F4CD /* BasePopupView.m */; };
@@ -4862,6 +4863,7 @@
 				03509C8A29F91C8C00C840DA /* NSString+Local.h in Headers */,
 				03509C8B29F91C8C00C840DA /* BaseCountTimerView.h in Headers */,
 				03A19E012B970E6600F0C146 /* PersionCenterHorViewController.h in Headers */,
+				03B62B2F2BB2B266002ED811 /* MWStringHeaders.h in Headers */,
 				03509C8C29F91C8C00C840DA /* GamaSDK+Social.h in Headers */,
 				0349F8F22AD7F9580015750A /* ExposureController.h in Headers */,
 				03509C8D29F91C8C00C840DA /* MyTextFiled.h in Headers */,

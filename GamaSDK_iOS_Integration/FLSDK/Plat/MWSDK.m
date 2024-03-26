@@ -146,6 +146,7 @@
     if (self = [super init]) {
         
         SDK_LOG(@"SDK Version : %@", FL_SDK_VERSION);
+        self.sdkBaseEncryptKey = @"env6_20240326";
     }
     
     return self;
