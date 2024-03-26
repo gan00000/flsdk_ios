@@ -39,9 +39,7 @@
         [[AppsFlyerLib shared] setAppleAppID:appId];
         
         if (@available(iOS 14, *)) {
-            if (![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
-                [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:60];
-            }
+            [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:60];
         }
     }
     //adjust
@@ -69,9 +67,10 @@
 }
 
 + (void)applicationDidBecomeActive_MMMethodMMM:(UIApplication *)application{
-    
-    [[AppsFlyerLib shared] start];
-    
+    NSString *afDevKey = [SDKRES getAfDevKey_MMMethodMMM];
+    if ([StringUtil isNotEmpty_MMMethodMMM:afDevKey]){
+        [[AppsFlyerLib shared] start];
+    }
 }
 
 + (void)logEventWithEventName_MMMethodMMM:(NSString *)eventName eventValues_MMMethodMMM:(NSDictionary<NSString * , id> * _Nullable)eventValues type_MMMethodMMM:(AdType) type{

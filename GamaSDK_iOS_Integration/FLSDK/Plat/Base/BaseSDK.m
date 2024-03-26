@@ -246,11 +246,9 @@
         // 判断在设置-隐私里用户是否打开了广告跟踪
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {//模拟器会一直00000000-0000-0000-0000-000000000000
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-            NSLog(@"idfa=%@",idfa);
-            [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = YES;
+            NSLog(@"mmm idfa=%@",idfa);
         } else {
             NSLog(@"请在设置-隐私-广告中打开广告跟踪功能");
-            [FBSDKSettings sharedSettings].isAdvertiserIDCollectionEnabled = NO;
         }
     }
     
