@@ -14,7 +14,7 @@
 				037C6F6F287686B10041EC34 /* Run Script */,
 			);
 			dependencies = (
-				037C6F74287686D40041EC34 /* PBXTargetDependency */,
+				03B62B2C2BB2B084002ED811 /* PBXTargetDependency */,
 			);
 			name = XCFrameworkMake;
 			productName = Framework;
@@ -2225,13 +2225,6 @@
 			remoteGlobalIDString = 0337751E2AEA675D00D19EF5;
 			remoteInfo = MWRES;
 		};
-		037C6F73287686D40041EC34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 037C6EDA2875A97B0041EC34;
-			remoteInfo = MWSDK;
-		};
 		0381EC79298B56E1006D6100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
@@ -2254,6 +2247,13 @@
 			remoteInfo = MWSDK_V3;
 		};
 		039AC20229F9231100B416D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03509C8829F91C8C00C840DA;
+			remoteInfo = MWSDK_V6;
+		};
+		03B62B2B2BB2B084002ED811 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE6B3691A148B1E009E77FF /* Project object */;
 			proxyType = 1;
@@ -7041,11 +7041,6 @@
 			target = 0337751E2AEA675D00D19EF5 /* MWRES */;
 			targetProxy = 033775262AEA67BD00D19EF5 /* PBXContainerItemProxy */;
 		};
-		037C6F74287686D40041EC34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 037C6EDA2875A97B0041EC34 /* MWSDK_V2 */;
-			targetProxy = 037C6F73287686D40041EC34 /* PBXContainerItemProxy */;
-		};
 		0381EC7A298B56E1006D6100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 039B25ED298B555300045C53 /* MWSDK_V5 */;
@@ -7065,6 +7060,11 @@
 			isa = PBXTargetDependency;
 			target = 03509C8829F91C8C00C840DA /* MWSDK_V6 */;
 			targetProxy = 039AC20229F9231100B416D8 /* PBXContainerItemProxy */;
+		};
+		03B62B2C2BB2B084002ED811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03509C8829F91C8C00C840DA /* MWSDK_V6 */;
+			targetProxy = 03B62B2B2BB2B084002ED811 /* PBXContainerItemProxy */;
 		};
 		03CA731A29D569B400098979 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
